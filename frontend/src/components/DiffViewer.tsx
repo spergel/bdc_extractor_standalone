@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import type { Holding } from '../data/adapter';
 import { calculateDiff, getDiffSummary, type HoldingChange } from '../utils/holdingsDiff';
 
@@ -153,21 +153,24 @@ function HoldingRow({ change }: { change: HoldingChange }) {
   );
 }
 
+const PAGE_SIZE = 30;
+
 export function DiffViewer({ beforeHoldings, afterHoldings, beforePeriod, afterPeriod }: Props) {
   const [filter, setFilter] = useState<'all' | 'added' | 'removed' | 'modified'>('all');
   const [minChangeThreshold, setMinChangeThreshold] = useState<number>(100000); // $100k default
+  const [page, setPage] = useState(0);
   
   const changes = useMemo(() => calculateDiff(beforeHoldings, afterHoldings), [beforeHoldings, afterHoldings]);
   const summary = useMemo(() => getDiffSummary(changes), [changes]);
   
   const filteredChanges = useMemo(() => {
     let filtered = changes;
-    
+
     // Filter by type
     if (filter !== 'all') {
       filtered = filtered.filter(c => c.type === filter);
     }
-    
+
     // Filter by minimum change threshold (for modified items)
     if (minChangeThreshold > 0) {
       filtered = filtered.filter(c => {
@@ -187,9 +190,16 @@ export function DiffViewer({ beforeHoldings, afterHoldings, beforePeriod, afterP
         return true;
       });
     }
-    
+
     return filtered;
   }, [changes, filter, minChangeThreshold]);
+
+  // Reset page when filters change
+  useEffect(() => { setPage(0); }, [filter, minChangeThreshold]);
+
+  const totalPages = Math.max(1, Math.ceil(filteredChanges.length / PAGE_SIZE));
+  const safePage = Math.min(page, totalPages - 1);
+  const pagedChanges = filteredChanges.slice(safePage * PAGE_SIZE, (safePage + 1) * PAGE_SIZE);
   
   return (
     <div className="flex flex-col space-y-3 sm:space-y-4">
@@ -290,20 +300,42 @@ export function DiffViewer({ beforeHoldings, afterHoldings, beforePeriod, afterP
               </tr>
             </thead>
             <tbody>
-              {filteredChanges.length === 0 ? (
+              {pagedChanges.length === 0 ? (
                 <tr>
                   <td colSpan={7} className="px-4 py-4 text-center text-[#808080]">
                     No changes found (or filtered out)
                   </td>
                 </tr>
               ) : (
-                filteredChanges.map((change, i) => (
+                pagedChanges.map((change) => (
                   <HoldingRow key={change.key} change={change} />
                 ))
               )}
             </tbody>
           </table>
         </div>
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="flex items-center justify-between px-2 py-2 border-t-2 border-t-[#808080] bg-[#c0c0c0] flex-shrink-0">
+            <button
+              className="btn text-xs"
+              disabled={safePage === 0}
+              onClick={() => setPage(p => Math.max(0, p - 1))}
+            >
+              &lt; Prev
+            </button>
+            <div className="text-xs text-black">
+              Page {safePage + 1} of {totalPages} ({filteredChanges.length} changes)
+            </div>
+            <button
+              className="btn text-xs"
+              disabled={safePage >= totalPages - 1}
+              onClick={() => setPage(p => Math.min(totalPages - 1, p + 1))}
+            >
+              Next &gt;
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

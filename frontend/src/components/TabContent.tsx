@@ -160,7 +160,11 @@ export function TabContent({
       id: 'analytics',
       label: 'Analytics',
       content: ticker && snapshot ? (
-        <SimpleAnalyticsPanel holdings={investments as any} period={selectedPeriod} />
+        <div className="flex flex-col h-full min-h-0 overflow-hidden">
+          <div className="flex-1 min-h-0 overflow-y-auto">
+            <SimpleAnalyticsPanel holdings={investments as any} period={selectedPeriod} />
+          </div>
+        </div>
       ) : (
         <div className="text-xs text-[#808080]">Loading analytics...</div>
       ),
