@@ -132,7 +132,7 @@ export function TabContent({
           <div className="flex-1 min-h-0 overflow-hidden">
             {investmentsError ? (
               <div className="window p-4">
-                <div className="text-sm text-red-400">
+                <div className="text-sm text-[#ff0000]">
                   ⚠️ Error loading holdings
                 </div>
                 <div className="text-xs text-[#808080] mt-1">

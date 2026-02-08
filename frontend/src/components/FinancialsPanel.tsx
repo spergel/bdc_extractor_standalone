@@ -601,8 +601,8 @@ export function FinancialsPanel({ ticker, periods = [], name, mode = 'overview' 
               <div className="text-sm tracking-wide">Key Metrics</div>
             </div>
             <table className="w-full text-sm border-separate border-spacing-0">
-              <thead className="sticky top-0 bg-[#1b1f23] z-10">
-                <tr className="border-b border-silver/20">
+              <thead className="sticky top-0 bg-[#c0c0c0] z-10">
+                <tr className="border-b border-[#808080]">
                   <th className="text-left py-2 px-3 text-[#808080] font-semibold">Metric</th>
                   {availableData.map(({ period }) => (
                     <th key={period} className="text-right py-2 px-3 text-[#808080] font-semibold">
@@ -630,7 +630,7 @@ export function FinancialsPanel({ ticker, periods = [], name, mode = 'overview' 
           {renderStatement('Cash Flow Statement', latestFull?.cashflow)}
         </>
       ) : (
-        <div className="text-xs text-silver/60">Loading financials...</div>
+        <div className="text-xs text-[#808080]">Loading financials...</div>
       )}
     </div>
   );

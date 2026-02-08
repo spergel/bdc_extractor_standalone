@@ -138,7 +138,7 @@ export function SimpleAnalyticsPanel({ holdings, period }: Props) {
       <div className="window">
         <div className="titlebar">
           <div className="text-sm">Portfolio Summary</div>
-          {period && <div className="text-xs text-silver/60">{period}</div>}
+          {period && <div className="text-xs text-[#808080]">{period}</div>}
         </div>
         <div className="p-3 grid grid-cols-2 md:grid-cols-4 gap-4">
           <div>
@@ -165,7 +165,7 @@ export function SimpleAnalyticsPanel({ holdings, period }: Props) {
         <div className="window">
           <div className="titlebar">
             <div className="text-sm">Spread Analysis</div>
-            <div className="text-xs text-silver/60">{analytics.spreadCount} positions with spread data</div>
+            <div className="text-xs text-[#808080]">{analytics.spreadCount} positions with spread data</div>
           </div>
           <div className="p-3">
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-3">
@@ -205,7 +205,7 @@ export function SimpleAnalyticsPanel({ holdings, period }: Props) {
         <div className="p-3 grid grid-cols-3 gap-4">
           <div>
             <div className="text-xs text-[#808080]">Floating Rate</div>
-            <div className="text-lg font-bold text-green-600">{fmtPct(analytics.floatingPct)}</div>
+            <div className="text-lg font-bold text-[#008000]">{fmtPct(analytics.floatingPct)}</div>
             <div className="text-xs text-[#808080]">SOFR/Prime + Spread</div>
           </div>
           <div>
@@ -215,7 +215,7 @@ export function SimpleAnalyticsPanel({ holdings, period }: Props) {
           </div>
           <div>
             <div className="text-xs text-[#808080]">Has PIK</div>
-            <div className="text-lg font-bold text-orange-600">{fmtPct(analytics.pikPct)}</div>
+            <div className="text-lg font-bold text-[#ff8000]">{fmtPct(analytics.pikPct)}</div>
             <div className="text-xs text-[#808080]">Payment-in-kind</div>
           </div>
         </div>

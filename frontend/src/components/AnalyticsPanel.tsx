@@ -181,7 +181,7 @@ function MaturityLadderChart({ data }: { data: Array<{ bucket: string; count: nu
   
   return (
     <div ref={containerRef} className="window p-3 relative">
-      <div className="text-xs font-semibold mb-2 text-silver/90">Maturity Ladder</div>
+      <div className="text-xs font-semibold mb-2 text-black">Maturity Ladder</div>
       <div className="space-y-1">
         {data.map((item, i) => (
           <div
@@ -268,17 +268,17 @@ function HistogramChart({ data, title }: { data: Array<{ range: string; count: n
             onMouseLeave={handleMouseLeave}
             style={{ cursor: 'pointer' }}
           >
-            <div className="w-24 text-xs text-silver/70 truncate" title={item.range}>{item.range}</div>
-            <div className="flex-1 bg-[#1b1f23]/50 rounded-sm h-4 overflow-hidden">
+            <div className="w-24 text-xs text-[#808080] truncate" title={item.range}>{item.range}</div>
+            <div className="flex-1 bg-[#c0c0c0] h-4 overflow-hidden">
               <div
-                className="h-full bg-cyan-400/50 transition-opacity"
+                className="h-full bg-[#0000ff] transition-opacity"
                 style={{
                   width: `${(item.count / maxCount) * 100}%`,
                   opacity: hovered?.item.range === item.range ? 1 : hovered ? 0.5 : 1,
                 }}
               />
             </div>
-            <div className="w-20 text-xs text-silver/70 text-right">
+            <div className="w-20 text-xs text-[#808080] text-right">
               {item.count} ({item.percentage.toFixed(1)}%)
             </div>
           </div>
@@ -380,21 +380,21 @@ export function AnalyticsPanel({ holdings, period }: Props) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <HistogramChart data={spreadDistribution} title="Spread Distribution" />
         <div className="window p-3">
-          <div className="text-xs font-semibold mb-2 text-silver/90">Floor Rate Analysis</div>
+          <div className="text-xs font-semibold mb-2 text-black">Floor Rate Analysis</div>
           <div className="space-y-2 text-xs">
             <div className="flex items-center justify-between">
-              <span className="text-silver/70">With Floor:</span>
-              <span className="text-silver/90">{floorAnalysis.withFloor.count} ({floorAnalysis.withFloor.percentage.toFixed(1)}%)</span>
+              <span className="text-[#808080]">With Floor:</span>
+              <span className="text-black">{floorAnalysis.withFloor.count} ({floorAnalysis.withFloor.percentage.toFixed(1)}%)</span>
             </div>
             <div className="flex items-center justify-between">
-              <span className="text-silver/70">Without Floor:</span>
-              <span className="text-silver/90">{floorAnalysis.withoutFloor.count} ({floorAnalysis.withoutFloor.percentage.toFixed(1)}%)</span>
+              <span className="text-[#808080]">Without Floor:</span>
+              <span className="text-black">{floorAnalysis.withoutFloor.count} ({floorAnalysis.withoutFloor.percentage.toFixed(1)}%)</span>
             </div>
             {floorAnalysis.withFloor.count > 0 && (
               <>
-                <div className="pt-2 border-t border-silver/20">
-                  <div className="text-silver/70 mb-1">Floor Statistics:</div>
-                  <div className="space-y-1 text-silver/60">
+                <div className="pt-2 border-t border-[#808080]">
+                  <div className="text-[#808080] mb-1">Floor Statistics:</div>
+                  <div className="space-y-1 text-[#808080]">
                     <div>Avg: {floorAnalysis.averageFloor.toFixed(2)}%</div>
                     <div>Min: {floorAnalysis.minFloor.toFixed(2)}%</div>
                     <div>Max: {floorAnalysis.maxFloor.toFixed(2)}%</div>
@@ -409,25 +409,25 @@ export function AnalyticsPanel({ holdings, period }: Props) {
       {/* Average Spread by Category */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="window p-3">
-          <div className="text-xs font-semibold mb-2 text-silver/90">Average Spread by Industry</div>
+          <div className="text-xs font-semibold mb-2 text-black">Average Spread by Industry</div>
           {avgSpreadByIndustry.length === 0 ? (
-            <div className="text-xs text-silver/60">No spread data available</div>
+            <div className="text-xs text-[#808080]">No spread data available</div>
           ) : (
             <div className="overflow-x-auto">
               <table className="w-full text-xs">
                 <thead>
-                  <tr className="border-b border-silver/20">
-                    <th className="text-left py-1 text-silver/70">Industry</th>
-                    <th className="text-right py-1 text-silver/70">Avg Spread</th>
-                    <th className="text-right py-1 text-silver/70">Count</th>
+                  <tr className="border-b border-[#808080]">
+                    <th className="text-left py-1 text-[#808080]">Industry</th>
+                    <th className="text-right py-1 text-[#808080]">Avg Spread</th>
+                    <th className="text-right py-1 text-[#808080]">Count</th>
                   </tr>
                 </thead>
                 <tbody>
                   {avgSpreadByIndustry.slice(0, 10).map((item, i) => (
-                    <tr key={i} className="border-b border-silver/10">
-                      <td className="py-1 text-silver/90 truncate max-w-[200px]" title={item.category}>{item.category}</td>
-                      <td className="text-right py-1 text-silver/70">{item.averageSpread.toFixed(2)}%</td>
-                      <td className="text-right py-1 text-silver/70">{item.count}</td>
+                    <tr key={i} className="border-b border-[#c0c0c0]">
+                      <td className="py-1 text-black truncate max-w-[200px]" title={item.category}>{item.category}</td>
+                      <td className="text-right py-1 text-[#808080]">{item.averageSpread.toFixed(2)}%</td>
+                      <td className="text-right py-1 text-[#808080]">{item.count}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -436,25 +436,25 @@ export function AnalyticsPanel({ holdings, period }: Props) {
           )}
         </div>
         <div className="window p-3">
-          <div className="text-xs font-semibold mb-2 text-silver/90">Average Spread by Investment Type</div>
+          <div className="text-xs font-semibold mb-2 text-black">Average Spread by Investment Type</div>
           {avgSpreadByType.length === 0 ? (
-            <div className="text-xs text-silver/60">No spread data available</div>
+            <div className="text-xs text-[#808080]">No spread data available</div>
           ) : (
             <div className="overflow-x-auto">
               <table className="w-full text-xs">
                 <thead>
-                  <tr className="border-b border-silver/20">
-                    <th className="text-left py-1 text-silver/70">Type</th>
-                    <th className="text-right py-1 text-silver/70">Avg Spread</th>
-                    <th className="text-right py-1 text-silver/70">Count</th>
+                  <tr className="border-b border-[#808080]">
+                    <th className="text-left py-1 text-[#808080]">Type</th>
+                    <th className="text-right py-1 text-[#808080]">Avg Spread</th>
+                    <th className="text-right py-1 text-[#808080]">Count</th>
                   </tr>
                 </thead>
                 <tbody>
                   {avgSpreadByType.slice(0, 10).map((item, i) => (
-                    <tr key={i} className="border-b border-silver/10">
-                      <td className="py-1 text-silver/90 truncate max-w-[200px]" title={item.category}>{item.category}</td>
-                      <td className="text-right py-1 text-silver/70">{item.averageSpread.toFixed(2)}%</td>
-                      <td className="text-right py-1 text-silver/70">{item.count}</td>
+                    <tr key={i} className="border-b border-[#c0c0c0]">
+                      <td className="py-1 text-black truncate max-w-[200px]" title={item.category}>{item.category}</td>
+                      <td className="text-right py-1 text-[#808080]">{item.averageSpread.toFixed(2)}%</td>
+                      <td className="text-right py-1 text-[#808080]">{item.count}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -473,33 +473,33 @@ export function AnalyticsPanel({ holdings, period }: Props) {
       {/* Statistics Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="window p-3">
-          <div className="text-xs font-semibold mb-2 text-silver/90">Spread Statistics</div>
-          <div className="space-y-1 text-xs text-silver/70">
+          <div className="text-xs font-semibold mb-2 text-black">Spread Statistics</div>
+          <div className="space-y-1 text-xs text-[#808080]">
             <div>Avg: {spreadStats.average.toFixed(2)}%</div>
             <div>Min: {spreadStats.min.toFixed(2)}%</div>
             <div>Max: {spreadStats.max.toFixed(2)}%</div>
             <div>Median: {spreadStats.median.toFixed(2)}%</div>
-            <div className="pt-1 border-t border-silver/20">With Spread: {spreadStats.withSpread}</div>
+            <div className="pt-1 border-t border-[#808080]">With Spread: {spreadStats.withSpread}</div>
             <div>Without Spread: {spreadStats.withoutSpread}</div>
           </div>
         </div>
         
         <div className="window p-3">
-          <div className="text-xs font-semibold mb-2 text-silver/90">PIK Analysis</div>
-          <div className="space-y-1 text-xs text-silver/70">
+          <div className="text-xs font-semibold mb-2 text-black">PIK Analysis</div>
+          <div className="space-y-1 text-xs text-[#808080]">
             <div>PIK Count: {pikAnalysis.pikCount}</div>
             <div>PIK FV: ${(pikAnalysis.pikFairValue / 1000).toFixed(0)}k</div>
             <div>PIK %: {pikAnalysis.pikPercentage.toFixed(1)}%</div>
-            <div className="pt-1 border-t border-silver/20">Avg PIK Rate: {pikAnalysis.averagePikRate.toFixed(2)}%</div>
+            <div className="pt-1 border-t border-[#808080]">Avg PIK Rate: {pikAnalysis.averagePikRate.toFixed(2)}%</div>
           </div>
         </div>
         
         <div className="window p-3">
-          <div className="text-xs font-semibold mb-2 text-silver/90">FV Ratios</div>
-          <div className="space-y-1 text-xs text-silver/70">
+          <div className="text-xs font-semibold mb-2 text-black">FV Ratios</div>
+          <div className="space-y-1 text-xs text-[#808080]">
             <div>FV/Principal Avg: {fvRatios.fvPrincipal.average.toFixed(3)}</div>
             <div>Range: {fvRatios.fvPrincipal.min.toFixed(3)} - {fvRatios.fvPrincipal.max.toFixed(3)}</div>
-            <div className="pt-1 border-t border-silver/20">FV/Cost Avg: {fvRatios.fvCost.average.toFixed(3)}</div>
+            <div className="pt-1 border-t border-[#808080]">FV/Cost Avg: {fvRatios.fvCost.average.toFixed(3)}</div>
             <div>Range: {fvRatios.fvCost.min.toFixed(3)} - {fvRatios.fvCost.max.toFixed(3)}</div>
           </div>
         </div>
@@ -507,39 +507,39 @@ export function AnalyticsPanel({ holdings, period }: Props) {
       
       {/* Concentration Metrics */}
       <div className="window p-3">
-        <div className="text-xs font-semibold mb-2 text-silver/90">Concentration Metrics</div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-silver/70">
+        <div className="text-xs font-semibold mb-2 text-black">Concentration Metrics</div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-[#808080]">
           <div>
             <div>Industry Herfindahl: {industryHerfindahl.toFixed(0)}</div>
-            <div className="text-silver/50 text-[10px] mt-1">(Higher = more concentrated)</div>
+            <div className="text-[#808080] text-[10px] mt-1">(Higher = more concentrated)</div>
           </div>
           <div>
             <div>Type Herfindahl: {typeHerfindahl.toFixed(0)}</div>
-            <div className="text-silver/50 text-[10px] mt-1">(Higher = more concentrated)</div>
+            <div className="text-[#808080] text-[10px] mt-1">(Higher = more concentrated)</div>
           </div>
         </div>
       </div>
       
       {/* Top Holdings */}
       <div className="window p-3">
-        <div className="text-xs font-semibold mb-2 text-silver/90">Top 10 Holdings by Fair Value</div>
+        <div className="text-xs font-semibold mb-2 text-black">Top 10 Holdings by Fair Value</div>
         <div className="overflow-x-auto">
           <table className="w-full text-xs">
             <thead>
-              <tr className="border-b border-silver/20">
-                <th className="text-left py-1 text-silver/70">Company</th>
-                <th className="text-right py-1 text-silver/70">Fair Value</th>
-                <th className="text-right py-1 text-silver/70">% of Portfolio</th>
-                <th className="text-left py-1 text-silver/70">Type</th>
+              <tr className="border-b border-[#808080]">
+                <th className="text-left py-1 text-[#808080]">Company</th>
+                <th className="text-right py-1 text-[#808080]">Fair Value</th>
+                <th className="text-right py-1 text-[#808080]">% of Portfolio</th>
+                <th className="text-left py-1 text-[#808080]">Type</th>
               </tr>
             </thead>
             <tbody>
               {topHoldings.map((h, i) => (
-                <tr key={i} className="border-b border-silver/10">
-                  <td className="py-1 text-silver/90">{h.company_name}</td>
-                  <td className="text-right py-1 text-silver/70">${(h.fair_value / 1000).toFixed(0)}k</td>
-                  <td className="text-right py-1 text-silver/70">{h.percentage.toFixed(2)}%</td>
-                  <td className="py-1 text-silver/60">{h.investment_type}</td>
+                <tr key={i} className="border-b border-[#c0c0c0]">
+                  <td className="py-1 text-black">{h.company_name}</td>
+                  <td className="text-right py-1 text-[#808080]">${(h.fair_value / 1000).toFixed(0)}k</td>
+                  <td className="text-right py-1 text-[#808080]">{h.percentage.toFixed(2)}%</td>
+                  <td className="py-1 text-[#808080]">{h.investment_type}</td>
                 </tr>
               ))}
             </tbody>
@@ -550,7 +550,7 @@ export function AnalyticsPanel({ holdings, period }: Props) {
       {/* Red Flags Watchlist */}
       <div className="window p-3">
         <div className="flex items-center justify-between mb-2">
-          <div className="text-xs font-semibold text-silver/90">Red Flags Watchlist ({filteredRedFlags.length})</div>
+          <div className="text-xs font-semibold text-black">Red Flags Watchlist ({filteredRedFlags.length})</div>
           <select
             className="input text-xs"
             value={redFlagFilter}
@@ -565,23 +565,23 @@ export function AnalyticsPanel({ holdings, period }: Props) {
           </select>
         </div>
         {filteredRedFlags.length === 0 ? (
-          <div className="text-xs text-silver/60">No red flags found</div>
+          <div className="text-xs text-[#808080]">No red flags found</div>
         ) : (
           <div className="overflow-x-auto">
             <table className="w-full text-xs">
               <thead>
-                <tr className="border-b border-silver/20">
-                  <th className="text-left py-1 text-silver/70">Company</th>
-                  <th className="text-left py-1 text-silver/70">Flags</th>
-                  <th className="text-right py-1 text-silver/70">Fair Value</th>
-                  <th className="text-right py-1 text-silver/70">Principal</th>
-                  <th className="text-right py-1 text-silver/70">Cost</th>
+                <tr className="border-b border-[#808080]">
+                  <th className="text-left py-1 text-[#808080]">Company</th>
+                  <th className="text-left py-1 text-[#808080]">Flags</th>
+                  <th className="text-right py-1 text-[#808080]">Fair Value</th>
+                  <th className="text-right py-1 text-[#808080]">Principal</th>
+                  <th className="text-right py-1 text-[#808080]">Cost</th>
                 </tr>
               </thead>
               <tbody>
                 {filteredRedFlags.map((item, i) => (
-                  <tr key={i} className="border-b border-silver/10">
-                    <td className="py-1 text-silver/90">{item.holding.company_name}</td>
+                  <tr key={i} className="border-b border-[#c0c0c0]">
+                    <td className="py-1 text-black">{item.holding.company_name}</td>
                     <td className="py-1">
                       <div className="flex flex-wrap gap-1">
                         {item.flags.map((flag, j) => (
@@ -598,9 +598,9 @@ export function AnalyticsPanel({ holdings, period }: Props) {
                         ))}
                       </div>
                     </td>
-                    <td className="text-right py-1 text-silver/70">${(parseFloat(item.holding.fair_value || '0') / 1000).toFixed(0)}k</td>
-                    <td className="text-right py-1 text-silver/70">${(parseFloat(item.holding.principal_amount || '0') / 1000).toFixed(0)}k</td>
-                    <td className="text-right py-1 text-silver/70">${(parseFloat(item.holding.cost || item.holding.amortized_cost || '0') / 1000).toFixed(0)}k</td>
+                    <td className="text-right py-1 text-[#808080]">${(parseFloat(item.holding.fair_value || '0') / 1000).toFixed(0)}k</td>
+                    <td className="text-right py-1 text-[#808080]">${(parseFloat(item.holding.principal_amount || '0') / 1000).toFixed(0)}k</td>
+                    <td className="text-right py-1 text-[#808080]">${(parseFloat(item.holding.cost || item.holding.amortized_cost || '0') / 1000).toFixed(0)}k</td>
                   </tr>
                 ))}
               </tbody>

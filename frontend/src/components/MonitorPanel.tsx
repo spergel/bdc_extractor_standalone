@@ -88,7 +88,7 @@ export function MonitorPanel() {
   if (isLoading) {
     return (
       <div className="window p-4">
-        <div className="text-sm text-silver/60">Loading monitor data...</div>
+        <div className="text-sm text-[#808080]">Loading monitor data...</div>
       </div>
     );
   }
@@ -96,7 +96,7 @@ export function MonitorPanel() {
   if (error) {
     return (
       <div className="window p-4">
-        <div className="text-sm text-red-500">Error loading monitor data</div>
+        <div className="text-sm text-[#ff0000]">Error loading monitor data</div>
       </div>
     );
   }
@@ -106,13 +106,13 @@ export function MonitorPanel() {
       <div className="window">
         <div className="titlebar">
           <div className="text-sm tracking-wide">Liquid Private Credit Monitor</div>
-          <div className="text-xs text-silver/60">{new Date().toLocaleDateString()}</div>
+          <div className="text-xs text-[#808080]">{new Date().toLocaleDateString()}</div>
         </div>
         <div className="overflow-x-auto">
           <table className="w-full text-sm border-separate border-spacing-0">
-            <thead className="sticky top-0 bg-[#1b1f23] z-10">
-              <tr className="border-b border-silver/20">
-                <th className="text-left py-2 px-3 text-[#808080] font-semibold sticky left-0 bg-[#1b1f23] z-20">BDC</th>
+            <thead className="sticky top-0 bg-[#c0c0c0] z-10">
+              <tr className="border-b border-[#808080]">
+                <th className="text-left py-2 px-3 text-[#808080] font-semibold sticky left-0 bg-[#c0c0c0] z-20">BDC</th>
                 <th className="text-right py-2 px-3 text-[#808080] font-semibold">Market Cap ($mm)</th>
                 <th className="text-right py-2 px-3 text-[#808080] font-semibold">Investments ($mm)</th>
                 <th className="text-right py-2 px-3 text-[#808080] font-semibold">Yield</th>
@@ -130,8 +130,8 @@ export function MonitorPanel() {
             <tbody>
               {/* Averages row */}
               {averages && (
-                <tr className="bg-blue-50 border-b-2 border-blue-200 font-semibold">
-                  <td className="py-2 px-3 text-black sticky left-0 bg-blue-50 z-10">AVERAGE</td>
+                <tr className="bg-[#000080]/10 border-b-2 border-[#000080] font-semibold">
+                  <td className="py-2 px-3 text-black sticky left-0 bg-[#000080]/10 z-10">AVERAGE</td>
                   <td className="text-right py-2 px-3 text-black">-</td>
                   <td className="text-right py-2 px-3 text-black">-</td>
                   <td className="text-right py-2 px-3 text-black">{formatPercent(averages.yield)}</td>
@@ -147,20 +147,20 @@ export function MonitorPanel() {
                 </tr>
               )}
               {metrics.map((metric) => (
-                <tr key={metric.ticker} className="border-b border-silver/10 hover:bg-silver/5">
-                  <td className="py-2 px-3 text-silver/90 font-mono sticky left-0 bg-[#1b1f23] z-10">{metric.ticker}</td>
-                  <td className="text-right py-2 px-3 text-silver/90">{formatMoney(metric.market_cap_mm)}</td>
-                  <td className="text-right py-2 px-3 text-silver/90">{formatMoney(metric.investments_mm)}</td>
-                  <td className="text-right py-2 px-3 text-silver/90">{formatPercent(metric.yield)}</td>
-                  <td className="text-right py-2 px-3 text-silver/90">{formatPercent(metric.premium_discount_nav)}</td>
-                  <td className="text-right py-2 px-3 text-silver/90">{formatPercent(metric.roe)}</td>
-                  <td className="text-right py-2 px-3 text-silver/90">{formatPercent(metric.pct_first_lien)}</td>
-                  <td className="text-right py-2 px-3 text-silver/90">{formatPercent(metric.pct_secured)}</td>
-                  <td className="text-right py-2 px-3 text-silver/90">{formatPercent(metric.pct_credit)}</td>
-                  <td className="text-right py-2 px-3 text-silver/90">{formatPercent(metric.pct_floating_rate)}</td>
-                  <td className="text-right py-2 px-3 text-silver/90">{formatPercent(metric.non_accruals_fv_pct)}</td>
-                  <td className="text-right py-2 px-3 text-silver/90">{formatPercent(metric.non_accruals_cost_pct)}</td>
-                  <td className="text-right py-2 px-3 text-silver/90">{formatPercent(metric.pik_income_pct)}</td>
+                <tr key={metric.ticker} className="border-b border-[#c0c0c0] hover:bg-[#000080]/10">
+                  <td className="py-2 px-3 text-black font-mono sticky left-0 bg-[#c0c0c0] z-10">{metric.ticker}</td>
+                  <td className="text-right py-2 px-3 text-black">{formatMoney(metric.market_cap_mm)}</td>
+                  <td className="text-right py-2 px-3 text-black">{formatMoney(metric.investments_mm)}</td>
+                  <td className="text-right py-2 px-3 text-black">{formatPercent(metric.yield)}</td>
+                  <td className="text-right py-2 px-3 text-black">{formatPercent(metric.premium_discount_nav)}</td>
+                  <td className="text-right py-2 px-3 text-black">{formatPercent(metric.roe)}</td>
+                  <td className="text-right py-2 px-3 text-black">{formatPercent(metric.pct_first_lien)}</td>
+                  <td className="text-right py-2 px-3 text-black">{formatPercent(metric.pct_secured)}</td>
+                  <td className="text-right py-2 px-3 text-black">{formatPercent(metric.pct_credit)}</td>
+                  <td className="text-right py-2 px-3 text-black">{formatPercent(metric.pct_floating_rate)}</td>
+                  <td className="text-right py-2 px-3 text-black">{formatPercent(metric.non_accruals_fv_pct)}</td>
+                  <td className="text-right py-2 px-3 text-black">{formatPercent(metric.non_accruals_cost_pct)}</td>
+                  <td className="text-right py-2 px-3 text-black">{formatPercent(metric.pik_income_pct)}</td>
                 </tr>
               ))}
             </tbody>
@@ -170,8 +170,6 @@ export function MonitorPanel() {
     </div>
   );
 }
-
-
 
 
 

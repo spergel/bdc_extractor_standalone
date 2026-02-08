@@ -220,7 +220,7 @@ function HoldingsTableComponent({ data, period }: Props) {
           // Use calculated yield if available, otherwise use stated rate
           if (currentYield !== null) {
             return (
-              <span className="block text-right text-red-600 font-semibold" title={`Calculated: ${row.reference_rate} + ${row.spread ?? row.spread_clean}`}>
+              <span className="block text-right text-[#ff0000] font-semibold" title={`Calculated: ${row.reference_rate} + ${row.spread ?? row.spread_clean}`}>
                 {currentYield.toFixed(2)}
               </span>
             );
