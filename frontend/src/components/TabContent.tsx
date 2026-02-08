@@ -1,13 +1,11 @@
 import { ReactNode } from 'react';
 import { ProfileCard } from './ProfileCard';
-import { NewsFeed } from './NewsFeed';
 import { FinancialsPanel } from './FinancialsPanel';
 import { HoldingsTable } from './HoldingsTable';
 import { SimpleAnalyticsPanel } from './SimpleAnalyticsPanel';
 import { DiffViewer } from './DiffViewer';
 import { getPreviousQuarter, getYearOverYear, getYearEndComparison, getComparisonLabel } from '../utils/periodComparisons';
 import { playClickSound } from '../utils/sounds';
-import { DataExplorer } from './DataExplorer';
 import { MonitorPanel } from './MonitorPanel';
 
 type TabContentProps = {
@@ -58,23 +56,45 @@ export function TabContent({
       id: 'overview',
       label: 'Overview',
       content: ticker ? (
-        <div className="space-y-4 overflow-auto">
-          <ProfileCard ticker={ticker} name={selected?.name} />
-          <NewsFeed ticker={ticker} limit={5} />
-          <div className="mb-3 flex items-center gap-3 flex-wrap">
-            {ticker ? (
-              <a
-                className="btn btn-primary ml-auto"
-                href={`/data/${ticker}/${ticker}_all_periods_csv.zip`}
-                download
-              >
-                Download All CSV ({ticker})
-              </a>
-            ) : null}
+        <div className="flex flex-col h-full min-h-0 overflow-hidden">
+          <div className="flex-1 min-h-0 overflow-y-auto space-y-4 p-1">
+            <ProfileCard ticker={ticker} name={selected?.name} />
+            {/* Data summary */}
+            <div className="window p-3">
+              <div className="text-xs font-semibold mb-2 text-black">Data Available</div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
+                <div>
+                  <div className="text-[#808080]">Periods</div>
+                  <div className="text-black font-semibold">{periods?.length ?? 0} quarters</div>
+                </div>
+                <div>
+                  <div className="text-[#808080]">Holdings</div>
+                  <div className="text-black font-semibold">{investments.length} positions</div>
+                </div>
+                <div>
+                  <div className="text-[#808080]">Latest Filing</div>
+                  <div className="text-black font-semibold">{selectedPeriod ?? 'N/A'}</div>
+                </div>
+                <div>
+                  <div className="text-[#808080]">SEC Filings</div>
+                  <a
+                    className="text-[#0000ff] hover:underline font-semibold"
+                    href={`https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=${ticker}&type=10-Q&dateb=&owner=include&count=10`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View on EDGAR
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       ) : (
-        <div className="text-xs text-[#808080]">Select a BDC to view overview</div>
+        <div className="window p-4">
+          <div className="text-sm text-black font-semibold mb-2">Welcome to BDC Analyzer</div>
+          <div className="text-xs text-[#808080]">Select a BDC from the sidebar to view portfolio holdings, analytics, and financial data.</div>
+        </div>
       ),
     },
     {
@@ -159,14 +179,27 @@ export function TabContent({
     {
       id: 'analytics',
       label: 'Analytics',
-      content: ticker && snapshot ? (
-        <div className="flex flex-col h-full min-h-0 overflow-hidden">
-          <div className="flex-1 min-h-0 overflow-y-auto">
-            <SimpleAnalyticsPanel holdings={investments as any} period={selectedPeriod} />
+      content: ticker ? (
+        snapshot && investments.length > 0 ? (
+          <div className="flex flex-col h-full min-h-0 overflow-hidden">
+            <div className="flex-1 min-h-0 overflow-y-auto">
+              <SimpleAnalyticsPanel holdings={investments as any} period={selectedPeriod} />
+            </div>
           </div>
-        </div>
+        ) : isLoadingInvestments ? (
+          <div className="window p-4">
+            <div className="text-xs text-[#808080]">Loading holdings data for analytics...</div>
+          </div>
+        ) : (
+          <div className="window p-4">
+            <div className="text-sm text-[#808080]">No holdings data available for analytics</div>
+            <div className="text-xs text-[#808080] mt-1">Select a period with holdings data in the Holdings tab.</div>
+          </div>
+        )
       ) : (
-        <div className="text-xs text-[#808080]">Loading analytics...</div>
+        <div className="window p-4">
+          <div className="text-xs text-[#808080]">Select a BDC to view analytics</div>
+        </div>
       ),
     },
     {
@@ -297,13 +330,14 @@ export function TabContent({
           </div>
         </div>
       ) : (
-        <div className="text-xs text-[#808080]">Need at least 2 periods to compare</div>
+        <div className="window p-4">
+          <div className="text-sm text-[#808080]">
+            {!ticker ? 'Select a BDC to compare periods' :
+             !periods || periods.length === 0 ? 'No period data available' :
+             'Need at least 2 periods to compare. Backfill more historical data to enable comparisons.'}
+          </div>
+        </div>
       ),
-    },
-    {
-      id: 'data-explorer',
-      label: 'Data Explorer',
-      content: <DataExplorer ticker={ticker} />,
     },
     {
       id: 'monitor',

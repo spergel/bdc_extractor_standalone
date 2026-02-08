@@ -88,15 +88,23 @@ export function MonitorPanel() {
   if (isLoading) {
     return (
       <div className="window p-4">
-        <div className="text-sm text-[#808080]">Loading monitor data...</div>
+        <div className="titlebar mb-2">
+          <div className="text-sm tracking-wide">Liquid Private Credit Monitor</div>
+        </div>
+        <div className="text-xs text-[#808080] p-3">Loading monitor data...</div>
       </div>
     );
   }
 
-  if (error) {
+  if (error || metrics.length === 0) {
     return (
       <div className="window p-4">
-        <div className="text-sm text-[#ff0000]">Error loading monitor data</div>
+        <div className="titlebar mb-2">
+          <div className="text-sm tracking-wide">Liquid Private Credit Monitor</div>
+        </div>
+        <div className="text-xs text-[#808080] p-3">
+          {error ? 'Monitor data is not available yet. Run the monitor data pipeline to populate this view.' : 'No monitor data found.'}
+        </div>
       </div>
     );
   }
