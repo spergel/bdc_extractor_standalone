@@ -1,0 +1,24 @@
+@reference "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global body styles for Windows 95 theme */
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  @apply bg-[#c0c0c0] text-black antialiased;
+  font-family: system-ui, -apple-system, "Segoe UI", "MS Sans Serif", sans-serif;
+  position: relative;
+}
+
+/* Excel cell selection - Windows 95 style */
+.cell-selected {
+  background-color: #316ac5;
+  color: #ffffff;
+  outline: 1px dotted #000000;
+  outline-offset: -1px;
+}

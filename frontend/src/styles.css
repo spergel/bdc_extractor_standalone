@@ -1,0 +1,153 @@
+@reference "tailwindcss";
+@layer components {
+  /* Windows 95 Window - Raised/Outset border */
+  .window {
+    @apply bg-white;
+    border: 2px outset #c0c0c0;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #808080;
+    border-bottom: 2px solid #808080;
+    border-radius: 0;
+    position: relative;
+  }
+  
+  /* Windows 95 Title Bar */
+  .titlebar {
+    @apply px-2 py-1 flex items-center justify-between;
+    background: #000080;
+    color: #ffffff;
+    font-weight: bold;
+    border-bottom: 2px solid #000000;
+    border-radius: 0;
+    font-size: 11px;
+  }
+  
+  /* Badges */
+  .badge {
+    @apply text-xs px-2 py-0.5 border font-semibold;
+    border-radius: 0.25rem;
+    border: 1px solid;
+  }
+  .badge-ok { 
+    background: rgba(15, 77, 74, 0.2);
+    color: #0f4d4a;
+    border-color: rgba(15, 77, 74, 0.5);
+  }
+  .badge-warn { 
+    background: rgba(216, 163, 26, 0.2);
+    color: #d8a31a;
+    border-color: rgba(216, 163, 26, 0.5);
+  }
+  .badge-danger { 
+    background: rgba(194, 58, 43, 0.2);
+    color: #c23a2b;
+    border-color: rgba(194, 58, 43, 0.5);
+  }
+  
+  /* Windows 95 Button - Raised/Outset */
+  .btn {
+    @apply px-3 py-1 text-xs;
+    background: #c0c0c0;
+    border: 2px outset #c0c0c0;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #808080;
+    border-bottom: 2px solid #808080;
+    color: #000000;
+    font-size: 11px;
+    cursor: pointer;
+    border-radius: 0;
+    transition: none;
+  }
+  .btn:hover {
+    border-style: outset;
+    border-color: #c0c0c0;
+  }
+  .btn:active,
+  .btn.pressed {
+    border: 2px inset #c0c0c0;
+    border-top: 2px solid #808080;
+    border-left: 2px solid #808080;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    background: #a0a0a0;
+    transform: translate(1px, 1px);
+  }
+  .btn-primary {
+    background: #c0c0c0;
+    /* Same beveled style */
+  }
+  
+  /* Windows 95 Input - Sunken/Inset */
+  .input {
+    @apply px-2 py-1 text-xs;
+    background: #ffffff;
+    border: 2px inset #c0c0c0;
+    border-top: 2px solid #808080;
+    border-left: 2px solid #808080;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    color: #000000;
+    font-size: 11px;
+    border-radius: 0;
+  }
+  .input:focus {
+    outline: 1px dotted #000000;
+    outline-offset: -3px;
+  }
+  
+  /* Excel-style table - Windows 95 */
+  .table-excel {
+    @apply border-collapse;
+    border: 1px solid #c0c0c0;
+  }
+  .table-excel th,
+  .table-excel td {
+    border: 1px solid #c0c0c0;
+    background: #ffffff;
+  }
+  .table-excel th {
+    background: #c0c0c0;
+    border: 1px solid #808080;
+  }
+  .table-excel tbody tr:hover td {
+    background: #c0c0c0;
+  }
+  .table-excel tbody tr:nth-child(even) td {
+    background: #ffffff;
+  }
+  
+  /* Status bar - Windows 95 style */
+  .status-bar {
+    @apply px-3 py-1 text-xs;
+    background: #c0c0c0;
+    border-top: 1px solid #808080;
+    color: #000000;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .window {
+    padding: 0.75rem;
+  }
+  .btn {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 12px;
+  }
+  .titlebar {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .status-bar {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+  }
+}

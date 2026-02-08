@@ -1,0 +1,109 @@
+name: Backfill Historical Data
+
+on:
+  workflow_dispatch:  # Manual trigger only
+    inputs:
+      years_back:
+        description: 'Years of historical data to extract'
+        required: false
+        default: '5'
+        type: string
+      ticker:
+        description: 'Specific ticker(s) to process (comma-separated, optional)'
+        required: false
+        type: string
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360  # 6 hours for full backfill
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        working-directory: bdc_extractor_standalone
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install requests beautifulsoup4 yfinance
+      
+      - name: Backfill historical data
+        working-directory: bdc_extractor_standalone
+        env:
+          USER_AGENT: "BDC-Extractor/1.0 (github-actions)"
+        run: |
+          YEARS_BACK="${{ github.event.inputs.years_back || '5' }}"
+          TICKERS="${{ github.event.inputs.ticker || '' }}"
+          
+          if [ -n "$TICKERS" ]; then
+            # Process specific tickers
+            TICKER_ARGS=""
+            for ticker in $(echo $TICKERS | tr ',' ' '); do
+              TICKER_ARGS="$TICKER_ARGS --ticker $ticker"
+            done
+            python scripts/backfill_all_data.py \
+              --years-back $YEARS_BACK \
+              $TICKER_ARGS
+          else
+            # Process all tickers
+            python scripts/backfill_all_data.py \
+              --years-back $YEARS_BACK \
+              --skip-existing
+          fi
+      
+      - name: Commit and push changes
+        if: success()
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          if [ -n "$(git status --porcelain)" ]; then
+            git add frontend/public/data/
+            git commit -m "chore: backfill historical data [skip ci]"
+            git push
+          else
+            echo "No changes to commit"
+          fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
