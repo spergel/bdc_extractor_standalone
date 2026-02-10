@@ -142,19 +142,14 @@ SEC_API_KEY=your_sec_key_here          # Optional (increases rate limits)
 ## 📦 Key Components
 
 ### Core Scripts
-- `process_all_bdcs.py` - Main orchestrator (runs everything)
-- `llm_table_scraper.py` - LLM-powered table extraction
-- `post_process_extraction.py` - Automatic data cleaning
-- `sec_api_client.py` - SEC EDGAR API interface
-
-### Consolidation
-- `consolidate_investments.py` - Merge investment CSVs
-- `consolidate_financial_statements.py` - Merge financial CSVs
-
-### Utilities
-- `update_investments_index.py` - Generate metadata JSON
-- `update_reference_rates.py` - Rate updates utility
-- `deploy_investments_by_period.py` - Deploy specific periods
+- **`process_all_bdcs.py`** - **Main entry point** (runs everything)
+- `src/extraction/llm_table_scraper.py` - LLM-powered table extraction
+- `src/extraction/financial_statements_extractor.py` - Financial data extraction
+- `src/extraction/sec_api_client.py` - SEC EDGAR API interface
+- `src/processing/post_process_extraction.py` - Automatic data cleaning
+- `src/processing/standardization_rules.py` - Standardization logic
+- `src/consolidation/consolidate_investments.py` - Merge investment CSVs
+- `src/consolidation/consolidate_financial_statements.py` - Merge financial CSVs
 
 ## 🎨 Frontend Integration
 
@@ -190,18 +185,31 @@ Easy to add more in `process_all_bdcs.py`.
 
 ## 🔄 Workflow for New Quarterly Data
 
-When new 10-Q filings are released:
-
+### Local Extraction
 ```bash
-# 1. Extract new data (automatic standardization included)
+# Extract latest quarter
 python process_all_bdcs.py --years-back 0
 
-# 2. Verify output
-ls frontend/public/data/investments/*.csv
-
-# 3. Deploy (if needed)
-# Data is already in frontend directory
+# Extract specific tickers
+python process_all_bdcs.py --tickers ARCC MAIN --years-back 0
 ```
+
+### GitHub Actions (Automated)
+The repository includes a GitHub Actions workflow that can:
+- Run manually via workflow_dispatch
+- Run automatically monthly (15th of each month)
+- Extract latest or historical data
+- Auto-commit results
+
+**To use:**
+1. Add secrets to your GitHub repo:
+   - `OPENAI_API_KEY` (required for GPT-4)
+   - `SEC_API_KEY` (optional, increases rate limits)
+2. Go to Actions tab → "Extract BDC Data" → Run workflow
+3. Choose years back (0 = latest, 1 = past year, etc.)
+4. Optionally specify tickers
+
+**Monthly auto-run:** Workflow runs on the 15th of each month to catch new quarterly filings.
 
 ## 🧪 Testing
 

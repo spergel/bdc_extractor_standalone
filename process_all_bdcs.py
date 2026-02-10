@@ -92,15 +92,14 @@ def main():
     if not args.skip_consolidation:
         logger.info("Consolidating all extracted data...")
         
-        # Financial statements consolidation
-        run_command([
-            "python", "src/consolidation/scrape_and_consolidate_financials.py",
-            "--consolidate-only"
-        ])
-        
         # Investment consolidation
         run_command([
             "python", "src/consolidation/consolidate_investments.py"
+        ])
+        
+        # Financial statements consolidation
+        run_command([
+            "python", "src/consolidation/consolidate_financial_statements.py"
         ])
 
     logger.info("Done!")
