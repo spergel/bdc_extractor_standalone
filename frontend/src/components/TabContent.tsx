@@ -1,8 +1,9 @@
-import { ReactNode } from 'react';
+import { ReactNode, useState } from 'react';
 import { ProfileCard } from './ProfileCard';
 import { FinancialsPanel } from './FinancialsPanel';
 import { HoldingsTable } from './HoldingsTable';
 import { SimpleAnalyticsPanel } from './SimpleAnalyticsPanel';
+import { AnalyticsPanel } from './AnalyticsPanel';
 import { DiffViewer } from './DiffViewer';
 import { getPreviousQuarter, getYearOverYear, getYearEndComparison, getComparisonLabel } from '../utils/periodComparisons';
 import { playClickSound } from '../utils/sounds';
@@ -29,6 +30,61 @@ type TabContentProps = {
   onDiffSelection: (before: string | undefined, after: string | undefined, source: string) => void;
   onUserDiffSelection: () => void;
 };
+
+function AnalyticsTabContent({
+  investments,
+  selectedPeriod,
+  periods,
+  onPeriodChange,
+}: {
+  investments: any[];
+  selectedPeriod?: string;
+  periods?: string[];
+  onPeriodChange: (period: string) => void;
+}) {
+  const [view, setView] = useState<'charts' | 'numbers'>('charts');
+
+  return (
+    <div className="flex flex-col h-full min-h-0 overflow-hidden">
+      <div className="mb-2 flex items-center gap-3 flex-wrap flex-shrink-0">
+        <div className="flex items-center gap-2 text-xs text-[#808080]">
+          <span>Period:</span>
+          <select
+            className="input text-xs"
+            value={selectedPeriod ?? ''}
+            onChange={(e) => onPeriodChange(e.target.value)}
+            disabled={!periods || !periods.length}
+          >
+            {periods?.map((p) => (
+              <option key={p} value={p}>{p}</option>
+            ))}
+          </select>
+        </div>
+        <div className="flex items-center gap-1 text-xs">
+          <button
+            className={`btn text-xs ${view === 'charts' ? 'pressed' : ''}`}
+            onClick={() => { playClickSound(); setView('charts'); }}
+          >
+            Charts
+          </button>
+          <button
+            className={`btn text-xs ${view === 'numbers' ? 'pressed' : ''}`}
+            onClick={() => { playClickSound(); setView('numbers'); }}
+          >
+            Numbers
+          </button>
+        </div>
+      </div>
+      <div className="flex-1 min-h-0 overflow-y-auto">
+        {view === 'charts' ? (
+          <AnalyticsPanel holdings={investments as any} period={selectedPeriod} />
+        ) : (
+          <SimpleAnalyticsPanel holdings={investments as any} period={selectedPeriod} />
+        )}
+      </div>
+    </div>
+  );
+}
 
 export function TabContent({
   ticker,
@@ -181,11 +237,12 @@ export function TabContent({
       label: 'Analytics',
       content: ticker ? (
         snapshot && investments.length > 0 ? (
-          <div className="flex flex-col h-full min-h-0 overflow-hidden">
-            <div className="flex-1 min-h-0 overflow-y-auto">
-              <SimpleAnalyticsPanel holdings={investments as any} period={selectedPeriod} />
-            </div>
-          </div>
+          <AnalyticsTabContent
+            investments={investments}
+            selectedPeriod={selectedPeriod}
+            periods={periods}
+            onPeriodChange={onPeriodChange}
+          />
         ) : isLoadingInvestments ? (
           <div className="window p-4">
             <div className="text-xs text-[#808080]">Loading holdings data for analytics...</div>

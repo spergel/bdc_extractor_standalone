@@ -1,32 +1,33 @@
 import type { Holding } from '../data/adapter';
 
 // Helper to convert string to number safely
-function toNum(s: string | undefined | null): number {
+export function toNum(s: string | undefined | null): number {
   if (!s || s === '') return 0;
   const n = Number(s);
   return Number.isNaN(n) ? 0 : n;
 }
 
 // Helper to parse percentage strings (e.g., "5.5%" -> 5.5)
-function toPercent(s: string | undefined | null): number {
+export function toPercent(s: string | undefined | null): number {
   if (!s || s === '') return 0;
   const cleaned = String(s).replace(/%/g, '').trim();
   const n = Number(cleaned);
-  return Number.isNaN(n) ? 0 : n;
+  // Filter out nonsensical values (spreads/rates should be 0-100%)
+  return Number.isNaN(n) || n > 100 || n < 0 ? 0 : n;
 }
 
 // Helper to get cost value (supports both cost and amortized_cost)
-function getCost(h: Holding): number {
+export function getCost(h: Holding): number {
   return toNum(h.cost || h.amortized_cost);
 }
 
 // Helper to get fair value
-function getFV(h: Holding): number {
+export function getFV(h: Holding): number {
   return toNum(h.fair_value);
 }
 
 // Helper to get principal
-function getPrincipal(h: Holding): number {
+export function getPrincipal(h: Holding): number {
   return toNum(h.principal_amount);
 }
 
@@ -439,11 +440,14 @@ export function getFVRatioStats(holdings: Holding[]): FVRatioStats {
     const cost = getCost(h);
     
     if (principal > 0 && fv > 0) {
-      fvPrincipalRatios.push(fv / principal);
+      const ratio = fv / principal;
+      // Filter out data quality issues (units mismatches, etc.)
+      if (ratio >= 0.01 && ratio <= 5) fvPrincipalRatios.push(ratio);
     }
-    
+
     if (cost > 0 && fv > 0) {
-      fvCostRatios.push(fv / cost);
+      const ratio = fv / cost;
+      if (ratio >= 0.01 && ratio <= 5) fvCostRatios.push(ratio);
     }
   });
   

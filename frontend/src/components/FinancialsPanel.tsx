@@ -504,9 +504,9 @@ export function FinancialsPanel({ ticker, periods = [], name, mode = 'overview' 
     
     const renderTable = (title: string, keys: string[], dataKey: 'full_income_statement' | 'full_balance_sheet' | 'full_cash_flow_statement') => {
       if (keys.length === 0) return null;
-      
+
       return (
-        <div className="window overflow-auto mt-4">
+        <div className="mt-4">
           <div className="titlebar">
             <div className="text-sm tracking-wide">{title}</div>
           </div>
@@ -530,7 +530,7 @@ export function FinancialsPanel({ ticker, periods = [], name, mode = 'overview' 
                     // Keep original if parsing fails
                   }
                   return (
-                    <th key={period} className="text-right py-2 px-3 text-black text-xs min-w-[120px] border border-[#c0c0c0]">
+                    <th key={period} className="text-right py-2 px-3 text-black text-xs min-w-[120px] border border-[#c0c0c0] bg-[#c0c0c0]">
                       {periodLabel}
                     </th>
                   );
@@ -576,7 +576,7 @@ export function FinancialsPanel({ ticker, periods = [], name, mode = 'overview' 
         </div>
       );
     };
-    
+
     return (
       <div className="space-y-4">
         {renderTable('Income Statement', incomeKeys, 'full_income_statement')}

@@ -2,6 +2,7 @@
  * CSV-based data client - reads from consolidated investments.csv
  */
 import Papa from 'papaparse';
+import { cleanHolding } from '../utils/dataCleaning';
 
 export const API_BASE = '/data';
 
@@ -98,23 +99,22 @@ type StatementRow = {
 
 type StatementType = 'income' | 'balance' | 'cash';
 
-const STATEMENT_FILES: Record<StatementType, string> = {
-  income: 'income_statements.csv',
-  balance: 'balance_sheets.csv',
-  cash: 'cash_flows.csv',
-};
+function getStatementFile(type: StatementType, ticker: string): string {
+  const upper = ticker.toUpperCase();
+  switch (type) {
+    case 'income': return `financials/${upper}_income_statement.csv`;
+    case 'balance': return `financials/${upper}_balance_sheet.csv`;
+    case 'cash': return `financials/${upper}_cash_flows.csv`;
+  }
+}
 
-const statementCache: Record<
-  StatementType,
+const statementCache: Map<
+  string,
   {
     data: StatementRow[] | null;
     promise: Promise<StatementRow[]> | null;
   }
-> = {
-  income: { data: null, promise: null },
-  balance: { data: null, promise: null },
-  cash: { data: null, promise: null },
-};
+> = new Map();
 
 async function loadInvestmentsIndex(): Promise<BDCIndex> {
   // Return cached index if available
@@ -213,9 +213,9 @@ async function loadPeriodInvestments(ticker: string, period: string): Promise<an
         }
       }
       
-      return cleaned;
+      return cleanHolding(cleaned);
     });
-    
+
     console.log(`[CSV] Loaded ${cleanedData.length} investments for ${upperTicker} period ${period}`);
     periodDataCache.set(cacheKey, cleanedData);
     periodDataPromises.delete(cacheKey);
@@ -226,8 +226,13 @@ async function loadPeriodInvestments(ticker: string, period: string): Promise<an
   return promise;
 }
 
-async function loadStatementCsv(type: StatementType): Promise<StatementRow[]> {
-  const cache = statementCache[type];
+async function loadStatementCsv(type: StatementType, ticker: string): Promise<StatementRow[]> {
+  const cacheKey = `${type}:${ticker.toUpperCase()}`;
+  let cache = statementCache.get(cacheKey);
+  if (!cache) {
+    cache = { data: null, promise: null };
+    statementCache.set(cacheKey, cache);
+  }
   if (cache.data) {
     return cache.data;
   }
@@ -235,12 +240,17 @@ async function loadStatementCsv(type: StatementType): Promise<StatementRow[]> {
     return cache.promise;
   }
 
-  cache.promise = (async () => {
-    const filename = STATEMENT_FILES[type];
+  const c = cache;
+  c.promise = (async () => {
+    const filename = getStatementFile(type, ticker);
     console.log(`[CSV] Loading ${filename}...`);
     const res = await fetch(`${API_BASE}/${filename}`);
     if (!res.ok) {
-      throw new Error(`Failed to load ${filename}: ${res.status}`);
+      // Return empty array for missing files (e.g. no cash flow data)
+      console.warn(`[CSV] ${filename} not found (${res.status}), returning empty`);
+      c.data = [];
+      c.promise = null;
+      return [];
     }
 
     const text = await res.text();
@@ -254,13 +264,13 @@ async function loadStatementCsv(type: StatementType): Promise<StatementRow[]> {
       console.warn(`[CSV] Parse errors in ${filename}:`, parsed.errors);
     }
 
-    cache.data = parsed.data;
-    cache.promise = null;
+    c.data = parsed.data;
+    c.promise = null;
     console.log(`[CSV] Loaded ${parsed.data.length} rows from ${filename}`);
     return parsed.data;
   })();
 
-  return cache.promise;
+  return c.promise;
 }
 
 function sanitizeValue(value: number | string | null | undefined): number | null {
@@ -337,19 +347,19 @@ export async function fetchProfile(ticker: string): Promise<TickerProfile | null
 export async function fetchFinancials(ticker: string, period: string): Promise<PeriodFinancials | null> {
   const upperTicker = ticker.toUpperCase();
   const [incomeData, balanceData, cashData] = await Promise.all([
-    loadStatementCsv('income'),
-    loadStatementCsv('balance'),
-    loadStatementCsv('cash'),
+    loadStatementCsv('income', upperTicker),
+    loadStatementCsv('balance', upperTicker),
+    loadStatementCsv('cash', upperTicker),
   ]);
 
   const incomeRows = incomeData.filter(
-    (row) => row.ticker === upperTicker && row.filing_date === period
+    (row) => row.filing_date === period
   );
   const balanceRows = balanceData.filter(
-    (row) => row.ticker === upperTicker && row.filing_date === period
+    (row) => row.filing_date === period
   );
   const cashRows = cashData.filter(
-    (row) => row.ticker === upperTicker && row.filing_date === period
+    (row) => row.filing_date === period
   );
 
   const hasData = incomeRows.length + balanceRows.length + cashRows.length > 0;

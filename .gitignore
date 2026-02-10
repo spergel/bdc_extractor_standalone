@@ -38,6 +38,11 @@ ENV/
 output/
 debug_tables/
 
+# Large consolidated CSV files (can be regenerated)
+frontend/public/data/balance_sheets.csv
+frontend/public/data/income_statements.csv
+frontend/public/data/cash_flows.csv
+
 # Logs
 logs/
 *.log

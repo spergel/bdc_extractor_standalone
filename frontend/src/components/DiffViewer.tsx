@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { Holding } from '../data/adapter';
 import { calculateDiff, getDiffSummary, type HoldingChange } from '../utils/holdingsDiff';
+import { HoldingsFilterBar, filterHoldings, defaultFilterState, type FilterState } from './HoldingsFilterBar';
 
 type Props = {
   beforeHoldings: Holding[];
@@ -159,12 +160,30 @@ export function DiffViewer({ beforeHoldings, afterHoldings, beforePeriod, afterP
   const [filter, setFilter] = useState<'all' | 'added' | 'removed' | 'modified'>('all');
   const [minChangeThreshold, setMinChangeThreshold] = useState<number>(100000); // $100k default
   const [page, setPage] = useState(0);
-  
+  const [holdingsFilters, setHoldingsFilters] = useState<FilterState>(defaultFilterState);
+
+  // Reset filters when data changes
+  useEffect(() => { setHoldingsFilters(defaultFilterState); }, [afterHoldings]);
+
   const changes = useMemo(() => calculateDiff(beforeHoldings, afterHoldings), [beforeHoldings, afterHoldings]);
   const summary = useMemo(() => getDiffSummary(changes), [changes]);
-  
+
   const filteredChanges = useMemo(() => {
     let filtered = changes;
+
+    // Apply holdings filter bar (filter on the relevant holding for each change)
+    const hasHoldingsFilter = holdingsFilters.industry !== 'all' || holdingsFilters.type !== 'all' ||
+      holdingsFilters.spread !== '' || holdingsFilters.fv !== '' || holdingsFilters.fvCost !== '' ||
+      holdingsFilters.fvPrin !== '' || holdingsFilters.principal !== '';
+
+    if (hasHoldingsFilter) {
+      filtered = filtered.filter(c => {
+        // Use after holding for modified/added, before for removed
+        const holding = c.type === 'removed' ? c.before : c.after;
+        if (!holding) return false;
+        return filterHoldings([holding], holdingsFilters).length > 0;
+      });
+    }
 
     // Filter by type
     if (filter !== 'all') {
@@ -192,10 +211,10 @@ export function DiffViewer({ beforeHoldings, afterHoldings, beforePeriod, afterP
     }
 
     return filtered;
-  }, [changes, filter, minChangeThreshold]);
+  }, [changes, filter, minChangeThreshold, holdingsFilters]);
 
   // Reset page when filters change
-  useEffect(() => { setPage(0); }, [filter, minChangeThreshold]);
+  useEffect(() => { setPage(0); }, [filter, minChangeThreshold, holdingsFilters]);
 
   const totalPages = Math.max(1, Math.ceil(filteredChanges.length / PAGE_SIZE));
   const safePage = Math.min(page, totalPages - 1);
@@ -278,6 +297,9 @@ export function DiffViewer({ beforeHoldings, afterHoldings, beforePeriod, afterP
           <div className="text-xs text-[#808080] w-full sm:w-auto sm:ml-auto">
             Showing {filteredChanges.length} of {changes.length} changes
           </div>
+        </div>
+        <div className="mt-2 pt-2 border-t border-[#c0c0c0]">
+          <HoldingsFilterBar holdings={afterHoldings} filters={holdingsFilters} onChange={setHoldingsFilters} />
         </div>
       </div>
       

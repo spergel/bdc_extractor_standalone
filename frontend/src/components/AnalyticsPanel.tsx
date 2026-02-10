@@ -1,4 +1,4 @@
-import { useMemo, useState, useCallback, useRef } from 'react';
+import { useEffect, useMemo, useState, useCallback, useRef } from 'react';
 import type { Holding } from '../data/adapter';
 import {
   getIndustryDistribution,
@@ -18,6 +18,8 @@ import {
   getHerfindahlIndex,
   type RedFlag,
 } from '../utils/holdingsAnalytics';
+import { type DrillDownSelection, getFilteredHoldings } from '../utils/drillDownFilters';
+import { DrillDownTable } from './DrillDownTable';
 
 type Props = {
   holdings: Holding[];
@@ -25,7 +27,13 @@ type Props = {
 };
 
 // Pie chart component
-function PieChart({ data, title, byValue = true }: { data: Array<{ category: string; count: number; fairValue: number; percentage: number }>; title: string; byValue?: boolean }) {
+function PieChart({ data, title, byValue = true, onSliceClick, selectedCategory }: {
+  data: Array<{ category: string; count: number; fairValue: number; percentage: number }>;
+  title: string;
+  byValue?: boolean;
+  onSliceClick?: (category: string) => void;
+  selectedCategory?: string | null;
+}) {
   const [hovered, setHovered] = useState<{ item: typeof data[0]; x: number; y: number } | null>(null);
   const svgRef = useRef<SVGSVGElement>(null);
 
@@ -113,11 +121,12 @@ function PieChart({ data, title, byValue = true }: { data: Array<{ category: str
                 key={i}
                 d={path}
                 fill={color}
-                stroke="#000000"
-                strokeWidth="1"
+                stroke={selectedCategory === item.category ? '#ffffff' : '#000000'}
+                strokeWidth={selectedCategory === item.category ? 3 : 1}
                 onMouseMove={(e) => handleMouseMove(e, item)}
-                style={{ cursor: 'pointer' }}
-                opacity={hovered?.item.category === item.category ? 1 : hovered ? 0.5 : 1}
+                onClick={() => onSliceClick?.(item.category)}
+                style={{ cursor: onSliceClick ? 'pointer' : 'default' }}
+                opacity={hovered?.item.category === item.category || selectedCategory === item.category ? 1 : hovered || selectedCategory ? 0.5 : 1}
               />
             ))}
           </svg>
@@ -227,7 +236,12 @@ function MaturityLadderChart({ data }: { data: Array<{ bucket: string; count: nu
 }
 
 // Histogram bar chart component
-function HistogramChart({ data, title }: { data: Array<{ range: string; count: number; percentage: number }>; title: string }) {
+function HistogramChart({ data, title, onBucketClick, selectedBucket }: {
+  data: Array<{ range: string; count: number; percentage: number }>;
+  title: string;
+  onBucketClick?: (idx: number, range: string) => void;
+  selectedBucket?: number | null;
+}) {
   const [hovered, setHovered] = useState<{ item: typeof data[0]; x: number; y: number } | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -254,7 +268,7 @@ function HistogramChart({ data, title }: { data: Array<{ range: string; count: n
   }, []);
 
   const handleMouseLeave = useCallback(() => setHovered(null), []);
-  
+
   return (
     <div ref={containerRef} className="window p-3 relative">
       <div className="text-xs font-semibold mb-2 text-black">{title}</div>
@@ -266,15 +280,17 @@ function HistogramChart({ data, title }: { data: Array<{ range: string; count: n
             onMouseEnter={(e) => handleMouseEnter(e, item)}
             onMouseMove={(e) => handleMouseMove(e, item)}
             onMouseLeave={handleMouseLeave}
-            style={{ cursor: 'pointer' }}
+            onClick={() => onBucketClick?.(i, item.range)}
+            style={{ cursor: onBucketClick ? 'pointer' : 'default' }}
           >
             <div className="w-24 text-xs text-[#808080] truncate" title={item.range}>{item.range}</div>
             <div className="flex-1 bg-[#c0c0c0] h-4 overflow-hidden">
               <div
-                className="h-full bg-[#0000ff] transition-opacity"
+                className="h-full transition-opacity"
                 style={{
                   width: `${(item.count / maxCount) * 100}%`,
-                  opacity: hovered?.item.range === item.range ? 1 : hovered ? 0.5 : 1,
+                  backgroundColor: selectedBucket === i ? '#000080' : '#0000ff',
+                  opacity: hovered?.item.range === item.range || selectedBucket === i ? 1 : hovered ? 0.5 : 1,
                 }}
               />
             </div>
@@ -303,7 +319,68 @@ function HistogramChart({ data, title }: { data: Array<{ range: string; count: n
 
 export function AnalyticsPanel({ holdings, period }: Props) {
   const [redFlagFilter, setRedFlagFilter] = useState<RedFlag['type'] | 'all'>('all');
-  
+  const [drillDown, setDrillDown] = useState<DrillDownSelection>(null);
+
+  // Clear drill-down when holdings change (new ticker/period)
+  useEffect(() => { setDrillDown(null); }, [holdings]);
+
+  const drillDownHoldings = useMemo(
+    () => drillDown ? getFilteredHoldings(holdings, drillDown) : [],
+    [holdings, drillDown]
+  );
+
+  const drillDownTitle = useMemo(() => {
+    if (!drillDown) return '';
+    switch (drillDown.source) {
+      case 'spread': return `Spread: ${drillDown.range}`;
+      case 'fv-principal': return `FV/Principal: ${drillDown.range}`;
+      case 'fv-cost': return `FV/Cost: ${drillDown.range}`;
+      case 'industry': return `Industry: ${drillDown.category}`;
+      case 'type': return `Type: ${drillDown.category}`;
+    }
+  }, [drillDown]);
+
+  // Toggle helpers - clicking same element again clears drill-down
+  const handleSpreadClick = useCallback((idx: number, range: string) => {
+    setDrillDown(prev =>
+      prev?.source === 'spread' && prev.bucketIndex === idx
+        ? null
+        : { source: 'spread', bucketIndex: idx, range }
+    );
+  }, []);
+
+  const handleFVPrincipalClick = useCallback((idx: number, range: string) => {
+    setDrillDown(prev =>
+      prev?.source === 'fv-principal' && prev.bucketIndex === idx
+        ? null
+        : { source: 'fv-principal', bucketIndex: idx, range }
+    );
+  }, []);
+
+  const handleFVCostClick = useCallback((idx: number, range: string) => {
+    setDrillDown(prev =>
+      prev?.source === 'fv-cost' && prev.bucketIndex === idx
+        ? null
+        : { source: 'fv-cost', bucketIndex: idx, range }
+    );
+  }, []);
+
+  const handleIndustryClick = useCallback((category: string) => {
+    setDrillDown(prev =>
+      prev?.source === 'industry' && prev.category === category
+        ? null
+        : { source: 'industry', category }
+    );
+  }, []);
+
+  const handleTypeClick = useCallback((category: string) => {
+    setDrillDown(prev =>
+      prev?.source === 'type' && prev.category === category
+        ? null
+        : { source: 'type', category }
+    );
+  }, []);
+
   const industryDist = useMemo(() => getIndustryDistribution(holdings), [holdings]);
   const typeDist = useMemo(() => getInvestmentTypeDistribution(holdings), [holdings]);
   const rateStruct = useMemo(() => getRateStructure(holdings), [holdings]);
@@ -338,7 +415,10 @@ export function AnalyticsPanel({ holdings, period }: Props) {
     holdings.forEach(h => {
       const fv = Number(h.fair_value || 0);
       const principal = Number(h.principal_amount || 0);
-      if (principal > 0 && fv > 0) ratios.push(fv / principal);
+      if (principal > 0 && fv > 0) {
+        const ratio = fv / principal;
+        if (ratio >= 0.01 && ratio <= 5) ratios.push(ratio);
+      }
     });
     return getFVRatioDistribution(ratios);
   }, [holdings]);
@@ -347,7 +427,10 @@ export function AnalyticsPanel({ holdings, period }: Props) {
     holdings.forEach(h => {
       const fv = Number(h.fair_value || 0);
       const cost = Number(h.cost || h.amortized_cost || 0);
-      if (cost > 0 && fv > 0) ratios.push(fv / cost);
+      if (cost > 0 && fv > 0) {
+        const ratio = fv / cost;
+        if (ratio >= 0.01 && ratio <= 5) ratios.push(ratio);
+      }
     });
     return getFVRatioDistribution(ratios);
   }, [holdings]);
@@ -370,15 +453,15 @@ export function AnalyticsPanel({ holdings, period }: Props) {
   return (
     <div className="space-y-4 overflow-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <PieChart data={industryDist} title="Industry Distribution" byValue />
-        <PieChart data={typeDist} title="Investment Type Distribution" byValue />
+        <PieChart data={industryDist} title="Industry Distribution" byValue onSliceClick={handleIndustryClick} selectedCategory={drillDown?.source === 'industry' ? drillDown.category : null} />
+        <PieChart data={typeDist} title="Investment Type Distribution" byValue onSliceClick={handleTypeClick} selectedCategory={drillDown?.source === 'type' ? drillDown.category : null} />
         <PieChart data={ratePieData} title="Variable vs Fixed Rate" />
         <MaturityLadderChart data={maturityLadder} />
       </div>
       
       {/* Spread Distribution and Floor Rate */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <HistogramChart data={spreadDistribution} title="Spread Distribution" />
+        <HistogramChart data={spreadDistribution} title="Spread Distribution" onBucketClick={handleSpreadClick} selectedBucket={drillDown?.source === 'spread' ? drillDown.bucketIndex : null} />
         <div className="window p-3">
           <div className="text-xs font-semibold mb-2 text-black">Floor Rate Analysis</div>
           <div className="space-y-2 text-xs">
@@ -466,10 +549,19 @@ export function AnalyticsPanel({ holdings, period }: Props) {
       
       {/* FV Ratio Distributions */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <HistogramChart data={fvPrincipalRatios} title="FV/Principal Ratio Distribution" />
-        <HistogramChart data={fvCostRatios} title="FV/Cost Ratio Distribution" />
+        <HistogramChart data={fvPrincipalRatios} title="FV/Principal Ratio Distribution" onBucketClick={handleFVPrincipalClick} selectedBucket={drillDown?.source === 'fv-principal' ? drillDown.bucketIndex : null} />
+        <HistogramChart data={fvCostRatios} title="FV/Cost Ratio Distribution" onBucketClick={handleFVCostClick} selectedBucket={drillDown?.source === 'fv-cost' ? drillDown.bucketIndex : null} />
       </div>
       
+      {/* Drill-Down Table */}
+      {drillDown && drillDownHoldings.length > 0 && (
+        <DrillDownTable
+          holdings={drillDownHoldings}
+          title={drillDownTitle}
+          onClose={() => setDrillDown(null)}
+        />
+      )}
+
       {/* Statistics Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="window p-3">

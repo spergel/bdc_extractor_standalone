@@ -41,6 +41,7 @@ def main():
     parser.add_argument('--skip-investments', action='store_true', help='Skip investment table extraction')
     parser.add_argument('--skip-financials', action='store_true', help='Skip financial statement extraction')
     parser.add_argument('--skip-consolidation', action='store_true', help='Skip consolidation step')
+    parser.add_argument('--force', action='store_true', help='Re-process filings even if output CSV already exists')
     
     args = parser.parse_args()
     
@@ -56,36 +57,50 @@ def main():
             logger.info(f"Extracting investments for {ticker}...")
             # We'll use a simplified version of the loop in process_mrcc_historical.py
             # For simplicity in this script, we'll just call the scraper for the last year
-            run_command([
-                "python", "llm_table_scraper.py", 
-                "--ticker", ticker, 
+            cmd = [
+                "python", "src/extraction/llm_table_scraper.py",
+                "--ticker", ticker,
                 "--years-back", str(args.years_back),
                 "--llm-provider", "gemini"
-            ])
+            ]
+            if args.force:
+                cmd.append("--force")
+            run_command(cmd)
             
         # 2. Extract Financials (10-Q)
         if not args.skip_financials:
             logger.info(f"Extracting financials for {ticker}...")
-            run_command([
-                "python", "financial_statements_extractor.py",
+            fin_cmd = [
+                "python", "src/extraction/financial_statements_extractor.py",
                 "--ticker", ticker,
                 "--years-back", str(args.years_back),
                 "--filing-type", "10-Q"
-            ])
+            ]
+            if args.force:
+                fin_cmd.append("--force")
+            run_command(fin_cmd)
 
-    # 3. Consolidate and move to frontend
+    # 3. Post-process extracted data (standardize columns)
+    if not args.skip_investments:
+        logger.info("Post-processing extracted investment data (standardizing columns)...")
+        run_command([
+            "python", "src/processing/post_process_extraction.py",
+            "--directory", "output"
+        ])
+    
+    # 4. Consolidate and move to frontend
     if not args.skip_consolidation:
         logger.info("Consolidating all extracted data...")
         
         # Financial statements consolidation
         run_command([
-            "python", "scrape_and_consolidate_financials.py",
+            "python", "src/consolidation/scrape_and_consolidate_financials.py",
             "--consolidate-only"
         ])
         
         # Investment consolidation
         run_command([
-            "python", "consolidate_investments.py"
+            "python", "src/consolidation/consolidate_investments.py"
         ])
 
     logger.info("Done!")

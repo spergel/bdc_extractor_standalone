@@ -5,6 +5,7 @@ import type { Holding } from '../data/adapter';
 import { checkRedFlags } from '../utils/holdingsAnalytics';
 import { ExportBar } from './ExportBar';
 import { calculateCurrentYield } from '../utils/referenceRates';
+import { HoldingsFilterBar, filterHoldings, defaultFilterState, type FilterState } from './HoldingsFilterBar';
 
 type Props = {
   data: Holding[];
@@ -72,6 +73,7 @@ function HoldingsTableComponent({ data, period }: Props) {
   const [currentPage, setCurrentPage] = useState<number>(0);
   const [pageSize, setPageSize] = useState<number>(100);
   const [compactMode, setCompactMode] = useState<boolean>(false);
+  const [holdingsFilters, setHoldingsFilters] = useState<FilterState>(defaultFilterState);
 
   // Default sort by company name ascending
   const [sorting, setSorting] = useState<SortingState>([{ id: 'company_name', desc: false }]);
@@ -93,6 +95,7 @@ function HoldingsTableComponent({ data, period }: Props) {
       dataRef.current = data.length;
       setSorting([{ id: 'company_name', desc: false }]);
       setCurrentPage(0);
+      setHoldingsFilters(defaultFilterState);
     }
   }, [data.length]);
 
@@ -126,22 +129,29 @@ function HoldingsTableComponent({ data, period }: Props) {
     return processed;
   }, [data]);
 
-  // Filter data based on search query
+  // Filter data based on search query and filter bar
   const filteredData = useMemo(() => {
-    if (!searchQuery.trim()) return processedData;
-    
-    const query = searchQuery.toLowerCase().trim();
-    return processedData.filter((d: any) => {
-      // Search across company name, investment type, and industry
-      return (
-        d._s_company.includes(query) ||
-        d._s_type.includes(query) ||
-        d._s_industry.includes(query) ||
-        (d?.reference_rate && String(d.reference_rate).toLowerCase().includes(query)) ||
-        (d?.maturity_date && String(d.maturity_date).toLowerCase().includes(query))
-      );
-    });
-  }, [processedData, searchQuery]);
+    let result = processedData;
+
+    // Text search
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase().trim();
+      result = result.filter((d: any) => {
+        return (
+          d._s_company.includes(query) ||
+          d._s_type.includes(query) ||
+          d._s_industry.includes(query) ||
+          (d?.reference_rate && String(d.reference_rate).toLowerCase().includes(query)) ||
+          (d?.maturity_date && String(d.maturity_date).toLowerCase().includes(query))
+        );
+      });
+    }
+
+    // Apply filter bar filters
+    result = filterHoldings(result, holdingsFilters);
+
+    return result;
+  }, [processedData, searchQuery, holdingsFilters]);
 
   const columns = useMemo(
     () => [
@@ -381,6 +391,9 @@ function HoldingsTableComponent({ data, period }: Props) {
         >
           {compactMode ? '🔍+' : '🔍−'}
         </button>
+      </div>
+      <div className="p-1 border-b border-[#c0c0c0] flex-shrink-0">
+        <HoldingsFilterBar holdings={data} filters={holdingsFilters} onChange={setHoldingsFilters} />
       </div>
       <div className="overflow-auto flex-1 min-h-0 relative">
         <table className={`w-full table-excel ${compactMode ? 'text-[9px] sm:text-[10px]' : 'text-xs sm:text-sm'}`}>
