@@ -128,7 +128,7 @@ class FinancialStatementsExtractor:
             Dictionary with balance_sheet and income_statement data
         """
         try:
-            response = requests.get(xbrl_url, headers=self.sec_client.headers)
+            response = requests.get(xbrl_url, headers=self.sec_client.headers, timeout=90)
             response.raise_for_status()
             
             # Parse XML
@@ -463,46 +463,54 @@ class FinancialStatementsExtractor:
 
             logger.info(f"Processing filing dated {filing_date}")
             
-            # Fetch the specific filing
-            filing_result = self.sec_client.fetch_filing_by_index_url(
-                index_url=filing_info['index_url'],
-                ticker=ticker,
-                filing_type=filing_type,
-                save_to_file=False
-            )
-            
-            if not filing_result:
-                continue
-            
-            # Find and parse XBRL
-            xbrl_url = self.find_xbrl_instance_document(filing_result)
-            if not xbrl_url:
-                continue
-            
-            xbrl_data = self.parse_xbrl_document(xbrl_url)
-            
-            # Save statements
-            if xbrl_data['balance_sheet']:
-                bs_path = self.save_financial_statement_csv(
-                    xbrl_data['balance_sheet'],
-                    'balance_sheet',
-                    ticker,
-                    filing_date
+            try:
+                # Fetch the specific filing (only XML/HTML - skip large exhibits)
+                filing_result = self.sec_client.fetch_filing_by_index_url(
+                    index_url=filing_info['index_url'],
+                    ticker=ticker,
+                    filing_type=filing_type,
+                    save_to_file=False,
+                    document_types=['.xml', '.htm', '.html']
                 )
-                if bs_path:
-                    results['balance_sheet'].append(bs_path)
-            
-            if xbrl_data['income_statement']:
-                is_path = self.save_financial_statement_csv(
-                    xbrl_data['income_statement'],
-                    'income_statement',
-                    ticker,
-                    filing_date
-                )
-                if is_path:
-                    results['income_statement'].append(is_path)
-            
-            # No longer extracting cash flow statements
+                
+                if not filing_result:
+                    logger.warning(f"Skipping {filing_date}: could not fetch filing")
+                    continue
+                
+                # Find and parse XBRL
+                xbrl_url = self.find_xbrl_instance_document(filing_result)
+                if not xbrl_url:
+                    logger.warning(f"Skipping {filing_date}: no XBRL instance document found in filing")
+                    continue
+                
+                xbrl_data = self.parse_xbrl_document(xbrl_url)
+                if not xbrl_data.get('balance_sheet') and not xbrl_data.get('income_statement'):
+                    logger.warning(f"Skipping {filing_date}: XBRL parse returned no balance sheet or income statement data")
+                    continue
+                
+                # Save statements
+                if xbrl_data['balance_sheet']:
+                    bs_path = self.save_financial_statement_csv(
+                        xbrl_data['balance_sheet'],
+                        'balance_sheet',
+                        ticker,
+                        filing_date
+                    )
+                    if bs_path:
+                        results['balance_sheet'].append(bs_path)
+                
+                if xbrl_data['income_statement']:
+                    is_path = self.save_financial_statement_csv(
+                        xbrl_data['income_statement'],
+                        'income_statement',
+                        ticker,
+                        filing_date
+                    )
+                    if is_path:
+                        results['income_statement'].append(is_path)
+                
+            except Exception as e:
+                logger.warning(f"Skipping {filing_date}: {e}")
 
         if skipped > 0:
             logger.info(f"Skipped {skipped} already-processed filings for {ticker}")

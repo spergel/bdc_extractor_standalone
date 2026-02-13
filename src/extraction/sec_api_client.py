@@ -20,6 +20,9 @@ from urllib.parse import urljoin
 
 logger = logging.getLogger(__name__)
 
+# Request timeout in seconds - prevents indefinite hangs on slow SEC responses
+REQUEST_TIMEOUT = 90
+
 @dataclass
 class FilingDocument:
     """Represents a document within an SEC filing."""
@@ -40,6 +43,7 @@ class FilingResult:
     documents: List[FilingDocument] = None
     metadata: Dict[str, Any] = None
     text_map: Dict[str, str] = None  # Added: map of filename to text content
+    period_end_date: Optional[str] = None  # Added: report/period end date (e.g., "2025-06-30")
 
 class SECAPIClient:
     """
@@ -212,18 +216,20 @@ class SECAPIClient:
             'sicDescription': self._company_tickers.get(ticker.upper(), {}).get('sicDescription', '')
         }
 
-    def get_filing_index_url(self, ticker: str, filing_type: str, cik: Optional[str] = None, 
-                            year: Optional[int] = None, min_date: Optional[str] = None) -> Optional[str]:
+    def get_filing_index_url(self, ticker: str, filing_type: str, cik: Optional[str] = None,
+                            year: Optional[int] = None, quarter: Optional[str] = None,
+                            min_date: Optional[str] = None) -> Optional[str]:
         """
-        Get the URL for the most recent filing of a given type, optionally filtered by date.
-        
+        Get the URL for a filing of a given type, optionally filtered by date/quarter.
+
         Args:
             ticker: Company ticker symbol
-            filing_type: Type of filing (e.g., "10-K", "8-K")
+            filing_type: Type of filing (e.g., "10-K", "10-Q")
             cik: Optional CIK number to use directly
-            year: Optional year to filter by (default: 2025). Set to None to get latest regardless of year.
-            min_date: Optional minimum date in YYYY-MM-DD format. If provided, overrides year filter.
-            
+            year: Optional year to filter by
+            quarter: For 10-Q: Q1 (Mar), Q2 (Jun), Q3 (Sep). Requires year.
+            min_date: Optional minimum date in YYYY-MM-DD format
+
         Returns:
             URL to the filing index page, or None if not found
         """
@@ -232,53 +238,58 @@ class SECAPIClient:
         if not cik:
             return None
 
+        # 10-Q quarter-end months
+        quarter_months = {'Q1': 3, 'Q2': 6, 'Q3': 9}
+
         try:
             submissions_url = f"https://data.sec.gov/submissions/CIK{cik}.json"
-            response = requests.get(submissions_url, headers=self.headers)
+            response = requests.get(submissions_url, headers=self.headers, timeout=REQUEST_TIMEOUT)
             response.raise_for_status()
             submissions = response.json()
 
             recent_filings = submissions['filings']['recent']
 
-            def find_matching_filings(year_filter: Optional[int], min_date_filter: Optional[str]):
+            def find_matching_filings(year_filter: Optional[int], quarter_filter: Optional[str],
+                                     min_date_filter: Optional[str]):
                 matches = []
                 min_date_obj = None
                 if min_date_filter:
                     try:
                         min_date_obj = datetime.strptime(min_date_filter, '%Y-%m-%d').date()
                     except ValueError:
-                        logger.warning(f"Invalid min_date format: {min_date_filter}. Expected YYYY-MM-DD")
                         min_date_filter = None
                         min_date_obj = None
-                
+
+                target_month = quarter_months.get(quarter_filter) if quarter_filter else None
+
                 for i, form in enumerate(recent_filings['form']):
                     if form != filing_type:
                         continue
-                    
+
                     report_date_str = recent_filings.get('reportDate', [None])[i]
                     if not report_date_str:
                         continue
-                    
+
                     try:
                         report_date = datetime.strptime(report_date_str, '%Y-%m-%d').date()
                     except (ValueError, TypeError):
-                        if year_filter is None and not min_date_filter:
-                            matches.append((i, None))
                         continue
-                    
+
                     if min_date_obj and report_date < min_date_obj:
                         continue
                     if year_filter is not None and report_date.year != year_filter:
                         continue
-                    
+                    if target_month is not None and report_date.month != target_month:
+                        continue
+
                     matches.append((i, report_date))
                 return matches
-            
-            matching_filings = find_matching_filings(year, min_date)
+
+            matching_filings = find_matching_filings(year, quarter, min_date)
             if not matching_filings and year is not None:
-                # Fallback to any year if the requested year had no filings
-                logger.info(f"No {filing_type} found for {ticker} in {year}; retrying without year filter.")
-                matching_filings = find_matching_filings(None, min_date)
+                logger.info(f"No {filing_type} found for {ticker} in {year}" +
+                           (f" {quarter}" if quarter else "") + "; retrying without year filter.")
+                matching_filings = find_matching_filings(None, None, min_date)
             
             if not matching_filings:
                 year_msg = f" for year {year}" if year else ""
@@ -295,7 +306,13 @@ class SECAPIClient:
             
             filing_index_url = f"https://www.sec.gov/Archives/edgar/data/{cik}/{accession_number_no_hyphens}/{accession_number}-index.html"
             date_str = report_date.strftime('%Y-%m-%d') if report_date else 'unknown'
-            logger.info(f"Found {filing_type} index for {ticker} (date: {date_str}): {filing_index_url}")
+            logger.info(f"Found {filing_type} index for {ticker} (period end: {date_str}): {filing_index_url}")
+            
+            # Store the period end date in metadata for use in year-end filtering
+            if not hasattr(self, '_cached_period_date'):
+                self._cached_period_date = {}
+            self._cached_period_date[filing_index_url] = date_str
+            
             return filing_index_url
             
         except Exception as e:
@@ -773,6 +790,9 @@ class SECAPIClient:
                 with open(file_path, 'w', encoding='utf-8') as f:
                     f.write(full_text)
                     
+            # Get period end date from cache if available
+            period_end = getattr(self, '_cached_period_date', {}).get(index_url)
+            
             return FilingResult(
                 ticker=ticker,
                 filing_type=filing_type,
@@ -782,7 +802,8 @@ class SECAPIClient:
                 file_path=file_path,
                 documents=documents,
                 metadata={'index_url': index_url},
-                text_map={}  # Placeholder for generic fetch
+                text_map={},  # Placeholder for generic fetch
+                period_end_date=period_end
             )
         except Exception as e:
             logger.error(f"Unexpected error during filing fetch for {ticker}: {e}")
@@ -1042,6 +1063,55 @@ class SECAPIClient:
             logger.error(f"Error fetching historical 10-Q filings for {ticker}: {e}")
             return []
 
+    def get_historical_10k_filings(self, ticker: str, years_back: int = 5,
+                                   start_date: Optional[str] = None,
+                                   end_date: Optional[str] = None) -> List[Dict[str, Any]]:
+        """
+        Get all historical 10-K filings for a ticker within a date range.
+        10-K = annual report (year-end / Q4 snapshot). Filed in Feb–Mar after year end.
+        """
+        cik = self.get_cik(ticker)
+        if not cik:
+            logger.warning(f"Could not find CIK for {ticker}")
+            return []
+        try:
+            submissions_url = f"https://data.sec.gov/submissions/CIK{cik}.json"
+            response = requests.get(submissions_url, headers=self.headers)
+            response.raise_for_status()
+            submissions = response.json()
+            recent_filings = submissions['filings']['recent']
+            if end_date:
+                end_datetime = datetime.strptime(end_date, '%Y-%m-%d')
+            else:
+                end_datetime = datetime.now()
+            if start_date:
+                start_datetime = datetime.strptime(start_date, '%Y-%m-%d')
+            else:
+                start_datetime = end_datetime - timedelta(days=years_back * 365)
+            filings_10k = []
+            for i, form in enumerate(recent_filings['form']):
+                if form == '10-K':
+                    filing_date_str = recent_filings['filingDate'][i]
+                    filing_date = datetime.strptime(filing_date_str, '%Y-%m-%d')
+                    if filing_date < start_datetime or filing_date > end_datetime:
+                        continue
+                    accession = recent_filings['accessionNumber'][i]
+                    accession_no_hyphens = accession.replace('-', '')
+                    filing_info = {
+                        'form': form,
+                        'date': filing_date_str,
+                        'accession': accession,
+                        'description': recent_filings['primaryDocument'][i],
+                        'index_url': f"https://www.sec.gov/Archives/edgar/data/{cik}/{accession_no_hyphens}/{accession}-index.html",
+                        'period_end_date': None,
+                    }
+                    filings_10k.append(filing_info)
+            logger.info(f"Found {len(filings_10k)} 10-K filings for {ticker} between {start_datetime.date()} and {end_datetime.date()}")
+            return filings_10k
+        except Exception as e:
+            logger.error(f"Error fetching historical 10-K filings for {ticker}: {e}")
+            return []
+
     def download_filings_by_date_range(self, ticker: str, filing_types: List[str],
                                      months_back: int = 3,
                                      max_results: Optional[int] = None) -> List[str]:
@@ -1147,7 +1217,7 @@ class SECAPIClient:
             for doc in documents:
                 try:
                     logger.info(f"Fetching document: {doc.filename}")
-                    response = requests.get(doc.url, headers=self.headers)
+                    response = requests.get(doc.url, headers=self.headers, timeout=REQUEST_TIMEOUT)
                     response.raise_for_status()
                     
                     # Store original text content
@@ -1224,7 +1294,7 @@ class SECAPIClient:
             # not the day of scraping.
             filing_date = date.today().isoformat()  # Default fallback
             try:
-                index_response = requests.get(index_url, headers=self.headers)
+                index_response = requests.get(index_url, headers=self.headers, timeout=REQUEST_TIMEOUT)
                 index_response.raise_for_status()
                 index_soup = BeautifulSoup(index_response.content, 'html.parser')
 
@@ -1285,6 +1355,9 @@ class SECAPIClient:
                 with open(file_path, 'w', encoding='utf-8') as f:
                     f.write(full_text)
 
+            # Get period end date from cache if available
+            period_end = getattr(self, '_cached_period_date', {}).get(index_url)
+            
             return FilingResult(
                 ticker=ticker,
                 filing_type=filing_type,
@@ -1294,7 +1367,8 @@ class SECAPIClient:
                 file_path=file_path,
                 documents=documents,
                 metadata={'index_url': index_url},
-                text_map=text_map
+                text_map=text_map,
+                period_end_date=period_end
             )
         except Exception as e:
             logger.error(f"Unexpected error during filing fetch by URL for {ticker}: {e}")

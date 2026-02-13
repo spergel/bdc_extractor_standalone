@@ -14,13 +14,14 @@ import os
 import logging
 import argparse
 import json
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import List, Dict, Any, Optional, Tuple
 from datetime import datetime, date
+import math
 from pathlib import Path
 import re
 import requests
 from bs4 import BeautifulSoup
-import openai
 from dataclasses import dataclass
 
 # Optional Gemini import
@@ -38,6 +39,10 @@ except ImportError:
     DOTENV_AVAILABLE = False
 
 from sec_api_client import SECAPIClient
+
+# Import modular components
+from table_detection import is_year_end_table, InvestmentTableDetector
+from data_cleaning import deduplicate_csv_rows, filter_equity_types, filter_llm_artifact_rows, remove_empty_header_rows
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -60,52 +65,40 @@ class LLMTableScraper:
     """
 
     def __init__(self,
-                 openai_api_key: Optional[str] = None,
                  gemini_api_key: Optional[str] = None,
-                 llm_provider: str = "openai",
                  data_dir: str = "data",
                  output_dir: str = "output",
-                 debug_dir: str = "debug_tables"):
+                 debug_dir: str = "debug_tables",
+                 use_llm: bool = True):
         """
         Initialize the LLM table scraper.
 
         Args:
-            openai_api_key: OpenAI API key (will check env var if not provided)
             gemini_api_key: Gemini API key (will check env var if not provided)
-            llm_provider: Which LLM to use ('openai' or 'gemini')
             data_dir: Directory for SEC API client data
             output_dir: Directory to save CSV outputs
             debug_dir: Directory to save debug information
+            use_llm: If False, skip Gemini setup (for custom scrapers that only use table parsing).
         """
         # Load environment variables from .env file if available
         if DOTENV_AVAILABLE:
             load_dotenv()
 
-        # Set up LLM provider and API keys
-        self.llm_provider = llm_provider.lower()
-        if self.llm_provider not in ['openai', 'gemini']:
-            raise ValueError("llm_provider must be 'openai' or 'gemini'")
+        self.use_llm = use_llm
+        self.gemini_api_key = None
+        self.gemini_model = None
 
-        # Set up OpenAI
-        if self.llm_provider == 'openai':
-            self.openai_api_key = openai_api_key or os.getenv('OPENAI_API_KEY')
-            if not self.openai_api_key:
-                raise ValueError("OpenAI API key required for OpenAI provider. Set OPENAI_API_KEY env var or pass directly.")
-            openai.api_key = self.openai_api_key
-            logger.info("Using OpenAI GPT-4 for LLM processing")
-
-        # Set up Gemini
-        elif self.llm_provider == 'gemini':
+        if use_llm:
             if not GEMINI_AVAILABLE:
                 raise ImportError("google-generativeai package not installed. Install with: pip install google-generativeai")
-
             self.gemini_api_key = gemini_api_key or os.getenv('GOOGLE_API_KEY')
             if not self.gemini_api_key:
-                raise ValueError("Gemini API key required for Gemini provider. Set GOOGLE_API_KEY env var or pass directly.")
-
+                raise ValueError("Gemini API key required. Set GOOGLE_API_KEY env var or pass directly.")
             genai.configure(api_key=self.gemini_api_key)
-            self.gemini_model = genai.GenerativeModel('gemini-2.5-flash-lite')
-            logger.info("Using Gemini 2.5 Flash Lite for LLM processing")
+            self.gemini_model = genai.GenerativeModel('gemini-3-flash-preview')
+            logger.info("Using Gemini 3 Flash for LLM processing")
+        else:
+            logger.info("LLM disabled (use_llm=False) - table parsing only")
 
         # Set up directories
         self.data_dir = Path(data_dir)
@@ -118,6 +111,9 @@ class LLMTableScraper:
 
         # Initialize SEC client
         self.sec_client = SECAPIClient(data_dir=str(self.data_dir))
+        
+        # Initialize table detector
+        self.table_detector = InvestmentTableDetector(self.sec_client)
 
         # Investment-related keywords to identify relevant tables
         self.investment_keywords = [
@@ -160,7 +156,7 @@ class LLMTableScraper:
                 logger.info(f"Processing document for tables: {doc.filename}")
 
                 # Fetch the document content
-                response = requests.get(doc.url, headers=self.sec_client.headers)
+                response = requests.get(doc.url, headers=self.sec_client.headers, timeout=90)
                 response.raise_for_status()
 
                 content_type = response.headers.get('content-type', '').lower()
@@ -194,86 +190,193 @@ class LLMTableScraper:
         logger.info(f"Extracted {len(all_tables)} total tables from all documents")
         return all_tables
 
-    def _is_year_end_table(self, table_html: str, table_text: str, filing_date: str) -> bool:
+    def _is_year_end_table(self, table_html: str, table_text: str, filing_date: str,
+                           context_before: str = "", filing_type: str = "10-Q", 
+                           period_end_date: str = None) -> bool:
         """
-        Check if a table is from year-end (previous year) rather than current quarter.
+        SIMPLIFIED: Check if table is from a DIFFERENT period than the filing's period end date.
         
+        For a Q2 2025 filing (period end June 30, 2025):
+        - Tables with "June 30, 2025" in header = KEEP (current period)
+        - Tables with "December 31, 2024" in header = SKIP (prior year-end)
+        
+        For a 10-K filing (year-end), we WANT the year-end data, so this returns False.
+
         Args:
             table_html: HTML of the table
             table_text: Text content of the table
-            filing_date: Current filing date (YYYY-MM-DD)
-            
+            filing_date: Filing date (YYYY-MM-DD) 
+            context_before: Optional text from preceding elements
+            filing_type: Type of filing (10-Q, 10-K, etc.)
+            period_end_date: The actual period end date (e.g., "2025-06-30" for Q2)
+
         Returns:
-            True if this appears to be a year-end table
+            True if this table is from a DIFFERENT period and should be filtered
         """
-        from datetime import datetime
-        
-        # Parse filing date to get year and quarter
-        try:
-            filing_dt = datetime.strptime(filing_date, '%Y-%m-%d')
-            filing_year = filing_dt.year
-            filing_month = filing_dt.month
+        # For 10-K filings, we WANT year-end data - don't filter anything
+        if filing_type == "10-K":
+            return False
             
-            # For 10-Q filings, we want current quarter data, not year-end
-            # Year-end tables typically reference "December 31" of previous year
-            text_lower = table_text.lower()
+        from datetime import datetime
+        import re
+
+        try:
+            # Parse the period end date (the actual date this filing covers)
+            if period_end_date:
+                period_dt = datetime.strptime(period_end_date, '%Y-%m-%d')
+                period_year = period_dt.year
+                period_month = period_dt.month
+                period_day = period_dt.day
+            else:
+                # Fallback: use filing date
+                filing_dt = datetime.strptime(filing_date, '%Y-%m-%d')
+                period_year = filing_dt.year
+                period_month = filing_dt.month  
+                period_day = filing_dt.day
+
+            # Combine table content with context (header often has the date)
+            text_lower = (table_text + ' ' + (context_before or "")).lower()
             html_lower = table_html.lower()
             combined_text = text_lower + ' ' + html_lower
             
-            # Look for year-end indicators
-            year_end_patterns = [
-                f'december 31, {filing_year - 1}',  # Previous year end
-                f'december 31,{filing_year - 1}',
-                f'as of december 31, {filing_year - 1}',
-                f'as of december 31,{filing_year - 1}',
-                f'at december 31, {filing_year - 1}',
-                f'year ended december 31, {filing_year - 1}',
-                f'fiscal year ended {filing_year - 1}',
+            # Normalize special characters
+            combined_text = re.sub(r'[\xa0\u2013\u2014\u00a0]', ' ', combined_text)
+
+            # Extract all dates from the table header/first 800 chars (covers headers + first few rows)
+            header_text = combined_text[:800]
+            
+            # Look for month names (September, June, December, etc.)
+            month_names = {
+                1: 'january', 2: 'february', 3: 'march', 4: 'april',
+                5: 'may', 6: 'june', 7: 'july', 8: 'august',
+                9: 'september', 10: 'october', 11: 'november', 12: 'december'
+            }
+            
+            period_month_name = month_names.get(period_month, '')
+            
+            # Check if table header has the CURRENT PERIOD date
+            current_period_patterns = [
+                f'{period_month_name}\\s+{period_day}[,\\s]+{period_year}',
+                f'{period_month_name[:3]}[\\.]?\\s+{period_day}[,\\s]+{period_year}',
+                f'{period_month}/{period_day}/{period_year}',
+                f'{period_month:02d}/{period_day:02d}/{period_year}',
+                f'{period_year}-{period_month:02d}-{period_day:02d}',
             ]
             
-            # Also check for "as of" dates that are clearly year-end
-            # Look for dates like "12/31/YYYY" where YYYY is previous year
-            import re
-            date_pattern = re.search(r'(?:as of|at|as of|date:)\s*(\d{1,2}[/-]\d{1,2}[/-](\d{4}))', combined_text, re.IGNORECASE)
-            if date_pattern:
-                date_year = int(date_pattern.group(2))
-                if date_year < filing_year:
-                    logger.debug(f"Table appears to be from previous year ({date_year})")
+            has_current_period = False
+            for pattern in current_period_patterns:
+                if re.search(pattern, header_text, re.I):
+                    has_current_period = True
+                    break
+            
+            # If table has current period date, it's NOT year-end
+            if has_current_period:
+                return False
+            
+            # Check for December 31 of ANY prior year
+            # This is the hallmark of year-end comparative tables
+            dec31_match = re.search(r'(?:december|dec\.?)\\s+31[,\\s]+(\\d{4})', header_text, re.I)
+            if dec31_match:
+                year_in_table = int(dec31_match.group(1))
+                if year_in_table < period_year:
+                    logger.info(f"Detected year-end table: December 31, {year_in_table}")
                     return True
             
-            # Check for explicit year-end references
-            for pattern in year_end_patterns:
-                if pattern in combined_text:
-                    logger.info(f"Detected year-end table: {pattern}")
+            # Numeric format: 12/31/YYYY
+            dec31_numeric = re.search(r'\b12[/-]31[/-](\\d{4})\b', header_text)
+            if dec31_numeric:
+                year_in_table = int(dec31_numeric.group(1))
+                if year_in_table < period_year:
+                    logger.info(f"Detected year-end table: 12/31/{year_in_table}")
                     return True
             
-            # Check if table has "comparative" or "prior period" language suggesting it's historical
-            historical_indicators = [
-                'prior period',
-                'prior year',
-                'comparative',
-                'previous year',
-                f'year ended {filing_year - 1}',
-            ]
-            
-            for indicator in historical_indicators:
-                if indicator in combined_text:
-                    logger.debug(f"Table has historical indicator: {indicator}")
-                    # But don't exclude if it's clearly the current period table
-                    # Only exclude if it's explicitly labeled as prior/comparative
-                    if any(phrase in combined_text for phrase in ['prior period', 'prior year', 'previous year']):
-                        return True
-            
+            # Default: if no clear date match, assume it's current period
+            return False
+
         except Exception as e:
             logger.debug(f"Error checking year-end status: {e}")
-            # If we can't determine, err on the side of including it
             return False
-        
-        return False
+
+    def _detect_unit_scale(self, tables: List[Tuple[str, str, int, str]],
+                           filing_result: Any) -> str:
+        """
+        Detect the unit scale of dollar amounts from table context.
+        SEC schedule of investments often state "amounts in thousands" or "in millions".
+
+        Args:
+            tables: List of (table_html, table_text, table_num, table_id)
+            filing_result: FilingResult with text_map (doc filename -> HTML content)
+
+        Returns:
+            "thousands", "millions", or "units" (raw/unstated)
+        """
+        search_text_parts = []
+
+        # Add all table HTML and text
+        for table_html, table_text, _, _ in tables:
+            search_text_parts.append(table_html.lower())
+            search_text_parts.append(table_text.lower())
+
+        # Add document context (schedule headers often state the unit before tables)
+        if hasattr(filing_result, 'text_map') and filing_result.text_map:
+            for doc_text in filing_result.text_map.values():
+                if doc_text:
+                    # Get a window of text - schedule headers are usually near the top or before tables
+                    search_text_parts.append(doc_text[:15000].lower())
+
+        search_text = ' '.join(search_text_parts)
+
+        # Patterns that indicate thousands
+        thousands_patterns = [
+            r'in thousands',
+            r'\(in thousands\)',
+            r'amounts in thousands',
+            r'\(\$ in thousands\)',
+            r'\$ in thousands',
+            r'\(\d+\s*\)\s*in thousands',  # (000s)
+            r'\(000\'?s?\)',
+            r'\(\s*000\s*\)',
+            r'thousands of dollars',
+            r'000s',
+            r'\(000\)',
+        ]
+
+        # Patterns that indicate millions
+        millions_patterns = [
+            r'in millions',
+            r'\(in millions\)',
+            r'amounts in millions',
+            r'\(\$ in millions\)',
+            r'\$ in millions',
+            r'millions of dollars',
+        ]
+
+        for pattern in thousands_patterns:
+            if re.search(pattern, search_text, re.IGNORECASE):
+                logger.info(f"Detected unit scale: thousands (matched: {pattern})")
+                return "thousands"
+
+        for pattern in millions_patterns:
+            if re.search(pattern, search_text, re.IGNORECASE):
+                logger.info(f"Detected unit scale: millions (matched: {pattern})")
+                return "millions"
+
+        logger.info("Detected unit scale: units (no explicit scale found, assuming raw amounts)")
+        return "units"
 
     def find_investment_schedule_tables(self, tables: List[Tuple[str, str, int, str]],
-                                       filing_result: Any) -> List[Tuple[str, str, int, str]]:
+                                       filing_result: Any, filing_type: str = "10-Q",
+                                       period_end_date: str = None) -> List[Tuple[str, str, int, str]]:
+        """Delegate to InvestmentTableDetector."""
+        return self.table_detector.find_investment_schedule_tables(
+            tables, filing_result, filing_type, period_end_date
+        )
+    
+    def _OLD_find_investment_schedule_tables_DEPRECATED(self, tables: List[Tuple[str, str, int, str]],
+                                       filing_result: Any, filing_type: str = "10-Q",
+                                       period_end_date: str = None) -> List[Tuple[str, str, int, str]]:
         """
+        OLD IMPLEMENTATION - NOW IN table_detection/detector.py
         Find tables that are directly under "Schedule of Investments" headers.
         Uses HTML structure to find tables that appear after schedule headers.
         Checks ALL HTML documents (main + exhibits) to avoid missing tables.
@@ -281,6 +384,7 @@ class LLMTableScraper:
         Args:
             tables: List of (html, text, table_num, table_id) tuples
             filing_result: The FilingResult object
+            filing_type: Type of filing (10-Q, 10-K, etc.) - affects year-end filtering
             
         Returns:
             List of investment schedule tables
@@ -321,7 +425,7 @@ class LLMTableScraper:
                     doc_text = filing_result.text_map[doc.filename]
                 else:
                     # Fallback to fetching
-                    response = requests.get(doc.url, headers=self.sec_client.headers)
+                    response = requests.get(doc.url, headers=self.sec_client.headers, timeout=90)
                     response.raise_for_status()
                     doc_text = response.text
                 
@@ -370,25 +474,37 @@ class LLMTableScraper:
                 
                 # Process each schedule section in this document
                 for header_idx in schedule_header_positions:
-                    # Check if this section is year-end by looking at the header
-                    section_is_year_end = False
+                    # Check if this section is year-end by looking at the header + nearby elements
                     filing_year = int(filing_date.split('-')[0]) if filing_date else 2025
+                    filing_month = int(filing_date.split('-')[1]) if filing_date else 9
+                    filing_day = int(filing_date.split('-')[2]) if filing_date else 30
+
+                    # Check header and next 5 elements (date often in sibling or nearby paragraph)
+                    import re
+                    section_text_parts = []
+                    for k in range(min(5, len(all_elements) - header_idx)):
+                        el = all_elements[header_idx + k]
+                        section_text_parts.append(el.get_text(strip=True))
+                    section_text = ' '.join(section_text_parts).lower()
                     
-                    # Check the schedule header that started this section
-                    if header_idx < len(all_elements):
-                        header_element = all_elements[header_idx]
-                        header_text = header_element.get_text(strip=True).lower()
-                        # Check if header mentions December 31 of previous year
-                        if 'december 31' in header_text or 'dec 31' in header_text:
-                            import re
-                            year_match = re.search(r'(?:december 31|dec 31)[,\s]+(\d{4})', header_text, re.IGNORECASE)
-                            if year_match:
-                                header_year = int(year_match.group(1))
-                                if header_year < filing_year:
-                                    section_is_year_end = True
-                                    logger.info(f"Detected year-end section: header mentions December 31, {header_year}, skipping all tables in this section")
-                                    # Skip this entire section
-                                    continue
+                    # Normalize text: replace special characters with spaces
+                    section_text = re.sub(r'[\xa0\u2013\u2014\u00a0]', ' ', section_text)
+
+                    # DISABLED: Section-level year-end filtering (too aggressive, causes false positives)
+                    # Instead, we rely on table-level year-end transition detection which is more accurate
+                    #
+                    # # Simple year-end section detection: only skip if "December 31" of prior year appears
+                    # # Don't try to be too clever - let table-level filtering handle the rest
+                    # 
+                    # # Check for December 31 of prior year in section header
+                    # dec31_match = re.search(r'december\s+31[^\d]*(\d{4})', section_text, re.I)
+                    # if dec31_match:
+                    #     header_year = int(dec31_match.group(1))
+                    #     if header_year < filing_year:
+                    #         # Also check if current year appears - if so, it's comparative
+                    #         if str(filing_year) not in section_text:
+                    #             logger.info(f"Detected year-end ONLY section: December 31, {header_year}, skipping section")
+                    #             continue
                     
                     # Find all tables that come after this schedule header
                     in_schedule_section = False
@@ -420,12 +536,18 @@ class LLMTableScraper:
                                 
                                 if is_investment_table:
                                     consecutive_non_investment_tables = 0  # Reset counter
-                                    
+
+                                    # Preceding elements often contain date (e.g. "Schedule - December 31, 2024")
+                                    context_before = ' '.join(
+                                        all_elements[j].get_text(strip=True)
+                                        for j in range(max(0, i - 3), i)
+                                    )
+
                                     # Find the corresponding table in our tables list
                                     table_html = str(element)
                                     # Quick check: extract first company name from table to match
                                     table_first_text = table_text[:300]  # First 300 chars should be enough
-                                    
+
                                     for html, text, table_num, table_id in tables:
                                         # Match tables from this document (not just main doc)
                                         if table_id.startswith(doc.filename):
@@ -433,14 +555,14 @@ class LLMTableScraper:
                                             text_first = text.lower()[:300]
                                             if table_first_text[:100] in text_first or text_first[:100] in table_first_text:
                                                 if table_num not in processed_table_indices:
-                                                    # Double-check with year-end filter
-                                                    if not self._is_year_end_table(html, text, filing_date):
+                                                    # Double-check with year-end filter (include caption context)
+                                                    if not self._is_year_end_table(html, text, filing_date, context_before, filing_type, period_end_date):
                                                         investment_tables.append((html, text, table_num, table_id))
                                                         logger.info(f"Added investment schedule table {table_num} from {doc.filename} ({table_id})")
                                                     else:
                                                         logger.info(f"Skipping year-end table {table_num} from {doc.filename} ({table_id})")
                                                     processed_table_indices.add(table_num)
-                                                    break  # Found match, move to next table
+                                                break  # Found match, move to next element
                                 else:
                                     consecutive_non_investment_tables += 1
                                     # If we hit too many non-investment tables in a row, we might have left the section
@@ -459,7 +581,7 @@ class LLMTableScraper:
         
         # Fallback to content-based detection if no headers found
         logger.info("No schedule headers found in any document, using fallback detection")
-        return self._fallback_table_detection(tables, filing_date)
+        return self._fallback_table_detection(tables, filing_date, filing_type, period_end_date)
     
     def _is_investment_table(self, table_text: str) -> bool:
         """
@@ -566,7 +688,7 @@ class LLMTableScraper:
         
         return False
     
-    def _fallback_table_detection(self, tables, filing_date: str = None):
+    def _fallback_table_detection(self, tables, filing_date: str = None, filing_type: str = "10-Q", period_end_date: str = None):
         """Fallback: simple content-based detection with expanded criteria."""
         investment_tables = []
         for html, text, table_num, table_id in tables:
@@ -574,8 +696,8 @@ class LLMTableScraper:
             
             # Use the same expanded criteria as the main detection
             if self._is_investment_table(text_lower):
-                # Filter out year-end tables if filing_date is provided
-                if filing_date and self._is_year_end_table(html, text, filing_date):
+                # Filter out year-end tables if filing_date is provided (only for 10-Q)
+                if filing_date and self._is_year_end_table(html, text, filing_date, "", filing_type, period_end_date):
                     logger.info(f"Fallback: Skipping year-end table {table_num}")
                     continue
                 investment_tables.append((html, text, table_num, table_id))
@@ -623,6 +745,56 @@ class LLMTableScraper:
 
         return ' '.join(context_parts)
 
+    def parse_table_to_rows(self, table_html: str) -> Optional[List[List[str]]]:
+        """
+        Parse HTML table into a grid of cell strings (header + data rows).
+        Same logic as _clean_table_html but returns rows for use by custom scrapers.
+
+        Args:
+            table_html: Raw HTML table
+
+        Returns:
+            List of rows, each row a list of cell strings; first row is header.
+            None if table could not be parsed.
+        """
+        from bs4 import BeautifulSoup
+
+        soup = BeautifulSoup(table_html, 'html.parser')
+        table = soup.find('table')
+
+        if not table:
+            return None
+
+        for element in table.find_all(style=True):
+            del element['style']
+        for element in table.find_all(['ix:nonfraction', 'ix:nonnumeric', 'span', 'div', 'font', 'sup', 'sub', 'br']):
+            element.replace_with(element.get_text())
+        for tag in table.find_all(True):
+            attrs_to_keep = {a: v for a, v in tag.attrs.items() if a in ['colspan', 'rowspan']}
+            tag.attrs = attrs_to_keep
+
+        rows = []
+        for tr in table.find_all('tr'):
+            row_data = []
+            for cell in tr.find_all(['th', 'td']):
+                text = cell.get_text(strip=True)
+                text = text.replace('\u00a0', ' ')
+                text = text.replace('\u2014', '-').replace('\u2013', '-')
+                text = text.replace('\u2019', "'").replace('\u201c', '"').replace('\u201d', '"')
+                text = text.replace('—', '-').replace('–', '-')
+                text = re.sub(r'\s*\(\d+\)\s*$', '', text)
+                text = ' '.join(text.split())
+                row_data.append(text)
+                colspan = int(cell.get('colspan', 1))
+                if colspan > 1:
+                    row_data.extend([''] * (colspan - 1))
+            if row_data and any(cell.strip() for cell in row_data):
+                rows.append(row_data)
+
+        if len(rows) >= 2:
+            rows = self._collapse_spacer_columns(rows)
+        return rows if (rows and len(rows) >= 2) else None
+
     def _clean_table_html(self, table_html: str) -> str:
         """
         Aggressively clean and simplify HTML table for better LLM parsing.
@@ -633,99 +805,202 @@ class LLMTableScraper:
         Returns:
             Cleaned markdown table
         """
-        from bs4 import BeautifulSoup
+        rows = self.parse_table_to_rows(table_html)
+        if not rows or len(rows) < 2:
+            return "Could not extract clean table data"
 
-        soup = BeautifulSoup(table_html, 'html.parser')
-        table = soup.find('table')
+        headers = rows[0]
+        markdown_lines = [
+            '| ' + ' | '.join(headers) + ' |',
+            '| ' + ' | '.join(['---'] * len(headers)) + ' |',
+        ]
+        for row_data in rows[1:]:
+            while len(row_data) < len(headers):
+                row_data.append('')
+            row_data = row_data[:len(headers)]
+            cleaned_row = [re.sub(r'^[-\s]*$', '', cell.strip()) for cell in row_data]
+            markdown_lines.append('| ' + ' | '.join(cleaned_row) + ' |')
+        return '\n'.join(markdown_lines)
 
-        if not table:
-            return table_html
+    def _collapse_spacer_columns(self, rows: List[List[str]]) -> List[List[str]]:
+        """
+        Remove spacer columns and merge value+unit columns from SEC table data.
 
-        # Remove all styling and complex elements
-        for element in table.find_all(style=True):
-            del element['style']
+        SEC HTML tables often use many empty "spacer" columns for visual alignment,
+        and split values from their units (e.g., "5.61" | "%" in separate columns).
+        This collapses the table to only meaningful columns.
 
-        # Remove inline XBRL tags and complex markup
-        for element in table.find_all(['ix:nonfraction', 'ix:nonnumeric', 'span', 'div', 'font', 'sup', 'sub', 'br']):
-            # Keep the text content but remove the tags
-            element.replace_with(element.get_text())
+        Args:
+            rows: List of row data (first row is header)
 
-        # Remove all attributes except basic ones
-        for tag in table.find_all(True):
-            # Keep only essential attributes
-            attrs_to_keep = {}
-            for attr, value in tag.attrs.items():
-                if attr in ['colspan', 'rowspan']:  # Keep for table structure
-                    attrs_to_keep[attr] = value
-            tag.attrs = attrs_to_keep
+        Returns:
+            Cleaned rows with spacer columns removed and units merged
+        """
+        if not rows or len(rows) < 2:
+            return rows
 
-        # Extract clean text from all cells
-        rows = []
-        for tr in table.find_all('tr'):
-            row_data = []
-            for cell in tr.find_all(['th', 'td']):
-                # Get clean text
-                text = cell.get_text(strip=True)
+        # Normalize row lengths to the max
+        max_cols = max(len(r) for r in rows)
+        for r in rows:
+            while len(r) < max_cols:
+                r.append('')
 
-                # Clean up common SEC formatting
-                text = text.replace('\u00a0', ' ')  # Non-breaking spaces
-                text = text.replace('\u2014', '-')  # Em dashes
-                text = text.replace('\u2013', '-')  # En dashes
-                text = text.replace('\u2019', "'")  # Smart quotes
-                text = text.replace('\u201c', '"')  # Smart quotes
-                text = text.replace('\u201d', '"')  # Smart quotes
-                text = text.replace('—', '-')      # Em dash
-                text = text.replace('–', '-')      # En dash
+        # Step 1: Identify spacer columns (empty in >80% of data rows)
+        # Never collapse columns that look like rate/interest/spread/PIK (often mostly empty for equity rows)
+        data_rows = rows[1:]  # Skip header
+        num_data = len(data_rows)
+        if num_data == 0:
+            return rows
 
-                # Remove footnotes like (1), (2), etc. if they're just references
-                text = re.sub(r'\s*\(\d+\)\s*$', '', text)
+        RATE_HEADER_KEYWORDS = (
+            "rate", "spread", "pik", "interest", "reference", "margin", "coupon", "index"
+        )
 
-                # Normalize whitespace
-                text = ' '.join(text.split())
+        spacer_cols = set()
+        for col_idx in range(max_cols):
+            header = (rows[0][col_idx] or "").lower()
+            if any(kw in header for kw in RATE_HEADER_KEYWORDS):
+                continue  # Keep this column even if mostly empty
+            empty_count = sum(1 for r in data_rows if not r[col_idx].strip())
+            if empty_count / num_data > 0.80:
+                spacer_cols.add(col_idx)
 
-                row_data.append(text)
+        # Remove spacer columns from all rows
+        keep_cols = [i for i in range(max_cols) if i not in spacer_cols]
+        rows = [[r[i] for i in keep_cols] for r in rows]
 
-            if row_data and any(cell.strip() for cell in row_data):  # Skip completely empty rows
-                rows.append(row_data)
+        if not rows or not rows[0]:
+            return rows
 
-        # Convert to clean markdown table
-        if len(rows) >= 2:  # Need at least header + 1 data row
-            markdown_lines = []
+        # Step 2: Merge value+unit columns
+        # Scan for columns that are frequently just a unit symbol (%, $)
+        data_rows = rows[1:]
+        num_cols = len(rows[0])
+        unit_cols = set()
 
-            # First row is headers
-            headers = rows[0]
-            header_line = '| ' + ' | '.join(headers) + ' |'
-            separator_line = '| ' + ' | '.join(['---'] * len(headers)) + ' |'
+        for col_idx in range(num_cols):
+            col_values = [r[col_idx].strip() for r in data_rows if r[col_idx].strip()]
+            if not col_values:
+                continue
+            unit_count = sum(1 for v in col_values if v in ('%', '$'))
+            if len(col_values) > 0 and unit_count / len(col_values) > 0.5:
+                unit_cols.add(col_idx)
 
-            markdown_lines.append(header_line)
-            markdown_lines.append(separator_line)
+        if unit_cols:
+            # Merge unit columns with their adjacent value column
+            merged_rows = []
+            for row in rows:
+                new_row = []
+                skip_next = False
+                for col_idx in range(num_cols):
+                    if skip_next:
+                        skip_next = False
+                        continue
 
-            # Add data rows (skip headers, limit to reasonable number)
-            for row_data in rows[1:30]:  # Limit rows to avoid token limits
-                # Pad or truncate to match header count
-                while len(row_data) < len(headers):
-                    row_data.append('')
-                row_data = row_data[:len(headers)]
+                    cell = row[col_idx].strip()
 
-                # Clean the data
-                cleaned_row = []
-                for cell in row_data:
-                    # Remove common prefixes/suffixes that aren't data
-                    cell = cell.strip()
-                    cell = re.sub(r'^[-\s]*$', '', cell)  # Empty cells
-                    cleaned_row.append(cell)
+                    # Check if next column is a unit column — merge into this cell
+                    if col_idx + 1 < num_cols and (col_idx + 1) in unit_cols:
+                        unit = row[col_idx + 1].strip()
+                        if unit == '$':
+                            new_row.append(f"${cell}" if cell else cell)
+                        elif unit == '%':
+                            new_row.append(f"{cell}%" if cell else cell)
+                        else:
+                            new_row.append(cell)
+                        skip_next = True
+                    # Check if THIS column is a unit column and previous wasn't handled
+                    elif col_idx in unit_cols:
+                        # Unit column with no preceding value — already merged or standalone
+                        # Check if previous column exists and wasn't a value that got merged
+                        if new_row:
+                            prev = new_row[-1]
+                            if cell == '$':
+                                new_row[-1] = f"${prev}" if prev else ''
+                            elif cell == '%':
+                                new_row[-1] = f"{prev}%" if prev else ''
+                            else:
+                                new_row.append(cell)
+                        else:
+                            new_row.append(cell)
+                    else:
+                        new_row.append(cell)
 
-                row_line = '| ' + ' | '.join(cleaned_row) + ' |'
-                markdown_lines.append(row_line)
+                merged_rows.append(new_row)
+            rows = merged_rows
 
-            return '\n'.join(markdown_lines)
+        if rows:
+            removed = max_cols - len(rows[0])
+            if removed > 0:
+                logger.info(f"Collapsed table from {max_cols} to {len(rows[0])} columns (removed {len(spacer_cols)} spacer cols, merged {len(unit_cols)} unit cols)")
 
-        return "Could not extract clean table data"
+        return rows
+
+    # Max rows per LLM call - tables larger than this are chunked
+    ROWS_PER_CHUNK = 100
+
+    def _chunk_markdown_table(self, markdown_table: str) -> List[str]:
+        """
+        Split a large markdown table into chunks, each with the header.
+        Returns a list of markdown table strings.
+        """
+        lines = markdown_table.split('\n')
+        if len(lines) <= 2:
+            return [markdown_table]
+
+        header_lines = lines[:2]  # header + separator
+        data_lines = lines[2:]
+
+        if len(data_lines) <= self.ROWS_PER_CHUNK:
+            return [markdown_table]
+
+        chunks = []
+        for i in range(0, len(data_lines), self.ROWS_PER_CHUNK):
+            chunk_data = data_lines[i:i + self.ROWS_PER_CHUNK]
+            chunk_md = '\n'.join(header_lines + chunk_data)
+            chunks.append(chunk_md)
+
+        logger.info(f"Split table with {len(data_lines)} rows into {len(chunks)} chunks of ~{self.ROWS_PER_CHUNK} rows")
+        return chunks
+
+    def _call_gemini(self, prompt: str, table_number: int) -> str:
+        """Make a single Gemini API call and return the response text."""
+        import time
+        
+        logger.debug(f"🤖 Sending to LLM: {len(prompt)} chars prompt for table {table_number}")
+
+        generation_config = genai.types.GenerationConfig(
+            temperature=0.1,
+            max_output_tokens=16000,
+            top_p=0.8,
+            top_k=40
+        )
+
+        start_time = time.time()
+
+        response = self.gemini_model.generate_content(
+            prompt,
+            generation_config=generation_config
+        )
+
+        elapsed = time.time() - start_time
+        logger.info(f"LLM call completed in {elapsed:.1f} seconds")
+        
+        response_text = response.text.strip()
+        
+        logger.debug(f"🤖 LLM returned: {len(response_text)} chars")
+        if len(response_text) < 500:
+            logger.warning(f"⚠️  Short LLM response ({len(response_text)} chars): {response_text}")
+        else:
+            logger.debug(f"   First 300 chars: {response_text[:300]}")
+
+        return response_text
 
     def parse_table_with_llm(self, table_html: str, table_text: str, table_number: int,
                            filing_info: Dict[str, Any], previous_table_csv: Optional[str] = None) -> Optional[TableExtractionResult]:
         """
         Use LLM to parse an HTML table into structured CSV data.
+        Large tables are automatically chunked into multiple LLM calls.
 
         Args:
             table_html: Raw HTML of the table
@@ -736,111 +1011,57 @@ class LLMTableScraper:
         Returns:
             TableExtractionResult if successful, None otherwise
         """
+        # Log table details for debugging
+        logger.info(f"📊 Table {table_number}: {len(table_html)} chars HTML, {len(table_text)} chars text")
+        logger.debug(f"   First 300 chars of text: {table_text[:300]}")
+        logger.debug(f"   Table has {table_html.count('<tr>')} rows (HTML <tr> count)")
+        
         # Clean the table HTML before sending to LLM
         cleaned_table = self._clean_table_html(table_html)
-        prompt = self._build_llm_prompt(cleaned_table, table_text, table_number, filing_info, previous_table_csv)
+
+        # Split into chunks if table is large
+        chunks = self._chunk_markdown_table(cleaned_table)
 
         try:
-            if self.llm_provider == 'openai':
-                response = openai.ChatCompletion.create(
-                    model="gpt-4",  # Use GPT-4 for better table parsing
-                    messages=[
-                        {"role": "system", "content": "You are an expert financial analyst specializing in SEC filing data extraction. You extract structured data from complex financial tables with high accuracy."},
-                        {"role": "user", "content": prompt}
-                    ],
-                    temperature=0.1,  # Low temperature for consistent parsing
-                    max_tokens=4000
-                )
-                llm_response = response.choices[0].message.content.strip()
+            all_csv_rows = []  # Collects all parsed CSV rows across chunks
+            chunk_count = len(chunks)
 
-            elif self.llm_provider == 'gemini':
-                # Configure Gemini with appropriate settings for table parsing
-                generation_config = genai.types.GenerationConfig(
-                    temperature=0.1,  # Low temperature for consistent parsing
-                    max_output_tokens=4000,
-                    top_p=0.8,
-                    top_k=40
-                )
+            for chunk_idx, chunk_md in enumerate(chunks):
+                if chunk_count > 1:
+                    logger.info(f"Processing chunk {chunk_idx + 1}/{chunk_count} for table {table_number}")
 
-                # Add timeout to prevent hanging
-                import signal
-                
-                # Create the prompt for Gemini - with separate cash and PIK rates
-                gemini_prompt = f"""You are an expert financial analyst extracting investment data from a CLEANED SEC filing table. The table has been preprocessed to remove formatting artifacts and is presented in a clear markdown format.
+                prompt = self._build_llm_prompt(chunk_md, table_text, table_number, filing_info, previous_table_csv)
 
-CRITICAL INSTRUCTIONS:
-1. This is a markdown table with clean data - analyze each column carefully
-2. Each row represents one investment in a portfolio company
-3. Extract ALL financial data available - don't skip columns
-4. SEPARATE cash rates and PIK rates into different columns
-5. Look for monetary amounts ($), percentages (%), dates, and rates
-6. VERY IMPORTANT: DO NOT USE COMMAS INSIDE ANY FIELD VALUES. If the source table has commas inside text (for example in company names like "Douglas Holdings, Inc."), REPLACE THOSE COMMAS WITH SPACES (e.g., "Douglas Holdings Inc"). The ONLY commas in your response should be the separators between the 16 CSV columns.
-
-REQUIRED OUTPUT COLUMNS (in this exact order):
-company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment
-
-EXTRACTION RULES (WITH STANDARDIZATION):
-- company_name: Portfolio company name (may include "(fka ...)" or other qualifiers)
-- investment_type: Use ONLY these standard values: "First Lien", "Revolver", "Delayed Draw", "Second Lien", "Subordinated Debt", "Unsecured Debt", "Common Equity", "Preferred Equity", "Partnership Interest", "Warrants", "Unfunded Commitment", "Structured Note", "Money Market Fund", "Other Debt", "Other"
-  Examples: "First lien senior secured loan" → "First Lien", "Revolving credit facility" → "Revolver", "Common stock" → "Common Equity"
-- industry: Use ONLY standard categories: "Software", "Healthcare Services", "Pharmaceuticals & Biotechnology", "Financial Services", "Insurance", "Manufacturing", "Business Services", etc.
-  Examples: "Healthcare Providers & Services" → "Healthcare Services", "High Tech Industries" → "Software", "Banking" → "Financial Services"
-- cash_rate: Cash interest rate only (e.g., "8.5%", "SOFR + 5.0%") - extract from combined rates like "8.5% Cash/ 2.0% PIK"
-- pik_rate: PIK interest rate only (e.g., "2.0%") - extract from combined rates, leave blank if no PIK
-- reference_rate: Use ONLY: "SOFR", "SOFR (Q)", "LIBOR", "Euribor", "Prime", "SONIA", "CDOR", "BKBM", "N/A"
-  Examples: "SF" or "SF+" → "SOFR", "L" or "3 Month LIBOR" → "LIBOR (Q)", "P" or "Base Rate" → "Prime", "n/a" → "N/A"
-- spread: Spread over reference rate (e.g., "5.0%", "4.75%")
-- maturity_date: YYYY-MM-DD format
-- principal_amount: Loan principal (numbers only, no $ signs)
-- amortized_cost: Book value (numbers only)
-- fair_value: Market value (numbers only)
-- percent_of_net_assets: Percentage (numbers only, no % signs)
-
-RATE PARSING EXAMPLES:
-- "8.5%" → cash_rate: "8.5%", pik_rate: ""
-- "8.5% PIK" → cash_rate: "", pik_rate: "8.5%"
-- "8.5% Cash/ 2.0% PIK" → cash_rate: "8.5%", pik_rate: "2.0%"
-- "SOFR + 5.0%" → cash_rate: "SOFR + 5.0%", pik_rate: ""
-
-CSV FORMATTING:
-- One investment per row
-- NEVER output a comma inside any field value. If a value would normally contain a comma, replace it with a space instead.
-- Leave empty fields blank
-- Do not add extra columns or change order
-
-{prompt}
-
-QUALITY CHECK: Most investments should have principal_amount, amortized_cost, and fair_value filled in. Parse rates carefully - separate cash and PIK components."""
-
-                # Add timeout wrapper to prevent hanging
                 try:
-                    import time
-                    start_time = time.time()
-                    timeout_seconds = 120  # 2 minute timeout per table
-                    
-                    response = self.gemini_model.generate_content(
-                        gemini_prompt,
-                        generation_config=generation_config
-                    )
-                    
-                    elapsed = time.time() - start_time
-                    logger.info(f"LLM call completed in {elapsed:.1f} seconds")
-                    
-                    llm_response = response.text.strip()
-                except Exception as timeout_error:
-                    logger.error(f"LLM call timed out or failed for table {table_number}: {timeout_error}")
-                    raise
+                    llm_response = self._call_gemini(prompt, table_number)
+                except Exception as e:
+                    logger.error(f"LLM call failed for table {table_number} chunk {chunk_idx + 1}: {e}")
+                    continue
 
-            # Parse the LLM response
-            csv_content, confidence_score, metadata = self._parse_llm_response(llm_response)
+                csv_content, confidence_score, metadata = self._parse_llm_response(llm_response)
 
-            if csv_content:
-                return TableExtractionResult(
-                    csv_content=csv_content,
-                    table_number=table_number,
-                    confidence_score=confidence_score,
-                    metadata=metadata
-                )
+                if csv_content:
+                    csv_lines = csv_content.strip().split('\n')
+                    if chunk_idx == 0:
+                        # First chunk: include header + data
+                        all_csv_rows.extend(csv_lines)
+                    else:
+                        # Subsequent chunks: skip header row
+                        all_csv_rows.extend(csv_lines[1:])
+
+            if not all_csv_rows:
+                return None
+
+            combined_csv = '\n'.join(all_csv_rows)
+            confidence_score = self._calculate_confidence_score(combined_csv)
+            total_data_rows = len(all_csv_rows) - 1  # minus header
+
+            return TableExtractionResult(
+                csv_content=combined_csv,
+                table_number=table_number,
+                confidence_score=confidence_score,
+                metadata={'total_rows': total_data_rows, 'chunks': chunk_count}
+            )
 
         except Exception as e:
             logger.error(f"Error calling LLM for table {table_number}: {e}")
@@ -856,14 +1077,36 @@ QUALITY CHECK: Most investments should have principal_amount, amortized_cost, an
             table_html: Raw HTML table
             table_text: Plain text table content
             table_number: Table number
-            filing_info: Filing metadata
+            filing_info: Filing metadata (may include 'unit_scale': "thousands"|"millions"|"units")
+            previous_table_csv: CSV from previous table for context
 
         Returns:
             Complete LLM prompt
         """
-        # Truncate very large tables for the prompt
-        if len(table_html) > 10000:
-            table_html = table_html[:10000] + "...[truncated]"
+        # Truncate very large tables for the prompt (raised limit for chunked processing)
+        if len(table_html) > 50000:
+            table_html = table_html[:50000] + "...[truncated]"
+
+        # Build unit scale instruction
+        unit_instruction = ""
+        scale = filing_info.get('unit_scale', 'units')
+        if scale == "thousands":
+            unit_instruction = """
+IMPORTANT: This table reports dollar amounts IN THOUSANDS. Extract the numbers exactly as shown in the table. Do NOT multiply or divide. The raw numbers from the table are already in the correct unit (thousands).
+"""
+        elif scale == "millions":
+            unit_instruction = """
+IMPORTANT: This table reports dollar amounts IN MILLIONS. Extract the numbers exactly as shown in the table. Do NOT multiply or divide. The raw numbers from the table are already in the correct unit (millions).
+"""
+        else:
+            unit_instruction = """
+IMPORTANT: Extract dollar amounts exactly as shown in the table. Do NOT multiply or divide. The raw numbers from the table are already in the correct unit.
+"""
+
+        # Scale consistency check
+        scale_check = """
+CRITICAL SCALE CHECK: If percent_of_net_assets for any single holding exceeds 15%, double-check that you read the correct column. BDC portfolios are diversified - single positions rarely exceed 10% of net assets.
+"""
 
         # Build previous table context if available
         previous_context = ""
@@ -881,7 +1124,8 @@ NOTE: If you see industry categories or investment types in the previous table, 
 """
         
         prompt = f"""Extract investment data from this SEC filing table. The table has been cleaned and converted to markdown format.
-
+{unit_instruction}
+{scale_check}
 OUTPUT: CSV with EXACTLY 16 columns in this exact order:
 company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment
 
@@ -952,13 +1196,13 @@ CRITICAL FORMATTING REQUIREMENTS:
 
 DATA QUALITY REQUIREMENTS:
 - company_name MUST be an actual company name (contains LLC, Inc., Corp, LP, etc. or is a recognizable business name)
-- investment_type MUST be specific (e.g., "Senior Secured Loan", "First Lien Senior Secured", "Common Equity", "Preferred Equity") - NOT generic terms like "Loan" or "Equity"
+- investment_type MUST use standardized values (e.g., "First Lien", "Second Lien", "Common Equity", "Preferred Equity") - NOT generic terms like "Loan" or "Equity"
 - If you see a row that is ONLY an industry name (like "High Tech Industries") or ONLY an investment type category, SKIP IT - it's a header, not data
 
 EXAMPLE OF CORRECT FORMAT:
 company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment
-ABC Company LLC,Senior Secured Loan,Healthcare,8.5%,,SOFR,5.0%,2023-01-15,2028-01-15,5000,4950,5000,2.5,,,,
-XYZ Corp,Common Equity,Technology,,,n/a,n/a,2022-06-01,,,1000,1200,0.6,1000,,
+ABC Company LLC,First Lien,Healthcare Services,8.5%,,SOFR,5.0%,2023-01-15,2028-01-15,5000,4950,5000,2.5,,,,
+XYZ Corp,Common Equity,Software,,,N/A,N/A,2022-06-01,,,1000,1200,0.6,1000,,
 """
 
         return prompt
@@ -996,7 +1240,10 @@ XYZ Corp,Common Equity,Technology,,,n/a,n/a,2022-06-01,,,1000,1200,0.6,1000,,
                 break
 
         if csv_start == -1:
-            logger.warning("No CSV headers found in LLM response")
+            logger.warning("❌ No CSV headers found in LLM response")
+            logger.warning(f"   Response length: {len(response)} chars")
+            logger.warning(f"   First 500 chars: {response[:500]}")
+            logger.warning(f"   Last 500 chars: {response[-500:]}")
             return None, 0.0, {}
 
         # Extract CSV content
@@ -1004,7 +1251,10 @@ XYZ Corp,Common Equity,Technology,,,n/a,n/a,2022-06-01,,,1000,1200,0.6,1000,,
 
         # Validate CSV structure
         if len(csv_lines) < 2:  # Need at least header + 1 data row
-            logger.warning("CSV content too short")
+            logger.warning("❌ CSV content too short")
+            logger.warning(f"   Only {len(csv_lines)} CSV lines found (need at least 2)")
+            logger.warning(f"   Response length: {len(response)} chars")
+            logger.warning(f"   Full response:\n{response}")
             return None, 0.0, {}
 
         # Parse header to get expected column count (should be 16)
@@ -1076,6 +1326,9 @@ XYZ Corp,Common Equity,Technology,,,n/a,n/a,2022-06-01,,,1000,1200,0.6,1000,,
             logger.warning("No valid CSV rows after validation")
             return None, 0.0, {}
 
+        # Post-extraction validation: fix obviously wrong numeric values
+        valid_rows = self._validate_numeric_fields(valid_rows)
+
         csv_content = '\n'.join(valid_rows)
 
         # Calculate confidence based on data quality
@@ -1088,6 +1341,92 @@ XYZ Corp,Common Equity,Technology,,,n/a,n/a,2022-06-01,,,1000,1200,0.6,1000,,
         }
 
         return csv_content, confidence, metadata
+
+    def _validate_numeric_fields(self, rows: List[str]) -> List[str]:
+        """
+        Post-extraction validation to catch obviously wrong values.
+        Fixes or clears fields that are clearly mis-parsed (e.g., dollar amounts
+        in the percent_of_net_assets column).
+
+        Column indices (0-based):
+          9=principal_amount, 10=amortized_cost, 11=fair_value,
+          12=percent_of_net_assets, 13=cost
+        """
+        import csv
+        from io import StringIO
+
+        if not rows:
+            return rows
+
+        validated = [rows[0]]  # Keep header
+        fixes_count = 0
+
+        for row_str in rows[1:]:
+            try:
+                reader = csv.reader(StringIO(row_str))
+                cols = list(reader)[0]
+            except Exception:
+                validated.append(row_str)
+                continue
+
+            if len(cols) < 16:
+                validated.append(row_str)
+                continue
+
+            fixed = False
+
+            # Validate percent_of_net_assets (col 12)
+            # Should be a small number, typically -5 to 30. Values > 50 or < -10
+            # are almost certainly dollar amounts leaked from adjacent columns.
+            pct_str = cols[12].strip()
+            if pct_str:
+                try:
+                    pct_val = float(pct_str.replace(',', '').replace('%', ''))
+                    if abs(pct_val) > 50:
+                        logger.debug(f"Clearing bad percent_of_net_assets={pct_val} for {cols[0]}")
+                        cols[12] = ''
+                        fixed = True
+                except (ValueError, TypeError):
+                    cols[12] = ''
+                    fixed = True
+
+            # Validate fair_value (col 11) - should not be negative
+            fv_str = cols[11].strip()
+            if fv_str:
+                try:
+                    fv_val = float(fv_str.replace(',', ''))
+                    if fv_val < -1000:
+                        logger.debug(f"Clearing suspicious negative fair_value={fv_val} for {cols[0]}")
+                        cols[11] = ''
+                        fixed = True
+                except (ValueError, TypeError):
+                    pass
+
+            # Validate amortized_cost (col 10) - should not be wildly negative
+            ac_str = cols[10].strip()
+            if ac_str:
+                try:
+                    ac_val = float(ac_str.replace(',', ''))
+                    if ac_val < -1000:
+                        logger.debug(f"Clearing suspicious negative amortized_cost={ac_val} for {cols[0]}")
+                        cols[10] = ''
+                        fixed = True
+                except (ValueError, TypeError):
+                    pass
+
+            if fixed:
+                fixes_count += 1
+                output = StringIO()
+                writer = csv.writer(output, quoting=csv.QUOTE_MINIMAL, lineterminator='')
+                writer.writerow(cols)
+                validated.append(output.getvalue())
+            else:
+                validated.append(row_str)
+
+        if fixes_count > 0:
+            logger.info(f"Post-extraction validation: fixed {fixes_count} rows with bad numeric values")
+
+        return validated
 
     def _is_valid_data_row(self, cols: list) -> bool:
         """
@@ -1153,21 +1492,18 @@ XYZ Corp,Common Equity,Technology,,,n/a,n/a,2022-06-01,,,1000,1200,0.6,1000,,
             if not has_company_suffix and not has_other_data:
                 return False
         
-        # Filter out rows with generic investment types like "Loan" or "Equity"
-        # These should be more specific like "Senior Secured Loan" or "Common Equity"
+        # Warn about generic investment types like "Loan" or "Equity" but keep the row
+        # Some data with a generic type is better than no data
         investment_type_lower = investment_type.lower().strip()
         generic_types = ['loan', 'equity', 'debt']
-        
-        # Check if investment_type is too generic (just one word matching generic types)
+
         is_generic = (
             investment_type_lower in generic_types or
             (len(investment_type.split()) == 1 and investment_type_lower in generic_types)
         )
-        
-        # ALWAYS filter out generic investment types - they should be more specific
+
         if is_generic:
-            logger.debug(f"Filtered out row with generic investment_type '{investment_type}' - should be more specific (e.g., 'Senior Secured Loan', 'Common Equity')")
-            return False
+            logger.warning(f"Row has generic investment_type '{investment_type}' for '{company_name}' - ideally should be more specific (e.g., 'First Lien', 'Common Equity')")
         
         # Must have a company name
         if len(company_name) < 3:
@@ -1283,13 +1619,17 @@ XYZ Corp,Common Equity,Technology,,,n/a,n/a,2022-06-01,,,1000,1200,0.6,1000,,
                 # Check for meaningful data in key columns
                 company_name = cols[0].strip().strip('"')
                 investment_type = cols[1].strip().strip('"')
+                # Numeric fields: principal_amount(9), amortized_cost(10), fair_value(11), cost(13)
+                principal_amount = cols[9].strip().strip('"')
+                amortized_cost = cols[10].strip().strip('"')
                 fair_value = cols[11].strip().strip('"')
+                cost = cols[13].strip().strip('"')
             except Exception:
                 continue
 
             # Company name should not be empty and not look like a header or industry category
             has_company = (
-                len(company_name) > 3 and 
+                len(company_name) > 3 and
                 not company_name.upper().startswith(('COMPANY', 'PORTFOLIO', 'TOTAL')) and
                 # Check if it's actually a company (has LLC, Inc, Corp, etc.) or has financial data
                 (any(suffix in company_name for suffix in ['LLC', 'Inc', 'Corp', 'LP', 'Ltd', 'Company', 'Holdings']) or
@@ -1297,12 +1637,13 @@ XYZ Corp,Common Equity,Technology,,,n/a,n/a,2022-06-01,,,1000,1200,0.6,1000,,
             )
             # Investment type should be specific, not generic
             has_investment_type = (
-                len(investment_type) > 3 and 
+                len(investment_type) > 3 and
                 investment_type.lower() not in ['loan', 'equity', 'debt']  # Must be more specific
             )
-            has_fair_value = len(fair_value) > 0 and fair_value != ''
+            # Check if ANY numeric field is populated (revolvers/unfunded may lack fair_value)
+            has_numeric = any(v for v in [principal_amount, amortized_cost, fair_value, cost])
 
-            row_quality = (has_company + has_investment_type + has_fair_value) / 3
+            row_quality = (has_company + has_investment_type + has_numeric) / 3
             quality_indicators.append(row_quality)
 
         if not quality_indicators:
@@ -1319,7 +1660,8 @@ XYZ Corp,Common Equity,Technology,,,n/a,n/a,2022-06-01,,,1000,1200,0.6,1000,,
 
     def process_historical_filings(self, ticker: str, filing_type: str = "10-Q",
                                    years_back: int = 1,
-                                   skip_existing: bool = True) -> List[str]:
+                                   skip_existing: bool = True,
+                                   debt_only: bool = False) -> List[str]:
         """
         Process multiple historical filings for a ticker.
 
@@ -1328,46 +1670,74 @@ XYZ Corp,Common Equity,Technology,,,n/a,n/a,2022-06-01,,,1000,1200,0.6,1000,,
             filing_type: Type of filing (10-Q, 10-K, etc.)
             years_back: Number of years to look back
             skip_existing: Skip filings that already have output CSVs
+            debt_only: If True, filter out equity investments
 
         Returns:
             List of paths to generated CSV files
         """
-        logger.info(f"Processing historical {filing_type} filings for {ticker} (last {years_back} years)")
+        logger.info(f"Processing historical 10-Q + 10-K filings for {ticker} (last {years_back} years)")
 
-        # Get historical filings
-        if filing_type == "10-Q":
-            filings = self.sec_client.get_historical_10q_filings(ticker, years_back=years_back)
-        else:
-            logger.warning(f"Historical filing lookup not fully implemented for {filing_type}, using latest")
-            return [self.process_filing(ticker, filing_type)]
+        # Get historical 10-Q (Q1, Q2, Q3) and 10-K (Q4 / year-end) so we have 4 periods per year
+        filings_10q = self.sec_client.get_historical_10q_filings(ticker, years_back=years_back)
+        filings_10k = self.sec_client.get_historical_10k_filings(ticker, years_back=years_back)
+        # Combine; each item has 'form' so we process 10-K with filing_type 10-K (keeps year-end tables)
+        filings = list(filings_10q) + list(filings_10k)
+        filings.sort(key=lambda f: f['date'])
 
-        results = []
-        skipped = 0
+        if not filings:
+            return []
+
+        # Group filings by year (one worker per year; all quarters within year processed by that worker)
+        by_year: Dict[int, List[Dict[str, Any]]] = {}
         for f in filings:
-            filing_date = f['date']
+            year = int(f['date'][:4])
+            by_year.setdefault(year, []).append(f)
+        # Sort quarters within each year by date
+        for year in by_year:
+            by_year[year].sort(key=lambda x: x['date'])
+        years_sorted = sorted(by_year.keys())
 
-            # Check if output already exists
-            if skip_existing:
-                existing_file = self.output_dir / f"{ticker}_investments_{filing_date}.csv"
-                if existing_file.exists() and existing_file.stat().st_size > 100:
-                    logger.info(f"SKIPPING {ticker} {filing_date} - already exists ({existing_file.stat().st_size:,} bytes)")
-                    results.append(str(existing_file))
-                    skipped += 1
-                    continue
+        def process_one_year(year: int) -> List[str]:
+            year_results = []
+            for f in by_year[year]:
+                filing_date = f['date']
+                if skip_existing:
+                    existing_file = self.output_dir / f"{ticker}_investments_{filing_date}.csv"
+                    if existing_file.exists() and existing_file.stat().st_size > 100:
+                        logger.info(f"SKIPPING {ticker} {filing_date} - already exists ({existing_file.stat().st_size:,} bytes)")
+                        year_results.append(str(existing_file))
+                        continue
+                logger.info(f"[{year}] Processing {f.get('form', '10-Q')} from {filing_date} ({f['accession']})")
+                csv_path = self.process_filing(
+                    ticker, f.get('form', '10-Q'), index_url=f['index_url'], debt_only=debt_only
+                )
+                if csv_path:
+                    year_results.append(csv_path)
+            return year_results
 
-            logger.info(f"Processing filing from {filing_date} ({f['accession']})")
-            csv_path = self.process_filing(ticker, filing_type, index_url=f['index_url'])
-            if csv_path:
-                results.append(csv_path)
-
-        if skipped > 0:
-            logger.info(f"Skipped {skipped} already-processed filings for {ticker}")
-
+        # One worker per year; all years in parallel
+        num_workers = len(years_sorted)
+        logger.info(f"Running {num_workers} year-workers in parallel (years {years_sorted[0]}-{years_sorted[-1]})")
+        results = []
+        with ThreadPoolExecutor(max_workers=num_workers) as executor:
+            future_to_year = {executor.submit(process_one_year, y): y for y in years_sorted}
+            for future in as_completed(future_to_year):
+                y = future_to_year[future]
+                try:
+                    year_results = future.result()
+                    results.extend(year_results)
+                except Exception as e:
+                    logger.exception(f"Year {y} failed: {e}")
+        # Sort by filing date so output order is chronological
+        results.sort(key=lambda p: Path(p).stem.replace(f"{ticker}_investments_", ""))
         return results
 
     def process_filing(self, ticker: str, filing_type: str = "10-Q",
                       year: Optional[int] = None, quarter: Optional[str] = None,
-                      index_url: Optional[str] = None) -> Optional[str]:
+                      index_url: Optional[str] = None,
+                      max_tables: Optional[int] = None,
+                      workers: Optional[int] = None,
+                      debt_only: bool = False) -> Optional[str]:
         """
         Process a single SEC filing to extract investment tables.
 
@@ -1377,6 +1747,7 @@ XYZ Corp,Common Equity,Technology,,,n/a,n/a,2022-06-01,,,1000,1200,0.6,1000,,
             year: Year to fetch filing for (ignored if index_url is provided)
             quarter: Quarter for 10-Q filings (Q1, Q2, Q3, Q4)
             index_url: Optional specific index URL to process
+            debt_only: If True, filter out equity investments (Common/Preferred Equity, Warrants)
 
         Returns:
             Path to generated CSV file, or None if no data extracted
@@ -1389,7 +1760,8 @@ XYZ Corp,Common Equity,Technology,,,n/a,n/a,2022-06-01,,,1000,1200,0.6,1000,,
                 index_url = self.sec_client.get_filing_index_url(
                     ticker=ticker,
                     filing_type=filing_type,
-                    year=year
+                    year=year,
+                    quarter=quarter
                 )
 
             if not index_url:
@@ -1423,19 +1795,28 @@ XYZ Corp,Common Equity,Technology,,,n/a,n/a,2022-06-01,,,1000,1200,0.6,1000,,
                 logger.warning("No tables found in filing documents")
                 return None
 
-            # Process each table - limit to top confidence tables to avoid API limits
-            all_csv_data = []
+            # Process each table - collect rows with (row_str, table_idx, table_size) for dedup
+            all_csv_data = []  # List of (row_str, table_idx, table_size)
             processed_tables = 0
-            max_tables_to_process = 10  # Limit to avoid excessive API calls
+            max_tables_to_process = max_tables  # None = process all tables
 
             # First pass: collect confidence scores
             # Initialize confidence_scores for fallback use
             confidence_scores = {}
 
-            # Use the new investment schedule detection method
-            investment_tables = self.find_investment_schedule_tables(
+            # Get period end date from filing result
+            period_end_date = getattr(filing_result, 'period_end_date', None)
+            if period_end_date:
+                logger.info(f"📅 Period end date: {period_end_date}")
+            else:
+                logger.warning("No period end date available, using filing date as fallback")
+            
+            # Use the SIMPLE filtering method (avoids duplicate matching issues from HTML re-scanning)
+            investment_tables = self.table_detector.filter_investment_tables_simple(
                 tables, 
-                filing_result
+                filing_result.filing_date,
+                filing_type,
+                period_end_date
             )
 
             if not investment_tables:
@@ -1487,22 +1868,42 @@ XYZ Corp,Common Equity,Technology,,,n/a,n/a,2022-06-01,,,1000,1200,0.6,1000,,
 
             sorted_tables = sorted(investment_tables, key=table_sort_key, reverse=True)
             tables_to_process = sorted_tables  # Process all found investment tables
+            if max_tables_to_process and len(tables_to_process) > max_tables_to_process:
+                tables_to_process = tables_to_process[:max_tables_to_process]
+                logger.info(f"Limiting to {max_tables_to_process} tables for trial run")
 
-            logger.info(f"Processing {len(tables_to_process)} investment schedule tables")
+            logger.info(f"Found {len(tables_to_process)} investment schedule tables, scanning for year-end transition...")
             
-            # Filter out year-end tables before processing
+            # NEW STRATEGY: Scan tables in order and find where year-end tables START
+            # Once we hit year-end, STOP - everything after is also year-end
+            # This is more efficient and matches the structure of SEC filings
             current_quarter_tables = []
-            for html, text, num, table_id in tables_to_process:
-                if not self._is_year_end_table(html, text, filing_result.filing_date):
-                    current_quarter_tables.append((html, text, num, table_id))
+            year_end_transition_found = False
+            
+            if filing_type == "10-Q":
+                for i, (html, text, num, table_id) in enumerate(tables_to_process):
+                    # Check if this is a year-end table
+                    if self._is_year_end_table(html, text, filing_result.filing_date, "", filing_type, period_end_date):
+                        logger.info(f"🛑 Year-end transition detected at table {num} ({table_id})")
+                        logger.info(f"   Stopping here - all remaining {len(tables_to_process) - i} tables are year-end")
+                        year_end_transition_found = True
+                        break
+                    else:
+                        # This is a current quarter table
+                        current_quarter_tables.append((html, text, num, table_id))
+                
+                if not year_end_transition_found:
+                    logger.info("✅ No year-end transition detected - all tables are current period")
                 else:
-                    logger.info(f"Filtering out year-end table {num} ({table_id})")
+                    logger.info(f"✅ Identified {len(current_quarter_tables)} current quarter tables (before year-end)")
+            else:
+                # For 10-K filings, process all tables (we WANT year-end data)
+                current_quarter_tables = tables_to_process
+                logger.info(f"10-K filing: processing all {len(current_quarter_tables)} tables")
             
             if not current_quarter_tables:
-                logger.warning("All tables were filtered out as year-end tables. Processing all tables anyway.")
+                logger.warning("No current quarter tables found. Using all tables as fallback.")
                 current_quarter_tables = tables_to_process
-            else:
-                logger.info(f"After filtering year-end tables: {len(current_quarter_tables)} tables remain")
             
             for html, text, num, table_id in current_quarter_tables:
                 text_len = len(text)
@@ -1510,70 +1911,121 @@ XYZ Corp,Common Equity,Technology,,,n/a,n/a,2022-06-01,,,1000,1200,0.6,1000,,
                 company_count = sum(1 for indicator in company_indicators if indicator in text.lower())
                 logger.info(f"  Table {num}: {text_len} chars, {company_count} company indicators")
 
-            # Process ALL relevant tables - no limit
-            logger.info(f"Processing all {len(current_quarter_tables)} current quarter tables")
+            # Process tables in parallel batches of 5 per worker
+            logger.info(f"Processing {len(current_quarter_tables)} current quarter tables in parallel batches")
 
-            total_tables = len(current_quarter_tables)
-            previous_table_csv = None  # Track previous table's CSV for context
+            # Detect unit scale once per filing (thousands/millions/units)
+            unit_scale = self._detect_unit_scale(current_quarter_tables, filing_result)
+
+            filing_info = {
+                'ticker': ticker,
+                'filing_type': filing_type,
+                'filing_date': filing_result.filing_date,
+                'accession_number': filing_result.accession_number,
+                'unit_scale': unit_scale
+            }
+
+            # NEW: Batch tables in groups of 5 for parallel processing
+            tables_per_worker = 5  # Fixed batch size - each worker gets 5 tables
+            num_tables = len(current_quarter_tables)
+            num_chunks = max(1, math.ceil(num_tables / tables_per_worker))
             
-            for idx, (table_html, table_text, table_num, table_id) in enumerate(current_quarter_tables, 1):
-                # All tables in current_quarter_tables are already identified as investment tables
-                logger.info(f"Processing investment table {idx}/{total_tables} (table {table_num + 1})")
+            # If user specified workers, use that, otherwise use number of chunks needed
+            if workers:
+                num_workers = min(workers, num_chunks)  # Don't use more workers than chunks
+            else:
+                num_workers = min(num_chunks, 8)  # Auto: use up to 8 workers for parallelization
 
-                # Save debug information
-                self._save_debug_info(table_html, table_text, table_num, filing_result, table_id)
+            logger.info(f"📊 Batching {num_tables} tables: {tables_per_worker} tables/worker × {num_chunks} chunks")
+            if num_workers > 1:
+                logger.info(f"🚀 Using {num_workers} parallel workers for faster processing")
 
-                # Parse table with LLM
-                filing_info = {
-                    'ticker': ticker,
-                    'filing_type': filing_type,
-                    'filing_date': filing_result.filing_date,
-                    'accession_number': filing_result.accession_number
-                }
+            def process_chunk(chunk_idx: int) -> List[Tuple[str, int, int]]:
+                """Process a chunk of tables sequentially. Returns [(row_str, table_idx, table_size), ...]"""
+                start = chunk_idx * tables_per_worker
+                end = min(start + tables_per_worker, len(current_quarter_tables))
+                chunk_tables = current_quarter_tables[start:end]
+                chunk_results = []
+                prev_csv = None
+                is_first_chunk = (chunk_idx == 0)
+                for i, (table_html, table_text, table_num, table_id) in enumerate(chunk_tables):
+                    global_idx = start + i
+                    logger.info(f"Worker {chunk_idx + 1}: Processing table {global_idx + 1}/{len(current_quarter_tables)} (table {table_num + 1})")
+                    self._save_debug_info(table_html, table_text, table_num, filing_result, table_id)
+                    try:
+                        result = self.parse_table_with_llm(
+                            table_html, table_text, table_num, filing_info, prev_csv)
+                    except Exception as e:
+                        logger.error(f"Error parsing table {table_num + 1}: {e}")
+                        continue
+                    if result and (result.confidence_score > 0.2 or len(result.csv_content.strip().split('\n')) > 2):
+                        csv_rows = result.csv_content.strip().split('\n')
+                        table_size = len(table_text)
+                        if len(csv_rows) > 1:
+                            include_header = is_first_chunk and i == 0
+                            data_rows = csv_rows if include_header else csv_rows[1:]
+                            for row in data_rows:
+                                chunk_results.append((row, global_idx, table_size))
+                            prev_csv = result.csv_content
+                return chunk_results
 
-                conf_score = confidence_scores.get(table_num, 0.5)  # Default to 0.5 if not in fallback scores
-                logger.info(f"Attempting to parse table {idx}/{total_tables} (table {table_num + 1}, confidence: {conf_score:.2f})")
-                
-                try:
-                    # Pass previous table CSV for context (industry/investment_type may span tables)
-                    result = self.parse_table_with_llm(table_html, table_text, table_num, filing_info, previous_table_csv)
-                except Exception as e:
-                    logger.error(f"Error parsing table {table_num + 1}: {e}")
-                    logger.info(f"Skipping table {table_num + 1} due to error, continuing with next table")
-                    continue
-
-                if result:
-                    logger.info(f"LLM result for table {table_num + 1}: {result.confidence_score:.2f} confidence, {len(result.csv_content.strip().split('\n')) - 1} rows")
-                else:
-                    logger.warning(f"No LLM result for table {table_num + 1}")
-
-                if result and (result.confidence_score > 0.2 or len(result.csv_content.strip().split('\n')) > 2):
-                    # Parse CSV and add to collection
-                    csv_rows = result.csv_content.strip().split('\n')
-                    if len(csv_rows) > 1:  # Has header + data
-                        # Skip header for all but first table
-                        data_rows = csv_rows[1:] if processed_tables > 0 else csv_rows
-                        all_csv_data.extend(data_rows)
-                        processed_tables += 1
-                        
-                        # Update previous_table_csv for next iteration (use full CSV including header)
-                        previous_table_csv = result.csv_content
-
-                        logger.info(f"Successfully processed table {table_num + 1} with {len(data_rows)} rows")
-                else:
-                    logger.warning(f"Failed to parse table {table_num + 1} with LLM")
+            if num_workers > 1 and num_chunks > 1:
+                with ThreadPoolExecutor(max_workers=min(num_workers, num_chunks)) as executor:
+                    futures = {executor.submit(process_chunk, i): i for i in range(num_chunks)}
+                    for future in as_completed(futures):
+                        chunk_idx = futures[future]
+                        try:
+                            chunk_data = future.result()
+                            all_csv_data.extend(chunk_data)
+                        except Exception as e:
+                            logger.error(f"Worker {chunk_idx} failed: {e}")
+                processed_tables = len(set(r[1] for r in all_csv_data))
+            else:
+                chunk_data = process_chunk(0)
+                all_csv_data.extend(chunk_data)
+                processed_tables = len(set(r[1] for r in all_csv_data))
 
             if not all_csv_data:
                 logger.warning("No valid investment data extracted")
                 return None
 
-            # Deduplicate rows before saving
+            # Ensure header row is first (workers may complete in any order)
+            header_pattern = 'company_name,investment_type,industry,'
+            header_row = next((r for r in all_csv_data if r[0].strip().startswith('company_name')), None)
+            if header_row:
+                all_csv_data = [header_row] + [r for r in all_csv_data if r != header_row]
+
+            # Deduplicate rows before saving (all_csv_data is list of (row_str, table_idx, table_size))
             deduplicated_data = self._deduplicate_csv_rows(all_csv_data)
             logger.info(f"Deduplicated {len(all_csv_data)} rows to {len(deduplicated_data)} unique rows")
+
+            # Validate and correct scale consistency (percent_of_net_assets, etc.)
+            deduplicated_data, scale_meta = self._validate_scale_consistency(deduplicated_data)
+
+            # Remove empty header rows (company name only, no financials)
+            deduplicated_data = self._remove_empty_header_rows(deduplicated_data)
+
+            # Remove LLM artifact rows (* *Wait, Undrawn = ..., backtick/pipe junk)
+            deduplicated_data = filter_llm_artifact_rows(deduplicated_data)
+
+            # Filter equity types if debt_only mode is enabled
+            deduplicated_data = self._filter_equity_types(deduplicated_data, debt_only=debt_only)
 
             # Combine all data and save
             final_csv = '\n'.join(deduplicated_data)
             output_path = self._save_csv_output(final_csv, ticker, filing_result.filing_date)
+
+            # Generate validation report
+            self._generate_validation_report(
+                ticker=ticker,
+                filing_date=filing_result.filing_date,
+                unit_scale=unit_scale,
+                raw_row_count=len(all_csv_data),
+                dedup_row_count=len(deduplicated_data),
+                final_csv_rows=deduplicated_data,
+                scale_meta=scale_meta,
+                output_path=str(output_path)
+            )
 
             logger.info(f"Successfully processed {processed_tables} tables, saved {len(deduplicated_data)} rows to {output_path}")
             return str(output_path)
@@ -1620,145 +2072,496 @@ XYZ Corp,Common Equity,Technology,,,n/a,n/a,2022-06-01,,,1000,1200,0.6,1000,,
         with open(prompt_path, 'w', encoding='utf-8') as f:
             f.write(prompt)
 
-    def _deduplicate_csv_rows(self, csv_rows: List[str]) -> List[str]:
+    def _validate_scale_consistency(self, csv_rows: List[str]) -> Tuple[List[str], Dict[str, Any]]:
         """
-        Remove duplicate rows from CSV data.
-        Two rows are considered duplicates if they have the same:
-        - company_name
-        - investment_type
-        - acquisition_date (if present)
-        - principal_amount (if present)
-        
-        If duplicates are found, keeps the row with more complete data.
-        
+        Validate scale consistency and auto-correct if percent_of_net_assets are off by 1000x.
+        - Sum of percent_of_net_assets should be roughly 50-150%
+        - Single holding > 15% gets a warning
+        - If scale appears off by 1000x, divide percent values to correct
+
         Args:
-            csv_rows: List of CSV row strings (first row should be header)
-            
+            csv_rows: List of CSV row strings (first row is header)
+
         Returns:
-            Deduplicated list of CSV rows
+            Possibly corrected list of CSV row strings
         """
+        import csv
+        from io import StringIO
+
+        report_meta = {"scale_correction": 1.0, "original_total_pct": 0.0, "holdings_over_15pct": []}
+        if len(csv_rows) < 2:
+            return csv_rows, report_meta
+
+        header_row = csv_rows[0]
+        parsed = []
+        for row_str in csv_rows[1:]:
+            try:
+                reader = csv.reader(StringIO(row_str))
+                cols = list(reader)[0]
+                while len(cols) < 16:
+                    cols.append('')
+                pct_str = cols[12].strip().replace(',', '').replace(' ', '') if len(cols) > 12 else ''
+                fv_str = cols[11].strip().replace(',', '').replace(' ', '') if len(cols) > 11 else ''
+                try:
+                    pct = float(pct_str) if pct_str else 0.0
+                    fv = float(fv_str) if fv_str else 0.0
+                except ValueError:
+                    pct, fv = 0.0, 0.0
+                parsed.append((cols, row_str, pct, fv))
+            except Exception:
+                parsed.append((None, row_str, 0.0, 0.0))
+
+        total_pct = sum(p[2] for p in parsed)
+        total_fair_value = sum(p[3] for p in parsed)
+        report_meta["original_total_pct"] = total_pct
+        report_meta["total_fair_value"] = total_fair_value
+
+        # Warn if any single holding > 15%
+        for cols, _, pct, _ in parsed:
+            if cols and pct > 15.0:
+                company = cols[0][:50] if cols else "?"
+                report_meta["holdings_over_15pct"].append({"company": company, "percent": pct})
+                logger.warning(
+                    f"Scale check: single holding '{company}' has percent_of_net_assets={pct}% "
+                    f"- verify column mapping. BDC portfolios rarely have positions > 10%."
+                )
+
+        # If sum is 500+%, likely extracted as raw (e.g. 4.5 shown as 4500)
+        scale_correction = 1.0
+        if total_pct > 500.0:
+            scale_correction = 1000.0
+            report_meta["scale_correction"] = scale_correction
+            logger.info(
+                f"Scale correction: sum of percent_of_net_assets={total_pct:.0f}% suggests wrong scale. "
+                f"Dividing percent values by 1000."
+            )
+        elif total_pct > 150.0 and total_pct < 500.0:
+            scale_correction = 100.0
+            report_meta["scale_correction"] = scale_correction
+            logger.info(
+                f"Scale correction: sum of percent_of_net_assets={total_pct:.0f}% suggests 100x scale error. "
+                f"Dividing percent values by 100."
+            )
+
+        if scale_correction != 1.0:
+            result = [header_row]
+            for cols, _, pct, _ in parsed:
+                if cols:
+                    if pct > 0:
+                        corrected_pct = pct / scale_correction
+                        cols[12] = str(int(corrected_pct)) if corrected_pct == int(corrected_pct) else str(round(corrected_pct, 4))
+                    output = StringIO()
+                    w = csv.writer(output, quoting=csv.QUOTE_MINIMAL, lineterminator='')
+                    w.writerow(cols[:16])
+                    result.append(output.getvalue())
+            return result, report_meta
+
+        return csv_rows, report_meta
+
+    def _generate_validation_report(self, ticker: str, filing_date: str, unit_scale: str,
+                                    raw_row_count: int, dedup_row_count: int,
+                                    final_csv_rows: List[str], scale_meta: Dict[str, Any],
+                                    output_path: str) -> str:
+        """
+        Generate a post-validation report and save to file.
+
+        Returns:
+            Path to the saved report file
+        """
+        import csv
+        from io import StringIO
+
+        report_lines = [
+            f"# Validation Report: {ticker} {filing_date}",
+            "",
+            "## Extraction Summary",
+            f"- **Unit scale detected:** {unit_scale}",
+            f"- **Raw rows extracted:** {raw_row_count}",
+            f"- **Rows after deduplication:** {dedup_row_count}",
+            f"- **Output CSV:** {output_path}",
+            "",
+        ]
+
+        if scale_meta.get("scale_correction", 1.0) != 1.0:
+            report_lines.extend([
+                "## Scale Correction Applied",
+                f"- **Original sum of percent_of_net_assets:** {scale_meta.get('original_total_pct', 0):.1f}%",
+                f"- **Correction factor:** 1/{scale_meta['scale_correction']}",
+                "",
+            ])
+
+        report_lines.extend([
+            "## Final Data Summary",
+        ])
+
+        if len(final_csv_rows) < 2:
+            report_lines.append("- No data rows to summarize.")
+        else:
+            parsed = []
+            for row_str in final_csv_rows[1:]:
+                try:
+                    reader = csv.reader(StringIO(row_str))
+                    cols = list(reader)[0]
+                    while len(cols) < 16:
+                        cols.append('')
+                    pct = float(cols[12].replace(',', '')) if len(cols) > 12 and cols[12].strip() else 0.0
+                    fv = float(cols[11].replace(',', '')) if len(cols) > 11 and cols[11].strip() else 0.0
+                    parsed.append((cols[0], cols[1], pct, fv))
+                except (ValueError, IndexError):
+                    pass
+
+            total_pct = sum(p[2] for p in parsed)
+            total_fv = sum(p[3] for p in parsed)
+            unique_companies = len(set(p[0].lower() for p in parsed))
+
+            report_lines.extend([
+                f"- **Total holdings:** {len(parsed)}",
+                f"- **Unique companies:** {unique_companies}",
+                f"- **Sum of percent_of_net_assets:** {total_pct:.1f}%",
+                f"- **Total fair value (raw):** {total_fv:,.0f}",
+                "",
+            ])
+
+            # Holdings > 15% (from final data, after scale correction)
+            high_holdings = [(p[0], p[2]) for p in parsed if p[2] > 15.0]
+            if high_holdings:
+                report_lines.extend([
+                    "## ⚠️ Holdings Exceeding 15% of Net Assets",
+                    "",
+                ])
+                for company, pct in high_holdings:
+                    report_lines.append(f"- {company[:50]}: {pct:.1f}%")
+                report_lines.append("")
+
+            # Top 10 by percent
+            sorted_by_pct = sorted(parsed, key=lambda x: x[2], reverse=True)[:10]
+            report_lines.extend([
+                "## Top 10 Holdings by % of Net Assets",
+                "",
+                "| Company | Investment Type | % of Net Assets |",
+                "|---------|-----------------|-----------------|",
+            ])
+            for company, inv_type, pct, _ in sorted_by_pct:
+                report_lines.append(f"| {company[:40]} | {inv_type[:20]} | {pct:.1f}% |")
+
+        report_content = '\n'.join(report_lines)
+        report_path = self.output_dir / f"{ticker}_{filing_date}_validation_report.md"
+        with open(report_path, 'w', encoding='utf-8') as f:
+            f.write(report_content)
+        logger.info(f"Validation report saved to {report_path}")
+        return str(report_path)
+
+    def _parse_maturity_date(self, maturity_str: str) -> Optional[date]:
+        """Parse maturity date string to date for comparison. Returns None if unparseable."""
+        if not maturity_str or not maturity_str.strip():
+            return None
+        s = maturity_str.strip()
+        for fmt in ("%Y-%m-%d", "%m/%d/%Y", "%m-%d-%Y", "%Y/%m/%d"):
+            try:
+                return datetime.strptime(s, fmt).date()
+            except ValueError:
+                continue
+        return None
+
+    def _deduplicate_csv_rows(self, csv_rows: List[Any]) -> List[str]:
+        """Delegate to data_cleaning.deduplicate_csv_rows."""
+        return deduplicate_csv_rows(csv_rows)
+    
+    def _OLD_deduplicate_csv_rows_DEPRECATED(self, csv_rows: List[Any]) -> List[str]:
+        """
+        OLD IMPLEMENTATION - NOW IN data_cleaning/deduplicator.py
+        Remove duplicate rows from CSV data.
+        Duplicates are identified by: company_base + investment_type + principal (within 1%).
+        When the same position appears with different maturity dates (e.g. 10-Q current vs prior
+        year-end), prefers the row with the LATER maturity_date (current period).
+
+        Args:
+            csv_rows: List of (row_str, table_idx, table_size) or List[str] for legacy
+        """
+        import csv
+        from io import StringIO
+
         if not csv_rows:
             return []
+
+        # Normalize input: convert to [(row_str, table_idx, table_size), ...]
+        rows_with_meta = []
+        if isinstance(csv_rows[0], tuple):
+            for item in csv_rows:
+                row_str = item[0] if len(item) > 0 else ""
+                table_idx = item[1] if len(item) > 1 else -1
+                table_size = item[2] if len(item) > 2 else 0
+                rows_with_meta.append((row_str, table_idx, table_size))
+        else:
+            for row_str in csv_rows:
+                rows_with_meta.append((row_str, -1, 0))
+
+        parsed_rows = []
+        header_row = None
+
+        for i, (row_str, table_idx, table_size) in enumerate(rows_with_meta):
+            reader = csv.reader(StringIO(row_str))
+            try:
+                cols = list(reader)[0]
+            except Exception:
+                continue
+
+            if i == 0:
+                header_row = row_str
+                continue
+
+            if len(cols) < 3:
+                continue
+
+            expected_columns = 16
+            if len(cols) > 1 and len(cols) > expected_columns:
+                col1 = cols[1].strip()
+                if col1 and any(col1.endswith(s) for s in ['.', 'Inc.', 'LLC', 'Corp.', 'LP', 'Ltd.', 'Company']):
+                    cols[0] = f"{cols[0]}, {col1}"
+                    cols = [cols[0]] + cols[2:]
+
+            while len(cols) < expected_columns:
+                cols.append('')
+
+            company_base = (cols[0].strip().lower().split('(')[0] if cols else "").strip()
+            company_base = ' '.join(company_base.split())
+            investment_type = ' '.join((cols[1].strip().lower() if len(cols) > 1 else "").split())
+            maturity_date = cols[8].strip() if len(cols) > 8 else ""
+            principal_str = (cols[9].strip() if len(cols) > 9 else "").replace(',', '').replace(' ', '')
+            try:
+                principal_val = float(principal_str) if principal_str else None
+            except ValueError:
+                principal_val = None
+
+            non_empty_count = sum(1 for c in cols if c.strip())
+            maturity_dt = self._parse_maturity_date(maturity_date)
+            parsed_rows.append((company_base, investment_type, maturity_date, maturity_dt, principal_val,
+                               non_empty_count, table_size, row_str, cols))
+
+        def principal_match(a: Optional[float], b: Optional[float]) -> bool:
+            if a is None and b is None:
+                return True
+            if a is None or b is None:
+                return False
+            denom = max(abs(a), abs(b), 1.0)
+            return abs(a - b) / denom <= 0.01
+
+        # Group by (company_base, investment_type). Within each group, cluster by principal (1%).
+        # When same position appears with different maturity dates (10-Q current vs prior year-end),
+        # keep only the row with the LATER maturity_date.
+        grouped: Dict[Tuple[str, str], List[Tuple]] = {}
+        for company_base, inv_type, maturity, maturity_dt, principal, non_empty, table_size, row_str, cols in parsed_rows:
+            key = (company_base, inv_type)
+            if key not in grouped:
+                grouped[key] = []
+            grouped[key].append((principal, maturity_dt, non_empty, table_size, row_str, cols))
+
+        result_rows: List[Tuple] = []
+        for key, entries in grouped.items():
+            # For each row i, find all rows j with matching principal (potential duplicates).
+            # Keep only the best: prefer later maturity_date, then non_empty, then table_size.
+            keep_mask = [True] * len(entries)
+            for i in range(len(entries)):
+                if not keep_mask[i]:
+                    continue
+                principal_i, maturity_dt_i, non_empty_i, size_i, _, _ = entries[i]
+                for j in range(len(entries)):
+                    if i == j or not keep_mask[j]:
+                        continue
+                    principal_j, maturity_dt_j, non_empty_j, size_j, _, _ = entries[j]
+                    if not principal_match(principal_i, principal_j):
+                        continue
+                    # Same position: keep the one with later maturity
+                    if maturity_dt_i is not None and maturity_dt_j is not None:
+                        if maturity_dt_j > maturity_dt_i:
+                            keep_mask[i] = False
+                            break
+                        elif maturity_dt_j < maturity_dt_i:
+                            keep_mask[j] = False
+                            continue
+                    elif maturity_dt_i is None and maturity_dt_j is not None:
+                        keep_mask[i] = False
+                        break
+                    elif maturity_dt_i is not None and maturity_dt_j is None:
+                        keep_mask[j] = False
+                        continue
+                    else:
+                        if non_empty_j > non_empty_i or (non_empty_j == non_empty_i and size_j > size_i):
+                            keep_mask[i] = False
+                            break
+                        elif non_empty_j < non_empty_i or (non_empty_j == non_empty_i and size_j < size_i):
+                            keep_mask[j] = False
+                            continue
+
+            for idx, keep in enumerate(keep_mask):
+                if keep:
+                    _, _, _, _, row_str, cols = entries[idx]
+                    result_rows.append((row_str, cols))
+
+        result = [header_row] if header_row else []
+        for row_str, cols in result_rows:
+            output = StringIO()
+            try:
+                w = csv.writer(output, quoting=csv.QUOTE_MINIMAL, lineterminator='')
+                w.writerow(cols)
+                result.append(output.getvalue())
+            except Exception as e:
+                logger.warning(f"Failed to re-quote row in deduplication: {e}")
+                result.append(row_str)
+
+        return result
+
+    def _remove_empty_header_rows(self, csv_rows: List[str]) -> List[str]:
+        """Delegate to data_cleaning.remove_empty_header_rows."""
+        return remove_empty_header_rows(csv_rows)
+    
+    def _OLD_remove_empty_header_rows_DEPRECATED(self, csv_rows: List[str]) -> List[str]:
+        """
+        OLD IMPLEMENTATION - NOW IN data_cleaning/filters.py
+        Remove rows that have a company name but no financial data, when
+        the same company name appears on other rows that DO have data.
+        These are SEC table sub-headers (company name before listing tranches).
+
+        Args:
+            csv_rows: List of CSV row strings (first row is header)
+
+        Returns:
+            Filtered list with empty header rows removed
+        """
+        import csv
+        from io import StringIO
+
+        if len(csv_rows) < 2:
+            return csv_rows
+
+        # Parse all rows
+        parsed = []
+        for row_str in csv_rows[1:]:  # Skip header
+            try:
+                reader = csv.reader(StringIO(row_str))
+                cols = list(reader)[0]
+                if len(cols) >= 16:
+                    parsed.append((row_str, cols))
+            except Exception:
+                parsed.append((row_str, None))
+
+        # Identify rows with no financial data
+        # Financial columns: principal(9), amortized_cost(10), fair_value(11), cost(13)
+        empty_rows = []
+        populated_names = set()
+
+        for row_str, cols in parsed:
+            if cols is None:
+                continue
+            has_financials = any(
+                cols[i].strip() for i in [9, 10, 11, 13] if i < len(cols)
+            )
+            name = cols[0].strip().lower()
+            if has_financials and name:
+                populated_names.add(name)
+
+        # Filter: remove rows with no financials whose name appears on populated rows
+        result = [csv_rows[0]]  # Keep header
+        removed = 0
+        for row_str, cols in parsed:
+            if cols is None:
+                result.append(row_str)
+                continue
+            has_financials = any(
+                cols[i].strip() for i in [9, 10, 11, 13] if i < len(cols)
+            )
+            name = cols[0].strip().lower()
+            if not has_financials and name in populated_names:
+                removed += 1
+                logger.debug(f"Removed empty header row for '{cols[0]}'")
+                continue
+            result.append(row_str)
+
+        if removed > 0:
+            logger.info(f"Removed {removed} empty header-only rows (company name duplicated on rows with data)")
+
+        return result
+
+    def _filter_equity_types(self, csv_rows: List[str], debt_only: bool = False) -> List[str]:
+        """Delegate to data_cleaning.filter_equity_types."""
+        return filter_equity_types(csv_rows, debt_only)
+    
+    def _OLD_filter_equity_types_DEPRECATED(self, csv_rows: List[str], debt_only: bool = False) -> List[str]:
+        """
+        OLD IMPLEMENTATION - NOW IN data_cleaning/filters.py
+        Filter out equity investment types if debt_only is True.
+        
+        Args:
+            csv_rows: List of CSV row strings (first row is header)
+            debt_only: If True, exclude equity types (Common Equity, Preferred Equity, Warrant, etc.)
+        
+        Returns:
+            Filtered list of CSV row strings
+        """
+        if not debt_only or not csv_rows:
+            return csv_rows
         
         import csv
         from io import StringIO
         
-        # Parse all rows
-        parsed_rows = []
-        header_row = None
+        # Parse header
+        header_row = csv_rows[0]
+        reader = csv.reader(StringIO(header_row))
+        header = list(reader)[0]
         
-        for i, row in enumerate(csv_rows):
-            # Parse CSV row - handle quoted fields properly
-            reader = csv.reader(StringIO(row))
+        # Find investment_type column index
+        investment_type_idx = None
+        for i, col in enumerate(header):
+            if col.lower() in ['investment_type', 'investment type', 'type']:
+                investment_type_idx = i
+                break
+        
+        if investment_type_idx is None:
+            logger.warning("Could not find investment_type column for equity filtering, returning all rows")
+            return csv_rows
+        
+        # Equity types to exclude
+        equity_keywords = [
+            'common equity',
+            'preferred equity', 
+            'warrant',
+            'equity interest',
+            'membership interest',
+            'common stock',
+            'preferred stock',
+        ]
+        
+        result = [header_row]  # Keep header
+        filtered_count = 0
+        
+        for row_str in csv_rows[1:]:
             try:
+                reader = csv.reader(StringIO(row_str))
                 cols = list(reader)[0]
-            except:
-                continue
-            
-            if i == 0:
-                # First row is header
-                header_row = row
-                continue
-            
-            if len(cols) < 3:  # Skip malformed rows
-                continue
-            
-            expected_columns = 16
-            # Handle case where company name with comma was split (e.g., "Douglas Holdings, Inc." -> ["Douglas Holdings", " Inc."])
-            # This happens when the row doesn't have quotes around fields with commas
-            # If cols[1] looks like part of a company name (ends with "Inc.", "LLC", etc.), merge it with cols[0]
-            if len(cols) > 1 and len(cols) > expected_columns:
-                col1 = cols[1].strip()
-                # Check if col1 is part of company name (ends with company suffix)
-                if col1 and any(col1.endswith(suffix) for suffix in ['.', 'Inc.', 'LLC', 'Corp.', 'LP', 'Ltd.', 'Company']):
-                    # Merge cols[0] and cols[1] into company name, shift everything else
-                    cols[0] = f"{cols[0]}, {col1}"
-                    cols = [cols[0]] + cols[2:]  # Remove the merged col1
-            
-            # Ensure we have at least 16 columns (pad if needed)
-            expected_columns = 16
-            while len(cols) < expected_columns:
-                cols.append('')
-            
-            parsed_rows.append((cols, row))
-        
-        # Create a dictionary to track unique rows
-        # Key: (company_name, investment_type, acquisition_date, principal_amount, maturity_date)
-        # We ignore: industry, cash_rate, pik_rate, spread, fair_value (these can vary between tables)
-        seen = {}
-        
-        for cols, original_row in parsed_rows:
-            # Extract key fields (normalize company name to handle variations)
-            company_name = cols[0].strip().lower() if len(cols) > 0 else ""
-            # Remove common variations like "(Delayed Draw)", "(Revolver)" for matching
-            # Also normalize whitespace and punctuation
-            company_base = company_name.split('(')[0].strip()
-            company_base = ' '.join(company_base.split())  # Normalize whitespace
-            
-            investment_type = cols[1].strip().lower() if len(cols) > 1 else ""
-            # Normalize investment type (remove extra spaces, normalize case)
-            investment_type = ' '.join(investment_type.split())
-            
-            acquisition_date = cols[7].strip() if len(cols) > 7 else ""
-            principal_amount = cols[9].strip() if len(cols) > 9 else ""
-            maturity_date = cols[8].strip() if len(cols) > 8 else ""
-            
-            # Normalize amounts - remove commas, spaces, and normalize empty strings
-            if principal_amount:
-                principal_amount = principal_amount.replace(',', '').replace(' ', '')
-            if not principal_amount:
-                principal_amount = ""
-            
-            # Create unique key - use base company name and ignore industry, rates, spread, fair_value
-            # This catches cases where same investment appears in different industry sections
-            # with slightly different values (e.g., different spread, rates, or fair_value)
-            # Only use company, investment type, dates, and principal amount for matching
-            key = (company_base, investment_type, acquisition_date, principal_amount, maturity_date)
-            
-            # Debug: Log duplicate keys for Douglas Holdings
-            if 'douglas holdings' in company_base and acquisition_date == '2024-08-27' and principal_amount == '2500':
-                logger.debug(f"Douglas Holdings key: {key}, company_base: '{company_base}', investment_type: '{investment_type}'")
-            
-            # Count non-empty fields to prefer more complete rows
-            non_empty_count = sum(1 for col in cols if col.strip())
-            
-            if key not in seen:
-                seen[key] = (non_empty_count, original_row)
-            else:
-                # Duplicate found - keep the row with more complete data
-                existing_count, existing_row = seen[key]
-                logger.debug(f"Duplicate key found: {key}, keeping row with {max(non_empty_count, existing_count)} non-empty fields")
-                if non_empty_count > existing_count:
-                    seen[key] = (non_empty_count, original_row)
-                elif non_empty_count == existing_count:
-                    # If same completeness, prefer the one with industry data (more likely to be from main table)
-                    existing_has_industry = len(existing_row.split(',')) > 2 and existing_row.split(',')[2].strip()
-                    current_has_industry = len(cols) > 2 and cols[2].strip()
-                    if current_has_industry and not existing_has_industry:
-                        seen[key] = (non_empty_count, original_row)
-        
-        # Reconstruct CSV with header + unique rows
-        # Use csv.writer to ensure proper quoting of fields with commas
-        result = [header_row] if header_row else []
-        
-        for _, row in seen.values():
-            # Parse the row to get columns
-            reader = csv.reader(StringIO(row))
-            try:
-                cols = list(reader)[0]
-                # Write using csv.writer to ensure proper quoting
-                # Create a fresh StringIO for each row to avoid issues
-                output = StringIO()
-                writer = csv.writer(output, quoting=csv.QUOTE_MINIMAL, lineterminator='')
-                writer.writerow(cols)
-                result.append(output.getvalue())
+                
+                if len(cols) > investment_type_idx:
+                    investment_type = cols[investment_type_idx].lower().strip()
+                    
+                    # Check if this is an equity type
+                    is_equity = any(keyword in investment_type for keyword in equity_keywords)
+                    
+                    if not is_equity:
+                        result.append(row_str)
+                    else:
+                        filtered_count += 1
+                        logger.debug(f"Filtered out equity investment: {investment_type}")
+                else:
+                    # Row has fewer columns than expected, keep it to avoid errors
+                    result.append(row_str)
             except Exception as e:
-                # Fallback: use original row if parsing fails
-                logger.warning(f"Failed to re-quote row in deduplication: {e}")
-                result.append(row)
+                logger.warning(f"Error parsing row for equity filtering: {e}, keeping row")
+                result.append(row_str)
+        
+        if filtered_count > 0:
+            logger.info(f"Filtered out {filtered_count} equity investments (debt-only mode)")
         
         return result
-    
+
     def _save_csv_output(self, csv_content: str, ticker: str, filing_date: str) -> Path:
         """
         Save the final CSV output.
@@ -1775,6 +2578,10 @@ XYZ Corp,Common Equity,Technology,,,n/a,n/a,2022-06-01,,,1000,1200,0.6,1000,,
         clean_date = filing_date.replace('-', '-') if filing_date else 'unknown'
         filename = f"{ticker}_investments_{clean_date}.csv"
         output_path = self.output_dir / filename
+
+        # Ensure clean overwrite (remove existing file first)
+        if output_path.exists():
+            output_path.unlink()
 
         # Re-write CSV with proper quoting to ensure fields with commas are quoted
         import csv
@@ -1850,6 +2657,9 @@ XYZ Corp,Common Equity,Technology,,,n/a,n/a,2022-06-01,,,1000,1200,0.6,1000,,
 
 def main():
     """Main CLI interface."""
+    # Default output to project root output/ so consolidation (and frontend) always finds it
+    _script_dir = Path(__file__).resolve().parent
+    _project_output = _script_dir.parent.parent / "output"
     parser = argparse.ArgumentParser(description="LLM-powered SEC filing table scraper")
     parser.add_argument('--ticker', required=True, help='Company ticker symbol')
     parser.add_argument('--filing-type', default='10-Q', choices=['10-Q', '10-K', '8-K', '424B'],
@@ -1857,14 +2667,14 @@ def main():
     parser.add_argument('--year', type=int, help='Year to fetch filing for (default: latest)')
     parser.add_argument('--quarter', choices=['Q1', 'Q2', 'Q3', 'Q4'],
                        help='Quarter for 10-Q filings')
-    parser.add_argument('--llm-provider', default='gemini', choices=['openai', 'gemini'],
-                       help='LLM provider to use (default: gemini)')
-    parser.add_argument('--output-dir', default='output', help='Output directory for CSV files')
+    parser.add_argument('--output-dir', default=str(_project_output), help='Output directory for CSV files')
     parser.add_argument('--debug-dir', default='debug_tables', help='Debug output directory')
-    parser.add_argument('--openai-key', help='OpenAI API key (or set OPENAI_API_KEY env var)')
     parser.add_argument('--google-key', help='Google Gemini API key (or set GOOGLE_API_KEY env var)')
     parser.add_argument('--years-back', type=int, default=0, help='Number of years to look back for historical filings')
     parser.add_argument('--force', action='store_true', help='Re-process filings even if output CSV already exists')
+    parser.add_argument('--max-tables', type=int, default=None, help='Max tables to process (for trial runs)')
+    parser.add_argument('--workers', type=int, default=None, help='Parallel workers (e.g., 8 for 39 tables = ~5 tables/worker)')
+    parser.add_argument('--debt-only', action='store_true', help='Filter out equity investments (Common/Preferred Equity, Warrants)')
 
     args = parser.parse_args()
 
@@ -1875,9 +2685,7 @@ def main():
     try:
         # Initialize scraper
         scraper = LLMTableScraper(
-            openai_api_key=args.openai_key,
             gemini_api_key=args.google_key,
-            llm_provider=args.llm_provider,
             output_dir=args.output_dir,
             debug_dir=args.debug_dir
         )
@@ -1888,28 +2696,33 @@ def main():
                 ticker=args.ticker,
                 filing_type=args.filing_type,
                 years_back=args.years_back,
-                skip_existing=not args.force
+                skip_existing=not args.force,
+                debt_only=args.debt_only
             )
             
             if results:
-                print(f"✅ Successfully processed {len(results)} filings for {args.ticker}")
+                print(f"Successfully processed {len(results)} filings for {args.ticker}")
                 for res in results:
-                    print(f"📄 CSV saved to: {res}")
+                    print(f"- CSV saved to: {res}")
             else:
-                print(f"❌ No investment data found for {args.ticker} in the last {args.years_back} years")
+                print(f"No investment data found for {args.ticker} in the last {args.years_back} years")
                 exit(1)
         else:
             result = scraper.process_filing(
                 ticker=args.ticker,
                 filing_type=args.filing_type,
-                year=args.year
+                year=args.year,
+                quarter=args.quarter,
+                max_tables=args.max_tables,
+                workers=args.workers,
+                debt_only=args.debt_only
             )
 
             if result:
-                print(f"✅ Successfully processed {args.ticker} {args.filing_type}")
-                print(f"📄 CSV saved to: {result}")
+                print(f"Successfully processed {args.ticker} {args.filing_type}")
+                print(f"- CSV saved to: {result}")
             else:
-                print(f"❌ No investment data found for {args.ticker} {args.filing_type}")
+                print(f"No investment data found for {args.ticker} {args.filing_type}")
                 exit(1)
 
     except Exception as e:
