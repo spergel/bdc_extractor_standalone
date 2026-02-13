@@ -1,4 +1,5 @@
 import type { Holding } from '../data/adapter';
+import { getMaturityDateStr } from './holdingsAnalytics';
 
 // Helper to convert string to number safely
 function toNum(s: string | undefined | null): number {
@@ -21,7 +22,7 @@ export function getHoldingKey(h: Holding): string {
   // Use cleaned fields if available
   const name = ((h as any).company_name_clean || h.company_name || '').trim().toLowerCase();
   const type = ((h as any).investment_type_standardized || h.investment_type || '').trim().toLowerCase();
-  const maturity = (h.maturity_date || '').trim();
+  const maturity = (getMaturityDateStr(h) || '').trim();
   return `${name}::${type}::${maturity}`;
 }
 

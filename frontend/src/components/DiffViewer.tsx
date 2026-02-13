@@ -10,20 +10,17 @@ type Props = {
   afterPeriod: string;
 };
 
-function fmtNumber(v: unknown): string {
-  if (v === null || v === undefined || v === '') return '';
-  const n = Number(v);
-  if (Number.isNaN(n)) return String(v);
-  return n.toLocaleString(undefined, { maximumFractionDigits: 2 });
-}
-
 function fmtCurrency(v: unknown): string {
+  // NOTE: All holding monetary values are stored in *thousands of dollars*.
+  // This formatter converts from thousands → real dollars for display,
+  // then formats in k / M for UI consistency.
   const n = Number(v);
   if (Number.isNaN(n)) return '';
-  const abs = Math.abs(n);
-  const sign = n < 0 ? '-' : '';
-  if (abs >= 1000000) return `${sign}$${(abs / 1000000).toFixed(2)}M`;
-  if (abs >= 1000) return `${sign}$${(abs / 1000).toFixed(0)}k`;
+  const dollars = n * 1000; // stored in thousands
+  const abs = Math.abs(dollars);
+  const sign = dollars < 0 ? '-' : '';
+  if (abs >= 1_000_000) return `${sign}$${(abs / 1_000_000).toFixed(2)}M`;
+  if (abs >= 1_000) return `${sign}$${(abs / 1_000).toFixed(0)}k`;
   return `${sign}$${abs.toFixed(0)}`;
 }
 
@@ -158,7 +155,9 @@ const PAGE_SIZE = 30;
 
 export function DiffViewer({ beforeHoldings, afterHoldings, beforePeriod, afterPeriod }: Props) {
   const [filter, setFilter] = useState<'all' | 'added' | 'removed' | 'modified'>('all');
-  const [minChangeThreshold, setMinChangeThreshold] = useState<number>(100000); // $100k default
+  // Threshold is in *thousands of dollars* (to match holding values)
+  // 100 => $100k, 500 => $500k, 1000 => $1M, etc.
+  const [minChangeThreshold, setMinChangeThreshold] = useState<number>(100); // $100k default
   const [page, setPage] = useState(0);
   const [holdingsFilters, setHoldingsFilters] = useState<FilterState>(defaultFilterState);
 
@@ -172,9 +171,7 @@ export function DiffViewer({ beforeHoldings, afterHoldings, beforePeriod, afterP
     let filtered = changes;
 
     // Apply holdings filter bar (filter on the relevant holding for each change)
-    const hasHoldingsFilter = holdingsFilters.industry !== 'all' || holdingsFilters.type !== 'all' ||
-      holdingsFilters.spread !== '' || holdingsFilters.fv !== '' || holdingsFilters.fvCost !== '' ||
-      holdingsFilters.fvPrin !== '' || holdingsFilters.principal !== '';
+    const hasHoldingsFilter = holdingsFilters.industry !== 'all' || holdingsFilters.type !== 'all';
 
     if (hasHoldingsFilter) {
       filtered = filtered.filter(c => {
@@ -288,10 +285,10 @@ export function DiffViewer({ beforeHoldings, afterHoldings, beforePeriod, afterP
               onChange={(e) => setMinChangeThreshold(Number(e.target.value))}
             >
               <option value="0">Any</option>
-              <option value="10000">$10k+</option>
-              <option value="100000">$100k+</option>
-              <option value="500000">$500k+</option>
-              <option value="1000000">$1M+</option>
+              <option value="10">$10k+</option>
+              <option value="100">$100k+</option>
+              <option value="500">$500k+</option>
+              <option value="1000">$1M+</option>
             </select>
           </div>
           <div className="text-xs text-[#808080] w-full sm:w-auto sm:ml-auto">

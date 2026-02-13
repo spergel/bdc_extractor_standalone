@@ -16,36 +16,74 @@ export function toPercent(s: string | undefined | null): number {
   return Number.isNaN(n) || n > 100 || n < 0 ? 0 : n;
 }
 
-// Helper to get cost value (supports both cost and amortized_cost)
+// Helper to get cost value (prefers cleaned numeric field)
 export function getCost(h: Holding): number {
+  if (h.cost_thousands != null) return h.cost_thousands;
+  if (h.amortized_cost_thousands != null) return h.amortized_cost_thousands;
   return toNum(h.cost || h.amortized_cost);
 }
 
-// Helper to get fair value
+// Helper to get fair value (prefers cleaned numeric field)
 export function getFV(h: Holding): number {
+  if (h.fair_value_thousands != null) return h.fair_value_thousands;
   return toNum(h.fair_value);
 }
 
-// Helper to get principal
+// Helper to get principal (prefers cleaned numeric field)
 export function getPrincipal(h: Holding): number {
+  if (h.principal_amount_thousands != null) return h.principal_amount_thousands;
   return toNum(h.principal_amount);
 }
 
-// Helper to check if holding has reference rate (variable rate)
-function isVariableRate(h: Holding): boolean {
-  return !!(h.reference_rate && h.reference_rate.trim() !== '');
+// Helper to get industry (prefers cleaned field)
+export function getIndustry(h: Holding): string {
+  return h.industry_clean || h.industry || 'Unknown';
+}
+
+// Helper to get investment type (prefers standardized field)
+export function getInvType(h: Holding): string {
+  return h.investment_type_standardized || h.investment_type || 'Unknown';
+}
+
+// Only these count as variable/floating; N/A, Fixed, PIK, etc. are fixed or N/A
+const KNOWN_FLOATING_INDICES = new Set([
+  'SOFR', 'LIBOR', 'Prime', 'EURIBOR', 'SONIA', 'BBSY', 'CDOR', 'BBSW',
+]);
+
+const NON_FLOATING_REF_PATTERNS = /^(N\/A|NA|Fixed|PIK|—|–|-|\.|)$/i;
+
+// Substrings that indicate a floating index (for raw/unnormalized refs)
+const FLOATING_REF_SUBSTRINGS = /^(sofr|libor|prime|euribor|sonia|bbsy|cdor|bbsw|s\+?|l\+?|e\+?|p\+?)$/i;
+
+// True only when the holding has a bona fide floating reference rate (SOFR, LIBOR, etc.).
+// PIK, N/A, "Fixed", or empty do not count as variable.
+export function isVariableRate(h: Holding): boolean {
+  const ref = (h.reference_rate_clean || h.reference_rate || '').trim();
+  if (!ref || NON_FLOATING_REF_PATTERNS.test(ref)) return false;
+  if (KNOWN_FLOATING_INDICES.has(ref)) return true;
+  // Raw/unnormalized value (e.g. "SOFR", "LIBOR")
+  return FLOATING_REF_SUBSTRINGS.test(ref);
 }
 
 // Helper to check if holding has PIK
 function hasPIK(h: Holding): boolean {
+  if (h.is_pik != null) return h.is_pik;
   const pik = toPercent(h.pik_rate);
   return pik > 0;
 }
 
+// Normalize CSV header variants (e.g. "Maturity Date", "maturity_date") so maturity shows for all BDCs
+export function getMaturityDateStr(h: Holding): string | undefined {
+  const v = h.maturity_date ?? (h as Record<string, unknown>)['Maturity Date'] ?? (h as Record<string, unknown>)['maturity date'];
+  if (typeof v !== 'string' || !v.trim()) return undefined;
+  return v.trim();
+}
+
 // Helper to get days until maturity
 function daysToMaturity(h: Holding): number | null {
-  if (!h.maturity_date) return null;
-  const maturity = Date.parse(h.maturity_date);
+  const dateStr = getMaturityDateStr(h);
+  if (!dateStr) return null;
+  const maturity = Date.parse(dateStr);
   if (Number.isNaN(maturity)) return null;
   const now = Date.now();
   const diff = maturity - now;
@@ -67,7 +105,7 @@ export type RedFlag = {
 };
 
 // Check for red flags on a holding
-export function checkRedFlags(h: Holding, currentPeriod: string): RedFlag[] {
+export function checkRedFlags(h: Holding, _currentPeriod: string): RedFlag[] {
   const flags: RedFlag[] = [];
   const fv = getFV(h);
   const principal = getPrincipal(h);
@@ -146,17 +184,17 @@ export function getIndustryDistribution(holdings: Holding[]): DistributionItem[]
   let totalFV = 0;
   
   holdings.forEach(h => {
-    const industry = h.industry || 'Unknown';
+    const industry = getIndustry(h);
     const fv = getFV(h);
     totalFV += fv;
-    
+
     const existing = map.get(industry) || { count: 0, fv: 0 };
     map.set(industry, {
       count: existing.count + 1,
       fv: existing.fv + fv,
     });
   });
-  
+
   const items: DistributionItem[] = Array.from(map.entries())
     .map(([category, data]) => ({
       category,
@@ -165,16 +203,16 @@ export function getIndustryDistribution(holdings: Holding[]): DistributionItem[]
       percentage: totalFV > 0 ? (data.fv / totalFV) * 100 : 0,
     }))
     .sort((a, b) => b.fairValue - a.fairValue);
-  
+
   return items;
 }
 
 export function getInvestmentTypeDistribution(holdings: Holding[]): DistributionItem[] {
   const map = new Map<string, { count: number; fv: number }>();
   let totalFV = 0;
-  
+
   holdings.forEach(h => {
-    const type = h.investment_type || 'Unknown';
+    const type = getInvType(h);
     const fv = getFV(h);
     totalFV += fv;
     
@@ -356,14 +394,14 @@ export function getSpreadStats(holdings: Holding[]): SpreadStats {
   const spreads: number[] = [];
   
   holdings.forEach(h => {
-    const spread = toPercent(h.spread);
+    const spread = h.spread_clean ?? toPercent(h.spread);
     if (spread > 0) {
       spreads.push(spread);
     }
   });
-  
+
   spreads.sort((a, b) => a - b);
-  
+
   const count = spreads.length;
   const sum = spreads.reduce((a, b) => a + b, 0);
   const avg = count > 0 ? sum / count : 0;
@@ -402,9 +440,9 @@ export function getTopHoldings(holdings: Holding[], limit: number = 10): TopHold
   
   return holdings
     .map(h => ({
-      company_name: h.company_name,
-      investment_type: h.investment_type,
-      industry: h.industry,
+      company_name: h.company_name_clean || h.company_name || '',
+      investment_type: getInvType(h),
+      industry: getIndustry(h),
       fair_value: getFV(h),
       principal: getPrincipal(h),
       cost: getCost(h),
@@ -491,10 +529,10 @@ export type SpreadBucket = {
 export function getSpreadDistribution(holdings: Holding[]): SpreadBucket[] {
   const spreads: number[] = [];
   holdings.forEach(h => {
-    const spread = toPercent(h.spread);
+    const spread = h.spread_clean ?? toPercent(h.spread);
     if (spread > 0) spreads.push(spread);
   });
-  
+
   if (spreads.length === 0) return [];
   
   const min = Math.min(...spreads);
@@ -548,7 +586,7 @@ export function getFloorRateAnalysis(holdings: Holding[]): FloorRateAnalysis {
   holdings.forEach(h => {
     const fv = getFV(h);
     totalFV += fv;
-    const floor = toPercent(h.floor_rate);
+    const floor = h.floor_rate ?? 0;
     
     if (floor > 0) {
       withFloorCount++;
@@ -587,10 +625,10 @@ export type AverageSpreadByCategory = {
 
 export function getAverageSpreadByIndustry(holdings: Holding[]): AverageSpreadByCategory[] {
   const map = new Map<string, { spreads: number[]; fv: number }>();
-  
+
   holdings.forEach(h => {
-    const industry = h.industry || 'Unknown';
-    const spread = toPercent(h.spread);
+    const industry = getIndustry(h);
+    const spread = h.spread_clean ?? toPercent(h.spread);
     const fv = getFV(h);
     
     if (spread > 0) {
@@ -613,10 +651,10 @@ export function getAverageSpreadByIndustry(holdings: Holding[]): AverageSpreadBy
 
 export function getAverageSpreadByInvestmentType(holdings: Holding[]): AverageSpreadByCategory[] {
   const map = new Map<string, { spreads: number[]; fv: number }>();
-  
+
   holdings.forEach(h => {
-    const type = h.investment_type || 'Unknown';
-    const spread = toPercent(h.spread);
+    const type = getInvType(h);
+    const spread = h.spread_clean ?? toPercent(h.spread);
     const fv = getFV(h);
     
     if (spread > 0) {
@@ -644,28 +682,38 @@ export type FVRatioDistribution = {
   percentage: number;
 };
 
-export function getFVRatioDistribution(ratios: number[]): FVRatioDistribution[] {
+export function getFVRatioDistribution(ratios: number[], rangeMin?: number, rangeMax?: number): FVRatioDistribution[] {
   if (ratios.length === 0) return [];
-  
-  const min = Math.min(...ratios);
-  const max = Math.max(...ratios);
+
+  const filtered = (rangeMin !== undefined && rangeMax !== undefined)
+    ? ratios.filter(r => r >= rangeMin && r <= rangeMax)
+    : ratios;
+
+  if (filtered.length === 0) return [];
+
+  const min = rangeMin ?? Math.min(...filtered);
+  const max = rangeMax ?? Math.max(...filtered);
   const range = max - min;
   const bucketCount = 12;
   const bucketSize = range / bucketCount;
-  
+
+  if (bucketSize === 0) {
+    return [{ range: `${min.toFixed(3)}-${max.toFixed(3)}`, count: filtered.length, percentage: 100 }];
+  }
+
   const buckets: Record<number, number> = {};
   for (let i = 0; i < bucketCount; i++) {
     buckets[i] = 0;
   }
-  
-  ratios.forEach(ratio => {
+
+  filtered.forEach(ratio => {
     const bucketIdx = Math.min(
       Math.floor((ratio - min) / bucketSize),
       bucketCount - 1
     );
     buckets[bucketIdx] = (buckets[bucketIdx] || 0) + 1;
   });
-  
+
   return Object.entries(buckets).map(([idx, count]) => {
     const bucketNum = Number(idx);
     const bucketMin = min + bucketNum * bucketSize;
@@ -673,7 +721,7 @@ export function getFVRatioDistribution(ratios: number[]): FVRatioDistribution[] 
     return {
       range: `${bucketMin.toFixed(3)}-${bucketMax.toFixed(3)}`,
       count,
-      percentage: (count / ratios.length) * 100,
+      percentage: (filtered.length > 0 ? (count / filtered.length) * 100 : 0),
     };
   });
 }

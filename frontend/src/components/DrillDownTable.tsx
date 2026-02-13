@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import { createColumnHelper, flexRender, getCoreRowModel, getSortedRowModel, useReactTable } from '@tanstack/react-table';
 import type { SortingState } from '@tanstack/react-table';
 import type { Holding } from '../data/adapter';
-import { toPercent, getFV, getCost, getPrincipal } from '../utils/holdingsAnalytics';
+import { toPercent, getFV, getCost, getPrincipal, getMaturityDateStr } from '../utils/holdingsAnalytics';
 
 type Props = {
   holdings: Holding[];
@@ -102,7 +102,7 @@ export function DrillDownTable({ holdings, title, onClose }: Props) {
         fvPrin: principal > 0 ? fv / principal : 0,
         fvCost: cost > 0 ? fv / cost : 0,
         refRate: h.reference_rate || '',
-        maturity: h.maturity_date || '',
+        maturity: getMaturityDateStr(h) || '',
       };
     });
   }, [holdings]);

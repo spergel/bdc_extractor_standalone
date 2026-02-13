@@ -1,6 +1,5 @@
 import { useQuery, useQueries } from '@tanstack/react-query';
 import { fetchIndex, fetchPeriods, fetchPeriodSnapshot, fetchProfile, fetchFinancials } from './client-csv';
-import type { PeriodSnapshot } from './client-csv';
 
 export function useBDCIndex() {
   return useQuery({

@@ -24,7 +24,7 @@ function fmtCurrency(n: unknown, currency?: string) {
   }
 }
 
-export function ProfileCard({ ticker, name }: Props) {
+export function ProfileCard({ ticker, name: _name }: Props) {
   const { data: profile, isLoading, error } = useBDCProfile(ticker);
   const price = profile?.price || {};
   const sd = profile?.summaryDetail || {};

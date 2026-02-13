@@ -14,8 +14,10 @@ import {
   getTopHoldings,
   getFVRatioStats,
   getFVRatioDistribution,
+  getFV,
+  getPrincipal,
+  getCost,
   checkRedFlags,
-  getHerfindahlIndex,
   type RedFlag,
 } from '../utils/holdingsAnalytics';
 import { type DrillDownSelection, getFilteredHoldings } from '../utils/drillDownFilters';
@@ -102,7 +104,7 @@ function PieChart({ data, title, byValue = true, onSliceClick, selectedCategory 
 
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const handleMouseMove = useCallback((e: React.MouseEvent<SVGSVGElement>, item: typeof displayData[0]) => {
+  const handleMouseMove = useCallback((e: React.MouseEvent<SVGElement>, item: typeof displayData[0]) => {
     if (!containerRef.current) return;
     const rect = containerRef.current.getBoundingClientRect();
     setHovered({ item, x: e.clientX - rect.left, y: e.clientY - rect.top });
@@ -142,7 +144,7 @@ function PieChart({ data, title, byValue = true, onSliceClick, selectedCategory 
               <div className="text-black font-medium">{hovered.item.category}</div>
               <div className="text-black">{hovered.item.percentage.toFixed(1)}%</div>
               {byValue ? (
-                <div className="text-black">${(hovered.item.fairValue / 1000).toFixed(0)}k</div>
+                <div className="text-black">${(hovered.item.fairValue / 1000).toFixed(1)}M</div>
               ) : (
                 <div className="text-black">{hovered.item.count} holdings</div>
               )}
@@ -212,7 +214,7 @@ function MaturityLadderChart({ data }: { data: Array<{ bucket: string; count: nu
               />
             </div>
             <div className="w-24 text-xs text-[#808080] text-right">
-              ${(item.fairValue / 1000).toFixed(0)}k ({item.percentage.toFixed(1)}%)
+              ${(item.fairValue / 1000).toFixed(1)}M ({item.percentage.toFixed(1)}%)
             </div>
           </div>
         ))}
@@ -227,7 +229,7 @@ function MaturityLadderChart({ data }: { data: Array<{ bucket: string; count: nu
         >
           <div className="text-black font-medium">{hovered.item.bucket}</div>
           <div className="text-black">{hovered.item.count} holdings</div>
-          <div className="text-black">${(hovered.item.fairValue / 1000).toFixed(0)}k</div>
+          <div className="text-black">${(hovered.item.fairValue / 1000).toFixed(1)}M</div>
           <div className="text-black">{hovered.item.percentage.toFixed(1)}%</div>
         </div>
       )}
@@ -236,16 +238,21 @@ function MaturityLadderChart({ data }: { data: Array<{ bucket: string; count: nu
 }
 
 // Histogram bar chart component
-function HistogramChart({ data, title, onBucketClick, selectedBucket }: {
+function HistogramChart({ data, title, onBucketClick, selectedBucket, rangeControls }: {
   data: Array<{ range: string; count: number; percentage: number }>;
   title: string;
   onBucketClick?: (idx: number, range: string) => void;
   selectedBucket?: number | null;
+  rangeControls?: {
+    range: [number, number];
+    onRangeChange: (range: [number, number]) => void;
+    outlierCount: number;
+  };
 }) {
   const [hovered, setHovered] = useState<{ item: typeof data[0]; x: number; y: number } | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  if (data.length === 0) {
+  if (data.length === 0 && !rangeControls) {
     return (
       <div className="window p-3">
         <div className="text-xs text-[#808080]">{title}: No data</div>
@@ -271,35 +278,72 @@ function HistogramChart({ data, title, onBucketClick, selectedBucket }: {
 
   return (
     <div ref={containerRef} className="window p-3 relative">
-      <div className="text-xs font-semibold mb-2 text-black">{title}</div>
-      <div className="space-y-1">
-        {data.map((item, i) => (
-          <div
-            key={i}
-            className="flex items-center gap-2"
-            onMouseEnter={(e) => handleMouseEnter(e, item)}
-            onMouseMove={(e) => handleMouseMove(e, item)}
-            onMouseLeave={handleMouseLeave}
-            onClick={() => onBucketClick?.(i, item.range)}
-            style={{ cursor: onBucketClick ? 'pointer' : 'default' }}
-          >
-            <div className="w-24 text-xs text-[#808080] truncate" title={item.range}>{item.range}</div>
-            <div className="flex-1 bg-[#c0c0c0] h-4 overflow-hidden">
-              <div
-                className="h-full transition-opacity"
-                style={{
-                  width: `${(item.count / maxCount) * 100}%`,
-                  backgroundColor: selectedBucket === i ? '#000080' : '#0000ff',
-                  opacity: hovered?.item.range === item.range || selectedBucket === i ? 1 : hovered ? 0.5 : 1,
-                }}
-              />
-            </div>
-            <div className="w-20 text-xs text-[#808080] text-right">
-              {item.count} ({item.percentage.toFixed(1)}%)
-            </div>
-          </div>
-        ))}
+      <div className="flex items-center gap-2 mb-2 flex-wrap">
+        <div className="text-xs font-semibold text-black">{title}</div>
+        {rangeControls && (
+          <>
+            <input
+              type="number"
+              step="0.05"
+              className="input text-xs w-16 px-1 py-0"
+              value={rangeControls.range[0]}
+              onChange={(e) => {
+                const v = parseFloat(e.target.value);
+                if (!isNaN(v)) rangeControls.onRangeChange([v, rangeControls.range[1]]);
+              }}
+            />
+            <span className="text-xs text-[#808080]">to</span>
+            <input
+              type="number"
+              step="0.05"
+              className="input text-xs w-16 px-1 py-0"
+              value={rangeControls.range[1]}
+              onChange={(e) => {
+                const v = parseFloat(e.target.value);
+                if (!isNaN(v)) rangeControls.onRangeChange([rangeControls.range[0], v]);
+              }}
+            />
+            <button className="btn text-[10px] px-1 py-0" onClick={() => rangeControls.onRangeChange([0.90, 1.10])}>Tight</button>
+            <button className="btn text-[10px] px-1 py-0" onClick={() => rangeControls.onRangeChange([0.50, 1.50])}>Wide</button>
+            <button className="btn text-[10px] px-1 py-0" onClick={() => rangeControls.onRangeChange([0, 99])}>All</button>
+            {rangeControls.outlierCount > 0 && (
+              <span className="text-[10px] text-[#808080]">({rangeControls.outlierCount} outside range)</span>
+            )}
+          </>
+        )}
       </div>
+      {data.length === 0 ? (
+        <div className="text-xs text-[#808080]">No holdings in this range</div>
+      ) : (
+        <div className="space-y-1">
+          {data.map((item, i) => (
+            <div
+              key={i}
+              className="flex items-center gap-2"
+              onMouseEnter={(e) => handleMouseEnter(e, item)}
+              onMouseMove={(e) => handleMouseMove(e, item)}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => onBucketClick?.(i, item.range)}
+              style={{ cursor: onBucketClick ? 'pointer' : 'default' }}
+            >
+              <div className="w-24 text-xs text-[#808080] truncate" title={item.range}>{item.range}</div>
+              <div className="flex-1 bg-[#c0c0c0] h-4 overflow-hidden">
+                <div
+                  className="h-full transition-opacity"
+                  style={{
+                    width: `${(item.count / maxCount) * 100}%`,
+                    backgroundColor: selectedBucket === i ? '#000080' : '#0000ff',
+                    opacity: hovered?.item.range === item.range || selectedBucket === i ? 1 : hovered ? 0.5 : 1,
+                  }}
+                />
+              </div>
+              <div className="w-20 text-xs text-[#808080] text-right">
+                {item.count} ({item.percentage.toFixed(1)}%)
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
       {hovered && (
         <div
           className="absolute pointer-events-none z-10 bg-white border-2 border-[#000000] px-2 py-1 text-xs text-black"
@@ -410,33 +454,51 @@ export function AnalyticsPanel({ holdings, period }: Props) {
   const avgSpreadByType = useMemo(() => getAverageSpreadByInvestmentType(holdings), [holdings]);
   const topHoldings = useMemo(() => getTopHoldings(holdings, 10), [holdings]);
   const fvRatios = useMemo(() => getFVRatioStats(holdings), [holdings]);
-  const fvPrincipalRatios = useMemo(() => {
+
+  const [fvPrincipalRange, setFvPrincipalRange] = useState<[number, number]>([0.85, 1.15]);
+  const [fvCostRange, setFvCostRange] = useState<[number, number]>([0.85, 1.15]);
+
+  const fvPrincipalRawRatios = useMemo(() => {
     const ratios: number[] = [];
     holdings.forEach(h => {
-      const fv = Number(h.fair_value || 0);
-      const principal = Number(h.principal_amount || 0);
+      const fv = getFV(h);
+      const principal = getPrincipal(h);
       if (principal > 0 && fv > 0) {
         const ratio = fv / principal;
         if (ratio >= 0.01 && ratio <= 5) ratios.push(ratio);
       }
     });
-    return getFVRatioDistribution(ratios);
+    return ratios;
   }, [holdings]);
-  const fvCostRatios = useMemo(() => {
+  const fvPrincipalRatios = useMemo(
+    () => getFVRatioDistribution(fvPrincipalRawRatios, fvPrincipalRange[0], fvPrincipalRange[1]),
+    [fvPrincipalRawRatios, fvPrincipalRange]
+  );
+  const fvPrincipalOutliers = useMemo(
+    () => fvPrincipalRawRatios.filter(r => r < fvPrincipalRange[0] || r > fvPrincipalRange[1]).length,
+    [fvPrincipalRawRatios, fvPrincipalRange]
+  );
+
+  const fvCostRawRatios = useMemo(() => {
     const ratios: number[] = [];
     holdings.forEach(h => {
-      const fv = Number(h.fair_value || 0);
-      const cost = Number(h.cost || h.amortized_cost || 0);
+      const fv = getFV(h);
+      const cost = getCost(h);
       if (cost > 0 && fv > 0) {
         const ratio = fv / cost;
         if (ratio >= 0.01 && ratio <= 5) ratios.push(ratio);
       }
     });
-    return getFVRatioDistribution(ratios);
+    return ratios;
   }, [holdings]);
-  const industryHerfindahl = useMemo(() => getHerfindahlIndex(industryDist), [industryDist]);
-  const typeHerfindahl = useMemo(() => getHerfindahlIndex(typeDist), [typeDist]);
-  
+  const fvCostRatios = useMemo(
+    () => getFVRatioDistribution(fvCostRawRatios, fvCostRange[0], fvCostRange[1]),
+    [fvCostRawRatios, fvCostRange]
+  );
+  const fvCostOutliers = useMemo(
+    () => fvCostRawRatios.filter(r => r < fvCostRange[0] || r > fvCostRange[1]).length,
+    [fvCostRawRatios, fvCostRange]
+  );
   // Red flags
   const redFlags = useMemo(() => {
     return holdings.map(h => ({
@@ -549,8 +611,28 @@ export function AnalyticsPanel({ holdings, period }: Props) {
       
       {/* FV Ratio Distributions */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <HistogramChart data={fvPrincipalRatios} title="FV/Principal Ratio Distribution" onBucketClick={handleFVPrincipalClick} selectedBucket={drillDown?.source === 'fv-principal' ? drillDown.bucketIndex : null} />
-        <HistogramChart data={fvCostRatios} title="FV/Cost Ratio Distribution" onBucketClick={handleFVCostClick} selectedBucket={drillDown?.source === 'fv-cost' ? drillDown.bucketIndex : null} />
+        <HistogramChart
+          data={fvPrincipalRatios}
+          title="FV/Principal Ratio Distribution"
+          onBucketClick={handleFVPrincipalClick}
+          selectedBucket={drillDown?.source === 'fv-principal' ? drillDown.bucketIndex : null}
+          rangeControls={{
+            range: fvPrincipalRange,
+            onRangeChange: setFvPrincipalRange,
+            outlierCount: fvPrincipalOutliers,
+          }}
+        />
+        <HistogramChart
+          data={fvCostRatios}
+          title="FV/Cost Ratio Distribution"
+          onBucketClick={handleFVCostClick}
+          selectedBucket={drillDown?.source === 'fv-cost' ? drillDown.bucketIndex : null}
+          rangeControls={{
+            range: fvCostRange,
+            onRangeChange: setFvCostRange,
+            outlierCount: fvCostOutliers,
+          }}
+        />
       </div>
       
       {/* Drill-Down Table */}
@@ -580,7 +662,7 @@ export function AnalyticsPanel({ holdings, period }: Props) {
           <div className="text-xs font-semibold mb-2 text-black">PIK Analysis</div>
           <div className="space-y-1 text-xs text-[#808080]">
             <div>PIK Count: {pikAnalysis.pikCount}</div>
-            <div>PIK FV: ${(pikAnalysis.pikFairValue / 1000).toFixed(0)}k</div>
+            <div>PIK FV: ${(pikAnalysis.pikFairValue / 1000).toFixed(1)}M</div>
             <div>PIK %: {pikAnalysis.pikPercentage.toFixed(1)}%</div>
             <div className="pt-1 border-t border-[#808080]">Avg PIK Rate: {pikAnalysis.averagePikRate.toFixed(2)}%</div>
           </div>
@@ -593,21 +675,6 @@ export function AnalyticsPanel({ holdings, period }: Props) {
             <div>Range: {fvRatios.fvPrincipal.min.toFixed(3)} - {fvRatios.fvPrincipal.max.toFixed(3)}</div>
             <div className="pt-1 border-t border-[#808080]">FV/Cost Avg: {fvRatios.fvCost.average.toFixed(3)}</div>
             <div>Range: {fvRatios.fvCost.min.toFixed(3)} - {fvRatios.fvCost.max.toFixed(3)}</div>
-          </div>
-        </div>
-      </div>
-      
-      {/* Concentration Metrics */}
-      <div className="window p-3">
-        <div className="text-xs font-semibold mb-2 text-black">Concentration Metrics</div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-[#808080]">
-          <div>
-            <div>Industry Herfindahl: {industryHerfindahl.toFixed(0)}</div>
-            <div className="text-[#808080] text-[10px] mt-1">(Higher = more concentrated)</div>
-          </div>
-          <div>
-            <div>Type Herfindahl: {typeHerfindahl.toFixed(0)}</div>
-            <div className="text-[#808080] text-[10px] mt-1">(Higher = more concentrated)</div>
           </div>
         </div>
       </div>
@@ -629,7 +696,7 @@ export function AnalyticsPanel({ holdings, period }: Props) {
               {topHoldings.map((h, i) => (
                 <tr key={i} className="border-b border-[#c0c0c0]">
                   <td className="py-1 text-black">{h.company_name}</td>
-                  <td className="text-right py-1 text-[#808080]">${(h.fair_value / 1000).toFixed(0)}k</td>
+                  <td className="text-right py-1 text-[#808080]">${(h.fair_value / 1000).toFixed(1)}M</td>
                   <td className="text-right py-1 text-[#808080]">{h.percentage.toFixed(2)}%</td>
                   <td className="py-1 text-[#808080]">{h.investment_type}</td>
                 </tr>
@@ -673,7 +740,7 @@ export function AnalyticsPanel({ holdings, period }: Props) {
               <tbody>
                 {filteredRedFlags.map((item, i) => (
                   <tr key={i} className="border-b border-[#c0c0c0]">
-                    <td className="py-1 text-black">{item.holding.company_name}</td>
+                    <td className="py-1 text-black">{item.holding.company_name_clean || item.holding.company_name}</td>
                     <td className="py-1">
                       <div className="flex flex-wrap gap-1">
                         {item.flags.map((flag, j) => (
@@ -690,9 +757,9 @@ export function AnalyticsPanel({ holdings, period }: Props) {
                         ))}
                       </div>
                     </td>
-                    <td className="text-right py-1 text-[#808080]">${(parseFloat(item.holding.fair_value || '0') / 1000).toFixed(0)}k</td>
-                    <td className="text-right py-1 text-[#808080]">${(parseFloat(item.holding.principal_amount || '0') / 1000).toFixed(0)}k</td>
-                    <td className="text-right py-1 text-[#808080]">${(parseFloat(item.holding.cost || item.holding.amortized_cost || '0') / 1000).toFixed(0)}k</td>
+                    <td className="text-right py-1 text-[#808080]">${(getFV(item.holding) / 1000).toFixed(1)}M</td>
+                    <td className="text-right py-1 text-[#808080]">${(getPrincipal(item.holding) / 1000).toFixed(1)}M</td>
+                    <td className="text-right py-1 text-[#808080]">${(getCost(item.holding) / 1000).toFixed(1)}M</td>
                   </tr>
                 ))}
               </tbody>

@@ -48,6 +48,36 @@ export function formatQuarter(q: QuarterInfo): string {
 }
 
 /**
+ * Map SEC filing date (YYYY-MM-DD) to the quarter that filing represents.
+ * 10-Q: May→Q1, Aug→Q2, Nov→Q3. 10-K: Feb/Mar→Q4 (prior year).
+ */
+function filingDateToQuarter(period: string): { year: number; quarter: 1 | 2 | 3 | 4 } | null {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(period);
+  if (!match) return null;
+  const year = parseInt(match[1], 10);
+  const month = parseInt(match[2], 10);
+  if (month >= 2 && month <= 3) return { year: year - 1, quarter: 4 };  // 10-K → prior year Q4
+  if (month >= 4 && month <= 6) return { year, quarter: 1 };
+  if (month >= 7 && month <= 9) return { year, quarter: 2 };
+  if (month >= 10 && month <= 12) return { year, quarter: 3 };
+  if (month === 1) return { year: year - 1, quarter: 4 };  // late 10-K in Jan
+  return null;
+}
+
+/**
+ * Format a raw period string (YYYY-MM-DD filing date) as a quarter label (e.g., "Q3 2025").
+ * Uses SEC filing-date convention (May=Q1, Aug=Q2, Nov=Q3, Feb/Mar=Q4 prior year).
+ */
+export function formatPeriodLabel(period: string | undefined | null): string {
+  if (!period) return '';
+  const q = filingDateToQuarter(period);
+  if (q) return `Q${q.quarter} ${q.year}`;
+  const fallback = parsePeriod(period);
+  if (fallback) return formatQuarter(fallback);
+  return period;
+}
+
+/**
  * Get the quarter-end date for a given year and quarter
  */
 function getQuarterEndDate(year: number, quarter: 1 | 2 | 3 | 4): Date {

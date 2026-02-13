@@ -45,6 +45,7 @@ export type PeriodFinancials = {
   shares?: Record<string, number | null>;
   leverage?: Record<string, number | null>;
   derived?: Record<string, number | null>;
+  cash_flow_statement?: Record<string, number | null>;
   full_income_statement?: Record<string, { label: string; concept: string; value: number | null; period?: string | null }>;
   full_cash_flow_statement?: Record<string, { label: string; concept: string; value: number | null; period?: string | null }>;
   full_balance_sheet?: Record<string, { label: string; concept: string; value: number | null; period?: string | null }>;

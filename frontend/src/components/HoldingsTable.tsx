@@ -1,11 +1,13 @@
-import { useEffect, useMemo, useState, useRef, memo, useTransition, useCallback } from 'react';
+import { useEffect, useMemo, useState, useRef, memo, useTransition, useCallback, useDeferredValue } from 'react';
 import { createColumnHelper, flexRender, getCoreRowModel, getSortedRowModel, useReactTable } from '@tanstack/react-table';
 import type { SortingState } from '@tanstack/react-table';
 import type { Holding } from '../data/adapter';
-import { checkRedFlags } from '../utils/holdingsAnalytics';
+import { checkRedFlags, getMaturityDateStr } from '../utils/holdingsAnalytics';
 import { ExportBar } from './ExportBar';
 import { calculateCurrentYield } from '../utils/referenceRates';
-import { HoldingsFilterBar, filterHoldings, defaultFilterState, type FilterState } from './HoldingsFilterBar';
+import { HoldingsFilterBar, filterHoldings, defaultFilterState, filterHoldingsAdvanced, defaultAdvancedFilterState, hasActiveAdvancedFilters, type FilterState, type AdvancedFilterState } from './HoldingsFilterBar';
+import { AdvancedSearchDialog } from './AdvancedSearchDialog';
+import { useDebounce } from '../hooks/useDebounce';
 
 type Props = {
   data: Holding[];
@@ -68,16 +70,28 @@ function decodeHtmlEntities(text: unknown): string {
 // Memoize the component to prevent unnecessary re-renders
 function HoldingsTableComponent({ data, period }: Props) {
   const dataRef = useRef<number>(0);
+  const searchInputRef = useRef<HTMLInputElement>(null);
   const [isPending, startTransition] = useTransition();
-  const [searchQuery, setSearchQuery] = useState<string>('');
   const [currentPage, setCurrentPage] = useState<number>(0);
   const [pageSize, setPageSize] = useState<number>(100);
   const [compactMode, setCompactMode] = useState<boolean>(false);
+  const [hoveredRowId, setHoveredRowId] = useState<string | null>(null);
   const [holdingsFilters, setHoldingsFilters] = useState<FilterState>(defaultFilterState);
+  const [advancedFilters, setAdvancedFilters] = useState<AdvancedFilterState>(defaultAdvancedFilterState);
+  const [showAdvancedSearch, setShowAdvancedSearch] = useState(false);
+
+  // Debounced search
+  const { displayValue: searchDisplay, debouncedValue: searchQuery, setDisplayValue: setSearchDisplay, flushNow: flushSearch, reset: resetSearch } = useDebounce('', 300);
+
+  // Deferred values for non-blocking filtering
+  const deferredSearchQuery = useDeferredValue(searchQuery);
+  const deferredFilters = useDeferredValue(holdingsFilters);
+  const deferredAdvFilters = useDeferredValue(advancedFilters);
+  const isFilterStale = deferredSearchQuery !== searchQuery || deferredFilters !== holdingsFilters || deferredAdvFilters !== advancedFilters;
 
   // Default sort by company name ascending
   const [sorting, setSorting] = useState<SortingState>([{ id: 'company_name', desc: false }]);
-  
+
   // Wrapper to make sorting updates non-blocking
   const handleSortingChange = useCallback((updater: any) => {
     startTransition(() => {
@@ -88,7 +102,7 @@ function HoldingsTableComponent({ data, period }: Props) {
       }
     });
   }, [startTransition]);
-  
+
   // Reset to default sort and page when data actually changes (new ticker/period)
   useEffect(() => {
     if (dataRef.current !== data.length) {
@@ -96,8 +110,39 @@ function HoldingsTableComponent({ data, period }: Props) {
       setSorting([{ id: 'company_name', desc: false }]);
       setCurrentPage(0);
       setHoldingsFilters(defaultFilterState);
+      setAdvancedFilters(defaultAdvancedFilterState);
+      resetSearch('');
     }
-  }, [data.length]);
+  }, [data.length, resetSearch]);
+
+  // Reset pagination when search/filters change
+  useEffect(() => {
+    setCurrentPage(0);
+  }, [deferredSearchQuery, deferredFilters, deferredAdvFilters]);
+
+  // Ctrl+F / Cmd+F keyboard shortcut to focus search
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'f') {
+        e.preventDefault();
+        searchInputRef.current?.focus();
+        searchInputRef.current?.select();
+      }
+    };
+    document.addEventListener('keydown', handler);
+    return () => document.removeEventListener('keydown', handler);
+  }, []);
+
+  // Check if any search or filter is active
+  const hasAnyFilter = searchQuery !== '' ||
+    holdingsFilters.industry !== 'all' || holdingsFilters.type !== 'all' ||
+    hasActiveAdvancedFilters(advancedFilters);
+
+  const clearAll = useCallback(() => {
+    resetSearch('');
+    setHoldingsFilters(defaultFilterState);
+    setAdvancedFilters(defaultAdvancedFilterState);
+  }, [resetSearch]);
 
   // Precompute sort keys once per dataset - decode HTML entities once, compute sort keys
   const processedData = useMemo(() => {
@@ -106,7 +151,7 @@ function HoldingsTableComponent({ data, period }: Props) {
       const companyName = decodeHtmlEntities(d?.company_name_clean ?? d?.company_name ?? '');
       const investmentType = decodeHtmlEntities(d?.investment_type_standardized ?? d?.investment_type ?? '');
       const industry = decodeHtmlEntities(d?.industry_clean ?? d?.industry ?? '');
-      
+
       return {
         ...d,
         // Use cleaned fields for display
@@ -123,35 +168,38 @@ function HoldingsTableComponent({ data, period }: Props) {
         _p_rate: d?.total_interest_rate ? d.total_interest_rate * 100 : toPercent(d?.interest_rate),
         _p_spread: d?.spread_clean ? d.spread_clean * 100 : toPercent(d?.spread),
         _t_acq: toDateEpoch(d?.acquisition_date),
-        _t_mat: toDateEpoch(d?.maturity_date),
+        _t_mat: toDateEpoch(getMaturityDateStr(d)),
       };
     });
     return processed;
   }, [data]);
 
-  // Filter data based on search query and filter bar
+  // Filter data based on deferred search query and deferred filter bar
   const filteredData = useMemo(() => {
     let result = processedData;
 
     // Text search
-    if (searchQuery.trim()) {
-      const query = searchQuery.toLowerCase().trim();
+    if (deferredSearchQuery.trim()) {
+      const query = deferredSearchQuery.toLowerCase().trim();
       result = result.filter((d: any) => {
         return (
           d._s_company.includes(query) ||
           d._s_type.includes(query) ||
           d._s_industry.includes(query) ||
           (d?.reference_rate && String(d.reference_rate).toLowerCase().includes(query)) ||
-          (d?.maturity_date && String(d.maturity_date).toLowerCase().includes(query))
+          (getMaturityDateStr(d) && String(getMaturityDateStr(d)).toLowerCase().includes(query))
         );
       });
     }
 
     // Apply filter bar filters
-    result = filterHoldings(result, holdingsFilters);
+    result = filterHoldings(result, deferredFilters);
+
+    // Apply advanced filters
+    result = filterHoldingsAdvanced(result, deferredAdvFilters);
 
     return result;
-  }, [processedData, searchQuery, holdingsFilters]);
+  }, [processedData, deferredSearchQuery, deferredFilters, deferredAdvFilters]);
 
   const columns = useMemo(
     () => [
@@ -223,10 +271,10 @@ function HoldingsTableComponent({ data, period }: Props) {
         header: 'Yield %',
         cell: (c) => {
           const row = c.row.original as any;
-          
+
           // Try to calculate current yield from spread + ref rate
           const currentYield = calculateCurrentYield(row.spread ?? row.spread_clean, row.reference_rate);
-          
+
           // Use calculated yield if available, otherwise use stated rate
           if (currentYield !== null) {
             return (
@@ -235,9 +283,9 @@ function HoldingsTableComponent({ data, period }: Props) {
               </span>
             );
           }
-          
+
           // Fallback to stated rate
-          const rate = row.total_interest_rate ? (row.total_interest_rate * 100).toFixed(2) : 
+          const rate = row.total_interest_rate ? (row.total_interest_rate * 100).toFixed(2) :
                        row.interest_rate ?? '';
           return <span className="block text-right">{rate}</span>;
         },
@@ -249,7 +297,7 @@ function HoldingsTableComponent({ data, period }: Props) {
         header: 'Spread %',
         cell: (c) => {
           const row = c.row.original as any;
-          const spread = row.spread_clean ? (row.spread_clean * 100).toFixed(2) : 
+          const spread = row.spread_clean ? (row.spread_clean * 100).toFixed(2) :
                         row.spread ?? '';
           return <span className="block text-right">{spread}</span>;
         },
@@ -280,9 +328,10 @@ function HoldingsTableComponent({ data, period }: Props) {
         enableSorting: true,
         sortingFn: (rowA, rowB) => compareNullable((rowA.original as any)._t_acq, (rowB.original as any)._t_acq),
       }),
-      columnHelper.accessor('maturity_date', {
+      columnHelper.accessor((row) => getMaturityDateStr(row) ?? '', {
+        id: 'maturity_date',
         header: 'Mat',
-        cell: (c) => c.getValue() ?? '',
+        cell: (c) => c.getValue() || '',
         enableSorting: true,
         sortingFn: (rowA, rowB) => compareNullable((rowA.original as any)._t_mat, (rowB.original as any)._t_mat),
       }),
@@ -325,17 +374,8 @@ function HoldingsTableComponent({ data, period }: Props) {
     [period]
   );
 
-  // Paginate the filtered data
-  const paginatedData = useMemo(() => {
-    const start = currentPage * pageSize;
-    const end = start + pageSize;
-    return filteredData.slice(start, end);
-  }, [filteredData, currentPage, pageSize]);
-
-  const totalPages = Math.ceil(filteredData.length / pageSize);
-
   const table = useReactTable({
-    data: paginatedData as any,
+    data: filteredData as any,
     columns,
     state: { sorting },
     onSortingChange: handleSortingChange,
@@ -345,12 +385,21 @@ function HoldingsTableComponent({ data, period }: Props) {
     enableSortingRemoval: true,
   });
 
-  const sortedRows = table.getRowModel().rows;
+  const allRows = table.getRowModel().rows;
+
+  // Paginate sorted rows
+  const paginatedRows = useMemo(() => {
+    const start = currentPage * pageSize;
+    const end = start + pageSize;
+    return allRows.slice(start, end);
+  }, [allRows, currentPage, pageSize]);
+
+  const totalPages = Math.ceil(filteredData.length / pageSize);
 
   // Get filtered/sorted holdings for export
   const exportData = useMemo(() => {
-    return sortedRows.map(row => row.original);
-  }, [sortedRows]);
+    return allRows.map(row => row.original);
+  }, [allRows]);
 
   // Generate filename with period if available
   const exportFilename = useMemo(() => {
@@ -362,28 +411,68 @@ function HoldingsTableComponent({ data, period }: Props) {
     return `${base}_${new Date().toISOString().split('T')[0]}`;
   }, [period]);
 
+  // Search input keyboard handlers
+  const handleSearchKeyDown = useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      flushSearch();
+    } else if (e.key === 'Escape') {
+      resetSearch('');
+      searchInputRef.current?.blur();
+    }
+  }, [flushSearch, resetSearch]);
+
   return (
     <div className="window flex flex-col h-full min-h-0 overflow-hidden">
       <div className="titlebar flex-shrink-0">
         <div className="text-xs sm:text-sm tracking-wide">Holdings</div>
         <div className="flex items-center gap-2 sm:gap-3 text-xs text-white flex-wrap" aria-live="polite">
-          <span className="whitespace-nowrap">Rows: {filteredData.length}{searchQuery ? ` (${data.length})` : ''}</span>
-          {isPending ? (
+          <span className="whitespace-nowrap">Rows: {filteredData.length}{hasAnyFilter ? ` (${data.length})` : ''}</span>
+          {(isPending || isFilterStale) ? (
             <span className="inline-flex items-center gap-1 text-[#808080]">
               <span className="h-3 w-3 border-2 border-[#000080] border-t-transparent animate-spin" style={{ borderRadius: 0 }} />
-              Sorting
+              {isPending ? 'Sorting' : 'Filtering'}
             </span>
           ) : null}
         </div>
       </div>
       <div className="p-1 border-b border-[#c0c0c0] flex-shrink-0 flex gap-1 items-center flex-wrap">
-        <input
-          type="text"
-          className="input flex-1 min-w-[200px] text-xs py-0.5"
-          placeholder="Search by company name, type, industry..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-        />
+        <div className="relative flex-1 min-w-[200px]">
+          <input
+            ref={searchInputRef}
+            type="text"
+            className="input w-full text-xs py-0.5 pr-6"
+            placeholder="Search by company name, type, industry... (Ctrl+F)"
+            value={searchDisplay}
+            onChange={(e) => setSearchDisplay(e.target.value)}
+            onKeyDown={handleSearchKeyDown}
+          />
+          {searchDisplay && (
+            <button
+              className="absolute right-1 top-1/2 -translate-y-1/2 px-1 text-xs text-[#808080] hover:text-black"
+              onClick={() => resetSearch('')}
+              title="Clear search (Escape)"
+              type="button"
+            >
+              X
+            </button>
+          )}
+        </div>
+        <button
+          onClick={flushSearch}
+          className="px-1.5 py-0.5 text-xs window"
+          title="Search now (Enter)"
+        >
+          Find
+        </button>
+        {hasAnyFilter && (
+          <button
+            onClick={clearAll}
+            className="px-1.5 py-0.5 text-xs window text-[#ff0000]"
+            title="Clear search and all filters"
+          >
+            Reset
+          </button>
+        )}
         <button
           onClick={() => setCompactMode(!compactMode)}
           className="px-1.5 py-0.5 text-xs window flex items-center gap-1"
@@ -391,88 +480,138 @@ function HoldingsTableComponent({ data, period }: Props) {
         >
           {compactMode ? '🔍+' : '🔍−'}
         </button>
+        <button
+          onClick={() => setShowAdvancedSearch(true)}
+          className={`px-1.5 py-0.5 text-xs window ${hasActiveAdvancedFilters(advancedFilters) ? 'font-bold text-[#000080]' : ''}`}
+          title="Advanced search filters"
+        >
+          {hasActiveAdvancedFilters(advancedFilters) ? 'Advanced*' : 'Advanced...'}
+        </button>
       </div>
       <div className="p-1 border-b border-[#c0c0c0] flex-shrink-0">
         <HoldingsFilterBar holdings={data} filters={holdingsFilters} onChange={setHoldingsFilters} />
       </div>
+      {hasActiveAdvancedFilters(advancedFilters) && (
+        <div className="px-2 py-0.5 border-b border-[#c0c0c0] flex-shrink-0 flex items-center gap-2 bg-[#ffffcc] text-xs">
+          <span className="text-[#000080] font-bold">Advanced filters active</span>
+          <button
+            className="text-[#ff0000] underline"
+            onClick={() => setAdvancedFilters(defaultAdvancedFilterState)}
+            type="button"
+          >
+            clear
+          </button>
+        </div>
+      )}
       <div className="overflow-auto flex-1 min-h-0 relative">
-        <table className={`w-full table-excel ${compactMode ? 'text-[9px] sm:text-[10px]' : 'text-xs sm:text-sm'}`}>
-          <thead className="sticky top-0 z-10">
-            {table.getHeaderGroups().map((hg) => (
-              <tr key={hg.id}>
-                <th className={`text-[#808080] text-right border border-[#c0c0c0] bg-[#c0c0c0] sticky left-0 z-10 ${compactMode ? 'px-0.5 py-0.5 text-[8px]' : 'px-1 sm:px-2 py-1 sm:py-2 text-[9px] sm:text-[10px]'}`}>
-                  #
-                </th>
-                    {hg.headers.map((h, colIdx) => {
-                      const colLetter = String.fromCharCode(65 + colIdx + 1); // B, C, D, etc. (A is row number)
-                      return (
-                      <th
-                        key={h.id}
-                    className={`whitespace-nowrap cursor-pointer select-none text-black relative border border-[#c0c0c0] ${h.column.id === 'principal_amount' || h.column.id === 'amortized_cost' || h.column.id === 'fair_value' || h.column.id === 'interest_rate' || h.column.id === 'spread' ? 'text-right' : 'text-left'} ${compactMode ? 'px-1 py-0.5 text-[8px]' : 'px-2 sm:px-3 py-1 sm:py-2 text-[10px] sm:text-xs'}`}
-                        onClick={(e) => {
-                          const handler = h.column.getToggleSortingHandler();
-                          if (handler) {
-                            handler(e);
-                          }
-                        }}
-                        aria-sort={h.column.getIsSorted() ? (h.column.getIsSorted() === 'desc' ? 'descending' : 'ascending') : 'none'}
-                      >
-                        {h.isPlaceholder ? null : (
-                          <div className="flex items-center gap-1">
-                            {flexRender(h.column.columnDef.header, h.getContext())}
-                            {h.column.getIsSorted() === 'asc' ? (
-                              <svg viewBox="0 0 20 20" className="h-3 w-3 text-black" aria-hidden="true">
-                                <path d="M10 6l-4 6h8l-4-6z" fill="currentColor" />
-                              </svg>
-                            ) : h.column.getIsSorted() === 'desc' ? (
-                              <svg viewBox="0 0 20 20" className="h-3 w-3 text-black" aria-hidden="true">
-                                <path d="M10 14l4-6H6l4 6z" fill="currentColor" />
-                              </svg>
-                            ) : null}
-                          </div>
-                        )}
-                        <span className="cell-ref">{colLetter}1</span>
-                      </th>
-                    );
-                    })}
-              </tr>
-            ))}
-          </thead>
-          <tbody className="text-black">
-            {sortedRows.map((row, rowIdx) => {
-              const rowNum = rowIdx + 2; // Start from row 2 (row 1 is header)
-              return (
-              <tr key={row.id} className="hover:bg-[#c0c0c0]">
-                <td className={`text-[#808080] text-right border border-[#c0c0c0] bg-[#c0c0c0] sticky left-0 z-10 ${compactMode ? 'px-0.5 py-0.5 text-[8px]' : 'px-1 sm:px-2 py-1 text-[9px] sm:text-[10px]'}`}>
-                  {rowNum}
-                </td>
-                {row.getVisibleCells().map((cell) => {
+        {filteredData.length === 0 && hasAnyFilter ? (
+          <div className="flex flex-col items-center justify-center py-12 px-4 text-center">
+            <div className="text-sm text-[#808080] mb-2">No holdings match your criteria</div>
+            {searchQuery && (
+              <div className="text-xs text-[#808080] mb-1">
+                Search: "<span className="text-black font-medium">{searchQuery}</span>"
+              </div>
+            )}
+            {(holdingsFilters.industry !== 'all' || holdingsFilters.type !== 'all' ||
+              hasActiveAdvancedFilters(advancedFilters)) && (
+              <div className="text-xs text-[#808080] mb-3">
+                Active filters are narrowing results
+              </div>
+            )}
+            <button
+              onClick={clearAll}
+              className="px-3 py-1 text-xs window"
+            >
+              Clear All Filters
+            </button>
+          </div>
+        ) : (
+          <>
+            <table className={`w-full table-excel ${compactMode ? 'text-[9px] sm:text-[10px]' : 'text-xs sm:text-sm'}`}>
+              <thead className="sticky top-0 z-10">
+                {table.getHeaderGroups().map((hg) => (
+                  <tr key={hg.id}>
+                    <th className={`text-[#808080] text-right border border-[#c0c0c0] bg-[#c0c0c0] sticky left-0 z-10 ${compactMode ? 'px-0.5 py-0.5 text-[8px]' : 'px-1 sm:px-2 py-1 sm:py-2 text-[9px] sm:text-[10px]'}`}>
+                      #
+                    </th>
+                        {hg.headers.map((h, colIdx) => {
+                          const colLetter = String.fromCharCode(65 + colIdx + 1); // B, C, D, etc. (A is row number)
+                          return (
+                          <th
+                            key={h.id}
+                        className={`whitespace-nowrap cursor-pointer select-none text-black relative border border-[#c0c0c0] ${h.column.id === 'principal_amount' || h.column.id === 'amortized_cost' || h.column.id === 'fair_value' || h.column.id === 'interest_rate' || h.column.id === 'spread' ? 'text-right' : 'text-left'} ${compactMode ? 'px-1 py-0.5 text-[8px]' : 'px-2 sm:px-3 py-1 sm:py-2 text-[10px] sm:text-xs'}`}
+                            onClick={(e) => {
+                              const handler = h.column.getToggleSortingHandler();
+                              if (handler) {
+                                handler(e);
+                              }
+                            }}
+                            aria-sort={h.column.getIsSorted() ? (h.column.getIsSorted() === 'desc' ? 'descending' : 'ascending') : 'none'}
+                          >
+                            {h.isPlaceholder ? null : (
+                              <div className="flex items-center gap-1">
+                                {flexRender(h.column.columnDef.header, h.getContext())}
+                                {h.column.getIsSorted() === 'asc' ? (
+                                  <svg viewBox="0 0 20 20" className="h-3 w-3 text-black" aria-hidden="true">
+                                    <path d="M10 6l-4 6h8l-4-6z" fill="currentColor" />
+                                  </svg>
+                                ) : h.column.getIsSorted() === 'desc' ? (
+                                  <svg viewBox="0 0 20 20" className="h-3 w-3 text-black" aria-hidden="true">
+                                    <path d="M10 14l4-6H6l4 6z" fill="currentColor" />
+                                  </svg>
+                                ) : null}
+                              </div>
+                            )}
+                            <span className="cell-ref">{colLetter}1</span>
+                          </th>
+                        );
+                        })}
+                  </tr>
+                ))}
+              </thead>
+              <tbody className="text-black">
+                {paginatedRows.map((row, rowIdx) => {
+                  const rowNum = currentPage * pageSize + rowIdx + 2; // global row index (header is row 1)
+                  const isHovered = hoveredRowId === row.id;
                   return (
-                  <td key={cell.id} className={`align-top relative border border-[#c0c0c0] ${compactMode ? 'px-1 py-0.5 text-[8px]' : 'px-2 sm:px-3 py-1 sm:py-2 text-[10px] sm:text-xs'}`}>
-                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                  </td>
+                  <tr
+                    key={row.id}
+                    className={isHovered ? 'bg-[#ffffcc]' : ''}
+                    onMouseEnter={() => setHoveredRowId(row.id)}
+                    onMouseLeave={() => setHoveredRowId(prev => (prev === row.id ? null : prev))}
+                  >
+                    <td className={`text-[#808080] text-right border border-[#c0c0c0] sticky left-0 z-10 ${compactMode ? 'px-0.5 py-0.5 text-[8px]' : 'px-1 sm:px-2 py-1 text-[9px] sm:text-[10px]'}`}>
+                      {rowNum}
+                    </td>
+                    {row.getVisibleCells().map((cell) => {
+                      return (
+                      <td key={cell.id} className={`align-top relative border border-[#c0c0c0] ${compactMode ? 'px-1 py-0.5 text-[8px]' : 'px-2 sm:px-3 py-1 sm:py-2 text-[10px] sm:text-xs'}`}>
+                        {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                      </td>
+                      );
+                    })}
+                  </tr>
                   );
                 })}
-              </tr>
-              );
-            })}
-          </tbody>
-        </table>
-        {isPending ? (
-          <div className="absolute inset-0 bg-[#c0c0c0]/80 flex items-center justify-center z-20">
-            <div className="flex items-center gap-2 text-black text-xs">
-              <span className="h-5 w-5 border-2 border-[#000080] border-t-transparent animate-spin" style={{ borderRadius: 0 }} />
-              <span>Sorting…</span>
-            </div>
-          </div>
-        ) : null}
+              </tbody>
+            </table>
+            {isPending ? (
+              <div className="absolute inset-0 bg-[#c0c0c0]/80 flex items-center justify-center z-20">
+                <div className="flex items-center gap-2 text-black text-xs">
+                  <span className="h-5 w-5 border-2 border-[#000080] border-t-transparent animate-spin" style={{ borderRadius: 0 }} />
+                  <span>Sorting…</span>
+                </div>
+              </div>
+            ) : null}
+          </>
+        )}
       </div>
       {exportData.length > 0 && (
         <div className="flex-shrink-0">
           <ExportBar data={exportData as Holding[]} filename={exportFilename} />
         </div>
       )}
-      
+
       {/* Pagination controls */}
       {filteredData.length > pageSize && (
         <div className="mt-1 flex items-center justify-between gap-2 border-t border-[#808080] pt-1">
@@ -527,10 +666,17 @@ function HoldingsTableComponent({ data, period }: Props) {
           </div>
         </div>
       )}
+      {showAdvancedSearch && (
+        <AdvancedSearchDialog
+          filters={advancedFilters}
+          onApply={setAdvancedFilters}
+          onClose={() => setShowAdvancedSearch(false)}
+          matchCount={filteredData.length}
+          holdings={data}
+        />
+      )}
     </div>
   );
 }
 
 export const HoldingsTable = memo(HoldingsTableComponent);
-
-

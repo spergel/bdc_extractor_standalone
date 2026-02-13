@@ -296,17 +296,13 @@ function resolveDisplayLabel(k: string, rawLabel?: string): string {
   return formatLabel(rawLabel || k);
 }
 
-export function FinancialsPanel({ ticker, periods = [], name, mode = 'overview' }: Props) {
+export function FinancialsPanel({ ticker, periods = [], name: _name, mode = 'overview' }: Props) {
   // Fetch financials for all periods
   const financialsData = useBDCFinancialsMultiple(ticker, periods);
   
 
   // Use only periods that successfully loaded data to avoid empty columns
   const availableData = useMemo(() => financialsData.filter(({ data }) => !!data), [financialsData]);
-  
-  // Check for errors
-  const hasErrors = financialsData.some(({ data }) => data === null);
-  const errorCount = financialsData.filter(({ data }) => data === null).length;
 
   const rows = useMemo(() => {
     const metricKeys = [
@@ -378,84 +374,6 @@ export function FinancialsPanel({ ticker, periods = [], name, mode = 'overview' 
                   <td className="py-1.5 px-3 text-right font-mono text-black">{fmt(e.value)}</td>
                 </tr>
               ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-    );
-  };
-
-  const renderHistoricalStatement = (title: string, rows: Array<{ key: string; label: string; statement: 'income' | 'balance' | 'cashflow'; values: Array<{ period: string; value: number | null }> }>) => {
-    if (!rows || rows.length === 0) return null;
-    
-    // Filter out rows where all values are null
-    const validRows = rows.filter(row => row.values.some(v => v.value !== null));
-    if (validRows.length === 0) return null;
-    
-    // Helper to determine if period is likely quarterly (10-Q) or annual (10-K)
-    // Check if period date is near quarter-end (Mar 31, Jun 30, Sep 30, Dec 31) for annual
-    const getPeriodType = (period: string): 'quarterly' | 'annual' => {
-      try {
-        const date = new Date(period);
-        const month = date.getMonth() + 1; // 1-12
-        const day = date.getDate();
-        // Annual filings typically filed after year-end (Feb-Apr for Dec 31, etc.)
-        // Quarterly filings typically filed 1-2 months after quarter-end
-        // For now, assume Q4 (Dec) and filings in Jan-Mar are annual, others are quarterly
-        if (month === 12 || (month >= 1 && month <= 3)) {
-          // Could be annual, but also could be Q4 - check the actual data structure
-          // For now, we'll infer from the period date pattern
-          return 'annual';
-        }
-        return 'quarterly';
-      } catch {
-        return 'quarterly';
-      }
-    };
-    
-    return (
-      <div className="mt-4">
-        <div className="window overflow-auto">
-          <div className="titlebar">
-            <div className="text-sm tracking-wide">{title}</div>
-          </div>
-          <table className="w-full text-sm table-excel">
-            <thead className="sticky top-0 z-10">
-              <tr>
-                <th className="text-left py-2 px-3 text-black font-mono text-xs sticky left-0 bg-[#c0c0c0] border border-[#c0c0c0]">Line Item</th>
-                {availableData.map(({ period, data }) => {
-                  // Try to get form_type from data, or infer from period
-                  const formType = (data as any)?.form_type;
-                  const periodType = formType === '10-K' ? 'annual' : formType === '10-Q' ? 'quarterly' : getPeriodType(period);
-                  const typeLabel = periodType === 'annual' ? ' (Annual)' : ' (Quarterly)';
-                  return (
-                    <th key={period} className="text-right py-2 px-3 text-black font-mono text-xs min-w-[120px] border border-[#c0c0c0]">
-                      <div>{period}</div>
-                      <div className="text-[9px] text-[#808080] font-mono">{typeLabel}</div>
-                    </th>
-                  );
-                })}
-              </tr>
-            </thead>
-            <tbody>
-              {validRows.map((row, rowIdx) => {
-                const rowNum = rowIdx + 2;
-                return (
-                <tr key={`${row.statement}_${row.key}`} className="hover:bg-[#c0c0c0]">
-                  <td className="py-1.5 px-3 text-black font-mono text-xs sticky left-0 bg-[#c0c0c0] border border-[#c0c0c0]">{row.label}</td>
-                  {row.values.map(({ period, value }, colIdx) => {
-                    const colLetter = String.fromCharCode(66 + colIdx); // B, C, D, etc. (A is Line Item)
-                    const cellRef = `${colLetter}${rowNum}`;
-                    return (
-                    <td key={period} className="text-right py-1.5 px-3 font-mono text-black relative border border-[#c0c0c0]">
-                      <span className="cell-ref">{cellRef}</span>
-                      {fmt(value)}
-                    </td>
-                    );
-                  })}
-                </tr>
-                );
-              })}
             </tbody>
           </table>
         </div>

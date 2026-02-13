@@ -1,24 +1,12 @@
 import { useMemo } from 'react';
 import type { Holding } from '../data/adapter';
+import { getFV, getPrincipal, getIndustry, getInvType, toPercent } from '../utils/holdingsAnalytics';
+import { formatPeriodLabel } from '../utils/periodComparisons';
 
 type Props = {
   holdings: Holding[];
   period?: string;
 };
-
-function toNum(s: string | undefined | null): number {
-  if (!s || s === '') return 0;
-  const n = Number(s);
-  return Number.isNaN(n) ? 0 : n;
-}
-
-function toPercent(s: string | undefined | null): number {
-  if (!s || s === '') return 0;
-  const cleaned = String(s).replace(/%/g, '').trim();
-  const n = Number(cleaned);
-  // Filter out nonsensical values (spreads should be 0-20%)
-  return Number.isNaN(n) || n > 100 || n < 0 ? 0 : n;
-}
 
 export function SimpleAnalyticsPanel({ holdings, period }: Props) {
   const analytics = useMemo(() => {
@@ -43,48 +31,48 @@ export function SimpleAnalyticsPanel({ holdings, period }: Props) {
     const sizeDistribution = [0, 0, 0, 0]; // <1M, 1-5M, 5-20M, >20M
     
     holdings.forEach(h => {
-      const fv = toNum(h.fair_value);
-      const principal = toNum(h.principal_amount);
-      const spread = toPercent(h.spread);
-      
+      const fv = getFV(h);
+      const principal = getPrincipal(h);
+      const spread = h.spread_clean ?? toPercent(h.spread);
+
       if (fv > 0) {
         totalFV += fv;
         positions++;
-        
+
         // Type
-        const type = h.investment_type || 'Unknown';
+        const type = getInvType(h);
         byType.set(type, (byType.get(type) || 0) + fv);
-        
-        // Industry  
-        const industry = h.industry || 'Unknown';
+
+        // Industry
+        const industry = getIndustry(h);
         byIndustry.set(industry, (byIndustry.get(industry) || 0) + fv);
-        
+
         // Spread (only if positive)
         if (spread > 0 && spread <= 20) {
           spreadsWithValue.push(spread);
           spreadFV += fv;
         }
-        
+
         // Rate type
-        if (h.reference_rate && h.reference_rate.trim()) {
+        const ref = h.reference_rate_clean || h.reference_rate;
+        if (ref && ref.trim()) {
           floatingRateFV += fv;
         } else {
           fixedRateFV += fv;
         }
-        
+
         // PIK
-        const pik = toPercent(h.pik_rate);
-        if (pik > 0) {
+        if (h.is_pik || toPercent(h.pik_rate) > 0) {
           pikFV += fv;
         }
-        
+
         // Size buckets (in thousands)
         if (fv < 1000) sizeDistribution[0]++;
         else if (fv < 5000) sizeDistribution[1]++;
         else if (fv < 20000) sizeDistribution[2]++;
         else sizeDistribution[3]++;
       }
-      
+
       if (principal > 0) totalPrincipal += principal;
     });
     
@@ -138,7 +126,7 @@ export function SimpleAnalyticsPanel({ holdings, period }: Props) {
       <div className="window">
         <div className="titlebar">
           <div className="text-sm">Portfolio Summary</div>
-          {period && <div className="text-xs text-[#808080]">{period}</div>}
+          {period && <div className="text-xs text-[#808080]">{formatPeriodLabel(period)}</div>}
         </div>
         <div className="p-3 grid grid-cols-2 md:grid-cols-4 gap-4">
           <div>

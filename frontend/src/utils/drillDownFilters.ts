@@ -4,6 +4,8 @@ import {
   getFV,
   getCost,
   getPrincipal,
+  getIndustry,
+  getInvType,
   getIndustryDistribution,
   getInvestmentTypeDistribution,
 } from './holdingsAnalytics';
@@ -20,7 +22,7 @@ export type DrillDownSelection =
 function filterBySpreadBucket(holdings: Holding[], bucketIndex: number): Holding[] {
   const spreads: number[] = [];
   holdings.forEach(h => {
-    const spread = toPercent(h.spread);
+    const spread = h.spread_clean ?? toPercent(h.spread);
     if (spread > 0) spreads.push(spread);
   });
 
@@ -33,7 +35,7 @@ function filterBySpreadBucket(holdings: Holding[], bucketIndex: number): Holding
   const bucketSize = range / bucketCount;
 
   return holdings.filter(h => {
-    const spread = toPercent(h.spread);
+    const spread = h.spread_clean ?? toPercent(h.spread);
     if (spread <= 0) return false;
     const idx = Math.min(
       Math.floor((spread - min) / bucketSize),
@@ -116,12 +118,9 @@ function filterByIndustry(holdings: Holding[], category: string): Holding[] {
   if (category === 'Other') {
     const dist = getIndustryDistribution(holdings);
     const topCategories = new Set(dist.slice(0, 10).map(d => d.category));
-    return holdings.filter(h => {
-      const industry = h.industry || 'Unknown';
-      return !topCategories.has(industry);
-    });
+    return holdings.filter(h => !topCategories.has(getIndustry(h)));
   }
-  return holdings.filter(h => (h.industry || 'Unknown') === category);
+  return holdings.filter(h => getIndustry(h) === category);
 }
 
 // Filter by investment type category, handling "Other" as slice(10) remainder
@@ -129,12 +128,9 @@ function filterByType(holdings: Holding[], category: string): Holding[] {
   if (category === 'Other') {
     const dist = getInvestmentTypeDistribution(holdings);
     const topCategories = new Set(dist.slice(0, 10).map(d => d.category));
-    return holdings.filter(h => {
-      const type = h.investment_type || 'Unknown';
-      return !topCategories.has(type);
-    });
+    return holdings.filter(h => !topCategories.has(getInvType(h)));
   }
-  return holdings.filter(h => (h.investment_type || 'Unknown') === category);
+  return holdings.filter(h => getInvType(h) === category);
 }
 
 // Master dispatcher

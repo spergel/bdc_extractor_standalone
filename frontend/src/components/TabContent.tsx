@@ -1,13 +1,13 @@
-import { ReactNode, useState } from 'react';
+import { useState } from 'react';
 import { ProfileCard } from './ProfileCard';
 import { FinancialsPanel } from './FinancialsPanel';
 import { HoldingsTable } from './HoldingsTable';
 import { SimpleAnalyticsPanel } from './SimpleAnalyticsPanel';
 import { AnalyticsPanel } from './AnalyticsPanel';
 import { DiffViewer } from './DiffViewer';
-import { getPreviousQuarter, getYearOverYear, getYearEndComparison, getComparisonLabel } from '../utils/periodComparisons';
+import { DisclosurePanel } from './DisclosurePanel';
+import { getPreviousQuarter, getYearOverYear, getYearEndComparison, getComparisonLabel, formatPeriodLabel } from '../utils/periodComparisons';
 import { playClickSound } from '../utils/sounds';
-import { MonitorPanel } from './MonitorPanel';
 
 type TabContentProps = {
   ticker?: string;
@@ -31,6 +31,8 @@ type TabContentProps = {
   onUserDiffSelection: () => void;
 };
 
+const ANALYTICS_VIEW_KEY = 'bdc_analytics_view';
+
 function AnalyticsTabContent({
   investments,
   selectedPeriod,
@@ -42,7 +44,21 @@ function AnalyticsTabContent({
   periods?: string[];
   onPeriodChange: (period: string) => void;
 }) {
-  const [view, setView] = useState<'charts' | 'numbers'>('charts');
+  const [view, setView] = useState<'charts' | 'numbers'>(() => {
+    try {
+      const saved = localStorage.getItem(ANALYTICS_VIEW_KEY);
+      if (saved === 'charts' || saved === 'numbers') return saved;
+    } catch { /* ignore */ }
+    return 'charts';
+  });
+
+  const handleViewChange = (v: 'charts' | 'numbers') => {
+    playClickSound();
+    setView(v);
+    try {
+      localStorage.setItem(ANALYTICS_VIEW_KEY, v);
+    } catch { /* ignore */ }
+  };
 
   return (
     <div className="flex flex-col h-full min-h-0 overflow-hidden">
@@ -56,20 +72,20 @@ function AnalyticsTabContent({
             disabled={!periods || !periods.length}
           >
             {periods?.map((p) => (
-              <option key={p} value={p}>{p}</option>
+              <option key={p} value={p}>{formatPeriodLabel(p)}</option>
             ))}
           </select>
         </div>
         <div className="flex items-center gap-1 text-xs">
           <button
             className={`btn text-xs ${view === 'charts' ? 'pressed' : ''}`}
-            onClick={() => { playClickSound(); setView('charts'); }}
+            onClick={() => handleViewChange('charts')}
           >
             Charts
           </button>
           <button
             className={`btn text-xs ${view === 'numbers' ? 'pressed' : ''}`}
-            onClick={() => { playClickSound(); setView('numbers'); }}
+            onClick={() => handleViewChange('numbers')}
           >
             Numbers
           </button>
@@ -97,11 +113,11 @@ export function TabContent({
   selected,
   finRange,
   recentPeriods,
-  activeTab,
+  activeTab: _activeTab,
   diffBeforePeriod,
   diffAfterPeriod,
   diffSnapshots,
-  hasUserDiffSelection,
+  hasUserDiffSelection: _hasUserDiffSelection,
   onPeriodChange,
   onFinRangeChange,
   onDiffSelection,
@@ -129,7 +145,9 @@ export function TabContent({
                 </div>
                 <div>
                   <div className="text-[#808080]">Latest Filing</div>
-                  <div className="text-black font-semibold">{selectedPeriod ?? 'N/A'}</div>
+                  <div className="text-black font-semibold">
+                    {selectedPeriod ? formatPeriodLabel(selectedPeriod) : 'N/A'}
+                  </div>
                 </div>
                 <div>
                   <div className="text-[#808080]">SEC Filings</div>
@@ -200,7 +218,7 @@ export function TabContent({
                 disabled={!periods || !periods.length}
               >
                 {periods?.map((p) => (
-                  <option key={p} value={p}>{p}</option>
+                  <option key={p} value={p}>{formatPeriodLabel(p)}</option>
                 ))}
               </select>
             </div>
@@ -351,7 +369,7 @@ export function TabContent({
                     disabled={!periods || !periods.length}
                   >
                     {periods?.map((p) => (
-                      <option key={p} value={p}>{p}</option>
+                      <option key={p} value={p}>{formatPeriodLabel(p)}</option>
                     ))}
                   </select>
                   <span className="text-[#808080]">→</span>
@@ -366,7 +384,7 @@ export function TabContent({
                     disabled={!periods || !periods.length}
                   >
                     {periods?.map((p) => (
-                      <option key={p} value={p}>{p}</option>
+                      <option key={p} value={p}>{formatPeriodLabel(p)}</option>
                     ))}
                   </select>
                 </div>
@@ -397,9 +415,11 @@ export function TabContent({
       ),
     },
     {
-      id: 'monitor',
-      label: 'Monitor',
-      content: <MonitorPanel />,
+      id: 'disclosure',
+      label: 'Disclosure',
+      content: (
+        <DisclosurePanel />
+      ),
     },
   ];
 

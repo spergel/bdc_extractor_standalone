@@ -58,13 +58,25 @@ export function SidebarDock({ onSelect, selectedTicker, mode = 'individual', sel
         
         {/* Search and Filter */}
         <div className="p-2 space-y-2 border-b border-[#808080]">
-          <input
-            type="text"
-            className="input w-full text-xs"
-            placeholder="Search ticker or name..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
+          <div className="relative">
+            <input
+              type="text"
+              className="input w-full text-xs pr-6"
+              placeholder="Search ticker or name..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+            {searchTerm && (
+              <button
+                className="absolute right-1 top-1/2 -translate-y-1/2 px-1 text-xs text-[#808080] hover:text-black"
+                onClick={() => setSearchTerm('')}
+                title="Clear search"
+                type="button"
+              >
+                X
+              </button>
+            )}
+          </div>
           <select
             className="input w-full text-xs"
             value={sortBy}
@@ -99,8 +111,6 @@ export function SidebarDock({ onSelect, selectedTicker, mode = 'individual', sel
             const isSelected = mode === 'comparison' 
               ? selectedTickers.includes(b.ticker)
               : b.ticker === selectedTicker;
-            const active = mode === 'individual' && b.ticker === selectedTicker;
-            
             return (
               <button
                 key={b.ticker}

@@ -1,3 +1,5 @@
+import { formatPeriodLabel } from '../utils/periodComparisons';
+
 type Props = {
   ticker?: string;
   period?: string;
@@ -26,7 +28,7 @@ export function StatusBar({ ticker, period, rowCount, selectedCell, mode }: Prop
         {period && (
           <span className="flex items-center gap-2">
             <span className="text-[#808080]">Period:</span>
-            <span className="text-black">{period}</span>
+            <span className="text-black">{formatPeriodLabel(period)}</span>
           </span>
         )}
         {rowCount !== undefined && (

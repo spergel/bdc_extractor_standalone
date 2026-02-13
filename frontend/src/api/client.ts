@@ -16,8 +16,6 @@ export async function getJSON<T>(path: string, init?: RequestInit): Promise<T | 
       throw new Error(`Failed to fetch ${path}: ${res.status}`);
     }
     
-    // Check content type and peek at response to detect HTML (404 pages)
-    const contentType = res.headers.get('content-type') || '';
     const text = await res.text();
     
     // If it's HTML (likely a 404 page), return null
@@ -97,7 +95,6 @@ export type TickerProfile = {
 
 export async function fetchProfile(ticker: string) {
   const path = `/${ticker.toUpperCase()}/profile.json`;
-  const url = `${API_BASE}${path}`;
   try {
     return await getJSON<TickerProfile>(path);
   } catch (err) {
@@ -122,6 +119,7 @@ export type PeriodFinancials = {
   shares?: Record<string, number | null>;
   leverage?: Record<string, number | null>;
   derived?: Record<string, number | null>;
+  cash_flow_statement?: Record<string, number | null>;
   // Full statements (per-concept objects with label/value)
   full_income_statement?: Record<string, { label: string; concept: string; value: number | null; period?: string | null }>;
   full_cash_flow_statement?: Record<string, { label: string; concept: string; value: number | null; period?: string | null }>;
