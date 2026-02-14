@@ -16,6 +16,7 @@ export async function getJSON<T>(path: string, init?: RequestInit): Promise<T | 
       throw new Error(`Failed to fetch ${path}: ${res.status}`);
     }
     
+    // Peek at response to detect HTML (404 pages)
     const text = await res.text();
     
     // If it's HTML (likely a 404 page), return null
@@ -119,11 +120,11 @@ export type PeriodFinancials = {
   shares?: Record<string, number | null>;
   leverage?: Record<string, number | null>;
   derived?: Record<string, number | null>;
-  cash_flow_statement?: Record<string, number | null>;
   // Full statements (per-concept objects with label/value)
   full_income_statement?: Record<string, { label: string; concept: string; value: number | null; period?: string | null }>;
   full_cash_flow_statement?: Record<string, { label: string; concept: string; value: number | null; period?: string | null }>;
   full_balance_sheet?: Record<string, { label: string; concept: string; value: number | null; period?: string | null }>;
+  cash_flow_statement?: Record<string, number | null>;
   generated_at?: string;
 };
 

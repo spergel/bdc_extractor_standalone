@@ -1,19 +1,21 @@
 import { useState } from 'react';
 import { playClickSound } from '../utils/sounds';
 
+export type ViewMode = 'bdc' | 'companies' | 'sectors';
+
 type Props = {
-  mode: 'individual' | 'comparison';
-  onModeChange: (mode: 'individual' | 'comparison') => void;
+  viewMode: ViewMode;
+  onViewModeChange: (mode: ViewMode) => void;
 };
 
-export function AppHeader({ mode, onModeChange }: Props) {
+export function AppHeader({ viewMode, onViewModeChange }: Props) {
   const [collapsed, setCollapsed] = useState(false);
-  
-  const handleModeChange = (newMode: 'individual' | 'comparison') => {
+
+  const handleViewChange = (newMode: ViewMode) => {
     playClickSound();
-    onModeChange(newMode);
+    onViewModeChange(newMode);
   };
-  
+
   if (collapsed) {
     return (
       <header className="titlebar py-0.5">
@@ -27,7 +29,7 @@ export function AppHeader({ mode, onModeChange }: Props) {
       </header>
     );
   }
-  
+
   return (
     <header className="titlebar">
       <div className="flex flex-wrap items-center gap-3 sm:gap-4">
@@ -45,43 +47,28 @@ export function AppHeader({ mode, onModeChange }: Props) {
         </div>
         <div className="hidden sm:block h-4 w-px bg-white/30" />
         <div className="flex items-center gap-2 flex-wrap">
-          <button
-            onClick={() => handleModeChange('individual')}
-            className={`px-2 py-0.5 text-xs font-semibold ${
-              mode === 'individual'
-                ? 'bg-white text-[#000080]'
-                : 'bg-[#c0c0c0] text-black hover:bg-white/20'
-            }`}
-            style={{
-              border: mode === 'individual' ? '1px inset #c0c0c0' : '1px outset #c0c0c0',
-              borderTop: mode === 'individual' ? '1px solid #808080' : '1px solid #ffffff',
-              borderLeft: mode === 'individual' ? '1px solid #808080' : '1px solid #ffffff',
-              borderRight: mode === 'individual' ? '1px solid #ffffff' : '1px solid #808080',
-              borderBottom: mode === 'individual' ? '1px solid #ffffff' : '1px solid #808080',
-            }}
-          >
-            Individual
-          </button>
-          <button
-            onClick={() => handleModeChange('comparison')}
-            className={`px-2 py-0.5 text-xs font-semibold ${
-              mode === 'comparison'
-                ? 'bg-white text-[#000080]'
-                : 'bg-[#c0c0c0] text-black hover:bg-white/20'
-            }`}
-            style={{
-              border: mode === 'comparison' ? '1px inset #c0c0c0' : '1px outset #c0c0c0',
-              borderTop: mode === 'comparison' ? '1px solid #808080' : '1px solid #ffffff',
-              borderLeft: mode === 'comparison' ? '1px solid #808080' : '1px solid #ffffff',
-              borderRight: mode === 'comparison' ? '1px solid #ffffff' : '1px solid #808080',
-              borderBottom: mode === 'comparison' ? '1px solid #ffffff' : '1px solid #808080',
-            }}
-          >
-            Comparison
-          </button>
+          {(['bdc', 'companies', 'sectors'] as const).map((mode) => (
+            <button
+              key={mode}
+              onClick={() => handleViewChange(mode)}
+              className={`px-2 py-0.5 text-xs font-semibold ${
+                viewMode === mode
+                  ? 'bg-white text-[#000080]'
+                  : 'bg-[#c0c0c0] text-black hover:bg-white/20'
+              }`}
+              style={{
+                border: viewMode === mode ? '1px inset #c0c0c0' : '1px outset #c0c0c0',
+                borderTop: viewMode === mode ? '1px solid #808080' : '1px solid #ffffff',
+                borderLeft: viewMode === mode ? '1px solid #808080' : '1px solid #ffffff',
+                borderRight: viewMode === mode ? '1px solid #ffffff' : '1px solid #808080',
+                borderBottom: viewMode === mode ? '1px solid #ffffff' : '1px solid #808080',
+              }}
+            >
+              {mode === 'bdc' ? 'BDC' : mode === 'companies' ? 'Companies' : 'Sectors'}
+            </button>
+          ))}
         </div>
       </div>
     </header>
   );
 }
-

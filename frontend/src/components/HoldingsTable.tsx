@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState, useRef, memo, useTransition, useCallback, useDeferredValue } from 'react';
 import { createColumnHelper, flexRender, getCoreRowModel, getSortedRowModel, useReactTable } from '@tanstack/react-table';
 import type { SortingState } from '@tanstack/react-table';
-import type { Holding } from '../data/adapter';
+import type { Holding, CompanyProfile } from '../data/adapter';
+import { loadCompanyProfiles } from '../data/adapter';
 import { checkRedFlags, getMaturityDateStr } from '../utils/holdingsAnalytics';
 import { ExportBar } from './ExportBar';
 import { calculateCurrentYield } from '../utils/referenceRates';
@@ -12,6 +13,8 @@ import { useDebounce } from '../hooks/useDebounce';
 type Props = {
   data: Holding[];
   period?: string;
+  /** When set, company name is clickable and switches to Companies view with this company. */
+  onCompanyClick?: (companyId: string) => void;
 };
 
 const columnHelper = createColumnHelper<Holding>();
@@ -68,7 +71,7 @@ function decodeHtmlEntities(text: unknown): string {
 }
 
 // Memoize the component to prevent unnecessary re-renders
-function HoldingsTableComponent({ data, period }: Props) {
+function HoldingsTableComponent({ data, period, onCompanyClick }: Props) {
   const dataRef = useRef<number>(0);
   const searchInputRef = useRef<HTMLInputElement>(null);
   const [isPending, startTransition] = useTransition();
@@ -79,6 +82,10 @@ function HoldingsTableComponent({ data, period }: Props) {
   const [holdingsFilters, setHoldingsFilters] = useState<FilterState>(defaultFilterState);
   const [advancedFilters, setAdvancedFilters] = useState<AdvancedFilterState>(defaultAdvancedFilterState);
   const [showAdvancedSearch, setShowAdvancedSearch] = useState(false);
+  const [companyProfiles, setCompanyProfiles] = useState<Record<string, CompanyProfile>>({});
+  useEffect(() => {
+    loadCompanyProfiles().then(setCompanyProfiles);
+  }, []);
 
   // Debounced search
   const { displayValue: searchDisplay, debouncedValue: searchQuery, setDisplayValue: setSearchDisplay, flushNow: flushSearch, reset: resetSearch } = useDebounce('', 300);
@@ -205,7 +212,36 @@ function HoldingsTableComponent({ data, period }: Props) {
     () => [
       columnHelper.accessor('company_name', {
         header: 'Company',
-        cell: (c) => c.getValue() ?? '',
+        cell: (c) => {
+          const name = c.getValue() ?? '';
+          const row = c.row.original as any;
+          const companyId = row?.company_id as string | undefined;
+          const profile = companyId ? companyProfiles[companyId] : undefined;
+          const parts = [
+            profile?.description?.trim(),
+            profile?.leadership?.trim() && `Leadership: ${profile.leadership}`,
+            profile?.funding?.trim() && `Funding: ${profile.funding}`,
+            profile?.recent_news?.trim() && `Recent: ${profile.recent_news}`,
+          ].filter(Boolean) as string[];
+          const tooltip = parts.length > 0 ? parts.join('\n') : undefined;
+          if (onCompanyClick && companyId) {
+            return (
+              <button
+                type="button"
+                title={tooltip ? `${tooltip}\n\nClick to view company` : 'View company'}
+                className="text-left text-[#0000ff] hover:underline cursor-pointer w-full truncate"
+                onClick={() => onCompanyClick(companyId)}
+              >
+                {name}
+              </button>
+            );
+          }
+          return (
+            <span title={tooltip || undefined} className={tooltip ? 'cursor-help' : ''}>
+              {name}
+            </span>
+          );
+        },
         enableSorting: true,
         sortingFn: (rowA, rowB) => {
           const a = (rowA.original as any)._s_company;
@@ -371,7 +407,7 @@ function HoldingsTableComponent({ data, period }: Props) {
         enableSorting: false,
       }),
     ],
-    [period]
+    [period, companyProfiles, onCompanyClick]
   );
 
   const table = useReactTable({

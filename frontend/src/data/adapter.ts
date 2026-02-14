@@ -5,6 +5,7 @@ export type Holding = {
   // Core identification
   ticker?: string;
   filing_date?: string;
+  company_id?: string;
   company_name_clean?: string;
   loan_description?: string;
   
@@ -81,6 +82,7 @@ export type PortfolioSummary = {
 };
 
 export type CompanyExposure = {
+  company_id?: string;
   company_name: string;
   num_bdcs_invested: number;
   bdcs_invested: string;
@@ -89,6 +91,47 @@ export type CompanyExposure = {
   avg_interest_rate: number;
   most_common_investment_type: string;
 };
+
+/** Per-company breakdown: who they owe (BDCs), due-date buckets, investment types. From company_detail.json. */
+export type CompanyDetail = {
+  by_bdc: Record<string, number>;
+  by_maturity: Record<string, number>;
+  by_investment_type: Record<string, number>;
+};
+
+export type CompanyDetailPayload = {
+  generated_at: string;
+  detail: Record<string, CompanyDetail>;
+};
+
+export type CompanyIndexEntry = {
+  company_id: string;
+  canonical_name: string;
+  name_variants: string[];
+};
+
+export type CompaniesIndex = {
+  generated_at: string;
+  companies: CompanyIndexEntry[];
+};
+
+export type CompanyProfile = {
+  company_id: string;
+  canonical_name: string;
+  description?: string;
+  industry?: string;
+  website?: string;
+  location?: string;
+  employee_range?: string;
+  leadership?: string;
+  funding?: string;
+  recent_news?: string;
+  source?: string;
+  updated_at?: string;
+};
+
+/** Holding plus its company profile when available. Use enrichHoldingsWithProfiles to build. */
+export type HoldingWithProfile = Holding & { profile?: CompanyProfile };
 
 export type IndustrySummary = {
   industry: string;
@@ -144,9 +187,60 @@ export async function loadPortfolioSummaries(): Promise<PortfolioSummary[]> {
   return loadCsv<PortfolioSummary>('/data/portfolio_summaries.csv');
 }
 
-// Load company exposures
+// Load company exposures (keyed by company_id when available)
 export async function loadCompanyExposures(): Promise<CompanyExposure[]> {
   return loadCsv<CompanyExposure>('/data/company_exposures.csv');
+}
+
+// Load companies index (company_id -> canonical_name, name_variants)
+export async function loadCompaniesIndex(): Promise<CompaniesIndex> {
+  const res = await fetch('/data/companies_index.json');
+  if (!res.ok) {
+    return { generated_at: '', companies: [] };
+  }
+  return res.json();
+}
+
+// Load company profiles (company_id -> profile with description, etc.)
+export async function loadCompanyProfiles(): Promise<Record<string, CompanyProfile>> {
+  const res = await fetch('/data/company_profiles.json');
+  if (!res.ok) {
+    return {};
+  }
+  const data = await res.json();
+  const raw = data?.profiles;
+  if (typeof raw === 'object' && raw !== null) {
+    return raw as Record<string, CompanyProfile>;
+  }
+  if (Array.isArray(raw)) {
+    return (raw as CompanyProfile[]).reduce<Record<string, CompanyProfile>>((acc, p) => {
+      if (p?.company_id) acc[p.company_id] = p;
+      return acc;
+    }, {});
+  }
+  return {};
+}
+
+// Load company detail (per-BDC exposure, maturity buckets, investment type). Optional artifact.
+export async function loadCompanyDetail(): Promise<Record<string, CompanyDetail>> {
+  const res = await fetch('/data/company_detail.json');
+  if (!res.ok) return {};
+  const data = (await res.json()) as CompanyDetailPayload;
+  return data?.detail ?? {};
+}
+
+/**
+ * Attach company profile to each holding by company_id. Use this so components
+ * get a single "holdings with profile" list; profile is undefined when missing.
+ */
+export function enrichHoldingsWithProfiles(
+  holdings: Holding[],
+  profiles: Record<string, CompanyProfile>
+): HoldingWithProfile[] {
+  return holdings.map((h) => ({
+    ...h,
+    profile: h.company_id ? profiles[h.company_id] : undefined,
+  }));
 }
 
 // Load industry summaries
@@ -197,6 +291,7 @@ function normalizeHolding(row: any): Holding {
   return {
     ticker: row.ticker || undefined,
     filing_date: row.filing_date || undefined,
+    company_id: row.company_id || undefined,
     company_name_clean: row.company_name_clean || row.company_name || undefined,
     loan_description: row.loan_description || undefined,
     

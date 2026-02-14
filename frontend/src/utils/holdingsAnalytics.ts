@@ -440,7 +440,7 @@ export function getTopHoldings(holdings: Holding[], limit: number = 10): TopHold
   
   return holdings
     .map(h => ({
-      company_name: h.company_name_clean || h.company_name || '',
+      company_name: (h.company_name_clean ?? h.company_name) ?? '',
       investment_type: getInvType(h),
       industry: getIndustry(h),
       fair_value: getFV(h),

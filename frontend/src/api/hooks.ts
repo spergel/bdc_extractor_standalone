@@ -1,5 +1,6 @@
 import { useQuery, useQueries } from '@tanstack/react-query';
 import { fetchIndex, fetchPeriods, fetchPeriodSnapshot, fetchProfile, fetchFinancials } from './client-csv';
+import { loadCompanyExposures, loadCompanyProfiles, loadCompanyDetail } from '../data/adapter';
 
 export function useBDCIndex() {
   return useQuery({
@@ -82,4 +83,29 @@ export function useBDCInvestmentsMultiple(ticker: string | undefined, periods: s
     isLoading: queries[idx]?.isLoading ?? false,
     error: queries[idx]?.error ?? null,
   }));
+}
+
+export function useCompanyExposures() {
+  return useQuery({
+    queryKey: ['company-exposures'],
+    queryFn: loadCompanyExposures,
+    staleTime: 24 * 60 * 60 * 1000,
+  });
+}
+
+export function useCompanyProfiles() {
+  return useQuery({
+    queryKey: ['company-profiles'],
+    queryFn: loadCompanyProfiles,
+    staleTime: 24 * 60 * 60 * 1000,
+  });
+}
+
+export function useCompanyDetail() {
+  return useQuery({
+    queryKey: ['company-detail'],
+    queryFn: loadCompanyDetail,
+    staleTime: 24 * 60 * 60 * 1000,
+    retry: 0,
+  });
 }

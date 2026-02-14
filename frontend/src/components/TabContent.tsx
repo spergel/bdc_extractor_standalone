@@ -4,6 +4,7 @@ import { FinancialsPanel } from './FinancialsPanel';
 import { HoldingsTable } from './HoldingsTable';
 import { SimpleAnalyticsPanel } from './SimpleAnalyticsPanel';
 import { AnalyticsPanel } from './AnalyticsPanel';
+import { BDCSectorView } from './BDCSectorView';
 import { DiffViewer } from './DiffViewer';
 import { DisclosurePanel } from './DisclosurePanel';
 import { getPreviousQuarter, getYearOverYear, getYearEndComparison, getComparisonLabel, formatPeriodLabel } from '../utils/periodComparisons';
@@ -29,6 +30,7 @@ type TabContentProps = {
   onFinRangeChange: (range: 'quarters' | 'years') => void;
   onDiffSelection: (before: string | undefined, after: string | undefined, source: string) => void;
   onUserDiffSelection: () => void;
+  onCompanyClick?: (companyId: string) => void;
 };
 
 const ANALYTICS_VIEW_KEY = 'bdc_analytics_view';
@@ -122,6 +124,7 @@ export function TabContent({
   onFinRangeChange,
   onDiffSelection,
   onUserDiffSelection,
+  onCompanyClick,
 }: TabContentProps) {
   const tabs = [
     {
@@ -236,7 +239,7 @@ export function TabContent({
             ) : isLoadingInvestments ? (
               <div className="text-xs text-[#808080] p-4">Loading holdings...</div>
             ) : snapshot && investments.length > 0 ? (
-              <HoldingsTable key={`${ticker ?? 'none'}-${selectedPeriod ?? 'none'}`} data={investments as any} period={selectedPeriod} />
+              <HoldingsTable key={`${ticker ?? 'none'}-${selectedPeriod ?? 'none'}`} data={investments as any} period={selectedPeriod} onCompanyClick={onCompanyClick} />
             ) : snapshot && investments.length === 0 ? (
               <div className="window p-4">
                 <div className="text-sm text-[#808080]">No holdings data available for this period</div>
@@ -274,6 +277,52 @@ export function TabContent({
       ) : (
         <div className="window p-4">
           <div className="text-xs text-[#808080]">Select a BDC to view analytics</div>
+        </div>
+      ),
+    },
+    {
+      id: 'sectors',
+      label: 'Sectors',
+      content: ticker ? (
+        snapshot && investments.length > 0 ? (
+          <div className="flex flex-col h-full min-h-0 overflow-hidden">
+            <div className="mb-2 flex items-center gap-2 flex-wrap flex-shrink-0">
+              <div className="flex items-center gap-2 text-xs text-[#808080]">
+                <span>Period:</span>
+                <select
+                  className="input text-xs"
+                  value={selectedPeriod ?? ''}
+                  onChange={(e) => onPeriodChange(e.target.value)}
+                  disabled={!periods || !periods.length}
+                >
+                  {periods?.map((p) => (
+                    <option key={p} value={p}>{formatPeriodLabel(p)}</option>
+                  ))}
+                </select>
+              </div>
+            </div>
+            <div className="flex-1 min-h-0 overflow-hidden">
+              <BDCSectorView
+                holdings={investments as any}
+                period={selectedPeriod}
+                ticker={ticker}
+                onCompanyClick={onCompanyClick}
+              />
+            </div>
+          </div>
+        ) : isLoadingInvestments ? (
+          <div className="window p-4">
+            <div className="text-xs text-[#808080]">Loading holdings...</div>
+          </div>
+        ) : (
+          <div className="window p-4">
+            <div className="text-sm text-[#808080]">No holdings data for this period</div>
+            <div className="text-xs text-[#808080] mt-1">Select a period with holdings in the Holdings tab.</div>
+          </div>
+        )
+      ) : (
+        <div className="window p-4">
+          <div className="text-xs text-[#808080]">Select a BDC to view sectors</div>
         </div>
       ),
     },
