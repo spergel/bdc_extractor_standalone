@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { useCompanyExposures, useCompanyProfiles, useCompanyDetail } from '../api/hooks';
 import type { CompanyExposure, CompanyDetail } from '../data/adapter';
 import { playClickSound } from '../utils/sounds';
-import { formatMillionsAsCurrency, CURRENCY_M_LABEL } from '../utils/formatCurrency';
+import { formatMillionsAsCurrency } from '../utils/formatCurrency';
 
 type Props = {
   companyId: string | undefined;

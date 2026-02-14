@@ -13,7 +13,7 @@ type Props = {
   onCompanyClick?: (companyId: string) => void;
 };
 
-export function BDCSectorView({ holdings, period, ticker, onCompanyClick }: Props) {
+export function BDCSectorView({ holdings, period, onCompanyClick }: Props) {
   const sectors = useMemo(() => getIndustryDistribution(holdings), [holdings]);
   const [selectedSector, setSelectedSector] = useState<string | null>(null);
 
