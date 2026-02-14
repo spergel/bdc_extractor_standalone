@@ -190,36 +190,112 @@ def clean_spread(spread: str) -> str:
 
 # ===== COMPANY NAME CLEANING =====
 
+# Trailing rate/date junk in company names: "KLO Intermediate Holdings LLC L+775 1.50% LIBOR Floor 4/7/2022" → "KLO Intermediate Holdings LLC"
+_COMPANY_RATE_DATE_SUFFIX = re.compile(
+    r"\s+(?:L\+[\d.]+\s+)?[\d.]+\s*%\s*(?:LIBOR|SOFR|Prime|Base\s+Rate)?\s*Floor?\s*\d{1,2}/\d{1,2}/\d{2,4}\s*$",
+    re.IGNORECASE
+)
+# Also strip trailing " L+number" or " L+number %" without full date
+_COMPANY_RATE_ONLY_SUFFIX = re.compile(
+    r"\s+L\+[\d.]+\s*(?:[\d.]+\s*%)?\s*(?:LIBOR|SOFR|Prime)?\s*Floor?\s*$",
+    re.IGNORECASE
+)
+
+# Instrument/position suffixes to strip so "Company - Revolver" and "Company - Delayed Draw" → same company
+_COMPANY_INSTRUMENT_SUFFIXES = re.compile(
+    r'\s*-\s*('
+    r'Delayed\s+Draw|Revolver|'
+    r'Term\s+Loan|First\s+Lien|Second\s+Lien|'
+    r'Class\s+[A-Z0-9\-]+\s+(?:Common\s+)?Units?|'
+    r'[A-Z0-9\-]+\s+Units?|'
+    r'Blocker\s+Units?|Blocker\s+Note|'
+    r'LLC\s+Units?|'
+    r'Preferred\s+(?:Equity\s+)?(?:Units?|Shares?)|'
+    r'Common\s+(?:Equity\s+)?(?:Units?|Shares?)|'
+    r'Member\s+Interest[s]?|'
+    r'Subordinated\s+Note[s]?|'
+    r'Unit[s]?|Note[s]?|Warrant[s]?'
+    r')\s*$',
+    re.IGNORECASE
+)
+
+
+def _strip_rate_date_suffix(name: str) -> str:
+    """Remove trailing rate/date text e.g. ' L+775 1.50% LIBOR Floor 4/7/2022' so same company merges."""
+    if not name:
+        return name
+    prev = None
+    while prev != name:
+        prev = name
+        name = _COMPANY_RATE_DATE_SUFFIX.sub("", name).strip()
+        name = _COMPANY_RATE_ONLY_SUFFIX.sub("", name).strip()
+    return name
+
+
+def _strip_instrument_suffix(name: str) -> str:
+    """Remove trailing ' - Instrument/position type' so different tranches resolve to one company."""
+    if not name or ' - ' not in name:
+        return name
+    # Strip known instrument suffixes (may need multiple passes if multiple " - " exist)
+    prev = None
+    while prev != name and _COMPANY_INSTRUMENT_SUFFIXES.search(name):
+        prev = name
+        name = _COMPANY_INSTRUMENT_SUFFIXES.sub('', name).strip()
+    # Also strip generic " - Something" when Something looks like a security (ends with Units, Note, etc.)
+    if ' - ' in name:
+        before, after = name.rsplit(' - ', 1)
+        after = after.strip()
+        if re.search(r'\b(?:units?|notes?|warrants?|shares?|class\s+[a-z0-9\-]+)\s*$', after, re.I):
+            name = before.strip()
+    return name
+
+
 def clean_company_name(company_name: str) -> str:
-    """Normalize company name legal suffixes."""
+    """Normalize company name: strip instrument/position suffixes, then legal entity suffixes."""
     if not company_name or company_name.strip() == '':
         return ''
-    
+
     name = company_name.strip()
     name = ' '.join(name.split())
-    
+
+    # Strip trailing rate/date e.g. "KLO Intermediate Holdings LLC L+775 1.50% LIBOR Floor 4/7/2022"
+    name = _strip_rate_date_suffix(name)
+
+    # Strip instrument/position suffix so "Zeus Fire & Security - Delayed Draw" → "Zeus Fire & Security"
+    name = _strip_instrument_suffix(name)
+
+    # Normalize parenthetical: "Rocaceia LLC (Quality Lease and Rental Holdings LLC)" → "Rocaceia LLC"
+    if '(' in name and ')' in name:
+        name = re.sub(r'\s*\([^)]+\)\s*$', '', name).strip()
+
     # Normalize LLC variations
     name = re.sub(r'\bL\.?\s*L\.?\s*C\.?\b', 'LLC', name, flags=re.IGNORECASE)
-    
+
     # Normalize Inc variations
     name = re.sub(r'\bIncorporated\b', 'Inc.', name, flags=re.IGNORECASE)
     name = re.sub(r'\bInc(?!\.)(?=\s|$)', 'Inc.', name, flags=re.IGNORECASE)
-    
+
     # Normalize Corp variations
     name = re.sub(r'\bCorporation\b', 'Corp.', name, flags=re.IGNORECASE)
     name = re.sub(r'\bCorp(?!\.)(?=\s|$)', 'Corp.', name, flags=re.IGNORECASE)
-    
+
     # Normalize LP variations
     name = re.sub(r'\bLimited\s+Partnership\b', 'LP', name, flags=re.IGNORECASE)
     name = re.sub(r'\bL\.?\s*P\.?\b', 'LP', name, flags=re.IGNORECASE)
-    
+
     # Normalize Ltd variations
     name = re.sub(r'\bLimited(?=\s*$)', 'Ltd.', name, flags=re.IGNORECASE)
     name = re.sub(r'\bLtd(?!\.)(?=\s|$)', 'Ltd.', name, flags=re.IGNORECASE)
-    
+
     # Fix case for common suffixes
     name = re.sub(r'\bllc\b', 'LLC', name)
     name = re.sub(r'\blp\b', 'LP', name)
-    
+
+    # Truncate anything after the legal entity so "ACS Holdings LLC Class A-1 Membership Units" → "ACS Holdings LLC"
+    # Also "Accenture plc Class A" → "Accenture plc". (same company_id; full string can stay on row for display.)
+    m = re.match(r'^(.*\b(?:LLC|Inc\.|Corp\.|LP|Ltd\.|plc))(\s+.+)$', name, re.IGNORECASE)
+    if m:
+        name = m.group(1).strip()
+
     name = ' '.join(name.split())
     return name

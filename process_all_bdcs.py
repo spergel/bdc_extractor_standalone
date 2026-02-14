@@ -41,6 +41,8 @@ def main():
     parser.add_argument('--skip-investments', action='store_true', help='Skip investment table extraction')
     parser.add_argument('--skip-financials', action='store_true', help='Skip financial statement extraction')
     parser.add_argument('--skip-consolidation', action='store_true', help='Skip consolidation step')
+    parser.add_argument('--skip-company-resolution', action='store_true', help='Skip company ID resolution step')
+    parser.add_argument('--skip-profiles', action='store_true', help='Skip company profile build step')
     parser.add_argument('--force', action='store_true', help='Re-process filings even if output CSV already exists')
     
     args = parser.parse_args()
@@ -60,8 +62,7 @@ def main():
             cmd = [
                 "python", "src/extraction/llm_table_scraper.py",
                 "--ticker", ticker,
-                "--years-back", str(args.years_back),
-                "--llm-provider", "gemini"
+                "--years-back", str(args.years_back)
             ]
             if args.force:
                 cmd.append("--force")
@@ -96,6 +97,20 @@ def main():
         run_command([
             "python", "src/consolidation/consolidate_investments.py"
         ])
+        
+        # Company resolution (fuzzy IDs for portfolio companies across BDCs)
+        if not args.skip_company_resolution:
+            logger.info("Resolving company names to stable IDs...")
+            run_command([
+                "python", "src/company_resolution/resolve_companies.py"
+            ])
+            # Build company profiles (skeleton or LLM-enriched; set OPENAI_API_KEY for descriptions)
+            if not args.skip_profiles:
+                logger.info("Building company profiles...")
+                run_command([
+                    "python", "src/company_resolution/build_profiles.py",
+                    "--no-llm"  # Use --refresh and omit --no-llm if OPENAI_API_KEY is set
+                ])
         
         # Financial statements consolidation
         run_command([

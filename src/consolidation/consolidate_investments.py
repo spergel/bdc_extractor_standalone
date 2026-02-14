@@ -1,26 +1,30 @@
 #!/usr/bin/env python3
 """
 Consolidate individual investment CSV files into per-ticker files for the frontend.
+Also writes investments_index.json so the frontend can discover tickers and periods.
 """
 
-import os
 import csv
+import json
 import logging
 import argparse
 from pathlib import Path
-from typing import List, Dict, Set
+from typing import List, Dict, Set, Optional
 from collections import defaultdict
+from datetime import datetime, timezone
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-def consolidate_investments(output_dir: str = "frontend/public/data/investments"):
+def consolidate_investments(output_dir: str = "frontend/public/data/investments", source_dir: Optional[Path] = None):
     """
     Consolidate all *_investments_*.csv files from output/ into per-ticker files.
     """
     output_path = Path(output_dir)
-    source_dir = Path("output")
+    if source_dir is None:
+        _repo_root = Path(__file__).resolve().parent.parent.parent
+        source_dir = _repo_root / "output"
     
     # Get all investment CSVs
     investment_files = list(source_dir.glob("*_investments_*.csv"))
@@ -114,7 +118,53 @@ def consolidate_investments(output_dir: str = "frontend/public/data/investments"
 
             logger.info(f"Wrote {len(period_rows)} period files to {ticker_dir}")
 
+    # Write investments_index.json so the frontend can list tickers and periods
+    _write_investments_index(output_path)
+
     logger.info("Successfully consolidated investments by ticker.")
+
+
+def _write_investments_index(investments_dir: Path) -> None:
+    """Scan investments_dir for TICKER/period.csv and write investments_index.json in the parent (data) dir."""
+    index_path = investments_dir.parent / "investments_index.json"
+    tickers: Dict[str, Dict] = {}
+    total_rows = 0
+
+    for ticker_dir in sorted(investments_dir.iterdir()):
+        if not ticker_dir.is_dir():
+            continue
+        ticker = ticker_dir.name
+        period_files = sorted(f.stem for f in ticker_dir.glob("*.csv") if not f.stem.endswith(".BEFORE"))
+        if not period_files:
+            continue
+        periods = [p for p in period_files if p.replace("-", "").isdigit() or (len(p) == 10 and p[4] == "-" and p[7] == "-")]
+        if not periods:
+            periods = period_files
+        row_count = 0
+        size_bytes = 0
+        for period in periods:
+            p_path = ticker_dir / f"{period}.csv"
+            if p_path.exists():
+                with open(p_path, "r", encoding="utf-8") as f:
+                    row_count += sum(1 for _ in f) - 1  # subtract header
+                size_bytes += p_path.stat().st_size
+        total_rows += row_count
+        tickers[ticker] = {
+            "periods": periods,
+            "latest": periods[-1] if periods else None,
+            "row_count": row_count,
+            "file_size_mb": round(size_bytes / (1024 * 1024), 2),
+        }
+
+    payload = {
+        "generated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        "total_tickers": len(tickers),
+        "total_rows": total_rows,
+        "tickers": tickers,
+    }
+    with open(index_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2)
+    logger.info(f"Wrote {index_path} with {len(tickers)} tickers.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Consolidate investment CSVs by ticker")

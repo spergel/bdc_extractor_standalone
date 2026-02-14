@@ -34,9 +34,11 @@ ENV/
 *.swp
 *.swo
 
-# Scraper output (raw extraction results)
+# Scraper output and cache (raw extraction results, SEC download cache)
+/data/
 output/
 debug_tables/
+src/extraction/debug_tables/
 
 # Large consolidated CSV files (can be regenerated)
 frontend/public/data/balance_sheets.csv
@@ -50,3 +52,4 @@ logs/
 # OS
 .DS_Store
 Thumbs.db
+nul

@@ -41,8 +41,12 @@ except ImportError:
 from sec_api_client import SECAPIClient
 
 # Import modular components
-from table_detection import is_year_end_table, InvestmentTableDetector
 from data_cleaning import deduplicate_csv_rows, filter_equity_types, filter_llm_artifact_rows, remove_empty_header_rows
+from table_detection import (
+    fallback_table_detection,
+    is_year_end_table,
+    select_current_quarter_tables,
+)
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -111,9 +115,6 @@ class LLMTableScraper:
 
         # Initialize SEC client
         self.sec_client = SECAPIClient(data_dir=str(self.data_dir))
-        
-        # Initialize table detector
-        self.table_detector = InvestmentTableDetector(self.sec_client)
 
         # Investment-related keywords to identify relevant tables
         self.investment_keywords = [
@@ -194,24 +195,14 @@ class LLMTableScraper:
                            context_before: str = "", filing_type: str = "10-Q", 
                            period_end_date: str = None) -> bool:
         """
-        SIMPLIFIED: Check if table is from a DIFFERENT period than the filing's period end date.
-        
-        For a Q2 2025 filing (period end June 30, 2025):
-        - Tables with "June 30, 2025" in header = KEEP (current period)
-        - Tables with "December 31, 2024" in header = SKIP (prior year-end)
-        
-        For a 10-K filing (year-end), we WANT the year-end data, so this returns False.
+        Check if this table is ONLY prior year-end (so we should skip it).
+        We want ONLY current quarter's holdings; filings often have two blocks:
+        (1) current quarter tables, (2) prior year-end comparative tables.
+        Return True only when we're sure this table is in block (2).
 
-        Args:
-            table_html: HTML of the table
-            table_text: Text content of the table
-            filing_date: Filing date (YYYY-MM-DD) 
-            context_before: Optional text from preceding elements
-            filing_type: Type of filing (10-Q, 10-K, etc.)
-            period_end_date: The actual period end date (e.g., "2025-06-30" for Q2)
-
-        Returns:
-            True if this table is from a DIFFERENT period and should be filtered
+        - If the table mentions the CURRENT PERIOD date anywhere → KEEP (return False).
+        - If it only has December 31 of a PRIOR year (no current period) → SKIP (return True).
+        - 10-K: we want year-end data, so never skip (return False).
         """
         # For 10-K filings, we WANT year-end data - don't filter anything
         if filing_type == "10-K":
@@ -228,69 +219,58 @@ class LLMTableScraper:
                 period_month = period_dt.month
                 period_day = period_dt.day
             else:
-                # Fallback: use filing date
                 filing_dt = datetime.strptime(filing_date, '%Y-%m-%d')
                 period_year = filing_dt.year
-                period_month = filing_dt.month  
+                period_month = filing_dt.month
                 period_day = filing_dt.day
 
             # Combine table content with context (header often has the date)
             text_lower = (table_text + ' ' + (context_before or "")).lower()
             html_lower = table_html.lower()
             combined_text = text_lower + ' ' + html_lower
-            
-            # Normalize special characters
             combined_text = re.sub(r'[\xa0\u2013\u2014\u00a0]', ' ', combined_text)
 
-            # Extract all dates from the table header/first 800 chars (covers headers + first few rows)
-            header_text = combined_text[:800]
-            
-            # Look for month names (September, June, December, etc.)
+            # Use a LARGE window so we see both current and prior-year dates in comparative tables.
+            # Q4 tables often have "December 31, 2025" and "December 31, 2024" - we must keep them.
+            search_text = combined_text[:2500]
+
             month_names = {
                 1: 'january', 2: 'february', 3: 'march', 4: 'april',
                 5: 'may', 6: 'june', 7: 'july', 8: 'august',
                 9: 'september', 10: 'october', 11: 'november', 12: 'december'
             }
-            
             period_month_name = month_names.get(period_month, '')
-            
-            # Check if table header has the CURRENT PERIOD date
+
+            # 1) CURRENT PERIOD: if we see the filing's period date anywhere, this is current-quarter → KEEP
             current_period_patterns = [
-                f'{period_month_name}\\s+{period_day}[,\\s]+{period_year}',
-                f'{period_month_name[:3]}[\\.]?\\s+{period_day}[,\\s]+{period_year}',
-                f'{period_month}/{period_day}/{period_year}',
-                f'{period_month:02d}/{period_day:02d}/{period_year}',
-                f'{period_year}-{period_month:02d}-{period_day:02d}',
+                rf'{re.escape(period_month_name)}\s+{period_day}[,\s]+{period_year}',
+                rf'{period_month_name[:3]}[.]?\s+{period_day}[,\s]+{period_year}',
+                rf'\b{period_month}/{period_day}/{period_year}\b',
+                rf'\b{period_month:02d}/{period_day:02d}/{period_year}\b',
+                rf'\b{period_year}-{period_month:02d}-{period_day:02d}\b',
+                rf'as\s+of\s+{re.escape(period_month_name)}\s+{period_day}[,\s]+{period_year}',
+                rf'at\s+{re.escape(period_month_name)}\s+{period_day}[,\s]+{period_year}',
             ]
-            
-            has_current_period = False
             for pattern in current_period_patterns:
-                if re.search(pattern, header_text, re.I):
-                    has_current_period = True
-                    break
-            
-            # If table has current period date, it's NOT year-end
-            if has_current_period:
-                return False
-            
-            # Check for December 31 of ANY prior year
-            # This is the hallmark of year-end comparative tables
-            dec31_match = re.search(r'(?:december|dec\.?)\\s+31[,\\s]+(\\d{4})', header_text, re.I)
+                if re.search(pattern, search_text, re.I):
+                    return False  # current period → keep
+
+            # 2) PRIOR YEAR-END: only skip if we see Dec 31 of a prior year AND we did not see current period above
+            dec31_match = re.search(r'(?:december|dec\.?)\s+31[,\s]+(\d{4})', search_text, re.I)
             if dec31_match:
                 year_in_table = int(dec31_match.group(1))
                 if year_in_table < period_year:
-                    logger.info(f"Detected year-end table: December 31, {year_in_table}")
+                    logger.info(f"Detected prior year-end table: December 31, {year_in_table} (no current period date in table)")
                     return True
-            
-            # Numeric format: 12/31/YYYY
-            dec31_numeric = re.search(r'\b12[/-]31[/-](\\d{4})\b', header_text)
+
+            dec31_numeric = re.search(r'\b12[/-]31[/-](\d{4})\b', search_text)
             if dec31_numeric:
                 year_in_table = int(dec31_numeric.group(1))
                 if year_in_table < period_year:
-                    logger.info(f"Detected year-end table: 12/31/{year_in_table}")
+                    logger.info(f"Detected prior year-end table: 12/31/{year_in_table} (no current period date in table)")
                     return True
-            
-            # Default: if no clear date match, assume it's current period
+
+            # Unclear → keep (don't skip)
             return False
 
         except Exception as e:
@@ -367,16 +347,15 @@ class LLMTableScraper:
     def find_investment_schedule_tables(self, tables: List[Tuple[str, str, int, str]],
                                        filing_result: Any, filing_type: str = "10-Q",
                                        period_end_date: str = None) -> List[Tuple[str, str, int, str]]:
-        """Delegate to InvestmentTableDetector."""
-        return self.table_detector.find_investment_schedule_tables(
+        """Find tables under Schedule of Investments headers; fallback to content-based detection."""
+        return self._find_investment_schedule_tables_impl(
             tables, filing_result, filing_type, period_end_date
         )
     
-    def _OLD_find_investment_schedule_tables_DEPRECATED(self, tables: List[Tuple[str, str, int, str]],
+    def _find_investment_schedule_tables_impl(self, tables: List[Tuple[str, str, int, str]],
                                        filing_result: Any, filing_type: str = "10-Q",
                                        period_end_date: str = None) -> List[Tuple[str, str, int, str]]:
         """
-        OLD IMPLEMENTATION - NOW IN table_detection/detector.py
         Find tables that are directly under "Schedule of Investments" headers.
         Uses HTML structure to find tables that appear after schedule headers.
         Checks ALL HTML documents (main + exhibits) to avoid missing tables.
@@ -1184,6 +1163,10 @@ INSTRUCTIONS:
 6. Output pure CSV data only - start with the header row, then data rows
 7. If industry or investment_type appears in header rows above the data, apply it to all rows below until a new category appears
 
+FILL-DOWN RULES (critical for multi-row positions):
+- DO fill down company_name and industry (and investment_type when from a section header): When the source table has a blank cell in the company/sector column for a continuation row (same issuer, multiple tranches or lines), copy the value from the row above so every output row has a company name and industry.
+- DO NOT fill down rates or numbers: cash_rate, pik_rate, reference_rate, spread, principal_amount, amortized_cost, fair_value, cost, percent_of_net_assets, dates, commitment_limit, undrawn_commitment must come ONLY from that row in the source table. If the source cell is blank or the value is for a different tranche, leave the field blank or use only the value that appears in that row. Never copy a rate or numeric value from a previous row into the current row.
+
 CRITICAL FORMATTING REQUIREMENTS:
 - Every row MUST have exactly 16 comma-separated values - NO MORE, NO LESS
 - Do NOT add extra columns or values
@@ -1737,7 +1720,9 @@ XYZ Corp,Common Equity,Software,,,N/A,N/A,2022-06-01,,,1000,1200,0.6,1000,,
                       index_url: Optional[str] = None,
                       max_tables: Optional[int] = None,
                       workers: Optional[int] = None,
-                      debt_only: bool = False) -> Optional[str]:
+                      debt_only: bool = False,
+                      detect_only: bool = False,
+                      detect_to_file: Optional[str] = None) -> Optional[str]:
         """
         Process a single SEC filing to extract investment tables.
 
@@ -1748,6 +1733,12 @@ XYZ Corp,Common Equity,Software,,,N/A,N/A,2022-06-01,,,1000,1200,0.6,1000,,
             quarter: Quarter for 10-Q filings (Q1, Q2, Q3, Q4)
             index_url: Optional specific index URL to process
             debt_only: If True, filter out equity investments (Common/Preferred Equity, Warrants)
+            detect_only: If True, run detection only (no LLM calls, no CSV output);
+                         logs which tables are selected as current-quarter.
+            detect_to_file: If set, run detection only and write selected table texts to a
+                         single file with LLM-friendly structure (file header + [TABLE N] blocks
+                         with table_id, table_num, length, then content). Use "" for default path
+                         (output_dir/{ticker}_detect_{filing_date}.txt), or a path string.
 
         Returns:
             Path to generated CSV file, or None if no data extracted
@@ -1812,11 +1803,11 @@ XYZ Corp,Common Equity,Software,,,N/A,N/A,2022-06-01,,,1000,1200,0.6,1000,,
                 logger.warning("No period end date available, using filing date as fallback")
             
             # Use the SIMPLE filtering method (avoids duplicate matching issues from HTML re-scanning)
-            investment_tables = self.table_detector.filter_investment_tables_simple(
-                tables, 
+            investment_tables = fallback_table_detection(
+                tables,
                 filing_result.filing_date,
                 filing_type,
-                period_end_date
+                period_end_date,
             )
 
             if not investment_tables:
@@ -1872,39 +1863,57 @@ XYZ Corp,Common Equity,Software,,,N/A,N/A,2022-06-01,,,1000,1200,0.6,1000,,
                 tables_to_process = tables_to_process[:max_tables_to_process]
                 logger.info(f"Limiting to {max_tables_to_process} tables for trial run")
 
-            logger.info(f"Found {len(tables_to_process)} investment schedule tables, scanning for year-end transition...")
-            
-            # NEW STRATEGY: Scan tables in order and find where year-end tables START
-            # Once we hit year-end, STOP - everything after is also year-end
-            # This is more efficient and matches the structure of SEC filings
-            current_quarter_tables = []
-            year_end_transition_found = False
-            
-            if filing_type == "10-Q":
-                for i, (html, text, num, table_id) in enumerate(tables_to_process):
-                    # Check if this is a year-end table
-                    if self._is_year_end_table(html, text, filing_result.filing_date, "", filing_type, period_end_date):
-                        logger.info(f"🛑 Year-end transition detected at table {num} ({table_id})")
-                        logger.info(f"   Stopping here - all remaining {len(tables_to_process) - i} tables are year-end")
-                        year_end_transition_found = True
-                        break
-                    else:
-                        # This is a current quarter table
-                        current_quarter_tables.append((html, text, num, table_id))
-                
-                if not year_end_transition_found:
-                    logger.info("✅ No year-end transition detected - all tables are current period")
-                else:
-                    logger.info(f"✅ Identified {len(current_quarter_tables)} current quarter tables (before year-end)")
-            else:
-                # For 10-K filings, process all tables (we WANT year-end data)
-                current_quarter_tables = tables_to_process
-                logger.info(f"10-K filing: processing all {len(current_quarter_tables)} tables")
-            
-            if not current_quarter_tables:
-                logger.warning("No current quarter tables found. Using all tables as fallback.")
-                current_quarter_tables = tables_to_process
-            
+            logger.info(
+                f"Found {len(tables_to_process)} investment schedule tables, "
+                "scanning for year-end transition..."
+            )
+
+            current_quarter_tables, _ = select_current_quarter_tables(
+                tables_to_process,
+                filing_result.filing_date,
+                filing_type,
+                period_end_date,
+            )
+
+            # If we're only debugging detection (or writing detect-to-file), log and optionally write, then stop
+            if detect_only or detect_to_file is not None:
+                logger.info("DETECT-ONLY mode: selected %d current-quarter tables", len(current_quarter_tables))
+                for html, text, num, table_id in current_quarter_tables:
+                    text_len = len(text)
+                    snippet = text[:160].replace("\n", " ").replace("\r", " ")
+                    logger.info(
+                        "  [DETECT-ONLY] table_num=%s id=%s len=%s snippet=%r",
+                        num,
+                        table_id,
+                        text_len,
+                        snippet,
+                    )
+                if detect_to_file is not None:
+                    out_path = (
+                        Path(detect_to_file)
+                        if detect_to_file
+                        else self.output_dir / f"{ticker}_detect_{filing_result.filing_date}.txt"
+                    )
+                    out_path.parent.mkdir(parents=True, exist_ok=True)
+                    period_end = getattr(filing_result, "period_end_date", None) or ""
+                    lines = [
+                        f"# ticker={ticker} filing_type={filing_type} filing_date={filing_result.filing_date} period_end={period_end} num_tables={len(current_quarter_tables)}",
+                        "",
+                    ]
+                    for idx, (_, text, table_num, table_id) in enumerate(current_quarter_tables, 1):
+                        lines.append(f"[TABLE {idx}]")
+                        lines.append(f"table_id={table_id}")
+                        lines.append(f"table_num={table_num}")
+                        lines.append(f"length={len(text)}")
+                        lines.append("")
+                        lines.append(text.strip())
+                        lines.append("")
+                    out_path.write_text("\n".join(lines), encoding="utf-8")
+                    logger.info("Wrote %d table(s) to %s (structured for LLM)", len(current_quarter_tables), out_path)
+                    return str(out_path)
+                # No CSV path to return in detect-only mode
+                return None
+
             for html, text, num, table_id in current_quarter_tables:
                 text_len = len(text)
                 company_indicators = ['llc', 'inc.', 'corp', 'ltd.', 'lp', 'llp']
@@ -2657,9 +2666,11 @@ XYZ Corp,Common Equity,Software,,,N/A,N/A,2022-06-01,,,1000,1200,0.6,1000,,
 
 def main():
     """Main CLI interface."""
-    # Default output to project root output/ so consolidation (and frontend) always finds it
+    # Default paths to project root so consolidation and SEC cache stay in one place
     _script_dir = Path(__file__).resolve().parent
-    _project_output = _script_dir.parent.parent / "output"
+    _repo_root = _script_dir.parent.parent
+    _project_output = _repo_root / "output"
+    _project_data = _repo_root / "data"
     parser = argparse.ArgumentParser(description="LLM-powered SEC filing table scraper")
     parser.add_argument('--ticker', required=True, help='Company ticker symbol')
     parser.add_argument('--filing-type', default='10-Q', choices=['10-Q', '10-K', '8-K', '424B'],
@@ -2667,14 +2678,21 @@ def main():
     parser.add_argument('--year', type=int, help='Year to fetch filing for (default: latest)')
     parser.add_argument('--quarter', choices=['Q1', 'Q2', 'Q3', 'Q4'],
                        help='Quarter for 10-Q filings')
+    _project_debug = _repo_root / "debug_tables"
     parser.add_argument('--output-dir', default=str(_project_output), help='Output directory for CSV files')
-    parser.add_argument('--debug-dir', default='debug_tables', help='Debug output directory')
+    parser.add_argument('--data-dir', default=str(_project_data), help='SEC download cache (default: repo root data/)')
+    parser.add_argument('--debug-dir', default=str(_project_debug), help='Debug output directory (default: repo root debug_tables/)')
     parser.add_argument('--google-key', help='Google Gemini API key (or set GOOGLE_API_KEY env var)')
     parser.add_argument('--years-back', type=int, default=0, help='Number of years to look back for historical filings')
     parser.add_argument('--force', action='store_true', help='Re-process filings even if output CSV already exists')
     parser.add_argument('--max-tables', type=int, default=None, help='Max tables to process (for trial runs)')
     parser.add_argument('--workers', type=int, default=None, help='Parallel workers (e.g., 8 for 39 tables = ~5 tables/worker)')
     parser.add_argument('--debt-only', action='store_true', help='Filter out equity investments (Common/Preferred Equity, Warrants)')
+    parser.add_argument('--detect-only', action='store_true',
+                       help='Run detection only (no LLM), log selected tables')
+    parser.add_argument('--detect-to-file', nargs='?', const='', default=None, metavar='PATH',
+                       help='Run detection only and write selected table texts to one file (LLM-friendly structure). '
+                            'Optional PATH; if omitted, writes to output_dir/{ticker}_detect_{filing_date}.txt')
 
     args = parser.parse_args()
 
@@ -2686,12 +2704,18 @@ def main():
         # Initialize scraper
         scraper = LLMTableScraper(
             gemini_api_key=args.google_key,
+            data_dir=args.data_dir,
             output_dir=args.output_dir,
             debug_dir=args.debug_dir
         )
 
         # Process the filing
         if args.years_back > 0:
+            if args.detect_only or args.detect_to_file is not None:
+                logger.error("--detect-only and --detect-to-file are only supported for a single filing (years-back=0). "
+                             "Use --year/--quarter and years-back=0 for detection debugging.")
+                exit(1)
+
             results = scraper.process_historical_filings(
                 ticker=args.ticker,
                 filing_type=args.filing_type,
@@ -2715,15 +2739,22 @@ def main():
                 quarter=args.quarter,
                 max_tables=args.max_tables,
                 workers=args.workers,
-                debt_only=args.debt_only
+                debt_only=args.debt_only,
+                detect_only=args.detect_only,
+                detect_to_file=args.detect_to_file,
             )
 
-            if result:
-                print(f"Successfully processed {args.ticker} {args.filing_type}")
-                print(f"- CSV saved to: {result}")
+            if args.detect_only or args.detect_to_file is not None:
+                print(f"Detection-only run completed for {args.ticker} {args.filing_type}")
+                if result:
+                    print(f"Table text file written (structured): {result}")
             else:
-                print(f"No investment data found for {args.ticker} {args.filing_type}")
-                exit(1)
+                if result:
+                    print(f"Successfully processed {args.ticker} {args.filing_type}")
+                    print(f"- CSV saved to: {result}")
+                else:
+                    print(f"No investment data found for {args.ticker} {args.filing_type}")
+                    exit(1)
 
     except Exception as e:
         logger.error(f"Error: {e}")

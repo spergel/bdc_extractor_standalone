@@ -11,14 +11,15 @@ Usage:
 import os
 import logging
 import argparse
+import io
 from typing import List, Dict, Any, Optional
 from datetime import datetime, date
 from pathlib import Path
 import re
 import requests
-from bs4 import BeautifulSoup
 import csv
 from collections import defaultdict
+import xml.etree.ElementTree as ET
 
 from sec_api_client import SECAPIClient
 
@@ -44,8 +45,8 @@ class FinancialStatementsExtractor:
             data_dir: Directory for SEC API client data
             output_dir: Directory to save CSV outputs
         """
-        self.data_dir = Path(data_dir)
-        self.output_dir = Path(output_dir)
+        self.data_dir = Path(data_dir).resolve()
+        self.output_dir = Path(output_dir).resolve()
         
         self.data_dir.mkdir(exist_ok=True)
         self.output_dir.mkdir(exist_ok=True)
@@ -117,79 +118,65 @@ class FinancialStatementsExtractor:
         
         return None
 
+    def _local_tag(self, tag: str) -> str:
+        """Strip XML namespace from tag to get local name (e.g. 'context', 'Assets')."""
+        if not tag:
+            return ''
+        return tag.split('}')[-1] if '}' in tag else tag
+
     def parse_xbrl_document(self, xbrl_url: str) -> Dict[str, Any]:
         """
-        Parse XBRL instance document to extract financial statement data.
-        
-        Args:
-            xbrl_url: URL to XBRL instance document
-            
-        Returns:
-            Dictionary with balance_sheet and income_statement data
+        Parse XBRL instance document using streaming iterparse to avoid loading
+        the entire multi-MB file into memory (which was slow and could hang).
         """
         try:
-            response = requests.get(xbrl_url, headers=self.sec_client.headers, timeout=90)
+            response = requests.get(xbrl_url, headers=self.sec_client.headers, timeout=120)
             response.raise_for_status()
-            
-            # Parse XML
-            soup = BeautifulSoup(response.content, 'xml')
-            
-            # Extract contexts (periods)
+            content = response.content
+            logger.info(f"Parsing XBRL document ({len(content) / (1024*1024):.2f} MB) with streaming parser...")
+
             contexts = {}
-            for context in soup.find_all(['context', 'xbrli:context']):
-                context_id = context.get('id', '')
-                if not context_id:
-                    continue
-                
-                # Extract period information
-                period_elem = context.find(['period', 'xbrli:period'])
-                if period_elem:
-                    instant_elem = period_elem.find(['instant', 'xbrli:instant'])
-                    start_elem = period_elem.find(['startDate', 'xbrli:startDate'])
-                    end_elem = period_elem.find(['endDate', 'xbrli:endDate'])
-                    
-                    period_info = {
-                        'instant': instant_elem.text.strip() if instant_elem else None,
-                        'start': start_elem.text.strip() if start_elem else None,
-                        'end': end_elem.text.strip() if end_elem else None,
-                    }
-                    contexts[context_id] = period_info
-            
-            # Extract facts (financial data)
             facts = []
-            for fact in soup.find_all():
-                # Skip non-data elements
-                if fact.name in ['context', 'xbrli:context', 'unit', 'xbrli:unit', 
-                                'schemaRef', 'linkbaseRef', 'roleRef', 'arcroleRef']:
-                    continue
-                
-                # Look for elements with contextRef (actual data)
-                context_ref = fact.get('contextRef', '')
-                unit_ref = fact.get('unitRef', '')
-                
-                if context_ref:
-                    # Get the concept name (element tag)
-                    concept = fact.name or ''
-                    
-                    # Get the value
-                    value_text = fact.text.strip()
-                    
-                    # Get label (preferred label or fallback)
-                    label = fact.get('label', '') or concept
-                    
-                    # Try to find preferred label in linkbase
-                    # For now, use concept name as label
-                    
-                    if value_text and concept:
-                        facts.append({
-                            'concept': concept,
-                            'label': label,
-                            'value': value_text,
-                            'contextRef': context_ref,
-                            'unitRef': unit_ref,
-                            'context': contexts.get(context_ref, {})
-                        })
-            
+            # Skip root and other non-data tags when collecting facts
+            skip_tags = {'context', 'unit', 'schemaref', 'linkbaseref', 'roleref', 'arcroleref'}
+
+            for event, elem in ET.iterparse(io.BytesIO(content), events=('end',)):
+                local = self._local_tag(elem.tag).lower()
+                if local == 'context':
+                    cid = elem.get('id', '')
+                    if cid:
+                        period_info = {}
+                        for child in elem:
+                            c_local = self._local_tag(child.tag).lower()
+                            if c_local == 'period':
+                                for sub in child:
+                                    s_local = self._local_tag(sub.tag).lower()
+                                    text = (sub.text or '').strip()
+                                    if s_local == 'instant':
+                                        period_info['instant'] = text
+                                    elif s_local == 'startdate':
+                                        period_info['start'] = text
+                                    elif s_local == 'enddate':
+                                        period_info['end'] = text
+                                break
+                        contexts[cid] = period_info
+                elif local not in skip_tags:
+                    context_ref = elem.get('contextRef', '')
+                    if context_ref:
+                        value_text = (elem.text or '').strip()
+                        concept = self._local_tag(elem.tag)
+                        if value_text and concept:
+                            facts.append({
+                                'concept': concept,
+                                'label': elem.get('label', '') or concept,
+                                'value': value_text,
+                                'contextRef': context_ref,
+                                'unitRef': elem.get('unitRef', ''),
+                                'context': contexts.get(context_ref, {})
+                            })
+                # Free memory: clear children of processed elements (iterparse keeps tree by default)
+                elem.clear()
+
             # Filter for standard line items only (exclude detailed breakdowns)
             def is_standard_line_item(fact: Dict) -> bool:
                 """
@@ -431,6 +418,7 @@ class FinancialStatementsExtractor:
             Dictionary mapping statement types to lists of file paths
         """
         logger.info(f"Processing historical {filing_type} filings for {ticker} (last {years_back} years)")
+        logger.info(f"Per-filing outputs: {self.output_dir} (skip_existing={skip_existing})")
 
         # Get historical filings
         if filing_type == "10-Q":
@@ -439,6 +427,20 @@ class FinancialStatementsExtractor:
             # For other filing types, we'd need a similar method
             logger.warning(f"Historical filing method not available for {filing_type}")
             filings = []
+
+        # Optional: skip entire ticker if consolidated outputs already exist (e.g. from prior run)
+        if skip_existing and filings:
+            consolidated_dir = Path("frontend/public/data/financials").resolve()
+            if consolidated_dir.exists():
+                bs_cons = consolidated_dir / f"{ticker}_balance_sheet.csv"
+                is_cons = consolidated_dir / f"{ticker}_income_statement.csv"
+                if (bs_cons.exists() and bs_cons.stat().st_size > 100 and
+                    is_cons.exists() and is_cons.stat().st_size > 100):
+                    logger.info(f"SKIPPING {ticker} financials - consolidated files already exist in {consolidated_dir}")
+                    return {
+                        'balance_sheet': [bs_cons],
+                        'income_statement': [is_cons]
+                    }
 
         results = {
             'balance_sheet': [],
@@ -449,13 +451,13 @@ class FinancialStatementsExtractor:
         for filing_info in filings:
             filing_date = filing_info['date']
 
-            # Check if output already exists for both statement types
+            # Check if per-filing output already exists (both balance_sheet and income_statement)
             if skip_existing:
                 bs_file = self.output_dir / f"{ticker}_{filing_date}_balance_sheet.csv"
                 is_file = self.output_dir / f"{ticker}_{filing_date}_income_statement.csv"
                 if (bs_file.exists() and bs_file.stat().st_size > 100 and
                     is_file.exists() and is_file.stat().st_size > 100):
-                    logger.info(f"SKIPPING {ticker} {filing_date} financials - already exists")
+                    logger.info(f"SKIPPING {ticker} {filing_date} financials - already exists ({bs_file.name})")
                     results['balance_sheet'].append(bs_file)
                     results['income_statement'].append(is_file)
                     skipped += 1

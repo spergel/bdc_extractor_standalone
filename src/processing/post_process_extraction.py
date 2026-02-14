@@ -60,9 +60,16 @@ def post_process_csv(input_file: Path, output_file: Path = None) -> Tuple[int, i
             if not fieldnames:
                 logger.error(f"No headers found in {input_file}")
                 return 0, 0, 1
+
+            # Ensure we have a data quality flag column
+            if 'data_quality_flags' not in fieldnames:
+                fieldnames = fieldnames + ['data_quality_flags']
             
             for row in reader:
                 original_row = row.copy()
+
+                # Collect per-row data quality issues
+                issues = []
                 
                 # Standardize industry
                 if 'industry' in row:
@@ -103,6 +110,66 @@ def post_process_csv(input_file: Path, output_file: Path = None) -> Tuple[int, i
                     row['company_name'] = cleaned_name
                     if original_name != cleaned_name:
                         rows_changed += 1
+
+                # --- Simple numeric sanity checks / flags ---
+                try:
+                    fv = float(row.get('fair_value', '') or 0)
+                    principal = float(row.get('principal_amount', '') or 0)
+                    cost = float(row.get('cost', '') or 0)
+                except ValueError:
+                    fv = principal = cost = 0
+
+                # Flag obviously tiny cost relative to principal/FV (e.g. 13 vs 13,242)
+                if cost > 0 and (principal > 0 or fv > 0):
+                    denom = principal if principal > 0 else fv
+                    # If cost is less than 5% of principal/FV but principal/FV are reasonably large,
+                    # it's almost certainly a bad scrape like HFZ (13 vs 13,242).
+                    if denom >= 1_000 and cost / denom < 0.05:
+                        issues.append("cost_suspicious_vs_size")
+
+                # Flag obviously tiny fair value relative to principal/cost.
+                # This is where we often see equity/warrant commas/scale wrong,
+                # e.g. principal 4,040 vs FV 4.
+                fv_denom = 0.0
+                if principal > 0:
+                    fv_denom = principal
+                elif cost > 0:
+                    fv_denom = cost
+
+                if fv > 0 and fv_denom >= 1_000:
+                    ratio = fv / fv_denom
+                    # If FV is less than 5% of principal/cost on a reasonably sized position,
+                    # it's almost certainly a scaling / comma error rather than a true 95% loss.
+                    if ratio < 0.05:
+                        issues.append("fair_value_suspicious_vs_size")
+
+                # Flag probable type mismatches hinted by company_name suffixes.
+                name_lower = (row.get('company_name') or '').lower()
+                type_lower = (row.get('investment_type') or '').lower()
+
+                # Examples:
+                #  - "LVF Holdings Inc (Revolver)" but type == "First Lien"
+                #  - "MacQueen Equipment LLC (Delayed Draw)" but type == "First Lien"
+                #  - "MC Asset Management (Corporate) LLC" but type == "First Lien"
+                if "revolver" in name_lower and "revolver" not in type_lower:
+                    issues.append("type_hint_revolver_from_name")
+                if "delayed draw" in name_lower and "delayed draw" not in type_lower:
+                    issues.append("type_hint_delayed_draw_from_name")
+                if "preferred equity" in name_lower and "preferred" not in type_lower:
+                    issues.append("type_hint_pref_equity_from_name")
+                if "corporate" in name_lower and "corporate" not in type_lower:
+                    issues.append("type_hint_corporate_from_name")
+
+                # You can extend with more checks later (negative FV, etc.)
+
+                # Persist issues into a pipe-separated flag field
+                if issues:
+                    existing = row.get('data_quality_flags', '') or ''
+                    merged = set(filter(None, [s.strip() for s in existing.split('|')])) | set(issues)
+                    row['data_quality_flags'] = '|'.join(sorted(merged))
+                else:
+                    # Preserve existing value or keep empty
+                    row['data_quality_flags'] = row.get('data_quality_flags', '') or ''
                 
                 rows.append(row)
         
