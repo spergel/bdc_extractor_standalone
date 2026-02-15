@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { Holding } from '../data/adapter';
 import { calculateDiff, getDiffSummary, type HoldingChange } from '../utils/holdingsDiff';
+import { formatThousandsAsCurrency } from '../utils/formatCurrency';
 import { HoldingsFilterBar, filterHoldings, defaultFilterState, type FilterState } from './HoldingsFilterBar';
 
 type Props = {
@@ -10,18 +11,11 @@ type Props = {
   afterPeriod: string;
 };
 
+/** Format holding amounts (stored in thousands) for display; use shared formatter for consistency */
 function fmtCurrency(v: unknown): string {
-  // NOTE: All holding monetary values are stored in *thousands of dollars*.
-  // This formatter converts from thousands → real dollars for display,
-  // then formats in k / M for UI consistency.
   const n = Number(v);
-  if (Number.isNaN(n)) return '';
-  const dollars = n * 1000; // stored in thousands
-  const abs = Math.abs(dollars);
-  const sign = dollars < 0 ? '-' : '';
-  if (abs >= 1_000_000) return `${sign}$${(abs / 1_000_000).toFixed(2)}M`;
-  if (abs >= 1_000) return `${sign}$${(abs / 1_000).toFixed(0)}k`;
-  return `${sign}$${abs.toFixed(0)}`;
+  if (Number.isNaN(n)) return '—';
+  return formatThousandsAsCurrency(n);
 }
 
 function DiffCell({ before, after, isNumeric = false, isPercent = false }: { before: string | number; after: string | number; isNumeric?: boolean; isPercent?: boolean }) {

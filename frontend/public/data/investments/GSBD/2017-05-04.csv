@@ -1,14 +1,14 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,data_quality_flags,ticker,filing_date
 Affordable Care Holding Corp.,co_3cd2b8caaa8a,First Lien,Healthcare Services,8.00%,,LIBOR,4.75%,,2022-10-22,4950000,4860000,4860000,,,,,,GSBD,2017-05-04
-Ansira Partners Inc.,co_e2b0da38ab15,First Lien,Media & Entertainment,7.50%,,LIBOR,6.50%,,2022-12-20,8730000,8640000,8640000,,,,,,GSBD,2017-05-04
-Ansira Partners Inc.,co_e2b0da38ab15,First Lien,Media & Entertainment,7.50%,,LIBOR,6.50%,,2022-12-20,1270000,,,1270000,,,,,GSBD,2017-05-04
+Ansira Partners Inc.,co_89d890570bd1,First Lien,Media & Entertainment,7.50%,,LIBOR,6.50%,,2022-12-20,8730000,8640000,8640000,,,,,,GSBD,2017-05-04
+Ansira Partners Inc.,co_89d890570bd1,First Lien,Media & Entertainment,7.50%,,LIBOR,6.50%,,2022-12-20,1270000,,,1270000,,,,,GSBD,2017-05-04
 ASC Acquisition Holdings LLC,co_d20c704ec3c0,First Lien,Other,8.50%,,LIBOR,7.50%,,2021-12-15,11250000,11140000,11140000,,,,,,GSBD,2017-05-04
 ASC Acquisition Holdings LLC,co_d20c704ec3c0,First Lien,Other,L + 7.50% (1.00% Floor),,LIBOR,7.50%,,2021-12-15,3750000,3750000,3750000,,,,,,GSBD,2017-05-04
 ATX Networks Corp.,co_ec7da23d7126,First Lien,Telecommunications,7.00%,,LIBOR,6.00%,,2021-06-11,16770000,16600000,16600000,,,,,,GSBD,2017-05-04
 Badger Sportswear Inc.,co_d0b85bebed7f,First Lien,Other,5.50%,,LIBOR,4.50%,,2023-09-11,14960000,14860000,14860000,,,,,,GSBD,2017-05-04
 ConvergeOne Holdings Corp.,co_2a837e3145dd,First Lien,Telecommunications,6.38%,,LIBOR,5.38%,,2020-06-17,17400000,17260000,17260000,,,,,,GSBD,2017-05-04
 Crowne Group LLC,co_a5a9c0b9c520,First Lien,Automotive,10.25%,,LIBOR,9.25%,,2021-05-26,16870000,16720000,16720000,,,,,,GSBD,2017-05-04
-DBRS Ltd.,co_829ebaff2a31,First Lien,Other,6.25%,,LIBOR,5.25%,,2022-03-04,11790000,11700000,11700000,,,,,,GSBD,2017-05-04
+DBRS Ltd.,co_09a886de047a,First Lien,Other,6.25%,,LIBOR,5.25%,,2022-03-04,11790000,11700000,11700000,,,,,,GSBD,2017-05-04
 DiscoverOrg LLC,co_150eeb0f4514,First Lien,Software,5.25%,,LIBOR,4.25%,,2020-06-02,7150000,7120000,7120000,,,,,,GSBD,2017-05-04
 Edgewood Partners Insurance Center,co_219280fcd34f,First Lien,Financial Services,7.00%,,LIBOR,6.00%,,2023-03-16,15880000,15590000,15590000,,,,,,GSBD,2017-05-04
 Explorer Holdings Inc.,co_60da83f3c2dd,First Lien,Automotive,6.00%,,LIBOR,5.00%,,2023-05-02,9950000,9850000,9850000,,,,,,GSBD,2017-05-04
@@ -26,8 +26,8 @@ Mister Car Wash Inc.,co_f86cfd86fff8,First Lien,Automotive,5.25%,,LIBOR,4.25%,,2
 Netsmart Technologies Inc.,co_fd6443dca978,First Lien,Automotive,5.50%,,LIBOR,4.50%,,2023-04-19,18940000,18880000,18880000,,,,,,GSBD,2017-05-04
 Oasis Outsourcing Holdings Inc.,co_41702dfda981,First Lien,Financial Services,5.75%,,LIBOR,4.75%,,2021-12-27,3980000,3970000,3970000,,,,,,GSBD,2017-05-04
 PGX Holdings Inc.,co_c965bd4c8b1b,First Lien,Business Services,6.25%,,LIBOR,5.25%,,2020-09-29,13580000,13510000,13510000,,,,,,GSBD,2017-05-04
-Ansira Partners Inc.,co_e2b0da38ab15,First Lien,Media & Entertainment,6.50%,,LIBOR,6.50%,,2022-12-20,8727000,8642000,8642000,,,,,,GSBD,2017-05-04
-Ansira Partners Inc.,co_e2b0da38ab15,First Lien,Media & Entertainment,6.50%,,LIBOR,6.50%,,2022-12-20,1273000,1273000,,,,,,,GSBD,2017-05-04
+Ansira Partners Inc.,co_89d890570bd1,First Lien,Media & Entertainment,6.50%,,LIBOR,6.50%,,2022-12-20,8727000,8642000,8642000,,,,,,GSBD,2017-05-04
+Ansira Partners Inc.,co_89d890570bd1,First Lien,Media & Entertainment,6.50%,,LIBOR,6.50%,,2022-12-20,1273000,1273000,,,,,,,GSBD,2017-05-04
 ASC Acquisition Holdings LLC,co_d20c704ec3c0,First Lien,Other,7.50%,,LIBOR,7.50%,,2021-12-15,11109000,11003000,11003000,,,,,,GSBD,2017-05-04
 ATX Networks Corp.,co_ec7da23d7126,First Lien,Telecommunications,6.00%,,LIBOR,6.00%,,2021-06-11,16725000,16572000,16572000,,,,,,GSBD,2017-05-04
 Badger Sportswear Inc.,co_d0b85bebed7f,First Lien,Other,4.50%,,LIBOR,4.50%,,2023-09-11,14925000,14785000,14785000,,,,,,GSBD,2017-05-04
@@ -35,7 +35,7 @@ ConvergeOne Holdings Corp.,co_2a837e3145dd,First Lien,Telecommunications,5.38%,,
 Crowne Group LLC,co_a5a9c0b9c520,First Lien,Automotive,9.25%,,LIBOR,9.25%,,2021-05-26,16745000,16598000,16598000,,,,,,GSBD,2017-05-04
 CST Buyer Company,co_d18296085ade,First Lien,Other,6.25%,,LIBOR,6.25%,,2023-03-01,20700000,20137000,20137000,,,,,,GSBD,2017-05-04
 CST Buyer Company,co_d18296085ade,First Lien,Other,L + 6.25% (1.00% Floor),,LIBOR,6.25%,,2023-03-01,1800000,1800000,50000,,,,,fair_value_suspicious_vs_size,GSBD,2017-05-04
-DBRS Ltd.,co_829ebaff2a31,First Lien,Other,5.25%,,LIBOR,5.25%,,2022-03-04,11760000,11671000,11671000,,,,,,GSBD,2017-05-04
+DBRS Ltd.,co_09a886de047a,First Lien,Other,5.25%,,LIBOR,5.25%,,2022-03-04,11760000,11671000,11671000,,,,,,GSBD,2017-05-04
 DiscoverOrg LLC,co_150eeb0f4514,First Lien,Software,4.25%,,LIBOR,4.25%,,2020-06-02,7047000,7023000,7023000,,,,,,GSBD,2017-05-04
 Edgewood Partners Insurance Center,co_219280fcd34f,First Lien,Financial Services,6.00%,,LIBOR,6.00%,,2023-03-16,15840000,15559000,15559000,,,,,,GSBD,2017-05-04
 Explorer Holdings Inc.,co_60da83f3c2dd,First Lien,Automotive,5.00%,,LIBOR,5.00%,,2023-05-02,9925000,9833000,9833000,,,,,,GSBD,2017-05-04
@@ -54,15 +54,15 @@ Mister Car Wash Inc.,co_f86cfd86fff8,First Lien,Automotive,4.25%,,LIBOR,4.25%,,2
 Netsmart Technologies Inc.,co_fd6443dca978,First Lien,Automotive,4.50%,,LIBOR,4.50%,,2023-04-19,18890000,18833000,18833000,,,,,,GSBD,2017-05-04
 Oasis Outsourcing Holdings Inc.,co_41702dfda981,First Lien,Financial Services,4.75%,,LIBOR,4.75%,,2021-12-27,3969000,3960000,3960000,,,,,,GSBD,2017-05-04
 Affordable Care Holding Corp.,co_3cd2b8caaa8a,First Lien,Healthcare Services,4.75%,,LIBOR,4.75%,,2022-10-22,4950,4864,4864,,,,,,GSBD,2017-05-04
-Ansira Partners Inc.,co_e2b0da38ab15,First Lien,Media & Entertainment,6.50%,,LIBOR,6.50%,,2022-12-20,8727,8640,8640,,,,,,GSBD,2017-05-04
-Ansira Partners Inc.,co_e2b0da38ab15,First Lien,Media & Entertainment,6.50%,,LIBOR,6.50%,,2022-12-20,1273,,,7121,,,,,GSBD,2017-05-04
+Ansira Partners Inc.,co_89d890570bd1,First Lien,Media & Entertainment,6.50%,,LIBOR,6.50%,,2022-12-20,8727,8640,8640,,,,,,GSBD,2017-05-04
+Ansira Partners Inc.,co_89d890570bd1,First Lien,Media & Entertainment,6.50%,,LIBOR,6.50%,,2022-12-20,1273,,,7121,,,,,GSBD,2017-05-04
 ASC Acquisition Holdings LLC,co_d20c704ec3c0,First Lien,Other,7.50%,,LIBOR,7.50%,,2021-12-15,11250,11138,11138,,,,,,GSBD,2017-05-04
 ASC Acquisition Holdings LLC,co_d20c704ec3c0,First Lien,Other,7.50%,,LIBOR,7.50%,,2021-12-15,3750,,,,,,,,GSBD,2017-05-04
 ATX Networks Corp.,co_ec7da23d7126,First Lien,Telecommunications,6.00%,,LIBOR,6.00%,,2021-06-11,16767,16607,16607,,,,,,GSBD,2017-05-04
 Badger Sportswear Inc.,co_d0b85bebed7f,First Lien,Other,4.50%,,LIBOR,4.50%,,2023-09-11,14963,14861,14861,,,,,,GSBD,2017-05-04
 ConvergeOne Holdings Corp.,co_2a837e3145dd,First Lien,Telecommunications,5.38%,,LIBOR,5.38%,,2020-06-17,17401,17261,17261,,,,,,GSBD,2017-05-04
 Crowne Group LLC,co_a5a9c0b9c520,First Lien,Automotive,9.25%,,LIBOR,9.25%,,2021-05-26,16873,16717,16717,,,,,,GSBD,2017-05-04
-DBRS Ltd.,co_829ebaff2a31,First Lien,Other,5.25%,,LIBOR,5.25%,,2022-03-04,11790,11697,11697,,,,,,GSBD,2017-05-04
+DBRS Ltd.,co_09a886de047a,First Lien,Other,5.25%,,LIBOR,5.25%,,2022-03-04,11790,11697,11697,,,,,,GSBD,2017-05-04
 DiscoverOrg LLC,co_150eeb0f4514,First Lien,Software,4.25%,,LIBOR,4.25%,,2020-06-02,7147,7121,7121,,,,,,GSBD,2017-05-04
 Edgewood Partners Insurance Center,co_219280fcd34f,First Lien,Financial Services,6.00%,,LIBOR,6.00%,,2023-03-16,15880,15589,15589,,,,,,GSBD,2017-05-04
 Explorer Holdings Inc.,co_60da83f3c2dd,First Lien,Automotive,5.00%,,LIBOR,5.00%,,2023-05-02,9950,9855,9855,,,,,,GSBD,2017-05-04
@@ -172,7 +172,7 @@ myON LLC,co_69970c058068,Common Equity,Software,,,,,,,,16087,600,600,,,,,GSBD,20
 NTS Communications Inc.,co_fc3783efb77f,Common Equity,Telecommunications,,,,,,,,595215,3,3,,,,,GSBD,2017-05-04
 Prairie Provident Resources Inc.,co_397174dcac74,Common Equity,Other,,,,,,,,3579989,9237,9237,,,,,GSBD,2017-05-04
 Yasso Inc.,co_6bf826f99b8c,Common Equity,Food & Beverage,,,,,,,,850,850,850,,,,,GSBD,2017-05-04
-Ansira Partners Inc.,co_e2b0da38ab15,First Lien,Media & Entertainment,L + 6.50% (1.00% Floor),,LIBOR,6.50%,,2022-12-20,,1270000,1270000,10000,,,,,GSBD,2017-05-04
+Ansira Partners Inc.,co_89d890570bd1,First Lien,Media & Entertainment,L + 6.50% (1.00% Floor),,LIBOR,6.50%,,2022-12-20,,1270000,1270000,10000,,,,,GSBD,2017-05-04
 ASC Acquisition Holdings LLC,co_d20c704ec3c0,First Lien,Other,L + 7.50% (1.00% Floor),,LIBOR,7.50%,,2021-12-15,11110000,11000000,11000000,,,,,,GSBD,2017-05-04
 ATX Networks Corp.,co_ec7da23d7126,First Lien,Telecommunications,L + 6.00% (1.00% Floor),,LIBOR,6.00%,,2021-06-11,16730000,16570000,16570000,,,,,,GSBD,2017-05-04
 Badger Sportswear Inc.,co_d0b85bebed7f,First Lien,Other,L + 4.50% (1.00% Floor),,LIBOR,4.50%,,2023-09-11,14930000,14790000,14790000,,,,,,GSBD,2017-05-04

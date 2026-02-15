@@ -21,6 +21,7 @@ import {
   type RedFlag,
 } from '../utils/holdingsAnalytics';
 import { type DrillDownSelection, getFilteredHoldings } from '../utils/drillDownFilters';
+import { formatThousandsAsCurrency } from '../utils/formatCurrency';
 import { DrillDownTable } from './DrillDownTable';
 import { PieChart, MaturityLadderChart } from './Charts';
 
@@ -454,7 +455,7 @@ export function AnalyticsPanel({ holdings, period }: Props) {
           <div className="text-xs font-semibold mb-2 text-black">PIK Analysis</div>
           <div className="space-y-1 text-xs text-[#808080]">
             <div>PIK Count: {pikAnalysis.pikCount}</div>
-            <div>PIK FV: ${(pikAnalysis.pikFairValue / 1000).toFixed(1)}M</div>
+            <div>PIK FV: {formatThousandsAsCurrency(pikAnalysis.pikFairValue)}</div>
             <div>PIK %: {pikAnalysis.pikPercentage.toFixed(1)}%</div>
             <div className="pt-1 border-t border-[#808080]">Avg PIK Rate: {pikAnalysis.averagePikRate.toFixed(2)}%</div>
           </div>
@@ -488,7 +489,7 @@ export function AnalyticsPanel({ holdings, period }: Props) {
               {topHoldings.map((h, i) => (
                 <tr key={i} className="border-b border-[#c0c0c0]">
                   <td className="py-1 text-black">{h.company_name}</td>
-                  <td className="text-right py-1 text-[#808080]">${(h.fair_value / 1000).toFixed(1)}M</td>
+                  <td className="text-right py-1 text-[#808080]">{formatThousandsAsCurrency(h.fair_value)}</td>
                   <td className="text-right py-1 text-[#808080]">{h.percentage.toFixed(2)}%</td>
                   <td className="py-1 text-[#808080]">{h.investment_type}</td>
                 </tr>
@@ -549,9 +550,9 @@ export function AnalyticsPanel({ holdings, period }: Props) {
                         ))}
                       </div>
                     </td>
-                    <td className="text-right py-1 text-[#808080]">${(getFV(item.holding) / 1000).toFixed(1)}M</td>
-                    <td className="text-right py-1 text-[#808080]">${(getPrincipal(item.holding) / 1000).toFixed(1)}M</td>
-                    <td className="text-right py-1 text-[#808080]">${(getCost(item.holding) / 1000).toFixed(1)}M</td>
+                    <td className="text-right py-1 text-[#808080]">{formatThousandsAsCurrency(getFV(item.holding))}</td>
+                    <td className="text-right py-1 text-[#808080]">{formatThousandsAsCurrency(getPrincipal(item.holding))}</td>
+                    <td className="text-right py-1 text-[#808080]">{formatThousandsAsCurrency(getCost(item.holding))}</td>
                   </tr>
                 ))}
               </tbody>

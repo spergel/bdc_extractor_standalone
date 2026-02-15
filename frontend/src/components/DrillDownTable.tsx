@@ -3,6 +3,7 @@ import { createColumnHelper, flexRender, getCoreRowModel, getSortedRowModel, use
 import type { SortingState } from '@tanstack/react-table';
 import type { Holding } from '../data/adapter';
 import { toPercent, getFV, getCost, getPrincipal, getMaturityDateStr } from '../utils/holdingsAnalytics';
+import { formatThousandsAsCurrency } from '../utils/formatCurrency';
 
 type Props = {
   holdings: Holding[];
@@ -10,9 +11,10 @@ type Props = {
   onClose: () => void;
 };
 
-function fmtNumber(v: number): string {
-  if (v === 0) return '';
-  return (v / 1000).toLocaleString(undefined, { maximumFractionDigits: 0 });
+/** Format amount stored in thousands as currency ($M / $B) for consistency with rest of app */
+function fmtCurrency(thousands: number): string {
+  if (thousands === 0) return '—';
+  return formatThousandsAsCurrency(thousands);
 }
 
 function fmtRatio(a: number, b: number): string {
@@ -54,16 +56,16 @@ const columns = [
     cell: c => <span className="block text-right">{c.getValue() > 0 ? c.getValue().toFixed(2) : ''}</span>,
   }),
   columnHelper.accessor('fair_value', {
-    header: 'FV ($K)',
-    cell: c => <span className="block text-right">{fmtNumber(c.getValue())}</span>,
+    header: 'Fair value',
+    cell: c => <span className="block text-right">{fmtCurrency(c.getValue())}</span>,
   }),
   columnHelper.accessor('principal', {
-    header: 'Prin ($K)',
-    cell: c => <span className="block text-right">{fmtNumber(c.getValue())}</span>,
+    header: 'Principal',
+    cell: c => <span className="block text-right">{fmtCurrency(c.getValue())}</span>,
   }),
   columnHelper.accessor('cost', {
-    header: 'Cost ($K)',
-    cell: c => <span className="block text-right">{fmtNumber(c.getValue())}</span>,
+    header: 'Cost',
+    cell: c => <span className="block text-right">{fmtCurrency(c.getValue())}</span>,
   }),
   columnHelper.accessor('fvPrin', {
     header: 'FV/Prin',
@@ -185,9 +187,9 @@ export function DrillDownTable({ holdings, title, onClose }: Props) {
               <td className="px-2 py-1" />
               <td className="px-2 py-1" />
               <td className="px-2 py-1 text-right">{summary.avgSpread > 0 ? `avg ${summary.avgSpread.toFixed(2)}` : ''}</td>
-              <td className="px-2 py-1 text-right">{fmtNumber(summary.totalFV)}</td>
-              <td className="px-2 py-1 text-right">{fmtNumber(summary.totalPrin)}</td>
-              <td className="px-2 py-1 text-right">{fmtNumber(summary.totalCost)}</td>
+              <td className="px-2 py-1 text-right">{fmtCurrency(summary.totalFV)}</td>
+              <td className="px-2 py-1 text-right">{fmtCurrency(summary.totalPrin)}</td>
+              <td className="px-2 py-1 text-right">{fmtCurrency(summary.totalCost)}</td>
               <td className="px-2 py-1 text-right">{summary.totalPrin > 0 ? fmtRatio(summary.totalFV, summary.totalPrin) : ''}</td>
               <td className="px-2 py-1 text-right">{summary.totalCost > 0 ? fmtRatio(summary.totalFV, summary.totalCost) : ''}</td>
               <td className="px-2 py-1" />

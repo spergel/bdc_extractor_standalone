@@ -1,4 +1,5 @@
 import { useState, useCallback, useRef } from 'react';
+import { formatThousandsAsCurrency } from '../utils/formatCurrency';
 
 export type PieChartDatum = {
   category: string;
@@ -113,7 +114,7 @@ export function PieChart({
               <div className="text-black font-medium">{hovered.item.category}</div>
               <div className="text-black">{hovered.item.percentage.toFixed(1)}%</div>
               {byValue ? (
-                <div className="text-black">${(hovered.item.fairValue / 1000).toFixed(1)} M</div>
+                <div className="text-black">{formatThousandsAsCurrency(hovered.item.fairValue)}</div>
               ) : (
                 <div className="text-black">{hovered.item.count} holdings</div>
               )}
@@ -192,7 +193,7 @@ export function MaturityLadderChart({ data }: { data: MaturityLadderDatum[] }) {
               />
             </div>
             <div className="w-24 text-xs text-[#808080] text-right">
-              ${(item.fairValue / 1000).toFixed(1)} M ({item.percentage.toFixed(1)}%)
+              {formatThousandsAsCurrency(item.fairValue)} ({item.percentage.toFixed(1)}%)
             </div>
           </div>
         ))}
@@ -204,7 +205,7 @@ export function MaturityLadderChart({ data }: { data: MaturityLadderDatum[] }) {
         >
           <div className="text-black font-medium">{hovered.item.bucket}</div>
           <div className="text-black">{hovered.item.count} holdings</div>
-          <div className="text-black">${(hovered.item.fairValue / 1000).toFixed(1)} M</div>
+          <div className="text-black">{formatThousandsAsCurrency(hovered.item.fairValue)}</div>
           <div className="text-black">{hovered.item.percentage.toFixed(1)}%</div>
         </div>
       )}

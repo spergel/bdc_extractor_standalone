@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import type { Holding } from '../data/adapter';
 import { getFV, getPrincipal, getIndustry, getInvType, toPercent } from '../utils/holdingsAnalytics';
 import { formatPeriodLabel } from '../utils/periodComparisons';
+import { formatThousandsAsCurrency } from '../utils/formatCurrency';
 
 type Props = {
   holdings: Holding[];
@@ -131,7 +132,7 @@ export function SimpleAnalyticsPanel({ holdings, period }: Props) {
         <div className="p-3 grid grid-cols-2 md:grid-cols-4 gap-4">
           <div>
             <div className="text-xs text-[#808080]">Total Fair Value</div>
-            <div className="text-lg font-bold">${fmt(analytics.totalFV / 1000)}M</div>
+            <div className="text-lg font-bold">{formatThousandsAsCurrency(analytics.totalFV)}</div>
           </div>
           <div>
             <div className="text-xs text-[#808080]">Positions</div>
@@ -139,7 +140,7 @@ export function SimpleAnalyticsPanel({ holdings, period }: Props) {
           </div>
           <div>
             <div className="text-xs text-[#808080]">Avg Position Size</div>
-            <div className="text-lg font-bold">${fmt((analytics.totalFV / analytics.positions) / 1000)}M</div>
+            <div className="text-lg font-bold">{formatThousandsAsCurrency(analytics.positions > 0 ? analytics.totalFV / analytics.positions : 0)}</div>
           </div>
           <div>
             <div className="text-xs text-[#808080]">Floating Rate</div>
@@ -227,7 +228,7 @@ export function SimpleAnalyticsPanel({ holdings, period }: Props) {
               {analytics.topTypes.map((t, i) => (
                 <tr key={i} className="border-b border-[#c0c0c0]">
                   <td className="py-1">{t.name}</td>
-                  <td className="text-right">${fmt(t.fv / 1000)}M</td>
+                  <td className="text-right">{formatThousandsAsCurrency(t.fv)}</td>
                   <td className="text-right font-semibold">{fmtPct(t.pct)}</td>
                 </tr>
               ))}
@@ -254,7 +255,7 @@ export function SimpleAnalyticsPanel({ holdings, period }: Props) {
               {analytics.topIndustries.map((ind, i) => (
                 <tr key={i} className="border-b border-[#c0c0c0]">
                   <td className="py-1">{ind.name}</td>
-                  <td className="text-right">${fmt(ind.fv / 1000)}M</td>
+                  <td className="text-right">{formatThousandsAsCurrency(ind.fv)}</td>
                   <td className="text-right font-semibold">{fmtPct(ind.pct)}</td>
                 </tr>
               ))}

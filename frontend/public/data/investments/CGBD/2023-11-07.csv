@@ -1,6 +1,6 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,data_quality_flags,ticker,filing_date
 Celerion Buyer Inc.,co_0e76b09dfb77,First Lien,Pharmaceuticals & Biotechnology,11.93%,,SOFR,6.50%,2022-11-03,2029-11-03,3128,,,3041,,,,,CGBD,2023-11-07
-Chartis Holding LLC,co_fe1063cfe0f1,First Lien,Business Services,10.52%,,SOFR,5.00%,2019-05-01,2025-05-01,728,,,723,,,,,CGBD,2023-11-07
+Chartis Holding LLC,co_12ad981616e3,First Lien,Business Services,10.52%,,SOFR,5.00%,2019-05-01,2025-05-01,728,,,723,,,,,CGBD,2023-11-07
 Chemical Computing Group ULC Canada,co_71c79ae59091,First Lien,Software,9.92%,,SOFR,4.50%,2018-08-30,2024-08-30,386,,,384,,,,,CGBD,2023-11-07
 CircusTrix Holdings LLC,co_0da73172bca3,First Lien,Other,12.08%,,SOFR,6.75%,2023-07-18,2028-07-14,12581,,,12213,,,,,CGBD,2023-11-07
 Comar Holding Company LLC,co_c5afda078f0a,First Lien,Packaging,11.31%,,SOFR,5.75%,2018-06-18,2024-06-18,28973,,,28885,,,,,CGBD,2023-11-07
@@ -166,7 +166,7 @@ BMS Holdings III Corp.,co_e38d828a5344,First Lien,Construction,10.23%,,LIBOR,5.5
 Bradyifs Holdings LLC,co_1c893846e0e9,First Lien,Other,10.83%,,SOFR,6.25%,2020-02-21,2025-11-22,12884,,12720,,,,,,CGBD,2023-11-07
 Bubbles Bidco SPA Italy,co_c5b802a2125f,First Lien,Consumer Products,9.25%,9.25%,LIBOR,9.25%,2021-10-20,2028-10-20,5189,,5815,,,,,,CGBD,2023-11-07
 Celerion Buyer Inc.,co_0e76b09dfb77,First Lien,Pharmaceuticals & Biotechnology,10.64%,,SOFR,6.50%,2022-11-03,2029-11-03,3152,,3054,,,,,,CGBD,2023-11-07
-Chartis Holding LLC,co_fe1063cfe0f1,First Lien,Business Services,9.77%,,LIBOR,5.00%,2019-05-01,2025-05-01,687,,680,,,,,,CGBD,2023-11-07
+Chartis Holding LLC,co_12ad981616e3,First Lien,Business Services,9.77%,,LIBOR,5.00%,2019-05-01,2025-05-01,687,,680,,,,,,CGBD,2023-11-07
 North Haven Fairway Buyer LLC,co_4df1b67c56d8,First Lien,Other,11.08%,,SOFR,6.50%,2022-05-17,2028-05-17,22970,22530,22530,,,,,,CGBD,2023-11-07
 Oak Purchaser Inc.,co_dea8727c2769,First Lien,Business Services,9.48%,,SOFR,5.50%,2022-04-28,2028-04-28,5851,5779,5663,,,,,,CGBD,2023-11-07
 PF Atlantic Holdco 2 LLC,co_8ecbd383745d,First Lien,Other,10.25%,,LIBOR,5.50%,2021-11-12,2027-11-12,4170,3932,3918,,,,,,CGBD,2023-11-07
@@ -216,7 +216,7 @@ Avenu Holdings LLC,co_fb985d429486,Common Equity,Other,,,,,,,172,104,522,0.06,,,
 Bayside HoldCo LLC,co_1743cac8a1a4,Common Equity,Pharmaceuticals & Biotechnology,,,,,,,6,,,,,,,,CGBD,2023-11-07
 Blackbird Holdco Inc.,co_a9698ddc787b,Common Equity,Other,,,,,,,12,11927,11669,,,,,,CGBD,2023-11-07
 Buckeye Parent LLC,co_0ac1619b5a83,Common Equity,Automotive,,,,,,,885,885,34,0.00,,,,,CGBD,2023-11-07
-Chartis Holding LLC,co_fe1063cfe0f1,Common Equity,Business Services,,,,,,,433,421,607,0.07,,,,,CGBD,2023-11-07
+Chartis Holding LLC,co_12ad981616e3,Common Equity,Business Services,,,,,,,433,421,607,0.07,,,,,CGBD,2023-11-07
 CIP Revolution Holdings LLC,co_a2420d82bbd6,Common Equity,Media & Entertainment,,,,,,,318,318,247,0.03,,,,,CGBD,2023-11-07
 Cority Software Inc.,co_fbd5965454cb,Common Equity,Software,,,,,,,250,250,659,0.07,,,,,CGBD,2023-11-07
 Derm Growth Partners III LLC,co_89947fb6810f,Common Equity,Pharmaceuticals & Biotechnology,,,,,,,1000,1000,,,,,,,CGBD,2023-11-07
@@ -287,7 +287,7 @@ Bubbles Bidco S.P.A.,co_6107dda3290e,Delayed Draw,Software,2.80%,,N/A,,,,,873,,,
 Bubbles Bidco S.P.A.,co_6107dda3290e,Revolver,Software,,0.50%,N/A,,,,,537,,,0.5,,,,CGBD,2023-11-07
 Celerion Buyer Inc.,co_0e76b09dfb77,Revolver,Pharmaceuticals & Biotechnology,0.50%,,N/A,,,,,249,,,0.5,,,,CGBD,2023-11-07
 Celerion Buyer Inc.,co_0e76b09dfb77,Delayed Draw,Pharmaceuticals & Biotechnology,1.00%,,N/A,,,,,499,,,1.0,,,,CGBD,2023-11-07
-Chartis Holding LLC,co_fe1063cfe0f1,Revolver,Software,0.50%,,N/A,,,,,217,,,0.5,,,,CGBD,2023-11-07
+Chartis Holding LLC,co_12ad981616e3,Revolver,Software,0.50%,,N/A,,,,,217,,,0.5,,,,CGBD,2023-11-07
 Chemical Computing Group ULC,co_71c79ae59091,Revolver,Software,0.50%,,N/A,,,,,29,,,0.5,,,,CGBD,2023-11-07
 Comar Holding Company LLC,co_c5afda078f0a,Revolver,Manufacturing,0.50%,,N/A,,,,,1467,,,0.5,,,,CGBD,2023-11-07
 Cority Software Inc.,co_fbd5965454cb,Revolver,Software,0.50%,,N/A,,,,,3000,,,0.5,,,,CGBD,2023-11-07
@@ -315,7 +315,7 @@ Atlas Ontario LP,co_95dd01150df8,Common Equity,Business Services,,,,,,2021-04-07
 Avenu Holdings LLC,co_fb985d429486,Common Equity,Other,,,,,,2018-09-28,,,104,104,545,,,,CGBD,2023-11-07
 Blackbird Holdco Inc.,co_a9698ddc787b,Common Equity,Other,,,,,,2021-12-14,,,10809,10210,,,,,CGBD,2023-11-07
 Buckeye Parent LLC,co_0ac1619b5a83,Common Equity,Automotive,,,,,,2021-12-22,,,885,885,576,,,,CGBD,2023-11-07
-Chartis Holding LLC,co_fe1063cfe0f1,Common Equity,Business Services,,,,,,2019-05-01,,,428,428,595,,,,CGBD,2023-11-07
+Chartis Holding LLC,co_12ad981616e3,Common Equity,Business Services,,,,,,2019-05-01,,,428,428,595,,,,CGBD,2023-11-07
 CIP Revolution Holdings LLC,co_a2420d82bbd6,Common Equity,Media & Entertainment,,,,,,2016-08-19,,,318,318,257,,,,CGBD,2023-11-07
 Cority Software Inc.,co_fbd5965454cb,Common Equity,Software,,,,,,2019-07-02,,,250,250,641,,,,CGBD,2023-11-07
 Derm Growth Partners III LLC,co_89947fb6810f,Common Equity,Pharmaceuticals & Biotechnology,,,,,,2016-05-31,,,1000,1000,,,,,CGBD,2023-11-07

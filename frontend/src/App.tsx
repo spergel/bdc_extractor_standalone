@@ -139,6 +139,20 @@ function App() {
     setSelectedCompanyId(companyId);
   }, []);
 
+  /** Resolve company name to company_id using exposures (for holdings that don't have company_id in CSV). */
+  const getCompanyIdFromName = useCallback(
+    (name: string) => {
+      if (!name || !exposures?.length) return undefined;
+      const key = name.trim().toLowerCase();
+      if (!key) return undefined;
+      const e = (exposures as { company_id?: string; company_name?: string }[]).find(
+        (x) => (x.company_name ?? '').trim().toLowerCase() === key
+      );
+      return e?.company_id;
+    },
+    [exposures]
+  );
+
   const selectedCompanyName = useMemo(() => {
     if (!selectedCompanyId || !exposures?.length) return undefined;
     const e = (exposures as { company_id?: string; company_name?: string }[]).find(
@@ -168,6 +182,7 @@ function App() {
     onDiffSelection: (before, after) => applyDiffSelection(before, after),
     onUserDiffSelection: () => setHasUserDiffSelection(true),
     onCompanyClick: handleCompanyClick,
+    getCompanyIdFromName,
   });
 
   const sidebarContent = viewMode === 'bdc' && (

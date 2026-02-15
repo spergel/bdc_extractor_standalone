@@ -31,6 +31,8 @@ type TabContentProps = {
   onDiffSelection: (before: string | undefined, after: string | undefined, source: string) => void;
   onUserDiffSelection: () => void;
   onCompanyClick?: (companyId: string) => void;
+  /** Resolve company name to company_id when CSV has no company_id (enables clickable names). */
+  getCompanyIdFromName?: (name: string) => string | undefined;
 };
 
 const ANALYTICS_VIEW_KEY = 'bdc_analytics_view';
@@ -125,6 +127,7 @@ export function TabContent({
   onDiffSelection,
   onUserDiffSelection,
   onCompanyClick,
+  getCompanyIdFromName,
 }: TabContentProps) {
   const tabs = [
     {
@@ -239,7 +242,7 @@ export function TabContent({
             ) : isLoadingInvestments ? (
               <div className="text-xs text-[#808080] p-4">Loading holdings...</div>
             ) : snapshot && investments.length > 0 ? (
-              <HoldingsTable key={`${ticker ?? 'none'}-${selectedPeriod ?? 'none'}`} data={investments as any} period={selectedPeriod} onCompanyClick={onCompanyClick} />
+              <HoldingsTable key={`${ticker ?? 'none'}-${selectedPeriod ?? 'none'}`} data={investments as any} period={selectedPeriod} onCompanyClick={onCompanyClick} getCompanyIdFromName={getCompanyIdFromName} />
             ) : snapshot && investments.length === 0 ? (
               <div className="window p-4">
                 <div className="text-sm text-[#808080]">No holdings data available for this period</div>

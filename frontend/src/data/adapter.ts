@@ -92,7 +92,8 @@ export type CompanyExposure = {
   most_common_investment_type: string;
 };
 
-/** Per-company breakdown: who they owe (BDCs), due-date buckets, investment types. From company_detail.json. */
+/** Per-company breakdown: who they owe (BDCs), due-date buckets, investment types. From company_detail.json.
+ *  All numeric values (by_bdc, by_maturity, by_investment_type) are in MILLIONS. Use formatMillionsAsCurrency for display. */
 export type CompanyDetail = {
   by_bdc: Record<string, number>;
   by_maturity: Record<string, number>;
@@ -120,6 +121,8 @@ export type CompanyProfile = {
   canonical_name: string;
   description?: string;
   industry?: string;
+  /** Sector as initially stored from filings/resolution; industry is normalized to allowed list */
+  industry_initial?: string;
   website?: string;
   location?: string;
   employee_range?: string;
@@ -202,14 +205,43 @@ export async function loadCompaniesIndex(): Promise<CompaniesIndex> {
 }
 
 // Load company profiles (company_id -> profile with description, etc.)
+// Prefer CSV; fall back to JSON for backward compatibility.
 export async function loadCompanyProfiles(): Promise<Record<string, CompanyProfile>> {
-  const res = await fetch('/data/company_profiles.json');
-  if (!res.ok) {
-    return {};
+  const csvRes = await fetch('/data/company_profiles.csv');
+  if (csvRes.ok) {
+    const text = await csvRes.text();
+    const parsed = Papa.parse<Record<string, string>>(text, {
+      header: true,
+      skipEmptyLines: true,
+    });
+    const rows = parsed.data || [];
+    const out: Record<string, CompanyProfile> = {};
+    for (const row of rows) {
+      const cid = (row.company_id || '').trim();
+      if (!cid) continue;
+      out[cid] = {
+        company_id: cid,
+        canonical_name: (row.canonical_name || '').trim(),
+        description: (row.description || '').trim() || undefined,
+        industry: (row.industry || '').trim() || undefined,
+        industry_initial: (row.industry_initial || '').trim() || undefined,
+        website: (row.website || '').trim() || undefined,
+        location: (row.location || '').trim() || undefined,
+        employee_range: (row.employee_range || '').trim() || undefined,
+        leadership: (row.leadership || '').trim() || undefined,
+        funding: (row.funding || '').trim() || undefined,
+        recent_news: (row.recent_news || '').trim() || undefined,
+        source: (row.source || '').trim() || undefined,
+        updated_at: (row.updated_at || '').trim() || undefined,
+      };
+    }
+    return out;
   }
+  const res = await fetch('/data/company_profiles.json');
+  if (!res.ok) return {};
   const data = await res.json();
   const raw = data?.profiles;
-  if (typeof raw === 'object' && raw !== null) {
+  if (typeof raw === 'object' && raw !== null && !Array.isArray(raw)) {
     return raw as Record<string, CompanyProfile>;
   }
   if (Array.isArray(raw)) {

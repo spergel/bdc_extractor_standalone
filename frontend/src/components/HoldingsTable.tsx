@@ -15,6 +15,8 @@ type Props = {
   period?: string;
   /** When set, company name is clickable and switches to Companies view with this company. */
   onCompanyClick?: (companyId: string) => void;
+  /** Resolve company name to company_id when row has no company_id (e.g. CSV without resolution). */
+  getCompanyIdFromName?: (name: string) => string | undefined;
 };
 
 const columnHelper = createColumnHelper<Holding>();
@@ -71,7 +73,7 @@ function decodeHtmlEntities(text: unknown): string {
 }
 
 // Memoize the component to prevent unnecessary re-renders
-function HoldingsTableComponent({ data, period, onCompanyClick }: Props) {
+function HoldingsTableComponent({ data, period, onCompanyClick, getCompanyIdFromName }: Props) {
   const dataRef = useRef<number>(0);
   const searchInputRef = useRef<HTMLInputElement>(null);
   const [isPending, startTransition] = useTransition();
@@ -215,7 +217,7 @@ function HoldingsTableComponent({ data, period, onCompanyClick }: Props) {
         cell: (c) => {
           const name = c.getValue() ?? '';
           const row = c.row.original as any;
-          const companyId = row?.company_id as string | undefined;
+          const companyId = (row?.company_id as string | undefined) ?? (typeof name === 'string' ? getCompanyIdFromName?.(name) : undefined);
           const profile = companyId ? companyProfiles[companyId] : undefined;
           const parts = [
             profile?.description?.trim(),
@@ -407,7 +409,7 @@ function HoldingsTableComponent({ data, period, onCompanyClick }: Props) {
         enableSorting: false,
       }),
     ],
-    [period, companyProfiles, onCompanyClick]
+    [period, companyProfiles, onCompanyClick, getCompanyIdFromName]
   );
 
   const table = useReactTable({

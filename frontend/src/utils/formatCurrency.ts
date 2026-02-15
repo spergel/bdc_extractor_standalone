@@ -1,24 +1,32 @@
 /**
  * Standard currency formatting for the app.
  *
- * CONVENTION:
- * - Holdings and company_detail store amounts in THOUSANDS (e.g. fair_value = 50000 means $50M).
- * - We display everything as millions ($M) or billions ($B) with an explicit unit so it's never ambiguous.
- * - Use these helpers everywhere so labels stay consistent.
+ * DATA UNITS (single source of truth):
+ * - Investments/holdings CSVs and in-memory Holding: amounts in THOUSANDS (e.g. 50000 = $50M).
+ * - company_exposures.csv: total_exposure_millions is in MILLIONS.
+ * - company_detail.json (by_bdc, by_maturity, by_investment_type): values are in MILLIONS.
+ * - portfolio_summaries / industry_summaries: total_fair_value_millions, etc. are in MILLIONS.
+ *
+ * We display as "$X.X M" or "$X.XX B" using these helpers so all views are consistent.
  */
 
-/** Format a value stored in thousands as display string with explicit unit: "$1.5 M", "$500 M", "$1.2 B" */
+/** Format a value stored in THOUSANDS as display string: "$0.5 M", "$50.00 M", "$1.20 B" */
 export function formatThousandsAsCurrency(thousands: number): string {
-  if (thousands >= 1e6) return `$${(thousands / 1e6).toFixed(2)} B`;
-  if (thousands >= 1e3) return `$${(thousands / 1e3).toFixed(2)} B`;
-  return `$${thousands.toFixed(1)} M`;
+  if (typeof thousands !== 'number' || Number.isNaN(thousands)) return '—';
+  const abs = Math.abs(thousands);
+  const sign = thousands < 0 ? '-' : '';
+  if (abs >= 1e6) return `${sign}$${(abs / 1e6).toFixed(2)} B`;
+  if (abs >= 1e3) return `${sign}$${(abs / 1e3).toFixed(2)} M`;
+  return `${sign}$${(abs / 1e3).toFixed(2)} M`;
 }
 
-/** Format a value already in millions (e.g. company_exposures total_exposure_millions) as "$1.5 M", "$500 M", "$1.2 B" */
+/** Format a value already in MILLIONS (company_exposures, company_detail, portfolio_summaries) as "$1.5 M", "$1.20 B" */
 export function formatMillionsAsCurrency(millions: number): string {
-  if (millions >= 1e6) return `$${(millions / 1e6).toFixed(2)} B`;
-  if (millions >= 1e3) return `$${(millions / 1e3).toFixed(2)} B`;
-  return `$${millions.toFixed(1)} M`;
+  if (typeof millions !== 'number' || Number.isNaN(millions)) return '—';
+  const abs = Math.abs(millions);
+  const sign = millions < 0 ? '-' : '';
+  if (abs >= 1000) return `${sign}$${(abs / 1000).toFixed(2)} B`;
+  return `${sign}$${abs.toFixed(2)} M`;
 }
 
 /** Column header suffix for dollar amounts that are displayed in millions */

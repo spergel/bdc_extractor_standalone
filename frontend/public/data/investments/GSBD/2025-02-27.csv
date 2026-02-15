@@ -1,19 +1,19 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,data_quality_flags,ticker,filing_date
 MPI Engineered Technologies LLC,co_1d789c588739,Second Lien,Automotive,,12.00,N/A,,2025-07-15,18283,16741,14809,,,,,,,GSBD,2025-02-27
-Wine.com LLC,co_841f07d85e55,Second Lien,Food & Beverage,5.38,12.00,SOFR,12.00,,2027-04-03,9550,10168,10123,,,,,,GSBD,2025-02-27
+Wine.com LLC,co_f81ab0fa38d1,Second Lien,Food & Beverage,5.38,12.00,SOFR,12.00,,2027-04-03,9550,10168,10123,,,,,,GSBD,2025-02-27
 Chase Industries Inc.,co_37ebfa6e2346,Second Lien,Construction,,10.00,N/A,,2025-11-11,12150,9714,1701,,,,,,,GSBD,2025-02-27
 Animal Supply Intermediate LLC,co_c186a40d8fbd,Second Lien,Business Services,,7.00,N/A,,2025-11-14,10470,9031,,,,,,,,GSBD,2025-02-27
-Genesis Acquisition Co,co_41e51ec8c5c4,Second Lien,Financial Services,14.47,,SOFR,9.00,,2026-07-31,17000,16290,16915,,,,,,GSBD,2025-02-27
-Genesis Acquisition Co,co_41e51ec8c5c4,Second Lien,Financial Services,14.47,,SOFR,9.00,,2026-07-31,13890,13715,13821,,,,,,GSBD,2025-02-27
-Genesis Acquisition Co,co_41e51ec8c5c4,Second Lien,Financial Services,14.47,,SOFR,9.00,,2026-07-31,4939,4846,4914,,,,,,GSBD,2025-02-27
-Genesis Acquisition Co,co_41e51ec8c5c4,Second Lien,Financial Services,14.47,,SOFR,9.00,,2026-07-31,4300,4121,4279,,,,,,GSBD,2025-02-27
+Genesis Acquisition Co,co_50b88ceaea93,Second Lien,Financial Services,14.47,,SOFR,9.00,,2026-07-31,17000,16290,16915,,,,,,GSBD,2025-02-27
+Genesis Acquisition Co,co_50b88ceaea93,Second Lien,Financial Services,14.47,,SOFR,9.00,,2026-07-31,13890,13715,13821,,,,,,GSBD,2025-02-27
+Genesis Acquisition Co,co_50b88ceaea93,Second Lien,Financial Services,14.47,,SOFR,9.00,,2026-07-31,4939,4846,4914,,,,,,GSBD,2025-02-27
+Genesis Acquisition Co,co_50b88ceaea93,Second Lien,Financial Services,14.47,,SOFR,9.00,,2026-07-31,4300,4121,4279,,,,,,GSBD,2025-02-27
 Wine.com Inc.,co_f81ab0fa38d1,Other Debt,Food & Beverage,2.38,15.00,SOFR,15.00,,2027-04-03,9792,14741,15006,,,,,,GSBD,2025-02-27
-KDOR Holdings,co_2a9bdb4d61d2,Warrants,Manufacturing,,,N/A,,2020-06-22,,59,0,,,,,,,GSBD,2025-02-27
-KDOR Holdings,co_2a9bdb4d61d2,Warrants,Manufacturing,,,N/A,,2020-05-29,,2812,,,,,,,,GSBD,2025-02-27
-KDOR Holdings,co_2a9bdb4d61d2,Warrants,Manufacturing,,,N/A,,2020-05-29,,294,,,,,,,,GSBD,2025-02-27
-CloudBees,co_4cc2f0d8f9a3,Warrants,Software,,,N/A,,2021-11-24,,333980,1849,244,,,,,fair_value_suspicious_vs_size,GSBD,2025-02-27
+KDOR Holdings,co_cf37bf5f167b,Warrants,Manufacturing,,,N/A,,2020-06-22,,59,0,,,,,,,GSBD,2025-02-27
+KDOR Holdings,co_cf37bf5f167b,Warrants,Manufacturing,,,N/A,,2020-05-29,,2812,,,,,,,,GSBD,2025-02-27
+KDOR Holdings,co_cf37bf5f167b,Warrants,Manufacturing,,,N/A,,2020-05-29,,294,,,,,,,,GSBD,2025-02-27
+CloudBees,co_288c1fdb3198,Warrants,Software,,,N/A,,2021-11-24,,333980,1849,244,,,,,fair_value_suspicious_vs_size,GSBD,2025-02-27
 Blast Bidco Inc.,co_a35b96797289,First Lien,Retail,,,SOFR,6.00%,,2029-10-05,522,-13,-13,,-13,,,,GSBD,2025-02-27
-A Place For Mom,co_65ab351e6e46,First Lien,Other,9.97%,,SOFR,4.50%,,2026-02-10,7233,7221,6510,,7221,,,,GSBD,2025-02-27
+A Place For Mom,co_16f303280b98,First Lien,Other,9.97%,,SOFR,4.50%,,2026-02-10,7233,7221,6510,,7221,,,,GSBD,2025-02-27
 Assembly Intermediate LLC,co_313b73e899fa,First Lien,Other,11.45%,,SOFR,6.00%,,2027-10-19,43991,43377,43661,,43377,,,,GSBD,2025-02-27
 Assembly Intermediate LLC,co_313b73e899fa,Revolver,Other,11.45%,,SOFR,6.00%,,2027-10-19,10998,7565,7616,,7565,,,,GSBD,2025-02-27
 Assembly Intermediate LLC,co_313b73e899fa,Revolver,Other,,,SOFR,6.00%,,2027-10-19,4399,-57,-33,,-57,,,,GSBD,2025-02-27
@@ -49,13 +49,13 @@ Wellness AcquisitionCo Inc.,co_91120f8de721,First Lien,Software,9.96%,,SOFR,5.50
 Wellness AcquisitionCo Inc.,co_91120f8de721,Delayed Draw,Software,9.96%,,SOFR,5.50%,,2027-01-20,3985,1754,1765,,,,,,GSBD,2025-02-27
 Wellness AcquisitionCo Inc.,co_91120f8de721,Delayed Draw,Software,,,SOFR,5.50%,,2027-01-20,2600,-18,-13,,,,,,GSBD,2025-02-27
 Xactly Corp.,co_bf8340147b1d,First Lien,Software,10.86%,,SOFR,6.25%,,2027-07-30,62025,61394,61715,,,,,,GSBD,2025-02-27
-NFM & J,co_10fa131155aa,First Lien,Business Services,11.23%,,SOFR,5.75%,,2027-11-30,16908,16668,16570,,,,,,GSBD,2025-02-27
-NFM & J,co_10fa131155aa,Delayed Draw,Business Services,,,SOFR,5.75%,,2027-11-30,2992,-40,-60,,,,,,GSBD,2025-02-27
+NFM & J,co_f4e17f4db8a5,First Lien,Business Services,11.23%,,SOFR,5.75%,,2027-11-30,16908,16668,16570,,,,,,GSBD,2025-02-27
+NFM & J,co_f4e17f4db8a5,Delayed Draw,Business Services,,,SOFR,5.75%,,2027-11-30,2992,-40,-60,,,,,,GSBD,2025-02-27
 Pluralsight,co_5097e1803107,First Lien,Business Services,13.56%,,SOFR,8.00%,,2027-04-06,75915,74966,72119,,,,,,GSBD,2025-02-27
 Pluralsight,co_5097e1803107,Delayed Draw,Business Services,13.52%,,SOFR,8.00%,,2027-04-06,5100,3903,3708,,,,,,GSBD,2025-02-27
-HowlCO,co_067a79eb17e4,First Lien,Real Estate,12.08%,,SOFR,6.00%,,2026-10-23,34868,34548,33125,,,,,,GSBD,2025-02-27
-HowlCO,co_067a79eb17e4,First Lien,Real Estate,11.53%,,SOFR,6.00%,,2026-10-23,11284,11217,10720,,,,,,GSBD,2025-02-27
-HowlCO,co_067a79eb17e4,First Lien,Real Estate,12.08%,,SOFR,6.00%,,2026-10-23,10696,10634,10161,,,,,,GSBD,2025-02-27
+HowlCO,co_f43ecd650458,First Lien,Real Estate,12.08%,,SOFR,6.00%,,2026-10-23,34868,34548,33125,,,,,,GSBD,2025-02-27
+HowlCO,co_f43ecd650458,First Lien,Real Estate,11.53%,,SOFR,6.00%,,2026-10-23,11284,11217,10720,,,,,,GSBD,2025-02-27
+HowlCO,co_f43ecd650458,First Lien,Real Estate,12.08%,,SOFR,6.00%,,2026-10-23,10696,10634,10161,,,,,,GSBD,2025-02-27
 MRI Software,co_9273c7ffbb6e,First Lien,Real Estate,10.95%,,SOFR,5.50%,,2027-02-10,22980,22408,22434,,,,,,GSBD,2025-02-27
 MRI Software,co_9273c7ffbb6e,First Lien,Real Estate,10.95%,,SOFR,5.50%,,2026-02-10,6469,6452,6316,,,,,,GSBD,2025-02-27
 MRI Software,co_9273c7ffbb6e,Delayed Draw,Real Estate,,,SOFR,5.50%,,2027-02-10,1612,-16,-38,,,,,,GSBD,2025-02-27
@@ -134,10 +134,10 @@ Country Fresh Holding Company Inc.,co_45fc648d6d51,Common Equity,Food & Beverage
 Planet DDS,co_49f80a1c340f,Delayed Draw,Automotive,11.98%,,SOFR,7.50%,,2028-07-18,16300,11415,11374,,11415,,,,GSBD,2025-02-27
 Planet DDS,co_49f80a1c340f,Delayed Draw,Automotive,11.98%,,SOFR,7.50%,,2028-07-18,1815,522,540,,522,,,,GSBD,2025-02-27
 Planet DDS,co_49f80a1c340f,First Lien,Automotive,11.98%,,SOFR,7.50%,,2028-07-18,2255,2240,2249,,2240,,,,GSBD,2025-02-27
-PlanSource Holdings,co_1737aa5fb0e7,First Lien,Automotive,10.64%,,SOFR,5.50%,,2026-12-30,56720,56230,56436,,56230,,,,GSBD,2025-02-27
-PlanSource Holdings,co_1737aa5fb0e7,First Lien,Automotive,10.64%,,SOFR,5.50%,,2026-12-30,905,900,900,,900,,,,GSBD,2025-02-27
-PlanSource Holdings,co_1737aa5fb0e7,First Lien,Automotive,10.64%,,SOFR,5.50%,,2026-12-30,905,901,900,,901,,,,GSBD,2025-02-27
-PlanSource Holdings,co_1737aa5fb0e7,Delayed Draw,Automotive,,,SOFR,5.50%,,2026-12-30,7824,39,39,,39,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2025-02-27
+PlanSource Holdings,co_5829b6257523,First Lien,Automotive,10.64%,,SOFR,5.50%,,2026-12-30,56720,56230,56436,,56230,,,,GSBD,2025-02-27
+PlanSource Holdings,co_5829b6257523,First Lien,Automotive,10.64%,,SOFR,5.50%,,2026-12-30,905,900,900,,900,,,,GSBD,2025-02-27
+PlanSource Holdings,co_5829b6257523,First Lien,Automotive,10.64%,,SOFR,5.50%,,2026-12-30,905,901,900,,901,,,,GSBD,2025-02-27
+PlanSource Holdings,co_5829b6257523,Delayed Draw,Automotive,,,SOFR,5.50%,,2026-12-30,7824,39,39,,39,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2025-02-27
 WebPT,co_1b92586755da,First Lien,Automotive,10.86%,,SOFR,6.25%,,2028-01-18,25126,24113,23995,,24113,,,,GSBD,2025-02-27
 WebPT,co_1b92586755da,First Lien,Automotive,10.86%,,SOFR,6.25%,,2028-01-18,5534,5485,5285,,5485,,,,GSBD,2025-02-27
 WebPT,co_1b92586755da,Delayed Draw,Automotive,11.12%,,SOFR,6.25%,,2028-01-18,2617,1347,1266,,1347,,,,GSBD,2025-02-27
@@ -173,16 +173,16 @@ Total Vision LLC,co_b3eef56e7679,Revolver,Healthcare Services,,,SOFR,6.00%,,2026
 USN Opco LLC,co_be13350d3aeb,First Lien,Healthcare Services,11.25%,,SOFR,5.75%,,2026-12-21,21432,21194,20789,,,,,,GSBD,2025-02-27
 USN Opco LLC,co_be13350d3aeb,First Lien,Healthcare Services,11.25%,,SOFR,5.75%,,2026-12-21,9610,9503,9322,,,,,,GSBD,2025-02-27
 USN Opco LLC,co_be13350d3aeb,First Lien,Healthcare Services,11.25%,,SOFR,5.75%,,2026-12-21,7450,7362,7226,,,,,,GSBD,2025-02-27
-Coretrust Purchasing Group,co_1f89350e6fdd,First Lien,Financial Services,9.61%,,SOFR,5.25%,,2029-10-01,9340,9240,9293,,9240,9340,,,GSBD,2025-02-27
-Coretrust Purchasing Group,co_1f89350e6fdd,Revolver,Financial Services,,,SOFR,5.25%,,2029-10-01,4840,-44,-24,,-44,4840,,,GSBD,2025-02-27
-Coretrust Purchasing Group,co_1f89350e6fdd,Revolver,Financial Services,,,SOFR,5.25%,,2029-10-01,113,-2,-1,,-2,113,,,GSBD,2025-02-27
-Fullsteam Operations,co_e59abc7ae819,First Lien,Financial Services,12.91%,,SOFR,8.25%,,2029-11-27,34889,33834,34889,,33834,34889,,,GSBD,2025-02-27
-Fullsteam Operations,co_e59abc7ae819,First Lien,Financial Services,12.91%,,SOFR,8.25%,,2029-11-27,10979,10682,10979,,10682,10979,,,GSBD,2025-02-27
-Fullsteam Operations,co_e59abc7ae819,First Lien,Financial Services,12.91%,,SOFR,8.25%,,2029-11-27,4880,4750,4880,,4750,4880,,,GSBD,2025-02-27
-Fullsteam Operations,co_e59abc7ae819,Revolver,Financial Services,11.65%,,SOFR,7.00%,,2029-11-27,25712,2202,1999,,2202,25712,,,GSBD,2025-02-27
-Fullsteam Operations,co_e59abc7ae819,Revolver,Financial Services,,,SOFR,8.25%,,2029-11-27,7938,-58,-119,,-58,7938,,,GSBD,2025-02-27
-Fullsteam Operations,co_e59abc7ae819,Revolver,Financial Services,11.66%,,SOFR,7.00%,,2029-11-27,6428,1765,1723,,1765,6428,,,GSBD,2025-02-27
-Fullsteam Operations,co_e59abc7ae819,Revolver,Financial Services,,,SOFR,8.25%,,2029-11-27,19,,,,,,,,GSBD,2025-02-27
+Coretrust Purchasing Group,co_aa2951371aee,First Lien,Financial Services,9.61%,,SOFR,5.25%,,2029-10-01,9340,9240,9293,,9240,9340,,,GSBD,2025-02-27
+Coretrust Purchasing Group,co_aa2951371aee,Revolver,Financial Services,,,SOFR,5.25%,,2029-10-01,4840,-44,-24,,-44,4840,,,GSBD,2025-02-27
+Coretrust Purchasing Group,co_aa2951371aee,Revolver,Financial Services,,,SOFR,5.25%,,2029-10-01,113,-2,-1,,-2,113,,,GSBD,2025-02-27
+Fullsteam Operations,co_e7812d309db0,First Lien,Financial Services,12.91%,,SOFR,8.25%,,2029-11-27,34889,33834,34889,,33834,34889,,,GSBD,2025-02-27
+Fullsteam Operations,co_e7812d309db0,First Lien,Financial Services,12.91%,,SOFR,8.25%,,2029-11-27,10979,10682,10979,,10682,10979,,,GSBD,2025-02-27
+Fullsteam Operations,co_e7812d309db0,First Lien,Financial Services,12.91%,,SOFR,8.25%,,2029-11-27,4880,4750,4880,,4750,4880,,,GSBD,2025-02-27
+Fullsteam Operations,co_e7812d309db0,Revolver,Financial Services,11.65%,,SOFR,7.00%,,2029-11-27,25712,2202,1999,,2202,25712,,,GSBD,2025-02-27
+Fullsteam Operations,co_e7812d309db0,Revolver,Financial Services,,,SOFR,8.25%,,2029-11-27,7938,-58,-119,,-58,7938,,,GSBD,2025-02-27
+Fullsteam Operations,co_e7812d309db0,Revolver,Financial Services,11.66%,,SOFR,7.00%,,2029-11-27,6428,1765,1723,,1765,6428,,,GSBD,2025-02-27
+Fullsteam Operations,co_e7812d309db0,Revolver,Financial Services,,,SOFR,8.25%,,2029-11-27,19,,,,,,,,GSBD,2025-02-27
 Ncontracts LLC,co_c9eacca578bb,Revolver,Software,,,SOFR,6.50%,,2029-12-11,987,-24,-25,,-24,987,,,GSBD,2025-02-27
 Onyx CenterSource Inc.,co_ecef5e0668a6,First Lien,Software,12.25%,,SOFR,6.75%,,2028-12-15,13953,13642,13640,,13642,,,,GSBD,2025-02-27
 Onyx CenterSource Inc.,co_ecef5e0668a6,First Lien,Software,11.24%,,SOFR,6.50%,,2028-12-15,13814,13554,13814,,13554,,,,GSBD,2025-02-27
@@ -195,15 +195,15 @@ Rubrik Inc.,co_55b5f7cfdcd4,Revolver,Software,12.52%,,SOFR,7.00%,,2028-08-17,480
 Singlewire Software LLC,co_bf2aa95c7475,First Lien,Software,11.35%,,SOFR,6.00%,,2029-05-10,802,780,786,,780,,,,GSBD,2025-02-27
 Singlewire Software LLC,co_bf2aa95c7475,Revolver,Software,,,SOFR,6.00%,,2029-05-10,129,-3,-3,,-3,129,,,GSBD,2025-02-27
 Smarsh Inc.,co_d80561116050,First Lien,Software,11.10%,,SOFR,5.75%,,2029-02-16,26667,26455,26400,,26455,,,,GSBD,2025-02-27
-Bullhorn,co_8ae21a76ef9c,First Lien,Business Services,9.36%,,SOFR,5.00%,,2029-10-01,429,420,429,,420,,,,GSBD,2025-02-27
-Chronicle Bidco,co_1a2c46ef6148,First Lien,Business Services,10.76%,,SOFR,6.25%,,2029-05-18,45042,43294,44591,,43294,,,,GSBD,2025-02-27
-Chronicle Bidco,co_1a2c46ef6148,Revolver,Business Services,10.76%,,SOFR,6.25%,,2029-05-18,27989,1201,1179,,1201,27989,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2025-02-27
-Chronicle Bidco,co_1a2c46ef6148,Revolver,Business Services,10.76%,,SOFR,6.25%,,2029-05-18,4753,639,713,,639,4753,,,GSBD,2025-02-27
+Bullhorn,co_14daf6316e71,First Lien,Business Services,9.36%,,SOFR,5.00%,,2029-10-01,429,420,429,,420,,,,GSBD,2025-02-27
+Chronicle Bidco,co_5f1c6e818851,First Lien,Business Services,10.76%,,SOFR,6.25%,,2029-05-18,45042,43294,44591,,43294,,,,GSBD,2025-02-27
+Chronicle Bidco,co_5f1c6e818851,Revolver,Business Services,10.76%,,SOFR,6.25%,,2029-05-18,27989,1201,1179,,1201,27989,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2025-02-27
+Chronicle Bidco,co_5f1c6e818851,Revolver,Business Services,10.76%,,SOFR,6.25%,,2029-05-18,4753,639,713,,639,4753,,,GSBD,2025-02-27
 Diligent,co_043d566b8b97,First Lien,Business Services,10.09%,,SOFR,5.00%,,2030-08-02,58189,57788,57753,,57788,,,,GSBD,2025-02-27
 Diligent,co_043d566b8b97,First Lien,Business Services,10.09%,,SOFR,5.00%,,2030-08-02,9975,9906,9900,,9906,,,,GSBD,2025-02-27
 Diligent,co_043d566b8b97,Revolver,Business Services,,,SOFR,5.00%,,2030-08-02,13585,-91,-102,,-91,13585,,,GSBD,2025-02-27
 Diligent,co_043d566b8b97,Revolver,Business Services,,,SOFR,5.00%,,2030-08-02,7450,-50,-56,,-50,7450,,,GSBD,2025-02-27
-Engage2Excel,co_37cb5930bb77,First Lien,Business Services,10.75%,,SOFR,6.50%,,2029-07-01,920,907,906,,907,,,,GSBD,2025-02-27
+Engage2Excel,co_c8acb7bd3de5,First Lien,Business Services,10.75%,,SOFR,6.50%,,2029-07-01,920,907,906,,907,,,,GSBD,2025-02-27
 SpendMend LLC,co_13071fb20884,Revolver,Healthcare Services,,,SOFR,5.00%,,2028-03-01,4267,-21,-43,,-21,4267,4267,,GSBD,2025-02-27
 SpendMend LLC,co_13071fb20884,Revolver,Healthcare Services,,,SOFR,5.00%,,2028-03-01,83,-1,-1,,-1,83,83,,GSBD,2025-02-27
 SpendMend LLC,co_13071fb20884,First Lien,Healthcare Services,9.48%,,SOFR,5.00%,,2028-03-01,621,615,615,,615,,,,GSBD,2025-02-27

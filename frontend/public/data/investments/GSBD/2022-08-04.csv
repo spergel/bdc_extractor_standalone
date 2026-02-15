@@ -1,15 +1,15 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,data_quality_flags,ticker,filing_date
-4L Holdings,co_0f14bb012e75,First Lien,Transportation,8.04,,LIBOR,6.25,2019-05-07,2024-05-07,13833,13781,13210,0.8,13781,,,,GSBD,2022-08-04
-ABG Intermediate Holdings 2,co_22b5b201931a,First Lien,Retail,5.25,,LIBOR,3.25,2017-09-29,2024-09-27,4317,4309,4209,0.3,4309,,,,GSBD,2022-08-04
+4L Holdings,co_1518a474e6f5,First Lien,Transportation,8.04,,LIBOR,6.25,2019-05-07,2024-05-07,13833,13781,13210,0.8,13781,,,,GSBD,2022-08-04
+ABG Intermediate Holdings 2,co_bb6c72628ca7,First Lien,Retail,5.25,,LIBOR,3.25,2017-09-29,2024-09-27,4317,4309,4209,0.3,4309,,,,GSBD,2022-08-04
 ADG LLC,co_d856d656e66b,First Lien,Healthcare Services,11.25,,LIBOR,9.50,2021-05-14,2028-05-14,11486,11339,11256,0.7,11339,,,,GSBD,2022-08-04
-AHP Health Partners,co_9e3c41f99720,First Lien,Healthcare Services,6.04,,LIBOR,4.25,2021-08-24,2028-08-24,4963,4919,4714,0.3,4919,,,,GSBD,2022-08-04
+AHP Health Partners,co_dc5bde9eb4d2,First Lien,Healthcare Services,6.04,,LIBOR,4.25,2021-08-24,2028-08-24,4963,4919,4714,0.3,4919,,,,GSBD,2022-08-04
 Aimbridge Acquisition,co_66476689bdc0,First Lien,Food & Beverage,5.54,,LIBOR,3.75,2019-02-02,2026-02-02,11841,11765,11131,0.7,11765,,,,GSBD,2022-08-04
 Alegeus Technologies,co_06ae0cd41b44,First Lien,Automotive,5.79,,LIBOR,3.75,2018-09-29,2025-09-29,10325,10294,10015,0.6,10294,,,,GSBD,2022-08-04
 Alegeus Technologies,co_06ae0cd41b44,Revolver,Automotive,,,,,2024-09-29,0,-12,-12,0.0,-12,1136,1136,,,GSBD,2022-08-04
-American Residential Services,co_cea993c9097f,First Lien,Business Services,5.29,,LIBOR,3.50,2020-10-15,2027-10-15,10890,10816,,,,,,,GSBD,2022-08-04
+American Residential Services,co_85b55d2c1e60,First Lien,Business Services,5.29,,LIBOR,3.50,2020-10-15,2027-10-15,10890,10816,,,,,,,GSBD,2022-08-04
 WhiteWater Holding Company LLC,co_37e39aba07ba,Revolver,Business Services,7.39%,,LIBOR,5.75%,,2027-12-21,2340,554,550,,,554,,,GSBD,2022-08-04
-Wine.com LLC,co_841f07d85e55,First Lien,Food & Beverage,8.44%,,LIBOR,7.00%,,2024-11-14,15400,15048,15400,,,15048,,,GSBD,2022-08-04
-Wine.com LLC,co_841f07d85e55,First Lien,Food & Beverage,8.44%,,LIBOR,7.00%,,2024-11-14,3700,3650,3700,,,3650,,,GSBD,2022-08-04
+Wine.com LLC,co_f81ab0fa38d1,First Lien,Food & Beverage,8.44%,,LIBOR,7.00%,,2024-11-14,15400,15048,15400,,,15048,,,GSBD,2022-08-04
+Wine.com LLC,co_f81ab0fa38d1,First Lien,Food & Beverage,8.44%,,LIBOR,7.00%,,2024-11-14,3700,3650,3700,,,3650,,,GSBD,2022-08-04
 WorkForce Software LLC,co_491a116db473,First Lien,Software,5.82%,3.00%,LIBOR,7.25%,,2025-07-31,22185,21441,21797,,,21441,,,GSBD,2022-08-04
 WorkForce Software LLC,co_491a116db473,First Lien,Software,5.82%,3.00%,LIBOR,7.25%,,2025-07-31,3129,3074,3074,,,3074,,,GSBD,2022-08-04
 WorkForce Software LLC,co_491a116db473,First Lien,Software,7.51%,,LIBOR,6.50%,,2025-07-31,1894,1868,1861,,,1868,,,GSBD,2022-08-04
@@ -86,15 +86,15 @@ Convene 237 Park Avenue LLC,co_177c683c2fde,First Lien,Real Estate,,2.00%,LIBOR,
 Convene 237 Park Avenue LLC,co_177c683c2fde,First Lien,Real Estate,,2.00%,LIBOR,9.50%,,2024-08-30,17408,15534,13578,,,,,,GSBD,2022-08-04
 Convene 237 Park Avenue LLC,co_177c683c2fde,Delayed Draw,Real Estate,,,LIBOR,15.00%,,2024-08-30,6100,,-122,,,,,,GSBD,2022-08-04
 CORA Health Holdings Corp.,co_74b44b473e5e,First Lien,Healthcare Services,6.75%,,LIBOR,5.75%,,2027-06-15,22663,22349,223,,,,,fair_value_suspicious_vs_size,GSBD,2022-08-04
-WhiteWater Holding Company,co_543d36ad51bb,First Lien,Consumer Products,6.50%,,LIBOR,5.75%,,2027-12-21,17519,17170,17169,,17170,,,,GSBD,2022-08-04
-WhiteWater Holding Company,co_543d36ad51bb,First Lien,Consumer Products,6.50%,,LIBOR,5.75%,,2027-12-21,5840,4266,4251,,4266,,,,GSBD,2022-08-04
-WhiteWater Holding Company,co_543d36ad51bb,First Lien,Consumer Products,,,LIBOR,5.75%,,2027-12-21,2340,-47,-47,,-47,,,,GSBD,2022-08-04
-WhiteWater Holding Company,co_543d36ad51bb,First Lien,Consumer Products,,,LIBOR,5.75%,,2027-12-21,5840,-58,-117,,-58,,,,GSBD,2022-08-04
-Wine.com,co_d3a96a576b42,First Lien,Food & Beverage,8.00%,,LIBOR,7.00%,,2024-11-14,15400,14983,15400,,14983,,,,GSBD,2022-08-04
-Wine.com,co_d3a96a576b42,First Lien,Food & Beverage,8.00%,,LIBOR,7.00%,,2024-11-14,3700,3641,3700,,3641,,,,GSBD,2022-08-04
-WorkForce Software,co_a90c4dffbb94,First Lien,Software,6.50%,1.00%,LIBOR,6.50%,,2025-07-31,21740,20891,21305,,20891,,,,GSBD,2022-08-04
-WorkForce Software,co_a90c4dffbb94,First Lien,Software,6.50%,1.00%,LIBOR,6.50%,,2025-07-31,1894,1864,1856,,1864,,,,GSBD,2022-08-04
-WSO2,co_d39a0a5f58f0,First Lien,Software,5.50%,3.00%,LIBOR,7.50%,,2026-11-04,31065,30461,30443,,30461,,,,GSBD,2022-08-04
+WhiteWater Holding Company,co_37e39aba07ba,First Lien,Consumer Products,6.50%,,LIBOR,5.75%,,2027-12-21,17519,17170,17169,,17170,,,,GSBD,2022-08-04
+WhiteWater Holding Company,co_37e39aba07ba,First Lien,Consumer Products,6.50%,,LIBOR,5.75%,,2027-12-21,5840,4266,4251,,4266,,,,GSBD,2022-08-04
+WhiteWater Holding Company,co_37e39aba07ba,First Lien,Consumer Products,,,LIBOR,5.75%,,2027-12-21,2340,-47,-47,,-47,,,,GSBD,2022-08-04
+WhiteWater Holding Company,co_37e39aba07ba,First Lien,Consumer Products,,,LIBOR,5.75%,,2027-12-21,5840,-58,-117,,-58,,,,GSBD,2022-08-04
+Wine.com,co_f81ab0fa38d1,First Lien,Food & Beverage,8.00%,,LIBOR,7.00%,,2024-11-14,15400,14983,15400,,14983,,,,GSBD,2022-08-04
+Wine.com,co_f81ab0fa38d1,First Lien,Food & Beverage,8.00%,,LIBOR,7.00%,,2024-11-14,3700,3641,3700,,3641,,,,GSBD,2022-08-04
+WorkForce Software,co_491a116db473,First Lien,Software,6.50%,1.00%,LIBOR,6.50%,,2025-07-31,21740,20891,21305,,20891,,,,GSBD,2022-08-04
+WorkForce Software,co_491a116db473,First Lien,Software,6.50%,1.00%,LIBOR,6.50%,,2025-07-31,1894,1864,1856,,1864,,,,GSBD,2022-08-04
+WSO2,co_dbe78b13ff81,First Lien,Software,5.50%,3.00%,LIBOR,7.50%,,2026-11-04,31065,30461,30443,,30461,,,,GSBD,2022-08-04
 NFM & J LP,co_f4e17f4db8a5,First Lien,Business Services,6.75%,,LIBOR,5.75%,,2027-11-30,17452,8467,8552,,,8467,,,GSBD,2022-08-04
 NFM & J LP,co_f4e17f4db8a5,First Lien,Business Services,6.75%,,LIBOR,5.75%,,2027-11-30,2992,440,439,,,440,,,GSBD,2022-08-04
 One GI LLC,co_c02000ec980f,First Lien,Healthcare Services,7.75%,,LIBOR,6.75%,,2025-12-22,22875,22492,22418,,,22492,,,GSBD,2022-08-04
@@ -130,8 +130,8 @@ Foundation Software,co_40855dc0ec72,Preferred Equity,Construction,,,N/A,,2020-08
 Governmentjobs.com Inc.,co_6c582dff3963,Preferred Equity,Software,,,N/A,,2021-12-02,,10597,10332,10332,,10332,,,,GSBD,2022-08-04
 Kawa Solar Holdings Ltd.,co_0f110165e754,Preferred Equity,Construction,,,N/A,,2016-10-25,,74168,778,,,778,,,cost_suspicious_vs_size,GSBD,2022-08-04
 MedeAnalytics Inc.,co_74f13afdb7e3,Preferred Equity,Automotive,,,N/A,,2020-10-09,,42600,41,40,,41,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2022-08-04
-Wine.com LLC,co_841f07d85e55,Preferred Equity,Food & Beverage,,,N/A,,2021-03-03,,124040,3067,3329,,3067,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2022-08-04
-Wine.com LLC,co_841f07d85e55,Preferred Equity,Food & Beverage,,,N/A,,2018-11-14,,535226,8225,12432,,8225,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2022-08-04
+Wine.com LLC,co_f81ab0fa38d1,Preferred Equity,Food & Beverage,,,N/A,,2021-03-03,,124040,3067,3329,,3067,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2022-08-04
+Wine.com LLC,co_f81ab0fa38d1,Preferred Equity,Food & Beverage,,,N/A,,2018-11-14,,535226,8225,12432,,8225,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2022-08-04
 WSO2 Inc.,co_dbe78b13ff81,Preferred Equity,Business Services,,,N/A,,2021-11-04,,561918,8876,8876,,8876,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2022-08-04
 Abacus Data Holdings Inc.,co_bfbee81a1259,Common Equity,Software,,,N/A,,2021-03-10,,29326,2933,3065,,2933,,,,GSBD,2022-08-04
 Animal Supply Holdings LLC,co_0c9328e53169,Common Equity,Business Services,,,N/A,,2020-08-14,,37500,126,,,126,,,cost_suspicious_vs_size,GSBD,2022-08-04
