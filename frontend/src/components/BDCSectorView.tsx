@@ -115,7 +115,7 @@ export function BDCSectorView({ holdings, period, onCompanyClick }: Props) {
                     {s.category}
                   </div>
                   <div className={isSelected ? 'text-[#c0c0c0]' : 'text-[#808080]'}>
-                    {s.count} pos · {expStr} ({s.percentage.toFixed(1)}%)
+                    {expStr} ({s.percentage.toFixed(1)}% of portfolio)
                   </div>
                 </button>
               );
@@ -128,9 +128,9 @@ export function BDCSectorView({ holdings, period, onCompanyClick }: Props) {
               <div className="p-2 border-b border-[#808080] flex items-center justify-between flex-wrap gap-1">
                 <span className="text-xs font-semibold text-black">{selectedSector}</span>
                 <span className="text-xs text-[#808080]">
-                  {holdingsInSector.length} positions · {formatThousandsAsCurrency(holdingsInSector.reduce((s, h) => s + getFV(h), 0))}
+                  {formatThousandsAsCurrency(holdingsInSector.reduce((s, h) => s + getFV(h), 0))}
                   {totalFV > 0 && (
-                    <> ({(holdingsInSector.reduce((s, h) => s + getFV(h), 0) / totalFV * 100).toFixed(1)}%)</>
+                    <> ({(holdingsInSector.reduce((s, h) => s + getFV(h), 0) / totalFV * 100).toFixed(1)}% of portfolio)</>
                   )}
                 </span>
               </div>

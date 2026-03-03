@@ -174,8 +174,13 @@ class LLMTableScraper:
                     # Get the raw HTML
                     table_html = str(table)
 
-                    # Extract text content for analysis
-                    table_text = table.get_text(separator=' ', strip=True)
+                    # Extract text as one line per row (cells tab-separated) so structure is preserved
+                    row_lines = []
+                    for tr in table.find_all('tr'):
+                        cells = [cell.get_text(separator=' ', strip=True) for cell in tr.find_all(['td', 'th'])]
+                        if cells:
+                            row_lines.append('\t'.join(cells))
+                    table_text = '\n'.join(row_lines) if row_lines else table.get_text(separator=' ', strip=True)
 
                     # Skip very small tables (likely not investment tables)
                     if len(table_text.strip()) < 100:
@@ -942,6 +947,29 @@ class LLMTableScraper:
         logger.info(f"Split table with {len(data_lines)} rows into {len(chunks)} chunks of ~{self.ROWS_PER_CHUNK} rows")
         return chunks
 
+    def _chunk_text_table(self, table_text: str) -> List[str]:
+        """
+        Split a large raw table (one line per row, tab-separated cells) into chunks.
+        First line is treated as header and included in each chunk.
+        """
+        lines = table_text.strip().split('\n')
+        if len(lines) <= 1:
+            return [table_text]
+
+        header_line = lines[0]
+        data_lines = lines[1:]
+
+        if len(data_lines) <= self.ROWS_PER_CHUNK:
+            return [table_text]
+
+        chunks = []
+        for i in range(0, len(data_lines), self.ROWS_PER_CHUNK):
+            chunk_lines = [header_line] + data_lines[i:i + self.ROWS_PER_CHUNK]
+            chunks.append('\n'.join(chunk_lines))
+
+        logger.info(f"Split table with {len(data_lines)} rows into {len(chunks)} chunks of ~{self.ROWS_PER_CHUNK} rows")
+        return chunks
+
     def _call_gemini(self, prompt: str, table_number: int) -> str:
         """Make a single Gemini API call and return the response text."""
         import time
@@ -994,22 +1022,19 @@ class LLMTableScraper:
         logger.info(f"📊 Table {table_number}: {len(table_html)} chars HTML, {len(table_text)} chars text")
         logger.debug(f"   First 300 chars of text: {table_text[:300]}")
         logger.debug(f"   Table has {table_html.count('<tr>')} rows (HTML <tr> count)")
-        
-        # Clean the table HTML before sending to LLM
-        cleaned_table = self._clean_table_html(table_html)
 
-        # Split into chunks if table is large
-        chunks = self._chunk_markdown_table(cleaned_table)
+        # Use raw table text (one line per row, tab-separated cells) - no markdown table building
+        chunks = self._chunk_text_table(table_text)
 
         try:
             all_csv_rows = []  # Collects all parsed CSV rows across chunks
             chunk_count = len(chunks)
 
-            for chunk_idx, chunk_md in enumerate(chunks):
+            for chunk_idx, chunk_text in enumerate(chunks):
                 if chunk_count > 1:
                     logger.info(f"Processing chunk {chunk_idx + 1}/{chunk_count} for table {table_number}")
 
-                prompt = self._build_llm_prompt(chunk_md, table_text, table_number, filing_info, previous_table_csv)
+                prompt = self._build_llm_prompt(chunk_text, table_number, filing_info, previous_table_csv)
 
                 try:
                     llm_response = self._call_gemini(prompt, table_number)
@@ -1047,14 +1072,13 @@ class LLMTableScraper:
 
         return None
 
-    def _build_llm_prompt(self, table_html: str, table_text: str, table_number: int,
+    def _build_llm_prompt(self, table_content: str, table_number: int,
                          filing_info: Dict[str, Any], previous_table_csv: Optional[str] = None) -> str:
         """
         Build the LLM prompt for table parsing.
 
         Args:
-            table_html: Raw HTML table
-            table_text: Plain text table content
+            table_content: Raw table text (one line per row, tab-separated cells)
             table_number: Table number
             filing_info: Filing metadata (may include 'unit_scale': "thousands"|"millions"|"units")
             previous_table_csv: CSV from previous table for context
@@ -1062,9 +1086,9 @@ class LLMTableScraper:
         Returns:
             Complete LLM prompt
         """
-        # Truncate very large tables for the prompt (raised limit for chunked processing)
-        if len(table_html) > 50000:
-            table_html = table_html[:50000] + "...[truncated]"
+        # Truncate very large content for the prompt
+        if len(table_content) > 50000:
+            table_content = table_content[:50000] + "\n...[truncated]"
 
         # Build unit scale instruction
         unit_instruction = ""
@@ -1102,7 +1126,7 @@ PREVIOUS TABLE CONTEXT (for reference - industry and investment_type may span ac
 NOTE: If you see industry categories or investment types in the previous table, they may continue in this table.
 """
         
-        prompt = f"""Extract investment data from this SEC filing table. The table has been cleaned and converted to markdown format.
+        prompt = f"""Extract investment data from this SEC filing table. The table is provided as raw text: one line per row, cells separated by tabs.
 {unit_instruction}
 {scale_check}
 OUTPUT: CSV with EXACTLY 16 columns in this exact order:
@@ -1147,11 +1171,11 @@ TABLE CONTEXT:
 - Filing: {filing_info.get('ticker', 'Unknown')} {filing_info.get('filing_type', 'Unknown')} for {filing_info.get('filing_date', 'Unknown')}
 - Table {table_number + 1} extracted from SEC filing
 {previous_context}
-CLEANED TABLE (Markdown format):
-{table_html}
+TABLE (one line per row, tab-separated cells):
+{table_content}
 
 INSTRUCTIONS:
-1. Analyze the markdown table structure and identify which columns contain which data types
+1. Each line is one row; cells are separated by tabs. Identify which columns contain which data types
 2. Map the data to the 16 required CSV columns in the exact order specified above
 3. Clean and normalize the data:
    - Remove $ signs and commas from numbers
@@ -1764,13 +1788,14 @@ XYZ Corp,Common Equity,Software,,,N/A,N/A,2022-06-01,,,1000,1200,0.6,1000,,
             accession_number = accession_match.group(1) if accession_match else "unknown"
 
             # Fetch the actual filing content using the index URL
-            # Optimization: Only download HTM files for table scraping
+            # Optimization: Only download the main filing .htm (exclude exhibit ex*.htm files)
             filing_result = self.sec_client.fetch_filing_by_index_url(
                 index_url=index_url,
                 ticker=ticker,
                 filing_type=filing_type,
                 save_to_file=False,
-                document_types=['.htm', '.html']
+                document_types=['.htm', '.html'],
+                main_document_only=True,
             )
 
             if not filing_result:
@@ -2072,11 +2097,12 @@ XYZ Corp,Common Equity,Software,,,N/A,N/A,2022-06-01,,,1000,1200,0.6,1000,,
             'ticker': filing_result.ticker,
             'filing_type': filing_result.filing_type,
             'filing_date': filing_result.filing_date,
-            'accession_number': filing_result.accession_number
+            'accession_number': filing_result.accession_number,
+            'unit_scale': 'thousands',  # BDC schedules are typically in thousands
         }
-        # For debug, we don't have previous CSV, so pass None
-        cleaned_table = self._clean_table_html(table_html)
-        prompt = self._build_llm_prompt(cleaned_table, table_text, table_number, filing_info, None)
+        # For debug, we don't have previous CSV, so pass None; use first chunk of raw text if large
+        chunks = self._chunk_text_table(table_text)
+        prompt = self._build_llm_prompt(chunks[0], table_number, filing_info, None)
 
         with open(prompt_path, 'w', encoding='utf-8') as f:
             f.write(prompt)

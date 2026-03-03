@@ -1,0 +1,618 @@
+ticker,filing_date,statement_label,statement_type,line_item,concept,value,context_key,start_date,end_date,instant_date,duration_days,level,is_abstract,preferred_label,order_index
+KBDC,2025-05-12,income_statement,income_statement,AccruedIncomeTaxesCurrent,AccruedIncomeTaxesCurrent,825000,c7,,,,,,False,AccruedIncomeTaxesCurrent,
+KBDC,2025-05-12,income_statement,income_statement,InvestmentIncomeInterest,InvestmentIncomeInterest,55014000,c8,,,,,,False,InvestmentIncomeInterest,
+KBDC,2025-05-12,income_statement,income_statement,InvestmentIncomeInterest,InvestmentIncomeInterest,46237000,c9,,,,,,False,InvestmentIncomeInterest,
+KBDC,2025-05-12,income_statement,income_statement,InvestmentIncomeDividend,InvestmentIncomeDividend,231000,c0,,,,,,False,InvestmentIncomeDividend,
+KBDC,2025-05-12,income_statement,income_statement,InvestmentIncomeDividend,InvestmentIncomeDividend,257000,c10,,,,,,False,InvestmentIncomeDividend,
+KBDC,2025-05-12,income_statement,income_statement,InvestmentIncomeNonoperating,InvestmentIncomeNonoperating,55245000,c0,,,,,,False,InvestmentIncomeNonoperating,
+KBDC,2025-05-12,income_statement,income_statement,InvestmentIncomeNonoperating,InvestmentIncomeNonoperating,46494000,c10,,,,,,False,InvestmentIncomeNonoperating,
+KBDC,2025-05-12,income_statement,income_statement,ManagementFeeExpense,ManagementFeeExpense,5131000,c0,,,,,,False,ManagementFeeExpense,
+KBDC,2025-05-12,income_statement,income_statement,ManagementFeeExpense,ManagementFeeExpense,3522000,c10,,,,,,False,ManagementFeeExpense,
+KBDC,2025-05-12,income_statement,income_statement,IncentiveFeeExpense,IncentiveFeeExpense,4490000,c0,,,,,,False,IncentiveFeeExpense,
+KBDC,2025-05-12,income_statement,income_statement,IncentiveFeeExpense,IncentiveFeeExpense,2631000,c10,,,,,,False,IncentiveFeeExpense,
+KBDC,2025-05-12,income_statement,income_statement,InterestExpenseOperating,InterestExpenseOperating,17125000,c0,,,,,,False,InterestExpenseOperating,
+KBDC,2025-05-12,income_statement,income_statement,InterestExpenseOperating,InterestExpenseOperating,15656000,c10,,,,,,False,InterestExpenseOperating,
+KBDC,2025-05-12,income_statement,income_statement,NoninterestExpenseDirectorsFees,NoninterestExpenseDirectorsFees,158000,c0,,,,,,False,NoninterestExpenseDirectorsFees,
+KBDC,2025-05-12,income_statement,income_statement,NoninterestExpenseDirectorsFees,NoninterestExpenseDirectorsFees,147000,c10,,,,,,False,NoninterestExpenseDirectorsFees,
+KBDC,2025-05-12,income_statement,income_statement,ExciseTaxExpenseBenefit,ExciseTaxExpenseBenefit,-43000,c0,,,,,,False,ExciseTaxExpenseBenefit,
+KBDC,2025-05-12,income_statement,income_statement,OtherGeneralAndAdministrativeExpense,OtherGeneralAndAdministrativeExpense,581000,c0,,,,,,False,OtherGeneralAndAdministrativeExpense,
+KBDC,2025-05-12,income_statement,income_statement,OtherGeneralAndAdministrativeExpense,OtherGeneralAndAdministrativeExpense,471000,c10,,,,,,False,OtherGeneralAndAdministrativeExpense,
+KBDC,2025-05-12,income_statement,income_statement,OperatingExpenses,OperatingExpenses,27787000,c0,,,,,,False,OperatingExpenses,
+KBDC,2025-05-12,income_statement,income_statement,OperatingExpenses,OperatingExpenses,22691000,c10,,,,,,False,OperatingExpenses,
+KBDC,2025-05-12,income_statement,income_statement,OperatingIncomeLoss,OperatingIncomeLoss,-26504000,c0,,,,,,False,OperatingIncomeLoss,
+KBDC,2025-05-12,income_statement,income_statement,OperatingIncomeLoss,OperatingIncomeLoss,-22691000,c10,,,,,,False,OperatingIncomeLoss,
+KBDC,2025-05-12,income_statement,income_statement,NetInvestmentIncome,NetInvestmentIncome,28741000,c0,,,,,,False,NetInvestmentIncome,
+KBDC,2025-05-12,income_statement,income_statement,NetInvestmentIncome,NetInvestmentIncome,23803000,c10,,,,,,False,NetInvestmentIncome,
+KBDC,2025-05-12,income_statement,income_statement,IncomeTaxExpenseBenefit,IncomeTaxExpenseBenefit,581000,c0,,,,,,False,IncomeTaxExpenseBenefit,
+KBDC,2025-05-12,income_statement,income_statement,NetIncomeLoss,NetIncomeLoss,22215000,c0,,,,,,False,NetIncomeLoss,
+KBDC,2025-05-12,income_statement,income_statement,NetIncomeLoss,NetIncomeLoss,27755000,c10,,,,,,False,NetIncomeLoss,
+KBDC,2025-05-12,income_statement,income_statement,IncomeLossFromContinuingOperationsPerDilutedShare,IncomeLossFromContinuingOperationsPerDilutedShare,0.31,c0,,,,,,False,IncomeLossFromContinuingOperationsPerDilutedShare,
+KBDC,2025-05-12,income_statement,income_statement,IncomeLossFromContinuingOperationsPerBasicShare,IncomeLossFromContinuingOperationsPerBasicShare,0.31,c0,,,,,,False,IncomeLossFromContinuingOperationsPerBasicShare,
+KBDC,2025-05-12,income_statement,income_statement,IncomeLossFromContinuingOperationsPerDilutedShare,IncomeLossFromContinuingOperationsPerDilutedShare,0.61,c10,,,,,,False,IncomeLossFromContinuingOperationsPerDilutedShare,
+KBDC,2025-05-12,income_statement,income_statement,IncomeLossFromContinuingOperationsPerBasicShare,IncomeLossFromContinuingOperationsPerBasicShare,0.61,c10,,,,,,False,IncomeLossFromContinuingOperationsPerBasicShare,
+KBDC,2025-05-12,income_statement,income_statement,IncreaseDecreaseInInterestAndDividendsReceivable,IncreaseDecreaseInInterestAndDividendsReceivable,2327000,c0,,,,,,False,IncreaseDecreaseInInterestAndDividendsReceivable,
+KBDC,2025-05-12,income_statement,income_statement,IncreaseDecreaseInInterestAndDividendsReceivable,IncreaseDecreaseInInterestAndDividendsReceivable,2677000,c10,,,,,,False,IncreaseDecreaseInInterestAndDividendsReceivable,
+KBDC,2025-05-12,income_statement,income_statement,IncreaseDecreaseInAccruedIncomeTaxesPayable,IncreaseDecreaseInAccruedIncomeTaxesPayable,-825000,c0,,,,,,False,IncreaseDecreaseInAccruedIncomeTaxesPayable,
+KBDC,2025-05-12,income_statement,income_statement,IncreaseDecreaseInAccruedIncomeTaxesPayable,IncreaseDecreaseInAccruedIncomeTaxesPayable,-101000,c10,,,,,,False,IncreaseDecreaseInAccruedIncomeTaxesPayable,
+KBDC,2025-05-12,income_statement,income_statement,RevenueFromContractWithCustomerPolicyTextBlock,RevenueFromContractWithCustomerPolicyTextBlock,"<p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">F.<i> Interest Income Recognition</i>
+— Interest income is recorded on an accrual basis and includes the accretion of discounts, amortization of premiums and
+payment-in-kind (“PIK”) interest. Discounts from and premiums to par value on investments purchased are
+accreted/amortized into interest income over the life of the respective security using the effective yield method. To the extent
+loans contain PIK provisions, PIK interest, computed at the contractual rate specified in each applicable agreement, is accrued and
+recorded as interest income and added to the principal balance of the loan. PIK interest income added to the principal balance is
+generally collected upon repayment of the outstanding principal. The Company does not accrue PIK interest if, in the opinion of the
+Advisor, the portfolio company valuation indicates that the PIK interest is not likely to be collectible. If the Company believes
+PIK is not expected to be realized, the investment generating PIK will be placed on non-accrual status. When a PIK investment is
+placed on non-accrual status, the accrued, uncapitalized interest is generally reversed through PIK interest income. Previously
+capitalized PIK interest is not reversed when an investment is placed on non-accrual status. To maintain the Company’s status
+as a RIC, this non-cash source of income must be paid out to stockholders in the form of dividends for the year the income was
+earned, even though the Company has not yet collected the cash. The amortized cost of investments represents the original cost
+adjusted for any accretion of discounts, amortization of premiums and PIK interest. For the three months ended March 31, 2025 and
+2024, the Company had $306 and $284, respectively, of PIK interest included in interest income, which represents 0.6% and 0.6%,
+respectively, of aggregate interest income.</p><p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">Loans are generally placed on non-accrual status
+when it has been determined that a significant impairment in the financial condition and ability of the borrower to repay principal and
+interest has occurred and is expected to continue such that it is probable the collectability of full amount of the loan (principal and
+interest) is doubtful. Accrued and unpaid interest is generally reversed when a loan is placed on non-accrual status. If cash payments
+are received subsequent to a loan being placed on non-accrual status, these payments will first be applied to previously accrued but uncollected
+interest, then to recover the principal. Additionally, any original issue discount and market discount are no longer accreted to interest
+income as of the date the loan is placed on non-accrual status. Non-accrual loans are restored to accrual status when past due principal
+and interest are paid or there is no longer a reasonable doubt that such principal or interest will be collected in full and, in the Company’s
+judgment, principal and interest are likely to remain current. The Company may make exceptions to this policy if the loan has sufficient
+collateral value (i.e., typically measured as enterprise value of the portfolio company) or is in the process of collection. As of March
+31, 2025, the Company had four debt investments on non-accrual status, which comprised 2.3% and 1.6%, respectively, of total debt investments
+at cost and fair value. As of March 31, 2024, the Company had one investment on non-accrual status, which comprised 0.4% and 0.4%, respectively,
+of total debt investments at cost and fair value.</p>",c0,,,,,,False,RevenueFromContractWithCustomerPolicyTextBlock,
+KBDC,2025-05-12,income_statement,income_statement,AggregateInterestIncome,AggregateInterestIncome,0.006,c0,,,,,,False,AggregateInterestIncome,
+KBDC,2025-05-12,income_statement,income_statement,AggregateInterestIncome,AggregateInterestIncome,0.006,c10,,,,,,False,AggregateInterestIncome,
+KBDC,2025-05-12,income_statement,income_statement,IncomeTaxPolicyTextBlock,IncomeTaxPolicyTextBlock,"<p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">I.<i> Income Taxes </i>— it is the
+Company’s intention to continue to be treated as and to qualify each year for special tax treatment afforded a RIC under the Code.
+As long as the Company meets certain requirements that govern its sources of income, diversification of assets and timely distribution
+of earnings to stockholders, the Company will not be subject to U.S. federal income tax.</p><p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">The Company must pay distributions equal to 90%
+of its investment company taxable income (ordinary income and short-term capital gains) to qualify as a RIC and it must distribute all
+of its taxable income (ordinary income, short-term capital gains and long-term capital gains) to avoid federal income taxes. The Company
+will be subject to federal income tax on any undistributed portion of income. For purposes of the distribution test, the Company may elect
+to treat as paid on the last day of its taxable year all or part of any distributions that are declared after the end of its taxable year
+if such distributions are declared before the due date of its tax return, including any extensions.</p><p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">All RICs are subject to a non-deductible 4% excise
+tax on income that is not distributed on a timely basis in accordance with the calendar year distribution requirements. To avoid the tax,
+the Company must distribute during each calendar year an amount at least equal to the sum of (i) 98% of its ordinary income for the calendar
+year, (ii) 98.2% of its net capital gains for the one-year period ending on December 31, the last day of our taxable year, and (iii)
+undistributed amounts from previous years on which the Company paid no U.S. federal income tax. A distribution will be treated as paid
+during the calendar year if it is paid during the calendar year or declared by the Company in October, November or December of such year,
+payable to stockholders of record on a date during such months and paid by the Company no later than January of the following year. Any
+such distributions paid during January of the following year will be deemed to be received by stockholders on December 31 of the year
+the distributions are declared, rather than when the distributions are actually received.</p><p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">The Company’s wholly owned subsidiary, KABDC Corp, LLC has elected
+to be a corporation and is obligated to pay federal and state income tax on its taxable income. KABDC Corp, LLC invests in partnerships
+and includes its allocable share of the taxable income or loss in computing its own taxable income. Deferred income taxes reflect (i)
+taxes on unrealized gains (losses), which are attributable to the difference between fair value and tax cost basis, (ii) the net tax effects
+of temporary differences between the carrying amounts of assets and liabilities for financial reporting purposes and the amounts used
+for income tax purposes and (iii) the net tax benefit of accumulated net operating and capital losses. Income tax expense, if any, is
+included under the income category for which it relates in the Consolidated Statements of Operations.</p><p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">To the extent KABDC Corp, LLC has a deferred tax
+asset, consideration is given as to whether or not a valuation allowance is required. The need to establish a valuation allowance for
+deferred tax assets is assessed periodically based on the Income Tax Topic of the FASB Accounting Standards Codification (ASC 740), that
+it is more likely than not that some portion or all of the deferred tax asset will not be realized. In the assessment for a valuation
+allowance, consideration is given to all positive and negative evidence related to the realization of the deferred tax asset. This assessment
+considers, among other matters, the nature, frequency and severity of current and cumulative losses, forecasts of future profitability,
+the duration of statutory carryforward periods and the associated risk that certain loss carryforwards may expire unused.</p><p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">KABDC Corp, LLC may rely to some extent on information
+provided by portfolio investments, which may not necessarily be timely, to estimate taxable income allocable to the units/shares of such
+companies held in the portfolio and to estimate the associated current and/or deferred tax liability.</p><p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify; text-indent: 0in"">The Company evaluates tax
+positions taken or expected to be taken in the course of preparing its financial statements to determine whether the tax positions are
+“more-likely-than-not” to be sustained by the applicable tax authority. Tax positions not deemed to meet the
+“more-likely-than-not” threshold are reserved and recorded as a tax benefit or expense in the current year. All
+penalties and interest associated with income taxes are included in income tax expense. Conclusions regarding tax positions are subject
+to review and may be adjusted at a later date based on factors including, but not limited to, on-going analyses of
+tax laws, regulations and interpretations thereof. </p>",c0,,,,,,False,IncomeTaxPolicyTextBlock,
+KBDC,2025-05-12,income_statement,income_statement,QuarterlyFinancialInformationIncomeTaxesSignificantVariationDescription,QuarterlyFinancialInformationIncomeTaxesSignificantVariationDescription,"All RICs are subject to a non-deductible 4% excise
+tax on income that is not distributed on a timely basis in accordance with the calendar year distribution requirements. To avoid the tax,
+the Company must distribute during each calendar year an amount at least equal to the sum of (i) 98% of its ordinary income for the calendar
+year, (ii) 98.2% of its net capital gains for the one-year period ending on December 31, the last day of our taxable year, and (iii)
+undistributed amounts from previous years on which the Company paid no U.S. federal income tax.",c0,,,,,,False,QuarterlyFinancialInformationIncomeTaxesSignificantVariationDescription,
+KBDC,2025-05-12,income_statement,income_statement,IncentiveFeeExpense,IncentiveFeeExpense,4490000,c736,,,,,,False,IncentiveFeeExpense,
+KBDC,2025-05-12,income_statement,income_statement,IncentiveFeeExpense,IncentiveFeeExpense,2631000,c737,,,,,,False,IncentiveFeeExpense,
+KBDC,2025-05-12,income_statement,income_statement,InterestIncomeAndInterestExpenseDisclosureTableTextBlock,InterestIncomeAndInterestExpenseDisclosureTableTextBlock,"<p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">For the three months ended March 31, 2025 and
+2024, the components of interest expense were as follows:</p>
+
+<p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify""> </p>
+
+<table cellpadding=""0"" style=""border-collapse: collapse; width: 100%; font: 10pt Times New Roman, Times, Serif; border-spacing: 0px;"">
+  <tr style=""vertical-align: bottom"">
+    <td> </td><td style=""font-weight: bold; padding-bottom: 1.5pt""> </td>
+    <td colspan=""6"" style=""font-weight: bold; text-align: center; border-bottom: Black 1.5pt solid"">For the three months ended</td><td style=""padding-bottom: 1.5pt; font-weight: bold""> </td></tr>
+  <tr style=""vertical-align: bottom"">
+    <td> </td><td style=""font-weight: bold; padding-bottom: 1.5pt""> </td>
+    <td colspan=""2"" style=""font-weight: bold; text-align: center; border-bottom: Black 1.5pt solid"">March 31, 2025</td><td style=""padding-bottom: 1.5pt; font-weight: bold""> </td><td style=""font-weight: bold; padding-bottom: 1.5pt""> </td>
+    <td colspan=""2"" style=""font-weight: bold; text-align: center; border-bottom: Black 1.5pt solid"">March 31, 2024</td><td style=""padding-bottom: 1.5pt; font-weight: bold""> </td></tr>
+  <tr style=""vertical-align: bottom; background-color: rgb(204,238,255)"">
+    <td style=""width: 76%; text-align: left"">Interest expense</td><td style=""width: 1%""> </td>
+    <td style=""width: 1%; text-align: left"">$</td><td style=""width: 9%; text-align: right"">16,203</td><td style=""width: 1%; text-align: left""> </td><td style=""width: 1%""> </td>
+    <td style=""width: 1%; text-align: left"">$</td><td style=""width: 9%; text-align: right"">14,759</td><td style=""width: 1%; text-align: left""> </td></tr>
+  <tr style=""vertical-align: bottom; "">
+    <td style=""text-align: left; padding-bottom: 1.5pt"">Amortization of debt issuance costs</td><td style=""padding-bottom: 1.5pt""> </td>
+    <td style=""border-bottom: Black 1.5pt solid; text-align: left""> </td><td style=""border-bottom: Black 1.5pt solid; text-align: right"">921</td><td style=""padding-bottom: 1.5pt; text-align: left""> </td><td style=""padding-bottom: 1.5pt""> </td>
+    <td style=""border-bottom: Black 1.5pt solid; text-align: left""> </td><td style=""border-bottom: Black 1.5pt solid; text-align: right"">897</td><td style=""padding-bottom: 1.5pt; text-align: left""> </td></tr>
+  <tr style=""vertical-align: bottom; background-color: rgb(204,238,255)"">
+    <td style=""font-weight: bold; text-align: left; padding-bottom: 4pt"">Total interest expense</td><td style=""padding-bottom: 4pt""> </td>
+    <td style=""border-bottom: Black 4pt double; text-align: left"">$</td><td style=""border-bottom: Black 4pt double; text-align: right"">17,124</td><td style=""padding-bottom: 2.5pt; text-align: left""> </td><td style=""padding-bottom: 4pt""> </td>
+    <td style=""border-bottom: Black 4pt double; text-align: left"">$</td><td style=""border-bottom: Black 4pt double; text-align: right"">15,656</td><td style=""padding-bottom: 2.5pt; text-align: left""> </td></tr>
+  <tr style=""vertical-align: bottom; "">
+    <td>Average interest rate</td><td> </td>
+    <td style=""text-align: left""> </td><td style=""text-align: right"">7.4</td><td style=""text-align: left"">%</td><td> </td>
+    <td style=""text-align: left""> </td><td style=""text-align: right"">8.9</td><td style=""text-align: left"">%</td></tr>
+  <tr style=""vertical-align: bottom; background-color: rgb(204,238,255)"">
+    <td>Average borrowings</td><td> </td>
+    <td style=""text-align: left"">$</td><td style=""text-align: right"">927,772</td><td style=""text-align: left""> </td><td> </td>
+    <td style=""text-align: left"">$</td><td style=""text-align: right"">703,352</td><td style=""text-align: left""> </td></tr>
+  </table>",c0,,,,,,False,InterestIncomeAndInterestExpenseDisclosureTableTextBlock,
+KBDC,2025-05-12,income_statement,income_statement,InterestExpenseOther,InterestExpenseOther,16203000,c0,,,,,,False,InterestExpenseOther,
+KBDC,2025-05-12,income_statement,income_statement,InterestExpenseOther,InterestExpenseOther,14759000,c10,,,,,,False,InterestExpenseOther,
+KBDC,2025-05-12,income_statement,income_statement,InterestExpenseBorrowings,InterestExpenseBorrowings,927772000,c901,,,,,,False,InterestExpenseBorrowings,
+KBDC,2025-05-12,income_statement,income_statement,InterestExpenseBorrowings,InterestExpenseBorrowings,703352000,c902,,,,,,False,InterestExpenseBorrowings,
+KBDC,2025-05-12,income_statement,income_statement,InvestmentCompanyInvestmentIncomeLossPerShare,InvestmentCompanyInvestmentIncomeLossPerShare,0.4,c0,,,,,,False,InvestmentCompanyInvestmentIncomeLossPerShare,
+KBDC,2025-05-12,income_statement,income_statement,InvestmentCompanyInvestmentIncomeLossPerShare,InvestmentCompanyInvestmentIncomeLossPerShare,0.52,c10,,,,,,False,InvestmentCompanyInvestmentIncomeLossPerShare,
+KBDC,2025-05-12,income_statement,income_statement,InvestmentCompanyInvestmentIncomeLossFromOperationsPerShare,InvestmentCompanyInvestmentIncomeLossFromOperationsPerShare,0.31,c0,,,,,,False,InvestmentCompanyInvestmentIncomeLossFromOperationsPerShare,
+KBDC,2025-05-12,income_statement,income_statement,InvestmentCompanyInvestmentIncomeLossFromOperationsPerShare,InvestmentCompanyInvestmentIncomeLossFromOperationsPerShare,0.61,c10,,,,,,False,InvestmentCompanyInvestmentIncomeLossFromOperationsPerShare,
+KBDC,2025-05-12,income_statement,income_statement,InvestmentCompanyExpenseRatioExcludingIncentiveFee,InvestmentCompanyExpenseRatioExcludingIncentiveFee,0.095,c0,,,,,,False,InvestmentCompanyExpenseRatioExcludingIncentiveFee,
+KBDC,2025-05-12,income_statement,income_statement,InvestmentCompanyExpenseRatioExcludingIncentiveFee,InvestmentCompanyExpenseRatioExcludingIncentiveFee,0.122,c10,,,,,,False,InvestmentCompanyExpenseRatioExcludingIncentiveFee,
+KBDC,2025-05-12,income_statement,income_statement,InvestmentCompanyExpenseRatioIncludingIncentiveFee,InvestmentCompanyExpenseRatioIncludingIncentiveFee,0.091,c0,,,,,,False,InvestmentCompanyExpenseRatioIncludingIncentiveFee,
+KBDC,2025-05-12,income_statement,income_statement,InvestmentCompanyExpenseRatioIncludingIncentiveFee,InvestmentCompanyExpenseRatioIncludingIncentiveFee,0.122,c10,,,,,,False,InvestmentCompanyExpenseRatioIncludingIncentiveFee,
+KBDC,2025-05-12,income_statement,income_statement,InvestmentCompanyInvestmentIncomeLossRatio,InvestmentCompanyInvestmentIncomeLossRatio,0.099,c0,,,,,,False,InvestmentCompanyInvestmentIncomeLossRatio,
+KBDC,2025-05-12,income_statement,income_statement,InvestmentCompanyInvestmentIncomeLossRatio,InvestmentCompanyInvestmentIncomeLossRatio,0.128,c10,,,,,,False,InvestmentCompanyInvestmentIncomeLossRatio,
+KBDC,2025-08-11,income_statement,income_statement,AccruedIncomeTaxesCurrent,AccruedIncomeTaxesCurrent,825000,c7,,,,,,False,AccruedIncomeTaxesCurrent,
+KBDC,2025-08-11,income_statement,income_statement,InvestmentIncomeInterest,InvestmentIncomeInterest,57120000,c8,,,,,,False,InvestmentIncomeInterest,
+KBDC,2025-08-11,income_statement,income_statement,InvestmentIncomeInterest,InvestmentIncomeInterest,51991000,c9,,,,,,False,InvestmentIncomeInterest,
+KBDC,2025-08-11,income_statement,income_statement,InvestmentIncomeInterest,InvestmentIncomeInterest,112134000,c10,,,,,,False,InvestmentIncomeInterest,
+KBDC,2025-08-11,income_statement,income_statement,InvestmentIncomeInterest,InvestmentIncomeInterest,98228000,c11,,,,,,False,InvestmentIncomeInterest,
+KBDC,2025-08-11,income_statement,income_statement,InvestmentIncomeDividend,InvestmentIncomeDividend,178000,c12,,,,,,False,InvestmentIncomeDividend,
+KBDC,2025-08-11,income_statement,income_statement,InvestmentIncomeDividend,InvestmentIncomeDividend,462000,c13,,,,,,False,InvestmentIncomeDividend,
+KBDC,2025-08-11,income_statement,income_statement,InvestmentIncomeDividend,InvestmentIncomeDividend,409000,c0,,,,,,False,InvestmentIncomeDividend,
+KBDC,2025-08-11,income_statement,income_statement,InvestmentIncomeDividend,InvestmentIncomeDividend,719000,c14,,,,,,False,InvestmentIncomeDividend,
+KBDC,2025-08-11,income_statement,income_statement,InvestmentIncomeNonoperating,InvestmentIncomeNonoperating,57298000,c12,,,,,,False,InvestmentIncomeNonoperating,
+KBDC,2025-08-11,income_statement,income_statement,InvestmentIncomeNonoperating,InvestmentIncomeNonoperating,52453000,c13,,,,,,False,InvestmentIncomeNonoperating,
+KBDC,2025-08-11,income_statement,income_statement,InvestmentIncomeNonoperating,InvestmentIncomeNonoperating,112543000,c0,,,,,,False,InvestmentIncomeNonoperating,
+KBDC,2025-08-11,income_statement,income_statement,InvestmentIncomeNonoperating,InvestmentIncomeNonoperating,98947000,c14,,,,,,False,InvestmentIncomeNonoperating,
+KBDC,2025-08-11,income_statement,income_statement,ManagementFeeExpense,ManagementFeeExpense,5412000,c12,,,,,,False,ManagementFeeExpense,
+KBDC,2025-08-11,income_statement,income_statement,ManagementFeeExpense,ManagementFeeExpense,4251000,c13,,,,,,False,ManagementFeeExpense,
+KBDC,2025-08-11,income_statement,income_statement,ManagementFeeExpense,ManagementFeeExpense,10543000,c0,,,,,,False,ManagementFeeExpense,
+KBDC,2025-08-11,income_statement,income_statement,ManagementFeeExpense,ManagementFeeExpense,7773000,c14,,,,,,False,ManagementFeeExpense,
+KBDC,2025-08-11,income_statement,income_statement,IncentiveFeeExpense,IncentiveFeeExpense,4452000,c12,,,,,,False,IncentiveFeeExpense,
+KBDC,2025-08-11,income_statement,income_statement,IncentiveFeeExpense,IncentiveFeeExpense,4109000,c13,,,,,,False,IncentiveFeeExpense,
+KBDC,2025-08-11,income_statement,income_statement,IncentiveFeeExpense,IncentiveFeeExpense,8942000,c0,,,,,,False,IncentiveFeeExpense,
+KBDC,2025-08-11,income_statement,income_statement,IncentiveFeeExpense,IncentiveFeeExpense,6740000,c14,,,,,,False,IncentiveFeeExpense,
+KBDC,2025-08-11,income_statement,income_statement,InterestExpenseOperating,InterestExpenseOperating,18384000,c12,,,,,,False,InterestExpenseOperating,
+KBDC,2025-08-11,income_statement,income_statement,InterestExpenseOperating,InterestExpenseOperating,13239000,c13,,,,,,False,InterestExpenseOperating,
+KBDC,2025-08-11,income_statement,income_statement,InterestExpenseOperating,InterestExpenseOperating,35509000,c0,,,,,,False,InterestExpenseOperating,
+KBDC,2025-08-11,income_statement,income_statement,InterestExpenseOperating,InterestExpenseOperating,28895000,c14,,,,,,False,InterestExpenseOperating,
+KBDC,2025-08-11,income_statement,income_statement,NoninterestExpenseDirectorsFees,NoninterestExpenseDirectorsFees,158000,c12,,,,,,False,NoninterestExpenseDirectorsFees,
+KBDC,2025-08-11,income_statement,income_statement,NoninterestExpenseDirectorsFees,NoninterestExpenseDirectorsFees,158000,c13,,,,,,False,NoninterestExpenseDirectorsFees,
+KBDC,2025-08-11,income_statement,income_statement,NoninterestExpenseDirectorsFees,NoninterestExpenseDirectorsFees,316000,c0,,,,,,False,NoninterestExpenseDirectorsFees,
+KBDC,2025-08-11,income_statement,income_statement,NoninterestExpenseDirectorsFees,NoninterestExpenseDirectorsFees,305000,c14,,,,,,False,NoninterestExpenseDirectorsFees,
+KBDC,2025-08-11,income_statement,income_statement,ExciseTaxExpenseBenefit,ExciseTaxExpenseBenefit,-43000,c0,,,,,,False,ExciseTaxExpenseBenefit,
+KBDC,2025-08-11,income_statement,income_statement,OtherGeneralAndAdministrativeExpense,OtherGeneralAndAdministrativeExpense,603000,c12,,,,,,False,OtherGeneralAndAdministrativeExpense,
+KBDC,2025-08-11,income_statement,income_statement,OtherGeneralAndAdministrativeExpense,OtherGeneralAndAdministrativeExpense,508000,c13,,,,,,False,OtherGeneralAndAdministrativeExpense,
+KBDC,2025-08-11,income_statement,income_statement,OtherGeneralAndAdministrativeExpense,OtherGeneralAndAdministrativeExpense,1184000,c0,,,,,,False,OtherGeneralAndAdministrativeExpense,
+KBDC,2025-08-11,income_statement,income_statement,OtherGeneralAndAdministrativeExpense,OtherGeneralAndAdministrativeExpense,979000,c14,,,,,,False,OtherGeneralAndAdministrativeExpense,
+KBDC,2025-08-11,income_statement,income_statement,OperatingExpenses,OperatingExpenses,29377000,c12,,,,,,False,OperatingExpenses,
+KBDC,2025-08-11,income_statement,income_statement,OperatingExpenses,OperatingExpenses,22640000,c13,,,,,,False,OperatingExpenses,
+KBDC,2025-08-11,income_statement,income_statement,OperatingExpenses,OperatingExpenses,57164000,c0,,,,,,False,OperatingExpenses,
+KBDC,2025-08-11,income_statement,income_statement,OperatingExpenses,OperatingExpenses,45331000,c14,,,,,,False,OperatingExpenses,
+KBDC,2025-08-11,income_statement,income_statement,OperatingIncomeLoss,OperatingIncomeLoss,-28589000,c12,,,,,,False,OperatingIncomeLoss,
+KBDC,2025-08-11,income_statement,income_statement,OperatingIncomeLoss,OperatingIncomeLoss,-18060000,c13,,,,,,False,OperatingIncomeLoss,
+KBDC,2025-08-11,income_statement,income_statement,OperatingIncomeLoss,OperatingIncomeLoss,-55093000,c0,,,,,,False,OperatingIncomeLoss,
+KBDC,2025-08-11,income_statement,income_statement,OperatingIncomeLoss,OperatingIncomeLoss,-40751000,c14,,,,,,False,OperatingIncomeLoss,
+KBDC,2025-08-11,income_statement,income_statement,NetInvestmentIncome,NetInvestmentIncome,28709000,c12,,,,,,False,NetInvestmentIncome,
+KBDC,2025-08-11,income_statement,income_statement,NetInvestmentIncome,NetInvestmentIncome,34393000,c13,,,,,,False,NetInvestmentIncome,
+KBDC,2025-08-11,income_statement,income_statement,NetInvestmentIncome,NetInvestmentIncome,57450000,c0,,,,,,False,NetInvestmentIncome,
+KBDC,2025-08-11,income_statement,income_statement,NetInvestmentIncome,NetInvestmentIncome,58196000,c14,,,,,,False,NetInvestmentIncome,
+KBDC,2025-08-11,income_statement,income_statement,IncomeTaxExpenseBenefit,IncomeTaxExpenseBenefit,318000,c12,,,,,,False,IncomeTaxExpenseBenefit,
+KBDC,2025-08-11,income_statement,income_statement,IncomeTaxExpenseBenefit,IncomeTaxExpenseBenefit,899000,c0,,,,,,False,IncomeTaxExpenseBenefit,
+KBDC,2025-08-11,income_statement,income_statement,NetIncomeLoss,NetIncomeLoss,24910000,c12,,,,,,False,NetIncomeLoss,
+KBDC,2025-08-11,income_statement,income_statement,NetIncomeLoss,NetIncomeLoss,31180000,c13,,,,,,False,NetIncomeLoss,
+KBDC,2025-08-11,income_statement,income_statement,NetIncomeLoss,NetIncomeLoss,47125000,c0,,,,,,False,NetIncomeLoss,
+KBDC,2025-08-11,income_statement,income_statement,NetIncomeLoss,NetIncomeLoss,58935000,c14,,,,,,False,NetIncomeLoss,
+KBDC,2025-08-11,income_statement,income_statement,IncomeLossFromContinuingOperationsPerDilutedShare,IncomeLossFromContinuingOperationsPerDilutedShare,0.35,c12,,,,,,False,IncomeLossFromContinuingOperationsPerDilutedShare,
+KBDC,2025-08-11,income_statement,income_statement,IncomeLossFromContinuingOperationsPerBasicShare,IncomeLossFromContinuingOperationsPerBasicShare,0.35,c12,,,,,,False,IncomeLossFromContinuingOperationsPerBasicShare,
+KBDC,2025-08-11,income_statement,income_statement,IncomeLossFromContinuingOperationsPerDilutedShare,IncomeLossFromContinuingOperationsPerDilutedShare,0.46,c13,,,,,,False,IncomeLossFromContinuingOperationsPerDilutedShare,
+KBDC,2025-08-11,income_statement,income_statement,IncomeLossFromContinuingOperationsPerBasicShare,IncomeLossFromContinuingOperationsPerBasicShare,0.46,c13,,,,,,False,IncomeLossFromContinuingOperationsPerBasicShare,
+KBDC,2025-08-11,income_statement,income_statement,IncomeLossFromContinuingOperationsPerDilutedShare,IncomeLossFromContinuingOperationsPerDilutedShare,0.66,c0,,,,,,False,IncomeLossFromContinuingOperationsPerDilutedShare,
+KBDC,2025-08-11,income_statement,income_statement,IncomeLossFromContinuingOperationsPerBasicShare,IncomeLossFromContinuingOperationsPerBasicShare,0.66,c0,,,,,,False,IncomeLossFromContinuingOperationsPerBasicShare,
+KBDC,2025-08-11,income_statement,income_statement,IncomeLossFromContinuingOperationsPerDilutedShare,IncomeLossFromContinuingOperationsPerDilutedShare,1.05,c14,,,,,,False,IncomeLossFromContinuingOperationsPerDilutedShare,
+KBDC,2025-08-11,income_statement,income_statement,IncomeLossFromContinuingOperationsPerBasicShare,IncomeLossFromContinuingOperationsPerBasicShare,1.05,c14,,,,,,False,IncomeLossFromContinuingOperationsPerBasicShare,
+KBDC,2025-08-11,income_statement,income_statement,IncreaseDecreaseInInterestAndDividendsReceivable,IncreaseDecreaseInInterestAndDividendsReceivable,6488000,c0,,,,,,False,IncreaseDecreaseInInterestAndDividendsReceivable,
+KBDC,2025-08-11,income_statement,income_statement,IncreaseDecreaseInInterestAndDividendsReceivable,IncreaseDecreaseInInterestAndDividendsReceivable,3906000,c14,,,,,,False,IncreaseDecreaseInInterestAndDividendsReceivable,
+KBDC,2025-08-11,income_statement,income_statement,IncreaseDecreaseInAccruedIncomeTaxesPayable,IncreaseDecreaseInAccruedIncomeTaxesPayable,-825000,c0,,,,,,False,IncreaseDecreaseInAccruedIncomeTaxesPayable,
+KBDC,2025-08-11,income_statement,income_statement,IncreaseDecreaseInAccruedIncomeTaxesPayable,IncreaseDecreaseInAccruedIncomeTaxesPayable,-101000,c14,,,,,,False,IncreaseDecreaseInAccruedIncomeTaxesPayable,
+KBDC,2025-08-11,income_statement,income_statement,RevenueFromContractWithCustomerPolicyTextBlock,RevenueFromContractWithCustomerPolicyTextBlock,"<p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">F.<i> Interest Income Recognition</i> —
+Interest income is recorded on an accrual basis and includes the accretion of discounts, amortization of premiums and payment-in-kind
+(“PIK”) interest. Discounts from and premiums to par value on investments purchased are accreted/amortized into interest income
+over the life of the respective security using the effective yield method. To the extent loans contain PIK provisions, PIK interest, computed
+at the contractual rate specified in each applicable agreement, is accrued and recorded as interest income and added to the principal
+balance of the loan. PIK interest income added to the principal balance is generally collected upon repayment of the outstanding principal.
+The Company does not accrue PIK interest if, in the opinion of the Advisor, the portfolio company valuation indicates that the PIK interest
+is not likely to be collectible. If the Company believes PIK is not expected to be realized, the investment generating PIK will be placed
+on non-accrual status. When a PIK investment is placed on non-accrual status, the accrued, uncapitalized interest is generally reversed
+through PIK interest income. Previously capitalized PIK interest is not reversed when an investment is placed on non-accrual status. To
+maintain the Company’s status as a RIC, this non-cash source of income must be paid out to stockholders in the form of dividends
+for the year the income was earned, even though the Company has not yet collected the cash. The amortized cost of investments represents
+the original cost adjusted for any accretion of discounts, amortization of premiums and PIK interest. For the six months ended June 30,
+2025 and 2024, the Company had $2,369 and $663, respectively, of PIK interest included in interest income, which represents 2.1% and 0.7%,
+respectively, of aggregate interest income.</p><p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">Loans are generally placed on non-accrual status when it has been determined
+that a significant impairment in the financial condition and ability of the borrower to repay principal and interest has occurred and
+is expected to continue such that it is probable the collectability of full amount of the loan (principal and interest) is doubtful. Accrued
+and unpaid interest is generally reversed when a loan is placed on non-accrual status. If cash payments are received subsequent to a loan
+being placed on non-accrual status, these payments will first be applied to previously accrued but uncollected interest, then to recover
+the principal. Additionally, any original issue discount and market discount are no longer accreted to interest income as of the date
+the loan is placed on non-accrual status. Non-accrual loans are restored to accrual status when past due principal and interest are paid
+or there is no longer a reasonable doubt that such principal or interest will be collected in full and, in the Company’s judgment,
+principal and interest are likely to remain current. The Company may make exceptions to this policy if the loan has sufficient collateral
+value (i.e., typically measured as enterprise value of the portfolio company) or is in the process of collection. As of June 30, 2025,
+the Company had five debt investments on non-accrual status, which comprised 2.6% and 1.6%, respectively, of total debt investments at
+cost and fair value. As of June 30, 2024, the Company had two debt investment on non-accrual status, which comprised 1.2% and 1.0%, respectively,
+of total debt investments at cost and fair value.</p>",c0,,,,,,False,RevenueFromContractWithCustomerPolicyTextBlock,
+KBDC,2025-08-11,income_statement,income_statement,AggregateInterestIncome,AggregateInterestIncome,0.021,c0,,,,,,False,AggregateInterestIncome,
+KBDC,2025-08-11,income_statement,income_statement,AggregateInterestIncome,AggregateInterestIncome,0.007,c14,,,,,,False,AggregateInterestIncome,
+KBDC,2025-08-11,income_statement,income_statement,IncomeTaxPolicyTextBlock,IncomeTaxPolicyTextBlock,"<p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">I.<i> Income Taxes </i>— it is the
+Company’s intention to continue to be treated as and to qualify each year for special tax treatment afforded a RIC under the Code.
+As long as the Company meets certain requirements that govern its sources of income, diversification of assets and timely distribution
+of earnings to stockholders, the Company will not be subject to U.S. federal income tax.</p><p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">The Company must pay distributions equal to 90%
+of its investment company taxable income (ordinary income and short-term capital gains) to qualify as a RIC and it must distribute all
+of its taxable income (ordinary income, short-term capital gains and long-term capital gains) to avoid federal income taxes. The Company
+will be subject to federal income tax on any undistributed portion of income. For purposes of the distribution test, the Company may elect
+to treat as paid on the last day of its taxable year all or part of any distributions that are declared after the end of its taxable year
+if such distributions are declared before the due date of its tax return, including any extensions.</p><p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">All RICs are subject to a non-deductible 4% excise
+tax on income that is not distributed on a timely basis in accordance with the calendar year distribution requirements. To avoid the tax,
+the Company must distribute during each calendar year an amount at least equal to the sum of (i) 98% of its ordinary income for the calendar
+year, (ii) 98.2% of its net capital gains for the one-year period ending on December 31, the last day of our taxable year, and (iii)
+undistributed amounts from previous years on which the Company paid no U.S. federal income tax. A distribution will be treated as paid
+during the calendar year if it is paid during the calendar year or declared by the Company in October, November or December of such year,
+payable to stockholders of record on a date during such months and paid by the Company no later than January of the following year. Any
+such distributions paid during January of the following year will be deemed to be received by stockholders on December 31 of the year
+the distributions are declared, rather than when the distributions are actually received.</p><p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">The Company’s wholly owned subsidiary, KABDC Corp, LLC has elected
+to be a corporation and is obligated to pay federal and state income tax on its taxable income. KABDC Corp, LLC invests in partnerships
+and includes its allocable share of the taxable income or loss in computing its own taxable income. Deferred income taxes reflect (i)
+taxes on unrealized gains (losses), which are attributable to the difference between fair value and tax cost basis, (ii) the net tax effects
+of temporary differences between the carrying amounts of assets and liabilities for financial reporting purposes and the amounts used
+for income tax purposes and (iii) the net tax benefit of accumulated net operating and capital losses. Income tax expense, if any, is
+included under the income category for which it relates in the Consolidated Statements of Operations.</p><p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">To the extent KABDC Corp, LLC has a deferred tax
+asset, consideration is given as to whether or not a valuation allowance is required. The need to establish a valuation allowance for
+deferred tax assets is assessed periodically based on the Income Tax Topic of the FASB Accounting Standards Codification (ASC 740), that
+it is more likely than not that some portion or all of the deferred tax asset will not be realized. In the assessment for a valuation
+allowance, consideration is given to all positive and negative evidence related to the realization of the deferred tax asset. This assessment
+considers, among other matters, the nature, frequency and severity of current and cumulative losses, forecasts of future profitability,
+the duration of statutory carryforward periods and the associated risk that certain loss carryforwards may expire unused.</p><p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">KABDC Corp, LLC may rely to some extent on information
+provided by portfolio investments, which may not necessarily be timely, to estimate taxable income allocable to the units/shares of such
+companies held in the portfolio and to estimate the associated current and/or deferred tax liability.</p><p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify; text-indent: 0in"">The Company evaluates tax
+positions taken or expected to be taken in the course of preparing its financial statements to determine whether the tax positions are
+“more-likely-than-not” to be sustained by the applicable tax authority. Tax positions not deemed to meet the
+“more-likely-than-not” threshold are reserved and recorded as a tax benefit or expense in the current year. All
+penalties and interest associated with income taxes are included in income tax expense. Conclusions regarding tax positions are subject
+to review and may be adjusted at a later date based on factors including, but not limited to, on-going analyses of
+tax laws, regulations and interpretations thereof. </p>",c0,,,,,,False,IncomeTaxPolicyTextBlock,
+KBDC,2025-08-11,income_statement,income_statement,QuarterlyFinancialInformationIncomeTaxesSignificantVariationDescription,QuarterlyFinancialInformationIncomeTaxesSignificantVariationDescription,"All RICs are subject to a non-deductible 4% excise
+tax on income that is not distributed on a timely basis in accordance with the calendar year distribution requirements. To avoid the tax,
+the Company must distribute during each calendar year an amount at least equal to the sum of (i) 98% of its ordinary income for the calendar
+year, (ii) 98.2% of its net capital gains for the one-year period ending on December 31, the last day of our taxable year, and (iii)
+undistributed amounts from previous years on which the Company paid no U.S. federal income tax.",c0,,,,,,False,QuarterlyFinancialInformationIncomeTaxesSignificantVariationDescription,
+KBDC,2025-08-11,income_statement,income_statement,IncentiveFeeExpense,IncentiveFeeExpense,4452000,c751,,,,,,False,IncentiveFeeExpense,
+KBDC,2025-08-11,income_statement,income_statement,IncentiveFeeExpense,IncentiveFeeExpense,0,c752,,,,,,False,IncentiveFeeExpense,
+KBDC,2025-08-11,income_statement,income_statement,IncentiveFeeExpense,IncentiveFeeExpense,8942000,c754,,,,,,False,IncentiveFeeExpense,
+KBDC,2025-08-11,income_statement,income_statement,IncentiveFeeExpense,IncentiveFeeExpense,2631000,c755,,,,,,False,IncentiveFeeExpense,
+KBDC,2025-08-11,income_statement,income_statement,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,2135000,c829,,,,,,False,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,
+KBDC,2025-08-11,income_statement,income_statement,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,2135000,c12,,,,,,False,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,
+KBDC,2025-08-11,income_statement,income_statement,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,576000,c834,,,,,,False,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,
+KBDC,2025-08-11,income_statement,income_statement,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,576000,c13,,,,,,False,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,
+KBDC,2025-08-11,income_statement,income_statement,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,2493000,c839,,,,,,False,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,
+KBDC,2025-08-11,income_statement,income_statement,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,2493000,c0,,,,,,False,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,
+KBDC,2025-08-11,income_statement,income_statement,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,942000,c843,,,,,,False,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,
+KBDC,2025-08-11,income_statement,income_statement,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,942000,c14,,,,,,False,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,
+KBDC,2025-08-11,income_statement,income_statement,InterestIncomeAndInterestExpenseDisclosureTableTextBlock,InterestIncomeAndInterestExpenseDisclosureTableTextBlock,"<p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">For the three and six months ended June 30, 2025
+and 2024, the components of interest expense were as follows:</p>
+
+<p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify""> </p>
+
+<table cellpadding=""0"" style=""border-collapse: collapse; width: 100%; font: 10pt Times New Roman, Times, Serif; border-spacing: 0px;"">
+  <tr style=""vertical-align: bottom"">
+    <td> </td><td style=""font-weight: bold; padding-bottom: 1.5pt""> </td>
+    <td colspan=""6"" style=""font-weight: bold; text-align: center; border-bottom: Black 1.5pt solid"">For the three months ended</td><td style=""padding-bottom: 1.5pt; font-weight: bold""> </td></tr>
+  <tr style=""vertical-align: bottom"">
+    <td> </td><td style=""font-weight: bold; padding-bottom: 1.5pt""> </td>
+    <td colspan=""2"" style=""font-weight: bold; text-align: center; border-bottom: Black 1.5pt solid"">June 30, 2025</td><td style=""padding-bottom: 1.5pt; font-weight: bold""> </td><td style=""font-weight: bold; padding-bottom: 1.5pt""> </td>
+    <td colspan=""2"" style=""font-weight: bold; text-align: center; border-bottom: Black 1.5pt solid"">June 30, 2024</td><td style=""padding-bottom: 1.5pt; font-weight: bold""> </td></tr>
+  <tr style=""vertical-align: bottom; background-color: rgb(204,238,255)"">
+    <td style=""width: 76%; text-align: left; padding-left: 5.4pt"">Interest expense</td><td style=""width: 1%""> </td>
+    <td style=""width: 1%; text-align: left"">$</td><td style=""width: 9%; text-align: right"">17,450</td><td style=""width: 1%; text-align: left""> </td><td style=""width: 1%""> </td>
+    <td style=""width: 1%; text-align: left"">$</td><td style=""width: 9%; text-align: right"">12,312</td><td style=""width: 1%; text-align: left""> </td></tr>
+  <tr style=""vertical-align: bottom; "">
+    <td style=""text-align: left; padding-bottom: 1.5pt; padding-left: 5.4pt"">Amortization of debt issuance costs</td><td style=""padding-bottom: 1.5pt""> </td>
+    <td style=""border-bottom: Black 1.5pt solid; text-align: left""> </td><td style=""border-bottom: Black 1.5pt solid; text-align: right"">934</td><td style=""padding-bottom: 1.5pt; text-align: left""> </td><td style=""padding-bottom: 1.5pt""> </td>
+    <td style=""border-bottom: Black 1.5pt solid; text-align: left""> </td><td style=""border-bottom: Black 1.5pt solid; text-align: right"">927</td><td style=""padding-bottom: 1.5pt; text-align: left""> </td></tr>
+  <tr style=""vertical-align: bottom; background-color: rgb(204,238,255)"">
+    <td style=""font-weight: bold; text-align: left; padding-bottom: 4pt; padding-left: 5.4pt"">Total interest expense</td><td style=""padding-bottom: 4pt""> </td>
+    <td style=""border-bottom: Black 4pt double; text-align: left"">$</td><td style=""border-bottom: Black 4pt double; text-align: right"">18,384</td><td style=""padding-bottom: 4pt; text-align: left""> </td><td style=""padding-bottom: 4pt""> </td>
+    <td style=""border-bottom: Black 4pt double; text-align: left"">$</td><td style=""border-bottom: Black 4pt double; text-align: right"">13,239</td><td style=""padding-bottom: 4pt; text-align: left""> </td></tr>
+  <tr style=""vertical-align: bottom; "">
+    <td style=""padding-left: 5.4pt"">Average interest rate</td><td> </td>
+    <td style=""text-align: left""> </td><td style=""text-align: right"">7.2</td><td style=""text-align: left"">%</td><td> </td>
+    <td style=""text-align: left""> </td><td style=""text-align: right"">9.3</td><td style=""text-align: left"">%</td></tr>
+  <tr style=""vertical-align: bottom; background-color: rgb(204,238,255)"">
+    <td style=""padding-left: 5.4pt"">Average borrowings</td><td> </td>
+    <td style=""text-align: left"">$</td><td style=""text-align: right"">1,013,511</td><td style=""text-align: left""> </td><td> </td>
+    <td style=""text-align: left"">$</td><td style=""text-align: right"">569,341</td><td style=""text-align: left""> </td></tr>
+  </table>
+
+
+<p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify""> </p>
+
+<table cellpadding=""0"" style=""border-collapse: collapse; width: 100%; font: 10pt Times New Roman, Times, Serif; border-spacing: 0px;"">
+  <tr style=""vertical-align: bottom"">
+    <td> </td><td style=""font-weight: bold; padding-bottom: 1.5pt""> </td>
+    <td colspan=""6"" style=""font-weight: bold; text-align: center; border-bottom: Black 1.5pt solid"">For the six months ended</td><td style=""padding-bottom: 1.5pt; font-weight: bold""> </td></tr>
+  <tr style=""vertical-align: bottom"">
+    <td> </td><td style=""font-weight: bold; padding-bottom: 1.5pt""> </td>
+    <td colspan=""2"" style=""font-weight: bold; text-align: center; border-bottom: Black 1.5pt solid"">June 30, 2025</td><td style=""padding-bottom: 1.5pt; font-weight: bold""> </td><td style=""font-weight: bold; padding-bottom: 1.5pt""> </td>
+    <td colspan=""2"" style=""font-weight: bold; text-align: center; border-bottom: Black 1.5pt solid"">June 30, 2024</td><td style=""padding-bottom: 1.5pt; font-weight: bold""> </td></tr>
+  <tr style=""vertical-align: bottom; background-color: rgb(204,238,255)"">
+    <td style=""width: 76%; text-align: left; padding-left: 5.4pt"">Interest expense</td><td style=""width: 1%""> </td>
+    <td style=""width: 1%; text-align: left"">$</td><td style=""width: 9%; text-align: right"">33,654</td><td style=""width: 1%; text-align: left""> </td><td style=""width: 1%""> </td>
+    <td style=""width: 1%; text-align: left"">$</td><td style=""width: 9%; text-align: right"">27,071</td><td style=""width: 1%; text-align: left""> </td></tr>
+  <tr style=""vertical-align: bottom; "">
+    <td style=""text-align: left; padding-bottom: 1.5pt; padding-left: 5.4pt"">Amortization of debt issuance costs</td><td style=""padding-bottom: 1.5pt""> </td>
+    <td style=""border-bottom: Black 1.5pt solid; text-align: left""> </td><td style=""border-bottom: Black 1.5pt solid; text-align: right"">1,855</td><td style=""padding-bottom: 1.5pt; text-align: left""> </td><td style=""padding-bottom: 1.5pt""> </td>
+    <td style=""border-bottom: Black 1.5pt solid; text-align: left""> </td><td style=""border-bottom: Black 1.5pt solid; text-align: right"">1,824</td><td style=""padding-bottom: 1.5pt; text-align: left""> </td></tr>
+  <tr style=""vertical-align: bottom; background-color: rgb(204,238,255)"">
+    <td style=""font-weight: bold; text-align: left; padding-bottom: 4pt; padding-left: 5.4pt"">Total interest expense</td><td style=""padding-bottom: 4pt""> </td>
+    <td style=""border-bottom: Black 4pt double; text-align: left"">$</td><td style=""border-bottom: Black 4pt double; text-align: right"">35,509</td><td style=""padding-bottom: 4pt; text-align: left""> </td><td style=""padding-bottom: 4pt""> </td>
+    <td style=""border-bottom: Black 4pt double; text-align: left"">$</td><td style=""border-bottom: Black 4pt double; text-align: right"">28,895</td><td style=""padding-bottom: 4pt; text-align: left""> </td></tr>
+  <tr style=""vertical-align: bottom; "">
+    <td style=""padding-left: 5.4pt"">Average interest rate</td><td> </td>
+    <td style=""text-align: left""> </td><td style=""text-align: right"">7.3</td><td style=""text-align: left"">%</td><td> </td>
+    <td style=""text-align: left""> </td><td style=""text-align: right"">9.1</td><td style=""text-align: left"">%</td></tr>
+  <tr style=""vertical-align: bottom; background-color: rgb(204,238,255)"">
+    <td style=""padding-left: 5.4pt"">Average borrowings</td><td> </td>
+    <td style=""text-align: left"">$</td><td style=""text-align: right"">970,878</td><td style=""text-align: left""> </td><td> </td>
+    <td style=""text-align: left"">$</td><td style=""text-align: right"">636,346</td><td style=""text-align: left""> </td></tr>
+  </table>",c0,,,,,,False,InterestIncomeAndInterestExpenseDisclosureTableTextBlock,
+KBDC,2025-08-11,income_statement,income_statement,InterestExpenseOther,InterestExpenseOther,17450000,c12,,,,,,False,InterestExpenseOther,
+KBDC,2025-08-11,income_statement,income_statement,InterestExpenseOther,InterestExpenseOther,12312000,c13,,,,,,False,InterestExpenseOther,
+KBDC,2025-08-11,income_statement,income_statement,InterestExpenseBorrowings,InterestExpenseBorrowings,1013511000,c925,,,,,,False,InterestExpenseBorrowings,
+KBDC,2025-08-11,income_statement,income_statement,InterestExpenseBorrowings,InterestExpenseBorrowings,569341000,c926,,,,,,False,InterestExpenseBorrowings,
+KBDC,2025-08-11,income_statement,income_statement,InterestExpenseOther,InterestExpenseOther,33654000,c0,,,,,,False,InterestExpenseOther,
+KBDC,2025-08-11,income_statement,income_statement,InterestExpenseOther,InterestExpenseOther,27071000,c14,,,,,,False,InterestExpenseOther,
+KBDC,2025-08-11,income_statement,income_statement,InterestExpenseBorrowings,InterestExpenseBorrowings,970878000,c927,,,,,,False,InterestExpenseBorrowings,
+KBDC,2025-08-11,income_statement,income_statement,InterestExpenseBorrowings,InterestExpenseBorrowings,636346000,c928,,,,,,False,InterestExpenseBorrowings,
+KBDC,2025-08-11,income_statement,income_statement,InvestmentCompanyInvestmentIncomeLossPerShare,InvestmentCompanyInvestmentIncomeLossPerShare,0.81,c0,,,,,,False,InvestmentCompanyInvestmentIncomeLossPerShare,
+KBDC,2025-08-11,income_statement,income_statement,InvestmentCompanyInvestmentIncomeLossPerShare,InvestmentCompanyInvestmentIncomeLossPerShare,1.03,c14,,,,,,False,InvestmentCompanyInvestmentIncomeLossPerShare,
+KBDC,2025-08-11,income_statement,income_statement,InvestmentCompanyInvestmentIncomeLossFromOperationsPerShare,InvestmentCompanyInvestmentIncomeLossFromOperationsPerShare,0.66,c0,,,,,,False,InvestmentCompanyInvestmentIncomeLossFromOperationsPerShare,
+KBDC,2025-08-11,income_statement,income_statement,InvestmentCompanyInvestmentIncomeLossFromOperationsPerShare,InvestmentCompanyInvestmentIncomeLossFromOperationsPerShare,1.06,c14,,,,,,False,InvestmentCompanyInvestmentIncomeLossFromOperationsPerShare,
+KBDC,2025-08-11,income_statement,income_statement,InvestmentCompanyInvestmentIncomeLossRatio,InvestmentCompanyInvestmentIncomeLossRatio,0.099,c0,,,,,,False,InvestmentCompanyInvestmentIncomeLossRatio,
+KBDC,2025-08-11,income_statement,income_statement,InvestmentCompanyInvestmentIncomeLossRatio,InvestmentCompanyInvestmentIncomeLossRatio,0.131,c14,,,,,,False,InvestmentCompanyInvestmentIncomeLossRatio,
+KBDC,2025-11-10,income_statement,income_statement,AccruedIncomeTaxesCurrent,AccruedIncomeTaxesCurrent,825000,c7,,,,,,False,AccruedIncomeTaxesCurrent,
+KBDC,2025-11-10,income_statement,income_statement,InvestmentIncomeInterest,InvestmentIncomeInterest,58898000,c8,,,,,,False,InvestmentIncomeInterest,
+KBDC,2025-11-10,income_statement,income_statement,InvestmentIncomeInterest,InvestmentIncomeInterest,57541000,c9,,,,,,False,InvestmentIncomeInterest,
+KBDC,2025-11-10,income_statement,income_statement,InvestmentIncomeInterest,InvestmentIncomeInterest,171032000,c10,,,,,,False,InvestmentIncomeInterest,
+KBDC,2025-11-10,income_statement,income_statement,InvestmentIncomeInterest,InvestmentIncomeInterest,155015000,c11,,,,,,False,InvestmentIncomeInterest,
+KBDC,2025-11-10,income_statement,income_statement,InvestmentIncomeInterest,InvestmentIncomeInterest,2063000,c12,,,,,,False,InvestmentIncomeInterest,
+KBDC,2025-11-10,income_statement,income_statement,InvestmentIncomeInterest,InvestmentIncomeInterest,2063000,c14,,,,,,False,InvestmentIncomeInterest,
+KBDC,2025-11-10,income_statement,income_statement,InvestmentIncomeInterest,InvestmentIncomeInterest,754000,c15,,,,,,False,InvestmentIncomeInterest,
+KBDC,2025-11-10,income_statement,income_statement,InvestmentIncomeDividend,InvestmentIncomeDividend,412000,c16,,,,,,False,InvestmentIncomeDividend,
+KBDC,2025-11-10,income_statement,income_statement,InvestmentIncomeDividend,InvestmentIncomeDividend,278000,c17,,,,,,False,InvestmentIncomeDividend,
+KBDC,2025-11-10,income_statement,income_statement,InvestmentIncomeDividend,InvestmentIncomeDividend,821000,c0,,,,,,False,InvestmentIncomeDividend,
+KBDC,2025-11-10,income_statement,income_statement,InvestmentIncomeDividend,InvestmentIncomeDividend,997000,c18,,,,,,False,InvestmentIncomeDividend,
+KBDC,2025-11-10,income_statement,income_statement,InvestmentIncomeNonoperating,InvestmentIncomeNonoperating,61373000,c16,,,,,,False,InvestmentIncomeNonoperating,
+KBDC,2025-11-10,income_statement,income_statement,InvestmentIncomeNonoperating,InvestmentIncomeNonoperating,57819000,c17,,,,,,False,InvestmentIncomeNonoperating,
+KBDC,2025-11-10,income_statement,income_statement,InvestmentIncomeNonoperating,InvestmentIncomeNonoperating,173916000,c0,,,,,,False,InvestmentIncomeNonoperating,
+KBDC,2025-11-10,income_statement,income_statement,InvestmentIncomeNonoperating,InvestmentIncomeNonoperating,156766000,c18,,,,,,False,InvestmentIncomeNonoperating,
+KBDC,2025-11-10,income_statement,income_statement,ManagementFeeExpense,ManagementFeeExpense,5583000,c16,,,,,,False,ManagementFeeExpense,
+KBDC,2025-11-10,income_statement,income_statement,ManagementFeeExpense,ManagementFeeExpense,4764000,c17,,,,,,False,ManagementFeeExpense,
+KBDC,2025-11-10,income_statement,income_statement,ManagementFeeExpense,ManagementFeeExpense,16126000,c0,,,,,,False,ManagementFeeExpense,
+KBDC,2025-11-10,income_statement,income_statement,ManagementFeeExpense,ManagementFeeExpense,12537000,c18,,,,,,False,ManagementFeeExpense,
+KBDC,2025-11-10,income_statement,income_statement,IncentiveFeeExpense,IncentiveFeeExpense,4419000,c16,,,,,,False,IncentiveFeeExpense,
+KBDC,2025-11-10,income_statement,income_statement,IncentiveFeeExpense,IncentiveFeeExpense,5605000,c17,,,,,,False,IncentiveFeeExpense,
+KBDC,2025-11-10,income_statement,income_statement,IncentiveFeeExpense,IncentiveFeeExpense,13361000,c0,,,,,,False,IncentiveFeeExpense,
+KBDC,2025-11-10,income_statement,income_statement,IncentiveFeeExpense,IncentiveFeeExpense,12345000,c18,,,,,,False,IncentiveFeeExpense,
+KBDC,2025-11-10,income_statement,income_statement,InterestExpenseOperating,InterestExpenseOperating,20207000,c16,,,,,,False,InterestExpenseOperating,
+KBDC,2025-11-10,income_statement,income_statement,InterestExpenseOperating,InterestExpenseOperating,16069000,c17,,,,,,False,InterestExpenseOperating,
+KBDC,2025-11-10,income_statement,income_statement,InterestExpenseOperating,InterestExpenseOperating,55716000,c0,,,,,,False,InterestExpenseOperating,
+KBDC,2025-11-10,income_statement,income_statement,InterestExpenseOperating,InterestExpenseOperating,44964000,c18,,,,,,False,InterestExpenseOperating,
+KBDC,2025-11-10,income_statement,income_statement,NoninterestExpenseDirectorsFees,NoninterestExpenseDirectorsFees,158000,c16,,,,,,False,NoninterestExpenseDirectorsFees,
+KBDC,2025-11-10,income_statement,income_statement,NoninterestExpenseDirectorsFees,NoninterestExpenseDirectorsFees,158000,c17,,,,,,False,NoninterestExpenseDirectorsFees,
+KBDC,2025-11-10,income_statement,income_statement,NoninterestExpenseDirectorsFees,NoninterestExpenseDirectorsFees,474000,c0,,,,,,False,NoninterestExpenseDirectorsFees,
+KBDC,2025-11-10,income_statement,income_statement,NoninterestExpenseDirectorsFees,NoninterestExpenseDirectorsFees,463000,c18,,,,,,False,NoninterestExpenseDirectorsFees,
+KBDC,2025-11-10,income_statement,income_statement,ExciseTaxExpenseBenefit,ExciseTaxExpenseBenefit,-43000,c0,,,,,,False,ExciseTaxExpenseBenefit,
+KBDC,2025-11-10,income_statement,income_statement,OtherGeneralAndAdministrativeExpense,OtherGeneralAndAdministrativeExpense,591000,c16,,,,,,False,OtherGeneralAndAdministrativeExpense,
+KBDC,2025-11-10,income_statement,income_statement,OtherGeneralAndAdministrativeExpense,OtherGeneralAndAdministrativeExpense,563000,c17,,,,,,False,OtherGeneralAndAdministrativeExpense,
+KBDC,2025-11-10,income_statement,income_statement,OtherGeneralAndAdministrativeExpense,OtherGeneralAndAdministrativeExpense,1775000,c0,,,,,,False,OtherGeneralAndAdministrativeExpense,
+KBDC,2025-11-10,income_statement,income_statement,OtherGeneralAndAdministrativeExpense,OtherGeneralAndAdministrativeExpense,1542000,c18,,,,,,False,OtherGeneralAndAdministrativeExpense,
+KBDC,2025-11-10,income_statement,income_statement,OperatingExpenses,OperatingExpenses,31327000,c16,,,,,,False,OperatingExpenses,
+KBDC,2025-11-10,income_statement,income_statement,OperatingExpenses,OperatingExpenses,27562000,c17,,,,,,False,OperatingExpenses,
+KBDC,2025-11-10,income_statement,income_statement,OperatingExpenses,OperatingExpenses,88491000,c0,,,,,,False,OperatingExpenses,
+KBDC,2025-11-10,income_statement,income_statement,OperatingExpenses,OperatingExpenses,72893000,c18,,,,,,False,OperatingExpenses,
+KBDC,2025-11-10,income_statement,income_statement,OperatingIncomeLoss,OperatingIncomeLoss,-31327000,c16,,,,,,False,OperatingIncomeLoss,
+KBDC,2025-11-10,income_statement,income_statement,OperatingIncomeLoss,OperatingIncomeLoss,-20766000,c17,,,,,,False,OperatingIncomeLoss,
+KBDC,2025-11-10,income_statement,income_statement,OperatingIncomeLoss,OperatingIncomeLoss,-86420000,c0,,,,,,False,OperatingIncomeLoss,
+KBDC,2025-11-10,income_statement,income_statement,OperatingIncomeLoss,OperatingIncomeLoss,-61517000,c18,,,,,,False,OperatingIncomeLoss,
+KBDC,2025-11-10,income_statement,income_statement,NetInvestmentIncome,NetInvestmentIncome,30046000,c16,,,,,,False,NetInvestmentIncome,
+KBDC,2025-11-10,income_statement,income_statement,NetInvestmentIncome,NetInvestmentIncome,37053000,c17,,,,,,False,NetInvestmentIncome,
+KBDC,2025-11-10,income_statement,income_statement,NetInvestmentIncome,NetInvestmentIncome,87496000,c0,,,,,,False,NetInvestmentIncome,
+KBDC,2025-11-10,income_statement,income_statement,NetInvestmentIncome,NetInvestmentIncome,95249000,c18,,,,,,False,NetInvestmentIncome,
+KBDC,2025-11-10,income_statement,income_statement,IncomeTaxExpenseBenefit,IncomeTaxExpenseBenefit,428000,c16,,,,,,False,IncomeTaxExpenseBenefit,
+KBDC,2025-11-10,income_statement,income_statement,IncomeTaxExpenseBenefit,IncomeTaxExpenseBenefit,1327000,c0,,,,,,False,IncomeTaxExpenseBenefit,
+KBDC,2025-11-10,income_statement,income_statement,NetIncomeLoss,NetIncomeLoss,24613000,c16,,,,,,False,NetIncomeLoss,
+KBDC,2025-11-10,income_statement,income_statement,NetIncomeLoss,NetIncomeLoss,37556000,c17,,,,,,False,NetIncomeLoss,
+KBDC,2025-11-10,income_statement,income_statement,NetIncomeLoss,NetIncomeLoss,71738000,c0,,,,,,False,NetIncomeLoss,
+KBDC,2025-11-10,income_statement,income_statement,NetIncomeLoss,NetIncomeLoss,96491000,c18,,,,,,False,NetIncomeLoss,
+KBDC,2025-11-10,income_statement,income_statement,IncomeLossFromContinuingOperationsPerDilutedShare,IncomeLossFromContinuingOperationsPerDilutedShare,0.35,c16,,,,,,False,IncomeLossFromContinuingOperationsPerDilutedShare,
+KBDC,2025-11-10,income_statement,income_statement,IncomeLossFromContinuingOperationsPerBasicShare,IncomeLossFromContinuingOperationsPerBasicShare,0.35,c16,,,,,,False,IncomeLossFromContinuingOperationsPerBasicShare,
+KBDC,2025-11-10,income_statement,income_statement,IncomeLossFromContinuingOperationsPerDilutedShare,IncomeLossFromContinuingOperationsPerDilutedShare,0.53,c17,,,,,,False,IncomeLossFromContinuingOperationsPerDilutedShare,
+KBDC,2025-11-10,income_statement,income_statement,IncomeLossFromContinuingOperationsPerBasicShare,IncomeLossFromContinuingOperationsPerBasicShare,0.53,c17,,,,,,False,IncomeLossFromContinuingOperationsPerBasicShare,
+KBDC,2025-11-10,income_statement,income_statement,IncomeLossFromContinuingOperationsPerDilutedShare,IncomeLossFromContinuingOperationsPerDilutedShare,1.01,c0,,,,,,False,IncomeLossFromContinuingOperationsPerDilutedShare,
+KBDC,2025-11-10,income_statement,income_statement,IncomeLossFromContinuingOperationsPerBasicShare,IncomeLossFromContinuingOperationsPerBasicShare,1.01,c0,,,,,,False,IncomeLossFromContinuingOperationsPerBasicShare,
+KBDC,2025-11-10,income_statement,income_statement,IncomeLossFromContinuingOperationsPerDilutedShare,IncomeLossFromContinuingOperationsPerDilutedShare,1.57,c18,,,,,,False,IncomeLossFromContinuingOperationsPerDilutedShare,
+KBDC,2025-11-10,income_statement,income_statement,IncomeLossFromContinuingOperationsPerBasicShare,IncomeLossFromContinuingOperationsPerBasicShare,1.57,c18,,,,,,False,IncomeLossFromContinuingOperationsPerBasicShare,
+KBDC,2025-11-10,income_statement,income_statement,IncreaseDecreaseInInterestAndDividendsReceivable,IncreaseDecreaseInInterestAndDividendsReceivable,6662000,c0,,,,,,False,IncreaseDecreaseInInterestAndDividendsReceivable,
+KBDC,2025-11-10,income_statement,income_statement,IncreaseDecreaseInInterestAndDividendsReceivable,IncreaseDecreaseInInterestAndDividendsReceivable,9517000,c18,,,,,,False,IncreaseDecreaseInInterestAndDividendsReceivable,
+KBDC,2025-11-10,income_statement,income_statement,IncreaseDecreaseInAccruedIncomeTaxesPayable,IncreaseDecreaseInAccruedIncomeTaxesPayable,-825000,c0,,,,,,False,IncreaseDecreaseInAccruedIncomeTaxesPayable,
+KBDC,2025-11-10,income_statement,income_statement,IncreaseDecreaseInAccruedIncomeTaxesPayable,IncreaseDecreaseInAccruedIncomeTaxesPayable,-101000,c18,,,,,,False,IncreaseDecreaseInAccruedIncomeTaxesPayable,
+KBDC,2025-11-10,income_statement,income_statement,RevenueFromContractWithCustomerPolicyTextBlock,RevenueFromContractWithCustomerPolicyTextBlock,"<p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">F.<i> Interest Income Recognition</i> —
+Interest income is recorded on an accrual basis and includes the accretion of discounts, amortization of premiums and payment-in-kind
+(“PIK”) interest. Discounts from and premiums to par value on investments purchased are accreted/amortized into interest income
+over the life of the respective security using the effective yield method. To the extent loans contain PIK provisions, PIK interest, computed
+at the contractual rate specified in each applicable agreement, is accrued and recorded as interest income and added to the principal
+balance of the loan. PIK interest income added to the principal balance is generally collected upon repayment of the outstanding principal.
+The Company does not accrue PIK interest if, in the opinion of the Advisor, the portfolio company valuation indicates that the PIK interest
+is not likely to be collectible. If the Company believes PIK is not expected to be realized, the investment generating PIK will be placed
+on non-accrual status. When a PIK investment is placed on non-accrual status, the accrued, uncapitalized interest is generally reversed
+through PIK interest income. Previously capitalized PIK interest is not reversed when an investment is placed on non-accrual status. To
+maintain the Company’s status as a RIC, this non-cash source of income must be paid out to stockholders in the form of dividends
+for the year the income was earned, even though the Company has not yet collected the cash. The amortized cost of investments represents
+the original cost adjusted for any accretion of discounts, amortization of premiums and PIK interest. For the nine months ended September
+30, 2025 and 2024, the Company had $4,515 and $2,119, respectively, of PIK interest included in interest income, which represents 2.6%
+and 1.4%, respectively, of aggregate interest income.</p><p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">Loans are generally placed on non-accrual status
+when it has been determined that a significant impairment in the financial condition and ability of the borrower to repay principal and
+interest has occurred and is expected to continue such that it is probable the collectability of full amount of the loan (principal and
+interest) is doubtful. Accrued and unpaid interest is generally reversed when a loan is placed on non-accrual status. If cash payments
+are received subsequent to a loan being placed on non-accrual status, these payments will first be applied to previously accrued but uncollected
+interest, then to recover the principal. Additionally, any original issue discount and market discount are no longer accreted to interest
+income as of the date the loan is placed on non-accrual status. Non-accrual loans are restored to accrual status when past due principal
+and interest are paid or there is no longer a reasonable doubt that such principal or interest will be collected in full and, in the Company’s
+judgment, principal and interest are likely to remain current. The Company may make exceptions to this policy if the loan has sufficient
+collateral value (i.e., typically measured as enterprise value of the portfolio company) or is in the process of collection. As of September
+30, 2025, the Company had five debt investments on non-accrual status, which comprised 2.5% and 1.4%, respectively, of total debt investments
+at cost and fair value. As of September 30, 2024, the Company had two debt investment on non-accrual status, which comprised 1.2% and
+1.0%, respectively, of total debt investments at cost and fair value.</p>",c0,,,,,,False,RevenueFromContractWithCustomerPolicyTextBlock,
+KBDC,2025-11-10,income_statement,income_statement,AggregateInterestIncome,AggregateInterestIncome,0.026,c0,,,,,,False,AggregateInterestIncome,
+KBDC,2025-11-10,income_statement,income_statement,AggregateInterestIncome,AggregateInterestIncome,0.014,c18,,,,,,False,AggregateInterestIncome,
+KBDC,2025-11-10,income_statement,income_statement,IncomeTaxPolicyTextBlock,IncomeTaxPolicyTextBlock,"<p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">I.<i> Income Taxes </i>— it is the
+Company’s intention to continue to be treated as and to qualify each year for special tax treatment afforded a RIC under the Code.
+As long as the Company meets certain requirements that govern its sources of income, diversification of assets and timely distribution
+of earnings to stockholders, the Company will not be subject to U.S. federal income tax.</p><p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">The Company must pay distributions equal to 90%
+of its investment company taxable income (ordinary income and short-term capital gains) to qualify as a RIC and it must distribute all
+of its taxable income (ordinary income, short-term capital gains and long-term capital gains) to avoid federal income taxes. The Company
+will be subject to federal income tax on any undistributed portion of income. For purposes of the distribution test, the Company may elect
+to treat as paid on the last day of its taxable year all or part of any distributions that are declared after the end of its taxable year
+if such distributions are declared before the due date of its tax return, including any extensions.</p><p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">All RICs are subject to a non-deductible 4% excise
+tax on income that is not distributed on a timely basis in accordance with the calendar year distribution requirements. To avoid the tax,
+the Company must distribute during each calendar year an amount at least equal to the sum of (i) 98% of its ordinary income for the calendar
+year, (ii) 98.2% of its net capital gains for the one-year period ending on December 31, the last day of our taxable year, and (iii)
+undistributed amounts from previous years on which the Company paid no U.S. federal income tax. A distribution will be treated as paid
+during the calendar year if it is paid during the calendar year or declared by the Company in October, November or December of such year,
+payable to stockholders of record on a date during such months and paid by the Company no later than January of the following year. Any
+such distributions paid during January of the following year will be deemed to be received by stockholders on December 31 of the year
+the distributions are declared, rather than when the distributions are actually received.</p><p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">The Company’s wholly owned subsidiary, KABDC
+Corp, LLC has elected to be a corporation and is obligated to pay federal and state income tax on its taxable income. KABDC Corp, LLC
+invests in partnerships and includes its allocable share of the taxable income or loss in computing its own taxable income. Deferred income
+taxes reflect (i) taxes on unrealized gains (losses), which are attributable to the difference between fair value and tax cost basis,
+(ii) the net tax effects of temporary differences between the carrying amounts of assets and liabilities for financial reporting purposes
+and the amounts used for income tax purposes and (iii) the net tax benefit of accumulated net operating and capital losses. Income tax
+expense, if any, is included under the income category for which it relates in the Consolidated Statements of Operations.</p><p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">To the extent KABDC Corp, LLC has a deferred tax
+asset, consideration is given as to whether or not a valuation allowance is required. The need to establish a valuation allowance for
+deferred tax assets is assessed periodically based on the Income Tax Topic of the FASB Accounting Standards Codification (ASC 740), that
+it is more likely than not that some portion or all of the deferred tax asset will not be realized. In the assessment for a valuation
+allowance, consideration is given to all positive and negative evidence related to the realization of the deferred tax asset. This assessment
+considers, among other matters, the nature, frequency and severity of current and cumulative losses, forecasts of future profitability,
+the duration of statutory carryforward periods and the associated risk that certain loss carryforwards may expire unused.</p><p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">KABDC Corp, LLC may rely to some extent on information
+provided by portfolio investments, which may not necessarily be timely, to estimate taxable income allocable to the units/shares of such
+companies held in the portfolio and to estimate the associated current and/or deferred tax liability.</p><p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">The Company evaluates tax positions taken or expected
+to be taken in the course of preparing its financial statements to determine whether the tax positions are “more-likely-than-not” to be
+sustained by the applicable tax authority. Tax positions not deemed to meet the “more-likely-than-not” threshold are
+reserved and recorded as a tax benefit or expense in the current year. All penalties and interest associated with income taxes are included
+in income tax expense. Conclusions regarding tax positions are subject to review and may be adjusted at a later date based on factors
+including, but not limited to, on-going analyses of tax laws, regulations and interpretations thereof. </p>",c0,,,,,,False,IncomeTaxPolicyTextBlock,
+KBDC,2025-11-10,income_statement,income_statement,QuarterlyFinancialInformationIncomeTaxesSignificantVariationDescription,QuarterlyFinancialInformationIncomeTaxesSignificantVariationDescription,"All RICs are subject to a non-deductible 4% excise
+tax on income that is not distributed on a timely basis in accordance with the calendar year distribution requirements. To avoid the tax,
+the Company must distribute during each calendar year an amount at least equal to the sum of (i) 98% of its ordinary income for the calendar
+year, (ii) 98.2% of its net capital gains for the one-year period ending on December 31, the last day of our taxable year, and (iii)
+undistributed amounts from previous years on which the Company paid no U.S. federal income tax.",c0,,,,,,False,QuarterlyFinancialInformationIncomeTaxesSignificantVariationDescription,
+KBDC,2025-11-10,income_statement,income_statement,IncentiveFeeExpense,IncentiveFeeExpense,4419000,c761,,,,,,False,IncentiveFeeExpense,
+KBDC,2025-11-10,income_statement,income_statement,IncentiveFeeExpense,IncentiveFeeExpense,0,c762,,,,,,False,IncentiveFeeExpense,
+KBDC,2025-11-10,income_statement,income_statement,IncentiveFeeExpense,IncentiveFeeExpense,13361000,c764,,,,,,False,IncentiveFeeExpense,
+KBDC,2025-11-10,income_statement,income_statement,IncentiveFeeExpense,IncentiveFeeExpense,2631000,c765,,,,,,False,IncentiveFeeExpense,
+KBDC,2025-11-10,income_statement,income_statement,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,2149000,c849,,,,,,False,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,
+KBDC,2025-11-10,income_statement,income_statement,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,2149000,c16,,,,,,False,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,
+KBDC,2025-11-10,income_statement,income_statement,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,2192000,c854,,,,,,False,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,
+KBDC,2025-11-10,income_statement,income_statement,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,2192000,c17,,,,,,False,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,
+KBDC,2025-11-10,income_statement,income_statement,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,4642000,c859,,,,,,False,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,
+KBDC,2025-11-10,income_statement,income_statement,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,4642000,c0,,,,,,False,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,
+KBDC,2025-11-10,income_statement,income_statement,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,3134000,c863,,,,,,False,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,
+KBDC,2025-11-10,income_statement,income_statement,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,3134000,c18,,,,,,False,FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisPIKInterestAndDividend,
+KBDC,2025-11-10,income_statement,income_statement,InterestIncomeAndInterestExpenseDisclosureTableTextBlock,InterestIncomeAndInterestExpenseDisclosureTableTextBlock,"<p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify"">For the three and nine months ended September
+30, 2025 and 2024, the components of interest expense were as follows:</p>
+
+
+
+<p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify""> </p>
+
+<table cellpadding=""0"" style=""border-collapse: collapse; width: 100%; font: 10pt Times New Roman, Times, Serif; border-spacing: 0px;"">
+  <tr style=""vertical-align: bottom"">
+    <td> </td><td style=""font-weight: bold; padding-bottom: 1.5pt""> </td>
+    <td colspan=""6"" style=""font-weight: bold; text-align: center; border-bottom: Black 1.5pt solid"">For the three months ended</td><td style=""padding-bottom: 2.5pt; font-weight: bold""> </td></tr>
+  <tr style=""vertical-align: bottom"">
+    <td> </td><td style=""font-weight: bold; padding-bottom: 1.5pt""> </td>
+    <td colspan=""2"" style=""font-weight: bold; text-align: center; border-bottom: Black 1.5pt solid"">September 30, 2025</td><td style=""padding-bottom: 2.5pt; font-weight: bold""> </td><td style=""font-weight: bold; padding-bottom: 1.5pt""> </td>
+    <td colspan=""2"" style=""font-weight: bold; text-align: center; border-bottom: Black 1.5pt solid"">September 30, 2024</td><td style=""padding-bottom: 2.5pt; font-weight: bold""> </td></tr>
+  <tr style=""vertical-align: bottom; background-color: rgb(204,238,255)"">
+    <td style=""width: 76%; text-align: left"">Interest expense</td><td style=""width: 1%""> </td>
+    <td style=""width: 1%; text-align: left"">$</td><td style=""width: 9%; text-align: right"">19,227</td><td style=""width: 1%; text-align: left""> </td><td style=""width: 1%""> </td>
+    <td style=""width: 1%; text-align: left"">$</td><td style=""width: 9%; text-align: right"">15,122</td><td style=""width: 1%; text-align: left""> </td></tr>
+  <tr style=""vertical-align: bottom; "">
+    <td style=""text-align: left; padding-bottom: 1.5pt"">Amortization of debt issuance costs</td><td style=""padding-bottom: 1.5pt""> </td>
+    <td style=""border-bottom: Black 1.5pt solid; text-align: left""> </td><td style=""border-bottom: Black 1.5pt solid; text-align: right"">980</td><td style=""padding-bottom: 2.5pt; text-align: left""> </td><td style=""padding-bottom: 1.5pt""> </td>
+    <td style=""border-bottom: Black 1.5pt solid; text-align: left""> </td><td style=""border-bottom: Black 1.5pt solid; text-align: right"">947</td><td style=""padding-bottom: 2.5pt; text-align: left""> </td></tr>
+  <tr style=""vertical-align: bottom; background-color: rgb(204,238,255)"">
+    <td style=""font-weight: bold; text-align: left; padding-bottom: 2.5pt"">Total interest expense</td><td style=""padding-bottom: 2.5pt""> </td>
+    <td style=""border-bottom: Black 4pt double; text-align: left"">$</td><td style=""border-bottom: Black 4pt double; text-align: right"">20,207</td><td style=""padding-bottom: 2.5pt; text-align: left""> </td><td style=""padding-bottom: 2.5pt""> </td>
+    <td style=""border-bottom: Black 4pt double; text-align: left"">$</td><td style=""border-bottom: Black 4pt double; text-align: right"">16,069</td><td style=""padding-bottom: 2.5pt; text-align: left""> </td></tr>
+  <tr style=""vertical-align: bottom; "">
+    <td>Average interest rate</td><td> </td>
+    <td style=""text-align: left""> </td><td style=""text-align: right"">7.1</td><td style=""text-align: left"">%</td><td> </td>
+    <td style=""text-align: left""> </td><td style=""text-align: right"">8.6</td><td style=""text-align: left"">%</td></tr>
+  <tr style=""vertical-align: bottom; background-color: rgb(204,238,255)"">
+    <td>Average borrowings</td><td> </td>
+    <td style=""text-align: left"">$</td><td style=""text-align: right"">1,110,174</td><td style=""text-align: left""> </td><td> </td>
+    <td style=""text-align: left"">$</td><td style=""text-align: right"">731,272</td><td style=""text-align: left""> </td></tr>
+  </table>
+
+
+<p style=""font: 10pt Times New Roman, Times, Serif; margin: 0pt 0; text-align: justify""> </p>
+
+<table cellpadding=""0"" style=""border-collapse: collapse; width: 100%; font: 10pt Times New Roman, Times, Serif; border-spacing: 0px;"">
+  <tr style=""vertical-align: bottom"">
+    <td> </td><td style=""font-weight: bold; padding-bottom: 1.5pt""> </td>
+    <td colspan=""6"" style=""font-weight: bold; text-align: center; border-bottom: Black 1.5pt solid"">For the nine months ended</td><td style=""padding-bottom: 2.5pt; font-weight: bold""> </td></tr>
+  <tr style=""vertical-align: bottom"">
+    <td> </td><td style=""font-weight: bold; padding-bottom: 1.5pt""> </td>
+    <td colspan=""2"" style=""font-weight: bold; text-align: center; border-bottom: Black 1.5pt solid"">September 30, 2025</td><td style=""padding-bottom: 2.5pt; font-weight: bold""> </td><td style=""font-weight: bold; padding-bottom: 1.5pt""> </td>
+    <td colspan=""2"" style=""font-weight: bold; text-align: center; border-bottom: Black 1.5pt solid"">September 30, 2024</td><td style=""padding-bottom: 2.5pt; font-weight: bold""> </td></tr>
+  <tr style=""vertical-align: bottom; background-color: rgb(204,238,255)"">
+    <td style=""width: 76%; text-align: left"">Interest expense</td><td style=""width: 1%""> </td>
+    <td style=""width: 1%; text-align: left"">$</td><td style=""width: 9%; text-align: right"">52,881</td><td style=""width: 1%; text-align: left""> </td><td style=""width: 1%""> </td>
+    <td style=""width: 1%; text-align: left"">$</td><td style=""width: 9%; text-align: right"">42,193</td><td style=""width: 1%; text-align: left""> </td></tr>
+  <tr style=""vertical-align: bottom; "">
+    <td style=""text-align: left; padding-bottom: 1.5pt"">Amortization of debt issuance costs</td><td style=""padding-bottom: 1.5pt""> </td>
+    <td style=""border-bottom: Black 1.5pt solid; text-align: left""> </td><td style=""border-bottom: Black 1.5pt solid; text-align: right"">2,835</td><td style=""padding-bottom: 2.5pt; text-align: left""> </td><td style=""padding-bottom: 1.5pt""> </td>
+    <td style=""border-bottom: Black 1.5pt solid; text-align: left""> </td><td style=""border-bottom: Black 1.5pt solid; text-align: right"">2,771</td><td style=""padding-bottom: 2.5pt; text-align: left""> </td></tr>
+  <tr style=""vertical-align: bottom; background-color: rgb(204,238,255)"">
+    <td style=""font-weight: bold; text-align: left; padding-bottom: 2.5pt"">Total interest expense</td><td style=""padding-bottom: 2.5pt""> </td>
+    <td style=""border-bottom: Black 4pt double; text-align: left"">$</td><td style=""border-bottom: Black 4pt double; text-align: right"">55,716</td><td style=""padding-bottom: 2.5pt; text-align: left""> </td><td style=""padding-bottom: 2.5pt""> </td>
+    <td style=""border-bottom: Black 4pt double; text-align: left"">$</td><td style=""border-bottom: Black 4pt double; text-align: right"">44,964</td><td style=""padding-bottom: 2.5pt; text-align: left""> </td></tr>
+  <tr style=""vertical-align: bottom; "">
+    <td>Average interest rate</td><td> </td>
+    <td style=""text-align: left""> </td><td style=""text-align: right"">7.2</td><td style=""text-align: left"">%</td><td> </td>
+    <td style=""text-align: left""> </td><td style=""text-align: right"">8.8</td><td style=""text-align: left"">%</td></tr>
+  <tr style=""vertical-align: bottom; background-color: rgb(204,238,255)"">
+    <td>Average borrowings</td><td> </td>
+    <td style=""text-align: left"">$</td><td style=""text-align: right"">1,017,821</td><td style=""text-align: left""> </td><td> </td>
+    <td style=""text-align: left"">$</td><td style=""text-align: right"">668,219</td><td style=""text-align: left""> </td></tr>
+  </table>",c0,,,,,,False,InterestIncomeAndInterestExpenseDisclosureTableTextBlock,
+KBDC,2025-11-10,income_statement,income_statement,InterestExpenseOther,InterestExpenseOther,19227000,c16,,,,,,False,InterestExpenseOther,
+KBDC,2025-11-10,income_statement,income_statement,InterestExpenseOther,InterestExpenseOther,15122000,c17,,,,,,False,InterestExpenseOther,
+KBDC,2025-11-10,income_statement,income_statement,InterestExpenseBorrowings,InterestExpenseBorrowings,1110174000,c950,,,,,,False,InterestExpenseBorrowings,
+KBDC,2025-11-10,income_statement,income_statement,InterestExpenseBorrowings,InterestExpenseBorrowings,731272000,c951,,,,,,False,InterestExpenseBorrowings,
+KBDC,2025-11-10,income_statement,income_statement,InterestExpenseOther,InterestExpenseOther,52881000,c0,,,,,,False,InterestExpenseOther,
+KBDC,2025-11-10,income_statement,income_statement,InterestExpenseOther,InterestExpenseOther,42193000,c18,,,,,,False,InterestExpenseOther,
+KBDC,2025-11-10,income_statement,income_statement,InterestExpenseBorrowings,InterestExpenseBorrowings,1017821000,c952,,,,,,False,InterestExpenseBorrowings,
+KBDC,2025-11-10,income_statement,income_statement,InterestExpenseBorrowings,InterestExpenseBorrowings,668219000,c953,,,,,,False,InterestExpenseBorrowings,
+KBDC,2025-11-10,income_statement,income_statement,InvestmentCompanyInvestmentIncomeLossPerShare,InvestmentCompanyInvestmentIncomeLossPerShare,1.23,c0,,,,,,False,InvestmentCompanyInvestmentIncomeLossPerShare,
+KBDC,2025-11-10,income_statement,income_statement,InvestmentCompanyInvestmentIncomeLossPerShare,InvestmentCompanyInvestmentIncomeLossPerShare,1.55,c18,,,,,,False,InvestmentCompanyInvestmentIncomeLossPerShare,
+KBDC,2025-11-10,income_statement,income_statement,InvestmentCompanyInvestmentIncomeLossFromOperationsPerShare,InvestmentCompanyInvestmentIncomeLossFromOperationsPerShare,1.01,c0,,,,,,False,InvestmentCompanyInvestmentIncomeLossFromOperationsPerShare,
+KBDC,2025-11-10,income_statement,income_statement,InvestmentCompanyInvestmentIncomeLossFromOperationsPerShare,InvestmentCompanyInvestmentIncomeLossFromOperationsPerShare,1.59,c18,,,,,,False,InvestmentCompanyInvestmentIncomeLossFromOperationsPerShare,
+KBDC,2025-11-10,income_statement,income_statement,InvestmentCompanyInvestmentIncomeLossRatio,InvestmentCompanyInvestmentIncomeLossRatio,0.10,c0,,,,,,False,InvestmentCompanyInvestmentIncomeLossRatio,
+KBDC,2025-11-10,income_statement,income_statement,InvestmentCompanyInvestmentIncomeLossRatio,InvestmentCompanyInvestmentIncomeLossRatio,0.132,c18,,,,,,False,InvestmentCompanyInvestmentIncomeLossRatio,

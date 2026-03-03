@@ -4,6 +4,7 @@ import type { SortingState } from '@tanstack/react-table';
 import type { Holding, CompanyProfile } from '../data/adapter';
 import { loadCompanyProfiles } from '../data/adapter';
 import { checkRedFlags, getMaturityDateStr } from '../utils/holdingsAnalytics';
+import { formatThousandsAsCurrency, CURRENCY_M_LABEL } from '../utils/formatCurrency';
 import { ExportBar } from './ExportBar';
 import { calculateCurrentYield } from '../utils/referenceRates';
 import { HoldingsFilterBar, filterHoldings, defaultFilterState, filterHoldingsAdvanced, defaultAdvancedFilterState, hasActiveAdvancedFilters, type FilterState, type AdvancedFilterState } from './HoldingsFilterBar';
@@ -273,33 +274,36 @@ function HoldingsTableComponent({ data, period, onCompanyClick, getCompanyIdFrom
       }),
       columnHelper.display({
         id: 'principal',
-        header: 'Principal ($K)',
+        header: 'Principal ($M)',
         cell: (c) => {
           const row = c.row.original as any;
           const val = row.principal_amount_thousands ?? row.principal_amount;
-          return <span className="block text-right">{fmtNumber(val)}</span>;
+          if (val === null || val === undefined || val === '') return <span className="block text-right">—</span>;
+          return <span className="block text-right">{formatThousandsAsCurrency(Number(val))}</span>;
         },
         enableSorting: true,
         sortingFn: (rowA, rowB) => compareNullable((rowA.original as any)._n_principal, (rowB.original as any)._n_principal),
       }),
       columnHelper.display({
         id: 'cost',
-        header: 'Cost ($K)',
+        header: 'Cost ($M)',
         cell: (c) => {
           const row = c.row.original as any;
           const val = row.cost_thousands ?? row.amortized_cost_thousands ?? row.cost ?? row.amortized_cost;
-          return <span className="block text-right">{fmtNumber(val)}</span>;
+          if (val === null || val === undefined || val === '') return <span className="block text-right">—</span>;
+          return <span className="block text-right">{formatThousandsAsCurrency(Number(val))}</span>;
         },
         enableSorting: true,
         sortingFn: (rowA, rowB) => compareNullable((rowA.original as any)._n_cost, (rowB.original as any)._n_cost),
       }),
       columnHelper.display({
         id: 'fair_value',
-        header: 'Fair Value ($K)',
+        header: CURRENCY_M_LABEL,
         cell: (c) => {
           const row = c.row.original as any;
           const val = row.fair_value_thousands ?? row.fair_value;
-          return <span className="block text-right">{fmtNumber(val)}</span>;
+          if (val === null || val === undefined || val === '') return <span className="block text-right">—</span>;
+          return <span className="block text-right">{formatThousandsAsCurrency(Number(val))}</span>;
         },
         enableSorting: true,
         sortingFn: (rowA, rowB) => compareNullable((rowA.original as any)._n_fair, (rowB.original as any)._n_fair),

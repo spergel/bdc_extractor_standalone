@@ -1,533 +1,371 @@
-company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,ticker,filing_date
-1011778 BC / NEW RED FIN (dba Restaurant Brands),co_7c886243985f,First Lien,Food & Beverage,,,SOFR,1.75%,,2030-09-01,1992,1984,1982,,,,,OBDC,2025-08-06
-Aramark Services Inc,co_cbcf56d240b4,First Lien,Food & Beverage,,,SOFR,2.00%,,2030-06-01,6046,6046,6054,,,,,OBDC,2025-08-06
-Aspire Bakeries Holdings LLC,co_2e3cc913a1be,First Lien,Food & Beverage,,,SOFR,3.50%,,2030-12-01,4229,4229,4240,,,,,OBDC,2025-08-06
-Balrog Acquisition Inc (dba Bakemark),co_b294ed3a1ed4,First Lien,Food & Beverage,,,SOFR,4.00%,,2028-09-01,18503,18554,18007,,,,,OBDC,2025-08-06
-Fiesta Purchaser Inc (dba Shearer's Foods),co_36121690c9da,First Lien,Food & Beverage,,,SOFR,3.25%,,2031-02-01,7871,7871,7886,,,,,OBDC,2025-08-06
-FRONERI US INC,co_b316a24e6ba5,First Lien,Food & Beverage,,,SOFR,2.00%,,2031-09-01,3990,3981,3943,,,,,OBDC,2025-08-06
-IRB Holding Corporation,co_d121d652524e,First Lien,Food & Beverage,,,SOFR,2.50%,,2027-12-01,3706,3671,3705,,,,,OBDC,2025-08-06
-Pegasus BidCo B.V.,co_61c98d351ae8,First Lien,Food & Beverage,,,SOFR,3.25%,,2029-07-01,7475,7444,7512,,,,,OBDC,2025-08-06
-Red SPV LLC,co_153604f0c757,First Lien,Food & Beverage,,,SOFR,2.25%,,2032-03-01,9524,9478,9500,,,,,OBDC,2025-08-06
-Savor Acquisition Inc (dba Sauer Brands),co_343ffcf499b2,First Lien,Food & Beverage,,,SOFR,3.25%,,2032-02-01,5257,5237,5285,,,,,OBDC,2025-08-06
-Sazerac Company Inc (dba Sazerac Co.),co_f3ae0d922983,First Lien,Food & Beverage,,,SOFR,3.00%,,2032-06-01,8424,8382,8382,,,,,OBDC,2025-08-06
-Integrity Marketing Acquisition LLC,co_c54435bdb6e3,Delayed Draw,,,,,,2026-08-01,,,,,,6280,6280,,OBDC,2025-08-06
-Interoperability Bidco Inc,co_031bfc51b4b1,Delayed Draw,,,,,,2026-06-01,,,,,,4444,4444,,OBDC,2025-08-06
-Kaseya Inc,co_75541f204b9b,Delayed Draw,,,,,,2025-06-01,221,,,,,844,,,OBDC,2025-08-06
-KENE Acquisition Inc,co_4e96058b3e6e,Delayed Draw,,,,,,2026-02-01,532,,,,,4581,,,OBDC,2025-08-06
-KPSKY Acquisition Inc,co_c28869bd420a,Delayed Draw,,,,,,2025-11-01,3,,,,,290,,,OBDC,2025-08-06
-KPSKY Acquisition Inc,co_c28869bd420a,Delayed Draw,Business Services,,,SOFR,5.75%,,2028-10-01,31,,,,,,,OBDC,2025-08-06
-Lakefield Acquisition Corp,co_b7961d48e0f1,Delayed Draw,,,,,,2026-09-01,3,,,,,397,,,OBDC,2025-08-06
-Litera Bidco LLC,co_b3d6abfe076b,Delayed Draw,,,,,,2026-11-01,16181,,,,,18279,,,OBDC,2025-08-06
-Litera Bidco LLC,co_b3d6abfe076b,Delayed Draw,,,,,,2027-05-01,,,,,,14361,14361,,OBDC,2025-08-06
-Maple Acquisition LLC,co_4c18c235d68a,Delayed Draw,,,,,,2026-05-01,,,,,,12103,12103,,OBDC,2025-08-06
-Mario Purchaser LLC,co_b717c9ab9fee,Delayed Draw,,,,,,2025-10-01,457,,,,,4143,,,OBDC,2025-08-06
-Minotaur Acquisition Inc,co_6830d716e83b,Delayed Draw,,,,,,2026-05-01,,,,,,24666,24666,,OBDC,2025-08-06
-Monotype Imaging Holdings Inc,co_f26421f2c9f8,Delayed Draw,,,,,,2026-02-01,2222,,,,,7314,,,OBDC,2025-08-06
-National Dentex Labs LLC,co_eaf2f5996ff7,Delayed Draw,,,,,,2026-04-01,4763,,,,,1073,,,OBDC,2025-08-06
-NELIPAK EUROPEAN HOLDINGS COÖPERATIEF UA,co_cf16f2414dab,Delayed Draw,,,,,,2027-03-01,,,,,,14565,14565,,OBDC,2025-08-06
-Nelipak Holding Company,co_394a228b7181,Delayed Draw,,,,,,2027-03-01,,,,,,7680,7680,,OBDC,2025-08-06
-Paris US Holdco Inc,co_96d8b983f0e1,Delayed Draw,,,,,,2026-12-01,,,,,,5581,5581,,OBDC,2025-08-06
-Park Place Technologies LLC,co_7b62066cfc4f,Delayed Draw,,,,,,2025-09-01,,,,,,368,368,,OBDC,2025-08-06
-AmeriLife Holdings LLC,co_79b70b5ba514,Delayed Draw,,,,,,,2026-06-01,88,,,,,,182,OBDC,2025-08-06
-AmeriLife Holdings LLC,co_79b70b5ba514,Delayed Draw,,,,,2026-06-01,1676,,,,,,316,,,OBDC,2025-08-06
-Aptean Acquiror Inc,co_04664963e8ad,Delayed Draw,,,,,,,2026-01-01,14,,,,,,54,OBDC,2025-08-06
-Associations Inc,co_137d8a36cf25,Delayed Draw,,,,,,,2028-07-01,4631,,,,,,27749,OBDC,2025-08-06
-Associations Inc,co_137d8a36cf25,Delayed Draw,,,,,2028-07-01,11114,,,,,,22693,,,OBDC,2025-08-06
-Associations Inc,co_137d8a36cf25,Delayed Draw,Real Estate,,,SOFR,6.50%,,2028-07-01,4686,,,,,,,OBDC,2025-08-06
-Bamboo US BidCo LLC,co_dbf0b9b0665e,Delayed Draw,,,,,,,2025-03-01,457,,,,,,772,OBDC,2025-08-06
-Bamboo US BidCo LLC,co_dbf0b9b0665e,Delayed Draw,,,,,2026-11-01,96,,,,,,1960,,,OBDC,2025-08-06
-BCPE Osprey Buyer Inc,co_eab80bf782f1,Delayed Draw,,,,,,,2025-10-01,4391,,,,,,25466,OBDC,2025-08-06
-BCPE Osprey Buyer Inc,co_eab80bf782f1,Delayed Draw,,,,,2025-10-01,23269,,,,,,14249,,,OBDC,2025-08-06
-BradyPLUS Holdings LLC,co_09f185cef19d,Delayed Draw,,,,,,,2025-10-01,960,,,,,,4463,OBDC,2025-08-06
-BradyPLUS Holdings LLC,co_09f185cef19d,Delayed Draw,,,,,2025-10-01,1982,,,,,,4047,,,OBDC,2025-08-06
-CHA Vision Holdings Inc,co_fc7222ba12bf,Delayed Draw,,,,,,,2026-01-01,3457,,,,,,8209,OBDC,2025-08-06
-CHA Vision Holdings Inc,co_fc7222ba12bf,Delayed Draw,,,,,2026-01-01,7495,,,,,,4899,,,OBDC,2025-08-06
-CMG HoldCo LLC,co_943cc587e1a3,Delayed Draw,,,,,,,2025-11-01,175,,,,,,308,OBDC,2025-08-06
-CMG HoldCo LLC,co_943cc587e1a3,Delayed Draw,,,,,2026-10-01,,,,,,,247,,,OBDC,2025-08-06
-AI Titan Parent Inc,co_7d34da75956f,Delayed Draw,,,,,2026-09-01,,,,,,,1509,,,OBDC,2025-08-06
-AlphaSense Inc,co_d27f083c893e,Delayed Draw,,,,,2029-06-01,,,,,,,143,,,OBDC,2025-08-06
-AlphaSense Inc,co_d27f083c893e,Delayed Draw,,,,,2025-12-01,,,,,,,141,,,OBDC,2025-08-06
-Arctic Holdco LLC,co_6a2352a42aaf,Delayed Draw,,,,,2027-01-01,6721,,,,,,4130,,,OBDC,2025-08-06
-Artifact Bidco Inc,co_18c695f2adc0,Delayed Draw,,,,,2027-07-01,,,,,,,2940,,,OBDC,2025-08-06
-Belmont Buyer Inc,co_c522a6225872,Delayed Draw,,,,,2026-01-01,,,,,,,727,,,OBDC,2025-08-06
-Cambrex Corporation,co_b45ed2d2387f,Delayed Draw,,,,,2027-03-01,,,,,,,117,,,OBDC,2025-08-06
-CCM Midco LLC,co_d7a06e6e9e4a,Delayed Draw,,,,,2026-06-01,2015,,,,,,2463,,,OBDC,2025-08-06
-CivicPlus LLC,co_e4b002026922,Delayed Draw,,,,,2027-05-01,,,,,,,16290,,,OBDC,2025-08-06
-QAD Inc,co_9476f72b3f59,Revolver,,,,,2027-11-01,,,,,3429,,,,,OBDC,2025-08-06
-Quva Pharma Inc,co_02f9443a520a,Revolver,,,,,2026-04-01,3360,,,,4000,,,,,OBDC,2025-08-06
-Relativity ODA LLC,co_ba854e909c5f,Revolver,,,,,2029-05-01,,,,,6546,,,,,OBDC,2025-08-06
-Rhea Parent Inc,co_05133dffb98f,Revolver,,,,,2030-12-01,,,,,5786,,,,,OBDC,2025-08-06
-RL Datix Holdings (USA) Inc,co_7d2226652712,Revolver,,,,,2030-10-01,1067,,,,8441,,,,,OBDC,2025-08-06
-RL Datix Holdings (USA) Inc,co_7d2226652712,Revolver,Healthcare Services,5.50%,,SOFR (S),5.50%,,2030-10-01,852,991,1024,,991,,,OBDC,2025-08-06
-SailPoint Technologies Holdings Inc,co_e174cbe82915,Revolver,,,,,2028-08-01,,,,,4358,,,,,OBDC,2025-08-06
-Salinger Bidco Inc (dba Surgical Information Systems),co_5496a7871bb7,Revolver,,,,,2031-05-01,,,,,3023,,,,,OBDC,2025-08-06
-Sara Lee Frozen Bakery LLC (fka KSLB Holdings LLC),co_265073dc3aff,Revolver,,,,,2025-07-01,3804,,,,9000,,,,,OBDC,2025-08-06
-Securonix Inc,co_4e613096ec99,Revolver,,,,,2028-04-01,3,,,,152,,,,,OBDC,2025-08-06
-Securonix Inc,co_4e613096ec99,Revolver,Software,7.00%,,SOFR,7.00%,,2028-04-01,3,3,,0,3,,,OBDC,2025-08-06
-Sensor Technology Topco Inc (dba Humanetics),co_4a7c3f8f0226,Revolver,,,,,2028-05-01,3675,,,,5676,,,,,OBDC,2025-08-06
-Sensor Technology Topco Inc,co_4a7c3f8f0226,Revolver,Business Services,6.50%,,SOFR,6.50%,,2028-05-01,3675,3656,3691,0.001,3656,,,OBDC,2025-08-06
-Severin Acquisition LLC (dba PowerSchool),co_1987daa7e6f2,Revolver,,,,,2031-10-01,,,,,94,,,,,OBDC,2025-08-06
-Simplicity Financial Marketing Group Holdings Inc,co_d10016badf9d,Revolver,,,,,2031-12-01,,,,,4119,,,,,OBDC,2025-08-06
-Smarsh Inc,co_d80561116050,Revolver,,,,,2029-02-01,3,,,,8,0.05,,,,OBDC,2025-08-06
-Smarsh Inc,co_d80561116050,Revolver,Business Services,,,SOFR,5.75%,,2029-02-01,3,3,3,0,,,,OBDC,2025-08-06
-Soliant Lower Intermediate LLC (dba Soliant),co_8db7d02d1037,Revolver,,,,,2031-06-01,,,,,2222,,,,,OBDC,2025-08-06
-Sonny's Enterprises LLC,co_fc8ca195e3a6,Revolver,,,,,2027-08-01,4744,,,,18976,,,,,OBDC,2025-08-06
-Spaceship Purchaser Inc (dba Squarespace),co_e43cd5f373b7,Revolver,,,,,2031-10-01,,,,,417,,,,,OBDC,2025-08-06
-Spotless Brands LLC,co_9e457409bbbe,Revolver,,,,,2028-07-01,,,,,1305,,,,,OBDC,2025-08-06
-Spotless Brands LLC,co_9e457409bbbe,Revolver,Automotive,,,SOFR,5.75%,,2028-07-01,1566,1550,1566,,,,,OBDC,2025-08-06
-Hercules Borrower LLC,co_34d8b7ece1a7,First Lien,Business Services,,,SOFR,5.50%,,2026-12-01,210534,209960,210534,,,,,OBDC,2025-08-06
-Hercules Borrower LLC,co_34d8b7ece1a7,First Lien,Other,5.50%,,SOFR,5.50%,,2026-12-01,173292,173294,173292,0.029,,,,OBDC,2025-08-06
-Hercules Buyer LLC,co_0c1858a56d4d,Unsecured Debt,Business Services,,,N/A,,,2029-12-01,6280,6468,7673,,,,,OBDC,2025-08-06
-Hercules Buyer LLC,co_0c1858a56d4d,Unsecured Debt,Other,,0.48%,N/A,N/A,,2029-12-01,5201,5201,6355,0.001,,,,OBDC,2025-08-06
-KPSKY Acquisition Inc,co_c28869bd420a,First Lien,Business Services,,,SOFR,5.50%,,2028-10-01,43322,39796,41156,,,,,OBDC,2025-08-06
-Ping Identity Holding Corp,co_ffac9ca8d93d,First Lien,Business Services,,,SOFR,4.75%,,2029-10-01,902,900,902,,,,,OBDC,2025-08-06
-Pye-Barker Fire & Safety LLC,co_21eb6c7d75fe,First Lien,Business Services,,,SOFR,4.50%,,2031-05-01,169837,168548,169412,,,,,OBDC,2025-08-06
-Pye-Barker Fire & Safety LLC,co_21eb6c7d75fe,Revolver,Business Services,,,SOFR,4.50%,,2030-05-01,2918,2821,2860,,,,,OBDC,2025-08-06
-Advancion Holdings LLC,co_a1074940b44c,Second Lien,Chemicals,,,SOFR,7.75%,,2028-11-01,16500,16158,15428,,,,,OBDC,2025-08-06
-DCG ACQUISITION CORP,co_da9ff4a8b969,First Lien,Chemicals,,,SOFR,4.50%,,2031-06-01,72764,71877,72400,,,,,OBDC,2025-08-06
-DCG ACQUISITION CORP,co_da9ff4a8b969,Delayed Draw,Chemicals,,,SOFR,4.50%,,2031-06-01,7301,7226,7264,,,,,OBDC,2025-08-06
-Gaylord Chemical Company LLC,co_cbb1f480306c,First Lien,Chemicals,,,SOFR,5.50%,,2027-12-01,190071,188774,190071,,,,,OBDC,2025-08-06
-SimpliSafe Holding,co_eda7a822387d,First Lien,Chemicals,,,SOFR,6.25%,,2028-05-01,9000,8887,9000,,,,,OBDC,2025-08-06
-Cornerstone OnDemand,co_bcce6a221f68,Second Lien,Business Services,,,SOFR,6.50%,,2029-10-01,160417,153240,147583,,,,,OBDC,2025-08-06
-IG Investments Holdings,co_06c540faeacf,First Lien,Business Services,,,SOFR,5.00%,,2028-09-01,117731,116547,117731,,,,,OBDC,2025-08-06
-AWP Group Holdings,co_a6728579700c,First Lien,Environmental Services,,,SOFR,4.75%,,2030-12-01,959,932,949,,,,,OBDC,2025-08-06
-CHA Vision Holdings,co_fc7222ba12bf,First Lien,Environmental Services,,,SOFR,5.00%,,2031-01-01,45606,45040,45606,,,,,OBDC,2025-08-06
-GI Apple Midco,co_866fb0366441,First Lien,Environmental Services,,,SOFR,6.75%,,2030-04-01,932,920,922,,,,,OBDC,2025-08-06
-GI Apple Midco,co_866fb0366441,Revolver,Environmental Services,,,SOFR,6.75%,,2029-04-01,2,1,1,,,,,OBDC,2025-08-06
-KENE Acquisition,co_4e96058b3e6e,First Lien,Environmental Services,,,SOFR,5.25%,,2031-02-01,18412,17973,18366,,,,,OBDC,2025-08-06
-LineStar Integrity Services,co_31dc77a737bd,First Lien,Environmental Services,,,SOFR,7.25%,,2026-02-01,71375,69939,72447,,,,,OBDC,2025-08-06
-Tamarack Intermediate,co_11a13342ee9a,First Lien,Environmental Services,,,SOFR,5.75%,,2029-03-01,313,308,313,,,,,OBDC,2025-08-06
-Tamarack Intermediate,co_11a13342ee9a,First Lien,Environmental Services,,,SOFR,5.75%,,2028-03-01,1534,1509,1534,,,,,OBDC,2025-08-06
-Vessco Midco Holdings,co_b9a5efa543be,First Lien,Environmental Services,,,SOFR,4.75%,,2031-07-01,56150,55440,55869,,,,,OBDC,2025-08-06
-Armstrong Bidco Limited,co_3b5a181e36f7,Delayed Draw,Software,,5.25%,SONIA,5.25%,,2029-06-01,,3577,3689,0.001,3577,,,OBDC,2025-08-06
-Armstrong Bidco Limited,co_3b5a181e36f7,Delayed Draw,Software,5.00%,,SOFR (S),5.00%,,2029-06-01,,3584,4036,,,,,OBDC,2025-08-06
-Artifact Bidco Inc,co_18c695f2adc0,First Lien,Software,4.50%,,SOFR,4.50%,,2031-07-01,9105,9062,9059,0.002,9062,,,OBDC,2025-08-06
-Azurite Intermediate Holdings Inc,co_17a8cda82bfc,First Lien,Software,6.50%,,SOFR,6.50%,,2031-03-01,11971,11796,11880,0.002,11796,,,OBDC,2025-08-06
-Barracuda Networks Inc,co_c8d4b1847201,First Lien,Software,4.50%,,SOFR,4.50%,,2029-08-01,12797,11934,11807,0.002,11934,,,OBDC,2025-08-06
-Bayshore Intermediate #2 LP,co_58e933a523c1,First Lien,Software,6.25%,3.38%,SOFR,6.25%,,2028-10-01,71430,71417,71430,0.012,71417,,,OBDC,2025-08-06
-BCTO BSI Buyer Inc,co_24bce18fed02,First Lien,Software,6.50%,,SOFR,6.50%,,2026-12-01,60032,59803,60032,0.01,59803,,,OBDC,2025-08-06
-Catalis Intermediate Inc,co_ef06ce5289fb,First Lien,Software,5.50%,,SOFR,5.50%,,2027-08-01,12936,12774,12566,0.002,12774,,,OBDC,2025-08-06
-CivicPlus LLC,co_e4b002026922,First Lien,Software,5.75%,,SOFR,5.75%,,2027-08-01,36035,35852,36035,0.006,35852,,,OBDC,2025-08-06
-Coupa Holdings LLC,co_c2ba85da2fbc,First Lien,Software,5.25%,,SOFR,5.25%,,2030-02-01,781,781,781,,781,,,OBDC,2025-08-06
-Bamboo US BidCo LLC,co_dbf0b9b0665e,First Lien,Healthcare Services,5.25%,,SOFR,5.25%,,2030-09-01,5544,5544,5544,0.001,5544,,,OBDC,2025-08-06
-Bamboo US BidCo LLC,co_dbf0b9b0665e,First Lien,Healthcare Services,5.25%,,Euribor,5.25%,,2030-09-01,3139,3302,3250,0.001,3302,,,OBDC,2025-08-06
-Bamboo US BidCo LLC,co_dbf0b9b0665e,First Lien,Healthcare Services,,,SOFR,5.25%,,2030-09-01,8777,8717,8777,,,,,OBDC,2025-08-06
-Bamboo US BidCo LLC,co_dbf0b9b0665e,First Lien,Healthcare Services,,,Euribor,5.25%,,2030-09-01,,4857,5499,,,,,OBDC,2025-08-06
-Cadence Inc,co_c23b682621f6,First Lien,Healthcare Services,5.00%,,SOFR,5.00%,,2026-05-01,33427,32423,31918,0.005,32423,,,OBDC,2025-08-06
-Cadence Inc,co_c23b682621f6,First Lien,Healthcare Services,,,SOFR,5.00%,,2026-05-01,31752,31101,30781,,,,,OBDC,2025-08-06
-Creek Parent Inc (dba Catalent),co_bc107cba8cfa,First Lien,Healthcare Services,5.25%,,SOFR,5.25%,,2031-12-01,86023,84524,84518,0.014,84524,,,OBDC,2025-08-06
-CSC MKG Topco LLC (dba Medical Knowledge Group),co_3094b0b68026,First Lien,Healthcare Services,5.75%,,SOFR,5.75%,,2029-02-01,1249,1232,1236,,1232,,,OBDC,2025-08-06
-Nelipak Holding Company,co_394a228b7181,First Lien,Healthcare Services,5.50%,,SOFR,5.50%,,2031-03-01,22202,21852,21692,0.004,21852,,,OBDC,2025-08-06
-NELIPAK EUROPEAN HOLDINGS COÖPERATIEF U.A.,co_cf16f2414dab,First Lien,Healthcare Services,5.50%,,Euribor,5.50%,,2031-03-01,37109,39604,37621,0.006,39604,,,OBDC,2025-08-06
-Patriot Acquisition TopCo S.A.R.L (dba Corza Health Inc),co_2cafb2e9570e,First Lien,Healthcare Services,5.25%,,SOFR,5.25%,,2028-01-01,124840,123822,124840,0.021,123822,,,OBDC,2025-08-06
-Inovalon Holdings Inc,co_b1163ca4a88a,First Lien,Healthcare Services,5.75%,,SOFR,5.75%,,2028-11-01,207472,204411,204879,0.034,204411,,,OBDC,2025-08-06
-Inovalon Holdings Inc,co_b1163ca4a88a,Second Lien,Healthcare Services,,10.50%,SOFR,10.50%,,2033-11-01,129648,128165,128352,0.022,128165,,,OBDC,2025-08-06
-Intelerad Medical Systems Incorporated,co_b56720645d0a,First Lien,Healthcare Services,6.50%,,SOFR,6.50%,,2026-08-01,123549,123021,120460,0.02,123021,,,OBDC,2025-08-06
-Interoperability Bidco Inc (dba Lyniate),co_031bfc51b4b1,First Lien,Healthcare Services,6.25%,,SOFR,6.25%,,2028-03-01,67680,67486,65988,0.011,67486,,,OBDC,2025-08-06
-Interoperability Bidco Inc (dba Lyniate),co_031bfc51b4b1,Revolver,Healthcare Services,6.25%,,SOFR,6.25%,,2028-03-01,274,242,142,,242,,,OBDC,2025-08-06
-RL Datix Holdings (USA) Inc,co_7d2226652712,First Lien,Healthcare Services,5.50%,,SOFR,5.50%,,2031-04-01,42737,42340,42523,0.007,42340,,,OBDC,2025-08-06
-RL Datix Holdings (USA) Inc,co_7d2226652712,First Lien,Healthcare Services,5.50%,,SOFR (S),5.50%,,2031-04-01,19792,24491,24663,0.004,24491,,,OBDC,2025-08-06
-Covetrus,co_9f66fd6ca3fb,Second Lien,Healthcare Services,9.25%,,SOFR,9.25%,,2030-10-01,30000,28822,28350,,,,,OBDC,2025-08-06
-Engage Debtco,co_26e32df0ecec,First Lien,Healthcare Services,3.33%,2.75%,SOFR,6.08%,,2029-07-01,1583,1539,1515,,,,,OBDC,2025-08-06
-Engage Debtco,co_26e32df0ecec,Delayed Draw,Healthcare Services,3.18%,2.54%,SOFR,5.72%,,2029-07-01,514,500,492,,,,,OBDC,2025-08-06
-EresearchTechnology,co_dd62a2f8e8e3,First Lien,Healthcare Technology,4.75%,,SOFR,4.75%,,2032-01-01,102565,101523,101470,,,,,OBDC,2025-08-06
-Ex Vivo Parent,co_329dd080acd3,First Lien,Healthcare Services,,9.85%,SOFR,9.85%,,2028-09-01,124465,123093,124465,,,,,OBDC,2025-08-06
-KABAFUSION Parent,co_3703356a8b85,First Lien,Healthcare Services,5.00%,,SOFR,5.00%,,2031-11-01,31033,30578,30878,,,,,OBDC,2025-08-06
-KABAFUSION Parent,co_3703356a8b85,First Lien,Healthcare Services,5.00%,,SOFR,5.00%,,2031-11-01,17824,17646,17735,,,,,OBDC,2025-08-06
-KWOL Acquisition,co_9c4340b9e9d3,First Lien,Pharmaceuticals & Biotechnology,4.75%,,SOFR,4.75%,,2029-12-01,77745,76556,77745,,,,,OBDC,2025-08-06
-Lakefield Acquisition,co_b7961d48e0f1,First Lien,Healthcare Services,4.00%,,SOFR,4.00%,,2030-09-01,617,615,615,,,,,OBDC,2025-08-06
-Maple Acquisition,co_4c18c235d68a,First Lien,Healthcare Services,5.00%,,SOFR,5.00%,,2031-05-01,80593,79818,80593,,,,,OBDC,2025-08-06
-Vensure Employer Services Inc,co_13ff515df3b0,Delayed Draw,,,,,,,2031-09-01,18,,,,,,190,OBDC,2025-08-06
-Vessco Midco Holdings LLC,co_b9a5efa543be,Delayed Draw,,,,,,,2026-07-01,3309,,,,,,12566,OBDC,2025-08-06
-Vessco Midco Holdings LLC,co_b9a5efa543be,Delayed Draw,Other,,SOFR,4.75%,,2031-07-01,3309,3234,3292,0.1,,,,,OBDC,2025-08-06
-WU Holdco Inc,co_df30f5e5b04a,Delayed Draw,,,,,,,2026-07-01,34573,,,,,,49297,OBDC,2025-08-06
-Walker Edison Furniture Company LLC,co_4c46f9f8194d,Delayed Draw,,,,,,,2027-03-01,8145,,,,,,9972,OBDC,2025-08-06
-Walker Edison Furniture Company LLC,co_4c46f9f8194d,Delayed Draw,Consumer Products,,,SOFR,,2027-03-01,6380,5976,6380,,,,,,OBDC,2025-08-06
-Applied Composites Holdings LLC,co_7e78e1d73b6f,Revolver,,,,,,,2025-01-01,3051,,,,,,3051,OBDC,2025-08-06
-Applied Composites Holdings LLC,co_7e78e1d73b6f,Revolver,Aerospace & Defense,,0.75%,SOFR,6.38%,,2025-01-01,3051,1999,1907,,,,,OBDC,2025-08-06
-Ascend Buyer LLC,co_0598d0d465de,Revolver,,,,,,,2027-09-01,188,,,,,,565,OBDC,2025-08-06
-Associations Inc,co_137d8a36cf25,Revolver,,,,,,,2028-07-01,11117,,,,,,22234,OBDC,2025-08-06
-Hissho Parent LLC,co_131e1ba75cd1,First Lien,Food & Beverage,,,SOFR,4.50%,,2029-05-01,13981,13846,13981,,,,,OBDC,2025-08-06
-Innovation Ventures HoldCo LLC,co_abf90b93cda7,First Lien,Food & Beverage,,,SOFR,6.25%,,2027-03-01,100559,99314,99052,,,,,OBDC,2025-08-06
-KBP Brands LLC,co_c7f5535be0d3,First Lien,Food & Beverage,,,SOFR,5.50%,,2027-05-01,1083,1049,1064,,,,,OBDC,2025-08-06
-Ole Smoky Distillery LLC,co_fcb9f7627f58,First Lien,Food & Beverage,,,SOFR,5.50%,,2028-03-01,855,846,849,,,,,OBDC,2025-08-06
-Rushmore Investment III LLC,co_b6d23c3d473e,First Lien,Food & Beverage,,,SOFR,5.00%,,2030-10-01,359102,355181,359102,,,,,OBDC,2025-08-06
-Sara Lee Frozen Bakery LLC,co_265073dc3aff,First Lien,Food & Beverage,,,SOFR,4.75%,,2027-07-01,51595,51540,51172,,,,,OBDC,2025-08-06
-The Better Being Co LLC,co_797451b5e534,First Lien,Food & Beverage,,,SOFR,6.75%,,2026-09-01,215685,214846,216764,,,,,OBDC,2025-08-06
-Vital Bidco AB,co_c5fe41d90b67,First Lien,Food & Beverage,,,SOFR,4.50%,,2031-10-01,61885,60814,61885,,,,,OBDC,2025-08-06
-THG Acquisition LLC dba Hilb,co_4847ec97bf70,First Lien,Insurance,4.50%,,SOFR,4.50%,,2031-10-01,39243,38681,38808,,,,,OBDC,2025-08-06
-THG Acquisition LLC dba Hilb,co_4847ec97bf70,Revolver,Insurance,4.75%,,SOFR,4.75%,,2031-10-01,323,284,280,,,,,OBDC,2025-08-06
-Trucordia Insurance Holdings LLC,co_a5dbae638138,Second Lien,Insurance,5.75%,,SOFR,5.75%,,2033-06-01,150000,148505,148500,,,,,OBDC,2025-08-06
-USRP Holdings Inc dba U.S. Retirement and Benefits Partners,co_5c941651fd28,First Lien,Insurance,5.00%,,SOFR,5.00%,,2029-12-01,52246,51819,52246,,,,,OBDC,2025-08-06
-AI Titan Parent Inc dba Prometheus Group,co_7d34da75956f,First Lien,Software,4.50%,,SOFR,4.50%,,2031-08-01,7547,7352,7472,,,,,OBDC,2025-08-06
-AlphaSense Inc,co_d27f083c893e,First Lien,Software,6.25%,,SOFR,6.25%,,2029-06-01,707,701,701,,,,,OBDC,2025-08-06
-Anaplan Inc,co_0f6b3874fa95,First Lien,Software,4.50%,,SOFR,4.50%,,2029-06-01,54526,54526,54526,,,,,OBDC,2025-08-06
-Aptean Acquiror Inc dba Aptean,co_04664963e8ad,First Lien,Software,4.75%,,SOFR,4.75%,,2031-01-01,19309,18933,19309,,,,,OBDC,2025-08-06
-Artifact Bidco Inc dba Avetta,co_18c695f2adc0,First Lien,Software,4.25%,,SOFR,4.25%,,2031-07-01,12011,11903,12011,,,,,OBDC,2025-08-06
-Pacific BidCo Inc,co_dc98d60044e2,First Lien,Healthcare Services,,2.05%,SOFR,6.00%,,2029-08-01,36012,35376,35112,0.006,35376,,,OBDC,2025-08-06
-PetVet Care Centers LLC,co_3b17b733d7e8,First Lien,Healthcare Services,,,SOFR,6.00%,,2030-11-01,107126,106180,102573,0.017,106180,,,OBDC,2025-08-06
-Phantom Purchaser Inc,co_6836338c832c,First Lien,Healthcare Services,,,SOFR,5.00%,,2031-09-01,29258,28974,29038,0.005,28974,,,OBDC,2025-08-06
-Physician Partners LLC,co_a62d28eb6afa,First Lien,Healthcare Services,,,SOFR,4.00%,,2028-12-01,9725,3979,6467,0.001,3979,,,OBDC,2025-08-06
-Plasma Buyer LLC,co_a2b63c1eab84,First Lien,Healthcare Services,,,SOFR,5.75%,,2029-05-01,665,656,657,0.0,656,,,OBDC,2025-08-06
-Plasma Buyer LLC,co_a2b63c1eab84,Delayed Draw,Healthcare Services,,,SOFR,6.25%,,2029-05-01,20,20,20,0.0,20,,,OBDC,2025-08-06
-Plasma Buyer LLC,co_a2b63c1eab84,Revolver,Healthcare Services,,,SOFR,5.75%,,2028-05-01,42,42,41,0.0,42,,,OBDC,2025-08-06
-PPV Intermediate Holdings LLC,co_743a0b989f76,First Lien,Healthcare Services,,,SOFR,5.75%,,2029-08-01,928,914,928,0.0,914,,,OBDC,2025-08-06
-PPV Intermediate Holdings LLC,co_743a0b989f76,Delayed Draw,Healthcare Services,,,SOFR,6.00%,,2029-08-01,57,57,57,0.0,57,,,OBDC,2025-08-06
-Premier Imaging LLC,co_e6316cbc7286,First Lien,Healthcare Services,,6.47%,SOFR,6.00%,,2026-03-01,47579,47579,44130,0.007,47579,,,OBDC,2025-08-06
-Lignetics Investment Corp,co_0aa933af7b7e,Revolver,Other,,,,,,2026-11-01,3451,3451,,,3451,4706,1255,OBDC,2025-08-06
-LineStar Integrity Services,co_31dc77a737bd,Revolver,Other,,,,,,2026-02-01,9903,9903,,,9903,9903,,OBDC,2025-08-06
-Len the Plumber,co_ea03e2b6728d,Revolver,Other,,,,,,2028-04-01,414,414,,,414,1381,967,OBDC,2025-08-06
-OnPoint Group,co_ea042cf0ebaf,Revolver,Other,,,,,,2027-07-01,3107,3107,,,3107,15536,12429,OBDC,2025-08-06
-Diamond Mezzanine 24 (United Risk),co_9b4f21223517,Revolver,Other,,,,,,2030-10-01,713,713,,,,713,713,OBDC,2025-08-06
-Finastra USA,co_9e07ea95e408,Revolver,Other,,,,,,2029-09-01,5758,5758,,,,5758,9258,OBDC,2025-08-06
-Fortis Solutions Group,co_b6fefea7ff47,Revolver,Other,,,,,,2027-10-01,162,162,,,,162,462,OBDC,2025-08-06
-Fortis Solutions Group,co_b6fefea7ff47,Revolver,Packaging,5.50%,,SOFR,5.50%,,2027-10-01,162,157,155,,157,,,OBDC,2025-08-06
-Gainsight,co_d13b62978cbd,Revolver,Other,,,,,,2027-07-01,1875,1875,,,,1875,3602,OBDC,2025-08-06
-Vessco Midco Holdings LLC,co_b9a5efa543be,First Lien,Other,,SOFR,4.75%,,2031-07-01,37696,37336,37508,0.6,,,,,OBDC,2025-08-06
-Alera Group Inc,co_d6fed5973af6,First Lien,Insurance,,SOFR,5.25%,,2028-10-01,34109,34109,34109,0.6,,,,,OBDC,2025-08-06
-AmeriLife Holdings LLC,co_79b70b5ba514,First Lien,Insurance,,SOFR,5.00%,,2029-08-01,1131,1115,1125,,,,,,OBDC,2025-08-06
-Brightway Holdings LLC,co_750c32897c46,First Lien,Insurance,,SOFR,6.50%,,2027-12-01,29230,29020,29084,0.5,,,,,OBDC,2025-08-06
-Brightway Holdings LLC,co_750c32897c46,Revolver,Insurance,,SOFR,6.50%,,2027-12-01,1263,1244,1247,,,,,,OBDC,2025-08-06
-Diamond Mezzanine 24 LLC dba United Risk,co_9b4f21223517,First Lien,Insurance,,SOFR,5.00%,,2030-10-01,10688,10636,10634,0.2,,,,,OBDC,2025-08-06
-Diamond Mezzanine 24 LLC dba United Risk,co_9b4f21223517,Revolver,Insurance,,Prime,4.00%,,2030-10-01,713,709,709,,,,,,OBDC,2025-08-06
-Evolution BuyerCo Inc dba SIAA,co_87432de05f9b,First Lien,Insurance,,SOFR,6.25%,,2028-04-01,138845,137758,138845,2.3,,,,,OBDC,2025-08-06
-Evolution BuyerCo Inc dba SIAA,co_87432de05f9b,Delayed Draw,Insurance,,SOFR,6.00%,,2028-04-01,3945,3810,3945,0.1,,,,,OBDC,2025-08-06
-Galway Borrower LLC,co_7b729e02e51d,Delayed Draw,Insurance,,SOFR,4.50%,,2028-09-01,44,43,4,,,,,,OBDC,2025-08-06
-STS PARENT,co_e3b9a8c94c34,Revolver,Aerospace & Defense,,,,,,2030-10-01,8487,8487,,,,4323,,OBDC,2025-08-06
-SWK BUYER,co_54ff1985427c,Revolver,Food & Beverage,,,,,,2029-03-01,42,42,,,,98,,OBDC,2025-08-06
-Tamarack Intermediate,co_11a13342ee9a,Revolver,Business Services,,,,,,2028-03-01,32,32,,,,221,,OBDC,2025-08-06
-TBRS,co_473fc06769ed,Revolver,Industrial Services,,,,,,2031-11-01,346,346,,,,5239,,OBDC,2025-08-06
-The Better Being Co,co_797451b5e534,Revolver,Consumer Products,,,,,,2026-09-01,917,917,,,,14314,,OBDC,2025-08-06
-The Shade Store,co_762b8ba81607,Revolver,Retail,,,,,,2028-10-01,2701,2701,,,,7689,,OBDC,2025-08-06
-THG Acquisition,co_4847ec97bf70,Revolver,Insurance,,,,,,2031-10-01,323,323,,,,4031,,OBDC,2025-08-06
-Lignetics Investment,co_0aa933af7b7e,First Lien,Consumer Products,5.50%,,SOFR,5.50%,,2027-11-01,39409,39316,39212,0.007,39316,,,OBDC,2025-08-06
-Lignetics Investment,co_0aa933af7b7e,Revolver,Consumer Products,5.50%,,SOFR,5.50%,,2026-10-01,3451,3440,3427,0.001,3440,,,OBDC,2025-08-06
-Stonewall Kitchen,co_6f2bbfb71df9,First Lien,Consumer Products,5.25%,,SOFR,5.25%,,2029-03-01,737,728,715,,728,,,OBDC,2025-08-06
-Weiman Products,co_5dda3de016c6,First Lien,Consumer Products,5.00%,,SOFR,5.00%,,2027-03-01,241806,240440,241806,0.041,240440,,,OBDC,2025-08-06
-Novvia Group,co_4a4326f2ba86,First Lien,Packaging,6.00%,,SOFR,6.00%,,2026-12-01,15956,15742,15956,0.003,15742,,,OBDC,2025-08-06
-PPC Flexible Packaging,co_14cea05ece8b,First Lien,Packaging,5.75%,,SOFR,5.75%,,2028-09-01,5387,5354,5387,0.001,5354,,,OBDC,2025-08-06
-PPC Flexible Packaging,co_14cea05ece8b,Revolver,Packaging,5.75%,,SOFR,5.75%,,2027-09-01,188,186,188,,186,,,OBDC,2025-08-06
-Fortis Solutions Group,co_b6fefea7ff47,First Lien,Packaging,5.50%,,SOFR,5.50%,,2028-10-01,4535,4480,4468,0.001,4480,,,OBDC,2025-08-06
-CoolSys Inc,co_8ee5ba76d023,First Lien,Other,4.75%,,SOFR,4.75%,,2028-08-01,11924,11691,11596,0.002,,,,OBDC,2025-08-06
-CoolSys Inc,co_8ee5ba76d023,First Lien,Business Services,4.75%,,SOFR,4.75%,,2028-08-01,14884,14699,12251,,14699,,,OBDC,2025-08-06
-Denali BuyerCo LLC,co_b4d1bf8b4846,First Lien,Other,5.75%,,SOFR,5.75%,,2028-09-01,52197,51762,52197,0.009,,,,OBDC,2025-08-06
-Diamondback Acquisition Inc,co_6b8b7ffe7d77,First Lien,Other,5.50%,,SOFR,5.50%,,2028-09-01,4025,3977,4005,0.001,,,,OBDC,2025-08-06
-DuraServ LLC,co_48a0379877f9,First Lien,Other,4.50%,,SOFR,4.50%,,2031-06-01,86929,86456,86495,0.015,,,,OBDC,2025-08-06
-Fullsteam Operations LLC,co_e7812d309db0,First Lien,Other,8.25%,,SOFR,8.25%,,2029-11-01,13001,12658,13001,0.002,,,,OBDC,2025-08-06
-Fullsteam Operations LLC,co_e7812d309db0,Delayed Draw,Other,7.00%,,SOFR,7.00%,,2029-11-01,818,771,811,,,,,OBDC,2025-08-06
-Gainsight Inc,co_d13b62978cbd,First Lien,Other,6.00%,,SOFR,6.00%,,2027-07-01,28007,27813,28007,0.005,,,,OBDC,2025-08-06
-Kaseya Inc,co_75541f204b9b,First Lien,Other,5.50%,,SOFR,5.50%,,2029-06-01,19038,18773,19038,0.003,,,,OBDC,2025-08-06
-Kaseya Inc,co_75541f204b9b,First Lien,Business Services,3.25%,,SOFR,3.25%,,2032-03-01,7630,7594,7656,,7594,,,OBDC,2025-08-06
-Broadcast Music Inc,co_c5759bafcc2f,First Lien,Media & Entertainment,,SOFR,5.75%,,2030-02-01,,,,0.4,,,,,OBDC,2025-08-06
-IRI Group Holdings Inc,co_fd72761785f4,First Lien,Media & Entertainment,,SOFR,5.00%,,2028-12-01,19242,19242,19242,0.3,,,,,OBDC,2025-08-06
-IRI Group Holdings Inc,co_fd72761785f4,Revolver,Media & Entertainment,,SOFR,5.00%,,2027-12-01,302,302,302,,,,,,OBDC,2025-08-06
-Monotype Imaging Holdings Inc,co_f26421f2c9f8,First Lien,Media & Entertainment,,SOFR,5.50%,,2031-02-01,116080,115252,115790,1.9,,,,,OBDC,2025-08-06
-Monotype Imaging Holdings Inc,co_f26421f2c9f8,First Lien,Media & Entertainment,,,SOFR,5.50%,,2031-02-01,152465,150928,152465,,,,,OBDC,2025-08-06
-Applied Composites Holdings LLC,co_7e78e1d73b6f,First Lien,Aerospace & Defense,,0.75%,SOFR,6.75%,,2025-01-01,34064,22320,21290,0.004,,,,OBDC,2025-08-06
-Applied Composites Holdings LLC,co_7e78e1d73b6f,First Lien,Aerospace & Defense,,,SOFR,0.53%,,2027-07-01,41432,30290,22788,,,,,OBDC,2025-08-06
-Peraton Corp,co_26028249ab33,Second Lien,Aerospace & Defense,,SOFR,7.75%,,2029-02-01,45899,45471,36994,0.6,,,,,OBDC,2025-08-06
-Peraton Corp,co_26028249ab33,Second Lien,Aerospace & Defense,,,SOFR,7.75%,,2029-02-01,60393,57255,41973,,,,,OBDC,2025-08-06
-STS PARENT LLC,co_e3b9a8c94c34,First Lien,Aerospace & Defense,,SOFR,5.00%,,2031-10-01,94950,94480,94475,1.6,,,,,OBDC,2025-08-06
-STS PARENT LLC,co_e3b9a8c94c34,First Lien,Aerospace & Defense,,,SOFR,5.00%,,2031-10-01,115002,114037,114427,,,,,OBDC,2025-08-06
-STS PARENT LLC,co_e3b9a8c94c34,Revolver,Aerospace & Defense,,SOFR,5.00%,,2030-10-01,4879,4827,4827,0.1,,,,,OBDC,2025-08-06
-STS PARENT LLC,co_e3b9a8c94c34,Revolver,Aerospace & Defense,,,SOFR,5.00%,,2030-10-01,8487,8402,8423,,,,,OBDC,2025-08-06
-Valence Surface Technologies LLC,co_73a704e42665,First Lien,Aerospace & Defense,,3.88%,SOFR,7.75%,,2026-12-01,158509,158318,148996,0.025,,,,OBDC,2025-08-06
-Hissho Sushi Holdings LLC,co_ca76a7eb7382,Common Equity,Food & Beverage,,,N/A,,,,15004,155,213,,,,,OBDC,2025-08-06
-KPCI Holdings LP,co_01a133a1db1e,Common Equity,Healthcare Services,,,N/A,,,,36594,49185,104671,,,,,OBDC,2025-08-06
-Maia Aggregator LP,co_41b1faddd551,Common Equity,Healthcare Services,,,N/A,,,,280899,268,262,,,,,OBDC,2025-08-06
-Patriot Holdings SCSp (dba Corza Health Inc),co_58019d4f7d65,Common Equity,Healthcare Services,,8.00%,N/A,,,,9739,13478,13403,,,,,OBDC,2025-08-06
-Patriot Holdings SCSp (dba Corza Health Inc),co_58019d4f7d65,Common Equity,Healthcare Services,,,N/A,,,,134107,266,308,,,,,OBDC,2025-08-06
-Rhea Acquisition Holdings LP,co_4dbfe70d1402,Common Equity,Healthcare Services,,,N/A,,,,238095,260,288,,,,,OBDC,2025-08-06
-Baypine Commander Co-Invest LP,co_f3f664bbc198,Partnership Interest,Healthcare Services,,,N/A,,,,3067771,3068,3068,,,,,OBDC,2025-08-06
-KOBHG Holdings LP (dba OB Hospitalist),co_93b6223952eb,Common Equity,Healthcare Services,,,N/A,,,,9687,9376,9423,,,,,OBDC,2025-08-06
-KWOL Acquisition Inc (dba Worldwide Clinical Trials),co_9c4340b9e9d3,Common Equity,Healthcare Services,,,N/A,,,,542,5522,7324,,,,,OBDC,2025-08-06
-Romulus Intermediate Holdings 1 Inc (dba PetVet Care Centers),co_3e6e9b556ebb,Preferred Equity,Healthcare Services,,15.00%,N/A,,,,15050,18313,17222,,,,,OBDC,2025-08-06
-Romulus Intermediate Holdings 1 Inc (dba PetVet Care Centers),co_3e6e9b556ebb,Preferred Equity,Healthcare Services,,15.00%,N/A,,12183,13912,13092,0.2,13912,,,,,OBDC,2025-08-06
-XOMA Corporation,co_450dccfe91e9,Warrants,Healthcare Services,,,N/A,,,,36000,269,354,,,,,OBDC,2025-08-06
-XOMA Corporation,co_450dccfe91e9,Warrants,Healthcare Services,,,N/A,,30000,205,349,0,205,,,,,OBDC,2025-08-06
-BEHP Co-Investor II LP,co_72c8c0bfc033,Partnership Interest,Healthcare Technology,,,N/A,,,,1269969,823,1670,,,,,OBDC,2025-08-06
-BEHP Co-Investor II LP,co_72c8c0bfc033,Partnership Interest,Healthcare Technology,,,N/A,,1269969,1043,1297,0,1043,,,,,OBDC,2025-08-06
-Minerva Holdco Inc,co_1c8c4fb46740,Preferred Equity,Healthcare Technology,,10.75%,N/A,,,,9000,12720,12810,,,,,OBDC,2025-08-06
-Minerva Holdco Inc,co_1c8c4fb46740,Preferred Equity,Healthcare Technology,,10.75%,N/A,,7000,9439,9231,0.2,9439,,,,,OBDC,2025-08-06
-ModMed Software Midco Holdings Inc (dba ModMed),co_a4db8697a63d,Preferred Equity,Healthcare Technology,,13.00%,N/A,,,,169738,165,165,,,,,OBDC,2025-08-06
-WP Irving Co-Invest LP,co_e1c25d4b6071,Partnership Interest,Healthcare Technology,,,N/A,,,,1250000,736,1644,,,,,OBDC,2025-08-06
-WP Irving Co-Invest LP,co_e1c25d4b6071,Partnership Interest,Healthcare Technology,,,N/A,,1250000,959,1276,0,959,,,,,OBDC,2025-08-06
-Gloves Buyer Inc (dba Protective Industrial Products),co_147d8845ec9e,First Lien,Manufacturing,,SOFR,4.00%,,2032-05-01,14000,13932,13703,,,,,,OBDC,2025-08-06
-Legence Holdings LLC,co_847622a7f65f,First Lien,Manufacturing,,SOFR,3.25%,,2028-12-01,6676,6675,6672,,,,,,OBDC,2025-08-06
-MADISON IAQ LLC,co_5f262f160272,First Lien,Manufacturing,,SOFR,3.25%,,2032-04-01,8152,8078,8169,,,,,,OBDC,2025-08-06
-Madison IAQ LLC,co_5f262f160272,First Lien,Manufacturing,,SOFR,2.50%,,2028-06-01,249,247,249,,,,,,OBDC,2025-08-06
-Pro Mach Group Inc,co_adcd494edb49,First Lien,Manufacturing,,SOFR,2.75%,,2028-08-01,16419,16361,16447,,,,,,OBDC,2025-08-06
-Watlow Electric Manufacturing Company,co_df97931855b9,First Lien,Manufacturing,,SOFR,3.00%,,2028-03-01,2986,2998,2992,,,,,,OBDC,2025-08-06
-Fortrea Holdings Inc,co_86ada4d94c16,First Lien,Pharmaceuticals & Biotechnology,,SOFR,3.75%,,2030-07-01,1000,981,888,,,,,,OBDC,2025-08-06
-Opal US LLC,co_690fd10d404a,First Lien,Pharmaceuticals & Biotechnology,,SOFR,3.25%,,2032-04-01,16776,16701,16833,,,,,,OBDC,2025-08-06
-AlixPartners LLP,co_78a3385a0c9b,First Lien,Business Services,,SOFR,2.50%,,2028-02-01,497,498,499,,,,,,OBDC,2025-08-06
-Apex Group Treasury LLC,co_8eef8f753f17,First Lien,Business Services,,SOFR,3.50%,,2032-02-01,26647,26633,26530,,,,,,OBDC,2025-08-06
-API GROUP DE INC,co_54c5e79f77ac,First Lien,Business Services,,SOFR,1.75%,,2029-01-01,2840,2840,2840,,,,,,OBDC,2025-08-06
-Unified Women's Healthcare,co_53bd45f77e3d,First Lien,Healthcare Services,5.50%,,SOFR,5.50%,,2029-06-01,1776,1756,1776,,1756,,,OBDC,2025-08-06
-Unified Women's Healthcare,co_53bd45f77e3d,First Lien,Healthcare Services,5.50%,,SOFR,5.50%,,2029-06-01,39436,39021,39436,,39021,,,OBDC,2025-08-06
-Unified Women's Healthcare,co_53bd45f77e3d,Delayed Draw,Healthcare Services,5.25%,,SOFR,5.25%,,2029-06-01,17227,17053,17227,,17053,,,OBDC,2025-08-06
-Valeris,co_4fec70a4329e,First Lien,Healthcare Services,5.00%,,SOFR,5.00%,,2031-09-01,42344,41738,42238,,41738,,,OBDC,2025-08-06
-Vermont Aus Pty Ltd,co_094e013192e9,First Lien,Healthcare Services,5.75%,,BKBM,5.75%,,2028-03-01,,1654,1683,,1654,,,OBDC,2025-08-06
-BCPE Osprey Buyer,co_eab80bf782f1,First Lien,Healthcare Technology,5.75%,,SOFR,5.75%,,2028-08-01,162469,160052,160845,,160052,,,OBDC,2025-08-06
-BCPE Osprey Buyer,co_eab80bf782f1,Delayed Draw,Healthcare Technology,5.75%,,SOFR,5.75%,,2028-08-01,31721,31057,31404,,31057,,,OBDC,2025-08-06
-BCPE Osprey Buyer,co_eab80bf782f1,Revolver,Healthcare Technology,5.75%,,SOFR,5.75%,,2026-08-01,8750,8602,8575,,8602,,,OBDC,2025-08-06
-CT Technologies Intermediate Holdings,co_96d3a326e0e1,First Lien,Healthcare Technology,5.00%,,SOFR,5.00%,,2031-08-01,88826,87663,88826,,87663,,,OBDC,2025-08-06
-Project Boost Purchaser,co_7353631240b9,First Lien,Media & Entertainment,3.00%,,SOFR,3.00%,,2031-07-01,,5910,5990,,5910,,,OBDC,2025-08-06
-Amentum Government Services Holdings,co_b6a5b7ee0502,First Lien,Aerospace & Defense,2.25%,,SOFR,2.25%,,2031-09-01,4035,4027,4025,,4027,,,OBDC,2025-08-06
-American Airlines,co_319dd9bde714,First Lien,Aerospace & Defense,1.75%,,SOFR,1.75%,,2027-01-01,658,655,651,,655,,,OBDC,2025-08-06
-American Airlines,co_319dd9bde714,First Lien,Aerospace & Defense,2.25%,,SOFR,2.25%,,2028-02-01,1485,1478,1469,,1478,,,OBDC,2025-08-06
-American Airlines,co_319dd9bde714,First Lien,Aerospace & Defense,3.25%,,SOFR,3.25%,,2032-05-01,3824,3786,3845,,3786,,,OBDC,2025-08-06
-Arcline FM Holdings,co_d0fcb4262699,First Lien,Aerospace & Defense,3.50%,,SOFR,3.50%,,2030-06-01,5890,5875,5913,,5875,,,OBDC,2025-08-06
-Avolon TLB Borrower 1 (US),co_08e4372b8161,First Lien,Aerospace & Defense,1.75%,,SOFR,1.75%,,2030-06-01,11372,11365,11377,,11365,,,OBDC,2025-08-06
-Avolon TLB Borrower 1 (US) LLC,co_53cb6cb0e5f3,First Lien,Aerospace & Defense,,,SOFR,1.75%,,2030-06-01,10928,10916,10916,0.031,10916,,,OBDC,2025-08-06
-Bleriot US Bidco,co_31d7a0d9ea4c,First Lien,Aerospace & Defense,2.75%,,SOFR,2.75%,,2030-10-01,23820,23821,23865,,23821,,,OBDC,2025-08-06
-Brown Group Holdings,co_0a93e966f8f6,First Lien,Aerospace & Defense,2.50%,,SOFR,2.50%,,2031-07-01,9041,9016,9050,,9016,,,OBDC,2025-08-06
-IDEMIA Group SAS,co_35d09837d862,First Lien,Business Services,4.25%,,SOFR,4.25%,,2028-09-01,2788,2811,2795,,2811,,,OBDC,2025-08-06
-IGT Holding IV AB (dba IFS),co_4d406d38c9b0,First Lien,Business Services,3.50%,,SOFR,3.50%,,2032-04-01,1290,1287,1297,,1287,,,OBDC,2025-08-06
-Madison Safety & Flow LLC,co_c70451cf9ffe,First Lien,Business Services,2.75%,,SOFR,2.75%,,2031-09-01,2482,2482,2486,,2482,,,OBDC,2025-08-06
-MKS Instruments Inc,co_14c57ac588af,First Lien,Business Services,2.00%,,SOFR,2.00%,,2029-08-01,238,239,238,,239,,,OBDC,2025-08-06
-NVENT ELEC PUB LTD CO (dba Nvent Thermal LLC),co_120c068f2784,First Lien,Business Services,3.50%,,SOFR,3.50%,,2032-01-01,14000,13936,14077,,13936,,,OBDC,2025-08-06
-Plano HoldCo Inc (dba Perficient),co_ef7f6913777b,First Lien,Business Services,3.50%,,SOFR,3.50%,,2031-10-01,5985,5963,5671,,5963,,,OBDC,2025-08-06
-Plusgrade Inc,co_c7dace35c76e,First Lien,Business Services,3.50%,,SOFR,3.50%,,2031-03-01,9307,9307,9237,,9307,,,OBDC,2025-08-06
-Cotiviti Inc,co_09a5a5776ddd,First Lien,Business Services,2.75%,,SOFR,2.75%,,2031-05-01,13957,13888,13879,,,,,OBDC,2025-08-06
-Ensemble RCM LLC,co_a4d8c488da3b,First Lien,Business Services,3.00%,,SOFR,3.00%,,2029-08-01,12336,12319,12381,,,,,OBDC,2025-08-06
-Imprivata Inc,co_ff2406064940,First Lien,Business Services,3.00%,,SOFR,3.00%,,2027-12-01,15090,15090,15115,,,,,OBDC,2025-08-06
-IQVIA Inc,co_ce1a1a68c09d,First Lien,Business Services,1.75%,,SOFR,1.75%,,2031-01-01,995,998,998,,,,,OBDC,2025-08-06
-PointClickCare Technologies Inc,co_80d15dd74f7d,First Lien,Business Services,3.25%,,SOFR,3.25%,,2031-11-01,3980,3972,3992,,,,,OBDC,2025-08-06
-Project Ruby Ultimate Parent Corp (dba Wellsky),co_53120a491cb5,First Lien,Business Services,3.00%,,SOFR,3.00%,,2028-03-01,13075,13059,13086,,,,,OBDC,2025-08-06
-Radnet Management Inc,co_d0d25f19e4ce,First Lien,Business Services,2.25%,,SOFR,2.25%,,2031-04-01,999,1004,1000,,,,,OBDC,2025-08-06
-Raven Acquisition Holdings LLC (dba R1 RCM),co_7cf1837d3ae0,First Lien,Business Services,3.25%,,SOFR,3.25%,,2031-11-01,9302,9264,9291,,,,,OBDC,2025-08-06
-Southern Veterinary Partners LLC,co_d9e49ba45334,First Lien,Business Services,3.25%,,SOFR,3.25%,,2031-12-01,19319,19236,19327,,,,,OBDC,2025-08-06
-Waystar Technologies Inc (F/K/A Navicure Inc),co_ec032298beaa,First Lien,Business Services,2.25%,,SOFR,2.25%,,2029-10-01,249,248,249,,,,,OBDC,2025-08-06
-iSolved,co_905cb8ee6034,First Lien,Business Services,,,SOFR,3.25%,,2030-10-01,5970,5970,6037,0.017,5970,,,OBDC,2025-08-06
-Geosyntec Consultants,co_0f038e02e8c0,First Lien,Environmental Services,,,SOFR,3.75%,,2031-07-01,6000,5971,6038,0.017,5971,,,OBDC,2025-08-06
-Acrisure,co_0a85c2baab83,First Lien,Insurance,,,SOFR,3.00%,,2030-11-01,9531,9531,9529,0.027,9531,,,OBDC,2025-08-06
-Ardonagh Midco 3,co_bf48764ea590,First Lien,Insurance,,,SOFR,3.75%,,2031-02-01,15000,15072,15075,0.043,15072,,,OBDC,2025-08-06
-AssuredPartners,co_e19f1a6fed21,First Lien,Insurance,,,SOFR,3.50%,,2031-02-01,12917,12946,12934,0.037,12946,,,OBDC,2025-08-06
-Asurion,co_91a537872ad5,First Lien,Insurance,,,SOFR,4.25%,,2028-08-01,7791,7761,7791,0.022,7761,,,OBDC,2025-08-06
-Broadstreet Partners,co_daf84b3851ba,First Lien,Insurance,,,SOFR,3.00%,,2031-06-01,6328,6328,6344,0.018,6328,,,OBDC,2025-08-06
-Hyperion Refinance,co_ed0bd4db60fc,First Lien,Insurance,,,SOFR,3.50%,,2030-04-01,19650,19741,19768,0.057,19741,,,OBDC,2025-08-06
-Hyperion Refinance,co_ed0bd4db60fc,First Lien,Insurance,,,SOFR,3.00%,,2031-02-01,4963,4963,4991,0.014,4963,,,OBDC,2025-08-06
-Mitchell International,co_300ee98332ab,First Lien,Insurance,,,SOFR,3.25%,,2031-06-01,9975,9923,9967,0.029,9923,,,OBDC,2025-08-06
-Avalara,co_f4850d26fe6f,First Lien,Software,,,SOFR,3.25%,,2032-03-01,9135,9060,9168,,9060,,,OBDC,2025-08-06
-Cloud Software Group,co_9a6b496140e4,First Lien,Software,,,SOFR,3.75%,,2031-03-01,4975,4975,4982,,4975,,,OBDC,2025-08-06
-Clover Holdings 2,co_ad8dc9d214b8,First Lien,Software,,,SOFR,4.00%,,2031-12-01,19643,19432,19649,,19432,,,OBDC,2025-08-06
-Dayforce,co_a0952472b4de,First Lien,Software,,,SOFR,2.00%,,2031-03-01,1990,1991,1990,,1991,,,OBDC,2025-08-06
-Delta TopCo,co_a92b598041ff,First Lien,Software,,,SOFR,2.75%,,2029-12-01,11867,11819,11776,,11819,,,OBDC,2025-08-06
-Epicor,co_f16238c7ae13,First Lien,Software,,,SOFR,2.75%,,2031-05-01,746,749,748,,749,,,OBDC,2025-08-06
-Gen Digital,co_1c953e712c15,First Lien,Software,,,SOFR,1.75%,,2032-04-01,3324,3308,3317,,3308,,,OBDC,2025-08-06
-Genesys Cloud Services,co_c1b255b2a0e6,First Lien,Software,,,SOFR,2.50%,,2032-01-01,7678,7662,7672,,7662,,,OBDC,2025-08-06
-Informatica,co_105dc455af71,First Lien,Software,,,SOFR,2.25%,,2028-10-01,194,194,194,,194,,,OBDC,2025-08-06
-Javelin Buyer,co_e70c931faa2d,First Lien,Software,,,SOFR,3.00%,,2031-10-01,2743,2738,2754,,2738,,,OBDC,2025-08-06
-McAfee,co_f5b92e85b957,First Lien,Software,,,SOFR,3.00%,,2029-03-01,4266,4246,4137,,4246,,,OBDC,2025-08-06
-Calpine Corporation,co_03426328d4f5,First Lien,Software,,,SOFR,1.75%,,2032-02-01,4000,3985,3983,0.011,,,,OBDC,2025-08-06
-Fleet U.S. Bidco Inc,co_5a20b9361fda,First Lien,Software,,,SOFR,2.75%,,2031-02-01,7481,7481,7519,0.022,,,,OBDC,2025-08-06
-AllSpring Buyer,co_6d3dc59c146c,First Lien,Financial Services,,,SOFR,3.00%,,2030-11-01,1048,1046,1049,0.003,,,,OBDC,2025-08-06
-BCPE Pequod Buyer Inc,co_d8065f950048,First Lien,Financial Services,,,SOFR,3.50%,,2031-11-01,8000,7960,8058,0.023,,,,OBDC,2025-08-06
-Citadel Securities LP,co_69c86cd6faa6,First Lien,Financial Services,,,SOFR,2.00%,,2031-10-01,7271,7271,7288,0.021,,,,OBDC,2025-08-06
-Focus Financial Partners LLC,co_fd797760d61e,First Lien,Financial Services,,,SOFR,3.25%,,2031-09-01,7224,7206,7285,0.021,,,,OBDC,2025-08-06
-Grant Thornton Advisors LLC,co_4cccf01d0a96,First Lien,Financial Services,,,SOFR,2.75%,,2031-06-01,1783,1783,1781,0.005,,,,OBDC,2025-08-06
-Guggenheim Partners Investment Management Holdings LLC,co_b50e7fb46c7f,First Lien,Financial Services,,,SOFR,2.50%,,2031-11-01,6000,5985,6015,0.017,,,,OBDC,2025-08-06
-Jane Street Group LLC,co_527a5111320c,First Lien,Financial Services,,,SOFR,2.00%,,2031-12-01,3990,3980,3972,0.011,,,,OBDC,2025-08-06
-MARINER WEALTH ADVISORS LLC,co_f70b24e5e6cc,First Lien,Financial Services,,,SOFR,2.75%,,2028-08-01,1995,1995,1995,0.006,,,,OBDC,2025-08-06
-Orion Advisor Solutions Inc,co_6a782f28ae8d,First Lien,Financial Services,,,SOFR,3.75%,,2030-09-01,6435,6389,6489,0.019,,,,OBDC,2025-08-06
-Dealer Tire Financial LLC,co_c7c469aca5b6,First Lien,Industrial Services,,,SOFR,3.00%,,2031-07-01,23820,23820,23642,,,,,OBDC,2025-08-06
-Foundation Building Materials Inc,co_2324807ba569,First Lien,Industrial Services,,,SOFR,3.25%,,2028-01-01,3029,2936,2987,,,,,OBDC,2025-08-06
-Foundation Building Materials Inc,co_2324807ba569,First Lien,Industrial Services,,,SOFR,4.00%,,2031-01-01,4092,4058,3998,,,,,OBDC,2025-08-06
-Foundation Building Materials Inc,co_2324807ba569,First Lien,Industrial Services,,,SOFR,5.25%,,2031-01-01,2786,2699,2742,,,,,OBDC,2025-08-06
-Paint Intermediate III LLC,co_71a8d08c93bf,First Lien,Industrial Services,,,SOFR,3.00%,,2031-10-01,11970,11917,11850,,,,,OBDC,2025-08-06
-White Cap Supply Holdings LLC,co_9d99eb746f4f,First Lien,Industrial Services,,,SOFR,3.25%,,2029-10-01,5661,5642,5621,,,,,OBDC,2025-08-06
-Ellucian Holdings Inc,co_4de603a81648,First Lien,Education,,,SOFR,3.00%,,2029-10-01,10185,10185,10204,,,,,OBDC,2025-08-06
-Renaissance Learning Inc,co_53a4d3378d72,First Lien,Education,,,SOFR,4.00%,,2030-04-01,5164,4985,4677,,,,,OBDC,2025-08-06
-Spring Education Group Inc,co_6784395e1d8e,First Lien,Education,,,SOFR,4.00%,,2030-10-01,19700,19700,19761,,,,,OBDC,2025-08-06
-AZZ Inc,co_4e39be33f04b,First Lien,Energy Services,,,SOFR,2.50%,,2029-05-01,1264,1271,1270,,,,,OBDC,2025-08-06
-Brookfield WEC Holdings Inc,co_6084a8552a8e,First Lien,Energy Services,,,SOFR,2.25%,,2031-01-01,4065,4065,4065,,,,,OBDC,2025-08-06
-Calpine Construction Finance Company,co_27d6e3509dec,First Lien,Energy Services,,,SOFR,2.00%,,2030-07-01,3000,2987,299,,,,,OBDC,2025-08-06
-Amentum Holdings Inc,co_7fe4d2749aa3,First Lien,Aerospace & Defense,,,SOFR,2.25%,,2031-09-01,,,,0.017,,,,OBDC,2025-08-06
-Bleriot US Bidco Inc,co_31d7a0d9ea4c,First Lien,Aerospace & Defense,,,SOFR,2.75%,,2030-10-01,23940,23940,24048,0.069,23940,,,OBDC,2025-08-06
-Dynasty Acquisition Co Inc (dba StandardAero Limited),co_5cc4ea3e036c,First Lien,Aerospace & Defense,,,SOFR,2.25%,,2031-10-01,10500,10487,10540,0.03,10487,,,OBDC,2025-08-06
-Signia Aerospace LLC,co_084a6c05e67b,First Lien,Aerospace & Defense,,,SOFR,3.00%,,2031-11-01,7385,7366,7366,0.021,7366,,,OBDC,2025-08-06
-Transdigm Inc,co_8121a0fa0a93,First Lien,Aerospace & Defense,,,SOFR,2.50%,,2032-01-01,9975,9951,9991,0.029,9951,,,OBDC,2025-08-06
-Belron Finance US LLC,co_2f8f36a625c1,First Lien,Automotive,,,SOFR,2.75%,,2031-10-01,7980,7960,8045,0.023,7960,,,OBDC,2025-08-06
-Holley Inc,co_5dacfd4ce3a1,First Lien,Automotive,,,SOFR,3.75%,,2028-11-01,3211,3148,3140,0.009,3148,,,OBDC,2025-08-06
-Mavis Tire Express Services Topco Corp,co_c6025330603e,First Lien,Automotive,,,SOFR,3.50%,,2028-05-01,2867,2878,2883,0.008,2878,,,OBDC,2025-08-06
-Wand Newco 3 Inc (dba Caliber),co_46c2ded60abe,First Lien,Automotive,,,SOFR,3.25%,,2031-01-01,4883,,,,,,,OBDC,2025-08-06
-KOBHG Holdings LP (dba OB Hospitalist),co_93b6223952eb,Partnership Interest,Healthcare Services,,,N/A,,6670,6670,6102,0.1,6670,,,,,OBDC,2025-08-06
-KWOL Acquisition Inc (dba Worldwide Clinical Trials),co_9c4340b9e9d3,Partnership Interest,Healthcare Services,,,N/A,,452,4518,5121,0.1,4518,,,,,OBDC,2025-08-06
-Sunshine Software Holdings Inc (dba Cornerstone OnDemand Inc),co_59ba26cb9f3a,Preferred Equity,Business Services,,10.50%,N/A,,38500,52839,42272,0.7,52839,,,,,OBDC,2025-08-06
-Accelerate Topco Holdings LLC,co_2483ad3aaf20,Common Equity,Insurance,,,N/A,,513,14,24,0,14,,,,,OBDC,2025-08-06
-Evolution Parent LP (dba SIAA),co_f6184548f48c,Partnership Interest,Insurance,,,N/A,,42838,4284,4874,0.1,4284,,,,,OBDC,2025-08-06
-GoHealth Inc,co_71a27d3d6baf,Common Equity,Insurance,,,N/A,,68125,5234,912,0,5234,,,,,OBDC,2025-08-06
-GrowthCurve Capital Sunrise Co-Invest LP (dba Brightway),co_bc3aeabbc1b0,Partnership Interest,Insurance,,,N/A,,63079,641,630,0,641,,,,,OBDC,2025-08-06
-Hockey Parent Holdings LP,co_738748475155,Common Equity,Insurance,,,N/A,,10000,10010,11173,0.2,10010,,,,,OBDC,2025-08-06
-Sonny's Enterprises,co_fc8ca195e3a6,First Lien,Insurance,,,SOFR,5.50%,,2028-08-01,291382,288492,289197,,,,,OBDC,2025-08-06
-Sonny's Enterprises,co_fc8ca195e3a6,Delayed Draw,Insurance,,,SOFR,6.50%,,2028-08-01,9233,9028,9233,,,,,OBDC,2025-08-06
-Sonny's Enterprises,co_fc8ca195e3a6,Revolver,Insurance,,,SOFR,5.50%,,2027-08-01,12016,11899,11839,,,,,OBDC,2025-08-06
-Puma Buyer (dba PANTHERx),co_01d623b7d9cc,First Lien,Pharmaceuticals & Biotechnology,,,SOFR,4.25%,,2032-03-01,861,855,861,,,,,OBDC,2025-08-06
-Essential Services Holding Corporation (dba Turnpoint),co_b57b53be3ba0,First Lien,Business Services,,,SOFR,5.00%,,2031-06-01,25974,25625,25649,,,,,OBDC,2025-08-06
-Essential Services Holding Corporation,co_b57b53be3ba0,First Lien,Business Services,5.00%,,SOFR,5.00%,,2031-06-01,19717,19531,19520,0.003,19531,,,OBDC,2025-08-06
-Essential Services Holding Corporation (dba Turnpoint),co_b57b53be3ba0,Revolver,Business Services,,,SOFR,5.00%,,2030-06-01,382,355,342,,,,,OBDC,2025-08-06
-Gerson Lehrman Group,co_0fc9e724dab4,First Lien,Business Services,,,SOFR,5.00%,,2027-12-01,155495,154143,155495,,,,,OBDC,2025-08-06
-Guidehouse,co_257e0270d752,First Lien,Business Services,,,SOFR,3.00%,,2030-12-01,49180,48222,48934,,,,,OBDC,2025-08-06
-Paris US Holdco (dba Precinmac),co_96d8b983f0e1,First Lien,Business Services,,,SOFR,4.75%,,2031-12-01,28914,28477,28751,,,,,OBDC,2025-08-06
-Relativity ODA,co_ba854e909c5f,First Lien,Business Services,,,SOFR,4.50%,,2029-05-01,101311,100555,101311,,,,,OBDC,2025-08-06
-Sensor Technology Topco (dba Humanetics),co_4a7c3f8f0226,First Lien,Business Services,,,SOFR,7.00%,,2028-05-01,89806,89381,898,,,,,OBDC,2025-08-06
-Icefall Parent,co_1c11431c6470,First Lien,Business Services,,,SOFR,5.75%,,2030-01-01,33278,32717,33278,,,,,OBDC,2025-08-06
-JS Parent,co_1b801b73223e,First Lien,Business Services,,,SOFR,4.75%,,2031-04-01,905,901,905,,,,,OBDC,2025-08-06
-Litera Bidco,co_b3d6abfe076b,First Lien,Business Services,,,SOFR,5.00%,,2028-05-01,162135,161410,161730,,,,,OBDC,2025-08-06
-MINDBODY,co_de47d452c881,First Lien,Business Services,,,SOFR,6.00%,,2027-09-01,62018,61982,62018,,,,,OBDC,2025-08-06
-Ministry Brands Holdings,co_44121fa6e7e9,First Lien,Business Services,,,SOFR,5.50%,,2028-12-01,11944,11664,11854,,,,,OBDC,2025-08-06
-Ministry Brands Holdings,co_44121fa6e7e9,Revolver,Business Services,,,Prime,4.50%,,2027-12-01,90,83,82,,,,,OBDC,2025-08-06
-PDI TA Holdings,co_d4e76ed2d08c,First Lien,Business Services,,,SOFR,5.50%,,2031-02-01,41709,40866,41271,,,,,OBDC,2025-08-06
-QAD,co_9476f72b3f59,First Lien,Business Services,,,SOFR,4.75%,,2027-11-01,72363,71501,72363,,,,,OBDC,2025-08-06
-Securonix,co_4e613096ec99,First Lien,Business Services,,,SOFR,4.00%,,2029-04-01,1727,1610,1550,,,,,OBDC,2025-08-06
-Securonix,co_4e613096ec99,Revolver,Business Services,,,SOFR,7.00%,,2029-04-01,7,,,,,,,OBDC,2025-08-06
-Sitecore Holding III,co_5a3fe9ec27c9,First Lien,Business Services,,,SOFR,3.25%,,2029-03-01,4432,4409,4432,,,,,OBDC,2025-08-06
-Sitecore Holding III,co_5a3fe9ec27c9,First Lien,Business Services,,,Euribor,3.25%,,2029-03-01,,27011,30186,,,,,OBDC,2025-08-06
-Klarna Holding AB,co_38c5daf8129f,Subordinated Debt,Business Services,,,SOFR,7.00%,,2034-04-01,1000,1000,1000,0,,,,OBDC,2025-08-06
-KRIV Acquisition Inc,co_1cedb2e8668c,First Lien,Business Services,,,SOFR,5.75%,,2029-07-01,6207,6055,6207,0.001,,,,OBDC,2025-08-06
-Minotaur Acquisition Inc,co_6830d716e83b,First Lien,Business Services,,,SOFR,5.00%,,2030-06-01,172290,170577,171428,0.029,,,,OBDC,2025-08-06
-NMI Acquisitionco Inc,co_ea8330f4ea6d,First Lien,Business Services,,,SOFR,5.00%,,2028-09-01,36001,35911,36001,0.006,,,,OBDC,2025-08-06
-Smarsh Inc,co_d80561116050,First Lien,Business Services,,,SOFR,5.75%,,2029-02-01,857,851,857,0,,,,OBDC,2025-08-06
-Balrog Acquisition Inc,co_b294ed3a1ed4,Second Lien,Food & Beverage,,,SOFR,7.00%,,2029-09-01,22000,21875,22000,0.004,,,,OBDC,2025-08-06
-Blast Bidco Inc,co_a35b96797289,First Lien,Food & Beverage,,,SOFR,6.00%,,2030-10-01,29331,28690,29331,0.005,,,,OBDC,2025-08-06
-BP Veraison Buyer LLC,co_2846b9d44ad0,First Lien,Food & Beverage,,,SOFR,5.25%,,2029-05-01,91808,91171,91808,0.015,,,,OBDC,2025-08-06
-EAGLE FAMILY FOODS GROUP LLC,co_21446b11f56b,First Lien,Food & Beverage,,,SOFR,5.00%,,2030-08-01,1633,1617,1625,0,,,,OBDC,2025-08-06
-Gehl Foods LLC,co_97bbfe07936b,First Lien,Food & Beverage,,,SOFR,6.25%,,2030-06-01,69403,68753,69056,0.012,,,,OBDC,2025-08-06
-Securonix Inc,co_4e613096ec99,First Lien,Software,7.75%,3.75%,SOFR,7.75%,,2028-04-01,847,842,735,0,842,,,OBDC,2025-08-06
-Sitecore Holding III A/S,co_5a3fe9ec27c9,First Lien,Software,7.75%,4.25%,Euribor,7.75%,,2029-03-01,25001,26219,25889,0.004,26219,,,OBDC,2025-08-06
-Sitecore Holding III A/S,co_5a3fe9ec27c9,First Lien,Software,7.75%,4.25%,SOFR,7.75%,,2029-03-01,4290,4265,4290,0.001,4265,,,OBDC,2025-08-06
-Sitecore USA Inc,co_a425d98fabbd,First Lien,Software,7.75%,4.25%,SOFR,7.75%,,2029-03-01,25865,25713,25865,0.004,25713,,,OBDC,2025-08-06
-Spaceship Purchaser Inc (dba Squarespace),co_e43cd5f373b7,First Lien,Software,5.00%,,SOFR,5.00%,,2031-10-01,3506,3488,3488,0.001,3488,,,OBDC,2025-08-06
-Thunder Purchaser Inc (dba Vector Solutions),co_f7f1710236ae,First Lien,Software,5.50%,,SOFR,5.50%,,2028-06-01,68116,67735,68116,0.011,67735,,,OBDC,2025-08-06
-When I Work Inc,co_fc083f553cd8,First Lien,Software,5.50%,,SOFR,5.50%,,2027-11-01,5985,5959,5776,0.001,5959,,,OBDC,2025-08-06
-Zendesk Inc,co_97d76b2239a5,First Lien,Software,5.00%,,SOFR,5.00%,,2028-11-01,71044,70083,71044,0.012,70083,,,OBDC,2025-08-06
-Project Hotel California Co-Invest Fund LP,co_66c556564a08,Partnership Interest,Software,,,N/A,,,2685000,2687,3092,0.1,,,,,OBDC,2025-08-06
-Thunder Topco LP (dba Vector Solutions),co_8b459b87c196,Common Equity,Software,,,N/A,,,3829614,3830,4556,0.1,,,,,OBDC,2025-08-06
-VEPF Torreys Aggregator LLC (dba MINDBODY Inc),co_f781bf2fcd58,Preferred Equity,Software,,10.00%,N/A,,,21250,25029,26281,0.4,,,,,OBDC,2025-08-06
-WMC Bidco Inc (dba West Monroe),co_cec9600d340d,Preferred Equity,Software,,11.25%,N/A,,,16692,23491,23240,0.4,,,,,OBDC,2025-08-06
-Zoro TopCo Inc,co_12b819c8bc1e,Preferred Equity,Software,,9.50%,SOFR,9.50%,,,9554,12110,12404,0.002,12110,,,OBDC,2025-08-06
-Zoro TopCo Inc,co_12b819c8bc1e,Preferred Equity,Software,,,SOFR,,,12779,12423,12645,,,,,,OBDC,2025-08-06
-Zoro TopCo LP,co_12b819c8bc1e,Common Equity,Software,,,N/A,,,796165,7962,8669,0.1,,,,,OBDC,2025-08-06
-Zoro TopCo LP,co_12b819c8bc1e,Common Equity,Software,,,N/A,,,1064900,10830,11952,,,,,,OBDC,2025-08-06
-Gloves Holdings LP (dba Protective Industrial Products),co_54a9eface43a,Partnership Interest,Manufacturing,,,N/A,,,32500,3250,3847,0.1,,,,,OBDC,2025-08-06
-Windows Entities,co_fd8c1b2df71f,Common Equity,Manufacturing,,,N/A,,,31844,60319,138628,2.3,,,,,OBDC,2025-08-06
-Pluralsight LLC,co_5097e1803107,First Lien,Education,,1.50%,SOFR,4.50%,,2029-08-01,19001,19001,19001,0.003,19001,,,OBDC,2025-08-06
-Pluralsight LLC,co_5097e1803107,First Lien,Education,,7.50%,SOFR,7.50%,,2029-08-01,19539,19539,19539,0.003,19539,,,OBDC,2025-08-06
-Ideal Image Development LLC,co_c4add3c7e598,First Lien,Retail,,6.50%,SOFR,6.50%,,2029-02-01,4795,4757,4675,0.001,4757,,,OBDC,2025-08-06
-Swipe Acquisition Corporation,co_f1f89101e01f,First Lien,Media & Entertainment,,,SOFR,8.00%,,2027-11-01,67268,67268,67268,0.011,,,,OBDC,2025-08-06
-Swipe Acquisition Corporation,co_f1f89101e01f,First Lien,Media & Entertainment,,,SOFR,8.00%,,2026-06-01,5261,5228,5261,0.001,,,,OBDC,2025-08-06
-Swipe Acquisition Corporation,co_f1f89101e01f,First Lien,Media & Entertainment,,,SOFR,5.00%,,2027-11-01,35593,35247,35238,0.006,,,,OBDC,2025-08-06
-Swipe Acquisition Corporation,co_f1f89101e01f,First Lien,Media & Entertainment,,,SOFR,,2027-11-01,72529,72507,72529,,,,,,OBDC,2025-08-06
-Swipe Acquisition Corporation,co_f1f89101e01f,First Lien,Media & Entertainment,,,SOFR,,2027-11-01,41821,41531,41715,,,,,,OBDC,2025-08-06
-AAM Series 1.1 Rail and Domestic Intermodal Feeder LLC,co_8df89f64b3d5,First Lien,Financial Services,,12.00%,N/A,,,2030-07-01,45105,45105,45105,0.008,,,,OBDC,2025-08-06
-AAM Series 1.1 Rail and Domestic Intermodal Feeder LLC,co_8df89f64b3d5,First Lien,Financial Services,,,N/A,,2030-07-01,64070,63927,64070,,,,,,OBDC,2025-08-06
-AAM Series 2.1 Aviation Feeder LLC,co_d18984abb419,First Lien,Financial Services,,12.00%,N/A,,,2030-11-01,45630,45630,45630,0.008,,,,OBDC,2025-08-06
-AAM Series 2.1 Aviation Feeder LLC,co_d18984abb419,First Lien,Financial Services,,,N/A,,2030-11-01,68103,67936,68103,,,,,,OBDC,2025-08-06
-PS Operating Company LLC,co_a285d3877f06,First Lien,Business Services,,6.00%,SOFR,,,2026-12-01,20064,17721,2916,,,,,OBDC,2025-08-06
-PS Operating Company LLC,co_a285d3877f06,First Lien,Business Services,,,SOFR,,2026-12-01,21629,18048,1425,0,,,,,OBDC,2025-08-06
-Walker Edison Furniture Company LLC,co_4c46f9f8194d,First Lien,Consumer Products,,6.75%,SOFR,,,2027-03-01,39459,31220,5188,0.001,,,,OBDC,2025-08-06
-Walker Edison Furniture Company LLC,co_4c46f9f8194d,First Lien,Consumer Products,,,SOFR,,2027-03-01,68521,45405,3826,,,,,,OBDC,2025-08-06
-Walker Edison Furniture Company LLC,co_4c46f9f8194d,Revolver,Consumer Products,,,SOFR,6.25%,,2027-03-01,11241,11255,7223,0.001,,,,OBDC,2025-08-06
-Eagle Infrastructure Services LLC,co_64bdcd9b0226,First Lien,Environmental Services,,,SOFR,7.50%,,2028-04-01,87138,85895,86702,0.015,,,,OBDC,2025-08-06
-Eagle Infrastructure Services LLC,co_64bdcd9b0226,First Lien,Environmental Services,,,SOFR,,2028-04-01,87138,86066,87138,1.1,,,,,OBDC,2025-08-06
-New PLI Holdings LLC,co_d544d2786e5e,Common Equity,Media & Entertainment,,,N/A,,,2027-11-01,86745,48007,92705,0.016,,,,OBDC,2025-08-06
-LSI Financing 1 DAC,co_4892a4a212cd,Preferred Equity,Pharmaceuticals & Biotechnology,,,N/A,,,,6748,6785,6206,0.001,,,,OBDC,2025-08-06
-Ideal Topco LP,co_7f4cec11176b,Common Equity,Retail,,,N/A,,,,10365854,,,,,,,OBDC,2025-08-06
-Ideal Topco LP,co_7f4cec11176b,Preferred Equity,Retail,,,N/A,,,,24024390,19805,7047,0.001,,,,OBDC,2025-08-06
-AAM Series 1.1 Rail and Domestic Intermodal Feeder LLC,co_8df89f64b3d5,Partnership Interest,Financial Services,,,N/A,,,,30937,31431,41730,,,,,OBDC,2025-08-06
-AAM Series 1.1 Rail and Domestic Intermodal Feeder LLC,co_8df89f64b3d5,Partnership Interest,,,,,,,,26763,26763,,,26763,85795,59032,OBDC,2025-08-06
-Hg Genesis 8 Sumoco Limited,co_513ef062b958,Unsecured Debt,Financial Services,,,SONIA,,,2027-09-01,,17410,18990,,,,,OBDC,2025-08-06
-Hg Genesis 9 SumoCo Limited,co_513ef062b958,Unsecured Debt,Financial Services,,,Euribor,,,2029-03-01,,53981,59929,,,,,OBDC,2025-08-06
-Hg Saturn Luchaco Limited,co_4e8e0af53d43,Unsecured Debt,Financial Services,,,SONIA,,,2027-03-01,,64682,70236,,,,,OBDC,2025-08-06
-Spotless Brands LLC,co_9e457409bbbe,First Lien,Automotive,,,SOFR,5.75%,,2028-07-01,94535,93068,94535,,,,,OBDC,2025-08-06
-Associations Finance Inc,co_dca322d4aace,Unsecured Debt,Real Estate,,,N/A,,,2030-05-01,188863,187314,188863,,,,,OBDC,2025-08-06
-Lightbeam Bidco (dba Lazer Spot),co_8ba94b4a73b3,First Lien,Transportation & Logistics,,,SOFR,,,2030-05-01,4456,4456,4456,,4456,,,OBDC,2025-08-06
-Lightbeam Bidco (dba Lazer Spot),co_8ba94b4a73b3,Revolver,Transportation & Logistics,,,SOFR,,,2029-05-01,214,211,214,,211,,,OBDC,2025-08-06
-Lytx,co_e4faafb6ecd9,First Lien,Transportation & Logistics,,,SOFR,,,2028-02-01,71005,71005,71005,,71005,,,OBDC,2025-08-06
-Space Exploration Technologies,co_98de10ab7858,Common Equity,Aerospace & Defense,,,N/A,,,46605,2557,8776,,,,,,OBDC,2025-08-06
-Space Exploration Technologies,co_98de10ab7858,Common Equity,Aerospace & Defense,,,N/A,,,9360,446,1762,,,,,,OBDC,2025-08-06
-Amergin Asset Management,co_062618b65e6b,Common Equity,Financial Services,,,N/A,,,50000000,382,2165,,,,,,OBDC,2025-08-06
-CD&R Value Building Partners I (dba Belron),co_c6a6942b00b0,Partnership Interest,Automotive,,,N/A,,,73986,77389,88847,,,,,,OBDC,2025-08-06
-Metis HoldCo (dba Mavis Tire Express Services),co_eb1d6fa25cdf,Preferred Equity,Automotive,,,N/A,,,242899,239312,242899,,,,,,OBDC,2025-08-06
-Dodge Construction Network Holdings,co_802c3e24716d,Common Equity,Real Estate,,,N/A,,,2613518,1920,372,,,,,,OBDC,2025-08-06
-Dodge Construction Network Holdings,co_802c3e24716d,Preferred Equity,Real Estate,,,SOFR,,,,50,32,,0.5,,,,OBDC,2025-08-06
-Denali Holding (dba Summit Companies),co_3ce53adca59f,Common Equity,Business Services,,,N/A,,,337460,10594,15855,,,,,,OBDC,2025-08-06
-Hercules Buyer (dba The Vincit Group),co_0c1858a56d4d,Common Equity,Business Services,,,N/A,,,751184,2728,3226,,,,,,OBDC,2025-08-06
-Knockout Intermediate Holdings I (dba Kaseya Inc),co_2713bff35b82,Preferred Equity,Business Services,,,SOFR,,,2640000,18558,18787,,,,,,OBDC,2025-08-06
-Gerson Lehrman Group Inc,co_0fc9e724dab4,First Lien,Business Services,5.25%,,SOFR,5.25%,,2027-12-01,122818,121957,122511,0.021,121957,,,OBDC,2025-08-06
-Guidehouse Inc,co_257e0270d752,First Lien,Business Services,5.75%,2.00%,SOFR,5.75%,,2030-12-01,4632,4632,4608,0.001,4632,,,OBDC,2025-08-06
-Paris US Holdco Inc,co_96d8b983f0e1,First Lien,Business Services,5.00%,,SOFR,5.00%,,2031-12-01,21628,21414,21412,0.004,21414,,,OBDC,2025-08-06
-Relativity ODA LLC,co_ba854e909c5f,First Lien,Business Services,4.50%,,SOFR,4.50%,,2029-05-01,76621,76331,76429,0.013,76331,,,OBDC,2025-08-06
-Sensor Technology Topco Inc,co_4a7c3f8f0226,First Lien,Business Services,7.00%,,SOFR,7.00%,,2028-05-01,65679,65445,66008,0.011,65445,,,OBDC,2025-08-06
-Sensor Technology Topco Inc,co_4a7c3f8f0226,Delayed Draw,Business Services,7.25%,,Euribor,7.25%,,2028-05-01,,12847,12351,0.002,12847,,,OBDC,2025-08-06
-Vensure Employer Services Inc,co_13ff515df3b0,First Lien,Business Services,5.00%,,SOFR,5.00%,,2031-09-01,828,81,,,,,,OBDC,2025-08-06
-Space Exploration Technologies Corp,co_98de10ab7858,Common Equity,Aerospace & Defense,,,N/A,,,46605,2557,8337,0.1,,,,,OBDC,2025-08-06
-Space Exploration Technologies Corp,co_98de10ab7858,Common Equity,Aerospace & Defense,,,N/A,,,9360,446,1674,0,,,,,OBDC,2025-08-06
-Amergin Asset Management LLC,co_062618b65e6b,Common Equity,Financial Services,,,N/A,,,25000000,1,778,0,0.01,,,,OBDC,2025-08-06
-CD&R Value Building Partners I LP,co_c6a6942b00b0,Partnership Interest,Automotive,,,N/A,,,33000000,31934,38072,0.6,,,,,OBDC,2025-08-06
-Metis HoldCo Inc,co_eb1d6fa25cdf,Preferred Equity,Automotive,,7.00%,N/A,,,193023000,189900,193023,3.2,,,,,OBDC,2025-08-06
-Dodge Construction Network Holdings LP,co_802c3e24716d,Common Equity,Real Estate,,,N/A,,,2181629,1860,310,0,,,,,OBDC,2025-08-06
-Dodge Construction Network Holdings LP,co_802c3e24716d,Preferred Equity,Real Estate,,,SOFR,8.25%,,,45,26,0,0.45,,,,OBDC,2025-08-06
-Denali Holding LP,co_3ce53adca59f,Common Equity,Business Services,,,N/A,,,337460,3431,5959,0.1,,,,,OBDC,2025-08-06
-Hercules Buyer LLC,co_0c1858a56d4d,Common Equity,Business Services,,,N/A,,,2190000,2192,2676,0,,,,,OBDC,2025-08-06
-Knockout Intermediate Holdings I Inc,co_2713bff35b82,Preferred Equity,Business Services,,10.75%,SOFR,,,14000,19164,19423,0.3,,,,,OBDC,2025-08-06
-ASP Conair Holdings LP,co_c370a1674f79,Common Equity,Consumer Products,,,N/A,,,60714,6071,6600,0.1,,,,,OBDC,2025-08-06
-Blend Labs Inc,co_217ec06f2136,Warrants,Financial Services,,,N/A,,,179529,975,8,0,,,,,OBDC,2025-08-06
-HFS Matterhorn Topco Inc,co_b1d78943ae9c,Common Equity,Food & Beverage,,,N/A,,,10875,10875,,0,,,,,OBDC,2025-08-06
-AlphaSense,co_d27f083c893e,Preferred Equity,Software,,,N/A,,,3386,153,165,,,,,,OBDC,2025-08-06
-BCTO WIW Holdings,co_5bdc7e29b693,Common Equity,Software,,,N/A,,,70000,4355,3773,,,,,,OBDC,2025-08-06
-Bird Holding,co_8b00349fa13e,Warrants,Software,,,N/A,,,148430,790,216,,,,,,OBDC,2025-08-06
-Brooklyn Lender Co-Invest 2,co_9d7ab984652b,Common Equity,Software,,,N/A,,,9233282,10049,14973,,,,,,OBDC,2025-08-06
-Elliott Alto Co-Investor Aggregator,co_4484cae81790,Partnership Interest,Software,,,N/A,,,6007,7542,10895,,,,,,OBDC,2025-08-06
-Insight CP (Blocker) Holdings,co_b6ac970ddd3c,Partnership Interest,Software,,,N/A,,,1704,1811,2134,,,,,,OBDC,2025-08-06
-Project Alpine Co-Invest Fund,co_537559dd4e48,Partnership Interest,Software,,,N/A,,,12000,12582,15759,,,,,,OBDC,2025-08-06
-Project Hotel California Co-Invest Fund,co_66c556564a08,Partnership Interest,Software,,,N/A,,,4027,4182,7407,,,,,,OBDC,2025-08-06
-Thunder Topco,co_8b459b87c196,Common Equity,Software,,,N/A,,,5968267,6324,7100,,,,,,OBDC,2025-08-06
-VEPF Torreys Aggregator,co_f781bf2fcd58,Preferred Equity,Software,,,N/A,,,21250,26291,28855,,,,,,OBDC,2025-08-06
-WMC Bidco,co_cec9600d340d,Preferred Equity,Software,,,N/A,,,50077,73380,74285,,,,,,OBDC,2025-08-06
-Gloves Holdings,co_54a9eface43a,Partnership Interest,Manufacturing,,,N/A,,,48099,5395,7455,,,,,,OBDC,2025-08-06
-Pluralsight,co_5097e1803107,First Lien,Education,,,SOFR,,,2029-08-01,23123,23046,23123,,,,,OBDC,2025-08-06
-Citrin Cooperman Advisors,co_4a221efd454f,Delayed Draw,,,,,2027-03-01,,,,,,,291,,,OBDC,2025-08-06
-Clydesdale Acquisition Holdings (dba Novolex),co_96d0a8e9f8f5,Delayed Draw,,,,,2025-12-01,7,7,7,,,,242,,,OBDC,2025-08-06
-Cohnreznick Advisory,co_f7a80e7b73e0,Delayed Draw,,,,,2027-03-01,,,,,,,1388,,,OBDC,2025-08-06
-Delta 2 (Lux) (dba Formula One),co_de3a046a95b3,Delayed Draw,,,,,2025-07-01,,,,,,,500,,,OBDC,2025-08-06
-First Eagle Holdings,co_f48f8959e2f3,Delayed Draw,,,,,2027-06-01,,,,,,,1783,,,OBDC,2025-08-06
-Kaman,co_88d1363f3040,Delayed Draw,,,,,2027-01-01,,,,,,,1032,,,OBDC,2025-08-06
-Raven Acquisition Holdings (dba R1 RCM),co_7cf1837d3ae0,Delayed Draw,,,,,2026-10-01,,,,,,,674,,,OBDC,2025-08-06
-Savor Acquisition (dba Sauer Brands),co_343ffcf499b2,Delayed Draw,,,,,2027-02-01,,,,,,,410,,,OBDC,2025-08-06
-Signia Aerospace,co_084a6c05e67b,Delayed Draw,,,,,2026-11-01,,,,,,,1000,,,OBDC,2025-08-06
-WU Holdco Inc (dba Weiman Products LLC),co_df30f5e5b04a,Revolver,,,,,,2027-03-01,8793,8793,,,,25646,16853,,OBDC,2025-08-06
-Zendesk Inc,co_97d76b2239a5,Revolver,,,,,,2028-11-01,,,,,,7145,7145,,OBDC,2025-08-06
-Ideal Image Development LLC,co_c4add3c7e598,Revolver,,,,,,2029-02-01,1463,1463,,,,1829,366,,OBDC,2025-08-06
-Ideal Image Development LLC,co_c4add3c7e598,Revolver,,,,,,2029-02-01,66,66,,,,66,,,OBDC,2025-08-06
-LSI Financing LLC,co_8e78779d9aa3,Common Equity,,,,,,,,156004,156004,,,156004,159192,3188,OBDC,2025-08-06
-LSI Financing LLC,co_8e78779d9aa3,Common Equity,Pharmaceuticals & Biotechnology,,,N/A,,,162415,162086,169896,,,,,,OBDC,2025-08-06
-AAM Series 2.1 Aviation Feeder LLC,co_d18984abb419,Partnership Interest,,,,,,,,25601,25601,,,25601,53045,27444,OBDC,2025-08-06
-Wingspire Capital Holdings LLC,co_aada59bbe464,Partnership Interest,,,,,,,,431405,431405,,,431405,500000,68595,OBDC,2025-08-06
-Eagle Infrastructure Services LLC,co_64bdcd9b0226,Common Equity,Environmental Services,,,N/A,,,576276,24058,25099,,,,,,OBDC,2025-08-06
-Fifth Season Investments LLC,co_def227b37a0e,Common Equity,Insurance,,,N/A,,,36,344398,374484,,,,,,OBDC,2025-08-06
-Blue Owl Credit SLF LLC,co_ab0770c3b45c,Partnership Interest,Investment Vehicles,,,N/A,,,392667,392671,389941,,,,,,OBDC,2025-08-06
-Charter Communications Operating LLC,co_d09b21eaaffd,First Lien,Telecommunications,,,SOFR,2.25%,,2031-12-01,8000,7980,7977,0.023,,,,OBDC,2025-08-06
-Eagle Broadband Investments LLC,co_560fed7656cc,First Lien,Telecommunications,,,SOFR,2.75%,,2027-11-01,1995,1990,1996,0.006,,,,OBDC,2025-08-06
-AIT Worldwide Logistics Holdings Inc,co_55e3e23bb530,First Lien,Transportation & Logistics,,,SOFR,4.75%,,2030-04-01,8000,7976,8048,0.023,,,,OBDC,2025-08-06
-Wingspire Capital Holdings LLC,co_aada59bbe464,,,,,,,,,,,13.8,,,,,OBDC,2025-08-06
-Blue Owl Credit SLF LLC,co_ab0770c3b45c,,,,,,,,,,,8.9,,,,,OBDC,2025-08-06
-AAM Series 1.1 Rail and Domestic Intermodal Feeder LLC / AAM Series 2.1 Aviation Feeder LLC,co_8df89f64b3d5,,,,,,,,,,,8.8,,,,,OBDC,2025-08-06
-Inovalon Holdings Inc,co_b1163ca4a88a,,,,,,,,,,,-7.0,,,,,OBDC,2025-08-06
-Ideal Image Development LLC,co_c4add3c7e598,,,,,,,,,,,-13.3,,,,,OBDC,2025-08-06
-Notorious Topco LLC (dba Beauty Industry Group),co_2658189c9d33,,,,,,,,,,, -26.1,,,,,OBDC,2025-08-06
-Conair Holdings LLC,co_ab523adba5c4,,,,,,,,,,,-26.3,,,,,OBDC,2025-08-06
-Trucordia Insurance Holdings LLC,co_a5dbae638138,,,,,,,,,,,-36.8,,,,,OBDC,2025-08-06
-National Dentex Labs LLC (fka Barracuda Dental LLC),co_eaf2f5996ff7,,,,,,,,,,, -40.5,,,,,OBDC,2025-08-06
-CIBT Global,co_74cc58cb290f,,,,,,,,,,,27.1,,,,,OBDC,2025-08-06
-AAM Series 1.1 Rail and Domestic Intermodal Feeder / AAM Series 2.1 Aviation Feeder,co_24c7dba6c9b9,,,,,,,,,,,19.8,,,,,OBDC,2025-08-06
-Tall Tree Foods,co_48a33f87affd,,,,,,,,,,,15.6,,,,,OBDC,2025-08-06
-Cornerstone OnDemand,co_bcce6a221f68,,,,,,,,,,,15.0,,,,,OBDC,2025-08-06
-Ideal Image Development,co_c4add3c7e598,,,,,,,,,,,-14.2,,,,,OBDC,2025-08-06
-Trucordia Insurance Holdings,co_a5dbae638138,,,,,,,,,,,-30.8,,,,,OBDC,2025-08-06
-Conair Holdings,co_ab523adba5c4,,,,,,,,,,,-32.2,,,,,OBDC,2025-08-06
-Notorious Topco (dba Beauty Industry Group),co_2658189c9d33,,,,,,,,,,,-37.8,,,,,OBDC,2025-08-06
-National Dentex Labs (fka Barracuda Dental LLC),co_eaf2f5996ff7,,,,,,,,,,,-49.8,,,,,OBDC,2025-08-06
-PS Op Holdings LLC,co_586dbbd4b270,Common Equity,Business Services,,,N/A,,,248271,4300,,,,,,,OBDC,2025-08-06
-Walker Edison Holdco LLC,co_d3adac55d14b,Common Equity,Consumer Products,,,N/A,,,318823,23762,,,,,,,OBDC,2025-08-06
+company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
+IRI Group Holdings Inc.,co_fd72761785f4,First Lien,Transportation & Logistics,,,SOFR,4.5%,,,,39268,38917,39268,,38917,,,,,,OBDC,2025-08-06
+Monotype Imaging Holdings Inc.,co_f26421f2c9f8,First Lien,Media & Entertainment,,,SOFR,5.5%,,,,152465,150928,152465,,150928,,,,,,OBDC,2025-08-06
+Applied Composites Holdings LLC,co_7e78e1d73b6f,First Lien,,,5.97%,SOFR,0.53%,,,,41432,30290,22788,,30290,,,,,,OBDC,2025-08-06
+Peraton Corp.,co_26028249ab33,Second Lien,Aerospace & Defense,,,SOFR,7.75%,,,,60393,57255,41973,,57255,,,,,,OBDC,2025-08-06
+STS PARENT LLC,co_e3b9a8c94c34,First Lien,,,,SOFR,5%,,,,115002,114037,114427,,114037,,,,,,OBDC,2025-08-06
+STS PARENT LLC,co_e3b9a8c94c34,Revolver,,,,SOFR,5%,,,,8487,8402,8423,,8402,,,,,,OBDC,2025-08-06
+Hg Genesis 8 Sumoco Ltd.,co_513ef062b958,Unsecured Debt,,,7.5%,,,,,,13858,17410,18990,,17410,,,,,,OBDC,2025-08-06
+Hg Genesis 9 SumoCo Ltd.,co_513ef062b958,Unsecured Debt,,,6.25%,,,,,,51053,53981,59929,,53981,,,,,,OBDC,2025-08-06
+Hg Saturn Luchaco Ltd.,co_4e8e0af53d43,Unsecured Debt,,,8.25%,,,,,,51254,64682,70236,,64682,,,,,,OBDC,2025-08-06
+Spotless Brands LLC,co_9e457409bbbe,First Lien,Consumer & Retail,,,SOFR,5.75%,,,,94535,93068,94535,,93068,,,,,,OBDC,2025-08-06
+Spotless Brands LLC,co_9e457409bbbe,Revolver,Consumer & Retail,,,SOFR,5.75%,,,,1566,1550,1566,,1550,,,,,,OBDC,2025-08-06
+Associations Finance Inc.,co_dca322d4aace,Unsecured Debt,Financial Services,,14.25%,,,,,,188863,187314,188863,,187314,,,,,,OBDC,2025-08-06
+Associations Inc.,co_137d8a36cf25,Delayed Draw,Real Estate,,,SOFR,6.5%,,,,468670,466598,468670,,466598,,,,,,OBDC,2025-08-06
+Aurelia Netherlands B.V.,co_d4149d34a701,First Lien,,,,SOFR,4.75%,,,,64136,72487,75286,,72487,,,,,,OBDC,2025-08-06
+CMG HoldCo LLC,co_943cc587e1a3,Delayed Draw,Transportation & Logistics,,,SOFR,4.75%,,,,1437,1410,1420,,1410,,,,,,OBDC,2025-08-06
+CoolSys Inc.,co_8ee5ba76d023,First Lien,,,,SOFR,4.75%,,,,11862,11659,9764,,11659,,,,,,OBDC,2025-08-06
+Denali BuyerCo LLC,co_b4d1bf8b4846,First Lien,,,,SOFR,5.25%,,,,144102,142215,144102,,142215,,,,,,OBDC,2025-08-06
+Diamondback Acquisition Inc.,co_6b8b7ffe7d77,First Lien,Healthcare,,,SOFR,5.5%,,,,50154,49104,50154,,49104,,,,,,OBDC,2025-08-06
+DuraServ LLC,co_48a0379877f9,First Lien,Business Services,,,SOFR,4.75%,,,,132071,130873,131411,,130873,,,,,,OBDC,2025-08-06
+Fullsteam Operations LLC,co_e7812d309db0,First Lien,Financial Services,,,SOFR,8.25%,,,,18158,17744,18158,,17744,,,,,,OBDC,2025-08-06
+Fullsteam Operations LLC,co_e7812d309db0,Delayed Draw,Financial Services,,,SOFR,7%,,,,5946,5856,5946,,5856,,,,,,OBDC,2025-08-06
+Gainsight Inc.,co_d13b62978cbd,First Lien,Software & Technology,,,SOFR,5.75%,,,,32919,32669,32919,,32669,,,,,,OBDC,2025-08-06
+Hercules Borrower LLC,co_34d8b7ece1a7,First Lien,Business Services,,,SOFR,5.5%,,,,210534,209960,210534,,209960,,,,,,OBDC,2025-08-06
+Hercules Buyer LLC,co_0c1858a56d4d,Unsecured Debt,,,0.48%,,,,,,6280,6468,7673,,6468,,,,,,OBDC,2025-08-06
+KPSKY Acquisition Inc.,co_c28869bd420a,First Lien,Business Services,,,SOFR,5.5%,,,,43322,39796,41156,,39796,,,,,,OBDC,2025-08-06
+KPSKY Acquisition Inc.,co_c28869bd420a,Delayed Draw,Business Services,,,SOFR,5.75%,,,,31,-108,-62,,-108,,,,,,OBDC,2025-08-06
+Ping Identity Holding Corp.,co_ffac9ca8d93d,First Lien,Software & Technology,,,SOFR,4.75%,,,,902,900,902,,900,,,,,,OBDC,2025-08-06
+Pye-Barker Fire & Safety LLC,co_21eb6c7d75fe,First Lien,Business Services,,,SOFR,4.5%,,,,169837,168548,169412,,168548,,,,,,OBDC,2025-08-06
+Pye-Barker Fire & Safety LLC,co_21eb6c7d75fe,Revolver,Business Services,,,SOFR,4.5%,,,,2918,2821,2860,,2821,,,,,,OBDC,2025-08-06
+Advancion Holdings LLC,co_a1074940b44c,Second Lien,,,,SOFR,7.75%,,,,16500,16158,15428,,16158,,,,,,OBDC,2025-08-06
+DCG ACQUISITION CORP.,co_da9ff4a8b969,First Lien,Chemicals & Materials,,,SOFR,4.5%,,,,72764,71877,72400,,71877,,,,,,OBDC,2025-08-06
+DCG ACQUISITION CORP.,co_da9ff4a8b969,Delayed Draw,Chemicals & Materials,,,SOFR,4.5%,,,,7301,7226,7264,,7226,,,,,,OBDC,2025-08-06
+Gaylord Chemical Company LLC.,co_cbb1f480306c,First Lien,Chemicals & Materials,,,SOFR,5.5%,,,,190071,188774,190071,,188774,,,,,,OBDC,2025-08-06
+Rocket BidCo Inc.,co_f185f18aa846,First Lien,,,,SOFR,5.75%,,,,258203,253050,258203,,253050,,,,,,OBDC,2025-08-06
+Velocity HoldCo III Inc.,co_ea3003730165,First Lien,,,,SOFR,5.5%,,,,27321,27053,27321,,27053,,,,,,OBDC,2025-08-06
+Conair Holdings LLC,co_ab523adba5c4,First Lien,,,,SOFR,3.75%,,,,12474,11255,9065,,11255,,,,,,OBDC,2025-08-06
+Conair Holdings LLC,co_ab523adba5c4,Second Lien,,,,SOFR,7.5%,,,,161616,158442,120808,,158442,,,,,,OBDC,2025-08-06
+Feradyne Outdoors LLC,co_9d768b79aa57,First Lien,,,3.71%,SOFR,3.04%,,,,77465,77465,63521,,77465,,,,,,OBDC,2025-08-06
+Foundation Consumer Brands LLC,co_728c748c1c4e,First Lien,Consumer & Retail,,,SOFR,5%,,,,53974,53401,53704,,53401,,,,,,OBDC,2025-08-06
+Lignetics Investment Corp.,co_0aa933af7b7e,First Lien,Financial Services,,,SOFR,5.5%,,,,103094,101688,102577,,101688,,,,,,OBDC,2025-08-06
+Lignetics Investment Corp.,co_0aa933af7b7e,Revolver,Financial Services,,,SOFR,5.5%,,,,11118,10990,11056,,10990,,,,,,OBDC,2025-08-06
+SWK BUYER Inc.,co_54ff1985427c,First Lien,,,,SOFR,5.25%,,,,1464,1422,1442,,1422,,,,,,OBDC,2025-08-06
+SWK BUYER Inc.,co_54ff1985427c,Revolver,,,,SOFR,5.25%,,,,42,40,40,,40,,,,,,OBDC,2025-08-06
+WU Holdco Inc.,co_df30f5e5b04a,First Lien,Consumer & Retail,,,SOFR,4.75%,,,,93827,93598,93592,,93598,,,,,,OBDC,2025-08-06
+Arctic Holdco LLC,co_6a2352a42aaf,First Lien,,,,SOFR,5.25%,,,,101880,101451,101371,,101451,,,,,,OBDC,2025-08-06
+Arctic Holdco LLC,co_6a2352a42aaf,Revolver,,,,SOFR,5.25%,,,,2608,2575,2572,,2575,,,,,,OBDC,2025-08-06
+Ascend Buyer LLC,co_0598d0d465de,First Lien,Containers & Packaging,,,SOFR,5.75%,,,,71465,70317,71465,,70317,,,,,,OBDC,2025-08-06
+Fortis Solutions Group LLC,co_b6fefea7ff47,First Lien,Containers & Packaging,,,SOFR,5.5%,,,,35283,34289,34577,,34289,,,,,,OBDC,2025-08-06
+Fortis Solutions Group LLC,co_b6fefea7ff47,Revolver,Containers & Packaging,,,SOFR,5.5%,,,,903,843,830,,843,,,,,,OBDC,2025-08-06
+Indigo Buyer Inc.,co_849cfa9b49a7,First Lien,,,,SOFR,5.25%,,,,9230,9105,9230,,9105,,,,,,OBDC,2025-08-06
+Pregis Topco LLC,co_20a880974210,Second Lien,,,,SOFR,7.75%,,,,28167,27829,28167,,27829,,,,,,OBDC,2025-08-06
+Pregis Topco LLC,co_20a880974210,Second Lien,,,,SOFR,6.75%,,,,164333,162481,164333,,162481,,,,,,OBDC,2025-08-06
+ABB/Con-cise Optical Group LLC,co_29a51cd7e4e1,First Lien,,,,SOFR,7.5%,,,,64629,64100,63659,,64100,,,,,,OBDC,2025-08-06
+BradyPLUS Holdings LLC,co_09f185cef19d,First Lien,Distribution & Wholesale,,,SOFR,5%,,,,206111,203897,206111,,203897,,,,,,OBDC,2025-08-06
+Endries Acquisition Inc.,co_92f3e9eeeafb,First Lien,,,,SOFR,5.5%,,,,129349,128229,127732,,128229,,,,,,OBDC,2025-08-06
+Offen Inc.,co_0dcb3071a7a3,First Lien,Energy,,,SOFR,5%,,,,18562,18533,18562,,18533,,,,,,OBDC,2025-08-06
+Severin Acquisition LLC,co_976ff5d96df9,First Lien,Consumer & Retail,,2.25%,SOFR,2.75%,,,,1555,1526,1534,,1526,,,,,,OBDC,2025-08-06
+Severin Acquisition LLC,co_976ff5d96df9,Revolver,Consumer & Retail,,,SOFR,4.75%,,,,82,80,80,,80,,,,,,OBDC,2025-08-06
+Dresser Utility Solutions LLC,co_c08a6b2357a8,First Lien,Energy,,,SOFR,5.25%,,,,80337,79485,80337,,79485,,,,,,OBDC,2025-08-06
+Baker Tilly Advisory Group LP,co_b5682a7e1aa9,First Lien,Financial Services,,,SOFR,4.75%,,,,87722,86393,87722,,86393,,,,,,OBDC,2025-08-06
+CCM Midco LLC,co_d7a06e6e9e4a,First Lien,,,,SOFR,5%,,,,25142,24841,25142,,24841,,,,,,OBDC,2025-08-06
+Continental Finance Company LLC,co_d5466111a4ae,First Lien,Financial Services,,,SOFR,8%,,,,7500,7430,7425,,7430,,,,,,OBDC,2025-08-06
+Deerfield Dakota Holdings,co_60cb815f795d,Second Lien,,,,SOFR,6.75%,,,,8000,7552,7620,,7552,,,,,,OBDC,2025-08-06
+Finastra USA Inc.,co_9e07ea95e408,First Lien,Financial Services,,,SOFR,7.25%,,,,99995,99078,99995,,99078,,,,,,OBDC,2025-08-06
+Finastra USA Inc.,co_9e07ea95e408,Revolver,Financial Services,,,SOFR,7.25%,,,,2085,1981,2085,,1981,,,,,,OBDC,2025-08-06
+Klarna Holding AB,co_38c5daf8129f,Subordinated Debt,,,,SOFR,7%,,,,1000,1000,1000,,1000,,,,,,OBDC,2025-08-06
+KRIV Acquisition Inc.,co_1cedb2e8668c,First Lien,Business Services,,,SOFR,5.75%,,,,8163,7978,8163,,7978,,,,,,OBDC,2025-08-06
+Minotaur Acquisition Inc.,co_6830d716e83b,First Lien,Financial Services,,,SOFR,5%,,,,224904,222087,224904,,222087,,,,,,OBDC,2025-08-06
+NMI Acquisitionco Inc.,co_ea8330f4ea6d,First Lien,Software & Technology,,,SOFR,5%,,,,47927,47701,47927,,47701,,,,,,OBDC,2025-08-06
+Smarsh Inc.,co_d80561116050,First Lien,Software & Technology,,,SOFR,4.75%,,,,2074,2052,2068,,2052,,,,,,OBDC,2025-08-06
+Balrog Acquisition Inc.,co_b294ed3a1ed4,Second Lien,Consumer & Retail,,,SOFR,7%,,,,28000,27777,27440,,27777,,,,,,OBDC,2025-08-06
+Blast Bidco Inc.,co_a35b96797289,First Lien,Food & Beverage,,,SOFR,6%,,,,37584,36833,37584,,36833,,,,,,OBDC,2025-08-06
+BP Veraison Buyer LLC,co_2846b9d44ad0,First Lien,,,,SOFR,5.25%,,,,138068,136662,138068,,136662,,,,,,OBDC,2025-08-06
+Eagle Family Foods Group LLC,co_21446b11f56b,First Lien,Food & Beverage,,,SOFR,5%,,,,2592,2556,2592,,2556,,,,,,OBDC,2025-08-06
+Gehl Foods LLC,co_97bbfe07936b,Delayed Draw,Food & Beverage,,,SOFR,6.25%,,,,98014,96810,98014,,96810,,,,,,OBDC,2025-08-06
+Hissho Parent LLC,co_131e1ba75cd1,First Lien,,,,SOFR,4.5%,,,,13981,13846,13981,,13846,,,,,,OBDC,2025-08-06
+Innovation Ventures HoldCo LLC,co_abf90b93cda7,First Lien,,,,SOFR,6.25%,,,,100559,99314,99052,,99314,,,,,,OBDC,2025-08-06
+KBP Brands LLC,co_c7f5535be0d3,First Lien,,,,SOFR,5.5%,,,,1083,1049,1064,,1049,,,,,,OBDC,2025-08-06
+Ole Smoky Distillery LLC,co_fcb9f7627f58,First Lien,,,,SOFR,5.5%,,,,855,846,849,,846,,,,,,OBDC,2025-08-06
+Rushmore Investment III LLC,co_b6d23c3d473e,First Lien,Financial Services,,,SOFR,5%,,,,359102,355181,359102,,355181,,,,,,OBDC,2025-08-06
+Sara Lee Frozen Bakery LLC,co_265073dc3aff,First Lien,Food & Beverage,,,SOFR,4.75%,,,,51595,51540,51172,,51540,,,,,,OBDC,2025-08-06
+The Better Being Co. LLC,co_fd4b8e1de0fa,First Lien,,,,SOFR,6.75%,,,,215685,214846,216764,,214846,,,,,,OBDC,2025-08-06
+Vital Bidco AB,co_c5fe41d90b67,First Lien,,,,SOFR,4.5%,,,,61885,60814,61885,,60814,,,,,,OBDC,2025-08-06
+Bamboo US BidCo LLC,co_dbf0b9b0665e,First Lien,Healthcare,,,SOFR,5.25%,,,,8777,8717,8777,,8717,,,,,,OBDC,2025-08-06
+Bamboo US BidCo LLC,co_dbf0b9b0665e,First Lien,Healthcare,,,SOFR,5.25%,,,,4685,4857,5499,,4857,,,,,,OBDC,2025-08-06
+Cadence Inc.,co_c23b682621f6,First Lien,,,,SOFR,5%,,,,31752,31101,30781,,31101,,,,,,OBDC,2025-08-06
+Cambrex Corp.,co_b45ed2d2387f,First Lien,Healthcare,,,SOFR,4.75%,,,,781,774,779,,774,,,,,,OBDC,2025-08-06
+Creek Parent Inc.,co_bc107cba8cfa,First Lien,Healthcare,,,SOFR,5.25%,,,,113939,111537,113939,,111537,,,,,,OBDC,2025-08-06
+CSC MKG Topco LLC,co_3094b0b68026,First Lien,,,,SOFR,5.5%,,,,4981,4867,4955,,4867,,,,,,OBDC,2025-08-06
+Nelipak Holding Company,co_394a228b7181,First Lien,,,,SOFR,5.5%,,,,25927,25440,25408,,25440,,,,,,OBDC,2025-08-06
+Nelipak Holding Company,co_394a228b7181,Revolver,,,,SOFR,5.5%,,,,4451,4334,4300,,4334,,,,,,OBDC,2025-08-06
+NELIPAK EUROPEAN HOLDINGS COÖPERATIEF U.A.,co_cf16f2414dab,First Lien,,,,SOFR,5.5%,,,,47477,49812,54616,,49812,,,,,,OBDC,2025-08-06
+NELIPAK EUROPEAN HOLDINGS COÖPERATIEF U.A.,co_cf16f2414dab,Revolver,,,,SOFR,5.5%,,,,227,171,478,,171,,,,,,OBDC,2025-08-06
+Packaging Coordinators Midco Inc.,co_983b31baad9b,First Lien,Containers & Packaging,,,SOFR,4.75%,,,,150246,148276,148368,,148276,,,,,,OBDC,2025-08-06
+Patriot Acquisition TopCo S.A.R.L,co_2cafb2e9570e,First Lien,Healthcare,,,SOFR,4.75%,,,,158793,157338,158359,,157338,,,,,,OBDC,2025-08-06
+PerkinElmer U.S. LLC,co_e640a006f804,First Lien,Software & Technology,,,SOFR,4.75%,,,,23080,23037,22850,,23037,,,,,,OBDC,2025-08-06
+Rhea Parent Inc.,co_05133dffb98f,First Lien,,,,SOFR,4.75%,,,,40875,40449,40773,,40449,,,,,,OBDC,2025-08-06
+TBRS Inc.,co_473fc06769ed,First Lien,Healthcare,,,SOFR,4.75%,,,,40584,40202,40382,,40202,,,,,,OBDC,2025-08-06
+TBRS Inc.,co_473fc06769ed,Revolver,Healthcare,,,SOFR,4.75%,,,,346,316,318,,316,,,,,,OBDC,2025-08-06
+Allied Benefit Systems Intermediate LLC,co_de9489c8f271,First Lien,Media & Entertainment,,,SOFR,5.25%,,,,5844,5741,5844,,5741,,,,,,OBDC,2025-08-06
+Allied Benefit Systems Intermediate LLC,co_de9489c8f271,Delayed Draw,Media & Entertainment,,,SOFR,5.25%,,,,1072,1053,1072,,1053,,,,,,OBDC,2025-08-06
+Belmont Buyer Inc.,co_c522a6225872,First Lien,,,,SOFR,6.5%,,,,4710,4627,4710,,4627,,,,,,OBDC,2025-08-06
+Belmont Buyer Inc.,co_c522a6225872,First Lien,,,,SOFR,5.25%,,,,2809,2740,2788,,2740,,,,,,OBDC,2025-08-06
+Commander Buyer Inc.,co_626638bbd9e1,First Lien,Healthcare,,,SOFR,4.75%,,,,56242,55936,55936,,55936,,,,,,OBDC,2025-08-06
+Confluent Health LLC,co_1be8075916c7,First Lien,Healthcare,,,SOFR,5%,,,,4938,4796,4752,,4796,,,,,,OBDC,2025-08-06
+Covetrus Inc.,co_9f66fd6ca3fb,Second Lien,Healthcare,,,SOFR,9.25%,,,,30000,28822,28350,,28822,,,,,,OBDC,2025-08-06
+Engage Debtco Ltd.,co_26e32df0ecec,First Lien,,,2.75%,SOFR,3.33%,,,,1583,1539,1515,,1539,,,,,,OBDC,2025-08-06
+Engage Debtco Ltd.,co_26e32df0ecec,Delayed Draw,,,2.54%,SOFR,3.18%,,,,514,500,492,,500,,,,,,OBDC,2025-08-06
+EresearchTechnology Inc.,co_dd62a2f8e8e3,First Lien,Software & Technology,,,SOFR,4.75%,,,,102565,101523,101470,,101523,,,,,,OBDC,2025-08-06
+Ex Vivo Parent Inc.,co_329dd080acd3,First Lien,,,9.85%,,,,,,124465,123093,124465,,123093,,,,,,OBDC,2025-08-06
+KABAFUSION Parent LLC,co_3703356a8b85,First Lien,,,,SOFR,5%,,,,31033,30578,30878,,30578,,,,,,OBDC,2025-08-06
+KABAFUSION Parent LLC,co_3703356a8b85,First Lien,,,,SOFR,5%,,,,17824,17646,17735,,17646,,,,,,OBDC,2025-08-06
+KWOL Acquisition Inc.,co_9c4340b9e9d3,First Lien,Healthcare,,,SOFR,4.75%,,,,77745,76556,77745,,76556,,,,,,OBDC,2025-08-06
+Lakefield Acquisition Corp.,co_b7961d48e0f1,First Lien,,,,SOFR,4%,,,,617,615,615,,615,,,,,,OBDC,2025-08-06
+Maple Acquisition LLC,co_4c18c235d68a,First Lien,,,,SOFR,5%,,,,80593,79818,80593,,79818,,,,,,OBDC,2025-08-06
+National Dentex Labs LLC,co_eaf2f5996ff7,First Lien,Automotive,,12%,,,,,,145902,140011,68516,,140011,,,,,,OBDC,2025-08-06
+National Dentex Labs LLC,co_eaf2f5996ff7,Delayed Draw,Automotive,,12%,,,,,,20342,14248,9561,,14248,,,,,,OBDC,2025-08-06
+Natural Partners LLC,co_9cc62665375d,First Lien,,,,SOFR,4.5%,,,,7698,7587,7660,,7587,,,,,,OBDC,2025-08-06
+OB Hospitalist Group Inc.,co_b62366c812bf,First Lien,Healthcare,,,SOFR,5.25%,,,,165387,163228,165387,,163228,,,,,,OBDC,2025-08-06
+Pacific BidCo Inc.,co_dc98d60044e2,First Lien,,,1.88%,SOFR,4.12%,,,,44138,43178,43586,,43178,,,,,,OBDC,2025-08-06
+Pacific BidCo Inc.,co_dc98d60044e2,Delayed Draw,,,,SOFR,5.75%,,,,4581,4476,4524,,4476,,,,,,OBDC,2025-08-06
+PetVet Care Centers LLC,co_3b17b733d7e8,First Lien,Consumer & Retail,,,SOFR,6%,,,,131674,129347,124432,,129347,,,,,,OBDC,2025-08-06
+Physician Partners LLC,co_a62d28eb6afa,First Lien,Healthcare,,,SOFR,6%,,,,11430,10825,10344,,10825,,,,,,OBDC,2025-08-06
+Physician Partners LLC,co_a62d28eb6afa,First Lien,Healthcare,,2.5%,SOFR,1.5%,,,,6432,4032,3184,,4032,,,,,,OBDC,2025-08-06
+Plasma Buyer LLC,co_a2b63c1eab84,First Lien,Healthcare,,,SOFR,5.75%,,,,1324,1296,1281,,1296,,,,,,OBDC,2025-08-06
+Plasma Buyer LLC,co_a2b63c1eab84,Delayed Draw,Healthcare,,,SOFR,6.25%,,,,50,49,48,,49,,,,,,OBDC,2025-08-06
+Plasma Buyer LLC,co_a2b63c1eab84,Revolver,Healthcare,,,SOFR,5.75%,,,,151,148,146,,148,,,,,,OBDC,2025-08-06
+PPV Intermediate Holdings LLC,co_56235911ea0a,First Lien,Media & Entertainment,,,SOFR,5.75%,,,,28630,28119,28630,,28119,,,,,,OBDC,2025-08-06
+PPV Intermediate Holdings LLC,co_56235911ea0a,Delayed Draw,Media & Entertainment,,,SOFR,6%,,,,1768,1738,1768,,1738,,,,,,OBDC,2025-08-06
+Premier Imaging LLC,co_e6316cbc7286,First Lien,Healthcare,,3.66%,SOFR,2.34%,,,,48838,48789,46396,,48789,,,,,,OBDC,2025-08-06
+Premise Health Holding Corp.,co_a4dc6f3e051b,First Lien,Healthcare,,,SOFR,5.25%,,,,62207,61287,62207,,61287,,,,,,OBDC,2025-08-06
+Premise Health Holding Corp.,co_a4dc6f3e051b,Revolver,Healthcare,,,SOFR,5.25%,,,,487,419,487,,419,,,,,,OBDC,2025-08-06
+Quva Pharma Inc.,co_02f9443a520a,First Lien,Healthcare,,,SOFR,5.5%,,,,66975,65829,66305,,65829,,,,,,OBDC,2025-08-06
+Quva Pharma Inc.,co_02f9443a520a,First Lien,Healthcare,,,SOFR,5.5%,,,,15520,15298,15364,,15298,,,,,,OBDC,2025-08-06
+SimonMed Inc.,co_6c8ab48e6d63,First Lien,,,,SOFR,4.75%,,,,800,797,796,,797,,,,,,OBDC,2025-08-06
+SimonMed Inc.,co_6c8ab48e6d63,Revolver,,,,SOFR,4.75%,,,,24,24,24,,24,,,,,,OBDC,2025-08-06
+Soleo Holdings Inc.,co_6905abcf3b8a,First Lien,,,,SOFR,4.5%,,,,60992,60701,60992,,60701,,,,,,OBDC,2025-08-06
+Tivity Health Inc.,co_2c0a41552dd9,First Lien,Healthcare,,,SOFR,5%,,,,982,973,982,,973,,,,,,OBDC,2025-08-06
+Unified Women's Healthcare LP,co_53bd45f77e3d,First Lien,Healthcare,,,SOFR,5.5%,,,,1776,1756,1776,,1756,,,,,,OBDC,2025-08-06
+Unified Women's Healthcare LP,co_53bd45f77e3d,First Lien,Healthcare,,,SOFR,5.5%,,,,39436,39021,39436,,39021,,,,,,OBDC,2025-08-06
+Unified Women's Healthcare LP,co_53bd45f77e3d,Delayed Draw,Healthcare,,,SOFR,5.25%,,,,17227,17053,17227,,17053,,,,,,OBDC,2025-08-06
+Valeris Inc.,co_76d06e8f291f,First Lien,,,,SOFR,5%,,,,42344,41738,42238,,41738,,,,,,OBDC,2025-08-06
+Vermont Aus Pty Ltd.,co_094e013192e9,First Lien,Consumer & Retail,,,SOFR,5.75%,,,,2582,1654,1683,,1654,,,,,,OBDC,2025-08-06
+BCPE Osprey Buyer Inc.,co_eab80bf782f1,First Lien,Healthcare,,,SOFR,5.75%,,,,162469,160052,160845,,160052,,,,,,OBDC,2025-08-06
+BCPE Osprey Buyer Inc.,co_eab80bf782f1,Delayed Draw,Healthcare,,,SOFR,5.75%,,,,31721,31057,31404,,31057,,,,,,OBDC,2025-08-06
+BCPE Osprey Buyer Inc.,co_eab80bf782f1,Revolver,Healthcare,,,SOFR,5.75%,,,,8750,8602,8575,,8602,,,,,,OBDC,2025-08-06
+CT Technologies Intermediate Holdings Inc.,co_96d3a326e0e1,First Lien,Media & Entertainment,,,SOFR,5%,,,,88826,87663,88826,,87663,,,,,,OBDC,2025-08-06
+GI Ranger Intermediate LLC,co_c4f3a0385bef,First Lien,Media & Entertainment,,,SOFR,5.75%,,,,24760,24044,24265,,24044,,,,,,OBDC,2025-08-06
+Indikami Bidco LLC,co_74de3267a4a2,First Lien,,,2.5%,SOFR,4%,,,,21563,21144,21347,,21144,,,,,,OBDC,2025-08-06
+Indikami Bidco LLC,co_74de3267a4a2,Delayed Draw,,,,SOFR,6%,,,,334,315,331,,315,,,,,,OBDC,2025-08-06
+Indikami Bidco LLC,co_74de3267a4a2,Revolver,,,,SOFR,6%,,,,1586,1554,1565,,1554,,,,,,OBDC,2025-08-06
+Inovalon Holdings Inc.,co_b1163ca4a88a,First Lien,Software & Technology,,2.75%,SOFR,3%,,,,151222,151008,151222,,151008,,,,,,OBDC,2025-08-06
+Inovalon Holdings Inc.,co_b1163ca4a88a,Second Lien,Software & Technology,,8.5%,,,,,,59298,59298,59298,,59298,,,,,,OBDC,2025-08-06
+Intelerad Medical Systems Inc.,co_b56720645d0a,First Lien,Healthcare,,,SOFR,6.5%,,,,169488,167621,166098,,167621,,,,,,OBDC,2025-08-06
+Interoperability Bidco Inc.,co_031bfc51b4b1,First Lien,,,,SOFR,5.75%,,,,72592,72243,71231,,72243,,,,,,OBDC,2025-08-06
+Modernizing Medicine Inc.,co_b5121a0568e2,First Lien,Healthcare,,2.75%,SOFR,2.5%,,,,763,755,755,,755,,,,,,OBDC,2025-08-06
+RL Datix Holdings (USA) Inc.,co_7d2226652712,First Lien,,,,SOFR,5.25%,,,,56403,55714,56121,,55714,,,,,,OBDC,2025-08-06
+RL Datix Holdings (USA) Inc.,co_7d2226652712,First Lien,,,,SOFR,5.25%,,,,26120,32066,35614,,32066,,,,,,OBDC,2025-08-06
+RL Datix Holdings (USA) Inc.,co_7d2226652712,Revolver,,,,SOFR,5.25%,,,,2448,2361,2392,,2361,,,,,,OBDC,2025-08-06
+Salinger Bidco Inc.,co_5496a7871bb7,First Lien,,,,SOFR,5.75%,,,,41293,40657,41293,,40657,,,,,,OBDC,2025-08-06
+Salinger Bidco Inc.,co_5496a7871bb7,Revolver,,,,SOFR,5.75%,,,,799,758,799,,758,,,,,,OBDC,2025-08-06
+HGH Purchaser Inc.,co_1221d99fd14e,First Lien,Consumer & Retail,,2.5%,SOFR,4.5%,,,,196588,196259,181038,,196259,,,,,,OBDC,2025-08-06
+Mario Midco Holdings Inc.,co_d4ab458f0416,Unsecured Debt,,,10.75%,,,,,,8519,8310,8221,,8310,,,,,,OBDC,2025-08-06
+Mario Purchaser LLC,co_b717c9ab9fee,First Lien,Consumer & Retail,,,SOFR,5.75%,,,,27915,27333,27148,,27333,,,,,,OBDC,2025-08-06
+Mario Purchaser LLC,co_b717c9ab9fee,Revolver,Consumer & Retail,,,SOFR,5.75%,,,,322,294,269,,294,,,,,,OBDC,2025-08-06
+SimpliSafe Holding Corp.,co_eda7a822387d,First Lien,,,,SOFR,6.25%,,,,9000,8887,9000,,8887,,,,,,OBDC,2025-08-06
+Cornerstone OnDemand Inc.,co_bcce6a221f68,Second Lien,Software & Technology,,,SOFR,6.5%,,,,160417,153240,147583,,153240,,,,,,OBDC,2025-08-06
+IG Investments Holdings LLC,co_06c540faeacf,First Lien,Financial Services,,,SOFR,5%,,,,117731,116547,117731,,116547,,,,,,OBDC,2025-08-06
+AWP Group Holdings Inc.,co_a6728579700c,First Lien,Energy,,,SOFR,4.75%,,,,959,932,949,,932,,,,,,OBDC,2025-08-06
+CHA Vision Holdings Inc.,co_fc7222ba12bf,First Lien,Business Services,,,SOFR,5%,,,,45606,45040,45606,,45040,,,,,,OBDC,2025-08-06
+GI Apple Midco LLC,co_866fb0366441,First Lien,,,,SOFR,6.75%,,,,932,920,922,,920,,,,,,OBDC,2025-08-06
+GI Apple Midco LLC,co_866fb0366441,Revolver,,,,SOFR,6.75%,,,,2,1,1,,1,,,,,,OBDC,2025-08-06
+KENE Acquisition Inc.,co_4e96058b3e6e,First Lien,Energy,,,SOFR,5.25%,,,,18412,17973,18366,,17973,,,,,,OBDC,2025-08-06
+LineStar Integrity Services LLC,co_31dc77a737bd,First Lien,Business Services,,,SOFR,7.25%,,,,71375,69939,72447,,69939,,,,,,OBDC,2025-08-06
+Tamarack Intermediate LLC.,co_80a67a17c23e,First Lien,Media & Entertainment,,,SOFR,5.75%,,,,313,308,313,,308,,,,,,OBDC,2025-08-06
+Tamarack Intermediate LLC.,co_80a67a17c23e,First Lien,Media & Entertainment,,,SOFR,5.75%,,,,1534,1509,1534,,1509,,,,,,OBDC,2025-08-06
+Vessco Midco Holdings LLC,co_b1f16d5b1acb,First Lien,Water Utilities,,,SOFR,4.75%,,,,56150,55440,55869,,55440,,,,,,OBDC,2025-08-06
+AmeriLife Holdings LLC,co_79b70b5ba514,First Lien,Insurance,,,SOFR,4.75%,,,,11417,11170,11360,,11170,,,,,,OBDC,2025-08-06
+AmeriLife Holdings LLC,co_79b70b5ba514,Delayed Draw,Insurance,,,SOFR,4.84%,,,,1676,1652,1667,,1652,,,,,,OBDC,2025-08-06
+AmeriLife Holdings LLC,co_79b70b5ba514,Revolver,Insurance,,,SOFR,4.75%,,,,83,78,78,,78,,,,,,OBDC,2025-08-06
+Brightway Holdings LLC,co_750c32897c46,First Lien,,,,SOFR,5.75%,,,,51092,50483,51092,,50483,,,,,,OBDC,2025-08-06
+Brightway Holdings LLC,co_750c32897c46,Revolver,,,,SOFR,5.75%,,,,2529,2473,2529,,2473,,,,,,OBDC,2025-08-06
+Diamond Mezzanine 24 LLC,co_9b4f21223517,First Lien,Transportation & Logistics,,,SOFR,5%,,,,23878,23624,23878,,23624,,,,,,OBDC,2025-08-06
+Evolution BuyerCo Inc.,co_87432de05f9b,First Lien,Insurance,,,SOFR,4.75%,,,,841,833,841,,833,,,,,,OBDC,2025-08-06
+Evolution BuyerCo Inc.,co_87432de05f9b,Delayed Draw,Insurance,,,SOFR,4.75%,,,,19,17,19,,17,,,,,,OBDC,2025-08-06
+Galway Borrower LLC,co_7b729e02e51d,Delayed Draw,Insurance,,,SOFR,4.5%,,,,627,623,627,,623,,,,,,OBDC,2025-08-06
+Integrity Marketing Acquisition LLC,co_c54435bdb6e3,First Lien,Business Services,,,SOFR,5%,,,,97000,95919,97000,,95919,,,,,,OBDC,2025-08-06
+KUSRP Intermediate Inc.,co_f436ce57986a,First Lien,Media & Entertainment,,10.6%,,,,,,63260,62694,63260,,62694,,,,,,OBDC,2025-08-06
+Norvax LLC,co_41ec6f792fa1,Revolver,Insurance,,,SOFR,6.5%,,,,6198,6198,4896,,6198,,,,,,OBDC,2025-08-06
+Simplicity Financial Marketing Group Holdings Inc.,co_d10016badf9d,First Lien,Financial Services,,,SOFR,5%,,,,40880,40306,40471,,40306,,,,,,OBDC,2025-08-06
+Simplicity Financial Marketing Group Holdings Inc.,co_d10016badf9d,Delayed Draw,Financial Services,,,SOFR,5%,,,,2426,2363,2359,,2363,,,,,,OBDC,2025-08-06
+THG Acquisition LLC,co_4847ec97bf70,First Lien,Financial Services,,,SOFR,4.5%,,,,39243,38681,38808,,38681,,,,,,OBDC,2025-08-06
+THG Acquisition LLC,co_4847ec97bf70,Revolver,Financial Services,,,SOFR,4.75%,,,,323,284,280,,284,,,,,,OBDC,2025-08-06
+Trucordia Insurance Holdings LLC,co_a5dbae638138,Second Lien,Insurance,,,SOFR,5.75%,,,,150000,148505,148500,,148505,,,,,,OBDC,2025-08-06
+USRP Holdings Inc.,co_5c941651fd28,First Lien,,,,SOFR,5%,,,,52246,51819,52246,,51819,,,,,,OBDC,2025-08-06
+AI Titan Parent Inc.,co_7d34da75956f,First Lien,Industrials,,,SOFR,4.5%,,,,7547,7352,7472,,7352,,,,,,OBDC,2025-08-06
+AlphaSense Inc.,co_28219da99752,First Lien,Software & Technology,,,SOFR,6.25%,,,,707,701,701,,701,,,,,,OBDC,2025-08-06
+Anaplan Inc.,co_0f6b3874fa95,First Lien,Software & Technology,,,SOFR,4.5%,,,,54526,54526,54526,,54526,,,,,,OBDC,2025-08-06
+Aptean Acquiror Inc.,co_04664963e8ad,First Lien,,,,SOFR,4.75%,,,,19309,18933,19309,,18933,,,,,,OBDC,2025-08-06
+Armstrong Bidco Ltd.,co_3b5a181e36f7,Delayed Draw,Industrials,,,SOFR,5%,,,,2960,3584,4036,,3584,,,,,,OBDC,2025-08-06
+Artifact Bidco Inc.,co_af289816f7c2,First Lien,Software & Technology,,,SOFR,4.25%,,,,12011,11903,12011,,11903,,,,,,OBDC,2025-08-06
+Azurite Intermediate Holdings Inc.,co_17a8cda82bfc,First Lien,Media & Entertainment,,,SOFR,6%,,,,15817,15567,15817,,15567,,,,,,OBDC,2025-08-06
+Barracuda Parent LLC,co_a621582596bb,First Lien,Software & Technology,,,SOFR,4.5%,,,,12732,11947,10533,,11947,,,,,,OBDC,2025-08-06
+Bayshore Intermediate #2 LP.,co_b139437a9697,First Lien,Media & Entertainment,,3.38%,SOFR,2.88%,,,,87166,86905,87166,,86905,,,,,,OBDC,2025-08-06
+Bayshore Intermediate #2 LP.,co_b139437a9697,Revolver,Media & Entertainment,,,SOFR,5.75%,,,,886,867,886,,867,,,,,,OBDC,2025-08-06
+BCTO BSI Buyer Inc.,co_24bce18fed02,First Lien,,,,SOFR,6.5%,,,,71141,70793,71141,,70793,,,,,,OBDC,2025-08-06
+Catalis Intermediate Inc.,co_ef06ce5289fb,First Lien,Media & Entertainment,,,SOFR,5.5%,,,,23040,22499,22437,,22499,,,,,,OBDC,2025-08-06
+CivicPlus LLC,co_e4b002026922,First Lien,Software & Technology,,,SOFR,5.5%,,,,70616,70270,70440,,70270,,,,,,OBDC,2025-08-06
+Coupa Holdings LLC,co_c2ba85da2fbc,First Lien,Software & Technology,,,SOFR,5.25%,,,,1555,1541,1555,,1541,,,,,,OBDC,2025-08-06
+CP PIK DEBT ISSUER LLC,co_03276578f48e,Unsecured Debt,,,11.75%,,,,,,19781,19557,19781,,19557,,,,,,OBDC,2025-08-06
+Crewline Buyer Inc.,co_04efa4bb1c45,First Lien,Software & Technology,,,SOFR,6.75%,,,,148219,145707,146737,,145707,,,,,,OBDC,2025-08-06
+Delinea Buyer Inc.,co_99f0064fb69c,First Lien,,,,SOFR,5.75%,,,,87979,86895,87979,,86895,,,,,,OBDC,2025-08-06
+EET Buyer Inc.,co_d97520999278,First Lien,,,,SOFR,4.75%,,,,23308,22973,23308,,22973,,,,,,OBDC,2025-08-06
+Einstein Parent Inc.,co_f0ca05cabe1b,First Lien,Software & Technology,,,SOFR,6.5%,,,,43387,42944,42953,,42944,,,,,,OBDC,2025-08-06
+Forescout Technologies Inc.,co_bc596e1b6d95,First Lien,Business Services,,,SOFR,5%,,,,97217,96444,97217,,96444,,,,,,OBDC,2025-08-06
+Granicus Inc.,co_3dd58a0830d5,First Lien,Software & Technology,,2.25%,SOFR,3.5%,,,,17755,17511,17755,,17511,,,,,,OBDC,2025-08-06
+Granicus Inc.,co_3dd58a0830d5,Delayed Draw,Software & Technology,,2.25%,SOFR,3%,,,,2630,2581,2617,,2581,,,,,,OBDC,2025-08-06
+Granicus Inc.,co_3dd58a0830d5,Revolver,Software & Technology,,,SOFR,4.25%,,,,345,337,345,,337,,,,,,OBDC,2025-08-06
+GS Acquisitionco Inc.,co_da1da76723d6,First Lien,Software & Technology,,,SOFR,5.25%,,,,9558,9332,9509,,9332,,,,,,OBDC,2025-08-06
+H&F Opportunities LUX III S.À R.L,co_9004d5d572f1,First Lien,,,,SOFR,6.5%,,,,51567,51310,51567,,51310,,,,,,OBDC,2025-08-06
+Hyland Software Inc.,co_2ad98cde0e97,First Lien,Software & Technology,,,SOFR,5%,,,,66471,66471,66471,,66471,,,,,,OBDC,2025-08-06
+Icefall Parent Inc.,co_1c11431c6470,First Lien,Software & Technology,,,SOFR,5.75%,,,,33278,32717,33278,,32717,,,,,,OBDC,2025-08-06
+JS Parent Inc.,co_1b801b73223e,First Lien,Software & Technology,,,SOFR,4.75%,,,,905,901,905,,901,,,,,,OBDC,2025-08-06
+Litera Bidco LLC,co_731ca2c74045,First Lien,Consumer & Retail,,,SOFR,5%,,,,162135,161410,161730,,161410,,,,,,OBDC,2025-08-06
+MINDBODY Inc.,co_de47d452c881,First Lien,Software & Technology,,,SOFR,6%,,,,62018,61982,62018,,61982,,,,,,OBDC,2025-08-06
+Ministry Brands Holdings LLC,co_06da15200e3f,First Lien,Software & Technology,,,SOFR,5.5%,,,,11944,11664,11854,,11664,,,,,,OBDC,2025-08-06
+Ministry Brands Holdings LLC,co_06da15200e3f,Revolver,Software & Technology,,,SOFR,4.5%,,,,90,83,82,,83,,,,,,OBDC,2025-08-06
+PDI TA Holdings Inc.,co_d4e76ed2d08c,First Lien,Software & Technology,,,SOFR,5.5%,,,,41709,40866,41271,,40866,,,,,,OBDC,2025-08-06
+QAD Inc.,co_9476f72b3f59,First Lien,Software & Technology,,,SOFR,4.75%,,,,72363,71501,72363,,71501,,,,,,OBDC,2025-08-06
+Securonix Inc.,co_4e613096ec99,First Lien,,,3.75%,SOFR,4%,,,,1727,1610,1550,,1610,,,,,,OBDC,2025-08-06
+Securonix Inc.,co_4e613096ec99,Revolver,,,,SOFR,7%,,,,7,-11,-24,,-11,,,,,,OBDC,2025-08-06
+Sitecore Holding III A/S,co_5a3fe9ec27c9,First Lien,,,4%,SOFR,3.25%,,,,4432,4409,4432,,4409,,,,,,OBDC,2025-08-06
+Sitecore Holding III A/S,co_5a3fe9ec27c9,First Lien,,,4%,SOFR,3.25%,,,,25715,27011,30186,,27011,,,,,,OBDC,2025-08-06
+Sitecore USA Inc.,co_a425d98fabbd,First Lien,,,4%,SOFR,3.25%,,,,26722,26585,26722,,26585,,,,,,OBDC,2025-08-06
+Spaceship Purchaser Inc.,co_e43cd5f373b7,First Lien,Transportation & Logistics,,,SOFR,5%,,,,17398,17058,17398,,17058,,,,,,OBDC,2025-08-06
+Thunder Purchaser Inc.,co_f7f1710236ae,First Lien,Software & Technology,,,SOFR,5.5%,,,,105625,104638,105625,,104638,,,,,,OBDC,2025-08-06
+When I Work Inc.,co_fc083f553cd8,First Lien,,,,SOFR,5.5%,,,,32796,31534,31976,,31534,,,,,,OBDC,2025-08-06
+Zendesk Inc.,co_97d76b2239a5,First Lien,Software & Technology,,,SOFR,5%,,,,101825,100120,101825,,100120,,,,,,OBDC,2025-08-06
+Aerosmith Bidco 1 Ltd.,co_6423730b87c5,First Lien,,,,SOFR,5.25%,,,,208759,205759,208759,,205759,,,,,,OBDC,2025-08-06
+Eternal Buyer LLC,co_cea2b5598a36,First Lien,,,,SOFR,4.75%,,,,35000,34826,34825,,34826,,,,,,OBDC,2025-08-06
+Troon Golf LLC.,co_59a3109a7113,First Lien,Healthcare,,,SOFR,4.75%,,,,86661,85885,86661,,85885,,,,,,OBDC,2025-08-06
+Faraday Buyer LLC,co_2bb4701c9f91,First Lien,Transportation & Logistics,,,SOFR,6%,,,,149610,146919,148488,,146919,,,,,,OBDC,2025-08-06
+FR Flow Control CB LLC,co_6933fc4a88ac,First Lien,,,5%,,,,,,31741,31381,31502,,31381,,,,,,OBDC,2025-08-06
+FR Flow Control CB LLC,co_6933fc4a88ac,Revolver,,,5%,,,,,,580,545,541,,545,,,,,,OBDC,2025-08-06
+Helix Acquisition Holdings Inc.,co_768ebb86c32c,First Lien,Chemicals & Materials,,,SOFR,7%,,,,946,924,939,,924,,,,,,OBDC,2025-08-06
+JSG II Inc.,co_ba384f478039,First Lien,Chemicals & Materials,,,SOFR,4.5%,,,,13424,13402,13390,,13402,,,,,,OBDC,2025-08-06
+Loparex Midco B.V.,co_12cfb66232c4,First Lien,,,,SOFR,6%,,,,790,790,790,,790,,,,,,OBDC,2025-08-06
+Loparex Midco B.V.,co_12cfb66232c4,First Lien,,,,SOFR,4.5%,,,,4122,3787,3957,,3787,,,,,,OBDC,2025-08-06
+Loparex Midco B.V.,co_12cfb66232c4,Second Lien,,,,SOFR,8.75%,,,,112000,109243,103600,,109243,,,,,,OBDC,2025-08-06
+Loparex Midco B.V.,co_12cfb66232c4,Second Lien,,,,SOFR,8.5%,,,,21000,20189,20160,,20189,,,,,,OBDC,2025-08-06
+MHE Intermediate Holdings LLC,co_8638a084c929,First Lien,Media & Entertainment,,,SOFR,6%,,,,106278,105580,103627,,105580,,,,,,OBDC,2025-08-06
+MHE Intermediate Holdings LLC,co_8638a084c929,First Lien,Media & Entertainment,,,SOFR,6.25%,,,,2488,2447,2444,,2447,,,,,,OBDC,2025-08-06
+Sonny's Enterprises LLC,co_fc8ca195e3a6,First Lien,Automotive,,,SOFR,5.5%,,,,291382,288492,289197,,288492,,,,,,OBDC,2025-08-06
+Sonny's Enterprises LLC,co_fc8ca195e3a6,Delayed Draw,Automotive,,,SOFR,6.5%,,,,9233,9028,9233,,9028,,,,,,OBDC,2025-08-06
+Sonny's Enterprises LLC,co_fc8ca195e3a6,Revolver,Automotive,,,SOFR,5.5%,,,,12016,11899,11839,,11899,,,,,,OBDC,2025-08-06
+Puma Buyer LLC,co_ea8e7521cd4f,First Lien,,,,SOFR,4.25%,,,,861,855,861,,855,,,,,,OBDC,2025-08-06
+Essential Services Holding Corp.,co_b57b53be3ba0,First Lien,Business Services,,,SOFR,5%,,,,25974,25625,25649,,25625,,,,,,OBDC,2025-08-06
+Essential Services Holding Corp.,co_b57b53be3ba0,Revolver,Business Services,,,SOFR,5%,,,,382,355,342,,355,,,,,,OBDC,2025-08-06
+Gerson Lehrman Group Inc.,co_0fc9e724dab4,First Lien,,,,SOFR,5%,,,,155495,154143,155495,,154143,,,,,,OBDC,2025-08-06
+Guidehouse Inc.,co_257e0270d752,First Lien,Business Services,,2%,SOFR,3%,,,,49180,48222,48934,,48222,,,,,,OBDC,2025-08-06
+Paris US Holdco Inc.,co_96d8b983f0e1,First Lien,Transportation & Logistics,,,SOFR,4.75%,,,,28914,28477,28751,,28477,,,,,,OBDC,2025-08-06
+Relativity ODA LLC,co_ba854e909c5f,First Lien,-,,,SOFR,4.5%,,,,101311,100555,101311,,100555,,,,,,OBDC,2025-08-06
+Sensor Technology Topco Inc.,co_4a7c3f8f0226,First Lien,Software & Technology,,,SOFR,7%,,,,89806,89381,89806,,89381,,,,,,OBDC,2025-08-06
+Sensor Technology Topco Inc.,co_4a7c3f8f0226,Delayed Draw,Software & Technology,,,SOFR,7.25%,,,,15370,16427,18054,,16427,,,,,,OBDC,2025-08-06
+Vensure Employer Services Inc.,co_13ff515df3b0,First Lien,Business Services,,,SOFR,4.76%,,,,1810,1778,1792,,1778,,,,,,OBDC,2025-08-06
+Galls LLC,co_f37a52cf75e3,First Lien,,,1.5%,SOFR,5%,,,,135843,133883,135843,,133883,,,,,,OBDC,2025-08-06
+Galls LLC,co_f37a52cf75e3,Revolver,,,,SOFR,6%,,,,4501,4347,4501,,4347,,,,,,OBDC,2025-08-06
+Milan Laser Holdings LLC,co_61e9e2471170,First Lien,,,,SOFR,5%,,,,63256,62540,62308,,62540,,,,,,OBDC,2025-08-06
+Notorious Topco LLC,co_2658189c9d33,First Lien,,,2.5%,SOFR,4.75%,,,,186452,178478,131449,,178478,,,,,,OBDC,2025-08-06
+Notorious Topco LLC,co_2658189c9d33,Revolver,,,,SOFR,6.75%,,,,14859,14352,10476,,14352,,,,,,OBDC,2025-08-06
+The Shade Store LLC,co_762b8ba81607,First Lien,,,,SOFR,6%,,,,100641,96841,95357,,96841,,,,,,OBDC,2025-08-06
+The Shade Store LLC,co_762b8ba81607,First Lien,,,,SOFR,7%,,,,12269,12098,11870,,12098,,,,,,OBDC,2025-08-06
+The Shade Store LLC,co_762b8ba81607,Revolver,,,,SOFR,6%,,,,2701,2470,2156,,2470,7689,,,,,OBDC,2025-08-06
+EOS Finco S.A.R.L,co_0709553b2171,First Lien,,,6%,,,,,,37657,22329,9787,,22329,,,,,,OBDC,2025-08-06
+Park Place Technologies LLC,co_7b62066cfc4f,First Lien,Software & Technology,,,SOFR,5.25%,,,,12618,12376,12586,,12376,,,,,,OBDC,2025-08-06
+Park Place Technologies LLC,co_7b62066cfc4f,Revolver,Software & Technology,,,SOFR,5.25%,,,,405,392,401,,392,,,,,,OBDC,2025-08-06
+PPT Holdings III LLC,co_c2a12bc90575,First Lien,Software & Technology,,12.75%,,,,,,4405,4285,4405,,4285,,,,,,OBDC,2025-08-06
+Lightbeam Bidco Inc.,co_8ba94b4a73b3,First Lien,Transportation & Logistics,,,SOFR,5%,,,,4456,4456,4456,,4456,,,,,,OBDC,2025-08-06
+Lightbeam Bidco Inc.,co_8ba94b4a73b3,Revolver,Transportation & Logistics,,,SOFR,5%,,,,214,211,214,,211,,,,,,OBDC,2025-08-06
+Lytx Inc.,co_e4faafb6ecd9,First Lien,Software & Technology,,,SOFR,5%,,,,71005,71005,71005,,71005,,,,,,OBDC,2025-08-06
+Space Exploration Technologies Corp.,co_98de10ab7858,Common Equity,,,,,,,,,,2557,8776,,2557,,,,46605,,OBDC,2025-08-06
+Space Exploration Technologies Corp.,co_98de10ab7858,Common Equity,,,,,,,,,,446,1762,,446,,,,9360,,OBDC,2025-08-06
+Amergin Asset Management LLC,co_062618b65e6b,Other Equity,Financial Services,,,,,,,,,382,2165,,382,,,,50000000,,OBDC,2025-08-06
+CD&R Value Building Partners I LP.,co_0f24155a4587,Partnership Interest,Industrials,,,,,,,,,77389,88847,,77389,,,,73986000,,OBDC,2025-08-06
+Metis HoldCo Inc.,co_eb1d6fa25cdf,Preferred Equity,,,7%,,,,,,,239312,242899,,239312,,,,242899000,,OBDC,2025-08-06
+Dodge Construction Network Holdings LP.,co_4f1443018cfc,Common Equity,Industrials,,,,,,,,,1920,372,,1920,,,,2613518,,OBDC,2025-08-06
+Dodge Construction Network Holdings LP.,co_4f1443018cfc,Preferred Equity,Industrials,,8.25%,,,,,,,50,32,,50,,,,0,,OBDC,2025-08-06
+Denali Holding LP,co_3ce53adca59f,Other Equity,,,,,,,,,,10594,15855,,10594,,,,337460,,OBDC,2025-08-06
+Hercules Buyer LLC,co_0c1858a56d4d,Common Equity,,,,,,,,,,2728,3226,,2728,,,,751184,,OBDC,2025-08-06
+Knockout Intermediate Holdings I Inc.,co_2713bff35b82,Preferred Equity,Media & Entertainment,,11%,,,,,,,18558,18787,,18558,,,,2640000,,OBDC,2025-08-06
+ASP Conair Holdings LP,co_c370a1674f79,Other Equity,,,,,,,,,,7442,5519,,7442,,,,73571,,OBDC,2025-08-06
+TCB Holdings I LLC,co_6d44f9543e59,Preferred Equity,,,14%,,,,,,,44741,44887,,44741,,,,43500,,OBDC,2025-08-06
+Blend Labs Inc.,co_217ec06f2136,Warrants,,,,,,,,,,975,2,,975,,,,179529,,OBDC,2025-08-06
+Hissho Sushi Holdings LLC,co_ca76a7eb7382,Other Equity,,,,,,,,,,155,213,,155,,,,15004,,OBDC,2025-08-06
+KPCI Holdings LP.,co_e6f72cc76a70,Other Equity,,,,,,,,,,49185,104671,,49185,,,,36594,,OBDC,2025-08-06
+Maia Aggregator LP,co_41b1faddd551,Other Equity,,,,,,,,,,268,262,,268,,,,280899,,OBDC,2025-08-06
+Patriot Holdings SCSp,co_58019d4f7d65,Other Equity,,,8%,,,,,,,13478,13403,,13478,,,,9739,,OBDC,2025-08-06
+Patriot Holdings SCSp,co_58019d4f7d65,Other Equity,,,,,,,,,,266,308,,266,,,,134107,,OBDC,2025-08-06
+Rhea Acquisition Holdings LP,co_4dbfe70d1402,Other Equity,,,,,,,,,,260,288,,260,,,,238095,,OBDC,2025-08-06
+Baypine Commander Co-Invest LP,co_f3f664bbc198,Partnership Interest,,,,,,,,,,3068,3068,,3068,,,,3067771,,OBDC,2025-08-06
+KOBHG Holdings LP.,co_3cea2d984959,Other Equity,,,,,,,,,,9376,9423,,9376,,,,9687,,OBDC,2025-08-06
+KWOL Acquisition Inc.,co_9c4340b9e9d3,Other Equity,Healthcare,,,,,,,,,5522,7324,,5522,,,,542,,OBDC,2025-08-06
+Romulus Intermediate Holdings 1 Inc.,co_3e6e9b556ebb,Preferred Equity,Media & Entertainment,,15%,,,,,,,18313,17222,,18313,,,,15050,,OBDC,2025-08-06
+XOMA Corp.,co_450dccfe91e9,Warrants,,,,,,,,,,269,354,,269,,,,36000,,OBDC,2025-08-06
+BEHP Co-Investor II LP.,co_7163268fa069,Partnership Interest,,,,,,,,,,823,1670,,823,,,,1269969,,OBDC,2025-08-06
+Minerva Holdco Inc.,co_1c8c4fb46740,Preferred Equity,,,10.75%,,,,,,,12720,12810,,12720,,,,9000,,OBDC,2025-08-06
+ModMed Software Midco Holdings Inc.,co_a4db8697a63d,Preferred Equity,Software & Technology,,13%,,,,,,,165,165,,165,,,,169738,,OBDC,2025-08-06
+WP Irving Co-Invest LP.,co_dda2b8e72433,Other Equity,,,,,,,,,,736,1644,,736,,,,1250000,,OBDC,2025-08-06
+Sunshine Software Holdings Inc.,co_59ba26cb9f3a,Preferred Equity,Software & Technology,,10.5%,,,,,,,70843,65009,,70843,,,,51250,,OBDC,2025-08-06
+Accelerate Topco Holdings LLC,co_2483ad3aaf20,Common Equity,,,,,,,,,,254,269,,254,,,,5642,,OBDC,2025-08-06
+Evolution Parent LP,co_f6184548f48c,Partnership Interest,,,,,,,,,,5279,6378,,5279,,,,51757,,OBDC,2025-08-06
+GrowthCurve Capital Sunrise Co-Invest LP,co_bc3aeabbc1b0,Partnership Interest,,,,,,,,,,1053,1050,,1053,,,,105132,,OBDC,2025-08-06
+Hockey Parent Holdings LP.,co_738748475155,Common Equity,,,,,,,,,,18225,21000,,18225,,,,17500,,OBDC,2025-08-06
+PCF Holdco LLC,co_f49cf9221985,Warrants,,,,,,,,,,5437,4271,,5437,,,,1624016,,OBDC,2025-08-06
+PCF Holdco LLC,co_f49cf9221985,Preferred Equity,,,14%,,,,,,,22315,28978,,22315,,,,28978393,,OBDC,2025-08-06
+AlphaSense LLC,co_28219da99752,Preferred Equity,Software & Technology,,,,,,,,,153,165,,153,,,,3386,,OBDC,2025-08-06
+BCTO WIW Holdings Inc.,co_5bdc7e29b693,Common Equity,,,,,,,,,,4355,3773,,4355,,,,70000,,OBDC,2025-08-06
+Bird Holding B.V.,co_16e099510e17,Warrants,,,,,,,,,,790,216,,790,,,,148430,,OBDC,2025-08-06
+Brooklyn Lender Co-Invest 2 LP.,co_a3179d3ef50d,Common Equity,,,,,,,,,,10049,14973,,10049,,,,9233282,,OBDC,2025-08-06
+Elliott Alto Co-Investor Aggregator LP.,co_724bf3ad0373,Partnership Interest,,,,,,,,,,7542,10895,,7542,,,,6007,,OBDC,2025-08-06
+Insight CP (Blocker) Holdings LP.,co_b6ac970ddd3c,Partnership Interest,,,,,,,,,,1811,2134,,1811,,,,1704000,,OBDC,2025-08-06
+Project Alpine Co-Invest Fund LP,co_537559dd4e48,Partnership Interest,,,,,,,,,,12582,15759,,12582,,,,12000000,,OBDC,2025-08-06
+Project Hotel California Co-Invest Fund LP.,co_bc396da95c7a,Partnership Interest,Healthcare,,,,,,,,,4182,7407,,4182,,,,4027000,,OBDC,2025-08-06
+Thunder Topco LP.,co_083dce72a06f,Common Equity,,,,,,,,,,6324,7100,,6324,,,,5968267,,OBDC,2025-08-06
+VEPF Torreys Aggregator LLC,co_f781bf2fcd58,Preferred Equity,,,11%,,,,,,,26291,28855,,26291,,,,21250,,OBDC,2025-08-06
+WMC Bidco Inc.,co_cec9600d340d,Preferred Equity,,,11.25%,,,,,,,73380,74285,,73380,,,,50077,,OBDC,2025-08-06
+Zoro TopCo LP.,co_c997d1dcb755,Common Equity,,,,,,,,,,10830,11952,,10830,,,,1064900,,OBDC,2025-08-06
+Zoro TopCo Inc.,co_12b819c8bc1e,Preferred Equity,,,9.5%,,,,,,,12423,12645,,12423,,,,12779,,OBDC,2025-08-06
+Gloves Holdings LP,co_54a9eface43a,Partnership Interest,,,,,,,,,,5395,7455,,5395,,,,48099,,OBDC,2025-08-06
+Windows Entities,co_fd8c1b2df71f,Other Equity,,,,,,,,,,60319,138629,,60319,,,,31844,,OBDC,2025-08-06
+Pluralsight LLC,co_5097e1803107,First Lien,Software & Technology,,1.5%,SOFR,3%,,,,,23046,23123,,23046,,,,23123000,,OBDC,2025-08-06
+Pluralsight LLC,co_5097e1803107,First Lien,Software & Technology,,7.5%,,,,,,,24991,25070,,24991,,,,25070000,,OBDC,2025-08-06
+Ideal Image Development LLC,co_c4add3c7e598,First Lien,,,6.5%,,,,,,,10716,8513,,10716,,,,11238000,,OBDC,2025-08-06
+Ideal Image Development LLC,co_c4add3c7e598,Revolver,,,,SOFR,6%,,,,,2649,2535,,2649,,,,2654000,,OBDC,2025-08-06
+Paradigmatic Holdco LLC,co_fc01d50ccbea,Common Equity,,,,,,,,,,20149,19372,,20149,,,,7619079,,OBDC,2025-08-06
+LSI Financing 1 DAC,co_4892a4a212cd,Preferred Equity,,,,,,,,,,6785,6206,,6785,,,,6748000,,OBDC,2025-08-06
+Ideal Topco LP.,co_6d74e9bcb154,Common Equity,,,,,,,,,,0,0,,0,,,,10365854,,OBDC,2025-08-06
+Ideal Topco LP.,co_6d74e9bcb154,Preferred Equity,,,,,,,,,,19805,7047,,19805,,,,24024390,,OBDC,2025-08-06
+Swipe Acquisition Corp.,co_f1f89101e01f,First Lien,,,,SOFR,8%,,,,72529,72507,72529,,72507,,,,,,OBDC,2025-08-06
+Swipe Acquisition Corp.,co_f1f89101e01f,First Lien,,,,SOFR,5%,,,,41821,41531,41715,,41531,,,,,,OBDC,2025-08-06
+AAM Series 1.1 Rail and Domestic Intermodal Feeder LLC,co_8df89f64b3d5,First Lien,,,12%,,,,,,64070,63927,64070,,63927,,,,,,OBDC,2025-08-06
+AAM Series 2.1 Aviation Feeder LLC,co_d18984abb419,First Lien,Transportation & Logistics,,12%,,,,,,68103,67936,68103,,67936,,,,,,OBDC,2025-08-06
+PS Operating Company LLC,co_a285d3877f06,First Lien,Transportation & Logistics,,6%,,,,,,21629,18048,1425,,18048,,,,,,OBDC,2025-08-06
+Walker Edison Furniture Company LLC,co_55d1269fe5b2,First Lien,Telecommunications,,6.75%,,,,,,68521,45405,3826,,45405,,,,,,OBDC,2025-08-06
+Walker Edison Furniture Company LLC,co_55d1269fe5b2,Delayed Draw,Telecommunications,,6.75%,,,,,,6380,5976,6380,,5976,,,,,,OBDC,2025-08-06
+Eagle Infrastructure Services LLC,co_12c0ad32c272,First Lien,Business Services,,,SOFR,7.5%,,,,87138,86066,87138,,86066,,,,,,OBDC,2025-08-06
+New PLI Holdings LLC,co_d544d2786e5e,Common Equity,,,,,,,,,,48007,96376,,48007,,,,86745,,OBDC,2025-08-06
+AAM Series 1.1 Rail and Domestic Intermodal Feeder LLC,co_8df89f64b3d5,Other Equity,,,,,,,,,,31431,41730,,31431,,,,30937000,,OBDC,2025-08-06
+AAM Series 2.1 Aviation Feeder LLC,co_d18984abb419,Other Equity,Transportation & Logistics,,,,,,,,,28397,47273,,28397,,,,27380000,,OBDC,2025-08-06
+Wingspire Capital Holdings LLC,co_aada59bbe464,Other Equity,,,,,,,,,,469655,560819,,469655,,,,469655000,,OBDC,2025-08-06
+PS Op Holdings LLC,co_586dbbd4b270,Common Equity,,,,,,,,,,4300,0,,4300,,,,248271,,OBDC,2025-08-06
+Walker Edison Holdco LLC,co_d3adac55d14b,Common Equity,,,,,,,,,,23762,0,,23762,,,,318823,,OBDC,2025-08-06
+Eagle Infrastructure Services LLC,co_12c0ad32c272,Common Equity,Business Services,,,,,,,,,24058,25099,,24058,,,,576276,,OBDC,2025-08-06
+Fifth Season Investments LLC,co_def227b37a0e,Other Equity,Financial Services,,,,,,,,,344398,374484,,344398,,,,36,,OBDC,2025-08-06
+Blue Owl Credit SLF LLC,co_ab0770c3b45c,Other Equity,,,,,,,,,,392671,389941,,392671,,,,392667,,OBDC,2025-08-06
+LSI Financing LLC,co_8e78779d9aa3,Common Equity,,,,,,,,,,162086,169896,,162086,,,,162415000,,OBDC,2025-08-06
+Fiesta Purchaser Inc.,co_36121690c9da,Revolver,Financial Services,,,,,,,,,,0,,,8197000,,,,,OBDC,2025-08-06
+Soliant Lower Intermediate LLC,co_8db7d02d1037,Revolver,Media & Entertainment,,,,,,,,,,-44,,,4444,,,,,OBDC,2025-08-06
+Truist Insurance Holdings LLC,co_cb9915677714,Revolver,Insurance,,,,,,,,,,0,,,1755000,,,,,OBDC,2025-08-06
+Blue Owl Credit SLF LLC,co_ab0770c3b45c,Other,,,,,,,,,,,389941,,,,,,,,OBDC,2025-08-06
+Eagle Infrastructure Super LLC,co_12c0ad32c272,Other,Business Services,,,,,,,,,,112237,,,,,,,,OBDC,2025-08-06
+Fifth Season Investments LLC,co_def227b37a0e,Other,Financial Services,,,,,,,,,,374484,,,,,,,,OBDC,2025-08-06
+Walker Edison Furniture Company LLC,co_55d1269fe5b2,Other,Telecommunications,,,,,,,,,,10206,,,,,,,,OBDC,2025-08-06
+Midwest Custom Windows LLC,co_08ecc942f282,Other,,,,,,,,,,,24100,,,,,,,,OBDC,2025-08-06
+Greater Toronto Custom Windows Corp.,co_465ddecef55e,Other,,,,,,,,,,,10000,,,,,,,,OBDC,2025-08-06
+Garden State Custom Windows LLC,co_d7586ceb22e2,Other,Agriculture,,,,,,,,,,33400,,,,,,,,OBDC,2025-08-06
+Long Island Custom Windows LLC,co_dee614d74621,Other,,,,,,,,,,,28900,,,,,,,,OBDC,2025-08-06
+Jemico LLC,co_6376905ae4c5,Other,,,,,,,,,,,23100,,,,,,,,OBDC,2025-08-06
+Atlanta Custom Windows LLC,co_ab40ab365bc6,Other,,,,,,,,,,,11500,,,,,,,,OBDC,2025-08-06
+Fairchester Custom Windows,co_7da55274578d,Other,,,,,,,,,,,7600,,,,,,,,OBDC,2025-08-06

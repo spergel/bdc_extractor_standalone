@@ -36,6 +36,7 @@ ENV/
 
 # Scraper output and cache (raw extraction results, SEC download cache)
 /data/
+!/data/company_tickers.json
 output/
 debug_tables/
 src/extraction/debug_tables/

@@ -271,19 +271,27 @@ export function SimpleAnalyticsPanel({ holdings, period }: Props) {
         </div>
         <div className="p-3 grid grid-cols-4 gap-2">
           <div className="text-center">
-            <div className="text-2xl font-bold">{analytics.sizeDistribution[0]}</div>
+            <div className="text-2xl font-bold">
+              {analytics.positions > 0 ? ((analytics.sizeDistribution[0] / analytics.positions) * 100).toFixed(1) : '0.0'}%
+            </div>
             <div className="text-xs text-[#808080]">&lt;$1M</div>
           </div>
           <div className="text-center">
-            <div className="text-2xl font-bold">{analytics.sizeDistribution[1]}</div>
+            <div className="text-2xl font-bold">
+              {analytics.positions > 0 ? ((analytics.sizeDistribution[1] / analytics.positions) * 100).toFixed(1) : '0.0'}%
+            </div>
             <div className="text-xs text-[#808080]">$1-5M</div>
           </div>
           <div className="text-center">
-            <div className="text-2xl font-bold">{analytics.sizeDistribution[2]}</div>
+            <div className="text-2xl font-bold">
+              {analytics.positions > 0 ? ((analytics.sizeDistribution[2] / analytics.positions) * 100).toFixed(1) : '0.0'}%
+            </div>
             <div className="text-xs text-[#808080]">$5-20M</div>
           </div>
           <div className="text-center">
-            <div className="text-2xl font-bold">{analytics.sizeDistribution[3]}</div>
+            <div className="text-2xl font-bold">
+              {analytics.positions > 0 ? ((analytics.sizeDistribution[3] / analytics.positions) * 100).toFixed(1) : '0.0'}%
+            </div>
             <div className="text-xs text-[#808080]">&gt;$20M</div>
           </div>
         </div>

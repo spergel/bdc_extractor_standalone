@@ -1,465 +1,590 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,data_quality_flags,ticker,filing_date
-Patriot Acquisition Topco S.A.R.L,co_2cafb2e9570e,First Lien,Automotive,8.5%,,SOFR,5.0%,,2029-06-01,100000,99500,100000,5.0,99500,,,,CCAP,2024-05-08
-Patriot Acquisition Topco S.A.R.L,co_2cafb2e9570e,Delayed Draw,Automotive,8.5%,,SOFR,5.0%,,2029-06-01,50000,49750,50000,2.5,49750,,,,CCAP,2024-05-08
-Patriot Acquisition Topco S.A.R.L,co_2cafb2e9570e,Other Debt,Automotive,7.5%,,SOFR,4.0%,,2029-06-01,25000,24875,25000,1.3,24875,,,,CCAP,2024-05-08
-Plasma Buyer LLC,co_a2b63c1eab84,Delayed Draw,Automotive,9.0%,,SOFR,5.5%,,2029-06-01,75000,74625,75000,3.8,74625,,,,CCAP,2024-05-08
-Plasma Buyer LLC,co_a2b63c1eab84,Revolver,Automotive,9.0%,,SOFR,5.5%,,2029-06-01,0,0,0,0.0,,,,,CCAP,2024-05-08
-Plasma Buyer LLC,co_a2b63c1eab84,First Lien,Automotive,9.0%,,SOFR,5.5%,,2029-06-01,100000,99000,100000,5.0,99000,,,,CCAP,2024-05-08
-Premier Dental Care Management LLC,co_98c4a6bd5c2b,First Lien,Automotive,8.75%,,SOFR,5.25%,,2029-06-01,60000,59700,60000,3.0,59700,,,,CCAP,2024-05-08
-Premier Dental Care Management LLC,co_98c4a6bd5c2b,Delayed Draw,Automotive,8.75%,,SOFR,5.25%,,2029-06-01,30000,29850,30000,1.5,29850,,,,CCAP,2024-05-08
-Premier Dental Care Management LLC,co_98c4a6bd5c2b,Revolver,Automotive,8.75%,,SOFR,5.25%,,2029-06-01,0,0,0,0.0,,,,,CCAP,2024-05-08
-PromptCare Intermediate LP,co_cf8a0bd7ff51,First Lien,Automotive,9.25%,,SOFR,5.75%,,2029-06-01,80000,79600,80000,4.0,79600,,,,CCAP,2024-05-08
-PromptCare Intermediate LP,co_cf8a0bd7ff51,Delayed Draw,Automotive,9.25%,,SOFR,5.75%,,2029-06-01,40000,39800,40000,2.0,39800,,,,CCAP,2024-05-08
-Quorum Health Resources,co_c07e40a039ba,First Lien,Automotive,8.5%,,SOFR,5.0%,,2029-06-01,90000,89100,90000,4.5,89100,,,,CCAP,2024-05-08
-Quorum Health Resources,co_c07e40a039ba,Revolver,Automotive,8.5%,,SOFR,5.0%,,2029-06-01,0,0,0,0.0,,,,,CCAP,2024-05-08
-Safco Dental Supply LLC,co_7564d8c46538,Revolver,Automotive,9.5%,,SOFR,6.0%,,2029-06-01,0,0,0,0.0,,,,,CCAP,2024-05-08
-Safco Dental Supply LLC,co_7564d8c46538,First Lien,Automotive,9.5%,,SOFR,6.0%,,2029-06-01,70000,69300,70000,3.5,69300,,,,CCAP,2024-05-08
-Seniorlink Inc.,co_6d5f088adc4f,Revolver,Automotive,9.0%,,SOFR,5.5%,,2029-06-01,0,0,0,0.0,,,,,CCAP,2024-05-08
-Seniorlink Inc.,co_6d5f088adc4f,First Lien,Automotive,9.0%,,SOFR,5.5%,,2029-06-01,110000,108900,110000,5.5,108900,,,,CCAP,2024-05-08
-Seniorlink Inc.,co_6d5f088adc4f,First Lien,Automotive,9.0%,,SOFR,5.5%,,2029-06-01,50000,49500,50000,2.5,49500,,,,CCAP,2024-05-08
-Smile Doctors LLC,co_54cc4c84644e,Revolver,Automotive,9.25%,,SOFR,5.75%,,2029-06-01,0,0,0,0.0,,,,,CCAP,2024-05-08
-Smile Doctors LLC,co_54cc4c84644e,Delayed Draw,Automotive,9.25%,,SOFR,5.75%,,2029-06-01,65000,64675,65000,3.3,64675,,,,CCAP,2024-05-08
-Smile Doctors LLC,co_54cc4c84644e,First Lien,Automotive,9.25%,,SOFR,5.75%,,2029-06-01,95000,94050,95000,4.8,94050,,,,CCAP,2024-05-08
-SolutionReach Inc.,co_687e91868b79,First Lien,Software,8.5%,,SOFR,5.0%,,2029-06-01,120000,118800,120000,6.0,118800,,,,CCAP,2024-05-08
-SolutionReach Inc.,co_687e91868b79,Revolver,Software,8.5%,,SOFR,5.0%,,2029-06-01,0,0,0,0.0,,,,,CCAP,2024-05-08
-United Flow Technologies,co_e91cf10503e3,First Lien,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-United Flow Technologies,co_e91cf10503e3,Delayed Draw,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-United Flow Technologies,co_e91cf10503e3,Revolver,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-American Refrigeration,co_8028979c0680,First Lien,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-ASP MCS Acquisition Corp.,co_f05eddc806bd,Second Lien,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Automated Control Concepts Inc.,co_af6d1a4d242e,First Lien,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Automated Control Concepts Inc.,co_af6d1a4d242e,Revolver,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Galway Borrower LLC,co_7b729e02e51d,First Lien,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Galway Borrower LLC,co_7b729e02e51d,Delayed Draw,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Galway Borrower LLC,co_7b729e02e51d,Revolver,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-GH Parent Holdings Inc.,co_efddd95f1f3e,First Lien,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-GH Parent Holdings Inc.,co_efddd95f1f3e,Revolver,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-GH Parent Holdings Inc.,co_efddd95f1f3e,Delayed Draw,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Guardian Access Solutions,co_9a26117d5ef6,Delayed Draw,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Guardian Access Solutions,co_9a26117d5ef6,Revolver,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Guardian Access Solutions,co_9a26117d5ef6,First Lien,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Hercules Borrower LLC,co_34d8b7ece1a7,First Lien,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Hercules Borrower LLC,co_34d8b7ece1a7,Revolver,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Hercules Borrower LLC,co_34d8b7ece1a7,Delayed Draw,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Hsid Acquisition LLC,co_77ecbc79f4c0,First Lien,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Hsid Acquisition LLC,co_77ecbc79f4c0,Delayed Draw,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-PPV Intermediate Holdings LLC,co_743a0b989f76,First Lien,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-PPV Intermediate Holdings LLC,co_743a0b989f76,Other Debt,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-smarTours LLC,co_b5675d322650,First Lien,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Stepping Stones Healthcare Services LLC,co_ef6f838d442b,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Stepping Stones Healthcare Services LLC,co_ef6f838d442b,Delayed Draw,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Stepping Stones Healthcare Services LLC,co_ef6f838d442b,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-The Mulch & Soil Company LLC,co_7f4c3c21cbc7,First Lien,Manufacturing,,,,,,,,,,,,,,,CCAP,2024-05-08
-The Mulch & Soil Company LLC,co_7f4c3c21cbc7,Revolver,Manufacturing,,,,,,,,,,,,,,,CCAP,2024-05-08
-United Language Group Inc.,co_a131e4aefff4,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-United Language Group Inc.,co_a131e4aefff4,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-USA Hometown Experts Inc.,co_4531db8ad2d3,First Lien,Financial Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-USA Hometown Experts Inc.,co_4531db8ad2d3,Delayed Draw,Financial Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-USA Hometown Experts Inc.,co_4531db8ad2d3,Revolver,Financial Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Wrench Group LLC,co_1ae37eca31cd,Second Lien,Manufacturing,,,,,,,,,,,,,,,CCAP,2024-05-08
-Alera Group Inc.,co_d6fed5973af6,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Alera Group Inc.,co_d6fed5973af6,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Alpine X,co_8a4ff651559b,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Alpine X,co_8a4ff651559b,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Alpine X,co_8a4ff651559b,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-iLending LLC,co_b14d8a57be01,First Lien,Financial Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Sydney US Buyer Corp.,co_ca94291ef619,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Sydney US Buyer Corp.,co_ca94291ef619,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Team Select CSC TS Merger SUB LLC,co_8ac0e0246ed8,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Team Select CSC TS Merger SUB LLC,co_8ac0e0246ed8,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Team Select CSC TS Merger SUB LLC,co_8ac0e0246ed8,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Technology Partners LLC,co_a4d1bffc3148,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Technology Partners LLC,co_a4d1bffc3148,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Technology Partners LLC,co_a4d1bffc3148,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-TTF Holdings LLC,co_3e2c48ef4594,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Unifeye Vision Partners,co_4f2743254e0f,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Unifeye Vision Partners,co_4f2743254e0f,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Unifeye Vision Partners,co_4f2743254e0f,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Lash Opco LLC,co_11969eb109de,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Lash Opco LLC,co_11969eb109de,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Comet Acquisition Inc.,co_09a12871bbda,Second Lien,Financial Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Evolution BuyerCo Inc.,co_87432de05f9b,First Lien,Financial Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Evolution BuyerCo Inc.,co_87432de05f9b,Revolver,Financial Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Auveco Holdings,co_3c49ce55e581,Delayed Draw,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Auveco Holdings,co_3c49ce55e581,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Auveco Holdings,co_3c49ce55e581,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Continental Battery Company,co_636215f6acdc,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Continental Battery Company,co_636215f6acdc,Delayed Draw,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Sun Acquirer Corp.,co_011b1b84a898,Delayed Draw,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Sun Acquirer Corp.,co_011b1b84a898,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Sun Acquirer Corp.,co_011b1b84a898,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Envocore Holding LLC,co_d2d043c0b44e,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Envocore Holding LLC,co_d2d043c0b44e,Second Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Envocore Holding LLC,co_d2d043c0b44e,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Eshipping,co_a8605d2e0cd0,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Eshipping,co_a8605d2e0cd0,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Eshipping,co_a8605d2e0cd0,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Oliver Packaging LLC,co_6bd17b3e30e5,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Oliver Packaging LLC,co_6bd17b3e30e5,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Painters Supply & Equipment Company,co_ed187de7dd34,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Painters Supply & Equipment Company,co_ed187de7dd34,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Painters Supply & Equipment Company,co_ed187de7dd34,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-TriStrux LLC,co_fb3c3ba8617f,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-TriStrux LLC,co_fb3c3ba8617f,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Tricor Borrower LLC,co_ee7fd82f8831,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Tricor Borrower LLC,co_ee7fd82f8831,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Tricor Borrower LLC,co_ee7fd82f8831,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Vantage Insurance Partners Inc.,co_9aac5370bfb6,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Vantage Insurance Partners Inc.,co_9aac5370bfb6,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Vantage Insurance Partners Inc.,co_9aac5370bfb6,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-A&A Global Imports LLC,co_8521e3325707,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-A&A Global Imports LLC,co_8521e3325707,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Action Signature Acquisition Inc.,co_4bc656dd3c92,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Action Signature Acquisition Inc.,co_4bc656dd3c92,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Advanced Web Technologies,co_e15d454ee916,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Advanced Web Technologies,co_e15d454ee916,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Advanced Web Technologies,co_e15d454ee916,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Formulations Parent Corp.,co_e6d9e5bc8a49,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Formulations Parent Corp.,co_e6d9e5bc8a49,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Online Labels Group LLC,co_779b60c57c46,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Online Labels Group LLC,co_779b60c57c46,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Online Labels Group LLC,co_779b60c57c46,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-HCOS Group Intermediate III LLC,co_d6c81bc16ebb,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-HCOS Group Intermediate III LLC,co_d6c81bc16ebb,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Homecare Partners Management LLC,co_cca887780b93,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Homecare Partners Management LLC,co_cca887780b93,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Homecare Partners Management LLC,co_cca887780b93,Delayed Draw,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Hospice Care Buyer Inc.,co_db69e7e43598,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Hospice Care Buyer Inc.,co_db69e7e43598,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Hospice Care Buyer Inc.,co_db69e7e43598,Delayed Draw,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Integrated Pain Management Medical Group Inc.,co_ac4181f3e35c,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Integrated Pain Management Medical Group Inc.,co_ac4181f3e35c,Delayed Draw,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Integrated Pain Management Medical Group Inc.,co_ac4181f3e35c,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-LaserAway Intermediate Holdings II LLC,co_e659ef862cea,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Lighthouse Behavioral Health Solutions LLC,co_d35767d0055e,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Lighthouse Behavioral Health Solutions LLC,co_d35767d0055e,Delayed Draw,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Lighthouse Behavioral Health Solutions LLC,co_d35767d0055e,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Lightspeed Buyer Inc.,co_961292b66f9d,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-ABACUS Holdings I LLC,co_a10a6e7f7f20,Delayed Draw,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-ABACUS Holdings I LLC,co_a10a6e7f7f20,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-ABACUS Holdings I LLC,co_a10a6e7f7f20,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Affinitiv Inc.,co_a42faee4b0db,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Affinitiv Inc.,co_a42faee4b0db,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Alpine SG LLC,co_a20fc41b851b,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Alpine SG LLC,co_a20fc41b851b,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Apps Associates LLC,co_c6a5fff265f1,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Apps Associates LLC,co_c6a5fff265f1,Delayed Draw,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Apps Associates LLC,co_c6a5fff265f1,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Banker's Toolbox Inc.,co_2358d62f19fd,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Banker's Toolbox Inc.,co_2358d62f19fd,Delayed Draw,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Banker's Toolbox Inc.,co_2358d62f19fd,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Belay Inc.,co_c4ae6562e3f2,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Belay Inc.,co_c4ae6562e3f2,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Benesys Inc.,co_4a0fb76423d6,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Benesys Inc.,co_4a0fb76423d6,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Claritas LLC,co_643b9e6bb41b,Delayed Draw,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Claritas LLC,co_643b9e6bb41b,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Claritas LLC,co_643b9e6bb41b,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Concord III LLC,co_01eb53ae0c26,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Concord III LLC,co_01eb53ae0c26,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-DataVail,co_35eff2df4fbb,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-DataVail,co_35eff2df4fbb,Delayed Draw,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-DataVail,co_35eff2df4fbb,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Evergreen IX Borrower 2023 LLC,co_b818c8cf1a35,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Evergreen IX Borrower 2023 LLC,co_b818c8cf1a35,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Lexipol Ranger Buyer Inc.,co_35aa7ee1ea78,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Lexipol Ranger Buyer Inc.,co_35aa7ee1ea78,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-List Partners Inc.,co_9e69c75d5bd2,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-List Partners Inc.,co_9e69c75d5bd2,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-MRI Software LLC,co_9273c7ffbb6e,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-MRI Software LLC,co_9273c7ffbb6e,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-MRI Software LLC,co_9273c7ffbb6e,Delayed Draw,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-New Era Technology Inc.,co_c36e8429b803,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-New Era Technology Inc.,co_c36e8429b803,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-New Era Technology Inc.,co_c36e8429b803,Delayed Draw,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-NMN Holdings III Corp.,co_674f7f92840d,Delayed Draw,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-NMN Holdings III Corp.,co_674f7f92840d,Second Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Lightspeed Buyer Inc.,co_961292b66f9d,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Lightspeed Buyer Inc.,co_961292b66f9d,Delayed Draw,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-MB2 Dental,co_e9ab04c1530d,Delayed Draw,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-MB2 Dental,co_e9ab04c1530d,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-MB2 Dental,co_e9ab04c1530d,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Multi Specialty Healthcare AMM LLC,co_f47dd5743e3b,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Multi Specialty Healthcare AMM LLC,co_f47dd5743e3b,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-MWD Management LLC,co_d426577881d8,Delayed Draw,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-MWD Management LLC,co_d426577881d8,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-MWD Management LLC,co_d426577881d8,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Omni Ophthalmic Management Consultants LLC,co_ad95a1b9f021,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Omni Ophthalmic Management Consultants LLC,co_ad95a1b9f021,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Patriot Acquisition Topco SARL,co_2cafb2e9570e,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Patriot Acquisition Topco SARL,co_2cafb2e9570e,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Patriot Acquisition Topco SARL,co_2cafb2e9570e,Delayed Draw,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Hsid Acquisition LLC,co_77ecbc79f4c0,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Infobase,co_16d96adb027d,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Infobase,co_16d96adb027d,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Iris Buyer LLC,co_5a3c5d292df0,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Iris Buyer LLC,co_5a3c5d292df0,Delayed Draw,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Iris Buyer LLC,co_5a3c5d292df0,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-MHS Acquisition Holdings LLC,co_a78ce7eeccfd,Other Debt,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-MHS Acquisition Holdings LLC,co_a78ce7eeccfd,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-MHS Acquisition Holdings LLC,co_a78ce7eeccfd,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-MHS Acquisition Holdings LLC,co_a78ce7eeccfd,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Minuteman Security Technologies Inc.,co_aef2c92678df,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Minuteman Security Technologies Inc.,co_aef2c92678df,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Minuteman Security Technologies Inc.,co_aef2c92678df,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Pye-Barker Fire & Safety LLC,co_21eb6c7d75fe,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Pye-Barker Fire & Safety LLC,co_21eb6c7d75fe,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Pye-Barker Fire & Safety LLC,co_21eb6c7d75fe,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-BCDI Rodeo Dental Buyer LLC,co_4c51e28886f6,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-BCDI Rodeo Dental Buyer LLC,co_4c51e28886f6,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-BCDI Rodeo Dental Buyer LLC,co_4c51e28886f6,Delayed Draw,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-CC Amulet Management LLC,co_40e2b5787ab0,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-CC Amulet Management LLC,co_40e2b5787ab0,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-CC Amulet Management LLC,co_40e2b5787ab0,Delayed Draw,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Centria Subsidiary Holdings LLC,co_7ae3c1d1784f,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Centria Subsidiary Holdings LLC,co_7ae3c1d1784f,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-ConvenientMD,co_3b4ce490f949,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-ConvenientMD,co_3b4ce490f949,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-ConvenientMD,co_3b4ce490f949,Delayed Draw,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-CRA MSO LLC,co_e0589cb9c0a4,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-CRA MSO LLC,co_e0589cb9c0a4,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-EMS Buyer Inc.,co_3a4a1c7732fb,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-EMS Buyer Inc.,co_3a4a1c7732fb,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Explorer Investor Inc.,co_c6dbdcc712fd,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-FH MD Buyer Inc.,co_61c254ab9060,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-GrapeTree Medical Staffing LLC,co_e978c56a46db,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-GrapeTree Medical Staffing LLC,co_e978c56a46db,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-GrapeTree Medical Staffing LLC,co_e978c56a46db,Delayed Draw,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Great Lakes Dental Partners LLC,co_212968f7c3be,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Great Lakes Dental Partners LLC,co_212968f7c3be,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-HGH Purchaser Inc.,co_1221d99fd14e,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-HGH Purchaser Inc.,co_1221d99fd14e,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-HGH Purchaser Inc.,co_1221d99fd14e,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-HS Spa Holdings Inc.,co_0558d6361718,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-HS Spa Holdings Inc.,co_0558d6361718,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-HS Spa Holdings Inc.,co_0558d6361718,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Ingenio LLC,co_a1d7ca106933,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Learn-It Systems LLC,co_57f92c598f4f,Revolver,Education,,,,,,,,,,,,,,,CCAP,2024-05-08
-Learn-It Systems LLC,co_57f92c598f4f,Delayed Draw,Education,,,,,,,,,,,,,,,CCAP,2024-05-08
-Learn-It Systems LLC,co_57f92c598f4f,First Lien,Education,,,,,,,,,,,,,,,CCAP,2024-05-08
-Mario Purchaser LLC,co_b717c9ab9fee,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Mario Purchaser LLC,co_b717c9ab9fee,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Mario Purchaser LLC,co_b717c9ab9fee,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Marlin DTC-LS Midco 2 LLC,co_e39e6c0751bb,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Marlin DTC-LS Midco 2 LLC,co_e39e6c0751bb,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Point Quest Acquisition LLC,co_d4b48be81a2f,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Point Quest Acquisition LLC,co_d4b48be81a2f,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-PPV Intermediate Holdings LLC,co_743a0b989f76,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Evolution BuyerCo Inc.,co_87432de05f9b,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Integrity Marketing Acquisition LLC,co_c54435bdb6e3,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Integrity Marketing Acquisition LLC,co_c54435bdb6e3,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Integrity Marketing Acquisition LLC,co_c54435bdb6e3,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Integro Parent Inc.,co_45c1de58d72e,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Integro Parent Inc.,co_45c1de58d72e,Second Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Newcleus LLC,co_15a3bbeb29fe,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Newcleus LLC,co_15a3bbeb29fe,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Newcleus LLC,co_15a3bbeb29fe,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Patriot Growth Insurance Services LLC,co_09c469ba825f,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Patriot Growth Insurance Services LLC,co_09c469ba825f,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Patriot Growth Insurance Services LLC,co_09c469ba825f,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-The Hilb Group LLC,co_3f8bdd3238bb,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-The Hilb Group LLC,co_3f8bdd3238bb,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-The Hilb Group LLC,co_3f8bdd3238bb,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Odessa Technologies Inc.,co_37b004402d02,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Odessa Technologies Inc.,co_37b004402d02,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Ontario Systems LLC,co_368fd62c654e,Delayed Draw,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Ontario Systems LLC,co_368fd62c654e,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Ontario Systems LLC,co_368fd62c654e,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Park Place Technologies LLC,co_7b62066cfc4f,Other Debt,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Perforce Software Inc.,co_8736d4f129ac,Second Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Right Networks LLC,co_0cb37b67f45d,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Right Networks LLC,co_0cb37b67f45d,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Right Networks LLC,co_0cb37b67f45d,Delayed Draw,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Ruffalo Noel Levitz LLC,co_80c97801395e,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Ruffalo Noel Levitz LLC,co_80c97801395e,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Saturn Borrower Inc.,co_2fa9efcecbc8,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Saturn Borrower Inc.,co_2fa9efcecbc8,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Smartronix LLC,co_0aef8ece01b9,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Smartronix LLC,co_0aef8ece01b9,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-SQAD Holdco Inc.,co_cd62ddfdce39,Delayed Draw,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-SQAD Holdco Inc.,co_cd62ddfdce39,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-SQAD Holdco Inc.,co_cd62ddfdce39,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Summit 7 Systems LLC,co_bc5ad4b4d070,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Summit 7 Systems LLC,co_bc5ad4b4d070,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-iLending LLC,co_b14d8a57be01,Revolver,,,,,,,,,,,,,,,,CCAP,2024-05-08
-King Mid LLC,co_01dbf1326890,Delayed Draw,,,,,,,,,,,,,,,,CCAP,2024-05-08
-King Mid LLC,co_01dbf1326890,Revolver,,,,,,,,,,,,,,,,CCAP,2024-05-08
-King Mid LLC,co_01dbf1326890,First Lien,,,,,,,,,,,,,,,,CCAP,2024-05-08
-PCS Retirement,co_d21924480af3,Delayed Draw,,,,,,,,,,,,,,,,CCAP,2024-05-08
-PCS Retirement,co_d21924480af3,Revolver,,,,,,,,,,,,,,,,CCAP,2024-05-08
-PCS Retirement,co_d21924480af3,First Lien,,,,,,,,,,,,,,,,CCAP,2024-05-08
-Pinnacle Purchaser LLC,co_5e9e2cbda573,First Lien,,,,,,,,,,,,,,,,CCAP,2024-05-08
-Pinnacle Purchaser LLC,co_5e9e2cbda573,Revolver,,,,,,,,,,,,,,,,CCAP,2024-05-08
-Allied Wireline Services LLC,co_6d1e1b9b8d48,First Lien,Energy,,,,,,,,,,,,,,,CCAP,2024-05-08
-Loadmaster Derrick & Equipment Inc.,co_a249e355b623,First Lien,Energy,,,,,,,,,,,,,,,CCAP,2024-05-08
-Loadmaster Derrick & Equipment Inc.,co_a249e355b623,Revolver,Energy,,,,,,,,,,,,,,,CCAP,2024-05-08
-Isagenix International LLC,co_a70583a53eb9,First Lien,Retail,,,,,,,,,,,,,,,CCAP,2024-05-08
-JTM Foods LLC,co_06b459454f11,First Lien,Food & Beverage,,,,,,,,,,,,,,,CCAP,2024-05-08
-JTM Foods LLC,co_06b459454f11,Revolver,Food & Beverage,,,,,,,,,,,,,,,CCAP,2024-05-08
-JTM Foods LLC,co_06b459454f11,Delayed Draw,Food & Beverage,,,,,,,,,,,,,,,CCAP,2024-05-08
-Mann Lake Ltd.,co_00bc46e8a60d,Revolver,Food & Beverage,,,,,,,,,,,,,,,CCAP,2024-05-08
-Mann Lake Ltd.,co_00bc46e8a60d,First Lien,Food & Beverage,,,,,,,,,,,,,,,CCAP,2024-05-08
-Receivable Solutions Inc.,co_b4ade5e8c953,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Receivable Solutions Inc.,co_b4ade5e8c953,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Seko Global Logistics Network LLC,co_89c47e7c1b19,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Seko Global Logistics Network LLC,co_89c47e7c1b19,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Service Logic Acquisition Inc.,co_cf34a20730d5,Second Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Service Logic Acquisition Inc.,co_cf34a20730d5,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-SuperHero Fire Protection LLC,co_d77821b57a2c,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-SuperHero Fire Protection LLC,co_d77821b57a2c,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Bandon Fitness (Texas) Inc.,co_8ed408819d9b,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Bandon Fitness (Texas) Inc.,co_8ed408819d9b,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Bandon Fitness (Texas) Inc.,co_8ed408819d9b,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Effective School Solutions LLC,co_ceeb2595f350,First Lien,Education,,,,,,,,,,,,,,,CCAP,2024-05-08
-Effective School Solutions LLC,co_ceeb2595f350,Revolver,Education,,,,,,,,,,,,,,,CCAP,2024-05-08
-Everlast Parent Inc.,co_acc567adc7f6,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Everlast Parent Inc.,co_acc567adc7f6,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Everlast Parent Inc.,co_acc567adc7f6,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-FS Whitewater Borrower LLC,co_2eb67dc5a406,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-FS Whitewater Borrower LLC,co_2eb67dc5a406,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-FS Whitewater Borrower LLC,co_2eb67dc5a406,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-ACON Igloo Investors I LLC,co_629bcdbda390,Partnership Interest,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-First Eagle Greenway Fund II LLC,co_5cb84d42fb5d,Partnership Interest,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-First Eagle Logan JV LLC,co_0dfcfefecb72,Partnership Interest,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Freeport Financial SBIC Fund LP,co_a8dfa80312b1,Partnership Interest,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-GACP II LP,co_c92027e57b14,Partnership Interest,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Gryphon Partners 3.5 LP,co_6db25cb3dd59,Partnership Interest,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-WhiteHawk III Onshore Fund LP,co_191058924a9c,Partnership Interest,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Allied Wireline Services LLC,co_6d1e1b9b8d48,Common Equity,Energy,,,,,,,,,,,,,,,CCAP,2024-05-08
-Loadmaster Derrick & Equipment Inc.,co_a249e355b623,Preferred Equity,Energy,,,,,,,,,,,,,,,CCAP,2024-05-08
-Loadmaster Derrick & Equipment Inc.,co_a249e355b623,Common Equity,Energy,,,,,,,,,,,,,,,CCAP,2024-05-08
-Isagenix International LLC,co_a70583a53eb9,Common Equity,Retail,,,,,,,,,,,,,,,CCAP,2024-05-08
-ACI Group Holdings Inc.,co_12ac7682544d,Common Equity,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-ACI Group Holdings Inc.,co_12ac7682544d,Preferred Equity,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Bayside Opco LLC,co_9c51c4f6d054,Common Equity,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Centria Subsidiary Holdings LLC,co_7ae3c1d1784f,Common Equity,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Hospice Care Buyer Inc.,co_db69e7e43598,Common Equity,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Patriot Acquisition Topco SARL,co_2cafb2e9570e,Common Equity,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-ACI Group Holdings Inc.,co_12ac7682544d,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-ACI Group Holdings Inc.,co_12ac7682544d,Delayed Draw,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-ACI Group Holdings Inc.,co_12ac7682544d,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Acu-Serve LLC,co_61f88becae63,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Acu-Serve LLC,co_61f88becae63,Delayed Draw,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Acu-Serve LLC,co_61f88becae63,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Advanced Diabetes Supply,co_eea75212d544,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Advanced Diabetes Supply,co_eea75212d544,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Annuity Health,co_8b1fb197ff5c,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Annuity Health,co_8b1fb197ff5c,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Arrow Management Acquisition LLC,co_2ecc38e3fb51,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Arrow Management Acquisition LLC,co_2ecc38e3fb51,Delayed Draw,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Arrow Management Acquisition LLC,co_2ecc38e3fb51,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Avalign Technologies Inc.,co_5d2ecdd7f044,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Avalign Technologies Inc.,co_5d2ecdd7f044,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Bayside Opco LLC,co_9c51c4f6d054,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Bayside Opco LLC,co_9c51c4f6d054,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Bayside Opco LLC,co_9c51c4f6d054,Other Debt,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-PDFTron Systems Inc.,co_2a86bc4652e1,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-PDFTron Systems Inc.,co_2a86bc4652e1,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-PDFTron Systems Inc.,co_2a86bc4652e1,Delayed Draw,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Sandvine Corp.,co_baec03d34e61,Second Lien,Telecommunications,,,,,,,,,,,,,,,CCAP,2024-05-08
-Crusoe Bidco Ltd.,co_aefa56445629,First Lien,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Crusoe Bidco Ltd.,co_aefa56445629,Delayed Draw,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Nurture Landscapes,co_6cc63773fb6d,First Lien,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Nurture Landscapes,co_6cc63773fb6d,Delayed Draw,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Lion Cashmere Bidco Ltd.,co_1505b4b081fa,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Lion Cashmere Bidco Ltd.,co_1505b4b081fa,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Sun Acquirer Corp.,co_011b1b84a898,Common Equity,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Envocore Holding LLC,co_d2d043c0b44e,Common Equity,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Envocore Holding LLC,co_d2d043c0b44e,Preferred Equity,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Allied Universal Holdings LLC,co_b4e8fbb96408,Common Equity,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-ASP MCS Acquisition Corp.,co_f05eddc806bd,Common Equity,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-ASP MCS Acquisition Corp.,co_f05eddc806bd,Preferred Equity,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Hercules Borrower LLC,co_34d8b7ece1a7,Common Equity,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Iris Buyer LLC,co_5a3c5d292df0,Common Equity,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-MHS Acquisition Holdings LLC,co_a78ce7eeccfd,Preferred Equity,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-MHS Acquisition Holdings LLC,co_a78ce7eeccfd,Common Equity,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Receivable Solutions Inc.,co_b4ade5e8c953,Preferred Equity,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Service Logic Acquisition Inc.,co_cf34a20730d5,Common Equity,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-TecoStar Holdings Inc.,co_acf7e1568ab9,Common Equity,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Everlast Parent Inc.,co_acc567adc7f6,Common Equity,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-FS Whitewater Borrower LLC,co_2eb67dc5a406,Common Equity,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-HGH Purchaser Inc.,co_1221d99fd14e,Common Equity,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-TMA Buyer LLC,co_580d070b8ae9,First Lien,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-TMA Buyer LLC,co_580d070b8ae9,Revolver,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-TMA Buyer LLC,co_580d070b8ae9,Delayed Draw,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Transportation Insight LLC,co_4ece447abf27,First Lien,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Transportation Insight LLC,co_4ece447abf27,Delayed Draw,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Transportation Insight LLC,co_4ece447abf27,Revolver,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Winxnet Holdings LLC,co_c430520c0e5d,Delayed Draw,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Winxnet Holdings LLC,co_c430520c0e5d,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Winxnet Holdings LLC,co_c430520c0e5d,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-3SI Security Systems,co_c70f0c5ad517,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Gener8 LLC,co_a017dd98441e,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Gener8 LLC,co_a017dd98441e,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-A&R Logistics Holdings Inc.,co_c9a78b238f3f,First Lien,Transportation,,,,,,,,,,,,,,,CCAP,2024-05-08
-USALCO LLC,co_e99a4dc1da80,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Alcanza Clinical Research,co_8e7fcc727e86,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Alcanza Clinical Research,co_8e7fcc727e86,Revolver,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-BioAgilytix,co_152315ec5423,First Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-BioAgilytix,co_152315ec5423,Delayed Draw,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-LSCS Holdings Inc.,co_a9729536583e,Second Lien,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Teal Acquisition Co Inc.,co_4736b532428b,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Teal Acquisition Co Inc.,co_4736b532428b,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-WCT Group Holdings LLC,co_45fab153c3a3,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-WCT Group Holdings LLC,co_45fab153c3a3,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-MeriCal LLC,co_fc8e383d430b,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Slickdeals Holdings LLC,co_7621c67fdb3b,Revolver,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-Slickdeals Holdings LLC,co_7621c67fdb3b,First Lien,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-OEM Group LLC,co_a24d2f57ec41,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-OEM Group LLC,co_a24d2f57ec41,Second Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-OEM Group LLC,co_a24d2f57ec41,Revolver,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Jordan Bidco Ltd.,co_06ef9a0a7f04,Delayed Draw,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Jordan Bidco Ltd.,co_06ef9a0a7f04,First Lien,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-VetStrategy,co_5fb677abd871,Preferred Equity,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-VetStrategy,co_5fb677abd871,Common Equity,Automotive,,,,,,,,,,,,,,,CCAP,2024-05-08
-Efor Holding,co_f2a173a608b9,First Lien,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Efor Holding,co_f2a173a608b9,Delayed Draw,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-PharComp Parent B.V.,co_cdc2719c8ca1,Delayed Draw,Pharmaceuticals & Biotechnology,,,,,,,,,,,,,,,CCAP,2024-05-08
-PharComp Parent B.V.,co_cdc2719c8ca1,First Lien,Pharmaceuticals & Biotechnology,,,,,,,,,,,,,,,CCAP,2024-05-08
-Eagle Midco B.V.,co_5e402a0aef64,First Lien,Pharmaceuticals & Biotechnology,,,,,,,,,,,,,,,CCAP,2024-05-08
-Eagle Midco B.V.,co_5e402a0aef64,Delayed Draw,Pharmaceuticals & Biotechnology,,,,,,,,,,,,,,,CCAP,2024-05-08
-Eagle Midco B.V.,co_5e402a0aef64,Revolver,Pharmaceuticals & Biotechnology,,,,,,,,,,,,,,,CCAP,2024-05-08
-Miraclon Corp.,co_98c63f706c52,First Lien,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Miraclon Corp.,co_98c63f706c52,Common Equity,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Miraclon Corp.,co_98c63f706c52,Preferred Equity,Business Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Greencross,co_4c145c6ba54c,First Lien,Retail,,,,,,,,,,,,,,,CCAP,2024-05-08
-AX VI INV2 Holding AB,co_3e590fb76f2d,First Lien,Retail,,,,,,,,,,,,,,,CCAP,2024-05-08
-AX VI INV2 Holding AB,co_3e590fb76f2d,Revolver,Retail,,,,,,,,,,,,,,,CCAP,2024-05-08
-AX VI INV2 Holding AB,co_3e590fb76f2d,Second Lien,Retail,,,,,,,,,,,,,,,CCAP,2024-05-08
-AX VI INV2 Holding AB,co_3e590fb76f2d,Delayed Draw,Retail,,,,,,,,,,,,,,,CCAP,2024-05-08
-Evolution BuyerCo Inc.,co_87432de05f9b,Common Equity,Financial Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Integrity Marketing Acquisition LLC,co_c54435bdb6e3,Common Equity,Financial Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Integrity Marketing Acquisition LLC,co_c54435bdb6e3,Preferred Equity,Financial Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-Integro Parent Inc.,co_45c1de58d72e,Common Equity,Financial Services,,,,,,,,,,,,,,,CCAP,2024-05-08
-A&A Global Imports LLC,co_8521e3325707,Common Equity,Other,,,,,,,,,,,,,,,CCAP,2024-05-08
-LSCS Holdings Inc.,co_a9729536583e,Common Equity,Pharmaceuticals & Biotechnology,,,,,,,,,,,,,,,CCAP,2024-05-08
-LSCS Holdings Inc.,co_a9729536583e,Preferred Equity,Pharmaceuticals & Biotechnology,,,,,,,,,,,,,,,CCAP,2024-05-08
-Teal Acquisition Co Inc.,co_4736b532428b,Common Equity,Pharmaceuticals & Biotechnology,,,,,,,,,,,,,,,CCAP,2024-05-08
-WCT Group Holdings LLC,co_45fab153c3a3,Common Equity,Pharmaceuticals & Biotechnology,,,,,,,,,,,,,,,CCAP,2024-05-08
-Palmetto Moon LLC,co_936269346449,Common Equity,Retail,,,,,,,,,,,,,,,CCAP,2024-05-08
-MeriCal LLC,co_fc8e383d430b,Preferred Equity,Retail,,,,,,,,,,,,,,,CCAP,2024-05-08
-MeriCal LLC,co_fc8e383d430b,Common Equity,Retail,,,,,,,,,,,,,,,CCAP,2024-05-08
-Slickdeals Holdings LLC,co_7621c67fdb3b,Common Equity,Retail,,,,,,,,,,,,,,,CCAP,2024-05-08
-Vivid Seats Ltd.,co_50240b3dc90a,Common Equity,Retail,,,,,,,,,,,,,,,CCAP,2024-05-08
-OEM Group LLC,co_a24d2f57ec41,Common Equity,Technology Hardware,,,,,,,,,,,,,,,CCAP,2024-05-08
-Certify Inc.,co_9098e9fef80c,Common Equity,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Lexipol Ranger Buyer Inc.,co_35aa7ee1ea78,Common Equity,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-NMN Holdings III Corp.,co_674f7f92840d,Common Equity,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Odessa Technologies Inc.,co_37b004402d02,Common Equity,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Park Place Technologies LLC,co_7b62066cfc4f,Common Equity,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Saturn Borrower Inc.,co_2fa9efcecbc8,Common Equity,Software,,,,,,,,,,,,,,,CCAP,2024-05-08
-Xpress Global Systems LLC,co_6049a7e376dd,Common Equity,Transportation,,,,,,,,,,,,,,,CCAP,2024-05-08
-Senior Secured First Lien,co_6d49b7ed78a8,First Lien,,,,,,26100,,,,,,,,,,CCAP,2024-05-08
-Unitranche First Lien,co_ba2870edd720,First Lien,,,,,,44000,,,,,,,,,,CCAP,2024-05-08
-Unsecured Debt,co_91c7fe56e58c,Other Debt,,,,,,3400,,,,,,,,,,CCAP,2024-05-08
-Equity & Other,co_f8fa5f70c6f9,Other Equity,,,,,,400,,,,,,,,,,CCAP,2024-05-08
-LLC/LP,co_91b1612135d9,Other Equity,,,,,,0,,,,,,,,,,CCAP,2024-05-08
-Senior Secured First Lien,co_6d49b7ed78a8,First Lien,,,,,,46100,,,,,,,,,,CCAP,2024-05-08
-Unitranche First Lien,co_ba2870edd720,First Lien,,,,,,42700,,,,,,,,,,CCAP,2024-05-08
-Unitranche First Lien - Last Out,co_91eb4c1cdfc0,First Lien,,,,,,900,,,,,,,,,,CCAP,2024-05-08
-Senior Secured Second Lien,co_55787fde83f8,Second Lien,,,,,,2400,,,,,,,,,,CCAP,2024-05-08
-Equity & Other,co_f8fa5f70c6f9,Other Equity,,,,,,1000,,,,,,,,,,CCAP,2024-05-08
-LLC/LP,co_91b1612135d9,Other Equity,,,,,,5300,,,,,,,,,,CCAP,2024-05-08
-AX VI INV2 Holding AB,co_3e590fb76f2d,Common Equity,Retail,,,,,,,42700,,,,,,,,CCAP,2024-05-08
-Pushpay USA Inc.,co_fa4c0928a4b2,First Lien,Software,,,,,,,900,,,,,,,,CCAP,2024-05-08
-Pushpay USA Inc.,co_fa4c0928a4b2,Revolver,Software,,,,,,,2400,,,,,,,,CCAP,2024-05-08
+Auveco Holdings,co_3c49ce55e581,Other,Automotive,,,,,,,,-6,,,-6,,,,CCAP,2024-05-08
+Auveco Holdings,co_3c49ce55e581,First Lien,Automotive,10.74%,,SOFR,5.25%,,,135,131,135,0%,131,,,,CCAP,2024-05-08
+Auveco Holdings,co_3c49ce55e581,First Lien,Automotive,10.74%,,SOFR,5.25%,,,3979,3919,3980,0.5%,3919,,,,CCAP,2024-05-08
+Continental Battery Company,co_636215f6acdc,First Lien,Automotive,12.46%,4.08%,SOFR,7%,,,7285,7215,6305,0.8%,7215,,,,CCAP,2024-05-08
+Continental Battery Company,co_636215f6acdc,First Lien,Automotive,12.46%,4.08%,SOFR,7%,,,2686,2674,2325,0.3%,2674,,,,CCAP,2024-05-08
+Sun Acquirer Corp.,co_011b1b84a898,First Lien,Automotive,11.19%,,SOFR,5.75%,,,9010,8919,9010,1.2%,8919,,,,CCAP,2024-05-08
+Sun Acquirer Corp.,co_011b1b84a898,Other,Automotive,,,,,,,,-23,,,-23,,,,CCAP,2024-05-08
+Sun Acquirer Corp.,co_011b1b84a898,First Lien,Automotive,11.19%,,SOFR,5.75%,,,12750,12573,12750,1.7%,12573,,,,CCAP,2024-05-08
+Sun Acquirer Corp.,co_011b1b84a898,First Lien,Automotive,11.19%,,SOFR,5.75%,,,2444,2408,2444,0.3%,2408,,,,CCAP,2024-05-08
+Envocore Holding LLC,co_d2d043c0b44e,First Lien,Industrials,7.5%,,SOFR,7.5%,,,6788,6748,6789,0.9%,6748,,,,CCAP,2024-05-08
+Envocore Holding LLC,co_d2d043c0b44e,First Lien,Industrials,,,,,,,8479,7053,1709,0.2%,7053,,,,CCAP,2024-05-08
+Envocore Holding LLC,co_d2d043c0b44e,First Lien,Industrials,7.5%,,SOFR,7.5%,,,972,969,972,0.1%,969,,,,CCAP,2024-05-08
+Eshipping,co_a8605d2e0cd0,First Lien,Industrials,10.44%,,SOFR,5%,,,5620,5547,5620,0.7%,5547,,,,CCAP,2024-05-08
+Eshipping,co_a8605d2e0cd0,First Lien,Industrials,10.44%,,SOFR,5%,,,871,866,871,0.1%,866,,,,CCAP,2024-05-08
+Eshipping,co_a8605d2e0cd0,First Lien,Industrials,12.5%,,SOFR,4%,,,210,196,210,0%,196,,,,CCAP,2024-05-08
+Oliver Packaging LLC,co_6bd17b3e30e5,First Lien,Industrials,10.5%,,SOFR,5%,,,3349,3304,3257,0.4%,3304,,,,CCAP,2024-05-08
+Oliver Packaging LLC,co_6bd17b3e30e5,First Lien,Industrials,10.46%,,SOFR,5%,,,150,143,136,0%,143,,,,CCAP,2024-05-08
+Painters Supply & Equipment Company,co_ed187de7dd34,First Lien,Industrials,10.93%,,SOFR,5.5%,,,893,888,893,0.1%,888,,,,CCAP,2024-05-08
+Painters Supply & Equipment Company,co_ed187de7dd34,First Lien,Industrials,10.93%,,SOFR,5.5%,,,347,341,347,0%,341,,,,CCAP,2024-05-08
+Painters Supply & Equipment Company,co_ed187de7dd34,First Lien,Industrials,10.9%,,SOFR,5.5%,,,1999,1974,1999,0.3%,1974,,,,CCAP,2024-05-08
+TriStrux LLC,co_fb3c3ba8617f,First Lien,Industrials,11.46%,,SOFR,6%,,,2710,2659,2544,0.3%,2659,,,,CCAP,2024-05-08
+TriStrux LLC,co_fb3c3ba8617f,First Lien,Industrials,11.46%,,SOFR,6%,,,949,930,885,0.1%,930,,,,CCAP,2024-05-08
+TriStrux LLC,co_fb3c3ba8617f,First Lien,Industrials,11.46%,,SOFR,6%,,,951,933,892,0.1%,933,,,,CCAP,2024-05-08
+United Flow Technologies,co_e91cf10503e3,First Lien,Industrials,11.21%,,SOFR,5.75%,,,8379,8267,8070,1.1%,8267,,,,CCAP,2024-05-08
+United Flow Technologies,co_e91cf10503e3,First Lien,Industrials,11.21%,,SOFR,5.75%,,,1176,1160,1133,0.2%,1160,,,,CCAP,2024-05-08
+United Flow Technologies,co_e91cf10503e3,First Lien,Industrials,11.21%,,SOFR,5.75%,,,3678,3634,3542,0.5%,3634,,,,CCAP,2024-05-08
+United Flow Technologies,co_e91cf10503e3,First Lien,Industrials,11.18%,,SOFR,5.75%,,,680,661,621,0.1%,661,,,,CCAP,2024-05-08
+American Refrigeration,co_eec230593c48,First Lien,Business Services,11.46%,,SOFR,6%,,,3500,3466,3467,0.5%,3466,,,,CCAP,2024-05-08
+ASP MCS Acquisition Corp.,co_f05eddc806bd,First Lien,Business Services,11.59%,,SOFR,6%,,,285,276,240,0%,276,,,,CCAP,2024-05-08
+Automated Control Concepts Inc.,co_af6d1a4d242e,First Lien,Business Services,11.07%,,SOFR,5.5%,,,3596,3492,3596,0.5%,3492,,,,CCAP,2024-05-08
+Automated Control Concepts Inc.,co_af6d1a4d242e,First Lien,Business Services,11.07%,,SOFR,5.5%,,,167,143,167,0%,143,,,,CCAP,2024-05-08
+Galway Borrower LLC,co_7b729e02e51d,First Lien,Business Services,13.75%,,SOFR,5.25%,,,14508,14355,14399,1.9%,14355,,,,CCAP,2024-05-08
+Galway Borrower LLC,co_7b729e02e51d,Other,Business Services,,,,,,,,-12,-9,0%,-12,,,,CCAP,2024-05-08
+Galway Borrower LLC,co_7b729e02e51d,Other,Business Services,,,,,,,,-1,-2,0%,-1,,,,CCAP,2024-05-08
+Galway Borrower LLC,co_7b729e02e51d,First Lien,Business Services,10.66%,,SOFR,5.25%,,,175,162,160,0%,162,,,,CCAP,2024-05-08
+GH Parent Holdings Inc.,co_efddd95f1f3e,First Lien,Business Services,10.68%,,SOFR,5.25%,,,12845,12732,12621,1.7%,12732,,,,CCAP,2024-05-08
+GH Parent Holdings Inc.,co_efddd95f1f3e,First Lien,Business Services,10.68%,,SOFR,5.25%,,,333,317,297,0%,317,,,,CCAP,2024-05-08
+GH Parent Holdings Inc.,co_efddd95f1f3e,First Lien,Business Services,10.68%,,SOFR,5.25%,,,5459,5459,5363,0.7%,5459,,,,CCAP,2024-05-08
+Guardian Access Solutions,co_713691baa4b6,First Lien,Business Services,11.06%,,SOFR,5.75%,,,912,889,912,0.1%,889,,,,CCAP,2024-05-08
+Guardian Access Solutions,co_713691baa4b6,First Lien,Business Services,11.08%,,SOFR,5.75%,,,188,171,188,0%,171,,,,CCAP,2024-05-08
+nvestments United States Debt Investments Commercial & Professional Services Guardian Access Solutions,co_10e4fdf96abf,First Lien,,11.09%,,SOFR,5.75%,,,2886,2820,2886,0.4%,2820,,,,CCAP,2024-05-08
+Hercules Borrower LLC,co_34d8b7ece1a7,First Lien,Business Services,11.66%,,SOFR,6.25%,,,18551,18301,18551,2.5%,18301,,,,CCAP,2024-05-08
+Hercules Borrower LLC,co_34d8b7ece1a7,Other,Business Services,,,,,,,,-26,,,-26,,,,CCAP,2024-05-08
+Hercules Borrower LLC,co_34d8b7ece1a7,First Lien,Business Services,10.91%,,SOFR,5.5%,,,241,238,240,0%,238,,,,CCAP,2024-05-08
+Hercules Borrower LLC,co_34d8b7ece1a7,First Lien,Business Services,10.91%,,SOFR,5.5%,,,1439,1428,1435,0.2%,1428,,,,CCAP,2024-05-08
+Hsid Acquisition LLC,co_77ecbc79f4c0,First Lien,Business Services,10.43%,,SOFR,5%,,,3725,3700,3683,0.5%,3700,,,,CCAP,2024-05-08
+Hsid Acquisition LLC,co_77ecbc79f4c0,First Lien,Business Services,9.75%,,SOFR,5%,,,2799,2780,2766,0.4%,2780,,,,CCAP,2024-05-08
+Hsid Acquisition LLC,co_77ecbc79f4c0,Other,Business Services,,,,,,,,-5,-9,0%,-5,,,,CCAP,2024-05-08
+Infobase,co_16d96adb027d,First Lien,Business Services,10.93%,,SOFR,5.5%,,,11102,10934,11035,1.5%,10934,,,,CCAP,2024-05-08
+Infobase,co_16d96adb027d,First Lien,Business Services,11%,,SOFR,5.5%,,,875,854,866,0.1%,854,,,,CCAP,2024-05-08
+Iris Buyer LLC,co_5a3c5d292df0,First Lien,Business Services,11.56%,,SOFR,6.25%,,,10568,10289,10809,1.4%,10289,,,,CCAP,2024-05-08
+Iris Buyer LLC,co_5a3c5d292df0,First Lien,Business Services,11.56%,,SOFR,6.25%,,,996,958,1031,0.1%,958,,,,CCAP,2024-05-08
+Iris Buyer LLC,co_5a3c5d292df0,Other,Business Services,,,,,,,,-38,34,0%,-38,,,,CCAP,2024-05-08
+MHS Acquisition Holdings LLC,co_a78ce7eeccfd,First Lien,Business Services,13.5%,13.5%,,,,,281,280,260,0%,280,,,,CCAP,2024-05-08
+MHS Acquisition Holdings LLC,co_a78ce7eeccfd,First Lien,Business Services,13.5%,13.5%,,,,,901,899,836,0.1%,899,,,,CCAP,2024-05-08
+MHS Acquisition Holdings LLC,co_a78ce7eeccfd,First Lien,Business Services,11.46%,,SOFR,6%,,,940,928,940,0.1%,928,,,,CCAP,2024-05-08
+MHS Acquisition Holdings LLC,co_a78ce7eeccfd,First Lien,Business Services,11.46%,,SOFR,6%,,,220,218,220,0%,218,,,,CCAP,2024-05-08
+MHS Acquisition Holdings LLC,co_a78ce7eeccfd,Other,Business Services,,,,,,,,-2,,,-2,,,,CCAP,2024-05-08
+MHS Acquisition Holdings LLC,co_a78ce7eeccfd,First Lien,Business Services,11.71%,,SOFR,6.25%,,,60,60,60,0%,60,,,,CCAP,2024-05-08
+MHS Acquisition Holdings LLC,co_a78ce7eeccfd,First Lien,Business Services,11.97%,,SOFR,6.5%,,,60,60,60,0%,60,,,,CCAP,2024-05-08
+Minuteman Security Technologies Inc.,co_aef2c92678df,First Lien,Business Services,11.16%,,SOFR,5.75%,,,4328,4232,4328,0.6%,4232,,,,CCAP,2024-05-08
+Minuteman Security Technologies Inc.,co_aef2c92678df,First Lien,Business Services,11.16%,,SOFR,5.75%,,,737,716,737,0.1%,716,,,,CCAP,2024-05-08
+Minuteman Security Technologies Inc.,co_aef2c92678df,First Lien,Business Services,11.17%,,SOFR,5.75%,,,214,192,214,0%,192,,,,CCAP,2024-05-08
+Pye-Barker Fire & Safety LLC,co_21eb6c7d75fe,First Lien,Business Services,10.96%,,SOFR,5.5%,,,4856,4779,4850,0.6%,4779,,,,CCAP,2024-05-08
+Pye-Barker Fire & Safety LLC,co_21eb6c7d75fe,First Lien,Business Services,10.96%,,SOFR,5.5%,,,3611,3547,3607,0.5%,3547,,,,CCAP,2024-05-08
+Pye-Barker Fire & Safety LLC,co_21eb6c7d75fe,First Lien,Business Services,10.96%,,SOFR,5.5%,,,9695,9532,9685,1.3%,9532,,,,CCAP,2024-05-08
+Pye-Barker Fire & Safety LLC,co_21eb6c7d75fe,First Lien,Business Services,10.96%,,SOFR,5.5%,,,1950,1919,1948,0.3%,1919,,,,CCAP,2024-05-08
+Pye-Barker Fire & Safety LLC,co_21eb6c7d75fe,First Lien,Business Services,10.96%,,SOFR,5.5%,,,2541,2515,2538,0.3%,2515,,,,CCAP,2024-05-08
+Pye-Barker Fire & Safety LLC,co_21eb6c7d75fe,Other,Business Services,,,,,,,,-19,-2,0%,-19,,,,CCAP,2024-05-08
+Pye-Barker Fire & Safety LLC,co_21eb6c7d75fe,First Lien,Business Services,11.21%,,SOFR,5.75%,,,1896,1877,1911,0.3%,1877,,,,CCAP,2024-05-08
+Pye-Barker Fire & Safety LLC,co_21eb6c7d75fe,Other,Business Services,,,,,,,,-2,,,-2,,,,CCAP,2024-05-08
+Pye-Barker Fire & Safety LLC,co_21eb6c7d75fe,Other,Business Services,,,,,,,,-69,-2,0%,-69,,,,CCAP,2024-05-08
+Pye-Barker Fire & Safety LLC,co_21eb6c7d75fe,Other,Business Services,,,,,,,,-15,5,0%,-15,,,,CCAP,2024-05-08
+Receivable Solutions Inc.,co_b4ade5e8c953,First Lien,Business Services,13%,,SOFR,4.5%,,,120,119,119,0%,119,,,,CCAP,2024-05-08
+Receivable Solutions Inc.,co_b4ade5e8c953,First Lien,Business Services,10.94%,,SOFR,5.5%,,,2158,2147,2152,0.3%,2147,,,,CCAP,2024-05-08
+Seko Global Logistics Network LLC,co_89c47e7c1b19,First Lien,Business Services,10.46%,,SOFR,5%,,,4924,4883,4706,0.6%,4883,,,,CCAP,2024-05-08
+Seko Global Logistics Network LLC,co_89c47e7c1b19,First Lien,Business Services,12.5%,,SOFR,4%,,,705,693,648,0.1%,693,,,,CCAP,2024-05-08
+Service Logic Acquisition Inc.,co_cf34a20730d5,First Lien,Business Services,11.5%,,,,,,6323,6196,6323,0.8%,6196,,,,CCAP,2024-05-08
+Service Logic Acquisition Inc.,co_cf34a20730d5,First Lien,Business Services,11.5%,,,,,,2359,2308,2359,0.3%,2308,,,,CCAP,2024-05-08
+SuperHero Fire Protection LLC,co_d77821b57a2c,First Lien,Business Services,11.71%,,SOFR,6.25%,,,5486,5459,5456,0.7%,5459,,,,CCAP,2024-05-08
+SuperHero Fire Protection LLC,co_d77821b57a2c,First Lien,Business Services,11.71%,,SOFR,6.25%,,,371,368,368,0%,368,,,,CCAP,2024-05-08
+Bandon Fitness (Texas) Inc.,co_8ed408819d9b,First Lien,Consumer & Retail,11.46%,,SOFR,6%,,,4762,4705,4730,0.6%,4705,,,,CCAP,2024-05-08
+Bandon Fitness (Texas) Inc.,co_8ed408819d9b,First Lien,Consumer & Retail,11.48%,,SOFR,6%,,,242,237,239,0%,237,,,,CCAP,2024-05-08
+Bandon Fitness (Texas) Inc.,co_8ed408819d9b,First Lien,Consumer & Retail,11.46%,,SOFR,6%,,,1487,1460,1472,0.2%,1460,,,,CCAP,2024-05-08
+Effective School Solutions LLC,co_ceeb2595f350,First Lien,Consumer & Retail,11.1%,,SOFR,5.5%,,,7595,7505,7528,1%,7505,,,,CCAP,2024-05-08
+Effective School Solutions LLC,co_ceeb2595f350,First Lien,Consumer & Retail,10.94%,,SOFR,5.5%,,,348,330,335,0%,330,,,,CCAP,2024-05-08
+Everlast Parent Inc.,co_acc567adc7f6,First Lien,Consumer & Retail,11.91%,,SOFR,6.5%,,,13573,13407,13190,1.8%,13407,,,,CCAP,2024-05-08
+Everlast Parent Inc.,co_acc567adc7f6,First Lien,Consumer & Retail,11.91%,,SOFR,6.5%,,,806,788,760,0.1%,788,,,,CCAP,2024-05-08
+Everlast Parent Inc.,co_acc567adc7f6,First Lien,Consumer & Retail,11.16%,,SOFR,5.75%,,,3336,3275,3187,0.4%,3275,,,,CCAP,2024-05-08
+FS Whitewater Borrower LLC,co_2eb67dc5a406,First Lien,Consumer & Retail,11.21%,,SOFR,5.75%,,,5056,4988,5056,0.7%,4988,,,,CCAP,2024-05-08
+FS Whitewater Borrower LLC,co_2eb67dc5a406,First Lien,Consumer & Retail,11.21%,,SOFR,5.75%,,,1697,1688,1697,0.2%,1688,,,,CCAP,2024-05-08
+FS Whitewater Borrower LLC,co_2eb67dc5a406,First Lien,Consumer & Retail,11.21%,,SOFR,5.75%,,,1686,1666,1686,0.2%,1666,,,,CCAP,2024-05-08
+FS Whitewater Borrower LLC,co_2eb67dc5a406,First Lien,Consumer & Retail,11.23%,,SOFR,5.75%,,,638,629,638,0.1%,629,,,,CCAP,2024-05-08
+FS Whitewater Borrower LLC,co_2eb67dc5a406,First Lien,Consumer & Retail,11.47%,,SOFR,6%,,,1593,1581,1593,0.2%,1581,,,,CCAP,2024-05-08
+HGH Purchaser Inc.,co_1221d99fd14e,First Lien,Consumer & Retail,12.43%,2.5%,SOFR,7%,,,3294,3280,3141,0.4%,3280,,,,CCAP,2024-05-08
+HGH Purchaser Inc.,co_1221d99fd14e,First Lien,Consumer & Retail,12.43%,2.5%,SOFR,7%,,,3263,3232,3111,0.4%,3232,,,,CCAP,2024-05-08
+HGH Purchaser Inc.,co_1221d99fd14e,Other,Consumer & Retail,,,,,,,,-8,-72,0%,-8,,,,CCAP,2024-05-08
+HGH Purchaser Inc.,co_1221d99fd14e,First Lien,Consumer & Retail,12.43%,2.5%,SOFR,7%,,,7764,7705,7402,1%,7705,,,,CCAP,2024-05-08
+HS Spa Holdings Inc.,co_0558d6361718,First Lien,Consumer & Retail,11.08%,,SOFR,5.75%,,,238,217,238,0%,217,,,,CCAP,2024-05-08
+HS Spa Holdings Inc.,co_0558d6361718,First Lien,Consumer & Retail,11.09%,,SOFR,5.75%,,,10239,10089,10332,1.4%,10089,,,,CCAP,2024-05-08
+HS Spa Holdings Inc.,co_0558d6361718,First Lien,Consumer & Retail,12.38%,12.38%,,,,,1579,1551,1318,0.2%,1551,,,,CCAP,2024-05-08
+HS Spa Holdings Inc.,co_0558d6361718,First Lien,Consumer & Retail,11.59%,,SOFR,6.25%,,,887,871,905,0.1%,871,,,,CCAP,2024-05-08
+HS Spa Holdings Inc.,co_0558d6361718,Other,Consumer & Retail,,,,,,,,-10,-10,0%,-10,,,,CCAP,2024-05-08
+Ingenio LLC,co_a1d7ca106933,First Lien,Consumer & Retail,12.49%,,SOFR,7%,,,4735,4670,4770,0.6%,4670,,,,CCAP,2024-05-08
+Ingenio LLC,co_a1d7ca106933,First Lien,Consumer & Retail,12.49%,,SOFR,7%,,,2097,2066,2112,0.3%,2066,,,,CCAP,2024-05-08
+Learn-It Systems LLC,co_57f92c598f4f,Other,Consumer & Retail,,,,,,,,-5,-20,0%,-5,,,,CCAP,2024-05-08
+Learn-It Systems LLC,co_57f92c598f4f,First Lien,Consumer & Retail,10.68%,,SOFR,5.25%,,,2594,2564,2535,0.3%,2564,,,,CCAP,2024-05-08
+Learn-It Systems LLC,co_57f92c598f4f,First Lien,Consumer & Retail,10.71%,2.75%,SOFR,5.25%,,,4387,4343,4287,0.6%,4343,,,,CCAP,2024-05-08
+Learn-It Systems LLC,co_57f92c598f4f,First Lien,Consumer & Retail,10.68%,2.75%,SOFR,5.25%,,,1175,1163,1148,0.2%,1163,,,,CCAP,2024-05-08
+Mario Purchaser LLC,co_b717c9ab9fee,First Lien,Consumer & Retail,11.18%,,SOFR,5.75%,,,4454,4416,4498,0.6%,4416,,,,CCAP,2024-05-08
+Mario Purchaser LLC,co_b717c9ab9fee,First Lien,Consumer & Retail,16.96%,10.75%,,,,,3768,3675,3768,0.5%,3675,,,,CCAP,2024-05-08
+Mario Purchaser LLC,co_b717c9ab9fee,Other,Consumer & Retail,,,,,,,,-15,9,0%,-15,,,,CCAP,2024-05-08
+Mario Purchaser LLC,co_b717c9ab9fee,First Lien,Consumer & Retail,11.18%,,SOFR,5.75%,,,9738,9585,9820,1.3%,9585,,,,CCAP,2024-05-08
+Marlin DTC-LS Midco 2 LLC,co_e39e6c0751bb,Other,Consumer & Retail,,,,,,,,0,-2,0%,0,,,,CCAP,2024-05-08
+Marlin DTC-LS Midco 2 LLC,co_e39e6c0751bb,First Lien,Consumer & Retail,11.99%,,SOFR,6.5%,,,3010,3001,2968,0.4%,3001,,,,CCAP,2024-05-08
+Point Quest Acquisition LLC,co_d4b48be81a2f,First Lien,Consumer & Retail,11.69%,,SOFR,6%,,,3488,3450,3522,0.5%,3450,,,,CCAP,2024-05-08
+Point Quest Acquisition LLC,co_d4b48be81a2f,First Lien,Consumer & Retail,11.47%,,SOFR,6%,,,771,758,782,0.1%,758,,,,CCAP,2024-05-08
+PPV Intermediate Holdings LLC,co_56235911ea0a,Other,Consumer & Retail,,,,,,,,-4,-6,0%,-4,,,,CCAP,2024-05-08
+PPV Intermediate Holdings LLC,co_56235911ea0a,First Lien,Consumer & Retail,11.09%,,SOFR,5.75%,,,3522,3480,3522,0.5%,3480,,,,CCAP,2024-05-08
+PPV Intermediate Holdings LLC,co_56235911ea0a,First Lien,Consumer & Retail,13.75%,13.75%,,,,,1100,1078,1081,0.1%,1078,,,,CCAP,2024-05-08
+PPV Intermediate Holdings LLC,co_56235911ea0a,First Lien,Consumer & Retail,13.75%,13.75%,,,,,274,271,262,0%,271,,,,CCAP,2024-05-08
+smarTours LLC,co_b5675d322650,First Lien,Consumer & Retail,,,,,,,1942,1942,,,1942,,,,CCAP,2024-05-08
+smarTours LLC,co_b5675d322650,First Lien,Consumer & Retail,,,,,,,1203,1203,,,1203,,,,CCAP,2024-05-08
+Stepping Stones Healthcare Services LLC,co_ef6f838d442b,First Lien,Consumer & Retail,10.91%,,SOFR,5.5%,,,12943,12740,12944,1.6%,12740,,,,CCAP,2024-05-08
+Stepping Stones Healthcare Services LLC,co_ef6f838d442b,First Lien,Consumer & Retail,10.91%,,SOFR,5.5%,,,2905,2886,2905,0.4%,2886,,,,CCAP,2024-05-08
+Stepping Stones Healthcare Services LLC,co_ef6f838d442b,Other,Consumer & Retail,,,,,,,,-26,,,-26,,,,CCAP,2024-05-08
+The Mulch & Soil Company LLC,co_7f4c3c21cbc7,First Lien,Consumer & Retail,11.46%,,SOFR,6%,,,3645,3594,3645,0.5%,3594,,,,CCAP,2024-05-08
+The Mulch & Soil Company LLC,co_7f4c3c21cbc7,First Lien,Consumer & Retail,11.47%,,SOFR,6%,,,98,83,98,0%,83,,,,CCAP,2024-05-08
+United Language Group Inc.,co_a131e4aefff4,First Lien,Consumer & Retail,12.18%,,SOFR,6.75%,,,400,400,400,0.1%,400,,,,CCAP,2024-05-08
+United Language Group Inc.,co_a131e4aefff4,First Lien,Consumer & Retail,12.18%,,SOFR,6.75%,,,4486,4494,4486,0.6%,4494,,,,CCAP,2024-05-08
+USA Hometown Experts Inc.,co_4531db8ad2d3,First Lien,Consumer & Retail,10.91%,,SOFR,5.5%,,,1496,1482,1496,0.2%,1482,,,,CCAP,2024-05-08
+USA Hometown Experts Inc.,co_4531db8ad2d3,Other,Consumer & Retail,,,,,,,,-15,,,-15,,,,CCAP,2024-05-08
+USA Hometown Experts Inc.,co_4531db8ad2d3,First Lien,Consumer & Retail,10.93%,,SOFR,5.5%,,,135,127,135,0%,127,,,,CCAP,2024-05-08
+Wrench Group LLC,co_1ae37eca31cd,First Lien,Consumer & Retail,13.28%,,SOFR,7.88%,,,4833,4762,4833,0.6%,4762,,,,CCAP,2024-05-08
+Alera Group Inc.,co_e58c13b050eb,First Lien,Financial Services,11.93%,,SOFR,6.5%,,,9879,9727,9879,1.3%,9727,,,,CCAP,2024-05-08
+Alera Group Inc.,co_e58c13b050eb,First Lien,Financial Services,11.93%,,SOFR,6.5%,,,4925,4848,4925,0.7%,4848,,,,CCAP,2024-05-08
+Alera Group Inc.,co_e58c13b050eb,First Lien,Financial Services,11.18%,,SOFR,5.75%,,,156,99,219,0%,99,,,,CCAP,2024-05-08
+Alpine X,co_8a4ff651559b,First Lien,Financial Services,11.59%,,SOFR,6%,,,1397,1386,1397,0.2%,1386,,,,CCAP,2024-05-08
+Alpine X,co_8a4ff651559b,First Lien,Financial Services,11.59%,,SOFR,6%,,,91,89,91,0%,89,,,,CCAP,2024-05-08
+Alpine X,co_8a4ff651559b,First Lien,Financial Services,11.59%,,SOFR,6%,,,901,893,901,0.1%,893,,,,CCAP,2024-05-08
+Alpine X,co_8a4ff651559b,First Lien,Financial Services,11.59%,,SOFR,6%,,,1478,1465,1478,0.2%,1465,,,,CCAP,2024-05-08
+Alpine X,co_8a4ff651559b,First Lien,Financial Services,11.59%,,SOFR,6%,,,43,42,43,0%,42,,,,CCAP,2024-05-08
+iLending LLC,co_b14d8a57be01,First Lien,Financial Services,13.93%,2%,SOFR,8.5%,,,4348,4348,3739,0.5%,4348,,,,CCAP,2024-05-08
+King Mid LLC,co_01dbf1326890,First Lien,Financial Services,11.46%,,SOFR,6%,,,3318,3294,3318,0.4%,3294,,,,CCAP,2024-05-08
+King Mid LLC,co_01dbf1326890,Other,Financial Services,,,,,,,,-2,,,-2,,,,CCAP,2024-05-08
+King Mid LLC,co_01dbf1326890,First Lien,Financial Services,11.46%,,SOFR,6%,,,3414,3366,3414,0.5%,3366,,,,CCAP,2024-05-08
+PCS Retirement,co_d21924480af3,First Lien,Financial Services,11.07%,,SOFR,5.75%,,,180,172,163,0%,172,,,,CCAP,2024-05-08
+PCS Retirement,co_d21924480af3,First Lien,Financial Services,11.08%,,SOFR,5.75%,,,35,28,28,0%,28,,,,CCAP,2024-05-08
+PCS Retirement,co_d21924480af3,First Lien,Financial Services,11.09%,,SOFR,5.75%,,,5100,5049,5050,0.7%,5049,,,,CCAP,2024-05-08
+Pinnacle Purchaser LLC,co_5e9e2cbda573,First Lien,Financial Services,10.93%,,SOFR,5.75%,,,7232,7164,7232,1%,7164,,,,CCAP,2024-05-08
+nvestments United States Debt Investments Diversified Financials Pinnacle Purchaser,co_3bf4727c9a9e,Revolver,,10.93%,,SOFR,5.75%,,,175,168,175,0%,168,,,,CCAP,2024-05-08
+Allied Wireline Services LLC,co_6d1e1b9b8d48,First Lien,Energy,,,,,,,6590,4588,2313,0.3%,4588,,,,CCAP,2024-05-08
+Loadmaster Derrick & Equipment Inc.,co_a249e355b623,First Lien,Energy,3%,,SOFR,3%,,,20711,1557,8000,1.1%,1557,,,,CCAP,2024-05-08
+Isagenix International LLC,co_74cecae1e15d,First Lien,Food & Beverage,11.04%,3.1%,SOFR,5.6%,,,2956,2715,2586,0.3%,2715,,,,CCAP,2024-05-08
+JTM Foods LLC,co_06b459454f11,First Lien,Food & Beverage,10.73%,,SOFR,5.25%,,,4911,4861,4878,0.6%,4861,,,,CCAP,2024-05-08
+JTM Foods LLC,co_06b459454f11,First Lien,Food & Beverage,10.72%,,SOFR,5.25%,,,667,659,661,0.1%,659,,,,CCAP,2024-05-08
+JTM Foods LLC,co_06b459454f11,First Lien,Food & Beverage,10.71%,,SOFR,5.25%,,,665,662,661,0.1%,662,,,,CCAP,2024-05-08
+Mann Lake Ltd.,co_00bc46e8a60d,First Lien,Food & Beverage,12.31%,,SOFR,6.75%,,,850,848,818,0.1%,848,,,,CCAP,2024-05-08
+Mann Lake Ltd.,co_00bc46e8a60d,First Lien,Food & Beverage,12.31%,,SOFR,6.75%,,,1695,1692,1636,0.2%,1692,,,,CCAP,2024-05-08
+ACI Group Holdings Inc.,co_12ac7682544d,First Lien,Healthcare,10.93%,,SOFR,5.5%,,,6887,6767,6749,0.9%,6767,,,,CCAP,2024-05-08
+ACI Group Holdings Inc.,co_12ac7682544d,First Lien,Healthcare,10.93%,,SOFR,5.5%,,,1234,1227,1210,0.2%,1227,,,,CCAP,2024-05-08
+ACI Group Holdings Inc.,co_12ac7682544d,First Lien,Healthcare,10.93%,,SOFR,5.5%,,,639,618,612,0.1%,618,,,,CCAP,2024-05-08
+ACI Group Holdings Inc.,co_12ac7682544d,First Lien,Healthcare,10.93%,,SOFR,5.5%,,,111,102,96,0%,102,,,,CCAP,2024-05-08
+Acu-Serve LLC,co_61f88becae63,First Lien,Healthcare,11.06%,,SOFR,5.75%,,,3990,3954,3990,0.5%,3954,,,,CCAP,2024-05-08
+Acu-Serve LLC,co_61f88becae63,First Lien,Healthcare,11.08%,,SOFR,5.75%,,,220,211,220,0%,211,,,,CCAP,2024-05-08
+Acu-Serve LLC,co_61f88becae63,Other,Healthcare,,,,,,,,-7,,,-7,,,,CCAP,2024-05-08
+Advanced Diabetes Supply,co_eea75212d544,First Lien,Healthcare,10.45%,,SOFR,5%,,,3432,3414,3432,0.5%,3414,,,,CCAP,2024-05-08
+Advanced Diabetes Supply,co_eea75212d544,First Lien,Healthcare,10.45%,,SOFR,5%,,,4900,4845,4900,0.7%,4845,,,,CCAP,2024-05-08
+Advanced Diabetes Supply,co_eea75212d544,Other,Healthcare,,,,,,,,-4,,,-4,,,,CCAP,2024-05-08
+Annuity Health,co_8b1fb197ff5c,First Lien,Healthcare,10.57%,,SOFR,5.25%,,,160,152,152,0%,152,,,,CCAP,2024-05-08
+Annuity Health,co_8b1fb197ff5c,First Lien,Healthcare,10.57%,,SOFR,5.25%,,,4200,4159,4159,0.6%,4159,,,,CCAP,2024-05-08
+Arrow Management Acquisition LLC,co_2ecc38e3fb51,First Lien,Healthcare,10.18%,,SOFR,5%,,,4839,4776,4803,0.6%,4776,,,,CCAP,2024-05-08
+Arrow Management Acquisition LLC,co_2ecc38e3fb51,First Lien,Healthcare,10.18%,,SOFR,5%,,,2164,2151,2148,0.3%,2151,,,,CCAP,2024-05-08
+Arrow Management Acquisition LLC,co_2ecc38e3fb51,Other,Healthcare,,,,,,,,-8,-5,0%,-8,,,,CCAP,2024-05-08
+Avalign Technologies Inc.,co_5d2ecdd7f044,Other,Healthcare,,,,,,,,-33,-33,0%,-33,,,,CCAP,2024-05-08
+Avalign Technologies Inc.,co_5d2ecdd7f044,First Lien,Healthcare,11.83%,,SOFR,6.5%,,,12897,12642,12639,1.7%,12642,,,,CCAP,2024-05-08
+Bayside Opco LLC,co_9c51c4f6d054,First Lien,Healthcare,12.7%,7.25%,,,,,4482,4482,4482,0.6%,4482,,,,CCAP,2024-05-08
+Bayside Opco LLC,co_9c51c4f6d054,First Lien,Healthcare,12.7%,7.25%,,,,,1585,1585,1585,0.2%,1585,,,,CCAP,2024-05-08
+Bayside Opco LLC,co_9c51c4f6d054,First Lien,Healthcare,,,,,,,1621,474,1078,0.1%,474,,,,CCAP,2024-05-08
+BCDI Rodeo Dental Buyer LLC,co_4c51e28886f6,First Lien,Healthcare,10.74%,,SOFR,5.25%,,,5673,5619,5616,0.7%,5619,,,,CCAP,2024-05-08
+BCDI Rodeo Dental Buyer LLC,co_4c51e28886f6,First Lien,Healthcare,10.74%,,SOFR,5.25%,,,517,502,501,0.1%,502,,,,CCAP,2024-05-08
+BCDI Rodeo Dental Buyer LLC,co_4c51e28886f6,First Lien,Healthcare,10.74%,,SOFR,5.25%,,,1266,1254,1253,0.2%,1254,,,,CCAP,2024-05-08
+BCDI Rodeo Dental Buyer LLC,co_4c51e28886f6,First Lien,Healthcare,10.71%,,SOFR,5.25%,,,123,121,122,0%,121,,,,CCAP,2024-05-08
+CC Amulet Management LLC,co_40e2b5787ab0,First Lien,Healthcare,10.82%,,SOFR,5.25%,,,5013,4947,4840,0.6%,4947,,,,CCAP,2024-05-08
+CC Amulet Management LLC,co_40e2b5787ab0,First Lien,Healthcare,10.83%,,SOFR,5.25%,,,750,740,724,0.1%,740,,,,CCAP,2024-05-08
+CC Amulet Management LLC,co_40e2b5787ab0,First Lien,Healthcare,12.35%,,SOFR,6.75%,,,199,186,199,0%,186,,,,CCAP,2024-05-08
+Centria Subsidiary Holdings LLC,co_7ae3c1d1784f,First Lien,Healthcare,13.25%,,SOFR,4.75%,,,750,733,750,0.1%,733,,,,CCAP,2024-05-08
+Centria Subsidiary Holdings LLC,co_7ae3c1d1784f,First Lien,Healthcare,11.17%,,SOFR,5.75%,,,11368,11299,11368,1.5%,11299,,,,CCAP,2024-05-08
+ConvenientMD,co_3b4ce490f949,First Lien,Healthcare,10.74%,,SOFR,5.25%,,,5363,5283,5128,0.7%,5283,,,,CCAP,2024-05-08
+ConvenientMD,co_3b4ce490f949,First Lien,Healthcare,10.73%,,SOFR,5.25%,,,550,539,520,0.1%,539,,,,CCAP,2024-05-08
+ConvenientMD,co_3b4ce490f949,First Lien,Healthcare,10.72%,,SOFR,5.25%,,,1021,1005,976,0.1%,1005,,,,CCAP,2024-05-08
+CRA MSO LLC,co_e0589cb9c0a4,First Lien,Healthcare,10.93%,,SOFR,5.5%,,,1158,1155,1153,0.2%,1155,,,,CCAP,2024-05-08
+CRA MSO LLC,co_e0589cb9c0a4,First Lien,Healthcare,10.93%,,SOFR,5.5%,,,108,108,107,0%,108,,,,CCAP,2024-05-08
+EMS Buyer Inc.,co_3a4a1c7732fb,First Lien,Healthcare,11.18%,,SOFR,5.75%,,,11537,11402,11453,1.5%,11402,,,,CCAP,2024-05-08
+EMS Buyer Inc.,co_3a4a1c7732fb,First Lien,Healthcare,11.18%,,SOFR,5.75%,,,495,489,491,0.1%,489,,,,CCAP,2024-05-08
+EMS Buyer Inc.,co_3a4a1c7732fb,First Lien,Healthcare,11.18%,,SOFR,5.75%,,,983,969,975,0.1%,969,,,,CCAP,2024-05-08
+Explorer Investor Inc.,co_c6dbdcc712fd,First Lien,Healthcare,11.33%,,SOFR,6%,,,13549,13019,13211,1.8%,13019,,,,CCAP,2024-05-08
+FH MD Buyer Inc.,co_61c254ab9060,First Lien,Healthcare,10.44%,,SOFR,5%,,,19500,19380,18233,2.4%,19380,,,,CCAP,2024-05-08
+GrapeTree Medical Staffing LLC,co_e978c56a46db,First Lien,Healthcare,10.44%,,SOFR,5%,,,6109,6094,6071,0.8%,6094,,,,CCAP,2024-05-08
+GrapeTree Medical Staffing LLC,co_e978c56a46db,Other,Healthcare,,,,,,,,-1,-4,0%,-1,,,,CCAP,2024-05-08
+GrapeTree Medical Staffing LLC,co_e978c56a46db,First Lien,Healthcare,10.44%,,SOFR,5%,,,3590,3581,3568,0.5%,3581,,,,CCAP,2024-05-08
+Great Lakes Dental Partners LLC,co_212968f7c3be,First Lien,Healthcare,12.68%,1%,SOFR,7.25%,,,4935,4884,4531,0.6%,4884,,,,CCAP,2024-05-08
+Great Lakes Dental Partners LLC,co_212968f7c3be,First Lien,Healthcare,12.68%,1%,SOFR,7.25%,,,304,301,271,0%,301,,,,CCAP,2024-05-08
+HCOS Group Intermediate III LLC,co_d6c81bc16ebb,First Lien,Healthcare,10.95%,,SOFR,5.5%,,,11194,11089,11194,1.5%,11089,,,,CCAP,2024-05-08
+HCOS Group Intermediate III LLC,co_d6c81bc16ebb,First Lien,Healthcare,10.96%,,SOFR,5.5%,,,511,501,511,0.1%,501,,,,CCAP,2024-05-08
+HCOS Group Intermediate III LLC,co_d6c81bc16ebb,First Lien,Healthcare,10.95%,,SOFR,5.5%,,,9237,9138,9237,1.2%,9138,,,,CCAP,2024-05-08
+Homecare Partners Management LLC,co_cca887780b93,First Lien,Healthcare,11.39%,,SOFR,5.75%,,,4436,4381,4355,0.6%,4381,,,,CCAP,2024-05-08
+Homecare Partners Management LLC,co_cca887780b93,First Lien,Healthcare,13.25%,,SOFR,4.25%,,,953,938,933,0.1%,938,,,,CCAP,2024-05-08
+Homecare Partners Management LLC,co_cca887780b93,First Lien,Healthcare,11.21%,,SOFR,5.75%,,,3319,3267,3258,0.4%,3267,,,,CCAP,2024-05-08
+Homecare Partners Management LLC,co_cca887780b93,First Lien,Healthcare,10.74%,,SOFR,5.25%,,,1081,1065,1061,0.1%,1065,,,,CCAP,2024-05-08
+Hospice Care Buyer Inc.,co_db69e7e43598,First Lien,Healthcare,12.4%,5%,SOFR,12.5%,,,14533,14351,14497,1.9%,14351,,,,CCAP,2024-05-08
+Hospice Care Buyer Inc.,co_db69e7e43598,First Lien,Healthcare,12.4%,5%,SOFR,12.5%,,,2654,2615,2648,0.4%,2615,,,,CCAP,2024-05-08
+Hospice Care Buyer Inc.,co_db69e7e43598,First Lien,Healthcare,12.4%,5%,SOFR,12.5%,,,768,746,764,0.1%,746,,,,CCAP,2024-05-08
+Hospice Care Buyer Inc.,co_db69e7e43598,First Lien,Healthcare,12.99%,5%,SOFR,12.5%,,,2707,2666,2700,0.4%,2666,,,,CCAP,2024-05-08
+Hospice Care Buyer Inc.,co_db69e7e43598,First Lien,Healthcare,12.95%,5%,SOFR,12.5%,,,386,379,385,0.1%,379,,,,CCAP,2024-05-08
+Integrated Pain Management Medical Group Inc.,co_ac4181f3e35c,First Lien,Healthcare,11.98%,,SOFR,6.5%,,,3022,3022,3020,0.4%,3022,,,,CCAP,2024-05-08
+Integrated Pain Management Medical Group Inc.,co_ac4181f3e35c,First Lien,Healthcare,11.98%,,SOFR,6.5%,,,363,363,362,0%,363,,,,CCAP,2024-05-08
+Integrated Pain Management Medical Group Inc.,co_ac4181f3e35c,First Lien,Healthcare,11.98%,,SOFR,6.5%,,,831,831,830,0.1%,831,,,,CCAP,2024-05-08
+Laserway Intermediate Holdings II LLC,co_5c7ad45c1016,First Lien,Healthcare,11.33%,,SOFR,5.75%,,,5948,5869,5933,0.8%,5869,,,,CCAP,2024-05-08
+Lighthouse Behavioral Health Solutions LLC,co_d35767d0055e,First Lien,Healthcare,12.66%,0.5%,SOFR,7%,,,1151,1146,1033,0.1%,1146,,,,CCAP,2024-05-08
+Lighthouse Behavioral Health Solutions LLC,co_d35767d0055e,First Lien,Healthcare,12.07%,0.75%,SOFR,6.5%,,,470,468,422,0.1%,468,,,,CCAP,2024-05-08
+Lighthouse Behavioral Health Solutions LLC,co_d35767d0055e,First Lien,Healthcare,11.82%,0.5%,SOFR,6.25%,,,2257,2249,2026,0.3%,2249,,,,CCAP,2024-05-08
+Lighthouse Lab Services,co_49f712128c40,First Lien,Healthcare,11.21%,,SOFR,5.75%,,,5579,5507,5409,0.7%,5507,,,,CCAP,2024-05-08
+Lighthouse Lab Services,co_49f712128c40,First Lien,Healthcare,11.21%,,SOFR,5.75%,,,767,752,730,0.1%,752,,,,CCAP,2024-05-08
+Lightspeed Buyer Inc.,co_961292b66f9d,First Lien,Healthcare,10.68%,,SOFR,5.25%,,,9600,9535,9538,1.3%,9535,,,,CCAP,2024-05-08
+Lightspeed Buyer Inc.,co_961292b66f9d,Other,Healthcare,,,,,,,,-6,-7,0%,-6,,,,CCAP,2024-05-08
+Lightspeed Buyer Inc.,co_961292b66f9d,First Lien,Healthcare,10.68%,,SOFR,5.25%,,,1739,1732,1728,0.2%,1732,,,,CCAP,2024-05-08
+Lightspeed Buyer Inc.,co_961292b66f9d,First Lien,Healthcare,10.71%,,SOFR,5.25%,,,2176,2154,2162,0.3%,2154,,,,CCAP,2024-05-08
+Lightspeed Buyer Inc.,co_961292b66f9d,First Lien,Healthcare,10.68%,,SOFR,5.25%,,,967,967,961,0.1%,967,,,,CCAP,2024-05-08
+MB2 Dental,co_e9ab04c1530d,Other,Healthcare,,,,,,,,-21,-21,0%,-21,,,,CCAP,2024-05-08
+MB2 Dental,co_e9ab04c1530d,Other,Healthcare,,,,,,,,-25,-13,0%,-25,,,,CCAP,2024-05-08
+MB2 Dental,co_e9ab04c1530d,Other,Healthcare,,,,,,,,-4,-4,0%,-4,,,,CCAP,2024-05-08
+Invaestments United States Debt Investments Health Care Equipment & Services MB2 Dental,co_54b40986d9ff,Other,,,,,,,,,,,,,,,,CCAP,2024-05-08
+MB2 Dental,co_e9ab04c1530d,First Lien,Healthcare,11.32%,,SOFR,6%,,,6160,6099,6099,0.8%,6099,,,,CCAP,2024-05-08
+Multi Specialty Healthcare,co_561754a4033a,First Lien,Healthcare,11.71%,,SOFR,6.25%,,,3666,3638,3657,0.5%,3638,,,,CCAP,2024-05-08
+Multi Specialty Healthcare,co_561754a4033a,First Lien,Healthcare,11.96%,,SOFR,6.5%,,,523,518,521,0.1%,518,,,,CCAP,2024-05-08
+Multi Specialty Healthcare,co_561754a4033a,First Lien,Healthcare,11.71%,,SOFR,6.25%,,,147,146,147,0%,146,,,,CCAP,2024-05-08
+Multi Specialty Healthcare,co_561754a4033a,First Lien,Healthcare,11.71%,,SOFR,6.25%,,,2758,2735,2752,0.4%,2735,,,,CCAP,2024-05-08
+Multi Specialty Healthcare,co_561754a4033a,First Lien,Healthcare,11.75%,,SOFR,6.25%,,,98,97,97,0%,97,,,,CCAP,2024-05-08
+MWD Management LLC,co_d426577881d8,First Lien,Healthcare,10.41%,,SOFR,5%,,,4444,4385,4392,0.6%,4385,,,,CCAP,2024-05-08
+MWD Management LLC,co_d426577881d8,First Lien,Healthcare,10.41%,,SOFR,5%,,,5516,5440,5452,0.7%,5440,,,,CCAP,2024-05-08
+MWD Management LLC,co_d426577881d8,First Lien,Healthcare,10.41%,,SOFR,5%,,,1200,1184,1186,0.2%,1184,,,,CCAP,2024-05-08
+Omni Ophthalmic Management Consultants LLC,co_ad95a1b9f021,First Lien,Healthcare,12.93%,,SOFR,7.5%,,,856,854,835,0.1%,854,,,,CCAP,2024-05-08
+Omni Ophthalmic Management Consultants LLC,co_ad95a1b9f021,First Lien,Healthcare,12.93%,1%,SOFR,7.5%,,,6696,6639,6537,0.9%,6639,,,,CCAP,2024-05-08
+Omni Ophthalmic Management Consultants LLC,co_ad95a1b9f021,First Lien,Healthcare,12.93%,1%,SOFR,7.5%,,,878,867,858,0.1%,867,,,,CCAP,2024-05-08
+Omni Ophthalmic Management Consultants LLC,co_ad95a1b9f021,First Lien,Healthcare,11.93%,1%,SOFR,7.5%,,,297,297,290,0%,297,,,,CCAP,2024-05-08
+Omni Ophthalmic Management Consultants LLC,co_ad95a1b9f021,First Lien,Healthcare,12.93%,1%,SOFR,7.5%,,,248,248,242,0%,248,,,,CCAP,2024-05-08
+Patriot Acquisition Topco S.A.R.L,co_2cafb2e9570e,First Lien,Healthcare,12.21%,,SOFR,6.75%,,,2863,2817,2856,0.4%,2817,,,,CCAP,2024-05-08
+Patriot Acquisition Topco S.A.R.L,co_2cafb2e9570e,Other,Healthcare,,,,,,,,-16,-4,0%,-16,,,,CCAP,2024-05-08
+Patriot Acquisition Topco S.A.R.L,co_2cafb2e9570e,First Lien,Healthcare,12.21%,,SOFR,6.75%,,,11924,11743,11894,1.6%,11743,,,,CCAP,2024-05-08
+Patriot Acquisition Topco S.A.R.L,co_2cafb2e9570e,First Lien,Healthcare,12.21%,,SOFR,6.75%,,,364,356,363,0%,356,,,,CCAP,2024-05-08
+Patriot Acquisition Topco S.A.R.L,co_2cafb2e9570e,Other,Healthcare,,,,,,,,-86,-88,0%,-86,,,,CCAP,2024-05-08
+Patriot Acquisition Topco S.A.R.L,co_2cafb2e9570e,First Lien,Healthcare,14%,14%,,,,,3454,3386,3385,0.5%,3386,,,,CCAP,2024-05-08
+Plasma Buyer LLC,co_a2b63c1eab84,First Lien,Healthcare,11.56%,,SOFR,6.25%,,,54,50,47,0%,50,,,,CCAP,2024-05-08
+Plasma Buyer LLC,co_a2b63c1eab84,First Lien,Healthcare,11.06%,,SOFR,5.75%,,,486,475,466,0.1%,475,,,,CCAP,2024-05-08
+Plasma Buyer LLC,co_a2b63c1eab84,First Lien,Healthcare,11.06%,,SOFR,5.75%,,,7188,7077,7004,0.9%,7077,,,,CCAP,2024-05-08
+Premier Dental Care Management LLC,co_98c4a6bd5c2b,First Lien,Healthcare,10.83%,,SOFR,5.5%,,,9310,9186,8971,1.2%,9186,,,,CCAP,2024-05-08
+Premier Dental Care Management LLC,co_98c4a6bd5c2b,First Lien,Healthcare,10.83%,,SOFR,5.5%,,,5051,5040,4867,0.6%,5040,,,,CCAP,2024-05-08
+Premier Dental Care Management LLC,co_98c4a6bd5c2b,Other,Healthcare,,,,,,,,-17,-56,0%,-17,,,,CCAP,2024-05-08
+PromptCare Intermediate LP,co_cf8a0bd7ff51,First Lien,Healthcare,11.45%,,SOFR,6%,,,10238,10104,10230,1.4%,10104,,,,CCAP,2024-05-08
+PromptCare Intermediate LP,co_cf8a0bd7ff51,First Lien,Healthcare,11.45%,,SOFR,6%,,,1595,1582,1593,0.2%,1582,,,,CCAP,2024-05-08
+Quorum Health Resources,co_c07e40a039ba,First Lien,Healthcare,11.29%,,SOFR,5.75%,,,5245,5204,5152,0.7%,5204,,,,CCAP,2024-05-08
+Quorum Health Resources,co_c07e40a039ba,First Lien,Healthcare,11.29%,,SOFR,5.75%,,,152,144,140,0%,144,,,,CCAP,2024-05-08
+Safco Dental Supply LLC,co_7564d8c46538,First Lien,Healthcare,10.93%,,SOFR,5.5%,,,255,253,241,0%,253,,,,CCAP,2024-05-08
+Safco Dental Supply LLC,co_7564d8c46538,First Lien,Healthcare,10.96%,,SOFR,5.5%,,,4043,4025,3951,0.5%,4025,,,,CCAP,2024-05-08
+Seniorlink Inc.,co_6d5f088adc4f,Other,Healthcare,,,,,,,,-12,,,-12,,,,CCAP,2024-05-08
+Seniorlink Inc.,co_6d5f088adc4f,First Lien,Healthcare,11.94%,,SOFR,6.5%,,,9631,9506,9824,1.3%,9506,,,,CCAP,2024-05-08
+Seniorlink Inc.,co_6d5f088adc4f,First Lien,Healthcare,12.01%,,SOFR,6.5%,,,4761,4674,4856,0.6%,4674,,,,CCAP,2024-05-08
+Seniorlink Inc.,co_6d5f088adc4f,Other,Healthcare,,,,,,,,-8,,,-8,,,,CCAP,2024-05-08
+Smile Doctors LLC,co_54cc4c84644e,Other,Healthcare,,,,,,,,-17,-109,0%,-17,,,,CCAP,2024-05-08
+Smile Doctors LLC,co_54cc4c84644e,First Lien,Healthcare,11.22%,,SOFR,5.9%,,,795,795,752,0.1%,795,,,,CCAP,2024-05-08
+Smile Doctors LLC,co_54cc4c84644e,First Lien,Healthcare,11.24%,,SOFR,5.9%,,,15508,15391,14655,1.9%,15391,,,,CCAP,2024-05-08
+SolutionReach Inc.,co_687e91868b79,First Lien,Healthcare,12.46%,,SOFR,7%,,,4624,4619,4624,0.6%,4619,,,,CCAP,2024-05-08
+SolutionReach Inc.,co_687e91868b79,Other,Healthcare,,,,,,,,-1,,,-1,,,,CCAP,2024-05-08
+Sydney US Buyer Corp.,co_ca94291ef619,First Lien,Healthcare,11.31%,,SOFR,6%,,,3693,3615,3693,0.5%,3615,,,,CCAP,2024-05-08
+Sydney US Buyer Corp.,co_ca94291ef619,First Lien,Healthcare,9.9%,,SOFR,6%,,,3502,3489,3779,0.5%,3489,,,,CCAP,2024-05-08
+Sydney US Buyer Corp.,co_ca94291ef619,First Lien,Healthcare,11.31%,,SOFR,6%,,,1947,1904,1943,0.3%,1904,,,,CCAP,2024-05-08
+Sydney US Buyer Corp.,co_ca94291ef619,First Lien,Healthcare,11.35%,,SOFR,6%,,,3093,2831,3093,0.4%,2831,,,,CCAP,2024-05-08
+Team Select,co_df8f5974af0a,First Lien,Healthcare,11.92%,,SOFR,6.5%,,,6253,6195,6253,0.8%,6195,,,,CCAP,2024-05-08
+Team Select,co_df8f5974af0a,Other,Healthcare,,,,,,,,-6,,,-6,,,,CCAP,2024-05-08
+Team Select,co_df8f5974af0a,Other,Healthcare,,,,,,,,-10,,,-10,,,,CCAP,2024-05-08
+Technology Partners LLC,co_a4d1bffc3148,First Lien,Healthcare,10.68%,,SOFR,5.25%,,,4563,4494,4542,0.6%,4494,,,,CCAP,2024-05-08
+Technology Partners LLC,co_a4d1bffc3148,Other,Healthcare,,,,,,,,-13,-3,0%,-13,,,,CCAP,2024-05-08
+Technology Partners LLC,co_a4d1bffc3148,Other,Healthcare,,,,,,,,-18,-5,0%,-18,,,,CCAP,2024-05-08
+TTF Holdings LLC,co_3e2c48ef4594,First Lien,Healthcare,9.44%,,SOFR,4%,,,3384,3384,3393,0.5%,3384,,,,CCAP,2024-05-08
+Unifeye Vision Partners,co_4f2743254e0f,First Lien,Healthcare,11.46%,,SOFR,6%,,,2970,2949,2945,0.4%,2949,,,,CCAP,2024-05-08
+Unifeye Vision Partners,co_4f2743254e0f,First Lien,Healthcare,11.48%,,SOFR,6%,,,1133,1125,1119,0.1%,1125,,,,CCAP,2024-05-08
+Unifeye Vision Partners,co_4f2743254e0f,First Lien,Healthcare,11.46%,,SOFR,6%,,,5171,5138,5127,0.7%,5138,,,,CCAP,2024-05-08
+Unifeye Vision Partners,co_4f2743254e0f,First Lien,Healthcare,11.46%,,SOFR,6%,,,4971,4968,4930,0.7%,4968,,,,CCAP,2024-05-08
+Lash Opco LLC,co_11969eb109de,First Lien,Consumer & Retail,13.16%,5.1%,SOFR,7.75%,,,2931,2912,2909,0.4%,2912,,,,CCAP,2024-05-08
+Lash Opco LLC,co_11969eb109de,First Lien,Consumer & Retail,13.17%,5.1%,SOFR,7.75%,,,366,363,363,0%,363,,,,CCAP,2024-05-08
+Lash Opco LLC,co_11969eb109de,First Lien,Consumer & Retail,13.18%,5.1%,SOFR,7.75%,,,2989,2965,2966,0.4%,2965,,,,CCAP,2024-05-08
+Lash Opco LLC,co_11969eb109de,First Lien,Consumer & Retail,13.16%,5.1%,SOFR,7.75%,,,970,964,963,0.1%,964,,,,CCAP,2024-05-08
+Comet Acquisition Inc.,co_09a12871bbda,First Lien,Insurance,12.93%,,SOFR,7.5%,,,1782,1782,1782,0.2%,1782,,,,CCAP,2024-05-08
+Evolution BuyerCo Inc.,co_87432de05f9b,First Lien,Insurance,11.71%,,SOFR,6.25%,,,8105,8049,8005,1.1%,8049,,,,CCAP,2024-05-08
+Evolution BuyerCo Inc.,co_87432de05f9b,Other,Insurance,,,,,,,,-4,-9,0%,-4,,,,CCAP,2024-05-08
+Evolution BuyerCo Inc.,co_87432de05f9b,First Lien,Insurance,11.71%,,SOFR,6.25%,,,1422,1410,1405,0.2%,1410,,,,CCAP,2024-05-08
+Evolution BuyerCo Inc.,co_87432de05f9b,First Lien,Insurance,11.71%,,SOFR,6.25%,,,1736,1718,1715,0.2%,1718,,,,CCAP,2024-05-08
+Evolution BuyerCo Inc.,co_87432de05f9b,First Lien,Insurance,12.21%,,SOFR,6.75%,,,249,245,249,0%,245,,,,CCAP,2024-05-08
+Integrity Marketing Acquisition LLC,co_c54435bdb6e3,First Lien,Insurance,11.24%,,SOFR,5.8%,,,4903,4853,4903,0.7%,4853,,,,CCAP,2024-05-08
+Integrity Marketing Acquisition LLC,co_c54435bdb6e3,First Lien,Insurance,11.24%,,SOFR,5.8%,,,2965,2934,2965,0.4%,2934,,,,CCAP,2024-05-08
+Integrity Marketing Acquisition LLC,co_c54435bdb6e3,Other,Insurance,,,,,,,,-12,,,-12,,,,CCAP,2024-05-08
+Integrity Marketing Acquisition LLC,co_c54435bdb6e3,First Lien,Insurance,11.24%,,SOFR,5.8%,,,12460,12344,12460,1.7%,12344,,,,CCAP,2024-05-08
+Integro Parent Inc.,co_45c1de58d72e,First Lien,Insurance,17.6%,12.25%,,,,,638,638,638,0.1%,638,,,,CCAP,2024-05-08
+Integro Parent Inc.,co_45c1de58d72e,First Lien,Insurance,17.64%,12.25%,,,,,4699,3473,4522,0.6%,3473,,,,CCAP,2024-05-08
+Newcleus LLC,co_15a3bbeb29fe,First Lien,Insurance,13.46%,2%,SOFR,8%,,,5184,4891,4692,0.6%,4891,,,,CCAP,2024-05-08
+Newcleus LLC,co_15a3bbeb29fe,Other,Insurance,,,,,,,,-20,-41,0%,-20,,,,CCAP,2024-05-08
+Newcleus LLC,co_15a3bbeb29fe,Other,Insurance,,,,,,,,-21,-43,0%,-21,,,,CCAP,2024-05-08
+Patriot Growth Insurance Services LLC,co_09c469ba825f,First Lien,Insurance,10.95%,,SOFR,5.5%,,,9158,9069,8971,1.2%,9069,,,,CCAP,2024-05-08
+Patriot Growth Insurance Services LLC,co_09c469ba825f,Other,Insurance,,,,,,,,-9,-13,0%,-9,,,,CCAP,2024-05-08
+Patriot Growth Insurance Services LLC,co_09c469ba825f,First Lien,Insurance,11.2%,,SOFR,5.75%,,,2811,2790,2778,0.4%,2790,,,,CCAP,2024-05-08
+Patriot Growth Insurance Services LLC,co_09c469ba825f,First Lien,Insurance,11.05%,,SOFR,5.75%,,,160,158,158,0%,158,,,,CCAP,2024-05-08
+The Hilb Group LLC,co_3f8bdd3238bb,First Lien,Insurance,11.18%,,SOFR,5.75%,,,3485,3446,3481,0.5%,3446,,,,CCAP,2024-05-08
+The Hilb Group LLC,co_3f8bdd3238bb,First Lien,Insurance,11.18%,,SOFR,5.75%,,,986,974,985,0.1%,974,,,,CCAP,2024-05-08
+The Hilb Group LLC,co_3f8bdd3238bb,First Lien,Insurance,11.18%,,SOFR,5.75%,,,121,119,121,0%,119,,,,CCAP,2024-05-08
+The Hilb Group LLC,co_3f8bdd3238bb,First Lien,Insurance,11.18%,,SOFR,5.75%,,,1034,1021,1033,0.1%,1021,,,,CCAP,2024-05-08
+The Hilb Group LLC,co_3f8bdd3238bb,First Lien,Insurance,11.18%,,SOFR,5.75%,,,1739,1720,1737,0.2%,1720,,,,CCAP,2024-05-08
+The Hilb Group LLC,co_3f8bdd3238bb,First Lien,Insurance,11.18%,,SOFR,5.75%,,,51,49,51,0%,49,,,,CCAP,2024-05-08
+The Hilb Group LLC,co_3f8bdd3238bb,First Lien,Insurance,10.93%,,SOFR,5.5%,,,4106,4082,4078,0.5%,4082,,,,CCAP,2024-05-08
+The Hilb Group LLC,co_3f8bdd3238bb,First Lien,Insurance,11.18%,,SOFR,5.75%,,,40,39,40,0%,39,,,,CCAP,2024-05-08
+Tricor Borrower LLC,co_ee7fd82f8831,First Lien,Insurance,10.68%,,SOFR,5.25%,,,3183,3143,3163,0.4%,3143,,,,CCAP,2024-05-08
+Tricor Borrower LLC,co_ee7fd82f8831,Other,Insurance,,,,,,,,-4,-2,0%,-4,,,,CCAP,2024-05-08
+Tricor Borrower LLC,co_ee7fd82f8831,First Lien,Insurance,10.46%,,SOFR,5%,,,1196,1180,1189,0.2%,1180,,,,CCAP,2024-05-08
+Vantage Insurance Partners Inc.,co_9aac5370bfb6,Other,Insurance,,,,,,,,-23,-46,0%,-23,,,,CCAP,2024-05-08
+Vantage Insurance Partners Inc.,co_9aac5370bfb6,First Lien,Insurance,11.25%,,SOFR,5.75%,,,78,70,70,0%,70,,,,CCAP,2024-05-08
+Vantage Insurance Partners Inc.,co_9aac5370bfb6,First Lien,Insurance,11.08%,,SOFR,5.75%,,,4625,4579,4579,0.6%,4579,,,,CCAP,2024-05-08
+A&A Global Imports LLC,co_8521e3325707,First Lien,Materials,,,,,,,1346,992,983,0.1%,992,,,,CCAP,2024-05-08
+A&A Global Imports LLC,co_8521e3325707,First Lien,Materials,11.93%,,SOFR,6.5%,,,98,98,98,0%,98,,,,CCAP,2024-05-08
+Action Signature Acquisition Inc.,co_4bc656dd3c92,First Lien,Materials,12.41%,,SOFR,7%,,,3225,3213,3212,0.4%,3213,,,,CCAP,2024-05-08
+Action Signature Acquisition Inc.,co_4bc656dd3c92,First Lien,Materials,12.41%,,SOFR,7%,,,503,501,501,0.1%,501,,,,CCAP,2024-05-08
+Action Signature Acquisition Inc.,co_4bc656dd3c92,First Lien,Materials,12.41%,,SOFR,7%,,,461,458,458,0.1%,458,,,,CCAP,2024-05-08
+Action Signature Acquisition Inc.,co_4bc656dd3c92,First Lien,Materials,12.41%,,SOFR,7%,,,244,244,243,0%,244,,,,CCAP,2024-05-08
+Action Signature Acquisition Inc.,co_4bc656dd3c92,First Lien,Materials,12.41%,,SOFR,7%,,,835,832,832,0.1%,832,,,,CCAP,2024-05-08
+Advanced Web Technologies,co_e15d454ee916,First Lien,Materials,11.71%,,SOFR,6.25%,,,1986,1965,1980,0.3%,1965,,,,CCAP,2024-05-08
+Advanced Web Technologies,co_e15d454ee916,First Lien,Materials,11.72%,,SOFR,6.25%,,,46,42,45,0%,42,,,,CCAP,2024-05-08
+Advanced Web Technologies,co_e15d454ee916,First Lien,Materials,11.71%,,SOFR,6.25%,,,781,772,779,0.1%,772,,,,CCAP,2024-05-08
+Formulations Parent Corp.,co_e6d9e5bc8a49,First Lien,Materials,11.06%,,SOFR,5.75%,,,9906,9715,9926,1.3%,9715,,,,CCAP,2024-05-08
+Formulations Parent Corp.,co_e6d9e5bc8a49,Other,Materials,,,,,,,,-31,3,0%,-31,,,,CCAP,2024-05-08
+Online Labels Group LLC,co_779b60c57c46,First Lien,Materials,10.61%,,SOFR,5.25%,,,4289,4248,4289,0.6%,4248,,,,CCAP,2024-05-08
+Online Labels Group LLC,co_779b60c57c46,Other,Materials,,,,,,,,-3,,,-3,,,,CCAP,2024-05-08
+Online Labels Group LLC,co_779b60c57c46,Other,Materials,,,,,,,,-6,,,-6,,,,CCAP,2024-05-08
+USALCO LLC,co_e99a4dc1da80,First Lien,Materials,11.56%,,SOFR,6%,,,2933,2863,2900,0.4%,2863,,,,CCAP,2024-05-08
+USALCO LLC,co_e99a4dc1da80,First Lien,Materials,11.56%,,SOFR,6%,,,112,110,111,0%,110,,,,CCAP,2024-05-08
+Alcanza Clinical Research,co_8e7fcc727e86,First Lien,Healthcare,11.46%,,SOFR,6%,,,7245,7155,7227,1%,7155,,,,CCAP,2024-05-08
+Alcanza Clinical Research,co_8e7fcc727e86,First Lien,Healthcare,11.46%,,SOFR,6%,,,88,86,87,0%,86,,,,CCAP,2024-05-08
+BioAgilytix,co_152315ec5423,First Lien,Healthcare,11.7%,2.75%,SOFR,6.25%,,,13411,13200,11038,1.5%,13200,,,,CCAP,2024-05-08
+BioAgilytix,co_152315ec5423,First Lien,Healthcare,11.66%,2.75%,SOFR,6.25%,,,696,687,573,0.1%,687,,,,CCAP,2024-05-08
+LSCS Holdings Inc.,co_a9729536583e,First Lien,Healthcare,13.44%,,SOFR,8%,,,14700,14427,13083,1.7%,14427,,,,CCAP,2024-05-08
+Teal Acquisition Co. Inc.,co_4736b532428b,First Lien,Healthcare,11.68%,,SOFR,6.25%,,,2174,2143,2174,0.3%,2143,,,,CCAP,2024-05-08
+Teal Acquisition Co. Inc.,co_4736b532428b,First Lien,Healthcare,11.67%,,SOFR,6.25%,,,365,348,365,0%,348,,,,CCAP,2024-05-08
+Teal Acquisition Co. Inc.,co_4736b532428b,First Lien,Healthcare,11.67%,,SOFR,6.25%,,,1200,1188,1200,0.2%,1188,,,,CCAP,2024-05-08
+WCT Group Holdings LLC,co_45fab153c3a3,First Lien,Healthcare,11.43%,,SOFR,6.25%,,,3366,3286,3434,0.5%,3286,,,,CCAP,2024-05-08
+WCT Group Holdings LLC,co_45fab153c3a3,Other,Healthcare,,,,,,,,-11,9,0%,-11,,,,CCAP,2024-05-08
+MeriCal LLC,co_fc8e383d430b,First Lien,Consumer & Retail,13.32%,7.75%,,,,,7707,7673,4407,0.6%,7673,,,,CCAP,2024-05-08
+Slickdeals Holdings LLC,co_7621c67fdb3b,Other,Consumer & Retail,,,,,,,,-2,,,-2,,,,CCAP,2024-05-08
+Slickdeals Holdings LLC,co_7621c67fdb3b,First Lien,Consumer & Retail,11.68%,,SOFR,6.25%,,,13985,13968,13987,1.9%,13968,,,,CCAP,2024-05-08
+OEM Group LLC,co_a24d2f57ec41,First Lien,Software & Technology,,,,,,,8615,6967,6859,0.9%,6967,,,,CCAP,2024-05-08
+ABACUS Holdings I LLC,co_a10a6e7f7f20,First Lien,Software & Technology,10.78%,,SOFR,5.5%,,,265,245,257,0%,245,,,,CCAP,2024-05-08
+ABACUS Holdings I LLC,co_a10a6e7f7f20,First Lien,Software & Technology,10.78%,,SOFR,5.5%,,,900,882,896,0.1%,882,,,,CCAP,2024-05-08
+ABACUS Holdings I LLC,co_a10a6e7f7f20,First Lien,Software & Technology,10.78%,,SOFR,5.5%,,,6698,6595,6678,0.9%,6595,,,,CCAP,2024-05-08
+Affinitiv Inc.,co_a42faee4b0db,Other,Software & Technology,,,,,,,,-1,-1,0%,-1,,,,CCAP,2024-05-08
+Affinitiv Inc.,co_a42faee4b0db,First Lien,Software & Technology,11.56%,,SOFR,6%,,,6135,6125,6123,0.8%,6125,,,,CCAP,2024-05-08
+Alpine SG LLC,co_a20fc41b851b,First Lien,Software & Technology,11.46%,,SOFR,6%,,,1351,1328,1324,0.2%,1328,,,,CCAP,2024-05-08
+Alpine SG LLC,co_a20fc41b851b,Other,Software & Technology,,,,,,,,-2,-2,0%,-2,,,,CCAP,2024-05-08
+Alpine SG LLC,co_a20fc41b851b,First Lien,Software & Technology,11.46%,,SOFR,6%,,,967,951,948,0.1%,951,,,,CCAP,2024-05-08
+Alpine SG LLC,co_a20fc41b851b,First Lien,Software & Technology,11.46%,,SOFR,6%,,,3363,3306,3296,0.4%,3306,,,,CCAP,2024-05-08
+Alpine SG LLC,co_a20fc41b851b,First Lien,Software & Technology,11.46%,,SOFR,6%,,,536,527,525,0.1%,527,,,,CCAP,2024-05-08
+Apps Associates LLC,co_c6a5fff265f1,First Lien,Software & Technology,10.43%,,SOFR,5%,,,5509,5442,5497,0.7%,5442,,,,CCAP,2024-05-08
+Apps Associates LLC,co_c6a5fff265f1,First Lien,Software & Technology,10.43%,,SOFR,5%,,,1773,1756,1769,0.2%,1756,,,,CCAP,2024-05-08
+Apps Associates LLC,co_c6a5fff265f1,Other,Software & Technology,,,,,,,,-9,-2,0%,-9,,,,CCAP,2024-05-08
+Bankers Toolbox Inc.,co_a862e69c36dc,First Lien,Software & Technology,10.5%,,SOFR,5.25%,,,15486,15292,15486,2.1%,15292,,,,CCAP,2024-05-08
+Bankers Toolbox Inc.,co_a862e69c36dc,First Lien,Software & Technology,10.5%,,SOFR,5.25%,,,2884,2867,2884,0.4%,2867,,,,CCAP,2024-05-08
+Bankers Toolbox Inc.,co_a862e69c36dc,First Lien,Software & Technology,10.66%,,SOFR,5.25%,,,926,899,926,0%,899,,,,CCAP,2024-05-08
+Belay Inc.,co_c4ae6562e3f2,First Lien,Software & Technology,10.43%,,SOFR,5%,,,4814,4772,4814,0.6%,4772,,,,CCAP,2024-05-08
+Belay Inc.,co_c4ae6562e3f2,Other,Software & Technology,,,,,,,,-5,,,-5,,,,CCAP,2024-05-08
+Benesys Inc.,co_4a0fb76423d6,First Lien,Software & Technology,10.68%,,SOFR,5.25%,,,1367,1365,1341,0.2%,1365,,,,CCAP,2024-05-08
+Benesys Inc.,co_4a0fb76423d6,First Lien,Software & Technology,10.68%,,SOFR,5.25%,,,290,289,285,0%,289,,,,CCAP,2024-05-08
+Benesys Inc.,co_4a0fb76423d6,First Lien,Software & Technology,10.68%,,SOFR,5.25%,,,135,135,132,0%,135,,,,CCAP,2024-05-08
+Benesys Inc.,co_4a0fb76423d6,First Lien,Software & Technology,10.68%,,SOFR,5.25%,,,91,90,89,0%,90,,,,CCAP,2024-05-08
+Claritas LLC,co_643b9e6bb41b,First Lien,Software & Technology,10.59%,,SOFR,5.25%,,,2438,2425,2438,0.3%,2425,,,,CCAP,2024-05-08
+Claritas LLC,co_643b9e6bb41b,First Lien,Software & Technology,10.59%,,SOFR,5.25%,,,488,477,488,0.1%,477,,,,CCAP,2024-05-08
+Claritas LLC,co_643b9e6bb41b,First Lien,Software & Technology,10.56%,,SOFR,5.25%,,,10388,10309,10388,1.4%,10309,,,,CCAP,2024-05-08
+Concord III LLC,co_01eb53ae0c26,First Lien,Software & Technology,11.56%,,SOFR,6.25%,,,9450,9356,9450,1.3%,9356,,,,CCAP,2024-05-08
+Concord III LLC,co_01eb53ae0c26,Other,Software & Technology,,,,,,,,-5,,,-5,,,,CCAP,2024-05-08
+DataVail,co_35eff2df4fbb,First Lien,Software & Technology,11.06%,,SOFR,5.75%,,,7132,7065,7064,0.9%,7065,,,,CCAP,2024-05-08
+DataVail,co_35eff2df4fbb,Other,Software & Technology,,,,,,,,-22,-22,0%,-22,,,,CCAP,2024-05-08
+DataVail,co_35eff2df4fbb,First Lien,Software & Technology,11.06%,,SOFR,5.75%,,,367,361,361,0%,361,,,,CCAP,2024-05-08
+DataVail,co_35eff2df4fbb,First Lien,Software & Technology,11.06%,,SOFR,5.75%,,,80,77,77,0%,77,,,,CCAP,2024-05-08
+Evergreen IX Borrower 2023 LLC,co_b818c8cf1a35,First Lien,Software & Technology,11.31%,,SOFR,6%,,,13466,13142,13671,1.8%,13142,,,,CCAP,2024-05-08
+Evergreen IX Borrower 2023 LLC,co_b818c8cf1a35,Other,Software & Technology,,,,,,,,-34,,,-34,,,,CCAP,2024-05-08
+Lexipol,co_626df400e171,First Lien,Software & Technology,10.68%,,SOFR,5.25%,,,12992,12805,12992,1.7%,12805,,,,CCAP,2024-05-08
+Lexipol,co_626df400e171,Other,Software & Technology,,,,,,,,-15,,,-15,,,,CCAP,2024-05-08
+List Partners Inc.,co_9e69c75d5bd2,First Lien,Software & Technology,10.43%,,SOFR,5%,,,315,313,302,0%,313,,,,CCAP,2024-05-08
+List Partners Inc.,co_9e69c75d5bd2,First Lien,Software & Technology,10.43%,,SOFR,5%,,,3615,3614,3509,0.5%,3614,,,,CCAP,2024-05-08
+MRI Software LLC,co_2bbd5408e42d,First Lien,Software & Technology,10.9%,,SOFR,5.5%,,,17993,17880,17948,2.4%,17880,,,,CCAP,2024-05-08
+MRI Software LLC,co_2bbd5408e42d,Other,Software & Technology,,,,,,,,-8,-38,0%,-8,,,,CCAP,2024-05-08
+MRI Software LLC,co_2bbd5408e42d,First Lien,Software & Technology,10.9%,,SOFR,5.5%,,,1293,1284,1289,0.2%,1284,,,,CCAP,2024-05-08
+MRI Software LLC,co_2bbd5408e42d,Other,Software & Technology,,,,,,,,-14,-8,0%,-14,,,,CCAP,2024-05-08
+New Era Technology Inc.,co_c36e8429b803,First Lien,Software & Technology,11.71%,,SOFR,6.25%,,,3017,2990,2961,0.4%,2990,,,,CCAP,2024-05-08
+New Era Technology Inc.,co_c36e8429b803,Other,Software & Technology,,,,,,,,-2,-4,0%,-2,,,,CCAP,2024-05-08
+New Era Technology Inc.,co_c36e8429b803,First Lien,Software & Technology,11.71%,,SOFR,6.25%,,,1938,1921,1902,0.3%,1921,,,,CCAP,2024-05-08
+New Era Technology Inc.,co_c36e8429b803,First Lien,Software & Technology,11.71%,,SOFR,6.25%,,,6426,6376,6306,0.8%,6376,,,,CCAP,2024-05-08
+New Era Technology Inc.,co_c36e8429b803,Other,Software & Technology,,,,,,,,-6,-9,0%,-6,,,,CCAP,2024-05-08
+NMN Holdings III Corp.,co_674f7f92840d,First Lien,Software & Technology,13.19%,,SOFR,7.75%,,,1667,1646,1667,0.2%,1646,,,,CCAP,2024-05-08
+NMN Holdings III Corp.,co_674f7f92840d,First Lien,Software & Technology,13.19%,,SOFR,7.75%,,,7222,7135,7222,1%,7135,,,,CCAP,2024-05-08
+Odessa Technologies Inc.,co_37b004402d02,Other,Software & Technology,,,,,,,,-30,,,-30,,,,CCAP,2024-05-08
+Odessa Technologies Inc.,co_37b004402d02,First Lien,Software & Technology,10.93%,,SOFR,5.5%,,,9450,9327,9450,1.3%,9327,,,,CCAP,2024-05-08
+Ontario Systems LLC,co_368fd62c654e,First Lien,Software & Technology,10.95%,,SOFR,5.5%,,,1086,1084,1043,0.1%,1084,,,,CCAP,2024-05-08
+Ontario Systems LLC,co_368fd62c654e,First Lien,Software & Technology,11.95%,,SOFR,6.5%,,,500,499,480,0.1%,499,,,,CCAP,2024-05-08
+Ontario Systems LLC,co_368fd62c654e,First Lien,Software & Technology,11%,,SOFR,5.5%,,,3142,3128,3017,0.4%,3128,,,,CCAP,2024-05-08
+Ontario Systems LLC,co_368fd62c654e,First Lien,Software & Technology,11%,,SOFR,5.5%,,,545,537,523,0.1%,537,,,,CCAP,2024-05-08
+Ontario Systems LLC,co_368fd62c654e,First Lien,Software & Technology,11%,,SOFR,5.5%,,,444,441,427,0.1%,441,,,,CCAP,2024-05-08
+Park Place Technologies LLC,co_7b62066cfc4f,First Lien,Software & Technology,12.5%,12.5%,,,,,1032,1032,926,0.1%,1032,,,,CCAP,2024-05-08
+Perforce Software Inc.,co_8736d4f129ac,First Lien,Software & Technology,13.43%,,SOFR,8%,,,5000,4998,5000,0.7%,4998,,,,CCAP,2024-05-08
+Right Networks LLC,co_0cb37b67f45d,Other,Software & Technology,,,,,,,,-1,,,-1,,,,CCAP,2024-05-08
+Right Networks LLC,co_0cb37b67f45d,First Lien,Software & Technology,11.43%,,SOFR,6%,,,9283,9235,9283,1.2%,9235,,,,CCAP,2024-05-08
+Right Networks LLC,co_0cb37b67f45d,First Lien,Software & Technology,11.43%,,SOFR,6%,,,8119,8039,8119,1.1%,8039,,,,CCAP,2024-05-08
+Right Networks LLC,co_0cb37b67f45d,First Lien,Software & Technology,11.43%,,SOFR,6%,,,2070,2050,2070,0.3%,2050,,,,CCAP,2024-05-08
+Ruffalo Noel Levitz LLC,co_80c97801395e,First Lien,Software & Technology,11.95%,0.5%,SOFR,6.5%,,,304,304,291,0%,304,,,,CCAP,2024-05-08
+Ruffalo Noel Levitz LLC,co_80c97801395e,First Lien,Software & Technology,11.95%,0.5%,SOFR,6.5%,,,2515,2521,2404,0.3%,2521,,,,CCAP,2024-05-08
+Saturn Borrower Inc.,co_2fa9efcecbc8,First Lien,Software & Technology,11.96%,,SOFR,6.5%,,,19980,19679,19950,2.7%,19679,,,,CCAP,2024-05-08
+Saturn Borrower Inc.,co_2fa9efcecbc8,First Lien,Software & Technology,11.96%,,SOFR,6.5%,,,2434,2398,2431,0.3%,2398,,,,CCAP,2024-05-08
+Saturn Borrower Inc.,co_2fa9efcecbc8,First Lien,Software & Technology,11.96%,,SOFR,6.5%,,,1513,1492,1511,0.2%,1492,,,,CCAP,2024-05-08
+Smartronix LLC,co_0aef8ece01b9,First Lien,Software & Technology,11.33%,,SOFR,6%,,,23568,23195,23568,3%,23195,,,,CCAP,2024-05-08
+Smartronix LLC,co_0aef8ece01b9,Other,Software & Technology,,,,,,,,-45,,,-45,,,,CCAP,2024-05-08
+SQAD Holdco Inc.,co_cd62ddfdce39,First Lien,Software & Technology,11.06%,,SOFR,5.75%,,,2383,2350,2257,0.3%,2350,,,,CCAP,2024-05-08
+SQAD Holdco Inc.,co_cd62ddfdce39,Other,Software & Technology,,,,,,,,-14,-28,0%,-14,,,,CCAP,2024-05-08
+SQAD Holdco Inc.,co_cd62ddfdce39,First Lien,Software & Technology,11.06%,,SOFR,5.75%,,,8793,8666,8563,1.1%,8666,,,,CCAP,2024-05-08
+Summit 7 Systems LLC,co_bc5ad4b4d070,Other,Software & Technology,,,,,,,,-5,,,-5,,,,CCAP,2024-05-08
+Summit 7 Systems LLC,co_bc5ad4b4d070,First Lien,Software & Technology,11.21%,,SOFR,5.75%,,,5207,5132,5207,0.7%,5132,,,,CCAP,2024-05-08
+Summit 7 Systems LLC,co_bc5ad4b4d070,First Lien,Software & Technology,11.21%,,SOFR,5.75%,,,2388,2388,2388,0.3%,2388,,,,CCAP,2024-05-08
+TMA Buyer LLC,co_580d070b8ae9,First Lien,Software & Technology,12.71%,,SOFR,7.25%,,,3066,2970,3066,0.4%,2970,,,,CCAP,2024-05-08
+TMA Buyer LLC,co_580d070b8ae9,Other,Software & Technology,,,,,,,,-12,,,-12,,,,CCAP,2024-05-08
+TMA Buyer LLC,co_580d070b8ae9,First Lien,Software & Technology,12.68%,,SOFR,7.25%,,,365,353,365,0%,353,,,,CCAP,2024-05-08
+Transportation Insight LLC,co_4ece447abf27,First Lien,Software & Technology,9.91%,,SOFR,4.5%,,,4984,4980,4337,0.6%,4980,,,,CCAP,2024-05-08
+Transportation Insight LLC,co_4ece447abf27,First Lien,Software & Technology,9.91%,,SOFR,4.5%,,,1238,1238,1078,0.1%,1238,,,,CCAP,2024-05-08
+Transportation Insight LLC,co_4ece447abf27,First Lien,Software & Technology,10%,,SOFR,4.5%,,,695,693,597,0.1%,693,,,,CCAP,2024-05-08
+Winxnet Holdings LLC,co_c430520c0e5d,First Lien,Software & Technology,11.93%,,SOFR,6.5%,,,620,618,620,0.1%,618,,,,CCAP,2024-05-08
+Winxnet Holdings LLC,co_c430520c0e5d,First Lien,Software & Technology,11.93%,,SOFR,6.5%,,,1017,1010,1017,0.1%,1010,,,,CCAP,2024-05-08
+Winxnet Holdings LLC,co_c430520c0e5d,First Lien,Software & Technology,11.93%,,SOFR,6.5%,,,651,647,651,0.1%,647,,,,CCAP,2024-05-08
+Winxnet Holdings LLC,co_c430520c0e5d,First Lien,Software & Technology,11.93%,,SOFR,6.5%,,,1887,1881,1887,0.3%,1881,,,,CCAP,2024-05-08
+Winxnet Holdings LLC,co_c430520c0e5d,First Lien,Software & Technology,11.93%,,SOFR,6.5%,,,1505,1493,1505,0.2%,1493,,,,CCAP,2024-05-08
+Winxnet Holdings LLC,co_c430520c0e5d,First Lien,Software & Technology,11.93%,,SOFR,6.5%,,,1122,1110,1122,0.1%,1110,,,,CCAP,2024-05-08
+Winxnet Holdings LLC,co_c430520c0e5d,First Lien,Software & Technology,11.93%,,SOFR,6.5%,,,197,195,197,0%,195,,,,CCAP,2024-05-08
+3SI Security Systems,co_c70f0c5ad517,First Lien,Software & Technology,11.48%,,SOFR,6%,,,3655,3549,3651,0.5%,3549,,,,CCAP,2024-05-08
+Gener8 LLC,co_a017dd98441e,First Lien,Software & Technology,14.07%,2%,SOFR,8.5%,,,5706,5706,4200,0.6%,5706,,,,CCAP,2024-05-08
+Gener8 LLC,co_a017dd98441e,First Lien,Software & Technology,14.07%,2%,SOFR,8.5%,,,1209,1209,811,0.1%,1209,,,,CCAP,2024-05-08
+Gener8 LLC,co_a017dd98441e,First Lien,Software & Technology,14.07%,2%,SOFR,8.5%,,,246,246,181,0%,246,,,,CCAP,2024-05-08
+A&R Logistics Holdings Inc.,co_c9a78b238f3f,First Lien,Transportation & Logistics,12.23%,,SOFR,6.75%,,,2319,2319,2272,0.3%,2319,,,,CCAP,2024-05-08
+A&R Logistics Holdings Inc.,co_c9a78b238f3f,First Lien,Transportation & Logistics,12.23%,,SOFR,6.75%,,,439,439,432,0.1%,439,,,,CCAP,2024-05-08
+Sun Acquirer Corp.,co_011b1b84a898,Other Equity,Automotive,,,,,,,,615,713,0.1%,615,,,,CCAP,2024-05-08
+Sun Acquirer Corp.,co_011b1b84a898,Other Equity,Automotive,,,,,,,,43,50,0%,43,,,,CCAP,2024-05-08
+Automobiles & Components,co_c69a17cb7b57,Other,Automotive,,,,,,,,658,763,0.1%,658,,,,CCAP,2024-05-08
+Services Allied Universal Holdings,co_64cfa1907e44,Common Equity,Business Services,,,,,,,,1011,2732,0.4%,1011,,,,CCAP,2024-05-08
+Services Allied Universal Holdings,co_64cfa1907e44,Common Equity,Business Services,,,,,,,,685,667,0.1%,685,,,,CCAP,2024-05-08
+Services ASP MCS Acquisition Corp.,co_acfbf80dd1fc,Other Equity,Business Services,,,,,,,,1183,123,0%,1183,,,,CCAP,2024-05-08
+Services ASP MCS Acquisition Corp.,co_acfbf80dd1fc,Other Equity,Business Services,,,,,,,,792,755,0.1%,792,,,,CCAP,2024-05-08
+Services Hercules Borrower LLC,co_289b47053d56,Other Equity,Business Services,,,,,,,,1153,1557,0.2%,1153,,,,CCAP,2024-05-08
+Services Iris Buyer,co_9875e11aa233,Common Equity,Business Services,,,,,,,,577,597,0.1%,577,,,,CCAP,2024-05-08
+Services MHS Acquisition Holdings,co_5e28a241a415,Preferred Equity,Business Services,,,,,,,,923,1526,0.2%,923,,,,CCAP,2024-05-08
+Services MHS Acquisition Holdings,co_5e28a241a415,Common Equity,Business Services,,,,,,,,9,323,0%,9,,,,CCAP,2024-05-08
+Services Receivable Solutions,co_43822573cd59,Preferred Equity,Business Services,,,,,,,,137,322,0%,137,,,,CCAP,2024-05-08
+Services Service Logic Acquisition,co_17d182f35bff,Common Equity,Business Services,,,,,,,,1313,3181,0.4%,1313,,,,CCAP,2024-05-08
+Services TecoStar Holdings,co_ffa16fd0daa7,Common Equity,Business Services,,,,,,,,500,3,0%,500,,,,CCAP,2024-05-08
+Services,co_ef1c4b45f2ed,Other,Business Services,,,,,,,,8283,11918,1.5%,8283,,,,CCAP,2024-05-08
+Everlast Parent Inc.,co_acc567adc7f6,Other Equity,Consumer & Retail,,,,,,,,948,834,0.1%,948,,,,CCAP,2024-05-08
+FS Whitewater Borrower,co_2eb67dc5a406,Common Equity,Consumer & Retail,,,,,,,,690,688,0.1%,690,,,,CCAP,2024-05-08
+HGH Purchaser,co_1221d99fd14e,Common Equity,Consumer & Retail,,,,,,,,417,664,0.1%,417,,,,CCAP,2024-05-08
+HS Spa Holdings Inc.,co_0558d6361718,Other Equity,Consumer & Retail,,,,,,,,1791,1690,0.2%,1791,,,,CCAP,2024-05-08
+Legalshield,co_2531454a04ee,Other Equity,Consumer & Retail,,,,,,,,372,719,0.1%,372,,,,CCAP,2024-05-08
+Mario Purchaser,co_b717c9ab9fee,Common Equity,Consumer & Retail,,,,,,,,1027,972,0.1%,1027,,,,CCAP,2024-05-08
+Mario Purchaser,co_b717c9ab9fee,Common Equity,Consumer & Retail,,,,,,,,118,112,0%,118,,,,CCAP,2024-05-08
+PPV Intermediate Holdings LLC,co_56235911ea0a,Other Equity,Consumer & Retail,,,,,,,,313,317,0%,313,,,,CCAP,2024-05-08
+smarTours,co_b5675d322650,Common Equity,Consumer & Retail,,,,,,,,1682,,,1682,,,,CCAP,2024-05-08
+Stepping Stones Healthcare Services,co_ef6f838d442b,Common Equity,Consumer & Retail,,,,,,,,1132,1064,0.1%,1132,,,,CCAP,2024-05-08
+Wrench Group LLC,co_1ae37eca31cd,Other Equity,Consumer & Retail,,,,,,,,235,588,0.1%,235,,,,CCAP,2024-05-08
+Wrench Group LLC,co_1ae37eca31cd,Other Equity,Consumer & Retail,,,,,,,,66,165,0%,66,,,,CCAP,2024-05-08
+ACON Igloo Investors I LLC,co_629bcdbda390,Other,Financial Services,,,,,,,,266,344,0%,266,,,,CCAP,2024-05-08
+First Eagle Logan JV LLC,co_0dfcfefecb72,Other,Financial Services,,,,,,,,41733,37039,4.9%,41733,,,,CCAP,2024-05-08
+Freeport Financial SBIC Fund LP,co_a8dfa80312b1,Other,Financial Services,,,,,,,,1450,1505,0.2%,1450,,,,CCAP,2024-05-08
+GACP II LP,co_c92027e57b14,Other,Financial Services,,,,,,,,1145,1143,0.2%,1145,,,,CCAP,2024-05-08
+Gryphon Partners 3.5 LP,co_6db25cb3dd59,Other,Financial Services,,,,,,,,145,33,0%,145,,,,CCAP,2024-05-08
+WhiteHawk III Onshore Fund LP,co_191058924a9c,Other,Financial Services,,,,,,,,7632,8079,1.1%,7632,,,,CCAP,2024-05-08
+Diversified Financials,co_be07838febe6,Other,Financial Services,,,,,,,,52371,48143,6.4%,52371,,,,CCAP,2024-05-08
+ACI Group Holdings,co_12ac7682544d,Common Equity,Healthcare,,,,,,,,909,965,0.1%,909,,,,CCAP,2024-05-08
+ACI Group Holdings,co_12ac7682544d,Preferred Equity,Healthcare,,,,,,,,3645,4824,0.6%,3645,,,,CCAP,2024-05-08
+Centria Subsidiary Holdings,co_7ae3c1d1784f,Common Equity,Healthcare,,,,,,,,1191,2418,0.3%,1191,,,,CCAP,2024-05-08
+Hospice Care Buyer,co_db69e7e43598,Common Equity,Healthcare,,,,,,,,1398,1520,0.2%,1398,,,,CCAP,2024-05-08
+Hospice Care Buyer,co_db69e7e43598,Common Equity,Healthcare,,,,,,,,75,82,0%,75,,,,CCAP,2024-05-08
+Patriot Acquisition Topco S.A.R.L Common Stock,co_26e04869e9f8,Other Equity,Healthcare,,,,,,,,1148,1419,0.2%,1148,,,,CCAP,2024-05-08
+Patriot Acquisition Topco S.A.R.L Common Stock One,co_26e04869e9f8,Other Equity,Healthcare,,,,,,,,42,97,0%,42,,,,CCAP,2024-05-08
+Seniorlink Inc.,co_6d5f088adc4f,Other Equity,Healthcare,,,,,,,,423,2402,0.3%,423,,,,CCAP,2024-05-08
+Smile Doctors LLC,co_54cc4c84644e,Other Equity,Healthcare,,,,,,,,714,590,0.1%,714,,,,CCAP,2024-05-08
+Insurance Evolution BuyerCo,co_8b55248cf190,Common Equity,Insurance,,,,,,,,292,368,0%,292,,,,CCAP,2024-05-08
+Insurance Integrity Marketing Acquisition,co_f36e5b438fd6,Common Equity,Insurance,,,,,,,,533,1050,0.1%,533,,,,CCAP,2024-05-08
+Insurance Integrity Marketing Acquisition,co_f36e5b438fd6,Preferred Equity,Insurance,,,,,,,,1215,2228,0.3%,1215,,,,CCAP,2024-05-08
+Insurance Integro Parent,co_6a484ba22c82,Common Equity,Insurance,,,,,,,,454,,,454,,,,CCAP,2024-05-08
+Insurance,co_64e8937abc6d,Other,Insurance,,,,,,,,2494,3646,0.4%,2494,,,,CCAP,2024-05-08
+LSCS Holdings,co_a9729536583e,Common Equity,Healthcare,,,,,,,,953,1039,0.1%,953,,,,CCAP,2024-05-08
+LSCS Holdings,co_a9729536583e,Preferred Equity,Healthcare,,,,,,,,447,522,0.1%,447,,,,CCAP,2024-05-08
+Teal Acquisition Co.,co_4736b532428b,Common Equity,Healthcare,,,,,,,,556,299,0%,556,,,,CCAP,2024-05-08
+WCT Group Holdings,co_45fab153c3a3,Common Equity,Healthcare,,,,,,,,1177,1240,0.2%,1177,,,,CCAP,2024-05-08
+Pharmaceuticals Biotechnology & Life Sciences,co_57c943d48a3a,Other,Healthcare,,,,,,,,3133,3100,0.4%,3133,,,,CCAP,2024-05-08
+Retailing MeriCal,co_19be888192c1,Preferred Equity,Consumer & Retail,,,,,,,,103,,,103,,,,CCAP,2024-05-08
+Retailing Evolution Slickdeals Holdings,co_815991ac9cb2,Common Equity,Consumer & Retail,,,,,,,,891,1122,0.1%,891,,,,CCAP,2024-05-08
+Retailing Vivid Seats Ltd.,co_48f20d02f6f2,Other Equity,Consumer & Retail,,,,,,,,608,1041,0.1%,608,,,,CCAP,2024-05-08
+Retailing,co_a2f73a0ee729,Other,Consumer & Retail,,,,,,,,1602,2324,0.2%,1602,,,,CCAP,2024-05-08
+Certify,co_9098e9fef80c,Common Equity,Software & Technology,,,,,,,,246,226,0%,246,,,,CCAP,2024-05-08
+Lexipol,co_626df400e171,Other Equity,Software & Technology,,,,,,,,638,714,0.1%,638,,,,CCAP,2024-05-08
+NMN Holdings III Corp.,co_674f7f92840d,Other Equity,Software & Technology,,,,,,,,1111,1853,0.2%,1111,,,,CCAP,2024-05-08
+Odessa Technologies,co_37b004402d02,Common Equity,Software & Technology,,,,,,,,1071,1145,0.2%,1071,,,,CCAP,2024-05-08
+Park Place Technologies,co_7b62066cfc4f,Common Equity,Software & Technology,,,,,,,,479,,,479,,,,CCAP,2024-05-08
+Park Place Technologies,co_7b62066cfc4f,Common Equity,Software & Technology,,,,,,,,27,390,0.1%,27,,,,CCAP,2024-05-08
+Saturn Borrower Inc.,co_2fa9efcecbc8,Other Equity,Software & Technology,,,,,,,,434,371,0%,434,,,,CCAP,2024-05-08
+United States,co_981e5b396726,Other,,,,,,,,,90883,97977,12.5%,90883,,,,CCAP,2024-05-08
+United States,co_981e5b396726,Other,,,,,,,,,1399768,1395543,1.84%,1399768,,,,CCAP,2024-05-08
+PDFTron Systems Inc.,co_2a86bc4652e1,First Lien,Software & Technology,10.81%,,SOFR,5.5%,,,1596,1584,1584,0.2%,1584,,,,CCAP,2024-05-08
+PDFTron Systems Inc.,co_2a86bc4652e1,First Lien,Software & Technology,10.82%,,SOFR,5.5%,,,50,48,47,0%,48,,,,CCAP,2024-05-08
+PDFTron Systems Inc.,co_2a86bc4652e1,First Lien,Software & Technology,10.81%,,SOFR,5.5%,,,517,513,513,0.1%,513,,,,CCAP,2024-05-08
+PDFTron Systems Inc.,co_2a86bc4652e1,First Lien,Software & Technology,10.81%,,SOFR,5.5%,,,4900,4861,4863,0.6%,4861,,,,CCAP,2024-05-08
+Sandvine Corp.,co_baec03d34e61,First Lien,Telecommunications,13.33%,,SOFR,8%,,,4500,4427,1913,0.3%,4427,,,,CCAP,2024-05-08
+Canada Debt Investments,co_bb474c1ac937,Other,Financial Services,,,,,,,,11433,8920,1.2%,11433,,,,CCAP,2024-05-08
+Canada,co_408c7c5887a0,Other,,,,,,,,,11433,8920,1.2%,11433,,,,CCAP,2024-05-08
+Crusoe Bidco Ltd.,co_aefa56445629,First Lien,Business Services,11.71%,,SOFR,6.53%,,,6128,7617,7733,1%,7617,,,,CCAP,2024-05-08
+Crusoe Bidco Ltd.,co_aefa56445629,First Lien,Business Services,11.71%,,SOFR,6.53%,,,828,1004,1045,0.1%,1004,,,,CCAP,2024-05-08
+Nurture Landscapes,co_6ee91fe88f0b,First Lien,Business Services,11.69%,,SOFR,6.5%,,,1416,1955,1787,0.2%,1955,,,,CCAP,2024-05-08
+Nurture Landscapes,co_6ee91fe88f0b,First Lien,Business Services,11.69%,,SOFR,6.5%,,,392,523,494,0.1%,523,,,,CCAP,2024-05-08
+Nurture Landscapes,co_6ee91fe88f0b,First Lien,Business Services,11.83%,,SOFR,6.5%,,,11000,13335,13881,1.8%,13335,,,,CCAP,2024-05-08
+Nurture Landscapes,co_6ee91fe88f0b,First Lien,Business Services,11.69%,,SOFR,6.5%,,,498,553,629,0.1%,553,,,,CCAP,2024-05-08
+Lion Cashmere Bidco Ltd.,co_1505b4b081fa,First Lien,Consumer & Retail,11.5%,,SOFR,6%,,,4352,4279,4352,0.6%,4279,,,,CCAP,2024-05-08
+Lion Cashmere Bidco Limited One,co_4ed23085f021,First Lien,Consumer & Retail,11.5%,,SOFR,6%,,,9939,9781,9939,1.3%,9781,,,,CCAP,2024-05-08
+Lion Cashmere Bidco Limited Two,co_4ed23085f021,First Lien,Consumer & Retail,11.5%,,SOFR,6%,,,4953,4864,4953,0.7%,4864,,,,CCAP,2024-05-08
+Lion Cashmere Bidco Ltd.,co_1505b4b081fa,Other,Consumer & Retail,,,,,,,,-60,,,-60,,,,CCAP,2024-05-08
+United Kingdom Debt Investments Food Beverage & Tobacco APC Bidco Ltd.,co_09cc161966e9,First Lien,Food & Beverage,11.56%,,SOFR,6.37%,,,4339,5200,5325,0.7%,5200,,,,CCAP,2024-05-08
+United Kingdom Debt Investments Food Beverage & Tobacco APC Bidco Ltd.,co_09cc161966e9,First Lien,Food & Beverage,11.56%,,SOFR,6.37%,,,1244,1487,1469,0.2%,1487,,,,CCAP,2024-05-08
+United Kingdom Debt Investments Food Beverage & Tobacco,co_09cc161966e9,First Lien,Food & Beverage,,,,,,,5583,6687,6794,0.9%,6687,,,,CCAP,2024-05-08
+Jordan Bidco Ltd.,co_06ef9a0a7f04,First Lien,Software & Technology,11.22%,,SOFR,6%,,,254,323,321,0%,323,,,,CCAP,2024-05-08
+Jordan Bidco Ltd.,co_06ef9a0a7f04,First Lien,Software & Technology,10.97%,,SOFR,5.75%,,,13234,17834,16700,2.2%,17834,,,,CCAP,2024-05-08
+United Kingdom Debt Investments,co_a00f538bcb0a,Other,Financial Services,,,,,,,,68695,68628,9%,68695,,,,CCAP,2024-05-08
+VetStrategy,co_5fb677abd871,Other Equity,Healthcare,,,,,,,,894,1879,0.2%,894,,,,CCAP,2024-05-08
+VetStrategy,co_5fb677abd871,Other Equity,Healthcare,,,,,,,,30,,,30,,,,CCAP,2024-05-08
+United Kingdom Equity Investments,co_cb3abcdf8bcb,Other,Financial Services,,,,,,,,924,1879,0.2%,924,,,,CCAP,2024-05-08
+United Kingdom,co_0e98cc0b1589,Other,,,,,,,,,69619,70507,9.2%,69619,,,,CCAP,2024-05-08
+Efor Holding,co_f2a173a608b9,First Lien,Business Services,10.39%,,SOFR,6.5%,,,2882,3066,3048,0.4%,3066,,,,CCAP,2024-05-08
+Efor Holding,co_f2a173a608b9,First Lien,Business Services,16.89%,,SOFR,6.5%,,,993,1045,1048,0.1%,1045,,,,CCAP,2024-05-08
+France Debt Investments,co_395fd6e1eaa4,Other,Financial Services,,,,,,,,4111,4096,0.5%,4111,,,,CCAP,2024-05-08
+France,co_2c598436e557,Other,,,,,,,,,4111,4096,0.5%,4111,,,,CCAP,2024-05-08
+PharComp Parent B.V.,co_cdc2719c8ca1,First Lien,Healthcare,10.11%,,SOFR,6.25%,,,1868,2162,2016,0.3%,2162,,,,CCAP,2024-05-08
+PharComp Parent B.V.,co_cdc2719c8ca1,First Lien,Healthcare,10.08%,,SOFR,6.25%,,,6910,7753,7457,1%,7753,,,,CCAP,2024-05-08
+PharComp Parent B.V.,co_cdc2719c8ca1,First Lien,Healthcare,10.08%,,SOFR,6.25%,,,1745,1889,1883,0.3%,1889,,,,CCAP,2024-05-08
+Eagle Midco B.V.,co_5e402a0aef64,First Lien,Healthcare,9.86%,,SOFR,6%,,,1840,1859,1986,0.3%,1859,,,,CCAP,2024-05-08
+Eagle Midco B.V.,co_5e402a0aef64,First Lien,Healthcare,10.05%,,SOFR,6.25%,,,1262,1212,1281,0.2%,1212,,,,CCAP,2024-05-08
+Eagle Midco B.V.,co_5e402a0aef64,First Lien,Healthcare,10.17%,,SOFR,6.25%,,,368,390,397,0.1%,390,,,,CCAP,2024-05-08
+Eagle Midco B.V.,co_5e402a0aef64,First Lien,Healthcare,11.6%,,SOFR,6.25%,,,3411,3336,3411,0.5%,3336,,,,CCAP,2024-05-08
+Netherlands Debt Investments,co_67b229ce1cc1,Other,Financial Services,,,,,,,,18601,18431,2.7%,18601,,,,CCAP,2024-05-08
+Netherlands,co_63c8807c2fd9,Other,,,,,,,,,18601,18431,2.7%,18601,,,,CCAP,2024-05-08
+Miraclon Corp.,co_98c63f706c52,First Lien,Business Services,9.88%,,SOFR,5.75%,,,9119,10188,9841,1.3%,10188,,,,CCAP,2024-05-08
+Miraclon Corp.,co_98c63f706c52,First Lien,Business Services,11.62%,,SOFR,5.75%,,,3329,3292,3329,0.4%,3292,,,,CCAP,2024-05-08
+Belgium Debt Investments,co_58492d9915d2,Other,Financial Services,,,,,,,,13480,13170,1.7%,13480,,,,CCAP,2024-05-08
+Miraclon Corp.,co_98c63f706c52,Other Equity,Business Services,,,,,,,,1,,,1,,,,CCAP,2024-05-08
+Miraclon Corp.,co_98c63f706c52,Other Equity,Business Services,,,,,,,,91,116,0%,91,,,,CCAP,2024-05-08
+Belgium Equity Investments,co_5e5dd0e2f819,Other,Financial Services,,,,,,,,92,116,0%,92,,,,CCAP,2024-05-08
+Belgium,co_90d693d30a3f,Other,,,,,,,,,13572,13286,1.7%,13572,,,,CCAP,2024-05-08
+Greencross,co_4c145c6ba54c,First Lien,Consumer & Retail,10.16%,,SOFR,5.75%,,,29400,21532,19170,2.6%,21532,,,,CCAP,2024-05-08
+Australia,co_c585f1decb98,Other,,,,,,,,,21532,19170,2.6%,21532,,,,CCAP,2024-05-08
+AX VI INV2 Holding AB,co_64ff7f133c71,First Lien,Consumer & Retail,8.67%,,SOFR,4.75%,,,8929,8786,9637,1.3%,8786,,,,CCAP,2024-05-08
+AX VI INV2 Holding AB,co_64ff7f133c71,Other,Consumer & Retail,,,,,,,,-8,,,-8,,,,CCAP,2024-05-08
+AX VI INV2 Holding AB,co_64ff7f133c71,First Lien,Consumer & Retail,13.92%,10%,,,,,2207,2205,2382,0.3%,2205,,,,CCAP,2024-05-08
+AX VI INV2 Holding AB,co_64ff7f133c71,First Lien,Consumer & Retail,9.93%,,SOFR,6%,,,1155,1207,1246,0.2%,1207,,,,CCAP,2024-05-08
+AX VI INV2 Holding AB,co_64ff7f133c71,Other Equity,Consumer & Retail,,,,,,,,1086,1092,0.1%,1086,,,,CCAP,2024-05-08
+Sweden,co_295099c764e6,Other,,,,,,,,,13276,14357,1.9%,13276,,,,CCAP,2024-05-08
+Pushpay USA INC.,co_fa4c0928a4b2,First Lien,Software & Technology,12.21%,,SOFR,6.75%,,,18479,17965,19033,2.5%,17965,,,,CCAP,2024-05-08
+Pushpay USA INC.,co_fa4c0928a4b2,Other,Software & Technology,,,,,,,,-37,,,-37,,,,CCAP,2024-05-08
+Investments,co_6a0632fdb7b4,Other,Financial Services,,,,,,,,1569840,1563343,2.06%,1569840,,,,CCAP,2024-05-08
+and Cash Equivalents Total,co_cc5ea9e6f150,Other,,,,,,,,,1570567,1564070,2.06%,1570567,,,,CCAP,2024-05-08
+iLending LLC,co_b14d8a57be01,Other,Financial Services,,,,,,,,,-101,0%,,,,,CCAP,2024-05-08
+Capital Goods Envocore Holding,co_e8dd9afc25d9,Common Equity,Industrials,,,,,,,,,,,,,,,CCAP,2024-05-08
+Capital Goods Envocore Holding,co_e8dd9afc25d9,Preferred Equity,Industrials,,,,,,,,,,,,,,,CCAP,2024-05-08
+Services ASP MCS Acquisition Corp.,co_acfbf80dd1fc,Other Equity,Business Services,,,,,,,,,40,0%,,,,,CCAP,2024-05-08
+Energy Allied Wireline Services,co_492e7d173633,Common Equity,Energy,,,,,,,,,,,,,,,CCAP,2024-05-08
+Energy Loadmaster Derrick & Equipment,co_5577663dc373,Preferred Equity,Energy,,,,,,,,,,,,,,,CCAP,2024-05-08
+Energy Loadmaster Derrick & Equipment,co_5577663dc373,Common Equity,Energy,,,,,,,,,,,,,,,CCAP,2024-05-08
+Food & Staples Retailing Isagenix International,co_705c4ac16570,Common Equity,Food & Beverage,,,,,,,,,,,,,,,CCAP,2024-05-08
+Bayside Opco,co_9c51c4f6d054,Common Equity,Healthcare,,,,,,,,,,,,,,,CCAP,2024-05-08
+A&A Global Imports,co_8521e3325707,Common Equity,Materials,,,,,,,,,,,,,,,CCAP,2024-05-08
+Retailing Palmetto Moon LLC,co_6bd0d826c0ac,Other Equity,Consumer & Retail,,,,,,,,,161,0%,,,,,CCAP,2024-05-08
+Semiconductor Equipment OEM Group LLC,co_ce1c22f2bced,Other Equity,Software & Technology,,,,,,,,,,,,,,,CCAP,2024-05-08
+Transportation Xpress Global Systems,co_b4e4a21e1b16,Common Equity,Transportation & Logistics,,,,,,,,,1254,0.2%,,,,,CCAP,2024-05-08
+Transportation,co_0b349c79e44d,Other,Transportation & Logistics,,,,,,,,,1254,0.2%,,,,,CCAP,2024-05-08

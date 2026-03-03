@@ -1,275 +1,369 @@
-company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,ticker,filing_date
-Tela Bio Inc,co_232a0001f5c0,Warrants,Medical Devices & Equipment,,,N/A,,2017-03-31,,,1281,507,0.0003,1281,,,HTGC,2025-05-01
-Achronix Semiconductor Corporation,co_d2c33e60f92e,Warrants,Technology Hardware,,,N/A,,2015-06-26,,,99,494,0.0002,99,,,HTGC,2025-05-01
-Aria Systems Inc,co_4d8893e908ce,Warrants,Software,,,N/A,,2015-05-22,,,74,,0.0,74,,,HTGC,2025-05-01
-Automation Anywhere Inc,co_119e5d4f51ed,Warrants,Software,,,N/A,,2022-09-23,,,448,421,,448,,,HTGC,2025-05-01
-Bitsight Technologies Inc,co_6859df787208,Warrants,Software,,,N/A,,2020-11-18,,,284,442,,284,,,HTGC,2025-05-01
-Brain Corporation,co_eb667b490c30,Warrants,Software,,,N/A,,2021-10-04,,,215,84,,215,,,HTGC,2025-05-01
-CloudBolt Software Inc,co_6a8e40f46f02,Warrants,Software,,,N/A,,2020-09-30,,,117,9,,117,,,HTGC,2025-05-01
-Cloudian Inc,co_ec6e27aa82ed,Warrants,Software,,,N/A,,2018-11-06,,,71,,,71,,,HTGC,2025-05-01
-Cloudpay Inc,co_661674c2daf6,Warrants,Software,,,N/A,,2018-04-10,,,54,908,,54,,,HTGC,2025-05-01
-Coronet Cyber Security Ltd,co_d4f93e5ea655,Warrants,Software,,,N/A,,2024-09-26,,,254,266,,254,,,HTGC,2025-05-01
-Couchbase Inc,co_79afa79ca100,Warrants,Software,,,N/A,,2019-04-25,,,462,686,,462,,,HTGC,2025-05-01
-Cutover Inc,co_d161f9d26166,Warrants,Software,,,N/A,,2022-09-21,,,26,83,,26,,,HTGC,2025-05-01
-Dashlane Inc,co_c11baae0f195,Warrants,Software,,,N/A,,2019-03-11,,,461,1102,,461,,,HTGC,2025-05-01
-Demandbase Inc,co_74f410b88e50,Warrants,Software,,,N/A,,2021-08-02,,,545,234,,545,,,HTGC,2025-05-01
-Dragos Inc,co_e84ff2d12623,Warrants,Software,,,N/A,,2023-06-28,,,1575,984,,1575,,,HTGC,2025-05-01
-Carbyne Inc,co_733c6022170e,Warrants,Software,,,N/A,,2025-02-24,,,24,19,,24,,,HTGC,2025-05-01
-Phathom Pharmaceuticals Inc,co_9e0570bae1ea,Warrants,Pharmaceuticals & Biotechnology,,,N/A,,2021-09-17,,,848,5,,848,,,HTGC,2025-05-01
-Redshift Bioanalytics Inc,co_400c1159eec3,Warrants,Pharmaceuticals & Biotechnology,,,N/A,,2022-03-23,,,20,17,,20,,,HTGC,2025-05-01
-Scynexis Inc,co_edfc238b5445,Warrants,Pharmaceuticals & Biotechnology,,,N/A,,2021-05-14,,,296,2,,296,,,HTGC,2025-05-01
-SynOx Therapeutics Limited,co_0041a0cb80ac,Warrants,Pharmaceuticals & Biotechnology,,,N/A,,2024-04-18,,,83,68,,83,,,HTGC,2025-05-01
-TG Therapeutics Inc,co_d2bf004f1034,Warrants,Pharmaceuticals & Biotechnology,,,N/A,,2021-12-30,,,721,2387,,721,,,HTGC,2025-05-01
-Valo Health LLC,co_7b55a66cd803,Warrants,Pharmaceuticals & Biotechnology,,,N/A,,2020-06-15,,,256,18,,256,,,HTGC,2025-05-01
-X4 Pharmaceuticals Inc,co_7630b823413b,Warrants,Pharmaceuticals & Biotechnology,,,N/A,,2019-03-18,,,510,19,,510,,,HTGC,2025-05-01
-908 Devices Inc,co_e451a969e6ed,Warrants,Technology Hardware,,,N/A,,2017-03-15,,,101,21,,101,,,HTGC,2025-05-01
-Locus Robotics Corp,co_bef8da650954,Warrants,Technology Hardware,,,N/A,,2022-06-21,,,34,45,,34,,,HTGC,2025-05-01
-Skydio Inc,co_ebf188bbe34a,Warrants,Technology Hardware,,,N/A,,2021-11-08,,,557,201,,557,,,HTGC,2025-05-01
-Curana Health Holdings LLC,co_fcf80990c185,Warrants,Healthcare Services,,,N/A,,2024-01-04,,,156,666,,156,,,HTGC,2025-05-01
-Modern Life Inc,co_4a57ee05f7d8,Warrants,Healthcare Services,,,N/A,,2023-03-30,,,210,117,,210,,,HTGC,2025-05-01
-NeueHealth Inc,co_c6577895c968,Warrants,Healthcare Services,,,N/A,,2024-06-21,,,716,940,,716,,,HTGC,2025-05-01
-Recover Together Inc,co_c1636fc4eb93,Warrants,Healthcare Services,,,N/A,,2023-07-03,,,382,128,,382,,,HTGC,2025-05-01
-Viridian Therapeutics Inc,co_54e19183cda4,Common Equity,Pharmaceuticals & Biotechnology,,,N/A,,2023-11-06,,,400,619,,400,,,HTGC,2025-05-01
-X4 Pharmaceuticals Inc,co_7630b823413b,Common Equity,Pharmaceuticals & Biotechnology,,,N/A,,2019-11-26,,,2945,1149,,2945,,,HTGC,2025-05-01
-Locus Robotics Corp,co_bef8da650954,Preferred Equity,Technology Hardware,,,N/A,,2022-11-17,,,650,294,,650,,,HTGC,2025-05-01
-Skydio Inc,co_ebf188bbe34a,Preferred Equity,Technology Hardware,,,N/A,,2022-03-08,,,1500,643,,1500,,,HTGC,2025-05-01
-23andMe Inc,co_b4f96b093266,Common Equity,Healthcare Services,,,N/A,,2019-03-11,,,5094,134,,5094,,,HTGC,2025-05-01
-Carbon Health Technologies Inc,co_308187d95b30,Preferred Equity,Healthcare Services,,,N/A,,2021-03-30,,,1687,2,,1687,,,HTGC,2025-05-01
-Click Therapeutics Inc,co_9a67e3de2eac,Common Equity,Healthcare Services,,,N/A,,2024-05-20,,,1662,1825,,1662,,,HTGC,2025-05-01
-Curana Health Holdings LLC,co_fcf80990c185,Common Equity,Healthcare Services,,,N/A,,2024-05-13,,,2500,2603,,2500,,,HTGC,2025-05-01
-Main Street Rural Inc,co_d6a156da9d0d,Preferred Equity,Healthcare Services,,,N/A,,2024-10-28,,,874,874,,874,,,HTGC,2025-05-01
-WellBe Senior Medical LLC,co_0974c1da93ed,Common Equity,Healthcare Services,,,N/A,,2024-06-10,,,1600,2065,,1600,,,HTGC,2025-05-01
-Yipit LLC,co_9a56fcd70e69,Preferred Equity,Business Services,,,N/A,,2021-12-30,,,3825,3898,,3825,,,HTGC,2025-05-01
-Coronado Aesthetics LLC,co_794ed9389e98,Preferred Equity,Medical Devices & Equipment,,,N/A,,2021-10-15,,,250,69,,250,,,HTGC,2025-05-01
-Coronado Aesthetics LLC,co_794ed9389e98,Preferred Equity,Medical Devices & Equipment,,,N/A,,,5000000,250,69,,,,,,HTGC,2025-05-01
-Valo Health LLC,co_7b55a66cd803,Preferred Equity,Pharmaceuticals & Biotechnology,,,N/A,,2022-10-31,,,1000,630,,1000,,,HTGC,2025-05-01
-Verge Analytics Inc,co_9f74fb60da45,Preferred Equity,Pharmaceuticals & Biotechnology,,,N/A,,2023-09-06,,,1500,1446,,1500,,,HTGC,2025-05-01
-Shield AI Inc,co_6c0ed074e81a,Preferred Equity,Technology Hardware,,,N/A,,2025-02-07,,,2250,2250,,2250,,,HTGC,2025-05-01
-Carbon Health Technologies Inc,co_308187d95b30,Common Equity,Healthcare Services,,,N/A,,2021-03-30,,,1910,,,1910,,,HTGC,2025-05-01
-Strive Health Holdings LLC,co_7ee9dcc02457,Warrants,Healthcare Services,,,N/A,,2023-09-28,,,278,325,,278,,,HTGC,2025-05-01
-Vida Health Inc,co_3a9c8c2bb78b,Warrants,Healthcare Services,,,N/A,,2022-03-28,,,121,2,,121,,,HTGC,2025-05-01
-Docker,co_90c5de5b4fa5,Common Equity,Software,,,N/A,,2018-11-29,,,4284,164,,4284,,,HTGC,2025-05-01
-Druva Holdings,co_457f71992d6e,Preferred Equity,Software,,,N/A,,2015-10-22,,,1000,4481,,1000,,,HTGC,2025-05-01
-Druva Holdings,co_457f71992d6e,Preferred Equity,Software,,,N/A,,2017-08-24,,,300,931,,300,,,HTGC,2025-05-01
-HighRoads,co_386ce6eb70ce,Common Equity,Software,,,N/A,,2013-01-18,,,307,,,307,,,HTGC,2025-05-01
-Leapwork,co_864589e46c35,Preferred Equity,Software,,,N/A,,2023-08-25,,,250,113,,250,,,HTGC,2025-05-01
-Lightbend,co_7aefb4c4e085,Common Equity,Software,,,N/A,,2020-12-04,,,265,26,,265,,,HTGC,2025-05-01
-Nextdoor.com,co_f28932d35d03,Common Equity,Software,,,N/A,,2018-08-01,,,4854,1559,,4854,,,HTGC,2025-05-01
-SingleStore,co_b9dfc07e8eb3,Preferred Equity,Software,,,N/A,,2020-11-25,,,2000,1850,,2000,,,HTGC,2025-05-01
-SingleStore,co_b9dfc07e8eb3,Preferred Equity,Software,,,N/A,,2021-08-12,,,280,206,,280,,,HTGC,2025-05-01
-SirionLabs,co_f28d9bd3f037,Preferred Equity,Software,,,N/A,,2024-06-30,,,1792,1590,,1792,,,HTGC,2025-05-01
-Verana Health,co_5a63ccefeb40,Common Equity,Software,,,N/A,,2021-07-08,,,2000,79,,2000,,,HTGC,2025-05-01
-Impossible Foods,co_869ab9ef2f9b,Preferred Equity,Energy & Utilities,,,N/A,,2019-05-10,,,2000,115,,2000,,,HTGC,2025-05-01
-Modumetal,co_eb69d329c8a3,Common Equity,Energy & Utilities,,,N/A,,2015-06-01,,,500,,,500,,,HTGC,2025-05-01
-Pivot Bio,co_f89e180060da,Preferred Equity,Energy & Utilities,,,N/A,,2021-06-28,,,4500,2007,,4500,,,HTGC,2025-05-01
-Druva Holdings Inc,co_457f71992d6e,Preferred Equity,Software,,,N/A,,2017-08-24,,,1300,6269,,1300,,,HTGC,2025-05-01
-HighRoads Inc,co_386ce6eb70ce,Common Equity,Software,,,N/A,,2013-01-18,,,307,,,307,,,HTGC,2025-05-01
-Leapwork ApS,co_f7ad5edfec2b,Preferred Equity,Software,,,N/A,,2023-08-25,,,250,132,,250,,,HTGC,2025-05-01
-Lightbend Inc,co_7aefb4c4e085,Common Equity,Software,,,N/A,,2020-12-04,,,265,24,,265,,,HTGC,2025-05-01
-Nextdoor.com Inc,co_f28932d35d03,Common Equity,Software,,,N/A,,2018-08-01,,,4854,2416,,4854,,,HTGC,2025-05-01
-SingleStore Inc,co_b9dfc07e8eb3,Preferred Equity,Software,,,N/A,,2020-11-25,,,2000,1988,,2000,,,HTGC,2025-05-01
-SingleStore Inc,co_b9dfc07e8eb3,Preferred Equity,Software,,,N/A,,2021-08-12,,,280,216,,280,,,HTGC,2025-05-01
-SirionLabs Pte Ltd,co_17e1cb98d9d0,Preferred Equity,Software,,,N/A,,2024-06-30,,,1792,1996,,1792,,,HTGC,2025-05-01
-Verana Health Inc,co_5a63ccefeb40,Preferred Equity,Software,,,N/A,,2021-07-08,,,2000,370,,2000,,,HTGC,2025-05-01
-Impossible Foods Inc,co_869ab9ef2f9b,Preferred Equity,Energy & Utilities,,,N/A,,2019-05-10,,,2000,106,,2000,,,HTGC,2025-05-01
-Modumetal Inc,co_eb69d329c8a3,Common Equity,Energy & Utilities,,,N/A,,2015-06-01,,,500,,,500,,,HTGC,2025-05-01
-Pivot Bio Inc,co_f89e180060da,Preferred Equity,Energy & Utilities,,,N/A,,2021-06-28,,,4500,1885,,4500,,,HTGC,2025-05-01
-SUNation Energy Inc,co_2396c6fa9e11,Common Equity,Energy & Utilities,,,N/A,,2020-12-10,,,3153,1,,3153,,,HTGC,2025-05-01
-PathAI Inc,co_970ac7d71ae2,Warrants,Pharmaceuticals & Biotechnology,,,N/A,,2022-12-23,,,460,101,,,,,HTGC,2025-05-01
-Lendio Inc,co_b4aaf04e2819,Warrants,Business Services,,,N/A,,2019-03-29,,,39,10,,39,,,HTGC,2025-05-01
-Plentific Ltd,co_92dd5212ddd1,Warrants,Business Services,,,N/A,,2023-10-03,,,60,38,,60,,,HTGC,2025-05-01
-Provi,co_db073da882e3,Warrants,Business Services,,,N/A,,2022-12-22,,,166,77,,166,,,HTGC,2025-05-01
-Rhino Labs Inc,co_c3099032e93e,Warrants,Business Services,,,N/A,,2021-03-12,,,470,,,470,,,HTGC,2025-05-01
-SeatGeek Inc,co_17ff28e167d8,Warrants,Business Services,,,N/A,,2019-06-12,,,1242,4901,,1242,,,HTGC,2025-05-01
-Skyword Inc,co_7fd3c4e4ed54,Warrants,Business Services,,,N/A,,2022-11-14,,,57,28,,57,,,HTGC,2025-05-01
-Skyword Inc,co_7fd3c4e4ed54,Warrants,Business Services,,,N/A,,2019-08-23,,,83,3,,83,,,HTGC,2025-05-01
-Snagajob.com Inc,co_419b0dc4cd63,Warrants,Business Services,,,N/A,,2020-04-20,,,16,,,16,,,HTGC,2025-05-01
-Snagajob.com Inc,co_419b0dc4cd63,Warrants,Business Services,,,N/A,,2016-06-30,,,782,,,782,,,HTGC,2025-05-01
-Snagajob.com Inc,co_419b0dc4cd63,Warrants,Business Services,,,N/A,,2018-08-01,,,62,,,62,,,HTGC,2025-05-01
-Thumbtack Inc,co_78ff87e8d4d7,Warrants,Business Services,,,N/A,,2018-05-01,,,985,878,,985,,,HTGC,2025-05-01
-Veem Inc,co_a9c262ba2857,Warrants,Business Services,,,N/A,,2022-03-31,,,126,13,,126,,,HTGC,2025-05-01
-Worldremit Group Limited,co_443b38154040,Warrants,Business Services,,,N/A,,2021-02-11,,,129,95,,129,,,HTGC,2025-05-01
-Next Insurance Inc,co_b8e581b336d0,Warrants,Financial Services,,,N/A,,2023-02-03,,,214,460,,21,,,HTGC,2025-05-01
-Houzz Inc,co_a23fb215675a,Warrants,Business Services,,,N/A,,2019-10-29,,,20,,,20,,,HTGC,2025-05-01
-Landing Holdings Inc,co_b32f9906f71a,Warrants,Business Services,,,N/A,,2021-03-12,,,116,101,,116,,,HTGC,2025-05-01
-AmplifyBio LLC,co_855298bcdc8e,First Lien,Pharmaceuticals & Biotechnology,,,Prime,2.50%,,2027-01-01,24000,,,,,,,HTGC,2025-05-01
-AmplifyBio LLC,co_855298bcdc8e,First Lien,Pharmaceuticals & Biotechnology,,,Prime,2.50%,,2027-01-01,22458,,,,,,,HTGC,2025-05-01
-Arcus Biosciences Inc,co_7ef9e8b7a616,First Lien,Pharmaceuticals & Biotechnology,,,Prime,1.95%,,2029-09-01,37500,37379,37379,,37379,,,HTGC,2025-05-01
-Arcus Biosciences Inc,co_7ef9e8b7a616,First Lien,Pharmaceuticals & Biotechnology,,,Prime,1.95%,,2029-09-01,37500,37511,38913,,,37511,,HTGC,2025-05-01
-ATAI Life Sciences NV,co_0163887af99d,First Lien,Pharmaceuticals & Biotechnology,,,Prime,4.30%,,2026-08-01,14000,14442,14385,,14442,,,HTGC,2025-05-01
-ATAI Life Sciences NV,co_0163887af99d,First Lien,Pharmaceuticals & Biotechnology,,,Prime,4.30%,,2026-08-01,14000,14538,14452,,,14538,,HTGC,2025-05-01
-Axsome Therapeutics Inc,co_df71d392e42a,First Lien,Pharmaceuticals & Biotechnology,,,Prime,2.20%,,2028-01-01,143350,145451,152945,,145451,,,HTGC,2025-05-01
-Axsome Therapeutics Inc,co_df71d392e42a,First Lien,Pharmaceuticals & Biotechnology,,,Prime,2.20%,,2028-01-01,143350,145929,153070,,,145929,,HTGC,2025-05-01
-bluebird bio Inc,co_e46ed37952ba,First Lien,Pharmaceuticals & Biotechnology,,2.45%,Prime,1.45%,,2029-04-01,65655,64028,55344,,64028,,,HTGC,2025-05-01
-bluebird bio Inc,co_e46ed37952ba,First Lien,Pharmaceuticals & Biotechnology,,2.45%,Prime,1.45%,,2029-04-01,66058,64724,60624,,,64724,,HTGC,2025-05-01
-Braeburn Inc,co_636d050f2734,First Lien,Pharmaceuticals & Biotechnology,,1.10%,Prime,2.45%,,2028-10-01,53192,53374,55626,,53374,,,HTGC,2025-05-01
-Braeburn Inc,co_636d050f2734,First Lien,Pharmaceuticals & Biotechnology,,1.10%,Prime,2.45%,,2028-10-01,53339,53669,55350,,,53669,,HTGC,2025-05-01
-COMPASS Pathways plc,co_a5c2a432eb2a,First Lien,Pharmaceuticals & Biotechnology,,1.40%,Prime,1.50%,,2027-07-01,24490,24613,25608,,24613,,,HTGC,2025-05-01
-COMPASS Pathways plc,co_a5c2a432eb2a,First Lien,Pharmaceuticals & Biotechnology,,1.40%,Prime,1.50%,,2027-07-01,24576,24826,25453,,,24826,,HTGC,2025-05-01
-Corium Inc,co_034adcd90bf2,First Lien,Pharmaceuticals & Biotechnology,,,Prime,5.70%,,2026-09-01,105225,109543,109178,,109543,,,HTGC,2025-05-01
-Corium Inc,co_034adcd90bf2,First Lien,Pharmaceuticals & Biotechnology,,,Prime,5.70%,,2026-09-01,86925,90906,90279,,,90906,,HTGC,2025-05-01
-Disc Medicine Inc,co_f123df795d99,First Lien,Pharmaceuticals & Biotechnology,,,Prime,1.75%,,2029-12-01,22500,22363,22363,,22363,,,HTGC,2025-05-01
-Disc Medicine Inc,co_f123df795d99,First Lien,Pharmaceuticals & Biotechnology,,,Prime,1.75%,,2029-12-01,22500,22433,22755,,,22433,,HTGC,2025-05-01
-Eloxx Pharmaceuticals Inc,co_9f14e9651813,First Lien,Pharmaceuticals & Biotechnology,,,Prime,6.25%,,2025-04-01,489,988,988,,988,,,HTGC,2025-05-01
-PathAI Inc,co_970ac7d71ae2,First Lien,Pharmaceuticals & Biotechnology,,,Prime,2.15%,,2027-01-01,32000,32801,33788,,32801,,,HTGC,2025-05-01
-PathAI Inc,co_970ac7d71ae2,First Lien,Pharmaceuticals & Biotechnology,,,Prime,2.15%,,2027-01-01,32000,33032,33739,0.0169,33032,,,HTGC,2025-05-01
-Aryaka Networks Inc,co_66f943cdd8e4,First Lien,Telecommunications,,1.25%,Prime,1.80%,,2028-12-01,27926,27693,27491,,27693,,,HTGC,2025-05-01
-Aryaka Networks Inc,co_66f943cdd8e4,First Lien,Telecommunications,,1.25%,Prime,1.80%,,2028-12-01,28003,27886,27443,0.0137,27886,,,HTGC,2025-05-01
-Altumint Inc,co_d29fe4d96dcc,First Lien,Business Services,,,Prime,3.65%,,2027-12-01,10000,9916,10140,,9916,,,HTGC,2025-05-01
-Altumint Inc,co_d29fe4d96dcc,First Lien,Business Services,,,Prime,3.65%,,2027-12-01,10000,9940,10127,,9940,,,HTGC,2025-05-01
-Carwow LTD,co_7101db9aec7f,First Lien,Business Services,,1.45%,Prime,4.70%,,2027-12-01,20361,27818,25264,,27818,,,HTGC,2025-05-01
-Carwow LTD,co_7101db9aec7f,First Lien,Business Services,,1.45%,Prime,4.70%,,2027-12-01,20435,27981,26219,,27981,,,HTGC,2025-05-01
-GoEuro Travel GmbH,co_b36da693ec55,First Lien,Business Services,,,Prime,3.45%,,2029-11-01,48750,48276,48276,,48276,,,HTGC,2025-05-01
-GoEuro Travel GmbH,co_b36da693ec55,First Lien,Business Services,,,Prime,3.45%,,2029-11-01,48750,48387,48387,,48387,,,HTGC,2025-05-01
-Houzz Inc,co_a23fb215675a,Subordinated Debt,Business Services,,11.50%,N/A,,,2028-05-01,25687,25687,26869,,25687,,,HTGC,2025-05-01
-Houzz Inc,co_a23fb215675a,Subordinated Debt,Business Services,,11.50%,N/A,,,2028-05-01,26426,26425,27673,,26425,,,HTGC,2025-05-01
-Jobandtalent USA Inc,co_e83e86af63fd,First Lien,Business Services,,,SOFR (M),8.86%,,2025-08-01,13011,13276,12994,,13276,,,HTGC,2025-05-01
-Jobandtalent USA Inc,co_e83e86af63fd,First Lien,Business Services,,7.00%,SOFR (M),0.00%,,2028-10-01,13536,13874,13148,,13874,,,HTGC,2025-05-01
-Plentific Ltd,co_92dd5212ddd1,First Lien,Business Services,,,Prime,2.55%,,2026-10-01,3325,3282,3340,,3282,,,HTGC,2025-05-01
-Plentific Ltd,co_92dd5212ddd1,First Lien,Business Services,,,Prime,2.55%,,2026-10-01,3325,3300,3347,,3300,,,HTGC,2025-05-01
-Provi,co_db073da882e3,First Lien,Business Services,,,Prime,4.40%,,2026-12-01,15000,15093,15176,,15093,,,HTGC,2025-05-01
-Provi,co_db073da882e3,First Lien,Business Services,,,Prime,4.40%,,2026-12-01,15000,15145,15198,,15145,,,HTGC,2025-05-01
-Riviera Partners LLC,co_f7a997174e2c,First Lien,Business Services,,,SOFR (Q),8.27%,,2028-03-01,36401,36047,35175,,36047,,,HTGC,2025-05-01
-Tectura Corporation,co_d9790e32b7db,Preferred Equity,Business Services,,,N/A,N/A,2023-12-29,,,13263,3606,,13263,,,HTGC,2025-05-01
-Tectura Corporation,co_d9790e32b7db,Preferred Equity,Business Services,,,N/A,,,3235298,13263,3606,,,,,,HTGC,2025-05-01
-Worldremit Group Limited,co_443b38154040,Preferred Equity,Business Services,,,,2024-06-24,,,922,977,,,,,,HTGC,2025-05-01
-Worldremit Group Limited,co_443b38154040,Preferred Equity,Business Services,,,N/A,N/A,2024-06-24,,,922,952,,922,,,HTGC,2025-05-01
-Gibraltar Acquisition LLC,co_11f8ff2850e4,Partnership Interest,Financial Services,,,,2018-03-01,,,34006,22110,,,,,,HTGC,2025-05-01
-Gibraltar Acquisition LLC,co_11f8ff2850e4,Partnership Interest,Financial Services,,,N/A,N/A,2018-03-01,,,34006,23051,,34006,,,HTGC,2025-05-01
-Hercules Adviser LLC,co_e3d965a37d40,Partnership Interest,Financial Services,,,,2021-03-26,,,12035,45017,,,,,,HTGC,2025-05-01
-Hercules Adviser LLC,co_e3d965a37d40,Partnership Interest,Financial Services,,,N/A,N/A,2021-03-26,,,35,30190,,35,,,HTGC,2025-05-01
-Newfront Insurance Holdings Inc,co_559cab18ae0e,Preferred Equity,Financial Services,,,,2021-09-30,,,403,456,,,,,,HTGC,2025-05-01
-Newfront Insurance Holdings Inc,co_559cab18ae0e,Preferred Equity,Financial Services,,,N/A,N/A,2021-09-30,,,403,404,,403,,,HTGC,2025-05-01
-Aytu BioScience Inc,co_9fcc2bed0b8f,Common Equity,Pharmaceuticals & Biotechnology,,,,2014-03-28,,,1500,1,,,,,,HTGC,2025-05-01
-Aytu BioScience Inc,co_9fcc2bed0b8f,Common Equity,Pharmaceuticals & Biotechnology,,,N/A,N/A,2014-03-28,,,1500,1,,1500,,,HTGC,2025-05-01
-BioQ Pharma Incorporated,co_bfe18f79377b,Preferred Equity,Pharmaceuticals & Biotechnology,,,,2015-12-08,,,500,,,,,,,HTGC,2025-05-01
-BioQ Pharma Incorporated,co_bfe18f79377b,Preferred Equity,Pharmaceuticals & Biotechnology,,,N/A,N/A,2015-12-08,,,500,,,500,,,HTGC,2025-05-01
-PDS Biotechnology Corporation,co_2d8944d48eba,Common Equity,Pharmaceuticals & Biotechnology,,,,2015-04-06,,,309,3,,,,,,HTGC,2025-05-01
-PDS Biotechnology Corporation,co_2d8944d48eba,Common Equity,Pharmaceuticals & Biotechnology,,,N/A,N/A,2015-04-06,,,309,4,,309,,,HTGC,2025-05-01
-Talphera Inc,co_b79ee73caa9d,Common Equity,Pharmaceuticals & Biotechnology,,,,2018-12-10,,,1329,4,,,,,,HTGC,2025-05-01
-Talphera Inc,co_b79ee73caa9d,Common Equity,Pharmaceuticals & Biotechnology,,,N/A,N/A,2018-12-10,,,1329,5,,1329,,,HTGC,2025-05-01
-Akero Therapeutics Inc,co_68af890cbaf5,Common Equity,Pharmaceuticals & Biotechnology,,,,2024-03-08,,,1000,1396,,,,,,HTGC,2025-05-01
-Akero Therapeutics Inc,co_68af890cbaf5,Common Equity,Pharmaceuticals & Biotechnology,,,N/A,N/A,2024-03-08,,,1000,959,,1000,,,HTGC,2025-05-01
-Arcus Biosciences Inc,co_7ef9e8b7a616,Common Equity,Pharmaceuticals & Biotechnology,,,,2025-02-19,,,2250,1606,,,,,,HTGC,2025-05-01
-Avalo Therapeutics Inc,co_85384df8ecf1,Common Equity,Pharmaceuticals & Biotechnology,,,,2014-08-19,,,1000,,,,,,,HTGC,2025-05-01
-Avalo Therapeutics Inc,co_85384df8ecf1,Common Equity,Pharmaceuticals & Biotechnology,,,N/A,N/A,2014-08-19,,,1000,,,1000,,,HTGC,2025-05-01
-Axsome Therapeutics Inc,co_df71d392e42a,Common Equity,Pharmaceuticals & Biotechnology,,,,2022-05-09,,,4165,14815,,,,,,HTGC,2025-05-01
-Axsome Therapeutics Inc,co_df71d392e42a,Common Equity,Pharmaceuticals & Biotechnology,,,N/A,N/A,2022-05-09,,,4165,10747,,4165,,,HTGC,2025-05-01
-Bicycle Therapeutics PLC,co_63f2424246f9,Common Equity,Pharmaceuticals & Biotechnology,,,,2020-10-05,,,187,,,,,,,HTGC,2025-05-01
-Suzy Inc,co_494920c64694,Warrants,Software,,,,,2023-08-24,,,,367,,,367,,HTGC,2025-05-01
-Tipalti Solutions Ltd,co_7018426a584e,Warrants,Software,,,,,2023-03-22,,,,360,,,360,,HTGC,2025-05-01
-Tipalti Solutions Ltd,co_7018426a584e,Warrants,Software,,,,,2025-03-27,,,,136,,,136,,HTGC,2025-05-01
-VideoAmp Inc,co_14683a2c55f4,Warrants,Software,,,,,2022-01-21,,,,1275,0.04,,1275,,HTGC,2025-05-01
-Capella Space Corp,co_92082b623fe4,Warrants,Aerospace & Defense,,,,,2021-10-21,,,,207,0.22,,207,,HTGC,2025-05-01
-Ampion PBC,co_3106ff3f64c3,Warrants,Energy & Utilities,,,,,2022-04-15,,,52,67,,52,,,HTGC,2025-05-01
-Electric Hydrogen Co,co_65015803876f,Warrants,Energy & Utilities,,,,,2024-03-27,,,507,394,,507,,,HTGC,2025-05-01
-Forbion Growth Opportunities Fund I C.V.,co_188f35368bb2,Partnership Interest,Pharmaceuticals & Biotechnology,,,,,2020-11-16,,,,2847,,,2847,,HTGC,2025-05-01
-Forbion Growth Opportunities Fund II C.V.,co_188f35368bb2,Partnership Interest,Pharmaceuticals & Biotechnology,,,,,2022-06-23,,,,1242,,,1242,,HTGC,2025-05-01
-Liberty Zim Co-Invest L.P.,co_24bddbe6433a,Partnership Interest,Software,,,,,2022-07-21,,,,381,,,381,,HTGC,2025-05-01
-GS Financial Square Government Fund,co_90c5aa6fb1cf,Money Market Fund,Financial Services,,,,,,,,26000,26000,,26000,,,HTGC,2025-05-01
-GS Financial Square Government Fund,co_90c5aa6fb1cf,Money Market Fund,Financial Services,,,,,,,21100,21100,,,,,,HTGC,2025-05-01
-Tipalti Solutions Ltd,co_7018426a584e,First Lien,Software,,2.00%,Prime,0.45%,,2027-04-01,42670,,,,,,,HTGC,2025-05-01
-Tipalti Solutions Ltd,co_7018426a584e,First Lien,Software,,2.30%,Prime,0.45%,,2029-04-01,75000,,,,,,,HTGC,2025-05-01
-Tipalti Solutions Ltd,co_7018426a584e,First Lien,Software,,2.30%,Prime,0.45%,,2029-04-01,42000,41763,41763,,41763,,,HTGC,2025-05-01
-Zappi Inc,co_8d582da68ec4,First Lien,Software,,,SOFR (Q),8.03%,,2027-12-01,12729,12522,12756,,12522,,,HTGC,2025-05-01
-Zappi Inc,co_8d582da68ec4,First Lien,Software,,,SOFR (Q),8.03%,,2027-12-01,12696,12505,12667,,12505,,,HTGC,2025-05-01
-Zimperium Inc,co_027a95dc5366,First Lien,Software,,,SOFR (Q),8.31%,,2027-05-01,14790,14618,14444,,14618,,,HTGC,2025-05-01
-Zimperium Inc,co_027a95dc5366,First Lien,Software,,,SOFR (Q),8.31%,,2027-05-01,14790,14633,14370,,14633,,,HTGC,2025-05-01
-Voyager Technologies Inc,co_cb3a40f499bc,First Lien,Aerospace & Defense,,2.50%,Prime,1.25%,,2028-07-01,45439,45302,45690,,45302,,,HTGC,2025-05-01
-Voyager Technologies Inc,co_cb3a40f499bc,First Lien,Aerospace & Defense,,2.50%,Prime,1.25%,,2028-07-01,45724,45767,49505,,45767,,,HTGC,2025-05-01
-Ampion PBC,co_3106ff3f64c3,First Lien,Energy & Utilities,,1.45%,Prime,4.70%,,2025-05-01,3984,4102,4141,,4102,,,HTGC,2025-05-01
-Electric Hydrogen Co,co_65015803876f,First Lien,Energy & Utilities,,1.25%,Prime,2.25%,,2028-05-01,20127,19687,19830,,19687,,,HTGC,2025-05-01
-Electric Hydrogen Co,co_65015803876f,First Lien,Energy & Utilities,,1.25%,Prime,2.25%,,2028-05-01,20190,19866,19903,,19866,,,HTGC,2025-05-01
-SUNation Energy Inc,co_2396c6fa9e11,First Lien,Energy & Utilities,10.00%,,N/A,,,2027-06-01,1296,1297,1272,,1297,,,HTGC,2025-05-01
-Alamar Biosciences Inc,co_affded9c43f9,Preferred Equity,Pharmaceuticals & Biotechnology,,,,2024-02-21,,,1500,1423,,,,,,HTGC,2025-05-01
-Alamar Biosciences Inc,co_affded9c43f9,Preferred Equity,Pharmaceuticals & Biotechnology,,,,,,2024-02-21,,,1500,,0.05,1500,,HTGC,2025-05-01
-Fabletics Inc,co_820aa01d964e,Common Equity,Consumer Products,,,,2010-04-30,,,128,46,,,,,,HTGC,2025-05-01
-Fabletics Inc,co_820aa01d964e,Common Equity,Consumer Products,,,,,,2010-04-30,,,128,0.19,,128,,HTGC,2025-05-01
-Fabletics Inc,co_820aa01d964e,Preferred Equity,Consumer Products,,,,2013-07-16,,,1101,299,,,,,,HTGC,2025-05-01
-Fabletics Inc,co_820aa01d964e,Preferred Equity,Consumer Products,,,,,,2013-07-16,,,1101,,,1101,,HTGC,2025-05-01
-Grove Collaborative Inc,co_d4b00d478c7f,Common Equity,Consumer Products,,,,2021-04-30,,,433,17,,,,,,HTGC,2025-05-01
-Grove Collaborative Inc,co_d4b00d478c7f,Common Equity,Consumer Products,,,,,,2021-04-30,,,433,0.17,,433,,HTGC,2025-05-01
-Savage X Holding LLC,co_bad898146fd5,Common Equity,Consumer Products,,,,2010-04-30,,,13,421,,0.13,,,,HTGC,2025-05-01
-Savage X Holding LLC,co_bad898146fd5,Common Equity,Consumer Products,,,,,,2010-04-30,,,13,,,13,,HTGC,2025-05-01
-Carwow LTD,co_7101db9aec7f,Preferred Equity,Business Services,,,,2021-12-15,,,1151,627,,,,,,HTGC,2025-05-01
-Carwow LTD,co_7101db9aec7f,Preferred Equity,Business Services,,,,,,2021-12-15,,,1151,,,1151,,HTGC,2025-05-01
-Lyft Inc,co_17a29eaa720e,Common Equity,Business Services,,,,2018-12-26,,,5263,1299,,,,,,HTGC,2025-05-01
-Lyft Inc,co_17a29eaa720e,Common Equity,Business Services,,,,,,2018-12-26,,,5263,,,5263,,HTGC,2025-05-01
-Nerdy Inc,co_e8d67c621d15,Common Equity,Business Services,,,,2021-09-17,,,1000,162,,,,,,HTGC,2025-05-01
-Nerdy Inc,co_e8d67c621d15,Common Equity,Business Services,,,,,,2021-09-17,,,1000,,,1000,,HTGC,2025-05-01
-OfferUp Inc,co_22efa4f42f26,Preferred Equity,Business Services,,,,2016-10-25,,,1663,467,,,,,,HTGC,2025-05-01
-OfferUp Inc,co_22efa4f42f26,Preferred Equity,Business Services,,,,2016-10-25,,,632,177,,,,,,HTGC,2025-05-01
-OfferUp Inc,co_22efa4f42f26,Preferred Equity,Business Services,,,,,,2016-10-25,,,1663,,,1663,,HTGC,2025-05-01
-OfferUp Inc,co_22efa4f42f26,Preferred Equity,Business Services,,,,,,2016-10-25,,,632,,,632,,HTGC,2025-05-01
-Oportun,co_9b2ef2269108,Common Equity,Business Services,,,,2013-06-28,,,577,188,,,,,,HTGC,2025-05-01
-Oportun,co_9b2ef2269108,Common Equity,Business Services,,,,,,2013-06-28,,,577,,,577,,HTGC,2025-05-01
-Reischling Press Inc,co_8fc9690afb64,Common Equity,Business Services,,,,2020-07-31,,,39,,,0.39,,,,HTGC,2025-05-01
-Reischling Press Inc,co_8fc9690afb64,Common Equity,Business Services,,,,,,2020-07-31,,,39,,,39,,HTGC,2025-05-01
-Rhino Labs Inc,co_c3099032e93e,Common Equity,Business Services,,,,2022-01-24,,,1000,,,,,,,HTGC,2025-05-01
-Rhino Labs Inc,co_c3099032e93e,Common Equity,Business Services,,,,,,2022-01-24,,,1000,,,1000,,HTGC,2025-05-01
-Tectura Corporation,co_d9790e32b7db,Common Equity,Business Services,,,N/A,,,414994863,900,7,,,,,,HTGC,2025-05-01
-Halio Inc,co_975ca37f6249,Warrants,Energy & Utilities,,,,,2015-04-07,,,63,,,63,,,HTGC,2025-05-01
-Forbion Growth Opportunities Fund I CV,co_188f35368bb2,Partnership Interest,Pharmaceuticals & Biotechnology,,,,,2020-11-16,,,2847,4382,,2847,,,HTGC,2025-05-01
-Forbion Growth Opportunities Fund II CV,co_188f35368bb2,Partnership Interest,Pharmaceuticals & Biotechnology,,,,,2022-06-23,,,1242,1438,,1242,,,HTGC,2025-05-01
-Liberty Zim Co-Invest LP,co_24bddbe6433a,Partnership Interest,Software,,,,,2022-07-21,,,381,400,,381,,,HTGC,2025-05-01
-Gibraltar Acquisition LLC,co_11f8ff2850e4,Unsecured Debt,Financial Services,3.45%,8.05%,N/A,,,2026-09-01,26337,26337,26337,,26337,,,HTGC,2025-05-01
-Gibraltar Acquisition LLC,co_11f8ff2850e4,Unsecured Debt,Financial Services,11.95%,,N/A,,,2026-09-01,9875,9875,9875,,9875,,,HTGC,2025-05-01
-Gibraltar Acquisition LLC,co_11f8ff2850e4,Common Equity,Financial Services,,,N/A,,,1,34006,23051,,,,,,HTGC,2025-05-01
-Hercules Adviser LLC,co_e3d965a37d40,Unsecured Debt,Financial Services,5.00%,,N/A,,,2025-06-01,12000,12000,12000,,12000,,,HTGC,2025-05-01
-Hercules Adviser LLC,co_e3d965a37d40,Common Equity,Financial Services,,,N/A,,,1,35,30190,,0.35,,,,HTGC,2025-05-01
-Tectura Corporation,co_d9790e32b7db,First Lien,Business Services,8.25%,,N/A,,,2027-01-01,,8250,8027,,8250,,,HTGC,2025-05-01
-Equality Health LLC,co_8f3279724df7,First Lien,Healthcare Services,,1.55%,Prime,4.25%,,2026-02-01,70952,,,,,,,HTGC,2025-05-01
-Main Street Rural Inc,co_d6a156da9d0d,First Lien,Healthcare Services,,,Prime,1.95%,,2027-07-01,38500,39321,39614,,39321,,,HTGC,2025-05-01
-Marathon Health LLC,co_9038d4cba814,First Lien,Healthcare Services,,2.25%,Prime,0.75%,,2029-02-01,168301,167702,168880,,167702,,,HTGC,2025-05-01
-Marathon Health LLC,co_9038d4cba814,First Lien,Healthcare Services,,,Prime,3.00%,,2029-02-01,5000,5000,5000,,5000,,,HTGC,2025-05-01
-Marathon Health LLC,co_9038d4cba814,First Lien,Healthcare Services,,4.00%,Prime,-0.90%,,2029-02-01,159176,,,,,,,HTGC,2025-05-01
-Modern Life Inc,co_4a57ee05f7d8,First Lien,Healthcare Services,,,Prime,2.75%,,2027-02-01,18200,18391,18402,,18391,,,HTGC,2025-05-01
-Modern Life Inc,co_4a57ee05f7d8,First Lien,Healthcare Services,,,Prime,2.75%,,2027-02-01,18200,18299,18340,,18299,,,HTGC,2025-05-01
-NeueHealth Inc,co_c6577895c968,First Lien,Healthcare Services,,2.50%,Prime,1.15%,,2028-06-01,25188,24483,24449,,24483,,,HTGC,2025-05-01
-NeueHealth Inc,co_c6577895c968,First Lien,Healthcare Services,,2.50%,Prime,1.15%,,2028-06-01,25031,24236,24587,,24236,,,HTGC,2025-05-01
-Recover Together Inc,co_c1636fc4eb93,First Lien,Healthcare Services,,,Prime,1.90%,,2027-07-01,45000,45705,44769,,45705,,,HTGC,2025-05-01
-Recover Together Inc,co_c1636fc4eb93,First Lien,Healthcare Services,,,Prime,1.90%,,2027-07-01,45000,45431,45741,,45431,,,HTGC,2025-05-01
-Strive Health Holdings LLC,co_7ee9dcc02457,First Lien,Healthcare Services,,,Prime,0.70%,,2027-09-01,30000,29905,30521,,29905,,,HTGC,2025-05-01
-Strive Health Holdings LLC,co_7ee9dcc02457,First Lien,Healthcare Services,,,Prime,0.70%,,2027-09-01,30000,29742,30587,,29742,,,HTGC,2025-05-01
-Vida Health Inc,co_3a9c8c2bb78b,First Lien,Healthcare Services,,5.35%,Prime,-2.75%,,2026-10-01,37248,38018,37396,,38018,,,HTGC,2025-05-01
-Vida Health Inc,co_3a9c8c2bb78b,First Lien,Healthcare Services,,5.35%,Prime,-2.75%,,2026-10-01,36761,37367,36772,,37367,,,HTGC,2025-05-01
-WellBe Senior Medical LLC,co_0974c1da93ed,First Lien,Healthcare Services,,2.65%,Prime,0.75%,,2029-05-01,28468,28413,27410,,28413,,,HTGC,2025-05-01
-WellBe Senior Medical LLC,co_0974c1da93ed,First Lien,Healthcare Services,,2.65%,Prime,0.75%,,2029-05-01,28283,28144,27551,,28144,,,HTGC,2025-05-01
-Saama Technologies LLC,co_e7367629f9fe,First Lien,Business Services,,2.00%,Prime,0.70%,,2027-07-01,19779,19741,20445,,19741,,,HTGC,2025-05-01
-Orchestra BioMed Holdings Inc,co_dbd77c19a010,First Lien,Medical Devices & Equipment,,,Prime,2.00%,,2028-11-01,15000,14740,14740,,14740,,,HTGC,2025-05-01
-Dashlane Inc,co_c11baae0f195,First Lien,Software,,1.10%,Prime,3.05%,,2027-12-01,45601,,,,,,,HTGC,2025-05-01
-Dashlane Inc,co_c11baae0f195,First Lien,Software,3.05%,1.10%,Prime,3.05%,,2027-12-01,45476,46450,47708,,,46450,,HTGC,2025-05-01
-Dispatch Technologies Inc,co_b98a9adecb21,First Lien,Software,,,SOFR (Q),8.01%,,2028-04-01,8628,8478,8312,,8478,,,HTGC,2025-05-01
-Dispatch Technologies Inc,co_b98a9adecb21,First Lien,Software,8.01%,,SOFR (Q),8.01%,,2028-04-01,8896,8758,8641,,,8758,,HTGC,2025-05-01
-DocPlanner,co_fc58ee11d7a7,First Lien,Healthcare Technology,,,Prime,2.75%,,2030-01-01,68200,69353,73090,,69353,,,HTGC,2025-05-01
-Dragos Inc,co_e84ff2d12623,First Lien,Software,,2.00%,Prime,2.00%,,2027-07-01,13079,12512,12544,,12512,,,HTGC,2025-05-01
-Dragos Inc,co_e84ff2d12623,First Lien,Software,2.00%,2.00%,Prime,2.00%,,2027-07-01,13022,12383,12431,,,12383,,HTGC,2025-05-01
-DroneDeploy Inc,co_ed9ffb788f84,First Lien,Software,,,Prime,2.45%,,2028-11-01,9375,9292,9286,,9292,,,HTGC,2025-05-01
-DroneDeploy Inc,co_ed9ffb788f84,First Lien,Software,2.45%,,Prime,2.45%,,2028-11-01,9375,9255,9274,,,9255,,HTGC,2025-05-01
-Earnix Inc,co_a01e8b5f85a7,First Lien,Software,,4.45%,Prime,-1.15%,,2029-06-01,19380,19082,19161,,19082,,,HTGC,2025-05-01
-Earnix Inc,co_a01e8b5f85a7,First Lien,Software,-1.15%,4.45%,Prime,-1.15%,,2029-06-01,19166,18856,18838,,,18856,,HTGC,2025-05-01
-Elation Health Inc,co_64440c48e8fb,First Lien,Healthcare Technology,,1.30%,Prime,1.75%,,2029-04-01,13456,13020,13020,,13020,,,HTGC,2025-05-01
-Elation Health Inc,co_64440c48e8fb,First Lien,Healthcare Technology,4.25%,1.95%,Prime,4.25%,,2026-03-01,12878,12860,13215,,,12860,,HTGC,2025-05-01
-Fortified Health Security,co_151bd1b9548f,First Lien,Software,,,SOFR (M),7.64%,,2027-12-01,6983,6873,6919,,6873,,,HTGC,2025-05-01
-Fortified Health Security,co_151bd1b9548f,First Lien,Software,7.64%,,SOFR (M),7.64%,,2027-12-01,7000,6882,6950,,,6882,,HTGC,2025-05-01
-Harness Inc,co_c9ab8d2594c3,First Lien,Software,,6.25%,Prime,-2.25%,,2029-03-01,29994,29677,29811,,29677,,,HTGC,2025-05-01
-iGrafx LLC,co_524aafc5e84a,First Lien,Software,,,SOFR (M),8.61%,,2027-05-01,4937,4875,4856,,4875,,,HTGC,2025-05-01
-iSpot.tv Inc,co_e83a75e97023,First Lien,Software,,1.00%,Prime,2.25%,,2029-01-01,8257,8,,,,,,HTGC,2025-05-01
-Total Cutover Inc,co_68776d3535fd,First Lien,Software,5.20%,,Prime,5.20%,,2025-10-01,1250,7279,7261,,,7279,,HTGC,2025-05-01
-Flight Schedule Pro LLC,co_8c45bfb827c7,First Lien,Software,7.80%,,SOFR (M),7.80%,,2027-10-01,7297,7145,7271,,,7145,,HTGC,2025-05-01
-enGene Inc,co_c7c39a94d785,First Lien,Pharmaceuticals & Biotechnology,,1.15%,Prime,0.75%,,2028-01-01,15970,16133,16177,,,16133,,HTGC,2025-05-01
-Coronado Aesthetics,co_794ed9389e98,Preferred Equity,Medical Devices & Equipment,,,,,,,5000000,250,47,,250,,,HTGC,2025-05-01
-Coronado Aesthetics,co_794ed9389e98,Common Equity,Medical Devices & Equipment,,,,,,,180000,,,,,,,HTGC,2025-05-01
-Gibraltar Acquisition,co_11f8ff2850e4,Unsecured Debt,Financial Services,,,,,,,,26899,26899,,26899,,,HTGC,2025-05-01
-Gibraltar Acquisition,co_11f8ff2850e4,Unsecured Debt,Financial Services,,,,,,,,9891,9891,,9891,,,HTGC,2025-05-01
-Gibraltar Acquisition,co_11f8ff2850e4,Partnership Interest,Financial Services,,,,,,,1,34006,22110,,34006,,,HTGC,2025-05-01
-Hercules Adviser,co_e3d965a37d40,Partnership Interest,Financial Services,,,,,,,1,12035,45017,,12035,,,HTGC,2025-05-01
-Tectura,co_d9790e32b7db,First Lien,Business Services,,,,,,,,,8250,,,8250,,HTGC,2025-05-01
-Tectura,co_d9790e32b7db,Common Equity,Business Services,,,,,,,414994863,900,2,,900,,,HTGC,2025-05-01
-Tectura,co_d9790e32b7db,Preferred Equity,Business Services,,,,,,,1000000,,7,,,,,HTGC,2025-05-01
-Tectura,co_d9790e32b7db,Preferred Equity,Business Services,,,,,,,3235298,13263,3729,,13263,,,HTGC,2025-05-01
-Jobandtalent USA Inc,co_e83e86af63fd,Preferred Equity,Business Services,,,,,,2025-02-11,,,563,,,563,,HTGC,2025-05-01
-Coronado Aesthetics LLC,co_794ed9389e98,Other,,,,,,,,,,283,,,,,HTGC,2025-05-01
-Gibraltar Acquisition LLC,co_11f8ff2850e4,Other,,,,,,,,,,57931,,,,,HTGC,2025-05-01
-Hercules Adviser LLC,co_e3d965a37d40,Other,,,,,,,,,,41884,,,,,HTGC,2025-05-01
-Tectura Corporation,co_d9790e32b7db,Other,,,,,,,,,,12117,,,,,HTGC,2025-05-01
+company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
+PathAI Inc.,co_2b1503769621,First Lien,Healthcare,,,SOFR,2.15%,9.15%,,,32000,33032,33739,,33032,,,,,,HTGC,2025-05-01
+Aryaka Networks Inc.,co_7b432f2b0b1d,First Lien,Software & Technology,,1.25%,SOFR,1.8%,9.3%,,,28003,27886,27443,,27886,,,,,,HTGC,2025-05-01
+Altumint Inc.,co_69870af89f98,First Lien,Consumer & Retail,,,SOFR,3.65%,12.15%,,,10000,9940,10127,,9940,,,,,,HTGC,2025-05-01
+Carwow Ltd.,co_7101db9aec7f,First Lien,Consumer & Retail,,1.45%,SOFR,4.7%,11.45%,,,20435,27981,26219,,27981,,,,,,HTGC,2025-05-01
+GoEuro Travel GmbH.,co_f366d56155e6,First Lien,Consumer & Retail,,,SOFR,3.45%,10.45%,,,48750,48387,48387,,48387,,,,,,HTGC,2025-05-01
+Houzz Inc.,co_aa00125e6586,First Lien,Consumer & Retail,,11.5%,,,,,,26426,26425,27673,,26425,,,,,,HTGC,2025-05-01
+Jobandtalent USA Inc.,co_8016047fb745,First Lien,Consumer & Retail,,7%,SOFR,0%,1%,,,13536,13874,13148,,13874,,,,,,HTGC,2025-05-01
+Plentific Ltd.,co_92dd5212ddd1,First Lien,Consumer & Retail,,,SOFR,2.55%,11.05%,,,3325,3300,3347,,3300,,,,,,HTGC,2025-05-01
+Provi,co_db073da882e3,First Lien,Consumer & Retail,,,SOFR,4.4%,10.65%,,,15000,15145,15198,,15145,,,,,,HTGC,2025-05-01
+Riviera Partners LLC.,co_feaa94d22d26,First Lien,Consumer & Retail,,,SOFR,8.27%,9.27%,,,36401,36047,35175,,36047,,,,,,HTGC,2025-05-01
+RVShare LLC,co_e8ff17e1cf0e,First Lien,Consumer & Retail,,4%,SOFR,5.5%,6.5%,,,30374,30148,29473,,30148,,,,,,HTGC,2025-05-01
+SeatGeek Inc.,co_f1f840b3bfb5,First Lien,Consumer & Retail,,0.5%,SOFR,7%,10.5%,,,25359,25514,25832,,25514,,,,,,HTGC,2025-05-01
+Total SeatGeek Inc.,co_1bfd6548fefa,First Lien,Consumer & Retail,,,,,,,,103494,103258,105402,,103258,,,,,,HTGC,2025-05-01
+Skyword Inc.,co_6002a9bbe50a,First Lien,Consumer & Retail,,1.75%,SOFR,2.75%,9.25%,,,6616,6760,6691,,6760,,,,,,HTGC,2025-05-01
+Tectura Corp.,co_d9790e32b7db,First Lien,Consumer & Retail,8.25%,,,,,,,8250,8250,8032,,8250,,,,,,HTGC,2025-05-01
+Thumbtack Inc.,co_fc8d127ac2a8,First Lien,Consumer & Retail,,1.5%,SOFR,2.45%,10.95%,,,20996,20661,21208,,20661,,,,,,HTGC,2025-05-01
+Veem Inc.,co_71cc69e91627,First Lien,Consumer & Retail,,1.25%,SOFR,4%,12%,,,5413,5401,5342,,5401,,,,,,HTGC,2025-05-01
+Veem Inc.,co_71cc69e91627,First Lien,Consumer & Retail,,1.5%,SOFR,4.7%,12.7%,,,5433,5421,5366,,5421,,,,,,HTGC,2025-05-01
+Total Veem Inc.,co_0fa30e9b43c3,First Lien,Consumer & Retail,,,,,,,,10846,10822,10708,,10822,,,,,,HTGC,2025-05-01
+Gibraltar Acquisition LLC,co_aaf14de4ec65,First Lien,Financial Services,3.45%,8.05%,,,,,,27104,26899,26899,,26899,,,,,,HTGC,2025-05-01
+Total Gibraltar Acquisition LLC.,co_ef3bd35317ba,First Lien,Financial Services,,,,,,,,37104,36790,36790,,36790,,,,,,HTGC,2025-05-01
+Next Insurance Inc.,co_72da6d0ff373,First Lien,Financial Services,,5.5%,SOFR,-1.5%,4.75%,,,11223,11080,11662,,11080,,,,,,HTGC,2025-05-01
+Adaptimmune Therapeutics plc.,co_6cd1e40b155a,First Lien,Healthcare,,2%,SOFR,1.15%,9.65%,,,15167,15126,15050,,15126,,,,,,HTGC,2025-05-01
+Akero Therapeutics Inc.,co_bb54ad2dc36b,First Lien,Healthcare,,,SOFR,3.65%,7.65%,,,17500,17811,17994,,17811,,,,,,HTGC,2025-05-01
+Aldeyra Therapeutics Inc.,co_b28355354b7f,First Lien,Healthcare,,,SOFR,3.1%,11.1%,,,15000,15093,15134,,15093,,,,,,HTGC,2025-05-01
+Alector Inc..,co_5896bb2ce405,First Lien,Healthcare,,,SOFR,1.05%,8.05%,,,7000,6957,6957,,6957,,,,,,HTGC,2025-05-01
+AmplifyBio LLC,co_91a79b9fbb39,First Lien,Healthcare,,,SOFR,2.5%,9.5%,,,22458,23247,13095,,23247,,,10.75%,,,HTGC,2025-05-01
+Arcus Biosciences Inc.,co_c5b55904c4ca,First Lien,Healthcare,,,SOFR,1.95%,10.45%,,,37500,37511,38913,,37511,,,,,,HTGC,2025-05-01
+ATAI Life Sciences N.V.,co_0163887af99d,First Lien,Healthcare,,,SOFR,4.3%,9.05%,,,14000,14538,14452,,14538,,,,,,HTGC,2025-05-01
+Axsome Therapeutics Inc.,co_3e6ce6b14191,First Lien,Healthcare,,,SOFR,2.2%,9.95%,,,143350,145929,153070,,145929,,,10.7%,,,HTGC,2025-05-01
+bluebird bio Inc.,co_0ae3c52dcdc5,First Lien,Healthcare,,2.45%,SOFR,1.45%,9.95%,,,66058,64724,60624,,64724,,,,,,HTGC,2025-05-01
+Braeburn Inc.,co_c1fa3befa716,First Lien,Healthcare,,1.1%,SOFR,2.45%,10.95%,,,53339,53669,55350,,53669,,,,,,HTGC,2025-05-01
+COMPASS Pathways plc,co_a5c2a432eb2a,First Lien,Healthcare,,1.4%,SOFR,1.5%,9.75%,,,24576,24826,25453,,24826,,,,,,HTGC,2025-05-01
+Corium Inc.,co_a958c16a1760,First Lien,Healthcare,,,SOFR,5.7%,8.95%,,,86925,90906,90279,,90906,,,,,,HTGC,2025-05-01
+Disc Medicine Inc.,co_2415b195f29c,First Lien,Healthcare,,,SOFR,1.75%,8.25%,,,22500,22433,22755,,22433,,,,,,HTGC,2025-05-01
+enGene Inc.,co_5518e5a757c7,First Lien,Healthcare,,1.15%,SOFR,0.75%,9.25%,,,15970,16133,16177,,16133,,,9.75%,,,HTGC,2025-05-01
+Heron Therapeutics Inc..,co_8fc18beaf8dc,First Lien,Healthcare,,1.5%,SOFR,1.7%,9.95%,,,20480,20654,20660,,20654,,,,,,HTGC,2025-05-01
+Hibercell Inc.,co_9c1b2308c20b,First Lien,Healthcare,,,SOFR,5.4%,8.65%,,,1612,2442,2442,,2442,,,,,,HTGC,2025-05-01
+Kura Oncology Inc.,co_7548f682d6bb,First Lien,Healthcare,,,SOFR,2.4%,8.65%,,,5500,5646,5707,,5646,,,,,,HTGC,2025-05-01
+Madrigal Pharmaceutical Inc.,co_1d5fc228f076,First Lien,Healthcare,,,SOFR,2.45%,8.25%,,,78200,80159,82430,,80159,,,,,,HTGC,2025-05-01
+MoonLake Immunotherapeutics,co_367e0cfd027d,First Lien,Healthcare,,,SOFR,1.45%,8.45%,,,57000,56421,56421,,56421,,,,,,HTGC,2025-05-01
+NorthSea Therapeutics Convertible Debt,co_67f6232246f9,First Lien,Healthcare,6%,,,,,,,273,273,273,,273,,,,,,HTGC,2025-05-01
+Phathom Pharmaceuticals Inc.,co_1ccf8ec32c0e,First Lien,Healthcare,,2.15%,SOFR,1.35%,9.85%,,,138620,141882,142910,,141882,,,10.35%,,,HTGC,2025-05-01
+Phathom Pharmaceuticals Inc.,co_1ccf8ec32c0e,First Lien,Healthcare,,2.15%,SOFR,1.35%,9.85%,,,31385,31224,31510,,31224,,,10.35%,,,HTGC,2025-05-01
+Total Phathom Pharmaceuticals Inc.,co_5cdf95b6e36c,First Lien,Healthcare,,,,,,,,170005,173106,174420,,173106,,,,,,HTGC,2025-05-01
+Replimune Group Inc.,co_9e8bdee6bbab,First Lien,Healthcare,,1.5%,SOFR,1.75%,7.25%,,,32009,32513,33866,,32513,,,9%,,,HTGC,2025-05-01
+Savara Inc..,co_5123852e8d32,First Lien,Healthcare,,,SOFR,1.45%,7.45%,,,21450,21334,21334,,21334,,,,,,HTGC,2025-05-01
+SynOx Therapeutics Ltd.,co_0041a0cb80ac,First Lien,Healthcare,,,SOFR,1.4%,9.9%,,,4500,4511,4579,,4511,,,,,,HTGC,2025-05-01
+uniQure B.V.,co_ca374d185e23,First Lien,Healthcare,,,SOFR,4.7%,7.95%,,,35000,36243,37135,,36243,,,,,,HTGC,2025-05-01
+Viridian Therapeutics Inc.,co_431e5f8ddf2e,First Lien,Healthcare,,,SOFR,4.2%,7.45%,,,8000,8268,8481,,8268,,,8.95%,,,HTGC,2025-05-01
+X4 Pharmaceuticals Inc.,co_389716458b7f,First Lien,Healthcare,,,SOFR,3.15%,10.15%,,,75000,75735,74933,,75735,,,,,,HTGC,2025-05-01
+Locus Robotics Corp.,co_bef8da650954,First Lien,Software & Technology,,,SOFR,3%,9.5%,,,48750,48665,48981,,48665,,,,,,HTGC,2025-05-01
+Shield AI Inc.,co_234e888e5fda,First Lien,Software & Technology,,2.5%,SOFR,0.85%,6.85%,,,114471,113782,115062,,113782,,,9.6%,,,HTGC,2025-05-01
+Electronics & Computer Hardware,co_658fc7308286,Other,Financial Services,,,,,,,,,162447,164043,8.2%,162447,,,,,,HTGC,2025-05-01
+Blue Sprig Pediatrics Inc.,co_7dd2282d2a02,First Lien,Healthcare,,4.45%,SOFR,5.26%,6%,,,73027,72543,71114,,72543,,,,,,HTGC,2025-05-01
+Carbon Health Technologies Inc.,co_826d194f5d2d,First Lien,Healthcare,,,SOFR,3.1%,8.1%,,,42125,42482,40351,,42482,,,,,,HTGC,2025-05-01
+Curana Health Holdings LLC,co_6a035f676eb6,First Lien,Healthcare,,,SOFR,1.45%,9.2%,,,27500,27814,28113,,27814,,,,,,HTGC,2025-05-01
+Ennoble Care LLC,co_bf4b71576999,First Lien,Healthcare,,,SOFR,2.6%,10.35%,,,9000,8916,8916,,8916,,,,,,HTGC,2025-05-01
+Equality Health LLC,co_ba641bc88b83,First Lien,Healthcare,,1.55%,SOFR,4.25%,9.5%,,,70952,70976,70976,,70976,,,,,,HTGC,2025-05-01
+Main Street Rural Inc.,co_c96699401052,First Lien,Healthcare,,,SOFR,1.95%,9.95%,,,38500,39321,39614,,39321,,,,,,HTGC,2025-05-01
+Marathon Health LLC,co_ee3f91dd7bcb,First Lien,Healthcare,,2.25%,SOFR,0.75%,8.75%,,,168301,167702,168880,,167702,,,,,,HTGC,2025-05-01
+Marathon Health LLC,co_ee3f91dd7bcb,First Lien,Healthcare,,,SOFR,3%,11%,,,5000,5000,5000,,5000,,,,,,HTGC,2025-05-01
+Total Marathon Health LLC,co_4fdf049a6fec,First Lien,Financial Services,,,,,,,,173301,172702,173880,,172702,,,,,,HTGC,2025-05-01
+Modern Life Inc.,co_16322f8a7c73,First Lien,Healthcare,,,SOFR,2.75%,8.75%,,,18200,18391,18402,,18391,,,,,,HTGC,2025-05-01
+NeueHealth Inc.,co_364d48f2703b,First Lien,Healthcare,,2.5%,SOFR,1.15%,9.65%,,,25188,24483,24449,,24483,,,,,,HTGC,2025-05-01
+Recover Together Inc.,co_a6e5803c3002,First Lien,Healthcare,,,SOFR,1.9%,10.15%,,,45000,45705,44769,,45705,,,,,,HTGC,2025-05-01
+Strive Health Holdings LLC,co_0b5be4760c8f,First Lien,Healthcare,,,SOFR,0.7%,9.2%,,,30000,29905,30521,,29905,,,,,,HTGC,2025-05-01
+Vida Health Inc.,co_08e309cd519c,First Lien,Healthcare,,5.35%,SOFR,-2.75%,5.75%,,,37248,38018,37396,,38018,,,,,,HTGC,2025-05-01
+WellBe Senior Medical LLC,co_27807a40b895,First Lien,Healthcare,,2.65%,SOFR,0.75%,7.75%,,,28468,28413,27410,,28413,,,,,,HTGC,2025-05-01
+Services Other,co_6120183c747c,Other,Healthcare,,,,,,,,,619669,615911,30.79%,619669,,,,,,HTGC,2025-05-01
+Saama Technologies LLC,co_f53de44637a0,First Lien,Business Services,,2%,SOFR,0.7%,8.95%,,,19878,19891,20313,,19891,,,,,,HTGC,2025-05-01
+Information Services,co_bd643ee9ecd2,Other,Financial Services,,,,,,,,,19891,20313,1.02%,19891,,,,,,HTGC,2025-05-01
+VulcanForms Inc.,co_32ff115e481b,First Lien,Software & Technology,,,SOFR,4.25%,11.25%,,,20000,19860,19860,,19860,,,,,,HTGC,2025-05-01
+Manufacturing Technology,co_d29e39b83424,Other,Financial Services,,,,,,,,,19860,19860,0.99%,19860,,,,,,HTGC,2025-05-01
+Orchestra BioMed Holdings Inc.,co_98b9c7c506fc,First Lien,Healthcare,,,SOFR,2%,9.5%,,,15000,14821,14821,,14821,,,,,,HTGC,2025-05-01
+Senseonics Holdings Inc.,co_0072aeae754b,First Lien,Healthcare,,,SOFR,1.4%,9.9%,,,30625,31011,31621,,31011,,,,,,HTGC,2025-05-01
+Sight Sciences Inc.,co_350a596d5319,First Lien,Healthcare,,,SOFR,2.35%,10.35%,,,28000,27967,28230,,27967,,,,,,HTGC,2025-05-01
+& Equipment,co_4562262a2a8d,Other,Healthcare,,,,,,,,,73799,74672,3.73%,73799,,,,,,HTGC,2025-05-01
+Alchemer LLC,co_4123ef8e97c9,First Lien,Software & Technology,,,SOFR,8.14%,9.14%,,,20310,20002,20310,,20002,,,,,,HTGC,2025-05-01
+Allvue Systems LLC,co_67f8a6d00699,First Lien,Software & Technology,,,SOFR,6.5%,7.5%,,,42564,41738,41783,,41738,,,,,,HTGC,2025-05-01
+AlphaSense Inc.,co_28219da99752,First Lien,Software & Technology,,,SOFR,6.25%,8.25%,,,20000,19823,19824,,19823,,,,,,HTGC,2025-05-01
+Annex Cloud,co_9190d412f187,First Lien,Software & Technology,,,SOFR,10%,11%,,,11007,10874,3404,,10874,,,,,,HTGC,2025-05-01
+Armis Inc.,co_8762e2ec70b9,First Lien,Software & Technology,,2%,SOFR,0%,7.5%,,,50987,50838,51220,,50838,,,,,,HTGC,2025-05-01
+Armis Inc.,co_8762e2ec70b9,First Lien,Software & Technology,,2%,SOFR,1.25%,7.5%,,,25276,25141,25048,,25141,,,,,,HTGC,2025-05-01
+Total Armis Inc.,co_1f3b3523ea31,First Lien,Software & Technology,,,,,,,,76263,75979,76268,,75979,,,,,,HTGC,2025-05-01
+Babel Street,co_68a68cf9eda1,First Lien,Software & Technology,,,SOFR,8%,9%,,,65173,63986,64584,,63986,,,,,,HTGC,2025-05-01
+Behavox Ltd.,co_cb87b187e280,First Lien,Software & Technology,,3%,SOFR,-0.55%,7.45%,,,10626,10618,10475,,10618,,,,,,HTGC,2025-05-01
+Brain Corp.,co_eb667b490c30,First Lien,Software & Technology,,2.5%,SOFR,1.35%,9.85%,,,32209,31984,32171,,31984,,,,,,HTGC,2025-05-01
+Carbyne Inc.,co_9f36e235b650,First Lien,Software & Technology,,,SOFR,3.5%,10%,,,7450,7367,7367,,7367,,,,,,HTGC,2025-05-01
+Ceros Inc.,co_fd381795b9a6,First Lien,Software & Technology,,,SOFR,8.99%,9.89%,,,22762,22548,22146,,22548,,,,,,HTGC,2025-05-01
+CoreView USA Inc.,co_b9a4bf779b3b,First Lien,Software & Technology,,,SOFR,2.75%,9.25%,,,25000,24805,24805,,24805,,,,,,HTGC,2025-05-01
+Coronet Cyber Security Ltd.,co_d4f93e5ea655,First Lien,Software & Technology,,5.85%,SOFR,-2.95%,3.55%,,,8718,8579,8359,,8579,,,,,,HTGC,2025-05-01
+Dashlane Inc.,co_89c33b4e9ffb,First Lien,Software & Technology,,1.1%,SOFR,3.05%,11.55%,,,45601,46814,47902,,46814,,,,,,HTGC,2025-05-01
+Dispatch Technologies Inc.,co_13e78c5e6189,First Lien,Software & Technology,,,SOFR,8.01%,8.76%,,,8628,8478,8312,,8478,,,,,,HTGC,2025-05-01
+DocPlanner,co_fc58ee11d7a7,First Lien,Software & Technology,,,SOFR,2.75%,9.75%,,,68200,69353,73090,,69353,,,,,,HTGC,2025-05-01
+Dragos Inc.,co_90cc6c9de50e,First Lien,Software & Technology,,2%,SOFR,2%,8.75%,,,13079,12512,12544,,12512,,,,,,HTGC,2025-05-01
+DroneDeploy Inc.,co_d1044f839d20,First Lien,Software & Technology,,,SOFR,2.45%,9.95%,,,9375,9292,9286,,9292,,,,,,HTGC,2025-05-01
+Earnix Inc.,co_556e60f6174c,First Lien,Software & Technology,,4.45%,SOFR,-1.15%,5.35%,,,19380,19082,19161,,19082,,,,,,HTGC,2025-05-01
+Elation Health Inc.,co_c98216ef9b8c,First Lien,Software & Technology,,1.3%,SOFR,1.75%,9.25%,,,13456,13020,13020,,13020,,,,,,HTGC,2025-05-01
+Fortified Health Security,co_151bd1b9548f,First Lien,Software & Technology,,,SOFR,7.64%,8.54%,,,6983,6873,6919,,6873,,,,,,HTGC,2025-05-01
+Harness Inc.,co_8a03f56a7de4,First Lien,Software & Technology,,6.25%,SOFR,-2.25%,5.25%,,,29994,29677,29811,,29677,,,6.5%,,,HTGC,2025-05-01
+iGrafx LLC,co_297a789b4d7c,First Lien,Software & Technology,,,SOFR,8.61%,9.51%,,,4937,4875,4856,,4875,,,,,,HTGC,2025-05-01
+iSpot.tv Inc.,co_24ade23e3740,First Lien,Software & Technology,,1%,SOFR,2.25%,8.75%,,,8257,8178,8178,,8178,,,,,,HTGC,2025-05-01
+Khoros,co_099de446f2d2,First Lien,Software & Technology,,4.5%,SOFR,4.5%,5.5%,,,61341,61317,16180,,61317,,,,,,HTGC,2025-05-01
+Leapwork ApS.,co_f6ff00445e5b,First Lien,Software & Technology,,1.95%,SOFR,0.25%,7%,,,8929,8974,8974,,8974,,,,,,HTGC,2025-05-01
+LinenMaster LLC.,co_2a1077c91dc9,First Lien,Software & Technology,,2.15%,SOFR,6.25%,7.25%,,,15512,15285,15515,,15285,,,,,,HTGC,2025-05-01
+Loftware Inc.,co_6101af426657,First Lien,Software & Technology,,,SOFR,7.88%,8.88%,,,27206,26757,27206,,26757,,,,,,HTGC,2025-05-01
+LogicSource,co_3e9127245a51,First Lien,Software & Technology,,,SOFR,8.93%,9.93%,,,13111,12955,13111,,12955,,,,,,HTGC,2025-05-01
+LogRhythm Inc.,co_e94a014c9f0d,First Lien,Software & Technology,,,SOFR,7.5%,8.5%,,,25000,24334,24346,,24334,,,,,,HTGC,2025-05-01
+Marigold Group Inc.,co_da89a2d71a91,First Lien,Software & Technology,,,SOFR,10.55%,11.55%,,,40264,39822,34001,,39822,,,,,,HTGC,2025-05-01
+Mobile Solutions Services,co_92f1f6afaa8d,First Lien,Software & Technology,,,SOFR,9.31%,10.06%,,,18366,18270,17716,,18270,,,,,,HTGC,2025-05-01
+Morphisec Information Security 2014 Ltd.,co_a4293ce863e7,First Lien,Software & Technology,,,SOFR,3.45%,11.7%,,,10000,9926,9926,,9926,,,,,,HTGC,2025-05-01
+New Relic Inc.,co_1e4dc8ed7581,First Lien,Software & Technology,,,SOFR,6.75%,7.75%,,,21890,21417,21346,,21417,,,,,,HTGC,2025-05-01
+Omeda Holdings LLC,co_fb70a1b32168,First Lien,Software & Technology,,,SOFR,8.05%,9.05%,,,7631,7493,7631,,7493,,,,,,HTGC,2025-05-01
+PayIt LLC,co_ab1e0c9c6588,First Lien,Software & Technology,,1.5%,SOFR,1.45%,7.95%,,,12048,11961,11961,,11961,,,,,,HTGC,2025-05-01
+Pindrop Security Inc.,co_c06f4a322832,First Lien,Software & Technology,,,SOFR,3.5%,10%,,,31000,30611,30849,,30611,,,,,,HTGC,2025-05-01
+Remodel Health Holdco LLC.,co_67192700442f,First Lien,Software & Technology,,,SOFR,2.35%,10.35%,,,25000,24818,24399,,24818,,,,,,HTGC,2025-05-01
+Reveleer,co_8538e10bb964,First Lien,Software & Technology,,2%,SOFR,0.65%,9.15%,,,36528,36765,36825,,36765,,,,,,HTGC,2025-05-01
+Semperis Technologies Inc.,co_7bfe44b38fad,First Lien,Software & Technology,,3.25%,SOFR,-1.75%,6.75%,,,22936,22787,23464,,22787,,,,,,HTGC,2025-05-01
+ShadowDragon LLC,co_ddd1179a3e16,First Lien,Software & Technology,,,SOFR,8.88%,9.78%,,,6000,5927,5925,,5927,,,,,,HTGC,2025-05-01
+Simon Data Inc.,co_8211bd6e5fa8,First Lien,Software & Technology,,1.95%,SOFR,1%,8.75%,,,12919,13020,12881,,13020,,,,,,HTGC,2025-05-01
+Sisense Ltd.,co_dfabeb0f09b4,First Lien,Software & Technology,,1.95%,SOFR,1.5%,9.5%,,,33638,34189,34212,,34189,,,,,,HTGC,2025-05-01
+Smartsheet Inc..,co_6995386440b2,First Lien,Financial Services,,,SOFR,6.5%,7.25%,,,46785,45870,45870,,45870,,,,,,HTGC,2025-05-01
+Snappt Inc.,co_52bbc44ff594,Other Equity,Financial Services,,1%,SOFR,2.35%,8.85%,,,20000,19769,19769,,19769,,,,,,HTGC,2025-05-01
+Streamline Healthcare Solutions,co_ea605c897dd6,First Lien,Software & Technology,,,SOFR,7.25%,8.25%,,,17600,17342,17514,,17342,,,,,,HTGC,2025-05-01
+Sumo Logic Inc.,co_01694b38123c,First Lien,Software & Technology,,,SOFR,6.5%,7.5%,,,23000,22537,22625,,22537,,,,,,HTGC,2025-05-01
+Suzy Inc..,co_66ade4292a4c,First Lien,Software & Technology,,1.95%,SOFR,1.75%,10%,,,24460,24237,24686,,24237,,,,,,HTGC,2025-05-01
+TaxCalc.,co_e6daaa5c4412,First Lien,Software & Technology,,,SOFR,8.17%,8.67%,,,7500,9527,9502,,9527,,,,,,HTGC,2025-05-01
+ThreatConnect Inc.,co_a4f5aefdc6c4,First Lien,Software & Technology,,,SOFR,9.15%,10%,,,12254,12158,12241,,12158,,,,,,HTGC,2025-05-01
+Tipalti Solutions Ltd.,co_7018426a584e,First Lien,Software & Technology,,2.3%,SOFR,0.45%,6.45%,,,75000,74571,74571,,74571,,,,,,HTGC,2025-05-01
+Tipalti Solutions Ltd.,co_7018426a584e,First Lien,Software & Technology,,2.3%,SOFR,0.45%,6.45%,,,42000,41763,41763,,41763,,,,,,HTGC,2025-05-01
+Total Tipalti Solutions Ltd.,co_f60557e0672f,First Lien,Software & Technology,,,,,,,,117000,116334,116334,,116334,,,,,,HTGC,2025-05-01
+Zappi Inc.,co_9f167b95ec9f,First Lien,Software & Technology,,,SOFR,8.03%,9.03%,,,12696,12505,12667,,12505,,,,,,HTGC,2025-05-01
+Zimperium Inc.,co_da5caa47bea1,First Lien,Software & Technology,,,SOFR,8.31%,9.31%,,,14790,14633,14370,,14633,,,,,,HTGC,2025-05-01
+Software,co_35390f5453e8,Other,Financial Services,,,,,,,,,1287997,1236621,61.81%,1287997,,,,,,HTGC,2025-05-01
+Voyager Space Holdings Inc.,co_b44d166960f3,First Lien,Aerospace & Defense,,2.5%,SOFR,1.25%,9.75%,,,45724,45767,49505,,45767,,,,,,HTGC,2025-05-01
+Space Technologies,co_208c5cfe976d,Other,Aerospace & Defense,,,,,,,,,45767,49505,2.47%,45767,,,,,,HTGC,2025-05-01
+Renewable Technology,co_36b55c1e09c7,First Lien,Environmental Services,,1.25%,SOFR,2.25%,10.75%,,,20190,19866,19903,,19866,,,,,,HTGC,2025-05-01
+Renewable Technology,co_36b55c1e09c7,First Lien,Environmental Services,,,,,,,,,19866,19903,0.99%,19866,,,,,,HTGC,2025-05-01
+Debt Investments,co_defe11bfc88e,Other,Financial Services,,,,,,,,,3785290,3739234,1.87%,3785290,,,,,,HTGC,2025-05-01
+Alamar Biosciences Inc.,co_e332dcc0a4c1,Other Equity,Healthcare,,,,,,,,,1500,970,,1500,,,,503778,,HTGC,2025-05-01
+Equity Investments Biotechnology Tools,co_c2cb52bda4f2,Other,Healthcare,,,,,,,,,1500,970,0.05%,1500,,,,,,HTGC,2025-05-01
+Fabletics Inc.,co_79916354f9a9,Other Equity,Consumer & Retail,,,,,,,,,128,19,,128,,,,42989,,HTGC,2025-05-01
+Fabletics Inc.,co_79916354f9a9,Other Equity,Consumer & Retail,,,,,,,,,1101,172,,1101,,,,130191,,HTGC,2025-05-01
+Total Fabletics Inc.,co_d516455aa541,Other Equity,Consumer & Retail,,,,,,,,,1229,191,,1229,,,,173180,,HTGC,2025-05-01
+Grove Collaborative Inc.,co_083e9e151dad,Other Equity,Consumer & Retail,,,,,,,,,433,17,,433,,,,12260,,HTGC,2025-05-01
+Savage X Holding LLC,co_79b492ee555e,Other Equity,Consumer & Retail,,,,,,,,,13,158,,13,,,,172328,,HTGC,2025-05-01
+Equity Investments Consumer & Business Products,co_2888c090ddb7,Other,Financial Services,,,,,,,,,1675,366,0.02%,1675,,,,,,HTGC,2025-05-01
+Carwow Ltd.,co_7101db9aec7f,Other Equity,Consumer & Retail,,,,,,,,,1151,632,,1151,,,,216073,,HTGC,2025-05-01
+Jobandtalent USA Inc.,co_8016047fb745,Other Equity,Consumer & Retail,,,,,,,,,563,563,,563,,,,47754,,HTGC,2025-05-01
+Lyft Inc.,co_77bf927ed57a,Other Equity,Consumer & Retail,,,,,,,,,5263,1196,,5263,,,,100738,,HTGC,2025-05-01
+Nerdy Inc.,co_e8d67c621d15,Other Equity,Consumer & Retail,,,,,,,,,1000,142,,1000,,,,100000,,HTGC,2025-05-01
+OfferUp Inc.,co_2076b23f755f,Other Equity,Consumer & Retail,,,,,,,,,1663,405,,1663,,,,286080,,HTGC,2025-05-01
+OfferUp Inc.,co_2076b23f755f,Other Equity,Consumer & Retail,,,,,,,,,632,154,,632,,,,108710,,HTGC,2025-05-01
+Total OfferUp Inc.,co_e3f357607ec1,Other Equity,Consumer & Retail,,,,,,,,,2295,559,,2295,,,,394790,,HTGC,2025-05-01
+Oportun,co_9b2ef2269108,Other Equity,Consumer & Retail,,,,,,,,,577,266,,577,,,,48365,,HTGC,2025-05-01
+Reischling Press Inc.,co_687b0362d8ff,Other Equity,Consumer & Retail,,,,,,,,,39,0,,39,,,,3095,,HTGC,2025-05-01
+Rhino Labs Inc.,co_7ac3ad384129,Other Equity,Consumer & Retail,,,,,,,,,1000,0,,1000,,,,7063,,HTGC,2025-05-01
+Tectura Corp.,co_d9790e32b7db,Other Equity,Consumer & Retail,,,,,,,,,900,2,,900,,,,414994863,,HTGC,2025-05-01
+Tectura Corp.,co_d9790e32b7db,Other Equity,Consumer & Retail,,,,,,,,,0,7,,0,,,,1000000,,HTGC,2025-05-01
+Tectura Corp.,co_d9790e32b7db,Other Equity,Consumer & Retail,,,,,,,,,13263,3729,,13263,,,,3235298,,HTGC,2025-05-01
+Total Tectura Corp.,co_a7729f4500f3,Other Equity,Consumer & Retail,,,,,,,,,14163,3738,,14163,,,,419230161,,HTGC,2025-05-01
+Worldremit Group Ltd.,co_443b38154040,Other Equity,Consumer & Retail,,,,,,,,,922,977,,922,,,,9737,,HTGC,2025-05-01
+Equity Investments Consumer & Business Services,co_2888c090ddb7,Other,Financial Services,,,,,,,,,26973,8073,0.4%,26973,,,,,,HTGC,2025-05-01
+Gibraltar Acquisition LLC,co_aaf14de4ec65,Other Equity,Financial Services,,,,,,,,,34006,22110,,34006,,,,1,,HTGC,2025-05-01
+Hercules Adviser LLC,co_e3d965a37d40,Other Equity,Financial Services,,,,,,,,,12035,45017,,12035,,,,1,,HTGC,2025-05-01
+Newfront Insurance Holdings Inc.,co_829352a4cc89,Other Equity,Financial Services,,,,,,,,,403,456,,403,,,,210282,,HTGC,2025-05-01
+Equity Investments Diversified Financial Services,co_40f667c38d33,Other,Financial Services,,,,,,,,,46444,67583,3.38%,46444,,,,,,HTGC,2025-05-01
+Aytu BioScience Inc.,co_e72e936f6ab3,Other Equity,Healthcare,,,,,,,,,1500,1,,1500,,,,680,fair_value_suspicious_vs_size,HTGC,2025-05-01
+BioQ Pharma Inc.,co_bfe18f79377b,Other Equity,Healthcare,,,,,,,,,500,0,,500,,,,165000,,HTGC,2025-05-01
+PDS Biotechnology Corp.,co_2d8944d48eba,Other Equity,Healthcare,,,,,,,,,309,3,,309,,,,2498,,HTGC,2025-05-01
+Talphera Inc.,co_bead632e39d9,Other Equity,Healthcare,,,,,,,,,1329,4,,1329,,,,8836,fair_value_suspicious_vs_size,HTGC,2025-05-01
+Equity Investments Drug Delivery,co_a6d9982119bd,Other,Healthcare,,,,,,,,,3638,8,0%,3638,,,,,fair_value_suspicious_vs_size,HTGC,2025-05-01
+Akero Therapeutics Inc.,co_bb54ad2dc36b,Other Equity,Healthcare,,,,,,,,,1000,1396,,1000,,,,34483,,HTGC,2025-05-01
+Arcus Biosciences Inc.,co_c5b55904c4ca,Other Equity,Healthcare,,,,,,,,,2250,1606,,2250,,,,204545,,HTGC,2025-05-01
+Avalo Therapeutics Inc.,co_5300364ce68c,Other Equity,Healthcare,,,,,,,,,1000,0,,1000,,,,42,,HTGC,2025-05-01
+Axsome Therapeutics Inc.,co_3e6ce6b14191,Other Equity,Healthcare,,,,,,,,,4165,14815,,4165,,,,127021,,HTGC,2025-05-01
+Bicycle Therapeutics PLC,co_63f2424246f9,Other Equity,Healthcare,,,,,,,,,1871,833,,1871,,,,98100,,HTGC,2025-05-01
+BridgeBio Pharma Inc.,co_9515e6fd1966,Other Equity,Healthcare,,,,,,,,,2255,7997,,2255,,,,231329,,HTGC,2025-05-01
+Dare Biosciences Inc.,co_f7d19b34ae9c,Other Equity,Healthcare,,,,,,,,,1000,3,,1000,,,,1129,fair_value_suspicious_vs_size,HTGC,2025-05-01
+Dynavax Technologies,co_f1656d706209,Other Equity,Healthcare,,,,,,,,,550,259,,550,,,,20000,,HTGC,2025-05-01
+Heron Therapeutics Inc.,co_f59c34c5cf6c,Other Equity,Healthcare,,,,,,,,,500,803,,500,,,,364963,,HTGC,2025-05-01
+Hibercell Inc.,co_9c1b2308c20b,Other Equity,Healthcare,,,,,,,,,4250,217,,4250,,,,3466840,,HTGC,2025-05-01
+HilleVax Inc.,co_d85defa5d249,Other Equity,Healthcare,,,,,,,,,4000,341,,4000,,,,235295,,HTGC,2025-05-01
+Kura Oncology Inc.,co_7548f682d6bb,Other Equity,Healthcare,,,,,,,,,550,316,,550,,,,47826,,HTGC,2025-05-01
+Madrigal Pharmaceutical Inc.,co_1d5fc228f076,Other Equity,Healthcare,,,,,,,,,774,1689,,774,,,,5100,,HTGC,2025-05-01
+NorthSea Therapeutics,co_378623b29a63,Other Equity,Healthcare,,,,,,,,,2000,1134,,2000,,,,983,,HTGC,2025-05-01
+Phathom Pharmaceuticals Inc.,co_1ccf8ec32c0e,Other Equity,Healthcare,,,,,,,,,1730,923,,1730,,,,147233,,HTGC,2025-05-01
+Rafael Holdings Inc.,co_bfc27532729c,Other Equity,Healthcare,,,,,,,,,42,0,,42,,,,47,,HTGC,2025-05-01
+Rocket Pharmaceuticals Ltd.,co_4ac96e1cec99,Other Equity,Healthcare,,,,,,,,,1500,6,,1500,,,,944,fair_value_suspicious_vs_size,HTGC,2025-05-01
+Savara Inc.,co_1f4cd71b3fbd,Other Equity,Healthcare,,,,,,,,,203,31,,203,,,,11119,,HTGC,2025-05-01
+uniQure B.V.,co_ca374d185e23,Other Equity,Healthcare,,,,,,,,,332,182,,332,,,,17175,,HTGC,2025-05-01
+Valo Health LLC,co_f3b68034624a,Other Equity,Healthcare,,,,,,,,,3000,748,,3000,,,,510308,,HTGC,2025-05-01
+Valo Health LLC,co_f3b68034624a,Other Equity,Healthcare,,,,,,,,,1000,630,,1000,,,,170102,,HTGC,2025-05-01
+Total Valo Health LLC,co_1c778b8f2775,Other Equity,Healthcare,,,,,,,,,4000,1378,,4000,,,,680410,,HTGC,2025-05-01
+Verge Analytics Inc.,co_ab0ce57d2d25,Other Equity,Healthcare,,,,,,,,,1500,1446,,1500,,,,208588,,HTGC,2025-05-01
+Viridian Therapeutics Inc.,co_431e5f8ddf2e,Other Equity,Healthcare,,,,,,,,,400,436,,400,,,,32310,,HTGC,2025-05-01
+X4 Pharmaceuticals Inc.,co_389716458b7f,Other Equity,Healthcare,,,,,,,,,2945,370,,2945,,,,1566064,,HTGC,2025-05-01
+Equity Investments Drug Discovery & Development,co_4a50a7a6ce96,Other,Healthcare,,,,,,,,,38817,36181,1.81%,38817,,,,,,HTGC,2025-05-01
+Locus Robotics Corp.,co_bef8da650954,Other Equity,Software & Technology,,,,,,,,,650,267,,650,,,,15116,,HTGC,2025-05-01
+Shield AI Inc.,co_234e888e5fda,Other Equity,Software & Technology,,,,,,,,,2250,2250,,2250,,,,28900,,HTGC,2025-05-01
+Skydio Inc.,co_7e8be9ce7575,Other Equity,Software & Technology,,,,,,,,,1500,543,,1500,,,,248900,,HTGC,2025-05-01
+Equity Investments Electronics & Computer Hardware,co_43278c8cc84d,Other,Financial Services,,,,,,,,,4400,3060,0.15%,4400,,,,,,HTGC,2025-05-01
+23andMe Inc.,co_0c0bbc2487db,Other Equity,Healthcare,,,,,,,,,5094,0,,5094,,,,41286,,HTGC,2025-05-01
+Carbon Health Technologies Inc.,co_826d194f5d2d,Other Equity,Healthcare,,,,,,,,,1910,0,,1910,,,,390809,,HTGC,2025-05-01
+Click Therapeutics Inc.,co_dc9d5a247397,Other Equity,Healthcare,,,,,,,,,1662,1900,,1662,,,,560000,,HTGC,2025-05-01
+Curana Health Holdings LLC,co_6a035f676eb6,Other Equity,Healthcare,,,,,,,,,2500,2983,,2500,,,,1114380,,HTGC,2025-05-01
+Main Street Rural Inc.,co_c96699401052,Other Equity,Healthcare,,,,,,,,,873,1018,,873,,,,496,,HTGC,2025-05-01
+WellBe Senior Medical LLC,co_27807a40b895,Other Equity,Healthcare,,,,,,,,,1600,1535,,1600,,,,181163,,HTGC,2025-05-01
+Equity Investments Healthcare Services Other,co_4a3f771ddd36,Other,Healthcare,,,,,,,,,13639,7436,0.37%,13639,,,,,,HTGC,2025-05-01
+Yipit LLC,co_d1d680c38283,Other Equity,Business Services,,,,,,,,,3825,4604,,3825,,,,41021,,HTGC,2025-05-01
+Equity Investments Information Services,co_9eacab85dc7c,Other,Financial Services,,,,,,,,,3825,4604,0.23%,3825,,,,,,HTGC,2025-05-01
+Coronado Aesthetics LLC,co_10d7bc4ef1a1,Other Equity,Healthcare,,,,,,,,,0,0,,0,,,,180000,,HTGC,2025-05-01
+Coronado Aesthetics LLC,co_10d7bc4ef1a1,Other Equity,Healthcare,,,,,,,,,250,47,,250,,,,5000000,,HTGC,2025-05-01
+Total Coronado Aesthetics LLC,co_c5ab05b24872,Other Equity,Healthcare,,,,,,,,,250,47,,250,,,,5180000,,HTGC,2025-05-01
+Equity Investments Medical Devices & Equipment,co_5829c56f9448,Other,Healthcare,,,,,,,,,250,47,0%,250,,,,,,HTGC,2025-05-01
+Achronix Semiconductor Corp.,co_d2c33e60f92e,Other Equity,Software & Technology,,,,,,,,,160,97,,160,,,,277995,,HTGC,2025-05-01
+Equity Investments Semiconductors,co_788f5b1b9d00,Other,Financial Services,,,,,,,,,160,97,0%,160,,,,,,HTGC,2025-05-01
+Armis Inc.,co_8762e2ec70b9,Other Equity,Software & Technology,,,,,,,,,2000,1765,,2000,,,,294213,,HTGC,2025-05-01
+Black Crow AI Inc.,co_5ff85ec38e70,Other Equity,Software & Technology,,,,,,,,,2406,2406,,2406,,,,3,,HTGC,2025-05-01
+CapLinked Inc.,co_b24af3a0eea7,Other Equity,Software & Technology,,,,,,,,,51,0,,51,,,,53614,,HTGC,2025-05-01
+Contentful Global Inc.,co_2b4e99238429,Other Equity,Software & Technology,,,,,,,,,138,270,,138,,,,41000,,HTGC,2025-05-01
+Contentful Global Inc.,co_2b4e99238429,Other Equity,Software & Technology,,,,,,,,,500,759,,500,,,,108500,,HTGC,2025-05-01
+Total Contentful Global Inc.,co_1d1c6dd6466a,Other Equity,Software & Technology,,,,,,,,,638,1029,,638,,,,149500,,HTGC,2025-05-01
+DNAnexus Inc.,co_a1d0d1039561,Other Equity,Software & Technology,,,,,,,,,97,4,,97,,,,51948,,HTGC,2025-05-01
+Docker Inc.,co_8fbeda012c76,Other Equity,Software & Technology,,,,,,,,,4284,164,,4284,,,,20000,fair_value_suspicious_vs_size,HTGC,2025-05-01
+Druva Holdings Inc.,co_1993bc5a3b60,Other Equity,Software & Technology,,,,,,,,,1000,4481,,1000,,,,458841,,HTGC,2025-05-01
+Druva Holdings Inc.,co_1993bc5a3b60,Other Equity,Software & Technology,,,,,,,,,300,931,,300,,,,93620,,HTGC,2025-05-01
+Total Druva Holdings Inc.,co_8fb1d491fc9f,Other Equity,Software & Technology,,,,,,,,,1300,5412,,1300,,,,552461,,HTGC,2025-05-01
+HighRoads Inc.,co_74fe6d614556,Other Equity,Software & Technology,,,,,,,,,307,0,,307,,,,190,,HTGC,2025-05-01
+Leapwork ApS.,co_f6ff00445e5b,Other Equity,Software & Technology,,,,,,,,,250,113,,250,,,,183073,,HTGC,2025-05-01
+Lightbend Inc.,co_84440fd470f5,Other Equity,Software & Technology,,,,,,,,,265,26,,265,,,,38461,,HTGC,2025-05-01
+Nextdoor.com Inc.,co_b3cea6001464,Other Equity,Software & Technology,,,,,,,,,4854,1559,,4854,,,,1019255,,HTGC,2025-05-01
+SingleStore Inc.,co_3d4f9b53e7ad,Other Equity,Software & Technology,,,,,,,,,2000,1850,,2000,,,,580983,,HTGC,2025-05-01
+SingleStore Inc.,co_3d4f9b53e7ad,Other Equity,Software & Technology,,,,,,,,,280,206,,280,,,,52956,,HTGC,2025-05-01
+Total SingleStore Inc.,co_10fe08639d9d,Other Equity,Software & Technology,,,,,,,,,2280,2056,,2280,,,,633939,,HTGC,2025-05-01
+SirionLabs Pte. Ltd.,co_b224366b6aee,Other Equity,Software & Technology,,,,,,,,,1792,1590,,1792,,,,152250,,HTGC,2025-05-01
+Verana Health Inc.,co_992d5867fb5a,Other Equity,Software & Technology,,,,,,,,,2000,79,,2000,,,,23814,fair_value_suspicious_vs_size,HTGC,2025-05-01
+Equity Investments Software,co_0d5e1507f046,Other,Financial Services,,,,,,,,,22524,16203,0.81%,22524,,,,,,HTGC,2025-05-01
+Renewable Technology,co_36b55c1e09c7,Other Equity,Environmental Services,,,,,,,,,2000,115,,2000,,,,188611,,HTGC,2025-05-01
+Renewable Technology,co_36b55c1e09c7,Common Equity,Environmental Services,,,,,,,,,500,0,,500,,,,1035,,HTGC,2025-05-01
+Renewable Technology,co_36b55c1e09c7,Other Equity,Environmental Services,,,,,,,,,4500,2007,,4500,,,,593080,,HTGC,2025-05-01
+Renewable Technology,co_36b55c1e09c7,Common Equity,Environmental Services,,,,,,,,,3153,0,,3153,,,,405,,HTGC,2025-05-01
+Renewable Technology,co_36b55c1e09c7,Other Equity,Environmental Services,,,,,,,,,10153,2122,0.11%,10153,,,,,,HTGC,2025-05-01
+Equity Investments,co_fbe3bdf86f57,Other,Financial Services,,,,,,,,,173998,146750,7.34%,173998,,,,,,HTGC,2025-05-01
+Alamar Biosciences Inc.,co_e332dcc0a4c1,Preferred Equity,Healthcare,,,,,,,,,36,60,,36,,,,75567,,HTGC,2025-05-01
+PathAI Inc.,co_2b1503769621,Common Equity,Healthcare,,,,,,,,,460,50,,460,,,,53418,,HTGC,2025-05-01
+Aryaka Networks Inc.,co_7b432f2b0b1d,Common Equity,Software & Technology,,,,,,,,,242,158,,242,,,,486097,,HTGC,2025-05-01
+Gadget Guard LLC,co_878b0e624f8f,Common Equity,Consumer & Retail,,,,,,,,,228,0,,228,,,,1662441,,HTGC,2025-05-01
+Whoop Inc.,co_9f9b312199ba,Preferred Equity,Consumer & Retail,,,,,,,,,17,773,,17,,,,686270,,HTGC,2025-05-01
+Altumint Inc.,co_69870af89f98,Common Equity,Consumer & Retail,,,,,,,,,127,97,,127,,,,1701,,HTGC,2025-05-01
+Carwow Ltd.,co_7101db9aec7f,Common Equity,Consumer & Retail,,,,,,,,,164,46,,164,,,,174163,,HTGC,2025-05-01
+Carwow Ltd.,co_7101db9aec7f,Preferred Equity,Consumer & Retail,,,,,,,,,20,8,,20,,,,109257,,HTGC,2025-05-01
+Total Carwow Ltd.,co_ee6e7577c26d,Other Equity,,,,,,,,,,184,54,,184,,,,283420,,HTGC,2025-05-01
+Houzz Inc.,co_aa00125e6586,Common Equity,Consumer & Retail,,,,,,,,,20,0,,20,,,,529661,,HTGC,2025-05-01
+Landing Holdings Inc.,co_b32f9906f71a,Common Equity,Consumer & Retail,,,,,,,,,116,101,,116,,,,11806,,HTGC,2025-05-01
+Lendio Inc.,co_5c2f7af71883,Preferred Equity,Consumer & Retail,,,,,,,,,39,8,,39,,,,127032,,HTGC,2025-05-01
+Plentific Ltd.,co_92dd5212ddd1,Warrants,Consumer & Retail,,,,,,,,,60,28,,60,,,,27298,,HTGC,2025-05-01
+Provi,co_db073da882e3,Common Equity,Consumer & Retail,,,,,,,,,166,28,,166,,,,117042,,HTGC,2025-05-01
+Rhino Labs Inc.,co_7ac3ad384129,Common Equity,Consumer & Retail,,,,,,,,,470,0,,470,,,,13106,,HTGC,2025-05-01
+SeatGeek Inc.,co_f1f840b3bfb5,Common Equity,Consumer & Retail,,,,,,,,,1242,4342,,1242,,,,1604724,,HTGC,2025-05-01
+Skyword Inc.,co_6002a9bbe50a,Common Equity,Consumer & Retail,,,,,,,,,57,9,,57,,,,1607143,,HTGC,2025-05-01
+Skyword Inc.,co_6002a9bbe50a,Preferred Equity,Consumer & Retail,,,,,,,,,83,1,,83,,,,444444,,HTGC,2025-05-01
+Total Skyword Inc.,co_9a5d9dd27417,Other Equity,,,,,,,,,,140,10,,140,,,,2051587,,HTGC,2025-05-01
+Snagajob.com Inc.,co_44b0e00e6fd3,Common Equity,,,,,,,,,,16,0,,16,,,,600000,,HTGC,2025-05-01
+Snagajob.com Inc.,co_44b0e00e6fd3,Preferred Equity,,,,,,,,,,782,0,,782,,,,1800000,,HTGC,2025-05-01
+Snagajob.com Inc.,co_44b0e00e6fd3,Preferred Equity,,,,,,,,,,62,0,,62,,,,1211537,,HTGC,2025-05-01
+Total Snagajob.com Inc.,co_a370d731b9b7,Other Equity,,,,,,,,,,860,0,,860,,,,3611537,,HTGC,2025-05-01
+Thumbtack Inc.,co_fc8d127ac2a8,Common Equity,Consumer & Retail,,,,,,,,,985,938,,985,,,,343497,,HTGC,2025-05-01
+Veem Inc.,co_71cc69e91627,Common Equity,Consumer & Retail,,,,,,,,,126,4,,126,,,,98428,,HTGC,2025-05-01
+Worldremit Group Ltd.,co_443b38154040,Preferred Equity,Consumer & Retail,,,,,,,,,129,90,,129,,,,77215,,HTGC,2025-05-01
+Worldremit Group Ltd.,co_443b38154040,Preferred Equity,Consumer & Retail,,,,,,,,,26,0,,26,,,,1868,,HTGC,2025-05-01
+Total Worldremit Group Ltd.,co_4a68dce1963c,Other Equity,,,,,,,,,,155,90,,155,,,,79083,,HTGC,2025-05-01
+Next Insurance Inc.,co_72da6d0ff373,Common Equity,Insurance,,,,,,,,,214,1331,,214,,,,522930,,HTGC,2025-05-01
+Akero Therapeutics Inc.,co_bb54ad2dc36b,Common Equity,Healthcare,,,,,,,,,330,812,,330,,,,32129,,HTGC,2025-05-01
+AmplifyBio LLC,co_91a79b9fbb39,Other Equity,Healthcare,,,,,,,,,238,0,,238,,,,69239,,HTGC,2025-05-01
+Axsome Therapeutics Inc.,co_3e6ce6b14191,Common Equity,Healthcare,,,,,,,,,1290,2842,,1290,,,,61004,,HTGC,2025-05-01
+blubird bio Inc.,co_98f9c4e1ab17,Common Equity,,,,,,,,,,1744,0,,1744,,,,111206,,HTGC,2025-05-01
+Cellarity Inc.,co_f9ffd0740e03,Preferred Equity,Healthcare,,,,,,,,,287,27,,287,,,,100000,,HTGC,2025-05-01
+Century Therapeutics Inc.,co_fc2cd8cf075b,Common Equity,Healthcare,,,,,,,,,37,0,,37,,,,16112,,HTGC,2025-05-01
+COMPASS Pathways plc,co_a5c2a432eb2a,Warrants,Healthcare,,,,,,,,,278,21,,278,,,,75376,,HTGC,2025-05-01
+Curevo Inc.,co_dabe2c827933,Common Equity,Healthcare,,,,,,,,,233,313,,233,,,,95221,,HTGC,2025-05-01
+enGene Inc.,co_5518e5a757c7,Common Equity,Healthcare,,,,,,,,,118,52,,118,,,,43689,,HTGC,2025-05-01
+Heron Therapeutics Inc.,co_f59c34c5cf6c,Common Equity,Healthcare,,,,,,,,,228,257,,228,,,,238095,,HTGC,2025-05-01
+Kineta Inc.,co_2136825f89e5,Common Equity,Healthcare,,,,,,,,,110,0,,110,,,,2202,,HTGC,2025-05-01
+Kura Oncology Inc.,co_7548f682d6bb,Common Equity,Healthcare,,,,,,,,,88,6,,88,,,,14342,,HTGC,2025-05-01
+Madrigal Pharmaceutical Inc.,co_1d5fc228f076,Common Equity,Healthcare,,,,,,,,,570,2309,,570,,,,13229,,HTGC,2025-05-01
+Phathom Pharmaceuticals Inc.,co_1ccf8ec32c0e,Common Equity,Healthcare,,,,,,,,,848,5,,848,,,,64687,,HTGC,2025-05-01
+Redshift Bioanalytics Inc.,co_5a2bed828d63,Preferred Equity,Healthcare,,,,,,,,,20,17,,20,,,,475510,,HTGC,2025-05-01
+Scynexis Inc.,co_786025be23b8,Common Equity,Healthcare,,,,,,,,,296,0,,296,,,,106035,,HTGC,2025-05-01
+SynOx Therapeutics Ltd.,co_0041a0cb80ac,Preferred Equity,Healthcare,,,,,,,,,83,68,,83,,,,251195,,HTGC,2025-05-01
+TG Therapeutics Inc.,co_d8a9d21b01fe,Common Equity,Healthcare,,,,,,,,,721,2387,,721,,,,117168,,HTGC,2025-05-01
+Valo Health LLC,co_f3b68034624a,Common Equity,Healthcare,,,,,,,,,256,18,,256,,,,102216,,HTGC,2025-05-01
+X4 Pharmaceuticals Inc.,co_389716458b7f,Common Equity,Healthcare,,,,,,,,,510,19,,510,,,,1392787,,HTGC,2025-05-01
+908 Devices Inc.,co_720a44ca6498,Common Equity,Software & Technology,,,,,,,,,101,21,,101,,,,49078,,HTGC,2025-05-01
+Locus Robotics Corp.,co_bef8da650954,Common Equity,Software & Technology,,,,,,,,,34,45,,34,,,,8503,,HTGC,2025-05-01
+Skydio Inc.,co_7e8be9ce7575,Common Equity,Software & Technology,,,,,,,,,557,201,,557,,,,622255,,HTGC,2025-05-01
+Curana Health Holdings LLC.,co_b638f7dea675,Common Equity,,,,,,,,,,156,666,,156,,,,447410,,HTGC,2025-05-01
+Modern Life Inc.,co_16322f8a7c73,Common Equity,Healthcare,,,,,,,,,210,117,,210,,,,52665,,HTGC,2025-05-01
+NeueHealth Inc.,co_364d48f2703b,Common Equity,Healthcare,,,,,,,,,716,940,,716,,,,185625,,HTGC,2025-05-01
+Recover Together Inc..,co_4d2d39694fbc,Common Equity,,,,,,,,,,382,128,,382,,,,194830,,HTGC,2025-05-01
+Strive Health Holdings LLC.,co_c37feddbbcdd,Common Equity,Healthcare,,,,,,,,,278,358,,278,,,,129400,,HTGC,2025-05-01
+Vida Health Inc.,co_08e309cd519c,Preferred Equity,Healthcare,,,,,,,,,121,0,,121,,,,192431,,HTGC,2025-05-01
+NetBase Quid Inc.,co_598dde79ea08,Preferred Equity,Business Services,,,,,,,,,356,0,,356,,,,60000,,HTGC,2025-05-01
+Signal Media Ltd.,co_ec5ab27bccc1,Common Equity,Media & Entertainment,,,,,,,,,57,6,,57,,,,129638,,HTGC,2025-05-01
+Bright Machines Inc.,co_a85cd3a730d7,Common Equity,Software & Technology,,,,,,,,,537,615,,537,,,,392308,,HTGC,2025-05-01
+MacroFab Inc.,co_621823b81a89,Common Equity,Software & Technology,,,,,,,,,528,147,,528,,,,1111111,,HTGC,2025-05-01
+VulcanForms Inc.,co_32ff115e481b,Common Equity,Software & Technology,,,,,,,,,37,31,,37,,,,83262,,HTGC,2025-05-01
+Fever Labs Inc.,co_f90ee7057289,Preferred Equity,Transportation & Logistics,,,,,,,,,67,114,,67,,,,369370,,HTGC,2025-05-01
+Orchestra BioMed Holdings Inc.,co_98b9c7c506fc,Common Equity,Healthcare,,,,,,,,,180,105,,180,,,,52264,,HTGC,2025-05-01
+Outset Medical Inc.,co_e55715686c8d,Common Equity,Healthcare,,,,,,,,,401,4,,401,,,,4185,,HTGC,2025-05-01
+Senseonics Holdings Inc.,co_0072aeae754b,Common Equity,Healthcare,,,,,,,,,276,302,,276,,,,1032718,,HTGC,2025-05-01
+Sight Sciences Inc.,co_350a596d5319,Common Equity,Healthcare,,,,,,,,,363,108,,363,,,,113247,,HTGC,2025-05-01
+Tela Bio Inc.,co_922bc00aa28a,Common Equity,Healthcare,,,,,,,,,61,0,,61,,,,15712,,HTGC,2025-05-01
+Achronix Semiconductor Corp.,co_d2c33e60f92e,Preferred Equity,Software & Technology,,,,,,,,,99,328,,99,,,,750000,,HTGC,2025-05-01
+Aria Systems Inc.,co_cc99d4c1499f,Preferred Equity,Software & Technology,,,,,,,,,74,0,,74,,,,231535,,HTGC,2025-05-01
+Automation Anywhere Inc.,co_cb1fbf087a55,Common Equity,Software & Technology,,,,,,,,,448,277,,448,,,,254778,,HTGC,2025-05-01
+Bitsight Technologies Inc.,co_6e168bc2029b,Common Equity,Software & Technology,,,,,,,,,284,581,,284,,,,29691,,HTGC,2025-05-01
+Brain Corp.,co_eb667b490c30,Common Equity,Software & Technology,,,,,,,,,215,118,,215,,,,435396,,HTGC,2025-05-01
+Carbyne Inc.,co_9f36e235b650,Warrants,Software & Technology,,,,,,,,,24,19,,24,,,,11408,,HTGC,2025-05-01
+CloudBolt Software Inc.,co_be9fc39a0574,Common Equity,Software & Technology,,,,,,,,,117,52,,117,,,,211342,,HTGC,2025-05-01
+Cloudian Inc.,co_f242e380e33d,Common Equity,Software & Technology,,,,,,,,,71,0,,71,,,,477454,,HTGC,2025-05-01
+Cloudpay Inc.,co_8d2ba346c3dc,Preferred Equity,Software & Technology,,,,,,,,,54,790,,54,,,,6763,,HTGC,2025-05-01
+Coronet Cyber Security Ltd.,co_d4f93e5ea655,Warrants,Software & Technology,,,,,,,,,254,208,,254,,,,39183,,HTGC,2025-05-01
+Couchbase Inc.,co_d7053b07e14e,Common Equity,Software & Technology,,,,,,,,,462,698,,462,,,,105350,,HTGC,2025-05-01
+Cutover Inc.,co_b1d8fce3a1ed,Common Equity,Software & Technology,,,,,,,,,26,51,,26,,,,102898,,HTGC,2025-05-01
+Dashlane Inc.,co_89c33b4e9ffb,Common Equity,Software & Technology,,,,,,,,,461,1149,,461,,,,770838,,HTGC,2025-05-01
+Demandbase Inc.,co_255bbf2bc4ed,Common Equity,Software & Technology,,,,,,,,,545,74,,545,,,,727047,,HTGC,2025-05-01
+Dragos Inc.,co_90cc6c9de50e,Common Equity,Software & Technology,,,,,,,,,1575,936,,1575,,,,57528,,HTGC,2025-05-01
+DroneDeploy Inc.,co_d1044f839d20,Common Equity,Software & Technology,,,,,,,,,278,339,,278,,,,95911,,HTGC,2025-05-01
+Earnix Inc.,co_556e60f6174c,Common Equity,Software & Technology,,,,,,,,,219,313,,219,,,,20762,,HTGC,2025-05-01
+Elation Health Inc.,co_c98216ef9b8c,Common Equity,Software & Technology,,,,,,,,,739,382,,739,,,,612166,,HTGC,2025-05-01
+First Insight Inc.,co_ce50844aeab7,Preferred Equity,Software & Technology,,,,,,,,,96,10,,96,,,,75917,,HTGC,2025-05-01
+Fulfil Solutions Inc.,co_87c5da924672,Common Equity,Software & Technology,,,,,,,,,325,231,,325,,,,84995,,HTGC,2025-05-01
+Harness Inc.,co_8a03f56a7de4,Common Equity,Software & Technology,,,,,,,,,534,480,,534,,,,193618,,HTGC,2025-05-01
+Kore.ai Inc.,co_e641e8cbc8c3,Preferred Equity,Software & Technology,,,,,,,,,208,79,,208,,,,64293,,HTGC,2025-05-01
+Leapwork ApS,co_f6ff00445e5b,Common Equity,Software & Technology,,,,,,,,,39,24,,39,,,,93211,,HTGC,2025-05-01
+Lightbend Inc.,co_84440fd470f5,Preferred Equity,Software & Technology,,,,,,,,,131,26,,131,,,,86984,,HTGC,2025-05-01
+Mixpanel Inc.,co_efea157a2949,Common Equity,Software & Technology,,,,,,,,,252,275,,252,,,,82362,,HTGC,2025-05-01
+Morphisec Information Security 2014 Ltd.,co_a4293ce863e7,Warrants,Software & Technology,,,,,,,,,104,120,,104,,,,200115,,HTGC,2025-05-01
+Pindrop Security Inc.,co_c06f4a322832,Common Equity,Software & Technology,,,,,,,,,494,417,,494,,,,134542,,HTGC,2025-05-01
+Reltio Inc.,co_03318ddd2526,Common Equity,Software & Technology,,,,,,,,,215,589,,215,,,,69120,,HTGC,2025-05-01
+Semperis Technologies Inc.,co_7bfe44b38fad,Common Equity,Software & Technology,,,,,,,,,114,191,,114,,,,72122,,HTGC,2025-05-01
+Simon Data Inc.,co_8211bd6e5fa8,Common Equity,Software & Technology,,,,,,,,,96,14,,96,,,,77934,,HTGC,2025-05-01
+SingleStore Inc.,co_3d4f9b53e7ad,Preferred Equity,Software & Technology,,,,,,,,,103,452,,103,,,,312596,,HTGC,2025-05-01
+Sisense Ltd.,co_dfabeb0f09b4,Warrants,Software & Technology,,,,,,,,,174,62,,174,,,,321956,,HTGC,2025-05-01
+Suzy Inc.,co_a0ee0af93960,Common Equity,Software & Technology,,,,,,,,,367,256,,367,,,,292936,,HTGC,2025-05-01
+Tipalti Solutions Ltd.,co_7018426a584e,Warrants,Software & Technology,,,,,,,,,360,274,,360,,,,509753,,HTGC,2025-05-01
+Tipalti Solutions Ltd.,co_7018426a584e,Warrants,Software & Technology,,,,,,,,,136,128,,136,,,,473266,,HTGC,2025-05-01
+Total Tipalti Solutions Ltd.,co_f60557e0672f,Other Equity,Software & Technology,,,,,,,,,496,402,,496,,,,983019,,HTGC,2025-05-01
+VideoAmp Inc.,co_072e997263ad,Common Equity,,,,,,,,,,1275,4,,1275,,,,152048,fair_value_suspicious_vs_size,HTGC,2025-05-01
+Capella Space Corp.,co_92082b623fe4,Common Equity,Aerospace & Defense,,,,,,,,,207,22,,207,,,,176200,,HTGC,2025-05-01
+Renewable Technology and Ampion PBC,co_9856d2b65f26,Common Equity,Software & Technology,,,,,,,,,52,83,,52,,,,18472,,HTGC,2025-05-01
+Renewable Technology and Electric Hydrogen Co.,co_d63ee25a0f34,Common Equity,Software & Technology,,,,,,,,,507,288,,507,,,,246618,,HTGC,2025-05-01
+Renewable Technology,co_36b55c1e09c7,Other,Software & Technology,,,,,,,,,559,371,0.02%,559,,,,,,HTGC,2025-05-01
+Warrant Investments,co_b50faee2d988,Other,Financial Services,,,,,,,,,31324,31473,1.57%,31324,,,,,,HTGC,2025-05-01
+in Securities,co_2bc6b76e8c25,Other,Financial Services,,,,,,,,,3990612,3917457,1.96%,3990612,,,,,,HTGC,2025-05-01
+Funds & Vehicles Investments and Drug Discovery & Development and Forbion Growth Opportunities Fund I C.V. Investment Funds & Vehicles Acquisition Date 11/16/2020,co_2a6ffd50a623,Other,,,,,,,,,,2847,5236,,2847,,,,,,HTGC,2025-05-01
+Funds & Vehicles Investments and Drug Discovery & Development and Forbion Growth Opportunities Fund II C.V. Investment Funds & Vehicles Acquisition Date 6/23/2022,co_2a6ffd50a623,Other,,,,,,,,,,1242,1387,,1242,,,,,,HTGC,2025-05-01
+Funds & Vehicles Investments and Drug Discovery & Development,co_80c255f6e645,Other,Healthcare,,,,,,,,,4089,6623,0.33%,4089,,,,,,HTGC,2025-05-01
+Funds & Vehicles Investments and Software and Liberty Zim Co-Invest LP. Investment Funds & Vehicles Acquisition Date 7/21/2022,co_0dd585ae6ee2,Other,,,,,,,,,,381,370,,381,,,,,,HTGC,2025-05-01
+Funds & Vehicles Investments and Software,co_d31dd21fdb0f,Other,Automotive,,,,,,,,,381,370,0.02%,381,,,,,,HTGC,2025-05-01
+Funds & Vehicles Investments,co_b108558d20d3,Other,Automotive,,,,,,,,,4470,6993,0.35%,4470,,,,,,HTGC,2025-05-01
+before Cash & Cash Equivalents,co_f2cd4294dc81,Other,,,,,,,,,,3995082,3924450,1.96%,3995082,,,,,,HTGC,2025-05-01
+Funds and Cash & Cash Equivalent and GS Financial Square Government Fund Series FGTXX/38141W273,co_d425cc5d844e,Other,,,,,,,,,,26000,26000,,26000,,,,,,HTGC,2025-05-01
+Fund In Cash & Cash Equivalents,co_b1e62c97ef26,Other,,,,,,,,,,26000,26000,1.3%,26000,,,,,,HTGC,2025-05-01
+Fund After Cash & Cash Equivalents,co_834762e5e948,Other,,,,,,,,,,4021082,3950450,1.97%,4021082,,,,,,HTGC,2025-05-01
+Total Foreign Currency Forward ((0.02%)),co_d10c5b7bdd40,Other,,,,,,,,,,,,-0.02%,,,,,,,HTGC,2025-05-01

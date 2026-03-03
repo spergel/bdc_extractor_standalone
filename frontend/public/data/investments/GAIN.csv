@@ -1,38 +1,761 @@
-The E3 Company,company_id,,,,,,,,,,,,,,,,ticker,filing_date
-Old World Christmas Inc,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-Gladstone Alternative Income Fund,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-Edge Adhesives Holdings Inc,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-Nth Degree Investment Group LLC,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-J.R. Hobbs Co. - Atlanta,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-The Maids International,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-Nielsen-Kellerman Acquisition Corp,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-Old World Christmas,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-Pyrotek Special Effects,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-SFEG Holdings Inc,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-Dema/Mai Holdings Inc,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-Horizon Facilities Services Inc,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-Mason West LLC,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-Educators Resource Inc,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-Brunswick Bowling Products Inc,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-Ginsey Home Solutions Inc,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-Nocturne Luxury Villas Inc,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-Schylling Inc,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-The E3 Company LLC,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-Home Concepts Acquisition Inc,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-Galaxy Technologies Holdings Inc,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-Diligent Delivery Systems,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-Phoenix Door Systems Inc,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-J.R. Hobbs Co. - Atlanta LLC,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,GAIN,2025-05-13
-J.R. Hobbs Co. - Atlanta LLC,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-The Maids International LLC,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-Utah Pacific Bridge & Steel Ltd,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-B+T Group Acquisition Inc,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,GAIN,2025-05-13
-B+T Group Acquisition Inc,,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,GAIN,2025-05-13
-Phoenix Door Systems Inc,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,GAIN,2025-05-13
-UPB Acquisition Inc,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-B+T Group Acquisition Inc,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-PSI Molded Plastics Inc,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-ImageWorks Display and Marketing Group Inc,,,,,,,,,,,,,,,,,GAIN,2025-05-13
-,,,,,,,,,,,,,,,,,GAIN,2025-08-12
-,,,,,,,,,,,,,,,,,GAIN,2025-11-04
-,,,,,,,,,,,,,,,,,GAIN,2026-02-03
+company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
+Dema/Mai Holdings,co_44cc0ff5b3a9,First Lien,Industrials,11%,,SOFR,15.9%,,,,38250,38250,38250,,38250,,,,,,GAIN,2023-05-10
+Phoenix Door Systems Inc.,co_21ff24b31c8a,First Lien,Industrials,11.9%,,SOFR,7%,,,,2550,2550,2391,,2550,,,,,,GAIN,2023-05-10
+Phoenix Door Systems,co_21ff24b31c8a,First Lien,Industrials,15.9%,,SOFR,11%,,,,3200,3200,3000,,3200,,,,,,GAIN,2023-05-10
+Counsel Press,co_ef573eff8f9a,First Lien,Consumer & Retail,16.6%,,SOFR,11.8%,,,,21100,21100,21100,,21100,,,,,,GAIN,2023-05-10
+Counsel Press,co_ef573eff8f9a,First Lien,Consumer & Retail,17.9%,,SOFR,13%,,,,6400,6400,6400,,6400,,,,,,GAIN,2023-05-10
+Horizon Facilities Services,co_667df76be35e,First Lien,Business Services,12.4%,,SOFR,7.5%,,,,57700,57700,57700,,57700,,,,,,GAIN,2023-05-10
+Mason West,co_7f9303c3d8e3,First Lien,Industrials,14.9%,,SOFR,10%,,,,25250,25250,25250,,25250,,,,,,GAIN,2023-05-10
+Educators Resource,co_c0943f7e8261,First Lien,Industrials,15.4%,,SOFR,10.5%,,,,20000,20000,20000,,20000,,,,,,GAIN,2023-05-10
+Brunswick Bowling Products,co_a8e66817967d,First Lien,Industrials,14.9%,,SOFR,10%,,,,17700,17700,17700,,17700,,,,,,GAIN,2023-05-10
+Brunswick Bowling Products,co_a8e66817967d,First Lien,Industrials,14.9%,,SOFR,10%,,,,6850,6850,6850,,6850,,,,,,GAIN,2023-05-10
+Ginsey Home Solutions,co_68239dae8f8a,First Lien,Industrials,14.9%,,SOFR,10%,,,,12200,12200,10676,,12200,,,,,,GAIN,2023-05-10
+Nocturne Villa Rentals Inc.,co_3f4d27a7959f,First Lien,,12.9%,,SOFR,8%,,,,0,0,0,,0,,,,,,GAIN,2023-05-10
+Nocturne Villa Rentals,co_3f4d27a7959f,First Lien,,10.5%,,SOFR,15.4%,,,,42450,42450,42450,,42450,,,,,,GAIN,2023-05-10
+Schylling,co_1637decf7bb6,First Lien,Industrials,15.9%,,SOFR,11%,,,,27981,27981,27981,,27981,,,,,,GAIN,2023-05-10
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,Industrials,4.1%,,SOFR,9%,,,,6900,6900,5965,,6900,,,,,,GAIN,2023-05-10
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,Industrials,11.9%,,SOFR,7%,,,,18796,18796,16250,,18796,,,,,,GAIN,2023-05-10
+Diligent Delivery Systems – Term Debt,co_2f1d70b8624e,First Lien,,13.9%,,SOFR,9%,,,,13000,13000,12983,,13000,,,,,,GAIN,2023-05-10
+SFEG Holdings,co_716c8b60bd56,First Lien,Consumer & Retail,11.9%,,SOFR,7%,,,,3128,3128,3128,,3128,,,,,,GAIN,2023-05-10
+SFEG Holdings,co_716c8b60bd56,First Lien,Consumer & Retail,11.9%,,SOFR,7%,,,,12516,12516,12516,,12516,,,,,,GAIN,2023-05-10
+Dema/Mai Holdings,co_44cc0ff5b3a9,Preferred Equity,Industrials,,,,,,,,,21000,22321,,21000,,,,21000,,GAIN,2023-05-10
+Counsel Press,co_ef573eff8f9a,Preferred Equity,Consumer & Retail,,,,,,,,,6995,27885,,6995,,,,6995,,GAIN,2023-05-10
+Horizon Facilities Services,co_667df76be35e,Preferred Equity,Business Services,,,,,,,,,0,12345,,0,,,,10080,,GAIN,2023-05-10
+Mason West,co_7f9303c3d8e3,Preferred Equity,Industrials,,,,,,,,,11206,10940,,11206,,,,11206,,GAIN,2023-05-10
+Educators Resource,co_c0943f7e8261,Preferred Equity,Industrials,,,,,,,,,8560,17445,,8560,,,,8560,,GAIN,2023-05-10
+Brunswick Bowling Products,co_a8e66817967d,Preferred Equity,Industrials,,,,,,,,,6653,33969,,6653,,,,6653,,GAIN,2023-05-10
+Ginsey Home Solutions,co_68239dae8f8a,Preferred Equity,Industrials,,,,,,,,,9583,0,,9583,,,,19280,,GAIN,2023-05-10
+Nocturne Villa Rentals,co_3f4d27a7959f,Preferred Equity,,,,,,,,,,6600,16263,,6600,,,,6600,,GAIN,2023-05-10
+Schylling,co_1637decf7bb6,Preferred Equity,Industrials,,,,,,,,,4000,18922,,4000,,,,4000,,GAIN,2023-05-10
+SFEG Holdings,co_716c8b60bd56,Preferred Equity,Consumer & Retail,,,,,,,,,4643,4444,,4643,,,,29577,,GAIN,2023-05-10
+Galaxy Technologies Holdings,co_b903cc7063a4,Common Equity,Industrials,,,,,,,,,11513,0,,11513,,,,16957,,GAIN,2023-05-10
+Diligent Delivery Systems – Common Stock Warrants,co_ef46c437f0ac,Other,,,,,,,,,,500,1724,,500,,,,,,GAIN,2023-05-10
+Phoenix Door Systems,co_21ff24b31c8a,Common Equity,Industrials,,,,,,,,,1830,0,,1830,,,,4221,,GAIN,2023-05-10
+Ginsey Home Solutions,co_68239dae8f8a,Common Equity,Industrials,,,,,,,,,8,0,,8,,,,63747,,GAIN,2023-05-10
+SFEG Holdings,co_716c8b60bd56,Common Equity,Consumer & Retail,,,,,,,,,222,0,,222,,,,221500,,GAIN,2023-05-10
+Funko Acquisition Holdings,co_50a378cf9dce,Common Equity,,,,,,,,,,21,27,,21,,,,4239,,GAIN,2023-05-10
+Edge Adhesives Holdings,co_1a089392d0f6,First Lien,Chemicals & Materials,10.4%,,SOFR,5.5%,,,,9210,9210,4255,,9210,,,,,,GAIN,2023-05-10
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,First Lien,Business Services,15.9%,,SOFR,11%,,,,22000,22000,22000,,22000,,,,,,GAIN,2023-05-10
+J.R. Hobbs Co. - Atlanta LLC,co_4f47f3e2dd7c,First Lien,Consumer & Retail,10.9%,,SOFR,6%,,,,5000,5000,2744,,5000,,,,,,GAIN,2023-05-10
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,10.9%,,SOFR,6%,,,,16500,16500,9054,,16500,,,,,,GAIN,2023-05-10
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,15.1%,,SOFR,10.3%,,,,26000,26000,14268,,26000,,,,,,GAIN,2023-05-10
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,,,,,,,,2438,2438,1338,,2438,,,,,,GAIN,2023-05-10
+The Maids International,co_c3f922f64484,First Lien,Industrials,15.4%,,SOFR,10.5%,,,,28560,28560,28560,,28560,,,,,,GAIN,2023-05-10
+Old World Christmas,co_c26a82775028,First Lien,Industrials,14.4%,,SOFR,9.5%,,,,40500,40500,40500,,40500,,,,,,GAIN,2023-05-10
+Utah Pacific Bridge & Steel Ltd.,co_d7c00c5f6287,First Lien,Industrials,14.9%,,SOFR,10%,,,,18250,18250,18250,,18250,,,,,,GAIN,2023-05-10
+B+T Group Acquisition Inc.,co_e1310f2592d0,First Lien,Media & Entertainment,15.9%,,SOFR,11%,,,,2800,2800,2800,,2800,,,,,,GAIN,2023-05-10
+B+T Group Acquisition,co_e1310f2592d0,First Lien,Media & Entertainment,15.9%,,,,,,,14000,14000,14000,,14000,,,,,,GAIN,2023-05-10
+PSI Molded Plastics,co_b9958539c8ca,First Lien,Chemicals & Materials,10.4%,,SOFR,5.5%,,,,26618,26618,24892,,26618,,,,,,GAIN,2023-05-10
+PSI Molded Plastics,co_b9958539c8ca,Preferred Equity,Chemicals & Materials,,,,,,,,,19730,0,,19730,,,,158598,,GAIN,2023-05-10
+Edge Adhesives Holdings,co_1a089392d0f6,Preferred Equity,Chemicals & Materials,,,,,,,,,8199,0,,8199,,,,8199,,GAIN,2023-05-10
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,Preferred Equity,Business Services,,,,,,,,,6749,10926,,6749,,,,67490,,GAIN,2023-05-10
+J.R. Hobbs Co. – Atlanta,co_45ddd497035e,Preferred Equity,Consumer & Retail,,,,,,,,,10920,0,,10920,,,,10920,,GAIN,2023-05-10
+The Maids International,co_c3f922f64484,Preferred Equity,Industrials,,,,,,,,,6640,3200,,6640,,,,6640,,GAIN,2023-05-10
+Old World Christmas,co_c26a82775028,Preferred Equity,Industrials,,,,,,,,,0,33990,,0,,,,6180,,GAIN,2023-05-10
+Utah Pacific Bridge & Steel,co_d7c00c5f6287,Preferred Equity,Industrials,,,,,,,,,6000,7748,,6000,,,,6000,,GAIN,2023-05-10
+B+T Group Acquisition,co_e1310f2592d0,Preferred Equity,Media & Entertainment,,,,,,,,,4722,2187,,4722,,,,14304,,GAIN,2023-05-10
+Nth Degree Investment Group,co_97986e79a345,Common Equity,Financial Services,,,,,,,,,1219,15243,,1219,,,,14360000,,GAIN,2023-05-10
+B+T Group Acquisition,co_e1310f2592d0,Common Equity,Media & Entertainment,,,,,,,,,0,0,,0,,,,,,GAIN,2023-05-10
+The Mountain Corp.,co_0ac982e6a4b0,First Lien,Consumer & Retail,,,SOFR,5%,,,,4550,4550,0,,4550,,,,,,GAIN,2023-05-10
+The Mountain Corp.,co_0ac982e6a4b0,First Lien,Consumer & Retail,,,SOFR,4%,,,,3200,3200,0,,3200,,,,,,GAIN,2023-05-10
+The Mountain Corp.,co_0ac982e6a4b0,Other Equity,Consumer & Retail,,,,,,,,,6899,0,,6899,,,,6899,,GAIN,2023-05-10
+Gladstone SOG Investments,co_80800b5e6ca4,Common Equity,Financial Services,,,,,,,,,620,713,,620,,,,100,,GAIN,2023-05-10
+The Mountain Corp.,co_0ac982e6a4b0,Other Equity,Consumer & Retail,,,,,,,,,1,0,,1,,,,751,,GAIN,2023-05-10
+Dema/Mai Holdings,co_44cc0ff5b3a9,First Lien,Industrials,16.1%,,SOFR,11%,,,,38250,38250,38250,,38250,,,,,,GAIN,2023-08-02
+Phoenix Door Systems Inc.,co_21ff24b31c8a,First Lien,Industrials,12.1%,,SOFR,7%,,,,2750,2750,2750,,2750,,,,,,GAIN,2023-08-02
+Phoenix Door Systems,co_21ff24b31c8a,First Lien,Industrials,16.1%,,SOFR,11%,,,,3200,3200,3200,,3200,,,,,,GAIN,2023-08-02
+Counsel Press,co_ef573eff8f9a,First Lien,Consumer & Retail,16.9%,,SOFR,11.8%,,,,21100,21100,21100,,21100,,,,,,GAIN,2023-08-02
+Counsel Press,co_ef573eff8f9a,First Lien,Consumer & Retail,18.1%,,SOFR,13%,,,,6400,6400,6400,,6400,,,,,,GAIN,2023-08-02
+Horizon Facilities Services,co_667df76be35e,First Lien,Consumer & Retail,12.6%,,SOFR,7.5%,,,,57700,57700,57700,,57700,,,,,,GAIN,2023-08-02
+Mason West,co_7f9303c3d8e3,First Lien,Consumer & Retail,15.1%,,SOFR,10%,,,,25250,25250,25250,,25250,,,,,,GAIN,2023-08-02
+Educators Resource,co_c0943f7e8261,First Lien,Industrials,15.6%,,SOFR,10.5%,,,,20000,20000,20000,,20000,,,,,,GAIN,2023-08-02
+Brunswick Bowling Products,co_a8e66817967d,First Lien,Consumer & Retail,15.1%,,SOFR,10%,,,,17700,17700,17700,,17700,,,,,,GAIN,2023-08-02
+Brunswick Bowling Products,co_a8e66817967d,First Lien,Consumer & Retail,15.1%,,SOFR,10%,,,,6850,6850,6850,,6850,,,,,,GAIN,2023-08-02
+Ginsey Home Solutions,co_68239dae8f8a,First Lien,Consumer & Retail,15.1%,,SOFR,10%,,,,12200,12200,11069,,12200,,,,,,GAIN,2023-08-02
+Nocturne Luxury Villas Inc.,co_d703926341bd,First Lien,Consumer & Retail,13.1%,,SOFR,8%,,,,0,0,0,,0,,,,,,GAIN,2023-08-02
+Nocturne Luxury Villas,co_d703926341bd,First Lien,Consumer & Retail,14.5%,,SOFR,10.5%,,,,42450,42450,42450,,42450,,,,,,GAIN,2023-08-02
+Schylling,co_1637decf7bb6,First Lien,Consumer & Retail,16.1%,,SOFR,11%,,,,27981,27981,27981,,27981,,,,,,GAIN,2023-08-02
+Home Concepts Acquisition Inc.,co_d481848bce83,First Lien,Industrials,11.1%,,SOFR,6%,,,,0,0,0,,0,,,,,,GAIN,2023-08-02
+Home Concepts Acquisition,co_d481848bce83,First Lien,Industrials,14.1%,,SOFR,9%,,,,12000,12000,12000,,12000,,,,,,GAIN,2023-08-02
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,Consumer & Retail,9.2%,,SOFR,4.1%,,,,6900,6900,6900,,6900,,,,,,GAIN,2023-08-02
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,Consumer & Retail,12.1%,,SOFR,7%,,,,18796,18796,18796,,18796,,,,,,GAIN,2023-08-02
+Diligent Delivery Systems – Term Debt,co_2f1d70b8624e,First Lien,,14.1%,,SOFR,9%,,,,13000,13000,13000,,13000,,,,,,GAIN,2023-08-02
+SFEG Holdings,co_716c8b60bd56,First Lien,Consumer & Retail,12.1%,,SOFR,7%,,,,3128,3128,3128,,3128,,,,,,GAIN,2023-08-02
+SFEG Holdings,co_716c8b60bd56,First Lien,Consumer & Retail,12.1%,,SOFR,7%,,,,12516,12516,12516,,12516,,,,,,GAIN,2023-08-02
+Dema/Mai Holdings,co_44cc0ff5b3a9,Preferred Equity,Industrials,,,,,,,,,21000,21572,,21000,,,,21000,,GAIN,2023-08-02
+Counsel Press,co_ef573eff8f9a,Preferred Equity,Consumer & Retail,,,,,,,,,6995,28894,,6995,,,,6995,,GAIN,2023-08-02
+Horizon Facilities Services,co_667df76be35e,Preferred Equity,Consumer & Retail,,,,,,,,,0,6429,,0,,,,10080,,GAIN,2023-08-02
+Mason West,co_7f9303c3d8e3,Preferred Equity,Consumer & Retail,,,,,,,,,11206,13885,,11206,,,,11206,,GAIN,2023-08-02
+Educators Resource,co_c0943f7e8261,Preferred Equity,Industrials,,,,,,,,,8560,18465,,8560,,,,8560,,GAIN,2023-08-02
+Brunswick Bowling Products,co_a8e66817967d,Preferred Equity,Consumer & Retail,,,,,,,,,6653,36567,,6653,,,,6653,,GAIN,2023-08-02
+Ginsey Home Solutions,co_68239dae8f8a,Preferred Equity,Consumer & Retail,,,,,,,,,9583,0,,9583,,,,19280,,GAIN,2023-08-02
+Nocturne Luxury Villas,co_d703926341bd,Preferred Equity,Consumer & Retail,,,,,,,,,6600,18735,,6600,,,,6600,,GAIN,2023-08-02
+Schylling,co_1637decf7bb6,Preferred Equity,Consumer & Retail,,,,,,,,,4000,11967,,4000,,,,4000,,GAIN,2023-08-02
+SFEG Holdings,co_716c8b60bd56,Preferred Equity,Consumer & Retail,,,,,,,,,4643,7431,,4643,,,,29577,,GAIN,2023-08-02
+Home Concepts Acquisition,co_d481848bce83,Preferred Equity,Industrials,,,,,,,,,3275,3275,,3275,,,,3275000,,GAIN,2023-08-02
+Galaxy Technologies Holdings,co_b903cc7063a4,Common Equity,Consumer & Retail,,,,,,,,,11513,0,,11513,,,,16957,,GAIN,2023-08-02
+Diligent Delivery Systems – Common Stock Warrants,co_ef46c437f0ac,Other,,,,,,,,,,500,1487,,500,,,,,,GAIN,2023-08-02
+Phoenix Door Systems,co_21ff24b31c8a,Common Equity,Industrials,,,,,,,,,1830,0,,1830,,,,4221,,GAIN,2023-08-02
+Ginsey Home Solutions,co_68239dae8f8a,Common Equity,Consumer & Retail,,,,,,,,,8,0,,8,,,,63747,,GAIN,2023-08-02
+SFEG Holdings,co_716c8b60bd56,Common Equity,Consumer & Retail,,,,,,,,,222,0,,222,,,,221500,,GAIN,2023-08-02
+Funko Acquisition Holdings,co_50a378cf9dce,Common Equity,,,,,,,,,,21,31,,21,,,,4239,,GAIN,2023-08-02
+Edge Adhesives Holdings,co_1a089392d0f6,First Lien,Chemicals & Materials,10.6%,,SOFR,5.5%,,,,9210,9210,4127,,9210,,,,,,GAIN,2023-08-02
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,First Lien,Consumer & Retail,16.1%,,SOFR,11%,,,,22000,22000,22000,,22000,,,,,,GAIN,2023-08-02
+J.R. Hobbs Co. - Atlanta LLC,co_4f47f3e2dd7c,First Lien,Consumer & Retail,11.1%,,SOFR,6%,,,,5000,5000,2681,,5000,,,,,,GAIN,2023-08-02
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,11.1%,,SOFR,6%,,,,16500,16500,8848,,16500,,,,,,GAIN,2023-08-02
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,15.4%,,SOFR,10.3%,,,,26000,26000,13942,,26000,,,,,,GAIN,2023-08-02
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,11.1%,,SOFR,6%,,,,2438,2438,1307,,2438,,,,,,GAIN,2023-08-02
+The Maids International,co_c3f922f64484,First Lien,Consumer & Retail,15.6%,,SOFR,10.5%,,,,28560,28560,28560,,28560,,,,,,GAIN,2023-08-02
+Old World Christmas,co_c26a82775028,First Lien,Consumer & Retail,14.6%,,SOFR,9.5%,,,,43000,43000,43000,,43000,,,,,,GAIN,2023-08-02
+Utah Pacific Bridge & Steel Ltd.,co_d7c00c5f6287,First Lien,Industrials,15.1%,,SOFR,10%,,,,18250,18250,18250,,18250,,,,,,GAIN,2023-08-02
+B+T Group Acquisition Inc.,co_e1310f2592d0,First Lien,Media & Entertainment,16.1%,,SOFR,11%,,,,2800,2800,2800,,2800,,,,,,GAIN,2023-08-02
+B+T Group Acquisition,co_e1310f2592d0,First Lien,Consumer & Retail,16.1%,,SOFR,11%,,,,14000,14000,14000,,14000,,,,,,GAIN,2023-08-02
+PSI Molded Plastics,co_b9958539c8ca,First Lien,Chemicals & Materials,10.6%,,SOFR,5.5%,,,,26618,26618,25454,,26618,,,,,,GAIN,2023-08-02
+Nth Degree,co_d6beb49cd053,First Lien,,13.6%,,SOFR,8.5%,,,,25000,25000,25000,,25000,,,,,,GAIN,2023-08-02
+PSI Molded Plastics,co_b9958539c8ca,Preferred Equity,Chemicals & Materials,,,,,,,,,19730,0,,19730,,,,158598,,GAIN,2023-08-02
+Edge Adhesives Holdings,co_1a089392d0f6,Preferred Equity,Chemicals & Materials,,,,,,,,,8199,0,,8199,,,,8199,,GAIN,2023-08-02
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,Preferred Equity,Consumer & Retail,,,,,,,,,6749,2042,,6749,,,,67490,,GAIN,2023-08-02
+J.R. Hobbs Co. – Atlanta,co_45ddd497035e,Preferred Equity,Consumer & Retail,,,,,,,,,10920,0,,10920,,,,10920,,GAIN,2023-08-02
+The Maids International,co_c3f922f64484,Preferred Equity,Consumer & Retail,,,,,,,,,6640,5148,,6640,,,,6640,,GAIN,2023-08-02
+Old World Christmas,co_c26a82775028,Preferred Equity,Consumer & Retail,,,,,,,,,0,31821,,0,,,,6180,,GAIN,2023-08-02
+Utah Pacific Bridge & Steel,co_d7c00c5f6287,Preferred Equity,Industrials,,,,,,,,,6000,8027,,6000,,,,6000,,GAIN,2023-08-02
+B+T Group Acquisition,co_e1310f2592d0,Preferred Equity,Consumer & Retail,,,,,,,,,4722,0,,4722,,,,14304,,GAIN,2023-08-02
+Nth Degree Investment Group,co_97986e79a345,Common Equity,Consumer & Retail,,,,,,,,,6219,27293,,6219,,,,17216976,,GAIN,2023-08-02
+B+T Group Acquisition,co_e1310f2592d0,Common Equity,Consumer & Retail,,,,,,,,,0,0,,0,,,,,,GAIN,2023-08-02
+The Mountain Corp.,co_0ac982e6a4b0,First Lien,Consumer & Retail,10.1%,,SOFR,5%,,,,4550,4550,0,,4550,,,,,,GAIN,2023-08-02
+The Mountain Corp.,co_0ac982e6a4b0,First Lien,Consumer & Retail,9.1%,,SOFR,4%,,,,3200,3200,0,,3200,,,,,,GAIN,2023-08-02
+The Mountain Corp.,co_0ac982e6a4b0,Other Equity,Consumer & Retail,,,,,,,,,6899,0,,6899,,,,6899,,GAIN,2023-08-02
+The Mountain Corp.,co_0ac982e6a4b0,Other Equity,Consumer & Retail,,,,,,,,,1,0,,1,,,,751,,GAIN,2023-08-02
+Dema/Mai Holdings,co_44cc0ff5b3a9,First Lien,Consumer & Retail,16.3%,,SOFR,11%,,,,38250,38250,38250,,38250,,,,,,GAIN,2023-11-01
+Phoenix Door Systems Inc.,co_21ff24b31c8a,First Lien,Industrials,12.3%,,SOFR,7%,,,,2750,2750,2750,,2750,,,,,,GAIN,2023-11-01
+Phoenix Door Systems,co_21ff24b31c8a,First Lien,Industrials,16.3%,,SOFR,11%,,,,3200,3200,3200,,3200,,,,,,GAIN,2023-11-01
+Counsel Press,co_ef573eff8f9a,First Lien,Consumer & Retail,17.1%,,SOFR,11.8%,,,,21100,21100,22114,,21100,,,,,,GAIN,2023-11-01
+Counsel Press,co_ef573eff8f9a,First Lien,Consumer & Retail,18.3%,,SOFR,13%,,,,6400,6400,6724,,6400,,,,,,GAIN,2023-11-01
+Horizon Facilities Services,co_667df76be35e,First Lien,Consumer & Retail,12.8%,,SOFR,7.5%,,,,57700,57700,57700,,57700,,,,,,GAIN,2023-11-01
+Mason West,co_7f9303c3d8e3,First Lien,Consumer & Retail,15.3%,,SOFR,10%,,,,25250,25250,26942,,25250,,,,,,GAIN,2023-11-01
+Educators Resource,co_c0943f7e8261,First Lien,Consumer & Retail,15.8%,,SOFR,10.5%,,,,20000,20000,20000,,20000,,,,,,GAIN,2023-11-01
+Brunswick Bowling Products,co_a8e66817967d,First Lien,Consumer & Retail,15.3%,,SOFR,10%,,,,17700,17700,17700,,17700,,,,,,GAIN,2023-11-01
+Brunswick Bowling Products,co_a8e66817967d,First Lien,Consumer & Retail,15.3%,,SOFR,10%,,,,6850,6850,6850,,6850,,,,,,GAIN,2023-11-01
+Ginsey Home Solutions,co_68239dae8f8a,First Lien,Consumer & Retail,15.3%,,SOFR,10%,,,,12200,12200,11923,,12200,,,,,,GAIN,2023-11-01
+Nocturne Luxury Villas Inc.,co_d703926341bd,First Lien,Consumer & Retail,13.3%,,SOFR,8%,,,,2000,2000,2000,,2000,,,,,,GAIN,2023-11-01
+Nocturne Luxury Villas,co_d703926341bd,First Lien,Consumer & Retail,14.5%,,SOFR,10.5%,,,,61100,61100,61100,,61100,,,,,,GAIN,2023-11-01
+Schylling,co_1637decf7bb6,First Lien,Consumer & Retail,16.3%,,SOFR,11%,,,,27981,27981,27981,,27981,,,,,,GAIN,2023-11-01
+The E3 Company LLC,co_0d41dfa66f36,First Lien,Industrials,10.8%,,SOFR,5.5%,,,,1000,1000,1000,,1000,,,,,,GAIN,2023-11-01
+The E3 Company,co_0d41dfa66f36,First Lien,Industrials,14.3%,,SOFR,9%,,,,33750,33750,33750,,33750,,,,,,GAIN,2023-11-01
+Home Concepts Acquisition Inc.,co_d481848bce83,First Lien,Industrials,11.3%,,SOFR,6%,,,,0,0,0,,0,,,,,,GAIN,2023-11-01
+Home Concepts Acquisition,co_d481848bce83,First Lien,Industrials,14.3%,,SOFR,9%,,,,12000,12000,12000,,12000,,,,,,GAIN,2023-11-01
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,Consumer & Retail,9.4%,,SOFR,4.1%,,,,6900,6900,6900,,6900,,,,,,GAIN,2023-11-01
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,Consumer & Retail,12.3%,,SOFR,7%,,,,18796,18796,18796,,18796,,,,,,GAIN,2023-11-01
+Diligent Delivery Systems – Term Debt,co_2f1d70b8624e,First Lien,,14.3%,,SOFR,9%,,,,13000,13000,13000,,13000,,,,,,GAIN,2023-11-01
+SFEG Holdings,co_716c8b60bd56,First Lien,Consumer & Retail,12.3%,,SOFR,7%,,,,3128,3128,3128,,3128,,,,,,GAIN,2023-11-01
+SFEG Holdings,co_716c8b60bd56,First Lien,Consumer & Retail,12.3%,,SOFR,7%,,,,12516,12516,12516,,12516,,,,,,GAIN,2023-11-01
+Dema/Mai Holdings,co_44cc0ff5b3a9,Preferred Equity,Consumer & Retail,,,,,,,,,21000,20446,,21000,,,,21000,,GAIN,2023-11-01
+Counsel Press,co_ef573eff8f9a,Preferred Equity,Consumer & Retail,,,,,,,,,6995,49223,,6995,,,,6995,,GAIN,2023-11-01
+Horizon Facilities Services,co_667df76be35e,Preferred Equity,Consumer & Retail,,,,,,,,,0,6586,,0,,,,10080,,GAIN,2023-11-01
+Mason West,co_7f9303c3d8e3,Preferred Equity,Consumer & Retail,,,,,,,,,11206,20939,,11206,,,,11206,,GAIN,2023-11-01
+Educators Resource,co_c0943f7e8261,Preferred Equity,Consumer & Retail,,,,,,,,,8560,28008,,8560,,,,8560,,GAIN,2023-11-01
+Brunswick Bowling Products,co_a8e66817967d,Preferred Equity,Consumer & Retail,,,,,,,,,6653,42280,,6653,,,,6653,,GAIN,2023-11-01
+Ginsey Home Solutions,co_68239dae8f8a,Preferred Equity,Consumer & Retail,,,,,,,,,9583,0,,9583,,,,19280,,GAIN,2023-11-01
+Nocturne Luxury Villas,co_d703926341bd,Preferred Equity,Consumer & Retail,,,,,,,,,6600,17876,,6600,,,,6600,,GAIN,2023-11-01
+Schylling,co_1637decf7bb6,Preferred Equity,Consumer & Retail,,,,,,,,,4000,10528,,4000,,,,4000,,GAIN,2023-11-01
+SFEG Holdings,co_716c8b60bd56,Preferred Equity,Consumer & Retail,,,,,,,,,4823,8621,,4823,,,,29757,,GAIN,2023-11-01
+The E3 Company,co_0d41dfa66f36,Preferred Equity,Industrials,,,,,,,,,11233,11233,,11233,,,,11233,,GAIN,2023-11-01
+Home Concepts Acquisition,co_d481848bce83,Preferred Equity,Industrials,,,,,,,,,3275,3275,,3275,,,,3275000,,GAIN,2023-11-01
+Galaxy Technologies Holdings,co_b903cc7063a4,Common Equity,Consumer & Retail,,,,,,,,,11513,0,,11513,,,,16957,,GAIN,2023-11-01
+Diligent Delivery Systems – Common Stock Warrants,co_ef46c437f0ac,Other,,,,,,,,,,500,1157,,500,,,,,,GAIN,2023-11-01
+Phoenix Door Systems,co_21ff24b31c8a,Common Equity,Industrials,,,,,,,,,1830,0,,1830,,,,4221,,GAIN,2023-11-01
+Ginsey Home Solutions,co_68239dae8f8a,Common Equity,Consumer & Retail,,,,,,,,,8,0,,8,,,,63747,,GAIN,2023-11-01
+SFEG Holdings,co_716c8b60bd56,Common Equity,Consumer & Retail,,,,,,,,,222,2440,,222,,,,221500,,GAIN,2023-11-01
+Funko Acquisition Holdings,co_50a378cf9dce,Common Equity,,,,,,,,,,21,22,,21,,,,4239,,GAIN,2023-11-01
+Edge Adhesives Holdings,co_1a089392d0f6,First Lien,Consumer & Retail,10.8%,,SOFR,5.5%,,,,9210,9210,4343,,9210,,,,,,GAIN,2023-11-01
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,First Lien,Consumer & Retail,16.3%,,SOFR,11%,,,,22000,22000,22000,,22000,,,,,,GAIN,2023-11-01
+J.R. Hobbs Co. - Atlanta LLC,co_4f47f3e2dd7c,First Lien,Consumer & Retail,11.3%,,SOFR,6%,,,,5000,5000,2671,,5000,,,,,,GAIN,2023-11-01
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,11.3%,,SOFR,6%,,,,16500,16500,8814,,16500,,,,,,GAIN,2023-11-01
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,15.6%,,SOFR,10.3%,,,,26000,26000,13888,,26000,,,,,,GAIN,2023-11-01
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,11.3%,,SOFR,6%,,,,2438,2438,1302,,2438,,,,,,GAIN,2023-11-01
+The Maids International,co_c3f922f64484,First Lien,Consumer & Retail,15.8%,,SOFR,10.5%,,,,28560,28560,28560,,28560,,,,,,GAIN,2023-11-01
+Old World Christmas,co_c26a82775028,First Lien,Consumer & Retail,14.8%,,SOFR,9.5%,,,,43000,43000,43000,,43000,,,,,,GAIN,2023-11-01
+Utah Pacific Bridge & Steel Ltd.,co_d7c00c5f6287,First Lien,Consumer & Retail,15.3%,,SOFR,10%,,,,18250,18250,18250,,18250,,,,,,GAIN,2023-11-01
+B+T Group Acquisition Inc.,co_e1310f2592d0,First Lien,Media & Entertainment,7.3%,,SOFR,2%,,,,2800,2800,2282,,2800,,,,,,GAIN,2023-11-01
+B+T Group Acquisition,co_e1310f2592d0,First Lien,Consumer & Retail,7.3%,,SOFR,2%,,,,14000,14000,11410,,14000,,,,,,GAIN,2023-11-01
+PSI Molded Plastics,co_b9958539c8ca,First Lien,Consumer & Retail,10.8%,,SOFR,5.5%,,,,26618,26618,23657,,26618,,,,,,GAIN,2023-11-01
+Nth Degree,co_d6beb49cd053,First Lien,,13.8%,,SOFR,8.5%,,,,25000,25000,24750,,25000,,,,,,GAIN,2023-11-01
+PSI Molded Plastics,co_b9958539c8ca,Preferred Equity,Consumer & Retail,,,,,,,,,19730,0,,19730,,,,158598,,GAIN,2023-11-01
+Edge Adhesives Holdings,co_1a089392d0f6,Preferred Equity,Consumer & Retail,,,,,,,,,8199,0,,8199,,,,8199,,GAIN,2023-11-01
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,Preferred Equity,Consumer & Retail,,,,,,,,,6749,651,,6749,,,,67490,,GAIN,2023-11-01
+J.R. Hobbs Co. – Atlanta,co_45ddd497035e,Preferred Equity,Consumer & Retail,,,,,,,,,10920,0,,10920,,,,10920,,GAIN,2023-11-01
+The Maids International,co_c3f922f64484,Preferred Equity,Consumer & Retail,,,,,,,,,6640,6948,,6640,,,,6640,,GAIN,2023-11-01
+Old World Christmas,co_c26a82775028,Preferred Equity,Consumer & Retail,,,,,,,,,0,31742,,0,,,,6180,,GAIN,2023-11-01
+Utah Pacific Bridge & Steel,co_d7c00c5f6287,Preferred Equity,Consumer & Retail,,,,,,,,,6000,9240,,6000,,,,6000,,GAIN,2023-11-01
+B+T Group Acquisition,co_e1310f2592d0,Preferred Equity,Consumer & Retail,,,,,,,,,4722,0,,4722,,,,14304,,GAIN,2023-11-01
+Nth Degree Investment Group,co_97986e79a345,Common Equity,Consumer & Retail,,,,,,,,,6219,33170,,6219,,,,17216976,,GAIN,2023-11-01
+B+T Group Acquisition,co_e1310f2592d0,Common Equity,Consumer & Retail,,,,,,,,,0,0,,0,,,,,,GAIN,2023-11-01
+The Mountain Corp.,co_0ac982e6a4b0,First Lien,Consumer & Retail,10.3%,,SOFR,5%,,,,4550,4550,0,,4550,,,,,,GAIN,2023-11-01
+The Mountain Corp.,co_0ac982e6a4b0,First Lien,Consumer & Retail,9.3%,,SOFR,4%,,,,3200,3200,0,,3200,,,,,,GAIN,2023-11-01
+The Mountain Corp.,co_0ac982e6a4b0,Other Equity,Consumer & Retail,,,,,,,,,6899,0,,6899,,,,6899,,GAIN,2023-11-01
+The Mountain Corp.,co_0ac982e6a4b0,Other Equity,Consumer & Retail,,,,,,,,,1,0,,1,,,,751,,GAIN,2023-11-01
+Dema/Mai Holdings,co_44cc0ff5b3a9,First Lien,Consumer & Retail,16.4%,,SOFR,11%,,,,38250,38250,38250,,38250,,,,,,GAIN,2024-02-06
+Phoenix Door Systems Inc.,co_21ff24b31c8a,First Lien,Industrials,12.4%,,SOFR,7%,,,,2750,2750,2750,,2750,,,,,,GAIN,2024-02-06
+Phoenix Door Systems,co_21ff24b31c8a,First Lien,Industrials,16.4%,,SOFR,11%,,,,3200,3200,2544,,3200,,,,,,GAIN,2024-02-06
+Horizon Facilities Services,co_667df76be35e,First Lien,Consumer & Retail,12.9%,,SOFR,7.5%,,,,57700,57700,57700,,57700,,,,,,GAIN,2024-02-06
+Mason West,co_7f9303c3d8e3,First Lien,Consumer & Retail,15.4%,,SOFR,10%,,,,25250,25250,25250,,25250,,,,,,GAIN,2024-02-06
+Educators Resource,co_c0943f7e8261,First Lien,Consumer & Retail,15.9%,,SOFR,10.5%,,,,20000,20000,20000,,20000,,,,,,GAIN,2024-02-06
+Brunswick Bowling Products,co_a8e66817967d,First Lien,Consumer & Retail,15.4%,,SOFR,10%,,,,17700,17700,17700,,17700,,,,,,GAIN,2024-02-06
+Brunswick Bowling Products,co_a8e66817967d,First Lien,Consumer & Retail,15.4%,,SOFR,10%,,,,6850,6850,6850,,6850,,,,,,GAIN,2024-02-06
+Ginsey Home Solutions,co_68239dae8f8a,First Lien,Consumer & Retail,15.4%,,SOFR,10%,,,,12200,12200,12153,,12200,,,,,,GAIN,2024-02-06
+Nocturne Luxury Villas Inc.,co_d703926341bd,First Lien,Consumer & Retail,13.4%,,SOFR,8%,,,,4000,4000,4000,,4000,,,,,,GAIN,2024-02-06
+Nocturne Luxury Villas,co_d703926341bd,First Lien,Consumer & Retail,14.5%,,SOFR,10.5%,,,,61100,61100,61100,,61100,,,,,,GAIN,2024-02-06
+Schylling,co_1637decf7bb6,First Lien,Consumer & Retail,16.4%,,SOFR,11%,,,,27981,27981,27981,,27981,,,,,,GAIN,2024-02-06
+The E3 Company LLC,co_0d41dfa66f36,First Lien,Industrials,10.9%,,SOFR,5.5%,,,,1000,1000,1000,,1000,,,,,,GAIN,2024-02-06
+The E3 Company,co_0d41dfa66f36,First Lien,Industrials,14.4%,,SOFR,9%,,,,33750,33750,33750,,33750,,,,,,GAIN,2024-02-06
+Home Concepts Acquisition Inc.,co_d481848bce83,First Lien,Industrials,11.4%,,SOFR,6%,,,,1500,1500,1500,,1500,,,,,,GAIN,2024-02-06
+Home Concepts Acquisition,co_d481848bce83,First Lien,Consumer & Retail,14.4%,,SOFR,9%,,,,12000,12000,12000,,12000,,,,,,GAIN,2024-02-06
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,Consumer & Retail,9.5%,,SOFR,4.1%,,,,6900,6900,6900,,6900,,,,,,GAIN,2024-02-06
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,Consumer & Retail,12.4%,,SOFR,7%,,,,18796,18796,18796,,18796,,,,,,GAIN,2024-02-06
+Diligent Delivery Systems – Term Debt,co_2f1d70b8624e,First Lien,,14.4%,,SOFR,9%,,,,13000,13000,13000,,13000,,,,,,GAIN,2024-02-06
+SFEG Holdings,co_716c8b60bd56,First Lien,Consumer & Retail,12.5%,,SOFR,7%,,,,54644,54644,54644,,54644,,,,,,GAIN,2024-02-06
+Dema/Mai Holdings,co_44cc0ff5b3a9,Preferred Equity,Consumer & Retail,,,,,,,,,21000,26102,,21000,,,,21000,,GAIN,2024-02-06
+Horizon Facilities Services,co_667df76be35e,Preferred Equity,Consumer & Retail,,,,,,,,,0,5382,,0,,,,10080,,GAIN,2024-02-06
+Mason West,co_7f9303c3d8e3,Preferred Equity,Consumer & Retail,,,,,,,,,11206,20146,,11206,,,,11206,,GAIN,2024-02-06
+Educators Resource,co_c0943f7e8261,Preferred Equity,Consumer & Retail,,,,,,,,,8560,30237,,8560,,,,8560,,GAIN,2024-02-06
+Brunswick Bowling Products,co_a8e66817967d,Preferred Equity,Consumer & Retail,,,,,,,,,6653,43599,,6653,,,,6653,,GAIN,2024-02-06
+Ginsey Home Solutions,co_68239dae8f8a,Preferred Equity,Consumer & Retail,,,,,,,,,9583,0,,9583,,,,19280,,GAIN,2024-02-06
+Nocturne Luxury Villas,co_d703926341bd,Preferred Equity,Consumer & Retail,,,,,,,,,6600,15457,,6600,,,,6600,,GAIN,2024-02-06
+Schylling,co_1637decf7bb6,Preferred Equity,Consumer & Retail,,,,,,,,,4000,10375,,4000,,,,4000,,GAIN,2024-02-06
+The E3 Company,co_0d41dfa66f36,Preferred Equity,Industrials,,,,,,,,,11233,11233,,11233,,,,11233,,GAIN,2024-02-06
+Home Concepts Acquisition,co_d481848bce83,Preferred Equity,Consumer & Retail,,,,,,,,,3275,1710,,3275,,,,3275000,,GAIN,2024-02-06
+Galaxy Technologies Holdings,co_b903cc7063a4,Common Equity,Consumer & Retail,,,,,,,,,11513,58,,11513,,,,16957,fair_value_suspicious_vs_size,GAIN,2024-02-06
+Diligent Delivery Systems – Common Stock Warrants,co_ef46c437f0ac,Other,,,,,,,,,,500,500,,500,,,,,,GAIN,2024-02-06
+Phoenix Door Systems,co_21ff24b31c8a,Common Equity,Industrials,,,,,,,,,1830,0,,1830,,,,4221,,GAIN,2024-02-06
+Ginsey Home Solutions,co_68239dae8f8a,Common Equity,Consumer & Retail,,,,,,,,,8,0,,8,,,,63747,,GAIN,2024-02-06
+SFEG Holdings,co_716c8b60bd56,Common Equity,Consumer & Retail,,,,,,,,,30746,37649,,30746,,,,18721,,GAIN,2024-02-06
+Funko Acquisition Holdings,co_50a378cf9dce,Common Equity,,,,,,,,,,21,22,,21,,,,4239,,GAIN,2024-02-06
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,First Lien,Consumer & Retail,16.4%,,SOFR,11%,,,,22000,22000,22000,,22000,,,,,,GAIN,2024-02-06
+J.R. Hobbs Co. - Atlanta LLC,co_4f47f3e2dd7c,First Lien,Consumer & Retail,11.4%,,SOFR,6%,,,,5000,5000,2670,,5000,,,,,,GAIN,2024-02-06
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,11.4%,,SOFR,6%,,,,16500,16500,8810,,16500,,,,,,GAIN,2024-02-06
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,15.6%,,SOFR,10.3%,,,,26000,26000,13882,,26000,,,,,,GAIN,2024-02-06
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,11.4%,,SOFR,6%,,,,2438,2438,1301,,2438,,,,,,GAIN,2024-02-06
+The Maids International,co_c3f922f64484,First Lien,Consumer & Retail,15.9%,,SOFR,10.5%,,,,28560,28560,28560,,28560,,,,,,GAIN,2024-02-06
+Old World Christmas,co_c26a82775028,First Lien,Consumer & Retail,14.9%,,SOFR,9.5%,,,,43000,43000,43000,,43000,,,,,,GAIN,2024-02-06
+Utah Pacific Bridge & Steel Ltd.,co_d7c00c5f6287,First Lien,Consumer & Retail,15.4%,,SOFR,10%,,,,18250,18250,18250,,18250,,,,,,GAIN,2024-02-06
+B+T Group Acquisition Inc.,co_e1310f2592d0,First Lien,Media & Entertainment,7.4%,,SOFR,2%,,,,2800,2800,2800,,2800,,,,,,GAIN,2024-02-06
+B+T Group Acquisition,co_e1310f2592d0,First Lien,Consumer & Retail,7.4%,,SOFR,2%,,,,14000,14000,6081,,14000,,,,,,GAIN,2024-02-06
+PSI Molded Plastics,co_b9958539c8ca,First Lien,Consumer & Retail,10.9%,,SOFR,5.5%,,,,26618,26618,19256,,26618,,,,,,GAIN,2024-02-06
+Nth Degree,co_d6beb49cd053,First Lien,,13.9%,,SOFR,8.5%,,,,25000,25000,24884,,25000,,,,,,GAIN,2024-02-06
+PSI Molded Plastics,co_b9958539c8ca,Preferred Equity,Consumer & Retail,,,,,,,,,19730,0,,19730,,,,158598,,GAIN,2024-02-06
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,Preferred Equity,Consumer & Retail,,,,,,,,,6749,1855,,6749,,,,67490,,GAIN,2024-02-06
+J.R. Hobbs Co. – Atlanta,co_45ddd497035e,Preferred Equity,Consumer & Retail,,,,,,,,,10920,0,,10920,,,,10920,,GAIN,2024-02-06
+The Maids International,co_c3f922f64484,Preferred Equity,Consumer & Retail,,,,,,,,,6640,6392,,6640,,,,6640,,GAIN,2024-02-06
+Old World Christmas,co_c26a82775028,Preferred Equity,Consumer & Retail,,,,,,,,,0,32595,,0,,,,6180,,GAIN,2024-02-06
+Utah Pacific Bridge & Steel,co_d7c00c5f6287,Preferred Equity,Consumer & Retail,,,,,,,,,6000,9581,,6000,,,,6000,,GAIN,2024-02-06
+B+T Group Acquisition,co_e1310f2592d0,Preferred Equity,Consumer & Retail,,,,,,,,,4722,0,,4722,,,,14304,,GAIN,2024-02-06
+Nth Degree Investment Group,co_97986e79a345,Common Equity,Consumer & Retail,,,,,,,,,6219,36309,,6219,,,,17216976,,GAIN,2024-02-06
+B+T Group Acquisition,co_e1310f2592d0,Common Equity,Consumer & Retail,,,,,,,,,0,0,,0,,,,,,GAIN,2024-02-06
+Edge Adhesives Holdings,co_1a089392d0f6,First Lien,Chemicals & Materials,10.9%,,SOFR,5.5%,,,,9210,9210,4244,,9210,,,,,,GAIN,2024-02-06
+The Mountain Corp.,co_0ac982e6a4b0,First Lien,Consumer & Retail,10.4%,,SOFR,5%,,,,4550,4550,0,,4550,,,,,,GAIN,2024-02-06
+The Mountain Corp.,co_0ac982e6a4b0,First Lien,Consumer & Retail,9.4%,,SOFR,4%,,,,3200,3200,0,,3200,,,,,,GAIN,2024-02-06
+Edge Adhesives Holdings,co_1a089392d0f6,Preferred Equity,Chemicals & Materials,,,,,,,,,8199,0,,8199,,,,8199,,GAIN,2024-02-06
+The Mountain Corp.,co_0ac982e6a4b0,Other Equity,Consumer & Retail,,,,,,,,,6899,0,,6899,,,,6899,,GAIN,2024-02-06
+The Mountain Corp.,co_0ac982e6a4b0,Other Equity,Consumer & Retail,,,,,,,,,1,0,,1,,,,751,,GAIN,2024-02-06
+Dema/Mai Holdings,co_44cc0ff5b3a9,First Lien,Industrials,16.3%,,SOFR,11%,,,,38250,38250,38250,,38250,,,,,,GAIN,2024-05-08
+Phoenix Door Systems Inc.,co_21ff24b31c8a,First Lien,Industrials,12.3%,,SOFR,7%,,,,2750,2750,2750,,2750,,,,,,GAIN,2024-05-08
+Phoenix Door Systems,co_21ff24b31c8a,First Lien,Industrials,16.3%,,SOFR,11%,,,,3200,3200,2817,,3200,,,,,,GAIN,2024-05-08
+Horizon Facilities Services,co_667df76be35e,First Lien,Business Services,12.8%,,SOFR,7.5%,,,,57700,57700,57700,,57700,,,,,,GAIN,2024-05-08
+Mason West,co_7f9303c3d8e3,First Lien,Industrials,15.3%,,SOFR,10%,,,,25250,25250,25250,,25250,,,,,,GAIN,2024-05-08
+Educators Resource,co_c0943f7e8261,First Lien,Industrials,15.8%,,SOFR,10.5%,,,,20000,20000,20000,,20000,,,,,,GAIN,2024-05-08
+Brunswick Bowling Products,co_a8e66817967d,First Lien,Industrials,15.3%,,SOFR,10%,,,,17700,17700,17700,,17700,,,,,,GAIN,2024-05-08
+Brunswick Bowling Products,co_a8e66817967d,First Lien,Industrials,15.3%,,SOFR,10%,,,,6850,6850,6850,,6850,,,,,,GAIN,2024-05-08
+Ginsey Home Solutions,co_68239dae8f8a,First Lien,Industrials,15.3%,,SOFR,10%,,,,12200,12200,12200,,12200,,,,,,GAIN,2024-05-08
+Nocturne Villa Rentals Inc.,co_3f4d27a7959f,First Lien,,13.3%,,SOFR,8%,,,,4000,4000,4000,,4000,,,,,,GAIN,2024-05-08
+Nocturne Villa Rentals,co_3f4d27a7959f,First Lien,,14.5%,,SOFR,10.5%,,,,61100,61100,61100,,61100,,,,,,GAIN,2024-05-08
+Schylling,co_1637decf7bb6,First Lien,Industrials,16.3%,,SOFR,11%,,,,27981,27981,27981,,27981,,,,,,GAIN,2024-05-08
+The E3 Company LLC,co_0d41dfa66f36,First Lien,Industrials,10.8%,,SOFR,5.5%,,,,1000,1000,1000,,1000,,,,,,GAIN,2024-05-08
+The E3 Company,co_0d41dfa66f36,First Lien,Industrials,14.3%,,SOFR,9%,,,,33750,33750,33750,,33750,,,,,,GAIN,2024-05-08
+Home Concepts Acquisition Inc.,co_d481848bce83,First Lien,Industrials,11.3%,,SOFR,6%,,,,1000,1000,1000,,1000,,,,,,GAIN,2024-05-08
+Home Concepts Acquisition,co_d481848bce83,First Lien,Industrials,14.3%,,SOFR,9%,,,,12000,12000,12000,,12000,,,,,,GAIN,2024-05-08
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,Industrials,9.4%,,SOFR,4.1%,,,,6900,6900,6900,,6900,,,,,,GAIN,2024-05-08
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,Industrials,12.3%,,SOFR,7%,,,,18796,18796,18796,,18796,,,,,,GAIN,2024-05-08
+Diligent Delivery Systems – Term Debt,co_2f1d70b8624e,First Lien,,14.3%,,SOFR,9%,,,,13000,13000,13000,,13000,,,,,,GAIN,2024-05-08
+SFEG Holdings,co_716c8b60bd56,First Lien,Consumer & Retail,12.5%,,SOFR,7%,,,,54644,54644,54644,,54644,,,,,,GAIN,2024-05-08
+Dema/Mai Holdings,co_44cc0ff5b3a9,Preferred Equity,Industrials,,,,,,,,,21000,22181,,21000,,,,21000,,GAIN,2024-05-08
+Horizon Facilities Services,co_667df76be35e,Preferred Equity,Business Services,,,,,,,,,0,0,,0,,,,10080,,GAIN,2024-05-08
+Mason West,co_7f9303c3d8e3,Preferred Equity,Industrials,,,,,,,,,11206,19759,,11206,,,,11206,,GAIN,2024-05-08
+Educators Resource,co_c0943f7e8261,Preferred Equity,Industrials,,,,,,,,,8560,29638,,8560,,,,8560,,GAIN,2024-05-08
+Brunswick Bowling Products,co_a8e66817967d,Preferred Equity,Industrials,,,,,,,,,6653,48759,,6653,,,,6653,,GAIN,2024-05-08
+Ginsey Home Solutions,co_68239dae8f8a,Preferred Equity,Industrials,,,,,,,,,9583,891,,9583,,,,19280,,GAIN,2024-05-08
+Nocturne Villa Rentals,co_3f4d27a7959f,Preferred Equity,,,,,,,,,,6600,12266,,6600,,,,6600,,GAIN,2024-05-08
+Schylling,co_1637decf7bb6,Preferred Equity,Industrials,,,,,,,,,4000,11369,,4000,,,,4000,,GAIN,2024-05-08
+The E3 Company,co_0d41dfa66f36,Preferred Equity,Industrials,,,,,,,,,11233,16421,,11233,,,,11233,,GAIN,2024-05-08
+Home Concepts Acquisition,co_d481848bce83,Preferred Equity,Industrials,,,,,,,,,3275,1238,,3275,,,,3275000,,GAIN,2024-05-08
+Galaxy Technologies Holdings,co_b903cc7063a4,Common Equity,Industrials,,,,,,,,,11513,3368,,11513,,,,16957,,GAIN,2024-05-08
+Diligent Delivery Systems – Common Stock Warrants,co_ef46c437f0ac,Other,,,,,,,,,,500,500,,500,,,,,,GAIN,2024-05-08
+Phoenix Door Systems,co_21ff24b31c8a,Common Equity,Industrials,,,,,,,,,1830,0,,1830,,,,4221,,GAIN,2024-05-08
+Ginsey Home Solutions,co_68239dae8f8a,Common Equity,Industrials,,,,,,,,,8,0,,8,,,,63747,,GAIN,2024-05-08
+SFEG Holdings,co_716c8b60bd56,Common Equity,Consumer & Retail,,,,,,,,,30746,38137,,30746,,,,18721,,GAIN,2024-05-08
+Funko Acquisition Holdings,co_50a378cf9dce,Common Equity,,,,,,,,,,21,18,,21,,,,4239,,GAIN,2024-05-08
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,First Lien,Business Services,16.3%,,SOFR,11%,,,,22000,22000,22000,,22000,,,,,,GAIN,2024-05-08
+J.R. Hobbs Co. - Atlanta LLC,co_4f47f3e2dd7c,First Lien,Consumer & Retail,11.3%,,SOFR,6%,,,,5000,5000,2682,,5000,,,,,,GAIN,2024-05-08
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,11.3%,,SOFR,6%,,,,16500,16500,8852,,16500,,,,,,GAIN,2024-05-08
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,15.6%,,SOFR,10.3%,,,,26000,26000,13949,,26000,,,,,,GAIN,2024-05-08
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,11.3%,,SOFR,6%,,,,2438,2438,1308,,2438,,,,,,GAIN,2024-05-08
+The Maids International,co_c3f922f64484,First Lien,Industrials,15.8%,,SOFR,10.5%,,,,28560,28560,28560,,28560,,,,,,GAIN,2024-05-08
+Old World Christmas,co_c26a82775028,First Lien,Industrials,14.8%,,SOFR,9.5%,,,,43000,43000,43000,,43000,,,,,,GAIN,2024-05-08
+Utah Pacific Bridge & Steel,co_d7c00c5f6287,First Lien,Industrials,15.3%,,SOFR,10%,,,,18250,18250,18250,,18250,,,,,,GAIN,2024-05-08
+B+T Group Acquisition Inc.,co_e1310f2592d0,First Lien,Media & Entertainment,7.3%,,SOFR,2%,,,,3080,3080,3080,,3080,,,,,,GAIN,2024-05-08
+B+T Group Acquisition Inc.,co_e1310f2592d0,First Lien,Media & Entertainment,7.3%,,SOFR,2%,,,,656,656,656,,656,,,,,,GAIN,2024-05-08
+B+T Group Acquisition,co_e1310f2592d0,First Lien,Media & Entertainment,7.3%,,,,,,,14000,14000,5266,,14000,,,,,,GAIN,2024-05-08
+PSI Molded Plastics,co_b9958539c8ca,First Lien,Chemicals & Materials,10.8%,,SOFR,5.5%,,,,26618,26618,20363,,26618,,,,,,GAIN,2024-05-08
+Nth Degree,co_d6beb49cd053,First Lien,,13.8%,,SOFR,8.5%,,,,25000,25000,25000,,25000,,,,,,GAIN,2024-05-08
+PSI Molded Plastics,co_b9958539c8ca,Preferred Equity,Chemicals & Materials,,,,,,,,,19730,0,,19730,,,,158598,,GAIN,2024-05-08
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,Preferred Equity,Business Services,,,,,,,,,6749,2607,,6749,,,,67490,,GAIN,2024-05-08
+J.R. Hobbs Co. – Atlanta,co_45ddd497035e,Preferred Equity,Consumer & Retail,,,,,,,,,10920,0,,10920,,,,10920,,GAIN,2024-05-08
+The Maids International,co_c3f922f64484,Preferred Equity,Industrials,,,,,,,,,6640,5426,,6640,,,,6640,,GAIN,2024-05-08
+Old World Christmas,co_c26a82775028,Preferred Equity,Industrials,,,,,,,,,0,30638,,0,,,,6180,,GAIN,2024-05-08
+Utah Pacific Bridge & Steel,co_d7c00c5f6287,Preferred Equity,Industrials,,,,,,,,,6000,12287,,6000,,,,6000,,GAIN,2024-05-08
+B+T Group Acquisition,co_e1310f2592d0,Preferred Equity,Media & Entertainment,,,,,,,,,4722,0,,4722,,,,14304,,GAIN,2024-05-08
+Nth Degree Investment Group,co_97986e79a345,Common Equity,Financial Services,,,,,,,,,6219,51442,,6219,,,,17216976,,GAIN,2024-05-08
+B+T Group Acquisition,co_e1310f2592d0,Common Equity,Media & Entertainment,,,,,,,,,0,0,,0,,,,,,GAIN,2024-05-08
+Edge Adhesives Holdings,co_1a089392d0f6,First Lien,Chemicals & Materials,10.8%,,SOFR,5.5%,,,,9210,9210,2905,,9210,,,,,,GAIN,2024-05-08
+Edge Adhesives Holdings,co_1a089392d0f6,Preferred Equity,Chemicals & Materials,,,,,,,,,8199,0,,8199,,,,8199,,GAIN,2024-05-08
+Dema/Mai Holdings,co_44cc0ff5b3a9,First Lien,Industrials,16.3%,,SOFR,11%,,,,38250,38250,38250,,38250,,,,,,GAIN,2024-08-05
+Phoenix Door Systems Inc.,co_21ff24b31c8a,First Lien,Industrials,12.3%,,SOFR,7%,,,,2750,2750,2750,,2750,,,,,,GAIN,2024-08-05
+Phoenix Door Systems,co_21ff24b31c8a,First Lien,Industrials,16.3%,,SOFR,11%,,,,3200,3200,1138,,3200,,,,,,GAIN,2024-08-05
+Horizon Facilities Services,co_667df76be35e,First Lien,Industrials,12.8%,,SOFR,7.5%,,,,57700,57700,51289,,57700,,,,,,GAIN,2024-08-05
+Mason West,co_7f9303c3d8e3,First Lien,Industrials,15.3%,,SOFR,10%,,,,25250,25250,25250,,25250,,,,,,GAIN,2024-08-05
+Educators Resource,co_c0943f7e8261,First Lien,Industrials,15.8%,,SOFR,10.5%,,,,20000,20000,20000,,20000,,,,,,GAIN,2024-08-05
+Brunswick Bowling Products,co_a8e66817967d,First Lien,Industrials,15.3%,,SOFR,10%,,,,17700,17700,17700,,17700,,,,,,GAIN,2024-08-05
+Brunswick Bowling Products,co_a8e66817967d,First Lien,Industrials,15.3%,,SOFR,10%,,,,6850,6850,6850,,6850,,,,,,GAIN,2024-08-05
+Ginsey Home Solutions,co_68239dae8f8a,First Lien,Industrials,15.3%,,SOFR,10%,,,,12200,12200,12200,,12200,,,,,,GAIN,2024-08-05
+Nocturne Luxury Villas Inc.,co_d703926341bd,First Lien,Consumer & Retail,13.3%,,SOFR,8%,,,,2000,2000,2000,,2000,,,,,,GAIN,2024-08-05
+Nocturne Luxury Villas,co_d703926341bd,First Lien,Industrials,14.5%,,SOFR,10.5%,,,,61100,61100,61100,,61100,,,,,,GAIN,2024-08-05
+Schylling,co_1637decf7bb6,First Lien,Industrials,16.3%,,SOFR,11%,,,,27981,27981,27981,,27981,,,,,,GAIN,2024-08-05
+The E3 Company LLC,co_0d41dfa66f36,First Lien,Industrials,10.8%,,SOFR,5.5%,,,,0,0,0,,0,,,,,,GAIN,2024-08-05
+The E3 Company,co_0d41dfa66f36,First Lien,Industrials,14.3%,,SOFR,9%,,,,33750,33750,33750,,33750,,,,,,GAIN,2024-08-05
+Home Concepts Acquisition Inc.,co_d481848bce83,First Lien,Industrials,11.3%,,SOFR,6%,,,,1500,1500,1500,,1500,,,,,,GAIN,2024-08-05
+Home Concepts Acquisition,co_d481848bce83,First Lien,Industrials,14.3%,,SOFR,9%,,,,12000,12000,12000,,12000,,,,,,GAIN,2024-08-05
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,Industrials,9.4%,,SOFR,4.1%,,,,6900,6900,6900,,6900,,,,,,GAIN,2024-08-05
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,Industrials,12.3%,,SOFR,7%,,,,18796,18796,18796,,18796,,,,,,GAIN,2024-08-05
+Diligent Delivery Systems – Term Debt,co_2f1d70b8624e,First Lien,,14.3%,,SOFR,9%,,,,13000,13000,13000,,13000,,,,,,GAIN,2024-08-05
+SFEG Holdings,co_716c8b60bd56,First Lien,Industrials,12.5%,,SOFR,7%,,,,54644,54644,54644,,54644,,,,,,GAIN,2024-08-05
+Dema/Mai Holdings,co_44cc0ff5b3a9,Preferred Equity,Industrials,,,,,,,,,21000,23254,,21000,,,,21000,,GAIN,2024-08-05
+Horizon Facilities Services,co_667df76be35e,Preferred Equity,Industrials,,,,,,,,,0,0,,0,,,,10080,,GAIN,2024-08-05
+Mason West,co_7f9303c3d8e3,Preferred Equity,Industrials,,,,,,,,,11206,10558,,11206,,,,11206,,GAIN,2024-08-05
+Educators Resource,co_c0943f7e8261,Preferred Equity,Industrials,,,,,,,,,8560,29767,,8560,,,,8560,,GAIN,2024-08-05
+Brunswick Bowling Products,co_a8e66817967d,Preferred Equity,Industrials,,,,,,,,,6653,48914,,6653,,,,6653,,GAIN,2024-08-05
+Ginsey Home Solutions,co_68239dae8f8a,Preferred Equity,Industrials,,,,,,,,,9583,4367,,9583,,,,19280,,GAIN,2024-08-05
+Nocturne Luxury Villas,co_d703926341bd,Preferred Equity,Industrials,,,,,,,,,6600,10546,,6600,,,,6600,,GAIN,2024-08-05
+Schylling,co_1637decf7bb6,Preferred Equity,Industrials,,,,,,,,,4000,11833,,4000,,,,4000,,GAIN,2024-08-05
+The E3 Company,co_0d41dfa66f36,Preferred Equity,Industrials,,,,,,,,,11233,19068,,11233,,,,11233,,GAIN,2024-08-05
+Home Concepts Acquisition,co_d481848bce83,Preferred Equity,Industrials,,,,,,,,,3275,617,,3275,,,,3275000,,GAIN,2024-08-05
+Galaxy Technologies Holdings,co_b903cc7063a4,Common Equity,Industrials,,,,,,,,,11513,3371,,11513,,,,16957,,GAIN,2024-08-05
+Diligent Delivery Systems – Common Stock Warrants,co_ef46c437f0ac,Other,,,,,,,,,,500,0,,500,,,,,,GAIN,2024-08-05
+Phoenix Door Systems,co_21ff24b31c8a,Common Equity,Industrials,,,,,,,,,1830,0,,1830,,,,4221,,GAIN,2024-08-05
+Ginsey Home Solutions,co_68239dae8f8a,Common Equity,Industrials,,,,,,,,,8,0,,8,,,,63747,,GAIN,2024-08-05
+SFEG Holdings,co_716c8b60bd56,Common Equity,Industrials,,,,,,,,,30746,37883,,30746,,,,18721,,GAIN,2024-08-05
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,First Lien,Industrials,16.3%,,SOFR,11%,,,,22000,22000,22000,,22000,,,,,,GAIN,2024-08-05
+J.R. Hobbs Co. - Atlanta LLC,co_4f47f3e2dd7c,First Lien,Consumer & Retail,11.3%,,SOFR,6%,,,,5000,5000,2702,,5000,,,,,,GAIN,2024-08-05
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,11.3%,,SOFR,6%,,,,16500,16500,8918,,16500,,,,,,GAIN,2024-08-05
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,15.6%,,SOFR,10.3%,,,,26000,26000,14053,,26000,,,,,,GAIN,2024-08-05
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,11.3%,,SOFR,6%,,,,2438,2438,1319,,2438,,,,,,GAIN,2024-08-05
+The Maids International,co_c3f922f64484,First Lien,Industrials,15.8%,,SOFR,10.5%,,,,28560,28560,28560,,28560,,,,,,GAIN,2024-08-05
+Old World Christmas,co_c26a82775028,First Lien,Industrials,14.8%,,SOFR,9.5%,,,,43000,43000,43000,,43000,,,,,,GAIN,2024-08-05
+Utah Pacific Bridge & Steel Ltd.,co_d7c00c5f6287,First Lien,Industrials,15.3%,,SOFR,10%,,,,18250,18250,18250,,18250,,,,,,GAIN,2024-08-05
+B+T Group Acquisition Inc.,co_e1310f2592d0,First Lien,Media & Entertainment,7.3%,,SOFR,2%,,,,3080,3080,3080,,3080,,,,,,GAIN,2024-08-05
+B+T Group Acquisition Inc.,co_e1310f2592d0,First Lien,Media & Entertainment,7.3%,,SOFR,2%,,,,753,753,753,,753,,,,,,GAIN,2024-08-05
+B+T Group Acquisition,co_e1310f2592d0,First Lien,Industrials,7.3%,,SOFR,2%,,,,14000,14000,5364,,14000,,,,,,GAIN,2024-08-05
+PSI Molded Plastics,co_b9958539c8ca,First Lien,Industrials,10.8%,,SOFR,5.5%,,,,26618,26618,19487,,26618,,,,,,GAIN,2024-08-05
+Nth Degree,co_d6beb49cd053,First Lien,,13.8%,,SOFR,8.5%,,,,25000,25000,25000,,25000,,,,,,GAIN,2024-08-05
+PSI Molded Plastics,co_b9958539c8ca,Preferred Equity,Industrials,,,,,,,,,19730,0,,19730,,,,158598,,GAIN,2024-08-05
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,Preferred Equity,Industrials,,,,,,,,,6749,0,,6749,,,,67490,,GAIN,2024-08-05
+J.R. Hobbs Co. – Atlanta,co_45ddd497035e,Preferred Equity,Consumer & Retail,,,,,,,,,10920,0,,10920,,,,10920,,GAIN,2024-08-05
+The Maids International,co_c3f922f64484,Preferred Equity,Industrials,,,,,,,,,6640,5243,,6640,,,,6640,,GAIN,2024-08-05
+Old World Christmas,co_c26a82775028,Preferred Equity,Industrials,,,,,,,,,0,32170,,0,,,,6180,,GAIN,2024-08-05
+Utah Pacific Bridge & Steel,co_d7c00c5f6287,Preferred Equity,Industrials,,,,,,,,,6000,16254,,6000,,,,6000,,GAIN,2024-08-05
+B+T Group Acquisition,co_e1310f2592d0,Preferred Equity,Industrials,,,,,,,,,4722,0,,4722,,,,14304,,GAIN,2024-08-05
+Nth Degree Investment Group,co_97986e79a345,Common Equity,Industrials,,,,,,,,,6219,44247,,6219,,,,17216976,,GAIN,2024-08-05
+B+T Group Acquisition,co_e1310f2592d0,Common Equity,Industrials,,,,,,,,,0,0,,0,,,,,,GAIN,2024-08-05
+Edge Adhesives Holdings,co_1a089392d0f6,First Lien,Industrials,10.8%,,SOFR,5.5%,,,,9210,9210,1462,,9210,,,,,,GAIN,2024-08-05
+Edge Adhesives Holdings,co_1a089392d0f6,Preferred Equity,Industrials,,,,,,,,,8199,0,,8199,,,,8199,,GAIN,2024-08-05
+Dema/Mai Holdings,co_44cc0ff5b3a9,First Lien,Industrials,15.8%,,SOFR,11%,,,,38250,38250,38250,,38250,,,,,,GAIN,2024-11-07
+Phoenix Door Systems Inc.,co_21ff24b31c8a,First Lien,Industrials,11.8%,,SOFR,7%,,,,2750,2750,2750,,2750,,,,,,GAIN,2024-11-07
+Phoenix Door Systems,co_21ff24b31c8a,First Lien,Industrials,15.8%,,SOFR,11%,,,,3200,3200,2234,,3200,,,,,,GAIN,2024-11-07
+Horizon Facilities Services,co_667df76be35e,First Lien,Industrials,12.3%,,SOFR,7.5%,,,,57700,57700,39536,,57700,,,,,,GAIN,2024-11-07
+Mason West,co_7f9303c3d8e3,First Lien,Industrials,14.8%,,SOFR,10%,,,,25250,25250,25250,,25250,,,,,,GAIN,2024-11-07
+Educators Resource,co_c0943f7e8261,First Lien,Industrials,15.3%,,SOFR,10.5%,,,,20000,20000,20000,,20000,,,,,,GAIN,2024-11-07
+Brunswick Bowling Products,co_a8e66817967d,First Lien,Industrials,14.8%,,SOFR,10%,,,,17700,17700,17700,,17700,,,,,,GAIN,2024-11-07
+Brunswick Bowling Products,co_a8e66817967d,First Lien,Industrials,14.8%,,SOFR,10%,,,,6850,6850,6850,,6850,,,,,,GAIN,2024-11-07
+Ginsey Home Solutions,co_68239dae8f8a,First Lien,Industrials,14.8%,,SOFR,10%,,,,12200,12200,12200,,12200,,,,,,GAIN,2024-11-07
+Nocturne Luxury Villas Inc.,co_d703926341bd,First Lien,Consumer & Retail,12.8%,,SOFR,8%,,,,2000,2000,2000,,2000,,,,,,GAIN,2024-11-07
+Nocturne Luxury Villas,co_d703926341bd,First Lien,Industrials,14.5%,,SOFR,10.5%,,,,79600,79600,79600,,79600,,,,,,GAIN,2024-11-07
+Schylling,co_1637decf7bb6,First Lien,Industrials,15.8%,,SOFR,11%,,,,27981,27981,27981,,27981,,,,,,GAIN,2024-11-07
+The E3 Company LLC,co_0d41dfa66f36,First Lien,Industrials,10.3%,,SOFR,5.5%,,,,1000,1000,1000,,1000,,,,,,GAIN,2024-11-07
+The E3 Company,co_0d41dfa66f36,First Lien,Industrials,13.8%,,SOFR,9%,,,,33750,33750,33750,,33750,,,,,,GAIN,2024-11-07
+Home Concepts Acquisition Inc.,co_d481848bce83,First Lien,Industrials,10.8%,,SOFR,6%,,,,1500,1500,1500,,1500,,,,,,GAIN,2024-11-07
+Home Concepts Acquisition,co_d481848bce83,First Lien,Industrials,13.8%,,SOFR,9%,,,,12000,12000,12000,,12000,,,,,,GAIN,2024-11-07
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,Industrials,8.9%,,SOFR,4.1%,,,,6900,6900,6900,,6900,,,,,,GAIN,2024-11-07
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,Industrials,11.8%,,SOFR,7%,,,,18796,18796,18796,,18796,,,,,,GAIN,2024-11-07
+Diligent Delivery Systems – Term Debt,co_2f1d70b8624e,First Lien,,13.8%,,SOFR,9%,,,,13000,13000,12408,,13000,,,,,,GAIN,2024-11-07
+SFEG Holdings,co_716c8b60bd56,First Lien,Industrials,12.5%,,SOFR,7%,,,,54644,54644,54644,,54644,,,,,,GAIN,2024-11-07
+Dema/Mai Holdings,co_44cc0ff5b3a9,Preferred Equity,Industrials,,,,,,,,,21000,23499,,21000,,,,21000,,GAIN,2024-11-07
+Horizon Facilities Services,co_667df76be35e,Preferred Equity,Industrials,,,,,,,,,0,0,,0,,,,10080,,GAIN,2024-11-07
+Mason West,co_7f9303c3d8e3,Preferred Equity,Industrials,,,,,,,,,11206,11145,,11206,,,,11206,,GAIN,2024-11-07
+Educators Resource,co_c0943f7e8261,Preferred Equity,Industrials,,,,,,,,,8560,30140,,8560,,,,8560,,GAIN,2024-11-07
+Brunswick Bowling Products,co_a8e66817967d,Preferred Equity,Industrials,,,,,,,,,6653,46594,,6653,,,,6653,,GAIN,2024-11-07
+Ginsey Home Solutions,co_68239dae8f8a,Preferred Equity,Industrials,,,,,,,,,9583,3277,,9583,,,,19280,,GAIN,2024-11-07
+Nocturne Luxury Villas,co_d703926341bd,Preferred Equity,Industrials,,,,,,,,,6600,17252,,6600,,,,6600,,GAIN,2024-11-07
+Schylling,co_1637decf7bb6,Preferred Equity,Industrials,,,,,,,,,4000,14400,,4000,,,,4000,,GAIN,2024-11-07
+The E3 Company,co_0d41dfa66f36,Preferred Equity,Industrials,,,,,,,,,11233,21629,,11233,,,,11233,,GAIN,2024-11-07
+Home Concepts Acquisition,co_d481848bce83,Preferred Equity,Industrials,,,,,,,,,3275,0,,3275,,,,3275000,,GAIN,2024-11-07
+Galaxy Technologies Holdings,co_b903cc7063a4,Common Equity,Industrials,,,,,,,,,11513,6125,,11513,,,,16957,,GAIN,2024-11-07
+Diligent Delivery Systems – Common Stock Warrants,co_ef46c437f0ac,Other,,,,,,,,,,500,0,,500,,,,,,GAIN,2024-11-07
+Phoenix Door Systems,co_21ff24b31c8a,Common Equity,Industrials,,,,,,,,,1830,0,,1830,,,,4221,,GAIN,2024-11-07
+Ginsey Home Solutions,co_68239dae8f8a,Common Equity,Industrials,,,,,,,,,8,0,,8,,,,63747,,GAIN,2024-11-07
+SFEG Holdings,co_716c8b60bd56,Common Equity,Industrials,,,,,,,,,30746,37830,,30746,,,,18721,,GAIN,2024-11-07
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,First Lien,Industrials,15.8%,,SOFR,11%,,,,22000,22000,22000,,22000,,,,,,GAIN,2024-11-07
+J.R. Hobbs Co. - Atlanta LLC,co_4f47f3e2dd7c,First Lien,Consumer & Retail,10.8%,,SOFR,6%,,,,5000,5000,2818,,5000,,,,,,GAIN,2024-11-07
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Industrials,10.8%,,SOFR,6%,,,,16500,16500,9298,,16500,,,,,,GAIN,2024-11-07
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Industrials,15.1%,,SOFR,10.3%,,,,26000,26000,14651,,26000,,,,,,GAIN,2024-11-07
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Industrials,10.8%,,SOFR,6%,,,,2438,2438,1375,,2438,,,,,,GAIN,2024-11-07
+The Maids International,co_c3f922f64484,First Lien,Industrials,15.3%,,SOFR,10.5%,,,,28560,28560,28560,,28560,,,,,,GAIN,2024-11-07
+Old World Christmas,co_c26a82775028,First Lien,Industrials,14.3%,,SOFR,9.5%,,,,43000,43000,43000,,43000,,,,,,GAIN,2024-11-07
+Utah Pacific Bridge & Steel Ltd.,co_d7c00c5f6287,First Lien,Industrials,14.8%,,SOFR,10%,,,,18250,18250,18250,,18250,,,,,,GAIN,2024-11-07
+B+T Group Acquisition Inc.,co_e1310f2592d0,First Lien,Media & Entertainment,7%,,SOFR,2%,,,,3080,3080,3080,,3080,,,,,,GAIN,2024-11-07
+B+T Group Acquisition Inc.,co_e1310f2592d0,First Lien,Media & Entertainment,7%,,SOFR,2%,,,,753,753,753,,753,,,,,,GAIN,2024-11-07
+B+T Group Acquisition,co_e1310f2592d0,First Lien,Industrials,7%,,SOFR,2%,,,,14000,14000,2524,,14000,,,,,,GAIN,2024-11-07
+PSI Molded Plastics,co_b9958539c8ca,First Lien,Industrials,10.3%,,SOFR,5.5%,,,,26618,26618,18596,,26618,,,,,,GAIN,2024-11-07
+PSI Molded Plastics,co_b9958539c8ca,Preferred Equity,Industrials,,,,,,,,,19730,0,,19730,,,,158598,,GAIN,2024-11-07
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,Preferred Equity,Industrials,,,,,,,,,6749,3269,,6749,,,,67490,,GAIN,2024-11-07
+J.R. Hobbs Co. – Atlanta,co_45ddd497035e,Preferred Equity,Industrials,,,,,,,,,10920,0,,10920,,,,10920,,GAIN,2024-11-07
+The Maids International,co_c3f922f64484,Preferred Equity,Industrials,,,,,,,,,6640,6677,,6640,,,,6640,,GAIN,2024-11-07
+Old World Christmas,co_c26a82775028,Preferred Equity,Industrials,,,,,,,,,0,35373,,0,,,,6180,,GAIN,2024-11-07
+Utah Pacific Bridge & Steel,co_d7c00c5f6287,Preferred Equity,Industrials,,,,,,,,,6000,15273,,6000,,,,6000,,GAIN,2024-11-07
+B+T Group Acquisition,co_e1310f2592d0,Preferred Equity,Industrials,,,,,,,,,4722,0,,4722,,,,14304,,GAIN,2024-11-07
+B+T Group Acquisition,co_e1310f2592d0,Common Equity,Industrials,,,,,,,,,0,0,,0,,,,,,GAIN,2024-11-07
+Edge Adhesives Holdings,co_1a089392d0f6,First Lien,Industrials,10.3%,,SOFR,5.5%,,,,9210,9210,570,,9210,,,,,,GAIN,2024-11-07
+Edge Adhesives Holdings,co_1a089392d0f6,Preferred Equity,Industrials,,,,,,,,,8199,0,,8199,,,,8199,,GAIN,2024-11-07
+Ricardo Defense,co_783aa20f713d,First Lien,Aerospace & Defense,13.3%,,SOFR,9%,,,,61305,61305,61305,,61305,,,,,,GAIN,2025-02-12
+Dema/Mai Holdings,co_44cc0ff5b3a9,First Lien,Industrials,15.3%,,SOFR,11%,,,,38250,38250,38250,,38250,,,,,,GAIN,2025-02-12
+Phoenix Door Systems Inc.,co_21ff24b31c8a,First Lien,Industrials,11.3%,,SOFR,7%,,,,2750,2750,2750,,2750,,,,,,GAIN,2025-02-12
+Phoenix Door Systems,co_21ff24b31c8a,First Lien,Industrials,15.3%,,SOFR,11%,,,,3200,3200,2405,,3200,,,,,,GAIN,2025-02-12
+Horizon Facilities Services,co_667df76be35e,First Lien,Industrials,11.8%,,SOFR,7.5%,,,,57700,57700,37812,,57700,,,,,,GAIN,2025-02-12
+Mason West,co_7f9303c3d8e3,First Lien,Industrials,14.3%,,SOFR,10%,,,,25250,25250,25250,,25250,,,,,,GAIN,2025-02-12
+Educators Resource,co_c0943f7e8261,First Lien,Industrials,14.8%,,SOFR,10.5%,,,,20000,20000,20000,,20000,,,,,,GAIN,2025-02-12
+Brunswick Bowling Products,co_a8e66817967d,First Lien,Industrials,14.3%,,SOFR,10%,,,,17700,17700,17700,,17700,,,,,,GAIN,2025-02-12
+Brunswick Bowling Products,co_a8e66817967d,First Lien,Industrials,14.3%,,SOFR,10%,,,,6850,6850,6850,,6850,,,,,,GAIN,2025-02-12
+Ginsey Home Solutions,co_68239dae8f8a,First Lien,Industrials,14.3%,,SOFR,10%,,,,12200,12200,12200,,12200,,,,,,GAIN,2025-02-12
+Nocturne Luxury Villas Inc.,co_d703926341bd,First Lien,Consumer & Retail,12.3%,,SOFR,8%,,,,6000,6000,6000,,6000,,,,,,GAIN,2025-02-12
+Nocturne Luxury Villas,co_d703926341bd,First Lien,Industrials,14.5%,,SOFR,10.5%,,,,79600,79600,79600,,79600,,,,,,GAIN,2025-02-12
+Schylling,co_1637decf7bb6,First Lien,Industrials,15.3%,,SOFR,11%,,,,27981,27981,27981,,27981,,,,,,GAIN,2025-02-12
+The E3 Company LLC,co_0d41dfa66f36,First Lien,Industrials,10%,,SOFR,5.5%,,,,500,500,500,,500,,,,,,GAIN,2025-02-12
+The E3 Company,co_0d41dfa66f36,First Lien,Industrials,13.3%,,SOFR,9%,,,,33750,33750,33750,,33750,,,,,,GAIN,2025-02-12
+Home Concepts Acquisition Inc.,co_d481848bce83,First Lien,Industrials,10.3%,,SOFR,6%,,,,2000,2000,2000,,2000,,,,,,GAIN,2025-02-12
+Home Concepts Acquisition Inc.,co_d481848bce83,First Lien,Industrials,10.3%,,SOFR,6%,,,,400,400,400,,400,,,,,,GAIN,2025-02-12
+Home Concepts Acquisition,co_d481848bce83,First Lien,Industrials,13.3%,,SOFR,9%,,,,12000,12000,12000,,12000,,,,,,GAIN,2025-02-12
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,Industrials,8.4%,,SOFR,4.1%,,,,6900,6900,6900,,6900,,,,,,GAIN,2025-02-12
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,Industrials,11.3%,,SOFR,7%,,,,18796,18796,18796,,18796,,,,,,GAIN,2025-02-12
+Diligent Delivery Systems – Term Debt,co_2f1d70b8624e,First Lien,,13.3%,,SOFR,9%,,,,13000,13000,12514,,13000,,,,,,GAIN,2025-02-12
+SFEG Holdings,co_716c8b60bd56,First Lien,Industrials,12.5%,,SOFR,7%,,,,54644,54644,54644,,54644,,,,,,GAIN,2025-02-12
+Ricardo Defense,co_783aa20f713d,Preferred Equity,Aerospace & Defense,,,,,,,,,17388,17388,,17388,,,,17388,,GAIN,2025-02-12
+Dema/Mai Holdings,co_44cc0ff5b3a9,Preferred Equity,Industrials,,,,,,,,,21000,23453,,21000,,,,21000,,GAIN,2025-02-12
+Horizon Facilities Services,co_667df76be35e,Preferred Equity,Industrials,,,,,,,,,0,0,,0,,,,10080,,GAIN,2025-02-12
+Mason West,co_7f9303c3d8e3,Preferred Equity,Industrials,,,,,,,,,11206,9474,,11206,,,,11206,,GAIN,2025-02-12
+Educators Resource,co_c0943f7e8261,Preferred Equity,Industrials,,,,,,,,,8560,24131,,8560,,,,8560,,GAIN,2025-02-12
+Brunswick Bowling Products,co_a8e66817967d,Preferred Equity,Industrials,,,,,,,,,6653,48081,,6653,,,,6653,,GAIN,2025-02-12
+Ginsey Home Solutions,co_68239dae8f8a,Preferred Equity,Industrials,,,,,,,,,9583,4465,,9583,,,,19280,,GAIN,2025-02-12
+Nocturne Luxury Villas,co_d703926341bd,Preferred Equity,Industrials,,,,,,,,,6600,30934,,6600,,,,6600,,GAIN,2025-02-12
+Schylling,co_1637decf7bb6,Preferred Equity,Industrials,,,,,,,,,4000,19173,,4000,,,,4000,,GAIN,2025-02-12
+The E3 Company,co_0d41dfa66f36,Preferred Equity,Industrials,,,,,,,,,11233,33525,,11233,,,,11233,,GAIN,2025-02-12
+Home Concepts Acquisition,co_d481848bce83,Preferred Equity,Industrials,,,,,,,,,3275,0,,3275,,,,3275000,,GAIN,2025-02-12
+Galaxy Technologies Holdings,co_b903cc7063a4,Common Equity,Industrials,,,,,,,,,11513,4075,,11513,,,,16957,,GAIN,2025-02-12
+Diligent Delivery Systems – Common Stock Warrants,co_ef46c437f0ac,Other,,,,,,,,,,500,0,,500,,,,,,GAIN,2025-02-12
+Phoenix Door Systems,co_21ff24b31c8a,Common Equity,Industrials,,,,,,,,,1830,0,,1830,,,,4221,,GAIN,2025-02-12
+Ginsey Home Solutions,co_68239dae8f8a,Common Equity,Industrials,,,,,,,,,8,0,,8,,,,63747,,GAIN,2025-02-12
+SFEG Holdings,co_716c8b60bd56,Common Equity,Industrials,,,,,,,,,30746,46275,,30746,,,,18721,,GAIN,2025-02-12
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,First Lien,Industrials,15.3%,,SOFR,11%,,,,22000,22000,22000,,22000,,,,,,GAIN,2025-02-12
+J.R. Hobbs Co. - Atlanta LLC,co_4f47f3e2dd7c,First Lien,Consumer & Retail,10.3%,,SOFR,6%,,,,5000,5000,2981,,5000,,,,,,GAIN,2025-02-12
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Industrials,10.3%,,SOFR,6%,,,,16500,16500,9838,,16500,,,,,,GAIN,2025-02-12
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Industrials,14.6%,,SOFR,10.3%,,,,26000,26000,15503,,26000,,,,,,GAIN,2025-02-12
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Industrials,10.3%,,SOFR,6%,,,,2438,2438,1454,,2438,,,,,,GAIN,2025-02-12
+The Maids International,co_c3f922f64484,First Lien,Industrials,14.8%,,SOFR,10.5%,,,,28560,28560,28560,,28560,,,,,,GAIN,2025-02-12
+Nielsen-Kellerman Acquisition Corp.,co_fe97d0a4106f,First Lien,CASH EQUIVALENTS - 0.3 %,10%,,SOFR,5%,,,,1070,1070,1070,,1070,,,,,,GAIN,2025-02-12
+Nielsen-Kellerman Acquisition Corp.,co_fe97d0a4106f,First Lien,CASH EQUIVALENTS - 0.3 %,13.5%,,SOFR,8.5%,,,,48082,48082,48082,,48082,,,,,,GAIN,2025-02-12
+Old World Christmas,co_c26a82775028,First Lien,Industrials,13.8%,,SOFR,9.5%,,,,38000,38000,38000,,38000,,,,,,GAIN,2025-02-12
+Pyrotek Special Effects Inc.,co_e6e35505c493,First Lien,CASH EQUIVALENTS - 0.3 %,10%,,SOFR,5%,,,,3000,3000,3000,,3000,,,,,,GAIN,2025-02-12
+Pyrotek Special Effects,co_e6e35505c493,First Lien,CASH EQUIVALENTS - 0.3 %,13%,,SOFR,8%,,,,17120,17120,17120,,17120,,,,,,GAIN,2025-02-12
+Utah Pacific Bridge & Steel Ltd.,co_d7c00c5f6287,First Lien,Industrials,14.3%,,SOFR,10%,,,,18250,18250,18250,,18250,,,,,,GAIN,2025-02-12
+B+T Group Acquisition Inc.,co_e1310f2592d0,First Lien,Media & Entertainment,7%,,SOFR,2%,,,,3080,3080,3080,,3080,,,,,,GAIN,2025-02-12
+B+T Group Acquisition Inc.,co_e1310f2592d0,First Lien,Media & Entertainment,7%,,SOFR,2%,,,,753,753,753,,753,,,,,,GAIN,2025-02-12
+B+T Group Acquisition,co_e1310f2592d0,First Lien,Industrials,7%,,SOFR,2%,,,,14000,14000,2963,,14000,,,,,,GAIN,2025-02-12
+PSI Molded Plastics,co_b9958539c8ca,First Lien,Industrials,9.8%,,SOFR,5.5%,,,,26618,26618,15889,,26618,,,,,,GAIN,2025-02-12
+PSI Molded Plastics,co_b9958539c8ca,Preferred Equity,Industrials,,,,,,,,,19730,0,,19730,,,,158598,,GAIN,2025-02-12
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,Preferred Equity,Industrials,,,,,,,,,6749,6539,,6749,,,,67490,,GAIN,2025-02-12
+J.R. Hobbs Co. – Atlanta,co_45ddd497035e,Preferred Equity,Industrials,,,,,,,,,10920,0,,10920,,,,10920,,GAIN,2025-02-12
+The Maids International,co_c3f922f64484,Preferred Equity,Industrials,,,,,,,,,6640,7777,,6640,,,,6640,,GAIN,2025-02-12
+Nielsen-Kellerman Acquisition Corp.,co_fe97d0a4106f,Other Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,22169,22169,,22169,,,,22169,,GAIN,2025-02-12
+Old World Christmas,co_c26a82775028,Preferred Equity,Industrials,,,,,,,,,0,36721,,0,,,,6180,,GAIN,2025-02-12
+Pyrotek Special Effects,co_e6e35505c493,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,7060,7060,,7060,,,,7060000,,GAIN,2025-02-12
+Utah Pacific Bridge & Steel,co_d7c00c5f6287,Preferred Equity,Industrials,,,,,,,,,6000,17336,,6000,,,,6000,,GAIN,2025-02-12
+B+T Group Acquisition,co_e1310f2592d0,Preferred Equity,Industrials,,,,,,,,,4722,0,,4722,,,,14304,,GAIN,2025-02-12
+Gladstone Alternative Income Fund.,co_88d773b46f58,Other,,,,,,,,,,5000,5000,,5000,,,,,,GAIN,2025-02-12
+B+T Group Acquisition,co_e1310f2592d0,Common Equity,Industrials,,,,,,,,,0,0,,0,,,,,,GAIN,2025-02-12
+Edge Adhesives Holdings,co_1a089392d0f6,First Lien,Industrials,9.8%,,SOFR,5.5%,,,,9210,9210,504,,9210,,,,,,GAIN,2025-02-12
+Edge Adhesives Holdings,co_1a089392d0f6,Preferred Equity,Industrials,,,,,,,,,8199,0,,8199,,,,8199,,GAIN,2025-02-12
+Ricardo Defense,co_783aa20f713d,First Lien,Aerospace & Defense,13.3%,,SOFR,9%,,,,61305,61305,61305,,61305,,,,,,GAIN,2025-05-13
+Dema/Mai Holdings,co_44cc0ff5b3a9,First Lien,Industrials,15.3%,,SOFR,11%,,,,38250,38250,38250,,38250,,,,,,GAIN,2025-05-13
+Phoenix Door Systems Inc.,co_21ff24b31c8a,First Lien,Industrials,5.7%,,SOFR,1.4%,,,,2950,2950,2950,,2950,,,,,,GAIN,2025-05-13
+Phoenix Door Systems,co_21ff24b31c8a,First Lien,Industrials,7.7%,,SOFR,3.4%,,,,3200,3200,3200,,3200,,,,,,GAIN,2025-05-13
+Horizon Facilities Services,co_667df76be35e,First Lien,Business Services,6%,,SOFR,0.5%,,,,57700,57700,29634,,57700,,,,,,GAIN,2025-05-13
+Mason West,co_7f9303c3d8e3,First Lien,Industrials,14.3%,,SOFR,10%,,,,25250,25250,25250,,25250,,,,,,GAIN,2025-05-13
+Educators Resource,co_c0943f7e8261,First Lien,Industrials,14.8%,,SOFR,10.5%,,,,30000,30000,30000,,30000,,,,,,GAIN,2025-05-13
+Brunswick Bowling Products,co_a8e66817967d,First Lien,Industrials,14.3%,,SOFR,10%,,,,17700,17700,17700,,17700,,,,,,GAIN,2025-05-13
+Brunswick Bowling Products,co_a8e66817967d,First Lien,Industrials,14.3%,,SOFR,10%,,,,6850,6850,6850,,6850,,,,,,GAIN,2025-05-13
+Ginsey Home Solutions,co_68239dae8f8a,First Lien,Industrials,14.3%,,SOFR,10%,,,,12200,12200,12200,,12200,,,,,,GAIN,2025-05-13
+Schylling,co_1637decf7bb6,First Lien,Industrials,15.3%,,SOFR,11%,,,,27981,27981,27981,,27981,,,,,,GAIN,2025-05-13
+The E3 Company,co_0d41dfa66f36,First Lien,Industrials,13.5%,,SOFR,9%,,,,33750,33750,33750,,33750,,,,,,GAIN,2025-05-13
+Home Concepts Acquisition Inc.,co_d481848bce83,First Lien,Industrials,10.3%,,SOFR,6%,,,,2000,2000,2000,,2000,,,,,,GAIN,2025-05-13
+Home Concepts Acquisition Inc.,co_d481848bce83,First Lien,Industrials,10.3%,,SOFR,6%,,,,400,400,400,,400,,,,,,GAIN,2025-05-13
+Home Concepts Acquisition,co_d481848bce83,First Lien,Industrials,13.3%,,SOFR,9%,,,,12000,12000,9281,,12000,,,,,,GAIN,2025-05-13
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,Industrials,8.4%,,SOFR,4.1%,,,,6900,6900,6900,,6900,,,,,,GAIN,2025-05-13
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,Industrials,11.3%,,SOFR,7%,,,,18796,18796,18796,,18796,,,,,,GAIN,2025-05-13
+Diligent Delivery Systems – Term Debt,co_2f1d70b8624e,First Lien,,13.3%,,SOFR,9%,,,,13000,13000,12624,,13000,,,,,,GAIN,2025-05-13
+SFEG Holdings,co_716c8b60bd56,First Lien,Consumer & Retail,12.5%,,SOFR,7%,,,,54644,54644,54644,,54644,,,,,,GAIN,2025-05-13
+Ricardo Defense,co_783aa20f713d,Preferred Equity,Aerospace & Defense,,,,,,,,,17388,17388,,17388,,,,17388,,GAIN,2025-05-13
+Dema/Mai Holdings,co_44cc0ff5b3a9,Preferred Equity,Industrials,,,,,,,,,21000,31070,,21000,,,,21000,,GAIN,2025-05-13
+Horizon Facilities Services,co_667df76be35e,Preferred Equity,Business Services,,,,,,,,,0,0,,0,,,,10080,,GAIN,2025-05-13
+Mason West,co_7f9303c3d8e3,Preferred Equity,Industrials,,,,,,,,,11206,13262,,11206,,,,11206,,GAIN,2025-05-13
+Educators Resource,co_c0943f7e8261,Preferred Equity,Industrials,,,,,,,,,8560,21501,,8560,,,,8560,,GAIN,2025-05-13
+Brunswick Bowling Products,co_a8e66817967d,Preferred Equity,Industrials,,,,,,,,,6653,51877,,6653,,,,6653,,GAIN,2025-05-13
+Ginsey Home Solutions,co_68239dae8f8a,Preferred Equity,Industrials,,,,,,,,,9583,9070,,9583,,,,19280,,GAIN,2025-05-13
+Schylling,co_1637decf7bb6,Preferred Equity,Industrials,,,,,,,,,4000,20599,,4000,,,,4000,,GAIN,2025-05-13
+The E3 Company,co_0d41dfa66f36,Preferred Equity,Industrials,,,,,,,,,11233,35839,,11233,,,,11233,,GAIN,2025-05-13
+Home Concepts Acquisition,co_d481848bce83,Preferred Equity,Industrials,,,,,,,,,3275,0,,3275,,,,3275000,,GAIN,2025-05-13
+Galaxy Technologies Holdings,co_b903cc7063a4,Common Equity,Industrials,,,,,,,,,11513,3480,,11513,,,,16957,,GAIN,2025-05-13
+Diligent Delivery Systems – Common Stock Warrants,co_ef46c437f0ac,Other,,,,,,,,,,500,0,,500,,,,,,GAIN,2025-05-13
+Phoenix Door Systems,co_21ff24b31c8a,Common Equity,Industrials,,,,,,,,,1830,0,,1830,,,,4221,,GAIN,2025-05-13
+Ginsey Home Solutions,co_68239dae8f8a,Common Equity,Industrials,,,,,,,,,8,0,,8,,,,63747,,GAIN,2025-05-13
+SFEG Holdings,co_716c8b60bd56,Common Equity,Consumer & Retail,,,,,,,,,30746,50788,,30746,,,,18721,,GAIN,2025-05-13
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,First Lien,Business Services,15.3%,,SOFR,11%,,,,22000,22000,22000,,22000,,,,,,GAIN,2025-05-13
+J.R. Hobbs Co. - Atlanta LLC,co_4f47f3e2dd7c,First Lien,Consumer & Retail,10.3%,,SOFR,6%,,,,5000,5000,3036,,5000,,,,,,GAIN,2025-05-13
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,10.3%,,SOFR,6%,,,,16500,16500,10019,,16500,,,,,,GAIN,2025-05-13
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,14.6%,,SOFR,10.3%,,,,26000,26000,15788,,26000,,,,,,GAIN,2025-05-13
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,10.3%,,SOFR,6%,,,,2438,2438,1480,,2438,,,,,,GAIN,2025-05-13
+The Maids International,co_c3f922f64484,First Lien,Industrials,14.8%,,SOFR,10.5%,,,,28560,28560,28560,,28560,,,,,,GAIN,2025-05-13
+Nielsen-Kellerman Acquisition Corp.,co_fe97d0a4106f,First Lien,CASH EQUIVALENTS - 0.3 %,10%,,SOFR,5%,,,,1070,1070,1070,,1070,,,,,,GAIN,2025-05-13
+Nielsen-Kellerman Acquisition Corp.,co_fe97d0a4106f,First Lien,CASH EQUIVALENTS - 0.3 %,13.5%,,SOFR,8.5%,,,,48082,48082,48082,,48082,,,,,,GAIN,2025-05-13
+Old World Christmas,co_c26a82775028,First Lien,Industrials,13.8%,,SOFR,9.5%,,,,38000,38000,38000,,38000,,,,,,GAIN,2025-05-13
+Pyrotek Special Effects Inc.,co_e6e35505c493,First Lien,CASH EQUIVALENTS - 0.3 %,10%,,SOFR,5%,,,,2500,2500,2500,,2500,,,,,,GAIN,2025-05-13
+Pyrotek Special Effects,co_e6e35505c493,First Lien,CASH EQUIVALENTS - 0.3 %,13%,,SOFR,8%,,,,20120,20120,20120,,20120,,,,,,GAIN,2025-05-13
+Utah Pacific Bridge & Steel,co_d7c00c5f6287,First Lien,Industrials,14.3%,,SOFR,10%,,,,15000,15000,15000,,15000,,,,,,GAIN,2025-05-13
+B+T Group Acquisition Inc.,co_e1310f2592d0,First Lien,Media & Entertainment,7%,,SOFR,2%,,,,3080,3080,3080,,3080,,,,,,GAIN,2025-05-13
+B+T Group Acquisition Inc.,co_e1310f2592d0,First Lien,Media & Entertainment,7%,,SOFR,2%,,,,930,930,930,,930,,,,,,GAIN,2025-05-13
+B+T Group Acquisition,co_e1310f2592d0,First Lien,Media & Entertainment,7%,,SOFR,2%,,,,14000,14000,3575,,14000,,,,,,GAIN,2025-05-13
+PSI Molded Plastics,co_b9958539c8ca,First Lien,Chemicals & Materials,7%,,SOFR,1%,,,,10616,10616,10616,,10616,,,,,,GAIN,2025-05-13
+PSI Molded Plastics,co_b9958539c8ca,Preferred Equity,Chemicals & Materials,,,,,,,,,36130,996,,36130,,,,322598,fair_value_suspicious_vs_size,GAIN,2025-05-13
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,Preferred Equity,Business Services,,,,,,,,,6749,12921,,6749,,,,67490,,GAIN,2025-05-13
+J.R. Hobbs Co. – Atlanta,co_45ddd497035e,Preferred Equity,Consumer & Retail,,,,,,,,,10920,0,,10920,,,,10920,,GAIN,2025-05-13
+The Maids International,co_c3f922f64484,Preferred Equity,Industrials,,,,,,,,,6640,8410,,6640,,,,6640,,GAIN,2025-05-13
+Nielsen-Kellerman Acquisition Corp.,co_fe97d0a4106f,Other Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,22169,22421,,22169,,,,22169,,GAIN,2025-05-13
+Old World Christmas,co_c26a82775028,Preferred Equity,Industrials,,,,,,,,,0,23539,,0,,,,6180,,GAIN,2025-05-13
+Pyrotek Special Effects,co_e6e35505c493,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,7060,7260,,7060,,,,7060000,,GAIN,2025-05-13
+UPB Acquisition,co_86ae48e11017,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,6000,26010,,6000,,,,6000,,GAIN,2025-05-13
+B+T Group Acquisition,co_e1310f2592d0,Preferred Equity,Media & Entertainment,,,,,,,,,4722,0,,4722,,,,14304,,GAIN,2025-05-13
+Nth Degree Investment Group,co_97986e79a345,Common Equity,Financial Services,,,,,,,,,5000,4975,,5000,,,,500000,,GAIN,2025-05-13
+B+T Group Acquisition,co_e1310f2592d0,Common Equity,Media & Entertainment,,,,,,,,,0,0,,0,,,,,,GAIN,2025-05-13
+Edge Adhesives Holdings,co_1a089392d0f6,First Lien,Chemicals & Materials,9.8%,,SOFR,5.5%,,,,9210,9210,343,,9210,,,,,fair_value_suspicious_vs_size,GAIN,2025-05-13
+Edge Adhesives Holdings,co_1a089392d0f6,Preferred Equity,Chemicals & Materials,,,,,,,,,8199,0,,8199,,,,8199,,GAIN,2025-05-13
+Detroit Defense,co_317d14f5367c,First Lien,Industrials,13.3%,,SOFR,9%,,,,61305,61305,61305,,61305,,,,,,GAIN,2025-08-12
+Dema/Mai Holdings,co_44cc0ff5b3a9,First Lien,Industrials,15.3%,,SOFR,11%,,,,38250,38250,38250,,38250,,,,,,GAIN,2025-08-12
+Smart Chemical Solutions LLC,co_a046eb43f655,First Lien,Chemicals & Materials,10%,,SOFR,5.5%,,,,0,0,0,,0,,,,,,GAIN,2025-08-12
+Smart Chemical Solutions,co_a046eb43f655,First Lien,Chemicals & Materials,13.5%,,SOFR,9%,,,,35660,35660,35660,,35660,,,,,,GAIN,2025-08-12
+Phoenix Door Systems Inc.,co_21ff24b31c8a,First Lien,Industrials,5.7%,,SOFR,1.4%,,,,2950,2950,2950,,2950,,,,,,GAIN,2025-08-12
+Phoenix Door Systems,co_21ff24b31c8a,First Lien,Industrials,7.7%,,SOFR,3.4%,,,,3200,3200,1600,,3200,,,,,,GAIN,2025-08-12
+Horizon Facilities Services,co_667df76be35e,First Lien,Industrials,6%,,SOFR,0.5%,,,,57700,57700,30734,,57700,,,,,,GAIN,2025-08-12
+Mason West,co_7f9303c3d8e3,First Lien,Industrials,14.3%,,SOFR,10%,,,,25250,25250,25250,,25250,,,,,,GAIN,2025-08-12
+Sun State Nursery and Landscaping LLC,co_b7652254fd5b,First Lien,Agriculture,10%,,SOFR,5%,,,,240,240,240,,240,,,,,,GAIN,2025-08-12
+Sun State Nursery and Landscaping,co_b7652254fd5b,First Lien,Agriculture,13.5%,,SOFR,9%,,,,9520,9520,9520,,9520,,,,,,GAIN,2025-08-12
+Educators Resource,co_c0943f7e8261,First Lien,Industrials,14.8%,,SOFR,10.5%,,,,30000,30000,30000,,30000,,,,,,GAIN,2025-08-12
+Brunswick Bowling Products,co_a8e66817967d,First Lien,Industrials,14.3%,,SOFR,10%,,,,17700,17700,17700,,17700,,,,,,GAIN,2025-08-12
+Brunswick Bowling Products,co_a8e66817967d,First Lien,Industrials,14.3%,,SOFR,10%,,,,6850,6850,6850,,6850,,,,,,GAIN,2025-08-12
+Ginsey Home Solutions,co_68239dae8f8a,First Lien,Industrials,14.3%,,SOFR,10%,,,,12200,12200,12200,,12200,,,,,,GAIN,2025-08-12
+Schylling,co_1637decf7bb6,First Lien,Industrials,15.3%,,SOFR,11%,,,,27981,27981,27981,,27981,,,,,,GAIN,2025-08-12
+The E3 Company,co_0d41dfa66f36,First Lien,Industrials,13.5%,,SOFR,9%,,,,33750,33750,33750,,33750,,,,,,GAIN,2025-08-12
+Home Concepts Acquisition Inc.,co_d481848bce83,First Lien,Industrials,10.3%,,SOFR,6%,,,,2000,2000,2000,,2000,,,,,,GAIN,2025-08-12
+Home Concepts Acquisition Inc.,co_d481848bce83,First Lien,Industrials,10.3%,,SOFR,6%,,,,0,0,0,,0,,,,,,GAIN,2025-08-12
+Home Concepts Acquisition,co_d481848bce83,First Lien,Industrials,13.3%,,SOFR,9%,,,,12000,12000,10611,,12000,,,,,,GAIN,2025-08-12
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,Industrials,8.4%,,SOFR,4.1%,,,,6900,6900,6900,,6900,,,,,,GAIN,2025-08-12
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,Industrials,11.3%,,SOFR,7%,,,,18796,18796,18796,,18796,,,,,,GAIN,2025-08-12
+Diligent Delivery Systems – Term Debt,co_2f1d70b8624e,First Lien,,13.3%,,SOFR,9%,,,,13000,13000,13000,,13000,,,,,,GAIN,2025-08-12
+SFEG Holdings,co_716c8b60bd56,First Lien,Industrials,12.5%,,SOFR,7%,,,,54644,54644,54644,,54644,,,,,,GAIN,2025-08-12
+Detroit Defense,co_317d14f5367c,Preferred Equity,Industrials,,,,,,,,,17388,18169,,17388,,,,17388,,GAIN,2025-08-12
+Dema/Mai Holdings,co_44cc0ff5b3a9,Preferred Equity,Industrials,,,,,,,,,21000,30825,,21000,,,,21000,,GAIN,2025-08-12
+Smart Chemical Solutions,co_a046eb43f655,Preferred Equity,Chemicals & Materials,,,,,,,,,13843,13843,,13843,,,,13843,,GAIN,2025-08-12
+Horizon Facilities Services,co_667df76be35e,Preferred Equity,Industrials,,,,,,,,,0,0,,0,,,,10080,,GAIN,2025-08-12
+Mason West,co_7f9303c3d8e3,Preferred Equity,Industrials,,,,,,,,,11206,15779,,11206,,,,11206,,GAIN,2025-08-12
+Sun State Nursery and Landscaping,co_b7652254fd5b,Preferred Equity,Agriculture,,,,,,,,,3059,3059,,3059,,,,3059,,GAIN,2025-08-12
+Educators Resource,co_c0943f7e8261,Preferred Equity,Industrials,,,,,,,,,8560,18197,,8560,,,,8560,,GAIN,2025-08-12
+Brunswick Bowling Products,co_a8e66817967d,Preferred Equity,Industrials,,,,,,,,,6653,45485,,6653,,,,6653,,GAIN,2025-08-12
+Ginsey Home Solutions,co_68239dae8f8a,Preferred Equity,Industrials,,,,,,,,,9583,5602,,9583,,,,19280,,GAIN,2025-08-12
+Schylling,co_1637decf7bb6,Preferred Equity,Industrials,,,,,,,,,4000,23580,,4000,,,,4000,,GAIN,2025-08-12
+The E3 Company,co_0d41dfa66f36,Preferred Equity,Industrials,,,,,,,,,11233,38536,,11233,,,,11233,,GAIN,2025-08-12
+Home Concepts Acquisition,co_d481848bce83,Preferred Equity,Industrials,,,,,,,,,3275,0,,3275,,,,3275,,GAIN,2025-08-12
+Galaxy Technologies Holdings,co_b903cc7063a4,Common Equity,Industrials,,,,,,,,,11513,0,,11513,,,,16957,,GAIN,2025-08-12
+Diligent Delivery Systems – Common Stock Warrants,co_ef46c437f0ac,Other,,,,,,,,,,500,0,,500,,,,,,GAIN,2025-08-12
+Phoenix Door Systems,co_21ff24b31c8a,Common Equity,Industrials,,,,,,,,,1830,0,,1830,,,,4221,,GAIN,2025-08-12
+Ginsey Home Solutions,co_68239dae8f8a,Common Equity,Industrials,,,,,,,,,8,0,,8,,,,63747,,GAIN,2025-08-12
+SFEG Holdings,co_716c8b60bd56,Common Equity,Industrials,,,,,,,,,30746,55341,,30746,,,,18721,,GAIN,2025-08-12
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,First Lien,Industrials,15.3%,,SOFR,11%,,,,22000,22000,22000,,22000,,,,,,GAIN,2025-08-12
+J.R. Hobbs Co. - Atlanta LLC,co_4f47f3e2dd7c,First Lien,Consumer & Retail,10.3%,,SOFR,6%,,,,5000,5000,3087,,5000,,,,,,GAIN,2025-08-12
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,10.3%,,SOFR,6%,,,,16500,16500,10188,,16500,,,,,,GAIN,2025-08-12
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,14.6%,,SOFR,10.3%,,,,26000,26000,16054,,26000,,,,,,GAIN,2025-08-12
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,Consumer & Retail,10.3%,,SOFR,6%,,,,2438,2438,1505,,2438,,,,,,GAIN,2025-08-12
+The Maids International,co_c3f922f64484,First Lien,Industrials,14.8%,,SOFR,10.5%,,,,28560,28560,28560,,28560,,,,,,GAIN,2025-08-12
+Nielsen-Kellerman Acquisition Corp.,co_fe97d0a4106f,First Lien,CASH EQUIVALENTS - 0.3 %,13.5%,,SOFR,8.5%,,,,48082,48082,48082,,48082,,,,,,GAIN,2025-08-12
+Old World Christmas,co_c26a82775028,First Lien,Industrials,13.8%,,SOFR,9.5%,,,,38000,38000,38000,,38000,,,,,,GAIN,2025-08-12
+Pyrotek Special Effects,co_e6e35505c493,First Lien,Industrials,13%,,SOFR,8%,,,,20120,20120,20120,,20120,,,,,,GAIN,2025-08-12
+UPB Acquisition,co_86ae48e11017,First Lien,Industrials,14.3%,,SOFR,10%,,,,15000,15000,15000,,15000,,,,,,GAIN,2025-08-12
+B+T Group Acquisition Inc.,co_e1310f2592d0,First Lien,Media & Entertainment,7%,,SOFR,2%,,,,3080,3080,3080,,3080,,,,,,GAIN,2025-08-12
+B+T Group Acquisition Inc.,co_e1310f2592d0,First Lien,Media & Entertainment,7%,,SOFR,2%,,,,1050,1050,1050,,1050,,,,,,GAIN,2025-08-12
+B+T Group Acquisition,co_e1310f2592d0,First Lien,Media & Entertainment,7%,,SOFR,2%,,,,14000,14000,3362,,14000,,,,,,GAIN,2025-08-12
+PSI Molded Plastics,co_b9958539c8ca,Preferred Equity,Industrials,,,,,,,,,46746,5477,,46746,,,,428773,,GAIN,2025-08-12
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,Preferred Equity,Industrials,,,,,,,,,6749,18187,,6749,,,,67490,,GAIN,2025-08-12
+J.R. Hobbs Co. – Atlanta,co_45ddd497035e,Preferred Equity,Consumer & Retail,,,,,,,,,10920,0,,10920,,,,10920,,GAIN,2025-08-12
+The Maids International,co_c3f922f64484,Preferred Equity,Industrials,,,,,,,,,6640,4682,,6640,,,,6640,,GAIN,2025-08-12
+Nielsen-Kellerman Acquisition Corp.,co_fe97d0a4106f,Other Equity,Industrials,,,,,,,,,22169,23252,,22169,,,,22169,,GAIN,2025-08-12
+Old World Christmas,co_c26a82775028,Preferred Equity,Industrials,,,,,,,,,0,24912,,0,,,,6180,,GAIN,2025-08-12
+Pyrotek Special Effects,co_e6e35505c493,Preferred Equity,Industrials,,,,,,,,,7060,7907,,7060,,,,7060,,GAIN,2025-08-12
+UPB Acquisition,co_86ae48e11017,Preferred Equity,Industrials,,,,,,,,,6000,28505,,6000,,,,6000,,GAIN,2025-08-12
+B+T Group Acquisition,co_e1310f2592d0,Preferred Equity,Media & Entertainment,,,,,,,,,4722,0,,4722,,,,14304,,GAIN,2025-08-12
+Gladstone Alternative Income Fund.,co_88d773b46f58,Other Equity,,,,,,,,,,5000,5010,,5000,,,,500000,,GAIN,2025-08-12
+B+T Group Acquisition,co_e1310f2592d0,Common Equity,Media & Entertainment,,,,,,,,,0,0,,0,,,,,,GAIN,2025-08-12
+Edge Adhesives Holdings,co_1a089392d0f6,First Lien,Industrials,9.8%,,SOFR,5.5%,,,,9210,9210,368,,9210,,,,,fair_value_suspicious_vs_size,GAIN,2025-08-12
+Edge Adhesives Holdings,co_1a089392d0f6,Preferred Equity,Industrials,,,,,,,,,8199,0,,8199,,,,8199,,GAIN,2025-08-12
+Detroit Defense,co_317d14f5367c,First Lien,CASH EQUIVALENTS - 0.3 %,13.1%,,SOFR,9%,,,,61305,61305,61305,,61305,,,,,,GAIN,2025-11-04
+Global GRAB Technologies Inc.– Line of Credit,co_2e7f3fcd9494,First Lien,,10%,,SOFR,5%,,,,2000,2000,2000,,2000,,,,,,GAIN,2025-11-04
+Global GRAB Technologies,co_8865d6be18af,First Lien,CASH EQUIVALENTS - 0.3 %,13.5%,,SOFR,9%,,,,46500,46500,46500,,46500,,,,,,GAIN,2025-11-04
+Dema/Mai Holdings,co_44cc0ff5b3a9,First Lien,CASH EQUIVALENTS - 0.3 %,15.1%,,SOFR,11%,,,,38250,38250,38250,,38250,,,,,,GAIN,2025-11-04
+Smart Chemical Solutions,co_a046eb43f655,First Lien,CASH EQUIVALENTS - 0.3 %,13.5%,,SOFR,9%,,,,35660,35660,35660,,35660,,,,,,GAIN,2025-11-04
+Phoenix Door Systems Inc.,co_21ff24b31c8a,First Lien,Industrials,5.5%,,SOFR,1.4%,,,,2950,2950,2950,,2950,,,,,,GAIN,2025-11-04
+Phoenix Door Systems,co_21ff24b31c8a,First Lien,CASH EQUIVALENTS - 0.3 %,7.5%,,SOFR,3.4%,,,,3200,3200,574,,3200,,,,,,GAIN,2025-11-04
+Horizon Facilities Services,co_667df76be35e,First Lien,CASH EQUIVALENTS - 0.3 %,6%,,SOFR,0.5%,,,,57700,57700,31711,,57700,,,,,,GAIN,2025-11-04
+Mason West,co_7f9303c3d8e3,First Lien,CASH EQUIVALENTS - 0.3 %,14.1%,,SOFR,10%,,,,25250,25250,25250,,25250,,,,,,GAIN,2025-11-04
+Sun State Nursery and Landscaping LLC,co_b7652254fd5b,First Lien,Agriculture,10%,,SOFR,5%,,,,240,240,240,,240,,,,,,GAIN,2025-11-04
+Sun State Nursery and Landscaping,co_b7652254fd5b,First Lien,Agriculture,13.5%,,SOFR,9%,,,,9520,9520,9520,,9520,,,,,,GAIN,2025-11-04
+Educators Resource,co_c0943f7e8261,First Lien,CASH EQUIVALENTS - 0.3 %,14.6%,,SOFR,10.5%,,,,30000,30000,30000,,30000,,,,,,GAIN,2025-11-04
+Brunswick Bowling Products,co_a8e66817967d,First Lien,CASH EQUIVALENTS - 0.3 %,14.1%,,SOFR,10%,,,,17700,17700,17700,,17700,,,,,,GAIN,2025-11-04
+Brunswick Bowling Products,co_a8e66817967d,First Lien,CASH EQUIVALENTS - 0.3 %,14.1%,,SOFR,10%,,,,6850,6850,6850,,6850,,,,,,GAIN,2025-11-04
+Ginsey Home Solutions,co_68239dae8f8a,First Lien,CASH EQUIVALENTS - 0.3 %,14.1%,,SOFR,10%,,,,12200,12200,12200,,12200,,,,,,GAIN,2025-11-04
+Schylling,co_1637decf7bb6,First Lien,CASH EQUIVALENTS - 0.3 %,15.1%,,SOFR,11%,,,,27981,27981,27981,,27981,,,,,,GAIN,2025-11-04
+The E3 Company,co_0d41dfa66f36,First Lien,CASH EQUIVALENTS - 0.3 %,13.5%,,SOFR,9%,,,,33750,33750,33750,,33750,,,,,,GAIN,2025-11-04
+Home Concepts Acquisition Inc.,co_d481848bce83,First Lien,Industrials,10.1%,,SOFR,6%,,,,2000,2000,2000,,2000,,,,,,GAIN,2025-11-04
+Home Concepts Acquisition Inc.,co_d481848bce83,First Lien,Industrials,10.1%,,SOFR,6%,,,,0,0,0,,0,,,,,,GAIN,2025-11-04
+Home Concepts Acquisition,co_d481848bce83,First Lien,CASH EQUIVALENTS - 0.3 %,13.1%,,SOFR,9%,,,,12000,12000,9325,,12000,,,,,,GAIN,2025-11-04
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,CASH EQUIVALENTS - 0.3 %,8.2%,,SOFR,4.1%,,,,6900,6900,6900,,6900,,,,,,GAIN,2025-11-04
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,CASH EQUIVALENTS - 0.3 %,11.1%,,SOFR,7%,,,,18796,18796,18796,,18796,,,,,,GAIN,2025-11-04
+Diligent Delivery Systems – Term Debt,co_2f1d70b8624e,First Lien,,13.1%,,SOFR,9%,,,,13000,13000,10293,,13000,,,,,,GAIN,2025-11-04
+SFEG Holdings,co_716c8b60bd56,First Lien,CASH EQUIVALENTS - 0.3 %,12.5%,,SOFR,7%,,,,54644,54644,54644,,54644,,,,,,GAIN,2025-11-04
+Detroit Defense,co_317d14f5367c,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,17388,15592,,17388,,,,17388,,GAIN,2025-11-04
+Global GRAB Technologies,co_8865d6be18af,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,21100,21100,,21100,,,,21100,,GAIN,2025-11-04
+Dema/Mai Holdings,co_44cc0ff5b3a9,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,21000,35242,,21000,,,,21000,,GAIN,2025-11-04
+Smart Chemical Solutions,co_a046eb43f655,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,13843,12148,,13843,,,,13843,,GAIN,2025-11-04
+Horizon Facilities Services,co_667df76be35e,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,0,0,,0,,,,10080,,GAIN,2025-11-04
+Mason West,co_7f9303c3d8e3,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,11206,15097,,11206,,,,11206,,GAIN,2025-11-04
+Sun State Nursery and Landscaping,co_b7652254fd5b,Preferred Equity,Agriculture,,,,,,,,,3059,3059,,3059,,,,3059,,GAIN,2025-11-04
+Educators Resource,co_c0943f7e8261,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,8560,15767,,8560,,,,8560,,GAIN,2025-11-04
+Brunswick Bowling Products,co_a8e66817967d,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,6653,48863,,6653,,,,6653,,GAIN,2025-11-04
+Ginsey Home Solutions,co_68239dae8f8a,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,9583,6810,,9583,,,,19280,,GAIN,2025-11-04
+Schylling,co_1637decf7bb6,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,4000,29263,,4000,,,,4000,,GAIN,2025-11-04
+The E3 Company,co_0d41dfa66f36,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,11233,49304,,11233,,,,11233,,GAIN,2025-11-04
+Home Concepts Acquisition,co_d481848bce83,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,3275,0,,3275,,,,3275,,GAIN,2025-11-04
+Galaxy Technologies Holdings,co_b903cc7063a4,Common Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,11513,0,,11513,,,,16957,,GAIN,2025-11-04
+Diligent Delivery Systems – Common Stock Warrants,co_ef46c437f0ac,Other,,,,,,,,,,500,0,,500,,,,,,GAIN,2025-11-04
+Phoenix Door Systems,co_21ff24b31c8a,Common Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,1830,0,,1830,,,,4221,,GAIN,2025-11-04
+Ginsey Home Solutions,co_68239dae8f8a,Common Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,8,0,,8,,,,63747,,GAIN,2025-11-04
+SFEG Holdings,co_716c8b60bd56,Common Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,30746,75894,,30746,,,,18721,,GAIN,2025-11-04
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,First Lien,CASH EQUIVALENTS - 0.3 %,15.1%,,SOFR,11%,,,,22000,22000,22000,,22000,,,,,,GAIN,2025-11-04
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,CASH EQUIVALENTS - 0.3 %,10.1%,,SOFR,6%,,,,20000,20000,20000,,20000,,,,,,GAIN,2025-11-04
+The Maids International,co_c3f922f64484,First Lien,CASH EQUIVALENTS - 0.3 %,14.6%,,SOFR,10.5%,,,,28560,28560,28560,,28560,,,,,,GAIN,2025-11-04
+Nielsen-Kellerman Acquisition Corp.,co_fe97d0a4106f,First Lien,CASH EQUIVALENTS - 0.3 %,13.5%,,SOFR,8.5%,,,,48082,48082,48082,,48082,,,,,,GAIN,2025-11-04
+Old World Christmas,co_c26a82775028,First Lien,CASH EQUIVALENTS - 0.3 %,13.6%,,SOFR,9.5%,,,,38000,38000,38000,,38000,,,,,,GAIN,2025-11-04
+Pyrotek Special Effects,co_e6e35505c493,First Lien,CASH EQUIVALENTS - 0.3 %,13%,,SOFR,8%,,,,20120,20120,20120,,20120,,,,,,GAIN,2025-11-04
+UPB Acquisition,co_86ae48e11017,First Lien,CASH EQUIVALENTS - 0.3 %,14.1%,,SOFR,10%,,,,15000,15000,15000,,15000,,,,,,GAIN,2025-11-04
+B+T Group Acquisition Inc.,co_e1310f2592d0,First Lien,Media & Entertainment,7%,,SOFR,2%,,,,3080,3080,3080,,3080,,,,,,GAIN,2025-11-04
+B+T Group Acquisition Inc.,co_e1310f2592d0,First Lien,Media & Entertainment,7%,,SOFR,2%,,,,1050,1050,1050,,1050,,,,,,GAIN,2025-11-04
+B+T Group Acquisition,co_e1310f2592d0,First Lien,CASH EQUIVALENTS - 0.3 %,7%,,SOFR,2%,,,,14000,14000,3551,,14000,,,,,,GAIN,2025-11-04
+PSI Molded Plastics,co_b9958539c8ca,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,46746,3374,,46746,,,,428773,,GAIN,2025-11-04
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,6749,17825,,6749,,,,67490,,GAIN,2025-11-04
+J.R. Hobbs Co. – Atlanta,co_45ddd497035e,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,10920,12362,,10920,,,,10920,,GAIN,2025-11-04
+The Maids International,co_c3f922f64484,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,6640,3394,,6640,,,,6640,,GAIN,2025-11-04
+Nielsen-Kellerman Acquisition Corp.,co_fe97d0a4106f,Other Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,22169,23793,,22169,,,,22169,,GAIN,2025-11-04
+Old World Christmas,co_c26a82775028,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,0,22243,,0,,,,6180,,GAIN,2025-11-04
+Pyrotek Special Effects,co_e6e35505c493,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,7060,6738,,7060,,,,7060,,GAIN,2025-11-04
+UPB Acquisition,co_86ae48e11017,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,6000,23304,,6000,,,,6000,,GAIN,2025-11-04
+B+T Group Acquisition,co_e1310f2592d0,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,4722,0,,4722,,,,14304,,GAIN,2025-11-04
+Gladstone Alternative Income Fund.,co_88d773b46f58,Other Equity,,,,,,,,,,5000,5075,,5000,,,,500000,,GAIN,2025-11-04
+B+T Group Acquisition,co_e1310f2592d0,Common Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,0,0,,0,,,,,,GAIN,2025-11-04
+Edge Adhesives Holdings,co_1a089392d0f6,First Lien,CASH EQUIVALENTS - 0.3 %,9.6%,,SOFR,5.5%,,,,9210,9210,770,,9210,,,,,,GAIN,2025-11-04
+Edge Adhesives Holdings,co_1a089392d0f6,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,8199,0,,8199,,,,8199,,GAIN,2025-11-04
+Detroit Defense,co_317d14f5367c,First Lien,CASH EQUIVALENTS - 0.3 %,13%,,SOFR,9%,,,,61305,61305,61305,,61305,,,,,,GAIN,2026-02-03
+Global GRAB Technologies Inc.– Line of Credit,co_2e7f3fcd9494,First Lien,,10%,,SOFR,5%,,,,2850,2850,2850,,2850,,,,,,GAIN,2026-02-03
+Global GRAB Technologies,co_8865d6be18af,First Lien,CASH EQUIVALENTS - 0.3 %,13.5%,,SOFR,9%,,,,46500,46500,46500,,46500,,,,,,GAIN,2026-02-03
+Dema/Mai Holdings,co_44cc0ff5b3a9,First Lien,CASH EQUIVALENTS - 0.3 %,14.7%,,SOFR,11%,,,,38250,38250,38250,,38250,,,,,,GAIN,2026-02-03
+Smart Chemical Solutions,co_a046eb43f655,First Lien,CASH EQUIVALENTS - 0.3 %,13.5%,,SOFR,9%,,,,35660,35660,35660,,35660,,,,,,GAIN,2026-02-03
+Phoenix Door Systems Inc.,co_21ff24b31c8a,First Lien,Industrials,5%,,SOFR,1.4%,,,,2950,2950,2950,,2950,,,,,,GAIN,2026-02-03
+Phoenix Door Systems,co_21ff24b31c8a,First Lien,CASH EQUIVALENTS - 0.3 %,7%,,SOFR,3.4%,,,,3200,3200,2990,,3200,,,,,,GAIN,2026-02-03
+Horizon Facilities Services,co_667df76be35e,First Lien,CASH EQUIVALENTS - 0.3 %,6%,,SOFR,0.5%,,,,57700,57700,26391,,57700,,,,,,GAIN,2026-02-03
+Mason West,co_7f9303c3d8e3,First Lien,CASH EQUIVALENTS - 0.3 %,13.7%,,SOFR,10%,,,,25250,25250,25250,,25250,,,,,,GAIN,2026-02-03
+Sun State Nursery and Landscaping,co_b7652254fd5b,First Lien,CASH EQUIVALENTS - 0.3 %,13.5%,,SOFR,9%,,,,9520,9520,9520,,9520,,,,,,GAIN,2026-02-03
+Educators Resource,co_c0943f7e8261,First Lien,CASH EQUIVALENTS - 0.3 %,14.2%,,SOFR,10.5%,,,,30000,30000,30000,,30000,,,,,,GAIN,2026-02-03
+Brunswick Bowling Products,co_a8e66817967d,First Lien,CASH EQUIVALENTS - 0.3 %,13.7%,,SOFR,10%,,,,17700,17700,17700,,17700,,,,,,GAIN,2026-02-03
+Brunswick Bowling Products,co_a8e66817967d,First Lien,CASH EQUIVALENTS - 0.3 %,13.7%,,SOFR,10%,,,,6850,6850,6850,,6850,,,,,,GAIN,2026-02-03
+Ginsey Home Solutions,co_68239dae8f8a,First Lien,CASH EQUIVALENTS - 0.3 %,13.7%,,SOFR,10%,,,,12200,12200,12200,,12200,,,,,,GAIN,2026-02-03
+Schylling,co_1637decf7bb6,First Lien,CASH EQUIVALENTS - 0.3 %,14.7%,,SOFR,11%,,,,21981,21981,21981,,21981,,,,,,GAIN,2026-02-03
+The E3 Company,co_0d41dfa66f36,First Lien,CASH EQUIVALENTS - 0.3 %,13.5%,,SOFR,9%,,,,33750,33750,33750,,33750,,,,,,GAIN,2026-02-03
+Rowan Energy Inc.,co_a4039217829d,First Lien,Energy,14.5%,,SOFR,9%,,,,25790,25790,25790,,25790,,,,,,GAIN,2026-02-03
+Home Concepts Acquisition,co_d481848bce83,First Lien,CASH EQUIVALENTS - 0.3 %,13%,,SOFR,9%,,,,12000,12000,7873,,12000,,,,,,GAIN,2026-02-03
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,CASH EQUIVALENTS - 0.3 %,7.8%,,SOFR,4.1%,,,,6900,6900,6900,,6900,,,,,,GAIN,2026-02-03
+Galaxy Technologies Holdings,co_b903cc7063a4,First Lien,CASH EQUIVALENTS - 0.3 %,10.7%,,SOFR,7%,,,,18796,18796,18796,,18796,,,,,,GAIN,2026-02-03
+Diligent Delivery Systems – Term Debt,co_2f1d70b8624e,First Lien,,12.7%,,SOFR,9%,,,,13000,13000,9933,,13000,,,,,,GAIN,2026-02-03
+SFEG Holdings,co_716c8b60bd56,First Lien,CASH EQUIVALENTS - 0.3 %,12.5%,,SOFR,7%,,,,54644,54644,54644,,54644,,,,,,GAIN,2026-02-03
+Detroit Defense,co_317d14f5367c,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,17388,12572,,17388,,,,17388,,GAIN,2026-02-03
+Global GRAB Technologies,co_8865d6be18af,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,21100,25339,,21100,,,,21100,,GAIN,2026-02-03
+Dema/Mai Holdings,co_44cc0ff5b3a9,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,21000,33201,,21000,,,,21000,,GAIN,2026-02-03
+Smart Chemical Solutions,co_a046eb43f655,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,13843,10834,,13843,,,,13843,,GAIN,2026-02-03
+Horizon Facilities Services,co_667df76be35e,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,0,0,,0,,,,10080,,GAIN,2026-02-03
+Mason West,co_7f9303c3d8e3,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,11206,19045,,11206,,,,11206,,GAIN,2026-02-03
+Sun State Nursery and Landscaping,co_b7652254fd5b,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,3059,1317,,3059,,,,3059,,GAIN,2026-02-03
+Educators Resource,co_c0943f7e8261,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,8560,14920,,8560,,,,8560,,GAIN,2026-02-03
+Brunswick Bowling Products,co_a8e66817967d,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,6653,49135,,6653,,,,6653,,GAIN,2026-02-03
+Ginsey Home Solutions,co_68239dae8f8a,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,9583,9116,,9583,,,,19280,,GAIN,2026-02-03
+Schylling,co_1637decf7bb6,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,4000,56943,,4000,,,,4000,,GAIN,2026-02-03
+The E3 Company,co_0d41dfa66f36,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,11233,57965,,11233,,,,11233,,GAIN,2026-02-03
+Rowan Energy Inc.,co_a4039217829d,Other Equity,Energy,,,,,,,,,7298,7298,,7298,,,,7298,,GAIN,2026-02-03
+Home Concepts Acquisition,co_d481848bce83,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,3275,0,,3275,,,,3275,,GAIN,2026-02-03
+Galaxy Technologies Holdings,co_b903cc7063a4,Common Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,11513,3158,,11513,,,,16957,,GAIN,2026-02-03
+Diligent Delivery Systems – Common Stock Warrants,co_ef46c437f0ac,Other,,,,,,,,,,500,0,,500,,,,,,GAIN,2026-02-03
+Phoenix Door Systems,co_21ff24b31c8a,Common Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,1830,0,,1830,,,,4221,,GAIN,2026-02-03
+Ginsey Home Solutions,co_68239dae8f8a,Common Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,8,0,,8,,,,63747,,GAIN,2026-02-03
+SFEG Holdings,co_716c8b60bd56,Common Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,30746,90068,,30746,,,,18721,,GAIN,2026-02-03
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,First Lien,CASH EQUIVALENTS - 0.3 %,14.7%,,SOFR,11%,,,,22000,22000,22000,,22000,,,,,,GAIN,2026-02-03
+J.R. Hobbs Co. - Atlanta,co_4f47f3e2dd7c,First Lien,CASH EQUIVALENTS - 0.3 %,10%,,SOFR,6%,,,,20000,20000,20000,,20000,,,,,,GAIN,2026-02-03
+The Maids International,co_c3f922f64484,First Lien,CASH EQUIVALENTS - 0.3 %,14.2%,,SOFR,10.5%,,,,28560,28560,28560,,28560,,,,,,GAIN,2026-02-03
+Nielsen-Kellerman Acquisition Corp.,co_fe97d0a4106f,First Lien,CASH EQUIVALENTS - 0.3 %,13.5%,,SOFR,8.5%,,,,48082,48082,48082,,48082,,,,,,GAIN,2026-02-03
+Old World Christmas,co_c26a82775028,First Lien,CASH EQUIVALENTS - 0.3 %,13.2%,,SOFR,9.5%,,,,38000,38000,38000,,38000,,,,,,GAIN,2026-02-03
+Pyrotek Special Effects,co_e6e35505c493,First Lien,CASH EQUIVALENTS - 0.3 %,13%,,SOFR,8%,,,,20120,20120,20120,,20120,,,,,,GAIN,2026-02-03
+UPB Acquisition,co_86ae48e11017,First Lien,CASH EQUIVALENTS - 0.3 %,13.7%,,SOFR,10%,,,,11000,11000,11000,,11000,,,,,,GAIN,2026-02-03
+B+T Group Acquisition Inc.,co_e1310f2592d0,First Lien,Media & Entertainment,7%,,SOFR,2%,,,,3080,3080,3080,,3080,,,,,,GAIN,2026-02-03
+B+T Group Acquisition Inc.,co_e1310f2592d0,First Lien,Media & Entertainment,7%,,SOFR,2%,,,,1050,1050,1050,,1050,,,,,,GAIN,2026-02-03
+B+T Group Acquisition,co_e1310f2592d0,First Lien,Media & Entertainment,7%,,SOFR,2%,,,,14000,14000,4111,,14000,,,,,,GAIN,2026-02-03
+PSI Molded Plastics,co_b9958539c8ca,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,46746,5171,,46746,,,,428773,,GAIN,2026-02-03
+ImageWorks Display and Marketing Group,co_e4ff71884bc1,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,6749,27794,,6749,,,,67490,,GAIN,2026-02-03
+J.R. Hobbs Co. – Atlanta,co_45ddd497035e,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,10920,11827,,10920,,,,10920,,GAIN,2026-02-03
+The Maids International,co_c3f922f64484,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,6640,3281,,6640,,,,6640,,GAIN,2026-02-03
+Nielsen-Kellerman Acquisition Corp.,co_fe97d0a4106f,Other Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,22169,19505,,22169,,,,22169,,GAIN,2026-02-03
+Old World Christmas,co_c26a82775028,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,0,33498,,0,,,,6180,,GAIN,2026-02-03
+Pyrotek Special Effects,co_e6e35505c493,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,7060,5059,,7060,,,,7060,,GAIN,2026-02-03
+UPB Acquisition,co_86ae48e11017,Preferred Equity,CASH EQUIVALENTS - 0.3 %,,,,,,,,,6000,25882,,6000,,,,6000,,GAIN,2026-02-03
+B+T Group Acquisition,co_e1310f2592d0,Preferred Equity,Media & Entertainment,,,,,,,,,4722,0,,4722,,,,14304,,GAIN,2026-02-03
+Gladstone Alternative Income Fund.,co_88d773b46f58,Other Equity,,,,,,,,,,5000,5075,,5000,,,,500000,,GAIN,2026-02-03
+B+T Group Acquisition,co_e1310f2592d0,Common Equity,Media & Entertainment,,,,,,,,,0,0,,0,,,,,,GAIN,2026-02-03
+Edge Adhesives Holdings,co_1a089392d0f6,First Lien,Chemicals & Materials,9.2%,,SOFR,5.5%,,,,9210,9210,703,,9210,,,,,,GAIN,2026-02-03
+Edge Adhesives Holdings,co_1a089392d0f6,Preferred Equity,Chemicals & Materials,,,,,,,,,8199,0,,8199,,,,8199,,GAIN,2026-02-03
+Dreyfus Treasury Obligations Cash Management Fund,co_c9b194c49441,Other,Business Services,3.43%,,,,,,,,,,,,,,,,,GAIN,2026-02-03

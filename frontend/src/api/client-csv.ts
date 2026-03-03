@@ -128,10 +128,10 @@ async function loadInvestmentsIndex(): Promise<BDCIndex> {
     return investmentsIndexPromise;
   }
   
-  // Start loading index
+  // Start loading index (no-store so we always see latest after re-running consolidation)
   investmentsIndexPromise = (async () => {
     console.log('[CSV] Loading investments_index.json...');
-    const res = await fetch(`${API_BASE}/investments_index.json`);
+    const res = await fetch(`${API_BASE}/investments_index.json`, { cache: 'no-store' });
     if (!res.ok) {
       throw new Error(`Failed to load investments_index.json: ${res.status}`);
     }

@@ -9,6 +9,8 @@ type Props = {
   selectedCell?: string;
   selectedCompanyName?: string;
   selectedSector?: string;
+  /** When the investments index was last built (ISO string); shown as "Data updated" */
+  dataUpdatedAt?: string | null;
 };
 
 export function StatusBar({
@@ -19,7 +21,11 @@ export function StatusBar({
   selectedCell,
   selectedCompanyName,
   selectedSector,
+  dataUpdatedAt,
 }: Props) {
+  const dataUpdatedLabel = dataUpdatedAt
+    ? new Date(dataUpdatedAt).toLocaleDateString('en-US', { dateStyle: 'short' })
+    : null;
   const timestamp = new Date().toLocaleTimeString('en-US', {
     hour12: false,
     hour: '2-digit',
@@ -74,6 +80,12 @@ export function StatusBar({
         )}
       </div>
       <div className="flex items-center gap-4">
+        {dataUpdatedLabel && (
+          <>
+            <span className="text-[#808080]">Data updated:</span>
+            <span className="text-black">{dataUpdatedLabel}</span>
+          </>
+        )}
         <span className="text-[#808080]">Time:</span>
         <span className="text-black">{timestamp}</span>
       </div>

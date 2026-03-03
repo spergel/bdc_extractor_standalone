@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { useCompanyExposures } from '../api/hooks';
 import type { CompanyExposure } from '../data/adapter';
+import { formatMillionsAsCurrency } from '../utils/formatCurrency';
 
 type Props = {
   selectedCompanyId: string | undefined;
@@ -97,7 +98,7 @@ export function CompaniesSidebar({ selectedCompanyId, onSelectCompany }: Props) 
             const id = e.company_id ?? '';
             const isSelected = id === selectedCompanyId;
             const exp = e.total_exposure_millions != null ? Number(e.total_exposure_millions) : 0;
-            const expStr = exp >= 1e6 ? `${(exp / 1e6).toFixed(1)}B` : exp >= 1e3 ? `${(exp / 1e3).toFixed(1)}B` : `${exp.toFixed(0)}M`;
+            const expStr = formatMillionsAsCurrency(exp);
             return (
               <button
                 key={id}
@@ -109,7 +110,7 @@ export function CompaniesSidebar({ selectedCompanyId, onSelectCompany }: Props) 
                   {e.company_name ?? id}
                 </div>
                 <div className={`text-xs mt-0.5 ${isSelected ? 'text-white/90' : 'text-[#808080]'}`}>
-                  {e.num_bdcs_invested ?? 0} BDCs • ${expStr}
+                  {e.num_bdcs_invested ?? 0} BDCs • {expStr}
                 </div>
               </button>
             );

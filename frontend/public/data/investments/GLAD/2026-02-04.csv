@@ -1,60 +1,121 @@
-company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,ticker,filing_date
-Wings ‘N More Restaurants LLC,co_5272add443dd,First Lien,Food & Beverage,10.9%,,SOFR,6.8%,,2029-11-01,10500,10500,10710,,10500,,,GLAD,2026-02-04
-GFRC 360 LLC,co_b725b64d06a4,Revolver,Real Estate,12.1%,,SOFR,8.0%,,2026-09-01,1355,1355,1355,,1355,1450,95,GLAD,2026-02-04
-GFRC 360 LLC,co_b725b64d06a4,First Lien,Real Estate,12.1%,,SOFR,8.0%,,2026-09-01,1000,1000,1000,,1000,,,GLAD,2026-02-04
-NeoGraf Solutions LLC,co_94ebeef813ac,First Lien,Manufacturing,11.0%,0.1%,SOFR,7.0%,,2028-01-01,27456,27456,27456,,27456,,,GLAD,2026-02-04
-OCI LLC,co_01bf222b0d44,First Lien,Manufacturing,11.6%,,SOFR,7.5%,,2028-05-01,32000,32000,32000,,32000,,,GLAD,2026-02-04
-Torrent Photonics Holdco LLC,co_c84d972710f8,First Lien,Manufacturing,13.6%,,SOFR,9.5%,,2027-04-01,11529,11529,11645,,11529,,,GLAD,2026-02-04
-Torrent Photonics Holdco LLC,co_c84d972710f8,First Lien,Manufacturing,13.6%,,SOFR,9.5%,,2026-04-01,500,500,505,,500,,,GLAD,2026-02-04
-Giving Home Health Care LLC,co_84a1c17f20a7,First Lien,Healthcare Services,10.4%,,SOFR,6.3%,,2029-04-01,34924,34859,35252,,34859,,,GLAD,2026-02-04
-HH-Inspire Acquisition Inc,co_cea354a1026c,Revolver,Healthcare Services,12.1%,2.0%,SOFR,10.0%,,2028-04-01,1861,1861,1739,,1861,1861,0,GLAD,2026-02-04
-HH-Inspire Acquisition Inc,co_cea354a1026c,First Lien,Healthcare Services,12.1%,2.0%,SOFR,10.0%,,2028-04-01,19890,19805,18580,,19805,,,GLAD,2026-02-04
-Turn Key Health Clinics LLC,co_22e1c5a34f6d,First Lien,Healthcare Services,11.4%,,SOFR,7.3%,,2026-06-01,17500,17500,17500,,17500,,,GLAD,2026-02-04
-Vet's Choice Radiology LLC,co_d33b775d233a,First Lien,Healthcare Services,12.1%,,SOFR,8.0%,,2027-12-01,42750,42750,43098,,42750,,,GLAD,2026-02-04
-Foodservices Brand Group LLC,co_c94d155bacfa,First Lien,Consumer Products,10.6%,,SOFR,6.5%,,2029-08-01,30000,30000,30000,,30000,,,GLAD,2026-02-04
-Arc Drilling Holdings LLC,co_6f2f832af2c1,Revolver,Manufacturing,10.9%,,SOFR,6.8%,,2029-09-01,1125,1125,1125,,1125,5000,3875,GLAD,2026-02-04
-Edge Adhesives Holdings Inc,co_e7c86e4d5a92,First Lien,Manufacturing,9.6%,,SOFR,5.5%,,2026-08-01,6140,6140,513,,6140,,,GLAD,2026-02-04
-Zero Case Holding Inc,co_9513bac2629e,First Lien,Manufacturing,10.5%,,SOFR,6.4%,,2030-07-01,12000,12000,12000,,12000,,,GLAD,2026-02-04
-Snif-Snax LLC,co_25d1a37479e7,First Lien,Food & Beverage,10.8%,,SOFR,6.7%,,2030-07-01,22200,22200,22200,,22200,,,GLAD,2026-02-04
-Edge Adhesives Holdings Inc,co_e7c86e4d5a92,Preferred Equity,Manufacturing,,,,,,5466,,,5466,,,,,GLAD,2026-02-04
-Encore Dredging Holdings LLC,co_eb29981e69d8,Preferred Equity,Industrial Services,,,,,,3840000,3840,6914,,,,,,GLAD,2026-02-04
-Snif-Snax LLC,co_25d1a37479e7,Preferred Equity,Food & Beverage,,,,,,1500000,1500,1500,,,,,,GLAD,2026-02-04
-Canopy Safety Brands LLC,co_e4442ca68614,Preferred Equity,Consumer Products,,,,,,500000,500,1006,,,,,,GLAD,2026-02-04
-Zero Case Holding Inc,co_9513bac2629e,Common Equity,Manufacturing,,,,,,1000,,,1000,,,,,GLAD,2026-02-04
-Gladstone Alternative Income Fund,co_2c664404ee8d,Common Equity,Financial Services,,,,,,500000,5000,5075,,,,,,GLAD,2026-02-04
-Canopy Safety Brands LLC,co_e4442ca68614,Common Equity,Consumer Products,,,,,,1170370,800,3703,,,,,,GLAD,2026-02-04
-Engineering Manufacturing Technologies LLC,co_1d2af3b61aaa,Revolver,Manufacturing,12.4%,,SOFR,8.3%,,2026-10-01,1100,1100,834,,1100,3000,1900,GLAD,2026-02-04
-GFRC 360 LLC,co_b725b64d06a4,Preferred Equity,Real Estate,,,,,,,1000,1025,214,,1025,,,GLAD,2026-02-04
-Torrent Photonics Holdco LLC,co_c84d972710f8,Preferred Equity,Manufacturing,,,,,,,2650,2650,2377,,2650,,,GLAD,2026-02-04
-Frontier Financial Group Inc,co_87d22654ba01,Preferred Equity,Business Services,,,,,,,766,500,,,500,,,GLAD,2026-02-04
-Frontier Financial Group Inc,co_87d22654ba01,Warrants,Business Services,,,,,,,168,,,,,,,GLAD,2026-02-04
-Quality Environmental Midco Inc,co_5788ad5d11ae,Preferred Equity,Business Services,,,,,,,3000000,3000,2720,,3000,,,GLAD,2026-02-04
-HH-Inspire Acquisition Inc,co_cea354a1026c,Preferred Equity,Healthcare Services,,,,,,,1681949,2604,2290,,2604,,,GLAD,2026-02-04
-Pan-Am Dental LLC,co_f34005e2a6af,Preferred Equity,Healthcare Services,,,,,,,5909091,5909,6285,,5909,,,GLAD,2026-02-04
-Imperative Holdings Corporation,co_0ef396d8413a,Preferred Equity,Oil & Gas,,,,,,,972569,488,2450,,488,,,GLAD,2026-02-04
-B+T Group Acquisition Inc,co_e1310f2592d0,Preferred Equity,Telecommunications,,,,,,,6130,2024,,,2024,,,GLAD,2026-02-04
-Ohio Armor Holdings LLC,co_bf5d425db9df,Common Equity,Aerospace & Defense,,,,,,,100,,,,,,,GLAD,2026-02-04
-Sea Link International IRB Inc,co_e2700715090a,Common Equity,Automotive,,,,,,,823333,823,277,,823,,,GLAD,2026-02-04
-Dutch Gold Honey Inc,co_d4107a54c755,Common Equity,Food & Beverage,,,,,,,900000,900,3333,,900,,,GLAD,2026-02-04
-Salt & Straw LLC,co_6120273cfcb8,Warrants,Food & Beverage,,,,,,,0.5,,186,,,,,GLAD,2026-02-04
-Sokol & Company Holdings LLC,co_56d27855244e,Common Equity,Food & Beverage,,,,,,,450000,450,2240,,450,,,GLAD,2026-02-04
-Triple H Food Processors LLC,co_ad4483960c06,Common Equity,Food & Beverage,,,,,,,250000,250,2147,,250,,,GLAD,2026-02-04
-GFRC 360 LLC,co_b725b64d06a4,Warrants,Real Estate,,,,,,,45,,,,,,,GLAD,2026-02-04
-OCI LLC,co_01bf222b0d44,Common Equity,Manufacturing,,,,,,,555,1111,1111,,1111,,,GLAD,2026-02-04
-NeoGraf Solutions LLC,co_94ebeef813ac,Common Equity,Manufacturing,,,,,,,2000000,2000,1067,,2000,,,GLAD,2026-02-04
-Viron International Corp,co_011c5d9f3392,Common Equity,Manufacturing,,,,,,,447,15,,,15,,,GLAD,2026-02-04
-Defiance Integrated Technologies Inc,co_b7cfd5a0a471,Second Lien,Automotive,13.7%,,SOFR (S),9.6%,,2027-01-01,8792,8792,8792,,8792,,,GLAD,2026-02-04
-Alsay Incorporated,co_8f2fb002429d,Second Lien,Business Services,12.8%,,N/A,,,2030-12-01,10000,10000,10000,,10000,,,GLAD,2026-02-04
-Technical Resource Management LLC,co_5c0db81557ac,Unsecured Debt,Healthcare Services,,14.0%,N/A,,,2028-10-01,357,357,316,,357,,,GLAD,2026-02-04
-Alsay Incorporated,co_8f2fb002429d,Preferred Equity,Business Services,,,,,,,5000000,5000,5000,,5000,,,GLAD,2026-02-04
-WB Xcel Holdings LLC,co_338f1dc451d7,Preferred Equity,Consumer Products,,,,,,,333,2750,,,2750,,,GLAD,2026-02-04
-Defiance Integrated Technologies Inc,co_b7cfd5a0a471,Common Equity,Automotive,,,,,,,33321,581,,,581,,,GLAD,2026-02-04
-Eegee Acquisition Corp,co_5e5caad089dd,Common Equity,Food & Beverage,,,,,,,1000,8500,4858,,8500,,,GLAD,2026-02-04
-Engineering Manufacturing Technologies LLC,co_1d2af3b61aaa,Common Equity,Manufacturing,,,,,,,16000,3000,,,3000,,,GLAD,2026-02-04
-Lonestar EMS LLC,co_5142cbc3e3fb,Common Equity,Manufacturing,,,,,,,100,6750,4225,,6750,,,GLAD,2026-02-04
-Technical Resource Management LLC,co_5c0db81557ac,Common Equity,Healthcare Services,,,,,,,2000000,2000,,,2000,,,GLAD,2026-02-04
-Technical Resource Management LLC,co_5c0db81557ac,Warrants,Healthcare Services,,,,,,,4558041,,,,,,,GLAD,2026-02-04
-WB Xcel Holdings LLC,co_338f1dc451d7,Common Equity,Consumer Products,,,,,,,12340,1,,,1,,,GLAD,2026-02-04
-TNCP Intermediate HoldCo LLC,co_1ef3ec5cd5a2,Common Equity,Media & Entertainment,,,,,,,790000,500,5809,,500,,,GLAD,2026-02-04
-Dreyfus Treasury Obligations Cash Management Fund,co_c9b194c49441,Money Market Fund,Investment Vehicles,3.77%,,N/A,,,,30523,30523,30523,,30523,,,GLAD,2026-02-04
-First Citizens Premium Money Market Savings,co_a44f2897e7f9,Money Market Fund,Investment Vehicles,0.40%,,N/A,,,,1251,1251,1251,,1251,,,GLAD,2026-02-04
+company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
+Sicilian Oven Restaurants LLC,co_bd329c5eafac,First Lien,Food & Beverage,10.4%,,SOFR,6.7%,,,,23888,23888,23888,,23888,,,,,,GLAD,2026-02-04
+Wings ‘N More Restaurants LLC,co_5272add443dd,First Lien,Food & Beverage,10.9%,,SOFR,7.3%,,,,0,0,0,,0,,,,,,GLAD,2026-02-04
+Wings ‘N More Restaurants LLC,co_5272add443dd,First Lien,Food & Beverage,10.9%,,SOFR,7.3%,,,,10500,10500,10605,,10500,,,,,,GLAD,2026-02-04
+GFRC 360 LLC,co_b725b64d06a4,First Lien,,11.7%,,SOFR,8%,,,,1355,1355,1355,,1355,,,,,,GLAD,2026-02-04
+GFRC 360,co_b725b64d06a4,First Lien,,11.7%,,SOFR,8%,,,,1000,1000,1000,,1000,,,,,,GLAD,2026-02-04
+NeoGraf Solutions LLC,co_94ebeef813ac,First Lien,Media & Entertainment,10.7%,,SOFR,7%,,,,1000,1000,1000,,1000,,,,,,GLAD,2026-02-04
+NeoGraf Solutions LLC,co_94ebeef813ac,First Lien,Media & Entertainment,10.7%,,SOFR,7%,,,,27398,27398,27398,,27398,,,,,,GLAD,2026-02-04
+OCI,co_7e887edb52b7,First Lien,Media & Entertainment,7%,7%,SOFR,7.5%,,,,2358,2358,2469,,2358,,,,,,GLAD,2026-02-04
+Torrent Photonics Holdco LLC,co_c84d972710f8,First Lien,Media & Entertainment,,13.2%,SOFR,9.5%,,,,12202,12202,12324,,12202,,,,,,GLAD,2026-02-04
+Torrent Photonics Holdco LLC,co_c84d972710f8,First Lien,Media & Entertainment,,13.2%,SOFR,9.5%,,,,500,500,505,,500,,,,,,GLAD,2026-02-04
+Torrent Photonics Holdco LLC,co_c84d972710f8,First Lien,Media & Entertainment,,6%,,,,,,500,500,500,,500,,,,,,GLAD,2026-02-04
+Unirac Holdings Inc.,co_ae53f91c52fe,First Lien,,10.2%,,SOFR,6.5%,,,,0,0,0,,0,,,,,,GLAD,2026-02-04
+Unirac Holdings,co_ae53f91c52fe,Delayed Draw,,10.2%,,SOFR,6.5%,,,,1053,1053,1053,,1053,,,,,,GLAD,2026-02-04
+Unirac Holdings,co_ae53f91c52fe,First Lien,,10.2%,,SOFR,6.5%,,,,14138,13944,14138,,13944,,,,,,GLAD,2026-02-04
+Viron International Corp.,co_011c5d9f3392,First Lien,Media & Entertainment,10.7%,,SOFR,7%,,,,18383,18383,18354,,18383,,,,,,GLAD,2026-02-04
+Viva Railings LLC,co_2bcc1def71ed,First Lien,Media & Entertainment,10%,,SOFR,6.4%,,,,0,0,0,,0,,,,,,GLAD,2026-02-04
+Viva Railings,co_2bcc1def71ed,First Lien,Media & Entertainment,10%,,SOFR,6.4%,,,,13657,13657,13657,,13657,,,,,,GLAD,2026-02-04
+Axios Industrial Group,co_3f8af78bf81e,First Lien,CASH EQUIVALENTS - 6.6 %,0%,17.3%,SOFR,13.6%,,,,17505,17505,17505,,17505,,,,,,GLAD,2026-02-04
+Axios Industrial Group,co_3f8af78bf81e,First Lien,CASH EQUIVALENTS - 6.6 %,,20%,,,,,,2727,2727,2727,,2727,,,,,,GLAD,2026-02-04
+MASSiv Brands,co_6947fe702549,First Lien,,10%,5%,,,,,,25635,25635,25628,,25635,,,,,,GLAD,2026-02-04
+Quality Environmental Midco Inc.,co_5788ad5d11ae,First Lien,Environmental Services,12%,0.8%,,,,,,0,0,0,,0,,,,,,GLAD,2026-02-04
+Quality Environmental Midco,co_5788ad5d11ae,First Lien,Environmental Services,12%,0.8%,,,,,,13033,13033,13163,,13033,,,,,,GLAD,2026-02-04
+RF Technologies LLC,co_babf4458f1ca,First Lien,,10.3%,,SOFR,6.7%,,,,0,0,0,,0,,,,,,GLAD,2026-02-04
+RF Technologies,co_babf4458f1ca,First Lien,,10.3%,,SOFR,6.7%,,,,12600,12600,12674,,12600,,,,,,GLAD,2026-02-04
+Total Access Elevator LLC,co_6710704747a5,First Lien,,9.9%,,SOFR,6.3%,,,,0,0,0,,0,,,,,,GLAD,2026-02-04
+Total Access Elevator,co_6710704747a5,First Lien,,9.9%,,SOFR,6.3%,,,,17500,17500,17500,,17500,,,,,,GLAD,2026-02-04
+Total Access Elevator,co_6710704747a5,Delayed Draw,,9.9%,,SOFR,6.3%,,,,1600,1600,1600,,1600,,,,,,GLAD,2026-02-04
+Total Access Elevator,co_6710704747a5,Delayed Draw,,9.9%,,SOFR,6.3%,,,,0,0,0,,0,,,,,,GLAD,2026-02-04
+WorkforceQA LLC,co_c71082d6a070,First Lien,Business Services,9.9%,,SOFR,6.3%,,,,1100,1100,1100,,1100,,,,,,GLAD,2026-02-04
+WorkforceQA,co_c71082d6a070,First Lien,Business Services,9.9%,,SOFR,6.3%,,,,17663,17634,17663,,17634,,,,,,GLAD,2026-02-04
+ALS Education LLC,co_d91e2e18311e,First Lien,Education,9.7%,,SOFR,6%,,,,0,0,0,,0,,,,,,GLAD,2026-02-04
+ALS Education,co_d91e2e18311e,First Lien,Education,9.7%,,SOFR,6%,,,,30360,30314,30279,,30314,,,,,,GLAD,2026-02-04
+ALS Education,co_d91e2e18311e,Delayed Draw,Education,9.7%,,SOFR,6%,,,,0,0,0,,0,,,,,,GLAD,2026-02-04
+Altior Healthcare,co_2a3c4f715e7e,First Lien,Healthcare,10.2%,,SOFR,6.5%,,,,46000,46000,46724,,46000,,,,,,GLAD,2026-02-04
+Freedom Dental Management,co_5435eec1b154,First Lien,Healthcare,13.2%,,SOFR,9.5%,,,,15000,15000,15150,,15000,,,,,,GLAD,2026-02-04
+Giving Home Health Care,co_d470e8bcb3f0,First Lien,Healthcare,9.9%,,SOFR,6.3%,,,,33882,33821,33843,,33821,,,,,,GLAD,2026-02-04
+HH-Inspire Acquisition Inc.,co_cea354a1026c,First Lien,Media & Entertainment,11.7%,2%,SOFR,8%,,,,1871,1871,1729,,1871,,,,,,GLAD,2026-02-04
+HH-Inspire Acquisition,co_cea354a1026c,First Lien,Media & Entertainment,11.7%,2%,SOFR,8%,,,,19922,19844,18417,,19844,,,,,,GLAD,2026-02-04
+Turn Key Health Clinics LLC,co_22e1c5a34f6d,First Lien,,10.4%,,SOFR,6.8%,,,,0,0,0,,0,,,,,,GLAD,2026-02-04
+Turn Key Health Clinics,co_22e1c5a34f6d,First Lien,,10.4%,,SOFR,6.8%,,,,32500,32500,32500,,32500,,,,,,GLAD,2026-02-04
+Vet's Choice Radiology LLC,co_d33b775d233a,First Lien,Media & Entertainment,11.7%,,SOFR,8%,,,,42750,42750,43605,,42750,,,,,,GLAD,2026-02-04
+Foodservices Brand Group LLC,co_c94d155bacfa,First Lien,Food & Beverage,10.2%,,SOFR,6.5%,,,,0,0,0,,0,,,,,,GLAD,2026-02-04
+Foodservices Brand Group,co_c94d155bacfa,First Lien,Food & Beverage,10.2%,,SOFR,6.5%,,,,30000,30000,29928,,30000,,,,,,GLAD,2026-02-04
+Arc Drilling Holdings LLC,co_6f2f832af2c1,First Lien,Media & Entertainment,10.7%,,SOFR,7%,,,,1800,1800,1800,,1800,,,,,,GLAD,2026-02-04
+Arc Drilling Holdings LLC,co_6f2f832af2c1,First Lien,Media & Entertainment,10.7%,,SOFR,7%,,,,15900,15900,16059,,15900,,,,,,GLAD,2026-02-04
+FES Resources Holdings LLC,co_ce9ab4690f11,First Lien,,4.5%,,,,,,,213,213,0,,213,,,,,,GLAD,2026-02-04
+B+T Group Acquisition Inc.,co_e1310f2592d0,First Lien,Media & Entertainment,7%,,SOFR,2%,,,,1320,1320,600,,1320,,,,,,GLAD,2026-02-04
+B+T Group Acquisition Inc.,co_e1310f2592d0,First Lien,Media & Entertainment,7%,,SOFR,2%,,,,450,450,205,,450,,,,,,GLAD,2026-02-04
+B+T Group Acquisition,co_e1310f2592d0,First Lien,Media & Entertainment,7%,,SOFR,2%,,,,6000,6000,2727,,6000,,,,,,GLAD,2026-02-04
+Dutch Gold Honey,co_856ef873b888,First Lien,,11.2%,,SOFR,7.5%,,,,18000,18000,18041,,18000,,,,,,GLAD,2026-02-04
+RPM Freight Systems,co_b3bb114912fa,First Lien,CASH EQUIVALENTS - 6.6 %,11.3%,,SOFR,7.7%,,,,50000,49409,50000,,49409,,,,,,GLAD,2026-02-04
+Springfield,co_7ba84b57db28,First Lien,Media & Entertainment,14.8%,,SOFR,11.1%,,,,30000,29704,30000,,29704,,,,,,GLAD,2026-02-04
+Tube Bending Technology,co_fad0544a2fe1,First Lien,Software & Technology,12.5%,,,,,,,5000,5000,4972,,5000,,,,,,GLAD,2026-02-04
+Flexible Technology Solutions,co_cde63740f014,First Lien,Software & Technology,11.5%,,,,,,,9000,9000,9000,,9000,,,,,,GLAD,2026-02-04
+Pan-Am Dental,co_eaca209c8151,First Lien,Healthcare,12%,,,,,,,23000,23000,23123,,23000,,,,,,GLAD,2026-02-04
+Imperative Holdings Corp.,co_0ef396d8413a,First Lien,,13.5%,,SOFR,9.8%,,,,14265,14200,14265,,14200,,,,,,GLAD,2026-02-04
+Frontier Financial Group Inc.,co_87d22654ba01,First Lien,Financial Services,6%,,,,,,,198,198,16,,198,,,,,,GLAD,2026-02-04
+Sea Link International IRB,co_ee46fe07e1d8,Preferred Equity,Media & Entertainment,,,,,,,,,98,271,,98,,,,98039,,GLAD,2026-02-04
+Sicilian Oven Restaurants LLC,co_bd329c5eafac,Other Equity,Food & Beverage,,,,,,,,,2690,2690,,2690,,,,26900,,GLAD,2026-02-04
+Triple H Food Processors,co_95c228522efd,Preferred Equity,Food & Beverage,,,,,,,,,75,206,,75,,,,75,,GLAD,2026-02-04
+GFRC 360,co_b725b64d06a4,Preferred Equity,,,,,,,,,,1025,531,,1025,,,,1000,,GLAD,2026-02-04
+Torrent Photonics Holdco LLC,co_c84d972710f8,Other Equity,Media & Entertainment,,,,,,,,,2650,2418,,2650,,,,2650,,GLAD,2026-02-04
+Flexible Technology Solutions,co_cde63740f014,Preferred Equity,Software & Technology,,,,,,,,,2250,2250,,2250,,,,22500,,GLAD,2026-02-04
+Frontier Financial Group Inc.,co_87d22654ba01,Other Equity,Financial Services,,,,,,,,,500,0,,500,,,,766,,GLAD,2026-02-04
+Quality Environmental Midco,co_5788ad5d11ae,Preferred Equity,Environmental Services,,,,,,,,,3000,2827,,3000,,,,3000000,,GLAD,2026-02-04
+HH-Inspire Acquisition,co_cea354a1026c,Preferred Equity,Media & Entertainment,,,,,,,,,2604,2429,,2604,,,,1681949,,GLAD,2026-02-04
+Pan-Am Dental,co_eaca209c8151,Preferred Equity,Healthcare,,,,,,,,,5909,6562,,5909,,,,5909091,,GLAD,2026-02-04
+Imperative Holdings Corp.,co_0ef396d8413a,Other Equity,,,,,,,,,,488,2459,,488,,,,972569,,GLAD,2026-02-04
+B+T Group Acquisition,co_e1310f2592d0,Preferred Equity,Media & Entertainment,,,,,,,,,2024,0,,2024,,,,6130,,GLAD,2026-02-04
+Ohio Armor Holdings,co_d293b5ff134c,Common Equity,Media & Entertainment,,,,,,,,,1000,1000,,1000,,,,100,,GLAD,2026-02-04
+Sea Link International IRB,co_ee46fe07e1d8,Common Equity,Media & Entertainment,,,,,,,,,823,201,,823,,,,823333,,GLAD,2026-02-04
+Dutch Gold Honey,co_856ef873b888,Common Equity,,,,,,,,,,900,3714,,900,,,,900000,,GLAD,2026-02-04
+Salt & Straw,co_6120273cfcb8,Warrants,Media & Entertainment,,,,,,,,,0,186,,0,,,,,,GLAD,2026-02-04
+Triple H Food Processors,co_95c228522efd,Common Equity,Food & Beverage,,,,,,,,,250,1926,,250,,,,250000,,GLAD,2026-02-04
+GFRC 360,co_b725b64d06a4,Common Equity,,,,,,,,,,0,0,,0,,,,,,GLAD,2026-02-04
+OCI,co_7e887edb52b7,Common Equity,Media & Entertainment,,,,,,,,,1111,1124,,1111,,,,555,,GLAD,2026-02-04
+NeoGraf Solutions LLC,co_94ebeef813ac,Other Equity,Media & Entertainment,,,,,,,,,2000,1192,,2000,,,,2000000,,GLAD,2026-02-04
+Viron International Corp.,co_011c5d9f3392,Other Equity,Media & Entertainment,,,,,,,,,15,0,,15,,,,447,,GLAD,2026-02-04
+Total Access Elevator,co_6710704747a5,Common Equity,,,,,,,,,,750,1370,,750,,,,750000,,GLAD,2026-02-04
+WorkforceQA,co_c71082d6a070,Common Equity,Business Services,,,,,,,,,532,539,,532,,,,529,,GLAD,2026-02-04
+Giving Home Health Care,co_d470e8bcb3f0,Common Equity,Healthcare,,,,,,,,,0,5912,,0,,,,10667,,GLAD,2026-02-04
+GSM MidCo LLC,co_3233beb4ab33,Other Equity,,,,,,,,,,767,2187,,767,,,,767,,GLAD,2026-02-04
+Arc Drilling Holdings LLC,co_6f2f832af2c1,Other Equity,Media & Entertainment,,,,,,,,,5333,8608,,5333,,,,53333,,GLAD,2026-02-04
+Total Safety Holdings,co_2c0977e71da6,Common Equity,,,,,,,,,,499,22,,499,,,,435,,GLAD,2026-02-04
+B+T Group Acquisition,co_e1310f2592d0,Common Equity,Media & Entertainment,,,,,,,,,0,0,,0,,,,,,GLAD,2026-02-04
+Edge Adhesives Holdings,co_1a089392d0f6,First Lien,Chemicals & Materials,9.2%,,SOFR,5.5%,,,,,,,,,,,,,,GLAD,2026-02-04
+Edge Adhesives Holdings,co_1a089392d0f6,First Lien,Chemicals & Materials,,,,,,,,6140,6140,468,,6140,,,,,,GLAD,2026-02-04
+Zero Case Holding Inc.,co_9513bac2629e,First Lien,,10.1%,,SOFR,6.4%,,,,0,0,0,,0,,,,,,GLAD,2026-02-04
+Zero Case Holding Inc.,co_9513bac2629e,First Lien,,10.1%,,SOFR,6.4%,,,,12000,12000,11941,,12000,,,,,,GLAD,2026-02-04
+Snif-Snax,co_eba624b00a6c,First Lien,,10.4%,,SOFR,6.7%,,,,20961,20961,20842,,20961,,,,,,GLAD,2026-02-04
+Edge Adhesives Holdings,co_1a089392d0f6,Preferred Equity,Chemicals & Materials,,,,,,,,,5466,0,,5466,,,,5466,,GLAD,2026-02-04
+Encore Dredging Holdings,co_eb29981e69d8,Preferred Equity,CASH EQUIVALENTS - 6.6 %,,,,,,,,,3840,5813,,3840,,,,3840000,,GLAD,2026-02-04
+Snif-Snax,co_eba624b00a6c,Preferred Equity,,,,,,,,,,1500,1909,,1500,,,,1500000,,GLAD,2026-02-04
+Canopy Safety Brands,co_81849fe0fa15,Preferred Equity,Media & Entertainment,,,,,,,,,500,926,,500,,,,500000,,GLAD,2026-02-04
+Zero Case Holding Inc.,co_9513bac2629e,Other Equity,,,,,,,,,,1000,1382,,1000,,,,1000,,GLAD,2026-02-04
+Gladstone Alternative Income Fund – Common Stock,co_80334e09699c,Other Equity,,,,,,,,,,5000,5075,,5000,,,,500000,,GLAD,2026-02-04
+Canopy Safety Brands,co_81849fe0fa15,Common Equity,Media & Entertainment,,,,,,,,,800,3435,,800,,,,1170370,,GLAD,2026-02-04
+Eegee Acquisition Corp.,co_5e5caad089dd,First Lien,Media & Entertainment,10.7%,,SOFR,7%,,,,14500,14500,14500,,14500,,,,,,GLAD,2026-02-04
+Engineering Manufacturing Technologies LLC,co_1d2af3b61aaa,First Lien,Industrials,11.9%,,SOFR,8.3%,,,,1950,1950,1510,,1950,,,,,,GLAD,2026-02-04
+Engineering Manufacturing Technologies,co_1d2af3b61aaa,First Lien,Industrials,8%,3.9%,SOFR,8.3%,,,,23421,23421,18134,,23421,,,,,,GLAD,2026-02-04
+Lonestar EMS,co_9d94ec1b896c,First Lien,CASH EQUIVALENTS - 6.6 %,12%,,,,,,,4450,4409,4450,,4409,,,,,,GLAD,2026-02-04
+Technical Resource Management LLC,co_5c0db81557ac,First Lien,Business Services,9.7%,4.5%,SOFR,10.5%,,,,3111,3111,2774,,3111,,,,,,GLAD,2026-02-04
+Technical Resource Management LLC,co_5c0db81557ac,First Lien,Business Services,9.7%,4.5%,SOFR,10.5%,,,,1227,1227,1094,,1227,,,,,,GLAD,2026-02-04
+Technical Resource Management,co_5c0db81557ac,First Lien,Business Services,9.7%,14%,SOFR,10.5%,,,,370,370,330,,370,,,,,,GLAD,2026-02-04
+WB Xcel Holdings LLC,co_338f1dc451d7,First Lien,Media & Entertainment,14.2%,,SOFR,10.5%,,,,5150,5150,3180,,5150,,,,,,GLAD,2026-02-04
+WB Xcel Holdings,co_338f1dc451d7,First Lien,Media & Entertainment,14.2%,,SOFR,10.5%,,,,9775,9775,6035,,9775,,,,,,GLAD,2026-02-04
+TNCP Intermediate HoldCo LLC,co_1ef3ec5cd5a2,First Lien,Media & Entertainment,11%,,,,,,,0,0,0,,0,,,,,,GLAD,2026-02-04
+Defiance Integrated Technologies,co_5b60c5ba1767,First Lien,Media & Entertainment,13.3%,,SOFR,9.6%,,,,8792,8792,8792,,8792,,,,,,GLAD,2026-02-04
+Alsay Inc.,co_8f2fb002429d,First Lien,CASH EQUIVALENTS - 6.6 %,12.8%,,,,,,,10000,10000,10000,,10000,,,,,,GLAD,2026-02-04
+Alsay Inc.,co_8f2fb002429d,First Lien,CASH EQUIVALENTS - 6.6 %,,,,,,,,5000,5000,5470,,5000,,,,,,GLAD,2026-02-04
+WB Xcel Holdings,co_338f1dc451d7,Preferred Equity,Media & Entertainment,,,,,,,,,2750,0,,2750,,,,333,,GLAD,2026-02-04
+Defiance Integrated Technologies,co_5b60c5ba1767,Common Equity,Media & Entertainment,,,,,,,,,581,0,,581,,,,33321,,GLAD,2026-02-04
+Eegee Acquisition Corp.,co_5e5caad089dd,Other Equity,CASH EQUIVALENTS - 6.6 %,,,,,,,,,8500,2165,,8500,,,,1000,,GLAD,2026-02-04
+Engineering Manufacturing Technologies,co_1d2af3b61aaa,Common Equity,Industrials,,,,,,,,,3000,0,,3000,,,,16000,,GLAD,2026-02-04
+Lonestar EMS,co_9d94ec1b896c,Common Equity,CASH EQUIVALENTS - 6.6 %,,,,,,,,,6750,2164,,6750,,,,,,GLAD,2026-02-04
+Technical Resource Management,co_5c0db81557ac,Common Equity,Business Services,,,,,,,,,2000,0,,2000,,,,2000000,,GLAD,2026-02-04
+Technical Resource Management,co_5c0db81557ac,Warrants,Business Services,,,,,,,,,0,0,,0,,,,4558041,,GLAD,2026-02-04
+WB Xcel Holdings,co_338f1dc451d7,Common Equity,Media & Entertainment,,,,,,,,,1,0,,1,,,,12340,,GLAD,2026-02-04
+TNCP Intermediate HoldCo,co_1ef3ec5cd5a2,Common Equity,Media & Entertainment,,,,,,,,,500,5365,,500,,,,790000,,GLAD,2026-02-04
+First Citizens Premium Money Market Savings,co_a44f2897e7f9,Other,,3.25%,,,,,,,,,,,,,,,,,GLAD,2026-02-04

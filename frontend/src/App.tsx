@@ -26,14 +26,19 @@ function App() {
   const [showMobileSidebar, setShowMobileSidebar] = useState(false);
 
   const { data: periods } = useBDCPeriods(ticker);
-  const defaultPeriod = useMemo(() => (periods && periods.length ? periods[periods.length - 1] : undefined), [periods]);
+  const latestPeriodForTicker = useMemo(() => {
+    if (!ticker || !index?.bdcs) return undefined;
+    const bdc = index.bdcs.find((b) => b.ticker === ticker);
+    return bdc?.latest ?? (periods && periods.length ? periods[periods.length - 1] : undefined);
+  }, [index, ticker, periods]);
+  const defaultPeriod = latestPeriodForTicker;
 
-  const getStoredPeriod = (t: string | undefined, prds: string[] | undefined): string | undefined => {
+  const getStoredPeriod = (t: string | undefined, prds: string[] | undefined, latest: string | undefined): string | undefined => {
     if (!t || !prds || prds.length === 0) return undefined;
     const key = `bdc_period_${t}`;
     const stored = localStorage.getItem(key);
     if (stored && prds.includes(stored)) return stored;
-    return prds[prds.length - 1];
+    return latest ?? prds[prds.length - 1];
   };
 
   const [period, setPeriod] = useState<string | undefined>(undefined);
@@ -48,17 +53,17 @@ function App() {
 
   useEffect(() => {
     if (ticker && periods && periods.length) {
-      setPeriod(getStoredPeriod(ticker, periods));
+      setPeriod(getStoredPeriod(ticker, periods, latestPeriodForTicker));
     } else {
       setPeriod(undefined);
     }
-  }, [ticker, periods]);
+  }, [ticker, periods, latestPeriodForTicker]);
 
   useEffect(() => {
     if (periods && periods.length && !period) {
-      setPeriod(getStoredPeriod(ticker, periods));
+      setPeriod(getStoredPeriod(ticker, periods, latestPeriodForTicker));
     }
-  }, [periods, ticker, period]);
+  }, [periods, ticker, period, latestPeriodForTicker]);
 
   useEffect(() => {
     if (ticker && period && periods && periods.includes(period)) {
@@ -258,6 +263,7 @@ function App() {
         rowCount={viewMode === 'bdc' ? investments.length : undefined}
         selectedCompanyName={selectedCompanyName}
         selectedSector={selectedSector}
+        dataUpdatedAt={index?.generated_at}
       />
     </div>
   );

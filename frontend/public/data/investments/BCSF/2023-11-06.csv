@@ -1,748 +1,546 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,data_quality_flags,ticker,filing_date
-Aimbridge Acquisition Co Inc.,co_0445af39d362,Second Lien,Food & Beverage,7.61%,,SOFR,,2027-02-01,6000,5677,,,,,,,,BCSF,2023-11-06
-Concert Golf Partners Holdco,co_5612d0912fe2,First Lien,Food & Beverage,5.50%,,SOFR,,2029-03-30,20540,20202,,,,,,,,BCSF,2023-11-06
-Pyramid Global Hospitality,co_cefebad746d3,First Lien,Food & Beverage,8.00%,,SOFR,,2027-01-19,15920,15503,,,,,,,,BCSF,2023-11-06
-Saltoun,co_6a39b5e423ca,First Lien,Food & Beverage,13.75%,,SOFR,,2028-04-11,11074,11051,,,,,,,,BCSF,2023-11-06
-New Look Delaware Corp.,co_6de42488b0b0,First Lien,Retail,5.50%,,SOFR,,2028-05-26,9579,9232,,,,,,,,BCSF,2023-11-06
-Thrasio LLC,co_8e7941ae97b3,First Lien,Retail,7.00%,,SOFR,,2026-12-18,9085,9085,,,,,,,,BCSF,2023-11-06
-Avalon Acquiror Inc.,co_7d81e84f1d70,First Lien,Other,6.25%,,SOFR,,2028-03-10,32465,32198,,,,,,,,BCSF,2023-11-06
-Refine Intermediate Inc.,co_54b73ba1370f,First Lien,Other,4.50%,,SOFR,,2027-03-03,19712,19712,,,,,,,,BCSF,2023-11-06
-Smartronix,co_0aef8ece01b9,First Lien,Other,5.75%,,SOFR,,2028-11-23,12969,12771,,,,,,,,BCSF,2023-11-06
-TEI Holdings Inc.,co_d6b66d657cf3,First Lien,Other,5.25%,,SOFR,,2026-12-23,19082,19082,,,,,,,,BCSF,2023-11-06
-WCI Gigawatt Purchaser,co_de45400ed9c0,First Lien,Other,5.50%,,SOFR,,2027-11-19,20485,20233,,,,,,,,BCSF,2023-11-06
-WCI Gigawatt Purchaser,co_de45400ed9c0,Delayed Draw,Other,5.50%,,SOFR,,2027-11-19,4804,4713,,,,,,,,BCSF,2023-11-06
-AMCP Clean Acquisition Company LLC,co_584dc88252e0,First Lien,Other,4.40%,,SOFR,,2025-07-10,8297,7672,,,,,,,,BCSF,2023-11-06
-AMCP Clean Acquisition Company LLC,co_584dc88252e0,Delayed Draw,Other,4.40%,,SOFR,,2025-07-10,1651,1526,,,,,,,,BCSF,2023-11-06
-Eagle Parent Corp.,co_f851aace4ef7,First Lien,Other,4.25%,,SOFR,,2029-04-02,3318,3310,,,,,,,,BCSF,2023-11-06
-MZR Buyer LLC,co_22427746abc5,First Lien,Other,6.75%,,SOFR,,2026-12-21,27584,27520,,,,,,,,BCSF,2023-11-06
-Meriplex Communications Ltd.,co_106226ee9384,First Lien,Telecommunications,5.00%,,SOFR,,2028-07-17,14964,14769,,,,,,,,BCSF,2023-11-06
-Taoglas,co_9e4783bec38d,First Lien,Telecommunications,7.00%,,SOFR,,2029-02-28,9950,9857,,,,,,,,BCSF,2023-11-06
-DC Blox Inc.,co_2c7bb92cdd0c,Preferred Equity,Telecommunications,,,,,,,,3822,3851,4915,,,,,BCSF,2023-11-06
-DC Blox Inc.,co_2c7bb92cdd0c,Other Equity,Telecommunications,,,,,,,,124,1,,,,,,BCSF,2023-11-06
-DC Blox Inc.,co_2c7bb92cdd0c,Warrants,Telecommunications,,,,,,,,177,2,,,,,,BCSF,2023-11-06
-DC Blox Inc.,co_2c7bb92cdd0c,Delayed Draw,Telecommunications,,,,4.00%,2026-03-22,32344,32179,,,,,,,,BCSF,2023-11-06
-Taoglas,co_9e4783bec38d,Other Equity,Telecommunications,,,,,,,,2259,2259,2089,,,,,BCSF,2023-11-06
-ARL Holdings LLC,co_59b7e8533c17,Other Equity,Transportation,,,,,,,,445,683,,,,,,BCSF,2023-11-06
-Grammer Investment Holdings LLC,co_533d0bf06ba5,Warrants,Transportation,,,,,,,,122,,,,,,,BCSF,2023-11-06
-Grammer Investment Holdings LLC,co_533d0bf06ba5,Other Equity,Transportation,,,,,,,,1011,1019,753,,,,,BCSF,2023-11-06
-Batteries Plus Holding Corp.,co_2f51146be411,First Lien,Retail,6.75%,,LIBOR,,2023-06-30,,,18172,18172,18172,,,,,BCSF,2023-11-06
-Batteries Plus Holding Corp.,co_2f51146be411,Revolver,Retail,5.75%,,Prime,,2023-06-30,,,916,915,915,,,,,BCSF,2023-11-06
-New Look Delaware Corp.,co_6de42488b0b0,First Lien,Retail,5.50%,,LIBOR,,2028-05-26,,,9653,9568,9568,,,,,BCSF,2023-11-06
-New Look Delaware Corp.,co_6de42488b0b0,Delayed Draw,Retail,5.50%,,CDOR,,2028-05-26,,,385,376,376,,,,,BCSF,2023-11-06
-New Look Vision Group,co_e2b53a38c165,Delayed Draw,Retail,5.50%,,CDOR,,2028-05-26,,,55,44,44,,,CAD,,BCSF,2023-11-06
-New Look Vision Group,co_e2b53a38c165,Revolver,Retail,5.50%,,CDOR,,2026-05-26,,,1688,1250,1250,,,CAD,,BCSF,2023-11-06
-Thrasio LLC,co_8e7941ae97b3,First Lien,Retail,7.00%,,LIBOR,,2026-12-18,,,8485,8308,8308,,,,,BCSF,2023-11-06
-Walker Edison,co_2f44f1e49c5a,First Lien,Retail,5.75%,3.00%,LIBOR,,2027-08-05,,,21019,20685,20685,,,,,BCSF,2023-11-06
-ACAMS,co_e15005b9655b,Other Equity,Other,,,,,,,,3337,3337,3337,,,,,BCSF,2023-11-06
-AMCP Clean Acquisition Company LLC,co_584dc88252e0,First Lien,Other,4.35%,,SOFR,,2025-07-10,,,16254,16141,16141,,,,,BCSF,2023-11-06
-AMCP Clean Acquisition Company LLC,co_584dc88252e0,Delayed Draw,Other,4.35%,,SOFR,,2025-07-10,,,3934,3906,3906,,,,,BCSF,2023-11-06
-Avalon Acquiror Inc.,co_7d81e84f1d70,First Lien,Other,6.25%,,SOFR,,2028-03-10,,,24598,24376,24376,,,,,BCSF,2023-11-06
-Avalon Acquiror Inc.,co_7d81e84f1d70,Revolver,Other,6.25%,,SOFR,,2028-03-10,,,1050,886,886,,,,,BCSF,2023-11-06
-Brook Bidco,co_996f1bf749c4,First Lien,Other,4.25%,3.00%,SONIA,,2028-07-07,,,717,976,976,,,£,,BCSF,2023-11-06
-Brook Bidco,co_996f1bf749c4,Preferred Equity,Other,,,,,,,,5675,7783,7783,,,,,BCSF,2023-11-06
-Caribou Bidco Ltd.,co_3a0c47e12016,First Lien,Other,6.00%,,SONIA,,2029-01-29,,,8070,10801,10801,,,£,,BCSF,2023-11-06
-Caribou Bidco Ltd.,co_3a0c47e12016,Delayed Draw,Other,6.00%,,SONIA,,2029-01-29,,,16,20,20,,,£,,BCSF,2023-11-06
-Chamber Bidco Ltd.,co_3a3818b2d0ac,First Lien,Other,5.50%,,LIBOR,,2028-06-07,,,237,235,235,,,,,BCSF,2023-11-06
-Darcy Partners,co_4372265399c7,First Lien,Other,7.75%,,SOFR,,2028-06-01,,,1526,1511,1511,,,,,BCSF,2023-11-06
-Darcy Partners,co_4372265399c7,Other Equity,Other,,,,,,,,359,359,359,,,,,BCSF,2023-11-06
-Elevator Holdco Inc.,co_d8ce90c12293,Other Equity,Other,,,,,,,,2,2448,2448,,,,,BCSF,2023-11-06
-iBanFirst,co_23bf70770fe7,First Lien,Other,10.00%,10.00%,,7/13/2028,,,2820,2889,2889,,,€,,,BCSF,2023-11-06
-Aimbridge Acquisition Co Inc.,co_0445af39d362,Second Lien,Food & Beverage,7.50%,,LIBOR,4.12%,,2027-02-01,6000,5605,5605,,,,,,BCSF,2023-11-06
-Concert Golf Partners Holdco,co_5612d0912fe2,First Lien,Food & Beverage,5.50%,,SOFR,4.78%,,2029-03-30,20696,20309,20309,,,,,,BCSF,2023-11-06
-Saltoun,co_6a39b5e423ca,First Lien,Food & Beverage,11.00%,,SOFR,0.00%,,2028-04-11,10419,10393,10393,,,,,,BCSF,2023-11-06
-Batteries Plus Holding Corp.,co_2f51146be411,First Lien,Retail,6.75%,,LIBOR,4.38%,,2023-06-30,10500,10500,10500,,,,,,BCSF,2023-11-06
-Thrasio LLC,co_8e7941ae97b3,First Lien,Retail,7.00%,,LIBOR,4.17%,,2026-12-18,13046,13046,13046,,,,,,BCSF,2023-11-06
-Avalon Acquiror Inc.,co_7d81e84f1d70,First Lien,Other,6.25%,,SOFR,4.58%,,2028-03-10,22686,22482,22482,,,,,,BCSF,2023-11-06
-Refine Intermediate Inc.,co_54b73ba1370f,First Lien,Other,4.50%,,LIBOR,4.73%,,2027-03-03,20800,20800,20800,,,,,,BCSF,2023-11-06
-Smartronix,co_0aef8ece01b9,First Lien,Other,6.00%,,LIBOR,4.17%,,2028-11-23,13068,12839,12839,,,,,,BCSF,2023-11-06
-TEI Holdings Inc.,co_d6b66d657cf3,First Lien,Other,5.75%,,LIBOR,4.73%,,2026-12-23,9238,9238,9238,,,,,,BCSF,2023-11-06
-WCI Gigawatt Purchaser,co_de45400ed9c0,First Lien,Other,5.75%,,LIBOR,4.66%,,2027-11-19,20694,20393,20393,,,,,,BCSF,2023-11-06
-Eagle Parent Corp.,co_f851aace4ef7,First Lien,Other,4.25%,,SOFR,4.58%,,2029-04-02,3344,3334,3334,,,,,,BCSF,2023-11-06
-MZR Buyer LLC,co_22427746abc5,First Lien,Other,6.75%,,SOFR,5.00%,,2026-12-21,23016,23016,23016,,,,,,BCSF,2023-11-06
-Conterra Ultra Broadband Holdings Inc.,co_354e487e618b,First Lien,Telecommunications,4.75%,,SOFR,4.43%,,2027-04-27,3802,3691,3691,,,,,,BCSF,2023-11-06
-Meriplex Communications Ltd.,co_106226ee9384,First Lien,Telecommunications,5.00%,,SOFR,4.42%,,2028-07-17,12000,11774,11774,,,,,,BCSF,2023-11-06
-A&R Logistics Inc.,co_371d1c926f85,First Lien,Transportation,6.00%,,SOFR,3.71%,,2025-05-05,10668,10668,10668,,,,,,BCSF,2023-11-06
-Grammer Purchaser Inc.,co_84c05683b02c,Revolver,Transportation,4.50%,,SOFR,4.29%,,2024-09-30,207,207,207,,,,,,BCSF,2023-11-06
-Access,co_a0561fd649cd,First Lien,Other,5.25%,,SONIA,8.68%,,2029-06-04,80,98,,,,,,,BCSF,2023-11-06
-Access,co_a0561fd649cd,Delayed Draw,Other,5.25%,,SONIA,8.68%,,2029-06-04,7578,8549,,,,,,,BCSF,2023-11-06
-AMI US Holdings Inc.,co_fea4506bda99,First Lien,Other,5.25%,,LIBOR,9.63%,,2025-04-01,3856,3822,,,,,,,BCSF,2023-11-06
-Applitools,co_b5238111abba,First Lien,Other,6.25%,,SOFR,10.57%,,2029-05-25,25316,25085,,,,,,,BCSF,2023-11-06
-Appriss Holdings Inc.,co_46456f356d7b,Other Equity,,,,,,,,,2136,1606,,,,,,BCSF,2023-11-06
-Appriss Holdings Inc.,co_46456f356d7b,First Lien,Other,7.25%,,LIBOR,11.54%,,2027-05-06,11264,11084,,,,,,,BCSF,2023-11-06
-AQ Software Corp.,co_3ca29c019d51,Preferred Equity,Other,,,,,,,1,1107,,,,,,,BCSF,2023-11-06
-AQ Software Corp.,co_3ca29c019d51,Preferred Equity,Other,,,,,,,2,1844,,,,,,,BCSF,2023-11-06
-CB Nike IntermediateCo Ltd.,co_91eb33abc72a,First Lien,Other,4.75%,,LIBOR,9.16%,,2025-10-31,344,340,,,,,,,BCSF,2023-11-06
-Cloud Technology Solutions,co_ff63daa13729,Preferred Equity,Other,,,,,,,4408,5360,,,,,,,BCSF,2023-11-06
-Cloud Technology Solutions,co_ff63daa13729,First Lien,Other,7.50%,,SONIA,11.93%,,2030-01-03,7406,8815,,,,,,,BCSF,2023-11-06
-Drilling Info Holdings Inc.,co_9272566f7980,First Lien,Other,4.25%,,LIBOR,8.63%,,2025-07-30,11149,11133,,,,,,,BCSF,2023-11-06
-Eagle Rock Capital Corp.,co_b8b0a6b86504,Preferred Equity,Other,,,,,,,3345,3345,,,,,,,BCSF,2023-11-06
-Element Buyer Inc.,co_e59488538633,Delayed Draw,Other,5.50%,,LIBOR,9.89%,,2025-07-19,10965,10978,,,,,,,BCSF,2023-11-06
-Element Buyer Inc.,co_e59488538633,First Lien,Other,5.50%,,LIBOR,9.89%,,2025-07-18,36625,36767,,,,,,,BCSF,2023-11-06
-Eleven Software,co_dff2dd2b4e82,First Lien,Other,8.00%,,SOFR,11.55%,,2027-04-25,7439,7371,,,,,,,BCSF,2023-11-06
-Eleven Software,co_dff2dd2b4e82,Revolver,Other,8.25%,,SOFR,12.77%,,2026-09-25,149,136,,,,,,,BCSF,2023-11-06
-Eleven Software,co_dff2dd2b4e82,Preferred Equity,Other,,,,,,,896,896,,,,,,,BCSF,2023-11-06
-Gluware,co_2c22b87218c4,First Lien,Other,,3.50%,,12.50%,,2025-10-15,19576,18915,,,,,,,BCSF,2023-11-06
-Gluware,co_2c22b87218c4,Warrants,Other,,,,,,,3328,478,,,,,,,BCSF,2023-11-06
-Margaux Acquisition Inc.,co_a66a58a76d7f,Delayed Draw,Financial Services,9.49%,,LIBOR,,2024-12-19,9105,9088,,,,,,,,BCSF,2023-11-06
-Margaux Acquisition Inc.,co_a66a58a76d7f,First Lien,Financial Services,9.49%,,LIBOR,,2024-12-19,17591,17445,,,,,,,,BCSF,2023-11-06
-Margaux Acquisition Inc.,co_a66a58a76d7f,Revolver,Financial Services,9.98%,,SOFR,,2024-12-19,957,939,,,,,,,,BCSF,2023-11-06
-Margaux UK Finance Ltd.,co_c6948209b9af,First Lien,Financial Services,8.06%,,SONIA,,2024-12-19,7493,9689,,,,,,,,BCSF,2023-11-06
-MRHT,co_cbb5b63e6b61,Delayed Draw,Financial Services,8.41%,,Euribor,,2028-07-26,2631,2655,,,,,,,,BCSF,2023-11-06
-MRHT,co_cbb5b63e6b61,First Lien,Financial Services,6.90%,,Euribor,,2028-07-26,500,535,,,,,,,,BCSF,2023-11-06
-MRHT,co_cbb5b63e6b61,First Lien,Financial Services,7.06%,,Euribor,,2028-07-26,216,249,,,,,,,,BCSF,2023-11-06
-MRHT,co_cbb5b63e6b61,First Lien,Financial Services,7.41%,,Euribor,,2028-07-26,100,101,,,,,,,,BCSF,2023-11-06
-Paisley Bidco Ltd.,co_1319d9d0ff80,Revolver,Financial Services,8.30%,,Euribor,,2028-11-26,5165,6128,,,,,,,,BCSF,2023-11-06
-Paisley Bidco Ltd.,co_1319d9d0ff80,Revolver,Financial Services,7.11%,,Euribor,,2028-11-26,32,36,,,,,,,,BCSF,2023-11-06
-World Insurance,co_aa8dfa7e333b,Delayed Draw,Financial Services,10.33%,,SOFR,,2026-04-01,8274,8218,,,,,,,,BCSF,2023-11-06
-World Insurance,co_aa8dfa7e333b,First Lien,Financial Services,10.33%,,SOFR,,2026-04-01,3114,3070,,,,,,,,BCSF,2023-11-06
-World Insurance,co_aa8dfa7e333b,Revolver,Financial Services,10.07%,,SOFR,,2026-04-01,605,593,,,,,,,,BCSF,2023-11-06
-Apollo Intelligence,co_8ce53e1baf73,First Lien,Pharmaceuticals & Biotechnology,9.93%,,SOFR,,2028-06-01,15271,15127,,,,,,,,BCSF,2023-11-06
-Apollo Intelligence,co_8ce53e1baf73,Other Equity,Pharmaceuticals & Biotechnology,,,,,,,,,32,3162,3061,,,fair_value_suspicious_vs_size,BCSF,2023-11-06
-CB Titan Holdings Inc.,co_476fe4264def,Preferred Equity,Pharmaceuticals & Biotechnology,,,,,,,,1953,1953,,,,,,BCSF,2023-11-06
-CPS Group Holdings Inc.,co_7a3ad8ac04a6,First Lien,Pharmaceuticals & Biotechnology,10.48%,,LIBOR,,2025-03-03,44790,44606,,,,,,,,BCSF,2023-11-06
-Datix Bidco Ltd.,co_ae2c07b9fe9a,Revolver,Pharmaceuticals & Biotechnology,6.69%,,SONIA,,2024-10-28,10,11,,,,,,,,BCSF,2023-11-06
-Datix Bidco Ltd.,co_ae2c07b9fe9a,Second Lien,Pharmaceuticals & Biotechnology,9.44%,,SONIA,,2026-04-27,121,164,,,,,,,,BCSF,2023-11-06
-Datix Bidco Ltd.,co_ae2c07b9fe9a,First Lien,Pharmaceuticals & Biotechnology,8.07%,,BBSW,,2025-04-28,42,32,,,,,,,,BCSF,2023-11-06
-Margaux Acquisition Inc.,co_a66a58a76d7f,First Lien,Financial Services,11.29%,,SOFR,5.75%,,2024-12-19,16540,16451,,,,,,,BCSF,2023-11-06
-Margaux Acquisition Inc.,co_a66a58a76d7f,Revolver,Financial Services,11.29%,,SOFR,5.75%,,2025-12-19,2872,2861,,,,,,,BCSF,2023-11-06
-Margaux UK Finance Ltd.,co_c6948209b9af,Revolver,Financial Services,10.80%,,SONIA,5.75%,,2024-12-19,499,613,,,,,,,BCSF,2023-11-06
-Margaux UK Finance Ltd.,co_c6948209b9af,First Lien,Financial Services,10.80%,,SONIA,5.75%,,2024-12-19,7415,9613,,,,,,,BCSF,2023-11-06
-MRHT,co_cbb5b63e6b61,First Lien,Financial Services,10.50%,,Euribor,6.75%,,2029-02-01,956,1018,,,,,,,BCSF,2023-11-06
-Paisley Bidco Ltd.,co_1319d9d0ff80,Revolver,Financial Services,9.21%,,Euribor,5.50%,,2028-11-26,32,36,,,,,,,BCSF,2023-11-06
-Simplicity,co_2ae0514924b1,First Lien,Financial Services,11.79%,,SOFR,6.25%,,2026-12-02,16641,16191,,,,,,,BCSF,2023-11-06
-World Insurance,co_aa8dfa7e333b,First Lien,Financial Services,11.39%,,SOFR,6.00%,,2028-04-03,11302,11222,,,,,,,BCSF,2023-11-06
-Apollo Intelligence,co_8ce53e1baf73,First Lien,Pharmaceuticals & Biotechnology,11.12%,,SOFR,5.75%,,2028-06-01,15271,15159,,,,,,,BCSF,2023-11-06
-Apollo Intelligence,co_8ce53e1baf73,Revolver,Pharmaceuticals & Biotechnology,11.12%,,SOFR,5.75%,,2028-06-01,2162,2106,,,,,,,BCSF,2023-11-06
-CPS Group Holdings Inc.,co_7a3ad8ac04a6,First Lien,Pharmaceuticals & Biotechnology,10.79%,,SOFR,5.25%,,2025-03-03,34504,34403,,,,,,,BCSF,2023-11-06
-CPS Group Holdings Inc.,co_7a3ad8ac04a6,Revolver,Pharmaceuticals & Biotechnology,10.69%,,SOFR,5.25%,,2025-03-03,789,772,,,,,,,BCSF,2023-11-06
-Datix Bidco Ltd.,co_ae2c07b9fe9a,Revolver,Pharmaceuticals & Biotechnology,9.69%,,SONIA,4.50%,,2024-10-28,3,3,,,,,,,BCSF,2023-11-06
-Datix Bidco Ltd.,co_ae2c07b9fe9a,Second Lien,Pharmaceuticals & Biotechnology,11.93%,,SONIA,7.75%,,2026-04-27,121,164,,,,,,,BCSF,2023-11-06
-Datix Bidco Ltd.,co_ae2c07b9fe9a,First Lien,Pharmaceuticals & Biotechnology,8.41%,,BBSW,4.50%,,2025-04-28,42,32,,,,,,,BCSF,2023-11-06
-Great Expressions Dental Center PC,co_90273ecab5fc,First Lien,Pharmaceuticals & Biotechnology,12.54%,3.00%,SOFR,4.00%,,2026-09-30,9450,9443,,,,,,,BCSF,2023-11-06
-HealthDrive,co_828d9562592b,First Lien,Pharmaceuticals & Biotechnology,11.48%,,SOFR,6.10%,,2029-08-20,24010,24010,,,,,,,BCSF,2023-11-06
-Opus2,co_13dda502e4ae,Other Equity,Other,,,,,2022-05-05,,,,2272,2900,,,,,BCSF,2023-11-06
-Parcel2Go,co_6eb62fa73008,Other Equity,Other,,,,,,,3605,4237,,,,,,,BCSF,2023-11-06
-MZR Aggregator,co_1841e210c1f8,Other Equity,Other,,,,,,,1,798,,,,,,,BCSF,2023-11-06
-Surrey Bidco Ltd.,co_3a56d633125d,First Lien,Other,7.00% PIK,7.00%,SONIA,8.97%,2026-05-11,54,67,,,,,,,,BCSF,2023-11-06
-Forming Machining Industries Holdings LLC,co_1a78faf09874,First Lien,Aerospace & Defense,,,LIBOR,4.25,2025-10-09,16269,16206,,,,,,,,BCSF,2023-11-06
-Forming Machining Industries Holdings LLC,co_1a78faf09874,Second Lien,Aerospace & Defense,,,LIBOR,8.25,2026-10-09,6540,6503,,,,,,,,BCSF,2023-11-06
-GSP Holdings LLC,co_f11a772f700c,First Lien,Aerospace & Defense,10.23%,0.25,LIBOR,5.75,2025-11-06,35352,35459,,,,,,,,BCSF,2023-11-06
-GSP Holdings LLC,co_f11a772f700c,Revolver,Aerospace & Defense,9.74%,0.5,LIBOR,5.75,2025-11-06,4550,4528,,,,,,,,BCSF,2023-11-06
-Kellstrom Aerospace Group Inc.,co_c43831606c7e,Other Equity,Aerospace & Defense,,,,,,,1963,894,,,,,,,BCSF,2023-11-06
-Kellstrom Commercial Aerospace Inc.,co_4a5decc445db,First Lien,Aerospace & Defense,9.88%,,SOFR,6.00,2025-07-01,29898,29611,,,,,,,,BCSF,2023-11-06
-Kellstrom Commercial Aerospace Inc.,co_4a5decc445db,Revolver,Aerospace & Defense,10.75%,0.5,SOFR,6.25,2025-07-01,1173,1136,,,,,,,,BCSF,2023-11-06
-Mach Acquisition R/C,co_cb74725b137c,Revolver,Aerospace & Defense,,,LIBOR,7.50,2026-10-18,4017,3864,,,,,,,,BCSF,2023-11-06
-Mach Acquisition T/L,co_cb74725b137c,First Lien,Aerospace & Defense,8.72%,4.00,LIBOR,4.50,2026-10-18,33012,32502,,,,,,,,BCSF,2023-11-06
-Precision Ultimate Holdings LLC,co_7d63e5789517,Other Equity,Aerospace & Defense,,,,,,,1417,1417,,,,,,,BCSF,2023-11-06
-Robinson Helicopter,co_2618d30857d8,Other Equity,Aerospace & Defense,,,,,,,1592,1592,,,,,,,BCSF,2023-11-06
-Robinson Helicopter,co_2618d30857d8,First Lien,Aerospace & Defense,10.92%,,SOFR,6.50,2028-06-30,26272,25716,,,,,,,,BCSF,2023-11-06
-Saturn Purchaser Corp.,co_1a2ed7d76c61,First Lien,Aerospace & Defense,8.54%,,SOFR,5.60,2029-07-22,56867,56299,,,,,,,,BCSF,2023-11-06
-Saturn Purchaser Corp.,co_1a2ed7d76c61,Revolver,Aerospace & Defense,,,,,,2029-07-22,,,46,,,,,,BCSF,2023-11-06
-Whitcraft LLC,co_32f76a32010e,First Lien,Aerospace & Defense,11.73%,,SOFR,7.00,2023-04-03,28686,28651,,,,,,,,BCSF,2023-11-06
-Whitcraft LLC,co_32f76a32010e,Revolver,Aerospace & Defense,11.25%,,Prime,5.00,2023-04-03,1450,1448,,,,,,,,BCSF,2023-11-06
-WP CPP Holdings LLC,co_8701bb132186,Second Lien,Aerospace & Defense,12.17%,,LIBOR,7.75,2026-04-30,11724,11659,,,,,,,,BCSF,2023-11-06
-American Trailer Rental Group,co_a49305eebed1,Subordinated Debt,Automotive,9.00%,2.00,,11.00,2027-12-01,4999,4937,,,,,,,,BCSF,2023-11-06
-American Trailer Rental Group,co_a49305eebed1,Subordinated Debt,Automotive,9.00%,2.00,,11.00,2027-12-01,15424,15144,,,,,,,,BCSF,2023-11-06
-American Trailer Rental Group,co_a49305eebed1,Subordinated Debt,Automotive,9.00%,4.50%,,9.00,2027-12-01,19261,18889,5076,5021,,,,,,BCSF,2023-11-06
-Cardo,co_489d7a38ff74,First Lien,Automotive,10.21%,,LIBOR,5.00,2028-05-12,98,97,,,,,,,,BCSF,2023-11-06
-Intoxalock,co_9c1d423ddabc,First Lien,Automotive,11.18%,,SOFR,6.75,2028-11-01,19522,19327,,,,,,,,BCSF,2023-11-06
-Intoxalock,co_9c1d423ddabc,Revolver,Automotive,11.18%,,SOFR,6.75,2028-11-01,343,310,,,,,,,,BCSF,2023-11-06
-JHCC Holdings LLC,co_8bef45178f31,Delayed Draw,Automotive,10.48%,,LIBOR,5.75,2025-09-09,8332,8309,,,,,,,,BCSF,2023-11-06
-American Trailer Rental Group,co_a49305eebed1,Subordinated Debt,Automotive,9.00%,4.50%,,9.00,2027-12-01,15659,15412,,,,,,,,BCSF,2023-11-06
-American Trailer Rental Group,co_a49305eebed1,Subordinated Debt,Automotive,9.00%,4.50%,,9.00,2027-12-01,19554,19232,,,,,,,,BCSF,2023-11-06
-Gills Point S,co_8fa696abf31e,First Lien,Automotive,,,SOFR,7.00,2029-05-15,12663,12663,,,,,,,,BCSF,2023-11-06
-Gills Point S,co_8fa696abf31e,Revolver,Automotive,,,Prime,6.00,2029-05-15,104,104,,,,,,,,BCSF,2023-11-06
-Gills Point S,co_8fa696abf31e,Delayed Draw,Automotive,,,SOFR,7.10,2029-05-15,252,249,,,,,,,,BCSF,2023-11-06
-Intoxalock,co_9c1d423ddabc,First Lien,Automotive,,,SOFR,6.75,2028-11-01,12158,12051,,,,,,,,BCSF,2023-11-06
-JHCC Holdings LLC,co_8bef45178f31,First Lien,Automotive,,,SOFR,5.25,2025-09-09,12073,12006,,,,,,,,BCSF,2023-11-06
-Morrow Sodali,co_a2d64a78e79d,Delayed Draw,Financial Services,,,SOFR,5.63,2028-04-25,2632,2617,,,,,,,,BCSF,2023-11-06
-Morrow Sodali,co_a2d64a78e79d,Delayed Draw,Financial Services,,,SOFR,5.50,2028-04-25,2223,2167,,,,,,,,BCSF,2023-11-06
-Morrow Sodali,co_a2d64a78e79d,Revolver,Financial Services,,,SOFR,5.00,2028-04-25,798,773,,,,,,,,BCSF,2023-11-06
-Arctic Glacier U.S.A. Inc.,co_b5af8e4747d7,First Lien,Food & Beverage,6.50%,4.00%,SOFR,6.50,2028-05-24,13140,12886,,,,,,,,BCSF,2023-11-06
-PPX,co_1aefac3553f9,Preferred Equity,Food & Beverage,,,,,,,,,,,5000,5836,,,BCSF,2023-11-06
-ClockSpring,co_8ee15ee82f54,Second Lien,Other,,,SOFR,6.50%,1.00%,8/1/2025,5483,5422,,,,,,,BCSF,2023-11-06
-New Look (Delaware) Corp.,co_b22538d2510a,Delayed Draw,Retail,11.04%,,SOFR,5.50%,,2028-05-26,382,,,374,,,,,BCSF,2023-11-06
-New Look Vision Group,co_e2b53a38c165,Delayed Draw,Retail,11.01%,,CDOR,5.50%,,2028-05-26,29,,,27,,,,,BCSF,2023-11-06
-New Look Vision Group,co_e2b53a38c165,Revolver,Retail,11.01%,,CDOR,5.50%,,2026-05-26,2462,,,1834,,,,,BCSF,2023-11-06
-New Look Vision Group,co_e2b53a38c165,Delayed Draw,Retail,11.01%,,CDOR,5.50%,,2028-05-26,55,,,44,,,,,BCSF,2023-11-06
-Thrasio LLC,co_8e7941ae97b3,First Lien,Retail,12.65%,,SOFR,7.00%,,2026-12-18,12303,,,11138,,,,,BCSF,2023-11-06
-AMCP Clean Acquisition Company LLC,co_584dc88252e0,First Lien,Other,9.82%,,SOFR,4.40%,,2025-07-10,7830,,,7748,,,,,BCSF,2023-11-06
-AMCP Clean Acquisition Company LLC,co_584dc88252e0,Delayed Draw,Other,9.82%,,SOFR,4.40%,,2025-07-10,2252,,,2232,,,,,BCSF,2023-11-06
-Avalon Acquiror Inc.,co_7d81e84f1d70,First Lien,Other,11.64%,,SOFR,6.25%,,2028-03-10,14463,,,14347,,,,,BCSF,2023-11-06
-Avalon Acquiror Inc.,co_7d81e84f1d70,Revolver,Other,11.65%,,SOFR,6.25%,,2028-03-10,5042,,,4901,,,,,BCSF,2023-11-06
-Brook Bidco,co_996f1bf749c4,First Lien,Other,11.80%,4.25%,SONIA,3.00%,,2028-07-07,765,,,1037,,,,,BCSF,2023-11-06
-Caribou Bidco Ltd.,co_3a0c47e12016,Delayed Draw,Other,11.43%,1.25%,SONIA,5.25%,,2029-01-29,16,,,20,,,,,BCSF,2023-11-06
-Caribou Bidco Ltd.,co_3a0c47e12016,First Lien,Other,11.43%,1.25%,SONIA,5.25%,,2029-01-29,8070,,,10811,,,,,BCSF,2023-11-06
-Chamber Bidco Ltd.,co_3a3818b2d0ac,First Lien,Other,11.31%,,SOFR,6.25%,,2028-06-07,213,,,211,,,,,BCSF,2023-11-06
-Darcy Partners,co_4372265399c7,First Lien,Other,13.07%,,SOFR,7.75%,,2028-06-01,1515,,,1501,,,,,BCSF,2023-11-06
-Darcy Partners,co_4372265399c7,Revolver,Other,,,,,,,,,6,,,0,,,BCSF,2023-11-06
-Elevator Holdco Inc.,co_d8ce90c12293,Other Equity,Other,,,,,,,,2,,,2448,,,,BCSF,2023-11-06
-iBanFirst,co_23bf70770fe7,First Lien,Other,13.95%,10.00%,Euribor,10.00%,,2028-07-13,3087,,,3182,,,,,BCSF,2023-11-06
-iBanFirst,co_23bf70770fe7,First Lien,Other,13.95%,10.00%,Euribor,10.00%,,2028-07-13,89,,,93,,,,,BCSF,2023-11-06
-iBanFirst,co_23bf70770fe7,First Lien,Other,13.95%,10.00%,Euribor,10.00%,,2028-07-13,3244,,,3292,,,,,BCSF,2023-11-06
-iBanFirst Facility,co_9f50346cecd8,Preferred Equity,Other,,,,,,,,,,,7112,,,,BCSF,2023-11-06
-ImageTrend,co_04fae4b5ab0f,Delayed Draw,Other,13.12%,,SOFR,7.75%,,2029-01-31,20000,,,19728,,,,,BCSF,2023-11-06
-ImageTrend,co_04fae4b5ab0f,Revolver,Other,,,,,,,,,0,,,53,,,BCSF,2023-11-06
-Margaux Acquisition Inc.,co_a66a58a76d7f,Revolver,Other,,,,,,,2025-12-19,,,,,,,,BCSF,2023-11-06
-Margaux UK Finance Ltd.,co_c6948209b9af,Revolver,Other,,,,,,,2024-12-19,,,,,,,,BCSF,2023-11-06
-masLabor,co_331a40800920,Revolver,Other,,,,,,,2027-07-01,,,,,,,,BCSF,2023-11-06
-Meriplex Communications Ltd.,co_106226ee9384,Delayed Draw,Other,,,,,,,2028-07-17,,,,,,,,BCSF,2023-11-06
-Meriplex Communications Ltd.,co_106226ee9384,Revolver,Other,,,,,,,2028-07-17,,,,,,,,BCSF,2023-11-06
-Morrow Sodali,co_a2d64a78e79d,Delayed Draw,Other,,,,,,,2028-04-25,,,,,,,,BCSF,2023-11-06
-Morrow Sodali,co_a2d64a78e79d,Revolver,Other,,,,,,,2028-04-25,,,,,,,,BCSF,2023-11-06
-MRH Trowe Beteiligungsgesellschaft MBH - First Lien Senior Secured Loan,co_5779d783047d,First Lien,Financial Services,,,,,,,2028-07-26,,,,,,,,BCSF,2023-11-06
-MRI Software LLC,co_9273c7ffbb6e,Revolver,Software,,,,,,,2026-02-10,,,,,,,,BCSF,2023-11-06
-MZR Buyer LLC,co_22427746abc5,Revolver,Manufacturing,,,,,,,2026-12-21,,,,,,,,BCSF,2023-11-06
-NearMap,co_05354a068fb4,Revolver,Software,,,,,,,2029-12-09,,,,,,,,BCSF,2023-11-06
-New Look Delaware Corp.,co_6de42488b0b0,Delayed Draw,Retail,,,,,,,2028-05-26,,,,,,,,BCSF,2023-11-06
-New Look Vision Group,co_e2b53a38c165,Delayed Draw,Retail,,,,,,,2028-05-26,,,,,,,,BCSF,2023-11-06
-New Look Vision Group,co_e2b53a38c165,Revolver,Retail,,,,,,,2026-05-26,,,,,,,,BCSF,2023-11-06
-OGH Bidco Ltd.,co_6714dd17841b,Delayed Draw,Other,,,,,,,2029-06-29,,,,,,,,BCSF,2023-11-06
-Omni Intermediate,co_d0097fbefc1b,Delayed Draw,Other,,,,,,,2026-11-23,,,,,,,,BCSF,2023-11-06
-Omni Intermediate R/C - First Lien Senior Secured Loan,co_057e4b184682,First Lien,Other,,,,,,,2026-11-30,,,,,,,,BCSF,2023-11-06
-Paisley Bidco Ltd.,co_1319d9d0ff80,Revolver,Other,,,,,,,2028-11-26,,,,,,,,BCSF,2023-11-06
-Parcel2Go - First Lien Senior Secured Loan,co_f7fe2d547c12,First Lien,Transportation,,,,,,,2028-07-15,,,,,,,,BCSF,2023-11-06
-Premier Imaging LLC,co_e6316cbc7286,Delayed Draw,Automotive,,,,,,,2025-01-02,,,,,,,,BCSF,2023-11-06
-Reconomy - First Lien Senior Secured Loan,co_1122cf37ded1,First Lien,Other,,,,,,,2029-06-24,,,,,,,,BCSF,2023-11-06
-Refine Intermediate Inc.,co_54b73ba1370f,Revolver,Software,,,,,,,2026-09-03,,,,,,,,BCSF,2023-11-06
-Revalize Inc.,co_7f5a52b783f9,Revolver,Software,,,,,,,2027-04-15,,,,,,,,BCSF,2023-11-06
-RoadOne,co_ee1cd15309ba,Delayed Draw,Transportation,,,,,,,2028-12-29,,,,,,,,BCSF,2023-11-06
-RoadOne,co_ee1cd15309ba,Revolver,Transportation,,,,,,,2028-12-29,,,,,,,,BCSF,2023-11-06
-RoC Opco LLC,co_a3ceaa00e48a,Revolver,Automotive,,,,,,,2025-02-25,,,,,,,,BCSF,2023-11-06
-Saltoun,co_6a39b5e423ca,Delayed Draw,Other,,,,,,,2028-04-11,,,,,,,,BCSF,2023-11-06
-Saturn Purchaser Corp.,co_1a2ed7d76c61,Revolver,Manufacturing,,,,,,,2029-07-22,,,,,,,,BCSF,2023-11-06
-Robinson Helicopter,co_2618d30857d8,Revolver,Aerospace & Defense,,,,,SOFR,,2028-06-30,31404,31025,31025,,,,,BCSF,2023-11-06
-Saturn Purchaser Corp.,co_1a2ed7d76c61,First Lien,Aerospace & Defense,,,,,SOFR,,2029-07-23,21362,21265,21265,,,,,BCSF,2023-11-06
-Whitcraft-Paradigm,co_622cc366ef4d,First Lien,Aerospace & Defense,,,,,SOFR,,2029-02-28,9950,9857,9857,,,,,BCSF,2023-11-06
-Cardo,co_489d7a38ff74,First Lien,Automotive,,,,,LIBOR,,2028-05-12,10800,10800,10800,,,,,BCSF,2023-11-06
-Gills Point S,co_8fa696abf31e,First Lien,Automotive,,,,,SOFR,,2029-05-15,9975,9975,9975,,,,,BCSF,2023-11-06
-Intoxalock,co_9c1d423ddabc,First Lien,Automotive,,,,,SOFR,,2028-11-01,17143,16989,16989,,,,,BCSF,2023-11-06
-JHCC Holdings LLC,co_8bef45178f31,Delayed Draw,Automotive,,,,,SOFR,,2025-09-09,8268,8186,8186,,,,,BCSF,2023-11-06
-JHCC Holdings LLC,co_8bef45178f31,First Lien,Automotive,,,,,SOFR,,2025-09-09,16488,16331,16331,,,,,BCSF,2023-11-06
-Morrow Sodali Global LLC,co_33db1dd7419f,First Lien,Financial Services,,,,,SOFR,,2028-04-25,7860,7767,7767,,,,,BCSF,2023-11-06
-Hultec,co_ef10dd978ebb,First Lien,Chemicals,,,,,SOFR,,2029-03-31,6467,6282,6282,,,,,BCSF,2023-11-06
-V Global Holdings LLC,co_e97d0109499f,First Lien,Chemicals,,,,,SOFR,,2027-12-22,20166,20066,20066,,,,,BCSF,2023-11-06
-YLG Holdings Inc.,co_10b178f7afc0,First Lien,Construction,,,,,SOFR,,2025-10-31,20401,20401,20401,,,,,BCSF,2023-11-06
-New Milani Group LLC,co_53d49e3a4f21,First Lien,Consumer Products,,,,,SOFR,,2024-06-06,9948,9948,9948,,,,,BCSF,2023-11-06
-Stanton Carpet,co_43488af71287,Second Lien,Consumer Products,,,,,SOFR,,2028-03-31,5000,4924,4924,,,,,BCSF,2023-11-06
-TLC Purchaser Inc.,co_fd2683950cd6,First Lien,Consumer Products,6.25%,2.00%,SOFR,6.25%,,2025-10-13,10382,9745,9745,,,,,,BCSF,2023-11-06
-WSP,co_5d1bb4cb59dd,First Lien,Consumer Products,6.25%,,SOFR,,2027-04-27,5636,5568,5568,,,,,,,BCSF,2023-11-06
-ASP-r-pac Acquisition Co LLC,co_d532e5595c78,First Lien,Packaging,6.00%,,SOFR,,2027-12-29,22877,22687,22687,,,,,,,BCSF,2023-11-06
-Iris Holding Inc.,co_a20de951f3d2,First Lien,Packaging,4.75%,,SOFR,,2028-06-28,9900,9509,9509,,,,,,,BCSF,2023-11-06
-Amspec Services Inc.,co_b411d5f51273,First Lien,Energy,5.75%,,SOFR,,2024-07-02,19616,19616,19616,,,,,,,BCSF,2023-11-06
-Blackbrush Oil & Gas LP.,co_a6d52c22de2b,First Lien,Energy,,2.00%,LIBOR,5.00%,2025-09-03,4483,4483,4483,,,,,,,BCSF,2023-11-06
-Allworth Financial Group LP.,co_bc708ae43d3c,Delayed Draw,Other,5.50%,,SOFR,,2026-12-23,2117,2117,2117,,,,,,,BCSF,2023-11-06
-Allworth Financial Group LP.,co_bc708ae43d3c,First Lien,Other,5.50%,,SOFR,,2026-12-23,8366,8366,8366,,,,,,,BCSF,2023-11-06
-Margaux Acquisition Inc.,co_a66a58a76d7f,Delayed Draw,Financial Services,5.75%,,SOFR,,2024-12-19,9035,9035,9035,,,,,,,BCSF,2023-11-06
-Margaux Acquisition Inc.,co_a66a58a76d7f,First Lien,Financial Services,5.75%,,SOFR,,2024-12-19,11283,11283,11283,,,,,,,BCSF,2023-11-06
-Simplicity,co_2ae0514924b1,First Lien,Financial Services,6.25%,,SOFR,,2026-12-02,19900,19349,19349,,,,,,,BCSF,2023-11-06
-Apollo Intelligence,co_8ce53e1baf73,First Lien,Pharmaceuticals & Biotechnology,5.75%,,SOFR,,2028-06-01,10692,10607,10607,,,,,,,BCSF,2023-11-06
-CPS Group Holdings Inc.,co_7a3ad8ac04a6,First Lien,Pharmaceuticals & Biotechnology,5.25%,,SOFR,,2025-03-03,19653,19617,19617,,,,,,,BCSF,2023-11-06
-SunMed Group Holdings LLC,co_0ece069ea202,First Lien,Pharmaceuticals & Biotechnology,5.50%,,SOFR,,2028-06-16,9557,9557,9557,,,,,,,BCSF,2023-11-06
-AMI US Holdings Inc.,co_fea4506bda99,Revolver,Other,5.35%,,SOFR,,2025-04-01,66,66,66,,,,,,,BCSF,2023-11-06
-Access,co_a0561fd649cd,Delayed Draw,Other,,,SONIA,5.00%,,2029-06-04,9764,11304,,,,,,,BCSF,2023-11-06
-AMI US Holdings Inc.,co_fea4506bda99,First Lien,Pharmaceuticals & Biotechnology,5.35%,,SOFR,5.35%,,2025-04-01,3826,3803,,,,,,,BCSF,2023-11-06
-Applitools,co_b5238111abba,First Lien,Other,,,SOFR,6.25%,,2029-05-25,16862,16735,,,,,,,BCSF,2023-11-06
-Appriss Holdings Inc.,co_46456f356d7b,Other Equity,Software,,,,,,,,,2136,1606,,,,,BCSF,2023-11-06
-Appriss Holdings Inc.,co_46456f356d7b,First Lien,Software,,,SOFR,6.75%,,2027-05-06,11208,11055,,,,,,,BCSF,2023-11-06
-AQ Software Corp.,co_3ca29c019d51,Preferred Equity,Software,,,,,,,,1,1107,,,,,,BCSF,2023-11-06
-Cloud Technology Solutions,co_ff63daa13729,Preferred Equity,Software,,,,,,,,4408,5360,,,,,,BCSF,2023-11-06
-Cloud Technology Solutions,co_ff63daa13729,First Lien,Software,,,SONIA,7.50%,,2030-01-03,8247,10007,,,,,,,BCSF,2023-11-06
-Drilling Info Holdings Inc.,co_9272566f7980,First Lien,Energy,,,SOFR,4.25%,,2025-07-30,1489,1487,,,,,,,BCSF,2023-11-06
-Eagle Rock Capital Corp.,co_b8b0a6b86504,Preferred Equity,Financial Services,,,,,,,,3345,3345,,,,,,BCSF,2023-11-06
-Element Buyer Inc.,co_e59488538633,Delayed Draw,Software,,,SOFR,5.50%,,2026-07-19,10880,10890,,,,,,,BCSF,2023-11-06
-Element Buyer Inc.,co_e59488538633,First Lien,Software,,,SOFR,5.50%,,2026-07-19,36338,36439,,,,,,,BCSF,2023-11-06
-Eleven Software,co_dff2dd2b4e82,Preferred Equity,Software,,,,,,,,896,896,,,,,,BCSF,2023-11-06
-Eleven Software,co_dff2dd2b4e82,Revolver,Software,,,SOFR,8.10%,,2026-09-25,1091,1081,,,,,,,BCSF,2023-11-06
-Gluware,co_2c22b87218c4,Warrants,Software,,,,,,,,4307,478,,,,,,BCSF,2023-11-06
-Gluware,co_2c22b87218c4,First Lien,Software,9.00%,5.50%,,9.00%,,2025-10-15,20321,19815,,,,,,,BCSF,2023-11-06
-Gluware,co_2c22b87218c4,First Lien,Software,9.00%,5.50%,,9.00%,,2025-10-15,5522,5474,,,,,,,BCSF,2023-11-06
-NearMap,co_05354a068fb4,First Lien,Software,,,SOFR,7.25%,,2029-12-09,17848,17521,,,,,,,BCSF,2023-11-06
-Intoxalock,co_9c1d423ddabc,Revolver,Other,,,,,,,2028-11-01,,,,,,,,BCSF,2023-11-06
-JHCC Holdings LLC,co_8bef45178f31,Revolver,Other,,,,,,,2025-09-09,,,,,,,,BCSF,2023-11-06
-Kellstrom Commercial Aerospace Inc.,co_4a5decc445db,Revolver,Other,,,,,,,2025-07-01,,,,,,,,BCSF,2023-11-06
-Mach Acquisition R/C,co_cb74725b137c,Revolver,Other,,,,,,,2026-10-18,,,,,,,,BCSF,2023-11-06
-Meriplex Communications Ltd.,co_106226ee9384,Delayed Draw,Telecommunications,,,,,,,2028-07-17,,,,,,,,BCSF,2023-11-06
-Meriplex Communications Ltd.,co_106226ee9384,Revolver,Telecommunications,,,,,,,2028-07-17,,,,,,,,BCSF,2023-11-06
-MRHT,co_cbb5b63e6b61,Delayed Draw,Other,,,,,,,2029-02-01,,,,,,,,BCSF,2023-11-06
-MZR Buyer LLC,co_22427746abc5,Revolver,Other,,,,,,,2026-12-21,,,,,,,,BCSF,2023-11-06
-Omni Intermediate,co_d0097fbefc1b,Revolver,Other,,,,,,,2026-11-30,,,,,,,,BCSF,2023-11-06
-Parcel2Go,co_6eb62fa73008,Delayed Draw,Other,,,,,,,2028-07-15,,,,,,,,BCSF,2023-11-06
-Pyramid Global Hospitality,co_cefebad746d3,Revolver,Other,,,,,,,2027-01-19,,,,,,,,BCSF,2023-11-06
-Reconomy,co_e7f5e4f71470,Delayed Draw,Other,,,,,,,2029-06-24,,,,,,,,BCSF,2023-11-06
-Refine Intermediate Inc.,co_54b73ba1370f,Revolver,Other,,,,,,,2026-09-03,,,,,,,,BCSF,2023-11-06
-RoadOne,co_ee1cd15309ba,Delayed Draw,Other,,,,,,,2028-12-29,,,,,,,,BCSF,2023-11-06
-RoadOne,co_ee1cd15309ba,Revolver,Other,,,,,,,2028-12-29,,,,,,,,BCSF,2023-11-06
-RoC Opco LLC,co_a3ceaa00e48a,Revolver,Other,,,,,,,2025-02-25,,,,,,,,BCSF,2023-11-06
-Saturn Purchaser Corp.,co_1a2ed7d76c61,Revolver,Other,,,,,,,2029-07-22,,,,,,,,BCSF,2023-11-06
-Service Master,co_b16639dbd162,Revolver,Other,,,,,,,2027-08-16,,,,,,,,BCSF,2023-11-06
-Simplicity,co_2ae0514924b1,Delayed Draw,Other,,,,,,,2026-12-02,,,,,,,,BCSF,2023-11-06
-Simplicity,co_2ae0514924b1,Revolver,Other,,,,,,,2026-12-02,,,,,,,,BCSF,2023-11-06
-Smartronix,co_0aef8ece01b9,Revolver,Other,,,,,,,2027-11-23,,,,,,,,BCSF,2023-11-06
-Solaray LLC,co_33e1e0bf802e,Revolver,Other,,,,,,,2023-12-15,,,,,,,,BCSF,2023-11-06
-Spring Finco BV,co_68689161b543,Delayed Draw,Other,,,,,,,2029-07-15,,,,,,,,BCSF,2023-11-06
-Sunmed Group Holdings LLC,co_0ece069ea202,Revolver,Automotive,,,,,,,2027-06-16,,,,,,,,BCSF,2023-11-06
-Fineline Technologies Inc.,co_0a05caa00f29,Other Equity,Consumer Products,,,,,,,,,939,939,893,,,,BCSF,2023-11-06
-FL Hawk Intermediate Holdings Inc.,co_861d61f80036,Second Lien,Consumer Products,9.00%,,LIBOR,13.73%,,2028-08-22,15125,14753,,,,,,,BCSF,2023-11-06
-RoC Opco LLC,co_a3ceaa00e48a,First Lien,Consumer Products,8.50%,,LIBOR,12.73%,,2025-02-25,15041,14882,,,,,,,BCSF,2023-11-06
-RoC Opco LLC,co_a3ceaa00e48a,Revolver,Consumer Products,8.50%,,LIBOR,12.45%,,2025-02-25,2731,2653,,,,,,,BCSF,2023-11-06
-Solaray LLC,co_33e1e0bf802e,Delayed Draw,Consumer Products,5.75%,,SOFR,10.43%,,2023-09-09,14165,14165,,,,,,,BCSF,2023-11-06
-Solaray LLC,co_33e1e0bf802e,First Lien,Consumer Products,5.75%,,SOFR,10.43%,,2023-09-09,30762,30762,,,,,,,BCSF,2023-11-06
-Solaray LLC,co_33e1e0bf802e,Revolver,Consumer Products,3.55%,,SOFR,9.08%,,2023-09-09,5950,5941,,,,,,,BCSF,2023-11-06
-WU Holdco Inc.,co_df30f5e5b04a,Delayed Draw,Consumer Products,5.50%,,LIBOR,10.23%,,2026-03-26,1700,1674,,,,,,,BCSF,2023-11-06
-WU Holdco Inc.,co_df30f5e5b04a,First Lien,Consumer Products,5.50%,,LIBOR,10.23%,,2026-03-26,37677,37272,,,,,,,BCSF,2023-11-06
-WU Holdco Inc.,co_df30f5e5b04a,Revolver,Consumer Products,5.50%,,LIBOR,10.23%,,2025-03-26,2930,2906,,,,,,,BCSF,2023-11-06
-WSP Initial Term Loan,co_99a9a7d40613,First Lien,Consumer Products,6.25%,,LIBOR,10.63%,,2027-04-27,6002,5905,,,,,,,BCSF,2023-11-06
-WSP LP,co_5d1bb4cb59dd,Other Equity,Consumer Products,,,,,,,,,,,2898,2898,,,BCSF,2023-11-06
-WSP Revolving Loan,co_d9d66f69392b,Revolver,Consumer Products,6.25%,,LIBOR,10.63%,,2027-04-27,47,40,,,,,,,BCSF,2023-11-06
-ASP-r-pac Acquisition Co LLC,co_d532e5595c78,First Lien,Packaging,6.00%,,LIBOR,10.38%,,2027-12-29,4083,4013,,,,,,,BCSF,2023-11-06
-Iris Holding Inc.,co_a20de951f3d2,First Lien,Packaging,4.75%,,SOFR,8.94%,,2028-06-28,13017,12379,,,,,,,BCSF,2023-11-06
-Amspec Services Inc.,co_b411d5f51273,First Lien,Energy,5.75%,,LIBOR,10.48%,,2024-07-02,2770,2751,,,,,,,BCSF,2023-11-06
-Amspec Services Inc.,co_b411d5f51273,First Lien,Energy,5.75%,,LIBOR,10.48%,,2024-07-02,32990,32858,,,,,,,BCSF,2023-11-06
-Amspec Services Inc.,co_b411d5f51273,Revolver,Energy,3.75%,,Prime,11.25%,,2024-07-02,1204,1186,,,,,,,BCSF,2023-11-06
-Revalize Inc.,co_7f5a52b783f9,Revolver,Packaging,,SOFR,5.75%,11.30,2027-04-15,168,159,,,,,,,,BCSF,2023-11-06
-Superna Inc.,co_5bc1802b6920,Other Equity,,,,,,,,1463,1463,1315,,,,,,BCSF,2023-11-06
-Utimaco,co_abe8bc4ee7f1,Other Equity,,,,,,,,1,2123,1190,,,,,,BCSF,2023-11-06
-Utimaco,co_abe8bc4ee7f1,Preferred Equity,,,,,,,,1,2123,1190,,,,,,BCSF,2023-11-06
-Ventiv Holdco Inc.,co_f2e627c34c51,First Lien,,SOFR,5.50%,1.50%,12.39,2025-09-03,13830,13753,,,,,,,,BCSF,2023-11-06
-Ventiv Holdco Inc.,co_f2e627c34c51,Revolver,,SOFR,5.50%,1.50%,10.92,2025-09-03,341,321,,,,,,,,BCSF,2023-11-06
-Ventiv Topco Inc.,co_50a35f37c059,Other Equity,,,,,,,,28,2833,2320,,,,,,BCSF,2023-11-06
-Chase Industries Inc.,co_37ebfa6e2346,Delayed Draw,Construction,,7.00%,LIBOR,,2025-05-12,1335,1334,,,,,,,,BCSF,2023-11-06
-Chase Industries Inc.,co_37ebfa6e2346,First Lien,Construction,,7.00%,LIBOR,,2025-05-12,14122,14095,,,,,,,,BCSF,2023-11-06
-Elk Parent Holdings LP,co_5ca554ad7cc5,Other Equity,Construction,,,,,,,,,1,12,854,,,,BCSF,2023-11-06
-Elk Parent Holdings LP,co_5ca554ad7cc5,Preferred Equity,Construction,,,,,,,,,120,1202,1639,,,,BCSF,2023-11-06
-Regan Development Holdings Ltd.,co_4c0736ac067d,First Lien,Construction,,6.50%,Euribor,8.29%,2023-04-18,2087,2274,,,,,,,,BCSF,2023-11-06
-Regan Development Holdings Ltd.,co_4c0736ac067d,First Lien,Construction,,6.50%,Euribor,8.29%,2023-04-18,677,768,,,,,,,,BCSF,2023-11-06
-Regan Development Holdings Ltd.,co_4c0736ac067d,First Lien,Construction,,6.50%,Euribor,8.29%,2023-04-18,6335,6888,,,,,,,,BCSF,2023-11-06
-SAM,co_e96e02d8e47f,First Lien,Construction,11.25%,,LIBOR,,2028-05-09,34277,34002,,,,,,,,BCSF,2023-11-06
-Service Master,co_b16639dbd162,Revolver,Construction,,8.50%,SOFR,12.94%,2027-08-16,7030,6677,,,,,,,,BCSF,2023-11-06
-Service Master,co_b16639dbd162,First Lien,Construction,,7.50%,LIBOR,12.99%,2027-08-16,926,911,,,,,,,,BCSF,2023-11-06
-Service Master,co_b16639dbd162,Other Equity,Construction,,,,,,,,,350,356,404,,,,BCSF,2023-11-06
-Service Master,co_b16639dbd162,First Lien,Construction,,8.50%,SOFR,12.94%,2027-08-16,21923,21923,,,,,,,,BCSF,2023-11-06
-YLG Holdings Inc.,co_10b178f7afc0,First Lien,Construction,,5.00%,LIBOR,9.93%,2025-10-31,27151,27067,,,,,,,,BCSF,2023-11-06
-YLG Holdings Inc.,co_10b178f7afc0,Delayed Draw,Construction,,5.00%,LIBOR,9.21%,2025-10-31,5022,5017,,,,,,,,BCSF,2023-11-06
-YLG Holdings Inc.,co_10b178f7afc0,Revolver,Construction,,,,,,2025-10-31,,,40,,,,,,BCSF,2023-11-06
-New Milani Group LLC,co_53d49e3a4f21,First Lien,Consumer Products,,6.00%,LIBOR,10.73%,2024-06-06,21475,21053,,,,,,,,BCSF,2023-11-06
-Stanton Carpet,co_43488af71287,Second Lien,Consumer Products,,9.00%,LIBOR,13.77%,2028-03-31,11434,11232,,,,,,,,BCSF,2023-11-06
-Tangent Technologies Acquisition LLC,co_bf31c6d5dc8a,Second Lien,Consumer Products,,8.75%,SOFR,12.95%,2028-05-30,8915,8756,,,,,,,,BCSF,2023-11-06
-TLC Holdco LP,co_b37159358300,Other Equity,Consumer Products,,,,,,,,,1281,1221,,,,,BCSF,2023-11-06
-TLC Purchaser Inc.,co_fd2683950cd6,First Lien,Consumer Products,6.25%,2.00%,LIBOR,11.02%,2025-10-13,35621,35007,,,,,,,,BCSF,2023-11-06
-TLC Purchaser Inc.,co_fd2683950cd6,Revolver,Consumer Products,,6.25%,LIBOR,10.77%,2025-10-13,7693,7549,,,,,,,,BCSF,2023-11-06
-Chase Industries Inc.,co_37ebfa6e2346,First Lien,Construction,,1.50%,SOFR,5.50%,,2025-05-12,14878,14860,14860,,,,,,BCSF,2023-11-06
-Chase Industries Inc.,co_37ebfa6e2346,Delayed Draw,Construction,,1.50%,SOFR,5.50%,,2025-05-12,1406,1405,1405,,,,,,BCSF,2023-11-06
-Regan Development Holdings Ltd.,co_4c0736ac067d,First Lien,Construction,,,,,EURIBOR,6.50%,,2023-10-29,677,768,768,,,,BCSF,2023-11-06
-Service Master,co_b16639dbd162,First Lien,Construction,,,,,SOFR,7.00%,,2027-08-16,902,890,890,,,,BCSF,2023-11-06
-Service Master,co_b16639dbd162,Revolver,Construction,,,,,SOFR,7.00%,,2027-08-16,6348,6270,6270,,,,BCSF,2023-11-06
-YLG Holdings Inc.,co_10b178f7afc0,Delayed Draw,Construction,,,,,SOFR,5.00%,,2025-10-31,4983,4980,4980,,,,BCSF,2023-11-06
-YLG Holdings Inc.,co_10b178f7afc0,First Lien,Construction,,,,,SOFR,5.00%,,2025-10-31,17006,16951,16951,,,,BCSF,2023-11-06
-YLG Holdings Inc.,co_10b178f7afc0,Revolver,Construction,,,,,,,,,10/31/2025,,,,-30,,BCSF,2023-11-06
-New Milani Group LLC,co_53d49e3a4f21,First Lien,Consumer Products,,,,,SOFR,5.50%,,2024-06-06,11359,11156,11156,,,,BCSF,2023-11-06
-Stanton Carpet,co_43488af71287,Second Lien,Consumer Products,,,,,SOFR,9.00%,,2028-03-31,11434,11253,11253,,,,BCSF,2023-11-06
-Tangent Technologies Acquisition LLC,co_bf31c6d5dc8a,Second Lien,Consumer Products,,,,,SOFR,8.75%,,2028-05-30,8915,8772,8772,,,,BCSF,2023-11-06
-TLC Purchaser Inc.,co_fd2683950cd6,First Lien,Consumer Products,6.25%,2.00%,SOFR,6.25%,,2025-10-13,37065,36605,36605,,,,,,BCSF,2023-11-06
-TLC Purchaser Inc.,co_fd2683950cd6,Revolver,Consumer Products,6.25%,2.00%,SOFR,6.25%,,2025-10-13,6931,6826,6826,,,,,,BCSF,2023-11-06
-Forming Machining Industries Holdings LLC,co_1a78faf09874,Second Lien,Aerospace & Defense,,,,,SOFR,7.25%,,2026-10-09,6540,6509,6509,,,,BCSF,2023-11-06
-Forming Machining Industries Holdings LLC,co_1a78faf09874,First Lien,Aerospace & Defense,,,,,SOFR,4.25%,,2025-10-09,16142,16098,16098,,,,BCSF,2023-11-06
-Forward Slope,co_5cbdc2baea95,First Lien,Aerospace & Defense,,,,,SOFR,6.85%,,2029-08-22,24966,24346,24346,,,,BCSF,2023-11-06
-Forward Slope,co_5cbdc2baea95,Delayed Draw,Aerospace & Defense,,,,,,2029-08-22,,,0,,,,,,BCSF,2023-11-06
-Forward Slope,co_5cbdc2baea95,Revolver,Aerospace & Defense,,,,,SOFR,6.85%,,2029-08-22,2369,2151,2151,,,,BCSF,2023-11-06
-GSP Holdings LLC,co_f11a772f700c,First Lien,Aerospace & Defense,5.75%,0.25%,SOFR,5.75%,,2025-11-06,35319,35496,35496,,,,,,BCSF,2023-11-06
-GSP Holdings LLC,co_f11a772f700c,Revolver,Aerospace & Defense,5.75%,0.25%,SOFR,5.75%,,2025-11-06,2305,2289,2289,,,,,,BCSF,2023-11-06
-Kellstrom Aerospace Group Inc.,co_c43831606c7e,Other Equity,Aerospace & Defense,,,,,,,,1,1963,973,,,,,BCSF,2023-11-06
-Kellstrom Commercial Aerospace Inc.,co_4a5decc445db,First Lien,Aerospace & Defense,,,,,SOFR,6.00%,,2025-07-01,29677,29320,29320,,,,BCSF,2023-11-06
-Kellstrom Commercial Aerospace Inc.,co_4a5decc445db,Revolver,Aerospace & Defense,,,,,5.00%,,2025-07-01,47,42,42,,,,,BCSF,2023-11-06
-Mach Acquisition R/C,co_cb74725b137c,Revolver,Aerospace & Defense,,,,,SOFR,7.65%,,2026-10-18,7532,7410,7410,,,,BCSF,2023-11-06
-Mach Acquisition T/L,co_cb74725b137c,First Lien,Aerospace & Defense,6.50%,2.00%,SOFR,6.50%,,2026-10-18,34051,33638,33638,,,,,,BCSF,2023-11-06
-Precision Ultimate Holdings LLC,co_7d63e5789517,Other Equity,Aerospace & Defense,,,,,,,,1417,1417,1040,,,,,BCSF,2023-11-06
-Robinson Helicopter,co_2618d30857d8,Other Equity,Aerospace & Defense,,,,,,,,1592,1592,2338,,,,,BCSF,2023-11-06
-Robinson Helicopter,co_2618d30857d8,First Lien,Aerospace & Defense,,,,,SOFR,6.50%,,2028-06-30,15531,15233,15233,,,,BCSF,2023-11-06
-Saturn Purchaser Corp.,co_1a2ed7d76c61,First Lien,Aerospace & Defense,,,,,SOFR,5.60%,,2029-07-23,26603,26353,26353,,,,BCSF,2023-11-06
-Whitcraft-Paradigm,co_622cc366ef4d,First Lien,Aerospace & Defense,,,,,SOFR,7.00%,,2029-02-28,12393,12279,12279,,,,BCSF,2023-11-06
-Whitcraft-Paradigm,co_622cc366ef4d,Revolver,Aerospace & Defense,,,,,,2029-02-28,,,0,,,,,,BCSF,2023-11-06
-WP CPP Holdings LLC,co_8701bb132186,Second Lien,Aerospace & Defense,,,,,SOFR,7.75%,,2026-04-30,11724,11672,11672,,,,BCSF,2023-11-06
-Robinson Helicopter,co_2618d30857d8,First Lien,Aerospace & Defense,,,,,6.50%,,2028-06-30,22515,22059,22059,,,,,BCSF,2023-11-06
-Saturn Purchaser Corp.,co_1a2ed7d76c61,First Lien,Aerospace & Defense,,,,,5.60%,,2029-07-23,12000,11886,11886,,,,,BCSF,2023-11-06
-Whitcraft LLC,co_32f76a32010e,First Lien,Aerospace & Defense,,,,,7.00%,,2023-04-03,10683,10603,10603,,,,,BCSF,2023-11-06
-Cardo,co_489d7a38ff74,First Lien,Automotive,,,,,5.00%,,2028-05-12,10800,10800,10800,,,,,BCSF,2023-11-06
-Intoxalock,co_9c1d423ddabc,First Lien,Automotive,,,,,6.75%,,2028-11-01,10000,9901,9901,,,,,BCSF,2023-11-06
-JHCC Holdings LLC,co_8bef45178f31,First Lien,Automotive,,,,,5.75%,,2025-09-09,7521,7521,7521,,,,,BCSF,2023-11-06
-Morrow Sodali Global LLC,co_33db1dd7419f,First Lien,Financial Services,,,,,5.00%,,2028-04-25,7939,7830,7830,,,,,BCSF,2023-11-06
-V Global Holdings LLC,co_e97d0109499f,First Lien,Chemicals,,,,,5.75%,,2027-12-22,20319,20201,20201,,,,,BCSF,2023-11-06
-YLG Holdings Inc.,co_10b178f7afc0,First Lien,Construction,,,,,5.00%,,2025-10-31,10534,10534,10534,,,,,BCSF,2023-11-06
-Stanton Carpet,co_43488af71287,Second Lien,Consumer Products,,,,,9.00%,,2028-03-31,5000,4913,4913,,,,,BCSF,2023-11-06
-TLC Purchaser Inc.,co_fd2683950cd6,First Lien,Consumer Products,6.25%,2.00%,LIBOR,,2025-10-13,9976,9097,9097,,,,,,,BCSF,2023-11-06
-FL Hawk Intermediate Holdings Inc.,co_861d61f80036,Second Lien,Consumer Products,,,,,9.00%,,2028-08-22,6000,6000,6000,,,,,BCSF,2023-11-06
-RoC Opco LLC,co_a3ceaa00e48a,First Lien,Consumer Products,,,,,8.00%,,2025-02-25,8753,8753,8753,,,,,BCSF,2023-11-06
-Solaray LLC,co_33e1e0bf802e,First Lien,Consumer Products,,,,,5.75%,,2023-09-09,10637,10637,10637,,,,,BCSF,2023-11-06
-A&R Logistics Inc.,co_371d1c926f85,First Lien,Transportation,6.00%,,SOFR,6.00%,,2025-05-05,5913,5869,5869,,,,,,BCSF,2023-11-06
-A&R Logistics Inc.,co_371d1c926f85,First Lien,Transportation,6.00%,,SOFR,6.00%,,2025-05-05,2399,2375,2375,,,,,,BCSF,2023-11-06
-A&R Logistics Inc.,co_371d1c926f85,First Lien,Transportation,6.00%,,SOFR,6.00%,,2025-05-05,31982,31670,31670,,,,,,BCSF,2023-11-06
-A&R Logistics Inc.,co_371d1c926f85,First Lien,Transportation,6.50%,,SOFR,6.50%,,2025-05-05,2688,2673,2673,,,,,,BCSF,2023-11-06
-A&R Logistics Inc.,co_371d1c926f85,Revolver,Transportation,6.00%,,SOFR,6.00%,,2025-05-05,361,255,255,,,,,,BCSF,2023-11-06
-Grammer Investment Holdings LLC,co_533d0bf06ba5,Preferred Equity,Other,,10.00%,,,,,,9,,,791,,,,BCSF,2023-11-06
-Grammer Purchaser Inc.,co_84c05683b02c,First Lien,Transportation,4.50%,,LIBOR,4.50%,,2024-09-30,3830,3768,3768,,,,,,BCSF,2023-11-06
-Grammer Purchaser Inc.,co_84c05683b02c,Revolver,Transportation,4.50%,,SOFR,4.50%,,2024-09-30,516,516,516,,,,,,BCSF,2023-11-06
-Gulf Winds International,co_b4a81d490042,First Lien,Transportation,7.00%,,SOFR,7.00%,,2028-12-16,26625,25828,25828,,,,,,BCSF,2023-11-06
-Gulf Winds International,co_b4a81d490042,Revolver,Transportation,,,,,,,,2028-12-16,,,,-158,,,BCSF,2023-11-06
-Omni Intermediate,co_d0097fbefc1b,Delayed Draw,Transportation,,,,,,,,2026-11-23,,,,-4,,,BCSF,2023-11-06
-Omni Intermediate,co_d0097fbefc1b,First Lien,Transportation,5.00%,,SOFR,5.00%,,2026-11-23,1175,1166,1166,,,,,,BCSF,2023-11-06
-Omni Intermediate,co_d0097fbefc1b,Revolver,Transportation,,,,,,,,2026-11-30,,,,,,,BCSF,2023-11-06
-Omni Logistics LLC,co_0e782dc99288,Second Lien,Transportation,9.00%,,SOFR,9.00%,,2027-12-30,8770,8686,8686,,,,,,BCSF,2023-11-06
-REP Coinvest III- A Omni LP,co_e9e3c90afe64,Other Equity,Transportation,,,,,,,,,,,1377,,,,BCSF,2023-11-06
-RoadOne,co_ee1cd15309ba,First Lien,Transportation,6.25%,,SOFR,6.25%,,2028-12-29,19289,18711,18711,,,,,,BCSF,2023-11-06
-RoadOne,co_ee1cd15309ba,Revolver,Transportation,6.25%,,SOFR,6.25%,,2028-12-29,998,866,866,,,,,,BCSF,2023-11-06
-Toro Private Investments II LP,co_b37a9295ef67,Other Equity,Transportation,,,,,,,,,,,3090,,,,BCSF,2023-11-06
-Toro Private Investments II LP,co_b37a9295ef67,First Lien,Transportation,5.00%,1.75%,LIBOR,5.00%,,2026-05-29,6756,5297,5297,,,,,,BCSF,2023-11-06
-Ansira Holdings Inc.,co_db6cc05bf4f0,First Lien,Media & Entertainment,6.50%,,LIBOR,6.50%,,2024-12-20,42836,40675,40675,,,,,,BCSF,2023-11-06
-Ansira Holdings Inc.,co_db6cc05bf4f0,Delayed Draw,Media & Entertainment,6.50%,,LIBOR,6.50%,,2024-12-20,5134,5017,5017,,,,,,BCSF,2023-11-06
-Ansira Holdings Inc.,co_db6cc05bf4f0,Revolver,Media & Entertainment,5.75%,,LIBOR,5.75%,,2024-12-20,5383,5099,5099,,,,,,BCSF,2023-11-06
-Ansira Holdings Inc.,co_db6cc05bf4f0,Delayed Draw,,,,,,,,,2024-12-20,,,,,,,BCSF,2023-11-06
-TGI Sport Bidco Pty Ltd.,co_72f72a942e8a,Delayed Draw,Media & Entertainment,7.00%,,LIBOR,7.00%,,2026-04-30,4166,2851,2851,,,,,,BCSF,2023-11-06
-TGI Sport Bidco Pty Ltd.,co_72f72a942e8a,First Lien,Media & Entertainment,7.00%,,BBSY,7.00%,,2026-04-30,97,75,75,,,,,,BCSF,2023-11-06
-Lightning Finco Ltd.,co_f318bafb5e05,First Lien,Media & Entertainment,5.50%,,LIBOR,5.50%,,2028-08-31,1443,1431,1431,,,,,,BCSF,2023-11-06
-Lightning Finco Ltd.,co_f318bafb5e05,First Lien,Media & Entertainment,5.50%,,Euribor,5.50%,,2028-08-31,1300,1418,1418,,,,,,BCSF,2023-11-06
-9 Story Media Group Inc.,co_62d2a3fe2d9b,Revolver,Manufacturing,,,,,,,2026-04-30,,,,,,,,BCSF,2023-11-06
-9 Story Media Group Inc.,co_62d2a3fe2d9b,First Lien,Manufacturing,5.25%,,CDOR,5.25%,,2026-04-30,1292,1001,1001,,,,,,BCSF,2023-11-06
-9 Story Media Group Inc.,co_62d2a3fe2d9b,First Lien,Manufacturing,5.25%,,Euribor,5.25%,,2026-04-30,585,619,619,,,,,,BCSF,2023-11-06
-Aptus 1724 Gmbh,co_807a5d77446a,First Lien,Manufacturing,6.25%,,LIBOR,6.25%,,2028-02-23,4971,4971,4971,,,,,,BCSF,2023-11-06
-Efficient Collaborative Retail Marketing Company LLC,co_18078af42e1c,First Lien,Manufacturing,6.75%,,LIBOR,6.75%,,2024-06-30,14961,14961,14961,,,,,,BCSF,2023-11-06
-Efficient Collaborative Retail Marketing Company LLC,co_18078af42e1c,First Lien,Manufacturing,6.75%,,LIBOR,6.75%,,2024-06-30,9711,9736,9736,,,,,,BCSF,2023-11-06
-Efficient Collaborative Retail Marketing Company LLC,co_18078af42e1c,Revolver,Manufacturing,5.25%,,LIBOR,5.25%,,2024-06-30,1275,1275,1275,,,,,,BCSF,2023-11-06
-International Entertainment Investments Ltd.,co_c1f3fef4fec6,First Lien,Manufacturing,4.75%,,SONIA,4.75%,,2025-11-30,87,107,107,,,,,,BCSF,2023-11-06
-Music Creation Group Bidco GmbH,co_64a93368843f,First Lien,Manufacturing,6.25%,,LIBOR,6.25%,,2028-02-23,4065,3977,3977,,,,,,BCSF,2023-11-06
-OGH Bidco Ltd.,co_6714dd17841b,First Lien,Media & Entertainment,6.25%,,SONIA,6.25%,,2029-06-29,139,164,164,,,,,,BCSF,2023-11-06
-OGH Bidco Ltd.,co_6714dd17841b,Delayed Draw,Media & Entertainment,,,,,,,2029-06-29,,,,,,,,BCSF,2023-11-06
-ADT Pizza LLC,co_8dafd7b7483a,Other Equity,Other,,,,,,,,,,,19527,1,1,,BCSF,2023-11-06
-Ansett Aviation Training First Lien Senior Secured Loan,co_a8fff87f35bc,First Lien,Aerospace & Defense,,,,,,,,15924,-9830,-490,,,,,BCSF,2023-11-06
-Ansett Aviation Training Equity Interest,co_8fe2a799b40b,Other Equity,Aerospace & Defense,,,,,,,,11526,-7115,1468,,,,,BCSF,2023-11-06
-BCC Middle Market CLO 2018-1 LLC,co_faf134f5b092,Other Equity,Financial Services,,,,,,,,24051,-1288,,,,,,BCSF,2023-11-06
-Blackbrush Oil & Gas LP. First Lien Senior Secured Loan,co_27eefcfef174,First Lien,Energy,,,,,,,,12336,1029,-4327,,,,,BCSF,2023-11-06
-Blackbrush Oil & Gas LP. Equity Interest,co_e598e8111d2e,Other Equity,Energy,,,,,,,,1,-1,,,,,,BCSF,2023-11-06
-Blackbrush Oil & Gas LP. Preferred Equity,co_1bc03824c4dd,Preferred Equity,Energy,,,,,,,,19720,1674,9391,,,,,BCSF,2023-11-06
-Direct Travel Inc.,co_0522d62596e4,First Lien,Other,,,,,,,,48347,1165,9209,,,,,BCSF,2023-11-06
-Direct Travel Inc.,co_0522d62596e4,Delayed Draw,Other,,,,,,,,2831,70,539,,,,,BCSF,2023-11-06
-Direct Travel Inc.,co_0522d62596e4,Other Equity,Other,,,,,,,,13033,,,,,,,BCSF,2023-11-06
-Bain Capital Senior Loan Program LLC,co_01dd3e9f83e5,Subordinated Debt,Financial Services,,,,,,,,50995,,,,,,,BCSF,2023-11-06
-Bain Capital Senior Loan Program LLC,co_01dd3e9f83e5,Preferred Equity,Financial Services,,,,,,,,10,-654,,,,,,BCSF,2023-11-06
-Bain Capital Senior Loan Program LLC,co_01dd3e9f83e5,Other Equity,Financial Services,,,,,,,,5594,-2247,,,,,,BCSF,2023-11-06
-BCC Jetstream Holdings Aviation (On II) LLC,co_663dc528bc35,First Lien,Aerospace & Defense,,,,,,,,6627,636,-863,,,,,BCSF,2023-11-06
-BCC Jetstream Holdings Aviation (Off I) LLC,co_663dc528bc35,Other Equity,Aerospace & Defense,,,,,,,,10563,-175,,,,,,BCSF,2023-11-06
-Gale Aviation (Offshore) Co Equity Interest,co_1f53714c78e8,Other Equity,Aerospace & Defense,,,,,,,,72839,1465,17022,,,,,BCSF,2023-11-06
-International Senior Loan Program LLC,co_f90a03b7ce25,Other Equity,Financial Services,,,,,,,,44444,19769,-1583,,,,,BCSF,2023-11-06
-International Senior Loan Program LLC,co_f90a03b7ce25,Subordinated Debt,Financial Services,,,,,,,,125437,61542,,,,,,BCSF,2023-11-06
-Ansira Holdings Inc.,co_db6cc05bf4f0,Delayed Draw,Media & Entertainment,,6.50%,SOFR,,2024-12-20,48,48,11.91,,,,,,,BCSF,2023-11-06
-Kpler,co_45a4148ff162,First Lien,Media & Entertainment,,6.50%,SONIA,,2030-03-03,4412,5266,11.69,,,,,,,BCSF,2023-11-06
-Kpler,co_45a4148ff162,First Lien,Media & Entertainment,,6.50%,Euribor,,2030-03-03,15081,15670,10.46,,,,,,,BCSF,2023-11-06
-Kpler,co_45a4148ff162,First Lien,Media & Entertainment,,6.50%,Euribor,,2030-03-03,3346,3544,10.46,,,,,,,BCSF,2023-11-06
-TGI Sport Bidco Pty Ltd.,co_72f72a942e8a,First Lien,Media & Entertainment,7.00%,1.00%,BBSY,,2026-04-30,98,76,11.11,,,,,,,BCSF,2023-11-06
-TGI Sport Bidco Pty Ltd.,co_72f72a942e8a,First Lien,Media & Entertainment,7.00%,1.00%,BBSY,,2026-04-30,4187,2866,12.43,,,,,,,BCSF,2023-11-06
-Lightning Finco Ltd.,co_f318bafb5e05,First Lien,Media & Entertainment,5.76%,,SOFR,,2028-08-31,1443,1432,11.06,,,,,,,BCSF,2023-11-06
-Lightning Finco Ltd.,co_f318bafb5e05,First Lien,Media & Entertainment,5.50%,,Euribor,,2028-08-31,1300,1422,9.28,,,,,,,BCSF,2023-11-06
-9 Story Media Group Inc.,co_62d2a3fe2d9b,First Lien,Manufacturing,,5.25%,CDOR,,2026-04-30,1282,994,10.75,,,,,,,BCSF,2023-11-06
-9 Story Media Group Inc.,co_62d2a3fe2d9b,First Lien,Manufacturing,,5.25%,Euribor,,2026-04-30,580,615,9.03,,,,,,,BCSF,2023-11-06
-Aptus 1724 Gmbh,co_807a5d77446a,First Lien,Manufacturing,6.25%,,LIBOR,,2028-02-23,4971,4971,11.90,,,,,,,BCSF,2023-11-06
-Efficient Collaborative Retail Marketing Company LLC,co_18078af42e1c,First Lien,Manufacturing,,10.50%,SOFR,,2024-06-30,9770,9756,15.89,,,,,,,BCSF,2023-11-06
-Efficient Collaborative Retail Marketing Company LLC,co_18078af42e1c,First Lien,Manufacturing,,10.50%,SOFR,,2024-06-30,15043,15022,15.89,,,,,,,BCSF,2023-11-06
-Efficient Collaborative Retail Marketing Company LLC,co_18078af42e1c,Revolver,Manufacturing,,10.50%,SOFR,,2024-06-30,1275,1275,15.89,,,,,,,BCSF,2023-11-06
-Music Creation Group Bidco GmbH,co_64a93368843f,First Lien,Manufacturing,6.25%,,LIBOR,,2028-02-23,4065,3987,11.90,,,,,,,BCSF,2023-11-06
-OGH Bidco Ltd.,co_6714dd17841b,Delayed Draw,Media & Entertainment,6.25%,,SONIA,,2029-06-29,1231,1416,11.18,,,,,,,BCSF,2023-11-06
-OGH Bidco Ltd.,co_6714dd17841b,First Lien,Media & Entertainment,6.25%,,SONIA,,2029-06-29,139,164,11.18,,,,,,,BCSF,2023-11-06
-FL Hawk Intermediate Holdings Inc.,co_861d61f80036,Second Lien,Consumer Products,,,,,SOFR,9.26%,,2028-08-22,13829,13524,13524,,,,BCSF,2023-11-06
-RoC Opco LLC,co_a3ceaa00e48a,First Lien,Consumer Products,,,,,SOFR,7.60%,,2025-02-25,14925,14823,14823,,,,BCSF,2023-11-06
-RoC Opco LLC,co_a3ceaa00e48a,Revolver,Consumer Products,,,,,,,2025-02-25,,,,51,,,,BCSF,2023-11-06
-Solaray LLC,co_33e1e0bf802e,Delayed Draw,Consumer Products,,,,,SOFR,6.50%,,2023-12-15,14053,14070,14070,,,,BCSF,2023-11-06
-Solaray LLC,co_33e1e0bf802e,First Lien,Consumer Products,,,,,SOFR,6.50%,,2023-12-15,30517,30517,30517,,,,BCSF,2023-11-06
-Solaray LLC,co_33e1e0bf802e,Revolver,Consumer Products,,,,,P,3.50%,,2023-12-15,11344,11341,11341,,,,BCSF,2023-11-06
-WU Holdco Inc.,co_df30f5e5b04a,Delayed Draw,Consumer Products,,,,,SOFR,5.50%,,2026-03-26,1687,1661,1661,,,,BCSF,2023-11-06
-WU Holdco Inc.,co_df30f5e5b04a,First Lien,Consumer Products,,,,,SOFR,5.50%,,2026-03-26,37385,37058,37058,,,,BCSF,2023-11-06
-WU Holdco Inc.,co_df30f5e5b04a,Revolver,Consumer Products,,,,,SOFR,5.50%,,2025-03-26,3606,3590,3590,,,,BCSF,2023-11-06
-WSP,co_5d1bb4cb59dd,Preferred Equity,Consumer Products,,,,,,,,,,,216,758,758,,BCSF,2023-11-06
-WSP,co_5d1bb4cb59dd,First Lien,Consumer Products,,,,,SOFR,6.25%,,2027-04-27,5522,5446,5446,,,,BCSF,2023-11-06
-WSP,co_5d1bb4cb59dd,Other Equity,Consumer Products,,,,,,,,,,,2898,2898,221,,BCSF,2023-11-06
-WSP,co_5d1bb4cb59dd,Revolver,Consumer Products,,,,,,,2027-04-27,,,,6,,,,BCSF,2023-11-06
-ASP-r-pac Acquisition Co LLC,co_d532e5595c78,First Lien,Packaging,,,,,SOFR,6.00%,,2027-12-29,4052,3990,3990,,,,BCSF,2023-11-06
-ASP-r-pac Acquisition Co LLC,co_d532e5595c78,Revolver,Packaging,,,,,12/29/2027,,,,46,,,,98,,BCSF,2023-11-06
-Iris Holding Inc.,co_a20de951f3d2,First Lien,Packaging,,,,,SOFR,4.75%,,2028-06-28,12920,12354,12354,,,,BCSF,2023-11-06
-AmSpec Group Inc.,co_183bf776b9b7,First Lien,Energy,,,,,SOFR,5.75%,,2024-07-02,5064,5000,5000,,,,BCSF,2023-11-06
-Amspec Services Inc.,co_b411d5f51273,First Lien,Energy,,,,,SOFR,5.75%,,2024-07-02,2748,2739,2739,,,,BCSF,2023-11-06
-Amspec Services Inc.,co_b411d5f51273,Revolver,Energy,,,,,P,3.75%,,2024-07-02,1494,1485,1485,,,,BCSF,2023-11-06
-Superna Inc.,co_5bc1802b6920,First Lien,Other,,,,,SOFR,6.50%,,2028-03-06,14920,14652,14652,,,,BCSF,2023-11-06
-Superna Inc.,co_5bc1802b6920,Other Equity,Other,,,,,,,,1463,1463,,,,,,BCSF,2023-11-06
-Swoogo LLC,co_7e5375b11d06,First Lien,Other,,,,,L,8.00%,,2026-12-09,2330,2291,2291,,,,BCSF,2023-11-06
-Utimaco,co_abe8bc4ee7f1,First Lien,Other,,,,,EURIBOR,6.00%,,2029-05-13,92,98,98,,,,BCSF,2023-11-06
-Utimaco,co_abe8bc4ee7f1,First Lien,Other,,,,,SOFR,6.00%,,2029-05-13,128,127,127,,,,BCSF,2023-11-06
-Utimaco,co_abe8bc4ee7f1,Other Equity,Other,,,,,,,,147,2123,,,,,,BCSF,2023-11-06
-Utimaco,co_abe8bc4ee7f1,Preferred Equity,Other,,,,,,,,147,2123,,,,,,BCSF,2023-11-06
-Ventiv Holdco Inc.,co_f2e627c34c51,First Lien,Other,,,,,SOFR,5.50%,,2025-09-03,13771,13668,13668,,,,BCSF,2023-11-06
-Ventiv Topco Inc.,co_50a35f37c059,Other Equity,Other,,,,,,,,28,2833,,,,,,BCSF,2023-11-06
-VPARK BIDCO AB,co_1491b8088800,First Lien,Other,,,,,CIBOR,4.00%,,2025-03-10,570,92,92,,,,BCSF,2023-11-06
-VPARK BIDCO AB,co_1491b8088800,First Lien,Other,,,,,NIBOR,4.00%,,2025-03-10,740,93,93,,,,BCSF,2023-11-06
-Aimbridge Acquisition Co Inc.,co_0445af39d362,Second Lien,Food & Beverage,,,,,L,7.50%,,2027-02-01,14193,13917,13917,,,,BCSF,2023-11-06
-Concert Golf Partners Holdco,co_5612d0912fe2,First Lien,Food & Beverage,,,,,SOFR,5.75%,,2029-03-30,6816,6690,6690,,,,BCSF,2023-11-06
-Concert Golf Partners Holdco LLC,co_5612d0912fe2,Delayed Draw,Food & Beverage,,,,,SOFR,5.75%,,2029-04-02,1852,1777,1777,,,,BCSF,2023-11-06
-9 Story Media Group Inc.,co_62d2a3fe2d9b,Revolver,Media & Entertainment,,,,,,2026-04-30,,,,,,,,,BCSF,2023-11-06
-A&R Logistics Inc.,co_371d1c926f85,Revolver,Transportation,,,,,,2025-05-05,,,,,,,,,BCSF,2023-11-06
-Abracon Group Holding LLC.,co_ccb9bd519d45,Delayed Draw,Manufacturing,,,,,,2028-07-06,,,,,,,,,BCSF,2023-11-06
-Abracon Group Holding LLC.,co_ccb9bd519d45,Revolver,Manufacturing,,,,,,2028-07-06,,,,,,,,,BCSF,2023-11-06
-Access - First Lien Senior Secured Loan,co_044e14345a12,First Lien,Software,,,,,,2029-06-04,,,,,,,,,BCSF,2023-11-06
-Allworth Financial Group LP.,co_bc708ae43d3c,Delayed Draw,Financial Services,,,,,,2026-12-23,,,,,,,,,BCSF,2023-11-06
-Allworth Financial Group LP.,co_bc708ae43d3c,Revolver,Financial Services,,,,,,2026-12-23,,,,,,,,,BCSF,2023-11-06
-Amspec Services Inc.,co_b411d5f51273,Revolver,Chemicals,,,,,,2024-07-02,,,,,,,,,BCSF,2023-11-06
-Ansira Holdings New DD T/L(2) - First Lien Senior Secured Loan,co_6965d6818ebb,First Lien,Software,,,,,,2024-12-20,,,,,,,,,BCSF,2023-11-06
-Ansira Holdings Inc.,co_db6cc05bf4f0,Revolver,Software,,,,,,2024-12-20,,,,,,,,,BCSF,2023-11-06
-Apollo Intelligence,co_8ce53e1baf73,Delayed Draw,Business Services,,,,,,2028-06-01,,,,,,,,,BCSF,2023-11-06
-Apollo Intelligence,co_8ce53e1baf73,Revolver,Business Services,,,,,,2028-06-01,,,,,,,,,BCSF,2023-11-06
-Applitools,co_b5238111abba,Revolver,Software,,,,,,2028-05-25,,,,,,,,,BCSF,2023-11-06
-Appriss Holdings Inc.,co_46456f356d7b,Revolver,Software,,,,,,2027-05-06,,,,,,,,,BCSF,2023-11-06
-Aramsco Inc.,co_eb8702bda800,Revolver,Retail,,,,,,2024-08-28,,,,,,,,,BCSF,2023-11-06
-ASP-r-pac Acquisition Co LLC,co_d532e5595c78,Revolver,Packaging,,,,,,2027-12-29,,,,,,,,,BCSF,2023-11-06
-Avalon Acquiror Inc.,co_7d81e84f1d70,Revolver,Automotive,,,,,,2028-03-10,,,,,,,,,BCSF,2023-11-06
-Batteries Plus Holding Corp.,co_2f51146be411,Revolver,Retail,,,,,,2023-06-30,,,,,,,,,BCSF,2023-11-06
-Caribou Bidco Limited - First Lien Senior Secured Loan,co_fa756b14f04c,First Lien,Consumer Products,,,,,,2029-01-29,,,,,,,,,BCSF,2023-11-06
-CB Nike IntermediateCo Ltd.,co_91eb33abc72a,Revolver,Other,,,,,,2025-10-31,,,,,,,,,BCSF,2023-11-06
-Cloud Technology Solutions,co_ff63daa13729,Revolver,Software,,,,,,2029-07-03,,,,,,,,,BCSF,2023-11-06
-Concert Golf Partners Holdco LLC,co_5612d0912fe2,Delayed Draw,Food & Beverage,,,,,,2029-04-02,,,,,,,,,BCSF,2023-11-06
-Concert Golf Partners Holdco LLC,co_5612d0912fe2,Revolver,Food & Beverage,,,,,,2028-03-31,,,,,,,,,BCSF,2023-11-06
-CPS Group Holdings Inc.,co_7a3ad8ac04a6,Revolver,Business Services,,,,,,2025-03-03,,,,,,,,,BCSF,2023-11-06
-Darcy Partners R/C - First Lien Senior Secured Loan,co_cf4d5b07b370,First Lien,Financial Services,,,,,,2028-06-01,,,,,,,,,BCSF,2023-11-06
-DC Blox Inc.,co_2c7bb92cdd0c,First Lien,Other,,,,,,2026-03-22,,,,,,,,,BCSF,2023-11-06
-Direct Travel Inc.,co_0522d62596e4,Delayed Draw,Other,,,,,,2025-10-02,,,,,,,,,BCSF,2023-11-06
-Efficient Collaborative Retail Marketing Company LLC,co_18078af42e1c,Revolver,Software,,,,,,2024-06-30,,,,,,,,,BCSF,2023-11-06
-Element Buyer Inc.,co_e59488538633,Revolver,Manufacturing,,,,,,2024-07-19,,,,,,,,,BCSF,2023-11-06
-Ansett Aviation Training,co_40a3f0eaeb1d,Other Equity,Aerospace & Defense,,,,,,,,,5119,3842,6583,,,,BCSF,2023-11-06
-Ansett Aviation Training,co_40a3f0eaeb1d,First Lien,,,,,4.69%,,2031-09-24,,7072,5308,,,,,,BCSF,2023-11-06
-ADT Pizza LLC,co_8dafd7b7483a,Other Equity,Food & Beverage,,,,,,,,,6720,6732,14187,,,,BCSF,2023-11-06
-Walker Edison,co_2f44f1e49c5a,Other Equity,Consumer Products,,,,,,,,,60,5592,3131,,,fair_value_suspicious_vs_size,BCSF,2023-11-06
-Walker Edison,co_2f44f1e49c5a,First Lien,,SOFR,6.75%,,,,5688,5688,,,,,,,,BCSF,2023-11-06
-Walker Edison,co_2f44f1e49c5a,Revolver,,SOFR,6.75%,,,,3182,3182,,,,,,,,BCSF,2023-11-06
-Walker Edison,co_2f44f1e49c5a,Delayed Draw,,SOFR,6.75%,,,,166,166,,,,,,,,BCSF,2023-11-06
-Blackbrush Oil & Gas LP.,co_a6d52c22de2b,Other Equity,Energy,,,,,,,,,1198,1,,,,,BCSF,2023-11-06
-Blackbrush Oil & Gas LP.,co_a6d52c22de2b,Preferred Equity,Energy,,,,,,,,,38505,11777,34293,,,,BCSF,2023-11-06
-Blackbrush Oil & Gas LP.,co_a6d52c22de2b,First Lien,,L,2.00%,2.00%,,,9179,9178,,,,,,,,BCSF,2023-11-06
-BCC Middle Market CLO 2018-1 LLC,co_faf134f5b092,Other,Other,,,,,,2030-10-20,,25635,24050,23069,,,,,BCSF,2023-11-06
-Direct Travel Inc.,co_0522d62596e4,Other Equity,Transportation,,,,,,,,,68,,,13039,,,BCSF,2023-11-06
-Direct Travel Inc.,co_0522d62596e4,First Lien,,SOFR,6.50%,,,,59642,59642,,,,,,,,BCSF,2023-11-06
-Direct Travel Inc.,co_0522d62596e4,Delayed Draw,,SOFR,6.50%,,,,3482,3482,,,,,,,,BCSF,2023-11-06
-Direct Travel Inc.,co_0522d62596e4,First Lien,,SOFR,6.50%,,,,4841,4841,,,,,,,,BCSF,2023-11-06
-Direct Travel Inc.,co_0522d62596e4,Delayed Draw,,SOFR,6.50%,,,,1773,1773,,,,,,,,BCSF,2023-11-06
-Direct Travel Inc.,co_0522d62596e4,First Lien,,SOFR,6.00%,,,,202,202,,,,,,,,BCSF,2023-11-06
-masLabor,co_331a40800920,First Lien,Other,12.90%,,SOFR,7.50%,,2027-07-01,8427,8242,8427,,,,,,BCSF,2023-11-06
-Opus2,co_13dda502e4ae,Other Equity,,,,,,,2272,2900,3159,,,,,,,BCSF,2023-11-06
-Opus2,co_13dda502e4ae,First Lien,,10.22%,,SONIA,5.03%,,2028-05-05,123,168,123,,,,,,BCSF,2023-11-06
-Parcel2Go,co_6eb62fa73008,Delayed Draw,,11.18%,,SONIA,6.00%,,2028-07-15,39,50,39,,,,,,BCSF,2023-11-06
-Parcel2Go,co_6eb62fa73008,Other Equity,,,,,,,3605,4237,2234,,,,,,,BCSF,2023-11-06
-Parcel2Go,co_6eb62fa73008,First Lien,,11.19%,,SONIA,6.00%,,2028-07-15,125,170,125,,,,,,BCSF,2023-11-06
-Refine Intermediate Inc.,co_54b73ba1370f,First Lien,,9.99%,,SOFR,4.50%,,2027-03-03,1037,1023,1037,,,,,,BCSF,2023-11-06
-Smartronix,co_0aef8ece01b9,First Lien,,11.32%,,SOFR,5.75%,,2028-11-23,12540,12352,12540,,,,,,BCSF,2023-11-06
-SumUp Holdings Luxembourg S.à.r.l.,co_4ac406dc777a,First Lien,,12.32%,,Euribor,8.50%,,2026-02-17,6650,7959,6650,,,,,,BCSF,2023-11-06
-SumUp Holdings Luxembourg S.à.r.l.,co_4ac406dc777a,First Lien,,12.32%,,Euribor,8.50%,,2026-02-17,155,180,155,,,,,,BCSF,2023-11-06
-TEI Holdings Inc.,co_d6b66d657cf3,First Lien,,10.67%,,SOFR,5.25%,,2026-12-23,25864,25852,25864,,,,,,BCSF,2023-11-06
-WCI Gigawatt Purchaser,co_de45400ed9c0,First Lien,,11.14%,,SOFR,5.50%,,2027-11-19,1428,1405,1428,,,,,,BCSF,2023-11-06
-WCI Gigawatt Purchaser,co_de45400ed9c0,Revolver,,10.94%,,SOFR,5.50%,,2027-11-19,965,915,965,,,,,,BCSF,2023-11-06
-MZR Aggregator,co_1841e210c1f8,Other Equity,,,,,,,1,798,660,,,,,,,BCSF,2023-11-06
-MZR Buyer LLC,co_22427746abc5,First Lien,,12.17%,,SOFR,6.75%,,2026-12-21,11933,11789,11933,,,,,,BCSF,2023-11-06
-MZR Buyer LLC,co_22427746abc5,Revolver,,12.29%,,SOFR,6.75%,,2026-12-21,1737,1680,1737,,,,,,BCSF,2023-11-06
-Surrey Bidco Ltd.,co_3a56d633125d,First Lien,,11.46%,,SONIA,7.00%,,2026-05-11,57,66,57,,,,,,BCSF,2023-11-06
-Zeppelin BidCo Pty Ltd.,co_2181c2b3ff49,First Lien,,9.24%,,BBSY,5.00%,,2024-07-12,206,143,206,,,,,,BCSF,2023-11-06
-WSP Initial Term Loan,co_99a9a7d40613,First Lien,Consumer Products,,,LIBOR,6.25%,,2027-04-27,6125,6036,5589,2.5,,,,,BCSF,2023-11-06
-ASP-r-pac Acquisition Co LLC,co_d532e5595c78,First Lien,Packaging,,,LIBOR,6.00%,,2027-12-29,23051,22827,21860,8.5,,,,,BCSF,2023-11-06
-Iris Holding Inc.,co_a20de951f3d2,First Lien,Packaging,,SOFR,4.75%,,2028-06-28,9975,9519,8940,3.5,,,,,fair_value_suspicious_vs_size,BCSF,2023-11-06
-Amspec Services Inc.,co_b411d5f51273,First Lien,Energy,,,LIBOR,5.75%,,2024-07-02,9771,9771,9771,3.5,,,,,BCSF,2023-11-06
-Blackbrush Oil & Gas LP.,co_a6d52c22de2b,First Lien,Energy,5.00%,2.00%,LIBOR,,2025-09-03,4416,4416,4416,1.5,,,,,fair_value_suspicious_vs_size,BCSF,2023-11-06
-Allworth Financial Group LP.,co_bc708ae43d3c,Delayed Draw,Other,,SOFR,4.75%,,2026-12-23,2133,2133,2133,0.8,,,,,fair_value_suspicious_vs_size,BCSF,2023-11-06
-Allworth Financial Group LP.,co_bc708ae43d3c,First Lien,Other,,SOFR,4.75%,,2026-12-23,8431,8431,8431,3.2,,,,,fair_value_suspicious_vs_size,BCSF,2023-11-06
-Margaux Acquisition Inc.,co_a66a58a76d7f,First Lien,Financial Services,,,LIBOR,5.75%,,2024-12-19,10451,10451,10451,4.0,,,,,BCSF,2023-11-06
-Apollo Intelligence,co_8ce53e1baf73,First Lien,Pharmaceuticals & Biotechnology,,SOFR,5.75%,,2028-06-01,10692,10594,10594,4.0,,,,,fair_value_suspicious_vs_size,BCSF,2023-11-06
-CPS Group Holdings Inc.,co_7a3ad8ac04a6,First Lien,Pharmaceuticals & Biotechnology,,SOFR,5.75%,,2025-03-03,9776,9776,9776,3.5,,,,,fair_value_suspicious_vs_size,BCSF,2023-11-06
-SunMed Group Holdings LLC,co_0ece069ea202,First Lien,Pharmaceuticals & Biotechnology,,,LIBOR,5.75%,,2028-06-16,9630,9630,9630,3.5,,,,,BCSF,2023-11-06
-AMI US Holdings Inc.,co_fea4506bda99,First Lien,Other,,,LIBOR,5.25%,,2025-04-01,8903,8903,8903,3.5,,,,,BCSF,2023-11-06
-Drilling Info Holdings Inc.,co_9272566f7980,First Lien,Other,,,LIBOR,4.25%,,2025-07-30,10774,10693,10693,4.0,,,,,BCSF,2023-11-06
-BCC Jetstream Holdings Aviation (Off I) LLC,co_663dc528bc35,Other Equity,Aerospace & Defense,,,,,,,11863,11863,10892,,,,,,BCSF,2023-11-06
-BCC Jetstream Holdings Aviation (On II) LLC,co_663dc528bc35,Other Equity,Aerospace & Defense,,,,,,,1116,1115,1115,,,,,,BCSF,2023-11-06
-BCC Jetstream Holdings Aviation (On II) LLC,co_663dc528bc35,First Lien,Aerospace & Defense,,,,,10.00%,,2024-06-02,8013,8013,6621,,,,,BCSF,2023-11-06
-Gale Aviation (Offshore) Co,co_c8abe313a5c6,Other Equity,Aerospace & Defense,,,,,,,90450,90450,89954,,,,,,BCSF,2023-11-06
-Legacy Corporate Lending HoldCo LLC,co_1b0c8600de2f,Other Equity,Other,,,,,,,1,1,810,,,,,type_hint_corporate_from_name,BCSF,2023-11-06
-Legacy Corporate Lending HoldCo LLC,co_1b0c8600de2f,Preferred Equity,Other,,,,,,,10,10,10125,,,,,type_hint_corporate_from_name,BCSF,2023-11-06
-Bain Capital Senior Loan Program LLC,co_01dd3e9f83e5,Subordinated Debt,Financial Services,10.00%,,N/A,10.00%,,2033-12-27,115995,115995,115995,,,,,,BCSF,2023-11-06
-Bain Capital Senior Loan Program LLC,co_01dd3e9f83e5,Preferred Equity,Financial Services,,,,,,,10,10,(990),,,,,,BCSF,2023-11-06
-Bain Capital Senior Loan Program LLC,co_01dd3e9f83e5,Other Equity,Financial Services,,,,,,,10,10,5594,2014,,,,,BCSF,2023-11-06
-International Senior Loan Program LLC,co_f90a03b7ce25,Subordinated Debt,Financial Services,,SOFR,8.00%,,2028-02-22,186979,186978,186978,,,,,,,BCSF,2023-11-06
-International Senior Loan Program LLC,co_f90a03b7ce25,Other Equity,Financial Services,,,,,,,62337,59365,65249,,,,,,BCSF,2023-11-06
-Lightning Holdings B LLC,co_0dae01a48d31,Other Equity,Transportation,,,,,,,34899,35210,44372,,,,,,BCSF,2023-11-06
-PrimeFlight Acquisition LLC,co_20cb037cc33f,First Lien,Transportation,12.18%,,SOFR,6.85%,,2029-05-01,15445,15145,15145,,,,,,BCSF,2023-11-06
-PrimeFlight Acquisition LLC,co_20cb037cc33f,First Lien,Transportation,12.18%,,SOFR,6.85%,,2029-05-01,845,845,845,,,,,,BCSF,2023-11-06
-Toro Private Investments II LP,co_b37a9295ef67,First Lien,Transportation,13.89%,,SOFR,8.50%,,2026-05-29,7219,6082,6082,,,,,,BCSF,2023-11-06
-Toro Private Investments II LP,co_b37a9295ef67,Other Equity,Transportation,,,,,,,3090,3090,3090,,,,,,BCSF,2023-11-06
-Toro Private Investments ll LP,co_b37a9295ef67,First Lien,Transportation,12.65%,,SOFR,7.00%,,2025-02-28,421,419,419,,,,,,BCSF,2023-11-06
-Abracon Group Holding LLC,co_af5df15d8a58,First Lien,Other,11.21%,,SOFR,5.75%,,2028-07-06,14248,14054,14054,,,,,,BCSF,2023-11-06
-Abracon Group Holding LLC,co_af5df15d8a58,Revolver,Other,11.17%,,SOFR,5.75%,,2028-07-06,2018,1986,1986,,,,,,BCSF,2023-11-06
-Abracon Group Holding LLC,co_af5df15d8a58,Delayed Draw,Other,,,,,,,2028-07-06,,,32,,,172,,BCSF,2023-11-06
-Aramsco Inc.,co_eb8702bda800,First Lien,Other,11.17%,,SOFR,5.75%,,2024-08-28,13956,13899,13899,,,,,,BCSF,2023-11-06
-Aramsco Inc.,co_eb8702bda800,Revolver,Other,11.17%,,SOFR,5.75%,,2024-08-28,1355,1336,1336,,,,,,BCSF,2023-11-06
-Armor Group LP,co_4b22c4f1cb51,Other Equity,Other,,,,,,,10,1012,1012,,,,,,BCSF,2023-11-06
-SureWerx,co_b4b76c52bc73,Delayed Draw,Other,,,,,,,2029-12-28,,,27,,,,,BCSF,2023-11-06
-SureWerx,co_b4b76c52bc73,Revolver,Other,12.15%,,SOFR,6.75%,,2028-12-29,617,593,593,,,,,,BCSF,2023-11-06
-Ansett Aviation Training,co_40a3f0eaeb1d,First Lien,Aerospace & Defense,,,BBSY,4.69%,,2031-09-24,7072,5308,,,,,,,BCSF,2023-11-06
-Ansett Aviation Training,co_40a3f0eaeb1d,Other Equity,Aerospace & Defense,,,,,,,5119,3842,,,,,,,BCSF,2023-11-06
-ADT Pizza LLC,co_8dafd7b7483a,Other Equity,Food & Beverage,,,,,,,6720,6721,,,,,,,BCSF,2023-11-06
-Blackbrush Oil & Gas LP,co_a6d52c22de2b,Other Equity,Energy,,,,,,,1198,1,,,,,,,BCSF,2023-11-06
-Blackbrush Oil & Gas LP,co_a6d52c22de2b,Preferred Equity,Energy,,,,,,,38505,11777,,,,,,,BCSF,2023-11-06
-Blackbrush Oil & Gas LP,co_a6d52c22de2b,First Lien,Energy,,2.00%,LIBOR,5.00%,,2025-09-03,9040,9039,,,,,,,BCSF,2023-11-06
-BCC Middle Market CLO 2018-1 LLC,co_faf134f5b092,Other,Other,,,,,,,2030-10-20,25635,24050,,,,,,BCSF,2023-11-06
-Direct Travel Inc.,co_0522d62596e4,Delayed Draw,Transportation,,,SOFR,8.50%,,2025-10-02,3440,3440,,,,,,,BCSF,2023-11-06
-Direct Travel Inc.,co_0522d62596e4,First Lien,Transportation,,,SOFR,8.50%,,2025-10-02,58721,58721,,,,,,,BCSF,2023-11-06
-Direct Travel Inc.,co_0522d62596e4,Delayed Draw,Transportation,,,SOFR,8.50%,,2025-10-02,1741,1741,,,,,,,BCSF,2023-11-06
-Direct Travel Inc.,co_0522d62596e4,First Lien,Transportation,,,SOFR,6.50%,,2025-10-02,4841,4841,,,,,,,BCSF,2023-11-06
-Direct Travel Inc.,co_0522d62596e4,First Lien,Transportation,,,SOFR,6.00%,,2025-10-02,202,202,,,,,,,BCSF,2023-11-06
-Direct Travel Inc.,co_0522d62596e4,Delayed Draw,Transportation,,,SOFR,6.00%,,2025-10-02,4125,4125,,,,,,,BCSF,2023-11-06
-Direct Travel Inc.,co_0522d62596e4,Other Equity,Transportation,,,,,,,68,,,,,,,,BCSF,2023-11-06
-Morrow Sodali,co_a2d64a78e79d,Revolver,Financial Services,9.42%,,SOFR,5.00%,,2028-04-25,815,787,,,,,,,BCSF,2023-11-06
-Morrow Sodali,co_a2d64a78e79d,Delayed Draw,Financial Services,9.23%,,SOFR,5.00%,,2028-04-25,2659,2641,,,,,,,BCSF,2023-11-06
-Morrow Sodali,co_a2d64a78e79d,Delayed Draw,Financial Services,9.48%,,SOFR,5.00%,,2028-04-25,896,832,,,,,,,BCSF,2023-11-06
-NPC International Inc.,co_ea4b3d992711,Other Equity,Food & Beverage,,,,,,,342,512,,,,,,,BCSF,2023-11-06
-ClockSpring,co_8ee15ee82f54,Second Lien,Other,16.08%,5.00%,SOFR,6.50%,,2025-08-01,5301,5217,,,,,,,BCSF,2023-11-06
-East BCC Coinvest II LLC,co_1ab2236be22b,Other Equity,Other,,,,,,,1419,1419,,,,,,,BCSF,2023-11-06
-Ergotron Acquisition LLC,co_502123cf0bd8,First Lien,Other,10.18%,,SOFR,5.75%,,2028-07-06,12219,11987,,,,,,,BCSF,2023-11-06
-FCG Acquisitions Inc.,co_e6efac010dff,Preferred Equity,Other,,,,,,,4,,,,,,,,BCSF,2023-11-06
-Jonathan Acquisition Company,co_2b0df6f58fee,Second Lien,Other,13.75%,,LIBOR,9.00%,,2027-12-22,8000,7843,,,,,,,BCSF,2023-11-06
-TCFIII Owl Finance LLC,co_ba7b5dc49368,Subordinated Debt,Other,12.00%,,N/A,12.00%,,2027-01-30,4841,4782,,,,,,,BCSF,2023-11-06
-AP Plastics Group LLC,co_d6aeb6127a60,First Lien,Chemicals,8.97%,,LIBOR,4.75%,,2028-08-10,7287,7076,,,,,,,BCSF,2023-11-06
-V Global Holdings LLC,co_e97d0109499f,First Lien,Chemicals,8.99%,,SOFR,5.75%,,2027-12-22,5862,5761,,,,,,,BCSF,2023-11-06
-V Global Holdings LLC,co_e97d0109499f,Revolver,Chemicals,,,,,,,2025-12-22,,,0,,,147,,BCSF,2023-11-06
-V Global Holdings LLC,co_e97d0109499f,First Lien,Chemicals,8.04%,,Euribor,5.75%,,2027-12-22,100,103,,,,,,,BCSF,2023-11-06
-Cardo,co_489d7a38ff74,First Lien,Automotive,,,,,5.00,2028-05-12,9653,9575,,,,,,,BCSF,2023-11-06
-Golden State Buyer Inc.,co_7578b1790ea0,First Lien,Pharmaceuticals & Biotechnology,,L,4.75,,14086,14035,,,,,,,,,BCSF,2023-11-06
-Reconomy,co_e7f5e4f71470,Delayed Draw,Environmental Services,,,,,,2029-06-24,,,75,,,,,,BCSF,2023-11-06
-Reconomy,co_e7f5e4f71470,First Lien,Environmental Services,,,,SONIA,6.25%,,2029-06-24,68000000,68000000,82000000,11.44,,,,BCSF,2023-11-06
-Reconomy,co_e7f5e4f71470,First Lien,Environmental Services,,,,EURIBOR,6.00%,,2029-06-24,27000000,27000000,28000000,9.97,,,,BCSF,2023-11-06
-Titan Cloud Software Inc.,co_ee2bcff6bd0c,Other Equity,Other,,,,,,,,,3532,3532,4330,,,,BCSF,2023-11-06
-Titan Cloud Software Inc.,co_ee2bcff6bd0c,First Lien,Other,,,,,6.10%,,2029-09-07,25714000,25487000,25487000,11.52,,,,BCSF,2023-11-06
-Titan Cloud Software Inc.,co_ee2bcff6bd0c,Delayed Draw,Other,,,,,6.00%,,2029-09-07,11429000,11334000,11334000,11.51,,,,BCSF,2023-11-06
-Allworth Financial Group LP,co_8d9dfaac525d,Delayed Draw,Other,,,,,5.50%,,2026-12-23,868000,856000,856000,10.92,,,,BCSF,2023-11-06
-Allworth Financial Group LP,co_8d9dfaac525d,First Lien,Other,,,,,5.50%,,2026-12-23,1494000,1481000,1481000,10.92,,,,BCSF,2023-11-06
-Congress Wealth,co_2f9c21f294e6,Delayed Draw,Other,,,,,6.75%,,2029-06-30,320000,317000,317000,12.16,,,,BCSF,2023-11-06
-Congress Wealth,co_2f9c21f294e6,First Lien,Other,,,,,6.85%,,2029-06-30,4731000,4731000,4731000,12.24,,,,BCSF,2023-11-06
-Congress Wealth,co_2f9c21f294e6,Other Equity,Other,,,,,,,,,15,294,294,,,,BCSF,2023-11-06
-FNZ UK Finco Ltd.,co_4f6628aa4900,First Lien,Other,,,,,5.50%,,2026-09-30,81000000,55000000,55000000,10.37,,,,BCSF,2023-11-06
-Insigneo Financial Group LLC,co_0d9e495e4d55,Other Equity,Other,,,,,,,,,2296,2312,2130,,,,BCSF,2023-11-06
-Insigneo Financial Group LLC,co_0d9e495e4d55,First Lien,Other,,,,,6.25%,,2028-08-01,3825000,3743000,3743000,11.70,,,,BCSF,2023-11-06
-Parmenion,co_386c5146ee73,First Lien,Other,,,,SONIA,5.50%,,2029-05-11,295000,368000,368000,9.93,,,,BCSF,2023-11-06
-TA/Weg Holdings,co_8b1481d5c956,Delayed Draw,Other,,,,,5.75%,,2027-10-04,9328000,9328000,9328000,11.26,,,,BCSF,2023-11-06
-9 Story Media Group Inc.,co_62d2a3fe2d9b,First Lien,Manufacturing,9.98%,,CDOR,5.25%,,4/30/2026,6798,5397,5397,5.016,,,,,BCSF,2023-11-06
-New Look Vision Group,co_e2b53a38c165,First Lien,Retail,10.38%,,CDOR,5.50%,,5/26/2028,17875,14631,14631,15.039,,,,,BCSF,2023-11-06
-New Look Vision Group,co_e2b53a38c165,Delayed Draw,Retail,10.38%,,CDOR,5.50%,,5/26/2028,2306,1650,1650,1.65,,,,,BCSF,2023-11-06
-New Look Vision Group,co_e2b53a38c165,Delayed Draw,Retail,10.38%,,CDOR,5.50%,,5/26/2028,1198,934,934,0.934,,,,,BCSF,2023-11-06
-VPARK BIDCO AB,co_1491b8088800,First Lien,Other,6.03%,,CIBOR,4.00%,,3/10/2025,56429,9231,9231,8.122,,,,,BCSF,2023-11-06
-V Global Holdings LLC,co_e97d0109499f,First Lien,Chemicals,8.04%,,Euribor,5.75%,,12/22/2027,9353,9425,9425,9.637,,,,,BCSF,2023-11-06
-Reconomy,co_e7f5e4f71470,First Lien,Environmental Services,8.20%,,Euribor,6.00%,,6/24/2029,2440,2475,2475,2.612,,,,,BCSF,2023-11-06
-MRHT,co_cbb5b63e6b61,First Lien,Financial Services,7.06%,,Euribor,5.50%,,7/26/2028,21335,24551,24551,24.551,,,,,BCSF,2023-11-06
-MRHT,co_cbb5b63e6b61,First Lien,Financial Services,7.41%,,Euribor,5.50%,,7/26/2028,9900,9941,9941,9.941,,,,,BCSF,2023-11-06
-Paisley Bidco Ltd.,co_1319d9d0ff80,Revolver,Financial Services,7.11%,,Euribor,5.50%,,11/26/2028,3178,3367,3367,3.367,,,,,BCSF,2023-11-06
-9 Story Media Group Inc.,co_62d2a3fe2d9b,First Lien,Manufacturing,10.75%,,CDOR,5.25%,,2026-04-30,,,,6746,5356,5356,,,BCSF,2023-11-06
-New Look Vision Group,co_e2b53a38c165,First Lien,Retail,11.29%,,SOFR,5.75%,,2028-05-26,,,,17739,14540,14540,,,BCSF,2023-11-06
-New Look Vision Group,co_e2b53a38c165,Delayed Draw,Retail,11.01%,,CDOR,5.50%,,2028-05-26,,,,1195,929,929,,,BCSF,2023-11-06
-VPARK BIDCO AB,co_1491b8088800,First Lien,Other,7.90%,,CIBOR,4.00%,,2025-03-10,,,,56429,9231,9231,,,BCSF,2023-11-06
-V Global Holdings LLC,co_e97d0109499f,First Lien,Chemicals,9.41%,,Euribor,5.75%,,2027-12-22,,,,9306,9395,9395,,,BCSF,2023-11-06
-Reconomy,co_e7f5e4f71470,First Lien,Environmental Services,9.97%,,Euribor,6.00%,,2029-06-24,,,,2440,2475,2475,,,BCSF,2023-11-06
-MRHT,co_cbb5b63e6b61,First Lien,Financial Services,10.50%,,Euribor,6.75%,,2029-02-01,,,,12000,12967,12967,,,BCSF,2023-11-06
-Paisley Bidco Ltd.,co_1319d9d0ff80,Revolver,Financial Services,9.21%,,Euribor,5.50%,,2028-11-26,,,,3178,3367,3367,,,BCSF,2023-11-06
-Mertus 522. GmbH,co_580929d40091,First Lien,Pharmaceuticals & Biotechnology,7.00%,,Euribor,6.25%,,2026-05-28,13052,15780,15780,,13052,,,,BCSF,2023-11-06
-Mertus 522. GmbH,co_580929d40091,First Lien,Pharmaceuticals & Biotechnology,7.00%,,Euribor,6.25%,,2026-05-28,22244,26906,26906,,22244,,,,BCSF,2023-11-06
-Pharmathen,co_320518d2af02,Revolver,Pharmaceuticals & Biotechnology,5.73%,,Euribor,5.73%,,2028-10-25,13492,15012,15012,,13492,,,,BCSF,2023-11-06
-Pharmathen,co_320518d2af02,Revolver,Pharmaceuticals & Biotechnology,5.73%,,Euribor,5.73%,,2028-10-25,1266,1331,1331,,1266,,,,BCSF,2023-11-06
-Onventis,co_3d060b294fd4,Delayed Draw,Other,7.50%,,Euribor,7.50%,,2030-01-12,5000,5319,5319,,5000,,,,BCSF,2023-11-06
-Utimaco,co_abe8bc4ee7f1,First Lien,Other,6.25%,,Euribor,6.25%,,2029-05-13,8250,8340,8340,,8250,,,,BCSF,2023-11-06
-Lightning Finco Ltd.,co_f318bafb5e05,First Lien,Media & Entertainment,5.50%,,Euribor,5.50%,,2028-08-31,2619,2951,2951,,2619,,,,BCSF,2023-11-06
-9 Story Media Group Inc.,co_62d2a3fe2d9b,First Lien,Manufacturing,5.25%,,Euribor,5.25%,,2026-04-30,3636,4424,4424,,3636,,,,BCSF,2023-11-06
-Aptus 1724 Gmbh,co_807a5d77446a,First Lien,Manufacturing,6.00%,,Euribor,6.00%,,2028-02-23,35000,41281,41281,,35000,,,,BCSF,2023-11-06
-iBanFirst,co_23bf70770fe7,First Lien,Other,10.00% PIK,,Euribor,10.00%,,2028-07-13,11884,13397,13397,,11884,,,,BCSF,2023-11-06
-SumUp Holdings Luxembourg S.à.r.l.,co_4ac406dc777a,First Lien,Other,8.50%,,Euribor,8.50%,,2026-02-17,30900,35472,35472,,30900,,,,BCSF,2023-11-06
-VPARK BIDCO AB,co_1491b8088800,First Lien,Other,4.00%,,NIBOR,4.00%,,2025-03-10,73280,8651,8651,,73280,,,,BCSF,2023-11-06
-Abracon Group Holding LLC,co_af5df15d8a58,First Lien,Other,10.48%,,SOFR,5.90%,,2028-07-06,11518,11299,,,,,,,BCSF,2023-11-06
-Abracon Group Holding LLC,co_af5df15d8a58,Revolver,,,,,,,,,7/6/2028,,,,,,,BCSF,2023-11-06
-Abracon Group Holding LLC,co_af5df15d8a58,Delayed Draw,,,,,,,,,7/6/2028,,,,,,,BCSF,2023-11-06
-Aramsco Inc.,co_eb8702bda800,First Lien,Other,9.63%,,LIBOR,5.25%,,2024-08-28,14066,13958,,,,,,,BCSF,2023-11-06
-Aramsco Inc.,co_eb8702bda800,Revolver,Other,9.59%,,LIBOR,5.25%,,2024-08-28,677,654,,,,,,,BCSF,2023-11-06
-Armor Group LP,co_4b22c4f1cb51,Other Equity,,,,,,n/a,,,,10,1012,,,,,BCSF,2023-11-06
-SureWerx,co_b4b76c52bc73,First Lien,Other,11.30%,,SOFR,6.75%,,2029-12-28,8365,8156,,,,,,,BCSF,2023-11-06
-SureWerx,co_b4b76c52bc73,Delayed Draw,,,,,,,,,12/28/2029,,,,,,,BCSF,2023-11-06
-SureWerx,co_b4b76c52bc73,Revolver,,,,,,,,,2028-12-28,134,107,,,,,BCSF,2023-11-06
-Mertus 522 GmbH,co_580929d40091,First Lien,Automotive,8.11%,,Euribor,6.25%,,2026-05-28,12999,15705,,,,,,,BCSF,2023-11-06
-Mertus 522 GmbH,co_580929d40091,First Lien,Automotive,8.69%,,Euribor,6.25%,,2026-05-28,22244,26873,,,,,,,BCSF,2023-11-06
-Pharmathen,co_320518d2af02,Revolver,Automotive,8.48%,,Euribor,5.73%,,2028-10-25,778,791,,,,,,,BCSF,2023-11-06
-9 Story Media Group Inc.,co_62d2a3fe2d9b,First Lien,Manufacturing,7.20%,,Euribor,5.25%,,2026-04-30,3665,4458,,,,,,,BCSF,2023-11-06
-iBanFirst,co_23bf70770fe7,First Lien,Other,10.00%,10.00%,,10.00%,,2028-07-13,10856,12258,,,,,,,BCSF,2023-11-06
-Spring Finco BV,co_68689161b543,First Lien,Other,9.08%,,NIBOR,6.00%,,2029-07-15,48840,4810,,,,,,,BCSF,2023-11-06
-Reconomy,co_e7f5e4f71470,First Lien,Environmental Services,9.68%,,SONIA,6.25%,,2029-06-24,68,,,82,,,,,BCSF,2023-11-06
-Reconomy,co_e7f5e4f71470,First Lien,Environmental Services,8.20%,,Euribor,6.00%,,2029-06-24,27,,,28,,,,,BCSF,2023-11-06
-Titan Cloud Software Inc.,co_ee2bcff6bd0c,Other Equity,Environmental Services,,,,,,,3226,,,3226,,,,,BCSF,2023-11-06
-Titan Cloud Software Inc.,co_ee2bcff6bd0c,First Lien,Environmental Services,11.05%,,SOFR,6.60%,,2029-09-07,25714,,,25464,,,,,BCSF,2023-11-06
-Titan Cloud Software Inc.,co_ee2bcff6bd0c,Delayed Draw,Environmental Services,,,,,,2029-09-07,,,108,,,,,,BCSF,2023-11-06
-Allworth Financial Group LP,co_8d9dfaac525d,First Lien,Other,9.17%,,SOFR,4.75%,,2026-12-23,1505,,,1490,,,,,BCSF,2023-11-06
-Allworth Financial Group LP,co_8d9dfaac525d,Delayed Draw,Other,9.17%,,SOFR,4.75%,,2026-12-23,874,,,861,,,,,BCSF,2023-11-06
-FNZ UK Finco Ltd.,co_4f6628aa4900,First Lien,Other,8.06%,,LIBOR,5.50%,,2026-09-30,81,,,55,,,,,BCSF,2023-11-06
-Insigneo Financial Group LLC,co_0d9e495e4d55,First Lien,Other,9.19%,,SOFR,6.25%,,2028-08-01,3825,,,3733,,,,,BCSF,2023-11-06
-Insigneo Financial Group LLC,co_0d9e495e4d55,Other Equity,Other,,,,,,,2190,,,2191,,,,,BCSF,2023-11-06
-Parmenion,co_386c5146ee73,First Lien,Other,8.68%,,SONIA,5.75%,,2029-05-11,328,,,409,,,,,BCSF,2023-11-06
-TA/Weg Holdings,co_8b1481d5c956,Delayed Draw,Other,10.75%,,SOFR,6.00%,,2025-10-02,2373,,,2364,,,,,BCSF,2023-11-06
-TA/Weg Holdings,co_8b1481d5c956,Delayed Draw,Other,9.41%,,SOFR,6.00%,,2025-10-02,9399,,,9399,,,,,BCSF,2023-11-06
-BCC Jetstream Holdings Aviation (On II) LLC,co_663dc528bc35,First Lien,Aerospace & Defense,10.00%,,SOFR,10.00%,2023-06-02,,8013,8013,,,,,,,BCSF,2023-11-06
-Bain Capital Senior Loan Program LLC,co_01dd3e9f83e5,Subordinated Debt,Financial Services,10.00%,,N/A,10.00%,,2033-12-27,50995,50995,,,,,,,BCSF,2023-11-06
-International Senior Loan Program LLC,co_f90a03b7ce25,Subordinated Debt,Financial Services,8.00%,,LIBOR,11.74%,,2028-02-22,186979,186979,,,,,,,BCSF,2023-11-06
-Lightning Holdings B LLC,co_0dae01a48d31,Other Equity,Transportation,,,,,,,25264,25573,,,,,,,BCSF,2023-11-06
-Goldman Sachs Financial Square Government Fund Institutional Share Class,co_2a574eb2c9ea,Other,Other,,,,,,,63394,63394,,,,,,,BCSF,2023-11-06
-Cardo,co_489d7a38ff74,First Lien,Automotive,8.5%,,LIBOR,5.50%,,2028-05-12,9653,9586,9653,,,,,,BCSF,2023-11-06
-V Global Holdings LLC,co_e97d0109499f,First Lien,Chemicals,7.60%,,SOFR,5.75%,,2027-12-22,23339,23339,23339,,,,,,BCSF,2023-11-06
-RoC Opco LLC,co_a3ceaa00e48a,First Lien,Consumer Products,7.60%,,SOFR,7.60%,,2025-02-25,15755,15755,15755,,,,,,BCSF,2023-11-06
-Stanton Carpet,co_43488af71287,Second Lien,Consumer Products,9.00%,,SOFR,9.00%,,2028-03-31,5000,4941,5000,,,,,,BCSF,2023-11-06
-NearMap,co_05354a068fb4,First Lien,Other,7.25%,,SOFR,7.25%,,2029-12-09,11800,11585,11800,,,,,,BCSF,2023-11-06
-Utimaco,co_abe8bc4ee7f1,First Lien,Other,6.25%,,SOFR,6.25%,,2029-05-13,16450,16310,16450,,,,,,BCSF,2023-11-06
-Utimaco,co_abe8bc4ee7f1,First Lien,Other,6.25%,,SOFR,6.25%,,2029-05-13,8550,8477,8550,,,,,,BCSF,2023-11-06
-Lightning Finco Ltd.,co_f318bafb5e05,First Lien,Media & Entertainment,5.76%,,SOFR,5.76%,,2028-08-31,23907,23753,23907,,,,,,BCSF,2023-11-06
-Aptus 1724 Gmbh,co_807a5d77446a,First Lien,Manufacturing,6.25%,,LIBOR,6.25%,,2028-02-23,10000,9950,10000,,,,,,BCSF,2023-11-06
-Ansett Aviation Training,co_40a3f0eaeb1d,First Lien,Aerospace & Defense,8.83%,,BBSY,4.69%,,2031-09-24,14144,9830,11800,,,,,,BCSF,2023-11-06
-FNZ UK Finco Ltd.,co_4f6628aa4900,First Lien,Other,10.37%,,LIBOR,5.50%,,2026-09-30,7660,4937,4937,,,,,,BCSF,2023-11-06
-Datix Bidco Ltd.,co_ae2c07b9fe9a,First Lien,Pharmaceuticals & Biotechnology,8.41%,,BBSW,4.50%,,2025-04-28,4169,3294,3294,,,,,,BCSF,2023-11-06
-TGI Sport Bidco Pty Ltd.,co_72f72a942e8a,First Lien,Media & Entertainment,11.11%,,BBSY,7.00%,,2026-04-30,9730,7040,7040,,,,,,BCSF,2023-11-06
-Zeppelin BidCo Pty Ltd.,co_2181c2b3ff49,First Lien,Other,9.24%,,BBSY,5.00%,,2024-07-12,20415,16109,16109,,,,,,BCSF,2023-11-06
-Reconomy,co_e7f5e4f71470,First Lien,Environmental Services,11.44%,,SONIA,6.25%,,2029-06-24,6050,7045,7045,,,,,,BCSF,2023-11-06
-Reconomy,co_e7f5e4f71470,Delayed Draw,Environmental Services,11.44%,,SONIA,6.25%,,2029-06-24,6590,8094,8094,,,,,,BCSF,2023-11-06
-Parmenion,co_386c5146ee73,First Lien,Other,9.93%,,SONIA,5.50%,,2029-05-11,29070,35233,35233,,,,,,BCSF,2023-11-06
-Paisley Bidco Ltd.,co_1319d9d0ff80,Revolver,Financial Services,10.54%,,SONIA,5.50%,,2028-11-26,6346,8019,8019,,,,,,BCSF,2023-11-06
-Access,co_a0561fd649cd,First Lien,Other,,,,,5.25,2029-06-04,7880,9084,9084,,,,,,BCSF,2023-11-06
-International Entertainment Investments Ltd.,co_c1f3fef4fec6,First Lien,Manufacturing,,,,,4.75,2025-11-30,8753,12316,12316,,,,,,BCSF,2023-11-06
-OGH Bidco Ltd.,co_6714dd17841b,First Lien,Media & Entertainment,,,,,6.25,2029-06-29,5172,6022,6022,,,,,,BCSF,2023-11-06
-OGH Bidco Ltd.,co_6714dd17841b,First Lien,Media & Entertainment,,,,,6.25,2029-06-29,13160,15170,15170,,,,,,BCSF,2023-11-06
-Caribou Bidco Ltd.,co_3a0c47e12016,Delayed Draw,Other,,,,,6.00,2029-01-29,1576,1952,1952,,,,,,BCSF,2023-11-06
-Caribou Bidco Ltd.,co_3a0c47e12016,First Lien,Other,,,,,6.00,2029-01-29,19500,24151,24151,,,,,,BCSF,2023-11-06
-Comet Bidco Ltd.,co_b7d68186f6a3,First Lien,Other,,,,,5.25,2024-09-30,7362,9711,9711,,,,,,BCSF,2023-11-06
-Brook Bidco,co_996f1bf749c4,First Lien,Other,10.16,4.25,SONIA,3.00%,2028-07-07,22066,29929,29929,,,,,,,BCSF,2023-11-06
-Learning Pool,co_a7f31514d526,First Lien,Other,,,LIBOR,7.25%,2028-07-07,4812,6424,6424,,,,,,,BCSF,2023-11-06
-Learning Pool,co_a7f31514d526,First Lien,Other,,,LIBOR,7.25%,2028-07-07,6695,8934,8934,,,,,,,BCSF,2023-11-06
-Opus2,co_13dda502e4ae,First Lien,Other,,,,,5.00,2028-05-05,12151,16379,16379,,,,,,BCSF,2023-11-06
-Parcel2Go,co_6eb62fa73008,Delayed Draw,Other,,,,,6.00,2028-07-15,3825,5089,5089,,,,,,BCSF,2023-11-06
-Parcel2Go,co_6eb62fa73008,First Lien,Other,,,,,6.00,2028-07-15,12395,16675,16675,,,,,,BCSF,2023-11-06
-Surrey Bidco Ltd.,co_3a56d633125d,First Lien,Other,8.97,7.00,SONIA,,2026-05-11,5353,7215,7215,,,,,,,BCSF,2023-11-06
-TGI Sport Bidco Pty Ltd.,co_72f72a942e8a,First Lien,Media & Entertainment,,,BBSW,7.00%,,2026-04-30,9658,6963,6963,,,,,,BCSF,2023-11-06
-Zeppelin BidCo Pty Ltd.,co_2181c2b3ff49,First Lien,Other,,,BBSY,5.00%,,2024-06-28,20415,16084,16084,,,,,,BCSF,2023-11-06
-Parmenion,co_386c5146ee73,First Lien,Other,,,SONIA,5.75%,,2029-05-11,32300,39084,39084,,,,,,BCSF,2023-11-06
-Datix Bidco Ltd.,co_ae2c07b9fe9a,Revolver,Pharmaceuticals & Biotechnology,,,SONIA,4.50%,,2024-10-28,963,1086,1086,,,,,,BCSF,2023-11-06
-Datix Bidco Ltd.,co_ae2c07b9fe9a,Second Lien,Pharmaceuticals & Biotechnology,,,SONIA,7.75%,,2026-04-27,12013,16916,16916,,,,,,BCSF,2023-11-06
-Access,co_a0561fd649cd,First Lien,Other,,,,,5.00%,,2029-06-04,7880,9095,9613,,,,,BCSF,2023-11-06
-OGH Bidco Ltd.,co_6714dd17841b,First Lien,Media & Entertainment,,,,,6.50%,,2029-09-02,5172,6073,,,,,,BCSF,2023-11-06
-OGH Bidco Ltd.,co_6714dd17841b,First Lien,Media & Entertainment,,,,,6.25%,,2029-06-29,13160,15189,,,,,,BCSF,2023-11-06
-Brook Bidco,co_996f1bf749c4,First Lien,Other,4.25%,3.00%,SONIA,3.00%,,2028-07-07,23538,31807,,,,,,,BCSF,2023-11-06
-Caribou Bidco Ltd.,co_3a0c47e12016,First Lien,Other,1.25%,5.25%,SONIA,5.25%,,2029-01-29,19500,24178,,,,,,,BCSF,2023-11-06
-Caribou Bidco Ltd.,co_3a0c47e12016,Delayed Draw,Other,1.25%,5.25%,SONIA,5.25%,,2029-01-29,1576,1954,,,,,,,BCSF,2023-11-06
-Learning Pool,co_a7f31514d526,First Lien,Other,4.25%,3.00%,SONIA,3.00%,,2028-07-07,5169,6830,,,,,,,BCSF,2023-11-06
-Learning Pool,co_a7f31514d526,First Lien,Other,4.25%,3.00%,SONIA,3.00%,,2028-07-07,7192,9502,,,,,,,BCSF,2023-11-06
-Opus2,co_13dda502e4ae,First Lien,Other,,,,,5.03%,,2028-05-05,12151,16422,,,,,,BCSF,2023-11-06
-Parcel2Go,co_6eb62fa73008,First Lien,Other,,,,,6.00%,,2028-07-15,12395,16718,,,,,,BCSF,2023-11-06
-Parcel2Go,co_6eb62fa73008,Delayed Draw,Other,,,,,6.00%,,2028-07-15,3825,5094,,,,,,BCSF,2023-11-06
-Surrey Bidco Ltd.,co_3a56d633125d,First Lien,Other,0.00%,7.00%,SONIA,7.00%,,2026-05-11,5660,7200,,,,,,,BCSF,2023-11-06
-Avalon Acquiror Inc.,co_7d81e84f1d70,First Lien,Other,6.25%,,SOFR,,2028-03-10,,11850,11760,,,,,,,BCSF,2023-11-06
-Chamber Bidco Ltd.,co_3a3818b2d0ac,First Lien,Other,6.25%,,SOFR,,2028-06-07,,21081,20934,,,,,,,BCSF,2023-11-06
-Smartronix,co_0aef8ece01b9,First Lien,Other,5.75%,,SOFR,,2028-11-23,,10835,10727,,,,,,,BCSF,2023-11-06
-Avalon Acquiror Inc.,co_7d81e84f1d70,First Lien,Other,6.25%,,SOFR,,2028-03-10,11940,11833,,,,,,,,BCSF,2023-11-06
-Chamber Bidco Ltd.,co_3a3818b2d0ac,First Lien,Other,5.50%,,LIBOR,,2028-06-07,23423,23234,,,,,,,,BCSF,2023-11-06
-Smartronix,co_0aef8ece01b9,First Lien,Other,6.00%,,LIBOR,,2028-11-23,10917,10795,,,,,,,,BCSF,2023-11-06
+Forming Machining Industries Holdings,co_c61b6da3cb33,Second Lien,Aerospace & Defense,12.58%,,SOFR,7.25%,,2026-10-09,6540,6509,5330,,6509,,,,BCSF,2023-11-06
+Forming Machining Industries Holdings,co_c61b6da3cb33,First Lien,Aerospace & Defense,9.82%,,SOFR,4.25%,,2025-10-09,16142,16098,13640,,16098,,,,BCSF,2023-11-06
+Forward Slope First Lien Senior Secured Loan SOFR Spread 6.85% Interest Rate 12.17% Maturity Date 8/22/2029,co_3b30f83e2d18,First Lien,Aerospace & Defense,12.17%,,SOFR,6.85%,,2029-08-22,24966,24346,24966,,24346,,,,BCSF,2023-11-06
+Forward Slope First Lien Senior Secured Loan - Delayed Draw Maturity Date 8/22/2029,co_2605d589cbb6,Other,Aerospace & Defense,,,,,,2029-08-22,,-291,,,-291,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+Forward Slope First Lien Senior Secured Loan - Revolver SOFR Spread 6.85% Interest Rate 12.17% Maturity Date 8/22/2029,co_01c5ae5dde92,First Lien,Aerospace & Defense,12.17%,,SOFR,6.85%,,2029-08-22,2369,2151,2369,,2151,,,type_hint_revolver_from_name,BCSF,2023-11-06
+GSP Holdings,co_91abfa32f51a,First Lien,Aerospace & Defense,11.29%,0.25%,SOFR,5.75%,,2025-11-06,35319,35496,33035,,35496,,,,BCSF,2023-11-06
+GSP Holdings,co_91abfa32f51a,Revolver,Aerospace & Defense,11.39%,0.25%,SOFR,5.75%,,2025-11-06,2305,2289,2010,,2289,,,,BCSF,2023-11-06
+Kellstrom Aerospace Group,co_a0e90c1e4006,Other Equity,Aerospace & Defense,,,,,,,1,1963,973,,1963,,,,BCSF,2023-11-06
+Kellstrom Commercial Aerospace,co_777d8cb8fa92,First Lien,Aerospace & Defense,11.42%,,SOFR,6%,,2025-07-01,29677,29320,28787,,29320,,,,BCSF,2023-11-06
+Kellstrom Commercial Aerospace,co_777d8cb8fa92,Revolver,Aerospace & Defense,13.35%,,SOFR,5%,,2025-07-01,47,42,-82,,42,,,,BCSF,2023-11-06
+Mach Acquisition R/C First Lien Senior Secured Loan - Revolver SOFR Spread 7.65% Interest Rate 13.05% Maturity Date 10/18/2026,co_7f7082975d05,First Lien,Aerospace & Defense,13.05%,,SOFR,7.65%,,2026-10-18,7532,7410,6528,,7410,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Mach Acquisition T/L First Lien Senior Secured Loan SOFR Spread 6.50% (2.00%PIK) Interest Rate 13.82% Maturity Date 10/18/2026,co_85e20a1d38e5,First Lien,Aerospace & Defense,13.82%,2%,SOFR,6.5%,,2026-10-18,34051,33638,30646,,33638,,,,BCSF,2023-11-06
+Precision Ultimate Holdings,co_e9aee1d6a1c6,Other Equity,Aerospace & Defense,,,,,,,1417,1417,1040,,1417,,,,BCSF,2023-11-06
+Robinson Helicopter,co_2618d30857d8,First Lien,Aerospace & Defense,,,,,,,1592,1592,2338,,1592,,,,BCSF,2023-11-06
+Robinson Helicopter First Lien Senior Secured Loan SOFR Spread 6.50% Interest Rate 11.92% Maturity Date 6/30/2028,co_6fe17dd549e0,First Lien,Aerospace & Defense,11.92%,,SOFR,6.5%,,2028-06-30,15531,15233,15531,,15233,,,,BCSF,2023-11-06
+Saturn Purchaser Corp.,co_1a2ed7d76c61,First Lien,Aerospace & Defense,10.92%,,SOFR,5.6%,,2029-07-23,26603,26353,26603,,26353,,,,BCSF,2023-11-06
+Saturn Purchaser Corp.,co_1a2ed7d76c61,Other,Aerospace & Defense,,,,,,2029-07-22,,-41,,,-41,,,,BCSF,2023-11-06
+Whitcraft-Paradigm First Lien Senior Secured Loan SOFR Spread 7.00% Interest Rate 12.32% Maturity Date 2/28/2029,co_c9271449dfd2,First Lien,Aerospace & Defense,12.32%,,SOFR,7%,,2029-02-28,12393,12279,12393,,12279,,,,BCSF,2023-11-06
+Whitcraft-Paradigm First Lien Senior Secured Loan - Revolver Maturity Date 2/28/2029,co_a62e0bdc5da2,Other,Aerospace & Defense,,,,,,2029-02-28,,-20,,,-20,,,type_hint_revolver_from_name,BCSF,2023-11-06
+WP CPP Holdings,co_af0c4589f606,Second Lien,Aerospace & Defense,13.27%,,SOFR,7.75%,,2026-04-30,11724,11672,9848,,11672,,,,BCSF,2023-11-06
+American Trailer Rental Group Subordinated Debt Spread 9.00% (4.50%PIK) Interest Rate 13.50% Maturity Date 12/1/2027,co_0ca86f09fbd5,First Lien,Automotive,13.5%,4.5%,SOFR,9%,,2027-12-01,5076,5021,5077,,5021,,,,BCSF,2023-11-06
+American Trailer Rental Group Subordinated Debt Spread 9.00% (4.50%PIK) Interest Rate 13.50% Maturity Date 12/1/2027 One,co_8ae8455a88f3,First Lien,Automotive,13.5%,4.5%,SOFR,9%,,2027-12-01,15659,15412,15659,,15412,,,,BCSF,2023-11-06
+American Trailer Rental Group Subordinated Debt Spread 9.00% (4.50%PIK) Interest Rate 13.50% Maturity Date 12/1/2027 Two,co_506a834d1aa7,First Lien,Automotive,13.5%,4.5%,SOFR,9%,,2027-12-01,19554,19232,19554,,19232,,,,BCSF,2023-11-06
+Cardo First Lien Senior Secured Loan LIBOR Spread 5.50% Interest Rate 11.08% Maturity Date 5/12/2028,co_87fd06b841dd,First Lien,Automotive,11.08%,,SOFR,5.5%,,2028-05-12,98,97,98,,97,,,,BCSF,2023-11-06
+Gills Point S First Lien Senior Secured Loan SOFR Spread 7.00% Interest Rate 12.38% Maturity Date 5/15/2029,co_7db1abbec59b,First Lien,Automotive,12.38%,,SOFR,7%,,2029-05-15,12663,12663,12663,,12663,,,,BCSF,2023-11-06
+Gills Point S First Lien Senior Secured Loan - Revolver Prime Spread 6.00% Interest Rate 14.50% Maturity Date 5/15/2029,co_e288d832a6d7,First Lien,Automotive,14.5%,,SOFR,6%,,2029-05-15,104,104,104,,104,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Gills Point S First Lien Senior Secured Loan Delayed Draw SOFR Spread 7.10% Interest Rate 12.51% Maturity Date 5/15/2029,co_d20010dbd937,First Lien,Automotive,12.51%,,SOFR,7.1%,,2029-05-15,252,249,252,,249,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+Gills Point S,co_8fa696abf31e,First Lien,Automotive,,,,,,,2,184,197,,184,,,,BCSF,2023-11-06
+Intoxalock First Lien Senior Secured Loan SOFR Spread 6.75% Interest Rate 11.92% Maturity Date 11/1/2028,co_58ce36505755,First Lien,Automotive,11.92%,,SOFR,6.75%,,2028-11-01,12158,12051,12158,,12051,,,,BCSF,2023-11-06
+Intoxalock First Lien Senior Secured Loan Revolver Maturity Date 11/1/2028,co_04b72bd74635,Other,Automotive,,,,,,2028-11-01,,-29,,,-29,,,type_hint_revolver_from_name,BCSF,2023-11-06
+JHCC Holdings,co_6b40f1198954,First Lien,Automotive,10.79%,,SOFR,5.25%,,2025-09-09,12073,12006,12073,,12006,,,,BCSF,2023-11-06
+JHCC Holdings,co_6b40f1198954,Revolver,Automotive,,,,,,2025-09-09,,-23,,,-23,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Banking Finance,co_f1aaeecc1f0c,Delayed Draw,Financial Services,11.05%,,SOFR,5.63%,,2028-04-25,2632,2617,2606,,2617,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Banking Finance,co_f1aaeecc1f0c,Delayed Draw,Financial Services,10.92%,,SOFR,5.5%,,2028-04-25,2223,2167,2201,,2167,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Banking Finance,co_f1aaeecc1f0c,Revolver,Financial Services,10.42%,,SOFR,5%,,2028-04-25,798,773,776,,773,,,,BCSF,2023-11-06
+Arctic Glacier U.S.A.,co_dc13fa9f9c49,First Lien,Food & Beverage,16.13%,4%,SOFR,6.5%,,2028-05-24,13140,12886,12877,,12886,,,,BCSF,2023-11-06
+Arctic Glacier U.S.A.,co_dc13fa9f9c49,Revolver,Food & Beverage,,,,,,2028-05-24,,27,-30,,27,,,,BCSF,2023-11-06
+NPC International,co_9a99dc95d19e,Other Equity,Food & Beverage,,,,,,,308,461,7,,461,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Beverage,co_a68a6a3826b9,Preferred Equity,Food & Beverage,,,,,,,33,5000,6329,,5000,,,,BCSF,2023-11-06
+ClockSpring Second Lien Senior Secured Loan SOFR Spread 6.50% (1.00% PIK) Interest Rate 14.89% Maturity Date 8/1/2025,co_d47ad7dead5f,First Lien,Industrials,14.89%,1%,SOFR,6.5%,,2025-08-01,5483,5422,5593,,5422,,,,BCSF,2023-11-06
+East BCC Coinvest II,co_f4eb72734117,Other Equity,Industrials,,,,,,,1419,1419,475,,1419,,,,BCSF,2023-11-06
+Ergotron Acquisition LLC,co_502123cf0bd8,First Lien,Industrials,11.17%,,SOFR,5.75%,,2028-07-06,12128,11921,12128,,11921,,,,BCSF,2023-11-06
+Jonathan Acquisition Company Second Lien Senior Secured Loan SOFR Spread 9.10% Interest Rate 14.32% Maturity Date 12/22/2027,co_b3a1ca6fb5d0,First Lien,Industrials,14.5%,,SOFR,9.1%,,2027-12-22,8000,7859,7920,,7859,,,,BCSF,2023-11-06
+TCFIII Owl Finance,co_b7cc69b2b7b6,Subordinated Debt,Industrials,12%,12%,,,,2027-01-30,5299,5250,5140,,5250,,,,BCSF,2023-11-06
+AP Plastics Group,co_c28bbe507966,First Lien,Chemicals & Materials,10.18%,,SOFR,4.75%,,2028-08-10,7212,7026,6960,,7026,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Chemicals,co_0bee6fa6c1ac,Other Equity,Chemicals & Materials,,,,,,,1,651,593,,651,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Chemicals,co_0bee6fa6c1ac,First Lien,Chemicals & Materials,9.41%,,SOFR,5.75%,,2027-12-22,99,103,102,,103,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Chemicals,co_0bee6fa6c1ac,First Lien,Chemicals & Materials,11.43%,,SOFR,5.75%,,2027-12-22,5818,5730,5643,,5730,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Chemicals,co_0bee6fa6c1ac,Revolver,Chemicals & Materials,11.18%,,SOFR,5.75%,,2025-12-22,3213,3104,2922,,3104,,,,BCSF,2023-11-06
+Chase Industries,co_1c0d8fcf50b3,First Lien,Industrials,12.54%,1.5%,SOFR,5.5%,,2025-05-12,14878,14860,14282,,14860,,,,BCSF,2023-11-06
+Chase Industries,co_1c0d8fcf50b3,Delayed Draw,Industrials,12.54%,1.5%,SOFR,5.5%,,2025-05-12,1406,1405,1350,,1405,,,,BCSF,2023-11-06
+Elk Parent Holdings,co_846c82e41d3f,Other Equity,Industrials,,,,,,,1,12,854,,12,,,,BCSF,2023-11-06
+Elk Parent Holdings,co_846c82e41d3f,Preferred Equity,Industrials,,,,,,,120,1202,1639,,1202,,,,BCSF,2023-11-06
+Regan Development Holdings Limited First Lien Senior Secured Loan EURIBOR Spread 6.50% Interest Rate 10.27% Maturity Date 10/29/2023,co_9e8163a40c1e,First Lien,Industrials,10.27%,,SOFR,6.5%,,2023-10-29,677,768,716,,768,,,,BCSF,2023-11-06
+Regan Development Holdings Limited First Lien Senior Secured Loan EURIBOR Spread 6.50% Interest Rate 10.27% Maturity Date 10/29/2023 One,co_9d60df7db256,First Lien,Industrials,10.27%,,SOFR,6.5%,,2023-10-29,2087,2274,2207,,2274,,,,BCSF,2023-11-06
+Regan Development Holdings Limited First Lien Senior Secured Loan EURIBOR Spread 6.50% Interest Rate 10.27% Maturity Date 10/29/2023 Two,co_b059231441ca,First Lien,Industrials,10.27%,,SOFR,6.5%,,2023-10-29,6335,6894,6698,,6894,,,,BCSF,2023-11-06
+Master,co_fc613b4dfd67,First Lien,Industrials,,,,,,,350,356,404,,356,,,,BCSF,2023-11-06
+Master First Lien Senior Secured Loan SOFR Spread 7.00% Interest Rate 12.63% Maturity Date 8/16/2027,co_346906719a5b,First Lien,Industrials,12.63%,,SOFR,7%,,2027-08-16,902,890,902,,890,,,,BCSF,2023-11-06
+Master First Lien Senior Secured Loan SOFR Spread 7.00% Interest Rate 12.43% Maturity Date 8/16/2027,co_d3240f4fdd28,First Lien,Industrials,12.43%,,SOFR,7%,,2027-08-16,21730,21730,21730,,21730,,,,BCSF,2023-11-06
+Master First Lien Senior Secured Loan - Revolver SOFR Spread 7.00% Interest Rate 12.67% Maturity Date 8/16/2027,co_974b41f9d222,First Lien,Industrials,12.67%,,SOFR,7%,,2027-08-16,6348,6270,6348,,6270,,,type_hint_revolver_from_name,BCSF,2023-11-06
+YLG Holdings,co_10b178f7afc0,Delayed Draw,Industrials,10.47%,,SOFR,5%,,2025-10-31,4983,4980,4983,,4980,,,,BCSF,2023-11-06
+YLG Holdings,co_10b178f7afc0,First Lien,Industrials,10.47%,,SOFR,5%,,2025-10-31,17006,16951,17006,,16951,,,,BCSF,2023-11-06
+YLG Holdings,co_10b178f7afc0,Revolver,Industrials,,,,,,2025-10-31,,-30,,,-30,,,,BCSF,2023-11-06
+New Milani Group LLC,co_53d49e3a4f21,First Lien,Consumer & Retail,10.92%,,SOFR,5.5%,,2024-06-06,11359,11156,11359,,11156,,,,BCSF,2023-11-06
+Stanton Carpet Second Lien Senior Secured Loan SOFR Spread 9.00% Interest Rate 14.56% Maturity Date 3/31/2028,co_27d6fb46d3ab,First Lien,Consumer & Retail,14.56%,,SOFR,9%,,2028-03-31,11434,11253,11434,,11253,,,,BCSF,2023-11-06
+Tangent Technologies Acquisition,co_bb843199893c,Second Lien,Consumer & Retail,13.74%,,SOFR,8.75%,,2028-05-30,8915,8772,8736,,8772,,,,BCSF,2023-11-06
+TLC Holdco LP,co_b37159358300,First Lien,Consumer & Retail,,,,,,,1281,1221,,,1221,,,,BCSF,2023-11-06
+TLC Purchaser,co_88ffef5ab98e,First Lien,Consumer & Retail,13.64%,6.25%,SOFR,2%,,2025-10-13,37065,36605,29004,,36605,,,,BCSF,2023-11-06
+TLC Purchaser,co_88ffef5ab98e,Revolver,Consumer & Retail,13.64%,6.25%,SOFR,2%,,2025-10-13,6931,6826,4860,,6826,,,,BCSF,2023-11-06
+Fineline Technologies,co_ad4aeafd6766,Other Equity,Consumer & Retail,,,,,,,939,939,893,,939,,,,BCSF,2023-11-06
+FL Hawk Intermediate Holdings,co_8abbbe75d38d,Second Lien,Consumer & Retail,14.65%,,SOFR,9.26%,,2028-08-22,13829,13524,13829,,13524,,,,BCSF,2023-11-06
+RoC Opco LLC,co_a3ceaa00e48a,First Lien,Consumer & Retail,12.99%,,SOFR,7.6%,,2025-02-25,14925,14823,14925,,14823,,,,BCSF,2023-11-06
+RoC Opco LLC,co_a3ceaa00e48a,Other,Consumer & Retail,,,,,,2025-02-25,,-51,,,-51,,,,BCSF,2023-11-06
+Solaray,co_33e1e0bf802e,Delayed Draw,Consumer & Retail,12.01%,,SOFR,6.5%,,2023-12-15,14053,14070,13421,,14070,,,,BCSF,2023-11-06
+Solaray,co_33e1e0bf802e,First Lien,Consumer & Retail,12.01%,,SOFR,6.5%,,2023-12-15,30517,30517,29143,,30517,,,,BCSF,2023-11-06
+Solaray,co_33e1e0bf802e,Revolver,Consumer & Retail,11.01%,,SOFR,3.5%,,2023-12-15,11344,11341,11344,,11341,,,,BCSF,2023-11-06
+WU Holdco,co_300783b81be6,Delayed Draw,Consumer & Retail,11.04%,,SOFR,5.5%,,2026-03-26,1687,1661,1615,,1661,,,,BCSF,2023-11-06
+WU Holdco,co_300783b81be6,First Lien,Consumer & Retail,11.04%,,SOFR,5.5%,,2026-03-26,37385,37058,35889,,37058,,,,BCSF,2023-11-06
+WU Holdco,co_300783b81be6,Revolver,Consumer & Retail,11.04%,,SOFR,5.5%,,2025-03-26,3606,3590,3381,,3590,,,,BCSF,2023-11-06
+WSP Preferred Equity,co_9cc2d1fb3098,Other,Consumer & Retail,,,,,,,,216,758,,216,,,type_hint_pref_equity_from_name,BCSF,2023-11-06
+WSP First Lien Senior Secured Loan SOFR Spread 6.25% Interest Rate 11.67% Maturity Date 4/27/2027,co_f461541611c3,First Lien,Consumer & Retail,11.67%,,SOFR,6.25%,,2027-04-27,5522,5446,4805,,5446,,,,BCSF,2023-11-06
+WSP,co_5d1bb4cb59dd,First Lien,Consumer & Retail,,,,,,,2898,2898,221,,2898,,,,BCSF,2023-11-06
+WSP First Lien Senior Secured Loan - Revolver Maturity Date 4/27/2027,co_38d1cadb5d0f,Other,Consumer & Retail,,,,,,2027-04-27,,-6,-58,,-6,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Containers Packaging,co_545774b339cd,First Lien,Containers & Packaging,11.63%,,SOFR,6%,,2027-12-29,4052,3990,3931,,3990,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Containers Packaging,co_545774b339cd,Revolver,Containers & Packaging,,,,,,2027-12-29,,-46,-98,,-46,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Containers Packaging & Glass Iris Holding,co_6cf499d277dd,First Lien,,10.22%,,SOFR,4.75%,,2028-06-28,12920,12354,12066,,12354,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Energy: Oil & Gas AmSpec Group,co_682118e78b62,First Lien,Energy,11.3%,,SOFR,5.75%,,2024-07-02,5064,5000,5064,,5000,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Energy: Oil & Gas Amspec Services,co_cb958080ef92,First Lien,Energy,11.29%,,SOFR,5.75%,,2024-07-02,2748,2739,2748,,2739,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Energy: Oil & Gas Amspec Services,co_cb958080ef92,First Lien,Energy,11.29%,,SOFR,5.75%,,2024-07-02,22810,22762,22810,,22762,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Energy: Oil & Gas Amspec Services,co_cb958080ef92,Revolver,Energy,12.25%,,SOFR,3.75%,,2024-07-02,1494,1485,1494,,1485,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Environmental Industries Reconomy First Lien Senior Secured Loan - Delayed Draw Maturity Date 6/24/2029,co_003c0d2c1c87,Other,,,,,,,2029-06-24,,-67,,,-67,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Environmental Industries Reconomy First Lien Senior Secured Loan SONIA Spread 6.25% Interest Rate 11.44% Maturity Date 6/24/2029,co_f0740e1b8a46,First Lien,,11.44%,,SOFR,6.25%,,2029-06-24,68,82,83,,82,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Environmental Industries Reconomy First Lien Senior Secured Loan EURIBOR Spread 6.00% Interest Rate 9.97% Maturity Date 6/24/2029,co_87e244563008,First Lien,,9.97%,,SOFR,6%,,2029-06-24,27,28,28,,28,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Environmental Industries Titan Cloud Software,co_7c0b40b5f139,Other Equity,,,,,,,,3532,3532,4330,,3532,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Environmental Industries Titan Cloud Software,co_7c0b40b5f139,First Lien,,11.52%,,SOFR,6.1%,,2029-09-07,25714,25487,25585,,25487,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Environmental Industries Titan Cloud Software,co_7c0b40b5f139,Revolver,,,,,,,2028-09-07,,-47,-29,,-47,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Environmental Industries Titan Cloud Software,co_7c0b40b5f139,Delayed Draw,,11.51%,,SOFR,6%,,2029-09-07,11429,11334,11372,,11334,,,,BCSF,2023-11-06
+Allworth Financial Group,co_fd73c9ef7da6,Delayed Draw,Financial Services,10.92%,,SOFR,5.5%,,2026-12-23,868,856,850,,856,,,,BCSF,2023-11-06
+Allworth Financial Group,co_fd73c9ef7da6,First Lien,Financial Services,10.92%,,SOFR,5.5%,,2026-12-23,1494,1481,1464,,1481,,,,BCSF,2023-11-06
+Allworth Financial Group,co_fd73c9ef7da6,Revolver,Financial Services,,,,,,2026-12-23,,-10,-49,,-10,,,,BCSF,2023-11-06
+Congress Wealth First Lien Senior Secured Loan - Delayed Draw SOFR Spread 6.75% Interest Rate 12.16% Maturity Date 6/30/2029,co_fe94b2d1a2c8,First Lien,Financial Services,12.16%,,SOFR,6.75%,,2029-06-30,320,317,320,,317,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+Congress Wealth First Lien Senior Secured Loan SOFR Spread 6.85% Interest Rate 12.24% Maturity Date 6/30/2029,co_7d3ddfb66ad0,First Lien,Financial Services,12.24%,,SOFR,6.85%,,2029-06-30,4731,4731,4731,,4731,,,,BCSF,2023-11-06
+Congress Wealth,co_2f9c21f294e6,First Lien,Financial Services,,,,,,,15,294,294,,294,,,,BCSF,2023-11-06
+FNZ UK Finco Limited First Lien Senior Secured Loan LIBOR Spread 5.50% Interest Rate 9.37% Maturity Date 9/30/2026,co_b558b1a13e0a,First Lien,Financial Services,10.37%,,SOFR,5.5%,,2026-09-30,81,55,52,,55,,,,BCSF,2023-11-06
+Insigneo Financial Group LLC,co_0d9e495e4d55,First Lien,Financial Services,,,,,,,2296,2312,2130,,2312,,,,BCSF,2023-11-06
+Insigneo Financial Group LLC,co_0d9e495e4d55,First Lien,Financial Services,11.7%,,SOFR,6.25%,,2028-08-01,3825,3743,3768,,3743,,,,BCSF,2023-11-06
+Parmenion First Lien Senior Secured Loan SONIA Spread 5.50% Interest Rate 9.93% Maturity Date 5/11/2029,co_2ab82b340547,First Lien,Financial Services,9.93%,,SOFR,5.5%,,2029-05-11,295,368,360,,368,,,,BCSF,2023-11-06
+TA/Weg Holdings First Lien Senior Secured Loan - Delayed Draw SOFR Spread 5.75% Interest Rate 11.26% Maturity Date 10/4/2027,co_56bb52428a9b,First Lien,Financial Services,11.26%,,SOFR,5.75%,,2027-10-04,9328,9328,9258,,9328,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+TA/Weg Holdings First Lien Senior Secured Loan - Delayed Draw SOFR Spread 5.75% Interest Rate 11.26% Maturity Date 10/4/2027 One,co_42a9b2f81f48,First Lien,Financial Services,11.26%,,SOFR,5.75%,,2027-10-04,2355,2348,2337,,2348,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+Margaux Acquisition Inc.,co_a66a58a76d7f,First Lien,Insurance,11.29%,,SOFR,5.75%,,2024-12-19,16540,16451,16540,,16451,,,,BCSF,2023-11-06
+Margaux Acquisition Inc.,co_a66a58a76d7f,First Lien,Insurance,11.29%,,SOFR,5.75%,,2025-12-19,2872,2861,2872,,2861,,,,BCSF,2023-11-06
+Margaux UK Finance Limited First Lien Senior Secured Loan - Revolver SONIA Spread 5.75% Interest Rate 10.80% Maturity Date 12/19/2024,co_b5381c2fe571,First Lien,Insurance,10.8%,,SOFR,5.75%,,2024-12-19,499,613,609,,613,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Margaux UK Finance Limited First Lien Senior Secured Loan SONIA Spread 5.75% Interest Rate 10.80% Maturity Date 12/19/2024,co_b2b3902b6c66,First Lien,Insurance,10.8%,,SOFR,5.75%,,2024-12-19,7415,9613,9046,,9613,,,,BCSF,2023-11-06
+MRHT First Lien Senior Secured Loan - Delayed Draw Maturity Date 2/1/2029,co_233a7a7245f7,Other,Insurance,,,,,,2029-02-01,,-24,-54,,-24,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+MRHT First Lien Senior Secured Loan EURIBOR Spread 6.75% Interest Rate 10.50% Maturity Date 2/1/2029,co_b73fc9e86d78,First Lien,Insurance,10.5%,,SOFR,6.75%,,2029-02-01,956,1018,1001,,1018,,,,BCSF,2023-11-06
+Paisley Bidco Limited First Lien Senior Secured Loan - Revolver EURIBOR Spread 5.50% Interest Rate 9.21% Maturity Date 11/26/2028,co_1b2369ef1604,First Lien,Insurance,9.21%,,SOFR,5.5%,,2028-11-26,32,36,34,,36,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Simplicity First Lien Senior Secured Loan SOFR Spread 6.25% Interest Rate 11.79% Maturity Date 12/2/2026,co_8525f2cc8c6f,First Lien,Insurance,11.79%,,SOFR,6.25%,,2026-12-02,16641,16191,16225,,16191,,,,BCSF,2023-11-06
+Simplicity First Lien Senior Secured Loan - Delayed Draw Maturity Date 12/2/2026,co_0c990048a056,Other,Insurance,,,,,,2026-12-02,,-143,-137,,-143,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+Simplicity First Lien Senior Secured Loan - Revolver Maturity Date 12/2/2026,co_47e26f5122d4,Other,Insurance,,,,,,2026-12-02,,-38,-36,,-38,,,type_hint_revolver_from_name,BCSF,2023-11-06
+World Insurance First Lien Senior Secured Loan SOFR Spread 6.00% Interest Rate 11.39% Maturity Date 4/3/2028,co_15b01b6bf7e6,First Lien,Insurance,11.39%,,SOFR,6%,,2028-04-03,11302,11222,11246,,11222,,,,BCSF,2023-11-06
+World Insurance First Lien Senior Secured Loan - Revolver Maturity Date 4/3/2028,co_238e35bcd262,Other,Insurance,,,,,,2028-04-03,,-9,,,-9,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Apollo Intelligence,co_8ce53e1baf73,First Lien,Healthcare,,,,,,,32,3162,3061,,3162,,,,BCSF,2023-11-06
+Apollo Intelligence First Lien Senior Secured Loan SOFR Spread 5.75% Interest Rate 11.12% Maturity Date 6/1/2028,co_15c571f16788,First Lien,Healthcare,11.12%,,SOFR,5.75%,,2028-06-01,15271,15159,15271,,15159,,,,BCSF,2023-11-06
+Apollo Intelligence First Lien Senior Secured Loan - Revolver SOFR Spread 5.75% Interest Rate 11.12% Maturity Date 6/1/2028,co_362cbb67c2ee,First Lien,Healthcare,11.12%,,SOFR,5.75%,,2028-06-01,2162,2106,2162,,2106,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Apollo Intelligence First Lien Senior Secured Loan - Delayed Draw Maturity Date 6/1/2028,co_2659a0ccd4b3,Other,Healthcare,,,,,,2028-06-01,,-75,,,-75,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+CB Titan Holdings,co_0d28a94a5c5c,Preferred Equity,Healthcare,,,,,,,1953,1953,,,1953,,,,BCSF,2023-11-06
+CPS Group Holdings,co_35b418623132,First Lien,Healthcare,10.79%,,SOFR,5.25%,,2025-03-03,34504,34403,34504,,34403,,,,BCSF,2023-11-06
+CPS Group Holdings,co_35b418623132,Revolver,Healthcare,10.69%,,SOFR,5.25%,,2025-03-03,789,772,789,,772,,,,BCSF,2023-11-06
+Datix Bidco Limited First Lien Senior Secured Loan - Revolver SONIA Spread 4.50% Interest Rate 9.69% Maturity Date 10/28/2024,co_efa13f998b5d,First Lien,Healthcare,9.69%,,SOFR,4.5%,,2024-10-28,3,3,3,,3,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Datix Bidco Limited Second Lien Senior Secured Loan SONIA Spread 7.75% Interest Rate 11.93% Maturity Date 4/27/2026,co_7d7ac933ffc7,First Lien,Healthcare,11.93%,,SOFR,7.75%,,2026-04-27,121,164,148,,164,,,,BCSF,2023-11-06
+Datix Bidco Limited First Lien Senior Secured Loan BBSW Spread 4.50% Interest Rate 8.41% Maturity Date 4/28/2025,co_8327afa9e98d,First Lien,Healthcare,8.41%,,SOFR,4.5%,,2025-04-28,42,32,27,,32,,,,BCSF,2023-11-06
+Great Expressions Dental Center PC First Lien Senior Secured Loan SOFR Spread 4.00% (3.00% PIK) Interest Rate 12.54% Maturity Date 9/30/2026,co_1096dce638cc,First Lien,Healthcare,12.54%,3%,SOFR,4%,,2026-09-30,9450,9443,7655,,9443,,,,BCSF,2023-11-06
+HealthDrive First Lien Senior Secured Loan SOFR Spread 6.10% Interest Rate 11.48% Maturity Date 8/20/2029,co_22bbeae73062,First Lien,Healthcare,11.48%,,SOFR,6.1%,,2029-08-20,24010,24010,24010,,24010,,,,BCSF,2023-11-06
+HealthDrive Preferred Equity,co_d57083355e28,First Lien,Healthcare,,,,,,,18,1822,1822,,1822,,,type_hint_pref_equity_from_name,BCSF,2023-11-06
+Mertus 522. GmbH First Lien Senior Secured Loan EURIBOR Spread 6.25% Interest Rate 10.03% Maturity Date 5/28/2026,co_d2dc513e828d,First Lien,Healthcare,10.03%,,SOFR,6.25%,,2026-05-28,225,249,231,,249,,,,BCSF,2023-11-06
+Mertus 522. GmbH First Lien Senior Secured Loan EURIBOR Spread 7.00% Interest Rate 11.14% Maturity Date 5/28/2026,co_f1d7c491049f,First Lien,Healthcare,11.14%,,SOFR,7%,,2026-05-28,132,143,136,,143,,,,BCSF,2023-11-06
+Premier Imaging,co_4fea223c8047,First Lien,Healthcare,11.65%,,SOFR,6%,,2025-01-02,7105,7056,7069,,7056,,,,BCSF,2023-11-06
+Premier Imaging,co_4fea223c8047,Delayed Draw,Healthcare,11.65%,,SOFR,6%,,2025-01-02,1921,1908,1912,,1908,,,,BCSF,2023-11-06
+SunMed Group Holdings,co_58129a45be78,First Lien,Healthcare,10.99%,,SOFR,5.5%,,2028-06-16,8628,8516,8628,,8516,,,,BCSF,2023-11-06
+SunMed Group Holdings,co_58129a45be78,Revolver,Healthcare,,,,,,2027-06-16,,-13,,,-13,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Access First Lien Senior Secured Loan - Delayed Draw SONIA Spread 5.00% Interest Rate 10.18% Maturity Date 6/4/2029,co_5991c1da3f9d,First Lien,,10.18%,,SOFR,5%,,2029-06-04,9764,11304,11911,,11304,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Access First Lien Senior Secured Loan SONIA Spread 5.00% Interest Rate 10.19% Maturity Date 6/4/2029,co_88a701981b77,First Lien,,10.19%,,SOFR,5%,,2029-06-04,80,98,98,,98,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries AMI US Holdings Inc.,co_974b41464938,First Lien,,10.67%,,SOFR,5.35%,,2025-04-01,3826,3803,3826,,3803,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Applitools First Lien Senior Secured Loan - Revolver Maturity Date 5/25/2028,co_3bc0f475fd20,Other,,,,,,,2028-05-25,,-27,-69,,-27,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Applitools First Lien Senior Secured Loan SOFR Spread 6.25% Interest Rate 11.57% Maturity Date 5/25/2029,co_b826c6eed0d4,First Lien,,11.57%,,SOFR,6.25%,,2029-05-25,16862,16735,16524,,16735,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Appriss Holdings,co_cc7ce3f781a1,Other Equity,Financial Services,,,,,,,2136,1606,1649,,1606,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Appriss Holdings,co_cc7ce3f781a1,First Lien,Financial Services,12.23%,,SOFR,6.75%,,2027-05-06,11208,11055,11208,,11055,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Appriss Holdings,co_cc7ce3f781a1,Revolver,Financial Services,,,,,,2027-05-06,,-9,,,-9,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries AQ Software Corp.,co_3a1e3018c49d,First Lien,Financial Services,,,,,,,1,1107,1126,,1107,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries AQ Software Corp.,co_3a1e3018c49d,First Lien,Financial Services,,,,,,,2,1844,1876,,1844,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries AQ Software Corp.,co_3a1e3018c49d,First Lien,Financial Services,,,,,,,1,507,516,,507,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Cloud Technology Solutions (CTS) Preferred Equity,co_e83b8505aa5a,First Lien,,,,,,,,4408,5360,5805,,5360,,,type_hint_pref_equity_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Cloud Technology Solutions (CTS) First Lien Senior Secured Loan SONIA Spread 7.50% Interest Rate 12.43% Maturity Date 1/3/2030,co_5e8f127d321a,First Lien,,12.43%,,SOFR,7.5%,,2030-01-03,8247,10007,10060,,10007,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Drilling Info Holdings,co_fa9dbdb50d7f,First Lien,,9.67%,,SOFR,4.25%,,2025-07-30,1489,1487,1444,,1487,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Eagle Rock Capital Corp.,co_1c42eb1ef50f,First Lien,,,,,,,,3345,3345,4295,,3345,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Element Buyer,co_9c72e4fa97d2,Delayed Draw,Financial Services,10.92%,,SOFR,5.5%,,2026-07-19,10880,10890,10880,,10890,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Element Buyer,co_9c72e4fa97d2,First Lien,Financial Services,10.92%,,SOFR,5.5%,,2026-07-19,36338,36439,36338,,36439,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Element Buyer,co_9c72e4fa97d2,Revolver,Financial Services,,,,,,,,-8,,,-8,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Eleven Software Preferred Equity,co_b4d8571abea1,First Lien,,,,,,,,896,896,868,,896,,,type_hint_pref_equity_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Eleven Software First Lien Senior Secured Loan SOFR Spread 8.25% Interest Rate 13.64% Maturity Date 4/25/2027,co_cb7725db8319,First Lien,,13.64%,,SOFR,8.25%,,2027-04-25,7439,7382,7439,,7382,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Eleven Software First Lien Senior Secured Loan - Revolver SOFR Spread 8.10% Interest Rate 13.43% Maturity Date 9/25/2026,co_2d8bffe01246,First Lien,,13.43%,,SOFR,8.1%,,2026-09-25,1091,1081,1091,,1081,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Gluware Warrants,co_2f63004dabb8,First Lien,Financial Services,,,,,,,4307,478,504,,478,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Gluware First Lien Senior Secured Loan Spread 9.00% (5.50% PIK) Interest Rate 14.50% Maturity Date 10/15/2025,co_5372a6384dc4,First Lien,,14.5%,5.5%,SOFR,9%,,2025-10-15,20321,19815,19102,,19815,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Gluware First Lien Senior Secured Loan Spread 9.00% (5.50% PIK) Interest Rate 14.50% Maturity Date 10/15/2025 One,co_c8793c9f7eca,First Lien,,14.5%,5.5%,SOFR,9%,,2025-10-15,5522,5474,5412,,5474,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries NearMap First Lien Senior Secured Loan - Revolver Maturity Date 12/9/2029,co_6bc6bcefe847,Other,,,,,,,2029-12-09,,-81,,,-81,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries NearMap First Lien Senior Secured Loan SOFR Spread 7.25% Interest Rate 12.58% Maturity Date 12/9/2029,co_2f47edc2f9dc,First Lien,,12.58%,,SOFR,7.25%,,2029-12-09,17848,17521,17848,,17521,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Onventis First Lien Senior Secured Loan - Delayed Draw EURIBOR Spread 7.50% Interest Rate 11.47% Maturity Date 1/12/2030,co_f8111d8a3ce3,First Lien,,11.47%,,SOFR,7.5%,,2030-01-12,8919,9591,9430,,9591,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Revalize,co_f71b55f02efc,Preferred Equity,Financial Services,,,,,,,1,1431,1471,,1431,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Revalize,co_f71b55f02efc,Delayed Draw,Financial Services,11.29%,,SOFR,5.75%,,2027-04-15,5317,5279,5198,,5279,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Revalize,co_f71b55f02efc,Delayed Draw,Financial Services,11.24%,,SOFR,5.75%,,2027-04-15,2009,1995,1964,,1995,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Revalize,co_f71b55f02efc,Revolver,Financial Services,11.3%,,SOFR,5.75%,,2027-04-15,168,159,137,,159,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries SAM First Lien Senior Secured Loan Spread 13.50% PIK Interest Rate 13.50% Maturity Date 5/9/2028,co_0729cce53371,First Lien,,13.5%,13.5%,,,,2028-05-09,31871,31660,31552,,31660,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Superna Inc.,co_14a1558566e7,Other,Financial Services,,,,,,2028-03-06,,20,-92,,20,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Superna Inc.,co_14a1558566e7,First Lien,Financial Services,,,,,,,1463,1463,1315,,1463,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Superna Inc.,co_14a1558566e7,First Lien,Financial Services,11.9%,,SOFR,6.5%,,2028-03-06,2741,2696,2645,,2696,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Swoogo LLC,co_e5df44403565,First Lien,Financial Services,13.33%,,SOFR,8%,,2026-12-09,2330,2297,2330,,2297,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Swoogo LLC,co_e5df44403565,Other,Financial Services,,,,,,2026-12-09,,16,,,16,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Utimaco,co_477b126644e7,First Lien,Financial Services,,,,,,,1,2123,1190,,2123,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Utimaco Preferred Equity,co_3068ace015fa,First Lien,,,,,,,,1,2123,1190,,2123,,,type_hint_pref_equity_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Utimaco First Lien Senior Secured Loan EURIBOR Spread 6.25% Interest Rate 10.03% Maturity Date 5/13/2029,co_8bfa918db10f,First Lien,,10.03%,,SOFR,6.25%,,2029-05-13,92,98,93,,98,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Utimaco First Lien Senior Secured Loan SOFR Spread 6.25% Interest Rate 11.81% Maturity Date 5/13/2029,co_b470ee5a5aac,First Lien,,11.81%,,SOFR,6.25%,,2029-05-13,128,127,122,,127,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Utimaco First Lien Senior Secured Loan SOFR Spread 6.25% Interest Rate 11.81% Maturity Date 5/13/2029 1,co_70adb35903f2,First Lien,,11.81%,,SOFR,6.25%,,2029-05-13,262,260,249,,260,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Ventiv Holdco,co_aa4c32c2aefe,First Lien,Financial Services,12.39%,1.5%,SOFR,5.5%,,2025-09-03,13830,13753,13692,,13753,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Ventiv Holdco,co_aa4c32c2aefe,Revolver,Financial Services,10.92%,1.5%,SOFR,5.5%,,2025-09-03,341,321,324,,321,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries Ventiv Topco,co_998d449340e3,Other Equity,Financial Services,,,,,,,28,2833,2320,,2833,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries VPARK BIDCO AB First Lien Senior Secured Loan CIBOR Spread 4.00% Interest Rate 7.90% Maturity Date 03/10/2025,co_72d2ae8e9c44,First Lien,,7.9%,,SOFR,4%,,2025-03-10,570,93,81,,93,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries VPARK BIDCO AB First Lien Senior Secured Loan NIBOR Spread 4.00% Interest Rate 8.51% Maturity Date 3/10/2025,co_a8430bddbf4c,First Lien,,8.51%,,SOFR,4%,,2025-03-10,740,93,69,,93,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Hotel Gaming & Leisure Aimbridge Acquisition Co.,co_3b34ea7ac57b,Second Lien,,12.94%,,SOFR,7.61%,,2027-02-01,14193,13961,13590,,13961,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Hotel,co_d82ce844bb83,First Lien,Healthcare,11.25%,,SOFR,5.5%,,2029-03-30,6778,6663,6778,,6663,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Hotel,co_d82ce844bb83,Delayed Draw,Healthcare,11.25%,,SOFR,5.5%,,2029-04-02,2291,2220,2291,,2220,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Hotel,co_d82ce844bb83,Revolver,Healthcare,,,,,,2028-03-31,,37,,,37,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Hotel,co_d82ce844bb83,First Lien,Healthcare,13.33%,,SOFR,8%,,2027-01-19,9950,9696,9950,,9696,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Hotel,co_d82ce844bb83,Revolver,Healthcare,,,,,,2027-01-19,,86,,,86,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Hotel,co_d82ce844bb83,First Lien,Healthcare,13.75%,,SOFR,13.75%,,2028-04-11,5011,5011,4334,,5011,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Hotel,co_d82ce844bb83,Delayed Draw,Healthcare,13.75%,,SOFR,13.75%,,2028-04-11,1430,1430,1237,,1430,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Hotel,co_d82ce844bb83,Revolver,Healthcare,13.75%,,SOFR,13.75%,,2028-04-11,327,327,327,,327,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Hotel,co_d82ce844bb83,Revolver,Healthcare,13.75%,,SOFR,13.75%,,2028-04-11,577,577,577,,577,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Media:Advertising Printing & Publishing Ansira Holdings,co_357a949c98b1,Delayed Draw,,11.91%,6.5%,,,,2024-12-20,48,48,48,,48,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Media: Advertising,co_5eb37c97063c,First Lien,Media & Entertainment,11.69%,,SOFR,6.5%,,2030-03-03,4412,5266,5382,,5266,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Media: Advertising,co_5eb37c97063c,First Lien,Media & Entertainment,10.46%,,SOFR,6.5%,,2030-03-03,15081,15670,15945,,15670,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Media: Advertising,co_5eb37c97063c,First Lien,Media & Entertainment,10.46%,,SOFR,6.5%,,2030-03-03,3346,3544,3538,,3544,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Media: Advertising,co_5eb37c97063c,First Lien,Media & Entertainment,11.11%,1%,SOFR,7%,,2026-04-30,98,76,63,,76,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Media: Advertising,co_5eb37c97063c,First Lien,Media & Entertainment,12.43%,1%,SOFR,7%,,2026-04-30,4187,2866,2866,,2866,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Media: Broadcasting & Subscription Lightning Finco Limited First Lien Senior Secured Loan SOFR Spread 5.76% Interest Rate 11.06% Maturity Date 8/31/2028,co_730c9d0f717e,First Lien,,11.06%,,SOFR,5.76%,,2028-08-31,1443,1432,1443,,1432,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Media: Broadcasting & Subscription Lightning Finco Limited First Lien Senior Secured Loan EURIBOR Spread 5.50% Interest Rate 9.28% Maturity Date 8/31/2028,co_66314905c5a7,First Lien,,9.28%,,SOFR,5.5%,,2028-08-31,1300,1422,1375,,1422,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Media: Diversified & Production 9 Story Media Group Inc.,co_483da96b8875,Other,,,,,,,2026-04-30,,1,,,1,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Media: Diversified & Production 9 Story Media Group Inc.,co_483da96b8875,First Lien,,10.75%,,SOFR,5.25%,,2026-04-30,1282,994,944,,994,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Media: Diversified & Production 9 Story Media Group Inc.,co_483da96b8875,First Lien,,9.03%,,SOFR,5.25%,,2026-04-30,580,615,613,,615,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Media: Diversified & Production Aptus 1724 Gmbh First Lien Senior Secured Loan LIBOR Spread 6.25% Interest Rate 11.90% Maturity Date 2/23/2028,co_0bc1ea3d236f,First Lien,,11.9%,,SOFR,6.25%,,2028-02-23,4971,4971,4884,,4971,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Media: Diversified & Production Efficient Collaborative Retail Marketing Company,co_e2799859f862,First Lien,,15.89%,10.50%,SOFR,10.5%,,2024-06-30,9770,9756,6521,,9756,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Media: Diversified & Production Efficient Collaborative Retail Marketing Company,co_e2799859f862,First Lien,,15.89%,10.50%,SOFR,10.5%,,2024-06-30,15043,15022,10041,,15022,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Media: Diversified & Production Efficient Collaborative Retail Marketing Company,co_e2799859f862,Revolver,,15.89%,10.50%,SOFR,10.5%,,2024-06-30,1275,1275,1275,,1275,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Media: Diversified & Production Music Creation Group Bidco GmbH First Lien Senior Secured Loan LIBOR Spread 6.25% Interest Rate 11.90% Maturity Date 2/23/2028,co_5dbb7f146670,First Lien,,11.9%,,SOFR,6.25%,,2028-02-23,4065,3987,3994,,3987,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Media: Publishing OGH Bidco Limited First Lien Senior Secured Loan - Delayed Draw SONIA Spread 6.25% Interest Rate 11.18% Maturity Date 6/29/2029,co_ec44e79e2897,First Lien,,11.18%,,SOFR,6.25%,,2029-06-29,1231,1416,1202,,1416,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Media: Publishing OGH Bidco Limited First Lien Senior Secured Loan SONIA Spread 6.25% Interest Rate 11.18% Maturity Date 6/29/2029,co_ee76335c7266,First Lien,,11.18%,,SOFR,6.25%,,2029-06-29,139,164,163,,164,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Retail New Look (Delaware) Corp.,co_a2cbfa10ef29,First Lien,Financial Services,11.04%,,SOFR,5.5%,,2028-05-26,382,374,290,,374,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Retail New Look Vision Group First Lien Senior Secured Loan - Delayed Draw CDOR Spread 5.50% Interest Rate 11.01% Maturity Date 5/26/2028,co_ff8aba9fce42,First Lien,,11.01%,,SOFR,5.5%,,2028-05-26,29,27,20,,27,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Retail New Look Vision Group First Lien Senior Secured Loan - Revolver CDOR Spread 5.50% Interest Rate 11.01% Maturity Date 5/26/2026,co_1e95f0982790,First Lien,,11.01%,,SOFR,5.5%,,2026-05-26,2462,1834,1741,,1834,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Retail New Look Vision Group First Lien Senior Secured Loan - Delayed Draw CDOR Spread 5.50% Interest Rate 11.01% Maturity Date 5/26/2028 1,co_5f2c5896bcbb,First Lien,,11.01%,,SOFR,5.5%,,2028-05-26,55,44,39,,44,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Retail Thrasio,co_836d86c74d3c,First Lien,Financial Services,12.65%,,SOFR,7%,,2026-12-18,12303,11138,8018,,11138,,,,BCSF,2023-11-06
+ACAMS,co_e15005b9655b,First Lien,Business Services,,,,,,,3337,3337,3091,,3337,,,,BCSF,2023-11-06
+AMCP Clean Acquisition Company,co_a5bfaf21fa2a,First Lien,Business Services,9.82%,,SOFR,4.4%,,2025-07-10,7830,7748,7036,,7748,,,,BCSF,2023-11-06
+AMCP Clean Acquisition Company,co_a5bfaf21fa2a,Delayed Draw,Business Services,9.82%,,SOFR,4.4%,,2025-07-10,2252,2232,2024,,2232,,,,BCSF,2023-11-06
+Avalon Acquiror,co_a7880aa62329,First Lien,Business Services,11.64%,,SOFR,6.25%,,2028-03-10,14463,14347,14210,,14347,,,,BCSF,2023-11-06
+Avalon Acquiror,co_a7880aa62329,Revolver,Business Services,11.65%,,SOFR,6.25%,,2028-03-10,5042,4901,4895,,4901,,,,BCSF,2023-11-06
+Brook Bidco Preferred Equity,co_347cfede13c5,First Lien,Business Services,,,,,,,5675,7783,7944,,7783,,,type_hint_pref_equity_from_name,BCSF,2023-11-06
+Brook Bidco First Lien Senior Secured Loan SONIA Spread 3.00% (4.25% PIK) Interest Rate 11.80% Maturity Date 7/7/2028,co_4490130ea76a,First Lien,Business Services,11.8%,4.25%,SOFR,3%,,2028-07-07,765,1037,933,,1037,,,,BCSF,2023-11-06
+Caribou Bidco Limited First Lien Senior Secured Loan - Delayed Draw SONIA Spread 5.25% (1.25% PIK) Interest Rate 11.43% Maturity Date 1/29/2029,co_deac46c4d8c1,First Lien,Business Services,11.43%,1.25%,SOFR,5.25%,,2029-01-29,16,20,19,,20,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+Caribou Bidco Limited First Lien Senior Secured Loan SONIA Spread 5.25% (1.25% PIK) Interest Rate 11.43% Maturity Date 1/29/2029,co_c27b446a9bf7,First Lien,Business Services,11.43%,1.25%,SOFR,5.25%,,2029-01-29,8070,10811,9845,,10811,,,,BCSF,2023-11-06
+Chamber Bidco Limited First Lien Senior Secured Loan SOFR Spread 6.25% Interest Rate 11.31% Maturity Date 6/7/2028,co_8facff0d4479,First Lien,Business Services,11.31%,,SOFR,6.25%,,2028-06-07,213,211,213,,211,,,,BCSF,2023-11-06
+Darcy Partners,co_4372265399c7,First Lien,Business Services,,,,,,,359,360,325,,360,,,,BCSF,2023-11-06
+Darcy Partners First Lien Senior Secured Loan SOFR Spread 7.75% Interest Rate 13.07% Maturity Date 6/1/2028,co_471d402af525,First Lien,Business Services,13.07%,,SOFR,7.75%,,2028-06-01,1515,1501,1496,,1501,,,,BCSF,2023-11-06
+Elevator Holdco Inc.,co_d8ce90c12293,First Lien,Business Services,,,,,,,2,2448,3472,,2448,,,,BCSF,2023-11-06
+iBanFirst First Lien Senior Secured Loan EURIBOR Spread 10.00% PIK Interest Rate 13.95% Maturity Date 7/13/2028,co_9ae3dcd8a898,First Lien,Business Services,13.95%,10%,,,,2028-07-13,3087,3182,3264,,3182,,,,BCSF,2023-11-06
+iBanFirst First Lien Senior Secured Loan EURIBOR Spread 10.00% PIK Interest Rate 13.95% Maturity Date 7/13/2028 1,co_bcaf1cefe00d,First Lien,Business Services,13.95%,10%,,,,2028-07-13,89,93,94,,93,,,,BCSF,2023-11-06
+iBanFirst First Lien Senior Secured Loan EURIBOR Spread 10.00% PIK Interest Rate 13.95% Maturity Date 7/13/2028 2,co_b25e1337b35b,First Lien,Business Services,13.95%,10%,,,,2028-07-13,3244,3292,3430,,3292,,,,BCSF,2023-11-06
+iBanFirst Facility Preferred Equity,co_226448da0f47,First Lien,Business Services,,,,,,,7112,8136,19469,,8136,,,type_hint_pref_equity_from_name,BCSF,2023-11-06
+ImageTrend First Lien Senior Secured Loan - Delayed Draw SOFR Spread 7.75% Interest Rate 13.12% Maturity Date 1/31/2029,co_38f054db1bfd,First Lien,Business Services,13.12%,,SOFR,7.75%,,2029-01-31,20000,19728,20000,,19728,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+ImageTrend First Lien Senior Secured Loan - Revolver Maturity Date 1/31/2029,co_7a1d20dceb37,Other,Business Services,,,,,,2029-01-31,,53,,,53,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Learning Pool First Lien Senior Secured Loan SONIA Spread 3.00% (4.25% PIK) Interest Rate 12.06% Maturity Date 7/7/2028,co_edc63924829f,First Lien,Business Services,12.06%,4.25%,SOFR,3%,,2028-07-07,305,396,403,,396,,,,BCSF,2023-11-06
+Learning Pool First Lien Senior Secured Loan SONIA Spread 3.00% (4.25% PIK) Interest Rate 12.06% Maturity Date 7/7/2028 1,co_83f060083770,First Lien,Business Services,12.06%,4.25%,SOFR,3%,,2028-07-07,109,142,144,,142,,,,BCSF,2023-11-06
+masLabor,co_331a40800920,First Lien,Business Services,,,,,,,173,173,711,,173,,,,BCSF,2023-11-06
+masLabor First Lien Senior Secured Loan SOFR Spread 7.50% Interest Rate 12.90% Maturity Date 7/1/2027,co_30ece12febe6,First Lien,Business Services,12.9%,,SOFR,7.5%,,2027-07-01,8427,8242,8427,,8242,,,,BCSF,2023-11-06
+Opus2,co_13dda502e4ae,First Lien,Business Services,,,,,,,2272,2900,3159,,2900,,,,BCSF,2023-11-06
+Opus2 First Lien Senior Secured Loan SONIA Spread 5.03% Interest Rate 10.22% Maturity Date 5/5/2028,co_8cfb3d221e98,First Lien,Business Services,10.22%,,SOFR,5.03%,,2028-05-05,123,168,150,,168,,,,BCSF,2023-11-06
+Parcel2Go First Lien Senior Secured Loan - Delayed Draw SONIA Spread 6.00% Interest Rate 11.18% Maturity Date 7/15/2028,co_de5ce0e3b33f,First Lien,Business Services,11.18%,,SOFR,6%,,2028-07-15,39,50,43,,50,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+Parcel2Go,co_6eb62fa73008,First Lien,Business Services,,,,,,,3605,4237,2234,,4237,,,,BCSF,2023-11-06
+Parcel2Go First Lien Senior Secured Loan SONIA Spread 6.00% Interest Rate 11.19% Maturity Date 7/15/2028,co_d7643bd4142f,First Lien,Business Services,11.19%,,SOFR,6%,,2028-07-15,125,170,145,,170,,,,BCSF,2023-11-06
+Refine Intermediate,co_348e89f0dd14,First Lien,Business Services,9.99%,,SOFR,4.5%,,2027-03-03,1037,1023,1037,,1023,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Refine Intermediate,co_10e8225826d7,Revolver,Media & Entertainment,,,,,,2026-09-03,,-60,,,-60,,,,BCSF,2023-11-06
+Smartronix First Lien Senior Secured Loan SOFR Spread 5.75% Interest Rate 11.32% Maturity Date 11/23/2028,co_b13b2614aac6,First Lien,Business Services,11.32%,,SOFR,5.75%,,2028-11-23,12540,12352,12415,,12352,,,,BCSF,2023-11-06
+Smartronix First Lien Senior Secured Loan - Revolver Maturity Date 11/23/2027,co_024e390202f0,Other,Business Services,,,,,,2027-11-23,,-93,-63,,-93,,,type_hint_revolver_from_name,BCSF,2023-11-06
+SumUp Holdings Luxembourg S.à.r.l. First Lien Senior Secured Loan EURIBOR Spread 8.50% Interest Rate 12.32% Maturity Date 2/17/2026,co_a2de5f732304,First Lien,Business Services,12.32%,,SOFR,8.5%,,2026-02-17,6650,7959,7031,,7959,,,,BCSF,2023-11-06
+SumUp Holdings Luxembourg S.à.r.l. First Lien Senior Secured Loan EURIBOR Spread 8.50% Interest Rate 12.32% Maturity Date 2/17/2026 One,co_91a3513a5506,First Lien,Business Services,12.32%,,SOFR,8.5%,,2026-02-17,155,180,164,,180,,,,BCSF,2023-11-06
+TEI Holdings Inc.,co_d6b66d657cf3,First Lien,Business Services,10.67%,,SOFR,5.25%,,2026-12-23,25864,25852,25864,,25852,,,,BCSF,2023-11-06
+TEI Holdings Inc.,co_d6b66d657cf3,Other,Business Services,,,,,,2025-12-23,,-40,,,-40,,,,BCSF,2023-11-06
+WCI Gigawatt Purchaser First Lien Senior Secured Loan SOFR Spread 5.50% Interest Rate 11.14% Maturity Date 11/19/2027,co_9a7f083757e7,First Lien,Business Services,11.14%,,SOFR,5.5%,,2027-11-19,1428,1405,1414,,1405,,,,BCSF,2023-11-06
+WCI Gigawatt Purchaser First Lien Senior Secured Loan - Revolver SOFR Spread 5.50% Interest Rate 10.94% Maturity Date 11/19/2027,co_9a8a152e1d54,First Lien,Business Services,10.94%,,SOFR,5.5%,,2027-11-19,965,915,933,,915,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Services: Consumer MZR Aggregator,co_ac3f15d64877,First Lien,Financial Services,,,,,,,1,798,660,,798,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Services: Consumer MZR Buyer,co_9fa2ce9384e7,First Lien,Financial Services,12.17%,,SOFR,6.75%,,2026-12-21,11933,11789,11933,,11789,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Services: Consumer MZR Buyer,co_9fa2ce9384e7,Revolver,Financial Services,12.29%,,SOFR,6.75%,,2026-12-21,1737,1680,1737,,1680,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Services: Consumer Surrey Bidco Limited First Lien Senior Secured Loan SONIA Spread 7.00% PIK Interest Rate 11.46% Maturity Date 5/11/2026,co_b49f15f34a27,First Lien,,11.46%,7%,,,,2026-05-11,57,66,52,,66,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Services: Consumer Zeppelin BidCo Pty Ltd.,co_95d03f7ed6e6,First Lien,,9.24%,,SOFR,5%,,2024-07-12,206,143,133,,143,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Telecommunications DC Blox Inc.,co_ebe36a14813c,First Lien,Telecommunications,,,,,,,3822,3851,4915,,3851,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Telecommunications DC Blox Inc.,co_ebe36a14813c,First Lien,Telecommunications,,,,,,,124,1,,,1,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Telecommunications DC Blox Inc.,co_ebe36a14813c,First Lien,Telecommunications,,,,,,,177,2,,,2,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Telecommunications DC Blox Inc.,co_ebe36a14813c,First Lien,Telecommunications,14.49%,4%,SOFR,4%,,2026-03-22,32344,32179,32344,,32179,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Telecommunications Meriplex Communications,co_401bfc2f0b40,First Lien,,10.42%,,SOFR,5%,,2028-07-17,12185,11977,12185,,11977,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Telecommunications Meriplex Communications,co_401bfc2f0b40,Delayed Draw,,10.42%,,SOFR,5%,,2028-07-17,5182,5065,5182,,5065,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Telecommunications Meriplex Communications,co_401bfc2f0b40,Revolver,,10.43%,,SOFR,5%,,2028-07-17,1318,1273,1318,,1273,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Telecommunications Taoglas,co_345444652ae5,First Lien,Telecommunications,,,,,,,2259,2259,2089,,2259,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Telecommunications Taoglas First Lien Senior Secured Loan SOFR Spread 7.00% Interest Rate 12.39% Maturity Date 2/28/2029,co_0a40f3364374,First Lien,,12.39%,,SOFR,7%,,2029-02-28,18855,18673,18384,,18673,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Telecommunications Taoglas First Lien Senior Secured Loan - Revolver SOFR Spread 7.00% Interest Rate 12.39% Maturity Date 2/28/2029,co_8e2e995f20fe,First Lien,,12.39%,,SOFR,7%,,2029-02-28,587,587,553,,587,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Telecommunications Taoglas First Lien Senior Secured Loan SOFR Spread 7.00% Interest Rate 12.39% Maturity Date 2/28/2029 One,co_9ade6d8be85d,First Lien,,12.39%,,SOFR,7%,,2029-02-28,454,441,443,,441,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Cargo A&R Logistics,co_32c1e075cfd0,First Lien,Transportation & Logistics,11.54%,,SOFR,6%,,2025-05-05,2380,2363,2380,,2363,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Cargo A&R Logistics,co_32c1e075cfd0,First Lien,Transportation & Logistics,13.5%,,SOFR,5.25%,,2025-05-05,2668,2657,2668,,2657,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Cargo A&R Logistics,co_32c1e075cfd0,First Lien,Transportation & Logistics,13%,,SOFR,4.75%,,2025-05-05,5867,5836,5867,,5836,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Cargo A&R Logistics,co_32c1e075cfd0,First Lien,Transportation & Logistics,11.15%,,SOFR,5.75%,,2025-05-05,21785,21637,21785,,21637,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Cargo A&R Logistics,co_32c1e075cfd0,Revolver,Transportation & Logistics,11.41%,,SOFR,6%,,2025-05-05,980,891,980,,891,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Cargo ARL Holdings,co_20b360b03f6f,Other Equity,Transportation & Logistics,,,,,,,,445,683,,445,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Cargo ARL Holdings,co_20b360b03f6f,Other Equity,Transportation & Logistics,,,,,,,9,9,575,,9,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Cargo Grammer Investment Holdings LLC,co_2957c8b864a2,First Lien,,,,,,,,1011,1019,753,,1019,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Cargo Grammer Investment Holdings LLC,co_2957c8b864a2,First Lien,,10%,,SOFR,10%,,,10,792,985,,792,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Cargo Grammer Purchaser,co_dab5228a93f1,First Lien,,9.99%,,SOFR,4.5%,,2024-09-30,3790,3730,3790,,3730,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Cargo Grammer Purchaser,co_dab5228a93f1,Revolver,,10.02%,,SOFR,4.5%,,2024-09-30,516,516,516,,516,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Cargo Gulf Winds International First Lien Senior Secured Loan SOFR Spread 7.10% Interest Rate 12.42% Maturity Date 12/16/2028,co_c837be33a09b,First Lien,,12.42%,,SOFR,7.1%,,2028-12-16,12158,11827,12158,,11827,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Cargo Gulf Winds International First Lien Senior Secured Loan - Revolver Maturity Date 12/16/2028,co_a0ae890f4646,Other,,,,,,,2028-12-16,,-138,,,-138,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Cargo Omni Intermediate First Lien Senior Secured Loan SOFR Spread 5.00% Interest Rate 10.42% Maturity Date 11/23/2026,co_ab285ba69f9e,First Lien,,10.42%,,SOFR,5%,,2026-11-23,1162,1155,1162,,1155,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Cargo Omni Intermediate First Lien Senior Secured Loan - Revolver Prime Rate Spread 4.00% Interest Rate 12.50% Maturity Date 11/30/2026,co_499565232021,First Lien,,12.5%,,SOFR,4%,,2026-11-30,183,183,183,,183,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Cargo Omni Intermediate First Lien Senior Secured Loan - Delayed Draw SOFR Rate Spread 5.00% Interest Rate 10.42% Maturity Date 11/23/2026,co_494627d5575a,First Lien,,10.42%,,SOFR,5%,,2026-11-23,504,507,507,,507,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Cargo Omni Intermediate Second Lien Senior Secured Loan SOFR Spread 9.15% Interest Rate 14.54% Maturity Date 12/30/2027,co_19682e3465d9,First Lien,,14.54%,,SOFR,9.15%,,2027-12-30,8770,8748,8858,,8748,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Cargo REP Coinvest III- A Omni,co_cbb83abef3cd,Other Equity,,,,,,,,1377,1377,2583,,1377,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Cargo RoadOne First Lien Senior Secured Loan SOFR Spread 6.25% Interest Rate 11.72% Maturity Date 12/29/2028,co_c47cb588aba5,First Lien,,11.72%,,SOFR,6.25%,,2028-12-29,12158,11827,12158,,11827,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Cargo RoadOne First Lien Senior Secured Loan - Revolver SOFR Spread 6.25% Interest Rate 11.72% Maturity Date 12/29/2028,co_2d2e1f98609f,First Lien,,11.72%,,SOFR,6.25%,,2028-12-29,267,152,267,,152,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Cargo RoadOne First Lien Senior Secured Loan - Delayed Draw SOFR Spread 6.25% Interest Rate 11.72% Maturity Date 12/29/2028,co_62a86071b375,First Lien,,11.72%,,SOFR,6.25%,,2028-12-29,1726,1627,1726,,1627,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Consumer PrimeFlight Acquisition LLC,co_d3f8774fa304,First Lien,,12.18%,,SOFR,6.85%,,2029-05-01,15445,15145,15290,,15145,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Consumer PrimeFlight Acquisition LLC,co_d3f8774fa304,First Lien,,12.18%,,SOFR,6.85%,,2029-05-01,845,845,845,,845,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Consumer Toro Private Investments II,co_dbe850d1eb89,First Lien,,13.89%,,SOFR,8.5%,,2026-05-29,7219,6082,3718,,6082,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Consumer Toro Private Investments II,co_dbe850d1eb89,Other Equity,,,,,,,,3090,3090,,,3090,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Consumer Toro Private Investments II,co_dbe850d1eb89,First Lien,,12.65%,,SOFR,7%,,2025-02-28,421,419,401,,419,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Wholesale Abracon Group Holding,co_6bc1e5816e9b,First Lien,Financial Services,11.21%,,SOFR,5.75%,,2028-07-06,14248,14054,13144,,14054,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Wholesale Abracon Group Holding,co_6bc1e5816e9b,Revolver,Financial Services,11.17%,,SOFR,5.75%,,2028-07-06,2018,1986,1862,,1986,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Wholesale Abracon Group Holding,co_6bc1e5816e9b,Delayed Draw,Financial Services,,,,,,2028-07-06,,-32,-172,,-32,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Wholesale Aramsco,co_5ce6a3a6e5cc,First Lien,Financial Services,11.17%,,SOFR,5.75%,,2024-08-28,13956,13899,13956,,13899,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Wholesale Aramsco,co_5ce6a3a6e5cc,Revolver,Financial Services,11.17%,,SOFR,5.75%,,2024-08-28,1355,1336,1355,,1336,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Wholesale Armor Group,co_094e9953f833,Other Equity,Financial Services,,,,,,,10,1012,2204,,1012,,,,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Wholesale SureWerx First Lien Senior Secured Loan - Delayed Draw Maturity Date 12/28/2029,co_5493f5f4cefb,Other,,,,,,,2029-12-28,,-27,,,-27,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Wholesale SureWerx First Lien Senior Secured Loan - Revolver SOFR Spread 6.75% Interest Rate 12.15% Maturity Date 12/29/2028,co_506261d17ba3,First Lien,,12.15%,,SOFR,6.75%,,2028-12-29,617,593,617,,593,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Ansett Aviation Training,co_40a3f0eaeb1d,First Lien,Aerospace & Defense,,,,,,,5119,3842,6583,,3842,,,,BCSF,2023-11-06
+Ansett Aviation Training,co_40a3f0eaeb1d,First Lien,Aerospace & Defense,8.83%,,SOFR,4.69%,,2031-09-24,7072,5308,4551,,5308,,,,BCSF,2023-11-06
+Non-controlled/Affiliated Investments Beverage Food & Tobacco ADT Pizza,co_362025061740,Other Equity,Food & Beverage,,,,,,,6720,6732,14187,,6732,,,,BCSF,2023-11-06
+Non-controlled/Affiliated Investments Consumer Goods: Durable Walker Edison,co_65914335ab5b,First Lien,Financial Services,,,,,,,60,5592,3131,,5592,,,,BCSF,2023-11-06
+Non-controlled/Affiliated Investments Consumer Goods: Durable Walker Edison First Lien Senior Secured Loan SOFR Spread 6.75% PIK Interest Rate 12.18% Maturity Date 3/31/2027,co_509e4b1ec9f6,First Lien,,12.18%,6.75%,,,,2027-03-31,5688,5688,5688,,5688,,,,BCSF,2023-11-06
+Non-controlled/Affiliated Investments Consumer Goods: Durable Walker Edison First Lien Senior Secured Loan - Revolver SOFR Spread 6.75% PIK Interest Rate 11.68% Maturity Date 3/31/2027,co_b5195c755fc7,First Lien,,11.68%,6.75%,,,,2027-03-31,3182,3182,3182,,3182,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Non-controlled/Affiliated Investments Consumer Goods: Durable Walker Edison First Lien Senior Secured Loan - Delayed Draw SOFR Spread 6.75% PIK Interest Rate 12.17% Maturity Date 3/31/2027,co_953af9265768,First Lien,,12.17%,6.75%,,,,2027-03-31,166,166,166,,166,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+Non-controlled/Affiliated Investments Energy: Oil & Gas Blackbrush Oil & Gas,co_f597f92fb5d1,Other Equity,Energy,,,,,,,1198,1,,,1,,,cost_suspicious_vs_size,BCSF,2023-11-06
+Non-controlled/Affiliated Investments Energy: Oil & Gas Blackbrush Oil & Gas,co_f597f92fb5d1,Preferred Equity,Energy,,,,,,,38505,11777,34293,,11777,,,,BCSF,2023-11-06
+Non-controlled/Affiliated Investments Energy: Oil & Gas Blackbrush Oil & Gas,co_f597f92fb5d1,First Lien,Energy,12.65%,2%,SOFR,5%,,2025-09-03,9179,9178,9179,,9178,,,,BCSF,2023-11-06
+Non-controlled/Affiliated Investments FIRE: Finance BCC Middle Market CLO 2018-1 LLC,co_d24f3da9620c,First Lien,,,,,,,2030-10-20,25635,24050,23069,,24050,,,,BCSF,2023-11-06
+Non-controlled/Affiliated Investments Transportation: Consumer Direct Travel,co_60f175bc1699,First Lien,Healthcare,12.04%,,SOFR,6.5%,,2025-10-02,59642,59642,59642,,59642,,,,BCSF,2023-11-06
+Non-controlled/Affiliated Investments Transportation: Consumer Direct Travel,co_60f175bc1699,Delayed Draw,Healthcare,12.04%,,SOFR,6.5%,,2025-10-02,3482,3482,3482,,3482,,,,BCSF,2023-11-06
+Non-controlled/Affiliated Investments Transportation: Consumer Direct Travel,co_60f175bc1699,First Lien,Healthcare,12.04%,,SOFR,6.5%,,2025-10-02,4841,4841,4841,,4841,,,,BCSF,2023-11-06
+Non-controlled/Affiliated Investments Transportation: Consumer Direct Travel,co_60f175bc1699,Delayed Draw,Healthcare,12.04%,,SOFR,6.5%,,2025-10-02,1773,1773,1773,,1773,,,,BCSF,2023-11-06
+Non-controlled/Affiliated Investments Transportation: Consumer Direct Travel,co_60f175bc1699,First Lien,Healthcare,11.54%,,SOFR,6%,,2025-10-02,202,202,202,,202,,,,BCSF,2023-11-06
+Non-controlled/Affiliated Investments Transportation: Consumer Direct Travel,co_60f175bc1699,Delayed Draw,Healthcare,11.54%,,SOFR,6%,,2025-10-02,4575,4575,4575,,4575,,,,BCSF,2023-11-06
+Controlled Affiliate Investments Aerospace & Defense BCC Jetstream Holdings Aviation,co_85de50bb4e94,Other Equity,,,,,,,,11863,11863,10892,,11863,,,,BCSF,2023-11-06
+Controlled Affiliate Investments Aerospace & Defense BCC Jetstream Holdings Aviation,co_85de50bb4e94,Other Equity,,,,,,,,1116,1115,,,1115,,,,BCSF,2023-11-06
+Controlled Affiliate Investments Aerospace & Defense BCC Jetstream Holdings Aviation,co_85de50bb4e94,First Lien,,10%,,SOFR,10%,,2024-06-02,8013,8013,6621,,8013,,,,BCSF,2023-11-06
+Controlled Affiliate Investments Aerospace & Defense Gale Aviation (Offshore) Co,co_e06df2e70712,First Lien,Aerospace & Defense,,,,,,,90450,90450,89954,,90450,,,,BCSF,2023-11-06
+Controlled Affiliate Investments FIRE: Finance Legacy Corporate Lending HoldCo,co_38165b9a76a5,Other Equity,Financial Services,,,,,,,1,810,810,,810,,,type_hint_corporate_from_name,BCSF,2023-11-06
+Controlled Affiliate Investments FIRE: Finance Legacy Corporate Lending HoldCo,co_38165b9a76a5,Preferred Equity,Financial Services,,,,,,,,10125,10125,,10125,,,type_hint_corporate_from_name,BCSF,2023-11-06
+Fire Finance Controlled Affiliate [Member]],co_256a1eac1abc,Other,Financial Services,,,,,,,,10935,10935,1%,10935,,,,BCSF,2023-11-06
+Controlled Affiliate Investments Investment Vehicles Bain Capital Senior Loan Program,co_69c99adb8e84,Subordinated Debt,,10%,,SOFR,10%,,2033-12-27,115995,115995,115995,,115995,,,,BCSF,2023-11-06
+Controlled Affiliate Investments Investment Vehicles Bain Capital Senior Loan Program,co_69c99adb8e84,Preferred Equity,,,,,,,,10,10,-990,,10,,,,BCSF,2023-11-06
+Controlled Affiliate Investments Investment Vehicles Bain Capital Senior Loan Program,co_69c99adb8e84,Other Equity,,,,,,,,10,5594,2014,,5594,,,,BCSF,2023-11-06
+Controlled Affiliate Investments Investment Vehicles International Senior Loan Program,co_b00e7d725d62,Subordinated Debt,,13.55%,,SOFR,8%,,2028-02-22,186979,186978,186979,,186978,,,,BCSF,2023-11-06
+Controlled Affiliate Investments Investment Vehicles International Senior Loan Program,co_b00e7d725d62,Other Equity,,,,,,,,62337,59365,65249,,59365,,,,BCSF,2023-11-06
+Controlled Affiliate Investments Transportation: Cargo Lightning Holdings B,co_67fe88b1514e,Other Equity,Transportation & Logistics,,,,,,,34899,35210,44372,,35210,,,,BCSF,2023-11-06
+Controlled Affiliate Investments Cash Equivalents Goldman Sachs Financial Square Government Fund Institutional Share Class Cash Equivalents Interest Rate 5.24%,co_b6083248356a,First Lien,,5.24%,,,,,,52491,52491,52491,,52491,,,,BCSF,2023-11-06
+Controlled Affiliate Investments Cash Equivalents Goldman Sachs US Treasury Liquid Reserves Fund Cash Equivalents Interest Rate 5.24%,co_7f7df975065a,First Lien,,5.24%,,,,,,15692,15692,15692,,15692,,,,BCSF,2023-11-06
+Ansett Aviation Training,co_40a3f0eaeb1d,First Lien,Aerospace & Defense,8.83%,,SOFR,4.69%,,2031-09-24,14144,9830,9101,,9830,,,,BCSF,2023-11-06
+Ansett Aviation Training,co_40a3f0eaeb1d,First Lien,Aerospace & Defense,,,,,,,10238,7115,13167,,7115,,,,BCSF,2023-11-06
+Australian Dollar FIRE: Finance FNZ UK Finco Limited First Lien Senior Secured Loan LIBOR Spread 5.50% Interest Rate 9.37% Maturity Date 9/30/2026,co_47e308c78077,First Lien,,10.37%,,SOFR,5.5%,,2026-09-30,7660,4937,4929,,4937,,,,BCSF,2023-11-06
+Australian Dollar Healthcare & Pharmaceuticals Datix Bidco Limited First Lien Senior Secured Loan BBSW Spread 4.50% Interest Rate 8.41% Maturity Date 4/28/2025,co_e569c373dacf,First Lien,,8.41%,,SOFR,4.5%,,2025-04-28,4169,3294,2683,,3294,,,,BCSF,2023-11-06
+Australian Dollar Advertising,co_18e5d82a7903,First Lien,Media & Entertainment,11.11%,1%,SOFR,7%,,2026-04-30,9730,7040,6261,,7040,,,,BCSF,2023-11-06
+Australian Dollar Services: Consumer Zeppelin BidCo Pty Ltd.,co_457c2d63a2b2,First Lien,Consumer & Retail,9.24%,,SOFR,5%,,2024-07-12,20415,16109,13137,,16109,,,,BCSF,2023-11-06
+British Pound Environmental Industries Reconomy First Lien Senior Secured Loan SONIA Spread 6.25% Interest Rate 11.44% Maturity Date 6/24/2029,co_02798c79ad95,First Lien,,11.44%,,SOFR,6.25%,,2029-06-24,6050,7045,7380,,7045,,,,BCSF,2023-11-06
+British Pound Environmental Industries Reconomy First Lien Senior Secured Loan Delayed Draw SONIA Spread 6.25% Interest Rate 11.44% Maturity Date 6/24/2029,co_9182de50a8fe,First Lien,,11.44%,,SOFR,6.25%,,2029-06-24,6590,8094,7936,,8094,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+British Pound FIRE: Finance Parmenion First Lien Senior Secured Loan SONIA Spread 5.50% Interest Rate 9.93% Maturity Date 5/11/2029,co_869da0efcf58,First Lien,,9.93%,,SOFR,5.5%,,2029-05-11,29070,35233,35462,,35233,,,,BCSF,2023-11-06
+British Pound FIRE: Insurance Paisley Bidco Limited First Lien Senior Secured Loan Revolver SONIA Spread 5.50% Interest Rate 10.54% Maturity Date 11/26/2028,co_f4e9112c3c21,First Lien,,10.54%,,SOFR,5.5%,,2028-11-26,6346,8019,7853,,8019,,,type_hint_revolver_from_name,BCSF,2023-11-06
+British Pound Healthcare & Pharmaceuticals Datix Bidco Limited First Lien Senior Secured Loan - Revolver SONIA Spread 4.50% Interest Rate 9.69% Maturity Date 10/28/2024,co_c1d269f3e8df,First Lien,,9.69%,,SOFR,4.5%,,2024-10-28,262,314,320,,314,,,type_hint_revolver_from_name,BCSF,2023-11-06
+British Pound Healthcare & Pharmaceuticals Datix Bidco Limited Second Lien Senior Secured Loan SONIA Spread 7.75% Interest Rate 11.93% Maturity Date 4/27/2026,co_9c67c81c4968,First Lien,,11.93%,,SOFR,7.75%,,2026-04-27,12013,16916,14654,,16916,,,,BCSF,2023-11-06
+British Pound High Tech Industries Access First Lien Senior Secured Loan SONIA Spread 5.00% Interest Rate 10.19% Maturity Date 6/4/2029,co_c651d44b9e90,First Lien,,10.19%,,SOFR,5%,,2029-06-04,7880,9095,9613,,9095,,,,BCSF,2023-11-06
+British Pound Media: Publishing OGH Bidco Limited First Lien Senior Secured Loan SOFR Spread 6.50% Interest Rate 11.80% Maturity Date 9/2/2029,co_d035d44f80f5,First Lien,,11.8%,,SOFR,6.5%,,2029-09-02,5172,6073,5821,,6073,,,,BCSF,2023-11-06
+British Pound Media: Publishing OGH Bidco Limited First Lien Senior Secured Loan SONIA Spread 6.25% Interest Rate 11.18% Maturity Date 6/29/2029,co_ded94bdd0a83,First Lien,,11.18%,,SOFR,6.25%,,2029-06-29,13160,15189,15412,,15189,,,,BCSF,2023-11-06
+British Pound Services: Business Brook Bidco First Lien Senior Secured Loan SONIA Spread 3.00%(4.25%PIK) Interest Rate 11.80% Maturity Date 7/7/2028,co_fee3c2fa568c,First Lien,,11.8%,4.25%,SOFR,3%,,2028-07-07,23538,31807,28714,,31807,,,,BCSF,2023-11-06
+British Pound Services: Business Caribou Bidco Limited First Lien Senior Secured Loan SONIA Spread 5.25%(1.25%PIK) Interest Rate 11.43% Maturity Date 1/29/2029,co_a90f0ff423f2,First Lien,,11.43%,1.25%,SOFR,5.25%,,2029-01-29,19500,24178,23788,,24178,,,,BCSF,2023-11-06
+British Pound Services: Business Caribou Bidco Limited First Lien Senior Secured Loan - Delayed Draw SONIA Spread 5.25%(1.25%PIK) Interest Rate 11.43% Maturity Date 1/29/2029,co_92d2a4409568,First Lien,,11.43%,1.25%,SOFR,5.25%,,2029-01-29,1576,1954,1923,,1954,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+British Pound Services: Business Learning Pool First Lien Senior Secured Loan SONIA Spread 3.00% (4.25% PIK) Interest Rate 12.06% Maturity Date 7/7/2028,co_f7418e33fbf4,First Lien,,12.06%,4.25%,SOFR,3%,,2028-07-07,5169,6830,6830,,6830,,,,BCSF,2023-11-06
+British Pound Services: Business Learning Pool First Lien Senior Secured Loan SONIA Spread 3.00% (4.25% PIK) Interest Rate 12.06% Maturity Date 7/7/2028 One,co_6757fda8115b,First Lien,,12.06%,4.25%,SOFR,3%,,2028-07-07,7192,9502,9502,,9502,,,,BCSF,2023-11-06
+British Pound Services: Business Opus2 First Lien Senior Secured Loan SONIA Spread 5.03 Interest Rate 9.96% Maturity Date 5/5/2028,co_9640ce419155,First Lien,,10.22%,,SOFR,5.03%,,2028-05-05,12151,16422,14823,,16422,,,,BCSF,2023-11-06
+British Pound Services: Business Parcel2Go First Lien Senior Secured Loan SONIA Spread 6.00 Interest Rate 10.93% Maturity Date 7/15/2028,co_ebc0715de351,First Lien,,11.19%,,SOFR,6%,,2028-07-15,12395,16718,14364,,16718,,,,BCSF,2023-11-06
+British Pound Services: Business Parcel2Go First Lien Senior Secured Loan - Delayed Draw SONIA Spread 6.00 Interest Rate 10.93% Maturity Date 7/15/2028,co_f6be8faebd13,First Lien,,11.18%,,SOFR,6%,,2028-07-15,3825,5094,4266,,5094,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+British Pound Services: Consumer Surrey Bidco Limited First Lien Senior Secured Loan SONIA Spread 7.00% PIK Interest Rate 11.46% Maturity Date 5/11/2026,co_5f73b07dabe9,First Lien,,11.46%,7%,,,,2026-05-11,5660,7200,5178,,7200,,,,BCSF,2023-11-06
+Canadian Dollar Media Diversified & Production 9 Story Media Group Inc.,co_0b662060ee98,First Lien,Media & Entertainment,10.75%,,SOFR,5.25%,,2026-04-30,6746,5356,4969,,5356,,,,BCSF,2023-11-06
+Canadian Dollar Retail New Look Vision Group First Lien Senior Secured Loan SOFR Spread 5.50% Interest Rate 10.89% Maturity Date 5/26/2028,co_f58a4fb7f1f7,First Lien,,11.29%,,SOFR,5.75%,,2028-05-26,17739,14540,12543,,14540,,,,BCSF,2023-11-06
+Canadian Dollar Retail New Look Vision Group First Lien Senior Secured Loan - Delayed Draw CDOR Spread 5.50% Interest Rate 11.01% Maturity Date 5/26/2028,co_af5548f3813d,First Lien,,11.01%,,SOFR,5.5%,,2028-05-26,1195,929,843,,929,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+Canadian Dollar Retail New Look Vision Group First Lien Senior Secured Loan - Delayed Draw CDOR Spread 5.50% Interest Rate 11.01% Maturity Date 5/26/2028 1,co_3ecff981da82,First Lien,,11.01%,,SOFR,5.5%,,2028-05-26,2289,1640,1618,,1640,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+Danish Krone High Tech Industries VPARK BIDCO AB First Lien Senior Secured Loan CIBOR Spread 4.00% Interest Rate 7.42% Maturity Date 3/10/2025,co_875a8b0fc0d4,First Lien,,7.9%,,SOFR,4%,,2025-03-10,56429,9231,8001,,9231,,,,BCSF,2023-11-06
+European Currency Chemicals,co_d7b419d84ec1,First Lien,Chemicals & Materials,9.41%,,SOFR,5.75%,,2027-12-22,9306,9395,9544,,9395,,,,BCSF,2023-11-06
+European Currency Environmental Industries Reconomy First Lien Senior Secured Loan EURIBOR Spread 6.00% Interest Rate 9.97% Maturity Date 6/24/2029,co_fb68964997f4,First Lien,,9.97%,,SOFR,6%,,2029-06-24,2440,2475,2580,,2475,,,,BCSF,2023-11-06
+European Currency FIRE: Insurance MRHT First Lien Senior Secured Loan EURIBOR Spread 6.75% Interest Rate 10.50% Maturity Date 2/1/2029,co_d4829ce49efc,First Lien,,10.5%,,SOFR,6.75%,,2029-02-01,12000,12967,12561,,12967,,,,BCSF,2023-11-06
+European Currency FIRE: Insurance Paisley Bidco Limited First Lien Senior Secured Loan- Revolver EURIBOR Spread 5.50% Interest Rate 9.21% Maturity Date 11/26/2028,co_bb14dbded77c,First Lien,,9.21%,,SOFR,5.5%,,2028-11-26,3178,3367,3360,,3367,,,type_hint_revolver_from_name,BCSF,2023-11-06
+European Currency Healthcare & Pharmaceuticals Mertus 522. GmbH First Lien Senior Secured Loan EURIBOR Spread 7.00% Interest Rate 11.14% Maturity Date 5/28/2026,co_31f185e19d01,First Lien,,11.14%,,SOFR,7%,,2026-05-28,13052,15780,13420,,15780,,,,BCSF,2023-11-06
+European Currency Healthcare & Pharmaceuticals Mertus 522. GmbH First Lien Senior Secured Loan EURIBOR Spread 6.25% Interest Rate 10.03% Maturity Date 5/28/2026,co_8c2caf7e2a3b,First Lien,,10.03%,,SOFR,6.25%,,2026-05-28,22244,26906,22871,,26906,,,,BCSF,2023-11-06
+European Currency Healthcare & Pharmaceuticals Pharmathen First Lien Senior Secured Loan- Revolver EURIBOR Spread 5.73% Interest Rate9.66% Maturity Date 10/25/2028,co_5d6a92fd7847,First Lien,,9.66%,,SOFR,5.73%,,2028-10-25,13492,15012,14265,,15012,,,type_hint_revolver_from_name,BCSF,2023-11-06
+European Currency Healthcare & Pharmaceuticals Pharmathen First Lien Senior Secured Loan- Revolver EURIBOR Spread 5.73% Interest Rate9.66% Maturity Date 10/25/2028 One,co_cbffeefbae36,First Lien,,9.66%,,SOFR,5.73%,,2028-10-25,1266,1331,1339,,1331,,,type_hint_revolver_from_name,BCSF,2023-11-06
+European Currency High Tech Industries Onventis First Lien Senior Secured Loan - Delayed Draw EURIBOR Spread 7.50% Interest Rate 11.47% Maturity Date 1/12/2030,co_c3c1b97f163e,First Lien,,11.47%,,SOFR,7.5%,,2030-01-12,5000,5319,5287,,5319,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+European Currency High Tech Industries Utimaco First Lien Senior Secured Loan EURIBOR Spread 6.25% Interest Rate 10.03% Maturity Date 5/13/2029,co_33704aa2f649,First Lien,,10.03%,,SOFR,6.25%,,2029-05-13,8250,8340,8287,,8340,,,,BCSF,2023-11-06
+European Currency Media: Broadcasting & Subscription Lightning Finco Limited First Lien Senior Secured Loan EURIBOR Spread 5.50% Interest Rate 9.28% Maturity Date 8/31/2028,co_cdf72174068c,First Lien,,9.28%,,SOFR,5.5%,,2028-08-31,2619,2951,2769,,2951,,,,BCSF,2023-11-06
+European Currency Media: Diversified & Production 9 Story Media Group Inc.,co_5c6d968058d4,First Lien,Media & Entertainment,9.03%,,SOFR,5.25%,,2026-04-30,3636,4424,3845,,4424,,,,BCSF,2023-11-06
+European Currency Media: Diversified & Production Aptus 1724 Gmbh First Lien Senior Secured Loan EURIBOR Spread 6.00% Interest Rate 9.80% Maturity Date 2/23/2028,co_0bfad6541dbe,First Lien,,9.8%,,SOFR,6%,,2028-02-23,35000,41281,36173,,41281,,,,BCSF,2023-11-06
+European Currency Services Business iBanFirst First Lien Senior Secured Loan Spread 10.00% PIK Interest Rate 13.95% Maturity Date 7/13/2028,co_3ebb006d2c14,Other,,,10%,,,,,,,,,,,,,BCSF,2023-11-06
+European Currency Services: Business iBanFirst First Lien Senior Secured Loan Spread 10.00% PIK Interest Rate 13.95% Maturity Date 7/13/2028,co_42892f169013,First Lien,,13.95%,10.00%,,,,2028-07-13,11884,13397,12565,,13397,,,,BCSF,2023-11-06
+European Currency Services: Business SumUp Holdings Luxembourg S.a.r.l. First Lien Senior Secured Loan EURIBOR Spread 8.50% Interest Rate 12.32% Maturity Date 2/17/2026,co_4be3f904369a,First Lien,,12.32%,,SOFR,8.5%,,2026-02-17,30900,35472,32671,,35472,,,,BCSF,2023-11-06
+Norwegian Krone High Tech Industries VPARK BIDCO AB First Lien Senior Secured Loan NIBOR Spread 4.00% Interest Rate 8.51% Maturity Date 3/10/2025,co_06d69186e65a,First Lien,,8.51%,,SOFR,4%,,2025-03-10,73280,8651,6851,,8651,,,,BCSF,2023-11-06
+Norwegian Krone Services: Business Spring Finco BV First Lien Senior Secured Loan NIBOR Spread 5.50% Interest Rate 9.98% Maturity Date 7/15/2029,co_a3ed8c5f7cd1,First Lien,,9.98%,,SOFR,5.5%,,2029-07-15,174360,16601,16301,,16601,,,,BCSF,2023-11-06
+U.S. Dollar Automotive Cardo First Lien Senior Secured Loan LIBOR Spread 5.50% Interest Rate 11.08% Maturity Date 5/12/2028,co_934da791aa5c,First Lien,,11.08%,,SOFR,5.5%,,2028-05-12,9653,9586,9653,,9586,,,,BCSF,2023-11-06
+U.S. Dollar Chemicals,co_c56b83808c12,First Lien,Chemicals & Materials,,,SOFR,5.75%,,2027-12-22,,,,,,,,,BCSF,2023-11-06
+U.S. Dollar Chemicals,co_c56b83808c12,First Lien,Chemicals & Materials,11.43%,,,,,,23339,23339,22639,,23339,,,,BCSF,2023-11-06
+U.S. Dollar Consumer goods: Non-durable RoC Opco LLC,co_5a8cecff73c0,First Lien,Consumer & Retail,12.99%,,SOFR,7.6%,,2025-02-25,15755,15755,15755,,15755,,,,BCSF,2023-11-06
+U.S. Dollar Consumer goods: Durable Stanton Carpet Second Lien Senior Secured Loan SOFR Spread 9.00% Interest Rate 14.56% Maturity Date 3/31/2028,co_8b69edc18ad6,First Lien,,14.56%,,SOFR,9%,,2028-03-31,5000,4941,5000,,4941,,,,BCSF,2023-11-06
+U.S. Dollar High Tech Industries NearMap First Lien Senior Secured Loan SOFR Spread 7.25% Interest Rate 12.58% Maturity Date 12/9/2029,co_45178f728d9f,First Lien,,12.58%,,SOFR,7.25%,,2029-12-09,11800,11585,11800,,11585,,,,BCSF,2023-11-06
+U.S. Dollar High Tech Industries Utimaco First Lien Senior Secured Loan SOFR Spread 6.25% Interest Rate 11.81% Maturity Date 5/13/2029,co_933f02d500d9,First Lien,,11.81%,,SOFR,6.25%,,2029-05-13,16450,16310,15627,,16310,,,,BCSF,2023-11-06
+U.S. Dollar High Tech Industries Utimaco First Lien Senior Secured Loan SOFR Spread 6.25% Interest Rate 11.81% Maturity Date 5/13/2029 One,co_ee03d89a7590,First Lien,,11.81%,,SOFR,6.25%,,2029-05-13,8550,8477,8123,,8477,,,,BCSF,2023-11-06
+U.S. Dollar Media: Broadcasting & Subscription Lightning Finco Limited First Lien Senior Secured Loan SOFR Spread 5.76% Interest Rate 11.06% Maturity Date 8/31/2028,co_317afcd345fa,First Lien,,11.06%,,SOFR,5.76%,,2028-08-31,23907,23753,23907,,23753,,,,BCSF,2023-11-06
+U.S. Dollar Media: Diversified & Production Aptus 1724 Gmbh First Lien Senior Secured Loan LIBOR Spread 6.25% Interest Rate 11.90% Maturity Date 2/23/2028,co_4e64237278bd,First Lien,,11.9%,,SOFR,6.25%,,2028-02-23,10000,9950,9825,,9950,,,,BCSF,2023-11-06
+U.S. Dollar Services: Business Avalon Acquiror,co_36d4e1c447ce,First Lien,Business Services,11.64%,,SOFR,6.25%,,2028-03-10,11850,11760,11642,,11760,,,,BCSF,2023-11-06
+U.S. Dollar Services: Business Chamber Bidco Limited First Lien Senior Secured Loan SOFR Spread 6.25% Interest Rate 11.31% Maturity Date 6/7/2028,co_e192f64c32be,First Lien,,11.31%,,SOFR,6.25%,,2028-06-07,21081,20934,21081,,20934,,,,BCSF,2023-11-06
+U.S. Dollar Services: Business Smartronix First Lien Senior Secured Loan SOFR Spread 5.75% Interest Rate 11.32% Maturity Date 11/23/2028,co_e80636a6641b,First Lien,,11.32%,,SOFR,5.75%,,2028-11-23,10835,10727,10726,,10727,,,,BCSF,2023-11-06
+Robinson Helicopter First Lien Senior Secured Loan – Revolver SOFR Spread 6.50% Interest Rate 11.92% Maturity Date 6/30/2028,co_77ad73586a29,First Lien,Aerospace & Defense,11.92%,,SOFR,6.5%,,2028-06-30,31404,31025,31404,,31025,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Saturn Purchaser Corp.,co_1a2ed7d76c61,First Lien,Aerospace & Defense,10.92%,,SOFR,5.6%,,2029-07-23,21362,21265,21362,,21265,,,,BCSF,2023-11-06
+Whitcraft-Paradigm First Lien Senior Secured Loan SOFR Spread 7.00% Interest Rate 12.32% Maturity Date 2/28/2029,co_c9271449dfd2,First Lien,Aerospace & Defense,12.32%,,SOFR,7%,,2029-02-28,9950,9857,9950,,9857,,,,BCSF,2023-11-06
+Cardo First Lien Senior Secured Loan LIBOR Spread 5.50% Interest Rate 11.08% Maturity Date 5/12/2028,co_87fd06b841dd,First Lien,Automotive,11.08%,,SOFR,5.5%,,2028-05-12,10800,10800,10800,,10800,,,,BCSF,2023-11-06
+Gills Point S First Lien Senior Secured Loan SOFR Spread 7.00% Interest Rate 12.38% Maturity Date 5/15/2029,co_7db1abbec59b,First Lien,Automotive,12.38%,,SOFR,7%,,2029-05-15,9975,9975,9975,,9975,,,,BCSF,2023-11-06
+Intoxalock First Lien Senior Secured Loan SOFR Spread 6.75% Interest Rate 11.92% Maturity Date 11/1/2028,co_58ce36505755,First Lien,Automotive,11.92%,,SOFR,6.75%,,2028-11-01,17143,16989,17143,,16989,,,,BCSF,2023-11-06
+JHCC Holdings,co_6b40f1198954,Delayed Draw,Automotive,10.79%,,SOFR,5.25%,,2025-09-09,8268,8186,8268,,8186,,,,BCSF,2023-11-06
+JHCC Holdings,co_6b40f1198954,First Lien,Automotive,10.79%,,SOFR,5.25%,,2025-09-09,16488,16331,16488,,16331,,,,BCSF,2023-11-06
+Banking Finance,co_bd90126cf7f0,First Lien,Financial Services,11.05%,,SOFR,5.63%,,2028-04-25,7860,7767,7781,,7767,,,,BCSF,2023-11-06
+,,First Lien,,11.79%,,SOFR,6.25%,,2029-03-31,6467,6282,6240,,6282,,,,BCSF,2023-11-06
+,,First Lien,,11.43%,,SOFR,5.75%,,2027-12-22,20166,20066,19561,,20066,,,,BCSF,2023-11-06
+YLG Holdings,co_10b178f7afc0,First Lien,Industrials,10.47%,,SOFR,5%,,2025-10-31,20401,20401,20401,,20401,,,,BCSF,2023-11-06
+New Milani Group LLC,co_53d49e3a4f21,First Lien,Consumer & Retail,10.92%,,SOFR,5.5%,,2024-06-06,9948,9948,9948,,9948,,,,BCSF,2023-11-06
+Stanton Carpet Second Lien Senior Secured Loan SOFR Spread 9.00% Interest Rate 14.56% Maturity Date 3/31/2028,co_27d6fb46d3ab,First Lien,Consumer & Retail,14.56%,,SOFR,9%,,2028-03-31,5000,4924,5000,,4924,,,,BCSF,2023-11-06
+TLC Purchaser,co_88ffef5ab98e,First Lien,Consumer & Retail,13.64%,6.25%,SOFR,2%,,2025-10-13,10382,9745,8124,,9745,,,,BCSF,2023-11-06
+FL Hawk Intermediate Holdings Second Lien Senior Secured Loan SOFR Spread 9.26% Interest Rate 14.65% Maturity Date 8/22/2028,co_0f13f9b41427,First Lien,Consumer & Retail,14.65%,,SOFR,9.26%,,2028-08-22,5486,5486,5486,,5486,,,,BCSF,2023-11-06
+RoC Opco LLC,co_a3ceaa00e48a,First Lien,Consumer & Retail,12.99%,,SOFR,7.6%,,2025-02-25,8685,8685,8685,,8685,,,,BCSF,2023-11-06
+Consumer Goods: Non-Durable Solaray,co_26aef48a9bd0,First Lien,Consumer & Retail,12.01%,,SOFR,6.5%,,2023-12-15,10552,10552,10077,,10552,,,,BCSF,2023-11-06
+WU Holdco,co_300783b81be6,First Lien,Consumer & Retail,11.04%,,SOFR,5.5%,,2026-03-26,6478,6478,6218,,6478,,,,BCSF,2023-11-06
+WU Holdco,co_300783b81be6,First Lien,Consumer & Retail,11.04%,,SOFR,5.5%,,2026-03-26,6270,6270,6019,,6270,,,,BCSF,2023-11-06
+WSP First Lien Senior Secured Loan SOFR Spread 6.25% Interest Rate 11.67% Maturity Date 4/27/2027,co_f461541611c3,First Lien,Consumer & Retail,11.67%,,SOFR,6.25%,,2027-04-27,5636,5568,4903,,5568,,,,BCSF,2023-11-06
+,,First Lien,,11.63%,,SOFR,6%,,2027-12-29,22877,22687,22190,,22687,,,,BCSF,2023-11-06
+Containers Packaging & Glass Iris Holding,co_e18934c0a3ee,First Lien,Containers & Packaging,10.22%,,SOFR,4.75%,,2028-06-28,9900,9509,9246,,9509,,,,BCSF,2023-11-06
+Energy: Oil & Gas Amspec Services,co_486a6c1760fc,First Lien,Energy,11.29%,,SOFR,5.75%,,2024-07-02,19616,19616,19616,,19616,,,,BCSF,2023-11-06
+Energy: Oil & Gas Blackbrush Oil & Gas,co_143b02a1aee7,First Lien,Energy,12.65%,2%,SOFR,5%,,2025-09-03,4483,4483,4483,,4483,,,,BCSF,2023-11-06
+Allworth Financial Group,co_fd73c9ef7da6,Delayed Draw,Financial Services,10.92%,,SOFR,5.5%,,2026-12-23,2117,2117,2075,,2117,,,,BCSF,2023-11-06
+Allworth Financial Group,co_fd73c9ef7da6,First Lien,Financial Services,10.92%,,SOFR,5.5%,,2026-12-23,8366,8366,8199,,8366,,,,BCSF,2023-11-06
+Margaux Acquisition Inc.,co_a66a58a76d7f,First Lien,Insurance,11.29%,,SOFR,5.75%,,2024-12-19,9035,9035,9035,,9035,,,,BCSF,2023-11-06
+Margaux Acquisition Inc.,co_a66a58a76d7f,First Lien,Insurance,11.29%,,SOFR,5.75%,,2024-12-19,11283,11283,11283,,11283,,,,BCSF,2023-11-06
+Simplicity First Lien Senior Secured Loan SOFR Spread 6.25% Interest Rate 11.79% Maturity Date 12/2/2026,co_8525f2cc8c6f,First Lien,Insurance,11.79%,,SOFR,6.25%,,2026-12-02,19900,19349,19403,,19349,,,,BCSF,2023-11-06
+Apollo Intelligence First Lien Senior Secured Loan SOFR Spread 5.75% Interest Rate 11.12% Maturity Date 6/1/2028,co_15c571f16788,First Lien,Healthcare,11.12%,,SOFR,5.75%,,2028-06-01,10692,10607,10692,,10607,,,,BCSF,2023-11-06
+CPS Group Holdings,co_35b418623132,First Lien,Healthcare,10.79%,,SOFR,5.25%,,2025-03-03,19653,19617,19653,,19617,,,,BCSF,2023-11-06
+SunMed Group Holdings,co_58129a45be78,First Lien,Healthcare,10.99%,,SOFR,5.5%,,2028-06-16,9557,9557,9557,,9557,,,,BCSF,2023-11-06
+High Tech Industries AMI US Holdings Inc.,co_ab812b6a0b16,First Lien,Software & Technology,10.67%,,SOFR,5.35%,,2025-04-01,66,66,66,,66,,,,BCSF,2023-11-06
+High Tech Industries AMI US Holdings Inc.,co_ab812b6a0b16,First Lien,Software & Technology,10.67%,,SOFR,5.35%,,2025-04-01,2791,2791,2791,,2791,,,,BCSF,2023-11-06
+High Tech Industries AMI US Holdings Inc.,co_ab812b6a0b16,First Lien,Software & Technology,10.67%,,SOFR,5.35%,,2025-04-01,143,143,143,,143,,,,BCSF,2023-11-06
+High Tech Industries AMI US Holdings Inc.,co_ab812b6a0b16,First Lien,Software & Technology,10.67%,,SOFR,5.35%,,2025-04-01,6042,6042,6042,,6042,,,,BCSF,2023-11-06
+High Tech Industries Applitools First Lien Senior Secured Loan SOFR Spread 6.25% Interest Rate 11.37% Maturity Date 5/25/2029,co_2fa5c596db1e,First Lien,,11.57%,,SOFR,6.25%,,2029-05-25,10688,10596,10474,,10596,,,,BCSF,2023-11-06
+High Tech Industries Drilling Info Holdings,co_70e0e47a045d,First Lien,Software & Technology,9.67%,,SOFR,4.25%,,2025-07-30,20262,19928,19641,,19928,,,,BCSF,2023-11-06
+High Tech Industries NearMap First Lien Senior Secured Loan SOFR Spread 7.25% Interest Rate 12.58% Maturity Date 12/9/2029,co_505ea5867725,First Lien,,12.58%,,SOFR,7.25%,,2029-12-09,10000,9817,10000,,9817,,,,BCSF,2023-11-06
+High Tech Industries Superna Inc.,co_b481b5f2c379,First Lien,Software & Technology,11.9%,,SOFR,6.5%,,2028-03-06,33539,33163,32365,,33163,,,,BCSF,2023-11-06
+High Tech Industries Ventiv Holdco,co_0768a64352c1,First Lien,Software & Technology,12.39%,1.5%,SOFR,5.5%,,2025-09-03,9840,9840,9741,,9840,,,,BCSF,2023-11-06
+Hotel Gaming & Leisure Aimbridge Acquisition Co.,co_b8b9799fbb84,Second Lien,Healthcare,12.94%,,SOFR,7.61%,,2027-02-01,6000,5677,5745,,5677,,,,BCSF,2023-11-06
+Hotel,co_8d53a3e36729,First Lien,Healthcare,11.25%,,SOFR,5.5%,,2029-03-30,20540,20202,20540,,20202,,,,BCSF,2023-11-06
+Hotel,co_8d53a3e36729,First Lien,Healthcare,13.33%,,SOFR,8%,,2027-01-19,15920,15503,15920,,15503,,,,BCSF,2023-11-06
+Hotel,co_8d53a3e36729,First Lien,Healthcare,13.75%,,SOFR,13.75%,,2028-04-11,11074,11051,9579,,11051,,,,BCSF,2023-11-06
+Retail New Look (Delaware) Corp.,co_d9ac1cc76c68,First Lien,Consumer & Retail,11.04%,,SOFR,5.5%,,2028-05-26,9579,9232,9196,,9232,,,,BCSF,2023-11-06
+Retail Thrasio,co_6194bf2a8e90,First Lien,Consumer & Retail,12.65%,,SOFR,7%,,2026-12-18,9085,9085,5906,,9085,,,,BCSF,2023-11-06
+Avalon Acquiror,co_a7880aa62329,First Lien,Business Services,11.64%,,SOFR,6.25%,,2028-03-10,32465,32198,31896,,32198,,,,BCSF,2023-11-06
+Refine Intermediate,co_348e89f0dd14,First Lien,Business Services,9.99%,,SOFR,4.5%,,2027-03-03,19712,19712,19712,,19712,,,,BCSF,2023-11-06
+Smartronix First Lien Senior Secured Loan SOFOR Spread 5.75% Interest Rate 11.32% Maturity Date 11/23/2028,co_6fc46ee39cc4,First Lien,Business Services,11.32%,,SOFR,5.75%,,2028-11-23,12969,12771,12839,,12771,,,,BCSF,2023-11-06
+TEI Holdings Inc.,co_d6b66d657cf3,First Lien,Business Services,10.67%,,SOFR,5.25%,,2026-12-23,19082,19082,19082,,19082,,,,BCSF,2023-11-06
+WCI Gigawatt Purchaser First Lien Senior Secured Loan SOFR Spread 5.50% Interest Rate 11.14% Maturity Date 11/19/2027,co_9a7f083757e7,First Lien,Business Services,11.14%,,SOFR,5.5%,,2027-11-19,20485,20233,20281,,20233,,,,BCSF,2023-11-06
+WCI Gigawatt Purchaser First Lien Senior Secured Loan-Delayed Draw SOFR Spread 5.50% Interest Rate 11.14% Maturity Date 11/19/2027,co_2eab2f181cc9,First Lien,Business Services,11.14%,,SOFR,5.5%,,2027-11-19,4804,4713,4756,,4713,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+AMCP Clean Acquisition Company,co_a5bfaf21fa2a,First Lien,Business Services,9.82%,,SOFR,4.4%,,2025-07-10,8297,7672,7455,,7672,,,,BCSF,2023-11-06
+AMCP Clean Acquisition Company,co_a5bfaf21fa2a,Delayed Draw,Business Services,9.82%,,SOFR,4.4%,,2025-07-10,1651,1526,1483,,1526,,,,BCSF,2023-11-06
+Eagle Parent Corp.,co_f851aace4ef7,First Lien,Consumer & Retail,9.64%,,SOFR,4.25%,,2029-04-02,3318,3310,3234,,3310,,,,BCSF,2023-11-06
+MZR Buyer,co_505a162d56b6,First Lien,Consumer & Retail,12.17%,,SOFR,6.75%,,2026-12-21,27584,27520,27584,,27520,,,,BCSF,2023-11-06
+Telecommunications Meriplex Communications,co_5aa62c5606d6,First Lien,Telecommunications,10.42%,,SOFR,5%,,2028-07-17,14964,14769,14964,,14769,,,,BCSF,2023-11-06
+Telecommunications Taoglas First Lien Senior Secured Loan SOFR Spread 7.00% Interest Rate 12.39% Maturity Date 2/28/2029,co_b1de9a91bef3,First Lien,,12.39%,,SOFR,7%,,2029-02-28,9950,9857,9701,,9857,,,,BCSF,2023-11-06
+Transportation: Cargo A&R Logistics,co_9c201d2efdea,First Lien,Transportation & Logistics,11.15%,,SOFR,5.75%,,2025-05-05,20533,20533,20533,,20533,,,,BCSF,2023-11-06
+Transportation: Cargo Grammer Purchaser,co_be0d472b2980,Revolver,Transportation & Logistics,10.02%,,SOFR,4.5%,,2024-09-30,207,207,207,,207,,,,BCSF,2023-11-06
+Transportation: Cargo Grammer Purchaser,co_be0d472b2980,First Lien,Transportation & Logistics,9.99%,,SOFR,4.5%,,2024-09-30,3428,3428,3428,,3428,,,,BCSF,2023-11-06
+Transportation: Cargo Gulf Winds International First Lien Senior Secured Loan SOFR Spread 7.10% Interest Rate 12.42% Maturity Date 12/16/2028,co_1bfd70014644,First Lien,,12.42%,,SOFR,7.1%,,2028-12-16,14267,13959,14267,,13959,,,,BCSF,2023-11-06
+Transportation: Cargo Omni Intermediate First Lien Senior Secured Loan SOFR Spread 5.00% Interest Rate 10.42% Maturity Date 11/23/2026,co_16cd75b01bbb,First Lien,,10.42%,,SOFR,5%,,2026-11-23,7177,7177,7177,,7177,,,,BCSF,2023-11-06
+Transportation: Cargo Omni Logistics,co_8e2cf3b07f25,Second Lien,Transportation & Logistics,14.54%,,SOFR,9.15%,,2027-12-30,5000,5000,5050,,5000,,,,BCSF,2023-11-06
+Transportation: Cargo RoadOne First Lien Senior Secured Loan SOFR Spread 6.25% Interest Rate 11.72% Maturity Date 12/29/2028,co_6441c3f2e298,First Lien,,11.72%,,SOFR,6.25%,,2028-12-29,6987,6798,6987,,6798,,,,BCSF,2023-11-06
+Transportation: Consumer PrimeFlight Acquisition LLC,co_bf829a6a114a,First Lien,Transportation & Logistics,12.18%,,SOFR,6.85%,,2029-05-01,19950,19374,19751,,19374,,,,BCSF,2023-11-06
+Wholesale Abracon Group Holding,co_bfaa37f00e6e,First Lien,Distribution & Wholesale,11.21%,,SOFR,5.75%,,2028-07-06,11882,11688,10961,,11688,,,,BCSF,2023-11-06
+Wholesale Aramsco,co_efba28fd5439,First Lien,Distribution & Wholesale,11.17%,,SOFR,5.75%,,2024-08-28,9410,9410,9410,,9410,,,,BCSF,2023-11-06
+Wholesale SureWerx First Lien Senior Secured Loan SOFR Spread 6.75% Interest Rate 12.14% Maturity Date 12/28/2029,co_8ca6ac9c9bec,First Lien,,12.14%,,SOFR,6.75%,,2029-12-28,8323,8133,8323,,8133,,,,BCSF,2023-11-06
+FCG Acquisitions,co_2d0d3428c93e,Preferred Equity,Industrials,,,,,,,4,,,,,,,,BCSF,2023-11-06
+Congress Wealth First Lien Senior Secured Loan - Revolver Maturity Date 6/30/2029,co_c1c8c31b1b62,Other,Financial Services,,,,,,2029-06-30,,,,,,,,type_hint_revolver_from_name,BCSF,2023-11-06
+HealthDrive First Lien Senior Secured Loan - Delayed Draw Maturity Date 8/20/2029,co_052ed616cdf4,Other,Healthcare,,,,,,2029-08-20,,,,,,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+HealthDrive First Lien Senior Secured Loan - Delayed Draw Maturity Date 8/20/2029 One,co_d730b39f2333,Other,Healthcare,,,,,,2029-08-20,,,,,,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+HealthDrive First Lien Senior Secured Loan - Revolver Maturity Date 8/20/2029,co_1e9780af46c5,Other,Healthcare,,,,,,2029-08-20,,,,,,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments High Tech Industries CB Nike IntermediateCo Ltd.,co_a5b46d8aace8,Other,,,,,,,2025-10-31,,,,,,,,,BCSF,2023-11-06
+Darcy Partners First Lien Senior Secured Loan - Revolver Maturity Date 6/1/2028,co_aa4d89a95008,Other,Business Services,,,,,,2028-06-01,,,-4,,,,,type_hint_revolver_from_name,BCSF,2023-11-06
+Spring Finco BV First Lien Senior Secured Loan - Delayed Draw Maturity Date 7/15/2029,co_c92826185fbe,Other,Business Services,,,,,,2029-07-15,,,,,,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Telecommunications Taoglas First Lien Senior Secured Loan - Delayed Draw Maturity Date 2/28/2029,co_9a49634752c6,Other,,,,,,,2029-02-28,,,-91,,,,,type_hint_delayed_draw_from_name,BCSF,2023-11-06
+Non-controlled/Non-Affiliated Investments Transportation: Cargo Grammer Investment Holdings LLC,co_2957c8b864a2,First Lien,,,,,,,,122,,,,,,,,BCSF,2023-11-06
+ACAMS,co_e15005b9655b,Other,Energy,,,,,2022-03-10,,,,,,,,,,BCSF,2023-11-06
+ADT Pizza LLC,co_8dafd7b7483a,Other,Food & Beverage,,,,,2018-10-29,,,,,,,,,,BCSF,2023-11-06
+Ansett Aviation Training,co_40a3f0eaeb1d,Other,Transportation & Logistics,,,,,2022-03-24,,,,,,,,,,BCSF,2023-11-06
+Apollo Intelligence,co_8ce53e1baf73,Other,Energy,,,,,2022-06-01,,,,,,,,,,BCSF,2023-11-06
+Appriss Holdings Inc.,co_46456f356d7b,Other,Energy,,,,,2021-05-03,,,,,,,,,,BCSF,2023-11-06
+AQ Software Corp.,co_3ca29c019d51,Other,Software & Technology,,,,,2021-12-10,,,,,,,,,,BCSF,2023-11-06
+AQ Software Corp.,co_3ca29c019d51,Other,Software & Technology,,,,,2022-04-14,,,,,,,,,,BCSF,2023-11-06
+AQ Software Corp.,co_3ca29c019d51,Other,Software & Technology,,,,,2022-12-29,,,,,,,,,,BCSF,2023-11-06
+ARL Holdings LLC,co_59b7e8533c17,Other,Telecommunications,,,,,2019-05-03,,,,,,,,,,BCSF,2023-11-06
+Armor Group LP,co_4b22c4f1cb51,Other,Telecommunications,,,,,2018-08-28,,,,,,,,,,BCSF,2023-11-06
+Bain Capital Senior Loan Program LLC,co_01dd3e9f83e5,Other,Aerospace & Defense,,,,,2021-12-27,,,,,,,,,,BCSF,2023-11-06
+BCC Jetstream Holdings Aviation (Off I) LLC,co_14260a08d353,Other,Transportation & Logistics,,,,,2017-06-01,,,,,,,,,,BCSF,2023-11-06
+BCC Jetstream Holdings Aviation (On II) LLC,co_14260a08d353,Other,Transportation & Logistics,,,,,2017-06-01,,,,,,,,,,BCSF,2023-11-06
+BCC Middle Market CLO 2018-1 LLC,co_9cb79c9f6bb5,Other,Energy,,,,,2022-02-28,,,,,,,,,,BCSF,2023-11-06
+Blackbrush Oil & Gas LP.,co_a6d52c22de2b,Other,Energy,,,,,2020-09-03,,,,,,,,,,BCSF,2023-11-06
+Brook Bidco,co_996f1bf749c4,Other,Energy,,,,,2021-07-08,,,,,,,,,,BCSF,2023-11-06
+CB Titan Holdings Inc.,co_f59019750572,Other,Energy,,,,,2017-05-01,,,,,,,,,,BCSF,2023-11-06
+Cloud Technology Solutions,co_9f1f9e9e1f43,Other,Software & Technology,,,,,2022-12-15,,,,,,,,,,BCSF,2023-11-06
+Congress Wealth,co_2f9c21f294e6,Other,Financial Services,,,,,2023-06-30,,,,,,,,,,BCSF,2023-11-06
+Darcy Partners,co_4372265399c7,Other,Energy,,,,,2022-06-01,,,,,,,,,,BCSF,2023-11-06
+DC Blox Inc.,co_2c7bb92cdd0c,Other,Telecommunications,,,,,2021-03-22,,,,,,,,,,BCSF,2023-11-06
+DC Blox Inc.,co_2c7bb92cdd0c,Other,Telecommunications,,,,,2021-03-23,,,,,,,,,,BCSF,2023-11-06
+Direct Travel Inc.,co_0522d62596e4,Other,Healthcare,,,,,2020-10-02,,,,,,,,,,BCSF,2023-11-06
+Eagle Rock Capital Corp.,co_b8b0a6b86504,Other,Energy,,,,,2021-12-09,,,,,,,,,,BCSF,2023-11-06
+East BCC Coinvest II LLC,co_1ab2236be22b,Other,Industrials,,,,,2019-07-23,,,,,,,,,,BCSF,2023-11-06
+Elevator Holdco Inc.,co_d8ce90c12293,Other,Industrials,,,,,2019-12-23,,,,,,,,,,BCSF,2023-11-06
+Eleven Software,co_dff2dd2b4e82,Other,Software & Technology,,,,,2022-04-25,,,,,,,,,,BCSF,2023-11-06
+Elk Parent Holdings LP,co_5ca554ad7cc5,Other,Industrials,,,,,2019-11-01,,,,,,,,,,BCSF,2023-11-06
+FCG Acquisitions Inc.,co_e6efac010dff,Other,Industrials,,,,,2019-01-24,,,,,,,,,,BCSF,2023-11-06
+Fineline Technologies Inc.,co_0a05caa00f29,Other,Consumer & Retail,,,,,2021-02-22,,,,,,,,,,BCSF,2023-11-06
+Gale Aviation (Offshore) Co,co_c8abe313a5c6,Other,Transportation & Logistics,,,,,2019-01-02,,,,,,,,,,BCSF,2023-11-06
+Gills Point S,co_8fa696abf31e,Other,Automotive,,,,,2023-05-17,,,,,,,,,,BCSF,2023-11-06
+Gluware,co_2c22b87218c4,Other,Energy,,,,,2021-10-15,,,,,,,,,,BCSF,2023-11-06
+Grammer Investment Holdings LLC,co_533d0bf06ba5,Other,Financial Services,,,,,2018-10-01,,,,,,,,,,BCSF,2023-11-06
+HealthDrive,co_828d9562592b,Other,Energy,,,,,2023-08-18,,,,,,,,,,BCSF,2023-11-06
+Hultec,co_ef10dd978ebb,Other,Telecommunications,,,,,2023-03-31,,,,,,,,,,BCSF,2023-11-06
+iBanFirst Facility,co_e28b23f16f84,Other,,,,,,2021-07-13,,,,,,,,,,BCSF,2023-11-06
+Insigneo Financial Group LLC,co_0d9e495e4d55,Other,Financial Services,,,,,2022-08-01,,,,,,,,,,BCSF,2023-11-06
+International Senior Loan Program LLC,co_f90a03b7ce25,Other,Aerospace & Defense,,,,,2021-02-22,,,,,,,,,,BCSF,2023-11-06
+Kellstrom Aerospace Group Inc.,co_c43831606c7e,Other,Aerospace & Defense,,,,,2019-07-01,,,,,,,,,,BCSF,2023-11-06
+Legacy Corporate Lending HoldCo LLC,co_1b0c8600de2f,Other,Financial Services,,,,,2023-04-21,,,,,,,,,type_hint_corporate_from_name,BCSF,2023-11-06
+Lightning Holdings B LLC,co_0dae01a48d31,Other,Aerospace & Defense,,,,,2020-01-02,,,,,,,,,,BCSF,2023-11-06
+masLabor,co_331a40800920,Other,Business Services,,,,,2021-07-01,,,,,,,,,,BCSF,2023-11-06
+MZR Aggregator,co_1841e210c1f8,Other,Energy,,,,,2020-12-22,,,,,,,,,,BCSF,2023-11-06
+NPC International Inc.,co_ea4b3d992711,Other,Food & Beverage,,,,,2021-04-01,,,,,,,,,,BCSF,2023-11-06
+Opus2,co_13dda502e4ae,Other,Energy,,,,,2021-06-16,,,,,,,,,,BCSF,2023-11-06
+Parcel2Go,co_6eb62fa73008,Other,Aerospace & Defense,,,,,2021-07-15,,,,,,,,,,BCSF,2023-11-06
+PPX,co_1aefac3553f9,Other,Food & Beverage,,,,,2021-07-29,,,,,,,,,,BCSF,2023-11-06
+Precision Ultimate Holdings LLC,co_7d63e5789517,Other,Aerospace & Defense,,,,,2019-11-06,,,,,,,,,,BCSF,2023-11-06
+REP Coinvest III- A Omni LP.,co_fb2dd0bf7b28,Other,Telecommunications,,,,,2021-02-05,,,,,,,,,,BCSF,2023-11-06
+Revalize Inc.,co_7f5a52b783f9,Other,Consumer & Retail,,,,,2022-12-29,,,,,,,,,,BCSF,2023-11-06
+Robinson Helicopter,co_2618d30857d8,Other,Aerospace & Defense,,,,,2022-06-30,,,,,,,,,,BCSF,2023-11-06
+Service Master,co_b16639dbd162,Other,Business Services,,,,,2021-08-16,,,,,,,,,,BCSF,2023-11-06
+Superna Inc.,co_5bc1802b6920,Other,Energy,,,,,2022-03-08,,,,,,,,,,BCSF,2023-11-06
+Taoglas,co_9e4783bec38d,Other,Telecommunications,,,,,2023-02-28,,,,,,,,,,BCSF,2023-11-06
+Titan Cloud Software Inc.,co_ee2bcff6bd0c,Other,Software & Technology,,,,,2022-11-04,,,,,,,,,,BCSF,2023-11-06
+TLC Holdco LP,co_b37159358300,Other,Consumer & Retail,,,,,2019-10-11,,,,,,,,,,BCSF,2023-11-06
+Toro Private Investments II LP.,co_b37a9295ef67,Other,Financial Services,,,,,2019-04-02,,,,,,,,,,BCSF,2023-11-06
+Utimaco,co_853e88d8c9ce,Other,Energy,,,,,2022-06-28,,,,,,,,,,BCSF,2023-11-06
+Ventiv Topco Inc.,co_50a35f37c059,Other,Energy,,,,,2019-09-03,,,,,,,,,,BCSF,2023-11-06
+Walker Edison,co_2f44f1e49c5a,Other,Consumer & Retail,,,,,2023-03-01,,,,,,,,,,BCSF,2023-11-06
+WSP,co_5d1bb4cb59dd,Other,Consumer & Retail,,,,,2021-08-31,,,,,,,,,,BCSF,2023-11-06
+Canadian Dollar Media Diversified & Production 9 Story Media Group Inc.,co_0b662060ee98,Other,Media & Entertainment,,,,,,2026-04-30,,,,,,,,,BCSF,2023-11-06
+U.S. Dollar High Tech Industries CB Nike IntermediateCo Ltd.,co_530620a36736,Other,Media & Entertainment,,,,,,2025-10-31,,,,,,,,,BCSF,2023-11-06

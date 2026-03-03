@@ -22,34 +22,52 @@ function decodeHtmlEntities(s: string): string {
  * Normalize investment type strings to a small set of standard categories.
  * Uses keyword cascade — first match wins.
  */
+/**
+ * Canonical investment types (aligned with backend standardization_rules.py):
+ *   First Lien, Second Lien, Delayed Draw, Revolver,
+ *   Subordinated Debt, Unsecured Debt, Preferred Equity, Common Equity,
+ *   Partnership Interest, Warrants, Other Equity, Other Debt
+ */
 export function normalizeInvestmentType(raw: string | undefined | null): string {
   if (!raw || !raw.trim()) return '';
   const s = raw.trim();
   const lower = s.toLowerCase();
 
-  // Revolver first (before first lien, since revolvers can be first lien)
+  // Delayed draw (before first lien — DDTLs are often first lien)
+  if (lower.includes('delayed draw') || lower.includes('ddtl')) return 'Delayed Draw';
+
+  // Revolver (before first lien, since revolvers can be first lien)
   if (lower.includes('revolver') || lower.includes('revolving')) return 'Revolver';
 
   // Second lien / last-out before first lien
   if (lower.includes('second lien') || lower.includes('2nd lien') || lower.includes('last-out')) return 'Second Lien';
 
+  // First lien / senior secured (after revolver and second lien checks)
+  if (lower.includes('first lien') || lower.includes('1st lien') || lower.includes('senior secured') || lower.includes('unitranche') || lower.includes('term loan')) return 'First Lien';
+
   // Subordinated / mezzanine
-  if (lower.includes('subordinat') || lower.includes('mezzanine') || lower.includes('junior')) return 'Subordinated';
+  if (lower.includes('subordinat') || lower.includes('mezzanine')) return 'Subordinated Debt';
 
   // Unsecured
-  if (lower.includes('unsecured')) return 'Unsecured';
-
-  // First lien / senior secured (after revolver and second lien checks)
-  if (lower.includes('first lien') || lower.includes('senior secured') || lower.includes('unitranche') || lower.includes('term loan')) return 'First Lien';
+  if (lower.includes('unsecured')) return 'Unsecured Debt';
 
   // Warrant
-  if (lower.includes('warrant')) return 'Warrant';
+  if (lower.includes('warrant')) return 'Warrants';
 
   // Preferred equity (must check before generic equity)
   if (lower.includes('preferred') && (lower.includes('equity') || lower.includes('stock') || lower.includes('share') || lower.includes('unit'))) return 'Preferred Equity';
 
-  // Equity
-  if (lower.includes('equity') || lower.includes('stock') || lower.includes('lp interest') || lower.includes('member') || lower.includes('ownership') || lower.includes('partnership')) return 'Equity';
+  // Common equity
+  if (lower.includes('common') && (lower.includes('equity') || lower.includes('stock') || lower.includes('share') || lower.includes('unit'))) return 'Common Equity';
+
+  // Partnership / membership interest
+  if (lower.includes('partnership') || lower.includes('member interest') || lower.includes('lp interest')) return 'Partnership Interest';
+
+  // Generic equity fallback
+  if (lower.includes('equity') || lower.includes('stock') || lower.includes('share') || lower.includes('ownership')) return 'Other Equity';
+
+  // Generic debt fallback
+  if (lower.includes('debt') || lower.includes('loan') || lower.includes('note') || lower.includes('bond')) return 'Other Debt';
 
   return s;
 }

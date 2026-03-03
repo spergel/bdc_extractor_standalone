@@ -9,8 +9,10 @@ and text extraction with proper rate limiting and error handling.
 
 import os
 import logging
+import time
 import requests
 from bs4 import BeautifulSoup
+from pathlib import Path
 from typing import Dict, Any, Optional, List, Union
 from datetime import date, datetime, timedelta
 import re
@@ -18,10 +20,47 @@ import json
 from dataclasses import dataclass
 from urllib.parse import urljoin
 
+# Default path for local company tickers cache (repo root / data / company_tickers.json)
+def _default_company_tickers_path() -> Path:
+    return Path(__file__).resolve().parent.parent.parent / "data" / "company_tickers.json"
+
 logger = logging.getLogger(__name__)
 
 # Request timeout in seconds - prevents indefinite hangs on slow SEC responses
 REQUEST_TIMEOUT = 90
+
+# Retry configuration for transient SEC errors (503, timeouts, connection drops)
+_RETRY_STATUS_CODES = {429, 503, 504}
+_RETRY_ATTEMPTS = 4          # total attempts (initial + 3 retries)
+_RETRY_BACKOFF_BASE = 5.0    # seconds; doubles each retry: 5, 10, 20
+
+
+def _sec_get(url: str, headers: dict, timeout: int = REQUEST_TIMEOUT) -> requests.Response:
+    """
+    GET a URL with automatic retry on transient SEC errors (503/429/504/timeout).
+    Raises the last exception if all retries are exhausted.
+    """
+    last_exc: Exception = RuntimeError('No attempt made')
+    for attempt in range(_RETRY_ATTEMPTS):
+        try:
+            resp = requests.get(url, headers=headers, timeout=timeout)
+            if resp.status_code in _RETRY_STATUS_CODES:
+                wait = _RETRY_BACKOFF_BASE * (2 ** attempt)
+                logger.warning('SEC returned %s for %s; retrying in %.0fs (attempt %d/%d)',
+                               resp.status_code, url, wait, attempt + 1, _RETRY_ATTEMPTS)
+                time.sleep(wait)
+                last_exc = requests.exceptions.HTTPError(
+                    f'{resp.status_code} Server Error', response=resp)
+                continue
+            return resp
+        except (requests.exceptions.Timeout,
+                requests.exceptions.ConnectionError) as exc:
+            wait = _RETRY_BACKOFF_BASE * (2 ** attempt)
+            logger.warning('SEC request failed (%s) for %s; retrying in %.0fs (attempt %d/%d)',
+                           type(exc).__name__, url, wait, attempt + 1, _RETRY_ATTEMPTS)
+            time.sleep(wait)
+            last_exc = exc
+    raise last_exc
 
 @dataclass
 class FilingDocument:
@@ -44,6 +83,22 @@ class FilingResult:
     metadata: Dict[str, Any] = None
     text_map: Dict[str, str] = None  # Added: map of filename to text content
     period_end_date: Optional[str] = None  # Added: report/period end date (e.g., "2025-06-30")
+
+
+def _is_main_filing_document(doc: FilingDocument, filing_type: str) -> bool:
+    """Return True if doc is the main filing (e.g. 10-Q/10-K), not an exhibit .htm."""
+    fn = doc.filename.lower()
+    # Exhibit files are typically named ex231.htm, ex311.htm, ex99.htm, etc.
+    if re.search(r'ex\d{2,}', fn):
+        return False
+    # Main document has exhibit_type matching the form (10-Q, 10-K, etc.)
+    et = (doc.exhibit_type or "").strip().upper()
+    main_forms = ['10-Q', '10-K', '10-Q/A', '10-K/A', '8-K', '20-F', '40-F']
+    if et in main_forms:
+        return True
+    # If filename has no exhibit pattern, treat as main (e.g. cswc-20251231.htm)
+    return True
+
 
 class SECAPIClient:
     """
@@ -68,59 +123,94 @@ class SECAPIClient:
         '13F-HR': 'Institutional Investment Manager Holdings'
     }
     
-    def __init__(self, 
+    # Manual overrides for tickers missing from SEC feed or recently renamed
+    COMPANY_TICKERS_OVERRIDES = {
+        'LRFC': {
+            'ticker': 'LRFC',
+            'cik_str': 1278752,
+            'title': 'Logan Ridge Finance Corp',
+        },
+    }
+
+    def __init__(self,
                  data_dir: str = "data",
                  user_agent: str = None,
-                 rate_limit_delay: float = 0.1):
+                 rate_limit_delay: float = 0.1,
+                 company_tickers_path: Optional[Union[str, Path]] = None):
         """
         Initialize the SEC API client.
-        
+
         Args:
             data_dir: Directory to store downloaded filings
             user_agent: Custom user agent string (required by SEC)
             rate_limit_delay: Delay between requests in seconds
+            company_tickers_path: Path to local company_tickers.json. If set, load from
+                here first; if file missing, download from SEC and save here. Default:
+                repo data/company_tickers.json. Set to False to disable local cache.
         """
         self.data_dir = data_dir
         self.rate_limit_delay = rate_limit_delay
         os.makedirs(data_dir, exist_ok=True)
-        
+
+        if company_tickers_path is False:
+            self._company_tickers_path = None
+        else:
+            self._company_tickers_path = Path(company_tickers_path) if company_tickers_path else _default_company_tickers_path()
+
         # Set user agent - SEC requires this
         if user_agent is None:
             user_agent = "SEC-API-Client/1.0 (your-email@domain.com)"
         self.headers = {'User-Agent': user_agent}
-        
-        # Load company data
+
+        # Load company data (local first, then download if needed)
         self._company_tickers = self._load_company_tickers()
 
+    def _company_data_to_ticker_map(self, company_data: Dict[str, Any]) -> Dict[str, Any]:
+        """Build ticker -> info map from SEC-style company_data (keys 0,1,2... or cik keys)."""
+        ticker_map: Dict[str, Any] = {}
+        for _key, data in company_data.items():
+            if isinstance(data, dict) and data.get('ticker'):
+                ticker_map[data['ticker']] = data
+        for ticker, info in self.COMPANY_TICKERS_OVERRIDES.items():
+            ticker_map[ticker] = info
+        return ticker_map
+
     def _load_company_tickers(self) -> Dict[str, Any]:
-        """Load the SEC's company ticker to CIK mapping."""
+        """Load company ticker -> CIK mapping. Prefer local file; download and cache if missing."""
+        manual_overrides = self.COMPANY_TICKERS_OVERRIDES
+
+        # 1) Try local file first (if we have a cache path)
+        if self._company_tickers_path and self._company_tickers_path.exists():
+            try:
+                with open(self._company_tickers_path, 'r', encoding='utf-8') as f:
+                    company_data = json.load(f)
+                ticker_map = self._company_data_to_ticker_map(company_data)
+                if ticker_map:
+                    logger.info(f"Loaded {len(ticker_map)} companies from local {self._company_tickers_path}")
+                    return ticker_map
+            except Exception as e:
+                logger.warning(f"Could not load local company tickers from {self._company_tickers_path}: {e}")
+
+        # 2) Download from SEC
         url = "https://www.sec.gov/files/company_tickers.json"
         logger.info(f"Loading company tickers from {url}")
-        
         try:
-            response = requests.get(url, headers=self.headers)
+            response = requests.get(url, headers=self.headers, timeout=REQUEST_TIMEOUT)
             response.raise_for_status()
             company_data = response.json()
-            
-            # Create ticker map for easy lookup
-            ticker_map: Dict[str, Any] = {}
-            for cik, data in company_data.items():
-                ticker_map[data['ticker']] = data
 
-            # Manual overrides for tickers missing from SEC feed or recently renamed
-            manual_overrides = {
-                'LRFC': {
-                    'ticker': 'LRFC',
-                    'cik_str': int('0001278752'),
-                    'title': 'Logan Ridge Finance Corp',
-                },
-            }
-            for ticker, info in manual_overrides.items():
-                ticker_map[ticker] = info
-            
+            ticker_map = self._company_data_to_ticker_map(company_data)
+
+            # Save to local cache for next time
+            if self._company_tickers_path and ticker_map:
+                self._company_tickers_path.parent.mkdir(parents=True, exist_ok=True)
+                with open(self._company_tickers_path, 'w', encoding='utf-8') as f:
+                    json.dump(company_data, f, indent=0)
+                logger.info(f"Saved company tickers to {self._company_tickers_path}")
+
             logger.info(f"Loaded {len(ticker_map)} companies (with overrides)")
             return ticker_map
-            
+
         except Exception as e:
             logger.error(f"Failed to load company tickers: {e}")
             return {}
@@ -381,7 +471,7 @@ class SECAPIClient:
             return []
             
         try:
-            response = requests.get(index_url, headers=self.headers)
+            response = _sec_get(index_url, headers=self.headers)
             response.raise_for_status()
             soup = BeautifulSoup(response.content, 'html.parser')
             
@@ -627,9 +717,9 @@ class SECAPIClient:
             for doc in documents:
                 try:
                     logger.info(f"Fetching document: {doc.filename}")
-                    response = requests.get(doc.url, headers=self.headers)
+                    response = _sec_get(doc.url, headers=self.headers)
                     response.raise_for_status()
-                    
+
                     # Add document separator
                     label = doc.filename
                     if doc.exhibit_type:
@@ -717,7 +807,7 @@ class SECAPIClient:
             filing_date = date.today().isoformat()  # Default fallback
             try:
                 # Fetch the index page to extract filing date
-                index_response = requests.get(index_url, headers=self.headers)
+                index_response = _sec_get(index_url, headers=self.headers)
                 index_response.raise_for_status()
                 index_soup = BeautifulSoup(index_response.content, 'html.parser')
                 
@@ -1036,14 +1126,21 @@ class SECAPIClient:
                     
                     accession = recent_filings['accessionNumber'][i]
                     accession_no_hyphens = accession.replace('-', '')
+                    index_url = f"https://www.sec.gov/Archives/edgar/data/{cik}/{accession_no_hyphens}/{accession}-index.html"
+                    report_date_str = recent_filings.get('reportDate', [None])[i]
+                    period_end_date = report_date_str if report_date_str else None
+                    if not hasattr(self, '_cached_period_date'):
+                        self._cached_period_date = {}
+                    if period_end_date:
+                        self._cached_period_date[index_url] = period_end_date
                     
                     filing_info = {
                         'form': form,
                         'date': filing_date_str,
                         'accession': accession,
                         'description': recent_filings['primaryDocument'][i],
-                        'index_url': f"https://www.sec.gov/Archives/edgar/data/{cik}/{accession_no_hyphens}/{accession}-index.html",
-                        'period_end_date': None  # Will be extracted from filing if available
+                        'index_url': index_url,
+                        'period_end_date': period_end_date,
                     }
                     filings_10q.append(filing_info)
             
@@ -1097,13 +1194,20 @@ class SECAPIClient:
                         continue
                     accession = recent_filings['accessionNumber'][i]
                     accession_no_hyphens = accession.replace('-', '')
+                    index_url = f"https://www.sec.gov/Archives/edgar/data/{cik}/{accession_no_hyphens}/{accession}-index.html"
+                    report_date_str = recent_filings.get('reportDate', [None])[i]
+                    period_end_date = report_date_str if report_date_str else None
+                    if not hasattr(self, '_cached_period_date'):
+                        self._cached_period_date = {}
+                    if period_end_date:
+                        self._cached_period_date[index_url] = period_end_date
                     filing_info = {
                         'form': form,
                         'date': filing_date_str,
                         'accession': accession,
                         'description': recent_filings['primaryDocument'][i],
-                        'index_url': f"https://www.sec.gov/Archives/edgar/data/{cik}/{accession_no_hyphens}/{accession}-index.html",
-                        'period_end_date': None,
+                        'index_url': index_url,
+                        'period_end_date': period_end_date,
                     }
                     filings_10k.append(filing_info)
             logger.info(f"Found {len(filings_10k)} 10-K filings for {ticker} between {start_datetime.date()} and {end_datetime.date()}")
@@ -1184,7 +1288,8 @@ class SECAPIClient:
 
     def fetch_filing_by_index_url(self, index_url: str, ticker: str, filing_type: str,
                                   save_to_file: bool = True,
-                                  document_types: Optional[List[str]] = None) -> Optional[FilingResult]:
+                                  document_types: Optional[List[str]] = None,
+                                  main_document_only: bool = False) -> Optional[FilingResult]:
         """
         Fetch a filing given a specific index URL, avoiding extra lookups.
         
@@ -1194,6 +1299,7 @@ class SECAPIClient:
             filing_type: Type of filing
             save_to_file: Whether to save to local storage
             document_types: Optional list of extensions to include (e.g. ['.htm', '.xml'])
+            main_document_only: If True, fetch only the main filing document (exclude exhibit .htm files).
         """
         try:
             documents = self.get_documents_from_index(index_url)
@@ -1212,14 +1318,26 @@ class SECAPIClient:
                     logger.warning(f"No documents matching {document_types} found in {index_url}")
                     return None
 
+            # Optionally keep only the main filing document (exclude exhibit .htm files)
+            if main_document_only and documents:
+                main_docs = [
+                    d for d in documents
+                    if _is_main_filing_document(d, filing_type)
+                ]
+                if main_docs:
+                    documents = main_docs
+                    logger.info(f"Using main document only: {[d.filename for d in documents]}")
+                else:
+                    logger.warning("No main document found; using first document")
+
             full_text = ""
             text_map = {}
             for doc in documents:
                 try:
                     logger.info(f"Fetching document: {doc.filename}")
-                    response = requests.get(doc.url, headers=self.headers, timeout=REQUEST_TIMEOUT)
+                    response = _sec_get(doc.url, headers=self.headers)
                     response.raise_for_status()
-                    
+
                     # Store original text content
                     doc_text = response.text
                     text_map[doc.filename] = doc_text
@@ -1294,7 +1412,7 @@ class SECAPIClient:
             # not the day of scraping.
             filing_date = date.today().isoformat()  # Default fallback
             try:
-                index_response = requests.get(index_url, headers=self.headers, timeout=REQUEST_TIMEOUT)
+                index_response = _sec_get(index_url, headers=self.headers)
                 index_response.raise_for_status()
                 index_soup = BeautifulSoup(index_response.content, 'html.parser')
 
@@ -1460,7 +1578,7 @@ class SECAPIClient:
             if doc.filename.endswith('.xml') or any(doc.filename.endswith(ext) for ext in ['.jpg', '.jpeg', '.png', '.gif']):
                 continue
             try:
-                response = requests.get(doc.url, headers=self.headers)
+                response = _sec_get(doc.url, headers=self.headers)
                 response.raise_for_status()
                 # Save to temp_filings with a clear filename
                 ext = '.htm' if doc.filename.endswith('.htm') else '.txt'

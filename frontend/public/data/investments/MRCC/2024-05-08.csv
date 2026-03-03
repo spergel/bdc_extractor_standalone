@@ -1,281 +1,376 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,data_quality_flags,ticker,filing_date
-HALO Buyer Inc.,co_3dc4ab81bc2a,First Lien,Other,9.96%,,SOFR,4.60%,,2025-06-30,4723,4723,3570,,,4723,,,MRCC,2024-05-08
-Elevate Textiles Inc.,co_963e5a8804b1,Common Equity,Consumer Products,,,,,N/A,,,26,26,,,,26,,MRCC,2024-05-08
-Elevate Textiles Inc.,co_963e5a8804b1,Common Equity,Consumer Products,,,N/A,,,26,26,83,,0.26,,,,,MRCC,2024-05-08
-Output Services Group Inc.,co_05105daaeb2b,Common Equity,Business Services,,,,,N/A,,,51,51,,,,51,,MRCC,2024-05-08
-Output Services Group Inc.,co_05105daaeb2b,Common Equity,Business Services,,,N/A,,,51,51,552,,,,,,,MRCC,2024-05-08
-Born To Run LLC,co_7434140a1cd2,First Lien,Automotive,11.64%,,SOFR,6.26%,2021-04-01,2027-04-01,3430,,,0.013,,,,,MRCC,2024-05-08
-Born To Run LLC,co_7434140a1cd2,First Lien,Automotive,11.64%,,SOFR,6.26%,2021-04-01,2027-04-01,467,467,349,0.002,467,,,,MRCC,2024-05-08
-Born To Run LLC,co_7434140a1cd2,First Lien,Automotive,11.57%,,SOFR,6.26%,2021-04-01,2027-04-01,3430,,,0.009,,,,,MRCC,2024-05-08
-Born To Run LLC,co_7434140a1cd2,First Lien,Automotive,11.57%,,SOFR,6.26%,2021-04-01,2027-04-01,467,467,239,0.001,,,,,MRCC,2024-05-08
-Hastings Manufacturing Company,co_a8dd264e5479,First Lien,Automotive,12.96%,,SOFR,7.60%,2018-04-24,2025-12-31,1850,1850,1850,0.009,1850,,,,MRCC,2024-05-08
-Hastings Manufacturing Company,co_a8dd264e5479,First Lien,Automotive,12.96%,,SOFR,7.60%,2023-03-29,2025-12-31,664,664,664,0.003,664,,,,MRCC,2024-05-08
-Hastings Manufacturing Company,co_a8dd264e5479,First Lien,Automotive,12.96%,,SOFR,7.60%,2023-12-18,2025-12-31,2039,2019,2080,0.01,2019,,,,MRCC,2024-05-08
-Lifted Trucks Holdings LLC,co_f2037226ccf7,First Lien,Automotive,11.16%,,SOFR,5.85%,2021-08-02,2027-08-02,6860,6770,6682,0.033,6770,,,,MRCC,2024-05-08
-Lifted Trucks Holdings LLC,co_f2037226ccf7,First Lien,Automotive,11.18%,,SOFR,5.85%,2021-08-02,2027-08-02,6843,6759,6702,0.033,,,,,MRCC,2024-05-08
-Lifted Trucks Holdings LLC,co_f2037226ccf7,Revolver,Automotive,11.29%,,SOFR,5.90%,2021-08-02,2027-08-02,556,556,541,0.003,556,1667,1111,,MRCC,2024-05-08
-Lifted Trucks Holdings LLC,co_f2037226ccf7,Revolver,Automotive,11.25%,,SOFR,5.90%,2021-08-02,2027-08-02,1667,889,871,0.005,,,,,MRCC,2024-05-08
-Trident Maritime Systems Inc.,co_53cdbd7574ab,First Lien,Aerospace & Defense,10.96%,,SOFR,5.65%,,2027-02-26,2406,,,,,,,,MRCC,2024-05-08
+Born To Run LLC,co_7434140a1cd2,First Lien,Automotive,11.57%,,SOFR,6.26%,,2027-04-01,3430,3387,1752,0.9%,3387,,,,MRCC,2024-05-08
+Born To Run LLC,co_7434140a1cd2,First Lien,Automotive,11.57%,,SOFR,6.26%,,2027-04-01,467,467,239,0.1%,467,,,,MRCC,2024-05-08
+Hastings Manufacturing Company,co_a8dd264e5479,First Lien,Automotive,12.93%,,SOFR,7.6%,,2025-12-30,1843,1843,1843,0.9%,1843,,,,MRCC,2024-05-08
+Hastings Manufacturing Company,co_a8dd264e5479,First Lien,Automotive,12.93%,,SOFR,7.6%,,2025-12-30,662,662,662,0.3%,662,,,,MRCC,2024-05-08
+Hastings Manufacturing Company,co_a8dd264e5479,First Lien,Automotive,12.93%,,SOFR,7.6%,,2025-12-30,2034,2019,2075,1%,2019,,,,MRCC,2024-05-08
+Hastings Manufacturing Company,co_a8dd264e5479,First Lien,Automotive,12.93%,,SOFR,7.6%,,2025-12-31,691,0,0,0%,0,,,,MRCC,2024-05-08
+Lifted Trucks Holdings LLC,co_f2037226ccf7,First Lien,Automotive,11.18%,,SOFR,5.85%,,2027-08-02,6843,6759,6702,3.3%,6759,,,,MRCC,2024-05-08
+Lifted Trucks Holdings LLC,co_f2037226ccf7,First Lien,Automotive,11.25%,,SOFR,5.9%,,2027-08-02,1667,889,871,0.5%,889,,,,MRCC,2024-05-08
+Panda Acquisition LLC,co_cf6870613bd0,First Lien,Automotive,11.66%,,SOFR,6.35%,,2028-10-18,4359,3689,3716,1.9%,3689,,,,MRCC,2024-05-08
+MV Receivables II LLC,co_662dd9b092bf,First Lien,Financial Services,15.08%,,SOFR,9.75%,,2026-07-29,8100,7737,7477,3.7%,7737,,,,MRCC,2024-05-08
+StarCompliance MidCo LLC,co_56f83d8da8f8,First Lien,Financial Services,11.65%,,SOFR,6.35%,,2027-01-12,2000,1979,1998,1%,1979,,,,MRCC,2024-05-08
+StarCompliance MidCo LLC,co_56f83d8da8f8,First Lien,Financial Services,11.65%,,SOFR,6.35%,,2027-01-12,335,331,335,0.2%,331,,,,MRCC,2024-05-08
+StarCompliance MidCo LLC,co_56f83d8da8f8,First Lien,Financial Services,11.65%,,SOFR,6.35%,,2027-01-12,256,251,256,0.1%,251,,,,MRCC,2024-05-08
+StarCompliance MidCo LLC,co_56f83d8da8f8,First Lien,Financial Services,11.65%,,SOFR,6.35%,,2027-01-12,323,223,222,0.1%,223,,,,MRCC,2024-05-08
+LVF Holdings Inc.,co_0ab86168a7a0,First Lien,Food & Beverage,11.21%,,SOFR,5.9%,,2027-06-10,1463,1445,1463,0.7%,1445,,,,MRCC,2024-05-08
+LVF Holdings Inc.,co_0ab86168a7a0,First Lien,Food & Beverage,11.21%,,SOFR,5.9%,,2027-06-10,1400,1400,1400,0.7%,1400,,,,MRCC,2024-05-08
+LVF Holdings Inc.,co_0ab86168a7a0,First Lien,Food & Beverage,11.21%,,SOFR,5.9%,,2027-06-10,238,0,0,0%,0,,,,MRCC,2024-05-08
+CGI Automated Manufacturing LLC,co_12d0548909dc,First Lien,Industrials,12.56%,,SOFR,7.26%,,2026-12-17,3850,3770,3826,1.9%,3770,,,,MRCC,2024-05-08
+CGI Automated Manufacturing LLC,co_12d0548909dc,First Lien,Industrials,12.56%,,SOFR,7.26%,,2026-12-17,1105,1085,1098,0.5%,1085,,,,MRCC,2024-05-08
+Valudor Products LLC,co_351ea9689119,First Lien,Chemicals & Materials,11.44%,1.5%,SOFR,7.61%,,2024-12-31,1587,1587,1822,0.9%,1587,,,,MRCC,2024-05-08
+Valudor Products LLC,co_351ea9689119,First Lien,Chemicals & Materials,,12.94%,SOFR,7.5%,,2024-12-31,305,305,291,0.1%,305,,,,MRCC,2024-05-08
+Valudor Products LLC,co_351ea9689119,First Lien,Chemicals & Materials,12.94%,,SOFR,7.61%,,2024-12-31,502,502,1358,0.7%,502,,,,MRCC,2024-05-08
+Valudor Products LLC,co_351ea9689119,First Lien,Chemicals & Materials,12.94%,,SOFR,7.61%,,2024-12-31,1095,55,54,0%,55,,,fair_value_suspicious_vs_size,MRCC,2024-05-08
+MEI Buyer LLC,co_a2bda52004f7,First Lien,Industrials,11.83%,,SOFR,6.5%,,2029-06-29,1990,1936,2010,1%,1936,,,,MRCC,2024-05-08
+MEI Buyer LLC,co_a2bda52004f7,First Lien,Industrials,10.58%,,SOFR,5.25%,,2029-06-30,1114,1104,1114,0.6%,1104,,,,MRCC,2024-05-08
+MEI Buyer LLC,co_a2bda52004f7,First Lien,Industrials,11.83%,,SOFR,6.5%,,2029-06-29,317,0,0,0%,0,,,,MRCC,2024-05-08
+MEI Buyer LLC,co_a2bda52004f7,First Lien,Industrials,11.83%,,SOFR,6.5%,,2029-06-29,410,0,0,0%,0,,,,MRCC,2024-05-08
+TCFIII OWL Buyer LLC,co_0574a91f2fb5,First Lien,Industrials,10.94%,,SOFR,5.61%,,2026-04-17,1994,1977,1994,1%,1977,,,,MRCC,2024-05-08
+TCFIII OWL Buyer LLC,co_0574a91f2fb5,First Lien,Industrials,10.94%,,SOFR,5.61%,,2026-04-17,2434,2434,2434,1.2%,2434,,,,MRCC,2024-05-08
+TCFIII OWL Buyer LLC,co_0574a91f2fb5,First Lien,Industrials,10.94%,,SOFR,5.61%,,2026-04-17,2185,2165,2185,1.1%,2165,,,,MRCC,2024-05-08
+Independence Buyer Inc.,co_a5402fb44dd3,First Lien,Consumer & Retail,11.21%,,SOFR,5.9%,,2026-08-03,5345,5290,5251,2.6%,5290,,,,MRCC,2024-05-08
+Independence Buyer Inc.,co_a5402fb44dd3,First Lien,Consumer & Retail,11.21%,,SOFR,5.9%,,2026-08-03,1423,0,0,0%,0,,,,MRCC,2024-05-08
+Recycled Plastics Industries LLC,co_36ccad8335bd,First Lien,Consumer & Retail,12.18%,0.75%,SOFR,7.6%,,2026-08-04,2808,2778,2787,1.4%,2778,,,,MRCC,2024-05-08
+Recycled Plastics Industries LLC,co_36ccad8335bd,First Lien,Consumer & Retail,12.18%,0.75%,SOFR,7.6%,,2026-08-04,284,0,0,0%,0,,,,MRCC,2024-05-08
+The Kyjen Company LLC,co_63100d10b621,First Lien,Consumer & Retail,12.06%,1%,SOFR,7.75%,,2026-04-03,988,982,982,0.5%,982,,,,MRCC,2024-05-08
+The Kyjen Company LLC,co_63100d10b621,First Lien,Consumer & Retail,,12.96%,SOFR,7.5%,,2026-04-03,1,1,1,0%,1,,,,MRCC,2024-05-08
+The Kyjen Company LLC,co_63100d10b621,First Lien,Consumer & Retail,12.06%,1%,SOFR,7.75%,,2026-04-03,105,0,0,0%,0,,,,MRCC,2024-05-08
+Thrasio LLC,co_8e7941ae97b3,First Lien,Consumer & Retail,13.44%,,SOFR,8.11%,,2024-07-01,348,132,135,0.1%,132,,,,MRCC,2024-05-08
+Quest Resource Management Group LLC,co_f31abebb69f6,First Lien,Environmental Services,12.44%,,SOFR,7.11%,,2026-10-19,849,793,854,0.4%,793,,,,MRCC,2024-05-08
+Quest Resource Management Group LLC,co_f31abebb69f6,First Lien,Environmental Services,12.44%,,SOFR,7.11%,,2026-10-19,933,933,938,0.5%,933,,,,MRCC,2024-05-08
+Quest Resource Management Group LLC,co_f31abebb69f6,First Lien,Environmental Services,12.44%,,SOFR,7.11%,,2026-10-19,3316,3285,3316,1.6%,3285,,,,MRCC,2024-05-08
+Quest Resource Management Group LLC,co_f31abebb69f6,First Lien,Environmental Services,12.44%,,SOFR,7.11%,,2026-10-19,334,334,334,0.2%,334,,,,MRCC,2024-05-08
+Avalara Inc.,co_f4850d26fe6f,First Lien,Financial Services,12.56%,,SOFR,7.25%,,2028-10-19,4000,3918,4038,2%,3918,,,,MRCC,2024-05-08
+Avalara Inc.,co_f4850d26fe6f,First Lien,Financial Services,12.56%,,SOFR,7.25%,,2028-10-19,400,0,0,0%,0,,,,MRCC,2024-05-08
+GC Champion Acquisition LLC,co_413cdab0d6c4,First Lien,Financial Services,11.71%,,SOFR,6.25%,,2028-08-18,2522,2482,2544,1.3%,2482,,,,MRCC,2024-05-08
+GC Champion Acquisition LLC,co_413cdab0d6c4,First Lien,Financial Services,11.71%,,SOFR,6.25%,,2028-08-18,701,701,707,0.4%,701,,,,MRCC,2024-05-08
+GC Champion Acquisition LLC,co_413cdab0d6c4,First Lien,Financial Services,11.96%,,SOFR,6.5%,,2028-08-18,2102,2044,2136,1.1%,2044,,,,MRCC,2024-05-08
+J2 BWA Funding LLC,co_ef9b78412ff9,First Lien,Financial Services,10%,,,,,2026-12-24,2750,1623,1623,0.8%,1623,,,,MRCC,2024-05-08
+Liftforward SPV II LLC,co_4c956e449355,First Lien,Financial Services,,16.19%,SOFR,10.86%,,2024-09-30,263,263,237,0.1%,263,,,,MRCC,2024-05-08
+W3 Monroe RE Debt LLC,co_9bf25c729ca8,First Lien,Financial Services,,10%,,,,2028-02-04,3631,3631,3713,1.8%,3631,,,,MRCC,2024-05-08
+W3 Monroe RE Debt LLC,co_9bf25c729ca8,Delayed Draw,Financial Services,,10%,,,,,274,226,231,0.1%,226,,,,MRCC,2024-05-08
+Centaur (Palm Beach) Owner LLC,co_b6590e28d7e9,First Lien,Real Estate,13.57%,,SOFR,8.25%,,2025-04-30,2784,2761,2805,1.4%,2761,,,,MRCC,2024-05-08
+Centaur (Palm Beach) Owner LLC,co_b6590e28d7e9,First Lien,Real Estate,13.57%,,SOFR,8.25%,,2025-04-30,285,285,287,0.2%,285,,,,MRCC,2024-05-08
+Centaur (Palm Beach) Owner LLC,co_b6590e28d7e9,First Lien,Real Estate,13.57%,,SOFR,8.25%,,2027-04-30,837,474,478,0.2%,474,,,,MRCC,2024-05-08
+Centaur (Palm Beach) Owner LLC,co_b6590e28d7e9,First Lien,Real Estate,13.58%,,SOFR,8.25%,,2025-04-30,1395,656,656,0.3%,656,,,,MRCC,2024-05-08
+Bluesight Inc.,co_bc9dbc3292ea,First Lien,Healthcare,12.55%,,SOFR,7.25%,,2029-07-17,2000,1945,1998,1%,1945,,,,MRCC,2024-05-08
+Bluesight Inc.,co_bc9dbc3292ea,First Lien,Healthcare,12.55%,,SOFR,7.25%,,2029-07-17,174,0,0,0%,0,,,,MRCC,2024-05-08
+Brickell Bay Acquisition Corp.,co_3984b522e3a7,First Lien,Healthcare,11.98%,,SOFR,6.65%,,2026-02-12,1856,1833,1856,0.9%,1833,,,,MRCC,2024-05-08
+Caravel Autism Health LLC,co_8dfdd4d66957,First Lien,Healthcare,11.09%,,SOFR,5.76%,,2027-06-30,4999,4937,4999,2.5%,4937,,,,MRCC,2024-05-08
+Caravel Autism Health LLC,co_8dfdd4d66957,First Lien,Healthcare,11.09%,,,,,2027-06-30,1389,1389,1389,0.7%,1389,,,,MRCC,2024-05-08
+Caravel Autism Health LLC,co_8dfdd4d66957,First Lien,Healthcare,11.09%,,,,,2027-06-30,1269,244,244,0.1%,244,,,,MRCC,2024-05-08
+Dorado Acquisition Inc.,co_5f5c69f4154a,First Lien,Healthcare,12.18%,,SOFR,6.85%,,2026-06-30,4875,4824,4756,2.4%,4824,,,,MRCC,2024-05-08
+Dorado Acquisition Inc.,co_5f5c69f4154a,First Lien,Healthcare,12.23%,,SOFR,6.9%,,2026-06-30,4041,3972,3942,2%,3972,,,,MRCC,2024-05-08
+Dorado Acquisition Inc.,co_5f5c69f4154a,First Lien,Healthcare,12.18%,,SOFR,6.85%,,2026-06-30,596,0,0,0%,0,,,,MRCC,2024-05-08
+Forest Buyer LLC,co_971891319115,First Lien,Healthcare,11.07%,,SOFR,5.75%,,2030-03-15,4000,3866,3900,1.9%,3866,,,,MRCC,2024-05-08
+Forest Buyer LLC,co_971891319115,First Lien,Healthcare,11.07%,,SOFR,5.75%,,2030-03-15,1250,0,0,0%,0,,,,MRCC,2024-05-08
+Forest Buyer LLC,co_971891319115,First Lien,Healthcare,11.07%,,SOFR,5.75%,,2030-03-15,750,0,0,0%,0,,,,MRCC,2024-05-08
+INH Buyer Inc.,co_3e1130cb1b6a,First Lien,Healthcare,8.91%,3.5%,SOFR,7%,,2028-06-28,3026,3006,2309,1.1%,3006,,,,MRCC,2024-05-08
+KL Moon Acquisition LLC,co_eb3324f394e2,First Lien,Healthcare,12.31%,,SOFR,7%,,2029-02-01,4963,4838,4963,2.5%,4838,,,,MRCC,2024-05-08
+KL Moon Acquisition LLC,co_eb3324f394e2,First Lien,Healthcare,12.29%,,SOFR,7%,,2029-02-01,2128,2066,2128,1.1%,2066,,,,MRCC,2024-05-08
+KL Moon Acquisition LLC,co_eb3324f394e2,First Lien,Healthcare,12.31%,,SOFR,7%,,2029-02-01,1702,989,989,0.5%,989,,,,MRCC,2024-05-08
+KL Moon Acquisition LLC,co_eb3324f394e2,First Lien,Healthcare,12.33%,,SOFR,7%,,2029-02-01,813,461,461,0.2%,461,,,,MRCC,2024-05-08
+NationsBenefits LLC,co_163adf469b21,First Lien,Healthcare,12.43%,,SOFR,7.1%,,2027-08-26,3910,3867,3949,2%,3867,,,,MRCC,2024-05-08
+NationsBenefits LLC,co_163adf469b21,First Lien,Healthcare,12.43%,,SOFR,7.1%,,2027-08-26,4660,4660,4707,2.3%,4660,,,,MRCC,2024-05-08
+NationsBenefits LLC,co_163adf469b21,First Lien,Healthcare,12.43%,,SOFR,7.1%,,2027-08-26,5052,5052,5103,2.5%,5052,,,,MRCC,2024-05-08
+NationsBenefits LLC,co_163adf469b21,Revolver,Healthcare,12.43%,,SOFR,7.1%,,,2222,1556,1556,0.8%,1556,,,,MRCC,2024-05-08
+NQ PE Project Colosseum Midco Inc.,co_fdf0da051d55,First Lien,Healthcare,10.95%,,SOFR,5.65%,,2028-10-04,3456,3401,3491,1.7%,3401,,,,MRCC,2024-05-08
+NQ PE Project Colosseum Midco Inc.,co_fdf0da051d55,Delayed Draw,Healthcare,10.95%,,SOFR,5.65%,,,778,0,0,0%,0,,,,MRCC,2024-05-08
+NQ PE Project Colosseum Midco Inc.,co_fdf0da051d55,Revolver,Healthcare,10.95%,,SOFR,5.65%,,,438,0,0,0%,0,,,,MRCC,2024-05-08
+Seran BioScience LLC,co_ffa9b0a78296,First Lien,Healthcare,11.58%,,SOFR,6.25%,,,2425,2406,2425,1.2%,2406,,,,MRCC,2024-05-08
+Seran BioScience LLC,co_ffa9b0a78296,First Lien,Healthcare,11.54%,,SOFR,6.25%,,,2751,2751,2751,1.3%,2751,,,,MRCC,2024-05-08
+Seran BioScience LLC,co_ffa9b0a78296,First Lien,Healthcare,11.49%,,SOFR,6.25%,,,1444,1444,1444,0.7%,1444,,,,MRCC,2024-05-08
+Seran BioScience LLC,co_ffa9b0a78296,Revolver,Healthcare,11.58%,,SOFR,6.25%,,,444,0,0,0%,0,,,,MRCC,2024-05-08
+TigerConnect Inc.,co_b5bd0073c89c,First Lien,Healthcare,12.21%,,SOFR,6.9%,,,3000,2957,2951,1.5%,2957,,,,MRCC,2024-05-08
+TigerConnect Inc.,co_b5bd0073c89c,Delayed Draw,Healthcare,12.21%,,SOFR,6.9%,,,225,163,160,0.1%,163,,,,MRCC,2024-05-08
+TigerConnect Inc.,co_b5bd0073c89c,Revolver,Healthcare,12.21%,,SOFR,6.9%,,,429,0,0,0%,0,,,,MRCC,2024-05-08
+Vero Biotech Inc.,co_ff132af02ffa,First Lien,Healthcare,12.25%,,SOFR,3.75%,,,2500,2476,2500,1.2%,2476,,,,MRCC,2024-05-08
+Whistler Parent Holdings III Inc.,co_4db59f97efa9,First Lien,Healthcare,9.46%,4.75%,SOFR,8.9%,,,4609,4538,4414,2.2%,4538,,,,MRCC,2024-05-08
+Whistler Parent Holdings III Inc.,co_4db59f97efa9,First Lien,Healthcare,9.46%,4.75%,SOFR,8.9%,,,58,58,55,0%,58,,,,MRCC,2024-05-08
+Whistler Parent Holdings III Inc.,co_4db59f97efa9,Revolver,Healthcare,9.46%,4.75%,SOFR,8.9%,,,576,576,552,0.3%,576,,,,MRCC,2024-05-08
+Amelia Holding II LLC,co_43fb318cfdbe,First Lien,Software & Technology,14.56%,1%,SOFR,10.26%,,,2026,1978,2036,1%,1978,,,,MRCC,2024-05-08
+Amelia Holding II LLC,co_43fb318cfdbe,First Lien,Software & Technology,14.56%,1%,SOFR,10.26%,,,669,669,672,0.3%,669,,,,MRCC,2024-05-08
+Amelia Holding II LLC,co_43fb318cfdbe,Revolver,Software & Technology,14.56%,1%,SOFR,10.26%,,,133,0,0,0%,0,,,,MRCC,2024-05-08
+Arcserve Cayman Opco LP,co_479594b4e88a,Delayed Draw,Software & Technology,,13.44%,SOFR,8.11%,,,551,149,331,0.2%,149,,,,MRCC,2024-05-08
+Drawbridge Partners LLC,co_0ce0f67d6940,First Lien,Software & Technology,12.05%,,SOFR,6.75%,,,3000,2952,3029,1.5%,2952,,,,MRCC,2024-05-08
+Drawbridge Partners LLC,co_0ce0f67d6940,Delayed Draw,Software & Technology,12.05%,,SOFR,6.75%,,,874,496,501,0.2%,496,,,,MRCC,2024-05-08
+Drawbridge Partners LLC,co_0ce0f67d6940,Revolver,Software & Technology,12.05%,,SOFR,6.75%,,,522,0,0,0%,0,,,,MRCC,2024-05-08
+Medallia Inc.,co_6264231460f8,First Lien,Software & Technology,7.91%,4%,SOFR,6.6%,,,2161,2130,2165,1.1%,2130,,,,MRCC,2024-05-08
+Mindbody Inc.,co_de47d452c881,First Lien,Software & Technology,12.46%,,SOFR,7.15%,,,6536,6514,6536,3.2%,6514,,,,MRCC,2024-05-08
+Mindbody Inc.,co_de47d452c881,First Lien,Software & Technology,12.46%,,SOFR,7.15%,,,207,207,207,0.1%,207,,,,MRCC,2024-05-08
+Mindbody Inc.,co_de47d452c881,Revolver,Software & Technology,12.46%,,SOFR,7.15%,,,667,0,0,0%,0,,,,MRCC,2024-05-08
+Planful Inc.,co_7f1b0316e6b6,First Lien,Software & Technology,12.09%,,SOFR,6.76%,,,9500,9500,9500,4.7%,9500,,,,MRCC,2024-05-08
+Planful Inc.,co_7f1b0316e6b6,First Lien,Software & Technology,12.09%,,SOFR,6.76%,,,530,526,530,0.3%,526,,,,MRCC,2024-05-08
+Planful Inc.,co_7f1b0316e6b6,First Lien,Software & Technology,12.09%,,SOFR,6.76%,,,1326,1326,1326,0.7%,1326,,,,MRCC,2024-05-08
+Planful Inc.,co_7f1b0316e6b6,First Lien,Software & Technology,12.09%,,SOFR,6.76%,,,884,884,884,0.4%,884,,,,MRCC,2024-05-08
+Planful Inc.,co_7f1b0316e6b6,First Lien,Software & Technology,12.09%,,SOFR,6.76%,,,707,691,707,0.4%,691,,,,MRCC,2024-05-08
+Planful Inc.,co_7f1b0316e6b6,Revolver,Software & Technology,11.81%,,SOFR,6.5%,,,1105,119,119,0.1%,119,,,,MRCC,2024-05-08
+Sparq Holdings Inc.,co_618f81314875,First Lien,Healthcare,11.43%,,SOFR,6.25%,,2029-06-15,993,965,1002,0.5%,965,,,,MRCC,2024-05-08
+Sparq Holdings Inc.,co_618f81314875,Delayed Draw,Software & Technology,11.56%,,SOFR,6.25%,,,222,56,56,0%,56,,,,MRCC,2024-05-08
+Sparq Holdings Inc.,co_618f81314875,Revolver,Software & Technology,11.56%,,SOFR,6.25%,,,205,0,0,0%,0,,,,MRCC,2024-05-08
+Destination Media Inc.,co_325a5e67cf9b,First Lien,Media & Entertainment,12.43%,,SOFR,7.25%,,2028-06-21,993,961,1012,0.5%,961,,,,MRCC,2024-05-08
+Destination Media Inc.,co_325a5e67cf9b,Delayed Draw,Media & Entertainment,12.45%,,SOFR,7.15%,,,500,61,62,0%,61,,,,MRCC,2024-05-08
+Destination Media Inc.,co_325a5e67cf9b,Revolver,Media & Entertainment,12.45%,,SOFR,7.15%,,,103,21,21,0%,21,,,,MRCC,2024-05-08
+North Haven USHC Acquisition Inc.,co_82ff1bc7b91c,First Lien,Media & Entertainment,11.91%,,SOFR,6.6%,,2025-10-30,2419,2401,2419,1.2%,2401,,,,MRCC,2024-05-08
+North Haven USHC Acquisition Inc.,co_82ff1bc7b91c,First Lien,Media & Entertainment,11.67%,,SOFR,6.35%,,2025-10-30,2559,2539,2559,1.3%,2539,,,,MRCC,2024-05-08
+North Haven USHC Acquisition Inc.,co_82ff1bc7b91c,First Lien,Media & Entertainment,11.91%,,SOFR,6.6%,,2025-10-30,701,701,701,0.3%,701,,,,MRCC,2024-05-08
+North Haven USHC Acquisition Inc.,co_82ff1bc7b91c,First Lien,Media & Entertainment,11.91%,,SOFR,6.6%,,2025-10-30,1416,1416,1416,0.7%,1416,,,,MRCC,2024-05-08
+North Haven USHC Acquisition Inc.,co_82ff1bc7b91c,Delayed Draw,Media & Entertainment,11.68%,,SOFR,6.35%,,,1055,357,357,0.2%,357,,,,MRCC,2024-05-08
+North Haven USHC Acquisition Inc.,co_82ff1bc7b91c,Revolver,Media & Entertainment,11.92%,,SOFR,6.6%,,,416,187,187,0.1%,187,,,,MRCC,2024-05-08
+Relevate Health Group LLC,co_cc2dc9d038dc,First Lien,Media & Entertainment,11.68%,,SOFR,6.35%,,2025-11-20,1455,1445,1440,0.7%,1445,,,,MRCC,2024-05-08
+Relevate Health Group LLC,co_cc2dc9d038dc,First Lien,Media & Entertainment,11.68%,,SOFR,6.35%,,2025-11-20,651,651,644,0.3%,651,,,,MRCC,2024-05-08
+Relevate Health Group LLC,co_cc2dc9d038dc,Revolver,Media & Entertainment,11.68%,,SOFR,6.35%,,,316,84,84,0%,84,,,,MRCC,2024-05-08
+Spherix Global Inc.,co_84475a9b5a25,First Lien,Media & Entertainment,11.69%,,SOFR,6.36%,,2026-12-22,946,936,916,0.5%,936,,,,MRCC,2024-05-08
+Spherix Global Inc.,co_84475a9b5a25,Revolver,Media & Entertainment,11.69%,,SOFR,6.36%,,,122,0,0,0%,0,,,,MRCC,2024-05-08
+XanEdu Publishing Inc.,co_7f994caadeda,First Lien,Media & Entertainment,11.94%,,SOFR,6.61%,,2025-01-28,4441,4420,4441,2.2%,4420,,,,MRCC,2024-05-08
+XanEdu Publishing Inc.,co_7f994caadeda,First Lien,Media & Entertainment,11.94%,,SOFR,6.61%,,2025-01-28,1765,1749,1769,0.9%,1749,,,,MRCC,2024-05-08
+XanEdu Publishing Inc.,co_7f994caadeda,Revolver,Media & Entertainment,11.94%,,SOFR,6.61%,,,742,0,0,0%,0,,,,MRCC,2024-05-08
+Vice Acquisition Holdco LLC,co_7130eb4e5962,First Lien,Media & Entertainment,,13.57%,SOFR,8%,,2028-01-31,238,216,422,0.2%,216,,,,MRCC,2024-05-08
+Attom Intermediate Holdco LLC,co_11b2ea7be5b7,First Lien,Media & Entertainment,12.19%,,SOFR,6.86%,,2025-07-03,1895,1886,1863,0.9%,1886,,,,MRCC,2024-05-08
+Attom Intermediate Holdco LLC,co_11b2ea7be5b7,First Lien,Media & Entertainment,12.19%,,SOFR,6.86%,,2025-07-03,462,462,454,0.2%,462,,,,MRCC,2024-05-08
+Attom Intermediate Holdco LLC,co_11b2ea7be5b7,First Lien,Media & Entertainment,12.19%,,SOFR,6.86%,,2025-07-03,273,269,268,0.1%,269,,,,MRCC,2024-05-08
+Attom Intermediate Holdco LLC,co_11b2ea7be5b7,First Lien,Media & Entertainment,12.19%,,SOFR,6.86%,,2025-07-03,786,786,773,0.4%,786,,,,MRCC,2024-05-08
+Attom Intermediate Holdco LLC,co_11b2ea7be5b7,First Lien,Media & Entertainment,12.19%,,SOFR,6.86%,,2025-07-03,397,391,390,0.2%,391,,,,MRCC,2024-05-08
+Attom Intermediate Holdco LLC,co_11b2ea7be5b7,First Lien,Media & Entertainment,12.19%,,SOFR,6.86%,,2025-07-03,320,320,315,0.2%,320,,,,MRCC,2024-05-08
+Bonterra LLC,co_0a6f2c5da18f,First Lien,Media & Entertainment,12.55%,,SOFR,7.25%,,2027-09-08,13437,13317,13252,6.6%,13317,,,,MRCC,2024-05-08
+Bonterra LLC,co_0a6f2c5da18f,First Lien,Media & Entertainment,,13.35%,SOFR,8%,,2027-09-08,2034,2009,2052,1%,2009,,,,MRCC,2024-05-08
+Bonterra LLC,co_0a6f2c5da18f,First Lien,Media & Entertainment,12.58%,,SOFR,7.25%,,2027-09-08,1069,556,548,0.3%,556,,,,MRCC,2024-05-08
+Chess.com LLC,co_cb0490d4a2aa,First Lien,Media & Entertainment,11.9%,,SOFR,6.6%,,2027-12-31,5880,5799,5865,2.9%,5799,,,,MRCC,2024-05-08
+Chess.com LLC,co_cb0490d4a2aa,First Lien,Media & Entertainment,11.9%,,SOFR,6.6%,,2027-12-31,652,0,0,0%,0,,,,MRCC,2024-05-08
+Crownpeak Technology Inc.,co_44590b8066d3,First Lien,Media & Entertainment,12.06%,,SOFR,6.75%,,2025-02-28,4000,4000,4000,2%,4000,,,,MRCC,2024-05-08
+Crownpeak Technology Inc.,co_44590b8066d3,First Lien,Media & Entertainment,12.22%,,SOFR,6.75%,,2025-02-28,1273,1263,1275,0.6%,1263,,,,MRCC,2024-05-08
+Crownpeak Technology Inc.,co_44590b8066d3,First Lien,Media & Entertainment,12.06%,,SOFR,6.75%,,2025-02-28,60,60,60,0%,60,,,,MRCC,2024-05-08
+Crownpeak Technology Inc.,co_44590b8066d3,First Lien,Media & Entertainment,11.9%,,SOFR,6.75%,,2025-02-28,3333,3333,3338,1.7%,3333,,,,MRCC,2024-05-08
+Crownpeak Technology Inc.,co_44590b8066d3,First Lien,Media & Entertainment,12.07%,,SOFR,6.75%,,2025-02-28,500,333,333,0.2%,333,,,,MRCC,2024-05-08
+Sports Operating Holdings II LLC,co_066f6a0da6b7,First Lien,Media & Entertainment,11.18%,,SOFR,5.85%,,2027-11-03,2955,2899,2977,1.5%,2899,,,,MRCC,2024-05-08
+Sports Operating Holdings II LLC,co_066f6a0da6b7,First Lien,Media & Entertainment,11.18%,,SOFR,5.85%,,2027-11-03,2398,241,242,0.1%,241,,,,MRCC,2024-05-08
+Sports Operating Holdings II LLC,co_066f6a0da6b7,First Lien,Media & Entertainment,11.18%,,SOFR,5.85%,,2027-11-03,519,0,0,0%,0,,,,MRCC,2024-05-08
+V10 Entertainment Inc.,co_e2366ff7dad4,First Lien,Media & Entertainment,12.43%,,SOFR,7.1%,,2028-01-12,3970,3874,4035,2%,3874,,,,MRCC,2024-05-08
+V10 Entertainment Inc.,co_e2366ff7dad4,First Lien,Media & Entertainment,12.43%,,SOFR,7.1%,,2028-01-12,458,0,0,0%,0,,,,MRCC,2024-05-08
+BLST Operating Company LLC,co_83695cc71fd2,First Lien,Consumer & Retail,1%,12.94%,SOFR,9.5%,,2025-08-28,682,445,627,0.3%,445,,,,MRCC,2024-05-08
+Aras Corp.,co_656eade16062,First Lien,Business Services,8.98%,3.25%,SOFR,6.9%,,2027-04-13,2252,2235,2251,1.1%,2235,,,,MRCC,2024-05-08
+Aras Corp.,co_656eade16062,First Lien,Business Services,11.98%,,SOFR,6.65%,,2027-04-13,150,150,150,0.1%,150,,,,MRCC,2024-05-08
+Burroughs Inc.,co_f94fb242fc61,First Lien,Business Services,12.93%,1%,SOFR,8.6%,,2024-12-20,4826,4826,4826,2.4%,4826,,,,MRCC,2024-05-08
+Burroughs Inc.,co_f94fb242fc61,First Lien,Business Services,12.93%,1%,SOFR,8.6%,,2024-12-20,1215,1215,1215,0.6%,1215,,,,MRCC,2024-05-08
+HS4 Acquisitionco Inc.,co_de75a5f18eca,First Lien,Business Services,11.18%,,SOFR,5.85%,,2025-07-09,9774,9720,9774,4.9%,9720,,,,MRCC,2024-05-08
+HS4 Acquisitionco Inc.,co_de75a5f18eca,First Lien,Business Services,11.18%,,SOFR,5.85%,,2025-07-09,817,549,549,0.3%,549,,,,MRCC,2024-05-08
+iCIMS Inc.,co_bf6839dcfbb8,First Lien,Business Services,12.58%,,SOFR,7.25%,,2028-08-18,2500,2464,2522,1.3%,2464,,,,MRCC,2024-05-08
+Kingsley Gate Partners LLC,co_bebacac31551,First Lien,Business Services,11.98%,,SOFR,6.65%,,2028-12-11,594,584,589,0.3%,584,,,,MRCC,2024-05-08
+Kingsley Gate Partners LLC,co_bebacac31551,First Lien,Business Services,11.98%,,SOFR,6.65%,,2028-12-11,191,191,189,0.1%,191,,,,MRCC,2024-05-08
+Kingsley Gate Partners LLC,co_bebacac31551,First Lien,Business Services,11.98%,,SOFR,6.65%,,2028-12-11,600,131,130,0.1%,131,,,,MRCC,2024-05-08
+Kingsley Gate Partners LLC,co_bebacac31551,First Lien,Business Services,11.98%,,SOFR,6.65%,,2028-12-11,240,0,0,0%,0,,,,MRCC,2024-05-08
+Prototek LLC,co_7cc6c0433f26,First Lien,Business Services,12.43%,0.75%,SOFR,7.85%,,2027-12-08,2481,2421,2241,1.1%,2421,,,,MRCC,2024-05-08
+Prototek LLC,co_7cc6c0433f26,First Lien,Business Services,12.43%,0.75%,SOFR,7.85%,,2027-12-08,288,0,0,0%,0,,,,MRCC,2024-05-08
+Relativity ODA LLC,co_ba854e909c5f,First Lien,Business Services,11.93%,,SOFR,6.6%,,2027-05-12,2107,2076,2107,1%,2076,,,,MRCC,2024-05-08
+Relativity ODA LLC,co_ba854e909c5f,First Lien,Business Services,11.93%,,SOFR,6.6%,,2027-05-12,180,0,0,0%,0,,,,MRCC,2024-05-08
+Security Services Acquisition Sub Corp.,co_ab59e6a073a8,First Lien,Business Services,11.43%,,SOFR,6.1%,,2026-09-30,3336,3324,3336,1.6%,3324,,,,MRCC,2024-05-08
+Security Services Acquisition Sub Corp.,co_ab59e6a073a8,First Lien,Business Services,11.43%,,SOFR,6.1%,,2026-09-30,2399,2399,2399,1.2%,2399,,,,MRCC,2024-05-08
+Security Services Acquisition Sub Corp.,co_ab59e6a073a8,First Lien,Business Services,11.43%,,SOFR,6.1%,,2026-09-30,7800,7731,7800,3.9%,7731,,,,MRCC,2024-05-08
+Security Services Acquisition Sub Corp.,co_ab59e6a073a8,First Lien,Business Services,11.43%,,SOFR,6.1%,,2026-09-30,2108,2108,2108,1%,2108,,,,MRCC,2024-05-08
+Security Services Acquisition Sub Corp.,co_ab59e6a073a8,First Lien,Business Services,11.43%,,SOFR,6.1%,,2026-09-30,1516,1516,1516,0.8%,1516,,,,MRCC,2024-05-08
+Security Services Acquisition Sub Corp.,co_ab59e6a073a8,First Lien,Business Services,11.43%,,SOFR,6.1%,,2026-09-30,2793,2739,2800,1.4%,2739,,,,MRCC,2024-05-08
+Vhagar Purchaser LLC,co_1bce574a2262,First Lien,Business Services,12.08%,,SOFR,6.75%,,2029-06-08,3000,2920,3000,1.5%,2920,,,,MRCC,2024-05-08
+Vhagar Purchaser LLC,co_1bce574a2262,First Lien,Business Services,12.08%,,SOFR,6.75%,,2029-06-08,667,150,150,0.1%,150,,,,MRCC,2024-05-08
+Vhagar Purchaser LLC,co_1bce574a2262,First Lien,Business Services,12.08%,,SOFR,6.75%,,2029-06-08,333,0,0,0%,0,,,,MRCC,2024-05-08
+VPS Holdings LLC,co_9611aa71a8b1,First Lien,Business Services,12.44%,,SOFR,7.11%,,2024-10-04,2303,2298,2315,1.1%,2298,,,,MRCC,2024-05-08
+VPS Holdings LLC,co_9611aa71a8b1,First Lien,Business Services,12.44%,,SOFR,7.11%,,2024-10-04,1896,1896,1906,0.9%,1896,,,,MRCC,2024-05-08
+VPS Holdings LLC,co_9611aa71a8b1,First Lien,Business Services,12.44%,,SOFR,7.11%,,2024-10-04,1003,1003,1003,0.5%,1003,,,,MRCC,2024-05-08
+Express Wash Acquisition Company LLC,co_86fb17eee460,First Lien,Consumer & Retail,12.09%,,SOFR,6.76%,,2028-07-14,7067,7035,7067,3.5%,7035,,,,MRCC,2024-05-08
+Express Wash Acquisition Company LLC,co_86fb17eee460,First Lien,Consumer & Retail,12.09%,,SOFR,6.76%,,2028-07-14,1509,1509,1509,0.7%,1509,,,,MRCC,2024-05-08
+Express Wash Acquisition Company LLC,co_86fb17eee460,First Lien,Consumer & Retail,12.09%,,SOFR,6.76%,,2028-07-14,379,209,209,0.1%,209,,,,MRCC,2024-05-08
+Kar Wash Holdings LLC,co_b542fcaa968e,First Lien,Consumer & Retail,11.59%,,SOFR,6.26%,,2027-02-26,1572,1551,1572,0.8%,1551,,,,MRCC,2024-05-08
+Kar Wash Holdings LLC,co_b542fcaa968e,First Lien,Consumer & Retail,11.59%,,SOFR,6.26%,,2027-02-26,1126,1126,1126,0.6%,1126,,,,MRCC,2024-05-08
+Kar Wash Holdings LLC,co_b542fcaa968e,First Lien,Consumer & Retail,11.59%,,SOFR,6.26%,,2027-02-26,2644,2644,2644,1.3%,2644,,,,MRCC,2024-05-08
+Kar Wash Holdings LLC,co_b542fcaa968e,First Lien,Consumer & Retail,11.59%,,SOFR,6.26%,,2027-02-26,571,0,0,0%,0,,,,MRCC,2024-05-08
+American Broadband and Telecommunications Company LLC,co_665ea27ff2f4,First Lien,Telecommunications,18.5%,2%,SOFR,12%,,2025-06-10,1377,1278,1423,0.7%,1278,,,,MRCC,2024-05-08
+American Broadband and Telecommunications Company LLC,co_665ea27ff2f4,First Lien,Telecommunications,18.5%,2%,SOFR,12%,,2025-06-10,500,124,124,0.1%,124,,,,MRCC,2024-05-08
+Calabrio Inc.,co_a6cc8a982c8e,First Lien,Telecommunications,12.45%,,SOFR,7.13%,,2027-04-16,3400,3350,3400,1.7%,3350,,,,MRCC,2024-05-08
+Calabrio Inc.,co_a6cc8a982c8e,First Lien,Telecommunications,12.45%,,SOFR,7.13%,,2027-04-16,499,499,503,0.2%,499,,,,MRCC,2024-05-08
+Calabrio Inc.,co_a6cc8a982c8e,First Lien,Telecommunications,12.45%,,SOFR,7.13%,,2027-04-16,409,0,0,0%,0,,,,MRCC,2024-05-08
+Epika Fleet Services Inc.,co_ab816d807d8f,First Lien,Transportation & Logistics,11.08%,,SOFR,5.75%,,2029-03-18,3000,2940,2940,1.5%,2940,,,,MRCC,2024-05-08
+Epika Fleet Services Inc.,co_ab816d807d8f,First Lien,Transportation & Logistics,11.08%,,SOFR,5.75%,,2029-03-18,1731,1713,1713,0.9%,1713,,,,MRCC,2024-05-08
+Epika Fleet Services Inc.,co_ab816d807d8f,Delayed Draw,Transportation & Logistics,11.08%,,SOFR,5.75%,,,865,0,0,0%,0,,,,MRCC,2024-05-08
+Epika Fleet Services Inc.,co_ab816d807d8f,Revolver,Transportation & Logistics,11.08%,,SOFR,5.75%,,,652,44,64,0%,44,,,,MRCC,2024-05-08
+Nearly Natural Inc.,co_f9178091c061,First Lien,Distribution & Wholesale,12.83%,4%,SOFR,11.5%,,2024-12-31,6626,6626,6377,3.2%,6626,,,,MRCC,2024-05-08
+Nearly Natural Inc.,co_f9178091c061,First Lien,Distribution & Wholesale,12.83%,4%,SOFR,11.5%,,2024-12-31,1718,1718,1654,0.8%,1718,,,,MRCC,2024-05-08
+Nearly Natural Inc.,co_f9178091c061,First Lien,Distribution & Wholesale,12.83%,4%,SOFR,11.5%,,2024-12-31,3126,3126,3009,1.5%,3126,,,,MRCC,2024-05-08
+Nearly Natural Inc.,co_f9178091c061,First Lien,Distribution & Wholesale,12.83%,4%,SOFR,11.5%,,2024-12-31,1871,1871,1801,0.9%,1871,,,,MRCC,2024-05-08
+Nearly Natural Inc.,co_f9178091c061,First Lien,Distribution & Wholesale,12.83%,4%,SOFR,11.5%,,2024-12-31,2709,2709,2607,1.3%,2709,,,,MRCC,2024-05-08
+ASG II LLC,co_c1815e66c8b0,First Lien,Business Services,11.71%,,SOFR,6.4%,,2028-05-25,1900,1871,1895,1%,1871,,,,MRCC,2024-05-08
+ASG II LLC,co_c1815e66c8b0,First Lien,Business Services,11.71%,,SOFR,6.4%,,2028-05-25,285,267,266,0.1%,267,,,,MRCC,2024-05-08
+Onit Inc.,co_969cfd142b37,First Lien,Business Services,12.73%,,SOFR,7.5%,,2025-05-02,1680,1669,1680,0.8%,1669,,,,MRCC,2024-05-08
+VB E1 LLC,co_596baf56d46e,First Lien,Telecommunications,13.05%,,SOFR,7.75%,,2026-11-18,2250,2250,2250,1.1%,2250,,,,MRCC,2024-05-08
+MoneyLion Inc.,co_98342c1d6948,First Lien,Financial Services,14.82%,,SOFR,9.51%,,2026-03-24,4875,4842,4875,2.4%,4842,,,,MRCC,2024-05-08
+Thrasio LLC,co_8e7941ae97b3,First Lien,Consumer & Retail,,15.44%,SOFR,10.11%,,2024-07-01,135,135,135,0.1%,135,,,,MRCC,2024-05-08
+Thrasio LLC,co_8e7941ae97b3,First Lien,Consumer & Retail,16.5%,,SOFR,8%,,2026-12-18,2297,2297,945,0.4%,2297,,,,MRCC,2024-05-08
+Florida East Coast Industries LLC,co_7e1dd8718289,First Lien,Real Estate,,16%,,,,2024-06-28,785,784,785,0.4%,784,,,,MRCC,2024-05-08
+Witkoff/Monroe 700 JV LLC,co_a907060aaecd,First Lien,Real Estate,8%,4%,,,,2026-07-02,6971,6971,6872,3.4%,6971,,,,MRCC,2024-05-08
+Witkoff/Monroe 700 JV LLC,co_a907060aaecd,First Lien,Real Estate,8%,4%,,,,2026-07-02,1206,1206,1189,0.6%,1206,,,,MRCC,2024-05-08
+Witkoff/Monroe 700 JV LLC,co_a907060aaecd,First Lien,Real Estate,8%,4%,,,,2026-07-22,2164,2155,2125,1.1%,2155,,,,MRCC,2024-05-08
+Arcstor Midco LLC,co_e4714da09484,First Lien,Software & Technology,,9%,SOFR,9%,,2027-03-16,161,150,164,0.1%,150,,,,MRCC,2024-05-08
+Arcstor Midco LLC,co_e4714da09484,First Lien,Software & Technology,,9%,SOFR,9%,,2027-03-16,165,150,167,0.1%,150,,,,MRCC,2024-05-08
+Arcstor Midco LLC,co_e4714da09484,First Lien,Software & Technology,,,,,,2027-03-16,370,363,0,0%,363,,,,MRCC,2024-05-08
+Vice Acquisition Holdco LLC,co_7130eb4e5962,First Lien,Media & Entertainment,,,,,,n/a (c),637,637,0,0%,637,,,,MRCC,2024-05-08
+Vice Acquisition Holdco LLC,co_7130eb4e5962,First Lien,Media & Entertainment,,,,,,n/a (c),122,122,0,0%,122,,,,MRCC,2024-05-08
+Vice Acquisition Holdco LLC,co_7130eb4e5962,First Lien,Media & Entertainment,,,,,,n/a (c),200,200,0,0%,200,,,,MRCC,2024-05-08
+Vice Acquisition Holdco LLC,co_7130eb4e5962,First Lien,Media & Entertainment,,,,,,n/a (c),76,76,0,0%,76,,,,MRCC,2024-05-08
+Vice Acquisition Holdco LLC,co_7130eb4e5962,First Lien,Media & Entertainment,,13.57%,SOFR,8.26%,,2028-01-31,528,528,402,0.2%,528,,,,MRCC,2024-05-08
+Vice Acquisition Holdco LLC,co_7130eb4e5962,First Lien,Media & Entertainment,,13.57%,SOFR,8.26%,,2028-01-31,671,671,628,0.3%,671,,,,MRCC,2024-05-08
+Vice Acquisition Holdco LLC,co_7130eb4e5962,First Lien,Media & Entertainment,,13.57%,SOFR,8.26%,,2028-01-31,203,203,190,0.1%,203,,,,MRCC,2024-05-08
+Vice Acquisition Holdco LLC,co_7130eb4e5962,First Lien,Media & Entertainment,,13.57%,SOFR,8.26%,,2028-01-31,359,353,331,0.2%,353,,,,MRCC,2024-05-08
+Forman Mills Inc.,co_7c400f752083,First Lien,Consumer & Retail,,3.9%,SOFR,3.9%,,2028-06-20,1308,1308,840,0.4%,1308,,,,MRCC,2024-05-08
+Education Corp.,co_3e3586565e38,First Lien,Consumer & Retail,14%,5.5%,SOFR,11%,,n/a (d),833,831,2246,1.1%,831,,,,MRCC,2024-05-08
+Born To Run LLC,co_7434140a1cd2,Other Equity,Automotive,,,,,,,,269,0,0%,269,,,,MRCC,2024-05-08
+Lifted Trucks Holdings LLC,co_f2037226ccf7,Other Equity,Automotive,,,,,,,,111,64,0%,111,,,,MRCC,2024-05-08
+MV Receivables II LLC,co_662dd9b092bf,Common Equity,Financial Services,,,,,,,,600,0,0%,600,,,,MRCC,2024-05-08
+MV Receivables II LLC,co_662dd9b092bf,Warrants,Financial Services,,,,,,,,363,0,0%,363,,,,MRCC,2024-05-08
+Valudor Products LLC,co_351ea9689119,Other Equity,Chemicals & Materials,,10%,,,,,,501,0,0%,501,,,,MRCC,2024-05-08
+Independence Buyer Inc.,co_a5402fb44dd3,Other Equity,Consumer & Retail,,,,,,,,81,49,0%,81,,,,MRCC,2024-05-08
+MEI Buyer LLC,co_a2bda52004f7,Common Equity,Industrials,,,,,,,,178,200,0.1%,178,,,,MRCC,2024-05-08
+Quest Resource Management Group LLC,co_f31abebb69f6,Warrants,Business Services,,,,,,,,67,252,0.1%,67,,,,MRCC,2024-05-08
+Quest Resource Management Group LLC,co_f31abebb69f6,Warrants,Business Services,,,,,,,,0,177,0.1%,0,,,,MRCC,2024-05-08
+Binah Capital Group Inc.,co_24b9bbbdf7e1,Common Equity,,,,,,,,,234,451,0.2%,234,,,,MRCC,2024-05-08
+J2 BWA Funding LLC,co_ef9b78412ff9,Other Equity,Financial Services,,,,,,2026-12-24,,0,38,0%,0,,,,MRCC,2024-05-08
+Residential Homes for Rent LLC,co_619680a2a20a,Preferred Equity,Real Estate,,,,,,,,1114,1114,0.6%,1114,,,,MRCC,2024-05-08
+Residential Homes for Rent LLC,co_619680a2a20a,Warrants,Real Estate,,,,,,,,0,0,0%,0,,,,MRCC,2024-05-08
+Witkoff/Monroe 700 JV LLC,co_a907060aaecd,Preferred Equity,Real Estate,0%,,,,,,,3,2556,1.3%,3,,,cost_suspicious_vs_size,MRCC,2024-05-08
+Bluesight Inc.,co_bc9dbc3292ea,Preferred Equity,Healthcare,,9%,,,,,,21,19,0%,21,,,,MRCC,2024-05-08
+Bluesight Inc.,co_bc9dbc3292ea,Common Equity,Healthcare,,,,,,,,0,0,0%,0,,,,MRCC,2024-05-08
+Dorado Acquisition Inc.,co_5f5c69f4154a,Other Equity,Healthcare,,,,,,,,207,209,0.1%,207,,,,MRCC,2024-05-08
+Dorado Acquisition Inc.,co_5f5c69f4154a,Other Equity,Healthcare,,,,,,,,0,98,0.1%,0,,,,MRCC,2024-05-08
+Forest Buyer LLC,co_971891319115,Other Equity,Healthcare,,8%,,,,,,300,300,0.1%,300,,,,MRCC,2024-05-08
+Forest Buyer LLC,co_971891319115,Other Equity,Healthcare,,8%,,,,,,0,0,0%,0,,,,MRCC,2024-05-08
+KL Moon Acquisition LLC,co_eb3324f394e2,Other Equity,Healthcare,,,,,,2029-02-01,,491,329,0.2%,491,,,,MRCC,2024-05-08
+NationsBenefits LLC,co_163adf469b21,Other Equity,Healthcare,,5%,,,,,,816,1527,0.8%,816,,,,MRCC,2024-05-08
+NationsBenefits LLC,co_163adf469b21,Common Equity,Healthcare,,,,,,,,153,496,0.2%,153,,,,MRCC,2024-05-08
+NQ PE Project Colosseum Midco Inc.,co_fdf0da051d55,Common Equity,Healthcare,,,,,,,,327,260,0.1%,327,,,,MRCC,2024-05-08
+Seran BioScience LLC,co_ffa9b0a78296,Common Equity,Healthcare,,,,,,,,334,832,0.4%,334,,,,MRCC,2024-05-08
+Vero Biotech Inc.,co_ff132af02ffa,Warrants,Healthcare,,,,,,,,0,28,0%,0,,,,MRCC,2024-05-08
+Amelia Holding II LLC,co_43fb318cfdbe,Warrants,Software & Technology,,,,,,,,0,28,0%,0,,,,MRCC,2024-05-08
+Arcserve Cayman Opco LP,co_479594b4e88a,Other Equity,Software & Technology,,,,,,,,4119,495,0.2%,4119,,,,MRCC,2024-05-08
+Arcserve Cayman Opco LP,co_479594b4e88a,Other Equity,Software & Technology,,,,,,,,0,922,0.5%,0,,,,MRCC,2024-05-08
+Drawbridge Partners LLC,co_0ce0f67d6940,Other Equity,Software & Technology,,,,,,,,130,154,0.1%,130,,,,MRCC,2024-05-08
+Planful Inc.,co_7f1b0316e6b6,Other Equity,Software & Technology,,8%,,,,,,473,992,0.5%,473,,,,MRCC,2024-05-08
+Planful Inc.,co_7f1b0316e6b6,Other Equity,Software & Technology,,,,,,,,0,24,0%,0,,,,MRCC,2024-05-08
+Recorded Future Inc.,co_473199530367,Other Equity,Software & Technology,,,,,,,,81,268,0.1%,81,,,,MRCC,2024-05-08
+Sparq Holdings Inc.,co_618f81314875,Common Equity,Software & Technology,,,,,,,,300,317,0.2%,300,,,,MRCC,2024-05-08
+Equine Network LLC,co_f0d66d3bb5c8,Other Equity,Food & Beverage,,,,,,,,111,140,0.1%,111,,,,MRCC,2024-05-08
+AdTheorent Holding Company Inc.,co_bd39b8d9f303,Common Equity,Media & Entertainment,,,,,,,,114,569,0.3%,114,,,,MRCC,2024-05-08
+InMobi Pte Ltd.,co_e80460a527fe,Warrants,Media & Entertainment,,,,,,,,0,1763,0.9%,0,,,,MRCC,2024-05-08
+Relevate Health Group LLC,co_cc2dc9d038dc,Preferred Equity,Media & Entertainment,,12%,,,,,,40,17,0%,40,,,,MRCC,2024-05-08
+Relevate Health Group LLC,co_cc2dc9d038dc,Common Equity,Media & Entertainment,,,,,,,,0,0,0%,0,,,,MRCC,2024-05-08
+Spherix Global Inc.,co_84475a9b5a25,Other Equity,Media & Entertainment,,,,,,,,81,27,0%,81,,,,MRCC,2024-05-08
+XanEdu Publishing Inc.,co_7f994caadeda,Other Equity,Media & Entertainment,,8%,,,,,,49,266,0.1%,49,,,,MRCC,2024-05-08
+Vice Acquisition Holdco LLC,co_7130eb4e5962,Other Equity,Media & Entertainment,,,,,,,,1480,0,0%,1480,,,,MRCC,2024-05-08
+Attom Intermediate Holdco LLC,co_11b2ea7be5b7,Other Equity,Media & Entertainment,,,,,,,,297,352,0.2%,297,,,,MRCC,2024-05-08
+Chess.com LLC,co_cb0490d4a2aa,Other Equity,Media & Entertainment,,,,,,,,87,75,0%,87,,,,MRCC,2024-05-08
+V10 Entertainment Inc.,co_e2366ff7dad4,Common Equity,Media & Entertainment,,,,,,,,203,154,0.1%,203,,,,MRCC,2024-05-08
+BLST Operating Company LLC,co_83695cc71fd2,Other Equity,Consumer & Retail,,,,,,,,712,419,0.2%,712,,,,MRCC,2024-05-08
+APCO Worldwide Inc.,co_d2b6f2c5260a,Common Equity,Business Services,,,,,,,,395,988,0.5%,395,,,,MRCC,2024-05-08
+Education Corp.,co_3e3586565e38,Other,Education,,12%,,,,,,7492,0,0%,7492,,,,MRCC,2024-05-08
+Express Wash Acquisition Company LLC,co_86fb17eee460,Common Equity,Consumer & Retail,,,,,,,,0,0,0%,0,,,,MRCC,2024-05-08
+Express Wash Acquisition Company LLC,co_86fb17eee460,Preferred Equity,Consumer & Retail,,8%,,,,2028-07-14,,31,28,0%,31,,,,MRCC,2024-05-08
+Express Wash Acquisition Company LLC,co_86fb17eee460,Preferred Equity,Consumer & Retail,,,,,,,,0,0,0%,0,,,,MRCC,2024-05-08
+Express Wash Acquisition Company LLC,co_86fb17eee460,Common Equity,Consumer & Retail,,,,,,,,151,0,0%,151,,,,MRCC,2024-05-08
+IDIG Parent LLC,co_8e32056fc810,Common Equity,Consumer & Retail,,,,,,,,250,306,0.2%,250,,,,MRCC,2024-05-08
+Kar Wash Holdings LLC,co_b542fcaa968e,Other Equity,Consumer & Retail,,,,,,,,103,102,0.1%,103,,,,MRCC,2024-05-08
+Kar Wash Holdings LLC,co_b542fcaa968e,Preferred Equity,Consumer & Retail,,,,,,,,11,11,0%,11,,,,MRCC,2024-05-08
+American Broadband and Telecommunications Company LLC,co_665ea27ff2f4,Warrants,Telecommunications,,,,,,2025-06-10,,42,46,0%,42,,,,MRCC,2024-05-08
+Epika Fleet Services Inc.,co_ab816d807d8f,Preferred Equity,Transportation & Logistics,,,,,,2029-03-18,,196,196,0.1%,196,,,,MRCC,2024-05-08
+Nearly Natural Inc.1 Equity Securities,co_643dbacb354b,Other Equity,Financial Services,,,,,,,,153,0,0%,153,,,,MRCC,2024-05-08
+Nearly Natural Inc.,co_f9178091c061,Other Equity,Consumer & Retail,,,,,,,,61,45,0%,61,,,,MRCC,2024-05-08
+TJ Management HoldCo LLC,co_a053ad5b138a,Revolver,Business Services,10.94%,,SOFR,5.61%,,,477,0,0,0%,0,,,,MRCC,2024-05-08
+American Community Homes Inc.,co_a52919ef9d10,First Lien,Real Estate,,7.44%,SOFR,2.11%,,2026-12-31,12890,12890,8085,4%,12890,,,,MRCC,2024-05-08
+American Community Homes Inc.,co_a52919ef9d10,First Lien,Real Estate,,7.44%,SOFR,2.11%,,2026-12-31,6343,6343,3978,2%,6343,,,,MRCC,2024-05-08
+American Community Homes Inc.,co_a52919ef9d10,First Lien,Real Estate,,7.44%,SOFR,2.11%,,2026-12-31,781,781,490,0.2%,781,,,,MRCC,2024-05-08
+American Community Homes Inc.,co_a52919ef9d10,First Lien,Real Estate,,7.44%,SOFR,2.11%,,2026-12-31,2873,2873,1802,0.9%,2873,,,,MRCC,2024-05-08
+American Community Homes Inc.,co_a52919ef9d10,First Lien,Real Estate,,7.44%,SOFR,2.11%,,2026-12-31,5319,5319,3336,1.7%,5319,,,,MRCC,2024-05-08
+American Community Homes Inc.,co_a52919ef9d10,First Lien,Real Estate,,7.44%,SOFR,2.11%,,2026-12-31,25,25,16,0%,25,,,,MRCC,2024-05-08
+American Community Homes Inc.,co_a52919ef9d10,First Lien,Real Estate,,7.44%,SOFR,2.11%,,2026-12-31,122,122,77,0%,122,,,,MRCC,2024-05-08
+American Community Homes Inc.,co_a52919ef9d10,Revolver,Real Estate,,7.44%,SOFR,2.11%,,2026-12-31,2500,0,0,0%,0,,,,MRCC,2024-05-08
+HFZ Capital Group LLC,co_f5ccc3346d14,First Lien,Real Estate,,17.96%,SOFR,9.46%,,,13242,13242,17500,8.7%,13242,,,,MRCC,2024-05-08
+HFZ Capital Group LLC,co_f5ccc3346d14,First Lien,Real Estate,,17.96%,SOFR,9.46%,,,4758,4758,6288,3.1%,4758,,,,MRCC,2024-05-08
+MC Asset Management (Corporate) LLC,co_18c2ea37f53b,First Lien,Financial Services,,20.33%,SOFR,15%,,,10771,10771,10771,5.3%,10771,,,type_hint_corporate_from_name,MRCC,2024-05-08
+MC Asset Management (Corporate) LLC,co_18c2ea37f53b,First Lien,Financial Services,,20.33%,SOFR,15%,,,3210,3210,3210,1.6%,3210,,,type_hint_corporate_from_name,MRCC,2024-05-08
+Second Avenue SFR Holdings II LLC,co_3dfcd41b3ca3,Revolver,Real Estate,12.33%,,SOFR,7%,,2024-08-09,4875,3323,3323,1.6%,3323,,,,MRCC,2024-05-08
+Mnine Holdings Inc.,co_57392f4bd3d2,First Lien,Software & Technology,,13.56%,SOFR,8.26%,,2024-12-30,6346,6346,6119,3.1%,6346,,,,MRCC,2024-05-08
+Mnine Holdings Inc.,co_57392f4bd3d2,First Lien,Software & Technology,,13.56%,SOFR,8.26%,,2024-12-30,56,55,54,0%,55,,,,MRCC,2024-05-08
+Mnine Holdings Inc.,co_57392f4bd3d2,First Lien,Software & Technology,12.57%,,SOFR,7.26%,,2024-12-30,747,0,0,0%,0,,,,MRCC,2024-05-08
+NECB Collections LLC,co_ae3ce6a1bd99,Revolver,Consumer & Retail,16.94%,,SOFR,11%,,,1356,1312,424,0.2%,1312,,,,MRCC,2024-05-08
+SFR Holdco LLC,co_cdda9834a0e0,First Lien,Real Estate,8%,,,,,2028-07-28,5850,5850,5533,2.7%,5850,,,,MRCC,2024-05-08
+TJ Management HoldCo LLC,co_a053ad5b138a,Common Equity,Business Services,,,,,,,,1631,3324,1.6%,1631,,,,MRCC,2024-05-08
+American Community Homes Inc.,co_a52919ef9d10,Common Equity,Financial Services,,,,,,,,0,0,0%,0,,,,MRCC,2024-05-08
+MC Asset Management (Corporate) LLC,co_18c2ea37f53b,Other Equity,Financial Services,,,,,,,,793,842,0.4%,793,,,type_hint_corporate_from_name,MRCC,2024-05-08
+SFR Holdco LLC,co_cdda9834a0e0,Other Equity,Real Estate,,,,,,2028-07-28,,3900,4446,2.2%,3900,,,,MRCC,2024-05-08
+Ascent Midco LLC,co_2150082af3f6,Other Equity,Healthcare,,8%,,,,,,2032,1652,0.8%,2032,,,,MRCC,2024-05-08
+Familia Dental Group Holdings LLC,co_e66177915503,Other Equity,Healthcare,,,,,,,,4467,2363,1.2%,4467,,,,MRCC,2024-05-08
+Mnine Holdings Inc.,co_57392f4bd3d2,Other Equity,Software & Technology,,,,,,,,0,0,0%,0,,,,MRCC,2024-05-08
+NECB Collections LLC,co_ae3ce6a1bd99,Other Equity,Consumer & Retail,,,,,,,,1458,0,0%,1458,,,,MRCC,2024-05-08
+MRCC Senior Loan Fund I LLC,co_0d21d6dc97dd,Other Equity,Financial Services,,,,,,,,42650,32990,16.4%,42650,,,,MRCC,2024-05-08
+Trident Maritime Systems Inc.,co_53cdbd7574ab,First Lien,Aerospace & Defense,10.96%,,SOFR,5.65%,,2027-02-26,2406,,2388,,,,,,MRCC,2024-05-08
 Trident Maritime Systems Inc.,co_53cdbd7574ab,First Lien,Aerospace & Defense,10.96%,,SOFR,5.65%,,2027-02-26,746,,741,,,,,,MRCC,2024-05-08
 Trident Maritime Systems Inc.,co_53cdbd7574ab,First Lien,Aerospace & Defense,10.96%,,SOFR,5.65%,,2027-02-26,188,,186,,,,,,MRCC,2024-05-08
-Trident Maritime Systems Inc.,co_53cdbd7574ab,First Lien,Aerospace & Defense,10.95%,,SOFR,5.60%,,2027-02-26,2414,,,,,,,,MRCC,2024-05-08
-Trident Maritime Systems Inc.,co_53cdbd7574ab,First Lien,Aerospace & Defense,10.95%,,SOFR,5.60%,,2027-02-26,746,,737,,,,,,MRCC,2024-05-08
-Trident Maritime Systems Inc.,co_53cdbd7574ab,First Lien,Aerospace & Defense,10.96%,,SOFR,5.60%,,2027-02-26,188,,186,,,,,,MRCC,2024-05-08
-Trident Maritime Systems Inc.,co_53cdbd7574ab,First Lien,Aerospace & Defense,10.95%,,SOFR,5.60%,,2027-02-26,2414,,2385,,,,,,MRCC,2024-05-08
-Trident Maritime Systems Inc.,co_53cdbd7574ab,Revolver,Aerospace & Defense,10.93%,,SOFR,5.60%,,2027-02-26,319,,317,,,,,,MRCC,2024-05-08
-Trident Maritime Systems Inc.,co_53cdbd7574ab,Revolver,Aerospace & Defense,10.96%,,SOFR,5.60%,,2027-02-26,319,,315,,,,,,MRCC,2024-05-08
-Accelerate Auto Works Intermediate LLC,co_e87038fd55ec,First Lien,Automotive,10.24%,,SOFR,4.90%,,2027-12-01,1354,,1337,,,,,,MRCC,2024-05-08
-Accelerate Auto Works Intermediate LLC,co_e87038fd55ec,First Lien,Automotive,10.22%,,SOFR,4.90%,,2027-12-01,387,,382,,,,,,MRCC,2024-05-08
-Accelerate Auto Works Intermediate LLC,co_e87038fd55ec,First Lien,Automotive,10.29%,,SOFR,4.90%,,2027-12-01,1358,,1342,,,,,,MRCC,2024-05-08
-Accelerate Auto Works Intermediate LLC,co_e87038fd55ec,First Lien,Automotive,10.30%,,SOFR,4.90%,,2027-12-01,388,,383,,,,,,MRCC,2024-05-08
-Accelerate Auto Works Intermediate LLC,co_e87038fd55ec,Revolver,Automotive,10.24%,,SOFR,4.90%,,2027-12-01,132,,21,,,,,,MRCC,2024-05-08
-Accelerate Auto Works Intermediate LLC,co_e87038fd55ec,Revolver,Automotive,10.29%,,SOFR,4.90%,,2027-12-01,132,,,,,,,,MRCC,2024-05-08
-SW Ingredients Holdings LLC,co_49ca471a12f7,First Lien,Food & Beverage,10.93%,,SOFR,5.50%,,2025-07-03,3534,,3534,,,,,,MRCC,2024-05-08
-SW Ingredients Holdings LLC,co_49ca471a12f7,First Lien,Food & Beverage,10.21%,,SOFR,4.75%,,2025-07-03,3544,,3539,,,,,,MRCC,2024-05-08
-MacQueen Equipment LLC,co_f6f0efca3b25,First Lien,Industrial Services,10.81%,,SOFR,5.51%,,2028-01-07,2070,,2069,,,,,,MRCC,2024-05-08
-MacQueen Equipment LLC,co_f6f0efca3b25,Delayed Draw,Industrial Services,10.81%,,SOFR,5.51%,,2028-01-07,590,,334,,,,,,MRCC,2024-05-08
-MacQueen Equipment LLC,co_f6f0efca3b25,Revolver,Industrial Services,10.81%,,SOFR,5.51%,,2028-01-07,296,,,,,,,,MRCC,2024-05-08
-Corel Inc.,co_47fcb2f8f9d4,First Lien,Software,10.44%,,SOFR,5.10%,,2026-07-02,3350,,3303,,,,,,MRCC,2024-05-08
-Corel Inc.,co_47fcb2f8f9d4,First Lien,Software,10.49%,,SOFR,5.10%,,2026-07-02,3400,,3323,,,,,,MRCC,2024-05-08
-Lightbox Intermediate LP,co_fc2524f2a361,First Lien,Software,10.56%,,SOFR,5.26%,,2026-05-11,4763,,4620,,,,,,MRCC,2024-05-08
-Lightbox Intermediate LP,co_fc2524f2a361,First Lien,Software,10.61%,,SOFR,5.26%,,2026-05-11,4775,,4632,,,,,,MRCC,2024-05-08
-TGG TS Acquisition Company,co_564077f4bbb6,First Lien,Software,11.94%,,SOFR,6.61%,,2025-12-12,2885,,2880,,,,,,MRCC,2024-05-08
-TGG TS Acquisition Company,co_564077f4bbb6,First Lien,Software,11.97%,,SOFR,6.61%,,2025-12-12,2885,,2791,,,,,,MRCC,2024-05-08
-Excel Fitness Holdings Inc.,co_f60ab2c38c7b,First Lien,Food & Beverage,10.70%,,SOFR,5.40%,,2029-04-27,4309,,4309,,,,,,MRCC,2024-05-08
-Excel Fitness Holdings Inc.,co_f60ab2c38c7b,First Lien,Food & Beverage,10.75%,,SOFR,5.40%,,2029-04-27,4320,,4308,,,,,,MRCC,2024-05-08
-Excel Fitness Holdings Inc.,co_f60ab2c38c7b,Revolver,Food & Beverage,10.70%,,SOFR,5.40%,,2028-04-28,625,,,,,,,,MRCC,2024-05-08
-Excel Fitness Holdings Inc.,co_f60ab2c38c7b,Revolver,Food & Beverage,10.75%,,SOFR,5.40%,,2028-04-28,625,,,,,,,,MRCC,2024-05-08
-North Haven Spartan US Holdco LLC,co_6cd30c618f32,First Lien,Food & Beverage,11.57%,,SOFR,6.25%,,2026-06-05,2244,,2244,,,,,,MRCC,2024-05-08
+Trident Maritime Systems,co_53cdbd7574ab,Revolver,Aerospace & Defense,10.93%,,SOFR,5.6%,,2027-02-26,319,,317,,,,,,MRCC,2024-05-08
+Accelerate Auto Works Intermediate LLC,co_e87038fd55ec,First Lien,Automotive,10.24%,,SOFR,4.9%,,2027-12-01,1354,,1337,,,,,,MRCC,2024-05-08
+Accelerate Auto Works Intermediate LLC,co_e87038fd55ec,First Lien,Automotive,10.22%,,SOFR,4.9%,,2027-12-01,387,,382,,,,,,MRCC,2024-05-08
+Accelerate Auto Works Intermediate,co_e87038fd55ec,Revolver,Automotive,10.24%,,SOFR,4.9%,,2027-12-01,132,,21,,,,,,MRCC,2024-05-08
+SW Ingredients Holdings LLC,co_49ca471a12f7,First Lien,Food & Beverage,10.93%,,SOFR,5.5%,,2025-07-03,3534,,3534,,,,,,MRCC,2024-05-08
+MacQueen Equipment LLC,co_f6f0efca3b25,First Lien,Industrials,10.81%,,SOFR,5.51%,,2028-01-07,2070,,2069,,,,,,MRCC,2024-05-08
+MacQueen Equipment,co_f6f0efca3b25,Delayed Draw,Industrials,10.81%,,SOFR,5.51%,,2028-01-07,590,,334,,,,,,MRCC,2024-05-08
+MacQueen Equipment,co_f6f0efca3b25,Revolver,Industrials,10.81%,,SOFR,5.51%,,2028-01-07,296,,0,,,,,,MRCC,2024-05-08
+Phoenix Chemical Holding Company LLC,co_55078d2025c1,First Lien,Chemicals & Materials,12.44%,,SOFR,7.11%,,2024-08-02,1129,,964,,,,,,MRCC,2024-05-08
+TJC Spartech Acquisition Corp.,co_0c3da60ba9b8,First Lien,Chemicals & Materials,10.07%,,SOFR,4.75%,,2028-05-05,4200,,3507,,,,,,MRCC,2024-05-08
+Elevate Textiles Inc.,co_963e5a8804b1,First Lien,Consumer & Retail,11.98%,,SOFR,6.65%,,2027-09-30,796,,585,,,,,,MRCC,2024-05-08
+Runner Buyer INC.,co_80c456057e4a,First Lien,Consumer & Retail,10.96%,,SOFR,5.61%,,2028-10-23,2940,,2245,,,,,,MRCC,2024-05-08
+PH Beauty Holdings III INC.,co_410ad48358bb,First Lien,Consumer & Retail,10.72%,,SOFR,5%,,2025-09-26,2361,,2338,,,,,,MRCC,2024-05-08
+Polychem Acquisition LLC,co_90d33fc3eb64,First Lien,Containers & Packaging,10.44%,,SOFR,5.11%,,2025-03-17,2850,,2836,,,,,,MRCC,2024-05-08
+PVHC Holding Corp.,co_25877c931bc1,First Lien,Containers & Packaging,10.96%,0.75%,SOFR,5.65%,,2027-02-17,1894,,1894,,,,,,MRCC,2024-05-08
+Offen Inc.,co_0dcb3071a7a3,First Lien,Energy,10.44%,,SOFR,5.11%,,2026-06-22,2249,,2248,,,,,,MRCC,2024-05-08
+Offen Inc.,co_0dcb3071a7a3,First Lien,Energy,10.44%,,SOFR,5.11%,,2026-06-22,856,,856,,,,,,MRCC,2024-05-08
+Harbour Benefit Holdings Inc.,co_80b7ed4411e2,First Lien,Financial Services,10.45%,,SOFR,5.15%,,2024-12-13,2842,,2842,,,,,,MRCC,2024-05-08
+Harbour Benefit Holdings Inc.,co_80b7ed4411e2,First Lien,Financial Services,10.43%,,SOFR,5.1%,,2024-12-13,61,,61,,,,,,MRCC,2024-05-08
+Minotaur Acquisition Inc.,co_6830d716e83b,First Lien,Financial Services,10.18%,,SOFR,4.85%,,2026-03-27,4794,,4805,,,,,,MRCC,2024-05-08
+TEAM Public Choices LLC,co_0d8010a476fa,First Lien,Financial Services,10.58%,,SOFR,5%,,2027-12-17,2917,,2921,,,,,,MRCC,2024-05-08
+Avison Young (USA) Inc.,co_9c7accf0770d,First Lien,Real Estate,11.84%,,SOFR,6.5%,,2029-03-12,606,,599,,,,,,MRCC,2024-05-08
+Cano Health LLC,co_8d3fd71221d9,First Lien,Healthcare,9.33%,,SOFR,4%,,2027-11-23,1950,,590,,,,,,MRCC,2024-05-08
+HAH Group Holding Company LLC,co_96b70efb8234,First Lien,Healthcare,10.44%,,SOFR,5%,,2027-10-29,2943,,2936,,,,,,MRCC,2024-05-08
+LSCS Holdings Inc.,co_a9729536583e,First Lien,Healthcare,9.94%,,SOFR,4.61%,,2028-12-15,1805,,1781,,,,,,MRCC,2024-05-08
+Natus Medical Inc.,co_f8b42777095c,First Lien,Healthcare,10.96%,,SOFR,5.65%,,2029-07-20,4937,,4666,,,,,,MRCC,2024-05-08
+Corel Inc.,co_47fcb2f8f9d4,First Lien,Software & Technology,10.44%,,SOFR,5.1%,,,3350,,3303,,,,,,MRCC,2024-05-08
+Lightbox Intermediate LP.,co_3bda550e249c,First Lien,Software & Technology,10.56%,,SOFR,5.26%,,2026-05-11,4763,,4620,,,,,,MRCC,2024-05-08
+TGG TS Acquisition Company,co_564077f4bbb6,First Lien,Software & Technology,11.94%,,SOFR,6.61%,,2025-12-12,2885,,2880,,,,,,MRCC,2024-05-08
+Excel Fitness Holdings Inc.,co_f60ab2c38c7b,First Lien,Healthcare,10.7%,,SOFR,5.4%,,2029-04-27,4309,,4309,,,,,,MRCC,2024-05-08
+Excel Fitness Holdings,co_f60ab2c38c7b,Revolver,Healthcare,10.7%,,SOFR,5.4%,,2029-04-27,625,,0,,,,,,MRCC,2024-05-08
+North Haven Spartan US Holdco LLC,co_26185fce880a,First Lien,Healthcare,11.57%,,SOFR,6.25%,,2026-06-05,2244,,2244,,,,,,MRCC,2024-05-08
 Research Now Group Inc.,co_f56b9233964e,First Lien,Media & Entertainment,11.07%,,SOFR,5.76%,,2024-12-20,6580,,3971,,,,,,MRCC,2024-05-08
 STATS Intermediate Holdings LLC,co_20e7468805f9,First Lien,Media & Entertainment,10.83%,,SOFR,5.51%,,2026-07-10,4788,,4746,,,,,,MRCC,2024-05-08
-TA TT Buyer LLC,co_8a528cbe0e19,First Lien,Media & Entertainment,10.30%,,SOFR,5.00%,,2029-03-30,3283,,3301,,,,,,MRCC,2024-05-08
-Eliassen Group LLC,co_6f2538aae5b8,First Lien,Business Services,10.81%,,SOFR,5.50%,,2028-04-14,3209,,3177,,,,,,MRCC,2024-05-08
-Eliassen Group LLC,co_6f2538aae5b8,Delayed Draw,Business Services,10.82%,,SOFR,5.50%,,2028-04-14,738,,229,,,,,,MRCC,2024-05-08
-MEI Buyer LLC,co_a2bda52004f7,First Lien,Construction,11.83%,,SOFR,6.50%,2023-06-30,2029-06-29,1990,,,0.01,,,,,MRCC,2024-05-08
-MEI Buyer LLC,co_a2bda52004f7,First Lien,Construction,10.58%,,SOFR,5.25%,2024-01-09,2029-06-30,1114,1104,1114,0.006,,,,,MRCC,2024-05-08
-MEI Buyer LLC,co_a2bda52004f7,Delayed Draw,Construction,11.83%,,SOFR,6.50%,2023-06-30,2029-06-29,317,,,0.0,,,,,MRCC,2024-05-08
-MEI Buyer LLC,co_a2bda52004f7,Revolver,Construction,11.83%,,SOFR,6.50%,2023-06-30,2029-06-29,410,,,0.0,,,,,MRCC,2024-05-08
-TCFIII OWL Buyer LLC,co_0574a91f2fb5,First Lien,Construction,10.94%,,SOFR,5.61%,2021-04-19,2026-04-17,1994,1977,1994,0.01,,,,,MRCC,2024-05-08
-TCFIII OWL Buyer LLC,co_0574a91f2fb5,First Lien,Construction,10.94%,,SOFR,5.61%,2021-04-19,2026-04-17,2434,2434,2434,0.012,,,,,MRCC,2024-05-08
-TCFIII OWL Buyer LLC,co_0574a91f2fb5,First Lien,Construction,10.94%,,SOFR,5.61%,2021-12-17,2026-04-17,2185,2165,2185,0.011,,,,,MRCC,2024-05-08
-Independence Buyer Inc.,co_a5402fb44dd3,First Lien,Consumer Products,11.21%,,SOFR,5.90%,2021-08-03,2026-08-03,5345,5290,5251,0.026,,,,,MRCC,2024-05-08
-Independence Buyer Inc.,co_a5402fb44dd3,Revolver,Consumer Products,11.21%,,SOFR,5.90%,2021-08-03,2026-08-03,14,,,,,,,,MRCC,2024-05-08
-Nearly Natural Inc.,co_f9178091c061,First Lien,Consumer Products,12.85%,4.00%,SOFR,11.50%,2017-12-15,2024-03-29,6523,6523,6270,0.031,,,,,MRCC,2024-05-08
-Nearly Natural Inc.,co_f9178091c061,First Lien,Consumer Products,12.85%,4.00%,SOFR,11.50%,2020-09-22,2024-03-29,1691,1691,1625,0.008,,,,,MRCC,2024-05-08
-Nearly Natural Inc.,co_f9178091c061,First Lien,Consumer Products,12.85%,4.00%,SOFR,11.50%,2021-02-16,2024-03-29,3076,3075,2957,0.015,,,,,MRCC,2024-05-08
-Nearly Natural Inc.,co_f9178091c061,First Lien,Consumer Products,12.85%,4.00%,SOFR,11.50%,2019-08-28,2024-03-29,1841,1841,1770,0.009,,,,,MRCC,2024-05-08
-Nearly Natural Inc.,co_f9178091c061,Revolver,Consumer Products,12.85%,4.00%,SOFR,11.50%,2017-12-15,2024-03-29,2634,2634,2532,0.012,,,,,MRCC,2024-05-08
-Cassavant Holdings LLC,co_c19c75a54706,First Lien,Aerospace & Defense,12.96%,,SOFR,7.61%,2021-09-08,2026-09-08,7876,7784,7876,0.039,,,,,MRCC,2024-05-08
-ASG II LLC,co_c1815e66c8b0,First Lien,Business Services,11.78%,,SOFR,6.40%,2022-05-25,2028-05-25,1900,1869,1900,0.009,,,,,MRCC,2024-05-08
-ASG II LLC,co_c1815e66c8b0,First Lien,Business Services,11.71%,,SOFR,6.40%,2022-05-25,2028-05-25,1900,,,0.01,,,,,MRCC,2024-05-08
-ASG II LLC,co_c1815e66c8b0,Delayed Draw,Business Services,11.78%,,SOFR,6.40%,2022-05-25,2028-05-25,285,171,171,0.001,,,,,MRCC,2024-05-08
-ASG II LLC,co_c1815e66c8b0,Delayed Draw,Business Services,11.71%,,SOFR,6.40%,2022-05-25,2028-05-25,285,267,266,0.001,,,,,MRCC,2024-05-08
-American Community Homes Inc.,co_a52919ef9d10,First Lien,Real Estate,,7.44%,SOFR,2.11%,2014-07-22,2026-12-31,12890,,,0.04,,,,,MRCC,2024-05-08
-American Community Homes Inc.,co_a52919ef9d10,First Lien,Real Estate,,7.44%,SOFR,2.11%,2014-07-22,2026-12-31,6343,6343,3978,0.02,6343,,,,MRCC,2024-05-08
-American Community Homes Inc.,co_a52919ef9d10,First Lien,Real Estate,,7.44%,SOFR,2.11%,2017-05-24,2026-12-31,781,781,490,0.002,781,,,,MRCC,2024-05-08
-American Community Homes Inc.,co_a52919ef9d10,First Lien,Real Estate,,7.44%,SOFR,2.11%,2018-08-10,2026-12-31,2873,2873,1802,0.009,2873,,,,MRCC,2024-05-08
-American Community Homes Inc.,co_a52919ef9d10,First Lien,Real Estate,,7.44%,SOFR,2.11%,2019-03-29,2026-12-31,5319,5319,3336,0.017,5319,,,,MRCC,2024-05-08
-American Community Homes Inc.,co_a52919ef9d10,First Lien,Real Estate,,7.44%,SOFR,2.11%,2019-09-30,2026-12-31,25,25,16,0.0,25,,,,MRCC,2024-05-08
-American Community Homes Inc.,co_a52919ef9d10,First Lien,Real Estate,,7.44%,SOFR,2.11%,2019-12-30,2026-12-31,122,122,77,0.0,122,,,,MRCC,2024-05-08
-American Community Homes Inc.,co_a52919ef9d10,First Lien,Real Estate,,,,,,,,4156,,,,,,,MRCC,2024-05-08
-American Community Homes Inc.,co_a52919ef9d10,First Lien,Real Estate,,,,,,,,524,,,,,,,MRCC,2024-05-08
-American Community Homes Inc.,co_a52919ef9d10,First Lien,Real Estate,,,,,,,,1926,,,,,,,MRCC,2024-05-08
-American Community Homes Inc.,co_a52919ef9d10,First Lien,Real Estate,,,,,,,,3566,,,,,,,MRCC,2024-05-08
-American Community Homes Inc.,co_a52919ef9d10,First Lien,Real Estate,,,,,,,,17,,,,,,,MRCC,2024-05-08
-American Community Homes Inc.,co_a52919ef9d10,First Lien,Real Estate,,,,,,,,82,,,,,,,MRCC,2024-05-08
-American Community Homes Inc.,co_a52919ef9d10,First Lien,Real Estate,,7.47%,SOFR,2.11%,2014-07-22,2026-12-31,12648,12647,811,,,,,,MRCC,2024-05-08
-American Community Homes Inc.,co_a52919ef9d10,Revolver,Real Estate,,7.44%,SOFR,2.11%,2020-03-30,2026-12-31,2500,,,0.0,,2500,2500,,MRCC,2024-05-08
-HFZ Capital Group LLC,co_f5ccc3346d14,First Lien,Real Estate,,17.96%,Prime,9.46%,2017-10-20,,13242,13,,,,,,,MRCC,2024-05-08
-HFZ Capital Group LLC,co_f5ccc3346d14,First Lien,Real Estate,,,,,,,,16423,,,,,,,MRCC,2024-05-08
-HFZ Capital Group LLC,co_f5ccc3346d14,First Lien,Real Estate,,,,,,,,5901,,,,,,,MRCC,2024-05-08
-Truck-Lite Co. LLC,co_d7ebf153506a,First Lien,Automotive,11.71%,,SOFR,6.35%,,2026-12-14,1674,,1670,,,,,,MRCC,2024-05-08
-Truck-Lite Co. LLC,co_d7ebf153506a,First Lien,Automotive,11.71%,,SOFR,6.35%,,2026-12-14,248,,248,,,,,,MRCC,2024-05-08
-Truck-Lite Co. LLC,co_d7ebf153506a,First Lien,Automotive,11.71%,,SOFR,6.35%,,2026-12-14,42,,42,,,,,,MRCC,2024-05-08
-Trident Maritime Systems,co_53cdbd7574ab,First Lien,Aerospace & Defense,10.96%,,SOFR,5.65%,,2027-02-26,2406,,,,,,,,MRCC,2024-05-08
-Trident Maritime Systems,co_53cdbd7574ab,First Lien,Aerospace & Defense,10.96%,,SOFR,5.65%,,2027-02-26,746,,741,,,,,,MRCC,2024-05-08
-Trident Maritime Systems,co_53cdbd7574ab,First Lien,Aerospace & Defense,10.96%,,SOFR,5.65%,,2027-02-26,188,,186,,,,,,MRCC,2024-05-08
-Trident Maritime Systems,co_53cdbd7574ab,Revolver,Aerospace & Defense,10.93%,,SOFR,5.60%,,2027-02-26,319,,317,,,,,,MRCC,2024-05-08
-Accelerate Auto Works Intermediate,co_e87038fd55ec,First Lien,Automotive,10.24%,,SOFR,4.90%,,2027-12-01,1354,,1337,,,,,,MRCC,2024-05-08
-Accelerate Auto Works Intermediate,co_e87038fd55ec,First Lien,Automotive,10.22%,,SOFR,4.90%,,2027-12-01,387,,382,,,,,,MRCC,2024-05-08
-Accelerate Auto Works Intermediate,co_e87038fd55ec,Revolver,Automotive,10.24%,,SOFR,4.90%,,2027-12-01,132,,21,,,,,,MRCC,2024-05-08
-SW Ingredients Holdings,co_49ca471a12f7,First Lien,Food & Beverage,10.93%,,SOFR,5.50%,,2025-07-03,3534,,3534,,,,,,MRCC,2024-05-08
-MacQueen Equipment,co_f6f0efca3b25,First Lien,Industrial Services,10.81%,,SOFR,5.51%,,2028-01-07,2070,,2069,,,,,,MRCC,2024-05-08
-MacQueen Equipment,co_f6f0efca3b25,Delayed Draw,Industrial Services,10.81%,,SOFR,5.51%,,2028-01-07,590,,334,,,,,,MRCC,2024-05-08
-MacQueen Equipment,co_f6f0efca3b25,Revolver,Industrial Services,10.81%,,SOFR,5.51%,,2028-01-07,296,,,,,,,,MRCC,2024-05-08
-Phoenix Chemical Holding Company,co_55078d2025c1,First Lien,Chemicals,12.44%,,SOFR,7.11%,,2024-08-02,1129,,,,,,,,MRCC,2024-05-08
-Natus Medical,co_f8b42777095c,First Lien,Healthcare Services,10.96%,,SOFR,5.65%,,2029-07-20,4937,,4666,,,,,,MRCC,2024-05-08
-Excel Fitness Holdings,co_f60ab2c38c7b,First Lien,Food & Beverage,10.70%,,SOFR,5.40%,,2029-04-27,4309,,4309,,,,,,MRCC,2024-05-08
-Excel Fitness Holdings,co_f60ab2c38c7b,Revolver,Food & Beverage,10.70%,,SOFR,5.40%,,2028-04-28,625,,,,,,,,MRCC,2024-05-08
-North Haven Spartan US Holdco,co_6cd30c618f32,First Lien,Food & Beverage,11.57%,,SOFR,6.25%,,2026-06-05,2244,,2244,,,,,,MRCC,2024-05-08
-Eliassen Group,co_6f2538aae5b8,First Lien,Business Services,10.81%,,SOFR,5.50%,,2028-04-14,3209,,3177,,,,,,MRCC,2024-05-08
-Express Wash Acquisition Company LLC,co_86fb17eee460,Preferred Equity,Other,,8.00%,N/A,,2023-11-15,,,31,32,0.0,31,,,,MRCC,2024-05-08
-Express Wash Acquisition Company LLC,co_86fb17eee460,Preferred Equity,Other,,8.00%,N/A,,2023-11-15,,,127,26,0.0,127,,,,MRCC,2024-05-08
-IDIG Parent LLC,co_8e32056fc810,Common Equity,Other,,,N/A,,2021-01-04,,,250,306,0.002,250,,,,MRCC,2024-05-08
-Kar Wash Holdings LLC,co_b542fcaa968e,Common Equity,Other,,,N/A,,2022-02-28,,,103,75,0.0,103,,,,MRCC,2024-05-08
-Kar Wash Holdings LLC,co_b542fcaa968e,Preferred Equity,Other,,,N/A,,2023-06-27,,,11,11,0.0,11,,,,MRCC,2024-05-08
-American Broadband and Telecommunications Company LLC,co_665ea27ff2f4,Warrants,Telecommunications,,,N/A,,2022-06-10,2032-06-10,,42,46,0.0,,,,,MRCC,2024-05-08
-American Broadband and Telecommunications Company LLC,co_665ea27ff2f4,Warrants,Telecommunications,,,N/A,,2022-06-10,2032-06-10,,42,49,0.0,42,,,,MRCC,2024-05-08
-Epika Fleet Services Inc.,co_ab816d807d8f,Preferred Equity,Transportation,,,N/A,,2024-03-18,,,196,196,0.001,,,,,MRCC,2024-05-08
-Nearly Natural Inc.,co_f9178091c061,Common Equity,Other,,,N/A,,2021-08-27,,,61,28,0.0,61,,,,MRCC,2024-05-08
-TJ Management HoldCo LLC,co_a053ad5b138a,Revolver,Food & Beverage,10.94%,,SOFR,5.61%,2020-09-09,2024-06-28,477,,,,0.0,,,,MRCC,2024-05-08
-TJ Management HoldCo LLC,co_a053ad5b138a,Revolver,Business Services,,,,,,,,80,,,,,,,MRCC,2024-05-08
-TJ Management HoldCo LLC,co_a053ad5b138a,Revolver,Food & Beverage,10.94%,,SOFR,5.61%,2020-09-09,2024-06-28,477,,,0.0,,477,477,,MRCC,2024-05-08
-Onit Inc.,co_969cfd142b37,First Lien,Business Services,12.73%,,SOFR,7.50%,2021-12-20,2025-05-02,1680,1669,1680,0.008,,,,,MRCC,2024-05-08
-VB E1 LLC,co_596baf56d46e,First Lien,Telecommunications,13.05%,,SOFR,7.75%,2020-11-18,2026-11-18,2250,2250,2250,0.011,,,,,MRCC,2024-05-08
-MoneyLion Inc.,co_98342c1d6948,Second Lien,Financial Services,14.82%,,SOFR,9.51%,2022-03-25,2026-03-24,4875,4842,4875,0.024,,,,,MRCC,2024-05-08
-Thrasio LLC,co_8e7941ae97b3,Second Lien,Consumer Products,,15.44%,SOFR,10.11%,2024-03-01,2024-07-01,135,135,135,0.001,,,,,MRCC,2024-05-08
-Thrasio LLC,co_8e7941ae97b3,Second Lien,Consumer Products,16.50%,,Prime,8.00%,2020-12-18,2026-12-18,2297,2297,945,0.004,,,,,MRCC,2024-05-08
-Florida East Coast Industries LLC,co_7e1dd8718289,Second Lien,Real Estate,,16.00%,N/A,,2021-08-09,2024-06-28,785,,,0.004,,,,,MRCC,2024-05-08
-Witkoff/Monroe 700 JV LLC,co_a907060aaecd,Second Lien,Real Estate,8.00%,4.00%,N/A,,2021-07-02,2026-07-02,6971,6,,,,,,,MRCC,2024-05-08
-Ascent Midco LLC,co_2150082af3f6,Common Equity,Healthcare Services,,8.00%,N/A,,2020-02-05,,,2032,1932,0.009,2032,,,,MRCC,2024-05-08
-Familia Dental Group Holdings LLC,co_e66177915503,Common Equity,Healthcare Services,,,N/A,,2016-04-08,,,4467,2363,0.012,4467,,,,MRCC,2024-05-08
-Familia Dental Group Holdings LLC,co_e66177915503,Common Equity,Healthcare Services,,,,,,,4213,2226,1.1,,,,,fair_value_suspicious_vs_size,MRCC,2024-05-08
-NECB Collections LLC,co_ae3ce6a1bd99,Common Equity,Business Services,,,N/A,,2019-06-21,,,1458,,0.0,1458,,,,MRCC,2024-05-08
-NECB Collections LLC,co_ae3ce6a1bd99,Common Equity,Consumer Products,,,,,,,1458,,0.0,,,,,,MRCC,2024-05-08
-MRCC Senior Loan Fund I LLC,co_0d21d6dc97dd,Partnership Interest,Financial Services,,,N/A,,2017-10-31,,,42650,32990,0.164,42650,,,,MRCC,2024-05-08
-Avison Young (USA) Inc.,co_9c7accf0770d,Preferred Equity,Real Estate,,12.50%,N/A,,,1605,1605,722,,,,,,,MRCC,2024-05-08
-Avison Young (USA) Inc.,co_9c7accf0770d,Common Equity,Real Estate,,,N/A,,,1,1,,,0.01,,,,,MRCC,2024-05-08
-BLST Operating Company LLC,co_83695cc71fd2,First Lien,Retail,1.00%,12.96%,SOFR,9.50%,2020-08-28,2025-08-28,660,423,620,0.003,423,,,,MRCC,2024-05-08
-BLST Operating Company LLC,co_83695cc71fd2,First Lien,Retail,1.00%,12.94%,SOFR,9.50%,2020-08-28,2025-08-28,682,445,627,0.003,445,,,,MRCC,2024-05-08
-Aras Corp.,co_656eade16062,First Lien,Business Services,9.04%,3.25%,SOFR,6.90%,2021-04-13,2027-04-13,2233,2214,2250,0.011,2214,,,,MRCC,2024-05-08
-Aras Corp.,co_656eade16062,First Lien,Business Services,8.98%,3.25%,SOFR,6.90%,2021-04-13,2027-04-13,2252,2235,2251,0.011,2235,,,,MRCC,2024-05-08
-Aras Corp.,co_656eade16062,Revolver,Business Services,14.00%,,Prime,5.50%,2021-04-13,2027-04-13,150,130,130,0.001,130,,,,MRCC,2024-05-08
-Burroughs Inc.,co_f94fb242fc61,First Lien,Business Services,12.94%,,SOFR,7.60%,2017-12-22,2024-12-20,4901,4901,4901,0.024,4901,,,,MRCC,2024-05-08
-Burroughs Inc.,co_f94fb242fc61,Revolver,Business Services,12.94%,,SOFR,7.60%,2017-12-22,2024-12-20,1215,1215,1215,0.006,1215,,,,MRCC,2024-05-08
-HS4 Acquisitionco Inc.,co_de75a5f18eca,First Lien,Business Services,12.21%,,SOFR,6.85%,2019-07-09,2025-07-09,9799,9735,9769,0.048,9735,,,,MRCC,2024-05-08
-HS4 Acquisitionco Inc.,co_de75a5f18eca,Revolver,Business Services,12.21%,,SOFR,6.85%,2019-07-09,2025-07-09,817,549,548,0.003,549,,,,MRCC,2024-05-08
-iCIMS Inc.,co_bf6839dcfbb8,First Lien,Business Services,12.62%,,SOFR,7.25%,2022-10-24,2028-08-18,2500,2462,2509,0.012,246,,,,MRCC,2024-05-08
-Sparq Holdings Inc.,co_618f81314875,Delayed Draw,Business Services,11.43%,,SOFR,6.25%,2023-06-16,2029-06-15,222,,,0.0,,,,,MRCC,2024-05-08
-Sparq Holdings Inc.,co_618f81314875,Revolver,Business Services,11.43%,,SOFR,6.25%,2023-06-16,2029-06-15,205,,,0.0,,,,,MRCC,2024-05-08
-Sparq Holdings Inc.,co_618f81314875,Revolver,Software,11.56%,,SOFR,6.25%,2023-06-16,2029-06-15,205,,,0.0,,,,,MRCC,2024-05-08
-Destination Media Inc.,co_325a5e67cf9b,First Lien,Media & Entertainment,12.43%,,SOFR,7.25%,2023-06-21,2028-06-21,995,963,1010,0.005,963,,,,MRCC,2024-05-08
-Destination Media Inc.,co_325a5e67cf9b,First Lien,Media & Entertainment,12.43%,,SOFR,7.25%,2023-06-21,2028-06-21,993,961,1012,0.005,,,,,MRCC,2024-05-08
-Destination Media Inc.,co_325a5e67cf9b,Delayed Draw,Media & Entertainment,12.35%,,SOFR,7.00%,2023-06-21,2028-06-21,500,61,62,0.0,61,,,,MRCC,2024-05-08
-Destination Media Inc.,co_325a5e67cf9b,Delayed Draw,Media & Entertainment,12.45%,,SOFR,7.15%,2023-06-21,2028-06-21,500,61,62,0.0,,,,,MRCC,2024-05-08
-Destination Media Inc.,co_325a5e67cf9b,Revolver,Media & Entertainment,12.35%,,SOFR,7.00%,2023-06-21,2028-06-21,103,21,21,0.0,21,,,,MRCC,2024-05-08
-Destination Media Inc.,co_325a5e67cf9b,Revolver,Media & Entertainment,12.45%,,SOFR,7.15%,2023-06-21,2028-06-21,103,21,21,0.0,,,,,MRCC,2024-05-08
-North Haven USHC Acquisition Inc.,co_82ff1bc7b91c,First Lien,Media & Entertainment,11.95%,,SOFR,6.60%,2020-10-30,2025-10-30,2425,2404,2399,0.012,2404,,,,MRCC,2024-05-08
-North Haven USHC Acquisition Inc.,co_82ff1bc7b91c,First Lien,Media & Entertainment,11.73%,,SOFR,6.35%,2022-07-29,2025-10-30,2566,2542,2528,0.012,2542,,,,MRCC,2024-05-08
-North Haven USHC Acquisition Inc.,co_82ff1bc7b91c,First Lien,Media & Entertainment,11.95%,,SOFR,6.60%,2021-03-12,2025-10-30,703,703,695,0.003,703,,,,MRCC,2024-05-08
-North Haven USHC Acquisition Inc.,co_82ff1bc7b91c,First Lien,Media & Entertainment,11.91%,,SOFR,6.60%,2020-10-30,2025-10-30,2419,2401,2419,0.012,,,,,MRCC,2024-05-08
-North Haven USHC Acquisition Inc.,co_82ff1bc7b91c,First Lien,Media & Entertainment,11.67%,,SOFR,6.35%,2022-07-29,2025-10-30,2559,2539,2559,0.013,,,,,MRCC,2024-05-08
-North Haven USHC Acquisition Inc.,co_82ff1bc7b91c,First Lien,Media & Entertainment,11.91%,,SOFR,6.60%,2021-03-12,2025-10-30,701,701,701,0.003,,,,,MRCC,2024-05-08
-North Haven USHC Acquisition Inc.,co_82ff1bc7b91c,First Lien,Media & Entertainment,11.91%,,SOFR,6.60%,2021-09-03,2025-10-30,1416,1416,1416,0.007,,,,,MRCC,2024-05-08
-Independence Buyer,co_a5402fb44dd3,First Lien,Consumer Products,11.28%,,SOFR,5.90%,2021-08-03,2026-08-03,5499,,,0.026,,,,,MRCC,2024-05-08
-Independence Buyer,co_a5402fb44dd3,Revolver,Consumer Products,11.28%,,SOFR,5.90%,2021-08-03,2026-08-03,1423,,,0.0,,,,,MRCC,2024-05-08
-Recycled Plastics Industries,co_36ccad8335bd,First Lien,Consumer Products,12.19%,0.75%,SOFR,7.60%,2021-08-04,2026-08-04,2811,2778,2776,0.014,2778,,,,MRCC,2024-05-08
-Recycled Plastics Industries,co_36ccad8335bd,Revolver,Consumer Products,12.19%,0.75%,SOFR,7.60%,2021-08-04,2026-08-04,284,,,0.0,,,,,MRCC,2024-05-08
-The Kyjen Company,co_63100d10b621,First Lien,Consumer Products,12.13%,1.00%,SOFR,7.75%,2021-05-14,2026-04-03,988,982,978,0.005,982,,,,MRCC,2024-05-08
-The Kyjen Company,co_63100d10b621,First Lien,Consumer Products,,12.96%,SOFR,7.50%,2022-09-13,2026-04-03,1,1,1,0.0,1,,,,MRCC,2024-05-08
-The Kyjen Company,co_63100d10b621,Revolver,Consumer Products,12.13%,1.00%,SOFR,7.75%,2021-05-14,2026-04-03,105,,,0.0,,,,,MRCC,2024-05-08
-Thrasio,co_8e7941ae97b3,First Lien,Consumer Products,12.61%,,SOFR,7.26%,2020-12-18,2026-12-18,2433,2432,1408,0.007,2432,,,,MRCC,2024-05-08
-Quest Resource Management Group,co_f31abebb69f6,First Lien,Environmental Services,11.96%,,SOFR,6.61%,2020-10-19,2025-10-20,852,795,857,,,,,,MRCC,2024-05-08
-KL Moon Acquisition LLC,co_eb3324f394e2,Common Equity,Healthcare Services,,,N/A,,2023-01-31,,,,0.2,,,,,,MRCC,2024-05-08
-NationsBenefits LLC,co_163adf469b21,Preferred Equity,Healthcare Services,,5.00%,N/A,,2021-08-20,,,781,706,0.003,781,,,,MRCC,2024-05-08
-NationsBenefits LLC,co_163adf469b21,Common Equity,Healthcare Services,,,N/A,,2021-08-20,,,153,,0.0,153,,,,MRCC,2024-05-08
-NQ PE Project Colosseum Midco Inc.,co_fdf0da051d55,Common Equity,Healthcare Services,,,N/A,,2022-10-04,,,327,326,0.002,327,,,,MRCC,2024-05-08
-Seran BioScience LLC,co_ffa9b0a78296,Common Equity,Pharmaceuticals & Biotechnology,,,N/A,,2020-12-31,,,334,755,0.004,334,,,,MRCC,2024-05-08
-Amelia Holding II LLC,co_43fb318cfdbe,Warrants,Software,,,N/A,,2022-12-21,2032-12-21,,,29,0.0,,,,,MRCC,2024-05-08
-Drawbridge Partners LLC,co_0ce0f67d6940,Common Equity,Software,,,N/A,,2022-09-01,,,130,147,0.001,130,,,,MRCC,2024-05-08
-Planful Inc.,co_7f1b0316e6b6,Common Equity,Software,,8.00%,N/A,,2018-12-28,,,473,942,0.005,473,,,,MRCC,2024-05-08
-Recorded Future Inc.,co_473199530367,Common Equity,Software,,,N/A,,2019-07-03,,,81,261,0.001,81,,,,MRCC,2024-05-08
-Sparq Holdings Inc.,co_618f81314875,Common Equity,Software,,,N/A,,2023-06-15,,,300,312,0.002,300,,,,MRCC,2024-05-08
-INH Buyer Inc.,co_3e1130cb1b6a,First Lien,Healthcare Services,8.95%,3.50%,SOFR,7.00%,2021-06-30,2028-06-28,3026,,,0.014,,,,,MRCC,2024-05-08
-KL Moon Acquisition LLC,co_eb3324f394e2,First Lien,Healthcare Services,12.13%,,SOFR,6.75%,2023-02-01,2029-02-01,4975,4843,4975,0.024,4843,,,,MRCC,2024-05-08
-KL Moon Acquisition LLC,co_eb3324f394e2,Delayed Draw,Healthcare Services,12.14%,,SOFR,6.75%,2023-02-01,2029-02-01,1702,989,989,0.005,989,,,,MRCC,2024-05-08
-KL Moon Acquisition LLC,co_eb3324f394e2,Revolver,Healthcare Services,12.13%,,SOFR,6.75%,2023-02-01,2029-02-01,813,352,352,0.002,352,,,,MRCC,2024-05-08
-NationsBenefits LLC,co_163adf469b21,First Lien,Healthcare Services,12.44%,,SOFR,7.10%,2021-08-20,2027-08-26,3920,3873,3951,0.019,3873,,,,MRCC,2024-05-08
-NationsBenefits LLC,co_163adf469b21,First Lien,Healthcare Services,12.44%,,SOFR,7.10%,2022-08-26,2027-08-26,4672,4672,4708,0.023,4672,,,,MRCC,2024-05-08
-NationsBenefits LLC,co_163adf469b21,First Lien,Healthcare Services,12.44%,,SOFR,7.10%,2022-08-26,2027-08-26,5065,5065,5104,0.025,5065,,,,MRCC,2024-05-08
-NationsBenefits LLC,co_163adf469b21,Revolver,Healthcare Services,12.44%,,SOFR,7.10%,2021-08-20,2027-08-26,2222,889,889,0.005,889,,,,MRCC,2024-05-08
-NECB Collections LLC,co_ae3ce6a1bd99,Revolver,Consumer Products,16.94%,,LIBOR,11.00%,2019-06-25,,1356,1312,424,0.002,1312,,,,MRCC,2024-05-08
-NECB Collections LLC,co_ae3ce6a1bd99,Revolver,Financial Services,,,,,,,,382,,,,,,,MRCC,2024-05-08
-SFR Holdco LLC,co_cdda9834a0e0,Second Lien,Real Estate,8.00%,,N/A,,2021-08-06,2028-07-28,5850,5850,5539,0.027,5850,,,,MRCC,2024-05-08
-SFR Holdco LLC,co_cdda9834a0e0,Second Lien,Real Estate,,,,,,,,5850,,,,,,,MRCC,2024-05-08
-TJ Management HoldCo LLC,co_a053ad5b138a,Common Equity,Food & Beverage,,,,,,,1631,3229,1.6,,,,,fair_value_suspicious_vs_size,MRCC,2024-05-08
-TJ Management HoldCo LLC,co_a053ad5b138a,Common Equity,Business Services,,,N/A,,,,,2893,,,,,,,MRCC,2024-05-08
-MC Asset Management (Corporate) LLC,co_18c2ea37f53b,Partnership Interest,Real Estate,,,,,,,793,1045,0.5,,,,,type_hint_corporate_from_name,MRCC,2024-05-08
-MC Asset Management (Corporate) LLC,co_18c2ea37f53b,Partnership Interest,Financial Services,,,N/A,,,,,1678,,,,,,type_hint_corporate_from_name,MRCC,2024-05-08
-SFR Holdco LLC,co_cdda9834a0e0,Partnership Interest,Real Estate,,,,,,,3900,4372,2.1,,,,,fair_value_suspicious_vs_size,MRCC,2024-05-08
-SFR Holdco LLC,co_cdda9834a0e0,Partnership Interest,Real Estate,,,N/A,,,,,3900,,,,,,,MRCC,2024-05-08
-Hastings Manufacturing Company,co_a8dd264e5479,Revolver,Automotive,12.93%,,SOFR,7.60%,2023-03-29,2025-12-30,691,,,0.0,,,,,MRCC,2024-05-08
-Panda Acquisition LLC,co_cf6870613bd0,First Lien,Automotive,11.66%,,SOFR,6.35%,2022-12-20,2028-10-18,4359,3689,,,,,,,MRCC,2024-05-08
-Vice Acquisition Holdco LLC,co_7130eb4e5962,Subordinated Debt,Media & Entertainment,,,N/A,,2019-05-02,,637,,,0.0,,,,,MRCC,2024-05-08
-Vice Acquisition Holdco LLC,co_7130eb4e5962,Subordinated Debt,Media & Entertainment,,,N/A,,2019-11-04,,122,122,,0.0,122,,,,MRCC,2024-05-08
-Vice Acquisition Holdco LLC,co_7130eb4e5962,Subordinated Debt,Media & Entertainment,,,N/A,,2019-05-02,,200,200,,0.0,200,,,,MRCC,2024-05-08
-Vice Acquisition Holdco LLC,co_7130eb4e5962,Subordinated Debt,Media & Entertainment,,,N/A,,2019-05-02,,76,76,,0.0,76,,,,MRCC,2024-05-08
-Vice Acquisition Holdco LLC,co_7130eb4e5962,Subordinated Debt,Media & Entertainment,,13.57%,SOFR,8.26%,2023-07-31,2028-01-31,528,528,402,0.002,528,,,,MRCC,2024-05-08
-Vice Acquisition Holdco LLC,co_7130eb4e5962,Subordinated Debt,Media & Entertainment,,13.57%,SOFR,8.26%,2023-07-31,2028-01-31,671,671,628,0.003,671,,,,MRCC,2024-05-08
-Vice Acquisition Holdco LLC,co_7130eb4e5962,Subordinated Debt,Media & Entertainment,,13.57%,SOFR,8.26%,2023-07-31,2028-01-31,203,203,190,0.001,203,,,,MRCC,2024-05-08
-Vice Acquisition Holdco LLC,co_7130eb4e5962,Subordinated Debt,Media & Entertainment,,13.57%,SOFR,8.26%,2023-09-08,2028-01-31,359,353,331,0.002,353,,,,MRCC,2024-05-08
-Vice Acquisition Holdco LLC,co_7130eb4e5962,Subordinated Debt,Media & Entertainment,,13.64%,SOFR,8.26%,2023-07-31,2028-01-31,1563,1563,464,0.002,1563,,,,MRCC,2024-05-08
-Forman Mills Inc.,co_7c400f752083,Subordinated Debt,Retail,,3.90%,N/A,3.90%,2023-04-27,2028-06-20,1308,1308,840,0.004,1308,,,,MRCC,2024-05-08
-Forman Mills Inc.,co_7c400f752083,Subordinated Debt,Retail,,3.90%,N/A,3.90%,2023-04-27,2028-06-20,1308,1308,955,0.005,1308,,,,MRCC,2024-05-08
-Education Corp.,co_3e3586565e38,Subordinated Debt,Education,14.00%,5.50%,Prime,11.00%,2015-09-03,,833,831,2174,0.011,831,,,,MRCC,2024-05-08
-MEI Buyer LLC,co_a2bda52004f7,Common Equity,Construction,,,N/A,,2023-06-30,,,178,200,0.001,178,,,,MRCC,2024-05-08
-MEI Buyer LLC,co_a2bda52004f7,Common Equity,Construction,,,,,,,155,158,0.1,,,,,,MRCC,2024-05-08
-Quest Resource Management Group LLC,co_f31abebb69f6,Warrants,Environmental Services,,,N/A,,2020-10-19,2028-03-17,,67,252,0.001,67,,,,MRCC,2024-05-08
-Quest Resource Management Group LLC,co_f31abebb69f6,Warrants,Environmental Services,,,N/A,,2021-10-19,2028-03-17,,,177,0.001,,,,,MRCC,2024-05-08
-Quest Resource Management Group LLC,co_f31abebb69f6,Warrants,Environmental Services,,,,,2028-03-17,,67,257,0.1,,,,,,MRCC,2024-05-08
-Binah Capital Group Inc.,co_24b9bbbdf7e1,Common Equity,Financial Services,,,N/A,,2024-03-15,,234,451,0.2,,,,,,MRCC,2024-05-08
-J2 BWA Funding LLC,co_ef9b78412ff9,Other,Financial Services,,,N/A,,2020-12-24,,,38,0.0,,,,,,MRCC,2024-05-08
-Residential Homes for Rent LLC,co_619680a2a20a,Preferred Equity,Real Estate,,,N/A,,2024-03-05,,1114,1114,0.6,,,,,fair_value_suspicious_vs_size,MRCC,2024-05-08
-Witkoff/Monroe 700 JV LLC,co_a907060aaecd,Preferred Equity,Real Estate,,,N/A,,2021-07-02,,3,2556,1.3,0.03,,,,,MRCC,2024-05-08
-Bluesight Inc.,co_bc9dbc3292ea,Preferred Equity,Healthcare Services,,9.00%,N/A,,2023-07-17,,21,19,0.0,0.21,,,,,MRCC,2024-05-08
-Dorado Acquisition Inc.,co_5f5c69f4154a,Common Equity,Healthcare Services,,,N/A,,2021-06-30,,207,209,0.1,,,,,,MRCC,2024-05-08
-Dorado Acquisition Inc.,co_5f5c69f4154a,Common Equity,Healthcare Services,,,N/A,,2021-06-30,,,98,0.1,,,,,,MRCC,2024-05-08
-Forest Buyer LLC,co_971891319115,Preferred Equity,Healthcare Services,,8.00%,N/A,,2024-03-15,,300,300,0.1,,,,,,MRCC,2024-05-08
-LSCS Holdings Inc.,co_a9729536583e,First Lien,Healthcare Services,9.97%,,SOFR,4.61%,,2028-12-15,1809,,, ,,,,,MRCC,2024-05-08
-Natus Medical Inc.,co_f8b42777095c,First Lien,Healthcare Services,10.85%,,SOFR,5.50%,,2029-07-20,4950,,4604,,,,,,MRCC,2024-05-08
-Natus Medical Inc.,co_f8b42777095c,First Lien,Healthcare Services,10.85%,,SOFR,5.50%,,2029-07-20,4950,,, ,,,,,MRCC,2024-05-08
-Paragon Healthcare Inc.,co_34864bd1fa17,First Lien,Healthcare Services,11.25%,,SOFR,5.85%,,2027-01-19,2105,,2083,,,,,,MRCC,2024-05-08
-Paragon Healthcare Inc.,co_34864bd1fa17,First Lien,Healthcare Services,11.22%,,SOFR,5.75%,,2027-01-19,363,,359,,,,,,MRCC,2024-05-08
-Paragon Healthcare Inc.,co_34864bd1fa17,Revolver,Healthcare Services,11.22%,,SOFR,5.75%,,2027-01-19,490,,,,,,,,MRCC,2024-05-08
-Radiology Partners Inc.,co_e642f1128e0a,First Lien,Healthcare Services,10.18%,,SOFR,4.68%,,2025-07-09,4737,,3844,,,,,,MRCC,2024-05-08
-Centaur (Palm Beach) Owner LLC,co_b6590e28d7e9,First Lien,Real Estate,13.57%,,SOFR,8.25%,2022-05-03,2025-04-30,2784,,,0.014,,,,,MRCC,2024-05-08
-Centaur (Palm Beach) Owner LLC,co_b6590e28d7e9,First Lien,Real Estate,13.57%,,SOFR,8.25%,2022-05-03,2025-04-30,285,285,287,0.002,,,,,MRCC,2024-05-08
-Centaur (Palm Beach) Owner LLC,co_b6590e28d7e9,Delayed Draw,Real Estate,13.57%,,SOFR,8.25%,2023-10-06,2027-04-30,837,474,478,0.002,,,,,MRCC,2024-05-08
-Centaur (Palm Beach) Owner LLC,co_b6590e28d7e9,Revolver,Real Estate,13.58%,,SOFR,8.25%,2022-05-03,2025-04-30,1395,656,656,0.003,,,,,MRCC,2024-05-08
-Bluesight Inc.,co_bc9dbc3292ea,First Lien,Healthcare Services,12.55%,,SOFR,7.25%,2023-07-17,2029-07-17,2000,1945,1998,0.01,,,,,MRCC,2024-05-08
-Bluesight Inc.,co_bc9dbc3292ea,Revolver,Healthcare Services,12.55%,,SOFR,7.25%,2023-07-17,2029-07-17,174,,,0.0,,,,,MRCC,2024-05-08
-Brickell Bay Acquisition Corp.,co_3984b522e3a7,First Lien,Healthcare Services,11.98%,,SOFR,6.65%,2021-02-12,2026-02-12,1856,1833,1856,0.009,,,,,MRCC,2024-05-08
-Caravel Autism Health LLC,co_8dfdd4d66957,First Lien,Healthcare Services,11.09%,,SOFR,5.76%,2021-06-30,2027-06-30,4999,4937,4999,0.025,,,,,MRCC,2024-05-08
-Ascent Midco LLC,co_2150082af3f6,First Lien,Business Services,,,,,,,,6131,,,,,,,MRCC,2024-05-08
-C Parent Holdings LLC,co_0cc60535765b,First Lien,Business Services,,,,,,,,146,,,,,,,MRCC,2024-05-08
-MC Asset Management (Corporate) LLC,co_18c2ea37f53b,First Lien,Financial Services,,,,,,,,8824,,,,,,type_hint_corporate_from_name,MRCC,2024-05-08
-MC Asset Management (Corporate) LLC,co_18c2ea37f53b,Delayed Draw,Financial Services,,,,,,,,2634,,,1586,,,type_hint_corporate_from_name,MRCC,2024-05-08
-Mnine Holdings Inc.,co_57392f4bd3d2,First Lien,Business Services,,,,,,,,5561,,,,,,,MRCC,2024-05-08
-Mnine Holdings Inc.,co_57392f4bd3d2,Revolver,Business Services,,,,,,,,511,,,293,,,,MRCC,2024-05-08
-Second Avenue SFR Holdings II LLC,co_d799a2ed002d,Revolver,Real Estate,,,,,,,,4743,,,,,,,MRCC,2024-05-08
-Born To Run LLC,co_7434140a1cd2,Partnership Interest,Automotive,,,,,,,269,,0.0,,,,,,MRCC,2024-05-08
-Lifted Trucks Holdings LLC,co_f2037226ccf7,Partnership Interest,Automotive,,,,,,,111,57,0.0,,,,,,MRCC,2024-05-08
-MV Receivables II LLC,co_662dd9b092bf,Partnership Interest,Financial Services,,,,,,,600,,0.0,,,,,,MRCC,2024-05-08
-MV Receivables II LLC,co_662dd9b092bf,Warrants,Financial Services,,,,,2031-07-28,,363,,0.0,,,,,,MRCC,2024-05-08
-Valudor Products LLC,co_351ea9689119,Partnership Interest,Chemicals,,10.00%,N/A,,2018-06-18,,,501,307,0.002,501,,,,MRCC,2024-05-08
-Independence Buyer Inc.,co_a5402fb44dd3,Partnership Interest,Consumer Products,,,,,,,81,56,0.0,,,,,,MRCC,2024-05-08
-Crownpeak Technology Inc.,co_44590b8066d3,Revolver,Media & Entertainment,12.07%,,SOFR,6.75%,2019-02-28,2025-02-28,500,,,0.002,,500,500,,MRCC,2024-05-08
-Sports Operating Holdings II LLC,co_066f6a0da6b7,First Lien,Media & Entertainment,11.18%,,SOFR,5.85%,2022-11-03,2027-11-03,2955,2899,2977,0.015,2899,,,,MRCC,2024-05-08
-Sports Operating Holdings II LLC,co_066f6a0da6b7,Delayed Draw,Media & Entertainment,11.18%,,SOFR,5.85%,2022-11-03,2027-11-03,2398,241,242,0.001,241,2398,2157,,MRCC,2024-05-08
-Sports Operating Holdings II LLC,co_066f6a0da6b7,Revolver,Media & Entertainment,11.18%,,SOFR,5.85%,2022-11-03,2027-11-03,519,,,0.0,,519,519,,MRCC,2024-05-08
-V10 Entertainment Inc.,co_e2366ff7dad4,First Lien,Media & Entertainment,12.43%,,SOFR,7.10%,2023-01-12,2028-01-12,3970,3874,4035,0.02,3874,,,,MRCC,2024-05-08
-V10 Entertainment Inc.,co_e2366ff7dad4,Revolver,Media & Entertainment,12.43%,,SOFR,7.10%,2023-01-12,2028-01-12,458,,,0.0,,458,458,,MRCC,2024-05-08
-NQ PE Project Colosseum Midco Inc.,co_fdf0da051d55,Delayed Draw,Automotive,10.95%,,SOFR,5.65%,2022-10-04,2028-10-04,778,,,0.0,,778,778,,MRCC,2024-05-08
-NQ PE Project Colosseum Midco Inc.,co_fdf0da051d55,Revolver,Automotive,10.95%,,SOFR,5.65%,2022-10-04,2028-10-04,438,,,0.0,,438,438,,MRCC,2024-05-08
-Seran BioScience LLC,co_ffa9b0a78296,First Lien,Automotive,11.58%,,SOFR,6.25%,2020-12-31,2027-07-08,2425,2406,2425,0.012,2406,,,,MRCC,2024-05-08
-Seran BioScience LLC,co_ffa9b0a78296,First Lien,Automotive,11.54%,,SOFR,6.25%,2022-07-08,2027-07-08,2751,2751,2751,0.013,2751,,,,MRCC,2024-05-08
-Seran BioScience LLC,co_ffa9b0a78296,First Lien,Automotive,11.49%,,SOFR,6.25%,2023-08-21,2027-07-08,1444,1444,1444,0.007,1444,,,,MRCC,2024-05-08
-Seran BioScience LLC,co_ffa9b0a78296,Revolver,Automotive,11.58%,,SOFR,6.25%,2020-12-31,2027-07-08,444,,,0.0,,444,444,,MRCC,2024-05-08
-TigerConnect Inc.,co_b5bd0073c89c,First Lien,Automotive,12.21%,,SOFR,6.90%,2022-02-16,2028-02-16,3000,2957,2951,0.015,2957,,,,MRCC,2024-05-08
-TigerConnect Inc.,co_b5bd0073c89c,Delayed Draw,Automotive,12.21%,,SOFR,6.90%,2022-02-16,2028-02-16,225,163,160,0.001,163,225,62,,MRCC,2024-05-08
-Arcserve Cayman Opco LP,co_2dbc61708c2b,Common Equity,Software,,,N/A,,2021-03-16,,4119,4119,495,0.002,4119,,,,MRCC,2024-05-08
-Arcserve Cayman Opco LP,co_2dbc61708c2b,Common Equity,Software,,,N/A,,2024-01-02,,,922,0.5,,,,,,MRCC,2024-05-08
-Drawbridge Partners,co_0ce0f67d6940,Common Equity,Software,,,N/A,,2022-09-01,,130,130,154,0.001,130,,,,MRCC,2024-05-08
-Planful,co_7f1b0316e6b6,Preferred Equity,Software,,8.00%,N/A,,2018-12-28,,473,473,992,0.005,473,,,,MRCC,2024-05-08
-Planful,co_7f1b0316e6b6,Common Equity,Software,,,N/A,,2023-05-03,,,24,0.0,,,,,,MRCC,2024-05-08
-Recorded Future,co_473199530367,Common Equity,Software,,,N/A,,2019-07-03,,81,81,268,0.001,81,,,,MRCC,2024-05-08
-Sparq Holdings,co_618f81314875,Common Equity,Software,,,N/A,,2023-06-15,,300,300,317,0.002,300,,,,MRCC,2024-05-08
-Equine Network,co_f0d66d3bb5c8,Common Equity,Food & Beverage,,,N/A,,2020-12-31,,111,111,140,0.001,111,,,,MRCC,2024-05-08
-AdTheorent Holding Company,co_bd39b8d9f303,Common Equity,Media & Entertainment,,,N/A,,2016-12-22,,114,114,569,0.003,114,,,,MRCC,2024-05-08
-InMobi Pte Ltd.,co_e80460a527fe,Warrants,Media & Entertainment,,,N/A,,2015-09-18,2025-09-18,,,1763,0.009,,,,,MRCC,2024-05-08
-Relevate Health Group,co_cc2dc9d038dc,Preferred Equity,Media & Entertainment,,12.00%,N/A,,2020-11-20,,40,40,1,,,,,,MRCC,2024-05-08
-Tait LLC,co_2d7ee8c64dad,First Lien,Food & Beverage,10.00%,,SOFR,4.50%,,2025-03-28,4040,,4,,,,,fair_value_suspicious_vs_size,MRCC,2024-05-08
+TA TT Buyer LLC,co_8a528cbe0e19,First Lien,Media & Entertainment,10.3%,,SOFR,5%,,2029-03-30,3283,,3301,,,,,,MRCC,2024-05-08
+Eliassen Group LLC,co_6f2538aae5b8,First Lien,Business Services,10.81%,,SOFR,5.5%,,2028-04-14,3209,,3177,,,,,,MRCC,2024-05-08
+Eliassen Group,co_6f2538aae5b8,Delayed Draw,Business Services,10.82%,,SOFR,5.5%,,2028-04-14,738,,229,,,,,,MRCC,2024-05-08
+Engage2Excel Inc.,co_c8acb7bd3de5,First Lien,Business Services,11.78%,,SOFR,6.6%,,2024-07-01,3907,,3912,,,,,,MRCC,2024-05-08
+Engage2Excel Inc.,co_c8acb7bd3de5,First Lien,Business Services,11.78%,,SOFR,6.6%,,2024-07-01,705,,706,,,,,,MRCC,2024-05-08
+Engage2Excel Inc.,co_c8acb7bd3de5,First Lien,Business Services,11.78%,,SOFR,6.6%,,2024-07-01,550,,550,,,,,,MRCC,2024-05-08
+Output Services Group Inc.,co_05105daaeb2b,First Lien,Business Services,12.07%,,SOFR,6.68%,,2028-11-30,1042,,1040,,,,,,MRCC,2024-05-08
+Secretariat Advisors LLC,co_e6395e26df0a,First Lien,Business Services,10.32%,,SOFR,5.01%,,2028-12-29,1672,,1663,,,,,,MRCC,2024-05-08
+Secretariat Advisors LLC,co_e6395e26df0a,First Lien,Business Services,10.32%,,SOFR,5.01%,,2028-12-29,267,,265,,,,,,MRCC,2024-05-08
+SIRVA Worldwide Inc.,co_d65f2d59da22,First Lien,Business Services,11.1%,,SOFR,5.76%,,2025-08-04,1738,,1267,,,,,,MRCC,2024-05-08
+Laseraway Intermediate Holdings II LLC,co_e659ef862cea,First Lien,Consumer & Retail,11.33%,,SOFR,5.75%,,2027-10-14,2172,,2167,,,,,,MRCC,2024-05-08
+McKissock Investment Holdings LLC,co_15c525540b0d,First Lien,Consumer & Retail,10.46%,,SOFR,5%,,2029-03-09,2450,,2461,,,,,,MRCC,2024-05-08
+Intermedia Holdings Inc.,co_203f35f0f4ca,First Lien,Telecommunications,11.43%,,SOFR,6.11%,,2025-07-21,1737,,1720,,,,,,MRCC,2024-05-08
+Mavenir Systems Inc.,co_a0e981bf7929,First Lien,Telecommunications,10.34%,,SOFR,5.01%,,2028-08-18,1633,,1169,,,,,,MRCC,2024-05-08
+Sandvine Corp.,co_baec03d34e61,First Lien,Telecommunications,10.15%,,SOFR,4.93%,,2025-10-31,1973,,1473,,,,,,MRCC,2024-05-08
+Keystone Purchaser LLC,co_57fc149faf46,First Lien,Transportation & Logistics,11.51%,,SOFR,6.18%,,2027-05-07,4892,,4874,,,,,,MRCC,2024-05-08
+HALO Buyer Inc.,co_3dc4ab81bc2a,First Lien,Distribution & Wholesale,9.93%,,SOFR,4.6%,,2025-06-30,4710,,3452,,,,,,MRCC,2024-05-08
+Radiology Partners Inc.,co_e642f1128e0a,First Lien,Healthcare,9.09%,1.5%,SOFR,3.76%,,2029-01-31,4236,,4102,,,,,,MRCC,2024-05-08
+Avison Young (USA) Inc.,co_9c7accf0770d,First Lien,Real Estate,13.58%,,SOFR,8.26%,,2029-03-12,1492,,1193,,,,,,MRCC,2024-05-08
+Avison Young (USA) Inc.,co_9c7accf0770d,First Lien,Real Estate,13.58%,,SOFR,8.26%,,2029-03-12,510,,305,,,,,,MRCC,2024-05-08
+Avison Young (USA) Inc.,co_9c7accf0770d,Preferred Equity,Real Estate,12.5%,,,,,2029-03-12,1605,,722,,,,,,MRCC,2024-05-08
+Largest Portfolio Company Investment,co_d6fc5b988db5,First Lien,Automotive,,,,,,,6580,,,,,,,,MRCC,2024-05-08
+Top Five Largest Portfolio Company Investments,co_18e669c743da,First Lien,Financial Services,,,,,,,26366,,,,,,,,MRCC,2024-05-08
+Polyventive Lender Holding Company LLC,co_de5224755d7e,First Lien,,,,,,,,0,,0,,,,,,MRCC,2024-05-08
+HFZ Capital Group LLC,co_f5ccc3346d14,Other,Real Estate,,,,,,,,,17500,,,,,,MRCC,2024-05-08
+HFZ Capital Group LLC,co_f5ccc3346d14,Other,Real Estate,,,,,,,,,6288,,,,,,MRCC,2024-05-08
+Second Avenue SFR Holdings II LLC,co_3dfcd41b3ca3,Other,Real Estate,,,,,,2024-08-09,,,3323,,,,,,MRCC,2024-05-08
+TJ Management HoldCo,co_a053ad5b138a,Revolver,Food & Beverage,,,,,,2024-06-28,,,0,,,,,,MRCC,2024-05-08
+TJ Management HoldCo LLC,co_a053ad5b138a,Common Equity,Food & Beverage,,,,,,2024-06-28,,,3324,,,,,,MRCC,2024-05-08

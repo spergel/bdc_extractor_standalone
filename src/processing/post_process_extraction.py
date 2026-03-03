@@ -15,14 +15,14 @@ import re
 from pathlib import Path
 from typing import List, Tuple
 from standardization_rules import (
-    create_mapping_dict as create_industry_mapping,
     standardize_industry,
-    create_investment_type_mapping,
     standardize_investment_type,
     create_reference_rate_mapping,
     standardize_reference_rate,
     clean_spread,
-    clean_company_name
+    clean_company_name,
+    normalize_industry,
+    ALLOWED_INDUSTRIES,
 )
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
@@ -43,8 +43,6 @@ def post_process_csv(input_file: Path, output_file: Path = None) -> Tuple[int, i
         output_file = input_file
     
     # Create mapping dictionaries
-    industry_mapping = create_industry_mapping()
-    investment_type_mapping = create_investment_type_mapping()
     ref_rate_mapping = create_reference_rate_mapping()
     
     rows = []
@@ -64,6 +62,17 @@ def post_process_csv(input_file: Path, output_file: Path = None) -> Tuple[int, i
             # Ensure we have a data quality flag column
             if 'data_quality_flags' not in fieldnames:
                 fieldnames = fieldnames + ['data_quality_flags']
+
+            # Infer ticker from filename for ticker-specific company name cleanup
+            file_ticker = None
+            stem = input_file.stem
+            if stem.startswith("custom_scraper_"):
+                parts = stem.split("_")
+                file_ticker = parts[2] if len(parts) >= 3 else None
+            elif stem.startswith("_investments_") or "_investments_" in stem:
+                file_ticker = stem.split("_investments_")[0].strip("_")
+            elif re.match(r"^[A-Z]{2,5}_investments_", stem, re.I):
+                file_ticker = stem.split("_")[0]
             
             for row in reader:
                 original_row = row.copy()
@@ -74,7 +83,7 @@ def post_process_csv(input_file: Path, output_file: Path = None) -> Tuple[int, i
                 # Standardize industry
                 if 'industry' in row:
                     original_industry = row['industry']
-                    standardized_industry = standardize_industry(original_industry, industry_mapping)
+                    standardized_industry = standardize_industry(original_industry)
                     row['industry'] = standardized_industry
                     if original_industry != standardized_industry:
                         rows_changed += 1
@@ -82,7 +91,7 @@ def post_process_csv(input_file: Path, output_file: Path = None) -> Tuple[int, i
                 # Standardize investment_type
                 if 'investment_type' in row:
                     original_type = row['investment_type']
-                    standardized_type = standardize_investment_type(original_type, investment_type_mapping)
+                    standardized_type = standardize_investment_type(original_type)
                     row['investment_type'] = standardized_type
                     if original_type != standardized_type:
                         rows_changed += 1
@@ -103,13 +112,29 @@ def post_process_csv(input_file: Path, output_file: Path = None) -> Tuple[int, i
                     if original_spread != cleaned_spread:
                         rows_changed += 1
                 
-                # Clean company_name
+                # Clean company_name (with optional ticker for BDC-specific cleanup)
                 if 'company_name' in row:
                     original_name = row['company_name']
-                    cleaned_name = clean_company_name(original_name)
+                    ticker = (row.get('ticker') or '').strip() or file_ticker
+                    cleaned_name, extracted_industry = clean_company_name(original_name, ticker=ticker or None)
                     row['company_name'] = cleaned_name
                     if original_name != cleaned_name:
                         rows_changed += 1
+                    # Use industry from stripped title or company name (e.g. Advanced Aircrew → Aerospace & Defense) when industry is empty or Other
+                    current_ind = (row.get('industry') or '').strip()
+                    if extracted_industry and (not current_ind or current_ind == 'Other'):
+                        canonical = standardize_industry(extracted_industry)
+                        if canonical:
+                            row['industry'] = canonical
+                            rows_changed += 1
+                    # If still empty/Other, infer from company name keywords (e.g. "Forescout Technologies" → Software & Technology)
+                    if 'industry' in row:
+                        current_ind = (row.get('industry') or '').strip()
+                        if (not current_ind or current_ind == 'Other') and cleaned_name and not extracted_industry:
+                            hint = normalize_industry(cleaned_name)
+                            if hint and hint in ALLOWED_INDUSTRIES and hint != 'Other':
+                                row['industry'] = hint
+                                rows_changed += 1
 
                 # --- Simple numeric sanity checks / flags ---
                 try:
@@ -189,13 +214,15 @@ def post_process_csv(input_file: Path, output_file: Path = None) -> Tuple[int, i
 def process_directory(directory: Path, pattern: str = "*_investments_*.csv") -> None:
     """
     Process all CSV files in a directory.
-    
+    When using default pattern, also includes custom_scraper_*.csv (BCIC, etc.).
     Args:
         directory: Directory containing CSV files
-        pattern: Glob pattern for files to process
+        pattern: Glob pattern for files to process (default: *_investments_*.csv)
     """
     csv_files = list(directory.glob(pattern))
-    
+    if pattern == "*_investments_*.csv":
+        csv_files = list(dict.fromkeys(csv_files + list(directory.glob("custom_scraper_*.csv"))))
+
     if not csv_files:
         logger.warning(f"No files matching '{pattern}' found in {directory}")
         return

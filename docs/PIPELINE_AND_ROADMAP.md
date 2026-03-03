@@ -15,9 +15,12 @@ How we get BDC holdings, portfolio company profiles, and keep things updated goi
 
 ## Current state
 
-- **Holdings (investments):** 10 BDCs in the frontend today: ARCC, BBDC, BCSF, BXSL, CCAP, CGBD, CION, GSBD, MAIN, MRCC. Per-ticker, per-period CSVs under `frontend/public/data/investments/{TICKER}/`.
-- **Company resolution:** ~8,013 canonical portfolio companies; `company_id` on every holding row; `companies_index.json` and `company_exposures.csv` up to date (after the improved name cleaning).
-- **Portfolio company profiles:** `company_profiles.json` has profiles for a subset of companies (e.g. GSBD and CION batches). We **merge** into this file; we never delete it.
+- **Holdings (investments):** 30+ BDCs extracted and available. Per-ticker, per-period CSVs under `frontend/public/data/investments/{TICKER}/`.
+- **Two extraction paths:**
+  - **XBRL path** (`xbrl_investment_extractor.py`): Used for tickers with XBRL-tagged financials (ARCC, GBDC, MAIN, BBDC, BXSL, etc.). Parses `_htm.xml` XBRL instance documents. **HTML enrichment** fills missing `industry` and `maturity_date` from the HTML filing table (87–97% fill rate for industry; 63–79% for maturity).
+  - **HTML/LLM path** (`llm_table_scraper.py` / `html_soi_parser.py`): Used for tickers without useful XBRL tagging. Parses the rendered HTML table directly — no LLM needed for most BDCs.
+- **Company resolution:** ~8,000+ canonical portfolio companies; `company_id` on every holding row; `companies_index.json` and `company_exposures.csv` up to date.
+- **Portfolio company profiles:** `company_profiles.json` has profiles for a subset of companies. We **merge** into this file; we never delete it.
 - **BDC fund profiles:** Optional per-ticker `frontend/public/data/{TICKER}/profile.json` (if we add/use them).
 - **Pipeline script:** `process_all_bdcs.py` can run extraction → post_process → consolidate → company resolution (and optionally profile build). Profile build is usually run separately with `--companies-file` and `--limit` so we can control volume and review.
 

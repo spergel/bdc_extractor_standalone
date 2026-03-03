@@ -550,7 +550,7 @@ def main():
             )
             
             if results:
-                print(f"✅ Successfully processed {args.ticker} {args.filing_type}")
+                print(f"Successfully processed {args.ticker} {args.filing_type}")
                 for stmt_type, path in results.items():
                     if path:
                         print(f"  📄 {stmt_type}: {path}")
@@ -567,7 +567,7 @@ def main():
             
             total_files = sum(len(paths) for paths in results.values())
             if total_files > 0:
-                print(f"✅ Successfully processed {total_files} financial statement files")
+                print(f"Successfully processed {total_files} financial statement files")
                 for stmt_type, paths in results.items():
                     if paths:
                         print(f"  📄 {stmt_type}: {len(paths)} files")

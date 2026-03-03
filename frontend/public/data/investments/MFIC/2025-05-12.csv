@@ -1,2 +1,1412 @@
-company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,ticker,filing_date
-,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
+Sperry Acquisition LLC,co_8b81d98c1215,First Lien,Aerospace & Defense,,,SOFR,5.25%,0.75%,,2031-02-03,6923,6821,6819,,6821,,,,,,MFIC,2025-05-12
+Sperry Acquisition LLC,co_8b81d98c1215,Delayed Draw,Aerospace & Defense,,,SOFR,5.25%,0.75%,,2031-02-03,,-14,-14,,-14,,,,,,MFIC,2025-05-12
+Sperry Acquisition LLC,co_8b81d98c1215,Revolver,Aerospace & Defense,,,SOFR,5.25%,0.75%,,2031-02-03,,-17,-17,,-17,,,,,,MFIC,2025-05-12
+Air Freight & Logistics Primeflight PrimeFlight Acquisition,co_8440c1eed458,First Lien,Transportation & Logistics,,,SOFR,5.25%,1%,,2029-05-01,14215,14066,14073,,14066,,,,,,MFIC,2025-05-12
+Air Freight & Logistics Primeflight PrimeFlight Acquisition,co_8440c1eed458,First Lien,Transportation & Logistics,,,SOFR,5.5%,1%,,2029-05-01,10332,10124,10332,,10124,,,,,,MFIC,2025-05-12
+Truck-Lite Co. LLC,co_d7ebf153506a,First Lien,Automotive,,,SOFR,5.75%,0.75%,,2031-02-13,2442,2407,2421,,2407,,,,,,MFIC,2025-05-12
+Truck-Lite Co. LLC,co_d7ebf153506a,Delayed Draw,Automotive,,,SOFR,5.75%,0.75%,,2031-02-13,170,167,168,,167,,,,,,MFIC,2025-05-12
+Truck-Lite Co. LLC,co_d7ebf153506a,Revolver,Automotive,,,SOFR,5.75%,0.75%,,2030-02-13,18,14,15,,14,,,,,,MFIC,2025-05-12
+Universal Air Conditioner Cool Buyer,co_dcaaa012fe90,First Lien,Automotive,,,SOFR,4.75%,1%,,2030-10-31,13300,13111,,,13111,,,,,,MFIC,2025-05-12
+Universal Air Conditioner Cool Buyer,co_dcaaa012fe90,Delayed Draw,Automotive,,,SOFR,4.75%,1%,,2030-10-31,,-21,-43,,-21,,,,,,MFIC,2025-05-12
+Universal Air Conditioner Cool Buyer,co_dcaaa012fe90,Revolver,Automotive,,,SOFR,4.75%,1%,,2030-10-31,909,858,857,,858,,,,,,MFIC,2025-05-12
+Beverages Ronnoco Coffee Ronnoco Holdings,co_2394f8fe5e8a,First Lien,Food & Beverage,,,SOFR,4.5%,1%,,2031-03-17,5328,5249,5248,,5249,,,,,,MFIC,2025-05-12
+Beverages Ronnoco Coffee Ronnoco Holdings,co_2394f8fe5e8a,Revolver,Food & Beverage,,,SOFR,4.5%,1%,,2031-03-17,,-32,-33,,-32,,,,,,MFIC,2025-05-12
+Rigel Pharmaceuticals,co_e528fc2b9b21,First Lien,Healthcare,,,SOFR,6.61%,1.5%,,2027-09-01,3000,3018,3000,,3018,,,,,,MFIC,2025-05-12
+Rigel Pharmaceuticals,co_e528fc2b9b21,Delayed Draw,Healthcare,,,SOFR,6.61%,1.5%,,2027-09-01,15000,14983,15000,,14983,,,,,,MFIC,2025-05-12
+Building Products OmniMax International LLC,co_6c21b1c452e8,First Lien,Industrials,,,SOFR,5.75%,1%,,2030-12-06,15280,14987,14987,,14987,,,,,,MFIC,2025-05-12
+Building Products OmniMax International LLC,co_6c21b1c452e8,Delayed Draw,Industrials,,,SOFR,5.75%,1%,,2030-12-06,4720,4628,4629,,4628,,,,,,MFIC,2025-05-12
+Building Products RF Fager R.F. Fager Company,co_381c8c1d07da,First Lien,Industrials,,,SOFR,5.25%,1%,,2030-03-04,928,910,912,,910,,,,,,MFIC,2025-05-12
+Building Products RF Fager R.F. Fager Company,co_381c8c1d07da,Delayed Draw,Industrials,,,SOFR,5.25%,1%,,2030-03-04,,-16,-32,,-16,,,,,,MFIC,2025-05-12
+Building Products RF Fager R.F. Fager Company,co_381c8c1d07da,Revolver,Industrials,,,Prime,4.25%,,,2030-03-04,16,11,11,,11,,,,,,MFIC,2025-05-12
+Chemicals Aspen Aerogels Inc.,co_3c8ab2b4b136,First Lien,Chemicals & Materials,,,SOFR,4.5%,4.5%,,2029-08-19,22310,21908,22087,,21908,,,,,,MFIC,2025-05-12
+Chemicals Aspen Aerogels Inc.,co_3c8ab2b4b136,Revolver,Chemicals & Materials,,,SOFR,4.6%,2.5%,,2029-08-19,37,37,37,,37,,,,,,MFIC,2025-05-12
+Chemicals Meristem Crop Performance Lunar Buyer,co_73269dc4245e,First Lien,Chemicals & Materials,,,SOFR,5.5%,0.75%,,2030-10-03,9068,8899,8887,,8899,,,,,,MFIC,2025-05-12
+Chemicals Meristem Crop Performance Lunar Buyer,co_73269dc4245e,Delayed Draw,Chemicals & Materials,,,SOFR,5.5%,0.75%,,2030-10-03,0,-63,-136,,-63,,,,,,MFIC,2025-05-12
+Chemicals Meristem Crop Performance Lunar Buyer,co_73269dc4245e,Revolver,Chemicals & Materials,,,SOFR,5.5%,0.75%,,2030-10-03,1455,1379,1373,,1379,,,,,,MFIC,2025-05-12
+Atlas Technical Consultants GI Apple Midco LLC,co_17cb19219a36,First Lien,Business Services,,,SOFR,6.75%,1%,,2030-04-19,7537,7447,7537,,7447,,,,,,MFIC,2025-05-12
+Atlas Technical Consultants GI Apple Midco LLC,co_17cb19219a36,First Lien,Business Services,,,SOFR,6.75%,1%,,2030-04-19,86,68,86,,68,,,,,,MFIC,2025-05-12
+Atlas Technical Consultants GI Apple Midco LLC,co_17cb19219a36,First Lien,Business Services,,,SOFR,6.75%,1%,,2029-04-19,317,306,317,,306,,,,,,MFIC,2025-05-12
+Best Trash Bingo Group Buyer,co_cb9d84191ccb,First Lien,Business Services,,,SOFR,5%,1%,,2031-07-10,6992,6911,6939,,6911,,,,,,MFIC,2025-05-12
+Best Trash Bingo Group Buyer,co_cb9d84191ccb,Delayed Draw,Business Services,,,SOFR,5%,1%,,2031-07-10,0,-12,-16,,-12,,,,,,MFIC,2025-05-12
+Best Trash Bingo Group Buyer,co_cb9d84191ccb,Revolver,Business Services,,,SOFR,5%,1%,,2031-07-10,25,16,19,,16,,,,,,MFIC,2025-05-12
+Core Roofing CRS Holdings,co_fb9f750e6798,First Lien,Business Services,,,SOFR,5%,1%,,2030-06-06,1913,1879,1889,,1879,,,,,,MFIC,2025-05-12
+Core Roofing CRS Holdings,co_fb9f750e6798,Delayed Draw,Business Services,,,SOFR,5%,1%,,2030-06-06,0,-62,-88,,-62,,,,,,MFIC,2025-05-12
+Core Roofing CRS Holdings,co_fb9f750e6798,Revolver,Business Services,,,SOFR,5%,1%,,2030-06-06,0,-16,-12,,-16,,,,,,MFIC,2025-05-12
+CoreTrust Coretrust Purchasing Group LLC,co_6cc100b9bd81,First Lien,Business Services,,,SOFR,5.25%,0.75%,,2029-10-01,5359,5311,5306,,5311,,,,,,MFIC,2025-05-12
+CoreTrust Coretrust Purchasing Group LLC,co_6cc100b9bd81,First Lien,Business Services,,,SOFR,5.25%,0.75%,,2029-10-01,0,-10,-12,,-10,,,,,,MFIC,2025-05-12
+CoreTrust Coretrust Purchasing Group LLC,co_6cc100b9bd81,First Lien,Business Services,,,SOFR,5.25%,0.75%,,2029-10-01,0,-6,-7,,-6,,,,,,MFIC,2025-05-12
+Flatworld Solutions Flatworld Intermediate Corp.,co_be8d0890513b,First Lien,Business Services,,,SOFR,5.5%,1.5%,,2030-03-25,10000,9801,9800,,9801,,,,,,MFIC,2025-05-12
+Heritage Environmental Services,co_1c64f1d083a9,First Lien,Business Services,,,SOFR,5.25%,0.75%,,2031-01-31,1745,1741,1758,,1741,,,,,,MFIC,2025-05-12
+Heritage Environmental Services,co_1c64f1d083a9,Revolver,Business Services,,,SOFR,5.5%,4.5%,,2030-01-31,0,-1,0,,-1,,,,,,MFIC,2025-05-12
+HMA Health Management Associates Superholdings,co_fa523a9bea35,First Lien,Business Services,,,SOFR,6.35%,1%,,2029-03-30,3897,3814,3877,,3814,,,,,,MFIC,2025-05-12
+HMA Health Management Associates Superholdings,co_fa523a9bea35,Delayed Draw,Business Services,,,SOFR,6.35%,1%,,2029-03-30,507,492,503,,492,,,,,,MFIC,2025-05-12
+HMA Health Management Associates Superholdings,co_fa523a9bea35,Revolver,Business Services,,,SOFR,6.35%,1%,,2029-03-30,121,115,119,,115,,,,,,MFIC,2025-05-12
+IronClad Ironhorse Purchaser,co_0851537afe0a,First Lien,Business Services,,,SOFR,5.25%,1%,,2027-09-30,3029,2987,2968,,2987,,,,,,MFIC,2025-05-12
+IronClad Ironhorse Purchaser,co_0851537afe0a,Delayed Draw,Business Services,,,SOFR,5.25%,1%,,2027-09-30,0,-19,-29,,-19,,,,,,MFIC,2025-05-12
+IronClad Ironhorse Purchaser,co_0851537afe0a,Revolver,Business Services,,,SOFR,5.25%,1%,,2027-09-30,72,66,63,,66,,,,,,MFIC,2025-05-12
+IRP Precision Refrigeration & Air Conditioning LLC,co_79b9e348fe7e,First Lien,Business Services,,,SOFR,6.9%,1%,,2028-03-08,10933,10791,10661,,10791,,,,,,MFIC,2025-05-12
+IRP Precision Refrigeration & Air Conditioning LLC,co_79b9e348fe7e,First Lien,Business Services,,,SOFR,6.9%,1%,,2028-03-08,4937,4871,4814,,4871,,,,,,MFIC,2025-05-12
+IRP Precision Refrigeration & Air Conditioning LLC,co_79b9e348fe7e,First Lien,Business Services,,,SOFR,6.9%,1%,,2028-03-08,1932,1913,1875,,1913,,,,,,MFIC,2025-05-12
+Jones & Frank JF Acquisition,co_42760196c249,First Lien,Business Services,,,SOFR,5.6%,1%,,2026-07-31,7710,7688,7702,,7688,,,,,,MFIC,2025-05-12
+Jones & Frank JF Acquisition,co_42760196c249,Delayed Draw,Business Services,,,SOFR,5.6%,1%,,2026-07-31,5087,5071,5082,,5071,,,,,,MFIC,2025-05-12
+Jones & Frank JF Acquisition,co_42760196c249,Revolver,Business Services,,,SOFR,5.6%,1%,,2026-07-31,879,873,877,,873,,,,,,MFIC,2025-05-12
+Mariani CI (MG) GROUP,co_7c2ac529e0ff,First Lien,Business Services,,,SOFR,5.5%,1%,,2030-03-27,18973,18689,18688,,18689,,,,,,MFIC,2025-05-12
+Mariani CI (MG) GROUP,co_7c2ac529e0ff,Delayed Draw,Business Services,,,SOFR,5.5%,1%,,2030-03-27,0,-67,-67,,-67,,,,,,MFIC,2025-05-12
+Mariani CI (MG) GROUP,co_7c2ac529e0ff,Revolver,Business Services,,,SOFR,5.5%,1%,,2030-03-27,0,-30,-30,,-30,,,,,,MFIC,2025-05-12
+SafetyCo HEF Safety Ultimate Holdings,co_cc7732b9c8c6,First Lien,Business Services,,,SOFR,5.25%,1%,,2029-11-19,7406,7253,7431,,7253,,,,,,MFIC,2025-05-12
+SafetyCo HEF Safety Ultimate Holdings,co_cc7732b9c8c6,Delayed Draw,Business Services,,,SOFR,5.25%,1%,,2029-11-19,0,-53,0,,-53,,,,,,MFIC,2025-05-12
+SafetyCo HEF Safety Ultimate Holdings,co_cc7732b9c8c6,Revolver,Business Services,,,SOFR,5.25%,1%,,2029-11-17,710,680,712,,680,,,,,,MFIC,2025-05-12
+SEER GS SEER Group Borrower LLC,co_f67946f0f794,First Lien,Business Services,,,SOFR,6.75%,1%,,2030-04-29,3200,3123,3168,,3123,,,,,,MFIC,2025-05-12
+SEER GS SEER Group Borrower LLC,co_f67946f0f794,First Lien,Business Services,,,SOFR,6.75%,1%,,2030-04-29,948,917,934,,917,,,,,,MFIC,2025-05-12
+SEER GS SEER Group Borrower LLC,co_f67946f0f794,First Lien,Business Services,,,SOFR,6.75%,1%,,2029-04-30,0,-8,-4,,-8,,,,,,MFIC,2025-05-12
+Smith System Smith Topco,co_b06ae9bb2868,First Lien,Business Services,,,SOFR,5.5%,1%,,2029-11-06,8761,8601,8630,,8601,,,,,,MFIC,2025-05-12
+Smith System Smith Topco,co_b06ae9bb2868,First Lien,Business Services,,,SOFR,4.75%,1%,,2029-11-06,837,824,824,,824,,,,,,MFIC,2025-05-12
+Smith System Smith Topco,co_b06ae9bb2868,Revolver,Business Services,,,SOFR,6%,1%,,2029-11-06,0,-20,-17,,-20,,,,,,MFIC,2025-05-12
+Vixxo Corp.,co_3d20c67afcba,First Lien,Business Services,,,SOFR,5%,1%,,2030-08-01,3741,3688,3694,,3688,,,,,,MFIC,2025-05-12
+Vixxo Corp.,co_3d20c67afcba,First Lien,Business Services,,,SOFR,5%,1%,,2030-08-01,0,-8,-16,,-8,,,,,,MFIC,2025-05-12
+Communications Equipment Congruex Group LLC,co_18eae3f0a0f6,First Lien,Telecommunications,,,SOFR,6.65%,1.5%,,2029-05-03,15104,14879,13011,,14879,,,,,,MFIC,2025-05-12
+Communications Equipment MCA Mobile Communications America,co_44dc04d75f60,First Lien,Telecommunications,,,SOFR,5.5%,1%,,2029-10-16,2469,2418,2463,,2418,,,,,,MFIC,2025-05-12
+Communications Equipment MCA Mobile Communications America,co_44dc04d75f60,Delayed Draw,Telecommunications,,,SOFR,5.5%,1%,,2029-10-16,2475,2387,2454,,2387,,,,,,MFIC,2025-05-12
+Communications Equipment MCA Mobile Communications America,co_44dc04d75f60,Revolver,Telecommunications,,,SOFR,5.5%,1%,,2029-10-16,0,-26,-3,,-26,,,,,,MFIC,2025-05-12
+Communications Equipment Mitel Networks MLN US Holdco LLC,co_6fe43c56b8fc,First Lien,Telecommunications,,,SOFR,8%,1%,,2025-07-03,878,768,760,,768,,,,,,MFIC,2025-05-12
+Construction & Engineering Accelevation,co_6ab8195cfb6c,First Lien,Industrials,,,SOFR,5%,0.75%,,2031-01-02,9231,9097,9092,,9097,,,,,,MFIC,2025-05-12
+Construction & Engineering Accelevation,co_6ab8195cfb6c,Delayed Draw,Industrials,,,SOFR,5%,0.75%,,2031-01-02,,-25,-26,,-25,,,,,,MFIC,2025-05-12
+Construction & Engineering Accelevation,co_6ab8195cfb6c,Revolver,Industrials,,,SOFR,5%,0.75%,,2031-01-02,286,253,252,,253,,,,,,MFIC,2025-05-12
+Construction & Engineering Allstar Holdings Athlete Buyer,co_8e5731e0ecb3,First Lien,Industrials,,,SOFR,5.85%,1%,,2030-04-26,1922,1886,1898,,1886,,,,,,MFIC,2025-05-12
+Construction & Engineering Allstar Holdings Athlete Buyer,co_8e5731e0ecb3,Delayed Draw,Industrials,,,SOFR,5.85%,1%,,2029-04-26,20317,19901,20062,,19901,,,,,,MFIC,2025-05-12
+Construction & Engineering Allstar Holdings Athlete Buyer,co_8e5731e0ecb3,Delayed Draw,Industrials,,,SOFR,5.85%,1%,,2030-04-26,3334,3259,3292,,3259,,,,,,MFIC,2025-05-12
+Construction & Engineering Allstar Holdings Athlete Buyer,co_8e5731e0ecb3,Revolver,Industrials,,,SOFR,5.85%,1%,,2029-04-26,3201,3123,3135,,3123,,,,,,MFIC,2025-05-12
+Construction & Engineering American Restoration American Restoration Holdings,co_e11a10e8072f,First Lien,Industrials,,,SOFR,5.1%,1%,,2030-07-24,6447,6327,6383,,6327,,,,,,MFIC,2025-05-12
+Construction & Engineering American Restoration American Restoration Holdings,co_e11a10e8072f,Delayed Draw,Industrials,,,SOFR,5.1%,1%,,2030-07-24,6948,6822,6781,,6822,,,,,,MFIC,2025-05-12
+Construction & Engineering American Restoration American Restoration Holdings,co_e11a10e8072f,Revolver,Industrials,,,SOFR,5.1%,1%,,2030-07-24,713,681,695,,681,,,,,,MFIC,2025-05-12
+Construction & Engineering Kauffman Intermediate,co_786374ba29de,First Lien,Media & Entertainment,,,SOFR,6.6%,1%,,2026-05-08,16743,16723,15838,,16723,,,,,,MFIC,2025-05-12
+Construction & Engineering Kauffman Intermediate,co_786374ba29de,Revolver,Media & Entertainment,,,SOFR,6.6%,1%,,2026-05-08,1278,1259,1208,,1259,,,,,,MFIC,2025-05-12
+Construction & Engineering Pave America Pave America Interco,co_e4bf1eed0eaa,First Lien,Industrials,,,SOFR,5.65%,1%,,2029-02-07,11846,11614,11669,,11614,,,,,,MFIC,2025-05-12
+Construction & Engineering Pave America Pave America Interco,co_e4bf1eed0eaa,First Lien,Industrials,,,SOFR,5.65%,1%,,2029-02-07,3378,3294,3327,,3294,,,,,,MFIC,2025-05-12
+Construction & Engineering Pave America Pave America Interco,co_e4bf1eed0eaa,Delayed Draw,Industrials,,,SOFR,5.65%,1%,,2029-02-07,1546,1486,1459,,1486,,,,,,MFIC,2025-05-12
+Construction & Engineering Pave America Pave America Interco,co_e4bf1eed0eaa,Revolver,Industrials,,,SOFR,5.65%,1%,,2029-02-07,1040,992,998,,992,,,,,,MFIC,2025-05-12
+Construction & Engineering Pavement Preservation Pavement Preservation Acquisition,co_e8a5a6e0cca3,First Lien,,,,SOFR,5.25%,1%,,2030-08-09,8971,8802,8791,,8802,,,,,,MFIC,2025-05-12
+Construction & Engineering Pavement Preservation Pavement Preservation Acquisition,co_e8a5a6e0cca3,Delayed Draw,,,,SOFR,5.25%,1%,,2030-08-09,2155,2115,2112,,2115,,,,,,MFIC,2025-05-12
+Construction & Engineering Pavement Preservation Pavement Preservation Acquisition,co_e8a5a6e0cca3,Revolver,,,,SOFR,5.25%,1%,,2030-08-09,,-23,-26,,-23,,,,,,MFIC,2025-05-12
+Construction & Engineering Renovo HomeRenew Buyer,co_ab41e8a06375,First Lien,Industrials,,,SOFR,9%,2.5%,,2025-04-14,1320,1287,1287,,1287,,,,,,MFIC,2025-05-12
+Construction & Engineering Traffic Management Solutions LLC,co_83748ac68124,First Lien,Industrials,,,SOFR,5%,1%,,2030-11-26,7360,7255,7253,,7255,,,,,,MFIC,2025-05-12
+Construction & Engineering Traffic Management Solutions LLC,co_83748ac68124,Delayed Draw,Industrials,,,SOFR,5%,1%,,2030-11-26,3264,3213,3214,,3213,,,,,,MFIC,2025-05-12
+Construction & Engineering Traffic Management Solutions LLC,co_83748ac68124,Revolver,Industrials,,,SOFR,5%,1%,,2030-11-26,,-21,-21,,-21,,,,,,MFIC,2025-05-12
+Construction & Engineering Trench Plate Trench Plate Rental Co.,co_41d3f24fa176,First Lien,Industrials,,,SOFR,5.6%,1%,,2028-12-03,17682,17537,17505,,17537,,,,,,MFIC,2025-05-12
+Construction & Engineering Trench Plate Trench Plate Rental Co.,co_41d3f24fa176,First Lien,Industrials,,,SOFR,5.6%,1%,,2028-12-03,1645,1632,1627,,1632,,,,,type_hint_revolver_from_name,MFIC,2025-05-12
+Consumer Staples Distribution & Retail 3D Protein For Pets Opco,co_1f7ab581572f,First Lien,Consumer & Retail,,,SOFR,5.25%,1%,,2030-09-20,8539,8393,8390,,8393,,,,,,MFIC,2025-05-12
+Consumer Staples Distribution & Retail 3D Protein For Pets Opco,co_1f7ab581572f,Revolver,Consumer & Retail,,,SOFR,5.25%,1%,,2030-09-20,,-15,-16,,-15,,,,,,MFIC,2025-05-12
+Consumer Staples Distribution & Retail THLP CO. LLC,co_c0d4137161f1,First Lien,Consumer & Retail,,,SOFR,6%,1%,,2027-01-31,20512,20450,20307,,20450,,,,,,MFIC,2025-05-12
+Consumer Staples Distribution & Retail THLP CO. LLC,co_c0d4137161f1,First Lien,Consumer & Retail,,,SOFR,6%,1%,,2027-01-31,5646,5642,5590,,5642,,,,,,MFIC,2025-05-12
+Consumer Staples Distribution & Retail THLP CO. LLC,co_c0d4137161f1,First Lien,Consumer & Retail,,,SOFR,6%,1%,,2027-01-31,1450,1448,1450,,1448,,,,,,MFIC,2025-05-12
+Consumer Staples Distribution & Retail THLP CO. LLC,co_c0d4137161f1,First Lien,Consumer & Retail,,,SOFR,6%,1%,,2027-01-31,2480,2478,2435,,2478,,,,,,MFIC,2025-05-12
+Berry Tapes & Adhesives Vybond Buyer,co_094f77e13aee,First Lien,Containers & Packaging,,,SOFR,5%,0.75%,,2032-02-03,17334,17077,17074,,17077,,,,,,MFIC,2025-05-12
+Berry Tapes & Adhesives Vybond Buyer,co_094f77e13aee,Delayed Draw,Containers & Packaging,,,SOFR,5%,0.75%,,2032-02-03,,-32,-33,,-32,,,,,,MFIC,2025-05-12
+Berry Tapes & Adhesives Vybond Buyer,co_094f77e13aee,Revolver,Containers & Packaging,,,SOFR,5%,0.75%,,2032-02-03,,-48,-49,,-48,,,,,,MFIC,2025-05-12
+MSI Express,co_c06f44e34636,First Lien,Containers & Packaging,,,SOFR,4.75%,0.75%,,2031-03-24,5833,5761,5760,,5761,,,,,,MFIC,2025-05-12
+MSI Express,co_c06f44e34636,Delayed Draw,Containers & Packaging,,,SOFR,4.75%,0.75%,,2031-03-24,,-9,-9,,-9,,,,,,MFIC,2025-05-12
+MSI Express,co_c06f44e34636,Revolver,Containers & Packaging,,,SOFR,3.75%,0.75%,,2031-03-24,689,655,655,,655,,,,,,MFIC,2025-05-12
+Truvant NPPI Buyer,co_786166d757c8,First Lien,Containers & Packaging,,,SOFR,5%,1%,,2029-08-20,21995,21691,21720,,21691,,,,,,MFIC,2025-05-12
+Truvant NPPI Buyer,co_786166d757c8,Delayed Draw,Containers & Packaging,,,SOFR,5.25%,1%,,2029-08-20,,-31,-59,,-31,,,,,,MFIC,2025-05-12
+Truvant NPPI Buyer,co_786166d757c8,Revolver,Containers & Packaging,,,SOFR,5%,1%,,2029-08-20,474,432,434,,432,,,,,,MFIC,2025-05-12
+Accelerate Learning Eagle Purchaser,co_ebe6b81c91e3,First Lien,Diversified,,,SOFR,6.75%,1%,,2030-03-22,3353,3276,3302,,3276,,,,,,MFIC,2025-05-12
+Accelerate Learning Eagle Purchaser,co_ebe6b81c91e3,Delayed Draw,Diversified,,,SOFR,6.75%,1%,,2030-03-22,468,461,461,,461,,,,,,MFIC,2025-05-12
+Accelerate Learning Eagle Purchaser,co_ebe6b81c91e3,Revolver,Diversified,,,SOFR,6.75%,1%,,2029-03-22,658,644,646,,644,,,,,,MFIC,2025-05-12
+Clarus Commerce Marlin DTC-LS Midco 2,co_d0f80d48f273,First Lien,Diversified,,,SOFR,6.6%,1%,,2025-07-01,21078,21040,21078,,21040,,,,,,MFIC,2025-05-12
+Clarus Commerce Marlin DTC-LS Midco 2,co_d0f80d48f273,Revolver,Diversified,,,SOFR,6.6%,1%,,2025-07-01,,-1,,,-1,,,,,,MFIC,2025-05-12
+Club Car Wash Club Car Wash Operating,co_54a7cedaa92a,First Lien,Diversified,,,SOFR,5.65%,1%,,2027-06-16,12463,12370,12363,,12370,,,,,,MFIC,2025-05-12
+Club Car Wash Club Car Wash Operating,co_54a7cedaa92a,Delayed Draw,Diversified,,,SOFR,5.65%,1%,,2027-06-16,20052,19800,19857,,19800,,,,,,MFIC,2025-05-12
+Club Car Wash Club Car Wash Operating,co_54a7cedaa92a,Revolver,Diversified,,,SOFR,5.65%,1%,,2027-06-16,1625,1612,1612,,1612,,,,,,MFIC,2025-05-12
+Excelligence Learning Corp.,co_5150498b1d5b,First Lien,Diversified,,,SOFR,5.75%,1%,,2030-01-18,15379,15093,15225,,15093,,,,,,MFIC,2025-05-12
+Excelligence Learning Corp.,co_5150498b1d5b,First Lien,Diversified,,,SOFR,5.75%,1%,,2030-01-18,1356,1312,1332,,1312,,,,,,MFIC,2025-05-12
+Gateway Services Gateway US Holdings,co_289e2d4f1cba,First Lien,Diversified,,,SOFR,4.75%,0.75%,,2028-09-22,10225,10188,10174,,10188,,,,,,MFIC,2025-05-12
+Gateway Services Gateway US Holdings,co_289e2d4f1cba,First Lien,Diversified,,,SOFR,4.75%,0.75%,,2028-09-22,2349,2342,2337,,2342,,,,,,MFIC,2025-05-12
+Gateway Services Gateway US Holdings,co_289e2d4f1cba,Delayed Draw,Diversified,,,SOFR,4.75%,0.75%,,2028-09-22,533,532,531,,532,,,,,,MFIC,2025-05-12
+Gateway Services Gateway US Holdings,co_289e2d4f1cba,Delayed Draw,Diversified,,,SOFR,4.75%,0.75%,,2028-09-22,,-8,-5,,-8,,,,,,MFIC,2025-05-12
+Gateway Services Gateway US Holdings,co_289e2d4f1cba,Revolver,Diversified,,,SOFR,4.75%,0.75%,,2028-09-22,,-1,-2,,-1,,,,,,MFIC,2025-05-12
+Go Car Wash Go Car Wash Management Corp.,co_cf7334c52bd3,First Lien,Diversified,,,SOFR,5.85%,1%,,2026-12-31,1596,1587,1559,,1587,,,,,,MFIC,2025-05-12
+Go Car Wash Go Car Wash Management Corp.,co_cf7334c52bd3,First Lien,Diversified,,,SOFR,5.85%,1%,,2026-12-31,9294,9228,9079,,9228,,,,,,MFIC,2025-05-12
+Go Car Wash Go Car Wash Management Corp.,co_cf7334c52bd3,First Lien,Diversified,,,SOFR,5.85%,1%,,2026-12-31,,,-10,,,,,,,,MFIC,2025-05-12
+Legacy.com Lotus Topco Inc.,co_76c095ecf7b9,First Lien,Diversified,,,SOFR,4.75%,1%,,2030-06-07,2919,2880,2883,,2880,,,,,,MFIC,2025-05-12
+Legacy.com Lotus Topco Inc.,co_76c095ecf7b9,First Lien,Diversified,,,SOFR,4.75%,1%,,2030-06-07,,-10,-18,,-10,,,,,,MFIC,2025-05-12
+Legacy.com Lotus Topco Inc.,co_76c095ecf7b9,First Lien,Diversified,,,SOFR,4.75%,1%,,2030-06-07,,-8,-7,,-8,,,,,,MFIC,2025-05-12
+Regis Corp.,co_e5a8b651992f,First Lien,Diversified,,,SOFR,4.5%,2.5%,,2029-06-24,6907,6784,6782,,6784,,,,,,MFIC,2025-05-12
+Regis Corp.,co_e5a8b651992f,First Lien,Diversified,,,SOFR,4.5%,2.5%,,2029-06-24,721,650,646,,650,,,,,,MFIC,2025-05-12
+SEV Intermediate Holdco,co_ae0817509316,First Lien,Diversified,,,SOFR,5.25%,0.75%,,2030-06-21,8271,8133,8126,,8133,,,,,,MFIC,2025-05-12
+SEV Intermediate Holdco,co_ae0817509316,Revolver,Diversified,,,SOFR,5.25%,0.75%,,2030-06-21,467,440,438,,440,,,,,,MFIC,2025-05-12
+Team Car Wash TCW Midco LLC,co_fc377b44da5f,First Lien,Diversified,,,SOFR,5.75%,1%,,2029-10-22,4988,4941,4938,,4941,,,,,,MFIC,2025-05-12
+Team Car Wash TCW Midco LLC,co_fc377b44da5f,First Lien,Diversified,,,SOFR,5.75%,1%,,2029-10-22,1167,1128,1125,,1128,,,,,,MFIC,2025-05-12
+Team Car Wash TCW Midco LLC,co_fc377b44da5f,First Lien,Diversified,,,SOFR,5.75%,1%,,2029-10-22,,-8,-8,,-8,,,,,,MFIC,2025-05-12
+Ultra Clean Newco Ultra Clean Holdco LLC,co_7b24eadbe4c3,First Lien,Diversified,,,SOFR,5%,1%,,2030-07-01,2481,2442,2444,,2442,,,,,,MFIC,2025-05-12
+Ultra Clean Newco Ultra Clean Holdco LLC,co_7b24eadbe4c3,First Lien,Diversified,,,SOFR,5%,1%,,2030-07-01,5519,5388,5353,,5388,,,,,,MFIC,2025-05-12
+Ultra Clean Newco Ultra Clean Holdco LLC,co_7b24eadbe4c3,First Lien,Diversified,,,SOFR,5%,1%,,2030-07-01,,-22,-21,,-22,,,,,,MFIC,2025-05-12
+US Legal Support USLS Acquisition,co_67cd6cf64b2d,First Lien,Diversified,,,SOFR,5.9%,1%,,2026-05-31,28296,28173,28183,,28173,,,,,,MFIC,2025-05-12
+US Legal Support USLS Acquisition,co_67cd6cf64b2d,Delayed Draw,Diversified,,,SOFR,5.9%,1%,,2026-05-31,5555,5526,5529,,5526,,,,,,MFIC,2025-05-12
+US Legal Support USLS Acquisition,co_67cd6cf64b2d,Revolver,Diversified,,,SOFR,5.9%,1%,,2026-05-31,844,836,839,,836,,,,,,MFIC,2025-05-12
+Village Pet Care,co_45b02c4778dd,First Lien,Diversified,,,SOFR,6.5%,1%,,2029-09-22,1500,1476,1485,,1476,,,,,,MFIC,2025-05-12
+Village Pet Care,co_45b02c4778dd,Delayed Draw,Diversified,,,SOFR,6.5%,1%,,2029-09-22,950,909,900,,909,,,,,,MFIC,2025-05-12
+Village Pet Care,co_45b02c4778dd,Revolver,Diversified,,,SOFR,6.5%,1%,,2029-09-22,803,788,793,,788,,,,,,MFIC,2025-05-12
+Wilson Language Training Owl Acquisition,co_af71909a50d4,First Lien,Diversified,,,SOFR,5.35%,1%,,2028-02-04,9628,9517,9604,,9517,,,,,,MFIC,2025-05-12
+Cablevision Systems CSC Holdings,co_f6b246fddb12,First Lien,Telecommunications,,,SOFR,4.5%,0%,,2028-01-18,981,954,950,,954,,,,,,MFIC,2025-05-12
+Cablevision Systems CSC Holdings,co_f6b246fddb12,Revolver,Telecommunications,,,SOFR,2.35%,0%,,2027-07-13,81,64,74,,64,,,,,,MFIC,2025-05-12
+Electric Utilities Dynagrid Megavolt Borrower,co_590cea6afee0,First Lien,Energy,,,SOFR,4.75%,1%,,2032-02-13,4167,4084,4083,,4084,,,,,,MFIC,2025-05-12
+Electric Utilities Dynagrid Megavolt Borrower,co_590cea6afee0,Revolver,Energy,,,SOFR,4.75%,1%,,2031-02-13,200,196,183,,196,,,,,,MFIC,2025-05-12
+Electrical Equipment International Wire Group,co_1cc26076f873,First Lien,Industrials,,,SOFR,5.1%,1%,,2029-06-28,2463,2418,2450,,2418,,,,,,MFIC,2025-05-12
+Electrical Equipment International Wire Group,co_1cc26076f873,Revolver,Industrials,,,SOFR,5.1%,1%,,2029-06-28,,-8,-2,,-8,,,,,,MFIC,2025-05-12
+Electrical Equipment US MetalCo Holdings,co_0a83938e6ea5,First Lien,Industrials,,,SOFR,5.5%,1%,,2029-10-31,13577,13319,13441,,13319,,,,,,MFIC,2025-05-12
+Electrical Equipment US MetalCo Holdings,co_0a83938e6ea5,Revolver,Industrials,,,SOFR,5.5%,1%,,2029-10-31,,-25,-13,,-25,,,,,,MFIC,2025-05-12
+Electronic Equipment Instruments & Components AVAD LLC,co_83b608066c44,First Lien,Software & Technology,,,SOFR,4.11%,1%,,2026-09-10,9633,14612,9581,,14612,,,,,,MFIC,2025-05-12
+Electronic Equipment Instruments & Components AVAD LLC,co_83b608066c44,Revolver,Software & Technology,,,SOFR,4.11%,1%,,2026-09-10,16472,16472,16381,,16472,,,,,,MFIC,2025-05-12
+Electronic Equipment Instruments & Components Pro Vigil Pro-Vigil Holding Company LLC,co_fe05aea2aeec,First Lien,,,,SOFR,8.6%,1%,,2026-01-11,7680,7636,7568,,7636,,,,,,MFIC,2025-05-12
+Electronic Equipment Instruments & Components Pro Vigil Pro-Vigil Holding Company LLC,co_fe05aea2aeec,Delayed Draw,,,,SOFR,8.6%,1%,,2026-01-11,20434,20290,20113,,20290,,,,,,MFIC,2025-05-12
+Equipment & Services Camin Cargo Camin Cargo Control Holdings,co_c222113ca768,First Lien,Energy,,,SOFR,5.5%,1%,,2029-12-07,988,969,980,,969,,,,,,MFIC,2025-05-12
+Equipment & Services Camin Cargo Camin Cargo Control Holdings,co_c222113ca768,Delayed Draw,Energy,,,SOFR,5.5%,1%,,2029-12-07,,-25,-24,,-25,,,,,,MFIC,2025-05-12
+Equipment & Services Camin Cargo Camin Cargo Control Holdings,co_c222113ca768,Revolver,Energy,,,SOFR,5.5%,1%,,2029-12-07,763,745,758,,745,,,,,,MFIC,2025-05-12
+Equipment & Services Generator Buyer Inc.,co_1ba068052dac,First Lien,Energy,,,CORRA,5.25%,0.75%,,2030-07-22,16045,12532,12213,,12532,,,,,,MFIC,2025-05-12
+Equipment & Services Generator Buyer Inc.,co_1ba068052dac,Delayed Draw,Energy,,,CORRA,5.25%,0.75%,,2030-07-22,415,287,258,,287,,,,,,MFIC,2025-05-12
+Equipment & Services Generator Buyer Inc.,co_1ba068052dac,Revolver,Energy,,,CORRA,5.25%,0.75%,,2030-07-22,,-20,-15,,-20,,,,,,MFIC,2025-05-12
+Entertainment DHX WildBrain Ltd.,co_2b3dbafbf108,First Lien,Media & Entertainment,,,SOFR,6%,1%,,2029-07-23,13325,13082,13092,,13082,,,,,,MFIC,2025-05-12
+Entertainment DHX WildBrain Ltd.,co_2b3dbafbf108,First Lien,Media & Entertainment,,,SOFR,6%,1%,,2029-07-23,72,47,47,,47,,,,,,MFIC,2025-05-12
+AML Rightsource Gabriel Partners,co_286775cea9c2,First Lien,Financial Services,,,SOFR,6.4%,1%,,2026-09-21,29878,29684,29129,,29684,,,,,,MFIC,2025-05-12
+AML Rightsource Gabriel Partners,co_286775cea9c2,Delayed Draw,Financial Services,,,SOFR,6.4%,1%,,2026-09-21,1267,1258,1235,,1258,,,,,,MFIC,2025-05-12
+AML Rightsource Gabriel Partners,co_286775cea9c2,Revolver,Financial Services,,,SOFR,6.4%,1%,,2026-09-21,664,658,647,,658,,,,,,MFIC,2025-05-12
+Celink Compu-Link Corp.,co_88493e712765,First Lien,Financial Services,,,SOFR,6.1%,1%,,2029-11-30,16268,15935,16136,,15935,,,,,,MFIC,2025-05-12
+Celink Peer Advisors,co_989069f99d03,First Lien,Financial Services,,,SOFR,6.1%,1%,,2029-11-30,3912,3906,3880,,3906,,,,,,MFIC,2025-05-12
+Celink Peer Advisors,co_989069f99d03,Revolver,Financial Services,,,SOFR,6.1%,1%,,2029-11-30,,-3,-23,,-3,,,,,,MFIC,2025-05-12
+Definiti LLC,co_0abd6a668f44,First Lien,Financial Services,,,SOFR,5.75%,1%,,2029-03-16,5970,5836,5880,,5836,,,,,,MFIC,2025-05-12
+Definiti LLC,co_0abd6a668f44,First Lien,Financial Services,,,SOFR,5.75%,1%,,2029-03-16,1299,1258,1252,,1258,,,,,,MFIC,2025-05-12
+Definiti LLC,co_0abd6a668f44,First Lien,Financial Services,,,SOFR,5.75%,1%,,2029-03-16,,-13,-10,,-13,,,,,,MFIC,2025-05-12
+Insight XI Aggregator LP. Insight XI Aggregator,co_a56b12b80f1b,First Lien,Financial Services,,,SOFR,3.25%,0%,,2025-08-28,2193,2193,2193,,2193,,,,,,MFIC,2025-05-12
+Lending Point LendingPoint 2018-1 Funding Trust,co_4bdb94751da8,First Lien,Financial Services,,4%,SOFR,1%,1%,,2027-12-31,37524,37163,37374,,37163,,,,,,MFIC,2025-05-12
+Lending Point LendingPoint LLC,co_a6de1e1d92ce,First Lien,Financial Services,,,SOFR,3%,1%,,2027-12-31,4929,4929,4929,,4929,,,,,,MFIC,2025-05-12
+Lending Point LendingPoint LLC,co_a6de1e1d92ce,First Lien,Financial Services,,,SOFR,5%,1%,,2027-12-31,,,-3,,,,,,,,MFIC,2025-05-12
+Lending Point LendingPoint LLC,co_a6de1e1d92ce,First Lien,Financial Services,,,SOFR,3%,1%,,2027-12-31,2068,2068,2068,,2068,,,,,,MFIC,2025-05-12
+Nexity Evoriel,co_b34cdfa0d347,First Lien,Financial Services,,,Euribor,5.25%,0%,,2031-04-02,2283,2440,2457,,2440,,,,,,MFIC,2025-05-12
+Nexity Evoriel,co_b34cdfa0d347,First Lien,Financial Services,,,Euribor,5.25%,0%,,2031-04-02,391,403,417,,403,,,,,type_hint_delayed_draw_from_name,MFIC,2025-05-12
+Origami Opportunities Fund III,co_da5b45caca00,First Lien,Financial Services,,,SOFR,6.25%,2%,,2027-10-25,6647,6561,6548,,6561,,,,,,MFIC,2025-05-12
+Origami Opportunities Fund III,co_da5b45caca00,Delayed Draw,Financial Services,,,SOFR,6.25%,2%,,2027-10-25,390,347,340,,347,,,,,,MFIC,2025-05-12
+PMA Parent Holdings,co_283bb71afd22,First Lien,Financial Services,,,SOFR,5.25%,0.75%,,2031-01-31,14013,13873,13873,,13873,,,,,,MFIC,2025-05-12
+PMA Parent Holdings,co_283bb71afd22,Revolver,Financial Services,,,SOFR,5.25%,0.75%,,2031-01-31,,-10,-10,,-10,,,,,,MFIC,2025-05-12
+Purchasing Power LLC,co_fc68039870dd,Revolver,Financial Services,,,SOFR,7.1%,0%,,2027-02-26,3220,3220,3220,,3220,,,,,,MFIC,2025-05-12
+Stretto,co_289f34fb1e7a,First Lien,Financial Services,,,SOFR,6%,1%,,2028-10-13,11194,11146,11194,,11146,,,,,,MFIC,2025-05-12
+Food Products Berner Foods Berner Food & Beverage,co_a5783308686e,First Lien,Food & Beverage,,,SOFR,5.65%,1%,,2027-07-30,34214,33862,33701,,33862,,,,,,MFIC,2025-05-12
+Food Products Berner Foods Berner Food & Beverage,co_a5783308686e,Revolver,Food & Beverage,,,Prime,4.5%,,,2026-07-30,807,788,756,,788,,,,,,MFIC,2025-05-12
+Food Products Hive Intermediate,co_99eccbe4baa0,First Lien,Food & Beverage,,,SOFR,6.1%,1%,,2027-09-22,14126,13999,14056,,13999,,,,,,MFIC,2025-05-12
+Food Products Hive Intermediate,co_99eccbe4baa0,Revolver,Food & Beverage,,,SOFR,6.1%,1%,,2027-09-22,843,824,832,,824,,,,,,MFIC,2025-05-12
+Food Products Jacent Strategic Merchandising,co_847e407882b8,First Lien,Food & Beverage,,0.75%,SOFR,5.85%,1%,,2025-10-23,22192,22191,22088,,22191,,,,,,MFIC,2025-05-12
+Food Products Jacent Strategic Merchandising,co_847e407882b8,First Lien,Food & Beverage,,,SOFR,6.6%,1%,,2025-10-23,1564,1561,1550,,1561,,,,,type_hint_revolver_from_name,MFIC,2025-05-12
+Food Products Nutpods Green Grass Foods,co_77aa7393627c,First Lien,Food & Beverage,,,SOFR,6.25%,1%,,2029-12-26,3703,3641,3694,,3641,,,,,,MFIC,2025-05-12
+Food Products Nutpods Green Grass Foods,co_77aa7393627c,Revolver,Food & Beverage,,,SOFR,6.5%,1%,,2029-12-26,,-20,-3,,-20,,,,,,MFIC,2025-05-12
+Food Products Patriot Pickle Patriot Foods Buyer,co_378e83e8997b,First Lien,Food & Beverage,,,SOFR,5.25%,1%,,2029-12-24,247,242,244,,242,,,,,,MFIC,2025-05-12
+Food Products Patriot Pickle Patriot Foods Buyer,co_378e83e8997b,Delayed Draw,Food & Beverage,,,SOFR,5.25%,1%,,2029-12-24,,-4,-5,,-4,,,,,,MFIC,2025-05-12
+Food Products Patriot Pickle Patriot Foods Buyer,co_378e83e8997b,Revolver,Food & Beverage,,,SOFR,5.25%,1%,,2029-12-24,,-4,-2,,-4,,,,,,MFIC,2025-05-12
+Ground Transportation Beacon Mobility Beacon Mobility Corp.,co_d4aeb56e6bab,First Lien,Transportation & Logistics,,,SOFR,6.35%,1%,,2025-12-31,12729,12707,12696,,12707,,,,,,MFIC,2025-05-12
+Ground Transportation Beacon Mobility Beacon Mobility Corp.,co_d4aeb56e6bab,First Lien,Transportation & Logistics,,,SOFR,6.35%,1%,,2025-12-31,23758,23810,23696,,23810,,,,,,MFIC,2025-05-12
+Ground Transportation Beacon Mobility Beacon Mobility Corp.,co_d4aeb56e6bab,First Lien,Transportation & Logistics,,,Prime,5.25%,,,2025-12-31,780,765,770,,765,,,,,,MFIC,2025-05-12
+Ground Transportation Bird Rides Blue Jay Transit Inc.,co_47d46046e11d,First Lien,Transportation & Logistics,,7%,SOFR,3%,1%,,2028-03-22,20142,19896,20142,,19896,,,,,,MFIC,2025-05-12
+Ground Transportation Bird Rides Blue Jay Transit Inc.,co_47d46046e11d,First Lien,Transportation & Logistics,,7%,SOFR,3%,1%,,2025-09-30,2525,2525,2525,,2525,,,,,,MFIC,2025-05-12
+Ground Transportation Boasso Channelside AcquisitionCo,co_abbdc84bb80f,First Lien,Transportation & Logistics,,,SOFR,4.75%,0.75%,,2028-06-30,3533,3526,3525,,3526,,,,,,MFIC,2025-05-12
+Ground Transportation Boasso Channelside AcquisitionCo,co_abbdc84bb80f,Delayed Draw,Transportation & Logistics,,,SOFR,4.75%,0.75%,,2028-06-30,,,,,,,,,,,MFIC,2025-05-12
+Ground Transportation Boasso Channelside AcquisitionCo,co_abbdc84bb80f,Revolver,Transportation & Logistics,,,SOFR,4.75%,0.75%,,2026-07-01,,-1,-1,,-1,,,,,,MFIC,2025-05-12
+Ground Transportation Heniff and Superior Heniff Holdco,co_206b61e011ec,First Lien,Transportation & Logistics,,,SOFR,5.85%,1%,,2026-12-03,29055,28881,28837,,28881,,,,,,MFIC,2025-05-12
+Ground Transportation Heniff and Superior Heniff Holdco,co_206b61e011ec,Revolver,Transportation & Logistics,,,SOFR,5.85%,1%,,2026-12-03,3369,3362,3340,,3362,,,,,,MFIC,2025-05-12
+Ground Transportation Olympus Terminals Olympus Terminals Holdco II LLC,co_df752366d131,First Lien,Transportation & Logistics,,,SOFR,5.25%,0.75%,,2030-12-17,18581,18220,18224,,18220,,,,,,MFIC,2025-05-12
+Ground Transportation Olympus Terminals Olympus Terminals Holdco II LLC,co_df752366d131,First Lien,Transportation & Logistics,,,SOFR,5.25%,0.75%,,2030-12-17,,-66,-66,,-66,,,,,,MFIC,2025-05-12
+Ground Transportation Olympus Terminals Olympus Terminals Holdco II LLC,co_df752366d131,First Lien,Transportation & Logistics,,,SOFR,5.25%,0.75%,,2030-12-17,,-57,-56,,-57,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Carestream Health Carestream Health,co_17e63a1ac067,First Lien,Healthcare,,,SOFR,7.5%,1%,,2027-09-30,165,151,114,,151,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Cerus Corp.,co_82203cde1e5c,First Lien,Healthcare,,,SOFR,6.6%,1.8%,,2028-03-01,12000,11979,12000,,11979,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Cerus Corp.,co_82203cde1e5c,First Lien,Healthcare,,,SOFR,6.6%,1.8%,,2028-03-01,4500,4492,4500,,4492,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Cerus Corp.,co_82203cde1e5c,First Lien,Healthcare,,,SOFR,6.6%,1%,,2028-03-01,3000,2981,3000,,2981,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Cerus Corp.,co_82203cde1e5c,First Lien,Healthcare,,1%,SOFR,3.85%,1%,,2028-03-01,1097,1096,1097,,1096,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Compass Health Roscoe Medical,co_a8f973abcf07,First Lien,Healthcare,,,SOFR,6.36%,1%,,2025-04-11,7372,7291,7299,,7291,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Compass Health Roscoe Medical,co_a8f973abcf07,Revolver,Healthcare,,,SOFR,6.36%,1%,,2025-04-11,492,483,483,,483,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Dr. Scholl's DRS Holdings III,co_33354eda05e5,First Lien,Healthcare,,,SOFR,5.25%,1%,,2028-11-01,24517,24394,24394,,24394,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Dr. Scholl's DRS Holdings III,co_33354eda05e5,Revolver,Healthcare,,,SOFR,5.25%,1%,,2028-11-01,,-7,-7,,-7,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Medical Guardian Medical Guardian,co_e6075d0ce20a,First Lien,Healthcare,,,SOFR,5%,1%,,2028-04-26,30982,30776,30982,,30776,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Medical Guardian Medical Guardian,co_e6075d0ce20a,Delayed Draw,Healthcare,,,SOFR,5%,1%,,2028-04-26,4726,4681,4726,,4681,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Medical Guardian Medical Guardian,co_e6075d0ce20a,Revolver,Healthcare,,,SOFR,5%,1%,,2028-04-26,,-22,,,-22,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Natus Sensory Natus Sensory,co_1d247bdbb001,First Lien,Healthcare,,,SOFR,5.25%,0.75%,,2031-01-07,10680,10524,10520,,10524,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Natus Sensory Natus Sensory,co_1d247bdbb001,First Lien,Healthcare,,,Euribor,5.25%,0%,,2031-01-07,2569,2618,2736,,2618,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Natus Sensory Natus Sensory,co_1d247bdbb001,Delayed Draw,Healthcare,,,SOFR,5.25%,0.75%,,2031-01-07,,-20,-21,,-20,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Natus Sensory Natus Sensory,co_1d247bdbb001,Revolver,Healthcare,,,SOFR,5.25%,0.75%,,2031-01-07,,-20,-21,,-20,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Treace Medical Concepts,co_eb2fb3f4aa7a,First Lien,Healthcare,,,SOFR,6.1%,1%,,2027-04-01,14583,14547,14474,,14547,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Treace Medical Concepts,co_eb2fb3f4aa7a,Delayed Draw,Healthcare,,,SOFR,6.1%,1%,,2027-04-01,,-4,-66,,-4,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Treace Medical Concepts,co_eb2fb3f4aa7a,Revolver,Healthcare,,,SOFR,4.1%,1%,,2027-04-01,400,394,378,,394,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Alcami Corp.,co_f210657d0beb,First Lien,Healthcare,,,SOFR,7.1%,1%,,2028-12-21,8034,7843,7853,,7843,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Alcami Corp.,co_f210657d0beb,First Lien,Healthcare,,,SOFR,7.1%,1%,,2028-12-21,591,577,578,,577,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Alcami Corp.,co_f210657d0beb,First Lien,Healthcare,,,SOFR,7.1%,1%,,2028-12-21,82,58,58,,58,,,,,,MFIC,2025-05-12
+Health Care Providers & Services All Star All Star Recruiting Locums,co_8f8c68385b96,First Lien,Healthcare,,,SOFR,5.5%,1%,,2030-05-01,6904,6781,6904,,6781,,,,,,MFIC,2025-05-12
+Health Care Providers & Services All Star All Star Recruiting Locums,co_8f8c68385b96,Delayed Draw,Healthcare,,,SOFR,5.5%,1%,,2030-05-01,,-15,,,-15,,,,,,MFIC,2025-05-12
+Health Care Providers & Services All Star All Star Recruiting Locums,co_8f8c68385b96,Revolver,Healthcare,,,SOFR,5.5%,1%,,2030-05-01,326,304,326,,304,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Allied Benefit Systems Allied Benefit Systems Intermediate LLC,co_2cf09d4a5f78,First Lien,,,,SOFR,5.25%,0.75%,,2030-10-31,5858,5858,5858,,5858,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Allied Benefit Systems Allied Benefit Systems Intermediate LLC,co_2cf09d4a5f78,First Lien,,,,SOFR,5.25%,0.75%,,2030-10-31,1074,1067,1074,,1067,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Cato Research LS Clinical Services Holdings,co_af17b99e015f,First Lien,Healthcare,,,SOFR,7.51%,1%,,2027-12-16,15182,15024,14728,,15024,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Cato Research LS Clinical Services Holdings,co_af17b99e015f,Revolver,Healthcare,,,SOFR,7.51%,1%,,2027-06-16,1641,1620,1590,,1620,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Celerion Buyer,co_3756b1b85beb,First Lien,Healthcare,,,SOFR,5%,0.75%,,2029-11-05,11089,10889,11034,,10889,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Celerion Buyer,co_3756b1b85beb,Delayed Draw,Healthcare,,,SOFR,5%,0.75%,,2029-11-05,,-26,-6,,-26,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Celerion Buyer,co_3756b1b85beb,Revolver,Healthcare,,,SOFR,5%,0.75%,,2028-11-03,,-12,-3,,-12,,,,,,MFIC,2025-05-12
+Health Care Providers & Services CNSI Acentra Holdings,co_099c3c7e96e8,First Lien,Healthcare,,,SOFR,5.5%,0.5%,,2029-12-17,17595,17141,17419,,17141,,,,,,MFIC,2025-05-12
+Health Care Providers & Services CNSI Acentra Holdings,co_099c3c7e96e8,First Lien,Healthcare,,,SOFR,5.75%,0.5%,,2029-12-17,3950,3903,3930,,3903,,,,,,MFIC,2025-05-12
+Health Care Providers & Services CNSI Acentra Holdings,co_099c3c7e96e8,Revolver,Healthcare,,,SOFR,5.5%,0.5%,,2029-12-17,533,485,513,,485,,,,,,MFIC,2025-05-12
+Health Care Providers & Services EmpiRx Health LLC,co_9ae84f213385,First Lien,Healthcare,,,SOFR,5.1%,1%,,2027-08-05,8795,8706,8795,,8706,,,,,,MFIC,2025-05-12
+Health Care Providers & Services EmpiRx Health LLC,co_9ae84f213385,First Lien,Healthcare,,,SOFR,5.1%,1%,,2027-08-05,,-7,,,-7,,,,,,MFIC,2025-05-12
+Health Care Providers & Services ExactCare Parent,co_2185926118c2,First Lien,Healthcare,,,SOFR,5.5%,1%,,2029-11-05,17852,17435,17852,,17435,,,,,,MFIC,2025-05-12
+Health Care Providers & Services ExactCare Parent,co_2185926118c2,Revolver,Healthcare,,,SOFR,5.5%,1%,,2029-11-05,,-42,,,-42,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Ingenovis Health Ingenovis Health,co_8204ce78ec7f,First Lien,Healthcare,,,SOFR,4.25%,0.75%,,2028-03-06,2873,2620,1347,,2620,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Ingenovis Health Ingenovis Health,co_8204ce78ec7f,First Lien,Healthcare,,,SOFR,4.25%,0.5%,,2028-03-06,978,891,458,,891,,,,,,MFIC,2025-05-12
+Health Care Providers & Services KureSmart Kure Pain Holdings,co_bc83a53a5a3d,First Lien,Healthcare,,,SOFR,5.6%,1%,,2027-08-27,25992,25900,25984,,25900,,,,,,MFIC,2025-05-12
+Health Care Providers & Services KureSmart Kure Pain Holdings,co_bc83a53a5a3d,Revolver,Healthcare,,,SOFR,5.6%,1%,,2027-08-27,1062,1055,1061,,1055,,,,,,MFIC,2025-05-12
+Health Care Providers & Services LucidHealth Premier Imaging,co_0fce9f7e0214,First Lien,Healthcare,,6.56%,SOFR,6%,1%,,2026-03-31,7167,7140,5895,,7140,,,,,,MFIC,2025-05-12
+Health Care Providers & Services LucidHealth Premier Imaging,co_0fce9f7e0214,Delayed Draw,Healthcare,,6.56%,SOFR,6%,1%,,2026-03-31,1937,1865,1593,,1865,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Maxor National Pharmacy Services LLC,co_874c1e36d2c9,First Lien,Healthcare,,,SOFR,6.1%,1%,,2029-03-01,9975,9880,9875,,9880,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Maxor National Pharmacy Services LLC,co_874c1e36d2c9,First Lien,Healthcare,,,SOFR,6.1%,1%,,2029-03-01,13152,12861,13020,,12861,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Maxor National Pharmacy Services LLC,co_874c1e36d2c9,Revolver,Healthcare,,,SOFR,7%,1%,,2029-03-01,,-30,-15,,-30,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Midwest Vision Midwest Vision Partners Management,co_d49a2bac2f87,First Lien,,,2%,SOFR,4.5%,1%,,2027-01-12,20911,20708,20754,,20708,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Midwest Vision Midwest Vision Partners Management,co_d49a2bac2f87,First Lien,,,,SOFR,4.5%,1%,,2027-01-12,1127,1116,924,,1116,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Midwest Vision Midwest Vision Partners Management,co_d49a2bac2f87,Revolver,,,,SOFR,6.5%,1%,,2027-01-12,612,607,596,,607,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Omega Healthcare OMH-Healthedge Holdings,co_b032b7b53b45,First Lien,Healthcare,,,Prime,5%,,,2029-10-08,9826,9782,9826,,9782,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Omega Healthcare OMH-Healthedge Holdings,co_b032b7b53b45,Revolver,Healthcare,,,SOFR,6%,1%,,2029-10-08,,-5,,,-5,,,,,,MFIC,2025-05-12
+Health Care Providers & Services PHS Buyer,co_54d74b83cc7b,First Lien,Healthcare,,4.5%,SOFR,6.1%,1%,,2027-01-31,26079,25910,22102,,25910,,,,,,MFIC,2025-05-12
+Health Care Providers & Services PHS Buyer,co_54d74b83cc7b,Revolver,Healthcare,,4.5%,SOFR,6.1%,1%,,2027-01-31,1458,1435,1153,,1435,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Rarebreed Veterinary Partners,co_ee13d8387d92,First Lien,Healthcare,,,SOFR,5.25%,1%,,2030-04-18,4226,4152,4163,,4152,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Rarebreed Veterinary Partners,co_ee13d8387d92,Delayed Draw,Healthcare,,,SOFR,5.25%,1%,,2030-04-18,7324,7159,7048,,7159,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Rarebreed Veterinary Partners,co_ee13d8387d92,Revolver,Healthcare,,,SOFR,5.25%,1%,,2030-04-18,,-16,-14,,-16,,,,,,MFIC,2025-05-12
+Health Care Providers & Services RHA Health Services Pace Health Companies,co_5b6bc6a20a1b,First Lien,Healthcare,,,SOFR,5.65%,1%,,2026-08-02,1386,1381,1383,,1381,,,,,,MFIC,2025-05-12
+Health Care Providers & Services RHA Health Services Pace Health Companies,co_5b6bc6a20a1b,First Lien,Healthcare,,,SOFR,5.4%,1%,,2026-08-02,463,461,460,,461,,,,,,MFIC,2025-05-12
+Health Care Providers & Services RHA Health Services Pace Health Companies,co_5b6bc6a20a1b,Delayed Draw,Healthcare,,,SOFR,5.4%,1%,,2026-08-02,3223,3210,3206,,3210,,,,,,MFIC,2025-05-12
+Health Care Providers & Services RHA Health Services Pace Health Companies,co_5b6bc6a20a1b,Delayed Draw,Healthcare,,,SOFR,5.65%,1%,,2026-08-02,195,192,193,,192,,,,,,MFIC,2025-05-12
+Health Care Providers & Services RHA Health Services Pace Health Companies,co_5b6bc6a20a1b,Revolver,Healthcare,,,SOFR,5.4%,1%,,2026-08-02,,-24,-3,,-24,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Team Select TS Investors,co_45209107e307,First Lien,Healthcare,,,SOFR,5.6%,1%,,2029-05-04,9502,9353,9455,,9353,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Team Select TS Investors,co_45209107e307,Delayed Draw,Healthcare,,,SOFR,5.6%,1%,,2029-05-04,110,88,96,,88,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Team Select TS Investors,co_45209107e307,Revolver,Healthcare,,,SOFR,5.6%,1%,,2029-05-04,,-4,-1,,-4,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Thomas Scientific Thomas Scientific,co_2a9eba199985,First Lien,Healthcare,,4.25%,SOFR,3.4%,1%,,2027-12-14,31782,31440,30810,,31440,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Thomas Scientific Thomas Scientific,co_2a9eba199985,Revolver,Healthcare,,4.25%,SOFR,3.35%,1%,,2027-12-14,2265,2237,2175,,2237,,,,,,MFIC,2025-05-12
+Health Care Providers & Services WellDyneRx LLC,co_328fa0f721fc,First Lien,Healthcare,,,SOFR,6.85%,0.75%,,2027-03-09,17535,17357,17359,,17357,,,,,,MFIC,2025-05-12
+Health Care Providers & Services WellDyneRx LLC,co_328fa0f721fc,Revolver,Healthcare,,,SOFR,6.85%,0.75%,,2026-03-09,,-9,-10,,-9,,,,,,MFIC,2025-05-12
+Health Care Technology Gainwell Acquisition Corp.,co_19b39bdd7dbc,First Lien,Healthcare,,,SOFR,4%,0.75%,,2027-10-01,16735,15904,15741,,15904,,,,,,MFIC,2025-05-12
+Health Care Technology Inovalon Holdings,co_73ddfc0dd6bc,First Lien,Healthcare,,2.75%,SOFR,3%,0.75%,,2028-11-24,6717,6617,6365,,6617,,,,,,MFIC,2025-05-12
+Health Care Technology Inovalon Holdings,co_73ddfc0dd6bc,Delayed Draw,Healthcare,,2.75%,SOFR,3%,0.75%,,2028-11-24,511,506,488,,506,,,,,,MFIC,2025-05-12
+Health Care Technology TELA Bio Inc.,co_100c470d15e9,First Lien,Healthcare,,,SOFR,6.35%,1%,,2027-05-01,13333,13300,13333,,13300,,,,,,MFIC,2025-05-12
+Health Care Technology TELA Bio Inc.,co_100c470d15e9,Delayed Draw,Healthcare,,,SOFR,6.35%,1%,,2027-05-01,,-1,,,-1,,,,,,MFIC,2025-05-12
+Cave Enterprises Operations,co_6921769d8f37,First Lien,Healthcare,,,SOFR,6.6%,1.5%,,2028-08-09,8529,8411,8529,,8411,,,,,,MFIC,2025-05-12
+Cave Enterprises Operations,co_6921769d8f37,Delayed Draw,Healthcare,,,SOFR,6.6%,1.5%,,2028-08-09,,-1,,,-1,,,,,,MFIC,2025-05-12
+Hotels,co_5b6c98979368,First Lien,Healthcare,,,SOFR,6.5%,1%,,2028-07-18,985,967,985,,967,,,,,,MFIC,2025-05-12
+Hotels,co_5b6c98979368,Delayed Draw,Healthcare,,,SOFR,6.5%,1%,,2028-07-18,2382,2336,2382,,2336,,,,,,MFIC,2025-05-12
+Hotels,co_5b6c98979368,Revolver,Healthcare,,,SOFR,6.5%,1%,,2028-07-18,1000,983,1000,,983,,,,,,MFIC,2025-05-12
+Hotels,co_5b6c98979368,Delayed Draw,Healthcare,,,SOFR,5.95%,1%,,2026-11-18,,-1,,,-1,,,,,,MFIC,2025-05-12
+International Cruise & Excursion Gallery Inc.,co_d49f279f829c,First Lien,Healthcare,,,SOFR,6%,1%,,2028-12-31,4091,8913,4030,,8913,,,,,,MFIC,2025-05-12
+Hotels,co_5b6c98979368,First Lien,Healthcare,,,SOFR,6.25%,1%,,2029-05-31,3494,3449,3459,,3449,,,,,,MFIC,2025-05-12
+Hotels,co_5b6c98979368,Delayed Draw,Healthcare,,,SOFR,6.25%,1%,,2029-05-31,5499,5432,5435,,5432,,,,,,MFIC,2025-05-12
+Hotels,co_5b6c98979368,First Lien,Healthcare,,,SOFR,6.85%,1.5%,,2028-04-03,8771,8687,8618,,8687,,,,,,MFIC,2025-05-12
+Hotels,co_5b6c98979368,Delayed Draw,Healthcare,,,SOFR,6.85%,1.5%,,2028-04-03,,-1,-17,,-1,,,,,,MFIC,2025-05-12
+Taco Cabana YTC Enterprises,co_dd99e2fb364d,First Lien,Healthcare,,,SOFR,6.36%,1%,,2026-08-16,8713,8678,8364,,8678,,,,,,MFIC,2025-05-12
+Hotels,co_5b6c98979368,First Lien,Healthcare,,,SOFR,6%,1%,,2029-05-16,11738,11585,11357,,11585,,,,,,MFIC,2025-05-12
+Hotels,co_5b6c98979368,Delayed Draw,Healthcare,,,SOFR,6%,1%,,2029-05-16,549,541,350,,541,,,,,,MFIC,2025-05-12
+Hotels,co_5b6c98979368,Revolver,Healthcare,,,SOFR,6%,1%,,2029-05-16,,-25,-66,,-25,,,,,,MFIC,2025-05-12
+Hotels,co_5b6c98979368,First Lien,Healthcare,,,SONIA,5.78%,0.5%,,2026-11-26,9001,11618,11588,,11618,,,,,,MFIC,2025-05-12
+Hotels,co_5b6c98979368,Delayed Draw,Healthcare,,,SONIA,5.78%,0.5%,,2026-11-26,10747,13418,13835,,13418,,,,,,MFIC,2025-05-12
+Hotels,co_5b6c98979368,Revolver,Healthcare,,,SONIA,5.78%,0.5%,,2026-11-26,356,417,457,,417,,,,,,MFIC,2025-05-12
+Hotels,co_5b6c98979368,Revolver,Healthcare,,,SONIA,5.28%,0.5%,,2026-05-26,,-1,-2,,-1,,,,,,MFIC,2025-05-12
+Walters Wedding Estates WH BorrowerCo,co_58e2925e79bd,First Lien,Healthcare,,,SOFR,5%,1%,,2030-08-02,14348,14149,14169,,14149,,,,,,MFIC,2025-05-12
+Walters Wedding Estates WH BorrowerCo,co_58e2925e79bd,Delayed Draw,Healthcare,,,SOFR,5%,1%,,2030-08-02,2506,2397,2404,,2397,,,,,,MFIC,2025-05-12
+Walters Wedding Estates WH BorrowerCo,co_58e2925e79bd,Revolver,Healthcare,,,SOFR,5%,1%,,2030-08-02,583,549,551,,549,,,,,,MFIC,2025-05-12
+Polywood Poly-Wood,co_5fa33475574a,First Lien,Consumer & Retail,,,SOFR,4.88%,1%,,2030-03-20,2160,2116,2160,,2116,,,,,,MFIC,2025-05-12
+Polywood Poly-Wood,co_5fa33475574a,Delayed Draw,Consumer & Retail,,,SOFR,5.75%,1%,,2030-03-20,,-13,,,-13,,,,,,MFIC,2025-05-12
+Polywood Poly-Wood,co_5fa33475574a,Revolver,Consumer & Retail,,,SOFR,4.88%,1%,,2030-03-20,120,112,120,,112,,,,,,MFIC,2025-05-12
+High Street Insurance High Street Buyer,co_4b04937bb627,First Lien,Insurance,,,SOFR,5.25%,0.75%,,2028-04-14,10074,9971,10023,,9971,,,,,,MFIC,2025-05-12
+High Street Insurance High Street Buyer,co_4b04937bb627,Delayed Draw,Insurance,,,SOFR,5.25%,0.75%,,2028-04-14,19130,18955,19034,,18955,,,,,,MFIC,2025-05-12
+High Street Insurance High Street Buyer,co_4b04937bb627,Revolver,Insurance,,,SOFR,5.25%,0.75%,,2027-04-16,,-15,-11,,-15,,,,,,MFIC,2025-05-12
+PGM Holdings Corp.,co_3e9ae08b0341,First Lien,Insurance,,,SOFR,6.25%,1%,,2025-12-02,16638,16573,16430,,16573,,,,,,MFIC,2025-05-12
+PGM Holdings Corp.,co_3e9ae08b0341,Delayed Draw,Insurance,,,SOFR,6.25%,1%,,2025-12-02,2005,1995,1980,,1995,,,,,,MFIC,2025-05-12
+PGM Holdings Corp.,co_3e9ae08b0341,Revolver,Insurance,,,SOFR,6.25%,1%,,2025-12-02,692,690,681,,690,,,,,,MFIC,2025-05-12
+Spectrum Automotive Shelby 2021 Holdings Corp.,co_addc8a327559,First Lien,Insurance,,,SOFR,5.25%,0.75%,,2028-06-29,14073,13956,14003,,13956,,,,,,MFIC,2025-05-12
+Spectrum Automotive Shelby 2021 Holdings Corp.,co_addc8a327559,First Lien,Insurance,,,SOFR,5.25%,0.75%,,2028-06-29,3441,3367,3421,,3367,,,,,,MFIC,2025-05-12
+Spectrum Automotive Shelby 2021 Holdings Corp.,co_addc8a327559,First Lien,Insurance,,,SOFR,5.75%,0.75%,,2027-06-29,,-2,-2,,-2,,,,,,MFIC,2025-05-12
+Interactive Media & Services Securus Technologies Holdings Inc.,co_98fc24d2a070,First Lien,Media & Entertainment,,,SOFR,10%,1%,,2025-12-24,196,188,196,,188,,,,,,MFIC,2025-05-12
+Interactive Media & Services The Weather Company Zephyr Buyer,co_4ca09356bc9e,First Lien,Media & Entertainment,,,SOFR,6.5%,1%,,2030-01-31,30738,30086,30354,,30086,,,,,,MFIC,2025-05-12
+Interactive Media & Services The Weather Company Zephyr Buyer,co_4ca09356bc9e,Revolver,Media & Entertainment,,,SOFR,6.75%,1%,,2030-01-31,,-80,-49,,-80,,,,,,MFIC,2025-05-12
+IT Services AGDATA Midco,co_792623b1798a,First Lien,Software & Technology,,,SOFR,4.75%,0.75%,,2030-07-01,2646,2610,2606,,2610,,,,,,MFIC,2025-05-12
+IT Services AGDATA Midco,co_792623b1798a,Delayed Draw,Software & Technology,,,SOFR,4.75%,0.75%,,2030-07-01,,-12,-27,,-12,,,,,,MFIC,2025-05-12
+IT Services AGDATA Midco,co_792623b1798a,Revolver,Software & Technology,,,SOFR,4.75%,0.75%,,2030-07-01,,-7,-8,,-7,,,,,,MFIC,2025-05-12
+IT Services Avenu ACP Avenu Buyer,co_5314566033f3,First Lien,Software & Technology,,,SOFR,5.25%,1%,,2029-10-02,1234,1207,1216,,1207,,,,,,MFIC,2025-05-12
+IT Services Avenu ACP Avenu Buyer,co_5314566033f3,Delayed Draw,Software & Technology,,,SOFR,5.25%,1%,,2029-10-02,2234,2156,2152,,2156,,,,,,MFIC,2025-05-12
+IT Services Avenu ACP Avenu Buyer,co_5314566033f3,Revolver,Software & Technology,,,SOFR,5.25%,1%,,2029-10-02,167,151,156,,151,,,,,,MFIC,2025-05-12
+IT Services Distinct Holdings Inc.,co_dfa1a302e950,First Lien,Software & Technology,,,SOFR,5.75%,1%,,2029-07-18,13176,12967,12966,,12967,,,,,,MFIC,2025-05-12
+IT Services Distinct Holdings Inc.,co_dfa1a302e950,First Lien,Software & Technology,,,Prime,4.75%,,,2029-07-18,439,413,412,,413,,,,,,MFIC,2025-05-12
+IT Services GrayMatter Systems Genius Bidco LLC,co_1a0aaf2e21e9,First Lien,Software & Technology,,,SOFR,5.25%,1%,,2030-05-01,1330,1306,1307,,1306,,,,,,MFIC,2025-05-12
+IT Services GrayMatter Systems Genius Bidco LLC,co_1a0aaf2e21e9,First Lien,Software & Technology,,,SOFR,5.25%,1%,,2030-05-01,,-42,-87,,-42,,,,,,MFIC,2025-05-12
+IT Services GrayMatter Systems Genius Bidco LLC,co_1a0aaf2e21e9,First Lien,Software & Technology,,,SOFR,5.25%,1%,,2030-05-01,155,135,134,,135,,,,,,MFIC,2025-05-12
+IT Services New Era Technology Inc.,co_041f9e113941,First Lien,Software & Technology,,,SOFR,6.4%,1%,,2026-10-31,13773,13696,13188,,13696,,,,,,MFIC,2025-05-12
+IT Services New Era Technology Inc.,co_041f9e113941,Delayed Draw,Software & Technology,,,SOFR,6.4%,1%,,2026-10-31,17811,17675,17054,,17675,,,,,,MFIC,2025-05-12
+IT Services New Era Technology Inc.,co_041f9e113941,Revolver,Software & Technology,,,SOFR,6.4%,1%,,2026-10-30,1732,1722,1658,,1722,,,,,,MFIC,2025-05-12
+IT Services Team LINX LLC,co_f4427fdcf8f2,First Lien,Software & Technology,,,SOFR,5%,1%,,2030-12-18,8550,8426,8422,,8426,,,,,,MFIC,2025-05-12
+IT Services Team LINX LLC,co_f4427fdcf8f2,Revolver,Software & Technology,,,SOFR,5%,1%,,2030-12-18,,-20,-21,,-20,,,,,,MFIC,2025-05-12
+IT Services VikingCloud Bullcave Ltd.,co_7c35c23ebb8c,First Lien,Software & Technology,,,SOFR,5%,0.75%,,2030-08-06,29326,28923,28960,,28923,,,,,,MFIC,2025-05-12
+IT Services VikingCloud Bullcave Ltd.,co_7c35c23ebb8c,First Lien,Software & Technology,,,SOFR,5%,0.75%,,2030-08-06,2947,2873,2878,,2873,,,,,type_hint_revolver_from_name,MFIC,2025-05-12
+Leisure Products Dan Dee Project Comfort Buyer,co_294d2fc7afd7,First Lien,Healthcare,,,SOFR,7.1%,1%,,2026-02-01,16387,16357,16312,,16357,,,,,,MFIC,2025-05-12
+Leisure Products Dan Dee Project Comfort Buyer,co_294d2fc7afd7,Revolver,Healthcare,,,SOFR,7.1%,1%,,2026-02-01,,-2,-7,,-2,,,,,,MFIC,2025-05-12
+Leisure Products LashCo Lash OpCo,co_b0c54af5496c,First Lien,Healthcare,,,SOFR,7%,1%,,2026-03-18,43218,43007,42297,,43007,,,,,,MFIC,2025-05-12
+Leisure Products LashCo Lash OpCo,co_b0c54af5496c,Delayed Draw,Healthcare,,,SOFR,7%,1%,,2026-03-18,2332,2325,2283,,2325,,,,,,MFIC,2025-05-12
+Leisure Products LashCo Lash OpCo,co_b0c54af5496c,Revolver,Healthcare,,,SOFR,7%,1%,,2026-03-18,1695,1681,1657,,1681,,,,,,MFIC,2025-05-12
+Leisure Products Paladone Group Bidco Ltd.,co_5ef7ae498e2d,First Lien,Healthcare,,,SOFR,5.6%,1%,,2027-11-12,5921,5857,5872,,5857,,,,,,MFIC,2025-05-12
+Leisure Products Paladone Group Bidco Ltd.,co_5ef7ae498e2d,First Lien,Healthcare,,,SOFR,5.6%,1%,,2027-11-12,927,923,920,,923,,,,,type_hint_delayed_draw_from_name,MFIC,2025-05-12
+Leisure Products Paladone Group Bidco Ltd.,co_5ef7ae498e2d,First Lien,Healthcare,,,SOFR,5.6%,1%,,2027-11-12,471,458,459,,458,,,,,type_hint_revolver_from_name,MFIC,2025-05-12
+Leisure Products Paladone Group Bidco Ltd.,co_5ef7ae498e2d,First Lien,Healthcare,,,SONIA,5.5%,1%,,2027-11-12,188,248,238,,248,,,,,type_hint_revolver_from_name,MFIC,2025-05-12
+Life Sciences Tools & Services Akoya Biosciences,co_dd9d8d81f71a,First Lien,Healthcare,,,SOFR,6.91%,2.5%,,2027-11-01,13125,13142,13093,,13142,,,,,,MFIC,2025-05-12
+Life Sciences Tools & Services Akoya Biosciences,co_dd9d8d81f71a,Delayed Draw,Healthcare,,,SOFR,6.91%,2.5%,,2027-11-01,9375,9360,9353,,9360,,,,,,MFIC,2025-05-12
+Life Sciences Tools & Services August Bio August Bioservices,co_efeb927c3110,First Lien,Healthcare,,,SOFR,5.95%,2%,,2029-06-01,12000,11947,11850,,11947,,,,,,MFIC,2025-05-12
+Life Sciences Tools & Services August Bio August Bioservices,co_efeb927c3110,Delayed Draw,Healthcare,,,SOFR,5.95%,2%,,2029-06-01,3000,2987,2963,,2987,,,,,,MFIC,2025-05-12
+Life Sciences Tools & Services August Bio August Bioservices,co_efeb927c3110,Revolver,Healthcare,,,SOFR,4%,2%,,2029-06-01,,-2,-6,,-2,,,,,,MFIC,2025-05-12
+Life Sciences Tools & Services Unchained Labs Unchained Labs,co_568992891e97,First Lien,Healthcare,,,SOFR,5.55%,1%,,2027-08-09,1863,1846,1849,,1846,,,,,,MFIC,2025-05-12
+Life Sciences Tools & Services Unchained Labs Unchained Labs,co_568992891e97,Delayed Draw,Healthcare,,,SOFR,5.55%,1%,,2027-08-09,2206,2195,2189,,2195,,,,,,MFIC,2025-05-12
+Life Sciences Tools & Services Unchained Labs Unchained Labs,co_568992891e97,Revolver,Healthcare,,,SOFR,5.55%,1%,,2027-08-09,,-6,-5,,-6,,,,,,MFIC,2025-05-12
+Machinery Carlisle Fluid Technologies LSF12 Donnelly Bidco,co_79125a09df08,First Lien,Industrials,,,SOFR,6.5%,1%,,2029-10-02,14775,14471,14547,,14471,,,,,,MFIC,2025-05-12
+Machinery JPW Industries Holding Corp.,co_e92f42df29b6,First Lien,Industrials,,,SOFR,5.88%,2%,,2028-11-22,2456,2456,2438,,2456,,,,,,MFIC,2025-05-12
+Machinery Milacron (Project Iota) IOTA HOLDINGS 3,co_999804dd5b4a,First Lien,Industrials,,,SOFR,4.75%,0%,,2032-03-31,22675,22335,22335,,22335,,,,,,MFIC,2025-05-12
+Machinery Milacron (Project Iota) IOTA HOLDINGS 3,co_999804dd5b4a,First Lien,Industrials,,,SOFR,4.75%,0%,,2032-03-31,68,-5,-5,,-5,,,,,type_hint_revolver_from_name,MFIC,2025-05-12
+Media Accelerate360 Holdings,co_55d117c442ee,First Lien,Media & Entertainment,,,SOFR,6%,1%,,2027-02-11,3791,3791,3772,,3791,,,,,,MFIC,2025-05-12
+Media Accelerate360 Holdings,co_55d117c442ee,Revolver,Media & Entertainment,,,SOFR,6%,1%,,2027-02-11,1382,1382,1369,,1382,,,,,,MFIC,2025-05-12
+Media HALO Branded Solutions HALO Buyer,co_8606e55fbf20,First Lien,Media & Entertainment,,,SOFR,6%,1%,,2029-08-07,8696,8526,8522,,8526,,,,,,MFIC,2025-05-12
+Media HALO Branded Solutions HALO Buyer,co_8606e55fbf20,Revolver,Media & Entertainment,,,SOFR,6%,1%,,2029-08-07,65,40,39,,40,,,,,,MFIC,2025-05-12
+Media Hero Digital HRO (Hero Digital) Holdings,co_3d86025315fb,First Lien,Media & Entertainment,,4%,SOFR,2.1%,1%,,2028-11-18,24232,23883,23338,,23883,,,,,,MFIC,2025-05-12
+Media Hero Digital HRO (Hero Digital) Holdings,co_3d86025315fb,First Lien,Media & Entertainment,,5%,SOFR,2.1%,1%,,2028-11-18,2079,2040,2002,,2040,,,,,,MFIC,2025-05-12
+Media Hero Digital HRO (Hero Digital) Holdings,co_3d86025315fb,Revolver,Media & Entertainment,,4%,SOFR,2.1%,1%,,2026-11-18,2571,2552,2452,,2552,,,,,,MFIC,2025-05-12
+BiOrigin Specialty Products Complete Paper Inc.,co_62a1f0d3236c,First Lien,Containers & Packaging,,,SOFR,5%,0.75%,,2031-02-04,15000,14779,14775,,14779,,,,,,MFIC,2025-05-12
+Elida Beauty PHOENIX YW BUYER,co_b069e4b2176e,First Lien,Consumer & Retail,,,SOFR,5%,1%,,2030-05-31,7910,7745,7752,,7745,,,,,,MFIC,2025-05-12
+Elida Beauty PHOENIX YW BUYER,co_b069e4b2176e,Revolver,Consumer & Retail,,,SOFR,5%,1%,,2030-05-31,,-22,-23,,-22,,,,,,MFIC,2025-05-12
+RoC Skincare RoC Holdco LLC,co_ae057aaf458b,First Lien,Consumer & Retail,,,SOFR,5.75%,1%,,2031-02-21,12677,12452,12487,,12452,,,,,,MFIC,2025-05-12
+RoC Skincare RoC Holdco LLC,co_ae057aaf458b,First Lien,Consumer & Retail,,,SOFR,6%,1%,,2030-02-21,,-36,-33,,-36,,,,,,MFIC,2025-05-12
+Suave Silk Holdings III Corp.,co_c21e2fdd71b1,First Lien,Consumer & Retail,,,SOFR,5.5%,1%,,2029-05-01,26760,26224,26559,,26224,,,,,,MFIC,2025-05-12
+Alcresta Therapeutics Inc.,co_5d98b8313fdb,First Lien,Healthcare,,,SOFR,5.5%,1%,,2030-03-12,2212,2174,2190,,2174,,,,,,MFIC,2025-05-12
+Alcresta Therapeutics Inc.,co_5d98b8313fdb,First Lien,Healthcare,,,SOFR,5.75%,1%,,2030-03-12,,-118,-71,,-118,,,,,,MFIC,2025-05-12
+Alcresta Therapeutics Inc.,co_5d98b8313fdb,First Lien,Healthcare,,,SOFR,5.75%,1%,,2029-03-31,,-7,-4,,-7,,,,,,MFIC,2025-05-12
+Avid Bioservices Space Finco,co_247129410d7e,First Lien,Healthcare,,,SOFR,5.75%,1%,,2032-02-05,10638,10479,10476,,10479,,,,,,MFIC,2025-05-12
+Avid Bioservices Space Finco,co_247129410d7e,Delayed Draw,Healthcare,,,SOFR,5.75%,1%,,2032-02-05,,-84,-84,,-84,,,,,,MFIC,2025-05-12
+Avid Bioservices Space Finco,co_247129410d7e,Revolver,Healthcare,,,SOFR,5.75%,1%,,2031-02-05,,-48,-48,,-48,,,,,,MFIC,2025-05-12
+Ora LLC,co_ae5ab51f98cc,First Lien,Healthcare,,,SOFR,5%,1%,,2030-07-18,6884,6759,6712,,6759,,,,,,MFIC,2025-05-12
+Ora LLC,co_ae5ab51f98cc,Delayed Draw,Healthcare,,,SOFR,5%,1%,,2030-07-18,,-15,-42,,-15,,,,,,MFIC,2025-05-12
+Ora LLC,co_ae5ab51f98cc,Revolver,Healthcare,,,SOFR,5%,1%,,2030-07-18,280,255,245,,255,,,,,,MFIC,2025-05-12
+PAI Pharma Pai Middle Tier,co_dec9b3b75053,First Lien,Healthcare,,,SOFR,4.75%,0.75%,,2032-02-13,16500,16255,16253,,16255,,,,,,MFIC,2025-05-12
+PAI Pharma Pai Middle Tier,co_dec9b3b75053,Revolver,Healthcare,,,SOFR,4.75%,0.75%,,2032-02-13,,-52,-52,,-52,,,,,,MFIC,2025-05-12
+Sterling Pharma Saffron Bidco Ltd.,co_e494fa87bde9,First Lien,Healthcare,,,SOFR,5.75%,0.75%,,2031-09-11,13467,13222,13206,,13222,,,,,,MFIC,2025-05-12
+Sterling Pharma Saffron Bidco Ltd.,co_e494fa87bde9,First Lien,Healthcare,,,SONIA,5.75%,0.75%,,2031-09-11,,-76,-159,,-76,,,,,,MFIC,2025-05-12
+TersSera TerSera Therapeutics LLC,co_7b27c581da97,First Lien,Healthcare,,,SOFR,5.75%,1%,,2029-04-04,16708,16342,16708,,16342,,,,,,MFIC,2025-05-12
+TersSera TerSera Therapeutics LLC,co_7b27c581da97,First Lien,Healthcare,,,SOFR,5.75%,1%,,2029-04-04,,-23,,,-23,,,,,,MFIC,2025-05-12
+Trillium Health Care Products Inc.,co_37dfca787142,First Lien,Healthcare,,,SOFR,5.25%,1%,,2031-08-06,8105,7952,7963,,7952,,,,,,MFIC,2025-05-12
+Trillium Health Care Products Inc.,co_37dfca787142,First Lien,Healthcare,,,SOFR,5.25%,1%,,2031-08-06,875,709,842,,709,,,,,,MFIC,2025-05-12
+AlpineX Alpinex Opco,co_a28b0ad005a4,First Lien,Business Services,,,SOFR,6.26%,1%,,2027-12-27,17263,17037,17252,,17037,,,,,,MFIC,2025-05-12
+AlpineX Alpinex Opco,co_a28b0ad005a4,Delayed Draw,Business Services,,,SOFR,6.26%,1%,,2027-12-27,4363,4316,4363,,4316,,,,,,MFIC,2025-05-12
+AlpineX Alpinex Opco,co_a28b0ad005a4,Revolver,Business Services,,,SOFR,6.26%,1%,,2027-12-27,1102,1082,1103,,1082,,,,,,MFIC,2025-05-12
+BDO USA,co_79e041e9675e,First Lien,Business Services,,,SOFR,5%,2%,,2028-08-31,11820,11820,11820,,11820,,,,,,MFIC,2025-05-12
+DCM Services DCM Parent,co_cb49bac308f6,First Lien,Business Services,,,SOFR,5%,1%,,2031-03-12,12674,12486,12484,,12486,,,,,,MFIC,2025-05-12
+DCM Services DCM Parent,co_cb49bac308f6,Revolver,Business Services,,,SOFR,5%,1%,,2031-03-12,,-35,-35,,-35,,,,,,MFIC,2025-05-12
+Escalent M&M OPCO,co_65eda2f764ba,First Lien,Business Services,,,SOFR,8.1%,1%,,2029-04-07,12195,11934,11982,,11934,,,,,,MFIC,2025-05-12
+Escalent M&M OPCO,co_65eda2f764ba,Revolver,Business Services,,,SOFR,8.1%,1%,,2029-04-07,,-5,-4,,-5,,,,,,MFIC,2025-05-12
+FingerPaint Marketing KL Charlie Acquisition Company,co_1fb70c9fa1c2,First Lien,Business Services,,,SOFR,5.6%,1%,,2026-12-30,18139,18010,17958,,18010,,,,,,MFIC,2025-05-12
+FingerPaint Marketing KL Charlie Acquisition Company,co_1fb70c9fa1c2,First Lien,Business Services,,,SOFR,5.6%,1%,,2026-12-30,8185,8113,8037,,8113,,,,,type_hint_delayed_draw_from_name,MFIC,2025-05-12
+FingerPaint Marketing KL Charlie Acquisition Company,co_1fb70c9fa1c2,First Lien,Business Services,,,SOFR,5.6%,1%,,2026-12-30,,-14,-20,,-14,,,,,type_hint_revolver_from_name,MFIC,2025-05-12
+G&A Partners Holding Company II,co_9855682a0863,First Lien,Business Services,,,SOFR,5.5%,0.75%,,2031-03-01,3215,3158,3175,,3158,,,,,,MFIC,2025-05-12
+G&A Partners Holding Company II,co_9855682a0863,Delayed Draw,Business Services,,,SOFR,5.5%,0.75%,,2031-03-01,1790,1720,1710,,1720,,,,,,MFIC,2025-05-12
+G&A Partners Holding Company II,co_9855682a0863,Revolver,Business Services,,,SOFR,5.5%,0.75%,,2030-03-01,,-6,-4,,-6,,,,,,MFIC,2025-05-12
+North Highland The North Highland Company LLC,co_fadf3a191463,First Lien,Business Services,,,SOFR,4.75%,0.75%,,2031-12-22,3057,3027,3026,,3027,,,,,,MFIC,2025-05-12
+North Highland The North Highland Company LLC,co_fadf3a191463,First Lien,Business Services,,,SOFR,4.75%,0.75%,,2031-12-22,,-5,-11,,-5,,,,,,MFIC,2025-05-12
+North Highland The North Highland Company LLC,co_fadf3a191463,First Lien,Business Services,,,SOFR,4.75%,0.75%,,2030-12-20,387,379,379,,379,,,,,,MFIC,2025-05-12
+PSI Services LLC,co_7df725c64066,First Lien,Business Services,,7.75%,SOFR,1.15%,1%,,2027-03-31,4382,4332,4324,,4332,,,,,,MFIC,2025-05-12
+PSI Services LLC,co_7df725c64066,First Lien,Business Services,,,SOFR,8.75%,1%,,2027-03-31,6,,6,,,,,,,,MFIC,2025-05-12
+PSI Services LLC,co_7df725c64066,Delayed Draw,Business Services,,,SOFR,1.15%,1%,,2027-03-31,927,912,914,,912,,,,,,MFIC,2025-05-12
+PSI Services LLC,co_7df725c64066,Revolver,Business Services,,7.75%,SOFR,1.15%,1%,,2027-03-31,541,539,532,,539,,,,,,MFIC,2025-05-12
+Schlesinger Group Schlesinger Global,co_45193e64e7a0,First Lien,Business Services,,5.85%,SOFR,2.75%,1%,,2025-07-12,12123,12152,11821,,12152,,,,,,MFIC,2025-05-12
+Management & Development Redfin Corp.,co_68b3b37ca04b,First Lien,Real Estate,,,SOFR,5.75%,1.5%,,2028-10-20,3448,3380,3448,,3380,,,,,,MFIC,2025-05-12
+Management & Development Redfin Corp.,co_68b3b37ca04b,First Lien,Real Estate,,,SOFR,5.75%,1.5%,,2028-10-20,3465,3397,3465,,3397,,,,,,MFIC,2025-05-12
+Software Acronis AG ACRONIS AG,co_67b2bcc01d8f,First Lien,Software & Technology,,1%,SOFR,6.8%,1%,,2027-04-01,21216,21182,21216,,21182,,,,,,MFIC,2025-05-12
+Software Acronis AG ACRONIS AG,co_67b2bcc01d8f,First Lien,Software & Technology,,1%,SOFR,5.95%,1%,,2027-04-01,6065,5993,6065,,5993,,,,,,MFIC,2025-05-12
+Software American Megatrends AMI Buyer,co_307103bbaa84,First Lien,Software & Technology,,,SOFR,5.25%,0.75%,,2031-10-17,13095,12906,12899,,12906,,,,,,MFIC,2025-05-12
+Software American Megatrends AMI Buyer,co_307103bbaa84,Revolver,Software & Technology,,,SOFR,5.25%,0.75%,,2031-10-17,320,293,292,,293,,,,,,MFIC,2025-05-12
+Software Anaplan,co_e9522b653494,First Lien,Software & Technology,,,SOFR,5%,0.75%,,2029-06-21,11273,11273,11245,,11273,,,,,,MFIC,2025-05-12
+Software Anaplan,co_e9522b653494,Revolver,Software & Technology,,,SOFR,5.75%,0.75%,,2028-06-21,,,-2,,,,,,,,MFIC,2025-05-12
+Software BarTender Sigma Buyer LLC,co_2eebdc1ffc6f,First Lien,Software & Technology,,,SOFR,5.25%,0.75%,,2028-01-04,13549,13319,13448,,13319,,,,,,MFIC,2025-05-12
+Software BarTender Sigma Buyer LLC,co_2eebdc1ffc6f,First Lien,Software & Technology,,,SOFR,5.25%,0.75%,,2028-01-04,7255,7127,7200,,7127,,,,,,MFIC,2025-05-12
+Software BarTender Sigma Buyer LLC,co_2eebdc1ffc6f,First Lien,Software & Technology,,,SOFR,5.25%,0.75%,,2028-01-04,700,674,689,,674,,,,,,MFIC,2025-05-12
+Software Beeline IQN Holding Corp.,co_4272903be644,First Lien,Software & Technology,,,SOFR,5.25%,0.75%,,2029-05-02,3997,3997,3997,,3997,,,,,,MFIC,2025-05-12
+Software Beeline IQN Holding Corp.,co_4272903be644,First Lien,Software & Technology,,,SOFR,5.25%,0.75%,,2028-05-02,182,182,182,,182,,,,,,MFIC,2025-05-12
+Software Calero Holdings Inc.,co_9661e560fedc,First Lien,Software & Technology,,,SOFR,5.85%,1%,,2026-12-16,21591,21493,21491,,21493,,,,,,MFIC,2025-05-12
+Software Calero Holdings Inc.,co_9661e560fedc,Revolver,Software & Technology,,,SOFR,5.85%,1%,,2026-12-16,530,521,520,,521,,,,,,MFIC,2025-05-12
+Software ChyronHego Corp.,co_55decd7f2e79,First Lien,Software & Technology,,,SOFR,3.5%,1.75%,,2026-06-30,106406,106196,106407,,106196,,,,,,MFIC,2025-05-12
+Software ChyronHego Corp.,co_55decd7f2e79,First Lien,Software & Technology,,,SOFR,6%,1.75%,,2026-06-30,7967,7953,7967,,7953,,,,,,MFIC,2025-05-12
+Software Dairy.com Momentx Corp.,co_138134ae5bdf,First Lien,Food & Beverage,,,SOFR,5.85%,1%,,2027-06-24,14853,14726,14654,,14726,,,,,,MFIC,2025-05-12
+Software Dairy.com Momentx Corp.,co_138134ae5bdf,First Lien,Food & Beverage,,,SOFR,6.35%,1%,,2027-06-24,1339,1323,1335,,1323,,,,,,MFIC,2025-05-12
+Software Dairy.com Momentx Corp.,co_138134ae5bdf,First Lien,Food & Beverage,,,SOFR,5.85%,1%,,2027-06-24,1257,1246,1240,,1246,,,,,,MFIC,2025-05-12
+Software Digital.ai Software Holdings,co_70b345d6fc99,First Lien,Software & Technology,,,SOFR,6%,1%,,2028-08-10,22872,22542,22417,,22542,,,,,,MFIC,2025-05-12
+Software Digital.ai Software Holdings,co_70b345d6fc99,Revolver,Software & Technology,,,SOFR,6%,1%,,2028-08-10,,-33,-48,,-33,,,,,,MFIC,2025-05-12
+Software Forcura + Medalogix (Project Tarpon) F&M Buyer LLC,co_b4f228e1539c,First Lien,Software & Technology,,,SOFR,4.75%,0.75%,,2032-03-18,16901,16733,16732,,16733,,,,,,MFIC,2025-05-12
+Software Forcura + Medalogix (Project Tarpon) F&M Buyer LLC,co_b4f228e1539c,First Lien,Software & Technology,,,SOFR,4.75%,0.75%,,2032-03-18,,-28,-28,,-28,,,,,,MFIC,2025-05-12
+Software Forcura + Medalogix (Project Tarpon) F&M Buyer LLC,co_b4f228e1539c,First Lien,Software & Technology,,,SOFR,4.75%,0.75%,,2032-03-18,,-25,-25,,-25,,,,,,MFIC,2025-05-12
+Software G2CI Evergreen IX Borrower 2023,co_212c89840c6b,First Lien,Software & Technology,,,SOFR,4.75%,0.75%,,2030-09-30,7115,7115,7044,,7115,,,,,,MFIC,2025-05-12
+Software G2CI Evergreen IX Borrower 2023,co_212c89840c6b,Revolver,Software & Technology,,,SOFR,4.75%,0.75%,,2029-10-01,,,-8,,,,,,,,MFIC,2025-05-12
+Software Go1 Apiom,co_1047b50d1325,First Lien,Software & Technology,,,SOFR,7.45%,2%,,2028-05-02,2500,2486,2513,,2486,,,,,,MFIC,2025-05-12
+Software GoHealth Norvax,co_a5081b49b24b,Revolver,Software & Technology,,,SOFR,6.6%,1%,,2025-06-30,539,538,539,,538,,,,,,MFIC,2025-05-12
+Software Gtreasury G Treasury SS LLC,co_780c3d6e423c,First Lien,Software & Technology,,,SOFR,5.5%,1%,,2029-06-29,250,246,247,,246,,,,,,MFIC,2025-05-12
+Software Gtreasury G Treasury SS LLC,co_780c3d6e423c,First Lien,Software & Technology,,,SOFR,5.5%,1%,,2029-06-29,591,552,565,,552,,,,,,MFIC,2025-05-12
+Software Gtreasury G Treasury SS LLC,co_780c3d6e423c,First Lien,Software & Technology,,,SOFR,5.5%,1%,,2029-06-29,42,38,39,,38,,,,,,MFIC,2025-05-12
+Software Litify Holdings Inc.,co_5e50c44c9fa5,First Lien,Software & Technology,,,SOFR,5.6%,1%,,2029-02-02,29167,28528,28802,,28528,,,,,,MFIC,2025-05-12
+Software Litify LLC,co_62699ba85500,First Lien,Software & Technology,,,SOFR,5.6%,1%,,2029-02-02,,-16,-10,,-16,,,,,,MFIC,2025-05-12
+Software Lookout,co_ee78cf8715d4,First Lien,Software & Technology,,,SOFR,6.25%,3%,,2029-06-01,5000,4978,5000,,4978,,,,,,MFIC,2025-05-12
+Software Lookout,co_ee78cf8715d4,Delayed Draw,Software & Technology,,,SOFR,6.25%,3%,,2029-06-01,5000,4979,5000,,4979,,,,,,MFIC,2025-05-12
+Software MYCOM Magnate Holding Corp.,co_0cc8cc9d5f77,First Lien,Software & Technology,,,SOFR,6.15%,0.5%,,2026-12-31,18748,18753,18412,,18753,,,,,,MFIC,2025-05-12
+Software New Relic Crewline Buyer,co_8bb4d636329c,First Lien,Software & Technology,,,SOFR,6.75%,1%,,2030-11-08,5623,5574,5623,,5574,,,,,,MFIC,2025-05-12
+Software New Relic Crewline Buyer,co_8bb4d636329c,Revolver,Software & Technology,,,SOFR,6.75%,1%,,2030-11-08,,,,,,,,,,,MFIC,2025-05-12
+Software Omada Health,co_b5721d839cd4,First Lien,Software & Technology,,,SOFR,7.1%,2.5%,,2028-06-01,1450,1439,1450,,1439,,,,,,MFIC,2025-05-12
+Software Omada Health,co_b5721d839cd4,Delayed Draw,Software & Technology,,,SOFR,7.1%,2.5%,,2028-06-01,,-9,,,-9,,,,,,MFIC,2025-05-12
+Software Omada Health,co_b5721d839cd4,Revolver,Software & Technology,,,SOFR,4.1%,2.5%,,2028-06-01,5,4,5,,4,,,,,,MFIC,2025-05-12
+Software Poppulo,co_ed3b0d578c0b,First Lien,Software & Technology,,,SOFR,6.5%,0.75%,,2030-02-20,7561,7412,7410,,7412,,,,,,MFIC,2025-05-12
+Software Poppulo,co_ed3b0d578c0b,Delayed Draw,Software & Technology,,,SOFR,6.5%,0.75%,,2030-02-20,,-14,-15,,-14,,,,,,MFIC,2025-05-12
+Software Poppulo,co_ed3b0d578c0b,Revolver,Software & Technology,,,SOFR,6.5%,0.75%,,2030-02-20,,-19,-20,,-19,,,,,,MFIC,2025-05-12
+Software Simeio Group Holdings,co_8cf4abf90a63,First Lien,Software & Technology,,4%,SOFR,3.1%,1%,,2026-02-02,8128,8110,7539,,8110,,,,,,MFIC,2025-05-12
+Software Simeio Group Holdings,co_8cf4abf90a63,Revolver,Software & Technology,,4%,SOFR,3.1%,1%,,2026-02-02,884,882,820,,882,,,,,,MFIC,2025-05-12
+Software Solera Polaris Newco,co_c00ee597c8ce,First Lien,Software & Technology,,,SOFR,4.01%,0.5%,,2028-06-02,8129,8077,7801,,8077,,,,,,MFIC,2025-05-12
+Software Solera,co_958f0cfa30e0,Second Lien,Software & Technology,,,SOFR,9.1%,1%,,2029-06-04,4252,4216,4124,,4216,,,,,,MFIC,2025-05-12
+Software Texada Software LLC,co_89fd611b89ed,First Lien,Software & Technology,,,SOFR,5.5%,1%,,2030-04-30,6923,6799,6802,,6799,,,,,,MFIC,2025-05-12
+Software Texada Software LLC,co_89fd611b89ed,First Lien,Software & Technology,,,SOFR,5.5%,1%,,2030-04-30,2051,2014,2015,,2014,,,,,,MFIC,2025-05-12
+Software Texada Software LLC,co_89fd611b89ed,First Lien,Software & Technology,,,SOFR,5.5%,1%,,2030-04-30,,-17,-18,,-17,,,,,,MFIC,2025-05-12
+Software Uniguest Holdings,co_9f27cf191023,First Lien,Software & Technology,,,SOFR,5%,1%,,2030-11-27,19792,19507,19511,,19507,,,,,,MFIC,2025-05-12
+Software Uniguest Holdings,co_9f27cf191023,Delayed Draw,Software & Technology,,,SOFR,5%,1%,,2030-11-27,,-28,-56,,-28,,,,,,MFIC,2025-05-12
+Software Uniguest Holdings,co_9f27cf191023,Revolver,Software & Technology,,,SOFR,5%,1%,,2030-11-27,,-17,-17,,-17,,,,,,MFIC,2025-05-12
+Software Uplight,co_bb95db02ad8b,First Lien,Software & Technology,,,SOFR,6.1%,4%,,2029-06-01,10000,9912,9900,,9912,,,,,,MFIC,2025-05-12
+Software Uplight,co_bb95db02ad8b,Delayed Draw,Software & Technology,,,SOFR,6.1%,4%,,2029-06-01,,,-100,,,,,,,,MFIC,2025-05-12
+Software Uplight,co_bb95db02ad8b,Revolver,Software & Technology,,,SOFR,3.6%,4%,,2029-06-01,,,-10,,,,,,,,MFIC,2025-05-12
+Software Zafin Labs Americas Inc.,co_cc91704b9937,First Lien,Software & Technology,,,SOFR,4.75%,0.75%,,2031-02-14,16667,16421,16417,,16421,,,,,,MFIC,2025-05-12
+Software Zafin Labs Americas Inc.,co_cc91704b9937,First Lien,Software & Technology,,,SOFR,4.75%,0.75%,,2031-02-14,,-49,-50,,-49,,,,,,MFIC,2025-05-12
+Software Zendesk,co_16a7619e4673,First Lien,Software & Technology,,,SOFR,5%,0.75%,,2028-11-22,7531,7531,7513,,7531,,,,,,MFIC,2025-05-12
+Software Zendesk,co_16a7619e4673,Delayed Draw,Software & Technology,,,SOFR,5%,0.75%,,2028-11-22,,,-5,,,,,,,,MFIC,2025-05-12
+Software Zendesk,co_16a7619e4673,Revolver,Software & Technology,,,SOFR,5%,0.75%,,2028-11-22,,,-2,,,,,,,,MFIC,2025-05-12
+Specialty Retail Club Champion Club Champion LLC,co_7883b7b3a47d,First Lien,Consumer & Retail,,,SOFR,5%,0.75%,,2029-06-14,8131,8024,7989,,8024,,,,,,MFIC,2025-05-12
+Specialty Retail Club Champion Club Champion LLC,co_7883b7b3a47d,First Lien,Consumer & Retail,,,SOFR,5%,0.75%,,2029-06-14,663,640,631,,640,,,,,,MFIC,2025-05-12
+Specialty Retail EG Group EG Global Finance PLC,co_e12d60f3dfaf,First Lien,Financial Services,,,SOFR,7.5%,0.5%,,2028-11-30,6267,6427,6784,,6427,,,,,,MFIC,2025-05-12
+Specialty Retail PetSmart LLC,co_963ca24e67ca,First Lien,Consumer & Retail,,,SOFR,3.75%,0.75%,,2028-02-11,8937,8914,8816,,8914,,,,,,MFIC,2025-05-12
+Specialty Retail Tailored Brands The Men's Wearhouse,co_90d980beaf75,First Lien,Consumer & Retail,,,SOFR,6.5%,0%,,2029-02-26,1270,1268,1272,,1268,,,,,,MFIC,2025-05-12
+Technology Hardware,co_00bedcec6020,First Lien,Software & Technology,,,SOFR,5%,1%,,2030-04-30,871,856,848,,856,,,,,,MFIC,2025-05-12
+Technology Hardware,co_00bedcec6020,Revolver,Software & Technology,,,SOFR,5%,1%,,2030-04-30,,-2,-3,,-2,,,,,,MFIC,2025-05-12
+Technology Hardware,co_00bedcec6020,First Lien,Software & Technology,,,SOFR,6%,1%,,2029-08-02,8333,8258,8270,,8258,,,,,,MFIC,2025-05-12
+Technology Hardware,co_00bedcec6020,Delayed Draw,Software & Technology,,,SOFR,6%,1%,,2029-08-02,,-29,-25,,-29,,,,,,MFIC,2025-05-12
+Technology Hardware,co_00bedcec6020,Revolver,Software & Technology,,,SOFR,4%,1%,,2029-08-02,300,287,289,,287,,,,,,MFIC,2025-05-12
+Textiles,co_8c5ddd41da7c,First Lien,Consumer & Retail,,,SOFR,5%,1%,,2029-08-22,5914,5861,5854,,5861,,,,,,MFIC,2025-05-12
+Textiles Apparel & Luxury Goods Sequential Brands Group,co_eeef34cf3aa7,First Lien,Consumer & Retail,,,SOFR,5.75%,1%,,2028-05-12,16241,16230,15987,,16230,,,,,,MFIC,2025-05-12
+Textiles Apparel & Luxury Goods Sequential Brands Group,co_eeef34cf3aa7,First Lien,Consumer & Retail,,,SOFR,6.25%,1%,,2028-05-12,2480,2480,2502,,2480,,,,,,MFIC,2025-05-12
+Trading Companies & Distributors Banner Solutions Banner Buyer,co_82682df5e590,First Lien,Distribution & Wholesale,,0.5%,SOFR,5.9%,3.75%,,2027-05-31,12040,11999,11637,,11999,,,,,,MFIC,2025-05-12
+Trading Companies & Distributor Banner Solutions Banner Buyer,co_82682df5e590,First Lien,Distribution & Wholesale,,0.5%,SOFR,5.9%,3.75%,,2027-05-31,,,,,,,,,,,MFIC,2025-05-12
+Trading Companies & Distributor Banner Solutions Banner Buyer,co_82682df5e590,Delayed Draw,Distribution & Wholesale,,0.5%,SOFR,5.9%,3.75%,,2027-05-31,2939,2925,2841,,2925,,,,,,MFIC,2025-05-12
+Trading Companies & Distributor Banner Solutions Banner Buyer,co_82682df5e590,Revolver,Distribution & Wholesale,,0.5%,SOFR,5.9%,3.75%,,2027-05-31,3,-5,-62,,-5,,,,,,MFIC,2025-05-12
+Trading Companies & Distributor Meritus Gas Partners MGP Holdings III Corp.,co_762b790c3469,First Lien,Distribution & Wholesale,,,SOFR,5.25%,1%,,2030-03-01,14173,13944,13960,,13944,,,,,,MFIC,2025-05-12
+Trading Companies & Distributor Meritus Gas Partners MGP Holdings III Corp.,co_762b790c3469,First Lien,Distribution & Wholesale,,,SOFR,5.25%,1%,,2030-03-01,961,932,921,,932,,,,,,MFIC,2025-05-12
+Trading Companies & Distributor Meritus Gas Partners MGP Holdings III Corp.,co_762b790c3469,First Lien,Distribution & Wholesale,,,SOFR,5.25%,1%,,2030-03-01,340,327,329,,327,,,,,,MFIC,2025-05-12
+Trading Companies & Distributor ORS Nasco WC ORS Buyer,co_a1df3f4564ef,First Lien,Distribution & Wholesale,,,SOFR,5%,0.75%,,2031-08-07,25218,24862,24837,,24862,,,,,,MFIC,2025-05-12
+Trading Companies & Distributor ORS Nasco WC ORS Buyer,co_a1df3f4564ef,Delayed Draw,Distribution & Wholesale,,,SOFR,5%,0.75%,,2031-08-07,2143,2110,2071,,2110,,,,,,MFIC,2025-05-12
+Trading Companies & Distributor ORS Nasco WC ORS Buyer,co_a1df3f4564ef,Revolver,Distribution & Wholesale,,,SOFR,5%,0.75%,,2031-08-07,1303,1221,1231,,1221,,,,,,MFIC,2025-05-12
+Trading Companies & Distributors PSE Graffiti Buyer,co_2a1abd1e18fe,First Lien,Distribution & Wholesale,,,SOFR,5.6%,1%,,2027-08-10,10831,10711,10641,,10711,,,,,,MFIC,2025-05-12
+Trading Companies & Distributors PSE Graffiti Buyer,co_2a1abd1e18fe,Delayed Draw,Distribution & Wholesale,,,SOFR,5.6%,1%,,2027-08-10,3661,3620,3533,,3620,,,,,,MFIC,2025-05-12
+Trading Companies & Distributors PSE Graffiti Buyer,co_2a1abd1e18fe,Revolver,Distribution & Wholesale,,,SOFR,5.6%,1%,,2027-08-10,436,424,413,,424,,,,,,MFIC,2025-05-12
+Transportation Infrastructure GAT-Airline Ground Support Inc.,co_71e515fda3e5,First Lien,Transportation & Logistics,,,SOFR,5.5%,1%,,2029-05-09,15124,14926,15010,,14926,,,,,,MFIC,2025-05-12
+Transportation Infrastructure GAT-Airline Ground Support Inc.,co_71e515fda3e5,First Lien,Transportation & Logistics,,,SOFR,5.5%,1%,,2029-05-09,948,928,931,,928,,,,,,MFIC,2025-05-12
+Transportation Infrastructure GAT-Airline Ground Support Inc.,co_71e515fda3e5,First Lien,Transportation & Logistics,,,Prime,4.5%,,,2029-05-09,238,209,220,,209,,,,,,MFIC,2025-05-12
+Sperry Acquisition LLC,co_8b81d98c1215,Common Equity,Aerospace & Defense,,,,,,,,,99,99,,99,,,,988,,MFIC,2025-05-12
+Air Freight & Logistics,co_0a7ff58e6cc0,Other,Transportation & Logistics,,,,,,,,,24190,24405,,24190,,,,,,MFIC,2025-05-12
+K&N Parent Inc.,co_aa963dfe6028,Common Equity,Automotive,,,,,,,,,23718,252,,23718,,,,125967,fair_value_suspicious_vs_size,MFIC,2025-05-12
+Truck-Lite Co. LLC,co_d7ebf153506a,Common Equity,Automotive,,,,,,,,,350,976,,350,,,,350,,MFIC,2025-05-12
+Truck-Lite Co. LLC,co_d7ebf153506a,Other,Automotive,,,,,,,,,2938,3580,,2938,,,,,,MFIC,2025-05-12
+Universal Air Conditioner Cool Acquisition Holdings,co_40b3670d1b0c,Common Equity,Automotive,,,,,,,,,138,142,,138,,,,137931,,MFIC,2025-05-12
+Universal Air Conditioner Cool Buyer Inc.,co_dcaaa012fe90,Other,Automotive,,,,,,,,,14086,14067,,14086,,,,,,MFIC,2025-05-12
+Beverages Ronnoco Coffee Ronnoco Holdings,co_2394f8fe5e8a,Common Equity,Food & Beverage,,,,,,,,,100,100,,100,,,,1000,,MFIC,2025-05-12
+Beverages,co_f88bf6b57df1,Other,Food & Beverage,,,,,,,,,5317,5315,,5317,,,,,,MFIC,2025-05-12
+Mannkind Corp.,co_26e6fb632c17,Other Equity,Healthcare,,,,,,,,,0,172,,0,,,,34226,,MFIC,2025-05-12
+Partner Therapeutics Inc.,co_8dc03c4714cd,Preferred Equity,Healthcare,,,,,,,,,333,402,,333,,,,55556,,MFIC,2025-05-12
+Partner Therapeutics Inc.,co_8dc03c4714cd,Warrants,Healthcare,,,,,,,,73,389,201,,389,,,,,,MFIC,2025-05-12
+Partner Therapeutics Inc.,co_8dc03c4714cd,Other,Healthcare,,,,,,,,,722,603,,722,,,,,,MFIC,2025-05-12
+Rigel Pharmaceuticals Rigel Pharmaceuticals Inc.,co_2adf83a90bb5,Other,Healthcare,,,,,,,,,18001,18000,,18001,,,,,,MFIC,2025-05-12
+Building Products OmniMax International LLC,co_6c21b1c452e8,Other,Industrials,,,,,,,,,19615,19616,,19615,,,,,,MFIC,2025-05-12
+Building Products RF Fager R.F. Fager Company LLC,co_381c8c1d07da,Other,Industrials,,,,,,,,,905,891,,905,,,,,,MFIC,2025-05-12
+Building Products,co_f7d3864ee52f,Other,Industrials,,,,,,,,,20520,20507,,20520,,,,,,MFIC,2025-05-12
+Chemicals Aspen Aerogels Inc.,co_3c8ab2b4b136,Other,Chemicals & Materials,,,,,,,,,21945,22124,,21945,,,,,,MFIC,2025-05-12
+Chemicals Carbonfree Chemicals SPE I LLC,co_0ea89a3f5a88,Other Equity,Chemicals & Materials,,,,,,,,,56505,18824,,56505,,,,1246,,MFIC,2025-05-12
+Chemicals Carbonfree Chemicals SPE I LLC,co_0ea89a3f5a88,Other Equity,Chemicals & Materials,,,,,,,,,0,0,,0,,,,5,,MFIC,2025-05-12
+Chemicals Carbonfree Chemicals SPE I LLC,co_0ea89a3f5a88,First Lien,Chemicals & Materials,6.5%,,,,,,2027-10-14,12500,12500,12463,,12500,,,,,,MFIC,2025-05-12
+Chemicals Carbonfree Chemicals SPE I LLC,co_0ea89a3f5a88,Other,Chemicals & Materials,,,,,,,,,69005,31287,,69005,,,,,,MFIC,2025-05-12
+Chemicals Heubach Holdings USA LLC,co_d95f1537d089,First Lien,Chemicals & Materials,10%,,,,,,2024-04-30,478,83,239,,83,,,,,,MFIC,2025-05-12
+Chemicals Heubach SK Neptune Husky Group Sarl (Luxembourg Investment Company 428 S.a r.l.) First Lien Secured Debt Term Loan 7.00% Maturity Date 01/03/29,co_391bf683ccca,First Lien,,7%,,,,,,2029-01-03,9438,0,0,,0,,,,,,MFIC,2025-05-12
+Chemicals Heubach,co_361210eedbf7,Other,Chemicals & Materials,,,,,,,,,83,239,,83,,,,,,MFIC,2025-05-12
+Chemicals Meristem Crop Performance Lunar Buyer LLC,co_73269dc4245e,Other,Chemicals & Materials,,,,,,,,,10215,10124,,10215,,,,,,MFIC,2025-05-12
+Chemicals W.R. Grace W.R. Grace Holdings LLC,co_6ceef95dad1c,First Lien,Chemicals & Materials,4.88%,,,,,,2027-06-15,2000,1948,1935,,1948,,,,,,MFIC,2025-05-12
+Chemicals,co_894f6426dd9f,Other,Chemicals & Materials,,,,,,,,,103196,65709,,103196,,,,,,MFIC,2025-05-12
+Ambrosia Buyer Corp.,co_55b8502141b0,Other Equity,Business Services,,,,,,,,,11961,0,,11961,,,,152029,,MFIC,2025-05-12
+Ambrosia Buyer Corp.,co_55b8502141b0,First Lien,Business Services,,11%,,,,,2031-12-15,373,2672,88,,2672,,,,,,MFIC,2025-05-12
+Ambrosia Buyer Corp.,co_55b8502141b0,First Lien,Business Services,,,,,,,,59,576,0,,576,,,,,,MFIC,2025-05-12
+Ambrosia Buyer Corp.,co_55b8502141b0,Other,Business Services,,,,,,,,,15209,88,,15209,,,,,fair_value_suspicious_vs_size,MFIC,2025-05-12
+Atlas Technical Consultants GI Apple Midco LLC,co_17cb19219a36,Other,Business Services,,,,,,,,,7821,7940,,7821,,,,,,MFIC,2025-05-12
+Best Trash Bingo Group Buyer Inc.,co_cb9d84191ccb,Other,Business Services,,,,,,,,,6915,6942,,6915,,,,,,MFIC,2025-05-12
+Core Roofing CRS Holdings Inc.,co_fb9f750e6798,Other,Business Services,,,,,,,,,1801,1789,,1801,,,,,,MFIC,2025-05-12
+CoreTrust Coretrust Purchasing Group LLC,co_6cc100b9bd81,Other,Business Services,,,,,,,,,5295,5287,,5295,,,,,,MFIC,2025-05-12
+Health & Safety Institute HSI Halo Holdings,co_7507b94e6701,Common Equity,Business Services,,,,,,,,,46,1829,,46,,,,1010,cost_suspicious_vs_size,MFIC,2025-05-12
+Heritage Environmental Services Heritage Environmental Services Inc.,co_db197463b756,Other,Business Services,,,,,,,,,1740,1758,,1740,,,,,,MFIC,2025-05-12
+HMA Health Management Associates Superholdings Inc.,co_fa523a9bea35,Other,Business Services,,,,,,,,,4421,4499,,4421,,,,,,MFIC,2025-05-12
+IronClad Ironhorse Purchaser LLC,co_0851537afe0a,Other,Business Services,,,,,,,,,3034,3002,,3034,,,,,,MFIC,2025-05-12
+IRP SMC IR Holdings,co_952749d04492,Common Equity,Business Services,,,,,,,,,183,209,,183,,,,158,,MFIC,2025-05-12
+IRP,co_c6864aa90b9e,Other,Business Services,,,,,,,,,17758,17559,,17758,,,,,,MFIC,2025-05-12
+Jones & Frank JF Acquisition LLC,co_42760196c249,Other,Business Services,,,,,,,,,13632,13661,,13632,,,,,,MFIC,2025-05-12
+Mariani CI (MG) GROUP LLC,co_7c2ac529e0ff,Other,Business Services,,,,,,,,,18592,18591,,18592,,,,,,MFIC,2025-05-12
+SafetyCo HEF Safety Ultimate Holdings LLC,co_cc7732b9c8c6,Other,Business Services,,,,,,,,,7880,8143,,7880,,,,,,MFIC,2025-05-12
+SEER GS SEER Group Holdings,co_87c49ca43a5f,Common Equity,Business Services,,,,,,,,,42,47,,42,,,,42,,MFIC,2025-05-12
+SEER,co_bc1227ae633c,Other,Business Services,,,,,,,,,4074,4145,,4074,,,,,,MFIC,2025-05-12
+Smith System Smith Topco Inc.,co_b06ae9bb2868,Other,Business Services,,,,,,,,,9405,9437,,9405,,,,,,MFIC,2025-05-12
+Vixxo Corp.,co_3d20c67afcba,Other,Business Services,,,,,,,,,3680,3678,,3680,,,,,,MFIC,2025-05-12
+Communications Equipment MCA Mobile Communications America Inc.,co_44dc04d75f60,Other,Telecommunications,,,,,,,,,4779,4914,,4779,,,,,,MFIC,2025-05-12
+Communications Equipment Mitel Networks MLN US Holdco LLC,co_6fe43c56b8fc,First Lien,Telecommunications,14.94%,,,,,,2027-10-18,606,509,46,,509,,,,,,MFIC,2025-05-12
+Communications Equipment Mitel Networks MLN US Holdco LLC,co_6fe43c56b8fc,First Lien,Telecommunications,15.2%,,,,,,2027-10-18,6092,2912,34,,2912,,,,,fair_value_suspicious_vs_size,MFIC,2025-05-12
+Communications Equipment Mitel Networks MLN US Holdco LLC,co_6fe43c56b8fc,Other,Telecommunications,,,,,,,,,4189,840,,4189,,,,,,MFIC,2025-05-12
+Communications Equipment Sorenson Holdings LLC,co_b9554a6ccb72,First Lien,Telecommunications,,8%,,,,,2030-04-01,247,197,204,,197,,,,,,MFIC,2025-05-12
+Communications Equipment Sorenson Holdings LLC,co_b9554a6ccb72,First Lien,Telecommunications,,10%,,,,,2030-04-01,60,54,55,,54,,,,,,MFIC,2025-05-12
+Communications Equipment Sorenson Holdings LLC,co_b9554a6ccb72,Common Equity,Telecommunications,,,,,,,,,108,118,,108,,,,279,,MFIC,2025-05-12
+Communications Equipment Sorenson Holdings LLC,co_b9554a6ccb72,Other,Telecommunications,,,,,,,,,359,377,,359,,,,,,MFIC,2025-05-12
+Communications Equipment,co_6b882926ae43,Other,Telecommunications,,,,,,,,,24206,19142,,24206,,,,,,MFIC,2025-05-12
+Construction & Engineering Accelevation LLC,co_6ab8195cfb6c,Other,Industrials,,,,,,,,,9325,9318,,9325,,,,,,MFIC,2025-05-12
+Construction & Engineering Allstar Holdings Athlete Buyer LLC,co_8e5731e0ecb3,Other,Industrials,,,,,,,,,28169,28387,,28169,,,,,,MFIC,2025-05-12
+Construction & Engineering American Restoration American Restoration Holdings LLC,co_e11a10e8072f,Other,Industrials,,,,,,,,,13830,13859,,13830,,,,,,MFIC,2025-05-12
+Construction & Engineering Kauffman Holdings LLC,co_13c718a5fb7a,Other Equity,Industrials,,,,,,,,,250,35,,250,,,,250000,,MFIC,2025-05-12
+Construction & Engineering Kauffman,co_13c718a5fb7a,Other,Industrials,,,,,,,,,18232,17081,,18232,,,,,,MFIC,2025-05-12
+Construction & Engineering Pave America,co_7626a78d37d1,Other,Industrials,,,,,,,,,17386,17453,,17386,,,,,,MFIC,2025-05-12
+Construction & Engineering Pavement Preservation,co_9ec682a6da82,Other,Industrials,,,,,,,,,10894,10877,,10894,,,,,,MFIC,2025-05-12
+Construction & Engineering Renovo HomeRenew Buyer,co_ab41e8a06375,First Lien,Industrials,,,,,8.65%,,2027-11-23,9380,8177,3564,,8177,,,,,,MFIC,2025-05-12
+Construction & Engineering Renovo HomeRenew Buyer,co_ab41e8a06375,Delayed Draw,Industrials,,,,,8.65%,,2027-11-23,8261,7198,3139,,7198,,,,,,MFIC,2025-05-12
+Construction & Engineering Renovo HomeRenew Buyer,co_ab41e8a06375,Revolver,Industrials,,,,,6.65%,,2027-11-23,2233,1975,848,,1975,,,,,,MFIC,2025-05-12
+Construction & Engineering Renovo,co_46b28439f2ae,Other,Industrials,,,,,,,,,18637,8838,,18637,,,,,,MFIC,2025-05-12
+Construction & Engineering Traffic Management Solutions LLC,co_83748ac68124,Other,Industrials,,,,,,,,,10447,10446,,10447,,,,,,MFIC,2025-05-12
+Construction & Engineering Trench Plate Trench Safety Solutions Holdings,co_5b69693f808e,Common Equity,Industrials,,,,,,,,,50,43,,50,,,,331,,MFIC,2025-05-12
+Construction & Engineering Trench Plate Trench Safety Solutions Holdings LLC,co_5b69693f808e,Other,Industrials,,,,,,,,,19219,19175,,19219,,,,,,MFIC,2025-05-12
+Construction & Engineering,co_46b28439f2ae,Other,Industrials,,,,,,,,,146139,135434,,146139,,,,,,MFIC,2025-05-12
+Consumer Staples Distribution & Retail 3D Protein For Pets Opco LLC,co_1f7ab581572f,Other,Consumer & Retail,,,,,,,,,8378,8374,,8378,,,,,,MFIC,2025-05-12
+Consumer Staples Distribution & Retail Turkey Hill IC Holdings LLC,co_5b3bf5d53cec,Other Equity,Consumer & Retail,,,,,,,,,169,,,169,,,,169,,MFIC,2025-05-12
+Consumer Staples Distribution & Retail THLP CO. LLC,co_c0d4137161f1,Other,Consumer & Retail,,,,,,,,,30187,29782,,30187,,,,,,MFIC,2025-05-12
+Consumer Staples Distribution & Retail,co_6b0cb2e23c2d,Other,Consumer & Retail,,,,,,,,,38565,38156,,38565,,,,,,MFIC,2025-05-12
+Berry Tapes & Adhesives Vybond Buyer LLC,co_094f77e13aee,Other,Containers & Packaging,,,,,,,,,16997,16992,,16997,,,,,,MFIC,2025-05-12
+MSI Express Inc.,co_c06f44e34636,Other,Containers & Packaging,,,,,,,,,6407,6406,,6407,,,,,,MFIC,2025-05-12
+Truvant NPPI Buyer LLC,co_786166d757c8,Other,Containers & Packaging,,,,,,,,,22092,22095,,22092,,,,,,MFIC,2025-05-12
+Accelerate Learning Eagle Purchaser Inc.,co_ebe6b81c91e3,Other,Diversified,,,,,,,,,4381,4409,,4381,,,,,,MFIC,2025-05-12
+Clarus Commerce Marlin DTC-LS Midco 2 LLC,co_d0f80d48f273,Other,Diversified,,,,,,,,,21039,21078,,21039,,,,,,MFIC,2025-05-12
+Club Car Wash Club Car Wash Operating LLC,co_54a7cedaa92a,Other,Diversified,,,,,,,,,33782,33832,,33782,,,,,,MFIC,2025-05-12
+Excelligence Learning Corp.,co_5150498b1d5b,Other,Diversified,,,,,,,,,16405,16557,,16405,,,,,,MFIC,2025-05-12
+Gateway Services Gateway US Holdings Inc.,co_289e2d4f1cba,Other,Diversified,,,,,,,,,13053,13035,,13053,,,,,,MFIC,2025-05-12
+Go Car Wash Go Car Wash Management Corp.,co_cf7334c52bd3,Other,Diversified,,,,,,,,,10815,10628,,10815,,,,,,MFIC,2025-05-12
+Legacy.com Lotus Topco Inc.,co_76c095ecf7b9,Other,Diversified,,,,,,,,,2862,2858,,2862,,,,,,MFIC,2025-05-12
+Regis Corp.,co_e5a8b651992f,Other,Diversified,,,,,,,,,7434,7428,,7434,,,,,,MFIC,2025-05-12
+SEV Intermediate Holdco LLC,co_ae0817509316,Other,Diversified,,,,,,,,,8573,8564,,8573,,,,,,MFIC,2025-05-12
+Team Car Wash TCW Midco LLC,co_fc377b44da5f,Other,Diversified,,,,,,,,,6061,6055,,6061,,,,,,MFIC,2025-05-12
+Ultra Clean Newco Ultra Clean Holdco LLC,co_7b24eadbe4c3,Other,Diversified,,,,,,,,,7808,7776,,7808,,,,,,MFIC,2025-05-12
+US Legal Support US Legal Support Investment Holdings,co_cb47c20dc15b,Common Equity,Diversified,,,,,,,,,632,1125,,632,,,,631972,,MFIC,2025-05-12
+US Legal Support USLS Acquisition Inc.,co_67cd6cf64b2d,Other,Diversified,,,,,,,,,35167,35676,,35167,,,,,,MFIC,2025-05-12
+Village Pet Care Village Pet Care LLC,co_b7cdedda0c7b,Other,Diversified,,,,,,,,,3173,3178,,3173,,,,,,MFIC,2025-05-12
+Wilson Language Training Owl Parent Holdings,co_d22fc245b048,Common Equity,Diversified,,,,,,,,,100,187,,100,,,,100,,MFIC,2025-05-12
+Wilson Language Training,co_50b4c87519de,Other,Diversified,,,,,,,,,9617,9791,,9617,,,,,,MFIC,2025-05-12
+Cablevision Systems CSC Holdings,co_f6b246fddb12,Unsecured Debt,Telecommunications,4.13%,,,,,,2030-12-01,2000,1426,1457,,1426,,,,,,MFIC,2025-05-12
+Cablevision Systems,co_5c5d1bd9fc6a,Other,Telecommunications,,,,,,,,,2444,2481,,2444,,,,,,MFIC,2025-05-12
+Electric Utilities Dynagrid Megavolt Borrower LLC,co_590cea6afee0,Other,Energy,,,,,,,,,4280,4266,,4280,,,,,,MFIC,2025-05-12
+Electrical Equipment International Wire Group IW Buyer LLC,co_3e2fba00309a,Other,Industrials,,,,,,,,,2410,2448,,2410,,,,,,MFIC,2025-05-12
+Electrical Equipment US MetalCo Holdings US MetalCo Holdings LLC,co_adbfb6b4680c,Other,Industrials,,,,,,,,,13294,13428,,13294,,,,,,MFIC,2025-05-12
+Electrical Equipment,co_b1fc28ab48d5,Other,Industrials,,,,,,,,,15704,15876,,15704,,,,,,MFIC,2025-05-12
+Electronic Equipment Instruments & Components AVAD LLC,co_83b608066c44,Preferred Equity,Software & Technology,,,,,,,,,1713,2633,,1713,,,,13195,,MFIC,2025-05-12
+Electronic Equipment Instruments & Components AVAD LLC,co_83b608066c44,Other,Software & Technology,,,,,,,,,32797,28690,,32797,,,,,,MFIC,2025-05-12
+Electronic Equipment Instruments & Components Pro Vigil Pro-Vigil Holding Company LLC,co_fe05aea2aeec,Other,,,,,,,,,,27926,27681,,27926,,,,,,MFIC,2025-05-12
+Electronic Equipment Instruments & Components,co_83b608066c44,Other,Software & Technology,,,,,,,,,60723,56371,,60723,,,,,,MFIC,2025-05-12
+Equipment & Services Camin Cargo Camin Cargo Control Holdings Inc.,co_c222113ca768,Other,Energy,,,,,,,,,1689,1714,,1689,,,,,,MFIC,2025-05-12
+Equipment & Services Generator Buyer Inc.,co_1ba068052dac,Other,Energy,,,,,,,,,12799,12456,,12799,,,,,,MFIC,2025-05-12
+Equipment & Services,co_7ed1d9222de9,Other,Energy,,,,,,,,,14488,14170,,14488,,,,,,MFIC,2025-05-12
+Entertainment DHX WildBrain Ltd.,co_2b3dbafbf108,Other,Media & Entertainment,,,,,,,,,13129,13139,,13129,,,,,,MFIC,2025-05-12
+AML Rightsource Gabriel Partners LLC,co_286775cea9c2,Other,Financial Services,,,,,,,,,31600,31011,,31600,,,,,,MFIC,2025-05-12
+Basswood Park CLO Ltd.,co_c5c84442e669,First Lien,Financial Services,,,,,,,2034-04-20,2000,2010,1971,,2010,,,,,,MFIC,2025-05-12
+Celink,co_d7c6f1af5feb,Other,Financial Services,,,,,,,,,19838,19993,,19838,,,,,,MFIC,2025-05-12
+Churchill Middle Market CLO Lt Churchill Middle Market CLO Ltd.,co_36d1bec01262,First Lien,Financial Services,,,,,,,2033-10-24,4000,4000,4002,,4000,,,,,,MFIC,2025-05-12
+Definiti LLC,co_0abd6a668f44,Other Equity,Financial Services,,,,,,,,,100,117,,100,,,,100000,,MFIC,2025-05-12
+Definiti LLC,co_0abd6a668f44,Other,Financial Services,,,,,,,,,7181,7239,,7181,,,,,,MFIC,2025-05-12
+Fortress Credit BSL Limited Fortress Credit BSL Limited 2021-3 Asset Backed Security - CLO Debt Maturity Date 07/20/34,co_b1b60961f91f,First Lien,Financial Services,,,,,,,2034-07-20,3000,3000,2963,,3000,,,,,,MFIC,2025-05-12
+Fortress Credit Opportunities Fortress Credit Opportunities CLO LLC,co_affd7bbc2f40,First Lien,Financial Services,,,,,,,2037-01-15,4000,4000,3974,,4000,,,,,,MFIC,2025-05-12
+Golden Bear Golden Bear 2016-R,co_506b40bf72d5,Other Equity,Financial Services,,,,,,,2042-09-20,,14680,8854,,14680,,,,,,MFIC,2025-05-12
+Golub Capital Partners CLO LT Golub Capital Partners CLO,co_47df85b06319,First Lien,Financial Services,,,,,,,2034-07-20,2000,2016,1983,,2016,,,,,,MFIC,2025-05-12
+Lending Point LendingPoint LLC,co_a6de1e1d92ce,First Lien,Financial Services,0%,,,,,,2026-12-30,2685,2685,2685,,2685,,,,,,MFIC,2025-05-12
+Lending Point,co_88eb4e955a29,Other,Financial Services,,,,,,,,,46845,47053,,46845,,,,,,MFIC,2025-05-12
+Nexity,co_7b79cfeabfd1,Other,Financial Services,,,,,,,,,2843,2874,,2843,,,,,,MFIC,2025-05-12
+Origami Opportunities Fund III,co_da5b45caca00,Other,Financial Services,,,,,,,,,6908,6888,,6908,,,,,,MFIC,2025-05-12
+PMA,co_9d68f3c24904,Other,Financial Services,,,,,,,,,13863,13863,,13863,,,,,,MFIC,2025-05-12
+Renew Financial LLC,co_4697691b235a,Preferred Equity,Financial Services,,,,,,,,,534,194,,534,,,,142,,MFIC,2025-05-12
+Renew Financial LLC,co_4697691b235a,Other Equity,Financial Services,,,,,,,,,16813,55,,16813,,,,1368286,fair_value_suspicious_vs_size,MFIC,2025-05-12
+Renew Financial LLC,co_4697691b235a,Other Equity,Financial Services,,,,,,,,,213,374,,213,,,,213064,,MFIC,2025-05-12
+Renew Financial LLC,co_4697691b235a,Other,Financial Services,,,,,,,,,17560,623,,17560,,,,,fair_value_suspicious_vs_size,MFIC,2025-05-12
+US Auto Pool 2023 Trust (Del. Stat. Trust) Structured Products and Other – Membership Interests Maturity Date 02/28/29,co_c949e6fb6abe,Other,Financial Services,,,,,,,2029-02-28,,21785,14638,,21785,,,,,,MFIC,2025-05-12
+Food Products Berner Foods,co_b08d75de0ed0,Other,Food & Beverage,,,,,,,,,34650,34457,,34650,,,,,,MFIC,2025-05-12
+Food Products Bolthouse Farms Wm. Bolthouse Farms,co_92177b1f4310,Common Equity,Food & Beverage,,,,,,,,,1147,1108,,1147,,,,1086122,,MFIC,2025-05-12
+Food Products Hive FCP-Hive Holdings,co_09edddb2cb3a,Preferred Equity,Food & Beverage,,,,,,,,,448,295,,448,,,,589,,MFIC,2025-05-12
+Food Products Hive FCP-Hive Holdings,co_09edddb2cb3a,Common Equity,Food & Beverage,,,,,,,,,3,,,3,,,,589,,MFIC,2025-05-12
+Food Products Hive,co_844b89cc9a21,Other,Food & Beverage,,,,,,,,,15274,15183,,15274,,,,,,MFIC,2025-05-12
+Food Products Jacent Strategic Merchandising,co_847e407882b8,Other Equity,Food & Beverage,,,,,,,,,500,235,,500,,,,5000,,MFIC,2025-05-12
+Food Products Jacent JSM Equity Investors,co_3fdf5f88e98e,Preferred Equity,Food & Beverage,,,,,,,,,11,1,,11,,,,11,,MFIC,2025-05-12
+Food Products Jacent,co_b354ee93592e,Other,Food & Beverage,,,,,,,,,24263,23874,,24263,,,,,,MFIC,2025-05-12
+Food Products Nutpods Holdings,co_97a078e3b506,Common Equity,Food & Beverage,,,,,,,,,125,139,,125,,,,125,,MFIC,2025-05-12
+Food Products Nutpods,co_613c21e44ecc,Other,Food & Beverage,,,,,,,,,3746,3830,,3746,,,,,,MFIC,2025-05-12
+Food Products Patriot Pickle,co_85b163dae54b,Other,Food & Beverage,,,,,,,,,234,237,,234,,,,,,MFIC,2025-05-12
+Food Products,co_7f08aeafcef6,Other,Food & Beverage,,,,,,,,,79314,78689,,79314,,,,,,MFIC,2025-05-12
+Ground Transportation Beacon Mobility Beacon Mobility Corp.,co_d4aeb56e6bab,Other,Transportation & Logistics,4.1%,,,,,,2025-12-31,,,,,,,,,,,MFIC,2025-05-12
+Ground Transportation Beacon Mobility,co_c8a49db88f00,Other,Transportation & Logistics,,,,,,,,,37282,37162,,37282,,,,,,MFIC,2025-05-12
+Ground Transportation Bird Rides Third Lane Mobility Inc.,co_b510e97419af,Other Equity,Transportation & Logistics,,,,,,,,,722,714,,722,,,,5012171,,MFIC,2025-05-12
+Ground Transportation Bird Rides,co_9233c3f75cf7,Other,Transportation & Logistics,,,,,,,,,23143,23395,,23143,,,,,,MFIC,2025-05-12
+Ground Transportation Boasso,co_97981a2c3940,Other,Transportation & Logistics,,,,,,,,,3525,3524,,3525,,,,,,MFIC,2025-05-12
+Ground Transportation Heniff and Superior,co_97b7ec495828,Other,Transportation & Logistics,,,,,,,,,32243,32177,,32243,,,,,,MFIC,2025-05-12
+Ground Transportation Olympus Terminals,co_f64f2f9ff2c2,Other,Transportation & Logistics,,,,,,,,,18097,18102,,18097,,,,,,MFIC,2025-05-12
+Ground Transportation,co_36ffa2e241fe,Other,Transportation & Logistics,,,,,,,,,114290,114360,,114290,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Carestream Health Carestream Health Holdings,co_17e63a1ac067,Common Equity,Healthcare,,,,,,,,,1426,1443,,1426,,,,173887,,MFIC,2025-05-12
+Health Care Equipment & Supplies Carestream Health,co_88471da471ae,Other,Healthcare,,,,,,,,,1577,1557,,1577,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Cerus,co_82203cde1e5c,Other,Healthcare,,,,,,,,,20548,20597,,20548,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Compass Health,co_88471da471ae,Other,Healthcare,,,,,,,,,7774,7782,,7774,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Dr. Scholl's,co_1797ec4568ab,Other,Healthcare,,,,,,,,,24387,24387,,24387,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Medical Guardian,co_f110f11ad415,Other,Healthcare,,,,,,,,,35435,35708,,35435,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Natus Sensory,co_7dd976017638,Other,Healthcare,,,,,,,,,13102,13214,,13102,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies Treace,co_ec8fc9bd7441,Other,Healthcare,,,,,,,,,14937,14786,,14937,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies,co_bd48c6dbbb9d,Other,Healthcare,,,,,,,,,117760,118031,,117760,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Alcami,co_f210657d0beb,Other,Healthcare,,,,,,,,,8478,8489,,8478,,,,,,MFIC,2025-05-12
+Health Care Providers & Services All Star,co_4ef5273378a6,Other,Healthcare,,,,,,,,,7070,7230,,7070,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Allied Benefit Systems,co_00676511b2f4,Other,Healthcare,,,,,,,,,6925,6932,,6925,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Cato Research,co_5d02e66f76ee,Other,Healthcare,,,,,,,,,16644,16318,,16644,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Celerion,co_3756b1b85beb,Other,Healthcare,,,,,,,,,10851,11025,,10851,,,,,,MFIC,2025-05-12
+Health Care Providers & Services CNSI,co_7c4d2f4f9493,Other,Healthcare,,,,,,,,,21529,21862,,21529,,,,,,MFIC,2025-05-12
+Health Care Providers & Services EmpiRx,co_7666a3e9f536,Other,Healthcare,,,,,,,,,8699,8795,,8699,,,,,,MFIC,2025-05-12
+Health Care Providers & Services ExactCare,co_2185926118c2,Other,Healthcare,,,,,,,,,17393,17852,,17393,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Ingenovis Health,co_887f9d60d148,Other,Healthcare,,,,,,,,,3511,1805,,3511,,,,,,MFIC,2025-05-12
+Health Care Providers & Services KureSmart Clearway Corp.,co_b2d95a2b7da0,Other Equity,Healthcare,,,,,,,,,133,306,,133,,,,133,,MFIC,2025-05-12
+Health Care Providers & Services KureSmart,co_4d32f0e6fbad,Other,Healthcare,,,,,,,,,27088,27351,,27088,,,,,,MFIC,2025-05-12
+Health Care Providers & Services LucidHealth,co_72661a449bab,Other,Healthcare,,,,,,,,,9005,7488,,9005,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Maxor National Pharmacy Services LLC,co_874c1e36d2c9,Preferred Equity,Healthcare,,,,,,,,,50,77,,50,,,,50000,,MFIC,2025-05-12
+Health Care Providers & Services Maxor National Pharmacy Services LLC,co_874c1e36d2c9,Other,Healthcare,,,,,,,,,22761,22957,,22761,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Midwest Vision,co_51599323bd61,Other,Healthcare,,,,,,,,,22431,22274,,22431,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Omega Healthcare,co_95124074232e,Other,Healthcare,,,,,,,,,9777,9826,,9777,,,,,,MFIC,2025-05-12
+Health Care Providers & Services PHS,co_54d74b83cc7b,Other,Healthcare,,,,,,,,,27345,23255,,27345,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Rarebreed,co_c0346f3653c8,Other,Healthcare,,,,,,,,,11295,11197,,11295,,,,,,MFIC,2025-05-12
+Health Care Providers & Services RHA Health Services,co_d0ac8f7f4e21,Other,Healthcare,,,,,,,,,5220,5239,,5220,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Team Select,co_d4fb3fcc547e,Other,Healthcare,,,,,,,,,9437,9550,,9437,,,,,,MFIC,2025-05-12
+Health Care Providers & Services Thomas Scientific BSP-TS,co_3e3264dcb3df,Preferred Equity,Healthcare,,,,,,,,,25,30,,25,,,,30,,MFIC,2025-05-12
+Health Care Providers & Services Thomas Scientific BSP-TS,co_3e3264dcb3df,Common Equity,Healthcare,,,,,,,,,185,34,,185,,,,185,,MFIC,2025-05-12
+Health Care Providers & Services Thomas Scientific,co_3e3264dcb3df,Other,Healthcare,,,,,,,,,33887,33049,,33887,,,,,,MFIC,2025-05-12
+Health Care Providers & Services WellDyneRx LLC,co_328fa0f721fc,Other,Healthcare,,,,,,,,,17348,17349,,17348,,,,,,MFIC,2025-05-12
+Health Care Providers & Services,co_8a0eb83bbb44,Other,Healthcare,,,,,,,,,296694,289843,,296694,,,,,,MFIC,2025-05-12
+Health Care Technology Inovalon Holdings,co_73ddfc0dd6bc,Second Lien,Healthcare,,15.35%,,,0.75%,,2033-11-25,159,152,134,,152,,,,,,MFIC,2025-05-12
+Health Care Technology Inovalon,co_326c6f8339c6,Other,Healthcare,,,,,,,,,7275,6987,,7275,,,,,,MFIC,2025-05-12
+Health Care Technology TELA Bio Inc.,co_100c470d15e9,Other,Healthcare,,,,,,,,,13299,13333,,13299,,,,,,MFIC,2025-05-12
+Health Care Technology,co_ff413c9acc5e,Other,Healthcare,,,,,,,,,36478,36061,,36478,,,,,,MFIC,2025-05-12
+Cave,co_b89a199ea81b,Other,Healthcare,,,,,,,,,8410,8529,,8410,,,,,,MFIC,2025-05-12
+CircusTrix,co_c7ca8d35d5ca,Other,Healthcare,,,,,,,,,4286,4367,,4286,,,,,,MFIC,2025-05-12
+Hotels,co_5b6c98979368,First Lien,Healthcare,6.95%,,,,,,2026-11-18,1657,1651,1595,,1651,,,,,,MFIC,2025-05-12
+Guernsey,co_c36e56954513,Other,Healthcare,,,,,,,,,1650,1595,,1650,,,,,,MFIC,2025-05-12
+International Cruise & Excursion Gallery Inc.,co_d49f279f829c,Common Equity,Healthcare,,,,,,,,,4740,2187,,4740,,,,531312,,MFIC,2025-05-12
+International Cruise & Excursion Gallery Inc.,co_d49f279f829c,Other,Healthcare,,,,,,,,,13653,6217,,13653,,,,,,MFIC,2025-05-12
+Munson,co_17952329ad5f,Other,Healthcare,,,,,,,,,8881,8894,,8881,,,,,,MFIC,2025-05-12
+PARS Group LLC,co_effab4ea1b84,Other,Healthcare,,,,,,,,,8686,8601,,8686,,,,,,MFIC,2025-05-12
+Tasty Chick'n,co_52baf4910498,Other,Healthcare,,,,,,,,,12101,11641,,12101,,,,,,MFIC,2025-05-12
+The Club Company,co_b3e2cbd03f2e,Other,Healthcare,,,,,,,,,25452,25878,,25452,,,,,,MFIC,2025-05-12
+Walters Wedding Estates,co_7971babc42c9,Other,Healthcare,,,,,,,,,17095,17124,,17095,,,,,,MFIC,2025-05-12
+Household Durables,co_44fdb39c0560,Other,Consumer & Retail,,,,,,,,,2215,2280,,2215,,,,,,MFIC,2025-05-12
+Independent Power & Renewable Electricity Producers Solarplicity Group Limited (f/k/a AMP Solar UK) Solarplicity UK Holdings Ltd.,co_48584420a33c,First Lien,,4%,,,,,,2023-03-08,5562,7231,1914,,7231,,,,,,MFIC,2025-05-12
+Independent Power & Renewable Electricity Producers Solarplicity Group Limited (f/k/a AMP Solar UK) Solarplicity UK Holdings Limited Preferred Equity,co_48584420a33c,Other Equity,,,,,,,,,,5623,,,5623,,,,4286,type_hint_pref_equity_from_name,MFIC,2025-05-12
+Independent Power & Renewable Electricity Producers Solarplicity Group Limited (f/k/a AMP Solar UK) Solarplicity UK Holdings Ltd.,co_48584420a33c,Other Equity,,,,,,,,,,4,,,4,,,,2825,,MFIC,2025-05-12
+Independent Power & Renewable Electricity Producers,co_7721cc32eff4,Other,Energy,,,,,,,,,12858,1914,,12858,,,,,,MFIC,2025-05-12
+High Street Insurance High Street Buyer Inc.,co_4b04937bb627,Other,Insurance,,,,,,,,,28911,29046,,28911,,,,,,MFIC,2025-05-12
+KCF Puerto Rico LLC,co_4d61a9214f3a,First Lien,Insurance,,,,,,,2028-06-28,1697,746,562,,746,,,,,,MFIC,2025-05-12
+PGM Holdings Corp.,co_3e9ae08b0341,Other,Insurance,,,,,,,,,19258,19091,,19258,,,,,,MFIC,2025-05-12
+& Pharmaceuticals TersSera TerSera Therapeutics LLC,co_e8155d4f11d0,Other,Healthcare,,,,,,,,,17321,17422,,17321,,,,,,MFIC,2025-05-12
+Interactive Media & Services Securus Technologies Holdings Inc.,co_98fc24d2a070,Second Lien,Media & Entertainment,9.05%,,,,,,2025-11-01,8271,7703,4053,,7703,,,,,,MFIC,2025-05-12
+Interactive Media & Services Securus Technologies Holdings Inc.,co_98fc24d2a070,Other,Media & Entertainment,,,,,,,,,7891,4249,,7891,,,,,,MFIC,2025-05-12
+Interactive Media & Services The Weather Company Zephyr Buyer LP.,co_4ca09356bc9e,Other,Media & Entertainment,,,,,,,,,30006,30305,,30006,,,,,,MFIC,2025-05-12
+Interactive Media & Services,co_a961893af7c0,Other,Media & Entertainment,,,,,,,,,37897,34554,,37897,,,,,,MFIC,2025-05-12
+IT Services AGDATA Midco LLC,co_792623b1798a,Other,Software & Technology,,,,,,,,,2591,2571,,2591,,,,,,MFIC,2025-05-12
+IT Services Avenu ACP Avenu Buyer LLC,co_5314566033f3,Other,Software & Technology,,,,,,,,,3514,3524,,3514,,,,,,MFIC,2025-05-12
+IT Services Distinct Holdings Inc.,co_dfa1a302e950,Other,Software & Technology,,,,,,,,,13380,13378,,13380,,,,,,MFIC,2025-05-12
+IT Services GrayMatter Systems Genius Bidco LLC,co_1a0aaf2e21e9,Other Equity,Software & Technology,,,,,,,,,77,66,,77,,,,773,,MFIC,2025-05-12
+IT Services GrayMatter Systems Genius Bidco LLC,co_1a0aaf2e21e9,Other,Software & Technology,,,,,,,,,1476,1420,,1476,,,,,,MFIC,2025-05-12
+IT Services New Era Technology Inc.,co_041f9e113941,Other,Software & Technology,,,,,,,,,33093,31900,,33093,,,,,,MFIC,2025-05-12
+IT Services Team LINX LLC,co_f4427fdcf8f2,Other,Software & Technology,,,,,,,,,8406,8401,,8406,,,,,,MFIC,2025-05-12
+IT Services VikingCloud Bullcave Ltd.,co_7c35c23ebb8c,Other,Software & Technology,,,,,,,,,31796,31838,,31796,,,,,,MFIC,2025-05-12
+IT Services,co_f26c1e205d65,Other,Software & Technology,,,,,,,,,94256,93032,,94256,,,,,,MFIC,2025-05-12
+Leisure Products Dan Dee Project Comfort Buyer,co_294d2fc7afd7,Preferred Equity,Healthcare,,,,,,,,,492,275,,492,,,,491405,,MFIC,2025-05-12
+Leisure Products Dan Dee Project Comfort Buyer Inc.,co_294d2fc7afd7,Other,Healthcare,,,,,,,,,16847,16580,,16847,,,,,,MFIC,2025-05-12
+Leisure Products KLO Holdings,co_9a2114dc0c6a,Common Equity,Healthcare,,,,,,,,,1000,209,,1000,,,,1000032,,MFIC,2025-05-12
+Leisure Products LashCo Lash OpCo LLC,co_b0c54af5496c,Other,Healthcare,,,,,,,,,47013,46237,,47013,,,,,,MFIC,2025-05-12
+Leisure Products Paladone Group Holdings Ltd.,co_b2cbaba84ca5,Other Equity,Healthcare,,,,,,,,,94,108,,94,,,,94151,,MFIC,2025-05-12
+Leisure Products Paladone,co_8352ff2f15b6,Other,Healthcare,,,,,,,,,7580,7597,,7580,,,,,,MFIC,2025-05-12
+Leisure Products,co_8830581d1a78,Other,Healthcare,,,,,,,,,72440,70623,,72440,,,,,,MFIC,2025-05-12
+Life Sciences Tools & Services Akoya Biosciences Inc.,co_dd9d8d81f71a,Other,Healthcare,,,,,,,,,22502,22446,,22502,,,,,,MFIC,2025-05-12
+Life Sciences Tools & Services August Bio August Bioservices LLC,co_efeb927c3110,Other,Healthcare,,,,,,,,,14932,14807,,14932,,,,,,MFIC,2025-05-12
+Life Sciences Tools & Services Unchained Labs Unchained Labs LLC,co_568992891e97,Other,Healthcare,,,,,,,,,4035,4033,,4035,,,,,,MFIC,2025-05-12
+Life Sciences Tools & Services,co_06b55850bd11,Other,Healthcare,,,,,,,,,41469,41286,,41469,,,,,,MFIC,2025-05-12
+Machinery Milacron (Project Iota) IOTA HOLDINGS 3,co_999804dd5b4a,Other,Industrials,,,,,,,,,22330,22330,,22330,,,,,,MFIC,2025-05-12
+Machinery,co_7cb194d9414f,Other,Industrials,,,,,,,,,39257,39315,,39257,,,,,,MFIC,2025-05-12
+Media Accelerate360 Holdings LLC,co_55d117c442ee,Other,Media & Entertainment,,,,,,,,,5173,5141,,5173,,,,,,MFIC,2025-05-12
+Media Acosta Holdings Corp.,co_ec3b629ba25c,Other Equity,Media & Entertainment,,,,,,,,,473,491,,473,,,,10213,,MFIC,2025-05-12
+Media Acosta Holdings Corp.,co_ec3b629ba25c,Other Equity,Media & Entertainment,,,,,,,,,77,80,,77,,,,6266,,MFIC,2025-05-12
+Media Acosta Holdings Corp.,co_ec3b629ba25c,Other,Media & Entertainment,,,,,,,,,550,571,,550,,,,,,MFIC,2025-05-12
+Media HALO Branded Solutions HALO Buyer Inc.,co_8606e55fbf20,Other,Media & Entertainment,,,,,,,,,8566,8561,,8566,,,,,,MFIC,2025-05-12
+Media Hero Digital HRO Holdings I LP,co_8f4660bcd680,Other Equity,Media & Entertainment,,,,,,,,,213,278,,213,,,,213,,MFIC,2025-05-12
+Media Hero Digital,co_1b959b4fbac5,Other,Media & Entertainment,,,,,,,,,28688,28070,,28688,,,,,,MFIC,2025-05-12
+Media,co_721c9525ade2,Other,Media & Entertainment,,,,,,,,,42977,42343,,42977,,,,,,MFIC,2025-05-12
+Passenger Airlines Merx Aviation Finance LLC,co_ea67742de462,Revolver,Transportation & Logistics,10%,,,,,,2025-10-31,59575,59575,59575,,59575,,,,,,MFIC,2025-05-12
+Passenger Airlines Merx Aviation Finance LLC,co_ea67742de462,Common Equity,Transportation & Logistics,,,,,,,,,146500,125582,,146500,,,,,,MFIC,2025-05-12
+Passenger Airlines,co_6e5decc40e69,Other,Transportation & Logistics,,,,,,,,,206075,185157,,206075,,,,,,MFIC,2025-05-12
+Elida Beauty PHOENIX YW BUYER INC.,co_b069e4b2176e,Other,Consumer & Retail,,,,,,,,,7723,7729,,7723,,,,,,MFIC,2025-05-12
+RoC Skincare RoC Holdco LLC,co_ae057aaf458b,Other,Consumer & Retail,,,,,,,,,12416,12454,,12416,,,,,,MFIC,2025-05-12
+Suave Silk Holdings I Corp.,co_c21e2fdd71b1,Other Equity,Consumer & Retail,,,,,,,,,100,210,,100,,,,100,,MFIC,2025-05-12
+Suave,co_fcddc483974d,Other,Consumer & Retail,,,,,,,,,26324,26769,,26324,,,,,,MFIC,2025-05-12
+Alcresta Therapeutics Inc.,co_5d98b8313fdb,Preferred Equity,Healthcare,,,,,,,,,116,127,,116,,,,116,,MFIC,2025-05-12
+Alcresta Therapeutics Inc.,co_5d98b8313fdb,Common Equity,Healthcare,,,,,,,,,1,36,,1,,,,1176,,MFIC,2025-05-12
+Alcresta Therapeutics Inc.,co_5d98b8313fdb,Other,Healthcare,,,,,,,,,2166,2278,,2166,,,,,,MFIC,2025-05-12
+Avid Bioservices Space Parent,co_0209df9f7e5b,Preferred Equity,Healthcare,,,,,,,,,99,99,,99,,,,99000,,MFIC,2025-05-12
+Avid Bioservices Space Parent,co_0209df9f7e5b,Common Equity,Healthcare,,,,,,,,,1,1,,1,,,,1000,,MFIC,2025-05-12
+Avid Bioservices,co_19e76c71d55b,Other,Healthcare,,,,,,,,,10447,10444,,10447,,,,,,MFIC,2025-05-12
+Ora LLC,co_ae5ab51f98cc,Common Equity,Healthcare,,,,,,,,,110,86,,110,,,,2,,MFIC,2025-05-12
+Ora LLC,co_ae5ab51f98cc,Unsecured Debt,Healthcare,11.34%,,,,,,2030-07-18,21,21,21,,21,,,,,,MFIC,2025-05-12
+Ora LLC,co_ae5ab51f98cc,Other,Healthcare,,,,,,,,,7130,7022,,7130,,,,,,MFIC,2025-05-12
+PAI Pharma PAI Co-Investor FT Aggregator LLC,co_c8cd182d7ca5,Other Equity,Healthcare,,,,,,,,,100,100,,100,,,,100,,MFIC,2025-05-12
+PAI Pharma,co_d0a829144761,Other,Healthcare,,,,,,,,,16303,16301,,16303,,,,,,MFIC,2025-05-12
+Sterling Pharma,co_cc5429eedceb,Other,Healthcare,,,,,,,,,13146,13047,,13146,,,,,,MFIC,2025-05-12
+TersSera,co_f4d99aea621b,Other,Healthcare,,,,,,,,,16319,16708,,16319,,,,,,MFIC,2025-05-12
+Trillium,co_882b3b6233e2,Other,Healthcare,,,,,,,,,8661,8805,,8661,,,,,,MFIC,2025-05-12
+Pharmaceuticals,co_8da6bda19121,Other,Healthcare,,,,,,,,,74172,74605,,74172,,,,,,MFIC,2025-05-12
+AlpineX,co_0e4988dd9e0a,Other,Business Services,,,,,,,,,22435,22718,,22435,,,,,,MFIC,2025-05-12
+BDO USA,co_79e041e9675e,Other,Business Services,,,,,,,,,12451,12449,,12451,,,,,,MFIC,2025-05-12
+Escalent,co_a49c441f1962,Other,Business Services,,,,,,,,,11929,11978,,11929,,,,,,MFIC,2025-05-12
+FingerPaint Marketing KL Charlie Co-Invest,co_d443e013da4c,Common Equity,Business Services,,,,,,,,,220,274,,220,,,,218978,,MFIC,2025-05-12
+FingerPaint Marketing,co_ed10ae4f4424,Other,Business Services,,,,,,,,,26329,26249,,26329,,,,,,MFIC,2025-05-12
+G&A,co_b3d5a8b32f5d,Other,Business Services,,,,,,,,,4872,4881,,4872,,,,,,MFIC,2025-05-12
+North Highland,co_28ae9208c5ef,Other,Business Services,,,,,,,,,3401,3394,,3401,,,,,,MFIC,2025-05-12
+PSI Services LLC,co_7df725c64066,Other,Business Services,,,,,,,,,5783,5776,,5783,,,,,,MFIC,2025-05-12
+Management & Development,co_09360e06b9a5,Other,Real Estate,,,,,,,,,6777,6913,,6777,,,,,,MFIC,2025-05-12
+Semiconductors & Semiconductor Equipment Wolfspeed,co_5b78a8aef63f,First Lien,Software & Technology,10.88%,,,,,,2030-06-23,11100,10720,11044,,10720,,,,,,MFIC,2025-05-12
+Semiconductors & Semiconductor Equipment,co_5b78a8aef63f,Other,Software & Technology,,,,,,,,,10720,11044,,10720,,,,,,MFIC,2025-05-12
+Software,co_35390f5453e8,Other,Software & Technology,,,,,,,,,27175,27281,,27175,,,,,,MFIC,2025-05-12
+Software Align RMCF V CIV L,co_e97ccf3ed67e,Common Equity,Software & Technology,,,,,,,,,500,555,,500,,,,241,,MFIC,2025-05-12
+Software American Megatrends,co_8b331380fa12,Other,Software & Technology,,,,,,,,,13199,13191,,13199,,,,,,MFIC,2025-05-12
+Software Anaplan,co_e9522b653494,Other,Software & Technology,,,,,,,,,11273,11243,,11273,,,,,,MFIC,2025-05-12
+Software BarTender Sigma Buyer LLC,co_2eebdc1ffc6f,Other,Software & Technology,,,,,,,,,21120,21337,,21120,,,,,,MFIC,2025-05-12
+Software Beeline IQN Holding Corp.,co_4272903be644,Other,Software & Technology,,,,,,,,,4179,4179,,4179,,,,,,MFIC,2025-05-12
+Software Calero Holdings Inc.,co_9661e560fedc,Other,Software & Technology,,,,,,,,,22014,22011,,22014,,,,,,MFIC,2025-05-12
+Software ChyronHego Corp.,co_55decd7f2e79,Other Equity,Software & Technology,,,,,,,,,6000,19040,,6000,,,,7800,,MFIC,2025-05-12
+Software ChyronHego Corp.,co_55decd7f2e79,Other,Software & Technology,3.5%,,,,,,2025-11-14,,,,,,,,,,,MFIC,2025-05-12
+Software ChyronHego Corp.,co_55decd7f2e79,Other,Software & Technology,,,,,,,,,120149,133414,,120149,,,,,,MFIC,2025-05-12
+Software Dairy.com Momentx Corp.,co_138134ae5bdf,Other,Food & Beverage,,,,,,,,,17295,17229,,17295,,,,,,MFIC,2025-05-12
+Software Digital.ai Software Holdings Inc.,co_70b345d6fc99,Other,Software & Technology,,,,,,,,,22509,22369,,22509,,,,,,MFIC,2025-05-12
+Software Forcura + Medalogix (Project Tarpon) F&M Buyer LLC,co_b4f228e1539c,Other,Software & Technology,,,,,,,,,16680,16679,,16680,,,,,,MFIC,2025-05-12
+Software G2CI Evergreen IX Borrower 2023 LLC,co_212c89840c6b,Other,Software & Technology,,,,,,,,,7115,7036,,7115,,,,,,MFIC,2025-05-12
+Software Gtreasury G Treasury SS LLC,co_780c3d6e423c,Other,Software & Technology,,,,,,,,,836,851,,836,,,,,,MFIC,2025-05-12
+Software Litify Holdings Inc.,co_5e50c44c9fa5,Other Equity,Software & Technology,,,,,,,,,107,497,,107,,,,217892,,MFIC,2025-05-12
+Software Litify,co_62699ba85500,Other,Software & Technology,,,,,,,,,28619,29289,,28619,,,,,,MFIC,2025-05-12
+Software Lookout Inc.,co_ee78cf8715d4,Other,Software & Technology,,,,,,,,,9957,10000,,9957,,,,,,MFIC,2025-05-12
+Software Naviga Colonnade Parent Inc.,co_ac2ab87547dc,First Lien,Software & Technology,7.1%,,,,,,2024-04-27,11200,11176,8288,,11176,,,,,,MFIC,2025-05-12
+Software Naviga Colonnade Parent Inc.,co_ac2ab87547dc,First Lien,Software & Technology,7.1%,,,,,,2024-04-27,1926,1909,1425,,1909,,,,,,MFIC,2025-05-12
+Software Naviga Colonnade Parent Inc.,co_ac2ab87547dc,First Lien,Software & Technology,7.1%,,,,,,2024-04-27,500,500,370,,500,,,,,,MFIC,2025-05-12
+Software Naviga Colonnade Parent Inc.,co_ac2ab87547dc,Other,Software & Technology,,,,,,,,,13585,10083,,13585,,,,,,MFIC,2025-05-12
+Software New Relic Crewline Buyer Inc.,co_8bb4d636329c,Other,Software & Technology,,,,,,,,,5574,5623,,5574,,,,,,MFIC,2025-05-12
+Software Omada Health Inc.,co_b5721d839cd4,Other,Software & Technology,,,,,,,,,1434,1455,,1434,,,,,,MFIC,2025-05-12
+Software Poppulo Inc.,co_ed3b0d578c0b,Other,Software & Technology,,,,,,,,,7379,7375,,7379,,,,,,MFIC,2025-05-12
+Software Riverbed Technology Inc.,co_77531eb9104b,Revolver,Software & Technology,6%,,,,,,2028-04-03,,-5,-6,,-5,,,,,,MFIC,2025-05-12
+Software Simeio Group Holdings Inc.,co_8cf4abf90a63,Other,Software & Technology,,,,,,,,,8992,8359,,8992,,,,,,MFIC,2025-05-12
+Software Solera,co_958f0cfa30e0,Other,Software & Technology,,,,,,,,,12293,11925,,12293,,,,,,MFIC,2025-05-12
+Software SPS Commerce Inc.,co_7e96ea5aa020,Common Equity,Software & Technology,,,,,,,,,62,111,,62,,,,837,,MFIC,2025-05-12
+Software Texada Software LLC,co_89fd611b89ed,Other,Software & Technology,,,,,,,,,8796,8799,,8796,,,,,,MFIC,2025-05-12
+Software Uniguest Holdings Inc.,co_9f27cf191023,Other,Software & Technology,,,,,,,,,19462,19438,,19462,,,,,,MFIC,2025-05-12
+Software Uplight Inc.,co_bb95db02ad8b,Other,Software & Technology,,,,,,,,,9912,9790,,9912,,,,,,MFIC,2025-05-12
+Software Zafin Labs Americas Inc.,co_cc91704b9937,Other,Software & Technology,,,,,,,,,16372,16367,,16372,,,,,,MFIC,2025-05-12
+Software Zendesk Inc.,co_16a7619e4673,Other,Software & Technology,,,,,,,,,7531,7506,,7531,,,,,,MFIC,2025-05-12
+Total Software,co_1d669e9a0867,Other,,,,,,,,,,455784,464953,,455784,,,,,,MFIC,2025-05-12
+Specialty Retail Club Champion Club Champion LLC,co_7883b7b3a47d,Other,Consumer & Retail,,,,,,,,,8664,8620,,8664,,,,,,MFIC,2025-05-12
+Specialty Retail PetSmart Inc.,co_963ca24e67ca,First Lien,Consumer & Retail,7.75%,,,,,,2029-02-15,2000,1961,1843,,1961,,,,,,MFIC,2025-05-12
+Specialty Retail PetSmart,co_963ca24e67ca,Other,Consumer & Retail,,,,,,,,,10875,10659,,10875,,,,,,MFIC,2025-05-12
+Specialty Retail,co_c586dbeb916c,Other,Consumer & Retail,,,,,,,,,27234,27335,,27234,,,,,,MFIC,2025-05-12
+Technology Hardware Storage & Peripherals Biamp,co_f605c2ca0cad,Other,Software & Technology,,,,,,,,,854,845,,854,,,,,,MFIC,2025-05-12
+Technology Hardware Storage & Peripherals BusPatrol Holdco,co_b3e664223ebb,Other,Software & Technology,,,,,,,,,8516,8534,,8516,,,,,,MFIC,2025-05-12
+Technology Hardware Storage & Peripherals,co_f605c2ca0cad,Other,Software & Technology,,,,,,,,,9370,9379,,9370,,,,,,MFIC,2025-05-12
+Textiles Apparel & Luxury Goods Sequential Brands Group,co_eeef34cf3aa7,Common Equity,Consumer & Retail,,,,,,,,,575,69,,575,,,,3060,,MFIC,2025-05-12
+Textiles Apparel & Luxury Goods Sequential Brands Group Inc.,co_eeef34cf3aa7,First Lien,Consumer & Retail,,6%,,,,,2025-05-28,204,184,204,,184,,,,,,MFIC,2025-05-12
+Textiles Apparel & Luxury Goods Sequential Brands Group Inc.,co_eeef34cf3aa7,Other,Consumer & Retail,,,,,,,,,19469,18762,,19469,,,,,,MFIC,2025-05-12
+Textiles Apparel & Luxury Goods,co_f0a9b77a0882,Other,Consumer & Retail,,,,,,,,,25330,24616,,25330,,,,,,MFIC,2025-05-12
+Trading Companies & Distributor Banner Solutions Banner Parent Holdings,co_64518f47b84e,Common Equity,Distribution & Wholesale,,,,,,,,,613,79,,613,,,,6125,,MFIC,2025-05-12
+Trading Companies & Distributor Banner Solutions,co_82682df5e590,Other,Distribution & Wholesale,,,,,,,,,15532,14495,,15532,,,,,,MFIC,2025-05-12
+Trading Companies & Distributor Meritus Gas Partners,co_d005c097b5cd,Other,Distribution & Wholesale,,,,,,,,,15203,15210,,15203,,,,,,MFIC,2025-05-12
+Trading Companies & Distributor ORS Nasco WC ORS Holdings,co_09db4e1494a3,Common Equity,Distribution & Wholesale,,,,,,,,,100,108,,100,,,,100000,,MFIC,2025-05-12
+Trading Companies & Distributor ORS Nasco,co_3781220ea746,Other,Distribution & Wholesale,,,,,,,,,28293,28247,,28293,,,,,,MFIC,2025-05-12
+Trading Companies & Distributors PSE Graffiti Parent,co_13ff7f815303,Common Equity,Distribution & Wholesale,,,,,,,,,244,235,,244,,,,2439,,MFIC,2025-05-12
+Trading Companies & Distributors PSE,co_3781220ea746,Other,Distribution & Wholesale,,,,,,,,,14999,14822,,14999,,,,,,MFIC,2025-05-12
+Trading Companies & Distributors,co_3781220ea746,Other,Distribution & Wholesale,,,,,,,,,74027,72774,,74027,,,,,,MFIC,2025-05-12
+Transportation Infrastructure,co_e019bae41388,Other,Transportation & Logistics,,,,,,,,,16063,16161,,16063,,,,,,MFIC,2025-05-12
+Global Eagle Anuvu Holdings 2 LLC,co_8aacd21ed50b,First Lien,Telecommunications,10%,,,,,,2027-09-27,5048,3844,4392,,3844,,,,,,MFIC,2025-05-12
+Global Eagle Anuvu Holdings 2 LLC,co_8aacd21ed50b,First Lien,Telecommunications,8.25%,,,,,,2026-03-23,4921,2221,1243,,2221,,,,,,MFIC,2025-05-12
+J.P. Morgan U.S. Government Money Market Fund,co_ff8f5d8dae7f,First Lien,Business Services,,,,,,,,149,149,149,,149,,,,,,MFIC,2025-05-12
+Goldman Sachs Financial Square Government Fund,co_4ac717b4acca,First Lien,Financial Services,,,,,,,,1704,1704,1704,,1704,,,,,,MFIC,2025-05-12
+Controlled Investments,co_9b906edac9fb,Other,Financial Services,,,,,,,,,326224,318571,22.87%,326224,,,,,,MFIC,2025-05-12
+Air Freight & Logistics,co_0a7ff58e6cc0,First Lien,Transportation & Logistics,,,,,,,,,24190,,,24190,,,,,,MFIC,2025-05-12
+Beverages,co_f88bf6b57df1,First Lien,Food & Beverage,,,,,,,,,5217,,,5217,,,,,,MFIC,2025-05-12
+Beverages,co_f88bf6b57df1,Common Equity,Food & Beverage,,,,,,,,,100,,,100,,,,,,MFIC,2025-05-12
+Building Products,co_f7d3864ee52f,First Lien,Industrials,,,,,,,,,20520,,,20520,,,,,,MFIC,2025-05-12
+Chemicals,co_894f6426dd9f,First Lien,Chemicals & Materials,,,,,,,,,34191,,,34191,,,,,,MFIC,2025-05-12
+Communications Equipment,co_6b882926ae43,First Lien,Telecommunications,,,,,,,,,21186,,,21186,,,,,,MFIC,2025-05-12
+Communications Equipment,co_6b882926ae43,Second Lien,Telecommunications,,,,,,,,,2912,,,2912,,,,,,MFIC,2025-05-12
+Communications Equipment,co_6b882926ae43,Common Equity,Telecommunications,,,,,,,,,108,,,108,,,,,,MFIC,2025-05-12
+Construction & Engineering,co_46b28439f2ae,First Lien,Industrials,,,,,,,,,145839,,,145839,,,,,,MFIC,2025-05-12
+Construction & Engineering,co_46b28439f2ae,Common Equity,Industrials,,,,,,,,,300,,,300,,,,,,MFIC,2025-05-12
+Consumer Staples Distribution & Retail,co_6b0cb2e23c2d,First Lien,Consumer & Retail,,,,,,,,,38396,,,38396,,,,,,MFIC,2025-05-12
+Consumer Staples Distribution & Retail,co_6b0cb2e23c2d,Common Equity,Consumer & Retail,,,,,,,,,169,,,169,,,,,,MFIC,2025-05-12
+Telecommunication Services,co_ba323416d4ad,First Lien,Diversified,,,,,,,,,1018,,,1018,,,,,,MFIC,2025-05-12
+Telecommunication Services,co_ba323416d4ad,Unsecured Debt,Diversified,,,,,,,,,1426,,,1426,,,,,,MFIC,2025-05-12
+Electric Utilities,co_9bc1c03fcf38,First Lien,Energy,,,,,,,,,4280,,,4280,,,,,,MFIC,2025-05-12
+Electrical Equipment,co_b1fc28ab48d5,First Lien,Industrials,,,,,,,,,15704,,,15704,,,,,,MFIC,2025-05-12
+Electronic Equipment Instruments & Components,co_83b608066c44,First Lien,Software & Technology,,,,,,,,,27926,,,27926,,,,,,MFIC,2025-05-12
+Electronic Equipment Instruments & Components,co_83b608066c44,Other,Software & Technology,,,,,,,,,27926,,,27926,,,,,,MFIC,2025-05-12
+Equipment & Services,co_7ed1d9222de9,First Lien,Energy,,,,,,,,,14488,,,14488,,,,,,MFIC,2025-05-12
+Entertainment,co_b34564f1c4cd,First Lien,Media & Entertainment,,,,,,,,,13129,,,13129,,,,,,MFIC,2025-05-12
+Food Products,co_7f08aeafcef6,First Lien,Food & Beverage,,,,,,,,,77080,,,77080,,,,,,MFIC,2025-05-12
+Food Products,co_7f08aeafcef6,Preferred Equity,Food & Beverage,,,,,,,,,459,,,459,,,,,,MFIC,2025-05-12
+Food Products,co_7f08aeafcef6,Common Equity,Food & Beverage,,,,,,,,,1775,,,1775,,,,,,MFIC,2025-05-12
+Ground Transportation,co_36ffa2e241fe,First Lien,Transportation & Logistics,,,,,,,,,91147,,,91147,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies,co_bd48c6dbbb9d,First Lien,Healthcare,,,,,,,,,116334,,,116334,,,,,,MFIC,2025-05-12
+Health Care Equipment & Supplies,co_bd48c6dbbb9d,Common Equity,Healthcare,,,,,,,,,1426,,,1426,,,,,,MFIC,2025-05-12
+Health Care Providers & Services,co_8a0eb83bbb44,First Lien,Healthcare,,,,,,,,,296301,,,296301,,,,,,MFIC,2025-05-12
+Health Care Providers & Services,co_8a0eb83bbb44,Preferred Equity,Healthcare,,,,,,,,,75,,,75,,,,,,MFIC,2025-05-12
+Health Care Providers & Services,co_8a0eb83bbb44,Common Equity,Healthcare,,,,,,,,,318,,,318,,,,,,MFIC,2025-05-12
+Health Care Technology,co_ff413c9acc5e,First Lien,Healthcare,,,,,,,,,36326,,,36326,,,,,,MFIC,2025-05-12
+Health Care Technology,co_ff413c9acc5e,Second Lien,Healthcare,,,,,,,,,152,,,152,,,,,,MFIC,2025-05-12
+Household Durables,co_44fdb39c0560,First Lien,Consumer & Retail,,,,,,,,,2215,,,2215,,,,,,MFIC,2025-05-12
+Independent Power & Renewable Electricity Producers,co_7721cc32eff4,First Lien,Energy,,,,,,,,,7231,,,7231,,,,,,MFIC,2025-05-12
+Independent Power & Renewable Electricity Producers,co_7721cc32eff4,Preferred Equity,Energy,,,,,,,,,5623,,,5623,,,,,,MFIC,2025-05-12
+Independent Power & Renewable Electricity Producers,co_7721cc32eff4,Common Equity,Energy,,,,,,,,,4,,,4,,,,,,MFIC,2025-05-12
+Independent Power & Renewable Electricity Producers,co_7721cc32eff4,Other,Energy,,,,,,,,,12858,,,12858,,,,,,MFIC,2025-05-12
+Interactive Media & Services,co_a961893af7c0,First Lien,Media & Entertainment,,,,,,,,,30194,,,30194,,,,,,MFIC,2025-05-12
+Interactive Media & Services,co_a961893af7c0,Second Lien,Media & Entertainment,,,,,,,,,7703,,,7703,,,,,,MFIC,2025-05-12
+IT Services,co_f26c1e205d65,First Lien,Software & Technology,,,,,,,,,94179,,,94179,,,,,,MFIC,2025-05-12
+IT Services,co_f26c1e205d65,Common Equity,Software & Technology,,,,,,,,,77,,,77,,,,,,MFIC,2025-05-12
+Non-Controlled / Non-Affiliated Investments Leisure Products,co_329de596db5b,First Lien,Healthcare,,,,,,,,,70854,70031,,70854,,,,,,MFIC,2025-05-12
+Non-Controlled / Non-Affiliated Investments Leisure Products,co_329de596db5b,Preferred Equity,Healthcare,,,,,,,,,492,275,,492,,,,,,MFIC,2025-05-12
+Non-Controlled / Non-Affiliated Investments Leisure Products,co_329de596db5b,Common Equity,Healthcare,,,,,,,,,94,108,,94,,,,,,MFIC,2025-05-12
+Non-Controlled / Non-Affiliated Investments,co_0a66ee258627,Other,Healthcare,,,,,,,,,71440,70414,5.05%,71440,,,,,,MFIC,2025-05-12
+Life Sciences Tools & Services,co_06b55850bd11,First Lien,Healthcare,,,,,,,,,41469,,,41469,,,,,,MFIC,2025-05-12
+Machinery,co_7cb194d9414f,First Lien,Industrials,,,,,,,,,39257,,,39257,,,,,,MFIC,2025-05-12
+Non-Controlled / Non-Affiliated Investments Media,co_0a66ee258627,First Lien,Media & Entertainment,,,,,,,,,42214,41494,,42214,,,,,,MFIC,2025-05-12
+Non-Controlled / Non-Affiliated Investments Media,co_0a66ee258627,Preferred Equity,Media & Entertainment,,,,,,,,,473,491,,473,,,,,,MFIC,2025-05-12
+Non-Controlled / Non-Affiliated Investments Media,co_0a66ee258627,Common Equity,Media & Entertainment,,,,,,,,,290,358,,290,,,,,,MFIC,2025-05-12
+Non-Controlled / Non-Affiliated Investments,co_0a66ee258627,Other,Media & Entertainment,,,,,,,,,42977,42343,3.04%,42977,,,,,,MFIC,2025-05-12
+Non-Controlled / Non-Affiliated Investments Personal Care Products,co_20041fa14db6,First Lien,Financial Services,,,,,,,,,46363,46742,,46363,,,,,,MFIC,2025-05-12
+Non-Controlled / Non-Affiliated Investments Personal Care Products,co_20041fa14db6,Common Equity,Financial Services,,,,,,,,,100,210,,100,,,,,,MFIC,2025-05-12
+Non-Controlled / Non-Affiliated Investments,co_0a66ee258627,Other,Consumer & Retail,,,,,,,,,46463,46952,3.37%,46463,,,,,,MFIC,2025-05-12
+Non-Controlled / Non-Affiliated Investments Pharmaceuticals,co_8f364472fe4b,First Lien,Healthcare,,,,,,,,,73724,74135,,73724,,,,,,MFIC,2025-05-12
+Non-Controlled / Non-Affiliated Investments Pharmaceuticals,co_8f364472fe4b,Unsecured Debt,Healthcare,,,,,,,,,21,21,,21,,,,,,MFIC,2025-05-12
+Non-Controlled / Non-Affiliated Investments Pharmaceuticals,co_8f364472fe4b,Preferred Equity,Healthcare,,,,,,,,,215,226,,215,,,,,,MFIC,2025-05-12
+Non-Controlled / Non-Affiliated Investments Pharmaceuticals,co_8f364472fe4b,Common Equity,Healthcare,,,,,,,,,212,223,,212,,,,,,MFIC,2025-05-12
+Non-Controlled / Non-Affiliated Investments,co_0a66ee258627,Other,Healthcare,,,,,,,,,74172,74605,5.35%,74172,,,,,,MFIC,2025-05-12
+Management & Development,co_09360e06b9a5,First Lien,Real Estate,,,,,,,,,6777,,,6777,,,,,,MFIC,2025-05-12
+Non-Controlled / Non-Affiliated Investments Semiconductors & Semiconductor Equipment,co_bddea4923e3b,First Lien,,,,,,,,,,10720,11044,,10720,,,,,,MFIC,2025-05-12
+Non-Controlled / Non-Affiliated Investments,co_0a66ee258627,Other,Software & Technology,,,,,,,,,10720,11044,0.79%,10720,,,,,,MFIC,2025-05-12
+Software,co_35390f5453e8,First Lien,Software & Technology,,,,,,,,,330750,,,330750,,,,,,MFIC,2025-05-12
+Software,co_35390f5453e8,Second Lien,Software & Technology,,,,,,,,,4216,,,4216,,,,,,MFIC,2025-05-12
+Software,co_35390f5453e8,Common Equity,Software & Technology,,,,,,,,,669,,,669,,,,,,MFIC,2025-05-12
+Software,co_35390f5453e8,Other,Software & Technology,,,,,,,,,335635,,,335635,,,,,,MFIC,2025-05-12
+Non-Controlled / Non-Affiliated Investments Specialty Retail,co_772bbfe20f86,First Lien,Financial Services,,,,,,,,,25273,25492,,25273,,,,,,MFIC,2025-05-12
+Non-Controlled / Non-Affiliated Investments Specialty Retail,co_772bbfe20f86,Unsecured Debt,Financial Services,,,,,,,,,1961,1843,,1961,,,,,,MFIC,2025-05-12
+Non-Controlled / Non-Affiliated Investments,co_0a66ee258627,Other,Consumer & Retail,,,,,,,,,27234,27335,1.96%,27234,,,,,,MFIC,2025-05-12
+Technology Hardware Storage & Peripherals,co_f605c2ca0cad,First Lien,Software & Technology,,,,,,,,,9370,,,9370,,,,,,MFIC,2025-05-12
+Technology Hardware Storage & Peripherals,co_f605c2ca0cad,Other,Software & Technology,,,,,,,,,9370,,,9370,,,,,,MFIC,2025-05-12
+Textiles Apparel & Luxury Goods,co_f0a9b77a0882,First Lien,Consumer & Retail,,,,,,,,,24755,,,24755,,,,,,MFIC,2025-05-12
+Textiles Apparel & Luxury Goods,co_f0a9b77a0882,Common Equity,Consumer & Retail,,,,,,,,,575,,,575,,,,,,MFIC,2025-05-12
+Textiles Apparel & Luxury Goods,co_f0a9b77a0882,Other,Consumer & Retail,,,,,,,,,25330,,,25330,,,,,,MFIC,2025-05-12
+Trading Companies & Distributors,co_3781220ea746,First Lien,Distribution & Wholesale,,,,,,,,,73070,,,73070,,,,,,MFIC,2025-05-12
+Trading Companies & Distributors,co_3781220ea746,Common Equity,Distribution & Wholesale,,,,,,,,,957,,,957,,,,,,MFIC,2025-05-12
+Transportation Infrastructure,co_e019bae41388,First Lien,Transportation & Logistics,,,,,,,,,16063,,,16063,,,,,,MFIC,2025-05-12
+Total Non-Controlled/Non-Affiliated Investments,co_33d20c37c51c,First Lien,,,,,,,,,,2748443,,,2748443,,,,,,MFIC,2025-05-12
+Total Non-Controlled/Non-Affiliated Investments,co_33d20c37c51c,Second Lien,,,,,,,,,,14983,,,14983,,,,,,MFIC,2025-05-12
+Total Non-Controlled/Non-Affiliated Investments,co_33d20c37c51c,Unsecured Debt,,,,,,,,,,6080,,,6080,,,,,,MFIC,2025-05-12
+Total Non-Controlled/Non-Affiliated Investments Structured Products and Other,co_be4ff9345d4c,Other,,,,,,,,,,15026,,,15026,,,,,,MFIC,2025-05-12
+Total Non-Controlled/Non-Affiliated Investments,co_33d20c37c51c,Preferred Equity,,,,,,,,,,8204,,,8204,,,,,,MFIC,2025-05-12
+Total Non-Controlled/Non-Affiliated Investments,co_33d20c37c51c,Common Equity,,,,,,,,,,61789,,,61789,,,,,,MFIC,2025-05-12
+Total Non-Controlled/Non-Affiliated Investments,co_33d20c37c51c,Warrants,,,,,,,,,,965,,,965,,,,,,MFIC,2025-05-12
+Total Non-Controlled/Non-Affiliated Investments,co_33d20c37c51c,Other,,,,,,,,,,2855490,,,2855490,,,,,,MFIC,2025-05-12
+Non-Controlled / Affiliated Investments Chemicals,co_79f099fe9c42,First Lien,Chemicals & Materials,,,,,,,,,12500,,,12500,,,,,,MFIC,2025-05-12
+Non-Controlled / Affiliated Investments Chemicals,co_79f099fe9c42,Common Equity,Chemicals & Materials,,,,,,,,,56505,,,56505,,,,,,MFIC,2025-05-12
+Non-Controlled / Affiliated Investments,co_79f099fe9c42,Other,Chemicals & Materials,,,,,,,,,69005,,,69005,,,,,,MFIC,2025-05-12
+Non-Controlled / Affiliated Investments Electronic Equipment Instruments & Components First Lien - Secured Debt,co_1d6e2387a73d,Preferred Equity,,,,,,,,,,31084,,,31084,,,,,,MFIC,2025-05-12
+Non-Controlled / Affiliated Investments Electronic Equipment Instruments & Components,co_1c346b823331,Preferred Equity,,,,,,,,,,1713,,,1713,,,,,,MFIC,2025-05-12
+Non-Controlled / Affiliated Investments Electronic Equipment Instruments & Components,co_1c346b823331,Other,,,,,,,,,,32797,,,32797,,,,,,MFIC,2025-05-12
+Non-Controlled / Affiliated Investments,co_79f099fe9c42,Other,Financial Services,,,,,,,,,36465,,,36465,,,,,,MFIC,2025-05-12
+Non-Controlled / Affiliated Investments Ground Transportation,co_0612ac720d49,First Lien,Transportation & Logistics,,,,,,,,,22421,,,22421,,,,,,MFIC,2025-05-12
+Non-Controlled / Affiliated Investments Ground Transportation,co_0612ac720d49,Common Equity,Transportation & Logistics,,,,,,,,,722,,,722,,,,,,MFIC,2025-05-12
+Non-Controlled / Affiliated Investments,co_79f099fe9c42,Other,Transportation & Logistics,,,,,,,,,23143,,,23143,,,,,,MFIC,2025-05-12
+Non-Controlled / Affiliated Investments Hotels Restaurants & Leisure,co_07b3cd792b66,First Lien,Food & Beverage,,,,,,,,,8913,,,8913,,,,,,MFIC,2025-05-12
+Non-Controlled / Affiliated Investments Hotels Restaurants & Leisure,co_07b3cd792b66,Common Equity,Food & Beverage,,,,,,,,,4740,,,4740,,,,,,MFIC,2025-05-12
+Non-Controlled / Affiliated Investments Hotels Restaurants & Leisure,co_07b3cd792b66,Other,Food & Beverage,,,,,,,,,13653,,,13653,,,,,,MFIC,2025-05-12
+Non-Controlled / Affiliated Investments Leisure Products,co_74170672b3f2,Common Equity,Healthcare,,,,,,,,,1000,,,1000,,,,,,MFIC,2025-05-12
+Non-Controlled / Affiliated Investments,co_79f099fe9c42,Other,Healthcare,,,,,,,,,1000,,,1000,,,,,,MFIC,2025-05-12
+Non-Controlled / Affiliated Investments,co_79f099fe9c42,First Lien,Financial Services,,,,,,,,,74918,,,74918,,,,,,MFIC,2025-05-12
+Non-Controlled / Affiliated Investments Structured Products and Other,co_835c00cd74fd,Other,Financial Services,,,,,,,,,36465,,,36465,,,,,,MFIC,2025-05-12
+Non-Controlled / Affiliated Investments,co_79f099fe9c42,Preferred Equity,Financial Services,,,,,,,,,1713,,,1713,,,,,,MFIC,2025-05-12
+Non-Controlled / Affiliated Investments,co_79f099fe9c42,Common Equity,Financial Services,,,,,,,,,62967,,,62967,,,,,,MFIC,2025-05-12
+Non-Controlled / Affiliated Investments,co_79f099fe9c42,Other,Financial Services,,,,,,,,,176063,,,176063,,,,,,MFIC,2025-05-12
+Controlled Investments Passenger Airlines,co_eae5e55504a2,First Lien,Transportation & Logistics,,,,,,,,,59575,59575,,59575,,,,,,MFIC,2025-05-12
+Controlled Investments Passenger Airlines,co_eae5e55504a2,Common Equity,Transportation & Logistics,,,,,,,,,146500,125582,,146500,,,,,,MFIC,2025-05-12
+Controlled Investments,co_9b906edac9fb,Other,Transportation & Logistics,,,,,,,,,206075,185157,13.29%,206075,,,,,,MFIC,2025-05-12
+Controlled Investments Software,co_c9fd159b1fad,First Lien,Financial Services,,,,,,,,,114149,114374,,114149,,,,,,MFIC,2025-05-12
+Controlled Investments Software,co_c9fd159b1fad,Preferred Equity,Financial Services,,,,,,,,,6000,19040,,6000,,,,,,MFIC,2025-05-12
+Controlled Investments Software,co_c9fd159b1fad,Other,Financial Services,,,,,,,,,120149,133414,9.58%,120149,,,,,,MFIC,2025-05-12
+Controlled Investments,co_9b906edac9fb,First Lien,Financial Services,,,,,,,,,173724,173949,12.49%,173724,,,,,,MFIC,2025-05-12
+Controlled Investments,co_9b906edac9fb,Preferred Equity,Financial Services,,,,,,,,,6000,19040,1.37%,6000,,,,,,MFIC,2025-05-12
+Controlled Investments,co_9b906edac9fb,Common Equity,Financial Services,,,,,,,,,146500,125582,9.01%,146500,,,,,,MFIC,2025-05-12
+Secured Debt,co_a1e19d2d9a1c,Other,,,,,,,,,,2997085,2954954,2.12%,2997085,,,,,,MFIC,2025-05-12
+Secured Debt,co_a1e19d2d9a1c,Other,,,,,,,,,,14983,8345,0.6%,14983,,,,,,MFIC,2025-05-12
+Unsecured Debt,co_91c7fe56e58c,Other,Business Services,,,,,,,,,6080,3409,0.24%,6080,,,,,,MFIC,2025-05-12
+Structured Products and Other,co_4898db2d76d6,Other,Financial Services,,,,,,,,,51491,38385,2.76%,51491,,,,,,MFIC,2025-05-12
+Preferred Equity,co_b80c2a27176c,Other,Telecommunications,,,,,,,,,15917,23664,1.7%,15917,,,,,type_hint_pref_equity_from_name,MFIC,2025-05-12
+Common Equity/Interests,co_9ea787de2d21,Other,,,,,,,,,,271256,159649,11.46%,271256,,,,,,MFIC,2025-05-12
+Warrants,co_6c4309c341e9,Other,Telecommunications,,,,,,,,,965,215,0.02%,965,,,,,,MFIC,2025-05-12
+Ground Transportation Bird Rides Third Lane Mobility Inc.,co_b510e97419af,First Lien,Transportation & Logistics,,,,,,,,533,,14,,,,,,,,MFIC,2025-05-12
+Global Eagle Anuvu Corp.,co_da4f7ad1cd3f,Other Equity,Telecommunications,,,,,,,,,,,,,,,,211026,,MFIC,2025-05-12
+1244311 B.C. Ltd.,co_5e8acebeccc9,Common Equity,,,,,,,,,,,209,,,,,,,,MFIC,2025-05-12
+Carbonfree Chemicals Holdings LLC,co_a4849f34bcae,Common Equity,Chemicals & Materials,,,,,,,,,,18824,,,,,,,,MFIC,2025-05-12
+FC2 LLC,co_14b74afc7cf6,First Lien,,,,,,,,,,,12463,,,,,,,,MFIC,2025-05-12
+Golden Bear 2016-R LLC,co_9893d378e574,Other Equity,,,,,,,,,,,8854,,,,,,,,MFIC,2025-05-12
+Surf Opco LLC,co_3204b3488f3f,Other Equity,,,,,,,,,,,95,,,,,,,,MFIC,2025-05-12
+Surf Opco LLC,co_3204b3488f3f,Preferred Equity,,,,,,,,,,,2633,,,,,,,,MFIC,2025-05-12
+Surf Opco LLC,co_3204b3488f3f,Revolver,,,,,,,,,,,16381,,,,,,,,MFIC,2025-05-12
+Surf Opco LLC,co_3204b3488f3f,First Lien,,,,,,,,,,,9581,,,,,,,,MFIC,2025-05-12
+Auto Pool 2023 Trust,co_c2473e90a31c,Other Equity,,,,,,,,,,,14638,,,,,,,,MFIC,2025-05-12
+Blue Jay Transit Inc.,co_8501eaced5bb,First Lien,,,,,,,,,,,22668,,,,,,,,MFIC,2025-05-12
+Bird Scooter Acquisition Corp.,co_e3782a299b39,Common Equity,,,,,,,,,,,373,,,,,,,,MFIC,2025-05-12
+Arrivia Inc.,co_144d59d6db6f,Other Equity,,,,,,,,,,,2187,,,,,,,,MFIC,2025-05-12
+Arrivia Inc.,co_144d59d6db6f,First Lien,,,,,,,,,,,4030,,,,,,,,MFIC,2025-05-12
+Third Lane Mobility Inc.,co_147ca3cf3b8d,Common Equity,,,,,,,,,,,714,,,,,,,,MFIC,2025-05-12
+Third Lane Mobility Inc.,co_147ca3cf3b8d,Warrants,,,,,,,,,,,14,,,,,,,,MFIC,2025-05-12
+Affiliated Investments,co_c0c5ecf816d6,Other,Financial Services,,,,,,,,,,113290,,,,,,,,MFIC,2025-05-12
+Controlled Investments ChyronHego US Holding Corp.,co_1824939ac8fd,Revolver,Financial Services,,,,,,,,,,7967,,,,,,,,MFIC,2025-05-12
+Controlled Investments ChyronHego US Holding Corp.,co_1824939ac8fd,First Lien,Financial Services,,,,,,,,,,106406,,,,,,,,MFIC,2025-05-12
+Controlled Investments ChyronHego Corp.,co_09adfe7fff4b,Preferred Equity,Financial Services,,,,,,,,,,19040,,,,,,,,MFIC,2025-05-12
+Controlled Investments Merx Aviation Finance LLC,co_2e0512feabbc,Other Equity,Transportation & Logistics,,,,,,,,,,125582,,,,,,,,MFIC,2025-05-12
+Controlled Investments Merx Aviation Finance LLC,co_2e0512feabbc,Revolver,Transportation & Logistics,,,,,,,,,,59575,,,,,,,,MFIC,2025-05-12
+ACP Avenu Buyer LLC,co_9fe52fbfe5fb,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+ACP Avenu Buyer LLC,co_9fe52fbfe5fb,Other,,,,,,,,,,,,,,3832000,,,,,MFIC,2025-05-12
+AGDATA Midco LLC,co_50ffd58991ca,Other,Business Services,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+AGDATA Midco LLC,co_50ffd58991ca,Other,Business Services,,,,,,,,,,,,,2334000,,,,,MFIC,2025-05-12
+AMI US Holdings Inc.,co_fea4506bda99,Other,Containers & Packaging,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+AMI US Holdings Inc.,co_fea4506bda99,Other,Containers & Packaging,,,,,,,,,,,,,1585000,,,,,MFIC,2025-05-12
+Accelerate360 Holdings LLC,co_e30338613c8c,Other,Media & Entertainment,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Accelerate360 Holdings LLC,co_e30338613c8c,Other,Media & Entertainment,,,,,,,,,,,,,1162000,,,,,MFIC,2025-05-12
+Accelevation LLC,co_325343c253f0,Other,Business Services,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Accelevation LLC,co_325343c253f0,Other,Business Services,,,,,,,,,,,,,5483000,,,,,MFIC,2025-05-12
+Acentra Holdings LLC,co_3b04d7d24463,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Acentra Holdings LLC,co_3b04d7d24463,Other,,,,,,,,,,,,,,1467000,,,,,MFIC,2025-05-12
+Alcami Corp.,co_2b4b89a1fbb7,Other,Healthcare,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Alcami Corp.,co_2b4b89a1fbb7,Other,Healthcare,,,,,,,,,,,,,1014000,,,,,MFIC,2025-05-12
+Alcresta Therapeutics Inc.,co_5d98b8313fdb,Other,Healthcare,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Alcresta Therapeutics Inc.,co_5d98b8313fdb,Other,Healthcare,,,,,,,,,,,,,7529000,,,,,MFIC,2025-05-12
+All Star Recruiting Locums LLC,co_324b3cec436d,Other,Business Services,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+All Star Recruiting Locums LLC,co_324b3cec436d,Other,Business Services,,,,,,,,,,,,,2717000,,,,,MFIC,2025-05-12
+Alpinex Opco LLC,co_073e688e0aa8,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Alpinex Opco LLC,co_073e688e0aa8,Other,,,,,,,,,,,,,,387000,,,,,MFIC,2025-05-12
+American Restoration Holdings LLC,co_bd5a5e73d4f3,Other,Consumer & Retail,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+American Restoration Holdings LLC,co_bd5a5e73d4f3,Other,Consumer & Retail,,,,,,,,,,,,,10829000,,,,,MFIC,2025-05-12
+Anaplan Inc.,co_0f6b3874fa95,Other,Software & Technology,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Anaplan Inc.,co_0f6b3874fa95,Other,Software & Technology,,,,,,,,,,,,,699000,,,,,MFIC,2025-05-12
+Aspen Aerogels Inc.,co_7cd20ba14f00,Other,Chemicals & Materials,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Aspen Aerogels Inc.,co_7cd20ba14f00,Other,Chemicals & Materials,,,,,,,,,,,,,63000,,,,,MFIC,2025-05-12
+Athlete Buyer LLC,co_a9e67690457e,Other,Industrials,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Athlete Buyer LLC,co_a9e67690457e,Other,Industrials,,,,,,,,,,,,,214000,,,,,MFIC,2025-05-12
+Athlete Buyer LLC,co_a9e67690457e,Other,Industrials,,,,,,,,,,,,,1992000,,,,,MFIC,2025-05-12
+August Bioservices LLC,co_fde9e144fe7f,Other,Business Services,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+August Bioservices LLC,co_fde9e144fe7f,Other,Business Services,,,,,,,,,,,,,500000,,,,,MFIC,2025-05-12
+Banner Buyer LLC,co_755c685bc95f,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Banner Buyer LLC,co_755c685bc95f,Other,,,,,,,,,,,,,,1932000,,,,,MFIC,2025-05-12
+Beacon Mobility Corp.,co_7589a4c35ccd,Other,Transportation & Logistics,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Beacon Mobility Corp.,co_7589a4c35ccd,Other,Transportation & Logistics,,,,,,,,,,,,,4942000,,,,,MFIC,2025-05-12
+Beacon Mobility Corp.,co_7589a4c35ccd,Other,Transportation & Logistics,,,,,,,,,,,,,53423000,,,,,MFIC,2025-05-12
+Berner Food & Beverage LLC,co_85b036ad8ea6,Other,Food & Beverage,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Berner Food & Beverage LLC,co_85b036ad8ea6,Other,Food & Beverage,,,,,,,,,,,,,2074000,,,,,MFIC,2025-05-12
+Biamp,co_b8ee82368600,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Biamp Letters of Credit,co_4b7b3c9c1ca0,Other,,,,,,,,,,,,,,4000,,,,,MFIC,2025-05-12
+Biamp,co_b8ee82368600,Other,,,,,,,,,,,,,,116000,,,,,MFIC,2025-05-12
+Bingo Group Buyer Inc.,co_ff1d47ff17be,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Bingo Group Buyer Inc.,co_ff1d47ff17be,Other,,,,,,,,,,,,,,2948000,,,,,MFIC,2025-05-12
+Bullcave Ltd.,co_3bc43c502ab7,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Bullcave Ltd.,co_3bc43c502ab7,Other,,,,,,,,,,,,,,2579000,,,,,MFIC,2025-05-12
+BusPatrol Holdco,co_b9668b192bc4,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+BusPatrol Holdco,co_b9668b192bc4,Other,,,,,,,,,,,,,,4533000,,,,,MFIC,2025-05-12
+CI (MG) GROUP LLC,co_f413168a9d07,Other,Business Services,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+CI (MG) GROUP LLC,co_f413168a9d07,Other,Business Services,,,,,,,,,,,,,11027000,,,,,MFIC,2025-05-12
+CRS Holdings Inc.,co_51eb2b849fe7,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+CRS Holdings Inc.,co_51eb2b849fe7,Other,,,,,,,,,,,,,,125000,,,,,MFIC,2025-05-12
+CRS Holdings Inc.,co_51eb2b849fe7,Other,,,,,,,,,,,,,,7875000,,,,,MFIC,2025-05-12
+CSC Holdings LLC,co_086a0b53c251,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+CSC Holdings LLC,co_086a0b53c251,Other,,,,,,,,,,,,,,19000,,,,,MFIC,2025-05-12
+Camin Cargo Control Holdings Inc.,co_4ff76fec972f,Other,Transportation & Logistics,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Camin Cargo Control Holdings Inc.,co_4ff76fec972f,Other,Transportation & Logistics,,,,,,,,,,,,,3237000,,,,,MFIC,2025-05-12
+Cave Enterprises Operations LLC,co_6921769d8f37,Other,Healthcare,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Cave Enterprises Operations LLC,co_6921769d8f37,Other,Healthcare,,,,,,,,,,,,,1333000,,,,,MFIC,2025-05-12
+Celerion Buyer Inc.,co_0e76b09dfb77,Other,Healthcare,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Celerion Buyer Inc.,co_0e76b09dfb77,Other,Healthcare,,,,,,,,,,,,,1918000,,,,,MFIC,2025-05-12
+Cerus Corp.,co_63c0117f6e6b,Other,Automotive,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Cerus Corp.,co_63c0117f6e6b,Other,Automotive,,,,,,,,,,,,,3903000,,,,,MFIC,2025-05-12
+Channelside AcquisitionCo Inc.,co_f18a29906d7e,Other,Transportation & Logistics,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Channelside AcquisitionCo Inc.,co_f18a29906d7e,Other,Transportation & Logistics,,,,,,,,,,,,,117000,,,,,MFIC,2025-05-12
+Channelside AcquisitionCo Inc.,co_f18a29906d7e,Other,Transportation & Logistics,,,,,,,,,,,,,279000,,,,,MFIC,2025-05-12
+ChyronHego US Holding Corp.,co_0c164d524e9f,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+ChyronHego US Holding Corp.,co_0c164d524e9f,Other,,,,,,,,,,,,,,1633000,,,,,MFIC,2025-05-12
+ChyronHego US Holding Corp.,co_0c164d524e9f,Other,,,,,,,,,,,,,,13033000,,,,,MFIC,2025-05-12
+CircusTrix Holdings LLC,co_0da73172bca3,Other,Food & Beverage,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+CircusTrix Holdings LLC,co_0da73172bca3,Other,Food & Beverage,,,,,,,,,,,,,600000,,,,,MFIC,2025-05-12
+Club Car Wash Operating LLC,co_edf8f5fdd1e5,Other,Automotive,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Club Car Wash Operating LLC,co_edf8f5fdd1e5,Other,Automotive,,,,,,,,,,,,,4250000,,,,,MFIC,2025-05-12
+Club Champion LLC,co_0489593469b8,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Club Champion LLC,co_0489593469b8,Other,,,,,,,,,,,,,,1144000,,,,,MFIC,2025-05-12
+Colonnade Parent Inc.,co_48261a2214c5,Other,Media & Entertainment,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Cool Buyer Inc.,co_74dc5d905674,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Cool Buyer Inc.,co_74dc5d905674,Other,,,,,,,,,,,,,,240000,,,,,MFIC,2025-05-12
+Cool Buyer Inc.,co_74dc5d905674,Other,,,,,,,,,,,,,,5518000,,,,,MFIC,2025-05-12
+Coretrust Purchasing Group LLC,co_aa2951371aee,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Coretrust Purchasing Group LLC,co_aa2951371aee,Other,,,,,,,,,,,,,,1805000,,,,,MFIC,2025-05-12
+Crewline Buyer Inc.,co_04efa4bb1c45,Other,Software & Technology,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Crewline Buyer Inc.,co_04efa4bb1c45,Other,Software & Technology,,,,,,,,,,,,,377000,,,,,MFIC,2025-05-12
+DCM Parent LLC,co_6024b8e7eac1,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+DCM Parent LLC,co_6024b8e7eac1,Other,,,,,,,,,,,,,,2326000,,,,,MFIC,2025-05-12
+DRS Holdings III Inc.,co_289579b00316,Other,Consumer & Retail,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+DRS Holdings III Inc.,co_289579b00316,Other,Consumer & Retail,,,,,,,,,,,,,1483000,,,,,MFIC,2025-05-12
+Digital.ai Software Holdings Inc.,co_b05e34453772,Other,Software & Technology,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Digital.ai Software Holdings Inc.,co_b05e34453772,Other,Software & Technology,,,,,,,,,,,,,2419000,,,,,MFIC,2025-05-12
+Distinct Holdings Inc.,co_ae35540c353a,Other,Software & Technology,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Distinct Holdings Inc.,co_ae35540c353a,Other,Software & Technology,,,,,,,,,,,,,1319000,,,,,MFIC,2025-05-12
+Eagle Purchaser Inc.,co_aa1c62d8fd8b,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Eagle Purchaser Inc.,co_aa1c62d8fd8b,Other,,,,,,,,,,,,,,0,,,,,MFIC,2025-05-12
+Eldrickco Limited*,co_291cc45264a2,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Eldrickco Limited*,co_291cc45264a2,Other,,,,,,,,,,,,,,446000,,,,,MFIC,2025-05-12
+EmpiRx Health LLC,co_9217fb7cef4f,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+EmpiRx Health LLC,co_9217fb7cef4f,Other,,,,,,,,,,,,,,227000,,,,,MFIC,2025-05-12
+EmpiRx Health LLC,co_9217fb7cef4f,Other,,,,,,,,,,,,,,682000,,,,,MFIC,2025-05-12
+Evergreen IX Borrower 2023 LLC,co_b818c8cf1a35,Other,Software & Technology,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Evergreen IX Borrower 2023,co_b818c8cf1a35,Other,Software & Technology,,,,,,,,,,,,,795000,,,,,MFIC,2025-05-12
+Evoriel*,co_e3b59fb7b9b2,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Evoriel* Undrawn Commitment,co_bb32eb128b57,Other,,,,,,,,,,,,,,847000,,,,,MFIC,2025-05-12
+ExactCare Parent Inc.,co_5a8c554476a5,Other,Healthcare,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+ExactCare Parent Inc.,co_5a8c554476a5,Other,Healthcare,,,,,,,,,,,,,1967000,,,,,MFIC,2025-05-12
+Excelligence Learning Corp.,co_5150498b1d5b,Other,Education,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Excelligence Learning Corp.,co_5150498b1d5b,Other,Education,,,,,,,,,,,,,223000,,,,,MFIC,2025-05-12
+Excelligence Learning Corp.,co_5150498b1d5b,Other,Education,,,,,,,,,,,,,887000,,,,,MFIC,2025-05-12
+F&M Buyer LLC,co_36b61dea8d03,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+F&M Buyer LLC,co_36b61dea8d03,Other,,,,,,,,,,,,,,8099000,,,,,MFIC,2025-05-12
+Four Winds Interactive LLC,co_7e47f390f824,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Four Winds Interactive LLC,co_7e47f390f824,Other,,,,,,,,,,,,,,5000,,,,,MFIC,2025-05-12
+Four Winds Interactive LLC,co_7e47f390f824,Other,,,,,,,,,,,,,,2434000,,,,,MFIC,2025-05-12
+G Treasury SS LLC,co_98fef670d4cb,Other,Financial Services,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+G Treasury SS LLC,co_98fef670d4cb,Other,Financial Services,,,,,,,,,,,,,1617000,,,,,MFIC,2025-05-12
+G&A Partners Holding Company II LLC,co_9855682a0863,Other,Business Services,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+G&A Partners Holding Company II LLC,co_9855682a0863,Other,Business Services,,,,,,,,,,,,,4966000,,,,,MFIC,2025-05-12
+GAT-Airline Ground Support Inc.,co_208cbd8f5d37,Other,Transportation & Logistics,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+GAT-Airline Ground Support Inc.,co_208cbd8f5d37,Other,Transportation & Logistics,,,,,,,,,,,,,22000,,,,,MFIC,2025-05-12
+GAT-Airline Ground Support Inc.,co_208cbd8f5d37,Other,Transportation & Logistics,,,,,,,,,,,,,3550000,,,,,MFIC,2025-05-12
+GI Apple Midco LLC,co_866fb0366441,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+GI Apple Midco LLC,co_866fb0366441,Other,,,,,,,,,,,,,,41000,,,,,MFIC,2025-05-12
+GI Apple Midco LLC,co_866fb0366441,Other,,,,,,,,,,,,,,904000,,,,,MFIC,2025-05-12
+GS SEER Group Borrower LLC,co_ac21851eda85,Other,Transportation & Logistics,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+GS SEER Group Borrower LLC,co_ac21851eda85,Other,Transportation & Logistics,,,,,,,,,,,,,786000,,,,,MFIC,2025-05-12
+Gabriel Partners LLC,co_9be7e9dc1db7,Other,Business Services,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Gabriel Partners LLC,co_9be7e9dc1db7,Other,Business Services,,,,,,,,,,,,,1000,,,,,MFIC,2025-05-12
+Gateway US Holdings Inc.,co_ceaaa19b2502,Other,Healthcare,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Gateway US Holdings,co_ceaaa19b2502,Other,Healthcare,,,,,,,,,,,,,1416000,,,,,MFIC,2025-05-12
+Generator Buyer Inc.*,co_fd8aa44e3fb0,Other,Transportation & Logistics,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Generator Buyer Inc.* Letters of Credit,co_c0f24a5361fe,Other,,,,,,,,,,,,,,39000,,,,,MFIC,2025-05-12
+Generator Buyer Inc.*,co_fd8aa44e3fb0,Other,Transportation & Logistics,,,,,,,,,,,,,3321000,,,,,MFIC,2025-05-12
+Genius Bidco LLC,co_31d47580e70c,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Genius Bidco LLC,co_31d47580e70c,Other,,,,,,,,,,,,,,77000,,,,,MFIC,2025-05-12
+Genius Bidco LLC,co_31d47580e70c,Other,,,,,,,,,,,,,,5928000,,,,,MFIC,2025-05-12
+Go Car Wash Management Corp.,co_a488cda67850,Other,Automotive,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Go Car Wash Management Corp.,co_a488cda67850,Other,Automotive,,,,,,,,,,,,,417000,,,,,MFIC,2025-05-12
+Graffiti Buyer Inc.,co_b0fb16f6bd35,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Graffiti Buyer Inc.,co_b0fb16f6bd35,Other,,,,,,,,,,,,,,4537000,,,,,MFIC,2025-05-12
+Green Grass Foods Inc.,co_c42fc3489bd9,Other,Food & Beverage,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Green Grass Foods Inc.,co_c42fc3489bd9,Other,Food & Beverage,,,,,,,,,,,,,1250000,,,,,MFIC,2025-05-12
+Guernsey Holdings SDI LA LLC,co_3680a1cb8e81,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Guernsey Holdings SDI LA LLC,co_3680a1cb8e81,Other,,,,,,,,,,,,,,1167000,,,,,MFIC,2025-05-12
+HALO Buyer Inc.,co_3dc4ab81bc2a,Other,Business Services,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+HALO Buyer Inc.,co_3dc4ab81bc2a,Other,Business Services,,,,,,,,,,,,,4000,,,,,MFIC,2025-05-12
+HALO Buyer Inc.,co_3dc4ab81bc2a,Other,Business Services,,,,,,,,,,,,,1235000,,,,,MFIC,2025-05-12
+HEF Safety Ultimate Holdings LLC,co_83c8ec92c2b6,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+HEF Safety Ultimate Holdings LLC,co_83c8ec92c2b6,Other,,,,,,,,,,,,,,6790000,,,,,MFIC,2025-05-12
+HRO (Hero Digital) Holdings LLC,co_fd8958b4f866,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+HRO (Hero Digital) Holdings LLC,co_fd8958b4f866,Other,,,,,,,,,,,,,,31000,,,,,MFIC,2025-05-12
+HRO (Hero Digital) Holdings,co_fd8958b4f866,Other,,,,,,,,,,,,,,3000,,,,,MFIC,2025-05-12
+Health Management Associates Superholdings Inc.,co_b31df0a69f51,Other,Business Services,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Health Management Associates Superholdings Inc.,co_b31df0a69f51,Other,Business Services,,,,,,,,,,,,,5000,,,,,MFIC,2025-05-12
+Health Management Associates Superholdings,co_b31df0a69f51,Other,Business Services,,,,,,,,,,,,,358000,,,,,MFIC,2025-05-12
+Heniff Holdco LLC,co_54bf7be32281,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Heniff Holdco LLC,co_54bf7be32281,Other,,,,,,,,,,,,,,164000,,,,,MFIC,2025-05-12
+Heniff Holdco,co_54bf7be32281,Other,,,,,,,,,,,,,,392000,,,,,MFIC,2025-05-12
+Heritage Environmental Services Inc.,co_1c64f1d083a9,Other,Environmental Services,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Heritage Environmental Services Inc.,co_1c64f1d083a9,Other,Environmental Services,,,,,,,,,,,,,4000,,,,,MFIC,2025-05-12
+Heritage Environmental Services Inc.,co_1c64f1d083a9,Other,Environmental Services,,,,,,,,,,,,,238000,,,,,MFIC,2025-05-12
+High Street Buyer Inc.,co_bfe298fdc01f,Other,Transportation & Logistics,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+High Street Buyer,co_bfe298fdc01f,Other,Transportation & Logistics,,,,,,,,,,,,,2203000,,,,,MFIC,2025-05-12
+Hive Intermediate LLC,co_a3cea6768466,Other,Media & Entertainment,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Hive Intermediate,co_a3cea6768466,Other,Media & Entertainment,,,,,,,,,,,,,1483000,,,,,MFIC,2025-05-12
+HomeRenew Buyer Inc.,co_8fe9d51365e0,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+IOTA HOLDINGS 3,co_5f85fefe56f5,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+IOTA HOLDINGS 3,co_5f85fefe56f5,Other,,,,,,,,,,,,,,4757000,,,,,MFIC,2025-05-12
+IQN Holding Corp.,co_035ad4a474bc,Other,Software & Technology,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+IQN Holding Corp.,co_035ad4a474bc,Other,Software & Technology,,,,,,,,,,,,,139000,,,,,MFIC,2025-05-12
+IW Buyer LLC,co_b041b182b56f,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+IW Buyer LLC,co_b041b182b56f,Other,,,,,,,,,,,,,,9000,,,,,MFIC,2025-05-12
+IW Buyer LLC,co_b041b182b56f,Other,,,,,,,,,,,,,,384000,,,,,MFIC,2025-05-12
+Ironhorse Purchaser LLC,co_d7a2d2de9f59,Other,Business Services,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Ironhorse Purchaser LLC,co_d7a2d2de9f59,Other,Business Services,,,,,,,,,,,,,15000,,,,,MFIC,2025-05-12
+Ironhorse Purchaser,co_d7a2d2de9f59,Other,Business Services,,,,,,,,,,,,,1845000,,,,,MFIC,2025-05-12
+JF Acquisition LLC,co_976e3f730ef0,Other,Automotive,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+JF Acquisition,co_976e3f730ef0,Other,Automotive,,,,,,,,,,,,,690000,,,,,MFIC,2025-05-12
+Jacent Strategic Merchandising,co_e494c8fb4181,Other,Business Services,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Jacent Strategic Merchandising Undrawn Commitment,co_0a113b559ce7,Other,,,,,,,,,,,,,,1936000,,,,,MFIC,2025-05-12
+KL Charlie Acquisition Company,co_aff4d9b8a349,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+KL Charlie Acquisition Company Undrawn Commitment,co_da56f01f6bbc,Other,,,,,,,,,,,,,,8612000,,,,,MFIC,2025-05-12
+Kauffman Intermediate LLC,co_3c4b37ef254f,Other,Media & Entertainment,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Kauffman Intermediate,co_3c4b37ef254f,Other,Media & Entertainment,,,,,,,,,,,,,8000,,,,,MFIC,2025-05-12
+Kure Pain Holdings Inc.,co_14b303a6088c,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Kure Pain Holdings Inc.,co_14b303a6088c,Other,,,,,,,,,,,,,,1592000,,,,,MFIC,2025-05-12
+LS Clinical Services Holdings Inc.,co_dfd7586402d9,Other,Healthcare,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+LS Clinical Services Holdings Inc.,co_dfd7586402d9,Other,Healthcare,,,,,,,,,,,,,234000,,,,,MFIC,2025-05-12
+Lash OpCo LLC,co_11969eb109de,Other,Consumer & Retail,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+LendingPoint LLC,co_969c7ef9d443,Other,Financial Services,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+LendingPoint LLC,co_969c7ef9d443,Other,Financial Services,,,,,,,,,,,,,15011000,,,,,MFIC,2025-05-12
+Lifelong Learner Holdings LLC,co_2fbaf15986de,Other,Business Services,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Lifelong Learner Holdings LLC,co_2fbaf15986de,Other,Business Services,,,,,,,,,,,,,56000,,,,,MFIC,2025-05-12
+Litify LLC,co_203778cdf30c,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Litify LLC,co_203778cdf30c,Other,,,,,,,,,,,,,,833000,,,,,MFIC,2025-05-12
+Lotus Topco Inc.,co_159ac816aaf6,Other,Media & Entertainment,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Lotus Topco Inc.,co_159ac816aaf6,Other,Media & Entertainment,,,,,,,,,,,,,2059000,,,,,MFIC,2025-05-12
+Lunar Buyer LLC,co_b9015694fade,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Lunar Buyer,co_b9015694fade,Other,,,,,,,,,,,,,,9454000,,,,,MFIC,2025-05-12
+M&M OPCO LLC,co_fee91870954d,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+M&M OPCO LLC,co_fee91870954d,Other,,,,,,,,,,,,,,238000,,,,,MFIC,2025-05-12
+MGP Holdings III Corp.,co_5585e0c91d4e,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+MGP Holdings III Corp.,co_5585e0c91d4e,Other,,,,,,,,,,,,,,2095000,,,,,MFIC,2025-05-12
+Marlin DTC-LS Midco 2 LLC,co_e39e6c0751bb,Other,Consumer & Retail,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Marlin DTC-LS Midco 2 LLC,co_e39e6c0751bb,Other,Consumer & Retail,,,,,,,,,,,,,685000,,,,,MFIC,2025-05-12
+Maxor National Pharmacy Services LLC,co_49e4ae389f6d,Other,Healthcare,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Maxor National Pharmacy Services LLC,co_49e4ae389f6d,Other,Healthcare,,,,,,,,,,,,,1530000,,,,,MFIC,2025-05-12
+Medical Guardian LLC,co_f85abd6d21a3,Other,Healthcare,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Medical Guardian LLC,co_f85abd6d21a3,Other,Healthcare,,,,,,,,,,,,,3810000,,,,,MFIC,2025-05-12
+Megavolt Borrower LLC,co_a576aeef57d5,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Megavolt Borrower,co_a576aeef57d5,Other,,,,,,,,,,,,,,633000,,,,,MFIC,2025-05-12
+Merx Aviation Finance LLC,co_0fc11c0f0c3c,Other,Transportation & Logistics,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Midwest Vision Partners Management LLC,co_31b05c23faea,Other,Business Services,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Mobile Communications America Inc.,co_c7c52650ef3a,Other,Telecommunications,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Mobile Communications America Inc.,co_c7c52650ef3a,Other,Telecommunications,,,,,,,,,,,,,7511000,,,,,MFIC,2025-05-12
+Momentx Corp.,co_0738fea896a6,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Munson Buffalo Restaurant Group LLC,co_8de53bc41213,Other,Food & Beverage,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Munson Buffalo Restaurant Group LLC,co_8de53bc41213,Other,Food & Beverage,,,,,,,,,,,,,947000,,,,,MFIC,2025-05-12
+NCP-MSI Buyer,co_f82db1e7af91,Other,Transportation & Logistics,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+NCP-MSI Buyer,co_f82db1e7af91,Other,Transportation & Logistics,,,,,,,,,,,,,3478000,,,,,MFIC,2025-05-12
+NPPI Buyer LLC,co_cf159d75d68a,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+NPPI Buyer LLC,co_cf159d75d68a,Other,,,,,,,,,,,,,,7421000,,,,,MFIC,2025-05-12
+Natus Sensory Inc.,co_62c287651bd1,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Natus Sensory Inc.,co_62c287651bd1,Other,,,,,,,,,,,,,,4150000,,,,,MFIC,2025-05-12
+New Era Technology Inc.,co_c36e8429b803,Other,Software & Technology,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Norvax LLC,co_41ec6f792fa1,Other,Insurance,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Norvax LLC,co_41ec6f792fa1,Other,Insurance,,,,,,,,,,,,,1052000,,,,,MFIC,2025-05-12
+OMH-Healthedge Holdings Inc.,co_f11fcd0d76f1,Other,Transportation & Logistics,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+OMH-Healthedge Holdings,co_f11fcd0d76f1,Other,Transportation & Logistics,,,,,,,,,,,,,1075000,,,,,MFIC,2025-05-12
+Olympus Terminals Holdco II LLC,co_fa5f867bce0e,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Olympus Terminals Holdco II LLC,co_fa5f867bce0e,Other,,,,,,,,,,,,,,1632000,,,,,MFIC,2025-05-12
+Olympus Terminals Holdco II LLC,co_fa5f867bce0e,Other,,,,,,,,,,,,,,4741000,,,,,MFIC,2025-05-12
+Omada Health Inc.,co_1c65c989b225,Other,Automotive,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Omada Health Inc.,co_1c65c989b225,Other,Automotive,,,,,,,,,,,,,1545000,,,,,MFIC,2025-05-12
+Origami Opportunities Fund III LP.,co_da5b45caca00,Other,Financial Services,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Origami Opportunities Fund III,co_da5b45caca00,Other,Financial Services,,,,,,,,,,,,,2943000,,,,,MFIC,2025-05-12
+Orion Buyer LLC,co_05b1bbbc37fd,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Orion Buyer,co_05b1bbbc37fd,Other,,,,,,,,,,,,,,2801000,,,,,MFIC,2025-05-12
+PARS Group LLC,co_effab4ea1b84,Other,Healthcare,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+PARS Group LLC,co_effab4ea1b84,Other,Healthcare,,,,,,,,,,,,,952000,,,,,MFIC,2025-05-12
+PHOENIX YW BUYER INC.,co_42ed9d755f03,Other,Transportation & Logistics,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+PHOENIX YW BUYER,co_42ed9d755f03,Other,Transportation & Logistics,,,,,,,,,,,,,1136000,,,,,MFIC,2025-05-12
+PHS Buyer Inc.,co_81871a5b61a8,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+PHS Buyer Inc.,co_81871a5b61a8,Other,,,,,,,,,,,,,,542000,,,,,MFIC,2025-05-12
+PMA Parent Holdings LLC,co_283bb71afd22,Other,Financial Services,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+PMA Parent Holdings,co_283bb71afd22,Other,Financial Services,,,,,,,,,,,,,987000,,,,,MFIC,2025-05-12
+Pace Health Companies LLC,co_9be3885d66c3,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Pace Health Companies LLC,co_9be3885d66c3,Other,,,,,,,,,,,,,,118000,,,,,MFIC,2025-05-12
+Pace Health Companies,co_9be3885d66c3,Other,,,,,,,,,,,,,,1281000,,,,,MFIC,2025-05-12
+Pai Middle Tier LLC,co_9dd1c9c0782b,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Pai Middle Tier,co_9dd1c9c0782b,Other,,,,,,,,,,,,,,3500000,,,,,MFIC,2025-05-12
+Paladone Group Bidco Ltd.,co_14103e848641,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Paladone Group Bidco Ltd.,co_14103e848641,Other,,,,,,,,,,,,,,941000,,,,,MFIC,2025-05-12
+Paladone Group Bidco Limited*,co_14103e848641,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Paladone Group Bidco Limited*,co_14103e848641,Other,,,,,,,,,,,,,,213000,,,,,MFIC,2025-05-12
+Patriot Foods Buyer Inc.,co_501b99844531,Other,Food & Beverage,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Patriot Foods Buyer Inc.,co_501b99844531,Other,Food & Beverage,,,,,,,,,,,,,750000,,,,,MFIC,2025-05-12
+Pave America Interco LLC,co_025e77c305aa,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Pave America Interco LLC,co_025e77c305aa,Other,,,,,,,,,,,,,,5325000,,,,,MFIC,2025-05-12
+Pavement Preservation Acquisition LLC,co_8e9317cd0baa,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Pavement Preservation Acquisition LLC,co_8e9317cd0baa,Other,,,,,,,,,,,,,,1293000,,,,,MFIC,2025-05-12
+Peer Advisors LLC,co_9640f540dbda,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Peer Advisors LLC,co_9640f540dbda,Other,,,,,,,,,,,,,,2883000,,,,,MFIC,2025-05-12
+Poly-Wood LLC,co_3c46e625cf97,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Poly-Wood LLC,co_3c46e625cf97,Other,,,,,,,,,,,,,,698000,,,,,MFIC,2025-05-12
+Precision Refrigeration & Air Conditioning LLC,co_6e2dda1d8073,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Precision Refrigeration & Air Conditioning LLC,co_6e2dda1d8073,Other,,,,,,,,,,,,,,341000,,,,,MFIC,2025-05-12
+Pro-Vigil Holding Company LLC,co_652acfbe1118,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Pro-Vigil Holding Company,co_652acfbe1118,Other,,,,,,,,,,,,,,1553000,,,,,MFIC,2025-05-12
+Project Comfort Buyer Inc.,co_82d2bc3be539,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Project Comfort Buyer Inc.,co_82d2bc3be539,Other,,,,,,,,,,,,,,1731000,,,,,MFIC,2025-05-12
+Protein For Pets Opco LLC,co_f0ec0cd3550d,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Protein For Pets Opco LLC,co_f0ec0cd3550d,Other,,,,,,,,,,,,,,896000,,,,,MFIC,2025-05-12
+Purchasing Power Funding I LLC,co_129c12aacc63,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Purchasing Power Funding I LLC,co_129c12aacc63,Other,,,,,,,,,,,,,,5893000,,,,,MFIC,2025-05-12
+R.F. Fager Company LLC,co_8b8f3766bfe2,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+R.F. Fager Company LLC,co_8b8f3766bfe2,Other,,,,,,,,,,,,,,2047000,,,,,MFIC,2025-05-12
+RHI Acquisition LLC,co_3f2ee01eb0a5,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+RHI Acquisition LLC,co_3f2ee01eb0a5,Other,,,,,,,,,,,,,,2495000,,,,,MFIC,2025-05-12
+Rarebreed Veterinary Partners Inc.,co_e6e29c662a37,Other,Healthcare,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Rarebreed Veterinary Partners Inc.,co_e6e29c662a37,Other,Healthcare,,,,,,,,,,,,,5000,,,,,MFIC,2025-05-12
+Rarebreed Veterinary Partners Inc.,co_e6e29c662a37,Other,Healthcare,,,,,,,,,,,,,12040000,,,,,MFIC,2025-05-12
+Regis Corp.,co_e5a8b651992f,Other,Diversified,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Regis Corp.,co_e5a8b651992f,Other,Diversified,,,,,,,,,,,,,833000,,,,,MFIC,2025-05-12
+Regis Corp.,co_e5a8b651992f,Other,Diversified,,,,,,,,,,,,,2613000,,,,,MFIC,2025-05-12
+Riverbed Technology Inc.,co_cf572ffcd973,Other,Software & Technology,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Riverbed Technology Inc.,co_cf572ffcd973,Other,Software & Technology,,,,,,,,,,,,,160000,,,,,MFIC,2025-05-12
+RoC Holdco LLC,co_a34f8ee15d73,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+RoC Holdco LLC,co_a34f8ee15d73,Other,,,,,,,,,,,,,,2195000,,,,,MFIC,2025-05-12
+Ronnoco Holdings Inc.,co_5ba6d3441cd5,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Ronnoco Holdings Inc.,co_5ba6d3441cd5,Other,,,,,,,,,,,,,,2172000,,,,,MFIC,2025-05-12
+Roscoe Medical Inc.,co_e257ef80bf24,Other,Healthcare,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Roscoe Medical Inc.,co_e257ef80bf24,Other,Healthcare,,,,,,,,,,,,,0,,,,,MFIC,2025-05-12
+SEV Intermediate Holdco LLC,co_ae0817509316,Other,Media & Entertainment,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+SEV Intermediate Holdco LLC,co_ae0817509316,Other,Media & Entertainment,,,,,,,,,,,,,1200000,,,,,MFIC,2025-05-12
+Saffron Bidco Ltd*,co_bb0ae52c2621,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Saffron Bidco Ltd* Undrawn Commitment,co_d471d32c6156,Other,,,,,,,,,,,,,,7945000,,,,,MFIC,2025-05-12
+Shelby 2021 Holdings Corp.,co_7a55ba4d808f,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Shelby 2021 Holdings Corp.,co_7a55ba4d808f,Other,,,,,,,,,,,,,,896000,,,,,MFIC,2025-05-12
+Sigma Buyer LLC,co_5494fd910882,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Sigma Buyer LLC,co_5494fd910882,Other,,,,,,,,,,,,,,800000,,,,,MFIC,2025-05-12
+Simeio Group Holdings Inc.,co_8e8f2195c401,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Smith Topco Inc.,co_015331a6d3c2,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Smith Topco Inc.,co_015331a6d3c2,Other,,,,,,,,,,,,,,1128000,,,,,MFIC,2025-05-12
+Space Finco Inc.,co_b75b0499aba4,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Space Finco Inc.,co_b75b0499aba4,Other,,,,,,,,,,,,,,14362000,,,,,MFIC,2025-05-12
+Sperry Acquisition LLC,co_8b81d98c1215,Other,Aerospace & Defense,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Sperry Acquisition LLC,co_8b81d98c1215,Other,Aerospace & Defense,,,,,,,,,,,,,3077000,,,,,MFIC,2025-05-12
+Surf Opco LLC,co_3204b3488f3f,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Surf Opco LLC,co_3204b3488f3f,Other,,,,,,,,,,,,,,667000,,,,,MFIC,2025-05-12
+Surf Opco LLC,co_3204b3488f3f,Other,,,,,,,,,,,,,,6194000,,,,,MFIC,2025-05-12
+TCW Midco LLC,co_d7cf57caf5a2,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+TCW Midco LLC,co_d7cf57caf5a2,Other,,,,,,,,,,,,,,0,,,,,MFIC,2025-05-12
+TCW Midco LLC,co_d7cf57caf5a2,Other,,,,,,,,,,,,,,3833000,,,,,MFIC,2025-05-12
+TELA Bio Inc.,co_922bc00aa28a,Other,Healthcare,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+TELA Bio Inc.,co_922bc00aa28a,Other,Healthcare,,,,,,,,,,,,,3333000,,,,,MFIC,2025-05-12
+THLP CO. LLC,co_7e8fd5785716,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+THLP CO. LLC,co_7e8fd5785716,Other,,,,,,,,,,,,,,213000,,,,,MFIC,2025-05-12
+THLP CO. LLC,co_7e8fd5785716,Other,,,,,,,,,,,,,,1801000,,,,,MFIC,2025-05-12
+TS Investors LLC,co_7cfb24b67531,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+TS Investors LLC,co_7cfb24b67531,Other,,,,,,,,,,,,,,2796000,,,,,MFIC,2025-05-12
+Tasty Chick'n LLC,co_52baf4910498,Other,Healthcare,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Tasty Chick'n LLC,co_52baf4910498,Other,Healthcare,,,,,,,,,,,,,7614000,,,,,MFIC,2025-05-12
+TeamLINX Buyer LLC,co_d041f9d7ccc5,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+TeamLINX Buyer LLC,co_d041f9d7ccc5,Other,,,,,,,,,,,,,,1429000,,,,,MFIC,2025-05-12
+Telesoft Holdings LLC,co_7375eb669365,Other,Software & Technology,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Telesoft Holdings LLC,co_7375eb669365,Other,Software & Technology,,,,,,,,,,,,,1743000,,,,,MFIC,2025-05-12
+TerSera Therapeutics LLC,co_ddd1d780499e,Other,Healthcare,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+TerSera Therapeutics LLC,co_ddd1d780499e,Other,Healthcare,,,,,,,,,,,,,1395000,,,,,MFIC,2025-05-12
+Texada Software LLC,co_c8a326c543e0,Other,Software & Technology,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Texada Software LLC,co_c8a326c543e0,Other,Software & Technology,,,,,,,,,,,,,1026000,,,,,MFIC,2025-05-12
+The North Highland Company LLC,co_ae854bd8ba38,Other,Business Services,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+The North Highland Company LLC,co_ae854bd8ba38,Other,Business Services,,,,,,,,,,,,,0,,,,,MFIC,2025-05-12
+The North Highland Company LLC,co_ae854bd8ba38,Other,Business Services,,,,,,,,,,,,,1548000,,,,,MFIC,2025-05-12
+Thomas Scientific LLC,co_e65db09ec5b2,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Thomas Scientific LLC,co_e65db09ec5b2,Other,,,,,,,,,,,,,,296000,,,,,MFIC,2025-05-12
+Thomas Scientific LLC,co_e65db09ec5b2,Other,,,,,,,,,,,,,,445000,,,,,MFIC,2025-05-12
+Traffic Management Solutions LLC,co_3a2036c5a909,Other,Business Services,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Traffic Management Solutions,co_3a2036c5a909,Other,Business Services,,,,,,,,,,,,,1583000,,,,,MFIC,2025-05-12
+Treace Medical Concepts Inc.,co_994af60cb6ad,Other,Healthcare,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Treace Medical Concepts Inc.,co_994af60cb6ad,Other,Healthcare,,,,,,,,,,,,,11350000,,,,,MFIC,2025-05-12
+Trench Plate Rental Co.,co_38b60b27c520,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Trench Plate Rental Co. Letters of Credit,co_53602c4016bb,Other,,,,,,,,,,,,,,125000,,,,,MFIC,2025-05-12
+Trench Plate Rental Co.,co_38b60b27c520,Other,,,,,,,,,,,,,,48000,,,,,MFIC,2025-05-12
+Trillium Health Care Products Inc.,co_37dfca787142,Other,Healthcare,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Trillium Health Care Products Inc.,co_37dfca787142,Other,Healthcare,,,,,,,,,,,,,1000000,,,,,MFIC,2025-05-12
+Truck-Lite Co. LLC,co_d7ebf153506a,Other,Automotive,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Truck-Lite Co. LLC,co_d7ebf153506a,Other,Automotive,,,,,,,,,,,,,6000,,,,,MFIC,2025-05-12
+Truck-Lite Co.,co_d7ebf153506a,Other,Automotive,,,,,,,,,,,,,339000,,,,,MFIC,2025-05-12
+Turbo Buyer Inc.,co_2980d4877f8b,Other,Automotive,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Turbo Buyer,co_2980d4877f8b,Other,Automotive,,,,,,,,,,,,,231000,,,,,MFIC,2025-05-12
+US MetalCo Holdings LLC,co_64c1bd04064e,Other,Industrials,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+US MetalCo Holdings LLC,co_64c1bd04064e,Other,Industrials,,,,,,,,,,,,,1320000,,,,,MFIC,2025-05-12
+USLS Acquisition Inc.,co_9a016192323f,Other,Business Services,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+USLS Acquisition Inc.,co_9a016192323f,Other,Business Services,,,,,,,,,,,,,73000,,,,,MFIC,2025-05-12
+USLS Acquisition,co_9a016192323f,Other,Business Services,,,,,,,,,,,,,2062000,,,,,MFIC,2025-05-12
+Ultra Clean Holdco LLC,co_f47e01e0cbcc,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Ultra Clean Holdco LLC,co_f47e01e0cbcc,Other,,,,,,,,,,,,,,6964000,,,,,MFIC,2025-05-12
+Unchained Labs LLC,co_f451f2bdbcc8,Other,Healthcare,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Unchained Labs,co_f451f2bdbcc8,Other,Healthcare,,,,,,,,,,,,,726000,,,,,MFIC,2025-05-12
+Uniguest Holdings Inc.,co_d29b9a5cf9ef,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Uniguest Holdings,co_d29b9a5cf9ef,Other,,,,,,,,,,,,,,5159000,,,,,MFIC,2025-05-12
+Uplight Inc.,co_3d505f933d94,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Uplight,co_3d505f933d94,Other,,,,,,,,,,,,,,1000000,,,,,MFIC,2025-05-12
+Village Pet Care LLC,co_45b02c4778dd,Other,Consumer & Retail,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Village Pet Care,co_45b02c4778dd,Other,Consumer & Retail,,,,,,,,,,,,,4247000,,,,,MFIC,2025-05-12
+Vixxo Corp.,co_3d20c67afcba,Other,Business Services,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Vixxo Corp.,co_3d20c67afcba,Other,Business Services,,,,,,,,,,,,,1250000,,,,,MFIC,2025-05-12
+Vybond Buyer LLC,co_f267c978bf02,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Vybond Buyer,co_f267c978bf02,Other,,,,,,,,,,,,,,7666000,,,,,MFIC,2025-05-12
+WC ORS Buyer Inc.,co_24201dbbc0d7,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+WC ORS Buyer,co_24201dbbc0d7,Other,,,,,,,,,,,,,,6209000,,,,,MFIC,2025-05-12
+WH BorrowerCo LLC,co_6988572f0e55,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+WH BorrowerCo,co_6988572f0e55,Other,,,,,,,,,,,,,,7562000,,,,,MFIC,2025-05-12
+WelldyneRX LLC,co_1c5ea833cc78,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+WelldyneRX,co_1c5ea833cc78,Other,,,,,,,,,,,,,,1923000,,,,,MFIC,2025-05-12
+WildBrain Ltd.,co_e6d4b13d9d83,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+WildBrain Ltd.,co_e6d4b13d9d83,Other,,,,,,,,,,,,,,1374000,,,,,MFIC,2025-05-12
+Zafin Labs Americas Inc.,co_e3e2cabee991,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Zafin Labs Americas Inc.,co_e3e2cabee991,Other,,,,,,,,,,,,,,3333000,,,,,MFIC,2025-05-12
+Zendesk Inc.,co_97d76b2239a5,Other,Software & Technology,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Zendesk Inc.,co_97d76b2239a5,Other,Software & Technology,,,,,,,,,,,,,4000,,,,,MFIC,2025-05-12
+Zendesk,co_97d76b2239a5,Other,Software & Technology,,,,,,,,,,,,,2600000,,,,,MFIC,2025-05-12
+Zephyr Buyer LP.,co_cf1406011488,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Zephyr Buyer,co_6141b94f39c4,Other,,,,,,,,,,,,,,3952000,,,,,MFIC,2025-05-12
+Total Commitments,co_b2f17e51f788,Other,,,,,,,,,,,,,,,,,,,MFIC,2025-05-12
+Total Commitments Letters of Credit,co_2c82359cb7e6,Other,,,,,,,,,,,,,,12113000,,,,,MFIC,2025-05-12
+Total Commitments Undrawn Commitment,co_43d5cc583a48,Other,,,,,,,,,,,,,,515147000,,,,,MFIC,2025-05-12
+1244311 B.C. Ltd.,co_5e8acebeccc9,Common Equity,,,,,,,2020-09-30,,,,,,,,,,,,MFIC,2025-05-12
+Acosta Holdings Corp.,co_5a50d71a9267,Preferred Equity,Media & Entertainment,,,,,,2024-07-22,,,,,,,,,,,,MFIC,2025-05-12
+Acosta Holdings Corp.,co_5a50d71a9267,Common Equity,Media & Entertainment,,,,,,2024-07-22,,,,,,,,,,,,MFIC,2025-05-12
+Anuvu Corp.,co_28bc2f3a37c6,Common Equity,,,,,,,2024-07-22,,,,,,,,,,,,MFIC,2025-05-12
+Arrivia Inc.,co_144d59d6db6f,Common Equity,,,,,,,2024-12-31,,,,,,,,,,,,MFIC,2025-05-12
+BSP-TS LP,co_888a0b27326c,Preferred Equity,,,,,,,2024-12-23,,,,,,,,,,,,MFIC,2025-05-12
+Carbonfree Chemicals Holdings LLC,co_a4849f34bcae,Common Equity,Chemicals & Materials,,,,,,2019-11-01,,,,,,,,,,,,MFIC,2025-05-12
+Carestream Health Holdings Inc.,co_de905b589158,Common Equity,Healthcare,,,,,,2024-07-22,,,,,,,,,,,,MFIC,2025-05-12
+ChyronHego Corp.,co_36d0cfb8a672,Preferred Equity,,,,,,,2020-12-29,,,,,,,,,,,,MFIC,2025-05-12
+Cool Acquisition Holdings LP,co_8b3eb85ef3ea,Common Equity,,,,,,,2024-10-31,,,,,,,,,,,,MFIC,2025-05-12
+FC2 LLC,co_14b74afc7cf6,Common Equity,,,,,,,2022-10-14,,,,,,,,,,,,MFIC,2025-05-12
+Genius Bidco LLC,co_31d47580e70c,Common Equity,,,,,,,2024-05-01,,,,,,,,,,,,MFIC,2025-05-12
+Merx Aviation Finance LLC,co_0fc11c0f0c3c,Common Equity,Transportation & Logistics,,,,,,2022-09-01,,,,,,,,,,,,MFIC,2025-05-12
+PAI Co-Investor FT Aggregator LLC,co_639e9ca9e3e5,Common Equity,,,,,,,2025-02-13,,,,,,,,,,,,MFIC,2025-05-12
+RMCF V CIV L LP.,co_d29ab9329455,Common Equity,,,,,,,2024-09-05,,,,,,,,,,,,MFIC,2025-05-12
+Ronnoco Holdings Inc.,co_5ba6d3441cd5,Common Equity,,,,,,,2025-03-17,,,,,,,,,,,,MFIC,2025-05-12
+SMC IR Holdings LLC,co_202f1f876cab,Common Equity,,,,,,,2024-12-24,,,,,,,,,,,,MFIC,2025-05-12
+Space Parent LP,co_74f2983d4915,Preferred Equity,Healthcare,,,,,,2025-02-05,,,,,,,,,,,,MFIC,2025-05-12
+Space Parent LP,co_74f2983d4915,Common Equity,Healthcare,,,,,,2025-02-05,,,,,,,,,,,,MFIC,2025-05-12
+Sperry Parent Holdings LP.,co_bf1998f31138,Common Equity,,,,,,,2025-02-03,,,,,,,,,,,,MFIC,2025-05-12
+SPS Commerce Inc.,co_647125b2fc5d,Common Equity,,,,,,,2025-02-10,,,,,,,,,,,,MFIC,2025-05-12
+Surf Opco LLC,co_3204b3488f3f,Common Equity,,,,,,,2021-03-17,,,,,,,,,,,,MFIC,2025-05-12
+Surf Opco LLC,co_3204b3488f3f,Preferred Equity,,,,,,,2021-03-17,,,,,,,,,,,,MFIC,2025-05-12
+Third Lane Mobility Inc.,co_147ca3cf3b8d,Common Equity,,,,,,,2024-03-22,,,,,,,,,,,,MFIC,2025-05-12
+Third Lane Mobility Inc.,co_147ca3cf3b8d,Warrants,,,,,,,2025-01-31,,,,,,,,,,,,MFIC,2025-05-12
+TVG Orion Blocker Inc.,co_2397c569e365,Common Equity,Healthcare,,,,,,2024-07-18,,,,,,,,,,,,MFIC,2025-05-12
+WC ORS Holdings LP.,co_ce64114b491f,Common Equity,,,,,,,2024-08-07,,,,,,,,,,,,MFIC,2025-05-12
+Chemicals,co_894f6426dd9f,First Lien,Chemicals & Materials,,,,,,,,,,12463,,,,,,,,MFIC,2025-05-12
+Chemicals,co_894f6426dd9f,Common Equity,Chemicals & Materials,,,,,,,,,,18824,,,,,,,,MFIC,2025-05-12
+Electronic Equipment Instruments & Components,co_83b608066c44,First Lien,Software & Technology,,,,,,,,,,25962,,,,,,,,MFIC,2025-05-12
+Electronic Equipment Instruments & Components,co_83b608066c44,Preferred Equity,Software & Technology,,,,,,,,,,2633,,,,,,,,MFIC,2025-05-12
+Electronic Equipment Instruments & Components,co_83b608066c44,Common Equity,Software & Technology,,,,,,,,,,95,,,,,,,,MFIC,2025-05-12
+Electronic Equipment Instruments & Components,co_83b608066c44,Other,Software & Technology,,,,,,,,,,28690,2.05%,,,,,,,MFIC,2025-05-12
+Ground Transportation,co_36ffa2e241fe,First Lien,Transportation & Logistics,,,,,,,,,,22667,,,,,,,,MFIC,2025-05-12
+Ground Transportation,co_36ffa2e241fe,Common Equity,Transportation & Logistics,,,,,,,,,,714,,,,,,,,MFIC,2025-05-12
+Ground Transportation,co_36ffa2e241fe,Warrants,Transportation & Logistics,,,,,,,,,,14,,,,,,,,MFIC,2025-05-12
+Leisure Products,co_8830581d1a78,Common Equity,Healthcare,,,,,,,,,,209,,,,,,,,MFIC,2025-05-12
+Structured Products and Other,co_4898db2d76d6,Other,Financial Services,,,,,,,,,,23492,1.69%,,,,,,,MFIC,2025-05-12

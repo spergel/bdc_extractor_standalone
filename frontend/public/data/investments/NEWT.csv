@@ -1,7 +1,21 @@
-company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,ticker,filing_date
-SBA 504 First Lien,co_7a1863d89b8f,First Lien,Financial Services,,,,,,,,,128255,,,,,NEWT,2025-03-17
-SBA 504 Second Lien,co_276ebc4460b9,Second Lien,Financial Services,,,,,,,,,26678,,,,,NEWT,2025-03-17
-SBA 7(a),co_e66ca0bfe733,First Lien,Financial Services,,,,,,,,,4855,,,,,NEWT,2025-03-17
-ALP,co_2a517c2f6d3a,Other Debt,Financial Services,,,,,,,,,212498,,,,,NEWT,2025-03-17
-Purchased Loans,co_2cd52c5d7bc9,Other Debt,Financial Services,,,,,,,,,42443,,40014,,,NEWT,2025-03-17
-Federal Home Loan Bank and Federal Reserve Bank stock,co_38d1c3e4867e,Common Equity,Financial Services,,,,,,,,3585,3585,1.21,3585,,,NEWT,2025-03-17
+company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
+Newtek Conventional Lending LLC,co_51b1d822faa2,Other,Financial Services,,,,,,,,,,18800,,,,,,,,NEWT,2025-03-17
+Newtek TSO II Conventional Credit Partners LP,co_09a0515e37f6,Other,,,,,,,,,,,38100,,,,,,,,NEWT,2025-03-17
+EMCAP Loan Holdings LLC,co_3d83331adaea,Other,,,,,,,,,,,320,,,,,,,,NEWT,2025-03-17
+Biller Genie Software LLC,co_03adfc1e13ae,Other,Software & Technology,,,,,,,,,,458,,,,,,,,NEWT,2025-03-17
+NCL JV,co_801022bcd144,Other,,,,,,,,,,,19000,,,,,,,,NEWT,2025-05-12
+TSO JV,co_1a83b95dfa09,Other,,,,,,,,,,,40000,,,,,,,,NEWT,2025-05-12
+EMCAP Loan Holdings LLC,co_3d83331adaea,Other,,,,,,,,,,,306,,,,,,,,NEWT,2025-05-12
+Biller Genie Software LLC,co_03adfc1e13ae,Other,Software & Technology,,,,,,,,,,708,,,,,,,,NEWT,2025-05-12
+Intelligent Protection Management Corp.,co_a2391facee3b,Other,Business Services,,,,,,,,,,9228,,,,,,,,NEWT,2025-05-12
+NCL JV,co_801022bcd144,Other,,,,,,,,,,,16487,,,,,,,,NEWT,2025-08-08
+TSO JV,co_1a83b95dfa09,Other,,,,,,,,,,,40000,,,,,,,,NEWT,2025-08-08
+EMCAP Loan Holdings LLC,co_3d83331adaea,Other,,,,,,,,,,,306,,,,,,,,NEWT,2025-08-08
+Biller Genie Software LLC,co_03adfc1e13ae,Other,Software & Technology,,,,,,,,,,1500,,,,,,,,NEWT,2025-08-08
+Intelligent Protection Management Corp.,co_a2391facee3b,Other,Business Services,,,,,,,,,,9828,,,,,,,,NEWT,2025-08-08
+NCL JV,co_801022bcd144,Other,,,,,,,,,,,0,,,,,,,,NEWT,2025-11-07
+TSO JV,co_1a83b95dfa09,Other,,,,,,,,,,,39750,,,,,,,,NEWT,2025-11-07
+EMCAP Loan Holdings LLC,co_3d83331adaea,Other,,,,,,,,,,,306,,,,,,,,NEWT,2025-11-07
+Biller Genie Software LLC,co_03adfc1e13ae,Other,Software & Technology,,,,,,,,,,1500,,,,,,,,NEWT,2025-11-07
+Intelligent Protection Management Corp.,co_a2391facee3b,Other,Business Services,,,,,,,,,,1874,,,,,,,,NEWT,2025-11-07
+Intelligent Protection Management Corp.,co_a2391facee3b,Other Equity,Business Services,,,,,,,,,,7960,,,,,,,,NEWT,2025-11-07

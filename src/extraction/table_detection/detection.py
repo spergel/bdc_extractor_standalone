@@ -22,6 +22,11 @@ def is_investment_table(table_text: str) -> bool:
         "portfolio company name",
         "investment company",
         "issuer name",
+        "issuer",
+        "borrower",
+        "obligor",
+        "schedule of investments",
+        "investments at fair value",
     ]
 
     # Secondary indicators (need multiple)
@@ -69,6 +74,8 @@ def is_excluded_non_schedule_table(table_text: str) -> bool:
     Exclude tables that mention investments but are NOT the schedule of investments:
     - Cash flow statement (operating/financing/investing activities)
     - Unrealized appreciation/depreciation summary (portfolio company + three/nine months columns)
+    - Fair value hierarchy disclosure (Level 1 / Level 2 / Level 3 breakdown)
+    - Investment activity rollforward (purchases, sales/payoffs, transfers by period)
     """
     text = table_text.lower()
     # Cash flow statement
@@ -81,6 +88,13 @@ def is_excluded_non_schedule_table(table_text: str) -> bool:
         if "for the three months ended" in text and "for the nine months ended" in text:
             if "($ in millions)" in text or "portfolio company" in text:
                 return True
+    # Fair value hierarchy tables — have Level 1/2/3 structure but duplicate all investment names
+    if "level 1" in text and "level 2" in text and "level 3" in text:
+        return True
+    # Investment activity rollforward (10-K: purchases/sales schedule, not current holdings)
+    if ("purchases" in text and ("sales or payoffs" in text or "pay-offs" in text)
+            and ("beginning of period" in text or "end of period" in text)):
+        return True
     return False
 
 
@@ -101,11 +115,8 @@ def is_year_end_table(
 
     - If the table mentions the CURRENT PERIOD date anywhere → KEEP (return False).
     - If it only has December 31 of a PRIOR year (no current period) → SKIP (return True).
-    - 10-K: we want year-end data, so never skip (return False).
+    - 10-K: apply same logic (10-Ks can include a full comparative SOI for the prior year).
     """
-    if filing_type == "10-K":
-        # For 10-K filings, we WANT year-end data - don't filter anything
-        return False
 
     try:
         # Parse the period end date (the actual date this filing covers)
@@ -128,7 +139,9 @@ def is_year_end_table(
 
         # Use a LARGE window so we see both current and prior-year dates in comparative tables.
         # Q4 tables often have "December 31, 2025" and "December 31, 2024" - we must keep them.
+        # Search full table for current period (avoids dropping main schedule when date is late in header).
         search_text = combined_text[:2500]
+        search_text_full = combined_text[:8000]  # wider window for current-period check
 
         month_names = {
             1: "january",
@@ -146,19 +159,35 @@ def is_year_end_table(
         }
         period_month_name = month_names.get(period_month, "")
 
-        # 1) CURRENT PERIOD: if we see the filing's period date anywhere, this is current-quarter → KEEP
-        current_period_patterns = [
+        # 1) CURRENT PERIOD: if we see the filing's period date, this is current → KEEP
+        #
+        # For 10-K filings (and any Dec 31 period-end), bare date matches are unreliable
+        # because maturity dates in the SOI often fall on December 31 of the current year.
+        # Require the date to appear in "as of" or "at" context (table-period marker).
+        # For 10-Q filings with non-year-end periods, bare date matches are fine since
+        # maturity dates rarely coincide with e.g. September 30 or June 30.
+        as_of_patterns = [
+            rf"as\s+of\s+{re.escape(period_month_name)}\s+{period_day}[,\s]+{period_year}",
+            rf"at\s+{re.escape(period_month_name)}\s+{period_day}[,\s]+{period_year}",
+        ]
+        bare_date_patterns = [
             rf"{re.escape(period_month_name)}\s+{period_day}[,\s]+{period_year}",
             rf"{period_month_name[:3]}[.]?\s+{period_day}[,\s]+{period_year}",
             rf"\b{period_month}/{period_day}/{period_year}\b",
             rf"\b{period_month:02d}/{period_day:02d}/{period_year}\b",
             rf"\b{period_year}-{period_month:02d}-{period_day:02d}\b",
-            rf"as\s+of\s+{re.escape(period_month_name)}\s+{period_day}[,\s]+{period_year}",
-            rf"at\s+{re.escape(period_month_name)}\s+{period_day}[,\s]+{period_year}",
         ]
-        for pattern in current_period_patterns:
-            if re.search(pattern, search_text, re.I):
-                return False  # current period → keep
+        # "As of" patterns are always reliable
+        for pattern in as_of_patterns:
+            if re.search(pattern, search_text_full, re.I):
+                return False  # current period -> keep
+        # Bare date patterns: reliable only for non-Dec-31 periods
+        # (Dec 31 maturity dates are common and would cause false positives)
+        use_bare = (period_month != 12 or period_day != 31)
+        if use_bare:
+            for pattern in bare_date_patterns:
+                if re.search(pattern, search_text_full, re.I):
+                    return False  # current period -> keep
 
         # 2) PRIOR YEAR-END: only skip if we see Dec 31 of a prior year AND we did not see current period above
         dec31_match = re.search(r"(?:december|dec\.?)\s+31[,\s]+(\d{4})", search_text, re.I)

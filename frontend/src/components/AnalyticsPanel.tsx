@@ -140,13 +140,12 @@ function HistogramChart({ data, title, onBucketClick, selectedBucket, rangeContr
       {hovered && (
         <div
           className="absolute pointer-events-none z-10 bg-white border-2 border-[#000000] px-2 py-1 text-xs text-black"
-              style={{
+          style={{
                 left: `${hovered.x + 10}px`,
                 top: `${hovered.y - 10}px`,
               }}
         >
           <div className="text-black font-medium">{hovered.item.range}</div>
-          <div className="text-black">{hovered.item.count} holdings</div>
           <div className="text-black">{hovered.item.percentage.toFixed(1)}%</div>
         </div>
       )}

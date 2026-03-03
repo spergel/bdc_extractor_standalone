@@ -21,7 +21,11 @@ from rapidfuzz import fuzz
 import sys
 if str(Path(__file__).resolve().parent.parent) not in sys.path:
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
-from src.processing.standardization_rules import clean_company_name
+from src.processing.standardization_rules import (
+    clean_company_name,
+    normalize_industry,
+    normalize_legal_entity_for_clustering,
+)
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
@@ -101,7 +105,7 @@ def collect_all_investment_data(
                     for row in rows:
                         raw = (row.get("company_name") or "").strip()
                         if raw and raw not in raw_to_normalized:
-                            raw_to_normalized[raw] = clean_company_name(raw)
+                            raw_to_normalized[raw] = clean_company_name(raw)[0]
                     path_to_data[str(path)] = (fieldnames, rows)
             except Exception as e:
                 logger.warning("Failed to read %s: %s", path, e)
@@ -114,17 +118,28 @@ def build_name_to_cluster(
     """
     Map each raw and normalized name to a canonical key (one per cluster).
     Returns: name -> canonical_key (normalized representative of cluster).
+    First merges names that differ only by legal suffix (Inc./Ltd./LLC/Corp. etc.), then fuzz clusters the rest.
     """
-    # unique normalized names
-    normalized_names = list(set(raw_to_normalized.values()))
-    block_to_names: Dict[str, List[str]] = defaultdict(list)
-    for n in normalized_names:
-        if not n:
-            continue
-        block_to_names[_block_key(n)].append(n)
-
-    # cluster within each block
+    normalized_names = [n for n in set(raw_to_normalized.values()) if n]
     name_to_canonical: Dict[str, str] = {}
+
+    # 1) Same legal base: "Labvantage Solutions Inc." and "Labvantage Solutions Ltd." -> one cluster.
+    #    Use lowercased base key so "ArborWorks" and "ARBORWORKS LLC" merge (same company).
+    base_to_normals: Dict[str, List[str]] = defaultdict(list)
+    for n in normalized_names:
+        base = normalize_legal_entity_for_clustering(n).strip().lower() or "__empty__"
+        base_to_normals[base].append(n)
+    for base, normals in base_to_normals.items():
+        if len(normals) > 1:
+            canonical = max(normals, key=len)
+            for n in normals:
+                name_to_canonical[n] = canonical
+
+    # 2) Names not yet assigned (single in their base) go through block + fuzz clustering
+    single_normals = [n for n in normalized_names if n not in name_to_canonical]
+    block_to_names: Dict[str, List[str]] = defaultdict(list)
+    for n in single_normals:
+        block_to_names[_block_key(n)].append(n)
     for block, block_names in block_to_names.items():
         if len(block_names) < BLOCK_MIN_LENGTH:
             for n in block_names:
@@ -132,7 +147,6 @@ def build_name_to_cluster(
             continue
         clusters = _cluster_by_similarity(block_names, SIMILARITY_THRESHOLD)
         for cluster in clusters:
-            # canonical = most common form; use longest normalized as stable representative
             canonical = max(cluster, key=len)
             for n in cluster:
                 name_to_canonical[n] = canonical
@@ -285,13 +299,34 @@ def _parse_fair_value(val: Any) -> float:
         return 0.0
 
 
+def _load_profile_industries(data_dir: Path) -> Dict[str, str]:
+    """Load company_id -> industry from company_profiles.json (when present)."""
+    path = data_dir / "company_profiles.json"
+    out: Dict[str, str] = {}
+    if not path.exists():
+        return out
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        for cid, prof in (data.get("profiles") or {}).items():
+            ind = (prof.get("industry") or "").strip()
+            if ind:
+                out[cid] = ind
+    except Exception as e:
+        logger.warning("Could not load company_profiles for industry override: %s", e)
+    return out
+
+
 def _write_company_exposures(
     path_to_data: Dict[str, Tuple[List[str], List[Dict]]],
     companies_index: List[Dict],
     data_dir: Path,
 ) -> None:
-    """Aggregate holdings by company_id and write company_exposures.csv."""
+    """Aggregate holdings by company_id and write company_exposures.csv.
+    Uses latest filing per ticker only so total_exposure_millions matches company_detail breakdown."""
     cid_to_canonical = {c["company_id"]: c["canonical_name"] for c in companies_index}
+    profile_industries = _load_profile_industries(data_dir)
+    latest_per_ticker = _latest_filing_per_ticker(path_to_data)
     # Aggregate by company_id: set of tickers, list of (fair_value, industry, investment_type, interest)
     agg: Dict[str, Dict] = defaultdict(
         lambda: {
@@ -308,11 +343,17 @@ def _write_company_exposures(
             if not cid:
                 continue
             ticker = (row.get("ticker") or "").strip()
+            if not ticker:
+                continue
+            # Only count latest period per BDC so total matches company_detail (by_bdc sum)
+            if row.get("filing_date") != latest_per_ticker.get(ticker):
+                continue
             if ticker:
                 agg[cid]["tickers"].add(ticker)
             fv = _parse_fair_value(row.get("fair_value") or row.get("fair_value_thousands"))
             agg[cid]["fair_value_sum"] += fv
-            ind = (row.get("industry") or row.get("industry_clean") or "").strip()
+            raw_ind = (row.get("industry") or row.get("industry_clean") or "").strip()
+            ind = normalize_industry(raw_ind)
             if ind:
                 agg[cid]["industries"].append(ind)
             it = (row.get("investment_type") or row.get("investment_type_standardized") or "").strip()
@@ -335,7 +376,9 @@ def _write_company_exposures(
         # fair_value in source is typically in thousands; convert to millions
         total_millions = data["fair_value_sum"] / 1000.0
         primary_industry = ""
-        if data["industries"]:
+        if cid in profile_industries:
+            primary_industry = normalize_industry(profile_industries[cid]) or ""
+        if not primary_industry and data["industries"]:
             primary_industry = Counter(data["industries"]).most_common(1)[0][0]
         most_common_type = ""
         if data["investment_types"]:

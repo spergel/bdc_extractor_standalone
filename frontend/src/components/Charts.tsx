@@ -65,7 +65,13 @@ export function PieChart({
     const y1 = centerY + radius * Math.sin((startAngle * Math.PI) / 180);
     const x2 = centerX + radius * Math.cos((endAngle * Math.PI) / 180);
     const y2 = centerY + radius * Math.sin((endAngle * Math.PI) / 180);
-    const path = `M ${centerX} ${centerY} L ${x1} ${y1} A ${radius} ${radius} 0 ${largeArc} 1 ${x2} ${y2} Z`;
+
+    // Handle the 100% slice case explicitly so we draw a full circle
+    // instead of a degenerate arc that looks like a line.
+    const path =
+      angle >= 359.999
+        ? `M ${centerX} ${centerY} m -${radius},0 a ${radius} ${radius} 0 1 0 ${radius * 2} 0 a ${radius} ${radius} 0 1 0 -${radius * 2} 0 Z`
+        : `M ${centerX} ${centerY} L ${x1} ${y1} A ${radius} ${radius} 0 ${largeArc} 1 ${x2} ${y2} Z`;
     const midAngle = (startAngle + endAngle) / 2;
     const midX = centerX + (radius * 0.7) * Math.cos((midAngle * Math.PI) / 180);
     const midY = centerY + (radius * 0.7) * Math.sin((midAngle * Math.PI) / 180);
@@ -115,9 +121,7 @@ export function PieChart({
               <div className="text-black">{hovered.item.percentage.toFixed(1)}%</div>
               {byValue ? (
                 <div className="text-black">{formatThousandsAsCurrency(hovered.item.fairValue)}</div>
-              ) : (
-                <div className="text-black">{hovered.item.count} holdings</div>
-              )}
+              ) : null}
             </div>
           )}
         </div>
@@ -204,7 +208,6 @@ export function MaturityLadderChart({ data }: { data: MaturityLadderDatum[] }) {
           style={{ left: `${hovered.x + 10}px`, top: `${hovered.y - 10}px` }}
         >
           <div className="text-black font-medium">{hovered.item.bucket}</div>
-          <div className="text-black">{hovered.item.count} holdings</div>
           <div className="text-black">{formatThousandsAsCurrency(hovered.item.fairValue)}</div>
           <div className="text-black">{hovered.item.percentage.toFixed(1)}%</div>
         </div>

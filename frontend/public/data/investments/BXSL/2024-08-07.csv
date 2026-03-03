@@ -1,565 +1,451 @@
-company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,data_quality_flags,ticker,filing_date
-Bamboo US BidCo LLC,co_dbf0b9b0665e,First Lien,Automotive,11.38%,,SOFR,6.00%,,2030-09-30,687,,,662,,,,,BXSL,2024-08-07
-Bamboo US BidCo LLC,co_dbf0b9b0665e,First Lien,Automotive,9.95%,,E,6.00%,,2030-09-30,346,,,355,,,,,BXSL,2024-08-07
-CPI Buyer LLC,co_33943775fadc,First Lien,Automotive,11.15%,,SOFR,5.50%,,2028-11-01,31059,,,30607,,,,,BXSL,2024-08-07
-GCX Corp.,co_ef1cdc2c06e6,First Lien,Automotive,11.00%,,SOFR,5.50%,,2028-09-13,21505,,,21240,,,,,BXSL,2024-08-07
-GCX Corp.,co_ef1cdc2c06e6,First Lien,Automotive,11.02%,,SOFR,5.50%,,2028-09-13,5445,,,5387,,,,,BXSL,2024-08-07
-123Dentist Inc.,co_5db14535c874,First Lien,Healthcare Services,10.94%,,C,5.50%,,2029-08-10,1935,,,1423,,,,,BXSL,2024-08-07
-ACI Group Holdings Inc.,co_12ac7682544d,First Lien,Healthcare Services,10.96%,,SOFR,5.50%,,2028-08-02,115646,,,113844,,,,,BXSL,2024-08-07
-ACI Group Holdings Inc.,co_12ac7682544d,First Lien,Healthcare Services,10.96%,,SOFR,5.50%,,2027-08-02,1735,,,1597,,,,,BXSL,2024-08-07
-ADCS Clinics Intermediate Holdings LLC,co_dea06e88a294,First Lien,Healthcare Services,11.79%,,SOFR,6.25%,,2027-05-07,6849,,,6772,,,,,BXSL,2024-08-07
-ADCS Clinics Intermediate Holdings LLC,co_dea06e88a294,First Lien,Healthcare Services,11.53%,,SOFR,6.25%,,2027-05-07,1641,,,1614,,,,,BXSL,2024-08-07
-Amerivet Partners Management Inc.,co_8250e61a6bff,First Lien,Healthcare Services,11.00%,,SOFR,5.50%,,2028-02-25,1341,,,1307,,,,,BXSL,2024-08-07
-Amerivet Partners Management Inc.,co_8250e61a6bff,First Lien,Healthcare Services,11.00%,,SOFR,5.35%,,2028-02-25,4259,,,4201,,,,,BXSL,2024-08-07
-Canadian Hospital Specialties Ltd.,co_48759271b1dc,First Lien,Healthcare Services,9.93%,,C,4.50%,,2028-04-14,29628,,,23468,,,,,BXSL,2024-08-07
-Canadian Hospital Specialties Ltd.,co_48759271b1dc,First Lien,Healthcare Services,9.93%,,C,4.50%,,2027-04-15,3600,,,2851,,,,,BXSL,2024-08-07
-CCBlue Bidco Inc.,co_2af3342a144f,First Lien,Healthcare Services,11.70%,2.75%,SOFR,6.25%,,2028-12-21,10643,,,10492,,,,,BXSL,2024-08-07
-DCA Investment Holdings LLC,co_188bd5058a84,First Lien,Healthcare Services,11.75%,,SOFR,6.41%,,2028-04-03,32866,,,32623,,,,,BXSL,2024-08-07
-DCA Investment Holdings LLC,co_188bd5058a84,First Lien,Healthcare Services,11.85%,,SOFR,6.50%,,2028-04-03,995,,,983,,,,,BXSL,2024-08-07
-Epoch Acquisition Inc.,co_7d8b24a4a433,First Lien,Healthcare Services,11.55%,,SOFR,6.00%,,2026-10-04,24054,,,23952,,,,,BXSL,2024-08-07
-Jayhawk Buyer LLC,co_beff8bbb2a29,First Lien,Healthcare Services,10.45%,,SOFR,5.00%,,2026-10-15,153682,,,151942,,,,,BXSL,2024-08-07
-Kwol Acquisition Inc.,co_9c4340b9e9d3,First Lien,Healthcare Services,11.43%,,SOFR,6.25%,,2029-12-06,6872,,,6687,,,,,BXSL,2024-08-07
-Navigator Acquiror Inc.,co_3dfe0be08645,First Lien,Healthcare Services,10.96%,,SOFR,5.50%,,2027-07-16,235327,,,234002,,,,,BXSL,2024-08-07
-Odyssey Holding Company LLC,co_75b8c1135e7c,First Lien,Healthcare Services,11.13%,,SOFR,5.75%,,2025-11-16,17037,,,16951,,,,,BXSL,2024-08-07
-Odyssey Holding Company LLC,co_75b8c1135e7c,First Lien,Healthcare Services,11.14%,,SOFR,5.75%,,2025-11-16,1635,,,1623,,,,,BXSL,2024-08-07
-PPV Intermediate Holdings LLC,co_743a0b989f76,First Lien,Healthcare Services,11.14%,,SOFR,5.75%,,2029-08-31,1987,,,1960,,,,,BXSL,2024-08-07
-Smile Doctors LLC,co_54cc4c84644e,First Lien,Healthcare Services,11.30%,,SOFR,5.90%,,2028-12-23,10858,,,10630,,,,,BXSL,2024-08-07
-Eagle Midstream Canada Finance Inc.,co_8df4ad7e97ac,First Lien,Other,11.63%,,SOFR,6.25%,,2028-08-15,65109,64357,64357,,,,,,BXSL,2024-08-07
-KKR Alberta Midstream Finance Inc.,co_0ede2995b94d,First Lien,Other,11.57%,,SOFR,6.25%,,2028-08-15,35421,,,35053,,,,,BXSL,2024-08-07
-Profile Products LLC,co_533a26a3491f,First Lien,Other,10.93%,,SOFR,5.50%,,2027-11-12,7254,,,7183,,,,,BXSL,2024-08-07
-Profile Products LLC,co_533a26a3491f,First Lien,Other,,13.00%,Prime,4.50%,,2027-11-12,134,,,128,,,,,BXSL,2024-08-07
-Profile Products LLC,co_533a26a3491f,First Lien,Other,,13.25%,Prime,4.75%,,2027-11-12,20,,,20,,,,,BXSL,2024-08-07
-Dechra Pharmaceuticals Holdings Ltd.,co_2cfab5481aa1,First Lien,Pharmaceuticals & Biotechnology,10.18%,,E,6.25%,,2031-01-24,1028,,,1125,,,,,BXSL,2024-08-07
-Dechra Pharmaceuticals Holdings Ltd.,co_2cfab5481aa1,First Lien,Pharmaceuticals & Biotechnology,11.43%,,SOFR,6.25%,,2031-01-24,1035,,,1008,,,,,BXSL,2024-08-07
-Doc Generici Diocle S.p.A.,co_1ae8ef85d43a,First Lien,Pharmaceuticals & Biotechnology,10.42%,,E,6.50%,,2028-10-27,1758,1006,1006,,,,,,BXSL,2024-08-07
-Eden Acquisitionco Ltd.,co_096825d4864e,First Lien,Pharmaceuticals & Biotechnology,11.51%,,SOFR,6.25%,,2030-11-18,20388,,,23646,,,,,BXSL,2024-08-07
-Gusto Sing Bidco Pte Ltd.,co_e5e08df367fb,First Lien,Pharmaceuticals & Biotechnology,10.90%,,BB,6.50%,,2028-10-30,1000,,,641,,,,,BXSL,2024-08-07
-ALKU LLC,co_2f494782761d,First Lien,Business Services,11.59%,,SOFR,6.25%,,2029-05-23,794,,,778,,,,,BXSL,2024-08-07
-ALKU LLC,co_2f494782761d,First Lien,Business Services,10.84%,,SOFR,5.50%,,2029-05-23,26595,,,26100,,,,,BXSL,2024-08-07
-Apex Companies LLC,co_f0a59b6f6068,First Lien,Business Services,11.63%,,SOFR,6.25%,,2028-01-31,1605,1565,1565,,,,,,BXSL,2024-08-07
-Apex Companies LLC,co_f0a59b6f6068,First Lien,Business Services,11.09%,,SOFR,5.75%,,2026-03-15,320,,,309,,,,,BXSL,2024-08-07
-Apex Companies LLC,co_f0a59b6f6068,First Lien,Business Services,11.59%,,SOFR,6.25%,,2028-01-31,369,,,365,,,,,BXSL,2024-08-07
-Baker Tilly Advisory Group LP,co_ec8afa61efa0,First Lien,Business Services,10.33%,,SOFR,5.00%,,2031-06-03,44802,,,43925,,,,,BXSL,2024-08-07
-CFGI Holdings LLC,co_63dbc666a4cf,First Lien,Business Services,9.84%,,SOFR,4.50%,,2027-11-02,6925,,,6836,,,,,BXSL,2024-08-07
-Cisive Holdings Corp.,co_f37109bdb472,First Lien,Business Services,11.18%,,SOFR,5.75%,,2028-12-08,8443,,,8324,,,,,BXSL,2024-08-07
-Clearview Buyer Inc.,co_a920e7d8c29c,First Lien,Business Services,10.68%,,SOFR,5.35%,,2027-08-26,7322,,,7217,,,,,BXSL,2024-08-07
-Cumming Group Inc.,co_b43e5107fa90,First Lien,Business Services,10.59%,,SOFR,5.25%,,2027-05-26,79653,,,78913,,,,,BXSL,2024-08-07
-Cumming Group Inc.,co_b43e5107fa90,First Lien,Business Services,10.59%,,SOFR,5.25%,,2027-11-16,11537,,,11335,,,,,BXSL,2024-08-07
-Coupa Software Inc.,co_c0cdee48e352,First Lien,Software,10.83%,,SOFR,5.50%,,2030-02-27,1836,,,1795,,,,,BXSL,2024-08-07
-Crewline Buyer Inc.,co_04efa4bb1c45,First Lien,Software,12.08%,,SOFR,6.75%,,2030-11-08,59936,,,58435,,,,,BXSL,2024-08-07
-Denali Bidco Ltd.,co_483dca36c0d5,First Lien,Software,10.95%,,SOFR,5.75%,,2030-08-29,4022,,,4912,,,,,BXSL,2024-08-07
-Denali Bidco Ltd.,co_483dca36c0d5,First Lien,Software,9.47%,,E,5.75%,,2030-08-29,2798,,,2947,,,,,BXSL,2024-08-07
-Denali Bidco Ltd.,co_483dca36c0d5,First Lien,Software,9.22%,,E,5.50%,,2030-08-29,263,,,275,,,,,BXSL,2024-08-07
-Diligent Corp.,co_043d566b8b97,First Lien,Software,10.34%,,SOFR,5.00%,,2030-08-02,49683,,,49489,,,,,BXSL,2024-08-07
-Diligent Corp.,co_043d566b8b97,First Lien,Software,10.34%,,SOFR,5.00%,,2030-08-02,8517,,,8484,,,,,BXSL,2024-08-07
-Discovery Education Inc.,co_8c3f91ed114d,First Lien,Software,11.09%,,SOFR,5.75%,,2029-04-09,3705,,,3667,,,,,BXSL,2024-08-07
-Discovery Education Inc.,co_8c3f91ed114d,First Lien,Software,11.18%,,SOFR,5.75%,,2029-04-09,35882,,,35485,,,,,BXSL,2024-08-07
-Elements Finco Ltd.,co_8bbfe449607a,First Lien,Software,10.09%,,SOFR,4.75%,,2031-04-30,5046,,,5024,,,,,BXSL,2024-08-07
-Elements Finco Ltd.,co_8bbfe449607a,First Lien,Software,10.20%,,SOFR,5.00%,,2031-04-29,19368,,,23918,,,,,BXSL,2024-08-07
-Elements Finco Ltd.,co_8bbfe449607a,First Lien,Software,10.09%,,SOFR,4.75%,,2031-04-29,6063,,,5993,,,,,BXSL,2024-08-07
-Episerver Inc.,co_7947765206f9,First Lien,Software,10.73%,,SOFR,5.25%,,2026-04-09,9496,,,9433,9381,,,,BXSL,2024-08-07
-Experity Inc.,co_491f66ae2d8b,First Lien,Software,11.18%,,SOFR,5.75%,,2028-02-24,14790,,,14605,14790,,,,BXSL,2024-08-07
-Gigamon Inc.,co_9ebbfee7c50f,First Lien,Software,11.22%,,SOFR,5.75%,,2029-03-09,7289,,,7191,7289,,,,BXSL,2024-08-07
-Gigamon Inc.,co_9ebbfee7c50f,First Lien,Software,11.20%,,SOFR,5.75%,,2029-03-09,175,,,172,,,,,BXSL,2024-08-07
-GovernmentJobs.com Inc.,co_6c582dff3963,First Lien,Software,10.95%,,SOFR,5.50%,,2028-12-01,5143,,,5141,,,,,BXSL,2024-08-07
-GovernmentJobs.com Inc.,co_6c582dff3963,First Lien,Software,10.93%,,SOFR,5.50%,,2028-12-01,118,,,113,,,,,BXSL,2024-08-07
-Granicus Inc.,co_3dd58a0830d5,First Lien,Software,8.82%,2.25%,SOFR,5.75%,,2031-01-17,17431,,,17236,,,,,BXSL,2024-08-07
-Graphpad Software LLC,co_61592fde437f,First Lien,Software,10.08%,,SOFR,4.75%,,2031-06-28,24145,,,23902,,,,,BXSL,2024-08-07
-GS Acquisitionco Inc.,co_da1da76723d6,First Lien,Software,10.58%,,SOFR,5.25%,,2028-05-25,426,,,407,,,,,BXSL,2024-08-07
-GS Acquisitionco Inc.,co_da1da76723d6,First Lien,Software,10.58%,,SOFR,5.25%,,2028-05-25,267,,,257,,,,,BXSL,2024-08-07
-Homecare Software Solutions LLC,co_55777cd657ff,First Lien,Software,10.33%,,SOFR,5.00%,,2031-06-14,14641,,,14496,,,,,BXSL,2024-08-07
-Homecare Software Solutions LLC,co_55777cd657ff,First Lien,Software,10.34%,,SOFR,5.00%,,2031-06-14,669,,,643,,,,,BXSL,2024-08-07
-Icefall Parent Inc.,co_1c11431c6470,First Lien,Software,11.83%,,SOFR,6.50%,,2030-01-25,32592,,,31929,,,,,BXSL,2024-08-07
-IQN Holding Corp.,co_035ad4a474bc,First Lien,Software,10.60%,,SOFR,5.25%,,2029-05-02,4986,,,4950,,,,,BXSL,2024-08-07
-IRI Group Holdings Inc.,co_fd72761785f4,First Lien,Software,10.85%,2.00%,SOFR,5.50%,,2028-12-01,197857,,,195124,,,,,BXSL,2024-08-07
-ISQ Hawkeye Holdco Inc.,co_bc75cb14f0a0,First Lien,Energy,11.38%,,SOFR,6.00%,,2029-08-17,958,,,940,,,,,BXSL,2024-08-07
-ISQ Hawkeye Holdco Inc.,co_bc75cb14f0a0,First Lien,Energy,13.50%,,Prime,5.00%,,2028-08-17,27,,,26,,,,,BXSL,2024-08-07
-LPW Group Holdings Inc.,co_4d280f89b738,First Lien,Energy,11.35%,,SOFR,6.00%,,2031-03-15,26863,,,26092,,,,,BXSL,2024-08-07
-Bamboo US BidCo LLC,co_dbf0b9b0665e,First Lien,Automotive,12.08%,3.38%,SOFR,6.75%,,2030-09-30,708,,,685,,,,,BXSL,2024-08-07
-Bamboo US BidCo LLC,co_dbf0b9b0665e,First Lien,Automotive,10.62%,3.38%,E,6.75%,,2030-09-30,350,,,360,,,,,BXSL,2024-08-07
-CPI Buyer LLC,co_33943775fadc,First Lien,Automotive,11.11%,,SOFR,5.50%,,2028-11-01,30901,,,30501,,,,,BXSL,2024-08-07
-CPI Buyer LLC,co_33943775fadc,First Lien,Automotive,10.83%,,SOFR,5.50%,,2028-11-01,544,,,529,,,,,BXSL,2024-08-07
-GCX Corp.,co_ef1cdc2c06e6,First Lien,Automotive,10.95%,,SOFR,5.50%,,2027-09-13,21395,,,21167,,,,,BXSL,2024-08-07
-GCX Corp.,co_ef1cdc2c06e6,First Lien,Automotive,10.98%,,SOFR,5.50%,,2027-09-13,5418,,,5367,,,,,BXSL,2024-08-07
-Zeus LLC,co_392229c69fb0,First Lien,Automotive,10.83%,,SOFR,5.50%,,2031-02-28,24551,,,24119,,,,,BXSL,2024-08-07
-123Dentist Inc.,co_5db14535c874,First Lien,Healthcare Services,10.27%,,CA,5.50%,,2029-08-10,2128,,,1637,,,,,BXSL,2024-08-07
-ACI Group Holdings Inc.,co_12ac7682544d,First Lien,Healthcare Services,10.94%,,SOFR,5.50%,,2028-08-02,119614,,,117995,,,,,BXSL,2024-08-07
-ACI Group Holdings Inc.,co_12ac7682544d,First Lien,Healthcare Services,10.94%,,SOFR,5.50%,,2027-08-02,2892,,,2773,,,,,BXSL,2024-08-07
-ADCS Clinics Intermediate Holdings LLC,co_dea06e88a294,First Lien,Healthcare Services,11.66%,,SOFR,6.25%,,2027-05-07,6814,,,6749,,,,,BXSL,2024-08-07
-ADCS Clinics Intermediate Holdings LLC,co_dea06e88a294,First Lien,Healthcare Services,11.61%,,SOFR,6.25%,,2027-05-07,1633,,,1620,,,,,BXSL,2024-08-07
-ADCS Clinics Intermediate Holdings LLC,co_dea06e88a294,First Lien,Healthcare Services,11.65%,,SOFR,6.25%,,2026-05-07,149,,,139,,,,,BXSL,2024-08-07
-Amerivet Partners Management Inc.,co_8250e61a6bff,First Lien,Healthcare Services,10.73%,,SOFR,5.25%,,2028-02-25,5572,,,5491,,,,,BXSL,2024-08-07
-Canadian Hospital Specialties Ltd.,co_48759271b1dc,First Lien,Healthcare Services,9.47%,,C,4.50%,,2028-04-14,29477,,,23370,,,,,BXSL,2024-08-07
-CCBlue Bidco Inc.,co_2af3342a144f,First Lien,Healthcare Services,11.94%,,SOFR,6.50%,,2028-12-21,11287,,,11152,,,,,BXSL,2024-08-07
-Continental Buyer Inc.,co_5e0a9ba30095,First Lien,Healthcare Services,10.58%,,SOFR,5.25%,,2031-04-02,18460,,,18101,,,,,BXSL,2024-08-07
-DCA Investment Holdings LLC,co_188bd5058a84,First Lien,Healthcare Services,11.74%,,SOFR,6.41%,,2028-04-03,32688,,,32474,,,,,BXSL,2024-08-07
-DCA Investment Holdings LLC,co_188bd5058a84,First Lien,Healthcare Services,11.83%,,SOFR,6.50%,,2028-04-03,990,,,979,,,,,BXSL,2024-08-07
-DCG Acquisition Corp.,co_da9ff4a8b969,First Lien,Chemicals,,10.08%,SOFR,4.75%,,2031-06-13,35505,,35064,,,43433,43611,,BXSL,2024-08-07
-Formulations Parent Corp.,co_e6d9e5bc8a49,First Lien,Chemicals,,11.07%,SOFR,5.75%,,2030-11-15,8550,,8369,,,43433,43611,,BXSL,2024-08-07
-Bazaarvoice Inc.,co_320549344f5d,First Lien,Industrial Services,,10.54%,SOFR,5.25%,,2028-05-07,225015,,225015,,,,,,BXSL,2024-08-07
-Bazaarvoice Inc.,co_320549344f5d,First Lien,Industrial Services,,10.54%,SOFR,5.25%,,2028-05-07,15168,,15168,,,,,,BXSL,2024-08-07
-CFS Brands LLC,co_37ccca9f73ff,First Lien,Industrial Services,,11.34%,SOFR,6.00%,,2030-10-02,118163,,115619,,,,,,BXSL,2024-08-07
-FusionSite Midco LLC,co_30e0ed2307ee,First Lien,Industrial Services,,11.35%,SOFR,5.75%,,2029-11-17,25851,,25273,,,,,,BXSL,2024-08-07
-FusionSite Midco LLC,co_30e0ed2307ee,First Lien,Industrial Services,,11.36%,SOFR,5.75%,,2029-11-17,9953,,9745,,,,,,BXSL,2024-08-07
-Iris Buyer LLC,co_5a3c5d292df0,First Lien,Industrial Services,,11.59%,SOFR,6.25%,,2030-10-02,27993,,27202,,,,,,BXSL,2024-08-07
-Java Buyer Inc.,co_81c3db1a65a7,First Lien,Industrial Services,,11.19%,SOFR,5.75%,,2027-12-15,4016,,3970,,,,,,BXSL,2024-08-07
-Java Buyer Inc.,co_81c3db1a65a7,First Lien,Industrial Services,,11.17%,SOFR,5.75%,,2027-12-15,1466,,1435,,,,,,BXSL,2024-08-07
-Java Buyer Inc.,co_81c3db1a65a7,First Lien,Industrial Services,,11.20%,SOFR,5.75%,,2027-12-15,2817,,2768,,,,,,BXSL,2024-08-07
-JSS Holdings Inc.,co_4e5ff8de0e6d,First Lien,Industrial Services,,10.70%,SOFR,5.25%,,2030-12-17,286421,,284298,,,,,,BXSL,2024-08-07
-Knowledge Pro Buyer Inc.,co_2b322698bc98,First Lien,Industrial Services,,10.44%,SOFR,5.00%,,2027-12-10,6937,,6836,,,,,,BXSL,2024-08-07
-KPSKY Acquisition Inc.,co_c28869bd420a,First Lien,Industrial Services,,11.03%,SOFR,5.60%,,2028-10-19,20112,,19865,,,,,,BXSL,2024-08-07
-KPSKY Acquisition Inc.,co_c28869bd420a,First Lien,Industrial Services,,10.90%,SOFR,5.50%,,2028-10-19,2316,,2288,,,,,,BXSL,2024-08-07
-Onex Baltimore Buyer Inc.,co_8a11a455ef18,First Lien,Industrial Services,10.96%,,SOFR,6.00%,,2027-12-01,10804,,10661,,10804,,,,BXSL,2024-08-07
-Onex Baltimore Buyer Inc.,co_8a11a455ef18,First Lien,Industrial Services,,10.45%,SOFR,5.00%,,2027-12-01,9561,,9395,,,,,,BXSL,2024-08-07
-Pye-Barker Fire & Safety LLC,co_21eb6c7d75fe,First Lien,Industrial Services,,9.85%,SOFR,4.50%,,2031-05-24,4461,,4461,,,,,,BXSL,2024-08-07
-Pye-Barker Fire & Safety LLC,co_21eb6c7d75fe,First Lien,Industrial Services,,9.84%,SOFR,4.50%,,2031-05-24,5301,,5274,,,,,,BXSL,2024-08-07
-The Hiller Companies LLC,co_52da6e9951aa,First Lien,Industrial Services,,10.34%,SOFR,5.00%,,2030-06-20,8234,,8141,,,,,,BXSL,2024-08-07
-The Hiller Companies LLC,co_52da6e9951aa,First Lien,Industrial Services,,10.34%,SOFR,5.00%,,2030-06-20,48,,33,,,,,,BXSL,2024-08-07
-Veregy Consolidated Inc.,co_46d628acb720,First Lien,Industrial Services,,11.59%,SOFR,6.00%,,2027-11-02,20547,,20275,,,,,,BXSL,2024-08-07
-ASP Endeavor Acquisition LLC,co_c3bbef187c5f,First Lien,Construction,,12.08%,SOFR,6.50%,,2027-05-03,13556,,13427,,,,,,BXSL,2024-08-07
-PT Intermediate Holdings III LLC,co_f22783f7edc5,First Lien,Other,8.58%,1.75%,SOFR,5.00%,,2030-04-09,60376,60226,60226,,,,,,BXSL,2024-08-07
-Tailwind Colony Holding Corp.,co_b024f17c1960,First Lien,Other,11.93%,,SOFR,6.50%,,2026-05-13,47801,47609,47609,,,,,,BXSL,2024-08-07
-Unified Door & Hardware Group LLC,co_27d15efeddb9,First Lien,Other,11.18%,,SOFR,5.75%,,2025-06-30,93265,92849,92849,,,,,,BXSL,2024-08-07
-Unified Door & Hardware Group LLC,co_27d15efeddb9,First Lien,Other,11.18%,,SOFR,5.75%,,2025-06-30,4578,4500,4500,,,,,,BXSL,2024-08-07
-BPPH2 Ltd.,co_75169268ff4b,First Lien,Other,5.20%,6.87%,SOFR,6.87%,,2028-03-02,26300,35861,35861,,,,,,BXSL,2024-08-07
-Cambium Learning Group Inc.,co_5f6fe6ba04d4,First Lien,Other,5.42%,5.50%,SOFR,5.50%,,2028-07-20,287664,285999,285999,,,,,,BXSL,2024-08-07
-Charger Debt Merger Sub LLC,co_fa5da4319a80,First Lien,Other,5.35%,5.00%,SOFR,5.00%,,2031-05-31,11957,11824,11824,,,,,,BXSL,2024-08-07
-Charger Debt Merger Sub LLC,co_fa5da4319a80,First Lien,Other,5.34%,5.00%,SOFR,5.00%,,2031-05-31,172,139,139,,,,,,BXSL,2024-08-07
-DTA Intermediate II Ltd.,co_3f80c9774b46,First Lien,Other,5.34%,5.50%,SOFR,5.50%,,2030-03-27,42969,41942,41942,,,,,,BXSL,2024-08-07
-DTA Intermediate II Ltd.,co_3f80c9774b46,First Lien,Other,5.29%,5.50%,SOFR,5.50%,,2030-03-27,3231,3015,3015,,,,,,BXSL,2024-08-07
-Endeavor Schools Holdings LLC,co_16f69d2a5c2c,First Lien,Other,5.33%,6.25%,SOFR,6.25%,,2029-07-18,22017,21554,21554,,,,,,BXSL,2024-08-07
-Endeavor Schools Holdings LLC,co_16f69d2a5c2c,First Lien,Other,5.32%,6.25%,SOFR,6.25%,,2029-07-18,4059,3913,3913,,,,,,BXSL,2024-08-07
-Essential Services Holding Corp.,co_b57b53be3ba0,First Lien,Other,5.33%,5.00%,SOFR,5.00%,,2031-06-17,11717,11575,11575,,,,,,BXSL,2024-08-07
-Go Car Wash Management Corp.,co_a488cda67850,First Lien,Other,5.44%,6.25%,SOFR,6.25%,,2026-12-31,22389,22150,22150,,,,,,BXSL,2024-08-07
-Barbri Holdings Inc.,co_1c2a3e4f198a,First Lien,Financial Services,5.44%,5.75%,SOFR,5.75%,,2028-04-28,61724,60993,60993,,,,,,BXSL,2024-08-07
-More Cowbell II LLC,co_c3c2c6607013,First Lien,Financial Services,5.09%,6.00%,SOFR,6.00%,,2030-09-01,7977,7791,7791,,,,,,BXSL,2024-08-07
-More Cowbell II LLC,co_c3c2c6607013,First Lien,Financial Services,5.33%,6.00%,SOFR,6.00%,,2029-09-01,488,463,463,,,,,,BXSL,2024-08-07
-RFS Opco LLC,co_e593f9495e2b,First Lien,Financial Services,5.33%,5.00%,SOFR,5.00%,,2031-04-04,9524,9432,9432,,,,,,BXSL,2024-08-07
-SelectQuote Inc.,co_b6564b3b0c7b,First Lien,Financial Services,11.94%,3.00%,SOFR,9.50%,,2025-05-15,72725,72599,72599,,,,,,BXSL,2024-08-07
-Point Broadband Acquisition LLC,co_88ac0c5a847c,First Lien,Telecommunications,5.31%,5.50%,SOFR,5.50%,,2028-10-01,124139,122254,122254,,,,,,BXSL,2024-08-07
-Bazaarvoice Inc.,co_320549344f5d,First Lien,Industrial Services,11.18%,,SOFR,5.75%,,2028-05-07,226169,,226169,,226169,,,,BXSL,2024-08-07
-Bazaarvoice Inc.,co_320549344f5d,First Lien,Industrial Services,11.15%,,SOFR,5.75%,,2028-05-07,15244,,15244,,15244,,,,BXSL,2024-08-07
-CFS Brands LLC,co_37ccca9f73ff,First Lien,Industrial Services,11.34%,,SOFR,6.00%,,2030-10-02,118756,,115999,,118756,,,,BXSL,2024-08-07
-FusionSite Midco LLC,co_30e0ed2307ee,First Lien,Industrial Services,11.36%,,SOFR,5.75%,,2029-11-17,25981,,25347,,25981,,,,BXSL,2024-08-07
-FusionSite Midco LLC,co_30e0ed2307ee,First Lien,Industrial Services,11.39%,,SOFR,5.75%,,2024-11-17,2357,,2224,,2357,,,,BXSL,2024-08-07
-Iris Buyer LLC,co_5a3c5d292df0,First Lien,Industrial Services,11.60%,,SOFR,6.25%,,2030-10-02,26242,,25409,,26242,,,,BXSL,2024-08-07
-Java Buyer Inc.,co_81c3db1a65a7,First Lien,Industrial Services,11.23%,,SOFR,5.75%,,2027-12-15,5936,,5852,,5936,,,,BXSL,2024-08-07
-Java Buyer Inc.,co_81c3db1a65a7,First Lien,Industrial Services,11.12%,,SOFR,5.75%,,2029-11-09,366,,347,,366,,,,BXSL,2024-08-07
-JSS Holdings Inc.,co_4e5ff8de0e6d,First Lien,Industrial Services,11.47%,,SOFR,6.00%,,2028-12-18,283010,,280622,,283010,,,,BXSL,2024-08-07
-JSS Holdings Inc.,co_4e5ff8de0e6d,First Lien,Industrial Services,11.47%,,SOFR,6.00%,,2028-12-17,4888,,4835,,4888,,,,BXSL,2024-08-07
-Knowledge Pro Buyer Inc.,co_2b322698bc98,First Lien,Industrial Services,11.21%,,SOFR,5.75%,,2027-12-10,6111,,5998,,6111,,,,BXSL,2024-08-07
-KPSKY Acquisition Inc.,co_c28869bd420a,First Lien,Industrial Services,10.73%,,SOFR,5.35%,,2028-10-19,20216,,19938,,20216,,,,BXSL,2024-08-07
-KPSKY Acquisition Inc.,co_c28869bd420a,First Lien,Industrial Services,10.76%,,SOFR,5.25%,,2028-10-19,2328,,2297,,2328,,,,BXSL,2024-08-07
-Onex Baltimore Buyer Inc.,co_8a11a455ef18,First Lien,Industrial Services,10.96%,,SOFR,5.50%,,2027-12-01,9173,,8986,,9173,,,,BXSL,2024-08-07
-Veregy Consolidated Inc.,co_46d628acb720,First Lien,Industrial Services,11.64%,,SOFR,6.00%,,2027-11-02,20641,,20327,,20641,,,,BXSL,2024-08-07
-ASP Endeavor Acquisition LLC,co_c3bbef187c5f,First Lien,Construction,12.13%,,SOFR,6.50%,,2027-05-03,13626,,13474,,13626,,,,BXSL,2024-08-07
-COP Home Services TopCo IV Inc.,co_003fbb452390,First Lien,Construction,11.48%,,SOFR,6.00%,,2027-12-31,37710,,36552,,37710,,,,BXSL,2024-08-07
-Ascend Buyer LLC,co_0598d0d465de,First Lien,Packaging,11.90%,,SOFR,6.25%,,2028-10-02,18695,,18442,,18695,,,,BXSL,2024-08-07
-Ascend Buyer LLC,co_0598d0d465de,First Lien,Packaging,11.90%,,SOFR,6.25%,,2028-09-30,1975,,1928,,1975,,,,BXSL,2024-08-07
-Ascend Buyer LLC,co_0598d0d465de,First Lien,Packaging,11.71%,,SOFR,6.25%,,2028-10-02,647,,622,,647,,,,BXSL,2024-08-07
-Pavion Corp.,co_30cfbc7cf33a,First Lien,Business Services,11.08%,,SOFR,5.75%,,2030-10-30,15666,,15404,,,15666,,,BXSL,2024-08-07
-Petrus Buyer Inc.,co_dc09d6dacee4,First Lien,Business Services,10.68%,,SOFR,5.25%,,2029-10-17,1881,,1825,,,1881,,,BXSL,2024-08-07
-STV Group Inc.,co_8922cc638ea0,First Lien,Business Services,10.33%,,SOFR,5.00%,,2031-03-20,24356,,23822,,,24356,,,BXSL,2024-08-07
-STV Group Inc.,co_8922cc638ea0,First Lien,Business Services,12.50%,,Prime,4.00%,,2030-03-20,349,,255,,,349,,,BXSL,2024-08-07
-Thevelia US LLC,co_93d2c404e989,First Lien,Business Services,9.48%,,SOFR,4.00%,,2029-06-18,1289,,1279,,,1289,,,BXSL,2024-08-07
-Titan Investment Company Inc.,co_98e1b21bde5e,First Lien,Business Services,11.23%,,SOFR,5.75%,,2027-03-20,41379,,40502,,,41379,,,BXSL,2024-08-07
-Trinity Air Consultants Holdings Corp.,co_dfb37027e994,First Lien,Business Services,10.66%,,SOFR,5.25%,,2028-06-29,62160,,61368,,,62160,,,BXSL,2024-08-07
-Trinity Air Consultants Holdings Corp.,co_dfb37027e994,First Lien,Business Services,10.62%,,SOFR,5.25%,,2028-06-29,23497,,23304,,,23497,,,BXSL,2024-08-07
-Trinity Partners Holdings LLC,co_a86c59940baa,First Lien,Business Services,10.98%,,SOFR,5.50%,,2028-12-21,4882,,4812,,,4882,,,BXSL,2024-08-07
-West Monroe Partners LLC,co_1b3ba9e3efc8,First Lien,Business Services,11.10%,,SOFR,5.50%,,2028-11-08,14671,,14496,,,14671,,,BXSL,2024-08-07
-West Monroe Partners LLC,co_1b3ba9e3efc8,First Lien,Business Services,11.11%,,SOFR,5.50%,,2027-11-08,289,,289,,,289,,,BXSL,2024-08-07
-Castle Management Borrower LLC,co_51df589a7d7a,First Lien,Real Estate,10.83%,,SOFR,5.50%,,2029-11-03,24092,,23729,,,24092,,,BXSL,2024-08-07
-Neptune BidCo,co_b759b5340fad,First Lien,Real Estate,9.12%,,EUR,5.25%,,2031-04-02,5608,,5904,,,5608,,,BXSL,2024-08-07
-Progress Residential PM Holdings LLC,co_ede17629599e,First Lien,Real Estate,10.94%,,SOFR,5.50%,,2030-08-08,67900,,67181,,,67900,,,BXSL,2024-08-07
-Progress Residential PM Holdings LLC,co_ede17629599e,First Lien,Real Estate,10.94%,,SOFR,5.50%,,2030-08-08,833,,820,,,833,,,BXSL,2024-08-07
-Anaplan Inc.,co_0f6b3874fa95,First Lien,Software,11.08%,,SOFR,5.75%,,2029-06-21,1804,,1776,,,1804,,,BXSL,2024-08-07
-Anaplan Inc.,co_0f6b3874fa95,First Lien,Software,11.08%,,SOFR,5.75%,,2029-06-21,19227,,19040,,,19227,,,BXSL,2024-08-07
-Azurite Intermediate Holdings Inc.,co_17a8cda82bfc,First Lien,Software,11.84%,,SOFR,6.50%,,2031-03-19,27702,,27178,,,27702,,,BXSL,2024-08-07
-Bayshore Intermediate #2 LP,co_58e933a523c1,First Lien,Software,11.05%,,SOFR,5.75%,,2028-10-01,12198,,12138,,,12198,,,BXSL,2024-08-07
-BlueCat Networks USA Inc.,co_b9dc830e22c3,First Lien,Software,11.33%,2.00%,SOFR,6.00%,,2028-08-08,1962,,1935,,,1962,,,BXSL,2024-08-07
-BlueCat Networks USA Inc.,co_b9dc830e22c3,First Lien,Software,11.30%,2.00%,SOFR,6.00%,,2028-08-08,345,,341,,,345,,,BXSL,2024-08-07
-BlueCat Networks USA Inc.,co_b9dc830e22c3,First Lien,Software,11.33%,2.00%,SOFR,6.00%,,2028-08-08,65,,62,,,65,,,BXSL,2024-08-07
-Bluefin Holding LLC,co_222f5b732bb6,First Lien,Software,12.59%,,SOFR,7.25%,,2029-09-12,22756,,22215,,,22756,,,BXSL,2024-08-07
-Gigamon Inc.,co_9ebbfee7c50f,First Lien,Software,11.30%,,SOFR,5.75%,,2029-03-09,7327,7215,7215,,,,,,BXSL,2024-08-07
-GovernmentJobs.com Inc.,co_6c582dff3963,First Lien,Software,10.96%,,SOFR,5.50%,,2028-12-01,5169,5160,5160,,,,,,BXSL,2024-08-07
-GraphPAD Software LLC,co_61592fde437f,First Lien,Software,11.22%,,SOFR,5.50%,,2027-04-27,13518,13435,13435,,,,,,BXSL,2024-08-07
-GraphPAD Software LLC,co_61592fde437f,First Lien,Software,11.19%,,SOFR,5.50%,,2027-04-27,12797,12691,12691,,,,,,BXSL,2024-08-07
-GraphPAD Software LLC,co_61592fde437f,First Lien,Software,11.13%,,SOFR,5.50%,,2027-04-27,6429,6389,6389,,,,,,BXSL,2024-08-07
-GraphPAD Software LLC,co_61592fde437f,First Lien,Software,13.50%,,Prime,5.00%,,2027-04-27,1062,1044,1044,,,,,,BXSL,2024-08-07
-LD Lower Holdings Inc.,co_1c44e1ba443c,First Lien,Software,11.95%,,SOFR,6.50%,,2026-02-08,91518,90747,90747,,,,,,BXSL,2024-08-07
-Lightbox Intermediate LP,co_fc2524f2a361,First Lien,Software,10.61%,,SOFR,5.00%,,2026-05-09,1970,1941,1941,,,,,,BXSL,2024-08-07
-Magnesium BorrowerCo Inc.,co_9c7f9aa523cd,First Lien,Software,11.21%,,SOFR,5.75%,,2029-05-18,5215,5117,5117,,,,,,BXSL,2024-08-07
-Magnesium BorrowerCo Inc.,co_9c7f9aa523cd,First Lien,Software,10.94%,,SOFR,5.75%,,2029-05-18,3408,4174,4174,,,,,,BXSL,2024-08-07
-Mandolin Technology Intermediate Holdings Inc.,co_4da4842cbd61,First Lien,Software,9.25%,,SOFR,3.75%,,2028-07-31,8526,8442,8442,,,,,,BXSL,2024-08-07
-Mandolin Technology Intermediate Holdings Inc.,co_4da4842cbd61,First Lien,Software,11.75%,,SOFR,6.25%,,2030-06-09,6965,6773,6773,,,,,,BXSL,2024-08-07
-Mandolin Technology Intermediate Holdings Inc.,co_4da4842cbd61,First Lien,Software,9.25%,,SOFR,3.75%,,2026-07-31,284,277,277,,,,,,BXSL,2024-08-07
-Medallia Inc.,co_6264231460f8,First Lien,Software,7.45%,4.00%,SOFR,6.00%,,2028-10-29,364077,359655,359655,,,,,,BXSL,2024-08-07
-Medallia Inc.,co_6264231460f8,First Lien,Software,7.45%,4.00%,SOFR,6.50%,,2028-10-29,2136,2105,2105,,,,,,BXSL,2024-08-07
-Monk Holding Co.,co_067d5ea5b7ad,First Lien,Software,10.96%,,SOFR,5.70%,,2027-12-01,4804,4728,4728,,,,,,BXSL,2024-08-07
-Monk Holding Co.,co_067d5ea5b7ad,First Lien,Software,10.96%,,SOFR,5.50%,,2027-12-01,189,179,179,,,,,,BXSL,2024-08-07
-MRI Software LLC,co_9273c7ffbb6e,First Lien,Software,10.95%,,SOFR,5.50%,,2027-02-10,51697,51310,51310,,,,,,BXSL,2024-08-07
-NAVEX TopCo Inc.,co_7651eb40cf26,First Lien,Software,11.11%,,SOFR,5.75%,,2030-11-09,61303,59997,59997,,,,,,BXSL,2024-08-07
-Nintex Topco Ltd.,co_36f99ded6434,First Lien,Software,11.50%,,SOFR,6.00%,,2028-11-13,33866,33395,33395,,,,,,BXSL,2024-08-07
-Oranje Holdco Inc.,co_055c2740c113,First Lien,Software,13.13%,,SOFR,7.75%,,2029-02-01,2000,1952,1952,,,,,,BXSL,2024-08-07
-Rally Buyer Inc.,co_682693ec1283,First Lien,Software,11.12%,,SOFR,5.75%,,2028-07-19,840,827,827,,,,,,BXSL,2024-08-07
-Rally Buyer Inc.,co_682693ec1283,First Lien,Software,11.11%,,SOFR,5.75%,,2028-07-19,44,42,42,,,,,,BXSL,2024-08-07
-Relativity ODA LLC,co_ba854e909c5f,First Lien,Software,11.96%,,SOFR,6.50%,,2027-05-12,21458,21159,21159,,,,,,BXSL,2024-08-07
-Spitfire Parent Inc.,co_5a4289dafdb9,First Lien,Software,10.96%,,SOFR,5.50%,,2027-03-11,78620,77907,77907,,,,,,BXSL,2024-08-07
-Spitfire Parent Inc.,co_5a4289dafdb9,First Lien,Software,9.34%,,E,5.50%,,2027-03-11,10238,12231,12231,,,,,,BXSL,2024-08-07
-Stamps.com Inc.,co_49e9c181b272,First Lien,Software,11.23%,,SOFR,5.75%,,2028-10-05,285199,281318,281318,,,,,,BXSL,2024-08-07
-Caerus US 1 Inc.,co_a348a4088000,First Lien,Automotive,10.33%,,SOFR,5.00%,,2029-05-25,9837,9699,9699,,,,,,BXSL,2024-08-07
-Caerus US 1 Inc.,co_a348a4088000,First Lien,Automotive,10.33%,,SOFR,5.00%,,2029-05-25,2851,2803,2803,,,,,,BXSL,2024-08-07
-Caerus US 1 Inc.,co_a348a4088000,First Lien,Automotive,10.33%,,SOFR,5.00%,,2029-05-25,141,138,138,,,,,,BXSL,2024-08-07
-Caerus US 1 Inc.,co_a348a4088000,First Lien,Automotive,10.33%,,SOFR,5.00%,,2029-05-25,50000,50000,50000,,,,,,BXSL,2024-08-07
-Caerus US 1 Inc.,co_a348a4088000,First Lien,Automotive,10.35%,,SOFR,5.00%,,2029-05-25,257,239,239,,,,,,BXSL,2024-08-07
-Color Intermediate LLC,co_0ce623601f98,First Lien,Automotive,10.93%,,SOFR,5.50%,,2029-10-04,20059,19679,19679,,,,,,BXSL,2024-08-07
-Edifecs Inc.,co_350d414bb4a8,First Lien,Automotive,8.98%,2.35%,SOFR,5.75%,,2026-09-21,13501,13378,13378,,,,,,BXSL,2024-08-07
-Edifecs Inc.,co_350d414bb4a8,First Lien,Automotive,8.98%,2.35%,SOFR,5.75%,,2026-09-21,217779,215769,215769,,,,,,BXSL,2024-08-07
-GI Ranger Intermediate LLC,co_c4f3a0385bef,First Lien,Automotive,11.48%,,SOFR,6.00%,,2028-10-29,16385,16185,16185,,,,,,BXSL,2024-08-07
-Healthcomp Holding Company LLC,co_76ed77b0c1e4,First Lien,Automotive,8.57%,3.00%,SOFR,6.25%,,2029-11-08,99754,98877,98877,,,,,,BXSL,2024-08-07
-Neptune Holdings Inc.,co_5a247831526c,First Lien,Automotive,11.04%,,SOFR,5.75%,,2030-08-31,6965,6792,6792,,,,,,BXSL,2024-08-07
-NMC Crimson Holdings Inc.,co_5a70d9fd5670,First Lien,Automotive,11.54%,,SOFR,6.09%,,2028-03-01,71173,70055,70055,,,,,,BXSL,2024-08-07
-NMC Crimson Holdings Inc.,co_5a70d9fd5670,First Lien,Automotive,11.56%,,SOFR,6.09%,,2028-03-01,14758,14624,14624,,,,,,BXSL,2024-08-07
-Project Ruby Ultimate Parent Corp.,co_53120a491cb5,First Lien,Automotive,8.71%,,SOFR,3.25%,,2028-03-10,8332,8310,8310,,,,,,BXSL,2024-08-07
-Rocky MRA Acquisition Corp.,co_39ab431b4b95,First Lien,Automotive,11.15%,,SOFR,5.75%,,2028-04-01,9301,9197,9197,,,,,,BXSL,2024-08-07
-Alera Group Inc.,co_d6fed5973af6,First Lien,Financial Services,10.59%,,SOFR,5.25%,,2028-10-02,3647,3625,3625,,,,,,BXSL,2024-08-07
-Alera Group Inc.,co_d6fed5973af6,First Lien,Financial Services,11.09%,,SOFR,5.75%,,2028-10-02,210,205,205,,,,,,BXSL,2024-08-07
-Amerilife Holdings LLC,co_79b70b5ba514,First Lien,Financial Services,11.08%,,SOFR,5.75%,,2029-08-31,2667,2620,2620,,,,,,BXSL,2024-08-07
-CFCo LLC,co_5aa301b6e439,First Lien,Financial Services,0.00%,0.00%,,0.00%,,2038-09-13,9566,1397,1397,,,,,,BXSL,2024-08-07
-Daylight Beta Parent LLC,co_1f7cf6eacd34,First Lien,Financial Services,,10.00%,,10.00%,,2033-09-12,5503,5557,5557,,,,,,BXSL,2024-08-07
-Foundation Risk Partners Corp.,co_2669dbde7061,First Lien,Financial Services,10.58%,,SOFR,5.25%,,2030-10-29,15904,15697,15697,,,,,,BXSL,2024-08-07
-Foundation Risk Partners Corp.,co_2669dbde7061,First Lien,Financial Services,10.58%,,SOFR,5.25%,,2030-10-29,3132,3044,3044,,,,,,BXSL,2024-08-07
-Galway Borrower LLC,co_7b729e02e51d,First Lien,Financial Services,10.68%,,SOFR,5.25%,,2028-09-29,12184,11863,11863,,,,,,BXSL,2024-08-07
-Galway Borrower LLC,co_7b729e02e51d,First Lien,Financial Services,10.69%,,SOFR,5.25%,,2028-09-29,1202,1116,1116,,,,,,BXSL,2024-08-07
-Gimlet Bidco GmbH,co_f87eee1e2df2,First Lien,Financial Services,9.64%,,E,5.75%,,2031-04-23,30620,31823,31823,,,,,,BXSL,2024-08-07
-KKR Alberta Midsteam Finance Inc.,co_0ede2995b94d,First Lien,Other,11.63%,,SOFR,6.25%,,2028-08-15,35421,35012,35012,,,,,,BXSL,2024-08-07
-Profile Products LLC,co_533a26a3491f,First Lien,Other,10.99%,,SOFR,5.50%,,2027-11-12,1229,1213,1213,,,,,,BXSL,2024-08-07
-Profile Products LLC,co_533a26a3491f,First Lien,Other,10.95%,,SOFR,5.50%,,2027-11-12,6083,6002,6002,,,,,,BXSL,2024-08-07
-Ergomed Plc,co_9cb6e3fd790d,First Lien,Pharmaceuticals & Biotechnology,11.60%,,SOFR,6.25%,,2030-11-18,20388,20000,20000,,,,,,BXSL,2024-08-07
-ALKU LLC,co_2f494782761d,First Lien,Business Services,11.61%,,SOFR,6.25%,,2029-05-23,798,780,780,,,,,,BXSL,2024-08-07
-CFGI Holdings LLC,co_63dbc666a4cf,First Lien,Business Services,10.46%,,SOFR,5.00%,,2027-11-02,6963,6861,6861,,,,,,BXSL,2024-08-07
-Clearview Buyer Inc.,co_a920e7d8c29c,First Lien,Business Services,10.70%,,SOFR,5.35%,,2027-08-26,9147,9002,9002,,,,,,BXSL,2024-08-07
-Cumming Group Inc.,co_b43e5107fa90,First Lien,Business Services,11.11%,,SOFR,5.75%,,2027-05-26,80061,79273,79273,,,,,,BXSL,2024-08-07
-Cumming Group Inc.,co_b43e5107fa90,First Lien,Business Services,11.11%,,SOFR,5.75%,,2027-11-16,9653,9443,9443,,,,,,BXSL,2024-08-07
-Guidehouse Inc.,co_257e0270d752,First Lien,Business Services,11.11%,2.00%,SOFR,5.75%,,2028-10-16,307012,304883,304883,,,,,,BXSL,2024-08-07
-HIG Orca Acquisition Holdings Inc.,co_1e85ef277003,First Lien,Business Services,11.54%,,SOFR,6.00%,,2027-08-17,19091,18825,18825,,,,,,BXSL,2024-08-07
-HIG Orca Acquisition Holdings Inc.,co_1e85ef277003,First Lien,Business Services,11.50%,,SOFR,6.00%,,2027-08-17,2939,2884,2884,,,,,,BXSL,2024-08-07
-IG Investments Holdings LLC,co_06c540faeacf,First Lien,Business Services,11.48%,,SOFR,6.00%,,2028-09-22,46261,45600,45600,,,,,,BXSL,2024-08-07
-Kaufman Hall & Associates LLC,co_f47ff00e7cb4,First Lien,Business Services,10.71%,,SOFR,5.25%,,2028-12-14,24082,23741,23741,,,,,,BXSL,2024-08-07
-Legacy Intermediate LLC,co_fd9c2bf5ce8c,First Lien,Business Services,11.29%,,SOFR,5.75%,,2028-02-25,6766,6674,6674,,,,,,BXSL,2024-08-07
-Material Holdings LLC,co_64667ba51bdb,First Lien,Business Services,11.45%,,SOFR,6.00%,,2027-08-19,24456,24161,24161,,,,,,BXSL,2024-08-07
-Minotaur Acquisition Inc.,co_6830d716e83b,First Lien,Business Services,10.21%,,SOFR,4.75%,,2026-03-27,1964,1928,1928,,,,,,BXSL,2024-08-07
-Pavion Corp.,co_30cfbc7cf33a,First Lien,Business Services,11.14%,,SOFR,5.75%,,2030-10-30,82156,80193,80193,,,,,,BXSL,2024-08-07
-Medallia Inc.,co_6264231460f8,First Lien,Software,11.93%,4.00%,SOFR,6.50%,,2028-10-29,373657,369663,369663,,,,,,BXSL,2024-08-07
-Monk Holding Co.,co_067d5ea5b7ad,First Lien,Software,11.13%,,SOFR,5.70%,,2027-12-01,4779,4714,4714,,,,,,BXSL,2024-08-07
-Monk Holding Co.,co_067d5ea5b7ad,First Lien,Software,10.93%,,SOFR,5.50%,,2027-12-01,289,281,281,,,,,,BXSL,2024-08-07
-MRI Software LLC,co_9273c7ffbb6e,First Lien,Software,10.93%,,SOFR,5.50%,,2027-02-10,57590,57552,57552,,,,,,BXSL,2024-08-07
-MRI Software LLC,co_9273c7ffbb6e,First Lien,Software,11.08%,,SOFR,5.75%,,2027-02-10,7444,7217,7217,,,,,,BXSL,2024-08-07
-NAVEX TopCo Inc.,co_7651eb40cf26,First Lien,Software,10.83%,,SOFR,5.50%,,2030-11-09,61150,59945,59945,,,,,,BXSL,2024-08-07
-Nintex Topco Ltd.,co_36f99ded6434,First Lien,Software,11.46%,1.50%,SOFR,6.00%,,2028-11-13,33946,33526,33526,,,,,,BXSL,2024-08-07
-Noble Midco 3 Ltd.,co_905c7786110e,First Lien,Software,10.32%,,SOFR,5.00%,,2031-06-24,16792,16581,16581,,,,,,BXSL,2024-08-07
-Oranje Holdco Inc.,co_055c2740c113,First Lien,Software,12.59%,,SOFR,7.25%,,2029-02-01,33969,33291,33291,,,,,,BXSL,2024-08-07
-PDI TA Holdings Inc.,co_d4e76ed2d08c,First Lien,Software,10.58%,,SOFR,5.25%,,2031-02-03,33500,32974,32974,,,,,,BXSL,2024-08-07
-PDI TA Holdings Inc.,co_d4e76ed2d08c,First Lien,Software,10.60%,,SOFR,5.25%,,2031-02-03,4013,3894,3894,,,,,,BXSL,2024-08-07
-Rally Buyer Inc.,co_682693ec1283,First Lien,Software,11.09%,1.75%,SOFR,5.75%,,2028-07-19,882,870,870,,,,,,BXSL,2024-08-07
-Recorded Future Inc.,co_473199530367,First Lien,Software,11.08%,,SOFR,5.75%,,2030-06-28,22872,22490,22490,,,,,,BXSL,2024-08-07
-Relativity ODA LLC,co_ba854e909c5f,First Lien,Software,11.44%,,SOFR,6.00%,,2027-05-12,19337,19111,19111,,,,,,BXSL,2024-08-07
-Scorpio BidCo SAS,co_7efff7021616,First Lien,Software,9.60%,,E,5.75%,,2031-04-30,22826,24639,24639,,,,,,BXSL,2024-08-07
-Spitfire Parent Inc.,co_5a4289dafdb9,First Lien,Software,10.94%,,SOFR,5.50%,,2027-03-11,78218,77619,77619,,,,,,BXSL,2024-08-07
-Spitfire Parent Inc.,co_5a4289dafdb9,First Lien,Software,9.15%,,E,5.50%,,2027-03-11,10185,12187,12187,,,,,,BXSL,2024-08-07
-Stamps.com Inc.,co_49e9c181b272,First Lien,Software,11.18%,,SOFR,5.75%,,2028-10-05,283747,280291,280291,,,,,,BXSL,2024-08-07
-Triple Lift Inc.,co_72a16a9e1dff,First Lien,Software,11.24%,,SOFR,5.75%,,2028-05-05,61343,60647,60647,,,,,,BXSL,2024-08-07
-Triple Lift Inc.,co_72a16a9e1dff,First Lien,Software,11.21%,,SOFR,5.75%,,2028-05-05,2951,2866,2866,,,,,,BXSL,2024-08-07
-WPEngine Inc.,co_5bb52fd1c6ba,First Lien,Software,11.82%,,SOFR,6.50%,,2029-08-14,66667,64790,64790,,,,,,BXSL,2024-08-07
-Zendesk Inc.,co_97d76b2239a5,First Lien,Software,11.60%,,SOFR,6.25%,,2028-11-22,1623,1595,1595,,,,,,BXSL,2024-08-07
-CustomInk LLC,co_a106d9901814,First Lien,Retail,11.61%,,SOFR,6.18%,,2026-05-03,163594,162787,162787,,,,,,BXSL,2024-08-07
-US Oral Surgery Management Holdco LLC,co_a6e9354fd2fe,First Lien,Healthcare Services,11.47%,,SOFR,6.00%,,2027-11-18,31780,31369,31369,,,,,,BXSL,2024-08-07
-US Oral Surgery Management Holdco LLC,co_a6e9354fd2fe,First Lien,Healthcare Services,11.45%,,SOFR,6.00%,,2027-11-18,16674,15958,15958,,,,,,BXSL,2024-08-07
-WHCG Purchaser III Inc.,co_e6e79890b8a2,First Lien,Healthcare Services,11.36%,,SOFR,5.75%,,2028-06-22,43309,42785,42785,,,,,,BXSL,2024-08-07
-WHCG Purchaser III Inc.,co_e6e79890b8a2,First Lien,Healthcare Services,11.36%,,SOFR,5.75%,,2026-06-22,6706,6640,6640,,,,,,BXSL,2024-08-07
-Caerus US 1 Inc.,co_a348a4088000,First Lien,Automotive,10.85%,,SOFR,5.50%,,2029-05-25,9887,9735,9735,,,,,,BXSL,2024-08-07
-Caerus US 1 Inc.,co_a348a4088000,First Lien,Automotive,11.10%,,SOFR,5.75%,,2029-05-25,3163,3106,3106,,,,,,BXSL,2024-08-07
-Caerus US 1 Inc.,co_a348a4088000,First Lien,Automotive,11.21%,,SOFR,5.75%,,2029-05-25,809,789,789,,,,,,BXSL,2024-08-07
-Color Intermediate LLC,co_0ce623601f98,First Lien,Automotive,10.95%,,SOFR,5.50%,,2029-10-04,20160,19742,19742,,,,,,BXSL,2024-08-07
-Edifecs Inc.,co_350d414bb4a8,First Lien,Automotive,11.10%,,SOFR,5.75%,,2026-09-21,13447,13296,13296,,,,,,BXSL,2024-08-07
-Edifecs Inc.,co_350d414bb4a8,First Lien,Automotive,11.10%,,SOFR,5.75%,,2026-09-21,216910,214450,214450,,,,,,BXSL,2024-08-07
-GI Ranger Intermediate LLC,co_c4f3a0385bef,First Lien,Automotive,11.25%,,SOFR,5.75%,,2028-10-29,15726,15515,15515,,,,,,BXSL,2024-08-07
-GI Ranger Intermediate LLC,co_c4f3a0385bef,First Lien,Automotive,11.25%,,SOFR,5.75%,,2027-10-29,720,705,705,,,,,,BXSL,2024-08-07
-Healthcomp Holding Company LLC,co_76ed77b0c1e4,First Lien,Automotive,11.12%,,SOFR,5.75%,,2029-11-08,98500,97540,97540,,,,,,BXSL,2024-08-07
-Neptune Holdings Inc.,co_5a247831526c,First Lien,Automotive,11.50%,,SOFR,6.00%,,2030-08-31,7000,6811,6811,,,,,,BXSL,2024-08-07
-Project Ruby Ultimate Parent Corp.,co_53120a491cb5,First Lien,Automotive,8.72%,,SOFR,3.25%,,2028-03-10,8375,8178,8178,,,,,,BXSL,2024-08-07
-RPBLS Midco LLC,co_9fe55e49b84a,First Lien,Automotive,11.25%,,SOFR,5.75%,,2028-04-01,7388,7283,7283,,,,,,BXSL,2024-08-07
-RPBLS Midco LLC,co_9fe55e49b84a,First Lien,Automotive,11.25%,,SOFR,5.75%,,2028-04-01,1961,1947,1947,,,,,,BXSL,2024-08-07
-Alera Group Inc.,co_d6fed5973af6,First Lien,Financial Services,11.46%,,SOFR,6.00%,,2028-10-02,3666,3635,3635,,,,,,BXSL,2024-08-07
-Amerilife Holdings LLC,co_79b70b5ba514,First Lien,Financial Services,11.14%,,SOFR,5.75%,,2029-08-31,2154,2110,2110,,,,,,BXSL,2024-08-07
-CFCo LLC,co_5aa301b6e439,First Lien,Financial Services,,,,0.00%,0.00%,2038-09-13,9566,1397,1397,,,,,,BXSL,2024-08-07
-Daylight Beta Parent LLC,co_1f7cf6eacd34,First Lien,Financial Services,,,,10.00%,10.00% PIK,2033-09-12,5419,5475,5475,,,,,,BXSL,2024-08-07
-Cambium Learning Group Inc.,co_5f6fe6ba04d4,First Lien,Other,11.02%,,SOFR,5.50%,,2028-07-20,289143,,287264,,,,,,BXSL,2024-08-07
-Endeavor Schools Holdings LLC,co_16f69d2a5c2c,First Lien,Other,11.65%,,SOFR,6.25%,,2029-07-18,22128,,21617,,,,,,BXSL,2024-08-07
-Endeavor Schools Holdings LLC,co_16f69d2a5c2c,First Lien,Other,11.64%,,SOFR,6.25%,,2029-07-18,4073,,3912,,,,,,BXSL,2024-08-07
-Go Car Wash Management Corp.,co_a488cda67850,First Lien,Other,11.71%,,SOFR,6.25%,,2026-12-31,22503,,22215,,,,,,BXSL,2024-08-07
-Groundworks LLC,co_a472bc28d7de,First Lien,Other,11.90%,,SOFR,6.50%,,2030-03-14,804,,784,,,,,,BXSL,2024-08-07
-Barbri Holdings Inc.,co_1c2a3e4f198a,First Lien,Financial Services,11.21%,,SOFR,5.75%,,2028-04-28,58939,,58189,,,,,,BXSL,2024-08-07
-More Cowbell II LLC,co_c3c2c6607013,First Lien,Financial Services,11.73%,,SOFR,6.00%,,2030-09-01,7997,,7796,,,,,,BXSL,2024-08-07
-More Cowbell II LLC,co_c3c2c6607013,First Lien,Financial Services,11.73%,,SOFR,6.00%,,2029-09-01,209,,182,,,,,,BXSL,2024-08-07
-SelectQuote Inc.,co_b6564b3b0c7b,First Lien,Financial Services,14.96%,3.00%,SOFR,9.50%,,2024-11-05,73931,,73610,,,,,,BXSL,2024-08-07
-Point Broadband Acquisition LLC,co_88ac0c5a847c,First Lien,Telecommunications,11.51%,,SOFR,6.00%,,2028-10-01,85486,,84036,,,,,,BXSL,2024-08-07
-Point Broadband Acquisition LLC,co_88ac0c5a847c,First Lien,Telecommunications,11.46%,,SOFR,6.00%,,2028-10-01,38969,,38308,,,,,,BXSL,2024-08-07
-Qualus Power Services Corp.,co_f365b7ba3405,First Lien,Energy,10.24%,,SOFR,4.75%,,2027-03-26,33122,,32692,,,,,,BXSL,2024-08-07
-Qualus Power Services Corp.,co_f365b7ba3405,First Lien,Energy,11.14%,,SOFR,5.75%,,2027-03-26,32042,,31372,,,,,,BXSL,2024-08-07
-Emergency Power Holdings LLC,co_2dd16c5b08f3,First Lien,Other,10.95%,,SOFR,5.50%,,2028-08-17,46229,,45525,,,,,,BXSL,2024-08-07
-Shoals Holdings LLC,co_5c60ec63fd97,First Lien,Other,11.28%,,SOFR,5.75%,,2026-11-25,61350,,60596,,,,,,BXSL,2024-08-07
-Albireo Energy LLC,co_c4b45f8d357e,First Lien,Technology Hardware,11.46%,,SOFR,6.00%,,2026-12-23,78146,,77371,,,,,,BXSL,2024-08-07
-Corfin Holdings Inc.,co_13563ec0840a,First Lien,Aerospace & Defense,11.46%,,SOFR,6.00%,,2027-12-27,198259,,196240,,,,,,BXSL,2024-08-07
-Corfin Holdings Inc.,co_13563ec0840a,First Lien,Aerospace & Defense,11.46%,,SOFR,6.00%,,2026-02-05,68557,,67944,,,,,,BXSL,2024-08-07
-Frontgrade Technologies Holdings Inc.,co_bd7632937759,First Lien,Aerospace & Defense,12.10%,,SOFR,6.75%,,2030-01-09,2370,,2300,,,,,,BXSL,2024-08-07
-Linquest Corp.,co_31f141ccc8e1,First Lien,Aerospace & Defense,11.23%,,SOFR,5.75%,,2028-07-28,9738,,9611,,,,,,BXSL,2024-08-07
-MAG DS Corp.,co_c49257271dab,First Lien,Aerospace & Defense,10.95%,,SOFR,5.50%,,2027-04-01,80440,,76623,,,,,,BXSL,2024-08-07
-Magneto Components BuyCo LLC,co_8ee995ad93dc,First Lien,Aerospace & Defense,11.36%,,SOFR,6.00%,,2030-12-05,33326,,32284,,,,,,BXSL,2024-08-07
-Maverick Acquisition Inc.,co_1ea35689c2a1,First Lien,Aerospace & Defense,11.60%,,SOFR,6.25%,,2027-06-01,18599,,18383,,,,,,BXSL,2024-08-07
-TCFI AEVEX LLC,co_ffe25c80a363,First Lien,Aerospace & Defense,11.46%,,SOFR,6.00%,,2026-03-18,110230,,109390,,,,,,BXSL,2024-08-07
-AGI-CFI Holdings Inc.,co_12186169ddbd,First Lien,Transportation,11.25%,,SOFR,5.75%,,2027-06-11,76971,,76054,,,,,,BXSL,2024-08-07
-AGI-CFI Holdings Inc.,co_12186169ddbd,First Lien,Transportation,11.18%,,SOFR,5.75%,,2027-06-11,18446,,18221,,,,,,BXSL,2024-08-07
-ENV Bidco AB,co_5f315cee0466,First Lien,Transportation,11.10%,,SOFR,5.75%,,2029-07-19,1006,,986,,,,,,BXSL,2024-08-07
-ENV Bidco AB,co_5f315cee0466,First Lien,Transportation,9.68%,,E,5.75%,,2029-07-19,1122,,948,,,,,,BXSL,2024-08-07
-Livingston International Inc.,co_45fbb5f3dc35,First Lien,Transportation,10.95%,,SOFR,5.50%,,2027-04-30,127544,,125771,,,,,,BXSL,2024-08-07
-Mode Purchaser Inc.,co_55645c0962a7,First Lien,Transportation,11.77%,,SOFR,6.25%,,2026-12-09,143110,,141909,,,,,,BXSL,2024-08-07
-Mode Purchaser Inc.,co_55645c0962a7,First Lien,Transportation,11.77%,,SOFR,6.25%,,2029-02-05,4085,,4026,,,,,,BXSL,2024-08-07
-Redwood Services Group LLC,co_09803b676c7a,First Lien,Transportation,11.70%,,SOFR,6.25%,,2029-06-15,4492,,4395,,,,,,BXSL,2024-08-07
-RoadOne Inc.,co_ee1cd15309ba,First Lien,Transportation,11.72%,,SOFR,6.25%,,2028-12-30,1098,,1062,,,,,,BXSL,2024-08-07
-RWL Holdings LLC,co_c51f7dc597d0,First Lien,Transportation,11.25%,,SOFR,5.75%,,2028-12-31,30323,,29893,,,,,,BXSL,2024-08-07
-SEKO Global Logistics Network LLC,co_89c47e7c1b19,First Lien,Transportation,10.72%,,SOFR,5.00%,,2026-12-30,5475,,5431,,,,,,BXSL,2024-08-07
-SEKO Global Logistics Network LLC,co_89c47e7c1b19,First Lien,Transportation,12.50%,,Prime,4.00%,,2026-12-30,180,,175,,,,,,BXSL,2024-08-07
-SEKO Global Logistics Network LLC,co_89c47e7c1b19,First Lien,Transportation,10.66%,,SOFR,5.00%,,2026-12-30,791,,785,,,,,,BXSL,2024-08-07
-SEKO Global Logistics Network LLC,co_89c47e7c1b19,First Lien,Transportation,8.89%,,E,5.00%,,2026-12-30,1835,,2107,,,,,,BXSL,2024-08-07
-Aevex Holdings LLC,co_dc363e0540da,First Lien,Aerospace & Defense,,SOFR,6.00%,,2026-03-18,47548,,47115,,,,,,,BXSL,2024-08-07
-Corfin Holdings Inc.,co_13563ec0840a,First Lien,Aerospace & Defense,,SOFR,6.00%,,2027-12-31,265625,,263401,,,,,,,BXSL,2024-08-07
-Frontgrade Technologies Holdings Inc.,co_bd7632937759,First Lien,Aerospace & Defense,,SOFR,5.00%,,2030-01-09,2358,,2295,,,,,,,BXSL,2024-08-07
-Linquest Corp.,co_31f141ccc8e1,First Lien,Aerospace & Defense,,SOFR,5.75%,,2028-07-28,9688,,9576,,,,,,,BXSL,2024-08-07
-MAG DS Corp.,co_c49257271dab,First Lien,Aerospace & Defense,,SOFR,5.50%,,2027-04-01,80001,,76787,,,,,,,BXSL,2024-08-07
-Magneto Components BuyCo LLC,co_8ee995ad93dc,First Lien,Aerospace & Defense,,SOFR,6.00%,,2030-12-05,33243,,32279,,,,,,,BXSL,2024-08-07
-Maverick Acquisition Inc.,co_1ea35689c2a1,First Lien,Aerospace & Defense,,SOFR,6.25%,,2027-06-01,18504,,18321,,,,,,,BXSL,2024-08-07
-TCFI AEVEX LLC,co_ffe25c80a363,First Lien,Aerospace & Defense,,SOFR,6.00%,,2026-03-18,109659,,109012,,,,,,,BXSL,2024-08-07
-AGI-CFI Holdings Inc.,co_12186169ddbd,First Lien,Transportation,,SOFR,5.75%,,2027-06-11,94929,,93957,,,,,,,BXSL,2024-08-07
-ENV Bidco AB,co_5f315cee0466,First Lien,Transportation,,SOFR,5.75%,,2029-07-19,1006,,988,,,,,,,BXSL,2024-08-07
-ENV Bidco AB,co_5f315cee0466,First Lien,Transportation,,E,5.75%,,2029-07-19,1122,,950,,,,,,,BXSL,2024-08-07
-Livingston International Inc.,co_45fbb5f3dc35,First Lien,Transportation,,SOFR,5.50%,,2027-04-30,125376,,124001,,,,,,,BXSL,2024-08-07
-Mode Purchaser Inc.,co_55645c0962a7,First Lien,Transportation,,SOFR,6.25%,,2026-12-09,139345,,138374,,,,,,,BXSL,2024-08-07
-Mode Purchaser Inc.,co_55645c0962a7,First Lien,Transportation,,SOFR,6.25%,,2029-02-05,3978,,3925,,,,,,,BXSL,2024-08-07
-RoadOne Inc.,co_ee1cd15309ba,First Lien,Transportation,,SOFR,6.25%,,2028-12-30,1093,,1063,,,,,,,BXSL,2024-08-07
-RWL Holdings LLC,co_c51f7dc597d0,First Lien,Transportation,,SOFR,5.75%,,2028-12-31,30170,,29784,,,,,,,BXSL,2024-08-07
-SEKO Global Logistics Network LLC,co_89c47e7c1b19,First Lien,Transportation,,SOFR,5.00%,,2026-12-30,6250,,6209,,,,,,,BXSL,2024-08-07
-SEKO Global Logistics Network LLC,co_89c47e7c1b19,First Lien,Transportation,,SOFR,5.00%,,2026-12-30,359,,356,,,,,,,BXSL,2024-08-07
-SEKO Global Logistics Network LLC,co_89c47e7c1b19,First Lien,Transportation,,E,5.00%,,2026-12-30,1821,,2094,,,,,,,BXSL,2024-08-07
-Dellner Couplers Group AB,co_5d30b11d8aab,First Lien,Automotive,,E,5.50%,,2029-06-18,1000,,1059,,,,,,,BXSL,2024-08-07
-Fencing Supply Group Acquisition LLC,co_924bcda64bbb,First Lien,Other,,SOFR,6.00%,,2027-02-26,53288,,52923,,,,,,,BXSL,2024-08-07
-Castle Management Borrower LLC,co_51df589a7d7a,First Lien,Real Estate,10.84%,,SOFR,5.50%,,2029-11-03,23333,,22935,,,,,,BXSL,2024-08-07
-Progress Residential PM Holdings LLC,co_ede17629599e,First Lien,Real Estate,10.96%,,SOFR,5.50%,,2028-02-16,67900,,67076,,,,,,BXSL,2024-08-07
-Progress Residential PM Holdings LLC,co_ede17629599e,First Lien,Real Estate,10.96%,,SOFR,5.50%,,2029-07-25,833,,818,,,,,,BXSL,2024-08-07
-Beeline LLC,co_ea858dedd534,First Lien,Software,10.64%,,SOFR,5.25%,,2029-05-02,4942,,4900,,,,,,BXSL,2024-08-07
-BlueCat Networks USA Inc.,co_b9dc830e22c3,First Lien,Software,11.38%,2.00%,SOFR,6.00%,,2028-08-08,1952,,1921,,,,,,BXSL,2024-08-07
-BlueCat Networks USA Inc.,co_b9dc830e22c3,First Lien,Software,11.42%,2.00%,SOFR,6.00%,,2028-08-08,343,,338,,,,,,BXSL,2024-08-07
-Brave Parent Holdings Inc.,co_f478344bf025,First Lien,Software,10.36%,,SOFR,5.00%,,2030-11-28,64078,,63356,,,,,,BXSL,2024-08-07
-Circana Group LP,co_c901db7807ae,First Lien,Software,11.21%,,SOFR,5.75%,,2028-12-01,120332,,118430,,,,,,BXSL,2024-08-07
-Circana Group LP,co_c901db7807ae,First Lien,Software,11.61%,2.75%,SOFR,6.25%,,2028-12-01,77153,,76001,,,,,,BXSL,2024-08-07
-Circana Group LP,co_c901db7807ae,First Lien,Software,11.11%,,SOFR,5.75%,,2027-12-01,2484,,2264,,,,,,BXSL,2024-08-07
-Community Brands ParentCo LLC,co_da98764cecf0,First Lien,Software,10.96%,,SOFR,5.50%,,2028-02-24,4913,,4835,,,,,,BXSL,2024-08-07
-Confine Visual Bidco,co_180296dc33cf,First Lien,Software,11.81%,3.00%,SOFR,6.50%,,2029-02-23,16163,,15813,,,,,,BXSL,2024-08-07
-Connatix Buyer Inc.,co_ca0c6acae604,First Lien,Software,11.14%,,SOFR,5.50%,,2027-07-14,21591,,21273,,,,,,BXSL,2024-08-07
-Coupa Software Inc.,co_c0cdee48e352,First Lien,Software,12.86%,,SOFR,7.50%,,2030-02-27,1836,,1791,,,,,,BXSL,2024-08-07
-Denali Bidco Ltd.,co_483dca36c0d5,First Lien,Software,9.84%,,E,6.00%,,2030-08-29,1166,,1226,,,,,,BXSL,2024-08-07
-Diligent Corp.,co_043d566b8b97,First Lien,Software,11.28%,,SOFR,5.75%,,2025-08-04,58350,,58051,,,,,,BXSL,2024-08-07
-Discovery Education Inc.,co_8c3f91ed114d,First Lien,Software,11.14%,,SOFR,5.75%,,2030-10-03,3724,,3683,,,,,,BXSL,2024-08-07
-Discovery Education Inc.,co_8c3f91ed114d,First Lien,Software,11.23%,,SOFR,5.75%,,2029-04-09,33090,,32649,,,,,,BXSL,2024-08-07
-Episerver Inc.,co_7947765206f9,First Lien,Software,10.75%,,SOFR,5.25%,,2026-04-09,9545,,9464,,,,,,BXSL,2024-08-07
-Experity Inc.,co_491f66ae2d8b,First Lien,Software,11.20%,,SOFR,5.75%,,2028-02-24,14828,,14618,,,,,,BXSL,2024-08-07
-Paisley Bidco Ltd.,co_1319d9d0ff80,First Lien,Financial Services,10.45%,,SOFR,5.25%,,2031-04-18,5204,,6401,,,,,,BXSL,2024-08-07
-Paisley Bidco Ltd.,co_1319d9d0ff80,First Lien,Financial Services,9.12%,,E,5.25%,,2031-04-18,3420,,3627,,,,,,BXSL,2024-08-07
-PGIS Intermediate Holdings LLC,co_4a34c5c38d9c,First Lien,Financial Services,10.48%,,SOFR,5.00%,,2028-10-16,4567,,4521,,,,,,BXSL,2024-08-07
-PGIS Intermediate Holdings LLC,co_4a34c5c38d9c,First Lien,Financial Services,11.09%,,SOFR,5.75%,,2028-10-16,1318,,1280,,,,,,BXSL,2024-08-07
-SG Acquisition Inc.,co_0b14e9f96163,First Lien,Financial Services,10.30%,,SOFR,5.00%,,2030-04-03,136345,,135279,,,,,,BXSL,2024-08-07
-Shelf Bidco Ltd.,co_f9e084dc6b85,First Lien,Financial Services,12.01%,,SOFR,6.34%,,2030-01-03,5053,,4933,,,,,,BXSL,2024-08-07
-Tennessee Bidco Ltd.,co_3e55a9d87100,First Lien,Financial Services,8.37%,2.50%,E,7.00%,,2028-08-03,1858,,1950,,,,,,BXSL,2024-08-07
-Tennessee Bidco Ltd.,co_3e55a9d87100,First Lien,Financial Services,9.87%,2.50%,SOFR,7.10%,,2028-07-09,55420,,54479,,,,,,BXSL,2024-08-07
-Tennessee Bidco Ltd.,co_3e55a9d87100,First Lien,Financial Services,9.87%,2.50%,SOFR,7.10%,,2028-08-03,16520,,16363,,,,,,BXSL,2024-08-07
-Tennessee Bidco Ltd.,co_3e55a9d87100,First Lien,Financial Services,9.96%,2.50%,SOFR,7.28%,,2028-07-09,44437,,60504,,,,,,BXSL,2024-08-07
-World Insurance Associates LLC,co_e9b1fcd3d8d5,First Lien,Financial Services,11.33%,,SOFR,6.00%,,2028-04-03,38017,,36929,,,,,,BXSL,2024-08-07
-Identity Digital Inc.,co_6e79b9cdaf2b,First Lien,Media & Entertainment,10.78%,,SOFR,5.25%,,2027-12-29,317534,,314363,,,,,,BXSL,2024-08-07
-AI Altius Bidco Inc.,co_0489bd3c10c3,Other Debt,Software,,9.75%,,9.75%,,2029-12-21,1013,,998,,,,,,BXSL,2024-08-07
-AI Altius Bidco Inc.,co_0489bd3c10c3,First Lien,Software,10.03%,,SOFR,4.75%,,2028-12-21,982,,976,,,,,,BXSL,2024-08-07
-AI Altius Bidco Inc.,co_0489bd3c10c3,First Lien,Software,10.03%,,SOFR,4.75%,,2028-12-21,6550,,6467,,,,,,BXSL,2024-08-07
-Allium Buyer LLC,co_74d47cb88f75,First Lien,Software,12.08%,,SOFR,6.75%,,2030-05-02,1588,,1542,,,,,,BXSL,2024-08-07
-Infostretch Corp.,co_0c4739ba0058,First Lien,Software,11.23%,,SOFR,5.75%,,2028-04-01,4900,,4839,,,,,,BXSL,2024-08-07
-Inovalon Holdings Inc.,co_b1163ca4a88a,First Lien,Software,9.09%,2.75%,SOFR,6.25%,,2028-11-24,110766,,109140,,,,,,BXSL,2024-08-07
-Inovalon Holdings Inc.,co_b1163ca4a88a,First Lien,Software,9.09%,2.75%,SOFR,6.25%,,2028-11-24,8061,,7953,,,,,,BXSL,2024-08-07
-KEN Bidco Ltd.,co_f7b7624a34d0,First Lien,Software,11.31%,,SOFR,6.00%,,2028-08-03,9281,,11310,,,,,,BXSL,2024-08-07
-Monterey Financing Sarl,co_74e4ca22f342,First Lien,Software,9.72%,,ST,6.00%,,2029-09-28,2090,,185,,,,,,BXSL,2024-08-07
-Monterey Financing Sarl,co_74e4ca22f342,First Lien,Software,9.65%,,E,6.00%,,2029-09-28,952,,789,,,,,,BXSL,2024-08-07
-Monterey Financing Sarl,co_74e4ca22f342,First Lien,Software,9.60%,,CI,6.00%,,2029-09-28,4819,,621,,,,,,BXSL,2024-08-07
-Monterey Financing Sarl,co_74e4ca22f342,First Lien,Software,10.63%,,N,6.00%,,2029-09-28,5149,,464,,,,,,BXSL,2024-08-07
-Integrity Marketing Acquisition LLC,co_c54435bdb6e3,First Lien,Financial Services,11.39%,,SOFR,6.00%,,2025-08-27,1281,,1194,,,,,,BXSL,2024-08-07
-Integrity Marketing Acquisition LLC,co_c54435bdb6e3,First Lien,Financial Services,11.52%,,SOFR,6.03%,,2025-08-27,4039,,4006,,,,,,BXSL,2024-08-07
-PGIS Intermediate Holdings LLC,co_4a34c5c38d9c,First Lien,Financial Services,10.93%,,SOFR,5.50%,,2028-10-16,4591,,4546,,,,,,BXSL,2024-08-07
-PGIS Intermediate Holdings LLC,co_4a34c5c38d9c,First Lien,Financial Services,11.10%,,SOFR,5.75%,,2028-10-16,302,,252,,,,,,BXSL,2024-08-07
-SG Acquisition Inc.,co_0b14e9f96163,First Lien,Financial Services,10.98%,,SOFR,5.50%,,2027-01-27,104974,,104154,,,,,,BXSL,2024-08-07
-Shelf Bidco Ltd.,co_f9e084dc6b85,First Lien,Financial Services,11.72%,,SOFR,6.34%,,2030-01-03,5079,,4947,,,,,,BXSL,2024-08-07
-Tennessee Bidco Ltd.,co_3e55a9d87100,First Lien,Financial Services,8.47%,2.50%,E,7.00%,,2028-08-03,1835,,1912,,,,,,BXSL,2024-08-07
-Tennessee Bidco Ltd.,co_3e55a9d87100,First Lien,Financial Services,10.03%,2.50%,SOFR,7.10%,,2028-07-09,54713,,53656,,,,,,BXSL,2024-08-07
-Tennessee Bidco Ltd.,co_3e55a9d87100,First Lien,Financial Services,9.93%,2.50%,SOFR,7.10%,,2028-08-03,16298,,16122,,,,,,BXSL,2024-08-07
-Tennessee Bidco Ltd.,co_3e55a9d87100,First Lien,Financial Services,9.71%,2.50%,SOFR,7.28%,,2028-07-09,43764,,59538,,,,,,BXSL,2024-08-07
-World Insurance Associates LLC,co_e9b1fcd3d8d5,First Lien,Financial Services,11.42%,,SOFR,6.00%,,2028-04-03,38208,,36970,,,,,,BXSL,2024-08-07
-Donuts Inc.,co_186d01ad1935,First Lien,Media & Entertainment,11.59%,,SOFR,6.00%,,2026-12-29,319179,,315538,,,,,,BXSL,2024-08-07
-AI Altius Bidco Inc.,co_0489bd3c10c3,First Lien,Software,,9.75%,,9.75%,,2029-12-21,965,,948,,,,,,BXSL,2024-08-07
-AI Altius Bidco Inc.,co_0489bd3c10c3,First Lien,Software,10.43%,,SOFR,5.18%,,2028-12-21,6612,,6522,,,,,,BXSL,2024-08-07
-Infostretch Corp.,co_0c4739ba0058,First Lien,Software,11.25%,,SOFR,5.75%,,2028-04-01,4925,,4855,,,,,,BXSL,2024-08-07
-Inovalon Holdings Inc.,co_b1163ca4a88a,First Lien,Software,8.97%,2.75%,SOFR,6.25%,,2028-11-24,109741,,107835,,,,,,BXSL,2024-08-07
-Monterey Financing SARL,co_9b435f3815c9,First Lien,Software,9.93%,,E,6.00%,,2029-09-28,658,,625,,,,,,BXSL,2024-08-07
-Monterey Financing SARL,co_9b435f3815c9,First Lien,Software,9.97%,,E,6.00%,,2029-09-28,295,,161,,,,,,BXSL,2024-08-07
-Razor Holdco LLC,co_d2eb167c8dc8,First Lien,Software,11.23%,,SOFR,5.75%,,2027-10-25,36970,,36500,,,,,,BXSL,2024-08-07
-Healthcomp Holding Company LLC,co_76ed77b0c1e4,Other Debt,Automotive,13.75%,13.75%,,13.75%,,2031-11-08,10231,,9930,,9930,,,,BXSL,2024-08-07
-Micross Topco Inc.,co_c56c87e1d6e6,Other Equity,,,,,,n/a,,,4767,4767,,4767,,,,BXSL,2024-08-07
-AGI Group Holdings LP,co_7a7c59ae2580,Other Equity,Aerospace & Defense,,,,,n/a,,,902,902,,902,,,,BXSL,2024-08-07
-Mode Holdings LP,co_d601a7632291,Other Equity,Aerospace & Defense,,,,,n/a,,,5486923,5487,,5487,,,,BXSL,2024-08-07
-GTCR Investors LP,co_766605e0606d,Other Equity,Industrial Services,,,,,n/a,,,417006,417,,417,,,,BXSL,2024-08-07
-Box Co-Invest Blocker LLC,co_9cd4d3748b38,Other Equity,Other,,,,,n/a,,,702305,702,,702,,,,BXSL,2024-08-07
-EIS Acquisition Holdings LP,co_4717facbe80d,Other Equity,Other,,,,,n/a,,,6292,3350,,3350,,,,BXSL,2024-08-07
-Cambium Holdings LLC,co_ba90a7942b5c,Other,Other,11.50%,,N/A,,,,12511857,12315,,12315,,,,,BXSL,2024-08-07
-THL Fund IX Investors (Plymouth II) LP,co_90fffccab2d9,Other Equity,Financial Services,,,,,n/a,,,248786,249,,249,,,,BXSL,2024-08-07
-Point Broadband Holdings LLC,co_cb80051d353f,Other Equity,Telecommunications,,,,,n/a,,,6930,5877,,5877,,,,BXSL,2024-08-07
-Big Sky Funding LLC,co_6ae138eee07f,Revolver,Financial Services,7.5%,,SOFR,4.25%,2022-06-28,2027-06-28,100000000,99875000,99875000,10.0,99875000,,,,BXSL,2024-08-07
-Micross Topco Inc.,co_c56c87e1d6e6,Common Equity,Aerospace & Defense,,,,,,,4767,4767,,,,,,,BXSL,2024-08-07
-AGI Group Holdings LP,co_7a7c59ae2580,Other,Transportation,,,,,,,902,902,,,,,,,BXSL,2024-08-07
-Mode Holdings LP,co_d601a7632291,Common Equity,Transportation,,,,,,,5486923,5487,8218,,,,,fair_value_suspicious_vs_size,BXSL,2024-08-07
-GTCR Investors LP,co_766605e0606d,Other,Industrial Services,,,,,,,417006,417,,,,,,,BXSL,2024-08-07
-Box Co-Invest Blocker LLC,co_9cd4d3748b38,Other,Other,,,,,,,702305,702,,,,,,,BXSL,2024-08-07
-Box Co-Invest Blocker LLC,co_9cd4d3748b38,Other,Other,,,,,,,85315,83,,,,,,,BXSL,2024-08-07
-EIS Acquisition Holdings LP,co_4717facbe80d,Common Equity,Other,,,,,,,6292,3350,11509,,,,,,BXSL,2024-08-07
-Cambium Holdings LLC,co_ba90a7942b5c,Other,Other,11.50%,,,,,12511857,12314,,,,,,,,BXSL,2024-08-07
-DTA LP,co_0845f74a936d,Other,Other,,,,,,,2171032,2169,19208,,,,,fair_value_suspicious_vs_size,BXSL,2024-08-07
-THL Fund IX Investors Plymouth II LP - LP,co_3c6b090ecf97,Other,Financial Services,,,,,,,248786,249,,,,,,,BXSL,2024-08-07
-Point Broadband Holdings LLC,co_cb80051d353f,Other,Telecommunications,,,,,,,6930,5877,9188,,,,,,BXSL,2024-08-07
-Point Broadband Holdings LLC,co_cb80051d353f,Other,Telecommunications,,,,,,,369255,1053,,,,,,,BXSL,2024-08-07
-Point Broadband Holdings LLC,co_cb80051d353f,Other,Telecommunications,,,,,,,1489,1263,,,,,,,BXSL,2024-08-07
-Point Broadband Holdings LLC,co_cb80051d353f,Other,Telecommunications,,,,,,,79358,226,,,,,,,BXSL,2024-08-07
-GCX Corp.,co_ef1cdc2c06e6,Other,Automotive,,,,,,,539,539,,,,,,,BXSL,2024-08-07
-MB2 Dental Solutions LLC,co_bf420c857197,First Lien,Healthcare Services,11.33%,,SOFR,6.00%,,2031-02-13,23672,23407,,,,,,,BXSL,2024-08-07
-Navigator Acquiror Inc.,co_3dfe0be08645,First Lien,Healthcare Services,10.94%,,SOFR,5.50%,,2027-07-16,242432,241279,,,,,,,BXSL,2024-08-07
-Odyssey Holding Company LLC,co_75b8c1135e7c,First Lien,Healthcare Services,11.13%,,SOFR,5.75%,,2026-11-16,13403,13358,,,,,,,BXSL,2024-08-07
-Odyssey Holding Company LLC,co_75b8c1135e7c,First Lien,Healthcare Services,11.14%,,SOFR,5.75%,,2026-11-16,5270,5242,,,,,,,BXSL,2024-08-07
-PPV Intermediate Holdings LLC,co_743a0b989f76,First Lien,Healthcare Services,11.10%,,SOFR,5.75%,,2029-08-31,1987,1963,,,,,,,BXSL,2024-08-07
-PPV Intermediate Holdings LLC,co_743a0b989f76,First Lien,Healthcare Services,11.35%,,SOFR,6.00%,,2029-08-31,39,39,,,,,,,BXSL,2024-08-07
-Smile Doctors LLC,co_54cc4c84644e,First Lien,Healthcare Services,11.35%,,SOFR,5.90%,,2028-12-23,10802,10628,,,,,,,BXSL,2024-08-07
-Smile Doctors LLC,co_54cc4c84644e,First Lien,Healthcare Services,11.35%,,SOFR,5.90%,,2028-12-23,996,953,,,,,,,BXSL,2024-08-07
-Snoopy Bidco Inc.,co_0dc8b7fca2dc,First Lien,Healthcare Services,,12.36%,SOFR,6.75%,,2028-06-01,334436,330670,,,,,,,BXSL,2024-08-07
-SpecialtyCare Inc.,co_9f4d1348dc1c,First Lien,Healthcare Services,11.31%,,SOFR,5.75%,,2028-06-18,11920,11717,,,,,,,BXSL,2024-08-07
-SpecialtyCare Inc.,co_9f4d1348dc1c,First Lien,Healthcare Services,9.44%,,SOFR,4.00%,,2028-06-18,434,421,,,,,,,BXSL,2024-08-07
-SpecialtyCare Inc.,co_9f4d1348dc1c,First Lien,Healthcare Services,11.33%,,SOFR,5.75%,,2028-06-18,103,102,,,,,,,BXSL,2024-08-07
-Stepping Stones Healthcare Services LLC,co_ef6f838d442b,First Lien,Healthcare Services,10.33%,,SOFR,5.00%,,2029-01-02,2712,2671,,,,,,,BXSL,2024-08-07
-The Fertility Partners Inc.,co_8fc49f0b3b2c,First Lien,Healthcare Services,11.21%,,SOFR,5.75%,,2028-03-16,5185,5125,,,,,,,BXSL,2024-08-07
-The GI Alliance Management LLC,co_3152b754439d,First Lien,Healthcare Services,11.00%,,SOFR,5.50%,,2028-09-15,4045,3532,,,,,,,BXSL,2024-08-07
-The GI Alliance Management LLC,co_3152b754439d,First Lien,Healthcare Services,10.98%,,SOFR,5.50%,,2028-09-15,450,446,,,,,,,BXSL,2024-08-07
-The GI Alliance Management LLC,co_3152b754439d,First Lien,Healthcare Services,10.99%,,SOFR,5.50%,,2028-09-15,874,855,,,,,,,BXSL,2024-08-07
-UMP Holdings LLC,co_b9f99ac9ad53,First Lien,Healthcare Services,11.07%,,SOFR,5.75%,,2028-07-15,1090,1075,,,,,,,BXSL,2024-08-07
-UMP Holdings LLC,co_b9f99ac9ad53,First Lien,Healthcare Services,11.08%,,SOFR,5.75%,,2028-07-15,1494,1471,,,,,,,BXSL,2024-08-07
-Unified Physician Management LLC,co_7cdd96c746d0,First Lien,Healthcare Services,10.59%,,SOFR,5.25%,,2029-06-18,2092,2011,,,,,,,BXSL,2024-08-07
-US Oral Surgery Management Holdco LLC,co_a6e9354fd2fe,First Lien,Healthcare Services,10.65%,,SOFR,5.25%,,2028-11-20,37021,36663,,,,,,,BXSL,2024-08-07
-US Oral Surgery Management Holdco LLC,co_a6e9354fd2fe,First Lien,Healthcare Services,10.65%,,SOFR,5.25%,,2028-11-20,13624,13488,,,,,,,BXSL,2024-08-07
-US Oral Surgery Management Holdco LLC,co_a6e9354fd2fe,First Lien,Healthcare Services,11.43%,,SOFR,6.00%,,2028-11-20,10167,9629,,,,,,,BXSL,2024-08-07
-US Oral Surgery Management Holdco LLC,co_a6e9354fd2fe,First Lien,Healthcare Services,11.93%,,SOFR,6.50%,,2028-11-20,2076,2076,,,,,,,BXSL,2024-08-07
-WHCG Purchaser III Inc.,co_e6e79890b8a2,First Lien,Healthcare Services,11.34%,,SOFR,5.75%,,2028-06-22,43087,42624,,,,,,,BXSL,2024-08-07
-WHCG Purchaser III Inc.,co_e6e79890b8a2,First Lien,Healthcare Services,11.34%,,SOFR,5.75%,,2026-06-22,6706,6653,,,,,,,BXSL,2024-08-07
-Porcelain Acquisition Corp.,co_3b6d0e5a85c0,First Lien,Other,11.49%,,SOFR,6.00%,,2027-04-01,54603,53487,,,,,,,BXSL,2024-08-07
-Capstone Logistics LLC,co_17aeb1f60a06,First Lien,Transportation,10.21%,,SOFR,4.75%,,2027-11-12,5501,5477,,,,,,,BXSL,2024-08-07
-Frontline Road Safety LLC,co_e15164298348,First Lien,Transportation,11.55%,,SOFR,5.75%,,2027-05-03,89111,88010,,,,,,,BXSL,2024-08-07
-Frontline Road Safety LLC,co_e15164298348,First Lien,Transportation,11.39%,,SOFR,5.75%,,2027-05-03,10996,10780,,,,,,,BXSL,2024-08-07
-Helix TS LLC,co_f229e463d67c,First Lien,Transportation,11.78%,,SOFR,6.25%,,2027-08-04,45584,44987,,,,,,,BXSL,2024-08-07
-Helix TS LLC,co_f229e463d67c,First Lien,Transportation,11.75%,,SOFR,6.25%,,2027-08-04,993,979,,,,,,,BXSL,2024-08-07
-Italian Motorway Holdings Sarl,co_eaed50bb79c2,First Lien,Transportation,9.35%,,E,5.25%,,2029-04-28,78810,81314,,,,,,,BXSL,2024-08-07
-Roadsafe Holdings Inc.,co_ad8fbee3fbc5,First Lien,Transportation,11.22%,,SOFR,5.75%,,2027-10-19,29443,29099,,,,,,,BXSL,2024-08-07
-Roadsafe Holdings Inc.,co_ad8fbee3fbc5,First Lien,Transportation,11.26%,,SOFR,5.75%,,2027-10-19,20592,20360,,,,,,,BXSL,2024-08-07
-Roadsafe Holdings Inc.,co_ad8fbee3fbc5,First Lien,Transportation,11.29%,,SOFR,5.75%,,2029-01-31,4198,4136,,,,,,,BXSL,2024-08-07
-Safety Borrower Holdings LP,co_2bda85b688b4,First Lien,Transportation,10.90%,,SOFR,5.25%,,2027-09-01,5032,5007,,,,,,,BXSL,2024-08-07
-Safety Borrower Holdings LP,co_2bda85b688b4,First Lien,Transportation,12.75%,,Prime,4.25%,,2027-09-01,280,277,,,,,,,BXSL,2024-08-07
-Sam Holding Co Inc.,co_445f2ae2376d,First Lien,Transportation,11.49%,,SOFR,6.00%,,2027-09-24,37845,37218,,,,,,,BXSL,2024-08-07
-Sam Holding Co Inc.,co_445f2ae2376d,First Lien,Transportation,11.50%,,SOFR,6.00%,,2027-09-24,11522,11522,,,,,,,BXSL,2024-08-07
-Sam Holding Co Inc.,co_445f2ae2376d,First Lien,Transportation,11.57%,,SOFR,6.00%,,2027-09-24,15960,15663,,,,,,,BXSL,2024-08-07
-TRP Infrastructure Services LLC,co_713cee246240,First Lien,Transportation,11.03%,,SOFR,5.50%,,2027-07-09,38887,38431,,,,,,,BXSL,2024-08-07
-Park Place Technologies LLC,co_7b62066cfc4f,First Lien,Software,10.59%,,SOFR,5.25%,,2031-03-25,118091,116841,,,,,,,BXSL,2024-08-07
-Razor Holdco LLC,co_d2eb167c8dc8,First Lien,Software,11.18%,,SOFR,5.75%,,2027-10-25,36781,36375,,,,,,,BXSL,2024-08-07
-Red River Technology LLC,co_773db0e8a2c9,First Lien,Software,11.54%,,SOFR,6.00%,,2027-05-26,79558,78885,,,,,,,BXSL,2024-08-07
-Redwood Services Group LLC,co_09803b676c7a,First Lien,Software,11.69%,,SOFR,6.25%,,2029-06-15,4665,4576,,,,,,,BXSL,2024-08-07
-Redwood Services Group LLC,co_09803b676c7a,First Lien,Software,11.19%,,SOFR,5.75%,,2028-06-15,5457,4165,,,,,,,BXSL,2024-08-07
-Turing Holdco Inc.,co_2d2e18911947,First Lien,Software,8.94%,2.50%,SOFR,6.00%,,2028-09-28,8765,8526,,,,,,,BXSL,2024-08-07
-Turing Holdco Inc.,co_2d2e18911947,First Lien,Software,8.91%,2.50%,SOFR,6.10%,,2028-10-16,4362,4286,,,,,,,BXSL,2024-08-07
-Turing Holdco Inc.,co_2d2e18911947,First Lien,Software,7.32%,2.50%,E,6.00%,,2028-09-28,11302,12821,,,,,,,BXSL,2024-08-07
-Turing Holdco Inc.,co_2d2e18911947,First Lien,Software,7.39%,2.50%,E,6.00%,,2028-08-03,4301,4843,,,,,,,BXSL,2024-08-07
-Turing Holdco Inc.,co_2d2e18911947,First Lien,Software,11.00%,,SOFR,6.00%,,2028-08-03,20759,20158,,,,,,,BXSL,2024-08-07
-Turing Holdco Inc.,co_2d2e18911947,First Lien,Software,11.32%,,SOFR,6.00%,,2028-08-03,15602,22463,,,,,,,BXSL,2024-08-07
-MHE Intermediate Holdings LLC,co_1a3cc4206a35,First Lien,Other,11.48%,,SOFR,6.00%,,2027-07-21,2461,2433,,,,,,,BXSL,2024-08-07
-MHE Intermediate Holdings LLC,co_1a3cc4206a35,First Lien,Other,11.73%,,SOFR,6.25%,,2027-07-21,118,116,,,,,,,BXSL,2024-08-07
-Armada Parent Inc.,co_27c4fae4bf92,First Lien,Other,11.20%,,SOFR,5.75%,,2027-10-29,25603,25289,,,,,,,BXSL,2024-08-07
-Kattegat Project Bidco AB,co_034e8bfc03cc,First Lien,Other,11.33%,,SOFR,6.00%,,2031-04-07,2605,2542,,,,,,,BXSL,2024-08-07
-Kattegat Project Bidco AB,co_034e8bfc03cc,First Lien,Other,9.72%,,E,6.00%,,2031-04-07,29819,31461,,,,,,,BXSL,2024-08-07
-Bimini Group Purchaser Inc.,co_58e02ad15e68,First Lien,Media & Entertainment,10.60%,,SOFR,5.25%,,2031-04-26,51168,50578,,,,,,,BXSL,2024-08-07
-Bimini Group Purchaser Inc.,co_58e02ad15e68,First Lien,Media & Entertainment,10.60%,,SOFR,5.25%,,2031-04-26,2103,2055,,,,,,,BXSL,2024-08-07
-Trader Corp.,co_ecd2a30c5a57,First Lien,Media & Entertainment,11.74%,,C,6.75%,,2029-12-22,9875,6996,,,,,,,BXSL,2024-08-07
-Trader Corp.,co_ecd2a30c5a57,First Lien,Media & Entertainment,10.28%,,CA,5.50%,,2029-12-21,14371,10398,,,,,,,BXSL,2024-08-07
-Healthcomp Holding Company LLC,co_76ed77b0c1e4,Preferred Equity,Automotive,,,,6.00%,,,,,9850,985,,,,,BXSL,2024-08-07
-Shelf Holdco Ltd.,co_5be8d7670e10,Common Equity,Financial Services,,,,,,,,,50000,50,,,,,BXSL,2024-08-07
-Trinity Air Consultants Holdings Corp.,co_dfb37027e994,Common Equity,Business Services,,,,,,,,,2583,3,,,,,BXSL,2024-08-07
-Lobos Parent Inc.,co_a6b77828b56c,Preferred Equity,Software,,,,10.50%,,,,,1545,1506,,,,,BXSL,2024-08-07
-Mandolin Technology Holdings Inc.,co_9a77603e00d7,Preferred Equity,Software,,,,,,,,,3550000,3444,,,,,BXSL,2024-08-07
-Zoro - Common Equity,co_9bb014c8d0be,Common Equity,Software,,,,,,,,,2073,21,,,,,BXSL,2024-08-07
-Zoro,co_3b97b8eff024,Preferred Equity,Software,,,,12.50%,,,,,373,362,,,,,BXSL,2024-08-07
-Frontline Road Safety LLC,co_e15164298348,First Lien,Transportation,11.42%,,SOFR,5.75%,,2027-05-03,99852,,98850,,,,,,BXSL,2024-08-07
-Frontline Road Safety LLC,co_e15164298348,First Lien,Transportation,11.33%,,SOFR,5.75%,,2027-05-03,4397,,4261,,,,,,BXSL,2024-08-07
-Helix TS LLC,co_f229e463d67c,First Lien,Transportation,11.73%,,SOFR,6.25%,,2027-08-04,20972,,20756,,,,,,BXSL,2024-08-07
-Helix TS LLC,co_f229e463d67c,First Lien,Transportation,11.70%,,SOFR,6.25%,,2027-08-04,25367,,25061,,,,,,BXSL,2024-08-07
-Italian Motorway Holdings Sarl,co_eaed50bb79c2,First Lien,Transportation,9.09%,,E,5.25%,,2029-04-28,78810,,81466,,,,,,BXSL,2024-08-07
-Roadsafe Holdings Inc.,co_ad8fbee3fbc5,First Lien,Transportation,11.14%,,SOFR,5.75%,,2027-10-19,33318,,32944,,,,,,BXSL,2024-08-07
-Roadsafe Holdings Inc.,co_ad8fbee3fbc5,First Lien,Transportation,11.15%,,SOFR,5.75%,,2027-10-19,20487,,20286,,,,,,BXSL,2024-08-07
-Roadsafe Holdings Inc.,co_ad8fbee3fbc5,First Lien,Transportation,11.15%,,SOFR,5.75%,,2027-10-19,4180,,4131,,,,,,BXSL,2024-08-07
-Safety Borrower Holdings LP,co_2bda85b688b4,First Lien,Transportation,10.81%,,SOFR,5.25%,,2027-09-01,5297,,5273,,,,,,BXSL,2024-08-07
-Safety Borrower Holdings LP,co_2bda85b688b4,First Lien,Transportation,12.75%,,Prime,4.25%,,2027-09-01,131,,129,,,,,,BXSL,2024-08-07
-Sam Holding Co Inc.,co_445f2ae2376d,First Lien,Transportation,11.20%,,SOFR,5.75%,,2027-09-24,36955,,36561,,,,,,BXSL,2024-08-07
-Sam Holding Co Inc.,co_445f2ae2376d,First Lien,Transportation,11.19%,,SOFR,5.75%,,2027-09-24,27336,,27081,,,,,,BXSL,2024-08-07
-Sam Holding Co Inc.,co_445f2ae2376d,First Lien,Transportation,11.15%,,SOFR,5.75%,,2027-09-24,4936,,4816,,,,,,BXSL,2024-08-07
-Sam Holding Co Inc.,co_445f2ae2376d,First Lien,Transportation,13.50%,,Prime,5.00%,,2027-03-24,2300,,2240,,,,,,BXSL,2024-08-07
-TRP Infrastructure Services LLC,co_713cee246240,First Lien,Transportation,10.98%,,SOFR,5.50%,,2027-07-09,38687,,38298,,,,,,BXSL,2024-08-07
-Material Holdings LLC,co_64667ba51bdb,First Lien,Business Services,11.35%,,SOFR,6.00%,,2027-08-19,20644,,20442,,,,,,BXSL,2024-08-07
-Material Holdings LLC,co_64667ba51bdb,First Lien,Business Services,11.35%,,SOFR,6.00%,,2027-08-19,5021,,4969,,,,,,BXSL,2024-08-07
-Healthcomp Holding Company LLC,co_76ed77b0c1e4,Preferred Equity,Automotive,6.00%,,,,,9850,,985,,1055,1040,,,,BXSL,2024-08-07
-Shelf Holdco Ltd.,co_5be8d7670e10,Common Equity,Financial Services,,,,,,,50000,,50,,50,88,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,BXSL,2024-08-07
-Lobos Parent Inc.,co_a6b77828b56c,Preferred Equity,Software,10.50%,,,,,1545,,1506,,,,,,,BXSL,2024-08-07
-Mandolin Technology Holdings Inc.,co_9a77603e00d7,Preferred Equity,Software,,,,,,,3550000,,3444,,,,,fair_value_suspicious_vs_size,BXSL,2024-08-07
-Zoro Common Equity,co_9bb014c8d0be,Common Equity,Software,,,,,,,2073,,21,,,,,fair_value_suspicious_vs_size,BXSL,2024-08-07
-Zoro Series A Preferred Shares,co_df990c9cd370,Preferred Equity,Software,12.50%,,,,,373,,361,,,,,,,BXSL,2024-08-07
-Canadian Hospital Specialties Ltd.,co_48759271b1dc,Second Lien,Healthcare Services,8.75%,,CAD,8.75%,,2029-04-15,10533,,,8305,,,,,BXSL,2024-08-07
-Jayhawk Buyer LLC,co_beff8bbb2a29,Second Lien,Healthcare Services,,SOFR,8.75%,14.18%,2027-10-15,5183,,5130,13435,,11642,,,,BXSL,2024-08-07
-Victory Buyer LLC,co_6f6f79e9f43a,Second Lien,Other,,SOFR,7.00%,12.60%,2029-11-19,9619,,9553,,,,,,,BXSL,2024-08-07
-Inovalon Holdings Inc.,co_b1163ca4a88a,Second Lien,Software,,SOFR,10.50%,16.09%,2033-11-24,12975,,12759,,,,,,,BXSL,2024-08-07
-Thevelia US LLC,co_93d2c404e989,Second Lien,Business Services,,SOFR,6.75%,12.21%,2030-06-17,4920,,4810,,,,,,,BXSL,2024-08-07
-Mandolin Technology Intermediate Holdings Inc.,co_4da4842cbd61,Second Lien,Software,,SOFR,6.50%,11.98%,2029-07-30,3550,,3519,,,,,,,BXSL,2024-08-07
-Healthcomp Holding Company LLC,co_76ed77b0c1e4,Other Debt,Automotive,,13.75%,13.75%,,2031-11-08,10805,,10523,,,,,,,BXSL,2024-08-07
-PPT Holdings III LLC,co_c2a12bc90575,Other Debt,Software,,12.75%,12.75%,,2034-03-27,1664,,1625,,,,,,,BXSL,2024-08-07
-Red River Technology LLC,co_773db0e8a2c9,First Lien,Software,,11.54%,SOFR,6.00%,,2027-05-26,79967,79175,,,269483,271135,,,BXSL,2024-08-07
-S&P Global Engineering Solutions,co_520cfa537d6c,First Lien,Software,,12.38%,SOFR,7.00%,,2030-05-02,1596,1546,,,269483,271135,,,BXSL,2024-08-07
-Turing Holdco Inc.,co_2d2e18911947,First Lien,Software,8.50%,2.50%,SOFR,6.00%,,2028-09-28,8655,8388,,,269483,271135,,,BXSL,2024-08-07
-Turing Holdco Inc.,co_2d2e18911947,First Lien,Software,8.50%,2.50%,SOFR,6.00%,,2028-10-16,4307,4222,,,269483,271135,,,BXSL,2024-08-07
-Turing Holdco Inc.,co_2d2e18911947,First Lien,Software,7.62%,2.50%,EUR,6.00%,,2028-09-28,11159,12643,,,269483,271135,,,BXSL,2024-08-07
-Turing Holdco Inc.,co_2d2e18911947,First Lien,Software,7.47%,2.50%,EUR,6.00%,,2028-08-03,4271,4796,,,269483,271135,,,BXSL,2024-08-07
-MHE Intermediate Holdings LLC,co_1a3cc4206a35,First Lien,Other,,11.53%,SOFR,6.00%,,2027-07-21,2559,2525,,,2769,2808,,,BXSL,2024-08-07
-MHE Intermediate Holdings LLC,co_1a3cc4206a35,First Lien,Other,,11.78%,SOFR,6.25%,,2027-07-21,249,244,,,2769,2808,,,BXSL,2024-08-07
-Armada Parent Inc.,co_27c4fae4bf92,First Lien,Other,,11.24%,SOFR,5.75%,,2027-10-29,25734,25360,,,,,,,BXSL,2024-08-07
-Trader Corp.,co_ecd2a30c5a57,First Lien,Media & Entertainment,,12.19%,C,6.75%,,2029-12-22,9925,6915,,,,,,,BXSL,2024-08-07
-Jayhawk Buyer LLC,co_beff8bbb2a29,Second Lien,Healthcare Services,,14.23%,SOFR,8.75%,,2027-10-15,5183,5122,12025,13.418,13418,,,,BXSL,2024-08-07
-Victory Buyer LLC,co_6f6f79e9f43a,Second Lien,Other,,12.64%,SOFR,7.00%,,2029-11-01,9619,9547,,,,,,,BXSL,2024-08-07
-Inovalon Holdings Inc.,co_b1163ca4a88a,Second Lien,Software,,15.97%,SOFR,10.50%,,2033-11-24,12294,12065,,,,,,,BXSL,2024-08-07
-Thevelia US LLC,co_93d2c404e989,Second Lien,Business Services,,12.25%,SOFR,6.75%,,2030-06-17,4920,4801,,,,,,,BXSL,2024-08-07
-Mandolin Technology Intermediate Holdings Inc.,co_4da4842cbd61,Second Lien,Software,,12.00%,SOFR,6.50%,,2029-07-30,3550,3516,,,,,,,BXSL,2024-08-07
-Frontline Road Safety Investments LLC,co_8a8125675deb,Common Equity,Transportation,,,,,,,27536,,,,5905,,,,BXSL,2024-08-07
-Ncp Helix Holdings LLC,co_d656bc41992f,Preferred Equity,Transportation,,,,,,,369,,,,372,,,,BXSL,2024-08-07
-Blackstone Donegal Holdings LP,co_e5e7c9cca1a4,Other,Financial Services,,,,,,,,,,,1,,,,BXSL,2024-08-07
-Material+ Holding Company LLC,co_7a1dac607bb0,Common Equity,Business Services,,,,,,,,,,,5898,,,,BXSL,2024-08-07
-company_name,co_533e34598699,Other,Other,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,,BXSL,2024-08-07
-Sumitomo Mitsui Banking Corp.,co_d87aa8631f93,Other,Financial Services,,,,,,,,,,,,,,,BXSL,2024-08-07
+company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
+Aevex Holdings LLC,co_dc363e0540da,First Lien,Aerospace & Defense,11.44%,,SOFR,6%,,,,47548,47115,47548,0.88%,47115,,,,,,BXSL,2024-08-07
+Corfin Holdings Inc.,co_13563ec0840a,First Lien,Aerospace & Defense,11.42%,,SOFR,6%,,,,265625,263401,265625,4.92%,263401,,,,,,BXSL,2024-08-07
+Frontgrade Technologies Holdings Inc.,co_bd7632937759,First Lien,Aerospace & Defense,10.33%,,SOFR,5%,,,,2358,2295,2358,0.04%,2295,,,,,,BXSL,2024-08-07
+Linquest Corp.,co_31f141ccc8e1,First Lien,Aerospace & Defense,11.18%,,SOFR,5.75%,,,,9688,9576,9688,0.18%,9576,,,,,,BXSL,2024-08-07
+MAG DS Corp.,co_c49257271dab,First Lien,Aerospace & Defense,10.9%,,SOFR,5.5%,,,,80001,76787,77601,1.44%,76787,,,,,,BXSL,2024-08-07
+Magneto Components BuyCo LLC,co_8ee995ad93dc,First Lien,Aerospace & Defense,11.34%,,SOFR,6%,,,,33243,32279,33160,0.61%,32279,,,,,,BXSL,2024-08-07
+Maverick Acquisition Inc.,co_1ea35689c2a1,First Lien,Aerospace & Defense,11.58%,,SOFR,6.25%,,,,18504,18321,14525,0.27%,18321,,,,,,BXSL,2024-08-07
+TCFI AEVEX LLC,co_ffe25c80a363,First Lien,Aerospace & Defense,11.44%,,SOFR,6%,,,,109659,109012,109659,2.03%,109012,,,,,,BXSL,2024-08-07
+AGI-CFI Holdings Inc.,co_12186169ddbd,First Lien,Transportation & Logistics,11.26%,,SOFR,5.75%,,,,94929,93957,92318,1.71%,93957,,,,,,BXSL,2024-08-07
+ENV Bidco AB 1,co_c35c43cf46e4,First Lien,Transportation & Logistics,11.08%,,SOFR,5.75%,,,,1006,988,1006,0.02%,988,,,,,,BXSL,2024-08-07
+ENV Bidco AB 2,co_c35c43cf46e4,First Lien,Transportation & Logistics,9.47%,,SOFR,5.75%,,,,1122,950,1198,0.02%,950,,,,,,BXSL,2024-08-07
+Livingston International Inc.,co_45fbb5f3dc35,First Lien,,10.93%,,SOFR,5.5%,,,,125376,124001,120988,2.24%,124001,,,,,,BXSL,2024-08-07
+Mode Purchaser Inc.,co_55645c0962a7,First Lien,Transportation & Logistics,11.72%,,SOFR,6.25%,,,,139345,138374,139345,2.58%,138374,,,,,,BXSL,2024-08-07
+Mode Purchaser Inc.,co_55645c0962a7,First Lien,Transportation & Logistics,11.72%,,SOFR,6.25%,,,,3978,3925,3978,0.07%,3925,,,,,,BXSL,2024-08-07
+RoadOne Inc.,co_ee1cd15309ba,First Lien,Telecommunications,11.59%,,SOFR,6.25%,,,,1093,1063,1066,0.02%,1063,,,,,,BXSL,2024-08-07
+RWL Holdings LLC,co_c51f7dc597d0,First Lien,Transportation & Logistics,11.23%,,SOFR,5.75%,,,,30170,29784,28133,0.52%,29784,,,,,,BXSL,2024-08-07
+SEKO Global Logistics Network LLC,co_89c47e7c1b19,First Lien,Transportation & Logistics,10.48%,,SOFR,5%,,,,6250,6209,4625,0.09%,6209,,,,,,BXSL,2024-08-07
+SEKO Global Logistics Network LLC,co_89c47e7c1b19,First Lien,Transportation & Logistics,10.47%,,SOFR,5%,,,,359,356,201,0%,356,,,,,,BXSL,2024-08-07
+SEKO Global Logistics Network LLC,co_89c47e7c1b19,First Lien,Transportation & Logistics,8.72%,,SOFR,5%,,,,1821,2094,1443,0.03%,2094,,,,,,BXSL,2024-08-07
+Dellner Couplers Group AB,co_5d30b11d8aab,First Lien,Automotive,9.22%,,SOFR,5.5%,,,,1000,1059,1068,0.02%,1059,,,,,,BXSL,2024-08-07
+Fencing Supply Group Acquisition LLC,co_924bcda64bbb,First Lien,Industrials,11.44%,,SOFR,6%,,,,53288,52923,52489,0.97%,52923,,,,,,BXSL,2024-08-07
+Jacuzzi Brands LLC,co_e2c95054f17c,First Lien,Industrials,11.33%,,SOFR,6%,,,,11318,11242,10385,0.19%,11242,,,,,,BXSL,2024-08-07
+Jacuzzi Brands LLC,co_e2c95054f17c,First Lien,Industrials,11.33%,,SOFR,6%,,,,77867,77420,71443,1.32%,77420,,,,,,BXSL,2024-08-07
+L&S Mechanical Acquisition LLC,co_ee08900c64bf,First Lien,Industrials,11.55%,,SOFR,6.25%,,,,12167,12040,12167,0.23%,12040,,,,,,BXSL,2024-08-07
+Lindstrom LLC,co_10413fd21f9f,First Lien,Industrials,11.68%,,SOFR,6.25%,,,,120640,120345,119434,2.21%,120345,,,,,,BXSL,2024-08-07
+Windows Acquisition Holdings Inc.,co_c5108cbf2c93,First Lien,Industrials,11.98%,,SOFR,6.5%,,,,49857,49443,48362,0.9%,49443,,,,,,BXSL,2024-08-07
+DCG Acquisition Corp.,co_da9ff4a8b969,First Lien,Chemicals & Materials,10.08%,,SOFR,4.75%,,,,35505,35064,35061,0.65%,35064,,,,,,BXSL,2024-08-07
+Formulations Parent Corp.,co_e6d9e5bc8a49,First Lien,Materials,11.07%,,SOFR,5.75%,,,,8550,8369,8550,0.16%,8369,,,,,,BXSL,2024-08-07
+Bazaarvoice Inc.,co_320549344f5d,First Lien,Business Services,10.54%,,SOFR,5.25%,,,,225015,225015,225015,4.17%,225015,,,,,,BXSL,2024-08-07
+Bazaarvoice Inc.,co_320549344f5d,First Lien,Business Services,10.54%,,SOFR,5.25%,,,,15168,15168,15168,0.28%,15168,,,,,,BXSL,2024-08-07
+CFS Brands LLC,co_37ccca9f73ff,First Lien,Business Services,11.34%,,SOFR,6%,,,,118163,115619,118042,2.19%,115619,,,,,,BXSL,2024-08-07
+FusionSite Midco LLC,co_30e0ed2307ee,First Lien,Business Services,11.35%,,SOFR,5.75%,,,,25851,25273,25401,0.47%,25273,,,,,,BXSL,2024-08-07
+FusionSite Midco LLC,co_30e0ed2307ee,First Lien,Business Services,11.36%,,SOFR,5.75%,,,,9953,9745,9791,0.18%,9745,,,,,,BXSL,2024-08-07
+Iris Buyer LLC,co_5a3c5d292df0,First Lien,Business Services,11.59%,,SOFR,6.25%,,,,27993,27202,27875,0.52%,27202,,,,,,BXSL,2024-08-07
+Java Buyer Inc.,co_81c3db1a65a7,First Lien,Business Services,11.19%,,SOFR,5.75%,,,,4016,3970,4016,0.07%,3970,,,,,,BXSL,2024-08-07
+Java Buyer Inc.,co_81c3db1a65a7,First Lien,Business Services,11.17%,,SOFR,5.75%,,,,1466,1435,1454,0.03%,1435,,,,,,BXSL,2024-08-07
+Java Buyer Inc.,co_81c3db1a65a7,First Lien,Business Services,11.2%,,SOFR,5.75%,,,,2817,2768,2794,0.05%,2768,,,,,,BXSL,2024-08-07
+JSS Holdings Inc.,co_4e5ff8de0e6d,First Lien,Business Services,10.7%,,SOFR,5.25%,,,,286421,284298,286421,5.31%,284298,,,,,,BXSL,2024-08-07
+Knowledge Pro Buyer Inc.,co_2b322698bc98,First Lien,Business Services,10.44%,,SOFR,5%,,,,6937,6836,6901,0.13%,6836,,,,,,BXSL,2024-08-07
+KPSKY Acquisition Inc.,co_c28869bd420a,First Lien,Business Services,11.03%,,SOFR,5.6%,,,,20112,19865,19408,0.36%,19865,,,,,,BXSL,2024-08-07
+KPSKY Acquisition Inc.,co_c28869bd420a,First Lien,Business Services,10.9%,,SOFR,5.5%,,,,2316,2288,2235,0.04%,2288,,,,,,BXSL,2024-08-07
+Onex Baltimore Buyer Inc.,co_8a11a455ef18,First Lien,Business Services,10.95%,,SOFR,5.5%,,,,10804,10679,10804,0.2%,10679,,,,,,BXSL,2024-08-07
+Onex Baltimore Buyer Inc.,co_8a11a455ef18,First Lien,Business Services,10.45%,,SOFR,5%,,,,9561,9395,9561,0.18%,9395,,,,,,BXSL,2024-08-07
+Pye-Barker Fire & Safety LLC,co_21eb6c7d75fe,First Lien,Business Services,9.85%,,SOFR,4.5%,,,,4461,4461,4461,0.08%,4461,,,,,,BXSL,2024-08-07
+Pye-Barker Fire & Safety LLC,co_21eb6c7d75fe,First Lien,Business Services,9.84%,,SOFR,4.5%,,,,5301,5274,5274,0.1%,5274,,,,,,BXSL,2024-08-07
+The Hiller Companies LLC,co_52da6e9951aa,First Lien,Transportation & Logistics,10.34%,,SOFR,5%,,,,8234,8141,8140,0.15%,8141,,,,,,BXSL,2024-08-07
+The Hiller Companies LLC,co_52da6e9951aa,First Lien,Transportation & Logistics,10.34%,,SOFR,5%,,,,48,33,33,0%,33,,,,,,BXSL,2024-08-07
+Veregy Consolidated Inc.,co_46d628acb720,First Lien,Financial Services,11.59%,,SOFR,6%,,,,20547,20275,20611,0.38%,20275,,,,,,BXSL,2024-08-07
+ASP Endeavor Acquisition LLC,co_c3bbef187c5f,First Lien,,12.08%,,SOFR,6.5%,,,,13556,13427,12403,0.23%,13427,,,,,,BXSL,2024-08-07
+Consor Intermediate II LLC,co_cc2ebc9b5d9b,First Lien,Media & Entertainment,10.08%,,SOFR,4.75%,,,,4402,4329,4328,0.08%,4329,,,,,,BXSL,2024-08-07
+COP Home Services TopCo IV Inc.,co_003fbb452390,First Lien,Business Services,11.43%,,SOFR,6%,,,,37520,36511,37351,0.69%,36511,,,,,,BXSL,2024-08-07
+Ascend Buyer LLC,co_0598d0d465de,First Lien,Containers & Packaging,11.23%,,SOFR,5.75%,,,,20565,20297,20565,0.38%,20297,,,,,,BXSL,2024-08-07
+Ascend Buyer LLC,co_0598d0d465de,First Lien,Containers & Packaging,11.23%,,SOFR,5.75%,,,,647,626,647,0.01%,626,,,,,,BXSL,2024-08-07
+BP Purchaser LLC,co_8150b35b92d0,First Lien,Containers & Packaging,11.11%,,SOFR,5.5%,,,,7221,7130,6716,0.12%,7130,,,,,,BXSL,2024-08-07
+BradyIFS Holdings LLC,co_1c893846e0e9,First Lien,Business Services,11.33%,,SOFR,6%,,,,91128,89371,91128,1.69%,89371,,,,,,BXSL,2024-08-07
+BradyIFS Holdings LLC,co_1c893846e0e9,First Lien,Business Services,11.3%,,SOFR,6%,,,,6235,6090,6134,0.11%,6090,,,,,,BXSL,2024-08-07
+Bution Holdco 2 Inc.,co_c437ddbe4a48,First Lien,,11.68%,,SOFR,6.25%,,,,69518,69217,69518,1.29%,69217,,,,,,BXSL,2024-08-07
+Genuine Cable Group LLC,co_8cd65328f2ba,First Lien,Distribution & Wholesale,11.25%,,SOFR,5.75%,,,,167360,165924,161921,3%,165924,,,,,,BXSL,2024-08-07
+Marcone Yellowstone Buyer Inc.,co_06e38a591790,First Lien,Distribution & Wholesale,11.73%,,SOFR,6.25%,,,,4875,4815,4558,0.08%,4815,,,,,,BXSL,2024-08-07
+Marcone Yellowstone Buyer Inc.,co_06e38a591790,First Lien,Distribution & Wholesale,11.98%,,SOFR,6.5%,,,,1558,1525,1473,0.03%,1525,,,,,,BXSL,2024-08-07
+Marcone Yellowstone Buyer Inc.,co_06e38a591790,First Lien,Distribution & Wholesale,11.73%,,SOFR,6.25%,,,,1570,1558,1468,0.03%,1558,,,,,,BXSL,2024-08-07
+NDC Acquisition Corp.,co_d196eaf19507,First Lien,Distribution & Wholesale,10.93%,,SOFR,5.5%,,,,13354,13147,13354,0.25%,13147,,,,,,BXSL,2024-08-07
+PT Intermediate Holdings III LLC,co_f22783f7edc5,First Lien,Media & Entertainment,10.33%,1.75%,SOFR,5%,,,,60376,60226,60219,1.12%,60226,,,,,,BXSL,2024-08-07
+Tailwind Colony Holding Corp.,co_b024f17c1960,First Lien,Distribution & Wholesale,11.93%,,SOFR,6.5%,,,,47801,47609,47442,0.88%,47609,,,,,,BXSL,2024-08-07
+Unified Door & Hardware Group LLC,co_7e29938c048c,First Lien,Software & Technology,11.18%,,SOFR,5.75%,,,,93265,92849,93265,1.73%,92849,,,,,,BXSL,2024-08-07
+Unified Door & Hardware Group LLC,co_7e29938c048c,First Lien,Software & Technology,11.18%,,SOFR,5.75%,,,,4578,4500,4578,0.08%,4500,,,,,,BXSL,2024-08-07
+BPPH2 Ltd.,co_75169268ff4b,First Lien,,12.07%,,SOFR,6.87%,,,,26300,35861,33246,0.62%,35861,,,,,,BXSL,2024-08-07
+Cambium Learning Group Inc.,co_5f6fe6ba04d4,First Lien,Education,10.92%,,SOFR,5.5%,,,,287664,285999,287664,5.33%,285999,,,,,,BXSL,2024-08-07
+Charger Debt Merger Sub LLC,co_fa5da4319a80,First Lien,Consumer & Retail,10.35%,,SOFR,5%,,,,11957,11824,11822,0.22%,11824,,,,,,BXSL,2024-08-07
+Charger Debt Merger Sub LLC,co_fa5da4319a80,First Lien,Consumer & Retail,10.34%,,SOFR,5%,,,,172,139,138,0%,139,,,,,,BXSL,2024-08-07
+DTA Intermediate II Ltd.,co_3f80c9774b46,First Lien,Media & Entertainment,10.84%,,SOFR,5.5%,,,,42969,41942,42432,0.79%,41942,,,,,,BXSL,2024-08-07
+DTA Intermediate II Ltd.,co_3f80c9774b46,First Lien,Media & Entertainment,10.79%,,SOFR,5.5%,,,,3231,3015,3037,0.06%,3015,,,,,,BXSL,2024-08-07
+Endeavor Schools Holdings LLC,co_16f69d2a5c2c,First Lien,Education,11.58%,,SOFR,6.25%,,,,22017,21554,21521,0.4%,21554,,,,,,BXSL,2024-08-07
+Endeavor Schools Holdings LLC,co_16f69d2a5c2c,First Lien,Education,11.57%,,SOFR,6.25%,,,,4059,3913,3911,0.07%,3913,,,,,,BXSL,2024-08-07
+Essential Services Holding Corp.,co_b57b53be3ba0,First Lien,Business Services,10.33%,,SOFR,5%,,,,11717,11575,11574,0.21%,11575,,,,,,BXSL,2024-08-07
+Go Car Wash Management Corp.,co_a488cda67850,First Lien,Automotive,11.69%,,SOFR,6.25%,,,,22389,22150,22221,0.41%,22150,,,,,,BXSL,2024-08-07
+Barbri Holdings Inc.,co_1c2a3e4f198a,First Lien,Financial Services,11.19%,,SOFR,5.75%,,,,61724,60993,61415,1.14%,60993,,,,,,BXSL,2024-08-07
+More Cowbell II LLC,co_c3c2c6607013,First Lien,Financial Services,11.09%,,SOFR,6%,,,,7977,7791,7966,0.15%,7791,,,,,,BXSL,2024-08-07
+More Cowbell II LLC,co_c3c2c6607013,First Lien,Financial Services,11.33%,,SOFR,6%,,,,488,463,488,0.01%,463,,,,,,BXSL,2024-08-07
+RFS Opco LLC,co_e593f9495e2b,First Lien,Transportation & Logistics,10.33%,,SOFR,5%,,,,9524,9432,9429,0.17%,9432,,,,,,BXSL,2024-08-07
+SelectQuote Inc.,co_b6564b3b0c7b,First Lien,Insurance,14.94%,3%,SOFR,9.5%,,,,72725,72599,65453,1.21%,72599,,,,,,BXSL,2024-08-07
+Point Broadband Acquisition LLC,co_88ac0c5a847c,First Lien,Telecommunications,10.81%,,SOFR,5.5%,,,,124139,122254,123684,2.29%,122254,,,,,,BXSL,2024-08-07
+Qualus Power Services Corp.,co_f365b7ba3405,First Lien,Business Services,10.6%,,SOFR,5.25%,,,,32946,32585,32781,0.61%,32585,,,,,,BXSL,2024-08-07
+Qualus Power Services Corp.,co_f365b7ba3405,First Lien,Business Services,10.6%,,SOFR,5.25%,,,,34677,33409,33660,0.62%,33409,,,,,,BXSL,2024-08-07
+Emergency Power Holdings LLC,co_2dd16c5b08f3,First Lien,Industrials,10.93%,,SOFR,5.5%,,,,47853,47241,47708,0.88%,47241,,,,,,BXSL,2024-08-07
+Albireo Energy LLC,co_c4b45f8d357e,First Lien,Energy,11.44%,,SOFR,6%,,,,77743,77101,71135,1.32%,77101,,,,,,BXSL,2024-08-07
+Albireo Energy LLC,co_c4b45f8d357e,First Lien,Energy,11.4%,,SOFR,6%,,,,23334,23183,21351,0.4%,23183,,,,,,BXSL,2024-08-07
+Albireo Energy LLC,co_c4b45f8d357e,First Lien,Energy,11.42%,,SOFR,6%,,,,6295,6264,5760,0.11%,6264,,,,,,BXSL,2024-08-07
+Phoenix 1 Buyer Corp.,co_bfa1af15d6cc,First Lien,Software & Technology,10.83%,,SOFR,5.5%,,,,25818,25535,25818,0.48%,25535,,,,,,BXSL,2024-08-07
+ISQ Hawkeye Holdco Inc.,co_bc75cb14f0a0,First Lien,Transportation & Logistics,11.38%,,SOFR,6%,,,,958,940,955,0.02%,940,,,,,,BXSL,2024-08-07
+ISQ Hawkeye Holdco Inc.,co_bc75cb14f0a0,First Lien,Transportation & Logistics,13.5%,,SOFR,5%,,,,27,26,27,0%,26,,,,,,BXSL,2024-08-07
+LPW Group Holdings Inc.,co_4d280f89b738,First Lien,Energy,11.35%,,SOFR,6%,,,,26863,26092,26379,0.49%,26092,,,,,,BXSL,2024-08-07
+Bamboo US BidCo LLC,co_dbf0b9b0665e,First Lien,Healthcare,12.08%,3.38%,SOFR,6.75%,,,,708,685,707,0.01%,685,,,,,,BXSL,2024-08-07
+Bamboo US BidCo LLC,co_dbf0b9b0665e,First Lien,Healthcare,10.62%,3.38%,SOFR,6.75%,,,,350,360,375,0.01%,360,,,,,,BXSL,2024-08-07
+CPI Buyer LLC,co_33943775fadc,First Lien,Healthcare,11.11%,,SOFR,5.5%,,,,30901,30501,30141,0.56%,30501,,,,,,BXSL,2024-08-07
+CPI Buyer LLC,co_33943775fadc,First Lien,Healthcare,10.83%,,SOFR,5.5%,,,,544,529,522,0.01%,529,,,,,,BXSL,2024-08-07
+GCX Corp.,co_ef1cdc2c06e6,First Lien,Healthcare,10.95%,,SOFR,5.5%,,,,21395,21167,21074,0.39%,21167,,,,,,BXSL,2024-08-07
+GCX Corp.,co_ef1cdc2c06e6,First Lien,Healthcare,10.98%,,SOFR,5.5%,,,,5418,5367,5336,0.1%,5367,,,,,,BXSL,2024-08-07
+Zeus LLC,co_392229c69fb0,First Lien,Healthcare,10.83%,,SOFR,5.5%,,,,24551,24119,24376,0.45%,24119,,,,,,BXSL,2024-08-07
+123Dentist Inc.,co_5db14535c874,First Lien,Healthcare,10.27%,,SOFR,5.5%,,,,2128,1637,1777,0.03%,1637,,,,,,BXSL,2024-08-07
+ACI Group Holdings Inc.,co_12ac7682544d,First Lien,Healthcare,10.94%,,SOFR,5.5%,,,,119614,117995,119405,2.21%,117995,,,,,,BXSL,2024-08-07
+ACI Group Holdings Inc.,co_12ac7682544d,First Lien,Healthcare,10.94%,,SOFR,5.5%,,,,2892,2773,2892,0.05%,2773,,,,,,BXSL,2024-08-07
+ADCS Clinics Intermediate Holdings LLC,co_dea06e88a294,First Lien,Media & Entertainment,11.66%,,SOFR,6.25%,,,,6814,6749,6814,0.13%,6749,,,,,,BXSL,2024-08-07
+ADCS Clinics Intermediate Holdings LLC,co_dea06e88a294,First Lien,Media & Entertainment,11.61%,,SOFR,6.25%,,,,1633,1620,1633,0.03%,1620,,,,,,BXSL,2024-08-07
+ADCS Clinics Intermediate Holdings LLC,co_dea06e88a294,First Lien,Media & Entertainment,11.65%,,SOFR,6.25%,,,,149,139,149,0%,139,,,,,,BXSL,2024-08-07
+Amerivet Partners Management Inc.,co_8250e61a6bff,First Lien,Business Services,10.73%,,SOFR,5.25%,,,,5572,5491,5572,0.1%,5491,,,,,,BXSL,2024-08-07
+Canadian Hospital Specialties Ltd.,co_48759271b1dc,First Lien,Healthcare,9.47%,,SOFR,4.5%,,,,29477,23370,21008,0.39%,23370,,,,,,BXSL,2024-08-07
+Canadian Hospital Specialties Ltd.,co_48759271b1dc,First Lien,Healthcare,9.47%,,SOFR,4.5%,,,,3600,2854,2566,0.05%,2854,,,,,,BXSL,2024-08-07
+CCBlue Bidco Inc.,co_2af3342a144f,First Lien,Healthcare,,11.94%,SOFR,6.5%,,,,11287,11152,9791,0.18%,11152,,,,,,BXSL,2024-08-07
+Continental Buyer Inc.,co_5e0a9ba30095,First Lien,Healthcare,10.58%,,SOFR,5.25%,,,,18460,18101,18088,0.34%,18101,,,,,,BXSL,2024-08-07
+DCA Investment Holdings LLC,co_188bd5058a84,First Lien,Financial Services,11.74%,,SOFR,6.41%,,,,32688,32474,32688,0.61%,32474,,,,,,BXSL,2024-08-07
+DCA Investment Holdings LLC,co_188bd5058a84,First Lien,Financial Services,11.83%,,SOFR,6.5%,,,,990,979,990,0.02%,979,,,,,,BXSL,2024-08-07
+Epoch Acquisition Inc.,co_7d8b24a4a433,First Lien,Healthcare,11.43%,,SOFR,6%,,,,23927,23848,23927,0.44%,23848,,,,,,BXSL,2024-08-07
+Inception Fertility Ventures LLC,co_034188a0b0b6,First Lien,Healthcare,10.82%,,SOFR,5.5%,,,,44782,44582,44575,0.83%,44582,,,,,,BXSL,2024-08-07
+Jayhawk Buyer LLC,co_beff8bbb2a29,First Lien,Healthcare,10.44%,,SOFR,5%,,,,152886,151488,145242,2.69%,151488,,,,,,BXSL,2024-08-07
+Kwol Acquisition Inc.,co_9c4340b9e9d3,First Lien,Healthcare,11.51%,,SOFR,6.25%,,,,6587,6437,6587,0.12%,6437,,,,,,BXSL,2024-08-07
+Kwol Acquisition Inc.,co_9c4340b9e9d3,First Lien,Healthcare,11.6%,,SOFR,6.25%,,,,224,204,224,0%,204,,,,,,BXSL,2024-08-07
+MB2 Dental Solutions LLC,co_bf420c857197,First Lien,Healthcare,11.33%,,SOFR,6%,,,,23672,23407,23642,0.44%,23407,,,,,,BXSL,2024-08-07
+Navigator Acquiror Inc.,co_3dfe0be08645,First Lien,Healthcare,10.94%,,SOFR,5.5%,,,,242432,241279,220613,4.09%,241279,,,,,,BXSL,2024-08-07
+Odyssey Holding Company LLC,co_75b8c1135e7c,First Lien,,11.13%,,SOFR,5.75%,,,,13403,13358,13403,0.25%,13358,,,,,,BXSL,2024-08-07
+Odyssey Holding Company LLC,co_75b8c1135e7c,First Lien,,11.14%,,SOFR,5.75%,,,,5270,5242,5270,0.1%,5242,,,,,,BXSL,2024-08-07
+PPV Intermediate Holdings LLC,co_56235911ea0a,First Lien,Media & Entertainment,11.1%,,SOFR,5.75%,,,,1987,1963,1987,0.04%,1963,,,,,,BXSL,2024-08-07
+PPV Intermediate Holdings LLC,co_56235911ea0a,First Lien,Media & Entertainment,11.35%,,SOFR,6%,,,,39,39,39,0%,39,,,,,,BXSL,2024-08-07
+Smile Doctors LLC,co_54cc4c84644e,First Lien,Healthcare,11.35%,,SOFR,5.9%,,,,10802,10628,10555,0.2%,10628,,,,,,BXSL,2024-08-07
+Smile Doctors LLC,co_54cc4c84644e,First Lien,Healthcare,11.35%,,SOFR,5.9%,,,,996,953,957,0.02%,953,,,,,,BXSL,2024-08-07
+Snoopy Bidco Inc.,co_0dc8b7fca2dc,First Lien,Healthcare,,12.36%,SOFR,6.75%,,,,334436,330670,325239,6.03%,330670,,,,,,BXSL,2024-08-07
+SpecialtyCare Inc.,co_9f4d1348dc1c,First Lien,Healthcare,11.31%,,SOFR,5.75%,,,,11920,11717,11681,0.22%,11717,,,,,,BXSL,2024-08-07
+SpecialtyCare Inc.,co_9f4d1348dc1c,First Lien,Healthcare,9.44%,,SOFR,4%,,,,434,421,434,0.01%,421,,,,,,BXSL,2024-08-07
+SpecialtyCare Inc.,co_9f4d1348dc1c,First Lien,Healthcare,11.33%,,SOFR,5.75%,,,,103,102,101,0%,102,,,,,,BXSL,2024-08-07
+Stepping Stones Healthcare Services LLC,co_ef6f838d442b,First Lien,Healthcare,10.33%,,SOFR,5%,,,,2712,2671,2691,0.05%,2671,,,,,,BXSL,2024-08-07
+The Fertility Partners Inc.,co_8fc49f0b3b2c,First Lien,Healthcare,11.21%,,SOFR,5.75%,,,,5185,5125,4926,0.09%,5125,,,,,,BXSL,2024-08-07
+The Fertility Partners Inc.,co_8fc49f0b3b2c,First Lien,Healthcare,10.75%,,SOFR,5.75%,,,,4913,3016,3399,0.06%,3016,,,,,,BXSL,2024-08-07
+The GI Alliance Management LLC,co_3152b754439d,First Lien,Business Services,11%,,SOFR,5.5%,,,,4045,3532,3585,0.07%,3532,,,,,,BXSL,2024-08-07
+The GI Alliance Management LLC,co_3152b754439d,First Lien,Business Services,10.98%,,SOFR,5.5%,,,,450,446,450,0.01%,446,,,,,,BXSL,2024-08-07
+The GI Alliance Management LLC,co_3152b754439d,First Lien,Business Services,10.99%,,SOFR,5.5%,,,,874,855,874,0.02%,855,,,,,,BXSL,2024-08-07
+UMP Holdings LLC,co_b9f99ac9ad53,First Lien,Healthcare,11.07%,,SOFR,5.75%,,,,1090,1075,1084,0.02%,1075,,,,,,BXSL,2024-08-07
+UMP Holdings LLC,co_b9f99ac9ad53,First Lien,Healthcare,11.08%,,SOFR,5.75%,,,,1494,1471,1482,0.03%,1471,,,,,,BXSL,2024-08-07
+Unified Physician Management LLC,co_7cdd96c746d0,First Lien,Healthcare,10.59%,,SOFR,5.25%,,,,2092,2011,2007,0.04%,2011,,,,,,BXSL,2024-08-07
+US Oral Surgery Management Holdco LLC,co_a6e9354fd2fe,First Lien,Healthcare,10.65%,,SOFR,5.25%,,,,37021,36663,37021,0.69%,36663,,,,,,BXSL,2024-08-07
+US Oral Surgery Management Holdco LLC,co_a6e9354fd2fe,First Lien,Healthcare,10.65%,,SOFR,5.25%,,,,13624,13488,13624,0.25%,13488,,,,,,BXSL,2024-08-07
+US Oral Surgery Management Holdco LLC,co_a6e9354fd2fe,First Lien,Healthcare,11.43%,,SOFR,6%,,,,10167,9629,9604,0.18%,9629,,,,,,BXSL,2024-08-07
+US Oral Surgery Management Holdco LLC,co_a6e9354fd2fe,First Lien,Healthcare,11.93%,,SOFR,6.5%,,,,2076,2076,2076,0.04%,2076,,,,,,BXSL,2024-08-07
+WHCG Purchaser III Inc.,co_e6e79890b8a2,First Lien,Healthcare,11.34%,,SOFR,5.75%,,,,43087,42624,28007,0.52%,42624,,,,,,BXSL,2024-08-07
+WHCG Purchaser III Inc.,co_e6e79890b8a2,First Lien,Healthcare,11.34%,,SOFR,5.75%,,,,6706,6653,4353,0.08%,6653,,,,,,BXSL,2024-08-07
+Caerus US 1 Inc.,co_a348a4088000,First Lien,Healthcare,10.33%,,SOFR,5%,,,,9837,9699,9837,0.18%,9699,,,,,,BXSL,2024-08-07
+Caerus US 1 Inc.,co_a348a4088000,First Lien,Healthcare,10.33%,,SOFR,5%,,,,2851,2803,2851,0.05%,2803,,,,,,BXSL,2024-08-07
+Caerus US 1 Inc.,co_a348a4088000,First Lien,Healthcare,10.33%,,SOFR,5%,,,,141,138,138,0%,138,,,,,,BXSL,2024-08-07
+Caerus US 1 Inc.,co_a348a4088000,First Lien,Healthcare,10.33%,,SOFR,5%,,,,50000,50000,50000,0.93%,50000,,,,,,BXSL,2024-08-07
+Caerus US 1 Inc.,co_a348a4088000,First Lien,Healthcare,10.35%,,SOFR,5%,,,,257,239,257,0%,239,,,,,,BXSL,2024-08-07
+Color Intermediate LLC,co_0ce623601f98,First Lien,Media & Entertainment,10.93%,,SOFR,5.5%,,,,20059,19679,20059,0.37%,19679,,,,,,BXSL,2024-08-07
+Edifecs Inc.,co_350d414bb4a8,First Lien,,11.08%,2.35%,SOFR,5.75%,,,,13501,13378,13501,0.25%,13378,,,,,,BXSL,2024-08-07
+Edifecs Inc.,co_350d414bb4a8,First Lien,,11.08%,2.35%,SOFR,5.75%,,,,217779,215769,217779,4.04%,215769,,,,,,BXSL,2024-08-07
+GI Ranger Intermediate LLC,co_c4f3a0385bef,First Lien,Media & Entertainment,11.48%,,SOFR,6%,,,,16385,16185,16385,0.3%,16185,,,,,,BXSL,2024-08-07
+Healthcomp Holding Company LLC,co_76ed77b0c1e4,First Lien,Healthcare,11.57%,3%,SOFR,6.25%,,,,99754,98877,99255,1.84%,98877,,,,,,BXSL,2024-08-07
+Neptune Holdings Inc.,co_5a247831526c,First Lien,Healthcare,11.04%,,SOFR,5.75%,,,,6965,6792,6965,0.13%,6792,,,,,,BXSL,2024-08-07
+NMC Crimson Holdings Inc.,co_5a70d9fd5670,First Lien,Healthcare,11.54%,,SOFR,6.09%,,,,71173,70055,71173,1.32%,70055,,,,,,BXSL,2024-08-07
+NMC Crimson Holdings Inc.,co_5a70d9fd5670,First Lien,Healthcare,11.56%,,SOFR,6.09%,,,,14758,14624,14758,0.27%,14624,,,,,,BXSL,2024-08-07
+Project Ruby Ultimate Parent Corp.,co_53120a491cb5,First Lien,Healthcare,8.71%,,SOFR,3.25%,,,,8332,8310,8354,0.15%,8310,,,,,,BXSL,2024-08-07
+Rocky MRA Acquisition Corp.,co_39ab431b4b95,First Lien,Healthcare,11.15%,,SOFR,5.75%,,,,9301,9197,9301,0.17%,9197,,,,,,BXSL,2024-08-07
+Alera Group Inc.,co_e58c13b050eb,First Lien,Insurance,10.59%,,SOFR,5.25%,,,,3647,3625,3647,0.07%,3625,,,,,,BXSL,2024-08-07
+Alera Group Inc.,co_e58c13b050eb,First Lien,Insurance,11.09%,,SOFR,5.75%,,,,210,205,210,0%,205,,,,,,BXSL,2024-08-07
+Amerilife Holdings LLC,co_79b70b5ba514,First Lien,Insurance,11.08%,,SOFR,5.75%,,,,2667,2620,2664,0.05%,2620,,,,,,BXSL,2024-08-07
+CFCo LLC,co_5aa301b6e439,First Lien,Insurance,0%,,SOFR,0%,,,,9566,1397,0,0%,1397,,,,,,BXSL,2024-08-07
+Daylight Beta Parent LLC,co_1f7cf6eacd34,First Lien,Insurance,,10%,SOFR,10%,,,,5503,5557,1506,0.03%,5557,,,,,,BXSL,2024-08-07
+Foundation Risk Partners Corp.,co_2669dbde7061,First Lien,Insurance,10.58%,,SOFR,5.25%,,,,15904,15697,15819,0.29%,15697,,,,,,BXSL,2024-08-07
+Foundation Risk Partners Corp.,co_2669dbde7061,First Lien,Insurance,10.58%,,SOFR,5.25%,,,,3132,3044,3063,0.06%,3044,,,,,,BXSL,2024-08-07
+Galway Borrower LLC,co_7b729e02e51d,First Lien,Insurance,10.68%,,SOFR,5.25%,,,,12184,11863,11920,0.22%,11863,,,,,,BXSL,2024-08-07
+Galway Borrower LLC,co_7b729e02e51d,First Lien,Insurance,10.69%,,SOFR,5.25%,,,,1202,1116,1202,0.02%,1116,,,,,,BXSL,2024-08-07
+Gimlet Bidco GmbH 1,co_76d8e35bf843,First Lien,Insurance,9.64%,,SOFR,5.75%,,,,30620,31823,31973,0.59%,31823,,,,,,BXSL,2024-08-07
+Gimlet Bidco GmbH 2,co_76d8e35bf843,First Lien,Insurance,9.64%,,SOFR,5.75%,,,,2268,2233,2232,0.04%,2233,,,,,,BXSL,2024-08-07
+High Street Buyer Inc.,co_bfe298fdc01f,First Lien,Transportation & Logistics,10.58%,,SOFR,5.25%,,,,66873,65850,66470,1.23%,65850,,,,,,BXSL,2024-08-07
+Integrity Marketing Acquisition LLC,co_c54435bdb6e3,First Lien,Business Services,11.5%,,SOFR,6.05%,,,,138729,137863,138729,2.57%,137863,,,,,,BXSL,2024-08-07
+Integrity Marketing Acquisition LLC,co_c54435bdb6e3,First Lien,Business Services,11.37%,,SOFR,6.02%,,,,1871,1852,1871,0.03%,1852,,,,,,BXSL,2024-08-07
+Integrity Marketing Acquisition LLC,co_c54435bdb6e3,First Lien,Business Services,11.35%,,SOFR,6%,,,,6482,6392,6390,0.12%,6392,,,,,,BXSL,2024-08-07
+Integrity Marketing Acquisition LLC,co_c54435bdb6e3,First Lien,Business Services,11.48%,,SOFR,6.03%,,,,4018,3990,4018,0.07%,3990,,,,,,BXSL,2024-08-07
+Paisley Bidco Ltd.,co_1319d9d0ff80,First Lien,Aerospace & Defense,10.45%,,SOFR,5.25%,,,,5204,6401,6409,0.12%,6401,,,,,,BXSL,2024-08-07
+Paisley Bidco Ltd.,co_1319d9d0ff80,First Lien,Aerospace & Defense,9.12%,,SOFR,5.25%,,,,3420,3627,3608,0.07%,3627,,,,,,BXSL,2024-08-07
+PGIS Intermediate Holdings LLC,co_4a34c5c38d9c,First Lien,Media & Entertainment,10.48%,,SOFR,5%,,,,4567,4521,4558,0.08%,4521,,,,,,BXSL,2024-08-07
+PGIS Intermediate Holdings LLC,co_4a34c5c38d9c,First Lien,Media & Entertainment,11.09%,,SOFR,5.75%,,,,1318,1280,1269,0.02%,1280,,,,,,BXSL,2024-08-07
+SG Acquisition Inc.,co_0b14e9f96163,First Lien,Transportation & Logistics,10.3%,,SOFR,5%,,,,136345,135279,136345,2.53%,135279,,,,,,BXSL,2024-08-07
+Shelf Bidco Ltd.,co_f9e084dc6b85,First Lien,Insurance,12.01%,,SOFR,6.34%,,,,5053,4933,5053,0.09%,4933,,,,,,BXSL,2024-08-07
+Tennessee Bidco Limited 1,co_78afb0b07cf0,First Lien,,10.87%,2.5%,SOFR,7%,,,,1858,1950,1990,0.04%,1950,,,,,,BXSL,2024-08-07
+Tennessee Bidco Limited 2,co_78afb0b07cf0,First Lien,,12.37%,2.5%,SOFR,7.1%,,,,55420,54479,55420,1.03%,54479,,,,,,BXSL,2024-08-07
+Tennessee Bidco Limited 3,co_78afb0b07cf0,First Lien,,12.37%,2.5%,SOFR,7.1%,,,,16520,16363,16520,0.31%,16363,,,,,,BXSL,2024-08-07
+Tennessee Bidco Limited 4,co_78afb0b07cf0,First Lien,,12.46%,2.5%,SOFR,7.28%,,,,44437,60504,56173,1.04%,60504,,,,,,BXSL,2024-08-07
+World Insurance Associates LLC,co_e9b1fcd3d8d5,First Lien,Insurance,11.33%,,SOFR,6%,,,,38017,36929,37546,0.7%,36929,,,,,,BXSL,2024-08-07
+Identity Digital Inc.,co_6e79b9cdaf2b,First Lien,,10.78%,,SOFR,5.25%,,,,317534,314363,317534,5.89%,314363,,,,,,BXSL,2024-08-07
+AI Altius Bidco Inc.,co_0489bd3c10c3,First Lien,Software & Technology,,9.75%,SOFR,9.75%,,,,1013,998,1008,0.02%,998,,,,,,BXSL,2024-08-07
+AI Altius Bidco Inc.,co_0489bd3c10c3,First Lien,Software & Technology,10.03%,,SOFR,4.75%,,,,982,976,982,0.02%,976,,,,,,BXSL,2024-08-07
+AI Altius Bidco Inc.,co_0489bd3c10c3,First Lien,Software & Technology,10.03%,,SOFR,4.75%,,,,6550,6467,6550,0.12%,6467,,,,,,BXSL,2024-08-07
+Allium Buyer LLC,co_74d47cb88f75,First Lien,Software & Technology,12.08%,,SOFR,6.75%,,,,1588,1542,1588,0.03%,1542,,,,,,BXSL,2024-08-07
+Infostretch Corp.,co_0c4739ba0058,First Lien,Software & Technology,11.23%,,SOFR,5.75%,,,,4900,4839,4545,0.08%,4839,,,,,,BXSL,2024-08-07
+Inovalon Holdings Inc.,co_b1163ca4a88a,First Lien,Software & Technology,11.84%,2.75%,SOFR,6.25%,,,,110766,109140,110766,2.05%,109140,,,,,,BXSL,2024-08-07
+Inovalon Holdings Inc.,co_b1163ca4a88a,First Lien,Software & Technology,11.84%,2.75%,SOFR,6.25%,,,,8061,7953,8061,0.15%,7953,,,,,,BXSL,2024-08-07
+KEN Bidco Ltd.,co_f7b7624a34d0,First Lien,Software & Technology,11.31%,,SOFR,6%,,,,9281,11310,11585,0.21%,11310,,,,,,BXSL,2024-08-07
+Monterey Financing S.à r.l. 1,co_12ab7017d4fb,First Lien,Software & Technology,9.72%,,SOFR,6%,,,,2090,185,196,0%,185,,,,,,BXSL,2024-08-07
+Monterey Financing S.à r.l. 2,co_12ab7017d4fb,First Lien,Software & Technology,9.65%,,SOFR,6%,,,,952,789,1008,0.02%,789,,,,,,BXSL,2024-08-07
+Monterey Financing S.à r.l. 3,co_12ab7017d4fb,First Lien,Software & Technology,9.6%,,SOFR,6%,,,,4819,621,687,0.01%,621,,,,,,BXSL,2024-08-07
+Monterey Financing S.à r.l. 4,co_12ab7017d4fb,First Lien,Software & Technology,10.63%,,SOFR,6%,,,,5149,464,479,0.01%,464,,,,,,BXSL,2024-08-07
+Park Place Technologies LLC,co_7b62066cfc4f,First Lien,Software & Technology,10.59%,,SOFR,5.25%,,,,118091,116841,117349,2.18%,116841,,,,,,BXSL,2024-08-07
+Razor Holdco LLC,co_d2eb167c8dc8,First Lien,Software & Technology,11.18%,,SOFR,5.75%,,,,36781,36375,36781,0.68%,36375,,,,,,BXSL,2024-08-07
+Red River Technology LLC,co_773db0e8a2c9,First Lien,Software & Technology,11.54%,,SOFR,6%,,,,79558,78885,79558,1.47%,78885,,,,,,BXSL,2024-08-07
+Redwood Services Group LLC,co_09803b676c7a,First Lien,Business Services,11.69%,,SOFR,6.25%,,,,4665,4576,4665,0.09%,4576,,,,,,BXSL,2024-08-07
+Redwood Services Group LLC,co_09803b676c7a,First Lien,Business Services,11.19%,,SOFR,5.75%,,,,5457,4165,4730,0.09%,4165,,,,,,BXSL,2024-08-07
+Turing Holdco Inc.,co_2d2e18911947,First Lien,Software & Technology,11.42%,2.5%,SOFR,6%,,,,8765,8526,8655,0.16%,8526,,,,,,BXSL,2024-08-07
+Turing Holdco Inc.,co_2d2e18911947,First Lien,Software & Technology,11.41%,2.5%,SOFR,6.1%,,,,4362,4286,4307,0.08%,4286,,,,,,BXSL,2024-08-07
+Turing Holdco Inc.,co_2d2e18911947,First Lien,Software & Technology,9.82%,2.5%,SOFR,6%,,,,11302,12821,11952,0.22%,12821,,,,,,BXSL,2024-08-07
+Turing Holdco Inc.,co_2d2e18911947,First Lien,Software & Technology,9.89%,2.5%,SOFR,6%,,,,4301,4843,4548,0.08%,4843,,,,,,BXSL,2024-08-07
+Turing Holdco Inc.,co_2d2e18911947,First Lien,Software & Technology,11%,,SOFR,6%,,,,20759,20158,20499,0.38%,20158,,,,,,BXSL,2024-08-07
+Turing Holdco Inc.,co_2d2e18911947,First Lien,Software & Technology,11.32%,,SOFR,6%,,,,15602,22463,19476,0.36%,22463,,,,,,BXSL,2024-08-07
+MHE Intermediate Holdings LLC,co_8638a084c929,First Lien,Media & Entertainment,11.48%,,SOFR,6%,,,,2461,2433,2461,0.05%,2433,,,,,,BXSL,2024-08-07
+MHE Intermediate Holdings LLC,co_8638a084c929,First Lien,Media & Entertainment,11.73%,,SOFR,6.25%,,,,118,116,118,0%,116,,,,,,BXSL,2024-08-07
+MHE Intermediate Holdings LLC,co_8638a084c929,First Lien,Media & Entertainment,11.98%,,SOFR,6.5%,,,,118,117,118,0%,117,,,,,,BXSL,2024-08-07
+Armada Parent Inc.,co_d986ff9f0ec8,First Lien,Transportation & Logistics,11.2%,,SOFR,5.75%,,,,25603,25289,25317,0.47%,25289,,,,,,BXSL,2024-08-07
+Kattegat Project Bidco AB 1,co_9282fd3aee2e,First Lien,Transportation & Logistics,11.33%,,SOFR,6%,,,,2605,2542,2539,0.05%,2542,,,,,,BXSL,2024-08-07
+Kattegat Project Bidco AB 2,co_9282fd3aee2e,First Lien,Transportation & Logistics,9.72%,,SOFR,6%,,,,29819,31461,31049,0.58%,31461,,,,,,BXSL,2024-08-07
+Bimini Group Purchaser Inc.,co_58e02ad15e68,First Lien,Media & Entertainment,10.6%,,SOFR,5.25%,,,,51168,50578,50562,0.94%,50578,,,,,,BXSL,2024-08-07
+Bimini Group Purchaser Inc.,co_58e02ad15e68,First Lien,Media & Entertainment,10.6%,,SOFR,5.25%,,,,2103,2055,2054,0.04%,2055,,,,,,BXSL,2024-08-07
+Trader Corp.,co_ecd2a30c5a57,First Lien,Software & Technology,11.74%,,SOFR,6.75%,,,,9875,6996,9385,0.17%,6996,,,,,,BXSL,2024-08-07
+Trader Corp.,co_ecd2a30c5a57,First Lien,Software & Technology,10.28%,,SOFR,5.5%,,,,14371,10398,10505,0.19%,10398,,,,,,BXSL,2024-08-07
+Eagle Midstream Canada Finance Inc.,co_8df4ad7e97ac,First Lien,Energy,11.57%,,SOFR,6.25%,,,,65109,64436,65103,1.21%,64436,,,,,,BXSL,2024-08-07
+KKR Alberta Midsteam Finance Inc.,co_0ede2995b94d,First Lien,Financial Services,11.57%,,SOFR,6.25%,,,,35421,35053,35417,0.66%,35053,,,,,,BXSL,2024-08-07
+Profile Products LLC,co_748a55d10192,First Lien,Business Services,10.93%,,SOFR,5.5%,,,,7254,7183,7091,0.13%,7183,,,,,,BXSL,2024-08-07
+Profile Products LLC,co_748a55d10192,First Lien,Business Services,13%,,SOFR,4.5%,,,,134,128,122,0%,128,,,,,,BXSL,2024-08-07
+Profile Products LLC,co_748a55d10192,First Lien,Business Services,13.25%,,SOFR,4.75%,,,,20,20,12,0%,20,,,,,,BXSL,2024-08-07
+Dechra Pharmaceuticals Holdings Ltd.,co_2cfab5481aa1,First Lien,Healthcare,10.18%,,SOFR,6.25%,,,,1028,1125,1098,0.02%,1125,,,,,,BXSL,2024-08-07
+Dechra Pharmaceuticals Holdings Ltd.,co_2cfab5481aa1,First Lien,Healthcare,11.43%,,SOFR,6.25%,,,,1035,1008,1032,0.02%,1008,,,,,,BXSL,2024-08-07
+Doc Generici,co_a060a6aea2cf,First Lien,,10.21%,,SOFR,6.5%,,,,1758,1014,1869,0.03%,1014,,,,,,BXSL,2024-08-07
+Eden Acquisitionco Ltd.,co_096825d4864e,First Lien,Healthcare,11.51%,,SOFR,6.25%,,,,20388,23646,19781,0.37%,23646,,,,,,BXSL,2024-08-07
+Gusto Sing Bidco Pte Ltd.,co_e5e08df367fb,First Lien,Healthcare,10.9%,,SOFR,6.5%,,,,1000,641,651,0.01%,641,,,,,,BXSL,2024-08-07
+ALKU LLC,co_2f494782761d,First Lien,Business Services,11.59%,,SOFR,6.25%,,,,794,778,794,0.01%,778,,,,,,BXSL,2024-08-07
+ALKU LLC,co_2f494782761d,First Lien,Business Services,10.84%,,SOFR,5.5%,,,,26595,26100,26263,0.49%,26100,,,,,,BXSL,2024-08-07
+Apex Companies LLC,co_f0a59b6f6068,First Lien,Business Services,11.58%,,SOFR,6.25%,,,,1605,1573,1605,0.03%,1573,,,,,,BXSL,2024-08-07
+Apex Companies LLC,co_f0a59b6f6068,First Lien,Business Services,11.09%,,SOFR,5.75%,,,,320,309,310,0.01%,309,,,,,,BXSL,2024-08-07
+Apex Companies LLC,co_f0a59b6f6068,First Lien,Business Services,11.59%,,SOFR,6.25%,,,,369,365,369,0.01%,365,,,,,,BXSL,2024-08-07
+Baker Tilly Advisory Group LP,co_b5682a7e1aa9,First Lien,Financial Services,10.33%,,SOFR,5%,,,,44802,43925,43915,0.81%,43925,,,,,,BXSL,2024-08-07
+CFGI Holdings LLC,co_63dbc666a4cf,First Lien,Business Services,9.84%,,SOFR,4.5%,,,,6925,6836,6904,0.13%,6836,,,,,,BXSL,2024-08-07
+Cisive Holdings Corp.,co_f37109bdb472,First Lien,Business Services,11.18%,,SOFR,5.75%,,,,8443,8324,8337,0.15%,8324,,,,,,BXSL,2024-08-07
+Clearview Buyer Inc.,co_a920e7d8c29c,First Lien,Business Services,10.68%,,SOFR,5.35%,,,,7322,7217,7286,0.14%,7217,,,,,,BXSL,2024-08-07
+Cumming Group Inc.,co_b43e5107fa90,First Lien,,10.59%,,SOFR,5.25%,,,,79653,78913,79653,1.48%,78913,,,,,,BXSL,2024-08-07
+Cumming Group Inc.,co_b43e5107fa90,First Lien,,10.59%,,SOFR,5.25%,,,,11537,11335,11477,0.21%,11335,,,,,,BXSL,2024-08-07
+G&A Partners Holding Company II LLC,co_9855682a0863,First Lien,Business Services,10.85%,,SOFR,5.5%,,,,31430,30673,30879,0.57%,30673,,,,,,BXSL,2024-08-07
+Guidehouse Inc.,co_257e0270d752,First Lien,Business Services,11.09%,2%,SOFR,5.75%,,,,309363,307212,309363,5.73%,307212,,,,,,BXSL,2024-08-07
+IG Investments Holdings LLC,co_06c540faeacf,First Lien,Financial Services,11.43%,,SOFR,6%,,,,46024,45421,46024,0.85%,45421,,,,,,BXSL,2024-08-07
+IG Investments Holdings LLC,co_06c540faeacf,First Lien,Financial Services,11.33%,,SOFR,6%,,,,442,438,442,0.01%,438,,,,,,BXSL,2024-08-07
+Kaufman Hall & Associates LLC,co_f47ff00e7cb4,First Lien,,10.69%,,SOFR,5.25%,,,,23959,23654,23959,0.44%,23654,,,,,,BXSL,2024-08-07
+Legacy Intermediate LLC,co_fd9c2bf5ce8c,First Lien,Media & Entertainment,11.25%,,SOFR,5.75%,,,,6732,6651,6732,0.12%,6651,,,,,,BXSL,2024-08-07
+Legacy Intermediate LLC,co_fd9c2bf5ce8c,First Lien,Media & Entertainment,11.24%,,SOFR,5.75%,,,,1297,1273,1297,0.02%,1273,,,,,,BXSL,2024-08-07
+Mercury Bidco Globe Ltd.,co_8092d3f49bff,First Lien,Business Services,11.45%,,SOFR,6.25%,,,,47583,59170,59980,1.11%,59170,,,,,,BXSL,2024-08-07
+MPG Parent Holdings LLC,co_5f837b5ebc54,First Lien,Consumer & Retail,10.58%,,SOFR,5.25%,,,,10927,10676,10927,0.2%,10676,,,,,,BXSL,2024-08-07
+Oxford Global Resources Inc.,co_a198a3da8cad,First Lien,Business Services,11.5%,,SOFR,6%,,,,18994,18765,18994,0.35%,18765,,,,,,BXSL,2024-08-07
+Oxford Global Resources Inc.,co_a198a3da8cad,First Lien,Business Services,11.47%,,SOFR,6%,,,,2924,2902,2924,0.05%,2902,,,,,,BXSL,2024-08-07
+Oxford Global Resources Inc.,co_a198a3da8cad,First Lien,Business Services,11.33%,,SOFR,6%,,,,2228,2184,2228,0.04%,2184,,,,,,BXSL,2024-08-07
+Pavion Corp.,co_30cfbc7cf33a,First Lien,Business Services,11.08%,,SOFR,5.75%,,,,77180,75784,77180,1.43%,75784,,,,,,BXSL,2024-08-07
+Pavion Corp.,co_30cfbc7cf33a,First Lien,Business Services,11.08%,,SOFR,5.75%,,,,15666,15404,15484,0.29%,15404,,,,,,BXSL,2024-08-07
+Petrus Buyer Inc.,co_dc09d6dacee4,First Lien,Transportation & Logistics,10.68%,,SOFR,5.25%,,,,1881,1825,1872,0.03%,1825,,,,,,BXSL,2024-08-07
+STV Group Inc.,co_8922cc638ea0,First Lien,Industrials,10.33%,,SOFR,5%,,,,24356,23822,24165,0.45%,23822,,,,,,BXSL,2024-08-07
+STV Group Inc.,co_8922cc638ea0,First Lien,Industrials,12.5%,,SOFR,4%,,,,349,255,324,0.01%,255,,,,,,BXSL,2024-08-07
+Thevelia US LLC,co_93d2c404e989,First Lien,Business Services,9.48%,,SOFR,4%,,,,1289,1279,1301,0.02%,1279,,,,,,BXSL,2024-08-07
+Titan Investment Company Inc.,co_98e1b21bde5e,First Lien,Financial Services,11.23%,,SOFR,5.75%,,,,41379,40502,39517,0.73%,40502,,,,,,BXSL,2024-08-07
+Trinity Air Consultants Holdings Corp.,co_b8b8988159ca,First Lien,Business Services,10.66%,,SOFR,5.25%,,,,62160,61368,62042,1.15%,61368,,,,,,BXSL,2024-08-07
+Trinity Air Consultants Holdings Corp.,co_b8b8988159ca,First Lien,Business Services,10.62%,,SOFR,5.25%,,,,23497,23304,23259,0.43%,23304,,,,,,BXSL,2024-08-07
+Trinity Partners Holdings LLC,co_a86c59940baa,First Lien,Business Services,10.98%,,SOFR,5.5%,,,,4882,4812,4868,0.09%,4812,,,,,,BXSL,2024-08-07
+West Monroe Partners LLC,co_1b3ba9e3efc8,First Lien,Business Services,11.1%,,SOFR,5.5%,,,,14671,14496,14414,0.27%,14496,,,,,,BXSL,2024-08-07
+West Monroe Partners LLC,co_1b3ba9e3efc8,First Lien,Business Services,11.11%,,SOFR,5.5%,,,,289,289,284,0.01%,289,,,,,,BXSL,2024-08-07
+Castle Management Borrower LLC,co_51df589a7d7a,First Lien,Business Services,10.83%,,SOFR,5.5%,,,,24092,23729,24092,0.45%,23729,,,,,,BXSL,2024-08-07
+Neptune BidCo,co_b759b5340fad,First Lien,,9.12%,,SOFR,5.25%,,,,5608,5904,5863,0.11%,5904,,,,,,BXSL,2024-08-07
+Progress Residential PM Holdings LLC,co_ede17629599e,First Lien,Real Estate,10.94%,,SOFR,5.5%,,,,67900,67181,67900,1.26%,67181,,,,,,BXSL,2024-08-07
+Progress Residential PM Holdings LLC,co_ede17629599e,First Lien,Real Estate,10.94%,,SOFR,5.5%,,,,833,820,833,0.02%,820,,,,,,BXSL,2024-08-07
+Anaplan Inc.,co_0f6b3874fa95,First Lien,Software & Technology,11.08%,,SOFR,5.75%,,,,1804,1776,1804,0.03%,1776,,,,,,BXSL,2024-08-07
+Anaplan Inc.,co_0f6b3874fa95,First Lien,Software & Technology,11.08%,,SOFR,5.75%,,,,19227,19040,19227,0.36%,19040,,,,,,BXSL,2024-08-07
+Azurite Intermediate Holdings Inc.,co_17a8cda82bfc,First Lien,Media & Entertainment,11.84%,,SOFR,6.5%,,,,27702,27178,27510,0.51%,27178,,,,,,BXSL,2024-08-07
+Bayshore Intermediate #2 LP,co_58e933a523c1,First Lien,Media & Entertainment,11.05%,,SOFR,5.75%,,,,12198,12138,12137,0.22%,12138,,,,,,BXSL,2024-08-07
+BlueCat Networks USA Inc.,co_b9dc830e22c3,First Lien,Software & Technology,11.33%,2%,SOFR,6%,,,,1962,1935,1952,0.04%,1935,,,,,,BXSL,2024-08-07
+BlueCat Networks USA Inc.,co_b9dc830e22c3,First Lien,Software & Technology,11.3%,2%,SOFR,6%,,,,345,341,343,0.01%,341,,,,,,BXSL,2024-08-07
+BlueCat Networks USA Inc.,co_b9dc830e22c3,First Lien,Software & Technology,11.33%,2%,SOFR,6%,,,,65,62,61,0%,62,,,,,,BXSL,2024-08-07
+Bluefin Holding LLC,co_222f5b732bb6,First Lien,Software & Technology,12.59%,,SOFR,7.25%,,,,22756,22215,22631,0.42%,22215,,,,,,BXSL,2024-08-07
+Brave Parent Holdings Inc.,co_f478344bf025,First Lien,Software & Technology,10.33%,,SOFR,5%,,,,68130,67433,68076,1.26%,67433,,,,,,BXSL,2024-08-07
+Community Brands ParentCo LLC,co_da98764cecf0,First Lien,Software & Technology,10.94%,,SOFR,5.5%,,,,4888,4824,4888,0.09%,4824,,,,,,BXSL,2024-08-07
+Confine Visual Bidco,co_1867771b8160,First Lien,Software & Technology,11.06%,,SOFR,5.75%,,,,16247,15934,13729,0.25%,15934,,,,,,BXSL,2024-08-07
+Connatix Buyer Inc.,co_ca0c6acae604,First Lien,Software & Technology,11.11%,,SOFR,5.5%,,,,21478,21205,20401,0.38%,21205,,,,,,BXSL,2024-08-07
+Coupa Software Inc.,co_d21122ff5bb1,First Lien,Software & Technology,10.83%,,SOFR,5.5%,,,,1836,1795,1834,0.03%,1795,,,,,,BXSL,2024-08-07
+Crewline Buyer Inc.,co_04efa4bb1c45,First Lien,Software & Technology,12.08%,,SOFR,6.75%,,,,59936,58435,59771,1.11%,58435,,,,,,BXSL,2024-08-07
+Denali Bidco Ltd.,co_483dca36c0d5,First Lien,Software & Technology,10.95%,,SOFR,5.75%,,,,4022,4912,5055,0.09%,4912,,,,,,BXSL,2024-08-07
+Denali Bidco Ltd.,co_483dca36c0d5,First Lien,Software & Technology,9.47%,,SOFR,5.75%,,,,2798,2947,2961,0.05%,2947,,,,,,BXSL,2024-08-07
+Denali Bidco Ltd.,co_483dca36c0d5,First Lien,Software & Technology,9.22%,,SOFR,5.5%,,,,263,275,276,0.01%,275,,,,,,BXSL,2024-08-07
+Diligent Corp.,co_043d566b8b97,First Lien,Software & Technology,10.34%,,SOFR,5%,,,,49683,49489,49683,0.92%,49489,,,,,,BXSL,2024-08-07
+Diligent Corp.,co_043d566b8b97,First Lien,Software & Technology,10.34%,,SOFR,5%,,,,8517,8484,8517,0.16%,8484,,,,,,BXSL,2024-08-07
+Discovery Education Inc.,co_8c3f91ed114d,First Lien,Education,11.09%,,SOFR,5.75%,,,,3705,3667,3418,0.06%,3667,,,,,,BXSL,2024-08-07
+Discovery Education Inc.,co_8c3f91ed114d,First Lien,Education,11.18%,,SOFR,5.75%,,,,35882,35485,33101,0.61%,35485,,,,,,BXSL,2024-08-07
+Elements Finco Ltd.,co_8bbfe449607a,First Lien,Software & Technology,10.09%,,SOFR,4.75%,,,,5046,5024,4995,0.09%,5024,,,,,,BXSL,2024-08-07
+Elements Finco Ltd.,co_8bbfe449607a,First Lien,Software & Technology,10.2%,,SOFR,5%,,,,19368,23918,24183,0.45%,23918,,,,,,BXSL,2024-08-07
+Elements Finco Ltd.,co_8bbfe449607a,First Lien,Software & Technology,10.09%,,SOFR,4.75%,,,,6063,5993,6002,0.11%,5993,,,,,,BXSL,2024-08-07
+Episerver Inc.,co_7947765206f9,First Lien,Software & Technology,10.73%,,SOFR,5.25%,,,,9496,9433,9381,0.17%,9433,,,,,,BXSL,2024-08-07
+Experity Inc.,co_491f66ae2d8b,First Lien,Software & Technology,11.18%,,SOFR,5.75%,,,,14790,14605,14790,0.27%,14605,,,,,,BXSL,2024-08-07
+Gigamon Inc.,co_9ebbfee7c50f,First Lien,Software & Technology,11.22%,,SOFR,5.75%,,,,7289,7191,7289,0.14%,7191,,,,,,BXSL,2024-08-07
+Gigamon Inc.,co_9ebbfee7c50f,First Lien,Software & Technology,11.2%,,SOFR,5.75%,,,,175,172,175,0%,172,,,,,,BXSL,2024-08-07
+GovernmentJobs.com Inc.,co_6c582dff3963,First Lien,Business Services,10.95%,,SOFR,5.5%,,,,5143,5141,5143,0.1%,5141,,,,,,BXSL,2024-08-07
+GovernmentJobs.com Inc.,co_6c582dff3963,First Lien,Business Services,10.93%,,SOFR,5.5%,,,,118,113,105,0%,113,,,,,,BXSL,2024-08-07
+Granicus Inc.,co_3dd58a0830d5,First Lien,Software & Technology,8.82%,2.25%,SOFR,5.75%,,,,17431,17236,17418,0.32%,17236,,,,,,BXSL,2024-08-07
+Graphpad Software LLC,co_61592fde437f,First Lien,Software & Technology,10.08%,,SOFR,4.75%,,,,24145,23902,23983,0.44%,23902,,,,,,BXSL,2024-08-07
+GS Acquisitionco Inc.,co_da1da76723d6,First Lien,Software & Technology,10.58%,,SOFR,5.25%,,,,426,407,406,0.01%,407,,,,,,BXSL,2024-08-07
+GS Acquisitionco Inc.,co_da1da76723d6,First Lien,Software & Technology,10.58%,,SOFR,5.25%,,,,267,257,257,0%,257,,,,,,BXSL,2024-08-07
+Homecare Software Solutions LLC,co_55777cd657ff,First Lien,Software & Technology,10.33%,,SOFR,5%,,,,14641,14496,14495,0.27%,14496,,,,,,BXSL,2024-08-07
+Homecare Software Solutions LLC,co_55777cd657ff,First Lien,Software & Technology,10.34%,,SOFR,5%,,,,669,643,639,0.01%,643,,,,,,BXSL,2024-08-07
+Icefall Parent Inc.,co_1c11431c6470,First Lien,Software & Technology,11.83%,,SOFR,6.5%,,,,32592,31929,32235,0.6%,31929,,,,,,BXSL,2024-08-07
+IQN Holding Corp.,co_035ad4a474bc,First Lien,Software & Technology,10.6%,,SOFR,5.25%,,,,4986,4950,4986,0.09%,4950,,,,,,BXSL,2024-08-07
+IRI Group Holdings Inc.,co_fd72761785f4,First Lien,Transportation & Logistics,10.85%,2%,SOFR,5.5%,,,,197857,195124,197857,3.67%,195124,,,,,,BXSL,2024-08-07
+IRI Group Holdings Inc.,co_fd72761785f4,First Lien,Transportation & Logistics,10.34%,,SOFR,5%,,,,8998,8806,8998,0.17%,8806,,,,,,BXSL,2024-08-07
+JS Parent Inc.,co_1b801b73223e,First Lien,Software & Technology,10.32%,,SOFR,5%,,,,35666,35476,35471,0.66%,35476,,,,,,BXSL,2024-08-07
+LD Lower Holdings Inc.,co_1c44e1ba443c,First Lien,Software & Technology,11.93%,,SOFR,6.5%,,,,91183,90596,90499,1.68%,90596,,,,,,BXSL,2024-08-07
+Lightbox Intermediate LP,co_fc2524f2a361,First Lien,Media & Entertainment,10.46%,,SOFR,5%,,,,1960,1937,1877,0.03%,1937,,,,,,BXSL,2024-08-07
+Magnesium BorrowerCo Inc.,co_9c7f9aa523cd,First Lien,Software & Technology,10.59%,,SOFR,5.25%,,,,5329,5240,5317,0.1%,5240,,,,,,BXSL,2024-08-07
+Magnesium BorrowerCo Inc.,co_9c7f9aa523cd,First Lien,Software & Technology,10.45%,,SOFR,5.25%,,,,3391,4161,4287,0.08%,4161,,,,,,BXSL,2024-08-07
+Mandolin Technology Intermediate Holdings Inc.,co_4da4842cbd61,First Lien,Media & Entertainment,9.23%,,SOFR,3.75%,,,,8483,8408,7846,0.15%,8408,,,,,,BXSL,2024-08-07
+Mandolin Technology Intermediate Holdings Inc.,co_4da4842cbd61,First Lien,Media & Entertainment,11.73%,,SOFR,6.25%,,,,6930,6753,6930,0.13%,6753,,,,,,BXSL,2024-08-07
+Mandolin Technology Intermediate Holdings Inc.,co_4da4842cbd61,First Lien,Media & Entertainment,9.24%,,SOFR,3.75%,,,,676,671,586,0.01%,671,,,,,,BXSL,2024-08-07
+Medallia Inc.,co_6264231460f8,First Lien,Software & Technology,11.93%,4%,SOFR,6.5%,,,,373657,369663,366184,6.79%,369663,,,,,,BXSL,2024-08-07
+Monk Holding Co. 1,co_dc91150194e3,First Lien,Software & Technology,11.13%,,SOFR,5.7%,,,,4779,4714,4779,0.09%,4714,,,,,,BXSL,2024-08-07
+Monk Holding Co. 2,co_dc91150194e3,First Lien,Software & Technology,10.93%,,SOFR,5.5%,,,,289,281,273,0.01%,281,,,,,,BXSL,2024-08-07
+MRI Software LLC,co_2bbd5408e42d,First Lien,Software & Technology,10.93%,,SOFR,5.5%,,,,57590,57552,57016,1.06%,57552,,,,,,BXSL,2024-08-07
+MRI Software LLC,co_2bbd5408e42d,First Lien,Software & Technology,11.08%,,SOFR,5.75%,,,,7444,7217,7104,0.13%,7217,,,,,,BXSL,2024-08-07
+NAVEX TopCo Inc.,co_7651eb40cf26,First Lien,Software & Technology,10.83%,,SOFR,5.5%,,,,61150,59945,61150,1.13%,59945,,,,,,BXSL,2024-08-07
+Nintex Topco Ltd.,co_36f99ded6434,First Lien,Software & Technology,11.46%,1.5%,SOFR,6%,,,,33946,33526,32928,0.61%,33526,,,,,,BXSL,2024-08-07
+Noble Midco 3 Ltd.,co_905c7786110e,First Lien,Software & Technology,10.32%,,SOFR,5%,,,,16792,16581,16579,0.31%,16581,,,,,,BXSL,2024-08-07
+Oranje Holdco Inc.,co_055c2740c113,First Lien,Business Services,12.83%,,SOFR,7.5%,,,,2000,1957,2000,0.04%,1957,,,,,,BXSL,2024-08-07
+Oranje Holdco Inc.,co_055c2740c113,First Lien,Business Services,12.59%,,SOFR,7.25%,,,,33969,33291,33969,0.63%,33291,,,,,,BXSL,2024-08-07
+PDI TA Holdings Inc.,co_d4e76ed2d08c,First Lien,Software & Technology,10.58%,,SOFR,5.25%,,,,33500,32974,33034,0.61%,32974,,,,,,BXSL,2024-08-07
+PDI TA Holdings Inc.,co_d4e76ed2d08c,First Lien,Software & Technology,10.6%,,SOFR,5.25%,,,,4013,3894,3886,0.07%,3894,,,,,,BXSL,2024-08-07
+Rally Buyer Inc.,co_682693ec1283,First Lien,Software & Technology,11.09%,1.75%,SOFR,5.75%,,,,882,870,869,0.02%,870,,,,,,BXSL,2024-08-07
+Rally Buyer Inc.,co_682693ec1283,First Lien,Software & Technology,11.07%,,SOFR,5.75%,,,,44,42,42,0%,42,,,,,,BXSL,2024-08-07
+Recorded Future Inc.,co_473199530367,First Lien,Software & Technology,11.08%,,SOFR,5.75%,,,,22872,22490,22566,0.42%,22490,,,,,,BXSL,2024-08-07
+Relativity ODA LLC,co_ba854e909c5f,First Lien,-,11.44%,,SOFR,6%,,,,19337,19111,19337,0.36%,19111,,,,,,BXSL,2024-08-07
+Scorpio BidCo SAS,co_7efff7021616,First Lien,Software & Technology,9.6%,,SOFR,5.75%,,,,22826,24639,23861,0.44%,24639,,,,,,BXSL,2024-08-07
+Spitfire Parent Inc.,co_5a4289dafdb9,First Lien,Software & Technology,10.94%,,SOFR,5.5%,,,,78218,77619,78218,1.45%,77619,,,,,,BXSL,2024-08-07
+Spitfire Parent Inc.,co_5a4289dafdb9,First Lien,Software & Technology,9.15%,,SOFR,5.5%,,,,10185,12187,10908,0.2%,12187,,,,,,BXSL,2024-08-07
+Stamps.com Inc.,co_49e9c181b272,First Lien,Software & Technology,11.18%,,SOFR,5.75%,,,,283747,280291,278782,5.17%,280291,,,,,,BXSL,2024-08-07
+Triple Lift Inc.,co_72a16a9e1dff,First Lien,Media & Entertainment,11.24%,,SOFR,5.75%,,,,61343,60647,57662,1.07%,60647,,,,,,BXSL,2024-08-07
+Triple Lift Inc.,co_72a16a9e1dff,First Lien,Media & Entertainment,11.21%,,SOFR,5.75%,,,,2951,2866,2489,0.05%,2866,,,,,,BXSL,2024-08-07
+WPEngine Inc.,co_5bb52fd1c6ba,First Lien,Software & Technology,11.82%,,SOFR,6.5%,,,,66667,64790,66467,1.23%,64790,,,,,,BXSL,2024-08-07
+Zendesk Inc.,co_97d76b2239a5,First Lien,Software & Technology,11.6%,,SOFR,6.25%,,,,1623,1595,1614,0.03%,1595,,,,,,BXSL,2024-08-07
+CustomInk LLC,co_a106d9901814,First Lien,Consumer & Retail,11.61%,,SOFR,6.18%,,,,163594,162787,163594,3.03%,162787,,,,,,BXSL,2024-08-07
+Lytx Inc.,co_e4faafb6ecd9,First Lien,Software & Technology,10.43%,,SOFR,5%,,,,84454,83826,84454,1.57%,83826,,,,,,BXSL,2024-08-07
+Porcelain Acquisition Corp.,co_3b6d0e5a85c0,First Lien,Industrials,11.43%,,SOFR,6%,,,,54324,53577,52422,0.97%,53577,,,,,,BXSL,2024-08-07
+Red Fox CD Acquisition Corp.,co_d02229087ee1,First Lien,Distribution & Wholesale,11.33%,,SOFR,6%,,,,78466,76760,78074,1.45%,76760,,,,,,BXSL,2024-08-07
+Capstone Logistics LLC,co_17aeb1f60a06,First Lien,Transportation & Logistics,10.19%,,SOFR,4.75%,,,,5473,5452,5473,0.1%,5452,,,,,,BXSL,2024-08-07
+Channelside Acquisitionco Inc.,co_f18a29906d7e,First Lien,Transportation & Logistics,10.09%,,SOFR,4.75%,,,,19803,19571,19797,0.37%,19571,,,,,,BXSL,2024-08-07
+Channelside Acquisitionco Inc.,co_f18a29906d7e,First Lien,Transportation & Logistics,10.09%,,SOFR,4.75%,,,,847,815,847,0.02%,815,,,,,,BXSL,2024-08-07
+Frontline Road Safety LLC,co_e15164298348,First Lien,Industrials,11.42%,,SOFR,5.75%,,,,99852,98850,99852,1.85%,98850,,,,,,BXSL,2024-08-07
+Frontline Road Safety LLC,co_e15164298348,First Lien,Industrials,11.33%,,SOFR,5.75%,,,,4397,4261,4260,0.08%,4261,,,,,,BXSL,2024-08-07
+Helix TS LLC,co_f229e463d67c,First Lien,Transportation & Logistics,11.73%,,SOFR,6.25%,,,,20972,20756,20553,0.38%,20756,,,,,,BXSL,2024-08-07
+Helix TS LLC,co_f229e463d67c,First Lien,Transportation & Logistics,11.7%,,SOFR,6.25%,,,,25367,25061,24860,0.46%,25061,,,,,,BXSL,2024-08-07
+Italian Motorway Holdings S.à.r.l,co_637a69b3ce02,First Lien,Transportation & Logistics,9.09%,,SOFR,5.25%,,,,78810,81466,84401,1.56%,81466,,,,,,BXSL,2024-08-07
+Roadsafe Holdings Inc.,co_ad8fbee3fbc5,First Lien,Transportation & Logistics,11.14%,,SOFR,5.75%,,,,33318,32944,32319,0.6%,32944,,,,,,BXSL,2024-08-07
+Roadsafe Holdings Inc.,co_ad8fbee3fbc5,First Lien,Transportation & Logistics,11.15%,,SOFR,5.75%,,,,20487,20286,19872,0.37%,20286,,,,,,BXSL,2024-08-07
+Roadsafe Holdings Inc.,co_ad8fbee3fbc5,First Lien,Transportation & Logistics,11.15%,,SOFR,5.75%,,,,4180,4131,4055,0.08%,4131,,,,,,BXSL,2024-08-07
+Safety Borrower Holdings LP,co_2bda85b688b4,First Lien,Transportation & Logistics,10.81%,,SOFR,5.25%,,,,5297,5273,5297,0.1%,5273,,,,,,BXSL,2024-08-07
+Safety Borrower Holdings LP,co_2bda85b688b4,First Lien,Transportation & Logistics,12.75%,,SOFR,4.25%,,,,131,129,127,0%,129,,,,,,BXSL,2024-08-07
+Sam Holding Co Inc.,co_473f73e739c4,First Lien,Transportation & Logistics,11.2%,,SOFR,5.75%,,,,36955,36561,36955,0.69%,36561,,,,,,BXSL,2024-08-07
+Sam Holding Co Inc.,co_473f73e739c4,First Lien,Transportation & Logistics,11.19%,,SOFR,5.75%,,,,27336,27081,27336,0.51%,27081,,,,,,BXSL,2024-08-07
+Sam Holding Co Inc.,co_473f73e739c4,First Lien,Transportation & Logistics,11.15%,,SOFR,5.75%,,,,4936,4816,4836,0.09%,4816,,,,,,BXSL,2024-08-07
+Sam Holding Co Inc.,co_473f73e739c4,First Lien,Transportation & Logistics,13.5%,,SOFR,5%,,,,2300,2240,2300,0.04%,2240,,,,,,BXSL,2024-08-07
+TRP Infrastructure Services LLC,co_c4e9702fbdc3,First Lien,Business Services,10.98%,,SOFR,5.5%,,,,38687,38298,35205,0.65%,38298,,,,,,BXSL,2024-08-07
+Material Holdings LLC,co_2389cec54b7f,First Lien,Business Services,11.35%,,SOFR,6%,,,,20644,20442,20644,0.38%,20442,,,,,,BXSL,2024-08-07
+Material Holdings LLC,co_2389cec54b7f,First Lien,Business Services,11.35%,,SOFR,6%,,,,5021,4969,3037,0.06%,4969,,,,,,BXSL,2024-08-07
+Canadian Hospital Specialties Ltd.,co_48759271b1dc,First Lien,Healthcare,8.75%,,SOFR,8.75%,,,,10533,8305,6718,0.12%,8305,,,,,,BXSL,2024-08-07
+Jayhawk Buyer LLC,co_beff8bbb2a29,First Lien,Healthcare,14.18%,,SOFR,8.75%,,,,5183,5130,4924,0.09%,5130,,,,,,BXSL,2024-08-07
+Victory Buyer LLC,co_6f6f79e9f43a,First Lien,Industrials,12.6%,,SOFR,7%,,,,9619,9553,9138,0.17%,9553,,,,,,BXSL,2024-08-07
+Inovalon Holdings Inc.,co_b1163ca4a88a,First Lien,Software & Technology,,16.09%,SOFR,10.5%,,,,12975,12759,12975,0.24%,12759,,,,,,BXSL,2024-08-07
+Thevelia US LLC,co_93d2c404e989,First Lien,Business Services,12.21%,,SOFR,6.75%,,,,4920,4810,4920,0.09%,4810,,,,,,BXSL,2024-08-07
+Mandolin Technology Intermediate Holdings Inc.,co_4da4842cbd61,First Lien,Media & Entertainment,11.98%,,SOFR,6.5%,,,,3550,3519,3310,0.06%,3519,,,,,,BXSL,2024-08-07
+Healthcomp Holding Company LLC,co_76ed77b0c1e4,First Lien,Healthcare,,13.75%,SOFR,13.75%,,,,10805,10523,10643,0.2%,10523,,,,,,BXSL,2024-08-07
+PPT Holdings III LLC,co_c2a12bc90575,First Lien,Software & Technology,,12.75%,SOFR,12.75%,,,,1664,1625,1635,0.03%,1625,,,,,,BXSL,2024-08-07
+Micross Topco,co_c56c87e1d6e6,Common Equity,Aerospace & Defense,,,,,,,,,4767,5786,0.11%,4767,,,,4767,,BXSL,2024-08-07
+AGI Group Holdings LP,co_7a7c59ae2580,Other Equity,Transportation & Logistics,,,,,,,,,902,591,0.01%,902,,,,902,,BXSL,2024-08-07
+Mode Holdings,co_7ef9259064fb,Common Equity,,,,,,,,,,5487,7627,0.14%,5487,,,,5486923,,BXSL,2024-08-07
+GTCR Investors LP,co_766605e0606d,Other Equity,Business Services,,,,,,,,,417,417,0.01%,417,,,,417006,,BXSL,2024-08-07
+Box Co-Invest Blocker,co_9cd4d3748b38,Other Equity,,,,,,,,,,702,197,0%,702,,,,702305,,BXSL,2024-08-07
+Box Co-Invest Blocker,co_9cd4d3748b38,Other Equity,,,,,,,,,,83,97,0%,83,,,,85315,,BXSL,2024-08-07
+EIS Acquisition Holdings,co_d7fa5302fd76,Common Equity,,,,,,,,,,3350,11215,0.21%,3350,,,,6292,,BXSL,2024-08-07
+Cambium Holdings,co_c8b42c630f33,Preferred Equity,,11.5%,,,,,,,,12314,17037,0.32%,12314,,,,12511857,,BXSL,2024-08-07
+DTA LP,co_0845f74a936d,Other Equity,Consumer & Retail,,,,,,,,,2169,2171,0.04%,2169,,,,2171032,,BXSL,2024-08-07
+THL Fund IX Investors (Plymouth II) LP,co_90fffccab2d9,Other Equity,,,,,,,,,,249,302,0.01%,249,,,,248786,,BXSL,2024-08-07
+Point Broadband Holdings,co_09ccab17fd8b,Other Equity,,,,,,,,,,5877,6241,0.12%,5877,,,,6930,,BXSL,2024-08-07
+Point Broadband Holdings,co_09ccab17fd8b,Other Equity,,,,,,,,,,1053,1322,0.02%,1053,,,,369255,,BXSL,2024-08-07
+Point Broadband Holdings,co_09ccab17fd8b,Other Equity,,,,,,,,,,1263,1341,0.02%,1263,,,,1489,,BXSL,2024-08-07
+Point Broadband Holdings,co_09ccab17fd8b,Other Equity,,,,,,,,,,226,284,0.01%,226,,,,79358,,BXSL,2024-08-07
+GCX Corp.,co_ef1cdc2c06e6,Other Equity,Healthcare,,,,,,,,,539,318,0.01%,539,,,,539,,BXSL,2024-08-07
+AVE Holdings I Corp.,co_99a655878a3b,Other Equity,Healthcare,,,,,,,,,607,651,0.01%,607,,,,625944,,BXSL,2024-08-07
+Jayhawk Holdings,co_f008fbca0fcb,Common Equity,,,,,,,,,,392,131,0%,392,,,,2201,,BXSL,2024-08-07
+Jayhawk Holdings,co_f008fbca0fcb,Common Equity,,,,,,,,,,211,70,0%,211,,,,1185,,BXSL,2024-08-07
+Caerus Midco 2 S.à r.l.,co_d83141777070,Other Equity,Healthcare,,,,,,,,,12,1,0%,12,,,,11710,,BXSL,2024-08-07
+Caerus Midco 2 S.à r.l.,co_d83141777070,Other Equity,Healthcare,,,,,,,,,58,54,0%,58,,,,58458,,BXSL,2024-08-07
+Healthcomp Holding Company,co_76ed77b0c1e4,Preferred Equity,Healthcare,6%,,,,,,,,985,985,0.02%,985,,,,9850,,BXSL,2024-08-07
+CFCo LLC,co_5aa301b6e439,Other Equity,Insurance,,,,,,,,,0,0,0%,0,,,,14907400,,BXSL,2024-08-07
+Shelf Holdco Ltd.,co_5be8d7670e10,Other Equity,Insurance,,,,,,,,,50,160,0%,50,,,,50000,,BXSL,2024-08-07
+NC Ocala Co-Invest Beta,co_3eb6137381dc,Partnership Interest,,,,,,,,,,2854,3368,0.06%,2854,,,,2854133,,BXSL,2024-08-07
+OHCP V TC COI,co_8c58db227edd,Partnership Interest,,,,,,,,,,3500,7210,0.13%,3500,,,,3500000,,BXSL,2024-08-07
+Tricor Horizon - LP,co_552a21f42be7,Other Equity,Business Services,,,,,,,,,386,409,0.01%,386,,,,385781,,BXSL,2024-08-07
+Trinity Air Consultants Holdings Corp.,co_b8b8988159ca,Other Equity,Business Services,,,,,,,,,3,5,0%,3,,,,2583,,BXSL,2024-08-07
+Connatix Parent,co_e2face82fae4,Common Equity,,,,,,,,,,462,181,0%,462,,,,42045,,BXSL,2024-08-07
+Descartes Holdings,co_dd52105b9d04,Other Equity,,,,,,,,,,213,35,0%,213,,,,49139,,BXSL,2024-08-07
+Expedition Holdco,co_bbeeb3c90473,Other Equity,,,,,,,,,,57,46,0%,57,,,,90,,BXSL,2024-08-07
+Expedition Holdco,co_bbeeb3c90473,Other Equity,,,,,,,,,,33,12,0%,33,,,,90000,,BXSL,2024-08-07
+Lobos Parent,co_a6b77828b56c,Preferred Equity,,10.5%,,,,,,,,1506,1900,0.04%,1506,,,,1545,,BXSL,2024-08-07
+Mandolin Technology Holdings,co_d69969c484b8,Preferred Equity,Software & Technology,,,,,,,,,3444,3825,0.07%,3444,,,,3550000,,BXSL,2024-08-07
+Mimecast Limited - LP,co_deb591c243ab,Other Equity,Software & Technology,,,,,,,,,668,708,0.01%,668,,,,667850,,BXSL,2024-08-07
+TPG IX Newark CI,co_7ec44fb9bef6,Partnership Interest,,,,,,,,,,1966,1966,0.04%,1966,,,,1965727,,BXSL,2024-08-07
+Zoro,co_3b97b8eff024,Other Equity,Software & Technology,,,,,,,,,21,21,0%,21,,,,2073,,BXSL,2024-08-07
+Zoro,co_3b97b8eff024,Other Equity,Software & Technology,12.5%,,,,,,,,362,456,0.01%,362,,,,373,,BXSL,2024-08-07
+CustomInk,co_a106d9901814,Preferred Equity,Consumer & Retail,,,,,,,,,5200,7844,0.15%,5200,,,,384520,,BXSL,2024-08-07
+Frontline Road Safety Investments,co_d9b3298630be,Common Equity,Financial Services,,,,,,,,,2909,5440,0.1%,2909,,,,27536,,BXSL,2024-08-07
+Ncp Helix Holdings,co_b281911e54c5,Preferred Equity,,,,,,,,,,372,465,0.01%,372,,,,369,,BXSL,2024-08-07
+Blackstone Donegal Holdings LP,co_e5e7c9cca1a4,Other,Insurance,,,,,,,,,1,6727,0.12%,1,,,,,cost_suspicious_vs_size,BXSL,2024-08-07
+Material+ Holding Company LLC,co_7a1dac607bb0,Other Equity,,,,,,,,,,0,0,0%,0,,,,5898,,BXSL,2024-08-07
+Other Cash and Cash Equivalents,co_7d22500d8c82,Other,,,,,,,,,,291292,291292,5.4%,291292,,,,,,BXSL,2024-08-07
+One,co_7692c3ad3540,Other,Food & Beverage,,,,,0%,,,,,,,,,,,,,BXSL,2024-08-07
+Two,co_3fc4ccfe7458,Other,,,,,,0.5%,,,,,,,,,,,,,BXSL,2024-08-07
+Three,co_8b5b9db0c13d,Other,,,,,,0.75%,,,,,,,,,,,,,BXSL,2024-08-07
+Four,co_04efaf080f5a,Other,,,,,,1%,,,,,,,,,,,,,BXSL,2024-08-07
+Five,co_222b0bd51fce,Other,,,,,,1.25%,,,,,,,,,,,,,BXSL,2024-08-07
+Six,co_44778d82365e,Other,,,,,,1.5%,,,,,,,,,,,,,BXSL,2024-08-07
+Seven,co_3ba8d02b16fd,Other,,,,,,2%,,,,,,,,,,,,,BXSL,2024-08-07
+WHCG Purchaser III Inc.,co_e6e79890b8a2,Other,Healthcare,,,,,,,,,23500,15400,,23500,,,,,,BXSL,2024-08-07
+AI Altius Bidco Inc.,co_0489bd3c10c3,Delayed Draw,Software & Technology,,,,,,,,,,0,,,500000,,,,,BXSL,2024-08-07
+American Restoration Holdings LLC,co_bd5a5e73d4f3,First Lien,Consumer & Retail,,,,,,,,,,0,,,4544000,,,,,BXSL,2024-08-07
+American Restoration Holdings LLC,co_bd5a5e73d4f3,Delayed Draw,Consumer & Retail,,,,,,,,,,0,,,1309000,,,,,BXSL,2024-08-07
+American Restoration Holdings LLC,co_bd5a5e73d4f3,Delayed Draw,Consumer & Retail,,,,,,,,,,0,,,3538000,,,,,BXSL,2024-08-07
+American Restoration Holdings LLC,co_bd5a5e73d4f3,Revolver,Consumer & Retail,,,,,,,,,,0,,,1309000,,,,,BXSL,2024-08-07
+Cisive Holdings Corp.,co_f37109bdb472,Revolver,Business Services,,,,,,,,,,22,,,1111,,,,,BXSL,2024-08-07
+Dechra Pharmaceuticals Holdings Ltd.,co_2cfab5481aa1,Delayed Draw,Healthcare,,,,,,,,,,3,,,260,,,,,BXSL,2024-08-07
+Dechra Pharmaceuticals Holdings Ltd.,co_2cfab5481aa1,Delayed Draw,Healthcare,,,,,,,,,,3,,,218,,,,,BXSL,2024-08-07
+Everbridge Holdings LLC,co_d5121f2280dc,First Lien,Software & Technology,,,,,,,,,,0,,,22111000,,,,,BXSL,2024-08-07
+Everbridge Holdings LLC,co_d5121f2280dc,Delayed Draw,Software & Technology,,,,,,,,,,0,,,5542000,,,,,BXSL,2024-08-07
+Everbridge Holdings LLC,co_d5121f2280dc,Revolver,Software & Technology,,,,,,,,,,0,,,2211000,,,,,BXSL,2024-08-07
+Fern Bidco Ltd.,co_08b09ca73132,First Lien,Software & Technology,,,,,,,,,,0,,,25170000,,,,,BXSL,2024-08-07
+Fern Bidco Ltd.,co_08b09ca73132,Delayed Draw,Software & Technology,,,,,,,,,,0,,,12713000,,,,,BXSL,2024-08-07
+Gannett Fleming Inc.,co_ee4dfc4b7ffd,First Lien,Industrials,,,,,,,,,,0,,,61435000,,,,,BXSL,2024-08-07
+Gannett Fleming Inc.,co_ee4dfc4b7ffd,Revolver,Industrials,,,,,,,,,,0,,,6144000,,,,,BXSL,2024-08-07
+Kona Intermediate LLC,co_42101261dd36,First Lien,Media & Entertainment,,,,,,,,,,0,,,1034000,,,,,BXSL,2024-08-07
+Kona Intermediate LLC,co_42101261dd36,Delayed Draw,Media & Entertainment,,,,,,,,,,0,,,306000,,,,,BXSL,2024-08-07
+Kona Intermediate LLC,co_42101261dd36,Revolver,Media & Entertainment,,,,,,,,,,0,,,122000,,,,,BXSL,2024-08-07
+Magic Bidco Inc.,co_17eba35ade52,First Lien,Healthcare,,,,,,,,,,0,,,19656000,,,,,BXSL,2024-08-07
+Magic Bidco Inc.,co_17eba35ade52,Delayed Draw,Healthcare,,,,,,,,,,0,,,7858000,,,,,BXSL,2024-08-07
+Magic Bidco Inc.,co_17eba35ade52,Revolver,Healthcare,,,,,,,,,,0,,,3621000,,,,,BXSL,2024-08-07
+Skopima Consilio Parent LLC,co_3409326f4afe,Revolver,Business Services,,,,,,,,,,27,,,4200,,,,,BXSL,2024-08-07
+Spectrum Safety Solution Purchaser LLC,co_445fa4690d5d,Other Equity,,,,,,,,,,,0,,,5287000,,,,,BXSL,2024-08-07
+Spectrum Safety Solution Purchaser LLC,co_445fa4690d5d,First Lien,,,,,,,,,,,0,,,75721000,,,,,BXSL,2024-08-07
+Spectrum Safety Solution Purchaser LLC,co_445fa4690d5d,Delayed Draw,,,,,,,,,,,0,,,16005000,,,,,BXSL,2024-08-07
+Spectrum Safety Solution Purchaser LLC,co_445fa4690d5d,Revolver,,,,,,,,,,,0,,,15885000,,,,,BXSL,2024-08-07

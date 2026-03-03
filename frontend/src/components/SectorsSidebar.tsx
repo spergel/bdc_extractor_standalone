@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import { useCompanyExposures } from '../api/hooks';
 import type { CompanyExposure } from '../data/adapter';
+import { formatMillionsAsCurrency } from '../utils/formatCurrency';
 
 type Props = {
   selectedSector: string | undefined;
@@ -50,7 +51,7 @@ export function SectorsSidebar({ selectedSector, onSelectSector }: Props) {
           )}
           {sectors.map((s) => {
             const isSelected = s.name === selectedSector;
-            const expStr = s.exposure >= 1e6 ? `${(s.exposure / 1e6).toFixed(1)}B` : s.exposure >= 1e3 ? `${(s.exposure / 1e3).toFixed(1)}B` : `${s.exposure.toFixed(0)}M`;
+            const expStr = formatMillionsAsCurrency(s.exposure);
             return (
               <button
                 key={s.name}
@@ -62,7 +63,7 @@ export function SectorsSidebar({ selectedSector, onSelectSector }: Props) {
                   {s.name}
                 </div>
                 <div className={`text-xs mt-0.5 ${isSelected ? 'text-white/90' : 'text-[#808080]'}`}>
-                  {s.count} companies • ${expStr}
+                  {s.count} companies • {expStr}
                 </div>
               </button>
             );
