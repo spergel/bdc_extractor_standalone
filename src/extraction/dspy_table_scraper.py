@@ -649,7 +649,50 @@ class DSPyTableScraper:
                         self._row_to_dict(row, ticker, filing_result.filing_date)
                     )
 
-        return all_rows
+        # --- Post-extraction cleanup ---
+
+        # 1. Filter rows with no meaningful financial data.
+        #    JV subsidiary portfolio tables and comparative-period tables often produce
+        #    rows that have only a principal_amount (commitment) but no fair_value and
+        #    no rate data. Exclude them to avoid polluting the output.
+        _RATE_FIELDS = ("cash_rate", "spread", "pik_rate", "reference_rate")
+        filtered: List[Dict[str, str]] = []
+        for r in all_rows:
+            has_value = r.get("fair_value") or r.get("amortized_cost")
+            has_rate = any(r.get(f) for f in _RATE_FIELDS)
+            has_principal = r.get("principal_amount")
+            if has_value or (has_rate and has_principal):
+                filtered.append(r)
+            else:
+                logger.debug(
+                    "Dropping data-poor row (no fv/cost, no rate+principal): %s",
+                    r.get("company_name", ""),
+                )
+        dropped = len(all_rows) - len(filtered)
+        if dropped:
+            logger.info("Filtered %d data-poor rows (JV/comparative tables)", dropped)
+
+        # 2. Dedup rows that appear identically across continuation sub-tables.
+        #    Key: (company_name, investment_type, fair_value, principal_amount).
+        #    Different tranches for the same company will have different amounts so
+        #    they are correctly kept.
+        seen_keys: set = set()
+        deduped: List[Dict[str, str]] = []
+        for r in filtered:
+            key = (
+                r.get("company_name", "").strip().lower(),
+                r.get("investment_type", "").strip().lower(),
+                r.get("fair_value", "").strip(),
+                r.get("principal_amount", "").strip(),
+            )
+            if key not in seen_keys:
+                seen_keys.add(key)
+                deduped.append(r)
+        dupes = len(filtered) - len(deduped)
+        if dupes:
+            logger.info("Removed %d duplicate rows from continuation tables", dupes)
+
+        return deduped
 
     # ------------------------------------------------------------------
     # Section-context helpers
@@ -735,10 +778,18 @@ class DSPyTableScraper:
     # Output helpers
     # ------------------------------------------------------------------
 
+    @staticmethod
+    def _strip_num(s: Optional[str]) -> str:
+        """Strip $, commas, and whitespace from a numeric string (model sometimes ignores schema instructions)."""
+        if not s:
+            return ""
+        return s.replace(",", "").replace("$", "").strip()
+
     def _row_to_dict(
         self, row: InvestmentRow, ticker: str, filing_date: str
     ) -> Dict[str, str]:
         """Convert a typed InvestmentRow to a flat string dict matching OUTPUT_COLUMNS."""
+        sn = self._strip_num
         return {
             "company_name": row.company_name or "",
             "investment_type": row.investment_type or "",
@@ -750,13 +801,13 @@ class DSPyTableScraper:
             "floor_rate": row.floor_rate or "",
             "acquisition_date": row.acquisition_date or "",
             "maturity_date": row.maturity_date or "",
-            "principal_amount": row.principal_amount or "",
-            "amortized_cost": row.amortized_cost or "",
-            "fair_value": row.fair_value or "",
+            "principal_amount": sn(row.principal_amount),
+            "amortized_cost": sn(row.amortized_cost),
+            "fair_value": sn(row.fair_value),
             "percent_of_net_assets": row.percent_of_net_assets or "",
-            "cost": row.cost or "",
-            "commitment_limit": row.commitment_limit or "",
-            "undrawn_commitment": row.undrawn_commitment or "",
+            "cost": sn(row.cost),
+            "commitment_limit": sn(row.commitment_limit),
+            "undrawn_commitment": sn(row.undrawn_commitment),
             "rate_cap": "",
             "shares": "",
             "data_quality_flags": "dspy_extracted",

@@ -415,9 +415,9 @@ class LLMTableScraper:
                 
                 soup = BeautifulSoup(doc_text, 'html.parser')
                 
-                # Find all "Schedule of Investments" headers (expanded search)
+                # Find all "Schedule of Investments" headers (structural elements only)
                 schedule_headers = []
-                for tag in soup.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div', 'span']):
+                for tag in soup.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p']):
                     text = tag.get_text(strip=True).lower()
                     if any(keyword in text for keyword in [
                         'schedule of investments',
@@ -437,8 +437,8 @@ class LLMTableScraper:
                 all_html_tables = soup.find_all('table')
                 logger.info(f"Found {len(all_html_tables)} tables in {doc.filename}")
                 
-                # Get all elements in document order (include more element types)
-                all_elements = list(soup.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'table', 'div', 'span']))
+                # Get all elements in document order (structural elements only - exclude div/span to avoid O(n²) blowup)
+                all_elements = list(soup.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'table']))
                 
                 # Find ALL schedule headers (not just first)
                 schedule_header_positions = []
@@ -1147,7 +1147,7 @@ COLUMN DEFINITIONS:
 9. maturity_date: Date in YYYY-MM-DD format, leave blank if not available
 10. principal_amount: Loan principal amount (numbers only, no $ signs, no commas)
 11. amortized_cost: Book value (numbers only, no $ signs, no commas)
-12. fair_value: Market value (numbers only, no $ signs, no commas)
+12. fair_value: Market DOLLAR value (numbers only, no $ signs, no commas). CRITICAL: This is a DOLLAR AMOUNT, never a share count or number of warrants. For equity/warrant positions where the fair value shown is $0, "—", or blank, use empty string. A filing may show "147,815,378 warrants" as a quantity — that number of warrants is NOT the fair value.
 13. percent_of_net_assets: Percentage (numbers only, no % signs, e.g., "1.2" not "1.2%")
 14. cost: Cost basis (numbers only)
 15. commitment_limit: Commitment limit (numbers only)
@@ -1158,6 +1158,8 @@ EXCLUDE THESE ROWS:
 - Industry category headers (rows that are ONLY industry names like "High Tech Industries", "Healthcare", "Automotive" without a company name)
 - Investment type category headers (rows that are ONLY investment types like "Senior Secured Loans", "Common Equity" without a company name)
 - Total/summary rows (containing words like "Total", "Aggregate", "Summary")
+- Subtotal rows where the "company name" is a category with a percentage, e.g. "Canada - 7.70%", "1st Lien/Senior Secured Debt - 196.24%", "United States - 207.7%", "- 213.15%"
+- Rows where the company name is just a percentage value like "218.7%" or "- 4.5%"
 - Footnotes and references
 - Empty rows or rows with no company name
 - Rows that are just dates or numbers without company context
@@ -1208,7 +1210,7 @@ DATA QUALITY REQUIREMENTS:
 
 EXAMPLE OF CORRECT FORMAT:
 company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment
-ABC Company LLC,First Lien,Healthcare Services,8.5%,,SOFR,5.0%,2023-01-15,2028-01-15,5000,4950,5000,2.5,,,,
+ABC Company LLC,First Lien,Healthcare Services,8.5%,,SOFR,5.0%,2023-01-15,2028-01-15,5000,4950,5000,2.5,,,
 XYZ Corp,Common Equity,Software,,,N/A,N/A,2022-06-01,,,1000,1200,0.6,1000,,
 """
 
@@ -1353,7 +1355,7 @@ XYZ Corp,Common Equity,Software,,,N/A,N/A,2022-06-01,,,1000,1200,0.6,1000,,
         """
         Post-extraction validation to catch obviously wrong values.
         Fixes or clears fields that are clearly mis-parsed (e.g., dollar amounts
-        in the percent_of_net_assets column).
+        in the percent_of_net_assets column, or share counts read as fair_value).
 
         Column indices (0-based):
           9=principal_amount, 10=amortized_cost, 11=fair_value,
@@ -1365,6 +1367,33 @@ XYZ Corp,Common Equity,Software,,,N/A,N/A,2022-06-01,,,1000,1200,0.6,1000,,
         if not rows:
             return rows
 
+        # --- Pass 1: collect fair_values to compute outlier threshold ---
+        fv_values = []
+        for row_str in rows[1:]:
+            try:
+                reader = csv.reader(StringIO(row_str))
+                cols = list(reader)[0]
+                if len(cols) >= 12:
+                    fv_str = cols[11].strip()
+                    if fv_str:
+                        fv_val = float(fv_str.replace(',', ''))
+                        if fv_val > 0:
+                            fv_values.append(fv_val)
+            except Exception:
+                pass
+
+        # Outlier threshold: 1000x median, floored at 50_000_000.
+        # In thousands scale: floor = $50B per position — impossible for any single BDC holding.
+        # In unit (raw $) scale: floor = $50M — 1000x median will dominate for real portfolios.
+        fv_outlier_threshold = float('inf')
+        if len(fv_values) >= 3:
+            fv_sorted = sorted(fv_values)
+            fv_median = fv_sorted[len(fv_sorted) // 2]
+            if fv_median > 0:
+                fv_outlier_threshold = max(fv_median * 1000, 50_000_000)
+                logger.debug(f"Fair value outlier threshold: {fv_outlier_threshold:,.0f} (1000x median {fv_median:,.0f})")
+
+        # --- Pass 2: validate and fix each row ---
         validated = [rows[0]]  # Keep header
         fixes_count = 0
 
@@ -1397,13 +1426,21 @@ XYZ Corp,Common Equity,Software,,,N/A,N/A,2022-06-01,,,1000,1200,0.6,1000,,
                     cols[12] = ''
                     fixed = True
 
-            # Validate fair_value (col 11) - should not be negative
+            # Validate fair_value (col 11)
             fv_str = cols[11].strip()
             if fv_str:
                 try:
                     fv_val = float(fv_str.replace(',', ''))
                     if fv_val < -1000:
                         logger.debug(f"Clearing suspicious negative fair_value={fv_val} for {cols[0]}")
+                        cols[11] = ''
+                        fixed = True
+                    elif fv_val > fv_outlier_threshold:
+                        # Likely a share count misread as a dollar value (e.g. 147M warrants -> 147B)
+                        logger.warning(
+                            f"Clearing outlier fair_value={fv_val:,.0f} (threshold {fv_outlier_threshold:,.0f}) "
+                            f"for '{cols[0]}' — likely share count, not dollar value"
+                        )
                         cols[11] = ''
                         fixed = True
                 except (ValueError, TypeError):
@@ -1515,15 +1552,33 @@ XYZ Corp,Common Equity,Software,,,N/A,N/A,2022-06-01,,,1000,1200,0.6,1000,,
         # Must have a company name
         if len(company_name) < 3:
             return False
-        
+
         # Filter out common header patterns
         if company_name.upper() in ['COMPANY NAME', 'PORTFOLIO COMPANY', 'COMPANY', 'INVESTMENT', 'TOTAL', 'SUMMARY']:
             return False
-        
+
         # Filter out markdown code block markers
         if company_name.strip() == '```' or company_name.strip().startswith('```'):
             return False
-        
+
+        # Filter subtotal rows: company_name is just a percentage (e.g. "218.7%" or "- 4.5%")
+        if re.match(r'^-?\s*\d+\.?\d*\s*%?\s*$', company_name):
+            return False
+
+        # Filter subtotal rows: "Category - N.N%" (e.g. "Canada - 7.70%", "1st Lien/Senior Secured Debt - 196.24%")
+        if re.match(r'^.{0,80}\s*-\s*\d+\.?\d*\s*%\s*$', company_name):
+            return False
+
+        # Filter standalone geography/country names (common XBRL dimension values)
+        _GEOGRAPHY_NAMES = {
+            'united states', 'canada', 'united kingdom', 'germany', 'france',
+            'australia', 'singapore', 'ireland', 'luxembourg', 'cayman islands',
+            'netherlands', 'japan', 'sweden', 'denmark', 'norway', 'spain',
+            'italy', 'switzerland', 'new zealand', 'hong kong', 'india',
+        }
+        if company_lower in _GEOGRAPHY_NAMES:
+            return False
+
         return True
     
     def _repair_csv_row(self, cols: list, expected_columns: int, original_line: str) -> list:

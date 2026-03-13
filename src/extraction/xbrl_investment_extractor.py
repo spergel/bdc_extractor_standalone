@@ -415,6 +415,10 @@ class XBRLInvestmentExtractor:
 
         # Drop rows that still have no company name (e.g. leading "Debt" context with no previous to fill from)
         rows = [r for r in rows if (r.get('company_name') or '').strip()]
+        before_dedup_rows = len(rows)
+        rows = self._deduplicate_output_rows(rows)
+        if len(rows) != before_dedup_rows:
+            logger.info("Row dedup: removed %d exact duplicate rows", before_dedup_rows - len(rows))
 
         logger.info("Built %d investment rows from XBRL data", len(rows))
         return rows
@@ -439,6 +443,27 @@ class XBRLInvestmentExtractor:
         'investmentvariableinterestratetypeextensibleenumeration',
         'investmentvariableinterestratetype',
     }
+
+    _SUMMARY_COMPANY_LABELS = frozenset({
+        'Debt Investments',
+        'Equity Investments',
+        'Total Debt Investments',
+        'Total Equity Investments',
+        'Total Unsecured Debt',
+        'Total Secured Debt',
+        'Total Common Stock',
+        'Total Preferred Stock',
+        'Total Warrants',
+        'Total Affiliates',
+        'Total Non-Control/Non-Affiliates',
+        'Total Non-Controlled/Non-Affiliated',
+        'Total Non-Controlled/Non-Affiliated Investments',
+    })
+    _LEGAL_ENTITY_SUFFIX_RE = re.compile(
+        r'\b(?:LLC|L\.?L\.?C\.?|Inc\.?|Corp\.?|Corporation|Ltd\.?|Limited|LP|L\.?P\.?|'
+        r'LLP|L\.?L\.?P\.?|PLC|Group|Holdings?|Partners?|Co\.?)\b',
+        re.IGNORECASE,
+    )
 
     def _deduplicate_dimensions(
         self, facts_by_dim: Dict[str, List[Dict[str, Any]]]
@@ -565,6 +590,8 @@ class XBRLInvestmentExtractor:
             return self._parse_tslx_format(dim_string, result)
         if dim_string.startswith('Portfolio Company ') and ' United States ' in dim_string:
             return self._parse_trin_format(dim_string, result)
+        if self._INV_AFFILIATION_RE.match(dim_string):
+            return self._parse_inv_affiliation_format(dim_string, result)
         if re.match(r'^(?:Debt|Equity)\s+Investments?\s+', dim_string, re.I) and ' and ' in dim_string:
             return self._parse_and_format(dim_string, result)
         elif re.match(r'^Investments?[-\s]', dim_string) or re.match(r'^(?:Debt|Equity)\s+Investments?\s*-', dim_string, re.I):
@@ -852,9 +879,10 @@ class XBRLInvestmentExtractor:
         if industry_part:
             result['industry'] = industry_part
 
-        # Skip "Total ..." summary entries
+        # Keep a marker for "Total ..." summary entries so row-level mapper can drop them.
         if any(s.strip().lower().startswith('total ') for s in segments[1:3]):
             result['company_name'] = ' '.join(segments[1:]).strip()
+            result['is_summary_entry'] = '1'
             return result
 
         # Second segment: Company name
@@ -942,6 +970,90 @@ class XBRLInvestmentExtractor:
             if month_name in month_names:
                 return f"{m.group(2)}-{month_names[month_name]:02d}-01"
         return ''
+
+    # Detection for new "Investment, {Affiliation}, {Type}, {Company...}, {Industry}" format
+    # (CGBD 2025+ and similar filers that switched to this comma structure)
+    _INV_AFFILIATION_RE = re.compile(
+        r'^Investment,\s*(?:Non-?Affiliated\s+Issuer|Affiliated\s+Issuer|Non-?Controlled|Controlled)\s*,',
+        re.IGNORECASE,
+    )
+    # Legal entity suffix to detect end of company name in comma-separated segments
+    _INV_AFF_LEGAL_SUFFIX_RE = re.compile(
+        r'\b(?:LLC|L\.?L\.?C\.?|L\.?P\.?|Inc\.?|Corp\.?|Ltd\.?|LTD\.?|GmbH|Pty\s+LTD?|'
+        r'Limited|Co\.|N\.V\.|S\.A\.|Company|Corporation|L\.L\.P\.?|LLP)\s*(?:\([^)]*\))?\s*$',
+        re.IGNORECASE,
+    )
+    _INV_AFF_INSTRUMENTS = frozenset(['revolver', 'delayed draw', 'delayed draw term loan', 'term loan'])
+
+    def _parse_inv_affiliation_format(self, dim_string: str, result: Dict[str, str]) -> Dict[str, str]:
+        """
+        Parse new CGBD 2025+ format:
+          "Investment, {Affiliation}, {InvType}, {Company parts...}, {Industry/Instrument}"
+
+        Examples:
+          "Investment, Non-Affiliated Issuer, First Lien Debt, ACR Group Borrower, LLC, Aerospace & Defense"
+          "Investment, Non-Affiliated Issuer, First Lien Debt, AP Plastics, LLC, Chemicals, Plastics & Rubber"
+          "Investment, Non-Affiliated Issuer, First Lien Debt, AAH Topco., LLC, Delayed Draw"
+          "Investment, Affiliated Issuer, Investment Funds, Middle Market Credit Fund, LLC, Mezzanine Loan, Investment Funds"
+        """
+        segments = [s.strip() for s in self._split_segments(dim_string, ',')]
+        # [0]="Investment", [1]=affiliation, [2]=investment_type, [3:]=company+industry
+
+        if len(segments) >= 3:
+            inv_type_raw = segments[2]
+            result['investment_description'] = inv_type_raw
+            if any(kw in inv_type_raw.lower() for kw in ('equity', 'warrant', 'preferred')):
+                result['investment_type_raw'] = 'EQUITY'
+            else:
+                result['investment_type_raw'] = 'DEBT'
+
+        if len(segments) < 4:
+            return result
+
+        remaining = segments[3:]
+
+        # Find LAST segment with a legal entity suffix → marks end of company name
+        company_end_idx = None
+        for i, seg in enumerate(remaining):
+            if self._INV_AFF_LEGAL_SUFFIX_RE.search(seg):
+                company_end_idx = i
+
+        if company_end_idx is not None:
+            company_parts = remaining[:company_end_idx + 1]
+            rest = remaining[company_end_idx + 1:]
+            result['company_name'] = ', '.join(company_parts)
+            if rest:
+                rest_str = ', '.join(rest)
+                if rest_str.lower() in self._INV_AFF_INSTRUMENTS:
+                    result['investment_description'] = rest_str
+                else:
+                    result['industry'] = rest_str
+        else:
+            # No legal suffix found
+            if not remaining:
+                return result
+            last = remaining[-1]
+            # Check if last segment is a known instrument type
+            if last.lower() in self._INV_AFF_INSTRUMENTS:
+                result['investment_description'] = last
+                result['company_name'] = ', '.join(remaining[:-1])
+            elif len(remaining) == 1:
+                result['company_name'] = remaining[0]
+            elif len(remaining) >= 2:
+                # Heuristic: last segment with '&' or ':' is industry (or part of it)
+                if '&' in last or ':' in last or last.lower() in _KNOWN_INDUSTRIES:
+                    # Check if second-to-last is also part of the industry (no '&'/':' but not a company suffix)
+                    penultimate = remaining[-2]
+                    if len(remaining) >= 3 and not self._INV_AFF_LEGAL_SUFFIX_RE.search(penultimate) and '&' not in penultimate and ':' not in penultimate:
+                        result['company_name'] = ', '.join(remaining[:-2])
+                        result['industry'] = ', '.join(remaining[-2:])
+                    else:
+                        result['company_name'] = ', '.join(remaining[:-1])
+                        result['industry'] = last
+                else:
+                    result['company_name'] = ', '.join(remaining)
+
+        return result
 
     # Regex for the blob format investment type anchor
     _BLOB_INV_TYPE_RE = re.compile(
@@ -1427,6 +1539,16 @@ class XBRLInvestmentExtractor:
             elif has_shares:
                 row['investment_type'] = 'Other Equity'
 
+        # Normalize and validate company name to avoid XBRL dimension leakage
+        cleaned_company, extracted_industry = self._sanitize_company_name(
+            row.get('company_name', ''),
+            parsed_dim.get('is_summary_entry') == '1',
+            parsed_dim.get('raw_dimension', ''),
+        )
+        row['company_name'] = cleaned_company
+        if extracted_industry and not row.get('industry'):
+            row['industry'] = extracted_industry
+
         # Skip rows with no company name and no fair value (likely metadata/totals)
         if not row['company_name'] and not row['fair_value']:
             return None
@@ -1455,8 +1577,183 @@ class XBRLInvestmentExtractor:
 
         # Clean company name: remove commas for CSV compatibility
         row['company_name'] = row['company_name'].replace(',', '')
+        if not row['company_name']:
+            return None
 
         return row
+
+    def _sanitize_company_name(
+        self,
+        company_name: str,
+        is_summary_entry: bool = False,
+        raw_dimension: str = '',
+    ) -> Tuple[str, str]:
+        """
+        Normalize company names parsed from typed dimensions.
+        Returns: (cleaned_company_name, extracted_industry_if_any)
+        """
+        if not company_name:
+            return '', ''
+
+        name = company_name.strip()
+        if not name:
+            return '', ''
+
+        if is_summary_entry:
+            return '', ''
+
+        # Fix missing separator in malformed strings like "Acquia IncIndustry Software"
+        name = re.sub(r'(?<=[a-z])Industry\b', ' Industry', name)
+
+        # Strip common leading type/category prefixes:
+        # "Unsecured Debt - 1.60% CivicPlus LLC" -> "CivicPlus LLC"
+        # "Common Stock - 0.01% Prairie Provident Resources Inc." -> "Prairie Provident Resources Inc."
+        prefix_re = (
+            r'^\s*(?:'
+            r'(?:first|1st|second|2nd)\s+lien'
+            r'|senior\s+secured(?:\s+debt)?'
+            r'|senior\s+unsecured(?:\s+debt)?'
+            r'|subordinated\s+debt'
+            r'|unsecured\s+debt'
+            r'|debt\s+investments?'
+            r'|equity\s+investments?'
+            r'|common\s+stock'
+            r'|preferred\s+stock'
+            r'|warrants?'
+            r')\s*-\s*(?:\d+(?:\.\d+)?%?)?\s*'
+        )
+        name = re.sub(prefix_re, '', name, flags=re.I).strip()
+
+        # Extract trailing "Industry X" leakage and optionally retain X as industry.
+        extracted_industry = ''
+        m = re.search(r'\bIndustry\s+([A-Za-z&/\-\s]+)$', name, re.I)
+        if m:
+            candidate = ' '.join(m.group(1).split()).strip()
+            if candidate:
+                extracted_industry = candidate
+            name = name[:m.start()].strip()
+
+        # Try to recover from raw typed dimension when parsed company looks truncated/generic.
+        if self._looks_truncated_company_name(name):
+            recovered = self._recover_company_name_from_raw_dimension(raw_dimension)
+            if recovered:
+                name = recovered
+
+        # Reject obvious non-company summary labels and percent-only artifacts.
+        if not name:
+            return '', extracted_industry
+        if name in self._SUMMARY_COMPANY_LABELS:
+            return '', extracted_industry
+        if name.lower().startswith('total '):
+            return '', extracted_industry
+        if re.match(r'^-?\s*\d+(?:\.\d+)?%$', name):
+            return '', extracted_industry
+        if re.match(r'^-\s*\d+(?:\.\d+)?%$', name):
+            return '', extracted_industry
+
+        return name, extracted_industry
+
+    @staticmethod
+    def _looks_truncated_company_name(name: str) -> bool:
+        """
+        Detect obviously incomplete/generic names that should be recovered from raw dimension text.
+        Examples: "Group LLC", "te Holdings)", "Mgmt & Development".
+        """
+        if not name:
+            return True
+        n = name.strip()
+        if not n:
+            return True
+
+        if n[0].islower():
+            return True
+        if n.endswith(')') and '(' not in n:
+            return True
+        if re.match(r'^(?:Group|Holdings?|Management|Mgmt\.?\s*&\s*Development)\b', n, re.I):
+            return True
+        if len(n) <= 14 and re.search(r'\b(?:Group|Holdings?|Development)\b', n, re.I):
+            return True
+        return False
+
+    def _recover_company_name_from_raw_dimension(self, raw_dimension: str) -> str:
+        """Recover a likely full company name from raw dimension text."""
+        if not raw_dimension:
+            return ''
+
+        segments = [s.strip() for s in self._split_segments(raw_dimension, ',') if s and s.strip()]
+        if not segments:
+            return ''
+
+        # Find best contiguous segment window ending in a legal entity suffix.
+        best = ''
+        stop_prefix_re = re.compile(
+            r'^(?:Acquisition|Maturity|Investment|Net Assets|Reference|Total|'
+            r'Debt Investments?|Equity Investments?|Common Stock|Preferred Stock|'
+            r'Unsecured Debt)\b',
+            re.IGNORECASE,
+        )
+        metadata_segment_re = re.compile(
+            r'^(?:Investment|Non-?Affiliated Issuer|Affiliated Issuer|Non-?Controlled|Controlled|'
+            r'First Lien Debt|Second Lien Debt|Subordinated Debt|Unsecured Debt|'
+            r'Debt Investments?|Equity Investments?|Investment Funds)\b',
+            re.IGNORECASE,
+        )
+
+        for end in range(len(segments)):
+            if not self._LEGAL_ENTITY_SUFFIX_RE.search(segments[end]):
+                continue
+            for start in range(max(0, end - 4), end + 1):
+                effective_start = start
+                while effective_start <= end and metadata_segment_re.match(segments[effective_start]):
+                    effective_start += 1
+                if effective_start > end:
+                    continue
+                candidate = ', '.join(segments[effective_start:end + 1]).strip()
+                if not candidate or stop_prefix_re.match(candidate):
+                    continue
+                # Avoid grabbing the leading "Investment, Non-Affiliated Issuer, ..."
+                if candidate.lower().startswith('investment, '):
+                    continue
+                # Prefer longer but not absurdly long candidates.
+                if 4 <= len(candidate) <= 140 and len(candidate) > len(best):
+                    best = candidate
+
+        if not best:
+            return ''
+
+        # Final cleanup
+        best = re.sub(r'\s+', ' ', best).strip()
+        best = re.sub(r'\s+\d+\s*$', '', best)  # trailing item indices
+        return best
+
+    @staticmethod
+    def _row_identity_key(row: Dict[str, str]) -> Tuple[str, str, str, str, str, str, str]:
+        """Stable key for exact/super-close duplicate row removal."""
+        company_key = re.sub(r'[^a-z0-9]+', ' ', (row.get('company_name') or '').lower()).strip()
+        inv_type = (row.get('investment_type') or '').strip().lower()
+        principal = (row.get('principal_amount') or '').strip()
+        fair = (row.get('fair_value') or '').strip()
+        cost = (row.get('cost') or '').strip()
+        amortized = (row.get('amortized_cost') or '').strip()
+        maturity = (row.get('maturity_date') or '').strip()
+        return (company_key, inv_type, principal, fair, cost, amortized, maturity)
+
+    @staticmethod
+    def _row_score(row: Dict[str, str]) -> int:
+        """Prefer rows with more populated fields when resolving duplicates."""
+        return sum(1 for v in row.values() if str(v).strip())
+
+    def _deduplicate_output_rows(self, rows: List[Dict[str, str]]) -> List[Dict[str, str]]:
+        """Remove exact duplicate position rows emitted from repeated XBRL contexts."""
+        best_by_key: Dict[Tuple[str, str, str, str, str, str, str], Dict[str, str]] = {}
+        for row in rows:
+            key = self._row_identity_key(row)
+            if not key[0]:
+                continue
+            existing = best_by_key.get(key)
+            if existing is None or self._row_score(row) > self._row_score(existing):
+                best_by_key[key] = row
+        return list(best_by_key.values())
 
     @staticmethod
     def _member_to_label(member_name: str) -> str:

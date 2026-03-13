@@ -50,7 +50,7 @@ XBRL_TICKERS = [
 # No XBRL SOI: EQS, SSSS
 LLM_TICKERS = [
     "CION", "FSK", "HTGC", "ICMB", "MFIC", "NEWT",
-    "OBDC", "PFX", "RWAY", "TPVG",
+    "OBDC", "PFX", "TPVG",
 ]
 
 # DSPy pipeline: tickers where html_soi_parser produces empty/broken output.
@@ -59,6 +59,7 @@ DSPY_TICKERS = [
     "EQS",   # No XBRL SOI, html_soi_parser produces 6-8 rows (incomplete)
     "OXSQ",  # html_soi_parser returns 0 rows (COMPANY/INVESTMENT header not recognized)
     "RAND",  # html_soi_parser returns 12-19 rows (complex SOI format); DSPy needed
+    "RWAY",  # html_soi_parser produces 77% garbled company names (flat-path row format); DSPy: 0% garbled, 100% rate coverage
     "SSSS",  # No XBRL SOI, html_soi_parser produces ≤1 row per filing
 ]
 

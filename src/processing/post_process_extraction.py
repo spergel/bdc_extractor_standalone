@@ -48,6 +48,7 @@ def post_process_csv(input_file: Path, output_file: Path = None) -> Tuple[int, i
     rows = []
     rows_changed = 0
     errors = 0
+    rows_dropped = 0
     
     try:
         # Read the file
@@ -196,6 +197,11 @@ def post_process_csv(input_file: Path, output_file: Path = None) -> Tuple[int, i
                     # Preserve existing value or keep empty
                     row['data_quality_flags'] = row.get('data_quality_flags', '') or ''
                 
+                # Drop non-holding artifacts after name cleanup (totals/headers/percent-only rows)
+                if not (row.get('company_name') or '').strip():
+                    rows_dropped += 1
+                    continue
+
                 rows.append(row)
         
         # Write back
@@ -204,7 +210,10 @@ def post_process_csv(input_file: Path, output_file: Path = None) -> Tuple[int, i
             writer.writeheader()
             writer.writerows(rows)
         
-        logger.info(f"✓ Processed {input_file.name}: {len(rows)} rows, {rows_changed} changes")
+        logger.info(
+            f"✓ Processed {input_file.name}: {len(rows)} rows, {rows_changed} changes"
+            + (f", {rows_dropped} dropped" if rows_dropped else "")
+        )
         return len(rows), rows_changed, errors
         
     except Exception as e:

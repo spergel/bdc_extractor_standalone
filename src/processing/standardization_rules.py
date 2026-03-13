@@ -14,10 +14,16 @@ from typing import Optional, Tuple
 # use the same ~25 categories and junk filtering.
 
 _JUNK_INDUSTRY_EXACT = frozenset([
-    "cash", "cash equivalents", "cash and cash equivalents",
+    "cash", "cash equivalents", "cash and cash equivalents", "cash & cash equivalents",
     "debt", "equity", "equity interest", "common stock", "preferred stock",
     "expense", "fee expense", "financing", "investment",
     "n/a", "unknown", "various", "other", "industry", "inc.", "l", "libor",
+    # Section/category labels that are not industries
+    "majority owned company", "joint venture", "non-qualifying assets",
+    "connectivity", "shopping facilitators", "multi-sector holdings",
+    # Table header artifacts
+    "(in thousands)", "(in thousands, except per share data)",
+    "(in millions)", "(dollar amounts in thousands)",
 ])
 
 # Ordered: first match wins. (keywords list, category name)
@@ -92,6 +98,9 @@ def normalize_industry(raw: str) -> str:
     lower = s.lower().replace("&amp;", "&")
     # Junk: numbers/percentages
     if re.match(r"^\d[\d.,% ]*(%(\s*PIK)?)?$", s):
+        return ""
+    # Table header artifacts starting with "(" like "(In thousands)"
+    if s.startswith("(") and s.endswith(")"):
         return ""
     # Investment type leakage / subtotal rows
     if re.match(r"^(first lien|second lien|senior secured|subordinat|unsecured|revolver|delayed draw|junior secured|unfunded|total )", lower):
@@ -393,6 +402,12 @@ _NON_COMPANY_PATTERNS = re.compile(
     r'|See\s+(?:Notes?|Accompanying)'
     r'|Common\s+Equity/Equity\s+Interests/Warrants'   # SLRC: investment type label leaked as company
     r'|Equipment\s+Financing'                          # SLRC: category label leaked as company
+    # Numeric/symbol junk rows
+    r'|[\$\d,\.\(\)\s]+$'                             # pure number / $ / parenthetical number
+    # Bank accounting terms from NEWT-style filings
+    r'|Deposits?\s*:?$'
+    r'|Noninterest\s+(?:expense|income)'
+    r'|Other\s+portfolio\s+companies\s+unrealized'
     r')',
     re.IGNORECASE
 )
@@ -985,6 +1000,21 @@ def _apply_ticker_specific_company_cleanup(name: str, ticker: Optional[str]) -> 
     # GECC: "Universal Fiber Systems Industry Chemicals Security Common Equity Initial Acquisition Date 10/16/2024 - 1" or "Industry Chemicals Security 1st Lien"
     # Also: "Advancion 1500 E Lake Cook Rd Buffalo Grove IL 60089 Chemicals Security 2nd Lien Secured Loan Interest Rate ..."
     if ticker_upper == 'GECC':
+        # Non-company pseudo-rows that leak from GECC schedules:
+        # - "Interest rate floor of 0.50%"
+        # - "SOFR", "One-month SOFR", "Three-month SOFR", "Six-month SOFR", "Prime"
+        # - "Ruby Tuesday warrants", "Vivos warrants"
+        # - short-term investments / money-market line items
+        if re.match(r'^Interest\s+rate\s+floor\s+of\s+[\d.]+%\s*$', s, re.I):
+            return ('', None)
+        if re.match(r'^(?:One-month|Three-month|Six-month)\s+SOFR\s*$', s, re.I):
+            return ('', None)
+        if re.match(r'^(?:SOFR|Prime)\s*$', s, re.I):
+            return ('', None)
+        if re.search(r'\b(?:warrants?)\s*$', s, re.I):
+            return ('', None)
+        if re.search(r'(?:short[\s\-]?term\s+investments?|money\s+market)', s, re.I):
+            return ('', None)
         # Strip street address and everything after: " 1500 E Lake Cook Rd ..." → strip from "\d{3,6} [A-Z]" (street number + capital)
         s = re.sub(r'\s+\d{3,6}\s+[A-Z].*$', '', s)
         # Strip from " Security {type}" onward (security type is not the company name)
@@ -1359,12 +1389,25 @@ def _apply_ticker_specific_company_cleanup(name: str, ticker: Optional[str]) -> 
     # Also: "Equity Securities - <pct>% <Geography> - <pct>% <InvType> - <pct>% <Company>"
     # "Non-Controlled Affiliates Pluralsight Inc." → "Pluralsight Inc."
     if ticker_upper == 'GSBD':
+        # Strip leading type + percent wrappers that leak from XBRL dimension labels:
+        # "Unsecured Debt - 1.60% CivicPlus LLC", "Common Stock - 0.01% Prairie ..."
+        s = re.sub(
+            r'^\s*(?:Unsecured\s+Debt|Common\s+Stock|Preferred\s+Stock|Debt\s+Investments?|Equity\s+Investments?)\s*[-–—]\s*[\d.]+\s*%\s*',
+            '',
+            s,
+            flags=re.I,
+        ).strip()
+
         # Dimension-only rows → blank
         if re.match(r'^\d+(?:\.\d+)?%$', s.strip()):
+            return ('', None)
+        if re.match(r'^-\s*\d+(?:\.\d+)?%$', s.strip()):
             return ('', None)
         if re.match(r'^(?:Initial\s+Acquisition\s+Date|Maturity)\s+\d', s, re.I):
             return ('', None)
         if re.match(r'^(?:Foreign\s+Currency|Interest\s+Rate|Total\s+Liabilities)', s, re.I):
+            return ('', None)
+        if re.match(r'^(?:Debt\s+Investments?|Equity\s+Investments?|Total\b)', s, re.I):
             return ('', None)
         # 2-segment percentage section headers ("206.87% Canada - 7.61%") → blank (no company)
         if re.match(r'^\d+(?:\.\d+)?%\s+\S[\w\s]*\s*[-–—]\s*[\d.]+%\s*$', s.strip()):
@@ -1723,7 +1766,10 @@ def clean_company_name(company_name: str, ticker: Optional[str] = None) -> Tuple
     # Trailing " - " or " -" with nothing after (e.g. "Zoro -" from "Zoro - Common Equity" when suffix already stripped)
     name = re.sub(r'\s*[-–—]\s*$', '', name).strip()
 
-    # Normalize parenthetical: "Rocaceia LLC (Quality Lease and Rental Holdings LLC)" → "Rocaceia LLC"
+    # Strip trailing numeric footnote markers: "Castle Creek Biosciences, Inc. (2)(12)" → "Castle Creek Biosciences, Inc."
+    if '(' in name and ')' in name:
+        name = re.sub(r'(\s*\(\d+\))+\s*$', '', name).strip()
+    # Normalize remaining parenthetical: "Rocaceia LLC (Quality Lease and Rental Holdings LLC)" → "Rocaceia LLC"
     if '(' in name and ')' in name:
         name = re.sub(r'\s*\([^)]+\)\s*$', '', name).strip()
 
