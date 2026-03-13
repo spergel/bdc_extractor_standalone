@@ -1,6 +1,6 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
-Archer Systems,co_d66d3152b60f,First Lien,,11.54%,,SOFR,6%,1%,2022-08-11,2027-08-11,3789,3752,3789,1.19%,3752,,,,,,SCM,2023-11-07
-Archer Systems,co_d66d3152b60f,Other Equity,,,,,,,2022-08-10,,,100,151,0.05%,100,,,,100000,,SCM,2023-11-07
+Archer Systems,co_242020cccfa1,First Lien,Business Services,11.54%,,SOFR,6%,1%,2022-08-11,2027-08-11,3789,3752,3789,1.19%,3752,,,,,,SCM,2023-11-07
+Archer Systems,co_242020cccfa1,Other Equity,Business Services,,,,,,2022-08-10,,,100,151,0.05%,100,,,,100000,,SCM,2023-11-07
 Axis Portable Air,co_9a46f6b6c3dd,First Lien,,11.29%,,SOFR,5.75%,2%,2022-03-22,2028-03-22,12000,11811,12000,3.77%,11811,,,,,,SCM,2023-11-07
 Axis Portable Air LLC,co_9a46f6b6c3dd,First Lien,,11.29%,,SOFR,5.75%,2%,2023-04-17,2028-03-22,1894,1858,1894,0.6%,1858,,,,,,SCM,2023-11-07
 Axis Portable Air LLC,co_9a46f6b6c3dd,Revolver,,11.17%,,SOFR,5.75%,2%,2022-03-22,2028-03-22,80,80,80,0.03%,80,,,,,,SCM,2023-11-07
@@ -8,10 +8,10 @@ Axis Portable Air,co_9a46f6b6c3dd,Delayed Draw,,11.29%,,SOFR,5.75%,1%,2022-03-22
 Axis Portable Air LLC,co_9a46f6b6c3dd,Preferred Equity,,,,,,,2022-03-22,,4,444,781,0.25%,444,,,,,,SCM,2023-11-07
 Baker Manufacturing Company,co_e311519042ad,First Lien,Industrials,11.36%,,SOFR,5.25%,1%,2022-07-05,2027-07-05,,13479,13702,4.31%,13479,,,,13701636,,SCM,2023-11-07
 Baker Manufacturing Company LLC,co_e311519042ad,Other Equity,Industrials,,,,,,2022-07-05,,744,744,806,0.25%,744,,,,,,SCM,2023-11-07
-BLP Buyer,co_e2cb33de11ce,First Lien,Business Services,12.02%,,SOFR,6.5%,1.25%,2022-02-01,2027-02-01,6132,6044,6101,1.92%,6044,,,,,,SCM,2023-11-07
-BLP Buyer Inc.,co_e2cb33de11ce,First Lien,Business Services,12.27%,,SOFR,6.75%,2%,2023-04-14,2027-02-01,1730,1684,1721,0.54%,1684,,,,,,SCM,2023-11-07
-BLP Buyer,co_e2cb33de11ce,Revolver,Business Services,11.92%,,SOFR,6.5%,1.25%,2022-02-01,2027-02-01,,77,76,0.02%,77,,,,76566,,SCM,2023-11-07
-BLP Buyer Inc.,co_e2cb33de11ce,Other Equity,Business Services,,,,,,2022-02-01,,,984,1316,0.41%,984,,,,879060,,SCM,2023-11-07
+BLP Buyer,co_fd734e8f1475,First Lien,Business Services,12.02%,,SOFR,6.5%,1.25%,2022-02-01,2027-02-01,6132,6044,6101,1.92%,6044,,,,,,SCM,2023-11-07
+BLP Buyer Inc.,co_fd734e8f1475,First Lien,Business Services,12.27%,,SOFR,6.75%,2%,2023-04-14,2027-02-01,1730,1684,1721,0.54%,1684,,,,,,SCM,2023-11-07
+BLP Buyer,co_fd734e8f1475,Revolver,Business Services,11.92%,,SOFR,6.5%,1.25%,2022-02-01,2027-02-01,,77,76,0.02%,77,,,,76566,,SCM,2023-11-07
+BLP Buyer Inc.,co_fd734e8f1475,Other Equity,Business Services,,,,,,2022-02-01,,,984,1316,0.41%,984,,,,879060,,SCM,2023-11-07
 Cafe Valley Inc.,co_35f11073c15a,First Lien,,12.63%,,SOFR,7.24%,2%,2019-08-28,2024-08-28,,15526,15593,4.9%,15526,,,,15592857,,SCM,2023-11-07
 Cafe Valley Inc.,co_35f11073c15a,Other Equity,,,,,,,2019-08-28,,,916,1329,0.42%,916,,,,9160,,SCM,2023-11-07
 Camp Profiles LLC,co_94b5eaeede18,First Lien,,10.79%,,SOFR,5.25%,1%,2021-09-03,2026-09-03,,9917,10045,3.16%,9917,,,,10045000,,SCM,2023-11-07
@@ -42,8 +42,8 @@ Curion Holdings,co_563819fe3bed,First Lien,Business Services,12.29%,,SOFR,6.75%,
 Curion Holdings,co_563819fe3bed,Revolver,Business Services,12.29%,,SOFR,6.75%,1%,2022-07-29,2027-07-29,100,100,97,0.03%,100,,,,,,SCM,2023-11-07
 Curion Holdings,co_563819fe3bed,Other Equity,Business Services,,,,,,2022-07-29,,,740,686,0.22%,740,,,,739999,,SCM,2023-11-07
 Data Centrum Communications Inc.,co_cdcd8fb8f58e,Preferred Equity,,13.92%,,SOFR,8.5%,1%,2018-10-01,2026-04-01,,9937,10000,3.14%,9937,,,,10000000,,SCM,2023-11-07
-Dresser Utility Solutions,co_c08a6b2357a8,First Lien,Energy,11.67%,,SOFR,6.25%,1%,2019-11-01,2025-11-01,,9007,8998,2.83%,9007,,,,9043265,,SCM,2023-11-07
-DRS Holdings III,co_289579b00316,First Lien,Consumer & Retail,,,,,,2018-04-13,,776,466,276,0.09%,466,,,,,,SCM,2023-11-07
+Dresser Utility Solutions,co_61a19ef0af2e,First Lien,Energy,11.67%,,SOFR,6.25%,1%,2019-11-01,2025-11-01,,9007,8998,2.83%,9007,,,,9043265,,SCM,2023-11-07
+DRS Holdings III,co_5f36274df8c4,First Lien,Consumer & Retail,,,,,,2018-04-13,,776,466,276,0.09%,466,,,,,,SCM,2023-11-07
 DTE Enterprises LLC,co_35e58a322ee6,Other Equity,,,,SOFR,12%,,2021-09-03,2026-09-03,5337,5249,1601,0.5%,5249,,,,,,SCM,2023-11-07
 EH Real Estate Services LLC,co_58258b36ba71,First Lien,Real Estate,,,SOFR,12%,,2023-06-07,2026-09-03,,393,393,0.12%,393,,,,392910,,SCM,2023-11-07
 EH Real Estate Services LLC,co_58258b36ba71,Preferred Equity,Real Estate,,,,,,2023-07-31,,1,618,618,0.19%,618,,,,,,SCM,2023-11-07
@@ -135,9 +135,9 @@ Anne Lewis Strategies,co_69afc3991862,First Lien,,11.89%,,SOFR,6.5%,2%,2022-04-1
 Anne Lewis Strategies LLC,co_69afc3991862,Revolver,,11.89%,,SOFR,6.5%,2%,2021-03-05,2028-05-09,40,40,39,0.01%,40,,,,,,SCM,2023-11-07
 Anne Lewis Strategies LLC,co_69afc3991862,Common Equity,,,,,,,2021-03-05,,1,607,1765,0.55%,607,,,,,,SCM,2023-11-07
 APE Holdings,co_ef6b5989b1ff,Other Equity,,,,,,,2014-09-05,,375,375,28,0.01%,375,,,,,,SCM,2023-11-07
-ArborWorks Acquisition LLC,co_fb955bd6a221,First Lien,Business Services,,,SOFR,7%,1%,2021-11-23,2026-11-09,,14826,5746,1.81%,14826,,,,14923831,,SCM,2023-11-07
-ArborWorks Acquisition LLC,co_fb955bd6a221,First Lien,Business Services,,,SOFR,0%,1%,2021-11-23,2026-11-09,3446,3446,1327,0.42%,3446,,,,,,SCM,2023-11-07
-ArborWorks Acquisition LLC,co_fb955bd6a221,First Lien,Business Services,,,,,,2021-12-29,,0,115,,0%,115,,,,,,SCM,2023-11-07
+ArborWorks Acquisition LLC,co_91c5ea53a8c4,First Lien,Business Services,,,SOFR,7%,1%,2021-11-23,2026-11-09,,14826,5746,1.81%,14826,,,,14923831,,SCM,2023-11-07
+ArborWorks Acquisition LLC,co_91c5ea53a8c4,First Lien,Business Services,,,SOFR,0%,1%,2021-11-23,2026-11-09,3446,3446,1327,0.42%,3446,,,,,,SCM,2023-11-07
+ArborWorks Acquisition LLC,co_91c5ea53a8c4,First Lien,Business Services,,,,,,2021-12-29,,0,115,,0%,115,,,,,,SCM,2023-11-07
 Arbor Works Acquisition LLC,co_c30ba7c46a0c,Other Equity,,,,,,,2023-05-15,,,16,,0%,16,,,,29,,SCM,2023-11-07
 NuMet Machining Techniques,co_8ebc620b8f48,First Lien,,4%,9.75%,SOFR,13.75%,,2021-01-29,2026-07-29,,5826,5588,1.76%,5826,,,,5881652,,SCM,2023-11-07
 NuSource Financial LLC,co_12fd9dc3c912,First Lien,Financial Services,11.6%,,SOFR,6.21%,1%,2018-11-15,2025-11-15,9146,9098,9146,2.87%,9098,,,,,,SCM,2023-11-07

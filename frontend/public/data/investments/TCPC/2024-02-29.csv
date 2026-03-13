@@ -1,6 +1,6 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
-ALCV Purchaser,co_8304fa50312a,First Lien,Automotive,12.39%,,SOFR,6.75%,1%,,2026-04-15,5954,5902,5817,,5902,,,,,,TCPC,2024-02-29
-ALCV Purchaser,co_8304fa50312a,Revolver,Automotive,12.39%,,SOFR,6.75%,1%,,2026-04-15,663,658,648,,658,,,,,,TCPC,2024-02-29
+ALCV Purchaser,co_130cd37dd542,First Lien,Automotive,12.39%,,SOFR,6.75%,1%,,2026-04-15,5954,5902,5817,,5902,,,,,,TCPC,2024-02-29
+ALCV Purchaser,co_130cd37dd542,Revolver,Automotive,12.39%,,SOFR,6.75%,1%,,2026-04-15,663,658,648,,658,,,,,,TCPC,2024-02-29
 AutoAlert,co_a928a54b77b1,First Lien,Automotive,10.79%,,SOFR,5.4%,1%,,2028-03-31,18813,18813,18813,,18813,,,,,,TCPC,2024-02-29
 AutoAlert,co_a928a54b77b1,Second Lien,Automotive,14.79%,,SOFR,9.4%,1%,,2029-03-31,9256,9256,9256,,9256,,,,,,TCPC,2024-02-29
 Porcelain Acquisition Corp.,co_3b6d0e5a85c0,First Lien,Industrials,11.45%,,SOFR,6.1%,1%,,2027-04-30,7063,6975,6555,,6975,,,,,,TCPC,2024-02-29
@@ -35,7 +35,7 @@ Consumer Finance Lucky US BuyerCo,co_712ea882be74,Revolver,Financial Services,12
 Consumer Finance Lucky US BuyerCo,co_712ea882be74,First Lien,Financial Services,12.85%,,SOFR,7.5%,1%,,2029-03-30,2160,2100,2121,,2100,,,,,,TCPC,2024-02-29
 Consumer Finance Money Transfer Acquisition Inc.,co_80a87d57539e,First Lien,Financial Services,13.71%,,SOFR,8.35%,1%,,2027-12-14,6852,6732,6715,,6732,,,,,,TCPC,2024-02-29
 Consumer Finance,co_ecb5c095164f,Other,Financial Services,,,,,,,,,18623,18481,,18623,,,,,,TCPC,2024-02-29
-BW Holding,co_cc8a73373b7b,Second Lien,Containers & Packaging,13.04%,,SOFR,7.5%,0.75%,,2029-12-14,13080,12836,11667,,12836,,,,,,TCPC,2024-02-29
+BW Holding,co_9d8383fcd917,Second Lien,Containers & Packaging,13.04%,,SOFR,7.5%,0.75%,,2029-12-14,13080,12836,11667,,12836,,,,,,TCPC,2024-02-29
 Distributors Colony Display,co_6ee0f9f2b6b8,First Lien,Distribution & Wholesale,15.11%,3%,,,1%,,2026-06-30,7037,6962,6390,,6962,,,,,,TCPC,2024-02-29
 Fusion Holding Corp.,co_3226dcaf4df5,First Lien,Consumer & Retail,11.72%,,SOFR,6.25%,0.75%,,2029-09-14,458,449,453,,449,,,,,,TCPC,2024-02-29
 Fusion Holding Corp.,co_3226dcaf4df5,First Lien,Consumer & Retail,11.72%,,SOFR,6.25%,0.75%,,2027-09-15,0,1,0,,1,,,,,,TCPC,2024-02-29
@@ -93,11 +93,11 @@ Leisure,co_00ed6c583d74,First Lien,Food & Beverage,,,,,,,,,55226,55386,,55226,,,
 AmeriLife Holdings,co_79b70b5ba514,First Lien,Insurance,11.14%,,SOFR,5.75%,0.75%,,2029-08-31,1800,1769,1782,,1769,,,,,,TCPC,2024-02-29
 AmeriLife Holdings,co_79b70b5ba514,Delayed Draw,Insurance,11.14%,,SOFR,5.75%,0.75%,,2029-08-31,375,367,371,,367,,,,,,TCPC,2024-02-29
 AmeriLife Holdings,co_79b70b5ba514,Revolver,Insurance,11.14%,,SOFR,5.75%,0.75%,,2028-08-31,0,4,-2,,4,,,,,,TCPC,2024-02-29
-Integrity Marketing Acquisition,co_c54435bdb6e3,Revolver,Insurance,11.39%,,SOFR,6%,0.75%,,2026-08-27,0,535,,,535,,,,,,TCPC,2024-02-29
-Integrity Marketing Acquisition,co_c54435bdb6e3,First Lien,Insurance,11.89%,,SOFR,6.5%,0.75%,,2026-08-27,10152,10016,10152,,10016,,,,,,TCPC,2024-02-29
+Integrity Marketing Acquisition,co_cb724891ebc0,Revolver,Insurance,11.39%,,SOFR,6%,0.75%,,2026-08-27,0,535,,,535,,,,,,TCPC,2024-02-29
+Integrity Marketing Acquisition,co_cb724891ebc0,First Lien,Insurance,11.89%,,SOFR,6.5%,0.75%,,2026-08-27,10152,10016,10152,,10016,,,,,,TCPC,2024-02-29
 IT Parent,co_8a5b25ddf278,First Lien,Insurance,11.71%,,SOFR,6.35%,1%,,2026-10-01,4785,4733,4541,,4733,,,,,,TCPC,2024-02-29
 IT Parent,co_8a5b25ddf278,Revolver,Insurance,11.7%,,SOFR,6.35%,1%,,2026-10-01,521,514,489,,514,,,,,,TCPC,2024-02-29
-Peter C. Foy & Associates Insurance Services,co_8aca268f8418,Delayed Draw,Insurance,11.47%,,SOFR,6.11%,0.75%,,2028-11-01,2957,2922,2945,,2922,,,,,,TCPC,2024-02-29
+Peter C. Foy & Associates Insurance Services,co_0ee135319d48,Delayed Draw,Insurance,11.47%,,SOFR,6.11%,0.75%,,2028-11-01,2957,2922,2945,,2922,,,,,,TCPC,2024-02-29
 Catalog Retail CommerceHub Inc.,co_3b95a34020b0,First Lien,Software & Technology,11.79%,,SOFR,6.4%,0.75%,,2027-12-29,955,900,888,,900,,,,,,TCPC,2024-02-29
 Catalog Retail Syndigo LLC,co_b4eebc7f581c,First Lien,Software & Technology,13.48%,,SOFR,8%,0.75%,,2028-12-14,12142,12011,11110,,12011,,,,,,TCPC,2024-02-29
 Catalog Retail,co_85c365f4db1b,First Lien,Software & Technology,,,,,,,,,12911,11998,,12911,,,,,,TCPC,2024-02-29
@@ -107,8 +107,8 @@ Services Anaconda Inc.,co_1170bcc99344,First Lien,Software & Technology,12.85%,,
 Services Astra Acquisition Corp.,co_bacc86a25f21,First Lien,Software & Technology,14.48%,,SOFR,9.14%,0.75%,,2029-10-25,20715,20393,12429,,20393,,,,,,TCPC,2024-02-29
 Services Bynder Bidco Inc.,co_810885539905,First Lien,Software & Technology,12.63%,,SOFR,7.25%,1%,,2029-01-26,0,-6,-4,,-6,,,,,,TCPC,2024-02-29
 Services Bynder Bidco Inc.,co_810885539905,First Lien,Software & Technology,12.63%,,SOFR,7.25%,1%,,2029-01-26,3000,2920,2948,,2920,,,,,,TCPC,2024-02-29
-Services Bynder Bidco B.V. (Netherlands) Sr Secured Revolver B Ref SOFR(Q) Floor 1.00% Spread 7.25% Total Coupon 12.63% Maturity 1/26/2029,co_9c065f0233b8,First Lien,Software & Technology,12.63%,,SOFR,7.25%,1%,,2029-01-26,0,-22,-15,,-22,,,,,type_hint_revolver_from_name,TCPC,2024-02-29
-Services Bynder Bidco B.V. (Netherlands) First Lien Term Loan B Ref SOFR(Q) Floor 1.00% Spread 7.25% Total Coupon 12.63% Maturity 1/26/2029,co_6d004dcbf340,First Lien,Software & Technology,12.63%,,SOFR,7.25%,1%,,2029-01-26,10875,10585,10688,,10585,,,,,,TCPC,2024-02-29
+Services Bynder Bidco B.V. (Netherlands) Sr Secured Revolver B Ref SOFR(Q) Floor 1.00% Spread 7.25% Total Coupon 12.63% Maturity 1/26/2029,co_7921601beb1a,First Lien,Software & Technology,12.63%,,SOFR,7.25%,1%,,2029-01-26,0,-22,-15,,-22,,,,,type_hint_revolver_from_name,TCPC,2024-02-29
+Services Bynder Bidco B.V. (Netherlands) First Lien Term Loan B Ref SOFR(Q) Floor 1.00% Spread 7.25% Total Coupon 12.63% Maturity 1/26/2029,co_c0f94101b517,First Lien,Software & Technology,12.63%,,SOFR,7.25%,1%,,2029-01-26,10875,10585,10688,,10585,,,,,,TCPC,2024-02-29
 Services Domo Inc.,co_7cc6aa961ec4,First Lien,Software & Technology,13.64%,2.5%,,,1.5%,,2025-04-01,57684,57622,57453,,57622,,,,,,TCPC,2024-02-29
 Services Domo Inc.,co_7cc6aa961ec4,First Lien,Software & Technology,9.5%,9.5%,,,,,2025-04-01,3423,933,3269,,933,,,,,,TCPC,2024-02-29
 Services e-Discovery Acquireco LLC,co_b5f3be25d8bd,First Lien,Software & Technology,11.89%,,SOFR,6.5%,1%,,2029-08-29,0,-2,-2,,-2,,,,,,TCPC,2024-02-29
@@ -222,9 +222,9 @@ Superman Holdings,co_3d26abc6b8f1,First Lien,Software & Technology,11.47%,,SOFR,
 Superman Holdings,co_3d26abc6b8f1,Revolver,Software & Technology,11.47%,,SOFR,6.13%,1%,,2026-08-31,0,14,-10,,14,,,,,,TCPC,2024-02-29
 Trintech,co_dc9a5cbd7f05,Revolver,Software & Technology,11.86%,,SOFR,6.5%,1%,,2029-07-25,17,16,16,,16,,,,,,TCPC,2024-02-29
 Trintech,co_dc9a5cbd7f05,First Lien,Software & Technology,11.86%,,SOFR,6.5%,1%,,2029-07-25,791,768,768,,768,,,,,,TCPC,2024-02-29
-Zendesk Inc.,co_97d76b2239a5,Other,Software & Technology,11.61%,3.25%,,,0.75%,,2028-11-22,,1,,,1,,,,,,TCPC,2024-02-29
-Zendesk Inc.,co_97d76b2239a5,First Lien,Software & Technology,11.61%,3.25%,,,0.75%,,2028-11-22,392,386,394,,386,,,,,,TCPC,2024-02-29
-Zendesk Inc.,co_97d76b2239a5,Other,Software & Technology,11.61%,3.25%,,,0.75%,,2028-11-22,,2,0,,2,,,,,,TCPC,2024-02-29
+Zendesk Inc.,co_42318dcf1822,Other,Software & Technology,11.61%,3.25%,,,0.75%,,2028-11-22,,1,,,1,,,,,,TCPC,2024-02-29
+Zendesk Inc.,co_42318dcf1822,First Lien,Software & Technology,11.61%,3.25%,,,0.75%,,2028-11-22,392,386,394,,386,,,,,,TCPC,2024-02-29
+Zendesk Inc.,co_42318dcf1822,Other,Software & Technology,11.61%,3.25%,,,0.75%,,2028-11-22,,2,0,,2,,,,,,TCPC,2024-02-29
 Zilliant Inc.,co_607f8dee23b9,Other,Software & Technology,11.96%,4.5%,,,0.75%,,2027-12-21,,2,-7,,2,,,,,,TCPC,2024-02-29
 Zilliant Inc.,co_607f8dee23b9,First Lien,Software & Technology,11.96%,4.5%,,,0.75%,,2027-12-21,1921,1896,1827,,1896,,,,,,TCPC,2024-02-29
 Specialty Retail Calceus Acquisition,co_0cbded29d6bc,First Lien,Consumer & Retail,12.1%,,SOFR,6.75%,2%,,2029-08-15,20773,20186,20171,,20186,,,,,,TCPC,2024-02-29
@@ -259,9 +259,9 @@ Equipment and Services GlassPoint,co_b5173fdc4c3c,Common Equity,Energy,,,,,,,,,2
 Hotels Restaurants and Leisure Fishbowl,co_d20424fbfee8,Other Equity,Food & Beverage,,,,,,,,,787,135,,787,,,,604479,,TCPC,2024-02-29
 Domo,co_a634c39021b1,Common Equity,Software & Technology,,,,,,,,,1543,512,,1543,,,,49792,,TCPC,2024-02-29
 Foursquare Labs,co_7c4f4ab052b2,Preferred Equity,Software & Technology,,,,,,,,,509,713,,509,,,,2062500,,TCPC,2024-02-29
-InMobi,co_7f954e916e4c,Common Equity,Software & Technology,,,,,,,,,212,3112,,212,,,,1327869,,TCPC,2024-02-29
-InMobi,co_7f954e916e4c,Preferred Equity,Software & Technology,,,,,,,,,276,2492,,276,,,,1049996,,TCPC,2024-02-29
-InMobi,co_7f954e916e4c,Preferred Equity,Software & Technology,,,,,,,,,93,1288,,93,,,,1511002,,TCPC,2024-02-29
+InMobi,co_b283e34d5f10,Common Equity,Software & Technology,,,,,,,,,212,3112,,212,,,,1327869,,TCPC,2024-02-29
+InMobi,co_b283e34d5f10,Preferred Equity,Software & Technology,,,,,,,,,276,2492,,276,,,,1049996,,TCPC,2024-02-29
+InMobi,co_b283e34d5f10,Preferred Equity,Software & Technology,,,,,,,,,93,1288,,93,,,,1511002,,TCPC,2024-02-29
 ResearchGate Corp.,co_c02e042795d7,Other Equity,Software & Technology,,,,,,,,,202,71,,202,,,,333370,,TCPC,2024-02-29
 SnapLogic,co_54adb9d41aaf,Preferred Equity,Software & Technology,,,,,,,,,378,5300,,378,,,,1860000,,TCPC,2024-02-29
 Internet Software and Services,co_23e81619ab2f,Other,Software & Technology,,,,,,,,,3214,13488,,3214,,,,,,TCPC,2024-02-29
@@ -288,7 +288,7 @@ MXP Prime Platform GmbH (SellerX) (Germany) Warrants to Purchase Common Stock Ex
 PerchHQ,co_61d3f632485e,Common Equity,Consumer & Retail,,,,,,,2027-10-15,296,,0,,,,,,,,TCPC,2024-02-29
 Razor Group GmbH (Germany) Warrants to Purchase Preferred Series A1 Shares Expiration 4/28/2028,co_960b5bc80e07,First Lien,Consumer & Retail,,,,,,,2028-04-28,1,,485,,,,,,,,TCPC,2024-02-29
 Razor Group GmbH (Germany) Warrants to Purchase Series C Shares Expiration 4/28/2028,co_960b5bc80e07,First Lien,Consumer & Retail,,,,,,,2028-04-28,0,,687,,,,,,,,TCPC,2024-02-29
-Worldremit Group Limited (United Kingdom) Warrants to Purchase Series D Stock Expiration 2/11/2031,co_f6c03c060874,Other Equity,Diversified,,,,,,,,,,149,,,,,,34820,,TCPC,2024-02-29
+Worldremit Group Limited (United Kingdom) Warrants to Purchase Series D Stock Expiration 2/11/2031,co_82f933d35db0,Other Equity,Diversified,,,,,,,,,,149,,,,,,34820,,TCPC,2024-02-29
 Kawa Solar Holdings Limited (Conergy) (Cayman Islands) Ordinary Shares,co_bf0ccf6b1c73,Other Equity,Energy,,,,,,,,,,,,,,,,2332594,,TCPC,2024-02-29
 SuCo Investors,co_3ba768f706b7,Warrants,Software & Technology,,,,,,,,,,,,,,,,14337,,TCPC,2024-02-29
 Inotiv,co_58779afdb1ad,Common Equity,Healthcare,,,,,,,,,,54,,,,,,14578,,TCPC,2024-02-29

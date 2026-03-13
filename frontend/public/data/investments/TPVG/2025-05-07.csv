@@ -1,6 +1,6 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
 Flo Health UK Ltd.,co_02fd6acc6802,Other Debt,Software & Technology,5.75%,,,,,,2025-05-31,8333,8296,8307,,8296,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Loft Orbital Solutions Inc.,co_284067c8c00f,Other Debt,Aerospace & Defense,6.75%,,,,,,2027-11-30,909,911,911,,911,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
+Loft Orbital Solutions Inc.,co_34b678435fad,Other Debt,Aerospace & Defense,6.75%,,,,,,2027-11-30,909,911,911,,911,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
 "Parry Labs, LLC",co_36a0c050b8a0,Other Debt,Aerospace & Defense,3.50%,,,,,,2028-11-30,19500,19256,19256,,19256,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
 "Arcadia Power, Inc.",co_2e8177b2308f,Other Debt,Software & Technology,11.75%,,,,,,2026-11-30,2902,2727,2727,,2727,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
 "FlashParking, Inc.",co_2b93956706b7,Other Debt,Software & Technology,1.75%,12.75%,,,,,2027-05-31,20391,20126,20126,,20126,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
@@ -42,9 +42,9 @@ Hover Inc.,co_f9ebf14bcc74,Other Debt,Media & Entertainment,3.00%,,,,,,2029-03-3
 Monzo Bank Ltd.,co_d0fd8589c32d,Other Debt,Financial Services,12.00%,,,,,,2026-03-08,7035,6980,6871,,6980,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
 "Homeward, Inc.",co_df68b3e9bdbc,Other Debt,Real Estate,6.50%,,,,,,2026-06-30,10000,10696,10665,,10696,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
 True Footage Inc.,co_70aa48328c90,Other Debt,Real Estate,11.00%,,,,,,2025-07-31,250,268,258,,268,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Moda Operandi, Inc.",co_ea3c938fd2d1,Other Debt,Shopping Facilitators,6.50%,,,,,,2026-08-01,15400,14698,14500,,14698,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
+"Moda Operandi, Inc.",co_ea3c938fd2d1,Other Debt,Other,6.50%,,,,,,2026-08-01,15400,14698,14500,,14698,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
 InMobi Pte Ltd.,co_e80460a527fe,Warrants,Media & Entertainment,,,,,,,2013-12-13,,35,13,,35,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Loft Orbital Solutions Inc.,co_284067c8c00f,Warrants,Aerospace & Defense,,,,,,,2022-07-15,,192,344,,192,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
+Loft Orbital Solutions Inc.,co_34b678435fad,Warrants,Aerospace & Defense,,,,,,,2022-07-15,,192,344,,192,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
 "Parry Labs, LLC",co_36a0c050b8a0,Warrants,Aerospace & Defense,,,,,,,2024-12-20,,145,81,,145,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
 "Flo Health, Inc.",co_02546d7334b2,Warrants,Software & Technology,,,,,,,2022-05-10,,123,274,,123,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
 "Arcadia Power, Inc.",co_2e8177b2308f,Warrants,Software & Technology,,,,,,,2021-12-10,,138,143,,138,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
@@ -99,7 +99,7 @@ Tempo Interactive Inc.,co_519b1ddfac08,,Consumer & Retail,,,,,,,2021-03-31,,93,1
 "FabFitFun, Inc.",co_e53bd50f8128,,Consumer & Retail,,,,,,,2017-11-20,,940,314,,940,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
 "Minted, Inc.",co_331e72aacfab,,Consumer & Retail,,,,,,,2020-09-30,,516,235,,516,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
 Outfittery GMBH,co_2863af1de208,,Consumer & Retail,,,,,,,2017-08-10,,1850,1292,,1850,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Rent the Runway, Inc.",co_914eb7faf8f5,,Other,,,,,,,2015-11-25,,1294,,,1294,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
+"Rent the Runway, Inc.",co_914eb7faf8f5,,Consumer & Retail,,,,,,,2015-11-25,,1294,,,1294,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
 "Stance, Inc.",co_6e5095310f43,,Other,,,,,,,2017-03-31,,41,70,,41,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
 "Trendly, Inc.",co_d8b53baabb37,,Consumer & Retail,,,,,,,2021-05-27,,381,598,,381,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
 Untuckit LLC,co_51f11502c8b7,,Consumer & Retail,,,,,,,2018-05-11,,39,57,,39,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
@@ -141,8 +141,8 @@ McN Investments Ltd.,co_04eefd3acd83,,Financial Services,,,,,,,2022-05-27,,295,1
 "Roofstock, Inc.",co_b83f4f8d8b97,,Real Estate,,,,,,,2022-05-25,,19,194,,19,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
 Sonder Holdings Inc.,co_aa26e82f8a4a,,Real Estate,,,,,,,2018-12-28,,232,,,232,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
 True Footage Inc.,co_70aa48328c90,,Real Estate,,,,,,,2021-11-24,,147,98,,147,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Moda Operandi, Inc.",co_ea3c938fd2d1,,Shopping Facilitators,,,,,,,2021-12-30,,169,,,169,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-OfferUp Inc.,co_2076b23f755f,,Shopping Facilitators,,,,,,,2019-12-23,,42,138,,42,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
+"Moda Operandi, Inc.",co_ea3c938fd2d1,,Other,,,,,,,2021-12-30,,169,,,169,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
+OfferUp Inc.,co_2076b23f755f,,Consumer & Retail,,,,,,,2019-12-23,,42,138,,42,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
 ClassPass Inc.,co_1c5648642c6c,,Software & Technology,,,,,,,2019-03-18,,281,151,,281,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
 Omio Corp.,co_23d547e6f6a7,,Healthcare,,,,,,,2019-09-18,,362,404,,362,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
 "Arcadia Power, Inc.",co_2e8177b2308f,Other Equity,Software & Technology,,,,,,,2021-09-21,,167,105,,167,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
@@ -214,6 +214,6 @@ Outfittery GMBH,co_2863af1de208,Other Debt,Consumer & Retail,14.73%,14.73%,,,,,2
 "Panorama Education, Inc.",co_f8033b666b83,Other Debt,Education,2.00%,,,,,,2027-01-01,6000,5996,5996,,5996,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
 "Homeward, Inc.",co_df68b3e9bdbc,Other Debt,Real Estate,6.50%,,,,,,2026-06-30,10000,10637,10233,,10637,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
 True Footage Inc.,co_70aa48328c90,Other Debt,Real Estate,11.00%,,,,,,2024-12-31,250,267,252,,267,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Moda Operandi, Inc.",co_ea3c938fd2d1,Other Debt,Shopping Facilitators,6.50%,,,,,,2026-08-01,16000,14963,16029,,14963,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Contact portfolio company weekly or more frequently as determined by our Adviser; contact venture capital investors regularly; our Adviser forms a workout group to minimize risk of loss.,co_70dae68f356f,,Other,,,,,,,,,,,,,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
+"Moda Operandi, Inc.",co_ea3c938fd2d1,Other Debt,Other,6.50%,,,,,,2026-08-01,16000,14963,16029,,14963,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
+Contact portfolio company weekly or more frequently as determined by our Adviser; contact venture capital investors regularly; our Adviser forms a workout group to minimize risk of loss.,co_7dc8ac3e51c7,,Other,,,,,,,,,,,,,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
 Maximize value from assets.,co_d592cb9d8565,,Other,,,,,,,,,,,,,,,,,,TPVG,2025-05-07,TPVG,2025-05-07

@@ -22,13 +22,6 @@ type Props = {
 
 const columnHelper = createColumnHelper<Holding>();
 
-function fmtNumber(v: unknown): string {
-  if (v === null || v === undefined || v === '') return '';
-  const n = Number(v);
-  if (Number.isNaN(n)) return String(v);
-  return n.toLocaleString(undefined, { maximumFractionDigits: 2 });
-}
-
 // Sorting helpers
 function toNumber(value: unknown): number | null {
   if (value === null || value === undefined || value === '') return null;
@@ -218,6 +211,11 @@ function HoldingsTableComponent({ data, period, onCompanyClick, getCompanyIdFrom
         cell: (c) => {
           const name = c.getValue() ?? '';
           const row = c.row.original as any;
+          const MAX_NAME_LENGTH = 20;
+          const displayName =
+            typeof name === 'string' && name.length > MAX_NAME_LENGTH
+              ? `${name.slice(0, MAX_NAME_LENGTH - 1)}…`
+              : name;
           const companyId = (row?.company_id as string | undefined) ?? (typeof name === 'string' ? getCompanyIdFromName?.(name) : undefined);
           const profile = companyId ? companyProfiles[companyId] : undefined;
           const parts = [
@@ -235,13 +233,13 @@ function HoldingsTableComponent({ data, period, onCompanyClick, getCompanyIdFrom
                 className="text-left text-[#0000ff] hover:underline cursor-pointer w-full truncate"
                 onClick={() => onCompanyClick(companyId)}
               >
-                {name}
+                {displayName}
               </button>
             );
           }
           return (
             <span title={tooltip || undefined} className={tooltip ? 'cursor-help' : ''}>
-              {name}
+              {displayName}
             </span>
           );
         },

@@ -232,9 +232,6 @@ function App() {
   return (
     <div className="h-full flex flex-col">
       <AppHeader viewMode={viewMode} onViewModeChange={setViewMode} />
-      <div className="flex-shrink-0 px-2 py-1.5 bg-[#000080] text-white text-xs text-center">
-        <strong>Demo:</strong> Showing GSBD, MAIN & MRCC (from 2019). We intend to add the rest — <strong>feedback welcome</strong>.
-      </div>
       <div className="flex-1 min-h-0 flex flex-col lg:flex-row gap-1 sm:gap-2 p-1 sm:p-1.5 overflow-hidden">
         <MobileSelector
           viewMode={viewMode}

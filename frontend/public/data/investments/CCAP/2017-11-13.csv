@@ -1,5 +1,5 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,data_quality_flags,ticker,filing_date
-Shearer's Foods Inc.,co_2f298081f0cf,First Lien,Food & Beverage,,,,,L,425,,2021-06-01,736875,731726,,,,,CCAP,2017-11-13
+Shearer's Foods Inc.,co_e5893f540105,First Lien,Food & Beverage,,,,,L,425,,2021-06-01,736875,731726,,,,,CCAP,2017-11-13
 Alere Inc.,co_cfaee011f6e8,First Lien,Automotive,,,,,L,325,,2022-06-01,774313,778592,,,,,CCAP,2017-11-13
 Ameda Inc.,co_752c844fd8e9,First Lien,Automotive,,,,,L,600,,2022-09-01,2650000,2601184,,,,,CCAP,2017-11-13
 Ameda Inc.,co_752c844fd8e9,First Lien,Automotive,,,,,,2022-09-01,,,,,,,,,CCAP,2017-11-13
@@ -24,7 +24,7 @@ POC Investors LLC,co_b060e2db2c50,First Lien,Automotive,,,,,L,550,,2021-10-01,54
 Alion Science and Technology Corp.,co_3ab4bcd35252,Other Debt,Software & Technology,,,,,11.00%,,2022-08-01,5000000,4883657,,,,,,CCAP,2017-11-13
 MB Aerospace Holdings Inc.,co_1d2c0fa9d763,First Lien,Aerospace & Defense,,,,,L,550,,2022-12-01,4327809,4295381,,,,,CCAP,2017-11-13
 Midwest Industrial Rubber,co_7d5c09296063,First Lien,Chemicals & Materials,,,,,L,550,,2021-12-01,4069250,4008309,,,,,CCAP,2017-11-13
-Pro Mach Group Inc.,co_adcd494edb49,First Lien,Containers & Packaging,,,,,L,375,,2021-10-01,733040,736838,,,,,CCAP,2017-11-13
+Pro Mach Group Inc.,co_d50e1f811a0a,First Lien,Industrials,,,,,L,375,,2021-10-01,733040,736838,,,,,CCAP,2017-11-13
 ADMI Corp.,co_8d9f9dcf3927,First Lien,Business Services,,,,,L,375,,2022-04-01,977500,985812,,,,,CCAP,2017-11-13
 Advantage Sales & Marketing Inc.,co_a4cfeab36ed5,First Lien,Business Services,,,,,L,325,,2021-07-01,830730,831018,,,,,CCAP,2017-11-13
 Advantage Sales & Marketing Inc.,co_a4cfeab36ed5,Second Lien,Business Services,,,,,L,650,,2022-07-01,500000,502543,,,,,CCAP,2017-11-13
@@ -54,7 +54,7 @@ SMS Systems Maintenance Services Inc.,co_06e3b55ea911,Second Lien,Software & Tec
 Transportation Insight LLC,co_4ece447abf27,First Lien,Software & Technology,,,,,L,525,,2019-09-01,2146395,2131063,,,,,CCAP,2017-11-13
 Zoom Information Inc.,co_3a7251b24f3c,First Lien,Software & Technology,,,,,L,794,,2022-08-01,9000000,8765317,,,,,CCAP,2017-11-13
 American Seafoods Group LLC,co_7a37a8ddb692,Second Lien,Food & Beverage,,,,,L,900,10.00,2022-02-01,5000000,4884333,,,,,CCAP,2017-11-13
-Shearer's Foods Inc.,co_2f298081f0cf,First Lien,Food & Beverage,,,,,L,425,5.25,2021-06-01,742500,736390,,,,,CCAP,2017-11-13
+Shearer's Foods Inc.,co_e5893f540105,First Lien,Food & Beverage,,,,,L,425,5.25,2021-06-01,742500,736390,,,,,CCAP,2017-11-13
 Alere Inc.,co_cfaee011f6e8,First Lien,Automotive,,,,,L,325,4.25,2022-06-01,780254,785178,,,,,CCAP,2017-11-13
 ATI Holdings Acquisition Inc.,co_867188f2305a,First Lien,Automotive,,,,,P,350,7.25,2023-05-01,1169125,1158311,,,,,CCAP,2017-11-13
 Beaver-Visitec International Inc.,co_1e345b9605e2,First Lien,Automotive,,,,,L,500,6.00,2023-08-01,7481250,7409181,,,,,CCAP,2017-11-13
@@ -82,14 +82,14 @@ Doosan Infracore International Inc.,co_4111305aaa56,First Lien,Other,4.50%,,LIBO
 MB Aerospace Holdings I Inc.,co_1d2c0fa9d763,First Lien,Aerospace & Defense,6.50%,,LIBOR,550,2022-12-01,,,4360845,4324305,4324305,,,,,CCAP,2017-11-13
 Midwest Industrial Rubber,co_7d5c09296063,First Lien,Chemicals & Materials,,,,,,,2021-12-01,,,85000,77680,77680,,,CCAP,2017-11-13
 Midwest Industrial Rubber,co_7d5c09296063,First Lien,Chemicals & Materials,6.50%,,LIBOR,550,2021-12-01,,,4100000,4029260,4029260,,,,,CCAP,2017-11-13
-Pro Mach Group Inc.,co_adcd494edb49,First Lien,Containers & Packaging,4.75%,,LIBOR,375,2021-10-01,,,738693,743154,743154,,,,,CCAP,2017-11-13
+Pro Mach Group Inc.,co_d50e1f811a0a,First Lien,Industrials,4.75%,,LIBOR,375,2021-10-01,,,738693,743154,743154,,,,,CCAP,2017-11-13
 Silver II US Holdings LLC,co_b868361d21e3,First Lien,Other,4.00%,,LIBOR,300,2019-12-01,,,830597,813397,813397,,,,,CCAP,2017-11-13
 Univar Inc.,co_65e8ad9b45ee,First Lien,Chemicals & Materials,4.25%,,LIBOR,325,2022-07-01,,,740625,743672,743672,,,,,CCAP,2017-11-13
 ADMI Corp.,co_8d9f9dcf3927,First Lien,Business Services,5.25%,,LIBOR,425,2022-04-01,,,985000,994587,994587,,,,,CCAP,2017-11-13
 Advantage Sales & Marketing Inc.,co_a4cfeab36ed5,Second Lien,Business Services,7.50%,,LIBOR,650,2022-07-01,,,500000,502868,502868,,,,,CCAP,2017-11-13
 Advantage Sales & Marketing Inc.,co_a4cfeab36ed5,First Lien,Business Services,4.25%,,LIBOR,325,2021-07-01,,,837154,837496,837496,,,,,CCAP,2017-11-13
-Asurion LLC,co_91a537872ad5,Second Lien,Business Services,8.50%,,LIBOR,750,2021-03-01,,,275000,279388,279388,,,,,CCAP,2017-11-13
-Asurion LLC,co_91a537872ad5,First Lien,Business Services,5.00%,,LIBOR,400,2022-08-01,,,486875,486294,486294,,,,,CCAP,2017-11-13
+Asurion LLC,co_51e1762914ed,Second Lien,Business Services,8.50%,,LIBOR,750,2021-03-01,,,275000,279388,279388,,,,,CCAP,2017-11-13
+Asurion LLC,co_51e1762914ed,First Lien,Business Services,5.00%,,LIBOR,400,2022-08-01,,,486875,486294,486294,,,,,CCAP,2017-11-13
 Brickman Group Ltd.,co_e347c3e87bab,Second Lien,Business Services,7.50%,,LIBOR,650,2021-12-01,,,500000,502043,502043,,,,,CCAP,2017-11-13
 Emerald Expositions Holding Inc.,co_93df37620bcc,First Lien,Business Services,4.75%,,LIBOR,375,2020-06-01,,,696535,699151,699151,,,,,CCAP,2017-11-13
 Hepaco LLC,co_3d6984e32eac,First Lien,Business Services,,,,,,,2021-08-01,,,208333,202513,202513,,,CCAP,2017-11-13
@@ -98,7 +98,7 @@ Hepaco LLC,co_3d6984e32eac,First Lien,Business Services,,,,,,,2022-08-01,,,0,0,-
 SavATree LLC,co_ecda5fd5fed1,First Lien,Business Services,,,,,525,2022-06-01,,,2842875,2789236,,,,,CCAP,2017-11-13
 SavATree LLC,co_ecda5fd5fed1,First Lien,Business Services,,,,,,,2022-06-01,,,0,0,-10271,,,CCAP,2017-11-13
 Survey Sampling International LLC,co_d7dc93844243,First Lien,Business Services,,,,,500,2020-12-01,,,3159582,3137047,,,,,CCAP,2017-11-13
-TecoStar Holdings Inc.,co_acf7e1568ab9,Second Lien,Business Services,,,,,850,2024-11-01,,,5000000,4879837,,,,,CCAP,2017-11-13
+TecoStar Holdings Inc.,co_43e38457006b,Second Lien,Business Services,,,,,850,2024-11-01,,,5000000,4879837,,,,,CCAP,2017-11-13
 USAGM HoldCo LLC,co_a4b735478ebf,Second Lien,Business Services,,,,,,,2023-07-01,,,2000000,1955922,,,,CCAP,2017-11-13
 USAGM HoldCo LLC,co_a4b735478ebf,Second Lien,Business Services,,,,,850,2023-07-01,,,10000000,9679344,,,,,CCAP,2017-11-13
 Valet Waste Holdings Inc.,co_7a10c07cb0c5,First Lien,Business Services,,,,,700,2021-09-01,,,4802989,4751569,,,,,CCAP,2017-11-13
@@ -127,7 +127,7 @@ Vencore Inc.,co_3ecd397a543d,First Lien,Business Services,,,LIBOR,4.75,2019-11-0
 William Morris Endeavor Entertainment LLC,co_0cc48a76f128,Second Lien,Media & Entertainment,,,LIBOR,7.25,2022-05-01,,250000,244808,,,,,,,CCAP,2017-11-13
 William Morris Endeavor Entertainment LLC,co_0cc48a76f128,First Lien,Media & Entertainment,,,LIBOR,4.25,2021-05-01,,984810,987734,,,,,,,CCAP,2017-11-13
 C.F. Stinson LLC,co_f04e2f456d1f,First Lien,Industrials,,,LIBOR,6.70,2021-05-01,,3000000,2944942,,,,,,,CCAP,2017-11-13
-Varsity Brands Inc.,co_6b0ba6d32b7d,First Lien,Other,,,LIBOR,4.00,2021-12-01,,984925,993379,,,,,,,CCAP,2017-11-13
+Varsity Brands Inc.,co_6b0ba6d32b7d,First Lien,Consumer & Retail,,,LIBOR,4.00,2021-12-01,,984925,993379,,,,,,,CCAP,2017-11-13
 Catapult Learning LLC,co_4e8b0edd81f8,First Lien,Education,,,LIBOR,6.50,2020-07-01,,5000000,4962140,,,,,,,CCAP,2017-11-13
 Centerplate Inc.,co_158705a19720,First Lien,Other,,,LIBOR,3.75,2019-11-01,,707640,707640,,,,,,,CCAP,2017-11-13
 Oncourse Learning Corp.,co_b02155079c4e,First Lien,Education,,,LIBOR,6.50,2021-09-01,,10450000,10301281,,,,,,,CCAP,2017-11-13
@@ -139,7 +139,7 @@ Wrench Group LLC,co_1ae37eca31cd,First Lien,Consumer & Retail,,,LIBOR,5.25,2022-
 Edelman Financial Group The,co_d943b226171d,First Lien,Financial Services,,,LIBOR,5.50,2022-12-01,,2970000,2917848,,,,,,,CCAP,2017-11-13
 Fairmount Santrol Inc.,co_a77892775196,First Lien,Energy,,,LIBOR,3.50,2019-09-01,,335198,322749,,,,,,,CCAP,2017-11-13
 Murray Energy Corp.,co_ee942fe52a2a,First Lien,Energy,,,LIBOR,7.25,2020-04-01,,356470,339701,,,,,,,CCAP,2017-11-13
-Berlin Packaging LLC,co_7243fe49b647,First Lien,Containers & Packaging,,,,,L,3.50,2021-10-01,,979804,983603,,,,,CCAP,2017-11-13
+Berlin Packaging LLC,co_21949e12aa37,First Lien,Containers & Packaging,,,,,L,3.50,2021-10-01,,979804,983603,,,,,CCAP,2017-11-13
 Emerald Performance Materials LLC,co_227676b037a7,First Lien,Other,,,,,L,3.50,2021-08-01,,967618,971009,,,,,CCAP,2017-11-13
 IBC Capital Ltd.,co_fc00d725b72e,First Lien,Other,,,,,L,3.75,2021-09-01,,837218,826618,,,,,CCAP,2017-11-13
 Ineos US Finance LLC,co_56d7b3f99347,First Lien,Financial Services,,,,,L,3.25,2022-03-01,,492477,493470,,,,,CCAP,2017-11-13
@@ -168,7 +168,7 @@ Ministry Brands Intermediate LLC,co_c86397298c58,First Lien,Software & Technolog
 SMS Systems Maintenance Services Inc.,co_06e3b55ea911,Second Lien,Software & Technology,,,,,10.00,2024-10-01,,9015000,8726344,,,,,,CCAP,2017-11-13
 Tibco Software Inc.,co_2237c5138454,First Lien,Software & Technology,,,,,L,5.50,2020-12-01,,399614,400396,,,,,CCAP,2017-11-13
 Transportation Insight LLC,co_4ece447abf27,First Lien,Software & Technology,,,,,L,5.25,2019-09-01,,1862644,1846176,,,,,CCAP,2017-11-13
-Riverbed Technology Inc.,co_cf572ffcd973,First Lien,Software & Technology,,,,,L,3.25,2022-04-01,,0,114,,,,,CCAP,2017-11-13
+Riverbed Technology Inc.,co_db0b6072b10e,First Lien,Software & Technology,,,,,L,3.25,2022-04-01,,0,114,,,,,CCAP,2017-11-13
 Birch Communications Inc.,co_0d1b69f8e548,First Lien,Telecommunications,,,,,L,7.25,2020-07-01,,948068,951686,,,,,CCAP,2017-11-13
 Charter Communications Operating LLC,co_d09b21eaaffd,First Lien,Telecommunications,,,,,L,2.25,2024-01-01,,322562,321888,,,,,CCAP,2017-11-13
 Level 3 Financing Inc.,co_6bc3a40eab51,First Lien,Telecommunications,,,,,L,3.00,2020-01-01,,500000,501315,,,,,CCAP,2017-11-13
@@ -180,8 +180,8 @@ Pilot Air Freight LLC,co_79f366a5e782,First Lien,Transportation & Logistics,,,,,
 Eastern Power LLC,co_4ec933c0acfb,First Lien,Energy,,,,,L,4.00,2021-10-01,,938787,943975,,,,,CCAP,2017-11-13
 AP Centric,co_659264e6cab1,Common Equity,Automotive,,,,,,,,,,,841,,927437,,CCAP,2017-11-13
 Alion Science and Technology Corp.,co_3ab4bcd35252,Common Equity,Software & Technology,,,,,,,,,,,535714,,535714,,CCAP,2017-11-13
-MHS Acquisition Holdings LLC,co_a78ce7eeccfd,Common Equity,Business Services,,,,,,,,,,,891,,890485,,CCAP,2017-11-13
-TecoStar Holdings Inc.,co_acf7e1568ab9,Common Equity,Business Services,,,,,,,,,,,500000,,500000,,CCAP,2017-11-13
+MHS Acquisition Holdings LLC,co_dc781aa24c24,Common Equity,Business Services,,,,,,,,,,,891,,890485,,CCAP,2017-11-13
+TecoStar Holdings Inc.,co_43e38457006b,Common Equity,Business Services,,,,,,,,,,,500000,,500000,,CCAP,2017-11-13
 USAGM HoldCo LLC,co_a4b735478ebf,Common Equity,Business Services,,,,,,,,,,,238095,,238095,,CCAP,2017-11-13
 ExamWorks Group Inc.,co_282acd3c8943,Common Equity,Automotive,,,,,,,,,,,7500,,750000,,CCAP,2017-11-13
 Integro Equity,co_e4097ad074d0,Common Equity,Financial Services,,,,,,,,,,,4225,,422535,,CCAP,2017-11-13

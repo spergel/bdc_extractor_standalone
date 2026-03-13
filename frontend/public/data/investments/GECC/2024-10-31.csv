@@ -1,8 +1,8 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
 Advancion,co_cecc5e9a9fd0,First Lien,,7.75%,,,,,,,,,,,,,,,,,GECC,2024-10-31
 Advancion,co_cecc5e9a9fd0,First Lien,,12.7%,,,,8.5%,2022-09-21,2028-11-24,1625,1527,1538,,1527,,,,,,GECC,2024-10-31
-AI Aqua Merger Sub Inc.,co_fda46632ffa1,First Lien,Industrials,3.5%,,,,,,,,,,,,,,,,,GECC,2024-10-31
-AI Aqua Merger Sub Inc.,co_fda46632ffa1,First Lien,Industrials,8.7%,,,,4%,2024-09-17,2028-07-31,2000,1998,1997,,1998,,,,,,GECC,2024-10-31
+AI Aqua Merger Sub Inc.,co_a978ef18408e,First Lien,Industrials,3.5%,,,,,,,,,,,,,,,,,GECC,2024-10-31
+AI Aqua Merger Sub Inc.,co_a978ef18408e,First Lien,Industrials,8.7%,,,,4%,2024-09-17,2028-07-31,2000,1998,1997,,1998,,,,,,GECC,2024-10-31
 American Coastal Insurance Corp.,co_aa016be18373,Unsecured Debt,Insurance,7.25%,,,,,2022-12-20,2027-12-15,13000,7845,12238,,7845,,,,,,GECC,2024-10-31
 Auction.com LLC,co_62fa282697bc,First Lien,,6%,,,,,,,,,,,,,,,,,GECC,2024-10-31
 Auction.com LLC,co_62fa282697bc,First Lien,,10.74%,,,,7%,2024-09-09,2028-05-26,2842,2740,2700,,2740,,,,,,GECC,2024-10-31
@@ -11,13 +11,13 @@ Blackstone Secured Lending,co_32e454a9dde3,Common Equity,Financial Services,,,,,
 Blue Ribbon LLC,co_e508a06c4deb,First Lien,,6%,,,,,,,,,,,,,,,,,GECC,2024-10-31
 Blue Ribbon LLC,co_e508a06c4deb,First Lien,,11.58%,,,,6.75%,2023-02-06,2028-05-07,8503,6395,5917,,6395,,,,,,GECC,2024-10-31
 Conuma Resources Ltd.,co_799947f29638,Other Equity,,13.13%,,,,,2024-08-08,2028-05-01,2090,2141,2148,,2141,,,,,,GECC,2024-10-31
-Coreweave Compute Acquisition Co. II LLC,co_473ac99b3e84,First Lien,,9.62%,,,,,,,,,,,,,,,,,GECC,2024-10-31
-Coreweave Compute Acquisition Co. II LLC,co_473ac99b3e84,First Lien,,14.65%,,,,9.62%,2023-07-31,2028-07-31,13875,13731,14153,,13731,,,,,,GECC,2024-10-31
-Coreweave Compute Acquisition Co. IV LLC,co_2321ff9e3f02,First Lien,,6%,,,,,,,,,,,,,,,,,GECC,2024-10-31
-Coreweave Compute Acquisition Co. IV LLC,co_2321ff9e3f02,First Lien,,11.05%,,,,6%,2024-05-29,2030-05-16,1702,1677,1685,,1677,,,,,,GECC,2024-10-31
+Coreweave Compute Acquisition Co. II LLC,co_473ac99b3e84,First Lien,Software & Technology,9.62%,,,,,,,,,,,,,,,,,GECC,2024-10-31
+Coreweave Compute Acquisition Co. II LLC,co_473ac99b3e84,First Lien,Software & Technology,14.65%,,,,9.62%,2023-07-31,2028-07-31,13875,13731,14153,,13731,,,,,,GECC,2024-10-31
+Coreweave Compute Acquisition Co. IV LLC,co_2321ff9e3f02,First Lien,Software & Technology,6%,,,,,,,,,,,,,,,,,GECC,2024-10-31
+Coreweave Compute Acquisition Co. IV LLC,co_2321ff9e3f02,First Lien,Software & Technology,11.05%,,,,6%,2024-05-29,2030-05-16,1702,1677,1685,,1677,,,,,,GECC,2024-10-31
 CW Opportunity 2 LP,co_ddb092eb1049,First Lien,AI Infrastructure Fund,,,,,,2024-05-14,,6000000,6000,7119,,6000,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GECC,2024-10-31
-Creation Technologies Inc.,co_75bd626d7b92,First Lien,,5.5%,,,,,,,,,,,,,,,,,GECC,2024-10-31
-Creation Technologies Inc.,co_75bd626d7b92,First Lien,,11.08%,,,,6%,2024-02-12,2028-10-05,2462,2340,2382,,2340,,,,,,GECC,2024-10-31
+Creation Technologies Inc.,co_75bd626d7b92,First Lien,Software & Technology,5.5%,,,,,,,,,,,,,,,,,GECC,2024-10-31
+Creation Technologies Inc.,co_75bd626d7b92,First Lien,Software & Technology,11.08%,,,,6%,2024-02-12,2028-10-05,2462,2340,2382,,2340,,,,,,GECC,2024-10-31
 CSC Serviceworks 35 Pinelawn Road Suite,co_af773318b378,First Lien,Business Services,4%,,,,,,,,,,,,,,,,,GECC,2024-10-31
 CSC Serviceworks 35 Pinelawn Road Suite,co_af773318b378,First Lien,Business Services,9.26%,,,,4.75%,2023-09-26,2028-03-04,4964,4256,4327,,4256,,,,,,GECC,2024-10-31
 Dynata LLC,co_228f5e272a66,First Lien,,5%,,,,,,,,,,,,,,,,,GECC,2024-10-31
@@ -108,15 +108,15 @@ Vi Jon,co_cf464f739660,First Lien,,13.51%,2%,,,12.5%,2023-12-28,2028-12-28,8856,
 Victra,co_0c06385124fc,First Lien,,5.25%,,,,,,,,,,,,,,,,,GECC,2024-10-31
 Victra,co_0c06385124fc,First Lien,,9.85%,,,,6%,2024-02-12,2029-03-31,1226,1227,1233,,1227,,,,,,GECC,2024-10-31
 W&T Offshore Inc.,co_fd9d102ee230,Other Equity,,11.75%,,,,,2023-01-12,2026-02-01,4816,4816,4910,,4816,,,,,,GECC,2024-10-31
-Short-Term Investments United States Treasury,co_7225f32c0d0d,First Lien,Financial Services,0%,,,,,2024-06-28,,60000000,59789,59779,,59789,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GECC,2024-10-31
-Short-Term Investments MFB Northern Inst Funds Treas Portfolio Premier CL,co_d227af79f3a5,First Lien,Financial Services,0%,,,,,2023-10-26,,25695298,25695,25695,,25695,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GECC,2024-10-31
-Total Short-Term Investments,co_8e9c9bfddf8d,Other,Financial Services,,,,,,,,,85484,85474,67.93%,85484,,,,,,GECC,2024-10-31
+,co_7225f32c0d0d,First Lien,Financial Services,0%,,,,,2024-06-28,,60000000,59789,59779,,59789,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GECC,2024-10-31
+,co_d227af79f3a5,First Lien,Financial Services,0%,,,,,2023-10-26,,25695298,25695,25695,,25695,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GECC,2024-10-31
+,co_8e9c9bfddf8d,Other,Financial Services,,,,,,,,,85484,85474,67.93%,85484,,,,,,GECC,2024-10-31
 Invesco SeniInvesco Senior Loan ETF,co_40e8de002d91,Common Equity,,,,,,,,,250000,,,,,,,,,,GECC,2024-10-31
 Ruby Tuesday Operations LRuby Tuesday Operations LLC,co_537a4b9996fe,First Lien,,,21.32%,,,,,,,,701,,,,,,,,GECC,2024-10-31
 SCIH Salt HoldinSCIH Salt Holdings Inc.,co_24795a738681,First Lien,,,,,,,2024-09-17,,,,,,,,,,,,GECC,2024-10-31
 Other Liabilities in Excess of Net Assets,co_e5652a73569b,Other,,,,,,,,,,,-292931,2.33%,,,,,,,GECC,2024-10-31
-SOFR,co_9d4931603a2a,Other,,,,,,,,,,,,,,,,,,,GECC,2024-10-31
-One-month SOFR,co_edaf7d0196c7,Other,,,,,,,,,,,,,,,,,,,GECC,2024-10-31
-Three-month SOFR,co_30b55e721643,Other,,,,,,,,,,,,,,,,,,,GECC,2024-10-31
-Six-month SOFR,co_2abf8d94bf3c,Other,,,,,,,,,,,,,,,,,,,GECC,2024-10-31
-Prime,co_dccc5d01dabc,Other,,,,,,,,,,,,,,,,,,,GECC,2024-10-31
+,co_9d4931603a2a,Other,,,,,,,,,,,,,,,,,,,GECC,2024-10-31
+,co_edaf7d0196c7,Other,,,,,,,,,,,,,,,,,,,GECC,2024-10-31
+,co_30b55e721643,Other,,,,,,,,,,,,,,,,,,,GECC,2024-10-31
+,co_2abf8d94bf3c,Other,,,,,,,,,,,,,,,,,,,GECC,2024-10-31
+,co_dccc5d01dabc,Other,,,,,,,,,,,,,,,,,,,GECC,2024-10-31

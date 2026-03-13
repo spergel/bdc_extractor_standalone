@@ -1,5 +1,5 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,data_quality_flags,ticker,filing_date
-AQ Carver Buyer Inc.,co_48fa2fa33b59,First Lien,Business Services,6.80%,,LIBOR,5.00%,,2025-09-24,5000,,4925,,,,,,MRCC,2020-08-06
+AQ Carver Buyer Inc.,co_967457d264ea,First Lien,Business Services,6.80%,,LIBOR,5.00%,,2025-09-24,5000,,4925,,,,,,MRCC,2020-08-06
 CHA Holdings Inc.,co_9b60f6d3a5dd,First Lien,Business Services,6.44%,,LIBOR,4.50%,,2025-04-10,2023,,2020,,,,,,MRCC,2020-08-06
 CHA Holdings Inc.,co_9b60f6d3a5dd,First Lien,Business Services,6.44%,,LIBOR,4.50%,,2025-04-10,426,,426,,,,,,MRCC,2020-08-06
 Eliassen Group LLC,co_6f2538aae5b8,First Lien,Business Services,6.30%,,LIBOR,4.50%,,2024-11-05,3032,,3022,,,,,,MRCC,2020-08-06
@@ -31,7 +31,7 @@ Mavenir Systems Inc.,co_a0e981bf7929,First Lien,Telecommunications,7.91%,,LIBOR,
 GlobalTranz Enterprises LLC,co_cb108b81935e,First Lien,Transportation & Logistics,5.18%,,LIBOR,5.00%,,2026-05-15,3279,,2627,,,,,,MRCC,2020-08-06
 NGS US Finco LLC,co_13ada016fa25,First Lien,Energy,5.25%,,LIBOR,4.25%,,2025-10-01,1721,,1429,,,,,,MRCC,2020-08-06
 BMC Acquisition Inc.,co_60460f2a91b4,First Lien,Business Services,6.25%,,LIBOR,5.25%,,2024-12-30,4875,,4564,,,,,,MRCC,2020-08-06
-HALO Buyer Inc.,co_3dc4ab81bc2a,First Lien,Business Services,5.50%,,LIBOR,4.50%,,2025-06-30,4900,,4075,,,,,,MRCC,2020-08-06
+HALO Buyer Inc.,co_4d288827c1ed,First Lien,Business Services,5.50%,,LIBOR,4.50%,,2025-06-30,4900,,4075,,,,,,MRCC,2020-08-06
 PT Intermediate Holdings III LLC,co_f22783f7edc5,First Lien,Business Services,6.50%,,LIBOR,5.50%,,2025-10-15,1990,,1791,,,,,,MRCC,2020-08-06
 Output Services Group Inc.,co_05105daaeb2b,First Lien,Business Services,6.30%,,LIBOR,4.50%,,2024-03-27,,4916,4166,,4916,,,,MRCC,2020-08-06
 Output Services Group Inc.,co_05105daaeb2b,First Lien,Business Services,5.50%,,LIBOR,4.50%,,2024-03-27,4890,4890,3553,,4890,,,,MRCC,2020-08-06
@@ -39,8 +39,8 @@ SIRVA Worldwide Inc.,co_d65f2d59da22,First Lien,Business Services,7.30%,,LIBOR,5
 SIRVA Worldwide Inc.,co_d65f2d59da22,First Lien,Business Services,5.68%,,LIBOR,5.50%,,2025-08-04,1923,1923,1423,,1923,,,,MRCC,2020-08-06
 Teneo Holdings LLC,co_a61900ea7719,First Lien,Business Services,6.99%,,LIBOR,5.25%,,2025-07-11,,4988,4757,,4988,,,,MRCC,2020-08-06
 Teneo Holdings LLC,co_a61900ea7719,First Lien,Business Services,6.25%,,LIBOR,5.25%,,2025-07-11,4963,4963,4733,,4963,,,,MRCC,2020-08-06
-The Kleinfelder Group Inc.,co_ea09a53ab213,First Lien,Business Services,6.37%,,LIBOR,4.75%,,2024-11-29,,2475,2474,,2475,,,,MRCC,2020-08-06
-The Kleinfelder Group Inc.,co_ea09a53ab213,First Lien,Business Services,5.75%,,LIBOR,4.75%,,2024-11-29,2463,2463,2396,,2463,,,,MRCC,2020-08-06
+The Kleinfelder Group Inc.,co_9164af876353,First Lien,Business Services,6.37%,,LIBOR,4.75%,,2024-11-29,,2475,2474,,2475,,,,MRCC,2020-08-06
+The Kleinfelder Group Inc.,co_9164af876353,First Lien,Business Services,5.75%,,LIBOR,4.75%,,2024-11-29,2463,2463,2396,,2463,,,,MRCC,2020-08-06
 Summit Container Corp.,co_5e5cae21b0c1,First Lien,Containers & Packaging,9.00%,,LIBOR,8.00%,2013-12-05,2021-01-06,3259,3269,3096,1.4,3269,,,,MRCC,2020-08-06
 Summit Container Corp.,co_5e5cae21b0c1,Revolver,Containers & Packaging,9.00%,,LIBOR,8.00%,2018-06-15,2021-01-06,7000,2589,2554,1.2,2589,7000,4411,,MRCC,2020-08-06
 Ascent Midco LLC,co_2150082af3f6,First Lien,Healthcare,6.75%,,LIBOR,5.75%,2020-02-05,2025-02-05,6965,6837,6865,3.1,6837,,,,MRCC,2020-08-06
@@ -60,15 +60,15 @@ American Community Homes Inc.,co_a52919ef9d10,First Lien,Financial Services,,16.
 American Community Homes Inc.,co_a52919ef9d10,First Lien,Financial Services,,16.00%,LIBOR,14.50%,2016-03-17,2020-12-31,803,802,643,0.3,,,,,MRCC,2020-08-06
 Drilling Info Holdings Inc.,co_9272566f7980,First Lien,Energy,6.05%,,LIBOR,4.25%,,2025-07-30,,4609,4586,,,,,,MRCC,2020-08-06
 Drilling Info Holdings Inc.,co_9272566f7980,First Lien,Energy,4.43%,,LIBOR,4.25%,,2025-07-30,,4586,4208,,,,,,MRCC,2020-08-06
-Offen Inc.,co_0dcb3071a7a3,First Lien,Energy,6.94%,,LIBOR,5.00%,,2026-06-22,,2436,2436,,,,,,MRCC,2020-08-06
-Offen Inc.,co_0dcb3071a7a3,First Lien,Energy,6.07%,,LIBOR,5.00%,,2026-06-22,,2424,2154,,,,,,MRCC,2020-08-06
-Offen Inc.,co_0dcb3071a7a3,Delayed Draw,Energy,6.94%,,LIBOR,5.00%,,2026-06-22,,885,,,,,,,MRCC,2020-08-06
-Offen Inc.,co_0dcb3071a7a3,Delayed Draw,Energy,6.07%,,LIBOR,5.00%,,2026-06-22,,885,,,,,,,MRCC,2020-08-06
-LSCS Holdings Inc.,co_a9729536583e,First Lien,Healthcare,6.19%,,LIBOR,4.25%,,2025-03-17,,2322,2299,,,,,,MRCC,2020-08-06
-LSCS Holdings Inc.,co_a9729536583e,First Lien,Healthcare,6.19%,,LIBOR,4.25%,,2025-03-17,,599,593,,,,,,MRCC,2020-08-06
-LSCS Holdings Inc.,co_a9729536583e,First Lien,Healthcare,5.32%,,LIBOR,4.25%,,2025-03-17,,2310,2183,,,,,,MRCC,2020-08-06
-LSCS Holdings Inc.,co_a9729536583e,First Lien,Healthcare,5.32%,,LIBOR,4.25%,,2025-03-17,,596,564,,,,,,MRCC,2020-08-06
-LSCS Holdings Inc.,co_a9729536583e,First Lien,Healthcare,6.19%,,LIBOR,4.25%,,2025-03-17,599,599,593,,599,,,,MRCC,2020-08-06
+Offen Inc.,co_1aaa340bef9a,First Lien,Energy,6.94%,,LIBOR,5.00%,,2026-06-22,,2436,2436,,,,,,MRCC,2020-08-06
+Offen Inc.,co_1aaa340bef9a,First Lien,Energy,6.07%,,LIBOR,5.00%,,2026-06-22,,2424,2154,,,,,,MRCC,2020-08-06
+Offen Inc.,co_1aaa340bef9a,Delayed Draw,Energy,6.94%,,LIBOR,5.00%,,2026-06-22,,885,,,,,,,MRCC,2020-08-06
+Offen Inc.,co_1aaa340bef9a,Delayed Draw,Energy,6.07%,,LIBOR,5.00%,,2026-06-22,,885,,,,,,,MRCC,2020-08-06
+LSCS Holdings Inc.,co_4f76318352db,First Lien,Healthcare,6.19%,,LIBOR,4.25%,,2025-03-17,,2322,2299,,,,,,MRCC,2020-08-06
+LSCS Holdings Inc.,co_4f76318352db,First Lien,Healthcare,6.19%,,LIBOR,4.25%,,2025-03-17,,599,593,,,,,,MRCC,2020-08-06
+LSCS Holdings Inc.,co_4f76318352db,First Lien,Healthcare,5.32%,,LIBOR,4.25%,,2025-03-17,,2310,2183,,,,,,MRCC,2020-08-06
+LSCS Holdings Inc.,co_4f76318352db,First Lien,Healthcare,5.32%,,LIBOR,4.25%,,2025-03-17,,596,564,,,,,,MRCC,2020-08-06
+LSCS Holdings Inc.,co_4f76318352db,First Lien,Healthcare,6.19%,,LIBOR,4.25%,,2025-03-17,599,599,593,,599,,,,MRCC,2020-08-06
 P&L Developments LLC,co_244a9bc1faf4,First Lien,Healthcare,9.50%,,LIBOR,7.50%,,2024-06-28,,2993,2978,,,,,,MRCC,2020-08-06
 P&L Developments LLC,co_244a9bc1faf4,First Lien,Healthcare,9.50%,,LIBOR,7.50%,,2024-06-28,,2978,2970,,,,,,MRCC,2020-08-06
 P&L Developments LLC,co_244a9bc1faf4,First Lien,Healthcare,9.50%,,LIBOR,7.50%,,2024-06-28,2993,2993,2978,,2993,,,,MRCC,2020-08-06
@@ -128,7 +128,7 @@ Incipio LLC,co_556c78bb6647,Second Lien,Consumer & Retail,,10.70%,N/A,,2018-06-1
 Incipio LLC,co_556c78bb6647,Second Lien,Consumer & Retail,,10.70%,N/A,,2018-06-18,2022-08-22,7194,,,0.0,,,,,MRCC,2020-08-06
 Curion Holdings LLC,co_563819fe3bed,Second Lien,Business Services,,15.00%,N/A,,2018-08-17,2023-01-02,1720,1,,0.0,1,,,cost_suspicious_vs_size,MRCC,2020-08-06
 Curion Holdings LLC,co_563819fe3bed,Second Lien,Business Services,,15.00%,N/A,,2018-08-17,2023-01-02,44,,,0.0,,,,,MRCC,2020-08-06
-Liqui-Box Holdings Inc.,co_6140f819ef8c,First Lien,Containers & Packaging,5.50%,,LIBOR,4.50%,,2027-02-26,,4333,3673,,,,,,MRCC,2020-08-06
+Liqui-Box Holdings Inc.,co_ceee00a42144,First Lien,Containers & Packaging,5.50%,,LIBOR,4.50%,,2027-02-26,,4333,3673,,,,,,MRCC,2020-08-06
 Polychem Acquisition LLC,co_90d33fc3eb64,First Lien,Containers & Packaging,6.08%,,LIBOR,5.00%,,2025-03-17,,2963,2963,,,,,,MRCC,2020-08-06
 Port Townsend Holdings Company Inc.,co_9492eebec9a6,First Lien,Containers & Packaging,5.75%,,LIBOR,4.75%,,2024-04-03,,4709,4238,,,,,,MRCC,2020-08-06
 PVHC Holding Corp.,co_25877c931bc1,First Lien,Containers & Packaging,5.75%,,LIBOR,4.75%,,2024-08-05,,3267,2809,,,,,,MRCC,2020-08-06

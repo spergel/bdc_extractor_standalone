@@ -116,8 +116,7 @@ export function SimpleAnalyticsPanel({ holdings, period }: Props) {
       sizeDistribution,
     };
   }, [holdings]);
-  
-  const fmt = (n: number) => n.toLocaleString('en-US', { maximumFractionDigits: 0 });
+
   const fmtPct = (n: number) => `${n.toFixed(1)}%`;
   const fmtBps = (n: number) => `${n.toFixed(2)}%`;
   

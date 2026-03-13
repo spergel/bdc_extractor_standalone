@@ -1,7 +1,7 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
-Adamas Trust,co_df7ef9bd0f86,Preferred Equity,,,,,,,,,221,5510,5566,3.45%,5510,,,,,,PFX,2025-12-12,PFX,2025-12-12
-Adamas Trust,co_df7ef9bd0f86,Other Equity,,,,,,,,,17,376,392,0.24%,376,,,,,,PFX,2025-12-12,PFX,2025-12-12
-Adamas Trust Inc.,co_df7ef9bd0f86,First Lien,,,,,,,,,239,5886,5958,3.69%,5886,,,,,,PFX,2025-12-12,PFX,2025-12-12
+Adamas Trust,co_b7646cd72b6c,Preferred Equity,Real Estate,,,,,,,,221,5510,5566,3.45%,5510,,,,,,PFX,2025-12-12,PFX,2025-12-12
+Adamas Trust,co_b7646cd72b6c,Other Equity,Real Estate,,,,,,,,17,376,392,0.24%,376,,,,,,PFX,2025-12-12,PFX,2025-12-12
+Adamas Trust Inc.,co_b7646cd72b6c,First Lien,Real Estate,,,,,,,,239,5886,5958,3.69%,5886,,,,,,PFX,2025-12-12,PFX,2025-12-12
 Altisource S.A.R.L.,co_f815714130ba,First Lien,Business Services,6.5%,,,,,,2030-04-30,8041,8460,8322,5.18%,8460,,,,,,PFX,2025-12-12,PFX,2025-12-12
 Altisource S.A.R.L.,co_f815714130ba,First Lien,Business Services,,,,,,,,547,3328,6380,3.97%,3328,,,,547180,,PFX,2025-12-12,PFX,2025-12-12
 Altisource S.A.R.L.,co_f815714130ba,First Lien,Business Services,,,,,,,2029-04-02,111,647,78,0.05%,647,,,,,,PFX,2025-12-12,PFX,2025-12-12
@@ -17,8 +17,8 @@ Chimera Investment Corp.,co_6ada2295c415,First Lien,Financial Services,,,,,,,,17
 Compass Diversified Holdings,co_09bf04de6f86,First Lien,Diversified,,,,,,,,22,381,406,0.25%,381,,,,22049,,PFX,2025-12-12,PFX,2025-12-12
 Compass Diversified Holdings,co_09bf04de6f86,First Lien,Diversified,,,,,,,,22,381,406,0.25%,381,,,,,,PFX,2025-12-12,PFX,2025-12-12
 Copper Property CTL Pass Through Trust,co_10d79bf68c1e,First Lien,Real Estate,,,,,,,,638,7200,7915,4.92%,7200,,,,,,PFX,2025-12-12,PFX,2025-12-12
-Franklin BSP Realty Trust,co_c2a895429d13,Other Equity,Real Estate,,,,,,,,50,498,543,0.34%,498,,,,50000,,PFX,2025-12-12,PFX,2025-12-12
-Franklin BSP Realty Trust Inc.,co_c2a895429d13,First Lien,Real Estate,,,,,,,,50,498,543,0.34%,498,,,,,,PFX,2025-12-12,PFX,2025-12-12
+Franklin BSP Realty Trust,co_c2a895429d13,Other Equity,Insurance,,,,,,,,50,498,543,0.34%,498,,,,50000,,PFX,2025-12-12,PFX,2025-12-12
+Franklin BSP Realty Trust Inc.,co_c2a895429d13,First Lien,Insurance,,,,,,,,50,498,543,0.34%,498,,,,,,PFX,2025-12-12,PFX,2025-12-12
 Innovate Corp.,co_0a4006509be4,First Lien,Industrials,10.5%,,,,,,2027-02-01,4558,4023,4034,2.51%,4023,,,,,,PFX,2025-12-12,PFX,2025-12-12
 Innovate Corp.,co_0a4006509be4,First Lien,Industrials,,,,,,,,4558,4023,4034,2.51%,4023,,,,,,PFX,2025-12-12,PFX,2025-12-12
 Invesco Mortgage Capital,co_85e17f7429fe,Other Equity,Financial Services,,,,,,,,180,1412,1361,0.85%,1412,,,,180000,,PFX,2025-12-12,PFX,2025-12-12
@@ -28,18 +28,18 @@ JFL-NGS-WCS Partners,co_2a9c1a87b2cd,Other Equity,Industrials,,,,,,,,10000,10000
 NGS-WCS Group Holdings - JFL-NGS-WCS Partners LLC,co_a5bd0cfd5eae,First Lien,,,,,,,,,10988,10983,14097,8.77%,10983,,,,,,PFX,2025-12-12,PFX,2025-12-12
 Kemmerer Operations,co_84ebe4c19813,First Lien,Chemicals & Materials,5%,,,,,,2028-12-31,8763,8763,8763,5.45%,8763,,,,,,PFX,2025-12-12,PFX,2025-12-12
 Kemmerer Operations LLC,co_84ebe4c19813,First Lien,Chemicals & Materials,,,,,,,,8763,8763,8763,5.45%,8763,,,,,,PFX,2025-12-12,PFX,2025-12-12
-Lucky Bucks,co_2709cdef36b5,First Lien,Healthcare,7.5%,,,,,,2029-10-02,2144,1998,1994,1.24%,1998,,,,,,PFX,2025-12-12,PFX,2025-12-12
-Lucky Bucks,co_2709cdef36b5,First Lien,Healthcare,7.5%,,,,,,2028-10-02,1514,1411,1514,0.94%,1411,,,,,,PFX,2025-12-12,PFX,2025-12-12
+Lucky Bucks,co_2709cdef36b5,First Lien,Consumer & Retail,7.5%,,,,,,2029-10-02,2144,1998,1994,1.24%,1998,,,,,,PFX,2025-12-12,PFX,2025-12-12
+Lucky Bucks,co_2709cdef36b5,First Lien,Consumer & Retail,7.5%,,,,,,2028-10-02,1514,1411,1514,0.94%,1411,,,,,,PFX,2025-12-12,PFX,2025-12-12
 LB NewHoldCo,co_4b88a0e83ba6,Other Equity,Healthcare,,,,,,,,231,449,994,0.62%,449,,,,230739,,PFX,2025-12-12,PFX,2025-12-12
-Lucky Bucks LLC,co_2709cdef36b5,First Lien,Healthcare,,,,,,,,3889,3858,4502,2.8%,3858,,,,,,PFX,2025-12-12,PFX,2025-12-12
+Lucky Bucks LLC,co_2709cdef36b5,First Lien,Consumer & Retail,,,,,,,,3889,3858,4502,2.8%,3858,,,,,,PFX,2025-12-12,PFX,2025-12-12
 MFA Financial,co_44c73bdb7915,Preferred Equity,Financial Services,,,,,,,,115,2801,2738,1.7%,2801,,,,114695,,PFX,2025-12-12,PFX,2025-12-12
 MFA Financial,co_44c73bdb7915,Other Equity,Financial Services,,,,,,,,70,715,643,0.4%,715,,,,70000,,PFX,2025-12-12,PFX,2025-12-12
 MFA Financial Inc.,co_44c73bdb7915,First Lien,Financial Services,,,,,,,,185,3516,3381,2.1%,3516,,,,,,PFX,2025-12-12,PFX,2025-12-12
 Neptune Bidco US,co_a6ffd5a50f17,First Lien,Media & Entertainment,5%,,,,,,2029-04-11,2967,2787,2822,1.76%,2787,,,,,,PFX,2025-12-12,PFX,2025-12-12
 Neptune Bidco US,co_a6ffd5a50f17,First Lien,Media & Entertainment,9.29%,,,,,,2029-04-15,4000,3676,3910,2.43%,3676,,,,,,PFX,2025-12-12,PFX,2025-12-12
 Neptune Bidco US Inc.,co_a6ffd5a50f17,First Lien,Media & Entertainment,,,,,,,,6967,6463,6732,4.19%,6463,,,,,,PFX,2025-12-12,PFX,2025-12-12
-Onity Group Inc.,co_613c184deade,First Lien,,,,,,,,,200,3925,3948,2.46%,3925,,,,200000,,PFX,2025-12-12,PFX,2025-12-12
-Onity Group Inc.,co_613c184deade,First Lien,,,,,,,,,200,3925,3948,2.46%,3925,,,,,,PFX,2025-12-12,PFX,2025-12-12
+Onity Group Inc.,co_613c184deade,First Lien,Real Estate,,,,,,,,200,3925,3948,2.46%,3925,,,,200000,,PFX,2025-12-12,PFX,2025-12-12
+Onity Group Inc.,co_613c184deade,First Lien,Real Estate,,,,,,,,200,3925,3948,2.46%,3925,,,,,,PFX,2025-12-12,PFX,2025-12-12
 PHH Mortgage Corp.,co_ccf5efd049cf,First Lien,Financial Services,9.88%,,,,,,2029-11-01,2500,2343,2516,1.56%,2343,,,,,,PFX,2025-12-12,PFX,2025-12-12
 PHH Mortgage Corp.,co_ccf5efd049cf,First Lien,Financial Services,,,,,,,,2500,2343,2516,1.56%,2343,,,,,,PFX,2025-12-12,PFX,2025-12-12
 Power Stop LLC,co_c3e3b0961c57,First Lien,Automotive,4.75%,,,,,,2029-01-26,9704,8505,7860,4.89%,8505,,,,,,PFX,2025-12-12,PFX,2025-12-12
@@ -47,25 +47,25 @@ Power Stop LLC,co_c3e3b0961c57,First Lien,Automotive,,,,,,,,9704,8505,7860,4.89%
 PREIT Associates,co_092664305822,First Lien,Real Estate,7%,,,,,,2029-04-01,56,55,58,0.04%,55,,,,,,PFX,2025-12-12,PFX,2025-12-12
 PREIT Associates,co_092664305822,First Lien,Real Estate,5.5%,,,,,,2028-12-31,73,72,71,0.04%,72,,,,,,PFX,2025-12-12,PFX,2025-12-12
 PREIT Associates,co_092664305822,First Lien,Real Estate,,,,,,,,129,127,129,0.08%,127,,,,,,PFX,2025-12-12,PFX,2025-12-12
-PSB Group,co_edf1ad23c547,First Lien,,6.5%,,,,,,2030-04-17,5707,5680,5707,3.55%,5680,,,,,,PFX,2025-12-12,PFX,2025-12-12
-PSB Group,co_edf1ad23c547,Revolver,,6.5%,,,,,,2030-04-17,293,293,293,0.18%,293,,,,,,PFX,2025-12-12,PFX,2025-12-12
-PSB Group LLC,co_edf1ad23c547,First Lien,,,,,,,,,6000,5973,6000,3.73%,5973,,,,,,PFX,2025-12-12,PFX,2025-12-12
-Redwood Trust Inc.,co_60347f4724cb,First Lien,,,,,,,,,165,1013,955,0.59%,1013,,,,165000,,PFX,2025-12-12,PFX,2025-12-12
-Redwood Trust Inc.,co_60347f4724cb,First Lien,,,,,,,,,165,1013,955,0.59%,1013,,,,,,PFX,2025-12-12,PFX,2025-12-12
-SS Acquisition,co_8012581319ca,First Lien,Education,5.75%,,,,,,2029-12-20,13470,13404,13470,8.38%,13404,,,,,,PFX,2025-12-12,PFX,2025-12-12
-SS Acquisition,co_8012581319ca,Revolver,Education,5.75%,,,,,,2029-12-20,400,400,400,0.25%,400,,,,,,PFX,2025-12-12,PFX,2025-12-12
-SS Acquisition LLC,co_8012581319ca,First Lien,Education,,,,,,,,13870,13804,13870,8.63%,13804,,,,,,PFX,2025-12-12,PFX,2025-12-12
+PSB Group,co_9dcd21e3bc70,First Lien,Consumer & Retail,6.5%,,,,,,2030-04-17,5707,5680,5707,3.55%,5680,,,,,,PFX,2025-12-12,PFX,2025-12-12
+PSB Group,co_9dcd21e3bc70,Revolver,Consumer & Retail,6.5%,,,,,,2030-04-17,293,293,293,0.18%,293,,,,,,PFX,2025-12-12,PFX,2025-12-12
+PSB Group LLC,co_9dcd21e3bc70,First Lien,Consumer & Retail,,,,,,,,6000,5973,6000,3.73%,5973,,,,,,PFX,2025-12-12,PFX,2025-12-12
+Redwood Trust Inc.,co_60347f4724cb,First Lien,Real Estate,,,,,,,,165,1013,955,0.59%,1013,,,,165000,,PFX,2025-12-12,PFX,2025-12-12
+Redwood Trust Inc.,co_60347f4724cb,First Lien,Real Estate,,,,,,,,165,1013,955,0.59%,1013,,,,,,PFX,2025-12-12,PFX,2025-12-12
+SS Acquisition,co_8012581319ca,First Lien,Consumer & Retail,5.75%,,,,,,2029-12-20,13470,13404,13470,8.38%,13404,,,,,,PFX,2025-12-12,PFX,2025-12-12
+SS Acquisition,co_8012581319ca,Revolver,Consumer & Retail,5.75%,,,,,,2029-12-20,400,400,400,0.25%,400,,,,,,PFX,2025-12-12,PFX,2025-12-12
+SS Acquisition LLC,co_8012581319ca,First Lien,Consumer & Retail,,,,,,,,13870,13804,13870,8.63%,13804,,,,,,PFX,2025-12-12,PFX,2025-12-12
 Stancor,co_d16fc80c99b9,First Lien,Business Services,,,,,,,,359,345,314,0.2%,345,,,,358867,,PFX,2025-12-12,PFX,2025-12-12
 Stancor,co_d16fc80c99b9,First Lien,Business Services,,,,,,,,359,345,314,0.2%,345,,,,,,PFX,2025-12-12,PFX,2025-12-12
 Spotter Inc.,co_b582e5b0003d,First Lien,Software & Technology,,,,,,,,414,6000,6000,3.73%,6000,,,,,,PFX,2025-12-12,PFX,2025-12-12
-Staples,co_2f61cd7ec988,First Lien,Business Services,5.75%,,,,,,2029-09-01,3960,3831,3742,2.33%,3831,,,,,,PFX,2025-12-12,PFX,2025-12-12
-Staples Inc.,co_2f61cd7ec988,First Lien,Business Services,,,,,,,,3960,3831,3742,2.33%,3831,,,,,,PFX,2025-12-12,PFX,2025-12-12
+Staples,co_2f61cd7ec988,First Lien,Consumer & Retail,5.75%,,,,,,2029-09-01,3960,3831,3742,2.33%,3831,,,,,,PFX,2025-12-12,PFX,2025-12-12
+Staples Inc.,co_2f61cd7ec988,First Lien,Consumer & Retail,,,,,,,,3960,3831,3742,2.33%,3831,,,,,,PFX,2025-12-12,PFX,2025-12-12
 Tamarix Capital Partners II LP. - Banking - Fund Investment,co_289ee6c4c181,Other,Financial Services,,,,,,,,,2194,2227,1.39%,2194,,,,,,PFX,2025-12-12,PFX,2025-12-12
 Tamarix Capital Partners II LP.,co_f9c2dbefcf51,Other,Financial Services,,,,,,,,,2194,2227,1.39%,2194,,,,,,PFX,2025-12-12,PFX,2025-12-12
 Thryv Holdings,co_f15d2fafb73c,First Lien,Media & Entertainment,6.75%,,,,,,2029-05-01,2025,2009,2028,1.26%,2009,,,,,,PFX,2025-12-12,PFX,2025-12-12
 Thryv Holdings Inc.,co_f15d2fafb73c,First Lien,Media & Entertainment,,,,,,,,2025,2009,2028,1.26%,2009,,,,,,PFX,2025-12-12,PFX,2025-12-12
-WHI Global,co_a4f896cd2fcb,Revolver,,,,,,,,2029-04-17,884,863,876,0.54%,863,,,,,,PFX,2025-12-12,PFX,2025-12-12
-WHI Global,co_a4f896cd2fcb,First Lien,,8.75%,,,,,,2029-04-17,12370,12257,12259,7.62%,12257,,,,,,PFX,2025-12-12,PFX,2025-12-12
+WHI Global,co_180ace4605fa,Revolver,Aerospace & Defense,,,,,,,2029-04-17,884,863,876,0.54%,863,,,,,,PFX,2025-12-12,PFX,2025-12-12
+WHI Global,co_180ace4605fa,First Lien,Aerospace & Defense,8.75%,,,,,,2029-04-17,12370,12257,12259,7.62%,12257,,,,,,PFX,2025-12-12,PFX,2025-12-12
 Wingman Holdings,co_fcdfc8ad3717,Revolver,Aerospace & Defense,,,,,,,,0,700,483,0.3%,700,,,,,,PFX,2025-12-12,PFX,2025-12-12
 Wingman Holdings Inc.,co_fcdfc8ad3717,First Lien,Aerospace & Defense,,,,,,,,13254,13820,13618,8.46%,13820,,,,,,PFX,2025-12-12,PFX,2025-12-12
 XYZ Roofco,co_b5826626974a,First Lien,Consumer & Retail,3.5%,,,,,,2028-10-16,619,623,619,0.38%,623,,,,,,PFX,2025-12-12,PFX,2025-12-12

@@ -1,8 +1,8 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
 24 Seven Holdco LLC,co_d0b2568f8a44,First Lien,,11.42%,,SOFR,6%,,,,8798,8755,8474,5.7%,8755,,,,,,OFS,2024-05-03
 Advantage Sales & Marketing Inc.,co_a4cfeab36ed5,First Lien,Business Services,10.09%,,SOFR,4.5%,,,,2254,2233,2261,1.5%,2233,,,,,,OFS,2024-05-03
-AIDC IntermediateCo 2 LLC,co_f1d4b16a7d87,First Lien,Media & Entertainment,11.72%,,SOFR,6.25%,,,,1975,1946,1994,1.3%,1946,,,,,,OFS,2024-05-03
-AIDC IntermediateCo 2 LLC,co_f1d4b16a7d87,First Lien,Media & Entertainment,11.71%,,SOFR,6.25%,,,,46,45,46,0%,45,,,,,,OFS,2024-05-03
+AIDC IntermediateCo 2 LLC,co_257c6d0bc393,First Lien,Media & Entertainment,11.72%,,SOFR,6.25%,,,,1975,1946,1994,1.3%,1946,,,,,,OFS,2024-05-03
+AIDC IntermediateCo 2 LLC,co_257c6d0bc393,First Lien,Media & Entertainment,11.71%,,SOFR,6.25%,,,,46,45,46,0%,45,,,,,,OFS,2024-05-03
 Allen Media LLC,co_d4aff8afc078,First Lien,Media & Entertainment,10.96%,,SOFR,5.5%,,,,3720,3717,3260,2.2%,3717,,,,,,OFS,2024-05-03
 All Star Auto Lights Inc.,co_97025e83445f,First Lien,$,11.09%,,SOFR,5.5%,,,,22801,22683,22801,15.4%,22683,,,,,,OFS,2024-05-03
 All Star Auto Lights Inc.,co_97025e83445f,First Lien,$,11.09%,,SOFR,5.5%,,,,4913,4868,4913,3.3%,4868,,,,,,OFS,2024-05-03
@@ -23,14 +23,14 @@ Clevertech Bidco LLC,co_0e5e98d62a41,First Lien,Other,12.21%,,SOFR,6.75%,,,,3190
 Clevertech Bidco LLC,co_0e5e98d62a41,Revolver,Other,,,SOFR,6.75%,,,,0,-8,-5,0%,-8,294,,,,,OFS,2024-05-03
 Constellis Holdings LLC,co_913a725def51,Common Equity,Industrials,,,,,,,,,703,45,0%,703,,,,20628,,OFS,2024-05-03
 Convergint Technologies Holdings LLC,co_f8b810e89d3d,First Lien,,12.19%,,SOFR,6.75%,,,,5938,5867,5938,4%,5867,,,,,,OFS,2024-05-03
-Creation Technologies,co_75bd626d7b92,First Lien,,11.09%,,SOFR,5.5%,,,,1965,1955,1881,1.3%,1955,,,,,,OFS,2024-05-03
+Creation Technologies,co_75bd626d7b92,First Lien,Software & Technology,11.09%,,SOFR,5.5%,,,,1965,1955,1881,1.3%,1955,,,,,,OFS,2024-05-03
 Diamond Sports Group LLC,co_9576d2b6f7e3,Second Lien,Media & Entertainment,10.68%,,SOFR,5.25%,,,,1935,1935,56,0%,1935,,,,,fair_value_suspicious_vs_size,OFS,2024-05-03
 East West Manufacturing,co_b8ffa874c0db,First Lien,Industrials,11.06%,,SOFR,5.75%,,,,1925,1912,1879,1.3%,1912,,,,,,OFS,2024-05-03
 Electrical Components International Inc.,co_a8a08da95bc1,Second Lien,Industrials,13.93%,,SOFR,8.5%,,,,3679,3474,3576,2.4%,3474,,,,,,OFS,2024-05-03
-Envocore Holding LLC,co_d2d043c0b44e,First Lien,Industrials,7.5%,,,,,,,6279,6279,6279,4.2%,6279,,,,,,OFS,2024-05-03
-Envocore Holding LLC,co_d2d043c0b44e,Revolver,Industrials,7.5%,,,,,,,899,899,899,0.6%,899,1670,,,,,OFS,2024-05-03
-Envocore Holding LLC,co_d2d043c0b44e,Second Lien,Industrials,,10%,,,,,,8042,6585,2595,1.7%,6585,,,,,,OFS,2024-05-03
-Envocore Holding LLC,co_d2d043c0b44e,Other Equity,Industrials,,,,,,,,,4722,0,0%,4722,,,,,,OFS,2024-05-03
+Envocore Holding LLC,co_3f436c75855b,First Lien,Industrials,7.5%,,,,,,,6279,6279,6279,4.2%,6279,,,,,,OFS,2024-05-03
+Envocore Holding LLC,co_3f436c75855b,Revolver,Industrials,7.5%,,,,,,,899,899,899,0.6%,899,1670,,,,,OFS,2024-05-03
+Envocore Holding LLC,co_3f436c75855b,Second Lien,Industrials,,10%,,,,,,8042,6585,2595,1.7%,6585,,,,,,OFS,2024-05-03
+Envocore Holding LLC,co_3f436c75855b,Other Equity,Industrials,,,,,,,,,4722,0,0%,4722,,,,,,OFS,2024-05-03
 Excelin Home Health LLC,co_7684ce21e99c,Second Lien,,,18%,,,,,,5157,5074,4270,2.9%,5074,,,,,,OFS,2024-05-03
 Flow Service Partners Management LLC,co_a6ce013753d3,First Lien,Business Services,11.99%,,SOFR,6.5%,,,,3491,3456,3456,2.3%,3456,,,,,,OFS,2024-05-03
 Flow Service Partners Management LLC,co_a6ce013753d3,First Lien,Business Services,11.97%,,SOFR,6.5%,,,,635,629,629,0.4%,629,,,,,,OFS,2024-05-03
@@ -74,9 +74,9 @@ SSJA Bariatric Management LLC,co_2d7fd71ec649,First Lien,Business Services,10.71
 SSJA Bariatric Management LLC,co_2d7fd71ec649,First Lien,Business Services,10.71%,,SOFR,5.25%,,,,1035,1033,689,0.5%,1033,,,,,,OFS,2024-05-03
 SSJA Bariatric Management LLC,co_2d7fd71ec649,First Lien,Business Services,10.71%,,SOFR,5.25%,,,,2607,2600,1736,1.2%,2600,,,,,,OFS,2024-05-03
 SSJA Bariatric Management LLC,co_2d7fd71ec649,Revolver,Business Services,10.71%,,SOFR,5.25%,,,,267,266,44,0%,266,400,,,,,OFS,2024-05-03
-SS Acquisition LLC,co_8012581319ca,First Lien,Education,12.33%,,SOFR,6.74%,,,,3042,3025,3042,2%,3025,,,,,,OFS,2024-05-03
-SS Acquisition LLC,co_8012581319ca,First Lien,Education,13.03%,,SOFR,7.59%,,,,1460,1450,1460,1%,1450,,,,,,OFS,2024-05-03
-Staples Inc.,co_2f61cd7ec988,First Lien,Business Services,10.44%,,SOFR,5%,,,,2862,2837,2840,1.9%,2837,,,,,,OFS,2024-05-03
+SS Acquisition LLC,co_8012581319ca,First Lien,Consumer & Retail,12.33%,,SOFR,6.74%,,,,3042,3025,3042,2%,3025,,,,,,OFS,2024-05-03
+SS Acquisition LLC,co_8012581319ca,First Lien,Consumer & Retail,13.03%,,SOFR,7.59%,,,,1460,1450,1460,1%,1450,,,,,,OFS,2024-05-03
+Staples Inc.,co_2f61cd7ec988,First Lien,Consumer & Retail,10.44%,,SOFR,5%,,,,2862,2837,2840,1.9%,2837,,,,,,OFS,2024-05-03
 Tolemar Acquisition INC.,co_a4097ce99da6,First Lien,Financial Services,11.43%,,SOFR,6%,,,,15308,15269,14283,9.6%,15269,,,,,,OFS,2024-05-03
 Tolemar Acquisition INC.,co_a4097ce99da6,Revolver,Financial Services,11.43%,,SOFR,6%,,,,592,585,419,0.3%,585,,,,,,OFS,2024-05-03
 TruGreen LP,co_2094298d8fe3,Second Lien,Consumer & Retail,14.07%,,SOFR,8.5%,,,,4500,4587,4316,2.9%,4587,,,,,,OFS,2024-05-03
@@ -102,7 +102,7 @@ Octagon Investment Partners 39 Ltd.,co_d105f9545d12,Subordinated Debt,Financial 
 Park Avenue Institutional Advisers CLO Ltd.,co_affc1cd5dcd2,Subordinated Debt,,12.88%,,SOFR,7.3%,,,,1000,983,1003,0.7%,983,,,,,,OFS,2024-05-03
 Redding Ridge 4 Ltd.,co_3f3d8516c759,Subordinated Debt,,4.64%,,,,,,,1300,864,518,0.3%,864,,,,,,OFS,2024-05-03
 Regatta XXII Funding Ltd.,co_dea9d86766c4,Subordinated Debt,,12.51%,,SOFR,7.19%,,,,3000,2978,3038,2%,2978,,,,,,OFS,2024-05-03
-THL Credit Wind River 2019‐3 CLO Ltd.,co_f5c5bcbd5a1b,Subordinated Debt,Automotive,10.01%,,,,,,,7000,4701,2620,1.8%,4701,,,,,,OFS,2024-05-03
+THL Credit Wind River 2019‐3 CLO Ltd.,co_b591757e3d10,Subordinated Debt,Automotive,10.01%,,,,,,,7000,4701,2620,1.8%,4701,,,,,,OFS,2024-05-03
 Trinitas CLO VIII,co_977598bc6e6c,Subordinated Debt,,7.33%,,,,,,,5200,2748,1267,0.9%,2748,,,,,,OFS,2024-05-03
 Venture 45 CLO Ltd.,co_9b2904204ebf,Subordinated Debt,,13.02%,,SOFR,7.7%,,,,3000,2945,2670,1.8%,2945,,,,,,OFS,2024-05-03
 Wellfleet CLO 2018-2 Ltd.,co_623ba8195bcb,Subordinated Debt,Transportation & Logistics,7.33%,,,,,,,1000,608,257,0.2%,608,,,,,,OFS,2024-05-03

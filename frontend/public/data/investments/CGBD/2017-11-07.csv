@@ -1,5 +1,5 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,data_quality_flags,ticker,filing_date
-Acrisure LLC,co_e1742a466713,First Lien,Financial Services,8.5%,,SOFR,5.0%,,2024-07-01,15000000,14985000,15000000,1.5,15000000,,,,CGBD,2017-11-07
+Acrisure LLC,co_0a85c2baab83,First Lien,Financial Services,8.5%,,SOFR,5.0%,,2024-07-01,15000000,14985000,15000000,1.5,15000000,,,,CGBD,2017-11-07
 Advanced Instruments LLC,co_e8aac0d807bc,First Lien,Automotive,9.0%,,SOFR,5.25%,,2025-01-15,10000000,9980000,10000000,1.0,10000000,,,,CGBD,2017-11-07
 Alpha Packaging Holdings Inc.,co_6693df9b850c,First Lien,Industrials,8.75%,,SOFR,5.0%,,2026-03-01,12000000,11970000,12000000,1.2,12000000,,,,CGBD,2017-11-07
 AM Conservation Holding Corp.,co_5a4adeeb8303,First Lien,Consumer & Retail,9.25%,,SOFR,5.5%,,2025-05-01,8000000,7976000,8000000,0.8,8000000,,,,CGBD,2017-11-07
@@ -24,9 +24,9 @@ Jensen Hughes Inc.,co_0ac1e52db096,First Lien,Business Services,9.25%,,SOFR,5.5%
 Kestra Financial Inc.,co_514539915e6c,First Lien,Financial Services,8.5%,,SOFR,4.75%,,2028-04-01,19000000,18945000,19000000,1.9,19000000,,,,CGBD,2017-11-07
 MSHC Inc.,co_44446a10df04,First Lien,Automotive,9.0%,,SOFR,5.25%,,2025-12-01,5500000,5482500,5500000,0.55,5500000,,,,CGBD,2017-11-07
 North American Dental Management LLC,co_22db76b409eb,First Lien,Automotive,8.75%,,SOFR,5.0%,,2026-09-01,8200000,8181000,8200000,0.82,8200000,,,,CGBD,2017-11-07
-PAI Holdco Inc.,co_8c077c01e835,First Lien,Automotive,9.25%,,SOFR,5.5%,,2027-09-01,7800000,7761000,7800000,0.78,7800000,,,,CGBD,2017-11-07
+PAI Holdco Inc.,co_7008c3ee0dda,First Lien,Automotive,9.25%,,SOFR,5.5%,,2027-09-01,7800000,7761000,7800000,0.78,7800000,,,,CGBD,2017-11-07
 Paradigm Acquisition Corp.,co_92bb24af2c9b,First Lien,Software & Technology,8.5%,,SOFR,4.75%,,2028-06-01,17000000,16941000,17000000,1.7,17000000,,,,CGBD,2017-11-07
-Acrisure LLC,co_e1742a466713,First Lien,Financial Services,,,,,,,10000000,9950000,10000000,1.0,,,,,CGBD,2017-11-07
+Acrisure LLC,co_0a85c2baab83,First Lien,Financial Services,,,,,,,10000000,9950000,10000000,1.0,,,,,CGBD,2017-11-07
 Advanced Instruments LLC,co_e8aac0d807bc,First Lien,Automotive,,,,,,,15000000,14925000,15000000,1.5,,,,,CGBD,2017-11-07
 Alpha Packaging Holdings Inc.,co_6693df9b850c,First Lien,Industrials,,,,,,,12000000,11940000,12000000,1.2,,,,,CGBD,2017-11-07
 AM Conservation Holding Corp.,co_5a4adeeb8303,First Lien,Energy,,,,,,,5000000,4975000,5000000,0.5,,,,,CGBD,2017-11-07
@@ -51,7 +51,7 @@ Jensen Hughes Inc.,co_0ac1e52db096,First Lien,Business Services,,,,,,,15000000,1
 Kestra Financial Inc.,co_514539915e6c,First Lien,Financial Services,,,,,,,19000000,18810000,19000000,1.9,,,,,CGBD,2017-11-07
 MSHC Inc.,co_44446a10df04,First Lien,Automotive,,,,,,,5500000,5445000,5500000,0.55,,,,,CGBD,2017-11-07
 North American Dental Management LLC,co_22db76b409eb,First Lien,Automotive,,,,,,,8200000,8118000,8200000,0.82,,,,,CGBD,2017-11-07
-PAI Holdco Inc.,co_8c077c01e835,First Lien,Automotive,,,,,,,7800000,7722000,7800000,0.78,,,,,CGBD,2017-11-07
+PAI Holdco Inc.,co_7008c3ee0dda,First Lien,Automotive,,,,,,,7800000,7722000,7800000,0.78,,,,,CGBD,2017-11-07
 Paradigm Acquisition Corp.,co_92bb24af2c9b,First Lien,Software & Technology,,,,,,,17000000,16830000,17000000,1.7,,,,,CGBD,2017-11-07
 Access CIG LLC,co_88ccabd99a44,First Lien,Business Services,,,LIBOR,5.00%,,2021-10-17,18195,,18096,,18195,,,,CGBD,2017-11-07
 Achilles Acquisition LLC,co_615d333c037d,First Lien,Financial Services,,,LIBOR,6.00%,,2023-06-06,38657,37586,38209,,38657,,,,CGBD,2017-11-07
@@ -94,7 +94,7 @@ Generation Brands Holdings Inc.,co_d58b4d6fc20c,First Lien,Consumer & Retail,,,,
 Jensen Hughes Inc.,co_0ac1e52db096,First Lien,Business Services,,,,,,2023-09-18,18000,17500,18000,,18000,,,,CGBD,2017-11-07
 Kestra Financial Inc.,co_514539915e6c,First Lien,Financial Services,,,,,,2023-09-18,22000,21500,22000,,22000,,,,CGBD,2017-11-07
 MSHC Inc.,co_44446a10df04,First Lien,Automotive,,,,,,2023-09-18,16000,15800,16000,,16000,,,,CGBD,2017-11-07
-PAI Holdco Inc.,co_8c077c01e835,First Lien,Automotive,,,,,,2023-09-18,25000,24500,25000,,25000,,,,CGBD,2017-11-07
+PAI Holdco Inc.,co_7008c3ee0dda,First Lien,Automotive,,,,,,2023-09-18,25000,24500,25000,,25000,,,,CGBD,2017-11-07
 Pasternack Enterprises Inc.,co_db43a234ab56,First Lien,Telecommunications,,,,,,2023-09-18,13000,12800,13000,,13000,,,,CGBD,2017-11-07
 Q Holding Company,co_a9c586002368,First Lien,Industrials,,,,,,2023-09-18,11000,10800,11000,,11000,,,,CGBD,2017-11-07
 QW Holding Corp.,co_70351f8f3641,First Lien,Business Services,,,,,,2023-09-18,19000,18500,19000,,19000,,,,CGBD,2017-11-07
@@ -120,7 +120,7 @@ Generation Brands Holdings Inc.,co_d58b4d6fc20c,First Lien,Consumer & Retail,,,,
 Jensen Hughes Inc.,co_0ac1e52db096,First Lien,Business Services,,,,,,,,,28000,27500,28000,2.8,,,CGBD,2017-11-07
 Kestra Financial Inc.,co_514539915e6c,First Lien,Financial Services,,,,,,,,,26000,25500,26000,2.6,,,CGBD,2017-11-07
 MSHC Inc.,co_44446a10df04,First Lien,Automotive,,,,,,,,,19000,18500,19000,1.9,,,CGBD,2017-11-07
-PAI Holdco Inc.,co_8c077c01e835,First Lien,Automotive,,,,,,,,,23000,22500,23000,2.3,,,CGBD,2017-11-07
+PAI Holdco Inc.,co_7008c3ee0dda,First Lien,Automotive,,,,,,,,,23000,22500,23000,2.3,,,CGBD,2017-11-07
 Pasternack Enterprises Inc.,co_db43a234ab56,First Lien,Telecommunications,,,,,,,,,17000,16800,17000,1.7,,,CGBD,2017-11-07
 Q Holding Company,co_a9c586002368,First Lien,Industrials,,,,,,,,,21000,20500,21000,2.1,,,CGBD,2017-11-07
 QW Holding Corp.,co_70351f8f3641,First Lien,Automotive,,,,,,,,,24000,23500,24000,2.4,,,CGBD,2017-11-07
@@ -158,12 +158,12 @@ EP Minerals LLC,co_3003c7f7845b,First Lien,Chemicals & Materials,,,LIBOR,4.50%,,
 FCX Holdings Corp.,co_26738e38dae0,First Lien,Industrials,,,LIBOR,4.50%,,2020-08-04,9856,9852,9856,,,,,,CGBD,2017-11-07
 Genex Holdings Inc.,co_c699483302cb,First Lien,Financial Services,,,LIBOR,4.25%,,2021-05-30,4200,4187,4196,,,,,,CGBD,2017-11-07
 Global Software LLC,co_7a4a6a718433,First Lien,Software & Technology,,,LIBOR,5.50%,,2022-05-02,16163,15880,16163,,,,,,CGBD,2017-11-07
-Green Energy Partners Stonewall LLC,co_2f3b4c5c2af3,First Lien,Energy,,,LIBOR,5.50%,,2021-11-13,16600,16475,16598,,,,,,CGBD,2017-11-07
+Green Energy Partners Stonewall LLC,co_f10d2ff30081,First Lien,Energy,,,LIBOR,5.50%,,2021-11-13,16600,16475,16598,,,,,,CGBD,2017-11-07
 Green Plains II LLC,co_c6c654538ca2,First Lien,Food & Beverage,,,LIBOR,7.00%,,2022-10-03,15205,15059,15379,,,,,,CGBD,2017-11-07
 FWR Holding Corp.,co_fdc8a239ac0f,First Lien,Food & Beverage,6.00%,,LIBOR,6.00%,,2023-08-21,35666,34444,34444,,,,,,CGBD,2017-11-07
 Global Franchise Group LLC,co_89e1855c0ff1,First Lien,Food & Beverage,5.75%,,LIBOR,5.75%,,2019-12-18,14505,14366,14463,,,,,,CGBD,2017-11-07
 Global Software LLC,co_7a4a6a718433,First Lien,Software & Technology,5.25%,,LIBOR,5.25%,,2022-05-02,20884,20548,20776,,,,,,CGBD,2017-11-07
-Green Energy Partners Stonewall LLC,co_2f3b4c5c2af3,First Lien,Energy,5.50%,,LIBOR,5.50%,,2021-11-13,20000,19653,18652,,,,,,CGBD,2017-11-07
+Green Energy Partners Stonewall LLC,co_f10d2ff30081,First Lien,Energy,5.50%,,LIBOR,5.50%,,2021-11-13,20000,19653,18652,,,,,,CGBD,2017-11-07
 Hummel Station LLC,co_daa96a7ce6d8,First Lien,Energy,6.00%,,LIBOR,6.00%,,2022-10-27,25000,24035,22938,,,,,,CGBD,2017-11-07
 Hydrofarm LLC,co_997e5ae29b8b,First Lien,Agriculture,7.00%,,LIBOR,7.00%,,2022-05-12,18881,18718,18851,,,,,,CGBD,2017-11-07
 Indra Holdings Corp.,co_6c4c692ca894,First Lien,Consumer & Retail,4.25%,,LIBOR,4.25%,,2021-05-01,18965,17138,11411,,,,,,CGBD,2017-11-07
@@ -172,7 +172,7 @@ Legacy.com Inc.,co_c061c508a013,First Lien,Financial Services,6.00%,,LIBOR,6.00%
 Metrogistics LLC,co_d4cf3af4b01c,First Lien,Transportation & Logistics,6.50%,,LIBOR,6.50%,,2022-09-30,16681,16491,16625,,,,,,CGBD,2017-11-07
 National Technical Systems Inc.,co_207ef1759f5d,First Lien,Aerospace & Defense,6.25%,,LIBOR,6.25%,,2021-06-12,26351,26056,25554,,,,,,CGBD,2017-11-07
 NES Global Talent Finance US LLC,co_1536c8a15051,First Lien,Energy,5.50%,,LIBOR,5.50%,,2019-10-03,13800,13636,13296,,,,,,CGBD,2017-11-07
-NMI AcquisitionCo Inc.,co_ea8330f4ea6d,First Lien,Software & Technology,5.75%,,Prime,5.75%,,2022-09-06,51220,50196,50590,,,,,,CGBD,2017-11-07
+NMI AcquisitionCo Inc.,co_31f14111603a,First Lien,Financial Services,5.75%,,Prime,5.75%,,2022-09-06,51220,50196,50590,,,,,,CGBD,2017-11-07
 OnCourse Learning Corp.,co_b02155079c4e,First Lien,Education,6.50%,,LIBOR,6.50%,,2021-09-12,30411,30076,30198,,,,,,CGBD,2017-11-07
 Paradigm Acquisition Corp.,co_92bb24af2c9b,First Lien,Business Services,5.00%,,LIBOR,5.00%,,2022-06-02,15461,15339,15461,,,,,,CGBD,2017-11-07
 Payment Alliance International Inc.,co_22686e656026,First Lien,Business Services,6.05%,,LIBOR,6.05%,,2021-09-15,26544,25952,26287,,,,,,CGBD,2017-11-07
@@ -233,17 +233,17 @@ W/S Packaging Group Inc.,co_343605544758,First Lien,Containers & Packaging,5.00%
 Watchfire Enterprises Inc.,co_341a359bada5,First Lien,Media & Entertainment,4.00%,,LIBOR,4.00%,,2020-10-02,1362,1350,1362,,,,,,CGBD,2017-11-07
 Winchester Electronics Corp.,co_74146ddcfc49,First Lien,Software & Technology,6.50%,,LIBOR,6.50%,,2022-06-30,31688,31412,32021,,,,,,CGBD,2017-11-07
 Zest Holdings LLC,co_931686caf6aa,First Lien,Consumer & Retail,4.25%,,LIBOR,4.25%,,2023-08-16,3440,3432,3465,,,,,,CGBD,2017-11-07
-Acrisure LLC,co_e1742a466713,Second Lien,Financial Services,9.25%,,LIBOR,9.25%,,2024-11-22,33750,32884,33750,,,,,,CGBD,2017-11-07
+Acrisure LLC,co_0a85c2baab83,Second Lien,Financial Services,9.25%,,LIBOR,9.25%,,2024-11-22,33750,32884,33750,,,,,,CGBD,2017-11-07
 AIM Group USA Inc.,co_eff701f04b2e,Second Lien,Aerospace & Defense,9.00%,,LIBOR,9.00%,,2022-08-02,23000,22728,22830,,,,,,CGBD,2017-11-07
 AmeriLife Group LLC,co_91db85e5a7d9,Second Lien,Financial Services,8.75%,,LIBOR,8.75%,,2023-01-10,22000,21638,21723,,,,,,CGBD,2017-11-07
 Argon Medical Devices Inc.,co_96d65e7a5892,Second Lien,Healthcare,9.50%,,LIBOR,9.50%,,2022-06-23,25000,24431,25000,,,,,,CGBD,2017-11-07
-Berlin Packaging LLC,co_7243fe49b647,Second Lien,Containers & Packaging,6.75%,,LIBOR,6.75%,,2022-10-01,3500,3487,3500,,,,,,CGBD,2017-11-07
+Berlin Packaging LLC,co_21949e12aa37,Second Lien,Containers & Packaging,6.75%,,LIBOR,6.75%,,2022-10-01,3500,3487,3500,,,,,,CGBD,2017-11-07
 Confie Seguros Holding II Co.,co_59f158d3c9d6,Second Lien,Financial Services,10.00%,,LIBOR,10.00%,,2019-05-08,9000,8954,8798,,,,,,CGBD,2017-11-07
 Drew Marine Group Inc.,co_5b35590aab0b,Second Lien,Chemicals & Materials,7.00%,,LIBOR,7.00%,,2021-05-19,12500,12483,12469,,,,,,CGBD,2017-11-07
 Q Holding Company,co_a9c586002368,First Lien,Industrials,8.5%,,LIBOR,8.5%,,2024-01-10,10000,9800,10000,1.0,,,,,CGBD,2017-11-07
 QW Holding Corp.,co_70351f8f3641,First Lien,Environmental Services,8.5%,,LIBOR,8.5%,,2024-01-10,15000,14700,15000,1.5,,,,,CGBD,2017-11-07
 Restaurant Technologies Inc.,co_95998851ece8,First Lien,Food & Beverage,8.5%,,LIBOR,8.5%,,2024-01-10,20000,19600,20000,2.0,,,,,CGBD,2017-11-07
-Sovos Brands Intermediate Inc.,co_5e20ef1a7fb3,First Lien,Food & Beverage,8.5%,,LIBOR,8.5%,,2024-01-10,25000,24500,25000,2.5,,,,,CGBD,2017-11-07
+Sovos Brands Intermediate Inc.,co_9599ca134b53,First Lien,Food & Beverage,8.5%,,LIBOR,8.5%,,2024-01-10,25000,24500,25000,2.5,,,,,CGBD,2017-11-07
 Superion LLC,co_8e3df5ce63e3,First Lien,Software & Technology,8.5%,,LIBOR,8.5%,,2024-01-10,30000,29400,30000,3.0,,,,,CGBD,2017-11-07
 Surgical Information Systems LLC,co_b5b4c6e145e2,First Lien,Automotive,8.5%,,LIBOR,8.5%,,2024-01-10,35000,34300,35000,3.5,,,,,CGBD,2017-11-07
 Systems Maintenance Services Holding Inc.,co_87c24a36fa6d,First Lien,Industrials,8.5%,,LIBOR,8.5%,,2024-01-10,40000,39200,40000,4.0,,,,,CGBD,2017-11-07
@@ -305,7 +305,7 @@ North American Dental Management LLC,co_22db76b409eb,Revolver,Automotive,0.50%,,
 PSI Services LLC,co_7df725c64066,Revolver,Business Services,0.50%,,N/A,,,,,,,,226,,,,CGBD,2017-11-07
 QW Holding Corp.,co_70351f8f3641,Delayed Draw,Automotive,1.00%,,N/A,,,,,,,,7515,,,,CGBD,2017-11-07
 QW Holding Corp.,co_70351f8f3641,Revolver,Automotive,0.50%,,N/A,,,,,,,,4948,,,,CGBD,2017-11-07
-Sovos Brands Intermediate Inc.,co_5e20ef1a7fb3,Revolver,Food & Beverage,0.50%,,N/A,,,,,,,,3378,,,,CGBD,2017-11-07
+Sovos Brands Intermediate Inc.,co_9599ca134b53,Revolver,Food & Beverage,0.50%,,N/A,,,,,,,,3378,,,,CGBD,2017-11-07
 T2 Systems Inc.,co_84be020570c7,Revolver,Software & Technology,0.50%,,N/A,,,,,,,,1173,,,,CGBD,2017-11-07
 Teaching Strategies LLC,co_6ca1cf69d26e,Revolver,Software & Technology,0.50%,,N/A,,,,,,,,1900,,,,CGBD,2017-11-07
 The Original Cakerie Ltd.,co_a7f0f2dcca36,Revolver,Food & Beverage,0.50%,,N/A,,,,,,,,1665,,,,CGBD,2017-11-07
@@ -315,7 +315,7 @@ WRE Holding Corp.,co_5b5c0afc5d70,Delayed Draw,Real Estate,1.00%,,N/A,,,,,,,,412
 WRE Holding Corp.,co_5b5c0afc5d70,Revolver,Real Estate,0.50%,,N/A,,,,,,,,823,,,,CGBD,2017-11-07
 Zywave Inc.,co_cf8763f0fd26,Revolver,Software & Technology,0.50%,,N/A,,,,,,,,1500,,,,CGBD,2017-11-07
 Achilles Acquisition LLC,co_615d333c037d,Delayed Draw,Financial Services,1.00%,,,,2017-11-07,,,,4392,,,,,,CGBD,2017-11-07
-Acrisure LLC,co_e1742a466713,Delayed Draw,Financial Services,1.50%,,,,2017-11-07,,,,11250,,,,,,CGBD,2017-11-07
+Acrisure LLC,co_0a85c2baab83,Delayed Draw,Financial Services,1.50%,,,,2017-11-07,,,,11250,,,,,,CGBD,2017-11-07
 Advanced Instruments LLC,co_e8aac0d807bc,Revolver,Healthcare,0.50%,,,,2017-11-07,,,,1167,,,,,,CGBD,2017-11-07
 AMS Group HoldCo LLC,co_84b27961d01b,Delayed Draw,Transportation & Logistics,1.00%,,,,2017-11-07,,,,5491,,,,,,CGBD,2017-11-07
 AMS Group HoldCo LLC,co_84b27961d01b,Revolver,Transportation & Logistics,0.50%,,,,2017-11-07,,,,2315,,,,,,CGBD,2017-11-07
@@ -334,7 +334,7 @@ FWR Holding Corp.,co_fdc8a239ac0f,Delayed Draw,Food & Beverage,1.00%,,,,2017-11-
 FWR Holding Corp.,co_fdc8a239ac0f,Revolver,Food & Beverage,0.50%,,,,2017-11-07,,,,3221,,,,,,CGBD,2017-11-07
 Global Franchise Group LLC,co_89e1855c0ff1,Revolver,Food & Beverage,0.50%,,,,2017-11-07,,,,495,,,,,,CGBD,2017-11-07
 National Technical Systems Inc.,co_207ef1759f5d,Revolver,Aerospace & Defense,0.50%,,,,2017-11-07,,,,2500,,,,,,CGBD,2017-11-07
-NMI AcquisitionCo Inc.,co_ea8330f4ea6d,Revolver,Software & Technology,0.50%,,,,2017-11-07,,,,1280,,,,,,CGBD,2017-11-07
+NMI AcquisitionCo Inc.,co_31f14111603a,Revolver,Financial Services,0.50%,,,,2017-11-07,,,,1280,,,,,,CGBD,2017-11-07
 OnCourse Learning Corp.,co_b02155079c4e,Revolver,Education,0.50%,,,,2017-11-07,,,,954,,,,,,CGBD,2017-11-07
 PMG Acquisition Corp.,co_a9ec37beb676,Revolver,Healthcare,0.50%,,,,2017-11-07,,,,2356,,,,,,CGBD,2017-11-07
 Prime Risk Partners Inc.,co_64b52a70683a,Delayed Draw,Financial Services,0.50%,,,,2017-11-07,,,,863,,,,,,CGBD,2017-11-07
@@ -384,9 +384,9 @@ Zywave Inc.,co_cf8763f0fd26,Second Lien,Software & Technology,L + 9.00%,,LIBOR,9
 CGBD Funding LLC,co_3855a1a9dd61,First Lien,Automotive,8.5%,,SOFR,5.0%,2017-05-17,2024-05-17,25000000,24987500,25000000,1.6,24987500,,,,CGBD,2017-11-07
 CGBD Funding LLC,co_3855a1a9dd61,First Lien,Financial Services,,,,,,,,827857,827857,827857,6.63,,,cost_suspicious_vs_size,CGBD,2017-11-07
 TwentyEighty Inc-Revolver,co_6ade69d7c02c,First Lien,Business Services,,,,,SOFR,8.00%,,2020-03-21,,,,,,type_hint_revolver_from_name,CGBD,2017-11-07
-TwentyEighty Inc-Term A Loans,co_0c8cd7eefbed,First Lien,Business Services,3.50%,4.50%,SOFR,3.50%,,2020-03-21,3859,3839,3735,,,,,,CGBD,2017-11-07
-TwentyEighty Inc-Term B Loans,co_0c8cd7eefbed,First Lien,Business Services,,7.00%,SOFR,1.00%,,2020-03-21,6598,6360,6149,,,,,,CGBD,2017-11-07
-TwentyEighty Inc-Term C Loans,co_0c8cd7eefbed,First Lien,Business Services,,8.75%,SOFR,0.25%,,2020-03-21,6380,5742,5084,,,,,,CGBD,2017-11-07
+TwentyEighty Inc-Term A Loans,co_9ee28c97f2ad,First Lien,Business Services,3.50%,4.50%,SOFR,3.50%,,2020-03-21,3859,3839,3735,,,,,,CGBD,2017-11-07
+TwentyEighty Inc-Term B Loans,co_9ee28c97f2ad,First Lien,Business Services,,7.00%,SOFR,1.00%,,2020-03-21,6598,6360,6149,,,,,,CGBD,2017-11-07
+TwentyEighty Inc-Term C Loans,co_9ee28c97f2ad,First Lien,Business Services,,8.75%,SOFR,0.25%,,2020-03-21,6380,5742,5084,,,,,,CGBD,2017-11-07
 Middle Market Credit Fund LLC,co_f17e3ce530d4,Other Debt,Financial Services,9.00%,,LIBOR,9.00%,,2018-06-24,,,112300,,112300,,,,CGBD,2017-11-07
 Middle Market Credit Fund LLC,co_f17e3ce530d4,Subordinated Debt,Financial Services,0.001%,,N/A,,2021-03-01,,,74501,,74501,,,,,CGBD,2017-11-07
 Middle Market Credit Fund LLC,co_f17e3ce530d4,Other Debt,Financial Services,9.5%,,LIBOR,9.5%,,2017-06-24,62384,,62384,,62384,,,,CGBD,2017-11-07
