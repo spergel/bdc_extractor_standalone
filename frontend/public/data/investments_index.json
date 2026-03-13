@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-09T20:53:55.561182Z",
+  "generated_at": "2026-03-13T16:25:20.078933Z",
   "total_tickers": 50,
-  "total_rows": 252214,
+  "total_rows": 254459,
   "tickers": {
     "ARCC": {
       "periods": [
@@ -216,7 +216,7 @@
       ],
       "latest": "2026-02-24",
       "row_count": 15383,
-      "file_size_mb": 1.73
+      "file_size_mb": 1.74
     },
     "CION": {
       "periods": [
@@ -290,8 +290,8 @@
         "2025-11-06"
       ],
       "latest": "2025-11-06",
-      "row_count": 2716,
-      "file_size_mb": 0.39
+      "row_count": 2707,
+      "file_size_mb": 0.31
     },
     "FSK": {
       "periods": [
@@ -304,11 +304,12 @@
         "2025-02-26",
         "2025-05-07",
         "2025-08-06",
-        "2025-11-05"
+        "2025-11-05",
+        "2026-02-25"
       ],
-      "latest": "2025-11-05",
-      "row_count": 11003,
-      "file_size_mb": 1.33
+      "latest": "2026-02-25",
+      "row_count": 12526,
+      "file_size_mb": 1.6
     },
     "GAIN": {
       "periods": [
@@ -351,6 +352,7 @@
     },
     "GECC": {
       "periods": [
+        "2023-03-02",
         "2023-05-04",
         "2023-08-03",
         "2023-11-02",
@@ -361,11 +363,12 @@
         "2025-03-10",
         "2025-05-05",
         "2025-08-04",
-        "2025-11-04"
+        "2025-11-04",
+        "2026-03-02"
       ],
-      "latest": "2025-11-04",
-      "row_count": 1250,
-      "file_size_mb": 0.14
+      "latest": "2026-03-02",
+      "row_count": 2320,
+      "file_size_mb": 0.4
     },
     "GLAD": {
       "periods": [
@@ -423,7 +426,7 @@
         "2026-02-26"
       ],
       "latest": "2026-02-26",
-      "row_count": 8657,
+      "row_count": 8578,
       "file_size_mb": 1.0
     },
     "HRZN": {
@@ -440,8 +443,8 @@
         "2026-03-03"
       ],
       "latest": "2026-03-03",
-      "row_count": 2524,
-      "file_size_mb": 0.3
+      "row_count": 2506,
+      "file_size_mb": 0.28
     },
     "HTGC": {
       "periods": [
@@ -489,8 +492,8 @@
         "2025-11-10"
       ],
       "latest": "2025-11-10",
-      "row_count": 2010,
-      "file_size_mb": 0.26
+      "row_count": 2003,
+      "file_size_mb": 0.25
     },
     "LIEN": {
       "periods": [
@@ -661,8 +664,8 @@
         "2025-11-07"
       ],
       "latest": "2025-11-07",
-      "row_count": 249,
-      "file_size_mb": 0.02
+      "row_count": 36,
+      "file_size_mb": 0.01
     },
     "NMFC": {
       "periods": [
@@ -697,8 +700,8 @@
         "2025-11-05"
       ],
       "latest": "2025-11-05",
-      "row_count": 11686,
-      "file_size_mb": 1.35
+      "row_count": 11664,
+      "file_size_mb": 1.33
     },
     "OCSL": {
       "periods": [

@@ -1,83 +1,83 @@
-company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,data_quality_flags,ticker,filing_date
-Answers Corp.,co_fe615be76a79,First Lien,Software & Technology,10.00%,,Prime,6.25%,,2021-10-01,2903,2819,1495,0.6,2819,,,,MRCC,2017-11-07
-BCC Software LLC,co_6e4618bcf54f,First Lien,Software & Technology,9.00%,,LIBOR,8.00%,,2019-06-20,2204,2186,2203,0.9,2186,,,,MRCC,2017-11-07
-BCC Software LLC,co_6e4618bcf54f,First Lien,Software & Technology,9.24%,,LIBOR,8.00%,,2019-06-20,3139,3109,3150,1.1,3109,,,,MRCC,2017-11-07
-BCC Software LLC,co_6e4618bcf54f,Revolver,Software & Technology,9.00%,,LIBOR,8.00%,,2019-06-20,469,,,0.0,,469,469,,MRCC,2017-11-07
-BCC Software LLC,co_6e4618bcf54f,Revolver,Software & Technology,9.24%,,LIBOR,8.00%,,2019-06-20,469,,,0.0,,469,469,,MRCC,2017-11-07
-Corbett Technology Solutions Inc.,co_4c5376227945,First Lien,Software & Technology,7.76%,,LIBOR,7.00%,,2021-11-07,4500,4434,4511,1.9,4434,,,,MRCC,2017-11-07
-Corbett Technology Solutions Inc.,co_4c5376227945,First Lien,Software & Technology,8.24%,,LIBOR,7.00%,,2021-11-07,4331,4276,4375,1.5,4276,,,,MRCC,2017-11-07
-Corbett Technology Solutions Inc.,co_4c5376227945,Revolver,Software & Technology,7.76%,,LIBOR,7.00%,,2021-11-07,867,,,0.0,,867,867,,MRCC,2017-11-07
-Corbett Technology Solutions Inc.,co_4c5376227945,Revolver,Software & Technology,8.24%,,LIBOR,7.00%,,2021-11-07,868,217,217,0.1,217,868,,,MRCC,2017-11-07
-BC Equity Ventures LLC,co_a7f6d74d4e01,First Lien,Food & Beverage,7.50%,,LIBOR,6.50%,,2022-08-31,2612,2562,2635,1.1,2562,,,,MRCC,2017-11-07
-BC Equity Ventures LLC,co_a7f6d74d4e01,First Lien,Food & Beverage,7.50%,,LIBOR,6.50%,,2022-08-31,375,372,373,0.2,372,,,,MRCC,2017-11-07
-Miles Media Group LLC,co_0dc8d98297e1,First Lien,Food & Beverage,10.00%,2.00%,LIBOR,11.00%,,2021-03-24,6110,6052,6119,2.5,6052,,,,MRCC,2017-11-07
-Miles Media Group LLC,co_0dc8d98297e1,Delayed Draw,Food & Beverage,10.00%,2.00%,LIBOR,11.00%,,2021-03-24,1455,,,0.0,,1455,1455,,MRCC,2017-11-07
-Edge Systems Holdings Corp.,co_03745eeff56a,Revolver,Healthcare,11.00%,,Prime,6.75%,,2021-12-01,260,31,31,0.0,31,260,,,MRCC,2017-11-07
-Familia Dental Group Holdings LLC,co_e66177915503,First Lien,Healthcare,9.24%,,LIBOR,8.00%,,2021-04-08,5294,5229,5336,1.9,5229,,,,MRCC,2017-11-07
-Familia Dental Group Holdings LLC,co_e66177915503,First Lien,Healthcare,9.24%,,LIBOR,8.00%,,2021-04-08,509,509,513,0.2,509,,,,MRCC,2017-11-07
-Familia Dental Group Holdings LLC,co_e66177915503,Revolver,Healthcare,9.24%,,LIBOR,8.00%,,2021-04-08,573,229,229,0.1,229,573,,,MRCC,2017-11-07
-Answers Finance LLC,co_da3abe234f07,First Lien,Software & Technology,6.24%,,LIBOR,5.00%,,2021-04-15,254,251,248,0.1,251,,,,MRCC,2017-11-07
-Cyalume Technologies Holdings Inc.,co_43c6798218f6,First Lien,Aerospace & Defense,10.00%,,LIBOR,9.00%,,2020-05-18,4291,4204,4462,1.9,4204,,,,MRCC,2017-11-07
-Cyalume Technologies Holdings Inc.,co_43c6798218f6,Delayed Draw,Aerospace & Defense,10.00%,,LIBOR,9.00%,,2020-05-18,387,387,402,0.2,387,387,0,,MRCC,2017-11-07
-Cyalume Technologies Holdings Inc.,co_43c6798218f6,Revolver,Aerospace & Defense,10.00%,,LIBOR,9.00%,,2020-05-18,1528,,,0.0,,1528,1528,,MRCC,2017-11-07
-Inteva Products LLC,co_b339f5a64e6b,First Lien,Automotive,9.75%,,LIBOR,8.50%,,2021-09-08,1978,1967,1998,0.8,1967,,,,MRCC,2017-11-07
-Tectum Holdings Inc.,co_2d7e9b250e5d,First Lien,Automotive,5.75%,,LIBOR,4.75%,,2023-08-24,1995,1976,2025,0.8,1976,,,,MRCC,2017-11-07
-Liftforward SPV II LLC,co_4c956e449355,First Lien,Financial Services,11.51%,,LIBOR,10.75%,,2020-11-10,10000,254,254,0.1,254,10000,9746,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MRCC,2017-11-07
-Repay Holdings LLC,co_83d3cdc9395a,First Lien,Financial Services,9.76%,,LIBOR,9.00%,,2021-09-01,12000,11802,11934,5.0,11802,,,,MRCC,2017-11-07
-Repay Holdings LLC,co_83d3cdc9395a,Revolver,Financial Services,9.76%,,LIBOR,9.00%,,2021-09-01,1200,,,0.0,,1200,1200,,MRCC,2017-11-07
-Shields Land Company of Georgia LLC,co_79eb5b7157b6,First Lien,Financial Services,10.15%,,LIBOR,9.50%,,2017-12-28,2450,2425,2445,1.,,,,,MRCC,2017-11-07
-Answers Finance LLC,co_da3abe234f07,Second Lien,Software & Technology,12.15%,,Prime,7.90%,,2021-09-15,395,393,366,0.1,393,,,,MRCC,2017-11-07
-Micro Holdings Corp.,co_5804ec7480b9,Second Lien,Software & Technology,8.82%,,LIBOR,7.50%,,2025-08-18,3000,2970,2987,1.0,2970,,,,MRCC,2017-11-07
-Mergermarket USA Inc.,co_209ed9953d65,Second Lien,Media & Entertainment,8.49%,,LIBOR,7.25%,,2025-08-03,4500,4455,4539,1.6,4455,,,,MRCC,2017-11-07
-SCP TPZ Acquisition Inc.,co_fc8af88420b0,Second Lien,Media & Entertainment,9.57%,,LIBOR,8.25%,,2022-05-29,5000,4945,5006,1.8,4945,,,,MRCC,2017-11-07
-Education Corp.,co_3e3586565e38,Second Lien,Business Services,12.33%,,LIBOR,11.00%,,2018-12-31,625,618,625,0.2,618,,,,MRCC,2017-11-07
-Pre-Paid Legal Services Inc.,co_e39e79feacec,Second Lien,Business Services,10.25%,,LIBOR,9.00%,,2020-07-01,3000,3000,3024,1.1,3000,,,,MRCC,2017-11-07
-Answers Finance LLC,co_da3abe234f07,Common Equity,Software & Technology,,,N/A,,,,2413,1244,0.4,,,,,fair_value_suspicious_vs_size,MRCC,2017-11-07
-Playtime LLC,co_53a4e367e989,Preferred Equity,Food & Beverage,,,N/A,,,,200,33,0.0,,,,,,MRCC,2017-11-07
-AdTheorent Inc.,co_5e01e2d88d5b,Common Equity,Media & Entertainment,,,N/A,,,,129,142,0.1,,,,,,MRCC,2017-11-07
-InMobi Pte Ltd.,co_e80460a527fe,Warrants,Media & Entertainment,,,N/A,,2025-09-18,,,215,0.1,,,,,,MRCC,2017-11-07
-The Tie Bar Operating Company LLC,co_de67cbb55664,Preferred Equity,Consumer & Retail,,,N/A,,,,86,118,0.0,,,,,,MRCC,2017-11-07
-Incipio Technologies,co_67bb938e81cf,First Lien,Consumer & Retail,7.00%,,LIBOR,6.00%,,2019-12-26,14291,14045,14219,5.9,14045,,,,MRCC,2017-11-07
-Collaborative Neuroscience Network,co_de003cd71068,First Lien,Healthcare,13.00%,,LIBOR,11.50%,,2017-12-27,6120,6059,5814,2.4,6059,,,,MRCC,2017-11-07
-Collaborative Neuroscience Network,co_de003cd71068,First Lien,Healthcare,12.00%,3.00%,N/A,,,2017-12-27,286,286,286,0.1,286,,,,MRCC,2017-11-07
-Playtime,co_53a4e367e989,First Lien,Food & Beverage,9.00%,1.00%,LIBOR,8.50%,,2021-12-31,5405,5381,4797,2.0,5381,,,,MRCC,2017-11-07
-Output Services Group,co_05105daaeb2b,First Lien,Business Services,9.50%,1.00%,LIBOR,9.00%,,2020-12-17,6500,6432,6520,2.7,6432,,,,MRCC,2017-11-07
-Output Services Group,co_05105daaeb2b,First Lien,Business Services,9.50%,1.00%,LIBOR,9.00%,,2020-12-17,8296,8189,8391,3.5,8189,,,,MRCC,2017-11-07
-Gracelock Industries,co_b4aabb7819da,First Lien,Business Services,11.00%,4.24%,LIBOR,13.74%,,2019-05-07,4888,4816,4500,1.9,4816,,,,MRCC,2017-11-07
-AIM Aerospace,co_c2aa1e909da7,Second Lien,Aerospace & Defense,10.00%,,LIBOR,9.00%,,2022-08-02,5000,4933,5040,2.1,4933,,,,MRCC,2017-11-07
-Confie Seguros Holdings II Co,co_59f158d3c9d6,Second Lien,Financial Services,10.25%,,LIBOR,9.00%,,2019-05-08,8594,8215,8547,3.5,,,,,MRCC,2017-11-07
-Rocket Dog Brands,co_2ebbab8d6ca8,First Lien,Consumer & Retail,,15.00%,N/A,,2019-08-29,422,416,54,0.0,,,,,,MRCC,2017-11-07
-Rocket Dog Brands,co_2ebbab8d6ca8,First Lien,Consumer & Retail,,17.00%,N/A,,2018-03-30,235,235,202,0.1,,,,,,MRCC,2017-11-07
-Summit Container,co_5e5cae21b0c1,First Lien,Containers & Packaging,12.00%,2.00%,LIBOR,12.00%,,2019-01-06,3575,3552,3421,1.2,3552,,,,MRCC,2017-11-07
-Summit Container,co_5e5cae21b0c1,First Lien,Containers & Packaging,12.00%,2.00%,LIBOR,12.00%,,2022-09-27,1500,1500,1498,0.5,1500,,,,MRCC,2017-11-07
-Rockdale Blackhawk,co_cb890fe4162f,First Lien,Healthcare,14.24%,,LIBOR,13.00%,,2020-03-31,10922,10302,10797,3.8,10302,,,,MRCC,2017-11-07
-Rockdale Blackhawk,co_cb890fe4162f,First Lien,Healthcare,14.24%,,LIBOR,13.00%,,2020-03-31,549,549,542,0.2,549,,,,MRCC,2017-11-07
-Rockdale Blackhawk,co_cb890fe4162f,Revolver,Healthcare,14.24%,,LIBOR,13.00%,,2020-03-31,1849,1849,1824,0.6,1849,,,,MRCC,2017-11-07
-Rockdale Blackhawk,co_cb890fe4162f,Revolver,Healthcare,14.24%,,LIBOR,13.00%,,2020-03-31,3236,3236,3192,1.1,3236,,,,MRCC,2017-11-07
-SHI Holdings,co_7a69c3b06b33,First Lien,Healthcare,10.99%,,LIBOR,9.75%,,2019-07-10,2625,2604,2625,0.9,2604,,,,MRCC,2017-11-07
-Bartlett Reserve Durham,co_e1d2f86bca8d,First Lien,Financial Services,10.23%,,LIBOR,9.00%,,2018-06-01,6468,6385,6346,2.2,6385,,,,MRCC,2017-11-07
-Echelon Funding I,co_3ba91ce705eb,Delayed Draw,Financial Services,11.49%,,LIBOR,10.25%,,2021-02-24,15000,13159,13350,4.7,13159,15000,,,MRCC,2017-11-07
-Liftforward SPV II,co_4c956e449355,First Lien,Financial Services,11.99%,,LIBOR,10.75%,,2020-11-10,10000,5177,5251,1.8,5177,,,,MRCC,2017-11-07
-All Holding Company,co_59c558a20698,First Lien,Food & Beverage,8.24%,,LIBOR,7.00%,,2021-11-15,5363,5275,5416,1.9,5275,,,,MRCC,2017-11-07
-California Pizza Kitchen,co_ca16bd5ac856,First Lien,Food & Beverage,7.24%,,LIBOR,6.00%,,2022-08-23,6930,6864,6884,2.4,6864,,,,MRCC,2017-11-07
-Cali Bamboo,co_70d07d3f64a1,First Lien,Industrials,9.24%,,LIBOR,8.00%,,2020-07-10,5332,5274,5332,1.9,5274,,,,MRCC,2017-11-07
-Cali Bamboo,co_70d07d3f64a1,Revolver,Industrials,9.24%,,LIBOR,8.00%,,2020-07-10,2165,823,823,0.3,823,2165,,,MRCC,2017-11-07
-Cornerstone Detention Products,co_a9a82b41de29,First Lien,Industrials,9.74%,1.00%,LIBOR,9.50%,,2019-04-08,3566,3541,3530,1.2,3541,,,,MRCC,2017-11-07
-Cornerstone Detention Products,co_a9a82b41de29,Revolver,Industrials,9.83%,,LIBOR,8.50%,,2019-04-08,400,200,198,0.1,20,,,,MRCC,2017-11-07
-Q-Tragon Holdings LLC,co_0ed9224a7b4d,First Lien,Industrials,8.24%,,LIBOR,7.00%,,2022-05-02,3908,3854,3879,1.4,3854,,,,MRCC,2017-11-07
-Q-Tragon Holdings LLC,co_0ed9224a7b4d,Revolver,Industrials,8.24%,,LIBOR,7.00%,,2022-05-02,307,,,0.0,,307,307,,MRCC,2017-11-07
-PeopleConnect Intermediate LLC,co_6ca49b30755f,First Lien,Business Services,6.80%,,LIBOR,5.50%,,2020-07-01,4560,4499,4571,1.6,4499,,,,MRCC,2017-11-07
-PeopleConnect Intermediate LLC,co_6ca49b30755f,First Lien,Business Services,12.80%,,LIBOR,11.50%,,2020-07-01,4780,4712,4758,1.7,4712,,,,MRCC,2017-11-07
-PeopleConnect Intermediate LLC,co_6ca49b30755f,Revolver,Business Services,9.80%,,LIBOR,8.50%,,2018-08-11,236,,,0.0,,236,236,,MRCC,2017-11-07
-Peerless Network Inc.,co_ca5c8a480df7,First Lien,Telecommunications,9.74%,0.75%,LIBOR,9.25%,,2020-12-11,3325,3268,3333,1.2,3268,,,,MRCC,2017-11-07
-CRCI Holdings Inc.,co_b14053b7832a,First Lien,Energy,6.83%,,LIBOR,5.50%,,2023-08-31,2782,2758,2801,1.0,2758,,,,MRCC,2017-11-07
-Mid-West Wholesale Hardware Co,co_3b9eb64ba2a3,First Lien,Business Services,9.24%,,LIBOR,8.00%,,2022-02-09,11910,11697,11803,4.2,11697,,,,MRCC,2017-11-07
-Mid-West Wholesale Hardware Co,co_3b9eb64ba2a3,Revolver,Business Services,9.24%,,LIBOR,8.00%,,2022-02-09,4421,505,501,0.2,505,4421,3916,,MRCC,2017-11-07
-Rocket Dog Brands LLC,co_2ebbab8d6ca8,Preferred Equity,Consumer & Retail,,15.00%,N/A,,,,967,,0.0,,,,,,MRCC,2017-11-07
-Summit Container Corp.,co_5e5cae21b0c1,Warrants,Containers & Packaging,,,N/A,,,2024-01-06,,,113,0.0,,,,,MRCC,2017-11-07
-Rockdale Blackhawk LLC,co_cb890fe4162f,Common Equity,Healthcare,,,N/A,,,,1093,14655,6.1,,,,,fair_value_suspicious_vs_size,MRCC,2017-11-07
-SHI Holdings Inc.,co_7a69c3b06b33,Common Equity,Healthcare,,,N/A,,,,27,469,0.2,27,,,,,MRCC,2017-11-07
-TPP Operating Inc.,co_0cc5119bdb7c,First Lien,Consumer & Retail,7.50%,,LIBOR,6.00%,,2018-11-08,9370,9330,1799,0.7,9330,,,,MRCC,2017-11-07
-TPP Operating Inc.,co_0cc5119bdb7c,First Lien,Consumer & Retail,7.50%,,LIBOR,6.00%,,2018-11-08,4344,4344,4344,1.8,4344,,,,MRCC,2017-11-07
-TPP Operating Inc.,co_0cc5119bdb7c,First Lien,Consumer & Retail,11.11%,,LIBOR,9.61%,,2018-11-08,2756,2756,2756,1.1,2756,,,,MRCC,2017-11-07
-TPP Operating Inc.,co_0cc5119bdb7c,Common Equity,Consumer & Retail,,,N/A,,,,3255,,0.0,,,,,,MRCC,2017-11-07
+company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,data_quality_flags,ticker,filing_date
+Answers Corp.,First Lien,Software & Technology,10.00%,,Prime,6.25%,,2021-10-01,2903,2819,1495,0.6,2819,,,,MRCC,2017-11-07
+BCC Software LLC,First Lien,Software & Technology,9.00%,,LIBOR,8.00%,,2019-06-20,2204,2186,2203,0.9,2186,,,,MRCC,2017-11-07
+BCC Software LLC,First Lien,Software & Technology,9.24%,,LIBOR,8.00%,,2019-06-20,3139,3109,3150,1.1,3109,,,,MRCC,2017-11-07
+BCC Software LLC,Revolver,Software & Technology,9.00%,,LIBOR,8.00%,,2019-06-20,469,,,0.0,,469,469,,MRCC,2017-11-07
+BCC Software LLC,Revolver,Software & Technology,9.24%,,LIBOR,8.00%,,2019-06-20,469,,,0.0,,469,469,,MRCC,2017-11-07
+Corbett Technology Solutions Inc.,First Lien,Software & Technology,7.76%,,LIBOR,7.00%,,2021-11-07,4500,4434,4511,1.9,4434,,,,MRCC,2017-11-07
+Corbett Technology Solutions Inc.,First Lien,Software & Technology,8.24%,,LIBOR,7.00%,,2021-11-07,4331,4276,4375,1.5,4276,,,,MRCC,2017-11-07
+Corbett Technology Solutions Inc.,Revolver,Software & Technology,7.76%,,LIBOR,7.00%,,2021-11-07,867,,,0.0,,867,867,,MRCC,2017-11-07
+Corbett Technology Solutions Inc.,Revolver,Software & Technology,8.24%,,LIBOR,7.00%,,2021-11-07,868,217,217,0.1,217,868,,,MRCC,2017-11-07
+BC Equity Ventures LLC,First Lien,Food & Beverage,7.50%,,LIBOR,6.50%,,2022-08-31,2612,2562,2635,1.1,2562,,,,MRCC,2017-11-07
+BC Equity Ventures LLC,First Lien,Food & Beverage,7.50%,,LIBOR,6.50%,,2022-08-31,375,372,373,0.2,372,,,,MRCC,2017-11-07
+Miles Media Group LLC,First Lien,Food & Beverage,10.00%,2.00%,LIBOR,11.00%,,2021-03-24,6110,6052,6119,2.5,6052,,,,MRCC,2017-11-07
+Miles Media Group LLC,Delayed Draw,Food & Beverage,10.00%,2.00%,LIBOR,11.00%,,2021-03-24,1455,,,0.0,,1455,1455,,MRCC,2017-11-07
+Edge Systems Holdings Corp.,Revolver,Healthcare,11.00%,,Prime,6.75%,,2021-12-01,260,31,31,0.0,31,260,,,MRCC,2017-11-07
+Familia Dental Group Holdings LLC,First Lien,Healthcare,9.24%,,LIBOR,8.00%,,2021-04-08,5294,5229,5336,1.9,5229,,,,MRCC,2017-11-07
+Familia Dental Group Holdings LLC,First Lien,Healthcare,9.24%,,LIBOR,8.00%,,2021-04-08,509,509,513,0.2,509,,,,MRCC,2017-11-07
+Familia Dental Group Holdings LLC,Revolver,Healthcare,9.24%,,LIBOR,8.00%,,2021-04-08,573,229,229,0.1,229,573,,,MRCC,2017-11-07
+Answers Finance LLC,First Lien,Software & Technology,6.24%,,LIBOR,5.00%,,2021-04-15,254,251,248,0.1,251,,,,MRCC,2017-11-07
+Cyalume Technologies Holdings Inc.,First Lien,Aerospace & Defense,10.00%,,LIBOR,9.00%,,2020-05-18,4291,4204,4462,1.9,4204,,,,MRCC,2017-11-07
+Cyalume Technologies Holdings Inc.,Delayed Draw,Aerospace & Defense,10.00%,,LIBOR,9.00%,,2020-05-18,387,387,402,0.2,387,387,0,,MRCC,2017-11-07
+Cyalume Technologies Holdings Inc.,Revolver,Aerospace & Defense,10.00%,,LIBOR,9.00%,,2020-05-18,1528,,,0.0,,1528,1528,,MRCC,2017-11-07
+Inteva Products LLC,First Lien,Automotive,9.75%,,LIBOR,8.50%,,2021-09-08,1978,1967,1998,0.8,1967,,,,MRCC,2017-11-07
+Tectum Holdings Inc.,First Lien,Automotive,5.75%,,LIBOR,4.75%,,2023-08-24,1995,1976,2025,0.8,1976,,,,MRCC,2017-11-07
+Liftforward SPV II LLC,First Lien,Financial Services,11.51%,,LIBOR,10.75%,,2020-11-10,10000,254,254,0.1,254,10000,9746,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MRCC,2017-11-07
+Repay Holdings LLC,First Lien,Financial Services,9.76%,,LIBOR,9.00%,,2021-09-01,12000,11802,11934,5.0,11802,,,,MRCC,2017-11-07
+Repay Holdings LLC,Revolver,Financial Services,9.76%,,LIBOR,9.00%,,2021-09-01,1200,,,0.0,,1200,1200,,MRCC,2017-11-07
+Shields Land Company of Georgia LLC,First Lien,Financial Services,10.15%,,LIBOR,9.50%,,2017-12-28,2450,2425,2445,1.,,,,,MRCC,2017-11-07
+Answers Finance LLC,Second Lien,Software & Technology,12.15%,,Prime,7.90%,,2021-09-15,395,393,366,0.1,393,,,,MRCC,2017-11-07
+Micro Holdings Corp.,Second Lien,Software & Technology,8.82%,,LIBOR,7.50%,,2025-08-18,3000,2970,2987,1.0,2970,,,,MRCC,2017-11-07
+Mergermarket USA Inc.,Second Lien,Media & Entertainment,8.49%,,LIBOR,7.25%,,2025-08-03,4500,4455,4539,1.6,4455,,,,MRCC,2017-11-07
+SCP TPZ Acquisition Inc.,Second Lien,Media & Entertainment,9.57%,,LIBOR,8.25%,,2022-05-29,5000,4945,5006,1.8,4945,,,,MRCC,2017-11-07
+Education Corp.,Second Lien,Business Services,12.33%,,LIBOR,11.00%,,2018-12-31,625,618,625,0.2,618,,,,MRCC,2017-11-07
+Pre-Paid Legal Services Inc.,Second Lien,Business Services,10.25%,,LIBOR,9.00%,,2020-07-01,3000,3000,3024,1.1,3000,,,,MRCC,2017-11-07
+Answers Finance LLC,Common Equity,Software & Technology,,,N/A,,,,2413,1244,0.4,,,,,fair_value_suspicious_vs_size,MRCC,2017-11-07
+Playtime LLC,Preferred Equity,Food & Beverage,,,N/A,,,,200,33,0.0,,,,,,MRCC,2017-11-07
+AdTheorent Inc.,Common Equity,Media & Entertainment,,,N/A,,,,129,142,0.1,,,,,,MRCC,2017-11-07
+InMobi Pte Ltd.,Warrants,Media & Entertainment,,,N/A,,2025-09-18,,,215,0.1,,,,,,MRCC,2017-11-07
+The Tie Bar Operating Company LLC,Preferred Equity,Consumer & Retail,,,N/A,,,,86,118,0.0,,,,,,MRCC,2017-11-07
+Incipio Technologies,First Lien,Consumer & Retail,7.00%,,LIBOR,6.00%,,2019-12-26,14291,14045,14219,5.9,14045,,,,MRCC,2017-11-07
+Collaborative Neuroscience Network,First Lien,Healthcare,13.00%,,LIBOR,11.50%,,2017-12-27,6120,6059,5814,2.4,6059,,,,MRCC,2017-11-07
+Collaborative Neuroscience Network,First Lien,Healthcare,12.00%,3.00%,N/A,,,2017-12-27,286,286,286,0.1,286,,,,MRCC,2017-11-07
+Playtime,First Lien,Food & Beverage,9.00%,1.00%,LIBOR,8.50%,,2021-12-31,5405,5381,4797,2.0,5381,,,,MRCC,2017-11-07
+Output Services Group,First Lien,Business Services,9.50%,1.00%,LIBOR,9.00%,,2020-12-17,6500,6432,6520,2.7,6432,,,,MRCC,2017-11-07
+Output Services Group,First Lien,Business Services,9.50%,1.00%,LIBOR,9.00%,,2020-12-17,8296,8189,8391,3.5,8189,,,,MRCC,2017-11-07
+Gracelock Industries,First Lien,Business Services,11.00%,4.24%,LIBOR,13.74%,,2019-05-07,4888,4816,4500,1.9,4816,,,,MRCC,2017-11-07
+AIM Aerospace,Second Lien,Aerospace & Defense,10.00%,,LIBOR,9.00%,,2022-08-02,5000,4933,5040,2.1,4933,,,,MRCC,2017-11-07
+Confie Seguros Holdings II Co,Second Lien,Financial Services,10.25%,,LIBOR,9.00%,,2019-05-08,8594,8215,8547,3.5,,,,,MRCC,2017-11-07
+Rocket Dog Brands,First Lien,Consumer & Retail,,15.00%,N/A,,2019-08-29,422,416,54,0.0,,,,,,MRCC,2017-11-07
+Rocket Dog Brands,First Lien,Consumer & Retail,,17.00%,N/A,,2018-03-30,235,235,202,0.1,,,,,,MRCC,2017-11-07
+Summit Container,First Lien,Containers & Packaging,12.00%,2.00%,LIBOR,12.00%,,2019-01-06,3575,3552,3421,1.2,3552,,,,MRCC,2017-11-07
+Summit Container,First Lien,Containers & Packaging,12.00%,2.00%,LIBOR,12.00%,,2022-09-27,1500,1500,1498,0.5,1500,,,,MRCC,2017-11-07
+Rockdale Blackhawk,First Lien,Healthcare,14.24%,,LIBOR,13.00%,,2020-03-31,10922,10302,10797,3.8,10302,,,,MRCC,2017-11-07
+Rockdale Blackhawk,First Lien,Healthcare,14.24%,,LIBOR,13.00%,,2020-03-31,549,549,542,0.2,549,,,,MRCC,2017-11-07
+Rockdale Blackhawk,Revolver,Healthcare,14.24%,,LIBOR,13.00%,,2020-03-31,1849,1849,1824,0.6,1849,,,,MRCC,2017-11-07
+Rockdale Blackhawk,Revolver,Healthcare,14.24%,,LIBOR,13.00%,,2020-03-31,3236,3236,3192,1.1,3236,,,,MRCC,2017-11-07
+SHI Holdings,First Lien,Healthcare,10.99%,,LIBOR,9.75%,,2019-07-10,2625,2604,2625,0.9,2604,,,,MRCC,2017-11-07
+Bartlett Reserve Durham,First Lien,Financial Services,10.23%,,LIBOR,9.00%,,2018-06-01,6468,6385,6346,2.2,6385,,,,MRCC,2017-11-07
+Echelon Funding I,Delayed Draw,Financial Services,11.49%,,LIBOR,10.25%,,2021-02-24,15000,13159,13350,4.7,13159,15000,,,MRCC,2017-11-07
+Liftforward SPV II,First Lien,Financial Services,11.99%,,LIBOR,10.75%,,2020-11-10,10000,5177,5251,1.8,5177,,,,MRCC,2017-11-07
+All Holding Company,First Lien,Food & Beverage,8.24%,,LIBOR,7.00%,,2021-11-15,5363,5275,5416,1.9,5275,,,,MRCC,2017-11-07
+California Pizza Kitchen,First Lien,Food & Beverage,7.24%,,LIBOR,6.00%,,2022-08-23,6930,6864,6884,2.4,6864,,,,MRCC,2017-11-07
+Cali Bamboo,First Lien,Industrials,9.24%,,LIBOR,8.00%,,2020-07-10,5332,5274,5332,1.9,5274,,,,MRCC,2017-11-07
+Cali Bamboo,Revolver,Industrials,9.24%,,LIBOR,8.00%,,2020-07-10,2165,823,823,0.3,823,2165,,,MRCC,2017-11-07
+Cornerstone Detention Products,First Lien,Industrials,9.74%,1.00%,LIBOR,9.50%,,2019-04-08,3566,3541,3530,1.2,3541,,,,MRCC,2017-11-07
+Cornerstone Detention Products,Revolver,Industrials,9.83%,,LIBOR,8.50%,,2019-04-08,400,200,198,0.1,20,,,,MRCC,2017-11-07
+Q-Tragon Holdings LLC,First Lien,Industrials,8.24%,,LIBOR,7.00%,,2022-05-02,3908,3854,3879,1.4,3854,,,,MRCC,2017-11-07
+Q-Tragon Holdings LLC,Revolver,Industrials,8.24%,,LIBOR,7.00%,,2022-05-02,307,,,0.0,,307,307,,MRCC,2017-11-07
+PeopleConnect Intermediate LLC,First Lien,Business Services,6.80%,,LIBOR,5.50%,,2020-07-01,4560,4499,4571,1.6,4499,,,,MRCC,2017-11-07
+PeopleConnect Intermediate LLC,First Lien,Business Services,12.80%,,LIBOR,11.50%,,2020-07-01,4780,4712,4758,1.7,4712,,,,MRCC,2017-11-07
+PeopleConnect Intermediate LLC,Revolver,Business Services,9.80%,,LIBOR,8.50%,,2018-08-11,236,,,0.0,,236,236,,MRCC,2017-11-07
+Peerless Network Inc.,First Lien,Telecommunications,9.74%,0.75%,LIBOR,9.25%,,2020-12-11,3325,3268,3333,1.2,3268,,,,MRCC,2017-11-07
+CRCI Holdings Inc.,First Lien,Energy,6.83%,,LIBOR,5.50%,,2023-08-31,2782,2758,2801,1.0,2758,,,,MRCC,2017-11-07
+Mid-West Wholesale Hardware Co,First Lien,Business Services,9.24%,,LIBOR,8.00%,,2022-02-09,11910,11697,11803,4.2,11697,,,,MRCC,2017-11-07
+Mid-West Wholesale Hardware Co,Revolver,Business Services,9.24%,,LIBOR,8.00%,,2022-02-09,4421,505,501,0.2,505,4421,3916,,MRCC,2017-11-07
+Rocket Dog Brands LLC,Preferred Equity,Consumer & Retail,,15.00%,N/A,,,,967,,0.0,,,,,,MRCC,2017-11-07
+Summit Container Corp.,Warrants,Containers & Packaging,,,N/A,,,2024-01-06,,,113,0.0,,,,,MRCC,2017-11-07
+Rockdale Blackhawk LLC,Common Equity,Healthcare,,,N/A,,,,1093,14655,6.1,,,,,fair_value_suspicious_vs_size,MRCC,2017-11-07
+SHI Holdings Inc.,Common Equity,Healthcare,,,N/A,,,,27,469,0.2,27,,,,,MRCC,2017-11-07
+TPP Operating Inc.,First Lien,Consumer & Retail,7.50%,,LIBOR,6.00%,,2018-11-08,9370,9330,1799,0.7,9330,,,,MRCC,2017-11-07
+TPP Operating Inc.,First Lien,Consumer & Retail,7.50%,,LIBOR,6.00%,,2018-11-08,4344,4344,4344,1.8,4344,,,,MRCC,2017-11-07
+TPP Operating Inc.,First Lien,Consumer & Retail,11.11%,,LIBOR,9.61%,,2018-11-08,2756,2756,2756,1.1,2756,,,,MRCC,2017-11-07
+TPP Operating Inc.,Common Equity,Consumer & Retail,,,N/A,,,,3255,,0.0,,,,,,MRCC,2017-11-07

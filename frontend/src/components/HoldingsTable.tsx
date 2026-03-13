@@ -211,7 +211,7 @@ function HoldingsTableComponent({ data, period, onCompanyClick, getCompanyIdFrom
         cell: (c) => {
           const name = c.getValue() ?? '';
           const row = c.row.original as any;
-          const MAX_NAME_LENGTH = 20;
+          const MAX_NAME_LENGTH = 35;
           const displayName =
             typeof name === 'string' && name.length > MAX_NAME_LENGTH
               ? `${name.slice(0, MAX_NAME_LENGTH - 1)}…`

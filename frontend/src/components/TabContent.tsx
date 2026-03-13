@@ -35,8 +35,6 @@ type TabContentProps = {
   getCompanyIdFromName?: (name: string) => string | undefined;
 };
 
-const ANALYTICS_VIEW_KEY = 'bdc_analytics_view';
-
 function AnalyticsTabContent({
   investments,
   selectedPeriod,
@@ -48,22 +46,6 @@ function AnalyticsTabContent({
   periods?: string[];
   onPeriodChange: (period: string) => void;
 }) {
-  const [view, setView] = useState<'charts' | 'numbers'>(() => {
-    try {
-      const saved = localStorage.getItem(ANALYTICS_VIEW_KEY);
-      if (saved === 'charts' || saved === 'numbers') return saved;
-    } catch { /* ignore */ }
-    return 'charts';
-  });
-
-  const handleViewChange = (v: 'charts' | 'numbers') => {
-    playClickSound();
-    setView(v);
-    try {
-      localStorage.setItem(ANALYTICS_VIEW_KEY, v);
-    } catch { /* ignore */ }
-  };
-
   return (
     <div className="flex flex-col h-full min-h-0 overflow-hidden">
       <div className="mb-2 flex items-center gap-3 flex-wrap flex-shrink-0">
@@ -80,27 +62,10 @@ function AnalyticsTabContent({
             ))}
           </select>
         </div>
-        <div className="flex items-center gap-1 text-xs">
-          <button
-            className={`btn text-xs ${view === 'charts' ? 'pressed' : ''}`}
-            onClick={() => handleViewChange('charts')}
-          >
-            Charts
-          </button>
-          <button
-            className={`btn text-xs ${view === 'numbers' ? 'pressed' : ''}`}
-            onClick={() => handleViewChange('numbers')}
-          >
-            Numbers
-          </button>
-        </div>
       </div>
-      <div className="flex-1 min-h-0 overflow-y-auto">
-        {view === 'charts' ? (
-          <AnalyticsPanel holdings={investments as any} period={selectedPeriod} />
-        ) : (
-          <SimpleAnalyticsPanel holdings={investments as any} period={selectedPeriod} />
-        )}
+      <div className="flex-1 min-h-0 overflow-y-auto space-y-4">
+        <AnalyticsPanel holdings={investments as any} period={selectedPeriod} />
+        <SimpleAnalyticsPanel holdings={investments as any} period={selectedPeriod} />
       </div>
     </div>
   );

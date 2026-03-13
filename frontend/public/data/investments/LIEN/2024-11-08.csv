@@ -1,19 +1,19 @@
-company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
-Workbox Holdings,co_4c9a51fb8085,First Lien,Real Estate,6%,6.0%,,,,2024-05-20,2029-05-31,1352,1119,1260,1.53%,1119,,,,,,LIEN,2024-11-08
-PharmaCann,co_c9b7bc2127d2,First Lien,Distribution & Wholesale,12%,,,,,2022-06-30,2025-06-30,4250,4177,4123,5%,4177,,,,,,LIEN,2024-11-08
-Curaleaf Holdings,co_f4b044fbd006,First Lien,Distribution & Wholesale,8%,,,,,2022-10-11,2026-12-15,4500,4102,4298,5.21%,4102,,,,,,LIEN,2024-11-08
-Verano Holdings Corp.,co_a08acd23dc9c,First Lien,,,,SOFR,6.5%,6.25%,2022-10-27,2026-10-30,17748,17436,17925,21.72%,17436,,,,,,LIEN,2024-11-08
-Ascend Wellness Holdings,co_705d4700b9e2,First Lien,Distribution & Wholesale,12.75%,,,,,2024-07-16,2029-07-16,3500,3322,3322,4.02%,3322,,,,,,LIEN,2024-11-08
-Workbox Holdings,co_4c9a51fb8085,Preferred Equity,Real Estate,,,,,,2024-05-20,2029-05-31,,500,500,0.6%,500,,,,358950,,LIEN,2024-11-08
-Dreamfields Brands,co_68fa2e856efe,First Lien,,,,SOFR,8.75%,7.5%,2023-05-03,2026-05-03,4320,4254,4320,5.23%,4254,,,,,,LIEN,2024-11-08
-Workbox Holdings,co_4c9a51fb8085,Preferred Equity,Real Estate,,,,,,2024-05-20,2029-05-31,,146,105,0.13%,146,,,,1191769,,LIEN,2024-11-08
-Workbox Holdings,co_4c9a51fb8085,Preferred Equity,Real Estate,,,,,,2024-05-20,2029-05-31,,97,71,0.09%,97,,,,791258,,LIEN,2024-11-08
-STIIIZY,co_d2eb02c14795,First Lien,Cannabis,,4.0%,SOFR,8.5%,4%,2022-05-26,2027-05-26,20066,19800,19865,24.06%,19800,,,,,,LIEN,2024-11-08
-and Cash Equivalents,co_eef794b54678,Other,,,,,,,,,,85065,85901,1.04%,85065,,,,,,LIEN,2024-11-08
-Real Estate Services,co_ace48db0c4c1,First Lien,Real Estate,,,,,,,,1352,1119,1260,1.53%,1119,,,,,,LIEN,2024-11-08
-Wholesale Trade Debt Securities,co_770e45e02d06,First Lien,Financial Services,,,,,,,,54384,53091,53853,65.24%,53091,,,,,,LIEN,2024-11-08
-Debt Securities,co_2bb4f294d158,Other,Financial Services,,,,,,,,,54210,55113,66.77%,54210,,,,,,LIEN,2024-11-08
-Real Estate Services,co_ace48db0c4c1,Other Equity,Real Estate,,,,,,,,,743,676,0.82%,743,,,,,,LIEN,2024-11-08
-Equity Securities,co_a93961678a30,Other,Financial Services,,,,,,,,,743,676,0.82%,743,,,,,,LIEN,2024-11-08
-Debt and Equity Securities,co_64b3a77d6751,Other,Financial Services,,,,,,,,,54953,55789,67.59%,54953,,,,,,LIEN,2024-11-08
-Non Qualifying Assets,co_8a19318287e9,Other,,,,,,,,,,,,24.89%,,,,,,,LIEN,2024-11-08
+company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
+Workbox Holdings,First Lien,Real Estate,6%,6.0%,,,,2024-05-20,2029-05-31,1352,1119,1260,1.53%,1119,,,,,,LIEN,2024-11-08
+PharmaCann,First Lien,Distribution & Wholesale,12%,,,,,2022-06-30,2025-06-30,4250,4177,4123,5%,4177,,,,,,LIEN,2024-11-08
+Curaleaf Holdings,First Lien,Distribution & Wholesale,8%,,,,,2022-10-11,2026-12-15,4500,4102,4298,5.21%,4102,,,,,,LIEN,2024-11-08
+Verano Holdings Corp.,First Lien,,,,SOFR,6.5%,6.25%,2022-10-27,2026-10-30,17748,17436,17925,21.72%,17436,,,,,,LIEN,2024-11-08
+Ascend Wellness Holdings,First Lien,Distribution & Wholesale,12.75%,,,,,2024-07-16,2029-07-16,3500,3322,3322,4.02%,3322,,,,,,LIEN,2024-11-08
+Workbox Holdings,Preferred Equity,Real Estate,,,,,,2024-05-20,2029-05-31,,500,500,0.6%,500,,,,358950,,LIEN,2024-11-08
+Dreamfields Brands,First Lien,,,,SOFR,8.75%,7.5%,2023-05-03,2026-05-03,4320,4254,4320,5.23%,4254,,,,,,LIEN,2024-11-08
+Workbox Holdings,Preferred Equity,Real Estate,,,,,,2024-05-20,2029-05-31,,146,105,0.13%,146,,,,1191769,,LIEN,2024-11-08
+Workbox Holdings,Preferred Equity,Real Estate,,,,,,2024-05-20,2029-05-31,,97,71,0.09%,97,,,,791258,,LIEN,2024-11-08
+STIIIZY,First Lien,,,4.0%,SOFR,8.5%,4%,2022-05-26,2027-05-26,20066,19800,19865,24.06%,19800,,,,,,LIEN,2024-11-08
+and Cash Equivalents,Other,,,,,,,,,,85065,85901,1.04%,85065,,,,,,LIEN,2024-11-08
+Real Estate Services,First Lien,Real Estate,,,,,,,,1352,1119,1260,1.53%,1119,,,,,,LIEN,2024-11-08
+Wholesale Trade Debt Securities,First Lien,Financial Services,,,,,,,,54384,53091,53853,65.24%,53091,,,,,,LIEN,2024-11-08
+Debt Securities,Other,Financial Services,,,,,,,,,54210,55113,66.77%,54210,,,,,,LIEN,2024-11-08
+Real Estate Services,Other Equity,Real Estate,,,,,,,,,743,676,0.82%,743,,,,,,LIEN,2024-11-08
+Equity Securities,Other,Financial Services,,,,,,,,,743,676,0.82%,743,,,,,,LIEN,2024-11-08
+Debt and Equity Securities,Other,Financial Services,,,,,,,,,54953,55789,67.59%,54953,,,,,,LIEN,2024-11-08
+Non Qualifying Assets,Other,,,,,,,,,,,,24.89%,,,,,,,LIEN,2024-11-08
