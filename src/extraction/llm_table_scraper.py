@@ -295,22 +295,6 @@ class LLMTableScraper:
         Returns:
             "thousands", "millions", or "units" (raw/unstated)
         """
-        search_text_parts = []
-
-        # Add all table HTML and text
-        for table_html, table_text, _, _ in tables:
-            search_text_parts.append(table_html.lower())
-            search_text_parts.append(table_text.lower())
-
-        # Add document context (schedule headers often state the unit before tables)
-        if hasattr(filing_result, 'text_map') and filing_result.text_map:
-            for doc_text in filing_result.text_map.values():
-                if doc_text:
-                    # Get a window of text - schedule headers are usually near the top or before tables
-                    search_text_parts.append(doc_text[:15000].lower())
-
-        search_text = ' '.join(search_text_parts)
-
         # Patterns that indicate thousands
         thousands_patterns = [
             r'in thousands',
@@ -336,18 +320,40 @@ class LLMTableScraper:
             r'millions of dollars',
         ]
 
-        for pattern in thousands_patterns:
-            if re.search(pattern, search_text, re.IGNORECASE):
-                logger.info(f"Detected unit scale: thousands (matched: {pattern})")
-                return "thousands"
+        all_patterns = thousands_patterns + millions_patterns
 
-        for pattern in millions_patterns:
-            if re.search(pattern, search_text, re.IGNORECASE):
-                logger.info(f"Detected unit scale: millions (matched: {pattern})")
-                return "millions"
+        def _check_text(text: str) -> Optional[str]:
+            """Return 'thousands', 'millions', or None if not found."""
+            t = text.lower()
+            for pat in thousands_patterns:
+                if re.search(pat, t, re.IGNORECASE):
+                    logger.info(f"Detected unit scale: thousands (matched: {pat})")
+                    return "thousands"
+            for pat in millions_patterns:
+                if re.search(pat, t, re.IGNORECASE):
+                    logger.info(f"Detected unit scale: millions (matched: {pat})")
+                    return "millions"
+            return None
 
-        logger.info("Detected unit scale: units (no explicit scale found, assuming raw amounts)")
-        return "units"
+        # 1. Check all table HTML and text (cheapest — already extracted)
+        for table_html, table_text, _, _ in tables:
+            result = _check_text(table_html) or _check_text(table_text)
+            if result:
+                return result
+
+        # 2. Scan full document text — unit disclosure may appear anywhere in the
+        #    filing (e.g. FSK's "(in millions, except share amounts)" is at ~1.9MB,
+        #    well past a fixed prefix window).  Scan each doc directly to avoid
+        #    building a huge joined string.
+        if hasattr(filing_result, 'text_map') and filing_result.text_map:
+            for doc_text in filing_result.text_map.values():
+                if doc_text:
+                    result = _check_text(doc_text)
+                    if result:
+                        return result
+
+        logger.info("Detected unit scale: thousands (default — BDC filings almost always report in $000s)")
+        return "thousands"
 
     def find_investment_schedule_tables(self, tables: List[Tuple[str, str, int, str]],
                                        filing_result: Any, filing_type: str = "10-Q",

@@ -105,6 +105,9 @@ def normalize_industry(raw: str) -> str:
     # Investment type leakage / subtotal rows
     if re.match(r"^(first lien|second lien|senior secured|subordinat|unsecured|revolver|delayed draw|junior secured|unfunded|total )", lower):
         return ""
+    # Cash equivalents category labels (GAIN/GLAD etc.): "cash equivalents - 6.6 %"
+    if re.match(r"^cash\s+equivalents?\s*-\s*[\d.]+\s*%$", lower):
+        return ""
     if lower in _JUNK_INDUSTRY_EXACT:
         return ""
     # Dimension string fragments leaking into industry (e.g. "Other Scorpio Bidco First-lien loan (EUR 2,511 par, due 4/2031)...")
@@ -758,6 +761,11 @@ def _apply_ticker_specific_company_cleanup(name: str, ticker: Optional[str]) -> 
             s = (m_conc.group(1) + m_conc.group(2)).strip()
             ext = _HRZN_TRAILING_SECTOR_INDUSTRY.get(m_conc.group(3).lower())
             return (s, ext)
+        # Sector prefix leak: "Technology Samba TV Inc." -> "Samba TV Inc."
+        if re.match(r'^(?:Technology|echnology)\s+\S', s):
+            s = re.sub(r'^(?:Technology|echnology)\s+', '', s, flags=re.I).strip()
+            if not extracted_industry:
+                extracted_industry = 'Software & Technology'
 
     # MFIC: "Business Services Jacent ..."; "Affiliated Investments Golden Bear 2016-R LLC"; "Automobile Components K&N Parent Inc." → company only
     if ticker_upper == 'MFIC':
@@ -875,6 +883,25 @@ def _apply_ticker_specific_company_cleanup(name: str, ticker: Optional[str]) -> 
         # "Jacent Jacent Strategic Merchandising" → dedupe repeated word at start
         s = re.sub(r'^(\S+)\s+\1\s+', r'\1 ', s)
         return (s.strip(), extracted_industry)
+
+    # MSDL: strip subsector prefixes that leak into company_name, e.g.
+    # "Electronic Equipment Instruments & Components Abracon Group Holdings LLC"
+    # and "Software Everbridge Holdings LLC" → keep pure company name.
+    if ticker_upper == 'MSDL':
+        _msdl_prefixes = [
+            'Electronic Equipment Instruments & Components ',
+            'Software ',
+            'Services ',
+        ]
+        for pref in _msdl_prefixes:
+            if s.startswith(pref):
+                rest = s[len(pref):].strip()
+                # If nothing meaningful remains (sector-only subtotal row), drop it
+                if not rest:
+                    return ('', None)
+                s = rest
+                break
+        return (s.strip(), None)
 
     # ICMB: "Non-Controlled/Non-Affiliated Investments Senior Secured First Lien Debt Investments {Industry} {Company}"
     # Also: "in non-controlled Affiliated Investments Techniplas Foreign Holdco LP" (lowercase variant)
@@ -995,6 +1022,8 @@ def _apply_ticker_specific_company_cleanup(name: str, ticker: Optional[str]) -> 
             s, re.I,
         ):
             return ('', None)
+        # Prefix leak from section labels: "Services <Company>" -> "<Company>"
+        s = re.sub(r'^Services\s+', '', s, flags=re.I).strip()
         return (s.strip(), extracted_industry)
 
     # GECC: "Universal Fiber Systems Industry Chemicals Security Common Equity Initial Acquisition Date 10/16/2024 - 1" or "Industry Chemicals Security 1st Lien"
@@ -1310,6 +1339,8 @@ def _apply_ticker_specific_company_cleanup(name: str, ticker: Optional[str]) -> 
         s = re.sub(r'\s+(?:Sr\s+Secured|Senior\s+Secured|First\s+Lien)\s+(?:Revolver|Term\s+Loan)\s+Ref\b.*$', '', s, flags=re.I).strip()
         # Also strip when "Term Loan Ref" or "Credit Facility Ref" or "Bank Guarantee" appears
         s = re.sub(r'\s+(?:Term\s+Loan\s+Ref|Credit\s+Facility\s+Ref|Bank\s+Guarantee)\s+.*$', '', s, flags=re.I).strip()
+        # Prefix leak from section labels: "Services <Company>" -> "<Company>"
+        s = re.sub(r'^Services\s+', '', s, flags=re.I).strip()
         return (s.strip(), extracted_industry)
 
     # TSLX: rate-only; "Other Investments Ares CLO Ltd."; "Equity and Other Investments Business Services ReliaQuest"; "Debt Investments Automotive" (section-only → ''); "Pharmaceuticals TherapeuticsMD"
@@ -1376,10 +1407,30 @@ def _apply_ticker_specific_company_cleanup(name: str, ticker: Optional[str]) -> 
     # "Investment Affiliated Issuer Investment Funds Middle Market Credit Fund LLC" → "Middle Market Credit Fund LLC"
     # "Investment Non-Affiliated Issuer" / "Credit Fund" (section-only) → ""
     if ticker_upper == 'CGBD':
+        # Some CGBD labels come as pipe-delimited hierarchy tokens.
+        # Example: "| Affiliated Issuer | Investment Funds | Middle Market Credit Fund LLC"
+        s = re.sub(r'^\|\s*(?:Investment\s+)?(?:Non-Affiliated|Affiliated)(?:\s+Issuer)?\s*\|\s*', '', s, flags=re.I)
+        s = re.sub(r'^\|\s*', '', s, flags=re.I)
+        s = re.sub(r'^(?:Investment\s+)?(?:Non-Affiliated|Affiliated)(?:\s+Issuer)?\s*', '', s, flags=re.I)
+        s = re.sub(r'^\|\s*', '', s, flags=re.I)
         s = re.sub(r'^(?:Investment\s+(?:Non-Affiliated|Affiliated)\s+Issuer|Credit\s+Fund)\s*', '', s, flags=re.I)
-        s = re.sub(r'^(?:First\s+Lien\s+Debt|Second\s+Lien\s+Debt|Equity\s+Investments|Investment\s+Funds)\s*', '', s, flags=re.I).strip()
+        s = re.sub(
+            r'^(?:First\s+Lien\s+Debt|Second\s+Lien\s+Debt|First\s+and\s+Second\s+Lien\s+Debt|Equity\s+Investments|Investment\s+Funds)\s*\|\s*',
+            '',
+            s,
+            flags=re.I,
+        )
+        s = re.sub(
+            r'^(?:First\s+Lien\s+Debt|Second\s+Lien\s+Debt|First\s+and\s+Second\s+Lien\s+Debt|Equity\s+Investments|Investment\s+Funds)\s*',
+            '',
+            s,
+            flags=re.I,
+        ).strip()
         # Standalone "First Lien" / "Second Lien" prefix remaining (e.g. "First Lien Direct Travel Inc.")
         s = re.sub(r'^(?:First|Second)\s+Lien\s+(?:Senior\s+Secured\s+)?', '', s, flags=re.I).strip()
+        # Normalize long affiliated fund legal name to concise display label.
+        if re.match(r'^Middle\s+Market\s+Credit\s+Fund\s+LLC\.?$', s, re.I):
+            s = 'Middle Market'
         # Bare "Second Lien" or "First Lien" (nothing left after stripping) → section header → clear
         if re.match(r'^(?:First|Second)\s+Lien\s*$', s, re.I):
             return ('', None)
@@ -1499,9 +1550,26 @@ def _apply_ticker_specific_company_cleanup(name: str, ticker: Optional[str]) -> 
             return ('', None)  # sector-only row, not a company
         return (s.strip(), extracted_industry)
 
-    # FDUS: "Affiliate Investments Pfanstiehl Inc." → "Pfanstiehl Inc."
+    # FDUS:
+    #   - "Affiliate Investments Pfanstiehl Inc." → "Pfanstiehl Inc."
+    #   - "Non-control/Non-affiliate Investments Acendre Midco Inc." → "Acendre Midco Inc."
+    #   - pure section headers like "Non-control/Non-affiliate Investments" → no company
     if ticker_upper == 'FDUS':
         s = re.sub(r'^Affiliate\s+Investments\s+', '', s, flags=re.I)
+        # Some filings prepend this axis text before the real label.
+        s = re.sub(r'^Investment\s+Identifier\s+\[Axis\]\s*:\s*', '', s, flags=re.I)
+        # Repair malformed duplicated prefixes seen in some FDUS files.
+        s = re.sub(
+            r'^(?:Non-?cont\w*)\s*Non-?control/Non-?affiliate\s+Investments?',
+            'Non-control/Non-affiliate Investments',
+            s,
+            flags=re.I,
+        )
+        # Drop header-only rows
+        if re.match(r'^Non-?control/Non-?affiliate\s+Investments?\s*$', s.strip(), re.I):
+            return ('', None)
+        # Strip leading affiliation prefix when followed by an issuer/fund name
+        s = re.sub(r'^Non-?control/Non-?affiliate\s+Investments?\s*', '', s, flags=re.I)
         return (s.strip(), None)
 
     # OCSL: "Alvotech Holdings S.A. Biotechnology" → "Alvotech Holdings S.A." (trailing sector leak)
@@ -1673,7 +1741,12 @@ def _apply_ticker_specific_company_cleanup(name: str, ticker: Optional[str]) -> 
     if ticker_upper == 'BBDC':
         if re.match(r'^(?:First|Second)\s+Lien\s+Senior\s+Secured\s+Term\s+Loan\s*$', s, re.I):
             return ('', None)
-        return (s, None)
+        # Sector prefix leak: "Technology Service Stream BidCo Pty Ltd." -> "Service Stream BidCo Pty Ltd."
+        if re.match(r'^(?:Technology|echnology)\s+\S', s):
+            s = re.sub(r'^(?:Technology|echnology)\s+', '', s, flags=re.I).strip()
+            if not extracted_industry:
+                extracted_industry = 'Software & Technology'
+        return (s, extracted_industry)
 
     # BCIC: "Senior Secured Loans", "Subordinated Notes" = section headers; "247% of Net Asset Value at Fair Value" = NAV row
     if ticker_upper == 'BCIC':

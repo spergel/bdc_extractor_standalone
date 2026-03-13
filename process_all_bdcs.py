@@ -35,7 +35,7 @@ CUSTOM_SCRAPER_SCRIPTS = {
 # XBRL pipeline: Grade A — cost ≥ 60% AND rate ≥ 40% from XBRL (excludes CUSTOM_SCRAPER_TICKERS)
 XBRL_TICKERS = [
     "ARCC", "BBDC", "BXSL", "CCAP", "CGBD",
-    "CSWC", "FDUS", "GAIN", "GBDC", "GECC", "GLAD", "GSBD",
+    "CSWC", "FDUS", "GAIN", "GBDC", "GLAD", "GSBD",
     "HRZN", "KBDC", "LIEN", "MAIN", "MRCC", "MSDL",
     "MSIF", "NCDL", "NMFC", "OCSL", "OFS",
     "PFLT", "PNNT", "PSBD", "PSEC", "SAR", "SCM",
@@ -57,6 +57,7 @@ LLM_TICKERS = [
 # html_soi_parser can't handle their filing table format; DSPy Gemini extracts correctly.
 DSPY_TICKERS = [
     "EQS",   # No XBRL SOI, html_soi_parser produces 6-8 rows (incomplete)
+    "GECC",  # XBRL/HTML outputs contain many malformed/placeholder rows; DSPy extraction is materially cleaner
     "OXSQ",  # html_soi_parser returns 0 rows (COMPANY/INVESTMENT header not recognized)
     "RAND",  # html_soi_parser returns 12-19 rows (complex SOI format); DSPy needed
     "RWAY",  # html_soi_parser produces 77% garbled company names (flat-path row format); DSPy: 0% garbled, 100% rate coverage

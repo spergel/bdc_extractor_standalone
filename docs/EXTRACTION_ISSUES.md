@@ -1,156 +1,196 @@
 # Extraction Issues - BDC Schedule of Investments
 
 ## Summary
-The LLM table scraper extracts investment schedules from SEC 10-Q filings. Several issues cause incorrect row counts, duplicates, and missing data.
+The pipeline has three extraction paths: XBRL (`xbrl_investment_extractor.py`), HTML (`html_soi_parser.py` — routed as LLM_TICKERS), and DSPy (`dspy_table_scraper.py`). Issues below are organized by ticker, then by systemic problem.
 
 ---
 
-## 1. Year-End / Prior Period Data Inclusion
+## Per-Ticker Issues (Active)
 
-**Problem:** 10-Q filings include comparative tables for prior year-end (e.g., December 31, 2024). We extract from BOTH current quarter (e.g., June 30, 2025) AND prior year-end, inflating row counts by ~2–4x.
-
-**Evidence:** MRCC 2025-08-11 had 575 rows instead of ~140. Same companies appear twice (e.g., American Community Homes at 4.46% vs 4.44%) from June vs Dec periods.
-
-**Intended behavior:**
-- Skip sections with "December 31, {prior_year}" in the schedule header
-- Skip individual tables that have year-end dates in content/context
-- Filter `current_quarter_tables` before LLM processing
-- Dedup by maturity_date when same company + investment_type + principal match (prefer later maturity)
-
-**Status:** Logic exists in `_is_year_end_table`, section skip, and dedup—but prior runs still produced blended output. Verify on fresh extraction.
+### ICMB — critically under-extracted
+- **Router:** LLM_TICKERS → html_soi_parser
+- **Symptom:** 1–2 rows in 2025 periods. Should be ~30–50 portfolio companies.
+- **Root cause:** html_soi_parser completely fails ICMB's table format. 2023–2024 historical periods from html_soi_parser backfill are also suspect for same reason.
+- **Fix:** Move ICMB to DSPy_TICKERS in `process_all_bdcs.py` and re-run with `--force`.
 
 ---
 
-## 2. Duplicate Holdings (Same Position, Different Periods)
-
-**Problem:** Same company + investment type + principal appears with different maturity dates (e.g., 2028 vs 2029). One is current quarter, one is prior year-end.
-
-**Evidence:** TigerConnect appeared twice: maturity 2029-08-16 (current) and 2028-02-16 (prior).
-
-**Fix implemented:** `_deduplicate_csv_rows` now groups by (company_base, investment_type), and when principals match within 1%, keeps the row with the **later** maturity_date.
+### LIEN — company name garbage in some periods
+- **Router:** XBRL_TICKERS
+- **Symptom:** "Non Qualifying Assets" appearing as a company name (should be excluded). Some periods may have XBRL dimension strings leaking into company_name.
+- **Root cause:** `_apply_ticker_specific_company_cleanup` for LIEN doesn't catch all junk dimension values. Fixed `return ('', None)` bug existed previously; may still have residual dirty names.
+- **Fix:** Audit all 11 LIEN periods for bad company names. Add any remaining junk patterns to LIEN block in `standardization_rules.py`. "Non Qualifying Assets" should be in `_NON_COMPANY_PATTERNS` or cleared in LIEN cleanup.
 
 ---
 
-## 3. Inconsistent Table Collection (Q2 vs Q3)
-
-**Problem:** Q2 2025 extraction collected only 4 tables → 59 rows. Q3 2025 collected 32 tables → 144 rows. Same BDC, same structure; collection is inconsistent.
-
-**Possible causes:**
-- Section/header iteration stopping too early
-- Table matching (text overlap) failing for some tables
-- Year-end section skip affecting adjacent current-quarter sections
-- `processed_table_indices` or iteration order differences by filing
-
-**Status:** Root cause not fully diagnosed. Need to compare table discovery and matching between Q2 and Q3 runs.
+### MFIC — investment_type embedded in company_name, 100% blank type
+- **Router:** LLM_TICKERS → html_soi_parser
+- **Symptom:** 254/254 rows have blank `investment_type`. Company names contain `,Common Stock` / `,Term Loan` / `,Revolver` suffixes — e.g. `"FC2 LLC,Term Loan"`, `"Surf Opco LLC,Revolver"`.
+- **Root cause:** MFIC's HTML table doesn't have a separate investment_type column — the instrument type is appended to the company name in the HTML. html_soi_parser reads the full string into `company_name` and finds no type column.
+- **Fix:** Add MFIC to the ticker-specific cleanup in `standardization_rules.py` to split on `,` and extract the trailing type token as `investment_type`. Alternatively move MFIC to DSPy_TICKERS (DSPy handles this correctly).
 
 ---
 
-## 4. Equity vs Debt – No Filtering
-
-**Problem:** Some extractions include Common Equity, Preferred Equity, Warrants, Junior Secured. User expects ~140 **debt** investments only (First Lien, Revolver, Delayed Draw, etc.).
-
-**Evidence:** Q2 file had 102+ equity-related rows. Q3 had none.
-
-**Possible causes:**
-- Q3 tables happened to be debt-only; Q2 pulled from exhibits/sections that include equity
-- No explicit filter on `investment_type`
-
-**Potential fix:** Post-process filter or CLI option to exclude equity types (Common Equity, Preferred Equity, Warrant, etc.).
+### NEWT — remove from pipeline
+- **Router:** LLM_TICKERS → html_soi_parser
+- **Symptom:** Only 6 rows per period, all JV interests and equity (`NCL JV`, `TSO JV`, `EMCAP Loan Holdings`). Not a meaningful BDC portfolio view.
+- **Root cause:** Newtek Business Services converted to a bank (Newtek Bank) in 2023. Its BDC investment portfolio is now tiny — just a handful of legacy JV positions. The data extracted is technically correct but not useful.
+- **Fix:** Remove NEWT from LLM_TICKERS in `process_all_bdcs.py`. Optionally delete existing NEWT frontend data files or leave as historical artifact.
 
 ---
 
-## 5. File Overwrite / Stale Output
-
-**Problem:** Old CSV output not reliably replaced. User saw 575 lines when a newer run should have produced 59 (or ~140 after fixes).
-
-**Fix implemented:** `output_path.unlink()` before writing in `_save_csv_output` to force a clean overwrite.
-
----
-
-## 6. Multiple Entities (Monroe + MRCC Fund)
-
-**Problem:** MRCC 10-Q has two schedules: Monroe Capital Corporation and MRCC Senior Loan Fund I, LLC. Each has current quarter + prior year-end. Without proper filtering, we get 4x the intended rows.
-
-**Status:** Year-end exclusion and dedup should address this if applied correctly.
+### OFS — generally OK, some blanks
+- **Router:** XBRL_TICKERS
+- **Symptom:** 106 rows, 6 blank fair_value, 29 blank principal. Negative fair values appear on undrawn revolvers/delayed draws (e.g. `-3`, `-8`).
+- **Root cause:** Blank principals are equity positions (correct). Blank fair_values may be unfunded commitments or zero-value positions. Negative fair values on revolvers are upfront fees — technically correct per BDC accounting.
+- **Fix:** Minor — confirm the 6 blank fair_value rows are genuinely $0 (check SEC filing). If yes, no code change needed. Optionally normalize negative fv to `0` for display. No structural fix required.
 
 ---
 
-## Checklist for Correct Extraction
-
-- [ ] Year-end sections skipped (header contains Dec 31 prior year)
-- [ ] Year-end tables skipped (table/context contains Dec 31 prior year)
-- [ ] No break that stops collection early—only skip, then filter
-- [ ] `current_quarter_tables` filter applied before LLM
-- [ ] Dedup prefers later maturity when company + type + principal match
-- [ ] Output file explicitly deleted before write
-- [ ] Same number of tables collected for comparable quarters (Q2 vs Q3)
-- [ ] Optional: filter to debt-only if user wants ~140 rows
+### OXSQ — blank fair_value on CLO equity tranches
+- **Router:** DSPY_TICKERS
+- **Symptom:** 122 rows, 16 with blank fair_value. Blank rows include CLO equity tranches (`Telos CLO 2014-5 Ltd.`, `Venture XX Ltd.`) and some first lien positions.
+- **Root cause:** CLO equity fair values are sometimes zero or omitted in the filing table. DSPy may also be dropping values when the table layout is ambiguous. Naming itself is OK (CLO tranche names are verbatim from the filing).
+- **Fix:** For CLO equity blanks — these may be genuinely $0 or unlisted. For first lien blanks — re-run with `--force` and check the raw table text. If DSPy is dropping numeric cells, adjust the chunking so these rows have more context. Low priority.
 
 ---
 
-## 7. Industry Misclassification (e.g. Advanced Aircrew → Other)
-
-**Problem:** Some companies are aviation/aerospace but appear under a generic section in the filing (e.g. BCSF "Services: Business Advanced Aircrew..."). They then get industry "Other" or "Business Services" instead of "Aerospace & Defense".
-
-**Evidence:** Advanced Aircrew (aviation training) showed as **Other**; same schedule lists ATS, BTX Precision, Forward Slope, GSP Holdings as **Aerospace & Defense**.
-
-**Fix implemented:**
-- **standardization_rules.py**: Added "aircrew" / "air crew" to Aerospace & Defense keywords in `_INDUSTRY_RULES`. In `clean_company_name`, when the cleaned company name contains "aircrew", set `extracted_industry = "Aerospace & Defense"`.
-- **restandardize / post_process**: When applying `extracted_industry`, overwrite industry if it is empty **or** "Other" (so existing rows with Other get corrected).
-- **BCSF "Non-controlled/Non-Affiliated Investments {Industry} "**: Many BCSF rows had the full prefix in `company_name` and empty/Other `industry`. BCSF ticker cleanup now strips "Non-controlled/Non-Affiliated Investments " plus any of the filing’s industry phrases (Aerospace & Defense, Automotive, Beverage, Capital Equipment, Chemicals, Construction & Building, Consumer Goods: *, FIRE: Finance/Insurance, Healthcare & Pharmaceuticals, Services: Business, etc.) and sets `extracted_industry` to the matching canonical industry. So all such BCSF rows get both a cleaned company name and the correct industry when restandardize or post_process runs.
-
-**Similar patterns (other tickers):**
-- **TCPC**: "Equity Securities {sector} {Company}" (e.g. "Equity Securities Internet Software and Services Domo") was not stripped; industry stayed empty/Other. Cleanup now strips "Equity Securities " + sector and sets `extracted_industry` (Internet Software and Services → Software & Technology, Professional Services → Business Services, Healthcare Providers and Services → Healthcare, Software → Software & Technology).
-- **TRIN**: "Portfolio Company Warrant Investments United {Company}" (no "States") and "Portfolio Company Equity Investments Canada {Company}" were not fully stripped. Cleanup now strips these variants and "United States " after "Portfolio Company Debt Securities- " so company name and sector parsing work correctly.
-
-**Inferring industry from company name keywords:** When industry is still empty/Other after prefix cleanup, restandardize and post_process now try `normalize_industry(cleaned_company_name)`. If the company name contains sector keywords (e.g. "Technologies", "Software", "Healthcare", "Pharma") from the same rules used for industry strings, that canonical category is applied. So e.g. "Forescout Technologies Inc." → Software & Technology. Only used when the result is a canonical category (not "Other").
-
-**Propagation by company_id:** After restandardize, `restandardize_all.py` runs `propagate_industries()`: for each row with industry Other/empty, if the same `company_id` has a non-Other industry in another file, that industry is filled in. This fixes the bulk of remaining Other when the same company appears in multiple BDCs or periods with industry set in at least one.
+### PFX — 100% blank investment_type, possible unit scale issue
+- **Router:** LLM_TICKERS → html_soi_parser
+- **Symptom:** 73/73 rows have blank `investment_type`. Fair values appear in raw dollars (e.g. 4,143,180) while principals are also raw dollars but different magnitudes. One position (Adamas Trust) shows fv=4,143,180 vs principal=167,876 — implying FV is 25× principal, which is wrong; likely a column mapping error.
+- **Root cause:** html_soi_parser cannot find the investment_type column in PFX's HTML table. PFX's table format is non-standard (Phoenix Senior Secured Debt, Inc. / PennantPark Floating Rate Capital). Column mapping failure is causing fair_value and principal to be read from wrong columns in some rows.
+- **Fix:** Move PFX to DSPy_TICKERS. DSPy reads column headers contextually and handles non-standard layouts far better than the rule-based parser.
 
 ---
 
+### PNNT — IDK, possibly OK
+- **Router:** XBRL_TICKERS
+- **Symptom:** 217 rows, only 2 blank fair_value, 0 blank type. Some negative fair values (`-10` for Arcfield). Companies appear 2–3 times (multiple tranches, unfunded commitments at $0) which is correct BDC behavior.
+- **Root cause:** Unknown — data may be mostly correct. Possible issues: (1) some company names have XBRL artifact prefixes not yet caught by PNNT cleanup; (2) earlier periods (2023–2024) may have higher blank rate from PFLT/PNNT extraction bugs that were fixed in the March 2026 overhaul.
+- **Fix:** Audit older PNNT periods (2023–2024) for blank company_name rates. If blank rate is still high, re-run pipeline on those periods. For negative fv: acceptable (unfunded revolver fees).
+
 ---
 
-## 8. XBRL Tickers: Missing Industry and Maturity Date
+### PSBD — 100% wrong investment_type (all "Other Equity")
+- **Router:** XBRL_TICKERS
+- **Symptom:** 80/80 rows have `investment_type = "Other Equity"`. PSBD (Palmer Square BDC) holds mostly first lien senior secured loans. Zero fair_value blanks otherwise.
+- **Root cause:** PSBD's XBRL instance uses a non-standard `InvestmentTypeAxis` dimension where all positions share a single member that maps to "Other Equity" in the XBRL extractor's member-to-type mapping. The actual investment types (First Lien, Second Lien, etc.) are only in the HTML table.
+- **Fix:** Either (a) add PSBD to the HTML enrichment path that reads investment_type from the HTML SOI table (extend `_html_enrich_rows` to fill `investment_type` in addition to `industry` and `maturity_date`), or (b) move PSBD to DSPy_TICKERS. Option (a) is preferred since PSBD's XBRL numbers are correct — only the type is wrong.
 
-**Problem:** Many XBRL-extracted tickers (GBDC, ARCC, MAIN, etc.) had 100% missing `industry` and `maturity_date` because those fields are not tagged in their XBRL instance documents — they exist only in the HTML filing table.
+---
 
-**Root cause:** Confirmed via XBRL debug files. For example, GBDC's XBRL dimensions only contain company name, investment type, and affiliation category; `InvestmentMaturityDate` and industry are never tagged. The values exist solely in the rendered HTML Schedule of Investments table.
+### RAND — blank fair_values on equity positions (DSPy extraction gaps)
+- **Router:** DSPY_TICKERS
+- **Symptom:** 52 rows, 14 blank fair_value (27%), 43 blank principal (83%). The blank principals are correct (equity has no principal). The 14 blank fair_values are the problem — some are equity/preferred positions that have a dollar fair value in the filing but DSPy left blank.
+- **Root cause:** RAND (Rand Capital) uses a table layout where preferred equity and warrant values appear in a column that DSPy misidentifies or skips. Some positions genuinely have $0 fair value; others are extraction failures.
+- **Fix:** Re-run with `--force` and inspect the raw table text for blank-fv positions. If DSPy is reading the wrong column, the fix is in the `section_context` or the chunk boundary — try smaller chunk sizes. Also only 4 periods available (2025 only) — add historical backfill with `--years-back 3`.
 
-**Solution implemented: HTML enrichment layer** (`src/extraction/html_soi_parser.py`)
+---
 
-After XBRL rows are extracted, `_html_enrich_rows` in `xbrl_investment_extractor.py`:
-1. Retrieves the main HTML filing from `text_map` (no extra HTTP request — already fetched by `fetch_filing_by_index_url`)
-2. Calls `extract_soi_enrichment(html_content, ticker, period_end)` which parses the HTML SOI table(s) using `HTMLSOIParser._parse_table` logic
-3. Builds lookup dicts: `industry_map[company_key]`, `maturity_by_principal[(company_key, principal_key)]`, `maturity_default_map[company_key]`
-4. Fills any missing `industry` and `maturity_date` in XBRL rows by normalized company name + principal amount
+### SSSS — blank fair_values and duplicate rows on multi-tranche equity
+- **Router:** DSPY_TICKERS
+- **Symptom:** 99 rows, 28 blank fair_value (28%), 8 duplicate `(company, type, fv)` keys. Orchard Technologies appears 3+ times under Preferred Equity — some with FV, some blank.
+- **Root cause:** SSSS (SuRo Capital) holds many distinct tranches of the same company (Series A, Series B, Series C preferred — all tagged as "Preferred Equity"). When FV is blank for some tranches, dedup can't distinguish them (same key). SSSS filings also have complex table layouts with cross-page continuation.
+- **Fix:** (1) For dedup: Preferred Equity dedup should also key on `principal_amount` or `cost` when available. (2) For blank fv: these may be genuinely $0 (liquidation/write-off). Re-run and check the raw table. (3) Only 4 periods — add historical backfill.
 
-**HTML table parsing fixes required:**
+---
 
-*Fix 1 — Missing "Portfolio Company" column header:* Some BDCs (e.g. GBDC) omit the column header label for the company name column entirely. `_find_header_row` now detects this case: if ≥3 financial columns are identified but no `company_name` column, the first visible non-hidden unmatched column is inferred as `company_name`.
+### WHF — blank fair_values on unfunded commitments
+- **Router:** XBRL_TICKERS
+- **Symptom:** 246 rows, 14 blank fair_value (6%), 82 blank principal (33%). Data otherwise looks correct.
+- **Root cause:** Blank principals are equity/warrant positions (correct). Blank fair_values are mostly unfunded revolvers and delayed draws that have $0 or immaterial fair value per BDC accounting — this is standard.
+- **Fix:** Low priority. Optionally normalize blank fv to `0` for unfunded commitments for cleaner display. No structural fix needed. Monitor for regression.
 
-*Fix 2 — Cross-table industry context carry:* GBDC splits the SOI into ~30 separate HTML tables (one per industry section), and continuation tables have no section header. `_parse_table` now reads `_carry_industry` / `_carry_investment_type` attributes from the parser instance, and saves them back after each table. `extract_soi_enrichment` initializes these carry attrs so industry context flows from each table into the next.
+---
 
-*Fix 3 — Investment type embedded in XBRL company name:* Older GBDC filings embedded the investment type in the XBRL dimension string (e.g. `"AAH TOPCO LLC One stop 1"`). `_company_key` now strips trailing investment-type keywords (`one stop`, `first lien`, `second lien`, `senior secured`, `term loan`, `revolver`, `preferred`, etc.) and trailing numeric indices from the end of normalized company names, so XBRL and HTML keys match.
+## Systemic Issues
 
-**Results (tested GBDC and ARCC, last 4 quarters each):**
+### A. Year-End / Prior Period Data Inclusion
+**Problem:** 10-Q filings include comparative tables for prior year-end. Without filtering, row counts inflate ~2×.
+**Fix:** Logic exists in `is_year_end_table` (table_detection.py). Confirmed fixed for TPVG (Dec 31 case). Monitor other tickers with Dec 31 period-end.
 
-| Ticker | Industry fill | Maturity fill | Notes |
-|--------|-------------|--------------|-------|
-| GBDC   | ~87–88%      | ~63–67%       | Was 5–25% before fixes |
-| ARCC   | ~95–97%      | ~69–79%       | Was ~72% missing before |
+### B. Duplicate Holdings (Same Position, Different Periods)
+**Problem:** Same company + investment type + principal appears with different maturity dates.
+**Fix:** `deduplicate_csv_rows` in `data_cleaning/deduplicator.py` groups by (company_base, investment_type) and keeps the row with the later maturity_date. Working.
 
-Remaining gap for industry: equity investments (warrants, LP interests, common stock) that appear under equity-only section headers and may have slightly different company name formatting. Remaining gap for maturity: equity investments don't have maturity dates; floating rate precision differences affect principal_key matching.
+### C. html_soi_parser Fails Non-Standard Tables
+**Problem:** html_soi_parser uses rule-based column detection. When a BDC's table doesn't have standard column headers or embeds multiple fields in one cell, it produces 0 rows, blank types, or wrong values.
+**Affected tickers:** ICMB, MFIC, PFX (blank investment_type), FSK (83% blank type, share-count principal values).
+**Fix:** Move affected tickers to DSPy_TICKERS. DSPy's LLM-based extraction handles non-standard layouts correctly.
 
-**Relevant files:**
-- `src/extraction/html_soi_parser.py` — `_find_header_row`, `_parse_table`, `_company_key`, `extract_soi_enrichment`
-- `src/extraction/xbrl_investment_extractor.py` — `_get_main_html_content`, `_html_enrich_rows`, `process_filing`
+### D. XBRL investment_type Dimension Mapping Failures
+**Problem:** Some BDC XBRL filers use non-standard `InvestmentTypeAxis` members. The extractor maps unknown members to "Other Equity" as a fallback.
+**Affected tickers:** PSBD (100% Other Equity).
+**Fix:** Extend `_html_enrich_rows` to fill `investment_type` from the HTML SOI table when XBRL provides only a fallback value.
+
+### E. Missing Fair Values on Legitimate $0 Positions
+**Problem:** Many equity, warrant, CLO tranche, and unfunded commitment positions genuinely have $0 or unlisted fair value. These appear as blank in the output but are not extraction errors.
+**Affected tickers:** SSSS, RAND, OXSQ (CLO equity), OFS, WHF (revolvers).
+**Fix:** Document as expected behavior. Optionally display as `$0` instead of blank in the frontend for these investment types.
+
+---
+
+## Priority Queue
+
+| Priority | Ticker | Issue | Effort |
+|----------|--------|-------|--------|
+| High | ICMB | 1–2 rows, complete failure | Low — move to DSPy |
+| High | MFIC | 100% blank type | Low — move to DSPy or add cleanup rule |
+| High | PFX | 100% blank type + column mapping wrong | Low — move to DSPy |
+| High | PSBD | 100% wrong type (Other Equity) | Medium — HTML enrich investment_type |
+| High | NEWT | Useless data (bank, not BDC) | Trivial — remove from pipeline |
+| Medium | FSK | 83% blank type + share-count principal | In progress — DSPy run (see task bkqu4pcnt) |
+| Medium | RAND | 27% blank fair_value, only 4 periods | Medium — re-run + backfill |
+| Medium | SSSS | 28% blank fv, dedup gaps | Medium — dedup fix + backfill |
+| Low | LIEN | Junk names in some periods | Low — add cleanup rules |
+| Low | OXSQ | 16 blank fv (CLO equity, likely correct) | None needed |
+| Low | OFS | 6 blank fv (unfunded, correct) | None needed |
+| Low | WHF | 14 blank fv (unfunded, correct) | None needed |
+| Low | PNNT | Possibly OK, audit older periods | Low |
+
+---
+
+## Historical Issues (Fixed)
+
+### 1. TPVG 10-K double-counting
+Table detection wrongly included comparative Dec 31 SOI from 10-K. Fixed in `table_detection.py` by using "as of" anchored patterns for Dec 31 period-end detection.
+
+### 2. PFLT/PNNT ~50% blank company_name
+XBRL `elif` block was clearing all "in Non-Controlled ... First Lien Secured Debt {Company}" strings. Fixed with `no_issuer_m` pattern. Result: PFLT 3.7% blank, PNNT 1.2% blank.
+
+### 3. CGBD company name prefixes
+"Investment Non-Affiliated Issuer {Type} {Company}" strings stripped. Section-only strings cleared.
+
+### 4. GSBD garbled names
+Expanded GSBD regex to handle any geography. Added dimension-value filters for rate-only strings, maturity dates, etc.
+
+### 5. XBRL member strings in reference_rate
+`_XBRL_MEMBER_TO_RATE` mapping added. Handles `YYYYMMDD#MEMBERNAME` format for SOFR, LIBOR, CORRA, CDOR, BBSW, etc.
+
+### 6. RWAY garbled company names (69% garbled from html_soi_parser)
+Moved to DSPY_TICKERS. DSPy result: 0% garbled, ~100% rate coverage.
+
+### 7. OXSQ 0 rows from html_soi_parser
+"COMPANY/INVESTMENT" header format not recognized. Moved to DSPY_TICKERS. Now 108–150 rows per filing.
+
+### 8. RAND 12–19 rows from html_soi_parser
+Moved to DSPY_TICKERS. Now 40–65 rows per filing.
+
+### 9. FSK bad period-end files (2025-03-31, 2025-06-30, 2025-09-30)
+Old DSPy run used period-end dates instead of filing dates. Deleted; replaced with correct filing-date-named files.
+
+### 10. LIEN post_process_extraction error
+`return ''` → `return ('', None)` at lines 838/840/842 in `_apply_ticker_specific_company_cleanup`.
 
 ---
 
 ## Relevant Files
 
-- `src/extraction/llm_table_scraper.py` – main extraction (HTML/LLM path), year-end detection, dedup, table collection
-- `src/extraction/xbrl_investment_extractor.py` – XBRL extraction + HTML enrichment
-- `src/extraction/html_soi_parser.py` – HTML SOI table parser, cross-source company key normalization
-- `src/extraction/sec_api_client.py` – filing fetch, quarter selection
+- `process_all_bdcs.py` — ticker routing (XBRL / LLM / DSPy / Custom)
+- `src/extraction/dspy_table_scraper.py` — DSPy LLM extractor
+- `src/extraction/html_soi_parser.py` — HTML rule-based parser (LLM_TICKERS)
+- `src/extraction/xbrl_investment_extractor.py` — XBRL extractor + HTML enrichment
+- `src/extraction/table_detection/detection.py` — year-end table filter
+- `src/extraction/data_cleaning/deduplicator.py` — cross-period dedup
+- `src/processing/standardization_rules.py` — company name + industry cleanup
+- `src/processing/post_process_extraction.py` — cleaning orchestration

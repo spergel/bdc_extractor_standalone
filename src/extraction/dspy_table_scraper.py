@@ -692,6 +692,35 @@ class DSPyTableScraper:
         if dupes:
             logger.info("Removed %d duplicate rows from continuation tables", dupes)
 
+        # 3. Normalize all monetary fields to thousands (pipeline standard).
+        #    Gemini extracts numbers exactly as shown, so we convert here.
+        _MONETARY_FIELDS = (
+            "principal_amount", "amortized_cost", "fair_value",
+            "cost", "commitment_limit", "undrawn_commitment",
+        )
+        if unit_scale == "millions":
+            # filing shows values in $M → multiply by 1000 to get $000s
+            factor = 1000.0
+        elif unit_scale == "units":
+            # filing shows raw dollars → divide by 1000 to get $000s
+            factor = 0.001
+        else:
+            factor = None  # already in thousands, no-op
+
+        if factor is not None:
+            logger.info(
+                "Scaling monetary fields by %.4f (unit_scale=%s → thousands)",
+                factor, unit_scale,
+            )
+            for r in deduped:
+                for field in _MONETARY_FIELDS:
+                    val = r.get(field, "").strip()
+                    if val:
+                        try:
+                            r[field] = str(round(float(val) * factor, 4))
+                        except ValueError:
+                            pass
+
         return deduped
 
     # ------------------------------------------------------------------
