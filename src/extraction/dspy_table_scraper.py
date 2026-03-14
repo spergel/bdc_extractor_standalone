@@ -721,6 +721,49 @@ class DSPyTableScraper:
                         except ValueError:
                             pass
 
+        # 4. Two-pass median outlier detection on fair_value.
+        #    Some filings (e.g. FSK 10-K) mix millions-denominated USD positions
+        #    with raw-currency foreign positions (EUR par in units).  After ×1000
+        #    scaling the raw-currency rows become 1,000,000× too large.  Detect
+        #    these by comparing each fair_value to the filing median: if a value
+        #    is >1000× the median, clear it so the row is still kept but flagged.
+        fvs = []
+        for r in deduped:
+            try:
+                v = float(r.get("fair_value", "").strip())
+                if v > 0:
+                    fvs.append(v)
+            except (ValueError, AttributeError):
+                pass
+
+        if len(fvs) >= 10:
+            import statistics
+            median_fv = statistics.median(fvs)
+            outlier_threshold = median_fv * 10_000  # 4 orders of magnitude above median
+            cleared = 0
+            for r in deduped:
+                try:
+                    v = float(r.get("fair_value", "").strip())
+                    if v > outlier_threshold:
+                        logger.debug(
+                            "Clearing outlier fair_value=%.0f (median=%.0f, threshold=%.0f) for %s",
+                            v, median_fv, outlier_threshold, r.get("company_name", "?"),
+                        )
+                        r["fair_value"] = ""
+                        # also clear principal/cost if they look like the same raw-unit problem
+                        for field in ("principal_amount", "amortized_cost", "cost"):
+                            try:
+                                fv2 = float(r.get(field, "").strip())
+                                if fv2 > outlier_threshold:
+                                    r[field] = ""
+                            except (ValueError, AttributeError):
+                                pass
+                        cleared += 1
+                except (ValueError, AttributeError):
+                    pass
+            if cleared:
+                logger.info("Cleared %d outlier fair_value rows (threshold=%.0f, median=%.0f)", cleared, outlier_threshold, median_fv)
+
         return deduped
 
     # ------------------------------------------------------------------
