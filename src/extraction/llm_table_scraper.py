@@ -498,16 +498,17 @@ class LLMTableScraper:
                     
                     # Find all tables that come after this schedule header
                     in_schedule_section = False
+                    in_prior_year_section = False  # stateful: once we hit a year-end table, skip the rest
                     consecutive_non_investment_tables = 0
                     max_consecutive_non_investment = 3  # Allow up to 3 non-investment tables before stopping
-                    
+
                     for i in range(header_idx, len(all_elements)):
                         element = all_elements[i]
-                        
+
                         if i == header_idx:
                             in_schedule_section = True
                             continue
-                        
+
                         if in_schedule_section:
                             # Check for stop markers (less aggressive - only stop on major section breaks)
                             if element.name in ['h1', 'h2', 'h3']:
@@ -516,16 +517,22 @@ class LLMTableScraper:
                                     # Only stop if it's a major section header (h1, h2, h3)
                                     logger.info(f"Found major stop marker in {doc.filename}: {element.get_text(strip=True)[:100]}, stopping this section")
                                     break
-                            
+
                             # If it's a table, check if it's an investment table
                             if element.name == 'table':
                                 table_text = element.get_text(separator=' ', strip=True).lower()
-                                
+
                                 # Expanded criteria: look for investment-related content
                                 is_investment_table = self._is_investment_table(table_text)
-                                
+
                                 if is_investment_table:
                                     consecutive_non_investment_tables = 0  # Reset counter
+
+                                    # Once we've entered the prior-year comparative section, stop adding tables.
+                                    # This saves tokens and prevents double-counting.
+                                    if in_prior_year_section:
+                                        logger.debug(f"Skipping table in {doc.filename} (still in prior year section)")
+                                        continue
 
                                     # Preceding elements often contain date (e.g. "Schedule - December 31, 2024")
                                     context_before = ' '.join(
@@ -550,7 +557,8 @@ class LLMTableScraper:
                                                         investment_tables.append((html, text, table_num, table_id))
                                                         logger.info(f"Added investment schedule table {table_num} from {doc.filename} ({table_id})")
                                                     else:
-                                                        logger.info(f"Skipping year-end table {table_num} from {doc.filename} ({table_id})")
+                                                        logger.info(f"Entering prior year section at table {table_num} in {doc.filename} — stopping this header's tables")
+                                                        in_prior_year_section = True
                                                     processed_table_indices.add(table_num)
                                                 break  # Found match, move to next element
                                 else:
@@ -681,18 +689,24 @@ class LLMTableScraper:
     def _fallback_table_detection(self, tables, filing_date: str = None, filing_type: str = "10-Q", period_end_date: str = None):
         """Fallback: simple content-based detection with expanded criteria."""
         investment_tables = []
+        in_prior_year_section = False  # stateful: once we hit a year-end table, skip the rest
         for html, text, table_num, table_id in tables:
             text_lower = text.lower()
-            
+
             # Use the same expanded criteria as the main detection
             if self._is_investment_table(text_lower):
+                # Once in the prior-year comparative section, stop adding tables
+                if in_prior_year_section:
+                    logger.debug(f"Fallback: Skipping table {table_num} (in prior year section)")
+                    continue
                 # Filter out year-end tables if filing_date is provided (only for 10-Q)
                 if filing_date and self._is_year_end_table(html, text, filing_date, "", filing_type, period_end_date):
-                    logger.info(f"Fallback: Skipping year-end table {table_num}")
+                    logger.info(f"Fallback: Entering prior year section at table {table_num} — stopping")
+                    in_prior_year_section = True
                     continue
                 investment_tables.append((html, text, table_num, table_id))
                 logger.info(f"Fallback: Added table {table_num} with investment content")
-        
+
         return investment_tables
 
     def extract_table_context(self, html_content: str, table_index: int) -> str:

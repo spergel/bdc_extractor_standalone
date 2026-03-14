@@ -692,6 +692,76 @@ class DSPyTableScraper:
         if dupes:
             logger.info("Removed %d duplicate rows from continuation tables", dupes)
 
+        # 2b. Cross-period dedup safety net.
+        #     10-Q filings include comparative prior-year-end data. If table detection
+        #     didn't filter those tables, we get ~2× rows: one current-period row and
+        #     one prior-year row per position, with the SAME (company, type, maturity)
+        #     but slightly different principal/FV.  Keep the FIRST occurrence of each
+        #     (company, type, maturity_year_month) group — that's the current period.
+        def _mat_ym(s: str) -> str:
+            """Normalize maturity to 'YYYY-MM' for fuzzy matching."""
+            import re as _re
+            s = (s or "").strip()
+            # YYYY-MM-DD
+            m = _re.match(r'(\d{4})-(\d{2})', s)
+            if m:
+                return f"{m.group(1)}-{m.group(2)}"
+            # MM/DD/YY or MM/YYYY
+            m = _re.match(r'(\d{1,2})/(\d{2,4})', s)
+            if m:
+                mo, yr = m.group(1).zfill(2), m.group(2)
+                if len(yr) == 2:
+                    yr = "20" + yr
+                return f"{yr}-{mo}"
+            # MM/YYYY written as YYYY (just year)
+            return s[:7] if len(s) >= 7 else s
+
+        # Build cross-period dedup: group by (company, type, maturity_ym) then
+        # check if a near-duplicate principal already exists in the group.
+        # Two rows are cross-period duplicates if they share (company, type, mat_ym)
+        # AND their principal amounts are within 30% of each other (same loan,
+        # different period balance).  Legitimate multi-tranche positions differ
+        # by more than 30% so they are kept.
+        from collections import defaultdict as _dd
+        _group_principals: dict = _dd(list)  # key -> list of (principal_float, row_idx)
+        cross_period_deduped: List[Dict[str, str]] = []
+        for r in deduped:
+            co = r.get("company_name", "").strip().lower()
+            tp = r.get("investment_type", "").strip().lower()
+            mat = _mat_ym(r.get("maturity_date", ""))
+            key = (co, tp, mat)
+            try:
+                pri = float(r.get("principal_amount", "").strip() or "0")
+            except ValueError:
+                pri = 0.0
+            # Check if any existing principal in this group is within 30%
+            is_dup = False
+            if mat:
+                for seen_pri in _group_principals[key]:
+                    if seen_pri == 0 and pri == 0:
+                        is_dup = True
+                        break
+                    if seen_pri > 0 and pri > 0:
+                        ratio = min(seen_pri, pri) / max(seen_pri, pri)
+                        if ratio >= 0.70:  # within 30% → same loan, different period
+                            is_dup = True
+                            break
+            if is_dup:
+                logger.debug(
+                    "Cross-period dedup: dropping %s / %s / %s (pri=%.0f)",
+                    co, tp, mat, pri,
+                )
+                continue
+            _group_principals[key].append(pri)
+            cross_period_deduped.append(r)
+        cross_dupes = len(deduped) - len(cross_period_deduped)
+        if cross_dupes:
+            logger.info(
+                "Removed %d cross-period duplicate rows (prior-year comparative data)",
+                cross_dupes,
+            )
+        deduped = cross_period_deduped
+
         # 3. Normalize all monetary fields to thousands (pipeline standard).
         #    Gemini extracts numbers exactly as shown, so we convert here.
         _MONETARY_FIELDS = (
