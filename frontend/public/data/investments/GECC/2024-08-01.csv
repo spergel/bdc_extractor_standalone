@@ -1,101 +1,61 @@
-company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
-Advancion,co_cecc5e9a9fd0,Second Lien,Chemicals & Materials,13.19 %,,SOFR,7.75 %,8.50 %,2022-09-21,2028-11-24,1625,,1543,,1524,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-"ADS Tactical, Inc.",co_f6fe2bd14164,First Lien,Aerospace & Defense,13.25 %,,Prime,4.75 %,5.75 %,2023-11-28,2026-03-19,3856,,3856,,3849,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-American Coastal Insurance Corp.,co_aa016be18373,Unsecured Debt,Insurance,7.25 %,,Fixed,,,2022-12-20,2027-12-15,13000,,12139,,7595,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-"Arcline FM Holdings, LLC",co_50538b3fe821,First Lien,Aerospace & Defense,10.35 %,,SOFR,4.75 %,5.50 %,2024-02-08,2028-06-23,1990,,1991,,1990,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-"Avation Capital SA 65 Kampong Bahru Road, #01-01 Singapore 169370",co_7bff369f0ac8,Second Lien,Aircraft,8.25 %,,Fixed,,,2022-02-04,2026-10-31,4671,,4239,,4298,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Blackstone Secured Lending,co_32e454a9dde3,Common Equity,Closed-End Fund,,,N/A,,,2022-08-18,,313999,,9615,,9983,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,GECC,2024-08-01,GECC,2024-08-01
-"Blue Ribbon, LLC",co_c4f2f6705335,First Lien,Food & Beverage,11.57 %,,SOFR,6.00 %,6.75 %,2023-02-06,2028-05-07,5778,,4363,,4467,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-"Coreweave Compute Acquisition Co. II, LLC",co_0978cc636b37,First Lien,Software & Technology,14.95 %,,SOFR,9.62 %,9.62 %,2023-07-31,2028-07-31,12375,,12622,,12176,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-"Coreweave Compute Acquisition Co. IV, LLC",co_a61906a17a1b,First Lien,Software & Technology,11.33 %,,SOFR,6.00 %,6.00 %,2024-05-29,2030-05-16,314,,309,,309,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-"Creation Technologies, Inc.",co_9d2a7f348cef,First Lien,Software & Technology,11.07 %,,SOFR,5.50 %,6.00 %,2024-02-12,2028-10-05,997,,951,,970,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-"Crown Subsea Communications Holding, Inc.",co_f475b894e27c,First Lien,Telecommunications,10.08 %,,SOFR,4.75 %,5.50 %,2024-01-26,2031-01-27,1800,,1801,,1783,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-"CSC Serviceworks 35 Pinelawn Road, Suite",co_59f560cce657,First Lien,Business Services,9.6 %,,SOFR,4.00 %,4.75 %,2023-09-26,2028-03-04,2977,,2523,,2600,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-CW Opportunity 2 LP,co_ddb092eb1049,Partnership Interest,Software & Technology,,,N/A,,,2024-05-14,,6000,,6066,,6000,,,,,dspy_extracted|principal_scaled_down_1000x,GECC,2024-08-01,GECC,2024-08-01
-Eagle Point Credit Company Inc.,co_7a912e541242,Common Equity,Closed-End Fund,,,N/A,,,2022-08-18,,300000,,3015,,3090,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,GECC,2024-08-01,GECC,2024-08-01
-"ECL Entertainment, LLC",co_27c703fce7ba,First Lien,Media & Entertainment,9.34 %,,SOFR,4.00 %,4.00 %,2024-04-11,2030-08-31,400,,401,,399,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-EPIC Crude Services LP,co_1c14098d3b25,First Lien,Energy,10.61 %,,SOFR,5.00 %,6.00 %,2024-02-08,2026-03-02,1995,1997,1996,,1997,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-First Brands Inc.,co_53cb28c1a725,Second Lien,Transportation & Logistics,14.14 %,,SOFR,8.50 %,9.50 %,2021-03-24,2028-03-30,12545,12243,12378,,12243,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-First Brands Inc.,co_53cb28c1a725,First Lien,Transportation & Logistics,10.59 %,,SOFR,5.00 %,6.00 %,2023-06-09,2027-03-30,7622,7517,7585,,7517,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-First Brands Inc.,co_53cb28c1a725,First Lien,Transportation & Logistics,10.59 %,,SOFR,5.00 %,6.00 %,2024-01-19,2027-03-30,1792,1779,1783,,1779,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Flexsys Holdings,co_fdf6c33899b5,First Lien,Chemicals & Materials,10.85 %,,SOFR,5.25 %,6.00 %,2022-11-04,2028-11-01,4912,4061,4642,,4061,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Florida Marine LLC,co_04b02011caf9,First Lien,Transportation & Logistics,13.86 %,,SOFR,8.40 %,10.40 %,2023-03-17,2028-03-17,5790,5659,5987,,5659,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Foresight Energy,co_780e4635a312,First Lien,Chemicals & Materials,13.43 %,,SOFR,8.00 %,9.50 %,2021-07-29,2027-06-30,5934,5959,5934,,5959,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Form Technologies LLC,co_363a7a91702f,First Lien,Industrials,10.2 %,,SOFR,4.75 %,5.75 %,2024-01-25,2025-07-22,995,955,950,,955,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-FS KKR Capital Corp.,co_4ee1e711995c,Common Equity,Automotive,,,N/A,,,2024-05-09,,150000,3041,2959,,3041,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,GECC,2024-08-01,GECC,2024-08-01
-GrafTech Global Enterprises Inc.,co_e19a7c8cdba9,First Lien,Industrials,9.88 %,,Fixed,,,2024-01-18,2028-12-15,1000,754,737,,754,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Great Elm Specialty Finance LLC,co_274440f466a4,Subordinated Debt,Financial Services,13.00 %,,Fixed,,,2023-09-01,2026-06-30,29733,29733,29733,,29733,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Great Elm Specialty Finance LLC,co_274440f466a4,Common Equity,Financial Services,,,N/A,,,2023-09-01,,87500,17567,15028,87.50,17567,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Greenfire Resources Ltd.,co_aa54a5e0036e,First Lien,Energy,12.00 %,,Fixed,,,2023-09-13,2028-10-01,6500,6385,6941,,6385,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Harvey Gulf Holdings LLC,co_673a6df69bc1,Other Debt,Transportation & Logistics,12.4 %,,SOFR,7.06 %,9.06 %,2024-02-28,2029-01-19,8784,8712,8753,,8712,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Loparex LLC,co_5e179b1706df,First Lien,Industrials,11.35 %,,SOFR,6.00 %,8.00 %,2024-04-24,2027-02-01,1790,1769,1769,,1769,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-LSF9 Atlantis Holdings LLC,co_1753b6bc8f3c,First Lien,Consumer & Retail,11.83 %,,SOFR,6.50 %,7.25 %,2024-02-12,2029-03-31,988,989,988,,989,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Lummus Technology Holdings,co_f48e428ebed1,Unsecured Debt,Chemicals & Materials,9.00 %,,Fixed,,,2022-05-17,2028-07-01,2500,2126,2520,,2126,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Mad Engine Global LLC,co_82f34b67b45f,First Lien,Consumer & Retail,12.6 %,,SOFR,7.00 %,8.00 %,2021-06-30,2027-07-15,4780,4305,3680,,4305,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Manchester Acquisition Sub LLC,co_19782064e0cc,First Lien,Chemicals & Materials,11.25%,,SOFR,5.75%,6.50%,2023-09-26,2026-11-01,6100,5661,5665,,5661,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Maverick Gaming LLC,co_28f75db82886,First Lien,Healthcare,12.8%,,SOFR,7.50%,8.50%,2021-11-16,2028-06-03,1476,1476,1476,,1476,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Maverick Gaming LLC,co_28f75db82886,First Lien,Healthcare,12.8%,12.80%,SOFR,7.50%,8.50%,2024-04-03,2028-06-03,5223,5953,4294,,5953,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-New Wilkie Energy Pty Ltd.,co_94d6ef1f3b62,First Lien,Chemicals & Materials,,,N/A,,,2023-04-06,2026-04-06,4935,4821,1234,,4821,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-New Wilkie Energy Pty Ltd.,co_94d6ef1f3b62,Warrants,Chemicals & Materials,,,N/A,,,2023-04-06,,1078899,-,-,,-,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-New Wilkie Energy Pty Ltd.,co_94d6ef1f3b62,Other Debt,Chemicals & Materials,16.00%,,Fixed,,,2024-02-22,2024-08-16,1110,1096,1110,,1096,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-New Wilkie Energy Pty Ltd.,co_94d6ef1f3b62,Other Debt,Chemicals & Materials,15.00%,,Fixed,,,2024-05-29,2024-08-29,99,90,99,,90,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-NICE-PAK Products Inc.,co_ac77d9d1a179,Other Debt,Consumer & Retail,18.10%,10.00%,SOFR,12.50%,13.50%,2022-09-30,2027-09-30,9099,8919,9181,,8919,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-NICE-PAK Products Inc.,co_ac77d9d1a179,Other Debt,Consumer & Retail,,,N/A,,,2022-09-30,2029-09-30,1449,-,1449,,-,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-NICE-PAK Products Inc.,co_ac77d9d1a179,Warrants,Consumer & Retail,,,N/A,,,2022-09-30,,880909,-,2316,2.56,-,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-PFS Holdings Corp.,co_53aae39dd10e,Common Equity,Food & Beverage,,,N/A,,,2020-11-13,,5238,12378,-,5.05,12378,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-PowerStop LLC,co_1f357e6106d5,First Lien,Automotive,10.2%,,SOFR,4.75%,5.25%,2024-02-09,2029-01-26,2331,2144,2271,,2144,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-ProFrac Holdings II LLC,co_b0bc18c68ff8,First Lien,Energy,12.81%,,SOFR,7.25%,9.75%,2023-12-27,2029-01-23,6732,6670,6717,,6670,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Research Now Group Inc.,co_f56b9233964e,Revolver,Media & Entertainment,10.07%,,SOFR,4.50%,4.50%,2019-01-29,2024-06-14,10000,10000,7844,,10000,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Research Now Group Inc.,co_f56b9233964e,Second Lien,Media & Entertainment,0%,,SOFR,0.00%,0.00%,2019-05-20,2025-12-20,8000,7977,289,,7977,,,,,dspy_extracted|fair_value_suspicious_vs_size,GECC,2024-08-01,GECC,2024-08-01
-Research Now Group Inc.,co_f56b9233964e,First Lien,Media & Entertainment,14.21%,,SOFR,8.75%,9.75%,2024-06-04,2024-08-17,308,302,308,,302,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Ruby Tuesday Operations LLC,co_1f7d49afa371,Other,Food & Beverage,11.44%,6.00%,SOFR,13.50%,14.50%,2021-02-24,2025-02-24,1921,,1895,,1921,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Ruby Tuesday Operations LLC,co_1f7d49afa371,Other,Food & Beverage,,21.44%,SOFR,16.00%,17.25%,2023-01-31,2025-02-24,666,,666,,666,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Ruby Tuesday Operations LLC,co_1f7d49afa371,Other,Food & Beverage,,,N/A,,,2021-02-24,,311697,,906,2.81,-,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Spencer Spirit Holdings Inc.,co_31b27ca706a9,Other,Consumer & Retail,,,SOFR,5.50%,5.50%,2024-06-25,2031-07-15,2700,,2680,,2680,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Stone Ridge Opportunities Fund LP. One Vanderbilt Ave. 65th Floor New York NY 10017,co_394bfcb28dc7,Other,Insurance,,,N/A,,,2023-01-01,,2379875,,3320,,2380,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,GECC,2024-08-01,GECC,2024-08-01
-Summit Midstream Holdings LLC,co_b0d60a3065a3,Other,Energy,9.50%,,Fixed,,,2021-10-19,2026-10-15,2000,,2056,,1920,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Thryv Inc.,co_c152595e00c6,Other,Media & Entertainment,,,SOFR,6.75%,7.50%,2024-04-30,2029-05-01,1730,,1757,,1713,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Trouvaille Re Ltd.,co_76cecb8c8020,Other,Insurance,,,N/A,,,2024-03-27,,100,,5000,,5000,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-TruGreen LP,co_2094298d8fe3,Other,Other,,,SOFR,4.00%,4.75%,2024-05-14,2027-11-02,1795,,1737,,1713,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-TruGreen LP,co_2094298d8fe3,Other,Other,,,SOFR,8.50%,9.25%,2024-05-14,2028-11-02,900,,701,,700,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-TRU Taj Trust,co_e9f013e18a36,Other,Consumer & Retail,,,N/A,,,2017-07-21,,16000,,49,2.75,611,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,GECC,2024-08-01,GECC,2024-08-01
-Universal Fiber Systems,co_17de53ba34fb,Other,Chemicals & Materials,9.25%,9.00%,SOFR,12.79%,13.79%,2021-09-30,2026-09-29,8196,,8030,,8133,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Universal Fiber Systems,co_17de53ba34fb,Other,Chemicals & Materials,9.25%,9.00%,SOFR,12.79%,13.79%,2021-09-30,2026-09-29,3160,,2921,,3129,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Universal Fiber Systems,co_17de53ba34fb,Other,Chemicals & Materials,,,N/A,,,2021-09-30,,3383,,84,1.50,-,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Vi-Jon,co_a4f69355e0dd,First Lien,Consumer & Retail,13.59%,2.00%,SOFR,10%,12.5%,2023-12-28,2028-12-28,8949,8702,8754,,8702,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-W&T Offshore Inc.,co_2f9481e6cc6e,Second Lien,Energy,11.75%,,Fixed,,,2023-01-12,2026-02-01,4816,4816,4953,,4816,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-"ADS Tactical, Inc.",co_f6fe2bd14164,First Lien,Aerospace & Defense,11.22 %,,SOFR,5.75 %,6.75 %,2023-11-28,2026-03-19,1971,1957,1945,,,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-APTIM Corp.,co_df1226a1b6a9,First Lien,Industrials,7.75 %,,Fixed,,,2019-03-28,2025-06-15,3950,3453,3719,,,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Blackstone Secured Lending,co_32e454a9dde3,Common Equity,Automotive,,,N/A,,,2022-08-18,,140000,3337,3870,,,,,,,dspy_extracted|fair_value_suspicious_vs_size,GECC,2024-08-01,GECC,2024-08-01
-"Coreweave Compute Acquisition Co. II, LLC",co_0978cc636b37,First Lien,Software & Technology,14.13 %,,SOFR,8.75 %,8.75 %,2023-07-31,2028-07-31,7472,7344,7342,,,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-"CSC Serviceworks 35 Pinelawn Road, Suite",co_59f560cce657,First Lien,Business Services,9.62 %,,SOFR,4.00 %,4.75 %,2023-09-26,2028-03-04,1990,1734,1742,,,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-"First Brands, Inc.",co_53cb28c1a725,Second Lien,Automotive,14.38 %,,SOFR,8.50 %,9.50 %,2021-03-24,2028-03-30,12545,12215,12330,,,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-"First Brands, Inc.",co_53cb28c1a725,First Lien,Automotive,10.88 %,,SOFR,5.00 %,6.00 %,2023-06-09,2027-03-30,4962,4837,4931,,,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-"Florida Marine, LLC",co_04b02011caf9,First Lien,Transportation & Logistics,14.95 %,,SOFR,9.48 %,11.48 %,2023-03-17,2028-03-17,6415,6256,6371,,,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-"Great Elm Specialty Finance, LLC",co_274440f466a4,Subordinated Debt,Financial Services,13.00 %,,Fixed,,,2023-09-01,2026-06-30,28733,28733,28733,,,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-"Great Elm Specialty Finance, LLC",co_274440f466a4,Common Equity,Financial Services,,,N/A,,,2023-09-01,,87500,17567,17477,87.50,,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Harvey Gulf Holdings LLC,co_673a6df69bc1,First Lien,Transportation & Logistics,10.14 %,,SOFR,4.50 %,5.50 %,2022-08-10,2027-08-10,323,,324,,319,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Harvey Gulf Holdings LLC,co_673a6df69bc1,Second Lien,Transportation & Logistics,14.73 %,,SOFR,9.08 %,10.08 %,2022-08-10,2027-08-10,4931,,5029,,4816,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Lenders Funding LLC,co_b04626bd74e6,Revolver,Financial Services,9.75 %,,Prime,1.25 %,1.25 %,2021-09-20,2024-01-31,10000,,6112,,6112,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Mad Engine Global LLC,co_82f34b67b45f,First Lien,Consumer & Retail,12.61 %,,SOFR,7.00 %,8.00 %,2021-06-30,2027-07-15,2831,,2007,,2783,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Maverick Gaming LLC,co_28f75db82886,First Lien,Media & Entertainment,13.15 %,,SOFR,7.50 %,8.50 %,2021-11-16,2026-09-03,5849,,4252,,5731,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-New Wilkie Energy Pty Limited 56 Pitt Street Sydney New South Wales,co_081b1162e945,First Lien,Chemicals & Materials,17.84 %,5.00 %,SOFR,12.50 %,14.50 %,2023-04-06,2026-04-06,4935,,3567,,4821,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-New Wilkie Energy Pty Limited 56 Pitt Street Sydney New South Wales,co_081b1162e945,Warrants,Chemicals & Materials,,,N/A,,,2023-04-06,,1078899,,-,,-,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-NICE-PAK Products Inc.,co_ac77d9d1a179,Second Lien,Consumer & Retail,19.25 %,11.00 %,SOFR,13.50 %,14.50 %,2022-09-30,2027-09-30,9444,,9331,,9222,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-NICE-PAK Products Inc.,co_ac77d9d1a179,Warrants,Consumer & Retail,,,N/A,,,2022-09-30,,880909,,701,2.56,-,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-PFS Holdings Corp.,co_53aae39dd10e,First Lien,Food & Beverage,12.46 %,,SOFR,7.00 %,8.00 %,2020-11-13,2024-11-13,1044,,979,,1044,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-PFS Holdings Corp.,co_53aae39dd10e,Common Equity,Food & Beverage,,,N/A,,,2020-11-13,,5238,,88,5.05,12379,,,,,dspy_extracted|fair_value_suspicious_vs_size,GECC,2024-08-01,GECC,2024-08-01
-Ruby Tuesday Operations LLC,co_1f7d49afa371,First Lien,Food & Beverage,11.46 %,6.00 %,SOFR,13.50 %,14.50 %,2021-02-24,2025-02-24,1974,1974,1930,,,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Ruby Tuesday Operations LLC,co_1f7d49afa371,First Lien,Food & Beverage,21.46 %,,SOFR,16.00 %,17.25 %,2023-01-31,2025-02-24,598,598,598,,,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Ruby Tuesday Operations LLC,co_1f7d49afa371,Warrants,Food & Beverage,,,N/A,,,2021-02-24,,,-,913,2.81,311697,,,,,dspy_extracted|fair_value_suspicious_vs_size,GECC,2024-08-01,GECC,2024-08-01
-SCIH Salt Holdings Inc.,co_b369f6da5ffe,First Lien,Food & Beverage,9.47 %,,SOFR,4.00 %,4.75 %,2023-06-21,2027-03-16,1981,1950,1982,,,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Stone Ridge Opportunities Fund LP.,co_df6461654829,Other,Insurance,,,N/A,,,2023-01-01,,,2380,3051,,2379875,,,,,dspy_extracted|fair_value_suspicious_vs_size,GECC,2024-08-01,GECC,2024-08-01
-Summit Midstream Holdings LLC,co_b0d60a3065a3,Second Lien,Energy,9.00 %,,Fixed,,,2021-10-19,2026-10-15,2000,1905,1996,,,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-TRU Taj Trust,co_e9f013e18a36,Common Equity,Consumer & Retail,,,N/A,,,2017-07-21,,,611,54,2.75,16000,,,,,dspy_extracted|fair_value_suspicious_vs_size,GECC,2024-08-01,GECC,2024-08-01
-Universal Fiber Systems,co_17de53ba34fb,Other Debt,Chemicals & Materials,9.42 %,9.00 %,SOFR,12.95 %,13.95 %,2021-09-30,2026-09-29,7864,7788,7852,,,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Universal Fiber Systems,co_17de53ba34fb,Other Debt,Chemicals & Materials,9.42 %,9.00 %,SOFR,12.95 %,13.95 %,2021-09-30,2026-09-29,3032,2995,2821,,,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Universal Fiber Systems,co_17de53ba34fb,Warrants,Chemicals & Materials,,,N/A,,,2021-09-30,,,-,810,1.50,3383,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Vantage Specialty Chemicals Inc.,co_7a3d59fdd9e8,First Lien,Chemicals & Materials,10.11 %,,SOFR,4.75 %,5.25 %,2023-03-03,2026-10-26,2960,2888,2845,,,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Great Elm Specialty Finance,co_274440f466a4,Other Equity,Financial Services,,,N/A,,,,,,,15028,,,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Apex Credit CLO 2024-I Ltd.,co_c98a323f44a8,Other,,,,,,,2024-04-24,2026-04-20,14957,,12688,,13052,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
-Apex Credit CLO 2024-II Ltd.,co_c98a323f44a8,Other,,,,,,,2024-04-24,2026-04-23,23848,,24219,,23848,,,,,dspy_extracted,GECC,2024-08-01,GECC,2024-08-01
+company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
+Advancion,First Lien,,13.19%,,,,8.5%,2022-09-21,2028-11-24,1625,1524,1543,,1524,,,,,,GECC,2024-08-01,GECC,2024-08-01
+ADS Tactical Inc.,First Lien,,13.25%,,,,5.75%,2023-11-28,2026-03-19,3856,3849,3856,,3849,,,,,,GECC,2024-08-01,GECC,2024-08-01
+American Coastal Insurance Corp.,Unsecured Debt,Insurance,7.25%,,,,,2022-12-20,2027-12-15,13000,7595,12139,,7595,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Arcline FM Holdings LLC,First Lien,,10.35%,,,,5.5%,2024-02-08,2028-06-23,1990,1990,1991,,1990,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Avation Capital SA 65 Kampong Bahru Road #01-01 Singapore,Other Equity,,8.25%,,,,,2022-02-04,2026-10-31,4671,4298,4239,,4298,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Blackstone Secured Lending,Common Equity,Financial Services,,,,,,2022-08-18,,313999,9983,9615,,9983,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GECC,2024-08-01,GECC,2024-08-01
+Blue Ribbon LLC,First Lien,,11.57%,,,,6.75%,2023-02-06,2028-05-07,5778,4467,4363,,4467,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Coreweave Compute Acquisition Co. II LLC,First Lien,,14.95%,,,,9.62%,2023-07-31,2028-07-31,12375,12176,12622,,12176,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Coreweave Compute Acquisition Co. IV LLC,First Lien,,11.33%,,,,6%,2024-05-29,2030-05-16,314,309,309,,309,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Creation Technologies Inc.,First Lien,,11.07%,,,,6%,2024-02-12,2028-10-05,997,970,951,,970,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Crown Subsea Communications Holding Inc.,First Lien,,10.08%,,,,5.5%,2024-01-26,2031-01-27,1800,1783,1801,,1783,,,,,,GECC,2024-08-01,GECC,2024-08-01
+CSC Serviceworks 35 Pinelawn Road Suite,First Lien,Business Services,9.6%,,,,4.75%,2023-09-26,2028-03-04,2977,2600,2523,,2600,,,,,,GECC,2024-08-01,GECC,2024-08-01
+CW Opportunity 2 LP,First Lien,,,,,,,2024-05-14,,6000,6000,6066,,6000,,,,,principal_scaled_down_1000x,GECC,2024-08-01,GECC,2024-08-01
+Eagle Point Credit Company Inc.,Common Equity,,,,,,,2022-08-18,,300000,3090,3015,,3090,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GECC,2024-08-01,GECC,2024-08-01
+ECL Entertainment LLC,First Lien,Media & Entertainment,9.34%,,,,4%,2024-04-11,2030-08-31,400,399,401,,399,,,,,,GECC,2024-08-01,GECC,2024-08-01
+EPIC Crude Services LP,First Lien,Business Services,10.61%,,,,6%,2024-02-08,2026-03-02,1995,1997,1996,,1997,,,,,,GECC,2024-08-01,GECC,2024-08-01
+First Brands Inc.,First Lien,,14.14%,,,,9.5%,2021-03-24,2028-03-30,12545,12243,12378,,12243,,,,,,GECC,2024-08-01,GECC,2024-08-01
+First Brands Inc.,First Lien,,10.59%,,,,6%,2023-06-09,2027-03-30,7622,7517,7585,,7517,,,,,,GECC,2024-08-01,GECC,2024-08-01
+First Brands Inc.,First Lien,,10.59%,,,,6%,2024-01-19,2027-03-30,1792,1779,1783,,1779,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Flexsys Holdings,First Lien,,10.85%,,,,6%,2022-11-04,2028-11-01,4912,4061,4642,,4061,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Florida Marine LLC,First Lien,Transportation & Logistics,13.86%,,,,10.4%,2023-03-17,2028-03-17,5790,5659,5987,,5659,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Foresight Energy,First Lien,Energy,13.43%,,,,9.5%,2021-07-29,2027-06-30,5934,5959,5934,,5959,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Form Technologies LLC,First Lien,,10.2%,,,,5.75%,2024-01-25,2025-07-22,995,955,950,,955,,,,,,GECC,2024-08-01,GECC,2024-08-01
+FS KKR Capital Corp.,Common Equity,,,,,,,2024-05-09,,150000,3041,2959,,3041,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GECC,2024-08-01,GECC,2024-08-01
+GrafTech Global Enterprises Inc.,Other Equity,,9.88%,,,,,2024-01-18,2028-12-15,1000,754,737,,754,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Great Elm Specialty Finance LLC,Subordinated Debt,Financial Services,13%,,,,,2023-09-01,2026-06-30,29733,29733,29733,,29733,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Great Elm Specialty Finance LLC,Common Equity,Financial Services,,,,,,2023-09-01,,87500,17567,15028,87.5%,17567,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Greenfire Resources Ltd.,Other Equity,,12%,,,,,2023-09-13,2028-10-01,6500,6385,6941,,6385,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Harvey Gulf Holdings LLC,First Lien,,12.4%,,,,9.06%,2024-02-28,2029-01-19,8784,8712,8753,,8712,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Loparex LLC,First Lien,,11.35%,,,,8%,2024-04-24,2027-02-01,1790,1769,1769,,1769,,,,,,GECC,2024-08-01,GECC,2024-08-01
+LSF9 Atlantis Holdings LLC,First Lien,,11.83%,,,,7.25%,2024-02-12,2029-03-31,988,989,988,,989,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Lummus Technology Holdings,Unsecured Debt,Software & Technology,9%,,,,,2022-05-17,2028-07-01,2500,2126,2520,,2126,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Mad Engine Global LLC,First Lien,,12.6%,,,,8%,2021-06-30,2027-07-15,4780,4305,3680,,4305,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Manchester Acquisition Sub LLC,First Lien,,11.25%,,,,6.5%,2023-09-26,2026-11-01,6100,5661,5665,,5661,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Maverick Gaming LLC,First Lien,Hospitality & Leisure,12.8%,,,,8.5%,2021-11-16,2028-06-03,1476,1476,1476,,1476,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Maverick Gaming LLC,First Lien,Hospitality & Leisure,12.8%,12.8%,,,8.5%,2024-04-03,2028-06-03,5223,5953,4294,,5953,,,,,,GECC,2024-08-01,GECC,2024-08-01
+New Wilkie Energy Pty Limited 56 Pitt Street Sydney New South Wales,First Lien,Energy,,,,,,2023-04-06,2026-04-06,4935,4821,1234,,4821,,,,,,GECC,2024-08-01,GECC,2024-08-01
+New Wilkie Energy Pty Limited 56 Pitt Street Sydney New South Wales 2000,Other Equity,Energy,16%,,,,,2024-02-22,2024-08-16,1110,1096,1110,,1096,,,,,,GECC,2024-08-01,GECC,2024-08-01
+New Wilkie Energy Pty Limited 56 Pitt Street Sydney New South Wales 2000,Other Equity,Energy,15%,,,,,2024-05-29,2024-08-29,99,90,99,,90,,,,,,GECC,2024-08-01,GECC,2024-08-01
+NICE-PAK Products Inc.,First Lien,,8.1%,10%,,,13.5%,2022-09-30,2027-09-30,9099,8919,9181,,8919,,,,,,GECC,2024-08-01,GECC,2024-08-01
+PFS Holdings Corp.,Common Equity,,,,,,,2020-11-13,,5238,12378,,5.05%,12378,,,,,,GECC,2024-08-01,GECC,2024-08-01
+PowerStop LLC,First Lien,,10.2%,,,,5.25%,2024-02-09,2029-01-26,2331,2144,2271,,2144,,,,,,GECC,2024-08-01,GECC,2024-08-01
+ProFrac Holdings II LLC,First Lien,,12.81%,,,,9.75%,2023-12-27,2029-01-23,6732,6670,6717,,6670,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Research Now Group Inc.,Revolver,,10.07%,,,,4.5%,2019-01-29,2024-06-14,10000,10000,7844,,10000,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Research Now Group Inc.,First Lien,,0%,,,,0%,2019-05-20,2025-12-20,8000,7977,289,,7977,,,,,fair_value_suspicious_vs_size,GECC,2024-08-01,GECC,2024-08-01
+Research Now Group Inc.,Other Equity,,14.21%,,,,9.75%,2024-06-04,2024-08-17,308,302,308,,302,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Ruby Tuesday Operations LLC,First Lien,,11.44%,6%,,,14.5%,2021-02-24,2025-02-24,1921,1921,1895,,1921,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Ruby Tuesday Operations LLC,First Lien,,21.44%,21.44%,,,17.25%,2023-01-31,2025-02-24,666,666,666,,666,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Spencer Spirit Holdings Inc.,First Lien,,10.83%,,,,5.5%,2024-06-25,2031-07-15,2700,2680,2680,,2680,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Stone Ridge Opportunities Fund LP. One Vanderbilt Ave. 65th Floor New York NY,First Lien,,,,,,,2023-01-01,,2379875,2380,3320,,2380,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GECC,2024-08-01,GECC,2024-08-01
+Summit Midstream Holdings LLC,Other Equity,Energy,9.5%,,,,,2021-10-19,2026-10-15,2000,1920,2056,,1920,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Thryv Inc.,First Lien,,12.09%,,,,7.5%,2024-04-30,2029-05-01,1730,1713,1757,,1713,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Trouvaille Re Ltd.,First Lien,,,,,,,2024-03-27,,100,5000,5000,,5000,,,,,,GECC,2024-08-01,GECC,2024-08-01
+TruGreen LP,First Lien,,9.44%,,,,4.75%,2024-05-14,2027-11-02,1795,1713,1737,,1713,,,,,,GECC,2024-08-01,GECC,2024-08-01
+TruGreen LP,First Lien,,14.09%,,,,9.25%,2024-05-14,2028-11-02,900,700,701,,700,,,,,,GECC,2024-08-01,GECC,2024-08-01
+TRU Taj Trust,Common Equity,,,,,,,2017-07-21,,16000,611,49,2.75%,611,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GECC,2024-08-01,GECC,2024-08-01
+Universal Fiber Systems,First Lien,,9.25%,9%,,,13.79%,2021-09-30,2026-09-29,8196,8133,8030,,8133,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Universal Fiber Systems,First Lien,,9.25%,9%,,,13.79%,2021-09-30,2026-09-29,3160,3129,2921,,3129,,,,,,GECC,2024-08-01,GECC,2024-08-01
+Vi-Jon,First Lien,,13.59%,2%,,,12.5%,2023-12-28,2028-12-28,8949,8702,8754,,8702,,,,,,GECC,2024-08-01,GECC,2024-08-01
+W&T Offshore Inc.,Other Equity,,11.75%,,,,,2023-01-12,2026-02-01,4816,4816,4953,,4816,,,,,,GECC,2024-08-01,GECC,2024-08-01

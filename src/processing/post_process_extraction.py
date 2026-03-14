@@ -421,6 +421,19 @@ def post_process_csv(input_file: Path, output_file: Path = None) -> Tuple[int, i
         if not is_dspy_file and rows:
             all_names = {(r.get('company_name') or '').strip() for r in rows}
             _ROLLUP_TOTAL_RE = re.compile(r'\s-\s+Total\b', re.IGNORECASE)
+            # Known XBRL aggregate/rollup member name patterns (not company names).
+            # Matches pure category labels like "Investments", "Net Assets",
+            # "Non-Controlled/Non-Affiliated Investments Equity", etc.
+            # Does NOT match when a specific company name follows (those are individual rows).
+            _XBRL_AGGREGATE_RE = re.compile(
+                r'^(?:'
+                r'Investments|Net Assets|Cash and Cash Equivalents|Total Investments'
+                r'|(?:Non-Controlled/)?Non-Affiliated Investments'
+                r'|Affiliated Investments|Controlled Investments'
+                r')(?:\s+(?:Equity|Debt|Senior Secured(?:\s+(?:First|Second)\s+Lien)?'
+                r'|Junior Secured|Subordinated|Unsecured|First Lien|Second Lien))?$',
+                re.IGNORECASE,
+            )
             filtered_rollup = []
             rollup_dropped = 0
             for r in rows:
@@ -429,6 +442,8 @@ def post_process_csv(input_file: Path, output_file: Path = None) -> Tuple[int, i
                 if any(n.startswith(prefix) for n in all_names if n != name):
                     rollup_dropped += 1
                 elif _ROLLUP_TOTAL_RE.search(name):
+                    rollup_dropped += 1
+                elif _XBRL_AGGREGATE_RE.match(name):
                     rollup_dropped += 1
                 else:
                     filtered_rollup.append(r)

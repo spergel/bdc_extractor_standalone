@@ -1,126 +1,69 @@
-company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
-Arborworks Acquisition LLC,co_91c5ea53a8c4,First Lien,Business Services,,6.50 %,SOFR,,1.00 %,,2028-11-06,2246090,2246090,2234859,2.94,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Arborworks Acquisition LLC,co_91c5ea53a8c4,First Lien,Business Services,15.00 %,,,,,,2028-11-06,570968,570968,570968,0.75,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Northstar Group Services Inc.,co_87df1df63dd3,First Lien,Business Services,,,SOFR,4.75 %,0.50 %,,2030-05-31,5445000,5421549,5404162,7.11,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Congruex Group LLC,co_81cbc5797762,First Lien,Industrials,,5.00 %,SOFR,1.50 %,1.50 %,,2029-05-03,4118615,4078072,3830312,5.04,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-American Nuts Holdings LLC,co_0cb2d38d09ba,First Lien,Consumer & Retail,,8.50 %,SOFR,,1.00 %,,2028-03-28,1887122,1887122,1877687,2.47,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Bioplan USA Inc.,co_af811c7cd849,First Lien,Containers & Packaging,,,SOFR,10.00 %,4.00 %,,2027-03-08,1898473,1918419,1979158,2.60,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Bioplan USA Inc.,co_af811c7cd849,First Lien,Containers & Packaging,,,SOFR,7.75 %,4.00 %,,2028-03-08,6000500,5809347,6000500,7.90,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-LABL Inc.,co_d4cc87e8b519,First Lien,Containers & Packaging,,,SOFR,5.00 %,0.50 %,,2028-10-30,4913511,4879915,4446727,5.85,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Axiom Global Inc.,co_19e853df2b16,First Lien,Consumer & Retail,,,SOFR,4.75 %,0.75 %,,2028-10-02,4898705,4854223,4898705,6.45,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-KNS MidCo Corp.,co_6d30d8b6050f,First Lien,Consumer & Retail,,,SOFR,5.00 %,1.00 %,,2030-04-19,1474678,1474678,1463618,1.93,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-LaserAway Intermediate Holdings II LLC,co_5a8549372b0e,First Lien,Consumer & Retail,,,SOFR,5.75 %,0.75 %,,2027-10-14,7120916,7073826,6942893,9.14,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Crafty Apes LLC,co_cdfd7eb3b5d5,First Lien,Media & Entertainment,,6.50 %,SOFR,,1.00 %,,2027-06-01,2101677,1995309,1991339,2.62,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-INW Manufacturing LLC,co_feab9bd8aac7,First Lien,Food & Beverage,,,SOFR,5.75 %,0.75 %,,2027-03-25,4062500,4018708,3950781,5.20,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Max US Bidco Inc.,co_bc5e75bb536a,First Lien,Food & Beverage,,,SOFR,5.00 %,0.50 %,,2030-10-02,7929924,7704513,7890275,10.38,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-One Call Corp.,co_b2fe9d7dc177,First Lien,Healthcare,,,SOFR,5.50 %,0.75 %,,2027-04-22,3490910,3482183,3482183,4.58,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-AMCP Clean Acquisition Company LLC,co_ccff718afac8,First Lien,Healthcare,4.75 %,,LIBOR,,0.50 %,,2028-06-15,2962.500,2930.264,2962.500,3.90 %,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Easy Way Leisure Corp.,co_af56efcfb2d1,First Lien,Consumer & Retail,7.50 %,,LIBOR,,1.00 %,,2026-01-15,7633.519,7617.380,7557.184,9.95 %,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Asurion LLC,co_51e1762914ed,First Lien,Insurance,4.00 %,,LIBOR,,,,2028-08-21,9898.412,9834.582,9787.055,12.89 %,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Integrity Marketing Acquisition LLC,co_cb724891ebc0,First Lien,Insurance,5.00 %,,LIBOR,,0.75 %,,2028-08-25,6941.078,6920.476,6932.401,9.12 %,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Likewize Corp.,co_04fc83aacafd,First Lien,Insurance,5.75 %,,LIBOR,,0.50 %,,2029-08-15,3597.917,3503.761,3525.958,4.64 %,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Uniguest Holdings,co_8a566a8bd530,First Lien,Media & Entertainment,5.00 %,,LIBOR,,1.00 %,,2030-11-27,5527.778,5438.967,5458.681,7.19 %,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Argano LLC,co_2dad950c6e2b,First Lien,Software & Technology,5.75 %,,LIBOR,,1.00 %,,2029-08-23,6551.346,6430.624,6436.697,8.47 %,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Accelevation LLC,co_73663bca2132,First Lien,Software & Technology,5.00 %,,LIBOR,,0.75 %,,2031-01-02,3491.231,3434.029,3491.231,4.59 %,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Accelevation LLC,co_73663bca2132,Revolver,Software & Technology,5.00 %,,LIBOR,,0.75 %,,2031-01-02,304.615,292.789,304.615,0.40 %,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-CareerBuilder LLC,co_50105ea24261,First Lien,Business Services,2.50 %,4.25 %,LIBOR,,1.00 %,,2026-07-31,6186.186,4808.811,1349.379,1.78 %,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Crisis Prevention Institute Inc.,co_b3c1d9362bdd,First Lien,Business Services,4.00 %,,LIBOR,,0.50 %,,2031-04-09,2985.000,2971.989,2988.731,3.93 %,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Klein Hersh LLC,co_c86da8cc1aa5,First Lien,Business Services,- 0.19 %,,LIBOR,,,,2028-04-27,11592.315,7744.343,10172.256,13.39 %,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Work Genius Holdings Inc.,co_30a1e88aa9cc,First Lien,Business Services,7.00 %,,LIBOR,,1.00 %,,2027-06-07,9701.923,9657.299,9629.159,12.68 %,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Work Genius Holdings Inc.,co_30a1e88aa9cc,First Lien,Business Services,7.00 %,,LIBOR,,1.00 %,,2027-06-07,1081.534,1081.534,1073.422,1.41 %,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Work Genius Holdings Inc.,co_30a1e88aa9cc,Revolver,Business Services,7.00 %,,LIBOR,,1.00 %,,2027-06-07,750.000,750.000,744.375,0.98 %,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-ALCV Purchaser Inc.,co_130cd37dd542,First Lien,Consumer & Retail,6.75 %,,LIBOR,,1.00 %,,2026-04-15,4800.000,4785.858,4740.000,6.24 %,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-American Auto Auction Group LLC,co_a5e1c23a8212,First Lien,Consumer & Retail,4.50 %,,LIBOR,,0.00 %,,2032-05-28,6982.500,6930.456,6930.131,9.12 %,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-AppLogic Networks Parent LLC,co_a29114b76277,First Lien,Software & Technology,1.00 %,5.00 %,LIBOR,,0.00 %,,2030-03-04,1735.713,1735.713,1735.713,2.28 %,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Fleetpride Inc.,co_d5a3ab09574a,First Lien,Distribution & Wholesale,4.50 %,,LIBOR,,0.50 %,,2028-09-29,2947.500,2925.076,2722.753,3.58 %,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-PVI Holdings Inc.,co_245c31b47bdb,First Lien,Distribution & Wholesale,4.94 %,,LIBOR,,1.00 %,,2028-01-18,3890.000,3869.346,3860.825,5.08 %,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Xenon Arc Inc.,co_949e08e408c6,First Lien,Distribution & Wholesale,5.75 %,,LIBOR,,0.75 %,,2028-12-20,8715.000,8715.000,8671.425,11.41 %,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-ArborWorks LLC,co_0faa6bbae1ed,Common Equity,Business Services,,,N/A,,,2021-11-24,,1035,,,,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-ArborWorks LLC,co_0faa6bbae1ed,Preferred Equity,Business Services,,,N/A,,,2021-11-24,,8633,4362023,5730858,7.54,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-ArborWorks LLC,co_0faa6bbae1ed,Preferred Equity,Business Services,,,N/A,,,2021-11-24,,8633,,,,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-American Nuts Holdings LLC,co_0cb2d38d09ba,Common Equity,Consumer & Retail,,,N/A,,,2025-03-28,,6784,2204980,1356776,1.79,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Bioplan USA Inc.,co_af811c7cd849,Common Equity,Containers & Packaging,,,N/A,,,2023-03-08,,292150,1708942,5603437,7.38,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-4L Technologies Inc.,co_eadcbd2ace20,Common Equity,Software & Technology,,,N/A,,,2020-02-04,,149918,2171581,,,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-4L Technologies Inc.,co_eadcbd2ace20,Preferred Equity,Software & Technology,,,N/A,,,2020-05-28,,2289,209004,45782,0.06,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Crafty Apes LLC,co_cdfd7eb3b5d5,Common Equity,Media & Entertainment,,,N/A,,,2024-11-20,,810,4968408,6094003,8.02,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Discovery Behavioral Health LLC,co_251c30963abc,Preferred Equity,Healthcare,,13.50 %,N/A,,,2023-10-10,,4000,4000000,6000000,7.90,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Fusion Connect Inc.,co_5aca3e6d22db,Warrants,Software & Technology,,,N/A,,,2022-01-12,,8904634,,35619,0.05,,,,,,dspy_extracted|fair_value_suspicious_vs_size,ICMB,2025-08-13,ICMB,2025-08-13
-Fusion Connect Inc.,co_5aca3e6d22db,Common Equity,Software & Technology,,,N/A,,,2022-01-18,,230191,1184606,92076,0.12,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Fusion Connect Inc.,co_5aca3e6d22db,Warrants,Software & Technology,,,N/A,,,2022-01-18,,1345747,,,,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Fusion Connect Inc.,co_5aca3e6d22db,Preferred Equity,Software & Technology,,12.50 %,N/A,,,2022-01-12,,500,7645189,7160862,9.42,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-FWS Parent Holding LLC,co_921033607c7c,Other Equity,Software & Technology,,,N/A,,,2022-10-03,,4405,100000,97357,0.13,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-CareerBuilder LLC,co_50105ea24261,Warrants,Business Services,,,N/A,,,2025-01-02,,4586,,,,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-CF Arch Holdings LLC,co_ea488d52e2ec,Other Equity,Business Services,,,N/A,,,2022-08-11,,200000,200000,450000,0.59,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Victors CCC Aggregator LP,co_ad07a568819a,Other Equity,Business Services,,,N/A,,,2022-05-27,,500000,500000,770000,1.01,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Work Genius LLC,co_bdee1dd79644,Other Equity,Business Services,,,N/A,,,2022-06-06,,500,500000,349590,0.46,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Work Genius LLC,co_bdee1dd79644,Other Equity,Business Services,,,N/A,,,2025-03-31,,922,674011,644865,0.85,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Advanced Solutions International,co_bca9ffc14cb2,Preferred Equity,Software & Technology,,,N/A,,,2020-09-01,,888170,1000000,2948724,3.88,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-AppLogic Networks Parent LLC,co_a29114b76277,Other Equity,Software & Technology,,,N/A,,,2025-03-03,,130074,2744209,3247948,4.27,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Pegasus Aggregator Holdings LP,co_63ba5365a2ae,Other,Other,,,N/A,,,2022-02-28,,9,808717,1119144,1.47,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Techniplas Foreign Holdco LP,co_ed3c0ac103d6,First Lien,Automotive,,10.00 %,N/A,,,,2027-06-18,898492,876340,779943,1.03,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Techniplas Foreign Holdco Term Loan,co_c90c6eba4417,First Lien,Automotive,,17.00 %,N/A,,,,2026-12-19,1159774,1115340,1092507,1.43,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Techniplas Foreign Holdco LP,co_ed3c0ac103d6,Other,Automotive,,,N/A,,,2020-06-19,,879559,14336791,59986,0.08,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Techniplas Foreign Holdco,co_ed3c0ac103d6,Other,Automotive,,,N/A,,,2024-12-05,,2748651,46169,560570,0.74,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Techniplas Foreign Holdco LP,co_ed3c0ac103d6,First Lien,,,10.00%,,,,,,,,779943,,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Techniplas Foreign Holdco LP,co_ed3c0ac103d6,Preferred Equity,,,,N/A,,,,,,,560570,,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Techniplas Foreign Holdco LP,co_ed3c0ac103d6,Common Equity,,,,N/A,,,,,,,59986,,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Arborworks Acquisition LLC,co_91c5ea53a8c4,First Lien,Business Services,,6.50 %,SOFR,,1.00 %,,2028-11-06,2123.863,2123.863,2081.386,2.68,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Arborworks Acquisition LLC,co_91c5ea53a8c4,First Lien,Business Services,15.00 %,,Fixed,,,,2028-11-06,529.740,529.740,529.740,0.68,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Northstar Group Services Inc.,co_87df1df63dd3,First Lien,Business Services,,,SOFR,4.75 %,0.50 %,,2030-05-31,5472.500,5447.097,5472.500,7.05,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-American Nuts Holdings LLC,co_0cb2d38d09ba,First Lien,Consumer & Retail,,9.75 %,SOFR,,1.00 %,,2026-04-10,4849.251,4849.251,4849.251,6.25,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Congruex Group LLC,co_81cbc5797762,First Lien,Industrials,,5.00 %,SOFR,1.50 %,1.50 %,,2029-05-03,4019.794,3974.677,3698.210,4.77,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Bioplan USA Inc.,co_af811c7cd849,First Lien,Containers & Packaging,,,SOFR,10.00 %,4.00 %,,2027-03-08,3000.075,3039.635,3135.078,4.04,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Bioplan USA Inc.,co_af811c7cd849,First Lien,Containers & Packaging,,3.50 %,SOFR,4.75 %,4.00 %,,2028-03-08,5948.942,5728.360,5829.963,7.51,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-LABL Inc.,co_d4cc87e8b519,First Lien,Containers & Packaging,,,SOFR,5.00 %,0.50 %,,2028-10-30,4938.969,4901.092,4784.627,6.17,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Axiom Global Inc.,co_19e853df2b16,First Lien,Consumer & Retail,,,SOFR,4.75 %,0.75 %,,2028-10-02,4923.446,4873.088,4923.446,6.34,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-KNS MidCo Corp.,co_6d30d8b6050f,First Lien,Consumer & Retail,,,SOFR,5.00 %,1.00 %,,2030-04-19,1474.677,1474.677,1474.677,1.90,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-LaserAway Intermediate Holdings II LLC,co_5a8549372b0e,First Lien,Consumer & Retail,,,SOFR,5.75 %,0.75 %,,2027-10-14,7157.812,7101.703,7157.812,9.22,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-4L Technologies Inc.,co_eadcbd2ace20,First Lien,Software & Technology,,2.00 %,SOFR,7.50 %,,,2025-06-30,1163.599,1163.599,1253.778,1.62,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Crafty Apes LLC,co_cdfd7eb3b5d5,First Lien,Media & Entertainment,,6.50 %,SOFR,,1.00 %,,2027-06-01,1989.111,1858.313,1851.862,2.39,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Max US Bidco Inc.,co_bc5e75bb536a,First Lien,Food & Beverage,5.00%,,SOFR,,0.50%,,2030-10-02,4962500,4744622,4875656,6.28,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-AMCP Clean Acquisition Company LLC,co_ccff718afac8,First Lien,Food & Beverage,4.75%,,SOFR,,0.50%,,2028-06-15,2977500,2940523,2977500,3.84,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Easy Way Leisure Corp.,co_af56efcfb2d1,First Lien,Consumer & Retail,7.50%,2.00%,SOFR,,1.00%,,2026-01-15,7664219,7634180,7664219,9.87,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Asurion LLC,co_51e1762914ed,First Lien,Insurance,4.00%,,SOFR,,,,2028-08-21,7442893,7375251,7442893,9.59,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Integrity Marketing Acquisition LLC,co_cb724891ebc0,First Lien,Insurance,5.00%,,SOFR,,0.75%,,2028-08-25,3851399,3832941,3851399,4.96,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Likewize Corp.,co_04fc83aacafd,First Lien,Insurance,5.75%,,SOFR,,0.50%,,2029-08-15,3643750,3539939,3589094,4.62,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Uniguest Holdings Term Loan,co_c6b253362fb0,First Lien,Media & Entertainment,5.00%,,SOFR,,1.00%,,2030-11-27,5555556,5460071,5472222,7.05,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Argano LLC,co_2dad950c6e2b,First Lien,Software & Technology,5.75%,,SOFR,,1.00%,,2029-08-23,3975543,3888812,3955666,5.10,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Flatworld Intermediate Corp.,co_9e71760ee0a3,First Lien,Software & Technology,6.75%,,SOFR,,1.00%,,2027-10-01,2221622,2193533,2221622,2.86,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-CareerBuilder LLC,co_50105ea24261,First Lien,Business Services,2.50%,4.25%,SOFR,,1.00%,,2026-07-31,6055631,4947137,2941738,3.79,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Crisis Prevention Institute Inc.,co_b3c1d9362bdd,First Lien,Business Services,4.50%,,SOFR,,0.50%,,2031-04-09,3000000,2986074,3000000,3.87,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Klein Hersh LLC,co_c86da8cc1aa5,First Lien,Business Services,-1.13%,,SOFR,,0.50%,,2028-04-27,11645948,7616667,9258529,11.93,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Work Genius Holdings Inc.,co_30a1e88aa9cc,First Lien,Business Services,7.00%,,SOFR,,1.00%,,2027-06-07,9751923,9697154,9849442,12.69,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Work Genius Holdings Inc.,co_30a1e88aa9cc,First Lien,Business Services,7.00%,,SOFR,,1.00%,,2027-06-07,750000,750000,757500,0.98,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-American Teleconferencing Services Ltd.,co_6956ecaeed2e,First Lien,Software & Technology,5.50%,,Prime,,,,2023-04-07,1736618,1736618,260201,0.34,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Sandvine Corp.,co_baec03d34e61,First Lien,Software & Technology,2.00%,,Fixed,,,,2027-06-28,4288503,2791891,2819691,3.63,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Sandvine Corp.,co_baec03d34e61,First Lien,Software & Technology,9.00%,,SOFR,,0.00%,,2025-11-07,1261776,880706,1261776,1.63,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-ALCV Purchaser Inc.,co_130cd37dd542,First Lien,Consumer & Retail,6.75%,,SOFR,,1.00%,,2026-04-15,4900000,4877188,4716250,6.08,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-American Auto Auction Group LLC,co_a5e1c23a8212,First Lien,Consumer & Retail,4.50%,,SOFR,,0.75%,,2027-12-30,5663576,5404695,5663576,7.30,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Victra Holdings LLC,co_8a6ba8ec0890,First Lien,Consumer & Retail,5.25%,,SOFR,,0.75%,,2029-03-30,3217105,3215978,3265361,4.21,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Fleetpride Inc.,co_d5a3ab09574a,First Lien,Transportation & Logistics,4.50%,,SOFR,,0.50%,,2028-09-29,2962500,2937086,2762531,3.56,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-"PVI Holdings, Inc.",co_245c31b47bdb,First Lien,,4.94%,,SOFR,,1.00%,,2028-01-18,3910000,3885783,3910000,5.04,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-"Xenon Arc, Inc.",co_949e08e408c6,First Lien,,5.25%,,SOFR,,0.75%,,2028-12-20,8760000,8760000,8760000,11.28,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-"Klein Hersh, LLC",co_c86da8cc1aa5,Unsecured Debt,,,,N/A,,,,2032-04-27,2184078,,,,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-"ArborWorks, LLC",co_0faa6bbae1ed,Common Equity,,,,N/A,,,2021-11-24,,1035,,,,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-"ArborWorks, LLC",co_0faa6bbae1ed,Preferred Equity,,,,N/A,,,2021-11-24,,8633,4362023,2591131,3.34,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-"ArborWorks, LLC",co_0faa6bbae1ed,Preferred Equity,,,,N/A,,,2021-11-24,,8633,,,,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Investcorp Transformer Aggregator LP,co_f651f23f93ee,Partnership Interest,,,,N/A,,,2021-11-24,,520710,528249,2103669,2.71,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-"Bioplan USA, Inc.",co_af811c7cd849,Common Equity,,,,N/A,,,2023-03-08,,292150,1708942,6409771,8.26,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-"4L Technologies, Inc.",co_eadcbd2ace20,Common Equity,,,,N/A,,,2020-02-04,,149918,2171581,22488,0.03,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-"4L Technologies, Inc.",co_eadcbd2ace20,Preferred Equity,,,,N/A,,,2020-05-28,,2289,209004,492157,0.63,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-"Discovery Behavioral Health, LLC",co_251c30963abc,Preferred Equity,Healthcare,,13.50%,N/A,,,2023-10-10,,4000,4000000,6000000,7.73,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-"Fusion Connect, Inc.",co_5aca3e6d22db,Warrants,,,,N/A,,,2022-01-12,,8904634,,160283,0.21,,,,,,dspy_extracted|fair_value_suspicious_vs_size,ICMB,2025-08-13,ICMB,2025-08-13
-"Fusion Connect, Inc.",co_5aca3e6d22db,Common Equity,,,,N/A,,,2022-01-18,,230191,1184606,416646,0.54,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-"Fusion Connect, Inc.",co_5aca3e6d22db,Warrants,,,,N/A,,,2022-01-18,,1345747,,,,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-"Fusion Connect, Inc.",co_5aca3e6d22db,Preferred Equity,,,12.50%,N/A,,,2022-01-12,,500,7192447,6666775,8.59,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-"FWS Parent Holding, LLC",co_921033607c7c,Partnership Interest,,,,N/A,,,2022-10-03,,4405,100000,96211,0.12,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-CF Arch Holdings LLC,co_ea488d52e2ec,Partnership Interest,,,,N/A,,,2022-08-11,,200000,200000,436000,0.56,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Victors CCC Aggregator LP,co_ad07a568819a,Partnership Interest,,,,N/A,,,2022-05-27,,500000,500000,735000,0.95,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-"Work Genius Holdings, Inc.",co_30a1e88aa9cc,Partnership Interest,,,,N/A,,,2022-06-06,,500,500000,564040,0.73,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Advanced Solutions International,co_bca9ffc14cb2,Preferred Equity,Software & Technology,,,N/A,,,2020-09-01,,888.170,1000,2788.854,3.59,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Sandvine Corp.,co_baec03d34e61,Common Equity,Software & Technology,,,N/A,,,2024-06-28,,107.202,,,,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Pegasus Aggregator Holdings LP,co_63ba5365a2ae,Partnership Interest,Distribution & Wholesale,,,N/A,,,2022-02-28,,9,808.717,1117.831,1.44,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Techniplas Foreign Holdco LP,co_ed3c0ac103d6,First Lien,Automotive,,10.00 %,N/A,,,2027-06-18,,854.966,854.966,889.164,1.15,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Techniplas Foreign Holdco Term Loan,co_c90c6eba4417,First Lien,Automotive,,17.00 %,N/A,,,2026-12-19,,1159.774,1113.952,1304.746,1.68,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Techniplas Foreign Holdco LP,co_ed3c0ac103d6,Common Equity,Automotive,,,N/A,,,2020-06-19,,879.559,14336.791,115.046,0.15,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
-Techniplas Foreign Holdco,co_ed3c0ac103d6,Preferred Equity,Automotive,,,N/A,,,2024-12-05,,2530.804,46.169,705.973,0.91,,,,,,dspy_extracted,ICMB,2025-08-13,ICMB,2025-08-13
+company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
+Arborworks Acquisition LLC,Other Equity,Business Services,,6.5%,SOFR,,1%,,2028-11-06,2246,2246,2235,2.94%,2246,,,,,,ICMB,2025-08-13
+Northstar Group Services Inc.,Other Equity,Business Services,,,SOFR,4.75%,0.5%,,2030-05-31,5445,5422,5404,7.11%,5422,,,,,,ICMB,2025-08-13
+Congruex Group LLC,Other Equity,Industrials,,5%,SOFR,1.5%,1.5%,,2029-05-03,4119,4078,3830,5.04%,4078,,,,,,ICMB,2025-08-13
+American Nuts Holdings LLC,Other Equity,Consumer & Retail,,8.5%,SOFR,,1%,,2028-03-28,1887,1887,1878,2.47%,1887,,,,,,ICMB,2025-08-13
+American Nuts Holdings LLC,Other Equity,Consumer & Retail,,8.5%,SOFR,,1%,,2028-03-28,1884,1887,1816,2.39%,1887,,,,,,ICMB,2025-08-13
+Bioplan USA Inc.,Other Equity,Containers & Packaging,,,SOFR,10%,4%,,2027-03-08,1898,1918,1979,2.6%,1918,,,,,,ICMB,2025-08-13
+Bioplan USA Inc.,Other Equity,Containers & Packaging,,,SOFR,7.75%,4%,,2028-03-08,6000,5809,6000,7.9%,5809,,,,,,ICMB,2025-08-13
+LABL Inc.,Other Equity,Containers & Packaging,,,SOFR,5%,0.5%,,2028-10-30,4914,4880,4447,5.85%,4880,,,,,,ICMB,2025-08-13
+Consumer Services Axiom Global Inc.,Other Equity,Diversified,,,SOFR,4.75%,0.75%,,2028-10-02,4899,4854,4899,6.45%,4854,,,,,,ICMB,2025-08-13
+Consumer Services KNS MidCo Corp. / Wellfull Inc.,Other Equity,Diversified,,,SOFR,5%,1%,,2030-04-19,1475,1475,1464,1.93%,1475,,,,,,ICMB,2025-08-13
+Consumer Services LaserAway Intermediate Holdings II LLC,Other Equity,Diversified,,,SOFR,5.75%,0.75%,,2027-10-14,7121,7074,6943,9.14%,7074,,,,,,ICMB,2025-08-13
+Crafty Apes LLC,Other Equity,Media & Entertainment,,,SOFR,6.5%,1%,,2027-06-01,2102,1995,1991,2.62%,1995,,,,,,ICMB,2025-08-13
+INW Manufacturing LLC,Other Equity,Food & Beverage,,,SOFR,5.75%,0.75%,,2027-03-25,4062,4019,3951,5.2%,4019,,,,,,ICMB,2025-08-13
+Max US Bidco Inc.,Other Equity,Food & Beverage,,,SOFR,5%,0.5%,,2030-10-02,7930,7705,7890,10.38%,7705,,,,,,ICMB,2025-08-13
+Health Care Providers & Services One Call Corp.,Other Equity,Healthcare,,,SOFR,5.5%,0.75%,,2027-04-22,3491,3482,3482,4.58%,3482,,,,,,ICMB,2025-08-13
+AMCP Clean Acquisition Company LLC,Other Equity,Food & Beverage,,,SOFR,4.75%,0.5%,,2028-06-15,2962,2930,2962,3.9%,2930,,,,,,ICMB,2025-08-13
+Easy Way Leisure Corp.,Other Equity,Consumer & Retail,,,SOFR,7.5%,1%,,2026-01-15,7634,7617,7557,9.95%,7617,,,,,,ICMB,2025-08-13
+Asurion LLC,Other Equity,Insurance,,,SOFR,4%,,,2028-08-21,9898,9835,9787,12.89%,9835,,,,,,ICMB,2025-08-13
+Integrity Marketing Acquisition LLC,Other Equity,Insurance,,,SOFR,5%,0.75%,,2028-08-25,6941,6920,6932,9.12%,6920,,,,,,ICMB,2025-08-13
+Likewize Corp.,Other Equity,Insurance,,,SOFR,5.75%,0.5%,,2029-08-15,3598,3504,3526,4.64%,3504,,,,,,ICMB,2025-08-13
+Uniguest Holdings Term Loan,Other Equity,Media & Entertainment,,,SOFR,5%,1%,,2030-11-27,5528,5439,5459,7.19%,5439,,,,,,ICMB,2025-08-13
+Argano LLC,Other Equity,Software & Technology,,,SOFR,5.75%,1%,,2029-08-23,6551,6431,6437,8.47%,6431,,,,,,ICMB,2025-08-13
+Accelevation LLC,Other Equity,Software & Technology,,,SOFR,5%,0.75%,,2031-01-02,3491,3434,3491,4.59%,3434,,,,,,ICMB,2025-08-13
+Accelevation LLC,Other Equity,Software & Technology,,,SOFR,5%,0.75%,,2031-01-02,305,293,305,0.4%,293,,,,,,ICMB,2025-08-13
+CareerBuilder LLC,Other Equity,Business Services,,4.25%,SOFR,2.5%,1%,,2026-07-31,6186,4809,1349,1.78%,4809,,,,,,ICMB,2025-08-13
+Crisis Prevention Institute Inc.,Other Equity,Business Services,,,SOFR,4%,0.5%,,2031-04-09,2985,2972,2989,3.93%,2972,,,,,,ICMB,2025-08-13
+Klein Hersh LLC,Other Equity,Business Services,,,SOFR,0.19%,,,2028-04-27,11592,7744,10172,13.39%,7744,,,,,,ICMB,2025-08-13
+Work Genius Holdings Inc.,Other Equity,Business Services,,,SOFR,7%,1%,,2027-06-07,9702,9657,9629,12.68%,9657,,,,,,ICMB,2025-08-13
+Work Genius Holdings Inc.,Other Equity,Business Services,,,SOFR,7%,1%,,2027-06-07,1082,1082,1073,1.41%,1082,,,,,,ICMB,2025-08-13
+Work Genius Holdings Inc.,Other Equity,Business Services,,,SOFR,7%,1%,,2027-06-07,750,750,744,0.98%,750,,,,,,ICMB,2025-08-13
+Specialty Retail ALCV Purchaser Inc.,Other Equity,Consumer & Retail,,,SOFR,6.75%,1%,,2026-04-15,4800,4786,4740,6.24%,4786,,,,,,ICMB,2025-08-13
+Specialty Retail American Auto Auction Group LLC,Other Equity,Consumer & Retail,,,SOFR,4.5%,0%,,2032-05-28,6982,6930,6930,9.12%,6930,,,,,,ICMB,2025-08-13
+Software AppLogic Networks Parent LLC,Other Equity,Software & Technology,,5%,SOFR,1%,0%,,2030-03-04,1736,1736,1736,2.28%,1736,,,,,,ICMB,2025-08-13
+Trading Companies & Distributors Fleetpride Inc.,Other Equity,Transportation & Logistics,,,SOFR,4.5%,0.5%,,2028-09-29,2948,2925,2723,3.58%,2925,,,,,,ICMB,2025-08-13
+Trading Companies & Distributors PVI Holdings Inc.,Other Equity,Distribution & Wholesale,,,SOFR,4.94%,1%,,2028-01-18,3890,3869,3861,5.08%,3869,,,,,,ICMB,2025-08-13
+Trading Companies & Distributors Xenon Arc Inc.,Other Equity,Distribution & Wholesale,,,SOFR,5.75%,0.75%,,2028-12-20,8715,8715,8671,11.41%,8715,,,,,,ICMB,2025-08-13
+Arborworks Acquisition LLC,Other Equity,Business Services,,15%,,,,,2028-11-06,571,571,571,0.75%,571,,,,,,ICMB,2025-08-13
+Klein Hersh,Subordinated Debt,Business Services,,,,,,,2032-04-27,2184,0,0,0%,0,,,,,,ICMB,2025-08-13
+ArborWorks,Common Equity,Business Services,,,,,,2021-11-24,,,0,0,0%,0,,,,1035,,ICMB,2025-08-13
+ArborWorks,Preferred Equity,Business Services,,,,,,2021-11-24,,,4362,5731,7.54%,4362,,,,8633,,ICMB,2025-08-13
+ArborWorks,Preferred Equity,Business Services,,,,,,2021-11-24,,,0,0,0%,0,,,,8633,,ICMB,2025-08-13
+American Nuts Holdings,Other Equity,Consumer & Retail,,,,,,2025-03-28,,,2205,1357,1.79%,2205,,,,6784,,ICMB,2025-08-13
+Bioplan USA,Common Equity,Containers & Packaging,,,,,,2023-03-08,,,1709,5603,7.38%,1709,,,,292150,,ICMB,2025-08-13
+4L Technologies,Common Equity,Software & Technology,,,,,,2020-02-04,,,2172,0,0%,2172,,,,149918,,ICMB,2025-08-13
+4L Technologies,Preferred Equity,Software & Technology,,,,,,2020-05-28,,,209,46,0.06%,209,,,,2289,,ICMB,2025-08-13
+Entertainment,Common Equity,Media & Entertainment,,,,,,2024-11-20,,,4968,6094,8.02%,4968,,,,810,,ICMB,2025-08-13
+Health Care Providers & Services Discovery Behavioral Health LLC,Other Equity,Healthcare,,13.5%,,,,2023-10-10,,,4000,6000,7.9%,4000,,,,4000,,ICMB,2025-08-13
+Fusion Connect,Warrants,Software & Technology,,,,,,2022-01-12,,,0,36,0.05%,0,,,,8904634,,ICMB,2025-08-13
+Fusion Connect Inc.,Other Equity,Software & Technology,,12.50%,,,,2022-01-18,,,1185,92,0.12%,1185,,,,230191,,ICMB,2025-08-13
+Fusion Connect Inc.,Other Equity,Software & Technology,,,,,,2022-01-18,,,0,0,0%,0,,,,1345747,,ICMB,2025-08-13
+Fusion Connect Inc.,Other Equity,Software & Technology,,12.5%,,,,2022-01-12,,,7645,7161,9.42%,7645,,,,500,,ICMB,2025-08-13
+FWS Parent Holding,Other Equity,Software & Technology,,,,,,2022-10-03,,,100,97,0.13%,100,,,,4405,,ICMB,2025-08-13
+CareerBuilder LLC,Other Equity,Business Services,,4.25%,,,,2025-01-02,,,0,0,0%,0,,,,4586,,ICMB,2025-08-13
+CF Arch Holdings LLC,Other Equity,Business Services,,5.00%,,,,2022-08-11,,,200,450,0.59%,200,,,,200000,,ICMB,2025-08-13
+Professional Services,Other Equity,Business Services,,,,,,2022-05-27,,,500,770,1.01%,500,,,,500000,,ICMB,2025-08-13
+Work Genius Holdings,Other Equity,Business Services,,,,,,2022-06-06,,,500,350,0.46%,500,,,,500,,ICMB,2025-08-13
+Work Genius Holdings,Other Equity,Business Services,,,,,,2025-03-31,,,674,645,0.85%,674,,,,922,,ICMB,2025-08-13
+Software,Preferred Equity,Software & Technology,,,,,,2020-09-01,,,1000,2949,3.88%,1000,,,,888170,,ICMB,2025-08-13
+Software AppLogic Networks Parent LLC,Other Equity,Software & Technology,,5.00%,,,,2025-03-03,,,2744,3248,4.27%,2744,,,,130074,,ICMB,2025-08-13
+Trading Companies & Distributors,Other Equity,Distribution & Wholesale,,,,,,2022-02-28,,,809,1119,1.47%,809,,,,9,,ICMB,2025-08-13
+Techniplas Foreign Holdco LP,Other Equity,Automotive,,10%,,,,,2027-06-18,898,876,780,1.03%,876,,,,,,ICMB,2025-08-13
+Techniplas Foreign Holdco Term Loan,Other Equity,Automotive,,17%,,,,,2026-12-19,1160,1115,1093,1.43%,1115,,,,,,ICMB,2025-08-13
+Automobile Components,Other Equity,Automotive,,,,,,2020-06-19,,,14337,60,0.08%,14337,,,,879559,fair_value_suspicious_vs_size,ICMB,2025-08-13
+Automobile Components,Preferred Equity,Automotive,,,,,,2024-12-05,,,46,561,0.74%,46,,,,2748651,,ICMB,2025-08-13
+Affiliated Investments Techniplas Foreign Holdco LP,Other,Financial Services,,10%,,,,,,,,780,,,,,,,,ICMB,2025-08-13
+Affiliated Investments Techniplas Foreign Holdco LP,Other,Financial Services,,17%,,,,,,,,1093,,,,,,,,ICMB,2025-08-13
+Affiliated Investments Techniplas Foreign Holdco LP,Other,Financial Services,,,,,,,,,,561,,,,,,,,ICMB,2025-08-13
+Affiliated Investments Techniplas Foreign Holdco LP,Other,Financial Services,,,,,,,,,,60,,,,,,,,ICMB,2025-08-13

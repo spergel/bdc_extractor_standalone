@@ -41,6 +41,8 @@ XBRL_TICKERS = [
     "PFLT", "PNNT", "PSBD", "PSEC", "RAND", "SAR", "SCM",
     "SLRC", "TCPC", "TRIN", "TSLX", "WHF",
     "OXSQ",  # has XBRL SOI; hierarchical rollup rows filtered by post_process
+    "GECC",  # has XBRL SOI (2025+); DSPy had encoding errors on 2025 filings
+    "ICMB",  # has XBRL SOI (2025+); DSPy produced impossible totals ($246B) for all periods
 ]
 
 # LLM (html_soi_parser) pipeline: tickers with functional HTML SOI tables
@@ -54,8 +56,9 @@ LLM_TICKERS = [
 # html_soi_parser can't handle their filing table format; DSPy Gemini extracts correctly.
 DSPY_TICKERS = [
     "EQS",   # No XBRL SOI, html_soi_parser produces 6-8 rows (incomplete)
-    "GECC",  # XBRL/HTML outputs contain many malformed/placeholder rows; DSPy extraction is materially cleaner
-    "ICMB",  # html_soi_parser produces 1-2 rows; table format not recognized
+    # "GECC" moved to XBRL_TICKERS — XBRL SOI available for 2025+; cleaner than DSPy encoding errors
+    # "ICMB" moved to XBRL_TICKERS — XBRL SOI available for 2025+; DSPy totals were impossible ($246B)
+    "MFIC",  # XBRL has 2× duplicate rows (affiliation + industry contexts) + garbled names; keep DSPy
     "MFIC",  # html_soi_parser: 100% blank investment_type (type embedded in company name as comma suffix)
     # "OXSQ" moved to XBRL_TICKERS — has XBRL SOI; 95% cost coverage; rollup rows filtered in post_process
     "PFX",   # html_soi_parser: 100% blank investment_type + column mapping wrong
