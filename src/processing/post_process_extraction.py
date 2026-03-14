@@ -410,6 +410,33 @@ def post_process_csv(input_file: Path, output_file: Path = None) -> Tuple[int, i
                             deduped_xbrl.append(r)  # No richer version — keep it
                 rows = deduped_xbrl
 
+        # XBRL hierarchical rollup filter: some BDCs (e.g. OXSQ) emit XBRL member
+        # strings that form a hierarchy — individual positions AND their subtotals.
+        # E.g. "Senior Secured Notes - Business Services - Access CIG" (individual) and
+        # "Senior Secured Notes - Business Services" (subtotal).  Drop any row whose
+        # company_name is a strict prefix of another row's name (i.e. name + " - ...")
+        # because those are aggregate/subtotal nodes, not individual positions.
+        # Also drop rows whose name contains " - Total " which flags rollup total nodes
+        # that use a different branch name (e.g. "CLO - Total Structured Finance").
+        if not is_dspy_file and rows:
+            all_names = {(r.get('company_name') or '').strip() for r in rows}
+            _ROLLUP_TOTAL_RE = re.compile(r'\s-\s+Total\b', re.IGNORECASE)
+            filtered_rollup = []
+            rollup_dropped = 0
+            for r in rows:
+                name = (r.get('company_name') or '').strip()
+                prefix = name + ' - '
+                if any(n.startswith(prefix) for n in all_names if n != name):
+                    rollup_dropped += 1
+                elif _ROLLUP_TOTAL_RE.search(name):
+                    rollup_dropped += 1
+                else:
+                    filtered_rollup.append(r)
+            if rollup_dropped:
+                logger.debug("Dropped %d XBRL rollup/subtotal rows", rollup_dropped)
+                rows_dropped += rollup_dropped
+                rows = filtered_rollup
+
         # FSK XBRL dedup: XBRL emits two contexts per position — one with full
         # financials and one sparse (only fair_value).  Company name cleanup above
         # normalises "Roemanu LLC ABF Equity" → "Roemanu LLC".  The sparse context

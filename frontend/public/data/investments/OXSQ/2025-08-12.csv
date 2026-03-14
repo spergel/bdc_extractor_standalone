@@ -1,74 +1,37 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
-Access CIG LLC,co_88ccabd99a44,First Lien,Business Services,8.38%,,SOFR,4.25%,0.50%,2024-01-18,2028-08-18,10071389,10111066,10121746,,,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Convergint Technologies LLC,co_279c0103d742,Second Lien,Business Services,11.19%,,SOFR,6.75%,0.75%,2021-03-18,2029-03-29,11000000,10985622,10945000,,,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Nielsen Consumer LLC,co_3f14348f3735,First Lien,Business Services,7.83%,,SOFR,3.50%,0.50%,2024-07-08,2028-03-06,9950063,9940573,9950063,,,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Verifone Systems Inc.,co_ae9da97d8aaa,First Lien,Business Services,10.21%,,SOFR,5.50%,0.00%,2025-03-28,2028-08-20,13229081,12053867,12402263,,,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Shearer’s Foods LLC,co_a500e9e399f4,First Lien,Food & Beverage,7.58%,,SOFR,3.25%,0.00%,2024-01-31,2031-01-31,9900188,9927433,9924938,,,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-HealthChannels Inc.,co_64105b9f1c49,First Lien,Healthcare,11.00%,,SOFR,3.50%,0.00%,2021-01-15,2025-10-30,8745180,8744774,6821240,,,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Performance Health Inc.,co_7088e63a5214,First Lien,Healthcare,7.95%,,SOFR,3.75%,0.00%,2025-03-24,2032-02-27,5000000,5000000,4850000,,,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Viant Medical Holdings Inc.,co_8ac1f37a52bd,First Lien,Healthcare,8.33%,,SOFR,4.00%,0.00%,2024-10-16,2031-10-29,5970000,5943977,5925225,,,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Highline Aftermarket LLC,co_75f8f8c031a3,First Lien,Industrials,7.83%,,SOFR,3.50%,0.75%,2025-02-13,2030-02-19,5970000,5977369,5999850,,,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Michael Baker International Inc.,co_b2dced552f3b,First Lien,Industrials,8.28 %,,SOFR,4.00 %,0.75 %,2024-05-22,2028-12-01,9900250,,9937376,,9949052,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Pro Mach Inc.,co_7d30a3f01a77,First Lien,Industrials,7.08 %,,SOFR,2.75 %,0.00 %,2024-10-10,2028-08-31,5970038,,5984963,,6002797,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Veritiv Operating Corp.,co_5abc6f5c8628,First Lien,Materials,8.30 %,,SOFR,4.00 %,0.75 %,2024-12-06,2030-11-30,5969925,,5986342,,5987675,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Dodge Data & Analytics LLC,co_e0c1bcf46151,First Lien,Software & Technology,10.71 %,,SOFR,6.25 %,0.50 %,2024-11-14,2029-01-31,2186813,,2175879,,2158887,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Dodge Data & Analytics LLC,co_e0c1bcf46151,First Lien,Software & Technology,9.21 %,,SOFR,4.75 %,0.50 %,2024-11-14,2029-02-28,3032558,,2486697,,2493184,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Dodge Data & Analytics LLC,co_e0c1bcf46151,Second Lien,Software & Technology,,12.70 %,SOFR,8.25 %,0.50 %,2024-11-14,2029-03-31,15974162,,6389665,,7662944,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Help/Systems Holdings Inc.,co_dab2681d9d26,First Lien,Software & Technology,8.38 %,,SOFR,4.00 %,0.75 %,2022-10-06,2026-11-19,4378073,,4159169,,4264338,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Help/Systems Holdings Inc.,co_dab2681d9d26,Second Lien,Software & Technology,11.13 %,,SOFR,6.75 %,0.75 %,2021-10-14,2027-11-19,8000000,,5800000,,8001832,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Kofax Inc.,co_fdc8d77c3721,First Lien,Software & Technology,9.63 %,,SOFR,5.25 %,0.50 %,2023-02-01,2029-07-20,9806722,,8924117,,9284654,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-McAfee Enterprise LLC,co_06f03225c814,First Lien,Software & Technology,11.29 %,,SOFR,6.75 %,0.75 %,2024-08-14,2028-07-27,234573,,196455,,212310,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-McAfee Enterprise LLC,co_06f03225c814,First Lien,Software & Technology,11.55 %,,SOFR,7.00 %,0.75 %,2024-08-14,2028-07-27,1310350,,615865,,970860,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-McAfee Enterprise LLC,co_06f03225c814,First Lien,Software & Technology,6.05 %,5.50 %,SOFR,7.00 %,0.75 %,2024-08-14,2028-07-27,10181275,,2799851,,3065593,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-RSA Security LLC,co_5a5a17bbcb6a,First Lien,Software & Technology,12.29%,,SOFR,7.75%,0.75%,2021-04-16,2029-04-27,15000000,,3468750,,14848870,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Smartronix LLC,co_0aef8ece01b9,First Lien,Software & Technology,8.80%,,SOFR,4.50%,0.75%,2025-02-06,2032-01-29,4987500,,4999969,,4999548,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-ConvergeOne Holdings Inc.,co_8d6788d5f897,First Lien,Telecommunications,10.07%,,SOFR,5.75%,0.00%,2024-06-04,2030-06-04,934808,,560885,,896600,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Global Tel Link Corp.,co_c5f41a6242d3,First Lien,Telecommunications,11.83%,,SOFR,7.50%,3.00%,2024-07-29,2029-08-06,5458750,,5404163,,5270790,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Allegro CLO XII Ltd.,co_ce413e022bb5,Other,Financial Services,17.36%,,N/A,,,2024-08-21,2037-07-21,3000000,,1680000,,1914418,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Ares XLIV CLO Ltd.,co_b4a9d8c4aac3,Other,Financial Services,21.86%,,N/A,,,2023-12-15,2034-04-15,5000000,,963096,,1373371,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Atlas Senior Loan Fund XI Ltd.,co_a2aad1967a6d,Other,Financial Services,0.00%,,N/A,,,2019-04-05,2031-07-26,5725000,,200375,,1490740,,,,,dspy_extracted|fair_value_suspicious_vs_size,OXSQ,2025-08-12,OXSQ,2025-08-12
-Bain Capital Credit CLO 2017-2 Ltd.,co_8d7900e72f16,Other,Financial Services,15.64%,,N/A,,,2024-01-17,2037-07-25,3086500,,1483063,,1801979,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-BlueMountain CLO 2014-2 Ltd.,co_f737983895d4,Other,Financial Services,0.00%,,N/A,,,2019-04-03,2030-10-20,6374000,,159350,,512531,,,,,dspy_extracted|fair_value_suspicious_vs_size,OXSQ,2025-08-12,OXSQ,2025-08-12
-BlueMountain CLO XXXI Ltd.,co_92f097012610,Other,Financial Services,21.66%,,N/A,,,2024-04-16,2034-04-19,12075000,,4950750,,7020811,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Carlyle Global Market Strategies CLO 2013-2 Ltd.,co_cf7610c6a027,Other,Financial Services,0.00%,,N/A,,,2013-03-19,2029-01-18,6250000,,10000,,544329,,,,,dspy_extracted|fair_value_suspicious_vs_size,OXSQ,2025-08-12,OXSQ,2025-08-12
-Carlyle Global Market Strategies CLO 2021-6 Ltd.,co_ad8cd4af45eb,Other,,,,N/A,,,2021-06-30,2038-01-15,29600000,,15096000,,18039103,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Cedar Funding II CLO Ltd.,co_7ece860b6d0d,Other,,,,N/A,,,2013-10-23,2034-04-20,18000000,,6639132,,10672465,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Cedar Funding VI CLO Ltd.,co_7ece860b6d0d,Other,,,,N/A,,,2017-05-15,2034-04-20,7700000,,3465000,,5609508,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-CIFC Funding 2014-3 Ltd.,co_e0431908f642,Other,,,,N/A,,,2017-01-24,2038-03-31,1000000,,660000,,1987312,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Dryden 43 Senior Loan Fund,co_ccf41dfa94f3,Other,,,,N/A,,,2021-06-01,2034-04-20,47263000,,13706270,,23870160,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Gulf Stream Meridian 4 Ltd.,co_47157e5b4d8e,Other,,,,N/A,,,2023-11-15,2039-10-15,6625000,,3058021,,3508528,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Madison Park Funding XVIII Ltd.,co_f9a07a2e15cd,Other,,,,N/A,,,2020-05-22,2030-10-21,12500000,,2500000,,2894849,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Madison Park Funding XIX Ltd.,co_f9a07a2e15cd,Other,,,,N/A,,,2016-05-11,2037-01-22,5422500,,2114775,,2375082,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-OCP CLO 2024-37 Ltd.,co_4e6f91422c3d,Other,,,,N/A,,,2024-09-27,2037-10-15,27035000,,21898350,,24654999,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Octagon Investment Partners 49 Ltd.,co_0e9d636c7869,Other,Financial Services,,,N/A,,,2020-12-11,2037-04-15,26375000,,10535718,,16147816,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Sound Point CLO XVI Ltd.,co_f90731b0c4e2,Other,,,,N/A,,,2018-08-01,2030-07-25,45500000,,113750,,19023511,,,,,dspy_extracted|fair_value_suspicious_vs_size,OXSQ,2025-08-12,OXSQ,2025-08-12
-Telos CLO 2013-3 Ltd.,co_0eb8f52c97bd,Other,,,,N/A,,,2013-01-25,2026-07-17,14447790,,1445,,6207075,,,,,dspy_extracted|fair_value_suspicious_vs_size,OXSQ,2025-08-12,OXSQ,2025-08-12
-Telos CLO 2014-5 Ltd.,co_0eb8f52c97bd,Other,,,,N/A,,,2014-04-11,2028-04-17,28500000,,,,18179226,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Venture XX Ltd.,co_c1135ffa5ce1,Other,,0.00%,,,,,2018-07-27,2027-04-15,3000000,332779,—,,,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Venture 35 CLO Ltd.,co_d3d80bf18d80,Other,,0.00%,,,,,2020-12-07,2031-10-22,5000000,512144,100000,,,,,,,dspy_extracted|fair_value_suspicious_vs_size,OXSQ,2025-08-12,OXSQ,2025-08-12
-Zais CLO 6 Ltd.,co_cdc56041a72e,Other,,0.00%,,,,,2017-05-03,2029-07-15,10500000,5069679,9951,,,,,,,dspy_extracted|fair_value_suspicious_vs_size,OXSQ,2025-08-12,OXSQ,2025-08-12
-UniTek Global Services Inc.,co_14469cffd02e,Common Equity,Telecommunications,,,N/A,,,2015-01-13,,1244188,,—,,684960,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-ConvergeOne Holdings Inc.,co_8d6788d5f897,Common Equity,Telecommunications,,,N/A,,,2024-05-08,,95775,,287329,,1349602,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Careismatic Brands Inc.,co_f219c9bed63e,Warrants,Healthcare,,,N/A,,,2024-06-13,,62157,,—,,—,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-UniTek Global Services Inc.,co_14469cffd02e,Preferred Equity,Telecommunications,,,N/A,,,2019-06-26,,21427212,,—,,9002159,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-UniTek Global Services Inc.,co_14469cffd02e,Preferred Equity,Telecommunications,,,N/A,,,2019-06-26,,12080847,,—,,4535443,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-UniTek Global Services Inc.,co_14469cffd02e,Preferred Equity,Telecommunications,,,N/A,,,2019-06-26,,7132568,,5044152,,2592024,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-First American Government Obligations Fund – Class Z Shares,co_77b23e981d4b,Other,Business Services,4.22%,,,,,,,28999728,,28999728,,28999728,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Kaman Corp.,co_88d1363f3040,First Lien,Aerospace & Defense,7.99%,,SOFR,3.50%,0.00%,2024-10-28,2031-04-21,5985,6022.406,6022.406,,6022.406,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Access CIG LLC,co_88ccabd99a44,First Lien,Business Services,9.59%,,SOFR,5.00%,0.50%,2024-01-18,2028-08-18,10122.643,10223.869,10223.869,,10166.166,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Convergint Technologies LLC,co_279c0103d742,Second Lien,Business Services,11.22%,,SOFR,6.75%,0.75%,2021-03-18,2029-03-29,11000,10917.500,10917.500,,10977.867,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Nielsen Consumer LLC,co_3f14348f3735,First Lien,Business Services,9.11%,,SOFR,4.75%,0.50%,2024-07-08,2028-03-06,9975,10049.813,10049.813,,9962.438,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Premiere Global Services Inc.,co_875885a4c9e1,Revolver,Business Services,13.00%,,Prime,5.50%,1.00%,2019-10-01,2023-04-07,2452.012,487.212,487.212,,2378.999,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Verifone Systems Inc.,co_ae9da97d8aaa,First Lien,Business Services,8.78%,,SOFR,4.00%,0.00%,2018-08-09,2025-08-20,14760.146,13837.637,13837.637,,14593.903,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Shearer’s Foods LLC,co_a500e9e399f4,First Lien,Food & Beverage,7.61%,,SOFR,3.25%,0.00%,2024-01-31,2031-01-31,9950.063,9950.063,9950.063,,9977.025,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-HealthChannels Inc.,co_64105b9f1c49,First Lien,Healthcare,9.67%,,SOFR,4.50%,0.00%,2018-10-31,2025-04-03,18553.349,12801.811,12801.811,,18519.053,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Viant Medical Holdings Inc.,co_8ac1f37a52bd,First Lien,Healthcare,8.60%,,SOFR,4.00%,0.00%,2024-10-16,2031-10-16,6000,6060.000,6060.000,,5970.224,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Alvaria Inc.,co_75311b82b0be,First Lien,Software & Technology,5.46 %,6.50 %,SOFR,1.00 %,0.75 %,2024-03-20,2028-05-05,2216883,1738104,877509,,,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Alvaria Inc.,co_75311b82b0be,First Lien,Software & Technology,6.46 %,5.50 %,SOFR,2.00 %,0.75 %,2024-03-20,2028-05-05,5132151,2744262,102643,,,,,,,dspy_extracted|fair_value_suspicious_vs_size,OXSQ,2025-08-12,OXSQ,2025-08-12
-Quest Software Inc.,co_2d6784b3c177,First Lien,Software & Technology,4.25 %,,SOFR,4.25 %,0.50 %,2022-01-20,2029-02-01,2932500,2913022,1461675,,,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-RSA Security LLC,co_5a5a17bbcb6a,Second Lien,Software & Technology,7.75 %,,SOFR,7.75 %,0.75 %,2021-04-16,2029-04-27,15000000,14827269,6815700,,,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Carlyle Global Market Strategies CLO 2021-6 Ltd.,co_ad8cd4af45eb,Other,,8.48%,,N/A,,,2021-06-30,2034-07-15,29600000,,16872000,,18983888,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-CIFC Funding 2014-3 Ltd.,co_e0431908f642,Other,,0.00%,,N/A,,,2017-01-24,2031-10-22,10000000,,1100000,,2263471,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Venture XVII Ltd.,co_5591dac154c7,Other,,0.00%,,,,,2017-01-27,2027-04-15,6200000,2321562,620,,,,,,,dspy_extracted|fair_value_suspicious_vs_size,OXSQ,2025-08-12,OXSQ,2025-08-12
-UniTek Global Services Inc.,co_14469cffd02e,Common Equity,Software & Technology,,,N/A,,,2015-01-13,,,684960,,,,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-ConvergeOne Holdings Inc.,co_8d6788d5f897,Common Equity,Telecommunications,,,N/A,,,2024-05-08,,,1349602,957750,,,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
+Access CIG,co_88ccabd99a44,First Lien,,4.25%,,,,0.5%,2024-01-18,2028-08-18,10071,10111,10122,,10111,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+Convergint Technologies,co_c69e7a468d2c,Second Lien,,6.75%,,,,0.75%,2021-03-18,2029-03-29,11000,10986,10945,,10986,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+Nielsen Consumer,co_3f14348f3735,First Lien,Consumer & Retail,3.5%,,,,0.5%,2024-07-08,2028-03-06,9950,9941,9950,,9941,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+Verifone Systems,co_b4f329e4c792,First Lien,,5.5%,,,,0%,2025-03-28,2028-08-20,13229,12054,12402,,12054,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+Shearer's Foods,co_2f298081f0cf,First Lien,Food & Beverage,3.25%,,,,0%,2024-01-31,2031-01-31,9900,9927,9925,,9927,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+HealthChannels,co_64105b9f1c49,First Lien,,3.5%,,,,0%,2021-01-15,2025-10-30,8745,8745,6821,,8745,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+first lien senior secured notes,co_e52974f3101c,First Lien,,3.75%,,,,0%,2025-03-24,2032-02-27,5000,5000,4850,,5000,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+Viant Medical Holdings,co_6718d20c03ff,First Lien,Healthcare,4%,,,,0%,2024-10-16,2031-10-29,5970,5944,5925,,5944,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+Highline Aftermarket,co_83393efbed39,First Lien,,3.5%,,,,0.75%,2025-02-13,2030-02-19,5970,5977,6000,,5977,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+Michael Baker International,co_f71e197d9972,First Lien,,4%,,,,0.75%,2024-05-22,2028-12-01,9900,9949,9937,,9949,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+first lien senior secured notes,co_e52974f3101c,First Lien,,2.75%,,,,0%,2024-10-10,2028-08-31,5970,6003,5985,,6003,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+first lien senior secured notes,co_e52974f3101c,First Lien,,4%,,,,0.75%,2024-12-06,2030-11-30,5970,5988,5986,,5988,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+Dodge Data & Analytics,co_e0c1bcf46151,First Lien,,6.25%,,,,0.5%,2024-11-14,2029-01-31,2187,2159,2176,,2159,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+Dodge Data & Analytics,co_e0c1bcf46151,First Lien,,4.75%,,,,0.5%,2024-11-14,2029-02-28,3033,2493,2487,,2493,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+Dodge Data & Analytics,co_e0c1bcf46151,Second Lien,,8.25%,,,,0.5%,2024-11-14,2029-03-31,15974,7663,6390,,7663,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+Help/Systems Holdings,co_dab2681d9d26,First Lien,,4%,,,,0.75%,2022-10-06,2026-11-19,4378,4264,4159,,4264,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+Help/Systems Holdings,co_dab2681d9d26,Second Lien,,6.75%,,,,0.75%,2021-10-14,2027-11-19,8000,8002,5800,,8002,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+Kofax,co_c24311a0e150,First Lien,,5.25%,,,,0.5%,2023-02-01,2029-07-20,9807,9285,8924,,9285,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+McAfee Enterprise,co_f55d81ce29c8,First Lien,,6.75%,,,,0.75%,2024-08-14,2028-07-27,235,212,196,,212,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+McAfee Enterprise,co_f55d81ce29c8,First Lien,,7%,,,,0.75%,2024-08-14,2028-07-27,1310,971,616,,971,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+McAfee Enterprise,co_f55d81ce29c8,First Lien,,7%,,,,0.75%,2024-08-14,2028-07-27,10181,3066,2800,,3066,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+RSA Security,co_5a5a17bbcb6a,Second Lien,,7.75%,,,,0.75%,2021-04-16,2029-04-27,15000,14849,3469,,14849,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+Smartronix,co_0aef8ece01b9,First Lien,,4.5%,,,,0.75%,2025-02-06,2032-01-29,4988,5000,5000,,5000,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+ConvergeOne Holdings,co_8d6788d5f897,First Lien,,5.75%,,,,0%,2024-06-04,2030-06-04,935,897,561,,897,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+first lien senior secured notes,co_e52974f3101c,First Lien,,7.5%,,,,3%,2024-07-29,2029-08-06,5459,5271,5404,,5271,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+Senior Secured Notes,co_8135c5c3d952,Other,,,,,,,,,,164755,146830,93.3%,164755,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+IT Consulting UniTek Global Services,co_5e4d989d23f4,Common Equity,Software & Technology,,,,,,2015-01-13,,1244,685,,,685,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+Telecommunication Services - ConvergeOne Holdings Inc.,co_9ed9bb1c1ed7,First Lien,Telecommunications,,,,,,2024-05-08,,96,1350,287,,1350,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+Common Stock,co_494be70af2f7,Other,,,,,,,,,,2035,287,0.2%,2035,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+IT Consulting UniTek Global Services,co_5e4d989d23f4,Preferred Equity,Software & Technology,,,,,,2019-06-26,,7133,2592,5044,,2592,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+IT Consulting,co_6bbfca51e254,Other,Software & Technology,,,,,,,,,16130,5044,3.2%,16130,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+Preferred Stock,co_1b53fd508de5,Other,,,,,,,,,,16130,5044,3.2%,16130,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+in Securities,co_2bc6b76e8c25,Other,Financial Services,,,,,,,,,356661,241507,1.53%,356661,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+in Securities and Cash Equivalents,co_b5d6d399fda6,Other,Financial Services,,,,,,,,,385661,270507,1.72%,385661,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+Healthcare - Careismatic Brands,co_9d7262f120f8,Common Equity,Healthcare,,,,,,2024-06-13,,62,,,,,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+Warrants,co_6c4309c341e9,Other,,,,,,,,,,,,0%,,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12

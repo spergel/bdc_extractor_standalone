@@ -40,6 +40,7 @@ XBRL_TICKERS = [
     "MSIF", "NCDL", "NMFC", "OCSL", "OFS",
     "PFLT", "PNNT", "PSBD", "PSEC", "RAND", "SAR", "SCM",
     "SLRC", "TCPC", "TRIN", "TSLX", "WHF",
+    "OXSQ",  # has XBRL SOI; hierarchical rollup rows filtered by post_process
 ]
 
 # LLM (html_soi_parser) pipeline: tickers with functional HTML SOI tables
@@ -56,7 +57,7 @@ DSPY_TICKERS = [
     "GECC",  # XBRL/HTML outputs contain many malformed/placeholder rows; DSPy extraction is materially cleaner
     "ICMB",  # html_soi_parser produces 1-2 rows; table format not recognized
     "MFIC",  # html_soi_parser: 100% blank investment_type (type embedded in company name as comma suffix)
-    "OXSQ",  # html_soi_parser returns 0 rows (COMPANY/INVESTMENT header not recognized)
+    # "OXSQ" moved to XBRL_TICKERS — has XBRL SOI; 95% cost coverage; rollup rows filtered in post_process
     "PFX",   # html_soi_parser: 100% blank investment_type + column mapping wrong
     # "RAND" moved to XBRL_TICKERS — has XBRL SOI data; correct scale (whole-dollar filings, XBRL handles correctly)
     "RWAY",  # html_soi_parser produces 77% garbled company names (flat-path row format); DSPy: 0% garbled, 100% rate coverage

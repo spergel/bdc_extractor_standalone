@@ -1,8 +1,8 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
 "Broadcast Music, Inc.",co_14f1b361a217,,Media & Entertainment,,,SOFR,5.75%,,,2030-02-01,26830,26170,26158,0.4,26170,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
 "Broadcast Music, Inc.",co_14f1b361a217,,Media & Entertainment,,,SOFR,5.75%,,,2030-02-01,,-119,-122,-,-119,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
-"Circana Group, LP.",co_c53bee8c3340,,Media & Entertainment,,2.75%,SOFR,6.25%,,,2028-12-01,19235,18928,19139,0.3,18928,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
-"Circana Group, LP.",co_c53bee8c3340,,Media & Entertainment,,,SOFR,5.75%,,,2027-12-01,846,825,838,-,825,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
+"Circana Group, LP.",co_06c1b60713ce,,Media & Entertainment,,2.75%,SOFR,6.25%,,,2028-12-01,19235,18928,19139,0.3,18928,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
+"Circana Group, LP.",co_06c1b60713ce,,Media & Entertainment,,,SOFR,5.75%,,,2027-12-01,846,825,838,-,825,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
 "Global Music Rights, LLC",co_4a115e02d59e,,Media & Entertainment,,,SOFR,5.50%,,,2030-08-01,59751,58602,59751,1.0,58602,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
 Monotype Imaging Holdings Inc.,co_f26421f2c9f8,,Media & Entertainment,,,SOFR,5.50%,,,2031-02-01,114430,113580,113538,1.9,113580,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
 Monotype Imaging Holdings Inc.,co_f26421f2c9f8,,Media & Entertainment,,,SOFR,5.50%,,,2026-02-01,,-35,-3,-,-35,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
@@ -307,9 +307,9 @@ Milan Laser Holdings LLC,co_61e9e2471170,,Consumer & Retail,,,SOFR,5.00%,,,2027-
 "Notorious Topco, LLC",co_965ce32b6006,,Consumer & Retail,,,SOFR,6.75%,,,2027-05-01,3192,3110,2642,-,3110,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
 "The Shade Store, LLC",co_49ac617ce39e,,"The Shade Store, LLC(14)(26)",,,SOFR,6.00%,,,2029-10-01,8886,8814,8775,0.1,8814,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
 "The Shade Store, LLC",co_49ac617ce39e,,"The Shade Store, LLC(10)(14)(26)",,,SOFR,6.00%,,,2028-10-01,273,267,261,-,267,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
-"Park Place Technologies, LLC",co_ff0f33d5df53,,"Park Place Technologies, LLC(13)(26)",,,SOFR,5.25%,,,2031-03-01,2356,2333,2333,-,2333,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
-"Park Place Technologies, LLC",co_ff0f33d5df53,,"Park Place Technologies, LLC(10)(22)(23)(26)",,,SOFR,5.25%,,,2025-09-01,,-2,-2,-,-2,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
-"Park Place Technologies, LLC",co_ff0f33d5df53,,"Park Place Technologies, LLC(10)(22)(26)",,,SOFR,5.25%,,,2030-03-01,,-3,-3,-,-3,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
+"Park Place Technologies, LLC",co_7b62066cfc4f,,"Park Place Technologies, LLC(13)(26)",,,SOFR,5.25%,,,2031-03-01,2356,2333,2333,-,2333,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
+"Park Place Technologies, LLC",co_7b62066cfc4f,,"Park Place Technologies, LLC(10)(22)(23)(26)",,,SOFR,5.25%,,,2025-09-01,,-2,-2,-,-2,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
+"Park Place Technologies, LLC",co_7b62066cfc4f,,"Park Place Technologies, LLC(10)(22)(26)",,,SOFR,5.25%,,,2030-03-01,,-3,-3,-,-3,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
 "PPT Holdings III, LLC",co_ef8153448d07,,"PPT Holdings III, LLC (dba Park Place Technologies)(26)(29)",,12.75%,,,,,2034-03-01,750,731,731,-,731,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
 "Lightbeam Bidco, Inc.",co_7652a2753bb1,,"Lightbeam Bidco, Inc. (dba Lazer Spot)(14)(26)",,,SOFR,6.25%,,,2030-05-01,4513,4469,4513,0.1,4469,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
 "Lightbeam Bidco, Inc.",co_7652a2753bb1,,"Lightbeam Bidco, Inc. (dba Lazer Spot)(10)(14)(26)",,,SOFR,6.25%,,,2029-05-01,63,59,63,-,59,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
@@ -404,8 +404,8 @@ PS Op Holdings LLC,co_586dbbd4b270,,,,,,,,,2021-12-21,,,,,,,,,,,OBDC,2024-05-08,
 Space Exploration Technologies Corp.,co_98de10ab7858,,,,,,,,,2021-03-25,,,,,,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
 Walker Edison Holdco LLC**,co_196774f0cc5e,,,,,,,,,2023-03-01,,,,,,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
 Wingspire Capital Holdings LLC**,co_eb85ba0c57c0,,,,,,,,,2019-09-24,,,,,,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
-"Circana Group, LP.",co_c53bee8c3340,,Media & Entertainment,,2.75%,SOFR,6.25%,,,2028-12-01,19141,18813,18949,0.3,18813,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
-"Circana Group, LP.",co_c53bee8c3340,,Media & Entertainment,,,SOFR,5.75%,,,2027-12-01,272,250,257,-,250,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
+"Circana Group, LP.",co_06c1b60713ce,,Media & Entertainment,,2.75%,SOFR,6.25%,,,2028-12-01,19141,18813,18949,0.3,18813,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
+"Circana Group, LP.",co_06c1b60713ce,,Media & Entertainment,,,SOFR,5.75%,,,2027-12-01,272,250,257,-,250,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
 "Global Music Rights, LLC",co_4a115e02d59e,,Media & Entertainment,,,SOFR,5.75%,,,2028-08-01,7350,7242,7350,0.1,7242,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
 "Aviation Solutions Midco, LLC",co_5dd84dbbb5af,,Aerospace & Defense,,,SOFR,7.25%,,,2025-01-01,210713,209873,213873,3.6,209873,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
 Peraton Corp.,co_26028249ab33,,Aerospace & Defense,,,SOFR,7.75%,,,2029-02-01,45899,45396,45554,0.8,45396,,,,,,OBDC,2024-05-08,OBDC,2024-05-08
