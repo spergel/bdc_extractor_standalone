@@ -35,17 +35,17 @@ CUSTOM_SCRAPER_SCRIPTS = {
 # XBRL pipeline: Grade A — cost ≥ 60% AND rate ≥ 40% from XBRL (excludes CUSTOM_SCRAPER_TICKERS)
 XBRL_TICKERS = [
     "ARCC", "BBDC", "BXSL", "CCAP", "CGBD",
-    "CSWC", "FDUS", "GAIN", "GBDC", "GLAD", "GSBD",
+    "CSWC", "FDUS", "FSK", "GAIN", "GBDC", "GLAD", "GSBD",
     "HRZN", "KBDC", "LIEN", "MAIN", "MRCC", "MSDL",
     "MSIF", "NCDL", "NMFC", "OCSL", "OFS",
-    "PFLT", "PNNT", "PSBD", "PSEC", "SAR", "SCM",
+    "PFLT", "PNNT", "PSBD", "PSEC", "RAND", "SAR", "SCM",
     "SLRC", "TCPC", "TRIN", "TSLX", "WHF",
 ]
 
 # LLM (html_soi_parser) pipeline: tickers with functional HTML SOI tables
-# Grade B: CION (rate=12%), FSK (rate=0%), HTGC (rate=2%), OBDC (rate=0%), TPVG (rate=12%)
+# Grade B: CION (rate=12%), HTGC (rate=2%), OBDC (rate=0%), TPVG (rate=12%)
 LLM_TICKERS = [
-    "CION", "FSK", "HTGC",
+    "CION", "HTGC",
     "OBDC", "TPVG",
 ]
 
@@ -58,7 +58,7 @@ DSPY_TICKERS = [
     "MFIC",  # html_soi_parser: 100% blank investment_type (type embedded in company name as comma suffix)
     "OXSQ",  # html_soi_parser returns 0 rows (COMPANY/INVESTMENT header not recognized)
     "PFX",   # html_soi_parser: 100% blank investment_type + column mapping wrong
-    "RAND",  # html_soi_parser returns 12-19 rows (complex SOI format); DSPy needed
+    # "RAND" moved to XBRL_TICKERS — has XBRL SOI data; correct scale (whole-dollar filings, XBRL handles correctly)
     "RWAY",  # html_soi_parser produces 77% garbled company names (flat-path row format); DSPy: 0% garbled, 100% rate coverage
     "SSSS",  # No XBRL SOI, html_soi_parser produces ≤1 row per filing
 ]

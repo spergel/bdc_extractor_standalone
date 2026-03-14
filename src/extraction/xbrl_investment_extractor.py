@@ -592,6 +592,8 @@ class XBRLInvestmentExtractor:
             return self._parse_trin_format(dim_string, result)
         if self._INV_AFFILIATION_RE.match(dim_string):
             return self._parse_inv_affiliation_format(dim_string, result)
+        if self._INV_PIPE_AFFILIATION_RE.match(dim_string):
+            return self._parse_pipe_affiliation_format(dim_string, result)
         if re.match(r'^(?:Debt|Equity)\s+Investments?\s+', dim_string, re.I) and ' and ' in dim_string:
             return self._parse_and_format(dim_string, result)
         elif re.match(r'^Investments?[-\s]', dim_string) or re.match(r'^(?:Debt|Equity)\s+Investments?\s*-', dim_string, re.I):
@@ -770,6 +772,40 @@ class XBRLInvestmentExtractor:
         'Equipment Financing',
         'Senior Secured Loans',
     )
+
+    def _parse_pipe_affiliation_format(self, dim_string: str, result: Dict[str, str]) -> Dict[str, str]:
+        """Parse CGBD pipe format: 'Investment | Affiliation | InvType | Company | Industry: Subcategory'.
+
+        The blob parser incorrectly uses the industry subcategory (last segment after the last |)
+        as the company name. This parser correctly extracts the 4th pipe-segment as company name.
+
+        Example:
+          "Investment | Non-Affiliated Issuer | First Lien Debt | Alpine Acquisition Corp II | Transportation: Cargo"
+          → company_name = "Alpine Acquisition Corp II", industry = "Transportation"
+        """
+        parts = [p.strip() for p in dim_string.split('|')]
+        # parts[0] = "Investment", parts[1] = affiliation, parts[2] = inv_type, parts[3] = company, parts[4] = industry:sub
+        if len(parts) >= 4:
+            result['company_name'] = parts[3]
+        if len(parts) >= 3:
+            inv_type = parts[2].lower()
+            if 'equity' in inv_type:
+                result['investment_type_raw'] = 'EQUITY'
+            else:
+                result['investment_type_raw'] = 'DEBT'
+        if len(parts) >= 5:
+            # "Transportation: Cargo" → use base category as industry
+            industry_seg = parts[4]
+            if ':' in industry_seg:
+                result['industry'] = industry_seg.split(':')[0].strip()
+            else:
+                result['industry'] = industry_seg
+        affil = (parts[1] if len(parts) >= 2 else '').lower()
+        if 'non' in affil:
+            result['investment_affiliation'] = 'non-affiliated'
+        elif 'affiliated' in affil:
+            result['investment_affiliation'] = 'affiliated'
+        return result
 
     def _parse_pipe_format(self, dim_string: str, result: Dict[str, str]) -> Dict[str, str]:
         """Parse 'Company Name | Investment Description' format (CSWC style).
@@ -975,6 +1011,12 @@ class XBRLInvestmentExtractor:
     # (CGBD 2025+ and similar filers that switched to this comma structure)
     _INV_AFFILIATION_RE = re.compile(
         r'^Investment,\s*(?:Non-?Affiliated\s+Issuer|Affiliated\s+Issuer|Non-?Controlled|Controlled)\s*,',
+        re.IGNORECASE,
+    )
+    # Detection for CGBD pipe format: "Investment | Affiliation | Type | Company | Industry: Sub"
+    # The blob parser incorrectly takes the industry subcategory (after the last |) as company name.
+    _INV_PIPE_AFFILIATION_RE = re.compile(
+        r'^Investment\s*\|\s*(?:Non-?Affiliated|Affiliated)(?:\s+Issuer)?\s*\|',
         re.IGNORECASE,
     )
     # Legal entity suffix to detect end of company name in comma-separated segments
@@ -1646,6 +1688,10 @@ class XBRLInvestmentExtractor:
             return '', extracted_industry
         if name.lower().startswith('total '):
             return '', extracted_industry
+        if name.lower().startswith('subtotal '):
+            return '', extracted_industry
+        if re.match(r'^(?:Control\s+and\s+)?Affiliate\s+Investments?$', name, re.I):
+            return '', extracted_industry
         if re.match(r'^-?\s*\d+(?:\.\d+)?%$', name):
             return '', extracted_industry
         if re.match(r'^-\s*\d+(?:\.\d+)?%$', name):
@@ -2096,6 +2142,30 @@ class XBRLInvestmentExtractor:
 
             # Enrich missing industry / maturity_date from the HTML table
             rows = self._html_enrich_rows(rows, filing_result, ticker, period_end_date)
+
+            # FSK-specific: XBRL emits two contexts for the same position — one with
+            # full financials (cost, amortized_cost, shares) and one sparse (fair_value only).
+            # The standard dedup key includes cost/amortized_cost so they survive as separate
+            # rows. Re-dedup using only (company, type, principal, fair, maturity) and keep
+            # the richer row.
+            if ticker == 'FSK':
+                before = len(rows)
+                soft_key: Dict[Tuple[str, str, str, str, str], Dict[str, str]] = {}
+                for r in rows:
+                    ck = re.sub(r'[^a-z0-9]+', ' ', (r.get('company_name') or '').lower()).strip()
+                    key = (
+                        ck,
+                        (r.get('investment_type') or '').strip().lower(),
+                        (r.get('principal_amount') or '').strip(),
+                        (r.get('fair_value') or '').strip(),
+                        (r.get('maturity_date') or '').strip(),
+                    )
+                    existing = soft_key.get(key)
+                    if existing is None or self._row_score(r) > self._row_score(existing):
+                        soft_key[key] = r
+                rows = list(soft_key.values())
+                if len(rows) != before:
+                    logger.info("FSK soft dedup: removed %d sparse-context duplicate rows", before - len(rows))
 
             # Write CSV
             output_path = self._save_csv(rows, ticker, filing_result.filing_date)

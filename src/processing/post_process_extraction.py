@@ -288,8 +288,166 @@ def post_process_csv(input_file: Path, output_file: Path = None) -> Tuple[int, i
                     rows_dropped += 1
                     continue
 
+                # Drop data-poor summary rows: fair_value populated but no other meaningful field.
+                # These are portfolio-total or section-subtotal rows that DSPy sometimes emits.
+                _MEANINGFUL = (
+                    'principal_amount', 'amortized_cost', 'maturity_date',
+                    'reference_rate', 'cash_rate', 'pik_rate', 'spread',
+                    'shares', 'cost', 'acquisition_date',
+                )
+                if (
+                    (row.get('fair_value') or '').strip()
+                    and not any((row.get(f) or '').strip() for f in _MEANINGFUL)
+                    and (row.get('data_quality_flags') or '').startswith('dspy')
+                ):
+                    rows_dropped += 1
+                    continue
+
                 rows.append(row)
-        
+
+        # Cross-period dedup for DSPy-extracted files.
+        # 10-Q filings include a comparative prior-year-end SOI table. If table detection
+        # didn't filter it, we get ~2× rows.  Apply the same dedup the scraper uses, plus
+        # a fair-value-based pass for equity/fund positions that have no maturity date.
+        def _field_count(r: dict) -> int:
+            return sum(1 for v in r.values() if (v or '').strip())
+
+        is_dspy_file = any(
+            (r.get('data_quality_flags') or '').startswith('dspy') for r in rows
+        )
+        if is_dspy_file and rows:
+            from collections import defaultdict as _dd
+
+            def _mat_ym(s: str) -> str:
+                s = (s or '').strip()
+                return s[:7] if len(s) >= 7 else s
+
+            def _parse_f(s: str) -> float:
+                try:
+                    return float((s or '').strip() or '0')
+                except ValueError:
+                    return 0.0
+
+            # Pass 1: dedup by (company, type, maturity_ym) + principal proximity (debt positions)
+            _seen_pri: dict = _dd(list)
+            deduped_rows = []
+            for r in rows:
+                co = (r.get('company_name') or '').strip().lower()
+                tp = (r.get('investment_type') or '').strip().lower()
+                mat = _mat_ym(r.get('maturity_date', ''))
+                if not mat:
+                    deduped_rows.append(r)
+                    continue
+                key = (co, tp, mat)
+                pri = _parse_f(r.get('principal_amount', ''))
+                is_dup = False
+                for seen_pri in _seen_pri[key]:
+                    if seen_pri == 0 and pri == 0:
+                        is_dup = True
+                        break
+                    if seen_pri > 0 and pri > 0 and min(seen_pri, pri) / max(seen_pri, pri) >= 0.70:
+                        is_dup = True
+                        break
+                if is_dup:
+                    rows_dropped += 1
+                else:
+                    _seen_pri[key].append(pri)
+                    deduped_rows.append(r)
+
+            # Pass 2: for no-maturity positions (equity/fund), dedup by (company, type) + FV proximity.
+            # Threshold 0.75: if two rows share the same company+type and FVs are within 25%,
+            # treat the second occurrence as a prior-period duplicate and drop it.
+            _seen_fv: dict = _dd(list)
+            final_rows = []
+            for r in deduped_rows:
+                mat = _mat_ym(r.get('maturity_date', ''))
+                if mat:
+                    final_rows.append(r)
+                    continue
+                co = (r.get('company_name') or '').strip().lower()
+                tp = (r.get('investment_type') or '').strip().lower()
+                key = (co, tp)
+                fv = _parse_f(r.get('fair_value', ''))
+                is_dup = False
+                if fv > 0:
+                    for seen_fv in _seen_fv[key]:
+                        if min(seen_fv, fv) / max(seen_fv, fv) >= 0.75:
+                            is_dup = True
+                            break
+                if is_dup:
+                    rows_dropped += 1
+                else:
+                    if fv > 0:
+                        _seen_fv[key].append(fv)
+                    final_rows.append(r)
+            rows = final_rows
+
+        # XBRL blank-FV dedup: some XBRL filers (e.g. RAND) emit two contexts per
+        # position — one with fair_value populated and one with fair_value blank.
+        # Drop blank-FV rows when a non-blank-FV row exists for the same (company, type).
+        # Guard genuine blank-FV-only positions (e.g. partnership interests) by only
+        # dropping when there is at least one sibling row with a real FV.
+        if not is_dspy_file and rows:
+            # Build set of (company, type) keys that have at least one non-blank FV
+            has_fv: set = set()
+            for r in rows:
+                if (r.get('fair_value') or '').strip():
+                    co = (r.get('company_name') or '').strip().lower()
+                    t = (r.get('investment_type') or '').strip().lower()
+                    has_fv.add((co, t))
+            if has_fv:
+                deduped_xbrl = []
+                for r in rows:
+                    fv = (r.get('fair_value') or '').strip()
+                    if fv:
+                        deduped_xbrl.append(r)
+                    else:
+                        co = (r.get('company_name') or '').strip().lower()
+                        t = (r.get('investment_type') or '').strip().lower()
+                        if (co, t) in has_fv:
+                            rows_dropped += 1  # Blank-FV shadow of a richer row
+                        else:
+                            deduped_xbrl.append(r)  # No richer version — keep it
+                rows = deduped_xbrl
+
+        # FSK XBRL dedup: XBRL emits two contexts per position — one with full
+        # financials and one sparse (only fair_value).  Company name cleanup above
+        # normalises "Roemanu LLC ABF Equity" → "Roemanu LLC".  The sparse context
+        # often maps to a different investment_type than the rich one (e.g. "Other"
+        # vs "Other Equity", "Preferred Equity" vs "First Lien"), so we key on
+        # (company, fair_value) only and drop any row with score ≤ 5 that duplicates
+        # a richer row — guarding against accidentally merging genuine distinct tranches.
+        is_fsk_xbrl = (file_ticker == 'FSK') and not is_dspy_file
+        if is_fsk_xbrl and rows:
+            seen_fsk: dict = {}
+            deduped_fsk = []
+            for r in rows:
+                co = (r.get('company_name') or '').strip().lower()
+                fv = (r.get('fair_value') or '').strip()
+                key = (co, fv)
+                score = _field_count(r)
+                existing = seen_fsk.get(key)
+                if existing is None:
+                    seen_fsk[key] = r
+                    deduped_fsk.append(r)
+                elif score > _field_count(existing):
+                    # Current row is richer — replace sparse shadow row
+                    if _field_count(existing) <= 5:
+                        idx = deduped_fsk.index(existing)
+                        deduped_fsk[idx] = r
+                        seen_fsk[key] = r
+                        rows_dropped += 1
+                    else:
+                        # Both rows are rich — likely genuine distinct tranches; keep both
+                        deduped_fsk.append(r)
+                elif score <= 5:
+                    # Current row is sparse and a richer version already exists — drop it
+                    rows_dropped += 1
+                else:
+                    # Both rows are rich — likely genuine distinct tranches; keep both
+                    deduped_fsk.append(r)
+            rows = deduped_fsk
+
         # Write back
         with open(output_file, 'w', encoding='utf-8', newline='') as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames)
