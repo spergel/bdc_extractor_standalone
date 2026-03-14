@@ -1,8 +1,8 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
 Skydio,co_7e8be9ce7575,First Lien,Aerospace & Defense,9.82%,2.75%,SOFR,,2.5%,,2029-12-04,13215,13096,13083,,13096,,,,,,TCPC,2025-05-08
 Skydio,co_7e8be9ce7575,Delayed Draw,Aerospace & Defense,9.82%,2.75%,SOFR,,2.5%,,2029-12-04,0,-61,-66,,-61,,,,,,TCPC,2025-05-08
-ALCV Purchaser,co_130cd37dd542,First Lien,Automotive,11.19%,,SOFR,6.86%,1%,,2026-02-25,7656,7585,7625,,7585,,,,,,TCPC,2025-05-08
-ALCV Purchaser,co_130cd37dd542,Revolver,Automotive,11.19%,,SOFR,6.86%,1%,,2026-02-25,448,440,445,,440,,,,,,TCPC,2025-05-08
+ALCV Purchaser,co_f65a79c7d362,First Lien,Automotive,11.19%,,SOFR,6.86%,1%,,2026-02-25,7656,7585,7625,,7585,,,,,,TCPC,2025-05-08
+ALCV Purchaser,co_f65a79c7d362,Revolver,Automotive,11.19%,,SOFR,6.86%,1%,,2026-02-25,448,440,445,,440,,,,,,TCPC,2025-05-08
 AutoAlert,co_a928a54b77b1,First Lien,Automotive,9.71%,,SOFR,5.4%,1%,,2028-03-31,18813,18813,18813,,18813,,,,,,TCPC,2025-05-08
 AutoAlert,co_a928a54b77b1,Second Lien,Automotive,13.71%,9.4%,SOFR,,1%,,2029-03-31,11106,11106,11106,,11106,,,,,,TCPC,2025-05-08
 Air Distribution Technologies Inc.,co_07cd2ab27626,First Lien,Industrials,10.3%,,SOFR,6%,1%,,2030-08-01,1995,1959,1983,,1959,,,,,,TCPC,2025-05-08
@@ -71,7 +71,7 @@ Accuserve Solutions,co_d8453e4631f7,Delayed Draw,Diversified,9.53%,,SOFR,5.25%,1
 Callodine Commercial Finance,co_3b3f22eef2d1,First Lien,Diversified,15.56%,,SOFR,11.26%,1%,,2025-11-03,22097,21806,22097,,21806,,,,,,TCPC,2025-05-08
 GC Champion Acquisition LLC,co_413cdab0d6c4,First Lien,Diversified,9.3%,,SOFR,5%,1%,,2028-08-21,7704,7393,7603,,7393,,,,,,TCPC,2025-05-08
 GC Champion Acquisition LLC,co_413cdab0d6c4,First Lien,Diversified,9.3%,,SOFR,5%,1%,,2028-08-21,2140,2054,2112,,2054,,,,,,TCPC,2025-05-08
-Gordon Brothers Finance Company Unsecured Debt Ref LIBOR(M) Floor 1.00% Spread 11.00% Total Coupon 15.30% Maturity 6/8/2029,co_8fa1d4e1480a,First Lien,Diversified,15.3%,,LIBOR,11%,1%,,2029-06-08,37183,13114,2353,,13114,,,,,,TCPC,2025-05-08
+Gordon Brothers Finance Company Unsecured Debt Ref LIBOR(M) Floor 1.00% Spread 11.00% Total Coupon 15.30% Maturity 6/8/2029,co_2386c718dd96,First Lien,Diversified,15.3%,,LIBOR,11%,1%,,2029-06-08,37183,13114,2353,,13114,,,,,,TCPC,2025-05-08
 Libra Solutions Intermediate Holdco,co_e2e042243d41,Second Lien,Diversified,12.94%,,SOFR,8.62%,1%,,2026-07-05,22634,22371,22543,,22371,,,,,,TCPC,2025-05-08
 Rialto Management Group,co_60d81ee23360,Revolver,Diversified,9.32%,,SOFR,5%,0.75%,,2030-12-05,0,-2,-2,,-2,,,,,,TCPC,2025-05-08
 Rialto Management Group,co_60d81ee23360,First Lien,Diversified,9.32%,,SOFR,5%,0.75%,,2030-12-05,4890,4844,4821,,4844,,,,,,TCPC,2025-05-08
@@ -133,9 +133,9 @@ Oranje Holdco Inc.,co_055c2740c113,First Lien,Software & Technology,11.54%,,SOFR
 Oranje Holdco Inc.,co_055c2740c113,First Lien,Software & Technology,12.04%,,SOFR,7.75%,1%,,2029-02-01,0,-20,-2,,-20,,,,,,TCPC,2025-05-08
 Persado Inc.,co_7f83b3f968ae,First Lien,Software & Technology,11.82%,,SOFR,7.5%,1.8%,,2027-06-10,6339,6250,6041,,6250,,,,,,TCPC,2025-05-08
 Persado Inc.,co_7f83b3f968ae,First Lien,Software & Technology,11.82%,,SOFR,7.5%,1.8%,,2027-06-10,9201,8872,8768,,8872,,,,,,TCPC,2025-05-08
-Pluralsight Inc.,co_c7709528c5b4,First Lien,Software & Technology,8.83%,1.5%,SOFR,,1%,,2029-08-22,5776,5522,5776,,5522,,,,,,TCPC,2025-05-08
-Pluralsight Inc.,co_c7709528c5b4,First Lien,Software & Technology,11.83%,7.5%,SOFR,,1%,,2029-08-22,9153,8769,9153,,8769,,,,,,TCPC,2025-05-08
-Pluralsight Inc.,co_c7709528c5b4,First Lien,Software & Technology,8.83%,1.5%,SOFR,,1%,,2029-08-22,3044,3044,3044,,3044,,,,,,TCPC,2025-05-08
+Pluralsight Inc.,co_5097e1803107,First Lien,Software & Technology,8.83%,1.5%,SOFR,,1%,,2029-08-22,5776,5522,5776,,5522,,,,,,TCPC,2025-05-08
+Pluralsight Inc.,co_5097e1803107,First Lien,Software & Technology,11.83%,7.5%,SOFR,,1%,,2029-08-22,9153,8769,9153,,8769,,,,,,TCPC,2025-05-08
+Pluralsight Inc.,co_5097e1803107,First Lien,Software & Technology,8.83%,1.5%,SOFR,,1%,,2029-08-22,3044,3044,3044,,3044,,,,,,TCPC,2025-05-08
 Sailpoint Technologies Holdings Inc.,co_e60f7e8246c2,First Lien,Software & Technology,10.55%,,SOFR,6.25%,0.75%,,2028-08-16,0,0,0,,0,,,,,,TCPC,2025-05-08
 Spartan Bidco Pty Ltd.,co_97c7ef5de843,First Lien,Software & Technology,10.7%,,SOFR,6.4%,0.75%,,2028-01-24,9686,9525,9655,,9525,,,,,,TCPC,2025-05-08
 Spartan Bidco Pty Ltd.,co_97c7ef5de843,First Lien,Software & Technology,10.7%,,SOFR,6.4%,0.75%,,2028-01-24,5013,4858,4957,,4858,,,,,,TCPC,2025-05-08
@@ -345,7 +345,7 @@ Foursquare Labs,co_7c4f4ab052b2,Preferred Equity,Software & Technology,,,,,,,,,5
 InMobi,co_b283e34d5f10,Common Equity,Software & Technology,,,,,,,,,212,3067,,212,,,,1327869,,TCPC,2025-05-08
 InMobi,co_b283e34d5f10,Preferred Equity,Software & Technology,,,,,,,,,276,2394,,276,,,,1049996,,TCPC,2025-05-08
 InMobi,co_b283e34d5f10,Preferred Equity,Software & Technology,,,,,,,,,93,1843,,93,,,,1511002,,TCPC,2025-05-08
-Pluralsight,co_c7709528c5b4,Common Equity,Software & Technology,,,,,,,,,7995,2608,,7995,,,,2865672,,TCPC,2025-05-08
+Pluralsight,co_5097e1803107,Common Equity,Software & Technology,,,,,,,,,7995,2608,,7995,,,,2865672,,TCPC,2025-05-08
 ResearchGate Corp.,co_c02e042795d7,Other Equity,Software & Technology,,,,,,,,,202,30,,202,,,,333370,,TCPC,2025-05-08
 SuCo Investors,co_3ba768f706b7,Warrants,Software & Technology,,,,,,,,,0,0,,0,,,,44928,,TCPC,2025-05-08
 SnapLogic,co_54adb9d41aaf,Preferred Equity,Software & Technology,,,,,,,,,378,5429,,378,,,,1860000,,TCPC,2025-05-08
@@ -366,5 +366,4 @@ Professional Services,co_d1c52cbea5ea,Other,Business Services,,,,,,,,,29919,1552
 Grey Orange International Inc.,co_357900daea43,Other Equity,Software & Technology,,,,,,,,,1,2,,1,,,,10538,,TCPC,2025-05-08
 Tradeshift,co_fb25fad096eb,Preferred Equity,Software & Technology,,,,,,,,,578,0,,578,,,,1712930,,TCPC,2025-05-08
 Equity Securities,co_a93961678a30,Other,Financial Services,,,,,,,,,198619,174994,22.4%,198619,,,,,,TCPC,2025-05-08
-Investments,co_6a0632fdb7b4,Other,Financial Services,,,,,,,,,1964188,1769274,2.26%,1964188,,,,,,TCPC,2025-05-08
 Total Cash and Investments,co_535b1b3567c2,Other,,,,,,,,,,,1868389,,,,,,,,TCPC,2025-05-08

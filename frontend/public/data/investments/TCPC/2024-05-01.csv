@@ -1,6 +1,6 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
-ALCV Purchaser,co_130cd37dd542,First Lien,Automotive,12.19%,,SOFR,6.75%,1%,,2026-04-15,7972,7819,7852,,7819,,,,,,TCPC,2024-05-01
-ALCV Purchaser,co_130cd37dd542,Revolver,Automotive,12.19%,,SOFR,6.75%,1%,,2026-04-15,896,880,883,,880,,,,,,TCPC,2024-05-01
+ALCV Purchaser,co_f65a79c7d362,First Lien,Automotive,12.19%,,SOFR,6.75%,1%,,2026-04-15,7972,7819,7852,,7819,,,,,,TCPC,2024-05-01
+ALCV Purchaser,co_f65a79c7d362,Revolver,Automotive,12.19%,,SOFR,6.75%,1%,,2026-04-15,896,880,883,,880,,,,,,TCPC,2024-05-01
 AutoAlert,co_a928a54b77b1,First Lien,Automotive,10.73%,,SOFR,5.4%,1%,,2028-03-31,18813,18813,18813,,18813,,,,,,TCPC,2024-05-01
 AutoAlert,co_a928a54b77b1,Second Lien,Automotive,14.73%,,SOFR,9.4%,1%,,2029-03-31,9606,9606,9606,,9606,,,,,,TCPC,2024-05-01
 Porcelain Acquisition Corp.,co_3b6d0e5a85c0,Other,Industrials,,,,,1%,,,,,,,,,,,,,TCPC,2024-05-01
@@ -67,7 +67,7 @@ Callodine Commercial Finance,co_3b3f22eef2d1,First Lien,Consumer & Retail,14.57%
 Callodine Commercial Finance,co_3b3f22eef2d1,Subordinated Debt,Consumer & Retail,13.97%,,SOFR,8.5%,0.25%,,2027-10-08,5000,4822,5000,,4822,,,,,,TCPC,2024-05-01
 GC Champion Acquisition LLC,co_413cdab0d6c4,First Lien,Diversified,11.71%,,SOFR,6.25%,1%,,2028-08-21,7782,7391,7639,,7391,,,,,,TCPC,2024-05-01
 GC Champion Acquisition LLC,co_413cdab0d6c4,First Lien,Diversified,11.71%,,SOFR,6.25%,1%,,2028-08-21,2162,2053,2122,,2053,,,,,,TCPC,2024-05-01
-Gordon Brothers Finance Company Unsecured Debt Ref LIBOR(M) Floor 1.00% Spread 11.00% Total Coupon 16.44% Maturity 3/31/2025,co_8fa1d4e1480a,First Lien,Diversified,16.44%,,SOFR,11%,1%,,2025-03-31,37183,13114,13681,,13114,,,,,,TCPC,2024-05-01
+Gordon Brothers Finance Company Unsecured Debt Ref LIBOR(M) Floor 1.00% Spread 11.00% Total Coupon 16.44% Maturity 3/31/2025,co_2386c718dd96,First Lien,Diversified,16.44%,,SOFR,11%,1%,,2025-03-31,37183,13114,13681,,13114,,,,,,TCPC,2024-05-01
 Libra Solutions Intermediate Holdco,co_e2e042243d41,Second Lien,Diversified,13.94%,,SOFR,8.62%,1%,,2026-07-05,22634,22197,22226,,22197,,,,,,TCPC,2024-05-01
 TransNetwork,co_d833dbf61409,First Lien,Diversified,10.81%,,SOFR,5.5%,0.5%,,2030-12-29,3679,3565,3702,,3565,,,,,,TCPC,2024-05-01
 Wealth Enhancement Group,co_5f90314ee2d0,Delayed Draw,Diversified,11.06%,,SOFR,5.85%,1%,,2027-10-04,7431,7102,7319,,7102,,,,,,TCPC,2024-05-01
@@ -123,8 +123,8 @@ Anaconda Inc.,co_03e64f4a6ac1,First Lien,Software & Technology,12.84%,,SOFR,7.5%
 Astra Acquisition Corp.,co_fb9761b6b76a,First Lien,Software & Technology,14.44%,,SOFR,9.14%,0.75%,,2029-10-25,27880,22415,8085,,22415,,,,,,TCPC,2024-05-01
 Bynder Bidco Inc.,co_a1e3482c63ea,First Lien,Software & Technology,12.57%,,SOFR,7.25%,1%,,2029-01-26,0,-8,-6,,-8,,,,,,TCPC,2024-05-01
 Bynder Bidco Inc.,co_a1e3482c63ea,First Lien,Software & Technology,12.57%,,SOFR,7.25%,1%,,2029-01-26,4284,4140,4214,,4140,,,,,,TCPC,2024-05-01
-Bynder Bidco B.V. (Netherlands) Sr Secured Revolver B Ref SOFR(Q) Floor 1.00% Spread 7.25% Total Coupon 12.57% Maturity 1/26/2029,co_a27acc214feb,First Lien,Software & Technology,12.57%,,SOFR,7.25%,1%,,2029-01-26,0,-27,-21,,-27,,,,,type_hint_revolver_from_name,TCPC,2024-05-01
-Bynder Bidco B.V. (Netherlands) First Lien Term Loan B Ref SOFR(Q) Floor 1.00% Spread 7.25% Total Coupon 12.57% Maturity 1/26/2029,co_93c0c15ed11d,First Lien,Software & Technology,12.57%,,SOFR,7.25%,1%,,2029-01-26,15529,15009,15275,,15009,,,,,,TCPC,2024-05-01
+Bynder Bidco B.V. (Netherlands) Sr Secured Revolver B Ref SOFR(Q) Floor 1.00% Spread 7.25% Total Coupon 12.57% Maturity 1/26/2029,co_59a3400015fa,First Lien,Software & Technology,12.57%,,SOFR,7.25%,1%,,2029-01-26,0,-27,-21,,-27,,,,,type_hint_revolver_from_name,TCPC,2024-05-01
+Bynder Bidco B.V. (Netherlands) First Lien Term Loan B Ref SOFR(Q) Floor 1.00% Spread 7.25% Total Coupon 12.57% Maturity 1/26/2029,co_629d796fff6f,First Lien,Software & Technology,12.57%,,SOFR,7.25%,1%,,2029-01-26,15529,15009,15275,,15009,,,,,,TCPC,2024-05-01
 Domo Inc.,co_a634c39021b1,First Lien,Software & Technology,13.57%,2.5%,,,1.5%,,2026-04-01,58049,58004,57527,,58004,,,,,,TCPC,2024-05-01
 Domo Inc.,co_a634c39021b1,First Lien,Software & Technology,9.5%,9.5%,,,0%,,2026-04-01,3506,1016,3285,,1016,,,,,,TCPC,2024-05-01
 e-Discovery Acquireco LLC,co_051b13bc64cf,First Lien,Software & Technology,11.84%,,SOFR,6.5%,1%,,2029-08-29,0,-9,-9,,-9,,,,,,TCPC,2024-05-01
@@ -138,8 +138,8 @@ Magenta Buyer LLC,co_998c6c433e56,First Lien,Software & Technology,13.82%,,SOFR,
 Oranje Holdco Inc.,co_055c2740c113,First Lien,Software & Technology,12.81%,,SOFR,7.75%,1%,,2029-02-01,0,-25,0,,-25,,,,,,TCPC,2024-05-01
 Oranje Holdco Inc.,co_055c2740c113,First Lien,Software & Technology,12.81%,,SOFR,7.5%,1%,,2029-02-01,13175,12912,13228,,12912,,,,,,TCPC,2024-05-01
 Persado Inc.,co_7f83b3f968ae,First Lien,Software & Technology,12.83%,,SOFR,7.5%,1.8%,,2027-06-10,17032,16409,15806,,16409,,,,,,TCPC,2024-05-01
-Pluralsight Inc.,co_c7709528c5b4,First Lien,Software & Technology,13.47%,,SOFR,8.15%,1%,,2027-04-06,44653,42670,40277,,42670,,,,,,TCPC,2024-05-01
-Pluralsight Inc.,co_c7709528c5b4,First Lien,Software & Technology,13.47%,,SOFR,8.15%,1%,,2027-04-06,3347,3199,3019,,3199,,,,,,TCPC,2024-05-01
+Pluralsight Inc.,co_5097e1803107,First Lien,Software & Technology,13.47%,,SOFR,8.15%,1%,,2027-04-06,44653,42670,40277,,42670,,,,,,TCPC,2024-05-01
+Pluralsight Inc.,co_5097e1803107,First Lien,Software & Technology,13.47%,,SOFR,8.15%,1%,,2027-04-06,3347,3199,3019,,3199,,,,,,TCPC,2024-05-01
 ResearchGate GmBH (Germany) First Lien Term Loan (4.0% Exit Fee) Ref EURIBOR(M) Spread 8.55% Total Coupon 12.55% Maturity 10/1/2024,co_b8a727c71815,First Lien,Software & Technology,12.55%,,SOFR,8.55%,0%,,2024-10-01,7500,8211,7853,,8211,,,,,,TCPC,2024-05-01
 Sailpoint Technologies Holdings Inc.,co_e60f7e8246c2,First Lien,Software & Technology,11.31%,,SOFR,6%,0.75%,,2029-08-16,4574,4437,4594,,4437,,,,,,TCPC,2024-05-01
 Sailpoint Technologies Holdings Inc.,co_e60f7e8246c2,First Lien,Software & Technology,11.31%,,SOFR,6%,0.75%,,2028-08-16,0,-1,0,,-1,,,,,,TCPC,2024-05-01
@@ -188,7 +188,7 @@ Nephron Pharmaceuticals Corp.,co_338374b7b907,First Lien,Healthcare,16.49%,,SOFR
 Applause App Quality,co_f7cf9f9622b2,First Lien,Business Services,10.4%,,SOFR,5%,1%,,2025-09-20,15088,15078,15088,,15078,,,,,,TCPC,2024-05-01
 Applause App Quality,co_f7cf9f9622b2,Revolver,Business Services,10.4%,,SOFR,5%,1%,,2025-09-20,0,-4,0,,-4,,,,,,TCPC,2024-05-01
 CIBT Solutions,co_8684de13fd89,Second Lien,Business Services,13.19%,6.75%,,,1%,,2025-06-01,8146,7567,1914,,7567,,,,,,TCPC,2024-05-01
-DTI Holdco,co_e0abc0b1b92b,Second Lien,Business Services,13.06%,,SOFR,7.75%,0.75%,,2030-04-26,12507,11609,10944,,11609,,,,,,TCPC,2024-05-01
+DTI Holdco,co_65ac87d9cdab,Second Lien,Business Services,13.06%,,SOFR,7.75%,0.75%,,2030-04-26,12507,11609,10944,,11609,,,,,,TCPC,2024-05-01
 GI Consilio Parent,co_3a50adf950d5,Second Lien,Business Services,12.94%,,SOFR,7.5%,0.5%,,2029-05-14,15000,14766,15000,,14766,,,,,,TCPC,2024-05-01
 Huckabee Acquisition,co_22164b18f4c0,First Lien,Business Services,11.06%,,SOFR,5.75%,1%,,2030-01-16,1484,1430,1459,,1430,,,,,,TCPC,2024-05-01
 Huckabee Acquisition,co_22164b18f4c0,Delayed Draw,Business Services,11.06%,,SOFR,5.75%,1%,,2030-01-16,0,-6,-5,,-6,,,,,,TCPC,2024-05-01
@@ -327,7 +327,6 @@ Grey Orange International Inc.,co_357900daea43,Other Equity,Software & Technolog
 Tradeshift,co_fb25fad096eb,Preferred Equity,Software & Technology,,,,,,,,,578,0,,578,,,,1712930,,TCPC,2024-05-01
 Trading Companies & Distributors Blackbird Holdco,co_7e1053c8f3e4,Preferred Equity,Distribution & Wholesale,12.5%,,,,,,,,12530,12538,,12530,,,,9586,,TCPC,2024-05-01
 Equity Securities,co_a93961678a30,Other,Financial Services,,,,,,,,,189634,162052,17%,189634,,,,,,TCPC,2024-05-01
-Investments,co_6a0632fdb7b4,Other,Financial Services,,,,,,,,,2236062,2116419,2.22%,2236062,,,,,,TCPC,2024-05-01
 Hylan Intermediate Holdings II LLC,co_446a08990918,Second Lien,Media & Entertainment,,,SOFR,10%,1%,,,,,5326,,,,,,,,TCPC,2024-05-01
 Hylan Intermediate Holdings II LLC,co_446a08990918,First Lien,Media & Entertainment,,,SOFR,8%,1%,,,,,4980,,,,,,,,TCPC,2024-05-01
 Iracore International Holdings Inc.,co_1c93e735dec9,First Lien,,,,SOFR,9%,1%,,,,,1324,,,,,,,,TCPC,2024-05-01

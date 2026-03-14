@@ -1,111 +1,92 @@
-company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
-"Adamas Trust, Inc.",co_b7646cd72b6c,Preferred Equity,Real Estate,,,N/A,,,,,167876,4203020,4143180,2.65,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"Adamas Trust, Inc.",co_b7646cd72b6c,Preferred Equity,Real Estate,,,N/A,,,,,17243,375635,385898,0.25,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Altisource S.A.R.L.,co_f815714130ba,First Lien,Business Services,6.50%,,SOFR,,,,2030-04-30,8026850,8616683,8307790,5.33,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Altisource S.A.R.L.,co_f815714130ba,Common Equity,Business Services,,,N/A,,,,,547180,3327909,3802901,2.44,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Altisource S.A.R.L.,co_f815714130ba,Warrants,Business Services,,,N/A,,,,2029-04-02,111343,647105,45651,0.03,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Altisource S.A.R.L.,co_f815714130ba,Warrants,Business Services,,,N/A,,,,2032-04-30,111343,622110,36743,0.02,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"Arora Engineers, LLC",co_17f0e8982ebb,First Lien,Industrials,6.75%,0.25 %,SOFR,,3.00 %,,2030-12-30,9750000,9555000,9555000,6.13,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"Jacmel Arora, LLC",co_2c5551a2a29b,Preferred Equity,Industrials,,,N/A,,,,,3150000,3055500,3055500,1.96,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"Boostability Seotowncenter, Inc.",co_b2141134afce,Common Equity,Business Services,,,N/A,,,,,833152,66475,,0.00,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Chimera Investment Corp.,co_6ada2295c415,Preferred Equity,Real Estate,,,N/A,,,,,151710,3635972,3235974,2.08,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Chimera Investment Corp.,co_6ada2295c415,Preferred Equity,Real Estate,,,N/A,,,,,26133,635531,607592,0.39,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Compass Diversified Holdings,co_09bf04de6f86,Preferred Equity,Real Estate,,,N/A,,,,,92958,1570139,1687188,1.08,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Copper Property CTL Pass Through Trust,co_10d79bf68c1e,Partnership Interest,Real Estate,,,N/A,,,,,637795,7072025,7175194,4.60,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Innovate Corp.,co_0a4006509be4,Other Debt,Industrials,10.50 %,,Fixed,,,,2027-02-01,4558125,4022788,3914290,2.51,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"Invesco Mortgage Capital, Inc.",co_85e17f7429fe,Common Equity,Real Estate,,,N/A,,,,,180000,1411789,1513800,0.97,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-NGS-WCS Group Holdings,co_e6d542a85ec5,First Lien,Industrials,,,SOFR,4.75 %,0.50 %,,2030-05-31,984882,980983,994850,0.64,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-NGS-WCS Group Holdings,co_e6d542a85ec5,Common Equity,Industrials,,,N/A,,,,,10000000,10000000,12600000,8.09,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Kemmerer Operations LLC,co_84ebe4c19813,First Lien,Chemicals & Materials,,,SOFR,5.00 %,,,2028-12-31,6762782,6762782,6762782,4.34,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Lucky Bucks LLC,co_2709cdef36b5,Second Lien,Consumer & Retail,,5.00 %,SOFR,7.50 %,1.00 %,,2029-10-02,2165782,2020575,2014177,1.29,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Lucky Bucks LLC,co_2709cdef36b5,Other Debt,Consumer & Retail,,,SOFR,7.50 %,1.00 %,,2028-10-02,1510449,1406952,1510449,0.97,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-LB NewHoldCo LLC,co_4b88a0e83ba6,Partnership Interest,Consumer & Retail,,,N/A,,,,,230739,449393,955259,0.61,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-MFA Financial Inc.,co_44c73bdb7915,Preferred Equity,Real Estate,,,N/A,,,,,114695,2800579,2617340,1.68,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-MFA Financial Inc.,co_44c73bdb7915,Common Equity,Real Estate,,,N/A,,,,,120000,1175317,1117200,0.72,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Onity Group Inc.,co_613c184deade,Preferred Equity,Real Estate,,,N/A,,,,,200000,3925000,4060000,2.61,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-PHH Mortgage Corp.,co_ccf5efd049cf,Other Debt,Real Estate,9.875 %,,Fixed,,,,2029-11-01,2500000,2343050,2581250,1.66,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Power Stop LLC,co_c3e3b0961c57,First Lien,Automotive,,,SOFR,4.75 %,0.50 %,,2029-01-26,9678741,8483567,8033355,5.16,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-PREIT Associates,co_092664305822,First Lien,Real Estate,,,SOFR,7.00 %,,,2029-04-01,56201,55077,56763,0.04,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-PREIT Associates,co_092664305822,Revolver,Real Estate,,,SOFR,5.50 %,,,2028-12-31,73083,72230,71982,0.05,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-PSB Group LLC,co_9dcd21e3bc70,First Lien,Consumer & Retail,,,SOFR,6.50 %,1.00 %,,2030-04-17,5692279,5666821,5692279,3.65,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-PSB Group LLC,co_9dcd21e3bc70,Revolver,Consumer & Retail,,,SOFR,6.50 %,1.00 %,,2030-04-17,293137,293137,293137,0.19,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Redwood Trust Inc.,co_60347f4724cb,Common Equity,Real Estate,,,N/A,,,,,185000,1127150,1023050,0.66,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Spotter Inc.,co_b582e5b0003d,Preferred Equity,Software & Technology,,,N/A,,,,,51786,750005,804237,0.52,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Spotter Inc.,co_b582e5b0003d,Preferred Equity,Software & Technology,,,N/A,,,,,414293,5999998,5949247,3.82,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"SS Acquisition, LLC",co_8012581319ca,First Lien,Consumer & Retail,,,SOFR,5.75 %,1.00 %,,2029-12-20,13435714,13373281,13435714,8.62,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"SS Acquisition, LLC",co_8012581319ca,Revolver,Consumer & Retail,,,SOFR,5.75 %,1.00 %,,2029-12-20,400000,400000,400000,0.26,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Stancor,co_d16fc80c99b9,Common Equity,Business Services,,,N/A,,,,,358867,345491,314132,0.20,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"Tamarix Capital Partners II, LP.",co_f9c2dbefcf51,Partnership Interest,Financial Services,,,N/A,,,,,,2194384,2227463,1.43,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"Thryv Holdings, Inc.",co_f15d2fafb73c,First Lien,Media & Entertainment,,,SOFR,6.75 %,1.00 %,,2029-05-01,2025000,2010248,2009813,1.29,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"WHI Global, LLC",co_180ace4605fa,Revolver,Aerospace & Defense,,,SOFR,8.75 %,3.00 %,,2029-04-17,1010346,991015,1001254,0.64,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"WHI Global, LLC",co_180ace4605fa,First Lien,Aerospace & Defense,,,SOFR,8.75 %,3.00 %,,2029-04-17,12338760,12232187,12227711,7.85,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"WHI Global, LLC",co_180ace4605fa,Common Equity,Aerospace & Defense,,,N/A,,,,,350,700000,434746,0.28,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"XYZ Roofco, LLC",co_b5826626974a,First Lien,Consumer & Retail,,,SOFR,3.50%,2.00%,,2028-10-16,612189,617329,596884,0.38,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"XYZ Roofco, LLC",co_b5826626974a,Delayed Draw,Consumer & Retail,,,SOFR,3.50%,2.00%,,2028-10-16,30950,31933,30176,0.02,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"XYZ Roofco, LLC",co_b5826626974a,First Lien,Consumer & Retail,,,SOFR,6.25%,2.00%,,2028-10-16,1863568,1861764,1816979,1.17,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"XYZ Roofco, LLC",co_b5826626974a,Delayed Draw,Consumer & Retail,,,SOFR,6.25%,2.00%,,2028-10-16,140082,140082,136580,0.09,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"Advocates for Disabled Vets, LLC",co_cef505fd7e67,First Lien,Consumer & Retail,12%,,Fixed,,,,2030-03-07,8898750,8744150,8765269,5.63,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"Advocates for Disabled Vets, LLC",co_cef505fd7e67,Common Equity,Consumer & Retail,,,N/A,,,,,,3375000,3173475,2.04,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"FST Holdings Parent, LLC",co_d26d9be7f4c3,Common Equity,Software & Technology,,,N/A,,,,,,10008289,10955183,7.03,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-MB Precision Investment Holdings LLC,co_b2d9202df35c,First Lien,Aerospace & Defense,,,SOFR,8.00%,4.00%,,2028-09-30,6800282,6674395,6392265,4.10,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-MB Precision Investment Holdings LLC,co_b2d9202df35c,Delayed Draw,Aerospace & Defense,,,SOFR,10.00%,4.00%,,2028-10-01,1943662,1851448,1874646,1.20,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-MB Precision Investment Holdings LLC,co_b2d9202df35c,Revolver,Aerospace & Defense,,,SOFR,8.00%,4.00%,,2028-09-30,2193797,2164305,2062170,1.32,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-MB Precision Investment Holdings LLC,co_b2d9202df35c,Preferred Equity,Aerospace & Defense,,,N/A,,,,,,3377917,2949060,1.89,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-MB Precision Investment Holdings LLC,co_b2d9202df35c,Warrants,Aerospace & Defense,,,N/A,,,,,,827409,503500,0.32,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-ECC Capital Corp.,co_4994954fea6f,Common Equity,Real Estate,,,N/A,,,,,84000,4257,9660,6.20,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-ECC Capital Corp.,co_4994954fea6f,Other Debt,Real Estate,5.00%,,SOFR,,0.00%,,2031-12-31,6997,6997,6997,4.49,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"FlexFIN, LLC",co_1dd049b74e06,Partnership Interest,Business Services,,,N/A,,,,,,36434,36434,23.38,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"NSG Captive, Inc.",co_820ec61eb614,Common Equity,Insurance,,,N/A,,,,,100,49255,48324,31.01,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-NVTN LLC,co_649cd59d6e94,First Lien,Healthcare,7.00%,,SOFR,,2.00%,,2029-12-31,9850,9980,9801,6.29,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-NVTN LLC,co_649cd59d6e94,First Lien,Healthcare,,,Fixed,,,,2029-12-31,17552,13916,8513,5.46,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-NVTN LLC,co_649cd59d6e94,Common Equity,Healthcare,,,N/A,,,,,1,21451,,0.00,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Adamas Trust Inc.,co_b7646cd72b6c,Preferred Equity,Real Estate,,,N/A,,,,,221469,5510240,5565516,3.45,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Adamas Trust Inc.,co_b7646cd72b6c,Preferred Equity,Real Estate,,,N/A,,,,,17243,375635,392278,0.24,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Altisource S.A.R.L.,co_f815714130ba,Common Equity,Business Services,,,N/A,,,,,547180,3327909,6380119,3.97,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"CB&L Associates Holdco I, LLC",co_52b0b6182263,First Lien,Real Estate,,,SOFR,2.75 %,1.00 %,,2025-11-01,2879525,2419049,2753546,1.71,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Compass Diversified Holdings,co_09bf04de6f86,Preferred Equity,Real Estate,,,N/A,,,,,22049,381008,405702,0.25,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"Franklin BSP Realty Trust, Inc.",co_c2a895429d13,Common Equity,Real Estate,,,N/A,,,,,50000,498155,543000,0.34,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Innovate Corp.,co_0a4006509be4,First Lien,Industrials,10.50 %,,Fixed,,,,2027-02-01,4558125,4022788,4033941,2.51,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Invesco Mortgage Capital Inc.,co_85e17f7429fe,Common Equity,Real Estate,,,N/A,,,,,180.000,1411.789,1360.800,0.85,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-NGS-WCS Group Holdings,co_e6d542a85ec5,First Lien,Industrials,,,SOFR,4.75 %,0.50 %,,2030-05-31,987.500,983.422,997.375,0.62,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-JFL-NGS-WCS Partners LLC,co_2a9c1a87b2cd,Common Equity,Industrials,,,N/A,,,,,10000.000,10000.000,13100.000,8.15,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Kemmerer Operations LLC,co_84ebe4c19813,First Lien,Chemicals & Materials,,,SOFR,5.00 %,,,2028-12-31,8762.782,8762.782,8762.782,5.45,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Lucky Bucks LLC,co_2709cdef36b5,Second Lien,Consumer & Retail,,5.00 %,SOFR,7.50 %,1.00 %,,2029-10-02,2143.683,1998.121,1993.625,1.24,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Lucky Bucks LLC,co_2709cdef36b5,Other Debt,Consumer & Retail,,,SOFR,7.50 %,1.00 %,,2028-10-02,1514.302,1410.541,1514.302,0.94,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-LB NewHoldCo LLC,co_4b88a0e83ba6,Partnership Interest,Consumer & Retail,,,N/A,,,,,230.739,449.393,994.485,0.62,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-MFA Financial Inc.,co_44c73bdb7915,Preferred Equity,Real Estate,,,N/A,,,,,114.695,2800.579,2737.770,1.70,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-MFA Financial Inc.,co_44c73bdb7915,Common Equity,Real Estate,,,N/A,,,,,70.000,714.994,643.300,0.40,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Neptune Bidco US Inc.,co_a6ffd5a50f17,First Lien,Media & Entertainment,,,SOFR,5.00 %,0.50 %,,2029-04-11,2967.133,2786.574,2822.486,1.76,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Neptune Bidco US Inc.,co_a6ffd5a50f17,Other Debt,Media & Entertainment,9.29 %,,Fixed,,,,2029-04-15,4000.000,3676.250,3910.000,2.43,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Onity Group Inc.,co_613c184deade,Preferred Equity,Real Estate,,,N/A,,,,,200.000,3925.000,3948.000,2.46,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-PHH Mortgage Corp.,co_ccf5efd049cf,Other Debt,Real Estate,9.875 %,,Fixed,,,,2029-11-01,2500.000,2343.050,2515.625,1.56,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Power Stop LLC,co_c3e3b0961c57,First Lien,Automotive,,,SOFR,4.75 %,0.50 %,,2029-01-26,9704.216,8504.727,7860.415,4.89,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"PSB Group, LLC",co_9dcd21e3bc70,First Lien,Consumer & Retail,,,SOFR,6.50 %,1.00 %,,2030-04-17,5706618,5679996,5706618,3.55,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"PSB Group, LLC",co_9dcd21e3bc70,Revolver,Consumer & Retail,,,SOFR,6.50 %,1.00 %,,2030-04-17,293137,293137,293137,0.18,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"Staples, Inc.",co_2f61cd7ec988,First Lien,Consumer & Retail,,,SOFR,5.75 %,0.50 %,,2029-09-01,3960000,3830925,3742200,2.33,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-WHI Global LLC,co_180ace4605fa,Revolver,Aerospace & Defense,8.75%,,SOFR,,3.00%,,2029-04-17,884053,863075,876097,0.54,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-WHI Global LLC,co_180ace4605fa,First Lien,Aerospace & Defense,8.75%,,SOFR,,3.00%,,2029-04-17,12369840,12256814,12258511,7.62,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-WHI Global LLC,co_180ace4605fa,Common Equity,Aerospace & Defense,,,N/A,,,,,350,483284,0.30,,700000,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-XYZ Roofco LLC,co_b5826626974a,First Lien,Consumer & Retail,,,SOFR,3.50%,2.00%,,2028-10-16,618546,623442,618546,0.38,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-XYZ Roofco LLC,co_b5826626974a,Delayed Draw,Consumer & Retail,,,SOFR,3.50%,2.00%,,2028-10-16,30950,31933,31128,0.02,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-XYZ Roofco LLC,co_b5826626974a,First Lien,Consumer & Retail,,,SOFR,6.25%,2.00%,,2028-10-16,1863568,1859920,1858909,1.16,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-XYZ Roofco LLC,co_b5826626974a,Delayed Draw,Consumer & Retail,,,SOFR,6.25%,2.00%,,2028-10-16,140082,140082,139955,0.09,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Advocates for Disabled Vets LLC,co_cef505fd7e67,First Lien,Consumer & Retail,12%,,Fixed,,,,2030-03-07,8932500,8770471,8798513,5.47,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Advocates for Disabled Vets LLC,co_cef505fd7e67,Partnership Interest,Consumer & Retail,,,N/A,,,,,3375000,3375000,3359511,2.09,3375000,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-FST Holdings Parent LLC,co_d26d9be7f4c3,Partnership Interest,Software & Technology,,,N/A,,,,,625548,10960741,6.82,,10008289,,,,,dspy_extracted|fair_value_suspicious_vs_size,PFX,2026-02-09,PFX,2026-02-09
-Company,co_8c8df433ae73,Delayed Draw,,10.00%,,SOFR,,4.00%,,2028-10-01,505470,468621,490306,0.30,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Company,co_8c8df433ae73,Revolver,,8.00%,,SOFR,,4.00%,,2028-09-30,2112671,2077048,1975347,1.23,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Company,co_8c8df433ae73,Preferred Equity,,,,N/A,,,,,4106076,3167157,2725408,1.70,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Company,co_8c8df433ae73,Warrants,,,,N/A,,,,,3380282,827409,673018,0.42,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-ECC Capital Corp.,co_4994954fea6f,Common Equity,Real Estate,,,N/A,,,,,84000000,4257002,6636000,4.13,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-ECC Capital Corp.,co_4994954fea6f,Other Debt,Real Estate,5.00%,,SOFR,,0.00%,,2031-12-31,6997012,6997012,6997012,4.35,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"FlexFIN, LLC",co_1dd049b74e06,Partnership Interest,Business Services,,,N/A,,,,,37180761,37180761,37180761,23.13,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-"NSG Captive, Inc.",co_820ec61eb614,Common Equity,Insurance,,,N/A,,,,,100000,49255076,48469540,30.15,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-NVTN LLC,co_649cd59d6e94,Revolver,Healthcare,7.00%,,SOFR,,2.00%,,2026-12-31,8900000,9029539,8900000,5.54,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-NVTN LLC,co_649cd59d6e94,First Lien,Healthcare,,,Fixed,,,,2026-12-31,17552420,13916082,13427601,8.35,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-NVTN LLC,co_649cd59d6e94,First Lien,Healthcare,12.00%,,SOFR,,2.00%,,2026-12-31,11506159,7570055,,0.00,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-NVTN LLC,co_649cd59d6e94,Common Equity,Healthcare,,,N/A,,,,,1000,21450924,,0.00,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-Advocates for Disabled Vets LLC,co_cef505fd7e67,Other Equity,,,,N/A,,,,,,,3173.475,,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-FST Holdings Parent LLC,co_d26d9be7f4c3,Other Equity,,,,N/A,,,,,,,10955.183,,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-MB Precision Investment Holdings LLC,co_b2d9202df35c,Other Equity,Financial Services,,,N/A,,,,,,,2949.060,,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
-MB Precision Investment Holdings LLC,co_b2d9202df35c,Warrants,Financial Services,,,N/A,,,,,,,503.500,,,,,,,dspy_extracted,PFX,2026-02-09,PFX,2026-02-09
+company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
+Adamas Trust,co_df7ef9bd0f86,Preferred Equity,,,,,,,,,168,4203,4143,2.65%,4203,,,,167876,,PFX,2026-02-09
+Adamas Trust,co_df7ef9bd0f86,Preferred Equity,,,,,,,,,17,376,386,0.25%,376,,,,17243,,PFX,2026-02-09
+Adamas Trust Inc.,co_df7ef9bd0f86,First Lien,Real Estate,,,,,,,,185,4579,4529,2.9%,4579,,,,,,PFX,2026-02-09
+Altisource S.A.R.L.,co_f815714130ba,First Lien,,6.5%,,,,,,2030-04-30,8027,8617,8308,5.33%,8617,,,,,,PFX,2026-02-09
+Altisource S.A.R.L.,co_f815714130ba,First Lien,,,,,,,,,547,3328,3803,2.44%,3328,,,,547180,,PFX,2026-02-09
+Altisource S.A.R.L.,co_f815714130ba,First Lien,,,,,,,,2029-04-02,111,647,46,0.03%,647,,,,,,PFX,2026-02-09
+Altisource S.A.R.L.,co_f815714130ba,First Lien,,,,,,,,2032-04-30,111,622,37,0.02%,622,,,,,,PFX,2026-02-09
+Altisource S.A.R.L.,co_f815714130ba,First Lien,Business Services,,,,,,,,8797,13214,12193,7.82%,13214,,,,,,PFX,2026-02-09
+Arora Engineers,co_6c5a698f7d7c,First Lien,Industrials,6.75%,,,,,,2030-12-30,9750,9555,9555,6.13%,9555,,,,,,PFX,2026-02-09
+Jacmel Arora,co_7230650beb68,Other Equity,,,,,,,,,3150,3056,3056,1.96%,3056,,,,3150000,,PFX,2026-02-09
+Jacmel Arora LLC,co_7230650beb68,First Lien,,,,,,,,,12900,12610,12610,8.09%,12610,,,,,,PFX,2026-02-09
+Boostability Seotowncenter,co_d7c55e5f10cf,Common Equity,,,,,,,,,833,66,,0%,66,,,,833152,,PFX,2026-02-09
+Boostability Seotowncenter Inc.,co_d7c55e5f10cf,First Lien,Business Services,,,,,,,,833,66,,0%,66,,,,,,PFX,2026-02-09
+Chimera Investment Corp.,co_6ada2295c415,First Lien,Financial Services,,,,,,,,152,3636,3236,2.08%,3636,,,,151710,,PFX,2026-02-09
+Chimera Investment Corp.,co_6ada2295c415,First Lien,Financial Services,,,,,,,,26,636,608,0.39%,636,,,,26133,,PFX,2026-02-09
+Chimera Investment Corp.,co_6ada2295c415,First Lien,Real Estate,,,,,,,,178,4272,3844,2.47%,4272,,,,,,PFX,2026-02-09
+Compass Diversified Holdings,co_09bf04de6f86,First Lien,Diversified,,,,,,,,93,1570,1687,1.08%,1570,,,,92958,,PFX,2026-02-09
+Compass Diversified Holdings,co_09bf04de6f86,First Lien,Real Estate,,,,,,,,93,1570,1687,1.08%,1570,,,,,,PFX,2026-02-09
+Copper Property CTL Pass Through Trust,co_10d79bf68c1e,First Lien,,,,,,,,,638,7072,7175,4.6%,7072,,,,,,PFX,2026-02-09
+Copper Property CTL Pass Through Trust,co_10d79bf68c1e,First Lien,Real Estate,,,,,,,,638,7072,7175,4.6%,7072,,,,,,PFX,2026-02-09
+Innovate Corp.,co_0a4006509be4,First Lien,,10.5%,,,,,,2027-02-01,4558,4023,3914,2.51%,4023,,,,,,PFX,2026-02-09
+Innovate Corp.,co_0a4006509be4,First Lien,Industrials,,,,,,,,4558,4023,3914,2.51%,4023,,,,,,PFX,2026-02-09
+Invesco Mortgage Capital,co_d98701dd355e,Other Equity,Financial Services,,,,,,,,180,1412,1514,0.97%,1412,,,,180000,,PFX,2026-02-09
+Invesco Mortgage Capital Inc.,co_d98701dd355e,First Lien,Real Estate,,,,,,,,180,1412,1514,0.97%,1412,,,,,,PFX,2026-02-09
+JFL-NGS-WCS Partners,co_49235bce4240,Other Equity,,,,,,,,,10000,10000,12600,8.09%,10000,,,,10000000,,PFX,2026-02-09
+NGS-WCS Group Holdings - JFL-NGS-WCS Partners LLC,co_a5bd0cfd5eae,First Lien,,,,,,,,,10985,10981,13595,8.73%,10981,,,,,,PFX,2026-02-09
+Kemmerer Operations,co_a9e56b971d1a,First Lien,,,,,,,,2028-12-31,6763,6763,6763,4.34%,6763,,,,5,,PFX,2026-02-09
+Kemmerer Operations LLC,co_a9e56b971d1a,First Lien,Chemicals & Materials,,,,,,,,6763,6763,6763,4.34%,6763,,,,,,PFX,2026-02-09
+Lucky Bucks,co_be4032c6c26c,First Lien,,7.5%,,,,,,2029-10-02,2166,2021,2014,1.29%,2021,,,,,,PFX,2026-02-09
+Lucky Bucks,co_be4032c6c26c,First Lien,,7.5%,,,,,,2028-10-02,1510,1407,1510,0.97%,1407,,,,,,PFX,2026-02-09
+LB NewHoldCo,co_c9e5719bb1db,Other Equity,,,,,,,,,231,449,955,0.61%,449,,,,,,PFX,2026-02-09
+Lucky Bucks LLC,co_be4032c6c26c,First Lien,,,,,,,,,3907,3877,4480,2.87%,3877,,,,,,PFX,2026-02-09
+MFA Financial,co_640dfc756192,Preferred Equity,Financial Services,,,,,,,,115,2801,2617,1.68%,2801,,,,114695,,PFX,2026-02-09
+MFA Financial,co_640dfc756192,Common Equity,Financial Services,,,,,,,,120,1175,1117,0.72%,1175,,,,120000,,PFX,2026-02-09
+MFA Financial Inc.,co_640dfc756192,First Lien,Real Estate,,,,,,,,235,3976,3735,2.4%,3976,,,,,,PFX,2026-02-09
+Onity Group Inc.,co_613c184deade,First Lien,,,,,,,,,200,3925,4060,2.61%,3925,,,,200000,,PFX,2026-02-09
+Onity Group Inc.,co_613c184deade,First Lien,Real Estate,,,,,,,,200,3925,4060,2.61%,3925,,,,,,PFX,2026-02-09
+PHH Mortgage Corp.,co_ccf5efd049cf,First Lien,Financial Services,9.88%,,,,,,2029-11-01,2500,2343,2581,1.66%,2343,,,,,,PFX,2026-02-09
+PHH Mortgage Corp.,co_ccf5efd049cf,First Lien,Real Estate,,,,,,,,2500,2343,2581,1.66%,2343,,,,,,PFX,2026-02-09
+Power Stop LLC,co_c3e3b0961c57,First Lien,,4.75%,,,,,,2029-01-26,9679,8484,8033,5.16%,8484,,,,,,PFX,2026-02-09
+Power Stop LLC,co_c3e3b0961c57,First Lien,Automotive,,,,,,,,9679,8484,8033,5.16%,8484,,,,,,PFX,2026-02-09
+PREIT Associates,co_092664305822,First Lien,Real Estate,7%,,,,,,2029-04-01,56,55,57,0.04%,55,,,,,,PFX,2026-02-09
+PREIT Associates,co_092664305822,First Lien,Real Estate,5.5%,,,,,,2028-12-31,73,72,72,0.05%,72,,,,,,PFX,2026-02-09
+PREIT Associates,co_092664305822,First Lien,Real Estate,,,,,,,,129,127,129,0.09%,127,,,,,,PFX,2026-02-09
+PSB Group,co_edf1ad23c547,First Lien,,6.5%,,,,,,2030-04-17,5692,5667,5692,3.65%,5667,,,,,,PFX,2026-02-09
+PSB Group,co_edf1ad23c547,Revolver,,6.5%,,,,,,2030-04-17,293,293,293,0.19%,293,,,,,,PFX,2026-02-09
+PSB Group LLC,co_edf1ad23c547,First Lien,Consumer & Retail,,,,,,,,5985,5960,5985,3.84%,5960,,,,,,PFX,2026-02-09
+Redwood Trust Inc.,co_60347f4724cb,First Lien,,,,,,,,,185,1127,1023,0.66%,1127,,,,185000,,PFX,2026-02-09
+Redwood Trust Inc.,co_60347f4724cb,First Lien,Real Estate,,,,,,,,185,1127,1023,0.66%,1127,,,,,,PFX,2026-02-09
+Spotter Inc.,co_b582e5b0003d,First Lien,,,,,,,,,52,750,804,0.52%,750,,,,,,PFX,2026-02-09
+Spotter Inc.,co_b582e5b0003d,First Lien,,,,,,,,,414,6000,5949,3.82%,6000,,,,,,PFX,2026-02-09
+Spotter Inc.,co_b582e5b0003d,First Lien,,,,,,,,,466,6750,6753,4.34%,6750,,,,,,PFX,2026-02-09
+SS Acquisition,co_5ed399aaef6f,First Lien,,5.75%,,,,,,2029-12-20,13436,13373,13436,8.62%,13373,,,,,,PFX,2026-02-09
+SS Acquisition,co_5ed399aaef6f,Revolver,,5.75%,,,,,,2029-12-20,400,400,400,0.26%,400,,,,,,PFX,2026-02-09
+SS Acquisition LLC,co_5ed399aaef6f,First Lien,Consumer & Retail,,,,,,,,13836,13773,13836,8.88%,13773,,,,,,PFX,2026-02-09
+Stancor,co_d16fc80c99b9,First Lien,,,,,,,,,359,345,314,0.2%,345,,,,358867,,PFX,2026-02-09
+Stancor,co_d16fc80c99b9,First Lien,Business Services,,,,,,,,359,345,314,0.2%,345,,,,,,PFX,2026-02-09
+Tamarix Capital Partners II LP. - Banking - Fund Investment,co_289ee6c4c181,Other,Financial Services,,,,,,,,,2194,2227,1.43%,2194,,,,,,PFX,2026-02-09
+Thryv Holdings,co_726311127482,First Lien,,6.75%,,,,,,2029-05-01,2025,2010,2010,1.29%,2010,,,,,,PFX,2026-02-09
+Thryv Holdings Inc.,co_726311127482,First Lien,Media & Entertainment,,,,,,,,2025,2010,2010,1.29%,2010,,,,,,PFX,2026-02-09
+WHI Global,co_a4f896cd2fcb,Revolver,,8.75%,,,,,,2029-04-17,1010,991,1001,0.64%,991,,,,,,PFX,2026-02-09
+WHI Global,co_a4f896cd2fcb,First Lien,,8.75%,,,,,,2029-04-17,12339,12232,12228,7.85%,12232,,,,,,PFX,2026-02-09
+WHI Global,co_a4f896cd2fcb,Other Equity,,,,,,,,,0,700,435,0.28%,700,,,,350,,PFX,2026-02-09
+WHI Global LLC,co_a4f896cd2fcb,First Lien,Aerospace & Defense,,,,,,,,13349,13923,13664,8.77%,13923,,,,,,PFX,2026-02-09
+XYZ Roofco,co_0dda7d0cf8db,First Lien,,3.5%,,,,,,2028-10-16,612,617,597,0.38%,617,,,,,,PFX,2026-02-09
+XYZ Roofco,co_0dda7d0cf8db,Delayed Draw,,3.5%,,,,,,2028-10-16,31,32,30,0.02%,32,,,,,,PFX,2026-02-09
+XYZ Roofco,co_0dda7d0cf8db,First Lien,,6.25%,,,,,,2028-10-16,1864,1862,1817,1.17%,1862,,,,,,PFX,2026-02-09
+XYZ Roofco,co_0dda7d0cf8db,Delayed Draw,,6.25%,,,,,,2028-10-16,140,140,137,0.09%,140,,,,,,PFX,2026-02-09
+XYZ Roofco LLC,co_0dda7d0cf8db,First Lien,Consumer & Retail,,,,,,,,2647,2651,2581,1.66%,2651,,,,,,PFX,2026-02-09
+Advocates for Disabled Vets,co_4a1eca3ba633,First Lien,,12%,,,,,,2030-03-07,8899,8744,8765,5.63%,8744,,,,,,PFX,2026-02-09
+Advocates for Disabled Vets,co_4a1eca3ba633,Other Equity,,,,,,,,,3375,3375,3173,2.04%,3375,,,,3375000,,PFX,2026-02-09
+Advocates for Disabled Vets LLC,co_4a1eca3ba633,First Lien,Consumer & Retail,,,,,,,,12274,12119,11939,7.67%,12119,,,,,,PFX,2026-02-09
+FST Holdings Parent,co_9b8309f4b712,Other Equity,,,,,,,,,626,10008,10955,7.03%,10008,,,,625548,,PFX,2026-02-09
+FST Holdings Parent LLC,co_9b8309f4b712,First Lien,Software & Technology,,,,,,,,626,10008,10955,7.03%,10008,,,,,,PFX,2026-02-09
+MB Precision Investment Holdings LLC,co_b2d9202df35c,First Lien,Financial Services,8%,,,,,,2028-09-30,6800,6674,6392,4.1%,6674,,,,,,PFX,2026-02-09
+MB Precision Investment Holdings LLC,co_b2d9202df35c,First Lien,Financial Services,10%,,,,,,2028-10-01,1944,1851,1875,1.2%,1851,,,,,,PFX,2026-02-09
+MB Precision Investment Holdings LLC,co_b2d9202df35c,First Lien,Financial Services,8%,,,,,,2028-09-30,2194,2164,2062,1.32%,2164,,,,,,PFX,2026-02-09
+MB Precision Investment Holdings LLC,co_b2d9202df35c,First Lien,Financial Services,,,,,,,,4313,3378,2949,1.89%,3378,,,,,,PFX,2026-02-09
+MB Precision Investment Holdings LLC,co_b2d9202df35c,First Lien,Financial Services,,,,,,,,3380,827,504,0.32%,827,,,,,,PFX,2026-02-09
+MB Precision Investment Holdings LLC,co_b2d9202df35c,First Lien,Aerospace & Defense,,,,,,,,18631,14895,13782,8.83%,14895,,,,,,PFX,2026-02-09
+ECC Capital Corp.,co_4994954fea6f,First Lien,,,,,,,,,84000,4257,9660,6.2%,4257,,,,84000000,,PFX,2026-02-09
+ECC Capital Corp.,co_4994954fea6f,First Lien,,5%,,,,,,2031-12-31,6997,6997,6997,4.49%,6997,,,,,,PFX,2026-02-09
+ECC Capital Corp.,co_4994954fea6f,First Lien,Real Estate,,,,,,,,90997,11254,16657,10.69%,11254,,,,,,PFX,2026-02-09
+FlexFIN,co_62a79c8bea2a,Other Equity,,,,,,,,,36434,36434,36434,23.38%,36434,,,,,,PFX,2026-02-09
+FlexFIN LLC,co_62a79c8bea2a,First Lien,Business Services,,,,,,,,36434,36434,36434,23.38%,36434,,,,,,PFX,2026-02-09
+NSG Captive,co_bdba63b7df88,Other Equity,,,,,,,,,100,49255,48324,31.01%,49255,,,,100000,,PFX,2026-02-09
+NSG Captive Inc.,co_bdba63b7df88,First Lien,Insurance,,,,,,,,100,49255,48324,31.01%,49255,,,,,,PFX,2026-02-09
+NVTN LLC,co_649cd59d6e94,First Lien,,7%,,,,,,2029-12-31,9850,9980,9801,6.29%,9980,,,,,,PFX,2026-02-09
+NVTN LLC,co_649cd59d6e94,First Lien,,,,,,,,2029-12-31,17552,13916,8513,5.46%,13916,,,,,,PFX,2026-02-09
+NVTN LLC,co_649cd59d6e94,Other Equity,,,,,,,,,1,21451,,0%,21451,,,,1000,,PFX,2026-02-09
+NVTN LLC,co_649cd59d6e94,First Lien,Hospitality & Leisure,,,,,,,,38910,52917,18314,11.75%,52917,,,,,,PFX,2026-02-09

@@ -43,6 +43,7 @@ XBRL_TICKERS = [
     "OXSQ",  # has XBRL SOI; hierarchical rollup rows filtered by post_process
     "GECC",  # has XBRL SOI (2025+); DSPy had encoding errors on 2025 filings
     "ICMB",  # has XBRL SOI (2025+); DSPy produced impossible totals ($246B) for all periods
+    "PFX",   # has XBRL SOI; DSPy had mixed-unit scale ($200B-600B totals); post_process strips affiliation prefixes
 ]
 
 # LLM (html_soi_parser) pipeline: tickers with functional HTML SOI tables
@@ -59,9 +60,9 @@ DSPY_TICKERS = [
     # "GECC" moved to XBRL_TICKERS — XBRL SOI available for 2025+; cleaner than DSPy encoding errors
     # "ICMB" moved to XBRL_TICKERS — XBRL SOI available for 2025+; DSPy totals were impossible ($246B)
     "MFIC",  # XBRL has 2× duplicate rows (affiliation + industry contexts) + garbled names; keep DSPy
-    "MFIC",  # html_soi_parser: 100% blank investment_type (type embedded in company name as comma suffix)
+    # html_soi_parser: 100% blank investment_type (type embedded in company name as comma suffix)
     # "OXSQ" moved to XBRL_TICKERS — has XBRL SOI; 95% cost coverage; rollup rows filtered in post_process
-    "PFX",   # html_soi_parser: 100% blank investment_type + column mapping wrong
+    # "PFX" moved to XBRL_TICKERS — has XBRL SOI; DSPy had mixed-unit scale ($200B-600B totals)
     # "RAND" moved to XBRL_TICKERS — has XBRL SOI data; correct scale (whole-dollar filings, XBRL handles correctly)
     "RWAY",  # html_soi_parser produces 77% garbled company names (flat-path row format); DSPy: 0% garbled, 100% rate coverage
     "SSSS",  # No XBRL SOI, html_soi_parser produces ≤1 row per filing

@@ -1,5 +1,5 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
-ADS TACTICAL INC.,co_f6fe2bd14164,First Lien,Aerospace & Defense,11.19%,,SOFR,5.75%,1%,,2026-03-19,1625,1609,1625,,1609,,,,,,CSWC,2024-05-21
+ADS TACTICAL INC.,co_c1747580e7a9,First Lien,Aerospace & Defense,11.19%,,SOFR,5.75%,1%,,2026-03-19,1625,1609,1625,,1609,,,,,,CSWC,2024-05-21
 EDGE AUTONOMY HOLDINGS LLC,co_ab98160f56ce,Revolver,Aerospace & Defense,,,SOFR,7.5%,2%,,2028-04-21,0,-97,0,,-97,,,,,,CSWC,2024-05-21
 EDGE AUTONOMY HOLDINGS LLC,co_ab98160f56ce,First Lien,Aerospace & Defense,11.98%,,SOFR,6.5%,2%,,2028-04-21,11250,10959,11250,,10959,,,,,,CSWC,2024-05-21
 EDGE AUTONOMY HOLDINGS LLC,co_ab98160f56ce,First Lien,Aerospace & Defense,13.98%,,SOFR,8.5%,2%,,2028-04-21,11250,10962,11250,,10962,,,,,,CSWC,2024-05-21
@@ -84,8 +84,8 @@ PIPELINE TECHNIQUE Ltd.,co_e912f9ca69a2,Revolver,Energy,12.77%,,SOFR,7.25%,1%,,2
 PIPELINE TECHNIQUE LTD.,co_e912f9ca69a2,First Lien,Energy,12.84%,,SOFR,7.25%,1%,,2027-08-19,7583,7473,7583,,7473,,,,,,CSWC,2024-05-21
 WELL-FOAM INC.,co_8f3368a9e0a6,Revolver,Energy,,,SOFR,8%,1%,,2026-09-09,0,-46,0,,-46,,,,,,CSWC,2024-05-21
 WELL-FOAM INC.,co_8f3368a9e0a6,First Lien,Energy,13.48%,,SOFR,8%,1%,,2026-09-09,12541,12401,12541,,12401,,,,,,CSWC,2024-05-21
-ARBORWORKS LLC,co_0faa6bbae1ed,Revolver,Environmental Services,,15%,,,,,2028-11-06,1569,1569,1569,,1569,,,,,,CSWC,2024-05-21
-ARBORWORKS LLC,co_0faa6bbae1ed,First Lien,Environmental Services,11.94%,6.5%,,,1%,,,3123,3123,3123,,3123,,,,,,CSWC,2024-05-21
+ARBORWORKS LLC,co_abd3c1aadac0,Revolver,Environmental Services,,15%,,,,,2028-11-06,1569,1569,1569,,1569,,,,,,CSWC,2024-05-21
+ARBORWORKS LLC,co_abd3c1aadac0,First Lien,Environmental Services,11.94%,6.5%,,,1%,,,3123,3123,3123,,3123,,,,,,CSWC,2024-05-21
 ISLAND PUMP AND TANK LLC,co_84173c4cf777,Revolver,Other,,,SOFR,7%,2%,,,0,-20,0,,-20,,,,,,CSWC,2024-05-21
 ISLAND PUMP AND TANK LLC,co_84173c4cf777,First Lien,Other,11.59%,,SOFR,6%,2%,,,12000,11797,12000,,11797,,,,,,CSWC,2024-05-21
 ISLAND PUMP AND TANK LLC,co_84173c4cf777,First Lien,Other,12.59%,,SOFR,7%,2%,,,12000,11797,12000,,11797,,,,,,CSWC,2024-05-21
@@ -183,7 +183,7 @@ ACCELERATION PARTNERS LLC,co_700d10019b1f,First Lien,Other,13.59%,,SOFR,8.11%,1%
 BOND BRAND LOYALTY ULC,co_307bfabcc7fd,Revolver,Other,,,SOFR,7%,2%,,-,0,-32,0,,-32,,,,,,CSWC,2024-05-21
 BOND BRAND LOYALTY ULC,co_307bfabcc7fd,First Lien,Other,11.48%,,SOFR,6%,2%,,-,8955,8801,8785,,8801,,,,,,CSWC,2024-05-21
 BOND BRAND LOYALTY ULC,co_307bfabcc7fd,First Lien,Other,13.48%,,SOFR,8%,2%,,-,8955,8800,8776,,8800,,,,,,CSWC,2024-05-21
-CRAFTY APES LLC,co_cdfd7eb3b5d5,First Lien,Other,14.58%,9.25%,,,1%,,2025-10-31,16644,16576,15778,,16576,,,,,,CSWC,2024-05-21
+CRAFTY APES LLC,co_5c84eaa8a16c,First Lien,Other,14.58%,9.25%,,,1%,,2025-10-31,16644,16576,15778,,16576,,,,,,CSWC,2024-05-21
 EXACT BORROWER LLC,co_b27ef4bff474,Revolver,Other,,,SOFR,7.5%,2%,,,0,-35,0,,-35,,,,,,CSWC,2024-05-21
 EXACT BORROWER LLC,co_b27ef4bff474,First Lien,Other,12.98%,,SOFR,7.5%,2%,,,7777,7656,7777,,7656,,,,,,CSWC,2024-05-21
 EXACT BORROWER LLC,co_b27ef4bff474,First Lien,Other,12.98%,,SOFR,7.5%,2%,,,7777,7655,7777,,7655,,,,,,CSWC,2024-05-21
@@ -211,8 +211,8 @@ GRAMMATECH INC.,co_5191cfab8539,Revolver,Other,,,SOFR,9.5%,2%,,,0,-5,0,,-5,,,,,,
 GRAMMATECH INC.,co_5191cfab8539,First Lien,Other,14.98%,,SOFR,9.5%,2%,,,1000,998,1000,,998,,,,,,CSWC,2024-05-21
 ISI ENTERPRISES LLC,co_a0f49ff8b27e,Revolver,Other,,,SOFR,7%,1%,,,0,-20,0,,-20,,,,,,CSWC,2024-05-21
 ISI ENTERPRISES LLC,co_a0f49ff8b27e,First Lien,Other,12.59%,,SOFR,7%,1%,,,5000,4945,5000,,4945,,,,,,CSWC,2024-05-21
-SOUTH COAST TERMINALS LLC,co_56b608611a3f,Revolver,Chemicals & Materials,,,SOFR,6%,1%,,2026-12-11,0,-21,0,,-21,,,,,,CSWC,2024-05-21
-SOUTH COAST TERMINALS LLC,co_56b608611a3f,First Lien,Chemicals & Materials,11.43%,,SOFR,6%,1%,,2026-12-11,14413,14243,14269,,14243,,,,,,CSWC,2024-05-21
+SOUTH COAST TERMINALS LLC,co_045b96f594df,Revolver,Chemicals & Materials,,,SOFR,6%,1%,,2026-12-11,0,-21,0,,-21,,,,,,CSWC,2024-05-21
+SOUTH COAST TERMINALS LLC,co_045b96f594df,First Lien,Chemicals & Materials,11.43%,,SOFR,6%,1%,,2026-12-11,14413,14243,14269,,14243,,,,,,CSWC,2024-05-21
 EMERALD TECHNOLOGIES (U.S.) ACQUISITIONCO INC.,co_7c523fbb8fe0,First Lien,Software & Technology,11.74%,,SOFR,6.25%,1%,,2027-12-29,3496,3460,3216,,3460,,,,,,CSWC,2024-05-21
 TRAFERA LLC,co_4f9bb7e2c386,First Lien,Software & Technology,12.48%,,SOFR,7%,1%,,2025-09-30,5675,5645,5590,,5645,,,,,,CSWC,2024-05-21
 TRAFERA LLC,co_4f9bb7e2c386,Unsecured Debt,Software & Technology,,12%,,,,,,75,75,75,,75,,,,,,CSWC,2024-05-21
@@ -256,10 +256,10 @@ BINSWANGER HOLDING CORP.,co_ff6abecaa0a8,Common Equity,Distribution & Wholesale,
 STUDENT RESOURCE CENTER LLC,co_9742f261be58,Preferred Equity,Education,,,,,,,,,5845,0,,5845,,,,10502487.46,,CSWC,2024-05-21
 STUDENT RESOURCE CENTER LLC,co_9742f261be58,Preferred Equity,Education,,,,,,,,,0,0,,0,,,,2000000,,CSWC,2024-05-21
 WALL STREET PREP INC.,co_001c2426f579,Preferred Equity,Education,,,,,,,,,1000,2012,,1000,,,,1000000,,CSWC,2024-05-21
-ARBORWORKS LLC,co_0faa6bbae1ed,Other Equity,Environmental Services,,,,,,,,,100,5,,100,,,,100,,CSWC,2024-05-21
-ARBORWORKS LLC,co_0faa6bbae1ed,Preferred Equity,Environmental Services,,,,,,,,,3170,3170,,3170,,,,13898.32,,CSWC,2024-05-21
-ARBORWORKS LLC,co_0faa6bbae1ed,Preferred Equity,Environmental Services,,,,,,,,,0,0,,0,,,,13898.32,,CSWC,2024-05-21
-ARBORWORKS LLC,co_0faa6bbae1ed,Common Equity,Environmental Services,,,,,,,,,0,0,,0,,,,1666.67,,CSWC,2024-05-21
+ARBORWORKS LLC,co_abd3c1aadac0,Other Equity,Environmental Services,,,,,,,,,100,5,,100,,,,100,,CSWC,2024-05-21
+ARBORWORKS LLC,co_abd3c1aadac0,Preferred Equity,Environmental Services,,,,,,,,,3170,3170,,3170,,,,13898.32,,CSWC,2024-05-21
+ARBORWORKS LLC,co_abd3c1aadac0,Preferred Equity,Environmental Services,,,,,,,,,0,0,,0,,,,13898.32,,CSWC,2024-05-21
+ARBORWORKS LLC,co_abd3c1aadac0,Common Equity,Environmental Services,,,,,,,,,0,0,,0,,,,1666.67,,CSWC,2024-05-21
 ISLAND PUMP AND TANK LLC,co_84173c4cf777,Preferred Equity,Other,,,,,,,,,1212,2325,,1212,,,,1204099.26,,CSWC,2024-05-21
 LIGHTING RETROFIT INTERNATIONAL LLC,co_ebd39dcf2100,Preferred Equity,Other,,,,,,,,,0,0,,0,,,,208333.3333,,CSWC,2024-05-21
 LIGHTING RETROFIT INTERNATIONAL LLC,co_ebd39dcf2100,Common Equity,Other,,,,,,,,,0,0,,0,,,,203124.9999,,CSWC,2024-05-21
@@ -313,7 +313,7 @@ GRAMMATECH INC.,co_5191cfab8539,Other Equity,Other,,,,,,,,0,1000,0,,1000,,,,1000
 GRAMMATECH INC.,co_5191cfab8539,Other Equity,Other,,,,,,,,0,360,0,,360,,,,360.06,,CSWC,2024-05-21
 ISI ENTERPRISES LLC,co_a0f49ff8b27e,Preferred Equity,Other,,,,,,,,,1000,1296,,1000,,,,1000000,,CSWC,2024-05-21
 ISI ENTERPRISES LLC,co_a0f49ff8b27e,Preferred Equity,Other,,,,,,,,,167,706,,167,,,,166667,,CSWC,2024-05-21
-VTX HOLDINGS INC.,co_c1580e587da0,Preferred Equity,Other,,,,,,,-,,1598,3466,,1598,,,,1597707,,CSWC,2024-05-21
+VTX HOLDINGS INC.,co_79aafca591c9,Preferred Equity,Other,,,,,,,-,,1598,3466,,1598,,,,1597707,,CSWC,2024-05-21
 FLIP ELECTRONICS LLC,co_7f58a3e4c63f,Common Equity,Software & Technology,,,,,,,,,2892,9505,,2892,,,,2446170,,CSWC,2024-05-21
 TRAFERA LLC,co_4f9bb7e2c386,Other Equity,Software & Technology,,,,,,,,,1205,583,,1205,,,,896.43,,CSWC,2024-05-21
 BROAD SKY NETWORKS LLC,co_728623ba6fd8,Preferred Equity,Telecommunications,,,,,,,-,,1132,1393,,1132,,,,1131579,,CSWC,2024-05-21
@@ -326,7 +326,7 @@ GUARDIAN FLEET SERVICES INC.,co_4e51e418497e,Warrants,Transportation & Logistics
 ITA HOLDINGS GROUP LLC,co_cc383ed9f1b7,Warrants,Transportation & Logistics,,,,,,,,,538,4005,,538,,,,,,CSWC,2024-05-21
 ITA HOLDINGS GROUP LLC,co_cc383ed9f1b7,Warrants,Transportation & Logistics,,,,,,,,,3791,3869,,3791,,,,,,CSWC,2024-05-21
 ITA HOLDINGS GROUP LLC,co_cc383ed9f1b7,Other Equity,Transportation & Logistics,,,,,,,,,1500,2374,,1500,,,,,,CSWC,2024-05-21
-American Teleconferencing Services Ltd.,co_6956ecaeed2e,Revolver,Telecommunications,,,,,,,2023-04-07,,,,,,0,,,,,CSWC,2024-05-21
+American Teleconferencing Services Ltd.,co_0f5d01359ad7,Revolver,Telecommunications,,,,,,,2023-04-07,,,,,,0,,,,,CSWC,2024-05-21
 FM Sylvan Inc.,co_aa88abd8c091,Revolver,Industrials,,,,,,,2027-11-08,,,,,,0,,,,,CSWC,2024-05-21
 NWN Parent Holdings LLC,co_680e7dc09177,Revolver,Other,,,,,,,,,,,,,0,,,,,CSWC,2024-05-21
 I-45 SLF LLC,co_73a492b65c86,Other Equity,Financial Services,,,,,,,,0,,0,,,,,,,,CSWC,2024-05-21

@@ -1230,10 +1230,16 @@ def _apply_ticker_specific_company_cleanup(name: str, ticker: Optional[str]) -> 
         s = re.sub(r'^Non-Controlled/Non-Affiliated\s+Investments\s*[-–—]\s*', '', s, flags=re.I)
         if re.match(r'^Non-Controlled', s, re.I):
             s = re.sub(r'^Non-Controlled[^\-]*[-–—]\s*', '', s, flags=re.I)
-        # "Affiliated Investments - Advocates for Disabled Vets" → "Advocates for Disabled Vets"; "Affiliated Investments" only → section header
+        # "Affiliated Investments - FST Holdings" → "FST Holdings"; "Affiliated Investments" only → section header
         if re.match(r'^Affiliated\s+Investments\s*$', s, re.I):
             return ('', None)
         s = re.sub(r'^Affiliated\s+Investments\s*[-–—]\s*', '', s, flags=re.I)
+        # "Controlled Investments - ECC Capital Corp. - Real Estate - Equity" → "ECC Capital Corp."; "Controlled Investments" only → section header
+        if re.match(r'^Controlled\s+Investments\s*$', s, re.I):
+            return ('', None)
+        if re.match(r'^Controlled\s+Investments\s*[-–—]\s*Subtotal', s, re.I):
+            return ('', None)
+        s = re.sub(r'^Controlled\s+Investments\s*[-–—]\s*', '', s, flags=re.I)
         # "Altisource S.A.R.L. - Services: Business - Equity" or " - Services: Business - Senior Secured..." → company only
         s = re.sub(r'\s*[-–—]\s*Services:\s*Business(?:\s*[-–—].*)?$', '', s, flags=re.I).strip()
         # "Altisource S.A.R.L - Business - Senior Secured..." or "Altisource S.A.R.L - Business" / "S.A.R.L-Business" → company only

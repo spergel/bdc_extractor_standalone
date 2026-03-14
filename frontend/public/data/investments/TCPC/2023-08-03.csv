@@ -1,6 +1,6 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
-ALCV Purchaser,co_130cd37dd542,First Lien,Automotive,12.23%,,SOFR,6.75%,1%,,2026-04-15,6071,6009,6010,,6009,,,,,,TCPC,2023-08-03
-ALCV Purchaser,co_130cd37dd542,Revolver,Automotive,12.18%,,SOFR,6.75%,1%,,2026-04-15,663,658,656,,658,,,,,,TCPC,2023-08-03
+ALCV Purchaser,co_f65a79c7d362,First Lien,Automotive,12.23%,,SOFR,6.75%,1%,,2026-04-15,6071,6009,6010,,6009,,,,,,TCPC,2023-08-03
+ALCV Purchaser,co_f65a79c7d362,Revolver,Automotive,12.18%,,SOFR,6.75%,1%,,2026-04-15,663,658,656,,658,,,,,,TCPC,2023-08-03
 AutoAlert,co_a928a54b77b1,First Lien,Automotive,10.29%,,SOFR,5.4%,1%,,2028-03-31,18813,18813,18813,,18813,,,,,,TCPC,2023-08-03
 AutoAlert,co_a928a54b77b1,Second Lien,Automotive,14.3%,,SOFR,9.4%,1%,,2029-03-31,8916,8916,8916,,8916,,,,,,TCPC,2023-08-03
 Porcelain Acquisition Corp.,co_3b6d0e5a85c0,First Lien,Industrials,11.34%,,SOFR,5.75%,1%,,2027-04-30,6166,6080,6018,,6080,,,,,,TCPC,2023-08-03
@@ -108,8 +108,8 @@ Anaconda Inc.,co_03e64f4a6ac1,First Lien,Software & Technology,12.73%,,SOFR,7.5%
 Astra Acquisition Corp.,co_fb9761b6b76a,First Lien,Software & Technology,14.09%,,SOFR,8.88%,0.75%,,2029-10-25,20715,20371,11549,,20371,,,,,,TCPC,2023-08-03
 Bynder Bidco Inc.,co_a1e3482c63ea,First Lien,Software & Technology,12.05%,,SOFR,7.25%,1%,,2029-01-26,,-7,-7,,-7,,,,,,TCPC,2023-08-03
 Bynder Bidco Inc.,co_a1e3482c63ea,First Lien,Software & Technology,12.05%,,SOFR,7.25%,1%,,2029-01-26,3000,2914,2916,,2914,,,,,,TCPC,2023-08-03
-Bynder Bidco B.V. (Netherlands) Sr Secured Revolver B Ref SOFR Floor 1.00% Spread 7.25% Total Coupon 12.05% Maturity 1/26/2029,co_a27acc214feb,First Lien,Software & Technology,12.05%,,SOFR,7.25%,1%,,2029-01-26,,-25,-25,,-25,,,,,type_hint_revolver_from_name,TCPC,2023-08-03
-Bynder Bidco B.V. (Netherlands) First Lien Term Loan B Ref SOFR Floor 1.00% Spread 7.25% Total Coupon 12.05% Maturity 1/26/2029,co_93c0c15ed11d,First Lien,Software & Technology,12.05%,,SOFR,7.25%,1%,,2029-01-26,10875,10562,10570,,10562,,,,,,TCPC,2023-08-03
+Bynder Bidco B.V. (Netherlands) Sr Secured Revolver B Ref SOFR Floor 1.00% Spread 7.25% Total Coupon 12.05% Maturity 1/26/2029,co_59a3400015fa,First Lien,Software & Technology,12.05%,,SOFR,7.25%,1%,,2029-01-26,,-25,-25,,-25,,,,,type_hint_revolver_from_name,TCPC,2023-08-03
+Bynder Bidco B.V. (Netherlands) First Lien Term Loan B Ref SOFR Floor 1.00% Spread 7.25% Total Coupon 12.05% Maturity 1/26/2029,co_629d796fff6f,First Lien,Software & Technology,12.05%,,SOFR,7.25%,1%,,2029-01-26,10875,10562,10570,,10562,,,,,,TCPC,2023-08-03
 Domo Inc.,co_a634c39021b1,First Lien,Software & Technology,13.5%,2.5%,,,1.5%,,2025-04-01,56956,56867,56614,,56867,,,,,,TCPC,2023-08-03
 Domo Inc.,co_a634c39021b1,First Lien,Software & Technology,9.5%,9.5%,,,,,2025-04-01,3262,772,3076,,772,,,,,,TCPC,2023-08-03
 Gympass US LLC,co_28e7392fcd4d,First Lien,Software & Technology,13.26%,4%,,,1%,,2027-07-08,519,515,514,,515,,,,,,TCPC,2023-08-03
@@ -120,8 +120,8 @@ Oranje Holdco Inc.,co_055c2740c113,First Lien,Software & Technology,12.79%,,SOFR
 Oranje Holdco Inc.,co_055c2740c113,First Lien,Software & Technology,12.79%,,SOFR,7.75%,1%,,2029-02-01,9839,9611,9662,,9611,,,,,,TCPC,2023-08-03
 Persado Inc.,co_7f83b3f968ae,First Lien,Software & Technology,12.66%,,SOFR,7.5%,1.8%,,2027-06-10,7465,7425,6838,,7425,,,,,,TCPC,2023-08-03
 Persado Inc.,co_7f83b3f968ae,First Lien,Software & Technology,12.66%,,SOFR,7.5%,1.8%,,2027-06-10,7318,7234,6703,,7234,,,,,,TCPC,2023-08-03
-Pluralsight Inc.,co_c7709528c5b4,First Lien,Software & Technology,13.04%,,SOFR,8%,1%,,2027-04-06,32583,32125,31084,,32125,,,,,,TCPC,2023-08-03
-Pluralsight Inc.,co_c7709528c5b4,First Lien,Software & Technology,13.04%,,SOFR,8%,1%,,2027-04-06,1209,1178,1097,,1178,,,,,,TCPC,2023-08-03
+Pluralsight Inc.,co_5097e1803107,First Lien,Software & Technology,13.04%,,SOFR,8%,1%,,2027-04-06,32583,32125,31084,,32125,,,,,,TCPC,2023-08-03
+Pluralsight Inc.,co_5097e1803107,First Lien,Software & Technology,13.04%,,SOFR,8%,1%,,2027-04-06,1209,1178,1097,,1178,,,,,,TCPC,2023-08-03
 Quartz Holding Company,co_1b0f1a77a75b,First Lien,Software & Technology,13.2%,,SOFR,8%,,,2027-04-02,9903,9789,9854,,9789,,,,,,TCPC,2023-08-03
 Reveal Data Corp.,co_acde9155afdb,First Lien,Software & Technology,10.22%,,SOFR,6.5%,1%,,2028-03-09,8144,7982,7940,,7982,,,,,,TCPC,2023-08-03
 ResearchGate GmBH (Germany) First Lien Term Loan (4.0% Exit Fee) Ref EURIBOR - Spread 8.55% Total Coupon 11.80% Maturity 10/1/2024,co_b8a727c71815,First Lien,Software & Technology,11.8%,,SOFR,8.55%,,,2024-10-01,7500,8259,7988,,8259,,,,,,TCPC,2023-08-03
@@ -166,7 +166,7 @@ Forest Products,co_03d16c9ef29a,First Lien,Containers & Packaging,,,,,,,,,30158,
 Applause App Quality,co_f7cf9f9622b2,First Lien,Business Services,10.3%,,SOFR,5%,1%,,2025-09-20,15205,15202,15205,,15202,,,,,,TCPC,2023-08-03
 Applause App Quality,co_f7cf9f9622b2,Revolver,Business Services,10.3%,,SOFR,5%,1%,,2025-09-20,0,6,0,,6,,,,,,TCPC,2023-08-03
 CIBT Solutions,co_8684de13fd89,Second Lien,Business Services,7.75%,6.75%,,,1%,,2025-06-01,8146,7567,4419,,7567,,,,,,TCPC,2023-08-03
-DTI Holdco,co_e0abc0b1b92b,Second Lien,Business Services,12.8%,,SOFR,7.75%,0.75%,,2030-04-26,7500,7374,6562,,7374,,,,,,TCPC,2023-08-03
+DTI Holdco,co_65ac87d9cdab,Second Lien,Business Services,12.8%,,SOFR,7.75%,0.75%,,2030-04-26,7500,7374,6562,,7374,,,,,,TCPC,2023-08-03
 GI Consilio Parent,co_3a50adf950d5,Second Lien,Business Services,12.69%,,SOFR,7.5%,0.5%,,2029-05-14,10000,9932,9770,,9932,,,,,,TCPC,2023-08-03
 ICIMS,co_bf6839dcfbb8,Delayed Draw,Business Services,12.38%,3.88%,,,0.75%,,2028-08-18,83,83,76,,83,,,,,,TCPC,2023-08-03
 ICIMS,co_bf6839dcfbb8,Revolver,Business Services,11.99%,,SOFR,6.75%,0.75%,,2028-08-18,66,60,63,,60,,,,,,TCPC,2023-08-03
@@ -289,7 +289,6 @@ Semiconductors and Semiconductor Equipment,co_8f023b0f8a4a,Other,Software & Tech
 Tradeshift,co_fb25fad096eb,Preferred Equity,Software & Technology,,,,,,,,,578,0,,578,,,,1712930,,TCPC,2023-08-03
 Trading Companies & Distributors Blackbird Holdco,co_7e1053c8f3e4,Preferred Equity,Distribution & Wholesale,12.5%,,SOFR,12.5%,,,,,8429,6885,,8429,,,,7108,,TCPC,2023-08-03
 Equity Securities,co_a93961678a30,Other,Financial Services,,,,,,,,,164989,190314,25.5%,164989,,,,,,TCPC,2023-08-03
-Investments,co_6a0632fdb7b4,Other,Financial Services,,,,,,,,,1683607,1640558,2.19%,1683607,,,,,,TCPC,2023-08-03
 Iracore International Holdings Inc.,co_1c93e735dec9,First Lien,,,,SOFR,9%,1%,,,,,1324,,,,,,,,TCPC,2023-08-03
 Fishbowl Inc.,co_b65d1956457c,First Lien,,,,SOFR,5%,1%,,,,,12090,,,,,,,,TCPC,2023-08-03
 AutoAlert LLC,co_a928a54b77b1,First Lien,,,,SOFR,5.4%,1%,,,,,18813,,,,,,,,TCPC,2023-08-03

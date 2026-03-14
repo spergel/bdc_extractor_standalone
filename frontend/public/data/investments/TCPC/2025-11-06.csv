@@ -3,8 +3,8 @@ Skydio,co_7e8be9ce7575,First Lien,Aerospace & Defense,9.75%,2.75%,SOFR,,2.5%,,20
 Skydio,co_7e8be9ce7575,Delayed Draw,Aerospace & Defense,9.82%,2.75%,SOFR,,2.5%,,2029-12-04,0,-55,-59,,-55,,,,,,TCPC,2025-11-06
 ABC Technologies Inc.,co_56bf2dc07368,First Lien,Automotive,10.22%,,SOFR,5.88%,0.75%,,2031-08-22,2450,2752,2773,,2752,,,,,,TCPC,2025-11-06
 ABC Technologies Inc.,co_56bf2dc07368,First Lien,Automotive,10.1%,,SOFR,5.75%,0.75%,,2031-08-22,4146,3992,3993,,3992,,,,,,TCPC,2025-11-06
-ALCV Purchaser,co_130cd37dd542,First Lien,Automotive,11.01%,,SOFR,7.01%,1%,,2026-02-25,7498,7464,7498,,7464,,,,,,TCPC,2025-11-06
-ALCV Purchaser,co_130cd37dd542,Revolver,Automotive,11.01%,,SOFR,7.01%,1%,,2026-02-25,448,445,448,,445,,,,,,TCPC,2025-11-06
+ALCV Purchaser,co_f65a79c7d362,First Lien,Automotive,11.01%,,SOFR,7.01%,1%,,2026-02-25,7498,7464,7498,,7464,,,,,,TCPC,2025-11-06
+ALCV Purchaser,co_f65a79c7d362,Revolver,Automotive,11.01%,,SOFR,7.01%,1%,,2026-02-25,448,445,448,,445,,,,,,TCPC,2025-11-06
 AutoAlert,co_a928a54b77b1,First Lien,Automotive,9.69%,,SOFR,5.4%,1%,,2028-03-31,18813,18813,18813,,18813,,,,,,TCPC,2025-11-06
 AutoAlert,co_a928a54b77b1,Second Lien,Automotive,13.69%,9.4%,SOFR,,1%,,2029-03-31,11880,11880,11880,,11880,,,,,,TCPC,2025-11-06
 TL Alpine Holding Corp.,co_9f1e59ca4bb2,First Lien,Industrials,10%,,SOFR,6%,1%,,2030-08-01,1985,1951,1997,,1951,,,,,,TCPC,2025-11-06
@@ -80,7 +80,7 @@ Beekeeper Buyer Inc.,co_bfc4c79c4456,First Lien,Diversified,9.55%,,SOFR,5.25%,0.
 Beekeeper Buyer Inc.,co_bfc4c79c4456,First Lien,Diversified,9.25%,,SOFR,5.25%,0.75%,,2031-06-30,800,792,793,,792,,,,,,TCPC,2025-11-06
 GC Champion Acquisition LLC,co_413cdab0d6c4,First Lien,Diversified,9.22%,,SOFR,5%,1%,,2028-08-21,7664,7395,7600,,7395,,,,,,TCPC,2025-11-06
 GC Champion Acquisition LLC,co_413cdab0d6c4,First Lien,Diversified,9.22%,,SOFR,5%,1%,,2028-08-21,2129,2054,2111,,2054,,,,,,TCPC,2025-11-06
-Gordon Brothers Finance Company Unsecured Debt Ref LIBOR(M) Floor 1.00% Spread 11.00% Total Coupon 15.30% Maturity 6/3/2026,co_8fa1d4e1480a,First Lien,Diversified,15.3%,,LIBOR,11%,1%,,2026-06-03,34644,10576,127,,10576,,,,,fair_value_suspicious_vs_size,TCPC,2025-11-06
+Gordon Brothers Finance Company Unsecured Debt Ref LIBOR(M) Floor 1.00% Spread 11.00% Total Coupon 15.30% Maturity 6/3/2026,co_2386c718dd96,First Lien,Diversified,15.3%,,LIBOR,11%,1%,,2026-06-03,34644,10576,127,,10576,,,,,fair_value_suspicious_vs_size,TCPC,2025-11-06
 Libra Solutions Intermediate Holdco,co_e2e042243d41,Second Lien,Diversified,12.78%,,SOFR,8.62%,1%,,2026-01-05,9431,9380,9525,,9380,,,,,,TCPC,2025-11-06
 Rialto Management Group,co_60d81ee23360,Revolver,Diversified,9.33%,,SOFR,5%,0.75%,,2030-12-05,0,-1,0,,-1,,,,,,TCPC,2025-11-06
 Rialto Management Group,co_60d81ee23360,First Lien,Diversified,9.16%,,SOFR,5%,0.75%,,2030-12-05,4621,4580,4667,,4580,,,,,,TCPC,2025-11-06
@@ -132,8 +132,8 @@ Acquia Inc.,co_0e22e2874d2e,First Lien,Software & Technology,10.43%,,SOFR,6.15%,
 Astra Acquisition Corp.,co_fb9761b6b76a,First Lien,Software & Technology,17.13%,,SOFR,9.88%,0.75%,,2029-10-25,27880,20205,0,,20205,,,,,,TCPC,2025-11-06
 Bynder Bidco Inc.,co_a1e3482c63ea,First Lien,Software & Technology,10.14%,,SOFR,6%,1%,,2029-01-26,0,-5,0,,-5,,,,,,TCPC,2025-11-06
 Bynder Bidco Inc.,co_a1e3482c63ea,First Lien,Software & Technology,10.14%,,SOFR,6%,1%,,2029-01-26,4284,4177,4289,,4177,,,,,,TCPC,2025-11-06
-Bynder Bidco B.V. (Netherlands) Sr Secured Revolver B Ref SOFR(S) Floor 1.00% Spread 6.00% Total Coupon 10.14% Maturity 1/26/2029,co_a27acc214feb,First Lien,Software & Technology,10.14%,,SOFR,6%,1%,,2029-01-26,0,-19,0,,-19,,,,,type_hint_revolver_from_name,TCPC,2025-11-06
-Bynder Bidco B.V. (Netherlands) First Lien Term Loan B Ref SOFR(S) Floor 1.00% Spread 6.00% Total Coupon 10.14% Maturity 1/26/2029,co_93c0c15ed11d,First Lien,Software & Technology,10.14%,,SOFR,6%,1%,,2029-01-26,15529,15143,15548,,15143,,,,,,TCPC,2025-11-06
+Bynder Bidco B.V. (Netherlands) Sr Secured Revolver B Ref SOFR(S) Floor 1.00% Spread 6.00% Total Coupon 10.14% Maturity 1/26/2029,co_59a3400015fa,First Lien,Software & Technology,10.14%,,SOFR,6%,1%,,2029-01-26,0,-19,0,,-19,,,,,type_hint_revolver_from_name,TCPC,2025-11-06
+Bynder Bidco B.V. (Netherlands) First Lien Term Loan B Ref SOFR(S) Floor 1.00% Spread 6.00% Total Coupon 10.14% Maturity 1/26/2029,co_629d796fff6f,First Lien,Software & Technology,10.14%,,SOFR,6%,1%,,2029-01-26,15529,15143,15548,,15143,,,,,,TCPC,2025-11-06
 Domo Inc.,co_a634c39021b1,First Lien,Software & Technology,12.19%,5%,SOFR,,1.5%,,2028-08-19,62250,62250,62250,,62250,,,,,,TCPC,2025-11-06
 Domo Inc.,co_a634c39021b1,First Lien,Software & Technology,9.5%,9.5%,SOFR,,0%,,2028-08-19,4051,1561,3877,,1561,,,,,,TCPC,2025-11-06
 e-Discovery Acquireco LLC,co_051b13bc64cf,First Lien,Software & Technology,10.2%,,SOFR,6%,1%,,2029-08-23,399,390,399,,390,,,,,,TCPC,2025-11-06
@@ -146,9 +146,9 @@ Magenta Buyer LLC,co_998c6c433e56,First Lien,Software & Technology,11.57%,,SOFR,
 Magenta Buyer LLC,co_998c6c433e56,First Lien,Software & Technology,10.56%,,SOFR,6.25%,0.75%,,2028-07-27,874,865,889,,865,,,,,,TCPC,2025-11-06
 Persado Inc.,co_7f83b3f968ae,First Lien,Software & Technology,11.78%,,SOFR,7.5%,1.8%,,2027-06-10,5122,5063,4979,,5063,,,,,,TCPC,2025-11-06
 Persado Inc.,co_7f83b3f968ae,First Lien,Software & Technology,11.78%,,SOFR,7.5%,1.8%,,2027-06-10,7434,7220,7226,,7220,,,,,,TCPC,2025-11-06
-Pluralsight Inc.,co_c7709528c5b4,First Lien,Software & Technology,8.7%,1.5%,SOFR,,1%,,2029-08-22,5806,5576,5806,,5576,,,,,,TCPC,2025-11-06
-Pluralsight Inc.,co_c7709528c5b4,First Lien,Software & Technology,11.7%,7.5%,SOFR,,1%,,2029-08-22,9714,9364,8853,,9364,,,,,,TCPC,2025-11-06
-Pluralsight Inc.,co_c7709528c5b4,First Lien,Software & Technology,8.7%,1.5%,SOFR,,1%,,2029-08-22,3060,3060,3060,,3060,,,,,,TCPC,2025-11-06
+Pluralsight Inc.,co_5097e1803107,First Lien,Software & Technology,8.7%,1.5%,SOFR,,1%,,2029-08-22,5806,5576,5806,,5576,,,,,,TCPC,2025-11-06
+Pluralsight Inc.,co_5097e1803107,First Lien,Software & Technology,11.7%,7.5%,SOFR,,1%,,2029-08-22,9714,9364,8853,,9364,,,,,,TCPC,2025-11-06
+Pluralsight Inc.,co_5097e1803107,First Lien,Software & Technology,8.7%,1.5%,SOFR,,1%,,2029-08-22,3060,3060,3060,,3060,,,,,,TCPC,2025-11-06
 Spartan Bidco Pty Ltd.,co_97c7ef5de843,First Lien,Software & Technology,10.96%,,SOFR,6.65%,0.75%,,2028-01-24,9686,9554,9645,,9554,,,,,,TCPC,2025-11-06
 Spartan Bidco Pty Ltd.,co_97c7ef5de843,First Lien,Software & Technology,10.96%,,SOFR,6.65%,0.75%,,2028-01-24,5013,4880,4992,,4880,,,,,,TCPC,2025-11-06
 Spartan Bidco Pty Ltd.,co_97c7ef5de843,First Lien,Software & Technology,10.93%,,SOFR,6.65%,0.75%,,2028-01-24,0,-11,-3,,-11,,,,,,TCPC,2025-11-06
@@ -344,7 +344,7 @@ Igloo Parent Holdings LLC,co_296eb39d66d7,Other Equity,Consumer & Retail,,,,,,,,
 InMobi,co_b283e34d5f10,Common Equity,Software & Technology,,,,,,,,,212,2838,,212,,,,1327869,,TCPC,2025-11-06
 InMobi,co_b283e34d5f10,Preferred Equity,Software & Technology,,,,,,,,,276,2277,,276,,,,1049996,,TCPC,2025-11-06
 InMobi,co_b283e34d5f10,Preferred Equity,Software & Technology,,,,,,,,,93,2732,,93,,,,1511002,cost_suspicious_vs_size,TCPC,2025-11-06
-Pluralsight,co_c7709528c5b4,Common Equity,Software & Technology,,,,,,,,,7995,0,,7995,,,,2865672,,TCPC,2025-11-06
+Pluralsight,co_5097e1803107,Common Equity,Software & Technology,,,,,,,,,7995,0,,7995,,,,2865672,,TCPC,2025-11-06
 ResearchGate Corp.,co_c02e042795d7,Other Equity,Software & Technology,,,,,,,,,202,31,,202,,,,333370,,TCPC,2025-11-06
 SnapLogic,co_54adb9d41aaf,Preferred Equity,Software & Technology,,,,,,,,,378,5653,,378,,,,1860000,,TCPC,2025-11-06
 SuCo Investors,co_3ba768f706b7,Warrants,Software & Technology,,,,,,,,,0,0,,0,,,,44928,,TCPC,2025-11-06
