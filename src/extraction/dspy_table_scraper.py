@@ -72,6 +72,13 @@ TARGET_TICKERS = [
     "NEWT", "OXSQ", "PSBD", "TPVG", "ICMB",
 ]
 
+#: Per-ticker unit scale overrides — for BDCs that file in whole dollars but have no
+#: explicit "in thousands" / "in millions" disclosure (so _detect_unit_scale defaults
+#: to "thousands", producing 1000× inflation).  "units" means whole dollars → ÷1000.
+FORCE_UNIT_SCALE: Dict[str, str] = {
+    "SSSS": "units",   # SoftBank BDC files in whole dollars; no unit disclosure found
+}
+
 #: Standard investment types the model must choose from
 INVESTMENT_TYPE_OPTIONS = (
     "First Lien", "Revolver", "Delayed Draw", "Second Lien",
@@ -582,6 +589,23 @@ class DSPyTableScraper:
 
         # 4. Detect dollar unit scale (thousands / millions / units)
         unit_scale = self._html_helper._detect_unit_scale(soi_tables, filing_result)
+        if ticker in FORCE_UNIT_SCALE:
+            forced = FORCE_UNIT_SCALE[ticker]
+            if unit_scale == "thousands":
+                # Only override the fallback default — if the filing explicitly discloses
+                # "in millions" or "in units" that detection should be trusted.
+                logger.info(
+                    "Overriding default unit_scale 'thousands' → '%s' for %s "
+                    "(filing has no explicit unit disclosure)",
+                    forced, ticker,
+                )
+                unit_scale = forced
+            else:
+                logger.info(
+                    "Keeping explicitly detected unit_scale '%s' for %s "
+                    "(FORCE_UNIT_SCALE=%s skipped — explicit disclosure found)",
+                    unit_scale, ticker, forced,
+                )
 
         # 5. Build section-context strings for each table
         section_contexts = self._build_section_contexts(soi_tables, filing_result)
@@ -672,6 +696,50 @@ class DSPyTableScraper:
         if dropped:
             logger.info("Filtered %d data-poor rows (JV/comparative tables)", dropped)
 
+        # 1b. Filter section-header and subtotal rows that DSPy misread as data rows.
+        #     These appear when Gemini includes a subtotal line (e.g. "Senior Secured
+        #     Loans—First Lien  117.7%") as if it were a company.  They're recognisable
+        #     by company_name starting with a known section-header prefix.
+        import re as _re_sh
+        _SECTION_HEADER_PREFIXES = _re_sh.compile(
+            r'^(?:senior secured loans?|first lien|second lien|subordinated|'
+            r'unsecured|equity investments?|other investments?|debt investments?|'
+            r'non-qualified|qualifying assets|total investments?)\s*[—\-–]',
+            _re_sh.IGNORECASE,
+        )
+        pre_sh = len(filtered)
+        filtered = [
+            r for r in filtered
+            if not _SECTION_HEADER_PREFIXES.match(r.get("company_name", "").strip())
+        ]
+        if len(filtered) < pre_sh:
+            logger.info(
+                "Filtered %d section-header/subtotal rows", pre_sh - len(filtered)
+            )
+
+        # 1c. Filter data-poor summary rows: have fair_value but nothing else
+        #     meaningful (no principal, no amortized_cost, no maturity, no rate,
+        #     no shares, no cost, no acquisition_date).  These are usually duplicates
+        #     read from a portfolio-totals section or a comparative-period summary.
+        _MEANINGFUL_FIELDS = (
+            "principal_amount", "amortized_cost", "maturity_date",
+            "reference_rate", "cash_rate", "pik_rate", "spread",
+            "shares", "cost", "acquisition_date",
+        )
+        pre_dp = len(filtered)
+        filtered = [
+            r for r in filtered
+            if not (
+                r.get("fair_value")
+                and not any(r.get(f) for f in _MEANINGFUL_FIELDS)
+            )
+        ]
+        if len(filtered) < pre_dp:
+            logger.info(
+                "Filtered %d data-poor summary rows (fv-only, no other fields)",
+                pre_dp - len(filtered),
+            )
+
         # 2. Dedup rows that appear identically across continuation sub-tables.
         #    Key: (company_name, investment_type, fair_value, principal_amount).
         #    Different tranches for the same company will have different amounts so
@@ -719,9 +787,9 @@ class DSPyTableScraper:
         # Build cross-period dedup: group by (company, type, maturity_ym) then
         # check if a near-duplicate principal already exists in the group.
         # Two rows are cross-period duplicates if they share (company, type, mat_ym)
-        # AND their principal amounts are within 30% of each other (same loan,
+        # AND their principal amounts are within 25% of each other (same loan,
         # different period balance).  Legitimate multi-tranche positions differ
-        # by more than 30% so they are kept.
+        # by more than 25% so they are kept.
         from collections import defaultdict as _dd
         _group_principals: dict = _dd(list)  # key -> list of (principal_float, row_idx)
         cross_period_deduped: List[Dict[str, str]] = []
@@ -734,7 +802,7 @@ class DSPyTableScraper:
                 pri = float(r.get("principal_amount", "").strip() or "0")
             except ValueError:
                 pri = 0.0
-            # Check if any existing principal in this group is within 30%
+            # Check if any existing principal in this group is within 25%
             is_dup = False
             if mat:
                 for seen_pri in _group_principals[key]:
@@ -743,7 +811,7 @@ class DSPyTableScraper:
                         break
                     if seen_pri > 0 and pri > 0:
                         ratio = min(seen_pri, pri) / max(seen_pri, pri)
-                        if ratio >= 0.70:  # within 30% → same loan, different period
+                        if ratio >= 0.75:  # within 25% → same loan, different period
                             is_dup = True
                             break
             if is_dup:
@@ -791,12 +859,18 @@ class DSPyTableScraper:
                         except ValueError:
                             pass
 
-        # 4. Two-pass median outlier detection on fair_value.
-        #    Some filings (e.g. FSK 10-K) mix millions-denominated USD positions
-        #    with raw-currency foreign positions (EUR par in units).  After ×1000
-        #    scaling the raw-currency rows become 1,000,000× too large.  Detect
-        #    these by comparing each fair_value to the filing median: if a value
-        #    is >1000× the median, clear it so the row is still kept but flagged.
+        # 4. Median outlier detection on fair_value.
+        #    Handles two failure modes:
+        #    a) Mixed-scale rows: some filings (e.g. FSK 10-K) mix USD positions with
+        #       raw-currency foreign positions. After ×1000 scaling the raw-currency
+        #       rows become 1,000,000× too large. Detect by comparing each value to the
+        #       filing median; clear values >500× the median.
+        #    b) Whole-filing unit mismatch: when no explicit unit disclosure is found,
+        #       unit_scale defaults to "thousands". If the filing is actually in whole
+        #       dollars (e.g. SSSS), the median itself will be ~1000× too large.
+        #       Detect by checking if the post-scale median is implausibly large (>100K
+        #       in thousands = $100M median per position) with no explicit scale detected.
+        #       If so, divide ALL monetary values by 1000.
         fvs = []
         for r in deduped:
             try:
@@ -809,7 +883,9 @@ class DSPyTableScraper:
         if len(fvs) >= 10:
             import statistics
             median_fv = statistics.median(fvs)
-            outlier_threshold = median_fv * 10_000  # 4 orders of magnitude above median
+
+            # Pass 4a: clear individual outlier rows (500× above median)
+            outlier_threshold = median_fv * 500
             cleared = 0
             for r in deduped:
                 try:
@@ -833,6 +909,25 @@ class DSPyTableScraper:
                     pass
             if cleared:
                 logger.info("Cleared %d outlier fair_value rows (threshold=%.0f, median=%.0f)", cleared, outlier_threshold, median_fv)
+
+            # Pass 4b: whole-filing unit mismatch — if scale defaulted to "thousands"
+            # but median is implausibly large (>100K = $100M per position), the filing
+            # is likely in whole dollars. Re-scale all monetary values by /1000.
+            if unit_scale == "thousands" and median_fv > 100_000:
+                logger.info(
+                    "Unit mismatch detected: scale defaulted to 'thousands' but median_fv=%.0f "
+                    "(>100K threshold). Filing likely in whole dollars — dividing all monetary "
+                    "fields by 1000.", median_fv,
+                )
+                monetary_fields = ("fair_value", "principal_amount", "amortized_cost", "cost")
+                for r in deduped:
+                    for field in monetary_fields:
+                        raw = (r.get(field) or "").strip()
+                        if raw:
+                            try:
+                                r[field] = str(round(float(raw) / 1000, 4))
+                            except ValueError:
+                                pass
 
         return deduped
 

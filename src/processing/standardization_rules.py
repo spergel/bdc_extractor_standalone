@@ -405,6 +405,8 @@ _NON_COMPANY_PATTERNS = re.compile(
     r'|See\s+(?:Notes?|Accompanying)'
     r'|Common\s+Equity/Equity\s+Interests/Warrants'   # SLRC: investment type label leaked as company
     r'|Equipment\s+Financing'                          # SLRC: category label leaked as company
+    # Section subtotals that DSPy sometimes emits as data rows (e.g. "Senior Secured Loans—First Lien")
+    r'|Senior\s+Secured\s+Loans?'
     # Numeric/symbol junk rows
     r'|[\$\d,\.\(\)\s]+$'                             # pure number / $ / parenthetical number
     # Bank accounting terms from NEWT-style filings

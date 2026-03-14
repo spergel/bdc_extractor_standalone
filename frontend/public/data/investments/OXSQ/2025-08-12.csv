@@ -1,7 +1,7 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
 Access CIG LLC,co_88ccabd99a44,First Lien,Business Services,8.38%,,SOFR,4.25%,0.50%,2024-01-18,2028-08-18,10071389,10111066,10121746,,,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
 Convergint Technologies LLC,co_279c0103d742,Second Lien,Business Services,11.19%,,SOFR,6.75%,0.75%,2021-03-18,2029-03-29,11000000,10985622,10945000,,,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Nielsen Consumer LLC,co_799417be10ff,First Lien,Business Services,7.83%,,SOFR,3.50%,0.50%,2024-07-08,2028-03-06,9950063,9940573,9950063,,,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
+Nielsen Consumer LLC,co_3f14348f3735,First Lien,Business Services,7.83%,,SOFR,3.50%,0.50%,2024-07-08,2028-03-06,9950063,9940573,9950063,,,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
 Verifone Systems Inc.,co_ae9da97d8aaa,First Lien,Business Services,10.21%,,SOFR,5.50%,0.00%,2025-03-28,2028-08-20,13229081,12053867,12402263,,,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
 Shearer’s Foods LLC,co_a500e9e399f4,First Lien,Food & Beverage,7.58%,,SOFR,3.25%,0.00%,2024-01-31,2031-01-31,9900188,9927433,9924938,,,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
 HealthChannels Inc.,co_64105b9f1c49,First Lien,Healthcare,11.00%,,SOFR,3.50%,0.00%,2021-01-15,2025-10-30,8745180,8744774,6821240,,,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
@@ -29,11 +29,11 @@ Ares XLIV CLO Ltd.,co_b4a9d8c4aac3,Other,Financial Services,21.86%,,N/A,,,2023-1
 Atlas Senior Loan Fund XI Ltd.,co_a2aad1967a6d,Other,Financial Services,0.00%,,N/A,,,2019-04-05,2031-07-26,5725000,,200375,,1490740,,,,,dspy_extracted|fair_value_suspicious_vs_size,OXSQ,2025-08-12,OXSQ,2025-08-12
 Bain Capital Credit CLO 2017-2 Ltd.,co_8d7900e72f16,Other,Financial Services,15.64%,,N/A,,,2024-01-17,2037-07-25,3086500,,1483063,,1801979,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
 BlueMountain CLO 2014-2 Ltd.,co_f737983895d4,Other,Financial Services,0.00%,,N/A,,,2019-04-03,2030-10-20,6374000,,159350,,512531,,,,,dspy_extracted|fair_value_suspicious_vs_size,OXSQ,2025-08-12,OXSQ,2025-08-12
-BlueMountain CLO XXXI Ltd.,co_cdde7058abc0,Other,Financial Services,21.66%,,N/A,,,2024-04-16,2034-04-19,12075000,,4950750,,7020811,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
+BlueMountain CLO XXXI Ltd.,co_92f097012610,Other,Financial Services,21.66%,,N/A,,,2024-04-16,2034-04-19,12075000,,4950750,,7020811,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
 Carlyle Global Market Strategies CLO 2013-2 Ltd.,co_cf7610c6a027,Other,Financial Services,0.00%,,N/A,,,2013-03-19,2029-01-18,6250000,,10000,,544329,,,,,dspy_extracted|fair_value_suspicious_vs_size,OXSQ,2025-08-12,OXSQ,2025-08-12
 Carlyle Global Market Strategies CLO 2021-6 Ltd.,co_ad8cd4af45eb,Other,,,,N/A,,,2021-06-30,2038-01-15,29600000,,15096000,,18039103,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Cedar Funding II CLO Ltd.,co_022dfa0ead9f,Other,,,,N/A,,,2013-10-23,2034-04-20,18000000,,6639132,,10672465,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Cedar Funding VI CLO Ltd.,co_022dfa0ead9f,Other,,,,N/A,,,2017-05-15,2034-04-20,7700000,,3465000,,5609508,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
+Cedar Funding II CLO Ltd.,co_7ece860b6d0d,Other,,,,N/A,,,2013-10-23,2034-04-20,18000000,,6639132,,10672465,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
+Cedar Funding VI CLO Ltd.,co_7ece860b6d0d,Other,,,,N/A,,,2017-05-15,2034-04-20,7700000,,3465000,,5609508,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
 CIFC Funding 2014-3 Ltd.,co_e0431908f642,Other,,,,N/A,,,2017-01-24,2038-03-31,1000000,,660000,,1987312,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
 Dryden 43 Senior Loan Fund,co_ccf41dfa94f3,Other,,,,N/A,,,2021-06-01,2034-04-20,47263000,,13706270,,23870160,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
 Gulf Stream Meridian 4 Ltd.,co_47157e5b4d8e,Other,,,,N/A,,,2023-11-15,2039-10-15,6625000,,3058021,,3508528,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
@@ -57,7 +57,7 @@ First American Government Obligations Fund – Class Z Shares,co_77b23e981d4b,Ot
 Kaman Corp.,co_88d1363f3040,First Lien,Aerospace & Defense,7.99%,,SOFR,3.50%,0.00%,2024-10-28,2031-04-21,5985,6022.406,6022.406,,6022.406,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
 Access CIG LLC,co_88ccabd99a44,First Lien,Business Services,9.59%,,SOFR,5.00%,0.50%,2024-01-18,2028-08-18,10122.643,10223.869,10223.869,,10166.166,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
 Convergint Technologies LLC,co_279c0103d742,Second Lien,Business Services,11.22%,,SOFR,6.75%,0.75%,2021-03-18,2029-03-29,11000,10917.500,10917.500,,10977.867,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
-Nielsen Consumer LLC,co_799417be10ff,First Lien,Business Services,9.11%,,SOFR,4.75%,0.50%,2024-07-08,2028-03-06,9975,10049.813,10049.813,,9962.438,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
+Nielsen Consumer LLC,co_3f14348f3735,First Lien,Business Services,9.11%,,SOFR,4.75%,0.50%,2024-07-08,2028-03-06,9975,10049.813,10049.813,,9962.438,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
 Premiere Global Services Inc.,co_875885a4c9e1,Revolver,Business Services,13.00%,,Prime,5.50%,1.00%,2019-10-01,2023-04-07,2452.012,487.212,487.212,,2378.999,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
 Verifone Systems Inc.,co_ae9da97d8aaa,First Lien,Business Services,8.78%,,SOFR,4.00%,0.00%,2018-08-09,2025-08-20,14760.146,13837.637,13837.637,,14593.903,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12
 Shearer’s Foods LLC,co_a500e9e399f4,First Lien,Food & Beverage,7.61%,,SOFR,3.25%,0.00%,2024-01-31,2031-01-31,9950.063,9950.063,9950.063,,9977.025,,,,,dspy_extracted,OXSQ,2025-08-12,OXSQ,2025-08-12

@@ -1,7 +1,7 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
 Access CIG LLC,co_88ccabd99a44,First Lien,Business Services,10.25%,,SOFR,5.00%,0.50%,2024-01-18,2028-08-18,10148.270,10195.144,10199.011,,10148.270,,,,,dspy_extracted,OXSQ,2024-11-07,OXSQ,2024-11-07
 Convergint Technologies LLC,co_279c0103d742,Second Lien,Business Services,11.71%,,SOFR,6.75%,0.75%,2021-03-18,2029-03-29,11000.000,10976.035,10260.910,,11000.000,,,,,dspy_extracted,OXSQ,2024-11-07,OXSQ,2024-11-07
-Nielsen Consumer LLC,co_799417be10ff,First Lien,Business Services,9.60%,,SOFR,4.75%,0.50%,2024-07-08,2028-03-06,10000.000,9987.931,9962.500,,10000.000,,,,,dspy_extracted,OXSQ,2024-11-07,OXSQ,2024-11-07
+Nielsen Consumer LLC,co_3f14348f3735,First Lien,Business Services,9.60%,,SOFR,4.75%,0.50%,2024-07-08,2028-03-06,10000.000,9987.931,9962.500,,10000.000,,,,,dspy_extracted,OXSQ,2024-11-07,OXSQ,2024-11-07
 Premiere Global Services Inc.,co_875885a4c9e1,First Lien,Business Services,13.00%,,Prime,5.50%,1.00%,2019-10-01,2021-09-09,11821.914,11469.896,,,11821.914,,,,,dspy_extracted,OXSQ,2024-11-07,OXSQ,2024-11-07
 Premiere Global Services Inc.,co_875885a4c9e1,First Lien,Business Services,13.00%,,Prime,5.50%,1.00%,2019-10-01,2023-04-07,2452.012,2378.999,487.288,,2452.012,,,,,dspy_extracted,OXSQ,2024-11-07,OXSQ,2024-11-07
 Premiere Global Services Inc.,co_875885a4c9e1,Second Lien,Business Services,,17.00%,Prime,8.50%,1.00%,2019-10-01,2024-06-06,17332.459,9817.795,,,17332.459,,,,,dspy_extracted,OXSQ,2024-11-07,OXSQ,2024-11-07
@@ -29,11 +29,11 @@ Ares XLIV CLO Ltd.,co_b4a9d8c4aac3,Other,Financial Services,29.31%,,N/A,,,2023-1
 Atlas Senior Loan Fund XI Ltd.,co_a2aad1967a6d,Other,Financial Services,0.00%,,N/A,,,2019-04-05,2031-07-26,5725000,2039624,543875,,5725000,,,,,dspy_extracted,OXSQ,2024-11-07,OXSQ,2024-11-07
 Bain Capital Credit CLO 2017-2 Ltd.,co_8d7900e72f16,Other,Financial Services,21.93%,,N/A,,,2024-01-17,2037-07-25,3086500,1822499,1790170,,3086500,,,,,dspy_extracted,OXSQ,2024-11-07,OXSQ,2024-11-07
 BlueMountain CLO 2014-2 Ltd.,co_f737983895d4,Other,Financial Services,6.92%,,N/A,,,2019-04-03,2030-10-20,6374000,869651,525855,,6374000,,,,,dspy_extracted,OXSQ,2024-11-07,OXSQ,2024-11-07
-BlueMountain CLO XXXI Ltd.,co_cdde7058abc0,Other,Financial Services,26.04%,,N/A,,,2024-04-16,2034-04-19,12075000,6970250,6520500,,12075000,,,,,dspy_extracted,OXSQ,2024-11-07,OXSQ,2024-11-07
+BlueMountain CLO XXXI Ltd.,co_92f097012610,Other,Financial Services,26.04%,,N/A,,,2024-04-16,2034-04-19,12075000,6970250,6520500,,12075000,,,,,dspy_extracted,OXSQ,2024-11-07,OXSQ,2024-11-07
 Carlyle Global Market Strategies CLO 2013-2 Ltd.,co_cf7610c6a027,Other,,0.00%,,N/A,,,2013-03-19,2029-01-18,6250000,,5000,,544329,,,,,dspy_extracted|fair_value_suspicious_vs_size,OXSQ,2024-11-07,OXSQ,2024-11-07
 Carlyle Global Market Strategies CLO 2021-6 Ltd.,co_ad8cd4af45eb,Other,,10.34%,,N/A,,,2021-06-30,2034-07-17,29600000,,14504000,,19433286,,,,,dspy_extracted,OXSQ,2024-11-07,OXSQ,2024-11-07
-Cedar Funding II CLO Ltd.,co_022dfa0ead9f,Other,,9.16%,,N/A,,,2013-10-23,2034-04-20,18000000,,7756579,,11425314,,,,,dspy_extracted,OXSQ,2024-11-07,OXSQ,2024-11-07
-Cedar Funding VI CLO Ltd.,co_022dfa0ead9f,Other,,12.29%,,N/A,,,2017-05-15,2034-04-20,7700000,,4389000,,5977537,,,,,dspy_extracted,OXSQ,2024-11-07,OXSQ,2024-11-07
+Cedar Funding II CLO Ltd.,co_7ece860b6d0d,Other,,9.16%,,N/A,,,2013-10-23,2034-04-20,18000000,,7756579,,11425314,,,,,dspy_extracted,OXSQ,2024-11-07,OXSQ,2024-11-07
+Cedar Funding VI CLO Ltd.,co_7ece860b6d0d,Other,,12.29%,,N/A,,,2017-05-15,2034-04-20,7700000,,4389000,,5977537,,,,,dspy_extracted,OXSQ,2024-11-07,OXSQ,2024-11-07
 CIFC Funding 2014-3 Ltd.,co_e0431908f642,Other,,0.00%,,N/A,,,2017-01-24,2031-10-22,10000000,,1400000,,2514872,,,,,dspy_extracted,OXSQ,2024-11-07,OXSQ,2024-11-07
 Dryden 43 Senior Loan Fund,co_ccf41dfa94f3,Other,,10.18%,,N/A,,,2021-06-01,2034-04-20,47263000,,17014680,,26007432,,,,,dspy_extracted,OXSQ,2024-11-07,OXSQ,2024-11-07
 Gulf Stream Meridian 4 Ltd.,co_47157e5b4d8e,Other,,18.50%,,N/A,,,2023-11-15,2034-07-15,6625000,,3217270,,3549184,,,,,dspy_extracted,OXSQ,2024-11-07,OXSQ,2024-11-07
