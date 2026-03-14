@@ -145,11 +145,11 @@ Expected: ~39 industries, all from standard list.
 - `process_all_bdcs.py` - Added automatic post-processing step
 - `post_process_extraction.py` - NEW: automatic data cleaning
 - `data_standards.py` - NEW: central definition of standard categories
-- `EXTRACTION_WORKFLOW.md` - Full documentation
+- `OPERATIONS.md` - Active issue tracker and operational commands
 
 ## Need Help?
 
-See `EXTRACTION_WORKFLOW.md` for:
+See `PIPELINE_AND_ROADMAP.md` and `OPERATIONS.md` for:
 - Detailed workflow explanation
 - Troubleshooting guide
 - Validation steps

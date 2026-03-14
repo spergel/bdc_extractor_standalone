@@ -1,303 +1,150 @@
-company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
-Caitec Inc.,co_e7ed3d437c5a,Subordinated Debt,,12%,2%,,,,2020-11-06,2026-06-01,1750,2237,2237,6.8%,2237,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Caitec Inc.,co_e7ed3d437c5a,Subordinated Debt,,,14%,,,,,2024-12-31,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Caitec Inc.,co_e7ed3d437c5a,Preferred Equity,,,,,,,2023-12-28,,,36,,,36,,,,36261,,RAND,2025-03-10,RAND,2025-03-10
-Caitec,co_e7ed3d437c5a,Other Equity,,,,,,,2020-11-06,,,150,,,150,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Caitec Inc.,co_e7ed3d437c5a,Subordinated Debt,,12%,2%,,,,2020-11-06,2026-06-01,1750,2237,2237,,2237,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Caitec,co_e7ed3d437c5a,Other Equity,,,,,,,2020-11-06,,,150,,,150,,,,150,,RAND,2025-03-10,RAND,2025-03-10
-Caitec Inc.,co_e7ed3d437c5a,Other,,,,,,,,,,4847,4475,,4847,,,,,,RAND,2025-03-10,RAND,2025-03-10
-GoNoodle Inc.,co_aacea6e2fb71,First Lien,,12%,1%,,,,2019-11-01,2025-09-30,1500,1440,1440,2.2%,1440,,,,,,RAND,2025-03-10,RAND,2025-03-10
-GoNoodle Inc.,co_aacea6e2fb71,Preferred Equity,,,,,,,2015-03-01,,,0,0,,0,,,,,,RAND,2025-03-10,RAND,2025-03-10
-GoNoodle Inc.,co_aacea6e2fb71,Preferred Equity,,,,,,,2019-11-01,,,0,0,,0,,,,,,RAND,2025-03-10,RAND,2025-03-10
-GoNoodle Inc.,co_aacea6e2fb71,Other,,,,,,,,,,1440,1440,,1440,,,,,,RAND,2025-03-10,RAND,2025-03-10
-HDI Acquisition LLC.,co_b738dab3265a,First Lien,,12%,2%,,,,2019-11-08,2025-06-30,1245,1072,1072,1.6%,1072,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Lumious,co_5d3a4b57918d,First Lien,,14%,,,,,2018-11-16,2025-12-01,850,790,790,1.2%,790,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Mattison Avenue Holdings LLC,co_403b194e8128,First Lien,,14%,,,,,2024-03-28,2027-06-25,5500,5573,5573,8.5%,5573,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Mountain Regional Equipment Solutions,co_5d719a698d0a,First Lien,Industrials,14%,,,,,2024-01-16,2029-01-16,3000,2952,2500,3.8%,2952,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Mountain Regional Equipment Solutions,co_5d719a698d0a,Common Equity,Industrials,,,,,,2024-01-16,,,205,,,205,,,,37991,,RAND,2025-03-10,RAND,2025-03-10
-Mountain Regional Equipment Solutions,co_5d719a698d0a,Other,Industrials,,,,,,2024-01-16,,,60,,,60,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Mountain Regional Equipment Solutions,co_5d719a698d0a,Other,Industrials,,,,,,,,,3217,2500,,3217,,,,,,RAND,2025-03-10,RAND,2025-03-10
-OnCore Golf Technology Inc.,co_9a694a686c60,Preferred Equity,Healthcare,,,,,,2018-11-30,,,753,100,0.2%,753,,,,300483,,RAND,2025-03-10,RAND,2025-03-10
-Open Exchange Inc.,co_c386136e3cd0,Preferred Equity,,,,,,,2013-11-13,,,1194,700,1.1%,1194,,,,397899,,RAND,2025-03-10,RAND,2025-03-10
-Open Exchange Inc.,co_c386136e3cd0,Other Equity,,,,,,,2019-10-22,,,208,,,208,,,,397899,,RAND,2025-03-10,RAND,2025-03-10
-Open Exchange Inc.,co_c386136e3cd0,Other,,,,,,,,,,1402,700,,1402,,,,,,RAND,2025-03-10,RAND,2025-03-10
-PostProcess Technologies Inc.,co_2f0e92e0421b,Preferred Equity,,,,,,,2019-11-01,,,349,,0%,349,,,,360002,,RAND,2025-03-10,RAND,2025-03-10
-Applied Image Inc.,co_626ef61915c4,First Lien,,10%,2%,,,,2021-12-31,2029-02-01,,1750,1750,2.7%,1750,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Applied Image Inc.,co_626ef61915c4,First Lien,,10%,2%,,,,,2025-02-01,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Applied Image Inc.,co_626ef61915c4,Other,,,,,,,,,,1750,1750,,1750,,,,,,RAND,2025-03-10,RAND,2025-03-10
-BMP Food Service Supply Holdco LLC,co_081ee2425789,First Lien,Food & Beverage,,,,,,2022-11-22,,,6538,6538,10.8%,6538,,,,,,RAND,2025-03-10,RAND,2025-03-10
-BMP Food Service Supply Holdco LLC,co_081ee2425789,First Lien,Food & Beverage,12%,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-BMP Food Service Supply Holdco LLC,co_081ee2425789,First Lien,Food & Beverage,3%,13%,,,,,2027-11-22,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-BMP Food Service Supply Holdco,co_081ee2425789,Preferred Equity,Food & Beverage,,,,,,2022-11-22,,,498,498,,498,,,,,,RAND,2025-03-10,RAND,2025-03-10
-BMP Food Service Supply,co_1ef41bef6ee5,Other,Food & Beverage,,,,,,,,,7036,7036,,7036,,,,,,RAND,2025-03-10,RAND,2025-03-10
-BMP Swanson Holdco LLC,co_6d3b5b8e0715,First Lien,,12%,,,,,2021-03-04,2028-05-31,,1700,1700,3.8%,1700,,,,,,RAND,2025-03-10,RAND,2025-03-10
-BMP Swanson Holdco,co_6d3b5b8e0715,Preferred Equity,,,,,,,2021-03-04,,,233,750,,233,,,,,,RAND,2025-03-10,RAND,2025-03-10
-BMP Swanson,co_43fcc61d9015,Other,,,,,,,,,,1933,2450,,1933,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Carolina Skiff LLC,co_2f37d97386c8,Other,,,,,,,2004-01-30,,,15,1208,1.8%,15,,,,,cost_suspicious_vs_size,RAND,2025-03-10,RAND,2025-03-10
-FCM Industries Holdco LLC,co_2709ecc477d5,First Lien,,13%,,,,,2023-07-31,2028-07-31,,3380,3380,5.2%,3380,,,,,,RAND,2025-03-10,RAND,2025-03-10
-FCM Industries Holdco LLC,co_2709ecc477d5,First Lien,,,10%,,,,2023-07-31,2033-07-31,,485,,,485,,,,,,RAND,2025-03-10,RAND,2025-03-10
-FCM Industries Holdco LLC,co_2709ecc477d5,Other,,,,,,,,,,3865,3380,,3865,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Filterworks Acquisition USA LLC,co_c28bd0ae2682,First Lien,,,,,,,2019-11-18,2025-03-31,,2929,2929,4.5%,2929,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Filterworks Acquisition USA LLC,co_c28bd0ae2682,First Lien,,6%,8%,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Filterworks Acquisition USA LLC,co_c28bd0ae2682,First Lien,,12%,2%,,,,,2026-03-31,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Filterworks Acquisition USA,co_c28bd0ae2682,Other Equity,,,,,,,2022-06-03,,,626,,,626,,,,626.2,,RAND,2025-03-10,RAND,2025-03-10
-Filterworks Acquisition USA,co_c28bd0ae2682,Other Equity,,,,,,,2022-09-30,,,139,,,139,,,,417.7,,RAND,2025-03-10,RAND,2025-03-10
-Filterworks Acquisition USA LLC,co_c28bd0ae2682,Other,,,,,,,,,,3694,2929,,3694,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Highland All About People Holdings Inc.,co_6fa73910faa9,First Lien,,12%,4%,,,,2023-08-07,2028-08-07,3000,3175,3175,5.8%,3175,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Highland All About People Holdings Inc.,co_6fa73910faa9,Other Equity,,,,,,,2023-08-07,,,1000,600,,1000,,,,1000000,,RAND,2025-03-10,RAND,2025-03-10
-Highland All About People Holdings Inc.,co_6fa73910faa9,Other,,,,,,,,,,4175,3775,,4175,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Inter-National Electronic Alloys LLC,co_710303987285,First Lien,Software & Technology,12%,2%,,,,2023-04-04,2028-04-04,,3372,3372,6.7%,3372,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Inter-National Electronic Alloys LLC,co_710303987285,Other Equity,Software & Technology,,,,,,2023-04-04,,,1012,1012,,1012,,,,75.3,,RAND,2025-03-10,RAND,2025-03-10
-Inter-National Electronic Alloys LLC,co_710303987285,Other,Software & Technology,,,,,,,,,4384,4384,,4384,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Mobile RN Holdings LLC,co_5e3b18176e3c,First Lien,,14%,1%,,,,2024-10-02,2029-10-02,,2506,2506,4.4%,2506,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Mobile RN Holdings LLC,co_5e3b18176e3c,Common Equity,,,,,,,2024-10-02,,,375,375,,375,,,,6375,,RAND,2025-03-10,RAND,2025-03-10
-Mobile RN Holdings LLC,co_5e3b18176e3c,Other,,,,,,,,,,2881,2881,,2881,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Pressure Pro Inc.,co_8cb3fd97beec,First Lien,,12%,3%,,,,2023-01-19,2028-01-19,,1703,1703,3.8%,1703,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Pressure Pro,co_8cb3fd97beec,Other Equity,,,,,,,2023-01-19,,,30,750,,30,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Pressure Pro Inc.,co_8cb3fd97beec,Other,,,,,,,,,,1733,2453,,1733,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Seybert’s Billiards Corp.,co_d82b00c7cd92,First Lien,,12%,2%,,,,2021-11-22,2026-01-19,,6168,6168,12.1%,6168,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Seybert’s Billiards Corp.,co_d82b00c7cd92,Other,,,,,,,2021-01-19,,,25,25,,25,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Seybert’s Billiards Corp.,co_d82b00c7cd92,First Lien,,12%,2%,,,,2021-01-19,2026-01-19,,1511,1511,,1511,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Seybert’s Billiards Corp.,co_d82b00c7cd92,Other Equity,,,,,,,2022-10-24,,,194,194,,194,,,,5.82,,RAND,2025-03-10,RAND,2025-03-10
-Seybert’s,co_356de4049a63,Other,,,,,,,,,,7923,7923,,7923,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Tilson Technology Management Inc.,co_04ab71fb578c,Preferred Equity,Software & Technology,,,,,,2015-01-20,,,600,4560,17.6%,600,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Tilson Technology Management Inc.,co_04ab71fb578c,Preferred Equity,Software & Technology,,,,,,2016-09-28,,,200,813,,200,,,,21391,,RAND,2025-03-10,RAND,2025-03-10
-Tilson Technology Management Inc.,co_04ab71fb578c,Preferred Equity,Software & Technology,,,,,,2017-09-29,,,800,2666,,800,,,,70176,,RAND,2025-03-10,RAND,2025-03-10
-Tilson Technology Management Inc.,co_04ab71fb578c,Preferred Equity,Software & Technology,,,,,,2019-03-15,,,500,584,,500,,,,15385,,RAND,2025-03-10,RAND,2025-03-10
-Tilson Technology Management Inc.,co_04ab71fb578c,Preferred Equity,Software & Technology,,,,,,2020-06-15,,,750,877,,750,,,,23077,,RAND,2025-03-10,RAND,2025-03-10
-Tilson Technology Management,co_04ab71fb578c,Other Equity,Software & Technology,,,,,,2023-02-16,,,250,1000,,250,,,,250,,RAND,2025-03-10,RAND,2025-03-10
-Tilson Technology Management Inc.,co_04ab71fb578c,Other,Software & Technology,,,,,,,,,3100,11500,,3100,,,,,,RAND,2025-03-10,RAND,2025-03-10
-ITA Acquisition LLC,co_0a929a15303f,First Lien,,3%,11%,,,,,2024-12-31,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-ITA Acquisition LLC,co_0a929a15303f,First Lien,,12%,2%,,,,,2026-06-21,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-ITA Acquisition LLC,co_0a929a15303f,First Lien,,,,,,,2021-06-22,,,3244,1643,3.8%,3244,,,,,,RAND,2025-03-10,RAND,2025-03-10
-ITA Acquisition LLC,co_0a929a15303f,First Lien,,,,,,,2021-06-22,,,1821,857,,1821,,,,,,RAND,2025-03-10,RAND,2025-03-10
-ITA Acquisition LLC,co_0a929a15303f,Common Equity,,,,,,,2021-06-22,,,1124,,,1124,,,,,,RAND,2025-03-10,RAND,2025-03-10
-ITA Acquisition LLC,co_0a929a15303f,Other,,,,,,,,,,6189,2500,,6189,,,,,,RAND,2025-03-10,RAND,2025-03-10
-ITA Acquisition LLC,co_0a929a15303f,First Lien,,3%,11%,,,,,,2298,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-ITA Acquisition LLC,co_0a929a15303f,First Lien,,3%,11%,,,,,,1500,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Applied Image Inc.,co_626ef61915c4,First Lien,,10%,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-BMP Food Service Supply Holdco LLC,co_081ee2425789,First Lien,Food & Beverage,,3%,,,,,2027-11-22,,,6538,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-BMP Food Service Supply Holdco LLC,co_081ee2425789,First Lien,Food & Beverage,13%,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-BMP Swanson Holdco LLC,co_6d3b5b8e0715,First Lien,,12%,,,,,,2028-05-31,,,1700,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-DSD Operating LLC,co_98ec730a6da4,First Lien,,12%,2%,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-FCM Industries Holdco LLC,co_2709ecc477d5,First Lien,,13%,,,,,,2028-07-31,3380,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-FCM Industries Holdco LLC,co_2709ecc477d5,First Lien,,,10%,,,,,2033-07-31,420,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Filterworks Acquisition USA LLC,co_c28bd0ae2682,First Lien,,6%,8%,,,,,2025-03-31,2284,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Filterworks Acquisition USA LLC,co_c28bd0ae2682,Other,,12%,2%,,,,,2026-03-31,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Inter-National Electronic Alloys LLC,co_710303987285,First Lien,Software & Technology,12%,2%,,,,,2028-04-04,3288,,3372,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Mobile RN Holdings LLC,co_5e3b18176e3c,First Lien,,14%,1%,,,,,2029-10-02,2500,,2506,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Pressure Pro Inc.,co_8cb3fd97beec,First Lien,,12%,3%,,,,,2028-01-19,3000,,1703,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-SciAps Inc.,co_5946973dd3f7,Subordinated Debt,,12%,,,,,,2024-08-20,2090,,2090,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Seybert’s Billiards Corp.,co_d82b00c7cd92,First Lien,,12%,2%,,,,,2026-01-19,6099,,6168,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Seybert’s Billiards Corp.,co_d82b00c7cd92,First Lien,,12%,2%,,,,,2026-01-19,1435,,1511,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Non-Control/Non-Affiliate Investments - Net assets,co_14e5779729a7,Other,Financial Services,,,,,,,,,,,25.5%,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Affiliate Investments – Net assets,co_8332bfa03f20,Other,Financial Services,,,,,,,,,,,79.1%,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Control Investments - 3.8% of net assets,co_6c4df61b1a43,Other,Financial Services,,,,,,,,,,,3.8%,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-LIABILITIES IN EXCESS OF OTHER ASSETS,co_bbd3cffede65,Other,,,,,,,,,,,,-8.4%,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Investments NET ASSETS - 100%,co_ddb04c5af604,Other,Financial Services,,,,,,,,,,,1%,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Control Investments,co_69924ecfa313,Other,Financial Services,,,,,,,,,,2500,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Carolina Skiff LLC,co_2f37d97386c8,Other,,,,,,,,,,,1208,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-FCM Industries Holdco LLC,co_2709ecc477d5,First Lien,,,,,,,,,,,3380,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-FCM Industries Holdco LLC,co_2709ecc477d5,First Lien,,,,,,,,,,,47,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-FCM Industries Holdco LLC,co_2709ecc477d5,Other,,,,,,,,,,,3380,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Inter-National Electronic Alloys LLC,co_710303987285,Other Equity,Software & Technology,,,,,,,,,,1012,,,,,,75.3,,RAND,2025-03-10,RAND,2025-03-10
-Knoa Software Inc.,co_62305eb71d79,Preferred Equity,Software & Technology,,,,,,,,,,,,,,,,973533,,RAND,2025-03-10,RAND,2025-03-10
-Knoa Software Inc.,co_62305eb71d79,Preferred Equity,Software & Technology,,,,,,,,,,1229,,,,,,1876922,,RAND,2025-03-10,RAND,2025-03-10
-Knoa Software Inc.,co_62305eb71d79,Other,Software & Technology,,,,,,,,,,1229,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Mezmeriz Inc.,co_8563e713093d,Preferred Equity,,,,,,,,,,,743,,,,,,1554565,,RAND,2025-03-10,RAND,2025-03-10
-Mobile RN Holdings LLC,co_5e3b18176e3c,Common Equity,,,,,,,,,,,375,,,,,,6375,,RAND,2025-03-10,RAND,2025-03-10
-Mobile RN Holdings LLC,co_5e3b18176e3c,Other,,,,,,,,,,,2881,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Seybert’s Billiards Corp.,co_d82b00c7cd92,Other,,,,,,,,,,,7923,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Affiliate Investments,co_92a36592f2b5,Other,Financial Services,,,,,,,,,,51668,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Control and Affiliate Investments,co_5c7400e1fb9b,Other,Financial Services,,,,,,,,,,54168,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-New investments Mattison Avenue Holdings LLC,co_4c217dfb1af1,Other,Financial Services,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-New investments Mountain Regional Equipment Solutions,co_cf6609e0d974,Other,Financial Services,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-New investments Mobile RN Holdings LLC,co_2429eff4d451,Other,Financial Services,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-New investments Seybert’s Billiards Corp.,co_79d2b64e8d13,Other,Financial Services,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-New investments ITA Acquisition LLC,co_0093e5f5b698,Other,Financial Services,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-New investments BMP Food Service Supply Holdco LLC,co_15203395977e,Other,Food & Beverage,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Total of new investments,co_843a5dce78cf,Other,,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Other changes to investments Caitec,co_c41033a8e724,Other Equity,Financial Services,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Other changes to investments ITA Acquisition,co_758cbcb93500,Other Equity,Financial Services,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Other changes to investments Filterworks Acquisition USA,co_212d69ca3670,Other Equity,Financial Services,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Other changes to investments BMP Swanson Holdco,co_f677cec0ea45,Other Equity,Financial Services,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Other changes to investments,co_c41033a8e724,Other Equity,Financial Services,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Other changes to investments Highland All About People Holdings,co_f302875f6f50,Other Equity,Financial Services,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Other changes to investments Mattison Avenue Holdings,co_0ea27c5cd26d,Other Equity,Financial Services,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Other changes to investments Pressure Pro,co_f161b1ca76bd,Other Equity,Financial Services,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Other changes to investments GoNoodle,co_8afa83fac87e,Other Equity,Financial Services,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Other changes to investments Mountain Regional Equipment Solutions OID amortization,co_ace3340ecab1,Other,,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Total of other changes to investments,co_70d6965d4319,Other,,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-repaid sold or liquidated Tilson Technology Management Inc.,co_5ccb08ff796a,Other,Software & Technology,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-repaid sold or liquidated DSD Operating LLC,co_c846cd9dc8ba,Other,,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-repaid sold or liquidated BMP Food Service Supply Holdco LLC,co_92f46de1dac4,Other,Food & Beverage,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-repaid sold or liquidated ACV Auctions Inc.,co_612151249959,Other,,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-repaid sold or liquidated Filterworks Acquisition USA LLC,co_9307ccaa5d43,Other,,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-repaid sold or liquidated Ares Capital Corp.,co_7428afe6dd92,Other,,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-repaid sold or liquidated Barings BDC Inc.,co_f9d9d503c715,Other,,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-repaid sold or liquidated Mezmeriz Inc.,co_d3df2cc05626,Other,,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-repaid sold or liquidated FS KKR Capital Corp.,co_77e3f8312a60,Other,,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-repaid sold or liquidated PennantPark Investment Corp.,co_927adb7176f4,Other,Financial Services,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-repaid sold or liquidated Carlyle Secured Lending Inc.,co_db08173c7f72,Other,Financial Services,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-repaid sold or liquidated Knoa Software Inc.,co_e1e3c66a0348,Other,Software & Technology,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-repaid sold or liquidated Pressure Pro Inc.,co_dc524c2901a2,Other,,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-repaid sold or liquidated Mattison Avenue Holdings LLC,co_ed0b3ae01ef9,Other,,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-repaid sold or liquidated Nailbiter Inc.,co_27e90badcca5,Other,,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-repaid sold or liquidated SciAps Inc.,co_5e0016437825,Other,,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Total of investments repaid sold liquidated or converted,co_c53f1471df9e,Other,,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-Net change in investments at cost and total realized gain,co_a40777ebb082,Other,Financial Services,,,,,,,,,,,,,,,,,,RAND,2025-03-10,RAND,2025-03-10
-BMP Food Service Supply Holdco LLC,,Second Lien,Business Services,,12 %,Fixed,,,2022-11-22,2027-11-22,,,6750796,10.7,6750796,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-BMP Food Service Supply Holdco LLC,,Preferred Equity,Business Services,,,N/A,,,2022-11-22,,,,250000,,497619,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-BMP Swanson Holdco LLC,,Other Debt,Business Services,,,Fixed,,,2021-03-04,2028-05-31,,,1700115,3.8,1700115,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-BMP Swanson Holdco LLC,,Preferred Equity,Business Services,,,N/A,,,2021-03-04,,,,750000,,233333,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Carolina Skiff LLC,,Common Equity,Industrials,,,N/A,,,2004-01-30,,,,1208000,1.8,15000,,,,,cost_suspicious_vs_size|dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-FCM Industries Holdco LLC,,Other Debt,Business Services,,,Fixed,,,2023-07-31,2028-07-31,,,3380000,5.2,3380000,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-FCM Industries Holdco LLC,,Other Debt,Business Services,,10 %,Fixed,,,2023-07-31,2033-07-31,,,12222,,497059,,,,,dspy_extracted|fair_value_suspicious_vs_size,RAND,2025-05-05,RAND,2025-05-05
-Highland All About People Holdings Inc.,,Other Debt,Business Services,,4 %,Fixed,,,2023-08-07,2028-08-07,,,3206842,5.8,3206842,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Highland All About People Holdings Inc.,,Common Equity,Business Services,,,N/A,,,2023-08-07,,,,600000,,1000000,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Inter-National Electronic Alloys LLC,,Other Debt,Distribution & Wholesale,,,Fixed,,,2023-04-04,2028-04-04,,,3372069,7.2,3372069,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Inter-National Electronic Alloys LLC,,Preferred Equity,Distribution & Wholesale,,,N/A,,,2023-04-04,,,,1300000,,1011765,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Mobile RN Holdings LLC,,Other Debt,Other,,1 %,Fixed,,,2024-10-02,2029-10-02,,,2512585,4.4,2512585,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Mobile RN Holdings LLC,,Common Equity,Other,,,N/A,,,2024-10-02,,,,375000,,375000,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Mountain Regional Equipment Solutions,,Other Debt,Distribution & Wholesale,,,Fixed,,,2024-01-16,2029-01-16,,,2624575,4.0,3076575,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Mountain Regional Equipment Solutions,,Common Equity,Distribution & Wholesale,,,N/A,,,2024-01-16,,,,,,204545,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Mountain Regional Equipment Solutions,,Warrants,Distribution & Wholesale,,,N/A,,,2024-01-16,,,,,,60000,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Seybert’s Billiards Corp.,,Other Debt,Consumer & Retail,,2 %,Fixed,,,2021-11-22,2026-01-19,,,6190840,12.6,6190840,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Seybert’s Billiards Corp.,,Warrants,Consumer & Retail,,,N/A,,,2021-01-19,,,,50000,,25000,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Seybert’s Billiards Corp.,,Other Debt,Consumer & Retail,,2 %,Fixed,,,2021-01-19,2026-01-19,,,1519897,,1519897,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Seybert’s Billiards Corp.,,Common Equity,Consumer & Retail,,,N/A,,,2022-10-24,,,,400000,,194000,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-ITA Acquisition LLC,,Other Debt,,,14%,,,,,2026-06-21,,,1415814,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-ITA Acquisition LLC,,Other Debt,,,14%,,,,,2026-06-21,,,584186,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-ITA Acquisition LLC,,Preferred Equity,,,,,,,,,,,,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Applied Image Inc.,,Other Debt,,10%,,,,,,2029-02-01,,,1750000,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Applied Image Inc.,,Warrants,,,,,,,,,,,,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Autotality,,Other Debt,,6%,8%,,,,,2026-03-31,,,2987221,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Autotality,,Partnership Interest,,,,,,,,,,,,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-BMP Food Service Supply Holdco LLC,,Other Debt,Food & Beverage,,12%,,,,,2027-11-22,,,6750796,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-BMP Food Service Supply Holdco LLC,,Preferred Equity,Food & Beverage,,,,,,,,,,250000,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-BMP Swanson Holdco LLC,,Other Debt,,12%,,,,,,2028-05-31,,,1700115,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-BMP Swanson Holdco LLC,,Preferred Equity,,,,,,,,,,,750000,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Carolina Skiff LLC,,Common Equity,,,,,,,,,,,1208000,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-FCM Industries Holdco LLC,,Other Debt,,13%,,,,,,2028-07-31,,,3380000,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-FCM Industries Holdco LLC,,Other Debt,,,10%,,,,,2033-07-31,,,12222,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Highland All About People Holdings Inc.,,Other Debt,,12%,4%,,,,,2028-08-07,,,3206842,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Highland All About People Holdings Inc.,,Common Equity,,,,,,,,,,,600000,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Inter-National Electronic Alloys LLC,,Other Debt,Software & Technology,12%,,,,,,2028-04-04,,,3372069,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Inter-National Electronic Alloys LLC,,Preferred Equity,Software & Technology,,,,,,,,,,1300000,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-Microcision LLC,,Warrants,,,,,,,,,,,,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
-BMP Food Service Supply Holdco LLC,,Second Lien,Business Services,,12 %,Fixed,,,2022-11-22,2027-11-22,4820000,,6973057,12.3,6973057,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-BMP Food Service Supply Holdco LLC,,Preferred Equity,Business Services,,,N/A,,,2022-11-22,,,,,,497619,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-BMP Swanson Holdco LLC,,Other Debt,Business Services,,,Fixed,,,2021-03-04,2028-05-31,1600000,,1700115,4.3,1700115,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-BMP Swanson Holdco LLC,,Preferred Equity,Business Services,,,N/A,,,2021-03-04,,,,750000,,233333,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Carolina Skiff LLC,,Common Equity,Industrials,,,N/A,,,2004-01-30,,,,765245,1.4,15000,,,,,cost_suspicious_vs_size|dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Carolina Skiff LLC,,Preferred Equity,Industrials,,,N/A,,,2025-04-29,,,,34755,,34755,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-FCM Industries Holdco LLC,,Other Debt,Business Services,,,Fixed,,,2023-07-31,2028-07-31,3380000,,3380000,6.9,3380000,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-FCM Industries Holdco LLC,,Other Debt,Business Services,,10 %,Fixed,,,2023-07-31,2033-07-31,420000,,509730,,509730,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Highland All About People Holdings Inc.,,Other Debt,Business Services,,4 %,Fixed,,,2023-08-07,2028-08-07,3000000,,3239267,6.8,3239267,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Highland All About People Holdings Inc.,,Common Equity,Business Services,,,N/A,,,2023-08-07,,,,600000,,1000000,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Inter-National Electronic Alloys LLC,,Other Debt,Distribution & Wholesale,,,Fixed,,,2023-04-04,2028-04-04,3288235,,3372069,8.6,3372069,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Inter-National Electronic Alloys LLC,,Preferred Equity,Distribution & Wholesale,,,N/A,,,2023-04-04,,,,1500000,,1011765,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Mobile RN Holdings LLC,,Other Debt,Other,,1 %,Fixed,,,2024-10-02,2029-10-02,2500000,,2518936,5.3,2518936,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Mobile RN Holdings LLC,,Common Equity,Other,,,N/A,,,2024-10-02,,,,500000,,375000,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Mountain Regional Equipment Solutions,,Other Debt,Distribution & Wholesale,,14 %,Fixed,,,2024-01-16,2029-01-16,3000000,,2000000,3.5,3191352,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Mountain Regional Equipment Solutions,,Common Equity,Distribution & Wholesale,,,N/A,,,2024-01-16,,,,,,204545,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Mountain Regional Equipment Solutions,,Warrants,Distribution & Wholesale,,,N/A,,,2024-01-16,,,,,,60000,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Seybert’s Billiards Corp.,,Other Debt,Consumer & Retail,12%,2%,Fixed,,,2021-11-22,2026-01-19,,6146184,6146184,14.3,6146184,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Seybert’s Billiards Corp.,,Warrants,Consumer & Retail,,,N/A,,,2021-01-19,,,25000,50000,,25000,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Seybert’s Billiards Corp.,,Other Debt,Consumer & Retail,12%,2%,Fixed,,,2021-01-19,2027-01-19,,1475794,1475794,,1475794,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Seybert’s Billiards Corp.,,Common Equity,Consumer & Retail,,,N/A,,,2022-10-24,,,194000,400000,,194000,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Tilson Technology Management Inc.,,Preferred Equity,Business Services,,,N/A,,,2015-01-20,,,600000,,3.5,600000,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Tilson Technology Management Inc.,,Preferred Equity,Business Services,,,N/A,,,2016-09-28,,,200000,,,200000,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Tilson Technology Management Inc.,,Preferred Equity,Business Services,,,N/A,,,2017-09-29,,,800000,,,800000,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Tilson Technology Management Inc.,,Preferred Equity,Business Services,,,N/A,,,2019-03-15,,,500012,,,500012,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Tilson Technology Management Inc.,,Preferred Equity,Business Services,,,N/A,,,2020-06-15,,,750003,,,750003,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Tilson Technology Management Inc.,,Partnership Interest,Business Services,,,N/A,,,2019-03-15,,,,1000000,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Tilson Technology Management Inc.,,Partnership Interest,Business Services,,,N/A,,,2023-02-16,,,250000,1000000,,250000,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-ITA Acquisition LLC,,Other Debt,Industrials,,14%,Fixed,,,2021-06-22,2026-06-21,,3619220,1415814,3.5,3619220,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-ITA Acquisition LLC,,Other Debt,Industrials,,14%,Fixed,,,2021-06-22,2026-06-21,,1820910,584186,,1820910,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-ITA Acquisition LLC,,Preferred Equity,Industrials,,,N/A,,,2021-06-22,,,1123810,,,1123810,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-ITA Acquisition LLC,,Other,,,,,,,,,,,1415814,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-ITA Acquisition LLC,,Other,,,,,,,,,,,584186,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-ITA Acquisition LLC,,Other,,,,,,,,,,,,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Applied Image Inc.,,Other,,,,,,,,,,,1750000,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Applied Image Inc.,,Warrants,,,,,,,,,,,,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Autotality,,Other Debt,,,,,,,,,,,3002323,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Autotality,,Partnership Interest,,,,,,,,,,,,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-BMP Food Service Supply Holdco LLC,,Other Debt,Food & Beverage,,,,,,,,,,6973057,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-BMP Food Service Supply Holdco LLC,,Preferred Equity,Food & Beverage,,,,,,,,,,,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-BMP Swanson Holdco LLC,,Other Debt,,,,,,,,,,,1700115,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-BMP Swanson Holdco LLC,,Preferred Equity,,,,,,,,,,,750000,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Carolina Skiff LLC,,Common Equity,,,,,,,,,,,765245,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Carolina Skiff LLC,,Preferred Equity,,,,,,,,,,,34755,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-FCM Industries Holdco LLC,,Other Debt,,,,,,,,,,,3380000,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-FCM Industries Holdco LLC,,Other Debt,,,,,,,,,,,509730,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Highland All About People Holdings Inc.,,Other Debt,,,,,,,,,,,3239267,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Highland All About People Holdings Inc.,,Partnership Interest,,,,,,,,,,,600000,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Inter-National Electronic Alloys LLC,,Other Debt,Software & Technology,,,,,,,,,,3372069,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Inter-National Electronic Alloys LLC,,Preferred Equity,Software & Technology,,,,,,,,,,1500000,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Microcision LLC,,Warrants,,,,,,,,,,,,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Mobile RN Holdings LLC,,Other Debt,Other,14%,1%,Fixed,,,,2029-10-02,2500000,,2518936,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Mobile RN Holdings LLC,,Common Equity,Other,,,N/A,,,,,,,500000,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Mountain Regional Equipment Solutions,,Other Debt,Industrials,14%,,Fixed,,,,2029-01-16,3000000,,2000000,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Mountain Regional Equipment Solutions,,Warrants,Industrials,,,N/A,,,,,,,,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-"Pressure Pro, Inc.",,Other Debt,Other,12%,3%,Fixed,,,,2028-01-19,3000000,,,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-"Pressure Pro, Inc.",,Warrants,Other,,,N/A,,,,,,,,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Seybert’s Billiards Corp.,,Other Debt,Other,12%,2%,Fixed,,,,2027-01-19,4299131,,6146184,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Seybert’s Billiards Corp.,,Other Debt,Other,14%,,Fixed,,,,2027-01-19,1800000,,6146184,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Seybert’s Billiards Corp.,,Warrants,Other,,,N/A,,,,,,,50000,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Seybert’s Billiards Corp.,,Other Debt,Other,12%,2%,Fixed,,,,2027-01-19,1435435,,1475794,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Seybert’s Billiards Corp.,,Common Equity,Other,,,N/A,,,,,,,400000,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Tilson Technology,,Preferred Equity,Software & Technology,,,N/A,,,,,,,,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-Tilson Technology,,Partnership Interest,Software & Technology,,,N/A,,,,,,,1000000,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
-BlackJet Direct Marketing LLC,,Other Debt,Business Services,14%,1%,Fixed,,,2025-09-12,2030-12-12,2250000,,2251187,4.7,2251187,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-BlackJet Direct Marketing LLC,,Preferred Equity,Business Services,,,N/A,,,,,,,250000,,250000,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-BMP Food Service Supply Holdco LLC,,Other Debt,Business Services,,12%,Fixed,,,2022-11-22,2027-11-22,6835000,,4259834,7.9,7591496,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-BMP Food Service Supply Holdco LLC,,Preferred Equity,Business Services,,,N/A,,,2022-11-22,,,,,,497619,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-BMP Swanson Holdco LLC,,Other Debt,Business Services,5%,7%,Fixed,,,2021-03-04,2028-03-31,1600000,,1721459,4.6,1721459,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-BMP Swanson Holdco LLC,,Preferred Equity,Business Services,,,N/A,,,2021-03-04,,,,750000,,233333,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Carolina Skiff LLC,,Common Equity,Industrials,,,N/A,,,2004-01-30,,,,765245,1.5,15000,,,,,cost_suspicious_vs_size|dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Carolina Skiff LLC,,Preferred Equity,Industrials,,,N/A,,,2025-04-29,,,,34755,,34755,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-FCM Industries Holdco LLC,,Other Debt,Business Services,13%,,Fixed,,,2023-07-31,2028-07-31,3380000,,3380000,7.3,3380000,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-FCM Industries Holdco LLC,,Other Debt,Business Services,10%,,Fixed,,,2023-07-31,2033-07-31,420000,,522868,,522868,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Highland All About People Holdings Inc.,,Other Debt,Business Services,12%,4%,Fixed,,,2023-08-07,2028-08-07,3000000,,3272380,7.2,3272380,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Highland All About People Holdings Inc.,,Common Equity,Business Services,,,N/A,,,2023-08-07,,,,600000,,1000000,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Inter-National Electronic Alloys LLC,,Other Debt,Distribution & Wholesale,12%,1%,Fixed,,,2023-04-04,2028-04-04,3288235,,3389246,9.1,3389246,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Inter-National Electronic Alloys LLC,,Preferred Equity,Distribution & Wholesale,,,N/A,,,2023-04-04,,,,1500000,,1011765,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Mobile RN Holdings LLC,,Other Debt,Healthcare,14%,1%,Fixed,,,2024-10-02,2029-10-02,2500000,,2525373,5.6,2525373,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Mobile RN Holdings LLC,,Common Equity,Healthcare,,,N/A,,,2024-10-02,,,,500000,,375000,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Mountain Regional Equipment Solutions,,Other Debt,Distribution & Wholesale,14%,,Fixed,,,2024-01-16,2029-01-16,3000000,,2120067,4.0,3311419,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Mountain Regional Equipment Solutions,,Common Equity,Distribution & Wholesale,,,N/A,,,2024-01-16,,,,,,204545,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Mountain Regional Equipment Solutions,,Warrants,Distribution & Wholesale,,,N/A,,,2024-01-16,,,,,,60000,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-ITA Acquisition LLC,,Other,,,14 %,Fixed,,,,2026-06-21,,,1415814,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-ITA Acquisition LLC,,Other,,,14 %,Fixed,,,,2026-06-21,,,584186,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-ITA Acquisition LLC,,Other,,,,N/A,,,,,,,,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Applied Image Inc.,,Other,,,,Fixed,,,,2029-02-01,,,1750000,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Applied Image Inc.,,Other,,,,N/A,,,,,,,,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Autotality,,Other,,,11 %,Fixed,,,,2026-03-31,,,3063454,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Autotality,,Other,,,,N/A,,,,,,,,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-BlackJet Direct Marketing LLC,,Other,Business Services,,1 %,Fixed,,,,2030-12-12,,,2251187,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-BlackJet Direct Marketing LLC,,Other,Business Services,,,N/A,,,,,,,250000,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-BMP Food Service Supply Holdco LLC,,Other,Food & Beverage,,12 %,Fixed,,,,2027-11-22,,,4259834,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-BMP Food Service Supply Holdco LLC,,Other,Food & Beverage,,,N/A,,,,,,,,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-BMP Swanson Holdco LLC,,Other,,,7 %,Fixed,,,,2028-03-31,,,1721459,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-BMP Swanson Holdco LLC,,Other,,,,N/A,,,,,,,750000,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Carolina Skiff LLC,,Other,,,,N/A,,,,,,,765245,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Carolina Skiff LLC,,Other,,,,N/A,,,,,,,34755,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-FCM Industries Holdco LLC,,Other,,,,Fixed,,,,2028-07-31,,,3380000,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-FCM Industries Holdco LLC,,Other,,,10 %,Fixed,,,,2033-07-31,,,522868,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Highland All About People Holdings Inc.,,Other,,,4 %,Fixed,,,,2028-08-07,,,3272380,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Highland All About People Holdings Inc.,,Other,,,,N/A,,,,,,,600000,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Inter-National Electronic Alloys,,Other Debt,Software & Technology,12%,1%,Fixed,,,,2028-04-04,,,3389246,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Inter-National Electronic Alloys,,Preferred Equity,Software & Technology,,,N/A,,,,,,,1500000,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Microcision LLC,,Warrants,,,,N/A,,,,,,,,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Mobile RN Holdings LLC,,Other Debt,,14%,1%,Fixed,,,,2029-10-02,,,2525373,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Mobile RN Holdings LLC,,Common Equity,,,,N/A,,,,,,,500000,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Mountain Regional Equipment Solutions,,Other Debt,Industrials,14%,,Fixed,,,,2029-01-16,,,2120067,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Mountain Regional Equipment Solutions,,Warrants,Industrials,,,N/A,,,,,,,,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-"Pressure Pro, Inc.",,Other Debt,,12%,3%,Fixed,,,,2028-01-19,,,,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-"Pressure Pro, Inc.",,Warrants,,,,N/A,,,,,,,,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Seybert’s Billiards Corp.,,Other Debt,,12%,2%,Fixed,,,,2027-01-19,,,,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Seybert’s Billiards Corp.,,Warrants,,,,N/A,,,,,,,50000,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-Seybert’s Billiards Corp.,,Common Equity,,,,N/A,,,,,,,400000,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-"Tilson Technology Management, Inc.",,Preferred Equity,Software & Technology,,,N/A,,,,,,,,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
-"Tilson Technology Management, Inc.",,Partnership Interest,Software & Technology,,,N/A,,,,,,,,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
+BMP Food Service Supply Holdco LLC,Other Debt,Business Services,,12 %,Fixed,,,2022-11-22,2027-11-22,,6750.796,6750.796,10.7,6750.796,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+BMP Food Service Supply Holdco LLC,Preferred Equity,Business Services,,,N/A,,,2022-11-22,,,497.619,250.0,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+BMP Swanson Holdco LLC,Term Note,Business Services,12 %,,Fixed,,,2021-03-04,2028-05-31,1600.0,1700.115,1700.115,3.8,1700.115,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+BMP Swanson Holdco LLC,Preferred Equity,Business Services,,,N/A,,,2021-03-04,,,233.333,750.0,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+Carolina Skiff LLC,Common Equity,Manufacturing,,,N/A,,,2004-01-30,,,15.0,1208.0,1.8,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+FCM Industries Holdco LLC,Term Note,Business Services,13 %,,Fixed,,,2023-07-31,2028-07-31,3380.0,3380.0,3380.0,5.2,3380.0,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+FCM Industries Holdco LLC,Convertible Note,Business Services,10 %,,Fixed,,,2023-07-31,2033-07-31,420.0,497.059,12.222,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+Highland All About People Holdings Inc,Term Note,Business Services,12 %,4 %,Fixed,,,2023-08-07,2028-08-07,3000.0,3206.842,3206.842,5.8,3206.842,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+Highland All About People Holdings Inc,Common Equity,Business Services,,,N/A,,,2023-08-07,,,1000.0,600.0,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+Inter-National Electronic Alloys LLC d/b/a EFINEA,Term Note,Other,12 %,,Fixed,,,2023-04-04,2028-04-04,3288.235,3372.069,3372.069,7.2,3372.069,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+Inter-National Electronic Alloys LLC d/b/a EFINEA,Preferred Equity,Other,,,N/A,,,2023-04-04,,,1011.765,1300.0,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+Mobile RN Holdings LLC d/b/a Mobile IV Nurses,Term Note,Other,14 %,1 %,Fixed,,,2024-10-02,2029-10-02,2500.0,2512.585,2512.585,4.4,2512.585,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+Mobile RN Holdings LLC d/b/a Mobile IV Nurses,Common Equity,Other,,,N/A,,,2024-10-02,,,375.0,375.0,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+Mountain Regional Equipment Solutions,Term Note,Other,14 %,,Fixed,,,2024-01-16,2029-01-16,3000.0,3076.575,2624.575,4.0,3076.575,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+Mountain Regional Equipment Solutions,Common Equity,Other,,,N/A,,,2024-01-16,,,204.545,,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+Mountain Regional Equipment Solutions,Warrants,Other,,,N/A,,,2024-01-16,,,60.0,,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+Seybert’s Billiards Corporation d/b/a The Rack Group,Term Note,Consumer Products,12 %,2 %,Fixed,,,2021-11-22,2026-01-19,6099.131,6190.84,6190.84,12.6,6190.84,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+Seybert’s Billiards Corporation d/b/a The Rack Group,Warrants,Consumer Products,,,N/A,,,2021-01-19,,,25.0,50.0,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+Seybert’s Billiards Corporation d/b/a The Rack Group,Term Note,Consumer Products,12 %,2 %,Fixed,,,2021-01-19,2026-01-19,1435.435,1519.897,1519.897,,1519.897,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+Seybert’s Billiards Corporation d/b/a The Rack Group,Common Equity,Consumer Products,,,N/A,,,2022-10-24,,,194.0,400.0,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+ITA Acquisition LLC,Other,,,14%,,,,,2026-06-21,,,1415.814,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+Applied Image Inc.,Other,,10%,,,,,,2029-02-01,,,1750.0,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+Autotality (formerly Filterworks Acquisition USA LLC),Other,,6%,8%,,,,,2026-03-31,,,2987.221,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+BMP Food Service Supply Holdco LLC,Other,,,12%,,,,,2027-11-22,,,6750.796,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+BMP Food Service Supply Holdco LLC,Other,,,,,,,,,,,250.0,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+BMP Swanson Holdco LLC,Other,,12%,,,,,,2028-05-31,,,1700.115,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+BMP Swanson Holdco LLC,Other,,,,,,,,,,,750.0,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+Carolina Skiff LLC,Other,,,,,,,,,,,1208.0,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+FCM Industries Holdco LLC,Other,,13%,,,,,,2028-07-31,,,3380.0,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+FCM Industries Holdco LLC,Other,,10%,,,,,,2033-07-31,,,12.222,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+Highland All About People Holdings Inc.,Other,,12%,4%,,,,,2028-08-07,,,3206.842,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+Highland All About People Holdings Inc.,Other,,,,,,,,,,,600.0,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+Inter-National Electronic Alloys,Other,,12%,,,,,,2028-04-04,,,3372.069,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+Inter-National Electronic Alloys,Other,,,,,,,,,,,1300.0,,,,,,,dspy_extracted,RAND,2025-05-05,RAND,2025-05-05
+BMP Food Service Supply Holdco LLC,Other Debt,Business Services,,12 %,Fixed,,,2022-11-22,2027-11-22,4820.0,6973.057,6973.057,12.3,6973.057,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+BMP Swanson Holdco LLC,Other Debt,Business Services,,,Fixed,,,2021-03-04,2028-05-31,1600.0,1700.115,1700.115,4.3,1700.115,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+BMP Swanson Holdco LLC,Partnership Interest,Business Services,,,N/A,,,2021-03-04,,,750000.0,,,233333.0,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Carolina Skiff LLC,Common Equity,Manufacturing,,,N/A,,,2004-01-30,,,765245.0,,1.4,15000.0,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Carolina Skiff LLC,Preferred Equity,Manufacturing,,,N/A,,,2025-04-29,,,34755.0,34755.0,,34755.0,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+FCM Industries Holdco LLC,Other Debt,Business Services,,,Fixed,,,2023-07-31,2028-07-31,3380.0,3380.0,3380.0,6.9,3380.0,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+FCM Industries Holdco LLC,Other Debt,Business Services,,10 %,Fixed,,,2023-07-31,2033-07-31,420.0,509730.0,509730.0,,509730.0,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Highland All About People Holdings Inc,Other Debt,Business Services,,4 %,Fixed,,,2023-08-07,2028-08-07,3000.0,3239.267,3239.267,6.8,3239.267,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Highland All About People Holdings Inc,Common Equity,Business Services,,,N/A,,,2023-08-07,,,600000.0,,,1000.0,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Inter-National Electronic Alloys LLC d/b/a EFINEA,Other Debt,Other,,,Fixed,,,2023-04-04,2028-04-04,3288.235,3372.069,3372.069,8.6,3372.069,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Inter-National Electronic Alloys LLC d/b/a EFINEA,Preferred Equity,Other,,,N/A,,,2023-04-04,,,1500.0,,,1011.765,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Mobile RN Holdings LLC d/b/a Mobile IV Nurses,Other Debt,Other,,1 %,Fixed,,,2024-10-02,2029-10-02,2500.0,2518.936,2518.936,5.3,2518.936,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Mobile RN Holdings LLC d/b/a Mobile IV Nurses,Common Equity,Other,,,N/A,,,2024-10-02,,,500000.0,,,375000.0,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Mountain Regional Equipment Solutions,Other Debt,Distribution,,14 %,Fixed,,,2024-01-16,2029-01-16,3000.0,3191.352,2000.0,3.5,3191.352,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Seybert’s Billiards Corporation d/b/a The Rack Group,Other Debt,Consumer Products,12%,2%,Fixed,,,2021-11-22,2026-01-19,,6146.184,6146.184,14.3,6146.184,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Seybert’s Billiards Corporation d/b/a The Rack Group,Warrants,Consumer Products,,,N/A,,,2021-01-19,,,25.0,50.0,,25.0,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Seybert’s Billiards Corporation d/b/a The Rack Group,Other Debt,Consumer Products,12%,2%,Fixed,,,2021-01-19,2027-01-19,,1475.794,1475.794,,1475.794,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Seybert’s Billiards Corporation d/b/a The Rack Group,Common Equity,Consumer Products,,,N/A,,,2022-10-24,,,194.0,400.0,,194.0,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Tilson Technology Management Inc,Preferred Equity,Business Services,,,N/A,,,2015-01-20,,,600.0,,3.5,600.0,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Tilson Technology Management Inc,Partnership Interest,Business Services,,,N/A,,,2019-03-15,,,,1000.0,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+ITA Acquisition LLC,Other Debt,Manufacturing,,14%,Fixed,,,2021-06-22,2026-06-21,,3619.22,1415.814,3.5,3619.22,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+ITA Acquisition LLC,Preferred Equity,Manufacturing,,,N/A,,,2021-06-22,,,1123.81,,,1123.81,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+ITA Acquisition LLC,Other,,,14 %,Fixed,,,,,,,1415.814,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+ITA Acquisition LLC,Other,,,14 %,Fixed,,,,,,,584.186,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Applied Image Inc.,Other Debt,,10 %,,Fixed,,,,2029-02-01,1750.0,,1750.0,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Autotality (formerly Filterworks Acquisition USA LLC),Other Debt,,,2 %,Fixed,,,,2026-03-31,2283.702,,3002.323,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+BMP Food Service Supply Holdco LLC,Other Debt,,,12 %,Fixed,,,,2027-11-22,7035.0,,6973.057,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+BMP Swanson Holdco LLC,Preferred Equity,,,,N/A,,,,,,,750.0,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Carolina Skiff LLC,Common Equity,,,,N/A,,,,,,,765.245,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Carolina Skiff LLC,Preferred Equity,,,,N/A,,,,,,,34.755,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+FCM Industries Holdco LLC,Convertible Note,,,10 %,Fixed,,,,2033-07-31,420.0,,509.73,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Highland All About People Holdings Inc.,Other Debt,,,4 %,Fixed,12 %,,,2028-08-07,3000.0,,3239.267,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Highland All About People Holdings Inc.,Common Equity,,,,N/A,,,,,,,600.0,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Inter-National Electronic Alloys LLC,Other Debt,,12 %,,Fixed,,,,2028-04-04,3288.235,,3372.069,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Inter-National Electronic Alloys LLC,Preferred Equity,,,,N/A,,,,,,,1500.0,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Mobile RN Holdings LLC,Other Debt,,14%,1%,Fixed,,,,2029-10-02,2500.0,,2518.936,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Mobile RN Holdings LLC,Common Equity,,,,N/A,,,,,,,500.0,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+"Pressure Pro, Inc.",Other Debt,,12%,3%,Fixed,,,,2028-01-19,3000.0,,,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Seybert’s Billiards Corporation,Other Debt,,12%,2%,Fixed,,,,2027-01-19,4299.131,,6146.184,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Seybert’s Billiards Corporation,Warrants,,,,N/A,,,,,,,50.0,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Seybert’s Billiards Corporation,Other Debt,,12%,2%,Fixed,,,,2027-01-19,1435.435,,1475.794,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+Seybert’s Billiards Corporation,Common Equity,,,,N/A,,,,,,,400.0,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+"Tilson Technology Management, Inc.",Partnership Interest,,,,N/A,,,,,,,1000.0,,,,,,,dspy_extracted,RAND,2025-08-04,RAND,2025-08-04
+BlackJet Direct Marketing LLC,Other Debt,Marketing & Advertising,14%,1%,Fixed,,,2025-09-12,2030-12-12,2250.0,,2251.187,4.7,2251.187,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+BlackJet Direct Marketing LLC,Preferred Equity,Marketing & Advertising,,,N/A,,,,,,,250.0,,250.0,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+BMP Food Service Supply Holdco LLC,Other Debt,Business Services,,12%,Fixed,,,2022-11-22,2027-11-22,6835.0,,4259.834,7.9,7591.496,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+BMP Swanson Holdco LLC,Other Debt,Business Services,5%,7%,Fixed,,,2021-03-04,2028-03-31,1600.0,,1721.459,4.6,1721.459,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+BMP Swanson Holdco LLC,Preferred Equity,Business Services,,,N/A,,,2021-03-04,,,,750.0,,233.333,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+Carolina Skiff LLC,Common Equity,Manufacturing,,,N/A,,,2004-01-30,,,,765.245,1.5,15.0,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+Carolina Skiff LLC,Preferred Equity,Manufacturing,,,N/A,,,2025-04-29,,,,34.755,,34.755,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+FCM Industries Holdco LLC,Other Debt,Business Services,13%,,Fixed,,,2023-07-31,2028-07-31,3380.0,,3380.0,7.3,3380.0,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+FCM Industries Holdco LLC,Other Debt,Business Services,10%,,Fixed,,,2023-07-31,2033-07-31,420.0,,522.868,,522.868,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+Highland All About People Holdings Inc,Other Debt,Business Services,12%,4%,Fixed,,,2023-08-07,2028-08-07,3000.0,,3272.38,7.2,3272.38,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+Highland All About People Holdings Inc,Common Equity,Business Services,,,N/A,,,2023-08-07,,,,600.0,,1000.0,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+Inter-National Electronic Alloys LLC d/b/a EFINEA,Other Debt,Other,12%,1%,Fixed,,,2023-04-04,2028-04-04,3288.235,,3389.246,9.1,3389.246,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+Inter-National Electronic Alloys LLC d/b/a EFINEA,Preferred Equity,Other,,,N/A,,,2023-04-04,,,,1500.0,,1011.765,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+Mobile RN Holdings LLC d/b/a Mobile IV Nurses,Other Debt,Healthcare Services,14%,1%,Fixed,,,2024-10-02,2029-10-02,2500.0,,2525.373,5.6,2525.373,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+Mobile RN Holdings LLC d/b/a Mobile IV Nurses,Common Equity,Healthcare Services,,,N/A,,,2024-10-02,,,,500.0,,375.0,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+Mountain Regional Equipment Solutions,Other Debt,Distribution,14%,,Fixed,,,2024-01-16,2029-01-16,3000.0,,2120.067,4.0,3311.419,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+ITA Acquisition LLC,Other,,,14 %,,,,,,,,1415.814,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+ITA Acquisition LLC,Other,,,14 %,,,,,,,,584.186,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+Applied Image Inc.,Other Debt,,,,,,,,,,,1750.0,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+Autotality (formerly Filterworks Acquisition USA LLC),Other Debt,,,11 %,,,,,,,,3063.454,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+BlackJet Direct Marketing LLC,Other Debt,,,1 %,,,,,,,,2251.187,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+BlackJet Direct Marketing LLC,Preferred Equity,,,,N/A,,,,,,,250.0,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+BMP Food Service Supply Holdco LLC,Other Debt,,,12 %,,,,,,,,4259.834,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+BMP Swanson Holdco LLC,Other Debt,,,7 %,,,,,,,,1721.459,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+BMP Swanson Holdco LLC,Preferred Equity,,,,N/A,,,,,,,750.0,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+FCM Industries Holdco LLC,Other Debt,,,,,,,,,,,3380.0,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+FCM Industries Holdco LLC,Other Debt,,,10 %,,,,,,,,522.868,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+Highland All About People Holdings Inc.,Other Debt,,,4 %,,,,,,,,3272.38,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+Highland All About People Holdings Inc.,Partnership Interest,,,,N/A,,,,,,,600.0,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+Inter-National Electronic Alloys,Other Debt,Other,12 %,1 %,Fixed,,,,2028-04-04,,,3389.246,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+Inter-National Electronic Alloys,Preferred Equity,Other,,,N/A,,,,,,,1500.0,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+Mobile RN Holdings LLC,Other Debt,Other,14 %,1 %,Fixed,,,,2029-10-02,,,2525.373,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+Mobile RN Holdings LLC,Common Equity,Other,,,N/A,,,,,,,500.0,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+Mountain Regional Equipment Solutions,Other Debt,Other,14 %,,Fixed,,,,2029-01-16,,,2120.067,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+Seybert’s Billiards Corporation,Warrants,Other,,,N/A,,,,,,,50.0,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+Seybert’s Billiards Corporation,Common Equity,Other,,,N/A,,,,,,,400.0,,,,,,,dspy_extracted,RAND,2025-11-07,RAND,2025-11-07
+Bauer Sheet Metal and Fabricating Inc.,Other Debt,Manufacturing,13%,,Fixed,,,2025-10-24,2030-10-24,3250,3238.600,3238.600,6.2,3238.600,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+Bauer Sheet Metal and Fabricating Inc.,Warrants,Manufacturing,,,N/A,,,,,,12.000,12.000,,12.000,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+BlackJet Direct Marketing LLC,Other Debt,Marketing & Advertising,14%,1%,Fixed,,,2025-09-12,2030-12-12,2250,2256.941,2256.941,5.3,2256.941,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+BlackJet Direct Marketing LLC,Preferred Equity,Marketing & Advertising,,,N/A,,,,,,250.000,500.000,,250.000,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+BMP Food Service Supply Holdco LLC,Other Debt,Business Services,,12%,Fixed,,,2022-11-22,2027-11-22,6835,7591.496,3859.834,7.4,7591.496,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+BMP Food Service Supply Holdco LLC,Preferred Equity,Business Services,,,N/A,,,2022-11-22,,,497.619,,,497.619,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+BMP Swanson Holdco LLC,Other Debt,Business Services,5%,7%,Fixed,,,2021-03-04,2027-03-31,1600,1754.587,1754.587,4.8,1754.587,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+BMP Swanson Holdco LLC,Preferred Equity,Business Services,,,N/A,,,2021-03-04,,,233.333,750.000,,233.333,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+Carolina Skiff LLC,Common Equity,Manufacturing,,,N/A,,,2004-01-30,,,15.000,765.245,1.5,15.000,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+FCM Industries Holdco LLC,Other Debt,Business Services,13%,,Fixed,,,2023-07-31,2028-07-31,3380,3380.000,3380.000,7.5,3380.000,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+FCM Industries Holdco LLC,Other Debt,Business Services,10%,,Fixed,,,2023-07-31,2033-07-31,420,536.344,536.344,,536.344,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+Highland All About People Holdings Inc.,Other Debt,Business Services,12%,4%,Fixed,,,2023-08-07,2028-08-07,3000,3305.831,3305.831,7.5,3305.831,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+Highland All About People Holdings Inc.,Common Equity,Business Services,,,N/A,,,2023-08-07,,,1000.000,600.000,,1000.000,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+Inter-National Electronic Alloys LLC d/b/a EFINEA,Other Debt,Other,12%,,Fixed,,,2023-04-04,2028-04-04,3288.235,3389.246,3389.246,9.9,3389.246,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+Inter-National Electronic Alloys LLC d/b/a EFINEA,Preferred Equity,Other,,,N/A,,,2023-04-04,,,1011.765,1800.000,,1011.765,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+Mobile RN Holdings LLC d/b/a Mobile IV Nurses,Other Debt,Other,14%,1%,Fixed,,,2024-10-02,2029-10-02,2500,2531.827,2531.827,5.8,2531.827,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+Mobile RN Holdings LLC d/b/a Mobile IV Nurses,Common Equity,Other,,,N/A,,,2024-10-02,,,375.000,500.000,,375.000,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+ITA Acquisition LLC,Other Debt,,,14%,N/A,,,,,,,931.395,,,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+ITA Acquisition LLC,Other Debt,,,14%,N/A,,,,,,,468.605,,,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+Applied Image Inc.,Other Debt,,,,N/A,,,,,,,1750.000,,,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+Autotality (formerly Filterworks Acquisition USA LLC),Other Debt,,,14%,N/A,,,,,,,3149.571,,,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+Bauer Sheet Metal and Fabricating Inc.,Other Debt,,,,N/A,,,,,,,3238.600,,,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+BlackJet Direct Marketing LLC,Other Debt,,,1%,N/A,,,,,,,2256.941,,,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+BMP Food Service Supply Holdco LLC,Other Debt,,,12%,N/A,,,,,,,3859.834,,,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+BMP Swanson Holdco LLC,Other Debt,,,7%,N/A,,,,,,,1754.587,,,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+FCM Industries Holdco LLC,Other Debt,,,,N/A,,,,,,,3380.000,,,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+FCM Industries Holdco LLC,Other Debt,,,10%,N/A,,,,,,,536.344,,,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+Highland All About People Holdings Inc.,Other,,12 %,4 %,,,,,2028-08-07,,,3305.831,,,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+Highland All About People Holdings Inc.,Other,,,,,,,,,,,600.000,,,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+Inter-National Electronic Alloys,Other,,12 %,,,,,,2028-04-04,,,3389.246,,,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+Inter-National Electronic Alloys,Other,,,,,,,,,,,1800.000,,,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+Mobile RN Holdings LLC,Other,,14 %,1 %,,,,,2029-10-02,,,2531.827,,,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+Mobile RN Holdings LLC,Other,,,,,,,,,,,500.000,,,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+Mountain Regional Equipment Solutions,Other,,14 %,,,,,,2029-01-16,,,1400.000,,,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+Seybert’s Billiards Corporation,Other,,,,,,,,,,,470.367,,,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05
+Seybert’s Billiards Corporation,Other,,,,,,,,,,,354.925,,,,,,,dspy_extracted,RAND,2026-03-05,RAND,2026-03-05

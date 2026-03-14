@@ -1,127 +1,135 @@
 company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
-"EBR Systems, Inc.",First Lien,Healthcare,8.90%,,Prime,4.90%,8.90%,2022-06-30,2027-06-15,40000,40509,41011,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-"Mingle Healthcare Solutions, Inc.",First Lien,Healthcare,12.26%,,SOFR,9.75%,12.26%,2018-08-15,2026-12-15,4127,4757,2363,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-"Moximed, Inc.",First Lien,Healthcare,8.75%,,Prime,5.25%,8.75%,2022-06-24,2027-07-01,15000,15198,15427,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-"Onward Medical, N.V.",First Lien,Healthcare,10.75%,,SOFR,6.50%,10.75%,2024-06-28,2028-06-15,17088,16833,17080,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-"Route 92 Medical, Inc.",First Lien,Healthcare,9.00%,,SOFR,7.00%,9.00%,2025-03-31,2029-03-31,35000,34317,34746,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-"Madison Reed, Inc.",First Lien,Consumer & Retail,12.50%,,Prime,5.00%,12.50%,2025-08-29,2029-08-29,40000,39230,39234,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-"Kin Insurance, Inc.",First Lien,Insurance,12.00%,,Prime,5.00%,12.00%,2025-08-13,2029-08-13,45000,43782,43786,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-"Skillshare, Inc.",First Lien,Media & Entertainment,10.96%,,SOFR,6.75%,10.96%,2025-08-15,2029-02-08,12614,12458,12462,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-"Snap! Mobile, Inc.",First Lien,Media & Entertainment,12.10%,,SOFR,7.50%,12.10%,2024-09-30,2028-09-30,18000,17699,17724,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-3PL Central LLC,First Lien,Software & Technology,9.00%,,SOFR,7.00%,9.00%,2022-11-09,2026-03-31,72290,75421,70266,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-"Digicert, Inc.",First Lien,Software & Technology,6.50%,,SOFR,5.75%,6.50%,2025-07-30,2030-07-30,9327,9191,9362,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-"Digicert, Inc.",First Lien,Software & Technology,6.50%,,SOFR,5.75%,6.50%,2025-07-30,2030-07-30,,,-,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Circadence Corp.,First Lien,Software & Technology,12.26%,,SOFR,9.50%,12.26%,2018-12-20,2025-12-15,22002,23352,19358,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-"Synack, Inc.",First Lien,Software & Technology,11.07%,,SOFR,7.00%,11.07%,2023-12-29,2028-12-29,45000,44887,45074,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-"Brivo, Inc.",First Lien,Software & Technology,11.29%,,SOFR,7.25%,11.29%,2024-12-27,2029-12-15,40000,39856,41003,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Dejero Labs Inc.,Second Lien,Software & Technology,8.50%,2.00%,SOFR,8.00%,8.50%,2021-12-22,2025-12-22,14685,15036,14967,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-"Linxup, LLC",First Lien,Software & Technology,11.75%,,Prime,3.25%,11.75%,2023-11-03,2027-11-15,30000,29983,30655,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Aria Systems Inc.,Other Equity,Software & Technology,,,N/A,,,2018-07-10,,,,323,,250,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-VTX Holdings LLC,Other Equity,Software & Technology,,,N/A,,,2024-12-12,,,,23,,143,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-FiscalNote Inc.,Other Equity,Business Services,,,N/A,,,2020-10-19,,,,89,,438,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-JobGet Holdings Inc.,Other Equity,Business Services,,,N/A,,,2024-11-15,,,,27200,,39275,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Marley Spoon SE,Other Equity,Food & Beverage,,,N/A,,,2023-07-07,,,,19,,410,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-CareCloud Inc.,Other Equity,Healthcare,8.75%,,N/A,,,2020-01-08,,,,9669,,12132,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Minute Media Inc.,Other Equity,Media & Entertainment,,,N/A,,,2023-12-13,,,,171,,120,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Minute Media Inc.,Other Equity,Media & Entertainment,,,N/A,,,2023-12-13,,,,21,,16,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Allurion Technologies Inc.,Warrants,Healthcare,,,N/A,,,2021-03-30,2031-03-30,5320,,-,,282,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Allurion Technologies Inc.,Warrants,Healthcare,,,N/A,,,2022-06-14,2031-03-30,1851,,-,,141,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Allurion Technologies Inc.,Warrants,Healthcare,,,N/A,,,2022-09-15,2032-09-15,1850,,-,,144,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Allurion Technologies Inc.,Warrants,Healthcare,,,N/A,,,2023-08-02,2028-08-01,,,-,,-,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-EBR Systems Inc.,Warrants,Healthcare,,,N/A,,,2022-06-30,2032-06-30,,,602,,605,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Mingle Healthcare Solutions Inc.,Warrants,Healthcare,,,N/A,,,2018-08-15,2028-08-15,1770973,,-,,492,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Moximed Inc.,Warrants,Healthcare,,,N/A,,,2022-06-24,2032-06-24,214285,,28,,175,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-Nalu Medical Inc.,Warrants,Healthcare,,,N/A,,,2022-10-12,2032-10-12,91717,,30,,173,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-Onward Medical N.V.,Warrants,Healthcare,,,N/A,,,2024-06-28,2034-09-26,165338,,459,,340,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-Route 92 Medical Inc.,Warrants,Healthcare,,,N/A,,,2025-03-31,2035-03-31,,,649,,833,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-SetPoint Medical Corp.,Warrants,Healthcare,,,N/A,,,2021-06-29,2031-06-29,400000,,142,,14,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-SetPoint Medical Corp.,Warrants,Healthcare,,,N/A,,,2022-12-29,2032-12-29,600000,,213,,74,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-VERO Biotech LLC,Warrants,Healthcare,,,N/A,,,2020-12-29,2025-12-29,,,-,,377,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Madison Reed Inc.,Warrants,Consumer & Retail,,,N/A,,,2025-08-29,,,,414,,404,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Kin Insurance Inc.,Warrants,Insurance,,,N/A,,,2022-09-26,2032-09-26,62364,,374,,426,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
+EBR Systems Inc.,Senior Secured,Healthcare Equipment & Services,8.90 %,,Prime,4.90 %,8.90 %,2022-06-30,2027-06-15,40000,,41011,,40509,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Mingle Healthcare Solutions Inc.,Senior Secured,Healthcare Equipment & Services,12.26 %,,SOFR,9.75 %,12.26 %,2018-08-15,2026-12-15,4127,,2363,,4757,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Moximed Inc.,Senior Secured,Healthcare Equipment & Services,8.75 %,,Prime,5.25 %,8.75 %,2022-06-24,2027-07-01,15000,,15427,,15198,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Onward Medical N.V.,Senior Secured,Healthcare Equipment & Services,10.75 %,,SOFR,6.50 %,10.75 %,2024-06-28,2028-06-15,17088,,17080,,16833,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Route 92 Medical Inc.,Senior Secured,Healthcare Equipment & Services,9.00 %,,SOFR,7.00 %,9.00 %,2025-03-31,2029-03-31,35000,,34746,,34317,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Madison Reed Inc.,Senior Secured,Household & Personal Products,12.50 %,,Prime,5.00 %,12.50 %,2025-08-29,2029-08-29,40000,,39234,,39230,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Kin Insurance Inc.,Senior Secured,Insurance,12.00 %,,Prime,5.00 %,12.00 %,2025-08-13,2029-08-13,45000,,43786,,43782,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Skillshare Inc.,Senior Secured,Media & Entertainment,10.96 %,,SOFR,6.75 %,10.96 %,2025-08-15,2029-02-08,12614,,12462,,12458,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Snap! Mobile Inc.,Senior Secured,Media & Entertainment,12.10 %,,SOFR,7.50 %,12.10 %,2024-09-30,2028-09-30,18000,,17724,,17699,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+3PL Central LLC (dba Extensiv),Senior Secured,Systems Software,9.00 %,,SOFR,7.00 %,9.00 %,2022-11-09,2026-03-31,72290,,70266,,75421,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Digicert Inc.,Senior Secured,Systems Software,6.50 %,,SOFR,5.75 %,6.50 %,2025-07-30,2030-07-30,9327,,9362,,9191,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Digicert Inc.,Senior Secured,Systems Software,6.50 %,,SOFR,5.75 %,6.50 %,2025-07-30,2030-07-30,,,-,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Circadence Corporation,Senior Secured,Systems Software,12.26 %,,SOFR,9.50 %,12.26 %,2018-12-20,2025-12-15,22002,,19358,,23352,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Synack Inc.,Senior Secured,Systems Software,11.07 %,,SOFR,7.00 %,11.07 %,2023-12-29,2028-12-29,45000,,45074,,44887,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Brivo Inc.,Senior Secured,Technology Hardware & Equipment,11.29 %,,SOFR,7.25 %,11.29 %,2024-12-27,2029-12-15,40000,,41003,,39856,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Dejero Labs Inc.,Second Lien,Technology Hardware & Equipment,8.50 %,2.00 %,SOFR,8.00 %,8.50 %,2021-12-22,2025-12-22,14685,,14967,,15036,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Linxup LLC,Senior Secured,Technology Hardware & Equipment,11.75 %,,Prime,3.25 %,11.75 %,2023-11-03,2027-11-15,30000,,30655,,29983,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Aria Systems Inc.,Preferred Equity,Software,,,N/A,,,2018-07-10,,289419,,323,,250,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+VTX Holdings LLC,Preferred Equity,Software,,,N/A,,,2024-12-12,,3015219,,23,,143,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+FiscalNote Inc.,Common Equity,Business Services,,,N/A,,,2020-10-19,,19240,,89,,438,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+JobGet Holdings Inc. (fka Snagajob.com Inc.),Preferred Equity,Business Services,,,N/A,,,2024-11-15,,476564,,27200,,39275,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+JobGet Holdings Inc. (fka Snagajob.com Inc.),Preferred Equity,Business Services,,,N/A,,,2024-11-15,,16963,,,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Marley Spoon SE,Common Equity,Retail,,,N/A,,,2023-07-07,,46004,,19,,410,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+CareCloud Inc.,Preferred Equity,Healthcare Services,8.75%,,N/A,,,2020-01-08,,462064,,9669,,12132,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Minute Media Inc.,Preferred Equity,Media & Entertainment,,,N/A,,,2023-12-13,,1039,,171,,120,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Minute Media Inc.,Common Equity,Media & Entertainment,,,N/A,,,2023-12-13,,136,,21,,16,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Allurion Technologies Inc.,Warrants,Health Care Equipment & Services,,,N/A,,,2021-03-30,2031-03-30,5320,,-,,282,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Allurion Technologies Inc.,Warrants,Health Care Equipment & Services,,,N/A,,,2022-06-14,2031-03-30,1851,,-,,141,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Allurion Technologies Inc.,Warrants,Health Care Equipment & Services,,,N/A,,,2022-09-15,2032-09-15,1850,,-,,144,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Allurion Technologies Inc.,Warrants,Health Care Equipment & Services,,,N/A,,,2023-08-02,2028-08-01,,,-,,-,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+EBR Systems Inc.,Warrants,Health Care Equipment & Services,,,N/A,,,2022-06-30,2032-06-30,,,602,,605,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Mingle Healthcare Solutions Inc.,Warrants,Health Care Equipment & Services,,,N/A,,,2018-08-15,2028-08-15,1770973,,-,,492,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Moximed Inc.,Warrants,Health Care Equipment & Services,,,N/A,,,2022-06-24,2032-06-24,214285,,28,,175,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Nalu Medical Inc.,Warrants,Health Care Equipment & Services,,,N/A,,,2022-10-12,2032-10-12,91717,,30,,173,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Onward Medical N.V.,Warrants,Health Care Equipment & Services,,,N/A,,,2024-06-28,2034-09-26,165338,,459,,340,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Route 92 Medical Inc.,Warrants,Health Care Equipment & Services,,,N/A,,,2025-03-31,2035-03-31,,,649,,833,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+SetPoint Medical Corporation,Warrants,Health Care Equipment & Services,,,N/A,,,2021-06-29,2031-06-29,400000,,142,,14,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+SetPoint Medical Corporation,Warrants,Health Care Equipment & Services,,,N/A,,,2022-12-29,2032-12-29,600000,,213,,74,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+VERO Biotech LLC,Warrants,Health Care Equipment & Services,,,N/A,,,2020-12-29,2025-12-29,,,-,,377,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Madison Reed Inc.,Warrants,Household & Personal Products,,,N/A,,,2025-08-29,,,,414,,404,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Kin Insurance Inc.,Warrants,Insurance,,,N/A,,,2022-09-26,2032-09-26,62364,,374,,426,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
 Kin Insurance Inc.,Warrants,Insurance,,,N/A,,,2025-08-13,2035-08-13,15928,,819,,818,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
 Skillshare Inc.,Warrants,Media & Entertainment,,,N/A,,,2025-08-15,,,,309,,337,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Snap! Mobile Inc.,Warrants,Media & Entertainment,,,N/A,,,2024-09-30,2034-09-30,19140,,293,,345,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-Mustang Bio Inc.,Warrants,Healthcare,,,N/A,,,2022-03-04,2032-03-04,997,,-,,315,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Circadence Corp.,Warrants,Software & Technology,,,N/A,,,2018-12-20,2028-12-20,1538462,,-,,3630,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Circadence Corp.,Warrants,Software & Technology,,,N/A,,,2019-10-31,2029-10-31,384615,,-,,846,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Circadence Corp.,Warrants,Software & Technology,,,N/A,,,2023-12-21,,,,433,,304,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Scale Computing Inc.,Warrants,Software & Technology,,,N/A,,,2019-03-29,2029-03-29,9665667,,-,,346,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Synack Inc.,Warrants,Software & Technology,,,N/A,,,2023-12-29,2032-06-30,131521,,191,,168,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-Brivo Inc.,Warrants,Software & Technology,,,N/A,,,2022-10-20,2032-10-20,201000,,371,,98,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-Brivo Inc.,Warrants,Software & Technology,,,N/A,,,2024-12-27,2034-12-27,32109,,59,,43,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-Dejero Labs Inc.,Warrants,Software & Technology,,,N/A,,,2019-05-31,2029-05-31,333621,,125,,192,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-Linxup LLC,Warrants,Software & Technology,,,N/A,,,2023-11-03,2033-11-03,,,241,,253,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-RealWear Inc.,Warrants,Software & Technology,,,N/A,,,2018-10-05,2028-10-05,73746,,134,,89,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-RealWear Inc.,Warrants,Software & Technology,,,N/A,,,2018-10-05,2028-10-05,38705,,1,,47,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-RealWear Inc.,Warrants,Software & Technology,,,N/A,,,2018-12-28,2028-12-28,14749,,27,,16,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-RealWear Inc.,Warrants,Software & Technology,,,N/A,,,2018-12-28,2028-12-28,7742,,-,,9,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-RealWear Inc.,Warrants,Software & Technology,,,N/A,,,2019-06-27,2029-06-27,81251,,61,,250,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-RealWear Inc.,Warrants,Software & Technology,,,N/A,,,2019-06-27,2029-06-27,42643,,1,,131,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-EBR Systems Inc.,First Lien,Healthcare,8.90 %,,Prime,4.90 %,8.90 %,2022-06-30,2027-06-15,40000,,40511,,40037,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Mingle Healthcare Solutions Inc.,First Lien,Healthcare,12.26 %,,SOFR,9.75 %,12.26 %,2018-08-15,2026-12-15,4322,,2148,,4952,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Nalu Medical Inc.,First Lien,Healthcare,6.70 %,2.00 %,Prime,2.70 %,6.70 %,2022-10-12,2027-10-12,20902,,21431,,21047,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Onward Medical N.V.,First Lien,Healthcare,10.75 %,,SOFR,6.50 %,10.75 %,2024-06-28,2028-06-15,17088,,16786,,16682,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Route 92 Medical Inc.,First Lien,Healthcare,8.98 %,,SOFR,8.48 %,8.98 %,2021-08-17,2026-07-01,35000,,35682,,34983,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-SetPoint Medical Corp.,First Lien,Healthcare,9.00 %,,SOFR,5.75 %,9.00 %,2022-12-29,2027-12-01,25000,,25817,,25236,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-JobGet Holdings Inc.,First Lien,Business Services,9.00 %,8.50 %,SOFR,,9.00 %,2021-09-29,2025-11-15,3732,,3431,,3774,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Madison Reed Inc.,First Lien,Consumer & Retail,11.00 %,,Prime,4.75 %,11.00 %,2022-12-16,2026-12-16,16234,,16383,,16235,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Marley Spoon SE,First Lien,Consumer & Retail,9.26 %,8.50 %,SOFR,,9.26 %,2021-06-30,2027-06-15,38809,,34120,,38807,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Bombora Inc.,First Lien,Software & Technology,6.75 %,3.25 %,SOFR,4.75 %,6.75 %,2023-12-26,2028-01-15,28911,,29058,,28876,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-CarNow Inc.,First Lien,Software & Technology,11.75 %,,SOFR,7.25 %,11.75 %,2024-03-22,2029-03-22,20000,,17658,,17791,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Skillshare Inc.,First Lien,Software & Technology,10.72 %,,SOFR,6.50 %,10.72 %,2022-11-08,2026-11-08,27600,,27555,,27875,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Synack Inc.,First Lien,Software & Technology,11.07 %,,SOFR,7.00 %,11.07 %,2023-12-29,2028-12-29,42500,,42520,,42331,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Zinnia Corporate Holdings LLC,First Lien,Software & Technology,10.00 %,,SOFR,8.00 %,10.00 %,2024-09-23,2029-09-21,40000,,39244,,39244,,,,,dspy_extracted|type_hint_corporate_from_name,RWAY,2025-11-06,RWAY,2025-11-06
-Kin Insurance Inc.,First Lien,Insurance,12.50 %,,Prime,6.25 %,12.50 %,2022-09-26,2026-09-15,75000,,76626,,75912,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-3PL Central LLC,First Lien,Software & Technology,6.50 %,2.50 %,SOFR,4.50 %,6.50 %,2022-11-09,2027-11-09,72205,,69262,,72307,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Linxup LLC,First Lien,Software & Technology,11.75 %,,Prime,3.25 %,11.75 %,2023-11-03,2027-11-15,30000,,30607,,29779,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Dejero Labs Inc.,Second Lien,Software & Technology,8.50 %,2.00 %,SOFR,8.00 %,8.50 %,2021-12-22,2025-12-22,14463,,14403,,14696,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Mustang Bio Inc.,Warrants,Healthcare,,,N/A,,,2022-03-04,2032-03-04,49869,,4,,315,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-TRACON Pharmaceuticals Inc.,Warrants,Healthcare,,,N/A,,,2022-09-02,2032-09-02,7538,,-,,226,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Massdrop Inc.,Warrants,Consumer & Retail,,,N/A,,,2019-07-22,2029-07-22,848093,,-,,183,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Elevate Services Inc.,Warrants,Software & Technology,,,N/A,,,2023-07-10,2033-07-10,248997,,398,,447,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-Elevate Services Inc.,Warrants,Software & Technology,,,N/A,,,2024-07-17,2034-07-17,74700,,119,,118,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-Interactions Corp.,Warrants,Software & Technology,,,N/A,,,2022-06-24,2032-06-24,189408,,13,,219,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-Predactiv Inc.,Warrants,Software & Technology,,,N/A,,,2018-12-03,2028-12-03,647615,,90,,2162,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-Brivo Inc.,Warrants,Software & Technology,,,N/A,,,2022-10-20,2032-10-20,201000,,269,,98,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-Brivo Inc.,Warrants,Software & Technology,,,N/A,,,2024-12-27,2034-12-27,32109,,43,,43,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-Epic IO Technologies Inc.,Warrants,Software & Technology,,,N/A,,,2021-12-17,2028-12-17,,,334,,505,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Moximed Inc.,Warrants,Healthcare,,,N/A,,,2022-06-24,2032-06-24,214285,,24,,175,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-Allurion Technologies Inc.,Warrants,Healthcare,,,N/A,,,2021-03-30,2031-03-30,132979,,1,,282,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-Allurion Technologies Inc.,Warrants,Healthcare,,,N/A,,,2022-06-14,2031-03-30,46256,,-,,141,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-EBR Systems Inc.,Warrants,Healthcare,,,N/A,,,2022-06-30,2032-06-30,,,617,,605,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Nalu Medical Inc.,Warrants,Healthcare,,,N/A,,,2022-10-12,2032-10-12,91717,,70,,173,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-Onward Medical N.V.,Warrants,Healthcare,,,N/A,,,2024-06-28,2034-09-26,165338,,417,,340,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-Route 92 Medical Inc.,Warrants,Healthcare,,,N/A,,,2021-08-17,2031-08-17,,,784,,835,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-SetPoint Medical Corp.,Warrants,Healthcare,,,N/A,,,2021-06-29,2031-06-29,400000,,223,,14,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-SetPoint Medical Corp.,Warrants,Healthcare,,,N/A,,,2022-12-29,2032-12-29,600000,,334,,74,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-VERO Biotech LLC,Warrants,Healthcare,,,N/A,,,2020-12-29,2025-12-29,,,114,,377,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-CloudPay Inc.,Warrants,Business Services,,,N/A,,,2020-06-30,2030-06-30,11273,,1343,,218,,,,,cost_suspicious_vs_size|dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-CloudPay Inc.,Warrants,Business Services,,,N/A,,,2021-08-17,2031-08-17,3502,,89,,52,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-CloudPay Inc.,Warrants,Business Services,,,N/A,,,2022-09-26,2032-09-26,5252,,134,,176,,,,,cost_suspicious_vs_size|dspy_extracted|fair_value_suspicious_vs_size,RWAY,2025-11-06,RWAY,2025-11-06
-JobGet Holdings Inc.,Warrants,Business Services,,,N/A,,,2021-09-29,2031-09-29,763269,,-,,343,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Madison Reed Inc.,Warrants,Consumer & Retail,,,N/A,,,2022-12-16,,,,183,,209,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Bombora Inc.,Warrants,Software & Technology,,,N/A,,,2021-03-31,2031-03-31,,,135,,174,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Bombora Inc.,Warrants,Software & Technology,,,N/A,,,2023-12-26,2033-12-26,,,54,,43,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-CarNow Inc.,Warrants,Software & Technology,,,N/A,,,2024-03-22,2034-03-22,,,2825,,2400,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Fidelis Cybersecurity Inc.,Warrants,Software & Technology,,,N/A,,,2022-03-25,2032-03-25,,,-,,79,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-INRIX Inc.,Warrants,Software & Technology,,,N/A,,,2019-07-26,2029-07-26,,,344,,522,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-JWP Holdco LLC,Warrants,Software & Technology,,,N/A,,,2019-12-12,2029-12-12,,,158,,47,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Skillshare Inc.,Warrants,Software & Technology,,,N/A,,,2022-11-08,,,,367,,301,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Synack Inc.,Warrants,Software & Technology,,,N/A,,,2023-12-29,2032-06-30,,,186,,158,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Kin Insurance Inc.,Warrants,Insurance,,,N/A,,,2022-09-26,2032-09-26,,,285,,426,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-AllClear ID Inc.,Warrants,Consumer & Retail,,,N/A,,,2017-08-31,2027-08-31,,,-,,1053,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Credit Sesame Inc.,Warrants,Consumer & Retail,,,N/A,,,2020-01-07,2030-01-07,,,365,,425,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Dejero Labs Inc.,Warrants,Software & Technology,,,N/A,,,2019-05-31,2029-05-31,,,177,,192,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Linxup LLC,Warrants,Software & Technology,,,N/A,,,2023-11-03,2033-11-03,,,201,,253,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Scale Computing Inc.,Warrants,Software & Technology,,,N/A,,,2019-03-29,2029-03-29,,,-,,346,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-RealWear Inc.,Warrants,Software & Technology,,,N/A,,,2018-10-05,2028-10-05,,,206,,136,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-RealWear Inc.,Warrants,Software & Technology,,,N/A,,,2018-12-28,2028-12-28,,,41,,25,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-RealWear Inc.,Warrants,Software & Technology,,,N/A,,,2019-06-27,2029-06-27,,,136,,381,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Gynesonics Inc.,First Lien,,8.75%,5.00%,SOFR,8.75%,,,2026-11-30,,,0,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Coginiti Corp.,Common Equity,,,,N/A,,,,,,,0,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Gynesonics Inc.,Preferred Equity,,,,N/A,,,,,,,0,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Coginiti Corp.,Warrants,,,,N/A,,,,,,,0,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Gynesonics Inc.,Warrants,,,,N/A,,,,,,,0,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Pivot3 Inc.,Common Equity,,,,N/A,,,,,,,1194,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
-Runway-Cadma I LLC,Partnership Interest,,,,N/A,,,,,,,12855,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Snap! Mobile Inc.,Warrants,Media & Entertainment,,,N/A,,,2024-09-30,2034-09-30,19140,,293,,345,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Mustang Bio Inc.,Warrants,Pharmaceuticals & Biotechnology,,,N/A,,,2022-03-04,2032-03-04,997,,-,,315,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Circadence Corporation,Warrants,Software,,,N/A,,,2018-12-20,2028-12-20,1538.462,,-,,3.630,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Circadence Corporation,Warrants,Software,,,N/A,,,2019-10-31,2029-10-31,384.615,,-,,0.846,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Circadence Corporation,Warrants,Software,,,N/A,,,2023-12-21,,,,0.433,,0.304,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Scale Computing Inc.,Warrants,Software,,,N/A,,,2019-03-29,2029-03-29,9665.667,,-,,0.346,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Synack Inc.,Warrants,Software,,,N/A,,,2023-12-29,2032-06-30,131.521,,0.191,,0.168,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Brivo Inc.,Warrants,Technology Hardware,,,N/A,,,2022-10-20,2032-10-20,201.000,,0.371,,0.098,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Brivo Inc.,Warrants,Technology Hardware,,,N/A,,,2024-12-27,2034-12-27,32.109,,0.059,,0.043,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Dejero Labs Inc.,Warrants,Technology Hardware,,,N/A,,,2019-05-31,2029-05-31,333.621,,0.125,,0.192,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Linxup LLC,Warrants,Technology Hardware,,,N/A,,,2023-11-03,2033-11-03,,,0.241,,0.253,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+RealWear Inc.,Warrants,Technology Hardware,,,N/A,,,2018-10-05,2028-10-05,73.746,,0.134,,0.089,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+RealWear Inc.,Warrants,Technology Hardware,,,N/A,,,2018-10-05,2028-10-05,38.705,,0.001,,0.047,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+RealWear Inc.,Warrants,Technology Hardware,,,N/A,,,2018-12-28,2028-12-28,14.749,,0.027,,0.016,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+RealWear Inc.,Warrants,Technology Hardware,,,N/A,,,2018-12-28,2028-12-28,7.742,,-,,0.009,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+RealWear Inc.,Warrants,Technology Hardware,,,N/A,,,2019-06-27,2029-06-27,81.251,,0.061,,0.250,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+RealWear Inc.,Warrants,Technology Hardware,,,N/A,,,2019-06-27,2029-06-27,42.643,,0.001,,0.131,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+EBR Systems Inc.,Other Debt,Healthcare Technology,,,Prime,4.90 %,8.90 %,2022-06-30,2027-06-15,40000,40037,40511,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Mingle Healthcare Solutions Inc.,Other Debt,Healthcare Technology,,,SOFR,9.75 %,12.26 %,2018-08-15,2026-12-15,4322,4952,2148,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Nalu Medical Inc.,Other Debt,Healthcare Technology,,2.00 %,Prime,2.70 %,6.70 %,2022-10-12,2027-10-12,20902,21047,21431,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Onward Medical N.V.,Other Debt,Healthcare Technology,,,SOFR,6.50 %,10.75 %,2024-06-28,2028-06-15,17088,16682,16786,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Route 92 Medical Inc.,Other Debt,Healthcare Technology,,,SOFR,8.48 %,8.98 %,2021-08-17,2026-07-01,35000,34983,35682,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+SetPoint Medical Corporation,Other Debt,Healthcare Technology,,,SOFR,5.75 %,9.00 %,2022-12-29,2027-12-01,25000,25236,25817,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+JobGet Holdings Inc. (fka Snagajob.com Inc),Other Debt,Human Resource & Employment Services,,8.50 %,SOFR,,9.00 %,2021-09-29,2025-11-15,3732,3774,3431,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Madison Reed Inc.,Other Debt,Internet & Direct Marketing Retail,,,Prime,4.75 %,11.00 %,2022-12-16,2026-12-16,16234,16235,16383,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Marley Spoon SE,Other Debt,Internet & Direct Marketing Retail,,8.50 %,SOFR,,9.26 %,2021-06-30,2027-06-15,38809,38807,34120,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Bombora Inc.,Other Debt,Internet Software and Services,,3.25 %,SOFR,4.75 %,6.75 %,2023-12-26,2028-01-15,28911,28876,29058,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+CarNow Inc.,Other Debt,Internet Software and Services,,,SOFR,7.25 %,11.75 %,2024-03-22,2029-03-22,20000,17791,17658,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Skillshare Inc.,Other Debt,Internet Software and Services,,,SOFR,6.50 %,10.72 %,2022-11-08,2026-11-08,27600,27875,27555,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Synack Inc.,Other Debt,Internet Software and Services,,,SOFR,7.00 %,11.07 %,2023-12-29,2028-12-29,42500,42331,42520,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Zinnia Corporate Holdings LLC,Other Debt,Internet Software and Services,,,SOFR,8.00 %,10.00 %,2024-09-23,2029-09-21,40000,39244,39244,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Kin Insurance Inc.,Other Debt,Property & Casualty Insurance,,,Prime,6.25 %,12.50 %,2022-09-26,2026-09-15,75000,75912,76626,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+3PL Central LLC (dba Extensiv),Other Debt,System Software,,2.50 %,SOFR,4.50 %,6.50 %,2022-11-09,2027-11-09,72205,72307,69262,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Linxup LLC,Other Debt,System Software,,,Prime,3.25 %,11.75 %,2023-11-03,2027-11-15,30000,29779,30607,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Dejero Labs Inc.,Other Debt,System Software,,2.00 %,SOFR,8.00 %,8.50 %,2021-12-22,2025-12-22,14463,14696,14403,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Mustang Bio, Inc.",Warrants,Pharmaceuticals & Biotechnology,,,N/A,,,2022-03-04,2032-03-04,49869,,4,,315,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"TRACON Pharmaceuticals, Inc.",Warrants,Pharmaceuticals & Biotechnology,,,N/A,,,2022-09-02,2032-09-02,7538,,-,,226,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Massdrop, Inc.",Warrants,Retail,,,N/A,,,2019-07-22,2029-07-22,848093,,-,,183,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Elevate Services, Inc.",Warrants,Business Services,,,N/A,,,2023-07-10,2033-07-10,248997,,398,,447,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Elevate Services, Inc.",Warrants,Business Services,,,N/A,,,2024-07-17,2034-07-17,74700,,119,,118,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Interactions Corporation,Warrants,Business Services,,,N/A,,,2022-06-24,2032-06-24,189408,,13,,219,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Predactiv, Inc. (fka Sharethis, Inc.)",Warrants,Business Services,,,N/A,,,2018-12-03,2028-12-03,647615,,90,,2162,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Brivo, Inc.",Warrants,Business Services,,,N/A,,,2022-10-20,2032-10-20,201000,,269,,98,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Brivo, Inc.",Warrants,Business Services,,,N/A,,,2024-12-27,2034-12-27,32109,,43,,43,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Epic IO Technologies, Inc.",Warrants,Technology Hardware,,,N/A,,,2021-12-17,2028-12-17,,,334,,505,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Moximed, Inc.",Warrants,Medical Devices & Equipment,,,N/A,,,2022-06-24,2032-06-24,214285,,24,,175,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Allurion Technologies, Inc.",Warrants,Healthcare Technology,,,N/A,,,2021-03-30,2031-03-30,132979,,1,,282,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Allurion Technologies, Inc.",Warrants,Healthcare Technology,,,N/A,,,2022-06-14,2031-03-30,46256,,-,,141,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Allurion Technologies, Inc.",Warrants,Healthcare Technology,,,N/A,,,2023-08-02,2028-08-01,,,-,,-,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"EBR Systems, Inc.",Warrants,Medical Devices & Equipment,,,N/A,,,2022-06-30,2032-06-30,,,617,,605,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Mingle Healthcare Solutions, Inc.",Warrants,Healthcare Technology,,,N/A,,,2018-08-15,2028-08-15,1770973,,-,,492,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Nalu Medical, Inc.",Warrants,Medical Devices & Equipment,,,N/A,,,2022-10-12,2032-10-12,91717,,70,,173,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Onward Medical, N.V.",Warrants,Medical Devices & Equipment,,,N/A,,,2024-06-28,2034-09-26,165338,,417,,340,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Route 92 Medical, Inc.",Warrants,Medical Devices & Equipment,,,N/A,,,2021-08-17,2031-08-17,,,784,,835,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"CloudPay, Inc.",Warrants,Business Services,,,N/A,,,2020-06-30,2030-06-30,11273,,1343,,218,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"CloudPay, Inc.",Warrants,Business Services,,,N/A,,,2021-08-17,2031-08-17,3502,,89,,52,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"CloudPay, Inc.",Warrants,Business Services,,,N/A,,,2022-09-26,2032-09-26,5252,,134,,176,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"JobGet Holdings, Inc. (fka Snagajob.com, Inc.)",Warrants,Business Services,,,N/A,,,2021-09-29,2031-09-29,763269,,-,,343,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Madison Reed, Inc.",Warrants,Internet & Direct Marketing Retail,,,N/A,,,2022-12-16,,,,183,,209,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Bombora, Inc.",Warrants,Internet Software and Services,,,N/A,,,2021-03-31,2031-03-31,,,135,,174,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Bombora, Inc.",Warrants,Internet Software and Services,,,N/A,,,2023-12-26,2033-12-26,,,54,,43,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"CarNow, Inc.",Warrants,Internet Software and Services,,,N/A,,,2024-03-22,2034-03-22,,,2825,,2400,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"INRIX, Inc.",Warrants,Internet Software and Services,,,N/A,,,2019-07-26,2029-07-26,,,344,,522,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"JWP Holdco LLC (fka Longtail Ad Solutions, Inc.)",Warrants,Internet Software and Services,,,N/A,,,2019-12-12,2029-12-12,,,158,,47,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Skillshare, Inc.",Warrants,Internet Software and Services,,,N/A,,,2022-11-08,,,,367,,301,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Synack, Inc.",Warrants,Internet Software and Services,,,N/A,,,2023-12-29,2032-06-30,,,186,,158,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Kin Insurance, Inc.",Warrants,Property & Casualty Insurance,,,N/A,,,2022-09-26,2032-09-26,,,285,,426,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Credit Sesame, Inc.",Warrants,Specialized Consumer Services,,,N/A,,,2020-01-07,2030-01-07,,,365,,425,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Dejero Labs Inc.,Warrants,System Software,,,N/A,,,2019-05-31,2029-05-31,,,177,,192,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"Linxup, LLC",Warrants,System Software,,,N/A,,,2023-11-03,2033-11-03,,,201,,253,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"RealWear, Inc.",Warrants,"Technology Hardware, Storage & Peripherals",,,N/A,,,2018-10-05,2028-10-05,,,206,,136,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"RealWear, Inc.",Warrants,"Technology Hardware, Storage & Peripherals",,,N/A,,,2018-12-28,2028-12-28,,,41,,25,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+"RealWear, Inc.",Warrants,"Technology Hardware, Storage & Peripherals",,,N/A,,,2019-06-27,2029-06-27,,,136,,381,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Gynesonics Inc,First Lien,Other,8.75%,,SOFR,8.75%,,,2026-11-30,,,0,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Coginiti Corp,Common Equity,Other,,,N/A,,,,,,,0,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Gynesonics Inc,Preferred Equity,Other,,,N/A,,,,,,,0,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Coginiti Corp,Warrants,Other,,,N/A,,,,,,,0,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Gynesonics Inc,Warrants,Other,,,N/A,,,,,,,0,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Pivot3 Inc,Common Equity,Other,,,N/A,,,,,,,1194,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Runway-Cadma I LLC,Partnership Interest,Other,,,N/A,,,,,,,12855,,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Application Software,Other,Software,,,,,,,,,,224762,45.91,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Systems Software,Other,Software,,,,,,,,,,144684,29.56,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Health Care Equipment & Services,Other,Healthcare Services,,,,,,,,,,122419,25.01,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Commercial & Professional Services,Other,Business Services,,,,,,,,,,116424,23.77,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Technology Hardware & Equipment,Other,Technology Hardware,,,,,,,,,,87645,17.91,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Financial Services,Other,Financial Services,,,,,,,,,,81683,16.69,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Insurance,Other,Insurance,,,,,,,,,,44979,9.20,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Consumer Staples Distribution & Retail,Other,Retail,,,,,,,,,,39885,8.14,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Household & Personal Products,Other,Consumer Products,,,,,,,,,,39648,8.09,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Media & Entertainment,Other,Media & Entertainment,,,,,,,,,,30980,6.33,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06
+Multi-Sector Holdings (1),Other,Diversified,,,,,,,,,,12855,2.63,,,,,,dspy_extracted,RWAY,2025-11-06,RWAY,2025-11-06

@@ -7,7 +7,7 @@ How we get BDC holdings, portfolio company profiles, and keep things updated goi
 ## Repo cleanup (done)
 
 - **Removed:** All `*.BEFORE.csv` backup files from `frontend/public/data/investments/*/` (no longer needed after company_id rollout).
-- **Moved to `docs/`:** EXTRACTION_ISSUES.md, FRONTEND_VALUE_DISPLAY_FIX.md, MISSING_METRICS.md, FINAL_CLEANUP_SUMMARY.md (reference only; root is cleaner).
+- **Docs cleanup:** `docs/README.md` now defines active vs reference docs; operations tracking is consolidated in `docs/OPERATIONS.md`.
 - **`.gitignore`:** Added `nul` to avoid accidentally committing Windows nul device.
 - **Company name cleaning:** Trailing rate/date suffixes (e.g. `L+775 1.50% LIBOR Floor 4/7/2022`) and instrument suffixes are stripped so variants resolve to one company (see `src/processing/standardization_rules.py`).
 
@@ -69,7 +69,7 @@ Goal: add the rest of the BDCs from `process_all_bdcs.py`’s list and build por
 
 Before locking in “going forward” automation, it helps to tidy the repo so the pipeline is obvious and maintainable.
 
-- **Docs:** Keep pipeline and roadmap in one place (this file); point README or QUICK_START to it. Archive or merge one-off notes (e.g. EXTRACTION_ISSUES, MISSING_METRICS, FRONTEND_VALUE_DISPLAY_FIX) into a single “ops” or “known issues” doc if useful.
+- **Docs:** Keep pipeline and roadmap in one place (this file). Keep live issue tracking in `docs/OPERATIONS.md` and avoid one-off status files.
 - **Scripts:** 
   - Single entry point for “full run for N BDCs”: `process_all_bdcs.py` (already there).
   - Clear split: extraction/consolidation vs. company resolution vs. profile building, so you can run resolution after name-rule changes and profiles in batches.

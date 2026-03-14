@@ -78,12 +78,12 @@ All data is automatically cleaned during extraction:
 - **Company Names** → Consistent legal suffixes (Corp., LLC, Inc., LP)
 - **Date/Numeric Columns** → Clean, valid values only
 
-## 📚 Documentation
+## Documentation
 
-- **[QUICK_START.md](docs/QUICK_START.md)** - Quick reference guide
-- **[EXTRACTION_WORKFLOW.md](docs/EXTRACTION_WORKFLOW.md)** - Complete workflow documentation
-- **[DATA_CLEANUP_SUMMARY.md](docs/DATA_CLEANUP_SUMMARY.md)** - Data quality improvements
-- **[FINANCIAL_STATEMENTS_README.md](docs/FINANCIAL_STATEMENTS_README.md)** - Financial data extraction
+- **[docs/README.md](docs/README.md)** - Documentation map and maintenance rules
+- **[docs/QUICK_START.md](docs/QUICK_START.md)** - Quick run commands
+- **[docs/PIPELINE_AND_ROADMAP.md](docs/PIPELINE_AND_ROADMAP.md)** - Pipeline architecture and roadmap
+- **[docs/OPERATIONS.md](docs/OPERATIONS.md)** - Active issue tracker and operational runbook
 
 ## 🔧 Setup
 
@@ -251,7 +251,7 @@ python process_all_bdcs.py --tickers ARCC --years-back 0
 
 ### Getting Help
 
-See [EXTRACTION_WORKFLOW.md](docs/EXTRACTION_WORKFLOW.md) for detailed troubleshooting.
+See [docs/OPERATIONS.md](docs/OPERATIONS.md) and [docs/PIPELINE_AND_ROADMAP.md](docs/PIPELINE_AND_ROADMAP.md) for troubleshooting and workflow guidance.
 
 ## 🎯 Roadmap
 

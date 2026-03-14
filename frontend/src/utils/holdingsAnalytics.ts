@@ -566,55 +566,6 @@ export function getSpreadDistribution(holdings: Holding[]): SpreadBucket[] {
   });
 }
 
-// Floor rate analysis
-export type FloorRateAnalysis = {
-  withFloor: { count: number; fairValue: number; percentage: number };
-  withoutFloor: { count: number; fairValue: number; percentage: number };
-  averageFloor: number;
-  minFloor: number;
-  maxFloor: number;
-};
-
-export function getFloorRateAnalysis(holdings: Holding[]): FloorRateAnalysis {
-  let withFloorCount = 0;
-  let withFloorFV = 0;
-  let withoutFloorCount = 0;
-  let withoutFloorFV = 0;
-  let totalFV = 0;
-  const floors: number[] = [];
-  
-  holdings.forEach(h => {
-    const fv = getFV(h);
-    totalFV += fv;
-    const floor = h.floor_rate ?? 0;
-    
-    if (floor > 0) {
-      withFloorCount++;
-      withFloorFV += fv;
-      floors.push(floor);
-    } else {
-      withoutFloorCount++;
-      withoutFloorFV += fv;
-    }
-  });
-  
-  return {
-    withFloor: {
-      count: withFloorCount,
-      fairValue: withFloorFV,
-      percentage: totalFV > 0 ? (withFloorFV / totalFV) * 100 : 0,
-    },
-    withoutFloor: {
-      count: withoutFloorCount,
-      fairValue: withoutFloorFV,
-      percentage: totalFV > 0 ? (withoutFloorFV / totalFV) * 100 : 0,
-    },
-    averageFloor: floors.length > 0 ? floors.reduce((a, b) => a + b, 0) / floors.length : 0,
-    minFloor: floors.length > 0 ? Math.min(...floors) : 0,
-    maxFloor: floors.length > 0 ? Math.max(...floors) : 0,
-  };
-}
-
 // Average spread by category
 export type AverageSpreadByCategory = {
   category: string;

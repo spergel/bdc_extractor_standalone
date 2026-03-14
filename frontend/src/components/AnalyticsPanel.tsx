@@ -8,7 +8,6 @@ import {
   getMaturityLadder,
   getSpreadStats,
   getSpreadDistribution,
-  getFloorRateAnalysis,
   getAverageSpreadByIndustry,
   getAverageSpreadByInvestmentType,
   getTopHoldings,
@@ -241,7 +240,6 @@ export function AnalyticsPanel({ holdings, period }: Props) {
   const maturityLadder = useMemo(() => getMaturityLadder(holdings), [holdings]);
   const spreadStats = useMemo(() => getSpreadStats(holdings), [holdings]);
   const spreadDistribution = useMemo(() => getSpreadDistribution(holdings), [holdings]);
-  const floorAnalysis = useMemo(() => getFloorRateAnalysis(holdings), [holdings]);
   const avgSpreadByIndustry = useMemo(() => getAverageSpreadByIndustry(holdings), [holdings]);
   const avgSpreadByType = useMemo(() => getAverageSpreadByInvestmentType(holdings), [holdings]);
   const topHoldings = useMemo(() => getTopHoldings(holdings, 10), [holdings]);
@@ -313,34 +311,9 @@ export function AnalyticsPanel({ holdings, period }: Props) {
         <MaturityLadderChart data={maturityLadder} />
       </div>
       
-      {/* Spread Distribution and Floor Rate */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {/* Spread Distribution */}
+      <div className="grid grid-cols-1 gap-4">
         <HistogramChart data={spreadDistribution} title="Spread Distribution" onBucketClick={handleSpreadClick} selectedBucket={drillDown?.source === 'spread' ? drillDown.bucketIndex : null} />
-        <div className="window p-3">
-          <div className="text-xs font-semibold mb-2 text-black">Floor Rate Analysis</div>
-          <div className="space-y-2 text-xs">
-            <div className="flex items-center justify-between">
-              <span className="text-[#808080]">With Floor:</span>
-              <span className="text-black">{floorAnalysis.withFloor.count} ({floorAnalysis.withFloor.percentage.toFixed(1)}%)</span>
-            </div>
-            <div className="flex items-center justify-between">
-              <span className="text-[#808080]">Without Floor:</span>
-              <span className="text-black">{floorAnalysis.withoutFloor.count} ({floorAnalysis.withoutFloor.percentage.toFixed(1)}%)</span>
-            </div>
-            {floorAnalysis.withFloor.count > 0 && (
-              <>
-                <div className="pt-2 border-t border-[#808080]">
-                  <div className="text-[#808080] mb-1">Floor Statistics:</div>
-                  <div className="space-y-1 text-[#808080]">
-                    <div>Avg: {floorAnalysis.averageFloor.toFixed(2)}%</div>
-                    <div>Min: {floorAnalysis.minFloor.toFixed(2)}%</div>
-                    <div>Max: {floorAnalysis.maxFloor.toFixed(2)}%</div>
-                  </div>
-                </div>
-              </>
-            )}
-          </div>
-        </div>
       </div>
       
       {/* Average Spread by Category */}

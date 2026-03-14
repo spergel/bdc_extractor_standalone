@@ -42,15 +42,11 @@ XBRL_TICKERS = [
     "SLRC", "TCPC", "TRIN", "TSLX", "WHF",
 ]
 
-# LLM pipeline: Grade B/C (missing rates or sparse) + no XBRL SOI at all
-# Grade B: CION (rate=12%), FSK (rate=0%), HTGC (rate=2%), ICMB (rate=0%),
-#          MFIC (rate=4%), OBDC (rate=0%), OXSQ (rate=35%), PFX (rate=29%),
-#          RAND (rate=33%), RWAY (rate=1%), TPVG (rate=12%)
-# Grade C: NEWT (only 6 rows extracted)
-# No XBRL SOI: EQS, SSSS
+# LLM (html_soi_parser) pipeline: tickers with functional HTML SOI tables
+# Grade B: CION (rate=12%), FSK (rate=0%), HTGC (rate=2%), OBDC (rate=0%), TPVG (rate=12%)
 LLM_TICKERS = [
-    "CION", "FSK", "HTGC", "ICMB", "MFIC", "NEWT",
-    "OBDC", "PFX", "TPVG",
+    "CION", "FSK", "HTGC",
+    "OBDC", "TPVG",
 ]
 
 # DSPy pipeline: tickers where html_soi_parser produces empty/broken output.
@@ -58,7 +54,10 @@ LLM_TICKERS = [
 DSPY_TICKERS = [
     "EQS",   # No XBRL SOI, html_soi_parser produces 6-8 rows (incomplete)
     "GECC",  # XBRL/HTML outputs contain many malformed/placeholder rows; DSPy extraction is materially cleaner
+    "ICMB",  # html_soi_parser produces 1-2 rows; table format not recognized
+    "MFIC",  # html_soi_parser: 100% blank investment_type (type embedded in company name as comma suffix)
     "OXSQ",  # html_soi_parser returns 0 rows (COMPANY/INVESTMENT header not recognized)
+    "PFX",   # html_soi_parser: 100% blank investment_type + column mapping wrong
     "RAND",  # html_soi_parser returns 12-19 rows (complex SOI format); DSPy needed
     "RWAY",  # html_soi_parser produces 77% garbled company names (flat-path row format); DSPy: 0% garbled, 100% rate coverage
     "SSSS",  # No XBRL SOI, html_soi_parser produces ≤1 row per filing
@@ -68,6 +67,7 @@ DSPY_TICKERS = [
 # ORCC → renamed to OBDC (Blue Owl Capital, 2023)
 # PTMN → merged into BCIC (BCP Investment Corp, 2025)
 # SUNS → merged into SLRC (SLR Investment Corp, 2022)
+# NEWT → converted to a bank (Newtek Bank) in 2023; only 6 JV rows remain, not useful
 
 ALL_BDCS = sorted(set(XBRL_TICKERS + LLM_TICKERS + DSPY_TICKERS + CUSTOM_SCRAPER_TICKERS))
 

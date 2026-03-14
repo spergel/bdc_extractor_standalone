@@ -30,7 +30,6 @@ export type Holding = {
   spread_clean?: number;
   is_pik?: boolean;
   payment_frequency?: string;
-  floor_rate?: number;
   
   // Dates
   acquisition_date?: string;
@@ -345,7 +344,6 @@ function normalizeHolding(row: any): Holding {
     spread_clean: parseNum(row.spread_clean ?? row.spread),
     is_pik: parseBool(row.is_pik),
     payment_frequency: row.payment_frequency || undefined,
-    floor_rate: parseNum(row.floor_rate),
     
     acquisition_date: row.acquisition_date || undefined,
     maturity_date: row.maturity_date || undefined,

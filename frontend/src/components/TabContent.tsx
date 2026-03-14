@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { ProfileCard } from './ProfileCard';
 import { FinancialsPanel } from './FinancialsPanel';
 import { HoldingsTable } from './HoldingsTable';

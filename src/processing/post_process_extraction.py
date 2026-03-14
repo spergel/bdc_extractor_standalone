@@ -28,6 +28,35 @@ from standardization_rules import (
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
 
+_MONETARY_FIELDS = (
+    "principal_amount",
+    "amortized_cost",
+    "fair_value",
+    "cost",
+    "commitment_limit",
+    "undrawn_commitment",
+)
+
+
+def _parse_float_safe(value: str) -> float:
+    if value is None:
+        return 0.0
+    s = str(value).strip().replace(",", "").replace("$", "").replace("%", "")
+    if not s:
+        return 0.0
+    try:
+        return float(s)
+    except ValueError:
+        return 0.0
+
+
+def _fmt_numeric_like_existing(value: float) -> str:
+    """Preserve integer-looking fields as integers after transformations."""
+    if abs(value - round(value)) < 1e-9:
+        return str(int(round(value)))
+    return f"{value:.6f}".rstrip("0").rstrip(".")
+
+
 def post_process_csv(input_file: Path, output_file: Path = None) -> Tuple[int, int, int]:
     """
     Post-process a CSV file to standardize industries, investment types, and reference rates.
@@ -144,6 +173,63 @@ def post_process_csv(input_file: Path, output_file: Path = None) -> Tuple[int, i
                     cost = float(row.get('cost', '') or 0)
                 except ValueError:
                     fv = principal = cost = 0
+
+                ticker = (row.get('ticker') or '').strip().upper() or (file_ticker or '').strip().upper()
+
+                # CGBD: some historical rows are 1000x too large (e.g. 100,000,000 vs expected 100,000 in "thousands" units).
+                # If a row has impossible position sizes, scale all monetary fields down by 1000.
+                if ticker == "CGBD":
+                    money_vals = [_parse_float_safe(row.get(k, "")) for k in _MONETARY_FIELDS]
+                    max_money = max(money_vals) if money_vals else 0.0
+                    if max_money >= 2_000_000:
+                        for k in _MONETARY_FIELDS:
+                            v = _parse_float_safe(row.get(k, ""))
+                            if v:
+                                row[k] = _fmt_numeric_like_existing(v / 1000.0)
+                        rows_changed += 1
+                        issues.append("scaled_down_1000x")
+
+                    # Drop tiny geometric tail artifacts from the known bad CGBD block.
+                    company = (row.get("company_name") or "").strip()
+                    filing_date = (row.get("filing_date") or "").strip()
+                    inv_type = (row.get("investment_type") or "").strip()
+                    fair_v = _parse_float_safe(row.get("fair_value", ""))
+                    principal_v = _parse_float_safe(row.get("principal_amount", ""))
+                    if (
+                        filing_date == "2020-05-05"
+                        and company == "Zurn Water Solutions LLC"
+                        and inv_type == "Preferred Equity"
+                        and principal_v == 0
+                        and fair_v > 0
+                        and fair_v <= 2000
+                    ):
+                        rows_dropped += 1
+                        continue
+
+                # GECC: some rows carry principal in absolute dollars while cost/FV are in thousands.
+                # Example pattern: principal=65000, cost=64.36, fair_value=64.36 (ratio ~1000x).
+                if ticker == "GECC":
+                    principal_v = _parse_float_safe(row.get("principal_amount", ""))
+                    cost_v = _parse_float_safe(row.get("cost", ""))
+                    fair_v = _parse_float_safe(row.get("fair_value", ""))
+                    cmp_v = max(cost_v, fair_v)
+                    if principal_v > 0 and cmp_v > 0:
+                        ratio = principal_v / cmp_v
+                        if 800 <= ratio <= 1200:
+                            row["principal_amount"] = _fmt_numeric_like_existing(principal_v / 1000.0)
+                            rows_changed += 1
+                            issues.append("principal_scaled_down_1000x")
+                            principal = _parse_float_safe(row.get("principal_amount", ""))
+
+                    # Drop GECC placeholder/category rows that carry no position values.
+                    inv_type_lower = (row.get("investment_type") or "").strip().lower()
+                    has_position_values = any(
+                        _parse_float_safe(row.get(k, "")) > 0
+                        for k in ("principal_amount", "amortized_cost", "fair_value", "cost", "commitment_limit", "undrawn_commitment")
+                    ) or _parse_float_safe(row.get("shares", "")) > 0
+                    if inv_type_lower == "other" and not has_position_values:
+                        rows_dropped += 1
+                        continue
 
                 # Flag obviously tiny cost relative to principal/FV (e.g. 13 vs 13,242)
                 if cost > 0 and (principal > 0 or fv > 0):
