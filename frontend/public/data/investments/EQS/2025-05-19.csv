@@ -1,8 +1,8 @@
-company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
-Morgan E&P LLC,Other Debt,Energy,12%,,Fixed,,,,,10500,10500,10500,,,,,,,dspy_extracted,EQS,2025-05-19,EQS,2025-05-19
-General Enterprise Ventures Inc.,Warrants,Environmental,,,N/A,,,2025-02-01,,,,1300,,,,,,,dspy_extracted,EQS,2025-05-19,EQS,2025-05-19
-General Enterprise Ventures Inc.,Other Debt,Environmental,10%,,Fixed,,,,,1500,1500,4500,,,,,,,dspy_extracted,EQS,2025-05-19,EQS,2025-05-19
-North American Energy Opportunities Corp.,Preferred Equity,Energy,,,N/A,,,2025-03-01,,,,2658,,2750,,,,,dspy_extracted,EQS,2025-05-19,EQS,2025-05-19
-Equus Energy LLC,Partnership Interest,Energy,,,N/A,,,2011-12-01,,,,4000,,8111,,,,,dspy_extracted,EQS,2025-05-19,EQS,2025-05-19
-Morgan E&P LLC,Partnership Interest,Energy,,,N/A,,,2023-04-01,,,,13000,,,,,,,dspy_extracted,EQS,2025-05-19,EQS,2025-05-19
-Morgan E&P LLC,First Lien,Energy,12%,,Fixed,,,,,10500,,10500,,10500,,,,,dspy_extracted,EQS,2025-05-19,EQS,2025-05-19
+company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
+Morgan E&P LLC,co_542843923f57,Other Debt,Energy,12%,,Fixed,,,,,10500,10500,10500,,,,,,,dspy_extracted,EQS,2025-05-19,EQS,2025-05-19
+General Enterprise Ventures Inc.,co_63ae03e84114,Warrants,Environmental Services,,,N/A,,,2025-02-01,,,,1300,,,,,,,dspy_extracted,EQS,2025-05-19,EQS,2025-05-19
+General Enterprise Ventures Inc.,co_63ae03e84114,Other Debt,Environmental Services,10%,,Fixed,,,,,1500,1500,4500,,,,,,,dspy_extracted,EQS,2025-05-19,EQS,2025-05-19
+North American Energy Opportunities Corp.,co_c13be5a979e8,Preferred Equity,Energy,,,N/A,,,2025-03-01,,,,2658,,2750,,,,,dspy_extracted,EQS,2025-05-19,EQS,2025-05-19
+Equus Energy LLC,co_9bab40f04d67,Partnership Interest,Energy,,,N/A,,,2011-12-01,,,,4000,,8111,,,,,dspy_extracted,EQS,2025-05-19,EQS,2025-05-19
+Morgan E&P LLC,co_542843923f57,Partnership Interest,Energy,,,N/A,,,2023-04-01,,,,13000,,,,,,,dspy_extracted,EQS,2025-05-19,EQS,2025-05-19
+Morgan E&P LLC,co_542843923f57,First Lien,Energy,12%,,Fixed,,,,,10500,,10500,,10500,,,,,dspy_extracted,EQS,2025-05-19,EQS,2025-05-19

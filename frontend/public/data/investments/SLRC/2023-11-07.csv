@@ -1,27 +1,27 @@
-company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
-SLR Equipment Finance Equity Interests,First Lien,Financial Services,,,,,,,,,145000,120820,,145000,,,,200,,SLRC,2023-11-07
-Preferred Equity,First Lien,,5%,,,,,,2025-06-30,0,5114,3801,,5114,,,,,type_hint_pref_equity_from_name,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Other Equity,,,,,,,,,,51,32,,51,,,,12510,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Warrants,,,,,,,,,,106,0,,106,,,,6347,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Other Equity,,,,,,,,,,11411,3816,,11411,,,,6526,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Warrants,,,,,,,,,,51,0,,51,,,,90,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Warrants,,,,,,,,,,136,50,,136,,,,289102,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Warrants,,,,,,,,,,65,0,,65,,,,157500,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Warrants,,,,,,,,,,74,87,,74,,,,444388,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Warrants,,,,,,,,,,129,342,,129,,,,260000,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Other Equity,,,,,,,,,,136596,146000,,136596,,,,73500000,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Warrants,,,,,,,,,,23,20,,23,,,,29366,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Other Equity,,,,,,,,,,657,273,,657,,,,207043,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Other Equity,,,,,,,,,,15683,0,,15683,,,,231177,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Common Equity,,,,,,,,,,5216,0,,5216,,,,522,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Warrants,,,,,,,,,,381,0,,381,,,,30370,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Other Equity,,,,,,,,,,235,283,,235,,,,469353,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Other Equity,,,,,,,,,,19880,15100,,19880,,,,0,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Other Equity,,,,,,,,,,81583,90370,,81583,,,,100,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Other Equity,,,,,,,,,,280737,281000,,280737,,,,280303,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Other Equity,,,,,,,,,,34335,34850,,34335,,,,32839,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Other Equity,,,,,,,,,,28750,29277,,28750,,,,0,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Warrants,,,,,,,,,,290,28,,290,,,,48969,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Warrants,,,,,,,,,,152,0,,152,,,,2230,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Warrants,,,,,,,,,,51,55,,51,,,,161761,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,Other,,,,,,,,,,616592,601583,,616592,,,,,,SLRC,2023-11-07
+company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
+SLR Equipment Finance Equity Interests,co_6c73fdb6baca,First Lien,Financial Services,,,,,,,,,145000,120820,,145000,,,,200,,SLRC,2023-11-07
+Preferred Equity,co_b80c2a27176c,First Lien,,5%,,,,,,2025-06-30,0,5114,3801,,5114,,,,,type_hint_pref_equity_from_name,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Other Equity,,,,,,,,,,51,32,,51,,,,12510,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Warrants,,,,,,,,,,106,0,,106,,,,6347,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Other Equity,,,,,,,,,,11411,3816,,11411,,,,6526,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Warrants,,,,,,,,,,51,0,,51,,,,90,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Warrants,,,,,,,,,,136,50,,136,,,,289102,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Warrants,,,,,,,,,,65,0,,65,,,,157500,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Warrants,,,,,,,,,,74,87,,74,,,,444388,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Warrants,,,,,,,,,,129,342,,129,,,,260000,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Other Equity,,,,,,,,,,136596,146000,,136596,,,,73500000,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Warrants,,,,,,,,,,23,20,,23,,,,29366,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Other Equity,,,,,,,,,,657,273,,657,,,,207043,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Other Equity,,,,,,,,,,15683,0,,15683,,,,231177,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Common Equity,,,,,,,,,,5216,0,,5216,,,,522,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Warrants,,,,,,,,,,381,0,,381,,,,30370,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Other Equity,,,,,,,,,,235,283,,235,,,,469353,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Other Equity,,,,,,,,,,19880,15100,,19880,,,,0,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Other Equity,,,,,,,,,,81583,90370,,81583,,,,100,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Other Equity,,,,,,,,,,280737,281000,,280737,,,,280303,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Other Equity,,,,,,,,,,34335,34850,,34335,,,,32839,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Other Equity,,,,,,,,,,28750,29277,,28750,,,,0,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Warrants,,,,,,,,,,290,28,,290,,,,48969,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Warrants,,,,,,,,,,152,0,,152,,,,2230,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Warrants,,,,,,,,,,51,55,,51,,,,161761,,SLRC,2023-11-07
+Common Equity Equity Interests Warrants,co_9691b22d22f7,Other,,,,,,,,,,616592,601583,,616592,,,,,,SLRC,2023-11-07

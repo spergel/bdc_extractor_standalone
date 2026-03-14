@@ -1,30 +1,25 @@
-company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
-Shogun Enterprises Inc. (d/b/a Hearth),Convertible Note,,0.5%,,Fixed,,,2022-05-02,2024-04-18,,,500.0,,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-EDGE Markets Inc.,Preferred Equity,,,,N/A,,,2022-05-18,,,,500.0,,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-Whoop Inc.,Preferred Equity,,,,N/A,,,2022-06-30,,,,10000.0,,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-Xgroup Holdings Limited (d/b/a Xpoint),Convertible Note,,6%,,Fixed,,,2022-08-17,2023-08-17,,,1000.0,,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-Orchard Technologies Inc.,Other,,,,N/A,,,2022-09-02,,,,500.0,,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-Forge Global Inc.,Common Equity,,,,N/A,,,2022-09-30,,,,915.076,,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-YouBet Technology Inc. (d/b/a FanPower),Preferred Equity,,,,N/A,,,2022-11-17,,,,249.999,,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-Locus Robotics Corp.,Preferred Equity,,,,N/A,,,2022-11-30,,,,10000.005,,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-Colombier Sponsor II LLC,Warrants,,,,N/A,,,,,,,498.305,0.25,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-"SPBRX, INC. (f/k/a GSV Sustainability Partners, Inc.)",Preferred Equity,Clean Technology,,,N/A,,,,,,,382.381,0.19,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-"Architect Capital PayJoy SPV, LLC",Partnership Interest,Mobile Finance Technology,,,N/A,,,,,10000.0,,10000.0,4.92,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-Colombier Sponsor II LLC,Common Equity,Special Purpose Acquisition Company,,,N/A,,,,,,,1101.695,0.54,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-OneValley Inc. (f/k/a NestGSV Inc.),Other,,8%,,Fixed,,,,2024-08-23,1010.198,,1267.395,0.62,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-StormWind LLC,Other,,8%,,Fixed,,,,,329.337,,653.975,0.32,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-StormWind LLC,Other,,8%,,Fixed,,,,,2779.134,,6804.933,3.35,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-StormWind LLC,Other,,8%,,Fixed,,,,,3279.629,,4751.064,2.34,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-StormWind LLC,Other,,8%,,Fixed,,,,,366.666,,325.903,0.16,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-Ozy Media Inc. (7),Warrants,,,,N/A,,,,,,,0.0,0,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-OneValley Inc. (f/k/a NestGSV Inc.),Preferred Equity,,,,N/A,,,,,,,0.0,0,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-OneValley Inc. (f/k/a NestGSV Inc.),Other,,,,N/A,,,,,1000.0,,620.927,0.31,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-PSQ Holdings Inc. (d/b/a PublicSquare)** (6),Warrants,,,,N/A,,,,,2396.037,,1964.75,0.97,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-Curious.com Inc.,Common Equity,,,,N/A,,,,,1135.944,,0.0,0,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-PSQ Holdings Inc. (d/b/a PublicSquare)** (6),Common Equity,,,,N/A,,,,,1976.032,,8542.386,4.20,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-"OneValley, Inc. (f/k/a NestGSV, Inc.)",Other Debt,,,,,,,,,1010.198,,1988.2,0.95,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-"StormWind, LLC",Preferred Equity,,,,,,,,,,,533.429,0.25,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-"StormWind, LLC",Preferred Equity,,,,,,,,,,,5675.081,2.70,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-"StormWind, LLC",Preferred Equity,,,,,,,,,,,3550.631,1.69,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-"StormWind, LLC",Preferred Equity,,,,,,,,,,,191.694,0.09,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
-OneValley Inc. (f/k/a NestGSV Inc.),Other,Global Innovation Platform,,,,,,,,,,652.127,0.31,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
+Shogun Enterprises Inc.,co_01930aba2150,Other Debt,,0.5%,,Fixed,,,2022-05-02,2024-04-18,,,500.0,,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+EDGE Markets Inc.,co_778a6a08bf6e,Preferred Equity,,,,N/A,,,2022-05-18,,,,500.0,,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+Whoop Inc.,co_9f9b312199ba,Preferred Equity,,,,N/A,,,2022-06-30,,,,10000.0,,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+Xgroup Holdings Ltd.,co_53490a4597e1,Other Debt,,6%,,Fixed,,,2022-08-17,2023-08-17,,,1000.0,,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+Orchard Technologies Inc.,co_73a016b6042c,Other,,,,N/A,,,2022-09-02,,,,500.0,,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+Forge Global Inc.,co_218b6ad17258,Common Equity,,,,N/A,,,2022-09-30,,,,915.076,,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+YouBet Technology Inc.,co_7376cc7d4d88,Preferred Equity,Software & Technology,,,N/A,,,2022-11-17,,,,249.999,,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+Locus Robotics Corp.,co_bef8da650954,Preferred Equity,,,,N/A,,,2022-11-30,,,,10000.005,,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+Colombier Sponsor II LLC,co_250df842eb57,Warrants,,,,N/A,,,,,,,498.305,0.25,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+"SPBRX, INC.",co_260fb12b0e8f,Preferred Equity,Software & Technology,,,N/A,,,,,,,382.381,0.19,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+"Architect Capital PayJoy SPV, LLC",co_c1ca99a62bc4,Partnership Interest,Financial Services,,,N/A,,,,,10000.0,,10000.0,4.92,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+Colombier Sponsor II LLC,co_250df842eb57,Common Equity,Special Purpose Acquisition Company,,,N/A,,,,,,,1101.695,0.54,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+OneValley Inc.,co_4c69f519df32,Other,,8%,,Fixed,,,,2024-08-23,1010.198,,1267.395,0.62,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+StormWind LLC,co_5886fe3eb2cb,Other,,8%,,Fixed,,,,,329.337,,653.975,0.32,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+StormWind LLC,co_5886fe3eb2cb,Other,,8%,,Fixed,,,,,2779.134,,6804.933,3.35,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+StormWind LLC,co_5886fe3eb2cb,Other,,8%,,Fixed,,,,,3279.629,,4751.064,2.34,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+StormWind LLC,co_5886fe3eb2cb,Other,,8%,,Fixed,,,,,366.666,,325.903,0.16,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+Ozy Media Inc.,co_a78c29cd34d7,Warrants,Media & Entertainment,,,N/A,,,,,,,0.0,0,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+OneValley Inc.,co_4c69f519df32,Preferred Equity,,,,N/A,,,,,,,0.0,0,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+OneValley Inc.,co_4c69f519df32,Other,,,,N/A,,,,,1000.0,,620.927,0.31,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+PSQ Holdings Inc.,co_a49cd4efcbec,Warrants,,,,N/A,,,,,2396.037,,1964.75,0.97,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+Curious.com Inc.,co_5f5b408e6706,Common Equity,,,,N/A,,,,,1135.944,,0.0,0,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+PSQ Holdings Inc.,co_a49cd4efcbec,Common Equity,,,,N/A,,,,,1976.032,,8542.386,4.20,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14
+"OneValley, Inc.",co_4c69f519df32,Other Debt,,,,,,,,,1010.198,,1988.2,0.95,,,,,,dspy_extracted,SSSS,2024-03-14,SSSS,2024-03-14

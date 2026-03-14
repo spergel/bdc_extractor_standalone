@@ -1,890 +1,514 @@
-company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
-3Pillar Global Inc,First Lien,Software & Services,,,SOFR,600,0.8 %,,2026-11-23,4700.0,4700.0,4600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-3Pillar Global Inc,First Lien,Software & Services,,,SOFR,600,0.8 %,,2027-11-23,123800.0,123100.0,120200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-48Forty Solutions LLC,First Lien,Commercial & Professional Services,,,SOFR,600,1.0 %,,2026-11-30,175000.0,174000.0,151000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-48Forty Solutions LLC,First Lien,Commercial & Professional Services,,,SOFR,600,1.0 %,,2026-11-30,8800.0,8800.0,7600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-48Forty Solutions LLC,First Lien,Commercial & Professional Services,,,SOFR,600,1.0 %,,2026-11-30,1800.0,1800.0,1600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Aareon AG,First Lien,Software & Services,,,Euribor,600,0.8 %,,2030-08-19,13800.0,14900.0,15400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Aareon AG,First Lien,Software & Services,,1.8 %,Euribor,475,0.0 %,,2031-09-30,60000.0,66200.0,66200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Aareon AG,First Lien,Software & Services,,1.8 %,Euribor,475,0.0 %,,2031-09-30,13600.0,15100.0,15100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Accuride Corp,First Lien,Manufacturing,,,SOFR,1000,2.0 %,,2024-10-15,900.0,800.0,900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Accuride Corp,First Lien,Manufacturing,,5.9 %,SOFR,100,1.0 %,,2026-05-18,7700.0,7700.0,5000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Advanced Dermatology & Cosmetic Surgery,First Lien,Healthcare Services,,,SOFR,625,1.0 %,,2026-05-07,300.0,300.0,300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Advanced Dermatology & Cosmetic Surgery,First Lien,Healthcare Services,,,SOFR,625,1.0 %,,2027-05-07,45500.0,44400.0,45500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Advanced Dermatology & Cosmetic Surgery,First Lien,Healthcare Services,,,SOFR,625,1.0 %,,2026-05-07,3300.0,3300.0,3300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Advania Sverige AB,First Lien,Software & Services,,,SOFR,550,0.0 %,,2031-06-02,51400.0,65000.0,68500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Advania Sverige AB,First Lien,Software & Services,,,SOFR,550,0.0 %,,2031-06-02,161100.0,14900.0,15800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Advania Sverige AB,First Lien,Software & Services,,,Euribor,500,0.0 %,,2031-06-02,5000.0,5400.0,5500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Affordable Care Inc,First Lien,Healthcare Services,,1.3 %,SOFR,550,0.8 %,,2027-08-02,5800.0,5800.0,5800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Affordable Care Inc,First Lien,Healthcare Services,,,SOFR,550,0.8 %,,2028-08-02,13600.0,13500.0,13500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Affordable Care Inc,First Lien,Healthcare Services,,,SOFR,550,0.8 %,,2028-08-02,42600.0,42600.0,42400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Alacrity Solutions Group LLC,First Lien,Insurance,,,SOFR,525,0.8 %,,2027-12-22,10800.0,10700.0,9200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Alacrity Solutions Group LLC,First Lien,Insurance,,,SOFR,525,0.8 %,,2028-12-22,11800.0,11700.0,10100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Alera Group Intermediate Holdings Inc,First Lien,Insurance,,,SOFR,525,0.8 %,,2028-10-02,31100.0,31100.0,31300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Alera Group Intermediate Holdings Inc,First Lien,Insurance,,,SOFR,575,0.8 %,,2028-10-02,2300.0,2300.0,2300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Alera Group Intermediate Holdings Inc,First Lien,Insurance,,,SOFR,575,0.8 %,,2028-10-02,5300.0,5300.0,5300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Alpha Financial Markets Consulting PLC,First Lien,Business Services,,,SOFR,525,0.0 %,,2031-08-16,10300.0,10100.0,10100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Alpha Financial Markets Consulting PLC,First Lien,Business Services,,,Euribor,525,0.0 %,,2031-08-16,4700.0,5100.0,5100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-American Vision Partners,First Lien,Healthcare Services,,,SOFR,600,0.8 %,,2026-09-30,4400.0,4400.0,4300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-American Vision Partners,First Lien,Healthcare Services,,,SOFR,600,0.8 %,,2027-09-30,90700.0,90400.0,89500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Amerivet Partners Management Inc,Other,Health Care Equipment & Services,,,SOFR,525,0.8 %,,2028-02-25,67800.0,67500.0,67800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Amerivet Partners Management Inc,Other,Health Care Equipment & Services,,,SOFR,525,0.8 %,,2028-02-25,8400.0,8400.0,8400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Apex Group Limited,Other,Financial Services,,,SOFR,375,0.5 %,,2028-07-27,2400.0,2400.0,2400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Apex Service Partners LLC,Other,Financial Services,,,SOFR,500,1.0 %,,2029-10-24,2500.0,2500.0,2500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Apex Service Partners LLC,Other,Financial Services,,,SOFR,500,1.0 %,,2030-10-24,3500.0,3500.0,3400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Apex Service Partners LLC,Other,Financial Services,,,SOFR,500,1.0 %,,2030-10-24,78400.0,77500.0,78600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Apex Service Partners LLC,Other,Financial Services,,,SOFR,500,1.0 %,,2030-10-24,15500.0,15500.0,15600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Apex Service Partners LLC,Other,Financial Services,,,SOFR,500,1.0 %,,2030-10-24,27700.0,27700.0,27600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Arcfield Acquisition Corp,Other,Capital Goods,,,SOFR,625,0.8 %,,2029-08-03,84300.0,84000.0,85200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Arcfield Acquisition Corp,Other,Capital Goods,,,SOFR,625,0.8 %,,2028-08-04,10600.0,10600.0,10600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Arcos LLC/VA,Other,Capital Goods,,3.3 %,SOFR,300,1.0 %,,2028-04-20,12800.0,12700.0,11700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Arcos LLC/VA,Other,Capital Goods,,,SOFR,625,1.0 %,,2027-04-20,4500.0,4500.0,4100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Area Wide Protective Inc,Other,Capital Goods,,,SOFR,475,1.0 %,,2030-12-23,12500.0,12500.0,12400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Area Wide Protective Inc,Other,Capital Goods,,,SOFR,475,1.0 %,,2030-12-23,18800.0,18700.0,18700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Arrotex Australia Group Pty Ltd,Other,Pharmaceuticals & Biotechnology,,,Euribor,575,0.5 %,,2028-06-30,7100.0,7100.0,7100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ATX Networks Corp,Other,Pharmaceuticals & Biotechnology,,,SOFR,650,1.0 %,,2026-09-01,37500.0,36900.0,37500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ATX Networks Corp,Other,Pharmaceuticals & Biotechnology,,,SOFR,600,1.0 %,,2026-09-01,14800.0,14800.0,14800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ATX Networks Corp,Other,Pharmaceuticals & Biotechnology,,,SOFR,600,1.0 %,,2026-09-01,5400.0,5400.0,5400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Avetta LLC,Other,Pharmaceuticals & Biotechnology,,0.0 %,SOFR,450,0.5 %,,2031-07-26,15000.0,14800.0,14900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Avetta LLC,Other,Pharmaceuticals & Biotechnology,,,SOFR,450,0.5 %,,2030-07-26,2600.0,2600.0,2600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Avetta LLC,Other,Pharmaceuticals & Biotechnology,,0.0 %,SOFR,450,0.5 %,,2031-07-26,3700.0,3700.0,3600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Barbri Inc,Other,Pharmaceuticals & Biotechnology,,,SOFR,575,0.8 %,,2028-04-28,129500.0,126400.0,129500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-BDO USA PA,Other,Pharmaceuticals & Biotechnology,,,SOFR,600,2.0 %,,2028-08-31,28100.0,27700.0,28400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Belk Inc,Other,Pharmaceuticals & Biotechnology,15.0 %,,Fixed,,,,2029-07-23,30000.0,30000.0,30200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-BGB Group LLC,Other,Pharmaceuticals & Biotechnology,,,SOFR,525,1.0 %,,2027-08-16,109100.0,108400.0,108900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-BGB Group LLC,Other,Pharmaceuticals & Biotechnology,,,SOFR,525,1.0 %,,2027-08-16,7400.0,7400.0,7400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-BGB Group LLC,Other,Pharmaceuticals & Biotechnology,,,SOFR,525,1.0 %,,2027-08-16,19900.0,19900.0,19900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Bloom Fresh International Limited,Other,Pharmaceuticals & Biotechnology,,,Euribor,525,0.0 %,,2030-08-09,7900.0,7900.0,8300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Bowery Farming Inc,Other,Pharmaceuticals & Biotechnology,,,SOFR,"1,000",1.0 %,,2026-09-10,67900.0,54200.0,15000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Bowery Farming Inc,Other,Pharmaceuticals & Biotechnology,,,N/A,,,,2026-09-10,10400.0,10000.0,4200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Bowery Farming Inc,Other,Food & Beverage,,,,,,,2026-09-10,5900.0,5900.0,2300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Bowery Farming Inc,Other,Food & Beverage,,,,,,,2026-09-10,3600.0,3600.0,1400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Cadence Education LLC,Other,Consumer Services,,,SOFR,500,0.8 %,,2031-05-01,4600.0,4600.0,4600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Cadence Education LLC,Other,Consumer Services,,,SOFR,500,0.8 %,,2030-05-01,8500.0,8500.0,8500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Cadence Education LLC,Other,Consumer Services,,,SOFR,500,0.8 %,,2031-05-01,9800.0,9800.0,9800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Carrier Fire Protection,Other,Business Services,,0.0 %,SOFR,500,0.5 %,,2031-07-01,9700.0,9700.0,9700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Carrier Fire Protection,Other,Business Services,,,SOFR,500,0.5 %,,2031-07-01,400.0,400.0,400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Carrier Fire Protection,Other,Business Services,,0.0 %,Euribor,500,0.5 %,,2031-07-01,2400.0,2600.0,2700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-CFC Underwriting Ltd,Other,Insurance,,0.0 %,SOFR,495,0.0 %,,2029-05-16,4700.0,5700.0,5700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Circana Group (f.k.a. NPD Group),Other,Consumer Services,,,SOFR,500,0.8 %,,2027-12-21,600.0,600.0,600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Circana Group (f.k.a. NPD Group),Other,Consumer Services,,,SOFR,500,0.8 %,,2028-12-21,19700.0,19700.0,19900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Circana Group (f.k.a. NPD Group),Other,Consumer Services,,,SOFR,500,0.8 %,,2027-12-21,400.0,400.0,400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Civica Group Ltd,Other,Software,,0.0 %,SOFR,550,0.0 %,,2030-08-30,2500.0,3200.0,3300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Civica Group Ltd,Other,Software,,0.0 %,SOFR,550,0.0 %,,2030-08-30,5000.0,6400.0,6300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Clarience Technologies LLC,Other,Manufacturing,,,SOFR,575,0.8 %,,2030-02-13,200.0,200.0,200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Clarience Technologies LLC,Other,Manufacturing,,0.0 %,SOFR,575,0.8 %,,2031-02-13,159300.0,157700.0,160400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Clarience Technologies LLC,Other,Manufacturing,,,SOFR,575,0.8 %,,2030-02-13,21500.0,21500.0,21500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Clarience Technologies LLC,Other,Manufacturing,,0.0 %,SOFR,575,0.8 %,,2031-02-13,21700.0,21700.0,21800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-CLEAResult Consulting Inc,Other,Business Services,,0.0 %,SOFR,500,0.8 %,,2031-08-27,18200.0,18000.0,18000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-CLEAResult Consulting Inc,Other,Business Services,,,SOFR,500,0.8 %,,2031-08-27,1500.0,1500.0,1500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-CLEAResult Consulting Inc,Other,Business Services,,0.0 %,SOFR,500,0.8 %,,2031-08-27,4500.0,4500.0,4500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Community Brands Inc,Other,Software,,,SOFR,525,0.8 %,,2031-07-01,40000.0,39600.0,39900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Community Brands Inc,Other,Software,,,SOFR,525,0.8 %,,2031-07-01,4400.0,4400.0,4400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Community Brands Inc,Other,Software,,,SOFR,525,0.8%,,2031-07-01,11300.0,11300.0,11200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Consilium Safety Group AB,Other,Manufacturing,,0.0 %,Euribor,600,0.0 %,,2031-04-07,25000.0,26500.0,27600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Consilium Safety Group AB,Other,Manufacturing,,0.0 %,Euribor,600,0.0 %,,2031-04-07,9800.0,10500.0,10500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Corsearch Intermediate Inc,Other,Software,,,SOFR,550,1.0 %,,2028-04-19,30100.0,28900.0,30100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-CSafe Global,Other,Transportation & Logistics,,,SOFR,575,0.8 %,,2028-12-14,83300.0,83300.0,84200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-CSafe Global,Other,Transportation,,,SOFR,575,0.8 %,,2028-12-14,15500.0,19800.0,20900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-CSafe Global,Other,Transportation,,,SOFR,575,0.8 %,,2029-03-08,9000.0,9000.0,9000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-CSafe Global,Other,Transportation,,,SOFR,575,0.8 %,,2029-03-08,2500.0,2500.0,2500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Dechra Pharmaceuticals Ltd,Other,Pharmaceuticals & Biotechnology,,,SOFR,625,0.8 %,,2031-01-24,3700.0,3600.0,3600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Dental Care Alliance Inc,Other,Healthcare Services,,,SOFR,641,0.8 %,,2028-04-03,110000.0,107700.0,108600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Dental365 LLC,Other,Healthcare Services,,,SOFR,575,0.8 %,,2028-05-05,400.0,400.0,400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Dental365 LLC,Other,Healthcare Services,,,SOFR,525,0.8 %,,2028-08-05,23900.0,23900.0,23800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Dental365 LLC,Other,Healthcare Services,,,SOFR,575,0.8 %,,2028-05-05,4700.0,4700.0,4700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Dental365 LLC,Other,Healthcare Services,,,SOFR,525,0.8 %,,2028-08-05,11300.0,11300.0,11300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-DOC Generici Srl,Other,Pharmaceuticals & Biotechnology,,,Euribor,650,0.0 %,,2028-10-27,11600.0,11300.0,12900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-DOC Generici Srl,Other,Pharmaceuticals & Biotechnology,,,Euribor,650,0.0 %,,2028-10-27,2400.0,2300.0,2400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-DOXA Insurance Holdings LLC,Other,Insurance,,,SOFR,525,0.8 %,,2030-12-20,15300.0,15100.0,15400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-DOXA Insurance Holdings LLC,Other,Insurance,,,SOFR,550,0.8 %,,,3300.0,3300.0,3300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-DOXA Insurance Holdings LLC,Other,Insurance,,,SOFR,550,0.8 %,,2030-12-20,1900.0,1900.0,1900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-DOXA Insurance Holdings LLC,Other,Insurance,,,SOFR,500,0.8 %,,2030-12-20,22600.0,22600.0,22800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-DuBois Chemicals Inc,Other,Chemicals,,,SOFR,475,0.8 %,,2031-06-13,43700.0,43500.0,43700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-DuBois Chemicals Inc,Other,Chemicals,,,SOFR,475,0.8 %,,2031-06-13,14700.0,14700.0,14700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Envirotainer Ltd,Other,Transportation,,,Euribor,575,0.0 %,,2029-07-30,2700.0,2700.0,2800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Excelitas Technologies Corp,Other,Technology Hardware,,,SOFR,525,0.8 %,,2029-08-12,1900.0,1900.0,1900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Excelitas Technologies Corp,Other,Technology Hardware,,,SOFR,525,0.8 %,,,2400.0,2400.0,2400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Excelitas Technologies Corp,Other,Technology Hardware,,,SOFR,525,0.8 %,,2029-08-12,23400.0,23400.0,23400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Follett Software Co,Other,Software,,,SOFR,500,0.8 %,,2028-08-31,72400.0,71900.0,72500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Follett Software Co,Other,Software,,,SOFR,500,0.8 %,,,9900.0,9900.0,9900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Foundation Consumer Brands LLC,Other,Pharmaceuticals & Biotechnology,,,SOFR,625,1.0 %,,2027-02-12,66700.0,64800.0,66700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Foundation Consumer Brands LLC,Other,Pharmaceuticals & Biotechnology,,,SOFR,625,1.0 %,,2027-02-12,6600.0,6600.0,6600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Foundation Risk Partners Corp,Other,Insurance,,,SOFR,525,0.8 %,,2030-10-29,70800.0,70100.0,71000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Foundation Risk Partners Corp,Other,Insurance,,,SOFR,525,0.8 %,,,11800.0,11800.0,11800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Foundation Risk Partners Corp,Other,Insurance,,,SOFR,525,0.8 %,,2030-10-29,14500.0,14500.0,14500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Galaxy Universal LLC,Other,Consumer Products,,,SOFR,625,1.0 %,,2026-11-12,86500.0,86500.0,86500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Galaxy Universal LLC,Other,Consumer Products,,,SOFR,550,1.0 %,,2026-11-30,18600.0,18500.0,18500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Galway Partners Holdings LLC,Other,Insurance,,,SOFR,525,0.8 %,,2027-09-30,3400.0,3300.0,3400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Galway Partners Holdings LLC,Other,Insurance,,,SOFR,450,0.8 %,,2028-09-29,77200.0,76300.0,77300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Galway Partners Holdings LLC,Other,Insurance,,1.3 %,SOFR,525,0.8 %,,2027-09-30,9600.0,9600.0,9600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Galway Partners Holdings LLC,Other,Insurance,,0.0 %,SOFR,450,0.8 %,,2028-09-29,8400.0,8400.0,8400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-General Datatech LP,Other,Software,,,SOFR,625,1.0 %,,2027-06-18,126300.0,125600.0,125400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Gigamon Inc,Other,Software,,,SOFR,575,0.8 %,,2028-03-10,7500.0,7500.0,7500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Gigamon Inc,Other,Software,,,SOFR,575,1.0 %,,2029-03-09,105300.0,104600.0,105300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Gigamon Inc,Other,Software,,,SOFR,575,0.8 %,,2028-03-10,1900.0,1900.0,1900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Gracent LLC,Other,Healthcare Services,,12.5 %,Fixed,,,,2027-02-28,30900.0,28300.0,28900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Granicus Inc,Other,Software,,2.3 %,SOFR,350,0.8 %,,2031-01-17,16300.0,16200.0,16500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Granicus Inc,Other,Software,,2.3 %,SOFR,350,0.8 %,,2031-01-17,5000.0,5000.0,4900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Granicus Inc,Other,Software,,,SOFR,525,0.8 %,,2031-01-17,2300.0,2300.0,2300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Granicus Inc,Other,Software,,0.0%,SOFR,475,0.8 %,,2031-01-17,1000.0,1000.0,1000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Heniff Transportation Systems LLC,Other,Transportation & Logistics,,,SOFR,575,1.0 %,,2024-12-03,12600.0,12600.0,12600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Heniff Transportation Systems LLC,Other,Transportation & Logistics,,,SOFR,575,1.0 %,,2026-12-03,93500.0,89700.0,93500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Heniff Transportation Systems LLC,Other,Transportation & Logistics,,,SOFR,575,1.0 %,,2024-12-03,5200.0,5200.0,5200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Heritage Environmental Services Inc,Other,Environmental Services,,,SOFR,525,0.8 %,,2031-01-31,53200.0,52800.0,54300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Heritage Environmental Services Inc,Other,Environmental Services,,,SOFR,500,0.8 %,,2031-01-31,7500.0,7500.0,7500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Heritage Environmental Services Inc,Other,Environmental Services,,,SOFR,500,0.8 %,,2031-01-31,4000.0,4000.0,4000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Hibu Inc,Other,Business Services,,,SOFR,625,1.0 %,,2027-05-04,90600.0,88000.0,90600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Hibu Inc,Other,Business Services,,,SOFR,625,1.0 %,,2027-05-04,44700.0,44300.0,45600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Higginbotham Insurance Agency Inc,Other,Insurance,,,SOFR,475,1.0 %,,2028-11-24,3200.0,3200.0,3200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Higginbotham Insurance Agency Inc,Other,Insurance,,,SOFR,475,1.0 %,,2028-11-24,15000.0,15000.0,15000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Highgate Hotels Inc,Other,Hotels & Leisure,,,SOFR,550,1.0 %,,2029-11-05,33700.0,33400.0,34000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Highgate Hotels Inc,Other,Hotels & Leisure,,,SOFR,550,1.0 %,,2029-11-05,400.0,400.0,400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Highgate Hotels Inc,Other,Hotels & Leisure,,,SOFR,550,1.0 %,,2029-11-05,3800.0,3800.0,3800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-HKA,Other,Business Services,,1.8 %,SOFR,575,0.5 %,,2029-08-09,3500.0,3400.0,3500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-HM Dunn Co Inc,Other,Manufacturing,,6.0 %,SOFR,600,1.0 %,,2026-06-30,35100.0,35100.0,35100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-HM Dunn Co Inc,Other,Manufacturing,,6.0 %,SOFR,600,1.0 %,,2026-06-30,2900.0,2900.0,2900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-HM Dunn Co Inc,Other,Manufacturing,,6.0 %,SOFR,600,1.0 %,,2026-06-30,2000.0,2000.0,2000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Individual FoodService,Other,Manufacturing,,,SOFR,600,1.0 %,,2029-10-31,74300.0,73100.0,74300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Individual FoodService,Other,Manufacturing,,,SOFR,600,1.0 %,,2029-10-31,2200.0,2200.0,2200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Industria Chimica Emiliana Srl,Other,Pharmaceuticals & Biotechnology,,2.5 %,Euribor,475,0.0 %,,2026-09-27,17700.0,20800.0,18800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Industria Chimica Emiliana Srl,Other,Pharmaceuticals & Biotechnology,725,2.5 %,Euribor,,0.0 %,,2026-09-30,71200.0,82800.0,75600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Industry City TI Lessor LP,Other,Other,10.8 %,1.0 %,,,,,2026-06-30,17000.0,17000.0,17600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-iNova Pharmaceuticals (Australia) Pty Limited,Other,Pharmaceuticals & Biotechnology,650,,BKBM,,0.8 %,,2028-10-30,1800.0,1100.0,1200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Insight Global LLC,Other,Business Services,600,,SOFR,,0.8 %,,2028-09-22,175000.0,173800.0,175000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Insight Global LLC,Other,Business Services,600,,SOFR,,0.8 %,,2027-09-22,47900.0,47900.0,47900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Insightsoftware.Com Inc,Other,Software,525,,SOFR,,1.0 %,,2028-05-25,700.0,700.0,700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Insightsoftware.Com Inc,Other,Software,525,,SOFR,,1.0 %,,2028-05-25,16700.0,16700.0,16600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Insightsoftware.Com Inc,Other,Software,525,,SOFR,,0.8 %,,2028-05-25,7000.0,7000.0,7000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Insightsoftware.Com Inc,Other,Software,525,,SOFR,,1.0 %,,2028-05-25,4600.0,4600.0,4600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Integrity Marketing Group LLC,Other,Insurance,500,,SOFR,,0.8 %,,2028-08-25,98800.0,98800.0,98800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Integrity Marketing Group LLC,Other,Insurance,500,,SOFR,,0.8 %,,2028-08-28,100.0,100.0,100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Integrity Marketing Group LLC,Other,Insurance,500,,SOFR,,0.8 %,,2028-08-28,1600.0,1600.0,1600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-J S Held LLC,Other,Insurance,550,,SOFR,,1.0 %,,2026-12-01,141800.0,141400.0,141800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-J S Held LLC,Other,Insurance,550,,SOFR,,1.0 %,,2026-12-01,14100.0,14000.0,14100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Karman Space Inc,Other,Other,625,,SOFR,,2.0 %,,2025-12-21,94900.0,93600.0,95300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Karman Space Inc,Other,Other,625,,SOFR,,2.0 %,,2025-12-21,5500.0,5400.0,5500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Kellermeyer Bergensons Services LLC,Other,Business Services,175,3.5 %,SOFR,,1.0 %,,2028-11-06,196700.0,192400.0,196700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Kellermeyer Bergensons Services LLC,Other,Business Services,100,7.0 %,SOFR,,1.0 %,,2028-11-06,86800.0,85200.0,86400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Kellermeyer Bergensons Services LLC,Other,Business Services,175,3.5 %,SOFR,,1.0 %,,2028-11-06,5500.0,5500.0,5500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Laboratoires Vivacy SAS,Other,Pharmaceuticals & Biotechnology,675,2.4 %,Euribor,,0.0 %,,2030-03-20,100.0,100.0,100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Laboratoires Vivacy SAS,Other,Pharmaceuticals & Biotechnology,675,2.4 %,Euribor,,0.0 %,,2030-03-20,500.0,600.0,500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lakeview Farms Inc,Other,Food & Beverage,575,,SOFR,,1.0 %,,2027-06-10,67300.0,66200.0,67300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lakeview Farms Inc,Other,Food & Beverage,575,,SOFR,,1.0 %,,2027-06-10,2100.0,2100.0,2100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lakeview Farms Inc,Other,Food & Beverage,575,,SOFR,,1.0 %,,2027-06-10,4700.0,4700.0,4700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lazer Logistics Inc,Other,Transportation & Logistics,500,,SOFR,,0.8 %,,2030-05-06,24200.0,24000.0,24400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lazer Logistics Inc,Other,Transportation & Logistics,500,,SOFR,,0.8 %,,2029-05-04,1900.0,1900.0,1900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lazer Logistics Inc,Other,Transportation & Logistics,500,,SOFR,,0.8 %,,2030-05-06,5700.0,5700.0,5700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Legends Hospitality LLC,Other,Other,500,2.8 %,SOFR,,0.8 %,,2031-08-22,117200.0,116000.0,116000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Legends Hospitality LLC,Other,Other,500,2.5 %,SOFR,,0.8 %,,2030-08-22,13800.0,13800.0,13600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Legends Hospitality LLC,Other,Other,500,2.8 %,SOFR,,0.8 %,,2031-08-22,6900.0,6900.0,6800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lexitas Inc,Other,Business Services,625,,SOFR,,1.0 %,,2029-05-18,117500.0,115200.0,119800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lexitas Inc,Other,Commercial & Professional Services,SF+ 625,,,,1.0 %,,2029-05-18,8400.0,8400.0,8400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lexitas Inc,Other,Commercial & Professional Services,SF+ 625,,,,1.0 %,,2029-05-18,28600.0,28600.0,29100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lionbridge Technologies Inc,Other,Media & Entertainment,SF+ 700,,,,1.0 %,,2025-12-29,99600.0,98000.0,99600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lipari Foods LLC,Other,Consumer Staples Distribution & Retail,SF+ 650,,,,1.0 %,,2028-10-31,99800.0,98800.0,98700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lipari Foods LLC,Other,Consumer Staples Distribution & Retail,SF+ 650,,,,1.0 %,,2028-10-31,15000.0,15000.0,14800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lloyd's Register Quality Assurance Ltd,Other,Consumer Services,SA+ 600,3.0 %,,,0.0 %,,2028-12-04,12300.0,15900.0,16500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lloyd's Register Quality Assurance Ltd,Other,Consumer Services,SA+ 600,3.0 %,,,0.0 %,,2028-12-04,2700.0,4100.0,4100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Magna Legal Services LLC,Other,Commercial & Professional Services,SF+ 600,,,,0.8 %,,2029-11-21,4500.0,4500.0,4600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Magna Legal Services LLC,Other,Commercial & Professional Services,SF+ 650,,,,0.8 %,,2029-11-22,23300.0,23100.0,23500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Magna Legal Services LLC,Other,Commercial & Professional Services,SF+ 650,,,,0.8 %,,2028-11-22,2200.0,2200.0,2200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Magna Legal Services LLC,Other,Commercial & Professional Services,SF+ 600,,,,0.8 %,,2029-11-21,8900.0,8900.0,8900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-MAI Capital Management LLC,Other,Financial Services,SF+ 475,2.4 %,,,0.8 %,,2031-08-29,6700.0,6700.0,6700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-MAI Capital Management LLC,Other,Financial Services,SF+ 475,,,,0.8 %,,2031-08-29,2500.0,2500.0,2500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-MB2 Dental Solutions LLC,Other,Health Care Equipment & Services,SF+ 600,,,,0.8 %,,2031-02-13,117800.0,116700.0,118800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-MB2 Dental Solutions LLC,Other,Health Care Equipment & Services,SF+ 600,,,,0.8 %,,2031-02-13,69600.0,69600.0,70200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-MB2 Dental Solutions LLC,Other,Health Care Equipment & Services,SF+ 600,,,,0.8 %,,2031-02-13,10700.0,10700.0,10700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Medallia Inc,Other,Software & Services,SF+ 250,4.0 %,,,0.8 %,,2028-10-29,223700.0,222100.0,219200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Med-Metrix,Other,Software & Services,SF+ 550,,,,1.0 %,,2027-09-15,119000.0,118800.0,119300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Med-Metrix,Other,Software & Services,SF+ 550,,,,1.0 %,,2027-09-15,7800.0,7800.0,7800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Miami Beach Medical Group LLC,Other,Health Care Equipment & Services,,,,,,,2025-12-14,10900.0,5500.0,10400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Miami Beach Medical Group LLC,Other,Health Care Equipment & Services,SF+ 650,1.5 %,,,1.0 %,,2027-12-14,133600.0,124000.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Misys Ltd,Other,Software & Services,SF+ 725,,,,1.0 %,,2029-09-13,700.0,700.0,700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Model N Inc,Other,Software & Services,SF+ 500,3.0 %,,,0.8 %,,2031-06-27,24900.0,24700.0,24800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Model N Inc,Other,Software & Services,SF+ 500,3.0 %,,,0.8 %,,2031-06-27,5100.0,5100.0,5100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Model N Inc,Other,Software & Services,SF+ 500,,,,0.8 %,,2031-06-27,2700.0,2700.0,2700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-NBG Home,Other,Consumer Durables & Apparel,,,,,,,2025-03-30,10100.0,10100.0,10100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-NBG Home,Other,Consumer Durables & Apparel,"SF+ 1,000","1,000 %",,,1.0 %,,2025-03-31,32700.0,30700.0,9600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-NCI Inc,Other,Software & Services,SF+ 750,7.5 %,,,1.0 %,,2028-08-15,32500.0,32700.0,32500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Net Documents,Other,Software & Services,SF+ 475,,,,1.0 %,,2029-07-02,2000.0,2000.0,2000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Net Documents,Other,Software & Services,SF+ 475,,,,1.0 %,,2029-07-02,33000.0,32800.0,33000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Netsmart Technologies Inc,Other,Health Care Equipment & Services,SF+ 475,2.3 %,,,0.5 %,,2031-08-23,46500.0,46200.0,46200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Netsmart Technologies Inc,Other,Healthcare Services,"475 , 0.0 %",2.3 %,SOFR,4.75%,0.5 %,,2031-08-23,6200.0,6200.0,6200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-New Era Technology Inc,Other,Software,625,,SOFR,6.25%,1.0 %,,2026-10-31,25000.0,24400.0,24900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-New Era Technology Inc,Other,Software,625,,SOFR,6.25%,1.0 %,,2026-10-31,3700.0,3700.0,3700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-New Era Technology Inc,Other,Software,625,,SOFR,6.25%,1.0 %,,2026-10-31,900.0,900.0,900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Nordic Climate Group Holding AB,Other,Business Services,590,,SOFR,5.90%,0.0 %,,2031-06-10,313800.0,29100.0,30000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Nordic Climate Group Holding AB,Other,Business Services,575,,SOFR,5.75%,0.0 %,,2031-06-10,42400.0,3400.0,4100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Nordic Climate Group Holding AB,Other,Business Services,575,,Euribor,5.75%,0.0 %,,2031-06-10,,31900.0,33000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Nordic Climate Group Holding AB,Other,Business Services,575,,SOFR,5.75%,0.0 %,,2031-06-10,184700.0,17600.0,17000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-NovaTaste Austria GmbH,Other,Food & Beverage,550,,Euribor,5.50%,0.0 %,,2030-04-05,,4900.0,5000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-OEConnection LLC,Other,Software,525,,SOFR,5.25%,0.8 %,,2031-04-22,9000.0,9000.0,9100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Omnimax International Inc,Other,Manufacturing,675,,SOFR,6.75%,1.0 %,,2026-10-08,111300.0,108400.0,112600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-One Call Care Management Inc,Other,Healthcare Services,550,,SOFR,5.50%,0.8 %,,2027-04-22,4800.0,4700.0,4700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Oxford Global Resources LLC,Other,Business Services,600,,SOFR,6.00%,1.0 %,,2027-08-17,93100.0,92700.0,93100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Oxford Global Resources LLC,Other,Business Services,600,,SOFR,6.00%,1.0 %,,2027-08-17,8400.0,8400.0,8600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-PartsSource Inc,Other,Healthcare Services,575,,SOFR,5.75%,0.8 %,,2026-08-21,2900.0,2800.0,2900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-PartsSource Inc,Other,Healthcare Services,575,,SOFR,5.75%,0.8 %,,2028-08-23,72200.0,71600.0,72200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-PartsSource Inc,Other,Healthcare Services,575,,SOFR,5.75%,0.8 %,,2026-08-21,1400.0,1400.0,1400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-PartsSource Inc,Other,Healthcare Services,575,,SOFR,5.75%,0.8 %,,2028-08-23,16900.0,16900.0,16900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Performance Health Holdings Inc,Other,Healthcare Services,575,,SOFR,5.75%,1.0 %,,2027-07-12,93200.0,92600.0,93200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Production Resource Group LLC,Other,Media & Entertainment,3.0 %,500,SOFR,5.00%,1.0 %,,2029-08-21,98100.0,98200.0,101100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Production Resource Group LLC,Other,Media & Entertainment,3.0 %,"1,100",SOFR,11.00%,0.3 %,,2029-08-21,184700.0,184700.0,188400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Production Resource Group LLC,Other,Media & Entertainment,3.0 %,250,SOFR,2.50%,1.0 %,,2029-08-21,300.0,200.0,300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-PSC Group,Other,Transportation & Logistics,525,,SOFR,5.25%,0.8 %,,2030-04-03,1400.0,1400.0,1400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-PSC Group,Other,Transportation & Logistics,525,,SOFR,5.25%,0.8 %,,2031-04-03,16000.0,15800.0,16000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-PSC Group,Other,Transportation & Logistics,525,,SOFR,5.25%,0.8 %,,2031-04-03,3300.0,3300.0,3300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-PSKW LLC (dba ConnectiveRx),Other,Healthcare Services,625,,SOFR,6.25%,1.0 %,,2026-03-09,231000.0,227600.0,231000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Pure Fishing Inc,Other,Consumer Products,450,,SOFR,4.50%,0.0 %,,2025-12-22,33100.0,32800.0,32400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Radwell International LLC,Other,Manufacturing,550,,SOFR,5.50%,0.8 %,,2028-04-01,1400.0,1400.0,1400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Radwell International LLC,Other,Manufacturing,550,,SOFR,5.50%,0.8 %,,2029-04-01,66800.0,66800.0,67100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Radwell International LLC,Other,Manufacturing,550,,SOFR,5.50%,0.8 %,,2028-04-01,5500.0,5500.0,5500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Reliant Rehab Hospital Cincinnati LLC,Other,Healthcare Services,625,,SOFR,6.25%,0.0 %,,2026-02-28,44600.0,43400.0,43400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Reliant Rehab Hospital Cincinnati LLC,Other Debt,Healthcare Services,,8.3 %,SOFR,6.25%,0.0 %,,2026-02-28,47700.0,42200.0,11700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Reliant Rehab Hospital Cincinnati LLC,Other Debt,Healthcare Services,,,SOFR,6.25,0.0 %,,2026-02-28,2100.0,2100.0,2000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Revere Superior Holdings Inc,Other Debt,Software & Services,,,SOFR,5.00,1.0 %,,2029-10-01,42200.0,41800.0,42300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Revere Superior Holdings Inc,Other Debt,Software & Services,,,SOFR,5.00,1.0 %,,2029-10-01,3800.0,3800.0,3800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Rise Baking Company,Other Debt,Food & Beverage,,,SOFR,6.25,1.0 %,,2027-08-13,1800.0,1800.0,1800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Rise Baking Company,Other Debt,Food & Beverage,,,SOFR,6.25,1.0 %,,2027-08-13,28000.0,27600.0,28000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Rise Baking Company,Other Debt,Food & Beverage,,,SOFR,6.25,1.0 %,,2027-08-13,3400.0,3400.0,3400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Rockefeller Capital Management LP,Other Debt,Financial Services,,,SOFR,5.00,0.5 %,,2031-04-04,23800.0,23600.0,24100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-RSC Insurance Brokerage Inc,Other Debt,Insurance,,,SOFR,4.75,0.8 %,,2029-11-01,185800.0,181800.0,185800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-RSC Insurance Brokerage Inc,Other Debt,Insurance,,,SOFR,4.75,0.8 %,,2029-11-01,17600.0,17600.0,17600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-RSC Insurance Brokerage Inc,Other Debt,Insurance,,,SOFR,4.75,0.8 %,,2029-11-01,9700.0,9600.0,9700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Safe-Guard Products International LLC,Other Debt,Financial Services,,,SOFR,4.75,0.8 %,,2030-04-03,42200.0,41900.0,42400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Safe-Guard Products International LLC,Other Debt,Financial Services,,,SOFR,4.75,0.8 %,,2030-04-03,8800.0,8800.0,8800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-SAMBA Safety Inc,Other Debt,Software & Services,,,SOFR,5.25,1.0 %,,2027-09-01,8000.0,8000.0,8000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-SAMBA Safety Inc,Other Debt,Software & Services,,,SOFR,5.25,1.0 %,,2027-09-01,900.0,900.0,900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-SAMBA Safety Inc,Other Debt,Software & Services,,,SOFR,5.25,1.0 %,,2027-09-01,1500.0,1500.0,1500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Service Express Inc,Other Debt,Business Services,,2.4 %,SOFR,4.75%,0.5 %,,2031-08-15,31300.0,31200.0,31200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Service Express Inc,Other Debt,Business Services,,2.4 %,SOFR,4.75%,0.5 %,,2031-08-15,7500.0,7500.0,7400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Service Express Inc,Other Debt,Business Services,,,SOFR,4.75,0.5 %,,2031-08-15,4300.0,4300.0,4200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Shaw Development LLC,Other Debt,Manufacturing,,,SOFR,6.00,0.5 %,,2029-10-30,28600.0,28400.0,28300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Shaw Development LLC,Other Debt,Manufacturing,,,SOFR,6.00,0.5 %,,2029-10-30,3400.0,3400.0,3400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-SitusAMC Holdings Corp,Other Debt,Real Estate,,,SOFR,5.50,1.0 %,,2027-12-22,15900.0,15900.0,16000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Source Code LLC,Other Debt,Software & Services,,,SOFR,6.50,1.0 %,,2027-06-30,3600.0,3600.0,3600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Source Code LLC,Other Debt,Software & Services,,,SOFR,6.50,1.0 %,,2027-07-30,49600.0,49100.0,49600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Spins LLC,Other Debt,Software & Services,,,SOFR,5.50,1.0 %,,2027-01-20,64300.0,62900.0,64300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Spins LLC,Other Debt,Software & Services,,,SOFR,5.50,1.0 %,,2027-01-20,9100.0,9100.0,9100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Spotless Brands LLC,Other Debt,Consumer Products,,,SOFR,5.75,1.0 %,,2028-07-25,30900.0,30500.0,30900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Spotless Brands LLC,Other Debt,Consumer Products,,,SOFR,5.50,1.0 %,,2028-07-25,2200.0,2200.0,2200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-STV Group Inc,Other Debt,Manufacturing,,,SOFR,5.25,0.8 %,,2030-03-20,1200.0,1200.0,1200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-STV Group Inc,Other Debt,Manufacturing,,,SOFR,5.00,0.8 %,,2031-03-20,10000.0,9900.0,10000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-STV Group Inc,Other Debt,Manufacturing,,,SOFR,5.25,0.8 %,,2030-03-20,7100.0,7100.0,7100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Summit Interconnect Inc,Other Debt,Manufacturing,,,SOFR,6.00,1.0 %,,2028-09-22,134600.0,133800.0,123700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Sweeping Corp of America Inc,Other Debt,Business Services,,,SOFR,5.75,1.0 %,,2027-06-30,15700.0,15100.0,15700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Sweeping Corp of America Inc,Other Debt,Business Services,,,SOFR,5.75%,1.0 %,,2027-06-30,29600.0,29600.0,29600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Sweeping Corp of America Inc,Other Debt,Business Services,,,SOFR,5.75%,1.0 %,,2027-06-30,5700.0,5700.0,5700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Tangoe LLC,Other Debt,Software,,1.7 %,SOFR,4.99%,1.0 %,,2026-06-30,168800.0,162200.0,157200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Tangoe LLC,Other Debt,Software,12.5 %,12.5 %,Fixed,,,,2026-06-30,15000.0,8900.0,400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Tekfor HoldCo (formerly Amtek Global Technology Pte Ltd),Other Debt,Automotive,,,N/A,,,,2025-04-04,42500.0,40100.0,4300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ThreeSixty Group,Other Debt,Retail,,2.5 %,SOFR,5.00%,1.5 %,,2025-09-30,91500.0,92700.0,90200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Time Manufacturing Co,Other Debt,Manufacturing,,,SOFR,6.50%,0.8 %,,2027-12-01,45100.0,44500.0,41000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Time Manufacturing Co,Other Debt,Manufacturing,,,SOFR,6.50%,0.8 %,,2027-12-01,4300.0,4300.0,3900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Time Manufacturing Co,Other Debt,Manufacturing,,,Euribor,4.50%,0.8 %,,2027-12-01,13600.0,14400.0,13800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Time Manufacturing Co,Other Debt,Manufacturing,,,SOFR,6.50%,0.8 %,,2027-12-01,19500.0,19500.0,17700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Trescal SA,Other Debt,Business Services,,,Euribor,5.50%,0.0 %,,2030-04-29,3900.0,4400.0,4400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Trescal SA,Other Debt,Business Services,,,Euribor,5.50%,0.0 %,,2030-04-29,600.0,700.0,700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Trescal SA,Other Debt,Business Services,,,Euribor,5.00%,0.0 %,,2030-04-29,10300.0,11500.0,11400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Turnpoint Services Inc,Other Debt,Manufacturing,,0.0 %,SOFR,5.00%,0.8 %,,2031-06-17,12900.0,12800.0,12800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Turnpoint Services Inc,Other Debt,Manufacturing,,0.0 %,SOFR,5.00%,0.8 %,,2030-06-17,1600.0,1600.0,1600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Turnpoint Services Inc,Other Debt,Manufacturing,,0.0 %,SOFR,5.00%,0.8 %,,2031-06-17,2500.0,2500.0,2500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Ultra Electronics Holdings Ltd,Other Debt,Manufacturing,,,SOFR,3.75%,0.5 %,,2029-08-03,1700.0,1700.0,1700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-USIC Holdings Inc,Other Debt,Business Services,,,SOFR,5.50%,0.8 %,,2031-09-10,119200.0,118600.0,118600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-USIC Holdings Inc,Other Debt,Business Services,,,SOFR,5.50%,0.8 %,,2031-09-10,200.0,200.0,200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-USIC Holdings Inc,Other Debt,Business Services,,,SOFR,5.25%,0.8 %,,2031-09-10,7400.0,7400.0,7400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Version1 Software Ltd,Other Debt,Software,,0.0 %,Euribor,5.75%,0.0 %,,2029-07-11,2000.0,2500.0,2200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Version1 Software Ltd,Other Debt,Software,,0.0 %,Euribor,5.75%,0.0 %,,2029-07-11,11700.0,12300.0,12300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-VetCor Professional Practices LLC,Other Debt,Healthcare Services,,,SOFR,5.75%,0.8 %,,2029-08-31,68100.0,67600.0,68100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-VetCor Professional Practices LLC,Other Debt,Healthcare Services,,,SOFR,6.00%,0.8 %,,2029-08-31,5300.0,5300.0,5300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-VetCor Professional Practices LLC,Other Debt,Healthcare Services,,,SOFR,6.00%,0.8 %,,2029-08-31,3200.0,3200.0,3200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-VetCor Professional Practices LLC,Other Debt,Healthcare Services,,,SOFR,5.25%,0.8 %,,2029-08-31,34300.0,34100.0,34000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Vytalogy Wellness LLC (fka Jarrow Formulas Inc),Other Debt,Consumer Products,,,SOFR,6.25%,1.0 %,,2026-11-30,114000.0,111100.0,109000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Wealth Enhancement Group LLC,Other Debt,Financial Services,,,SOFR,5.50%,1.0 %,,2028-10-04,0.0,0.0,0.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Wealth Enhancement Group LLC,First Lien,Financial Services,SF+ 550,,SOFR,,1.0 %,,2028-10-04,400.0,400.0,400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Wealth Enhancement Group LLC,First Lien,Financial Services,SF+ 550,,SOFR,,1.0 %,,2028-10-04,2100.0,2100.0,2100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Wealth Enhancement Group LLC,First Lien,Financial Services,SF+ 550,,SOFR,,1.0 %,,2028-10-04,1000.0,1000.0,1000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Wittur Holding GmbH,First Lien,Capital Goods,0.1 %,5.9 %,Fixed,,,,2028-12-29,53800.0,57600.0,57300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Woolpert Inc,First Lien,Capital Goods,SF+ 500,,SOFR,,1.0 %,,2029-04-05,3300.0,3300.0,3300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Woolpert Inc,First Lien,Capital Goods,SF+ 500,,SOFR,,1.0 %,,2030-04-05,72800.0,72800.0,72900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Woolpert Inc,First Lien,Capital Goods,SF+ 500,,SOFR,,1.0 %,,2029-04-05,15200.0,15200.0,15200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Woolpert Inc,First Lien,Capital Goods,SF+ 500,,SOFR,,1.0 %,,2030-04-05,31200.0,31200.0,31200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Worldwise Inc,First Lien,Household & Personal Products,SF+ 625,0.5 %,SOFR,,1.0 %,,2028-03-29,40700.0,40600.0,27000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Worldwise Inc,First Lien,Household & Personal Products,SF+ 625,0.5 %,SOFR,,1.0 %,,2028-03-29,14200.0,14200.0,9500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Worldwise Inc,First Lien,Household & Personal Products,SF+ 625,0.5 %,SOFR,,1.0 %,,2028-03-29,28000.0,28000.0,18600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Zellis Holdings Ltd,First Lien,Software & Services,SA+ 550,0.0 %,N/A,,0.0 %,,2031-08-13,6300.0,8000.0,7900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Zendesk Inc,First Lien,Software & Services,SF+ 500,,SOFR,,0.8 %,,2028-11-22,59600.0,59200.0,59600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Zendesk Inc,First Lien,Software & Services,SF+ 500,,SOFR,,0.8 %,,2028-11-22,14500.0,14400.0,14500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Zendesk Inc,First Lien,Software & Services,SF+ 500,,SOFR,,0.8 %,,2028-11-22,6000.0,6000.0,6000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Zeus Industrial Products Inc,First Lien,Health Care Equipment & Services,SF+ 550,0.0 %,SOFR,,0.8 %,,2031-02-28,82900.0,82300.0,83700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Zeus Industrial Products Inc,First Lien,Health Care Equipment & Services,SF+ 550,,SOFR,,0.8 %,,2030-02-28,11600.0,11600.0,11600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Zeus Industrial Products Inc,First Lien,Health Care Equipment & Services,SF+ 550,,SOFR,,0.8 %,,2031-02-28,15500.0,15500.0,15600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Constellis Holdings LLC,Second Lien,Capital Goods,SF+ 900,,SOFR,,1.0 %,,2028-12-31,7000.0,6800.0,7000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Cubic Corp,Second Lien,Software & Services,SF+ 763,,SOFR,,0.8 %,,2029-05-25,44800.0,42700.0,37400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Ellucian Inc,Second Lien,Software & Services,SF+ 800,,SOFR,,1.0 %,,2028-10-09,112800.0,107300.0,112800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Integrated Power Services LLC,Second Lien,Business Services,SF+ 750,,SOFR,,0.8 %,,2029-11-22,46300.0,45600.0,45800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Peraton Corp,Second Lien,Capital Goods,SF+ 800,,SOFR,,1.0 %,,2029-02-01,175000.0,167900.0,175000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Quoizel, LLC",Second Lien,Consumer Products,SF+ 650,SF+ 650,SOFR,,1.0 %,,2027-07-11,7100.0,7100.0,7100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Solera LLC,Second Lien,Software & Services,SF+ 900,,SOFR,,1.0 %,,2029-06-04,335900.0,323300.0,335900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Sweeping Corp of America Inc,Other,Commercial & Professional Services,,,N/A,,,,2034-03-12,8300.0,4500.0,4500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Sweeping Corp of America Inc,Other,Commercial & Professional Services,,,N/A,,,,2036-03-12,24000.0,,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Valeo Foods Group Ltd,Other,Food & Beverage,,,Euribor,7.50%,0.0%,,2030-10-01,3800.0,4100.0,4000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Valeo Foods Group Ltd,Other,Food & Beverage,,,Euribor,7.50%,0.0%,,2030-10-01,2300.0,3000.0,2900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-JW Aluminum Co,Other,Manufacturing,10.3%,,Fixed,,,,2026-06-01,76500.0,76000.0,76600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-One Call Care Management Inc,Other,Healthcare Services,8.5%,8.5 %,N/A,,,,2028-11-01,29000.0,27700.0,23900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-TIBCO Software Inc,Other,Software,6.5%,,Fixed,,,,2029-03-31,700.0,600.0,700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Warren Resources Inc,Other,Energy,4.0%,,Fixed,,,,2026-12-01,24300.0,24300.0,20800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Apex Service Partners LLC,Other,Business Services,,14.3 %,N/A,,,,2031-04-23,21900.0,21600.0,21400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ATX Networks Corp,Other,Manufacturing,,10.0 %,N/A,,,,2028-09-01,43000.0,21400.0,24000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Colosseum Dental Group,Other,Healthcare Services,,8.5 %,N/A,,,,2029-04-23,10900.0,11300.0,11800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Element Materials Technology Group US Holdings Inc,Other,Business Services,,SF+ 850,SOFR,8.50%,0.5%,,2031-07-09,4000.0,4000.0,4100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Miami Beach Medical Group LLC,Other,Healthcare Services,,1.5 %,SOFR,6.50%,1.0%,,2024-10-04,17200.0,17200.0,11200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Miami Beach Medical Group LLC,Other,Healthcare Services,,1.5 %,SOFR,6.50%,1.0%,,2024-10-04,9100.0,9100.0,6000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Sorenson Communications LLC,Other,Telecommunications,,,N/A,,,,2030-04-01,11500.0,8900.0,11300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Sorenson Communications LLC,Other,Telecommunications,,,N/A,,,,2030-04-01,45300.0,32000.0,41000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Ultra Electronics Holdings Ltd,Other,Technology Hardware,,,SOFR,7.25%,0.5%,,2030-01-31,62900.0,61400.0,62400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Ultra Electronics Holdings Ltd,Other,Technology Hardware,,SF+ 900,SOFR,9.00%,0.5%,,2031-01-31,38000.0,37400.0,36900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-801 5th Ave Seattle ABF Equity,Other,Real Estate,,,N/A,,,,,,14000.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"801 5th Ave, Seattle, Structured Mezzanine",Other,Real Estate,8.0%,3.0%,,,,,2029-12-19,60600.0,59100.0,51900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Abacus JV, ABF Equity",Other,Insurance,,,,,,,,47045141000.0,46100.0,41200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Accelerator Investments Aggregator LP, ABF Equity",Other,Financial Services,,,,,,,,1339253000.0,1500.0,1000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Altavair AirFinance, ABF Equity",Other,Manufacturing,,,,,,,,123869649000.0,124800.0,132300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Altitude II IRL WH Borrower DAC, Revolver",Revolver,Manufacturing,,,SOFR,10.00%,0.0%,,2030-01-12,4900.0,4900.0,4900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Australis Maritime II, ABF Equity",Other,Transportation & Logistics,,,,,,,,20944451000.0,20900.0,21600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Australis Maritime, Common Stock",Common Equity,Transportation & Logistics,,,N/A,,,,,23226239000.0,23200.0,22000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Auxilior Capital Partners Inc, Preferred Equity",Preferred Equity,Financial Services,5.0%,9.5%,,,,,2030-04-30,16900.0,16900.0,17100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Avenue One PropCo, ABF Equity",Other,Real Estate,,,,,,,,10339283000.0,10300.0,10900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Avenue One PropCo, Term Loan",Other,Real Estate,,7.0%,,,,,2034-03-15,31700.0,31700.0,31700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Avida Holding AB, Common Stock",Common Equity,Financial Services,,,N/A,,,,,444962569000.0,49900.0,42900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Avida Holding AB, Subordinated Bond",Subordinated Debt,Financial Services,,,SOFR,9.25%,0.0%,,2034-01-27,15000.0,1300.0,1500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Bankers Healthcare Group LLC, Term Loan",Other,Financial Services,22.0%,,,,,,2027-11-08,8800.0,8800.0,8700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Bausch Health Cos Inc, Revolver",Revolver,Pharmaceuticals & Biotechnology,,,SOFR,6.65%,1.0%,,2028-01-28,60000.0,60000.0,60000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Callodine Commercial Finance LLC, 2L Term Loan A",Second Lien,Financial Services,,,SOFR,9.00%,1.0%,,2025-11-03,94900.0,92100.0,94900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Callodine Commercial Finance LLC, 2L Term Loan B",Second Lien,Financial Services,,,SOFR,9.00%,1.0%,,2025-11-03,12000.0,12000.0,12000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Callodine Commercial Finance LLC, 2L Term Loan B",Second Lien,Financial Services,,,SOFR,9.00%,1.0%,,2025-11-03,36100.0,36100.0,36100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Capital Automotive LP, ABF Equity",Other,Real Estate,,,,,,,,20220146000.0,22300.0,33000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Capital Automotive LP, Structured Mezzanine",Other,Real Estate,11.0%,,,,,,2028-12-22,40400.0,39900.0,40400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Covis Finco Sarl, Revolver",Revolver,Pharmaceuticals & Biotechnology,,,SOFR,6.75%,1.0%,,2026-11-20,10800.0,10800.0,10800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Covis Finco Sarl, Revolver",Revolver,Pharmaceuticals & Biotechnology,,,Prime,6.75%,1.0%,,2026-11-30,1300.0,900.0,1000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Covis Finco Sarl, Revolver",Revolver,Pharmaceuticals & Biotechnology,,,Euribor,6.75%,1.0%,,2026-11-30,2300.0,2300.0,2500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Curia Global Inc, Revolver",Revolver,Pharmaceuticals & Biotechnology,,,SOFR,6.25%,1.0%,,2029-01-29,42000.0,42000.0,42000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Curia Global Inc,Revolver,Pharmaceuticals & Biotechnology,,,SOFR,6.25%,1.0 %,,2029-01-29,41300.0,41300.0,41300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Discover Financial Services,Common Equity,Financial Services,,,N/A,,,,,,2600.0,2600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Discover Financial Services,Subordinated Debt,Financial Services,15.0 %,,Fixed,,,,2034-09-06,4800.0,4800.0,4800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Discover Financial Services,Subordinated Debt,Financial Services,15.0 %,,Fixed,,,,2034-09-06,34100.0,34100.0,34100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Drive Revel,Common Equity,Financial Services,,,N/A,,,,,,6600.0,8300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Global Jet Capital LLC,Preferred Equity,Commercial & Professional Services,,,N/A,,,,,,242900.0,171800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Global Lending Services LLC,Common Equity,Financial Services,,,N/A,,,,,,3300.0,4200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Global Lending Services LLC,Common Equity,Financial Services,,,N/A,,,,,,6100.0,5600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Global Lending Services LLC,Common Equity,Financial Services,,,N/A,,,,,,53900.0,57400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Global Lending Services LLC,Common Equity,Financial Services,,,N/A,,,,,,200.0,200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-GreenSky Holdings LLC,Common Equity,Financial Services,,,N/A,,,,,,10700.0,13500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-GreenSky Holdings LLC,Common Equity,Financial Services,,,N/A,,,,,,17300.0,16900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-GreenSky Holdings LLC,Term Loan,Financial Services,9.3 %,9.3 %,Fixed,,,,2034-03-14,33500.0,33500.0,33500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-GreenSky Holdings LLC,Term Loan,Financial Services,9.3 %,9.3 %,Fixed,,,,2034-03-14,3000.0,3000.0,3000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Kilter Finance,Common Equity,Insurance,,,N/A,,,,,,500.0,500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Kilter Finance,Preferred Equity,Insurance,12.0 %,,Fixed,,,,,101200.0,100400.0,101200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-KKR Altitude II Offshore Aggregator LP,Partnership Interest,Manufacturing,,,N/A,,,,,,83500.0,90300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-KKR Central Park Leasing Aggregator L.P.,Partnership Interest,Manufacturing,14.3 %,,Fixed,,,,2026-05-31,39100.0,39100.0,15600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-KKR Chord IP Aggregator LP,Partnership Interest,Media & Entertainment,,,N/A,,,,,,200.0,24000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-KKR Rocket Loans Aggregator LLC,Partnership Interest,Financial Services,,,N/A,,,,,,5700.0,5000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-KKR Zeno Aggregator LP (K2 Aviation),Partnership Interest,Manufacturing,,,N/A,,,,,,4400.0,6500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lennar Corp,Common Equity,Consumer Products,,,N/A,,,,,,11600.0,11600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lennar Corp,Term Loan,Consumer Products,10.8 %,,Fixed,,,,2029-08-30,10000.0,10000.0,10000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lennar Corp,Term Loan,Consumer Products,10.8 %,,Fixed,,,,2029-08-30,4800.0,4800.0,4800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-My Community Homes PropCo 2,Common Equity,Real Estate,,,N/A,,,,,,20300.0,17400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-My Community Homes PropCo 2,Term Loan,Real Estate,7.5 %,7.5 %,Fixed,,,,2034-03-15,63200.0,63200.0,63200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-NewStar Clarendon 2014-1A Class D,CLO,Financial Services,45.3 %,,Fixed,,,,2027-01-25,8300.0,1400.0,2400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Norway_France,Common Equity,Financial Services,,,N/A,,,,,,11900.0,11900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Optio Invest,Common Equity,Financial Services,,,N/A,,,,,,4700.0,4800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-PayPal Europe Sarl et Cie SCA,Common Equity,Financial Services,,,N/A,,,,,,63900.0,70800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Prime ST LLC,Common Equity,Real Estate,,,N/A,,,,,,8900.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Prime ST LLC  Structured Mezzanine,Other,Real Estate Investment Trusts (REITs),5.0 %,6.0 %,,,,,2030-03-12,58900.0,57400.0,25700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Residential Opportunities I LLC  ABF Equity,Other,Real Estate Management & Development,,,N/A,,,,,39000.0,0.0,100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Roemanu LLC (FKA Toorak Capital Partners LLC)  ABF Equity,Other,Financial Services,,,N/A,,,,,220778388000.0,236500.0,238700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Saluda Grade Alternative Mortgage Trust 2022-BC2  Structured Mezzanine,Other,Real Estate Management & Development,18.0 %,,,,,,2030-07-25,3400.0,2400.0,2900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Saluda Grade Alternative Mortgage Trust 2023-LOC2  Structured Mezzanine,Other,Real Estate Management & Development,,,,,,,2053-10-25,5199630000.0,8500.0,8000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Star Mountain Diversified Credit Income Fund III LP  ABF Equity,Other,Financial Services,,,N/A,,,,,23500000000.0,23500.0,23800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-SunPower Financial  ABF Equity,Other,Financial Services,,,N/A,,,,,3690938000.0,3700.0,3900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Synovus Financial Corp  ABF Equity,Other,Banks,,,N/A,,,,,5164096000.0,5200.0,5500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-TalkTalk Telecom Group Ltd  Revolver,Other,Commercial & Professional Services,,,,700,1.5 %,,2026-09-05,33900.0,42500.0,45400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-TalkTalk Telecom Group Ltd  Revolver,Other,Commercial & Professional Services,,,,700,1.5 %,,2026-09-05,9500.0,12100.0,12100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-TDC LLP  ABF Equity,Other,Financial Services,,,N/A,,,,,1576060000.0,2000.0,2000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-TDC LLP  Preferred Equity,Other,Financial Services,8.0 %,,,,,,,26700.0,33700.0,36000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Trinseo Materials Operating SCA / Trinseo Materials Finance Inc  Revolver,Other,Materials,,,,475,1.0 %,,2028-01-18,58500.0,58500.0,58600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Vehicle Secured Funding Trust  ABF Equity,Other,Financial Services,,,N/A,,,,,21111425000.0,21100.0,21900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Vehicle Secured Funding Trust  Term Loan,Other,Financial Services,15.0 %,15.0 %,,,,,2046-01-25,63300.0,63300.0,63300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Weber-Stephen Products LLC  Revolver,Other,Consumer Discretionary Distribution & Retail,,,,575,1.0 %,,2026-12-19,15500.0,15500.0,15600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Weber-Stephen Products LLC  Revolver,Other,Consumer Discretionary Distribution & Retail,,,,575,1.0 %,,2026-12-19,67900.0,67900.0,68200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Credit Opportunities Partners JV LLC,Other,Credit Opportunities Partners JV LLC,,,N/A,,,,,1637300.0,1571700.0,1383800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Affordable Care Inc Preferred Stock,Preferred Equity,Health Care Equipment & Services,,11.8 %,N/A,,,,,,48100.0,49300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-American Vision Partners Private Equity,Common Equity,Health Care Equipment & Services,,,N/A,,,,,,2700.0,1900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Amerivet Partners Management Inc Preferred Stock,Preferred Equity,Healthcare Services,,11.5 %,N/A,,,,,,12300.0,9200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Arcos LLC/VA Preferred Stock,Preferred Equity,Software,,950 %,SOFR,,1.0 %,,2031-04-30,,14100.0,12600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Arena Energy LP Warrants,Warrants,Energy,,,N/A,,,,,,400.0,100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Ascent Resources Utica Holdings LLC / ARU Finance Corp Trade Claim,Other,Energy,,,N/A,,,,,,18100.0,21200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Ascent Resources Utica Holdings LLC / ARU Finance Corp Common Stock,Common Equity,Energy,,,N/A,,,,,,9700.0,2500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-athenahealth Inc Preferred Stock,Preferred Equity,Healthcare Services,,10.8 %,N/A,,,,,,262200.0,260500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ATX Networks Corp Class B-1 Common Stock,Common Equity,Manufacturing,,,N/A,,,,,,5000.0,0.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ATX Networks Corp Class B-2 Common Stock,Common Equity,Manufacturing,,,N/A,,,,,,4000.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ATX Networks Corp Common Stock,Common Equity,Manufacturing,,,N/A,,,,,,9900.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Belk Inc Common Stock,Common Equity,Retail,,,N/A,,,,,,10600.0,16400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Borden (New Dairy Opco) Common Stock,Common Equity,Food & Beverage,,,N/A,,,,,,,13300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Bowery Farming Inc Common Stock,Common Equity,Food & Beverage,,,N/A,,,,,,10000.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Bowery Farming Inc Warrant,Warrants,Food & Beverage,,,N/A,,,,,,0.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Bowery Farming Inc Warrants,Warrants,Food & Beverage,,,N/A,,,,2028-09-10,,0.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-CDS US Intermediate Holdings Inc Warrant,Warrants,Media & Entertainment,,,N/A,,,,,,,15800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Cengage Learning Inc Common Stock,Common Equity,Media & Entertainment,,,N/A,,,,,,7500.0,3900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Constellis Holdings LLC Private Equity,Other,Manufacturing,,,N/A,,,,,,10300.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Constellis Holdings LLC Preferred Equity,Preferred Equity,Manufacturing,,,N/A,,,,,,3200.0,3200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Cubic Corp Preferred Stock,Preferred Equity,Software,,11.0 %,N/A,,,,,,39700.0,26900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Galaxy Universal LLC Common Stock,Common Equity,Consumer Products,,,N/A,,,,,,35400.0,40000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Galaxy Universal LLC Preferred Stock,Preferred Equity,Consumer Products,,15.9 %,N/A,,,,,,4000.0,6100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Galaxy Universal LLC Trade Claim,Other,Consumer Products,,,N/A,,,,,,2500.0,1900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Gracent LLC Preferred Equity,Preferred Equity,Healthcare Services,,,N/A,,,,,,8200.0,4800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-HM Dunn Co Inc Preferred Stock Series A,Preferred Equity,Manufacturing,,,N/A,,,,,,7100.0,6200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Imagine Communications Corp Common Stock,Common Equity,Media & Entertainment,,,N/A,,,,,,3800.0,1800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-JW Aluminum Co Common Stock,Common Equity,Metals & Mining,,,N/A,,,,,,0.0,2600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-JW Aluminum Co Preferred Stock,Preferred Equity,Metals & Mining,,0.0 %,N/A,,,,2028-02-15,,214500.0,153300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Kellermeyer Bergensons Services LLC Preferred Stock,Preferred Equity,Business Services,,,N/A,,,,,,48300.0,15500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lipari Foods LLC Common Stock,Common Equity,Food & Beverage,,,N/A,,,,,,8000.0,4500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Magna Legal Services LLC Common Stock,Other,Business Services,,,,,,,,,4900.0,6900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Maverick Natural Resources LLC Common Stock,Other,Oil & Gas,,,,,,,,,61300.0,34500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Med-Metrix Common Stock,Other,Software,,,,,,,,,1500.0,3300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Med-Metrix Preferred Stock,Other,Software,8.0 %,8.0 %,,,,,,,1500.0,1500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Misys Ltd Preferred Stock,Other,Software,,"1,225 %",LIBOR,"1,225 %",0.0 %,,,,81800.0,82600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-NCI Inc Class C Common Stock,Other,Software,,,,,,,,,20200.0,29500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-One Call Care Management Inc Common Stock,Other,Healthcare Services,,,,,,,,,2100.0,2300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-One Call Care Management Inc Preferred Stock A,Other,Healthcare Services,,,,,,,,,22800.0,18900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-One Call Care Management Inc Preferred Stock B,Other,Healthcare Services,,9.0 %,,,,,2029-10-25,,7900.0,7700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Petroplex Acidizing Inc Trade Claim,Other,Energy Services,,,,,,,,,600.0,100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Polyconcept North America Inc Class A - 1 Units,Other,Consumer Products,,,,,,,,,3000.0,5200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-PRG III LLC Preferred Stock Series A PIK,Other,Media & Entertainment,,,,,,,,,18100.0,83500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Proserv Acquisition LLC Class A Common Units,Other,Energy Services,,,,,,,,,26200.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Proserv Acquisition LLC Class A Preferred Units,Other,Energy Services,,,,,,,,,3100.0,2200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Quoizel LLC Common Stock,Other,Consumer Products,,,,,,,,,8300.0,8000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Quorum Health Corp Private Equity,Other,Healthcare Services,,,,,,,,,2800.0,8400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Quorum Health Corp Trade Claim,Other,Healthcare Services,,,,,,,,,700.0,900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Quorum Health Corp Trust Initial Funding Units,Other,Healthcare Services,,,,,,,,,200.0,100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Saturn Oil & Gas Inc Common Stock,Other,Oil & Gas,,,,,,,,,700.0,600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Sorenson Communications LLC Common Stock,Other,Telecommunications,,,,,,,,,7100.0,15900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Swift Worldwide Resources Holdco Ltd Common Stock,Other,Energy Services,,,,,,,,,900.0,1100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Ultra Electronics Holdings PLC Private Equity,Other,Aerospace & Defense,,,,,,,,,4800.0,7200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Ultra Electronics Holdings PLC Private Equity,Other,Aerospace & Defense,,,,,,,,,1300.0,2100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Wittur Holding GmbH Common Stock,Other,Aerospace & Defense,,,,,,,,,8000.0,8700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Affordable Care Inc,First Lien,,,,,,,,,,,39600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Affordable Care Inc,First Lien,,,,,,,,,,,22000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Belk Inc,Other,,,,,,,,,,,30200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Constellis Holdings LLC,Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Galaxy Universal LLC,Other,,,,,,,,,,,86500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Galaxy Universal LLC,Other,,,,,,,,,,,18500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-One Call Care Management Inc,Other,,,,,,,,,,,4700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Belk Inc,Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Constellis Holdings LLC,Other,,,,,,,,,,,7000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-One Call Care Management Inc,Other,,,,,,,,,,,23900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Accelerator Investments Aggregator LP, ABF Equity",Other,,,,,,,,,,,1000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Altavair AirFinance, ABF Equity",Other,,,,,,,,,,,132300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"GreenSky Holdings LLC, ABF Equity",Other,,,,,,,,,,,13500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"GreenSky Holdings LLC, ABF Equity",Other,,,,,,,,,,,16900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"GreenSky Holdings LLC, Term Loan",Other,,,,,,,,,,,33500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Home Partners JV 2, Structured Mezzanine",Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Home Partners JV 2, ABF Equity",Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Affordable Care Inc, Preferred Stock",Other,,,,,,,,,,,49300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"athenahealth Inc, Preferred Stock",Other,,,,,,,,,,,260500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Belk Inc, Common Stock",Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Belk Inc, Common Stock",Other,,,,,,,,,,,16400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Borden (New Dairy Opco), Common Stock (4)",Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Constellis Holdings LLC, Private Equity",Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Constellis Holdings LLC, Preferred Equity",Other,,,,,,,,,,,3200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Fronton BV, Common Stock",Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Galaxy Universal LLC, Common Stock",Other,,,,,,,,,,,40000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Galaxy Universal LLC, Trade Claim",Other,,,,,,,,,,,1900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Galaxy Universal LLC, Preferred Stock",Other,,,,,,,,,,,6100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"One Call Care Management Inc, Preferred Stock A",Other,,,,,,,,,,,18900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"One Call Care Management Inc, Common Stock",Other,,,,,,,,,,,2300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"One Call Care Management Inc, Preferred Stock B",Other,,,,,,,,,,,7700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Proserv Acquisition LLC, Class A Common Units",Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Proserv Acquisition LLC, Class A Preferred Units",Other,,,,,,,,,,,2200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ThermaSys Corp Common Stock,Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ATX Networks Corp,First Lien,,,,,,,,,,,37500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ATX Networks Corp,First Lien,,,,,,,,,,,14800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ATX Networks Corp,First Lien,,,,,,,,,,,48500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Gracent LLC,First Lien,,,,,,,,,,,28900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-HM Dunn Co Inc,First Lien,,,,,,,,,,,35100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-HM Dunn Co Inc,First Lien,,,,,,,,,,,2900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Kellermeyer Bergensons Services LLC,First Lien,,,,,,,,,,,196700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Kellermeyer Bergensons Services LLC,First Lien,,,,,,,,,,,86400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-NCI Inc,First Lien,,,,,,,,,,,32500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Production Resource Group LLC,First Lien,,,,,,,,,,,188400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Production Resource Group LLC,First Lien,,,,,,,,,,,300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Production Resource Group LLC,First Lien,,,,,,,,,,,65300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Production Resource Group LLC,First Lien,,,,,,,,,,,35800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Production Resource Group LLC,First Lien,,,,,,,,,,,103500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Wittur Holding GmbH,First Lien,,,,,,,,,,,57300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-JW Aluminum Co,Subordinated Debt,,,,,,,,,,,76600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ATX Networks Corp,Subordinated Debt,,,,,,,,,,,24000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"801 5th Ave, Seattle, Structured Mezzanine",Subordinated Debt,,,,,,,,,,,51900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Abacus JV, Private Equity",Subordinated Debt,,,,,,,,,,,41200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Australis Maritime, Common Stock",Subordinated Debt,,,,,,,,,,,22000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Australis Maritime II, ABF Equity",Subordinated Debt,,,,,,,,,,,21600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Avenue One PropCo, ABF Equity",Subordinated Debt,,,,,,,,,,,10900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Avenue One PropCo, Term Loan",Subordinated Debt,,,,,,,,,,,31700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Avida Holding AB, Common Stock",Subordinated Debt,,,,,,,,,,,42900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Avida Holding AB, Subordinated Bond",Subordinated Debt,,,,,,,,,,,1500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Capital Automotive LP, ABF Equity",Subordinated Debt,,,,,,,,,,,33000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Capital Automotive LP, Structured Mezzanine",Subordinated Debt,,,,,,,,,,,40400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Discover Financial Services, Subordinated Loan",Subordinated Debt,,,,,,,,,,,4800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Discover Financial Services, ABF Equity",Subordinated Debt,,,,,,,,,,,2600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Kilter Finance, Preferred Stock",Subordinated Debt,,,,,,,,,,,101200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Kilter Finance, ABF Equity",Subordinated Debt,,,,,,,,,,,500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"KKR Altitude II Offshore Aggregator LP, Partnership Interest",Subordinated Debt,,,,,,,,,,,90300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"KKR Central Park Leasing Aggregator L.P., Partnership Interest",Subordinated Debt,,,,,,,,,,,15600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"KKR Chord IP Aggregator LP, Partnership Interest",Subordinated Debt,,,,,,,,,,,24000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"KKR Rocket Loans Aggregator LLC, Partnership Interest",Subordinated Debt,,,,,,,,,,,5000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"KKR Zeno Aggregator LP (K2 Aviation), Partnership Interest",Subordinated Debt,,,,,,,,,,,6500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"My Community Homes PropCo 2, ABF Equity",Subordinated Debt,,,,,,,,,,,17400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"My Community Homes PropCo 2, Term Loan",Subordinated Debt,,,,,,,,,,,63200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Prime St LLC, Structured Mezzanine",Subordinated Debt,,,,,,,,,,,25700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Roemanu LLC (FKA Toorak Capital Partners LLC), Private Equity",Subordinated Debt,,,,,,,,,,,238700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"TDC LLP, Preferred Equity",Subordinated Debt,,,,,,,,,,,36000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"TDC LLP, Preferred Equity",Subordinated Debt,,,,,,,,,,,2000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Credit Opportunities Partners JV, LLC",Subordinated Debt,,,,,,,,,,,1383800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ATX Networks Corp Common Stock,Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ATX Networks Corp Class B-1 Common Stock,Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ATX Networks Corp Class B-2 Common Stock,Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Borden (New Dairy Opco) Common Stock (4),Other,,,,,,,,,,,13300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Gracent LLC Preferred Stock A,Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Gracent LLC Preferred Stock B,Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Gracent LLC Class A Common Stock,Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Gracent LLC Preferred Equity,Other,,,,,,,,,,,4800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-HM Dunn Co Inc Preferred Stock Series A,Other,,,,,,,,,,,6200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-HM Dunn Co Inc Preferred Stock Series B,Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-JW Aluminum Co Common Stock,Other,,,,,,,,,,,2600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-JW Aluminum Co Preferred Stock,Other,,,,,,,,,,,153300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Kellermeyer Bergensons Services LLC Common Stock,Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Kellermeyer Bergensons Services LLC Preferred Stock,Other,,,,,,,,,,,15500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-NCI Inc Class A-1 Common Stock,Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-NCI Inc Class B-1 Common Stock,Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-NCI Inc Class I-1 Common Stock,Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-PRG III LLC Preferred Stock Series B PIK,Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Warren Resources Inc Common Stock,Other,,,,,,,,,,,—,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-3Pillar Global Inc,First Lien,Software & Services,6.00%,,SOFR,600,0.8%,,2026-11-23,2200.0,2200.0,2200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-3Pillar Global Inc,First Lien,Software & Services,6.00%,,SOFR,600,0.8%,,2026-11-23,6900.0,6900.0,6800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-48Forty Solutions LLC,First Lien,Commercial & Professional Services,6.00%,,SOFR,600,1.0%,,2026-11-30,4200.0,4200.0,4000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-5 Arch Income Fund 2 LLC,First Lien,Financial Services,9.0%,,Fixed,,,,2024-03-31,84200.0,61700.0,19500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Aareon AG,First Lien,Software & Services,6.25%,,Euribor,625,0.8%,,2030-08-19,35900.0,38200.0,38700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Advanced Dermatology & Cosmetic Surgery,First Lien,Healthcare Services,6.50%,,SOFR,650,1.0%,,2027-05-07,7800.0,7800.0,7700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Advania Sverige AB,First Lien,Software & Services,6.10%,0.0%,SOFR,610,0.0%,,2028-04-28,933600.0,106700.0,91400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Advania Sverige AB,First Lien,Software & Services,6.10%,0.0%,Prime,610,0.0%,,2028-04-28,1345800.0,10200.0,9800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Affordable Care Inc,First Lien,Healthcare Services,5.50%,0.0%,SOFR,550,0.8%,,2027-08-02,1900.0,1900.0,1900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Affordable Care Inc,First Lien,Healthcare Services,5.50%,,SOFR,550,0.8%,,2028-08-02,28000.0,28000.0,27700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Affordable Care Inc,First Lien,Healthcare Services,5.50%,0.0%,SOFR,550,0.8%,,2027-08-02,10900.0,10900.0,10800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Alacrity Solutions Group LLC,First Lien,Insurance,5.25%,,SOFR,525,0.8%,,2027-12-22,4600.0,4500.0,4600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Alera Group Intermediate Holdings Inc,First Lien,Insurance,5.75%,,SOFR,575,0.8%,,2028-10-02,7600.0,7600.0,7500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Amerivet Partners Management Inc,First Lien,Healthcare Services,5.50%,,SOFR,550,0.8%,,2028-02-25,68300.0,68000.0,67800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Amerivet Partners Management Inc,First Lien,Healthcare Services,5.50%,,SOFR,550,0.8%,,2028-02-25,8400.0,8400.0,8300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Apex Group Limited,First Lien,Financial Services,3.75%,,SOFR,375,0.5%,,2028-07-27,2500.0,2400.0,2500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Apex Service Partners LLC,First Lien,Commercial & Professional Services,6.50%,,SOFR,650,1.0%,,2029-10-24,400.0,400.0,400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Apex Service Partners LLC,First Lien,Commercial & Professional Services,5.00%,2.0%,SOFR,500,1.0%,,2030-10-24,80700.0,79800.0,79700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Apex Service Partners LLC,First Lien,Commercial & Professional Services,6.50%,,SOFR,650,1.0%,,2029-10-24,4700.0,4700.0,4700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Apex Service Partners LLC,First Lien,Commercial & Professional Services,5.00%,2.0%,SOFR,500,1.0%,,2030-10-24,12000.0,12000.0,11800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Arcfield Acquisition Corp,First Lien,Manufacturing,6.25%,,SOFR,625,0.8%,,2029-08-04,85000.0,84600.0,85000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Arcfield Acquisition Corp,First Lien,Manufacturing,6.25%,,SOFR,625,0.8%,,2028-08-04,10600.0,10600.0,10600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Arcos LLC/VA,First Lien,Software & Services,3.00%,3.3%,SOFR,300,1.0%,,2028-04-20,12500.0,12300.0,11200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Arcos LLC/VA,First Lien,Software & Services,6.25%,,SOFR,625,1.0%,,2027-04-20,4500.0,4500.0,4000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Ardonagh Group Ltd,Other,Insurance,725,,SA,725,0.8 %,,2026-07-14,800.0,1000.0,1000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Ardonagh Group Ltd,Other,Insurance,725,,Euribor,725,1.0 %,,2026-07-14,19000.0,19300.0,20900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Ardonagh Group Ltd,Other,Insurance,675,,SOFR,675,0.8 %,,2026-07-14,9900.0,9400.0,9800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ATX Networks Corp,Other,Manufacturing,750,,SOFR,750,1.0 %,,2026-09-01,65100.0,65100.0,65100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Belk Inc,Other,Retail,650,,Prime,650,2.0 %,,2025-07-31,21900.0,21800.0,20000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Belk Inc,Other,Retail,5.0 %,8.0 %,N/A,,,,2025-07-31,70900.0,35600.0,13200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Caldic BV,Other,Retail,375,,SOFR,375,0.5 %,,2029-02-26,1400.0,1400.0,1400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Caldic BV,Other,Retail,350,,Euribor,350,0.0 %,,2029-02-26,800.0,900.0,900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Careismatic Brands Inc,Other,Medical Devices & Equipment,675,,SOFR,675,1.0 %,,2025-03-09,11500.0,11500.0,11500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Careismatic Brands Inc,Other,Medical Devices & Equipment,675,,SOFR,675,1.0 %,,2025-03-09,18500.0,18500.0,18500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Circana Group (f.k.a. NPD Group),Other,Business Services,575,,SOFR,575,0.8 %,,2027-12-01,200.0,200.0,200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Civica Group Ltd,Other,Software,625,0.0 %,SA,625,0.0 %,,2030-08-30,17700.0,21800.0,22100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Civica Group Ltd,Other,Software,625,0.0 %,BKBM,625,0.0 %,,2030-08-30,1000.0,600.0,700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Civica Group Ltd,Other,Software,625,0.0 %,SA,625,0.0 %,,2030-08-30,7500.0,9600.0,9400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Clarience Technologies LLC,Other,Manufacturing,625,,SOFR,625,1.0 %,,2026-12-14,225500.0,221100.0,225500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Clarience Technologies LLC,Other,Manufacturing,625,,SOFR,625,1.0 %,,2024-12-13,25400.0,25400.0,25400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Community Brands Inc,Other,Software,550,,SOFR,550,0.8 %,,2028-02-24,32400.0,31900.0,31900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Community Brands Inc,Other,Software,550,,SOFR,550,0.8 %,,2028-02-24,3900.0,3800.0,3800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Community Brands Inc,Other,Software,550,,SOFR,550,0.8 %,,2028-02-24,1900.0,1900.0,1900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Constellis Holdings LLC,Other,Manufacturing,775,,SOFR,775,1.0 %,,2025-09-27,15100.0,14600.0,15100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-CSafe Global,Other,Transportation & Logistics,625,,SOFR,625,0.8 %,,2026-12-23,7000.0,7000.0,6900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-CSafe Global,Other,Transportation & Logistics,625,,SOFR,625,1.0 %,,2027-12-23,184900.0,180500.0,184200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-CSafe Global,Other,Transportation & Logistics,625,,SOFR,625,1.0 %,,2027-12-23,26900.0,35600.0,34100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-CSafe Global,Other,Transportation & Logistics,625,,SOFR,625,1.0 %,,2028-08-13,11700.0,11700.0,11600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-CSafe Global,Other,Transportation & Logistics,625,,SOFR,625,0.8 %,,2026-12-23,27900.0,27900.0,27800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Dental Care Alliance Inc,Other,Healthcare Services,641%,,SOFR,641%,0.8%,,2028-04-03,12100.0,12100.0,12000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-DOC Generici Srl,Other,Pharmaceuticals & Biotechnology,650%,,Euribor,650%,0.0%,,2028-10-27,23100.0,22600.0,25300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Element Materials Technology Group US Holdings Inc,Other,Business Services,425%,,SOFR,425%,0.5%,,2029-07-06,1400.0,1400.0,1400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Element Materials Technology Group US Holdings Inc,Other,Business Services,425%,,Euribor,425%,0.0%,,2029-07-06,300.0,400.0,400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Encora Digital LLC,Other,Business Services,508%,,SOFR,508%,0.8%,,2028-12-20,19600.0,19300.0,19600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Encora Digital LLC,Other,Business Services,508%,0.0%,SOFR,508%,0.8%,,2028-12-20,65100.0,64200.0,65100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Excelitas Technologies Corp,Other,Technology Hardware,575%,,SOFR,575%,0.8%,,2028-08-12,1500.0,1500.0,1400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Excelitas Technologies Corp,Other,Technology Hardware,575%,,SOFR,575%,0.8%,,2028-08-12,900.0,900.0,900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Excelitas Technologies Corp,Other,Technology Hardware,575%,,SOFR,575%,0.8%,,2029-08-12,800.0,800.0,800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Follett Software Co,Other,Software,575%,,SOFR,575%,0.8%,,2027-08-31,9900.0,9900.0,9800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Foundation Risk Partners Corp,Other,Insurance,600%,,SOFR,600%,0.8%,,2028-10-29,54200.0,53500.0,54200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Foundation Risk Partners Corp,Other,Insurance,600%,,SOFR,600%,0.8%,,2027-10-29,7000.0,6900.0,7000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Foundation Risk Partners Corp,Other,Insurance,550%,,SOFR,550%,0.8%,,2028-10-29,18500.0,18500.0,18200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Greystone Equity Member Corp,Other,Financial Services,725%,,SOFR,725%,3.8%,,2026-04-01,194800.0,187500.0,194800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Higginbotham Insurance Agency Inc,Other,Insurance,5.50%,,SOFR,,1.0%,,2028-11-24,10300.0,10200.0,10200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Higginbotham Insurance Agency Inc,Other,Insurance,5.50%,,SOFR,,1.0%,,2028-11-24,6900.0,6600.0,6800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-HM Dunn Co Inc,Other,Manufacturing,6.00%,6.0%,SOFR,,1.0%,,2026-06-30,1000.0,1000.0,1000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Individual FoodService,Other,Manufacturing,6.00%,,SOFR,,1.0%,,2029-10-31,5800.0,5800.0,5700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-iNova Pharmaceuticals (Australia) Pty Limited,Other,Pharmaceuticals & Biotechnology,6.50%,,BKBM,,0.8%,,2028-10-30,900.0,500.0,600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-iNova Pharmaceuticals (Australia) Pty Limited,Other,Pharmaceuticals & Biotechnology,6.50%,,BKBM,,0.8%,,2028-10-30,2600.0,1700.0,1600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Insight Global LLC,Other,Business Services,6.00%,,SOFR,,0.8%,,2027-09-22,21100.0,21100.0,21100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Insight Global LLC,Other,Business Services,6.00%,,SOFR,,0.8%,,2028-09-22,26800.0,26800.0,26800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Integrity Marketing Group LLC,Other,Insurance,6.00%,,SOFR,,0.8%,,2026-08-27,200.0,200.0,200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Integrity Marketing Group LLC,Other,Insurance,6.02%,,SOFR,,0.8%,,2026-08-27,98400.0,98400.0,98200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Integrity Marketing Group LLC,Other,Insurance,6.00%,,SOFR,,0.8%,,2026-08-27,2300.0,2300.0,2300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-J S Held LLC,Other,Insurance,5.50%,,SOFR,,1.0%,,2025-07-01,86000.0,85200.0,85400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-J S Held LLC,Other,Insurance,5.50%,,SOFR,,1.0%,,2025-07-01,5100.0,5000.0,5000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-J S Held LLC,Other,Insurance,5.50%,,SOFR,,1.0%,,2025-07-01,9000.0,9000.0,9000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-J S Held LLC,Other,Insurance,5.50%,,SOFR,,1.0%,,2025-07-01,2500.0,2500.0,2500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Karman Space Inc,Other,Manufacturing,7.00%,,SOFR,,2.0%,,2025-12-21,49800.0,48200.0,49800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Kellermeyer Bergensons Services LLC,Other,Business Services,6.00%,,SOFR,,1.0%,,2026-11-07,165700.0,160600.0,165700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Laboratoires Vivacy SAS,Other,Pharmaceuticals & Biotechnology,6.75%,2.4%,Euribor,,0.0%,,2030-09-30,7800.0,8000.0,8400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Laboratoires Vivacy SAS,Other,Pharmaceuticals & Biotechnology,6.75%,2.4%,Euribor,,0.0%,,2030-09-30,600.0,700.0,600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lakefield Veterinary Group,Other,Healthcare Services,5.50%,,SOFR,,0.8%,,2028-11-23,37700.0,37700.0,36800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lakefield Veterinary Group,Other,Health Care Equipment & Services,5.50%,,SOFR,5.50%,0.8%,,2028-11-23,80400.0,79800.0,78500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lakeview Farms Inc,Other,"Food, Beverage & Tobacco",5.75%,,SOFR,5.75%,1.0%,,2027-06-10,30900.0,29600.0,30800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lakeview Farms Inc,Other,"Food, Beverage & Tobacco",5.75%,,SOFR,5.75%,1.0%,,2027-06-10,6800.0,6800.0,6800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lazer Logistics Inc,Other,Transportation,5.50%,,SOFR,5.50%,0.8%,,2030-05-06,3300.0,3300.0,3300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lazer Logistics Inc,Other,Transportation,5.50%,,SOFR,5.50%,0.8%,,2030-05-06,8600.0,8600.0,8400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lexitas Inc,Other,Business Services,6.75%,,SOFR,6.75%,1.0%,,2029-05-18,2900.0,2900.0,2900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lexitas Inc,Other,Business Services,6.75%,,SOFR,6.75%,1.0%,,2029-05-18,5500.0,5500.0,5500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Magna Legal Services LLC,Other,Business Services,6.00%,,SOFR,6.00%,0.8%,,2029-11-21,500.0,500.0,500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Magna Legal Services LLC,Other,Business Services,6.00%,,SOFR,6.00%,0.8%,,2029-11-21,12900.0,12900.0,12800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-MB2 Dental Solutions LLC,Other,Healthcare Services,6.00%,,SOFR,6.00%,1.0%,,2027-01-29,220200.0,214800.0,220200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Med-Metrix,Other,Software,6.00%,,SOFR,6.00%,1.0%,,2027-09-15,69100.0,68700.0,69100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Med-Metrix,Other,Software,6.00%,,SOFR,6.00%,1.0%,,2027-09-15,11400.0,11400.0,11400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Miami Beach Medical Group LLC,Other,Healthcare Services,6.50%,1.5%,SOFR,6.50%,1.0%,,2027-12-14,19000.0,17500.0,11400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Misys Ltd,Other,Software,7.25%,,SOFR,7.25%,1.0%,,2029-09-13,400.0,400.0,400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Misys Ltd,Other,Software,7.25%,,SOFR,7.25%,1.0%,,2029-09-13,1100.0,1100.0,1100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Motion Recruitment Partners LLC,Other,Business Services,6.50%,,SOFR,6.50%,1.0%,,2025-12-22,114500.0,112100.0,111300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-NBG Home,Other,Consumer Products,10.00%,10.00%,SOFR,10.00%,1.0%,,2024-03-31,32700.0,30700.0,9800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-NBG Home,Other,Consumer Products,5.50%,,LIBOR,5.50%,1.0%,,2024-04-26,44300.0,38700.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Net Documents,Other,Software,6.25%,,SOFR,6.25%,1.0%,,2027-07-02,1500.0,1500.0,1500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-NovaTaste Austria GmbH,Other,Food & Beverage,7.00%,,Euribor,,0.0%,,2030-05-30,4000.0,4100.0,4300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Novotech Pty Ltd,Other,Healthcare Services,5.25%,,SOFR,,0.5%,,2028-01-13,5700.0,5600.0,5600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Parts Town LLC,Other,Retail,5.98%,,SOFR,,0.8%,,2028-11-01,74500.0,74000.0,74300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Production Resource Group LLC,Other,Media & Entertainment,5.00%,3.1%,SOFR,,1.0%,,2024-08-21,95500.0,94300.0,98400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Production Resource Group LLC,Other,Media & Entertainment,3.00%,5.5%,SOFR,,0.3%,,2024-08-21,165300.0,162700.0,168600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Production Resource Group LLC,Other,Media & Entertainment,5.50%,,SOFR,,1.0%,,2024-08-21,100.0,100.0,100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Radwell International LLC/PA,Other,Manufacturing,6.75%,,SOFR,,0.8%,,2028-04-01,1400.0,1400.0,1400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Radwell International LLC/PA,Other,Manufacturing,6.53%,,SOFR,,0.8%,,2029-04-01,1000.0,1000.0,1000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Radwell International LLC/PA,Other,Manufacturing,6.75%,,SOFR,,0.8%,,2029-04-01,66400.0,66400.0,67700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Radwell International LLC/PA,Other,Manufacturing,6.75%,,SOFR,,0.8%,,2028-04-01,5500.0,5500.0,5500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Reliant Rehab Hospital Cincinnati LLC,Other,Healthcare Services,6.25%,,SOFR,,0.0%,,2026-03-02,44000.0,42200.0,39700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Revere Superior Holdings Inc,Other,Software,5.50%,,SOFR,,1.0%,,2026-09-30,33100.0,32700.0,33100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Revere Superior Holdings Inc,Other,Software,5.75%,,SOFR,,1.0%,,2026-09-30,3200.0,3200.0,3200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Rise Baking Company,Other,Food & Beverage,6.25%,,SOFR,,1.0%,,2027-08-13,28300.0,27800.0,28300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Rise Baking Company,Other,Food & Beverage,6.25%,,SOFR,,1.0%,,2027-08-13,5300.0,5200.0,5300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-RSC Insurance Brokerage Inc,Other,Insurance,5.50%,,SOFR,,0.8%,,2029-11-01,187200.0,183400.0,186500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-RSC Insurance Brokerage Inc,Other,Insurance,5.50%,,SOFR,,0.8%,,2029-11-01,7700.0,7600.0,7700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Safe-Guard Products International LLC,Other,Financial Services,5.50%,,SOFR,,0.5%,,2027-01-27,100.0,100.0,100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-SAMBA Safety Inc,Other,Software,5.25%,,SOFR,,1.0%,,2027-09-01,6000.0,6000.0,6000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-SAMBA Safety Inc,Other,Software,5.25%,,SOFR,,1.0%,,2027-09-01,1800.0,1800.0,1800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-SAMBA Safety Inc,Other,Software,5.25%,,SOFR,,1.0%,,2027-09-01,600.0,600.0,600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-SavATree LLC,Other,Other,5.25%,,SOFR,,0.8%,,2028-10-12,9400.0,9400.0,9300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-SavATree LLC,Other,Other,5.25%,,SOFR,,0.8%,,2028-10-12,400.0,300.0,400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-SavATree LLC,Other,Other,5.25%,,SOFR,,0.8%,,2028-10-12,6000.0,6000.0,5900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Sequel Youth & Family Services LLC,Other,Healthcare Services,3.0%,,Fixed,,,,2025-02-28,57200.0,8900.0,300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-SitusAMC Holdings Corp,Other Debt,Real Estate,550,,SOFR,550,1.0 %,,2027-12-22,28200.0,28000.0,28200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Solina France SASU,Other Debt,Food & Beverage,650,,SOFR,650,0.0 %,,2028-07-28,19500.0,19000.0,19700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Sorenson Communications LLC,Other Debt,Telecommunications,550,,SOFR,550,0.8 %,,2026-03-17,29600.0,28400.0,29500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Source Code LLC,Other Debt,Software,650,,SOFR,650,1.0 %,,2027-06-30,56000.0,55300.0,56000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Spins LLC,Other Debt,Software,550,,SOFR,550,1.0 %,,2027-01-20,16500.0,16500.0,16500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Spotless Brands LLC,Other Debt,Consumer Products,650,,SOFR,650,1.0 %,,2028-07-25,12400.0,12100.0,12400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Spotless Brands LLC,Other Debt,Consumer Products,675,,SOFR,675,1.0 %,,2028-07-25,18700.0,18400.0,19000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Sweeping Corp of America Inc,Other Debt,Industrial Services,575,,SOFR,575,1.0 %,,2026-11-30,71500.0,69800.0,53100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Sweeping Corp of America Inc,Other Debt,Industrial Services,575,,SOFR,575,1.0 %,,2026-11-30,5600.0,5500.0,4100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Sweeping Corp of America Inc,Other Debt,Industrial Services,575,,SOFR,575,1.0 %,,2026-11-30,100.0,100.0,100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Tangoe LLC,Other Debt,Software,650,,SOFR,650,1.0 %,,2025-11-28,179500.0,169100.0,155400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Tangoe LLC,Other Debt,Software,,12.5 %,N/A,,,,2025-11-28,9800.0,8400.0,0.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-TeamSystem SpA,Other Debt,Software,625,,Euribor,625,0.0 %,,2028-02-15,19800.0,19000.0,21900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Tekfor HoldCo (formerly Amtek Global Technology Pte Ltd),Other Debt,Automotive,,,N/A,,,,2024-04-04,39800.0,40100.0,4300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ThreeSixty Group,Other Debt,Retail,500,2.5 %,SOFR,500,1.5 %,,2024-04-30,46000.0,45900.0,44000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-TIBCO Software Inc,Other Debt,Software,450,,SOFR,450,0.5 %,,2029-03-30,15100.0,13900.0,14700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Time Manufacturing Co,Other Debt,Capital Goods,650,,SOFR,650,0.8 %,,2027-12-01,7100.0,7100.0,6700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Transaction Services Group Ltd,Other Debt,Software,550,,BKBM,550,0.0 %,,2026-10-14,48300.0,34700.0,33000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Transaction Services Group Ltd,Other Debt,Software,550,,SOFR,550,0.0 %,,2026-10-14,126200.0,123700.0,126200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Trescal SA,Other Debt,Industrial Services,650,,Euribor,650,0.0 %,,2030-05-02,9600.0,10400.0,10500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Trescal SA,Other Debt,Industrial Services,650,,Euribor,650,0.0 %,,2030-05-02,2800.0,3100.0,3100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Version1 Software Ltd,Other Debt,Software,575,0.0 %,Euribor,575,0.0 %,,2029-07-11,1100.0,1100.0,1200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Version1 Software Ltd,Other Debt,Software,625,,Euribor,625,0.0 %,,2030-07-31,13700.0,14800.0,14300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-VetCor Professional Practices LLC,Other,Healthcare Services,SF+ 600,,SOFR,,0.8 %,,2029-08-31,8400.0,8400.0,8500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Vytalogy Wellness LLC (fka Jarrow Formulas Inc),Other,Consumer Products,SF+ 625,,SOFR,,1.0 %,,2026-09-21,5300.0,5300.0,5100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Vytalogy Wellness LLC (fka Jarrow Formulas Inc),Other,Consumer Products,SF+ 625,,SOFR,,1.0 %,,2026-11-30,116400.0,112600.0,113400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Warren Resources Inc,Other,Energy,SF+ 900,1.0 %,SOFR,,1.0 %,,2024-05-22,18800.0,18500.0,18800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Wealth Enhancement Group LLC,Other,Financial Services,SF+ 575,,SOFR,,1.0 %,,2027-10-04,5300.0,5200.0,5300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Wealth Enhancement Group LLC,Other,Financial Services,SF+ 575,,SOFR,,1.0 %,,2027-10-04,900.0,900.0,900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Wealth Enhancement Group LLC,Other,Financial Services,SF+ 575,,SOFR,,1.0 %,,2027-10-29,2100.0,2100.0,2100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Wittur Holding GmbH,Other,Capital Goods,,10.0 %,N/A,,,,2028-12-31,1600.0,1700.0,1700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Wittur Holding GmbH,Other,Capital Goods,,10.0 %,N/A,,,,2028-12-31,19600.0,21400.0,21400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Woolpert Inc,Other,Capital Goods,SF+ 600,,SOFR,,1.0 %,,2028-04-05,157900.0,152800.0,157900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Woolpert Inc,Other,Capital Goods,SF+ 600,,SOFR,,1.0 %,,2028-04-05,3700.0,3700.0,3700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Worldwise Inc,Other,Consumer Products,SF+ 625,0.5 %,SOFR,,1.0 %,,2028-03-29,40900.0,40800.0,37500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Worldwise Inc,Other,Consumer Products,SF+ 675,0.0 %,SOFR,,1.0 %,,2028-03-29,5700.0,5700.0,5200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Worldwise Inc,Other,Consumer Products,SF+ 625,0.5 %,SOFR,,1.0 %,,2028-03-29,28000.0,28000.0,25700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Worldwise Inc,Other,Consumer Products,SF+ 675,0.0 %,SOFR,,1.0 %,,2028-03-29,8500.0,8500.0,7800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Zendesk Inc,Other,Software,SF+ 350,3.5 %,SOFR,,0.8 %,,2028-11-22,59600.0,59100.0,59500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Zendesk Inc,Other,Software,SF+ 625,0.0 %,SOFR,,0.8 %,,2028-11-22,6000.0,6000.0,6000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Zendesk Inc,Other,Software,SF+ 625,0.0 %,SOFR,,0.8 %,,2028-11-22,14500.0,14400.0,14500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Apex Group Limited,Other,Financial Services,SF+ 675,,SOFR,,0.5 %,,2029-07-27,55000.0,54100.0,53900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Caldic BV,Other,Retail,SF+ 725,,SOFR,,0.5 %,,2030-02-25,40000.0,39100.0,39600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Constellis Holdings LLC,Other,Capital Goods,"SF+ 1,100",0.0 %,SOFR,,1.0 %,,2026-03-27,13600.0,13100.0,9000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Cubic Corp,Other,Software,SF+ 763,,SOFR,,0.8 %,,2029-05-25,44800.0,42400.0,42800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Ellucian Inc,Other,Software,SF+ 800,,SOFR,,1.0 %,,2028-10-09,179200.0,171900.0,181000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Miami Beach Medical Group LLC,Other,Healthcare Services,,,N/A,,,,2028-06-14,5600.0,3600.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-OEConnection LLC,Other,Software,SF+ 700,,SOFR,,0.5 %,,2027-09-25,76100.0,75800.0,75700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Peraton Corp,Other,Capital Goods,SF+ 800,,SOFR,,1.0 %,,2029-02-01,175000.0,167100.0,175000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Quoizel LLC,Other,Consumer Products,SF+ 650,SF+ 650,SOFR,,1.0 %,,2027-07-11,6500.0,6500.0,6500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Solera LLC,Other,Software,SF+ 900,,SOFR,,1.0 %,,2029-06-04,335900.0,322100.0,335900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Valeo Foods Group Ltd,Other,Food & Beverage,E+ 750,,Euribor,,0.0 %,,2029-10-01,3800.0,4100.0,3500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Valeo Foods Group Ltd,Other Debt,Food & Beverage,E+ 750,,Euribor,,0.0 %,,2029-10-01,2300.0,3000.0,2600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Wittur Holding GmbH,Second Lien,Manufacturing,E+ 850,1.0 %,Euribor,,0.0 %,,2027-10-04,114500.0,122500.0,31000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Angelica Corp,Other Debt,Healthcare Services,,10.0 %,N/A,,,,2024-12-31,65100.0,2700.0,700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-JW Aluminum Co,Other Debt,Manufacturing,10.3 %,,N/A,,,,2026-06-01,76500.0,75900.0,77100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-One Call Care Management Inc,Other Debt,Healthcare Services,,8.5 %,N/A,,,,2028-11-01,27800.0,26300.0,20600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-TIBCO Software Inc,Other Debt,Software,6.5 %,,N/A,,,,2029-03-31,700.0,600.0,700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Apex Service Partners LLC,Subordinated Debt,Business Services,,14.3 %,,,,,2031-04-23,13300.0,13000.0,13000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Apex Service Partners LLC,Subordinated Debt,Business Services,,14.3 %,,,,,2031-04-23,6500.0,6500.0,6300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Ardonagh Group Ltd,Subordinated Debt,Insurance,11.5 %,0.0 %,,,,,2027-01-15,1000.0,1000.0,1000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ATX Networks Corp,Subordinated Debt,Telecommunications,,10.0 %,,,,,2028-09-01,32900.0,19500.0,32900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Element Materials Technology Group US Holdings Inc,Subordinated Debt,Business Services,,,SOFR,8.5%,0.5 %,,2031-07-09,77500.0,76300.0,74100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Encora Digital LLC,Subordinated Debt,Software,,9.8 %,,,,,2029-12-13,26200.0,25600.0,25100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Miami Beach Medical Group LLC,Subordinated Debt,Healthcare Services,,1.5 %,SOFR,6.5%,1.0 %,,2024-05-24,6300.0,6300.0,6400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Miami Beach Medical Group LLC,Subordinated Debt,Healthcare Services,,1.5 %,SOFR,6.5%,1.0 %,,2024-05-24,20000.0,20000.0,20200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Sorenson Communications LLC,Subordinated Debt,Telecommunications,,,,,,,2030-04-01,11000.0,8900.0,10400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Sorenson Communications LLC,Subordinated Debt,Telecommunications,,,,,,,2030-04-01,43600.0,32000.0,36000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Ultra Electronics Holdings Ltd,Subordinated Debt,Aerospace & Defense,,,SOFR,7.25%,0.5 %,,2030-01-31,62900.0,61200.0,61000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Ultra Electronics Holdings Ltd,Subordinated Debt,Aerospace & Defense,,9.0 %,SOFR,,0.5 %,,2031-01-31,66100.0,64500.0,62700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-801 5th Ave  Seattle  Private Equity,Common Equity,Real Estate,,,N/A,,,,,8516891000.0,14000.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-801 5th Ave  Seattle  Structured Mezzanine,Mezzanine,Real Estate,8.0%,3.0%,Fixed,,,,2029-12-19,60600.0,59000.0,52700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Abacus JV  Private Equity,Common Equity,Insurance,,,N/A,,,,,47045141000.0,46100.0,48500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Accelerator Investments Aggregator LP  Private Equity,Common Equity,Financial Services,,,N/A,,,,,2778491000.0,3200.0,2500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Altavair AirFinance Private Equity,Other,Capital Goods,,,N/A,,,,,128900.0,129900.0,133900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Altitude II IRL WH Borrower DAC,Revolver,Capital Goods,,,SOFR,1000,0.0%,,2030-01-12,4900.0,4900.0,4800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Australis Maritime II,Other,Transportation & Logistics,,,N/A,,,,,10900.0,10900.0,12200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Australis Maritime,Common Equity,Transportation & Logistics,,,N/A,,,,,35500.0,35400.0,35800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Avenue One PropCo,Other,Real Estate,,,N/A,,,,,37900.0,37900.0,38800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Avida Holding AB,Common Equity,Financial Services,,,N/A,,,,,445000.0,49900.0,42900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Avida Holding AB,Subordinated Debt,Financial Services,,,SOFR,925,0.0%,,2034-01-27,15000.0,1300.0,1500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Bankers Healthcare Group LLC,Other Debt,Financial Services,22.0%,,Fixed,,,,2027-11-08,9000.0,9000.0,9000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Bausch Health Cos Inc,Revolver,Pharmaceuticals & Biotechnology,,,SOFR,665,1.0%,,2028-01-28,70000.0,70000.0,70000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Byrider Finance LLC,Other Debt,Automotive,,,N/A,,,,2026-11-26,5000.0,5000.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Callodine Commercial Finance LLC,Second Lien,Financial Services,,,SOFR,900,1.0%,,2025-11-03,125000.0,121000.0,126000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Callodine Commercial Finance LLC,Second Lien,Financial Services,,,SOFR,900,1.0%,,2025-11-03,12000.0,12000.0,12100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Callodine Commercial Finance LLC,Second Lien,Financial Services,,,SOFR,900,1.0%,,2025-11-03,36100.0,36100.0,36400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Capital Automotive LP,Other,Real Estate,,,N/A,,,,,21200.0,23200.0,32400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Capital Automotive LP,Mezzanine,Real Estate,11.0%,,Fixed,,,,2028-12-22,41500.0,40900.0,41500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Covis Finco Sarl,Revolver,Pharmaceuticals & Biotechnology,,,SOFR,675,1.0%,,2026-11-20,14100.0,14100.0,14100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Covis Finco Sarl,Revolver,Pharmaceuticals & Biotechnology,,,Prime,675,1.0%,,2026-11-30,1800.0,1300.0,1300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Covis Finco Sarl,Revolver,Pharmaceuticals & Biotechnology,,,SOFR,675,1.0%,,2026-11-20,5900.0,5900.0,5900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Drive Revel,Other,Financial Services,,,N/A,,,,,1900.0,2000.0,2200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Global Jet Capital LLC,Preferred Equity,Business Services,,,N/A,,,,,149500.0,69400.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Global Jet Capital LLC,Preferred Equity,Business Services,,9.0%,N/A,,,,2028-10-01,494500.0,309400.0,256500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Global Jet Capital LLC,Structured Note,Business Services,,15.0%,N/A,,,,2025-12-04,18700.0,15600.0,18700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Global Jet Capital LLC,Structured Note,Business Services,,15.0%,N/A,,,,2026-01-29,1600.0,1300.0,1600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Global Lending Services LLC,Other,Financial Services,,,N/A,,,,,3800.0,4400.0,4500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Global Lending Services LLC,Other,Financial Services,,,N/A,,,,,7200.0,7200.0,6900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Global Lending Services LLC, Private Equity",Other,Financial Services,,,N/A,,,,,32850984000.0,32900.0,34500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Home Partners JV 2, Private Equity",Other,Real Estate,,,N/A,,,,,4471509000.0,4400.0,4200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Home Partners JV 2, Private Equity",Other,Real Estate,,,N/A,,,,,168710000.0,200.0,200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Home Partners JV 2, Private Equity",Other,Real Estate,,11.0 %,N/A,,,,2030-03-20,11400.0,11400.0,11400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Jet Edge International LLC, Structured Mezzanine",Other,Transportation,10.0 %,2.0 %,N/A,,,,2026-04-02,46000.0,46000.0,46900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Jet Edge International LLC, Structured Mezzanine",Other,Transportation,10.0 %,2.0 %,N/A,,,,2026-04-02,700.0,700.0,700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Kilter Finance, Preferred Stock",Other,Insurance,12.0 %,,N/A,,,,,99700000000.0,98900.0,99700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Kilter Finance, Private Equity",Other,Insurance,,,N/A,,,,,536709000.0,500.0,500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"KKR Altitude II Offshore Aggregator LP, Partnership Interest",Other,Other,,,N/A,,,,,63265438000.0,63300.0,65600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"KKR Central Park Leasing Aggregator L.P., Partnership Interest",Other,Other,14.3 %,,N/A,,,,2026-05-31,39100.0,39100.0,15300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"KKR Chord IP Aggregator LP, Partnership Interest",Other,Media & Entertainment,,,N/A,,,,,89492619000.0,89600.0,99900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"KKR Residential Opportunities I LLC, Private Equity",Other,Real Estate,,,N/A,,,,,6285920000.0,6300.0,7300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"KKR Rocket Loans Aggregator LLC, Partnership Interest",Other,Financial Services,,,N/A,,,,,9221222000.0,9200.0,8300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"KKR Zeno Aggregator LP (K2 Aviation), Partnership Interest",Other,Other,,,N/A,,,,,11976417000.0,11300.0,11800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"My Community Homes PropCo 2, Private Equity",Other,Real Estate,,,N/A,,,,,81136364000.0,81100.0,78800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-NewStar Clarendon 2014-1A Class D,Other,Financial Services,2.0 %,,N/A,,,,2027-01-25,8300.0,2400.0,2200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Opendoor Labs Inc, Structured Mezzanine",Other,Real Estate,10.0 %,,N/A,,,,2026-04-01,42600.0,42600.0,40900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Optio Invest, Private Equity",Other,Financial Services,,,N/A,,,,,810922000.0,1000.0,1000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"PayPal Europe Sarl et Cie SCA, Private Equity",Other,Financial Services,,,N/A,,,,,55605051000.0,59800.0,59600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Prime ST LLC, Private Equity",Other,Real Estate,,,N/A,,,,,5612193000.0,7300.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Prime ST LLC, Structured Mezzanine",Other,Real Estate,5.0 %,6.0 %,N/A,,,,2030-03-12,58900.0,57200.0,33100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Roemanu LLC (FKA Toorak Capital Partners LLC), Private Equity",Other,Financial Services,,,N/A,,,,,220778388000.0,236500.0,241000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Saluda Grade Alternative Mortgage Trust 2022-BC2, Structured Mezzanine",Other,Real Estate,18.0 %,,N/A,,,,2030-07-25,3400.0,2400.0,2700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Star Mountain Diversified Credit Income Fund III, LP, Private Equity",Other,Financial Services,,,N/A,,,,,23500000000.0,23500.0,24400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"SunPower Financial, Private Equity",Other,Financial Services,,,N/A,,,,,3690938000.0,3700.0,4500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Synovus Financial Corp, Private Equity",Other,Financial Services,,,N/A,,,,,8345434000.0,8300.0,8400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"TalkTalk Telecom Group Ltd, Revolver",Other,Other,,,N/A,7.00%,1.5 %,,2026-09-05,,41600.0,42100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"TDC LLP, Preferred Equity",Other,Financial Services,8.0 %,,N/A,,,,,,26300.0,27800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"TDC LLP, Private Equity",Other,Financial Services,,,N/A,,,,,1576060000.0,2000.0,2000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Vehicle Secured Funding Trust Private Equity,Other,Financial Services,,,,,,,,94927.993,94900.0,94900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Weber-Stephen Products LLC,Other,Consumer Products,5.75%,,SOFR,,1.0%,,2026-12-19,21800.0,21800.0,21800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Weber-Stephen Products LLC,Other,Consumer Products,5.75%,,SOFR,,1.0%,,2026-12-19,44900.0,44900.0,44900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Credit Opportunities Partners JV LLC,Other,Investment Vehicles,,,,,,,,1637300.0,1571700.0,1396900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Abaco Energy Technologies LLC,Common Equity,Energy,,,,,,,,,200.0,600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Abaco Energy Technologies LLC,Preferred Equity,Energy,,,,,,,,,1500.0,4500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Affordable Care Inc,Preferred Equity,Healthcare Services,11.8 %,11.8 %,,,,,,,48100.0,50000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-American Vision Partners,Other,Healthcare Services,,,,,,,,,2700.0,1800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Amerivet Partners Management Inc,Preferred Equity,Healthcare Services,11.5 %,11.5 %,,,,,,,12300.0,8800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Arcos LLC/VA,Preferred Equity,Software,,,SOFR,950,1.0 %,,2031-04-30,,14100.0,12500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Arena Energy LP,Warrants,Energy,,,,,,,,,400.0,300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Ascent Resources Utica Holdings LLC / ARU Finance Corp,Other,Energy,,,,,,,,,19400.0,22900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Ascent Resources Utica Holdings LLC / ARU Finance Corp,Common Equity,Energy,,,,,,,,,9700.0,2700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-athenahealth Inc,Preferred Equity,Healthcare Services,10.8 %,10.8 %,,,,,,,262200.0,252600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ATX Networks Corp,Common Equity,Manufacturing,,,,,,,,,5000.0,2500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ATX Networks Corp,Common Equity,Manufacturing,,,,,,,,,4000.0,800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ATX Networks Corp,Common Equity,Manufacturing,,,,,,,,,9900.0,25900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Borden (New Dairy Opco),Common Equity,Food & Beverage,,,,,,,,,4900.0,11200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Bowery Farming Inc,Common Equity,Food & Beverage,,,,,,,,,10000.0,3100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Bowery Farming Inc,Warrants,Food & Beverage,,,,,,,2028-09-10,,,100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-CDS US Intermediate Holdings Inc,Warrants,Media & Entertainment,,,,,,,,,,6300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-"Cengage Learning, Inc",Common Equity,Media & Entertainment,,,,,,,,,7500.0,3600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Constellis Holdings LLC,Other,Manufacturing,,,,,,,,,10300.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-CTI Foods Holding Co LLC,Common Equity,Food & Beverage,,,,,,,,,700.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Cubic Corp Preferred Stock,Preferred Equity,Software,,11.0 %,N/A,,,,,,39700.0,33900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Fox Head Inc Common Stock,Common Equity,Consumer Products,,,N/A,,,,,,2900.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Fronton BV Common Stock,Common Equity,Hotels & Leisure,,,N/A,,,,,,,1800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Galaxy Universal LLC Common Stock,Common Equity,Consumer Products,,,N/A,,,,,,35400.0,500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Galaxy Universal LLC Preferred Stock,Preferred Equity,Consumer Products,,15.9 %,N/A,,,,,,4000.0,5500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Galaxy Universal LLC Trade Claim,Other,Consumer Products,,,N/A,,,,,,2500.0,1000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Gracent LLC Preferred Equity,Preferred Equity,Medical Devices & Equipment,,,N/A,,,,,,8200.0,3800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Gracent LLC Preferred Stock A,Preferred Equity,Medical Devices & Equipment,,,N/A,,,,,,8000.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Harvey Industries Inc Common Stock,Common Equity,Manufacturing,,,N/A,,,,,,2200.0,7300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-HM Dunn Co Inc Preferred Stock Series A,Preferred Equity,Manufacturing,,,N/A,,,,,,7100.0,25100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Imagine Communications Corp Common Stock,Common Equity,Media & Entertainment,,,N/A,,,,,,3800.0,2400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Jones Apparel Holdings Inc. Common Stock,Common Equity,Consumer Products,,,N/A,,,,,,900.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-JW Aluminum Co Common Stock,Common Equity,Metals & Mining,,,N/A,,,,,,,2500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Lipari Foods LLC Common Stock,Common Equity,Retail,,,N/A,,,,,,8000.0,5600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Magna Legal Services LLC Common Stock,Common Equity,Business Services,,,N/A,,,,,,4900.0,5000.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Maverick Natural Resources LLC Common Stock,Common Equity,Oil & Gas,,,N/A,,,,,,61300.0,84400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Med-Metrix Common Stock,Common Equity,Software,,,N/A,,,,,,1500.0,3700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Med-Metrix Preferred Stock,Preferred Equity,Software,,8.0 %,N/A,,,,,,1500.0,1500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Misys Ltd Preferred Stock,Preferred Equity,Software,,,N/A,,0.0 %,,,,71500.0,71200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-NCI Inc Class C Common Stock,Common Equity,Software,,,N/A,,,,,,20200.0,19700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Nine West Holdings Inc Common Stock,Common Equity,Consumer Products,,,N/A,,,,,,6400.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-One Call Care Management Inc Common Stock,Common Equity,Medical Devices & Equipment,,,N/A,,,,,,2100.0,1900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-One Call Care Management Inc Preferred Stock A,Preferred Equity,Medical Devices & Equipment,,,N/A,,,,,,22800.0,18500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-One Call Care Management Inc Preferred Stock B,Preferred Equity,Medical Devices & Equipment,,9.0 %,N/A,,,,2029-10-25,,8000.0,7700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Petroplex Acidizing Inc Trade Claim,Other,Energy,,,N/A,,,,,,600.0,300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Polyconcept North America Inc Class A - 1 Units,Other,Consumer Products,,,N/A,,,,,,3000.0,7100.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-PRG III LLC Preferred Stock Series A PIK,Preferred Equity,Media & Entertainment,,,N/A,,,,2024-08-21,,18100.0,120700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Proserv Acquisition LLC Class A Common Units,Common Equity,Energy,,,N/A,,,,,,33500.0,3500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Proserv Acquisition LLC Class A Preferred Units,Preferred Equity,Energy,,,N/A,,,,,,5400.0,9500.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Quoizel LLC Common Stock,Common Equity,Consumer Products,,,N/A,,,,,,8300.0,10200.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Quorum Health Corp Private Equity,Partnership Interest,Medical Devices & Equipment,,,N/A,,,,,,900.0,7700.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Sorenson Communications LLC Common Stock,Other,Telecommunications,,,N/A,,,,,,7100.0,2900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-ThermaSys Corp Common Stock,Other,Manufacturing,,,N/A,,,,,,10200.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-TIBCO Software Inc Preferred Stock,Other,Software,,"SF+ 1,200 PIK (SF+ 1,200 Max PIK)",N/A,,0.5 %,,,,73500.0,82600.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Ultra Electronics Holdings PLC Private Equity,Other,Manufacturing,,,N/A,,,,,,7200.0,10400.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Ultra Electronics Holdings PLC Private Equity,Other,Manufacturing,,,N/A,,,,,,1300.0,1900.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Warren Resources Inc Common Stock,Other,Energy,,,N/A,,,,,,12800.0,12300.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Worldwise Inc Class A Private Equity,Other,Consumer Products,,,N/A,,,,,,1600.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Worldwise Inc Class B Private Equity,Other,Consumer Products,,,N/A,,,,,,2100.0,,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
-Worldwise Inc Preferred Equity,Other,Consumer Products,,20.0 % PIK ( 20.0 % Max PIK),N/A,,,,,,300.0,800.0,,,,,,,dspy_extracted,FSK,2024-11-06,FSK,2024-11-06
+company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
+3Pillar Global Inc.,co_624c3f59f72c,First Lien,Software & Technology,,,SOFR,6%,0.8%,,,4700,4700,4600,,4700,,,,,,FSK,2024-11-06
+3Pillar Global Inc.,co_624c3f59f72c,First Lien,Software & Technology,,,SOFR,6%,0.8%,,,123800,123100,120200,,123100,,,,,,FSK,2024-11-06
+3Pillar Global Inc.,co_624c3f59f72c,First Lien,Software & Technology,,,SOFR,6%,0.8%,,,4400,4400,4300,,4400,,,,,,FSK,2024-11-06
+48Forty Solutions LLC,co_b865ac32662f,First Lien,Business Services,,,SOFR,6%,1%,,11/30/26,175000,174000,151000,,174000,,,,,,FSK,2024-11-06
+48Forty Solutions LLC,co_b865ac32662f,First Lien,Business Services,,,SOFR,6%,1%,,11/30/26,8800,8800,7600,,8800,,,,,,FSK,2024-11-06
+48Forty Solutions LLC,co_b865ac32662f,First Lien,Business Services,,,SOFR,6%,1%,,11/30/26,1800,1800,1600,,1800,,,,,,FSK,2024-11-06
+Aareon AG,co_0b1d50c48fd9,First Lien,Software & Technology,,,SOFR,6%,0.8%,,,13800,14900,15400,,14900,,,,,,FSK,2024-11-06
+Aareon AG,co_0b1d50c48fd9,First Lien,Software & Technology,,1.8%,SOFR,4.75%,0%,,9/30/31,60000,66200,66200,,66200,,,,,,FSK,2024-11-06
+Aareon AG,co_0b1d50c48fd9,First Lien,Software & Technology,,1.8%,SOFR,4.75%,0%,,,13600,15100,15100,,15100,,,,,,FSK,2024-11-06
+Accuride Corp.,co_1058f3a61aff,First Lien,Industrials,,10%,SOFR,10%,2%,,,900,800,900,,800,,,,,,FSK,2024-11-06
+Accuride Corp.,co_1058f3a61aff,First Lien,Industrials,,5.9%,SOFR,1%,1%,,,7700,7700,5000,,7700,,,,,,FSK,2024-11-06
+Advanced Dermatology & Cosmetic Surgery,co_11ca9a14b35a,First Lien,Healthcare,,,SOFR,6.25%,1%,,,300,300,300,,300,,,,,,FSK,2024-11-06
+Advanced Dermatology & Cosmetic Surgery,co_11ca9a14b35a,First Lien,Healthcare,,,SOFR,6.25%,1%,,,45500,44400,45500,,44400,,,,,,FSK,2024-11-06
+Advanced Dermatology & Cosmetic Surgery,co_11ca9a14b35a,First Lien,Healthcare,,,SOFR,6.25%,1%,,,3300,3300,3300,,3300,,,,,,FSK,2024-11-06
+Advania Sverige AB,co_3db687660850,First Lien,Software & Technology,,,SOFR,5.5%,0%,,,51400,65000,68500,,65000,,,,,,FSK,2024-11-06
+Advania Sverige AB,co_3db687660850,First Lien,Software & Technology,,,SOFR,5.5%,0%,,,161100,14900,15800,,14900,,,,,,FSK,2024-11-06
+Advania Sverige AB,co_3db687660850,First Lien,Software & Technology,,,SOFR,5%,0%,,6/2/31,5000,5400,5500,,5400,,,,,,FSK,2024-11-06
+Affordable Care Inc.,co_a4d36573f5a9,First Lien,Healthcare,,1.3%,SOFR,5.5%,0.8%,,,5800,5800,5800,,5800,,,,,,FSK,2024-11-06
+Affordable Care Inc.,co_a4d36573f5a9,First Lien,Healthcare,,,SOFR,5.5%,0.8%,,,13600,13500,13500,,13500,,,,,,FSK,2024-11-06
+Affordable Care Inc.,co_a4d36573f5a9,First Lien,Healthcare,,,SOFR,5.5%,0.8%,,,42600,42600,42400,,42600,,,,,,FSK,2024-11-06
+Affordable Care Inc.,co_a4d36573f5a9,First Lien,Healthcare,,1.3%,SOFR,5.5%,0.8%,,,7100,7100,7000,,7100,,,,,,FSK,2024-11-06
+Alacrity Solutions Group LLC,co_5beca35135d2,First Lien,Insurance,,,SOFR,5.25%,0.8%,,,10800,10700,9200,,10700,,,,,,FSK,2024-11-06
+Alacrity Solutions Group LLC,co_5beca35135d2,First Lien,Insurance,,,SOFR,5.25%,0.8%,,,11800,11700,10100,,11700,,,,,,FSK,2024-11-06
+Alera Group Intermediate Holdings Inc.,co_d331b86cbeba,First Lien,Insurance,,,SOFR,5.25%,0.8%,,10/2/28,31100,31100,31300,,31100,,,,,,FSK,2024-11-06
+Alera Group Intermediate Holdings Inc.,co_d331b86cbeba,First Lien,Insurance,,,SOFR,5.75%,0.8%,,10/2/28,2300,2300,2300,,2300,,,,,,FSK,2024-11-06
+Alera Group Intermediate Holdings Inc.,co_d331b86cbeba,First Lien,Insurance,,,SOFR,5.75%,0.8%,,10/2/28,5300,5300,5300,,5300,,,,,,FSK,2024-11-06
+Alpha Financial Markets Consulting PLC,co_c3a45ed7f8cb,First Lien,Business Services,,,SOFR,5.25%,0%,,8/16/31,10300,10100,10100,,10100,,,,,,FSK,2024-11-06
+Alpha Financial Markets Consulting PLC,co_c3a45ed7f8cb,First Lien,Business Services,,,SOFR,5.25%,0%,,8/16/31,8800,11300,11500,,11300,,,,,,FSK,2024-11-06
+Alpha Financial Markets Consulting PLC,co_c3a45ed7f8cb,First Lien,Business Services,,,SOFR,5.25%,0%,,8/16/31,4700,5100,5100,,5100,,,,,,FSK,2024-11-06
+Alpha Financial Markets Consulting PLC,co_c3a45ed7f8cb,First Lien,Business Services,,,SOFR,5.25%,0%,,8/16/31,4500,5800,5700,,5800,,,,,,FSK,2024-11-06
+American Vision Partners,co_99844675e99f,First Lien,Healthcare,,,SOFR,6%,0.8%,,,4400,4400,4300,,4400,,,,,,FSK,2024-11-06
+American Vision Partners,co_99844675e99f,First Lien,Healthcare,,,SOFR,6%,0.8%,,,90700,90400,89500,,90400,,,,,,FSK,2024-11-06
+American Vision Partners,co_99844675e99f,First Lien,Healthcare,,,SOFR,6%,0.8%,,,3400,3400,3400,,3400,,,,,,FSK,2024-11-06
+Amerivet Partners Management Inc.,co_8250e61a6bff,First Lien,Healthcare,,,SOFR,5.25%,0.8%,,2/25/28,67800,67500,67800,,67500,,,,,,FSK,2024-11-06
+Amerivet Partners Management Inc.,co_8250e61a6bff,First Lien,Healthcare,,,SOFR,5.25%,0.8%,,2/25/28,8400,8400,8400,,8400,,,,,,FSK,2024-11-06
+Apex Group Ltd.,co_e57b579128f2,First Lien,Financial Services,,,SOFR,3.75%,0.5%,,,2400,2400,2400,,2400,,,,,,FSK,2024-11-06
+Apex Service Partners LLC,co_dcc76088316b,First Lien,Business Services,,,SOFR,5%,1%,,,2500,2500,2500,,2500,,,,,,FSK,2024-11-06
+Apex Service Partners LLC,co_dcc76088316b,First Lien,Business Services,,,SOFR,5%,1%,,,3500,3500,3400,,3500,,,,,,FSK,2024-11-06
+Apex Service Partners LLC,co_dcc76088316b,First Lien,Business Services,,,SOFR,5%,1%,,,78400,77500,78600,,77500,,,,,,FSK,2024-11-06
+Apex Service Partners LLC,co_dcc76088316b,First Lien,Business Services,,,SOFR,5%,1%,,,15500,15500,15600,,15500,,,,,,FSK,2024-11-06
+Apex Service Partners LLC,co_dcc76088316b,First Lien,Business Services,,,SOFR,5%,1%,,,2700,2700,2700,,2700,,,,,,FSK,2024-11-06
+Apex Service Partners LLC,co_dcc76088316b,First Lien,Business Services,,,SOFR,5%,1%,,,27700,27700,27600,,27700,,,,,,FSK,2024-11-06
+Arcfield Acquisition Corp.,co_50bc69c38d09,First Lien,Industrials,,,SOFR,6.25%,0.8%,,,84300,84000,85200,,84000,,,,,,FSK,2024-11-06
+Arcfield Acquisition Corp.,co_50bc69c38d09,First Lien,Industrials,,,SOFR,6.25%,0.8%,,,10600,10600,10600,,10600,,,,,,FSK,2024-11-06
+Arcos LLC/VA,co_433b311b8be7,First Lien,Software & Technology,,3.3%,SOFR,3%,1%,,,12800,12700,11700,,12700,,,,,,FSK,2024-11-06
+Arcos LLC/VA,co_433b311b8be7,First Lien,Software & Technology,,,SOFR,6.25%,1%,,,4500,4500,4100,,4500,,,,,,FSK,2024-11-06
+Area Wide Protective Inc.,co_2f362ce17526,First Lien,Business Services,,,SOFR,4.75%,1%,,12/23/30,12500,12500,12400,,12500,,,,,,FSK,2024-11-06
+Area Wide Protective Inc.,co_2f362ce17526,First Lien,Business Services,,,SOFR,4.75%,1%,,12/23/30,18800,18700,18700,,18700,,,,,,FSK,2024-11-06
+Arrotex Australia Group Pty Ltd.,co_6c341083d965,First Lien,Healthcare,,,SOFR,5.75%,0.5%,,6/30/28,10800,7100,7100,,7100,,,,,,FSK,2024-11-06
+ATX Networks Corp.,co_ec7da23d7126,First Lien,Industrials,,6.5%,SOFR,6.5%,1%,,,37500,36900,37500,,36900,,,,,,FSK,2024-11-06
+ATX Networks Corp.,co_ec7da23d7126,First Lien,Industrials,,6%,SOFR,6%,1%,,,14800,14800,14800,,14800,,,,,,FSK,2024-11-06
+ATX Networks Corp.,co_ec7da23d7126,First Lien,Industrials,,7%,,,1%,,,48500,48500,48500,,48500,,,,,,FSK,2024-11-06
+ATX Networks Corp.,co_ec7da23d7126,First Lien,Industrials,,6%,SOFR,6%,1%,,,5400,5400,5400,,5400,,,,,,FSK,2024-11-06
+Avetta LLC,co_a95b32fe057e,First Lien,Software & Technology,,2.3%,SOFR,4.5%,0.5%,,7/26/31,15000,14800,14900,,14800,,,,,,FSK,2024-11-06
+Avetta LLC,co_a95b32fe057e,First Lien,Software & Technology,,,SOFR,4.5%,0.5%,,,2600,2600,2600,,2600,,,,,,FSK,2024-11-06
+Avetta LLC,co_a95b32fe057e,First Lien,Software & Technology,,2.3%,SOFR,4.5%,0.5%,,,3700,3700,3600,,3700,,,,,,FSK,2024-11-06
+Barbri Inc.,co_cf7503d7123e,First Lien,Consumer & Retail,,,SOFR,5.75%,0.8%,,4/28/28,129500,126400,129500,,126400,,,,,,FSK,2024-11-06
+BDO USA PA,co_69d8ce2dbfee,First Lien,Business Services,,,SOFR,6%,2%,,8/31/28,28100,27700,28400,,27700,,,,,,FSK,2024-11-06
+Belk Inc.,co_138aca28627e,First Lien,Consumer & Retail,,,SOFR,15%,,,7/23/29,30000,30000,30200,,30000,,,,,,FSK,2024-11-06
+BGB Group LLC,co_9018ca79c699,First Lien,Media & Entertainment,,,SOFR,5.25%,1%,,8/16/27,109100,108400,108900,,108400,,,,,,FSK,2024-11-06
+BGB Group LLC,co_9018ca79c699,First Lien,Media & Entertainment,,,SOFR,5.25%,1%,,8/16/27,7400,7400,7400,,7400,,,,,,FSK,2024-11-06
+BGB Group LLC,co_9018ca79c699,First Lien,Media & Entertainment,,,SOFR,5.25%,1%,,8/16/27,19900,19900,19900,,19900,,,,,,FSK,2024-11-06
+Bloom Fresh International Limited Food Beverage & Tobacco,co_48f9ebf8b8f6,First Lien,Food & Beverage,,,SOFR,5.25%,0%,,,7400,7900,8300,,7900,,,,,,FSK,2024-11-06
+Bowery Farming Inc.,co_3daee0d11817,First Lien,Agriculture,,10%,,,1%,,,67900,54200,15000,,54200,,,,,,FSK,2024-11-06
+Bowery Farming Inc.,co_3daee0d11817,First Lien,Agriculture,,,,,,,,10400,10000,4200,,10000,,,,,,FSK,2024-11-06
+Bowery Farming Inc.,co_3daee0d11817,First Lien,Agriculture,,,,,,,,5900,5900,2300,,5900,,,,,,FSK,2024-11-06
+Bowery Farming Inc.,co_3daee0d11817,First Lien,Agriculture,,,,,,,,3600,3600,1400,,3600,,,,,,FSK,2024-11-06
+Cadence Education LLC,co_a82ebf0d4c80,First Lien,Consumer & Retail,,,SOFR,5%,0.8%,,,4600,4600,4600,,4600,,,,,,FSK,2024-11-06
+Cadence Education LLC,co_a82ebf0d4c80,First Lien,Consumer & Retail,,,SOFR,5%,0.8%,,,8500,8500,8500,,8500,,,,,,FSK,2024-11-06
+Cadence Education LLC,co_a82ebf0d4c80,First Lien,Consumer & Retail,,,SOFR,5%,0.8%,,,9800,9800,9800,,9800,,,,,,FSK,2024-11-06
+Carrier Fire Protection,co_9072e874b0ce,First Lien,Business Services,,3%,SOFR,5%,0.5%,,7/1/31,9700,9700,9700,,9700,,,,,,FSK,2024-11-06
+Carrier Fire Protection,co_9072e874b0ce,First Lien,Business Services,,,SOFR,5%,0.5%,,7/1/31,400,400,400,,400,,,,,,FSK,2024-11-06
+Carrier Fire Protection,co_9072e874b0ce,First Lien,Business Services,,3%,SOFR,5%,0.5%,,7/1/31,2400,2600,2700,,2600,,,,,,FSK,2024-11-06
+Carrier Fire Protection,co_9072e874b0ce,First Lien,Business Services,,3%,SOFR,5%,0.5%,,7/1/31,2600,2600,2600,,2600,,,,,,FSK,2024-11-06
+Carrier Fire Protection,co_9072e874b0ce,First Lien,Business Services,,,SOFR,5%,0.5%,,7/1/31,2200,2200,2200,,2200,,,,,,FSK,2024-11-06
+CFC Underwriting Ltd.,co_1443b1e88b12,First Lien,Insurance,,2.5%,SOFR,4.95%,0%,,5/16/29,4700,5700,5700,,5700,,,,,,FSK,2024-11-06
+Circana Group,co_3ab79489ca9f,First Lien,Consumer & Retail,,,SOFR,5%,0.8%,,,600,600,600,,600,,,,,,FSK,2024-11-06
+Circana Group,co_3ab79489ca9f,First Lien,Consumer & Retail,,,SOFR,5%,0.8%,,,19700,19700,19900,,19700,,,,,,FSK,2024-11-06
+Circana Group,co_3ab79489ca9f,First Lien,Consumer & Retail,,,SOFR,5%,0.8%,,,400,400,400,,400,,,,,,FSK,2024-11-06
+Civica Group Ltd.,co_6aca3af6a8f4,First Lien,Software & Technology,,2.1%,SOFR,5.5%,0%,,8/30/30,2500,3200,3300,,3200,,,,,,FSK,2024-11-06
+Civica Group Ltd.,co_6aca3af6a8f4,First Lien,Software & Technology,,2.1%,SOFR,5.5%,0%,,8/30/30,5000,6400,6300,,6400,,,,,,FSK,2024-11-06
+Clarience Technologies LLC,co_b11f9f61764c,First Lien,Industrials,,,SOFR,5.75%,0.8%,,,200,200,200,,200,,,,,,FSK,2024-11-06
+Clarience Technologies LLC,co_b11f9f61764c,First Lien,Industrials,,2.5%,SOFR,5.75%,0.8%,,,159300,157700,160400,,157700,,,,,,FSK,2024-11-06
+Clarience Technologies LLC,co_b11f9f61764c,First Lien,Industrials,,,SOFR,5.75%,0.8%,,,21500,21500,21500,,21500,,,,,,FSK,2024-11-06
+Clarience Technologies LLC,co_b11f9f61764c,First Lien,Industrials,,2.5%,SOFR,5.75%,0.8%,,,21700,21700,21800,,21700,,,,,,FSK,2024-11-06
+CLEAResult Consulting Inc.,co_740e1ab690c3,First Lien,Business Services,,2.5%,SOFR,5%,0.8%,,8/27/31,18200,18000,18000,,18000,,,,,,FSK,2024-11-06
+CLEAResult Consulting Inc.,co_740e1ab690c3,First Lien,Business Services,,,SOFR,5%,0.8%,,8/27/31,1500,1500,1500,,1500,,,,,,FSK,2024-11-06
+CLEAResult Consulting Inc.,co_740e1ab690c3,First Lien,Business Services,,2.5%,SOFR,5%,0.8%,,8/27/31,4500,4500,4500,,4500,,,,,,FSK,2024-11-06
+Community Brands Inc.,co_ef5cc48b74f0,First Lien,Software & Technology,,,SOFR,5.25%,0.8%,,7/1/31,40000,39600,39900,,39600,,,,,,FSK,2024-11-06
+Community Brands Inc.,co_ef5cc48b74f0,First Lien,Software & Technology,,,SOFR,5.25%,0.8%,,,4400,4400,4400,,4400,,,,,,FSK,2024-11-06
+Consilium Safety Group AB,co_f46e59eea9e7,First Lien,Industrials,,4%,SOFR,6%,0%,,4/7/31,25000,26500,27600,,26500,,,,,,FSK,2024-11-06
+Consilium Safety Group AB,co_f46e59eea9e7,First Lien,Industrials,,4%,SOFR,6%,0%,,4/7/31,9800,10500,10500,,10500,,,,,,FSK,2024-11-06
+Corsearch Intermediate Inc.,co_cb13a85a8b9c,First Lien,Software & Technology,,,SOFR,5.5%,1%,,4/19/28,30100,28900,30100,,28900,,,,,,FSK,2024-11-06
+CSafe Global,co_4847909c13fe,First Lien,Transportation & Logistics,,,SOFR,5.75%,0.8%,,,83300,83300,84200,,83300,,,,,,FSK,2024-11-06
+CSafe Global,co_4847909c13fe,First Lien,Transportation & Logistics,,,SOFR,5.75%,0.8%,,,15500,19800,20900,,19800,,,,,,FSK,2024-11-06
+CSafe Global,co_4847909c13fe,First Lien,Transportation & Logistics,,,SOFR,5.75%,0.8%,,3/8/29,9000,9000,9000,,9000,,,,,,FSK,2024-11-06
+CSafe Global,co_4847909c13fe,First Lien,Transportation & Logistics,,,SOFR,5.75%,0.8%,,,2500,2500,2500,,2500,,,,,,FSK,2024-11-06
+Dechra Pharmaceuticals Ltd.,co_9e726956ad69,First Lien,Healthcare,,3.3%,SOFR,6.25%,0.8%,,1/24/31,3700,3600,3600,,3600,,,,,,FSK,2024-11-06
+Dechra Pharmaceuticals Ltd.,co_9e726956ad69,First Lien,Healthcare,,3.3%,SOFR,6.25%,0%,,1/24/31,3300,3400,3500,,3400,,,,,,FSK,2024-11-06
+Dental Care Alliance Inc.,co_48591380b29a,First Lien,Healthcare,,,SOFR,6.41%,0.8%,,4/3/28,110000,107700,108600,,107700,,,,,,FSK,2024-11-06
+Dental365 LLC,co_51cfb530c49f,First Lien,Healthcare,,,SOFR,5.75%,0.8%,,,400,400,400,,400,,,,,,FSK,2024-11-06
+Dental365 LLC,co_51cfb530c49f,First Lien,Healthcare,,,SOFR,5.25%,0.8%,,,23900,23900,23800,,23900,,,,,,FSK,2024-11-06
+Dental365 LLC,co_51cfb530c49f,First Lien,Healthcare,,,SOFR,5.75%,0.8%,,,4700,4700,4700,,4700,,,,,,FSK,2024-11-06
+Dental365 LLC,co_51cfb530c49f,First Lien,Healthcare,,,SOFR,5.25%,0.8%,,,11300,11300,11300,,11300,,,,,,FSK,2024-11-06
+DOC Generici Srl,co_dbd196d8ab81,First Lien,Healthcare,,,SOFR,6.5%,0%,,,11600,11300,12900,,11300,,,,,,FSK,2024-11-06
+DOC Generici Srl,co_dbd196d8ab81,First Lien,Healthcare,,,SOFR,6.5%,0%,,,2400,2300,2400,,2300,,,,,,FSK,2024-11-06
+DOXA Insurance Holdings LLC,co_f389f0e74d0d,First Lien,Insurance,,,SOFR,5.25%,0.8%,,,15300,15100,15400,,15100,,,,,,FSK,2024-11-06
+DOXA Insurance Holdings LLC,co_f389f0e74d0d,First Lien,Insurance,,,SOFR,5.5%,0.8%,,,12600,12600,12700,,12600,,,,,,FSK,2024-11-06
+DOXA Insurance Holdings LLC,co_f389f0e74d0d,First Lien,Insurance,,,SOFR,5.5%,0.8%,,,3300,3300,3300,,3300,,,,,,FSK,2024-11-06
+DOXA Insurance Holdings LLC,co_f389f0e74d0d,First Lien,Insurance,,,SOFR,5.5%,0.8%,,,1900,1900,1900,,1900,,,,,,FSK,2024-11-06
+DOXA Insurance Holdings LLC,co_f389f0e74d0d,First Lien,Insurance,,,SOFR,5%,0.8%,,,22600,22600,22800,,22600,,,,,,FSK,2024-11-06
+DuBois Chemicals Inc.,co_0965e71bdb89,First Lien,Chemicals & Materials,,,SOFR,4.75%,0.8%,,,43700,43500,43700,,43500,,,,,,FSK,2024-11-06
+DuBois Chemicals Inc.,co_0965e71bdb89,First Lien,Chemicals & Materials,,,SOFR,4.75%,0.8%,,,14700,14700,14700,,14700,,,,,,FSK,2024-11-06
+Envirotainer Ltd.,co_4e9b50a22279,First Lien,Transportation & Logistics,,3%,SOFR,5.75%,0%,,7/30/29,2700,2700,2800,,2700,,,,,,FSK,2024-11-06
+Excelitas Technologies Corp.,co_25525b0ba447,First Lien,Software & Technology,,,SOFR,5.25%,0.8%,,,1900,1900,1900,,1900,,,,,,FSK,2024-11-06
+Excelitas Technologies Corp.,co_25525b0ba447,First Lien,Software & Technology,,,SOFR,5.25%,0.8%,,,2400,2400,2400,,2400,,,,,,FSK,2024-11-06
+Excelitas Technologies Corp.,co_25525b0ba447,First Lien,Software & Technology,,,SOFR,5.25%,0.8%,,,23400,23400,23400,,23400,,,,,,FSK,2024-11-06
+Follett Software Co,co_f26f83b457aa,First Lien,Software & Technology,,,SOFR,5%,0.8%,,,72400,71900,72500,,71900,,,,,,FSK,2024-11-06
+Follett Software Co,co_f26f83b457aa,First Lien,Software & Technology,,,SOFR,5%,0.8%,,,9900,9900,9900,,9900,,,,,,FSK,2024-11-06
+Foundation Consumer Brands LLC,co_ee921309021e,First Lien,Healthcare,,,SOFR,6.25%,1%,,2/12/27,66700,64800,66700,,64800,,,,,,FSK,2024-11-06
+Foundation Consumer Brands LLC,co_ee921309021e,First Lien,Healthcare,,,SOFR,6.25%,1%,,2/12/27,6600,6600,6600,,6600,,,,,,FSK,2024-11-06
+Foundation Risk Partners Corp.,co_2669dbde7061,First Lien,Insurance,,,SOFR,5.25%,0.8%,,,70800,70100,71000,,70100,,,,,,FSK,2024-11-06
+Foundation Risk Partners Corp.,co_2669dbde7061,First Lien,Insurance,,,SOFR,5.25%,0.8%,,,11800,11800,11800,,11800,,,,,,FSK,2024-11-06
+Foundation Risk Partners Corp.,co_2669dbde7061,First Lien,Insurance,,,SOFR,5.25%,0.8%,,,14500,14500,14500,,14500,,,,,,FSK,2024-11-06
+Galaxy Universal LLC,co_d22eaa1aa880,First Lien,Consumer & Retail,,,SOFR,6.25%,1%,,,86500,86500,86500,,86500,,,,,,FSK,2024-11-06
+Galaxy Universal LLC,co_d22eaa1aa880,First Lien,Consumer & Retail,,,SOFR,5.5%,1%,,,18600,18500,18500,,18500,,,,,,FSK,2024-11-06
+Galway Partners Holdings LLC,co_dbc8f3c1b820,First Lien,Insurance,,,SOFR,5.25%,0.8%,,,3400,3300,3400,,3300,,,,,,FSK,2024-11-06
+Galway Partners Holdings LLC,co_dbc8f3c1b820,First Lien,Insurance,,1%,SOFR,4.5%,0.8%,,,77200,76300,77300,,76300,,,,,,FSK,2024-11-06
+Galway Partners Holdings LLC,co_dbc8f3c1b820,First Lien,Insurance,,,SOFR,5.25%,0.8%,,,9600,9600,9600,,9600,,,,,,FSK,2024-11-06
+Galway Partners Holdings LLC,co_dbc8f3c1b820,First Lien,Insurance,,1.3%,SOFR,4.5%,0.8%,,,8400,8400,8400,,8400,,,,,,FSK,2024-11-06
+General Datatech LP,co_a07d157a124b,First Lien,Software & Technology,,,SOFR,6.25%,1%,,6/18/27,126300,125600,125400,,125600,,,,,,FSK,2024-11-06
+Gigamon Inc.,co_9ebbfee7c50f,First Lien,Software & Technology,,,SOFR,5.75%,0.8%,,,7500,7500,7500,,7500,,,,,,FSK,2024-11-06
+Gigamon Inc.,co_9ebbfee7c50f,First Lien,Software & Technology,,,SOFR,5.75%,1%,,,105300,104600,105300,,104600,,,,,,FSK,2024-11-06
+Gigamon Inc.,co_9ebbfee7c50f,First Lien,Software & Technology,,,SOFR,5.75%,0.8%,,,1900,1900,1900,,1900,,,,,,FSK,2024-11-06
+Gracent LLC,co_46ce4be607e5,First Lien,Healthcare,,12.5%,,,,,2/28/27,30900,28300,28900,,28300,,,,,,FSK,2024-11-06
+Granicus Inc.,co_0f7d0e93fd14,First Lien,Software & Technology,,2.3%,SOFR,3.5%,0.8%,,1/17/31,16300,16200,16500,,16200,,,,,,FSK,2024-11-06
+Granicus Inc.,co_0f7d0e93fd14,First Lien,Software & Technology,,2.3%,SOFR,3.5%,0.8%,,1/17/31,5000,5000,4900,,5000,,,,,,FSK,2024-11-06
+Granicus Inc.,co_0f7d0e93fd14,First Lien,Software & Technology,,,SOFR,5.25%,0.8%,,1/17/31,2300,2300,2300,,2300,,,,,,FSK,2024-11-06
+Granicus Inc.,co_0f7d0e93fd14,First Lien,Software & Technology,,,SOFR,4.75%,0.8%,,1/17/31,1000,1000,1000,,1000,,,,,,FSK,2024-11-06
+Heniff Transportation Systems LLC,co_7ff188805bf4,First Lien,Transportation & Logistics,,,SOFR,5.75%,1%,,,12600,12600,12600,,12600,,,,,,FSK,2024-11-06
+Heniff Transportation Systems LLC,co_7ff188805bf4,First Lien,Transportation & Logistics,,,SOFR,5.75%,1%,,,93500,89700,93500,,89700,,,,,,FSK,2024-11-06
+Heniff Transportation Systems LLC,co_7ff188805bf4,First Lien,Transportation & Logistics,,,SOFR,5.75%,1%,,,5200,5200,5200,,5200,,,,,,FSK,2024-11-06
+Heritage Environmental Services Inc.,co_9f739ae9e3f3,First Lien,Business Services,,,SOFR,5.25%,0.8%,,,53200,52800,54300,,52800,,,,,,FSK,2024-11-06
+Heritage Environmental Services Inc.,co_9f739ae9e3f3,First Lien,Business Services,,,SOFR,5%,0.8%,,,7500,7500,7500,,7500,,,,,,FSK,2024-11-06
+Heritage Environmental Services Inc.,co_9f739ae9e3f3,First Lien,Business Services,,,SOFR,5.5%,0.8%,,1/31/30,8000,8000,8000,,8000,,,,,,FSK,2024-11-06
+Heritage Environmental Services Inc.,co_9f739ae9e3f3,First Lien,Business Services,,,SOFR,5%,0.8%,,1/31/31,4000,4000,4000,,4000,,,,,,FSK,2024-11-06
+Hibu Inc.,co_2f4d9268f364,First Lien,Business Services,,,SOFR,6.25%,1%,,5/4/27,90600,88000,90600,,88000,,,,,,FSK,2024-11-06
+Hibu Inc.,co_2f4d9268f364,First Lien,Business Services,,,SOFR,6.25%,1%,,5/4/27,44700,44300,45600,,44300,,,,,,FSK,2024-11-06
+Higginbotham Insurance Agency Inc.,co_f6db8c8e7a1a,First Lien,Insurance,,,SOFR,4.75%,1%,,11/24/28,3200,3200,3200,,3200,,,,,,FSK,2024-11-06
+Higginbotham Insurance Agency Inc.,co_f6db8c8e7a1a,First Lien,Insurance,,,SOFR,4.75%,1%,,11/24/28,15000,15000,15000,,15000,,,,,,FSK,2024-11-06
+Highgate Hotels Inc.,co_f35ae98d35a7,First Lien,Consumer & Retail,,,SOFR,5.5%,1%,,11/5/29,33700,33400,34000,,33400,,,,,,FSK,2024-11-06
+Highgate Hotels Inc.,co_f35ae98d35a7,First Lien,Consumer & Retail,,,SOFR,5.5%,1%,,11/5/29,400,400,400,,400,,,,,,FSK,2024-11-06
+Highgate Hotels Inc.,co_f35ae98d35a7,First Lien,Consumer & Retail,,,SOFR,5.5%,1%,,11/5/29,3800,3800,3800,,3800,,,,,,FSK,2024-11-06
+HKA,co_aa7497fdf5a8,First Lien,Business Services,,1.8%,SOFR,5.75%,0.5%,,8/9/29,3500,3400,3500,,3400,,,,,,FSK,2024-11-06
+HM Dunn Co Inc.,co_1d4393b22e27,First Lien,Industrials,,6%,SOFR,6%,1%,,6/30/26,35100,35100,35100,,35100,,,,,,FSK,2024-11-06
+HM Dunn Co Inc.,co_1d4393b22e27,First Lien,Industrials,,6%,SOFR,6%,1%,,6/30/26,2900,2900,2900,,2900,,,,,,FSK,2024-11-06
+HM Dunn Co Inc.,co_1d4393b22e27,First Lien,Industrials,,6%,SOFR,6%,1%,,6/30/26,2000,2000,2000,,2000,,,,,,FSK,2024-11-06
+Individual FoodService,co_f3b45edac46b,First Lien,Industrials,,,SOFR,6%,1%,,10/31/29,74300,73100,74300,,73100,,,,,,FSK,2024-11-06
+Individual FoodService,co_f3b45edac46b,First Lien,Industrials,,,SOFR,6%,1%,,10/31/29,2200,2200,2200,,2200,,,,,,FSK,2024-11-06
+Industria Chimica Emiliana Srl,co_d08b860ec929,First Lien,Healthcare,,2.5%,SOFR,4.75%,0%,,,17700,20800,18800,,20800,,,,,,FSK,2024-11-06
+Industria Chimica Emiliana Srl,co_d08b860ec929,First Lien,Healthcare,,2.5%,SOFR,7.25%,0%,,,71200,82800,75600,,82800,,,,,,FSK,2024-11-06
+Industry City TI Lessor LP,co_be3be39ad098,First Lien,Consumer & Retail,10.8%,1%,,,,,6/30/26,17000,17000,17600,,17000,,,,,,FSK,2024-11-06
+iNova Pharmaceuticals (Australia) Pty Ltd.,co_c67c5314117e,First Lien,Healthcare,,,SOFR,6.5%,0.8%,,10/30/28,1800,1100,1200,,1100,,,,,,FSK,2024-11-06
+iNova Pharmaceuticals (Australia) Pty Ltd.,co_c67c5314117e,First Lien,Healthcare,,,SOFR,6.5%,0.8%,,10/30/28,1700,1100,1100,,1100,,,,,,FSK,2024-11-06
+Insight Global LLC,co_e0515772cf36,First Lien,Business Services,,,SOFR,6%,0.8%,,9/22/28,175000,173800,175000,,173800,,,,,,FSK,2024-11-06
+Insight Global LLC,co_e0515772cf36,First Lien,Business Services,,,SOFR,6%,0.8%,,,47900,47900,47900,,47900,,,,,,FSK,2024-11-06
+Insightsoftware.Com Inc.,co_7999d3b7f706,First Lien,Software & Technology,,,SOFR,5.25%,1%,,5/25/28,700,700,700,,700,,,,,,FSK,2024-11-06
+Insightsoftware.Com Inc.,co_7999d3b7f706,First Lien,Software & Technology,,,SOFR,5.25%,1%,,5/25/28,16700,16700,16600,,16700,,,,,,FSK,2024-11-06
+Insightsoftware.Com Inc.,co_7999d3b7f706,First Lien,Software & Technology,,,SOFR,5.25%,0.8%,,5/25/28,7000,7000,7000,,7000,,,,,,FSK,2024-11-06
+Insightsoftware.Com Inc.,co_7999d3b7f706,First Lien,Software & Technology,,,SOFR,5.25%,1%,,5/25/28,4600,4600,4600,,4600,,,,,,FSK,2024-11-06
+Integrity Marketing Group LLC,co_7e04b8974835,First Lien,Insurance,,,SOFR,5%,0.8%,,,98800,98800,98800,,98800,,,,,,FSK,2024-11-06
+Integrity Marketing Group LLC,co_7e04b8974835,First Lien,Insurance,,,SOFR,5%,0.8%,,,100,100,100,,100,,,,,,FSK,2024-11-06
+Integrity Marketing Group LLC,co_7e04b8974835,First Lien,Insurance,,,SOFR,5%,0.8%,,,1600,1600,1600,,1600,,,,,,FSK,2024-11-06
+J S Held LLC,co_ce18b6303963,First Lien,Insurance,,,SOFR,5.5%,1%,,,141800,141400,141800,,141400,,,,,,FSK,2024-11-06
+J S Held LLC,co_ce18b6303963,First Lien,Insurance,,,SOFR,5.5%,1%,,,14100,14000,14100,,14000,,,,,,FSK,2024-11-06
+Karman Space Inc.,co_44429b0e48eb,First Lien,Industrials,,,SOFR,6.25%,2%,,12/21/25,94900,93600,95300,,93600,,,,,,FSK,2024-11-06
+Karman Space Inc.,co_44429b0e48eb,First Lien,Industrials,,,SOFR,6.25%,2%,,12/21/25,5500,5400,5500,,5400,,,,,,FSK,2024-11-06
+Kellermeyer Bergensons Services LLC,co_844de449947e,First Lien,Business Services,,3.5%,SOFR,1.75%,1%,,,196700,192400,196700,,192400,,,,,,FSK,2024-11-06
+Kellermeyer Bergensons Services LLC,co_844de449947e,First Lien,Business Services,,7%,SOFR,1%,1%,,,86800,85200,86400,,85200,,,,,,FSK,2024-11-06
+Kellermeyer Bergensons Services LLC,co_844de449947e,First Lien,Business Services,,3.5%,SOFR,1.75%,1%,,,5500,5500,5500,,5500,,,,,,FSK,2024-11-06
+Laboratoires Vivacy SAS,co_571771b7df84,First Lien,Healthcare,,2.4%,SOFR,6.75%,0%,,,100,100,100,,100,,,,,,FSK,2024-11-06
+Laboratoires Vivacy SAS,co_571771b7df84,First Lien,Healthcare,,2.4%,SOFR,6.75%,0%,,,500,600,500,,600,,,,,,FSK,2024-11-06
+Lakeview Farms Inc.,co_1fd93a8731d8,First Lien,Agriculture,,,SOFR,5.75%,1%,,,67300,66200,67300,,66200,,,,,,FSK,2024-11-06
+Lakeview Farms Inc.,co_1fd93a8731d8,First Lien,Agriculture,,,SOFR,5.75%,1%,,,2100,2100,2100,,2100,,,,,,FSK,2024-11-06
+Lakeview Farms Inc.,co_1fd93a8731d8,First Lien,Agriculture,,,SOFR,5.75%,1%,,,4700,4700,4700,,4700,,,,,,FSK,2024-11-06
+Lazer Logistics Inc.,co_62e96012a5c2,First Lien,Transportation & Logistics,,,SOFR,5%,0.8%,,,24200,24000,24400,,24000,,,,,,FSK,2024-11-06
+Lazer Logistics Inc.,co_62e96012a5c2,First Lien,Transportation & Logistics,,,SOFR,5%,0.8%,,,1900,1900,1900,,1900,,,,,,FSK,2024-11-06
+Lazer Logistics Inc.,co_62e96012a5c2,First Lien,Transportation & Logistics,,,SOFR,5%,0.8%,,,5700,5700,5700,,5700,,,,,,FSK,2024-11-06
+Legends Hospitality LLC,co_1af91040d9e1,First Lien,Consumer & Retail,,2.8%,SOFR,5%,0.8%,,,117200,116000,116000,,116000,,,,,,FSK,2024-11-06
+Legends Hospitality LLC,co_1af91040d9e1,First Lien,Consumer & Retail,,2.5%,SOFR,5%,0.8%,,,13800,13800,13600,,13800,,,,,,FSK,2024-11-06
+Legends Hospitality LLC,co_1af91040d9e1,First Lien,Consumer & Retail,,2.8%,SOFR,5%,0.8%,,,6900,6900,6800,,6900,,,,,,FSK,2024-11-06
+Lexitas Inc.,co_ed4c152ce652,First Lien,Business Services,,,SOFR,6.25%,1%,,5/18/29,117500,115200,119800,,115200,,,,,,FSK,2024-11-06
+Lexitas Inc.,co_ed4c152ce652,First Lien,Business Services,,,SOFR,6.25%,1%,,5/18/29,8400,8400,8400,,8400,,,,,,FSK,2024-11-06
+Lexitas Inc.,co_ed4c152ce652,First Lien,Business Services,,,SOFR,6.25%,1%,,5/18/29,28600,28600,29100,,28600,,,,,,FSK,2024-11-06
+Lionbridge Technologies Inc.,co_6415b5e21d61,First Lien,Media & Entertainment,,,SOFR,7%,1%,,12/29/25,99600,98000,99600,,98000,,,,,,FSK,2024-11-06
+Lipari Foods LLC,co_ce6514ec544a,First Lien,Consumer & Retail,,,SOFR,6.5%,1%,,10/31/28,99800,98800,98700,,98800,,,,,,FSK,2024-11-06
+Lipari Foods LLC,co_ce6514ec544a,First Lien,Consumer & Retail,,,SOFR,6.5%,1%,,10/31/28,15000,15000,14800,,15000,,,,,,FSK,2024-11-06
+Lloyd's Register Quality Assurance Ltd.,co_5b04fc0769cf,First Lien,Consumer & Retail,,3%,SOFR,6%,0%,,,12300,15900,16500,,15900,,,,,,FSK,2024-11-06
+Lloyd's Register Quality Assurance Ltd.,co_5b04fc0769cf,First Lien,Consumer & Retail,,3%,SOFR,6%,0%,,,2700,4100,4100,,4100,,,,,,FSK,2024-11-06
+Magna Legal Services LLC,co_8a0b55ea47eb,First Lien,Business Services,,,SOFR,6%,0.8%,,,4500,4500,4600,,4500,,,,,,FSK,2024-11-06
+Magna Legal Services LLC,co_8a0b55ea47eb,First Lien,Business Services,,,SOFR,6.5%,0.8%,,,23300,23100,23500,,23100,,,,,,FSK,2024-11-06
+Magna Legal Services LLC,co_8a0b55ea47eb,First Lien,Business Services,,,SOFR,6.5%,0.8%,,,2200,2200,2200,,2200,,,,,,FSK,2024-11-06
+Magna Legal Services LLC,co_8a0b55ea47eb,First Lien,Business Services,,,SOFR,6%,0.8%,,,8900,8900,8900,,8900,,,,,,FSK,2024-11-06
+MAI Capital Management LLC,co_65e9bd2e18f3,First Lien,Financial Services,,2.4%,SOFR,4.75%,0.8%,,8/29/31,6700,6700,6700,,6700,,,,,,FSK,2024-11-06
+MAI Capital Management LLC,co_65e9bd2e18f3,First Lien,Financial Services,,,SOFR,4.75%,0.8%,,8/29/31,2500,2500,2500,,2500,,,,,,FSK,2024-11-06
+MB2 Dental Solutions LLC,co_bf420c857197,First Lien,Healthcare,,,SOFR,6%,0.8%,,,117800,116700,118800,,116700,,,,,,FSK,2024-11-06
+MB2 Dental Solutions LLC,co_bf420c857197,First Lien,Healthcare,,,SOFR,6%,0.8%,,,69600,69600,70200,,69600,,,,,,FSK,2024-11-06
+MB2 Dental Solutions LLC,co_bf420c857197,First Lien,Healthcare,,,SOFR,6%,0.8%,,,10700,10700,10700,,10700,,,,,,FSK,2024-11-06
+Medallia Inc.,co_6264231460f8,First Lien,Software & Technology,,4%,SOFR,2.5%,0.8%,,10/29/28,223700,222100,219200,,222100,,,,,,FSK,2024-11-06
+Med-Metrix,co_a9dc731a6a51,First Lien,Software & Technology,,,SOFR,5.5%,1%,,9/15/27,119000,118800,119300,,118800,,,,,,FSK,2024-11-06
+Med-Metrix,co_a9dc731a6a51,First Lien,Software & Technology,,,SOFR,5.5%,1%,,9/15/27,7800,7800,7800,,7800,,,,,,FSK,2024-11-06
+Miami Beach Medical Group LLC,co_6d36fffb075e,First Lien,Healthcare,,,,,,,,10900,5500,10400,,5500,,,,,,FSK,2024-11-06
+Miami Beach Medical Group LLC,co_6d36fffb075e,First Lien,Healthcare,,1.5%,SOFR,6.5%,1%,,,133600,124000,0,,124000,,,,,,FSK,2024-11-06
+Misys Ltd.,co_f281fc174160,First Lien,Software & Technology,,,SOFR,7.25%,1%,,9/13/29,700,700,700,,700,,,,,,FSK,2024-11-06
+Misys Ltd.,co_f281fc174160,First Lien,Software & Technology,,,SOFR,7.25%,1%,,9/13/29,800,800,800,,800,,,,,,FSK,2024-11-06
+Model N Inc.,co_74409df818dd,First Lien,Software & Technology,,3%,SOFR,5%,0.8%,,6/27/31,24900,24700,24800,,24700,,,,,,FSK,2024-11-06
+Model N Inc.,co_74409df818dd,First Lien,Software & Technology,,3%,SOFR,5%,0.8%,,6/27/31,5100,5100,5100,,5100,,,,,,FSK,2024-11-06
+Model N Inc.,co_74409df818dd,First Lien,Software & Technology,,,SOFR,5%,0.8%,,6/27/31,2700,2700,2700,,2700,,,,,,FSK,2024-11-06
+NBG Home,co_47fe139d2e43,First Lien,Consumer & Retail,,,,,,,,10100,10100,10100,,10100,,,,,,FSK,2024-11-06
+NBG Home,co_47fe139d2e43,First Lien,Consumer & Retail,,10%,,,1%,,,32700,30700,9600,,30700,,,,,,FSK,2024-11-06
+NCI Inc.,co_2d56837d37a7,First Lien,Software & Technology,,7.5%,,,1%,,8/15/28,32500,32700,32500,,32700,,,,,,FSK,2024-11-06
+Net Documents,co_6c0e3373b185,First Lien,Software & Technology,,,SOFR,4.75%,1%,,7/2/27,2000,2000,2000,,2000,,,,,,FSK,2024-11-06
+Net Documents,co_6c0e3373b185,First Lien,Software & Technology,,,SOFR,4.75%,1%,,7/2/27,33000,32800,33000,,32800,,,,,,FSK,2024-11-06
+Net Documents,co_6c0e3373b185,First Lien,Software & Technology,,,SOFR,4.75%,1%,,,2400,2400,2400,,2400,,,,,,FSK,2024-11-06
+Netsmart Technologies Inc.,co_fd6443dca978,First Lien,Healthcare,,2.3%,SOFR,4.75%,0.5%,,8/23/31,46500,46200,46200,,46200,,,,,,FSK,2024-11-06
+Netsmart Technologies Inc.,co_fd6443dca978,First Lien,Healthcare,,2.3%,SOFR,4.75%,0.5%,,8/23/31,6200,6200,6200,,6200,,,,,,FSK,2024-11-06
+Netsmart Technologies Inc.,co_fd6443dca978,First Lien,Healthcare,,,SOFR,4.75%,0.5%,,8/23/31,6300,6300,6300,,6300,,,,,,FSK,2024-11-06
+New Era Technology Inc.,co_d2b8c671f507,First Lien,Software & Technology,,,SOFR,6.25%,1%,,10/31/26,25000,24400,24900,,24400,,,,,,FSK,2024-11-06
+New Era Technology Inc.,co_d2b8c671f507,First Lien,Software & Technology,,,SOFR,6.25%,1%,,10/31/26,3700,3700,3700,,3700,,,,,,FSK,2024-11-06
+New Era Technology Inc.,co_d2b8c671f507,First Lien,Software & Technology,,,SOFR,6.25%,1%,,10/31/26,900,900,900,,900,,,,,,FSK,2024-11-06
+Nordic Climate Group Holding AB,co_030c555d03b5,First Lien,Business Services,,,SOFR,5.9%,0%,,6/10/31,313800,29100,30000,,29100,,,,,,FSK,2024-11-06
+Nordic Climate Group Holding AB,co_030c555d03b5,First Lien,Business Services,,,SOFR,5.75%,0%,,6/10/31,42400,3400,4100,,3400,,,,,,FSK,2024-11-06
+Nordic Climate Group Holding AB,co_030c555d03b5,First Lien,Business Services,,,SOFR,5.75%,0%,,6/10/31,30600,31900,33000,,31900,,,,,,FSK,2024-11-06
+Nordic Climate Group Holding AB,co_030c555d03b5,First Lien,Business Services,,,SOFR,5.75%,0%,,6/10/31,184700,17600,17000,,17600,,,,,,FSK,2024-11-06
+NovaTaste Austria GmbH Food Beverage & Tobacco,co_05e62ce985a2,First Lien,Food & Beverage,,,SOFR,5.5%,0%,,,4700,4900,5000,,4900,,,,,,FSK,2024-11-06
+OEConnection LLC,co_0e86f322edee,First Lien,Software & Technology,,,SOFR,5.25%,0.8%,,4/22/31,9000,9000,9100,,9000,,,,,,FSK,2024-11-06
+OEConnection LLC,co_0e86f322edee,First Lien,Software & Technology,,,SOFR,5.25%,0.8%,,,10300,10300,10300,,10300,,,,,,FSK,2024-11-06
+OEConnection LLC,co_0e86f322edee,First Lien,Software & Technology,,,SOFR,5.25%,0.8%,,,6400,6400,6400,,6400,,,,,,FSK,2024-11-06
+Omnimax International Inc.,co_4b432018d782,First Lien,Industrials,,,SOFR,6.75%,1%,,10/8/26,111300,108400,112600,,108400,,,,,,FSK,2024-11-06
+One Call Care Management Inc.,co_2f1848f0df9d,First Lien,Healthcare,,,SOFR,5.5%,0.8%,,,4800,4700,4700,,4700,,,,,,FSK,2024-11-06
+Oxford Global Resources LLC,co_a198a3da8cad,First Lien,Business Services,,,SOFR,6%,1%,,8/17/27,93100,92700,93100,,92700,,,,,,FSK,2024-11-06
+Oxford Global Resources LLC,co_a198a3da8cad,First Lien,Business Services,,,SOFR,6%,1%,,8/17/27,8400,8400,8600,,8400,,,,,,FSK,2024-11-06
+Oxford Global Resources LLC,co_a198a3da8cad,First Lien,Business Services,,,SOFR,6%,1%,,8/17/27,7600,7600,7600,,7600,,,,,,FSK,2024-11-06
+PartsSource Inc.,co_e47f308a6bfa,First Lien,Healthcare,,,SOFR,5.75%,0.8%,,,2900,2800,2900,,2800,,,,,,FSK,2024-11-06
+PartsSource Inc.,co_e47f308a6bfa,First Lien,Healthcare,,,SOFR,5.75%,0.8%,,,72200,71600,72200,,71600,,,,,,FSK,2024-11-06
+PartsSource Inc.,co_e47f308a6bfa,First Lien,Healthcare,,,SOFR,5.75%,0.8%,,,1400,1400,1400,,1400,,,,,,FSK,2024-11-06
+PartsSource Inc.,co_e47f308a6bfa,First Lien,Healthcare,,,SOFR,5.75%,0.8%,,,16900,16900,16900,,16900,,,,,,FSK,2024-11-06
+Performance Health Holdings Inc.,co_02063bc4ac7e,First Lien,Healthcare,,,SOFR,5.75%,1%,,7/12/27,93200,92600,93200,,92600,,,,,,FSK,2024-11-06
+Production Resource Group LLC,co_edea1d84506d,First Lien,Media & Entertainment,,5%,SOFR,3%,1%,,,98100,98200,101100,,98200,,,,,,FSK,2024-11-06
+Production Resource Group LLC,co_edea1d84506d,First Lien,Media & Entertainment,,11%,SOFR,3%,0.3%,,,184700,184700,188400,,184700,,,,,,FSK,2024-11-06
+Production Resource Group LLC,co_edea1d84506d,First Lien,Media & Entertainment,,2.5%,SOFR,3%,1%,,,300,200,300,,200,,,,,,FSK,2024-11-06
+Production Resource Group LLC,co_edea1d84506d,First Lien,Media & Entertainment,,5%,SOFR,3%,1%,,,100400,100400,103500,,100400,,,,,,FSK,2024-11-06
+PSC Group,co_184b9c862f22,First Lien,Transportation & Logistics,,,SOFR,5.25%,0.8%,,,1400,1400,1400,,1400,,,,,,FSK,2024-11-06
+PSC Group,co_184b9c862f22,First Lien,Transportation & Logistics,,,SOFR,5.25%,0.8%,,4/3/31,16000,15800,16000,,15800,,,,,,FSK,2024-11-06
+PSC Group,co_184b9c862f22,First Lien,Transportation & Logistics,,,SOFR,5.25%,0.8%,,,1100,1100,1100,,1100,,,,,,FSK,2024-11-06
+PSC Group,co_184b9c862f22,First Lien,Transportation & Logistics,,,SOFR,5.25%,0.8%,,,3300,3300,3300,,3300,,,,,,FSK,2024-11-06
+PSKW LLC,co_87d350da2b94,First Lien,Healthcare,,,SOFR,6.25%,1%,,3/9/26,231000,227600,231000,,227600,,,,,,FSK,2024-11-06
+Pure Fishing Inc.,co_ca33329ad32f,First Lien,Consumer & Retail,,,SOFR,4.5%,0%,,12/22/25,33100,32800,32400,,32800,,,,,,FSK,2024-11-06
+Radwell International LLC,co_99d87eb94e6c,First Lien,Industrials,,,SOFR,5.5%,0.8%,,,1400,1400,1400,,1400,,,,,,FSK,2024-11-06
+Radwell International LLC,co_99d87eb94e6c,First Lien,Industrials,,,SOFR,5.5%,0.8%,,,66800,66800,67100,,66800,,,,,,FSK,2024-11-06
+Radwell International LLC,co_99d87eb94e6c,First Lien,Industrials,,,SOFR,5.5%,0.8%,,,5500,5500,5500,,5500,,,,,,FSK,2024-11-06
+Reliant Rehab Hospital Cincinnati LLC,co_07720eda275b,First Lien,Healthcare,,,SOFR,6.25%,0%,,,44600,43400,43400,,43400,,,,,,FSK,2024-11-06
+Reliant Rehab Hospital Cincinnati LLC,co_07720eda275b,First Lien,Healthcare,,8.3%,SOFR,6.25%,0%,,,47700,42200,11700,,42200,,,,,,FSK,2024-11-06
+Reliant Rehab Hospital Cincinnati LLC,co_07720eda275b,First Lien,Healthcare,,,SOFR,6.25%,0%,,,2100,2100,2000,,2100,,,,,,FSK,2024-11-06
+Revere Superior Holdings Inc.,co_b1fe53b63419,First Lien,Software & Technology,,,SOFR,5%,1%,,,42200,41800,42300,,41800,,,,,,FSK,2024-11-06
+Revere Superior Holdings Inc.,co_b1fe53b63419,First Lien,Software & Technology,,,SOFR,5%,1%,,,3800,3800,3800,,3800,,,,,,FSK,2024-11-06
+Rise Baking Company Food Beverage & Tobacco 1,co_f14668637527,First Lien,Food & Beverage,,,SOFR,6.25%,1%,,,1800,1800,1800,,1800,,,,,,FSK,2024-11-06
+Rise Baking Company Food Beverage & Tobacco 2,co_f14668637527,First Lien,Food & Beverage,,,SOFR,6.25%,1%,,,28000,27600,28000,,27600,,,,,,FSK,2024-11-06
+Rise Baking Company Food Beverage & Tobacco 3,co_f14668637527,First Lien,Food & Beverage,,,SOFR,6.25%,1%,,,3400,3400,3400,,3400,,,,,,FSK,2024-11-06
+Rockefeller Capital Management LP,co_5cac50068c69,First Lien,Financial Services,,,SOFR,5%,0.5%,,4/4/31,23800,23600,24100,,23600,,,,,,FSK,2024-11-06
+RSC Insurance Brokerage Inc.,co_576ba8c67fb3,First Lien,Insurance,,,SOFR,4.75%,0.8%,,11/1/29,185800,181800,185800,,181800,,,,,,FSK,2024-11-06
+RSC Insurance Brokerage Inc.,co_576ba8c67fb3,First Lien,Insurance,,,SOFR,4.75%,0.8%,,11/1/29,17600,17600,17600,,17600,,,,,,FSK,2024-11-06
+RSC Insurance Brokerage Inc.,co_576ba8c67fb3,First Lien,Insurance,,,SOFR,4.75%,0.8%,,11/1/29,9700,9600,9700,,9600,,,,,,FSK,2024-11-06
+Safe-Guard Products International LLC,co_66e7f8de307b,First Lien,Financial Services,,,SOFR,4.75%,0.8%,,,42200,41900,42400,,41900,,,,,,FSK,2024-11-06
+Safe-Guard Products International LLC,co_66e7f8de307b,First Lien,Financial Services,,,SOFR,4.75%,0.8%,,,8800,8800,8800,,8800,,,,,,FSK,2024-11-06
+SAMBA Safety Inc.,co_3beacd650b97,First Lien,Software & Technology,5.25%,,,,1%,,9/1/27,8000,8000,8000,,8000,,,,,,FSK,2024-11-06
+SAMBA Safety Inc.,co_3beacd650b97,First Lien,Software & Technology,,,SOFR,5.25%,1%,,9/1/27,900,900,900,,900,,,,,,FSK,2024-11-06
+SAMBA Safety Inc.,co_3beacd650b97,First Lien,Software & Technology,,,SOFR,5.25%,1%,,9/1/27,1500,1500,1500,,1500,,,,,,FSK,2024-11-06
+Service Express Inc.,co_61a3538448df,First Lien,Business Services,,2.4%,,,0.5%,,8/15/31,31300,31200,31200,,31200,,,,,,FSK,2024-11-06
+Service Express Inc.,co_61a3538448df,First Lien,Business Services,,2.4%,,,0.5%,,8/15/31,7500,7500,7400,,7500,,,,,,FSK,2024-11-06
+Service Express Inc.,co_61a3538448df,First Lien,Business Services,,,SOFR,4.75%,0.5%,,8/15/31,4300,4300,4200,,4300,,,,,,FSK,2024-11-06
+Shaw Development LLC,co_7550655bafbe,First Lien,Industrials,,,SOFR,6%,0.5%,,10/30/29,28600,28400,28300,,28400,,,,,,FSK,2024-11-06
+Shaw Development LLC,co_7550655bafbe,First Lien,Industrials,,,SOFR,6%,0.5%,,10/30/29,3400,3400,3400,,3400,,,,,,FSK,2024-11-06
+SitusAMC Holdings Corp.,co_5d6bd5f7b398,First Lien,Real Estate,,,SOFR,5.5%,1%,,12/22/27,15900,15900,16000,,15900,,,,,,FSK,2024-11-06
+Source Code LLC,co_f0a4523c5d5a,First Lien,Software & Technology,,,SOFR,6.5%,1%,,,3600,3600,3600,,3600,,,,,,FSK,2024-11-06
+Source Code LLC,co_f0a4523c5d5a,First Lien,Software & Technology,,,SOFR,6.5%,1%,,,49600,49100,49600,,49100,,,,,,FSK,2024-11-06
+Spins LLC,co_10f68e4bce86,First Lien,Software & Technology,,,SOFR,5.5%,1%,,1/20/27,64300,62900,64300,,62900,,,,,,FSK,2024-11-06
+Spins LLC,co_10f68e4bce86,First Lien,Software & Technology,,,SOFR,5.5%,1%,,1/20/27,9100,9100,9100,,9100,,,,,,FSK,2024-11-06
+Spins LLC,co_10f68e4bce86,First Lien,Software & Technology,,,SOFR,5.5%,1%,,1/20/27,7900,7900,7900,,7900,,,,,,FSK,2024-11-06
+Spotless Brands LLC,co_007805ac402e,First Lien,Consumer & Retail,,,SOFR,5.75%,1%,,7/25/28,30900,30500,30900,,30500,,,,,,FSK,2024-11-06
+Spotless Brands LLC,co_007805ac402e,First Lien,Consumer & Retail,,,SOFR,5.5%,1%,,7/25/28,2200,2200,2200,,2200,,,,,,FSK,2024-11-06
+Spotless Brands LLC,co_007805ac402e,First Lien,Consumer & Retail,,,SOFR,5.5%,1%,,7/25/28,38500,38500,38300,,38500,,,,,,FSK,2024-11-06
+STV Group Inc.,co_8922cc638ea0,First Lien,Industrials,,,SOFR,5.25%,0.8%,,,1200,1200,1200,,1200,,,,,,FSK,2024-11-06
+STV Group Inc.,co_8922cc638ea0,First Lien,Industrials,,,SOFR,5%,0.8%,,3/20/31,10000,9900,10000,,9900,,,,,,FSK,2024-11-06
+STV Group Inc.,co_8922cc638ea0,First Lien,Industrials,,,SOFR,5.25%,0.8%,,,7100,7100,7100,,7100,,,,,,FSK,2024-11-06
+STV Group Inc.,co_8922cc638ea0,First Lien,Industrials,,,SOFR,5%,0.8%,,,11900,11900,11900,,11900,,,,,,FSK,2024-11-06
+Summit Interconnect Inc.,co_6522225e1cbf,First Lien,Industrials,,,SOFR,6%,1%,,9/22/28,134600,133800,123700,,133800,,,,,,FSK,2024-11-06
+Sweeping Corp.,co_359419487e34,First Lien,Business Services,,,SOFR,5.75%,1%,,,15700,15100,15700,,15100,,,,,,FSK,2024-11-06
+Sweeping Corp.,co_359419487e34,First Lien,Business Services,,5.75%,,,1%,,,29600,29600,29600,,29600,,,,,,FSK,2024-11-06
+Sweeping Corp.,co_359419487e34,First Lien,Business Services,,,SOFR,5.75%,1%,,,5700,5700,5700,,5700,,,,,,FSK,2024-11-06
+Tangoe LLC,co_3fb1b5c7bc54,First Lien,Software & Technology,,1.7%,SOFR,4.99%,1%,,,168800,162200,157200,,162200,,,,,,FSK,2024-11-06
+Tangoe LLC,co_3fb1b5c7bc54,First Lien,Software & Technology,,12.5%,,,,,6/30/26,15000,8900,400,,8900,,,,,fair_value_suspicious_vs_size,FSK,2024-11-06
+Tekfor HoldCo (formerly Amtek Global Technology Pte Ltd) Automobiles & Components,co_5c1a3516ab67,First Lien,,,,,,,,,42500,40100,4300,,40100,,,,,,FSK,2024-11-06
+ThreeSixty Group,co_97b342fd859c,First Lien,Consumer & Retail,,2.5%,SOFR,5%,1.5%,,,91500,92700,90200,,92700,,,,,,FSK,2024-11-06
+Time Manufacturing Co,co_e2a31783eb1a,First Lien,Industrials,,,SOFR,6.5%,0.8%,,12/1/27,45100,44500,41000,,44500,,,,,,FSK,2024-11-06
+Time Manufacturing Co,co_e2a31783eb1a,First Lien,Industrials,,,SOFR,6.5%,0.8%,,12/1/27,4300,4300,3900,,4300,,,,,,FSK,2024-11-06
+Time Manufacturing Co,co_e2a31783eb1a,First Lien,Industrials,,,SOFR,4.5%,0.8%,,12/1/27,13600,14400,13800,,14400,,,,,,FSK,2024-11-06
+Time Manufacturing Co,co_e2a31783eb1a,First Lien,Industrials,,,SOFR,6.5%,0.8%,,12/1/27,19500,19500,17700,,19500,,,,,,FSK,2024-11-06
+Trescal SA,co_eba2f6ca663d,First Lien,Business Services,,,SOFR,5.5%,0%,,,3900,4400,4400,,4400,,,,,,FSK,2024-11-06
+Trescal SA,co_eba2f6ca663d,First Lien,Business Services,,,SOFR,5.5%,0%,,,600,700,700,,700,,,,,,FSK,2024-11-06
+Trescal SA,co_eba2f6ca663d,First Lien,Business Services,,,SOFR,5%,0%,,,10300,11500,11400,,11500,,,,,,FSK,2024-11-06
+Turnpoint Services Inc.,co_6a3600eb9ea0,First Lien,Industrials,,3%,SOFR,5%,0.8%,,,12900,12800,12800,,12800,,,,,,FSK,2024-11-06
+Turnpoint Services Inc.,co_6a3600eb9ea0,First Lien,Industrials,,3%,SOFR,5%,0.8%,,,1600,1600,1600,,1600,,,,,,FSK,2024-11-06
+Turnpoint Services Inc.,co_6a3600eb9ea0,First Lien,Industrials,,3%,SOFR,5%,0.8%,,,2500,2500,2500,,2500,,,,,,FSK,2024-11-06
+Ultra Electronics Holdings Ltd.,co_d66b47096054,First Lien,Industrials,,,SOFR,3.75%,0.5%,,,1700,1700,1700,,1700,,,,,,FSK,2024-11-06
+USIC Holdings Inc.,co_60b6cbcf1fc7,First Lien,Business Services,,,SOFR,5.5%,0.8%,,9/10/31,119200,118600,118600,,118600,,,,,,FSK,2024-11-06
+USIC Holdings Inc.,co_60b6cbcf1fc7,First Lien,Business Services,,,SOFR,5.5%,0.8%,,9/10/31,200,200,200,,200,,,,,,FSK,2024-11-06
+USIC Holdings Inc.,co_60b6cbcf1fc7,First Lien,Business Services,,,SOFR,5.25%,0.8%,,9/10/31,7400,7400,7400,,7400,,,,,,FSK,2024-11-06
+USIC Holdings Inc.,co_60b6cbcf1fc7,First Lien,Business Services,,,SOFR,5.5%,0.8%,,9/10/31,6800,6800,6800,,6800,,,,,,FSK,2024-11-06
+USIC Holdings Inc.,co_60b6cbcf1fc7,First Lien,Business Services,,,SOFR,5.25%,0.8%,,9/10/31,7800,7800,7800,,7800,,,,,,FSK,2024-11-06
+Version1 Software Ltd.,co_f1c0b753a731,First Lien,Software & Technology,,1.7%,SOFR,5.75%,0%,,7/11/29,2000,2500,2200,,2500,,,,,,FSK,2024-11-06
+Version1 Software Ltd.,co_f1c0b753a731,First Lien,Software & Technology,,1.7%,SOFR,5.75%,0%,,,11700,12300,12300,,12300,,,,,,FSK,2024-11-06
+VetCor Professional Practices LLC,co_78350470f446,First Lien,Healthcare,,,SOFR,5.75%,0.8%,,8/31/29,68100,67600,68100,,67600,,,,,,FSK,2024-11-06
+VetCor Professional Practices LLC,co_78350470f446,First Lien,Healthcare,,,SOFR,6%,0.8%,,8/31/29,5300,5300,5300,,5300,,,,,,FSK,2024-11-06
+VetCor Professional Practices LLC,co_78350470f446,First Lien,Healthcare,,,SOFR,5.75%,0.8%,,8/31/29,6700,6700,6700,,6700,,,,,,FSK,2024-11-06
+VetCor Professional Practices LLC,co_78350470f446,First Lien,Healthcare,,,SOFR,6%,0.8%,,8/31/29,3200,3200,3200,,3200,,,,,,FSK,2024-11-06
+VetCor Professional Practices LLC,co_78350470f446,First Lien,Healthcare,,,SOFR,5.25%,0.8%,,8/31/29,34300,34100,34000,,34100,,,,,,FSK,2024-11-06
+Vytalogy Wellness LLC,co_d82811d75153,First Lien,Consumer & Retail,,,SOFR,6.25%,1%,,11/30/26,114000,111100,109000,,111100,,,,,,FSK,2024-11-06
+Wealth Enhancement Group LLC,co_5f90314ee2d0,First Lien,Financial Services,,,SOFR,5.5%,1%,,10/4/28,0,0,0,,0,,,,,,FSK,2024-11-06
+Wealth Enhancement Group LLC,co_5f90314ee2d0,First Lien,Financial Services,,,SOFR,5.5%,1%,,,400,400,400,,400,,,,,,FSK,2024-11-06
+Wealth Enhancement Group LLC,co_5f90314ee2d0,First Lien,Financial Services,,,SOFR,5.5%,1%,,,2100,2100,2100,,2100,,,,,,FSK,2024-11-06
+Wealth Enhancement Group LLC,co_5f90314ee2d0,First Lien,Financial Services,,,SOFR,5.5%,1%,,10/4/27,1000,1000,1000,,1000,,,,,,FSK,2024-11-06
+Wittur Holding GmbH,co_ea43498b59c8,First Lien,Industrials,,5.9%,SOFR,0.1%,,,,53800,57600,57300,,57600,,,,,,FSK,2024-11-06
+Woolpert Inc.,co_4e4c2e50b1fe,First Lien,Industrials,,,SOFR,5%,1%,,,3300,3300,3300,,3300,,,,,,FSK,2024-11-06
+Woolpert Inc.,co_4e4c2e50b1fe,First Lien,Industrials,,,SOFR,5%,1%,,,72800,72800,72900,,72800,,,,,,FSK,2024-11-06
+Woolpert Inc.,co_4e4c2e50b1fe,First Lien,Industrials,,,SOFR,5%,1%,,,15200,15200,15200,,15200,,,,,,FSK,2024-11-06
+Woolpert Inc.,co_4e4c2e50b1fe,First Lien,Industrials,,,SOFR,5%,1%,,,31200,31200,31200,,31200,,,,,,FSK,2024-11-06
+Worldwise Inc.,co_178274d09e93,First Lien,Consumer & Retail,,0.5%,SOFR,6.25%,1%,,3/29/28,40700,40600,27000,,40600,,,,,,FSK,2024-11-06
+Worldwise Inc.,co_178274d09e93,First Lien,Consumer & Retail,,0.5%,SOFR,6.25%,1%,,3/29/28,14200,14200,9500,,14200,,,,,,FSK,2024-11-06
+Worldwise Inc.,co_178274d09e93,First Lien,Consumer & Retail,,0.5%,SOFR,6.25%,1%,,3/29/28,28000,28000,18600,,28000,,,,,,FSK,2024-11-06
+Zellis Holdings Ltd.,co_c3f06d7a10f0,First Lien,Software & Technology,,5.5%,SOFR,5.5%,0%,,8/13/31,6300,8000,7900,,8000,,,,,,FSK,2024-11-06
+Zendesk Inc.,co_42318dcf1822,First Lien,Software & Technology,,,SOFR,5%,0.8%,,11/22/28,59600,59200,59600,,59200,,,,,,FSK,2024-11-06
+Zendesk Inc.,co_42318dcf1822,First Lien,Software & Technology,,,SOFR,5%,0.8%,,11/22/28,14500,14400,14500,,14400,,,,,,FSK,2024-11-06
+Zendesk Inc.,co_42318dcf1822,First Lien,Software & Technology,,,SOFR,5%,0.8%,,11/22/28,6000,6000,6000,,6000,,,,,,FSK,2024-11-06
+Zeus Industrial Products Inc.,co_4dbf2cd93e89,First Lien,Healthcare,,2.8%,SOFR,5.5%,0.8%,,,82900,82300,83700,,82300,,,,,,FSK,2024-11-06
+Zeus Industrial Products Inc.,co_4dbf2cd93e89,First Lien,Healthcare,,,SOFR,5.5%,0.8%,,,11600,11600,11600,,11600,,,,,,FSK,2024-11-06
+Zeus Industrial Products Inc.,co_4dbf2cd93e89,First Lien,Healthcare,,,SOFR,5.5%,0.8%,,,15500,15500,15600,,15500,,,,,,FSK,2024-11-06
+Constellis Holdings LLC,co_913a725def51,First Lien,Industrials,,,SOFR,9%,1%,,12/31/28,7000,6800,7000,,6800,,,,,,FSK,2024-11-06
+Cubic Corp.,co_18df6aff73ef,First Lien,Software & Technology,,,SOFR,7.63%,0.8%,,5/25/29,44800,42700,37400,,42700,,,,,,FSK,2024-11-06
+Ellucian Inc.,co_7eeec6cd8ec9,First Lien,Software & Technology,,,SOFR,8%,1%,,10/9/28,112800,107300,112800,,107300,,,,,,FSK,2024-11-06
+Integrated Power Services LLC,co_bbc6310aba7b,First Lien,Business Services,,,SOFR,7.5%,0.8%,,11/22/29,46300,45600,45800,,45600,,,,,,FSK,2024-11-06
+Peraton Corp.,co_26028249ab33,First Lien,Industrials,,,SOFR,8%,1%,,2/1/29,175000,167900,175000,,167900,,,,,,FSK,2024-11-06
+Peraton Corp.,co_26028249ab33,First Lien,Industrials,,,SOFR,7.75%,0.8%,,2/1/29,129800,125300,129800,,125300,,,,,,FSK,2024-11-06
+Quoizel LLC,co_718fa673ba85,First Lien,Consumer & Retail,,6.5%,,,1%,,,7100,7100,7100,,7100,,,,,,FSK,2024-11-06
+Quoizel LLC,co_718fa673ba85,First Lien,Consumer & Retail,,6.5%,,,1%,,,7400,7400,7400,,7400,,,,,,FSK,2024-11-06
+Solera LLC,co_4581663b6500,First Lien,Software & Technology,,,SOFR,9%,1%,,6/4/29,335900,323300,335900,,323300,,,,,,FSK,2024-11-06
+Sweeping Corp.,co_359419487e34,First Lien,Business Services,,,,,,,,8300,4500,4500,,4500,,,,,,FSK,2024-11-06
+Sweeping Corp.,co_359419487e34,First Lien,Business Services,,,,,,,3/12/36,24000,0,0,,0,,,,,,FSK,2024-11-06
+Valeo Foods Group Ltd.,co_e358e093e0ca,First Lien,Food & Beverage,,,SOFR,7.5%,0%,,,3800,4100,4000,,4100,,,,,,FSK,2024-11-06
+Valeo Foods Group Ltd.,co_e358e093e0ca,First Lien,Food & Beverage,,,SOFR,7.5%,0%,,,2300,3000,2900,,3000,,,,,,FSK,2024-11-06
+JW Aluminum Co Materials,co_d87c21967954,First Lien,,10.3%,,,,,,,76500,76000,76600,,76000,,,,,,FSK,2024-11-06
+One Call Care Management Inc.,co_2f1848f0df9d,First Lien,Healthcare,,8.5%,,,,,11/1/28,29000,27700,23900,,27700,,,,,,FSK,2024-11-06
+TIBCO Software Inc.,co_2237c5138454,First Lien,Software & Technology,6.5%,,,,,,,700,600,700,,600,,,,,,FSK,2024-11-06
+Warren Resources Inc.,co_7c970b735c44,First Lien,Energy,4%,,,,,,,24300,24300,20800,,24300,,,,,,FSK,2024-11-06
+Apex Service Partners LLC,co_dcc76088316b,First Lien,Business Services,,14.3%,,,,,,21900,21600,21400,,21600,,,,,,FSK,2024-11-06
+ATX Networks Corp.,co_ec7da23d7126,First Lien,Industrials,,10%,,,,,9/1/28,43000,21400,24000,,21400,,,,,,FSK,2024-11-06
+Colosseum Dental Group,co_132427b06a8a,First Lien,Healthcare,,8.5%,,,,,4/23/29,10900,11300,11800,,11300,,,,,,FSK,2024-11-06
+Element Materials Technology Group US Holdings Inc.,co_98fb27dba8c9,First Lien,Business Services,,8.5%,,,0.5%,,7/9/31,4000,4000,4100,,4000,,,,,,FSK,2024-11-06
+Miami Beach Medical Group LLC,co_6d36fffb075e,First Lien,Healthcare,,1.5%,SOFR,6.5%,1%,,,17200,17200,11200,,17200,,,,,,FSK,2024-11-06
+Miami Beach Medical Group LLC,co_6d36fffb075e,First Lien,Healthcare,,1.5%,SOFR,6.5%,1%,,,9100,9100,6000,,9100,,,,,,FSK,2024-11-06
+Sorenson Communications LLC,co_472c148188a7,First Lien,Telecommunications,,,,,,,,11500,8900,11300,,8900,,,,,,FSK,2024-11-06
+Sorenson Communications LLC,co_472c148188a7,First Lien,Telecommunications,,,,,,,,45300,32000,41000,,32000,,,,,,FSK,2024-11-06
+Ultra Electronics Holdings Ltd.,co_d66b47096054,First Lien,Industrials,,,SOFR,7.25%,0.5%,,,62900,61400,62400,,61400,,,,,,FSK,2024-11-06
+Ultra Electronics Holdings Ltd.,co_d66b47096054,First Lien,Industrials,,9%,,,0.5%,,1/31/31,38000,37400,36900,,37400,,,,,,FSK,2024-11-06
+801 5th Ave Seattle ABF Equity,co_d901e1c988a9,Other Equity,Real Estate,,,,,,,,,14000,0,,14000,,,,8516891,,FSK,2024-11-06
+801 5th Ave Seattle Structure Mezzanine,co_25735f3e53bc,Other Equity,,8%,3%,,,,,,60600,59100,51900,,59100,,,,,,FSK,2024-11-06
+Abacus JV ABF Equity,co_d88db2540fe7,Other Equity,Insurance,,,,,,,,,46100,41200,,46100,,,,47045141,,FSK,2024-11-06
+Accelerator Investments Aggregator LP,co_4e311858a073,Other Equity,Financial Services,,,,,,,,,1500,1000,,1500,,,,1339253,,FSK,2024-11-06
+Altavair AirFinance ABF Equity,co_b7e64ef28e43,Other Equity,Industrials,,,,,,,,,124800,132300,,124800,,,,123869649,,FSK,2024-11-06
+Altitude II IRL WH Borrower DAC Revolver,co_935ad475f779,First Lien,Industrials,,,SOFR,10%,0%,,1/12/30,4900,4900,4900,,4900,,,,,type_hint_revolver_from_name,FSK,2024-11-06
+Australis Maritime II ABF Equity,co_a3dd0f1369d2,Other Equity,Transportation & Logistics,,,,,,,,,20900,21600,,20900,,,,20944451,,FSK,2024-11-06
+Australis Maritime Common Stock,co_cfddf7449ad1,Other Equity,Transportation & Logistics,,,,,,,,,23200,22000,,23200,,,,23226239,,FSK,2024-11-06
+Auxilior Capital Partners Inc.,co_caba924ef58b,First Lien,Financial Services,5%,9.5%,,,,,4/30/30,16900,16900,17100,,16900,,,,,,FSK,2024-11-06
+Avenue One PropCo ABF Equity,co_555b340cc77f,Other Equity,Real Estate,,,,,,,,,10300,10900,,10300,,,,10339283,,FSK,2024-11-06
+Avenue One PropCo Term Loan,co_11441953c936,Other Equity,Real Estate,,7%,,,,,3/15/34,31700,31700,31700,,31700,,,,,,FSK,2024-11-06
+Avida Holding AB Common Stock,co_d6d6e6655ce8,Other Equity,Financial Services,,,,,,,,,49900,42900,,49900,,,,444962569,,FSK,2024-11-06
+Avida Holding AB Subordinated Bond,co_aa12641d223d,First Lien,Financial Services,,,SOFR,9.25%,0%,,1/27/34,15000,1300,1500,,1300,,,,,,FSK,2024-11-06
+Bankers Healthcare Group LLC,co_e65ea7b34d04,First Lien,Financial Services,22%,,,,,,11/8/27,8800,8800,8700,,8800,,,,,,FSK,2024-11-06
+Bausch Health Cos Inc.,co_370623cee029,First Lien,Healthcare,,,SOFR,6.65%,1%,,1/28/28,60000,60000,60000,,60000,,,,,,FSK,2024-11-06
+Byrider Finance LLC,co_bf16c7912af8,Other Equity,Automotive,,,,,,,11/26/26,,0,0,,0,,,,54407,,FSK,2024-11-06
+Callodine Commercial Finance LLC,co_3b3f22eef2d1,First Lien,Financial Services,,,SOFR,9%,1%,,11/3/25,94900,92100,94900,,92100,,,,,,FSK,2024-11-06
+Callodine Commercial Finance LLC,co_3b3f22eef2d1,First Lien,Financial Services,,,SOFR,9%,1%,,11/3/25,12000,12000,12000,,12000,,,,,,FSK,2024-11-06
+Callodine Commercial Finance LLC,co_3b3f22eef2d1,First Lien,Financial Services,,,SOFR,9%,1%,,11/3/25,36100,36100,36100,,36100,,,,,,FSK,2024-11-06
+Capital Automotive LP,co_f16ec4490efd,Other Equity,Real Estate,,,,,,,,,22300,33000,,22300,,,,20220146,,FSK,2024-11-06
+Capital Automotive LP,co_f16ec4490efd,Other Equity,Real Estate,11%,,,,,,12/22/28,40400,39900,40400,,39900,,,,,,FSK,2024-11-06
+Covis Finco Sarl Revolver,co_2e8fe8276811,First Lien,Healthcare,,,SOFR,6.75%,1%,,,10800,10800,10800,,10800,,,,,type_hint_revolver_from_name,FSK,2024-11-06
+Covis Finco Sarl Revolver,co_2e8fe8276811,First Lien,Healthcare,,,SOFR,6.75%,1%,,,1300,900,1000,,900,,,,,type_hint_revolver_from_name,FSK,2024-11-06
+Covis Finco Sarl Revolver,co_2e8fe8276811,First Lien,Healthcare,,,SOFR,6.75%,1%,,,2300,2300,2500,,2300,,,,,type_hint_revolver_from_name,FSK,2024-11-06
+Covis Finco Sarl Revolver,co_2e8fe8276811,First Lien,Healthcare,,,SOFR,6.75%,1%,,,1300,1300,1300,,1300,,,,,type_hint_revolver_from_name,FSK,2024-11-06
+Covis Finco Sarl Revolver,co_2e8fe8276811,First Lien,Healthcare,,,SOFR,6.75%,1%,,,2700,2100,2100,,2100,,,,,type_hint_revolver_from_name,FSK,2024-11-06
+Covis Finco Sarl Revolver,co_2e8fe8276811,First Lien,Healthcare,,,SOFR,6.75%,1%,,,1700,1900,2000,,1900,,,,,type_hint_revolver_from_name,FSK,2024-11-06
+Curia Global Inc.,co_df0685761a8f,First Lien,Healthcare,,,SOFR,6.25%,1%,,1/29/29,42000,42000,42000,,42000,,,,,,FSK,2024-11-06
+Curia Global Inc.,co_df0685761a8f,First Lien,Healthcare,,,SOFR,6.25%,1%,,1/29/29,41300,41300,41300,,41300,,,,,,FSK,2024-11-06
+Discover Financial Services ABF Equity,co_4b71a20691b0,Other Equity,Financial Services,,,,,,,,,2600,2600,,2600,,,,2587823,,FSK,2024-11-06
+Discover Financial Services Subordinated Loan,co_30ac5868732d,First Lien,Financial Services,15%,,,,,,9/6/34,4800,4800,4800,,4800,,,,,,FSK,2024-11-06
+Discover Financial Services Subordinated Loan,co_30ac5868732d,First Lien,Financial Services,15%,,,,,,9/6/34,34100,34100,34100,,34100,,,,,,FSK,2024-11-06
+Drive Revel ABF Equity,co_1395bbc87b9b,Other Equity,Financial Services,,,,,,,,,6600,8300,,6600,,,,6117567,,FSK,2024-11-06
+Global Jet Capital LLC,co_dd8203cc3a80,Other Equity,Business Services,,,,,,,10/1/28,,242900,171800,,242900,,,,425557318,,FSK,2024-11-06
+Global Lending Services LLC,co_80fcdfc8beda,Other Equity,Financial Services,,,,,,,,,3300,4200,,3300,,,,2867397,,FSK,2024-11-06
+Global Lending Services LLC,co_80fcdfc8beda,Other Equity,Financial Services,,,,,,,,,6100,5600,,6100,,,,6065811,,FSK,2024-11-06
+Global Lending Services LLC,co_80fcdfc8beda,Other Equity,Financial Services,,,,,,,,,53900,57400,,53900,,,,53899361,,FSK,2024-11-06
+Global Lending Services LLC,co_80fcdfc8beda,Other Equity,Financial Services,,,,,,,,,200,200,,200,,,,213001,,FSK,2024-11-06
+GreenSky Holdings LLC,co_ca4502704fdd,Other Equity,Financial Services,,,,,,,,,10700,13500,,10700,,,,10662084,,FSK,2024-11-06
+GreenSky Holdings LLC,co_ca4502704fdd,Other Equity,Financial Services,,,,,,,,,17300,16900,,17300,,,,17265803,,FSK,2024-11-06
+GreenSky Holdings LLC,co_ca4502704fdd,First Lien,Financial Services,,9.3%,,,,,3/14/34,33500,33500,33500,,33500,,,,,,FSK,2024-11-06
+GreenSky Holdings LLC,co_ca4502704fdd,First Lien,Financial Services,,9.3%,,,,,3/14/34,3000,3000,3000,,3000,,,,,,FSK,2024-11-06
+Kilter Finance ABF Equity,co_06a4fb7a5602,Other Equity,Insurance,,,,,,,,,500,500,,500,,,,536709,,FSK,2024-11-06
+Kilter Finance Preferred Stock,co_90cb112ddcc2,First Lien,Insurance,12%,,,,,,,101200,100400,101200,,100400,,,,,,FSK,2024-11-06
+KKR Altitude II Offshore Aggregator LP,co_c179e4d73f52,Other Equity,Industrials,,,,,,,,,83500,90300,,83500,,,,83548471,,FSK,2024-11-06
+KKR Central Park Leasing Aggregator LP. Partnership Interest,co_bd1668845e14,First Lien,Industrials,14.3%,,,,,,5/31/26,39100,39100,15600,,39100,,,,,,FSK,2024-11-06
+KKR Chord IP Aggregator LP,co_2fd0d1f47cd1,Other Equity,Media & Entertainment,,,,,,,,,200,24000,,200,,,,23208614,cost_suspicious_vs_size,FSK,2024-11-06
+KKR Rocket Loans Aggregator LLC,co_0055d24320ee,Other Equity,Financial Services,,,,,,,,,5700,5000,,5700,,,,5745264,,FSK,2024-11-06
+KKR Zeno Aggregator LP,co_9377db56e6ce,Other Equity,Industrials,,,,,,,,,4400,6500,,4400,,,,5047728,,FSK,2024-11-06
+Lennar Corp.,co_ff3871b0ae7a,Other Equity,Consumer & Retail,,,,,,,,,11600,11600,,11600,,,,11589875,,FSK,2024-11-06
+Lennar Corp.,co_ff3871b0ae7a,First Lien,Consumer & Retail,,10.8%,,,,,8/30/29,10000,10000,10000,,10000,,,,,,FSK,2024-11-06
+Lennar Corp.,co_ff3871b0ae7a,First Lien,Consumer & Retail,,10.8%,,,,,8/30/29,4800,4800,4800,,4800,,,,,,FSK,2024-11-06
+My Community Homes PropCo 2 ABF Equity,co_38c5ce4a3249,Other Equity,Real Estate,,,,,,,,,20300,17400,,20300,,,,20284091,,FSK,2024-11-06
+My Community Homes PropCo 2 Term Loan,co_c09a955b4f54,Other Equity,Real Estate,,7.5%,,,,,3/15/34,63200,63200,63200,,63200,,,,,,FSK,2024-11-06
+NewStar Clarendon 2014-1A Class D,co_5c9235f1edfd,First Lien,Financial Services,45.3%,,,,,,1/25/27,8300,1400,2400,,1400,,,,,,FSK,2024-11-06
+Norway_France ABF Equity,co_792a4ed010e2,Other Equity,Financial Services,,,,,,,,,11900,11900,,11900,,,,10716910,,FSK,2024-11-06
+Optio Invest ABF Equity,co_20733ae739de,Other Equity,Financial Services,,,,,,,,,4700,4800,,4700,,,,3672725,,FSK,2024-11-06
+PayPal Europe Sarl et Cie SCA ABF Equity,co_6c61ceb01386,Other Equity,Financial Services,,,,,,,,,63900,70800,,63900,,,,59011429,,FSK,2024-11-06
+Prime ST LLC,co_8b1edd46c6a9,Other Equity,Real Estate,,,,,,,,,8900,0,,8900,,,,5612193,,FSK,2024-11-06
+Prime ST LLC,co_8b1edd46c6a9,Other Equity,Real Estate,5%,6%,,,,,3/12/30,58900,57400,25700,,57400,,,,,,FSK,2024-11-06
+Residential Opportunities I LLC,co_e8fce08f1a2d,Other Equity,Real Estate,,,,,,,,,0,100,,0,,,,39,,FSK,2024-11-06
+Roemanu LLC,co_e8c37a10a8e4,Other Equity,Financial Services,,,,,,,,,236500,238700,,236500,,,,220778388,,FSK,2024-11-06
+Saluda Grade Alternative Mortgage Trust 2022-BC2 Structured Mezzanine,co_9df7339ade20,First Lien,Real Estate,18%,,,,,,7/25/30,3400,2400,2900,,2400,,,,,,FSK,2024-11-06
+Saluda Grade Alternative Mortgage Trust 2023-LOC2 Structured Mezzanine,co_9df7339ade20,Other Equity,Real Estate,,,,,,,10/25/53,,8500,8000,,8500,,,,5199630,,FSK,2024-11-06
+Star Mountain Diversified Credit Income Fund III LP,co_a089f3dfb36a,Other Equity,Financial Services,,,,,,,,,23500,23800,,23500,,,,23500000,,FSK,2024-11-06
+SunPower Financial ABF Equity,co_80d88bd76c76,Other Equity,Financial Services,,,,,,,,,3700,3900,,3700,,,,3690938,,FSK,2024-11-06
+Synovus Financial Corp.,co_0e44b28bef3a,Other Equity,Financial Services,,,,,,,,,5200,5500,,5200,,,,5164096,,FSK,2024-11-06
+TalkTalk Telecom Group Ltd.,co_4c616fff9b02,First Lien,Business Services,,,SOFR,7%,1.5%,,9/5/26,33900,42500,45400,,42500,,,,,,FSK,2024-11-06
+TalkTalk Telecom Group Ltd.,co_4c616fff9b02,First Lien,Business Services,,,SOFR,7%,1.5%,,9/5/26,9500,12100,12100,,12100,,,,,,FSK,2024-11-06
+TDC LLP ABF Equity,co_15e48c6f3744,Other Equity,Financial Services,,,,,,,,,2000,2000,,2000,,,,1576060,,FSK,2024-11-06
+TDC LLP Preferred Equity,co_4fe7da834705,First Lien,Financial Services,8%,,,,,,,26700,33700,36000,,33700,,,,,type_hint_pref_equity_from_name,FSK,2024-11-06
+Trinseo Materials Operating SCA / Trinseo Materials Finance Inc.,co_3abab5668873,Revolver,Materials,,,SOFR,4.75%,1%,,1/18/28,58500,58500,58600,,58500,,,,,,FSK,2024-11-06
+Vehicle Secured Funding Trust ABF Equity,co_6a55efd408fe,Other Equity,Financial Services,,,,,,,,,21100,21900,,21100,,,,21111425,,FSK,2024-11-06
+Vehicle Secured Funding Trust Term Loan,co_322d66881ae6,First Lien,Financial Services,,15%,,,,,1/25/46,63300,63300,63300,,63300,,,,,,FSK,2024-11-06
+Weber-Stephen Products LLC,co_d20be8aeea07,First Lien,Consumer & Retail,,,SOFR,5.75%,1%,,12/19/26,15500,15500,15600,,15500,,,,,,FSK,2024-11-06
+Weber-Stephen Products LLC,co_d20be8aeea07,First Lien,Consumer & Retail,,,SOFR,5.75%,1%,,12/19/26,67900,67900,68200,,67900,,,,,,FSK,2024-11-06
+Credit Opportunities Partners JV LLC,co_a92923eb7c46,Other Equity,"Credit Opportunities Partners JV, LLC",,,,,,,,1637300,1571700,1383800,,1571700,,,,,,FSK,2024-11-06
+Affordable Care Inc.,co_a4d36573f5a9,Other Equity,Healthcare,,11.8%,,,,,,,48100,49300,,48100,,,,49073000,,FSK,2024-11-06
+American Vision Partners Private Equity,co_ee4b9ef40eaf,Other Equity,Healthcare,,,,,,,,,2700,1900,,2700,,,,2655491,,FSK,2024-11-06
+Amerivet Partners Management Inc.,co_8250e61a6bff,Other Equity,Healthcare,,11.5%,,,,,2/25/28,,12300,9200,,12300,,,,12702290,,FSK,2024-11-06
+Arcos LLC/VA Preferred Stock,co_029f32203ab5,Other Equity,Software & Technology,,9.5%,,,1%,,,,14100,12600,,14100,,,,15000000,,FSK,2024-11-06
+Arena Energy LP,co_39bbf783d331,Other Equity,Energy,,,,,,,,,400,100,,400,,,,68186525,,FSK,2024-11-06
+Ascent Resources Utica Holdings LLC,co_a343f7fcd062,Other Equity,Energy,,,,,,,,,18100,21200,,18100,,,,866071,,FSK,2024-11-06
+Ascent Resources Utica Holdings LLC,co_a343f7fcd062,Other Equity,Energy,,,,,,,,,9700,2500,,9700,,,,10193,,FSK,2024-11-06
+athenahealth Inc.,co_89c76070757f,Other Equity,Healthcare,,10.8%,,,,,,,262200,260500,,262200,,,,267493,,FSK,2024-11-06
+ATX Networks Corp.,co_ec7da23d7126,Other Equity,Industrials,,,,,,,,,5000,0,,5000,,,,500,,FSK,2024-11-06
+Belk Inc.,co_138aca28627e,Other Equity,Consumer & Retail,,,,,,,,,10600,16400,,10600,,,,682612,,FSK,2024-11-06
+Borden,co_23b78dc1f876,Common Equity,Food & Beverage,,,,,,,,,0,13300,,0,,,,11167000,,FSK,2024-11-06
+Bowery Farming Inc.,co_3daee0d11817,Common Equity,Food & Beverage,,,,,,,9/10/26,,10000,0,,10000,,,,1058391,,FSK,2024-11-06
+Bowery Farming Inc.,co_3daee0d11817,Warrants,Food & Beverage,,,,,,,9/10/26,,0,0,,0,,,,147815378,,FSK,2024-11-06
+CDS US Intermediate Holdings Inc.,co_3dccf32da9b7,Other Equity,Media & Entertainment,,,,,,,,,0,15800,,0,,,,2023714,,FSK,2024-11-06
+Cengage Learning Inc.,co_2c3276bc8b09,Other Equity,Media & Entertainment,,,,,,,,,7500,3900,,7500,,,,227802,,FSK,2024-11-06
+Constellis Holdings LLC,co_913a725def51,Other Equity,Industrials,,,,,,,,,10300,0,,10300,,,,849702,,FSK,2024-11-06
+Constellis Holdings LLC,co_913a725def51,Other Equity,Industrials,,,,,,,,,3200,3200,,3200,,,,69653,,FSK,2024-11-06
+Cubic Corp.,co_18df6aff73ef,Other Equity,Software & Technology,,11%,,,,,5/25/29,,39700,26900,,39700,,,,42141600,,FSK,2024-11-06
+Galaxy Universal LLC,co_d22eaa1aa880,Other Equity,Consumer & Retail,,,,,,,,,35400,40000,,35400,,,,228806,,FSK,2024-11-06
+Galaxy Universal LLC,co_d22eaa1aa880,Other Equity,Consumer & Retail,,15.9%,,,,,,,4000,6100,,4000,,,,2068400,,FSK,2024-11-06
+Galaxy Universal LLC,co_d22eaa1aa880,Other Equity,Consumer & Retail,,,,,,,,,2500,1900,,2500,,,,7701195,,FSK,2024-11-06
+Gracent LLC,co_46ce4be607e5,Other Equity,Healthcare,,,,,,,,,0,0,,0,,,,250,,FSK,2024-11-06
+Gracent LLC,co_46ce4be607e5,Other Equity,Healthcare,,,,,,,2/28/27,,8200,4800,,8200,,,,1000,,FSK,2024-11-06
+HM Dunn Co Inc.,co_1d4393b22e27,Other Equity,Industrials,,,,,,,,,7100,6200,,7100,,,,85385,,FSK,2024-11-06
+HM Dunn Co Inc.,co_1d4393b22e27,Other Equity,Industrials,,,,,,,,,0,0,,0,,,,15000,,FSK,2024-11-06
+Imagine Communications Corp.,co_6facf8aa8132,Other Equity,Media & Entertainment,,,,,,,,,3800,1800,,3800,,,,33034,,FSK,2024-11-06
+JW Aluminum Co,co_1f553f87b95d,Common Equity,Materials,,,,,,,,,0,2600,,0,,,,2105,,FSK,2024-11-06
+JW Aluminum Co,co_1f553f87b95d,Preferred Equity,Materials,,12.5%,,,,,,,214500,153300,,214500,,,,15279,,FSK,2024-11-06
+Kellermeyer Bergensons Services LLC,co_844de449947e,Other Equity,Business Services,,,,,,,,,0,0,,0,,,,26230661,,FSK,2024-11-06
+Kellermeyer Bergensons Services LLC,co_844de449947e,Other Equity,Business Services,,,,,,,,,48300,15500,,48300,,,,26230661,,FSK,2024-11-06
+Lipari Foods LLC,co_ce6514ec544a,Other Equity,Consumer & Retail,,,,,,,10/31/28,,8000,4500,,8000,,,,7944319,,FSK,2024-11-06
+Magna Legal Services LLC,co_8a0b55ea47eb,Other Equity,Business Services,,,,,,,,,4900,6900,,4900,,,,4938192,,FSK,2024-11-06
+Maverick Natural Resources LLC,co_377413d3481c,Other Equity,Energy,,,,,,,,,61300,34500,,61300,,,,259211,,FSK,2024-11-06
+Med-Metrix Common Stock,co_a6f098698cd2,Other Equity,Software & Technology,,,,,,,9/15/27,,1500,3300,,1500,,,,29403,,FSK,2024-11-06
+Med-Metrix Preferred Stock,co_6720197ebd71,Other Equity,Software & Technology,,8%,,,,,9/15/27,,1500,1500,,1500,,,,29403,,FSK,2024-11-06
+Misys Ltd.,co_f281fc174160,Other Equity,Software & Technology,,12.25%,,,0%,,9/13/29,,81800,82600,,81800,,,,85835363,,FSK,2024-11-06
+NCI Inc.,co_2d56837d37a7,Other Equity,Software & Technology,,,,,,,,,0,0,,0,,,,42923,,FSK,2024-11-06
+NCI Inc.,co_2d56837d37a7,Other Equity,Software & Technology,,,,,,,,,20200,29500,,20200,,,,49406,,FSK,2024-11-06
+One Call Care Management Inc.,co_2f1848f0df9d,Other Equity,Healthcare,,,,,,,,,2100,2300,,2100,,,,34872,,FSK,2024-11-06
+One Call Care Management Inc.,co_2f1848f0df9d,Other Equity,Healthcare,,,,,,,,,22800,18900,,22800,,,,371992,,FSK,2024-11-06
+One Call Care Management Inc.,co_2f1848f0df9d,Other Equity,Healthcare,,9%,,,,,10/25/29,,7900,7700,,7900,,,,7672347,,FSK,2024-11-06
+Petroplex Acidizing Inc.,co_c08cddc7e3da,Other Equity,Energy,,,,,,,,,600,100,,600,,,,589656,,FSK,2024-11-06
+Polyconcept North America Inc.,co_4c143bcb992e,Other Equity,Consumer & Retail,,,,,,,,,3000,5200,,3000,,,,30000,,FSK,2024-11-06
+PRG III LLC,co_1e9873b8af47,Other Equity,Media & Entertainment,,,,,,,8/21/24,,18100,83500,,18100,,,,434250,,FSK,2024-11-06
+PRG III LLC,co_1e9873b8af47,Other Equity,Media & Entertainment,,,,,,,8/21/24,,0,0,,0,,,,140,,FSK,2024-11-06
+Proserv Acquisition LLC,co_e26594549a98,Other Equity,Energy,,,,,,,,,26200,0,,26200,,,,2635005,,FSK,2024-11-06
+Proserv Acquisition LLC,co_e26594549a98,Other Equity,Energy,,,,,,,,,3100,2200,,3100,,,,837780,,FSK,2024-11-06
+Quoizel LLC,co_718fa673ba85,Other Equity,Consumer & Retail,,,,,,,,,8300,8000,,8300,,,,4563,,FSK,2024-11-06
+Quorum Health Corp.,co_4d5c238dc2bc,Other Equity,Healthcare,,,,,,,,,2800,8400,,2800,,,,2760564,,FSK,2024-11-06
+Quorum Health Corp.,co_4d5c238dc2bc,Other Equity,Healthcare,,,,,,,,,700,900,,700,,,,8301000,,FSK,2024-11-06
+Quorum Health Corp.,co_4d5c238dc2bc,Other Equity,Healthcare,,,,,,,,,200,100,,200,,,,143400,,FSK,2024-11-06
+Saturn Oil & Gas Inc.,co_c2cf90484abe,Other Equity,Energy,,,,,,,,,700,600,,700,,,,355993,,FSK,2024-11-06
+Sorenson Communications LLC,co_472c148188a7,Other Equity,Telecommunications,,,,,,,,,7100,15900,,7100,,,,42731,,FSK,2024-11-06
+Stuart Weitzman Inc.,co_42fbb35825fc,Other Equity,Consumer & Retail,,,,,,,,,0,0,,0,,,,5451,,FSK,2024-11-06
+Swift Worldwide Resources Holdco Ltd.,co_3568a995610e,Other Equity,Energy,,,,,,,,,900,1100,,900,,,,1250000,,FSK,2024-11-06
+Ultra Electronics Holdings PLC,co_d66b47096054,Other Equity,Industrials,,,,,,,,,4800,7200,,4800,,,,454343603,,FSK,2024-11-06
+Ultra Electronics Holdings PLC,co_d66b47096054,Other Equity,Industrials,,,,,,,,,1300,2100,,1300,,,,1272105,,FSK,2024-11-06
+Wittur Holding GmbH Common Stock,co_3f4400eb2c67,Other Equity,Industrials,,,,,,,,,8000,8700,,8000,,,,11630,,FSK,2024-11-06
+Home Partners JV 2 Structured Mezzanine,co_814e649e53e2,Other,Financial Services,,,,,,,3/20/30,,,0,,,,,,,,FSK,2024-11-06
+Home Partners JV 2,co_2357bb586252,Other Equity,,,,,,,,,,,0,,,,,,,,FSK,2024-11-06
+Fronton BV,co_a20adc904eef,Common Equity,Financial Services,,,,,,,,,,0,,,,,,,,FSK,2024-11-06
+ThermaSys Corp.,co_f8649cb1b570,Common Equity,Financial Services,,,,,,,,,,0,,,,,,,,FSK,2024-11-06

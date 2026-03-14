@@ -1,8 +1,4 @@
-company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
-Equus Energy LLC,Other,Energy,,,N/A,,,2011-12-01,,,,10000,,8111,,,,,dspy_extracted,EQS,2024-05-15,EQS,2024-05-15
-Morgan E&P LLC,Other,Energy,,,N/A,,,2023-04-01,,,,21250,,,,,,,dspy_extracted,EQS,2024-05-15,EQS,2024-05-15
-Morgan E&P LLC,Other,Energy,12%,,Fixed,,,,,10500,,10500,,10500,,,,,dspy_extracted,EQS,2024-05-15,EQS,2024-05-15
-U.S. Treasury Bill,Other,Government,0%,,N/A,,,2024-03-01,,,52970,52970,,52970,,,,,dspy_extracted,EQS,2024-05-15,EQS,2024-05-15
-Morgan E&P LLC,Other,Energy,,,N/A,,,2023-04-01,,,,22600,,,,,,,dspy_extracted,EQS,2024-05-15,EQS,2024-05-15
-Morgan E&P LLC,Other,Energy,12%,,Fixed,,,,,8253,8253,8253,,,,,,,dspy_extracted,EQS,2024-05-15,EQS,2024-05-15
-U.S. Treasury Bill,Other,Government,0%,,Fixed,,,2023-12-01,2024-01-01,,44955,44955,,44955,,,,,dspy_extracted,EQS,2024-05-15,EQS,2024-05-15
+company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
+Equus Energy LLC,co_9bab40f04d67,Other,Energy,,,N/A,,,2011-12-01,,,,10000,,8111,,,,,dspy_extracted,EQS,2024-05-15,EQS,2024-05-15
+Morgan E&P LLC,co_542843923f57,Other,Energy,,,N/A,,,2023-04-01,,,,21250,,,,,,,dspy_extracted,EQS,2024-05-15,EQS,2024-05-15
+Morgan E&P LLC,co_542843923f57,Other,Energy,12%,,Fixed,,,,,10500,,10500,,10500,,,,,dspy_extracted,EQS,2024-05-15,EQS,2024-05-15

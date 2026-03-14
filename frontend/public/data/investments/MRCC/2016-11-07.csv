@@ -1,22 +1,22 @@
-company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,data_quality_flags,ticker,filing_date
-360 Holdings III Corp.,First Lien,Consumer & Retail,10.00%,,LIBOR,9.00%,,2021-10-01,5940,5725,5732,2.4,5725,,,,MRCC,2016-11-07
-360 Holdings III Corp.,First Lien,Consumer & Retail,10.00%,,LIBOR,9.00%,,2021-10-01,5985,5746,5746,3.1,5746,,,,MRCC,2016-11-07
-American Community Homes Inc.,First Lien,Financial Services,9.50%,,LIBOR,8.00%,,2019-07-22,7667,7539,7713,3.2,7539,,,,MRCC,2016-11-07
-American Community Homes Inc.,First Lien,Financial Services,9.50%,4.50%,LIBOR,12.50%,,2019-07-22,4169,4106,4253,1.8,4106,,,,MRCC,2016-11-07
-American Community Homes Inc.,First Lien,Financial Services,9.50%,4.50%,LIBOR,12.50%,,,512,502,512,0.2,502,,,,MRCC,2016-11-07
-American Community Homes Inc.,First Lien,Financial Services,9.50%,,LIBOR,8.00%,,2019-07-22,7667,7511,7398,4.0,7511,,,,MRCC,2016-11-07
-American Community Homes Inc.,First Lien,Financial Services,9.50%,4.50%,LIBOR,12.50%,,2019-07-22,4029,3951,3941,2.1,3951,,,,MRCC,2016-11-07
-Answers Corp.,First Lien,Software & Technology,9.75%,,Prime,6.25%,,2021-10-01,2903,2815,1568,0.7,2815,,,,MRCC,2016-11-07
-Answers Corp.,First Lien,Software & Technology,6.25%,,LIBOR,5.25%,,2021-10-01,2918,2818,1984,1.1,2818,,,,MRCC,2016-11-07
-BC Equity Ventures LLC,First Lien,Food & Beverage,7.50%,,LIBOR,6.50%,,2022-08-31,2618,2566,2579,1.1,2566,,,,MRCC,2016-11-07
-BC Equity Ventures LLC,First Lien,Food & Beverage,7.50%,,LIBOR,6.50%,,2022-08-31,375,371,373,0.2,371,,,,MRCC,2016-11-07
-BCC Software LLC,First Lien,Software & Technology,9.00%,,LIBOR,8.00%,,2019-06-20,2375,2354,2355,1.0,2354,,,,MRCC,2016-11-07
-BCC Software LLC,First Lien,Software & Technology,9.00%,,LIBOR,8.00%,,2019-06-20,2817,2785,2776,1.5,2785,,,,MRCC,2016-11-07
-BCC Software LLC,Revolver,Software & Technology,9.00%,,LIBOR,8.00%,,2019-06-20,469,,,0.0,,469,469,,MRCC,2016-11-07
-Pre-Paid Legal Services,Second Lien,Consumer & Retail,10.25%,,LIBOR,9.00%,,2020-07-01,3000,2996,2985,1.2,2996,,,,MRCC,2016-11-07
-Rocket Dog Brands,Second Lien,Consumer & Retail,,15.00%,N/A,,,2020-05-01,1868,1869,,0.0,1869,,,,MRCC,2016-11-07
-Sterling Merger Sub,Second Lien,Business Services,8.75%,,LIBOR,7.75%,,2023-06-19,5000,4956,4838,2.0,4956,,,,MRCC,2016-11-07
-SCP TPZ Acquisition,Second Lien,Media & Entertainment,9.25%,,LIBOR,8.25%,,2022-05-29,5000,4935,4956,2.1,4935,,,,MRCC,2016-11-07
-Alora Pharmaceuticals LLC,First Lien,Healthcare,8.50%,,LIBOR,7.50%,,2018-09-13,11338,11229,11253,6.1,11229,,,,MRCC,2016-11-07
-Alora Pharmaceuticals LLC,Revolver,Healthcare,8.50%,,LIBOR,7.50%,,2018-09-13,1336,,,0.0,,1336,1336,,MRCC,2016-11-07
-Bluestem Brands Inc.,First Lien,Consumer & Retail,8.50%,,LIBOR,7.50%,,2020-11-06,2919,2892,2737,1.4,2892,,,,MRCC,2016-11-07
+company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,data_quality_flags,ticker,filing_date
+360 Holdings III Corp.,co_e82d989f3928,First Lien,Consumer & Retail,10.00%,,LIBOR,9.00%,,2021-10-01,5940,5725,5732,2.4,5725,,,,MRCC,2016-11-07
+360 Holdings III Corp.,co_e82d989f3928,First Lien,Consumer & Retail,10.00%,,LIBOR,9.00%,,2021-10-01,5985,5746,5746,3.1,5746,,,,MRCC,2016-11-07
+American Community Homes Inc.,co_a52919ef9d10,First Lien,Financial Services,9.50%,,LIBOR,8.00%,,2019-07-22,7667,7539,7713,3.2,7539,,,,MRCC,2016-11-07
+American Community Homes Inc.,co_a52919ef9d10,First Lien,Financial Services,9.50%,4.50%,LIBOR,12.50%,,2019-07-22,4169,4106,4253,1.8,4106,,,,MRCC,2016-11-07
+American Community Homes Inc.,co_a52919ef9d10,First Lien,Financial Services,9.50%,4.50%,LIBOR,12.50%,,,512,502,512,0.2,502,,,,MRCC,2016-11-07
+American Community Homes Inc.,co_a52919ef9d10,First Lien,Financial Services,9.50%,,LIBOR,8.00%,,2019-07-22,7667,7511,7398,4.0,7511,,,,MRCC,2016-11-07
+American Community Homes Inc.,co_a52919ef9d10,First Lien,Financial Services,9.50%,4.50%,LIBOR,12.50%,,2019-07-22,4029,3951,3941,2.1,3951,,,,MRCC,2016-11-07
+Answers Corp.,co_fe615be76a79,First Lien,Software & Technology,9.75%,,Prime,6.25%,,2021-10-01,2903,2815,1568,0.7,2815,,,,MRCC,2016-11-07
+Answers Corp.,co_fe615be76a79,First Lien,Software & Technology,6.25%,,LIBOR,5.25%,,2021-10-01,2918,2818,1984,1.1,2818,,,,MRCC,2016-11-07
+BC Equity Ventures LLC,co_a7f6d74d4e01,First Lien,Food & Beverage,7.50%,,LIBOR,6.50%,,2022-08-31,2618,2566,2579,1.1,2566,,,,MRCC,2016-11-07
+BC Equity Ventures LLC,co_a7f6d74d4e01,First Lien,Food & Beverage,7.50%,,LIBOR,6.50%,,2022-08-31,375,371,373,0.2,371,,,,MRCC,2016-11-07
+BCC Software LLC,co_6e4618bcf54f,First Lien,Software & Technology,9.00%,,LIBOR,8.00%,,2019-06-20,2375,2354,2355,1.0,2354,,,,MRCC,2016-11-07
+BCC Software LLC,co_6e4618bcf54f,First Lien,Software & Technology,9.00%,,LIBOR,8.00%,,2019-06-20,2817,2785,2776,1.5,2785,,,,MRCC,2016-11-07
+BCC Software LLC,co_6e4618bcf54f,Revolver,Software & Technology,9.00%,,LIBOR,8.00%,,2019-06-20,469,,,0.0,,469,469,,MRCC,2016-11-07
+Pre-Paid Legal Services,co_e39e79feacec,Second Lien,Consumer & Retail,10.25%,,LIBOR,9.00%,,2020-07-01,3000,2996,2985,1.2,2996,,,,MRCC,2016-11-07
+Rocket Dog Brands,co_2ebbab8d6ca8,Second Lien,Consumer & Retail,,15.00%,N/A,,,2020-05-01,1868,1869,,0.0,1869,,,,MRCC,2016-11-07
+Sterling Merger Sub,co_bf12db1ce6cb,Second Lien,Business Services,8.75%,,LIBOR,7.75%,,2023-06-19,5000,4956,4838,2.0,4956,,,,MRCC,2016-11-07
+SCP TPZ Acquisition,co_fc8af88420b0,Second Lien,Media & Entertainment,9.25%,,LIBOR,8.25%,,2022-05-29,5000,4935,4956,2.1,4935,,,,MRCC,2016-11-07
+Alora Pharmaceuticals LLC,co_bf40a9b2ddb7,First Lien,Healthcare,8.50%,,LIBOR,7.50%,,2018-09-13,11338,11229,11253,6.1,11229,,,,MRCC,2016-11-07
+Alora Pharmaceuticals LLC,co_bf40a9b2ddb7,Revolver,Healthcare,8.50%,,LIBOR,7.50%,,2018-09-13,1336,,,0.0,,1336,1336,,MRCC,2016-11-07
+Bluestem Brands Inc.,co_b3e03f6d618c,First Lien,Consumer & Retail,8.50%,,LIBOR,7.50%,,2020-11-06,2919,2892,2737,1.4,2892,,,,MRCC,2016-11-07

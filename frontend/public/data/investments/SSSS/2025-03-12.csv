@@ -1,21 +1,21 @@
-company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
-CW Opportunity 2 LP (1),Other,,,,,,,,,,,17775155000.0,11.3,15176443000.0,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
-ARK Type One Deep Ventures Fund LLC (2),Other,,,,,,,,,,,17638247000.0,11.2,17696568000.0,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
-"Learneo, Inc. (f/k/a Course Hero, Inc.)",Other,,,,,,,,,,,16882029000.0,10.7,14999972000.0,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
-"Blink Health, Inc.",Other,,,,,,,,,,,15092515000.0,9.6,15004340000.0,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
-"Whoop, Inc.",Other,,,,,,,,,,,14923457000.0,9.5,10011460000.0,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
-"ServiceTitan, Inc.",Other,,,,,,,,,,,14027713000.0,8.9,10008233000.0,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
-"IH10, LLC (3)",Other,,,,,,,,,,,12215010000.0,7.8,12273784000.0,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
-"Canva, Inc.",Other,,,,,,,,,,,12000000000.0,7.6,10058820000.0,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
-"FourKites, Inc.",Other,,,,,,,,,,,11716925000.0,7.4,8530389000.0,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
-Locus Robotics Corp.,Other,,,,,,,,,,,11316312000.0,7.2,10004286000.0,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
-Colombier Sponsor II LLC,Warrants,Other,,,N/A,,,,,,,498.305,0.32,,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
-Colombier Sponsor II LLC,Common Equity,Special Purpose Acquisition Company,,,N/A,,,,,,,1101.695,0.70,,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
-StormWind LLC,Preferred Equity,,8%,,,,,,,,,501.626,0.32,,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
-StormWind LLC,Preferred Equity,,8%,,,,,,,,,5376.994,3.41,,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
-StormWind LLC,Preferred Equity,,8%,,,,,,,,,3233.922,2.05,,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
-StormWind LLC,Preferred Equity,,8%,,,,,,,,,156.285,0.10,,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
-Colombier Sponsor II LLC,Other,,,,,,,,,1600.0,,498.305,0.25,,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
-"SPBRX, INC. (f/k/a GSV Sustainability Partners, Inc.)",Other,Clean Technology,,,,,,,,14300.0,,382.381,0.19,,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
-"Architect Capital PayJoy SPV, LLC",Other,Mobile Finance Technology,,,,,,,,10000.0,,10000.0,4.92,,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
-Colombier Sponsor II LLC,Other,Special Purpose Acquisition Company,,,,,,,,1040.0,,1101.695,0.54,,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
+company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
+CW Opportunity 2 LP,co_ddb092eb1049,Other,,,,,,,,,,,17775155000.0,11.3,15176443000.0,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
+ARK Type One Deep Ventures Fund LLC,co_96e8a4b104ec,Other,,,,,,,,,,,17638247000.0,11.2,17696568000.0,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
+"Learneo, Inc.",co_6f6e41a0c3e9,Other,,,,,,,,,,,16882029000.0,10.7,14999972000.0,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
+"Blink Health, Inc.",co_9c44f77bba36,Other,,,,,,,,,,,15092515000.0,9.6,15004340000.0,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
+"Whoop, Inc.",co_9f9b312199ba,Other,,,,,,,,,,,14923457000.0,9.5,10011460000.0,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
+"ServiceTitan, Inc.",co_5a4e0c35cc1e,Other,Business Services,,,,,,,,,,14027713000.0,8.9,10008233000.0,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
+"IH10, LLC",co_c4b8e42cee72,Other,,,,,,,,,,,12215010000.0,7.8,12273784000.0,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
+"Canva, Inc.",co_4758cd67a3a5,Other,,,,,,,,,,,12000000000.0,7.6,10058820000.0,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
+"FourKites, Inc.",co_63094fbf5000,Other,,,,,,,,,,,11716925000.0,7.4,8530389000.0,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
+Locus Robotics Corp.,co_bef8da650954,Other,,,,,,,,,,,11316312000.0,7.2,10004286000.0,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
+Colombier Sponsor II LLC,co_250df842eb57,Warrants,Other,,,N/A,,,,,,,498.305,0.32,,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
+Colombier Sponsor II LLC,co_250df842eb57,Common Equity,Special Purpose Acquisition Company,,,N/A,,,,,,,1101.695,0.70,,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
+StormWind LLC,co_5886fe3eb2cb,Preferred Equity,,8%,,,,,,,,,501.626,0.32,,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
+StormWind LLC,co_5886fe3eb2cb,Preferred Equity,,8%,,,,,,,,,5376.994,3.41,,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
+StormWind LLC,co_5886fe3eb2cb,Preferred Equity,,8%,,,,,,,,,3233.922,2.05,,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
+StormWind LLC,co_5886fe3eb2cb,Preferred Equity,,8%,,,,,,,,,156.285,0.10,,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
+Colombier Sponsor II LLC,co_250df842eb57,Other,,,,,,,,,1600.0,,498.305,0.25,,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
+"SPBRX, INC.",co_260fb12b0e8f,Other,Software & Technology,,,,,,,,14300.0,,382.381,0.19,,,,,,dspy_extracted|fair_value_suspicious_vs_size,SSSS,2025-03-12,SSSS,2025-03-12
+"Architect Capital PayJoy SPV, LLC",co_c1ca99a62bc4,Other,Financial Services,,,,,,,,10000.0,,10000.0,4.92,,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12
+Colombier Sponsor II LLC,co_250df842eb57,Other,Special Purpose Acquisition Company,,,,,,,,1040.0,,1101.695,0.54,,,,,,dspy_extracted,SSSS,2025-03-12,SSSS,2025-03-12

@@ -1,9 +1,9 @@
-company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
-Verano Holdings Corp.,First Lien,,,,SOFR,6.5%,6.25%,2022-10-27,2026-10-30,20937,20462,20937,24.47%,20462,,,,,,LIEN,2024-03-28
-Curaleaf Holdings,First Lien,Distribution & Wholesale,8%,,,,,2022-10-11,2026-12-15,4500,3989,4140,4.84%,3989,,,,,,LIEN,2024-03-28
-STIIIZY,First Lien,,,4.0%,SOFR,8.5%,4%,2022-05-26,2026-05-26,21065,20682,20749,24.25%,20682,,,,,,LIEN,2024-03-28
-Dreamfields Brands,First Lien,,,,SOFR,8.75%,7.5%,2023-05-03,2026-05-03,4320,4229,4320,5.05%,4229,,,,,,LIEN,2024-03-28
-PharmaCann,First Lien,Distribution & Wholesale,12%,,,,,2022-06-30,2025-06-30,4250,4109,3974,4.65%,4109,,,,,,LIEN,2024-03-28
-And Cash Equivalents,Other,,,,,,,,,,86083,86732,1.01%,86083,,,,,,LIEN,2024-03-28
-Wholesale Trade Debt Securities,First Lien,Financial Services,,,,,,,,55072,53471,54120,63.26%,53471,,,,,,LIEN,2024-03-28
-Non Qualifying Assets,Other,,,,,,,,,,,,29.3%,,,,,,,LIEN,2024-03-28
+company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
+Verano Holdings Corp.,co_a08acd23dc9c,First Lien,,,,SOFR,6.5%,6.25%,2022-10-27,2026-10-30,20937,20462,20937,24.47%,20462,,,,,,LIEN,2024-03-28
+Curaleaf Holdings,co_f4b044fbd006,First Lien,Distribution & Wholesale,8%,,,,,2022-10-11,2026-12-15,4500,3989,4140,4.84%,3989,,,,,,LIEN,2024-03-28
+STIIIZY,co_d2eb02c14795,First Lien,,,4.0%,SOFR,8.5%,4%,2022-05-26,2026-05-26,21065,20682,20749,24.25%,20682,,,,,,LIEN,2024-03-28
+Dreamfields Brands,co_68fa2e856efe,First Lien,,,,SOFR,8.75%,7.5%,2023-05-03,2026-05-03,4320,4229,4320,5.05%,4229,,,,,,LIEN,2024-03-28
+PharmaCann,co_c9b7bc2127d2,First Lien,Distribution & Wholesale,12%,,,,,2022-06-30,2025-06-30,4250,4109,3974,4.65%,4109,,,,,,LIEN,2024-03-28
+And Cash Equivalents,co_eef794b54678,Other,,,,,,,,,,86083,86732,1.01%,86083,,,,,,LIEN,2024-03-28
+Wholesale Trade Debt Securities,co_770e45e02d06,First Lien,Financial Services,,,,,,,,55072,53471,54120,63.26%,53471,,,,,,LIEN,2024-03-28
+Non Qualifying Assets,co_8a19318287e9,Other,,,,,,,,,,,,29.3%,,,,,,,LIEN,2024-03-28
