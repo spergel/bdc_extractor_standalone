@@ -37,16 +37,12 @@ Total: 49 tickers, ~6,700 company exposures.
    - 2025-08-07: $133B total FV — negative format `(14297450\t)` misread
    - Root cause: Gemini picks company valuation tables over SSSS's SOI table
 
-3. **BCIC 2025-08-07**: 500 rows (expected ~220–350), 238 blank `investment_type`.
-   - Suspected prior-period duplication in custom scraper
+3. **BCIC 2024-05-08**: ~350 rows, FV shows $791B (concatenated column values).
+   - Pre-existing parsing bug in the Mar 31, 2024 filing table format; other periods are clean.
 
 ### Medium — investigation needed
 
-4. **PSBD interest_rate blank**: All PSBD rows have blank `interest_rate` despite having `spread`.
-   - XBRL extractor gets spread but not the floating rate base. Rate = SOFR + spread (computable).
-   - May require HTML enrichment fix or display-layer computation.
-
-5. **GSBD older filings**: some older filings may still have quality issues.
+4. **GSBD older filings**: some older filings may still have quality issues.
 
 ---
 
@@ -54,7 +50,8 @@ Total: 49 tickers, ~6,700 company exposures.
 
 | Date | Fix | Result |
 |------|-----|--------|
-| 2026-03-14 | **PSBD investment_type fix** | Was 93% "Other Equity"; now 77% First Lien + 14% Second Lien + 9% actual equity. 6 XBRL periods (2024-11 to 2026-02). |
+| 2026-03-15 | **BCIC 2025-08-07 duplication fix** | Was 500 rows ($1B); now 174 rows ($408M). Root cause: ex99 exhibit duplicated SOI. Filter added to `_bcic_table_filter`. |
+| 2026-03-14 | **PSBD investment_type fix** | Was 93% "Other Equity"; now 77% First Lien + 14% Second Lien + 9% actual equity. 6 XBRL periods (2024-11 to 2026-02). `cash_rate` 90% filled via HTML enrichment. |
 | 2026-03-14 | **PFX XBRL migration** | DSPy had $200B–$600B scale errors; XBRL gives correct $586–589M. 3 periods (2025+). Old 10 corrupted DSPy periods deleted. |
 | 2026-03-14 | **post_process PFX block removed** | Was dropping 84/90 rows (clean_company_name ran before the block, stripping the prefix the block needed). |
 | 2026-03-14 | **GECC + ICMB XBRL migration** | DSPy had encoding errors / $246B impossible totals. XBRL: GECC 13 periods/1124 rows, ICMB 10 periods/596 rows. |
