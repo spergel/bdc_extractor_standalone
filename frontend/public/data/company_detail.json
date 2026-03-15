@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-15T03:28:48.480803Z",
+  "generated_at": "2026-03-15T11:52:03.275815Z",
   "detail": {
     "co_0c8cb5772e1b": {
       "by_bdc": {
@@ -1850,7 +1850,7 @@
         "First Lien": 12.0
       }
     },
-    "co_cdac4f7391b1": {
+    "co_e6d9336a059d": {
       "by_bdc": {
         "ARCC": 49.5
       },
@@ -2779,19 +2779,18 @@
     "co_626dbd69be3a": {
       "by_bdc": {
         "ARCC": 341.9,
-        "BCIC": 1.48,
         "GBDC": 31.99,
         "NMFC": 17.07,
         "PFLT": 0.57,
         "TSLX": 0.54
       },
       "by_maturity": {
-        "2027": 361.02,
+        "2027": 359.54,
         "No date": 32.53
       },
       "by_investment_type": {
         "Common Equity": 0.63,
-        "First Lien": 58.46,
+        "First Lien": 56.98,
         "Other Equity": 0.11,
         "Preferred Equity": 211.15,
         "Revolver": 6.2,
@@ -3396,15 +3395,15 @@
     "co_850bd82c2c55": {
       "by_bdc": {
         "ARCC": 299.9,
-        "BCIC": 8.48
+        "BCIC": 8.78
       },
       "by_maturity": {
         "2027": 299.9,
-        "2028": 2.85,
-        "2029": 5.63
+        "2028": 2.94,
+        "2029": 5.83
       },
       "by_investment_type": {
-        "First Lien": 235.68,
+        "First Lien": 235.98,
         "Partnership Interest": 6.9,
         "Second Lien": 65.8
       }
@@ -5934,7 +5933,7 @@
         "First Lien": 72.4
       }
     },
-    "co_c11fc3966178": {
+    "co_5825d1ea01ce": {
       "by_bdc": {
         "ARCC": 66.6
       },
@@ -6505,14 +6504,14 @@
     "co_8bb307bf6abc": {
       "by_bdc": {
         "ARCC": 84.8,
-        "BCIC": 10.6
+        "BCIC": 10.03
       },
       "by_maturity": {
         "2029": 88.49,
-        "2030+": 6.91
+        "2030+": 6.34
       },
       "by_investment_type": {
-        "First Lien": 39.0,
+        "First Lien": 38.43,
         "Other Equity": 7.6,
         "Subordinated Debt": 48.8
       }
@@ -7015,14 +7014,15 @@
     "co_29e5d1452b58": {
       "by_bdc": {
         "ARCC": 144.6,
-        "BCIC": 6.04
+        "BCIC": 8.8
       },
       "by_maturity": {
-        "2028": 6.04,
-        "No date": 144.6
+        "No date": 144.6,
+        "2030": 8.8
       },
       "by_investment_type": {
-        "First Lien": 150.64
+        "First Lien": 148.59,
+        "Second Lien": 4.81
       }
     },
     "co_703c3f786f55": {
@@ -9915,7 +9915,7 @@
         "First Lien": 1.0
       }
     },
-    "co_1067dfc21093": {
+    "co_ec062a743c23": {
       "by_bdc": {
         "BBDC": 1.04
       },
@@ -10608,7 +10608,7 @@
         "First Lien": 1.87
       }
     },
-    "co_63110ef13f5c": {
+    "co_3214b56f12d4": {
       "by_bdc": {
         "BBDC": 0.0
       },
@@ -10653,7 +10653,7 @@
         "Subordinated Debt": 0.02
       }
     },
-    "co_0af2df679f08": {
+    "co_3586e00a5369": {
       "by_bdc": {
         "BBDC": 9.56
       },
@@ -11191,113 +11191,99 @@
         "Revolver": 9.9
       }
     },
-    "co_f222748152e9": {
-      "by_bdc": {
-        "BCIC": 7.19,
-        "MSDL": 27.98,
-        "TCPC": 6.03
-      },
-      "by_maturity": {
-        "2030+": 41.21
-      },
-      "by_investment_type": {
-        "First Lien": 41.2,
-        "Revolver": 0.01
-      }
-    },
     "co_90ff6b845f08": {
       "by_bdc": {
-        "BCIC": 8.67
+        "BCIC": 8.64
       },
       "by_maturity": {
-        "2029": 8.67
+        "2029": 8.64
       },
       "by_investment_type": {
-        "First Lien": 8.67
+        "First Lien": 8.64
       }
     },
     "co_b4c97ba4d18b": {
       "by_bdc": {
-        "BCIC": 16.49
+        "BCIC": 16.76
       },
       "by_maturity": {
-        "2027": 14.97,
-        "No date": 1.52
+        "2027": 15.0,
+        "No date": 1.76
       },
       "by_investment_type": {
-        "First Lien": 14.97,
-        "Subordinated Debt": 1.52
+        "First Lien": 15.18,
+        "Subordinated Debt": 1.58
       }
     },
     "co_257c6d0bc393": {
       "by_bdc": {
-        "BCIC": 5.79,
+        "BCIC": 5.78,
         "KBDC": 34.04,
         "OFS": 1.99
       },
       "by_maturity": {
-        "2027": 39.83,
+        "2027": 39.81,
         "No date": 1.99
       },
       "by_investment_type": {
-        "First Lien": 41.82
+        "First Lien": 41.8
       }
     },
     "co_047b2ac1b997": {
       "by_bdc": {
-        "BCIC": 5.65,
+        "BCIC": 5.13,
         "MSDL": 40.88
       },
       "by_maturity": {
-        "2028": 46.52
+        "2028": 46.01
       },
       "by_investment_type": {
-        "First Lien": 45.51,
-        "Revolver": 1.01
+        "First Lien": 45.09,
+        "Revolver": 0.92
       }
     },
     "co_1bc261044dae": {
       "by_bdc": {
-        "BCIC": 19.88
+        "BCIC": 20.49
       },
       "by_maturity": {
-        "2027": 7.26,
-        "2028": 12.62
+        "2027": 7.34,
+        "2028": 13.15
       },
       "by_investment_type": {
-        "First Lien": 7.26,
-        "Second Lien": 12.62
+        "First Lien": 7.34,
+        "Second Lien": 13.15
       }
     },
     "co_9404c1429866": {
       "by_bdc": {
-        "BCIC": 5.89,
+        "BCIC": 5.74,
         "CION": 11.83
       },
       "by_maturity": {
-        "2026": 5.89,
+        "2026": 5.74,
         "No date": 11.83
       },
       "by_investment_type": {
-        "First Lien": 17.71
+        "First Lien": 17.57
       }
     },
     "co_518ac7cffb38": {
       "by_bdc": {
-        "BCIC": 15.62,
+        "BCIC": 14.2,
         "CION": 32.66
       },
       "by_maturity": {
-        "2027": 15.62,
+        "2027": 14.2,
         "No date": 32.66
       },
       "by_investment_type": {
-        "First Lien": 48.28
+        "First Lien": 46.86
       }
     },
     "co_ec9a6e072e84": {
       "by_bdc": {
-        "BCIC": 5.78,
+        "BCIC": 5.77,
         "GBDC": 56.82,
         "MSDL": 20.53
       },
@@ -11310,229 +11296,217 @@
     },
     "co_19dc1018e0d4": {
       "by_bdc": {
-        "BCIC": 13.75
+        "BCIC": 13.28
       },
       "by_maturity": {
-        "2027": 1.1,
-        "2029": 12.65
+        "2027": 0.82,
+        "2029": 12.46
       },
       "by_investment_type": {
-        "First Lien": 12.65,
-        "Revolver": 1.1
+        "First Lien": 12.46,
+        "Revolver": 0.82
       }
     },
     "co_c930920e6a45": {
       "by_bdc": {
-        "BCIC": 1.06,
+        "BCIC": 0.99,
         "CION": 12.67
       },
       "by_maturity": {
-        "2026": 0.11,
+        "2026": 0.04,
         "2027": 0.95,
         "No date": 12.67
       },
       "by_investment_type": {
         "First Lien": 13.62,
-        "Revolver": 0.11
+        "Revolver": 0.04
       }
     },
-    "co_10aea602d45a": {
+    "co_12496376c720": {
       "by_bdc": {
-        "BCIC": 11.37
+        "BCIC": 1.38
       },
       "by_maturity": {
-        "Before 2026": 11.37
+        "2027": 1.38
       },
       "by_investment_type": {
-        "First Lien": 11.37
+        "First Lien": 1.38
       }
     },
     "co_bbc9bf8f9ead": {
       "by_bdc": {
-        "BCIC": 3.13
+        "BCIC": 3.12
       },
       "by_maturity": {
-        "2030": 3.13
+        "2030": 3.12
       },
       "by_investment_type": {
-        "First Lien": 3.13
+        "First Lien": 3.12
       }
     },
     "co_a60ffdab0e58": {
       "by_bdc": {
-        "BCIC": 6.28
+        "BCIC": 6.29
       },
       "by_maturity": {
-        "2026": 6.28
+        "2026": 6.29
       },
       "by_investment_type": {
-        "First Lien": 5.81,
+        "First Lien": 5.82,
         "Revolver": 0.48
       }
     },
     "co_3f54510a223e": {
       "by_bdc": {
-        "BCIC": 5.35
+        "BCIC": 4.99
       },
       "by_maturity": {
-        "2026": 5.35
+        "2026": 4.99
       },
       "by_investment_type": {
-        "First Lien": 5.35
+        "First Lien": 4.99
       }
     },
     "co_d760f75a2220": {
       "by_bdc": {
-        "BCIC": 4.66
+        "BCIC": 4.45
       },
       "by_maturity": {
-        "2028": 4.66
+        "2028": 4.45
       },
       "by_investment_type": {
-        "First Lien": 4.3,
-        "Revolver": 0.35
+        "First Lien": 4.45,
+        "Revolver": 0.0
       }
     },
     "co_e0c1bcf46151": {
       "by_bdc": {
-        "BCIC": 1.4
+        "BCIC": 1.39
       },
       "by_maturity": {
-        "2029": 1.4
+        "2029": 1.39
       },
       "by_investment_type": {
-        "First Lien": 1.4
+        "First Lien": 1.39
       }
     },
     "co_b01c134b6ddf": {
       "by_bdc": {
-        "BCIC": 4.43
+        "BCIC": 4.12
       },
       "by_maturity": {
-        "2029": 4.43
+        "2029": 4.12
       },
       "by_investment_type": {
-        "First Lien": 4.43
-      }
-    },
-    "co_b17e657373e6": {
-      "by_bdc": {
-        "BCIC": 1.38,
-        "SAR": 1.46
-      },
-      "by_maturity": {
-        "2030": 2.84
-      },
-      "by_investment_type": {
-        "First Lien": 2.84
+        "First Lien": 4.12
       }
     },
     "co_6be996b4877f": {
       "by_bdc": {
-        "BCIC": 4.36
+        "BCIC": 4.79
       },
       "by_maturity": {
-        "2026": 4.36
+        "2026": 4.79
       },
       "by_investment_type": {
-        "First Lien": 4.32,
+        "First Lien": 4.75,
         "Revolver": 0.04
       }
     },
     "co_c1c966cd17b0": {
       "by_bdc": {
-        "BCIC": 3.94
+        "BCIC": 3.95
       },
       "by_maturity": {
-        "2030": 3.94
+        "2030": 3.95
       },
       "by_investment_type": {
-        "First Lien": 3.94
+        "First Lien": 3.95
       }
     },
     "co_8ee2fbe09b48": {
       "by_bdc": {
-        "BCIC": 6.48,
+        "BCIC": 3.71,
         "MSIF": 1.57
       },
       "by_maturity": {
-        "2026": 6.48,
+        "2026": 3.71,
         "No date": 1.57
       },
       "by_investment_type": {
-        "First Lien": 8.05
+        "First Lien": 5.28
       }
     },
     "co_01623d649ccb": {
       "by_bdc": {
-        "BCIC": 1.84
+        "BCIC": 1.31
       },
       "by_maturity": {
-        "2026": 1.84
+        "2029": 1.31
       },
       "by_investment_type": {
-        "First Lien": 1.84
+        "First Lien": 1.31
       }
     },
     "co_0acec9c4c668": {
       "by_bdc": {
-        "BCIC": 6.68
+        "BCIC": 6.89
       },
       "by_maturity": {
-        "2028": 6.68
+        "2028": 6.89
       },
       "by_investment_type": {
-        "First Lien": 6.68
+        "First Lien": 6.89
       }
     },
     "co_f043443ebb42": {
       "by_bdc": {
-        "BCIC": 5.82,
+        "BCIC": 5.39,
         "PSBD": 10.74
       },
       "by_maturity": {
-        "2029": 16.56
+        "2029": 16.13
       },
       "by_investment_type": {
         "First Lien": 12.33,
-        "Second Lien": 4.23
+        "Second Lien": 3.8
       }
     },
     "co_2d70489eb341": {
       "by_bdc": {
-        "BCIC": 20.52
+        "BCIC": 20.54
       },
       "by_maturity": {
-        "2027": 20.52
+        "2026": 20.54
       },
       "by_investment_type": {
-        "First Lien": 18.81,
+        "First Lien": 18.82,
         "Revolver": 1.72
       }
     },
     "co_67c5d830bf61": {
       "by_bdc": {
-        "BCIC": 5.44
+        "BCIC": 5.95
       },
       "by_maturity": {
-        "2027": 5.44
+        "2027": 5.95
       },
       "by_investment_type": {
-        "First Lien": 5.44
+        "First Lien": 5.95
       }
     },
     "co_c49257271dab": {
       "by_bdc": {
-        "BCIC": 3.59,
+        "BCIC": 3.58,
         "BXSL": 78.88,
         "PFLT": 14.28
       },
       "by_maturity": {
-        "2027": 17.87,
+        "2027": 17.86,
         "No date": 78.88
       },
       "by_investment_type": {
-        "First Lien": 96.75
+        "First Lien": 96.74
       }
     },
     "co_0a85b94d175e": {
@@ -11551,65 +11525,65 @@
     },
     "co_55ef900c2412": {
       "by_bdc": {
-        "BCIC": 7.18
+        "BCIC": 7.23
       },
       "by_maturity": {
-        "No date": 1.0,
-        "2030": 6.17
+        "No date": 1.14,
+        "2030": 6.09
       },
       "by_investment_type": {
-        "First Lien": 6.14,
+        "First Lien": 6.06,
         "Revolver": 0.04,
-        "Subordinated Debt": 1.0
+        "Subordinated Debt": 1.14
       }
     },
     "co_e35dc7b5524b": {
       "by_bdc": {
-        "BCIC": 14.19
+        "BCIC": 13.96
       },
       "by_maturity": {
-        "2027": 14.19
+        "2027": 13.96
       },
       "by_investment_type": {
-        "First Lien": 14.19
+        "First Lien": 13.96
       }
     },
     "co_f703902cd204": {
       "by_bdc": {
-        "BCIC": 8.02
+        "BCIC": 8.03
       },
       "by_maturity": {
-        "2028": 8.02
+        "2028": 8.03
       },
       "by_investment_type": {
-        "First Lien": 7.63,
+        "First Lien": 7.64,
         "Revolver": 0.39
       }
     },
     "co_8c741accdb88": {
       "by_bdc": {
-        "BCIC": 9.0,
+        "BCIC": 8.54,
         "NCDL": 10.25
       },
       "by_maturity": {
-        "2026": 19.25
+        "2026": 18.79
       },
       "by_investment_type": {
-        "First Lien": 19.25
+        "First Lien": 18.79
       }
     },
     "co_e77d0e2c07cf": {
       "by_bdc": {
-        "BCIC": 4.19,
+        "BCIC": 4.18,
         "GBDC": 10.1,
         "MSDL": 6.81
       },
       "by_maturity": {
-        "2029": 21.09,
+        "2029": 21.08,
         "No date": 0.02
       },
       "by_investment_type": {
-        "First Lien": 21.08,
+        "First Lien": 21.07,
         "Other Equity": 0.02,
         "Revolver": 0.01
       }
@@ -11629,25 +11603,25 @@
     },
     "co_666f58675343": {
       "by_bdc": {
-        "BCIC": 7.39,
+        "BCIC": 7.35,
         "PFLT": 28.26
       },
       "by_maturity": {
-        "2027": 35.66
+        "2027": 35.61
       },
       "by_investment_type": {
-        "First Lien": 35.66
+        "First Lien": 35.61
       }
     },
     "co_2b115748c286": {
       "by_bdc": {
-        "BCIC": 2.32
+        "BCIC": 2.3
       },
       "by_maturity": {
-        "2028": 2.32
+        "2028": 2.3
       },
       "by_investment_type": {
-        "First Lien": 2.32
+        "First Lien": 2.3
       }
     },
     "co_dd5c9d271e9f": {
@@ -11667,120 +11641,81 @@
     },
     "co_1c681c75ab10": {
       "by_bdc": {
-        "BCIC": 1.71
+        "BCIC": 1.76
       },
       "by_maturity": {
-        "2029": 1.71
+        "2029": 1.76
       },
       "by_investment_type": {
-        "First Lien": 1.71
+        "First Lien": 1.76
       }
     },
     "co_d79e72d1d24d": {
       "by_bdc": {
-        "BCIC": 1.43
+        "BCIC": 1.33
       },
       "by_maturity": {
-        "2027": 1.43
+        "2027": 1.33
       },
       "by_investment_type": {
-        "First Lien": 1.43
+        "First Lien": 1.33
       }
     },
     "co_bbb28d7c2de6": {
       "by_bdc": {
-        "BCIC": 5.16,
+        "BCIC": 5.02,
         "BCSF": 20.48,
         "MFIC": 7.87,
         "OBDC": 90.14
       },
       "by_maturity": {
-        "2026": 123.67
+        "2026": 123.52
       },
       "by_investment_type": {
         "Delayed Draw": 6.01,
-        "First Lien": 27.51,
+        "First Lien": 27.37,
         "Other": 90.14
       }
     },
     "co_3a6958f2a249": {
       "by_bdc": {
-        "BCIC": 3.09,
+        "BCIC": 2.43,
         "CGBD": 5.29
       },
       "by_maturity": {
-        "2029": 3.09,
+        "2029": 2.43,
         "No date": 5.29
       },
       "by_investment_type": {
-        "First Lien": 8.39
+        "First Lien": 7.72
       }
     },
     "co_ab62d73e75f9": {
       "by_bdc": {
-        "BCIC": 5.11,
+        "BCIC": 9.35,
         "MSDL": 5.47,
         "SAR": 0.84
       },
       "by_maturity": {
-        "2029": 11.42
+        "2029": 11.19,
+        "2030": 4.47
       },
       "by_investment_type": {
-        "First Lien": 11.42
+        "First Lien": 11.19,
+        "Second Lien": 4.47
       }
     },
     "co_25877c931bc1": {
       "by_bdc": {
-        "BCIC": 2.71,
+        "BCIC": 2.57,
         "MRCC": 1.87,
         "TCPC": 5.09
       },
       "by_maturity": {
-        "2027": 9.67
+        "2027": 9.53
       },
       "by_investment_type": {
-        "First Lien": 9.67
-      }
-    },
-    "co_818c67249813": {
-      "by_bdc": {
-        "BCIC": 1.08,
-        "PFLT": 2.83,
-        "PNNT": 2.04,
-        "PSEC": 27.84
-      },
-      "by_maturity": {
-        "2029": 33.79
-      },
-      "by_investment_type": {
-        "First Lien": 33.79
-      }
-    },
-    "co_a58722ab00cf": {
-      "by_bdc": {
-        "BCIC": 3.64
-      },
-      "by_maturity": {
-        "2028": 3.64
-      },
-      "by_investment_type": {
-        "First Lien": 3.64
-      }
-    },
-    "co_61f868aa61e6": {
-      "by_bdc": {
-        "BCIC": 1.21,
-        "GBDC": 89.12,
-        "MSDL": 9.88
-      },
-      "by_maturity": {
-        "2028": 59.79,
-        "No date": 40.41
-      },
-      "by_investment_type": {
-        "First Lien": 59.79,
-        "Partnership Interest": 1.4,
-        "Preferred Equity": 39.01
+        "First Lien": 9.53
       }
     },
     "co_7b40989b165d": {
@@ -11794,9 +11729,20 @@
         "First Lien": 0.32
       }
     },
+    "co_a58722ab00cf": {
+      "by_bdc": {
+        "BCIC": 3.23
+      },
+      "by_maturity": {
+        "2028": 3.23
+      },
+      "by_investment_type": {
+        "First Lien": 3.23
+      }
+    },
     "co_275acf42f5e5": {
       "by_bdc": {
-        "BCIC": 2.47,
+        "BCIC": 2.46,
         "CCAP": 9.11
       },
       "by_maturity": {
@@ -11808,234 +11754,222 @@
         "First Lien": 10.61
       }
     },
-    "co_12496376c720": {
-      "by_bdc": {
-        "BCIC": 1.37
-      },
-      "by_maturity": {
-        "2027": 1.37
-      },
-      "by_investment_type": {
-        "First Lien": 1.37
-      }
-    },
     "co_1da2c01c95c7": {
       "by_bdc": {
-        "BCIC": 2.04
+        "BCIC": 1.77
       },
       "by_maturity": {
-        "2030": 2.04
+        "2030": 1.77
       },
       "by_investment_type": {
-        "First Lien": 2.04
+        "First Lien": 1.77,
+        "Revolver": 0.0
       }
     },
     "co_3d2b9e474e59": {
       "by_bdc": {
-        "BCIC": 3.89
+        "BCIC": 3.93
       },
       "by_maturity": {
-        "2027": 3.27,
-        "No date": 0.61
+        "2027": 3.31,
+        "No date": 0.62
       },
       "by_investment_type": {
-        "First Lien": 3.27,
-        "Warrants": 0.61
+        "First Lien": 3.31,
+        "Warrants": 0.62
       }
     },
     "co_45de0f52c0c6": {
       "by_bdc": {
-        "BCIC": 1.32,
+        "BCIC": 1.27,
         "MSDL": 2.23
       },
       "by_maturity": {
-        "2030+": 3.55
+        "2030+": 3.5
       },
       "by_investment_type": {
-        "First Lien": 3.55
+        "First Lien": 3.5
+      }
+    },
+    "co_a3257cf8cf9a": {
+      "by_bdc": {
+        "BCIC": 3.01
+      },
+      "by_maturity": {
+        "2030": 3.01
+      },
+      "by_investment_type": {
+        "First Lien": 3.0,
+        "Revolver": 0.01
+      }
+    },
+    "co_818c67249813": {
+      "by_bdc": {
+        "BCIC": 0.95,
+        "PFLT": 2.83,
+        "PNNT": 2.04,
+        "PSEC": 27.84
+      },
+      "by_maturity": {
+        "2029": 33.67
+      },
+      "by_investment_type": {
+        "First Lien": 33.67
       }
     },
     "co_97b3ca6d035f": {
       "by_bdc": {
-        "BCIC": 0.1
+        "BCIC": 0.06
       },
       "by_maturity": {
-        "Before 2026": 0.1
+        "Before 2026": 0.06
       },
       "by_investment_type": {
-        "First Lien": 0.1
+        "First Lien": 0.06
       }
     },
     "co_db834d01e7f2": {
       "by_bdc": {
-        "BCIC": 14.2
+        "BCIC": 10.22
       },
       "by_maturity": {
-        "2028": 14.2
+        "2028": 10.22
       },
       "by_investment_type": {
-        "First Lien": 14.2
-      }
-    },
-    "co_ccb9c8599e54": {
-      "by_bdc": {
-        "BCIC": 9.5,
-        "BCSF": 22.94
-      },
-      "by_maturity": {
-        "2028": 32.44
-      },
-      "by_investment_type": {
-        "Delayed Draw": 22.94,
-        "First Lien": 9.49,
-        "Revolver": 0.0
+        "First Lien": 10.22
       }
     },
     "co_c4b6e583d990": {
       "by_bdc": {
-        "BCIC": 4.32,
+        "BCIC": 4.26,
         "CION": 15.28
       },
       "by_maturity": {
-        "2028": 4.32,
+        "2028": 4.26,
         "No date": 15.28
       },
       "by_investment_type": {
-        "First Lien": 19.6
+        "First Lien": 19.54
       }
     },
     "co_1e77ea29494e": {
       "by_bdc": {
-        "BCIC": 2.78
+        "BCIC": 2.87
       },
       "by_maturity": {
-        "2029": 2.78
+        "2029": 2.87
       },
       "by_investment_type": {
-        "First Lien": 2.2,
-        "Revolver": 0.58
+        "First Lien": 2.27,
+        "Revolver": 0.6
       }
     },
     "co_1f7503facb1e": {
       "by_bdc": {
-        "BCIC": 1.56
+        "BCIC": 1.61
       },
       "by_maturity": {
-        "2029": 1.56
+        "2029": 1.61
       },
       "by_investment_type": {
-        "First Lien": 1.56
+        "First Lien": 1.61
       }
     },
     "co_02e11047a70c": {
       "by_bdc": {
-        "BCIC": 1.97,
+        "BCIC": 1.98,
         "NCDL": 0.1
       },
       "by_maturity": {
-        "2030+": 2.07
+        "2030+": 2.08
       },
       "by_investment_type": {
-        "First Lien": 2.07
+        "First Lien": 2.08
       }
     },
     "co_58dc8beaac73": {
       "by_bdc": {
-        "BCIC": 7.43
+        "BCIC": 7.41
       },
       "by_maturity": {
-        "2028": 7.43
+        "2028": 7.41
       },
       "by_investment_type": {
-        "First Lien": 6.54,
+        "First Lien": 6.52,
         "Revolver": 0.89
       }
     },
     "co_e15ca13c5c16": {
       "by_bdc": {
-        "BCIC": 10.19,
+        "BCIC": 12.11,
         "RWAY": 41.4
       },
       "by_maturity": {
-        "2029": 51.59
+        "2029": 51.62,
+        "2030": 1.89
       },
       "by_investment_type": {
-        "First Lien": 45.16,
-        "Second Lien": 6.43
-      }
-    },
-    "co_83695cc71fd2": {
-      "by_bdc": {
-        "BCIC": 1.75,
-        "MRCC": 0.23
-      },
-      "by_maturity": {
-        "2026": 1.18,
-        "No date": 0.8
-      },
-      "by_investment_type": {
-        "First Lien": 0.23,
-        "Preferred Equity": 0.57,
-        "Second Lien": 1.18
+        "First Lien": 45.18,
+        "Second Lien": 8.32
       }
     },
     "co_bc5e84984f1e": {
       "by_bdc": {
-        "BCIC": 3.48,
+        "BCIC": 3.52,
         "BXSL": 2.18,
         "GECC": 0.91,
         "NMFC": 8.92
       },
       "by_maturity": {
         "2028": 9.83,
-        "2029": 3.48,
+        "2029": 3.52,
         "No date": 2.18
       },
       "by_investment_type": {
         "First Lien": 12.01,
-        "Second Lien": 3.48
+        "Second Lien": 3.52
       }
     },
     "co_d4f967c47c49": {
       "by_bdc": {
-        "BCIC": 4.93,
+        "BCIC": 4.89,
         "MFIC": 14.68
       },
       "by_maturity": {
         "2026": 8.28,
-        "2029": 11.33
+        "2029": 11.29
       },
       "by_investment_type": {
         "First Lien": 8.28,
-        "Second Lien": 11.33
+        "Second Lien": 11.29
       }
     },
     "co_28cc9f33febe": {
       "by_bdc": {
-        "BCIC": 1.99,
+        "BCIC": 1.78,
         "MSDL": 2.61,
         "OFS": 2.51,
         "SAR": 4.21
       },
       "by_maturity": {
         "2028": 4.21,
-        "2029": 4.59,
+        "2029": 4.39,
         "No date": 2.51
       },
       "by_investment_type": {
         "First Lien": 4.21,
-        "Second Lien": 7.1
+        "Second Lien": 6.9
       }
     },
     "co_61b30a115c8d": {
       "by_bdc": {
-        "BCIC": 0.89
+        "BCIC": 1.02
       },
       "by_maturity": {
-        "2028": 0.89
+        "2028": 1.02
       },
       "by_investment_type": {
-        "Subordinated Debt": 0.89
+        "Subordinated Debt": 1.02
       }
     },
     "co_e5312b62e4cc": {
@@ -12065,16 +11999,16 @@
     },
     "co_c403db77982c": {
       "by_bdc": {
-        "BCIC": 3.0
+        "BCIC": 3.37
       },
       "by_maturity": {
-        "2027": 3.0
+        "2027": 3.37
       },
       "by_investment_type": {
-        "Subordinated Debt": 3.0
+        "Subordinated Debt": 3.37
       }
     },
-    "co_2bab5840a11f": {
+    "co_b1b93e6d425a": {
       "by_bdc": {
         "BCIC": 0.11
       },
@@ -12087,46 +12021,58 @@
     },
     "co_c335dde0c2c5": {
       "by_bdc": {
-        "BCIC": 1.22
+        "BCIC": 1.27
       },
       "by_maturity": {
-        "No date": 1.22
+        "No date": 1.27
       },
       "by_investment_type": {
-        "Subordinated Debt": 1.22
+        "Subordinated Debt": 1.27
       }
     },
     "co_14f0ba8bcf04": {
       "by_bdc": {
-        "BCIC": 3.12
+        "BCIC": 3.23
       },
       "by_maturity": {
-        "No date": 3.12
+        "No date": 3.23
       },
       "by_investment_type": {
-        "Subordinated Debt": 3.12
+        "Subordinated Debt": 3.23
+      }
+    },
+    "co_3f8b7b46efaa": {
+      "by_bdc": {
+        "BCIC": 0.79
+      },
+      "by_maturity": {
+        "No date": 0.79
+      },
+      "by_investment_type": {
+        "Subordinated Debt": 0.79
+      }
+    },
+    "co_992a997cdcb8": {
+      "by_bdc": {
+        "BCIC": 0.39
+      },
+      "by_maturity": {
+        "No date": 0.39
+      },
+      "by_investment_type": {
+        "Preferred Equity": 0.04,
+        "Subordinated Debt": 0.35
       }
     },
     "co_ca1d11903966": {
       "by_bdc": {
-        "BCIC": 1.39
+        "BCIC": 1.42
       },
       "by_maturity": {
-        "No date": 1.39
+        "No date": 1.42
       },
       "by_investment_type": {
-        "Subordinated Debt": 1.39
-      }
-    },
-    "co_9cd37bfa4cc2": {
-      "by_bdc": {
-        "BCIC": 1.48
-      },
-      "by_maturity": {
-        "No date": 1.48
-      },
-      "by_investment_type": {
-        "Subordinated Debt": 1.48
+        "Subordinated Debt": 1.42
       }
     },
     "co_dae58d39146a": {
@@ -12164,108 +12110,108 @@
     },
     "co_82258751d0e0": {
       "by_bdc": {
-        "BCIC": 1.02
+        "BCIC": 1.12
       },
       "by_maturity": {
-        "No date": 1.02
+        "No date": 1.12
       },
       "by_investment_type": {
-        "Subordinated Debt": 1.02
+        "Subordinated Debt": 1.12
       }
     },
     "co_7cf35c47b5b2": {
       "by_bdc": {
-        "BCIC": 0.1,
+        "BCIC": 0.09,
         "CION": 40.53,
         "MFIC": 2.49
       },
       "by_maturity": {
-        "No date": 43.12
+        "No date": 43.1
       },
       "by_investment_type": {
         "Common Equity": 22.69,
         "Other Equity": 20.32,
-        "Subordinated Debt": 0.1
+        "Subordinated Debt": 0.09
       }
     },
     "co_dbd9cacc0edc": {
       "by_bdc": {
-        "BCIC": 3.75
+        "BCIC": 4.03
       },
       "by_maturity": {
-        "No date": 3.75
+        "No date": 4.03
       },
       "by_investment_type": {
-        "Subordinated Debt": 3.75
+        "Subordinated Debt": 4.03
       }
     },
     "co_ae42ded64536": {
       "by_bdc": {
-        "BCIC": 0.36
+        "BCIC": 0.43
       },
       "by_maturity": {
-        "No date": 0.36
+        "No date": 0.43
       },
       "by_investment_type": {
-        "Subordinated Debt": 0.36
+        "Subordinated Debt": 0.43
       }
     },
     "co_6ffd54af3ae3": {
       "by_bdc": {
-        "BCIC": 0.55
+        "BCIC": 0.64
       },
       "by_maturity": {
-        "No date": 0.55
+        "No date": 0.64
       },
       "by_investment_type": {
-        "Subordinated Debt": 0.55
+        "Subordinated Debt": 0.64
       }
     },
     "co_7e1567601073": {
       "by_bdc": {
-        "BCIC": 0.39
+        "BCIC": 0.51
       },
       "by_maturity": {
-        "No date": 0.39
+        "No date": 0.51
       },
       "by_investment_type": {
-        "Preferred Equity": 0.39
+        "Preferred Equity": 0.51
       }
     },
     "co_a18ab0f386f4": {
       "by_bdc": {
-        "BCIC": 0.24
+        "BCIC": 0.25
       },
       "by_maturity": {
-        "No date": 0.24
+        "No date": 0.25
       },
       "by_investment_type": {
-        "Subordinated Debt": 0.24
+        "Subordinated Debt": 0.25
       }
     },
     "co_805403b264e7": {
       "by_bdc": {
-        "BCIC": 1.55
+        "BCIC": 1.49
       },
       "by_maturity": {
-        "No date": 1.55
+        "No date": 1.49
       },
       "by_investment_type": {
-        "Subordinated Debt": 1.55
+        "Subordinated Debt": 1.49
       }
     },
     "co_c9e5719bb1db": {
       "by_bdc": {
-        "BCIC": 0.72,
+        "BCIC": 0.57,
         "CION": 0.76,
         "PFX": 0.95
       },
       "by_maturity": {
-        "No date": 2.44
+        "No date": 2.28
       },
       "by_investment_type": {
         "Other Equity": 1.71,
-        "Subordinated Debt": 0.72
+        "Subordinated Debt": 0.57
       }
     },
     "co_bc2bdf489c69": {
@@ -12290,7 +12236,7 @@
         "Subordinated Debt": 1.42
       }
     },
-    "co_79aafca591c9": {
+    "co_c1580e587da0": {
       "by_bdc": {
         "BCIC": 0.01,
         "CSWC": 3.08,
@@ -12298,7 +12244,7 @@
       },
       "by_maturity": {
         "Before 2026": 3.08,
-        "No date": 0.17
+        "No date": 0.16
       },
       "by_investment_type": {
         "Preferred Equity": 3.24
@@ -12306,132 +12252,108 @@
     },
     "co_f27d9b579ff0": {
       "by_bdc": {
-        "BCIC": 4.79,
+        "BCIC": 6.17,
         "CION": 21.96
       },
       "by_maturity": {
-        "2026": 3.93,
-        "No date": 22.81
+        "2026": 5.08,
+        "No date": 23.04
       },
       "by_investment_type": {
-        "First Lien": 23.67,
+        "First Lien": 25.05,
         "Other Equity": 3.08
       }
     },
     "co_ddcc5e4d5ccf": {
       "by_bdc": {
-        "BCIC": 5.56
+        "BCIC": 5.59
       },
       "by_maturity": {
-        "Before 2026": 4.96,
-        "No date": 0.6
+        "Before 2026": 4.63,
+        "No date": 0.96
       },
       "by_investment_type": {
-        "First Lien": 5.13,
-        "Second Lien": 0.43
+        "First Lien": 5.25,
+        "Second Lien": 0.34
       }
     },
     "co_e8959b137f54": {
       "by_bdc": {
-        "BCIC": 1.42
+        "BCIC": 1.89
       },
       "by_maturity": {
-        "2029": 1.4,
-        "No date": 0.03
+        "2029": 1.87,
+        "No date": 0.02
       },
       "by_investment_type": {
-        "First Lien": 1.42,
-        "Revolver": 0.01
+        "First Lien": 1.87,
+        "Revolver": 0.02
       }
     },
     "co_a11747edb833": {
       "by_bdc": {
-        "BCIC": 9.68,
+        "BCIC": 9.65,
         "CION": 15.1
       },
       "by_maturity": {
-        "2029": 9.34,
+        "2029": 9.31,
         "No date": 15.45
       },
       "by_investment_type": {
-        "First Lien": 24.78
+        "First Lien": 24.75
       }
     },
     "co_73b4e89993a8": {
       "by_bdc": {
-        "BCIC": 5.63
+        "BCIC": 5.68
       },
       "by_maturity": {
-        "Before 2026": 0.38,
-        "2028": 3.46,
-        "No date": 1.79
+        "Before 2026": 0.39,
+        "2028": 3.48,
+        "No date": 1.81
       },
       "by_investment_type": {
         "Preferred Equity": 1.66,
-        "Second Lien": 3.97
+        "Second Lien": 4.02
       }
     },
     "co_903d0c7f5ce0": {
       "by_bdc": {
-        "BCIC": 2.66
+        "BCIC": 2.51
       },
       "by_maturity": {
-        "2029": 0.87,
-        "No date": 0.59,
-        "2030": 1.2
+        "2029": 0.12,
+        "No date": 0.83,
+        "2030": 1.56
       },
       "by_investment_type": {
-        "Other Debt": 0.59,
-        "Second Lien": 2.07
+        "Other Debt": 0.83,
+        "Second Lien": 1.68
       }
     },
     "co_0e49ad6ed18f": {
       "by_bdc": {
-        "BCIC": 35.58
+        "BCIC": 37.51
       },
       "by_maturity": {
-        "No date": 35.58
+        "No date": 37.51
       },
       "by_investment_type": {
-        "Second Lien": 35.58
-      }
-    },
-    "co_3f8b7b46efaa": {
-      "by_bdc": {
-        "BCIC": 0.59
-      },
-      "by_maturity": {
-        "No date": 0.59
-      },
-      "by_investment_type": {
-        "Preferred Equity": 0.02,
-        "Second Lien": 0.58
-      }
-    },
-    "co_992a997cdcb8": {
-      "by_bdc": {
-        "BCIC": 0.26
-      },
-      "by_maturity": {
-        "No date": 0.26
-      },
-      "by_investment_type": {
-        "Preferred Equity": 0.01,
-        "Second Lien": 0.26
+        "Second Lien": 37.51
       }
     },
     "co_8558632479f6": {
       "by_bdc": {
-        "BCIC": 4.19,
+        "BCIC": 4.23,
         "CION": 2.17
       },
       "by_maturity": {
-        "No date": 6.36
+        "No date": 6.4
       },
       "by_investment_type": {
         "Other Equity": 2.17,
-        "Preferred Equity": 0.24,
-        "Second Lien": 3.95
+        "Preferred Equity": 0.22,
+        "Second Lien": 4.01
       }
     },
     "co_dec1888f4544": {
@@ -12446,40 +12368,53 @@
         "Preferred Equity": 0.72
       }
     },
-    "co_053831537dc7": {
+    "co_9cd37bfa4cc2": {
       "by_bdc": {
-        "BCIC": 0.99
+        "BCIC": 1.56
       },
       "by_maturity": {
-        "No date": 0.99
+        "No date": 1.56
       },
       "by_investment_type": {
-        "Preferred Equity": 0.17,
-        "Second Lien": 0.79,
+        "Common Equity": 0.14,
+        "Preferred Equity": 0.04,
+        "Second Lien": 1.37
+      }
+    },
+    "co_053831537dc7": {
+      "by_bdc": {
+        "BCIC": 1.03
+      },
+      "by_maturity": {
+        "No date": 1.03
+      },
+      "by_investment_type": {
+        "Preferred Equity": 0.32,
+        "Second Lien": 0.68,
         "Warrants": 0.03
       }
     },
     "co_75416ba641b0": {
       "by_bdc": {
-        "BCIC": 1.65
+        "BCIC": 1.28
       },
       "by_maturity": {
-        "No date": 1.65
+        "No date": 1.28
       },
       "by_investment_type": {
-        "Preferred Equity": 1.65
+        "Preferred Equity": 1.28
       }
     },
     "co_c69912b8e35a": {
       "by_bdc": {
-        "BCIC": 4.88
+        "BCIC": 5.06
       },
       "by_maturity": {
-        "No date": 4.88
+        "No date": 5.06
       },
       "by_investment_type": {
-        "Common Equity": 0.29,
-        "Preferred Equity": 4.58
+        "Common Equity": 0.58,
+        "Preferred Equity": 4.48
       }
     },
     "co_de832f2c7d07": {
@@ -12496,40 +12431,29 @@
     },
     "co_5c7dc2ed7c40": {
       "by_bdc": {
-        "BCIC": 0.81,
+        "BCIC": 0.83,
         "NMFC": 2.0
       },
       "by_maturity": {
-        "No date": 2.81
+        "No date": 2.83
       },
       "by_investment_type": {
-        "Common Equity": 0.21,
+        "Common Equity": 0.22,
         "Other Equity": 2.0,
-        "Second Lien": 0.6
-      }
-    },
-    "co_d4d6cacea19d": {
-      "by_bdc": {
-        "BCIC": 3.6
-      },
-      "by_maturity": {
-        "No date": 3.6
-      },
-      "by_investment_type": {
-        "Common Equity": 1.8,
-        "Second Lien": 1.8
+        "Second Lien": 0.61
       }
     },
     "co_3c0d6b204e98": {
       "by_bdc": {
-        "BCIC": 12.26
+        "BCIC": 25.13
       },
       "by_maturity": {
-        "No date": 12.26
+        "No date": 25.13
       },
       "by_investment_type": {
-        "Other": 1.54,
-        "Second Lien": 10.72
+        "Other": 1.46,
+        "Second Lien": 10.65,
+        "Subordinated Debt": 13.02
       }
     },
     "co_34c14673a107": {
@@ -12556,13 +12480,13 @@
     },
     "co_ce4a20f9d1fa": {
       "by_bdc": {
-        "BCIC": 1.93
+        "BCIC": 2.52
       },
       "by_maturity": {
-        "No date": 1.93
+        "No date": 2.52
       },
       "by_investment_type": {
-        "Other": 1.93
+        "Other": 2.52
       }
     },
     "co_3331440021fd": {
@@ -13448,6 +13372,17 @@
       },
       "by_investment_type": {
         "Preferred Equity": 6.84
+      }
+    },
+    "co_ccb9c8599e54": {
+      "by_bdc": {
+        "BCSF": 22.94
+      },
+      "by_maturity": {
+        "2028": 22.94
+      },
+      "by_investment_type": {
+        "Delayed Draw": 22.94
       }
     },
     "co_5647b715fc90": {
@@ -15058,7 +14993,7 @@
         "Revolver": 3.18
       }
     },
-    "co_6d3ad44727c4": {
+    "co_14260a08d353": {
       "by_bdc": {
         "BCSF": 30.46
       },
@@ -15167,7 +15102,7 @@
         "Other Equity": 105.23
       }
     },
-    "co_2a574eb2c9ea": {
+    "co_881fe97fe67d": {
       "by_bdc": {
         "BCSF": 154.64
       },
@@ -17329,7 +17264,7 @@
         "Revolver": 0.21
       }
     },
-    "co_2b218fc1a5f4": {
+    "co_76d8e35bf843": {
       "by_bdc": {
         "BXSL": 48.74
       },
@@ -17421,7 +17356,7 @@
         "First Lien": 8.53
       }
     },
-    "co_c73b50451291": {
+    "co_7dfe22d3a2df": {
       "by_bdc": {
         "BXSL": 159.56
       },
@@ -18030,7 +17965,7 @@
         "First Lien": 0.2
       }
     },
-    "co_85ee9ce3a6c4": {
+    "co_eefeb3325e9e": {
       "by_bdc": {
         "BXSL": 71.39
       },
@@ -18390,7 +18325,7 @@
         "First Lien": 52.83
       }
     },
-    "co_94af0a235a7d": {
+    "co_1867771b8160": {
       "by_bdc": {
         "BXSL": 13.04
       },
@@ -18946,7 +18881,7 @@
         "First Lien": 51.77
       }
     },
-    "co_eaed50bb79c2": {
+    "co_637a69b3ce02": {
       "by_bdc": {
         "BXSL": 92.53
       },
@@ -19285,7 +19220,7 @@
         "Common Equity": 0.08
       }
     },
-    "co_09ac769214ed": {
+    "co_d83141777070": {
       "by_bdc": {
         "BXSL": 0.06
       },
@@ -23782,7 +23717,7 @@
         "First Lien": 16.23
       }
     },
-    "co_4a9e5412d3f6": {
+    "co_f1d2ca05b0c6": {
       "by_bdc": {
         "CION": 1.28,
         "MFIC": 2.05
@@ -32408,6 +32343,21 @@
         "First Lien": 32.68
       }
     },
+    "co_61f868aa61e6": {
+      "by_bdc": {
+        "GBDC": 89.12,
+        "MSDL": 9.88
+      },
+      "by_maturity": {
+        "2028": 58.58,
+        "No date": 40.41
+      },
+      "by_investment_type": {
+        "First Lien": 58.58,
+        "Partnership Interest": 1.4,
+        "Preferred Equity": 39.01
+      }
+    },
     "co_030238e6c96a": {
       "by_bdc": {
         "GBDC": 22.67
@@ -32441,7 +32391,7 @@
         "First Lien": 69.46
       }
     },
-    "co_40cb32a754f9": {
+    "co_d43a04a0d51a": {
       "by_bdc": {
         "GBDC": 47.69
       },
@@ -37259,7 +37209,7 @@
         "Other Equity": 0.22
       }
     },
-    "co_9ae96b1458c3": {
+    "co_4ac96e1cec99": {
       "by_bdc": {
         "HTGC": 0.0
       },
@@ -37861,7 +37811,7 @@
         "First Lien": 3.56
       }
     },
-    "co_7d1723c34f30": {
+    "co_2a6ffd50a623": {
       "by_bdc": {
         "HTGC": 6.7
       },
@@ -42226,7 +42176,7 @@
         "First Lien": 2.44
       }
     },
-    "co_bacec8c182c8": {
+    "co_4b432018d782": {
       "by_bdc": {
         "MFIC": 34.43
       },
@@ -44302,7 +44252,7 @@
         "First Lien": 15.48
       }
     },
-    "co_a925a959e295": {
+    "co_83b7bd47d8e2": {
       "by_bdc": {
         "MFIC": 17.96,
         "PFLT": 6.38
@@ -45869,6 +45819,17 @@
         "First Lien": 3.32
       }
     },
+    "co_83695cc71fd2": {
+      "by_bdc": {
+        "MRCC": 0.23
+      },
+      "by_maturity": {
+        "No date": 0.23
+      },
+      "by_investment_type": {
+        "First Lien": 0.23
+      }
+    },
     "co_f94fb242fc61": {
       "by_bdc": {
         "MRCC": 0.3
@@ -46354,7 +46315,7 @@
         "Other Equity": 0.27
       }
     },
-    "co_aa33067f4e7e": {
+    "co_f37e84ef45c4": {
       "by_bdc": {
         "MSDL": 4.14
       },
@@ -46378,7 +46339,7 @@
         "First Lien": 37.4
       }
     },
-    "co_e6f49df2ef81": {
+    "co_d85663c58756": {
       "by_bdc": {
         "MSDL": 1.99
       },
@@ -46969,6 +46930,18 @@
         "First Lien": 3.26
       }
     },
+    "co_f222748152e9": {
+      "by_bdc": {
+        "MSDL": 27.98,
+        "TCPC": 6.03
+      },
+      "by_maturity": {
+        "2030+": 34.02
+      },
+      "by_investment_type": {
+        "First Lien": 34.02
+      }
+    },
     "co_874ae8d6b778": {
       "by_bdc": {
         "MSDL": 11.35,
@@ -47120,7 +47093,7 @@
         "First Lien": 3.75
       }
     },
-    "co_3cbecb8203a2": {
+    "co_7efadcf8a818": {
       "by_bdc": {
         "MSDL": 12.21
       },
@@ -47455,7 +47428,7 @@
         "First Lien": 2.87
       }
     },
-    "co_bade135179e1": {
+    "co_0fe7015f2eb1": {
       "by_bdc": {
         "NCDL": 1.55
       },
@@ -47963,7 +47936,7 @@
         "First Lien": 18.13
       }
     },
-    "co_997c12172f5e": {
+    "co_b40094bf180f": {
       "by_bdc": {
         "NCDL": 18.73
       },
@@ -48997,7 +48970,7 @@
         "Other Equity": 2.17
       }
     },
-    "co_dce97e3c108f": {
+    "co_47feece7d3b3": {
       "by_bdc": {
         "NCDL": 0.07
       },
@@ -51013,7 +50986,7 @@
         "Other": 231.86
       }
     },
-    "co_1c78bf8813ba": {
+    "co_513ef062b958": {
       "by_bdc": {
         "OBDC": 149.23
       },
@@ -53657,7 +53630,7 @@
         "Other": 4.63
       }
     },
-    "co_a4b918dc37c2": {
+    "co_39760daf4343": {
       "by_bdc": {
         "OBDC": 7.0
       },
@@ -55320,7 +55293,7 @@
         "Other": 8.45
       }
     },
-    "co_0e1ac3ff9e5b": {
+    "co_cf69ce6ebcdf": {
       "by_bdc": {
         "OBDC": 44.11,
         "OCSL": 1.08,
@@ -56547,7 +56520,7 @@
         "Warrants": 0.92
       }
     },
-    "co_875a37ca683c": {
+    "co_87eac90cb40c": {
       "by_bdc": {
         "OCSL": 1.51
       },
@@ -58288,7 +58261,7 @@
         "First Lien": 13.6
       }
     },
-    "co_2f298081f0cf": {
+    "co_e5893f540105": {
       "by_bdc": {
         "OXSQ": 9.84
       },
@@ -61199,7 +61172,7 @@
         "Other Equity": 43.91
       }
     },
-    "co_fa864b16ae66": {
+    "co_116d96bd4ab2": {
       "by_bdc": {
         "PSBD": 28.8
       },
@@ -61561,7 +61534,7 @@
         "First Lien": 129.0
       }
     },
-    "co_0c4ad5166274": {
+    "co_3621a58d5d69": {
       "by_bdc": {
         "PSEC": 0.01
       },
@@ -64703,6 +64676,17 @@
       },
       "by_investment_type": {
         "First Lien": 4.12
+      }
+    },
+    "co_b17e657373e6": {
+      "by_bdc": {
+        "SAR": 1.46
+      },
+      "by_maturity": {
+        "2030": 1.46
+      },
+      "by_investment_type": {
+        "First Lien": 1.46
       }
     },
     "co_87ec014ceaa0": {
@@ -68572,7 +68556,7 @@
         "First Lien": 0.79
       }
     },
-    "co_2386c718dd96": {
+    "co_8fa1d4e1480a": {
       "by_bdc": {
         "TCPC": 0.13
       },
@@ -68763,7 +68747,7 @@
         "First Lien": 4.29
       }
     },
-    "co_a05639859d2a": {
+    "co_629d796fff6f": {
       "by_bdc": {
         "TCPC": 15.55
       },
@@ -71074,7 +71058,7 @@
         "First Lien": 13.37
       }
     },
-    "co_768ba0465502": {
+    "co_7ae1cfd86cb8": {
       "by_bdc": {
         "TRIN": 3.55
       },

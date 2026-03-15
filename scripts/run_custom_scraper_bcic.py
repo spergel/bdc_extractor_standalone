@@ -85,6 +85,13 @@ def _bcic_table_filter(investment_tables, filing_result, ticker: str):
     affiliate_table_ids = set()
     filtered = []
     for table_html, table_text, table_num, table_id in investment_tables:
+        # Skip exhibit-99 files (press releases / supplemental PDFs filed as ex99*.htm).
+        # These duplicate the main SOI and cause ~2x row counts.
+        m = re.match(r"^(.+)_table_(\d+)$", table_id)
+        doc_name = m.group(1) if m else ""
+        if re.search(r"ex99", doc_name, re.I):
+            logger.info("BCIC: skipping exhibit-99 table %s (%s)", table_num, table_id)
+            continue
         context = _get_context_before_table(table_id, text_map, max_chars=800).lower()
         caption = context[-350:] if len(context) > 350 else context
         # Mark "Affiliate Investments" table (do not skip – so Series A-Great Lakes etc. are included)
@@ -98,12 +105,23 @@ def _bcic_table_filter(investment_tables, filing_result, ticker: str):
             logger.info("BCIC: marking affiliate table %s (%s) for schedule column", table_num, table_id)
             filtered.append((table_html, table_text, table_num, table_id))
             continue
-        # For 10-Q current quarter: skip schedule tables that are only "As of December 31, 2024" (comparative)
-        if "2025-09" in str(period_end) or "2025-11" in str(getattr(filing_result, "filing_date", "")):
-            if "december 31, 2024" in caption and "september 30, 2025" not in caption:
-                if "schedule of investments" in caption or "investments - continued" in caption:
-                    logger.info("Skipping prior year-end table %s (%s) for current-period total", table_num, table_id)
-                    continue
+        # For 10-Q filings: skip schedule tables that show only the prior year-end (comparative).
+        # Detect prior-year tables by their caption: contains "december 31, {year}" but not
+        # the current period date (e.g. "june 30, 2025" / "september 30, 2025").
+        if period_end and str(period_end)[:4].isdigit():
+            from datetime import datetime as _dt
+            try:
+                _pe = _dt.strptime(str(period_end)[:10], "%Y-%m-%d")
+                _month_names = {3: "march", 6: "june", 9: "september", 12: "december"}
+                _cur_month = _month_names.get(_pe.month, "")
+                _cur_str = f"{_cur_month} {_pe.day}, {_pe.year}"  # e.g. "june 30, 2025"
+                _prior_yr_str = f"december 31, {_pe.year - 1}"    # e.g. "december 31, 2024"
+                if (_prior_yr_str in caption and _cur_str not in caption):
+                    if "schedule of investments" in caption or "investments - continued" in caption:
+                        logger.info("Skipping prior year-end table %s (%s) for current-period total", table_num, table_id)
+                        continue
+            except (ValueError, AttributeError):
+                pass
         filtered.append((table_html, table_text, table_num, table_id))
     return (filtered if filtered else investment_tables, affiliate_table_ids)
 

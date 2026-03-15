@@ -2,7 +2,7 @@ company_id,company_name,num_bdcs_invested,bdcs_invested,total_exposure_millions,
 co_cb724891ebc0,"Integrity Marketing Acquisition, LLC",8,"BXSL,CCAP,GBDC,ICMB,MSDL,OBDC,OCSL,TCPC",467.11,Insurance,5.39,First Lien
 co_c962da1f6256,"Crewline Buyer, Inc.",8,"BXSL,GBDC,GSBD,MFIC,OBDC,OCSL,SLRC,TSLX",429.35,Software & Technology,6.75,First Lien
 co_08ef160d49ff,"PDI TA Holdings, Inc.",8,"ARCC,BXSL,CGBD,GBDC,MSDL,NMFC,OBDC,TSLX",246.27,Consumer & Retail,5.47,First Lien
-co_bf6839dcfbb8,iCIMS Inc.,8,"CGBD,GBDC,MRCC,MSDL,NMFC,OCSL,SLRC,TCPC",159.19,Software & Technology,5.88,First Lien
+co_bf6839dcfbb8,iCIMs Inc.,8,"CGBD,GBDC,MRCC,MSDL,NMFC,OCSL,SLRC,TCPC",159.19,Software & Technology,5.88,First Lien
 co_25708b002e39,"Icefall Parent, Inc.",8,"ARCC,BXSL,CGBD,GBDC,MSDL,NMFC,OBDC,OCSL",148.61,Software & Technology,4.73,First Lien
 co_ed1cdc7e5f73,"Coupa Holdings, LLC",8,"ARCC,CGBD,GBDC,MSDL,NMFC,OBDC,OCSL,TSLX",126.29,Software & Technology,5.25,First Lien
 co_42318dcf1822,"Zendesk, Inc.",7,"ARCC,BXSL,FSK,GBDC,MFIC,OBDC,TCPC",395.13,Software & Technology,5.35,First Lien
@@ -15,7 +15,6 @@ co_56235911ea0a,PPV Intermediate Holdings Inc.,7,"BXSL,CCAP,CGBD,GBDC,MSDL,NMFC,
 co_f6db8c8e7a1a,Higginbotham Insurance Agency Inc.,7,"ARCC,BXSL,CGBD,FSK,GBDC,MSDL,NMFC",76.0,Insurance,4.52,First Lien
 co_09cbb0aa41aa,"High Street Buyer, Inc.",6,"ARCC,BBDC,BXSL,MFIC,MSDL,SLRC",698.58,Transportation & Logistics,4.95,First Lien
 co_7a24504973e4,"Denali Intermediate Holdings, Inc.",6,"ARCC,BXSL,CGBD,GBDC,NMFC,OBDC",477.19,Media & Entertainment,5.5,First Lien
-co_626dbd69be3a,Symplr Software Inc.,6,"ARCC,BCIC,GBDC,NMFC,PFLT,TSLX",393.55,Healthcare,5.61,First Lien
 co_bc56869c2fcc,"GS Acquisitionco, Inc.",6,"BXSL,CGBD,GBDC,MSDL,NMFC,OBDC",314.79,Software & Technology,5.58,First Lien
 co_07071059a6e7,Flexera Software LLC,6,"ARCC,BXSL,CGBD,FSK,GBDC,OBDC",293.64,Software & Technology,4.6,First Lien
 co_5097e1803107,Pluralsight Inc.,6,"ARCC,GBDC,GSBD,OBDC,OCSL,TCPC",220.22,Software & Technology,5.25,First Lien
@@ -24,9 +23,10 @@ co_5f36274df8c4,"DRS Holdings III, Inc.",6,"ARCC,KBDC,MFIC,NCDL,PFLT,PNNT",110.4
 co_51e1762914ed,"Asurion, LLC",6,"BCSF,ICMB,NMFC,OBDC,OCSL,SAR",87.41,Business Services,4.18,First Lien
 co_7b729e02e51d,Galway Borrower LLC,6,"ARCC,BXSL,CCAP,MSDL,NMFC,OBDC",82.72,Insurance,4.5,First Lien
 co_035ad4a474bc,IQN Holding Corp.,6,"ARCC,BXSL,CGBD,GBDC,MFIC,MSDL",59.94,Software & Technology,5.37,First Lien
-co_920d87dd5205,ATHENAHEALTH GROUP INC.,5,"ARCC,NMFC,OBDC,OCSL,SAR",483.05,Healthcare,2.82,First Lien
+co_920d87dd5205,Athenahealth Group Inc.,5,"ARCC,NMFC,OBDC,OCSL,SAR",483.05,Healthcare,2.82,First Lien
 co_05353803ee0e,"PetVet Care Centers, LLC",5,"ARCC,GBDC,NMFC,OBDC,OCSL",420.47,Consumer & Retail,6.0,First Lien
 co_dcc76088316b,"Apex Service Partners, LLC",5,"ARCC,FSK,GBDC,MSDL,NCDL",408.16,Business Services,5.0,First Lien
+co_626dbd69be3a,Symplr Software Inc.,5,"ARCC,GBDC,NMFC,PFLT,TSLX",392.07,Healthcare,5.71,Preferred Equity
 co_faa61ea12bf7,"Creek Parent, Inc.",5,"ARCC,BXSL,GBDC,OBDC,OCSL",352.66,Healthcare,5.05,First Lien
 co_f6f92e4ea8cd,"IG Investments Holdings, LLC",5,"BXSL,CGBD,GBDC,NMFC,OBDC",283.62,Financial Services,5.0,First Lien
 co_0c8ce2222615,"Finastra USA, Inc.",5,"ARCC,GBDC,NMFC,OBDC,OCSL",205.24,Software & Technology,6.03,First Lien
@@ -49,11 +49,11 @@ co_d80561116050,Smarsh Inc.,5,"ARCC,CGBD,GSBD,MSDL,OBDC",67.16,Financial Service
 co_abd3c1aadac0,ARBORWORKS LLC,5,"CSWC,ICMB,MAIN,MSIF,SCM",66.09,Environmental Services,6.5,Preferred Equity
 co_25525b0ba447,Excelitas Technologies Corp.,5,"ARCC,CGBD,FSK,GBDC,MSDL",62.09,Industrials,5.26,First Lien
 co_e94a014c9f0d,"LogRhythm, Inc.",5,"BCSF,HTGC,MSDL,NMFC,PSBD",57.79,Software & Technology,7.5,First Lien
-co_23eb44288883,WASH & WAX SYSTEMS LLC,5,"CSWC,MAIN,MSIF,PFLT,PNNT",37.68,,5.5,First Lien
+co_23eb44288883,Wash & Wax Systems LLC,5,"CSWC,MAIN,MSIF,PFLT,PNNT",37.68,,5.5,First Lien
 co_f19fea1f3f4f,Jeppesen Holdings LLC,5,"ARCC,BXSL,FSK,GBDC,OCSL",29.01,Aerospace & Defense,4.76,First Lien
 co_2094298d8fe3,Trugreen LP,5,"CGBD,GECC,OCSL,OFS,SAR",20.75,Environmental Services,6.25,First Lien
-co_56ab790904c8,Railpros Parent LLC,5,"ARCC,BXSL,MSDL,NCDL,NMFC",17.34,Business Services,4.5,First Lien
-co_f56b9233964e,Research Now Group Inc.,5,"ARCC,CSWC,MRCC,PSEC,SAR",13.86,Software & Technology,5.44,First Lien
+co_56ab790904c8,RailPros Parent LLC,5,"ARCC,BXSL,MSDL,NCDL,NMFC",17.34,Business Services,4.5,First Lien
+co_f56b9233964e,RESEARCH NOW GROUP INC.,5,"ARCC,CSWC,MRCC,PSEC,SAR",13.86,Software & Technology,5.44,First Lien
 co_74cecae1e15d,"Isagenix International, LLC",5,"CCAP,CION,MAIN,MSIF,SAR",8.48,Food & Beverage,5.87,First Lien
 co_61c7d9147595,"Associations, Inc.",4,"CGBD,MSDL,NMFC,OBDC",977.45,Real Estate,7.36,First Lien
 co_6840be22c655,"WU Holdco, Inc.",4,"ARCC,BCSF,GBDC,OBDC",474.12,Consumer & Retail,4.85,First Lien
@@ -79,12 +79,11 @@ co_79b70b5ba514,AmeriLife Holdings LLC,4,"BXSL,MSDL,OBDC,TCPC",137.61,Insurance,
 co_8cff08261721,"Turbo Buyer, Inc.",4,"BBDC,CGBD,MFIC,MSDL",134.91,Automotive,6.05,First Lien
 co_0e22e2874d2e,Acquia Inc.,4,"GBDC,GSBD,OCSL,TCPC",130.27,Software & Technology,5.62,First Lien
 co_9e0ea0d77000,"THG Acquisition, LLC",4,"ARCC,BBDC,BXSL,OBDC",128.05,Insurance,4.64,First Lien
-co_bbb28d7c2de6,"Premier Imaging, LLC",4,"BCIC,BCSF,MFIC,OBDC",123.67,Healthcare,5.62,First Lien
+co_bbb28d7c2de6,"Premier Imaging, LLC",4,"BCIC,BCSF,MFIC,OBDC",123.52,Healthcare,5.62,First Lien
 co_70c1fdfce996,Implus Footcare LLC,4,"ARCC,GBDC,MAIN,MSIF",117.04,Consumer & Retail,6.0,First Lien
 co_2975aeb0134e,"KPSKY Acquisition, Inc.",4,"BXSL,MSDL,NMFC,OBDC",108.25,Industrials,5.56,First Lien
 co_0e86f322edee,OEConnection LLC.,4,"CGBD,FSK,GBDC,NMFC",106.81,Software & Technology,4.67,First Lien
 co_0f7d0e93fd14,"Granicus, Inc.",4,"BXSL,FSK,MSDL,OBDC",100.37,Software & Technology,5.07,First Lien
-co_61f868aa61e6,Riskonnect Parent LLC.,4,"BCIC,GBDC,MSDL,NMFC",100.2,Software & Technology,5.33,First Lien
 co_0848776a35f2,"JSG II, Inc.",4,"ARCC,GBDC,NMFC,OBDC",91.56,Chemicals & Materials,4.0,First Lien
 co_f389f0e74d0d,Doxa Insurance Holdings LLC,4,"ARCC,FSK,GBDC,NMFC",82.63,Insurance,4.5,First Lien
 co_0df1ee612826,VRC Companies LLC,4,"ARCC,CGBD,MSDL,NCDL",82.31,Business Services,5.42,First Lien
@@ -96,7 +95,7 @@ co_4efff09567e0,Burgess Point Purchaser Corp.,4,"ARCC,BBDC,PFLT,PSEC",65.08,Auto
 co_622bdbe75574,Deerfield Dakota Holding LLC,4,"CGBD,GBDC,MSDL,PSBD",63.8,Financial Services,5.2,First Lien
 co_8d656e5459d1,Next Holdco LLC,4,"ARCC,BBDC,NMFC,OCSL",61.85,Software & Technology,5.25,First Lien
 co_2dc0cb2861e3,Invincible Boat Company LLC.,4,"CION,MAIN,MSIF,SCM",55.68,,8.04,First Lien
-co_3ac7b373c6c5,MICROBE FORMULAS LLC,4,"CSWC,MAIN,MSIF,SCM",51.5,,5.7,First Lien
+co_3ac7b373c6c5,Microbe Formulas LLC,4,"CSWC,MAIN,MSIF,SCM",51.5,,5.7,First Lien
 co_0b9f4af07a8f,"Evergreen IX Borrower 2023, LLC",4,"CCAP,GBDC,MFIC,OCSL",50.48,Software & Technology,4.75,First Lien
 co_2cfda8c3f197,"Storable, Inc.",4,"ARCC,NMFC,OBDC,SAR",49.9,Software & Technology,3.3,First Lien
 co_7fda0624447b,"Fullsteam Operations, LLC",4,"CGBD,MSDL,NMFC,OBDC",49.29,Software & Technology,5.84,First Lien
@@ -108,17 +107,17 @@ co_f7d09ce8e62a,Heartland Veterinary Partners LLC,4,"BBDC,GBDC,MSDL,NCDL",46.77,
 co_5ea70dbaca4c,Inventus Power Inc.,4,"GBDC,OCSL,PFLT,PNNT",46.03,Software & Technology,7.55,First Lien
 co_9b1669cb4326,"Vensure Employer Services, Inc.",4,"CGBD,MSDL,NCDL,OBDC",45.89,Business Services,4.93,First Lien
 co_145a4d0582fe,CRCI Longhorn Holdings Inc.,4,"BXSL,MSDL,NCDL,NMFC",38.06,Business Services,4.75,First Lien
-co_818c67249813,STG Distribution LLC,4,"BCIC,PFLT,PNNT,PSEC",33.79,Transportation & Logistics,3.54,First Lien
+co_818c67249813,STG Distribution LLC,4,"BCIC,PFLT,PNNT,PSEC",33.67,Transportation & Logistics,1.0,First Lien
 co_86fb17eee460,Express Wash Acquisition Company LLC,4,"BBDC,MRCC,MSDL,TCPC",32.8,Consumer & Retail,6.25,First Lien
 co_b8208310ac13,"Clydesdale Acquisition Holdings, Inc.",4,"NMFC,OBDC,OCSL,SAR",30.98,Containers & Packaging,2.69,First Lien
 co_0a85c2baab83,"Acrisure, LLC",4,"ARCC,OBDC,OCSL,PSBD",29.37,Insurance,3.07,First Lien
-co_dd5c9d271e9f,"PMA Parent Holdings, LLC",4,"BCIC,MFIC,MSDL,TCPC",26.1,Financial Services,5.0,First Lien
+co_dd5c9d271e9f,"PMA Parent Holdings, LLC",4,"BCIC,MFIC,MSDL,TCPC",26.1,Financial Services,4.88,First Lien
 co_7f02d1f954a4,Inmar Inc.,4,"GECC,OCSL,PSBD,SAR",24.71,Software & Technology,4.5,First Lien
 co_2caf29dbb20a,UserZoom Technologies Inc.,4,"ARCC,MAIN,MSIF,WHF",22.41,,7.5,First Lien
 co_a6cc8a982c8e,Calabrio Inc.,4,"GBDC,MRCC,NMFC,PSBD",22.2,Telecommunications,5.29,First Lien
 co_22ee80e658ad,R1 Holdings LLC,4,"BBDC,BXSL,FDUS,NCDL",21.76,Transportation & Logistics,6.25,First Lien
-co_bc5e84984f1e,Confluence Technologies Inc.,4,"BCIC,BXSL,GECC,NMFC",15.49,Business Services,4.8,First Lien
-co_28cc9f33febe,IDERA Inc.,4,"BCIC,MSDL,OFS,SAR",11.31,Software & Technology,5.94,Second Lien
+co_bc5e84984f1e,Confluence Technologies Inc.,4,"BCIC,BXSL,GECC,NMFC",15.53,Business Services,4.8,First Lien
+co_28cc9f33febe,Idera Inc.,4,"BCIC,MSDL,OFS,SAR",11.11,Software & Technology,5.94,Second Lien
 co_11d2bc228e56,"Inovalon Holdings, Inc.",3,"BXSL,MFIC,OBDC",756.07,Healthcare,5.64,First Lien
 co_2f703eafdbf7,"Cornerstone OnDemand, Inc.",3,"ARCC,NMFC,OBDC",574.45,Software & Technology,4.82,First Lien
 co_6264231460f8,Medallia Inc.,3,"BXSL,FSK,MRCC",509.96,Software & Technology,6.53,First Lien
@@ -161,9 +160,10 @@ co_0db3adf32c04,Eclipse Topco Inc.,3,"ARCC,MSDL,NMFC",107.69,Consumer & Retail,4
 co_e1d116404e41,Legends Hospitality Holding Company LLC,3,"ARCC,NMFC,OCSL",107.54,Healthcare,4.86,First Lien
 co_364142a0c4e9,"TBRS, Inc.",3,"NCDL,OBDC,OCSL",105.37,Healthcare,4.75,First Lien
 co_36bd06c4f222,ML Holdco Inc.,3,"ARCC,BXSL,GSBD",101.81,,4.5,First Lien
-co_c3f10abe5f8a,BP Loenbro Holdings Inc.,3,"CSWC,MAIN,MSIF",99.34,Industrials,5.75,First Lien
+co_c3f10abe5f8a,BP LOENBRO HOLDINGS INC.,3,"CSWC,MAIN,MSIF",99.34,Industrials,5.75,First Lien
+co_61f868aa61e6,Riskonnect Parent LLC.,3,"GBDC,MSDL,NMFC",98.99,Software & Technology,5.39,First Lien
 co_8e7941ae97b3,Thrasio LLC,3,"BCSF,MRCC,OCSL",97.1,Consumer & Retail,10.09,First Lien
-co_c49257271dab,MAG DS Corp.,3,"BCIC,BXSL,PFLT",96.75,Aerospace & Defense,5.55,First Lien
+co_c49257271dab,MAG DS Corp.,3,"BCIC,BXSL,PFLT",96.74,Aerospace & Defense,5.55,First Lien
 co_c33517c76479,"Mario Purchaser, LLC",3,"CCAP,GBDC,OBDC",95.1,Consumer & Retail,5.75,First Lien
 co_e115ff1bfe65,Arcwood Environmental Inc.,3,"FSK,MFIC,TSLX",94.95,Business Services,5.17,First Lien
 co_74409df818dd,Model N Inc.,3,"FSK,MSDL,NMFC",94.93,Software & Technology,4.77,First Lien
@@ -171,8 +171,8 @@ co_5ee39b3bab61,Viper Bidco. Inc.,3,"ARCC,GBDC,NMFC",91.71,Software & Technology
 co_8d40d51c006d,"Ministry Brands Holdings, LLC",3,"ARCC,GBDC,OBDC",90.33,Software & Technology,5.21,First Lien
 co_a4c07b7cfe2e,"Celerion Buyer, Inc.",3,"CGBD,GBDC,MFIC",88.88,Healthcare,5.0,First Lien
 co_72a16a9e1dff,Triple Lift Inc.,3,"BXSL,GBDC,MSDL",87.78,Media & Entertainment,5.75,First Lien
-co_ec9a6e072e84,Appfire Technologies LLC,3,"BCIC,GBDC,MSDL",82.86,Software & Technology,4.89,First Lien
-co_e640a006f804,PERKINELMER U.S. LLC,3,"ARCC,MSDL,OBDC",80.86,Software & Technology,4.81,First Lien
+co_ec9a6e072e84,Appfire Technologies LLC,3,"BCIC,GBDC,MSDL",82.85,Software & Technology,4.86,First Lien
+co_e640a006f804,PerkinElmer U.S. LLC,3,"ARCC,MSDL,OBDC",80.86,Software & Technology,4.81,First Lien
 co_1b29d8fe9146,"Athlete Buyer, LLC",3,"CGBD,MFIC,NCDL",79.83,Industrials,6.0,First Lien
 co_949e08e408c6,"Xenon Arc, Inc.",3,"CION,MAIN,MSIF",79.25,,5.75,First Lien
 co_4df1b67c56d8,North Haven Fairway Buyer LLC,3,"ARCC,CGBD,NCDL",78.67,Consumer & Retail,5.0,First Lien
@@ -203,7 +203,7 @@ co_2b4b89a1fbb7,Alcami Corp.,3,"ARCC,KBDC,MFIC",56.99,Healthcare,7.0,First Lien
 co_0ce623601f98,Color Intermediate LLC,3,"ARCC,BXSL,GBDC",56.95,Media & Entertainment,4.75,First Lien
 co_5d6bd5f7b398,SitusAMC Holdings Corp.,3,"CGBD,MSDL,TCPC",56.41,Financial Services,5.5,First Lien
 co_3f870f22a3f1,"KENE Acquisition, Inc.",3,"ARCC,NMFC,OBDC",55.84,Environmental Services,5.25,First Lien
-co_607a972ec616,Infinity Home Services Holdco Inc.,3,"ARCC,PFLT,PNNT",55.45,Business Services,5.93,First Lien
+co_607a972ec616,Infinity Home Services HoldCo Inc.,3,"ARCC,PFLT,PNNT",55.45,Business Services,5.93,First Lien
 co_11714eca23c5,Align Precision Group LLC,3,"ARCC,BXSL,CGBD",54.72,Aerospace & Defense,6.75,First Lien
 co_656eade16062,Aras Corp.,3,"GBDC,MRCC,TCPC",54.28,Software & Technology,5.08,First Lien
 co_84a334191cd1,"Confluent Health, LLC",3,"NMFC,OBDC,PFLT",53.96,Healthcare,4.75,First Lien
@@ -214,23 +214,22 @@ co_5abdc546e0e8,"M2S Group Intermediate Holdings, Inc.",3,"KBDC,OCSL,WHF",50.43,
 co_be18612c81e6,Watermill Express LLC,3,"ARCC,GBDC,NCDL",50.28,Food & Beverage,4.75,First Lien
 co_b05f1aba2115,GMF Parent Inc.,3,"ARCC,BBDC,GBDC",50.03,Food & Beverage,4.5,First Lien
 co_5a3c5d292df0,Iris Buyer LLC,3,"BXSL,CCAP,MSDL",49.59,Business Services,5.5,First Lien
-co_894c4cb1daf2,MonitorUS Holding LLC,3,"MAIN,MSIF,SCM",49.48,,6.25,First Lien
+co_894c4cb1daf2,Monitorus Holding LLC,3,"MAIN,MSIF,SCM",49.48,,6.25,First Lien
 co_60d81ee23360,Rialto Management Group LLC,3,"ARCC,CGBD,TCPC",48.47,Business Services,5.0,First Lien
 co_e34260185d29,DISA Holdings Corp.,3,"BBDC,GBDC,KBDC",47.86,Business Services,5.39,First Lien
 co_6febd8cd6e31,Auditboard Inc.,3,"BXSL,CGBD,MSDL",47.86,Software & Technology,4.5,First Lien
 co_f6e73a8dcf60,"Lift Brands, Inc.",3,"CION,CSWC,WHF",47.35,,7.5,First Lien
-co_0e1ac3ff9e5b,Apex Group Treasury Ltd.,3,"OBDC,OCSL,SAR",45.63,Financial Services,3.56,First Lien
+co_cf69ce6ebcdf,"Apex Group Treasury, LLC",3,"OBDC,OCSL,SAR",45.63,Business Services,3.56,First Lien
 co_4e3a7c1a3a8e,"Project Alpha Intermediate Holding, Inc.",3,"NMFC,OBDC,PSBD",45.49,Software & Technology,3.25,First Lien
 co_28219da99752,"AlphaSense, Inc.",3,"HTGC,OBDC,TCPC",44.77,Software & Technology,6.25,First Lien
 co_935fbfcd4edd,Bayou Intermediate II LLC,3,"ARCC,GBDC,OCSL",44.19,Media & Entertainment,4.75,First Lien
 co_4f76318352db,"LSCS Holdings, Inc.",3,"CCAP,NMFC,OBDC",43.91,Healthcare,4.5,First Lien
 co_dc9a5cbd7f05,Trintech Inc.,3,"BBDC,MSDL,TCPC",43.82,Business Services,5.5,First Lien
 co_307bfabcc7fd,Bond Brand Loyalty ULC,3,"CSWC,MAIN,MSIF",43.66,,6.5,First Lien
-co_7cf35c47b5b2,"Carestream Health Holdings, Inc.",3,"BCIC,CION,MFIC",43.12,Healthcare,0.0,Common Equity
+co_7cf35c47b5b2,"Carestream Health Holdings, Inc.",3,"BCIC,CION,MFIC",43.1,Healthcare,0.0,Common Equity
 co_d19fbb3c3a8e,Crumbl Enterprises LLC,3,"BXSL,GBDC,MFIC",43.01,Food & Beverage,4.5,First Lien
 co_eb54ad25acc1,Maxor Acquisition Inc.,3,"MFIC,SLRC,WHF",42.84,Healthcare,6.0,First Lien
-co_257c6d0bc393,"AIDC IntermediateCo 2, LLC",3,"BCIC,KBDC,OFS",41.82,Software & Technology,5.5,First Lien
-co_f222748152e9,Accordion Partners LLC,3,"BCIC,MSDL,TCPC",41.21,Financial Services,5.09,First Lien
+co_257c6d0bc393,"AIDC IntermediateCo 2, LLC",3,"BCIC,KBDC,OFS",41.8,Software & Technology,5.42,First Lien
 co_618aa0fe43a4,ATS OPERATING LLC,3,"CSWC,MAIN,MSIF",40.46,Consumer & Retail,6.0,First Lien
 co_d6513cbac095,"Mobile Communications America, Inc.",3,"MFIC,MSDL,NCDL",40.45,Telecommunications,4.88,First Lien
 co_e71c04e37124,"Barracuda Parent, LLC",3,"OBDC,OCSL,PSEC",39.7,Software & Technology,6.0,First Lien
@@ -250,7 +249,7 @@ co_aafed35928bb,Exigo LLC,3,"PFLT,SAR,SCM",32.79,,6.25,First Lien
 co_ed8b22d2b973,Heartland Home Services Inc.,3,"CGBD,MSDL,NCDL",32.71,Industrials,5.92,First Lien
 co_50bc69c38d09,Arcfield Acquisition Corp.,3,"FSK,PFLT,PNNT",31.13,Industrials,5.0,First Lien
 co_33af9de19b34,BURNING GLASS INTERMEDIATE HOLDING COMPANY INC.,3,"CSWC,MAIN,MSIF",30.8,Media & Entertainment,5.0,First Lien
-co_fd294724c1e6,Shoes For Crews Global LLC,3,"ARCC,GBDC,SLRC",30.27,Consumer & Retail,6.64,First Lien
+co_fd294724c1e6,Shoes for Crews Global LLC,3,"ARCC,GBDC,SLRC",30.27,Consumer & Retail,6.64,First Lien
 co_572275c0244d,Hills Distribution Inc.,3,"ARCC,PFLT,PNNT",30.19,Media & Entertainment,5.2,First Lien
 co_7ad2f560e075,AGS American Glass Services Acquisition LLC,3,"BCSF,MAIN,MSIF",29.89,Business Services,5.5,First Lien
 co_13ef788dfd42,Megawatt Acquisitionco Inc.,3,"BBDC,PFLT,PNNT",29.46,Aerospace & Defense,5.5,First Lien
@@ -270,11 +269,11 @@ co_78de638b4250,Alpine Acquisition Corp.,3,"CGBD,PFLT,PNNT",24.61,Transportation
 co_18c4137f2a28,Staples Inc.,3,"OCSL,OFS,SAR",23.37,Business Services,5.75,First Lien
 co_b2f4bf5d5495,Firebird Acquisition Corp.,3,"ARCC,MSDL,NMFC",23.07,Financial Services,4.46,First Lien
 co_0ea2423cc5a4,Real Chemistry Intermediate III Inc.,3,"BBDC,MSDL,NCDL",22.89,Healthcare,4.5,First Lien
-co_b47cfa78da3f,Onpoint Industrial Services LLC,3,"MAIN,MSIF,SCM",22.55,Industrials,6.0,First Lien
+co_b47cfa78da3f,OnPoint Industrial Services LLC,3,"MAIN,MSIF,SCM",22.55,Industrials,6.0,First Lien
 co_3fb3cb0962ac,MAI Capital Management Intermediate LLC,3,"ARCC,MSDL,NMFC",21.79,Media & Entertainment,4.75,First Lien
 co_a6c31e5d543e,TIDI Legacy Products Inc.,3,"GBDC,MSDL,NCDL",21.7,Healthcare,4.5,First Lien
-co_e77d0e2c07cf,Netwrix Corp.,3,"BCIC,GBDC,MSDL",21.1,Software & Technology,4.68,First Lien
-co_297b2fa395b4,Dynamic Communities LLC,3,"CSWC,MAIN,MSIF",20.08,Business Services,8.5,Preferred Equity
+co_e77d0e2c07cf,Netwrix Corp.,3,"BCIC,GBDC,MSDL",21.09,Software & Technology,4.57,First Lien
+co_297b2fa395b4,DYNAMIC COMMUNITIES LLC,3,"CSWC,MAIN,MSIF",20.08,Business Services,8.5,Preferred Equity
 co_990bf8144bd8,"Aspire Bakeries Holdings, LLC",3,"OBDC,PSBD,SAR",19.72,Food & Beverage,3.69,First Lien
 co_c2adc14192da,Radius Aerospace Inc.,3,"ARCC,BCIC,PNNT",19.48,Aerospace & Defense,6.08,First Lien
 co_675b5ce0f3d0,"AIT Worldwide Logistics Holdings, Inc.",3,"BBDC,OBDC,SAR",19.23,Transportation & Logistics,4.25,Other Equity
@@ -284,6 +283,7 @@ co_7fbd85f699ad,Kona Buyer LLC,3,"BXSL,CGBD,GBDC",18.1,Healthcare,4.5,First Lien
 co_1f42736b7293,"HSI HALO Acquisition, Inc.",3,"GBDC,MFIC,MSDL",17.42,Healthcare,5.0,First Lien
 co_101b6284a5fe,UHY Advisors Inc.,3,"BBDC,CCAP,MSDL",16.62,Business Services,4.75,First Lien
 co_a2b63c1eab84,Plasma Buyer LLC,3,"CCAP,GBDC,OBDC",16.47,Healthcare,5.88,First Lien
+co_ab62d73e75f9,Project Leopard Holdings Inc.,3,"BCIC,MSDL,SAR",15.66,Software & Technology,5.88,First Lien
 co_325343c253f0,Accelevation LLC,3,"BBDC,ICMB,MFIC",14.81,Business Services,4.5,Revolver
 co_49701f659d78,DCA Investment Holding LLC,3,"CGBD,GBDC,NMFC",14.79,Healthcare,6.41,First Lien
 co_93c5c8bf907e,LLFlex LLC,3,"CSWC,MAIN,MSIF",14.72,Industrials,8.0,First Lien
@@ -298,22 +298,21 @@ co_ac011d848c2a,"IMA Financial Group, Inc.",3,"OBDC,PSBD,SAR",13.29,Financial Se
 co_626efa52add3,Cornerstone Advisors of Arizona LLC,3,"NCDL,PFLT,PNNT",12.85,Business Services,4.75,First Lien
 co_a8605d2e0cd0,eShipping LLC,3,"BBDC,CCAP,OCSL",12.05,Transportation & Logistics,4.75,First Lien
 co_8736d4f129ac,Perforce Software Inc.,3,"ARCC,CCAP,NMFC",11.45,Software & Technology,5.83,First Lien
-co_ab62d73e75f9,Project Leopard Holdings Inc.,3,"BCIC,MSDL,SAR",11.42,Software & Technology,5.25,First Lien
 co_2196f30ca794,Zest Acquisition Corp.,3,"NMFC,OBDC,SAR",10.94,Healthcare,5.25,First Lien
 co_63100d10b621,The Kyjen Company LLC,3,"FDUS,MRCC,WHF",10.9,Financial Services,7.58,First Lien
 co_bc5e75bb536a,Max US Bidco Inc.,3,"ARCC,ICMB,SAR",10.44,Food & Beverage,5.0,First Lien
 co_b369f6da5ffe,SCIH Salt Holdings Inc.,3,"ARCC,GECC,OCSL",10.43,Chemicals & Materials,2.81,First Lien
 co_ffac9ca8d93d,Ping Identity Holding Corp.,3,"BXSL,OBDC,OCSL",9.94,Software & Technology,4.25,First Lien
-co_25877c931bc1,PVHC Holding Corp.,3,"BCIC,MRCC,TCPC",9.67,Containers & Packaging,6.33,First Lien
-co_9742f261be58,Student Resource Center LLC,3,"CSWC,MAIN,MSIF",8.24,,0.0,First Lien
-co_8ee2fbe09b48,HDC/HW Intermediate Holdings LLC,3,"BCIC,MAIN,MSIF",8.05,Media & Entertainment,7.17,First Lien
+co_25877c931bc1,PVHC Holding Corp.,3,"BCIC,MRCC,TCPC",9.53,Containers & Packaging,5.2,First Lien
+co_9742f261be58,STUDENT RESOURCE CENTER LLC,3,"CSWC,MAIN,MSIF",8.24,,0.0,First Lien
 co_89c47e7c1b19,SEKO Global Logistics Network LLC,3,"BXSL,CCAP,NCDL",7.97,Transportation & Logistics,8.5,First Lien
 co_93defcb80619,U.S. TelePacific Corp.,3,"CSWC,MAIN,MSIF",7.84,,7.6,First Lien
 co_e3bb3f551b76,DRI Holding Inc.,3,"PFLT,PSEC,SAR",6.3,Business Services,5.3,First Lien
+co_8ee2fbe09b48,HDC/HW Intermediate Holdings LLC,3,"BCIC,MAIN,MSIF",5.28,Media & Entertainment,5.33,First Lien
 co_05105daaeb2b,Output Services Group Inc.,3,"MRCC,NCDL,PFLT",4.65,Business Services,7.2,First Lien
-co_79aafca591c9,VTX HOLDINGS INC.,3,"BCIC,CSWC,RWAY",3.24,Software & Technology,0.0,Preferred Equity
+co_c1580e587da0,"VTX Holdings, LLC",3,"BCIC,CSWC,RWAY",3.24,Software & Technology,0.0,Preferred Equity
 co_eebfe102f3eb,TAC Lifeport Holdings LLC,3,"PFLT,PNNT,SCM",3.18,,0.0,Other Equity
-co_c9e5719bb1db,LB NewHoldCo LLC,3,"BCIC,CION,PFX",2.44,Healthcare,0.0,Other Equity
+co_c9e5719bb1db,LB NewHoldCo LLC,3,"BCIC,CION,PFX",2.28,Healthcare,0.0,Other Equity
 co_7ff9db72725a,"K&N Holdco, LLC",3,"CION,MFIC,PSEC",2.01,Automotive,0.0,Common Equity
 co_d6fc5b988db5,Largest Portfolio Company Investment,3,"ARCC,MRCC,NMFC",0.0,Financial Services,0.0,First Lien
 co_18e669c743da,Top Five Largest Portfolio Company Investments,3,"ARCC,MRCC,NMFC",0.0,Financial Services,0.0,First Lien
@@ -323,11 +322,11 @@ co_f202ecad1ea4,"BCPE Osprey Buyer, Inc.",2,"OBDC,PSEC",442.89,Healthcare,5.75,R
 co_1221d99fd14e,"HGH Purchaser, Inc.",2,"CCAP,OBDC",384.83,Consumer & Retail,6.5,First Lien
 co_41d6d43f4e47,Plaskolite PPC Intermediate II LLC,2,"ARCC,BCSF",368.43,Media & Entertainment,7.33,First Lien
 co_257e0270d752,Guidehouse Inc.,2,"BXSL,OBDC",367.14,Business Services,4.58,First Lien
-co_bf81588f1df0,"Faraday Buyer, LLC",2,"ARCC,OBDC",342.22,Industrials,6.0,First Lien
+co_bf81588f1df0,"FARADAY BUYER, LLC",2,"ARCC,OBDC",342.22,Industrials,6.0,First Lien
 co_731ca2c74045,Litera Bidco LLC.,2,"GBDC,OBDC",337.74,Consumer & Retail,5.0,First Lien
 co_f26421f2c9f8,Monotype Imaging Holdings Inc.,2,"OBDC,OCSL",332.64,Media & Entertainment,5.35,First Lien
-co_2cafb2e9570e,Patriot Acquisition Topco S.A.R.L,2,"CCAP,OBDC",322.7,Healthcare,4.81,First Lien
-co_850bd82c2c55,Neptune Bidco US Inc.,2,"ARCC,BCIC",308.38,Media & Entertainment,5.85,First Lien
+co_2cafb2e9570e,Patriot Acquisition TopCo S.A.R.L,2,"CCAP,OBDC",322.7,Healthcare,4.81,First Lien
+co_850bd82c2c55,Neptune Bidco US Inc.,2,"ARCC,BCIC",308.68,Media & Entertainment,5.85,First Lien
 co_b56720645d0a,Intelerad Medical Systems Inc.,2,"MSDL,OBDC",307.67,Healthcare,6.5,First Lien
 co_6f00abc08b8d,"Bayshore Intermediate #2, LP.",2,"GBDC,OBDC",300.12,Software & Technology,4.85,First Lien
 co_d22eaa1aa880,Galaxy Universal LLC,2,"FSK,MFIC",271.35,Consumer & Retail,5.83,First Lien
@@ -350,7 +349,7 @@ co_0597111bed34,Cardinal Parent Inc.,2,"ARCC,NMFC",198.78,Software & Technology,
 co_5d8158f244a0,Huskies Parent Inc.,2,"ARCC,GBDC",194.46,Insurance,5.88,First Lien
 co_09e3fdc70701,"Thunder Purchaser, Inc.",2,"OBDC,TCPC",193.72,Software & Technology,5.39,Delayed Draw
 co_5f14a9751d6f,"Genuine Cable Group, LLC",2,"BXSL,KBDC",189.58,Distribution & Wholesale,5.75,First Lien
-co_da9ff4a8b969,DCG ACQUISITION CORP.,2,"BXSL,OBDC",187.6,Chemicals & Materials,4.83,First Lien
+co_da9ff4a8b969,DCG Acquisition Corp.,2,"BXSL,OBDC",187.6,Chemicals & Materials,4.83,First Lien
 co_a3918164a033,"Evolution BuyerCo, Inc.",2,"CCAP,OBDC",186.08,Insurance,5.3,First Lien
 co_fe371167248a,People Corp.,2,"ARCC,GBDC",183.57,,5.2,First Lien
 co_7936c8c88063,"Packaging Coordinators Midco, Inc.",2,"GBDC,OBDC",173.38,Containers & Packaging,4.3,First Lien
@@ -364,15 +363,15 @@ co_0c18529cc60f,Datix Bidco Limited and RL Datix Holdings (USA) Inc.,2,"ARCC,GBD
 co_e15164298348,Frontline Road Safety LLC,2,"BXSL,FSK",160.15,Industrials,4.78,First Lien
 co_43e6ba927342,GRT Rubber Technologies LLC,2,"MAIN,MSIF",156.51,Financial Services,7.0,First Lien
 co_969fda17c6cc,BVI Medical Inc.,2,"ARCC,CCAP",153.54,Healthcare,6.17,First Lien
+co_29e5d1452b58,Florida Food Products LLC,2,"ARCC,BCIC",153.4,Food & Beverage,5.22,First Lien
 co_6738429eafd1,"CivicPlus, LLC",2,"GBDC,OBDC",151.59,Software & Technology,6.9,First Lien
 co_1ae37eca31cd,Wrench Group LLC,2,"CCAP,OBDC",150.89,Consumer & Retail,4.38,Other Equity
-co_29e5d1452b58,Florida Food Products LLC,2,"ARCC,BCIC",150.65,Food & Beverage,5.1,First Lien
 co_df8388868fe9,"Paris US Holdco, Inc.",2,"ARCC,OBDC",150.45,Business Services,4.81,Revolver
 co_29a51cd7e4e1,ABB/Con-Cise Optical Group LLC,2,"OBDC,WHF",146.02,Distribution & Wholesale,7.5,First Lien
 co_c2948641fbf1,"QAD, Inc.",2,"GBDC,OBDC",142.47,Software & Technology,4.75,First Lien
 co_0b14e9f96163,SG Acquisition Inc.,2,"ARCC,BXSL",139.98,,4.75,First Lien
 co_82391a9073c0,Cronos Crimson Holdings Inc.,2,"BXSL,NMFC",137.47,,6.13,First Lien
-co_e9b4ca1d8d88,LeanTaas Holdings Inc.,2,"ARCC,TSLX",136.63,Software & Technology,7.67,First Lien
+co_e9b4ca1d8d88,LeanTaaS Holdings Inc.,2,"ARCC,TSLX",136.63,Software & Technology,7.67,First Lien
 co_e9d3261e4660,SI East LLC,2,"MAIN,MSIF",134.53,Financial Services,0.0,First Lien
 co_928b04143d03,YE Brands Holdings LLC,2,"ARCC,GBDC",133.51,Food & Beverage,4.75,First Lien
 co_31f14111603a,"NMI Acquisitionco, Inc.",2,"CGBD,OBDC",132.39,Financial Services,4.67,First Lien
@@ -394,12 +393,12 @@ co_22f6384734c7,Heavy Construction Systems Specialists LLC,2,"ARCC,BBDC",120.95,
 co_ef73fb283626,"PrimeFlight Acquisition, LLC",2,"BCSF,MFIC",119.63,Telecommunications,5.39,First Lien
 co_4b1c282ce9c3,Medlar Bidco Ltd.,2,"ARCC,GBDC",119.62,,5.0,First Lien
 co_8bef45178f31,JHCC Holdings LLC,2,"BCSF,GBDC",119.57,Automotive,5.04,First Lien
-co_ce2ad0fc7589,ExtraHop Networks Inc.,2,"ARCC,TSLX",118.76,Business Services,6.54,First Lien
+co_ce2ad0fc7589,Extrahop Networks Inc.,2,"ARCC,TSLX",118.76,Business Services,6.54,First Lien
 co_9ebbfee7c50f,Gigamon Inc.,2,"BXSL,FSK",118.05,Software & Technology,5.78,First Lien
 co_58e933a523c1,Bayshore Intermediate #2 LP,2,"BXSL,TSLX",117.21,Media & Entertainment,5.25,First Lien
 co_19efa83b102c,Pritchard Industries Inc.,2,"ARCC,MSDL",115.84,Real Estate,5.81,First Lien
 co_12186169ddbd,AGI-CFI Holdings Inc.,2,"BXSL,MSDL",114.68,Transportation & Logistics,4.75,First Lien
-co_13425bd9e339,Financial services,2,"KBDC,SAR",114.29,Financial Services,0.0,First Lien
+co_13425bd9e339,Financial Services,2,"KBDC,SAR",114.29,Financial Services,0.0,First Lien
 co_cb357e3996d3,Horizon CTS Buyer LLC,2,"BXSL,FSK",113.53,Industrials,4.75,First Lien
 co_7039a924ddbd,"USRP Holdings, Inc.",2,"NMFC,OBDC",112.03,Insurance,5.0,First Lien
 co_2f16bb3c77e7,Inszone Mid LLC,2,"ARCC,MSDL",111.48,Insurance,5.25,First Lien
@@ -418,7 +417,7 @@ co_011b1b84a898,Sun Acquirer Corp.,2,"ARCC,CCAP",99.39,Automotive,4.5,First Lien
 co_6af04067c071,Nello Industries Investco LLC,2,"MAIN,MSIF",98.73,Financial Services,6.5,First Lien
 co_fbd5965454cb,Cority Software Inc.,2,"ARCC,CGBD",97.78,Software & Technology,4.5,First Lien
 co_f478344bf025,Brave Parent Holdings Inc.,2,"BXSL,NMFC",96.73,,5.0,First Lien
-co_8bb307bf6abc,Centric Brands Inc.,2,"ARCC,BCIC",95.4,Industrials,6.67,First Lien
+co_8bb307bf6abc,Centric Brands Inc.,2,"ARCC,BCIC",94.83,Industrials,6.83,First Lien
 co_4c8ab401ada3,Denali Midco 2 LLC,2,"CGBD,GBDC",93.65,Automotive,5.66,First Lien
 co_bc99fe3ddf4e,HuFriedy Group Acquisition LLC,2,"ARCC,GBDC",93.54,Healthcare,5.5,First Lien
 co_4a5a196b0479,North Star Acquisitionco LLC,2,"ARCC,GSBD",90.37,,4.5,First Lien
@@ -514,6 +513,7 @@ co_4393096b3f51,"Zelis Cost Management Buyer, Inc.",2,"NMFC,OBDC",54.27,Healthca
 co_9d4410388aff,Equinox Holdings Inc.,2,"ARCC,TSLX",54.04,Healthcare,8.25,First Lien
 co_0e5c97782c9b,"Southern Veterinary Partners, LLC",2,"GBDC,OBDC",54.04,Healthcare,2.88,Preferred Equity
 co_8922cc638ea0,STV Group Inc.,2,"BXSL,FSK",53.98,Industrials,4.79,First Lien
+co_e15ca13c5c16,"VTX Intermediate Holdings, Inc.",2,"BCIC,RWAY",53.51,Software & Technology,7.5,First Lien
 co_678158fd07fd,"BCPE Empire Holdings, Inc.",2,"NMFC,OBDC",52.99,Transportation & Logistics,3.31,First Lien
 co_ce5072e17d0c,Suveto Buyer LLC,2,"GBDC,MSDL",52.95,Healthcare,4.3,First Lien
 co_b505acf60903,Direct Marketing Solutions Inc.,2,"MAIN,MSIF",52.63,Financial Services,0.0,First Lien
@@ -522,7 +522,6 @@ co_45bcc16c4f8f,CenterPeak Holdings LLC,2,"MAIN,MSIF",52.04,,0.0,First Lien
 co_07cacee15a55,"PH Beauty Holdings III, Inc.",2,"ARCC,KBDC",52.0,Consumer & Retail,5.0,First Lien
 co_38208589e59d,Recovery Point Systems Inc.,2,"BBDC,MSDL",51.78,Software & Technology,5.75,First Lien
 co_811c43f33ae5,Airo Purchaser Inc.,2,"MAIN,MSIF",51.7,,5.5,First Lien
-co_e15ca13c5c16,"VTX Intermediate Holdings, Inc.",2,"BCIC,RWAY",51.59,Software & Technology,7.5,First Lien
 co_f710231cd0c9,Horizon Avionics Buyer LLC,2,"ARCC,CGBD",51.08,Aerospace & Defense,4.45,First Lien
 co_f7a5cab1bc21,Inc.,2,"CGBD,MSDL",50.79,Business Services,6.08,First Lien
 co_95fd64f10b4e,Acumatica Holdings Inc.,2,"BXSL,NMFC",50.66,,4.75,First Lien
@@ -536,20 +535,20 @@ co_53120a491cb5,Project Ruby Ultimate Parent Corp.,2,"BXSL,OBDC",48.94,Healthcar
 co_91c1e16f5fb5,GFG Group LLC.,2,"MAIN,MSIF",48.81,Financial Services,0.0,First Lien
 co_34f233ac7cfb,NuStep LLC,2,"MAIN,MSIF",48.55,Financial Services,6.5,First Lien
 co_ff5e8fc5a32d,Lido Advisors LLC,2,"ARCC,FSK",48.5,Financial Services,4.75,First Lien
-co_8ee995ad93dc,Magneto Components BuyCo LLC,2,"BXSL,MSDL",48.37,Software & Technology,6.0,First Lien
-co_518ac7cffb38,Anthem Sports and Entertainment Inc.,2,"BCIC,CION",48.28,Media & Entertainment,5.5,First Lien
+co_8ee995ad93dc,Magneto Components Buyco LLC,2,"BXSL,MSDL",48.37,Software & Technology,6.0,First Lien
 co_2713bff35b82,Knockout Intermediate Holdings I Inc.,2,"NMFC,OBDC",48.19,Media & Entertainment,10.75,Preferred Equity
 co_fc7feb549f63,Leviathan Intermediate Holdco LLC,2,"ARCC,WHF",47.76,Media & Entertainment,6.0,First Lien
 co_56e3f8337841,EP Purchaser LLC,2,"ARCC,PSBD",47.69,,4.5,First Lien
 co_43a541308fe3,QF Holdings Inc.,2,"ARCC,GBDC",47.07,Healthcare,4.5,First Lien
+co_518ac7cffb38,Anthem Sports and Entertainment Inc.,2,"BCIC,CION",46.86,Media & Entertainment,5.5,First Lien
 co_e0ef793e1f92,Infogain Corp.,2,"CSWC,NMFC",46.71,,6.19,First Lien
 co_ee04e5fe5be3,"Cennox, Inc.",2,"CION,WHF",46.64,,6.79,First Lien
-co_047b2ac1b997,AMCP Pet Holdings Inc.,2,"BCIC,MSDL",46.52,Food & Beverage,7.0,First Lien
 co_3d26abc6b8f1,Superman Holdings LLC,2,"ARCC,MSDL",46.26,Industrials,4.5,First Lien
 co_135c34096c85,"Piano Software, Inc.",2,"RWAY,TSLX",46.24,Software & Technology,7.25,Other Equity
+co_047b2ac1b997,AMCP Pet Holdings Inc.,2,"BCIC,MSDL",46.01,Food & Beverage,7.0,First Lien
 co_d1ba03117be3,"Gabriel Partners, LLC",2,"MFIC,NCDL",45.96,Business Services,1.8,First Lien
 co_c81f439c14a5,VVS Holdco LLC,2,"MAIN,MSIF",45.8,Financial Services,6.0,First Lien
-co_c013dd202bd3,Surewerx Purchaser III Inc.,2,"GBDC,MSDL",45.74,Consumer & Retail,5.25,First Lien
+co_c013dd202bd3,SureWerx Purchaser III Inc.,2,"GBDC,MSDL",45.74,Consumer & Retail,5.25,First Lien
 co_f82db1e7af91,NCP-MSI Buyer Inc.,2,"ARCC,MFIC",45.59,Containers & Packaging,4.42,Revolver
 co_e0db83a9ad2d,GradeEight Corp.,2,"MAIN,MSIF",45.58,,6.92,First Lien
 co_96b5095e5007,Kickhaefer Manufacturing Company LLC,2,"MAIN,MSIF",44.96,Financial Services,0.0,First Lien
@@ -558,9 +557,9 @@ co_5ed399aaef6f,SS Acquisition LLC,2,"OFS,PFX",44.86,Education,6.0,First Lien
 co_b6564b3b0c7b,SelectQuote Inc.,2,"ARCC,BXSL",44.8,,6.5,First Lien
 co_6338421c62e0,Clad-Rex Steel LLC,2,"MAIN,MSIF",44.75,Financial Services,0.0,First Lien
 co_1952a1bf43c3,"Telesoft Holdings, LLC",2,"GBDC,MFIC",44.73,Software & Technology,5.92,First Lien
-co_ee940550a1c4,"CI (MG) Group, LLC",2,"KBDC,MFIC",44.73,Business Services,0.0,Delayed Draw
+co_ee940550a1c4,"CI (MG) GROUP, LLC",2,"KBDC,MFIC",44.73,Business Services,0.0,Delayed Draw
 co_63420b406827,Any Hour LLC.,2,"GBDC,MSDL",44.65,Consumer & Retail,5.25,First Lien
-co_288c1fdb3198,Cloudbees Inc.,2,"GBDC,GSBD",44.52,Software & Technology,7.0,Preferred Equity
+co_288c1fdb3198,CloudBees Inc.,2,"GBDC,GSBD",44.52,Software & Technology,7.0,Preferred Equity
 co_3acc42695a8e,Medical Solutions Parent Holdings Inc.,2,"BBDC,PSEC",44.47,Healthcare,7.0,Second Lien
 co_ec662f19c950,Zephyr Buyer LP,2,"MFIC,WHF",44.31,Media & Entertainment,5.25,First Lien
 co_5b795483c871,Cartessa Aesthetics LLC,2,"PFLT,PNNT",43.54,,6.0,First Lien
@@ -608,15 +607,16 @@ co_a49c441f1962,Escalent Inc.,2,"MAIN,MSIF",35.99,,6.0,First Lien
 co_3dc2dd2bf611,United Digestive MSO Parent LLC,2,"ARCC,SLRC",35.85,Healthcare,5.75,First Lien
 co_596277b10287,Telestream 2 LLC,2,"OCSL,WHF",35.77,,6.75,First Lien
 co_6d016d534cac,"RetailNext, Inc.",2,"BCSF,TPVG",35.68,Containers & Packaging,7.0,First Lien
-co_666f58675343,One Stop Mailing LLC,2,"BCIC,PFLT",35.66,Transportation & Logistics,6.32,First Lien
 co_cf234cd4b72a,Metalforming Holdings LLC,2,"MAIN,MSIF",35.62,Financial Services,0.0,First Lien
+co_666f58675343,One Stop Mailing LLC,2,"BCIC,PFLT",35.61,Transportation & Logistics,6.32,First Lien
 co_ec6196787b25,Precision Concepts Parent Inc.,2,"ARCC,BCSF",35.37,Containers & Packaging,4.75,First Lien
 co_7008c3ee0dda,"PAI Holdco, Inc.",2,"CGBD,MSDL",35.08,Automotive,6.5,First Lien
 co_53e701d14316,Procure Acquireco Inc.,2,"GBDC,MSDL",34.59,Business Services,4.75,First Lien
 co_2389cec54b7f,Material Holdings LLC,2,"BXSL,CGBD",34.54,Business Services,5.77,First Lien
-co_b3f48e09f350,DirecTV Financing LLC,2,"OCSL,SAR",34.43,Media & Entertainment,5.33,First Lien
+co_b3f48e09f350,Directv Financing LLC,2,"OCSL,SAR",34.43,Media & Entertainment,5.33,First Lien
 co_905c81e0420a,Compass Systems & Sales LLC,2,"MAIN,MSIF",34.39,Financial Services,0.0,First Lien
 co_0b8ba7e0863d,TEC Services LLC,2,"MAIN,MSIF",34.03,Business Services,5.5,First Lien
+co_f222748152e9,Accordion Partners LLC,2,"MSDL,TCPC",34.02,Financial Services,5.04,First Lien
 co_099de446f2d2,"Khoros, LLC",2,"HTGC,TSLX",33.99,Software & Technology,0.0,First Lien
 co_e3e24eb93023,Modigent LLC,2,"ARCC,TCPC",33.93,Business Services,5.08,First Lien
 co_e71f81570245,Elgin AcquireCo LLC,2,"MAIN,MSIF",33.77,Financial Services,6.0,First Lien
@@ -625,9 +625,8 @@ co_7807603ac0e6,GGG Midco LLC,2,"PFLT,PNNT",33.18,,5.0,First Lien
 co_aad301695299,Quick Quack Car Wash Holdings LLC.,2,"ARCC,GBDC",33.07,Automotive,4.75,First Lien
 co_c94d155bacfa,Foodservices Brand Group LLC,2,"GLAD,NCDL",32.94,Food & Beverage,6.5,First Lien
 co_0e20b0a59d65,"TMK Hawk Parent, Corp.",2,"CION,NMFC",32.73,,2.56,First Lien
-co_d86e93cd82f8,"Phoenix YW Buyer, Inc.",2,"KBDC,MFIC",32.66,Consumer & Retail,5.0,First Lien
+co_d86e93cd82f8,"PHOENIX YW BUYER, INC.",2,"KBDC,MFIC",32.66,Consumer & Retail,5.0,First Lien
 co_857901007462,World 50 Inc.,2,"BBDC,CGBD",32.58,Business Services,4.5,First Lien
-co_ccb9c8599e54,TA/WEG Holdings LLC,2,"BCIC,BCSF",32.44,Insurance,4.67,Delayed Draw
 co_74ff9518b7b1,Sierra Enterprises LLC,2,"NMFC,OCSL",32.42,Food & Beverage,6.0,First Lien
 co_c86da8cc1aa5,"Klein Hersh, LLC",2,"CION,ICMB",32.16,Business Services,4.42,First Lien
 co_dcf36a882d65,Kinetic Purchaser LLC,2,"PFLT,PNNT",31.76,,6.15,First Lien
@@ -643,21 +642,21 @@ co_d89679fbde05,Colonial Electric Company LLC,2,"MAIN,MSIF",31.2,Financial Servi
 co_13695b0d446a,Watterson Brands LLC,2,"MAIN,MSIF",31.16,,0.0,First Lien
 co_3e8156d64b2b,Spindrift Beverage Co. Inc.,2,"ARCC,GBDC",31.15,Food & Beverage,5.0,First Lien
 co_b2b0f59b82d7,NC Topco LLC,2,"GSBD,NMFC",31.01,,4.5,First Lien
-co_cea354a1026c,HH-INSPIRE ACQUISITION INC.,2,"CSWC,GLAD",30.96,,9.0,First Lien
+co_cea354a1026c,HH-INSPIRE ACQUISITION Inc.,2,"CSWC,GLAD",30.96,,9.0,First Lien
 co_14e923e4d4a9,TAPCO Buyer LLC,2,"BBDC,KBDC",30.64,Business Services,4.5,First Lien
 co_5a268e43a0b5,EVDR Purchaser Inc.,2,"MSDL,NCDL",30.64,Consumer & Retail,5.25,First Lien
-co_e8581d4ccd0b,LIGHTNING INTERMEDIATE II LLC,2,"CSWC,SCM",30.55,Media & Entertainment,6.0,First Lien
+co_e8581d4ccd0b,Lightning Intermediate II LLC,2,"CSWC,SCM",30.55,Media & Entertainment,6.0,First Lien
 co_3f6dd1a93595,Mills Fleet Farm Group LLC,2,"MAIN,MSIF",30.33,Transportation & Logistics,5.5,First Lien
 co_1cedb2e8668c,KRIV Acquisition Inc.,2,"NCDL,OBDC",30.29,Business Services,5.25,First Lien
 co_2fbcb7a91c6a,AB Centers Acquisition Corp.,2,"NCDL,WHF",30.26,Healthcare,5.25,First Lien
 co_7652a2753bb1,"Lightbeam Bidco, Inc.",2,"ARCC,OBDC",30.2,Transportation & Logistics,4.86,First Lien
 co_8a3598b80f10,RD Holdco Inc.,2,"ARCC,SLRC",30.0,Consumer & Retail,9.75,Common Equity
 co_940c75bcb636,Digital Products Holdings LLC,2,"MAIN,MSIF",29.99,Financial Services,10.0,First Lien
-co_fa4c0928a4b2,Pushpay USA INC.,2,"NMFC,OBDC",29.95,Software & Technology,3.94,First Lien
+co_fa4c0928a4b2,PUSHPAY USA Inc.,2,"NMFC,OBDC",29.95,Software & Technology,3.94,First Lien
 co_abe74ce2ba58,Insight Borrower Corp.,2,"MAIN,MSIF",29.86,,6.25,First Lien
 co_f0de40c8c138,Career Team Holdings LLC,2,"MAIN,MSIF",29.83,,6.0,First Lien
 co_bf48764ea590,Ardonagh Midco 3 Ltd.,2,"NMFC,OBDC",29.64,Financial Services,3.08,First Lien
-co_2321ff9e3f02,CoreWeave Compute Acquisition Co. IV LLC,2,"CGBD,GECC",29.56,Software & Technology,6.0,First Lien
+co_2321ff9e3f02,Coreweave Compute Acquisition Co. IV LLC,2,"CGBD,GECC",29.56,Software & Technology,6.0,First Lien
 co_0ea34d13b014,GTY Technology Holdings Inc.,2,"GBDC,TCPC",29.54,Software & Technology,6.54,First Lien
 co_5ceb7de43243,Harris Preston Fund Investments,2,"MAIN,MSIF",29.45,Financial Services,0.0,Partnership Interest
 co_5f837b5ebc54,MPG Parent Holdings LLC,2,"BXSL,NCDL",29.28,Consumer & Retail,5.0,First Lien
@@ -683,11 +682,12 @@ co_1c8a889e4b97,"HomeRenew Buyer, Inc.",2,"MFIC,TCPC",27.92,Industrials,8.12,Fir
 co_d29c526556c6,AVEX Aviation Holdings LLC,2,"MAIN,MSIF",27.86,Transportation & Logistics,7.25,First Lien
 co_972bec5eeda6,"mPulse Mobile, Inc.",2,"MFIC,MSDL",27.86,Healthcare,4.75,First Lien
 co_1f4d56e6b50c,MBS Holdings Inc.,2,"NCDL,PFLT",27.85,Telecommunications,5.04,First Lien
-co_4679eadb2720,Jobvite,2,"SAR,TCPC",27.73,Software & Technology,7.5,First Lien
+co_4679eadb2720,JOBVITE,2,"SAR,TCPC",27.73,Software & Technology,7.5,First Lien
 co_3debf5785b64,BAART Programs Inc.,2,"ARCC,OCSL",27.65,Healthcare,6.0,First Lien
+co_f27d9b579ff0,American Clinical Solutions LLC,2,"BCIC,CION",27.54,Healthcare,7.0,First Lien
 co_a55d77e94a74,"Gateway US Holdings, Inc.",2,"MFIC,MSDL",27.1,Healthcare,4.75,First Lien
 co_8ee843f1457c,"Krayden Holdings, Inc.",2,"GBDC,KBDC",27.08,Distribution & Wholesale,4.75,First Lien
-co_051b13bc64cf,E-Discovery AcquireCo LLC,2,"MSDL,TCPC",26.73,Software & Technology,6.0,First Lien
+co_051b13bc64cf,e-Discovery Acquireco LLC,2,"MSDL,TCPC",26.73,Software & Technology,6.0,First Lien
 co_65ea673299b5,"Channelside AcquisitionCo, Inc.",2,"BXSL,MFIC",26.6,Financial Services,4.75,First Lien
 co_26dad21bd38c,Randys Holdings Inc.,2,"BBDC,NCDL",26.58,Automotive,5.0,First Lien
 co_81c3db1a65a7,Java Buyer Inc.,2,"BXSL,NCDL",26.55,Industrials,5.0,First Lien
@@ -699,7 +699,6 @@ co_b49f9ffc3bd2,"Delta TopCo, Inc.",2,"OBDC,PSBD",26.41,Software & Technology,2.
 co_47879cccee2a,Purge Rite LLC,2,"MAIN,MSIF",26.4,,0.0,Preferred Equity
 co_433bed8af18c,X Holdings Corp.,2,"OCSL,TSLX",26.37,Telecommunications,6.58,First Lien
 co_314edbc9ef22,Ground Penetrating Radar Systems LLC,2,"ARCC,BXSL",26.26,,4.5,First Lien
-co_f27d9b579ff0,American Clinical Solutions LLC,2,"BCIC,CION",26.15,Healthcare,7.0,First Lien
 co_971ffea0b64e,Inovex Information Systems Inc.,2,"PFLT,SCM",26.13,,5.0,First Lien
 co_3e6ce6b14191,"Axsome Therapeutics, Inc.",2,"BXSL,HTGC",25.99,Healthcare,4.38,First Lien
 co_67e33021e1cc,LeadsOnline LLC,2,"BBDC,GBDC",25.94,Software & Technology,4.5,First Lien
@@ -708,7 +707,7 @@ co_88ccabd99a44,"Access CIG, LLC",2,"OCSL,OXSQ",25.87,Business Services,4.0,Firs
 co_a6b77828b56c,LOBOS PARENT INC.,2,"ARCC,GSBD",25.82,,4.5,First Lien
 co_df74ce8ef41f,Independent Pet Partners Intermediate Holdings LLC.,2,"MAIN,MSIF",25.79,Media & Entertainment,0.0,Common Equity
 co_f0de6680d776,Dispatch Acquisition Holdings LLC,2,"GBDC,NMFC",25.69,Industrials,4.53,First Lien
-co_58d71a0817fb,Airx Climate Solutions Inc.,2,"ARCC,BBDC",25.67,Industrials,5.45,First Lien
+co_58d71a0817fb,AirX Climate Solutions Inc.,2,"ARCC,BBDC",25.67,Industrials,5.45,First Lien
 co_45b837a0404e,Inizio Group Ltd.,2,"NMFC,OBDC",25.64,Healthcare,4.25,First Lien
 co_6bb3cedeeffc,Kairos Bidco Ltd.,2,"ARCC,GBDC",25.61,Software & Technology,4.75,First Lien
 co_c52d2e837ad8,SPAU Holdings LLC,2,"MAIN,MSIF",25.31,,7.0,First Lien
@@ -720,13 +719,13 @@ co_dea8727c2769,Oak Purchaser Inc.,2,"CGBD,MSDL",24.86,Software & Technology,5.5
 co_0b26a7acbbd2,DG Investment Intermediate Holdings 2 Inc.,2,"NMFC,OCSL",24.82,Business Services,4.19,First Lien
 co_db17b3ebad8f,CCI Buyer Inc.,2,"BXSL,MSDL",24.79,Telecommunications,5.0,First Lien
 co_54424ddcc9de,Charps LLC,2,"MAIN,MSIF",24.78,Financial Services,0.0,Preferred Equity
-co_a11747edb833,"Riddell, Inc.",2,"BCIC,CION",24.76,Consumer & Retail,6.0,First Lien
+co_a11747edb833,"Riddell, Inc.",2,"BCIC,CION",24.73,Consumer & Retail,6.0,First Lien
 co_1f3664cacaef,"Bingo Group Buyer, Inc.",2,"CGBD,MFIC",24.5,Industrials,4.75,First Lien
-co_0b05cb5e6ede,Discovery Purchaser Corp.,2,"NMFC,SAR",24.48,Chemicals & Materials,3.75,First Lien
+co_0b05cb5e6ede,DISCOVERY PURCHASER Corp.,2,"NMFC,SAR",24.48,Chemicals & Materials,3.75,First Lien
 co_7d56e5566aa1,PrimeFlight Aviation Services,2,"MAIN,MSIF",24.46,Peaches Holding Corporation,5.38,First Lien
 co_f60ab2c38c7b,Excel Fitness Holdings Inc.,2,"CGBD,NCDL",24.35,Consumer & Retail,5.06,First Lien
-co_0da73172bca3,Circustrix Holdings LLC,2,"CGBD,MFIC",24.34,Healthcare,6.75,First Lien
-co_a925a959e295,Schlesinger Global Inc.,2,"MFIC,PFLT",24.34,,6.1,First Lien
+co_0da73172bca3,CircusTrix Holdings LLC,2,"CGBD,MFIC",24.34,Healthcare,6.75,First Lien
+co_83b7bd47d8e2,"Schlesinger Global, LLC",2,"MFIC,PFLT",24.34,,6.1,First Lien
 co_f8346a79b8d9,Osaic Holdings Inc.,2,"NMFC,PSBD",24.27,Financial Services,3.0,First Lien
 co_85f42770961f,SCIC Buyer Inc.,2,"NCDL,WHF",24.15,Industrials,4.75,First Lien
 co_3c98df03f7bf,PTL US Bidco Inc.,2,"MAIN,MSIF",23.98,,7.25,First Lien
@@ -740,6 +739,7 @@ co_6c7c26bdc214,Hybrid Promotions LLC,2,"CSWC,MSIF",23.68,,8.25,Second Lien
 co_36b61dea8d03,F&M Buyer LLC,2,"MFIC,OCSL",23.52,,4.5,First Lien
 co_454aae9ff534,"iSolved, Inc.",2,"OBDC,SAR",23.3,Business Services,2.92,First Lien
 co_ae4ac7b511f5,IG Parent Corp.,2,"MAIN,MSIF",23.08,,5.75,First Lien
+co_ccb9c8599e54,TA/WEG Holdings LLC,2,"BCIC,BCSF",22.94,Insurance,5.05,Delayed Draw
 co_35b4038f80f4,"BCPE Pequod Buyer, Inc.",2,"ARCC,OBDC",22.85,Financial Services,3.25,Other
 co_5a247831526c,Neptune Holdings Inc.,2,"BXSL,GBDC",22.83,Healthcare,4.5,First Lien
 co_56e3722a1d69,Vertex Service Partners LLC,2,"ARCC,MSDL",22.69,Business Services,6.0,First Lien
@@ -790,15 +790,14 @@ co_ac2317bad954,"Barracuda Networks, Inc.",2,"OBDC,PSBD",20.17,Software & Techno
 co_f4609d409cbb,Cliffwater LLC,2,"CGBD,MSDL",19.84,Financial Services,4.92,First Lien
 co_85d8be6f2c5b,Ro Health LLC,2,"PFLT,PNNT",19.8,,4.5,First Lien
 co_a97a97f266f2,KENG Acquisition Inc.,2,"MSDL,NCDL",19.63,Business Services,4.75,First Lien
-co_d4f967c47c49,"DCert Buyer, Inc.",2,"BCIC,MFIC",19.61,Software & Technology,7.0,Second Lien
-co_c4b6e583d990,"Tactical Air Support, Inc.",2,"BCIC,CION",19.6,Aerospace & Defense,8.5,First Lien
+co_d4f967c47c49,"DCert Buyer, Inc.",2,"BCIC,MFIC",19.57,Software & Technology,7.0,Second Lien
+co_c4b6e583d990,"Tactical Air Support, Inc.",2,"BCIC,CION",19.54,Aerospace & Defense,8.17,First Lien
 co_45c8e988e7ce,Omnia Exterior Solutions LLC,2,"PFLT,PNNT",19.54,,5.25,First Lien
 co_621823b81a89,"MacroFab, Inc.",2,"HTGC,TRIN",19.47,Software & Technology,5.5,First Lien
 co_b5ed0f8e511a,Brightwood Capital Fund Investments,2,"MAIN,MSIF",19.37,Financial Services,0.0,Partnership Interest
 co_f806749ed51b,OakBridge Insurance Agency LLC,2,"ARCC,GBDC",19.34,Insurance,4.82,First Lien
 co_84ac36ceff75,"Citadel Securities, LP",2,"OBDC,SAR",19.32,Financial Services,2.0,First Lien
 co_f71e197d9972,Michael Baker International LLC,2,"NMFC,OXSQ",19.29,Business Services,4.0,First Lien
-co_8c741accdb88,MSM Acquisitions Inc.,2,"BCIC,NCDL",19.25,Media & Entertainment,6.0,First Lien
 co_86b07994c62a,Low Voltage Holdings Inc.,2,"NCDL,NMFC",19.16,Utilities: Electric,4.75,First Lien
 co_d954919b02c2,Wellful Inc.,2,"OFS,PSEC",19.16,Food & Beverage,6.25,First Lien
 co_469aa7c6d56d,Project Accelerate Parent LLC,2,"MSDL,NMFC",19.08,Consumer & Retail,5.25,First Lien
@@ -807,18 +806,19 @@ co_de8fa7ccf8c1,Mini Melts of America LLC,2,"MAIN,MSIF",19.07,,6.25,First Lien
 co_b963cad6f73d,DOUGLAS HOLDINGS Inc.,2,"MRCC,TCPC",19.07,Software & Technology,6.08,First Lien
 co_92f5907f0670,ARGANO LLC,2,"ICMB,PFLT",18.95,Software & Technology,5.62,Other Equity
 co_2d51b9f32ec1,Inspire Aesthetics Management LLC,2,"MAIN,MSIF",18.82,Business Services,10.0,First Lien
+co_8c741accdb88,MSM Acquisitions Inc.,2,"BCIC,NCDL",18.8,Media & Entertainment,6.0,First Lien
 co_6774d665433a,Community Management Holdings Midco 2 LLC,2,"BXSL,NMFC",18.38,Business Services,4.88,First Lien
-co_e4ca4d595e3b,Atlas US Finco Inc.,2,"CGBD,MSDL",18.37,Business Services,4.94,First Lien
+co_e4ca4d595e3b,Atlas Us Finco Inc.,2,"CGBD,MSDL",18.37,Business Services,4.94,First Lien
 co_748a55d10192,Profile Products LLC.,2,"BXSL,GBDC",18.3,Business Services,5.1,First Lien
 co_ae77d027c787,BayMark Health Services Inc.,2,"OFS,SLRC",18.27,Business Services,6.75,Second Lien
 co_f7a80e7b73e0,Cohnreznick Advisory LLC,2,"NMFC,OBDC",18.23,Financial Services,2.62,First Lien
 co_8604af3bb831,Blackhawk Industrial Distribution Inc.,2,"PFLT,PNNT",18.05,Distribution & Wholesale,5.4,First Lien
 co_96bd5d0971e2,Jones Fish Hatcheries & Distributors LLC,2,"ARCC,BBDC",18.0,Business Services,4.25,First Lien
 co_01e38c01d871,KAMC Holdings Inc.,2,"BBDC,BCSF",18.0,Telecommunications,5.25,First Lien
-co_9404c1429866,"Ancile Solutions, Inc.",2,"BCIC,CION",17.71,Software & Technology,10.0,First Lien
 co_b8df7bf20faa,Bounteous Inc.,2,"BBDC,NCDL",17.7,Business Services,4.75,First Lien
 co_a2bda52004f7,MEI Buyer LLC,2,"MRCC,NCDL",17.67,Industrials,5.0,First Lien
 co_58779afdb1ad,"Inotiv, Inc.",2,"CION,TCPC",17.64,Healthcare,6.75,First Lien
+co_9404c1429866,"Ancile Solutions, Inc.",2,"BCIC,CION",17.57,Software & Technology,10.0,First Lien
 co_8bfb1a7cac7a,Core Transformers,2,"MAIN,MSIF",17.41,,5.5,First Lien
 co_5a7451958d4e,Specialty Pharma III Inc.,2,"CGBD,SAR",17.29,Healthcare,4.62,First Lien
 co_fd4c1bdd9c96,CQ Fluency LLC,2,"MAIN,MSIF",17.29,,6.75,First Lien
@@ -834,12 +834,12 @@ co_08c2e2fc7631,Urgent DSO LLC,2,"MAIN,MSIF",16.66,Financial Services,0.0,First 
 co_21446b11f56b,Eagle Family Foods Group LLC,2,"GBDC,OBDC",16.6,Food & Beverage,5.0,First Lien
 co_55a05656c359,HV Watterson Holdings LLC,2,"PNNT,SCM",16.59,,0.0,First Lien
 co_3b5a181e36f7,Armstrong Bidco Ltd.,2,"GBDC,OBDC",16.57,Software & Technology,5.25,First Lien
-co_f043443ebb42,Ivanti Software Inc.,2,"BCIC,PSBD",16.56,Software & Technology,5.65,First Lien
 co_76202d14708e,TSS Buyer LLC,2,"ARCC,NCDL",16.36,Business Services,5.5,First Lien
 co_413cdab0d6c4,GC Champion Acquisition LLC,2,"MRCC,TCPC",16.36,Diversified,5.0,First Lien
 co_826783c2ef3b,FSS Buyer LLC.,2,"BBDC,GBDC",16.3,Software & Technology,4.5,First Lien
 co_5c7293287a3c,Chariot Buyer LLC,2,"ARCC,OBDC",16.26,Industrials,3.12,Other
 co_53cdbd7574ab,Trident Maritime Systems Inc.,2,"BBDC,MRCC",16.13,Aerospace & Defense,6.14,First Lien
+co_f043443ebb42,Ivanti Software Inc.,2,"BCIC,PSBD",16.13,Software & Technology,5.65,First Lien
 co_159ac816aaf6,Lotus Topco Inc.,2,"GBDC,MFIC",16.13,Media & Entertainment,4.75,First Lien
 co_2cb485855809,LDS Intermediate Holdings LLC.,2,"CGBD,GBDC",16.08,Transportation & Logistics,5.0,First Lien
 co_357781e35d40,Ledge Lounger Inc.,2,"PNNT,SCM",15.89,,7.58,First Lien
@@ -852,11 +852,11 @@ co_c81082131ea0,Net Health Acquisition Corp.,2,"CCAP,GBDC",15.63,Software & Tech
 co_d4cc87e8b519,"LABL, Inc.",2,"ICMB,OCSL",15.58,Business Services,5.0,First Lien
 co_a33d4b82a955,World Micro Holdings LLC,2,"MAIN,MSIF",15.57,,0.0,First Lien
 co_5b9799c5098d,HPEP 4 LP.,2,"MAIN,MSIF",15.52,Financial Services,0.0,Other
-co_84f2daabb1d5,DUGGAL Acquisition LLC,2,"PFLT,PNNT",15.49,,4.75,First Lien
-co_0a85b94d175e,Metrc Inc.,2,"BCIC,CION",15.48,Software & Technology,5.5,First Lien
+co_84f2daabb1d5,Duggal Acquisition LLC,2,"PFLT,PNNT",15.49,,4.75,First Lien
+co_0a85b94d175e,Metrc Inc.,2,"BCIC,CION",15.47,Software & Technology,5.5,First Lien
 co_7d372080241b,Caldwell & Gregory LLC,2,"BBDC,NCDL",15.45,Business Services,6.08,First Lien
 co_0186665ccbc8,Healthspan Buyer LLC,2,"NCDL,NMFC",15.45,Healthcare,4.75,First Lien
-co_64ef71cc8b87,VERDE PURCHASER LLC,2,"OBDC,OCSL",15.42,Distribution & Wholesale,4.0,First Lien
+co_64ef71cc8b87,Verde Purchaser LLC,2,"OBDC,OCSL",15.42,Distribution & Wholesale,4.0,First Lien
 co_1e3156434e1c,Collision SP Subco LLC,2,"ARCC,GBDC",15.32,Automotive,4.75,First Lien
 co_ea8fc398b1be,NexRev LLC,2,"MAIN,MSIF",15.32,Financial Services,0.0,Preferred Equity
 co_52187106c9a0,"Plano HoldCo, Inc.",2,"OBDC,PSBD",15.18,Business Services,3.5,First Lien
@@ -875,7 +875,7 @@ co_2bda85b688b4,Safety Borrower Holdings LLC,2,"BXSL,NMFC",14.4,,4.35,First Lien
 co_a2d86a4f954d,Acosta Inc.,2,"OCSL,TSLX",14.4,Media & Entertainment,5.6,First Lien
 co_e6395e26df0a,Secretariat Advisors LLC,2,"CGBD,NMFC",14.37,Business Services,3.0,First Lien
 co_9cc87cbf593b,Armstrong Transport Group LLC,2,"BBDC,NCDL",14.34,Transportation & Logistics,5.0,First Lien
-co_473ac99b3e84,Coreweave Compute Acquisition Co. II LLC,2,"CGBD,GECC",14.26,Software & Technology,9.62,First Lien
+co_473ac99b3e84,CoreWeave Compute Acquisition Co. II LLC,2,"CGBD,GECC",14.26,Software & Technology,9.62,First Lien
 co_7e8be9ce7575,"Skydio, Inc.",2,"HTGC,TCPC",14.23,Aerospace & Defense,0.0,Other Equity
 co_466e0a08d672,"Roscoe Medical, Inc.",2,"MFIC,SAR",14.07,Healthcare,11.0,First Lien
 co_e8d67c621d15,Nerdy Inc.,2,"HTGC,TPVG",14.05,Consumer & Retail,3.5,First Lien
@@ -884,9 +884,9 @@ co_d4f24168cc3e,Vertiv Group Corp.,2,"OBDC,SAR",13.91,Software & Technology,2.67
 co_a88aa22d6c31,PN Buyer Inc.,2,"NCDL,PFLT",13.82,Business Services,4.5,First Lien
 co_ea11a1e96a1f,"Helix Acquisition Holdings, Inc.",2,"ARCC,OBDC",13.78,Industrials,7.0,First Lien
 co_7773d7105071,Jackmont Hospitality Inc.,2,"MAIN,MSIF",13.73,Healthcare,7.0,First Lien
-co_c930920e6a45,Bradshaw International Parent Corp.,2,"BCIC,CION",13.71,Consumer & Retail,5.75,First Lien
 co_b159963796ce,Safe Haven Defense US LLC,2,"PFLT,PNNT",13.71,Aerospace & Defense,5.17,First Lien
-co_a2cf19f238b9,GB EAGLE BUYER INC.,2,"BBDC,CCAP",13.7,Aerospace & Defense,4.5,First Lien
+co_a2cf19f238b9,GB Eagle Buyer Inc.,2,"BBDC,CCAP",13.7,Aerospace & Defense,4.5,First Lien
+co_c930920e6a45,Bradshaw International Parent Corp.,2,"BCIC,CION",13.64,Consumer & Retail,5.75,First Lien
 co_18d6db559849,MoneyThumb Acquisition LLC,2,"MAIN,MSIF",13.62,,0.0,First Lien
 co_b4f329e4c792,Verifone Systems Inc.,2,"OXSQ,SAR",13.6,,5.25,First Lien
 co_1627b72c157b,HW Holdco LLC,2,"BBDC,PFLT",13.57,Software & Technology,5.83,First Lien
@@ -901,7 +901,7 @@ co_27e9144fc6e4,LJ Avalon Holdings LLC,2,"MSDL,PFLT",13.06,Industrials,4.69,Firs
 co_54c4f7f52fa6,Carr Riggs and Ingram Capital LLC,2,"BXSL,MSDL",12.92,Business Services,4.25,First Lien
 co_70406ee95774,Analytical Systems Keco Holdings LLC,2,"MAIN,MSIF",12.82,Financial Services,0.0,First Lien
 co_2ea3206c463d,Zayo Group Holdings Inc.,2,"OCSL,PSBD",12.78,,3.25,First Lien
-co_e659ef862cea,Laseraway Intermediate Holdings II LLC,2,"CCAP,ICMB",12.77,Healthcare,5.75,First Lien
+co_e659ef862cea,LaserAway Intermediate Holdings II LLC,2,"CCAP,ICMB",12.77,Healthcare,5.75,First Lien
 co_9a5871964b8a,LOGIX HOLDING COMPANY LLC,2,"CSWC,SLRC",12.58,Telecommunications,7.5,First Lien
 co_a0cfe7a85c82,Emrld Borrower LP,2,"OBDC,SAR",12.43,Industrials,2.25,First Lien
 co_70f96f38c9a0,Momentum Textiles LLC,2,"BBDC,NCDL",12.21,Consumer & Retail,5.5,First Lien
@@ -922,12 +922,12 @@ co_e1310f2592d0,B+T Group Acquisition Inc.,2,"GAIN,GLAD",11.77,,2.0,First Lien
 co_baf3bda53e97,ALKU Intermediate Holdings LLC,2,"GBDC,NCDL",11.71,Business Services,6.0,First Lien
 co_30f60f9977c8,HEC Purchaser Corp.,2,"CION,PFLT",11.63,,5.0,First Lien
 co_3f14348f3735,Nielsen Consumer Inc.,2,"NMFC,SAR",11.63,Business Services,2.5,First Lien
-co_275acf42f5e5,RN Enterprises LLC,2,"BCIC,CCAP",11.58,Business Services,5.0,First Lien
+co_275acf42f5e5,RN Enterprises LLC,2,"BCIC,CCAP",11.57,Business Services,5.05,First Lien
 co_1948a8954a8f,Davidson Hotel Company LLC,2,"ARCC,NCDL",11.54,Healthcare,5.0,First Lien
 co_85d6a65e161a,Bestow Inc.,2,"TPVG,TRIN",11.47,Insurance,0.0,Other Debt
 co_03426328d4f5,Calpine Corp.,2,"OBDC,SAR",11.46,Energy,1.75,First Lien
 co_507c63dcef80,Illumifin Corp.,2,"GBDC,NCDL",11.43,Insurance,6.0,First Lien
-co_948eb49bd3f4,Roof Opco LLC,2,"MAIN,MSIF",11.39,,8.0,First Lien
+co_948eb49bd3f4,ROOF OPCO LLC,2,"MAIN,MSIF",11.39,,8.0,First Lien
 co_2b0df6f58fee,Jonathan Acquisition Company,2,"BCSF,MSDL",11.25,Aerospace & Defense,7.05,Second Lien
 co_3037929e907c,Aechelon InvestCo LP,2,"PFLT,PNNT",11.13,,0.0,Other Equity
 co_051157374b74,"Carestream Health, Inc.",2,"CION,MFIC",11.11,Healthcare,7.5,First Lien
@@ -952,7 +952,7 @@ co_dea06e88a294,ADCS Clinics Intermediate Holdings LLC,2,"BXSL,GBDC",9.63,Media 
 co_a17b7cd0811e,Global Holdings InterCo LLC,2,"PFLT,PNNT",9.63,,5.6,First Lien
 co_7ef8251d9547,"Filevine, Inc.",2,"GBDC,TPVG",9.61,Business Services,0.0,Preferred Equity
 co_6084a8552a8e,Brookfield WEC Holdings Inc.,2,"OBDC,SAR",9.57,Energy,2.17,First Lien
-co_263bb8f6b702,ViaSat Inc.,2,"OCSL,SAR",9.5,Telecommunications,4.5,First Lien
+co_263bb8f6b702,Viasat Inc.,2,"OCSL,SAR",9.5,Telecommunications,4.5,First Lien
 co_f0d66d3bb5c8,Equine Network LLC,2,"MRCC,SCM",9.47,,6.5,First Lien
 co_a93f2e6c0ad9,Padagis LLC,2,"PSBD,SAR",9.38,,4.75,First Lien
 co_0a950a61284a,Tilley Distribution Inc.,2,"SCM,SLRC",9.29,Distribution & Wholesale,6.0,First Lien
@@ -962,12 +962,11 @@ co_9c3a0716a016,Volusion LLC,2,"MAIN,MSIF",9.15,Financial Services,0.0,Preferred
 co_ca8ffefa9c12,Swoop Intermediate III Inc.,2,"BBDC,NCDL",9.03,Healthcare,4.5,First Lien
 co_c687bbf8341b,"Norvax, LLC",2,"MFIC,OBDC",8.96,Insurance,6.0,First Lien
 co_2285268abca0,Scaled Agile Inc.,2,"BBDC,NCDL",8.89,Business Services,2.25,First Lien
-co_3cc0dcf4ae3c,"QUIKRETE Holdings, Inc.",2,"OBDC,SAR",8.88,Industrials,2.25,First Lien
+co_3cc0dcf4ae3c,"Quikrete Holdings, Inc.",2,"OBDC,SAR",8.88,Industrials,2.25,First Lien
 co_6bc58a374731,Covercraft Parent III Inc.1,2,"GBDC,NCDL",8.82,Automotive,5.0,First Lien
 co_52f63a77e298,Kestra Advisor Services Holdings A Inc.,2,"NMFC,OBDC",8.69,Financial Services,3.0,First Lien
 co_73be5249096e,"AlixPartners, LLP",2,"OBDC,SAR",8.69,Business Services,2.0,First Lien
 co_dea937e8e307,Quantcast Corp.,2,"SLRC,TPVG",8.62,Business Services,5.25,First Lien
-co_3a6958f2a249,Project Castle Inc.,2,"BCIC,CGBD",8.39,Transportation & Logistics,5.5,First Lien
 co_6540cb875202,FedHC InvestCo II LP,2,"PFLT,PNNT",8.38,,0.0,Other Equity
 co_81d49c8742e1,Entomo Brands Acquisitions Inc.,2,"GBDC,NCDL",8.27,Consumer & Retail,5.5,First Lien
 co_26e6fb632c17,Mannkind Corp.,2,"BXSL,MFIC",8.19,Healthcare,5.0,First Lien
@@ -976,12 +975,13 @@ co_660a01a05410,Emerald Technologies Acquisition Co Inc.,2,"MAIN,MSIF",8.17,,6.2
 co_9d8383fcd917,"BW Holding, Inc.",2,"NMFC,TCPC",8.13,Transportation & Logistics,7.42,First Lien
 co_432eab9d3e7f,Ankura Consulting Group LLC,2,"OCSL,PSBD",8.0,Business Services,3.5,First Lien
 co_779b60c57c46,Online Labels Group LLC,2,"CCAP,NCDL",7.96,Materials,5.25,First Lien
-co_779d4aa99736,"REALPAGE, INC.",2,"NMFC,SAR",7.95,Software & Technology,3.5,First Lien
+co_779d4aa99736,"RealPage, Inc.",2,"NMFC,SAR",7.95,Software & Technology,3.5,First Lien
 co_c3c2c6607013,More Cowbell II LLC,2,"BXSL,CGBD",7.92,Financial Services,4.33,First Lien
 co_6636b68e8751,"Great Outdoors Group, LLC",2,"PSBD,SAR",7.91,Financial Services,3.25,First Lien
 co_9e71760ee0a3,Flatworld Intermediate Corp..,2,"CION,MFIC",7.83,Media & Entertainment,0.0,Other
 co_cc8ff89c1256,HemaSource Inc.,2,"BBDC,NCDL",7.82,Healthcare,4.5,First Lien
 co_934daaf98d2d,"Jane Street Group, LLC",2,"OBDC,SAR",7.74,Financial Services,2.0,First Lien
+co_3a6958f2a249,Project Castle Inc.,2,"BCIC,CGBD",7.72,Transportation & Logistics,5.5,First Lien
 co_f9a8fefcf3dd,Datacom LLC,2,"MAIN,MSIF",7.66,Financial Services,0.0,First Lien
 co_913a725def51,Constellis Holdings LLC,2,"FSK,OFS",7.64,Industrials,9.0,First Lien
 co_5c84eaa8a16c,CRAFTY APES LLC,2,"CSWC,ICMB",7.53,Media & Entertainment,6.5,First Lien
@@ -1007,8 +1007,8 @@ co_c77de50d8f8c,Lucky Bucks Holdings LLC.,2,"BCIC,CION",6.54,Healthcare,0.0,Unse
 co_d61f2a3203b2,Fusion Connect Inc.,2,"BCIC,ICMB",6.54,Telecommunications,0.0,Other Equity
 co_eaff027cb55e,Ben Nevis Midco Ltd.,2,"GBDC,TSLX",6.54,Transportation & Logistics,5.5,First Lien
 co_10b178f7afc0,YLG Holdings Inc.,2,"CGBD,NMFC",6.5,Industrials,4.75,First Lien
-co_8558632479f6,EBSC Holdings LLC,2,"BCIC,CION",6.36,Consumer & Retail,0.0,Second Lien
-co_aa2951371aee,CoreTrust Purchasing Group LLC,2,"MFIC,NMFC",6.32,Business Services,5.25,First Lien
+co_8558632479f6,EBSC Holdings LLC,2,"BCIC,CION",6.4,Consumer & Retail,0.0,Second Lien
+co_aa2951371aee,Coretrust Purchasing Group LLC,2,"MFIC,NMFC",6.32,Business Services,5.25,First Lien
 co_ba06f9a7cffd,"NextCar Holding Company, Inc.",2,"HRZN,TRIN",6.27,Transportation & Logistics,5.08,First Lien
 co_6bd17b3e30e5,Oliver Packaging LLC,2,"CCAP,NCDL",6.26,Industrials,6.0,First Lien
 co_b03a76624731,"Unchained Labs, LLC",2,"GBDC,MFIC",6.19,Healthcare,5.5,First Lien
@@ -1017,13 +1017,13 @@ co_51ce61abaebf,Delek US Holdings Inc.,2,"OCSL,SAR",6.1,Energy,3.5,First Lien
 co_2c3cdccbae16,Advarra Holdings Inc.,2,"ARCC,MSDL",6.05,Healthcare,4.5,First Lien
 co_bbccf8a15b3f,Saguaro Buyer LLC,2,"CGBD,GBDC",5.99,Food & Beverage,4.5,First Lien
 co_1b8ea30bf48d,"Pacific Dental Services, LLC",2,"OBDC,SAR",5.96,Healthcare,2.5,First Lien
+co_67c5d830bf61,Live Comfortably Inc.,2,"BCIC,CION",5.95,Consumer & Retail,3.0,First Lien
 co_54f42d5895dd,Froneri International Ltd.,2,"OBDC,SAR",5.9,Food & Beverage,2.0,First Lien
 co_fe73f96fd775,Portofino Labs Inc.,2,"LIEN,TRIN",5.72,Consumer & Retail,6.25,First Lien
 co_6ac753128009,Legacy Service Partners LLC,2,"NCDL,SLRC",5.68,Consumer & Retail,5.25,First Lien
 co_df97931855b9,Watlow Electric Manufacturing Company,2,"OBDC,SAR",5.62,Industrials,3.0,First Lien
 co_4cc1a3045b5f,"Diamondback Acquisition, Inc.",2,"GBDC,OBDC",5.53,Healthcare,4.83,First Lien
 co_40f917daf5d5,VORTEQ Coil Finishers LLC,2,"MAIN,MSIF",5.5,,0.0,Common Equity
-co_67c5d830bf61,Live Comfortably Inc.,2,"BCIC,CION",5.44,Consumer & Retail,3.0,First Lien
 co_558e04b22e35,Medrina LLC,2,"OFS,SLRC",5.33,Healthcare,6.0,First Lien
 co_c5c26f9005ac,Recteq LLC,2,"PFLT,PNNT",5.27,,6.33,First Lien
 co_1a29a00e71d7,Tex Tech Tennis LLC.,2,"MAIN,MSIF",5.24,,0.0,Preferred Equity
@@ -1041,7 +1041,7 @@ co_7c523fbb8fe0,"Emerald Technologies (U.S.) Acquisitionco, Inc.",2,"CION,CSWC",
 co_6f192af7736c,Amynta Agency Borrower Inc.,2,"OCSL,SAR",4.55,Insurance,2.75,First Lien
 co_e2d25c70c2a1,Crane 1 Services Inc.,2,"PFLT,PNNT",4.52,Business Services,5.36,First Lien
 co_90cc6c9de50e,"Dragos, Inc.",2,"HTGC,TCPC",4.5,Software & Technology,5.25,Delayed Draw
-co_961d423ac087,ELECTRON BIDCO INC.,2,"OBDC,SAR",4.49,Healthcare,2.67,First Lien
+co_961d423ac087,Electron Bidco Inc.,2,"OBDC,SAR",4.49,Healthcare,2.67,First Lien
 co_fba996350cd5,OceanSound Discovery Equity LP,2,"PFLT,PNNT",4.47,,0.0,Other Equity
 co_b9268b60a571,WCI-BXC Purchaser LLC,2,"ARCC,SLRC",4.45,Distribution & Wholesale,6.25,Partnership Interest
 co_56d7b3f99347,Ineos US Finance LLC,2,"OBDC,SAR",4.41,Financial Services,3.25,First Lien
@@ -1056,26 +1056,25 @@ co_c2f9d42cea99,EDS Topco LP,2,"PFLT,PNNT",4.02,,0.0,Other Equity
 co_f986e829dcd1,High Bar Brands Operating LLC,2,"GBDC,NCDL",3.95,Automotive,5.25,First Lien
 co_8ffec3464249,Interface Security Systems LLC,2,"MAIN,MSIF",3.87,,8.5,First Lien
 co_d7620f6d3e5a,Sabel InvestCo LP.,2,"PFLT,PNNT",3.75,,0.0,Other Equity
-co_8d2ba346c3dc,"Cloudpay, Inc.",2,"HTGC,RWAY",3.74,Software & Technology,0.0,Warrants
+co_8d2ba346c3dc,"CloudPay, Inc.",2,"HTGC,RWAY",3.74,Software & Technology,0.0,Warrants
 co_d1d6f9aa98c8,Emburse Inc.,2,"MSDL,NCDL",3.74,Software & Technology,4.25,First Lien
 co_abfcbe236c98,Connect Finco SARL,2,"OCSL,SAR",3.67,Alternative Carriers,4.5,First Lien
-co_a58722ab00cf,Resolute Investment Managers Inc.,2,"BBDC,BCIC",3.64,Insurance,0.0,Common Equity
 co_4006f9726c8d,First Brands Group LLC,2,"PSBD,SAR",3.57,Automotive,6.53,First Lien
 co_d7a35f5ce60a,Dayforce Inc.,2,"OBDC,OCSL",3.53,Business Services,2.5,First Lien
-co_45de0f52c0c6,Spark Buyer LLC,2,"BCIC,MSDL",3.48,Industrials,5.25,First Lien
 co_e71d8b8d8325,Univision Communications Inc.,2,"OCSL,SAR",3.45,Media & Entertainment,4.0,First Lien
-co_4a9e5412d3f6,"The Men's Wearhouse, LLC",2,"CION,MFIC",3.33,Consumer & Retail,6.12,First Lien
+co_45de0f52c0c6,Spark Buyer LLC,2,"BCIC,MSDL",3.43,Industrials,5.25,First Lien
+co_f1d2ca05b0c6,The Men's Wearhouse Inc.,2,"CION,MFIC",3.33,Consumer & Retail,6.12,First Lien
 co_444b65c5b298,MIWD Holdco II LLC,2,"OBDC,SAR",3.29,Real Estate,2.75,First Lien
 co_f08e68d34ee5,OSP Embedded Aggregator LP,2,"PFLT,PNNT",3.25,,0.0,Other Equity
+co_a58722ab00cf,Resolute Investment Managers Inc.,2,"BBDC,BCIC",3.23,Insurance,6.5,Common Equity
 co_5f44294c82d2,SSC Dominion Holdings LLC,2,"PFLT,PNNT",3.23,,0.0,Other Equity
 co_8edc281300c6,Pink Lilly Holdco LLC,2,"PFLT,PNNT",3.03,,0.0,First Lien
 co_d6ac89c3e55a,Agiliti Health Inc.,2,"OBDC,SAR",3.01,Healthcare,3.0,First Lien
 co_c66985ad4f42,Citco Funding LLC,2,"OBDC,SAR",2.97,Financial Services,2.75,First Lien
-co_fa3525ef740b,GoTo Group,2,"OFS,SAR",2.96,Software & Technology,4.75,First Lien
+co_fa3525ef740b,GOTO GROUP,2,"OFS,SAR",2.96,Software & Technology,4.75,First Lien
 co_53c71ad5fd84,Boccella Precast Products LLC.,2,"MAIN,MSIF",2.86,,0.0,First Lien
 co_9243eb997b02,New Insight Holdings Inc.,2,"PFLT,PNNT",2.85,Financial Services,0.0,Common Equity
-co_b17e657373e6,Fusion Buyer LLC,2,"BCIC,SAR",2.84,Consumer & Retail,8.0,First Lien
-co_5c7dc2ed7c40,Sierra Hamilton Holdings Corp.,2,"BCIC,NMFC",2.81,Energy,0.0,Other Equity
+co_5c7dc2ed7c40,Sierra Hamilton Holdings Corp.,2,"BCIC,NMFC",2.83,Energy,0.0,Other Equity
 co_ea15378ab55c,Watchtower Holdings LLC,2,"PFLT,PNNT",2.81,,0.0,Other Equity
 co_4948b9b1f9e6,"Conventus Orthopaedics, Inc.",2,"HRZN,SLRC",2.79,Healthcare,6.32,First Lien
 co_1c93e735dec9,Iracore International Holdings Inc.,2,"GSBD,TCPC",2.73,,9.0,Other
@@ -1093,9 +1092,8 @@ co_d65f2d59da22,SIRVA Worldwide Inc.,2,"GECC,MRCC",2.19,Business Services,8.0,Fi
 co_740ce0c3e2ec,Ryan Specialty Group LLC,2,"OBDC,SAR",2.19,Insurance,2.0,First Lien
 co_6f95686c747c,Binswanger Enterprises LLC,2,"MAIN,MSIF",2.12,,0.0,Other Equity
 co_1f7cf6eacd34,Daylight Beta Parent LLC,2,"ARCC,BXSL",2.1,,10.0,First Lien
-co_02e11047a70c,VALIDITY Inc.,2,"BCIC,NCDL",2.07,Software & Technology,5.25,First Lien
+co_02e11047a70c,VALIDITY Inc.,2,"BCIC,NCDL",2.08,Software & Technology,5.25,First Lien
 co_37f1920f88e0,"Olaplex, Inc.",2,"OCSL,SAR",2.02,Consumer & Retail,3.62,First Lien
-co_83695cc71fd2,BLST Operating Company LLC,2,"BCIC,MRCC",1.98,Consumer & Retail,4.25,Second Lien
 co_874509d753b2,Genesee & Wyoming Inc.,2,"OBDC,SAR",1.98,Transportation & Logistics,1.75,First Lien
 co_04d524f7ca96,BL Products Parent,2,"SCM,WHF",1.98,,0.0,Other Equity
 co_5b3d7d963eb0,Axalta Coating Systems US Holdings Inc.,2,"OBDC,SAR",1.83,Chemicals & Materials,1.75,First Lien
@@ -1117,21 +1115,22 @@ co_1b7149013ca6,Copper Trail Fund Investments,2,"MAIN,MSIF",1.03,Financial Servi
 co_2f98cde008aa,CCC Intelligent Solutions Inc.,2,"OBDC,SAR",1.0,Business Services,2.0,First Lien
 co_370f5a68f8c1,Lucidworks Inc.,2,"TRIN,TSLX",0.97,Software & Technology,0.0,First Lien
 co_2d786d83812e,Burgess Point Holdings LP,2,"PFLT,PNNT",0.94,,0.0,Other Equity
-co_53b4f61cb7dd,LSF12 Crown US Commercial Bidco LLC,2,"BXSL,OCSL",0.88,Business Services,3.5,Revolver
+co_53b4f61cb7dd,Lsf12 Crown US Commercial Bidco LLC,2,"BXSL,OCSL",0.88,Business Services,3.5,Revolver
 co_84ee67a444be,CaseWorthy Inc.,2,"MAIN,MSIF",0.87,,0.0,Common Equity
 co_ea488d52e2ec,CF Arch Holdings LLC.,2,"CION,SCM",0.85,,0.0,Other Equity
 co_2076b23f755f,"OfferUp, Inc.",2,"HTGC,TPVG",0.73,Consumer & Retail,0.0,Other Equity
 co_950f04bf6af7,Dalton US Inc.,2,"MAIN,MSIF",0.7,,0.0,Common Equity
 co_19e3f5ef24c1,"Passport Labs, Inc.",2,"TPVG,TSLX",0.69,Media & Entertainment,0.0,Other Equity
-co_d899421faf4a,SDB HOLDCO LLC,2,"GSBD,MSDL",0.6,Healthcare,0.0,Other
+co_d899421faf4a,SDB Holdco LLC,2,"GSBD,MSDL",0.6,Healthcare,0.0,Other
 co_75a48dcc706f,Megawatt Acquisition Partners LLC,2,"PFLT,PNNT",0.6,,0.0,Other Equity
 co_d09606295da9,CareerBuilder LLC,2,"ICMB,SAR",0.58,Business Services,2.5,Other Equity
 co_fa428c66bcda,FS NU Investors LP,2,"CGBD,NCDL",0.44,Consumer & Retail,20.0,Other Equity
+co_83695cc71fd2,BLST Operating Company LLC,2,"BCIC,MRCC",0.23,Consumer & Retail,7.5,Second Lien
 co_c0f668123549,QuantiTech InvestCo II LP,2,"PFLT,PNNT",0.21,,0.0,Other Equity
 co_357900daea43,Grey Orange International Inc.,2,"TCPC,TPVG",0.12,Software & Technology,0.0,Other Equity
 co_083e9e151dad,"Grove Collaborative, Inc.",2,"HTGC,TPVG",0.06,Consumer & Retail,0.0,Common Equity
 co_7c4c5df3615a,Clarius BIGS LLC,2,"MAIN,MSIF",0.02,,0.0,First Lien
-co_fc7f2b466bd8,HDNet Holdco LLC,2,"BCIC,CION",0.0,Media & Entertainment,0.0,Subordinated Debt
+co_fc7f2b466bd8,HDNet Holdco LLC,2,"BCIC,CION",0.0,Media & Entertainment,0.0,First Lien
 co_59dc44249f0b,Galaxy XXVIII CLO Ltd.,2,"CION,PSEC",0.0,Financial Services,0.0,Subordinated Debt
 co_4dcbabc13139,"STATinMED, LLC",2,"CION,CSWC",0.0,Healthcare,0.0,Preferred Equity
 co_c4a5caef13e0,Buca C LLC.,2,"MAIN,MSIF",0.0,,0.0,First Lien
@@ -1187,7 +1186,7 @@ co_8ddcec150a6f,MSC Adviser I LLC,1,MAIN,266.35,,0.0,Other Equity
 co_13563ec0840a,Corfin Holdings Inc.,1,BXSL,262.89,,5.25,First Lien
 co_4b11e20ec3ff,Sunrun Atlas Depositor 2019-2 LLC,1,ARCC,258.4,-,6.9,First Lien
 co_d9f7c58db057,Himalaya TopCo LLC,1,ARCC,253.3,,5.0,First Lien
-co_0746ef48d17e,Commercial services & supplies,1,KBDC,252.93,Business Services,0.0,First Lien
+co_0746ef48d17e,Commercial Services & Supplies,1,KBDC,252.93,Business Services,0.0,First Lien
 co_2bc6b76e8c25,in Securities,1,OXSQ,251.73,Financial Services,0.0,Other
 co_7d22500d8c82,Other Cash and Cash Equivalents,1,BXSL,249.35,,0.0,Other
 co_2b036f3c6844,"BP Veraison Buyer, LLC",1,OBDC,248.0,Food & Beverage,5.25,Revolver
@@ -1247,13 +1246,13 @@ co_004a277e5424,Healthcare Services,1,SAR,163.06,Healthcare,6.25,First Lien
 co_f365b7ba3405,Qualus Power Services Corp.,1,BXSL,162.09,Business Services,5.0,First Lien
 co_9348519c87fb,Computer Services Inc.,1,ARCC,160.4,Software & Technology,4.5,First Lien
 co_8762e2ec70b9,"Armis, Inc.",1,HTGC,159.67,Software & Technology,0.62,First Lien
-co_c73b50451291,Tennessee Bidco Limited 6,1,BXSL,159.56,,5.25,First Lien
+co_7dfe22d3a2df,Tennessee Bidco Limited 2,1,BXSL,159.56,,5.25,First Lien
 co_dcd8a0798102,U.S. Anesthesia Partners Inc.,1,ARCC,158.6,Healthcare,7.5,Second Lien
 co_49ac617ce39e,"The Shade Store, LLC",1,OBDC,158.18,Consumer & Retail,6.2,
 co_0aa933af7b7e,Lignetics Investment Corp.,1,OBDC,157.92,Financial Services,5.6,
 co_6efe9d2391e6,HighPeak Energy Inc.,1,ARCC,156.7,Energy,7.5,First Lien
 co_1f3b3523ea31,Total Armis Inc.,1,HTGC,155.81,Software & Technology,0.0,First Lien
-co_2a574eb2c9ea,Goldman Sachs Financial Square Government Fund Institutional Share Class,1,BCSF,154.64,Aerospace & Defense,0.0,Other
+co_881fe97fe67d,Goldman Sachs Financial Square Government Fund - Institutional Shares^^^,1,BCSF,154.64,Containers & Packaging,0.0,Other
 co_dc363e0540da,Aevex Holdings LLC,1,BXSL,154.41,,6.0,First Lien
 co_c0f84326c836,Eclipse Business Capital LLC,1,BBDC,153.99,Insurance,6.5,Revolver
 co_3c983cbc33c2,Laboratories Bidco LLC,1,ARCC,151.4,,1.58,First Lien
@@ -1261,7 +1260,7 @@ co_3fb1b5c7bc54,Tangoe LLC,1,FSK,151.4,Software & Technology,9.6,First Lien
 co_61a19ef0af2e,"Dresser Utility Solutions, LLC",1,OBDC,150.6,Energy,5.38,
 co_f0029c2b1007,"PCF Midco II, LLC",1,OBDC,150.46,,0.0,
 co_a9dc731a6a51,Med-Metrix,1,FSK,149.4,Software & Technology,4.8,First Lien
-co_1c78bf8813ba,Hg Genesis 9 SumoCo Ltd.,1,OBDC,149.22,Financial Services,6.88,
+co_513ef062b958,Hg Genesis 8 Sumoco Ltd.,1,OBDC,149.22,Financial Services,6.88,
 co_73a704e42665,Valence Surface Technologies LLC,1,OBDC,149.04,Aerospace & Defense,7.75,
 co_5cbdc2baea95,Forward Slope,1,BCSF,148.21,Aerospace & Defense,6.16,First Lien
 co_09cc3deace55,AAG KP Borrower LLC,1,GSBD,147.5,Distribution & Wholesale,5.18,First Lien
@@ -1326,7 +1325,7 @@ co_3603707483e6,TSWT Acquisition Inc.,1,ARCC,117.0,,5.0,Revolver
 co_05354a068fb4,NearMap,1,BCSF,116.96,Software & Technology,4.75,First Lien
 co_3f80c9774b46,DTA Intermediate II Ltd.,1,BXSL,116.9,Media & Entertainment,7.0,First Lien
 co_371d1c926f85,A&R Logistics Inc.,1,BCSF,116.86,Transportation & Logistics,0.0,First Lien
-co_78350470f446,Vetcor Professional Practices LLC,1,FSK,116.4,Healthcare,5.67,First Lien
+co_78350470f446,VetCor Professional Practices LLC,1,FSK,116.4,Healthcare,5.67,First Lien
 co_1b0c8600de2f,Legacy Corporate Lending HoldCo LLC,1,BCSF,115.94,Financial Services,0.0,Other Equity
 co_175aaf5340fa,Empower Payments Investor LLC,1,ARCC,115.8,Financial Services,4.56,First Lien
 co_c179e4d73f52,KKR Altitude II Offshore Aggregator LP,1,FSK,115.7,Industrials,0.0,Other Equity
@@ -1335,7 +1334,7 @@ co_60cb815f795d,Deerfield Dakota Holdings,1,OBDC,115.25,Financial Services,3.0,
 co_a61900ea7719,Teneo Holdings LLC,1,BXSL,115.16,,4.75,First Lien
 co_0ee135319d48,"Peter C. Foy & Associates Insurance Services, LLC",1,OBDC,114.78,Insurance,5.5,
 co_8dc97210aadb,Quirch Foods Holdings LLC,1,ARCC,113.6,Food & Beverage,6.5,First Lien
-co_7018426a584e,Tipalti Solutions ltd.,1,HTGC,113.47,Software & Technology,0.45,First Lien
+co_7018426a584e,Tipalti Solutions Ltd.,1,HTGC,113.47,Software & Technology,0.45,First Lien
 co_f60557e0672f,Total Tipalti Solutions Ltd.,1,HTGC,113.47,Software & Technology,0.0,First Lien
 co_1b273f21a26b,Walnut Parent Inc.,1,ARCC,113.3,,5.75,First Lien
 co_4a115e02d59e,"Global Music Rights, LLC",1,ARCC,112.9,Media & Entertainment,4.5,First Lien
@@ -1415,7 +1414,7 @@ co_a171e8e9e6d6,Liminex Inc.,1,GBDC,94.83,Consumer & Retail,6.0,First Lien
 co_48591380b29a,Dental Care Alliance Inc.,1,FSK,93.4,Healthcare,7.4,First Lien
 co_1af91040d9e1,Legends Hospitality LLC,1,FSK,93.4,Consumer & Retail,5.25,First Lien
 co_d37bf9d82dab,MITY Inc.,1,PSEC,93.38,Business Services,8.01,First Lien
-co_eaed50bb79c2,Italian Motorway Holdings S.à.r.l,1,BXSL,92.53,,5.25,First Lien
+co_637a69b3ce02,Italian Motorway Holdings S.à r.l,1,BXSL,92.53,,5.25,First Lien
 co_3db687660850,Advania Sverige AB,1,FSK,92.5,Software & Technology,4.77,First Lien
 co_b4a81d490042,Gulf Winds International,1,BCSF,92.38,Transportation & Logistics,7.45,First Lien
 co_a958c16a1760,"Corium, Inc.",1,HTGC,92.3,Healthcare,5.7,First Lien
@@ -1509,7 +1508,7 @@ co_4d6decd94b6e,"Route 92 Medical, Inc.",1,RWAY,71.81,Healthcare,7.74,First Lien
 co_c523d7246cc5,"Medical Guardian, LLC",1,MFIC,71.52,Healthcare,5.85,First Lien
 co_c26a82775028,Old World Christmas,1,GAIN,71.5,,9.5,First Lien
 co_44cc0ff5b3a9,Dema/Mai Holdings,1,GAIN,71.45,,11.0,First Lien
-co_85ee9ce3a6c4,Mercury Bidco Globe Limited 2,1,BXSL,71.39,,6.0,First Lien
+co_eefeb3325e9e,Mercury Bidco Globe Limited 1,1,BXSL,71.39,,6.0,First Lien
 co_a2be8877e90d,Precisely Software Inc.,1,PSEC,71.35,Software & Technology,7.25,Second Lien
 co_6c61ceb01386,PayPal Europe Sarl et Cie SCA ABF Equity,1,FSK,70.9,Financial Services,0.0,Other Equity
 co_3f406373d849,Styron Receivables Funding Designated Activity Company (FKA Trinseo Materials) Revolver,1,FSK,70.9,Materials,4.8,First Lien
@@ -1538,8 +1537,8 @@ co_718ab61e2f63,Endurance PT Technology Buyer Corp.,1,ARCC,66.9,Software & Techn
 co_853e88d8c9ce,Utimaco,1,BCSF,66.9,Containers & Packaging,6.02,First Lien
 co_cd28c79a56fc,"Club Car Wash Operating, LLC",1,MFIC,66.69,Automotive,0.0,Other
 co_ea12cee1f2d5,Genetix Biotherapeutics Inc.,1,HTGC,66.66,Healthcare,2.45,First Lien
-co_c11fc3966178,Storm Investment S.a.r.l. Class F redeemable shares,1,ARCC,66.6,Financial Services,0.0,Other Equity
-co_1765b9c28c76,Zocdoc Inc.,1,ARCC,66.5,,5.25,First Lien
+co_5825d1ea01ce,Storm Investment S.a.r.l. Class A redeemable shares,1,ARCC,66.6,Financial Services,0.0,Other Equity
+co_1765b9c28c76,ZocDoc Inc.,1,ARCC,66.5,,5.25,First Lien
 co_2d2e18911947,Turing Holdco Inc.,1,BXSL,66.48,,6.0,First Lien
 co_65e37932808e,"Baker Tilly Advisory Group, LP.",1,OBDC,66.47,Financial Services,4.75,Other Debt
 co_95a551788b7f,Jupiter Refuel Canada Buyer Inc.,1,GSBD,66.34,Business Services,5.22,First Lien
@@ -1598,7 +1597,7 @@ co_2f1848f0df9d,One Call Care Management Inc.,1,FSK,59.9,Healthcare,8.75,First L
 co_e3d98b71390c,Artisan Bidco Inc.,1,TSLX,59.8,Business Services,7.0,First Lien
 co_e3c0b3e538af,SMA Technologies Holdings LLC,1,TSLX,59.58,Software & Technology,6.5,Other Equity
 co_359419487e34,Sweeping Corp.,1,FSK,59.4,Business Services,5.8,First Lien
-co_e37f928b9454,Bestpass Inc.,1,GBDC,59.14,Software & Technology,4.75,First Lien
+co_e37f928b9454,BestPass Inc.,1,GBDC,59.14,Software & Technology,4.75,First Lien
 co_2f1c01642449,"Soleo Holdings, Inc.",1,OBDC,59.1,,4.5,
 co_45c27fb4e92f,"Advancion Holdings, LLC",1,OBDC,59.05,Chemicals & Materials,5.88,
 co_da8661122e38,Echelon Transportation LLC,1,PSEC,59.05,Distribution & Wholesale,0.0,First Lien
@@ -1701,7 +1700,7 @@ co_e4ff71884bc1,ImageWorks Display and Marketing Group,1,GAIN,49.79,Business Ser
 co_1ef5b586b577,J.S. Held Holdings LLC,1,GBDC,49.78,Insurance,4.75,First Lien
 co_bbe3c57d6b02,"CoolSys, Inc.",1,OBDC,49.66,Business Services,4.75,
 co_ee275d64dafc,Restaurant,1,SAR,49.55,Food & Beverage,0.0,Other
-co_cdac4f7391b1,GAPCO AIV Interholdco (CP) LP.,1,ARCC,49.5,,6.75,Subordinated Debt
+co_e6d9336a059d,GAPCO AIV InterHodlco (CP) LP.,1,ARCC,49.5,,6.75,Subordinated Debt
 co_66e7f8de307b,Safe-Guard Products International LLC,1,FSK,49.5,Financial Services,4.8,First Lien
 co_83b67964a8e1,Duraco,1,BCSF,49.4,Chemicals & Materials,6.5,First Lien
 co_8df4ad7e97ac,Eagle Midstream Canada Finance Inc.,1,BXSL,49.4,Energy,5.25,First Lien
@@ -1711,7 +1710,7 @@ co_621444f2ba1a,CBT Nuggets LLC,1,MAIN,48.96,Financial Services,0.0,Other Equity
 co_89c33b4e9ffb,"Dashlane, Inc.",1,HTGC,48.9,Software & Technology,3.05,First Lien
 co_18d37c334c4c,RPL Bidco Ltd.,1,GBDC,48.84,,5.0,First Lien
 co_8184b61fb6ea,Taysha Gene Therapies Inc.,1,TRIN,48.83,Healthcare,4.0,First Lien
-co_2b218fc1a5f4,Gimlet Bidco GmbH 1,1,BXSL,48.74,,5.75,First Lien
+co_76d8e35bf843,Gimlet Bidco GmbH 2,1,BXSL,48.74,,5.75,First Lien
 co_1f4b6a9c5528,Argenbright Holdings V LLC,1,ARCC,48.7,,5.0,First Lien
 co_828d9562592b,HealthDrive Corp.,1,BCSF,48.64,Automotive,6.1,Delayed Draw
 co_097cff3d7bc7,Axonify Inc.,1,TSLX,48.61,Business Services,6.65,First Lien
@@ -1729,7 +1728,7 @@ co_a6e5803c3002,"Recover Together, Inc.",1,HTGC,47.91,Healthcare,1.9,First Lien
 co_b81932effb1d,Marley Spoon SE,1,RWAY,47.86,Consumer & Retail,8.75,First Lien
 co_31d7a0d9ea4c,Bleriot US Bidco Inc.,1,OBDC,47.8,Aerospace & Defense,2.62,
 co_969dbc1bfbc9,Kodiak Cakes LLC,1,GBDC,47.76,Food & Beverage,5.25,First Lien
-co_40cb32a754f9,Spartan Buyer Acquisition Co. 3,1,GBDC,47.69,Software & Technology,7.17,First Lien
+co_d43a04a0d51a,Spartan Buyer Acquisition Co. 1,1,GBDC,47.69,Software & Technology,7.17,First Lien
 co_4dc9657753f8,Fullsteam Holdings LLC,1,FSK,47.6,Software & Technology,5.3,First Lien
 co_e494c8fb4181,Jacent Strategic Merchandising,1,MFIC,47.6,Business Services,0.0,First Lien
 co_4ef500468393,Gatekeeper Systems Inc.,1,BXSL,47.37,,5.0,First Lien
@@ -1850,7 +1849,7 @@ co_da89a2d71a91,"Marigold Group, Inc.",1,HTGC,40.74,Software & Technology,4.75,F
 co_6e9fcd14c1cc,New Benevis Topco LLC,1,NMFC,40.71,,0.0,Common Equity
 co_28488d6111fc,LJ Perimeter Buyer Inc.,1,ARCC,40.7,,6.5,First Lien
 co_95278f1b0864,Service Logic LLC,1,FSK,40.7,Business Services,4.5,First Lien
-co_975aeb035f5e,Clubcorp Holdings Inc.,1,ARCC,40.6,,5.0,First Lien
+co_975aeb035f5e,ClubCorp Holdings Inc.,1,ARCC,40.6,,5.0,First Lien
 co_cbb5b63e6b61,MRHT,1,BCSF,40.53,Financial Services,5.69,Delayed Draw
 co_1b3ba9e3efc8,West Monroe Partners LLC,1,BXSL,40.51,,4.75,First Lien
 co_a63843c65fba,PB Group Holdings LLC,1,GBDC,40.41,Food & Beverage,5.25,First Lien
@@ -1918,6 +1917,7 @@ co_cf46ebcbbd56,TRU FRAGRANCE & BEAUTY LLC,1,CSWC,37.64,Consumer & Retail,6.0,Fi
 co_a93981f5e663,Household products - CREO Group Inc.,1,KBDC,37.64,Consumer & Retail,0.0,First Lien
 co_3e36fd4eba1a,Screenvision LLC,1,BBDC,37.62,Media & Entertainment,6.17,Revolver
 co_0f1bac00a177,Kattegat Project Bidco AB 1,1,BXSL,37.52,,5.5,First Lien
+co_0e49ad6ed18f,Series B - Great Lakes Funding II LLC,1,BCIC,37.51,,0.0,Second Lien
 co_8e514572afb9,PCMI Parent LLC,1,ARCC,37.5,,5.5,First Lien
 co_2fe9a9ea79e7,HP RSS Buyer Inc.,1,ARCC,37.5,,4.81,First Lien
 co_1bd8ea1ab8e3,The Arcticom Group LLC,1,ARCC,37.5,,8.0,First Lien
@@ -1963,7 +1963,6 @@ co_dc7999920b0c,Neurolens Inc.,1,TRIN,35.72,Healthcare,3.5,First Lien
 co_f930a31c58ca,"Thomas Scientific, LLC",1,MFIC,35.66,,0.0,First Lien
 co_10f68e4bce86,Spins LLC,1,FSK,35.6,Software & Technology,4.8,First Lien
 co_516453657c52,Saphilux S.a.r.L.,1,OBDC,35.6,Financial Services,3.25,
-co_0e49ad6ed18f,Series B - Great Lakes Funding II LLC,1,BCIC,35.58,,0.0,Second Lien
 co_f7a997174e2c,Riviera Partners LLC,1,HTGC,35.55,Consumer & Retail,8.28,First Lien
 co_367e0cfd027d,MoonLake Immunotherapeutics,1,HTGC,35.51,Healthcare,1.45,First Lien
 co_36b55c1e09c7,Renewable Technology,1,HTGC,35.44,Environmental Services,2.32,First Lien
@@ -1996,7 +1995,7 @@ co_d9aec07499d3,nFusion Capital Finance LLC,1,SLRC,34.56,Financial Services,7.25
 co_476e14547f95,"SI Holdings, Inc.",1,MFIC,34.55,Chemicals & Materials,0.0,First Lien
 co_27807a40b895,"WellBe Senior Medical, LLC",1,HTGC,34.45,Healthcare,0.75,First Lien
 co_5c102301bb45,Chemicals - TL Atlas Merger Sub Corp.,1,KBDC,34.45,Chemicals & Materials,0.0,First Lien
-co_bacec8c182c8,Omnimax International Inc.,1,MFIC,34.43,Industrials,0.0,First Lien
+co_4b432018d782,"Omnimax International, LLC",1,MFIC,34.43,Industrials,0.0,First Lien
 co_ae1eefc39572,"Fiesta Purchaser, Inc.",1,OBDC,34.42,Food & Beverage,3.08,
 co_831661c9da6e,Health Care Technology ESO Solutions,1,TCPC,34.41,Healthcare,6.75,First Lien
 co_f3cfe04bb5d0,VPROP Operating LLC,1,ARCC,34.4,,9.5,First Lien
@@ -2118,7 +2117,7 @@ co_e38fdf2654bf,Textiles apparel & luxury goods - American Soccer Company,1,KBDC
 co_4b472325a29e,"EET Buyer, Inc.",1,OBDC,30.53,,4.75,
 co_8ea70149e64d,Meyer Laboratory LLC,1,ARCC,30.5,,6.25,Revolver
 co_b8f27d3e22cf,Luxury Asset Capital LLC,1,SLRC,30.5,Financial Services,6.75,First Lien
-co_6d3ad44727c4,BCC Jetstream Holdings Aviation (Off I) LLC,1,BCSF,30.46,Aerospace & Defense,0.0,Other Equity
+co_14260a08d353,BCC Jetstream Holdings Aviation (On II) LLC,1,BCSF,30.46,Containers & Packaging,0.0,Other Equity
 co_3e6e9b556ebb,Romulus Intermediate Holdings 1 Inc.,1,OBDC,30.42,Media & Entertainment,0.0,
 co_caa2a9e170c5,"Autobooks, Inc.",1,RWAY,30.41,Financial Services,7.5,First Lien
 co_94ef6f997397,Spark Purchaser Inc.,1,ARCC,30.4,,5.5,First Lien
@@ -2178,7 +2177,7 @@ co_d30f413ce5eb,"Phantom Purchaser, Inc.",1,OBDC,29.01,,5.0,
 co_e29ac3e75943,"Project Alpine Co-Invest Fund, LP",1,OBDC,28.89,Software & Technology,0.0,
 co_f93694a79a34,CorePower Yoga LLC,1,BCSF,28.88,Containers & Packaging,5.25,First Lien
 co_b903cc7063a4,Galaxy Technologies Holdings,1,GAIN,28.85,,5.55,First Lien
-co_fa864b16ae66,Morgan Stanley Liquidity Funds US Dollar Treasury Liquidity Fund - Institutional Class 4.35%,1,PSBD,28.8,,0.0,Other Equity
+co_116d96bd4ab2,Morgan Stanley Liquidity Funds US Dollar Treasury Liquidity Fund - Institutional Class 4.19%,1,PSBD,28.8,,0.0,Other Equity
 co_350a596d5319,"Sight Sciences, Inc.",1,HTGC,28.77,Healthcare,2.35,First Lien
 co_da05e98908f1,CVAUSA Management LLC,1,SLRC,28.63,Healthcare,5.25,First Lien
 co_38335f907219,"Banner Buyer, LLC",1,MFIC,28.61,Distribution & Wholesale,0.0,First Lien
@@ -2196,14 +2195,14 @@ co_455d2dc6ed47,Hempz,1,BCSF,28.33,Chemicals & Materials,5.25,First Lien
 co_d6425b422f31,NeoGov Newt Holdco Inc.,1,FSK,28.3,Software & Technology,4.5,First Lien
 co_290d33611683,LegitScript LLC,1,MSDL,28.29,Software & Technology,5.75,First Lien
 co_0d21d6dc97dd,MRCC Senior Loan Fund I LLC,1,MRCC,28.24,-,0.0,Other Equity
-co_75e4fe950182,Air Conditioning Specialist Inc.,1,CSWC,28.21,Consumer & Retail,5.5,Revolver
+co_75e4fe950182,AIR CONDITIONING SPECIALIST INC.,1,CSWC,28.21,Consumer & Retail,5.5,Revolver
 co_347062d14212,WRE Sports Investments LLC.,1,ARCC,28.2,Media & Entertainment,0.0,First Lien
 co_f242cd790d5b,Falcon Parent Holdings Inc.,1,BXSL,28.2,,5.0,First Lien
 co_530fdcfa8772,Vendavo Inc.,1,GBDC,28.19,Software & Technology,5.75,First Lien
 co_8c78c7dbb8f3,Healthcare Software and Services,1,SAR,28.18,Healthcare,0.0,Other
-co_163ed76c798f,SellerX Germany GMBH & Co. KG,1,TCPC,28.15,Consumer & Retail,4.2,First Lien
+co_163ed76c798f,SellerX Germany GmbH & Co. KG,1,TCPC,28.15,Consumer & Retail,4.2,First Lien
 co_6473cb9a4458,Europe Other Healthcare Services Zandivio PLC,1,TRIN,28.14,Healthcare,5.3,Other Equity
-co_e6066ce491ae,C&M CONVEYOR Inc.,1,CSWC,28.13,Industrials,7.5,First Lien
+co_e6066ce491ae,C&M CONVEYOR INC.,1,CSWC,28.13,Industrials,7.5,First Lien
 co_12e0f840df0b,Arrow Borrower 2025 Inc.,1,ARCC,28.1,,4.25,First Lien
 co_e60cb14fb442,Poseidon IntermediateCo Inc.,1,ARCC,28.1,Media & Entertainment,4.5,First Lien
 co_b90f53142421,Inhance Parent Inc.,1,GBDC,28.06,Chemicals & Materials,7.0,First Lien
@@ -2230,7 +2229,7 @@ co_b2d9202df35c,MB Precision Investment Holdings LLC,1,PFX,27.56,Financial Servi
 co_541b8bf97f12,Apryse Software Corp.,1,MSDL,27.5,Software & Technology,4.75,First Lien
 co_d03e2404954a,Health care providers & services - Aegis Toxicology Sciences Corp.,1,KBDC,27.43,Healthcare,0.0,First Lien
 co_88e55ee2d422,Health care providers & services - Refocus Management Services,1,KBDC,27.43,Healthcare,0.0,Delayed Draw
-co_f05d770c04e9,Acronis AG,1,MFIC,27.42,,0.0,First Lien
+co_f05d770c04e9,ACRONIS AG,1,MFIC,27.42,,0.0,First Lien
 co_8513bde6932c,Johnnie-O Inc.,1,ARCC,27.4,,6.25,First Lien
 co_9eaf6129b54b,Thrive Buyer Inc.,1,MSDL,27.4,Software & Technology,4.75,First Lien
 co_e869289f7d40,Eventus Buyer LLC,1,TSLX,27.39,Healthcare,5.5,First Lien
@@ -2285,7 +2284,7 @@ co_b20fb5b954a2,Spirit RR Holdings Inc.,1,ARCC,26.4,,4.5,First Lien
 co_d6b66d657cf3,TEI Holdings Inc.,1,BCSF,26.4,Containers & Packaging,4.0,First Lien
 co_2f362ce17526,Area Wide Protective Inc.,1,FSK,26.4,Business Services,4.5,First Lien
 co_667df76be35e,Horizon Facilities Services,1,GAIN,26.39,Business Services,0.5,First Lien
-co_2f494782761d,Alku LLC,1,BXSL,26.38,,5.88,First Lien
+co_2f494782761d,ALKU LLC,1,BXSL,26.38,,5.88,First Lien
 co_d49818ef364a,"OAO Acquisitions, Inc.",1,KBDC,26.38,Distribution & Wholesale,0.0,First Lien
 co_f4bc9ceffcc9,HOWLCO LLC.,1,MAIN,26.38,,6.5,First Lien
 co_ca866bdaf6e4,"Advanced Environmental Monitoring Intermediate, Inc.",1,KBDC,26.37,Environmental Services,0.0,First Lien
@@ -2302,7 +2301,7 @@ co_fefdcdb71779,Networking,1,HTGC,26.26,Telecommunications,1.8,First Lien
 co_e56df2f60cc5,Luxury Goods James Perse Enterprises Inc.,1,TCPC,26.26,Consumer & Retail,6.25,First Lien
 co_1193e92d908e,LSL Holdco LLC,1,OCSL,26.25,,6.0,First Lien
 co_d63f14c93395,Machinery - Eppinger Technologies,1,KBDC,26.24,Industrials,0.0,First Lien
-co_7525802f013f,"HISSHO PARENT, LLC",1,OBDC,26.24,Food & Beverage,4.62,
+co_7525802f013f,"Hissho Parent, LLC",1,OBDC,26.24,Food & Beverage,4.62,
 co_f45399aec4ff,Draken International LLC,1,OCSL,26.24,,5.0,First Lien
 co_4d280f89b738,LPW Group Holdings Inc.,1,BXSL,26.21,,6.0,First Lien
 co_cb404f6b8764,SetPoint Medical Corp.,1,RWAY,26.21,Healthcare,5.75,Warrants
@@ -2352,6 +2351,7 @@ co_e6e35505c493,Pyrotek Special Effects Inc.,1,GAIN,25.18,,8.0,First Lien
 co_747c63427779,Kenco PPC Buyer LLC,1,NCDL,25.17,Transportation & Logistics,4.75,First Lien
 co_c962844dacb6,FirstCall Mechanical Group LLC,1,NCDL,25.16,Industrials,4.75,First Lien
 co_4ad7eb41d807,Bayside OPCP LLC,1,CGBD,25.14,Healthcare,7.88,First Lien
+co_3c0d6b204e98,KCAP Freedom 3 LLC,1,BCIC,25.13,,0.0,Second Lien
 co_397efee3c291,LOV Acquisition LLC,1,GBDC,25.12,Healthcare,4.25,First Lien
 co_de0ea7baa44a,Elevation Services Parent Holdings LLC,1,ARCC,25.1,Business Services,6.5,First Lien
 co_a089f3dfb36a,Star Mountain Diversified Credit Income Fund III LP,1,FSK,25.1,Financial Services,0.0,Other Equity
@@ -2545,7 +2545,7 @@ co_14f810d3d55c,Everbridge Inc.,1,OCSL,21.76,,5.0,First Lien
 co_40ca09d00427,"Jerry Services, Inc.",1,TPVG,21.76,Financial Services,0.0,Other Debt
 co_856ef873b888,Dutch Gold Honey,1,GLAD,21.75,,7.5,First Lien
 co_c1bbdef851a9,U.S. Bank Money Market,1,SAR,21.7,,0.0,Other
-co_e8ecb1875192,Total cash and cash equivalents,1,SAR,21.7,,0.0,Other
+co_e8ecb1875192,Total Cash and Cash Equivalents,1,SAR,21.7,,0.0,Other
 co_ce98f8f60066,QED Technologies International Inc.,1,FDUS,21.66,Financial Services,4.75,First Lien
 co_00252d62231e,EVER.AG Corp.,1,MFIC,21.66,,0.0,First Lien
 co_11eeee9ceb30,GS HVAM Intermediate LLC.,1,MAIN,21.64,Media & Entertainment,6.5,First Lien
@@ -2615,8 +2615,9 @@ co_29f6e1c79d97,Mentoring Software,1,SAR,20.74,Software & Technology,0.0,Other
 co_00c6ae0fa810,"Zoro TopCo, LP.",1,OBDC,20.62,Software & Technology,0.0,
 co_64ef53ba32be,"PINNACLE BUYER, LLC",1,OBDC,20.61,Business Services,2.5,
 co_d6aeb6127a60,AP Plastics Group LLC,1,BCSF,20.56,Chemicals & Materials,4.85,First Lien
-co_2d70489eb341,Keg Logistics LLC,1,BCIC,20.52,Business Services,6.75,First Lien
+co_2d70489eb341,Keg Logistics LLC,1,BCIC,20.54,Business Services,6.75,First Lien
 co_fe427d263088,Raptor US Buyer II Corp.,1,TSLX,20.52,Healthcare,6.25,First Lien
+co_1bc261044dae,American Academy Holdings LLC,1,BCIC,20.49,Healthcare,9.75,First Lien
 co_6710704747a5,Total Access Elevator LLC,1,GLAD,20.47,,6.3,First Lien
 co_bbc1a6a8fa00,Infinite Commerce Holdings LLC,1,TCPC,20.45,Consumer & Retail,0.0,First Lien
 co_ea605c897dd6,Streamline Healthcare Solutions,1,HTGC,20.44,Software & Technology,7.3,First Lien
@@ -2655,8 +2656,7 @@ co_82ce51575517,1251 Insurance Distribution Platform Payco LP,1,CGBD,19.91,Finan
 co_2d2942f4cbb5,HMP Omnimedia LLC. Investment,1,TSLX,19.91,Healthcare,4.75,First Lien
 co_06698a9fdbd1,LBC Woodlands Purchaser LLC,1,ARCC,19.9,,5.0,Revolver
 co_4d03577873ee,"NeuroPace, Inc.",1,MFIC,19.9,,0.0,First Lien
-co_1bc261044dae,American Academy Holdings LLC,1,BCIC,19.88,Healthcare,9.75,First Lien
-co_d58c4b971f6a,Transit Buyer LLC,1,NCDL,19.88,Business Services,5.0,First Lien
+co_d58c4b971f6a,TRANSIT BUYER LLC,1,NCDL,19.88,Business Services,5.0,First Lien
 co_21cd93238df0,BETTER THAN HOME INC.,1,CSWC,19.86,,5.75,Revolver
 co_6b1bab7f9e9d,FINN GmbH,1,RWAY,19.85,Consumer & Retail,8.75,First Lien
 co_d273c7b5bc22,Equity Methods LLC,1,GBDC,19.83,Financial Services,4.75,First Lien
@@ -2734,7 +2734,7 @@ co_72def78a82c5,Multi-Sector Holdings Senior Credit Corp.,1,TRIN,18.76,,0.0,Firs
 co_091f104d9e18,Senior Credit Corp.,1,TRIN,18.76,,0.0,Other
 co_954290b551e3,Verdantas LLC,1,MSDL,18.75,Business Services,6.44,First Lien
 co_e207afd8ef3e,GS HVAM Intermediate LLC,1,SCM,18.74,Media & Entertainment,6.5,First Lien
-co_997c12172f5e,NFM & J LP. (The Facilities Group) 3,1,NCDL,18.73,Environmental Services,5.75,First Lien
+co_b40094bf180f,NFM & J LP. (The Facilities Group) 1,1,NCDL,18.73,Environmental Services,5.75,First Lien
 co_d6dbf3087db5,Blue Bidco Ltd.,1,GBDC,18.72,,5.0,First Lien
 co_c7deb0ccb4ac,Heartland Paving Partners LLC,1,NCDL,18.71,Industrials,5.0,First Lien
 co_2804848da155,Merit Financial Group LLC,1,ARCC,18.7,Financial Services,4.67,Revolver
@@ -2786,7 +2786,7 @@ co_5cefd028d6ed,Knockaway Trinity Holdings LLC,1,TRIN,17.94,Real Estate,9.3,Firs
 co_4dea2a1de439,Honey Intermediate,1,TCPC,17.93,Software & Technology,0.0,First Lien
 co_287b5805f60c,Thrill Holdings LLC.,1,CION,17.91,,6.0,First Lien
 co_854d1a357b98,Route 66 Development Acquisition,1,PNNT,17.91,,9.0,First Lien
-co_a1e4fb74a7ea,MOREGroup Holdings Inc.,1,PFLT,17.89,,5.25,First Lien
+co_a1e4fb74a7ea,MOREgroup Holdings Inc.,1,PFLT,17.89,,5.25,First Lien
 co_9493748ff24e,RXAnte Inc.,1,TRIN,17.89,Healthcare,4.48,First Lien
 co_edcd4c23d078,Source Code Holdings LLC,1,WHF,17.89,,6.5,First Lien
 co_c646a753b83a,ELK Bidco Inc.,1,BXSL,17.87,,4.5,First Lien
@@ -2876,6 +2876,7 @@ co_f529ddd2145d,PCS Software,1,SCM,16.8,Software & Technology,6.0,First Lien
 co_f4b61950ca8e,Sandlot Buyer LLC,1,NCDL,16.79,Healthcare,6.25,First Lien
 co_905c7786110e,Noble Midco 3 Ltd.,1,BXSL,16.77,,4.75,First Lien
 co_c0eaea92420c,VMG Holdings LLC,1,NCDL,16.77,Healthcare,5.0,First Lien
+co_b4c97ba4d18b,Advantage Capital Holdings LLC,1,BCIC,16.76,Insurance,13.0,First Lien
 co_378ef7083def,Kele Holdco Inc.,1,NMFC,16.75,,4.5,First Lien
 co_2181eca8839a,Luminary Roli Ltd.,1,TPVG,16.75,Media & Entertainment,0.0,Other Debt
 co_0ef396d8413a,Imperative Holdings Corp.,1,GLAD,16.72,,9.8,First Lien
@@ -2895,7 +2896,6 @@ co_4fd243cab0b2,LDG ACQUISITION COMPANY LLC,1,CSWC,16.53,,7.0,First Lien
 co_b272b2358c4f,ARMKO LLC,1,CSWC,16.53,Business Services,5.5,Revolver
 co_4c7e087f971c,GTCR F Buyer Corp.,1,ARCC,16.5,,5.0,First Lien
 co_8b5473d8c5c7,"Geosyntec Consultants, Inc.",1,OBDC,16.5,Environmental Services,3.38,
-co_b4c97ba4d18b,Advantage Capital Holdings LLC,1,BCIC,16.48,Insurance,13.0,Subordinated Debt
 co_e3e2cabee991,Zafin Labs Americas Inc.,1,MFIC,16.48,Software & Technology,0.0,First Lien
 co_6b67bbc80689,"Appalachian Resource Company, LLC",1,CION,16.44,,7.5,First Lien
 co_180ffab908ed,Peek Travel Inc.,1,HTGC,16.44,Healthcare,1.75,First Lien
@@ -2972,7 +2972,7 @@ co_0b1d50c48fd9,Aareon AG,1,FSK,15.6,Software & Technology,4.5,First Lien
 co_09cf104c94ed,A-Lign Assurance LLC,1,FSK,15.6,Software & Technology,4.5,First Lien
 co_b07726af7038,BCTO Bluebill Midco Inc.,1,MSDL,15.59,Financial Services,4.5,First Lien
 co_b8ac72e9cdd0,TES Global,1,BCSF,15.58,Containers & Packaging,5.0,Delayed Draw
-co_a05639859d2a,Bynder Bidco B.V. (Netherlands) First Lien Term Loan B Ref SOFR(Q) Floor 1.00% Spread 7.25% Total Coupon 12.57% Maturity 1/26/2029,1,TCPC,15.55,Software & Technology,6.0,First Lien
+co_629d796fff6f,Bynder Bidco B.V. (Netherlands) First Lien Term Loan B Ref SOFR(S) Floor 1.00% Spread 6.00% Total Coupon 10.14% Maturity 1/26/2029,1,TCPC,15.55,Software & Technology,6.0,First Lien
 co_cf5347eec68e,Forest Products Alpine Acquisition Corp.,1,TCPC,15.55,Containers & Packaging,6.15,First Lien
 co_2ae828cef9e2,Gravie Inc.,1,TRIN,15.55,Insurance,4.5,First Lien
 co_c23aebf7778d,"Hydrow, Inc.",1,TPVG,15.54,Consumer & Retail,0.0,Other Debt
@@ -3070,7 +3070,7 @@ co_ea3c938fd2d1,"Moda Operandi, Inc.",1,TPVG,14.65,,0.0,Other Debt
 co_ee08900c64bf,L&S Mechanical Acquisition LLC,1,BXSL,14.64,,6.25,First Lien
 co_ecef5e0668a6,Onyx CenterSource Inc.,1,GSBD,14.64,,5.25,First Lien
 co_c6b36cdabde6,United Flow Technologies Intermediate Holdco II LLC,1,MSDL,14.64,Business Services,5.25,First Lien
-co_d8227968b4ba,XpressMyself.com LLC,1,NCDL,14.64,Consumer & Retail,5.62,First Lien
+co_d8227968b4ba,Xpressmyself.com LLC,1,NCDL,14.64,Consumer & Retail,5.62,First Lien
 co_97c7ef5de843,Spartan Bidco Pty Ltd.,1,TCPC,14.63,Software & Technology,6.65,First Lien
 co_d28c6e843afc,Unity Purchaser LLC,1,ARCC,14.6,,4.75,First Lien
 co_44d744bf2ea9,Commonwealth Fusion Systems LLC,1,TRIN,14.6,Software & Technology,0.0,First Lien
@@ -3108,14 +3108,12 @@ co_6c3fc47857a3,"Cabi, LLC",1,CION,14.26,,6.0,First Lien
 co_08f4c3917860,OpenMarket Inc.,1,TCPC,14.25,Telecommunications,5.75,First Lien
 co_d5bf45b1b4be,Phoenix Finance Inc.,1,OCSL,14.23,Financial Services,8.25,First Lien
 co_d9badac63628,Percheron Horsepower-A LP,1,OBDC,14.21,Automotive,0.0,Other Equity
-co_db834d01e7f2,Synamedia Americas Holdings Inc.,1,BCIC,14.2,Media & Entertainment,6.5,First Lien
 co_6aca3af6a8f4,Civica Group Ltd.,1,FSK,14.2,Software & Technology,5.5,First Lien
 co_3f4400eb2c67,Wittur Holding GmbH Common Stock,1,FSK,14.2,Industrials,0.0,Other Equity
 co_4b69452bc23a,Augmented Reality Concepts Inc.,1,TRIN,14.2,Artificial Intelligence & Automation,7.3,First Lien
-co_e35dc7b5524b,Money Transfer Acquisition Inc.,1,BCIC,14.19,Financial Services,8.25,First Lien
 co_8c896ccfa13f,Inoapps Bidco LLC,1,SCM,14.19,,5.75,First Lien
 co_daaf35e11836,BlueMatrix Holdings LLC.,1,GBDC,14.17,Financial Services,4.75,First Lien
-co_ca053f19c8be,MVC Automotive Group GmbH,1,BBDC,14.14,Automotive,0.0,Common Equity
+co_ca053f19c8be,MVC Automotive Group Gmbh,1,BBDC,14.14,Automotive,0.0,Common Equity
 co_085a6466151d,ProcessUnity Holdings LLC,1,GBDC,14.14,Software & Technology,6.5,First Lien
 co_b9a38a6989c3,Nvent Electric Public Limited Company,1,OBDC,14.14,Business Services,3.5,
 co_e155a794aed2,Merative Topco LP.,1,TSLX,14.13,Healthcare,0.0,Other Equity
@@ -3129,6 +3127,7 @@ co_e6f1bef0ef0f,Registrar Intermediate LLC,1,ARCC,14.0,-,5.0,First Lien
 co_0500de7a5e04,Whitcraft Holdings Inc.,1,BBDC,13.99,Aerospace & Defense,5.0,Revolver
 co_d581a30d04c7,Nova Farms,1,LIEN,13.98,Agriculture,6.5,First Lien
 co_f9df34e83ace,Tinuiti Inc.,1,NCDL,13.98,Media & Entertainment,5.25,First Lien
+co_e35dc7b5524b,Money Transfer Acquisition Inc.,1,BCIC,13.96,Financial Services,8.25,First Lien
 co_3a114282aae8,Supply Network Visibility Holdings LLC,1,HRZN,13.96,Software & Technology,4.25,First Lien
 co_f8ad2194a5f1,"Mario Midco Holdings, Inc.",1,OBDC,13.96,Consumer & Retail,10.75,
 co_922c33ffadd0,Altvia MidCo,1,SAR,13.96,,8.08,First Lien
@@ -3151,7 +3150,6 @@ co_2ecc38e3fb51,Arrow Management Acquisition LLC,1,CCAP,13.75,Healthcare,5.0,Oth
 co_b0716a87e0d3,"Ceribell, Inc.",1,HRZN,13.75,Healthcare,2.75,First Lien
 co_6a782f28ae8d,Orion Advisor Solutions Inc.,1,OBDC,13.75,Financial Services,3.5,
 co_5e37d2107abc,Renaissance Holding Corp.,1,OCSL,13.75,Education,4.0,First Lien
-co_19dc1018e0d4,BetaNXT Inc.,1,BCIC,13.74,Insurance,5.12,First Lien
 co_a0792f62353d,Flowery - Bill's Nursery,1,LIEN,13.73,,11.0,First Lien
 co_cf8a0bd7ff51,PromptCare Intermediate LP,1,CCAP,13.72,Healthcare,6.0,First Lien
 co_f0659ec84a89,ESN Venture Holdings LLC,1,GBDC,13.71,Food & Beverage,6.26,First Lien
@@ -3163,7 +3161,7 @@ co_2bcc1def71ed,Viva Railings LLC,1,GLAD,13.66,,6.4,First Lien
 co_eeb61b9856aa,Pacific Purchaser LLC,1,PFLT,13.66,,6.25,First Lien
 co_9753633ace51,CFS Management LLC,1,NMFC,13.62,Business Services,6.25,First Lien
 co_c0fae7b3d92d,COP Collisionright Parent LLC,1,MSDL,13.61,Automotive,4.75,First Lien
-co_2fda31ab8433,PDDS Holdco Inc.,1,ARCC,13.6,,6.0,First Lien
+co_2fda31ab8433,PDDS HoldCo Inc.,1,ARCC,13.6,,6.0,First Lien
 co_19e0a39bfbbf,Excel Fitness Consolidator LLC,1,ARCC,13.6,Healthcare,4.75,First Lien
 co_9fc4ebffbb31,Machinery - MRC Keystone Acquisition LLC,1,KBDC,13.6,Industrials,0.0,First Lien
 co_a5bd0cfd5eae,NGS-WCS Group Holdings - JFL-NGS-WCS Partners LLC,1,PFX,13.6,,0.0,First Lien
@@ -3199,6 +3197,7 @@ co_89f28aabc9f9,W50 Holdings LLC,1,FDUS,13.32,Financial Services,0.0,Subordinate
 co_9513bac2629e,Zero Case Holding Inc.,1,GLAD,13.32,,6.4,First Lien
 co_d093dc8bc4d1,CAMPANY ROOF MAINTENANCE LLC,1,CSWC,13.31,Industrials,9.0,Revolver
 co_563819fe3bed,Curion Holdings LLC,1,SCM,13.3,,6.5,First Lien
+co_19dc1018e0d4,BetaNXT Inc.,1,BCIC,13.28,Insurance,5.0,First Lien
 co_ffe31fde28ba,Fifty U.S. Bidco Inc.,1,BCSF,13.27,Containers & Packaging,5.0,First Lien
 co_ec7f81618eda,Thrust Flight LLC,1,FDUS,13.26,Financial Services,5.75,First Lien
 co_f7cf9f9622b2,Applause App Quality,1,TCPC,13.25,Business Services,5.75,Revolver
@@ -3217,12 +3216,12 @@ co_517fe1547cac,BNZ TopCo B.V.,1,ARCC,13.1,,6.75,Subordinated Debt
 co_3d914facc970,Destiny Solutions U.S. Inc.,1,MFIC,13.1,,0.0,First Lien
 co_ba827071066f,Evriholder Acquisition,1,SCM,13.1,,6.75,First Lien
 co_334b6b89b3a3,SPAR Marketing Force Inc.,1,SLRC,13.1,Media & Entertainment,1.9,First Lien
-co_a4097ce99da6,Tolemar Acquisition Inc.,1,OFS,13.09,,6.0,First Lien
+co_a4097ce99da6,Tolemar Acquisition INC.,1,OFS,13.09,,6.0,First Lien
 co_fcbf1e9b3e6b,Forest Products FSK Pallet Holding Corp.,1,TCPC,13.09,Containers & Packaging,6.65,First Lien
 co_ba7b5dc49368,TCFIII Owl Finance LLC,1,BCSF,13.08,Financial Services,0.0,Subordinated Debt
 co_a9906ab1deb4,ETE Intermediate II LLC,1,PFLT,13.07,Media & Entertainment,5.0,First Lien
 co_b5653d01b9d0,Other Omnigo Software LLC,1,TSLX,13.05,Software & Technology,5.0,First Lien
-co_94af0a235a7d,Confine Visual Bidco 2,1,BXSL,13.04,,5.75,First Lien
+co_1867771b8160,Confine Visual Bidco 1,1,BXSL,13.04,,5.75,First Lien
 co_31ada3f05486,King Risk Partners LLC,1,ARCC,13.0,,4.5,First Lien
 co_89c9d1194140,NEW SKINNY MIXES LLC,1,CSWC,13.0,,8.0,Revolver
 co_92375f5cfa64,New Permian Holdco Inc.,1,NMFC,13.0,,0.0,Other Equity
@@ -3295,14 +3294,13 @@ co_f30dac0754e0,Zeppelin US Buyer Inc.,1,ARCC,12.3,,4.75,Other
 co_6a3600eb9ea0,Turnpoint Services Inc.,1,FSK,12.3,Industrials,5.0,First Lien
 co_75b314fbadd7,Teaching Company The,1,GBDC,12.29,Business Services,5.75,First Lien
 co_52817403f47a,te Inc.,1,PNNT,12.27,Media & Entertainment,5.0,First Lien
-co_3c0d6b204e98,KCAP Freedom 3 LLC,1,BCIC,12.26,,0.0,Second Lien
 co_9f4d1348dc1c,SpecialtyCare Inc.,1,BXSL,12.26,,4.38,First Lien
 co_7670d29af630,The Bluebird Group LLC,1,PFLT,12.26,,5.9,First Lien
 co_b7ac56402d2e,IVUEIT LLC,1,CSWC,12.23,,6.0,Revolver
 co_7f83b3f968ae,Persado Inc.,1,TCPC,12.21,Software & Technology,7.5,First Lien
 co_2ca82f207b21,Patagonia Hold co LLC,1,WHF,12.21,,5.75,First Lien
 co_15797131e5d1,PROS Holdings Inc.,1,FSK,12.2,Software & Technology,4.8,First Lien
-co_3cbecb8203a2,Formstack Acquisition Co 3,1,MSDL,12.2,Software & Technology,5.5,First Lien
+co_7efadcf8a818,Formstack Acquisition Co 2,1,MSDL,12.2,Software & Technology,5.5,First Lien
 co_13729fd15249,Metal Supermarkets US Buyer LLC.,1,GBDC,12.18,Food & Beverage,4.75,First Lien
 co_54b1901d82fc,Trident TPI Holdings Inc.,1,OCSL,12.17,Chemicals & Materials,3.75,First Lien
 co_cad32299dd17,MONROE BIOMEDICAL RESEARCH LLC,1,CSWC,12.14,Healthcare,6.0,Revolver
@@ -3318,7 +3316,7 @@ co_804e24f9211f,Propio LS LLC,1,CGBD,12.07,Healthcare,4.75,First Lien
 co_b9668b192bc4,BusPatrol Holdco,1,MFIC,12.06,Software & Technology,0.0,First Lien
 co_84d7a8d4cd86,PLZ Corp.,1,NCDL,12.06,Business Services,7.5,First Lien
 co_6c03cce4a4d5,HEAT TRAK LLC,1,CSWC,12.05,,10.0,First Lien
-co_ffe25c80a363,TCFI Aevex LLC,1,CGBD,12.04,Aerospace & Defense,6.0,First Lien
+co_ffe25c80a363,TCFI AEVEX LLC,1,CGBD,12.04,Aerospace & Defense,6.0,First Lien
 co_0ac1d186fa63,Renaissance Buyer LLC,1,NCDL,12.04,Financial Services,5.25,First Lien
 co_5a6d15312399,RKD Group LLC,1,BBDC,12.03,Business Services,5.5,Revolver
 co_eae50d6e6f13,WWEC Holdings III Corp.,1,BBDC,12.03,Energy,5.0,Revolver
@@ -3361,7 +3359,7 @@ co_a978ef18408e,"AI Aqua Merger Sub, Inc.",1,OBDC,11.77,Distribution & Wholesale
 co_253d28db50eb,"BDO USA, P.A.",1,MFIC,11.73,Business Services,0.0,First Lien
 co_3621c1bfb648,The Hardenbergh Group Inc.,1,SCM,11.73,,6.5,First Lien
 co_f532ebcca089,Shoulder Innovations Inc.,1,TRIN,11.73,Healthcare,3.5,First Lien
-co_73bae9214746,Ameriwater LLC,1,FDUS,11.71,Financial Services,6.25,First Lien
+co_73bae9214746,AmeriWater LLC,1,FDUS,11.71,Financial Services,6.25,First Lien
 co_281d53e6711e,RB Holdings InterCo LLC,1,ARCC,11.7,,5.0,Revolver
 co_b5ea20bf955d,11852604 Canada Inc.,1,CGBD,11.7,Healthcare,9.5,First Lien
 co_3b7727872a2d,G 3 Chickadee Purchaser LLC,1,BBDC,11.67,Chemicals & Materials,5.75,First Lien
@@ -3393,7 +3391,6 @@ co_e84a4cf99b75,Tau Buyer LLC,1,NCDL,11.42,Business Services,4.75,First Lien
 co_458ada2f1b44,CDC DENTAL MANAGEMENT CO. LLC,1,CSWC,11.39,Healthcare,7.5,First Lien
 co_0f7aa64828e0,"HEF Safety Ultimate Holdings, LLC",1,MFIC,11.39,,0.0,First Lien
 co_fd4562b831e0,Bond Lux HoldCo S.à r.l.,1,BXSL,11.38,,5.0,First Lien
-co_10aea602d45a,C.P. Converters Inc.,1,BCIC,11.37,Chemicals & Materials,0.0,First Lien
 co_b3bb2f38f8fd,URS Topco LLC,1,CION,11.37,,0.0,Other Equity
 co_580976527c47,KINDRED PET SERVICE LLC,1,CSWC,11.37,Consumer & Retail,6.5,Revolver
 co_cd558ca0a340,Bioplan USA Inc.,1,ICMB,11.37,Containers & Packaging,7.75,Other Equity
@@ -3469,7 +3466,7 @@ co_9652f06d94bc,THE PRODUCTO GROUP LLC,1,CSWC,10.78,Industrials,0.0,Common Equit
 co_cdda9834a0e0,SFR Holdco LLC,1,MRCC,10.77,Real Estate,0.0,First Lien
 co_c370a1674f79,ASP Conair Holdings LP,1,OBDC,10.77,Consumer & Retail,0.0,
 co_7c5117350ed8,Amalfi Midco,1,BBDC,10.76,Healthcare,0.0,Second Lien
-co_968994ed9f5c,SCP Eye Care HoldCo LLC,1,CGBD,10.76,Healthcare,5.5,Other
+co_968994ed9f5c,SCP Eye Care Holdco LLC,1,CGBD,10.76,Healthcare,5.5,Other
 co_be5f30491017,Overhaul Group Inc.,1,MFIC,10.74,Business Services,0.0,First Lien
 co_f3d6da539cd1,Learfield Communications LLC,1,OCSL,10.71,,4.75,First Lien
 co_88a83e3274ea,Project Alliance Buyer LLC,1,ARCC,10.7,,5.0,First Lien
@@ -3487,7 +3484,7 @@ co_f909bf820f1e,BNI Global LLC,1,BBDC,10.6,Business Services,5.5,First Lien
 co_f46e59eea9e7,Consilium Safety Group AB,1,FSK,10.6,Industrials,5.5,First Lien
 co_593c9db3975f,Heartland Business Systems LLC,1,SCM,10.6,,6.25,First Lien
 co_5586cc7b2740,MGT Merger Target LLC,1,WHF,10.6,,4.75,Delayed Draw
-co_a472bc28d7de,Groundworks LLC,1,NMFC,10.59,Business Services,2.4,First Lien
+co_a472bc28d7de,GroundWorks LLC,1,NMFC,10.59,Business Services,2.4,First Lien
 co_8a5b25ddf278,IT Parent,1,TCPC,10.59,Insurance,5.32,First Lien
 co_dfa8743a7fad,"Traffic Management Solutions, LLC",1,MFIC,10.57,Business Services,0.0,First Lien
 co_d49e1bf83cc8,Boca Home Care Holdings Inc.,1,OFS,10.57,,6.5,First Lien
@@ -3533,6 +3530,7 @@ co_f6b8bdb53127,Fund Cash & Cash Equivalent and GS Financial Square Government F
 co_7bd7fd6de51f,"Project Hotel California Co-Invest Fund, LP.",1,OBDC,10.25,Healthcare,0.0,
 co_9ea3d1c0dfe3,Busbot Inc.,1,TRIN,10.24,Insurance,11.5,First Lien
 co_9c7f9aa523cd,Magnesium BorrowerCo Inc.,1,BXSL,10.23,,4.5,First Lien
+co_db834d01e7f2,Synamedia Americas Holdings Inc.,1,BCIC,10.22,Media & Entertainment,6.25,First Lien
 co_a20de951f3d2,Iris Holding Inc.,1,BCSF,10.21,Containers & Packaging,0.0,First Lien
 co_29caee5ef8d6,MBH Management LLC,1,SCM,10.21,Business Services,5.0,First Lien
 co_ce8e31042a27,Edmunds Govtech Inc.,1,ARCC,10.2,,4.25,Revolver
@@ -3576,7 +3574,7 @@ co_c0e2bdd1c240,Compost 360 Acquisition LLC,1,SCM,9.9,,7.17,First Lien
 co_bdc8dec7796b,Akeyless Security Ltd.,1,HTGC,9.89,Software & Technology,4.0,First Lien
 co_aa963dfe6028,"K&N Parent, Inc.",1,CION,9.88,Automotive,8.12,First Lien
 co_e272575d71e7,Univar (Windsor Holdings LLC) -First lien senior secured loan - SOFR,1,KBDC,9.88,Distribution & Wholesale,0.0,First Lien
-co_f2fe5cbf4c0f,Fluent Corp.,1,LIEN,9.88,,12.0,First Lien
+co_f2fe5cbf4c0f,FLUENT Corp.,1,LIEN,9.88,,12.0,First Lien
 co_610650db712e,"UST Holdings, Ltd.",1,OBDC,9.88,Software & Technology,3.0,
 co_33db1dd7419f,Morrow Sodali Global LLC,1,BCSF,9.87,Financial Services,0.0,First Lien
 co_c721dc10ee64,Perimeter Master Note Business Trust,1,BBDC,9.86,Consumer & Retail,0.0,Other Equity
@@ -3584,7 +3582,7 @@ co_85fab5d2740f,RODIZIO OPCO LLC,1,CSWC,9.85,Food & Beverage,6.5,Revolver
 co_4ea1cff364c4,Buyco LLC,1,PFLT,9.85,Media & Entertainment,5.75,First Lien
 co_a6d739090c40,Premium Invest,1,BBDC,9.84,Insurance,5.75,First Lien
 co_c874798f8ede,INDINERO GROUP INC.,1,CSWC,9.84,Financial Services,0.0,Revolver
-co_2f298081f0cf,Shearer's Foods Inc.,1,OXSQ,9.84,Food & Beverage,0.0,First Lien
+co_e5893f540105,"Shearer's Foods, LLC",1,OXSQ,9.84,Food & Beverage,0.0,First Lien
 co_a2391facee3b,Intelligent Protection Management Corp.,1,NEWT,9.83,Business Services,0.0,Other
 co_03de7a9090db,"Altar Bidco, Inc.",1,OBDC,9.83,Industrials,3.1,
 co_95dd01150df8,Atlas Ontario LP,1,CGBD,9.82,Business Services,0.0,Other Equity
@@ -3606,7 +3604,7 @@ co_f180c82319de,Lightspeed Solution LLC,1,MSDL,9.76,Consumer & Retail,6.0,First 
 co_32857aa2e65d,Caregiver,1,BCSF,9.75,Containers & Packaging,0.0,Subordinated Debt
 co_0489593469b8,Club Champion LLC,1,MFIC,9.75,Consumer & Retail,0.0,First Lien
 co_1f56c9893e25,Wilsonart LLC,1,OCSL,9.75,Industrials,4.25,First Lien
-co_847112b3c66d,"Infobionic, Inc.",1,HRZN,9.74,Healthcare,4.83,First Lien
+co_847112b3c66d,"InfoBionic, Inc.",1,HRZN,9.74,Healthcare,4.83,First Lien
 co_9893d378e574,Golden Bear 2016-R LLC,1,MFIC,9.74,,0.0,Other
 co_bf0429f045ce,AdThrive,1,BCSF,9.73,Containers & Packaging,4.36,First Lien
 co_1b0474d28f7d,Informatics Holdings Inc.,1,FDUS,9.71,Financial Services,6.5,First Lien
@@ -3628,7 +3626,7 @@ co_1ec94150115a,Multi-Sector Holdings Trinity Capital Adviser LLC,1,TRIN,9.59,,0
 co_a8f86e010a5f,Control Investments Trinity Capital Adviser LLC,1,TRIN,9.59,Financial Services,0.0,Other
 co_6f6f79e9f43a,Victory Buyer LLC,1,BXSL,9.57,,7.0,First Lien
 co_d58e4f79a80f,Vienna Bidco Ltd.,1,CGBD,9.57,Healthcare,5.65,First Lien
-co_0af2df679f08,US Bank National Association Series 2025-2,1,BBDC,9.56,Consumer & Retail,7.25,Other Equity
+co_3586e00a5369,US Bank National Association Series 2025-1,1,BBDC,9.56,Consumer & Retail,7.25,Other Equity
 co_b783e9ddac44,HBWM Holdings LLC,1,NMFC,9.56,,4.0,Common Equity
 co_6c5a698f7d7c,Arora Engineers,1,PFX,9.55,Industrials,0.0,First Lien
 co_7722adcec940,Onsight Industries LLC,1,FDUS,9.54,Financial Services,5.5,First Lien
@@ -3688,7 +3686,7 @@ co_4e6c0c5c95de,"City Line Distributors, LLC",1,ARCC,9.1,Distribution & Wholesal
 co_6dd4b2134218,Badia Spices LLC,1,ARCC,9.1,Food & Beverage,4.25,First Lien
 co_9898ccea998d,BKF Buyer Inc.,1,BBDC,9.1,Industrials,5.0,Revolver
 co_0602d5c04b4c,WhiteWater Express,1,BCSF,9.09,Containers & Packaging,0.0,Subordinated Debt
-co_87df1df63dd3,Northstar Group Services Inc.,1,ICMB,9.09,Business Services,3.12,Other Equity
+co_87df1df63dd3,NorthStar Group Services Inc.,1,ICMB,9.09,Business Services,3.12,Other Equity
 co_211e2860fcc5,KL Bronco Acquisition Inc.,1,NCDL,9.09,Consumer & Retail,5.75,First Lien
 co_2b322698bc98,Knowledge Pro Buyer Inc.,1,BXSL,9.06,,5.0,First Lien
 co_99fea83476c0,Ultimus Group Midco LLC,1,NMFC,9.06,,4.75,First Lien
@@ -3702,7 +3700,7 @@ co_52baf4910498,Tasty Chick'n LLC,1,MFIC,9.02,,0.0,Delayed Draw
 co_750c04586a5c,Vatica Health Inc.,1,BCSF,9.01,Containers & Packaging,4.75,Revolver
 co_1c60eb492f03,Specialty Building Products Holdings,1,PSBD,9.01,Financial Services,3.75,First Lien
 co_f4e4028ade6a,"Eagle Purchaser, Inc.",1,MFIC,8.99,Business Services,0.0,Other
-co_c0cbd413e718,FitOn Inc.,1,TPVG,8.99,Consumer & Retail,0.0,Other Debt
+co_c0cbd413e718,Fiton Inc.,1,TPVG,8.99,Consumer & Retail,0.0,Other Debt
 co_92e533f256e4,"Madison IAQ, LLC",1,OBDC,8.98,Industrials,2.88,
 co_465daff3d745,Aphix Buyer Inc.,1,PFLT,8.98,,4.75,First Lien
 co_b27405a4a68c,Applied Digital Corp.,1,TRIN,8.98,Artificial Intelligence & Automation,0.0,First Lien
@@ -3714,7 +3712,7 @@ co_5e6c81858523,New Look Vision Group,1,BCSF,8.88,Containers & Packaging,5.44,De
 co_28cc6284bdd0,BCP Great Lakes II - Series A Holdings LP,1,CION,8.88,Financial Services,0.0,Other
 co_a9a929364a64,"Natural Partners, LLC",1,OBDC,8.88,,4.5,
 co_39f2329e7430,AMII Acquisition LLC,1,SCM,8.88,,4.5,First Lien
-co_e446803b73f2,MH SUB I LLC,1,NMFC,8.87,Business Services,4.25,First Lien
+co_e446803b73f2,MH Sub I LLC,1,NMFC,8.87,Business Services,4.25,First Lien
 co_c8a326c543e0,Texada Software LLC,1,MFIC,8.86,Software & Technology,0.0,First Lien
 co_13e6c0c9d05b,Senior Secured Asurion,1,PSBD,8.86,Financial Services,5.25,Second Lien
 co_539456b253e3,Victors CCC Buyer LLC,1,NCDL,8.85,Business Services,4.75,First Lien
@@ -3748,12 +3746,12 @@ co_4efc34a9fe0b,"Shift4 Payments, LLC",1,OBDC,8.69,Business Services,2.75,
 co_30cc3c906f52,PANOS Brands,1,WHF,8.69,,5.75,First Lien
 co_bbe3a5c5490e,CHVAC Services Investment LLC.,1,GBDC,8.68,Consumer & Retail,4.5,First Lien
 co_3da120cceec8,Leisure products - TG Parent Newco LLC,1,KBDC,8.68,Healthcare,0.0,First Lien
-co_90ff6b845f08,Accurate Background LLC,1,BCIC,8.67,Business Services,6.0,First Lien
 co_821374497f96,NM YI LLC,1,NMFC,8.67,"New Permian Holdco, L.L.C.",0.0,Other Equity
 co_aa0ab4c9386c,ICG US CLO 2021-3 Ltd.,1,OFS,8.67,,0.0,Subordinated Debt
 co_9883ef3c36b5,Revenue Recovery Holdings LLC,1,MAIN,8.66,,0.0,First Lien
 co_356ecbdfc662,Bioderm Inc.,1,PFLT,8.66,,6.5,First Lien
 co_9a9966b152e2,"Havenly, Inc.",1,HRZN,8.65,Software & Technology,4.25,First Lien
+co_90ff6b845f08,Accurate Background LLC,1,BCIC,8.64,Business Services,6.0,First Lien
 co_8c58db227edd,OHCP V TC COI,1,BXSL,8.64,,0.0,Partnership Interest
 co_093bd2a432cd,"Del-Air Heating, Air Conditioning & Refrigeration, LLC",1,KBDC,8.64,Consumer & Retail,0.0,First Lien
 co_fe129c2b417b,Ichor Management Ltd.,1,MFIC,8.64,Business Services,0.0,First Lien
@@ -3771,7 +3769,7 @@ co_6363e776c647,Trading Companies & Distributors Xenon Arc Inc.,1,ICMB,8.58,Dist
 co_38b0fd8f50fa,Apidos CLO XXII,1,PSEC,8.58,Financial Services,0.0,Subordinated Debt
 co_c35ea5f69c24,Elder Care Opco LLC,1,SCM,8.57,,5.0,First Lien
 co_2533f3ffa734,AmpersCap LLC,1,CGBD,8.56,Financial Services,5.25,First Lien
-co_e912f9ca69a2,PIPELINE TECHNIQUE LTD.,1,CSWC,8.56,Energy,6.75,Revolver
+co_e912f9ca69a2,PIPELINE TECHNIQUE Ltd.,1,CSWC,8.56,Energy,6.75,Revolver
 co_43858c756f8d,Zarya Holdco Inc.,1,GBDC,8.55,Software & Technology,6.5,First Lien
 co_65fbeb65d4b5,"Cave Enterprises Operations, LLC",1,MFIC,8.55,Food & Beverage,6.6,First Lien
 co_d2f1720dc43e,Refresh Buyer LLC,1,NCDL,8.55,Food & Beverage,4.75,First Lien
@@ -3857,7 +3855,7 @@ co_cfde530d355a,2KDirect Inc.,1,FDUS,8.06,Financial Services,8.0,First Lien
 co_b8e18c580214,Paytient Technologies Inc.,1,TRIN,8.06,Healthcare,3.8,First Lien
 co_01dbf1326890,King Mid LLC,1,CCAP,8.05,Financial Services,4.5,Other
 co_31ff86707861,Pinnacle Supply Partners LLC,1,NCDL,8.05,Utilities: Electric,6.25,First Lien
-co_f703902cd204,Morae Global Corp.,1,BCIC,8.02,Software & Technology,8.0,First Lien
+co_f703902cd204,Morae Global Corp.,1,BCIC,8.03,Software & Technology,8.0,First Lien
 co_e9ab04c1530d,MB2 Dental,1,CCAP,8.01,Healthcare,5.5,Other
 co_fdaa4f3974e4,HighTower Holding LLC,1,ARCC,8.0,,0.0,Subordinated Debt
 co_c7fd9450a502,"KKR Apple Bidco, LLC",1,OBDC,8.0,Transportation & Logistics,2.5,
@@ -3911,7 +3909,7 @@ co_63dc0fadfcad,Smart Wave Technologies Inc.,1,NCDL,7.75,Software & Technology,6
 co_5668029a619c,Winebow Holdings Inc..,1,GBDC,7.74,Food & Beverage,6.25,First Lien
 co_d4600caa36bc,Tiugo Group Holdings Corp.,1,MRCC,7.74,Software & Technology,5.5,First Lien
 co_28e7392fcd4d,Gympass US LLC,1,TCPC,7.74,Software & Technology,0.0,First Lien
-co_65f964ed396f,COMMAND GROUP ACQUISITION LLC,1,CSWC,7.73,,7.0,First Lien
+co_65f964ed396f,Command Group Acquisition LLC,1,CSWC,7.73,,7.0,First Lien
 co_58258b36ba71,EH Real Estate Services LLC,1,SCM,7.71,Real Estate,0.0,First Lien
 co_ea879e85b55c,Dorado Bidco Inc.,1,ARCC,7.7,,4.5,First Lien
 co_ddc6cfbc2b9b,GMES LLC,1,BBDC,7.7,Industrials,5.25,Revolver
@@ -3960,8 +3958,8 @@ co_6f76573f0087,Copper River Seafoods Inc.,1,SLRC,7.45,Food & Beverage,2.0,First
 co_d5bf45ea35c6,Media Khoros,1,TCPC,7.45,Media & Entertainment,10.0,First Lien
 co_286da0a0f784,RRA Corporate LLC,1,PFLT,7.44,,5.25,First Lien
 co_f4b152677273,Modern Star Holdings Bidco Pty Limited.,1,BBDC,7.42,Consumer & Retail,6.0,First Lien
-co_58dc8beaac73,VBC Spine Opco LLC,1,BCIC,7.42,Healthcare,6.5,First Lien
 co_3095801122cd,"Continental Finance Company, LLC",1,OBDC,7.42,Financial Services,8.0,
+co_58dc8beaac73,VBC Spine Opco LLC,1,BCIC,7.41,Healthcare,6.5,First Lien
 co_7e47f390f824,Four Winds Interactive LLC,1,MFIC,7.41,,0.0,First Lien
 co_d4babfe426bb,WCG Intermediate Corp.,1,OBDC,7.41,Healthcare,3.0,
 co_d37c4bfe345e,Wamp;A Intermediate Co.,1,WHF,7.41,Media & Entertainment,6.25,First Lien
@@ -3992,8 +3990,9 @@ co_fb70a1b32168,"Omeda Holdings, LLC",1,HTGC,7.3,Software & Technology,8.05,Firs
 co_814b67362d2c,Environmental Remedies LLC,1,SCM,7.3,Environmental Services,5.25,First Lien
 co_78fb1336b427,Onex TSG Intermediate Corp.,1,OBDC,7.29,Healthcare,3.75,
 co_c3c1a981f29d,Harrison Hydra-Gen Ltd.,1,MAIN,7.27,Financial Services,0.0,Common Equity
-co_15f574f80cf2,AnalytiChem Holding Gmbh,1,BBDC,7.24,Chemicals & Materials,5.33,First Lien
+co_15f574f80cf2,AnalytiChem Holding GmbH,1,BBDC,7.24,Chemicals & Materials,5.33,First Lien
 co_ea05c087c5e0,BRANDNER DESIGN LLC,1,CSWC,7.24,Industrials,12.0,Revolver
+co_55ef900c2412,Middle West Spirits LLC,1,BCIC,7.23,Food & Beverage,6.25,Subordinated Debt
 co_37220090a671,Aruba Investments,1,PSBD,7.23,Financial Services,4.0,First Lien
 co_abafe18e46b8,MRH Trowe Germany GMBH,1,GBDC,7.22,,5.0,First Lien
 co_06e1c84b6d3c,Spatial Business Systems LLC,1,BBDC,7.21,Exhibits,4.75,Revolver
@@ -4003,7 +4002,6 @@ co_c56c87e1d6e6,Micross Topco Inc.,1,BXSL,7.2,,0.0,Common Equity
 co_edb9e2b8bea9,Hybrid Promotions LLC.,1,MAIN,7.2,,8.25,First Lien
 co_c309886daf49,CommScope Inc.,1,MFIC,7.2,Telecommunications,5.5,First Lien
 co_d2e3e3af88f9,"SISU ACQUISITIONCO., INC.",1,BBDC,7.18,Aerospace & Defense,5.25,First Lien
-co_55ef900c2412,Middle West Spirits LLC,1,BCIC,7.18,Food & Beverage,6.25,Subordinated Debt
 co_b000faecaf3a,Yellowbrick Learning Inc.,1,TRIN,7.15,Education,0.0,First Lien
 co_54347da42fd0,Diversified telecommunication services - Virgin Media Bristol LLC,1,KBDC,7.14,Media & Entertainment,0.0,First Lien
 co_4e7d84282f59,Carolinas Buyer Inc.,1,SCM,7.14,,5.0,First Lien
@@ -4026,7 +4024,7 @@ co_9c740c4526b1,Event Services America,1,WHF,7.02,Business Services,6.75,First L
 co_c4159f8a2839,BCTO Ignition Purchaser Inc.,1,ARCC,7.0,,7.5,Subordinated Debt
 co_562d3f8a246a,Bamboo Purchaser Inc.,1,ARCC,7.0,,10.0,First Lien
 co_37cb1baa3b52,Archer Acquisition LLC,1,NCDL,7.0,Business Services,4.75,First Lien
-co_a4b918dc37c2,"Anchor Packaging, LLC",1,OBDC,7.0,Containers & Packaging,3.25,
+co_39760daf4343,Anchor Packaging Inc.,1,OBDC,7.0,Containers & Packaging,3.25,
 co_21949e12aa37,Berlin Packaging LLC,1,OBDC,7.0,Containers & Packaging,3.25,
 co_50e65f9e2106,Canada Goose Inc.,1,PSBD,7.0,Financial Services,3.5,First Lien
 co_c1e9af438193,AMBA Buyer Inc.,1,GBDC,6.99,Insurance,5.25,First Lien
@@ -4041,6 +4039,7 @@ co_390b4a6dd372,Happy Co Inc.,1,HRZN,6.92,Software & Technology,3.75,First Lien
 co_678cd6a0c66b,CUMBRIA CAPITAL MSO LLC,1,CSWC,6.91,,6.5,Revolver
 co_2054101b61ee,"MARINER WEALTH ADVISORS, LLC",1,OBDC,6.91,Transportation & Logistics,2.62,
 co_7987b054cf27,Pinnacle MEP Intermediate Holdco LLC,1,ARCC,6.9,Media & Entertainment,6.75,Revolver
+co_0acec9c4c668,IDC Infusion Services Inc.,1,BCIC,6.89,Healthcare,6.5,First Lien
 co_8ed408819d9b,Bandon Fitness (Texas) Inc.,1,CCAP,6.87,Consumer & Retail,6.0,First Lien
 co_014fd2a739fd,Upward Health Inc.,1,TRIN,6.86,Healthcare,4.3,First Lien
 co_46897fb7f326,Camelia Bidco Ltd.,1,GBDC,6.85,,5.5,First Lien
@@ -4071,10 +4070,9 @@ co_2e688baa6034,Brightwood Capital MM CLO 2023-1A Ltd.,1,OFS,6.72,,10.36,Subordi
 co_6002a9bbe50a,"Skyword, Inc.",1,HTGC,6.71,Consumer & Retail,2.75,First Lien
 co_d311df6969f2,XIFIN Inc.,1,ARCC,6.7,,0.0,Other Equity
 co_90a5942d1d66,DWS BUYER LLC,1,CSWC,6.7,Healthcare,5.5,Revolver
-co_7d1723c34f30,Funds & Vehicles Investments and Drug Discovery & Development and Forbion Growth Opportunities Fund I C.V. Investment Funds & Vehicles Acquisition Date 11/16/2020,1,HTGC,6.7,,0.0,Other
+co_2a6ffd50a623,Funds & Vehicles Investments and Drug Discovery & Development and Forbion Growth Opportunities Fund II C.V. Investment Funds & Vehicles Acquisition Date 6/23/2022,1,HTGC,6.7,,0.0,Other
 co_757a5cf2e2c7,EG Global Finance PLC,1,MFIC,6.69,Consumer & Retail,0.0,First Lien
 co_856f3ba1eb83,Salon Republic Holdings LLC,1,WHF,6.69,,8.0,First Lien
-co_0acec9c4c668,IDC Infusion Services Inc.,1,BCIC,6.68,Healthcare,6.5,First Lien
 co_a9e1f56bbb2d,Textiles apparel & luxury goods - YS Garments,1,KBDC,6.68,Consumer & Retail,0.0,First Lien
 co_1f74285cb1b2,Honour Lane Logistics Holdings Ltd.,1,BBDC,6.67,Transportation & Logistics,4.85,First Lien
 co_6d19567a8bfb,Jumo Health Inc.,1,FDUS,6.67,Financial Services,5.5,First Lien
@@ -4131,9 +4129,9 @@ co_85c26120078d,Cdata Software Inc.,1,MRCC,6.32,Business Services,5.75,First Lie
 co_2202752fcba1,VIAVI SOLUTIONS Inc.,1,OBDC,6.31,,2.5,
 co_555b340cc77f,Avenue One PropCo ABF Equity,1,FSK,6.3,Real Estate,0.0,Other Equity
 co_59d68c8efe15,ICE USA Infrastructure Inc.,1,NCDL,6.3,Industrials,5.75,First Lien
+co_a60ffdab0e58,Colonnade Intermediate LLC,1,BCIC,6.29,Business Services,0.0,First Lien
 co_086545d2150b,Centuri Group Inc.,1,OBDC,6.29,Energy,2.25,
-co_581d8038a4c8,Kore Wireless Group Inc.,1,WHF,6.29,,6.5,First Lien
-co_a60ffdab0e58,Colonnade Intermediate LLC,1,BCIC,6.28,Business Services,0.0,First Lien
+co_581d8038a4c8,KORE Wireless Group Inc.,1,WHF,6.29,,6.5,First Lien
 co_9190d412f187,Annex Cloud,1,HTGC,6.27,Software & Technology,8.57,First Lien
 co_7a6c037f1327,Total Annex Cloud,1,HTGC,6.27,Software & Technology,0.0,First Lien
 co_4eded4194a8b,LIHA Holdco B.V. Investment,1,TSLX,6.27,Healthcare,6.5,First Lien
@@ -4151,7 +4149,7 @@ co_42df4dc02dac,Demakes Enterprises LLC,1,ARCC,6.2,,6.0,First Lien
 co_3beacd650b97,SAMBA Safety Inc.,1,FSK,6.2,Software & Technology,4.8,First Lien
 co_93d2c404e989,Thevelia US LLC,1,BXSL,6.19,,4.0,First Lien
 co_06b459454f11,JTM Foods LLC,1,CCAP,6.19,Food & Beverage,5.25,First Lien
-co_3094b0b68026,CSC MKG Topco LLC,1,OBDC,6.19,Healthcare,5.62,
+co_3094b0b68026,CSC Mkg Topco LLC,1,OBDC,6.19,Healthcare,5.62,
 co_f8033b666b83,"Panorama Education, Inc.",1,TPVG,6.19,Education,0.0,Other Debt
 co_20e7468805f9,STATS Intermediate Holdings LLC,1,NMFC,6.17,Business Services,6.25,First Lien
 co_9b3e0a046abf,DMD Systems Recovery,1,SCM,6.17,,5.0,First Lien
@@ -4162,7 +4160,7 @@ co_930bf2ebc9cf,Estex Manufacturing Company LLC,1,FDUS,6.13,Financial Services,5
 co_a0f49ff8b27e,ISI ENTERPRISES LLC,1,CSWC,6.12,,7.0,Preferred Equity
 co_30a592489f9c,A.T. Holdings II SÀRL,1,OCSL,6.12,,0.0,First Lien
 co_3af31feb4fcf,Employment Hero Holdings Pty Ltd.,1,TSLX,6.12,Business Services,0.0,Other Equity
-co_695a4d6ca642,AAC NEW HOLDCO INC.,1,CSWC,6.11,Healthcare,0.0,First Lien
+co_695a4d6ca642,AAC New Holdco Inc.,1,CSWC,6.11,Healthcare,0.0,First Lien
 co_dd062aafdc4c,DRW Holdings LLC,1,SAR,6.11,,3.5,First Lien
 co_358c21868ae1,Semiconductor Equipment Emerald Technologies (U.S.) AcquisitionCo Inc.,1,TCPC,6.1,Software & Technology,6.28,First Lien
 co_2a524ab96edd,Kard Financial Inc.,1,TRIN,6.09,Insurance,5.0,First Lien
@@ -4180,7 +4178,7 @@ co_9d9912844450,STATinMED LLC.,1,CION,6.0,,9.5,First Lien
 co_59e473ad5d4e,Manchester Acquisition Sub LLC,1,GECC,6.0,,5.75,First Lien
 co_a59114fee4b1,Health Care Providers & Services Discovery Behavioral Health LLC,1,ICMB,6.0,Healthcare,0.0,Other Equity
 co_b8e2ac50cd3f,Process Insights Acquisition Inc.,1,BBDC,5.99,Industrials,6.25,First Lien
-co_5746bd093a65,Eagleview Technology Corp.,1,GECC,5.99,Software & Technology,6.5,First Lien
+co_5746bd093a65,EagleView Technology Corp.,1,GECC,5.99,Software & Technology,6.5,First Lien
 co_8378fee2f0bc,"Calpine Construction Finance Company, LP.",1,OBDC,5.99,Energy,2.0,
 co_96b70efb8234,HAH Group Holding Company LLC,1,OBDC,5.99,Healthcare,5.0,
 co_7f994caadeda,XanEdu Publishing Inc.,1,MRCC,5.98,Media & Entertainment,6.0,First Lien
@@ -4199,7 +4197,7 @@ co_883a24913f5f,NPAV Lessor Corp.,1,WHF,5.92,,6.5,First Lien
 co_d21924480af3,PCS Retirement,1,CCAP,5.91,Financial Services,5.75,First Lien
 co_f2a173a608b9,Efor Holding,1,CCAP,5.91,Business Services,6.5,First Lien
 co_339831301a75,Axiomatic LLC,1,ARCC,5.9,,0.0,Other Equity
-co_0d309c936317,Finthrive Software Intermediate Holdings Inc.,1,BBDC,5.9,Software & Technology,0.0,Preferred Equity
+co_0d309c936317,FINThrive Software Intermediate Holdings Inc.,1,BBDC,5.9,Software & Technology,0.0,Preferred Equity
 co_863de978bdb6,Canada Supply Chain Technology GoFor Delivers Inc.,1,TRIN,5.9,Software & Technology,3.5,Other Equity
 co_7e0e5a304ccf,Vardiman Black Holdings LLC,1,MSDL,5.89,Healthcare,7.0,First Lien
 co_c8d3bfc344ef,Cyara AcquisitionCo LLC,1,MSDL,5.89,Software & Technology,6.25,First Lien
@@ -4238,6 +4236,7 @@ co_f0d0c4b86b71,Monk Holding Co. 1,1,BXSL,5.7,,5.5,First Lien
 co_72a9129f58a3,Health care equipment & supplies - ECS Opco 1,1,KBDC,5.7,Healthcare,0.0,First Lien
 co_6996434c6a0b,Engineering JF Acquisition LLC,1,TCPC,5.7,Industrials,5.75,First Lien
 co_2048a4de0aed,ConvenientMD.,1,CCAP,5.69,Healthcare,5.25,First Lien
+co_73b4e89993a8,Northeast Metal Works LLC,1,BCIC,5.68,Chemicals & Materials,0.0,Second Lien
 co_fdbb672a487f,Convenient Payments Acquisition Inc.,1,GSBD,5.68,Financial Services,6.0,First Lien
 co_63094fbf5000,"FourKites, Inc.",1,SSSS,5.68,Transportation & Logistics,0.0,Other
 co_3e05c62cf0d8,CW Group Holdings LLC,1,BBDC,5.67,Software & Technology,4.5,First Lien
@@ -4247,12 +4246,11 @@ co_587118bb9580,Advanced Barrier Extrusions LLC,1,SCM,5.67,,9.5,First Lien
 co_7e0362e2c34d,Russell Investments US Institutional Holdco Inc.,1,SAR,5.66,Insurance,5.0,First Lien
 co_3b3f685b6c00,Medical Review Institute of America,1,CCAP,5.65,Healthcare,5.0,First Lien
 co_aca3fd5cf838,Silver Therapeutics,1,LIEN,5.64,Healthcare,7.25,Delayed Draw
-co_73b4e89993a8,Northeast Metal Works LLC,1,BCIC,5.63,Chemicals & Materials,0.0,Second Lien
 co_2e8177b2308f,"Arcadia Power, Inc.",1,TPVG,5.61,Software & Technology,0.0,Other Debt
 co_5a604b3f6b4b,Infotree Holdco LLC,1,WHF,5.6,,5.75,First Lien
-co_1ce20339aee0,ARCOSA Inc.,1,OBDC,5.59,Real Estate,2.12,
+co_ddcc5e4d5ccf,MMI Holdings LLC,1,BCIC,5.59,Healthcare,0.0,First Lien
+co_1ce20339aee0,Arcosa Inc.,1,OBDC,5.59,Real Estate,2.12,
 co_a365aebcf0f2,Mad Engine Global LLC,1,GECC,5.57,,7.0,First Lien
-co_ddcc5e4d5ccf,MMI Holdings LLC,1,BCIC,5.56,Healthcare,0.0,First Lien
 co_780e4635a312,Foresight Energy,1,GECC,5.56,Energy,8.0,First Lien
 co_4cdb9f5b7d74,Ranger Parent I Inc.,1,TSLX,5.56,Transportation & Logistics,0.0,Other Equity
 co_53f997d7d995,Flexport Capital,1,TCPC,5.55,Software & Technology,5.5,Delayed Draw
@@ -4289,10 +4287,9 @@ co_c2ca352a15c7,Cavender Stores LP.,1,GBDC,5.39,Consumer & Retail,5.0,First Lien
 co_ce39bf54284a,SoftCo,1,BCSF,5.37,Software & Technology,6.75,First Lien
 co_1ef3ec5cd5a2,TNCP Intermediate HoldCo LLC,1,GLAD,5.37,Media & Entertainment,0.0,First Lien
 co_496c22887445,Protect Animals With Satellites LLC,1,LIEN,5.36,Media & Entertainment,1.75,First Lien
-co_3f54510a223e,Datalink LLC,1,BCIC,5.35,Healthcare,0.0,First Lien
 co_81b6d2a53a84,West Creek Financial Holdings,1,LIEN,5.35,Financial Services,13.8,First Lien
 co_e5e7c9cca1a4,Blackstone Donegal Holdings LP,1,BXSL,5.34,,0.0,Other
-co_016157855c06,Ipsen US Holdings Inc.,1,GECC,5.34,,12.07,First Lien
+co_016157855c06,Ipsen US Holdings INC.,1,GECC,5.34,,12.07,First Lien
 co_2d7fd71ec649,SSJA Bariatric Management LLC,1,OFS,5.34,Business Services,5.25,First Lien
 co_d07f313fef33,Emily Street Enterprises,1,SAR,5.34,,6.75,First Lien
 co_b3a348ecfc06,Office Supplies,1,SAR,5.34,,0.0,Other
@@ -4344,6 +4341,7 @@ co_88d773b46f58,Gladstone Alternative Income Fund.,1,GAIN,5.08,,0.0,Other Equity
 co_80334e09699c,Gladstone Alternative Income Fund – Common Stock,1,GLAD,5.08,,0.0,Other Equity
 co_aafd2babd07f,Leisure products - Spinrite Inc.,1,KBDC,5.08,Healthcare,0.0,First Lien
 co_2d10edf030f8,Choreo,1,BCSF,5.07,Containers & Packaging,5.0,First Lien
+co_c69912b8e35a,Burgaflex Holdings LLC,1,BCIC,5.06,Automotive,0.0,Preferred Equity
 co_134e2e6b98d9,State Street Blackstone Senior Loan ETF,1,GECC,5.06,Automotive,0.0,First Lien
 co_1993bc5a3b60,"Druva Holdings, Inc.",1,HTGC,5.06,Software & Technology,0.0,Other Equity
 co_b27ad7d45f7d,Equity Investments System Software Total Druva Holdings Inc.,1,HTGC,5.06,Financial Services,0.0,Other Equity
@@ -4365,6 +4363,7 @@ co_1aefac3553f9,PPX,1,BCSF,5.0,Food & Beverage,0.0,Preferred Equity
 co_402ccee6e51f,Solve Industrial Motion Group LLC,1,NCDL,5.0,Software & Technology,0.0,First Lien
 co_08656f26c7cb,FS WhiteWater Holdings LLC,1,NMFC,5.0,,0.0,Other Equity
 co_f045740c96e5,Plaid Inc.,1,SSSS,5.0,Software & Technology,0.0,Other
+co_3f54510a223e,Datalink LLC,1,BCIC,4.99,Healthcare,0.0,First Lien
 co_5bec9df4dbba,Americo Chemicals Products LLC,1,BBDC,4.98,Chemicals & Materials,5.0,Revolver
 co_f35fee415041,MMan Acquisition Co.,1,GBDC,4.98,Software & Technology,0.0,First Lien
 co_88623ee418ff,KWOR Acquisition Inc.,1,MSDL,4.98,,0.0,Delayed Draw
@@ -4388,15 +4387,14 @@ co_a7d2fa39fd84,Ryan LLC,1,GECC,4.93,Business Services,3.5,First Lien
 co_6d9c92ea6a8c,Camarillo Fitness Holdings,1,WHF,4.93,Healthcare,8.5,First Lien
 co_8986e7bb3172,Clark Restaurant Service LLC,1,WHF,4.93,Food & Beverage,5.75,First Lien
 co_2d0f8620642c,ORS Buyer Inc.,1,BBDC,4.91,Insurance,5.0,First Lien
-co_ebd39dcf2100,Lighting Retrofit International LLC,1,CSWC,4.91,,0.0,Revolver
+co_ebd39dcf2100,LIGHTING RETROFIT INTERNATIONAL LLC,1,CSWC,4.91,,0.0,Revolver
 co_280a63dd3b46,Apkudo Inc.,1,HRZN,4.91,Software & Technology,4.25,First Lien
 co_f1e9cfc868d9,"Ursa Space Systems, Inc.",1,HRZN,4.91,Software & Technology,4.0,First Lien
-co_115667ae7029,DMC Holdco LLC,1,NCDL,4.91,Utilities: Electric,4.75,First Lien
+co_115667ae7029,DMC HoldCo LLC,1,NCDL,4.91,Utilities: Electric,4.75,First Lien
 co_456f5d2220bc,"American Residential Services, LLC",1,OBDC,4.91,Real Estate,2.75,
 co_a9a64142a62f,ME Equity LLC,1,ARCC,4.9,,0.0,Common Equity
 co_d8ce90c12293,Elevator Holdco Inc.,1,BCSF,4.9,Industrials,0.0,Other Equity
 co_19e853df2b16,Axiom Global Inc.,1,ICMB,4.89,Diversified,4.5,Other Equity
-co_c69912b8e35a,Burgaflex Holdings LLC,1,BCIC,4.88,Automotive,0.0,Preferred Equity
 co_5e402a0aef64,Eagle Midco B.V.,1,CCAP,4.88,Healthcare,7.67,First Lien
 co_ebfc5d66dddf,"Poly-Wood, LLC",1,MFIC,4.88,,0.0,First Lien
 co_567dc6d67734,AMS Parent LLC,1,NCDL,4.88,Consumer & Retail,4.75,First Lien
@@ -4418,6 +4416,7 @@ co_067143948241,Sortera Technologies Inc.,1,TRIN,4.82,Artificial Intelligence & 
 co_828be35f2d9b,Integrated Power Services Holdings Inc.,1,NCDL,4.81,Business Services,4.75,First Lien
 co_2bb198191ff2,Templafy APS and Templafy LLC,1,GBDC,4.8,,6.0,First Lien
 co_57fc149faf46,Keystone Purchaser LLC,1,MRCC,4.8,Transportation & Logistics,6.01,First Lien
+co_6be996b4877f,Global Integrated Flooring Systems Inc.,1,BCIC,4.79,Consumer & Retail,9.0,First Lien
 co_8bb8614b6a37,EXT Acquisitions Inc.,1,BCSF,4.79,Industrials,5.25,Delayed Draw
 co_4bdb94751da8,Lending Point LendingPoint 2018-1 Funding Trust,1,MFIC,4.79,Financial Services,0.0,First Lien
 co_5d6adfa1bd4e,Citrin Cooperman Advisors LLC,1,OBDC,4.78,,3.0,
@@ -4447,7 +4446,6 @@ co_c6f0c5d8ee7d,Rotation Buyer LLC,1,CGBD,4.68,Industrials,4.75,Other
 co_e72c5e5bedfe,The Crom Corp.,1,WHF,4.68,,5.25,First Lien
 co_1d5fc228f076,"Madrigal Pharmaceutical, Inc.",1,HTGC,4.67,Healthcare,0.0,Common Equity
 co_a04a66b4b22c,"Azurity Pharmaceuticals, Inc.",1,MFIC,4.67,Healthcare,0.0,First Lien
-co_d760f75a2220,Dentive LLC,1,BCIC,4.66,Healthcare,8.75,First Lien
 co_3882fe119dfa,Bloomerang LLC,1,GBDC,4.65,Software & Technology,6.0,First Lien
 co_d7a1866e7f00,Novelis Inc.,1,OBDC,4.63,Consumer & Retail,1.75,
 co_50f5e02b1d22,Seaway Buyer LLC,1,PFLT,4.62,,6.15,First Lien
@@ -4477,15 +4475,15 @@ co_9e532193ac78,Waccamaw River LLC,1,BBDC,4.49,Automotive,0.0,Other Equity
 co_98b3d639bbe5,"BrightView Landscapes, LLC",1,OBDC,4.48,Business Services,2.0,
 co_4553db4592df,Potters,1,OBDC,4.48,Chemicals & Materials,3.0,
 co_3e9fcff4cff2,Park Blue CLO Ltd.,1,OCSL,4.48,,6.32,First Lien
-co_76373311fcf9,Allied Universal holdings LLC,1,CCAP,4.47,Business Services,0.0,Common Equity
+co_76373311fcf9,Allied Universal Holdings LLC,1,CCAP,4.47,Business Services,0.0,Common Equity
 co_5cf5d793920d,Kleinfelder Intermediate LLC.,1,GBDC,4.47,Business Services,5.0,First Lien
 co_21550fc1cfac,Product Compliance Software,1,SAR,4.47,Software & Technology,0.0,Other
 co_9764bfb5445b,THE GOBEL GROUP LLC,1,CSWC,4.46,,6.75,Revolver
+co_d760f75a2220,Dentive LLC,1,BCIC,4.45,Healthcare,7.25,First Lien
 co_ba1ecfcba038,"Renaissance Learning, Inc.",1,OBDC,4.45,Education,4.0,
 co_83eac681e78c,Senior Secured Delta Topco,1,PSBD,4.45,Financial Services,5.25,Second Lien
 co_fb12d75e16be,Kelso Industries LLC,1,WHF,4.45,,5.75,First Lien
 co_7f897de5b926,Wellgreens 2.0,1,LIEN,4.44,,6.5,First Lien
-co_b01c134b6ddf,Epic Staffing Group,1,BCIC,4.43,Business Services,6.0,First Lien
 co_713691baa4b6,Guardian Access Solutions.,1,CCAP,4.43,Business Services,6.0,First Lien
 co_2812df5b562a,Sagebrush Buyer LLC,1,NCDL,4.43,Business Services,5.0,First Lien
 co_3f0db04441fa,Apidos CLO XV,1,PSEC,4.43,Financial Services,0.0,Subordinated Debt
@@ -4497,7 +4495,6 @@ co_e358e093e0ca,Valeo Foods Group Ltd.,1,FSK,4.4,Food & Beverage,7.5,First Lien
 co_b91ff2aad12f,Syndigo LLC,1,NCDL,4.38,Business Services,5.0,First Lien
 co_5765fe40b957,Finaxy Holding,1,BBDC,4.37,Insurance,4.5,First Lien
 co_ac4181f3e35c,Integrated Pain Management Medical Group Inc.,1,CCAP,4.37,Healthcare,6.5,First Lien
-co_6be996b4877f,Global Integrated Flooring Systems Inc.,1,BCIC,4.36,Consumer & Retail,9.0,First Lien
 co_81849fe0fa15,Canopy Safety Brands,1,GLAD,4.36,,0.0,Preferred Equity
 co_a8dd264e5479,Hastings Manufacturing Company,1,MRCC,4.36,Automotive,7.6,First Lien
 co_165f77e99ed9,Argus Intermediate LLC,1,BBDC,4.35,Exhibits,4.75,Revolver
@@ -4519,7 +4516,7 @@ co_9aac5370bfb6,Vantage Insurance Partners Inc.,1,CCAP,4.27,Insurance,6.5,First 
 co_5b668f8d2021,FRST STU BID/FRST TRANS,1,OBDC,4.27,Transportation & Logistics,2.5,
 co_a01a26504433,Restor3d Inc.,1,TRIN,4.27,Healthcare,4.8,First Lien
 co_de550886ed17,Ceres Pharma NV,1,BBDC,4.26,Healthcare,6.5,First Lien
-co_34c14673a107,ProAir HoldCo LLC,1,BCIC,4.26,Industrials,0.0,Common Equity
+co_34c14673a107,ProAir Holdco LLC,1,BCIC,4.26,Industrials,0.0,Subordinated Debt
 co_42768afee518,Breeze Buyer Inc.,1,CCAP,4.26,Transportation & Logistics,4.75,First Lien
 co_73d773b90cdd,Superjet Buyer LLC,1,BBDC,4.24,Media & Entertainment,5.0,Revolver
 co_c0a4e30db212,Baxter Planning Systems LLC,1,GBDC,4.24,Software & Technology,6.26,First Lien
@@ -4547,9 +4544,10 @@ co_b7c44e523473,All States Ag Parts LLC,1,SLRC,4.16,Distribution & Wholesale,6.5
 co_4d9571ffbac4,"Simply Good Foods USA, Inc.",1,OBDC,4.15,Food & Beverage,2.0,
 co_f4699783db5a,M-Personal Protection Management GmbH,1,BBDC,4.14,Aerospace & Defense,5.0,First Lien
 co_0e91d4b8162c,North Haven Falcon Buyer LLC,1,GBDC,4.14,Automotive,7.5,First Lien
-co_aa33067f4e7e,Mantech International CP 1,1,MSDL,4.14,Aerospace & Defense,5.0,First Lien
+co_f37e84ef45c4,Mantech International CP 3,1,MSDL,4.14,Aerospace & Defense,5.0,First Lien
 co_b615cedec6bc,APG Lions Purchaser LLC,1,WHF,4.14,,5.75,First Lien
 co_cf6870613bd0,Panda Acquisition LLC,1,MRCC,4.13,Automotive,8.6,First Lien
+co_b01c134b6ddf,Epic Staffing Group,1,BCIC,4.12,Business Services,6.0,First Lien
 co_1328cd3fd89e,"Megavolt Borrower, LLC",1,MFIC,4.12,Energy,0.0,First Lien
 co_bed45f452050,Franklin Square Holdings LP.,1,SAR,4.12,,2.25,First Lien
 co_244cd39290b3,Techone B.V.,1,BBDC,4.11,Business Services,5.4,Revolver
@@ -4566,10 +4564,11 @@ co_4700947efdd9,CMT Opco Holding LLC,1,BBDC,4.06,Business Services,5.62,First Li
 co_a017dd98441e,Gener8 LLC,1,CCAP,4.06,Software & Technology,8.0,First Lien
 co_8d7e420611ef,MEDX AMCP Holdings LLC,1,BXSL,4.04,,4.75,First Lien
 co_294f0c5fd007,"Aramsco, Inc.",1,PSBD,4.04,Distribution & Wholesale,4.75,First Lien
+co_dbd9cacc0edc,Centric Brands LP.,1,BCIC,4.03,Industrials,0.0,Subordinated Debt
 co_23ae63c82227,Neuberger Berman Loan Advisers CLO Ltd.,1,TSLX,4.03,,5.88,Other Equity
 co_d69969c484b8,Mandolin Technology Holdings,1,BXSL,4.02,Software & Technology,0.0,Preferred Equity
 co_8b1fb197ff5c,Annuity Health,1,CCAP,4.02,Healthcare,5.25,Other
-co_710b9ab58483,Spendmend Holdings LLC,1,PFLT,4.02,,5.15,First Lien
+co_710b9ab58483,SpendMend Holdings LLC,1,PFLT,4.02,,5.15,First Lien
 co_726311127482,Thryv Holdings Inc.,1,PFX,4.02,Media & Entertainment,0.0,First Lien
 co_0f1012055d58,Victoria Bidco Ltd.,1,BBDC,4.01,Consumer & Retail,6.5,First Lien
 co_1def8936eb30,Vasa Fitness Buyer Inc.,1,BCSF,4.01,Containers & Packaging,6.35,First Lien
@@ -4594,10 +4593,11 @@ co_ac712efd8e7b,Liberty Buyer Inc.,1,NCDL,3.97,Consumer & Retail,5.75,First Lien
 co_e7a841ed6ebd,HomeServe USA Holding Corp.,1,OBDC,3.97,Consumer & Retail,2.0,
 co_6a231e4dd4b6,GULF PACIFIC ACQUISITION LLC.,1,MAIN,3.96,,7.0,First Lien
 co_0ce0f67d6940,Drawbridge Partners LLC,1,MRCC,3.96,Software & Technology,6.25,First Lien
+co_c1c966cd17b0,GP Midco LLC,1,BCIC,3.95,Consumer & Retail,5.0,First Lien
 co_6940097aa1d4,Health care providers & services - Salt Dental Collective LLC,1,KBDC,3.95,Healthcare,0.0,First Lien
-co_c1c966cd17b0,GP Midco LLC,1,BCIC,3.94,Consumer & Retail,5.0,First Lien
 co_f36e5b438fd6,Insurance Integrity Marketing Acquisition,1,CCAP,3.94,Insurance,0.0,Common Equity
 co_b34cdfa0d347,Nexity Evoriel,1,MFIC,3.94,Financial Services,0.0,First Lien
+co_3d2b9e474e59,South Street Securities Holdings Inc.,1,BCIC,3.93,Insurance,0.0,First Lien
 co_a74139629788,Del Monte Foods Corp.,1,GECC,3.93,Food & Beverage,9.5,First Lien
 co_f58b138345aa,Textiles apparel & luxury goods - BEL USA,1,KBDC,3.93,Consumer & Retail,0.0,First Lien
 co_8d9f9dcf3927,ADMI Corp.,1,NMFC,3.93,Healthcare,3.75,First Lien
@@ -4615,7 +4615,6 @@ co_357a03c52536,Thrivory Inc.,1,TRIN,3.91,Insurance,10.5,First Lien
 co_87a45bc45ed9,Allclear Commercial Inc.,1,ARCC,3.9,Aerospace & Defense,6.12,First Lien
 co_dec1888f4544,GreenPark Infrastructure LLC,1,BCIC,3.9,Energy,0.0,Preferred Equity
 co_d5a471a189e7,Outfront Media Capital LLC,1,OBDC,3.9,Media & Entertainment,2.0,
-co_3d2b9e474e59,South Street Securities Holdings Inc.,1,BCIC,3.89,Insurance,0.0,First Lien
 co_6b45ee183388,Apus Bidco Ltd.,1,BBDC,3.88,Insurance,5.0,First Lien
 co_c2187bc17da7,Multi-Color Corp.,1,BCSF,3.88,Energy,0.0,First Lien
 co_d65a576d3d06,Online Pharmacy Holdings LLC,1,CION,3.88,Healthcare,0.0,Other Equity
@@ -4643,7 +4642,6 @@ co_aa8936bf07d1,Mendocino Farms LLC,1,GBDC,3.78,Food & Beverage,5.5,First Lien
 co_36e14c0714b6,Apex Bidco Ltd.,1,BBDC,3.77,Business Services,7.0,First Lien
 co_ed187de7dd34,Painters Supply & Equipment Company,1,CCAP,3.77,Industrials,5.5,First Lien
 co_a038745fb0c5,"CRS Holdings, Inc.",1,MFIC,3.77,Industrials,0.0,First Lien
-co_dbd9cacc0edc,Centric Brands LP.,1,BCIC,3.75,Industrials,0.0,Subordinated Debt
 co_33903c69be32,Volante Technologies Inc.,1,TSLX,3.75,Financial Services,0.0,First Lien
 co_3e770aa7a90c,Pare SAS,1,BBDC,3.74,Healthcare,5.2,First Lien
 co_44d98fc636c2,NINJATRADER INC.,1,CSWC,3.74,Financial Services,0.0,Other
@@ -4668,7 +4666,6 @@ co_4ea23e2ff825,Carlyle Global Market Strategies Multi-Sector Holdings,1,OCSL,3.
 co_ab03097190ac,NA Rail Hold Co. LLC,1,OBDC,3.64,Transportation & Logistics,3.0,
 co_0b106f8d5afc,"Ingenovis Health, Inc.",1,MFIC,3.62,,4.25,First Lien
 co_55fd38f60502,AOM Infusion,1,BCSF,3.61,Containers & Packaging,0.0,Delayed Draw
-co_d4d6cacea19d,V12 Holdings Inc.,1,BCIC,3.6,Business Services,0.0,Second Lien
 co_262df0da5aac,OG III B.V.,1,BBDC,3.59,Containers & Packaging,5.75,First Lien
 co_a8a6e02931ad,Ampersand Partners Feeder AIV LP,1,CGBD,3.59,Financial Services,0.0,Other Equity
 co_7e887edb52b7,OCI,1,GLAD,3.59,,7.5,First Lien
@@ -4677,7 +4674,7 @@ co_272270f25183,SFR Holdco 2 LLC,1,MRCC,3.56,Real Estate,0.0,First Lien
 co_f23e57dd0f40,Reaction Biology Corp.,1,GBDC,3.55,Healthcare,4.75,First Lien
 co_7b46f8ffe447,Diversified telecommunication services - Network Connex (f/k/a NTI Connect LLC) - First lien senior secured loan - SOFR,1,KBDC,3.55,,0.0,First Lien
 co_f68f1949cf1b,Rising Tide’s First Lien Second Out Term Loan,1,PSEC,3.55,,0.0,Other
-co_768ba0465502,Medical Sales Training Holding Company One,1,TRIN,3.55,Education,8.8,First Lien
+co_7ae1cfd86cb8,Medical Sales Training Holding Company Two,1,TRIN,3.55,Education,8.8,First Lien
 co_5fb99dfc823f,Heilbron (f/k/a Sucsez (Bolt Bidco B.V.)) Insurance,1,BBDC,3.52,Insurance,5.75,First Lien
 co_4f50ac52164a,CTS Ultimate Holdings LLC,1,CION,3.52,,0.0,Other Equity
 co_ad59e45d22ab,Bain Capital Euro CLO Multi-Sector Holdings,1,OCSL,3.52,,5.62,First Lien
@@ -4714,6 +4711,7 @@ co_f912c1988e4d,Redfin Corp.,1,MFIC,3.38,,0.0,First Lien
 co_00511b473a17,"Beacon Roofing Supply, Inc.",1,OBDC,3.38,Real Estate,3.0,
 co_d33ce2453b7c,Simpler Trading LLC,1,SCM,3.38,,0.0,First Lien
 co_e8665d26e520,ITS Buyer Inc.,1,WHF,3.38,,6.0,First Lien
+co_c403db77982c,Tubular Textile Machinery Inc.,1,BCIC,3.37,Industrials,0.0,Subordinated Debt
 co_c70f0c5ad517,3SI Security Systems Inc.,1,CCAP,3.37,Software & Technology,6.0,First Lien
 co_09bf04de6f86,Compass Diversified Holdings,1,PFX,3.37,Diversified,0.0,First Lien
 co_0a6425419b01,Firebird Co-Invest LP.,1,NMFC,3.36,Financial Services,0.0,Partnership Interest
@@ -4752,6 +4750,7 @@ co_2f13b02fe4e8,TA SL Cayman Aggregator Corp.,1,BBDC,3.24,Business Services,7.75
 co_a644bac5c9d0,Natgasoline LLC,1,SAR,3.24,,5.5,First Lien
 co_b7de2f2b807b,Polara Enterprises LLC.,1,BBDC,3.23,Industrials,4.5,Revolver
 co_336ee375e08d,Home Care Assistance LLC,1,BBDC,3.23,Healthcare,5.0,First Lien
+co_14f0ba8bcf04,Aperture Dodge 18 LLC,1,BCIC,3.23,Insurance,0.0,Subordinated Debt
 co_eb5ceb31f6ca,INK BC Finco SpA,1,BXSL,3.23,,8.25,First Lien
 co_1de232269deb,Mercell Holding AS,1,BBDC,3.22,Telecommunications,5.0,Common Equity
 co_4fab65fb587f,Herbalife Ltd.,1,BBDC,3.21,Consumer & Retail,6.75,First Lien
@@ -4772,8 +4771,7 @@ co_0ffffa8ff5b8,Selenium Designated Activity Company,1,BBDC,3.16,Consumer & Reta
 co_cd92c17c729c,Cagent Vascular Inc.,1,TRIN,3.16,Healthcare,4.0,First Lien
 co_78cebcaa5205,Autotality,1,RAND,3.15,,0.0,Other Equity
 co_c602ace1a070,"Holley, Inc.",1,OBDC,3.14,Automotive,3.75,
-co_bbc9bf8f9ead,CCMG Buyer LLC,1,BCIC,3.13,Healthcare,5.5,First Lien
-co_14f0ba8bcf04,Aperture Dodge 18 LLC,1,BCIC,3.12,Insurance,0.0,Subordinated Debt
+co_bbc9bf8f9ead,CCMG Buyer LLC,1,BCIC,3.12,Healthcare,4.75,First Lien
 co_e66177915503,Familia Dental Group Holdings LLC,1,MRCC,3.11,Healthcare,0.0,Other Equity
 co_28201c1bd298,Orion US Finco Inc.,1,OBDC,3.11,,3.5,
 co_6988f2b6b83a,"Option Care Health, Inc.",1,OBDC,3.11,Healthcare,1.75,
@@ -4808,10 +4806,10 @@ co_4e39be33f04b,AZZ Inc.,1,OBDC,3.02,Energy,1.75,
 co_f1ca9a4b8452,Senior Secured Aruba Investments,1,PSBD,3.02,Financial Services,7.75,Second Lien
 co_9de51dd15a10,Corporate Bonds Smyrna Ready Mix Concrete Industry Construction Materials Interest Rate 0.06 Maturity Date 11/1/2028,1,PSBD,3.02,,0.0,First Lien
 co_689fde5656e2,Bigtincan Holdings LP.,1,TSLX,3.02,Software & Technology,0.0,Other Equity
+co_a3257cf8cf9a,"Spinrite, Inc.",1,BCIC,3.01,Healthcare,7.5,First Lien
 co_7b0293ccbe03,Pi Buyer LLC,1,CCAP,3.01,Financial Services,5.0,Other
 co_94feceba92c6,BSP 2025-40A E,1,SAR,3.01,,5.25,First Lien
 co_5d20023c04e8,Gotham Greens Holdings PBC,1,ARCC,3.0,,0.0,Preferred Equity
-co_c403db77982c,Tubular Textile Machinery Inc.,1,BCIC,3.0,Industrials,0.0,Subordinated Debt
 co_5577663dc373,Energy Loadmaster Derrick & Equipment,1,CCAP,3.0,Energy,0.0,Preferred Equity
 co_06a4fb7a5602,Kilter Finance ABF Equity,1,FSK,3.0,Insurance,0.0,Other Equity
 co_21f32a65b53d,Philippine Airlines 777 Term Loan,1,FSK,3.0,Transportation & Logistics,6.5,First Lien
@@ -4854,6 +4852,7 @@ co_c74bc77b2332,Rose Paving LLC,1,NCDL,2.9,Industrials,0.0,First Lien
 co_b725b64d06a4,GFRC 360 LLC,1,GLAD,2.89,,8.0,First Lien
 co_9ef24767ab6b,WEX Inc.,1,SAR,2.88,,1.75,First Lien
 co_75d8fdfa1ede,OSP AFS Buyer LLC,1,BBDC,2.87,Exhibits,5.0,Revolver
+co_1e77ea29494e,Taoglas Group Holdings Ltd.,1,BCIC,2.87,Software & Technology,7.25,First Lien
 co_625f8c42755d,Valkyrie Intermediate LLC,1,NCDL,2.87,Aerospace & Defense,0.0,First Lien
 co_0e0e994d218b,Symphone CLO Ltd.,1,OCSL,2.87,,5.4,First Lien
 co_21e20d982602,Flywheel Holdings Segregated Portfolio 2025-2,1,BBDC,2.86,Insurance,0.0,Partnership Interest
@@ -4884,11 +4883,10 @@ co_e39e79feacec,Pre-Paid Legal Services Inc.,1,SAR,2.8,Consumer & Retail,3.25,Fi
 co_ff75bc4aeff0,HDC/HW Intermediate Holdings.,1,MAIN,2.79,Media & Entertainment,6.25,First Lien
 co_7d937feadb8f,888 Acquisitions Ltd.,1,SAR,2.79,,5.25,First Lien
 co_1b1524082f5f,NAB Holdings LLC,1,SAR,2.79,,2.5,First Lien
-co_1e77ea29494e,Taoglas Group Holdings Ltd.,1,BCIC,2.78,Software & Technology,7.25,First Lien
 co_35d09837d862,IDEMIA Group SAS,1,OBDC,2.78,Business Services,4.25,
 co_eac2a6e655f1,Grosvenor Capital Management Holdings LLLP,1,SAR,2.78,Business Services,2.25,First Lien
 co_0c261b0ce622,Priority Holdings LLC,1,SAR,2.78,Consumer & Retail,3.75,First Lien
-co_077401fa06ea,FinCo I LLC,1,SAR,2.77,,1.75,First Lien
+co_077401fa06ea,Finco I LLC,1,SAR,2.77,,1.75,First Lien
 co_bd7632937759,Frontgrade Technologies Holdings Inc.,1,BXSL,2.76,,5.0,First Lien
 co_c4df163f377c,Zonkd LLC,1,FDUS,2.76,Financial Services,0.0,First Lien
 co_d32026c82055,BlackJet Direct Marketing LLC,1,RAND,2.76,Business Services,0.0,First Lien
@@ -4912,7 +4910,6 @@ co_f28a94f163c1,Avidity Acquisition B.V.,1,CCAP,2.68,Business Services,5.25,Firs
 co_f2cd2a2953f9,2717 MH LP.,1,MAIN,2.68,Financial Services,0.0,Partnership Interest
 co_aaf766de70bd,Orsay Bidco 1 B.V. and Sky Group Holding B.V.,1,GBDC,2.67,,5.38,First Lien
 co_5aa8b4cd8272,Polymer Process Holdings Inc.,1,SAR,2.67,Chemicals & Materials,4.75,First Lien
-co_903d0c7f5ce0,JMP Credit Advisors CLO IV Ltd.,1,BCIC,2.66,Financial Services,0.0,Second Lien
 co_d726f03e8c50,Receivable Solutions Inc.,1,CCAP,2.66,Business Services,4.88,First Lien
 co_9ae83dabc1b7,Sparus Holdings LLC,1,BBDC,2.65,Business Services,4.75,Revolver
 co_68f42216a7ac,Zeppelin Bidco Ltd.,1,BBDC,2.65,Business Services,6.5,First Lien
@@ -4942,10 +4939,12 @@ co_fb3c3ba8617f,TriStrux LLC,1,CCAP,2.54,Industrials,0.0,First Lien
 co_ee7bfd6074d5,BCC Trillium Foods Investments 1 LLC,1,BCSF,2.53,Food & Beverage,0.0,Other Equity
 co_49627f26b33e,Turbine Engine Specialists Inc.,1,NCDL,2.53,Aerospace & Defense,9.5,First Lien
 co_94d52d0b1842,Other Scorpio Bidco,1,TSLX,2.53,,5.75,First Lien
+co_ce4a20f9d1fa,Series B-Great Lakes Funding II LLC,1,BCIC,2.52,,0.0,Other
 co_d4d4aa115efb,Senior Secured Help/Systems Holdings,1,PSBD,2.52,Financial Services,0.0,Second Lien
 co_e7ed3d437c5a,Caitec Inc.,1,RAND,2.52,,0.0,Subordinated Debt
 co_f469641191e6,APID 2017-28A DR,1,SAR,2.52,,5.0,First Lien
 co_064a84c3a3cb,UBC Ledgers Holding AB,1,BBDC,2.51,Business Services,5.25,First Lien
+co_903d0c7f5ce0,JMP Credit Advisors CLO IV Ltd.,1,BCIC,2.51,Financial Services,0.0,Second Lien
 co_df29813cfdc8,Senior Secured Edelman Financial Engines Center LLC,1,PSBD,2.5,Financial Services,5.25,Second Lien
 co_6d3b5b8e0715,BMP Swanson Holdco LLC,1,RAND,2.5,Financial Services,0.0,First Lien
 co_0d5cd082d30b,TableTrust Brands LLC,1,WHF,2.49,,5.75,First Lien
@@ -4991,10 +4990,10 @@ co_d51ac48100c7,PSP Intermediate 4 LLC,1,BBDC,2.37,Software & Technology,5.25,Fi
 co_0fe0ee621010,Elevation NewCo LLC,1,BCSF,2.37,Containers & Packaging,0.0,Delayed Draw
 co_a7f11e78d3da,Miracle Mile Holdings LLC,1,CCAP,2.37,Financial Services,5.0,First Lien
 co_3baa41cd86e4,Hallmark Health Care Solutions Inc.,1,FDUS,2.37,Healthcare,0.0,Common Equity
-co_e6d9e5bc8a49,Formulations Parent Corp.,1,OBDC,2.37,Chemicals & Materials,4.0,
+co_e6d9e5bc8a49,FORMULATIONS PARENT Corp.,1,OBDC,2.37,Chemicals & Materials,4.0,
 co_719e600fff60,Diversified Financials WhiteHawk III Onshore Fund LP.,1,CCAP,2.36,Financial Services,0.0,Other
 co_245e0399478b,"CSC Holdings, LLC",1,MFIC,2.36,Financial Services,0.0,First Lien
-co_aa51d07ec175,Win Brands Group LLC,1,OCSL,2.36,,14.0,First Lien
+co_aa51d07ec175,WIN Brands Group LLC,1,OCSL,2.36,,14.0,First Lien
 co_84a39c9b0ecf,"Mingle Healthcare Solutions, Inc.",1,RWAY,2.36,Healthcare,9.75,First Lien
 co_dc5d81ec8cd0,"USI, Inc.",1,OBDC,2.35,Insurance,2.25,
 co_49987dc129d7,Virtusa Corp.,1,OBDC,2.35,,3.25,
@@ -5006,7 +5005,6 @@ co_699e11860d39,Electronics for Imaging Inc.,1,MFIC,2.33,Software & Technology,0
 co_621d3c24a8f0,Camping World,1,SAR,2.33,Consumer & Retail,2.5,First Lien
 co_ab93ae7e0149,"Muon Space, Inc.",1,TPVG,2.33,Business Services,0.0,Other Debt
 co_991608d5a727,Featherstone Bidco Ltd.,1,BBDC,2.32,Healthcare,6.0,First Lien
-co_2b115748c286,Orthopaedic (ITC) Buyer LLC,1,BCIC,2.32,Healthcare,6.5,First Lien
 co_b928e711ac43,Octane Purchaser Inc.,1,BXSL,2.32,,4.25,First Lien
 co_259fd8608352,Meadowlark Acquirer LLC,1,PFLT,2.32,,5.65,First Lien
 co_388c00ac314e,Deepl Se,1,TCPC,2.32,Software & Technology,5.0,First Lien
@@ -5014,6 +5012,7 @@ co_44aee5dde09d,Adhefin International,1,BBDC,2.31,Business Services,5.1,First Li
 co_5b70a6603e1a,SiroMed Physician Services Inc.,1,ARCC,2.3,Healthcare,0.0,Common Equity
 co_ed174167c731,NCWS Intermediate Inc.,1,ARCC,2.3,Media & Entertainment,0.0,Common Equity
 co_459a3fee884e,GSM Rights Fund II LP,1,ARCC,2.3,,0.0,Other Equity
+co_2b115748c286,Orthopaedic (ITC) Buyer LLC,1,BCIC,2.3,Healthcare,5.0,First Lien
 co_e57b579128f2,Apex Group Ltd.,1,FSK,2.3,Financial Services,3.5,First Lien
 co_7c32a0c80249,Patriot Acquireco LLC,1,GBDC,2.3,Food & Beverage,4.5,First Lien
 co_a43e254cba57,Element Materials Technology,1,OBDC,2.3,Business Services,3.68,
@@ -5083,7 +5082,7 @@ co_f3715b193d22,nt Financing,1,SLRC,2.14,,0.0,First Lien
 co_95c228522efd,Triple H Food Processors,1,GLAD,2.13,Food & Beverage,0.0,Preferred Equity
 co_656434079aa6,DRS Imaging Services LLC,1,OFS,2.12,$,0.0,Common Equity
 co_cf06246c1552,Corporate Bonds Altice Financing S.A. Industry Diversified Telecommunication Services Interest Rate 0.05 Maturity Date 1/15/2028,1,PSBD,2.12,,0.0,First Lien
-co_58eeb1bf3313,PATAGONIA HOLDCO LLC,1,SAR,2.12,,5.75,First Lien
+co_58eeb1bf3313,Patagonia Holdco LLC,1,SAR,2.12,,5.75,First Lien
 co_d13f0ad06a41,"Infinite Athlete, Inc.",1,TPVG,2.12,Business Services,0.0,Other Debt
 co_908a19aaec72,Marketing Media and Entertainment Grabit Interactive Media Inc.,1,TRIN,2.12,Media & Entertainment,7.5,First Lien
 co_4c9a51fb8085,Workbox Holdings Inc.,1,LIEN,2.11,,6.0,Other Equity
@@ -5105,7 +5104,6 @@ co_6f9241db490c,Fetch Insurance Services LLC,1,MSDL,2.07,Insurance,12.75,Unsecur
 co_b15c3359a2a5,EB Development,1,BBDC,2.06,Healthcare,5.5,First Lien
 co_a7fcaf32f832,"Activehours, Inc.",1,TPVG,2.06,Financial Services,0.0,Other Equity
 co_60347f4724cb,Redwood Trust Inc.,1,PFX,2.05,Real Estate,0.0,First Lien
-co_1da2c01c95c7,Shepherd Parent Holdings LLC,1,BCIC,2.04,Healthcare,7.25,First Lien
 co_a8dfa80312b1,Freeport Financial SBIC Fund LP,1,MAIN,2.04,Financial Services,0.0,Partnership Interest
 co_836c5dab02ce,LTR Intermediate Holdings Inc.,1,MFIC,2.04,Environmental Services,0.0,First Lien
 co_615e1ca320da,"VM Consolidated, Inc.",1,OBDC,2.04,Business Services,2.25,
@@ -5124,7 +5122,7 @@ co_7a95ed04e40e,Texas Debt Capital CLO Ltd.,1,TSLX,2.02,,4.95,Other Equity
 co_46db7bbf0413,The Octave Music Group Inc.,1,BBDC,2.01,Media & Entertainment,4.75,First Lien
 co_657af3f91939,Kapple Holdings LLC,1,LIEN,2.01,,10.25,First Lien
 co_a07372133c47,Golub Capital Partners CLO Ltd.,1,MFIC,2.01,,0.0,Other
-co_d960a521b675,Hancock Roofing And Construction LLC,1,PFLT,2.01,Industrials,5.6,First Lien
+co_d960a521b675,Hancock Roofing and Construction LLC,1,PFLT,2.01,Industrials,5.6,First Lien
 co_1fb438c73667,BSP 2016-10A C2R3,1,SAR,2.01,,4.1,First Lien
 co_ab5146f4b141,HLM 2025-26A D2,1,SAR,2.01,,4.1,First Lien
 co_9a04ab6da57e,DFS Holding Company Inc.,1,ARCC,2.0,,7.5,First Lien
@@ -5144,7 +5142,7 @@ co_4a85420b6f9f,REGT23 2021-1A D2R,1,SAR,2.0,,4.0,First Lien
 co_c2ea47f815b5,WBOX 2025-5A D2,1,SAR,2.0,,4.1,First Lien
 co_9108dc9c9af0,Mount Logan Capital Inc.,1,CION,1.99,,0.0,Other Equity
 co_2b5685a15d3e,ECL Entertainment LLC,1,GECC,1.99,Media & Entertainment,3.0,First Lien
-co_e6f49df2ef81,RoadOne IntermodaLogistics 2,1,MSDL,1.99,Transportation & Logistics,6.25,First Lien
+co_d85663c58756,RoadOne IntermodaLogistics 3,1,MSDL,1.99,Transportation & Logistics,6.25,First Lien
 co_6f0b263b044d,GarageCo Intermediate II LLC,1,MSDL,1.99,Consumer & Retail,4.25,First Lien
 co_b7961d48e0f1,Lakefield Acquisition Corp.,1,OBDC,1.99,,4.0,
 co_7fdedd80d54b,Camelot U.S. Acquisition 1 Co.,1,OBDC,1.99,Business Services,2.75,
@@ -5152,7 +5150,7 @@ co_d89f38b121b7,KKR Financial CLO Ltd.,1,OCSL,1.99,Financial Services,7.1,First 
 co_81a28173116d,Shield Therapeutics PLC,1,RWAY,1.99,Healthcare,9.25,First Lien
 co_2746d696e330,Worldwide Flight Services Inc.,1,SLRC,1.99,Transportation & Logistics,0.0,First Lien
 co_e2a130b901ff,Recon Buyer LLC,1,BBDC,1.98,Exhibits,4.75,Revolver
-co_1934c487c1d1,Diversitech Corp.,1,BCSF,1.98,Industrials,3.76,First Lien
+co_1934c487c1d1,DiversiTech Corp.,1,BCSF,1.98,Industrials,3.76,First Lien
 co_d5961fe17798,Bioplan USA Inc.- Priority Term Loan,1,ICMB,1.98,Containers & Packaging,10.0,Other Equity
 co_7ec41b5c4bb6,Boulder Scientific Company LLC,1,NCDL,1.98,Chemicals & Materials,4.5,First Lien
 co_7c886243985f,1011778 BC / NEW RED FIN,1,OBDC,1.98,Food & Beverage,1.75,
@@ -5169,7 +5167,6 @@ co_77bf927ed57a,"Lyft, Inc.",1,HTGC,1.95,Consumer & Retail,0.0,Common Equity
 co_320279294b3b,Groupe Solmax Inc.,1,SAR,1.94,,4.75,First Lien
 co_ffb9c6b89757,HomeX Services Group LLC,1,BBDC,1.93,Consumer & Retail,4.5,Revolver
 co_ebcf18154d9b,ProAir LLC,1,BCIC,1.93,Industrials,0.0,Subordinated Debt
-co_ce4a20f9d1fa,Series B-Great Lakes Funding II LLC,1,BCIC,1.93,,0.0,Other
 co_4a0fb76423d6,Benesys Inc.,1,CCAP,1.93,Software & Technology,5.25,First Lien
 co_eef3be2621ae,LEHR UPFITTERS LLC,1,CSWC,1.93,Business Services,0.0,Preferred Equity
 co_1bba91d2a163,ZimVie Inc.,1,GBDC,1.93,Healthcare,4.75,First Lien
@@ -5182,12 +5179,13 @@ co_70b50f3421e6,GSP,1,BCSF,1.91,Aerospace & Defense,5.65,Other Equity
 co_fa0ab8d9d946,Radiant Intermediate Holding LLC,1,ARCC,1.9,Media & Entertainment,6.0,First Lien
 co_b50f7552bcef,SCI PH Parent Inc.,1,ARCC,1.9,,0.0,Other Equity
 co_f25307b38cd1,Bombardier Recreational Products,1,SAR,1.9,Consumer & Retail,2.25,First Lien
+co_e8959b137f54,PMP OPCO LLC,1,BCIC,1.89,Consumer & Retail,8.5,First Lien
 co_02190e51b318,Inmarsat,1,BCSF,1.89,Containers & Packaging,0.0,First Lien
 co_65491dca8360,UBEO LLC,1,FDUS,1.89,Financial Services,0.0,Common Equity
 co_18ffafeeb822,USG AS Holdings LLC,1,FDUS,1.89,Financial Services,0.0,Common Equity
 co_967457d264ea,"AQ Carver Buyer, Inc.",1,OBDC,1.89,Business Services,5.5,
 co_89d466797a82,Sunrise Acquisition Bidco Ltd.,1,BBDC,1.88,Exhibits,5.25,First Lien
-co_3b42e75d31f0,PETCO,1,BCSF,1.88,Consumer & Retail,0.0,First Lien
+co_3b42e75d31f0,Petco,1,BCSF,1.88,Consumer & Retail,0.0,First Lien
 co_28f75db82886,Maverick Gaming LLC,1,GECC,1.88,Healthcare,12.5,First Lien
 co_df341ba26981,Sparta U.S. HoldCo LLC,1,SAR,1.88,,3.0,First Lien
 co_aa9d3b75fca6,Sinari Invest,1,BBDC,1.87,Software & Technology,6.5,First Lien
@@ -5204,7 +5202,6 @@ co_1e6f40a84fb0,Shelby Co-invest LP.,1,MSDL,1.85,Automotive,0.0,Common Equity
 co_63683ad46bc0,First American Government Obligations Fund,1,NCDL,1.85,Business Services,0.0,Other Equity
 co_9c6fa0ed63a5,ZEBRA BUYER (Allspring) LLC,1,SAR,1.85,,2.75,First Lien
 co_b82be630e025,Clever Devices Ltd.,1,TCPC,1.85,Software & Technology,6.0,First Lien
-co_01623d649ccb,Help Systems Holdings Inc.,1,BCIC,1.84,Software & Technology,3.75,First Lien
 co_5eddfa0c8c8c,Alldent Holding GmbH,1,BCSF,1.84,Containers & Packaging,5.5,Delayed Draw
 co_b259b70e8fa5,Price Fx Inc.,1,TSLX,1.84,Business Services,6.62,First Lien
 co_76bf382039e0,What If Media Group,1,WHF,1.84,Media & Entertainment,0.0,Common Equity
@@ -5223,14 +5220,16 @@ co_781a9710a21e,Faraday,1,BBDC,1.79,Healthcare,5.85,First Lien
 co_ae1b7853364a,Sapphire Bidco S.A.R.L.,1,BBDC,1.79,Exhibits,5.0,First Lien
 co_f9d6abb27422,SDC Holdco LLC,1,GBDC,1.79,Food & Beverage,4.38,First Lien
 co_2faa3d49376e,Golden TopCo LP,1,SAR,1.79,,0.0,First Lien
-co_d2b207ff9316,Tanqueray Bidco Ltd.,1,BBDC,1.78,Business Services,5.25,First Lien
+co_d2b207ff9316,TANQUERAY BIDCO Ltd.,1,BBDC,1.78,Business Services,5.25,First Lien
 co_2173ba709491,"HSI Halo Holdings, LLC",1,MFIC,1.78,Business Services,0.0,Common Equity
 co_da7b6aff360e,ORL Acquisitions Inc.,1,PFLT,1.78,,9.4,First Lien
 co_9a0e84c1f826,IT Services Intercept Bidco,1,TCPC,1.78,Software & Technology,6.0,First Lien
 co_1c1c99fdbd85,Beyond Risk Management Inc.,1,BBDC,1.77,Insurance,4.5,First Lien
+co_1da2c01c95c7,Shepherd Parent Holdings LLC,1,BCIC,1.77,Healthcare,7.25,First Lien
 co_72dbdb4f957e,Prime Security Services Borrower LLC,1,SAR,1.77,Business Services,2.0,First Lien
 co_d8379924dcdc,Eurofins Digital Testing International LUX Holding SARL Technology,1,BBDC,1.76,Software & Technology,6.25,First Lien
 co_a79e13fdb47e,Greenhill II BV,1,BBDC,1.76,Business Services,5.35,First Lien
+co_1c681c75ab10,PhyNet Dermatology LLC,1,BCIC,1.76,Healthcare,6.5,First Lien
 co_938422738cdb,Crunch Holdings LLC,1,GBDC,1.76,Healthcare,4.5,First Lien
 co_b184af8a7e3a,ASC Interests LLC,1,MAIN,1.76,Financial Services,0.0,First Lien
 co_9f739ae9e3f3,"Heritage Environmental Services, Inc.",1,MFIC,1.76,Business Services,5.25,First Lien
@@ -5250,7 +5249,6 @@ co_60857628ac43,Biolam,1,BBDC,1.73,Healthcare,4.5,First Lien
 co_48589f8efd38,OnAsset Intelligence Inc.,1,MAIN,1.73,,0.0,First Lien
 co_2150082af3f6,Ascent Midco LLC,1,MRCC,1.73,,0.0,Other Equity
 co_e2dd1e85e078,Zelda Luxco S.A.S,1,BBDC,1.71,Software & Technology,5.25,First Lien
-co_1c681c75ab10,PhyNet Dermatology LLC,1,BCIC,1.71,Healthcare,6.5,First Lien
 co_be795e3bc46e,Benefit Street Partners CLO Ltd.,1,TSLX,1.71,,4.5,Other Equity
 co_ef9b78412ff9,J2 BWA Funding LLC,1,MRCC,1.7,,0.0,First Lien
 co_682ba3c4f8de,Hertz Corp.,1,SAR,1.7,,3.75,First Lien
@@ -5265,7 +5263,6 @@ co_240a27b57ebe,"Emalex Biosciences, Inc.",1,HRZN,1.67,Healthcare,4.72,First Lie
 co_20341db255d9,OUTERBOX LLC6,1,CSWC,1.66,,0.0,Common Equity
 co_066700dbc651,RTIC Parent Holdings LLC,1,PNNT,1.66,,0.0,Other Equity
 co_0bd69209e154,Ruby Bidco Pty Ltd.,1,BBDC,1.65,Business Services,5.25,First Lien
-co_75416ba641b0,Westshore RAM LLC,1,BCIC,1.65,Financial Services,0.0,Preferred Equity
 co_026ecc2a8269,NorthSea Therapeutics B.V.,1,HTGC,1.65,Healthcare,0.0,First Lien
 co_0b36600d8ffc,Interstellar Group B.V.,1,BBDC,1.64,Business Services,6.25,First Lien
 co_7850259a881c,Baldwin Insurance Group Holdings LLC,1,SAR,1.63,Insurance,2.5,First Lien
@@ -5273,6 +5270,7 @@ co_1841e210c1f8,MZR Aggregator,1,BCSF,1.62,Containers & Packaging,0.0,Other Equi
 co_f6860ac91d1b,Virtex Enterprises LP,1,FDUS,1.62,Financial Services,2.0,Second Lien
 co_e4992e69229c,Procure Acquiom Financial LLC,1,MSDL,1.62,Business Services,0.0,Common Equity
 co_89f4a3bdf450,Avance Clinical Bidco Pty Ltd.,1,BBDC,1.61,Healthcare,4.5,First Lien
+co_1f7503facb1e,Taoglas USA Holdings Inc.,1,BCIC,1.61,Software & Technology,7.25,First Lien
 co_618f81314875,Sparq Holdings Inc.,1,MRCC,1.61,Software & Technology,5.75,First Lien
 co_7f9eb1f9e5d1,IHS Parent Holdings LP.,1,PNNT,1.61,,0.0,Other Equity
 co_3b049f792467,Trulite Holding Corp.,1,TCPC,1.61,Industrials,6.0,First Lien
@@ -5292,7 +5290,7 @@ co_510e73a4dd01,Creative Artists Agency,1,SAR,1.57,Media & Entertainment,2.5,Fir
 co_3b49f279654d,IT Services Crewline Buyer,1,TCPC,1.57,Software & Technology,6.75,Revolver
 co_d81df964106b,DailyPay Inc.,1,TRIN,1.57,Insurance,0.0,First Lien
 co_c6bd7c6d434e,Application Boot Camp LLC,1,BBDC,1.56,Consumer & Retail,5.0,Revolver
-co_1f7503facb1e,Taoglas USA Holdings Inc.,1,BCIC,1.56,Software & Technology,7.25,First Lien
+co_9cd37bfa4cc2,Phoenix Aviation Capital LLC,1,BCIC,1.56,Aerospace & Defense,0.0,Second Lien
 co_74d47cb88f75,Allium Buyer LLC,1,BXSL,1.56,,5.0,First Lien
 co_7cc6c0433f26,Prototek LLC,1,MRCC,1.56,Business Services,7.85,First Lien
 co_6a9a0c4b581c,Husky Injection Molding Systems Ltd.,1,OCSL,1.56,Industrials,3.75,First Lien
@@ -5302,10 +5300,9 @@ co_274c1e3e9080,Gryphon Acquire NewCo LLC,1,OCSL,1.56,Software & Technology,3.0,
 co_2f37d97386c8,Carolina Skiff LLC,1,RAND,1.56,,0.0,Other
 co_5ad06f9c17f8,Xperi Corp.,1,SAR,1.56,,2.5,First Lien
 co_ef30e02b17be,IT Services Idera,1,TCPC,1.56,Software & Technology,6.75,Second Lien
-co_805403b264e7,Fusion Parent LLC,1,BCIC,1.55,Consumer & Retail,0.0,Subordinated Debt
 co_828db6b0d1df,"Camin Cargo Control Holdings, Inc.",1,MFIC,1.55,Energy,5.5,First Lien
 co_3680a1cb8e81,Guernsey Holdings SDI LA LLC,1,MFIC,1.55,Healthcare,0.0,First Lien
-co_bade135179e1,JEGS Automotive 2,1,NCDL,1.55,Automotive,7.0,First Lien
+co_0fe7015f2eb1,JEGS Automotive 1,1,NCDL,1.55,Automotive,7.0,First Lien
 co_166f6d1e9742,Darktrace Finco US LLC,1,OCSL,1.55,Software & Technology,3.25,First Lien
 co_5c31315d363a,Culligan Holding Inc.,1,OCSL,1.55,Consumer & Retail,3.0,First Lien
 co_74a62a135296,Flynn Restaurant Group LP,1,OCSL,1.55,Food & Beverage,3.75,First Lien
@@ -5324,7 +5321,7 @@ co_cb643d0b0359,Strata Information Group Inc.,1,CCAP,1.51,Software & Technology,
 co_fc0090149f31,HIG Intermediate Inc.,1,CGBD,1.51,Financial Services,10.5,Other Equity
 co_4cb7a2b441ae,Lacker Bidco Ltd.,1,GBDC,1.51,,5.67,First Lien
 co_211c38a87f3b,RSK Holdings Inc.,1,MSDL,1.51,Software & Technology,10.5,Preferred Equity
-co_875a37ca683c,Northwoods Capital 20 Ltd.,1,OCSL,1.51,,6.88,First Lien
+co_87eac90cb40c,Northwoods Capital 25 Ltd.,1,OCSL,1.51,,6.88,First Lien
 co_e2b63f385373,RC Buyer Inc.,1,PSBD,1.51,,3.5,First Lien
 co_0b907fce283a,OCP 2016-11A D2R3,1,SAR,1.51,,4.1,First Lien
 co_7a817c88edaf,REGT6 2016-1A ER3,1,SAR,1.51,,5.45,First Lien
@@ -5344,9 +5341,9 @@ co_4b974d9e0beb,PG Source Investments,1,SAR,1.5,Financial Services,0.0,Preferred
 co_234cca35ea3a,BSP 2020-21A ER2,1,SAR,1.5,,4.95,First Lien
 co_f7ed1f72e7fb,Hilton Domestic Operating Company Inc.-Hotel,1,SAR,1.5,,1.75,First Lien
 co_4fcee445bbda,Construction Technology Nexii Inc.,1,TRIN,1.5,Software & Technology,0.0,Preferred Equity
+co_805403b264e7,Fusion Parent LLC,1,BCIC,1.49,Consumer & Retail,0.0,Subordinated Debt
 co_8b6f9b70f5ab,Signant Finance One Ltd.,1,GBDC,1.49,Healthcare,4.75,First Lien
 co_0bea07dd5b88,CMP Ren Partners I-A LP,1,NCDL,1.49,Financial Services,0.0,Other Equity
-co_9cd37bfa4cc2,Phoenix Aviation Capital LLC,1,BCIC,1.48,Aerospace & Defense,0.0,Subordinated Debt
 co_4a7af5cab0de,Events Software BidCo Pty Ltd.,1,BBDC,1.47,Business Services,6.5,First Lien
 co_7a7c59ae2580,AGI Group Holdings LP,1,BXSL,1.47,,0.0,Common Equity
 co_32305fc97f0d,US Corporate Debt Second Lien Senior Secured Cannabis Remedy - Maryland Wellness,1,LIEN,1.47,Healthcare,9.0,Delayed Draw
@@ -5355,6 +5352,7 @@ co_98fef670d4cb,G Treasury SS LLC,1,MFIC,1.46,,0.0,First Lien
 co_d08ceabfb404,"Omada Health, Inc.",1,MFIC,1.46,Automotive,0.0,First Lien
 co_aacea6e2fb71,GoNoodle Inc.,1,RAND,1.46,,0.0,First Lien
 co_b8ac68b39b37,Charlotte Buyer,1,SAR,1.46,Business Services,4.25,First Lien
+co_b17e657373e6,Fusion Buyer LLC,1,SAR,1.46,Consumer & Retail,8.0,First Lien
 co_22164b18f4c0,Huckabee Acquisition,1,TCPC,1.46,Business Services,5.25,First Lien
 co_f690a3b93c6b,Stark International Lux 2,1,BXSL,1.45,,5.0,First Lien
 co_69d51c195abf,"KCF Puerto Rico, LLC",1,MFIC,1.45,,0.0,Other Debt
@@ -5362,10 +5360,9 @@ co_6d30d8b6050f,KNS MidCo Corp.,1,ICMB,1.44,Diversified,5.0,Other Equity
 co_7a02e5dd085a,Primo Brands Corp.,1,SAR,1.44,,2.25,First Lien
 co_385dd9c4b0a4,Zekelman Industries Inc.,1,SAR,1.44,Chemicals & Materials,2.25,First Lien
 co_87d0ed17876d,BPII-JL Group Holdings LP,1,WHF,1.44,,0.0,Other Equity
-co_d79e72d1d24d,Pomeroy Technologies LLC,1,BCIC,1.43,Software & Technology,0.0,First Lien
-co_e8959b137f54,PMP OPCO LLC,1,BCIC,1.43,Consumer & Retail,8.5,First Lien
 co_936269346449,Palmetto Moon LLC,1,FDUS,1.43,Financial Services,0.0,Common Equity
 co_11f2ac765f9e,Walor North America Inc.,1,GECC,1.43,,5.75,First Lien
+co_ca1d11903966,Epilog Partners SPV III LLC,1,BCIC,1.42,Healthcare,0.0,Subordinated Debt
 co_8df2e6b56983,Swift Aggregator LLC,1,BCIC,1.42,Media & Entertainment,0.0,Subordinated Debt
 co_de832f2c7d07,Kleen-Tech Acquisition LLC,1,BCIC,1.42,Business Services,0.0,Second Lien
 co_d894d97d3e28,Project Alpha Intermediate Holdings Inc.^,1,GBDC,1.42,Consumer & Retail,0.0,Partnership Interest
@@ -5373,17 +5370,16 @@ co_45461dc3df3b,"BlueVine Capital, Inc.",1,TPVG,1.42,Financial Services,0.0,
 co_92a8e4914f91,HPS Loan Management Ltd.,1,OCSL,1.41,Business Services,5.35,First Lien
 co_8cc30a755638,PM Acquisition LLC,1,OFS,1.41,,0.0,Common Equity
 co_bf94b98c3de8,- Pediatric Associates Holding Company LLC,1,SAR,1.41,Healthcare,3.25,First Lien
-co_e0c1bcf46151,"Dodge Data & Analytics, LLC",1,BCIC,1.4,Industrials,5.5,First Lien
 co_2a91aa839a2c,"Arsenal AIC Parent, LLC",1,OBDC,1.4,Business Services,2.75,
 co_5d719a698d0a,Mountain Regional Equipment Solutions,1,RAND,1.4,Industrials,0.0,First Lien
 co_0a929a15303f,ITA Acquisition LLC,1,RAND,1.4,,0.0,First Lien
-co_ca1d11903966,Epilog Partners SPV III LLC,1,BCIC,1.39,Healthcare,0.0,Subordinated Debt
+co_e0c1bcf46151,"Dodge Data & Analytics, LLC",1,BCIC,1.39,Industrials,5.5,First Lien
 co_30bf153af5cf,Durare Bidco LLC,1,BBDC,1.38,Software & Technology,4.75,Revolver
+co_12496376c720,CB Midco LLC,1,BCIC,1.38,Consumer & Retail,0.0,First Lien
 co_fb2dd0bf7b28,REP Coinvest III- A Omni LP.,1,BCSF,1.38,Telecommunications,0.0,Other Equity
 co_2f51146be411,Batteries Plus Holding Corp.,1,GBDC,1.38,Consumer & Retail,0.0,Partnership Interest
 co_db48794d230d,"Provivi, Inc.",1,HRZN,1.38,Healthcare,5.36,First Lien
 co_e6c75a82e322,Rackspace Technology Global,1,SAR,1.38,Software & Technology,4.5,First Lien
-co_12496376c720,CB Midco LLC,1,BCIC,1.37,Consumer & Retail,0.0,First Lien
 co_3c635018480b,Language Education Holdings GP LLC,1,CION,1.37,Education,0.0,Other Equity
 co_9391f49a8822,Victra Holdings LLC,1,GECC,1.36,,3.75,First Lien
 co_49ac949d4855,Icon Partners V C LP.,1,PFLT,1.36,,0.0,Other Equity
@@ -5393,13 +5389,15 @@ co_4407224bace2,Lifetime Brands,1,SAR,1.36,Consumer & Retail,5.5,First Lien
 co_7e1b5a9a0b2b,DT1 Midco Corp.,1,NMFC,1.34,,5.0,First Lien
 co_87ec014ceaa0,Garrett LX III S.a r.l.,1,SAR,1.34,,2.0,First Lien
 co_988680983615,Pico Quantitative Trading Holdings,1,TCPC,1.34,Financial Services,0.0,Warrants
+co_d79e72d1d24d,Pomeroy Technologies LLC,1,BCIC,1.33,Software & Technology,0.0,First Lien
 co_ce2d69c21cf0,ABC Legal Holdings LLC,1,GBDC,1.33,Consumer & Retail,4.5,First Lien
 co_1f357e6106d5,PowerStop LLC,1,GECC,1.33,,4.75,First Lien
 co_86cc410736fc,Knife River Corp.,1,OBDC,1.33,Real Estate,2.0,
 co_7ef49927a4e9,Senior Secured Ivanti Software,1,PSBD,1.33,Financial Services,7.25,Second Lien
 co_44063ae8a739,LEP SAL Co-Invest LP.,1,BCSF,1.32,Containers & Packaging,0.0,Other Equity
 co_d017ff732a2c,RTS Holding Inc.,1,TRIN,1.32,Software & Technology,0.0,First Lien
-co_d8a9d21b01fe,"TG THERAPEUTICS, INC.",1,HTGC,1.31,Healthcare,0.0,Common Equity
+co_01623d649ccb,Help Systems Holdings Inc.,1,BCIC,1.31,Software & Technology,6.0,First Lien
+co_d8a9d21b01fe,"TG Therapeutics, Inc.",1,HTGC,1.31,Healthcare,0.0,Common Equity
 co_bf324416de35,Cobham Slip Rings SAS,1,BBDC,1.3,Industrials,6.0,First Lien
 co_4d406d38c9b0,IGT Holding IV AB,1,OBDC,1.3,Business Services,3.5,
 co_d1c52cbea5ea,Professional Services,1,ICMB,1.29,Business Services,0.0,Other Equity
@@ -5408,8 +5406,10 @@ co_ad757299f905,Avison Young Inc.,1,OFS,1.29,,8.0,First Lien
 co_79e59a14bbe4,"zSpace, Inc.",1,RWAY,1.29,Software & Technology,0.0,Common Equity
 co_4110ff754813,Marriott Ownership Resorts Inc.-Hotel,1,SAR,1.29,Healthcare,2.25,First Lien
 co_02ccc516831f,Complete Equipment Rentals LLC,1,SLRC,1.29,Business Services,0.0,First Lien
+co_75416ba641b0,Westshore RAM LLC,1,BCIC,1.28,Financial Services,0.0,Preferred Equity
 co_3d0f3b1061ba,Cleanova Topco Limited Component Manufacturing Preferred Equity (746893 shares) Investment date 6/12/2025,1,FDUS,1.28,,0.0,Other Equity
 co_bebacac31551,Kingsley Gate Partners LLC,1,MRCC,1.28,Business Services,6.65,First Lien
+co_c335dde0c2c5,AAPC Holdings LLC,1,BCIC,1.27,Healthcare,0.0,Subordinated Debt
 co_b8f765001160,OSP Gannett Aggregator LP,1,NCDL,1.27,Distribution & Wholesale,0.0,Other Equity
 co_a6fcfcea84f7,Par Technology Corp.,1,OBDC,1.27,Food & Beverage,5.0,
 co_8470ebc7925c,TREST 2017-1A ERR,1,SAR,1.27,,5.95,First Lien
@@ -5435,7 +5435,6 @@ co_87b7471d611f,Cynet Security Ltd.,1,GBDC,1.23,,0.0,Preferred Equity
 co_979f0e5eed51,423 HAR LP,1,MAIN,1.23,,0.0,Partnership Interest
 co_7910a1b7a529,Otranto Park Multi-Sector Holdings,1,OCSL,1.23,,5.4,First Lien
 co_91df1f160878,Endure Digital,1,SAR,1.23,Software & Technology,3.5,First Lien
-co_c335dde0c2c5,AAPC Holdings LLC,1,BCIC,1.22,Healthcare,0.0,Subordinated Debt
 co_b37159358300,TLC Holdco LP,1,BCSF,1.22,Consumer & Retail,0.0,Other Equity
 co_592387f72ee0,Events TopCo LP,1,PFLT,1.22,,0.0,Other Equity
 co_25889553d426,Ultra Clean Holdings,1,SAR,1.22,Software & Technology,2.75,First Lien
@@ -5456,9 +5455,9 @@ co_308cf531c163,ACCELERATION LLC,1,CSWC,1.17,,0.0,Preferred Equity
 co_b7a989ccbed2,AlbaCore Euro CLO VI Multi-Sector Holdings,1,OCSL,1.17,,5.65,First Lien
 co_cf4c237f871e,DecksDirect LLC,1,BBDC,1.16,Consumer & Retail,6.38,Common Equity
 co_e21aceae96db,Ambrosia Topco LLC,1,NMFC,1.16,,0.0,Common Equity
-co_b459bb56ba55,Parexel International Corp.,1,OCSL,1.16,Healthcare,3.75,First Lien
+co_b459bb56ba55,PAREXEL International Corp.,1,OCSL,1.16,Healthcare,3.75,First Lien
 co_8dc597c1fd2b,Garda World Security Corp.,1,OCSL,1.16,Industrials,3.0,First Lien
-co_7f13d94e326d,GOLDEN WEST PACKAGING GROUP LLC,1,SAR,1.16,Containers & Packaging,5.25,First Lien
+co_7f13d94e326d,Golden West Packaging Group LLC,1,SAR,1.16,Containers & Packaging,5.25,First Lien
 co_27d8437e8988,Anacomp,1,TCPC,1.16,Business Services,0.0,Common Equity
 co_39214f9634dc,Broadstreet Partners Group LLC,1,OCSL,1.15,Insurance,2.75,First Lien
 co_7cd2daf867ff,Instructure Holdings Inc.,1,OCSL,1.15,Software & Technology,2.75,First Lien
@@ -5473,6 +5472,7 @@ co_c2b19722073e,American Auto Auction Group LLC,1,OCSL,1.13,Business Services,4.
 co_889f8b2d517c,Bowlmor AMF Corp.,1,OCSL,1.13,Healthcare,3.25,First Lien
 co_020e50af72e8,MA Micro Ltd.,1,TPVG,1.13,Consumer & Retail,0.0,
 co_c27730f2debc,Marketing Media and Entertainment Incontext Solutions Inc.,1,TRIN,1.13,Media & Entertainment,0.0,First Lien
+co_82258751d0e0,BGPT Maverick LP.,1,BCIC,1.12,Software & Technology,0.0,Subordinated Debt
 co_8e3698eae302,AI Altius Luxembourg S.à r.l.,1,BXSL,1.12,,9.75,First Lien
 co_a249e355b623,Loadmaster Derrick & Equipment Inc.,1,CCAP,1.12,Energy,0.0,First Lien
 co_dfb9acf741a8,Trading Companies & Distributors,1,ICMB,1.12,Distribution & Wholesale,0.0,Other Equity
@@ -5503,14 +5503,15 @@ co_c47584783968,Sweep Midco LLC,1,MSDL,1.05,Business Services,0.0,Second Lien
 co_cd67afd6e6f5,Watchtower Buyer LLC. - Funded Revolver Acquisition,1,PNNT,1.05,,6.0,First Lien
 co_32d618ec626d,"Overtime Sports, Inc.",1,TPVG,1.05,Media & Entertainment,0.0,
 co_e76d85b3e088,Compass Precision LLC,1,BBDC,1.04,Aerospace & Defense,0.0,Subordinated Debt
-co_1067dfc21093,EFC International 2,1,BBDC,1.04,Business Services,11.0,Unsecured Debt
+co_ec062a743c23,EFC International 1,1,BBDC,1.04,Business Services,11.0,Unsecured Debt
 co_8f96aec1ef7a,PKF O'Connor Davies Advisory LLC,1,BXSL,1.04,,4.5,First Lien
 co_f91103bf2dfe,Janus Health Technologies Inc.,1,FDUS,1.04,Financial Services,0.0,Preferred Equity
 co_722573ec0a24,Menlo Ridgeview Co-Invest LLC,1,GBDC,1.04,Software & Technology,0.0,Other Equity
 co_68219570cf34,"Metropolis Technologies, Inc.",1,TPVG,1.04,Software & Technology,0.0,Warrants
 co_cd75c6c96823,SSCP Spring Bidco 3 Ltd.,1,BBDC,1.03,Healthcare,6.45,First Lien
+co_053831537dc7,Princeton Medspa Partners LLC,1,BCIC,1.03,Consumer & Retail,0.0,Warrants
 co_e4e775d18f08,SVI International LLC,1,BBDC,1.02,Automotive,6.75,Revolver
-co_82258751d0e0,BGPT Maverick LP.,1,BCIC,1.02,Software & Technology,0.0,Subordinated Debt
+co_61b30a115c8d,DeltaDx Limited LP,1,BCIC,1.02,Financial Services,0.0,Subordinated Debt
 co_12a8078d5f52,Trident TPI Holding,1,GECC,1.02,Containers & Packaging,0.0,Unsecured Debt
 co_0c722136062c,Aurora Acquireco Inc.,1,GSBD,1.02,,4.5,First Lien
 co_e5061cbbaf0e,BTR Opco LLC,1,MRCC,1.02,Automotive,8.76,First Lien
@@ -5536,7 +5537,6 @@ co_a231328a1a62,WMG Acquisition Corp.,1,OBDC,1.0,Healthcare,1.75,
 co_2ed966c29d99,POST 2023-1A D2R,1,SAR,1.0,,3.95,First Lien
 co_e311519042ad,Baker Manufacturing Company LLC,1,SCM,1.0,Industrials,0.0,Other Equity
 co_96b4e4904a7b,"Savage X, Inc.",1,TPVG,1.0,Consumer & Retail,0.0,Other Debt
-co_053831537dc7,Princeton Medspa Partners LLC,1,BCIC,0.99,Consumer & Retail,0.0,Warrants
 co_f8b42777095c,Natus Medical Inc.,1,GECC,0.99,Healthcare,5.25,First Lien
 co_61359b5b224f,Solarplicity UK Holdings Ltd.,1,MFIC,0.99,Energy,0.0,First Lien
 co_9e19403cc578,"KBR, Inc.",1,OBDC,0.99,Aerospace & Defense,2.0,
@@ -5597,7 +5597,6 @@ co_adad1111df2c,Lattice Group Holdings Bidco Ltd.,1,BBDC,0.9,Software & Technolo
 co_49c7ae907c0e,E-Tech Holdings partnership LP.,1,NCDL,0.9,,0.0,Other Equity
 co_cb2cf1235ae2,"Credit Sesame, Inc.",1,RWAY,0.9,Consumer & Retail,0.0,Warrants
 co_bbcf793cb2d5,Parkview Dental Holdings LLC,1,BBDC,0.89,Healthcare,8.28,First Lien
-co_61b30a115c8d,DeltaDx Limited LP,1,BCIC,0.89,Financial Services,0.0,Subordinated Debt
 co_8beff9f25a62,Health care providers & services - Redwood MSO,1,KBDC,0.89,Healthcare,0.0,Delayed Draw
 co_4a0e32b3f6f6,Conviva Inc.,1,OCSL,0.89,,0.0,Preferred Equity
 co_3bc59886479d,Peltram Group Holdings LLC,1,SCM,0.88,,0.0,First Lien
@@ -5662,6 +5661,7 @@ co_490c80dc2069,Abacus JV,1,FSK,0.8,,0.0,Other Equity
 co_3a6b70e82e45,Rokt Inc.,1,GBDC,0.8,Software & Technology,0.0,Common Equity
 co_896148b2808a,AmerCareRoyal LLC,1,NCDL,0.8,Food & Beverage,5.0,First Lien
 co_dff7aba82c1a,US Renal Care Inc.,1,OCSL,0.8,Healthcare,5.0,First Lien
+co_3f8b7b46efaa,BMP Slappey Holdco LLC,1,BCIC,0.79,Telecommunications,0.0,Subordinated Debt
 co_9540a17c3164,LKCM Headwater Investments I LP.,1,MAIN,0.79,Financial Services,0.0,Partnership Interest
 co_64ad349ae0f8,Mitel Networks (International) Ltd.,1,MFIC,0.79,,0.0,Common Equity
 co_2d8b0f83efef,BCPE Grill Parent Inc.,1,OCSL,0.79,Food & Beverage,4.75,First Lien
@@ -5731,9 +5731,10 @@ co_0d60f736667f,"FCP-Hive Holdings, LLC",1,MFIC,0.65,,0.0,Preferred Equity
 co_63ba5365a2ae,Pegasus Aggregator Holdings LP,1,NCDL,0.65,,0.0,Other Equity
 co_19326b14820e,"Dodge Construction Network Holdings, LP.",1,OBDC,0.65,Industrials,8.25,
 co_bb7f31559260,"INRIX, Inc.",1,RWAY,0.65,Software & Technology,0.0,Warrants
+co_6ffd54af3ae3,Everyware Global Inc.,1,BCIC,0.64,Consumer & Retail,0.0,Subordinated Debt
 co_6bd0d826c0ac,Retailing Palmetto Moon LLC,1,CCAP,0.64,Consumer & Retail,0.0,Other Equity
 co_8412c885ff42,USAW Parent LLC,1,NCDL,0.64,Utilities: Water,0.0,Other Equity
-co_b36e25a72c09,Duggal Equity LP,1,PFLT,0.64,,0.0,Other Equity
+co_b36e25a72c09,DUGGAL EQUITY LP,1,PFLT,0.64,,0.0,Other Equity
 co_512dd4c20f1a,Events Buyer LLC,1,PNNT,0.64,,0.0,Other Equity
 co_8010cce59b39,Wash & Wax Systems. LLC,1,PNNT,0.64,,0.0,Other Equity
 co_0932e766c392,Veronica Holdings LLC,1,SLRC,0.64,Healthcare,0.0,Other Equity
@@ -5762,7 +5763,6 @@ co_9c8749dc558a,OSG Topco Holdings LLC,1,NCDL,0.6,Business Services,0.0,Other Eq
 co_de36294c58c5,Tinicum Space Coast Holdings LLC,1,PNNT,0.6,,0.0,Other Equity
 co_fe1703632f30,Ingram Micro Inc.,1,SAR,0.6,,2.25,First Lien
 co_e74147125107,Trans Union LLC,1,SAR,0.6,,1.75,First Lien
-co_3f8b7b46efaa,BMP Slappey Holdco LLC,1,BCIC,0.59,Telecommunications,0.0,Second Lien
 co_8f6d39b2a4db,Sequence Parent,1,CCAP,0.59,Healthcare,0.0,Other Equity
 co_1b3f30d2a9bd,DCCM LLC,1,GBDC,0.59,Industrials,4.75,First Lien
 co_e3f357607ec1,Total OfferUp Inc.,1,HTGC,0.59,Consumer & Retail,0.0,Other Equity
@@ -5778,7 +5778,6 @@ co_390ecf6227b3,Reorganized Careismatic Brands Buyer LLC.,1,NMFC,0.57,,0.0,First
 co_980cefea8459,Multi-Sector Holdings AZ-VC Fund I LLC,1,TRIN,0.57,,0.0,Other Equity
 co_8b55248cf190,Insurance Evolution BuyerCo,1,CCAP,0.56,Insurance,0.0,Common Equity
 co_f7e9ab676122,Fuse LLC.,1,MAIN,0.56,,0.0,First Lien
-co_6ffd54af3ae3,Everyware Global Inc.,1,BCIC,0.55,Consumer & Retail,0.0,Subordinated Debt
 co_8ad9be062016,TLB Holdings I LLC,1,GBDC,0.55,Consumer & Retail,4.75,First Lien
 co_607249f7575b,Grosvenor,1,OBDC,0.55,Automotive,2.25,
 co_64064fea3fd6,Windstream Holdings Inc.,1,OCSL,0.55,Telecommunications,4.75,First Lien
@@ -5794,6 +5793,7 @@ co_e3cbe193b324,Le Berger SA,1,BCSF,0.52,Containers & Packaging,3.75,Delayed Dra
 co_4ac574ec9703,"Cresta Intelligence, Inc.",1,TPVG,0.52,Software & Technology,0.0,Warrants
 co_b8fe923f8475,Zandivio PLC,1,TRIN,0.52,,0.0,Common Equity
 co_7f016f63dbf3,Openly Holdings Corp.,1,TRIN,0.52,Insurance,0.0,Other Equity
+co_7e1567601073,FP WRCA Coinvestment Fund VII Ltd.,1,BCIC,0.51,Industrials,0.0,Preferred Equity
 co_e81fa6cf3e04,"NS NWN Acquisition, LLC,",1,CION,0.51,,0.0,Other Equity
 co_004acacc05bc,"Graffiti Parent, LP",1,MFIC,0.51,Distribution & Wholesale,0.0,Common Equity
 co_07c849498239,FBG Holdings LLC,1,NCDL,0.51,Consumer & Retail,0.0,Other Equity
@@ -5862,10 +5862,11 @@ co_06bc3c7bc0e9,Innophos Inc.,1,SAR,0.44,,4.25,First Lien
 co_70aa48328c90,True Footage Inc.,1,TPVG,0.44,Real Estate,0.0,Other Debt
 co_cd4ab633eb4d,"Signifyd, Inc.",1,TPVG,0.44,Software & Technology,0.0,
 co_be943ee99ae1,Canadian Orthodontic Partners Corp.,1,BBDC,0.43,Healthcare,7.0,First Lien
+co_ae42ded64536,DxTx Pain and Spine LLC,1,BCIC,0.43,Healthcare,0.0,Subordinated Debt
 co_552a21f42be7,Tricor Horizon - LP,1,BXSL,0.43,,0.0,Other Equity
 co_87ad53045391,Services One,1,PSBD,0.43,Healthcare,0.0,Other Equity
 co_c9e24b9b3be7,Worldremit Group Limited (United Kingdom) Series X Shares,1,TCPC,0.43,Diversified,0.0,Other Equity
-co_6c8e4d3be3c5,MRH Trowe Beteiligungsgesellschaft mbH,1,BXSL,0.42,,5.0,First Lien
+co_6c8e4d3be3c5,MRH Trowe Beteiligungsgesellschaft MBH,1,BXSL,0.42,,5.0,First Lien
 co_ae3ce6a1bd99,NECB Collections LLC,1,MRCC,0.42,Consumer & Retail,11.0,First Lien
 co_55078d2025c1,Phoenix Chemical Holding Company LLC,1,MRCC,0.42,Chemicals & Materials,7.11,First Lien
 co_fd0ad2e8616a,"Maia Aggregator, LP",1,OBDC,0.42,Healthcare,0.0,
@@ -5892,7 +5893,7 @@ co_098761b47fc1,Alvotech Holdings S.A.,1,OCSL,0.4,,0.0,Common Equity
 co_977598bc6e6c,Trinitas CLO VIII Ltd.,1,OFS,0.4,,0.0,Subordinated Debt
 co_ba7406135209,"Thoughtspot, Inc.",1,TPVG,0.4,Software & Technology,0.0,Warrants
 co_b80c51fd4fb2,Capsule Corp.,1,TPVG,0.4,Food & Beverage,0.0,
-co_7e1567601073,FP WRCA Coinvestment Fund VII Ltd.,1,BCIC,0.39,Industrials,0.0,Preferred Equity
+co_992a997cdcb8,BMP Slappey Investment II,1,BCIC,0.39,Telecommunications,0.0,Subordinated Debt
 co_7de94b888dc6,Profile Holdings I LP,1,CGBD,0.39,Chemicals & Materials,0.0,Other Equity
 co_57a545d645a1,Tebra Technologies Inc.,1,GBDC,0.39,Healthcare,0.0,Warrants
 co_7e21a1b13db7,NM GP Holdco LLC,1,NMFC,0.39,,0.0,Other Equity
@@ -5912,7 +5913,6 @@ co_4e37cf23c7f9,BCC CPK investments 1 LLC,1,BCSF,0.37,Food & Beverage,0.0,Other 
 co_e3782a299b39,Bird Scooter Acquisition Corp.,1,MFIC,0.37,Transportation & Logistics,0.0,Common Equity
 co_8d6788d5f897,"ConvergeOne Holdings, Inc.",1,OXSQ,0.37,,0.0,First Lien
 co_b61690475da5,Polymer Solutions Group Holdings LLC,1,BBDC,0.36,Chemicals & Materials,7.0,First Lien
-co_ae42ded64536,DxTx Pain and Spine LLC,1,BCIC,0.36,Healthcare,0.0,Subordinated Debt
 co_30aa3595bf8e,Eagan Parent Inc.,1,BXSL,0.36,,4.5,First Lien
 co_278e2c5d3468,Sinch AB,1,CGBD,0.36,Software & Technology,0.0,Other Equity
 co_0dd585ae6ee2,Funds & Vehicles Investments and System Software and Liberty Zim Co-Invest LP. Investment Funds & Vehicles Acquisition Date 7/21/2022,1,HTGC,0.36,,0.0,Other
@@ -5991,7 +5991,6 @@ co_e057f9001f66,Geds Equity Investors LP,1,NCDL,0.27,Business Services,0.0,Other
 co_d2ca1f80141c,PUG LLC,1,SAR,0.27,,4.75,First Lien
 co_02546d7334b2,"Flo Health, Inc.",1,TPVG,0.27,Software & Technology,0.0,Warrants
 co_3bb600b9f3df,"RudderStack, Inc.",1,TPVG,0.27,Software & Technology,0.0,Warrants
-co_992a997cdcb8,BMP Slappey Investment II,1,BCIC,0.26,Telecommunications,0.0,Second Lien
 co_33c0e21b456a,PowerGrid Services Acquisition LLC,1,FDUS,0.26,Financial Services,0.0,Common Equity
 co_f5e89e48bdd8,SC Landco Parent LLC,1,GBDC,0.26,Real Estate,0.0,Common Equity
 co_9b2ef2269108,Oportun,1,HTGC,0.26,Consumer & Retail,0.0,Common Equity
@@ -5999,6 +5998,7 @@ co_54f47d7bde91,"Nutpods Holdings, Inc.",1,MFIC,0.26,,0.0,Common Equity
 co_092664305822,PREIT Associates,1,PFX,0.26,Real Estate,0.0,First Lien
 co_0a2c2deb4875,Zamborelli Enterprises Pacific Southern Foundation,1,SLRC,0.26,Consumer & Retail,0.0,First Lien
 co_e78b608ee62d,"Corelight, Inc.",1,TPVG,0.26,Software & Technology,0.0,
+co_a18ab0f386f4,Freedom Electronics LLC,1,BCIC,0.25,Software & Technology,0.0,Subordinated Debt
 co_e508a06c4deb,Blue Ribbon LLC,1,GECC,0.25,,8.0,First Lien
 co_9082e7c5194e,"Alcresta Holdings, LP",1,MFIC,0.25,Healthcare,0.0,Common Equity
 co_4fc00ac75ab0,"WC ORS Holdings, LP.",1,MFIC,0.25,Distribution & Wholesale,0.0,Common Equity
@@ -6007,7 +6007,6 @@ co_4c956e449355,Liftforward SPV II LLC,1,MRCC,0.25,,10.86,First Lien
 co_ebda6135ee1f,Alterra Mountain Company,1,SAR,0.25,,2.5,First Lien
 co_249e17dbdd88,True Global Ventures 4 Plus Pte Ltd**,1,SSSS,0.25,,0.0,Other
 co_a1efd0ef4b8f,GPNZ II GmbH,1,BBDC,0.24,Healthcare,6.0,First Lien
-co_a18ab0f386f4,Freedom Electronics LLC,1,BCIC,0.24,Software & Technology,0.0,Subordinated Debt
 co_9098e9fef80c,Certify Inc.,1,CCAP,0.24,Software & Technology,0.0,Common Equity
 co_a2420d82bbd6,CIP Revolution Holdings LLC,1,CGBD,0.24,Media & Entertainment,0.0,Other Equity
 co_91ea213ef214,PRGX Global Inc.,1,OCSL,0.24,,0.0,Common Equity
@@ -6049,7 +6048,7 @@ co_6120273cfcb8,Salt & Straw LLC,1,GLAD,0.19,,0.0,Warrants
 co_f5782372030d,"Owl Parent Holdings, LLC",1,MFIC,0.19,Media & Entertainment,0.0,Common Equity
 co_105dc455af71,Informatica Corp.,1,OBDC,0.19,Software & Technology,2.25,
 co_99651156af26,"Transfix, Inc.",1,TPVG,0.19,Business Services,0.0,
-co_e190fccfa5b5,"AvantStay, Inc.",1,TPVG,0.19,Consumer & Retail,0.0,
+co_e190fccfa5b5,"Avantstay, Inc.",1,TPVG,0.19,Consumer & Retail,0.0,
 co_c4d3872bdc11,"HomeLight, Inc.",1,TPVG,0.19,Real Estate,0.0,
 co_b83f4f8d8b97,"Roofstock, Inc.",1,TPVG,0.19,,0.0,
 co_06e954dada8e,Cassipoee SASU,1,BXSL,0.18,,4.5,First Lien
@@ -6095,7 +6094,7 @@ co_7c4f4ab052b2,Foursquare Labs,1,TCPC,0.14,Software & Technology,0.0,Preferred 
 co_09562cab2286,Lark Technologies Inc.,1,TRIN,0.14,Healthcare,0.0,First Lien
 co_9afb9b84c3d5,Hermeus Corp.,1,TRIN,0.14,Aerospace & Defense,0.0,First Lien
 co_8521e3325707,A&A Global Imports LLC,1,CCAP,0.13,Materials,0.0,First Lien
-co_2386c718dd96,Gordon Brothers Finance Company Unsecured Debt Ref LIBOR(M) Floor 1.00% Spread 11.00% Total Coupon 15.36% Maturity 10/31/2025,1,TCPC,0.13,Diversified,11.0,First Lien
+co_8fa1d4e1480a,Gordon Brothers Finance Company Unsecured Debt Ref LIBOR(M) Floor 1.00% Spread 11.00% Total Coupon 15.96% Maturity 10/31/2025,1,TCPC,0.13,Diversified,11.0,First Lien
 co_6a04382a8de0,Gordon Brothers Finance Company,1,TCPC,0.13,Financial Services,11.0,Unsecured Debt
 co_ae6fd818f892,Equafin Corp.,1,TPVG,0.13,Business Services,0.0,Other Debt
 co_b8df4cf770bf,"DialPad, Inc.",1,TPVG,0.13,Software & Technology,0.0,Warrants
@@ -6112,7 +6111,7 @@ co_febcedf91473,Rotten Rock Hardscaping & Tree Service,1,SLRC,0.12,Consumer & Re
 co_2773f30bbf27,Aledia Inc.,1,TRIN,0.12,,0.0,Warrants
 co_7a5e082b45e3,CMR Surgical Ltd.,1,TRIN,0.12,Healthcare,0.0,Other Equity
 co_4899b07e3e1b,Motivational CIV,1,WHF,0.12,,0.0,Other Equity
-co_2bab5840a11f,Catamaran CLO 2018-1 Ltd.,1,BCIC,0.11,Financial Services,0.0,Subordinated Debt
+co_b1b93e6d425a,Catamaran CLO 2015-1 Ltd.,1,BCIC,0.11,Financial Services,0.0,Subordinated Debt
 co_4e1ddbc6855a,Tronair Parent Inc.,1,GBDC,0.11,Aerospace & Defense,0.0,Other Equity
 co_62e533d1eb00,Total Achronix Semiconductor Corp.,1,HTGC,0.11,Software & Technology,0.0,Other Equity
 co_87c5da924672,"Fulfil Solutions, Inc.",1,HTGC,0.11,,0.0,Common Equity
@@ -6120,7 +6119,6 @@ co_ea0193e2e28b,Archos Capital Group,1,LIEN,0.11,,5.75,Delayed Draw
 co_535cd53fbe86,Paladone Group Holdings Ltd.,1,MFIC,0.11,Healthcare,0.0,Common Equity
 co_639e9ca9e3e5,PAI Co-Investor FT Aggregator LLC,1,MFIC,0.11,,0.0,Common Equity
 co_808143fa57b5,Complete Case LLC,1,SCM,0.11,,0.0,Other Equity
-co_97b3ca6d035f,"Sundance Holdings Group, LLC",1,BCIC,0.1,Consumer & Retail,0.0,First Lien
 co_2d06b43a6b81,East River Bidco GmbH,1,BXSL,0.1,,5.25,First Lien
 co_fe858ba60f31,BlackRock ICS US Treasury Fund,1,BXSL,0.1,,0.0,Other
 co_31f39c502989,Leia Acquisition Ltd.,1,FSK,0.1,Business Services,10.0,First Lien
@@ -6130,7 +6128,7 @@ co_2a9b882c1aa3,Omega Midwest Buyer LLC,1,GSBD,0.1,,4.75,First Lien
 co_e641e8cbc8c3,"Kore.ai, Inc.",1,HTGC,0.1,,0.0,Preferred Equity
 co_6f9ee9bac5ff,Renewable Technology and Electric Hydrogen Co. and Warrant and 3/27/2024 and Common Stock,1,HTGC,0.1,,0.0,Other Equity
 co_5097b3cdfdee,FWS Parent Holding LLC,1,ICMB,0.1,Software & Technology,0.0,Other Equity
-co_c043e0bef163,AMEREQUIP LLC,1,MAIN,0.1,,0.0,Common Equity
+co_c043e0bef163,Amerequip LLC,1,MAIN,0.1,,0.0,Common Equity
 co_0abd6a668f44,Definiti LLC,1,MFIC,0.1,Financial Services,0.0,Common Equity
 co_99ad8c9ffa6d,"Space Parent, LP",1,MFIC,0.1,,0.0,Preferred Equity
 co_41e6ba6916ee,Greylock Holdings LLC,1,MFIC,0.1,,0.0,Common Equity
@@ -6176,13 +6174,14 @@ co_573212a75e34,GSC Technologies Inc.,1,CION,0.07,,0.0,Other Equity
 co_b1d8fce3a1ed,"Cutover, Inc.",1,HTGC,0.07,,0.0,Common Equity
 co_f9ffd0740e03,"Cellarity, Inc.",1,HTGC,0.07,,0.0,Preferred Equity
 co_4697691b235a,Renew Financial LLC,1,MFIC,0.07,Financial Services,0.0,Common Equity
-co_dce97e3c108f,Buckeye Group Holdings LP. (JEGS Automotive) 5,1,NCDL,0.07,Automotive,0.0,Other Equity
+co_47feece7d3b3,Buckeye Group Holdings LP. (JEGS Automotive) 4,1,NCDL,0.07,Automotive,0.0,Other Equity
 co_becc551a0878,Hawkeye Contracting Company LLC,1,SLRC,0.07,Industrials,0.0,First Lien
 co_848ee11da4a6,Trinity Equipment Rentals Inc.,1,SLRC,0.07,Business Services,0.0,First Lien
 co_0671a35399b6,Delphinus Medical Technologies Inc.,1,SLRC,0.07,Healthcare,0.0,Other Equity
 co_014711297a51,"Optoro, Inc.",1,TPVG,0.07,Business to Business Marketplace,0.0,
 co_6e5095310f43,"Stance, Inc.",1,TPVG,0.07,,0.0,
-co_09ac769214ed,Caerus Midco 3 S.à r.l.,1,BXSL,0.06,,0.0,Other Equity
+co_97b3ca6d035f,"Sundance Holdings Group, LLC",1,BCIC,0.06,Consumer & Retail,0.0,First Lien
+co_d83141777070,Caerus Midco 3 S.Ã r.l.,1,BXSL,0.06,,0.0,Other Equity
 co_673ad0fa4292,Naviga Inc.,1,GBDC,0.06,Software & Technology,1.0,First Lien
 co_4fa85be28be9,Energy Worldnet LLC,1,GBDC,0.06,Software & Technology,0.0,Other Equity
 co_84440fd470f5,"Lightbend, Inc.",1,HTGC,0.06,Software & Technology,0.0,Other Equity
@@ -6263,7 +6262,7 @@ co_84a4f30aa925,"Blend Labs, Inc.",1,OBDC,0.01,Financial Services,0.0,Warrants
 co_62fc9a1203e2,EDS Buyer LLC. - Unfunded Revolver Acquisition,1,PFLT,0.01,,0.0,First Lien
 co_fe221e621487,Senior Secured First Brands Group,1,PSBD,0.01,Financial Services,10.61,Second Lien
 co_b7f8fb295eec,Mitel Networks,1,PSBD,0.01,Telecommunications,0.0,Other Equity
-co_0c4ad5166274,Halcyon Loan Advisors Funding 2012-1 Ltd.,1,PSEC,0.01,Financial Services,0.0,Subordinated Debt
+co_3621a58d5d69,Halcyon Loan Advisors Funding 2015-3 Ltd.,1,PSEC,0.01,Financial Services,0.0,Subordinated Debt
 co_806589cb2b47,Lakeland Tours LLC,1,SAR,0.01,,0.0,First Lien
 co_a2e4ed66e2a3,Wind River Environmental LLC,1,SLRC,0.01,Consumer & Retail,0.0,First Lien
 co_512c7e60efa3,Assertio Holdings Inc.,1,SLRC,0.01,Healthcare,0.0,Other Equity
@@ -6308,14 +6307,14 @@ co_3bdc8496d95a,HFCP XI (Parallel - A) LP.,1,ARCC,0.0,,0.0,Other
 co_032ff4b514c8,Marco Polo Fund SCSp-RAIF,1,ARCC,0.0,,0.0,Other
 co_b0e22859df85,Schill Landscaping and Lawn Care Services LLC,1,ARCC,0.0,Business Services,0.0,Other
 co_e118eab44a0e,AMMC CLO 22 Limited Series 2018-22A,1,BBDC,0.0,Consumer & Retail,0.0,Subordinated Debt
-co_63110ef13f5c,Dryden 49 Senior Loan Fund Series 2017-49A,1,BBDC,0.0,Consumer & Retail,0.0,Subordinated Debt
+co_3214b56f12d4,Dryden 43 Senior Loan Fund Series 2016-43A,1,BBDC,0.0,Consumer & Retail,0.0,Subordinated Debt
 co_40a99c54b5fb,Black Angus Steakhouses LLC,1,BBDC,0.0,Healthcare,0.0,First Lien
 co_68789b72167e,MVC Private Equity Fund LP,1,BBDC,0.0,Industrials,0.0,Partnership Interest
 co_02955eb37b0e,Thompsonn Rivers LLC,1,BBDC,0.0,,0.0,Other
 co_b44447a55b75,Aquavista Watersides 2 Ltd.,1,BBDC,0.0,Healthcare,0.0,Other
 co_4dcd0ce87522,Brightpay Ltd.,1,BBDC,0.0,Business Services,0.0,Delayed Draw
 co_756360b8afb1,CAi Software LLC,1,BBDC,0.0,Software & Technology,0.0,Revolver
-co_115eb25ffc07,CSL Dualcom,1,BBDC,0.0,Telecommunications,0.0,Other
+co_115eb25ffc07,CSL DualCom,1,BBDC,0.0,Telecommunications,0.0,Other
 co_9f50d6e7d7fa,Dune Group,1,BBDC,0.0,Healthcare,0.0,Delayed Draw
 co_a8a08da95bc1,Electrical Components International Inc.,1,BBDC,0.0,Software & Technology,0.0,Delayed Draw
 co_dfe6d1e86d7c,Fortis Payment Systems LLC,1,BBDC,0.0,Business Services,0.0,Delayed Draw
@@ -6328,7 +6327,7 @@ co_ee2fb330beda,Royal Buyer LLC,1,BBDC,0.0,Business Services,0.0,Revolver
 co_da3464f517a9,"Smartling, Inc.",1,BBDC,0.0,Software & Technology,0.0,Revolver
 co_50e512558897,United Therapy Holding III GmbH,1,BBDC,0.0,Healthcare,0.0,Other
 co_752d5f62d756,ZB Holdco LLC,1,BBDC,0.0,Food & Beverage,0.0,Revolver
-co_ccf41dfa94f3,Dryden 30 Senior Loan Fund,1,BCIC,0.0,Financial Services,0.0,Subordinated Debt
+co_01cfd6b8c6e9,Dryden 43 Senior Loan Fund,1,BCIC,0.0,Financial Services,0.0,Subordinated Debt
 co_6f3deb7eee5c,4L Ultimate Topco Corp.,1,BCIC,0.0,Business Services,0.0,Subordinated Debt
 co_24e2e035957d,ATP Oil & Gas Corp.,1,BCIC,0.0,Energy,0.0,Subordinated Debt
 co_2b22a45f47c8,HDC/HW Holdings LLC,1,BCIC,0.0,Software & Technology,0.0,Subordinated Debt
@@ -6336,8 +6335,9 @@ co_03159db4762e,Ohene Holdings B.V.,1,BCIC,0.0,Software & Technology,0.0,Warrant
 co_89bee3b7067a,Roscoe Investors LLC,1,BCIC,0.0,Healthcare,0.0,Preferred Equity
 co_23121c4d1235,Workplace Holdings LLC,1,BCIC,0.0,Software & Technology,0.0,Subordinated Debt
 co_a3c5f07605a4,World Business Lenders LLC,1,BCIC,0.0,Insurance,0.0,Subordinated Debt
-co_002a9e0feb06,Epilog Partners LP,1,BCIC,0.0,Healthcare,0.0,Subordinated Debt
+co_002a9e0feb06,Epilog Partners LP,1,BCIC,0.0,Healthcare,0.0,First Lien
 co_457669aa2683,Asset Management Company,1,BCIC,0.0,Financial Services,0.0,Second Lien
+co_d4d6cacea19d,V12 Holdings Inc.,1,BCIC,0.0,Business Services,0.0,Common Equity
 co_e6efac010dff,FCG Acquisitions Inc.,1,BCSF,0.0,Industrials,0.0,Preferred Equity
 co_484b84d728a5,Environmental Industries,1,BCSF,0.0,Containers & Packaging,0.0,First Lien
 co_420d5db7ba12,High Tech Industries,1,BCSF,0.0,Containers & Packaging,0.0,First Lien
@@ -6430,7 +6430,7 @@ co_3355ba35b2d8,"ALM Global, LLC",1,CION,0.0,,0.0,Other
 co_7e4c3a264a16,ASC ORTHO MANAGEMENT COMPANY LLC,1,CSWC,0.0,Business Services,0.0,Common Equity
 co_1e195d94d3df,DELPHI LENDER HOLDCO LLC,1,CSWC,0.0,,0.0,Common Equity
 co_c9d0753251d9,SONOBI INC.,1,CSWC,0.0,,0.0,Common Equity
-co_c5160837f7d3,Damotech Inc.,1,CSWC,0.0,Industrials,0.0,Revolver
+co_c5160837f7d3,DAMOTECH INC.,1,CSWC,0.0,Industrials,0.0,Revolver
 co_ab98160f56ce,EDGE AUTONOMY HOLDINGS LLC,1,CSWC,0.0,Aerospace & Defense,0.0,Revolver
 co_644918062cf1,Muenster Miling Company LLC,1,CSWC,0.0,,0.0,Delayed Draw
 co_ec5f8eefb4b6,Control Investments US GreenFiber LLC,1,FDUS,0.0,Financial Services,0.0,Other Equity
@@ -6466,7 +6466,7 @@ co_53aae39dd10e,PFS Holdings Corp.,1,GECC,0.0,,0.0,First Lien
 co_ce9ab4690f11,FES Resources Holdings LLC,1,GLAD,0.0,,0.0,First Lien
 co_a44f2897e7f9,First Citizens Premium Money Market Savings,1,GLAD,0.0,,0.0,Other
 co_0c9328e53169,Animal Supply Holdings LLC,1,GSBD,0.0,,0.0,Other
-co_490ccdede07f,Conergy Asia & ME Pte. LTD.,1,GSBD,0.0,,0.0,Other
+co_490ccdede07f,Conergy Asia & ME Pte. Ltd.,1,GSBD,0.0,,0.0,Other
 co_0f110165e754,Kawa Solar HoldingsLimited,1,GSBD,0.0,,0.0,Other
 co_b24af3a0eea7,"CapLinked, Inc.",1,HTGC,0.0,Software & Technology,0.0,Other Equity
 co_74fe6d614556,"HighRoads, Inc.",1,HTGC,0.0,Software & Technology,0.0,Common Equity
@@ -6479,14 +6479,14 @@ co_2d8944d48eba,PDS Biotechnology Corp.,1,HTGC,0.0,Healthcare,0.0,Other Equity
 co_5300364ce68c,"Avalo Therapeutics, Inc.",1,HTGC,0.0,Healthcare,0.0,Other Equity
 co_d945944d3166,"Daré Bioscience, Inc.",1,HTGC,0.0,Healthcare,0.0,Other Equity
 co_bfc27532729c,"Rafael Holdings, Inc.",1,HTGC,0.0,Healthcare,0.0,Other Equity
-co_9ae96b1458c3,Rocket Pharmaceuticals Corp.,1,HTGC,0.0,Healthcare,0.0,Other Equity
+co_4ac96e1cec99,"Rocket Pharmaceuticals, Ltd.",1,HTGC,0.0,Healthcare,0.0,Other Equity
 co_826d194f5d2d,"Carbon Health Technologies, Inc.",1,HTGC,0.0,Healthcare,0.0,Other Equity
 co_ce50844aeab7,"First Insight, Inc.",1,HTGC,0.0,,0.0,Preferred Equity
 co_072e997263ad,"VideoAmp, Inc.",1,HTGC,0.0,,0.0,Common Equity
 co_7b432f2b0b1d,"Aryaka Networks, Inc.",1,HTGC,0.0,,0.0,Common Equity
 co_878b0e624f8f,"Gadget Guard, LLC",1,HTGC,0.0,,0.0,Common Equity
 co_9a5d9dd27417,Total Skyword Inc.,1,HTGC,0.0,,0.0,Other Equity
-co_44b0e00e6fd3,"Snagajob.com, Inc.",1,HTGC,0.0,,0.0,Preferred Equity
+co_44b0e00e6fd3,"SnagAJob.com, Inc.",1,HTGC,0.0,,0.0,Preferred Equity
 co_a370d731b9b7,Total Snagajob.com Inc.,1,HTGC,0.0,,0.0,Other Equity
 co_71cc69e91627,"Veem, Inc.",1,HTGC,0.0,,0.0,Common Equity
 co_fc2cd8cf075b,"Century Therapeutics, Inc.",1,HTGC,0.0,Healthcare,0.0,Common Equity
@@ -6539,7 +6539,7 @@ co_cd2812146813,One Month SOFR,1,NCDL,0.0,,4.13,First Lien
 co_44debe6f3930,Three Month SOFR,1,NCDL,0.0,,3.98,First Lien
 co_a41af8326e09,Six Month SOFR,1,NCDL,0.0,,3.85,First Lien
 co_e12321e98b52,Twelve Month SOFR,1,NCDL,0.0,,3.66,First Lien
-co_ea1fec12070f,ASTP Holdings CO-Investment LP,1,NCDL,0.0,Transportation & Logistics,0.0,Other
+co_ea1fec12070f,ASTP Holdings Co-Investment LP,1,NCDL,0.0,Transportation & Logistics,0.0,Other
 co_801022bcd144,NCL JV,1,NEWT,0.0,,0.0,Other
 co_754e41d30287,PPVA Fund LP. Collateralized Financing,1,NMFC,0.0,,0.0,First Lien
 co_ef352cfb207b,Ancora Acquisition LLC,1,NMFC,0.0,,0.0,Preferred Equity
@@ -6641,7 +6641,7 @@ co_38b46ca08ed7,Essence Group Holdings Corp.,1,SLRC,0.0,Healthcare,0.0,Other Equ
 co_55464a5e2749,Venus Concept Ltd.,1,SLRC,0.0,Healthcare,0.0,Other Equity
 co_a38e78aa45d0,Air Methods Corp.,1,SLRC,0.0,Transportation & Logistics,0.0,First Lien
 co_260fb12b0e8f,"SPBRX, INC.",1,SSSS,0.0,Software & Technology,0.0,Other
-co_0757f51461ca,Bynder Bidco B.V. (Netherlands) Sr Secured Revolver B Ref SOFR(S) Floor 1.00% Spread 6.00% Total Coupon 10.14% Maturity 1/26/2029,1,TCPC,0.0,Software & Technology,6.0,First Lien
+co_59a3400015fa,Bynder Bidco B.V. (Netherlands) Sr Secured Revolver B Ref SOFR(Q) Floor 1.00% Spread 7.25% Total Coupon 12.63% Maturity 1/26/2029,1,TCPC,0.0,Software & Technology,6.0,First Lien
 co_e4be59e074ef,Gordon Brothers Finance Company Preferred Stock Ref Fixed Total Coupon 13.50%,1,TCPC,0.0,Diversified,0.0,Other Equity
 co_0a59d315e000,Chemicals AGY Equity,1,TCPC,0.0,Chemicals & Materials,0.0,Preferred Equity
 co_63eaef6e6b28,Construction & Engineering Homerenew Buyer Inc.,1,TCPC,0.0,Real Estate,0.0,Other Equity
@@ -6723,5 +6723,5 @@ co_0e713579ce8f,Agency Inc.,1,CGBD,-0.1,Insurance,0.0,Other
 co_f05f6d1523f5,Holding Argon (France) | Delayed Draw,1,CGBD,-0.1,,0.0,Other
 co_73bb75354a09,AG Investco LP,1,PFLT,-0.12,,0.0,Other Equity
 co_76d53d3f1d91,PL Acquisitionco LLC,1,PNNT,-0.55,,0.0,First Lien
-co_d3c629a599cc,American Crafts Lc Super Priority,1,WHF,-2.09,,0.0,Other
+co_d3c629a599cc,American Crafts LC Super Priority,1,WHF,-2.09,,0.0,Other
 co_aa3778907b4a,American Crafts LC,1,WHF,-18.89,,0.0,First Lien
