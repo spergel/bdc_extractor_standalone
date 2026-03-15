@@ -397,6 +397,33 @@ def post_process_csv(input_file: Path, output_file: Path = None) -> Tuple[int, i
                     final_rows.append(r)
             rows = final_rows
 
+        # FV outlier filter: drop rows where fair_value is > 500× the file median.
+        # Catches concatenated-column parsing artifacts (e.g. BCIC 2024-05-08
+        # GreenPark Infrastructure LLC fv=712171820 from a 24-column table collapse).
+        if rows:
+            fv_vals = sorted(
+                _parse_float_safe(r.get('fair_value', ''))
+                for r in rows
+                if (r.get('fair_value') or '').strip()
+            )
+            if len(fv_vals) >= 5:
+                median_fv = fv_vals[len(fv_vals) // 2]
+                if median_fv > 0:
+                    _outlier_thresh = median_fv * 500
+                    outlier_cleared = 0
+                    for r in rows:
+                        fv_str = (r.get('fair_value') or '').strip()
+                        if fv_str and _parse_float_safe(fv_str) > _outlier_thresh:
+                            logger.warning(
+                                "FV outlier cleared: %s fv=%s (median=%.0f threshold=%.0f)",
+                                r.get('company_name', ''), fv_str, median_fv, _outlier_thresh,
+                            )
+                            r['fair_value'] = ''
+                            outlier_cleared += 1
+                            rows_changed += 1
+                    if outlier_cleared:
+                        logger.info("Cleared %d FV outlier(s) in %s", outlier_cleared, input_file.name)
+
         # XBRL blank-FV dedup: some XBRL filers (e.g. RAND) emit two contexts per
         # position — one with fair_value populated and one with fair_value blank.
         # Drop blank-FV rows when a non-blank-FV row exists for the same (company, type).

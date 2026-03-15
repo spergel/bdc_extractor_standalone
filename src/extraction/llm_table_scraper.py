@@ -422,16 +422,31 @@ class LLMTableScraper:
                 soup = BeautifulSoup(doc_text, 'html.parser')
                 
                 # Find all "Schedule of Investments" headers (structural elements only)
+                # Skip aggregate-summary variants like "Schedule of Investments by Company"
+                # which roll up individual positions and produce too few rows.
+                _EXCLUDE_SOI_SUFFIXES = ('by company', 'summary', 'by issuer', 'reconciliation')
+                _SOI_KEYWORDS = [
+                    'schedule of investments',
+                    'consolidated schedule of investments',
+                    'investment schedule',
+                    'schedule of portfolio investments',
+                    'condensed schedule of investments',
+                ]
                 schedule_headers = []
                 for tag in soup.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p']):
                     text = tag.get_text(strip=True).lower()
-                    if any(keyword in text for keyword in [
-                        'schedule of investments',
-                        'consolidated schedule of investments',
-                        'investment schedule',
-                        'schedule of portfolio investments',
-                        'condensed schedule of investments'
-                    ]):
+                    matched_kw = next((k for k in _SOI_KEYWORDS if k in text), None)
+                    if matched_kw:
+                        # Skip TOC entries and footnote paragraphs where the keyword
+                        # appears deep inside a long sentence (not the actual section title).
+                        keyword_pos = text.find(matched_kw)
+                        if keyword_pos > 60 or len(text) > 200:
+                            logger.debug(f"Skipping non-header SOI mention in {doc.filename} (pos={keyword_pos} len={len(text)}): {text[:80]}")
+                            continue
+                        if any(text.endswith(suf) or ('by ' + suf.split()[-1]) in text
+                               for suf in _EXCLUDE_SOI_SUFFIXES):
+                            logger.info(f"Skipping aggregate SOI header in {doc.filename}: {tag.get_text(strip=True)[:100]}")
+                            continue
                         schedule_headers.append(tag)
                         logger.info(f"Found schedule header in {doc.filename}: {tag.get_text(strip=True)[:100]}")
                 
@@ -442,19 +457,25 @@ class LLMTableScraper:
                 # Find all tables in this document
                 all_html_tables = soup.find_all('table')
                 logger.info(f"Found {len(all_html_tables)} tables in {doc.filename}")
-                
+
                 # Get all elements in document order (structural elements only - exclude div/span to avoid O(n²) blowup)
                 all_elements = list(soup.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'table']))
                 
                 # Find ALL schedule headers (not just first)
+                # Skip aggregate-summary variants (same exclusion list as above)
                 schedule_header_positions = []
                 for i, element in enumerate(all_elements):
                     text = element.get_text(strip=True).lower()
-                    if any(keyword in text for keyword in [
-                        'schedule of investments',
-                        'consolidated schedule of investments',
-                        'schedule of portfolio investments'
-                    ]):
+                    matched_kw = next((k for k in _SOI_KEYWORDS if k in text), None)
+                    if matched_kw:
+                        # Skip TOC entries and footnote paragraphs (keyword buried in long text).
+                        keyword_pos = text.find(matched_kw)
+                        if keyword_pos > 60 or len(text) > 200:
+                            continue
+                        if any(text.endswith(suf) or ('by ' + suf.split()[-1]) in text
+                               for suf in _EXCLUDE_SOI_SUFFIXES):
+                            logger.debug(f"Skipping aggregate SOI header at pos {i}: {element.get_text(strip=True)[:80]}")
+                            continue
                         schedule_header_positions.append(i)
                         logger.info(f"Found schedule header at position {i} in {doc.filename}: {element.get_text(strip=True)[:100]}")
                 
@@ -581,14 +602,16 @@ class LLMTableScraper:
         logger.info("No schedule headers found in any document, using fallback detection")
         return self._fallback_table_detection(tables, filing_date, filing_type, period_end_date)
     
-    def _is_investment_table(self, table_text: str) -> bool:
+    def _is_investment_table(self, table_text: str, permissive: bool = False) -> bool:
         """
         Determine if a table is an investment table based on content.
-        Uses expanded criteria to catch more tables.
-        
+
         Args:
             table_text: Lowercase text content of the table
-            
+            permissive: If True (used within identified SOI sections), lower the
+                threshold so equity-only continuation tables qualify.  If False
+                (used in the fallback path), require the stricter original criteria.
+
         Returns:
             True if this appears to be an investment table
         """
@@ -600,8 +623,8 @@ class LLMTableScraper:
             'investment company',
             'issuer name'
         ]
-        
-        # Secondary indicators (need multiple)
+
+        # Secondary indicators (strict mode: need >= 2; permissive mode: need >= 1)
         secondary_indicators = [
             'principal',
             'fair value',
@@ -616,28 +639,35 @@ class LLMTableScraper:
             'spread',
             'reference rate',
             'sofr',
-            'libor'
+            'libor',
+            # Equity-focused indicators (common in SSSS, SuRo Capital, etc.)
+            'common stock',
+            'preferred stock',
+            'warrant',
+            'shares',
+            'membership interest',
         ]
-        
+
         # Check for primary indicators
         has_primary = any(indicator in table_text for indicator in primary_indicators)
-        
-        # Check for secondary indicators (need at least 2)
+
+        # Check for secondary indicators
         secondary_count = sum(1 for indicator in secondary_indicators if indicator in table_text)
-        has_secondary = secondary_count >= 2
-        
+        threshold = 1 if permissive else 2
+        has_secondary = secondary_count >= threshold
+
         # Also check for financial data patterns
         has_financial_data = (
             ('$' in table_text or 'percent' in table_text or '%' in table_text) and
             (any(term in table_text for term in ['llc', 'inc.', 'corp', 'ltd', 'lp', 'holdings', 'acquisition']))
         )
-        
+
         # Table is investment-related if it has primary indicator OR (secondary + financial data)
         is_investment = has_primary or (has_secondary and has_financial_data)
-        
+
         if is_investment:
-            logger.debug(f"Table identified as investment table (primary: {has_primary}, secondary: {secondary_count}, financial: {has_financial_data})")
-        
+            logger.debug(f"Table identified as investment table (primary: {has_primary}, secondary: {secondary_count}, financial: {has_financial_data}, permissive: {permissive})")
+
         return is_investment
     
     
@@ -2376,301 +2406,14 @@ XYZ Corp,Common Equity,Software,,,N/A,N/A,2022-06-01,,,1000,1200,0.6,1000,,
     def _deduplicate_csv_rows(self, csv_rows: List[Any]) -> List[str]:
         """Delegate to data_cleaning.deduplicate_csv_rows."""
         return deduplicate_csv_rows(csv_rows)
-    
-    def _OLD_deduplicate_csv_rows_DEPRECATED(self, csv_rows: List[Any]) -> List[str]:
-        """
-        OLD IMPLEMENTATION - NOW IN data_cleaning/deduplicator.py
-        Remove duplicate rows from CSV data.
-        Duplicates are identified by: company_base + investment_type + principal (within 1%).
-        When the same position appears with different maturity dates (e.g. 10-Q current vs prior
-        year-end), prefers the row with the LATER maturity_date (current period).
-
-        Args:
-            csv_rows: List of (row_str, table_idx, table_size) or List[str] for legacy
-        """
-        import csv
-        from io import StringIO
-
-        if not csv_rows:
-            return []
-
-        # Normalize input: convert to [(row_str, table_idx, table_size), ...]
-        rows_with_meta = []
-        if isinstance(csv_rows[0], tuple):
-            for item in csv_rows:
-                row_str = item[0] if len(item) > 0 else ""
-                table_idx = item[1] if len(item) > 1 else -1
-                table_size = item[2] if len(item) > 2 else 0
-                rows_with_meta.append((row_str, table_idx, table_size))
-        else:
-            for row_str in csv_rows:
-                rows_with_meta.append((row_str, -1, 0))
-
-        parsed_rows = []
-        header_row = None
-
-        for i, (row_str, table_idx, table_size) in enumerate(rows_with_meta):
-            reader = csv.reader(StringIO(row_str))
-            try:
-                cols = list(reader)[0]
-            except Exception:
-                continue
-
-            if i == 0:
-                header_row = row_str
-                continue
-
-            if len(cols) < 3:
-                continue
-
-            expected_columns = 16
-            if len(cols) > 1 and len(cols) > expected_columns:
-                col1 = cols[1].strip()
-                if col1 and any(col1.endswith(s) for s in ['.', 'Inc.', 'LLC', 'Corp.', 'LP', 'Ltd.', 'Company']):
-                    cols[0] = f"{cols[0]}, {col1}"
-                    cols = [cols[0]] + cols[2:]
-
-            while len(cols) < expected_columns:
-                cols.append('')
-
-            company_base = (cols[0].strip().lower().split('(')[0] if cols else "").strip()
-            company_base = ' '.join(company_base.split())
-            investment_type = ' '.join((cols[1].strip().lower() if len(cols) > 1 else "").split())
-            maturity_date = cols[8].strip() if len(cols) > 8 else ""
-            principal_str = (cols[9].strip() if len(cols) > 9 else "").replace(',', '').replace(' ', '')
-            try:
-                principal_val = float(principal_str) if principal_str else None
-            except ValueError:
-                principal_val = None
-
-            non_empty_count = sum(1 for c in cols if c.strip())
-            maturity_dt = self._parse_maturity_date(maturity_date)
-            parsed_rows.append((company_base, investment_type, maturity_date, maturity_dt, principal_val,
-                               non_empty_count, table_size, row_str, cols))
-
-        def principal_match(a: Optional[float], b: Optional[float]) -> bool:
-            if a is None and b is None:
-                return True
-            if a is None or b is None:
-                return False
-            denom = max(abs(a), abs(b), 1.0)
-            return abs(a - b) / denom <= 0.01
-
-        # Group by (company_base, investment_type). Within each group, cluster by principal (1%).
-        # When same position appears with different maturity dates (10-Q current vs prior year-end),
-        # keep only the row with the LATER maturity_date.
-        grouped: Dict[Tuple[str, str], List[Tuple]] = {}
-        for company_base, inv_type, maturity, maturity_dt, principal, non_empty, table_size, row_str, cols in parsed_rows:
-            key = (company_base, inv_type)
-            if key not in grouped:
-                grouped[key] = []
-            grouped[key].append((principal, maturity_dt, non_empty, table_size, row_str, cols))
-
-        result_rows: List[Tuple] = []
-        for key, entries in grouped.items():
-            # For each row i, find all rows j with matching principal (potential duplicates).
-            # Keep only the best: prefer later maturity_date, then non_empty, then table_size.
-            keep_mask = [True] * len(entries)
-            for i in range(len(entries)):
-                if not keep_mask[i]:
-                    continue
-                principal_i, maturity_dt_i, non_empty_i, size_i, _, _ = entries[i]
-                for j in range(len(entries)):
-                    if i == j or not keep_mask[j]:
-                        continue
-                    principal_j, maturity_dt_j, non_empty_j, size_j, _, _ = entries[j]
-                    if not principal_match(principal_i, principal_j):
-                        continue
-                    # Same position: keep the one with later maturity
-                    if maturity_dt_i is not None and maturity_dt_j is not None:
-                        if maturity_dt_j > maturity_dt_i:
-                            keep_mask[i] = False
-                            break
-                        elif maturity_dt_j < maturity_dt_i:
-                            keep_mask[j] = False
-                            continue
-                    elif maturity_dt_i is None and maturity_dt_j is not None:
-                        keep_mask[i] = False
-                        break
-                    elif maturity_dt_i is not None and maturity_dt_j is None:
-                        keep_mask[j] = False
-                        continue
-                    else:
-                        if non_empty_j > non_empty_i or (non_empty_j == non_empty_i and size_j > size_i):
-                            keep_mask[i] = False
-                            break
-                        elif non_empty_j < non_empty_i or (non_empty_j == non_empty_i and size_j < size_i):
-                            keep_mask[j] = False
-                            continue
-
-            for idx, keep in enumerate(keep_mask):
-                if keep:
-                    _, _, _, _, row_str, cols = entries[idx]
-                    result_rows.append((row_str, cols))
-
-        result = [header_row] if header_row else []
-        for row_str, cols in result_rows:
-            output = StringIO()
-            try:
-                w = csv.writer(output, quoting=csv.QUOTE_MINIMAL, lineterminator='')
-                w.writerow(cols)
-                result.append(output.getvalue())
-            except Exception as e:
-                logger.warning(f"Failed to re-quote row in deduplication: {e}")
-                result.append(row_str)
-
-        return result
 
     def _remove_empty_header_rows(self, csv_rows: List[str]) -> List[str]:
         """Delegate to data_cleaning.remove_empty_header_rows."""
         return remove_empty_header_rows(csv_rows)
-    
-    def _OLD_remove_empty_header_rows_DEPRECATED(self, csv_rows: List[str]) -> List[str]:
-        """
-        OLD IMPLEMENTATION - NOW IN data_cleaning/filters.py
-        Remove rows that have a company name but no financial data, when
-        the same company name appears on other rows that DO have data.
-        These are SEC table sub-headers (company name before listing tranches).
-
-        Args:
-            csv_rows: List of CSV row strings (first row is header)
-
-        Returns:
-            Filtered list with empty header rows removed
-        """
-        import csv
-        from io import StringIO
-
-        if len(csv_rows) < 2:
-            return csv_rows
-
-        # Parse all rows
-        parsed = []
-        for row_str in csv_rows[1:]:  # Skip header
-            try:
-                reader = csv.reader(StringIO(row_str))
-                cols = list(reader)[0]
-                if len(cols) >= 16:
-                    parsed.append((row_str, cols))
-            except Exception:
-                parsed.append((row_str, None))
-
-        # Identify rows with no financial data
-        # Financial columns: principal(9), amortized_cost(10), fair_value(11), cost(13)
-        empty_rows = []
-        populated_names = set()
-
-        for row_str, cols in parsed:
-            if cols is None:
-                continue
-            has_financials = any(
-                cols[i].strip() for i in [9, 10, 11, 13] if i < len(cols)
-            )
-            name = cols[0].strip().lower()
-            if has_financials and name:
-                populated_names.add(name)
-
-        # Filter: remove rows with no financials whose name appears on populated rows
-        result = [csv_rows[0]]  # Keep header
-        removed = 0
-        for row_str, cols in parsed:
-            if cols is None:
-                result.append(row_str)
-                continue
-            has_financials = any(
-                cols[i].strip() for i in [9, 10, 11, 13] if i < len(cols)
-            )
-            name = cols[0].strip().lower()
-            if not has_financials and name in populated_names:
-                removed += 1
-                logger.debug(f"Removed empty header row for '{cols[0]}'")
-                continue
-            result.append(row_str)
-
-        if removed > 0:
-            logger.info(f"Removed {removed} empty header-only rows (company name duplicated on rows with data)")
-
-        return result
 
     def _filter_equity_types(self, csv_rows: List[str], debt_only: bool = False) -> List[str]:
         """Delegate to data_cleaning.filter_equity_types."""
         return filter_equity_types(csv_rows, debt_only)
-    
-    def _OLD_filter_equity_types_DEPRECATED(self, csv_rows: List[str], debt_only: bool = False) -> List[str]:
-        """
-        OLD IMPLEMENTATION - NOW IN data_cleaning/filters.py
-        Filter out equity investment types if debt_only is True.
-        
-        Args:
-            csv_rows: List of CSV row strings (first row is header)
-            debt_only: If True, exclude equity types (Common Equity, Preferred Equity, Warrant, etc.)
-        
-        Returns:
-            Filtered list of CSV row strings
-        """
-        if not debt_only or not csv_rows:
-            return csv_rows
-        
-        import csv
-        from io import StringIO
-        
-        # Parse header
-        header_row = csv_rows[0]
-        reader = csv.reader(StringIO(header_row))
-        header = list(reader)[0]
-        
-        # Find investment_type column index
-        investment_type_idx = None
-        for i, col in enumerate(header):
-            if col.lower() in ['investment_type', 'investment type', 'type']:
-                investment_type_idx = i
-                break
-        
-        if investment_type_idx is None:
-            logger.warning("Could not find investment_type column for equity filtering, returning all rows")
-            return csv_rows
-        
-        # Equity types to exclude
-        equity_keywords = [
-            'common equity',
-            'preferred equity', 
-            'warrant',
-            'equity interest',
-            'membership interest',
-            'common stock',
-            'preferred stock',
-        ]
-        
-        result = [header_row]  # Keep header
-        filtered_count = 0
-        
-        for row_str in csv_rows[1:]:
-            try:
-                reader = csv.reader(StringIO(row_str))
-                cols = list(reader)[0]
-                
-                if len(cols) > investment_type_idx:
-                    investment_type = cols[investment_type_idx].lower().strip()
-                    
-                    # Check if this is an equity type
-                    is_equity = any(keyword in investment_type for keyword in equity_keywords)
-                    
-                    if not is_equity:
-                        result.append(row_str)
-                    else:
-                        filtered_count += 1
-                        logger.debug(f"Filtered out equity investment: {investment_type}")
-                else:
-                    # Row has fewer columns than expected, keep it to avoid errors
-                    result.append(row_str)
-            except Exception as e:
-                logger.warning(f"Error parsing row for equity filtering: {e}, keeping row")
-                result.append(row_str)
-        
-        if filtered_count > 0:
-            logger.info(f"Filtered out {filtered_count} equity investments (debt-only mode)")
-        
-        return result
 
     def _save_csv_output(self, csv_content: str, ticker: str, filing_date: str) -> Path:
         """
@@ -2730,40 +2473,6 @@ XYZ Corp,Common Equity,Software,,,N/A,N/A,2022-06-01,,,1000,1200,0.6,1000,,
         logger.info(f"Saved CSV output to {output_path}")
         return output_path
 
-    def process_multiple_filings(self, tickers: List[str], filing_type: str = "10-Q",
-                               years_back: int = 1) -> Dict[str, Optional[str]]:
-        """
-        Process multiple filings for different companies.
-
-        Args:
-            tickers: List of ticker symbols
-            filing_type: Type of filing to process
-            years_back: How many years back to look for filings
-
-        Returns:
-            Dictionary mapping tickers to CSV file paths
-        """
-        results = {}
-
-        for ticker in tickers:
-            try:
-                # Try to get recent filings
-                for year_offset in range(years_back + 1):
-                    year = datetime.now().year - year_offset
-
-                    result = self.process_filing(ticker, filing_type, year=year)
-                    if result:
-                        results[ticker] = result
-                        break
-                else:
-                    logger.warning(f"No recent {filing_type} filings found for {ticker}")
-                    results[ticker] = None
-
-            except Exception as e:
-                logger.error(f"Error processing {ticker}: {e}")
-                results[ticker] = None
-
-        return results
 
 def main():
     """Main CLI interface."""

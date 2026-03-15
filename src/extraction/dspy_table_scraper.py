@@ -72,11 +72,15 @@ TARGET_TICKERS = [
     "NEWT", "OXSQ", "PSBD", "TPVG", "ICMB",
 ]
 
-#: Per-ticker unit scale overrides — for BDCs that file in whole dollars but have no
-#: explicit "in thousands" / "in millions" disclosure (so _detect_unit_scale defaults
-#: to "thousands", producing 1000× inflation).  "units" means whole dollars → ÷1000.
+#: Per-ticker unit scale overrides — unconditionally applied regardless of what
+#: _detect_unit_scale detects.  Use when the detector produces false positives.
+#:   "units"     — filing is in whole dollars (no explicit disclosure) → ÷1000
+#:   "thousands" — filing is in $000s but detector finds "millions" elsewhere in doc
 FORCE_UNIT_SCALE: Dict[str, str] = {
-    "SSSS": "units",   # SoftBank BDC files in whole dollars; no unit disclosure found
+    # SSSS (SuRo Capital): filings are in thousands, but llm_table_scraper._detect_unit_scale
+    # picks up "in millions" from non-SOI text in the document (e.g. market cap disclosures).
+    # Unconditionally force thousands to avoid 1000× inflation.
+    "SSSS": "thousands",
 }
 
 #: Standard investment types the model must choose from
@@ -591,20 +595,16 @@ class DSPyTableScraper:
         unit_scale = self._html_helper._detect_unit_scale(soi_tables, filing_result)
         if ticker in FORCE_UNIT_SCALE:
             forced = FORCE_UNIT_SCALE[ticker]
-            if unit_scale == "thousands":
-                # Only override the fallback default — if the filing explicitly discloses
-                # "in millions" or "in units" that detection should be trusted.
+            if unit_scale != forced:
                 logger.info(
-                    "Overriding default unit_scale 'thousands' → '%s' for %s "
-                    "(filing has no explicit unit disclosure)",
-                    forced, ticker,
+                    "FORCE_UNIT_SCALE: overriding detected unit_scale '%s' → '%s' for %s",
+                    unit_scale, forced, ticker,
                 )
                 unit_scale = forced
             else:
                 logger.info(
-                    "Keeping explicitly detected unit_scale '%s' for %s "
-                    "(FORCE_UNIT_SCALE=%s skipped — explicit disclosure found)",
-                    unit_scale, ticker, forced,
+                    "FORCE_UNIT_SCALE: detected '%s' matches forced '%s' for %s — no change",
+                    unit_scale, forced, ticker,
                 )
 
         # 5. Build section-context strings for each table
@@ -704,7 +704,8 @@ class DSPyTableScraper:
         _SECTION_HEADER_PREFIXES = _re_sh.compile(
             r'^(?:senior secured loans?|first lien|second lien|subordinated|'
             r'unsecured|equity investments?|other investments?|debt investments?|'
-            r'non-qualified|qualifying assets|total investments?)\s*[—\-–]',
+            r'non-qualified|qualifying assets|total investments?)\s*[—\-–]|'
+            r'^private portfolio companies?\s*$',
             _re_sh.IGNORECASE,
         )
         pre_sh = len(filtered)
@@ -721,10 +722,18 @@ class DSPyTableScraper:
         #     meaningful (no principal, no amortized_cost, no maturity, no rate,
         #     no shares, no cost, no acquisition_date).  These are usually duplicates
         #     read from a portfolio-totals section or a comparative-period summary.
+        #     EXCEPTION: rows with a specific company_name are real positions even if
+        #     the BDC only holds equity (e.g. SSSS/SuRo Capital — pure equity investor,
+        #     no rates/principal).  Only drop when company_name is blank or is a known
+        #     subtotal label (contains "Total", "Subtotal", "Net Assets").
         _MEANINGFUL_FIELDS = (
             "principal_amount", "amortized_cost", "maturity_date",
             "reference_rate", "cash_rate", "pik_rate", "spread",
             "shares", "cost", "acquisition_date",
+        )
+        import re as _re_dp
+        _SUBTOTAL_RE = _re_dp.compile(
+            r'\b(?:total|subtotal|net assets|investments)\b', _re_dp.IGNORECASE
         )
         pre_dp = len(filtered)
         filtered = [
@@ -732,6 +741,7 @@ class DSPyTableScraper:
             if not (
                 r.get("fair_value")
                 and not any(r.get(f) for f in _MEANINGFUL_FIELDS)
+                and (not r.get("company_name") or _SUBTOTAL_RE.search(r.get("company_name", "")))
             )
         ]
         if len(filtered) < pre_dp:
@@ -785,13 +795,13 @@ class DSPyTableScraper:
             return s[:7] if len(s) >= 7 else s
 
         # Build cross-period dedup: group by (company, type, maturity_ym) then
-        # check if a near-duplicate principal already exists in the group.
-        # Two rows are cross-period duplicates if they share (company, type, mat_ym)
-        # AND their principal amounts are within 25% of each other (same loan,
-        # different period balance).  Legitimate multi-tranche positions differ
-        # by more than 25% so they are kept.
+        # check if a near-duplicate already exists in the group.
+        # Two rows are duplicates if they share (company, type, mat_ym) AND:
+        #   - For debt (has maturity): principal amounts within 25% of each other
+        #   - For equity (no maturity): fair_values within 25% of each other
+        # Legitimate multi-tranche positions differ by >25% so they are kept.
         from collections import defaultdict as _dd
-        _group_principals: dict = _dd(list)  # key -> list of (principal_float, row_idx)
+        _group_principals: dict = _dd(list)  # key -> list of floats (principal for debt, fv for equity)
         cross_period_deduped: List[Dict[str, str]] = []
         for r in deduped:
             co = r.get("company_name", "").strip().lower()
@@ -802,25 +812,29 @@ class DSPyTableScraper:
                 pri = float(r.get("principal_amount", "").strip() or "0")
             except ValueError:
                 pri = 0.0
-            # Check if any existing principal in this group is within 25%
+            # For equity positions (no maturity, no principal), use fair_value as comparator
+            try:
+                fv = float(r.get("fair_value", "").strip() or "0")
+            except ValueError:
+                fv = 0.0
+            comparator = pri if mat else fv
             is_dup = False
-            if mat:
-                for seen_pri in _group_principals[key]:
-                    if seen_pri == 0 and pri == 0:
+            for seen_val in _group_principals[key]:
+                if seen_val == 0 and comparator == 0:
+                    is_dup = True
+                    break
+                if seen_val > 0 and comparator > 0:
+                    ratio = min(seen_val, comparator) / max(seen_val, comparator)
+                    if ratio >= 0.75:  # within 25% → same position, different period/section
                         is_dup = True
                         break
-                    if seen_pri > 0 and pri > 0:
-                        ratio = min(seen_pri, pri) / max(seen_pri, pri)
-                        if ratio >= 0.75:  # within 25% → same loan, different period
-                            is_dup = True
-                            break
             if is_dup:
                 logger.debug(
-                    "Cross-period dedup: dropping %s / %s / %s (pri=%.0f)",
-                    co, tp, mat, pri,
+                    "Cross-period dedup: dropping %s / %s / %s (comparator=%.0f)",
+                    co, tp, mat, comparator,
                 )
                 continue
-            _group_principals[key].append(pri)
+            _group_principals[key].append(comparator)
             cross_period_deduped.append(r)
         cross_dupes = len(deduped) - len(cross_period_deduped)
         if cross_dupes:
