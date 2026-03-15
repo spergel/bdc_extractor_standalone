@@ -1408,6 +1408,8 @@ def _apply_ticker_specific_company_cleanup(name: str, ticker: Optional[str]) -> 
         if re.match(r'^.+\s+Interest\s+Rate\s+[\d.]+\s*%.*Maturity\s+Date\s+', s, re.I):
             return ('', None)
         s = re.sub(r'^Debt\s+Investments\s+(?:First\s+Lien\s+)?(?:Senior\s+Secured\s+)?(?:Second\s+Lien\s+)?(?:Subordinated\s+)?', '', s, flags=re.I).strip()
+        s = re.sub(r'^Equity\s+Investments\s+', '', s, flags=re.I).strip()
+        s = re.sub(r'^Short-?Term\s+Investments\s+', '', s, flags=re.I).strip()
         return (s, None)
 
     # CGBD: "Investment Non-Affiliated Issuer First Lien Debt ACR Group Borrower LLC" → "ACR Group Borrower LLC"

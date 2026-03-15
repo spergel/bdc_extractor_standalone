@@ -4,67 +4,112 @@ Last reviewed: 2026-03-14
 
 This file replaces older overlapping status docs and is the operational source of truth.
 
+---
+
+## Pipeline Architecture (Current)
+
+Four extraction pipelines, auto-routed by `process_all_bdcs.py`:
+
+| Pipeline | Tickers | Notes |
+|----------|---------|-------|
+| **XBRL** | ARCC, BBDC, BXSL, CCAP, CGBD, CSWC, FDUS, FSK, GAIN, GBDC, GECC, GLAD, GSBD, HRZN, ICMB, KBDC, LIEN, MAIN, MRCC, MSDL, MSIF, NCDL, NMFC, OCSL, OFS, OXSQ, PFLT, PNNT, PSBD, PSEC, PFX, RAND, SAR, SCM, SLRC, TCPC, TRIN, TSLX, WHF | Best data quality; XBRL rollup filter in post_process drops aggregate rows |
+| **HTML/LLM** | CION, HTGC, OBDC, TPVG | html_soi_parser.py; no LLM |
+| **DSPy** | EQS, MFIC, RWAY, SSSS | Gemini 2.0 Flash via DSPy; for filings html_soi_parser can't handle |
+| **Custom scraper** | BCIC, BCSF | Per-ticker scripts in scripts/ |
+
+Total: 49 tickers, ~6,700 company exposures.
+
+---
+
 ## Current Priorities
 
-1. **ICMB extraction quality**
-   - Symptom: severe under-extraction in recent periods.
-   - Next action: route ICMB through DSPy path and re-run with `--force`.
+### High — data quality
 
-2. **MFIC / PFX investment type quality**
-   - Symptom: investment types often blank or misplaced.
-   - Next action: prefer DSPy route for these tickers, then re-consolidate.
+1. **MFIC (6 of 9 periods)**: old html_soi_parser data with 83–100% blank `investment_type`.
+   - Good periods (0% blank): 2025-02-25, 2025-08-11, 2025-11-06 (DSPy-extracted)
+   - Bad periods: 2023-05-02, 2023-08-02, 2023-11-07, 2024-05-07, 2024-11-07, 2025-05-12
+   - Fix: `python scripts/run_dspy_scraper.py --ticker MFIC --force --start 2023-01-01`
+   - **WARNING**: ~25 min/filing × 9 filings = 4+ hours total
 
-3. **PSBD investment type mapping**
-   - Symptom: overuse of fallback type (`Other Equity`).
-   - Next action: enrich/fix type mapping from HTML context or DSPy route.
+2. **SSSS (3 of 11 periods broken)**:
+   - 2023-03-16: $441M total FV (should be ~$60–80M) — Gemini reads wrong valuation table
+   - 2025-03-12: 26 rows (should be ~46–160) — same issue
+   - 2025-08-07: $133B total FV — negative format `(14297450\t)` misread
+   - Root cause: Gemini picks company valuation tables over SSSS's SOI table
 
-4. **GSBD older filings**
-   - Symptom: older 2025 filings still have high blank-name rates.
-   - Next action: re-extract when SEC endpoints are responsive.
+3. **BCIC 2025-08-07**: 500 rows (expected ~220–350), 238 blank `investment_type`.
+   - Suspected prior-period duplication in custom scraper
 
-5. **Maturity-date gaps in some XBRL tickers**
-   - Symptom: near-0% maturity coverage for specific names.
-   - Next action: inspect HTML enrichment output for one failing sample ticker.
+### Medium — investigation needed
+
+4. **PSBD interest_rate blank**: All PSBD rows have blank `interest_rate` despite having `spread`.
+   - XBRL extractor gets spread but not the floating rate base. Rate = SOFR + spread (computable).
+   - May require HTML enrichment fix or display-layer computation.
+
+5. **GSBD older filings**: some older filings may still have quality issues.
+
+---
+
+## Recently Completed
+
+| Date | Fix | Result |
+|------|-----|--------|
+| 2026-03-14 | **PSBD investment_type fix** | Was 93% "Other Equity"; now 77% First Lien + 14% Second Lien + 9% actual equity. 6 XBRL periods (2024-11 to 2026-02). |
+| 2026-03-14 | **PFX XBRL migration** | DSPy had $200B–$600B scale errors; XBRL gives correct $586–589M. 3 periods (2025+). Old 10 corrupted DSPy periods deleted. |
+| 2026-03-14 | **post_process PFX block removed** | Was dropping 84/90 rows (clean_company_name ran before the block, stripping the prefix the block needed). |
+| 2026-03-14 | **GECC + ICMB XBRL migration** | DSPy had encoding errors / $246B impossible totals. XBRL: GECC 13 periods/1124 rows, ICMB 10 periods/596 rows. |
+| 2026-03-14 | **FSK 10-Q dedup + unit scale fix** | Cross-period dedup + full-doc unit scale scan. 12 periods, ~9,500 rows. |
+| 2026-03-13 | **DSPy unit scale fix** | Was storing native millions not thousands. Fixed in llm_table_scraper + dspy_table_scraper. |
+| 2026-03-05 | **RWAY → DSPy** | html_soi_parser produced 77% garbled names; DSPy: 0% garbled, 100% rate coverage. |
+| 2026-03-03 | **PFLT/PNNT name extraction** | Fixed ~50% blank rate; broad company name cleanup pass across all frontend CSVs. |
+
+---
 
 ## Known-Low-Priority Cases
 
-- Blank fair value on some unfunded commitments/CLO equity rows may be expected accounting output.
-- Negative tiny fair values on some revolvers can represent fee/marking behavior.
-- Treat these as display/data-policy decisions unless extraction evidence shows incorrect parsing.
+- Blank fair value on unfunded commitments/CLO equity rows — expected accounting output.
+- Negative tiny fair values on some revolvers — fee/marking behavior, not a parsing error.
+- SAR quarterly 10-Qs include ~320 CLO holdings alongside ~84 direct portfolio companies. 10-K has only direct. Structural, not a bug.
+- EQS: 7–11 rows/filing is correct (tiny BDC, verified).
 
-## Recently Completed (Keep Brief)
-
-- PFLT/PNNT company-name extraction improved significantly.
-- CGBD prefix cleanup implemented.
-- XBRL member-string leakage into `reference_rate` addressed.
-- Broad company-name cleanup pass completed across frontend CSV outputs.
+---
 
 ## Standard Recovery Commands
 
 ```bash
-# Extract/re-extract selected tickers
-python process_all_bdcs.py --tickers GSBD PFLT PNNT PSBD --force
+# Extract/re-extract selected tickers (auto-routes to correct pipeline)
+python process_all_bdcs.py --tickers TICKER1 TICKER2 --force --years-back 3
 
-# Re-run post-processing
-python src/processing/post_process_extraction.py --directory output/
+# DSPy re-extract specific ticker
+python scripts/run_dspy_scraper.py --ticker MFIC --force --start 2023-01-01
 
-# Re-consolidate investments
+# Re-run post-processing on all output files
+python src/processing/post_process_extraction.py --directory output
+
+# Re-consolidate investments → frontend
 python src/consolidation/consolidate_investments.py
 
 # Rebuild company resolution artifacts
 python src/company_resolution/resolve_companies.py
+
+# Full pipeline: extract + post-process + consolidate + resolve (no profiles)
+python process_all_bdcs.py --tickers TICKER --force --skip-profiles
 ```
+
+---
 
 ## Triage Workflow
 
-1. Reproduce issue on one ticker and one filing period.
+1. Reproduce on one ticker + one filing period.
 2. Determine extraction path (XBRL, HTML parser, DSPy, or custom scraper).
-3. Fix path-specific logic.
+3. Fix path-specific logic or routing in `process_all_bdcs.py`.
 4. Re-run post-process + consolidate + company resolution.
 5. Verify in `frontend/public/data/investments/` and `company_exposures.csv`.
+
+---
 
 ## Scope Rules
 
 - Do not add new one-off "progress" docs for each session.
-- Update this file for issue/status changes.
-- Keep deep implementation details in code comments or dedicated design docs only when needed.
+- Update this file for issue/status changes; keep it concise.
+- Deep implementation details go in code comments or dedicated design docs.

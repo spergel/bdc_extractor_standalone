@@ -142,12 +142,27 @@ def post_process_csv(input_file: Path, output_file: Path = None) -> Tuple[int, i
                     if original_spread != cleaned_spread:
                         rows_changed += 1
                 
+                # PSBD: capture investment_type from dim string BEFORE clean_company_name strips it.
+                # The extractor encodes lien type in the dim prefix ("Debt Investments First Lien...").
+                # clean_company_name strips this prefix, losing the type signal.
+                # (Only applies to XBRL-extracted files; DSPy rows won't have this prefix.)
+                _psbd_type_override = None
+                if file_ticker == 'PSBD':
+                    _raw = (row.get('company_name') or '').strip()
+                    if re.match(r'^Debt Investments First Lien', _raw, re.I):
+                        _psbd_type_override = 'First Lien'
+                    elif re.match(r'^Debt Investments Second Lien', _raw, re.I):
+                        _psbd_type_override = 'Second Lien'
+
                 # Clean company_name (with optional ticker for BDC-specific cleanup)
                 if 'company_name' in row:
                     original_name = row['company_name']
                     ticker = (row.get('ticker') or '').strip() or file_ticker
                     cleaned_name, extracted_industry = clean_company_name(original_name, ticker=ticker or None)
                     row['company_name'] = cleaned_name
+                    if _psbd_type_override:
+                        row['investment_type'] = _psbd_type_override
+                        rows_changed += 1
                     if original_name != cleaned_name:
                         rows_changed += 1
                     # Use industry from stripped title or company name (e.g. Advanced Aircrew → Aerospace & Defense) when industry is empty or Other
