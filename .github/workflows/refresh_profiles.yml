@@ -1,0 +1,42 @@
+name: Refresh BDC Profiles
+
+on:
+  schedule:
+    # Daily at 6:17 AM UTC (before US market open)
+    - cron: '17 6 * * *'
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install yfinance
+        run: pip install yfinance
+
+      - name: Refresh profiles
+        run: python scripts/refresh_bdc_profiles.py
+
+      - name: Commit and push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          if [ -n "$(git status --porcelain frontend/public/data/)" ]; then
+            git add frontend/public/data/*/profile.json
+            git commit -m "chore: refresh BDC market profiles [skip ci]"
+            git push
+          else
+            echo "No profile changes to commit"
+          fi
