@@ -626,7 +626,57 @@ export function getAverageSpreadByInvestmentType(holdings: Holding[]): AverageSp
     .sort((a, b) => b.totalFV - a.totalFV);
 }
 
-// FV ratio distributions for histograms
+// ─── Markdown / valuation analysis ──────────────────────────────────────────
+
+/**
+ * Price = fair_value / cost_basis.
+ * Prefers amortized_cost (via getCost), falls back to principal_amount.
+ * Returns null for instruments with no cost basis (equity, warrants).
+ * Sanity-bounds: must be in [0.01, 2.5] to filter unit-scale errors.
+ */
+export function getPrice(h: Holding): number | null {
+  const fv = getFV(h);
+  if (fv <= 0) return null;
+  const cost = getCost(h);
+  if (cost > 0) {
+    const ratio = fv / cost;
+    if (ratio >= 0.01 && ratio <= 2.5) return ratio;
+  }
+  const principal = getPrincipal(h);
+  if (principal > 0) {
+    const ratio = fv / principal;
+    if (ratio >= 0.01 && ratio <= 2.5) return ratio;
+  }
+  return null;
+}
+
+export type PriceCategory = 'par' | 'slight' | 'moderate' | 'deep' | 'distressed';
+
+export function getPriceCategory(price: number): PriceCategory {
+  if (price >= 0.98) return 'par';
+  if (price >= 0.90) return 'slight';
+  if (price >= 0.80) return 'moderate';
+  if (price >= 0.60) return 'deep';
+  return 'distressed';
+}
+
+export const PRICE_CATEGORY_COLORS: Record<PriceCategory, string> = {
+  par:        '#228B22', // forest green
+  slight:     '#DAA520', // goldenrod
+  moderate:   '#D2691E', // chocolate orange
+  deep:       '#B22222', // firebrick red
+  distressed: '#4B0000', // dark maroon
+};
+
+export const PRICE_CATEGORY_LABELS: Record<PriceCategory, string> = {
+  par:        '≥98¢ (Par)',
+  slight:     '90–98¢',
+  moderate:   '80–90¢',
+  deep:       '60–80¢',
+  distressed: '<60¢',
+};
+
+// ─── FV ratio distributions for histograms ───────────────────────────────────
 export type FVRatioDistribution = {
   range: string;
   count: number;

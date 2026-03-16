@@ -6,6 +6,7 @@ import { AnalyticsPanel } from './AnalyticsPanel';
 import { BDCSectorView } from './BDCSectorView';
 import { DiffViewer } from './DiffViewer';
 import { DisclosurePanel } from './DisclosurePanel';
+import { ValuationTab } from './ValuationTab';
 import { getPreviousQuarter, getYearOverYear, getYearEndComparison, getComparisonLabel, formatPeriodLabel } from '../utils/periodComparisons';
 import { playClickSound } from '../utils/sounds';
 
@@ -427,6 +428,17 @@ export function TabContent({
              !periods || periods.length === 0 ? 'No period data available' :
              'Need at least 2 periods to compare. Backfill more historical data to enable comparisons.'}
           </div>
+        </div>
+      ),
+    },
+    {
+      id: 'valuation',
+      label: 'Valuation',
+      content: ticker && periods && periods.length > 0 ? (
+        <ValuationTab ticker={ticker} periods={periods} />
+      ) : (
+        <div className="window p-4">
+          <div className="text-xs text-[#808080]">Select a BDC to view valuation analysis.</div>
         </div>
       ),
     },

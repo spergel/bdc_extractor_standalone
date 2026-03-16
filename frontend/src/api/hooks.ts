@@ -85,6 +85,25 @@ export function useBDCInvestmentsMultiple(ticker: string | undefined, periods: s
   }));
 }
 
+/** Load latest period for every BDC at once — used by the Peer Marks page. */
+export function useAllBDCsLatestInvestments(bdcs: { ticker: string; latest?: string }[]) {
+  const eligible = bdcs.filter((b) => !!b.latest);
+  const queries = useQueries({
+    queries: eligible.map((b) => ({
+      queryKey: ['bdc-investments', b.ticker, b.latest],
+      queryFn: () => fetchPeriodSnapshot(b.ticker, b.latest!),
+      enabled: true,
+      staleTime: 24 * 60 * 60 * 1000,
+    })),
+  });
+  return eligible.map((b, i) => ({
+    ticker: b.ticker,
+    period: b.latest!,
+    data: queries[i]?.data ?? null,
+    isLoading: queries[i]?.isLoading ?? false,
+  }));
+}
+
 export function useCompanyExposures() {
   return useQuery({
     queryKey: ['company-exposures'],

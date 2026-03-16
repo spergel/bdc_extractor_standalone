@@ -299,6 +299,33 @@ def _parse_fair_value(val: Any) -> float:
         return 0.0
 
 
+def _safe_fair_value(row: Dict) -> float:
+    """Return the best available fair_value for a row, with unit sanity checks.
+
+    BDC investment CSVs store values in thousands. Occasionally an extraction error
+    writes a value in raw dollars (1000x too large). Detect this by comparing
+    fair_value to amortized_cost: if the ratio exceeds 500 the value is almost
+    certainly in the wrong unit, so fall back to amortized_cost. Also fall back when
+    the data_quality_flags field explicitly marks fair_value as suspicious.
+    """
+    flags = str(row.get("data_quality_flags") or "").lower()
+    fv = _parse_fair_value(row.get("fair_value") or row.get("fair_value_thousands"))
+    ac = _parse_fair_value(row.get("amortized_cost"))
+
+    if fv <= 0:
+        return ac if ac > 0 else 0.0
+
+    # Explicit quality flag: prefer amortized_cost when available
+    if "fair_value_suspicious" in flags and ac > 0:
+        return ac
+
+    # Implicit ratio check: fair_value >> amortized_cost => likely wrong units
+    if ac > 0 and fv / ac > 500:
+        return ac
+
+    return fv
+
+
 def _load_profile_industries(data_dir: Path) -> Dict[str, str]:
     """Load company_id -> industry from company_profiles.json (when present)."""
     path = data_dir / "company_profiles.json"
@@ -350,7 +377,7 @@ def _write_company_exposures(
                 continue
             if ticker:
                 agg[cid]["tickers"].add(ticker)
-            fv = _parse_fair_value(row.get("fair_value") or row.get("fair_value_thousands"))
+            fv = _safe_fair_value(row)
             agg[cid]["fair_value_sum"] += fv
             raw_ind = (row.get("industry") or row.get("industry_clean") or "").strip()
             ind = normalize_industry(raw_ind)
@@ -465,7 +492,7 @@ def _write_company_detail(
                 continue
             if row.get("filing_date") != latest_per_ticker.get(ticker):
                 continue
-            fv = _parse_fair_value(row.get("fair_value") or row.get("fair_value_thousands"))
+            fv = _safe_fair_value(row)
             if fv <= 0:
                 continue
             fv_millions = fv / 1000.0
