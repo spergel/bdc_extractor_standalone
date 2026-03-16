@@ -629,23 +629,26 @@ export function getAverageSpreadByInvestmentType(holdings: Holding[]): AverageSp
 // ─── Markdown / valuation analysis ──────────────────────────────────────────
 
 /**
- * Price = fair_value / cost_basis.
- * Prefers amortized_cost (via getCost), falls back to principal_amount.
- * Returns null for instruments with no cost basis (equity, warrants).
- * Sanity-bounds: must be in [0.01, 2.5] to filter unit-scale errors.
+ * Price = fair_value / par (face value), i.e. "cents on the dollar".
+ * Prefers principal_amount (par value) as denominator, falls back to amortized_cost.
+ * Returns null for instruments with no par/cost basis (equity, warrants, undrawn revolvers).
+ * Capped at [0.01, 1.05] — loans rarely trade >105¢, and >105 almost always means a
+ * discount-purchase artefact (e.g. amortized_cost < principal) rather than a real premium.
  */
 export function getPrice(h: Holding): number | null {
   const fv = getFV(h);
   if (fv <= 0) return null;
-  const cost = getCost(h);
-  if (cost > 0) {
-    const ratio = fv / cost;
-    if (ratio >= 0.01 && ratio <= 2.5) return ratio;
-  }
   const principal = getPrincipal(h);
   if (principal > 0) {
     const ratio = fv / principal;
-    if (ratio >= 0.01 && ratio <= 2.5) return ratio;
+    if (ratio >= 0.01 && ratio <= 1.05) return ratio;
+    // ratio > 1.05 → PIK accretion or units noise; return null rather than show >100¢
+    if (ratio > 1.05) return null;
+  }
+  const cost = getCost(h);
+  if (cost > 0) {
+    const ratio = fv / cost;
+    if (ratio >= 0.01 && ratio <= 1.05) return ratio;
   }
   return null;
 }
