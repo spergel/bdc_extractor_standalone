@@ -390,6 +390,68 @@ JSON:"""
     return None
 
 
+def research_company_gemini_only(canonical_name: str) -> Optional[Dict[str, str]]:
+    """
+    Use Gemini's training knowledge alone (no web search) to build a company profile.
+    Works well for known private-equity-backed companies. Falls back gracefully for obscure
+    holding-company names by noting the holding structure.
+    Requires GOOGLE_API_KEY.
+    """
+    google_key = os.environ.get("GOOGLE_API_KEY")
+    if not google_key:
+        return None
+    try:
+        import google.generativeai as genai
+    except ImportError:
+        return None
+
+    genai.configure(api_key=google_key)
+    model = genai.GenerativeModel("gemini-2.5-flash-lite")
+    allowed_list = ", ".join(f'"{x}"' for x in ALLOWED_INDUSTRIES)
+    prompt = f"""Using your knowledge, provide a structured profile for the company named "{canonical_name}".
+This is a private company (often PE-backed). If the name looks like a holding/acquisition vehicle (e.g. "Buyer, Inc.", "Holdings, LLC", "Topco"), try to identify the underlying operating business it represents.
+
+Reply with valid JSON only, no markdown, with these exact keys. Use empty string "" when information is not available.
+
+- "description": what the company does (one sentence, clear business description)
+- "leadership": CEO or key executive if known (one sentence, or "")
+- "funding": ownership or PE sponsor if known, e.g. "Private equity-backed by Vista Equity Partners" (or "")
+- "recent_news": one notable fact or recent development (or "")
+- "industry": MUST be exactly one of: {allowed_list}. Map to closest match, or "".
+- "location": headquarters city/state/country if known (or "")
+- "website": official website URL if known (or "")
+- "employee_range": approximate employee count or range if known (or "")
+
+JSON:"""
+
+    try:
+        resp = model.generate_content(prompt)
+        text = (resp.text or "").strip()
+        text = re.sub(r"^```(?:json)?\s*", "", text)
+        text = re.sub(r"\s*```\s*$", "", text)
+        data = json.loads(text)
+        if isinstance(data, dict):
+            empty_placeholders = {"unknown", "empty", "n/a", "none", "-", "not available", "not known"}
+            out = {}
+            for k, v in data.items():
+                s = (str(v).strip() if v else "")
+                if s.lower() in empty_placeholders:
+                    s = ""
+                out[k] = s
+            # Validate we got something useful
+            if not (out.get("description") or "").strip():
+                return None
+            raw_ind = (out.get("industry") or "").strip()
+            if raw_ind:
+                out["industry"] = normalize_industry(raw_ind) or ""
+                if out["industry"] and out["industry"] not in ALLOWED_INDUSTRIES:
+                    out["industry"] = "Other"
+            return out
+    except Exception as e:
+        logger.warning("Gemini-only failed for %s: %s", canonical_name, e)
+    return None
+
+
 def fetch_description_llm(canonical_name: str) -> Optional[str]:
     """Optional: use OpenAI to generate a one-line company description. Requires OPENAI_API_KEY."""
     api_key = os.environ.get("OPENAI_API_KEY")
@@ -545,11 +607,24 @@ def build_profiles(
                         prof["industry"] = "Other"
                 prof["source"] = "tavily_gemini"
             else:
-                # Fallback: OpenAI one-line description only
-                desc = fetch_description_llm(canonical)
-                if desc:
-                    prof["description"] = desc
-                    prof["source"] = "openai"
+                # Fallback 1: Gemini-only (training knowledge, no web search)
+                research = research_company_gemini_only(canonical)
+                if research:
+                    for key in ("description", "website", "location", "employee_range", "leadership", "funding", "recent_news"):
+                        if key in research and research[key]:
+                            prof[key] = research[key]
+                    raw_ind = (research.get("industry") or "").strip() or prof["industry_initial"]
+                    if raw_ind:
+                        prof["industry"] = normalize_industry(raw_ind) or ""
+                        if prof["industry"] and prof["industry"] not in ALLOWED_INDUSTRIES:
+                            prof["industry"] = "Other"
+                    prof["source"] = "gemini"
+                else:
+                    # Fallback 2: OpenAI one-line description only
+                    desc = fetch_description_llm(canonical)
+                    if desc:
+                        prof["description"] = desc
+                        prof["source"] = "openai"
                 # No LLM industry: set industry from resolution/filings (normalized to allowed list)
                 if prof["industry_initial"]:
                     prof["industry"] = normalize_industry(prof["industry_initial"]) or ""
