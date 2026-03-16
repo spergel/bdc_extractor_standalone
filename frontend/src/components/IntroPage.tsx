@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useBDCIndex, useCompanyExposures } from '../api/hooks';
+import { useBDCIndex, useCompanyExposures, useAllBDCProfiles } from '../api/hooks';
 
 type NavCardProps = {
   title: string;
@@ -61,10 +61,129 @@ function StatTile({ label, value, sub }: StatTileProps) {
   );
 }
 
+// ─── Helpers ──────────────────────────────────────────────────────────────────
+
+function getRaw(v: unknown): number | null {
+  if (v === null || v === undefined) return null;
+  if (typeof v === 'number') return isFinite(v) ? v : null;
+  if (typeof v === 'object' && 'raw' in (v as object)) {
+    const n = (v as Record<string, unknown>).raw;
+    return typeof n === 'number' && isFinite(n) ? n : null;
+  }
+  return null;
+}
+
+type NAVRow = {
+  ticker: string;
+  name: string;
+  price: number;
+  nav: number;
+  discount: number; // (price/nav - 1), negative = discount
+  pricesAsOf: string;
+};
+
+function DiscountBar({ discount }: { discount: number }) {
+  // Centered bar: negative = red left, positive = blue right, scale capped ±40%
+  const MAX = 40;
+  const pct = Math.min(Math.abs(discount * 100), MAX);
+  const isDiscount = discount < 0;
+  return (
+    <div className="flex items-center" style={{ width: 80, height: 10, gap: 0 }}>
+      {/* left half */}
+      <div style={{ width: 40, display: 'flex', justifyContent: 'flex-end' }}>
+        {isDiscount && (
+          <div style={{ width: `${(pct / MAX) * 100}%`, height: 8, backgroundColor: '#B22222' }} />
+        )}
+      </div>
+      {/* center tick */}
+      <div style={{ width: 1, height: 10, backgroundColor: '#808080', flexShrink: 0 }} />
+      {/* right half */}
+      <div style={{ width: 40 }}>
+        {!isDiscount && (
+          <div style={{ width: `${(pct / MAX) * 100}%`, height: 8, backgroundColor: '#000080' }} />
+        )}
+      </div>
+    </div>
+  );
+}
+
+function NAVTable({ rows }: { rows: NAVRow[] }) {
+  const sorted = useMemo(() => [...rows].sort((a, b) => a.discount - b.discount), [rows]);
+  const pricesAsOf = rows[0]?.pricesAsOf ?? '—';
+
+  return (
+    <div className="window">
+      <div className="titlebar">
+        <span>Discount / Premium to NAV</span>
+      </div>
+      <div className="p-3">
+        <div className="text-[10px] text-[#808080] mb-2">
+          Market price vs. net asset value per share. Negative = trading below book (discount). Prices as of {pricesAsOf}.
+        </div>
+        <div className="overflow-x-auto">
+          <table style={{ borderCollapse: 'collapse', width: '100%', fontSize: 11 }}>
+            <thead>
+              <tr style={{ borderBottom: '1px solid #808080' }}>
+                <th className="text-left py-1 pr-3 text-[#808080] font-semibold text-[10px]">BDC</th>
+                <th className="text-right py-1 pr-3 text-[#808080] font-semibold text-[10px]">Price</th>
+                <th className="text-right py-1 pr-3 text-[#808080] font-semibold text-[10px]">NAV/share</th>
+                <th className="text-right py-1 pr-3 text-[#808080] font-semibold text-[10px]">Disc/Prem</th>
+                <th className="py-1 text-[#808080] font-semibold text-[10px]" style={{ minWidth: 88 }}></th>
+              </tr>
+            </thead>
+            <tbody>
+              {sorted.map((row) => {
+                const pct = row.discount * 100;
+                const isDiscount = pct < 0;
+                const color = isDiscount ? '#B22222' : '#000080';
+                return (
+                  <tr key={row.ticker} style={{ borderBottom: '1px solid #f0f0f0' }}>
+                    <td className="py-0.5 pr-3 font-semibold text-black" style={{ whiteSpace: 'nowrap' }}>
+                      {row.ticker}
+                      <span className="font-normal text-[#808080] ml-1 text-[9px]">{row.name}</span>
+                    </td>
+                    <td className="py-0.5 pr-3 text-right text-black">${row.price.toFixed(2)}</td>
+                    <td className="py-0.5 pr-3 text-right text-[#808080]">${row.nav.toFixed(2)}</td>
+                    <td className="py-0.5 pr-3 text-right font-semibold" style={{ color }}>
+                      {pct >= 0 ? '+' : ''}{pct.toFixed(1)}%
+                    </td>
+                    <td className="py-0.5"><DiscountBar discount={row.discount} /></td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── Main component ───────────────────────────────────────────────────────────
+
 export function IntroPage() {
   const navigate = useNavigate();
   const { data: index } = useBDCIndex();
   const { data: exposures } = useCompanyExposures();
+
+  const tickers = useMemo(() => index?.bdcs?.map((b) => b.ticker) ?? [], [index]);
+  const allProfiles = useAllBDCProfiles(tickers);
+
+  const navRows = useMemo<NAVRow[]>(() => {
+    const bdcMap = new Map((index?.bdcs ?? []).map((b) => [b.ticker, b.name]));
+    const rows: NAVRow[] = [];
+    for (const { ticker, data } of allProfiles) {
+      if (!data) continue;
+      const price = getRaw(data.price?.regularMarketPrice);
+      const nav = getRaw(data.summaryDetail?.bookValue);
+      const ptb = getRaw(data.summaryDetail?.priceToBook);
+      if (!price || !nav || nav <= 0) continue;
+      const discount = ptb !== null ? ptb - 1 : price / nav - 1;
+      const rawDate = data.generated_at ? new Date(data.generated_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '—';
+      rows.push({ ticker, name: bdcMap.get(ticker) ?? '', price, nav, discount, pricesAsOf: rawDate });
+    }
+    return rows;
+  }, [allProfiles, index]);
 
   const stats = useMemo(() => {
     const bdcCount = index?.bdcs?.length ?? 0;
@@ -137,6 +256,9 @@ export function IntroPage() {
             />
           </div>
         </div>
+
+        {/* NAV discount table */}
+        {navRows.length > 0 && <NAVTable rows={navRows} />}
 
         {/* Footer note */}
         <p className="text-[10px] text-gray-400 text-center px-2">

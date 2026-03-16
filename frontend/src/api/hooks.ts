@@ -85,6 +85,24 @@ export function useBDCInvestmentsMultiple(ticker: string | undefined, periods: s
   }));
 }
 
+/** Load market/NAV profiles for every BDC at once — used by the intro page NAV table. */
+export function useAllBDCProfiles(tickers: string[]) {
+  const queries = useQueries({
+    queries: tickers.map((ticker) => ({
+      queryKey: ['bdc-profile', ticker],
+      queryFn: () => fetchProfile(ticker),
+      enabled: !!ticker,
+      staleTime: 60 * 60 * 1000,
+      retry: 0,
+    })),
+  });
+  return tickers.map((ticker, i) => ({
+    ticker,
+    data: queries[i]?.data ?? null,
+    isLoading: queries[i]?.isLoading ?? false,
+  }));
+}
+
 /** Load latest period for every BDC at once — used by the Peer Marks page. */
 export function useAllBDCsLatestInvestments(bdcs: { ticker: string; latest?: string }[]) {
   const eligible = bdcs.filter((b) => !!b.latest);
