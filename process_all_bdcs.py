@@ -44,13 +44,14 @@ XBRL_TICKERS = [
     "GECC",  # has XBRL SOI (2025+); DSPy had encoding errors on 2025 filings
     "ICMB",  # has XBRL SOI (2025+); DSPy produced impossible totals ($246B) for all periods
     "PFX",   # has XBRL SOI; DSPy had mixed-unit scale ($200B-600B totals); post_process strips affiliation prefixes
+    "OBDC",  # has XBRL SOI; LLM extractor put equity share counts in principal_amount; XBRL gives clean data
 ]
 
 # LLM (html_soi_parser) pipeline: tickers with functional HTML SOI tables
-# Grade B: CION (rate=12%), HTGC (rate=2%), OBDC (rate=0%), TPVG (rate=12%)
+# Grade B: CION (rate=12%), HTGC (rate=2%), TPVG (rate=12%)
 LLM_TICKERS = [
     "CION", "HTGC",
-    "OBDC", "TPVG",
+    "TPVG",
 ]
 
 # DSPy pipeline: tickers where html_soi_parser produces empty/broken output.
