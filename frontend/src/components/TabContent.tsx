@@ -153,7 +153,7 @@ export function TabContent({
               <select className="input" value={finRange}
                 onChange={(e) => onFinRangeChange(e.target.value as 'quarters' | 'years')}
               >
-                <option value="quarters">Last 5 Quarters</option>
+                <option value="quarters">Recent Quarters</option>
                 <option value="years">Last 5 Years (20 Quarters)</option>
               </select>
             </div>

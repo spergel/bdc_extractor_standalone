@@ -29,6 +29,43 @@ type Props = {
   period?: string;
 };
 
+function CategoryBarChart({
+  title,
+  data,
+}: {
+  title: string;
+  data: Array<{ category: string; percentage: number; fairValue?: number }>;
+}) {
+  if (!data.length) {
+    return (
+      <div className="window p-3">
+        <div className="text-xs text-[#808080]">{title}: No data</div>
+      </div>
+    );
+  }
+  const top = data.slice(0, 8);
+  const maxPct = Math.max(...top.map((d) => d.percentage), 1);
+  return (
+    <div className="window p-3">
+      <div className="text-xs font-semibold mb-2 text-black">{title}</div>
+      <div className="space-y-1.5">
+        {top.map((item) => (
+          <div key={item.category} className="flex items-center gap-2">
+            <div className="w-28 text-xs text-black truncate" title={item.category}>{item.category}</div>
+            <div className="flex-1 bg-[#c0c0c0] h-4">
+              <div
+                className="h-full bg-[#0000ff]"
+                style={{ width: `${(item.percentage / maxPct) * 100}%` }}
+              />
+            </div>
+            <div className="w-16 text-right text-xs text-[#808080]">{item.percentage.toFixed(1)}%</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 // Histogram bar chart component
 function HistogramChart({ data, title, onBucketClick, selectedBucket, rangeControls }: {
   data: Array<{ range: string; count: number; percentage: number }>;
@@ -442,6 +479,12 @@ export function AnalyticsPanel({ holdings, period }: Props) {
             <div>Range: {fvRatios.fvCost.min.toFixed(3)} - {fvRatios.fvCost.max.toFixed(3)}</div>
           </div>
         </div>
+      </div>
+
+      {/* Additional visuals for concentration */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <CategoryBarChart title="Top Industry Concentration" data={industryDist} />
+        <CategoryBarChart title="Top Type Concentration" data={typeDist} />
       </div>
       
       {/* Top Holdings */}

@@ -141,7 +141,7 @@ def extract_financials(ticker: str, years_back: int, force: bool) -> bool:
         str(REPO_ROOT / "src/extraction/financial_statements_extractor.py"),
         "--ticker", ticker,
         "--years-back", str(years_back),
-        "--filing-type", "10-Q",
+        "--filing-type", "both",
     ]
     if force:
         cmd.append("--force")

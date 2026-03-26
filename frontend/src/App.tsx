@@ -19,7 +19,8 @@ import { getYearEndComparison } from './utils/periodComparisons';
 
 // ---------------------------------------------------------------------------
 // URL schema:
-//   /bdc                  → BDC list (auto-selects first ticker)
+//   /                     → Intro page
+//   /bdc                  → BDC list (no ticker selected)
 //   /bdc/:ticker          → BDC view, overview tab
 //   /bdc/:ticker/:tab     → BDC view, specific tab
 //   /companies            → Companies list
@@ -109,13 +110,6 @@ function App() {
   }, [navigate]);
 
   const isHome = location.pathname === '/';
-
-  // Auto-select first ticker when landing on /bdc with no ticker
-  useEffect(() => {
-    if (viewMode === 'bdc' && !ticker && index?.bdcs?.length) {
-      navigate(`/bdc/${index.bdcs[0].ticker}`, { replace: true });
-    }
-  }, [viewMode, ticker, index, navigate]);
 
   const { data: periods } = useBDCPeriods(ticker);
   const latestPeriodForTicker = useMemo(() => {
@@ -207,7 +201,9 @@ function App() {
   const recentPeriods = useMemo(() => {
     if (!periods || periods.length === 0) return [];
     if (finRange === 'quarters') {
-      return [...periods].reverse().slice(0, Math.min(5, periods.length));
+      // Pull a deeper window so Financials can still show enough columns when
+      // some investment periods have no extracted statement rows.
+      return [...periods].reverse().slice(0, Math.min(12, periods.length));
     }
     const today = new Date();
     const fiveYearsAgo = new Date(today.getFullYear() - 5, today.getMonth(), today.getDate());

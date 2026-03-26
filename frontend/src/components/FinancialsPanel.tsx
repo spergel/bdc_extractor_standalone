@@ -66,6 +66,58 @@ function formatLabel(label: string): string {
   return formatted;
 }
 
+function truncateLabel(label: string, maxLen = 45): string {
+  if (!label) return '';
+  if (label.length <= maxLen) return label;
+  return `${label.slice(0, maxLen - 1)}...`;
+}
+
+function toNumber(value: unknown): number | null {
+  if (value == null) return null;
+  const n = Number(value);
+  return Number.isNaN(n) ? null : n;
+}
+
+function TinyLineChart({
+  title,
+  points,
+  formatter = fmt,
+}: {
+  title: string;
+  points: Array<{ period: string; value: number | null }>;
+  formatter?: (n: unknown) => string;
+}) {
+  const validPoints = points.filter((p) => p.value != null) as Array<{ period: string; value: number }>;
+  if (validPoints.length < 2) return null;
+
+  const width = 260;
+  const height = 80;
+  const minV = Math.min(...validPoints.map((p) => p.value));
+  const maxV = Math.max(...validPoints.map((p) => p.value));
+  const span = Math.max(1e-9, maxV - minV);
+  const xFor = (idx: number) => (idx / (validPoints.length - 1)) * (width - 10) + 5;
+  const yFor = (v: number) => height - ((v - minV) / span) * (height - 16) - 8;
+  const path = validPoints.map((p, i) => `${i === 0 ? 'M' : 'L'} ${xFor(i)} ${yFor(p.value)}`).join(' ');
+
+  return (
+    <div className="window p-3">
+      <div className="text-xs font-semibold mb-2 text-black">{title}</div>
+      <svg viewBox={`0 0 ${width} ${height}`} className="w-full h-24">
+        <path d={path} fill="none" stroke="#0000ff" strokeWidth="2" />
+        {validPoints.map((p, i) => (
+          <circle key={`${p.period}-${i}`} cx={xFor(i)} cy={yFor(p.value)} r="2.5" fill="#000080" />
+        ))}
+      </svg>
+      <div className="mt-1 flex justify-between text-[10px] text-[#808080]">
+        <span>{validPoints[0].period}</span>
+        <span>{formatter(validPoints[0].value)}</span>
+        <span>{validPoints[validPoints.length - 1].period}</span>
+        <span>{formatter(validPoints[validPoints.length - 1].value)}</span>
+      </div>
+    </div>
+  );
+}
+
 // Map raw statement labels/keys to human-friendly display names
 const DISPLAY_NAME_OVERRIDES: Record<string, string> = {
   // Income Statement
@@ -332,6 +384,26 @@ export function FinancialsPanel({ ticker, periods = [], name: _name, mode = 'ove
 
   const hasData = availableData.length > 0;
 
+  const trendSeries = useMemo(() => {
+    const getConceptValue = (data: any, keys: string[]) => {
+      for (const key of keys) {
+        const fromBalance = toNumber(data?.balance_sheet?.[key]);
+        if (fromBalance != null) return fromBalance;
+        const fromIncome = toNumber(data?.income_statement?.[key]);
+        if (fromIncome != null) return fromIncome;
+      }
+      return null;
+    };
+
+    return availableData.map(({ period, data }) => {
+      const totalAssets = getConceptValue(data, ['Assets', 'assets']);
+      const totalLiabilities = getConceptValue(data, ['Liabilities', 'liabilities']);
+      const netIncome = getConceptValue(data, ['NetIncomeLoss', 'netincomeloss']);
+      const leverage = totalAssets && totalLiabilities ? totalLiabilities / totalAssets : null;
+      return { period, totalAssets, totalLiabilities, netIncome, leverage };
+    });
+  }, [availableData]);
+
   // Pick the latest period's full statements (first item in list is latest)
   const latestFull = useMemo(() => {
     if (!availableData.length) return null;
@@ -370,7 +442,11 @@ export function FinancialsPanel({ ticker, periods = [], name: _name, mode = 'ove
             <tbody>
               {entries.map((e) => (
                 <tr key={e.key} className="border-b border-[#c0c0c0] hover:bg-[#c0c0c0]">
-                  <td className="py-1.5 px-3 text-black">{e.label}</td>
+                  <td className="py-1.5 px-3 text-black max-w-[360px]">
+                    <span className="block truncate whitespace-nowrap" title={e.label}>
+                      {truncateLabel(e.label, 45)}
+                    </span>
+                  </td>
                   <td className="py-1.5 px-3 text-right font-mono text-black">{fmt(e.value)}</td>
                 </tr>
               ))}
@@ -431,7 +507,7 @@ export function FinancialsPanel({ ticker, periods = [], name: _name, mode = 'ove
           <table className="w-full text-sm table-excel">
             <thead className="sticky top-0 z-10">
               <tr>
-                <th className="text-left py-2 px-3 text-black text-xs sticky left-0 bg-[#c0c0c0] border border-[#c0c0c0]">Line Item</th>
+                <th className="text-left py-2 px-3 text-black text-xs sticky left-0 bg-[#c0c0c0] border border-[#c0c0c0] w-[320px] min-w-[320px] max-w-[320px]">Line Item</th>
                 {availableData.map(({ period }) => {
                   // Format period date nicely (e.g., "2025-10-23" -> "Q3 2025" or "Oct 2025")
                   let periodLabel = period;
@@ -473,8 +549,10 @@ export function FinancialsPanel({ ticker, periods = [], name: _name, mode = 'ove
                 
                 return (
                   <tr key={key} className="hover:bg-[#c0c0c0]">
-                    <td className="py-1.5 px-3 text-black text-xs sticky left-0 bg-[#c0c0c0] border border-[#c0c0c0]">
-                      {displayLabel}
+                    <td className="py-1.5 px-3 text-black text-xs sticky left-0 bg-[#c0c0c0] border border-[#c0c0c0] w-[320px] min-w-[320px] max-w-[320px]">
+                      <span className="block truncate whitespace-nowrap" title={displayLabel}>
+                        {truncateLabel(displayLabel, 45)}
+                      </span>
                     </td>
                     {availableData.map(({ period, data }) => {
                       const stmt = (data as any)?.[dataKey];
@@ -497,6 +575,28 @@ export function FinancialsPanel({ ticker, periods = [], name: _name, mode = 'ove
 
     return (
       <div className="space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <TinyLineChart
+            title="Total Assets Trend"
+            points={trendSeries.map((p) => ({ period: p.period, value: p.totalAssets }))}
+          />
+          <TinyLineChart
+            title="Total Liabilities Trend"
+            points={trendSeries.map((p) => ({ period: p.period, value: p.totalLiabilities }))}
+          />
+          <TinyLineChart
+            title="Net Income Trend"
+            points={trendSeries.map((p) => ({ period: p.period, value: p.netIncome }))}
+          />
+          <TinyLineChart
+            title="Leverage (Liabilities / Assets)"
+            points={trendSeries.map((p) => ({ period: p.period, value: p.leverage }))}
+            formatter={(n) => {
+              const v = Number(n);
+              return Number.isNaN(v) ? '' : `${(v * 100).toFixed(1)}%`;
+            }}
+          />
+        </div>
         {renderTable('Income Statement', incomeKeys, 'full_income_statement')}
         {renderTable('Balance Sheet', balanceKeys, 'full_balance_sheet')}
         {renderTable('Cash Flow Statement', cashflowKeys, 'full_cash_flow_statement')}
@@ -532,7 +632,11 @@ export function FinancialsPanel({ ticker, periods = [], name: _name, mode = 'ove
               <tbody>
                 {rows.map((row) => (
                   <tr key={row.label} className="border-b border-[#c0c0c0] hover:bg-[#c0c0c0]">
-                    <td className="py-1.5 px-3 text-black">{row.label}</td>
+                    <td className="py-1.5 px-3 text-black max-w-[360px]">
+                      <span className="block truncate whitespace-nowrap" title={row.label}>
+                        {truncateLabel(row.label, 45)}
+                      </span>
+                    </td>
                     {row.values.map(({ period, value }) => (
                       <td key={period} className="text-right py-1.5 px-3 font-mono text-black">
                         {fmt(value)}
