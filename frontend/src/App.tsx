@@ -8,7 +8,14 @@ import { SectorsSidebar } from './components/SectorsSidebar';
 import { CompanyPage } from './components/CompanyPage';
 import { SectorPage } from './components/SectorPage';
 import { IntroPage } from './components/IntroPage';
-import { useBDCIndex, useBDCInvestments, useBDCInvestmentsMultiple, useBDCPeriods, useCompanyExposures } from './api/hooks';
+import {
+  useBDCIndex,
+  useBDCInvestments,
+  useBDCInvestmentsMultiple,
+  useBDCPeriods,
+  useBDCStatementFilingDates,
+  useCompanyExposures,
+} from './api/hooks';
 import { Tabs } from './components/Tabs';
 import { AppHeader, type ViewMode } from './components/AppHeader';
 import { StatusBar } from './components/StatusBar';
@@ -112,6 +119,7 @@ function App() {
   const isHome = location.pathname === '/';
 
   const { data: periods } = useBDCPeriods(ticker);
+  const { data: statementFilingDates } = useBDCStatementFilingDates(ticker);
   const latestPeriodForTicker = useMemo(() => {
     if (!ticker || !index?.bdcs) return undefined;
     const bdc = index.bdcs.find((b) => b.ticker === ticker);
@@ -198,24 +206,27 @@ function App() {
   const bdcs = index?.bdcs ?? [];
   const selected = bdcs.find((b) => b.ticker === ticker);
 
+  // Prefer filing dates from statement CSVs so Financials includes quarters that exist in XBRL
+  // but were never added to the holdings index (e.g. some Q1 10-Qs).
   const recentPeriods = useMemo(() => {
-    if (!periods || periods.length === 0) return [];
+    const src =
+      statementFilingDates && statementFilingDates.length > 0 ? statementFilingDates : (periods ?? []);
+    if (!src.length) return [];
+    const sorted = [...src].sort((a, b) => a.localeCompare(b));
     if (finRange === 'quarters') {
-      // Pull a deeper window so Financials can still show enough columns when
-      // some investment periods have no extracted statement rows.
-      return [...periods].reverse().slice(0, Math.min(12, periods.length));
+      return sorted.slice(-Math.min(20, sorted.length));
     }
     const today = new Date();
     const fiveYearsAgo = new Date(today.getFullYear() - 5, today.getMonth(), today.getDate());
-    const inRange = periods.filter((p) => {
+    const inRange = sorted.filter((p) => {
       try {
         return new Date(p) >= fiveYearsAgo;
       } catch {
         return true;
       }
     });
-    return inRange.length > 0 ? [...inRange].reverse() : [...periods].reverse().slice(0, Math.min(20, periods.length));
-  }, [periods, finRange]);
+    return inRange.length > 0 ? inRange : sorted.slice(-Math.min(40, sorted.length));
+  }, [statementFilingDates, periods, finRange]);
 
   const handleCompanyClick = useCallback((companyId: string) => {
     navigate(`/companies/${encodeURIComponent(companyId)}`);

@@ -1,8 +1,8 @@
 /**
  * Current reference rates for calculating yields
  * 
- * These are loaded from reference_rates.json which is updated daily
- * by the update_reference_rates.py script.
+ * These are loaded from `public/data/reference_rates.json` when present;
+ * otherwise built-in defaults apply.
  */
 
 // Default fallback rates (used if JSON file not available)

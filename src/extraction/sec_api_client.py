@@ -130,6 +130,12 @@ class SECAPIClient:
             'cik_str': 1278752,
             'title': 'Logan Ridge Finance Corp',
         },
+        # Non-traded BDC; SEC submissions use bcred-*.htm; not in company_tickers.json
+        'BCRED': {
+            'ticker': 'BCRED',
+            'cik_str': 1803498,
+            'title': 'Blackstone Private Credit Fund',
+        },
     }
 
     def __init__(self,

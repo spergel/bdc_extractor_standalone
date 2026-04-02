@@ -1,10 +1,13 @@
 name: Refresh BDC Profiles
 
+permissions:
+  contents: write
+
 on:
   schedule:
     # Daily at 6:17 AM UTC (before US market open)
     - cron: '17 6 * * *'
-  workflow_dispatch:  # Manual trigger
+  workflow_dispatch:
 
 jobs:
   refresh:
@@ -13,12 +16,13 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+        # Use PAT if the org restricts GITHUB_TOKEN; create repo secret REPO_PUSH_TOKEN (fine-grained: Contents RW).
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.REPO_PUSH_TOKEN || github.token }}
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'
           cache: 'pip'
@@ -30,13 +34,15 @@ jobs:
         run: python scripts/refresh_bdc_profiles.py
 
       - name: Commit and push
+        env:
+          BRANCH: ${{ github.ref_name }}
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           if [ -n "$(git status --porcelain frontend/public/data/)" ]; then
             git add frontend/public/data/*/profile.json
             git commit -m "chore: refresh BDC market profiles [skip ci]"
-            git push
+            git push origin HEAD:"$BRANCH"
           else
             echo "No profile changes to commit"
           fi

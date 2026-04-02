@@ -1,6 +1,8 @@
 import { useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useQuery } from '@tanstack/react-query';
 import { useBDCIndex, useCompanyExposures, useAllBDCProfiles } from '../api/hooks';
+import { API_BASE } from '../api/client-csv';
 
 type NavCardProps = {
   title: string;
@@ -169,21 +171,33 @@ export function IntroPage() {
   const tickers = useMemo(() => index?.bdcs?.map((b) => b.ticker) ?? [], [index]);
   const allProfiles = useAllBDCProfiles(tickers);
 
+  /** NAV/share from consolidated SEC XBRL (first NetAssetValuePerShare per latest filing). Yahoo bookValue is often wrong for BDCs. */
+  const { data: navLatest } = useQuery({
+    queryKey: ['nav-latest-sec'],
+    queryFn: async () => {
+      const res = await fetch(`${API_BASE}/financials/nav_latest.json`, { cache: 'no-store' });
+      if (!res.ok) return null;
+      return res.json() as Promise<{ generated_at?: string; nav_per_share?: Record<string, number> }>;
+    },
+    staleTime: 24 * 60 * 60 * 1000,
+  });
+
   const navRows = useMemo<NAVRow[]>(() => {
     const bdcMap = new Map((index?.bdcs ?? []).map((b) => [b.ticker, b.name]));
+    const secNav = navLatest?.nav_per_share ?? {};
     const rows: NAVRow[] = [];
     for (const { ticker, data } of allProfiles) {
       if (!data) continue;
       const price = getRaw(data.price?.regularMarketPrice);
-      const nav = getRaw(data.summaryDetail?.bookValue);
-      const ptb = getRaw(data.summaryDetail?.priceToBook);
+      const yahooNav = getRaw(data.summaryDetail?.bookValue);
+      const nav = secNav[ticker] ?? yahooNav;
       if (!price || !nav || nav <= 0) continue;
-      const discount = ptb !== null ? ptb - 1 : price / nav - 1;
+      const discount = price / nav - 1;
       const rawDate = data.generated_at ? new Date(data.generated_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '—';
       rows.push({ ticker, name: bdcMap.get(ticker) ?? '', price, nav, discount, pricesAsOf: rawDate });
     }
     return rows;
-  }, [allProfiles, index]);
+  }, [allProfiles, index, navLatest]);
 
   const stats = useMemo(() => {
     const bdcCount = index?.bdcs?.length ?? 0;

@@ -1,5 +1,12 @@
 import { useQuery, useQueries } from '@tanstack/react-query';
-import { fetchIndex, fetchPeriods, fetchPeriodSnapshot, fetchProfile, fetchFinancials } from './client-csv';
+import {
+  fetchIndex,
+  fetchPeriods,
+  fetchPeriodSnapshot,
+  fetchProfile,
+  fetchFinancials,
+  fetchStatementFilingDates,
+} from './client-csv';
 import { loadCompanyExposures, loadCompanyProfiles, loadCompanyDetail } from '../data/adapter';
 
 export function useBDCIndex() {
@@ -10,12 +17,24 @@ export function useBDCIndex() {
   });
 }
 
+const ONE_DAY_MS = 24 * 60 * 60 * 1000;
+
 export function useBDCPeriods(ticker: string | undefined) {
   return useQuery({
     queryKey: ['bdc-periods', ticker],
     queryFn: () => fetchPeriods(ticker!),
     enabled: !!ticker,
-    staleTime: 24 * 60 * 60 * 1000,
+    staleTime: ONE_DAY_MS,
+  });
+}
+
+/** Filing dates found in income/balance statement CSVs (often more complete than holdings periods). */
+export function useBDCStatementFilingDates(ticker: string | undefined) {
+  return useQuery({
+    queryKey: ['bdc-statement-dates', ticker],
+    queryFn: () => fetchStatementFilingDates(ticker!),
+    enabled: !!ticker,
+    staleTime: ONE_DAY_MS,
   });
 }
 

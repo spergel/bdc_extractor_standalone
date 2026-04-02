@@ -56,6 +56,7 @@ export type PeriodFinancials = {
 const BDC_NAMES: Record<string, string> = {
   'ARCC': 'Ares Capital Corporation',
   'BBDC': 'Barings BDC, Inc.',
+  'BCRED': 'Blackstone Private Credit Fund',
   'BCSF': 'Bain Capital Specialty Finance, Inc.',
   'BXSL': 'Blackstone Secured Lending Fund',
   'CGBD': 'Carlyle Secured Lending, Inc.',
@@ -88,6 +89,9 @@ let investmentsIndexPromise: Promise<BDCIndex> | null = null;
 type StatementRow = {
   ticker?: string;
   filing_date?: string;
+  period_end_date?: string;
+  end_date?: string;
+  instant_date?: string;
   statement_label?: string;
   statement_type?: string;
   line_item?: string;
@@ -299,6 +303,12 @@ function addStatementRows(
       continue;
     }
     const value = sanitizeValue(row.value ?? null);
+    // Filings often repeat NetAssetValuePerShare for current + prior quarters; last row was
+    // overwriting and could show a stale comparative NAV. Keep the first (current period).
+    const isNavPerShare = concept.replace(/:/g, '').toLowerCase().endsWith('netassetvaluepershare');
+    if (isNavPerShare && target[concept] != null) {
+      continue;
+    }
     target[concept] = value;
     full[concept] = {
       label: rawLabel || concept,
@@ -307,6 +317,53 @@ function addStatementRows(
       period,
     };
   }
+}
+
+function derivePeriodEnd(rows: StatementRow[]): string | null {
+  const counts = new Map<string, number>();
+  for (const row of rows) {
+    const candidates = [row.period_end_date, row.instant_date as any, row.end_date as any, row.filing_date];
+    for (const candidate of candidates) {
+      const d = (candidate ?? '').toString().trim();
+      if (!d) continue;
+      counts.set(d, (counts.get(d) ?? 0) + 1);
+    }
+  }
+  if (!counts.size) return null;
+  return Array.from(counts.entries()).sort((a, b) => b[1] - a[1])[0][0];
+}
+
+function pickNavPerShareFromBalanceSheet(bs: Record<string, number | null>): number | null {
+  const direct = bs['NetAssetValuePerShare'];
+  if (direct != null && direct > 0) return direct;
+  for (const [k, v] of Object.entries(bs)) {
+    if (v == null || v <= 0) continue;
+    if (k.replace(/:/g, '').toLowerCase() === 'netassetvaluepershare') return v;
+  }
+  return null;
+}
+
+/**
+ * Unique SEC filing dates (YYYY-MM-DD) present in consolidated income + balance CSVs.
+ * Usually a superset of holdings index periods — use for Financials so Q1/Q2/Q3/Q4 aren’t
+ * dropped just when a quarter wasn’t processed for portfolio extraction.
+ */
+export async function fetchStatementFilingDates(ticker: string): Promise<string[]> {
+  const upper = ticker.toUpperCase();
+  const [income, balance] = await Promise.all([
+    loadStatementCsv('income', upper),
+    loadStatementCsv('balance', upper),
+  ]);
+  const seen = new Set<string>();
+  for (const row of income) {
+    const fd = (row.filing_date ?? '').toString().trim();
+    if (/^\d{4}-\d{2}-\d{2}$/.test(fd)) seen.add(fd);
+  }
+  for (const row of balance) {
+    const fd = (row.filing_date ?? '').toString().trim();
+    if (/^\d{4}-\d{2}-\d{2}$/.test(fd)) seen.add(fd);
+  }
+  return Array.from(seen).sort((a, b) => a.localeCompare(b));
 }
 
 export async function fetchIndex(): Promise<BDCIndex> {
@@ -353,15 +410,22 @@ export async function fetchFinancials(ticker: string, period: string): Promise<P
     loadStatementCsv('cash', upperTicker),
   ]);
 
-  const incomeRows = incomeData.filter(
-    (row) => row.filing_date === period
-  );
-  const balanceRows = balanceData.filter(
-    (row) => row.filing_date === period
-  );
-  const cashRows = cashData.filter(
-    (row) => row.filing_date === period
-  );
+  const rowMatchesPeriod = (row: StatementRow) => {
+    const filingDate = (row.filing_date ?? '').toString().trim();
+    const periodEndDate = (row.period_end_date ?? '').toString().trim();
+    const endDate = ((row as any).end_date ?? '').toString().trim();
+    const instantDate = ((row as any).instant_date ?? '').toString().trim();
+    return (
+      filingDate === period ||
+      periodEndDate === period ||
+      endDate === period ||
+      instantDate === period
+    );
+  };
+
+  const incomeRows = incomeData.filter(rowMatchesPeriod);
+  const balanceRows = balanceData.filter(rowMatchesPeriod);
+  const cashRows = cashData.filter(rowMatchesPeriod);
 
   const hasData = incomeRows.length + balanceRows.length + cashRows.length > 0;
   if (!hasData) {
@@ -372,6 +436,7 @@ export async function fetchFinancials(ticker: string, period: string): Promise<P
     ticker: upperTicker,
     name: BDC_NAMES[upperTicker] || upperTicker,
     period,
+    period_end: derivePeriodEnd([...incomeRows, ...balanceRows, ...cashRows]),
     income_statement: {},
     balance_sheet: {},
     derived: {},
@@ -387,6 +452,11 @@ export async function fetchFinancials(ticker: string, period: string): Promise<P
   if (cashRows.length > 0) {
     result.cash_flow_statement = {};
     addStatementRows(cashRows, period, result.cash_flow_statement, result.full_cash_flow_statement!);
+  }
+
+  const navFromFacts = pickNavPerShareFromBalanceSheet(result.balance_sheet!);
+  if (navFromFacts != null) {
+    result.balance_sheet!.nav_per_share = navFromFacts;
   }
 
   return result;

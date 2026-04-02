@@ -34,7 +34,9 @@ CUSTOM_SCRAPER_SCRIPTS = {
 
 # XBRL pipeline: Grade A — cost ≥ 60% AND rate ≥ 40% from XBRL (excludes CUSTOM_SCRAPER_TICKERS)
 XBRL_TICKERS = [
-    "ARCC", "BBDC", "BXSL", "CCAP", "CGBD",
+    "ARCC", "BBDC",
+    "BCRED",  # Blackstone Private Credit Fund (non-traded BDC, CIK 1803498); SEC uses bcred-*.htm
+    "BXSL", "CCAP", "CGBD",
     "CSWC", "FDUS", "FSK", "GAIN", "GBDC", "GLAD", "GSBD",
     "HRZN", "KBDC", "LIEN", "MAIN", "MRCC", "MSDL",
     "MSIF", "NCDL", "NMFC", "OCSL", "OFS",

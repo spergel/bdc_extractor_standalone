@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { useBDCFinancialsMultiple } from '../api/hooks';
+import { formatPeriodLabel } from '../utils/periodComparisons';
 
 type Props = {
   ticker?: string;
@@ -80,39 +81,100 @@ function toNumber(value: unknown): number | null {
 
 function TinyLineChart({
   title,
+  subtitle,
   points,
   formatter = fmt,
 }: {
   title: string;
+  subtitle?: string;
   points: Array<{ period: string; value: number | null }>;
   formatter?: (n: unknown) => string;
 }) {
-  const validPoints = points.filter((p) => p.value != null) as Array<{ period: string; value: number }>;
-  if (validPoints.length < 2) return null;
+  const series = useMemo(() => {
+    return points
+      .filter(
+        (p): p is { period: string; value: number } =>
+          p.value != null && !Number.isNaN(Number(p.value))
+      )
+      .sort((a, b) => a.period.localeCompare(b.period));
+  }, [points]);
 
-  const width = 260;
-  const height = 80;
-  const minV = Math.min(...validPoints.map((p) => p.value));
-  const maxV = Math.max(...validPoints.map((p) => p.value));
+  if (series.length < 2) return null;
+
+  const padL = 46;
+  const padR = 10;
+  const padT = 8;
+  const padB = 30;
+  const width = 420;
+  const height = 140;
+  const cw = width - padL - padR;
+  const ch = height - padT - padB;
+
+  const minV = Math.min(...series.map((p) => p.value));
+  const maxV = Math.max(...series.map((p) => p.value));
   const span = Math.max(1e-9, maxV - minV);
-  const xFor = (idx: number) => (idx / (validPoints.length - 1)) * (width - 10) + 5;
-  const yFor = (v: number) => height - ((v - minV) / span) * (height - 16) - 8;
-  const path = validPoints.map((p, i) => `${i === 0 ? 'M' : 'L'} ${xFor(i)} ${yFor(p.value)}`).join(' ');
+  const xAt = (i: number) =>
+    padL + (series.length === 1 ? cw / 2 : (i / (series.length - 1)) * cw);
+  const yAt = (v: number) => padT + ch - ((v - minV) / span) * ch;
+
+  const gridN = 4;
+  const yTicks = Array.from({ length: gridN }, (_, j) => minV + (span * j) / (gridN - 1));
+  const xLabelIdx =
+    series.length <= 3
+      ? series.map((_, i) => i)
+      : [0, Math.round((series.length - 1) / 2), series.length - 1];
+
+  const pathD = series.map((p, i) => `${i === 0 ? 'M' : 'L'} ${xAt(i)} ${yAt(p.value)}`).join(' ');
 
   return (
     <div className="window p-3">
-      <div className="text-xs font-semibold mb-2 text-black">{title}</div>
-      <svg viewBox={`0 0 ${width} ${height}`} className="w-full h-24">
-        <path d={path} fill="none" stroke="#0000ff" strokeWidth="2" />
-        {validPoints.map((p, i) => (
-          <circle key={`${p.period}-${i}`} cx={xFor(i)} cy={yFor(p.value)} r="2.5" fill="#000080" />
+      <div className="text-xs font-semibold text-black">{title}</div>
+      {subtitle ? <div className="text-[10px] text-[#808080] mt-0.5 leading-snug">{subtitle}</div> : null}
+      <svg viewBox={`0 0 ${width} ${height}`} className="w-full max-w-full h-[140px] mt-2" aria-hidden>
+        {yTicks.map((tv, j) => {
+          const y = yAt(tv);
+          return (
+            <g key={`g-${j}`}>
+              <line
+                x1={padL}
+                y1={y}
+                x2={width - padR}
+                y2={y}
+                stroke="#c0c0c0"
+                strokeWidth="1"
+                strokeDasharray="4 3"
+              />
+              <text x={4} y={y + 3} fontSize="9" fill="#505050" fontFamily="system-ui,sans-serif">
+                {formatter(tv)}
+              </text>
+            </g>
+          );
+        })}
+        <path d={pathD} fill="none" stroke="#0000cc" strokeWidth={2.5} strokeLinejoin="round" />
+        {series.map((p, i) => (
+          <circle key={`${p.period}-${i}`} cx={xAt(i)} cy={yAt(p.value)} r={4} fill="#000080" stroke="#c0c0c0" strokeWidth={1} />
+        ))}
+        {xLabelIdx.map((i) => (
+          <text
+            key={`xl-${series[i].period}`}
+            x={xAt(i)}
+            y={height - 6}
+            fontSize="9"
+            fill="#404040"
+            textAnchor="middle"
+            fontFamily="system-ui,sans-serif"
+          >
+            {formatPeriodLabel(series[i].period)}
+          </text>
         ))}
       </svg>
-      <div className="mt-1 flex justify-between text-[10px] text-[#808080]">
-        <span>{validPoints[0].period}</span>
-        <span>{formatter(validPoints[0].value)}</span>
-        <span>{validPoints[validPoints.length - 1].period}</span>
-        <span>{formatter(validPoints[validPoints.length - 1].value)}</span>
+      <div className="mt-1 flex justify-between gap-2 text-[10px] text-[#606060]">
+        <span>
+          Oldest: <span className="font-mono text-black">{formatter(series[0].value)}</span>
+        </span>
+        <span>
+          Latest: <span className="font-mono text-black">{formatter(series[series.length - 1].value)}</span>
+        </span>
       </div>
     </div>
   );
@@ -373,10 +435,11 @@ export function FinancialsPanel({ ticker, periods = [], name: _name, mode = 'ove
     return metricKeys.map(metric => {
       const values = availableData.map(({ period, data }) => {
         if (!data) return { period, value: null };
+        const displayPeriod = ((data as any).period_end as string) || period;
         const source = data[metric.source as keyof typeof data] as Record<string, unknown> | undefined;
         const fallback = metric.fallback ? data[metric.fallback as keyof typeof data] as Record<string, unknown> | undefined : undefined;
         const value = source?.[metric.key] ?? fallback?.[metric.key] ?? null;
-        return { period, value };
+        return { period: displayPeriod, value };
       });
       return { label: metric.label, values };
     });
@@ -396,11 +459,12 @@ export function FinancialsPanel({ ticker, periods = [], name: _name, mode = 'ove
     };
 
     return availableData.map(({ period, data }) => {
+      const displayPeriod = ((data as any).period_end as string) || period;
       const totalAssets = getConceptValue(data, ['Assets', 'assets']);
       const totalLiabilities = getConceptValue(data, ['Liabilities', 'liabilities']);
       const netIncome = getConceptValue(data, ['NetIncomeLoss', 'netincomeloss']);
       const leverage = totalAssets && totalLiabilities ? totalLiabilities / totalAssets : null;
-      return { period, totalAssets, totalLiabilities, netIncome, leverage };
+      return { period: displayPeriod, totalAssets, totalLiabilities, netIncome, leverage };
     });
   }, [availableData]);
 
@@ -508,27 +572,15 @@ export function FinancialsPanel({ ticker, periods = [], name: _name, mode = 'ove
             <thead className="sticky top-0 z-10">
               <tr>
                 <th className="text-left py-2 px-3 text-black text-xs sticky left-0 bg-[#c0c0c0] border border-[#c0c0c0] w-[320px] min-w-[320px] max-w-[320px]">Line Item</th>
-                {availableData.map(({ period }) => {
-                  // Format period date nicely (e.g., "2025-10-23" -> "Q3 2025" or "Oct 2025")
-                  let periodLabel = period;
-                  try {
-                    const date = new Date(period);
-                    if (!isNaN(date.getTime())) {
-                      const month = date.getMonth() + 1;
-                      const year = date.getFullYear();
-                      // Determine quarter
-                      const quarter = Math.floor((month - 1) / 3) + 1;
-                      periodLabel = `Q${quarter} ${year}`;
-                    }
-                  } catch {
-                    // Keep original if parsing fails
-                  }
-                  return (
-                    <th key={period} className="text-right py-2 px-3 text-black text-xs min-w-[120px] border border-[#c0c0c0] bg-[#c0c0c0]">
-                      {periodLabel}
-                    </th>
-                  );
-                })}
+                {availableData.map(({ period, data }) => (
+                  <th
+                    key={period}
+                    title={((data as any).period_end as string) || period}
+                    className="text-right py-2 px-3 text-black text-xs min-w-[120px] border border-[#c0c0c0] bg-[#c0c0c0]"
+                  >
+                    {formatPeriodLabel(((data as any).period_end as string) || period)}
+                  </th>
+                ))}
               </tr>
             </thead>
             <tbody>
@@ -590,6 +642,7 @@ export function FinancialsPanel({ ticker, periods = [], name: _name, mode = 'ove
           />
           <TinyLineChart
             title="Leverage (Liabilities / Assets)"
+            subtitle="Values above 100% usually mean the Assets and Liabilities tags come from different XBRL contexts in the filing, not that GAAP equity is negative."
             points={trendSeries.map((p) => ({ period: p.period, value: p.leverage }))}
             formatter={(n) => {
               const v = Number(n);
@@ -622,9 +675,9 @@ export function FinancialsPanel({ ticker, periods = [], name: _name, mode = 'ove
               <thead className="sticky top-0 bg-[#c0c0c0] z-10">
                 <tr className="border-b border-[#808080]">
                   <th className="text-left py-2 px-3 text-[#808080] font-semibold">Metric</th>
-                  {availableData.map(({ period }) => (
-                    <th key={period} className="text-right py-2 px-3 text-[#808080] font-semibold">
-                      {period}
+                  {availableData.map(({ period, data }) => (
+                    <th key={period} title={((data as any).period_end as string) || period} className="text-right py-2 px-3 text-[#808080] font-semibold">
+                      {formatPeriodLabel(((data as any).period_end as string) || period)}
                     </th>
                   ))}
                 </tr>

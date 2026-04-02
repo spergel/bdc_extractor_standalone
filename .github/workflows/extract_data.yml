@@ -1,7 +1,10 @@
 name: Extract BDC Data
 
+permissions:
+  contents: write
+
 on:
-  workflow_dispatch:  # Manual trigger
+  workflow_dispatch:
     inputs:
       years_back:
         description: 'Years of data to extract (0 = latest quarter only)'
@@ -12,7 +15,7 @@ on:
         description: 'Specific tickers (comma-separated, optional - leave empty for all)'
         required: false
         type: string
-  
+
   schedule:
     # Run on the 15th of each month at 8 AM UTC (after most quarterly filings)
     - cron: '0 8 15 * *'
@@ -20,25 +23,25 @@ on:
 jobs:
   extract:
     runs-on: ubuntu-latest
-    timeout-minutes: 180  # 3 hours
-    
+    timeout-minutes: 180
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-      
+          token: ${{ secrets.REPO_PUSH_TOKEN || github.token }}
+
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'
           cache: 'pip'
-      
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-      
+
       - name: Extract BDC data
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -46,36 +49,35 @@ jobs:
         run: |
           YEARS_BACK="${{ github.event.inputs.years_back || '0' }}"
           TICKERS="${{ github.event.inputs.tickers || '' }}"
-          
+
           if [ -n "$TICKERS" ]; then
-            # Convert comma-separated to space-separated
-            TICKER_LIST=$(echo $TICKERS | tr ',' ' ')
-            python process_all_bdcs.py --years-back $YEARS_BACK --tickers $TICKER_LIST
+            TICKER_LIST=$(echo "$TICKERS" | tr ',' ' ')
+            python process_all_bdcs.py --years-back "$YEARS_BACK" --tickers $TICKER_LIST
           else
-            # Extract all BDCs
-            python process_all_bdcs.py --years-back $YEARS_BACK
+            python process_all_bdcs.py --years-back "$YEARS_BACK"
           fi
-      
+
       - name: Commit and push changes
         if: success()
+        env:
+          BRANCH: ${{ github.ref_name }}
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          
-          # Check if there are changes to commit
+
           if [ -n "$(git status --porcelain frontend/public/data/)" ]; then
             git add frontend/public/data/
             git commit -m "chore: update BDC data [skip ci]"
-            git push
+            git push origin HEAD:"$BRANCH"
           else
             echo "No data changes to commit"
           fi
-      
+
       - name: Create summary
         if: always()
         run: |
-          echo "## Data Extraction Summary" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "- **Years back**: ${{ github.event.inputs.years_back || '0' }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Tickers**: ${{ github.event.inputs.tickers || 'All' }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Status**: ${{ job.status }}" >> $GITHUB_STEP_SUMMARY
+          echo "## Data Extraction Summary" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Years back**: ${{ github.event.inputs.years_back || '0' }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Tickers**: ${{ github.event.inputs.tickers || 'All' }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Status**: ${{ job.status }}" >> "$GITHUB_STEP_SUMMARY"

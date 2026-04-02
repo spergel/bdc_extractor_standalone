@@ -312,7 +312,8 @@ class FinancialStatementsExtractor:
 
     def save_financial_statement_csv(self, data: List[Dict], statement_type: str,
                                      ticker: str, filing_date: str,
-                                     form: str = '10-Q') -> Optional[Path]:
+                                     form: str = '10-Q',
+                                     filing_period_end: Optional[str] = None) -> Optional[Path]:
         """
         Save financial statement data to CSV.
         
@@ -322,6 +323,7 @@ class FinancialStatementsExtractor:
             ticker: Company ticker
             filing_date: Filing date (YYYY-MM-DD)
             form: SEC form (10-Q, 10-K, etc.) — affects filename for 10-K
+            filing_period_end: Period end date from SEC submissions when available
             
         Returns:
             Path to saved CSV file, or None if no data
@@ -350,6 +352,7 @@ class FinancialStatementsExtractor:
                 'start_date': context.get('start', ''),
                 'end_date': context.get('end', ''),
                 'instant_date': context.get('instant', ''),
+                'period_end_date': filing_period_end or context.get('instant', '') or context.get('end', ''),
                 'duration_days': '',
                 'level': '',
                 'is_abstract': 'False',
@@ -373,7 +376,7 @@ class FinancialStatementsExtractor:
         if rows:
             fieldnames = ['ticker', 'filing_date', 'statement_label', 'statement_type',
                          'line_item', 'concept', 'value', 'context_key', 'start_date',
-                         'end_date', 'instant_date', 'duration_days', 'level',
+                         'end_date', 'instant_date', 'period_end_date', 'duration_days', 'level',
                          'is_abstract', 'preferred_label', 'order_index', 'metric_key']
             
             with open(output_path, 'w', newline='', encoding='utf-8') as f:
@@ -446,6 +449,7 @@ class FinancialStatementsExtractor:
                     ticker,
                     filing_result.filing_date,
                     form=filing_type,
+                    filing_period_end=getattr(filing_result, 'period_end_date', None),
                 )
                 results['balance_sheet'] = bs_path
             
@@ -456,6 +460,7 @@ class FinancialStatementsExtractor:
                     ticker,
                     filing_result.filing_date,
                     form=filing_type,
+                    filing_period_end=getattr(filing_result, 'period_end_date', None),
                 )
                 results['income_statement'] = is_path
             
@@ -587,6 +592,7 @@ class FinancialStatementsExtractor:
                         ticker,
                         filing_date,
                         form=form,
+                        filing_period_end=filing_info.get('period_end_date'),
                     )
                     if bs_path:
                         results['balance_sheet'].append(bs_path)
@@ -598,6 +604,7 @@ class FinancialStatementsExtractor:
                         ticker,
                         filing_date,
                         form=form,
+                        filing_period_end=filing_info.get('period_end_date'),
                     )
                     if is_path:
                         results['income_statement'].append(is_path)

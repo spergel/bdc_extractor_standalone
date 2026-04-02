@@ -21,7 +21,7 @@ from xbrl_investment_extractor import XBRLInvestmentExtractor
 
 # Full pipeline ticker list — kept in sync with process_all_bdcs.py
 TICKERS = [
-    "ARCC", "BBDC", "BCIC", "BCSF", "BXSL", "CCAP", "CGBD", "CION",
+    "ARCC", "BBDC", "BCIC", "BCSF", "BCRED", "BXSL", "CCAP", "CGBD", "CION",
     "CSWC", "EQS", "FDUS", "FSK", "GAIN", "GBDC", "GECC", "GLAD", "GSBD",
     "HRZN", "HTGC", "ICMB", "KBDC", "LIEN", "MAIN", "MFIC", "MRCC", "MSDL",
     "MSIF", "NCDL", "NEWT", "NMFC", "OBDC", "OCSL", "OFS", "OXSQ",

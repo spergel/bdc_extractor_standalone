@@ -211,6 +211,8 @@ The repository includes a GitHub Actions workflow that can:
 
 **Monthly auto-run:** Workflow runs on the 15th of each month to catch new quarterly filings.
 
+**Pushes from Actions (`403` / “Permission denied … github-actions[bot]”):** Workflows use `permissions: contents: write` and `actions/checkout@v6` / `actions/setup-python@v6` (Node 24 runtime). You still need **Settings → Actions → General → Workflow permissions → Read and write** for this repository (orgs may default to read-only). If `master` is protected, allow **GitHub Actions** or `github-actions[bot]` to push, or add a repository secret **`REPO_PUSH_TOKEN`**: a personal access token or fine-grained token with **Contents: Read and write** on this repo (workflows pass `secrets.REPO_PUSH_TOKEN || github.token` to checkout).
+
 ## 🧪 Testing
 
 ```bash
@@ -248,6 +250,9 @@ python process_all_bdcs.py --tickers ARCC --years-back 0
 - Check ticker symbol is correct
 - Verify filing exists for the period
 - Check SEC EDGAR availability
+
+**GitHub Actions push fails with 403 after commit**
+- See **Pushes from Actions** under [GitHub Actions (Automated)](#github-actions-automated) above (workflow permissions, branch protection, or `REPO_PUSH_TOKEN`).
 
 ### Getting Help
 

@@ -34,6 +34,29 @@ COMPANY_ID_PREFIX = "co_"
 SIMILARITY_THRESHOLD = 88  # fuzz.ratio 0-100; merge if >= 88
 BLOCK_MIN_LENGTH = 2  # ignore blocks with single name for matching
 
+# Borrowers listed under multiple Opco/Topco (or similar) shells → one canonical for exposure tracking.
+_MANUAL_CANONICAL_GROUPS: List[Tuple[Set[str], str]] = [
+    (
+        {
+            "ADS Group Opco LLC",
+            "ADS Group Opco",
+            "ADS Group Topco LLC",
+            "ADS Group Topco",
+        },
+        "ADS",
+    ),
+]
+
+
+def apply_manual_canonical_merges(raw_to_canonical: Dict[str, str]) -> Dict[str, str]:
+    """Remap clustered names that should roll up to a single portfolio company."""
+    out = dict(raw_to_canonical)
+    for variants, target in _MANUAL_CANONICAL_GROUPS:
+        for k in list(out.keys()):
+            if out[k] in variants or k in variants:
+                out[k] = target
+    return out
+
 
 def _block_key(normalized: str) -> str:
     """Block key from normalized company name (first token, lowercased)."""
@@ -208,6 +231,7 @@ def run_resolution(
     logger.info("Collected %d rows, %d unique raw company names", total_rows, len(raw_to_normalized))
 
     raw_to_canonical = build_name_to_cluster(raw_to_normalized)
+    raw_to_canonical = apply_manual_canonical_merges(raw_to_canonical)
     name_to_id, companies_index = build_mapping_and_index(raw_to_canonical)
     logger.info("Resolved to %d canonical companies", len(companies_index))
 

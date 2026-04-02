@@ -18,7 +18,7 @@ OUTPUT_DIR = REPO_ROOT / "output"
 
 # XBRL tickers only (so we don't mix in LLM-extracted data)
 XBRL_TICKERS = [
-    "ARCC", "BBDC", "BCIC", "BCSF", "BXSL", "CCAP", "CGBD", "CION",
+    "ARCC", "BBDC", "BCIC", "BCSF", "BCRED", "BXSL", "CCAP", "CGBD", "CION",
     "CSWC", "FDUS", "FSK", "GAIN", "GBDC", "GECC", "GLAD", "GSBD",
     "HRZN", "HTGC", "ICMB", "KBDC", "LIEN", "MAIN", "MFIC", "MRCC", "MSDL",
     "MSIF", "NCDL", "NEWT", "NMFC", "OBDC", "OCSL", "OFS", "OXSQ",

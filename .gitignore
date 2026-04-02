@@ -34,6 +34,10 @@ ENV/
 *.swp
 *.swo
 
+# One-off export bundle (duplicate of pipeline / frontend/public/data)
+bdc_data_export.zip
+bdc_data_export/
+
 # Scraper output and cache (raw extraction results, SEC download cache)
 /data/
 !/data/company_tickers.json

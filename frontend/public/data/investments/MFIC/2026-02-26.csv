@@ -1,0 +1,898 @@
+company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
+Eagle Aggregator Ltd.,Preferred Equity,Aerospace & Defense,,,N/A,,,,,,,49,,49,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Eagle Aggregator Ltd.,Common Equity,Aerospace & Defense,,,N/A,,,,,,,1,,1,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Eagle U.S. Purchaser Inc.,First Lien,Aerospace & Defense,,,SOFR,500,0.75 %,,2032-12-31,8529,8401,8401,,8401,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Sperry Acquisition LLC,First Lien,Aerospace & Defense,,,SOFR,525,0.75 %,,2031-02-03,6888,6797,6795,,6795,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Sperry Acquisition LLC,Delayed Draw,Aerospace & Defense,,,SOFR,525,0.75 %,,2031-02-03,1923,1897,1897,,1897,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Sperry Acquisition LLC,Revolver,Aerospace & Defense,,,SOFR,525,0.75 %,,2031-02-03,231,216,215,,215,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Sperry Parent Holdings LP.,Common Equity,Aerospace & Defense,,,N/A,,,,,,,96,,96,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+PrimeFlight Acquisition LLC,First Lien,Transportation & Logistics,,,SOFR,525,1.00 %,,2029-05-01,14108,13976,14108,,14108,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+PrimeFlight Acquisition LLC,First Lien,Transportation & Logistics,,,SOFR,525,0.00 %,,2029-05-01,995,986,995,,995,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+K&N Holdco LLC,Common Equity,Automotive,,,N/A,,,,,,,147,,147,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Truck-Lite Co. LLC,First Lien,Automotive,,,SOFR,475,0.75 %,,2032-02-13,3242,3243,3210,,3210,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Truck-Lite Co. LLC,Delayed Draw,Automotive,,,SOFR,475,0.75 %,,2032-02-13,409,390,396,,396,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Cool Acquisition Holdings, LP",Common Equity,Automotive,,,N/A,,,,,,,72,,138,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Cool Buyer, Inc.",First Lien,Automotive,,,SOFR,475,1.00 %,,2030-10-31,13200,,12772,,13032,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Cool Buyer, Inc.",Delayed Draw,Automotive,,,SOFR,475,1.00 %,,2030-10-31,,,-98,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Cool Buyer, Inc.",Revolver,Automotive,,,SOFR,475,1.00 %,,2030-10-31,1818,,1699,,1773,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Ronnoco Holdings, Inc.",First Lien,Food & Beverage,,,SOFR,450,1.00 %,,2031-03-17,5288,,5209,,5217,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Ronnoco Holdings, Inc.",Revolver,Food & Beverage,,,SOFR,450,1.00 %,,2031-03-17,290,,257,,261,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Ronnoco Holdings, Inc.",Preferred Equity,Food & Beverage,,,N/A,,,,,,,100,,100,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Celerion Buyer, Inc.",First Lien,Healthcare,,,SOFR,500,0.75 %,,2029-11-05,11004,,11004,,10833,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Mannkind Corp.,Common Equity,Healthcare,,,N/A,,,,,,,194,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Partner Therapeutics, Inc.",Preferred Equity,Healthcare,,,N/A,,,,,,,521,,333,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Partner Therapeutics, Inc.",Warrants,Healthcare,,,N/A,,,,,,,326,,389,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Rigel Pharmaceuticals, Inc.",First Lien,Healthcare,,,SOFR,650,4.00 %,,2027-09-01,2625,,2625,,2638,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Rigel Pharmaceuticals, Inc.",Delayed Draw,Healthcare,,,SOFR,650,4.00 %,,2027-09-01,13125,,13125,,13117,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"D&D Buyer, LLC",First Lien,Industrials,,,SOFR,6.50%,2.00%,,2028-10-04,2469,,2419,,2424,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"OmniMax International, LLC",First Lien,Industrials,,,SOFR,5.75%,1.00%,,2030-12-06,,,16726,,17048,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"R.F. Fager Company, LLC",First Lien,Industrials,,,SOFR,5.00%,1.00%,,2030-03-04,,,703,,714,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"R.F. Fager Company, LLC",Revolver,Industrials,,,SOFR,5.00%,1.00%,,2030-03-04,,,48,,51,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Aspen Aerogels, Inc.",First Lien,Chemicals & Materials,,,SOFR,5.00%,4.50%,,2029-08-19,18426,,17919,,18141,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Aspen Aerogels, Inc.",Revolver,Chemicals & Materials,,,SOFR,5.10%,2.50%,,2029-08-19,,,13,,15,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Carbonfree Chemicals Holdings LLC,Common Equity,Chemicals & Materials,,,N/A,,,,,,,18332,,56505,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+FC2 LLC,Other Debt,Chemicals & Materials,6.50%,,Fixed,,,,2027-10-14,12500,,12373,,12500,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Heubach Holdings USA LLC,First Lien,Chemicals & Materials,13.75%,,Fixed,,,,2029-01-03,,,239,,54,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Lunar Buyer, LLC",First Lien,Chemicals & Materials,,,SOFR,5.50%,0.75%,,2030-10-03,9000,,8730,,8850,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Lunar Buyer, LLC",First Lien,Chemicals & Materials,,,SOFR,5.50%,0.75%,,2030-10-03,,,-205,,-54,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Lunar Buyer, LLC",Revolver,Chemicals & Materials,,,SOFR,5.50%,0.75%,,2030-10-03,,,1605,,1661,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+W.R. Grace Holdings LLC,First Lien,Chemicals & Materials,4.88%,,Fixed,,,,2027-06-15,1320,1297,1318,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Alpinex Opco, LLC",First Lien,Business Services,,,SOFR,6.26%,1.00%,,2027-12-27,14780,14606,14779,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Alpinex Opco, LLC",First Lien,Business Services,,,SOFR,6.26%,1.00%,,2027-12-27,3736,3705,3736,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Alpinex Opco, LLC",First Lien,Business Services,,,SOFR,6.26%,1.00%,,2027-12-27,1102,1087,1103,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+GI Apple Midco LLC,First Lien,Business Services,,,SOFR,6.75%,1.00%,,2030-04-19,7479,7390,7479,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+GI Apple Midco LLC,First Lien,Business Services,,,SOFR,6.75%,1.00%,,2030-04-19,86,84,86,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+GI Apple Midco LLC,First Lien,Business Services,,,SOFR,6.75%,1.00%,,2029-04-19,250,240,250,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Bingo Group Buyer, Inc.",First Lien,Business Services,,,SOFR,4.75%,1.00%,,2031-07-10,9370,9274,9323,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Bingo Group Buyer, Inc.",First Lien,Business Services,,,SOFR,4.75%,1.00%,,2031-07-10,2142,2103,2114,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Bingo Group Buyer, Inc.",First Lien,Business Services,,,SOFR,4.75%,1.00%,,2031-07-10,25,17,21,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"CARDS-Live Oak Holdings, Inc.",First Lien,Business Services,,,SOFR,4.75%,0.75%,,2032-10-21,3150,3119,3119,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"CARDS-Live Oak Holdings, Inc.",First Lien,Business Services,,,Prime,3.75%,0.75%,,2032-10-21,200,194,194,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Coretrust Purchasing Group LLC,First Lien,Business Services,,,SOFR,5.00%,0.75%,,2029-10-01,6158,6118,6097,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Flatworld Intermediate Corp.,First Lien,Media & Entertainment,5.50%,,SOFR,5.50%,1.50%,,2030-03-25,3950,3881,3891,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Arcwood Environmental, Inc.",First Lien,Environmental Services,5.25%,,SOFR,5.25%,0.75%,,2031-01-31,1732,1728,1732,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Health Management Associates Superholdings, Inc.",First Lien,Business Services,6.35%,,SOFR,6.35%,1.00%,,2029-03-30,3897,3827,3858,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Health Management Associates Superholdings, Inc.",Delayed Draw,Business Services,6.35%,,SOFR,6.35%,1.00%,,2029-03-30,504,495,499,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Ironhorse Purchaser, LLC",First Lien,,5.25%,,SOFR,5.25%,1.00%,,2027-09-30,2962,2932,2902,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Precision Refrigeration & Air Conditioning LLC,First Lien,,6.90%,,SOFR,6.90%,1.00%,,2028-03-08,10865,10755,10593,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Precision Refrigeration & Air Conditioning LLC,Delayed Draw,,6.90%,,SOFR,6.90%,1.00%,,2028-03-08,4900,4840,4777,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Precision Refrigeration & Air Conditioning LLC,Revolver,,7.00%,,SOFR,7.00%,1.00%,,2028-03-08,1591,1577,1534,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"SMC IR Holdings, LLC",Common Equity,,,,N/A,,,,,,183,199,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Jacent Strategic Merchandising, LLC",First Lien,,5.85%,,SOFR,5.85%,1.00%,,2027-01-31,22210,22208,21999,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Jacent Strategic Merchandising, LLC",Revolver,,6.60%,,SOFR,6.60%,1.00%,,2027-01-31,1589,1586,1560,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Jacent Strategic Merchandising, LLC",Common Equity,,,,N/A,,,,,,500,191,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"JSM Equity Investors, LP.",Preferred Equity,,,,N/A,,,,,,11,1,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Overhaul Group, Inc.",First Lien,,5.00%,,SOFR,5.00%,1.00%,,2030-08-01,10714,10664,10661,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Overhaul Group, Inc.",Preferred Equity,,,,N/A,,,,,,100,96,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Pavement Preservation Acquisition, LLC",First Lien,,5.25%,,SOFR,5.25%,1.00%,,2030-08-09,8887,8729,8775,,8729,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Pavement Preservation Acquisition, LLC",Delayed Draw,,5.25%,,SOFR,5.25%,1.00%,,2030-08-09,2155,2119,2128,,2119,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"HEF Safety Ultimate Holdings, LLC",First Lien,,5.25%,,SOFR,5.25%,1.00%,,2029-11-19,7350,7218,7342,,7218,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"HEF Safety Ultimate Holdings, LLC",Delayed Draw,,5.25%,,SOFR,5.25%,1.00%,,2029-11-19,5270,5165,5264,,5165,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Smith Topco, Inc.",First Lien,,5.00%,,SOFR,5.00%,1.00%,,2029-11-06,11067,10904,10900,,10904,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Vixxo Corp.,First Lien,,5.00%,,SOFR,5.00%,1.00%,,2030-08-01,1534,1513,1523,,1513,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Mobile Communications America, Inc.",First Lien,,4.75%,,SOFR,4.75%,1.00%,,2029-10-16,2450,2407,2426,,2407,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Mobile Communications America, Inc.",Delayed Draw,,4.75%,,SOFR,4.75%,1.00%,,2029-10-16,6486,6412,6400,,6412,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Mobile Communications America, Inc.",Revolver,,4.75%,,SOFR,4.75%,1.00%,,2029-10-16,272,250,258,,250,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Mitel Networks (International) Ltd.,Common Equity,,,,N/A,,,,,,476,161,,476,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+MLN US Holdco LLC,First Lien,,2.00%,6.00%,SOFR,2.00%,1.00%,,2030-06-20,883,781,530,,781,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Sorenson Holdings LLC,First Lien,Telecommunications,8.00%,,N/A,,,,2030-04-01,334,271,274,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Sorenson Holdings LLC,First Lien,Telecommunications,10.00%,,N/A,,,,2030-04-01,87,77,79,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Sorenson Holdings LLC,Common Equity,Telecommunications,,,N/A,,,,,,108,89,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Accelevation LLC,First Lien,Industrials,,,SOFR,450,0.75%,,2031-01-02,9185,9063,9208,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Accelevation LLC,First Lien,Industrials,,,SOFR,450,0.75%,,2031-01-02,2223,2185,2232,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Accelevation LLC,First Lien,Industrials,,,SOFR,450,0.75%,,2031-01-02,385,355,385,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+American Restoration Holdings LLC,First Lien,Industrials,,,SOFR,510,1.00%,,2030-07-24,7551,7430,7476,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+American Restoration Holdings LLC,First Lien,Industrials,,,SOFR,510,1.00%,,2030-07-24,1490,1486,1468,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+CRS Holdings Inc.,First Lien,Industrials,,,SOFR,500,1.00%,,2030-06-06,1879,1849,1855,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+CRS Holdings Inc.,First Lien,Industrials,,,SOFR,500,1.00%,,2030-06-06,3528,3440,3440,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Megavolt Borrower LLC,First Lien,Industrials,,,SOFR,475,1.00%,,2032-02-13,4146,4071,4115,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+HomeRenew Buyer Inc.,First Lien,Industrials,10.56%,,N/A,,,,2030-04-14,3373,3282,,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+HomeRenew Buyer Inc.,First Lien,Industrials,12.06%,,N/A,,,,2030-04-14,1431,1387,,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Renovo Home Partners,Preferred Equity,Industrials,,,N/A,,,,,,4344,,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Traffic Management Solutions LLC,First Lien,Business Services,,,SOFR,500,1.00 %,,2030-11-26,11055,,10985,,10924,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Traffic Management Solutions LLC,Delayed Draw,Business Services,,,SOFR,500,1.00 %,,2030-11-26,3365,,3316,,3298,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Trench Plate Rental Co.,First Lien,,,,SOFR,560,1.00 %,,2028-12-04,17545,,17370,,17414,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Trench Plate Rental Co.,Revolver,,,,SOFR,560,1.00 %,,2028-12-04,1055,,1036,,1043,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Trench Safety Solutions Holdings LLC,Preferred Equity,,,,N/A,,,,,,,8,,4,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Trench Safety Solutions Holdings LLC,Common Equity,,,,N/A,,,,,,,37,,50,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+LendingPoint 2018-1 Funding Trust,Delayed Draw,Financial Services,,,SOFR,300,1.00 %,,2029-12-31,4929,,4896,,4960,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+LendingPoint 2018-1 Funding Trust,Revolver,Financial Services,,,SOFR,300,1.00 %,,2029-12-31,5231,,5197,,5231,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+LendingPoint Consolidated Inc.,Preferred Equity,Financial Services,,,N/A,,,,,,,1563,,2943,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+LendingPoint Consolidated Inc.,Common Equity,Financial Services,,,N/A,,,,,,,398,,750,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+LendingPoint LLC,First Lien,Financial Services,,500 PIK,SOFR,,1.00 %,,2029-12-31,20576,,20253,,38091,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+LendingPoint LLC,Unsecured Debt,Financial Services,,,N/A,,,,2030-12-31,1842,,1842,,1842,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+US Auto,Other Debt,,,,N/A,,,,2029-02-28,,,10317,,19409,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Protein For Pets Opco LLC,First Lien,,,,SOFR,525,1.00 %,,2030-09-20,8475,,8305,,8341,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Protein For Pets Opco LLC,Revolver,,,,SOFR,525,1.00 %,,2030-09-20,179,,161,,167,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+IC Holdings LLC,Common Equity,,,,N/A,,,,,,169,,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+THLP CO LLC,First Lien,,,,SOFR,600,1.00 %,,2028-01-31,27556,27483,27156,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+THLP CO LLC,Revolver,,,,SOFR,600,1.00 %,,2028-01-31,2255,2248,2188,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+ACP Packaging Intermediateco LLC,First Lien,Containers & Packaging,,,SOFR,525,1.00 %,,2031-10-22,10644,10488,10484,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Vybond Buyer LLC,First Lien,,,,SOFR,475,0.75 %,,2032-02-03,17247,17001,17118,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+NCP-MSI Buyer,First Lien,,,,SOFR,475,0.75 %,,2031-03-24,5804,5739,5746,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+NCP-MSI Buyer,Delayed Draw,,,,SOFR,475,0.75 %,,2031-03-24,1500,1483,1485,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+NCP-MSI Buyer,Revolver,,,,SOFR,375,0.75 %,,2031-03-24,1717,1688,1683,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+NPPI Buyer LLC,First Lien,,,,SOFR,500,1.00 %,,2029-08-20,21829,21541,21665,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Eagle Purchaser Inc.,First Lien,,,4.75 %,SOFR,250,1.00 %,,2030-03-22,3993,3920,3873,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Eagle Purchaser Inc.,Revolver,,,4.75 %,SOFR,250,1.00 %,,2029-03-22,421,409,405,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Marlin DTC-LS Midco 2 LLC,First Lien,,,,SOFR,6.60%,1.00%,,2026-07-01,20405,20361,20144,,20361,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Club Car Wash Operating LLC,First Lien,Automotive,,,SOFR,6.15%,1.00%,,2027-06-16,11956,11895,11890,,11895,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Club Car Wash Operating LLC,Delayed Draw,Automotive,,,SOFR,6.15%,1.00%,,2027-06-16,23018,22797,22891,,22797,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Birch Group of Clinics Acquireco Inc.,First Lien,,,,SOFR,5.25%,1.00%,,2031-12-31,1872,1844,1844,,1844,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Birch Group of Clinics Acquireco Inc.,Delayed Draw,,,,SOFR,5.25%,1.00%,,2031-12-31,426,400,400,,400,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Excelligence Learning Corp.,First Lien,Education,,,SOFR,5.75%,1.00%,,2030-01-18,15262,14997,14652,,14997,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Excelligence Learning Corp.,Revolver,Education,,,Prime,4.75%,,,2030-01-18,395,356,296,,356,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Gateway US Holdings Inc.,First Lien,,,,SOFR,4.75%,0.75%,,2028-09-22,12542,12505,12479,,12505,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Gateway US Holdings Inc.,Delayed Draw,,,,SOFR,4.75%,0.75%,,2028-09-22,602,593,594,,593,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Go Car Wash Management Corp.,First Lien,Automotive,,,SOFR,5.85%,1.00%,,2028-06-30,1583,1575,1550,,1575,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Go Car Wash Management Corp.,Delayed Draw,Automotive,,,SOFR,5.85%,1.00%,,2028-06-30,6098,6040,5970,,6040,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Go Car Wash Management Corp.,Delayed Draw,Automotive,,,SOFR,6.35%,1.00%,,2028-06-30,3124,3120,3059,,3120,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Lotus Topco Inc.,First Lien,,,,SOFR,475,1.00%,,2030-06-07,5224,5158,5172,,5224,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Lotus Topco Inc.,Delayed Draw,,,,SOFR,475,1.00%,,2030-06-07,367,358,352,,367,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"CI (MG) GROUP, LLC",First Lien,,,,SOFR,550,1.00%,,2030-03-27,18878,18614,18625,,18878,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"CI (MG) GROUP, LLC",Delayed Draw,,,,SOFR,550,1.00%,,2030-03-27,4674,4584,4555,,4674,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"CI (MG) GROUP, LLC",Revolver,,,,SOFR,550,1.00%,,2030-03-27,1176,1150,1149,,1176,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Regis Corp.,First Lien,,,,SOFR,450,2.50%,,2029-06-24,6624,6509,6524,,6624,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Regis Corp.,Revolver,,,,SOFR,450,2.50%,,2029-06-24,171,113,109,,171,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"SEV Intermediate Holdco, LLC",First Lien,Media & Entertainment,,,SOFR,525,0.75%,,2030-06-21,8208,8071,8085,,8208,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"SEV Intermediate Holdco, LLC",Delayed Draw,Media & Entertainment,,,SOFR,525,0.75%,,2030-06-21,999,949,949,,999,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"SEV Intermediate Holdco, LLC",Revolver,Media & Entertainment,,,SOFR,525,0.75%,,2030-06-21,658,635,633,,658,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+TCW Midco LLC,First Lien,,,,SOFR,575,1.00%,,2029-10-22,4950,4910,4901,,4950,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+TCW Midco LLC,Delayed Draw,,,,SOFR,575,1.00%,,2029-10-22,6622,6564,6553,,6622,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Ultra Clean Holdco LLC,First Lien,,,,SOFR,500,1.00%,,2030-07-01,2463,2423,2419,,2463,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Ultra Clean Holdco LLC,Delayed Draw,,,,SOFR,500,1.00%,,2030-07-01,5478,5363,5285,,5478,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+US Legal Support Investment Holdings LLC,Common Equity,Financial Services,,,N/A,,,,,,,1315,,632,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+USLS Acquisition Inc.,First Lien,,,,SOFR,565,1.00 %,,2026-06-01,28074,28005,28040,,28074,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+USLS Acquisition Inc.,Delayed Draw,,,,SOFR,565,1.00 %,,2026-06-01,5512,5501,5501,,5512,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+USLS Acquisition Inc.,Revolver,,,,SOFR,590,1.00 %,,2026-06-01,844,842,842,,844,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Village Pet Care LLC,First Lien,Consumer & Retail,,,SOFR,650,1.00 %,,2029-09-22,1500,1479,1463,,1500,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Village Pet Care LLC,Delayed Draw,Consumer & Retail,,,SOFR,650,1.00 %,,2029-09-22,1050,1014,925,,1050,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Village Pet Care LLC,Revolver,Consumer & Retail,,,SOFR,650,1.00 %,,2029-09-22,803,790,778,,803,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+CSC Holdings LLC,Revolver,,,,SOFR,225,0.00 %,,2027-07-13,86,70,72,,86,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+CSC Holdings LLC,Unsecured Debt,,4.13 %,,Fixed,,,,2030-12-01,2000,1483,1230,,2000,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Brush Group Bidco Ltd.,First Lien,,,,SONIA,500,0.00 %,,2031-07-30,,7815,7944,,7815,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+IW Buyer LLC,First Lien,,,,SOFR,510,1.00 %,,2029-06-28,13554,13418,13485,,13554,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+IW Buyer LLC,Revolver,,,,SOFR,510,1.00 %,,2029-06-28,112,105,110,,112,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Kauffman Intermediate LLC,First Lien,Media & Entertainment,10.27 %,,Fixed,,,,2026-09-30,17872,16914,10832,,17872,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Kauffman Intermediate LLC,Revolver,Media & Entertainment,10.27 %,,Fixed,,,,2026-09-30,1337,1245,810,,1337,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Surf Opco, LLC",First Lien,Software & Technology,,,SOFR,411,1.00 %,,2026-09-10,9460,,9431,,14366,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Surf Opco, LLC",Revolver,Software & Technology,,,SOFR,411,1.00 %,,2026-09-10,19883,,19829,,19883,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Surf Opco, LLC",Preferred Equity,Software & Technology,,,N/A,,,,,13195,,2683,,1713,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Surf Opco, LLC",Common Equity,Software & Technology,,,N/A,,,,,5000,,115,,—,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Evolv Technologies Holdings, Inc.",First Lien,Software & Technology,,,SOFR,525,2.00 %,,2030-07-01,6000,,5938,,5944,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Evolv Technologies Holdings, Inc.",Delayed Draw,Software & Technology,,,SOFR,525,2.00 %,,2030-07-01,—,,( 60	),,( 55	),,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Evolv Technologies Holdings, Inc.",Revolver,Software & Technology,,,SOFR,525,2.00 %,,2030-07-01,—,,( 30	),,( 27	),,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Total Power Ltd.,First Lien,Software & Technology,,,SOFR,450,0.75 %,,2030-07-22,12097,,8726,,8669,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Total Power Ltd.,First Lien,Software & Technology,,,SOFR,450,0.75 %,,2030-07-22,3828,,3789,,3772,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Total Power Ltd.,Delayed Draw,Software & Technology,,,SOFR,450,0.75 %,,2030-07-22,2188,,1569,,1573,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Total Power Ltd.,Delayed Draw,Software & Technology,,,SOFR,450,0.75 %,,2030-07-22,—,,( 46	),,1,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Total Power Ltd.,Revolver,Software & Technology,,,SOFR,450,0.75 %,,2030-07-22,—,,( 16	),,( 17	),,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Pro-Vigil Holding Company, LLC",First Lien,Software & Technology,,2.75 %,SOFR,585,1.00 %,,2026-06-30,9705,,9466,,9684,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Pro-Vigil Holding Company, LLC",Delayed Draw,Software & Technology,,2.75 %,SOFR,585,1.00 %,,2026-06-30,21968,,21427,,21904,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"TeamLINX Buyer, LLC",First Lien,Software & Technology,,,SOFR,500,1.00 %,,2030-12-18,17813,,17635,,17602,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"TeamLINX Buyer, LLC",Revolver,Software & Technology,,,SOFR,500,1.00 %,,2030-12-18,—,,( 14	),,( 18	),,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Wolfspeed Inc.,First Lien,Software & Technology,9.88 %,4.00 %,Fixed,,,,2030-06-23,7768,,8465,,7556,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Camin Cargo Control Holdings Inc.,First Lien,Energy,,,SOFR,5.50%,1.00%,,2029-12-07,980,964,970,,964,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Camin Cargo Control Holdings Inc.,Delayed Draw,Energy,,,SOFR,5.50%,1.00%,,2029-12-07,2061,2019,2029,,2019,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Camin Cargo Control Holdings Inc.,Revolver,Energy,,,SOFR,5.50%,1.00%,,2029-12-07,537,519,528,,519,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+WildBrain Ltd.,First Lien,Media & Entertainment,,,SOFR,5.50%,1.00%,,2029-07-23,13223,12983,12959,,12983,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+WildBrain Ltd.,Revolver,Media & Entertainment,,,SOFR,5.50%,1.00%,,2029-07-23,940,918,911,,918,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Shout! Factory LLC,First Lien,Media & Entertainment,,,SOFR,5.25%,0.75%,,2031-06-30,13253,13068,13054,,13068,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Shout! Factory LLC,Revolver,Media & Entertainment,,,SOFR,5.25%,0.75%,,2031-06-30,197,175,174,,175,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Gabriel Partners LLC,First Lien,Financial Services,,5.45%,SOFR,1.95%,1.00%,,2027-01-21,30814,30691,30197,,30691,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Gabriel Partners LLC,Delayed Draw,Financial Services,,5.45%,SOFR,1.95%,1.00%,,2027-01-21,1306,1301,1280,,1301,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Gabriel Partners LLC,Revolver,Financial Services,,5.45%,SOFR,1.95%,1.00%,,2027-01-21,689,686,676,,686,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Greylock Holdings LLC,Common Equity,Financial Services,,,N/A,,,,,,100,92,,100,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+RHI Acquisition LLC,First Lien,Financial Services,,,SOFR,5.75%,1.00%,,2029-03-16,5924,5813,5821,,5813,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+RHI Acquisition LLC,Delayed Draw,Financial Services,,,SOFR,5.75%,1.00%,,2029-03-16,2120,2074,2066,,2074,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Golden Bear 2016-R LLC,Other Debt,Financial Services,,,N/A,,,,2042-09-20,,14012,8033,,14012,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Evoriel,First Lien,,525%,,Euribor,,0.00%,,2031-04-02,2283,2444,2669,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Evoriel,First Lien,,525%,,Euribor,,0.00%,,2031-04-02,1096,1168,1280,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Origami Opportunities Fund III, LP.",First Lien,,625%,,SOFR,,2.00%,,2027-10-25,6909,6845,6840,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Origami Opportunities Fund III, LP.",First Lien,,625%,,SOFR,,2.00%,,2027-10-25,2182,2162,2160,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"PMA Parent Holdings, LLC",First Lien,,475%,,SOFR,,0.75%,,2031-01-31,13978,13853,13838,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Purchasing Power Funding I, LLC",First Lien,,710%,,SOFR,,0.00%,,2027-02-26,2126,2126,2126,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"AIC SPV Holdings II, LLC",Preferred Equity,,,,N/A,,,,,,534,501,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Renew Financial LLC,Common Equity,Financial Services,,,N/A,,,,,,16813,82,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Renew JV LLC,Common Equity,,,,N/A,,,,,,169,353,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Stretto, Inc.",First Lien,,525%,,SOFR,,1.00%,,2028-10-13,10950,10911,10731,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Amylu Borrower Sub, LLC",First Lien,,500%,,SOFR,,0.75%,,2031-06-10,10910,10805,10937,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Amylu Borrower Sub, LLC",First Lien,,500%,,SOFR,,0.75%,,2031-06-10,,,5,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Berner Food & Beverage, LLC",First Lien,Food & Beverage,665%,,SOFR,,1.00%,,2027-07-30,33949,33654,33355,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Berner Food & Beverage, LLC",First Lien,Food & Beverage,665%,,SOFR,,1.00%,,2026-07-30,1383,1375,1354,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Wm. Bolthouse Farms, Inc.",Common Equity,Agriculture,,,N/A,,,,,,,1534,,1460,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"FCP-Hive Holdings, LLC",Preferred Equity,,,,N/A,,,,,,,382,,448,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"FCP-Hive Holdings, LLC",Common Equity,,,,N/A,,,,,,,0,,3,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Hive Intermediate, LLC",First Lien,Media & Entertainment,,,SOFR,5.60%,1.00 %,,2027-09-22,14126,14034,14126,,14034,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Hive Intermediate, LLC",Revolver,Media & Entertainment,,,SOFR,5.60%,1.00 %,,2027-09-22,1448,1434,1448,,1434,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Justin's LLC,First Lien,,,,SOFR,5.00%,1.00 %,,2031-12-15,4167,4102,4104,,4102,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Justin's LLC,Common Equity,,,,N/A,,,,,,,100,,100,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Green Grass Foods, Inc.",First Lien,Food & Beverage,,,SOFR,5.00%,1.00 %,,2029-12-26,3675,3621,3620,,3621,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Nutpods Holdings, Inc.",Common Equity,,,,N/A,,,,,,,92,,125,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Patriot Foods Buyer, Inc.",First Lien,Food & Beverage,,,SOFR,5.25%,1.00 %,,2029-12-24,245,241,243,,241,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Patriot Foods Buyer, Inc.",Delayed Draw,Food & Beverage,,,SOFR,5.25%,1.00 %,,2029-12-22,166,163,163,,163,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Patriot Foods Buyer, Inc.",Revolver,Food & Beverage,,,SOFR,5.25%,1.00 %,,2029-12-22,80,77,78,,77,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Blue Jay Transit Inc.,First Lien,,15.87 %,,Fixed,,,,2028-03-22,21288,20528,17158,,20528,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Blue Jay Transit Inc.,First Lien,,15.87 %,,Fixed,,,,2026-07-31,2682,2611,2162,,2611,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Blue Jay Transit Inc.,Delayed Draw,,15.87 %,,Fixed,,,,2026-07-31,250,250,24,,250,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Third Lane Mobility Inc.,Common Equity,,,,N/A,,,,,,,0,,722,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Third Lane Mobility Inc.,Warrants,,,,N/A,,,,,,,0,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Channelside AcquisitionCo Inc.,First Lien,,4.75%,,SOFR,475,0.75%,,2028-06-30,3507,3501,3472,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Channelside AcquisitionCo Inc.,Revolver,,4.75%,,SOFR,475,0.75%,,2028-03-31,28,27,24,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Heniff Holdco LLC,First Lien,,6.10%,,SOFR,610,1.00%,,2026-12-03,28123,27993,27771,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Heniff Holdco LLC,Revolver,,6.10%,,SOFR,610,1.00%,,2026-12-03,3173,3169,3124,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Olympus Terminals Holdco II LLC,First Lien,,5.25%,,SOFR,525,0.75%,,2030-12-17,18441,18119,18213,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Olympus Terminals Holdco II LLC,Delayed Draw,,5.25%,,SOFR,525,0.75%,,2030-12-17,,( 58	),( 43	),,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Olympus Terminals Holdco II LLC,Revolver,,5.25%,,SOFR,525,0.75%,,2030-12-17,,( 49	),( 36	),,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+CSHC Buyerco LLC,First Lien,Healthcare,4.85%,,SOFR,485,1.00%,,2026-09-08,10249,10184,10158,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Carestream Health Holdings Inc.,Common Equity,Healthcare,,,N/A,,,,,,1426,492,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Carestream Health Inc.,First Lien,Healthcare,7.60%,,SOFR,760,1.00%,,2027-09-30,159,149,82,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Cerus Corp.,First Lien,Healthcare,6.60%,,SOFR,660,1.80%,,2028-03-01,12000,11984,12000,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Cerus Corp.,Delayed Draw,Healthcare,6.60%,,SOFR,660,1.80%,,2028-03-01,4500,4494,4500,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Cerus Corp.,Delayed Draw,Healthcare,6.60%,,SOFR,660,1.00%,,2028-03-01,3000,2985,3000,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Cerus Corp.,Revolver,Healthcare,5.60%,1.00%,SOFR,560,1.00%,,2028-03-01,450,450,450,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Roscoe Medical Inc.,First Lien,Healthcare,5.25%,,Prime,525,2.00%,,2025-04-11,7372,6756,6967,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Roscoe Medical Inc.,Revolver,Healthcare,5.25%,,Prime,525,2.00%,,2025-04-11,164,129,119,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+BW ISO Acquisition LLC,First Lien,,,,SOFR,500,0.75%,,2027-11-01,4988,4942,4938,,4988,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Medical Guardian, LLC",First Lien,Healthcare,,,SOFR,500,1.00%,,2028-04-26,30742,30561,30743,,30742,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Medical Guardian, LLC",First Lien,Healthcare,,,SOFR,500,1.00%,,2028-04-26,4690,4653,4690,,4690,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Medical Guardian, LLC",First Lien,Healthcare,,,SOFR,500,1.00%,,2028-04-26,381,364,381,,381,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Natus Sensory, Inc.",First Lien,,,,SOFR,525,0.75%,,2031-01-07,10600,10461,10349,,10600,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Natus Sensory, Inc.",First Lien,,,,Euribor,525,0.00%,,2031-01-07,2549,2603,2922,,2549,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"NeuroPace, Inc.",First Lien,,,,SOFR,550,2.00%,,2030-05-27,20000,19908,19900,,20000,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Titan Luxco I SARL,First Lien,,,,SOFR,500,0.75%,,2032-06-12,6044,5987,5984,,6044,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Titan Luxco I SARL,First Lien,,,,Euribor,500,0.75%,,2032-06-12,1178,1351,1370,,1178,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Titan Luxco I SARL,First Lien,,,,SOFR,500,0.75%,,2031-06-12,367,360,359,,367,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Titan Luxco I SARL,First Lien,,,,Euribor,500,0.75%,,2031-06-12,111,129,127,,111,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Alcami Corp.,First Lien,,,,SOFR,710,1.00%,,2028-12-21,7973,7815,7873,,7973,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Alcami Corp.,First Lien,,,,SOFR,710,1.00%,,2028-12-21,587,575,579,,587,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Alcami Corp.,First Lien,,,,SOFR,710,1.00%,,2028-12-21,233,213,219,,233,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"All Star Recruiting Locums, LLC",First Lien,Business Services,,,SOFR,550,1.00 %,,2030-05-01,7365,7250,7328,,7365,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"All Star Recruiting Locums, LLC",First Lien,Business Services,,,SOFR,550,1.00 %,,2030-05-01,1730,1688,1711,,1730,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"All Star Recruiting Locums, LLC",First Lien,Business Services,,,SOFR,550,1.00 %,,2030-05-01,761,742,754,,761,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Amplity Parent, Inc.",First Lien,,12.52 %,,,,1.00 %,,2027-01-31,26638,25914,15717,,26638,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Amplity Parent, Inc.",First Lien,,,,SOFR,1260 PIK,1.00 %,,2027-01-31,1243,1143,1126,,1243,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"LS Clinical Services Holdings, Inc.",First Lien,Healthcare,,9.92 %,SOFR,725,1.00 %,,2029-12-16,16392,16239,13258,,16392,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"LS Clinical Services Holdings, Inc.",First Lien,Healthcare,,9.92 %,SOFR,725,1.00 %,,2029-06-16,1775,1754,1447,,1775,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+EmpiRx Health LLC,First Lien,,,,SOFR,475,1.00 %,,2029-08-05,13727,13593,13590,,13727,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"ExactCare Parent, Inc.",First Lien,,,,SOFR,550,1.00 %,,2029-11-05,17717,17310,17717,,17717,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Ingenovis Health, Inc.",First Lien,,7.90 %,,,,,,2028-03-06,3821,3340,1116,,3821,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"KCF Puerto Rico, LLC",Other Debt,,,,N/A,,,,2028-06-28,1697,903,723,,1697,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Clearway Corp.,Common Equity,,,,N/A,,,,,,133,306,,133,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Kure Pain Holdings, Inc.",First Lien,,,,SOFR,560,1.00 %,,2030-08-30,17933,17913,17924,,17933,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Kure Pain Holdings, Inc.",First Lien,,,,SOFR,550,1.00 %,,2030-08-31,4273,4236,4271,,4273,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Kure Pain Holdings, Inc.",First Lien,,,,SOFR,510,1.00 %,,2030-08-30,505,467,505,,505,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Premier Imaging, LLC",First Lien,,,2.00 %,SOFR,426,1.00 %,,2026-03-31,7368,,6263,,7342,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Premier Imaging, LLC",Delayed Draw,,,2.00 %,SOFR,426,1.00 %,,2026-03-31,1977,,1680,,1905,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Maxor Acquisition, Inc.",First Lien,,,,SOFR,610,1.00 %,,2029-03-01,9900,,9826,,9821,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Maxor National Pharmacy Services, LLC",First Lien,Healthcare,,,SOFR,610,1.00 %,,2029-03-01,13051,,12953,,12790,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Maxor Topco, LP.",Preferred Equity,,,,N/A,,,,,,,86,,50,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Midwest Vision Partners Management, LLC",First Lien,Business Services,,5.75 %,SOFR,100,1.00 %,,2028-01-12,21936,,21443,,21769,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Midwest Vision Partners Management, LLC",First Lien,Business Services,,,SOFR,650,1 %,,2028-01-12,1127,,1127,,1118,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Midwest Vision Partners Management, LLC",Revolver,Business Services,,5.75 %,SOFR,100,1.00 %,,2028-01-12,639,,615,,635,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"OMH-Healthedge Holdings, Inc.",First Lien,,,,SOFR,450,1.00 %,,2030-04-01,11928,,11869,,11919,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Rarebreed Veterinary Partners, Inc.",First Lien,Healthcare,,,SOFR,525,1.00 %,,2030-04-18,4194,,4132,,4130,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Rarebreed Veterinary Partners, Inc.",Delayed Draw,Healthcare,,,SOFR,525,1.00 %,,2030-04-18,16933,,16659,,16719,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Pace Health Companies, LLC",First Lien,,,,SOFR,565,1.00 %,,2027-08-02,1375,,1371,,1369,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Pace Health Companies, LLC",First Lien,,,,SOFR,540,1.00 %,,2027-08-02,459,,456,,458,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Pace Health Companies, LLC",Delayed Draw,,,,SOFR,540,1.00 %,,2027-08-02,3393,,3367,,3377,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Tarrytown Acquisition Holdings LLC,First Lien,,,,SOFR,4.75%,0.75%,,2032-11-12,3426,,3392,,3392,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+TS Investors LLC,First Lien,,,,SOFR,4.75%,1.00%,,2029-05-04,13648,,13580,,13477,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+BSP-TS LP,Preferred Equity,,,,N/A,,,,,,,34,,25,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+BSP-TS LP,Common Equity,,,,N/A,,,,,,,34,,185,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Thomas Scientific LLC,First Lien,,,4.50%,SOFR,3.40%,1.00%,,2027-12-14,32846,,31716,,32578,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Thomas Scientific LLC,Revolver,,,4.50%,SOFR,3.40%,1.00%,,2027-12-14,2324,,2220,,2303,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+WellDyneRx LLC,First Lien,,,,SOFR,6.85%,0.75%,,2027-03-09,17399,,17182,,17251,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Pure Upper Holdco LLC,First Lien,,,,SOFR,4.75%,1.00%,,2031-12-03,6444,,6380,,6381,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Xanitos TopCo LLC,Common Equity,,,,N/A,,,,,,,100,,100,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Arcadia Solutions Inc.,First Lien,,,,SOFR,5.50%,1.00%,,2032-08-12,10714,,10607,,10612,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Acentra Holdings LLC,First Lien,Healthcare,,,SOFR,550,0.50%,,2029-12-17,17460,17068,17460,,17460,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Acentra Holdings LLC,First Lien,Healthcare,,,SOFR,575,0.50%,,2029-12-17,3920,3880,3920,,3920,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Gainwell Acquisition Corp.,First Lien,Healthcare,,,SOFR,400,0.75%,,2027-10-01,16603,16005,16342,,16603,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Inovalon Holdings Inc.,First Lien,Healthcare,,2.75%,SOFR,286,0.75%,,2028-11-24,6271,6201,5926,,6271,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Inovalon Holdings Inc.,Second Lien,Healthcare,,,SOFR,861,0.75%,,2033-11-25,95,91,62,,95,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Merative LP.,First Lien,Healthcare,,,SOFR,450,0.75%,,2032-09-30,4118,4098,4097,,4118,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+MRO Parent Corp.,First Lien,Healthcare,,,SOFR,450,0.75%,,2032-06-09,4249,4189,4206,,4249,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+CircusTrix Holdings LLC,First Lien,Healthcare,,,SOFR,675,1.00%,,2028-07-18,977,963,958,,977,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+CircusTrix Holdings LLC,First Lien,Healthcare,,,SOFR,675,1.00%,,2028-07-18,6951,6843,6812,,6951,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+CircusTrix Holdings LLC,Revolver,Healthcare,,,SOFR,675,1.00%,,2028-07-18,400,387,380,,400,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Crumbl Enterprises LLC,First Lien,Food & Beverage,,,SOFR,450,0.75%,,2032-05-05,9213,9127,9121,,9213,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Guernsey Holdings SDI LA LLC,First Lien,,6.95%,,Fixed,,,,2026-11-18,1552,1549,1525,,1549,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Arrivia, Inc.",First Lien,,6.00%,,SOFR,600,1.00%,,2028-12-31,4012,8739,3962,,8739,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Arrivia, Inc.",Common Equity,,,,N/A,,,,,,4740,2628,,4740,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Munson Buffalo Restaurant Group LLC,First Lien,Food & Beverage,10.43%,,Fixed,,,,2029-05-31,3481,3439,2620,,3439,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Munson Buffalo Restaurant Group LLC,First Lien,Food & Beverage,10.43%,,Fixed,,,,2029-05-31,5480,5417,3889,,5417,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+PARS Group LLC,First Lien,,,,SOFR,685,1.50%,,2028-04-03,8636,8555,8031,,8555,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+YTC Enterprises LLC,First Lien,,,,SOFR,636,1.00%,,2026-08-16,8233,8223,7883,,8223,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Tasty Chick'n LLC,First Lien,,,,SOFR,600,1.00%,,2029-05-16,11649,11520,9378,,11520,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Tasty Chick'n LLC,First Lien,,,,SOFR,600,1.00%,,2029-05-16,274,266,,,266,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Tasty Chick'n LLC,First Lien,,,,SOFR,600,1.00%,,2029-05-16,878,857,480,,857,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Eldrickco Ltd.,First Lien,,,,SONIA,525,0.50%,,2026-11-26,8945,11570,11979,,11570,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Eldrickco Ltd.,First Lien,,,,SONIA,475,0.50%,,2026-05-26,356,416,471,,416,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+WH BorrowerCo LLC,First Lien,,,,SOFR,500,1.00%,,2030-08-02,14348,14150,14026,,14150,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+WH BorrowerCo LLC,First Lien,,,,SOFR,500,1.00%,,2030-08-02,3835,3739,3651,,3739,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+WH BorrowerCo LLC,First Lien,,,,SOFR,500,1.00%,,2030-08-02,583,553,526,,553,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Athlete Buyer, LLC",First Lien,Consumer & Retail,,,SOFR,6.10%,1.00%,,2029-04-26,1908,1878,1607,,1878,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Athlete Buyer, LLC",First Lien,Consumer & Retail,,,SOFR,6.10%,1.00%,,2030-04-26,22465,22023,18926,,22023,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Athlete Buyer, LLC",First Lien,Consumer & Retail,,,SOFR,6.10%,1.00%,,2029-04-26,1031,1015,869,,1015,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Athlete Buyer, LLC",First Lien,Consumer & Retail,,,SOFR,6.10%,1.00%,,2029-04-26,3201,3136,2376,,3136,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Poly-Wood, LLC",First Lien,Consumer & Retail,,,SOFR,4.88%,1.00%,,2030-03-20,2727,2683,2713,,2683,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Norvax, LLC",First Lien,Insurance,,,SOFR,5.50%,3.00%,,2029-08-05,840,834,839,,834,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Norvax, LLC",First Lien,Insurance,,,SOFR,5.50%,3.00%,,2029-08-05,199,194,214,,194,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Norvax, LLC",Common Equity,Insurance,,,N/A,,,,,,,23,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"High Street Buyer, Inc.",First Lien,Insurance,,,SOFR,4.50%,0.75%,,2028-04-14,9995,9916,9945,,9916,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"High Street Buyer, Inc.",First Lien,Insurance,,,SOFR,4.50%,0.75%,,2028-04-14,18981,18851,18887,,18851,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Turbo Buyer, Inc.",First Lien,,,,SOFR,6.15%,1.00%,,2026-06-02,18550,18517,18549,,18517,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Turbo Buyer, Inc.",First Lien,,,,SOFR,6.15%,1.00%,,2026-06-02,694,693,694,,693,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Shelby 2021 Holdings Corp.,First Lien,,,,SOFR,5.25%,0.75%,,2028-06-29,13964,13870,13893,,13870,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Shelby 2021 Holdings Corp.,Delayed Draw,,,,SOFR,5.25%,0.75%,,2028-06-29,6000,5910,5957,,5910,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Aventiv Technologies LLC,First Lien,,,,SOFR,10.26%,1.00%,,2026-03-25,2205,2190,2324,,2190,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Aventiv Technologies LLC,Second Lien,,12.98%,,Fixed,,,,2026-03-25,9154,7705,,,7705,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"ACP Avenu Buyer, LLC",First Lien,,,,SOFR,4.75%,1.00%,,2029-10-02,3676,3631,3640,,3631,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"ACP Avenu Buyer, LLC",Delayed Draw,,,,SOFR,4.75%,1.00%,,2029-10-02,5458,5328,5346,,5328,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Distinct Holdings Inc.,First Lien,,,,SOFR,5.75%,1.00%,,2029-07-18,13077,12870,12690,,12870,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Distinct Holdings Inc.,Revolver,,,,SOFR,5.75%,1.00%,,2029-07-18,1260,1238,1208,,1238,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Genius Bidco LLC,First Lien,,,,SOFR,5.25%,1.00%,,2030-05-01,1320,1299,1294,,1299,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Genius Bidco LLC,Revolver,,,,SOFR,5.25%,1.00%,,2030-05-01,155,138,131,,138,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Genius Bidco LLC,Common Equity,,,,N/A,,,,,,77,48,,77,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"New Era Technology, Inc.",First Lien,Software & Technology,,6.25%,SOFR,,1.00%,,2030-06-30,12998,12998,12803,,12998,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"New Era Technology, Inc.",Revolver,Software & Technology,,,SOFR,6.25%,1.00%,,2030-06-30,866,866,840,,866,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"New Era Technology, Inc.",Preferred Equity,Software & Technology,,,N/A,,,,,,10819,6920,,10819,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Bullcave Ltd.,First Lien,Software & Technology,,,SOFR,500,0.75%,,2030-08-06,29105,28746,28887,,28746,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Bullcave Ltd.,First Lien,Software & Technology,,,SOFR,500,0.75%,,2030-08-06,3684,3619,3643,,3619,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Project Comfort Buyer Inc.,Preferred Equity,Healthcare,,,N/A,,,,,,492,211,,492,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+1244311 B.C. Ltd.,Common Equity,Healthcare,,,N/A,,,,,,1000,66,,1000,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Paladone Group Bidco Ltd.,First Lien,Healthcare,,,SOFR,585,1.00%,,2027-11-12,5875,5828,5787,,5828,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Paladone Group Bidco Ltd.,First Lien,Healthcare,,,SOFR,585,1.00%,,2027-11-12,920,917,907,,917,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Paladone Group Bidco Ltd.,First Lien,Healthcare,,,SOFR,585,1.00%,,2027-11-12,1318,1309,1297,,1309,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Paladone Group Bidco Ltd.,First Lien,Healthcare,,,SONIA,585,1.00%,,2027-11-12,,344,342,,344,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Paladone Group Holdings Ltd.,Common Equity,Healthcare,,,N/A,,,,,,93,85,,93,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+August Bioservices LLC,First Lien,Healthcare,,,SOFR,595,2.00%,,2029-06-01,12000,11955,11550,,11955,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+August Bioservices LLC,First Lien,Healthcare,,,SOFR,595,2.00%,,2029-06-01,3000,2989,2888,,2989,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+August Bioservices LLC,First Lien,Healthcare,,,SOFR,400,2.00%,,2029-06-01,434,433,416,,433,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Unchained Labs LLC,First Lien,Healthcare,,,SOFR,555,1.00%,,2027-08-09,1848,1837,1825,,1837,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+LSF12 Donnelly Bidco LLC,First Lien,Industrials,6.50%,,SOFR,6.50%,1.00%,,2029-10-02,14663,14384,14418,,14663,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Flow Control Intermediate Holdings 2.0 LLC,First Lien,Industrials,5.25%,,SOFR,5.25%,1.00%,,2031-05-01,5307,5234,5280,,5307,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Ideal Components Acquisition LLC,First Lien,Industrials,5.00%,,SOFR,5.00%,0.75%,,2032-06-30,13059,12873,12961,,13059,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Ideal Components Acquisition LLC,Revolver,Industrials,5.00%,,SOFR,5.00%,0.75%,,2032-06-30,267,239,252,,267,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+JPW Industries Holding Corp.,First Lien,Industrials,5.88%,,SOFR,5.88%,2.00%,,2028-11-22,2400,2400,2364,,2400,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+IOTA HOLDINGS 3,First Lien,Industrials,4.75%,,SOFR,4.75%,0.00%,,2032-03-31,22562,22240,22224,,22562,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+IOTA HOLDINGS 3,Revolver,Industrials,4.75%,,SOFR,4.75%,0.00%,,2032-03-31,1274,1209,1201,,1274,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Relevant Industrial LLC,First Lien,Industrials,4.75%,,SOFR,4.75%,1.00%,,2031-05-16,8173,8078,8071,,8173,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Relevant Industrial LLC,Delayed Draw,Industrials,4.75%,,SOFR,4.75%,1.00%,,2031-05-16,196,165,129,,196,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Relevant Industrial LLC,Revolver,Industrials,3.75%,,Prime,3.75%,1.00%,,2031-05-16,143,127,125,,143,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Accelerate360 Holdings LLC,First Lien,Media & Entertainment,6.26%,,SOFR,6.26%,1.00%,,2027-02-11,3462,3462,3453,,3462,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Accelerate360 Holdings LLC,Revolver,Media & Entertainment,6.26%,,SOFR,6.26%,1.00%,,2027-02-11,1382,1382,1375,,1382,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Acosta Holdings Corp.,Preferred Equity,,,,N/A,,,,,,,724,,473,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Acosta Holdings Corp.,Common Equity,,,,N/A,,,,,,,42,,77,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+ChyronHego Corp.,Preferred Equity,,,,N/A,,,,,,,13045,,6000,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+ChyronHego US Holding Corp.,First Lien,,,,SOFR,3.50%,1.75%,,2029-06-30,105906,105702,105906,,105702,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+ChyronHego US Holding Corp.,Revolver,,,,SOFR,6.00%,1.75%,,2029-06-30,19467,19452,19467,,19452,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+KL Charlie Acquisition Company,First Lien,,,,SOFR,5.10%,1.00%,,2026-12-30,17999,17896,17908,,17896,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+KL Charlie Acquisition Company,Delayed Draw,,,,SOFR,5.10%,1.00%,,2026-12-30,11600,11544,11526,,11544,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"KL Charlie Co-Invest, LP.",Common Equity,,,,N/A,,,,,,,337,,220,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"HALO Buyer, Inc.",First Lien,,,,SOFR,6.00%,1.00%,,2029-08-07,8630,8486,8460,,8486,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"HALO Buyer, Inc.",Revolver,,,,SOFR,6.00%,1.00%,,2029-08-07,467,446,442,,446,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"HRO (Hero Digital) Holdings, LLC",First Lien,,,,SOFR,5.60%,1.00%,,2028-11-18,26575,26300,26094,,26300,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"HRO (Hero Digital) Holdings, LLC",First Lien,,,,SOFR,6.10%,1.00%,,2028-11-18,102,100,100,,100,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"HRO (Hero Digital) Holdings, LLC",Revolver,,,,SOFR,5.60%,1.00%,,2026-11-18,1176,1166,1103,,1166,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+HRO Holdings I LP,Common Equity,,,,N/A,,,,,,,234,,213,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Owl Parent Holdings, LLC",Common Equity,,,,N/A,,,,,,,159,,100,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Congruex Group LLC,First Lien,Energy,,5.00 %,SOFR,165,1.50 %,,2029-05-03,15684,15496,12617,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+GS SEER Group Borrower LLC,First Lien,Energy,,,SOFR,675,1.00 %,,2030-04-29,3175,3108,3112,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+GS SEER Group Borrower LLC,First Lien,Energy,,,SOFR,675,1.00 %,,2030-04-29,1162,1135,1135,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+GS SEER Group Borrower LLC,First Lien,Energy,,,SOFR,675,1.00 %,,2029-04-30,92,86,84,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+GS SEER Group Holdings LLC,Common Equity,Energy,,,N/A,,,,,,42,36,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Complete Paper Inc.,First Lien,Containers & Packaging,,,SOFR,500,0.75 %,,2031-02-04,14888,14683,14588,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Merx Aviation Finance LLC,First Lien,Transportation & Logistics,10.00 %,,Fixed,,,,2026-10-31,18575,18575,18576,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Merx Aviation Finance LLC,Common Equity,Transportation & Logistics,,,N/A,,,,,,74890,84222,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+DRS Holdings III Inc.,First Lien,Consumer & Retail,,,SOFR,525,1.00 %,,2028-11-01,23303,23208,23186,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Lash OpCo LLC,First Lien,Consumer & Retail,,2.00 %,SOFR,500,1.00 %,,2027-09-17,,44847,42766,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+RoC Holdco LLC,First Lien,,,,SOFR,525,1.00 %,,2031-02-21,12581,12358,12455,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+RoC Holdco LLC,Delayed Draw,,,,SOFR,525,1.00 %,,2031-02-21,4128,4098,4087,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Silk Holdings I Corp.,Common Equity,,,,N/A,,,,,,100,220,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Silk Holdings III Corp.,First Lien,,,,SOFR,450,0.50 %,,2032-12-03,26618,26114,26352,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Summer Fridays, LLC",First Lien,,,,SOFR,525,1.00 %,,2031-05-16,23032,22708,22687,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Alcresta Holdings, LP",Preferred Equity,,,,N/A,,,,,,116,81,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Alcresta Holdings, LP",Common Equity,,,,N/A,,,,,,1,120,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Alcresta Therapeutics Inc.,First Lien,Healthcare,,,SOFR,550,1.00 %,,2030-03-12,9266,9232,9173,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Alcresta Therapeutics Inc.,Revolver,Healthcare,,,SOFR,550,1.00 %,,2031-03-12,29,21,25,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Space Finco, Inc.",First Lien,,,,SOFR,575,1.00 %,,2032-02-05,10585,10436,10426,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Space Parent, LP",Preferred Equity,,,,N/A,,,,,,99,99,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Space Parent, LP",Common Equity,,,,N/A,,,,,,1,1,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Orion Buyer, LLC",First Lien,,,,SOFR,500,1.00 %,,2030-07-18,6832,6722,6491,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Orion Buyer, LLC",Revolver,,,,Prime,400,1.00 %,,2030-07-18,1401,1379,1331,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+TVG Orion Blocker Inc.,Unsecured Debt,Healthcare,11.34 %,,Fixed,,,,2030-07-11,21,,,,21,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+PAI Pharma,First Lien,Healthcare,,,N/A,,,,,,,7738,,8219,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Pai Middle Tier LLC,First Lien,Healthcare,,,SOFR,450,0.75 %,,2032-02-13,16418,16184,16227,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Pai Middle Tier LLC,Revolver,Healthcare,,,SOFR,450,0.75 %,,2032-02-13,500,454,461,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+PAI Co-Investor FT Aggregator LLC,Common Equity,Healthcare,,,N/A,,,,,,,106,,100,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Sterling Pharma,First Lien,Healthcare,,,N/A,,,,,,,16794,,16738,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Saffron Bidco Ltd.,First Lien,Healthcare,,2.50 %,SOFR,325,0.75 %,,2031-09-24,13679,13446,13269,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Saffron Bidco Ltd.,First Lien,Healthcare,,2.50 %,Euribor,325,0.75 %,,2031-09-24,98,107,112,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+TerSera Therapeutics LLC,First Lien,Healthcare,,,SOFR,575,1.00 %,,2029-04-04,16581,16220,16581,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+TersSera,First Lien,Healthcare,,,N/A,,,,,,,16581,,16201,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Trillium Health Care Products Inc.,First Lien,Healthcare,,,SOFR,525,1.00 %,,2031-08-06,8044,7892,7782,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Trillium Health Care Products Inc.,Revolver,Healthcare,,,SOFR,525,1.00 %,,2031-08-06,1006,989,973,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Trillium,First Lien,Healthcare,,,N/A,,,,,,,8735,,8881,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+AGDATA Midco LLC,First Lien,Business Services,,,SOFR,475,0.75 %,,2030-07-01,5419,5355,5338,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+AGDATA Midco LLC,Delayed Draw,Business Services,,,SOFR,475,0.75 %,,2030-07-01,710,684,649,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+AGDATA Midco LLC,Revolver,Business Services,,,SOFR,475,0.75 %,,2030-07-01,189,183,182,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+AGDATA,First Lien,Business Services,,,N/A,,,,,,,6169,,6222,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"BDO USA, P.A.",First Lien,,,,SOFR,500,2.00 %,,2028-08-31,11730,11730,11702,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"DCM Parent, LLC",First Lien,,,,SOFR,500,1.00 %,,2031-03-12,12579,12403,12391,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"DecisionHR Holdings, Inc.",First Lien,,,,SOFR,450,1.00 %,,2031-12-08,6809,6741,6740,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"M&M OPCO, LLC",First Lien,,,,SOFR,600,1.00 %,,2029-04-07,11978,11760,11828,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"G&A Partners Holding Company II, LLC",First Lien,,,,SOFR,500,0.75 %,,2031-03-03,6645,6554,6628,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"G&A Partners Holding Company II, LLC",Delayed Draw,,,,SOFR,500,0.75 %,,2031-03-01,2304,2260,2292,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"HSI Halo Holdings, LLC",Common Equity,,,,N/A,,,,,,,1684,,46,,,,,cost_suspicious_vs_size|dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Chronicle Parent LLC,First Lien,,,,SOFR,500,1.00 %,,2031-04-15,7002,6939,6932,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Chronicle Parent LLC,Delayed Draw,,,,SOFR,500,1.00 %,,2031-04-15,182,172,160,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+The North Highland Company LLC,First Lien,,,,SOFR,475,0.75 %,,2031-12-20,3034,3007,3004,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+The North Highland Company LLC,Revolver,,,,SOFR,475,0.75 %,,2030-12-20,113,106,105,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Lifelong Learner Holdings LLC,First Lien,,,7.75 %,SOFR,115 Cash,1.00 %,,2027-03-31,5634,,4714,,5578,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Lifelong Learner Holdings LLC,Revolver,,,7.75 %,SOFR,115 Cash,1.00 %,,2027-03-31,573,,475,,572,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Schlesinger Global LLC,First Lien,,,0.50 %,SOFR,610 Cash,1.00 %,,2027-03-31,6377,,6275,,6411,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Acronis AG,First Lien,,,1.00 %,SOFR,595 Cash,1.00 %,,2027-04-01,27490,,27494,,27421,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+RMCF V CIV L LP,Common Equity,,,,N/A,,,,,,,589,,500,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+AMI Buyer Inc.,First Lien,,,,SOFR,500,0.75 %,,2031-10-17,12997,,12997,,12808,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Asure Software Inc.,First Lien,Software & Technology,,,SOFR,500,2.00 %,,2030-04-01,6667,,6667,,6637,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Asure Software Inc.,Delayed Draw,Software & Technology,,,SOFR,500,2.00 %,,2030-04-01,13333,,13333,,13275,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+IQN Holding Corp.,First Lien,,,3.13 %,SOFR,263 Cash,0.75 %,,2029-05-02,4434,,4367,,4434,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+IQN Holding Corp.,Revolver,,,,SOFR,525,0.75 %,,2028-05-02,172,,168,,172,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Telesoft Holdings LLC,First Lien,,,,SOFR,585,1.00 %,,2026-12-16,21420,,21388,,21366,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Telesoft Holdings LLC,Revolver,,,,SOFR,585,1.00 %,,2026-12-16,341,,338,,335,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Digital.ai Software Holdings Inc.,First Lien,Software & Technology,,,SOFR,600,1.00 %,,2028-08-10,22693,,22188,,22392,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Digital.ai Software Holdings Inc.,Revolver,Software & Technology,,,SOFR,600,1.00 %,,2028-08-10,726,,671,,700,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+EVER.AG Corp.,First Lien,,,,SOFR,535,1.00 %,,2027-06-24,20588,20420,20412,,20420,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+EVER.AG Corp.,First Lien,,,,SOFR,535,1.00 %,,2027-06-24,,,20401,,20413,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+F&M Buyer LLC,First Lien,,,,SOFR,450,0.75 %,,2032-03-18,16901,16748,16901,,16748,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Evergreen IX Borrower 2023 LLC,First Lien,,,,SOFR,475,0.75 %,,2030-09-30,7061,7061,7061,,7061,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Apiom Inc.,First Lien,,,,SOFR,745,2.00 %,,2028-05-02,2500,2489,2500,,2489,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Ichor Management Ltd.,First Lien,Business Services,,,SOFR,550,1.00 %,,2029-12-08,8883,8719,8661,,8719,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Litify Holdings Inc.,Common Equity,,,,N/A,,,,,,,455,,107,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Litify LLC,First Lien,,,,SOFR,560,1.00 %,,2029-02-02,29167,28634,28583,,28634,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Litify LLC,Revolver,,,,SOFR,560,1.00 %,,2029-02-02,,,29021,,28728,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Lookout Inc.,First Lien,,,,SOFR,625,3.00 %,,2029-06-01,5000,4981,4963,,4981,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Lookout Inc.,Delayed Draw,,,,SOFR,625,3.00 %,,2029-06-01,5000,4982,4963,,4982,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+mPulse Mobile Inc.,First Lien,,,,SOFR,475,0.75 %,,2032-08-26,8077,7996,7996,,7996,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+mPulse Mobile Inc.,Revolver,,,,SOFR,475,0.75 %,,2032-08-26,,,7976,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Magnate Holding Corp.,First Lien,,,,SOFR,6.25%,0.50%,,2026-12-31,20656,20663,20291,,20663,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Colonnade Parent Inc.,First Lien,,4.77%,,Fixed,,,,2026-09-30,12989,10890,6495,,10890,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Colonnade Parent Inc.,Delayed Draw,,4.77%,,Fixed,,,,2026-09-30,2220,1847,1110,,1847,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Colonnade Parent Inc.,Revolver,,4.77%,,Fixed,,,,2026-09-30,500,486,250,,486,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Crewline Buyer, Inc.",First Lien,,,,SOFR,6.75%,1.00%,,2030-11-08,5623,5579,5623,,5579,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Four Winds Interactive LLC,First Lien,,,,SOFR,5.75%,0.75%,,2030-02-20,7523,7393,7448,,7393,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Simeio Group Holdings, Inc.",First Lien,,11.06%,,Fixed,,,,2026-02-02,8128,8115,6137,,8115,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Simeio Group Holdings, Inc.",Revolver,,11.06%,,Fixed,,,,2026-02-02,884,876,667,,876,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Polaris Newco, LLC",First Lien,,,,SOFR,4.01%,0.50%,,2028-06-02,8066,8024,7797,,8024,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"SPS Commerce, Inc.",Common Equity,,,,N/A,,,,,,62,75,,62,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Texada Software LLC,First Lien,Software & Technology,,,SOFR,5.50%,1.00%,,2030-04-30,6923,6814,6837,,6814,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Texada Software LLC,Delayed Draw,Software & Technology,,,SOFR,5.50%,1.00%,,2030-04-30,2051,2018,2026,,2018,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Texada Software LLC,Revolver,Software & Technology,,,SOFR,5.50%,1.00%,,2030-04-30,77,62,64,,62,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Zephyr Buyer, LP.",First Lien,Software & Technology,,,SOFR,475,0.50%,,2031-01-31,30505,,30353,,29886,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Zephyr Buyer, LP.",First Lien,Software & Technology,,,SOFR,475,0.50%,,2031-01-31,,,( 20	),,( 72	),,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Uniguest Holdings, Inc.",First Lien,Software & Technology,,,SOFR,500,1.00%,,2030-11-27,19643,,19368,,19390,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Uniguest Holdings, Inc.",Delayed Draw,Software & Technology,,,SOFR,500,1.00%,,2030-11-27,,,( 56	),,( 24	),,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Uniguest Holdings, Inc.",Revolver,Software & Technology,,,SOFR,500,1.00%,,2030-11-27,,,( 17	),,( 15	),,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Uplight, Inc.",First Lien,Software & Technology,,,SOFR,610,4.00%,,2029-06-01,10000,,9850,,9925,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Uplight, Inc.",Delayed Draw,Software & Technology,,,SOFR,610,4.00%,,2029-06-01,,,( 150	),,—,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Uplight, Inc.",Revolver,Software & Technology,,,SOFR,350,4.00%,,2029-06-01,300,,285,,300,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Zafin Labs Americas Inc.,First Lien,Software & Technology,,,SOFR,475,0.75%,,2031-02-14,16667,,16477,,16445,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Zafin Labs Americas Inc.,Revolver,Software & Technology,,,SOFR,475,0.75%,,2031-02-14,,,( 38	),,( 43	),,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Zendesk, Inc.",First Lien,Software & Technology,,,SOFR,500,0.75%,,2028-11-22,6620,,6603,,6620,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Zendesk, Inc.",Delayed Draw,Software & Technology,,,SOFR,500,0.75%,,2028-11-22,1107,,1104,,1107,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Zendesk, Inc.",Revolver,Software & Technology,,,SOFR,500,0.75%,,2028-11-22,,,( 2	),,—,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Club Champion LLC,First Lien,,,,SOFR,500,0.75%,,2029-06-14,9020,,8930,,8918,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Club Champion LLC,Revolver,,,,SOFR,500,0.75%,,2029-06-14,669,,651,,650,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+EG Global Finance PLC,First Lien,Financial Services,,,SOFR,750,0.50 %,,2028-11-30,6267,,6658,,6398,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+The Men's Wearhouse LLC,First Lien,,,,SOFR,575,0.00 %,,2029-02-26,775,,778,,774,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Biamp,First Lien,,,,SOFR,500,1.00 %,,2030-04-30,825,,792,,812,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+BusPatrol Holdco,First Lien,,,,SOFR,525,1.00 %,,2029-08-02,8333,,8249,,8269,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+BusPatrol Holdco,Delayed Draw,,,,SOFR,525,1.00 %,,2029-08-02,3333,,3250,,3309,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+BusPatrol Holdco,Revolver,,,,SOFR,400,1.00 %,,2029-08-02,1800,,1780,,1782,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+IBG Borrower LLC,First Lien,,,,SOFR,515,1.00 %,,2029-08-22,5797,,5681,,5752,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+IBG Borrower LLC,First Lien,,,,SOFR,500,1.00 %,,2031-08-22,3409,,3341,,3342,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Gainline Galaxy Holdings LLC,Common Equity,,,,N/A,,,,,,,42,,575,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Galaxy Universal LLC,First Lien,,,,SOFR,575,1.00 %,,2028-05-12,16241,,15928,,16231,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Galaxy Universal LLC,First Lien,,,,SOFR,625,1.00 %,,2028-05-12,2480,,2472,,2480,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Galaxy Universal LLC,Delayed Draw,,,,SOFR,575,1.00 %,,2028-05-12,761,,746,,746,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Banner Solutions,First Lien,Distribution & Wholesale,10.04 %,,,,,,2027-05-31,12270,11913,8841,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Banner Solutions,Delayed Draw,Distribution & Wholesale,10.04 %,,,,,,2027-05-31,2996,2907,2158,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Banner Solutions,Revolver,Distribution & Wholesale,10.04 %,,,,,,2027-05-31,587,569,46,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Banner Parent Holdings Inc.,Common Equity,Distribution & Wholesale,,,N/A,,,,,,613,—,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Lindstrom LLC,First Lien,Distribution & Wholesale,,,SOFR,550,0.75 %,,2032-12-30,11500,11328,11328,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Lindstrom LLC,Revolver,Distribution & Wholesale,,,SOFR,550,0.75 %,,2032-12-30,1283,1230,1230,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+MacQueen Equipment LLC,Delayed Draw,Distribution & Wholesale,,,SOFR,551,1.00 %,,2028-01-07,3522,3506,3513,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Patriot MCN Buyer Corp.,First Lien,Distribution & Wholesale,,,SOFR,475,1.75 %,,2031-10-01,3873,3826,3825,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Patriot MCN Buyer Corp.,Delayed Draw,Distribution & Wholesale,,,SOFR,475,1.75 %,,2031-10-01,,4,9,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Patriot MCN Buyer Corp.,Revolver,Distribution & Wholesale,,,SOFR,475,1.75 %,,2031-10-01,,5,5,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+MGP Holdings III Corp.,First Lien,Distribution & Wholesale,,,SOFR,525,1.00 %,,2030-03-01,14066,13867,13855,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+MGP Holdings III Corp.,Delayed Draw,Distribution & Wholesale,,,SOFR,525,1.00 %,,2030-03-01,1838,1809,1799,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+MGP Holdings III Corp.,Revolver,Distribution & Wholesale,,,Prime,425,1.00 %,,2030-03-01,105,101,93,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+WC ORS Buyer Inc.,First Lien,Distribution & Wholesale,,,SOFR,500,0.75 %,,2031-08-07,19895,19619,19696,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+WC ORS Buyer Inc.,Revolver,Distribution & Wholesale,,,SOFR,500,0.75 %,,2031-08-07,869,796,821,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+WC ORS Holdings LP.,Common Equity,Distribution & Wholesale,,,N/A,,,,,,100,177,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Graffiti Parent, LP",Common Equity,Other,,,N/A,,,,,,,179,,244,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Painters Supply and Equipment Co.,First Lien,Industrials,,,SOFR,560,1.00 %,,2027-08-10,10748,,10505,,10629,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Painters Supply and Equipment Co.,Delayed Draw,Industrials,,,SOFR,560,1.00 %,,2027-08-10,3629,,3465,,3597,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+GAT-Airline Ground Support Inc.,First Lien,Transportation & Logistics,,,SOFR,525,1.00 %,,2029-05-09,15010,,15010,,14829,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+GAT-Airline Ground Support Inc.,Delayed Draw,Transportation & Logistics,,,SOFR,525,1.00 %,,2029-05-09,3484,,3483,,3434,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+GAT-Airline Ground Support Inc.,Revolver,Transportation & Logistics,,,SOFR,525,1.00 %,,2029-05-09,635,,635,,611,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Golden Bear 2016-R LLC,Partnership Interest,,,,N/A,,,,,,,8033,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Surf Opco LLC,Common Equity,,,,N/A,,,,,,,115,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Surf Opco LLC,Preferred Equity,,,,N/A,,,,,,,2683,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Auto Pool 2023 Trust,Partnership Interest,,,,N/A,,,,,,,10317,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Arrivia Inc.,Partnership Interest,,,,N/A,,,,,,,2628,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Accelerate360 Holdings LLC,Revolver,Media & Entertainment,,,SOFR,600,1.00 %,,2027-02-11,,1382,1356,,1382,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Acosta Holdings Corp.,Preferred Equity,Media & Entertainment,,,N/A,,,,,,473,491,,473,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Acosta Holdings Corp.,Common Equity,Media & Entertainment,,,N/A,,,,,,77,80,,77,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+KL Charlie Acquisition Company,Delayed Draw,Media & Entertainment,,,SOFR,560,1.00 %,,2026-12-30,5399,5360,5294,,5399,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+KL Charlie Co-Invest LP.,Common Equity,Media & Entertainment,,,N/A,,,,,,220,320,,220,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+HRO (Hero Digital) Holdings LLC,First Lien,Media & Entertainment,,5.00 %,SOFR,210,1.00 %,,2028-11-18,19182,18961,18365,,19182,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+HRO (Hero Digital) Holdings LLC,Delayed Draw,Media & Entertainment,,5.00 %,SOFR,210,1.00 %,,2028-11-18,6980,6895,6683,,6980,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+HRO (Hero Digital) Holdings LLC,Revolver,Media & Entertainment,,5.00 %,SOFR,210,1.00 %,,2026-11-18,2545,2523,2412,,2545,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Houghton Mifflin Harcourt Company,First Lien,Media & Entertainment,,,SOFR,525,0.50 %,,2029-04-09,6151,5863,6074,,6151,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+K&N Parent Inc.,Common Equity,,,,N/A,,,,,,,252,,23718,,,,,dspy_extracted|fair_value_suspicious_vs_size,MFIC,2026-02-26,MFIC,2026-02-26
+Truck-Lite Co. LLC,Common Equity,,,,N/A,,,,,,,828,,350,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Truck-Lite Co. LLC,First Lien,,,,SOFR,575,0.75%,,2031-02-13,2448,2412,2426,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Truck-Lite Co. LLC,Delayed Draw,,,,SOFR,575,0.75%,,2031-02-13,,,2,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Truck-Lite Co. LLC,Revolver,,,,SOFR,575,0.75%,,2030-02-13,,,2,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Ultra Clean Newco,First Lien,,,,SOFR,500,1.00%,,2030-07-01,2488,2447,2450,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Ultra Clean Newco,Delayed Draw,,,,SOFR,500,1.00%,,2030-07-01,4423,4296,4257,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Ultra Clean Newco,Revolver,,,,SOFR,500,1.00%,,2030-07-01,,,21,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Bird,Common Equity,,,,N/A,,,,,,,373,,366,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+GAT-Airline Ground Support Inc.,Delayed Draw,Transportation & Logistics,,,SOFR,550,1.00%,,2029-05-09,951,929,927,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+GAT-Airline Ground Support Inc.,Revolver,Transportation & Logistics,,,SOFR,550,1.00%,,2029-05-09,,,24,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Merx Aviation Finance LLC,Revolver,Transportation & Logistics,10.00%,,Fixed,,,,2025-10-31,59575,59575,59576,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Merx Aviation Finance LLC,Common Equity,Transportation & Logistics,,,N/A,,,,,,,123815,,146500,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"PrimeFlight Acquisition, LLC",First Lien,,,,SOFR,550,1.00%,,2029-05-01,10358,10142,10358,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"PrimeFlight Acquisition, LLC",First Lien,,,,SOFR,525,1.00%,,2029-05-01,3250,3206,3218,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Cave Enterprises Operations, LLC",First Lien,,,,SOFR,660,1.50%,,2028-08-09,8551,8425,8551,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"FCP-Hive Holdings, LLC",Preferred Equity,,,,N/A,,,,,,448,229,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"FCP-Hive Holdings, LLC",Common Equity,,,,N/A,,,,,,3,,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Hive Intermediate, LLC",Revolver,Media & Entertainment,,2.00%,SOFR,610,1.00%,,2027-09-22,843,822,809,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Nutpods Holdings, Inc.",Common Equity,,,,N/A,,,,,,125,153,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Butterfly Fighter Co-Invest, LP.",Partnership Interest,,,,N/A,,,,,,90,1999,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Patriot Foods Buyer Inc.,First Lien,Food & Beverage,,,SOFR,575,1.00%,,2029-12-24,248,243,245,,243,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Patriot Foods Buyer Inc.,First Lien,Food & Beverage,,,SOFR,600,1.00%,,2029-12-24,,( 4	),( 5	),,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+IC Holdings LLC,Common Equity,,,,N/A,,,,,,,-,,169,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+THLP CO. LLC,First Lien,,,2.00%,SOFR,600,1.00%,,2025-05-31,26172,26127,25911,,26127,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+THLP CO. LLC,First Lien,,,6.00%,SOFR,600,1.00%,,2025-05-31,1453,1449,1453,,1449,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Eagle Purchaser Inc.,First Lien,Business Services,,,SOFR,675,1.00%,,2030-03-22,469,455,464,,455,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Eagle Purchaser Inc.,First Lien,Business Services,,,SOFR,675,1.00%,,2029-03-22,658,643,648,,643,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Alpinex Opco LLC,First Lien,Business Services,,,SOFR,626,1.00%,,2027-12-27,17308,17069,17271,,17069,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Alpinex Opco LLC,First Lien,Business Services,,,SOFR,626,1.00%,,2027-12-27,4374,4323,4374,,4323,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Alpinex Opco LLC,First Lien,Business Services,,,SOFR,626,1.00%,,2027-12-27,1102,1081,1103,,1081,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Gabriel Partners LLC,First Lien,Business Services,,,SOFR,640,1.00%,,2026-09-21,29956,29739,29503,,29739,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Gabriel Partners LLC,First Lien,Business Services,,,SOFR,640,1.00%,,2026-09-21,1270,1260,1251,,1260,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Gabriel Partners LLC,First Lien,Business Services,,,SOFR,640,1.00%,,2026-09-21,338,332,328,,332,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"ACP Avenu Buyer, LLC",First Lien,,5.25%,,SOFR,5.25%,1.00%,,2029-10-02,1238,1209,1219,,1209,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"ACP Avenu Buyer, LLC",First Lien,,5.25%,,SOFR,5.25%,1.00%,,2029-10-02,2240,2158,2158,,2158,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"ACP Avenu Buyer, LLC",First Lien,,5.25%,,SOFR,5.25%,1.00%,,2029-10-02,167,150,156,,150,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Carestream Health Holdings, Inc.",Common Equity,,,,N/A,,,,,,1426,1443,,1426,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Carestream Health, Inc.",First Lien,,7.50%,,SOFR,7.50%,1.00%,,2027-09-30,167,151,128,,151,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"CRS Holdings, Inc.",First Lien,,5.00%,,SOFR,5.00%,1.00%,,2030-06-06,1918,1882,1889,,1882,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"G&A Partners Holding Company II, LLC",First Lien,,,,SOFR,550,0.75 %,,2031-03-01,3223,,3167,,3165,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"G&A Partners Holding Company II, LLC",First Lien,,,,SOFR,550,0.75 %,,2031-03-01,574,,462,,514,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Apiom, Inc.",First Lien,,,,SOFR,745,2.00 %,,2028-05-02,2500,,2513,,2485,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Heritage Environmental Services, Inc.",First Lien,Environmental Services,,,SOFR,525,0.75 %,,2031-01-31,1749,,1763,,1745,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Health Management Associates Superholdings, Inc.",First Lien,Business Services,,,SOFR,635,1.00 %,,2029-03-30,350,,347,,335,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Health Management Associates Superholdings, Inc.",First Lien,Business Services,,,SOFR,010,0.00 %,,2029-03-30,135,,134,,129,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Ingenovis Health, Inc.",First Lien,,,,SOFR,425,0.50 %,,2028-03-06,980,,603,,887,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"SMC IR Holdings, LLC",Common Equity,,,,N/A,,,,,,,270,,179,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Jacent Strategic Merchandising,First Lien,,,0.75%,SOFR,510,1.00%,,2025-10-23,22207,,22050,,22199,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Jacent Strategic Merchandising,Revolver,,,,SOFR,660,1.00%,,2025-10-23,1564,,1541,,1559,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Jacent Strategic Merchandising,Common Equity,,,,N/A,,,,,,,151,,500,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"JF Acquisition, LLC",First Lien,,,,SOFR,560,1.00%,,2026-07-31,7730,,7721,,7705,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"JF Acquisition, LLC",Delayed Draw,,,,SOFR,560,1.00%,,2026-07-31,5101,,5094,,5082,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"JF Acquisition, LLC",Revolver,,,,SOFR,560,1.00%,,2026-07-31,879,,877,,872,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Lifelong Learner Holdings, LLC",First Lien,,,,SOFR,790,1.00%,,2025-10-20,4354,,4344,,4305,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Lifelong Learner Holdings, LLC",Delayed Draw,,,,SOFR,790,1.00%,,2025-10-20,927,,924,,913,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Lifelong Learner Holdings, LLC",Revolver,,,,SOFR,790,1.00%,,2025-10-20,537,,536,,536,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"HEF Safety Ultimate Holdings, LLC",Revolver,,,,SOFR,525,1.00%,,2029-11-17,710,,710,,679,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Schlesinger Global, LLC",First Lien,Other,SOFR + 275,5.85 %,SOFR,275,1.00 %,,2025-07-12,11942,,11705,,11957,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+GS SEER Group Borrower LLC,Delayed Draw,Other,SOFR + 675,,SOFR,675,1.00 %,,2030-04-29,709,,688,,676,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"GS SEER Group Holdings, LLC",Common Equity,Other,N/A,,N/A,,,,,,,43,,42,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Solera, LLC",Second Lien,Other,SOFR + 910,,SOFR,910,1.00 %,,2029-06-04,5686,,5627,,5636,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Trench Plate Rental Co.,First Lien,Other,SOFR + 560,,SOFR,560,1.00 %,,2026-12-03,17727,,17417,,17581,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Trench Plate Rental Co.,Revolver,Other,SOFR + 560,,SOFR,560,1.00 %,,2026-12-03,1427,,1395,,1414,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Trench Safety Solutions Holdings, LLC",Common Equity,Other,N/A,,N/A,,,,,,,32,,50,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"US Legal Support Investment Holdings, LLC",Common Equity,Financial Services,N/A,,N/A,,,,,,,1055,,632,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"USLS Acquisition, Inc.",First Lien,Other,SOFR + 590,,SOFR,590,1.00 %,,2026-06-01,28370,,28235,,28225,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"USLS Acquisition, Inc.",Delayed Draw,Other,SOFR + 590,,SOFR,590,1.00 %,,2026-06-01,4428,,4411,,4412,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"USLS Acquisition, Inc.",Revolver,Other,SOFR + 590,,SOFR,590,1.00 %,,2027-12-01,804,,798,,796,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Vixxo Corp.,First Lien,Other,SOFR + 500,,SOFR,500,1.00 %,,2030-08-01,3750,,3694,,3697,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Owl Acquisition LLC,First Lien,Business Services,5.35%,,SOFR,,1.00%,,2028-02-04,9635,9515,9586,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Owl Parent Holdings LLC,Common Equity,Business Services,,,N/A,,,,,,100,172,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Aspen Aerogels Inc.,First Lien,Chemicals & Materials,4.50%,,SOFR,450,4.50%,,2029-08-19,23605,23161,23133,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Aspen Aerogels Inc.,Revolver,Chemicals & Materials,4.60%,,SOFR,,2.50%,,2029-08-19,43,43,43,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Carbonfree Chemicals Holdings LLC,Other Debt,Chemicals & Materials,6.50%,,Fixed,,,,2027-10-14,12500,12501,12459,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Heubach Holdings USA LLC,First Lien,Chemicals & Materials,10.00%,,Fixed,,,,2024-04-30,1631,383,815,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+SK Neptune Husky Group Sarl,First Lien,Chemicals & Materials,7.00%,,Fixed,,,,2029-01-03,9438,,,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+SI Holdings Inc.,First Lien,Chemicals & Materials,5.85%,,SOFR,,1.00%,,2027-12-31,34624,34495,34552,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+SI Holdings Inc.,Revolver,Chemicals & Materials,5.85%,,SOFR,,1.00%,,2027-12-31,,( 12	),( 15	),,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Lunar Buyer LLC,First Lien,Chemicals & Materials,5.50%,,SOFR,,0.75%,,2030-10-03,9091,8915,8909,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Lunar Buyer LLC,Delayed Draw,Chemicals & Materials,5.50%,,SOFR,,0.75%,,2030-10-03,,( 65	),( 68	),,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Lunar Buyer LLC,Revolver,Chemicals & Materials,5.50%,,SOFR,,0.75%,,2030-10-03,455,376,373,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+W.R. Grace Holdings LLC,First Lien,Chemicals & Materials,4.88%,,Fixed,,,,2027-06-15,2000,1943,1938,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Athlete Buyer, LLC",Other,Industrials,5.85%,,,,1.00%,,2029-04-26,1927,,1908,,1890,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Athlete Buyer, LLC",Other,Industrials,5.85%,,,,1.00%,,2029-04-26,23681,,23442,,23172,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Athlete Buyer, LLC",Other,Industrials,5.85%,,,,1.00%,,2029-04-26,3292,,3240,,3211,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"American Restoration Holdings, LLC",Other,Industrials,5.10%,,,,1.00%,,2030-07-24,6463,,6350,,6340,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"American Restoration Holdings, LLC",Other,Industrials,5.10%,,,,1.00%,,2030-07-24,389,,358,,356,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Omnimax International, LLC",Other,Industrials,5.75%,,,,1.00%,,2030-12-06,15280,,14975,,14977,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Omnimax International, LLC",Other,Industrials,5.75%,,,,1.00%,,2030-12-06,,,-47,,-47,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Pave America Interco, LLC",Other,Industrials,6.90%,,,,1.00%,,2028-02-07,14310,,14095,,13993,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Pave America Interco, LLC",Other,Industrials,6.90%,,,,1.00%,,2028-02-07,1423,,1402,,1394,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Pavement Preservation Acquisition, LLC",Other,Industrials,5.25%,,,,1.00%,,2030-08-09,8999,,8819,,8826,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Pavement Preservation Acquisition, LLC",Other,Industrials,5.25%,,,,1.00%,,2030-08-09,2155,,2112,,2114,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Pavement Preservation Acquisition, LLC",Other,Industrials,5.25%,,,,1.00%,,2030-08-09,,,-26,,-24,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"HomeRenew Buyer, Inc.",Other,Industrials,8.65%,,,,,,2027-11-23,9073,,4900,,8177,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"HomeRenew Buyer, Inc.",Other,Industrials,9.00%,,,,2.50%,,2025-03-13,1276,,1244,,1241,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"HomeRenew Buyer, Inc.",Other,Industrials,8.65%,,,,,,2027-11-23,2161,,1167,,1975,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+R.F. Fager Company LLC,First Lien,,,,SOFR,525,1.00%,,2030-03-04,930,911,914,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+R.F. Fager Company LLC,First Lien,,,,SOFR,525,1.00%,,2030-03-04,,( 17	),( 32	),,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Traffic Management Solutions LLC,First Lien,Business Services,,,SOFR,500,1.00%,,2030-11-26,7379,7269,7268,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Traffic Management Solutions LLC,First Lien,Business Services,,,SOFR,500,1.00%,,2030-11-26,,( 45	),( 46	),,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Traffic Management Solutions LLC,First Lien,Business Services,,,SOFR,500,1.00%,,2030-11-26,121,100,100,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Club Champion LLC,First Lien,,,,SOFR,500,0.75%,,2029-06-14,663,638,631,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+1244311 B.C. Ltd.,Common Equity,,,,N/A,,,,,,1000,202,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Poly-Wood LLC,First Lien,,,,SOFR,575,1.00%,,2030-03-20,2165,2120,2165,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Poly-Wood LLC,First Lien,,,,SOFR,575,1.00%,,2030-03-20,,( 13	),,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Sorenson Holdings LLC,First Lien,,10.00%,,Fixed,,,,2030-04-01,60,54,55,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Sorenson Holdings LLC,Common Equity,,,,N/A,,,,,,108,119,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Protein For Pets Opco, LLC",First Lien,Food & Beverage,,,SOFR,525,1.00 %,,2030-09-20,8561,,8411,,8410,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Protein For Pets Opco, LLC",Revolver,Food & Beverage,,,SOFR,525,1.00 %,,2030-09-20,,8395,8395,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Project Comfort Buyer, Inc.",First Lien,Food & Beverage,,,SOFR,710,1.00 %,,2026-02-01,17757,,17653,,17716,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Project Comfort Buyer, Inc.",Preferred Equity,Food & Beverage,,,N/A,,,,,,,246,,493,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"PHOENIX YW BUYER, INC.",First Lien,Food & Beverage,,,SOFR,500,1.00 %,,2030-05-31,8137,,7975,,7968,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Excelligence Learning Corp.,Revolver,Food & Beverage,,,Prime,475,,,2030-01-18,148,101,123,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Lash OpCo, LLC",First Lien,Food & Beverage,,5.10 %,SOFR,275,1.00 %,,2026-03-18,42662,,41794,,42398,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Lash OpCo, LLC",Delayed Draw,Food & Beverage,,5.10 %,SOFR,275,1.00 %,,2026-03-18,2302,,2256,,2293,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Lash OpCo, LLC",Revolver,Food & Beverage,,5.10 %,SOFR,275,1.00 %,,2026-03-18,1673,,1637,,1658,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Paladone Group Bidco Ltd.,Delayed Draw,Food & Beverage,,,SOFR,560,1.00 %,,2027-11-12,930,,926,,924,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Paladone Group Bidco Ltd.,Revolver,Food & Beverage,,,SOFR,560,1.00 %,,2027-11-12,659,,653,,645,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Paladone Group Bidco Ltd.,Revolver,Food & Beverage,,,SONIA,550,1.00 %,,2027-11-12,,,439,,469,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Paladone Group Holdings Ltd.,Common Equity,Food & Beverage,,,N/A,,,,,,,121,,92,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+RoC Holdco LLC,First Lien,,,,SOFR,600,1.00 %,,2030-02-21,,,12448,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Gainline Galaxy Holdings LLC,Common Equity,,,,N/A,,,,,,106,,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Galaxy Universal LLC,First Lien,,,,SOFR,575,1.00 %,,2026-11-12,1241,1229,1237,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Swisstech IP CO, LLC",First Lien,,,6.00 %,Fixed,,,,2025-05-28,201,154,201,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Silk Holdings I Corp.,Common Equity,,,,N/A,,,,,,215,,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Silk Holdings III Corp.,First Lien,,,,SOFR,550,1.00 %,,2029-05-01,29652,29046,29355,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"The Men's Wearhouse, LLC",First Lien,,,,SOFR,650,0.00 %,,2029-02-26,1270,1268,1271,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Marlin DTC-LS Midco 2, LLC",First Lien,,,,SOFR,660,1.00 %,,2025-07-01,21078,21012,21075,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Gateway US Holdings, Inc.",First Lien,,,,SOFR,475,0.75 %,,2028-09-22,10225,10184,10172,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Gateway US Holdings, Inc.",First Lien,,,,SOFR,475,0.75 %,,2026-09-22,2349,2340,2337,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Gateway US Holdings, Inc.",Delayed Draw,,,,SOFR,475,0.75 %,,2026-09-22,533,532,531,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Go Car Wash Management Corp.,First Lien,Automotive,,,SOFR,585,1.00 %,,2026-12-31,1600,1588,1557,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Go Car Wash Management Corp.,First Lien,Automotive,,,SOFR,585,1.00 %,,2026-12-31,9318,9243,9080,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Lotus Topco Inc.,First Lien,,,,SOFR,475,1.00 %,,2030-06-07,2926,2886,2883,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Regis Corp.,Revolver,,,,SOFR,450,2.50 %,,2029-06-24,721,646,638,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Eldrickco Ltd.,Delayed Draw,,,,SONIA,578,0.50 %,,2026-11-26,8497,10516,10275,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Eldrickco Ltd.,Revolver,,,,SONIA,578,0.50 %,,2026-11-26,356,416,433,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Zephyr Buyer LP.,First Lien,,,,SOFR,650,1.00%,,2030-01-31,30816,30134,30272,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Zephyr Buyer LP.,First Lien,,,,SOFR,675,1.00%,,2030-01-31,,( 84	),( 69	),,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Village Pet Care LLC,First Lien,Consumer & Retail,,,SOFR,650,1.00%,,2029-09-22,750,708,700,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+WH BorrowerCo LLC,First Lien,,,,SOFR,500,1.00%,,2030-08-01,,( 114	),( 122	),,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+WH BorrowerCo LLC,First Lien,,,,SOFR,500,1.00%,,2030-08-01,1223,1188,1185,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+NPPI Buyer LLC,First Lien,,,,SOFR,525,1.00%,,2029-08-20,,( 33	),( 71	),,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Basswood Park CLO Ltd.,Other,,,,N/A,,,,2034-04-20,2000,2011,2003,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Compu-Link Corp.,First Lien,,,,SOFR,610,1.00%,,2029-11-30,18076,17695,17819,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Compu-Link Corp.,First Lien,,,,SOFR,610,1.00%,,2029-11-30,,( 5	),( 41	),,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Peer Advisors LLC,First Lien,,,,SOFR,610,1.00%,,2029-11-30,4347,4340,4285,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Churchill Middle Market CLO Ltd.,Other,,,,N/A,,,,2033-10-24,4000,4000,4002,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+RHI Acquisition LLC,Delayed Draw,,,,SOFR,575,1.00 %,,2029-03-16,1302,1259,1240,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Fortress Credit BSL Limited 2021-3,Other,,,,N/A,,,,2034-07-20,3000,3001,3005,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Fortress Credit Opportunities CLO LLC,Other,,,,N/A,,,,2037-01-15,4000,4000,4000,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Generator Buyer Inc.,First Lien,,,,SOFR,525,0.75 %,,2030-07-22,16086,12536,12188,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Generator Buyer Inc.,Delayed Draw,,,,SOFR,525,0.75 %,,2030-07-22,416,286,259,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Golden Bear 2016-R LLC,Other,,,,N/A,,,,2042-09-20,,15451,9736,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Golub Capital Partners CLO Ltd.,Other,,,,N/A,,,,2034-07-20,2000,2016,2013,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Insight XI Aggregator LP.,First Lien,,,,SOFR,325,0.00 %,,2025-08-28,3041,3041,3041,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+LendingPoint 2018-1 Funding Trust,First Lien,Financial Services,,,SOFR,500,1.00 %,,2027-12-31,36294,35918,36109,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+LendingPoint LLC,First Lien,Financial Services,0.00 %,,Fixed,,,,2026-12-30,2197,2197,2192,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+LendingPoint LLC,Delayed Draw,Financial Services,,,SOFR,300,1.00 %,,2027-12-31,6971,6971,6945,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Evoriel,Delayed Draw,,525%,,Euribor,,0.00%,,2031-04-02,391,402,390,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Origami Opportunities Fund III, LP.",Delayed Draw,,625%,,SOFR,,2.00%,,2027-10-25,,-47,-50,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"PMA Parent Holdings, LLC",Revolver,,550%,,SOFR,,0.75%,,2031-01-31,,-10,-10,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Purchasing Power Funding I, LLC",Revolver,,710%,,SOFR,,0.00%,,2027-02-26,2825,2825,2825,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Redfin Corp.,First Lien,,575%,,SOFR,,1.50%,,2028-10-20,3456,3385,3378,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Redfin Corp.,Delayed Draw,,575%,,SOFR,,1.50%,,2028-10-20,3474,3402,3396,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"AIC SPV Holdings II, LLC",Preferred Equity,,,,N/A,,,,,,534,193,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Shelby 2021 Holdings Corp.,Delayed Draw,,525%,,SOFR,,0.75%,,2028-06-29,412,357,393,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Shelby 2021 Holdings Corp.,Revolver,,575%,,SOFR,,0.75%,,2027-06-29,,-3,-2,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Auto Pool 2023 Trust,Other Debt,,,,N/A,,,,2029-02-28,,23192,16366,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Solarplicity Group Ltd.,First Lien,Energy,4.00 %,,N/A,450,1.00 %,,2023-03-08,5562,7231,1997,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Solarplicity Group Ltd.,Preferred Equity,Energy,N/A,,N/A,,,,,,5623,,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Solarplicity Group Ltd.,Common Equity,Energy,N/A,,N/A,,,,,,4,,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+LTR Intermediate Holdings Inc.,First Lien,Environmental Services,,,SOFR,450,1.00 %,,2028-05-05,2067,2030,2036,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Akoya Biosciences Inc.,First Lien,Healthcare,,,SOFR,691,2.50 %,,2027-11-01,13125,13142,13093,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Alcami Corp.,First Lien,Healthcare,,,SOFR,710,1.00 %,,2028-12-21,82,56,58,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Alcresta Holdings LP,Preferred Equity,Healthcare,N/A,,N/A,,,,,,116,124,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Alcresta Holdings LP,Common Equity,Healthcare,N/A,,N/A,,,,,,1,28,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Alcresta Therapeutics Inc.,First Lien,Healthcare,,,SOFR,575,1.00 %,,2030-03-12,2276,2236,2242,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+All Star Recruiting Locums LLC,First Lien,Healthcare,,,SOFR,550,1.00 %,,2030-05-01,6922,6793,6887,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+All Star Recruiting Locums LLC,First Lien,Healthcare,,,SOFR,550,1.00 %,,2030-05-01,217,194,211,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Allied Benefit Systems Intermediate LLC,First Lien,Media & Entertainment,,,SOFR,525,0.75%,,2030-10-31,5873,5873,5873,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Allied Benefit Systems Intermediate LLC,Delayed Draw,Media & Entertainment,,,SOFR,525,0.75%,,2030-10-31,1077,1069,1077,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"August Bioservices, LLC",First Lien,Business Services,,,SOFR,595,2.00%,,2029-06-01,12000,11945,11850,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"August Bioservices, LLC",Delayed Draw,Business Services,,,SOFR,595,2.00%,,2029-06-01,3000,2987,2963,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Azurity Pharmaceuticals, Inc.",First Lien,Healthcare,,,SOFR,662,0.75%,,2027-09-20,4765,4729,4670,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Bausch Health Companies Inc.,First Lien,,,,SOFR,525,0.50%,,2027-02-01,7200,6747,7047,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Bausch Health Companies Inc.,First Lien,,5.50 %,,Fixed,,,,2025-11-01,1088,1048,1061,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"LS Clinical Services Holdings, Inc.",First Lien,Healthcare,,,SOFR,751,1.00%,,2027-12-16,14782,14612,14227,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"LS Clinical Services Holdings, Inc.",Revolver,Healthcare,,,SOFR,751,1.00%,,2027-06-16,1609,1585,1544,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Acentra Holdings LLC,First Lien,Healthcare,5.75%,,SOFR,575,0.50%,,2028-12-17,3960,3912,3940,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Acentra Holdings LLC,Revolver,Healthcare,5.50%,,SOFR,550,0.50%,,2029-12-17,213,163,193,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Roscoe Medical Inc.,First Lien,Healthcare,6.36%,,SOFR,636,1.00%,,2025-03-31,7391,7309,7354,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Roscoe Medical Inc.,Revolver,Healthcare,0.11%,,SOFR,011,0.00%,,2025-03-31,492,482,488,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+EmpiRx Health LLC,First Lien,Healthcare,5.10%,,SOFR,510,1.00%,,2027-08-05,8818,8721,8818,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+EmpiRx Health LLC,Revolver,Healthcare,5.10%,,SOFR,510,1.00%,,2027-08-05,,,-,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+ExactCare Parent Inc.,First Lien,Healthcare,5.50%,,SOFR,550,1.00%,,2029-11-05,17898,17468,17808,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+HSI Halo Holdings LLC,Common Equity,Healthcare,,,N/A,,,,,,16,21,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+HSI HALO Acquisition Inc.,Common Equity,Healthcare,,,N/A,,,,,,31,2026,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Kure Pain Holdings Inc.,First Lien,Healthcare,6.10%,,SOFR,610,1.00%,,2027-08-27,21047,21006,21047,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Kure Pain Holdings Inc.,Revolver,Healthcare,5.10%,,SOFR,510,1.00%,,2027-08-27,,,-,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Premier Imaging LLC,First Lien,Healthcare,,2.00%,SOFR,426,1.00%,,2026-03-31,7057,7025,5716,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Premier Imaging LLC,Delayed Draw,Healthcare,,2.00%,SOFR,426,1.00%,,2026-03-31,1911,1837,1548,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Maxor Acquisition Inc.,First Lien,,,,SOFR,6.10%,1.00 %,,2029-03-01,10000,9900,9900,,9900,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Maxor National Pharmacy Services LLC,First Lien,Healthcare,,,SOFR,6.10%,1.00 %,,2029-03-01,13185,12882,13053,,12882,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Maxor Topco LP.,Preferred Equity,,,,N/A,,,,,,,75,,50,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Medical Guardian LLC,First Lien,Healthcare,,,SOFR,5.85%,1.00 %,,2028-04-26,31062,30844,30902,,30844,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Medical Guardian LLC,Delayed Draw,Healthcare,,,SOFR,5.85%,1.00 %,,2028-04-26,4738,4690,4714,,4690,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Midwest Vision Partners Management LLC,First Lien,Business Services,,2.00 %,SOFR,4.50%,1.00 %,,2027-01-12,20776,20548,20517,,20548,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Midwest Vision Partners Management LLC,First Lien,Business Services,,6.50%,SOFR,,1.00 %,,2027-01-12,1127,1115,899,,1115,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Midwest Vision Partners Management LLC,Revolver,Business Services,,,SOFR,6.50%,1.00 %,,2027-01-12,612,606,595,,606,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+OMH-Healthedge Holdings Inc.,First Lien,,,,SOFR,6.00%,1.00 %,,2029-10-08,9850,9804,9850,,9804,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Orion Buyer LLC,First Lien,,,,SOFR,5.00%,1.00 %,,2030-07-18,6901,6771,6763,,6771,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Orion Buyer LLC,Revolver,,,,Prime,4.00%,,,2030-07-18,280,254,252,,254,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+TVG Orion Blocker Inc.,Common Equity,,,,N/A,,,,,,,103,,110,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Partner Therapeutics Inc.,Preferred Equity,Healthcare,,,N/A,,,,,,,333,,333,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Partner Therapeutics Inc.,Warrants,Healthcare,,,N/A,,,,,,,136,,389,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+PHS Buyer Inc.,First Lien,,,1.00 %,SOFR,410,1.00 %,,2027-01-31,25785,,21853,,25598,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+PHS Buyer Inc.,Revolver,,,1.00 %,SOFR,410,1.00 %,,2027-01-31,1441,1417,1136,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Rarebreed Veterinary Partners Inc.,First Lien,Healthcare,,,SOFR,525,1.00 %,,2030-04-18,4237,4160,4152,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Rarebreed Veterinary Partners Inc.,Delayed Draw,Healthcare,,,SOFR,525,1.00 %,,2030-04-18,6457,6286,6088,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Pace Health Companies LLC,First Lien,,,,SOFR,565,1.00 %,,2025-08-02,1389,1381,1384,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Pace Health Companies LLC,First Lien,,,,SOFR,540,1.00 %,,2025-08-02,464,463,461,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Pace Health Companies LLC,Delayed Draw,,,,SOFR,540,1.00 %,,2025-08-02,3231,3221,3209,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Pace Health Companies LLC,Delayed Draw,,,,SOFR,565,1.00 %,,2025-08-02,195,190,191,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Rigel Pharmaceuticals Inc.,First Lien,Healthcare,,,SOFR,661,1.50 %,,2027-09-01,3000,3019,3000,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Rigel Pharmaceuticals Inc.,Delayed Draw,Healthcare,,,SOFR,661,1.50 %,,2027-09-01,15000,14981,15000,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+TS Investors LLC,First Lien,,5.60%,,SOFR,5.60%,1.00%,,2029-05-04,9526,9372,9407,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+TS Investors LLC,Delayed Draw,,5.60%,,SOFR,5.60%,1.00%,,2029-05-04,110,92,76,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+TELA Bio Inc.,First Lien,,6.35%,,SOFR,6.35%,1.00%,,2027-05-01,13333,13296,13333,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Treace Medical Concepts Inc.,First Lien,Healthcare,6.10%,,SOFR,6.10%,1.00%,,2027-04-01,14583,14543,14438,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Treace Medical Concepts Inc.,Revolver,Healthcare,4.10%,,SOFR,4.10%,1.00%,,2027-04-01,400,393,370,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+AHP Timberwolf Bidco Corp.,First Lien,,5.25%,,SOFR,5.25%,1.00%,,2031-08-06,8125,7969,7963,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Unchained Labs LLC,Delayed Draw,,5.55%,,SOFR,5.55%,1.00%,,2027-08-09,2212,2200,2195,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"AGDATA Midco, LLC",First Lien,Software & Technology,4.75%,,SOFR,475,0.75%,,2030-07-01,2653,,2613,,2615,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"AGDATA Midco, LLC",First Lien,Software & Technology,4.75%,,SOFR,475,0.75%,,2030-07-01,,,( 27	),,( 12	),,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"RMCF V CIV L, LP.",Common Equity,Software & Technology,,,N/A,,,,,,,508,,500,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"AMI Buyer, Inc.",First Lien,Software & Technology,5.25%,,SOFR,525,0.75%,,2031-10-17,13095,,12899,,12903,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"AMI Buyer, Inc.",First Lien,Software & Technology,5.25%,,SOFR,525,0.75%,,2031-10-17,463,,435,,435,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Anaplan, Inc.",First Lien,Software & Technology,5.25%,,SOFR,525,0.75%,,2029-06-21,11301,,11273,,11301,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Anaplan, Inc.",First Lien,Software & Technology,5.75%,,SOFR,575,0.75%,,2028-06-21,,,( 2	),,-,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Avalara, Inc.",First Lien,Software & Technology,6.25%,,SOFR,625,0.75%,,2028-10-19,9091,,9091,,9153,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Avalara, Inc.",First Lien,Software & Technology,6.25%,,SOFR,625,0.75%,,2028-10-19,,,—,,—,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Sigma Buyer LLC,First Lien,Software & Technology,5.25%,,SOFR,525,0.75%,,2028-01-04,13584,,13414,,13339,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Sigma Buyer LLC,First Lien,Software & Technology,5.25%,,SOFR,525,0.75%,,2028-01-04,7273,,7182,,7135,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Sigma Buyer LLC,First Lien,Software & Technology,5.25%,,SOFR,525,0.75%,,2028-01-04,700,,681,,672,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+IQN Holding Corp.,First Lien,Software & Technology,5.25%,,SOFR,525,0.75%,,2028-05-02,126,,126,,126,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Biamp,Revolver,,5.00%,,SOFR,500,1.00%,,2030-04-30,,2,3,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+BusPatrol Holdco,Delayed Draw,,6.00%,,SOFR,600,1.00%,,2029-08-02,,,33,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+BusPatrol Holdco,Revolver,,4.00%,,SOFR,400,1.00%,,2029-08-02,300,286,285,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Telesoft Holdings LLC,Revolver,,5.85%,,SOFR,585,1.00%,,2026-12-16,568,557,553,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Carbon6 Technologies Inc.,Preferred Equity,,,,N/A,,,,,,250,250,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+ChyronHego Corp.,Preferred Equity,,,,N/A,,,,,,6000,19456,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+ChyronHego US Holding Corp.,First Lien,,3.50%,,SOFR,350,1.75%,,2026-06-30,106406,106196,106406,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+ChyronHego US Holding Corp.,Revolver,,6.00%,,SOFR,600,1.75%,,2026-06-30,15500,15483,15500,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Momentx Corp.,First Lien,,5.85%,,SOFR,585,1.00%,,2027-06-24,14892,14754,14594,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Momentx Corp.,First Lien,,6.35%,,SOFR,635,1.00%,,2027-06-24,1343,1325,1330,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Momentx Corp.,Revolver,,5.85%,,SOFR,585,1.00%,,2027-06-24,1257,1245,1232,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Dcert Buyer Inc.,First Lien,,4.00%,,SOFR,400,0.00%,,2026-10-16,8591,8259,8275,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Dcert Buyer Inc.,Second Lien,,7.00%,,SOFR,700,0.00%,,2029-02-19,7860,7057,6406,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Digital.ai Software Holdings Inc.,Revolver,Software & Technology,,,SOFR,600,1.00%,,2028-08-10,242,206,194,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Electronics for Imaging Inc.,First Lien,Software & Technology,,,SOFR,500,0.00%,,2028-07-23,2861,2451,2335,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Genius Bidco LLC,Common Equity,,,,N/A,,,,,,77,68,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+G Treasury SS LLC,First Lien,,,,SOFR,550,1.00%,,2029-06-29,250,246,246,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+G Treasury SS LLC,Delayed Draw,,,,SOFR,550,1.00%,,2029-06-29,591,576,582,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Inovalon Holdings Inc.,Delayed Draw,,,,SOFR,350,0.75%,,2028-11-24,509,504,484,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Inovalon Holdings Inc.,Second Lien,,,,SOFR,1050,0.75%,,2033-11-25,153,146,132,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Destiny Solutions U.S. Inc.,First Lien,,,,SOFR,560,1.00%,,2026-06-08,13100,12996,13100,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Destiny Solutions U.S. Inc.,Delayed Draw,,,,SOFR,560,1.00%,,2026-06-08,12026,11913,12026,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+RMCF IV CIV XXXV LP.,Common Equity,,,,N/A,,,,,,1000,1868,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Magnate Holding Corp.,First Lien,,,,SOFR,615,0.50%,,2025-02-28,18748,18755,18337,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Colonnade Parent Inc.,First Lien,,7.10%,,Fixed,,,,2024-04-27,11200,11176,8848,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Colonnade Parent Inc.,Delayed Draw,,7.10%,,Fixed,,,,2024-04-27,1926,1909,1522,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Colonnade Parent Inc.,Revolver,,7.10%,,Fixed,,,,2024-04-27,500,500,395,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+New Era Technology Inc.,First Lien,Software & Technology,,,SOFR,640,1.00%,,2026-10-31,13773,13686,13463,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+New Era Technology Inc.,Delayed Draw,Software & Technology,,,SOFR,640,1.00%,,2026-10-31,17811,17663,17410,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+New Era Technology Inc.,Revolver,Software & Technology,,,SOFR,640,1.00%,,2026-10-30,1732,1720,1693,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Crewline Buyer Inc.,First Lien,,,,SOFR,675,1.00%,,2030-11-08,5623,5573,5623,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Omada Health Inc.,First Lien,,,,SOFR,710,2.50%,,2028-06-01,1450,1439,1450,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Omada Health Inc.,Revolver,,,,SOFR,410,2.50%,,2028-06-01,5,4,5,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Pro-Vigil Holding Company, LLC",First Lien,,,,SOFR,860,1.00 %,,2026-01-11,7700,7643,7570,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Pro-Vigil Holding Company, LLC",Delayed Draw,,,,SOFR,860,1.00 %,,2026-01-11,18791,18601,18419,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"TeamLINX Buyer, LLC",First Lien,,,,SOFR,500,1.00 %,,2030-12-18,8571,8444,8443,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Uplight, Inc.",Revolver,,,,SOFR,360,4.00 %,,2029-06-01,120,120,110,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Sysnet North America, Inc.",First Lien,,5.00%,,SOFR,500,0.75%,,2030-08-06,2947,2870,2864,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Wolfspeed, Inc.",First Lien,,10.88%,,Fixed,,,,2030-06-23,11045,10716,11045,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Zinnia Corporate Holdings, LLC",First Lien,,8.00%,,SOFR,800,2.00%,,2029-09-23,17647,17308,17294,,,,,,,dspy_extracted|type_hint_corporate_from_name,MFIC,2026-02-26,MFIC,2026-02-26
+CircusTrix Holdings LLC,First Lien,,6.50%,,SOFR,650,1.00%,,2028-07-18,2388,2339,2388,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Munson Buffalo Restaurant Group LLC,Delayed Draw,Food & Beverage,,,SOFR,625,1.00 %,,2029-05-31,5510,5440,5446,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"YTC Enterprises, LLC",First Lien,,,,SOFR,636,1.00 %,,2026-08-16,8900,8858,8589,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Tasty Chick'n LLC,Delayed Draw,,,,SOFR,600,1.00 %,,2029-05-16,549,540,442,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Norvax, LLC",Revolver,,,,SOFR,660,1.00 %,,2025-06-30,539,536,539,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"High Street Buyer, Inc.",Delayed Draw,,,,SOFR,525,0.75 %,,2028-04-14,19180,18990,19084,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Turbo Buyer, Inc.",First Lien,,,,SOFR,625,1.00 %,,2025-12-02,16681,16591,16347,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Turbo Buyer, Inc.",Delayed Draw,,,,SOFR,625,1.00 %,,2025-12-02,2010,1997,1970,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Turbo Buyer, Inc.",Revolver,,,,SOFR,625,1.00 %,,2025-12-02,462,458,443,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"AVAD, LLC",First Lien,Industrials,,,SOFR,411,1.00 %,,2026-09-10,9633,14612,9633,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"AVAD, LLC",Revolver,Industrials,,,SOFR,411,1.00 %,,2026-09-10,,15677,15677,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"AVAD, LLC",Preferred Equity,Industrials,,,N/A,,,,,,1713,3405,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"AVAD, LLC",Common Equity,Industrials,,,N/A,,,,,,,375,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"LSF12 Donnelly Bidco, LLC",First Lien,Industrials,,,SOFR,650,1.00 %,,2029-10-02,14813,14499,14561,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+IW Buyer LLC,First Lien,Industrials,,,SOFR,510,1.00 %,,2029-06-28,2521,2472,2496,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+IW Buyer LLC,Revolver,Industrials,,,SOFR,510,1.00 %,,2029-06-28,,( 9	),( 4	),,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Kauffman Holdco, LLC",Common Equity,Industrials,,,N/A,,,,,,250,43,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Kauffman Intermediate, LLC",First Lien,Industrials,,,SOFR,660,1.00 %,,2025-05-08,16758,16723,15903,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+"Kauffman Intermediate, LLC",Revolver,Industrials,,,SOFR,660,1.00 %,,2025-05-08,1246,1240,1182,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+US MetalCo Holdings LLC,First Lien,Industrials,,,SOFR,550,1.00 %,,2029-10-31,13611,13347,13407,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+US MetalCo Holdings LLC,Revolver,Industrials,,,SOFR,550,1.00 %,,2029-10-31,,( 26	),( 20	),,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+WildBrain Ltd.,Revolver,Media & Entertainment,,,SOFR,600,0.50 %,,2029-07-23,217,190,192,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+EG Group,First Lien,Consumer & Retail,7.50%,,SOFR,7.50%,0.50%,,2028-11-30,6267,6436,6564,,6436,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+PetSmart,Unsecured Debt,Consumer & Retail,7.75%,,Fixed,,,,2029-02-15,2000,1958,1937,,1958,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+PetSmart,First Lien,Consumer & Retail,4.50%,,SOFR,3.75%,0.75%,,2028-02-11,8961,8936,8942,,8936,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Cablevision Systems,First Lien,Telecommunications,4.50%,,SOFR,4.50%,0.00%,,2028-01-18,984,955,967,,955,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Cablevision Systems,First Lien,Telecommunications,2.35%,,SOFR,2.35%,0.00%,,2027-07-13,77,60,69,,60,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Cablevision Systems,Unsecured Debt,Telecommunications,4.13%,,Fixed,,,,2030-12-01,2000,1408,1448,,1408,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+CommScope,First Lien,Telecommunications,7.50%,,SOFR,5.50%,2.00%,,2029-12-17,7046,6511,7148,,6511,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+CommScope,First Lien,Telecommunications,9.50%,,Fixed,,,,2031-12-15,54,53,56,,53,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Anuvu Holdings 2 LLC,First Lien,Telecommunications,4.00%,,Fixed,,,,2027-09-27,4974,3971,4277,,3971,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Anuvu Holdings 2 LLC,First Lien,Telecommunications,8.25%,,Fixed,,,,2026-03-23,4770,2221,1431,,2221,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+MCA,First Lien,Telecommunications,6.25%,,SOFR,5.25%,1.00%,,2029-10-16,2475,2422,2469,,2422,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+MCA,First Lien,Telecommunications,6.25%,,SOFR,5.25%,1.00%,,2029-10-16,1648,1561,1626,,1561,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+MCA,First Lien,Telecommunications,6.25%,,SOFR,5.25%,1.00%,,2029-10-16,340,312,336,,312,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Mitel Networks,First Lien,Telecommunications,6.44%,,Fixed,,,,2027-10-18,1021,899,745,,899,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Mitel Networks,Second Lien,Telecommunications,6.70%,,Fixed,,,,2027-10-18,6092,2912,914,,2912,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Securus Technologies Holdings Inc.,Second Lien,Telecommunications,1.26%,,Fixed,,,,2025-11-01,7998,7703,4719,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Beacon Mobility Corp.,First Lien,Transportation & Logistics,,,SOFR,6.35%,1.00%,,2025-12-31,12767,12741,12684,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Beacon Mobility Corp.,First Lien,Transportation & Logistics,,,SOFR,6.35%,1.00%,,2025-12-31,23833,23854,23678,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Beacon Mobility Corp.,First Lien,Transportation & Logistics,,,SOFR,6.35%,0.00%,,2025-12-31,2146,2126,2120,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Channelside AcquisitionCo Inc.,First Lien,Transportation & Logistics,,,SOFR,4.75%,0.75%,,2026-07-01,,1,1,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Camin Cargo Control Holdings Inc.,First Lien,Transportation & Logistics,,,SOFR,5.50%,1.00%,,2029-12-07,,26,35,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Camin Cargo Control Holdings Inc.,First Lien,Transportation & Logistics,,,SOFR,5.50%,1.00%,,2029-12-07,553,534,542,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Heniff Holdco LLC,First Lien,Transportation & Logistics,,,SOFR,5.85%,1.00%,,2026-12-03,2584,2576,2564,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Ironhorse Purchaser LLC,First Lien,Transportation & Logistics,,,SOFR,5.25%,1.00%,,2027-09-30,3037,2991,2976,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Ironhorse Purchaser LLC,First Lien,Transportation & Logistics,,,SOFR,5.25%,1.00%,,2027-09-30,,21,29,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Ironhorse Purchaser LLC,First Lien,Transportation & Logistics,,,SOFR,5.25%,1.00%,,2027-09-30,157,150,147,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+MGP Holdings III Corp.,First Lien,,,,SOFR,525,1.00 %,,2030-03-01,7846,7706,7729,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+MGP Holdings III Corp.,Delayed Draw,,,,SOFR,525,1.00 %,,2030-03-01,963,943,944,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+MGP Holdings III Corp.,Revolver,,,,SOFR,525,1.00 %,,2030-03-01,183,170,171,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Ambrosia Buyer Corp.,Common Equity,,,,N/A,,,,,,11961,,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Ambrosia Buyer Corp.,Unsecured Debt,,,11 %,Fixed,,,,2031-12-15,363,2672,96,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Ambrosia Buyer Corp.,Warrants,,,,N/A,,,,,,576,,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Banner Buyer LLC,First Lien,,,0.50 %,SOFR,590,1.00 %,,2025-10-31,11968,11929,11692,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Banner Buyer LLC,Delayed Draw,,,0.50 %,SOFR,590,1.00 %,,2025-10-31,2921,2910,2854,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Banner Buyer LLC,Revolver,,,0.50 %,SOFR,590,1.00 %,,2025-10-31,388,381,343,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Banner Parent Holdings Inc.,Common Equity,,,,N/A,,,,,,613,140,,,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+WC ORS Buyer Inc.,First Lien,,5.00%,,SOFR,500,0.75%,,2031-08-07,,,72,,34,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+WC ORS Buyer Inc.,First Lien,,5.00%,,SOFR,500,0.75%,,2031-08-07,1255,1187,1183,,1187,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+WC ORS Holdings LP.,Common Equity,,,,N/A,,,,,,100,103,,100,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Graffiti Buyer Inc.,First Lien,,5.60%,,SOFR,560,1.00%,,2027-08-10,10858,10732,10696,,10732,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Graffiti Buyer Inc.,First Lien,,5.60%,,SOFR,560,1.00%,,2027-08-10,3663,3619,3553,,3619,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Graffiti Buyer Inc.,First Lien,,5.60%,,SOFR,560,1.00%,,2027-08-10,828,815,808,,815,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Graffiti Parent LP,Common Equity,,,,N/A,,,,,,244,296,,244,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+BSP-TS LP,Common Equity,,,,N/A,,,,,,185,97,,185,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Thomas Scientific LLC,First Lien,,3.35%,4.50%,SOFR,335,1.00%,,2027-12-14,2239,2209,2176,,2209,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Cool Acquisition Holdings LP,Common Equity,,,,N/A,,,,,,138,138,,138,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Cool Buyer Inc.,First Lien,,4.75%,,SOFR,475,1.00%,,2030-10-31,13333,13138,13133,,13138,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Cool Buyer Inc.,First Lien,,4.75%,,SOFR,475,1.00%,,2030-10-31,,,23,,22,,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+Senior Secured Facility,Other Debt,,,,,,,2025-10-01,2030-10-01,941048,,941048,,,1610000,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+MFIC Bethesda CLO I LLC,Other Debt,,,,,,,2025-10-23,2037-10-23,456000,,456000,,,456000,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+MFIC Bethesda CLO 2 LLC,Other Debt,,,,,,,2025-02-24,2037-01-23,399000,,396513,,,399000,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+2026 Notes,Other Debt,,,,,,,2021-07-16,2026-07-16,125000,,123451,,,125000,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
+2028 Notes,Other Debt,,,,,,,2023-12-13,2028-12-15,80000,,80416,,,80000,,,,dspy_extracted,MFIC,2026-02-26,MFIC,2026-02-26
