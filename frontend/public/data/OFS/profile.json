@@ -1,38 +1,38 @@
 {
   "ticker": "OFS",
-  "name": "OFS Capital Corporation",
+  "name": "OFS",
   "price": {
-    "regularMarketPrice": 3.8,
-    "regularMarketChange": -0.0599999,
-    "regularMarketChangePercent": -1.5544,
+    "regularMarketPrice": null,
+    "regularMarketChange": null,
+    "regularMarketChangePercent": null,
     "currency": "USD",
-    "regularMarketPreviousClose": 3.86,
-    "regularMarketOpen": 3.83,
-    "regularMarketDayHigh": 3.8596,
-    "regularMarketDayLow": 3.7287,
-    "regularMarketVolume": 53883,
+    "regularMarketPreviousClose": 3.8,
+    "regularMarketOpen": 3.94,
+    "regularMarketDayHigh": 4.11,
+    "regularMarketDayLow": 3.88,
+    "regularMarketVolume": 84050,
     "fiftyTwoWeekHigh": 9.31,
     "fiftyTwoWeekLow": 2.72,
-    "averageVolume": 107223,
-    "averageVolume10days": 87850,
-    "bid": 3.78,
-    "ask": 3.97,
-    "bidSize": 1,
-    "askSize": 1
+    "averageVolume": 107558,
+    "averageVolume10days": 88930,
+    "bid": 3.9,
+    "ask": 4.09,
+    "bidSize": 100,
+    "askSize": 100
   },
   "summaryDetail": {
-    "marketCap": 50912700,
-    "enterpriseValue": 265191696,
+    "marketCap": 54664160,
+    "enterpriseValue": 268943168,
     "trailingPE": null,
-    "forwardPE": 3.8,
-    "dividendYield": 17.85,
+    "forwardPE": 4.08,
+    "dividendYield": 0.1667,
     "dividendRate": 0.68,
     "payoutRatio": 5.6667,
     "beta": 0.914,
     "bookValue": 9.194,
-    "priceToBook": 0.413313,
-    "priceToSalesTrailing12Months": 1.251203,
-    "enterpriseToRevenue": 6.517,
+    "priceToBook": 0.44376767,
+    "priceToSalesTrailing12Months": 1.3433968,
+    "enterpriseToRevenue": 6.609,
     "profitMargins": -0.81328005,
     "grossMargins": 1.0,
     "operatingMargins": 0.7433,
@@ -52,8 +52,8 @@
     "zip": "60606",
     "phone": "847-734-2000",
     "fax": "847-734-7910",
-    "longName": "OFS Capital Corporation",
-    "shortName": "OFS Capital Corporation",
+    "longName": null,
+    "shortName": null,
     "exchange": "NMS",
     "quoteType": "EQUITY"
   },
@@ -73,7 +73,7 @@
     "revenueGrowth": -0.196,
     "earningsQuarterlyGrowth": null,
     "exDividendDate": 1773964800,
-    "dividendDate": 1774915200
+    "dividendDate": null
   },
   "keyStatistics": {
     "sharesOutstanding": 13398078,
@@ -83,13 +83,13 @@
     "shortPercentOfFloat": 0.0223,
     "sharesPercentSharesOut": 0.0172,
     "heldPercentInsiders": 0.22580999,
-    "heldPercentInstitutions": 0.072280005,
+    "heldPercentInstitutions": 0.07324,
     "impliedSharesOutstanding": 13398079
   },
   "historical": {
     "fiftyTwoWeekHigh": 9.31,
     "fiftyTwoWeekLow": 2.72,
-    "currentPrice": 3.8
+    "currentPrice": 4.08
   },
-  "generated_at": "2026-04-14T08:03:50.778621+00:00"
+  "generated_at": "2026-04-15T08:04:36.520635+00:00"
 }

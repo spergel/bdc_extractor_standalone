@@ -1,38 +1,38 @@
 {
   "ticker": "MSDL",
-  "name": "Morgan Stanley Direct Lending Fund",
+  "name": "MSDL",
   "price": {
-    "regularMarketPrice": 14.62,
-    "regularMarketChange": 0.27,
-    "regularMarketChangePercent": 1.88153,
+    "regularMarketPrice": null,
+    "regularMarketChange": null,
+    "regularMarketChangePercent": null,
     "currency": "USD",
-    "regularMarketPreviousClose": 14.35,
-    "regularMarketOpen": 14.26,
-    "regularMarketDayHigh": 14.62,
-    "regularMarketDayLow": 14.26,
-    "regularMarketVolume": 542966,
+    "regularMarketPreviousClose": 14.62,
+    "regularMarketOpen": 14.68,
+    "regularMarketDayHigh": 15.14,
+    "regularMarketDayLow": 14.68,
+    "regularMarketVolume": 1038531,
     "fiftyTwoWeekHigh": 20.0,
     "fiftyTwoWeekLow": 13.66,
-    "averageVolume": 812275,
-    "averageVolume10days": 672010,
+    "averageVolume": 821411,
+    "averageVolume10days": 716320,
     "bid": 0.0,
     "ask": 0.0,
-    "bidSize": 200,
-    "askSize": 500
+    "bidSize": 70000,
+    "askSize": 70000
   },
   "summaryDetail": {
-    "marketCap": 1269179904,
-    "enterpriseValue": 3260921856,
-    "trailingPE": 10.442857,
-    "forwardPE": 8.108618,
-    "dividendYield": 12.31,
+    "marketCap": 1305640576,
+    "enterpriseValue": 3296885248,
+    "trailingPE": 10.444444,
+    "forwardPE": 8.34156,
+    "dividendYield": 0.1197,
     "dividendRate": 1.8,
     "payoutRatio": 1.4286,
     "beta": 0.416,
     "bookValue": 20.262,
-    "priceToBook": 0.7215477,
-    "priceToSalesTrailing12Months": 3.1946173,
-    "enterpriseToRevenue": 8.208,
+    "priceToBook": 0.7422762,
+    "priceToSalesTrailing12Months": 3.2863913,
+    "enterpriseToRevenue": 8.298,
     "profitMargins": 0.30732,
     "grossMargins": 1.0,
     "operatingMargins": 0.80065,
@@ -52,7 +52,7 @@
     "zip": "10036",
     "phone": "212 761 7160",
     "fax": "212 507 8474",
-    "longName": "Morgan Stanley Direct Lending Fund",
+    "longName": null,
     "shortName": null,
     "exchange": "NYQ",
     "quoteType": "EQUITY"
@@ -89,7 +89,7 @@
   "historical": {
     "fiftyTwoWeekHigh": 20.0,
     "fiftyTwoWeekLow": 13.66,
-    "currentPrice": 14.62
+    "currentPrice": 15.04
   },
-  "generated_at": "2026-04-14T08:03:49.690388+00:00"
+  "generated_at": "2026-04-15T08:04:35.343501+00:00"
 }

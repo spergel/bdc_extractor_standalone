@@ -1,38 +1,38 @@
 {
   "ticker": "CION",
-  "name": "CION Investment Corporation",
+  "name": "CION",
   "price": {
-    "regularMarketPrice": 7.08,
-    "regularMarketChange": 0.16,
-    "regularMarketChangePercent": 2.31214,
+    "regularMarketPrice": null,
+    "regularMarketChange": null,
+    "regularMarketChangePercent": null,
     "currency": "USD",
-    "regularMarketPreviousClose": 6.92,
-    "regularMarketOpen": 6.89,
-    "regularMarketDayHigh": 7.115,
-    "regularMarketDayLow": 6.84,
-    "regularMarketVolume": 546702,
+    "regularMarketPreviousClose": 7.08,
+    "regularMarketOpen": 7.12,
+    "regularMarketDayHigh": 7.33,
+    "regularMarketDayLow": 7.12,
+    "regularMarketVolume": 490887,
     "fiftyTwoWeekHigh": 10.93,
     "fiftyTwoWeekLow": 6.5,
-    "averageVolume": 611165,
-    "averageVolume10days": 607310,
+    "averageVolume": 614410,
+    "averageVolume10days": 594380,
     "bid": 0.0,
     "ask": 0.0,
-    "bidSize": 1900,
-    "askSize": 1200
+    "bidSize": 130000,
+    "askSize": 250000
   },
   "summaryDetail": {
-    "marketCap": 365830304,
-    "enterpriseValue": 1474936448,
+    "marketCap": 377197920,
+    "enterpriseValue": 1486045568,
     "trailingPE": null,
-    "forwardPE": 6.9411764,
-    "dividendYield": 16.95,
+    "forwardPE": 7.156863,
+    "dividendYield": 0.16440001,
     "dividendRate": 1.2,
     "payoutRatio": 2.9388,
     "beta": 1.106,
     "bookValue": 13.762,
-    "priceToBook": 0.5144601,
-    "priceToSalesTrailing12Months": 1.5190964,
-    "enterpriseToRevenue": 6.125,
+    "priceToBook": 0.5304462,
+    "priceToSalesTrailing12Months": 1.5663,
+    "enterpriseToRevenue": 6.171,
     "profitMargins": -0.08567,
     "grossMargins": 1.0,
     "operatingMargins": 0.75387,
@@ -52,8 +52,8 @@
     "zip": "10017",
     "phone": "212-418-4700",
     "fax": "212-418-4739",
-    "longName": "CION Investment Corporation",
-    "shortName": "CION Investment Corporation",
+    "longName": null,
+    "shortName": null,
     "exchange": "NYQ",
     "quoteType": "EQUITY"
   },
@@ -73,7 +73,7 @@
     "revenueGrowth": -0.071,
     "earningsQuarterlyGrowth": null,
     "exDividendDate": 1778803200,
-    "dividendDate": 1782432000
+    "dividendDate": null
   },
   "keyStatistics": {
     "sharesOutstanding": 50496524,
@@ -83,13 +83,13 @@
     "shortPercentOfFloat": 0.0126,
     "sharesPercentSharesOut": 0.0126,
     "heldPercentInsiders": 0.00624,
-    "heldPercentInstitutions": 0.39935002,
+    "heldPercentInstitutions": 0.39929,
     "impliedSharesOutstanding": 51670947
   },
   "historical": {
     "fiftyTwoWeekHigh": 10.93,
     "fiftyTwoWeekLow": 6.5,
-    "currentPrice": 7.08
+    "currentPrice": 7.3
   },
-  "generated_at": "2026-04-14T08:03:47.619154+00:00"
+  "generated_at": "2026-04-15T08:04:32.466279+00:00"
 }
