@@ -1,12 +1,12 @@
-company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
-Dreamfields Brands,First Lien,,,,SOFR,8.75%,7.5%,2023-05-03,2026-05-03,4320,4217,4217,4.68%,4217,,,,,,LIEN,2023-08-11
-MariMed Inc.,First Lien,,,6.25%,,,,2023-01-24,2026-01-24,4437,4185,4216,4.68%,4185,,,,,,LIEN,2023-08-11
-Verano Holdings Corp.,First Lien,,,,SOFR,6.5%,6.25%,2022-10-27,2026-10-30,21000,20455,20580,22.86%,20455,,,,,,LIEN,2023-08-11
-STIIIZY Inc.,First Lien,,,4.0%,SOFR,8.5%,4%,2022-05-26,2026-05-26,21035,20588,20718,23.01%,20588,,,,,,LIEN,2023-08-11
-PharmaCann,First Lien,Distribution & Wholesale,12%,,,,,2022-06-30,2025-06-30,4250,4069,3910,4.34%,4069,,,,,,LIEN,2023-08-11
-Curaleaf Holdings,First Lien,Distribution & Wholesale,,,,,,2022-10-11,2026-12-15,4500,3919,4028,4.47%,3919,,,,,,LIEN,2023-08-11
-Curaleaf,Other,,8%,,,,,,,,,,,,,,,,,LIEN,2023-08-11
-MariMed Inx. Senior Secured First Lien Term Loan Due 1/24/2026 Variable Interest Rate Prime Spread 5.75% Prime Floor 6.25% Paid-in-Kind 1.40%,First Lien,,,,SOFR,5.75%,6.25%,,,,,,,,,,,,,LIEN,2023-08-11
-Wholesale Trade Debt Securities,First Lien,Financial Services,,,,,,,,59542,57433,57669,64.04%,57433,,,,,,LIEN,2023-08-11
-And Cash Equivalents,Other,,,,,,,,,,89465,89701,99.61%,89465,,,,,,LIEN,2023-08-11
-Non Qualifying Assets,Other,,,,,,,,,,,,26.9%,,,,,,,LIEN,2023-08-11
+company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
+Dreamfields Brands,co_68fa2e856efe,First Lien,,,,SOFR,8.75%,7.5%,2023-05-03,2026-05-03,4320,4217,4217,4.68%,4217,,,,,,LIEN,2023-08-11
+MariMed Inc.,co_b54e5aa75a72,First Lien,,,6.25%,,,,2023-01-24,2026-01-24,4437,4185,4216,4.68%,4185,,,,,,LIEN,2023-08-11
+Verano Holdings Corp.,co_a08acd23dc9c,First Lien,,,,SOFR,6.5%,6.25%,2022-10-27,2026-10-30,21000,20455,20580,22.86%,20455,,,,,,LIEN,2023-08-11
+STIIIZY Inc.,co_d2eb02c14795,First Lien,,,4.0%,SOFR,8.5%,4%,2022-05-26,2026-05-26,21035,20588,20718,23.01%,20588,,,,,,LIEN,2023-08-11
+PharmaCann,co_c9b7bc2127d2,First Lien,Distribution & Wholesale,12%,,,,,2022-06-30,2025-06-30,4250,4069,3910,4.34%,4069,,,,,,LIEN,2023-08-11
+Curaleaf Holdings,co_f4b044fbd006,First Lien,Distribution & Wholesale,,,,,,2022-10-11,2026-12-15,4500,3919,4028,4.47%,3919,,,,,,LIEN,2023-08-11
+Curaleaf,co_e5a4e9705e8c,Other,,8%,,,,,,,,,,,,,,,,,LIEN,2023-08-11
+MariMed Inx. Senior Secured First Lien Term Loan Due 1/24/2026 Variable Interest Rate Prime Spread 5.75% Prime Floor 6.25% Paid-in-Kind 1.40%,co_4d1d32b4bb62,First Lien,,,,SOFR,5.75%,6.25%,,,,,,,,,,,,,LIEN,2023-08-11
+Wholesale Trade Debt Securities,co_770e45e02d06,First Lien,Financial Services,,,,,,,,59542,57433,57669,64.04%,57433,,,,,,LIEN,2023-08-11
+And Cash Equivalents,co_eef794b54678,Other,,,,,,,,,,89465,89701,99.61%,89465,,,,,,LIEN,2023-08-11
+Non Qualifying Assets,co_8a19318287e9,Other,,,,,,,,,,,,26.9%,,,,,,,LIEN,2023-08-11

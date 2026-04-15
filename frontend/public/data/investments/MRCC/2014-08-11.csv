@@ -1,30 +1,30 @@
-company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,data_quality_flags,ticker,filing_date
-Alliance Time Holdings LLC,First Lien,Consumer & Retail,10.00%,3.00%,LIBOR,11.50%,,2018-12-24,9656,9436,9510,7.1,9436,,,,MRCC,2014-08-11
-Alliance Time Holdings LLC,First Lien,Consumer & Retail,10.00%,3.00%,LIBOR,11.50%,,2018-12-24,10000,9751,9750,7.1,9751,,,,MRCC,2014-08-11
-Alora Pharmaceuticals LLC,First Lien,Healthcare,10.00%,,LIBOR,9.00%,,2018-09-13,11661,11431,11719,8.8,11431,,,,MRCC,2014-08-11
-Alora Pharmaceuticals LLC,First Lien,Healthcare,10.00%,,LIBOR,9.00%,,2018-09-13,11964,11707,11874,8.6,11707,,,,MRCC,2014-08-11
-Alora Pharmaceuticals LLC,Revolver,Healthcare,10.00%,,LIBOR,9.00%,,2018-09-13,1336,,,0.0,,1336,1336,,MRCC,2014-08-11
-Alora Pharmaceuticals LLC,Revolver,Healthcare,10.00%,,LIBOR,9.00%,,2018-09-13,1336,,,,0.0,,1336,,MRCC,2014-08-11
-American Dental Partners Inc.,First Lien,Healthcare,6.00%,,LIBOR,5.00%,,2018-02-09,6264,6170,6170,4.6,6170,,,,MRCC,2014-08-11
-American Dental Partners Inc.,First Lien,Healthcare,6.00%,,LIBOR,5.00%,,2018-02-09,2910,2910,2821,2.0,2910,,,,MRCC,2014-08-11
-BCC Software LLC,First Lien,Software & Technology,9.00%,,LIBOR,8.00%,,2019-06-20,3000,2955,2955,2.2,2955,,,,MRCC,2014-08-11
-BCC Software LLC,Revolver,Software & Technology,9.00%,,LIBOR,8.00%,,2019-06-20,469,,,0.0,,469,469,,MRCC,2014-08-11
-BookIt Operating LLC,First Lien,Food & Beverage,12.00%,2.00%,LIBOR,12.50%,,2019-01-10,5897,5747,5706,4.3,5747,,,,MRCC,2014-08-11
-Cornerstone Detention Products Inc.,First Lien,Industrials,9.50%,1.00%,LIBOR,9.50%,,2019-04-08,4886,4793,4867,3.7,4793,,,,MRCC,2014-08-11
-EB Employee Solutions LLC,First Lien,Business Services,10.00%,,LIBOR,8.50%,,2019-02-28,4000,3901,3900,2.9,3901,,,,MRCC,2014-08-11
-Fineline Technologies Inc.,First Lien,Consumer & Retail,8.00%,,LIBOR,6.75%,,2017-05-06,5350,5348,5350,3.9,5348,,,,MRCC,2014-08-11
-Genex Services Inc.,First Lien,Financial Services,5.25%,,LIBOR,4.25%,,2018-07-26,748,745,756,0.5,745,,,,MRCC,2014-08-11
-Hoffmaster Group Inc.,First Lien,Consumer & Retail,6.50%,,LIBOR,5.25%,,2018-01-03,1000,986,1001,0.7,986,,,,MRCC,2014-08-11
-Keystone Automotive Holdings Inc.,First Lien,Automotive,7.00%,,LIBOR,5.75%,,2019-08-15,4988,4915,4987,3.6,4915,,,,MRCC,2014-08-11
-Landpoint LLC,First Lien,Energy,9.50%,2.25%,LIBOR,11.00%,,2018-12-20,5000,4875,4875,3.5,4875,,,,MRCC,2014-08-11
-Genex Services,First Lien,Financial Services,5.25%,,LIBOR,4.25%,,2018-07-26,748,745,756,0.5,745,,,,MRCC,2014-08-11
-Hoffmaster Group,First Lien,Consumer & Retail,6.50%,,LIBOR,5.25%,,2018-01-03,1000,986,1001,0.7,986,,,,MRCC,2014-08-11
-Keystone Automotive Holdings,First Lien,Automotive,7.00%,,LIBOR,5.75%,,2019-08-15,4988,4915,4987,3.6,4915,,,,MRCC,2014-08-11
-Landpoint,First Lien,Energy,9.50%,2.25%,LIBOR,11.00%,,2018-12-20,5000,4875,4875,3.5,4875,,,,MRCC,2014-08-11
-Alliance HealthCare Services Inc.,First Lien,Healthcare,5.25%,,LIBOR,4.25%,2013-10-24,2019-06-03,2463,2432,2463,1.2,2432,,,,MRCC,2014-08-11
-American Community Homes Inc.,First Lien,Real Estate,10.00%,,LIBOR,8.50%,2013-02-21,2018-02-21,4925,4847,4876,2.4,4847,,,,MRCC,2014-08-11
-Answers Corp.,First Lien,Media & Entertainment,6.00%,,LIBOR,5.00%,2013-12-20,2018-12-20,995,987,995,0.5,987,,,,MRCC,2014-08-11
-AP NMT Acquisition LLC,First Lien,Healthcare,11.00%,,LIBOR,9.50%,2013-09-13,2018-09-13,10000,9831,9800,4.8,9831,,,,MRCC,2014-08-11
-BlueSpire Inc.,First Lien,Media & Entertainment,9.50%,,LIBOR,8.00%,2012-06-29,2017-06-29,4114,4061,4073,2.0,4061,,,,MRCC,2014-08-11
-BlueSpire Inc.,Revolver,Media & Entertainment,9.50%,,LIBOR,8.00%,2012-06-29,2017-06-29,450,443,446,0.2,443,600,150,,MRCC,2014-08-11
-Collaborative Neuroscience Research LLC,First Lien,Healthcare,10.50%,,LIBOR,9.00%,2013-09-25,2018-09-25,4950,4866,4950,2.4,4866,,,,MRCC,2014-08-11
+company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,data_quality_flags,ticker,filing_date
+Alliance Time Holdings LLC,co_69dcf7009bba,First Lien,Consumer & Retail,10.00%,3.00%,LIBOR,11.50%,,2018-12-24,9656,9436,9510,7.1,9436,,,,MRCC,2014-08-11
+Alliance Time Holdings LLC,co_69dcf7009bba,First Lien,Consumer & Retail,10.00%,3.00%,LIBOR,11.50%,,2018-12-24,10000,9751,9750,7.1,9751,,,,MRCC,2014-08-11
+Alora Pharmaceuticals LLC,co_bf40a9b2ddb7,First Lien,Healthcare,10.00%,,LIBOR,9.00%,,2018-09-13,11661,11431,11719,8.8,11431,,,,MRCC,2014-08-11
+Alora Pharmaceuticals LLC,co_bf40a9b2ddb7,First Lien,Healthcare,10.00%,,LIBOR,9.00%,,2018-09-13,11964,11707,11874,8.6,11707,,,,MRCC,2014-08-11
+Alora Pharmaceuticals LLC,co_bf40a9b2ddb7,Revolver,Healthcare,10.00%,,LIBOR,9.00%,,2018-09-13,1336,,,0.0,,1336,1336,,MRCC,2014-08-11
+Alora Pharmaceuticals LLC,co_bf40a9b2ddb7,Revolver,Healthcare,10.00%,,LIBOR,9.00%,,2018-09-13,1336,,,,0.0,,1336,,MRCC,2014-08-11
+American Dental Partners Inc.,co_33cd95be7e91,First Lien,Healthcare,6.00%,,LIBOR,5.00%,,2018-02-09,6264,6170,6170,4.6,6170,,,,MRCC,2014-08-11
+American Dental Partners Inc.,co_33cd95be7e91,First Lien,Healthcare,6.00%,,LIBOR,5.00%,,2018-02-09,2910,2910,2821,2.0,2910,,,,MRCC,2014-08-11
+BCC Software LLC,co_6e4618bcf54f,First Lien,Software & Technology,9.00%,,LIBOR,8.00%,,2019-06-20,3000,2955,2955,2.2,2955,,,,MRCC,2014-08-11
+BCC Software LLC,co_6e4618bcf54f,Revolver,Software & Technology,9.00%,,LIBOR,8.00%,,2019-06-20,469,,,0.0,,469,469,,MRCC,2014-08-11
+BookIt Operating LLC,co_953acf0b868f,First Lien,Food & Beverage,12.00%,2.00%,LIBOR,12.50%,,2019-01-10,5897,5747,5706,4.3,5747,,,,MRCC,2014-08-11
+Cornerstone Detention Products Inc.,co_a9a82b41de29,First Lien,Industrials,9.50%,1.00%,LIBOR,9.50%,,2019-04-08,4886,4793,4867,3.7,4793,,,,MRCC,2014-08-11
+EB Employee Solutions LLC,co_2c5ff6f658be,First Lien,Business Services,10.00%,,LIBOR,8.50%,,2019-02-28,4000,3901,3900,2.9,3901,,,,MRCC,2014-08-11
+Fineline Technologies Inc.,co_0a05caa00f29,First Lien,Consumer & Retail,8.00%,,LIBOR,6.75%,,2017-05-06,5350,5348,5350,3.9,5348,,,,MRCC,2014-08-11
+Genex Services Inc.,co_566afc838f50,First Lien,Financial Services,5.25%,,LIBOR,4.25%,,2018-07-26,748,745,756,0.5,745,,,,MRCC,2014-08-11
+Hoffmaster Group Inc.,co_8da880f25233,First Lien,Consumer & Retail,6.50%,,LIBOR,5.25%,,2018-01-03,1000,986,1001,0.7,986,,,,MRCC,2014-08-11
+Keystone Automotive Holdings Inc.,co_cc2272464531,First Lien,Automotive,7.00%,,LIBOR,5.75%,,2019-08-15,4988,4915,4987,3.6,4915,,,,MRCC,2014-08-11
+Landpoint LLC,co_c7f84a4ceed5,First Lien,Energy,9.50%,2.25%,LIBOR,11.00%,,2018-12-20,5000,4875,4875,3.5,4875,,,,MRCC,2014-08-11
+Genex Services,co_566afc838f50,First Lien,Financial Services,5.25%,,LIBOR,4.25%,,2018-07-26,748,745,756,0.5,745,,,,MRCC,2014-08-11
+Hoffmaster Group,co_8da880f25233,First Lien,Consumer & Retail,6.50%,,LIBOR,5.25%,,2018-01-03,1000,986,1001,0.7,986,,,,MRCC,2014-08-11
+Keystone Automotive Holdings,co_cc2272464531,First Lien,Automotive,7.00%,,LIBOR,5.75%,,2019-08-15,4988,4915,4987,3.6,4915,,,,MRCC,2014-08-11
+Landpoint,co_c7f84a4ceed5,First Lien,Energy,9.50%,2.25%,LIBOR,11.00%,,2018-12-20,5000,4875,4875,3.5,4875,,,,MRCC,2014-08-11
+Alliance HealthCare Services Inc.,co_55f48b093d5e,First Lien,Healthcare,5.25%,,LIBOR,4.25%,2013-10-24,2019-06-03,2463,2432,2463,1.2,2432,,,,MRCC,2014-08-11
+American Community Homes Inc.,co_a52919ef9d10,First Lien,Real Estate,10.00%,,LIBOR,8.50%,2013-02-21,2018-02-21,4925,4847,4876,2.4,4847,,,,MRCC,2014-08-11
+Answers Corp.,co_fe615be76a79,First Lien,Media & Entertainment,6.00%,,LIBOR,5.00%,2013-12-20,2018-12-20,995,987,995,0.5,987,,,,MRCC,2014-08-11
+AP NMT Acquisition LLC,co_0d783394b256,First Lien,Healthcare,11.00%,,LIBOR,9.50%,2013-09-13,2018-09-13,10000,9831,9800,4.8,9831,,,,MRCC,2014-08-11
+BlueSpire Inc.,co_6aa9ba2005d2,First Lien,Media & Entertainment,9.50%,,LIBOR,8.00%,2012-06-29,2017-06-29,4114,4061,4073,2.0,4061,,,,MRCC,2014-08-11
+BlueSpire Inc.,co_6aa9ba2005d2,Revolver,Media & Entertainment,9.50%,,LIBOR,8.00%,2012-06-29,2017-06-29,450,443,446,0.2,443,600,150,,MRCC,2014-08-11
+Collaborative Neuroscience Research LLC,co_8b16cc867a19,First Lien,Healthcare,10.50%,,LIBOR,9.00%,2013-09-25,2018-09-25,4950,4866,4950,2.4,4866,,,,MRCC,2014-08-11
