@@ -1,38 +1,38 @@
 {
   "ticker": "MAIN",
-  "name": "MAIN",
+  "name": "Main Street Capital Corporation",
   "price": {
-    "regularMarketPrice": null,
-    "regularMarketChange": null,
-    "regularMarketChangePercent": null,
+    "regularMarketPrice": 57.83,
+    "regularMarketChange": 1.44,
+    "regularMarketChangePercent": 2.55365,
     "currency": "USD",
-    "regularMarketPreviousClose": 53.96,
-    "regularMarketOpen": 54.5,
-    "regularMarketDayHigh": 56.55,
-    "regularMarketDayLow": 54.5,
-    "regularMarketVolume": 852778,
+    "regularMarketPreviousClose": 56.39,
+    "regularMarketOpen": 56.7,
+    "regularMarketDayHigh": 58.33,
+    "regularMarketDayLow": 56.63,
+    "regularMarketVolume": 783750,
     "fiftyTwoWeekHigh": 67.77,
     "fiftyTwoWeekLow": 50.77,
-    "averageVolume": 744950,
-    "averageVolume10days": 697090,
+    "averageVolume": 751260,
+    "averageVolume10days": 695780,
     "bid": 0.0,
     "ask": 0.0,
-    "bidSize": 30000,
-    "askSize": 20000
+    "bidSize": 100,
+    "askSize": 400
   },
   "summaryDetail": {
-    "marketCap": 5081011200,
-    "enterpriseValue": 7507529216,
-    "trailingPE": 10.21558,
-    "forwardPE": 13.807541,
-    "dividendYield": 0.0553,
+    "marketCap": 5210762752,
+    "enterpriseValue": 7637280256,
+    "trailingPE": 10.47645,
+    "forwardPE": 14.160137,
+    "dividendYield": 5.4,
     "dividendRate": 3.12,
     "payoutRatio": 0.76809996,
     "beta": 0.807,
     "bookValue": 33.327,
-    "priceToBook": 1.6920215,
-    "priceToSalesTrailing12Months": 8.970855,
-    "enterpriseToRevenue": 13.255,
+    "priceToBook": 1.7352297,
+    "priceToSalesTrailing12Months": 9.19994,
+    "enterpriseToRevenue": 13.484,
     "profitMargins": 0.87113,
     "grossMargins": 1.0,
     "operatingMargins": 0.86518997,
@@ -52,8 +52,8 @@
     "zip": "77056",
     "phone": "713 350 6000",
     "fax": "713 350 6042",
-    "longName": null,
-    "shortName": null,
+    "longName": "Main Street Capital Corporation",
+    "shortName": "Main Street Capital Corporation",
     "exchange": "NYQ",
     "quoteType": "EQUITY"
   },
@@ -73,7 +73,7 @@
     "revenueGrowth": 0.036,
     "earningsQuarterlyGrowth": -0.248,
     "exDividendDate": 1778198400,
-    "dividendDate": null
+    "dividendDate": 1781481600
   },
   "keyStatistics": {
     "sharesOutstanding": 90104831,
@@ -83,13 +83,13 @@
     "shortPercentOfFloat": 0.0949,
     "sharesPercentSharesOut": 0.0916,
     "heldPercentInsiders": 0.04024,
-    "heldPercentInstitutions": 0.24263,
+    "heldPercentInstitutions": 0.24576001,
     "impliedSharesOutstanding": 90104831
   },
   "historical": {
     "fiftyTwoWeekHigh": 67.77,
     "fiftyTwoWeekLow": 50.77,
-    "currentPrice": 56.39
+    "currentPrice": 57.83
   },
-  "generated_at": "2026-04-15T08:04:34.592259+00:00"
+  "generated_at": "2026-04-16T08:02:41.234742+00:00"
 }

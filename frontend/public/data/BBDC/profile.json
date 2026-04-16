@@ -1,38 +1,38 @@
 {
   "ticker": "BBDC",
-  "name": "BBDC",
+  "name": "Barings BDC, Inc.",
   "price": {
-    "regularMarketPrice": null,
-    "regularMarketChange": null,
-    "regularMarketChangePercent": null,
+    "regularMarketPrice": 8.82,
+    "regularMarketChange": 0.12,
+    "regularMarketChangePercent": 1.37931,
     "currency": "USD",
-    "regularMarketPreviousClose": 8.5,
-    "regularMarketOpen": 8.55,
-    "regularMarketDayHigh": 8.72,
-    "regularMarketDayLow": 8.54,
-    "regularMarketVolume": 673843,
+    "regularMarketPreviousClose": 8.7,
+    "regularMarketOpen": 8.68,
+    "regularMarketDayHigh": 8.855,
+    "regularMarketDayLow": 8.68,
+    "regularMarketVolume": 820004,
     "fiftyTwoWeekHigh": 9.92,
     "fiftyTwoWeekLow": 7.96,
-    "averageVolume": 761500,
-    "averageVolume10days": 626150,
+    "averageVolume": 768671,
+    "averageVolume10days": 657540,
     "bid": 0.0,
     "ask": 0.0,
-    "bidSize": 280000,
-    "askSize": 130000
+    "bidSize": 2800,
+    "askSize": 600
   },
   "summaryDetail": {
-    "marketCap": 910949824,
-    "enterpriseValue": 2287209984,
-    "trailingPE": 8.969071,
-    "forwardPE": 9.405405,
-    "dividendYield": 0.1195,
+    "marketCap": 923514624,
+    "enterpriseValue": 2299774720,
+    "trailingPE": 8.999999,
+    "forwardPE": 9.535134,
+    "dividendYield": 11.79,
     "dividendRate": 1.04,
     "payoutRatio": 1.0722001,
     "beta": 0.645,
     "bookValue": 11.085,
-    "priceToBook": 0.78484434,
-    "priceToSalesTrailing12Months": 3.2625976,
-    "enterpriseToRevenue": 8.192,
+    "priceToBook": 0.7956698,
+    "priceToSalesTrailing12Months": 3.3075988,
+    "enterpriseToRevenue": 8.237,
     "profitMargins": 0.36504,
     "grossMargins": 1.0,
     "operatingMargins": 0.74234,
@@ -52,8 +52,8 @@
     "zip": "28202",
     "phone": "704 805 7200",
     "fax": null,
-    "longName": null,
-    "shortName": null,
+    "longName": "Barings BDC, Inc.",
+    "shortName": "Barings BDC, Inc.",
     "exchange": "NYQ",
     "quoteType": "EQUITY"
   },
@@ -73,7 +73,7 @@
     "revenueGrowth": -0.038,
     "earningsQuarterlyGrowth": 0.017,
     "exDividendDate": 1772582400,
-    "dividendDate": null
+    "dividendDate": 1773187200
   },
   "keyStatistics": {
     "sharesOutstanding": 104706884,
@@ -83,13 +83,13 @@
     "shortPercentOfFloat": 0.0218,
     "sharesPercentSharesOut": 0.0188,
     "heldPercentInsiders": 0.00612,
-    "heldPercentInstitutions": 0.47946,
+    "heldPercentInstitutions": 0.47823003,
     "impliedSharesOutstanding": 104706884
   },
   "historical": {
     "fiftyTwoWeekHigh": 9.92,
     "fiftyTwoWeekLow": 7.96,
-    "currentPrice": 8.7
+    "currentPrice": 8.82
   },
-  "generated_at": "2026-04-15T08:04:31.762256+00:00"
+  "generated_at": "2026-04-16T08:02:39.682792+00:00"
 }
