@@ -2,30 +2,30 @@
   "ticker": "MRCC",
   "name": "Monroe Capital Corporation",
   "price": {
-    "regularMarketPrice": 5.08,
-    "regularMarketChange": 5.08,
-    "regularMarketChangePercent": 0.0,
+    "regularMarketPrice": null,
+    "regularMarketChange": null,
+    "regularMarketChangePercent": null,
     "currency": "USD",
-    "regularMarketPreviousClose": 0.0,
+    "regularMarketPreviousClose": 5.08,
     "regularMarketOpen": 4.91,
     "regularMarketDayHigh": 5.2,
     "regularMarketDayLow": 4.91,
     "regularMarketVolume": 130901,
     "fiftyTwoWeekHigh": 7.76,
     "fiftyTwoWeekLow": 4.04,
-    "averageVolume": 125423,
+    "averageVolume": 125174,
     "averageVolume10days": 149414,
     "bid": 5.01,
     "ask": 5.15,
-    "bidSize": 1,
-    "askSize": 1
+    "bidSize": 100,
+    "askSize": 100
   },
   "summaryDetail": {
     "marketCap": 110065008,
     "enterpriseValue": 298900000,
     "trailingPE": null,
     "forwardPE": 18.814814,
-    "dividendYield": 15.16,
+    "dividendYield": 0.1516,
     "dividendRate": 0.77,
     "payoutRatio": 11.1111,
     "beta": 0.855,
@@ -73,7 +73,7 @@
     "revenueGrowth": -0.418,
     "earningsQuarterlyGrowth": null,
     "exDividendDate": 1776211200,
-    "dividendDate": 1774915200
+    "dividendDate": null
   },
   "keyStatistics": {
     "sharesOutstanding": 21666340,
@@ -91,5 +91,5 @@
     "fiftyTwoWeekLow": 4.04,
     "currentPrice": 5.08
   },
-  "generated_at": "2026-04-21T08:08:07.285833+00:00"
+  "generated_at": "2026-04-22T08:05:36.615186+00:00"
 }
