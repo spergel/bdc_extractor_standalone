@@ -1,5 +1,5 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
-Dryden 43 Senior Loan Fund,co_ccf41dfa94f3,Other,Financial Services,,,N/A,,,,,,,25000.0,8.0,28800.0,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
+Dryden 43 Senior Loan Fund,co_01cfd6b8c6e9,Other,Financial Services,,,N/A,,,,,,,25000.0,8.0,28800.0,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 "Carlyle Global Market Strategies CLO 2021-6, Ltd.",co_ad8cd4af45eb,Other,Financial Services,,,N/A,,,,,,,16300.0,5.2,22100.0,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 "Access CIG, LLC",co_88ccabd99a44,Other,Business Services,,,N/A,,,,,,,14700.0,4.7,16800.0,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 "Affinion Insurance Solutions, Inc.",co_6509f73713fd,Other,Insurance,,,N/A,,,,,,,14700.0,4.7,14900.0,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
@@ -11,7 +11,7 @@ Dryden 43 Senior Loan Fund,co_ccf41dfa94f3,Other,Financial Services,,,N/A,,,,,,,
 "HealthChannels, Inc.",co_64105b9f1c49,Other,Healthcare,,,N/A,,,,,,,13200.0,4.2,18800.0,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 Carlyle Global Market Strategies CLO 2021-6 Ltd.,co_ad8cd4af45eb,Other,,,,N/A,,,,,9500.0,,,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 Octagon Investment Partners 45 Ltd.,co_d105f9545d12,Other,Financial Services,,,N/A,,,,,3400.0,,,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
-Dryden 43 Senior Loan Fund,co_ccf41dfa94f3,Other,,,,N/A,,,,,1800.0,,,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
+Dryden 43 Senior Loan Fund,co_01cfd6b8c6e9,Other,,,,N/A,,,,,1800.0,,,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 Access CIG LLC,co_88ccabd99a44,First Lien,Business Services,11.82%,,LIBOR,7.75%,0.00%,2018-02-14,2026-02-27,16754.0,16801.208,14743.52,,16754.0,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 Convergint Technologies LLC,co_c69e7a468d2c,First Lien,Business Services,9.07%,,SOFR,6.75%,0.75%,2022-11-15,2028-03-31,2493.75,2394.878,2390.883,,2493.75,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 Convergint Technologies LLC,co_c69e7a468d2c,First Lien,Business Services,11.13%,,LIBOR,6.75%,0.75%,2021-03-18,2029-03-29,11000.0,10957.972,9661.63,,11000.0,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
@@ -38,8 +38,8 @@ Quest Software Inc.,co_2d6784b3c177,First Lien,Software & Technology,8.49%,,SOFR
 Quest Software Inc.,co_2d6784b3c177,Second Lien,Software & Technology,11.74%,,SOFR,7.50%,0.50%,2022-01-20,2030-02-01,,,,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 "RSA Security, LLC",co_5a5a17bbcb6a,Second Lien,Software & Technology,12.11%,,LIBOR,7.75%,0.75%,2021-04-16,2029-04-27,15000.0,,7396.95,,14770.63,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 "Veritas USA, Inc.",co_2fad312a72e7,First Lien,Software & Technology,9.73%,,LIBOR,5.00%,1.00%,2022-06-24,2025-09-01,1996.455,,1402.51,,1728.757,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
-"ConvergeOne Holdings, Inc.",co_8d6788d5f897,First Lien,Telecommunications,9.38%,,LIBOR,5.00%,0.00%,2021-06-04,2026-01-04,5294.644,,3040.82,,5252.605,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
-"ConvergeOne Holdings, Inc.",co_8d6788d5f897,Second Lien,Telecommunications,12.88%,,LIBOR,8.50%,0.00%,2021-06-03,2027-01-04,15000.0,,6375.0,,14469.378,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
+"ConvergeOne Holdings, Inc.",co_2a837e3145dd,First Lien,Telecommunications,9.38%,,LIBOR,5.00%,0.00%,2021-06-04,2026-01-04,5294.644,,3040.82,,5252.605,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
+"ConvergeOne Holdings, Inc.",co_2a837e3145dd,Second Lien,Telecommunications,12.88%,,LIBOR,8.50%,0.00%,2021-06-03,2027-01-04,15000.0,,6375.0,,14469.378,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 Global Tel Link Corp.,co_c5f41a6242d3,Second Lien,Telecommunications,14.24%,,SOFR,10.00%,0.00%,2018-11-20,2026-11-29,17000.0,,12771.25,,16819.191,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 "CLEAResult Consulting, Inc.",co_740e1ab690c3,Second Lien,Utilities,11.63%,,LIBOR,7.25%,0.00%,2018-08-03,2026-08-10,7650.0,,6846.75,,7660.899,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 "Atlas Senior Loan Fund XI, Ltd.",co_a2aad1967a6d,Other,Automotive,0.00%,,N/A,,,2019-04-05,2031-07-26,5725.0,,1030.5,,2886.269,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
@@ -47,10 +47,10 @@ Babson CLO Ltd.,co_8b079da08153,Other,Automotive,7.73%,,N/A,,,2018-07-26,2031-01
 BlueMountain CLO 2014-2 Ltd.,co_f737983895d4,Other,Automotive,0.00%,,N/A,,,2019-04-03,2030-10-20,6374.0,,828.62,,1921.345,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 "Carlyle Global Market Strategies CLO 2013-2, Ltd.",co_cf7610c6a027,Other,Automotive,0.00%,,N/A,,,2013-03-19,2029-01-18,6250.0,,44.512,,583.94,,,,,dspy_extracted|fair_value_suspicious_vs_size,OXSQ,2023-03-23,OXSQ,2023-03-23
 "Carlyle Global Market Strategies CLO 2021-6, Ltd.",co_ad8cd4af45eb,Other,Automotive,13.46%,,N/A,,,2021-06-30,2034-07-17,29600.0,,16280.0,,22063.681,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
-Cedar Funding II CLO Ltd.,co_022dfa0ead9f,Other,,,,N/A,,,2013-10-23,2034-04-20,,,,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
-Cedar Funding VI CLO Ltd.,co_022dfa0ead9f,Other,,,,N/A,,,2017-05-15,2034-04-20,,,,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
+Cedar Funding II CLO Ltd.,co_7ece860b6d0d,Other,,,,N/A,,,2013-10-23,2034-04-20,,,,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
+Cedar Funding VI CLO Ltd.,co_7ece860b6d0d,Other,,,,N/A,,,2017-05-15,2034-04-20,,,,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 CIFC Funding 2014-3 Ltd.,co_e0431908f642,Other,,,,N/A,,,2017-01-24,2031-10-22,,,,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
-Dryden 43 Senior Loan Fund,co_ccf41dfa94f3,Other,,,,N/A,,,2021-06-01,2034-04-20,,,,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
+Dryden 43 Senior Loan Fund,co_01cfd6b8c6e9,Other,,,,N/A,,,2021-06-01,2034-04-20,,,,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 Madison Park Funding XVIII Ltd.,co_f9a07a2e15cd,Other,,,,N/A,,,2020-05-22,2030-10-21,,,,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 Madison Park Funding XIX Ltd.,co_f9a07a2e15cd,Other,,,,N/A,,,2016-05-11,2028-01-22,,,,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 Nassau 2019-I Ltd.,co_82f71e418e63,Other,,,,N/A,,,2019-04-11,2031-04-15,,,,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
@@ -71,8 +71,8 @@ UniTek Global Services Inc.,co_7d06cacfaae2,Common Equity,Software & Technology,
 UniTek Global Services Inc.,co_7d06cacfaae2,Preferred Equity,Software & Technology,,,N/A,,,2019-06-26,,,9002.159,,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 UniTek Global Services Inc.,co_7d06cacfaae2,Preferred Equity,Software & Technology,,,N/A,,,2019-06-26,,,4535.443,500.053,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 UniTek Global Services Inc.,co_7d06cacfaae2,Preferred Equity,Software & Technology,,,N/A,,,2019-06-26,,,2614.26,3849.765,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
-ConvergeOne Holdings Inc.,co_8d6788d5f897,First Lien,Business Services,5.10%,,LIBOR,5.00%,0.00%,2021-06-04,2026-01-04,5349.653,5294.704,5230.142,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
-ConvergeOne Holdings Inc.,co_8d6788d5f897,First Lien,Business Services,8.60%,,LIBOR,8.50%,0.00%,2021-06-03,2027-01-04,15000.0,14370.373,14400.0,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
+ConvergeOne Holdings Inc.,co_2a837e3145dd,First Lien,Business Services,5.10%,,LIBOR,5.00%,0.00%,2021-06-04,2026-01-04,5349.653,5294.704,5230.142,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
+ConvergeOne Holdings Inc.,co_2a837e3145dd,First Lien,Business Services,8.60%,,LIBOR,8.50%,0.00%,2021-06-03,2027-01-04,15000.0,14370.373,14400.0,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 Premiere Global Services Inc.,co_a7130fd1c526,First Lien,Business Services,8.75%,,Prime,5.50%,,2019-10-01,2023-06-08,11821.914,11469.896,,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 Premiere Global Services Inc.,co_a7130fd1c526,First Lien,Business Services,8.75%,,Prime,5.50%,,2019-10-01,2022-03-31,2452.012,2378.999,1324.086,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 RSA Security LLC,co_5a5a17bbcb6a,First Lien,Business Services,8.50%,,LIBOR,7.75%,0.75%,2021-04-16,2029-04-27,15000.0,14747.914,13774.95,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
@@ -90,10 +90,10 @@ Magenta Buyer LLC,co_998c6c433e56,Second Lien,Software & Technology,9.00%,,LIBOR
 Quest Software Inc.,co_2d6784b3c177,First Lien,Software & Technology,4.38%,,LIBOR,4.25%,0.00%,2021-08-17,2025-05-16,4987.147,4987.147,4977.821,,4987.147,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 Quest Software Inc.,co_2d6784b3c177,Second Lien,Software & Technology,8.38%,,LIBOR,8.25%,0.00%,2018-05-17,2026-05-18,13353.672,13244.239,13325.896,,13353.672,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 CLEAResult Consulting Inc.,co_740e1ab690c3,Second Lien,Energy,7.35%,,LIBOR,7.25%,0.00%,2018-08-03,2026-08-10,7650.0,7664.823,7535.25,,7650.0,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
-Cedar Funding II CLO Ltd.,co_022dfa0ead9f,Other,,,,N/A,,,2013-10-23,2034-04-20,18000.0,,10260.0,,11676.216,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
-Cedar Funding VI CLO Ltd.,co_022dfa0ead9f,Other,,,,N/A,,,2017-05-15,2034-04-20,7700.0,,6391.0,,7009.789,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
+Cedar Funding II CLO Ltd.,co_7ece860b6d0d,Other,,,,N/A,,,2013-10-23,2034-04-20,18000.0,,10260.0,,11676.216,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
+Cedar Funding VI CLO Ltd.,co_7ece860b6d0d,Other,,,,N/A,,,2017-05-15,2034-04-20,7700.0,,6391.0,,7009.789,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 CIFC Funding 2014-3 Ltd.,co_e0431908f642,Other,,,,N/A,,,2017-01-24,2031-10-22,10000.0,,3700.0,,4850.026,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
-Dryden 43 Senior Loan Fund,co_ccf41dfa94f3,Other,,,,N/A,,,2021-06-01,2034-04-20,10000.0,,6700.0,,6859.319,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
+Dryden 43 Senior Loan Fund,co_01cfd6b8c6e9,Other,,,,N/A,,,2021-06-01,2034-04-20,10000.0,,6700.0,,6859.319,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 Madison Park Funding XVIII Ltd.,co_f9a07a2e15cd,Other,,,,N/A,,,2020-05-22,2030-10-21,12500.0,,7250.0,,5250.699,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 Madison Park Funding XIX Ltd.,co_f9a07a2e15cd,Other,,,,N/A,,,2016-05-11,2028-01-22,5422.5,,3416.175,,3613.896,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 Nassau 2019-I Ltd.,co_82f71e418e63,Other,,,,N/A,,,2019-04-11,2031-04-15,23500.0,,11515.0,,15446.642,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
@@ -107,7 +107,7 @@ THL Credit Wind River 2012-1 CLO Ltd.,co_b591757e3d10,Other,,,,N/A,,,2015-06-11,
 Venture XVII Ltd.,co_5591dac154c7,Other,,,,N/A,,,2017-01-27,2027-04-15,6200.0,,952.25,,2701.926,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
 Westcott Park CLO Ltd.,co_55a6abbca192,Other,,0.00 %,,,,,2020-09-16,2028-07-20,19000.0,,665.0,,,,,,,dspy_extracted|fair_value_suspicious_vs_size,OXSQ,2023-03-23,OXSQ,2023-03-23
 UniTek Global Services Inc.,co_7d06cacfaae2,Preferred Equity,Software & Technology,,,N/A,,,2019-06-26,,,2614.26,772.491,,,,,,,dspy_extracted,OXSQ,2023-03-23,OXSQ,2023-03-23
-Dryden 43 Senior Loan Fund,co_ccf41dfa94f3,Other,Financial Services,,,N/A,,,,,,,21700.0,8.1,27500.0,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
+Dryden 43 Senior Loan Fund,co_01cfd6b8c6e9,Other,Financial Services,,,N/A,,,,,,,21700.0,8.1,27500.0,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
 Carlyle Global Market Strategies CLO 2021-6 Ltd.,co_ad8cd4af45eb,Other,Financial Services,,,N/A,,,,,,,17600.0,6.6,20700.0,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
 Access CIG LLC,co_88ccabd99a44,Other,Business Services,,,N/A,,,,,,,16700.0,6.2,16800.0,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
 Global Tel Link Corp.,co_c5f41a6242d3,Other,Telecommunications,,,N/A,,,,,,,15000.0,5.6,16900.0,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
@@ -142,8 +142,8 @@ Quest Software Inc.,co_2d6784b3c177,First Lien,Software & Technology,9.78%,,SOFR
 Quest Software Inc.,co_2d6784b3c177,Second Lien,Software & Technology,13.03%,,SOFR,7.50%,0.50%,2022-01-20,2030-02-01,20000.0,19749.583,11814.2,,20000.0,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
 RSA Security LLC,co_5a5a17bbcb6a,Second Lien,Software & Technology,13.22%,,SOFR,7.75%,0.75%,2021-04-16,2029-04-27,15000.0,,9075.0,,14799.154,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
 Veritas USA Inc.,co_2fad312a72e7,First Lien,Software & Technology,10.47%,,SOFR,5.00%,1.00%,2022-06-24,2025-09-01,3955.675,,3293.099,,3512.524,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
-ConvergeOne Holdings Inc.,co_8d6788d5f897,First Lien,Telecommunications,12.50%,,Prime,4.00%,0.00%,2021-06-04,2026-01-04,5239.634,,2901.447,,5212.216,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
-ConvergeOne Holdings Inc.,co_8d6788d5f897,Second Lien,Telecommunications,16.00%,,Prime,7.50%,0.00%,2021-06-03,2027-01-04,15000.0,,3028.2,,14562.375,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
+ConvergeOne Holdings Inc.,co_2a837e3145dd,First Lien,Telecommunications,12.50%,,Prime,4.00%,0.00%,2021-06-04,2026-01-04,5239.634,,2901.447,,5212.216,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
+ConvergeOne Holdings Inc.,co_2a837e3145dd,Second Lien,Telecommunications,16.00%,,Prime,7.50%,0.00%,2021-06-03,2027-01-04,15000.0,,3028.2,,14562.375,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
 Global Tel Link Corp.,co_c5f41a6242d3,Second Lien,Telecommunications,15.53%,,SOFR,10.00%,0.00%,2018-11-20,2026-11-29,17000.0,,14960.0,,16853.072,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
 CLEAResult Consulting Inc.,co_740e1ab690c3,Second Lien,Utilities,12.71%,,SOFR,7.25%,0.00%,2018-08-03,2026-08-10,7650.0,,7248.375,,7656.195,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
 Ares XLIV CLO Ltd.,co_b4a9d8c4aac3,Other,Financial Services,20.16%,,N/A,,,2023-12-15,2034-04-15,5000.0,,1432.607,,1425.478,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
@@ -151,10 +151,10 @@ Atlas Senior Loan Fund XI Ltd.,co_a2aad1967a6d,Other,Financial Services,0.00%,,N
 BlueMountain CLO 2014-2 Ltd.,co_f737983895d4,Other,Financial Services,7.29%,,N/A,,,2019-04-03,2030-10-20,6374.0,,701.14,,1348.136,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
 Carlyle Global Market Strategies CLO 2013-2 Ltd.,co_cf7610c6a027,Other,Financial Services,0.00%,,N/A,,,2013-03-19,2029-01-18,6250.0,,0.625,,544.329,,,,,dspy_extracted|fair_value_suspicious_vs_size,OXSQ,2024-03-19,OXSQ,2024-03-19
 Carlyle Global Market Strategies CLO 2021-6 Ltd.,co_ad8cd4af45eb,Other,Financial Services,14.85%,,N/A,,,2021-06-30,2034-07-17,29600.0,,17612.0,,20677.311,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
-Cedar Funding II CLO Ltd.,co_022dfa0ead9f,Other,,,,,,,2013-10-23,2034-04-20,18000.0,,8473.884,,11807.281,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
-Cedar Funding VI CLO Ltd.,co_022dfa0ead9f,Other,,,,,,,2017-05-15,2034-04-20,7700.0,,4697.0,,6340.254,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
+Cedar Funding II CLO Ltd.,co_7ece860b6d0d,Other,,,,,,,2013-10-23,2034-04-20,18000.0,,8473.884,,11807.281,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
+Cedar Funding VI CLO Ltd.,co_7ece860b6d0d,Other,,,,,,,2017-05-15,2034-04-20,7700.0,,4697.0,,6340.254,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
 CIFC Funding 2014-3 Ltd.,co_e0431908f642,Other,,,,,,,2017-01-24,2031-10-22,10000.0,,1800.0,,3338.457,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
-Dryden 43 Senior Loan Fund,co_ccf41dfa94f3,Other,,,,,,,2021-06-01,2034-04-20,47263.0,,21740.98,,27452.965,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
+Dryden 43 Senior Loan Fund,co_01cfd6b8c6e9,Other,,,,,,,2021-06-01,2034-04-20,47263.0,,21740.98,,27452.965,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
 Gulf Stream Meridian 4 Ltd.,co_4806d39aeb88,Other,,,,,,,2023-11-15,2034-07-15,3125.0,,1902.787,,1909.828,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
 Madison Park Funding XVIII Ltd.,co_f9a07a2e15cd,Other,,,,,,,2020-05-22,2030-10-21,12500.0,,4625.0,,4073.637,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
 Madison Park Funding XIX Ltd.,co_f9a07a2e15cd,Other,,,,,,,2016-05-11,2028-01-22,5422.5,,2711.25,,3071.305,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
@@ -185,10 +185,10 @@ Fortra LLC,co_e62f03e5f67e,First Lien,Software & Technology,8.19%,,SOFR,4.00%,0.
 Fortra LLC,co_e62f03e5f67e,Second Lien,Software & Technology,10.94%,,SOFR,6.75%,0.75%,2021-10-14,2027-11-19,8000.0,8009.007,6260.0,,8000.0,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
 Veritas USA Inc.,co_2fad312a72e7,First Lien,Software & Technology,9.73%,,LIBOR,5.00%,1.00%,2022-06-24,2025-09-01,1996.455,,1402.51,,1728.757,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
 Babson CLO Ltd.,co_8b079da08153,Other,Automotive,7.73%,,N/A,,,2018-07-26,2031-01-21,8512.727,,1106.655,,2329.462,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
-Cedar Funding II CLO Ltd.,co_022dfa0ead9f,Other,,,,N/A,,,2013-10-23,2034-04-20,,,,,,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
-Cedar Funding VI CLO Ltd.,co_022dfa0ead9f,Other,,,,N/A,,,2017-05-15,2034-04-20,,,,,,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
+Cedar Funding II CLO Ltd.,co_7ece860b6d0d,Other,,,,N/A,,,2013-10-23,2034-04-20,,,,,,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
+Cedar Funding VI CLO Ltd.,co_7ece860b6d0d,Other,,,,N/A,,,2017-05-15,2034-04-20,,,,,,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
 CIFC Funding 2014-3 Ltd.,co_e0431908f642,Other,,,,N/A,,,2017-01-24,2031-10-22,,,,,,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
-Dryden 43 Senior Loan Fund,co_ccf41dfa94f3,Other,,,,N/A,,,2021-06-01,2034-04-20,,,,,,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
+Dryden 43 Senior Loan Fund,co_01cfd6b8c6e9,Other,,,,N/A,,,2021-06-01,2034-04-20,,,,,,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
 Madison Park Funding XVIII Ltd.,co_f9a07a2e15cd,Other,,,,N/A,,,2020-05-22,2030-10-21,,,,,,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
 Madison Park Funding XIX Ltd.,co_f9a07a2e15cd,Other,,,,N/A,,,2016-05-11,2028-01-22,,,,,,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
 Nassau 2019-I Ltd.,co_82f71e418e63,Other,,,,N/A,,,2019-04-11,2031-04-15,,,,,,,,,,dspy_extracted,OXSQ,2024-03-19,OXSQ,2024-03-19
@@ -225,7 +225,7 @@ McAfee Enterprise,co_f55d81ce29c8,First Lien,,7%,,,,0.75%,2024-08-14,2028-07-27,
 McAfee Enterprise,co_f55d81ce29c8,First Lien,,7%,,,,0.75%,2024-08-14,2028-07-27,10181,3066,2800,,3066,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
 RSA Security,co_5a5a17bbcb6a,Second Lien,,7.75%,,,,0.75%,2021-04-16,2029-04-27,15000,14849,3469,,14849,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
 Smartronix,co_0aef8ece01b9,First Lien,,4.5%,,,,0.75%,2025-02-06,2032-01-29,4988,5000,5000,,5000,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
-ConvergeOne Holdings,co_8d6788d5f897,First Lien,,5.75%,,,,0%,2024-06-04,2030-06-04,935,897,561,,897,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
+ConvergeOne Holdings,co_2a837e3145dd,First Lien,,5.75%,,,,0%,2024-06-04,2030-06-04,935,897,561,,897,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
 first lien senior secured notes,co_e52974f3101c,First Lien,,7.5%,,,,3%,2024-07-29,2029-08-06,5459,5271,5404,,5271,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
 Senior Secured Notes,co_8135c5c3d952,Other,,,,,,,,,,164755,146830,93.3%,164755,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
 IT Consulting UniTek Global Services,co_5e4d989d23f4,Common Equity,Software & Technology,,,,,,2015-01-13,,1244,685,,,685,,,,,,OXSQ,2025-08-12,OXSQ,2025-08-12
@@ -260,7 +260,7 @@ McAfee Enterprise,co_f55d81ce29c8,First Lien,,7%,,,,0.75%,2024-08-14,2028-07-27,
 McAfee Enterprise,co_f55d81ce29c8,First Lien,,1.5%,,,,0.75%,2024-08-14,2028-07-27,10324,3422,2065,,3422,,,,,,OXSQ,2025-11-07,OXSQ,2025-11-07
 RSA Security,co_5a5a17bbcb6a,Second Lien,,7.75%,,,,0.75%,2021-04-16,2029-04-27,15000,14854,3015,,14854,,,,,,OXSQ,2025-11-07,OXSQ,2025-11-07
 Smartronix,co_0aef8ece01b9,First Lien,,4.5%,,,,0.75%,2025-02-06,2032-02-06,4975,4986,5000,,4986,,,,,,OXSQ,2025-11-07,OXSQ,2025-11-07
-ConvergeOne Holdings,co_8d6788d5f897,First Lien,,5.75%,,,,0%,2024-06-04,2030-06-04,935,898,481,,898,,,,,,OXSQ,2025-11-07,OXSQ,2025-11-07
+ConvergeOne Holdings,co_2a837e3145dd,First Lien,,5.75%,,,,0%,2024-06-04,2030-06-04,935,898,481,,898,,,,,,OXSQ,2025-11-07,OXSQ,2025-11-07
 first lien senior secured notes,co_e52974f3101c,First Lien,,7.5%,,,,3%,2024-07-29,2029-08-06,10432,10154,10224,,10154,,,,,,OXSQ,2025-11-07,OXSQ,2025-11-07
 Senior Secured Notes,co_8135c5c3d952,Other,,,,,,,,,,162672,142013,89.3%,162672,,,,,,OXSQ,2025-11-07,OXSQ,2025-11-07
 IT Consulting UniTek Global Services,co_5e4d989d23f4,Common Equity,Software & Technology,,,,,,2015-01-13,,1244,685,,,685,,,,,,OXSQ,2025-11-07,OXSQ,2025-11-07
@@ -295,7 +295,7 @@ McAfee Enterprise,co_f55d81ce29c8,First Lien,,6.25%,,,,0.75%,2024-08-14,2028-07-
 RSA Security,co_5a5a17bbcb6a,Second Lien,,7.75%,,,,0.75%,2021-04-16,2029-04-27,15000,14859,2734,,14859,,,,,,OXSQ,2026-03-06,OXSQ,2026-03-06
 Smartronix,co_0aef8ece01b9,First Lien,,4.5%,,,,0.75%,2025-02-06,2032-02-06,9950,9960,9850,,9960,,,,,,OXSQ,2026-03-06,OXSQ,2026-03-06
 first lien senior secured notes,co_e52974f3101c,First Lien,,5.25%,,,,0.5%,2023-02-01,2029-07-20,9756,9288,8342,,9288,,,,,,OXSQ,2026-03-06,OXSQ,2026-03-06
-ConvergeOne Holdings,co_8d6788d5f897,First Lien,,5.75%,,,,0%,2024-06-04,2030-06-04,935,900,374,,900,,,,,,OXSQ,2026-03-06,OXSQ,2026-03-06
+ConvergeOne Holdings,co_2a837e3145dd,First Lien,,5.75%,,,,0%,2024-06-04,2030-06-04,935,900,374,,900,,,,,,OXSQ,2026-03-06,OXSQ,2026-03-06
 first lien senior secured notes,co_e52974f3101c,First Lien,,7.5%,,,,3%,2024-07-29,2029-08-06,10380,10114,10305,,10114,,,,,,OXSQ,2026-03-06,OXSQ,2026-03-06
 Senior Secured Notes,co_8135c5c3d952,Other,,,,,,,,,,169010,147253,1.01%,169010,,,,,,OXSQ,2026-03-06,OXSQ,2026-03-06
 IT Consulting UniTek Global Services,co_5e4d989d23f4,Common Equity,Software & Technology,,,,,,2015-01-13,,1244,685,,,685,,,,,,OXSQ,2026-03-06,OXSQ,2026-03-06
