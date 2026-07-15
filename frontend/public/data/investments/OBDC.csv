@@ -1,8 +1,8 @@
 company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
 Global Music Rights LLC,co_c7e920009134,First Lien,Transportation & Logistics,,,SOFR,5.5%,,,,7444,7314,7407,0.1%,7314,,,,,,OBDC,2022-11-02
 Global Music Rights LLC,co_c7e920009134,Revolver,Transportation & Logistics,,,SOFR,5.5%,,,,0,-11,-3,0%,-11,667,,,,,OBDC,2022-11-02
-The NPD Group LP.,co_35deb94b1ddd,First Lien,Transportation & Logistics,,2.75%,SOFR,6.25%,,,,23546,23069,23056,0.4%,23069,,,,,,OBDC,2022-11-02
-The NPD Group LP.,co_35deb94b1ddd,Revolver,Transportation & Logistics,,,SOFR,5.75%,,,,0,-29,-31,0%,-29,1510,,,,,OBDC,2022-11-02
+The NPD Group LP.,co_c79c14e4c5fe,First Lien,Transportation & Logistics,,2.75%,SOFR,6.25%,,,,23546,23069,23056,0.4%,23069,,,,,,OBDC,2022-11-02
+The NPD Group LP.,co_c79c14e4c5fe,Revolver,Transportation & Logistics,,,SOFR,5.75%,,,,0,-29,-31,0%,-29,1510,,,,,OBDC,2022-11-02
 Aviation Solutions Midco LLC,co_a793cb7b6e55,First Lien,Transportation & Logistics,,,SOFR,7.25%,,,,213170,211355,205709,3.5%,211355,,,,,,OBDC,2022-11-02
 Peraton Corp.,co_26028249ab33,Second Lien,,,,SOFR,7.75%,,,,46113,45522,43489,0.7%,45522,,,,,,OBDC,2022-11-02
 Valence Surface Technologies LLC,co_73a704e42665,First Lien,Transportation & Logistics,,,SOFR,7.75%,,,,126269,125347,101016,1.7%,125347,,,,,,OBDC,2022-11-02
@@ -75,8 +75,8 @@ AxiomSL Group Inc.,co_ba5bad07c782,Revolver,Transportation & Logistics,,,SOFR,6%
 Blackhawk Network Holdings Inc.,co_2123f088dc0b,Second Lien,,,,SOFR,7%,,,,106400,105856,105868,1.8%,105856,,,,,,OBDC,2022-11-02
 Blend Labs Inc.,co_217ec06f2136,First Lien,Automotive,,,SOFR,7.5%,,,,67500,66204,66319,1.1%,66204,,,,,,OBDC,2022-11-02
 Blend Labs Inc.,co_217ec06f2136,Revolver,Automotive,,,SOFR,7.5%,,,,0,-56,-131,0%,-56,7500,,,,,OBDC,2022-11-02
-Hg Genesis 8 Sumoco Ltd.,co_513ef062b958,Unsecured Debt,,,7.5%,SOFR,7.5%,,,,40371,47833,40371,0.7%,47833,,,,,,OBDC,2022-11-02
-Hg Genesis 9 SumoCo Ltd.,co_513ef062b958,Unsecured Debt,,,7%,SOFR,7%,,,,42227,47224,42227,0.7%,47224,,,,,,OBDC,2022-11-02
+Hg Genesis 8 Sumoco Ltd.,co_1c78bf8813ba,Unsecured Debt,,,7.5%,SOFR,7.5%,,,,40371,47833,40371,0.7%,47833,,,,,,OBDC,2022-11-02
+Hg Genesis 9 SumoCo Ltd.,co_1c78bf8813ba,Unsecured Debt,,,7%,SOFR,7%,,,,42227,47224,42227,0.7%,47224,,,,,,OBDC,2022-11-02
 Hg Saturn Luchaco Ltd.,co_4e8e0af53d43,Unsecured Debt,,,7.5%,SOFR,7.5%,,,,119844,145982,118346,2%,145982,,,,,,OBDC,2022-11-02
 Muine Gall LLC,co_b159a949fd31,First Lien,,,7%,SOFR,7%,,,,248992,250199,245257,4.2%,250199,,,,,,OBDC,2022-11-02
 NMI Acquisitionco Inc.,co_ea8330f4ea6d,First Lien,Transportation & Logistics,,,SOFR,5.75%,,,,25114,24989,24737,0.4%,24989,,,,,,OBDC,2022-11-02
@@ -444,14 +444,14 @@ Tempo Buyer Corp.,co_15978e9ee823,Delayed Draw,Transportation & Logistics,,,,,,,
 Tempo Buyer Corp.,co_15978e9ee823,Revolver,Transportation & Logistics,,,,,,,,,,,,,145000,,,,,OBDC,2022-11-02
 Global Music Rights LLC,co_c7e920009134,First Lien,"Norvax, LLC (dba GoHealth)",,,SOFR,5.5%,,,,7425,7300,7425,0.1%,7300,,,,,,OBDC,2023-02-22
 Global Music Rights LLC,co_c7e920009134,Revolver,"Norvax, LLC (dba GoHealth)",,,SOFR,5.5%,,,,0,-10,0,0%,-10,667,,,,,OBDC,2023-02-22
-The NPD Group LP.,co_35deb94b1ddd,First Lien,"Norvax, LLC (dba GoHealth)",,2.75%,SOFR,6.25%,,,,23717,23252,23243,0.4%,23252,,,,,,OBDC,2023-02-22
-The NPD Group LP.,co_35deb94b1ddd,Revolver,"Norvax, LLC (dba GoHealth)",,,SOFR,5.75%,,,,181,153,151,0%,153,1329,,,,,OBDC,2023-02-22
+The NPD Group LP.,co_c79c14e4c5fe,First Lien,"Norvax, LLC (dba GoHealth)",,2.75%,SOFR,6.25%,,,,23717,23252,23243,0.4%,23252,,,,,,OBDC,2023-02-22
+The NPD Group LP.,co_c79c14e4c5fe,Revolver,"Norvax, LLC (dba GoHealth)",,,SOFR,5.75%,,,,181,153,151,0%,153,1329,,,,,OBDC,2023-02-22
 Aviation Solutions Midco LLC,co_a793cb7b6e55,First Lien,Transportation & Logistics,,,SOFR,7.25%,,,,212678,211054,205233,3.5%,211054,,,,,,OBDC,2023-02-22
 Peraton Corp.,co_26028249ab33,Second Lien,,,,SOFR,7.75%,,,,46113,45539,43691,0.7%,45539,,,,,,OBDC,2023-02-22
 Valence Surface Technologies LLC,co_73a704e42665,First Lien,"Norvax, LLC (dba GoHealth)",,,,,,,,128074,127233,102459,1.7%,127233,,,,,,OBDC,2023-02-22
 Valence Surface Technologies LLC,co_73a704e42665,Revolver,"Norvax, LLC (dba GoHealth)",,,SOFR,7.75%,,,,10408,10345,8316,0.1%,10345,49,,,,,OBDC,2023-02-22
-Hg Genesis 8 Sumoco Ltd.,co_513ef062b958,Unsecured Debt,,,6%,SOFR,6%,,,,45071,49137,45071,0.8%,49137,,,,,,OBDC,2023-02-22
-Hg Genesis 9 SumoCo Ltd.,co_513ef062b958,Unsecured Debt,,,7%,SOFR,7%,,,,46914,48136,46914,0.8%,48136,,,,,,OBDC,2023-02-22
+Hg Genesis 8 Sumoco Ltd.,co_1c78bf8813ba,Unsecured Debt,,,6%,SOFR,6%,,,,45071,49137,45071,0.8%,49137,,,,,,OBDC,2023-02-22
+Hg Genesis 9 SumoCo Ltd.,co_1c78bf8813ba,Unsecured Debt,,,7%,SOFR,7%,,,,46914,48136,46914,0.8%,48136,,,,,,OBDC,2023-02-22
 Hg Saturn Luchaco Ltd.,co_4e8e0af53d43,Unsecured Debt,,,7.5%,SOFR,7.5%,,,,120209,135817,118706,2%,135817,,,,,,OBDC,2023-02-22
 Associations Inc.,co_137d8a36cf25,First Lien,"Norvax, LLC (dba GoHealth)",,2.5%,SOFR,6.5%,,,,386382,383491,385414,6.6%,383491,,,,,,OBDC,2023-02-22
 Associations Inc.,co_137d8a36cf25,Delayed Draw,"Norvax, LLC (dba GoHealth)",,2.5%,SOFR,6.5%,,,,3714,3274,3590,0.1%,3274,45792,,,,,OBDC,2023-02-22
@@ -893,16 +893,16 @@ Refresh Parent Holdings Inc.,co_9a2bf130999c,Revolver,"Norvax, LLC (dba GoHealth
 TC Holdings LLC,co_9b93386e61ad,Revolver,"Norvax, LLC (dba GoHealth)",,,,,,,,,,,,,0,,,,,OBDC,2023-02-22
 Tempo Buyer Corp.,co_15978e9ee823,Delayed Draw,"Norvax, LLC (dba GoHealth)",,,,,,,,,,,,,308000,,,,,OBDC,2023-02-22
 Tempo Buyer Corp.,co_15978e9ee823,Revolver,"Norvax, LLC (dba GoHealth)",,,,,,,,,,,,,141000,,,,,OBDC,2023-02-22
-Circana Group LP.,co_06c1b60713ce,First Lien,Transportation & Logistics,,2.75%,SOFR,6.25%,,,,23823,23373,23465,0.4%,23373,,,,,,OBDC,2023-05-10
-Circana Group LP.,co_06c1b60713ce,Revolver,Transportation & Logistics,,,SOFR,5.75%,,,,211,185,189,0%,185,1299,,,,,OBDC,2023-05-10
+Circana Group LP.,co_c53bee8c3340,First Lien,Transportation & Logistics,,2.75%,SOFR,6.25%,,,,23823,23373,23465,0.4%,23373,,,,,,OBDC,2023-05-10
+Circana Group LP.,co_c53bee8c3340,Revolver,Transportation & Logistics,,,SOFR,5.75%,,,,211,185,189,0%,185,1299,,,,,OBDC,2023-05-10
 Global Music Rights LLC,co_c7e920009134,First Lien,Transportation & Logistics,,,SOFR,5.5%,,,,7406,7285,7406,0.1%,7285,,,,,,OBDC,2023-05-10
 Global Music Rights LLC,co_c7e920009134,Revolver,Transportation & Logistics,,,SOFR,5.5%,,,,0,-10,0,0%,-10,667,,,,,OBDC,2023-05-10
 Aviation Solutions Midco LLC,co_a793cb7b6e55,First Lien,Transportation & Logistics,,,SOFR,7.25%,,,,212187,210752,206882,3.5%,210752,,,,,,OBDC,2023-05-10
 Peraton Corp.,co_26028249ab33,Second Lien,,,,SOFR,7.75%,,,,46113,45556,44730,0.8%,45556,,,,,,OBDC,2023-05-10
 Valence Surface Technologies LLC,co_73a704e42665,First Lien,Transportation & Logistics,,,,,,,,129675,128909,103740,1.8%,128909,,,,,,OBDC,2023-05-10
 Valence Surface Technologies LLC,co_73a704e42665,Revolver,Transportation & Logistics,,,SOFR,7.75%,,,,10569,10513,8445,0.1%,10513,49,,,,,OBDC,2023-05-10
-Hg Genesis 8 Sumoco Ltd.,co_513ef062b958,Unsecured Debt,,,6%,,,,,,46328,49165,46327,0.8%,49165,,,,,,OBDC,2023-05-10
-Hg Genesis 9 SumoCo Ltd.,co_513ef062b958,Unsecured Debt,,,7%,,,,,,48844,49222,48844,0.8%,49222,,,,,,OBDC,2023-05-10
+Hg Genesis 8 Sumoco Ltd.,co_1c78bf8813ba,Unsecured Debt,,,6%,,,,,,46328,49165,46327,0.8%,49165,,,,,,OBDC,2023-05-10
+Hg Genesis 9 SumoCo Ltd.,co_1c78bf8813ba,Unsecured Debt,,,7%,,,,,,48844,49222,48844,0.8%,49222,,,,,,OBDC,2023-05-10
 Hg Saturn Luchaco Ltd.,co_4e8e0af53d43,Unsecured Debt,,,7.5%,,,,,,130098,142392,128797,2.2%,142392,,,,,,OBDC,2023-05-10
 Spotless Brands LLC,co_9e457409bbbe,First Lien,Transportation & Logistics,,,SOFR,6.5%,,,,48363,47481,47759,0.8%,47481,,,,,,OBDC,2023-05-10
 Spotless Brands LLC,co_9e457409bbbe,Revolver,Transportation & Logistics,,,SOFR,6.5%,,,,261,238,245,0%,238,1044,,,,,OBDC,2023-05-10
@@ -1348,16 +1348,16 @@ Safe Fleet Holdings,co_d1b25c091644,First Lien,Transportation & Logistics,,,SOFR
 Eagle Infrastructure Super LLC,co_64bdcd9b0226,Other,Automotive,,,,,,,2023-03-31,,,109751,,,,,,,,OBDC,2023-05-10
 Fifth Season Investments LLC,co_def227b37a0e,Other,Automotive,,,,,,,2022-07-18,,,94937,,,,,,,,OBDC,2023-05-10
 Walker Edison Furniture Company LLC,co_55d1269fe5b2,Other,Transportation & Logistics,,,,,,,,,,55467,,,,,,,,OBDC,2023-05-10
-Circana Group LP.,co_06c1b60713ce,First Lien,Transportation & Logistics,,2.75%,SOFR,6.25%,,,,23936,23503,23636,0.4%,23503,,,,,,OBDC,2023-08-09
-Circana Group LP.,co_06c1b60713ce,Revolver,Transportation & Logistics,,,SOFR,5.75%,,,,121,96,102,0%,96,1389,,,,,OBDC,2023-08-09
+Circana Group LP.,co_c53bee8c3340,First Lien,Transportation & Logistics,,2.75%,SOFR,6.25%,,,,23936,23503,23636,0.4%,23503,,,,,,OBDC,2023-08-09
+Circana Group LP.,co_c53bee8c3340,Revolver,Transportation & Logistics,,,SOFR,5.75%,,,,121,96,102,0%,96,1389,,,,,OBDC,2023-08-09
 Global Music Rights LLC,co_c7e920009134,First Lien,Transportation & Logistics,,,SOFR,5.75%,,,,7388,7270,7388,0.1%,7270,,,,,,OBDC,2023-08-09
 Global Music Rights LLC,co_c7e920009134,Revolver,Transportation & Logistics,,,SOFR,5.75%,,,,0,-9,0,0%,-9,667,,,,,OBDC,2023-08-09
 Aviation Solutions Midco LLC,co_a793cb7b6e55,First Lien,Transportation & Logistics,,,SOFR,7.25%,,,,211695,210456,210636,3.5%,210456,,,,,,OBDC,2023-08-09
 Peraton Corp.,co_26028249ab33,Second Lien,,,,SOFR,7.75%,,,,46113,45574,44614,0.7%,45574,,,,,,OBDC,2023-08-09
 Valence Surface Technologies LLC,co_73a704e42665,First Lien,Transportation & Logistics,,3.88%,SOFR,7.75%,,,,132179,131491,105743,1.8%,131491,,,,,,OBDC,2023-08-09
 Valence Surface Technologies LLC,co_73a704e42665,Revolver,Transportation & Logistics,,3.88%,SOFR,7.75%,,,,10742,10692,8584,0.1%,10692,49,,,,,OBDC,2023-08-09
-Hg Genesis 8 Sumoco Ltd.,co_513ef062b958,Unsecured Debt,,,6%,,,,,,50034,51535,50034,0.8%,51535,,,,,,OBDC,2023-08-09
-Hg Genesis 9 SumoCo Ltd.,co_513ef062b958,Unsecured Debt,,,7%,,,,,,50295,50471,50295,0.8%,50471,,,,,,OBDC,2023-08-09
+Hg Genesis 8 Sumoco Ltd.,co_1c78bf8813ba,Unsecured Debt,,,6%,,,,,,50034,51535,50034,0.8%,51535,,,,,,OBDC,2023-08-09
+Hg Genesis 9 SumoCo Ltd.,co_1c78bf8813ba,Unsecured Debt,,,7%,,,,,,50295,50471,50295,0.8%,50471,,,,,,OBDC,2023-08-09
 Hg Saturn Luchaco Ltd.,co_4e8e0af53d43,Unsecured Debt,,,7.5%,,,,,,133770,142451,132432,2.2%,142451,,,,,,OBDC,2023-08-09
 Spotless Brands LLC,co_9e457409bbbe,First Lien,Transportation & Logistics,,,SOFR,6.5%,,,,48242,47395,47759,0.8%,47395,,,,,,OBDC,2023-08-09
 Spotless Brands LLC,co_9e457409bbbe,Revolver,Transportation & Logistics,,,SOFR,6.5%,,,,0,-22,-13,0%,-22,1305,,,,,OBDC,2023-08-09
@@ -1807,16 +1807,16 @@ Blue Owl Capital Corp.,co_7216f2a28a4c,Other,,,,,,,,,,,364428,,,,,,,,OBDC,2023-0
 Walker Edison Furniture Company LLC,co_55d1269fe5b2,Other,Transportation & Logistics,,,,,,,,,,54967,,,,,,,,OBDC,2023-08-09
 Aramsco Inc.,co_eb8702bda800,Revolver,Transportation & Logistics,,,,,,,,,,,,,0,,,,,OBDC,2023-08-09
 Inovalon Holdings Inc.,co_11d2bc228e56,Delayed Draw,Transportation & Logistics,,,,,,,,,,,,,18988000,,,,,OBDC,2023-08-09
-Circana Group LP.,co_06c1b60713ce,First Lien,Food & Beverage,,2.75%,SOFR,6.25%,,,,19141,18813,18949,0.3%,18813,,,,,,OBDC,2024-02-21
-Circana Group LP.,co_06c1b60713ce,Revolver,Food & Beverage,,,SOFR,5.75%,,,,272,250,257,0%,250,1238,,,,,OBDC,2024-02-21
+Circana Group LP.,co_c53bee8c3340,First Lien,Food & Beverage,,2.75%,SOFR,6.25%,,,,19141,18813,18949,0.3%,18813,,,,,,OBDC,2024-02-21
+Circana Group LP.,co_c53bee8c3340,Revolver,Food & Beverage,,,SOFR,5.75%,,,,272,250,257,0%,250,1238,,,,,OBDC,2024-02-21
 Global Music Rights LLC,co_c7e920009134,First Lien,Food & Beverage,,,SOFR,5.75%,,,,7350,7242,7350,0.1%,7242,,,,,,OBDC,2024-02-21
 Global Music Rights LLC,co_c7e920009134,Revolver,Food & Beverage,,,SOFR,5.75%,,,,0,-8,0,0%,-8,667,,,,,OBDC,2024-02-21
 Aviation Solutions Midco LLC,co_a793cb7b6e55,First Lien,Transportation & Logistics,,,SOFR,7.25%,,,,210713,209873,213873,3.6%,209873,,,,,,OBDC,2024-02-21
 Peraton Corp.,co_26028249ab33,Second Lien,,,,SOFR,7.75%,,,,45899,45396,45554,0.8%,45396,,,,,,OBDC,2024-02-21
 Valence Surface Technologies LLC,co_73a704e42665,First Lien,Food & Beverage,,,SOFR,7.75%,,,,136788,136262,120375,2%,136262,,,,,,OBDC,2024-02-21
 Valence Surface Technologies LLC,co_73a704e42665,Revolver,Food & Beverage,,,SOFR,7.75%,,,,11106,11068,9767,0.2%,11068,49,,,,,OBDC,2024-02-21
-Hg Genesis 8 Sumoco Ltd.,co_513ef062b958,Unsecured Debt,,,6%,,,,,,41591,54412,53019,0.9%,54412,,,,,,OBDC,2024-02-21
-Hg Genesis 9 SumoCo Ltd.,co_513ef062b958,Unsecured Debt,,,6%,,,,,,48628,53223,53717,0.9%,53223,,,,,,OBDC,2024-02-21
+Hg Genesis 8 Sumoco Ltd.,co_1c78bf8813ba,Unsecured Debt,,,6%,,,,,,41591,54412,53019,0.9%,54412,,,,,,OBDC,2024-02-21
+Hg Genesis 9 SumoCo Ltd.,co_1c78bf8813ba,Unsecured Debt,,,6%,,,,,,48628,53223,53717,0.9%,53223,,,,,,OBDC,2024-02-21
 Hg Saturn Luchaco Ltd.,co_4e8e0af53d43,Unsecured Debt,,,7.5%,,,,,,111764,150574,142477,2.4%,150574,,,,,,OBDC,2024-02-21
 Spotless Brands LLC,co_9e457409bbbe,First Lien,Food & Beverage,,,SOFR,6.5%,,,,48120,47341,47759,0.8%,47341,,,,,,OBDC,2024-02-21
 Spotless Brands LLC,co_9e457409bbbe,Revolver,Food & Beverage,,,SOFR,6.5%,,,,282,262,272,0%,262,1023,,,,,OBDC,2024-02-21
@@ -2309,8 +2309,8 @@ Hometown Food Company,co_13ddaa143dff,Revolver,Food & Beverage,,,,,,,,,,,,,0,,,,
 Tahoe Finco LLC,co_94b51c3fc34e,Revolver,Food & Beverage,,,,,,,,,,,,,0,,,,,OBDC,2024-02-21
 Broadcast Music Inc.,co_c5759bafcc2f,First Lien,Media & Entertainment,,,SOFR,5.75%,,,,26830,26170,26158,0.4%,26170,,,,,,OBDC,2024-05-08
 Broadcast Music Inc.,co_c5759bafcc2f,Revolver,Media & Entertainment,,,SOFR,5.75%,,,,0,-119,-122,0%,-119,,,,,,OBDC,2024-05-08
-Circana Group LP.,co_06c1b60713ce,First Lien,Telecommunications,,2.75%,SOFR,6.25%,,,,19235,18928,19139,0.3%,18928,,,,,,OBDC,2024-05-08
-Circana Group LP.,co_06c1b60713ce,Revolver,Telecommunications,,,SOFR,5.75%,,,,846,825,838,0%,825,664,,,,,OBDC,2024-05-08
+Circana Group LP.,co_c53bee8c3340,First Lien,Telecommunications,,2.75%,SOFR,6.25%,,,,19235,18928,19139,0.3%,18928,,,,,,OBDC,2024-05-08
+Circana Group LP.,co_c53bee8c3340,Revolver,Telecommunications,,,SOFR,5.75%,,,,846,825,838,0%,825,664,,,,,OBDC,2024-05-08
 Global Music Rights LLC,co_c7e920009134,First Lien,Telecommunications,,,SOFR,5.5%,,,,59751,58602,59751,1%,58602,,,,,,OBDC,2024-05-08
 Global Music Rights LLC,co_c7e920009134,Revolver,Telecommunications,,,SOFR,5.5%,,,,0,-71,0,0%,-71,3871,,,,,OBDC,2024-05-08
 Monotype Imaging Holdings Inc.,co_f26421f2c9f8,First Lien,Telecommunications,,,SOFR,5.5%,,,,114430,113580,113538,1.9%,113580,,,,,,OBDC,2024-05-08
@@ -2321,8 +2321,8 @@ Aviation Solutions Midco LLC,co_a793cb7b6e55,First Lien,Transportation & Logisti
 Peraton Corp.,co_26028249ab33,Second Lien,,,,SOFR,7.75%,,,,45899,45412,45968,0.8%,45412,,,,,,OBDC,2024-05-08
 Valence Surface Technologies LLC,co_73a704e42665,First Lien,Telecommunications,,3.88%,SOFR,7.75%,,,,139060,138617,125849,2.1%,138617,,,,,,OBDC,2024-05-08
 Valence Surface Technologies LLC,co_73a704e42665,Revolver,Telecommunications,,3.88%,SOFR,7.75%,,,,11292,11261,10214,0.2%,11261,49,,,,,OBDC,2024-05-08
-Hg Genesis 8 Sumoco Ltd.,co_513ef062b958,Unsecured Debt,,,6%,,,,,,41591,54444,52539,0.9%,54444,,,,,,OBDC,2024-05-08
-Hg Genesis 9 SumoCo Ltd.,co_513ef062b958,Unsecured Debt,,,7%,,,,,,49975,54713,53973,0.9%,54713,,,,,,OBDC,2024-05-08
+Hg Genesis 8 Sumoco Ltd.,co_1c78bf8813ba,Unsecured Debt,,,6%,,,,,,41591,54444,52539,0.9%,54444,,,,,,OBDC,2024-05-08
+Hg Genesis 9 SumoCo Ltd.,co_1c78bf8813ba,Unsecured Debt,,,7%,,,,,,49975,54713,53973,0.9%,54713,,,,,,OBDC,2024-05-08
 Hg Saturn Luchaco Ltd.,co_4e8e0af53d43,Unsecured Debt,,,7.5%,,,,,,103868,138948,131211,2.2%,138948,,,,,,OBDC,2024-05-08
 Spotless Brands LLC,co_9e457409bbbe,First Lien,Telecommunications,,,SOFR,6.5%,,,,47998,47256,47878,0.8%,47256,,,,,,OBDC,2024-05-08
 Spotless Brands LLC,co_9e457409bbbe,Revolver,Telecommunications,,,SOFR,6.5%,,,,0,-19,-3,0%,-19,1305,,,,,OBDC,2024-05-08
@@ -2843,8 +2843,8 @@ Aviation Solutions Midco LLC,co_a793cb7b6e55,First Lien,Transportation & Logisti
 Peraton Corp.,co_26028249ab33,Second Lien,,,,SOFR,7.75%,,,,45899,45432,46014,0.8%,45432,,,,,,OBDC,2024-08-07
 Valence Surface Technologies LLC,co_73a704e42665,First Lien,Telecommunications,,3.88%,SOFR,7.75%,,,,142551,142193,132927,2.2%,142193,,,,,,OBDC,2024-08-07
 Valence Surface Technologies LLC,co_73a704e42665,Revolver,Telecommunications,,3.88%,SOFR,7.75%,,,,11483,11458,10705,0.2%,11458,49,,,,,OBDC,2024-08-07
-Hg Genesis 8 Sumoco Ltd.,co_513ef062b958,Unsecured Debt,,,6%,,,,,,11635,14690,14708,0.2%,14690,,,,,,OBDC,2024-08-07
-Hg Genesis 9 SumoCo Ltd.,co_513ef062b958,Unsecured Debt,,,7%,,,,,,51371,56232,55058,0.9%,56232,,,,,,OBDC,2024-08-07
+Hg Genesis 8 Sumoco Ltd.,co_1c78bf8813ba,Unsecured Debt,,,6%,,,,,,11635,14690,14708,0.2%,14690,,,,,,OBDC,2024-08-07
+Hg Genesis 9 SumoCo Ltd.,co_1c78bf8813ba,Unsecured Debt,,,7%,,,,,,51371,56232,55058,0.9%,56232,,,,,,OBDC,2024-08-07
 Hg Saturn Luchaco Ltd.,co_4e8e0af53d43,Unsecured Debt,,,7.5%,,,,,,40423,51411,51098,0.9%,51411,,,,,,OBDC,2024-08-07
 Spotless Brands LLC,co_9e457409bbbe,First Lien,Telecommunications,,,SOFR,6.5%,,,,47877,47171,47877,0.8%,47171,,,,,,OBDC,2024-08-07
 Spotless Brands LLC,co_9e457409bbbe,Revolver,Telecommunications,,,SOFR,6.5%,,,,522,504,522,0%,504,783,,,,,OBDC,2024-08-07
@@ -3411,8 +3411,8 @@ Aviation Solutions Midco LLC,co_a793cb7b6e55,First Lien,Transportation & Logisti
 Peraton Corp.,co_26028249ab33,Second Lien,,,,SOFR,7.75%,,,,45899,45451,42975,0.7%,45451,,,,,,OBDC,2024-11-06
 Valence Surface Technologies LLC,co_73a704e42665,First Lien,Telecommunications,,3.88%,SOFR,7.75%,,,,145003,144735,135215,2.3%,144735,,,,,,OBDC,2024-11-06
 Valence Surface Technologies LLC,co_73a704e42665,Revolver,Telecommunications,,3.88%,SOFR,7.75%,,,,11679,11661,10888,0.2%,11661,49,,,,,OBDC,2024-11-06
-Hg Genesis 8 Sumoco Ltd.,co_513ef062b958,Unsecured Debt,,,7%,,,,,,11635,14691,15606,0.3%,14691,,,,,,OBDC,2024-11-06
-Hg Genesis 9 SumoCo Ltd.,co_513ef062b958,Unsecured Debt,,,7%,,,,,,52781,57811,58907,1%,57811,,,,,,OBDC,2024-11-06
+Hg Genesis 8 Sumoco Ltd.,co_1c78bf8813ba,Unsecured Debt,,,7%,,,,,,11635,14691,15606,0.3%,14691,,,,,,OBDC,2024-11-06
+Hg Genesis 9 SumoCo Ltd.,co_1c78bf8813ba,Unsecured Debt,,,7%,,,,,,52781,57811,58907,1%,57811,,,,,,OBDC,2024-11-06
 Hg Saturn Luchaco Ltd.,co_4e8e0af53d43,Unsecured Debt,,,7.5%,,,,,,43073,54974,57776,1%,54974,,,,,,OBDC,2024-11-06
 Spotless Brands LLC,co_9e457409bbbe,First Lien,Telecommunications,,,SOFR,5.75%,,,,47633,46970,47514,0.8%,46970,,,,,,OBDC,2024-11-06
 Spotless Brands LLC,co_9e457409bbbe,Revolver,Telecommunications,,,SOFR,5.75%,,,,783,766,780,0%,766,522,,,,,OBDC,2024-11-06
@@ -3999,8 +3999,8 @@ Peraton Corp.,co_26028249ab33,Second Lien,,,,SOFR,7.75%,,,,45899,45471,36994,0.6
 STS PARENT LLC,co_e3b9a8c94c34,First Lien,Joint ventures,,,SOFR,5%,,,,94950,94480,94475,1.6%,94480,,,,,,OBDC,2025-02-19
 STS PARENT LLC,co_e3b9a8c94c34,Revolver,Joint ventures,,,SOFR,5%,,,,4879,4827,4827,0.1%,4827,,,,,,OBDC,2025-02-19
 Valence Surface Technologies LLC,co_73a704e42665,First Lien,Joint ventures,,3.88%,SOFR,7.75%,,,,158509,158318,148996,2.5%,158318,,,,,,OBDC,2025-02-19
-Hg Genesis 8 Sumoco Ltd.,co_513ef062b958,Unsecured Debt,,,7%,,,,,,10533,13162,13192,0.2%,13162,,,,,,OBDC,2025-02-19
-Hg Genesis 9 SumoCo Ltd.,co_513ef062b958,Unsecured Debt,,,6.25%,,,,,,54168,59284,56091,0.9%,59284,,,,,,OBDC,2025-02-19
+Hg Genesis 8 Sumoco Ltd.,co_1c78bf8813ba,Unsecured Debt,,,7%,,,,,,10533,13162,13192,0.2%,13162,,,,,,OBDC,2025-02-19
+Hg Genesis 9 SumoCo Ltd.,co_1c78bf8813ba,Unsecured Debt,,,6.25%,,,,,,54168,59284,56091,0.9%,59284,,,,,,OBDC,2025-02-19
 Hg Saturn Luchaco Ltd.,co_4e8e0af53d43,Unsecured Debt,,,7.5%,,,,,,40483,51405,50701,0.9%,51405,,,,,,OBDC,2025-02-19
 Spotless Brands LLC,co_9e457409bbbe,First Lien,Joint ventures,,,SOFR,5.75%,,,2028-07-01,47511,46885,47393,0.8%,46885,,,,,,OBDC,2025-02-19
 Associations Finance Inc.,co_dca322d4aace,Unsecured Debt,Joint ventures,,14.25%,,,,,2022-06-10,144093,143141,144093,2.4%,143141,,,,,,OBDC,2025-02-19
@@ -4352,8 +4352,8 @@ Peraton Corp.,co_26028249ab33,Second Lien,,,,SOFR,7.75%,,,,60393,57099,44957,,57
 STS PARENT LLC,co_e3b9a8c94c34,First Lien,Joint ventures,,,SOFR,5%,,,,115290,114342,114714,,114342,,,,,,OBDC,2025-05-07
 STS PARENT LLC,co_e3b9a8c94c34,Revolver,Joint ventures,,,SOFR,5%,,,,7526,7442,7462,,7442,,,,,,OBDC,2025-05-07
 Valence Surface Technologies LLC,co_73a704e42665,First Lien,Healthcare,,,SOFR,6.75%,,,2026-12-01,158255,158161,155089,,158161,,,,,,OBDC,2025-05-07
-Hg Genesis 8 Sumoco Ltd.,co_513ef062b958,Unsecured Debt,,,6%,,,,,,13115,16395,16928,,16395,,,,,,OBDC,2025-05-07
-Hg Genesis 9 SumoCo Ltd.,co_513ef062b958,Unsecured Debt,,,6.25%,,,,,,56596,59685,61135,,59685,,,,,,OBDC,2025-05-07
+Hg Genesis 8 Sumoco Ltd.,co_1c78bf8813ba,Unsecured Debt,,,6%,,,,,,13115,16395,16928,,16395,,,,,,OBDC,2025-05-07
+Hg Genesis 9 SumoCo Ltd.,co_1c78bf8813ba,Unsecured Debt,,,6.25%,,,,,,56596,59685,61135,,59685,,,,,,OBDC,2025-05-07
 Hg Saturn Luchaco Ltd.,co_4e8e0af53d43,Unsecured Debt,,,7.5%,,,,,,51254,64636,66156,,64636,,,,,,OBDC,2025-05-07
 Spotless Brands LLC,co_9e457409bbbe,First Lien,Joint ventures,,,SOFR,5.75%,,,2028-07-01,94812,93237,94812,,93237,,,,,,OBDC,2025-05-07
 Associations Finance Inc.,co_dca322d4aace,Unsecured Debt,Financial Services,,14.25%,,,,,,182296,180692,182296,,180692,,,,,,OBDC,2025-05-07
@@ -4720,8 +4720,8 @@ Applied Composites Holdings LLC,co_7e78e1d73b6f,First Lien,Aerospace & Defense,,
 Peraton Corp.,co_26028249ab33,Second Lien,,,,SOFR,7.75%,,,,60393,57255,41973,,57255,,,,,,OBDC,2025-08-06
 STS PARENT LLC,co_e3b9a8c94c34,First Lien,Healthcare,,,SOFR,5%,,,,115002,114037,114427,,114037,,,,,,OBDC,2025-08-06
 STS PARENT LLC,co_e3b9a8c94c34,Revolver,Healthcare,,,SOFR,5%,,,,8487,8402,8423,,8402,,,,,,OBDC,2025-08-06
-Hg Genesis 8 Sumoco Ltd.,co_513ef062b958,Unsecured Debt,,,7.5%,,,,,,13858,17410,18990,,17410,,,,,,OBDC,2025-08-06
-Hg Genesis 9 SumoCo Ltd.,co_513ef062b958,Unsecured Debt,,,6.25%,,,,,,51053,53981,59929,,53981,,,,,,OBDC,2025-08-06
+Hg Genesis 8 Sumoco Ltd.,co_1c78bf8813ba,Unsecured Debt,,,7.5%,,,,,,13858,17410,18990,,17410,,,,,,OBDC,2025-08-06
+Hg Genesis 9 SumoCo Ltd.,co_1c78bf8813ba,Unsecured Debt,,,6.25%,,,,,,51053,53981,59929,,53981,,,,,,OBDC,2025-08-06
 Hg Saturn Luchaco Ltd.,co_4e8e0af53d43,Unsecured Debt,,,8.25%,,,,,,51254,64682,70236,,64682,,,,,,OBDC,2025-08-06
 Spotless Brands LLC,co_9e457409bbbe,First Lien,Joint ventures,,,SOFR,5.75%,,,2028-07-01,94535,93068,94535,,93068,,,,,,OBDC,2025-08-06
 Spotless Brands LLC,co_9e457409bbbe,Revolver,Joint ventures,,,SOFR,5.75%,,,2028-07-01,1566,1550,1566,,1550,,,,,,OBDC,2025-08-06
@@ -5091,8 +5091,8 @@ Applied Composites Holdings LLC,co_7e78e1d73b6f,First Lien,Aerospace & Defense,,
 Peraton Corp.,co_26028249ab33,Second Lien,,,,SOFR,7.75%,,,,60393,57420,35711,,57420,,,,,,OBDC,2025-11-05
 STS PARENT LLC,co_e3b9a8c94c34,First Lien,Healthcare,,,SOFR,5%,,,,114714,113750,114140,,113750,,,,,,OBDC,2025-11-05
 STS PARENT LLC,co_e3b9a8c94c34,Revolver,Healthcare,,,SOFR,5%,,,,8487,8402,8423,,8402,,,,,,OBDC,2025-11-05
-Hg Genesis 8 Sumoco Ltd.,co_513ef062b958,Unsecured Debt,,,7.5%,,,,,,13858,17421,18656,,17421,,,,,,OBDC,2025-11-05
-Hg Genesis 9 SumoCo Ltd.,co_513ef062b958,Unsecured Debt,,,6.25%,,,,,,52158,55297,61286,,55297,,,,,,OBDC,2025-11-05
+Hg Genesis 8 Sumoco Ltd.,co_1c78bf8813ba,Unsecured Debt,,,7.5%,,,,,,13858,17421,18656,,17421,,,,,,OBDC,2025-11-05
+Hg Genesis 9 SumoCo Ltd.,co_1c78bf8813ba,Unsecured Debt,,,6.25%,,,,,,52158,55297,61286,,55297,,,,,,OBDC,2025-11-05
 Hg Saturn Luchaco Ltd.,co_4e8e0af53d43,Unsecured Debt,,,8.25%,,,,,,54490,69085,73357,,69085,,,,,,OBDC,2025-11-05
 MAJCO LLC,co_af768eded076,First Lien,Healthcare,,,SOFR,4.5%,,,2032-09-01,57614,57326,57326,,57326,,,,,,OBDC,2025-11-05
 Spotless Brands LLC,co_9e457409bbbe,First Lien,Joint ventures,,,SOFR,5.75%,,,2028-07-01,94291,92935,94291,,92935,,,,,,OBDC,2025-11-05
@@ -5462,9 +5462,9 @@ Horizon Avionics Buyer LLC,co_f710231cd0c9,Revolver,Consumer & Retail,,,SOFR,4.3
 Peraton Corp.,co_26028249ab33,Second Lien,,,,SOFR,7.75%,,,,60393,57591,47294,,57591,,,,,,OBDC,2026-02-18
 STS PARENT LLC,co_e3b9a8c94c34,First Lien,Consumer & Retail,,,SOFR,5%,,,,114425,113463,113281,,113463,,,,,,OBDC,2026-02-18
 STS PARENT LLC,co_e3b9a8c94c34,Revolver,Consumer & Retail,,,SOFR,5%,,,,9127,9043,8999,,9043,,,,,,OBDC,2026-02-18
-Hg Genesis 8 Sumoco Ltd.,co_513ef062b958,Other,,,7.5%,,,,,,,,,,,,,,,,OBDC,2026-02-18
+Hg Genesis 8 Sumoco Ltd.,co_1c78bf8813ba,Other,,,7.5%,,,,,,,,,,,,,,,,OBDC,2026-02-18
 Non-Affiliated,co_ae6f57d68d13,First Lien,,,,,,,,,12369,15375,16637,,15375,,,,,,OBDC,2026-02-18
-Hg Genesis 9 SumoCo Ltd.,co_513ef062b958,Unsecured Debt,,,6.25%,,,,,,53248,56596,62537,,56596,,,,,,OBDC,2026-02-18
+Hg Genesis 9 SumoCo Ltd.,co_1c78bf8813ba,Unsecured Debt,,,6.25%,,,,,,53248,56596,62537,,56596,,,,,,OBDC,2026-02-18
 Hg Saturn Luchaco Ltd.,co_4e8e0af53d43,Unsecured Debt,,,8.25%,,,,,,54489,69134,73291,,69134,,,,,,OBDC,2026-02-18
 MAJCO LLC,co_af768eded076,First Lien,Consumer & Retail,,,SOFR,4.5%,,,2027-09-01,75528,75038,75339,,75038,,,,,,OBDC,2026-02-18
 Spotless Brands LLC,co_9e457409bbbe,First Lien,Consumer & Retail,,,SOFR,5.75%,,,2028-07-01,94049,92805,94049,,92805,,,,,,OBDC,2026-02-18
