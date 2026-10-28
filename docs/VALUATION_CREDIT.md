@@ -70,9 +70,43 @@ field "1 = lowest risk, 5 = highest"; always check the source snippet. 16 of 49
 BDCs currently have no extractable non-accrual disclosure and are shown as
 "— / not disclosed".
 
+## Holdings data quality: concatenated 10-K schedules
+
+Some 10-K filings present the current-year and prior-year schedules of
+investments back to back. When a scraper flattens both, a single period ends up
+with roughly twice the rows and twice the fair value. ARCC Q4 2025 was the
+clearest example: $56.0B extracted vs ~$29.4B reported on the balance sheet.
+
+`src/processing/fix_multi_block_holdings.py`:
+
+1. Detects a restart in the company-name sequence (a second schedule begins).
+2. Requires both blocks to be substantial, with overlapping company sets.
+3. Compares each candidate block with the reported **Investments at Fair
+   Value** (unit-normalized) or the neighbouring quarters.
+4. Keeps the block that matches and rewrites both `{TICKER}.csv` and the
+   per-period CSV; iterates until stable (fixing one period can reveal the true
+   level for its neighbours).
+
+It is intentionally conservative: periods whose total is not ~1.7–2.3× the
+target, or where no block matches within 10%, are left alone.
+
+`build_analytics.py` then adds `quality_flags` to each period when:
+
+- fair value is more than **1.35×** the trailing 4-filing median;
+- fair value is less than **0.70×** the trailing median (units/gap);
+- row count falls more than **35%** versus the prior filing.
+
+The UI shows these as a “Data check” warning on Overview, Holdings and QoQ,
+and QoQ additionally warns when the net change exceeds 35% of the opening
+portfolio. This does not replace source verification, but it prevents an
+extraction problem from looking like a real portfolio move.
+
 ## Refresh commands
 
 ```bash
+# Split concatenated current/prior-year 10-K schedules (idempotent)
+python src/processing/fix_multi_block_holdings.py
+
 # Filing links (cached under output/filings; use --refresh to bypass cache)
 python src/processing/build_filing_links.py
 
@@ -83,8 +117,9 @@ python src/processing/extract_credit_quality.py
 python src/processing/build_analytics.py
 ```
 
-`process_all_bdcs.py` runs these automatically after financials; use
-`--skip-filings`, `--skip-credit`, or `--skip-analytics` to skip a step.
+`process_all_bdcs.py` runs the block fixer after consolidation and the rest
+after financials; use `--skip-block-fix`, `--skip-filings`, `--skip-credit`,
+or `--skip-analytics` to skip a step.
 
 ## Known limitations
 

@@ -156,6 +156,7 @@ SEC_API_KEY=your_sec_key_here          # Optional (increases rate limits)
 - `src/processing/post_process_extraction.py` - Automatic data cleaning
 - `src/processing/build_analytics.py` - Type/sector/vintage/valuation/quality/peers analytics JSON for the UI
 - `src/processing/build_filing_links.py` - SEC submissions API → EDGAR accession/URL per filing
+- `src/processing/fix_multi_block_holdings.py` - Split concatenated current/prior-year 10-K portfolio schedules
 - `src/processing/extract_credit_quality.py` - Non-accrual % and risk rating from the latest 10-Q/10-K
 - `src/processing/standardization_rules.py` - Standardization logic
 - `src/consolidation/consolidate_investments.py` - Merge investment CSVs
@@ -174,14 +175,14 @@ cd app && npm install && npm run dev
 
 Views, all powered by the data above:
 
-- **Overview** — portfolio fair value, companies, weighted yield/spread plus NAV, leverage, NII, unrealized G/L, concentration; **market strip** (price, P/NAV, dividend yield, NII coverage, non-accrual); SVG trend charts; peer-rank chips; data-coverage bars; source-filing links
+- **Overview** — portfolio fair value, companies, weighted yield/spread plus NAV, leverage, NII, unrealized G/L, concentration; **market strip** (price, P/NAV, dividend yield, NII coverage, non-accrual); SVG trend charts with hover tooltips (quarter, metric and portfolio fair value); peer-rank chips; data-coverage bars; source-filing links
 - **Holdings** — filterable per-filing holdings table
 - **Loan Types** — first lien / second lien / equity mix with marks vs cost, current period + mix over time
 - **Sectors** — industry mix with peer-median tilt and marks vs cost, current period + mix over time
 - **Rates & Structure** — floating vs fixed, reference-rate mix (SOFR/LIBOR/…), spread distribution, PIK share, coverage
 - **Vintage & Maturity** — acquisition-year vintage, **marks (FV/cost) by acquisition year**, **quarter-by-quarter vintage mark migration heatmap**, portfolio-age buckets, per-year maturity wall with weighted coupon and floating %, unrealized gain/loss by type and top gainers/losers
-- **QoQ Changes** — GitHub-style two-pane diff: pick any before/after filing, browse added/removed/modified companies like a file list, and inspect field-level changes in Unified or Split view
-- **Valuation & Coverage** — P/NAV and premium/discount, dividend yield, NII coverage of distributions, payout ratio, distribution rate on NAV, NAV total return (1Q/4Q), PIK share of income, market cap; coverage/NAV-return charts; quarterly quality table; **credit quality** (non-accrual at cost/FV, weighted-average risk rating, source disclosure); market detail and source lineage
+- **QoQ Changes** — GitHub-style two-pane diff: pick any before/after filing, browse added/removed/modified companies like a file list, and inspect field-level changes in Unified or Split view; suspicious periods show a **data-check warning**
+- **Valuation & Coverage** — P/NAV and premium/discount, dividend yield, NII coverage of distributions, payout ratio, distribution rate on NAV, NAV total return (1Q/4Q), PIK share of income, market cap; coverage/NAV-return charts; quarterly quality table with **portfolio FV per quarter**; **credit quality** (non-accrual at cost/FV, weighted-average risk rating, source disclosure); market detail and source lineage
 - **Financials** — balance sheet, income statement and cash flow (last 8 quarters) + trend charts; every quarter links to its SEC filing
 
 Periods are shown as fiscal quarters with filing dates, e.g. `Q2 2026 (2026-07-29)`; financial statement columns also show the form (`10-Q` / `10-K`).
@@ -194,7 +195,7 @@ Top-level sections (header nav):
 
 Extras: CSV export of the visible tables, shareable deep links (`#/peers/ARCC/large`, `#/bdc/ARCC/valuation`, `#/bdc/ARCC/vintage/2026-07-29`, `#/bdc/ARCC/holdings/2026-07-29/sector:Healthcare`, `#/companies/co_…`), and data-freshness indicators (holdings quarter vs financials quarter, balance check).
 
-**Data caveats:** market data comes from the per-ticker Yahoo profile (41 of 49 tickers; 35 have a usable P/NAV). It is a point-in-time snapshot with a visible as-of date, and extreme P/NAV / yield values are flagged in the UI. Credit-quality figures are parsed from the latest 10-Q/10-K text with a confidence score and the source sentence shown; 16 BDCs have no extractable disclosure and are marked accordingly. See `docs/VALUATION_CREDIT.md` for formulas and extraction rules.
+**Data caveats:** market data comes from the per-ticker Yahoo profile (41 of 49 tickers; 35 have a usable P/NAV). It is a point-in-time snapshot with a visible as-of date, and extreme P/NAV / yield values are flagged in the UI. Credit-quality figures are parsed from the latest 10-Q/10-K text with a confidence score and the source sentence shown; 16 BDCs have no extractable disclosure and are marked accordingly. Some 10-K filings concatenate the current-year and prior-year portfolio schedules; those are detected and split automatically, and any period that still fails a fair-value/row-count sanity check is flagged in the UI. See `docs/VALUATION_CREDIT.md` for formulas and extraction rules.
 
 **Interactive drill-down:** click any bar, card or table row in Loan Types, Sectors, Rates & Structure or Vintage & Maturity to preview that slice (positions, fair value, % of portfolio, top holdings) and jump straight to Holdings filtered to it. The filter appears as a removable chip and is encoded in the URL. The QoQ company list and the Companies sidebar are sortable (Δ fair value, current fair value, positions, name, fields changed / exposure, # BDCs, name).
 

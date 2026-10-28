@@ -655,6 +655,23 @@ function periodLabelShort(filingDate, periodEnd) {
   const info = periodEnd ? quarterInfoFromEnd(periodEnd) : quarterInfoFromFiling(filingDate);
   return info ? info.short : String(filingDate || '').slice(0, 7);
 }
+function periodQuality(fd) {
+  const period = ((state.analytics && state.analytics.periods) || []).find(p => p.filing_date === fd);
+  return (period && period.quality_flags) || [];
+}
+function periodFlagsHtml(fd) {
+  const flags = periodQuality(fd);
+  if (!flags.length) return '';
+  return '<div class="flagbox"><div><b>Data check' + (fd ? ' · ' + esc(fd) : '') + '</b></div>' +
+    flags.map(f => '<div>⚠ ' + esc(f) + '</div>').join('') + '</div>';
+}
+function periodQualityByEnd() {
+  const out = {};
+  for (const p of ((state.analytics && state.analytics.periods) || [])) {
+    if (p.period_end) out[p.period_end] = (p.quality_flags || []).length;
+  }
+  return out;
+}
 function filingFor(filed) {
   const filings = (state.analytics && state.analytics.filings) || {};
   return filings[filed] || null;
@@ -1138,10 +1155,25 @@ function latestDerived(metric) {
   if (!ends.length) return null;
   return node.series[ends[ends.length - 1]].val;
 }
+function portfolioFvByEnd() {
+  const out = {};
+  for (const p of ((state.analytics && state.analytics.periods) || [])) {
+    if (!p.period_end) continue;
+    const fv = p.totals && p.totals.fair_value;
+    if (fv !== null && fv !== undefined) out[p.period_end] = fv;
+  }
+  return out;
+}
 function derivedSeries(metric) {
   const node = (state.financials && state.financials.derived || {})[metric];
   if (!node || !node.series) return [];
-  return Object.keys(node.series).sort().map(end => ({ label: (quarterInfoFromEnd(end) || {}).short || end.slice(0, 7), value: node.series[end].val }));
+  const fvMap = portfolioFvByEnd();
+  return Object.keys(node.series).sort().map(end => ({
+    label: (quarterInfoFromEnd(end) || {}).short || end.slice(0, 7),
+    value: node.series[end].val,
+    fv: fvMap[end],
+    flag: periodQualityByEnd()[end],
+  }));
 }
 function latestStatement(label) {
   const node = (state.financials && state.financials.statements && state.financials.statements.balance_sheet || {})[label];
@@ -1199,7 +1231,12 @@ function lineChart(points, opts) {
     const x = pad + i * step;
     const y = h - pad - ((v - min) / span) * (h - pad * 2);
     path += (path ? ' L' : 'M') + x.toFixed(1) + ' ' + y.toFixed(1);
-    dots += '<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="1.6" fill="#24457c"><title>' + esc(p.label) + ': ' + (o.fmt ? o.fmt(v) : v) + '</title></circle>';
+    const tip = p.label +
+      (p.fv !== null && p.fv !== undefined && p.fv !== v ? ' · portfolio FV ' + fmtK(p.fv) : '') +
+      (p.flag ? ' · ⚠ data check' : '') +
+      ': ' + (o.fmt ? o.fmt(v) : v);
+    dots += '<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="1.8" fill="#24457c" pointer-events="none"/>' +
+      '<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="5" fill="transparent" style="cursor:pointer"><title>' + esc(tip) + '</title></circle>';
   });
   const last = points[points.length - 1];
   return '<div class="chart"><div class="title"><span>' + esc(o.title || '') + '</span><span class="last">' + (o.fmt ? o.fmt(num(last.value)) : last.value) + '</span></div>' +
@@ -1222,7 +1259,11 @@ function signedBarChart(points, opts) {
     const bh = Math.max(0.5, Math.abs(v) / maxAbs * (h / 2 - 7));
     const x = pad + i * step + 1, bw = Math.max(2, step - 2);
     const y = v >= 0 ? zero - bh : zero;
-    bars += '<rect x="' + x.toFixed(1) + '" y="' + y.toFixed(1) + '" width="' + bw.toFixed(1) + '" height="' + bh.toFixed(1) + '" fill="' + (v >= 0 ? '#1d7a4f' : '#a13333') + '" opacity=".82"><title>' + esc(p.label + ': ' + (o.fmt ? o.fmt(v) : v)) + '</title></rect>';
+    const tip = p.label +
+      (p.fv !== null && p.fv !== undefined && p.fv !== v ? ' · portfolio FV ' + fmtK(p.fv) : '') +
+      (p.flag ? ' · ⚠ data check' : '') +
+      ': ' + (o.fmt ? o.fmt(v) : v);
+    bars += '<rect x="' + x.toFixed(1) + '" y="' + y.toFixed(1) + '" width="' + bw.toFixed(1) + '" height="' + bh.toFixed(1) + '" fill="' + (v >= 0 ? '#1d7a4f' : '#a13333') + '" opacity=".82"><title>' + esc(tip) + '</title></rect>';
   });
   const last = points[points.length - 1];
   return '<div class="chart"><div class="title"><span>' + esc(o.title || '') + '</span><span class="last">' + (o.fmt ? o.fmt(num(last.value)) : '') + '</span></div>' +
@@ -1257,6 +1298,7 @@ async function renderOverview(el) {
     (val.price_asof ? ' · Market data as of <b>' + esc(val.price_asof) + '</b>' : '') +
     (finMeta.balance_check_ok === true ? ' · <span class="badge good">balance ✓</span>' : (finMeta.balance_check_ok === false ? ' · <span class="badge bad">balance check failed</span>' : '')) +
     '</div>';
+  html += periodFlagsHtml(p.filing_date);
 
   html += '<div class="cards">' +
     card('Portfolio Fair Value', fmtK(t.fair_value), p.filing_date) +
@@ -1300,8 +1342,8 @@ async function renderOverview(el) {
 
   // Trends
   const periods = (state.analytics.periods || []).slice(-16);
-  const fvPoints = periods.map(x => ({ label: periodLabelShort(x.filing_date, x.period_end), value: x.totals.fair_value }));
-  const yieldPoints = periods.map(x => ({ label: periodLabelShort(x.filing_date, x.period_end), value: x.totals.weighted_avg_cash_rate }));
+  const fvPoints = periods.map(x => ({ label: periodLabelShort(x.filing_date, x.period_end), value: x.totals.fair_value, flag: (x.quality_flags || []).length }));
+  const yieldPoints = periods.map(x => ({ label: periodLabelShort(x.filing_date, x.period_end), value: x.totals.weighted_avg_cash_rate, fv: x.totals.fair_value, flag: (x.quality_flags || []).length }));
   html += '<div class="section"><h3>Trends</h3><div class="grid2" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr))">';
   html += lineChart(fvPoints, { title: 'Portfolio fair value', fmt: fmtK });
   html += lineChart(yieldPoints, { title: 'Weighted avg cash rate', fmt: v => v.toFixed(2) + '%' });
@@ -1309,7 +1351,7 @@ async function renderOverview(el) {
   html += lineChart(derivedSeries('nav_per_share').slice(-16), { title: 'NAV per share', fmt: v => '$' + v.toFixed(2) });
   html += lineChart(derivedSeries('nii_per_share').slice(-16), { title: 'NII per share', fmt: v => '$' + v.toFixed(2) });
   html += lineChart(derivedSeries('asset_coverage').slice(-16), { title: 'Asset coverage', fmt: v => v.toFixed(2) + '×' });
-  html += '</div></div>';
+  html += '</div><div class="small muted" style="margin-top:4px">Hover any point for the quarter, metric and portfolio fair value.</div></div>';
 
   // Composition + snapshot
   html += '<div class="grid2"><div class="section">';
@@ -1388,7 +1430,8 @@ async function renderHoldings(el) {
   let head = '';
   if (state.hFilter) head += '<div class="filter-chip">' + esc(state.hFilter.label) + '<button id="hfilter-clear" title="Clear filter">×</button></div>';
   head += '<div class="small muted" style="margin-bottom:6px">' + fmtNum(rows.length) + ' positions · ' + fmtK(totalFv) + ' · ' + fmtPct(fullFv ? totalFv / fullFv * 100 : 0) + ' of portfolio</div>';
-  let html = '<table><thead><tr>' + cols.map(c => '<th class="' + (c[2] === 'num' ? 'num' : '') + '">' + c[1] + '</th>').join('') + '</tr></thead><tbody>';
+  const qualityHtml = periodFlagsHtml(state.period);
+  let html = qualityHtml + '<table><thead><tr>' + cols.map(c => '<th class="' + (c[2] === 'num' ? 'num' : '') + '">' + c[1] + '</th>').join('') + '</tr></thead><tbody>';
   const slice = rows.slice(0, 3000);
   for (const r of slice) {
     html += '<tr>';
@@ -1793,6 +1836,11 @@ function renderDiffView(el) {
     '<span class="muted">' + fmtK(s.totalBefore) + ' → ' + fmtK(s.totalAfter) + '</span>' +
     '<span class="muted">' + s.unchanged + ' unchanged hidden</span>' +
   '</div>';
+  html += periodFlagsHtml(state.diff.before);
+  html += periodFlagsHtml(state.diff.after);
+  if (s.totalBefore > 0 && Math.abs(s.net) / s.totalBefore > 0.35) {
+    html += '<div class="flagbox"><div><b>Large move — data check</b></div><div>⚠ Net change is ' + (Math.abs(s.net) / s.totalBefore * 100).toFixed(0) + '% of the opening portfolio. One of these filings may contain an annual block or a unit/scaling issue.</div></div>';
+  }
   html += '<div class="diff-bar">' +
     ['all', 'added', 'removed', 'increased', 'decreased'].map(f =>
       '<button class="chip-btn' + (state.diff.filter === f ? ' active' : '') + '" data-filter="' + f + '">' +
@@ -1921,6 +1969,7 @@ function renderValuation(el) {
   const val = a.valuation || {};
   const qp = (a.quality_periods || []).slice(-12);
   const credit = a.credit || {};
+  const fvMap = portfolioFvByEnd();
   const finLatest = (state.financials && state.financials.periods && state.financials.periods.length)
     ? state.financials.periods[state.financials.periods.length - 1] : null;
   const holdingsFiled = a.meta && a.meta.latest_holdings_filing;
@@ -1952,27 +2001,28 @@ function renderValuation(el) {
     html += '<div class="flagbox">' + val.flags.map(f => '<div>⚠ ' + esc(f) + '</div>').join('') + '</div>';
   }
 
-  const covPts = qp.filter(r => r.coverage !== null && r.coverage !== undefined).map(r => ({ label: (quarterInfoFromEnd(r.end) || {}).short || r.end, value: r.coverage }));
-  const distPts = qp.filter(r => r.distribution_rate_pct !== null && r.distribution_rate_pct !== undefined).map(r => ({ label: (quarterInfoFromEnd(r.end) || {}).short || r.end, value: r.distribution_rate_pct }));
-  const pikPts = qp.filter(r => r.pik_income_share_pct !== null && r.pik_income_share_pct !== undefined).map(r => ({ label: (quarterInfoFromEnd(r.end) || {}).short || r.end, value: r.pik_income_share_pct }));
-  const trPts = qp.filter(r => r.nav_tr_pct !== null && r.nav_tr_pct !== undefined).map(r => ({ label: (quarterInfoFromEnd(r.end) || {}).short || r.end, value: r.nav_tr_pct }));
+  const covPts = qp.filter(r => r.coverage !== null && r.coverage !== undefined).map(r => ({ label: (quarterInfoFromEnd(r.end) || {}).short || r.end, value: r.coverage, fv: fvMap[r.end] }));
+  const distPts = qp.filter(r => r.distribution_rate_pct !== null && r.distribution_rate_pct !== undefined).map(r => ({ label: (quarterInfoFromEnd(r.end) || {}).short || r.end, value: r.distribution_rate_pct, fv: fvMap[r.end] }));
+  const pikPts = qp.filter(r => r.pik_income_share_pct !== null && r.pik_income_share_pct !== undefined).map(r => ({ label: (quarterInfoFromEnd(r.end) || {}).short || r.end, value: r.pik_income_share_pct, fv: fvMap[r.end] }));
+  const trPts = qp.filter(r => r.nav_tr_pct !== null && r.nav_tr_pct !== undefined).map(r => ({ label: (quarterInfoFromEnd(r.end) || {}).short || r.end, value: r.nav_tr_pct, fv: fvMap[r.end] }));
 
   html += '<div class="section"><h3>Distribution quality trends</h3><div class="grid2" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr))">';
   html += lineChart(covPts, { title: 'NII coverage of dividends', fmt: v => v.toFixed(2) + '×' });
   html += lineChart(distPts, { title: 'Distribution rate on NAV', fmt: v => v.toFixed(1) + '%' });
   html += lineChart(pikPts, { title: 'PIK share of investment income', fmt: v => v.toFixed(1) + '%' });
   html += signedBarChart(trPts, { title: 'Quarterly NAV total return', fmt: v => signed(v) + '%' });
-  html += '</div></div>';
+  html += '</div><div class="small muted" style="margin-top:4px">Hover any point or bar for the quarter, metric and portfolio fair value.</div></div>';
 
   if (qp.length) {
     html += '<div class="section"><h3>Quarterly distribution quality</h3><table><thead><tr>' +
-      '<th>Quarter</th><th>Filing</th><th class="num">NAV / Sh</th><th class="num">NII / Sh</th><th class="num">DPS</th>' +
+      '<th>Quarter</th><th>Filing</th><th class="num">Portfolio FV</th><th class="num">NAV / Sh</th><th class="num">NII / Sh</th><th class="num">DPS</th>' +
       '<th class="num">NII Coverage</th><th class="num">Dist. Rate</th><th class="num">NAV TR</th><th class="num">PIK Share</th>' +
       '</tr></thead><tbody>';
     for (const q of qp.slice().reverse()) {
       const qLabel = (quarterInfoFromEnd(q.end) || {}).label || q.end;
       html += '<tr><td>' + esc(qLabel) + '</td>' +
         '<td>' + (q.filed ? filingLink(q.filed, q.form || 'filing') : '—') + '</td>' +
+        '<td class="num">' + (fvMap[q.end] != null ? fmtK(fvMap[q.end]) : '—') + '</td>' +
         '<td class="num">' + (q.nav_ps != null ? '$' + num(q.nav_ps).toFixed(2) : '—') + '</td>' +
         '<td class="num">' + (q.nii_ps_q != null ? '$' + num(q.nii_ps_q).toFixed(2) : '—') + '</td>' +
         '<td class="num">' + (q.dps_q != null ? '$' + num(q.dps_q).toFixed(2) : '—') + '</td>' +
