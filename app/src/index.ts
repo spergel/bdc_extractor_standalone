@@ -641,7 +641,9 @@ function discreteQuarter(series, end, ends) {
   if (!row) return null;
   const d = num(row.duration_days);
   const raw = num(row.val);
-  if (d === null || d <= 110 || raw === null) return { row, val: raw, derived: false };
+  if (raw === null) return { row, val: raw, derived: false };
+  if (row.derived) return { row, val: raw, derived: true, basis: row.derived };
+  if (d === null || d <= 110) return { row, val: raw, derived: false };
   let lo, hi;
   if (d <= 195) { lo = 70; hi = 110; }
   else if (d <= 290) { lo = 160; hi = 200; }
@@ -2050,6 +2052,7 @@ function renderValuation(el) {
     card('Share Price', val.price != null ? '$' + num(val.price).toFixed(2) : '—', val.price_asof ? 'as of ' + val.price_asof : 'no market profile') +
     card('P/NAV', pNav !== null ? pNav.toFixed(2) + '×' : '—', val.premium_discount_pct != null ? signed(val.premium_discount_pct) + '% vs NAV' : '') +
     card('Dividend Yield', yld !== null ? fmtPct(yld) : '—', val.dividend_rate != null ? '$' + num(val.dividend_rate).toFixed(2) + ' annual' : '') +
+    card('Net Income / Share', val.net_income_ps != null ? '$' + num(val.net_income_ps).toFixed(2) : '—', val.net_income_ps_period ? (quarterInfoFromEnd(val.net_income_ps_period) || {}).short || val.net_income_ps_period : '') +
     card('NII Coverage', cov !== null ? cov.toFixed(2) + '×' : '—', val.payout_ratio_pct != null ? 'payout ' + fmtPct(val.payout_ratio_pct) : '') +
     card('Distribution Rate', val.distribution_rate_pct != null ? fmtPct(val.distribution_rate_pct) : '—', 'annualized DPS / NAV') +
     card('NAV Total Return', val.nav_tr_4q_pct != null ? signed(val.nav_tr_4q_pct) + '%' : '—', val.nav_tr_1q_pct != null ? '1Q ' + signed(val.nav_tr_1q_pct) + '%' : '') +
@@ -2080,7 +2083,7 @@ function renderValuation(el) {
 
   if (qp.length) {
     html += '<div class="section"><h3>Quarterly distribution quality</h3><table><thead><tr>' +
-      '<th>Quarter</th><th>Filing</th><th class="num">Portfolio FV</th><th class="num">NAV / Sh</th><th class="num">NII / Sh</th><th class="num">DPS</th>' +
+      '<th>Quarter</th><th>Filing</th><th class="num">Portfolio FV</th><th class="num">NAV / Sh</th><th class="num">Net Income / Sh</th><th class="num">NII / Sh</th><th class="num">DPS</th>' +
       '<th class="num">NII Coverage</th><th class="num">Dist. Rate</th><th class="num">NAV TR</th><th class="num">PIK Share</th>' +
       '</tr></thead><tbody>';
     for (const q of qp.slice().reverse()) {
@@ -2089,6 +2092,7 @@ function renderValuation(el) {
         '<td>' + (q.filed ? filingLink(q.filed, q.form || 'filing') : '—') + '</td>' +
         '<td class="num">' + (fvMap[q.end] != null ? fmtK(fvMap[q.end]) : '—') + '</td>' +
         '<td class="num">' + (q.nav_ps != null ? '$' + num(q.nav_ps).toFixed(2) : '—') + '</td>' +
+        '<td class="num">' + (q.net_income_ps != null ? '$' + num(q.net_income_ps).toFixed(2) : '—') + '</td>' +
         '<td class="num">' + (q.nii_ps_q != null ? '$' + num(q.nii_ps_q).toFixed(2) : '—') + '</td>' +
         '<td class="num">' + (q.dps_q != null ? '$' + num(q.dps_q).toFixed(2) : '—') + '</td>' +
         '<td class="num ' + (num(q.coverage) !== null && num(q.coverage) < 1 ? 'neg' : '') + '">' + (q.coverage != null ? num(q.coverage).toFixed(2) + '×' : '—') + '</td>' +
@@ -2273,6 +2277,7 @@ function renderFinancials(el) {
   const derived = fin.derived || {};
   let html = '<div class="section"><h3>Trends</h3><div class="grid2" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr))">';
   html += lineChart(derivedSeries('nav_per_share'), { title: 'NAV per share', fmt: v => '$' + v.toFixed(2) });
+  html += lineChart(derivedSeries('net_income_per_share'), { title: 'Net income per share', fmt: v => '$' + v.toFixed(2) });
   html += lineChart(derivedSeries('nii_per_share'), { title: 'NII per share', fmt: v => '$' + v.toFixed(2) });
   html += lineChart(derivedSeries('debt_to_equity'), { title: 'Debt / equity', fmt: v => v.toFixed(2) + '×' });
   html += lineChart(derivedSeries('asset_coverage'), { title: 'Asset coverage', fmt: v => v.toFixed(2) + '×' });
@@ -2284,9 +2289,11 @@ function renderFinancials(el) {
   const d2e = latestDerived('debt_to_equity');
   const cov = latestDerived('asset_coverage');
   const nii = latestDerived('nii_per_share');
+  const niPs = latestDerived('net_income_per_share');
   html += card('NAV / Share', nav === null ? '—' : '$' + num(nav).toFixed(2), 'latest quarter end');
   html += card('Debt / Equity', d2e === null ? '—' : num(d2e).toFixed(2) + '×', '');
   html += card('Asset Coverage', cov === null ? '—' : num(cov).toFixed(2) + '×', '');
+  html += card('Net Income / Share', niPs === null ? '—' : '$' + num(niPs).toFixed(2), '');
   html += card('NII / Share', nii === null ? '—' : '$' + num(nii).toFixed(2), '');
   html += '</div>';
 
@@ -2372,6 +2379,7 @@ const PEER_METRICS = [
   { key: 'debt_to_equity', label: 'Debt / equity', fmt: v => v === null || v === undefined ? '—' : num(v).toFixed(2) + '×', higher: false },
   { key: 'asset_coverage', label: 'Asset coverage', fmt: v => v === null || v === undefined ? '—' : num(v).toFixed(2) + '×', higher: true },
   { key: 'nii_per_share', label: 'NII / share', fmt: v => v === null || v === undefined ? '—' : '$' + num(v).toFixed(2), higher: true },
+  { key: 'net_income_ps', label: 'Net income / share', fmt: v => v === null || v === undefined ? '—' : '$' + num(v).toFixed(2), higher: true },
   { key: 'unrealized_gl_pct', label: 'Unrealized G/L', fmt: v => v === null || v === undefined ? '—' : signed(v) + '%', higher: true },
   { key: 'median_vintage_year', label: 'Median vintage', fmt: v => v === null || v === undefined ? '—' : String(v), higher: true },
   { key: 'age_0_2_pct', label: 'Acquired < 2 yrs', fmt: fmtPct, higher: true },
@@ -2649,6 +2657,7 @@ function peerCell(key, v, row) {
   if (key === 'risk_rating') return v === null || v === undefined ? '—' : num(v).toFixed(1);
   if (key === 'nav_tr_4q_pct') return v === null || v === undefined ? '—' : '<span class="' + (num(v) < 0 ? 'neg' : 'pos') + '">' + signed(v) + '%</span>';
   if (key === 'market_cap') return fmtMoney(v);
+  if (key === 'net_income_ps') return v === null || v === undefined ? '—' : '$' + num(v).toFixed(2);
   if (key === 'first_lien_pct' || key === 'second_lien_pct' || key === 'subordinated_pct' || key === 'equity_pct' || key === 'pik_share_pct' || key === 'floating_pct' || key === 'top10_pct' || key === 'age_0_2_pct' || key === 'age_5plus_pct') return fmtPct(v);
   if (key === 'unrealized_gl_pct') return '<span class="' + (num(v) < 0 ? 'neg' : 'pos') + '">' + signed(v) + '%</span>';
   if (key === 'weighted_avg_cash_rate' || key === 'weighted_avg_spread') return fmtRate(v);
@@ -2667,7 +2676,7 @@ function peerTableHtml() {
     ['pik_share_pct', 'PIK %'], ['floating_pct', 'Floating %'], ['top10_pct', 'Top10 %'],
     ['unrealized_gl_pct', 'G/L %'], ['median_vintage_year', 'Vintage'], ['age_0_2_pct', '<2yr %'],
     ['age_5plus_pct', '5yr+ %'], ['nav_per_share', 'NAV/Sh'], ['debt_to_equity', 'D/E'],
-    ['asset_coverage', 'Cover'], ['nii_per_share', 'NII/Sh'], ['total_net_change', 'QoQ Δ FV'],
+    ['asset_coverage', 'Cover'], ['nii_per_share', 'NII/Sh'], ['net_income_ps', 'NI/Sh'], ['total_net_change', 'QoQ Δ FV'],
     ['p_nav', 'P/NAV'], ['dividend_yield_pct', 'Yield'], ['nii_coverage', 'NII Cov'],
     ['non_accrual_fv_pct', 'NonAccr'], ['risk_rating', 'Risk'],
     ['balance_check_ok', 'Bal'], ['fin_periods', 'Fin Qs'],

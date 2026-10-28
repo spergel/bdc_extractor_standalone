@@ -131,11 +131,24 @@ extraction and left flagged rather than inflated.
 
 ## Financial statement normalization
 
-The Financials tab labels flow durations as Q / H1 / 9M / FY. When a period is
-reported only on a year-to-date basis, the UI converts it to a discrete quarter
-(YTD − prior YTD) and marks it with a **†**. Balance-sheet facts are never
-modified. The same duration-aware annualization is used for valuation and
-coverage metrics in `build_analytics.py`.
+The extractor now converts flow facts to discrete quarters at extraction time:
+
+- Q2 = H1 − Q1
+- Q3 = 9M − H1
+- Q4 = FY − 9M
+
+Explicit quarter-length facts always win; derived values are tagged with
+`derived: "H1-Q1"`, `"9M-H1"` or `"FY-9M"` and marked **†** in the UI.
+Balance-sheet facts are never modified. The same duration-aware annualization
+is used for valuation and coverage metrics in `build_analytics.py`.
+
+**Net Income per Share** is sourced from
+`InvestmentCompanyInvestmentIncomeLossFromOperationsPerShare` (the BDC
+"net increase in net assets from operations per share" concept), with
+`EarningsPerShareBasic` as a fallback and `Net Income (Loss) / shares` as a
+final fallback. This fills the three BDCs (PNNT, PFLT, CION) that do not tag
+`EarningsPerShareBasic` at all. Per-share facts above $50 are rejected as
+split/unit artifacts.
 
 ## Refresh commands
 

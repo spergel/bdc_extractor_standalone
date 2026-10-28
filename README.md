@@ -183,8 +183,8 @@ Views, all powered by the data above:
 - **Rates & Structure** — floating vs fixed, reference-rate mix (SOFR/LIBOR/…), spread distribution, PIK share, coverage
 - **Vintage & Maturity** — acquisition-year vintage, **marks (FV/cost) by acquisition year**, **quarter-by-quarter vintage mark migration heatmap**, portfolio-age buckets, per-year maturity wall with weighted coupon and floating %, unrealized gain/loss by type and top gainers/losers
 - **QoQ Changes** — GitHub-style two-pane diff: pick any before/after filing, browse added/removed/modified companies like a file list, and inspect field-level changes in Unified or Split view; suspicious periods show a **data-check warning**
-- **Valuation & Coverage** — P/NAV and premium/discount, dividend yield, NII coverage of distributions, payout ratio, distribution rate on NAV, NAV total return (1Q/4Q), PIK share of income, market cap; coverage/NAV-return charts; quarterly quality table with **portfolio FV per quarter**; **credit quality** (non-accrual at cost/FV, weighted-average risk rating, source disclosure); market detail and source lineage
-- **Financials** — balance sheet, income statement and cash flow (last 8 quarters) + trend charts; every quarter links to its SEC filing
+- **Valuation & Coverage** — P/NAV and premium/discount, dividend yield, **net income per share**, NII coverage of distributions, payout ratio, distribution rate on NAV, NAV total return (1Q/4Q), PIK share of income, market cap; coverage/NAV-return charts; quarterly quality table with **portfolio FV per quarter**; **credit quality** (non-accrual at cost/FV, weighted-average risk rating, source disclosure); market detail and source lineage
+- **Financials** — balance sheet, income statement and cash flow (last 8 quarters) + trend charts; **Net Income per Share** (BDC operations per-share concept) and NII/share trends; Q2/Q3/Q4 are derived from H1/Q1, 9M/H1 and FY/9M and marked **†**; every quarter links to its SEC filing
 
 Periods are shown as fiscal quarters with filing dates, e.g. `Q2 2026 (2026-07-29)`; financial statement columns also show the form (`10-Q` / `10-K`).
 
