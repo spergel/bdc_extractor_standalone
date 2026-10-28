@@ -139,6 +139,20 @@ app.get("/api/tickers/:ticker/financials", async (c) => {
   return c.json(data);
 });
 
+app.get("/api/tickers/:ticker/filings", async (c) => {
+  const ticker = c.req.param("ticker").toUpperCase();
+  const data = await readJson(`filings/${ticker}.json`);
+  if (!data) return c.json({ error: "filings not found" }, 404);
+  return c.json(data);
+});
+
+app.get("/api/tickers/:ticker/credit", async (c) => {
+  const ticker = c.req.param("ticker").toUpperCase();
+  const data = await readJson(`credit/${ticker}.json`);
+  if (!data) return c.json({ error: "credit quality not found" }, 404);
+  return c.json(data);
+});
+
 app.get("/api/tickers/:ticker/profile", async (c) => {
   const ticker = c.req.param("ticker").toUpperCase();
   const data = await readJson(`${ticker}/profile.json`);
@@ -358,6 +372,10 @@ const UI_HTML = `<!doctype html>
   .profile .desc { margin-top: 6px; color: #333; }
   .linkish { color: var(--navy2); cursor: pointer; text-decoration: underline; }
   .asof { font-size: 11px; color: var(--muted); margin-bottom: 8px; }
+  a { color: var(--navy2); }
+  .flagbox { background: #fbf3e3; border: 1px solid #e8d3a8; color: #8a6417; border-radius: 4px; padding: 6px 10px; font-size: 11.5px; margin-bottom: 10px; }
+  .flagbox div + div { margin-top: 2px; }
+  details summary { cursor: pointer; }
   /* GitHub-style diff */
   .diff-bar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
   .diff-bar select { padding: 4px 6px; border: 1px solid var(--line); border-radius: 3px; font-size: 12px; background: #fff; }
@@ -451,6 +469,10 @@ const UI_HTML = `<!doctype html>
   .lb-bar { width: 64px; height: 7px; background: #e9ecf1; border-radius: 4px; overflow: hidden; flex-shrink: 0; }
   .lb-bar > span { display: block; height: 100%; background: var(--accent); }
   table.mini td, table.mini th { font-size: 11px; padding: 3px 6px; }
+  .heatmap-table { border-collapse: separate; border-spacing: 0; font-size: 11px; }
+  .heatmap-table th, .heatmap-table td { padding: 3px 6px; border-bottom: 1px solid #edf0f3; white-space: nowrap; }
+  .heatmap-table th { background: #f2f4f7; position: sticky; top: 0; }
+  .heatmap-table td.heat { font-variant-numeric: tabular-nums; }
   @media (max-width: 900px) { .diff-layout { grid-template-columns: 1fr; } .grid3 { grid-template-columns: 1fr; } .chart-split { grid-template-columns: 1fr; } }
   @media (max-width: 800px) {
     .layout { grid-template-columns: 1fr; grid-template-rows: 220px 1fr; }
@@ -632,6 +654,16 @@ function periodLabel(filingDate, periodEnd) {
 function periodLabelShort(filingDate, periodEnd) {
   const info = periodEnd ? quarterInfoFromEnd(periodEnd) : quarterInfoFromFiling(filingDate);
   return info ? info.short : String(filingDate || '').slice(0, 7);
+}
+function filingFor(filed) {
+  const filings = (state.analytics && state.analytics.filings) || {};
+  return filings[filed] || null;
+}
+function filingLink(filed, label) {
+  const f = filingFor(filed);
+  if (!f || !f.url) return esc(label);
+  const tip = [f.form, f.filed ? 'filed ' + f.filed : '', f.report_date ? 'period ' + f.report_date : ''].filter(Boolean).join(' · ');
+  return '<a href="' + esc(f.url) + '" target="_blank" rel="noopener" title="' + esc(tip + ' · SEC EDGAR') + '">' + esc(label) + ' ↗</a>';
 }
 function signed(v, digits) {
   const n = num(v);
@@ -937,6 +969,7 @@ async function renderCompanySidebar() {
 
 const TABS = [
   ['overview', 'Overview'],
+  ['valuation', 'Valuation & Coverage'],
   ['holdings', 'Holdings'],
   ['types', 'Loan Types'],
   ['sectors', 'Sectors'],
@@ -1072,6 +1105,7 @@ function renderMain() {
   if (state.mode === 'peers') return renderPeerEvaluation(el);
   if (!state.ticker) { el.innerHTML = '<div class="empty">Select a BDC from the list.</div>'; return; }
   if (state.tab === 'overview') renderOverview(el);
+  else if (state.tab === 'valuation') renderValuation(el);
   else if (state.tab === 'holdings') renderHoldings(el);
   else if (state.tab === 'types') renderBreakdown(el, 'types', 'Loan Types');
   else if (state.tab === 'sectors') renderBreakdown(el, 'sectors', 'Sectors');
@@ -1173,6 +1207,28 @@ function lineChart(points, opts) {
     '<path d="' + path + '" fill="none" stroke="#24457c" stroke-width="1.8" />' + dots +
     '</svg><div class="small muted">' + esc(points[0].label) + ' → ' + esc(last.label) + ' · range ' + (o.fmt ? o.fmt(min) + '–' + o.fmt(max) : min + '–' + max) + '</div></div>';
 }
+function signedBarChart(points, opts) {
+  const o = opts || {};
+  const vals = points.map(p => num(p.value)).filter(v => v !== null);
+  if (!vals.length) return '<div class="chart"><div class="title">' + esc(o.title || '') + '</div><div class="muted small">Not enough history.</div></div>';
+  const w = 300, h = 86, pad = 8;
+  const maxAbs = Math.max.apply(null, vals.map(v => Math.abs(v)).concat([1]));
+  const zero = h / 2;
+  const step = (w - pad * 2) / Math.max(1, points.length);
+  let bars = '';
+  points.forEach((p, i) => {
+    const v = num(p.value);
+    if (v === null) return;
+    const bh = Math.max(0.5, Math.abs(v) / maxAbs * (h / 2 - 7));
+    const x = pad + i * step + 1, bw = Math.max(2, step - 2);
+    const y = v >= 0 ? zero - bh : zero;
+    bars += '<rect x="' + x.toFixed(1) + '" y="' + y.toFixed(1) + '" width="' + bw.toFixed(1) + '" height="' + bh.toFixed(1) + '" fill="' + (v >= 0 ? '#1d7a4f' : '#a13333') + '" opacity=".82"><title>' + esc(p.label + ': ' + (o.fmt ? o.fmt(v) : v)) + '</title></rect>';
+  });
+  const last = points[points.length - 1];
+  return '<div class="chart"><div class="title"><span>' + esc(o.title || '') + '</span><span class="last">' + (o.fmt ? o.fmt(num(last.value)) : '') + '</span></div>' +
+    '<svg viewBox="0 0 ' + w + ' ' + h + '" preserveAspectRatio="none"><line x1="' + pad + '" y1="' + zero + '" x2="' + (w - pad) + '" y2="' + zero + '" stroke="#c9cdd4" stroke-width="1"/>' + bars + '</svg>' +
+    '<div class="small muted">' + esc(points[0].label) + ' → ' + esc(last.label) + ' · range ' + (o.fmt ? o.fmt(Math.min.apply(null, vals)) + ' to ' + o.fmt(Math.max.apply(null, vals)) : '') + '</div></div>';
+}
 function coverageBar(label, pct) {
   const p = num(pct) || 0;
   return '<div class="cov-row"><span>' + esc(label) + '</span><div class="cov-track"><div class="cov-fill" style="width:' + Math.min(100, p).toFixed(1) + '%"></div></div><span class="num">' + p.toFixed(0) + '%</span></div>';
@@ -1183,19 +1239,22 @@ async function renderOverview(el) {
   if (!p) { el.innerHTML = '<div class="empty">No analytics data for this BDC.</div>'; return; }
   const t = p.totals || {};
   const prof = state.profile || {};
-  const nav = latestDerived('nav_per_share');
+  const val = state.analytics.valuation || {};
+  const credit = state.analytics.credit || {};
+  const nav = val.nav_per_share != null ? num(val.nav_per_share) : latestDerived('nav_per_share');
   const d2e = latestDerived('debt_to_equity');
   const cov = latestDerived('asset_coverage');
   const nii = latestDerived('nii_per_share');
-  const price = num(prof.price && prof.price.regularMarketPrice);
-  const prNav = nav !== null && price !== null ? (price / nav - 1) * 100 : null;
+  const price = val.price != null ? num(val.price) : num(prof.price && prof.price.regularMarketPrice);
+  const prNav = val.premium_discount_pct != null ? num(val.premium_discount_pct) : (nav !== null && price !== null ? (price / nav - 1) * 100 : null);
   const assets = latestStatement('Assets');
   const debt = latestDerived('total_debt');
   const equity = latestStatement("Stockholders' Equity") !== null ? latestStatement("Stockholders' Equity") : latestStatement('Net Assets');
   const finMeta = (state.analytics.meta && state.analytics.meta.financials) || {};
   const finLatest = (state.financials && state.financials.periods && state.financials.periods.length) ? state.financials.periods[state.financials.periods.length - 1] : null;
-  let html = '<div class="asof">Holdings <b>' + esc(periodLabel(p.filing_date, p.period_end)) + '</b>' +
-    (finLatest ? ' · Financials <b>' + esc(periodLabel(finLatest.filed || finLatest.end, finLatest.end)) + '</b>' : '') +
+  let html = '<div class="asof">Holdings <b>' + filingLink(p.filing_date, periodLabel(p.filing_date, p.period_end)) + '</b>' +
+    (finLatest ? ' · Financials <b>' + filingLink(finLatest.filed, periodLabel(finLatest.filed || finLatest.end, finLatest.end)) + '</b>' : '') +
+    (val.price_asof ? ' · Market data as of <b>' + esc(val.price_asof) + '</b>' : '') +
     (finMeta.balance_check_ok === true ? ' · <span class="badge good">balance ✓</span>' : (finMeta.balance_check_ok === false ? ' · <span class="badge bad">balance check failed</span>' : '')) +
     '</div>';
 
@@ -1212,6 +1271,16 @@ async function renderOverview(el) {
     card('Floating Rate', fmtPct(t.floating_pct), 'PIK ' + fmtPct(t.pik_share_pct) + ' of FV', 'rateType', 'Floating') +
     card('Top 10 Concentration', fmtPct(t.top10_pct), 'of fair value') +
   '</div>';
+
+  html += '<div class="section"><h3>Market &amp; distribution</h3><div class="cards">' +
+    card('Share Price', price === null ? '—' : '$' + price.toFixed(2), val.price_asof ? 'as of ' + val.price_asof : 'no market profile') +
+    card('P/NAV', prNav === null ? '—' : (val.p_nav != null ? num(val.p_nav).toFixed(2) : (price / nav).toFixed(2)) + '×', prNav === null ? '' : signed(prNav) + '% vs NAV') +
+    card('Dividend Yield', val.dividend_yield_pct != null ? fmtPct(val.dividend_yield_pct) : '—', val.dividend_rate != null ? '$' + num(val.dividend_rate).toFixed(2) + ' annual' : '') +
+    card('NII Coverage', val.nii_coverage != null ? num(val.nii_coverage).toFixed(2) + '×' : '—', val.payout_ratio_pct != null ? 'payout ' + fmtPct(val.payout_ratio_pct) : '') +
+    card('Non-Accrual (FV)', credit.non_accrual_fv_pct != null ? fmtPct(credit.non_accrual_fv_pct) : '—', credit.non_accrual_cost_pct != null ? 'cost ' + fmtPct(credit.non_accrual_cost_pct) : 'as disclosed') +
+  '</div>';
+  if ((val.flags || []).length) html += '<div class="flagbox">' + val.flags.map(f => '<div>⚠ ' + esc(f) + '</div>').join('') + '</div>';
+  html += '</div>';
 
   // Peer rank chips
   const peers = state.peers && state.peers.peers;
@@ -1448,16 +1517,70 @@ function renderVintage(el) {
 
   html += '<div class="section"><h3>Vintage — ' + p.filing_date + '</h3>' +
     bars(p.vintage_years || [], 'year', 'fair_value', 'pct', fmtK, '', 'vintage') + '</div>';
+
+  const vy = (p.vintage_years || []).filter(v => v.mark_pct !== null && v.mark_pct !== undefined && (v.pct >= 0.2 || v.count >= 5));
+  if (vy.length) {
+    html += '<div class="section"><h3>Marks by acquisition year</h3><table><thead><tr><th>Vintage</th><th class="num">Fair Value</th><th class="num">% FV</th><th class="num">Cost</th><th class="num">Mark</th><th class="num">Positions</th></tr></thead><tbody>';
+    for (const v of vy.slice().reverse()) {
+      const mark = num(v.mark_pct);
+      html += '<tr class="clickrow" data-filter-kind="vintage" data-filter-value="' + esc(v.year) + '" title="Click to filter holdings"><td><b>' + esc(v.year) + '</b></td>' +
+        '<td class="num">' + fmtK(v.fair_value) + '</td><td class="num">' + fmtPct(v.pct) + '</td>' +
+        '<td class="num">' + (v.cost === null || v.cost === undefined ? '—' : fmtK(v.cost)) + '</td>' +
+        '<td class="num ' + (mark === null ? '' : (mark < 0 ? 'neg' : 'pos')) + '">' + (mark === null ? '—' : signed(mark) + '%') + '</td>' +
+        '<td class="num">' + fmtNum(v.count) + '</td></tr>';
+    }
+    html += '</tbody></table><div class="small muted" style="margin-top:4px">Mark = (fair value − amortized cost) / amortized cost. Cohorts below 0.2% of FV and fewer than 5 positions are omitted.</div></div>';
+  }
   html += '<div class="grid2">';
   html += '<div class="section"><h3>Portfolio age (years since acquisition)</h3>' + bars(p.age_buckets || [], 'bucket', 'fair_value', 'pct', fmtK, '', 'age') + '</div>';
   html += '<div class="section"><h3>Maturity wall (by year)</h3>' + bars(p.maturity_wall || [], 'year', 'fair_value', 'pct', fmtK, 'alt', 'maturity') + '</div>';
   html += '</div>';
+
+  if ((p.maturity_wall || []).length) {
+    html += '<div class="section"><h3>Maturity wall detail</h3><table><thead><tr><th>Maturity</th><th class="num">Fair Value</th><th class="num">% FV</th><th class="num">Wtd Cash Rate</th><th class="num">Floating</th><th class="num">Positions</th></tr></thead><tbody>';
+    for (const w of (p.maturity_wall || [])) {
+      html += '<tr class="clickrow" data-filter-kind="maturity" data-filter-value="' + esc(w.year) + '" title="Click to filter holdings"><td><b>' + esc(w.year) + '</b></td>' +
+        '<td class="num">' + fmtK(w.fair_value) + '</td><td class="num">' + fmtPct(w.pct) + '</td>' +
+        '<td class="num">' + (w.weighted_avg_cash_rate === null || w.weighted_avg_cash_rate === undefined ? '—' : fmtRate(w.weighted_avg_cash_rate)) + '</td>' +
+        '<td class="num">' + (w.floating_pct === null || w.floating_pct === undefined ? '—' : fmtPct(w.floating_pct)) + '</td>' +
+        '<td class="num">' + fmtNum(w.count) + '</td></tr>';
+    }
+    html += '</tbody></table></div>';
+  }
 
   html += '<div class="section"><h3>Marks vs amortized cost</h3><table><thead><tr><th>Group</th><th class="num">Fair Value</th><th class="num">Unrealized G/L</th><th class="num">G/L %</th></tr></thead><tbody>';
   for (const it of (p.types || []).slice(0, 8)) {
     html += '<tr class="clickrow" data-filter-kind="type" data-filter-value="' + esc(it.type) + '" title="Click to filter holdings"><td>' + esc(it.type) + '</td><td class="num">' + fmtK(it.fair_value) + '</td><td class="num">' + (it.unrealized_gl === null || it.unrealized_gl === undefined ? '—' : fmtK(it.unrealized_gl)) + '</td><td class="num ' + (num(it.unrealized_gl_pct) < 0 ? 'neg' : 'pos') + '">' + (it.unrealized_gl_pct === null || it.unrealized_gl_pct === undefined ? '—' : signed(it.unrealized_gl_pct) + '%') + '</td></tr>';
   }
   html += '</tbody></table><div class="small muted" style="margin-top:4px">By investment type. Cost coverage: ' + fmtPct(t.cost_coverage_pct, 0) + ' of fair value.</div></div>';
+
+  const hist = (state.analytics.vintage_history || []).slice(-8);
+  if (hist.length > 1) {
+    const lastHist = hist[hist.length - 1];
+    const years = Array.from(new Set(hist.flatMap(h => (h.years || []).map(y => y.year)))).filter(y => {
+      const cell = (lastHist.years || []).find(x => x.year === y);
+      return cell && num(cell.pct) >= 0.3;
+    }).sort().reverse();
+    if (years.length) {
+      html += '<div class="section"><h3>Vintage mark migration (FV / cost)</h3><div style="overflow:auto"><table class="heatmap-table"><thead><tr><th>Vintage</th>' +
+        hist.map(h => '<th class="num">' + esc(periodLabelShort(h.filing_date, h.period_end)) + '</th>').join('') + '</tr></thead><tbody>';
+      for (const y of years) {
+        html += '<tr><td><b>' + esc(y) + '</b></td>';
+        for (const h of hist) {
+          const cell = (h.years || []).find(x => x.year === y);
+          const m = cell ? num(cell.mark_pct) : null;
+          let style = '';
+          if (m !== null) {
+            const alpha = (0.05 + Math.min(0.24, Math.abs(m) / 40 * 0.24)).toFixed(2);
+            style = m >= 0 ? 'background:rgba(29,122,79,' + alpha + ');' : 'background:rgba(161,51,51,' + alpha + ');';
+          }
+          html += '<td class="num heat" style="' + style + '" title="' + esc(y + ' · ' + periodLabelShort(h.filing_date, h.period_end) + ': ' + (m === null ? '—' : signed(m) + '%')) + '">' + (m === null ? '—' : signed(m) + '%') + '</td>';
+        }
+        html += '</tr>';
+      }
+      html += '</tbody></table></div><div class="small muted">Rows are acquisition years with at least 0.3% of current FV. Green = above cost, red = below cost.</div></div>';
+    }
+  }
 
   html += '<div class="grid2">';
   html += '<div class="section"><h3>Top 5 gainers</h3><table><thead><tr><th>Company</th><th class="num">G/L</th><th class="num">Fair Value</th></tr></thead><tbody>';
@@ -1792,6 +1915,125 @@ async function renderChanges(el) {
   if (state.diff.computed) renderDiffView(el);
 }
 
+// ------------------------------------------------------------------ valuation & coverage
+function renderValuation(el) {
+  const a = state.analytics || {};
+  const val = a.valuation || {};
+  const qp = (a.quality_periods || []).slice(-12);
+  const credit = a.credit || {};
+  const finLatest = (state.financials && state.financials.periods && state.financials.periods.length)
+    ? state.financials.periods[state.financials.periods.length - 1] : null;
+  const holdingsFiled = a.meta && a.meta.latest_holdings_filing;
+  const navPeriod = val.latest_period ? ((quarterInfoFromEnd(val.latest_period) || {}).label || val.latest_period) : '—';
+  const finLabel = finLatest ? periodLabel(finLatest.filed || finLatest.end, finLatest.end) : '—';
+  const cov = num(val.nii_coverage), pNav = num(val.p_nav), yld = num(val.dividend_yield_pct);
+
+  let html = '<div class="asof">Market data as of <b>' + esc(val.price_asof || '—') + '</b> · NAV ' + esc(navPeriod) +
+    ' · financials <b>' + filingLink(finLatest && finLatest.filed, finLabel) + '</b>' +
+    ' · holdings <b>' + filingLink(holdingsFiled, periodLabel(holdingsFiled, a.meta && a.meta.latest_holdings_period_end)) + '</b></div>';
+
+  html += '<div class="cards">' +
+    card('Share Price', val.price != null ? '$' + num(val.price).toFixed(2) : '—', val.price_asof ? 'as of ' + val.price_asof : 'no market profile') +
+    card('P/NAV', pNav !== null ? pNav.toFixed(2) + '×' : '—', val.premium_discount_pct != null ? signed(val.premium_discount_pct) + '% vs NAV' : '') +
+    card('Dividend Yield', yld !== null ? fmtPct(yld) : '—', val.dividend_rate != null ? '$' + num(val.dividend_rate).toFixed(2) + ' annual' : '') +
+    card('NII Coverage', cov !== null ? cov.toFixed(2) + '×' : '—', val.payout_ratio_pct != null ? 'payout ' + fmtPct(val.payout_ratio_pct) : '') +
+    card('Distribution Rate', val.distribution_rate_pct != null ? fmtPct(val.distribution_rate_pct) : '—', 'annualized DPS / NAV') +
+    card('NAV Total Return', val.nav_tr_4q_pct != null ? signed(val.nav_tr_4q_pct) + '%' : '—', val.nav_tr_1q_pct != null ? '1Q ' + signed(val.nav_tr_1q_pct) + '%' : '') +
+    card('PIK Share of Income', val.pik_income_share_pct != null ? fmtPct(val.pik_income_share_pct) : '—', 'annualized PIK / total income') +
+    card('Market Cap', val.market_cap != null ? fmtMoney(val.market_cap) : '—', val.beta != null ? 'beta ' + num(val.beta).toFixed(2) : '') +
+    card('Non-Accrual (FV)', credit.non_accrual_fv_pct != null ? fmtPct(credit.non_accrual_fv_pct) : '—', credit.non_accrual_cost_pct != null ? 'cost ' + fmtPct(credit.non_accrual_cost_pct) : 'as disclosed') +
+    card('Risk Rating', credit.risk_rating != null ? num(credit.risk_rating).toFixed(1) : '—', credit.risk_rating != null ? 'weighted avg, 1–5' : 'not disclosed') +
+  '</div>';
+
+  if (val.price == null) {
+    html += '<div class="small muted" style="margin:-4px 0 10px">No market profile collected for this ticker; P/NAV and dividend yield need a share price.</div>';
+  }
+  if ((val.flags || []).length) {
+    html += '<div class="flagbox">' + val.flags.map(f => '<div>⚠ ' + esc(f) + '</div>').join('') + '</div>';
+  }
+
+  const covPts = qp.filter(r => r.coverage !== null && r.coverage !== undefined).map(r => ({ label: (quarterInfoFromEnd(r.end) || {}).short || r.end, value: r.coverage }));
+  const distPts = qp.filter(r => r.distribution_rate_pct !== null && r.distribution_rate_pct !== undefined).map(r => ({ label: (quarterInfoFromEnd(r.end) || {}).short || r.end, value: r.distribution_rate_pct }));
+  const pikPts = qp.filter(r => r.pik_income_share_pct !== null && r.pik_income_share_pct !== undefined).map(r => ({ label: (quarterInfoFromEnd(r.end) || {}).short || r.end, value: r.pik_income_share_pct }));
+  const trPts = qp.filter(r => r.nav_tr_pct !== null && r.nav_tr_pct !== undefined).map(r => ({ label: (quarterInfoFromEnd(r.end) || {}).short || r.end, value: r.nav_tr_pct }));
+
+  html += '<div class="section"><h3>Distribution quality trends</h3><div class="grid2" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr))">';
+  html += lineChart(covPts, { title: 'NII coverage of dividends', fmt: v => v.toFixed(2) + '×' });
+  html += lineChart(distPts, { title: 'Distribution rate on NAV', fmt: v => v.toFixed(1) + '%' });
+  html += lineChart(pikPts, { title: 'PIK share of investment income', fmt: v => v.toFixed(1) + '%' });
+  html += signedBarChart(trPts, { title: 'Quarterly NAV total return', fmt: v => signed(v) + '%' });
+  html += '</div></div>';
+
+  if (qp.length) {
+    html += '<div class="section"><h3>Quarterly distribution quality</h3><table><thead><tr>' +
+      '<th>Quarter</th><th>Filing</th><th class="num">NAV / Sh</th><th class="num">NII / Sh</th><th class="num">DPS</th>' +
+      '<th class="num">NII Coverage</th><th class="num">Dist. Rate</th><th class="num">NAV TR</th><th class="num">PIK Share</th>' +
+      '</tr></thead><tbody>';
+    for (const q of qp.slice().reverse()) {
+      const qLabel = (quarterInfoFromEnd(q.end) || {}).label || q.end;
+      html += '<tr><td>' + esc(qLabel) + '</td>' +
+        '<td>' + (q.filed ? filingLink(q.filed, q.form || 'filing') : '—') + '</td>' +
+        '<td class="num">' + (q.nav_ps != null ? '$' + num(q.nav_ps).toFixed(2) : '—') + '</td>' +
+        '<td class="num">' + (q.nii_ps_q != null ? '$' + num(q.nii_ps_q).toFixed(2) : '—') + '</td>' +
+        '<td class="num">' + (q.dps_q != null ? '$' + num(q.dps_q).toFixed(2) : '—') + '</td>' +
+        '<td class="num ' + (num(q.coverage) !== null && num(q.coverage) < 1 ? 'neg' : '') + '">' + (q.coverage != null ? num(q.coverage).toFixed(2) + '×' : '—') + '</td>' +
+        '<td class="num">' + (q.distribution_rate_pct != null ? fmtPct(q.distribution_rate_pct) : '—') + '</td>' +
+        '<td class="num ' + (num(q.nav_tr_pct) < 0 ? 'neg' : 'pos') + '">' + (q.nav_tr_pct != null ? signed(q.nav_tr_pct) + '%' : '—') + '</td>' +
+        '<td class="num">' + (q.pik_income_share_pct != null ? fmtPct(q.pik_income_share_pct) : '—') + '</td></tr>';
+    }
+    html += '</tbody></table></div>';
+  }
+
+  html += '<div class="section"><h3>Credit quality — as disclosed</h3>';
+  if (credit.filing) {
+    const conf = credit.confidence || 'none';
+    const badge = conf === 'high' ? 'good' : (conf === 'medium' ? 'warn' : 'bad');
+    html += '<div class="small muted" style="margin-bottom:6px">From ' + filingLink(credit.filing.filed, (credit.filing.form || 'filing') + ' filed ' + (credit.filing.filed || '—')) +
+      ' · extraction confidence <span class="badge ' + badge + '">' + esc(conf) + '</span></div>';
+    html += '<div class="cards">' +
+      card('Non-Accrual at Cost', credit.non_accrual_cost_pct != null ? fmtPct(credit.non_accrual_cost_pct) : '—', 'of total investments') +
+      card('Non-Accrual at FV', credit.non_accrual_fv_pct != null ? fmtPct(credit.non_accrual_fv_pct) : '—', 'of total investments') +
+      card('Non-Accrual Count', credit.non_accrual_count != null ? fmtNum(credit.non_accrual_count) : '—', 'issuers / investments') +
+      card('Weighted Avg Rating', credit.risk_rating != null ? num(credit.risk_rating).toFixed(1) : '—', '1 = lowest risk, 5 = highest') +
+    '</div>';
+    const cs = credit.snippets || {};
+    if (cs.non_accrual) html += '<details style="margin-top:6px"><summary class="linkish">Source disclosure — non-accrual</summary><div class="small muted" style="margin-top:4px;line-height:1.45">' + esc(cs.non_accrual) + '</div></details>';
+    if (cs.risk_rating) html += '<details style="margin-top:4px"><summary class="linkish">Source disclosure — risk rating</summary><div class="small muted" style="margin-top:4px;line-height:1.45">' + esc(cs.risk_rating) + '</div></details>';
+    if ((credit.notes || []).length) html += '<div class="small muted" style="margin-top:4px">' + (credit.notes || []).map(esc).join(' · ') + '</div>';
+  } else {
+    html += '<div class="muted small">No structured credit-quality disclosure extracted for this BDC. ' +
+      (finLatest ? 'See the latest filing: ' + filingLink(finLatest.filed, (finLatest.form || 'filing') + ' filed ' + finLatest.filed) : '') + '</div>';
+  }
+  html += '</div>';
+
+  const detailRows = [
+    ['Share price', val.price != null ? '$' + num(val.price).toFixed(2) : '—'],
+    ['Price as of', val.price_asof || '—'],
+    ['52-week range', val.fifty_two_week_low != null && val.fifty_two_week_high != null ? '$' + num(val.fifty_two_week_low).toFixed(2) + ' – $' + num(val.fifty_two_week_high).toFixed(2) : '—'],
+    ['Market cap', val.market_cap != null ? fmtMoney(val.market_cap) : '—'],
+    ['Beta', val.beta != null ? num(val.beta).toFixed(2) : '—'],
+    ['NAV / share (reported)', val.nav_per_share != null ? '$' + num(val.nav_per_share).toFixed(2) : '—'],
+    ['P/NAV (Yahoo book)', val.p_nav_yahoo != null ? num(val.p_nav_yahoo).toFixed(2) + '×' : '—'],
+    ['Annual dividend', val.dividend_rate != null ? '$' + num(val.dividend_rate).toFixed(2) : '—'],
+  ];
+  let detail = '<div class="section"><h3>Market & valuation detail</h3><table><tbody>';
+  for (const r of detailRows) detail += '<tr><td>' + esc(r[0]) + '</td><td class="num">' + esc(r[1]) + '</td></tr>';
+  detail += '</tbody></table></div>';
+
+  let sources = '<div class="section"><h3>Sources & lineage</h3><table><tbody>';
+  if (holdingsFiled) sources += '<tr><td>Holdings</td><td>' + filingLink(holdingsFiled, (filingFor(holdingsFiled) || {}).form + ' filed ' + holdingsFiled) + '</td></tr>';
+  if (finLatest) sources += '<tr><td>Financial statements</td><td>' + filingLink(finLatest.filed, (finLatest.form || 'filing') + ' filed ' + (finLatest.filed || '—')) + '</td></tr>';
+  if (credit.filing) sources += '<tr><td>Credit quality</td><td>' + filingLink(credit.filing.filed, (credit.filing.form || 'filing') + ' filed ' + (credit.filing.filed || '—')) + '</td></tr>';
+  if (val.price_asof) sources += '<tr><td>Market data</td><td class="small muted">Yahoo Finance profile, as of ' + esc(val.price_asof) + '</td></tr>';
+  if (val.coverage_period) sources += '<tr><td>Coverage quarter</td><td class="small muted">' + esc((quarterInfoFromEnd(val.coverage_period) || {}).label || val.coverage_period) + '</td></tr>';
+  sources += '</tbody></table></div>';
+
+  html += '<div class="grid2">' + detail + sources + '</div>';
+  el.innerHTML = html;
+}
+
+// ------------------------------------------------------------------ financials
+
 // ------------------------------------------------------------------ financials
 function renderFinancials(el) {
   const fin = state.financials;
@@ -1828,7 +2070,7 @@ function renderFinancials(el) {
     const labels = Object.keys(nodes);
     if (!labels.length) continue;
     html += '<div class="section"><h3>' + label + '</h3><table><thead><tr><th>Line item</th>';
-    for (const pe of periods) html += '<th class="num">' + esc((quarterInfoFromEnd(pe.end) || {}).label || pe.end) + '<div class="small muted">' + esc([pe.form, pe.filed].filter(Boolean).join(' · ')) + '</div></th>';
+    for (const pe of periods) html += '<th class="num">' + filingLink(pe.filed, (quarterInfoFromEnd(pe.end) || {}).label || pe.end) + '<div class="small muted">' + esc([pe.form, pe.filed].filter(Boolean).join(' · ')) + '</div></th>';
     html += '</tr></thead><tbody>';
     for (const l of labels) {
       const node = nodes[l];
@@ -1895,6 +2137,15 @@ const PEER_METRICS = [
   { key: 'age_0_2_pct', label: 'Acquired < 2 yrs', fmt: fmtPct, higher: true },
   { key: 'age_5plus_pct', label: 'Age 5+ yrs', fmt: fmtPct, higher: false },
   { key: 'total_net_change', label: 'QoQ net FV change', fmt: fmtK, higher: true },
+  { key: 'p_nav', label: 'P/NAV (lower = cheaper)', fmt: v => v === null || v === undefined ? '—' : num(v).toFixed(2) + '×', higher: false },
+  { key: 'dividend_yield_pct', label: 'Dividend yield', fmt: fmtPct, higher: true },
+  { key: 'nii_coverage', label: 'NII coverage', fmt: v => v === null || v === undefined ? '—' : num(v).toFixed(2) + '×', higher: true },
+  { key: 'payout_ratio_pct', label: 'Payout ratio', fmt: fmtPct, higher: false },
+  { key: 'pik_income_share_pct', label: 'PIK share of income', fmt: fmtPct, higher: false },
+  { key: 'nav_tr_4q_pct', label: 'NAV total return (4Q)', fmt: v => v === null || v === undefined ? '—' : signed(v) + '%', higher: true },
+  { key: 'non_accrual_fv_pct', label: 'Non-accrual (FV)', fmt: fmtPct, higher: false },
+  { key: 'risk_rating', label: 'Risk rating (1 = low)', fmt: v => v === null || v === undefined ? '—' : num(v).toFixed(1), higher: false },
+  { key: 'market_cap', label: 'Market cap', fmt: fmtMoney, higher: true },
 ];
 function peerMetricDef(key) {
   const found = PEER_METRICS.find(m => m.key === key);
@@ -1909,6 +2160,9 @@ const PEER_PRESETS = [
   { id: 'vintage_marks', label: 'Vintage vs marks', x: 'median_vintage_year', y: 'unrealized_gl_pct', color: 'age_5plus_pct', colorLabel: 'age 5+ share' },
   { id: 'structure_pik', label: 'Structure vs PIK', x: 'floating_pct', y: 'pik_share_pct', color: 'equity_pct', colorLabel: 'equity weight' },
   { id: 'coverage_nii', label: 'Coverage vs NII', x: 'asset_coverage', y: 'nii_per_share', color: 'debt_to_equity', colorLabel: 'leverage' },
+  { id: 'valuation_coverage', label: 'P/NAV vs coverage', x: 'p_nav', y: 'nii_coverage', color: 'dividend_yield_pct', colorLabel: 'dividend yield' },
+  { id: 'valuation_yield', label: 'P/NAV vs yield', x: 'p_nav', y: 'dividend_yield_pct', color: 'nii_coverage', colorLabel: 'NII coverage' },
+  { id: 'credit_valuation', label: 'Non-accrual vs P/NAV', x: 'non_accrual_fv_pct', y: 'p_nav', color: 'risk_rating', colorLabel: 'risk rating' },
 ];
 const RADAR_DIMS = [
   { key: 'weighted_avg_cash_rate', label: 'Yield', higher: true },
@@ -1916,7 +2170,8 @@ const RADAR_DIMS = [
   { key: 'floating_pct', label: 'Floating', higher: true },
   { key: 'asset_coverage', label: 'Coverage', higher: true },
   { key: 'debt_to_equity', label: 'Low leverage', higher: false },
-  { key: 'nii_per_share', label: 'NII / share', higher: true },
+  { key: 'nii_coverage', label: 'NII coverage', higher: true },
+  { key: 'p_nav', label: 'P/NAV', higher: false },
   { key: 'unrealized_gl_pct', label: 'Marks', higher: true },
   { key: 'median_vintage_year', label: 'Freshness', higher: true },
 ];
@@ -1934,6 +2189,11 @@ const HEAT_COLS = [
   ['unrealized_gl_pct', 'G/L', true, v => signed(v) + '%'],
   ['age_5plus_pct', '5y+', false, fmtPct],
   ['total_net_change', 'QoQ Δ', true, fmtK],
+  ['p_nav', 'P/NAV', false, v => num(v).toFixed(2) + '×'],
+  ['dividend_yield_pct', 'Yield', true, fmtPct],
+  ['nii_coverage', 'NII Cov', true, v => num(v).toFixed(2) + '×'],
+  ['non_accrual_fv_pct', 'NonAccr', false, fmtPct],
+  ['risk_rating', 'Risk', false, v => num(v).toFixed(1)],
 ];
 function percentileRank(key, value, cohort, higher) {
   const vals = cohort.map(p => num(p[key])).filter(v => v !== null);
@@ -2144,6 +2404,11 @@ function peerCell(key, v, row) {
   if (v === null || v === undefined || v === '') return '—';
   if (key === 'ticker') return esc(v);
   if (key === 'fair_value' || key === 'total_net_change') return fmtK(v);
+  if (key === 'p_nav' || key === 'nii_coverage') return v === null || v === undefined ? '—' : num(v).toFixed(2) + '×';
+  if (key === 'dividend_yield_pct' || key === 'non_accrual_fv_pct' || key === 'payout_ratio_pct') return fmtPct(v);
+  if (key === 'risk_rating') return v === null || v === undefined ? '—' : num(v).toFixed(1);
+  if (key === 'nav_tr_4q_pct') return v === null || v === undefined ? '—' : '<span class="' + (num(v) < 0 ? 'neg' : 'pos') + '">' + signed(v) + '%</span>';
+  if (key === 'market_cap') return fmtMoney(v);
   if (key === 'first_lien_pct' || key === 'second_lien_pct' || key === 'subordinated_pct' || key === 'equity_pct' || key === 'pik_share_pct' || key === 'floating_pct' || key === 'top10_pct' || key === 'age_0_2_pct' || key === 'age_5plus_pct') return fmtPct(v);
   if (key === 'unrealized_gl_pct') return '<span class="' + (num(v) < 0 ? 'neg' : 'pos') + '">' + signed(v) + '%</span>';
   if (key === 'weighted_avg_cash_rate' || key === 'weighted_avg_spread') return fmtRate(v);
@@ -2163,6 +2428,8 @@ function peerTableHtml() {
     ['unrealized_gl_pct', 'G/L %'], ['median_vintage_year', 'Vintage'], ['age_0_2_pct', '<2yr %'],
     ['age_5plus_pct', '5yr+ %'], ['nav_per_share', 'NAV/Sh'], ['debt_to_equity', 'D/E'],
     ['asset_coverage', 'Cover'], ['nii_per_share', 'NII/Sh'], ['total_net_change', 'QoQ Δ FV'],
+    ['p_nav', 'P/NAV'], ['dividend_yield_pct', 'Yield'], ['nii_coverage', 'NII Cov'],
+    ['non_accrual_fv_pct', 'NonAccr'], ['risk_rating', 'Risk'],
     ['balance_check_ok', 'Bal'], ['fin_periods', 'Fin Qs'],
   ];
   if (state.sortKey) {
@@ -2231,6 +2498,9 @@ async function renderPeerEvaluation(el) {
       '<span>NAV <b>' + (focus.nav_per_share === null || focus.nav_per_share === undefined ? '—' : '$' + num(focus.nav_per_share).toFixed(2)) + '</b></span>' +
       '<span>D/E <b>' + (focus.debt_to_equity === null || focus.debt_to_equity === undefined ? '—' : num(focus.debt_to_equity).toFixed(2) + '×') + '</b></span>' +
       '<span>NII <b>' + (focus.nii_per_share === null || focus.nii_per_share === undefined ? '—' : '$' + num(focus.nii_per_share).toFixed(2)) + '</b></span>' +
+      '<span>P/NAV <b>' + (focus.p_nav == null ? '—' : num(focus.p_nav).toFixed(2) + '×') + '</b></span>' +
+      '<span>Yield <b>' + (focus.dividend_yield_pct == null ? '—' : fmtPct(focus.dividend_yield_pct)) + '</b></span>' +
+      '<span>Coverage <b>' + (focus.nii_coverage == null ? '—' : num(focus.nii_coverage).toFixed(2) + '×') + '</b></span>' +
     '</div>' +
     '<button class="btn" id="peer-open-bdc">Open BDC view</button>' +
   '</div>';

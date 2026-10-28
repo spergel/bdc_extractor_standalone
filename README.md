@@ -55,10 +55,16 @@ app/public/data/
 │   ├── financials_index.json       # Coverage summary across tickers
 │   └── ...
 ├── analytics/
-│   ├── ARCC.json                   # Per-period type/sector/vintage breakdowns
+│   ├── ARCC.json                   # Per-period type/sector/vintage breakdowns + valuation/quality
 │   ├── peers.json                  # Cross-BDC comparison (latest periods)
 │   └── ...
-├── {TICKER}/profile.json           # Market profile per BDC
+├── filings/
+│   ├── ARCC.json                   # EDGAR accession/URL per 10-Q / 10-K
+│   └── filings_index.json
+├── credit/
+│   ├── ARCC.json                   # Disclosed non-accrual % + risk rating + source snippet
+│   └── credit_index.json
+├── {TICKER}/profile.json           # Market profile per BDC (price, yield, market cap)
 └── company_profiles.json           # Portfolio company profiles
 ```
 
@@ -148,7 +154,9 @@ SEC_API_KEY=your_sec_key_here          # Optional (increases rate limits)
 - `src/extraction/financial_statements_extractor.py` - Quarterly 3-statement XBRL extraction (SEC company facts API)
 - `src/extraction/sec_api_client.py` - SEC EDGAR API interface
 - `src/processing/post_process_extraction.py` - Automatic data cleaning
-- `src/processing/build_analytics.py` - Type/sector/vintage/peers analytics JSON for the UI
+- `src/processing/build_analytics.py` - Type/sector/vintage/valuation/quality/peers analytics JSON for the UI
+- `src/processing/build_filing_links.py` - SEC submissions API → EDGAR accession/URL per filing
+- `src/processing/extract_credit_quality.py` - Non-accrual % and risk rating from the latest 10-Q/10-K
 - `src/processing/standardization_rules.py` - Standardization logic
 - `src/consolidation/consolidate_investments.py` - Merge investment CSVs
 - `src/consolidation/consolidate_financial_statements.py` - Per-ticker financial overviews
@@ -166,24 +174,27 @@ cd app && npm install && npm run dev
 
 Views, all powered by the data above:
 
-- **Overview** — portfolio fair value, companies, weighted yield/spread plus NAV, leverage, NII, unrealized G/L, concentration; SVG trend charts; peer-rank chips; data-coverage bars
+- **Overview** — portfolio fair value, companies, weighted yield/spread plus NAV, leverage, NII, unrealized G/L, concentration; **market strip** (price, P/NAV, dividend yield, NII coverage, non-accrual); SVG trend charts; peer-rank chips; data-coverage bars; source-filing links
 - **Holdings** — filterable per-filing holdings table
 - **Loan Types** — first lien / second lien / equity mix with marks vs cost, current period + mix over time
 - **Sectors** — industry mix with peer-median tilt and marks vs cost, current period + mix over time
 - **Rates & Structure** — floating vs fixed, reference-rate mix (SOFR/LIBOR/…), spread distribution, PIK share, coverage
-- **Vintage & Maturity** — acquisition-year vintage, portfolio-age buckets, per-year maturity wall, unrealized gain/loss by type and top gainers/losers
+- **Vintage & Maturity** — acquisition-year vintage, **marks (FV/cost) by acquisition year**, **quarter-by-quarter vintage mark migration heatmap**, portfolio-age buckets, per-year maturity wall with weighted coupon and floating %, unrealized gain/loss by type and top gainers/losers
 - **QoQ Changes** — GitHub-style two-pane diff: pick any before/after filing, browse added/removed/modified companies like a file list, and inspect field-level changes in Unified or Split view
-- **Financials** — balance sheet, income statement and cash flow (last 8 quarters) + trend charts
+- **Valuation & Coverage** — P/NAV and premium/discount, dividend yield, NII coverage of distributions, payout ratio, distribution rate on NAV, NAV total return (1Q/4Q), PIK share of income, market cap; coverage/NAV-return charts; quarterly quality table; **credit quality** (non-accrual at cost/FV, weighted-average risk rating, source disclosure); market detail and source lineage
+- **Financials** — balance sheet, income statement and cash flow (last 8 quarters) + trend charts; every quarter links to its SEC filing
 
 Periods are shown as fiscal quarters with filing dates, e.g. `Q2 2026 (2026-07-29)`; financial statement columns also show the form (`10-Q` / `10-K`).
 
 Top-level sections (header nav):
 
 - **BDC View** — the per-BDC tabs above
-- **Peer Evaluation** — pick a focus BDC and a cohort (All / Large $5B+ / Mid $1–5B / Small <$1B). **Peer positioning**: 2D or 3D-bubble scatter (bubble size = portfolio, color = a fourth metric) with six presets, axis pickers, median crosshairs and a closest-peers table. **Percentile profile**: SVG radar + focus-vs-median table. **Scorecard heatmap**: all cohort BDCs × 13 metrics, green/red by cohort percentile, sortable, click a row to focus. Plus six bar leaderboards, sector tilt vs peer median, and the raw table on demand
+- **Peer Evaluation** — pick a focus BDC and a cohort (All / Large $5B+ / Mid $1–5B / Small <$1B). **Peer positioning**: 2D or 3D-bubble scatter (bubble size = portfolio, color = a fourth metric) with **nine presets** including P/NAV vs NII coverage, P/NAV vs dividend yield and non-accrual vs P/NAV; axis pickers, median crosshairs and a closest-peers table. **Percentile profile**: SVG radar + focus-vs-median table. **Scorecard heatmap**: all cohort BDCs × 18 metrics (including P/NAV, yield, coverage, non-accrual, risk rating), green/red by cohort percentile, sortable, click a row to focus. Plus six bar leaderboards, sector tilt vs peer median, and the raw table on demand
 - **Companies** — cross-BDC borrower view: which BDCs hold a company, exposure by BDC/maturity/type, profile
 
-Extras: CSV export of the visible tables, shareable deep links (`#/peers/ARCC/large`, `#/bdc/ARCC/vintage/2026-07-29`, `#/bdc/ARCC/holdings/2026-07-29/sector:Healthcare`, `#/companies/co_…`), and data-freshness indicators (holdings quarter vs financials quarter, balance check).
+Extras: CSV export of the visible tables, shareable deep links (`#/peers/ARCC/large`, `#/bdc/ARCC/valuation`, `#/bdc/ARCC/vintage/2026-07-29`, `#/bdc/ARCC/holdings/2026-07-29/sector:Healthcare`, `#/companies/co_…`), and data-freshness indicators (holdings quarter vs financials quarter, balance check).
+
+**Data caveats:** market data comes from the per-ticker Yahoo profile (41 of 49 tickers; 35 have a usable P/NAV). It is a point-in-time snapshot with a visible as-of date, and extreme P/NAV / yield values are flagged in the UI. Credit-quality figures are parsed from the latest 10-Q/10-K text with a confidence score and the source sentence shown; 16 BDCs have no extractable disclosure and are marked accordingly. See `docs/VALUATION_CREDIT.md` for formulas and extraction rules.
 
 **Interactive drill-down:** click any bar, card or table row in Loan Types, Sectors, Rates & Structure or Vintage & Maturity to preview that slice (positions, fair value, % of portfolio, top holdings) and jump straight to Holdings filtered to it. The filter appears as a removable chip and is encoded in the URL. The QoQ company list and the Companies sidebar are sortable (Δ fair value, current fair value, positions, name, fields changed / exposure, # BDCs, name).
 
@@ -194,6 +205,8 @@ API endpoints used by the UI:
 /api/tickers/:ticker/periods/:period  holdings rows for one filing
 /api/tickers/:ticker/analytics        per-period breakdowns + quality/freshness meta
 /api/tickers/:ticker/financials       quarterly 3-statement data
+/api/tickers/:ticker/filings          EDGAR links per filing period
+/api/tickers/:ticker/credit           disclosed non-accrual / risk rating
 /api/peers                            cross-BDC comparison + medians
 /api/profiles                         compact BDC name/price summaries
 /api/companies                        cross-BDC company exposure index
@@ -202,7 +215,7 @@ API endpoints used by the UI:
 
 ## 📈 Supported BDCs
 
-Currently configured for 10 major BDCs:
+Currently configured for **49 BDCs** (see `app/public/data/investments_index.json`), including:
 - ARCC (Ares Capital)
 - MAIN (Main Street Capital)
 - BBDC (Barings BDC)
@@ -213,6 +226,7 @@ Currently configured for 10 major BDCs:
 - CION (CION)
 - GSBD (Goldman Sachs)
 - MRCC (Monroe Capital)
+- …and 39 more (BXSL, HTGC, OBDC, TSLX, PSEC, FSK, CSWC, etc.)
 
 Easy to add more in `process_all_bdcs.py`.
 
