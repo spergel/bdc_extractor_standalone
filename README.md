@@ -172,7 +172,7 @@ Views, all powered by the data above:
 - **Sectors** — industry mix with peer-median tilt and marks vs cost, current period + mix over time
 - **Rates & Structure** — floating vs fixed, reference-rate mix (SOFR/LIBOR/…), spread distribution, PIK share, coverage
 - **Vintage & Maturity** — acquisition-year vintage, portfolio-age buckets, per-year maturity wall, unrealized gain/loss by type and top gainers/losers
-- **QoQ Changes** — new positions, exits, increases and decreases vs the prior filing
+- **QoQ Changes** — GitHub-style two-pane diff: pick any before/after filing, browse added/removed/modified companies like a file list, and inspect field-level changes in Unified or Split view
 - **Financials** — balance sheet, income statement and cash flow (last 8 quarters) + trend charts
 - **Peers** — sortable/filterable comparison across all BDCs with peer medians
 - **Companies** — cross-BDC borrower view: which BDCs hold a company, exposure by BDC/maturity/type, profile

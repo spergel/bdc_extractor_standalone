@@ -358,6 +358,49 @@ const UI_HTML = `<!doctype html>
   .profile .desc { margin-top: 6px; color: #333; }
   .linkish { color: var(--navy2); cursor: pointer; text-decoration: underline; }
   .asof { font-size: 11px; color: var(--muted); margin-bottom: 8px; }
+  /* GitHub-style diff */
+  .diff-bar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+  .diff-bar select { padding: 4px 6px; border: 1px solid var(--line); border-radius: 3px; font-size: 12px; background: #fff; }
+  .diff-bar input { padding: 3px 6px; border: 1px solid var(--line); border-radius: 3px; font-size: 11.5px; width: 140px; }
+  .diff-summary { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; font-size: 12px; margin-bottom: 8px; padding: 6px 10px; background: #f6f7f9; border: 1px solid var(--line); border-radius: 4px; }
+  .diff-summary .add { color: var(--good); font-weight: 700; }
+  .diff-summary .rem { color: var(--bad); font-weight: 700; }
+  .diff-summary .mod { color: #b07a12; font-weight: 700; }
+  .diff-layout { display: grid; grid-template-columns: 340px 1fr; gap: 10px; align-items: start; }
+  .diff-list { border: 1px solid var(--line); border-radius: 4px; max-height: 64vh; overflow: auto; background: #fff; }
+  .diff-item { display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-bottom: 1px solid #edf0f3; cursor: pointer; font-size: 12px; }
+  .diff-item:hover { background: #f5f7fa; }
+  .diff-item.active { background: #e8effa; box-shadow: inset 3px 0 0 var(--navy2); }
+  .diff-item .sign { width: 14px; font-weight: 700; text-align: center; flex-shrink: 0; }
+  .diff-item .nm { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .diff-item .amt { color: var(--muted); font-variant-numeric: tabular-nums; flex-shrink: 0; }
+  .sign.add { color: var(--good); }
+  .sign.rem { color: var(--bad); }
+  .sign.mod { color: #b07a12; }
+  .diff-detail { border: 1px solid var(--line); border-radius: 4px; background: #fff; min-height: 220px; overflow: hidden; }
+  .diff-detail .hd { padding: 8px 10px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .diff-detail .hd .t { font-weight: 700; font-size: 13px; }
+  .diff-pane { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11.5px; max-height: 56vh; overflow: auto; }
+  .diff-line { display: flex; align-items: stretch; min-height: 20px; }
+  .diff-line .gutter { width: 24px; text-align: center; user-select: none; color: #8a929c; background: #f7f8fa; border-right: 1px solid #edf0f3; flex-shrink: 0; }
+  .diff-line .txt { padding: 1px 8px; white-space: pre-wrap; flex: 1; }
+  .diff-line.minus .txt { background: #fdecec; color: #8a1f1f; }
+  .diff-line.minus .gutter { background: #f8dede; color: #8a1f1f; }
+  .diff-line.plus .txt { background: #e8f5ec; color: #1d6b3f; }
+  .diff-line.plus .gutter { background: #d7efdf; color: #1d6b3f; }
+  .diff-line.ctx .txt { color: #555; }
+  .diff-line .lab { display: inline-block; min-width: 150px; color: #6b7480; }
+  .diff-split { width: 100%; }
+  .diff-split th, .diff-split td { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11.5px; padding: 2px 8px; border-bottom: 1px solid #edf0f3; vertical-align: top; white-space: pre-wrap; word-break: break-word; }
+  .diff-split th { background: #f2f4f7; position: static; }
+  .diff-split td.before.changed { background: #fdecec; color: #8a1f1f; }
+  .diff-split td.after.changed { background: #e8f5ec; color: #1d6b3f; }
+  .diff-split td.field { color: #6b7480; width: 150px; }
+  .diff-empty { padding: 16px; color: var(--muted); }
+  .chip-btn { border: 1px solid var(--line); background: #f6f7f9; border-radius: 12px; padding: 2px 10px; font-size: 11px; cursor: pointer; color: var(--text); }
+  .chip-btn:hover { background: #e8ebef; }
+  .chip-btn.active { background: var(--navy2); color: #fff; border-color: var(--navy2); }
+  @media (max-width: 900px) { .diff-layout { grid-template-columns: 1fr; } }
   @media (max-width: 800px) {
     .layout { grid-template-columns: 1fr; grid-template-rows: 220px 1fr; }
     .bar-row { grid-template-columns: 120px 1fr 110px; }
@@ -414,6 +457,7 @@ const state = {
   sortKey: null,
   sortDir: 1,
   peerFilters: { q: '', minFv: '', maxDe: '', minFirstLien: '' },
+  diff: { before: null, after: null, cacheKey: null, computed: null, selected: null, view: 'unified', filter: 'all', minDelta: '', search: '' },
 };
 
 // ------------------------------------------------------------------ utils
@@ -497,7 +541,11 @@ function updateHash() {
   let h;
   if (state.mode === 'companies') h = '#/companies' + (state.companyId ? '/' + state.companyId : '');
   else if (state.tab === 'peers') h = '#/peers';
-  else h = '#/bdc/' + (state.ticker || '') + '/' + state.tab + (state.period ? '/' + state.period : '');
+  else if (state.tab === 'changes') {
+    h = '#/bdc/' + (state.ticker || '') + '/changes';
+    if (state.diff && state.diff.before) h += '/' + state.diff.before;
+    if (state.diff && state.diff.after) h += '/' + state.diff.after;
+  } else h = '#/bdc/' + (state.ticker || '') + '/' + state.tab + (state.period ? '/' + state.period : '');
   if (location.hash !== h) history.replaceState(null, '', h);
 }
 function applyHash() {
@@ -524,7 +572,11 @@ function applyHash() {
   }
   if (parts[0] === 'bdc' && parts[1] && state.index && state.index.tickers[parts[1]]) {
     state.tab = TABS.some(t => t[0] === parts[2]) ? parts[2] : 'overview';
-    selectTicker(parts[1], state.index.tickers[parts[1]], parts[3] || null, true);
+    if (state.tab === 'changes') {
+      state.diff.before = parts[3] || null;
+      state.diff.after = parts[4] || null;
+    }
+    selectTicker(parts[1], state.index.tickers[parts[1]], parts[4] || parts[3] || null, true);
     return;
   }
   const names = Object.keys((state.index && state.index.tickers) || {}).sort();
@@ -626,7 +678,7 @@ function updateModeChrome() {
   $('tabs').style.display = isBdc ? '' : 'none';
   $('nav-bdc').className = isBdc ? 'active' : '';
   $('nav-companies').className = isBdc ? '' : 'active';
-  const showPeriod = isBdc && state.ticker && (state.tab === 'holdings' || state.tab === 'types' || state.tab === 'sectors' || state.tab === 'rates' || state.tab === 'vintage' || state.tab === 'changes');
+  const showPeriod = isBdc && state.ticker && (state.tab === 'holdings' || state.tab === 'types' || state.tab === 'sectors' || state.tab === 'rates' || state.tab === 'vintage');
   $('period-select').style.display = showPeriod ? '' : 'none';
   $('filter').style.display = isBdc && state.tab === 'holdings' ? '' : 'none';
   $('ticker-search').placeholder = isBdc ? 'Filter by ticker or name…' : 'Search companies…';
@@ -652,8 +704,14 @@ function setMode(mode, silent) {
 }
 
 async function selectTicker(ticker, info, period, fromHash) {
+  const prevTicker = state.ticker;
   state.mode = 'bdc';
   state.ticker = ticker;
+  if (prevTicker && prevTicker !== ticker) {
+    const keepBefore = state.diff.before;
+    const keepAfter = state.diff.after;
+    state.diff = { before: keepBefore, after: keepAfter, cacheKey: null, computed: null, selected: null, view: state.diff.view, filter: 'all', minDelta: '', search: '' };
+  }
   const periods = (info && info.periods) || [];
   state.period = period || (info && info.latest) || (periods.length ? periods[periods.length - 1] : null);
   state.analytics = null; state.financials = null; state.profile = null; state.holdings = null;
@@ -1100,41 +1158,303 @@ function renderVintage(el) {
   el.innerHTML = html;
 }
 
-// ------------------------------------------------------------------ QoQ changes
-function renderChanges(el) {
-  const p = currentPeriodData();
-  if (!p) { el.innerHTML = '<div class="empty">No analytics data.</div>'; return; }
-  const ch = p.changes;
-  if (!ch) { el.innerHTML = '<div class="empty">No prior period to compare for ' + esc(p.filing_date) + '.</div>'; return; }
-  const deltaClass = num(ch.net_change) < 0 ? 'neg' : 'pos';
-  let html = '<div class="asof">Change from <b>' + esc(ch.from_filing_date) + '</b> to <b>' + esc(ch.to_filing_date) + '</b> (fair value, $000s).</div>';
-  html += '<div class="cards">' +
-    card('New Positions', fmtNum(ch.n_new), fmtK(ch.new_fair_value) + ' at cost') +
-    card('Exited Positions', fmtNum(ch.n_exited), fmtK(ch.exited_fair_value) + ' prior FV') +
-    card('Net Change', '<span class="' + deltaClass + '">' + fmtK(ch.net_change) + '</span>', 'portfolio fair value') +
-    card('Total FV', fmtK(ch.total_cur), 'prior ' + fmtK(ch.total_prev)) +
-  '</div>';
-
-  function changeTable(title, rows, cols, showPrev) {
-    let out = '<div class="section"><h3>' + title + '</h3><table><thead><tr>' + cols.map(c => '<th class="' + (c[1] ? 'num' : '') + '">' + c[0] + '</th>').join('') + '</tr></thead><tbody>';
-    if (!rows || !rows.length) out += '<tr><td colspan="' + cols.length + '" class="muted">None.</td></tr>';
-    for (const r of (rows || [])) {
-      out += '<tr><td>' + esc(r.company) + '</td>';
-      if (showPrev) out += '<td class="num">' + fmtK(r.prev_fair_value) + '</td>';
-      out += '<td class="num">' + fmtK(r.fair_value) + '</td>';
-      out += '<td class="num ' + (num(r.delta) < 0 ? 'neg' : 'pos') + '">' + fmtK(r.delta) + '</td></tr>';
+// ------------------------------------------------------------------ QoQ changes (GitHub-style diff)
+function normName(name) {
+  return String(name || '')
+    .toLowerCase()
+    .split('&').join(' and ')
+    .replace(/[^a-z0-9 ]+/g, ' ')
+    .split(' ').filter(Boolean).join(' ')
+    .trim();
+}
+function aggregateCompanies(rows) {
+  const map = new Map();
+  for (const r of rows) {
+    const key = normName(r.company_name) || '(unknown)';
+    let c = map.get(key);
+    if (!c) {
+      c = { key, name: (r.company_name || '(unknown)').trim(), fv: 0, principal: 0, cost: 0,
+            rateSum: 0, rateW: 0, spreadSum: 0, spreadW: 0, positions: 0, pik: 0,
+            types: new Set(), industries: new Set(), maturities: new Set() };
+      map.set(key, c);
     }
-    return out + '</tbody></table></div>';
+    const fv = num(r.fair_value) || 0;
+    c.fv += fv;
+    c.principal += num(r.principal_amount) || 0;
+    c.cost += num(r.amortized_cost) || 0;
+    c.positions += 1;
+    const rate = num(r.cash_rate);
+    if (rate !== null && rate > 0 && fv > 0) { c.rateSum += rate * fv; c.rateW += fv; }
+    const spread = num(r.spread);
+    if (spread !== null && spread > 0 && fv > 0) { c.spreadSum += spread * fv; c.spreadW += fv; }
+    const pik = num(r.pik_rate);
+    if (pik !== null && pik > 0) c.pik += 1;
+    if (r.investment_type) c.types.add(r.investment_type.trim());
+    if (r.industry) c.industries.add(r.industry.trim());
+    const my = (r.maturity_date || '').slice(0, 4);
+    if (my.length === 4 && !isNaN(Number(my))) c.maturities.add(my);
   }
-
-  html += '<div class="grid2">';
-  html += changeTable('New positions (top 15)', ch.new_positions, [['Company', false], ['Fair Value', true], ['Added', true]], false);
-  html += changeTable('Exited positions (top 15)', ch.exited_positions, [['Company', false], ['Prior Fair Value', true], ['Removed', true]], false);
-  html += changeTable('Largest increases (top 15)', ch.increases, [['Company', false], ['Prior FV', true], ['Current FV', true], ['Δ', true]], true);
-  html += changeTable('Largest decreases (top 15)', ch.decreases, [['Company', false], ['Prior FV', true], ['Current FV', true], ['Δ', true]], true);
-  html += '</div>';
-  html += '<div class="small muted">Company matching is by normalized name within the BDC, so renamed entities can appear as an exit plus a new position.</div>';
+  for (const c of map.values()) {
+    c.rate = c.rateW ? c.rateSum / c.rateW : null;
+    c.spread = c.spreadW ? c.spreadSum / c.spreadW : null;
+  }
+  return map;
+}
+function matRange(set) {
+  const ys = Array.from(set).map(Number).filter(y => y > 1900).sort((a, b) => a - b);
+  if (!ys.length) return '';
+  const lo = ys[0], hi = ys[ys.length - 1];
+  return lo === hi ? String(lo) : lo + '–' + hi;
+}
+function fmtRateOrDash(v) { return v === null || v === undefined ? '—' : Number(v).toFixed(2) + '%'; }
+function fmtGl(v) { return v === null || v === undefined ? '—' : fmtK(v); }
+function companySide(x) {
+  if (!x) return null;
+  return {
+    fv: x.fv, principal: x.principal, cost: x.cost,
+    gl: x.cost ? x.fv - x.cost : null,
+    positions: x.positions, rate: x.rate, spread: x.spread,
+    types: Array.from(x.types).join(', '),
+    industries: Array.from(x.industries).join(', '),
+    maturity: matRange(x.maturities),
+    pikPositions: x.pik,
+  };
+}
+function diffFields(before, after) {
+  const A = companySide(before), B = companySide(after);
+  const spec = [
+    ['fv', 'Fair value', fmtK],
+    ['principal', 'Principal', fmtK],
+    ['cost', 'Amortized cost', fmtK],
+    ['gl', 'Unrealized G/L', fmtGl],
+    ['positions', 'Positions', fmtNum],
+    ['rate', 'Wtd avg cash rate', fmtRateOrDash],
+    ['spread', 'Wtd avg spread', fmtRateOrDash],
+    ['types', 'Investment type', v => v || '—'],
+    ['industries', 'Industry', v => v || '—'],
+    ['maturity', 'Maturity range', v => v || '—'],
+    ['pikPositions', 'PIK positions', fmtNum],
+  ];
+  return spec.map(s => {
+    const av = A ? A[s[0]] : null, bv = B ? B[s[0]] : null;
+    return { key: s[0], label: s[1], fmt: s[2], before: av, after: bv, changed: String(av === null || av === undefined ? '' : av) !== String(bv === null || bv === undefined ? '' : bv) };
+  });
+}
+function computeDiff(beforeRows, afterRows) {
+  const A = aggregateCompanies(beforeRows), B = aggregateCompanies(afterRows);
+  const keys = new Set(Array.from(A.keys()).concat(Array.from(B.keys())));
+  const out = [];
+  let added = 0, removed = 0, modified = 0, unchanged = 0, totalBefore = 0, totalAfter = 0;
+  for (const k of keys) {
+    const a = A.get(k) || null, b = B.get(k) || null;
+    const fields = diffFields(a, b);
+    const deltaFv = (b ? b.fv : 0) - (a ? a.fv : 0);
+    const changedCount = fields.filter(f => f.changed).length;
+    let status = 'unchanged';
+    if (!a) { status = 'added'; added++; }
+    else if (!b) { status = 'removed'; removed++; }
+    else if (changedCount) { status = 'modified'; modified++; }
+    else unchanged++;
+    totalBefore += a ? a.fv : 0;
+    totalAfter += b ? b.fv : 0;
+    out.push({ key: k, name: (b ? b.name : a.name), status, before: a, after: b, fields, deltaFv, changedCount });
+  }
+  out.sort((x, y) => Math.abs(y.deltaFv) - Math.abs(x.deltaFv));
+  return { companies: out, summary: { added, removed, modified, unchanged, totalBefore, totalAfter, net: totalAfter - totalBefore } };
+}
+function periodOptions(selected) {
+  const dates = ((state.analytics && state.analytics.periods) || []).map(p => p.filing_date).slice().reverse();
+  return dates.map(d => '<option value="' + d + '"' + (d === selected ? ' selected' : '') + '>' + d + '</option>').join('');
+}
+function diffFiltered() {
+  const d = state.diff.computed;
+  if (!d) return [];
+  let rows = d.companies;
+  if (!state.diff.showUnchanged) rows = rows.filter(c => c.status !== 'unchanged');
+  const f = state.diff.filter;
+  if (f === 'added' || f === 'removed') rows = rows.filter(c => c.status === f);
+  else if (f === 'increased') rows = rows.filter(c => c.status === 'modified' && c.deltaFv > 0);
+  else if (f === 'decreased') rows = rows.filter(c => c.status === 'modified' && c.deltaFv < 0);
+  const q = (state.diff.search || '').toLowerCase();
+  if (q) rows = rows.filter(c => c.name.toLowerCase().indexOf(q) >= 0);
+  const min = num(state.diff.minDelta);
+  if (min) rows = rows.filter(c => Math.abs(c.deltaFv) >= min * 1000);
+  return rows;
+}
+function statusBadge(status) {
+  if (status === 'added') return '<span class="badge good">added</span>';
+  if (status === 'removed') return '<span class="badge bad">removed</span>';
+  if (status === 'modified') return '<span class="badge warn">modified</span>';
+  return '<span class="badge">unchanged</span>';
+}
+function diffLine(sign, label, value, fmt) {
+  const cls = sign === '+' ? 'plus' : sign === '-' ? 'minus' : 'ctx';
+  return '<div class="diff-line ' + cls + '"><span class="gutter">' + (sign === ' ' ? '' : sign) + '</span><span class="txt"><span class="lab">' + esc(label) + '</span>' + esc(fmt(value)) + '</span></div>';
+}
+function renderDiffDetail(c) {
+  if (!c) return '<div class="diff-empty">Select a company from the list.</div>';
+  const view = state.diff.view;
+  const side = c.after || c.before;
+  let html = '<div class="hd"><div><div class="t">' + esc(c.name) + '</div><div class="small muted">' +
+    esc(Array.from(side.types).join(', ')) + ' · ' + esc(Array.from(side.industries).join(', ')) + '</div></div>' +
+    '<div class="small">' + statusBadge(c.status) + ' <b class="' + (c.deltaFv < 0 ? 'neg' : 'pos') + '">' + (c.deltaFv >= 0 ? '+' : '') + fmtK(c.deltaFv) + '</b></div></div>';
+  html += '<div class="diff-bar" style="padding:6px 10px; margin:0; border-bottom:1px solid var(--line)">' +
+    '<button class="chip-btn' + (view === 'unified' ? ' active' : '') + '" data-view="unified">Unified</button>' +
+    '<button class="chip-btn' + (view === 'split' ? ' active' : '') + '" data-view="split">Split</button>' +
+    '<span class="small muted">' + c.changedCount + ' field(s) changed</span></div>';
+  if (view === 'split') {
+    html += '<table class="diff-split"><thead><tr><th class="field">Field</th><th>Before (' + esc(state.diff.before) + ')</th><th>After (' + esc(state.diff.after) + ')</th></tr></thead><tbody>';
+    for (const f of c.fields) {
+      html += '<tr><td class="field">' + esc(f.label) + '</td>' +
+        '<td class="before' + (f.changed && f.before !== null && f.before !== undefined ? ' changed' : '') + '">' + esc(f.before === null || f.before === undefined ? '—' : f.fmt(f.before)) + '</td>' +
+        '<td class="after' + (f.changed && f.after !== null && f.after !== undefined ? ' changed' : '') + '">' + esc(f.after === null || f.after === undefined ? '—' : f.fmt(f.after)) + '</td></tr>';
+    }
+    html += '</tbody></table>';
+  } else {
+    html += '<div class="diff-pane">';
+    for (const f of c.fields) {
+      if (c.status === 'added') html += diffLine('+', f.label, f.after, f.fmt);
+      else if (c.status === 'removed') html += diffLine('-', f.label, f.before, f.fmt);
+      else if (f.changed) html += diffLine('-', f.label, f.before, f.fmt) + diffLine('+', f.label, f.after, f.fmt);
+      else html += diffLine(' ', f.label, f.after, f.fmt);
+    }
+    html += '</div>';
+  }
+  return html;
+}
+function renderDiffView(el) {
+  const d = state.diff.computed;
+  if (!d) return;
+  const s = d.summary;
+  const rows = diffFiltered();
+  if (!rows.some(c => c.key === state.diff.selected)) state.diff.selected = rows.length ? rows[0].key : null;
+  let html = '<div class="diff-bar">' +
+    '<span>Compare</span><select id="diff-before">' + periodOptions(state.diff.before) + '</select>' +
+    '<b>→</b><select id="diff-after">' + periodOptions(state.diff.after) + '</select>' +
+    '<button class="btn" id="diff-swap" title="Swap before and after">⇄ Swap</button>' +
+    '<span style="flex:1"></span>' +
+    '<button class="btn" id="diff-export">Export diff CSV</button>' +
+  '</div>';
+  html += '<div class="diff-summary">' +
+    '<span class="add">+' + s.added + ' added</span>' +
+    '<span class="rem">−' + s.removed + ' removed</span>' +
+    '<span class="mod">~' + s.modified + ' modified</span>' +
+    '<span>net fair value <b class="' + (s.net < 0 ? 'neg' : 'pos') + '">' + fmtK(s.net) + '</b></span>' +
+    '<span class="muted">' + fmtK(s.totalBefore) + ' → ' + fmtK(s.totalAfter) + '</span>' +
+    '<span class="muted">' + s.unchanged + ' unchanged hidden</span>' +
+  '</div>';
+  html += '<div class="diff-bar">' +
+    ['all', 'added', 'removed', 'increased', 'decreased'].map(f =>
+      '<button class="chip-btn' + (state.diff.filter === f ? ' active' : '') + '" data-filter="' + f + '">' +
+      f.charAt(0).toUpperCase() + f.slice(1) + '</button>').join('') +
+    '<input id="diff-search" placeholder="Filter company…" value="' + esc(state.diff.search) + '">' +
+    '<input id="diff-min" placeholder="Min |Δ| $M" value="' + esc(state.diff.minDelta) + '">' +
+    '<label class="small muted" style="display:flex;align-items:center;gap:4px"><input type="checkbox" id="diff-unchanged"' + (state.diff.showUnchanged ? ' checked' : '') + ' style="width:auto"> show unchanged</label>' +
+  '</div>';
+  html += '<div class="diff-layout"><div class="diff-list" id="diff-list">';
+  if (!rows.length) html += '<div class="empty">No companies match these filters.</div>';
+  for (const c of rows) {
+    const sign = c.status === 'added' ? '+' : c.status === 'removed' ? '−' : '~';
+    const cls = c.status === 'added' ? 'add' : c.status === 'removed' ? 'rem' : 'mod';
+    const delta = c.deltaFv;
+    html += '<div class="diff-item' + (c.key === state.diff.selected ? ' active' : '') + '" data-key="' + esc(c.key) + '">' +
+      '<span class="sign ' + cls + '">' + sign + '</span>' +
+      '<span class="nm" title="' + esc(c.name) + '">' + esc(c.name) + '</span>' +
+      '<span class="amt ' + (delta < 0 ? 'neg' : 'pos') + '">' + (delta >= 0 ? '+' : '') + fmtK(delta) + '</span></div>';
+  }
+  html += '</div><div class="diff-detail" id="diff-detail">' + renderDiffDetail(rows.find(c => c.key === state.diff.selected)) + '</div></div>';
   el.innerHTML = html;
+
+  $('diff-before').onchange = (e) => {
+    state.diff.before = e.target.value;
+    state.diff.computed = null; state.diff.cacheKey = null;
+    renderChanges(el);
+  };
+  $('diff-after').onchange = (e) => {
+    state.diff.after = e.target.value;
+    state.diff.computed = null; state.diff.cacheKey = null;
+    renderChanges(el);
+  };
+  $('diff-swap').onclick = () => {
+    const b = state.diff.before;
+    state.diff.before = state.diff.after;
+    state.diff.after = b;
+    state.diff.computed = null; state.diff.cacheKey = null;
+    renderChanges(el);
+  };
+  $('diff-export').onclick = exportDiffCsv;
+  el.querySelectorAll('[data-filter]').forEach(b => {
+    b.onclick = () => { state.diff.filter = b.getAttribute('data-filter'); renderDiffView(el); };
+  });
+  el.querySelectorAll('[data-view]').forEach(b => {
+    b.onclick = () => { state.diff.view = b.getAttribute('data-view'); renderDiffView(el); };
+  });
+  el.querySelectorAll('.diff-item[data-key]').forEach(row => {
+    row.onclick = () => { state.diff.selected = row.getAttribute('data-key'); renderDiffView(el); };
+  });
+  const refocus = (id, update) => {
+    const input = $(id);
+    if (!input) return;
+    input.oninput = (e) => {
+      update(e.target.value);
+      renderDiffView(el);
+      const again = $(id);
+      if (again) { again.focus(); const v = again.value; again.value = ''; again.value = v; }
+    };
+  };
+  refocus('diff-search', v => { state.diff.search = v; });
+  refocus('diff-min', v => { state.diff.minDelta = v; });
+  const unch = $('diff-unchanged');
+  if (unch) unch.onchange = (e) => { state.diff.showUnchanged = e.target.checked; renderDiffView(el); };
+}
+function exportDiffCsv() {
+  const d = state.diff.computed;
+  if (!d) return;
+  const NL = String.fromCharCode(10);
+  const rows = diffFiltered();
+  const lines = ['Company,Status,Before Fair Value,After Fair Value,Delta Fair Value,Changed Fields'];
+  for (const c of rows) {
+    lines.push([
+      c.name, c.status,
+      c.before ? c.before.fv : '', c.after ? c.after.fv : '', c.deltaFv,
+      c.fields.filter(f => f.changed).map(f => f.label).join('; '),
+    ].map(csvEscape).join(','));
+  }
+  downloadText(state.ticker + '-changes-' + state.diff.before + '-to-' + state.diff.after + '.csv', lines.join(NL));
+}
+async function renderChanges(el) {
+  const periods = (state.analytics && state.analytics.periods) || [];
+  if (!periods.length) { el.innerHTML = '<div class="empty">No analytics data.</div>'; return; }
+  const dates = periods.map(p => p.filing_date);
+  let after = (state.diff.after && dates.indexOf(state.diff.after) >= 0) ? state.diff.after
+    : (state.period && dates.indexOf(state.period) >= 0 ? state.period : dates[dates.length - 1]);
+  const ai = dates.indexOf(after);
+  let before = (state.diff.before && dates.indexOf(state.diff.before) >= 0 && state.diff.before !== after)
+    ? state.diff.before : dates[Math.max(0, ai - 1)];
+  if (!before || before === after) {
+    el.innerHTML = '<div class="empty">Need at least two filing periods to compare.</div>';
+    return;
+  }
+  state.diff.before = before;
+  state.diff.after = after;
+  const cacheKey = state.ticker + '|' + before + '|' + after;
+  if (state.diff.cacheKey !== cacheKey || !state.diff.computed) {
+    el.innerHTML = '<div class="empty">Loading holdings for ' + esc(before) + ' and ' + esc(after) + '…</div>';
+    const [bRes, aRes] = await Promise.all([
+      fetch('/api/tickers/' + state.ticker + '/periods/' + before),
+      fetch('/api/tickers/' + state.ticker + '/periods/' + after),
+    ]);
+    const bData = bRes.ok ? await bRes.json() : { rows: [] };
+    const aData = aRes.ok ? await aRes.json() : { rows: [] };
+    state.diff.computed = computeDiff(bData.rows || [], aData.rows || []);
+    state.diff.cacheKey = cacheKey;
+    if (!state.diff.selected || !state.diff.computed.companies.some(c => c.key === state.diff.selected)) {
+      const first = state.diff.computed.companies.filter(c => c.status !== 'unchanged')[0] || state.diff.computed.companies[0];
+      state.diff.selected = first ? first.key : null;
+    }
+  }
+  updateHash();
+  if (state.diff.computed) renderDiffView(el);
 }
 
 // ------------------------------------------------------------------ financials
@@ -1414,6 +1734,7 @@ function tableToCsv(table) {
   return lines.join('\\n');
 }
 function exportMainCsv() {
+  if (state.mode === 'bdc' && state.tab === 'changes') { exportDiffCsv(); return; }
   const tables = $('main').querySelectorAll('table');
   if (!tables.length) { alert('Nothing to export in this view.'); return; }
   const parts = [];
