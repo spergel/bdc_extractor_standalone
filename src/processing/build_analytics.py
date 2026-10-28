@@ -640,6 +640,8 @@ def build_quality(fin, profile):
     bal = (fin.get("statements") or {}).get("balance_sheet") or {}
     derived = fin.get("derived") or {}
     nii_node = inc.get("Net Investment Income") or {}
+    ni_ps_node = inc.get("Net Income per Share") or {}
+    ni_node = inc.get("Net Income (Loss)") or {}
     dps_node = inc.get("Dividends per Share (Declared)") or inc.get("Dividends per Share (Paid)") or {}
     pik_node = inc.get("PIK Interest") or inc.get("Interest Income (PIK)") or {}
     tii_node = inc.get("Total Investment Income") or {}
@@ -663,6 +665,10 @@ def build_quality(fin, profile):
         nii_q = quarterly_value(nii_entry)
         shares = (equity / nav_ps) if (equity and nav_ps) else None
         nii_ps_q = (nii_q / shares) if (nii_q is not None and shares) else None
+        ni_ps_q = (series_at(ni_ps_node, end) or {}).get("val")
+        if ni_ps_q is None:
+            ni_q = quarterly_value(series_at(ni_node, end))
+            ni_ps_q = (ni_q / shares) if (ni_q is not None and shares) else None
         coverage = (nii_ps_q / dps_q) if (nii_ps_q is not None and dps_q) else None
         distribution_rate = (dps_ann / nav_ps * 100) if (dps_ann is not None and nav_ps) else None
         pik_ann = annualize(series_at(pik_node, end))
@@ -683,6 +689,7 @@ def build_quality(fin, profile):
             "form": info.get("form"),
             "nav_ps": round(nav_ps, 3),
             "nii_ps_q": round(nii_ps_q, 3) if nii_ps_q is not None else None,
+            "net_income_ps": round(ni_ps_q, 3) if ni_ps_q is not None else None,
             "dps_q": round(dps_q, 3) if dps_q is not None else None,
             "coverage": round(coverage, 3) if coverage is not None else None,
             "distribution_rate_pct": round(distribution_rate, 2) if distribution_rate is not None else None,
@@ -693,6 +700,11 @@ def build_quality(fin, profile):
 
     rows = rows[-12:]
     latest = rows[-1] if rows else {}
+    ni_series_all = (ni_ps_node.get("series") or {})
+    if ni_series_all and latest.get("net_income_ps") is None:
+        last_end = sorted(ni_series_all)[-1]
+        latest["net_income_ps"] = round(ni_series_all[last_end]["val"], 3)
+        latest["net_income_ps_period"] = last_end
     price = market_cap = div_yield = div_rate = high52 = low52 = beta = None
     price_asof = p_nav_yahoo = book_yahoo = None
     if profile:
@@ -737,6 +749,8 @@ def build_quality(fin, profile):
         "dividend_yield_pct": round(div_yield, 2) if div_yield is not None else None,
         "dividend_rate": div_rate,
         "nii_ps_q": cov_row.get("nii_ps_q"),
+        "net_income_ps": latest.get("net_income_ps"),
+        "net_income_ps_period": latest.get("net_income_ps_period") or latest.get("end"),
         "dps_q": cov_row.get("dps_q"),
         "nii_coverage": cov_row.get("coverage"),
         "payout_ratio_pct": round(100.0 / cov_row["coverage"], 1) if cov_row.get("coverage") else None,
@@ -1005,6 +1019,7 @@ def build_peers(payloads: dict) -> dict:
             "debt_to_equity": round(leverage, 3) if leverage is not None else None,
             "asset_coverage": round(coverage_metric, 2) if coverage_metric is not None else None,
             "nii_per_share": round(nii_ps, 2) if nii_ps is not None else None,
+            "net_income_ps": val.get("net_income_ps"),
             "pik_share_pct": totals.get("pik_share_pct"),
             "floating_pct": totals.get("floating_pct"),
             "fixed_pct": totals.get("fixed_pct"),
@@ -1037,7 +1052,7 @@ def build_peers(payloads: dict) -> dict:
     metric_keys = [
         "fair_value", "first_lien_pct", "second_lien_pct", "subordinated_pct", "equity_pct",
         "weighted_avg_cash_rate", "weighted_avg_spread", "median_vintage_year", "age_0_2_pct",
-        "age_5plus_pct", "nav_per_share", "debt_to_equity", "asset_coverage", "nii_per_share",
+        "age_5plus_pct", "nav_per_share", "debt_to_equity", "asset_coverage", "nii_per_share", "net_income_ps",
         "pik_share_pct", "floating_pct", "top10_pct", "unrealized_gl_pct",
         "p_nav", "premium_discount_pct", "dividend_yield_pct", "nii_coverage",
         "payout_ratio_pct", "pik_income_share_pct", "distribution_rate_pct",

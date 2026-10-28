@@ -90,8 +90,10 @@ STATEMENT_SPEC = {
         ("RealizedInvestmentGainsLosses", "Net Realized Gains (Losses)"),
         ("UnrealizedGainLossOnInvestments", "Net Unrealized Gains (Losses)"),
         ("NetIncomeLoss", "Net Income (Loss)"),
-        ("EarningsPerShareBasic", "EPS (Basic)"),
-        ("EarningsPerShareDiluted", "EPS (Diluted)"),
+        ("InvestmentCompanyNetAssetsFromOperationsIncreaseDecrease", "Net Increase in Net Assets from Operations"),
+        ("InvestmentCompanyInvestmentIncomeLossFromOperationsPerShare", "Net Income per Share"),
+        ("EarningsPerShareBasic", "Net Income per Share"),
+        ("EarningsPerShareDiluted", "Net Income per Share (Diluted)"),
         ("CommonStockDividendsPerShareDeclared", "Dividends per Share (Declared)"),
         ("CommonStockDividendsPerShareCashPaid", "Dividends per Share (Paid)"),
         ("InvestmentCompanyDividendDistribution", "Dividend Distribution"),
@@ -343,9 +345,13 @@ def clean_series(series: list) -> list:
 
 def statement_series_map(series: list, statement: str) -> dict:
     """
-    Reduce a series to {period_end: {val, filed, form, duration_days}}.
-    For duration concepts prefer quarter-length rows over YTD/annual rows when
-    both exist for the same end date.
+    Reduce a series to {period_end: {val, filed, form, duration_days, derived}}.
+
+    Flow statements prefer an explicit quarter-length fact. When only a longer
+    duration exists for an end date, derive the discrete quarter from the next
+    shorter fact:
+        Q2 = H1 - Q1, Q3 = 9M - H1, Q4 = FY - 9M
+    This keeps the Financials tab and QoQ comparisons on a quarterly basis.
     """
     if statement == "balance_sheet":
         return {
@@ -355,8 +361,8 @@ def statement_series_map(series: list, statement: str) -> dict:
             }
             for r in series
         }
-    # Prefer quarter-length, then semi-annual, then YTD, then annual
-    priority = []
+
+    by_end = defaultdict(dict)
     for r in series:
         d = r["duration_days"] or 0
         if QUARTER_DURATIONS[0] <= d <= QUARTER_DURATIONS[1]:
@@ -367,29 +373,49 @@ def statement_series_map(series: list, statement: str) -> dict:
             p = 2
         else:
             p = 3
-        priority.append((r["end"], p, r["filed"] or "", r))
-    priority.sort(key=lambda x: (x[0], x[1], x[2]))
-    out = {}
-    for end, p, filed, r in priority:
-        key = (end, p)
-        if key in out:
-            # keep latest filed within the same priority
-            if (filed) < (out[key]["filed"] or ""):
+        prev = by_end[r["end"]].get(p)
+        if prev is None or (r["filed"] or "") >= (prev["filed"] or ""):
+            by_end[r["end"]][p] = {
+                "val": r["val"], "filed": r["filed"], "form": r["form"],
+                "duration_days": r["duration_days"], "unit": r["unit"],
+            }
+
+    def prior_row(end, priority):
+        target = datetime.strptime(end, "%Y-%m-%d").date()
+        best = None
+        for other, rows in by_end.items():
+            if other == end or priority not in rows:
                 continue
-        out[key] = {
-            "val": r["val"], "filed": r["filed"], "form": r["form"],
-            "duration_days": r["duration_days"], "unit": r["unit"],
+            gap = (target - datetime.strptime(other, "%Y-%m-%d").date()).days
+            if 70 <= gap <= 110 and (best is None or gap < best[0]):
+                best = (gap, rows[priority])
+        return best[1] if best else None
+
+    def derive(long_row, short_row, label):
+        return {
+            "val": long_row["val"] - short_row["val"],
+            "filed": long_row["filed"],
+            "form": long_row["form"],
+            "duration_days": 90,
+            "unit": long_row["unit"],
+            "derived": label,
         }
-    # Re-key by end only, keeping preferred priority per end
-    by_end = {}
-    for (end, _p), row in out.items():
-        prev = by_end.get(end)
-        if prev is None or (prev.get("_priority", 9) > _p):
-            row["_priority"] = _p
-            by_end[end] = row
-    for row in by_end.values():
-        row.pop("_priority", None)
-    return by_end
+
+    out = {}
+    for end in sorted(by_end):
+        rows = by_end[end]
+        if 0 in rows:
+            out[end] = rows[0]
+        elif 1 in rows:
+            q1 = prior_row(end, 0)
+            out[end] = derive(rows[1], q1, "H1-Q1") if q1 else rows[1]
+        elif 2 in rows:
+            h1 = prior_row(end, 1)
+            out[end] = derive(rows[2], h1, "9M-H1") if h1 else rows[2]
+        elif 3 in rows:
+            n9 = prior_row(end, 2)
+            out[end] = derive(rows[3], n9, "FY-9M") if n9 else rows[3]
+    return out
 
 
 def build_statements(facts: dict) -> dict:
@@ -407,10 +433,16 @@ def build_statements(facts: dict) -> dict:
             series_map = statement_series_map(series, statement)
             if not series_map:
                 continue
+            unit = next(iter(series_map.values()))["unit"]
+            if unit == "USD/shares":
+                # Guard against split/unit artifacts in per-share facts.
+                series_map = {end: row for end, row in series_map.items() if abs(row["val"] or 0) <= 50}
+                if not series_map:
+                    continue
             statements[statement][label] = {
                 "concept": key,
                 "label": label,
-                "unit": next(iter(series_map.values()))["unit"],
+                "unit": unit,
                 "series": series_map,
             }
 
@@ -514,6 +546,28 @@ def derive_metrics(statements: dict) -> dict:
                 nii_ps[end] = {"val": nii[end]["val"] / shares[end]["val"],
                                "filed": None, "form": None, "duration_days": None, "unit": "USD/shares"}
         derived["nii_per_share"] = {"label": "NII per Share", "unit": "USD/shares", "series": nii_ps}
+
+    ni_ps_node = statements.get("income_statement", {}).get("Net Income per Share")
+    if ni_ps_node and ni_ps_node.get("series"):
+        derived["net_income_per_share"] = {
+            "label": "Net Income per Share",
+            "unit": "USD/shares",
+            "series": {
+                end: dict(row, unit="USD/shares")
+                for end, row in ni_ps_node["series"].items()
+            },
+        }
+    elif shares:
+        net_income = statements.get("income_statement", {}).get("Net Income (Loss)", {}).get("series", {})
+        ni_ps = {}
+        for end in sorted(set(net_income) & set(shares)):
+            if shares[end]["val"]:
+                ni_ps[end] = {
+                    "val": net_income[end]["val"] / shares[end]["val"],
+                    "filed": None, "form": None, "duration_days": None, "unit": "USD/shares",
+                }
+        if ni_ps:
+            derived["net_income_per_share"] = {"label": "Net Income per Share", "unit": "USD/shares", "series": ni_ps}
 
     return derived
 
