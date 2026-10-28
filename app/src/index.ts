@@ -419,16 +419,6 @@ const UI_HTML = `<!doctype html>
   .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 12px; }
   .peer-focus { display: flex; justify-content: space-between; gap: 12px; align-items: center; flex-wrap: wrap; background: #f8f9fb; border: 1px solid var(--line); border-radius: 5px; padding: 10px 12px; margin-bottom: 10px; }
   .peer-focus .pf-name { font-size: 15px; font-weight: 700; }
-  .metric-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(235px, 1fr)); gap: 8px; margin-bottom: 14px; }
-  .metric-card { border: 1px solid var(--line); border-radius: 5px; padding: 8px 10px; background: #fff; }
-  .mc-head { display: flex; justify-content: space-between; gap: 6px; font-size: 10.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .3px; }
-  .mc-rank { color: var(--navy2); font-weight: 700; white-space: nowrap; }
-  .mc-value { font-size: 16px; font-weight: 700; margin-top: 2px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
-  .mc-med { font-size: 10.5px; font-weight: 400; color: var(--muted); }
-  .dist { position: relative; height: 16px; margin: 6px 0 2px; background: #f1f3f6; border: 1px solid var(--line); border-radius: 8px; }
-  .dist .dot { position: absolute; top: 5px; width: 5px; height: 5px; margin-left: -2.5px; background: #9fb0c9; border-radius: 50%; }
-  .dist .dot.me { top: 2px; width: 10px; height: 10px; margin-left: -5px; background: var(--accent); box-shadow: 0 0 0 2px rgba(192,138,45,.25); }
-  .mc-foot { display: flex; justify-content: space-between; font-size: 10px; color: var(--muted); }
   .leaderboard { border: 1px solid var(--line); border-radius: 5px; background: #fff; }
   .leaderboard .lb-row { display: flex; align-items: center; gap: 8px; padding: 4px 8px; border-bottom: 1px solid #edf0f3; font-size: 11.5px; cursor: pointer; }
   .leaderboard .lb-row:last-child { border-bottom: 0; }
@@ -440,7 +430,28 @@ const UI_HTML = `<!doctype html>
   .lb-val { font-variant-numeric: tabular-nums; }
   .tilt-table td.tilt.pos, .tilt-table td.pos { color: var(--good); }
   .tilt-table td.tilt.neg, .tilt-table td.neg { color: var(--bad); }
-  @media (max-width: 900px) { .diff-layout { grid-template-columns: 1fr; } .grid3 { grid-template-columns: 1fr; } }
+  .chart-split { display: grid; grid-template-columns: 1fr 275px; gap: 10px; align-items: start; }
+  .chart-main { min-width: 0; }
+  .chart-side { min-width: 0; }
+  .scatter-svg { width: 100%; height: auto; display: block; }
+  .scatter-dot { cursor: pointer; }
+  .scatter-dot:hover { stroke: #1a2f5a; stroke-width: 2; }
+  .radar-svg { width: 100%; height: auto; display: block; max-width: 360px; }
+  .heatmap-wrap { max-height: 520px; overflow: auto; border: 1px solid var(--line); border-radius: 4px; }
+  #peer-heatmap { border-collapse: separate; border-spacing: 0; font-size: 11px; }
+  #peer-heatmap th { position: sticky; top: 0; background: #f2f4f7; z-index: 2; white-space: nowrap; }
+  #peer-heatmap td, #peer-heatmap th { padding: 3px 6px; border-bottom: 1px solid #edf0f3; }
+  #peer-heatmap .sticky-col { position: sticky; left: 0; background: #fff; z-index: 1; font-weight: 600; }
+  #peer-heatmap thead .sticky-col { z-index: 3; background: #f2f4f7; }
+  #peer-heatmap tr.heat-focus td { box-shadow: inset 0 2px 0 var(--accent), inset 0 -2px 0 var(--accent); font-weight: 700; }
+  #peer-heatmap td.heat { font-variant-numeric: tabular-nums; }
+  #peer-heatmap tfoot td { position: sticky; bottom: 0; background: #f7f8fa; font-weight: 700; }
+  .pct-bar { display: inline-block; width: 90px; height: 7px; background: #e9ecf1; border-radius: 4px; overflow: hidden; vertical-align: middle; margin-right: 6px; }
+  .pct-fill { display: block; height: 100%; background: var(--navy2); }
+  .lb-bar { width: 64px; height: 7px; background: #e9ecf1; border-radius: 4px; overflow: hidden; flex-shrink: 0; }
+  .lb-bar > span { display: block; height: 100%; background: var(--accent); }
+  table.mini td, table.mini th { font-size: 11px; padding: 3px 6px; }
+  @media (max-width: 900px) { .diff-layout { grid-template-columns: 1fr; } .grid3 { grid-template-columns: 1fr; } .chart-split { grid-template-columns: 1fr; } }
   @media (max-width: 800px) {
     .layout { grid-template-columns: 1fr; grid-template-rows: 220px 1fr; }
     .bar-row { grid-template-columns: 120px 1fr 110px; }
@@ -518,6 +529,13 @@ const state = {
   peerCohort: 'all',
   peerShowTable: false,
   peerFocusAnalytics: {},
+  peerChartMode: '3d',
+  peerPreset: 'yield_leverage',
+  peerX: 'weighted_avg_cash_rate',
+  peerY: 'debt_to_equity',
+  peerColorKey: 'unrealized_gl_pct',
+  peerHeatKey: 'fair_value',
+  peerHeatDir: -1,
 };
 
 // ------------------------------------------------------------------ utils
@@ -1878,37 +1896,220 @@ const PEER_METRICS = [
   { key: 'age_5plus_pct', label: 'Age 5+ yrs', fmt: fmtPct, higher: false },
   { key: 'total_net_change', label: 'QoQ net FV change', fmt: fmtK, higher: true },
 ];
-function metricCard(def) {
-  const focus = peerByTicker(state.peerFocus);
+function peerMetricDef(key) {
+  const found = PEER_METRICS.find(m => m.key === key);
+  if (found) return found;
+  if (key === 'companies') return { key: 'companies', label: 'Companies', fmt: fmtNum, higher: true };
+  return { key: key, label: key, fmt: v => String(v), higher: true };
+}
+const PEER_PRESETS = [
+  { id: 'yield_leverage', label: 'Yield vs leverage', x: 'weighted_avg_cash_rate', y: 'debt_to_equity', color: 'unrealized_gl_pct', colorLabel: 'unrealized G/L (red negative / green positive)' },
+  { id: 'mix_yield', label: 'Mix vs yield', x: 'first_lien_pct', y: 'weighted_avg_cash_rate', color: 'pik_share_pct', colorLabel: 'PIK share' },
+  { id: 'size_concentration', label: 'Size vs concentration', x: 'fair_value', y: 'top10_pct', color: 'first_lien_pct', colorLabel: 'first lien weight' },
+  { id: 'vintage_marks', label: 'Vintage vs marks', x: 'median_vintage_year', y: 'unrealized_gl_pct', color: 'age_5plus_pct', colorLabel: 'age 5+ share' },
+  { id: 'structure_pik', label: 'Structure vs PIK', x: 'floating_pct', y: 'pik_share_pct', color: 'equity_pct', colorLabel: 'equity weight' },
+  { id: 'coverage_nii', label: 'Coverage vs NII', x: 'asset_coverage', y: 'nii_per_share', color: 'debt_to_equity', colorLabel: 'leverage' },
+];
+const RADAR_DIMS = [
+  { key: 'weighted_avg_cash_rate', label: 'Yield', higher: true },
+  { key: 'first_lien_pct', label: 'First lien', higher: true },
+  { key: 'floating_pct', label: 'Floating', higher: true },
+  { key: 'asset_coverage', label: 'Coverage', higher: true },
+  { key: 'debt_to_equity', label: 'Low leverage', higher: false },
+  { key: 'nii_per_share', label: 'NII / share', higher: true },
+  { key: 'unrealized_gl_pct', label: 'Marks', higher: true },
+  { key: 'median_vintage_year', label: 'Freshness', higher: true },
+];
+const HEAT_COLS = [
+  ['fair_value', 'Fair Value', true, fmtK],
+  ['first_lien_pct', '1st Lien', true, fmtPct],
+  ['weighted_avg_cash_rate', 'Cash %', true, fmtRate],
+  ['weighted_avg_spread', 'Spread', true, fmtRate],
+  ['pik_share_pct', 'PIK', false, fmtPct],
+  ['floating_pct', 'Floating', true, fmtPct],
+  ['top10_pct', 'Top10', false, fmtPct],
+  ['debt_to_equity', 'D/E', false, v => num(v).toFixed(2) + '×'],
+  ['asset_coverage', 'Cover', true, v => num(v).toFixed(2) + '×'],
+  ['nii_per_share', 'NII', true, v => '$' + num(v).toFixed(2)],
+  ['unrealized_gl_pct', 'G/L', true, v => signed(v) + '%'],
+  ['age_5plus_pct', '5y+', false, fmtPct],
+  ['total_net_change', 'QoQ Δ', true, fmtK],
+];
+function percentileRank(key, value, cohort, higher) {
+  const vals = cohort.map(p => num(p[key])).filter(v => v !== null);
+  if (vals.length < 2) return 50;
+  const worse = vals.filter(v => higher ? v < value : v > value).length;
+  return Math.round(worse / (vals.length - 1) * 100);
+}
+function heatStyle(key, value, cohort, higher) {
+  if (value === null) return '';
+  const pct = percentileRank(key, value, cohort, higher);
+  const alpha = 0.05 + Math.abs(pct - 50) / 50 * 0.22;
+  return pct >= 50
+    ? 'background:rgba(29,122,79,' + alpha.toFixed(2) + ');'
+    : 'background:rgba(161,51,51,' + alpha.toFixed(2) + ');';
+}
+function peerColor(key, v, cohort) {
+  if (v === null) return '#9fb0c9';
+  if (key === 'unrealized_gl_pct') return Number(v) < 0 ? '#a13333' : '#1d7a4f';
+  const vals = cohort.map(p => num(p[key])).filter(x => x !== null);
+  const lo = Math.min.apply(null, vals), hi = Math.max.apply(null, vals);
+  const t = (Number(v) - lo) / ((hi - lo) || 1);
+  return t < 0.34 ? '#9fb0c9' : t < 0.67 ? '#c08a2d' : '#7a4b8f';
+}
+function scatterChart() {
   const cohort = cohortPeers();
-  const vals = cohort.map(p => p[def.key]).filter(v => v !== null && v !== undefined && v !== '' && !isNaN(Number(v))).map(Number);
-  const fv = focus ? num(focus[def.key]) : null;
-  if (fv === null || fv === undefined) {
-    return '<div class="metric-card"><div class="mc-head"><span>' + esc(def.label) + '</span></div><div class="mc-value">—</div><div class="small muted">no data</div></div>';
+  const defX = peerMetricDef(state.peerX), defY = peerMetricDef(state.peerY);
+  const pts = cohort.map(p => ({ p: p, x: num(p[state.peerX]), y: num(p[state.peerY]) })).filter(d => d.x !== null && d.y !== null);
+  if (pts.length < 2) return '<div class="empty">Not enough data for this view in the cohort.</div>';
+  const xs = pts.map(d => d.x), ys = pts.map(d => d.y);
+  const minX = Math.min.apply(null, xs), maxX = Math.max.apply(null, xs);
+  const minY = Math.min.apply(null, ys), maxY = Math.max.apply(null, ys);
+  const padX = (maxX - minX) * 0.08 || 1, padY = (maxY - minY) * 0.08 || 1;
+  const x0 = minX - padX, x1 = maxX + padX, y0 = minY - padY, y1 = maxY + padY;
+  const W = 780, H = 430, L = 64, R = 18, T = 16, B = 44;
+  const sx = v => L + (v - x0) / (x1 - x0) * (W - L - R);
+  const sy = v => T + (1 - (v - y0) / (y1 - y0)) * (H - T - B);
+  const medX = medianOf(xs), medY = medianOf(ys);
+  const tickX = state.peerX === 'median_vintage_year' ? (v => String(Math.round(v))) : defX.fmt;
+  const tickY = state.peerY === 'median_vintage_year' ? (v => String(Math.round(v))) : defY.fmt;
+  const maxSize = Math.max.apply(null, cohort.map(p => num(p.fair_value) || 0).concat([1]));
+  let svg = '<svg viewBox="0 0 ' + W + ' ' + H + '" class="scatter-svg" role="img" aria-label="Peer positioning scatter">';
+  svg += '<rect x="' + L + '" y="' + T + '" width="' + (W - L - R) + '" height="' + (H - T - B) + '" fill="#fbfcfd" stroke="#dde1e7"/>';
+  for (let i = 0; i <= 4; i++) {
+    const xv = x0 + (x1 - x0) * i / 4;
+    const yv = y0 + (y1 - y0) * i / 4;
+    const x = sx(xv), y = sy(yv);
+    svg += '<line x1="' + x.toFixed(1) + '" y1="' + T + '" x2="' + x.toFixed(1) + '" y2="' + (H - B) + '" stroke="#e6e9ee"/>';
+    svg += '<line x1="' + L + '" y1="' + y.toFixed(1) + '" x2="' + (W - R) + '" y2="' + y.toFixed(1) + '" stroke="#e6e9ee"/>';
+    svg += '<text x="' + x.toFixed(1) + '" y="' + (H - B + 14) + '" text-anchor="middle" font-size="9.5" fill="#7b8490">' + esc(tickX(xv)) + '</text>';
+    svg += '<text x="' + (L - 8) + '" y="' + (y + 3).toFixed(1) + '" text-anchor="end" font-size="9.5" fill="#7b8490">' + esc(tickY(yv)) + '</text>';
   }
-  const better = cohort.filter(p => {
-    const v = num(p[def.key]);
-    if (v === null) return false;
-    return def.higher ? v > fv : v < fv;
-  }).length;
-  const rank = better + 1;
-  const pct = vals.length > 1 ? Math.round((vals.length - rank) / (vals.length - 1) * 100) : 50;
-  const med = medianOf(vals);
-  const min = Math.min.apply(null, vals), max = Math.max.apply(null, vals);
-  const span = max - min || 1;
-  let dots = '';
-  for (const p of cohort) {
-    const v = num(p[def.key]);
-    if (v === null) continue;
-    const left = Math.max(0, Math.min(100, (v - min) / span * 100));
-    dots += '<span class="dot' + (p.ticker === state.peerFocus ? ' me' : '') + '" style="left:' + left.toFixed(1) + '%" title="' + esc(p.ticker + ': ' + def.fmt(v)) + '"></span>';
+  svg += '<line x1="' + sx(medX).toFixed(1) + '" y1="' + T + '" x2="' + sx(medX).toFixed(1) + '" y2="' + (H - B) + '" stroke="#c08a2d" stroke-dasharray="4 3" stroke-width="1"/>';
+  svg += '<line x1="' + L + '" y1="' + sy(medY).toFixed(1) + '" x2="' + (W - R) + '" y2="' + sy(medY).toFixed(1) + '" stroke="#c08a2d" stroke-dasharray="4 3" stroke-width="1"/>';
+  svg += '<text x="' + (sx(medX) + 4).toFixed(1) + '" y="' + (T + 11) + '" font-size="9" fill="#a87722">median ' + esc(defX.label.toLowerCase()) + '</text>';
+  svg += '<text x="' + (L + 4) + '" y="' + (sy(medY) - 4).toFixed(1) + '" font-size="9" fill="#a87722">median ' + esc(defY.label.toLowerCase()) + '</text>';
+  for (const d of pts) {
+    const focus = d.p.ticker === state.peerFocus;
+    let r = 4.3;
+    if (state.peerChartMode === '3d') r = 4 + Math.sqrt(Math.max(0, num(d.p.fair_value) || 0) / maxSize) * 9;
+    const color = state.peerChartMode === '3d' ? peerColor(state.peerColorKey, num(d.p[state.peerColorKey]), cohort) : '#24457c';
+    const tip = d.p.ticker + ': ' + defX.label + ' ' + defX.fmt(d.x) + ' · ' + defY.label + ' ' + defY.fmt(d.y) + ' · FV ' + fmtK(d.p.fair_value);
+    svg += '<circle class="scatter-dot' + (focus ? ' focus' : '') + '" cx="' + sx(d.x).toFixed(1) + '" cy="' + sy(d.y).toFixed(1) + '" r="' + (focus ? r + 3 : r).toFixed(1) + '" fill="' + color + '" fill-opacity="' + (focus ? 1 : 0.72) + '" stroke="' + (focus ? '#c08a2d' : '#ffffff') + '" stroke-width="' + (focus ? 2.2 : 0.8) + '" data-focus="' + d.p.ticker + '"><title>' + esc(tip) + '</title></circle>';
+    if (focus) {
+      const lx = Math.min(sx(d.x) + r + 7, W - 62);
+      svg += '<text x="' + lx.toFixed(1) + '" y="' + (sy(d.y) + 3.5).toFixed(1) + '" font-size="10.5" font-weight="700" fill="#1a2f5a">' + esc(d.p.ticker) + '</text>';
+    }
   }
-  return '<div class="metric-card">' +
-    '<div class="mc-head"><span>' + esc(def.label) + '</span><span class="mc-rank">#' + rank + ' of ' + vals.length + '</span></div>' +
-    '<div class="mc-value">' + esc(def.fmt(fv)) + '<span class="mc-med">median ' + esc(def.fmt(med)) + '</span></div>' +
-    '<div class="dist">' + dots + '</div>' +
-    '<div class="mc-foot"><span>percentile ' + pct + '</span><span class="' + (def.higher ? 'pos' : 'neg') + '">' + (def.higher ? 'higher = better' : 'lower = better') + '</span></div>' +
-  '</div>';
+  svg += '<text x="' + (L + (W - L - R) / 2) + '" y="' + (H - 8) + '" text-anchor="middle" font-size="10.5" fill="#5c6570">' + esc(defX.label) + ' →</text>';
+  const cy = T + (H - T - B) / 2;
+  svg += '<text x="15" y="' + cy + '" transform="rotate(-90 15 ' + cy + ')" text-anchor="middle" font-size="10.5" fill="#5c6570">' + esc(defY.label) + ' →</text>';
+  return svg + '</svg>';
+}
+function nearestPeersHtml() {
+  const cohort = cohortPeers();
+  const focus = peerByTicker(state.peerFocus);
+  if (!focus) return '';
+  const fx = num(focus[state.peerX]), fy = num(focus[state.peerY]);
+  if (fx === null || fy === null) return '<div class="empty">Focus BDC has no data on these axes.</div>';
+  const defX = peerMetricDef(state.peerX), defY = peerMetricDef(state.peerY);
+  const pts = cohort.map(p => ({ p: p, x: num(p[state.peerX]), y: num(p[state.peerY]) })).filter(d => d.x !== null && d.y !== null);
+  const xs = pts.map(d => d.x), ys = pts.map(d => d.y);
+  const rx = (Math.max.apply(null, xs) - Math.min.apply(null, xs)) || 1;
+  const ry = (Math.max.apply(null, ys) - Math.min.apply(null, ys)) || 1;
+  const rows = pts.filter(d => d.p.ticker !== focus.ticker).map(d => {
+    const dx = (d.x - fx) / rx, dy = (d.y - fy) / ry;
+    return { p: d.p, x: d.x, y: d.y, dist: Math.sqrt(dx * dx + dy * dy) };
+  }).sort((a, b) => a.dist - b.dist).slice(0, 6);
+  let html = '<div class="small muted" style="margin-bottom:4px">Closest peers in this view</div><table class="mini"><thead><tr><th>Ticker</th><th class="num">' + esc(defX.label) + '</th><th class="num">' + esc(defY.label) + '</th></tr></thead><tbody>';
+  for (const r of rows) {
+    html += '<tr class="clickrow" data-focus="' + r.p.ticker + '"><td><b>' + r.p.ticker + '</b></td><td class="num">' + esc(defX.fmt(r.x)) + '</td><td class="num">' + esc(defY.fmt(r.y)) + '</td></tr>';
+  }
+  return html + '</tbody></table>';
+}
+function radarSvg() {
+  const cohort = cohortPeers();
+  const focus = peerByTicker(state.peerFocus);
+  const cx = 180, cy = 165, R = 120;
+  const n = RADAR_DIMS.length;
+  const dims = RADAR_DIMS.map((d, i) => {
+    const v = focus ? num(focus[d.key]) : null;
+    const pct = v === null ? 0 : percentileRank(d.key, v, cohort, d.higher);
+    const ang = -Math.PI / 2 + i * 2 * Math.PI / n;
+    return { d: d, v: v, pct: pct, ang: ang, x: cx + Math.cos(ang) * pct / 100 * R, y: cy + Math.sin(ang) * pct / 100 * R,
+      lx: cx + Math.cos(ang) * (R + 20), ly: cy + Math.sin(ang) * (R + 20),
+      ax: cx + Math.cos(ang) * R, ay: cy + Math.sin(ang) * R };
+  });
+  let svg = '<svg viewBox="0 0 360 330" class="radar-svg" role="img" aria-label="Percentile profile radar">';
+  for (const ring of [25, 50, 75, 100]) {
+    const pts = [];
+    for (let i = 0; i < n; i++) {
+      const a = -Math.PI / 2 + i * 2 * Math.PI / n;
+      pts.push((cx + Math.cos(a) * R * ring / 100).toFixed(1) + ',' + (cy + Math.sin(a) * R * ring / 100).toFixed(1));
+    }
+    svg += '<polygon points="' + pts.join(' ') + '" fill="none" stroke="' + (ring === 50 ? '#c08a2d' : '#dfe3e9') + '" stroke-dasharray="' + (ring === 50 ? '4 3' : '0') + '"/>';
+  }
+  for (const d of dims) {
+    svg += '<line x1="' + cx + '" y1="' + cy + '" x2="' + d.ax.toFixed(1) + '" y2="' + d.ay.toFixed(1) + '" stroke="#e3e6eb"/>';
+    const anchor = Math.cos(d.ang) > 0.3 ? 'start' : (Math.cos(d.ang) < -0.3 ? 'end' : 'middle');
+    svg += '<text x="' + d.lx.toFixed(1) + '" y="' + (d.ly + 3).toFixed(1) + '" text-anchor="' + anchor + '" font-size="9.5" fill="#5c6570">' + esc(d.d.label) + '</text>';
+  }
+  svg += '<polygon points="' + dims.map(d => d.x.toFixed(1) + ',' + d.y.toFixed(1)).join(' ') + '" fill="rgba(36,69,124,.18)" stroke="#24457c" stroke-width="2"/>';
+  for (const d of dims) {
+    svg += '<circle cx="' + d.x.toFixed(1) + '" cy="' + d.y.toFixed(1) + '" r="3.2" fill="#24457c"><title>' + esc(d.d.label + ': ' + (d.v === null ? 'no data' : peerMetricDef(d.d.key).fmt(d.v)) + ' · percentile ' + d.pct) + '</title></circle>';
+  }
+  svg += '<text x="' + cx + '" y="' + (cy + 4) + '" text-anchor="middle" font-size="9" fill="#8a929c">50th pct ring</text>';
+  return svg + '</svg>';
+}
+function radarTableHtml() {
+  const cohort = cohortPeers();
+  const focus = peerByTicker(state.peerFocus);
+  let html = '<table class="mini"><thead><tr><th>Metric</th><th class="num">Focus</th><th class="num">Median</th><th>Percentile</th></tr></thead><tbody>';
+  for (const d of RADAR_DIMS) {
+    const v = focus ? num(focus[d.key]) : null;
+    const med = medianOf(cohort.map(p => num(p[d.key])).filter(x => x !== null));
+    const pct = v === null ? 0 : percentileRank(d.key, v, cohort, d.higher);
+    const fmt = peerMetricDef(d.key).fmt;
+    html += '<tr><td>' + esc(d.label) + '</td><td class="num">' + (v === null ? '—' : esc(fmt(v))) + '</td>' +
+      '<td class="num">' + (med === null ? '—' : esc(fmt(med))) + '</td>' +
+      '<td>' + (v === null ? '<span class="small muted">no data</span>' : '<div class="pct-bar"><div class="pct-fill" style="width:' + pct + '%"></div></div><span class="small muted">' + pct + '</span>') + '</td></tr>';
+  }
+  return html + '</tbody></table>';
+}
+function peerHeatmapHtml() {
+  const cohort = cohortPeers().slice();
+  const focus = state.peerFocus;
+  const key = state.peerHeatKey || 'fair_value';
+  const dir = state.peerHeatDir || -1;
+  cohort.sort((a, b) => {
+    const av = num(a[key]), bv = num(b[key]);
+    if (av === null && bv === null) return 0;
+    if (av === null) return 1;
+    if (bv === null) return -1;
+    return (av - bv) * dir;
+  });
+  let html = '<div class="heatmap-wrap"><table id="peer-heatmap"><thead><tr><th class="sticky-col">Ticker</th>';
+  for (const c of HEAT_COLS) {
+    html += '<th class="num sortable" data-heat="' + c[0] + '">' + c[1] + (key === c[0] ? (dir === -1 ? ' ▼' : ' ▲') : '') + '</th>';
+  }
+  html += '</tr></thead><tbody>';
+  for (const r of cohort) {
+    html += '<tr class="clickrow' + (r.ticker === focus ? ' heat-focus' : '') + '" data-focus="' + r.ticker + '"><td class="sticky-col"><b>' + r.ticker + '</b></td>';
+    for (const c of HEAT_COLS) {
+      const v = num(r[c[0]]);
+      if (v === null) { html += '<td class="num">—</td>'; continue; }
+      const style = heatStyle(c[0], v, cohort, c[2]);
+      const pct = percentileRank(c[0], v, cohort, c[2]);
+      html += '<td class="num heat" style="' + style + '" title="' + esc(c[1] + ' percentile ' + pct) + '">' + esc(c[3](v)) + '</td>';
+    }
+    html += '</tr>';
+  }
+  html += '</tbody><tfoot><tr><td class="sticky-col">Median</td>';
+  for (const c of HEAT_COLS) {
+    const med = medianOf(cohort.map(p => num(p[c[0]])).filter(x => x !== null));
+    html += '<td class="num">' + (med === null ? '—' : esc(c[3](med))) + '</td>';
+  }
+  return html + '</tr></tfoot></table></div>';
 }
 function leaderboard(title, key, higher, fmt) {
   const list = cohortPeers()
@@ -1917,17 +2118,23 @@ function leaderboard(title, key, higher, fmt) {
   const top = list.slice(0, 5);
   const focusRank = list.findIndex(p => p.ticker === state.peerFocus) + 1;
   const focus = peerByTicker(state.peerFocus);
+  const max = Math.max.apply(null, top.map(p => Math.abs(Number(p[key]))).concat([1]));
   let html = '<div class="section"><h3>' + esc(title) + '</h3><div class="leaderboard">';
   for (let i = 0; i < top.length; i++) {
     const p = top[i];
+    const w = Math.max(2, Math.abs(Number(p[key])) / max * 100);
     html += '<div class="lb-row' + (p.ticker === state.peerFocus ? ' me' : '') + '" data-focus="' + p.ticker + '">' +
       '<span class="lb-rank">' + (i + 1) + '</span><span class="lb-tkr">' + p.ticker + '</span>' +
       '<span class="lb-name">' + esc((state.profiles[p.ticker] || {}).name || '') + '</span>' +
+      '<span class="lb-bar"><span style="width:' + w.toFixed(1) + '%"></span></span>' +
       '<span class="lb-val">' + esc(fmt(p[key])) + '</span></div>';
   }
   if (focus && focusRank > 5) {
+    const fv = Number(focus[key]);
+    const w = Math.max(2, Math.abs(fv) / max * 100);
     html += '<div class="lb-row me" data-focus="' + focus.ticker + '"><span class="lb-rank">' + focusRank + '</span>' +
       '<span class="lb-tkr">' + focus.ticker + '</span><span class="lb-name">' + esc((state.profiles[focus.ticker] || {}).name || '') + '</span>' +
+      '<span class="lb-bar"><span style="width:' + Math.min(100, w).toFixed(1) + '%"></span></span>' +
       '<span class="lb-val">' + esc(fmt(focus[key])) + '</span></div>';
   }
   return html + '</div></div>';
@@ -1989,9 +2196,6 @@ function bindPeerTable(el) {
       renderPeerEvaluation($('main'));
     };
   });
-  el.querySelectorAll('#peers-table tr[data-focus]').forEach(tr => {
-    tr.onclick = () => selectPeerFocus(tr.getAttribute('data-focus'));
-  });
 }
 async function ensurePeerFocusAnalytics() {
   const t = state.peerFocus;
@@ -2015,7 +2219,6 @@ async function renderPeerEvaluation(el) {
   const analytics = await ensurePeerFocusAnalytics();
   const prof = state.profiles[state.peerFocus] || {};
   const latest = analytics && analytics.periods && analytics.periods.length ? analytics.periods[analytics.periods.length - 1] : null;
-  const finLatest = focus && focus.fin_latest ? periodLabelShort(focus.period, null) + ' holdings' : '';
 
   let html = '<div class="peer-focus">' +
     '<div><div class="pf-name">' + state.peerFocus + ' — ' + esc(prof.name || '') + '</div>' +
@@ -2037,11 +2240,37 @@ async function renderPeerEvaluation(el) {
       const parts = o.split('|');
       return '<button class="chip-btn' + ((state.peerCohort || 'all') === parts[0] ? ' active' : '') + '" data-cohort="' + parts[0] + '">' + parts[1] + '</button>';
     }).join('') +
-    '<span class="small muted">' + cohort.length + ' BDCs in cohort · ranks and medians computed on this cohort</span>' +
+    '<span class="small muted">' + cohort.length + ' BDCs in cohort</span>' +
   '</div>';
 
-  html += '<div class="metric-grid">' + PEER_METRICS.map(metricCard).join('') + '</div>';
+  // Positioning scatter
+  const preset = PEER_PRESETS.find(p => p.id === state.peerPreset);
+  const colorLabel = preset ? preset.colorLabel : peerMetricDef(state.peerColorKey).label;
+  const plottedCount = cohort.filter(p => num(p[state.peerX]) !== null && num(p[state.peerY]) !== null).length;
+  html += '<div class="section"><h3>Peer positioning</h3>';
+  html += '<div class="diff-bar">' +
+    PEER_PRESETS.map(p => '<button class="chip-btn' + (state.peerPreset === p.id ? ' active' : '') + '" data-preset="' + p.id + '">' + esc(p.label) + '</button>').join('') +
+    '<span style="flex:1"></span>' +
+    '<button class="chip-btn' + (state.peerChartMode === '2d' ? ' active' : '') + '" data-chart-mode="2d">2D dots</button>' +
+    '<button class="chip-btn' + (state.peerChartMode === '3d' ? ' active' : '') + '" data-chart-mode="3d">3D bubbles</button>' +
+  '</div>';
+  html += '<div class="diff-bar">' +
+    '<label class="small muted">X <select id="peer-x">' + PEER_METRICS.concat([{ key: 'companies', label: 'Companies' }]).map(m => '<option value="' + m.key + '"' + (state.peerX === m.key ? ' selected' : '') + '>' + esc(m.label) + '</option>').join('') + '</select></label>' +
+    '<label class="small muted">Y <select id="peer-y">' + PEER_METRICS.concat([{ key: 'companies', label: 'Companies' }]).map(m => '<option value="' + m.key + '"' + (state.peerY === m.key ? ' selected' : '') + '>' + esc(m.label) + '</option>').join('') + '</select></label>' +
+    '<span class="small muted">' + (state.peerChartMode === '3d' ? 'Bubble size = portfolio fair value · Color = ' + esc(colorLabel) : '2D view · dot color = focus BDC in gold') + ' · ' + plottedCount + ' of ' + cohort.length + ' plotted (missing axis data omitted)</span>' +
+  '</div>';
+  html += '<div class="chart-split"><div class="chart-main">' + scatterChart() + '</div><div class="chart-side">' + nearestPeersHtml() + '</div></div>';
+  html += '</div>';
 
+  // Radar profile
+  html += '<div class="section"><h3>Percentile profile</h3>';
+  html += '<div class="chart-split" style="grid-template-columns:360px 1fr"><div class="chart-main">' + radarSvg() + '</div><div class="chart-side">' + radarTableHtml() + '</div></div>';
+  html += '<div class="small muted">Percentile within the ' + cohort.length + '-BDC cohort; the dashed ring is the 50th percentile. Higher is better on every axis (leverage is inverted).</div></div>';
+
+  // Heatmap
+  html += '<div class="section"><h3>Peer scorecard heatmap</h3><div class="small muted" style="margin-bottom:4px">Green = better percentile in the cohort, red = worse. Click a row to focus that BDC, a column to sort.</div>' + peerHeatmapHtml() + '</div>';
+
+  // Leaderboards
   html += '<div class="grid3">';
   html += leaderboard('Highest cash rate', 'weighted_avg_cash_rate', true, fmtRate);
   html += leaderboard('Most first-lien', 'first_lien_pct', true, fmtPct);
@@ -2051,6 +2280,7 @@ async function renderPeerEvaluation(el) {
   html += leaderboard('Largest portfolios', 'fair_value', true, fmtK);
   html += '</div>';
 
+  // Sector tilt
   if (latest) {
     const medMap = {};
     for (const s of (state.peers.sector_medians || [])) medMap[s.sector] = s.median_pct;
@@ -2068,7 +2298,8 @@ async function renderPeerEvaluation(el) {
     html += '</tbody></table><div class="small muted" style="margin-top:4px">Peer median = median sector weight across BDCs reporting that sector.</div></div>';
   }
 
-  html += '<div class="section"><h3>Full peer table <button class="btn" id="peer-toggle-table" style="margin-left:8px">' + (state.peerShowTable ? 'Hide' : 'Show') + '</button></h3>';
+  // Raw table
+  html += '<div class="section"><h3>Full data table <button class="btn" id="peer-toggle-table" style="margin-left:8px">' + (state.peerShowTable ? 'Hide' : 'Show') + '</button></h3>';
   if (state.peerShowTable) html += '<div id="peer-table-wrap">' + peerTableHtml() + '</div>';
   html += '</div>';
 
@@ -2084,8 +2315,31 @@ async function renderPeerEvaluation(el) {
   el.querySelectorAll('[data-cohort]').forEach(b => {
     b.onclick = () => { state.peerCohort = b.getAttribute('data-cohort'); updateHash(); renderPeerEvaluation(el); };
   });
-  el.querySelectorAll('.lb-row[data-focus]').forEach(r => {
-    r.onclick = () => selectPeerFocus(r.getAttribute('data-focus'));
+  el.querySelectorAll('[data-preset]').forEach(b => {
+    b.onclick = () => {
+      const p = PEER_PRESETS.find(x => x.id === b.getAttribute('data-preset'));
+      if (!p) return;
+      state.peerPreset = p.id; state.peerX = p.x; state.peerY = p.y; state.peerColorKey = p.color;
+      renderPeerEvaluation(el);
+    };
+  });
+  el.querySelectorAll('[data-chart-mode]').forEach(b => {
+    b.onclick = () => { state.peerChartMode = b.getAttribute('data-chart-mode'); renderPeerEvaluation(el); };
+  });
+  const xSel = $('peer-x'), ySel = $('peer-y');
+  if (xSel) xSel.onchange = (e) => { state.peerX = e.target.value; state.peerPreset = 'custom'; renderPeerEvaluation(el); };
+  if (ySel) ySel.onchange = (e) => { state.peerY = e.target.value; state.peerPreset = 'custom'; renderPeerEvaluation(el); };
+  el.querySelectorAll('#peer-heatmap th[data-heat]').forEach(th => {
+    th.onclick = () => {
+      const key = th.getAttribute('data-heat');
+      const upd = HEAT_COLS.find(c => c[0] === key);
+      if (state.peerHeatKey === key) state.peerHeatDir = -state.peerHeatDir;
+      else { state.peerHeatKey = key; state.peerHeatDir = upd && upd[2] ? -1 : 1; }
+      renderPeerEvaluation(el);
+    };
+  });
+  el.querySelectorAll('[data-focus]').forEach(n => {
+    n.onclick = () => selectPeerFocus(n.getAttribute('data-focus'));
   });
   const toggle = $('peer-toggle-table');
   if (toggle) toggle.onclick = () => { state.peerShowTable = !state.peerShowTable; renderPeerEvaluation(el); };

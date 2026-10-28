@@ -180,7 +180,7 @@ Periods are shown as fiscal quarters with filing dates, e.g. `Q2 2026 (2026-07-2
 Top-level sections (header nav):
 
 - **BDC View** — the per-BDC tabs above
-- **Peer Evaluation** — pick a focus BDC and a cohort (All / Large $5B+ / Mid $1–5B / Small <$1B). 17 metric cards each show the focus value, peer median, rank (`#12 of 49`), percentile, and a dot-strip distribution of every peer. Plus six leaderboards, a sector-tilt table vs peer median, and the full sortable table on demand
+- **Peer Evaluation** — pick a focus BDC and a cohort (All / Large $5B+ / Mid $1–5B / Small <$1B). **Peer positioning**: 2D or 3D-bubble scatter (bubble size = portfolio, color = a fourth metric) with six presets, axis pickers, median crosshairs and a closest-peers table. **Percentile profile**: SVG radar + focus-vs-median table. **Scorecard heatmap**: all cohort BDCs × 13 metrics, green/red by cohort percentile, sortable, click a row to focus. Plus six bar leaderboards, sector tilt vs peer median, and the raw table on demand
 - **Companies** — cross-BDC borrower view: which BDCs hold a company, exposure by BDC/maturity/type, profile
 
 Extras: CSV export of the visible tables, shareable deep links (`#/peers/ARCC/large`, `#/bdc/ARCC/vintage/2026-07-29`, `#/bdc/ARCC/holdings/2026-07-29/sector:Healthcare`, `#/companies/co_…`), and data-freshness indicators (holdings quarter vs financials quarter, balance check).
