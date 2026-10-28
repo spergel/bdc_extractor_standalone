@@ -177,7 +177,9 @@ Views, all powered by the data above:
 - **Peers** — sortable/filterable comparison across all BDCs with peer medians
 - **Companies** — cross-BDC borrower view: which BDCs hold a company, exposure by BDC/maturity/type, profile
 
-Extras: CSV export of the visible tables, shareable deep links (`#/bdc/ARCC/vintage/2026-07-29`, `#/companies/co_…`), and data-freshness indicators (holdings as-of vs financials as-of, balance check).
+Extras: CSV export of the visible tables, shareable deep links (`#/bdc/ARCC/vintage/2026-07-29`, `#/bdc/ARCC/holdings/2026-07-29/sector:Healthcare`, `#/companies/co_…`), and data-freshness indicators (holdings as-of vs financials as-of, balance check).
+
+**Interactive drill-down:** click any bar, card or table row in Loan Types, Sectors, Rates & Structure or Vintage & Maturity to preview that slice (positions, fair value, % of portfolio, top holdings) and jump straight to Holdings filtered to it. The filter appears as a removable chip and is encoded in the URL. The QoQ company list and the Companies sidebar are sortable (Δ fair value, current fair value, positions, name, fields changed / exposure, # BDCs, name).
 
 API endpoints used by the UI:
 

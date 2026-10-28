@@ -400,6 +400,21 @@ const UI_HTML = `<!doctype html>
   .chip-btn { border: 1px solid var(--line); background: #f6f7f9; border-radius: 12px; padding: 2px 10px; font-size: 11px; cursor: pointer; color: var(--text); }
   .chip-btn:hover { background: #e8ebef; }
   .chip-btn.active { background: var(--navy2); color: #fff; border-color: var(--navy2); }
+  .bar-row.clickable { cursor: pointer; border-radius: 2px; }
+  .bar-row.clickable:hover { background: #eef2f8; }
+  tr.clickrow { cursor: pointer; }
+  tr.clickrow:hover td { background: #eef2f8 !important; }
+  .card.clickable { cursor: pointer; }
+  .card.clickable:hover { border-color: var(--navy2); box-shadow: inset 0 0 0 1px var(--navy2); }
+  .modal-backdrop { position: fixed; inset: 0; background: rgba(20,30,50,.45); display: flex; align-items: center; justify-content: center; z-index: 50; padding: 16px; }
+  .modal-backdrop[hidden] { display: none; }
+  .modal { background: #fff; border-radius: 6px; max-width: 560px; width: 100%; box-shadow: 0 12px 40px rgba(0,0,0,.3); overflow: hidden; }
+  .modal .mh { background: var(--navy2); color: #fff; padding: 8px 12px; font-weight: 700; display: flex; justify-content: space-between; align-items: center; }
+  .modal .mh button { background: transparent; border: 0; color: #fff; font-size: 18px; cursor: pointer; line-height: 1; }
+  .modal .mb { padding: 12px; }
+  .modal .mf { padding: 10px 12px; border-top: 1px solid var(--line); display: flex; justify-content: flex-end; gap: 8px; background: #f7f8fa; }
+  .filter-chip { display: inline-flex; align-items: center; gap: 6px; padding: 3px 6px 3px 10px; border-radius: 14px; background: #e8effa; border: 1px solid #b9cbe8; color: var(--navy2); font-size: 11.5px; margin-bottom: 8px; }
+  .filter-chip button { border: 0; background: transparent; cursor: pointer; color: var(--navy2); font-size: 13px; padding: 0 2px; }
   @media (max-width: 900px) { .diff-layout { grid-template-columns: 1fr; } }
   @media (max-width: 800px) {
     .layout { grid-template-columns: 1fr; grid-template-rows: 220px 1fr; }
@@ -420,6 +435,11 @@ const UI_HTML = `<!doctype html>
     <aside class="window sidebar">
       <div class="titlebar"><span id="sidebar-title">BDCs</span><span class="meta" id="ticker-count"></span></div>
       <input id="ticker-search" placeholder="Filter by ticker or name…" />
+      <select id="company-sort" style="display:none; width:calc(100% - 12px); margin:0 6px 6px; padding:4px 6px; border:1px solid var(--line); border-radius:3px; font-size:11.5px; background:#fff;">
+        <option value="exposure">Sort: total exposure</option>
+        <option value="bdcs">Sort: # of BDCs</option>
+        <option value="name">Sort: company name</option>
+      </select>
       <div class="body" id="ticker-list">Loading…</div>
     </aside>
     <main class="window">
@@ -435,6 +455,13 @@ const UI_HTML = `<!doctype html>
       <div class="tabs" id="tabs"></div>
       <div class="body" id="main"><div class="empty">Select a BDC from the list.</div></div>
     </main>
+  </div>
+  <div id="modal-backdrop" class="modal-backdrop" hidden>
+    <div class="modal">
+      <div class="mh"><span id="modal-title">Filter holdings</span><button id="modal-x" aria-label="Close">×</button></div>
+      <div class="mb" id="modal-body"></div>
+      <div class="mf"><button class="btn" id="modal-cancel">Cancel</button><button class="btn primary" id="modal-apply">View filtered holdings</button></div>
+    </div>
   </div>
 
 <script>
@@ -457,7 +484,10 @@ const state = {
   sortKey: null,
   sortDir: 1,
   peerFilters: { q: '', minFv: '', maxDe: '', minFirstLien: '' },
-  diff: { before: null, after: null, cacheKey: null, computed: null, selected: null, view: 'unified', filter: 'all', minDelta: '', search: '' },
+  diff: { before: null, after: null, cacheKey: null, computed: null, selected: null, view: 'unified', filter: 'all', minDelta: '', search: '', sort: 'delta_abs' },
+  hFilter: null,
+  pendingFilter: null,
+  companySort: 'exposure',
 };
 
 // ------------------------------------------------------------------ utils
@@ -536,6 +566,161 @@ function downloadText(filename, text) {
   setTimeout(() => { URL.revokeObjectURL(url); a.remove(); }, 100);
 }
 
+// ------------------------------------------------------------------ holdings slice filters
+const FLOATING_REFS = ['SOFR', 'LIBOR', 'Prime', 'EURIBOR', 'SONIA', 'CDOR', 'BBSY', 'CORRA', 'Base rate', 'Other'];
+const FILTER_LABELS = {
+  type: 'Investment type', sector: 'Sector', ref: 'Reference rate', rateType: 'Rate type',
+  spread: 'Spread bucket', pik: 'PIK positions', vintage: 'Vintage year', age: 'Portfolio age',
+  maturity: 'Maturity', company: 'Company',
+};
+function normalizeRef(raw) {
+  const t = String(raw || '').trim().toUpperCase();
+  if (!t || ['N/A', 'NA', 'NONE', '-', '—', '0'].indexOf(t) >= 0) return '';
+  if (t.indexOf('SOFR') >= 0) return 'SOFR';
+  if (t.indexOf('LIBOR') >= 0 || t.indexOf('L+') === 0 || t.indexOf('L +') === 0 || t.indexOf('L-') === 0 || t.indexOf('L -') === 0) return 'LIBOR';
+  if (t.indexOf('EURIBOR') >= 0 || t.indexOf('E+') === 0 || t.indexOf('E +') === 0) return 'EURIBOR';
+  if (t.indexOf('PRIME') >= 0 || t.indexOf('P+') === 0 || t.indexOf('P +') === 0) return 'Prime';
+  if (t.indexOf('SONIA') >= 0) return 'SONIA';
+  if (t.indexOf('CDOR') >= 0) return 'CDOR';
+  if (t.indexOf('BBSY') >= 0) return 'BBSY';
+  if (t.indexOf('CORRA') >= 0) return 'CORRA';
+  if (t.indexOf('FIXED') >= 0) return 'Fixed';
+  if (t.indexOf('BASE RATE') >= 0) return 'Base rate';
+  return 'Other';
+}
+function cleanSectorJs(raw) {
+  const t = String(raw || '').trim();
+  if (!t) return 'Not Reported';
+  if ('-$0123456789.,%/()'.indexOf(t.charAt(0)) >= 0) return 'Not Reported';
+  const parts = t.split('/');
+  if (parts.length === 3 && parts.every(x => x.trim() !== '' && !isNaN(Number(x)))) return 'Not Reported';
+  const low = t.toLowerCase();
+  if (low.indexOf('lien') >= 0 || low.indexOf('senior secured') >= 0 || low.indexOf('unitranche') >= 0 || low.indexOf('subordinated') >= 0) return 'Not Reported';
+  if (low.indexOf('membership interest') >= 0 || low.indexOf('per share') >= 0) return 'Not Reported';
+  if (['yes', 'no', 'n/a', 'none', 'na', '—', '-', 'other'].indexOf(low) >= 0) return 'Not Reported';
+  const unit = low.indexOf('share') >= 0 || low.indexOf('unit') >= 0;
+  const cls = low.indexOf('class') >= 0 || low.indexOf('common') >= 0 || low.indexOf('preferred') >= 0 || low.indexOf('series') >= 0;
+  if (unit && cls) return 'Not Reported';
+  return t;
+}
+function parseYearJs(v) {
+  const s = String(v || '').trim();
+  if (!s) return null;
+  const y4 = Number(s.slice(0, 4));
+  if (s.length >= 4 && !isNaN(y4) && y4 > 1900) return y4;
+  const parts = s.split('/');
+  if (parts.length === 3) {
+    const y = Number(parts[2]);
+    if (!isNaN(y) && y > 1900) return y;
+  }
+  return null;
+}
+function spreadBucketJs(s) {
+  if (s < 3) return '<3%';
+  if (s < 4) return '3–4%';
+  if (s < 5) return '4–5%';
+  if (s < 6) return '5–6%';
+  if (s < 7) return '6–7%';
+  return '7%+';
+}
+function maturityWallJs(year) {
+  if (year <= 2026) return '≤2026';
+  if (year >= 2036) return '2036+';
+  return String(year);
+}
+function ageBucketJs(acqDate, filingDate) {
+  const a = new Date(acqDate);
+  const f = new Date(filingDate);
+  let years = null;
+  if (!isNaN(a.getTime()) && !isNaN(f.getTime())) {
+    years = (f.getTime() - a.getTime()) / (365.25 * 24 * 3600 * 1000);
+  } else {
+    const ay = parseYearJs(acqDate), fy = parseYearJs(filingDate);
+    if (ay && fy) years = fy - ay;
+  }
+  if (years === null) return null;
+  return years < 1 ? '0–1 yrs' : years < 2 ? '1–2 yrs' : years < 3 ? '2–3 yrs' : years < 4 ? '3–4 yrs' : years < 5 ? '4–5 yrs' : '5+ yrs';
+}
+function filterRowsByKind(kind, value, rows, filingDate) {
+  if (!kind) return rows;
+  if (kind === 'type') return rows.filter(r => ((r.investment_type || '').trim() || 'Not Reported') === value);
+  if (kind === 'sector') return rows.filter(r => cleanSectorJs(r.industry) === value);
+  if (kind === 'ref') return rows.filter(r => normalizeRef(r.reference_rate) === value);
+  if (kind === 'rateType') {
+    if (value === 'Floating') return rows.filter(r => FLOATING_REFS.indexOf(normalizeRef(r.reference_rate)) >= 0);
+    if (value === 'Fixed') return rows.filter(r => normalizeRef(r.reference_rate) === 'Fixed');
+    return rows.filter(r => !normalizeRef(r.reference_rate));
+  }
+  if (kind === 'spread') return rows.filter(r => { const s = num(r.spread); return s !== null && s > 0 && spreadBucketJs(s) === value; });
+  if (kind === 'pik') return rows.filter(r => { const p = num(r.pik_rate); return p !== null && p > 0; });
+  if (kind === 'vintage') return rows.filter(r => String(parseYearJs(r.acquisition_date)) === value);
+  if (kind === 'age') return rows.filter(r => ageBucketJs(r.acquisition_date, filingDate) === value);
+  if (kind === 'maturity') return rows.filter(r => { const y = parseYearJs(r.maturity_date); return y !== null && maturityWallJs(y) === value; });
+  if (kind === 'company') return rows.filter(r => normName(r.company_name) === normName(value));
+  return rows;
+}
+function filterLabel(kind, value) {
+  return (FILTER_LABELS[kind] || kind) + ': ' + value;
+}
+async function ensureHoldings() {
+  if (!state.holdings) {
+    const res = await fetch('/api/tickers/' + state.ticker + '/periods/' + state.period);
+    const data = res.ok ? await res.json() : { rows: [] };
+    state.holdings = data.rows || [];
+  }
+  return state.holdings;
+}
+function closeModal() {
+  $('modal-backdrop').hidden = true;
+  state.pendingFilter = null;
+}
+async function openFilterModal(kind, value) {
+  if (!kind || value === null || value === undefined || value === '') return;
+  state.pendingFilter = { kind, value, label: filterLabel(kind, value) };
+  $('modal-title').textContent = 'Filter holdings — ' + state.pendingFilter.label;
+  $('modal-body').innerHTML = '<div class="empty">Computing slice…</div>';
+  $('modal-backdrop').hidden = false;
+  const rows = await ensureHoldings();
+  const slice = filterRowsByKind(kind, value, rows, state.period);
+  const totalFv = rows.reduce((s, r) => s + (num(r.fair_value) || 0), 0);
+  const sliceFv = slice.reduce((s, r) => s + (num(r.fair_value) || 0), 0);
+  const rateW = slice.reduce((s, r) => { const fv = num(r.fair_value) || 0; return s + (num(r.cash_rate) !== null && fv > 0 ? num(r.cash_rate) * fv : 0); }, 0);
+  const rateDen = slice.reduce((s, r) => { const fv = num(r.fair_value) || 0; return s + (num(r.cash_rate) !== null && fv > 0 ? fv : 0); }, 0);
+  const companies = {};
+  for (const r of slice) {
+    const n = (r.company_name || '').trim();
+    if (n) companies[n] = (companies[n] || 0) + (num(r.fair_value) || 0);
+  }
+  const top = Object.keys(companies).sort((a, b) => companies[b] - companies[a]).slice(0, 5);
+  let body = '<div class="cards" style="grid-template-columns:repeat(3,1fr)">' +
+    card('Positions', fmtNum(slice.length), '') +
+    card('Fair Value', fmtK(sliceFv), '') +
+    card('% of Portfolio', fmtPct(totalFv ? sliceFv / totalFv * 100 : 0), 'of ' + fmtK(totalFv)) +
+  '</div>';
+  body += '<div class="small muted" style="margin-bottom:6px">Weighted avg cash rate: <b>' + (rateDen ? fmtRate(rateW / rateDen) : '—') + '</b> · filing ' + esc(state.period) + '</div>';
+  if (top.length) {
+    body += '<div class="small"><b>Largest positions</b></div><table><thead><tr><th>Company</th><th class="num">Fair Value</th></tr></thead><tbody>';
+    for (const n of top) body += '<tr><td>' + esc(n) + '</td><td class="num">' + fmtK(companies[n]) + '</td></tr>';
+    body += '</tbody></table>';
+  }
+  if (!slice.length) body += '<div class="empty">No positions match this slice.</div>';
+  $('modal-body').innerHTML = body;
+  $('modal-apply').disabled = !slice.length;
+}
+function applyPendingFilter() {
+  const f = state.pendingFilter;
+  if (!f) return;
+  state.hFilter = f;
+  state.pendingFilter = null;
+  $('modal-backdrop').hidden = true;
+  state.tab = 'holdings';
+  $('filter').value = '';
+  renderTabs();
+  updateModeChrome();
+  updateHash();
+  renderMain();
+}
+
 // ------------------------------------------------------------------ deep links
 function updateHash() {
   let h;
@@ -545,6 +730,9 @@ function updateHash() {
     h = '#/bdc/' + (state.ticker || '') + '/changes';
     if (state.diff && state.diff.before) h += '/' + state.diff.before;
     if (state.diff && state.diff.after) h += '/' + state.diff.after;
+  } else if (state.tab === 'holdings') {
+    h = '#/bdc/' + (state.ticker || '') + '/holdings' + (state.period ? '/' + state.period : '');
+    if (state.hFilter) h += '/' + encodeURIComponent(state.hFilter.kind + ':' + state.hFilter.value);
   } else h = '#/bdc/' + (state.ticker || '') + '/' + state.tab + (state.period ? '/' + state.period : '');
   if (location.hash !== h) history.replaceState(null, '', h);
 }
@@ -576,7 +764,19 @@ function applyHash() {
       state.diff.before = parts[3] || null;
       state.diff.after = parts[4] || null;
     }
-    selectTicker(parts[1], state.index.tickers[parts[1]], parts[4] || parts[3] || null, true);
+    if (parts[2] === 'holdings') {
+      state.hFilter = null;
+      if (parts[4]) {
+        const raw = decodeURIComponent(parts[4]);
+        const idx = raw.indexOf(':');
+        if (idx > 0) {
+          const k = raw.slice(0, idx), v = raw.slice(idx + 1);
+          state.hFilter = { kind: k, value: v, label: filterLabel(k, v) };
+        }
+      }
+    }
+    const periodArg = parts[2] === 'changes' ? (parts[4] || parts[3] || null) : (parts[3] || null);
+    selectTicker(parts[1], state.index.tickers[parts[1]], periodArg, true);
     return;
   }
   const names = Object.keys((state.index && state.index.tickers) || {}).sort();
@@ -630,7 +830,10 @@ async function renderCompanySidebar() {
   const q = ($('ticker-search').value || '').toLowerCase();
   let rows = state.companies;
   if (q) rows = rows.filter(c => (c.company_name || '').toLowerCase().indexOf(q) >= 0);
-  rows = rows.slice().sort((a, b) => (num(b.total_exposure_millions) || 0) - (num(a.total_exposure_millions) || 0));
+  rows = rows.slice();
+  if (state.companySort === 'name') rows.sort((a, b) => (a.company_name || '').localeCompare(b.company_name || ''));
+  else if (state.companySort === 'bdcs') rows.sort((a, b) => (num(b.num_bdcs_invested) || 0) - (num(a.num_bdcs_invested) || 0));
+  else rows.sort((a, b) => (num(b.total_exposure_millions) || 0) - (num(a.total_exposure_millions) || 0));
   $('ticker-count').textContent = rows.length + ' companies';
   list.innerHTML = '';
   const slice = rows.slice(0, 400);
@@ -682,6 +885,7 @@ function updateModeChrome() {
   $('period-select').style.display = showPeriod ? '' : 'none';
   $('filter').style.display = isBdc && state.tab === 'holdings' ? '' : 'none';
   $('ticker-search').placeholder = isBdc ? 'Filter by ticker or name…' : 'Search companies…';
+  $('company-sort').style.display = isBdc ? 'none' : '';
 }
 function setMode(mode, silent) {
   state.mode = mode;
@@ -710,7 +914,8 @@ async function selectTicker(ticker, info, period, fromHash) {
   if (prevTicker && prevTicker !== ticker) {
     const keepBefore = state.diff.before;
     const keepAfter = state.diff.after;
-    state.diff = { before: keepBefore, after: keepAfter, cacheKey: null, computed: null, selected: null, view: state.diff.view, filter: 'all', minDelta: '', search: '' };
+    state.diff = { before: keepBefore, after: keepAfter, cacheKey: null, computed: null, selected: null, view: state.diff.view, filter: 'all', minDelta: '', search: '', sort: state.diff.sort };
+    if (!fromHash) state.hFilter = null;
   }
   const periods = (info && info.periods) || [];
   state.period = period || (info && info.latest) || (periods.length ? periods[periods.length - 1] : null);
@@ -837,8 +1042,12 @@ function rankInfo(value, key, higherIsBetter) {
 }
 
 // ------------------------------------------------------------------ overview
-function card(label, value, note) {
-  return '<div class="card"><div class="label">' + esc(label) + '</div><div class="value">' + value + '</div><div class="note">' + esc(note || '') + '</div></div>';
+function card(label, value, note, filterKind, filterValue) {
+  const clickable = filterKind && filterValue !== undefined && filterValue !== null && filterValue !== '';
+  const attrs = clickable
+    ? ' clickable" data-filter-kind="' + esc(filterKind) + '" data-filter-value="' + esc(filterValue) + '" title="Click to filter holdings"'
+    : '"';
+  return '<div class="card' + attrs + '><div class="label">' + esc(label) + '</div><div class="value">' + value + '</div><div class="note">' + esc(note || '') + '</div></div>';
 }
 function row2(a, b) {
   return '<tr><td>' + esc(a) + '</td><td class="num">' + b + '</td></tr>';
@@ -903,7 +1112,7 @@ async function renderOverview(el) {
     card('Debt / Equity', d2e === null ? '—' : num(d2e).toFixed(2) + '×', 'coverage ' + (cov === null ? '—' : num(cov).toFixed(2) + '×')) +
     card('Unrealized G/L', t.unrealized_gl_pct === null || t.unrealized_gl_pct === undefined ? '—' : signed(t.unrealized_gl_pct) + '%',
       'on ' + fmtPct(t.cost_coverage_pct, 0) + ' of FV at cost') +
-    card('Floating Rate', fmtPct(t.floating_pct), 'PIK ' + fmtPct(t.pik_share_pct) + ' of FV') +
+    card('Floating Rate', fmtPct(t.floating_pct), 'PIK ' + fmtPct(t.pik_share_pct) + ' of FV', 'rateType', 'Floating') +
     card('Top 10 Concentration', fmtPct(t.top10_pct), 'of fair value') +
   '</div>';
 
@@ -940,7 +1149,7 @@ async function renderOverview(el) {
   html += '<div class="grid2"><div class="section">';
   html += '<h3>Portfolio snapshot — ' + p.filing_date + '</h3>';
   const types = (p.types || []).filter(x => x.pct > 0).slice(0, 6);
-  html += bars(types, 'type', 'fair_value', 'pct', fmtK);
+  html += bars(types, 'type', 'fair_value', 'pct', fmtK, '', 'type');
   html += '</div><div class="section">';
   html += '<h3>Financial snapshot</h3><table><tbody>';
   html += row2('Total Assets', fmtMoney(assets));
@@ -966,14 +1175,16 @@ async function renderOverview(el) {
   if (lnk) lnk.onclick = () => { state.tab = 'peers'; renderTabs(); updateModeChrome(); updateHash(); renderMain(); };
 }
 
-function bars(items, labelKey, valKey, pctKey, fmt, cls) {
+function bars(items, labelKey, valKey, pctKey, fmt, cls, filterKind) {
   if (!items || !items.length) return '<div class="empty">No data.</div>';
   const max = Math.max.apply(null, items.map(i => Math.abs(num(i[pctKey]) || 0)));
   let html = '<div class="bars">';
   for (const it of items) {
     const pct = num(it[pctKey]) || 0;
     const w = max > 0 ? Math.max(1.5, Math.abs(pct) / max * 100) : 0;
-    html += '<div class="bar-row"><span class="label" title="' + esc(it[labelKey]) + '">' + esc(it[labelKey]) + '</span>' +
+    const clickable = !!filterKind;
+    const attrs = clickable ? ' clickable" data-filter-kind="' + esc(filterKind) + '" data-filter-value="' + esc(it[labelKey]) + '" title="Click to filter holdings"' : '"';
+    html += '<div class="bar-row' + attrs + '><span class="label" title="' + esc(it[labelKey]) + '">' + esc(it[labelKey]) + '</span>' +
       '<div class="bar-track"><div class="bar-fill ' + (cls || '') + '" style="width:' + w.toFixed(1) + '%"></div></div>' +
       '<span class="val">' + fmt(it[valKey]) + ' · ' + fmtPct(pct) + '</span></div>';
   }
@@ -989,7 +1200,9 @@ async function renderHoldings(el) {
     state.holdings = data.rows || [];
   }
   const filter = ($('filter').value || '').toLowerCase();
+  const fullFv = state.holdings.reduce((s, r) => s + (num(r.fair_value) || 0), 0);
   let rows = state.holdings;
+  if (state.hFilter) rows = filterRowsByKind(state.hFilter.kind, state.hFilter.value, rows, state.period);
   if (filter) rows = rows.filter(r => Object.values(r).some(v => String(v).toLowerCase().indexOf(filter) >= 0));
   const totalFv = rows.reduce((s, r) => s + (num(r.fair_value) || 0), 0);
   const cols = [
@@ -1006,6 +1219,9 @@ async function renderHoldings(el) {
     ['fair_value', 'Fair Value', 'num'],
     ['pct_portfolio', '% of FV', 'num'],
   ];
+  let head = '';
+  if (state.hFilter) head += '<div class="filter-chip">' + esc(state.hFilter.label) + '<button id="hfilter-clear" title="Clear filter">×</button></div>';
+  head += '<div class="small muted" style="margin-bottom:6px">' + fmtNum(rows.length) + ' positions · ' + fmtK(totalFv) + ' · ' + fmtPct(fullFv ? totalFv / fullFv * 100 : 0) + ' of portfolio</div>';
   let html = '<table><thead><tr>' + cols.map(c => '<th class="' + (c[2] === 'num' ? 'num' : '') + '">' + c[1] + '</th>').join('') + '</tr></thead><tbody>';
   const slice = rows.slice(0, 3000);
   for (const r of slice) {
@@ -1015,7 +1231,7 @@ async function renderHoldings(el) {
       let v;
       if (key === 'pct_portfolio') {
         const fv = num(r.fair_value);
-        v = fv !== null && totalFv > 0 ? (fv / totalFv * 100).toFixed(1) + '%' : '—';
+        v = fv !== null && fullFv > 0 ? (fv / fullFv * 100).toFixed(1) + '%' : '—';
       } else if (key === 'cash_rate' || key === 'pik_rate' || key === 'spread') {
         v = fmtRate(r[key]);
       } else if (key === 'principal_amount' || key === 'amortized_cost' || key === 'fair_value') {
@@ -1030,7 +1246,9 @@ async function renderHoldings(el) {
   }
   html += '</tbody></table>';
   if (rows.length > slice.length) html += '<div class="muted small" style="margin-top:6px">Showing first ' + slice.length.toLocaleString() + ' of ' + rows.length.toLocaleString() + ' rows.</div>';
-  el.innerHTML = rows.length ? html : '<div class="empty">No holdings match.</div>';
+  el.innerHTML = head + (rows.length ? html : '<div class="empty">No holdings match.</div>');
+  const clear = $('hfilter-clear');
+  if (clear) clear.onclick = () => { state.hFilter = null; updateHash(); renderMain(); };
 }
 
 // ------------------------------------------------------------------ breakdowns
@@ -1040,12 +1258,12 @@ async function renderBreakdown(el, kind, title) {
   if (!p) { el.innerHTML = '<div class="empty">No analytics data.</div>'; return; }
   const list = p[kind] || [];
   const key = kind === 'types' ? 'type' : 'sector';
-  let html = '<div class="section"><h3>' + title + ' — ' + p.filing_date + '</h3>' + bars(list, key, 'fair_value', 'pct', fmtK) + '</div>';
+  let html = '<div class="section"><h3>' + title + ' — ' + p.filing_date + '</h3>' + bars(list, key, 'fair_value', 'pct', fmtK, '', kind === 'types' ? 'type' : 'sector') + '</div>';
   if (kind === 'types') {
     html += '<div class="section"><h3>Details</h3><table><thead><tr><th>Type</th><th class="num">Fair Value</th><th class="num">%</th><th class="num">Positions</th><th class="num">Principal</th><th class="num">Avg FV / position</th><th class="num">Unrealized G/L</th><th class="num">G/L %</th></tr></thead><tbody>';
     for (const it of list) {
       const avg = it.count ? it.fair_value / it.count : null;
-      html += '<tr><td>' + esc(it.type) + '</td><td class="num">' + fmtK(it.fair_value) + '</td><td class="num">' + fmtPct(it.pct) + '</td><td class="num">' + fmtNum(it.count) + '</td><td class="num">' + fmtK(it.principal) + '</td><td class="num">' + (avg === null ? '—' : fmtK(avg)) + '</td>' +
+      html += '<tr class="clickrow" data-filter-kind="type" data-filter-value="' + esc(it.type) + '" title="Click to filter holdings"><td>' + esc(it.type) + '</td><td class="num">' + fmtK(it.fair_value) + '</td><td class="num">' + fmtPct(it.pct) + '</td><td class="num">' + fmtNum(it.count) + '</td><td class="num">' + fmtK(it.principal) + '</td><td class="num">' + (avg === null ? '—' : fmtK(avg)) + '</td>' +
         '<td class="num">' + (it.unrealized_gl === null || it.unrealized_gl === undefined ? '—' : fmtK(it.unrealized_gl)) + '</td>' +
         '<td class="num ' + (num(it.unrealized_gl_pct) < 0 ? 'neg' : 'pos') + '">' + (it.unrealized_gl_pct === null || it.unrealized_gl_pct === undefined ? '—' : signed(it.unrealized_gl_pct) + '%') + '</td></tr>';
     }
@@ -1057,7 +1275,7 @@ async function renderBreakdown(el, kind, title) {
     for (const it of list) {
       const med = medians[it.sector];
       const tilt = med ? it.pct - med.median_pct : null;
-      html += '<tr><td>' + esc(it.sector) + '</td><td class="num">' + fmtK(it.fair_value) + '</td><td class="num">' + fmtPct(it.pct) + '</td>' +
+      html += '<tr class="clickrow" data-filter-kind="sector" data-filter-value="' + esc(it.sector) + '" title="Click to filter holdings"><td>' + esc(it.sector) + '</td><td class="num">' + fmtK(it.fair_value) + '</td><td class="num">' + fmtPct(it.pct) + '</td>' +
         '<td class="num">' + (med ? fmtPct(med.median_pct) : '—') + '</td>' +
         '<td class="num ' + (tilt !== null && tilt < 0 ? 'neg' : 'pos') + '">' + (tilt === null ? '—' : signed(tilt) + ' pts') + '</td>' +
         '<td class="num">' + fmtNum(it.count) + '</td>' +
@@ -1097,19 +1315,19 @@ function renderRates(el) {
   const t = p.totals || {};
   const cov = p.coverage || {};
   let html = '<div class="cards">' +
-    card('Floating Rate', fmtPct(t.floating_pct), 'of fair value') +
-    card('Fixed Rate', fmtPct(t.fixed_pct), 'reported as fixed') +
-    card('PIK Share', fmtPct(t.pik_share_pct), 'positions with PIK > 0') +
+    card('Floating Rate', fmtPct(t.floating_pct), 'of fair value', 'rateType', 'Floating') +
+    card('Fixed Rate', fmtPct(t.fixed_pct), 'reported as fixed', 'rateType', 'Fixed') +
+    card('PIK Share', fmtPct(t.pik_share_pct), 'positions with PIK > 0', 'pik', 'yes') +
     card('Wtd Avg Spread', fmtRate(t.weighted_avg_spread), 'over reference') +
     card('Wtd Avg Floor', t.weighted_avg_floor === null || t.weighted_avg_floor === undefined ? '—' : fmtRate(t.weighted_avg_floor), 'where a floor is reported') +
     card('Reference Coverage', fmtPct(cov.reference_rate, 0), 'of fair value') +
   '</div>';
   html += '<div class="grid2">';
-  html += '<div class="section"><h3>Rate type mix</h3>' + bars(p.rate_types || [], 'type', 'fair_value', 'pct', fmtK) +
+  html += '<div class="section"><h3>Rate type mix</h3>' + bars(p.rate_types || [], 'type', 'fair_value', 'pct', fmtK, '', 'rateType') +
     '<div class="small muted">Floating = reports SOFR/LIBOR/Prime/EURIBOR/etc. Not reported = no reference rate on the filing row (often equity or structured positions).</div></div>';
-  html += '<div class="section"><h3>Reference rate mix</h3>' + bars(p.reference_rates || [], 'rate', 'fair_value', 'pct', fmtK) + '</div>';
+  html += '<div class="section"><h3>Reference rate mix</h3>' + bars(p.reference_rates || [], 'rate', 'fair_value', 'pct', fmtK, '', 'ref') + '</div>';
   html += '</div>';
-  html += '<div class="section"><h3>Spread distribution (FV-weighted)</h3>' + bars(p.spread_buckets || [], 'bucket', 'fair_value', 'pct', fmtK, 'alt') +
+  html += '<div class="section"><h3>Spread distribution (FV-weighted)</h3>' + bars(p.spread_buckets || [], 'bucket', 'fair_value', 'pct', fmtK, 'alt', 'spread') +
     '<div class="small muted">Spread reported for ' + fmtPct(cov.spread, 0) + ' of fair value; cash rate for ' + fmtPct(cov.cash_rate, 0) + '.</div></div>';
   html += '<div class="section"><h3>Coverage detail</h3><div class="grid3">' +
     '<div>' + coverageBar('Reference rate', cov.reference_rate) + coverageBar('Cash rate', cov.cash_rate) + '</div>' +
@@ -1132,28 +1350,28 @@ function renderVintage(el) {
   '</div>';
 
   html += '<div class="section"><h3>Vintage — ' + p.filing_date + '</h3>' +
-    bars(p.vintage_years || [], 'year', 'fair_value', 'pct', fmtK) + '</div>';
+    bars(p.vintage_years || [], 'year', 'fair_value', 'pct', fmtK, '', 'vintage') + '</div>';
   html += '<div class="grid2">';
-  html += '<div class="section"><h3>Portfolio age (years since acquisition)</h3>' + bars(p.age_buckets || [], 'bucket', 'fair_value', 'pct', fmtK) + '</div>';
-  html += '<div class="section"><h3>Maturity wall (by year)</h3>' + bars(p.maturity_wall || [], 'year', 'fair_value', 'pct', fmtK, 'alt') + '</div>';
+  html += '<div class="section"><h3>Portfolio age (years since acquisition)</h3>' + bars(p.age_buckets || [], 'bucket', 'fair_value', 'pct', fmtK, '', 'age') + '</div>';
+  html += '<div class="section"><h3>Maturity wall (by year)</h3>' + bars(p.maturity_wall || [], 'year', 'fair_value', 'pct', fmtK, 'alt', 'maturity') + '</div>';
   html += '</div>';
 
   html += '<div class="section"><h3>Marks vs amortized cost</h3><table><thead><tr><th>Group</th><th class="num">Fair Value</th><th class="num">Unrealized G/L</th><th class="num">G/L %</th></tr></thead><tbody>';
   for (const it of (p.types || []).slice(0, 8)) {
-    html += '<tr><td>' + esc(it.type) + '</td><td class="num">' + fmtK(it.fair_value) + '</td><td class="num">' + (it.unrealized_gl === null || it.unrealized_gl === undefined ? '—' : fmtK(it.unrealized_gl)) + '</td><td class="num ' + (num(it.unrealized_gl_pct) < 0 ? 'neg' : 'pos') + '">' + (it.unrealized_gl_pct === null || it.unrealized_gl_pct === undefined ? '—' : signed(it.unrealized_gl_pct) + '%') + '</td></tr>';
+    html += '<tr class="clickrow" data-filter-kind="type" data-filter-value="' + esc(it.type) + '" title="Click to filter holdings"><td>' + esc(it.type) + '</td><td class="num">' + fmtK(it.fair_value) + '</td><td class="num">' + (it.unrealized_gl === null || it.unrealized_gl === undefined ? '—' : fmtK(it.unrealized_gl)) + '</td><td class="num ' + (num(it.unrealized_gl_pct) < 0 ? 'neg' : 'pos') + '">' + (it.unrealized_gl_pct === null || it.unrealized_gl_pct === undefined ? '—' : signed(it.unrealized_gl_pct) + '%') + '</td></tr>';
   }
   html += '</tbody></table><div class="small muted" style="margin-top:4px">By investment type. Cost coverage: ' + fmtPct(t.cost_coverage_pct, 0) + ' of fair value.</div></div>';
 
   html += '<div class="grid2">';
   html += '<div class="section"><h3>Top 5 gainers</h3><table><thead><tr><th>Company</th><th class="num">G/L</th><th class="num">Fair Value</th></tr></thead><tbody>';
-  for (const g of (p.top_gainers || [])) html += '<tr><td>' + esc(g.company) + '</td><td class="num pos">' + fmtK(g.unrealized_gl) + '</td><td class="num">' + fmtK(g.fair_value) + '</td></tr>';
+  for (const g of (p.top_gainers || [])) html += '<tr class="clickrow" data-filter-kind="company" data-filter-value="' + esc(g.company) + '" title="Click to filter holdings"><td>' + esc(g.company) + '</td><td class="num pos">' + fmtK(g.unrealized_gl) + '</td><td class="num">' + fmtK(g.fair_value) + '</td></tr>';
   html += '</tbody></table></div>';
   html += '<div class="section"><h3>Top 5 losers</h3><table><thead><tr><th>Company</th><th class="num">G/L</th><th class="num">Fair Value</th></tr></thead><tbody>';
-  for (const g of (p.top_losers || [])) html += '<tr><td>' + esc(g.company) + '</td><td class="num neg">' + fmtK(g.unrealized_gl) + '</td><td class="num">' + fmtK(g.fair_value) + '</td></tr>';
+  for (const g of (p.top_losers || [])) html += '<tr class="clickrow" data-filter-kind="company" data-filter-value="' + esc(g.company) + '" title="Click to filter holdings"><td>' + esc(g.company) + '</td><td class="num neg">' + fmtK(g.unrealized_gl) + '</td><td class="num">' + fmtK(g.fair_value) + '</td></tr>';
   html += '</tbody></table></div></div>';
 
   html += '<div class="section"><h3>Top 10 companies by fair value</h3><table><thead><tr><th>Company</th><th class="num">Fair Value</th><th class="num">Unrealized G/L</th></tr></thead><tbody>';
-  for (const c of (p.top_companies || [])) html += '<tr><td>' + esc(c.company) + '</td><td class="num">' + fmtK(c.fair_value) + '</td><td class="num">' + (c.unrealized_gl === null || c.unrealized_gl === undefined ? '—' : fmtK(c.unrealized_gl)) + '</td></tr>';
+  for (const c of (p.top_companies || [])) html += '<tr class="clickrow" data-filter-kind="company" data-filter-value="' + esc(c.company) + '" title="Click to filter holdings"><td>' + esc(c.company) + '</td><td class="num">' + fmtK(c.fair_value) + '</td><td class="num">' + (c.unrealized_gl === null || c.unrealized_gl === undefined ? '—' : fmtK(c.unrealized_gl)) + '</td></tr>';
   html += '</tbody></table></div>';
   el.innerHTML = html;
 }
@@ -1279,6 +1497,17 @@ function diffFiltered() {
   if (q) rows = rows.filter(c => c.name.toLowerCase().indexOf(q) >= 0);
   const min = num(state.diff.minDelta);
   if (min) rows = rows.filter(c => Math.abs(c.deltaFv) >= min * 1000);
+  const fvOf = c => (c.after ? c.after.fv : c.before ? c.before.fv : 0);
+  const posOf = c => (c.after ? c.after.positions : c.before ? c.before.positions : 0);
+  rows = rows.slice();
+  const sort = state.diff.sort || 'delta_abs';
+  if (sort === 'delta_desc') rows.sort((a, b) => b.deltaFv - a.deltaFv);
+  else if (sort === 'delta_asc') rows.sort((a, b) => a.deltaFv - b.deltaFv);
+  else if (sort === 'name') rows.sort((a, b) => a.name.localeCompare(b.name));
+  else if (sort === 'fv') rows.sort((a, b) => fvOf(b) - fvOf(a));
+  else if (sort === 'positions') rows.sort((a, b) => posOf(b) - posOf(a));
+  else if (sort === 'changed') rows.sort((a, b) => b.changedCount - a.changedCount);
+  else rows.sort((a, b) => Math.abs(b.deltaFv) - Math.abs(a.deltaFv));
   return rows;
 }
 function statusBadge(status) {
@@ -1349,6 +1578,12 @@ function renderDiffView(el) {
       f.charAt(0).toUpperCase() + f.slice(1) + '</button>').join('') +
     '<input id="diff-search" placeholder="Filter company…" value="' + esc(state.diff.search) + '">' +
     '<input id="diff-min" placeholder="Min |Δ| $M" value="' + esc(state.diff.minDelta) + '">' +
+    '<select id="diff-sort">' +
+      ['delta_abs|Sort: |Δ fair value|', 'delta_desc|Sort: largest increase|', 'delta_asc|Sort: largest decrease|', 'fv|Sort: current fair value|', 'positions|Sort: positions|', 'changed|Sort: fields changed|', 'name|Sort: company A–Z|'].map(o => {
+        const parts = o.split('|');
+        return '<option value="' + parts[0] + '"' + ((state.diff.sort || 'delta_abs') === parts[0] ? ' selected' : '') + '>' + parts[1] + parts[2] + '</option>';
+      }).join('') +
+    '</select>' +
     '<label class="small muted" style="display:flex;align-items:center;gap:4px"><input type="checkbox" id="diff-unchanged"' + (state.diff.showUnchanged ? ' checked' : '') + ' style="width:auto"> show unchanged</label>' +
   '</div>';
   html += '<div class="diff-layout"><div class="diff-list" id="diff-list">';
@@ -1383,6 +1618,8 @@ function renderDiffView(el) {
     renderChanges(el);
   };
   $('diff-export').onclick = exportDiffCsv;
+  const sortSel = $('diff-sort');
+  if (sortSel) sortSel.onchange = (e) => { state.diff.sort = e.target.value; renderDiffView(el); };
   el.querySelectorAll('[data-filter]').forEach(b => {
     b.onclick = () => { state.diff.filter = b.getAttribute('data-filter'); renderDiffView(el); };
   });
@@ -1763,6 +2000,20 @@ $('btn-link').onclick = () => {
 };
 $('nav-bdc').onclick = () => setMode('bdc');
 $('nav-companies').onclick = () => { state.companyId = null; setMode('companies'); };
+$('company-sort').onchange = () => { state.companySort = $('company-sort').value; renderCompanySidebar(); };
+$('modal-x').onclick = closeModal;
+$('modal-cancel').onclick = closeModal;
+$('modal-apply').onclick = applyPendingFilter;
+$('modal-backdrop').addEventListener('click', (e) => { if (e.target === $('modal-backdrop')) closeModal(); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !$('modal-backdrop').hidden) closeModal(); });
+$('main').addEventListener('click', (e) => {
+  if (!e.target || !e.target.closest) return;
+  const t = e.target.closest('[data-filter-kind]');
+  if (!t) return;
+  const kind = t.getAttribute('data-filter-kind');
+  const value = t.getAttribute('data-filter-value');
+  if (kind && value !== null) openFilterModal(kind, value);
+});
 window.addEventListener('hashchange', () => applyHash());
 
 renderTabs();
