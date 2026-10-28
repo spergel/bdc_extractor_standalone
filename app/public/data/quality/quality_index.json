@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T11:45:15.887666Z",
+  "generated_at": "2026-10-28T12:28:24.005399Z",
   "tickers": {
     "ARCC": {
       "ticker": "ARCC",
@@ -1635,25 +1635,25 @@
     "LIEN": {
       "ticker": "LIEN",
       "scale": 1000,
-      "median_ratio": 3.555,
-      "periods": 11,
-      "with_reported": 11,
-      "match": 2,
+      "median_ratio": 3.538,
+      "periods": 12,
+      "with_reported": 12,
+      "match": 3,
       "near": 1,
       "mismatch": 8,
-      "match_pct": 18.2,
+      "match_pct": 25.0,
       "trust": "bad",
       "latest": {
-        "filing_date": "2025-11-13",
-        "period_end": "2025-09-30",
-        "holdings_fv": 311393.0,
-        "row_count": 49,
-        "reported_fv": 311393482.0,
-        "reported_fv_k": 311393.482,
-        "delta_pct": -0.0,
+        "filing_date": "2026-08-13",
+        "period_end": "2026-06-30",
+        "holdings_fv": 331589.0,
+        "row_count": 40,
+        "reported_fv": 334833992.0,
+        "reported_fv_k": 334833.992,
+        "delta_pct": -0.97,
         "status": "match",
         "quality_flags": [],
-        "filing_url": "https://www.sec.gov/Archives/edgar/data/1843162/000119312525278786/lien-20250930.htm",
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1843162/000119312526347342/lien-20260630.htm",
         "form": "10-Q"
       },
       "issue_periods": [
@@ -1703,9 +1703,7 @@
           "status": "mismatch",
           "holdings_fv": 300994.0,
           "reported_fv_k": 53398.164,
-          "quality_flags": [
-            "Fair value is 1.51x the trailing median (possible annual/unit issue)"
-          ]
+          "quality_flags": []
         },
         {
           "filing_date": "2024-11-08",
@@ -1713,9 +1711,7 @@
           "status": "mismatch",
           "holdings_fv": 309057.0,
           "reported_fv_k": 55788.511,
-          "quality_flags": [
-            "Fair value is 1.55x the trailing median (possible annual/unit issue)"
-          ]
+          "quality_flags": []
         },
         {
           "filing_date": "2025-03-31",
@@ -1723,9 +1719,7 @@
           "status": "mismatch",
           "holdings_fv": 592470.0,
           "reported_fv_k": 275241.398,
-          "quality_flags": [
-            "Fair value is 2.38x the trailing median (possible annual/unit issue)"
-          ]
+          "quality_flags": []
         },
         {
           "filing_date": "2025-05-14",
@@ -1861,62 +1855,27 @@
       "ticker": "MSDL",
       "scale": 1000,
       "median_ratio": 1.0,
-      "periods": 11,
-      "with_reported": 11,
-      "match": 7,
+      "periods": 26,
+      "with_reported": 15,
+      "match": 15,
       "near": 0,
-      "mismatch": 4,
-      "match_pct": 63.6,
-      "trust": "warn",
+      "mismatch": 0,
+      "match_pct": 100.0,
+      "trust": "good",
       "latest": {
-        "filing_date": "2025-11-06",
-        "period_end": "2025-09-30",
-        "holdings_fv": 3773903.0,
-        "row_count": 865,
-        "reported_fv": 3775797000.0,
-        "reported_fv_k": 3775797.0,
-        "delta_pct": -0.05,
+        "filing_date": "2026-08-06",
+        "period_end": "2026-06-30",
+        "holdings_fv": 3554288.0,
+        "row_count": 561,
+        "reported_fv": 3554287000.0,
+        "reported_fv_k": 3554287.0,
+        "delta_pct": 0.0,
         "status": "match",
         "quality_flags": [],
-        "filing_url": "https://www.sec.gov/Archives/edgar/data/1782524/000119312525269438/msdl-20250930.htm",
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1782524/000119312526337915/msdl-20260630.htm",
         "form": "10-Q"
       },
-      "issue_periods": [
-        {
-          "filing_date": "2023-08-09",
-          "delta_pct": -24.65,
-          "status": "mismatch",
-          "holdings_fv": 2248362.0,
-          "reported_fv_k": 2983727.0,
-          "quality_flags": []
-        },
-        {
-          "filing_date": "2023-11-02",
-          "delta_pct": -24.64,
-          "status": "mismatch",
-          "holdings_fv": 2353718.0,
-          "reported_fv_k": 3123450.0,
-          "quality_flags": []
-        },
-        {
-          "filing_date": "2024-03-01",
-          "delta_pct": -31.91,
-          "status": "mismatch",
-          "holdings_fv": 2174575.0,
-          "reported_fv_k": 3193561.0,
-          "quality_flags": []
-        },
-        {
-          "filing_date": "2024-05-09",
-          "delta_pct": -75.65,
-          "status": "mismatch",
-          "holdings_fv": 801887.0,
-          "reported_fv_k": 3293205.0,
-          "quality_flags": [
-            "Fair value is 0.35x the trailing median (possible units/gap issue)"
-          ]
-        }
-      ]
+      "issue_periods": []
     },
     "MSIF": {
       "ticker": "MSIF",
@@ -3175,11 +3134,11 @@
       "median_ratio": 1.0,
       "periods": 25,
       "with_reported": 16,
-      "match": 15,
+      "match": 16,
       "near": 0,
-      "mismatch": 1,
-      "match_pct": 93.8,
-      "trust": "warn",
+      "mismatch": 0,
+      "match_pct": 100.0,
+      "trust": "good",
       "latest": {
         "filing_date": "2026-08-10",
         "period_end": "2026-06-30",
@@ -3193,16 +3152,7 @@
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1551901/000110465926093435/scm-20260630x10q.htm",
         "form": "10-Q"
       },
-      "issue_periods": [
-        {
-          "filing_date": "2024-03-04",
-          "delta_pct": -11.89,
-          "status": "mismatch",
-          "holdings_fv": 770495.0,
-          "reported_fv_k": 874460.683,
-          "quality_flags": []
-        }
-      ]
+      "issue_periods": []
     },
     "SLRC": {
       "ticker": "SLRC",
@@ -3777,15 +3727,15 @@
   },
   "summary": {
     "tickers": 49,
-    "periods": 1129,
-    "with_reported": 682,
-    "match": 395,
+    "periods": 1145,
+    "with_reported": 687,
+    "match": 405,
     "near": 34,
-    "mismatch": 253,
-    "match_pct": 57.9,
+    "mismatch": 248,
+    "match_pct": 59.0,
     "trust_counts": {
-      "good": 10,
-      "warn": 16,
+      "good": 12,
+      "warn": 14,
       "bad": 23,
       "unknown": 0
     }
