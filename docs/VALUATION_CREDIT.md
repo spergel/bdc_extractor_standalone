@@ -157,6 +157,18 @@ Three parked scrapers were repaired and re-run across their available history:
 SAR's 2022–2024 filings still run 7–26% high and remain `mismatch`; the newer
 periods reconcile to within 0.5%.
 
+### MRCC
+
+MRCC was moved off the generic extractor onto a custom scraper that handles
+its 11-column grouped schedule (company, footnotes, index, spread, interest,
+acquisition date, maturity, principal, amortized cost, fair value, % of net
+assets) and its separate Senior Loan Fund schedule. Results:
+
+- 2024–2026 periods reconcile **exactly** to reported fair value
+- 2022-11 and the 2024 10-K reconcile exactly
+- overall quality: **bad 7.7% → warn 71.4%**
+- four 2023 periods still run 29–41% high and remain flagged
+
 ## Unit normalization
 
 `fix_multi_block_holdings.py` also handles files extracted in dollars instead of
