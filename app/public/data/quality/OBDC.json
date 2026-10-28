@@ -6,11 +6,11 @@
     "median_ratio": 1.001,
     "periods": 36,
     "with_reported": 17,
-    "match": 7,
+    "match": 10,
     "near": 0,
-    "mismatch": 10,
-    "match_pct": 41.2,
-    "trust": "bad",
+    "mismatch": 7,
+    "match_pct": 58.8,
+    "trust": "warn",
     "latest": {
       "filing_date": "2026-08-05",
       "period_end": "2026-06-30",
@@ -26,34 +26,12 @@
     },
     "issue_periods": [
       {
-        "filing_date": "2022-02-23",
-        "delta_pct": -89.44,
-        "status": "mismatch",
-        "holdings_fv": 1345533.0,
-        "reported_fv_k": 12741640.0,
-        "quality_flags": [
-          "Fair value is 0.11x the trailing median (possible units/gap issue)",
-          "Row count fell 78% vs the prior filing"
-        ]
-      },
-      {
         "filing_date": "2022-11-02",
         "delta_pct": 26.65,
         "status": "mismatch",
         "holdings_fv": 16256498.0,
         "reported_fv_k": 12835918.0,
         "quality_flags": []
-      },
-      {
-        "filing_date": "2023-02-22",
-        "delta_pct": -86.26,
-        "status": "mismatch",
-        "holdings_fv": 1787662.0,
-        "reported_fv_k": 13010345.0,
-        "quality_flags": [
-          "Fair value is 0.12x the trailing median (possible units/gap issue)",
-          "Row count fell 76% vs the prior filing"
-        ]
       },
       {
         "filing_date": "2023-05-10",
@@ -78,17 +56,6 @@
         "holdings_fv": 14789429.0,
         "reported_fv_k": 12896158.0,
         "quality_flags": []
-      },
-      {
-        "filing_date": "2024-02-21",
-        "delta_pct": -83.6,
-        "status": "mismatch",
-        "holdings_fv": 2085283.0,
-        "reported_fv_k": 12713348.0,
-        "quality_flags": [
-          "Fair value is 0.14x the trailing median (possible units/gap issue)",
-          "Row count fell 74% vs the prior filing"
-        ]
       },
       {
         "filing_date": "2024-05-08",
@@ -353,16 +320,13 @@
     {
       "filing_date": "2022-02-23",
       "period_end": "2021-12-31",
-      "holdings_fv": 1345533.0,
-      "row_count": 71,
+      "holdings_fv": 12261042.0,
+      "row_count": 299,
       "reported_fv": 12741640000.0,
       "reported_fv_k": 12741640.0,
-      "delta_pct": -89.44,
-      "status": "mismatch",
-      "quality_flags": [
-        "Fair value is 0.11x the trailing median (possible units/gap issue)",
-        "Row count fell 78% vs the prior filing"
-      ],
+      "delta_pct": -3.77,
+      "status": "match",
+      "quality_flags": [],
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1655888/000095017022001814/orcci_10k_2021-12-31.htm",
       "form": "10-K"
     },
@@ -408,16 +372,13 @@
     {
       "filing_date": "2023-02-22",
       "period_end": "2022-12-31",
-      "holdings_fv": 1787662.0,
-      "row_count": 111,
+      "holdings_fv": 13010345.0,
+      "row_count": 377,
       "reported_fv": 13010345000.0,
       "reported_fv_k": 13010345.0,
-      "delta_pct": -86.26,
-      "status": "mismatch",
-      "quality_flags": [
-        "Fair value is 0.12x the trailing median (possible units/gap issue)",
-        "Row count fell 76% vs the prior filing"
-      ],
+      "delta_pct": 0.0,
+      "status": "match",
+      "quality_flags": [],
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588823000012/orcc-20221231.htm",
       "form": "10-K"
     },
@@ -463,16 +424,13 @@
     {
       "filing_date": "2024-02-21",
       "period_end": "2023-12-31",
-      "holdings_fv": 2085283.0,
-      "row_count": 130,
+      "holdings_fv": 12713348.0,
+      "row_count": 411,
       "reported_fv": 12713348000.0,
       "reported_fv_k": 12713348.0,
-      "delta_pct": -83.6,
-      "status": "mismatch",
-      "quality_flags": [
-        "Fair value is 0.14x the trailing median (possible units/gap issue)",
-        "Row count fell 74% vs the prior filing"
-      ],
+      "delta_pct": 0.0,
+      "status": "match",
+      "quality_flags": [],
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588824000008/obdc-20231231.htm",
       "form": "10-K"
     },
@@ -573,7 +531,7 @@
       "filing_date": "2026-02-18",
       "period_end": "2025-12-31",
       "holdings_fv": 16474285.0,
-      "row_count": 364,
+      "row_count": 365,
       "reported_fv": 16470893000.0,
       "reported_fv_k": 16470893.0,
       "delta_pct": 0.02,

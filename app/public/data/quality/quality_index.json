@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T07:17:25.027185Z",
+  "generated_at": "2026-10-28T07:47:32.401701Z",
   "tickers": {
     "ARCC": {
       "ticker": "ARCC",
@@ -2380,11 +2380,11 @@
       "median_ratio": 1.001,
       "periods": 36,
       "with_reported": 17,
-      "match": 7,
+      "match": 10,
       "near": 0,
-      "mismatch": 10,
-      "match_pct": 41.2,
-      "trust": "bad",
+      "mismatch": 7,
+      "match_pct": 58.8,
+      "trust": "warn",
       "latest": {
         "filing_date": "2026-08-05",
         "period_end": "2026-06-30",
@@ -2400,34 +2400,12 @@
       },
       "issue_periods": [
         {
-          "filing_date": "2022-02-23",
-          "delta_pct": -89.44,
-          "status": "mismatch",
-          "holdings_fv": 1345533.0,
-          "reported_fv_k": 12741640.0,
-          "quality_flags": [
-            "Fair value is 0.11x the trailing median (possible units/gap issue)",
-            "Row count fell 78% vs the prior filing"
-          ]
-        },
-        {
           "filing_date": "2022-11-02",
           "delta_pct": 26.65,
           "status": "mismatch",
           "holdings_fv": 16256498.0,
           "reported_fv_k": 12835918.0,
           "quality_flags": []
-        },
-        {
-          "filing_date": "2023-02-22",
-          "delta_pct": -86.26,
-          "status": "mismatch",
-          "holdings_fv": 1787662.0,
-          "reported_fv_k": 13010345.0,
-          "quality_flags": [
-            "Fair value is 0.12x the trailing median (possible units/gap issue)",
-            "Row count fell 76% vs the prior filing"
-          ]
         },
         {
           "filing_date": "2023-05-10",
@@ -2452,17 +2430,6 @@
           "holdings_fv": 14789429.0,
           "reported_fv_k": 12896158.0,
           "quality_flags": []
-        },
-        {
-          "filing_date": "2024-02-21",
-          "delta_pct": -83.6,
-          "status": "mismatch",
-          "holdings_fv": 2085283.0,
-          "reported_fv_k": 12713348.0,
-          "quality_flags": [
-            "Fair value is 0.14x the trailing median (possible units/gap issue)",
-            "Row count fell 74% vs the prior filing"
-          ]
         },
         {
           "filing_date": "2024-05-08",
@@ -4153,14 +4120,14 @@
     "tickers": 49,
     "periods": 1028,
     "with_reported": 641,
-    "match": 311,
+    "match": 314,
     "near": 37,
-    "mismatch": 293,
-    "match_pct": 48.5,
+    "mismatch": 290,
+    "match_pct": 49.0,
     "trust_counts": {
       "good": 7,
-      "warn": 13,
-      "bad": 28,
+      "warn": 14,
+      "bad": 27,
       "unknown": 1
     }
   }
