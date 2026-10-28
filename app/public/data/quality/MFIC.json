@@ -3,142 +3,104 @@
   "summary": {
     "ticker": "MFIC",
     "scale": 1000,
-    "median_ratio": 1.612,
-    "periods": 12,
-    "with_reported": 12,
-    "match": 0,
+    "median_ratio": 1.0,
+    "periods": 19,
+    "with_reported": 16,
+    "match": 16,
     "near": 0,
-    "mismatch": 12,
-    "match_pct": 0.0,
-    "trust": "bad",
+    "mismatch": 0,
+    "match_pct": 100.0,
+    "trust": "good",
     "latest": {
-      "filing_date": "2026-02-26",
-      "period_end": "2025-12-31",
-      "holdings_fv": 7296812.0,
-      "row_count": 897,
-      "reported_fv": 3167838000.0,
-      "reported_fv_k": 3167838.0,
-      "delta_pct": 130.34,
-      "status": "mismatch",
-      "quality_flags": [
-        "Fair value is 1.45x the trailing median (possible annual/unit issue)"
-      ],
-      "filing_url": "https://www.sec.gov/Archives/edgar/data/1278752/000119312526076499/mfic-20251231.htm",
-      "form": "10-K"
+      "filing_date": "2026-08-06",
+      "period_end": "2026-06-30",
+      "holdings_fv": 2761803.0,
+      "row_count": 669,
+      "reported_fv": 2770342000.0,
+      "reported_fv_k": 2770342.0,
+      "delta_pct": -0.31,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1278752/000119312526335848/mfic-20260630.htm",
+      "form": "10-Q"
     },
-    "issue_periods": [
-      {
-        "filing_date": "2023-05-02",
-        "delta_pct": 37.52,
-        "status": "mismatch",
-        "holdings_fv": 3280033.0,
-        "reported_fv_k": 2385211.0,
-        "quality_flags": []
-      },
-      {
-        "filing_date": "2023-08-02",
-        "delta_pct": 61.26,
-        "status": "mismatch",
-        "holdings_fv": 3885188.0,
-        "reported_fv_k": 2409287.0,
-        "quality_flags": []
-      },
-      {
-        "filing_date": "2023-11-07",
-        "delta_pct": 61.84,
-        "status": "mismatch",
-        "holdings_fv": 3834237.0,
-        "reported_fv_k": 2369108.0,
-        "quality_flags": []
-      },
-      {
-        "filing_date": "2024-02-26",
-        "delta_pct": 51.42,
-        "status": "mismatch",
-        "holdings_fv": 3534493.0,
-        "reported_fv_k": 2334199.0,
-        "quality_flags": []
-      },
-      {
-        "filing_date": "2024-05-07",
-        "delta_pct": 46.04,
-        "status": "mismatch",
-        "holdings_fv": 3435997.0,
-        "reported_fv_k": 2352835.0,
-        "quality_flags": []
-      },
-      {
-        "filing_date": "2024-08-07",
-        "delta_pct": 61.06,
-        "status": "mismatch",
-        "holdings_fv": 3936857.0,
-        "reported_fv_k": 2444352.0,
-        "quality_flags": []
-      },
-      {
-        "filing_date": "2024-11-07",
-        "delta_pct": 63.34,
-        "status": "mismatch",
-        "holdings_fv": 4944447.0,
-        "reported_fv_k": 3027094.0,
-        "quality_flags": []
-      },
-      {
-        "filing_date": "2025-02-25",
-        "delta_pct": 119.77,
-        "status": "mismatch",
-        "holdings_fv": 6624755.0,
-        "reported_fv_k": 3014416.0,
-        "quality_flags": [
-          "Fair value is 1.77x the trailing median (possible annual/unit issue)"
-        ]
-      },
-      {
-        "filing_date": "2025-05-12",
-        "delta_pct": 52.88,
-        "status": "mismatch",
-        "holdings_fv": 4874658.0,
-        "reported_fv_k": 3188621.0,
-        "quality_flags": []
-      },
-      {
-        "filing_date": "2025-08-11",
-        "delta_pct": 46.61,
-        "status": "mismatch",
-        "holdings_fv": 4878404.0,
-        "reported_fv_k": 3327482.0,
-        "quality_flags": []
-      },
-      {
-        "filing_date": "2025-11-06",
-        "delta_pct": 63.4,
-        "status": "mismatch",
-        "holdings_fv": 5197589.0,
-        "reported_fv_k": 3180965.0,
-        "quality_flags": []
-      },
-      {
-        "filing_date": "2026-02-26",
-        "delta_pct": 130.34,
-        "status": "mismatch",
-        "holdings_fv": 7296812.0,
-        "reported_fv_k": 3167838.0,
-        "quality_flags": [
-          "Fair value is 1.45x the trailing median (possible annual/unit issue)"
-        ]
-      }
-    ]
+    "issue_periods": []
   },
   "periods": [
     {
+      "filing_date": "2021-11-04",
+      "period_end": "2021-09-30",
+      "holdings_fv": 2691699.0,
+      "row_count": 357,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1278752/000127875221000032/ainv2022q210-q.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2022-02-03",
+      "period_end": "2021-12-31",
+      "holdings_fv": 2675825.0,
+      "row_count": 324,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1278752/000127875222000004/ainv2022q310-q.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2022-05-19",
+      "period_end": "2022-03-31",
+      "holdings_fv": 2577719.0,
+      "row_count": 319,
+      "reported_fv": 2523173000.0,
+      "reported_fv_k": 2523173.0,
+      "delta_pct": 2.16,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1278752/000127875222000013/ainv2022q410-k.htm",
+      "form": "10-K"
+    },
+    {
+      "filing_date": "2022-08-02",
+      "period_end": "2022-06-30",
+      "holdings_fv": 2588800.0,
+      "row_count": 325,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1278752/000127875222000019/ainv2023q110-q.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2022-11-03",
+      "period_end": "2022-09-30",
+      "holdings_fv": 2501894.0,
+      "row_count": 308,
+      "reported_fv": 2463545000.0,
+      "reported_fv_k": 2463545.0,
+      "delta_pct": 1.56,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1278752/000095017022021830/mfic-20220930.htm",
+      "form": "10-Q"
+    },
+    {
       "filing_date": "2023-05-02",
       "period_end": "2023-03-31",
-      "holdings_fv": 3280033.0,
-      "row_count": 405,
+      "holdings_fv": 2447317.0,
+      "row_count": 328,
       "reported_fv": 2385211000.0,
       "reported_fv_k": 2385211.0,
-      "delta_pct": 37.52,
-      "status": "mismatch",
+      "delta_pct": 2.6,
+      "status": "match",
       "quality_flags": [],
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1278752/000095017023016653/mfic-20230331.htm",
       "form": "10-Q"
@@ -146,12 +108,12 @@
     {
       "filing_date": "2023-08-02",
       "period_end": "2023-06-30",
-      "holdings_fv": 3885188.0,
-      "row_count": 493,
+      "holdings_fv": 2459276.0,
+      "row_count": 362,
       "reported_fv": 2409287000.0,
       "reported_fv_k": 2409287.0,
-      "delta_pct": 61.26,
-      "status": "mismatch",
+      "delta_pct": 2.07,
+      "status": "match",
       "quality_flags": [],
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1278752/000095017023037117/mfic-20230630.htm",
       "form": "10-Q"
@@ -159,12 +121,12 @@
     {
       "filing_date": "2023-11-07",
       "period_end": "2023-09-30",
-      "holdings_fv": 3834237.0,
-      "row_count": 472,
+      "holdings_fv": 2369248.0,
+      "row_count": 334,
       "reported_fv": 2369108000.0,
       "reported_fv_k": 2369108.0,
-      "delta_pct": 61.84,
-      "status": "mismatch",
+      "delta_pct": 0.01,
+      "status": "match",
       "quality_flags": [],
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1278752/000095017023060325/mfic-20230930.htm",
       "form": "10-Q"
@@ -172,12 +134,12 @@
     {
       "filing_date": "2024-02-26",
       "period_end": "2023-12-31",
-      "holdings_fv": 3534493.0,
-      "row_count": 466,
+      "holdings_fv": 2388223.0,
+      "row_count": 358,
       "reported_fv": 2334199000.0,
       "reported_fv_k": 2334199.0,
-      "delta_pct": 51.42,
-      "status": "mismatch",
+      "delta_pct": 2.31,
+      "status": "match",
       "quality_flags": [],
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1278752/000095017024020118/mfic-20231231.htm",
       "form": "10-K"
@@ -185,12 +147,12 @@
     {
       "filing_date": "2024-05-07",
       "period_end": "2024-03-31",
-      "holdings_fv": 3435997.0,
-      "row_count": 481,
+      "holdings_fv": 2352970.0,
+      "row_count": 399,
       "reported_fv": 2352835000.0,
       "reported_fv_k": 2352835.0,
-      "delta_pct": 46.04,
-      "status": "mismatch",
+      "delta_pct": 0.01,
+      "status": "match",
       "quality_flags": [],
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1278752/000095017024054445/mfic-20240331.htm",
       "form": "10-Q"
@@ -198,12 +160,12 @@
     {
       "filing_date": "2024-08-07",
       "period_end": "2024-06-30",
-      "holdings_fv": 3936857.0,
-      "row_count": 615,
+      "holdings_fv": 2444796.0,
+      "row_count": 468,
       "reported_fv": 2444352000.0,
       "reported_fv_k": 2444352.0,
-      "delta_pct": 61.06,
-      "status": "mismatch",
+      "delta_pct": 0.02,
+      "status": "match",
       "quality_flags": [],
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1278752/000095017024092876/mfic-20240630.htm",
       "form": "10-Q"
@@ -211,12 +173,12 @@
     {
       "filing_date": "2024-11-07",
       "period_end": "2024-09-30",
-      "holdings_fv": 4944447.0,
-      "row_count": 776,
+      "holdings_fv": 3028279.0,
+      "row_count": 650,
       "reported_fv": 3027094000.0,
       "reported_fv_k": 3027094.0,
-      "delta_pct": 63.34,
-      "status": "mismatch",
+      "delta_pct": 0.04,
+      "status": "match",
       "quality_flags": [],
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1278752/000095017024122744/mfic-20240930.htm",
       "form": "10-Q"
@@ -224,27 +186,25 @@
     {
       "filing_date": "2025-02-25",
       "period_end": "2024-12-31",
-      "holdings_fv": 6624755.0,
-      "row_count": 768,
+      "holdings_fv": 3016900.0,
+      "row_count": 633,
       "reported_fv": 3014416000.0,
       "reported_fv_k": 3014416.0,
-      "delta_pct": 119.77,
-      "status": "mismatch",
-      "quality_flags": [
-        "Fair value is 1.77x the trailing median (possible annual/unit issue)"
-      ],
+      "delta_pct": 0.08,
+      "status": "match",
+      "quality_flags": [],
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1278752/000095017025026688/mfic-20241231.htm",
       "form": "10-K"
     },
     {
       "filing_date": "2025-05-12",
       "period_end": "2025-03-31",
-      "holdings_fv": 4874658.0,
-      "row_count": 851,
+      "holdings_fv": 3192094.0,
+      "row_count": 716,
       "reported_fv": 3188621000.0,
       "reported_fv_k": 3188621.0,
-      "delta_pct": 52.88,
-      "status": "mismatch",
+      "delta_pct": 0.11,
+      "status": "match",
       "quality_flags": [],
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1278752/000095017025069131/mfic-20250331.htm",
       "form": "10-Q"
@@ -252,12 +212,12 @@
     {
       "filing_date": "2025-08-11",
       "period_end": "2025-06-30",
-      "holdings_fv": 4878404.0,
-      "row_count": 840,
+      "holdings_fv": 3327743.0,
+      "row_count": 700,
       "reported_fv": 3327482000.0,
       "reported_fv_k": 3327482.0,
-      "delta_pct": 46.61,
-      "status": "mismatch",
+      "delta_pct": 0.01,
+      "status": "match",
       "quality_flags": [],
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1278752/000095017025106526/mfic-20250630.htm",
       "form": "10-Q"
@@ -265,12 +225,12 @@
     {
       "filing_date": "2025-11-06",
       "period_end": "2025-09-30",
-      "holdings_fv": 5197589.0,
-      "row_count": 895,
+      "holdings_fv": 3123872.0,
+      "row_count": 679,
       "reported_fv": 3180965000.0,
       "reported_fv_k": 3180965.0,
-      "delta_pct": 63.4,
-      "status": "mismatch",
+      "delta_pct": -1.79,
+      "status": "match",
       "quality_flags": [],
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1278752/000119312525269512/mfic-20250930.htm",
       "form": "10-Q"
@@ -278,17 +238,41 @@
     {
       "filing_date": "2026-02-26",
       "period_end": "2025-12-31",
-      "holdings_fv": 7296812.0,
-      "row_count": 897,
+      "holdings_fv": 3063914.0,
+      "row_count": 688,
       "reported_fv": 3167838000.0,
       "reported_fv_k": 3167838.0,
-      "delta_pct": 130.34,
-      "status": "mismatch",
-      "quality_flags": [
-        "Fair value is 1.45x the trailing median (possible annual/unit issue)"
-      ],
+      "delta_pct": -3.28,
+      "status": "match",
+      "quality_flags": [],
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1278752/000119312526076499/mfic-20251231.htm",
       "form": "10-K"
+    },
+    {
+      "filing_date": "2026-05-06",
+      "period_end": "2026-03-31",
+      "holdings_fv": 2963006.0,
+      "row_count": 681,
+      "reported_fv": 2971487000.0,
+      "reported_fv_k": 2971487.0,
+      "delta_pct": -0.29,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1278752/000119312526208941/mfic-20260331.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2026-08-06",
+      "period_end": "2026-06-30",
+      "holdings_fv": 2761803.0,
+      "row_count": 669,
+      "reported_fv": 2770342000.0,
+      "reported_fv_k": 2770342.0,
+      "delta_pct": -0.31,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1278752/000119312526335848/mfic-20260630.htm",
+      "form": "10-Q"
     }
   ]
 }
