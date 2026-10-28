@@ -1,192 +1,93 @@
-# Financial Statements Extraction & Consolidation
+# Financial Statements Extraction
 
-This directory contains tools to scrape financial statements (Balance Sheet, Income Statement, Cash Flow) from SEC filings and prepare them for use in the frontend.
+Quarterly financial statements (Balance Sheet, Income Statement, Cash Flow)
+are extracted from SEC XBRL filings for every BDC and written as lightweight
+per-ticker JSON files used directly by the frontend.
 
-## Overview
+## How it works
 
-The workflow consists of three main scripts:
+`src/extraction/financial_statements_extractor.py` uses the SEC **company facts
+API** (`data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json`) — one JSON per
+company containing every XBRL fact ever filed. The extractor:
 
-1. **`financial_statements_extractor.py`** - Scrapes financial statements from SEC filings
-2. **`consolidate_financial_statements.py`** - Consolidates individual files into master CSV files
-3. **`scrape_and_consolidate_financials.py`** - Complete workflow: scrape + consolidate
+1. Loads ticker → CIK from `data/company_tickers.json` (plus manual overrides
+   for renamed/acquired tickers such as `SSSS` and `MRCC`).
+2. Downloads and caches the company facts JSON to `output/financials/companyfacts/`.
+3. Keeps 10-Q / 10-K facts with period ends from 2019 onward and builds
+   quarterly series for a curated set of us-gaap concepts plus BDC-specific
+   concepts matched by label (`net investment income`, `incentive fee`, etc.).
+4. Derives `total_debt`, `debt_to_equity`, `asset_coverage`, `nav_per_share`,
+   and `nii_per_share`.
+5. Writes:
 
-## Quick Start
+```
+app/public/data/financials/{TICKER}_financials.json   per-ticker 3-statement data
+app/public/data/financials/financials_index.json      coverage summary
+```
 
-### Option 1: Complete Workflow (Recommended)
+### Output JSON shape
 
-Scrape and consolidate in one command:
+```json
+{
+  "ticker": "ARCC",
+  "entity_name": "ARES CAPITAL CORPORATION",
+  "periods": [{"end": "2026-09-30", "form": "10-Q", "filed": "2026-10-27"}],
+  "statements": {
+    "balance_sheet": {
+      "Assets": {"concept": "us-gaap:Assets", "unit": "USD",
+                 "series": {"2026-09-30": {"val": 30596000000, "filed": "2026-10-27", "form": "10-Q"}}}
+    },
+    "income_statement": {},
+    "cash_flow": {}
+  },
+  "derived": {
+    "total_debt": {}, "debt_to_equity": {}, "asset_coverage": {},
+    "nav_per_share": {}, "nii_per_share": {}
+  }
+}
+```
+
+Balance-sheet series are quarter-end snapshots. Income and cash-flow series are
+duration rows; the extractor prefers quarter-length rows (10-Q) and keeps
+semi-annual / 9-month / annual rows when those are all the filer reports
+(`duration_days` tells the UI which is which).
+
+## Commands
 
 ```bash
-# For a single ticker
-python scrape_and_consolidate_financials.py --ticker MRCC --years-back 1
+# One ticker
+python src/extraction/financial_statements_extractor.py --ticker ARCC
 
-# For multiple tickers
-python scrape_and_consolidate_financials.py --tickers MRCC ARCC MAIN --years-back 1
+# Specific tickers
+python src/extraction/financial_statements_extractor.py --tickers ARCC MAIN BBDC
+
+# All tickers in the investments index
+python src/extraction/financial_statements_extractor.py --all
 ```
 
-This will:
-1. Scrape financial statements from SEC filings
-2. Save individual files to `output/financials/`
-3. Consolidate them into master CSV files
-4. Place consolidated files in `frontend/public/data/`
+`process_all_bdcs.py` runs `--all` automatically after investment
+consolidation (use `--skip-financials` to opt out).
 
-### Option 2: Step-by-Step
+## Frontend analytics
 
-**Step 1: Scrape financial statements**
-
-```bash
-# Single ticker, latest filing
-python financial_statements_extractor.py --ticker MRCC --filing-type 10-Q
-
-# Single ticker, specific year
-python financial_statements_extractor.py --ticker MRCC --year 2025 --filing-type 10-Q
-
-# Single ticker, historical (past year)
-python financial_statements_extractor.py --ticker MRCC --years-back 1 --filing-type 10-Q
-```
-
-**Step 2: Consolidate files**
-
-```bash
-# Consolidate all files
-python consolidate_financial_statements.py
-
-# Consolidate only specific ticker
-python consolidate_financial_statements.py --ticker MRCC
-```
-
-## File Structure
-
-### Individual Files (output/financials/)
-
-After scraping, individual files are saved as:
-- `{TICKER}_{FILING_DATE}_balance_sheet.csv`
-- `{TICKER}_{FILING_DATE}_income_statement.csv`
-- `{TICKER}_{FILING_DATE}_cash_flow.csv`
-
-Example:
-- `MRCC_2025-11-05_balance_sheet.csv`
-- `MRCC_2025-11-05_income_statement.csv`
-- `MRCC_2025-11-05_cash_flow.csv`
-
-### Consolidated Files (frontend/public/data/)
-
-After consolidation, master files are created:
-- `balance_sheets.csv` - All balance sheet data across all tickers and dates
-- `income_statements.csv` - All income statement data across all tickers and dates
-- `cash_flows.csv` - All cash flow data across all tickers and dates
-
-## CSV Format
-
-The consolidated CSV files have the following columns:
+`src/processing/build_analytics.py` joins the holdings CSVs with the financial
+JSONs and writes:
 
 ```
-ticker,filing_date,statement_label,statement_type,line_item,concept,value,context_key,start_date,end_date,instant_date,duration_days,level,is_abstract,preferred_label,order_index
+app/public/data/analytics/{TICKER}.json   per-filing-period breakdowns
+app/public/data/analytics/peers.json      cross-BDC comparison (latest periods)
 ```
 
-**Key Fields:**
-- `ticker` - Company ticker symbol (e.g., "MRCC")
-- `filing_date` - SEC filing date (YYYY-MM-DD format)
-- `statement_type` - Type of statement ("balance_sheet", "income_statement", "cash_flow")
-- `concept` - XBRL concept tag (e.g., "us-gaap_InvestmentOwnedAtFairValue")
-- `line_item` - Human-readable line item description
-- `value` - Financial value (numeric)
-- `context_key` - XBRL context reference
-- `start_date`, `end_date`, `instant_date` - Period information
-- `duration_days` - Duration of period in days (for period-based items)
+Breakdowns include investment types, sectors, acquisition-year vintage,
+portfolio age buckets, maturity buckets, weighted average cash rate/spread, and
+top companies. `process_all_bdcs.py` rebuilds these automatically (use
+`--skip-analytics` to opt out).
 
-## Frontend Integration
+## Historical note
 
-The frontend automatically loads these consolidated CSV files from `/data/`:
-
-```typescript
-// Frontend code (client-csv.ts) automatically loads:
-// - /data/balance_sheets.csv
-// - /data/income_statements.csv
-// - /data/cash_flows.csv
-
-// Usage in frontend:
-import { fetchFinancials } from './api/client-csv';
-
-const financials = await fetchFinancials('MRCC', '2025-11-05');
-// Returns PeriodFinancials with:
-// - income_statement: Record<string, number | null>
-// - balance_sheet: Record<string, number | null>
-// - cash_flow_statement: Record<string, number | null>
-// - full_income_statement: Record<string, { label, concept, value }>
-// - full_balance_sheet: Record<string, { label, concept, value }>
-// - full_cash_flow_statement: Record<string, { label, concept, value }>
-```
-
-## Examples
-
-### Example 1: Update MRCC Financials for Past Year
-
-```bash
-python scrape_and_consolidate_financials.py --ticker MRCC --years-back 1 --filing-type 10-Q
-```
-
-### Example 2: Add New Ticker to Existing Data
-
-```bash
-# Scrape new ticker
-python financial_statements_extractor.py --ticker ARCC --years-back 1 --filing-type 10-Q
-
-# Re-consolidate all files (includes new ticker)
-python consolidate_financial_statements.py
-```
-
-### Example 3: Just Consolidate Existing Files
-
-If you already have individual files and just want to regenerate the consolidated files:
-
-```bash
-python consolidate_financial_statements.py
-```
-
-## Data Sources
-
-Financial statements are extracted from:
-- **10-Q filings** - Quarterly reports (most common)
-- **10-K filings** - Annual reports
-
-The extractor uses XBRL instance documents from SEC filings, which contain structured financial data in XML format.
-
-## Troubleshooting
-
-### No XBRL Documents Found
-
-If you see "No XBRL instance document found", the filing may not have XBRL data available. Try:
-- Checking if the filing exists on SEC.gov
-- Verifying the filing type (10-Q vs 10-K)
-- Checking if the filing date is correct
-
-### CSV Field Size Limit Errors
-
-If you see "field larger than field limit" errors, the script now automatically increases the CSV field size limit. If issues persist, check that the source files aren't corrupted.
-
-### Duplicate Rows
-
-The consolidation script automatically deduplicates rows based on:
-- ticker
-- filing_date
-- concept
-- context_key
-- value
-
-If you see unexpected duplicates, check the source files for data quality issues.
-
-## Notes
-
-- **Filing Dates**: Files are named using the actual SEC filing date, not the scrape date
-- **Deduplication**: The consolidation process automatically removes duplicate rows
-- **Data Format**: All values are stored as strings in CSV; the frontend converts them to numbers
-- **XBRL Concepts**: The `concept` field uses XBRL taxonomy tags (e.g., `us-gaap_*`) which are standardized across all SEC filings
-
-
-
-
-
-
-
-
+Earlier versions downloaded each filing's XBRL instance document and wrote raw
+per-filing CSVs (`output/financials/{TICKER}_{DATE}_balance_sheet.csv`) which
+`consolidate_financial_statements.py` merged into the large
+`{TICKER}_balance_sheet.csv` / `{TICKER}_income_statement.csv` files still in
+`app/public/data/financials/`. Those raw CSVs remain for reference, but the
+frontend now consumes the compact `{TICKER}_financials.json` files above.

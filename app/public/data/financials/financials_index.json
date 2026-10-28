@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-10-28T04:51:21.026592Z",
+  "tickers": {
+    "MRCC": {
+      "entity_name": "MONROE CAPITAL CORP",
+      "period_count": 25,
+      "first_period": "2019-12-31",
+      "latest_period": "2025-12-31",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "SSSS": {
+      "entity_name": "NEOSTELLAR CAPITAL CORP.",
+      "period_count": 27,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    }
+  }
+}
