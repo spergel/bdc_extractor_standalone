@@ -1,22 +1,236 @@
-company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
-SLR Equipment Finance Equity Interests,co_6c73fdb6baca,First Lien,Financial Services,,,,,,,,,145000,,,145000,,,,200,,SLRC,2023-11-07
-Preferred Equity,co_b80c2a27176c,First Lien,,5%,,,,,,2025-06-30,0,5114,3801,,5114,,,,,type_hint_pref_equity_from_name,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,co_9691b22d22f7,Other Equity,,,,,,,,,,51,32,,51,,,,12510,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,co_9691b22d22f7,Warrants,,,,,,,,,,106,0,,106,,,,6347,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,co_9691b22d22f7,Other Equity,,,,,,,,,,11411,3816,,11411,,,,6526,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,co_9691b22d22f7,Warrants,,,,,,,,,,51,0,,51,,,,90,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,co_9691b22d22f7,Warrants,,,,,,,,,,136,50,,136,,,,289102,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,co_9691b22d22f7,Warrants,,,,,,,,,,65,0,,65,,,,157500,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,co_9691b22d22f7,Warrants,,,,,,,,,,74,87,,74,,,,444388,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,co_9691b22d22f7,Warrants,,,,,,,,,,129,342,,129,,,,260000,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,co_9691b22d22f7,Warrants,,,,,,,,,,23,20,,23,,,,29366,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,co_9691b22d22f7,Other Equity,,,,,,,,,,657,273,,657,,,,207043,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,co_9691b22d22f7,Other Equity,,,,,,,,,,15683,0,,15683,,,,231177,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,co_9691b22d22f7,Common Equity,,,,,,,,,,5216,0,,5216,,,,522,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,co_9691b22d22f7,Warrants,,,,,,,,,,381,0,,381,,,,30370,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,co_9691b22d22f7,Other Equity,,,,,,,,,,235,283,,235,,,,469353,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,co_9691b22d22f7,Other Equity,,,,,,,,,,19880,15100,,19880,,,,0,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,co_9691b22d22f7,Warrants,,,,,,,,,,290,28,,290,,,,48969,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,co_9691b22d22f7,Warrants,,,,,,,,,,152,0,,152,,,,2230,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,co_9691b22d22f7,Warrants,,,,,,,,,,51,55,,51,,,,161761,,SLRC,2023-11-07
-Common Equity Equity Interests Warrants,co_9691b22d22f7,Other,,,,,,,,,,616592,,,616592,,,,,,SLRC,2023-11-07
+company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
+"Accession Risk Management Group, Inc.",First Lien,Insurance,11.02%,,SOFR,5.5%,0.75%,,,20221,20071,20221,,20071,,,,,,SLRC,2023-11-07
+Aegis Toxicology Sciences Corp.,First Lien,Healthcare,11.13%,,SOFR,5.5%,1.00%,,,13420,13218,13420,,13218,,,,,,SLRC,2023-11-07
+"Alkeme Intermediary Holdings, LLC",First Lien,Insurance,11.92%,,SOFR,6.5%,1.00%,,,8524,8270,8268,,8270,,,,,,SLRC,2023-11-07
+"All States Ag Parts, LLC",First Lien,Distribution & Wholesale,11.60%,,SOFR,6%,1.00%,,,2177,2148,2177,,2148,,,,,,SLRC,2023-11-07
+"Apex Services Partners, LLC",First Lien,Consumer & Retail,10.67%,,SOFR,5.25%,1.00%,,,13916,13641,13916,,13641,,,,,,SLRC,2023-11-07
+"Atria Wealth Solutions, Inc.",First Lien,Financial Services,12.15%,,SOFR,6.5%,1.00%,,,16288,16170,16288,,16170,,,,,,SLRC,2023-11-07
+"Basic Fun, Inc.",First Lien,Consumer & Retail,12.17%,,SOFR,6.5%,1.00%,,,2150,2149,2150,,2149,,,,,,SLRC,2023-11-07
+"BayMark Health Services, Inc.",First Lien,Healthcare,10.65%,,SOFR,5%,1.00%,,,8286,8021,8286,,8021,,,,,,SLRC,2023-11-07
+"Bayside Opco, LLC",First Lien,Healthcare,12.54%,,SOFR,7%,1.00%,,,402,402,402,,402,,,,,,SLRC,2023-11-07
+"Bayside Opco, LLC",First Lien,Healthcare,12.79%,,SOFR,7.25%,1.00%,,,18807,18807,18807,,18807,,,,,,SLRC,2023-11-07
+"Bayside Parent, LLC",First Lien,Healthcare,15.54%,,SOFR,10%,1.00%,,,4959,4959,4959,,4959,,,,,,SLRC,2023-11-07
+"BDG Media, Inc.",First Lien,Media & Entertainment,13.75%,,Prime,5.25%,5.50%,,,5354,5354,5354,,5354,,,,,,SLRC,2023-11-07
+CC SAG Holdings Corp.,First Lien,Consumer & Retail,11.18%,,SOFR,5.75%,0.75%,,,36588,36020,36588,,36020,,,,,,SLRC,2023-11-07
+Composite Technology Acquisition Corp.,First Lien,Industrials,10.04%,,SOFR,4.5%,1.00%,,,11028,10765,11028,,10765,,,,,,SLRC,2023-11-07
+"CVAUSA Management, LLC",First Lien,Healthcare,11.59%,,SOFR,6.5%,1.00%,,,18855,18308,18289,,18308,,,,,,SLRC,2023-11-07
+"Enhanced Permanent Capital, LLC",First Lien,Financial Services,12.26%,,SOFR,7%,1.00%,,,42521,41790,42521,,41790,,,,,,SLRC,2023-11-07
+ENS Holdings III Corp.,First Lien,Distribution & Wholesale,10.24%,,SOFR,4.75%,1.00%,,,4630,4507,4630,,4507,,,,,,SLRC,2023-11-07
+"Enverus Holdings, Inc.",First Lien,Software & Technology,9.92%,,SOFR,4.5%,,,,11277,10950,11277,,10950,,,,,,SLRC,2023-11-07
+"Erie Construction Mid-west, LLC",First Lien,Industrials,10.34%,,SOFR,4.75%,1.00%,,,8572,8296,8572,,8296,,,,,,SLRC,2023-11-07
+"Fertility (ITC) Investment Holdco, LLC",First Lien,Healthcare,11.63%,,SOFR,6.5%,1.00%,,,22653,22034,22653,,22034,,,,,,SLRC,2023-11-07
+"Foundation Consumer Brands, LLC",First Lien,Consumer & Retail,11.77%,,SOFR,6.25%,1.00%,,,27560,26963,27560,,26963,,,,,,SLRC,2023-11-07
+GSM Acquisition Corp.,First Lien,Healthcare,10.65%,,SOFR,5%,1.00%,,,10939,10578,10939,,10578,,,,,,SLRC,2023-11-07
+"Higginbotham Insurance Agency, Inc.",First Lien,Insurance,10.92%,,SOFR,5.5%,1.00%,,,28856,28856,28856,,28856,,,,,,SLRC,2023-11-07
+"High Street Buyer, Inc.",First Lien,Insurance,11.54%,,SOFR,6%,0.75%,,,3191,3034,3191,,3034,,,,,,SLRC,2023-11-07
+Human Interest Inc.,First Lien,Software & Technology,13.18%,,SOFR,7.85%,1.00%,,,20104,19903,20104,,19903,,,,,,SLRC,2023-11-07
+"iCIMS, Inc.",First Lien,Software & Technology,12.14%,,SOFR,7.25%,0.75%,,,30762,30327,30762,,30327,,,,,,SLRC,2023-11-07
+"Kaseya, Inc.",First Lien,Software & Technology,11.58%,,SOFR,6.25%,0.75%,,,24365,24050,24365,,24050,,,,,,SLRC,2023-11-07
+"Kid Distro Holdings, LLC",First Lien,Software & Technology,11.04%,,SOFR,5.5%,1.00%,,,20259,19969,20259,,19969,,,,,,SLRC,2023-11-07
+"Kingsbridge Holdings, LLC",First Lien,Other,12.40%,,SOFR,7%,1.00%,,,80000,79872,80000,,79872,,,,,,SLRC,2023-11-07
+"KORE Wireless Group, Inc.",First Lien,Telecommunications,10.99%,,SOFR,5.5%,,,,23404,23108,23404,,23108,,,,,,SLRC,2023-11-07
+"Logix Holding Company, LLC",First Lien,Telecommunications,11.48%,,LIBOR,5.75%,1.00%,,,14009,13516,13729,,13516,,,,,,SLRC,2023-11-07
+"Luxury Asset Capital, LLC",First Lien,Financial Services,12.19%,,SOFR,6.75%,1.00%,,,30500,30005,30500,,30005,,,,,,SLRC,2023-11-07
+"Maurices, Inc.",First Lien,Consumer & Retail,9.94%,,SOFR,6.75%,1.00%,,,7395,7346,7395,,7346,,,,,,SLRC,2023-11-07
+"Maxor Acquisition, Inc.",First Lien,Healthcare,12.48%,,SOFR,6.75%,1.00%,,,23783,23118,23783,,23118,,,,,,SLRC,2023-11-07
+NSPC Intermediate Corp.,First Lien,Healthcare,13.20%,,SOFR,8.5%,1.00%,,,2216,2136,2216,,2136,,,,,,SLRC,2023-11-07
+"Oldco AI, LLC",First Lien,Consumer & Retail,13.25%,,Prime,4.75%,1.00%,,,321,321,321,,321,,,,,,SLRC,2023-11-07
+"ONS MSO, LLC",First Lien,Healthcare,11.62%,,SOFR,6.25%,1.00%,,,17192,16798,17192,,16798,,,,,,SLRC,2023-11-07
+"Orthopedic Care Partners Management, LLC",First Lien,Healthcare,11.96%,,SOFR,6.5%,1.00%,,,5502,5473,5420,,5473,,,,,,SLRC,2023-11-07
+"Pediatric Home Respiratory Services, LLC",First Lien,Healthcare,11.67%,,SOFR,6.25%,1.00%,,,3118,3082,3118,,3082,,,,,,SLRC,2023-11-07
+"Peter C. Foy & Associates Insurance Services, LLC",First Lien,Insurance,11.43%,,SOFR,6%,0.75%,,,16920,16668,16581,,16668,,,,,,SLRC,2023-11-07
+PhyNet Dermatology LLC,First Lien,Healthcare,11.45%,,SOFR,6.25%,1.00%,,,8374,8361,8374,,8361,,,,,,SLRC,2023-11-07
+"Pinnacle Treatment Centers, Inc.",First Lien,Healthcare,12.10%,,SOFR,6.75%,1.00%,,,25243,24903,25243,,24903,,,,,,SLRC,2023-11-07
+"Plastics Management, LLC",First Lien,Healthcare,10.44%,,SOFR,5%,1.00%,,,17184,16493,17184,,16493,,,,,,SLRC,2023-11-07
+RQM+ Corp.,First Lien,Healthcare,11.40%,,SOFR,5.75%,1.00%,,,23696,23361,23696,,23361,,,,,,SLRC,2023-11-07
+RxSense Holdings LLC,First Lien,Consumer & Retail,10.47%,,SOFR,5%,1.00%,,,8677,8369,8677,,8369,,,,,,SLRC,2023-11-07
+"SCP Eye Care, LLC",First Lien,Healthcare,11.17%,,SOFR,5.75%,1.00%,,,9562,9281,9562,,9281,,,,,,SLRC,2023-11-07
+SHO Holding I Corp.,First Lien,Consumer & Retail,10.86%,,SOFR,5.23%,1.00%,,,5659,5505,5376,,5505,,,,,,SLRC,2023-11-07
+"Southern Orthodontic Partners Management, LLC",First Lien,Healthcare,11.89%,,SOFR,6.25%,1.00%,,,11505,11319,11274,,11319,,,,,,SLRC,2023-11-07
+Stryten Resources LLC,First Lien,Automotive,13.43%,,SOFR,8%,1.00%,,,10725,10581,10586,,10581,,,,,,SLRC,2023-11-07
+"SunMed Group Holdings, LLC",First Lien,Healthcare,10.99%,,SOFR,5.5%,0.75%,,,15020,14700,15020,,14700,,,,,,SLRC,2023-11-07
+"TAUC Management, LLC",First Lien,Healthcare,10.59%,,LIBOR,5.25%,1.00%,,,6893,6630,6411,,6630,,,,,,SLRC,2023-11-07
+"The Townsend Company, LLC",First Lien,Business Services,11.57%,,SOFR,6.25%,1.00%,,,10073,9825,9821,,9825,,,,,,SLRC,2023-11-07
+"Tilley Distribution, Inc.",First Lien,Distribution & Wholesale,11.54%,,SOFR,6%,1.00%,,,3848,3692,3848,,3692,,,,,,SLRC,2023-11-07
+Ultimate Baked Goods Midco LLC,First Lien,Food & Beverage,11.67%,,SOFR,6.25%,1.00%,,,14858,14397,14858,,14397,,,,,,SLRC,2023-11-07
+"United Digestive MSO Parent, LLC",First Lien,Healthcare,12.29%,,SOFR,6.75%,1.00%,,,13257,12882,13257,,12882,,,,,,SLRC,2023-11-07
+"Urology Management Holdings, Inc.",First Lien,Healthcare,11.79%,,SOFR,6.25%,1.00%,,,7138,6959,7066,,6959,,,,,,SLRC,2023-11-07
+"UVP Management, LLC",First Lien,Healthcare,11.79%,,SOFR,6.25%,1.00%,,,15444,15063,15058,,15063,,,,,,SLRC,2023-11-07
+"Vessco Midco Holdings, LLC",First Lien,Water Utilities,9.92%,,SOFR,4.5%,1.00%,,,2466,2408,2466,,2408,,,,,,SLRC,2023-11-07
+"West-NR Parent, Inc.",First Lien,Insurance,11.72%,,SOFR,6.25%,1.00%,,,13201,12945,12937,,12945,,,,,,SLRC,2023-11-07
+"World Insurance Associates, LLC",First Lien,Insurance,11.14%,,SOFR,5.75%,1.00%,,,48250,48141,48250,,48141,,,,,,SLRC,2023-11-07
+"ACRES Commercial Mortgage, LLC",Second Lien,Financial Services,12.49%,,SOFR,7.05%,1.00%,,,29925,29455,29925,,29455,,,,,,SLRC,2023-11-07
+FGI Worldwide LLC,Second Lien,Financial Services,11.82%,,SOFR,6.5%,1.00%,,,8206,8015,8206,,8015,,,,,,SLRC,2023-11-07
+"RD Holdco, Inc.",Second Lien,Consumer & Retail,,,SOFR,9.75%,1.00%,,,15065,12297,7532,,12297,,,,,,SLRC,2023-11-07
+"Alimera Sciences, Inc.",First Lien,Healthcare,10.48%,,SOFR,5.15%,4.60%,,,34738,34857,37186,,34857,,,,,,SLRC,2023-11-07
+"Apeel Technology, Inc.",First Lien,Healthcare,8.75%,,SOFR,6.25%,1.00%,,,3643,3641,4062,,3641,,,,,,SLRC,2023-11-07
+"Arcutis Biotherapeutics, Inc.",First Lien,Pharamceuticals,12.88%,,SOFR,7.45%,0.10%,,,66849,67893,68019,,67893,,,,,,SLRC,2023-11-07
+"Ardelyx, Inc.",First Lien,Healthcare,13.30%,,SOFR,7.95%,1.00%,,,9475,9526,10503,,9526,,,,,,SLRC,2023-11-07
+"BridgeBio Pharma, Inc.",First Lien,Healthcare,9.00%,,,,,,,40753,40487,40854,,40487,,,,,,SLRC,2023-11-07
+"Cerapedics, Inc.",First Lien,Healthcare,11.53%,,SOFR,6.2%,2.75%,,,26939,27000,27007,,27000,,,,,,SLRC,2023-11-07
+"Glooko, Inc.",First Lien,Healthcare,13.33%,,SOFR,7.9%,0.10%,,,11912,11984,12150,,11984,,,,,,SLRC,2023-11-07
+"Meditrina, Inc.",First Lien,Healthcare,10.83%,,SOFR,5.5%,3.45%,,,3367,3365,3384,,3365,,,,,,SLRC,2023-11-07
+"Neuronetics, Inc.",First Lien,Healthcare,10.98%,,SOFR,5.65%,3.95%,,,19299,19256,19396,,19256,,,,,,SLRC,2023-11-07
+"OmniGuide Holdings, Inc.",First Lien,Healthcare,11.23%,,SOFR,5.8%,5.31%,,,24500,24590,24561,,24590,,,,,,SLRC,2023-11-07
+"Outset Medical, Inc.",First Lien,Healthcare,10.48%,,SOFR,5.15%,2.75%,,,35084,35162,35171,,35162,,,,,,SLRC,2023-11-07
+"Vapotherm, Inc.",First Lien,Healthcare,14.73%,,SOFR,9.3%,1.00%,,,36826,37086,37378,,37086,,,,,,SLRC,2023-11-07
+"Vertos Medical, Inc.",First Lien,Healthcare,10.48%,,SOFR,5.15%,4.75%,,,6651,6587,6567,,6587,,,,,,SLRC,2023-11-07
+Total First Lien Life Science SeniorSecured Loans,First Lien,Other,,,,,,,,,321434,326238,,321434,,,,,,SLRC,2023-11-07
+Total Senior Secured Loans,First Lien,Other,,,,,,,,,1292223,1300366,,1292223,,,,,,SLRC,2023-11-07
+"A&A Crane and Rigging, LLC",Other Debt,Business Services,7.78%,,,,,,,72,72,72,,72,,,,,,SLRC,2023-11-07
+Aero Operating LLC,Other Debt,Business Services,9.64%,,,,,,,1493,1492,1491,,1492,,,,,,SLRC,2023-11-07
+"AFG Dallas III, LLC",Other Debt,Consumer & Retail,11.29%,,,,,,,1182,1182,1182,,1182,,,,,,SLRC,2023-11-07
+Air Methods Corp.,Other Debt,Transportation & Logistics,7.13%,,,,,,,3231,3275,3231,,3275,,,,,,SLRC,2023-11-07
+"AmeraMex International, Inc.",Other Debt,Business Services,10.00%,,,,,,,563,563,569,,563,,,,,,SLRC,2023-11-07
+"Bazzini, LLC",Other Debt,Food & Beverage,10.46%,,,,,,,2084,2146,2084,,2146,,,,,,SLRC,2023-11-07
+Boart Longyear Company,Other Debt,Chemicals & Materials,10.44%,,,,,,,2870,2870,2870,,2870,,,,,,SLRC,2023-11-07
+"Bowman Energy Solutions, LLC",Other Debt,Business Services,7.42%,,,,,,,124,124,124,,124,,,,,,SLRC,2023-11-07
+C-Port/Stone LLC,Other Debt,Energy,8.54%,,,,,,,6366,6206,6175,,6206,,,,,,SLRC,2023-11-07
+"Capital City Jet Center, Inc.",Other Debt,Transportation & Logistics,10.00%,,,,,,,1536,1536,1528,,1536,,,,,,SLRC,2023-11-07
+"Carolina's Contracting, LLC",Other Debt,Consumer & Retail,8.72%,,,,,,,3688,3723,3688,,3723,,,,,,SLRC,2023-11-07
+"CKD Holdings, Inc.",Other Debt,Transportation & Logistics,8.60%,,,,,,,3076,3076,3076,,3076,,,,,,SLRC,2023-11-07
+"Clubcorp Holdings, Inc.",Other Debt,Food & Beverage,13.01%,,,,,,,6880,6880,6880,,6880,,,,,,SLRC,2023-11-07
+"Complete Equipment Rentals, LLC",Other Debt,Business Services,7.15%,,,,,,,1926,1895,1893,,1895,,,,,,SLRC,2023-11-07
+Dongwon Autopart Technology Inc.,Other Debt,Automotive,7.96%,,,,,,,1411,1424,1411,,1424,,,,,,SLRC,2023-11-07
+"Double S Industrial Contractors, Inc.",Other Debt,Business Services,8.60%,,,,,,,119,119,119,,119,,,,,,SLRC,2023-11-07
+"Drillers Choice, Inc.",Other Debt,Business Services,10.08%,,,,,,,1962,1965,1962,,1965,,,,,,SLRC,2023-11-07
+"Energy Drilling Services, LLC",Other Debt,Consumer & Retail,9.16%,,,,,,,1139,1139,1139,,1139,,,,,,SLRC,2023-11-07
+"Environmental Protection & Improvement Company, LLC",Other Debt,Transportation & Logistics,8.25%,,,,,,,4746,4769,4746,,4769,,,,,,SLRC,2023-11-07
+"Equipment Operating Leases, LLC",Other Debt,Industrials,8.37%,,,,,,,3498,3498,3411,,3498,,,,,,SLRC,2023-11-07
+"Extreme Steel Crane & Rigging, LLC",Other Debt,Business Services,9.52%,,,,,,,902,910,902,,910,,,,,,SLRC,2023-11-07
+"First American Commercial Bancorp,Inc.",Other Debt,Financial Services,9.02%,,,,,,,2449,2451,2449,,2451,,,,,,SLRC,2023-11-07
+"First National Capital, LLC",Other Debt,Financial Services,9.00%,,,,,,,5739,5739,5739,,5739,,,,,,SLRC,2023-11-07
+Freightsol LLC,Other Debt,Transportation & Logistics,12.89%,,,,,,,289,289,289,,289,,,,,,SLRC,2023-11-07
+"Georgia Jet, Inc.",Other Debt,Transportation & Logistics,8.00%,,,,,,,128,128,128,,128,,,,,,SLRC,2023-11-07
+GMT Corp.,Other Debt,Industrials,10.71%,,,,,,,4070,4073,4070,,4073,,,,,,SLRC,2023-11-07
+"Hawkeye Contracting Company, LLC",Other Debt,Industrials,10.50%,,,,,,,769,769,769,,769,,,,,,SLRC,2023-11-07
+HTI Logistics Corp.,Other Debt,Business Services,9.94%,,,,,,,189,189,184,,189,,,,,,SLRC,2023-11-07
+"International Automotive Components Group, North America, Inc.",Other Debt,Automotive,7.95%,,,,,,,4375,4394,4288,,4394,,,,,,SLRC,2023-11-07
+"Kool Pak, LLC",Other Debt,Transportation & Logistics,8.58%,,,,,,,71,71,71,,71,,,,,,SLRC,2023-11-07
+"Loc Performance Products, LLC",Other Debt,Industrials,10.50%,,,,,,,673,673,673,,673,,,,,,SLRC,2023-11-07
+Loyer Capital LLC,Other Debt,Other,11.52%,,,,,,,7500,7500,7361,,7500,,,,,,SLRC,2023-11-07
+"Lux Credit Consultants, LLC",Other Debt,Transportation & Logistics,12.09%,,,,,,,12142,12142,12142,,12142,,,,,,SLRC,2023-11-07
+"Lux Vending, LLC",Other Debt,Financial Services,13.26%,,,,,,,895,903,895,,903,,,,,,SLRC,2023-11-07
+"Miranda Logistics Enterprise, Inc.",Other Debt,Industrials,7.69%,,,,,,,824,824,824,,824,,,,,,SLRC,2023-11-07
+"Mountain Air Helicopters, Inc.",Other Debt,Business Services,10.00%,,,,,,,279,278,279,,278,,,,,,SLRC,2023-11-07
+Nimble Crane LLC,Other Debt,Business Services,9.18%,,,,,,,975,975,975,,975,,,,,,SLRC,2023-11-07
+"No Limit Construction Services, LLC",Other Debt,Business Services,7.73%,,,,,,,124,124,124,,124,,,,,,SLRC,2023-11-07
+"Ozzies, Inc.",Other Debt,Business Services,10.72%,,,,,,,1731,1783,1731,,1783,,,,,,SLRC,2023-11-07
+PCX Aerostructures LLC,Other Debt,Aerospace & Defense,9.32%,,,,,,,2401,2401,2401,,2401,,,,,,SLRC,2023-11-07
+Rane Light Metal Castings Inc.,Other Debt,Industrials,10.00%,,,,,,,83,83,83,,83,,,,,,SLRC,2023-11-07
+"Rango, Inc.",Other Debt,Business Services,9.77%,,,,,,,731,742,717,,742,,,,,,SLRC,2023-11-07
+Rayzor's Edge LLC,Other Debt,Consumer & Retail,8.27%,,,,,,,732,732,732,,732,,,,,,SLRC,2023-11-07
+"RH Land Construction, LLC",Other Debt,Industrials,8.08%,,,,,,,124,124,124,,124,,,,,,SLRC,2023-11-07
+Royal Express Inc.,Other Debt,Transportation & Logistics,9.53%,,,,,,,220,221,220,,221,,,,,,SLRC,2023-11-07
+Rotten Rock Hardscaping & Tree Service,Other Debt,Consumer & Retail,8.21%,,,,,,,214,214,214,,214,,,,,,SLRC,2023-11-07
+"Rutt Services, LLC",Other Debt,Business Services,8.95%,,,,,,,1201,1201,1201,,1201,,,,,,SLRC,2023-11-07
+Signet Marine Corp.,Other Debt,Transportation & Logistics,8.50%,,,,,,,12712,12753,12712,,12753,,,,,,SLRC,2023-11-07
+SLR Equipment Finance,Other Debt,Financial Services,8.50%,,,,,,,2500,2500,2500,,2500,,,,,,SLRC,2023-11-07
+"Smiley Lifting Solutions, LLC",Other Debt,Business Services,8.61%,,,,,,,6123,6123,6123,,6123,,,,,,SLRC,2023-11-07
+"ST Coaches, LLC",Other Debt,Transportation & Logistics,8.58%,,,,,,,1111,1111,1075,,1111,,,,,,SLRC,2023-11-07
+Star Coaches Inc.,Other Debt,Transportation & Logistics,8.42%,,,,,,,2472,2472,2218,,2472,,,,,,SLRC,2023-11-07
+"Superior Transportation, Inc.",Other Debt,Transportation & Logistics,10.63%,,,,,,,2589,2589,2589,,2589,,,,,,SLRC,2023-11-07
+"The Smedley Company & Smedley Services, Inc.",Other Debt,Business Services,4.07%,,,,,,,1476,1476,1476,,1476,,,,,,SLRC,2023-11-07
+"Trinity Equipment, Inc.",Other Debt,Business Services,8.93%,,,,,,,1407,1407,1407,,1407,,,,,,SLRC,2023-11-07
+"Trinity Equipment Rentals, Inc.",Other Debt,Business Services,8.75%,,,,,,,416,416,416,,416,,,,,,SLRC,2023-11-07
+"U.S. Crane & Rigging, LLC",Other Debt,Business Services,8.73%,,,,,,,2717,2717,2717,,2717,,,,,,SLRC,2023-11-07
+"Up Trucking Services, LLC",Other Debt,Transportation & Logistics,11.21%,,,,,,,256,258,256,,258,,,,,,SLRC,2023-11-07
+"Waste Pro of Florida, Inc.",Other Debt,Business Services,9.17%,,,,,,,9330,9485,9330,,9485,,,,,,SLRC,2023-11-07
+"Wind River Environmental, LLC",Other Debt,Consumer & Retail,10.00%,,,,,,,387,387,387,,387,,,,,,SLRC,2023-11-07
+"Womble Company, Inc.",Other Debt,Energy,9.11%,,,,,,,256,256,246,,256,,,,,,SLRC,2023-11-07
+"Worldwide Flight Services, Inc.",Other Debt,Transportation & Logistics,9.93%,,,,,,,3192,3240,3192,,3240,,,,,,SLRC,2023-11-07
+Zamborelli Enterprises Pacific Souther Foundation,Other Debt,Consumer & Retail,8.91%,,,,,,,606,611,606,,611,,,,,,SLRC,2023-11-07
+SLR Equipment Finance Equity Interests,Other Debt,Financial Services,,,,,,,,,145000,120820,,145000,,,,200,,SLRC,2023-11-07
+"SOINT, LLC",Other Equity,Aerospace & Defense,5.00%,,,,,,,,5114,3801,,5114,,,,,,SLRC,2023-11-07
+"Assertio Holdings, Inc.",Other Equity,Healthcare,,,,,,,,,51,32,,51,,,,12510,,SLRC,2023-11-07
+"aTyr Pharma, Inc.",Other Equity,Healthcare,,,,,,,,,106,,,106,,,,6347,,SLRC,2023-11-07
+"Bayside Parent, LLC",Other Equity,Healthcare,,,,,,,,,11411,3816,,11411,,,,6526,,SLRC,2023-11-07
+"CardioFocus, Inc.",Other Equity,Healthcare,,,,,,,,,51,,,51,,,,90,,SLRC,2023-11-07
+"Centrexion Therapeutics, Inc.",Other Equity,Healthcare,,,,,,,,,136,50,,136,,,,289102,,SLRC,2023-11-07
+"Conventus Orthopaedics, Inc.",Other Equity,Healthcare,,,,,,,,,65,,,65,,,,157500,,SLRC,2023-11-07
+"Delphinus Medical Technologies, Inc.",Other Equity,Healthcare,,,,,,,,,74,87,,74,,,,444388,,SLRC,2023-11-07
+Essence Group Holdings Corp.,Other Equity,Healthcare,,,,,,,,,129,342,,129,,,,260000,,SLRC,2023-11-07
+KBH Topco LLC,Other Equity,Other,,,,,,,,,136596,146000,,136596,,,,73500000,,SLRC,2023-11-07
+"Meditrina, Inc.",Other Equity,Healthcare,,,,,,,,,23,20,,23,,,,29366,,SLRC,2023-11-07
+"NSPC Holdings, LLC",Other Equity,Healthcare,,,,,,,,,657,273,,657,,,,207043,,SLRC,2023-11-07
+"RD Holdco, Inc.",Other Equity,Consumer & Retail,,,,,,,,,15683,,,15683,,,,231177,,SLRC,2023-11-07
+"RD Holdco, Inc.",Other Equity,Consumer & Retail,,,,,,,,,5216,,,5216,,,,522,,SLRC,2023-11-07
+"RD Holdco, Inc.",Other Equity,Consumer & Retail,,,,,,,,,381,,,381,,,,30370,,SLRC,2023-11-07
+"Senseonics Holdings, Inc.",Other Equity,Healthcare,,,,,,,,,235,283,,235,,,,469353,,SLRC,2023-11-07
+"SLR-AMI Topco Blocker, LLC",Other Equity,Consumer & Retail,,,,,,,,,19880,15100,,19880,,,,,,SLRC,2023-11-07
+SLR Business Credit,Other Equity,Financial Services,,,,,,,,,81583,90370,,81583,,,,100,,SLRC,2023-11-07
+SLR Credit Solutions,Other Equity,Financial Services,,,,,,,,,280737,281000,,280737,,,,280303,,SLRC,2023-11-07
+SLR Healthcare ABL,Other Equity,Financial Services,,,,,,,,,34335,34850,,34335,,,,32839,,SLRC,2023-11-07
+SLR Senior Lending Program LLC,Other Equity,Financial Services,,,,,,,,,28750,29277,,28750,,,,,,SLRC,2023-11-07
+"Vapotherm, Inc.",Other Equity,Healthcare,,,,,,,,,290,28,,290,,,,48969,,SLRC,2023-11-07
+Venus Concept Ltd.,Other Equity,Healthcare,,,,,,,,,152,,,152,,,,2230,,SLRC,2023-11-07
+"Vertos Medical, Inc.",Other Equity,Healthcare,,,,,,,,,51,55,,51,,,,161761,,SLRC,2023-11-07
+Liabilities in Excess of Other Assets,Other Equity,Liabilities in Excess of Other Assets - (154.1%),,,,,,,,,,,,,,,,154.1,,SLRC,2023-11-07
+Aero Operating LLC,Other Debt,Business Services,9.64%,,,,,,,2264,2262,2262,,2262,,,,,,SLRC,2023-11-07
+"AFG Dallas III, LLC",Other Debt,Consumer & Retail,10.00%,,,,,,,1036,1036,1036,,1036,,,,,,SLRC,2023-11-07
+Air Methods Corp.,Other Debt,Transportation & Logistics,7.13%,,,,,,,3600,3660,3600,,3660,,,,,,SLRC,2023-11-07
+"AmeraMex International, Inc.",Other Debt,Business Services,10.00%,,,,,,,1059,1059,1069,,1059,,,,,,SLRC,2023-11-07
+"Bazzini, LLC",Other Debt,Food & Beverage,10.46%,,,,,,,2365,2440,2365,,2440,,,,,,SLRC,2023-11-07
+Boart Longyear Company,Other Debt,Chemicals & Materials,10.44%,,,,,,,4568,4568,4568,,4568,,,,,,SLRC,2023-11-07
+"Bowman Energy Solutions, LLC",Other Debt,Business Services,7.42%,,,,,,,153,153,153,,153,,,,,,SLRC,2023-11-07
+C-Port/Stone LLC,Other Debt,Energy,8.54%,,,,,,,6708,6514,6507,,6514,,,,,,SLRC,2023-11-07
+"Capital City Jet Center, Inc.",Other Debt,Transportation & Logistics,10.00%,,,,,,,2241,2241,2214,,2241,,,,,,SLRC,2023-11-07
+"Champion Air, LLC",Other Debt,Transportation & Logistics,10.00%,,,,,,,1055,1055,1055,,1055,,,,,,SLRC,2023-11-07
+"CKD Holdings, Inc.",Other Debt,Transportation & Logistics,8.60%,,,,,,,3690,3690,3690,,3690,,,,,,SLRC,2023-11-07
+"Clubcorp Holdings, Inc.",Other Debt,Food & Beverage,13.01%,,,,,,,6539,6539,6539,,6539,,,,,,SLRC,2023-11-07
+Dongwon Autopart Technology Inc.,Other Debt,Automotive,7.96%,,,,,,,1828,1849,1828,,1849,,,,,,SLRC,2023-11-07
+"Drillers Choice, Inc.",Other Debt,Business Services,8.00%,,,,,,,1589,1589,1589,,1589,,,,,,SLRC,2023-11-07
+"EasyPak, LLC",Other Debt,Containers & Packaging,9.01%,,,,,,,276,276,276,,276,,,,,,SLRC,2023-11-07
+"Energy Drilling Services, LLC",Other Debt,Consumer & Retail,9.16%,,,,,,,1321,1321,1295,,1321,,,,,,SLRC,2023-11-07
+"Environmental Protection & Improvement Company, LLC",Other Debt,Transportation & Logistics,8.25%,,,,,,,5270,5300,5270,,5300,,,,,,SLRC,2023-11-07
+"Equipment Operating Leases, LLC",Other Debt,Industrials,8.37%,,,,,,,3837,3837,3741,,3837,,,,,,SLRC,2023-11-07
+"First American Commercial Bancorp, Inc.",Other Debt,Financial Services,9.02%,,,,,,,2938,2941,2938,,2941,,,,,,SLRC,2023-11-07
+"First National Capital, LLC",Other Debt,Financial Services,9.00%,,,,,,,7116,7116,7116,,7116,,,,,,SLRC,2023-11-07
+Freightsol LLC,Other Debt,Transportation & Logistics,12.89%,,,,,,,779,784,779,,784,,,,,,SLRC,2023-11-07
+"Garda CL Technical Services, Inc.",Other Debt,Business Services,8.77%,,,,,,,469,469,468,,469,,,,,,SLRC,2023-11-07
+"Georgia Jet, Inc.",Other Debt,Transportation & Logistics,8.00%,,,,,,,425,425,425,,425,,,,,,SLRC,2023-11-07
+GMT Corp.,Other Debt,Industrials,10.71%,,,,,,,4801,4806,4801,,4806,,,,,,SLRC,2023-11-07
+"Hawkeye Contracting Company, LLC",Other Debt,Industrials,10.50%,,,,,,,997,997,997,,997,,,,,,SLRC,2023-11-07
+HTI Logistics Corp.,Other Debt,Business Services,9.94%,,,,,,,290,290,283,,290,,,,,,SLRC,2023-11-07
+"International Automotive Components Group, North America, Inc.",Other Debt,Automotive,7.95%,,,,,,,6072,6109,5951,,6109,,,,,,SLRC,2023-11-07
+"Kool Pak, LLC",Other Debt,Transportation & Logistics,8.58%,,,,,,,194,194,194,,194,,,,,,SLRC,2023-11-07
+"Loc Performance Products, LLC",Other Debt,Industrials,10.50%,,,,,,,767,767,767,,767,,,,,,SLRC,2023-11-07
+"Lux Credit Consultants, LLC",Other Debt,Transportation & Logistics,12.09%,,,,,,,16411,16411,16411,,16411,,,,,,SLRC,2023-11-07
+"Lux Vending, LLC",Other Debt,Financial Services,13.26%,,,,,,,1638,1663,1638,,1663,,,,,,SLRC,2023-11-07
+"Mountain Air Helicopters, Inc.",Other Debt,Business Services,10.00%,,,,,,,369,368,369,,368,,,,,,SLRC,2023-11-07
+"Ozzies, Inc.",Other Debt,Business Services,10.72%,,,,,,,2005,2072,2005,,2072,,,,,,SLRC,2023-11-07
+PCX Aerostructures LLC,Other Debt,Aerospace & Defense,9.32%,,,,,,,2658,2658,2658,,2658,,,,,,SLRC,2023-11-07
+Rane Light Metal Castings Inc.,Other Debt,Industrials,10.00%,,,,,,,159,159,159,,159,,,,,,SLRC,2023-11-07
+"Rango, Inc.",Other Debt,Business Services,9.79%,,,,,,,1940,1960,1904,,1960,,,,,,SLRC,2023-11-07
+"Royal Coach Lines, Inc.",Other Debt,Transportation & Logistics,9.56%,,,,,,,849,849,775,,849,,,,,,SLRC,2023-11-07
+Royal Express Inc.,Other Debt,Transportation & Logistics,9.53%,,,,,,,428,431,428,,431,,,,,,SLRC,2023-11-07
+Rotten Rock Hardscaping & Tree Service,Other Debt,Consumer & Retail,8.21%,,,,,,,245,245,245,,245,,,,,,SLRC,2023-11-07
+Signet Marine Corp.,Other Debt,Transportation & Logistics,8.50%,,,,,,,14102,14152,14102,,14152,,,,,,SLRC,2023-11-07
+SLR Equipment Finance,Other Debt,Financial Services,8.50%,,,,,,,5000,5000,5000,,5000,,,,,,SLRC,2023-11-07
+"Smiley Lifting Solutions, LLC",Other Debt,Business Services,8.28%,,,,,,,4139,4139,4139,,4139,,,,,,SLRC,2023-11-07
+"ST Coaches, LLC",Other Debt,Transportation & Logistics,8.58%,,,,,,,1521,1521,1459,,1521,,,,,,SLRC,2023-11-07
+Star Coaches Inc.,Other Debt,Transportation & Logistics,8.42%,,,,,,,2887,2887,2591,,2887,,,,,,SLRC,2023-11-07
+"Superior Transportation, Inc.",Other Debt,Transportation & Logistics,10.63%,,,,,,,3369,3369,3369,,3369,,,,,,SLRC,2023-11-07
+"The Smedley Company & Smedley Services, Inc.",Other Debt,Business Services,4.07%,,,,,,,1706,1706,1706,,1706,,,,,,SLRC,2023-11-07
+"Trinity Equipment Rentals, Inc.",Other Debt,Business Services,8.75%,,,,,,,577,577,577,,577,,,,,,SLRC,2023-11-07
+"U.S. Crane & Rigging, LLC",Other Debt,Business Services,10.92%,,,,,,,2005,2005,2005,,2005,,,,,,SLRC,2023-11-07
+"Up Trucking Services, LLC",Other Debt,Transportation & Logistics,11.21%,,,,,,,469,473,469,,473,,,,,,SLRC,2023-11-07
+"Wind River Environmental, LLC",Other Debt,Consumer & Retail,10.00%,,,,,,,604,605,604,,605,,,,,,SLRC,2023-11-07
+"Womble Company, Inc.",Other Debt,Energy,9.11%,,,,,,,386,386,371,,386,,,,,,SLRC,2023-11-07
+"Worldwide Flight Services, Inc.",Other Debt,Transportation & Logistics,9.36%,,,,,,,304,308,304,,308,,,,,,SLRC,2023-11-07
+Zamborelli Enterprises Pacific Souther Foundation,Other Debt,Consumer & Retail,8.91%,,,,,,,707,714,707,,714,,,,,,SLRC,2023-11-07
+SLR Equipment Finance Equity Interests,Other Debt,Financial Services,,,,,,,,200,145000,120820,,145000,,,,,,SLRC,2023-11-07
+"Centrexion Therapeutics, Inc.",Other Equity,Healthcare,,,,,,,,,136,82,,136,,,,289102,,SLRC,2023-11-07
+"Delphinus Medical Technologies, Inc.",Other Equity,Healthcare,,,,,,,,,74,103,,74,,,,444388,,SLRC,2023-11-07
+Essence Group Holdings Corp.,Other Equity,Healthcare,,,,,,,,,129,366,,129,,,,260000,,SLRC,2023-11-07
+KBH Topco LLC,Other Equity,Other,,,,,,,,,136596,148444,,136596,,,,73500000,,SLRC,2023-11-07
+"Meditrina, Inc.",Other Equity,Healthcare,,,,,,,,,23,23,,23,,,,29366,,SLRC,2023-11-07
+"Senseonics Holdings, Inc.",Other Equity,Healthcare,,,,,,,,,235,483,,235,,,,469353,,SLRC,2023-11-07
+SLR Business Credit,Other Equity,Financial Services,,,,,,,,,81583,89370,,81583,,,,100,,SLRC,2023-11-07
+SLR Credit Solutions,Other Equity,Financial Services,,,,,,,,,280737,288760,,280737,,,,280303,,SLRC,2023-11-07
+SLR Healthcare ABL,Other Equity,Financial Services,,,,,,,,,34335,34350,,34335,,,,32839,,SLRC,2023-11-07
+SLR Senior Lending Program LLC,Other Equity,Financial Services,,,,,,,,,9500,9426,,9500,,,,,,SLRC,2023-11-07
+"Spectrum Pharmaceuticals, Inc.",Other Equity,Healthcare,,,,,,,,,51,15,,51,,,,159470,,SLRC,2023-11-07
+"Vapotherm, Inc.",Other Equity,Healthcare,,,,,,,,,210,87,,210,,,,36996,,SLRC,2023-11-07
+Venus Concept Ltd.,Other Equity,Healthcare,,,,,,,,,152,,,152,,,,33430,,SLRC,2023-11-07
+Total Common Equity/Equity Interests/Warrants,Other Equity,Other,,,,,,,,,565263,571509,,565263,,,,,,SLRC,2023-11-07

@@ -1,495 +1,729 @@
-company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
-Ambient Photonics Inc.,co_9624908580dd,First Lien,Artificial Intelligence & Automation,4%,,Prime,6%,9.5%,2022-07-28,2025-07-01,2006,2145,2160,,2145,,,,,,TRIN,2024-05-01
-Ambient Photonics Inc.,co_9624908580dd,First Lien,Artificial Intelligence & Automation,4%,,Prime,6%,9.5%,2022-11-17,2025-05-01,2210,2352,2234,,2352,,,,,,TRIN,2024-05-01
-Ambient Photonics Inc.,co_9624908580dd,First Lien,Artificial Intelligence & Automation,4%,,Prime,6%,9.5%,2022-12-20,2025-06-01,375,396,379,,396,,,,,,TRIN,2024-05-01
-United StatesAutomation & Internet of Things Ambient Photonics Inc.,co_5c1d6df9a3a3,Other Equity,Software & Technology,,,,,,,,,,,,,,,,,,TRIN,2024-05-01
-Total Ambient Photonics Inc.,co_6a8da743db04,First Lien,Artificial Intelligence & Automation,,,,,,,,4591,4893,4773,,4893,,,,,,TRIN,2024-05-01
-Applied Digital Corp.,co_b27405a4a68c,First Lien,Applied Digital Corporation,,,SOFR,0%,0%,2024-03-13,2025-10-01,12467,12465,12465,,12465,,,,,,TRIN,2024-05-01
-Applied Digital Corp.,co_b27405a4a68c,First Lien,Applied Digital Corporation,19%,,,,,2024-03-25,2026-03-01,21287,21286,21286,,21286,,,,,,TRIN,2024-05-01
-Total Applied Digital Corp.,co_77ff1a0dd9a9,First Lien,Other,,,,,,,,33754,33751,33751,,33751,,,,,,TRIN,2024-05-01
-Rigetti & Co Inc.,co_65da78d1d4ef,First Lien,Artificial Intelligence & Automation,2.8%,,Prime,7.5%,11%,2021-03-10,2025-04-01,5768,6048,6041,,6048,,,,,,TRIN,2024-05-01
-Rigetti & Co Inc.,co_65da78d1d4ef,First Lien,Artificial Intelligence & Automation,2.8%,,Prime,7.5%,11%,2021-05-18,2025-06-01,4387,4561,4552,,4561,,,,,,TRIN,2024-05-01
-Rigetti & Co Inc.,co_65da78d1d4ef,First Lien,Artificial Intelligence & Automation,2.8%,,Prime,7.5%,11%,2021-11-10,2025-12-01,5182,5298,5277,,5298,,,,,,TRIN,2024-05-01
-Rigetti & Co Inc.,co_65da78d1d4ef,First Lien,Artificial Intelligence & Automation,2.8%,,Prime,7.5%,11%,2022-01-27,2026-02-01,4004,4100,4085,,4100,,,,,,TRIN,2024-05-01
-Total Rigetti & Co Inc.,co_8e2240a19f85,First Lien,Artificial Intelligence & Automation,,,,,,,,19341,20007,19955,,20007,,,,,,TRIN,2024-05-01
-Stratifyd Inc.,co_8ac7a1b905ff,First Lien,Artificial Intelligence & Automation,6.8%,,Prime,7.8%,11%,2021-09-03,2026-07-01,4457,4631,3714,,4631,,,,,,TRIN,2024-05-01
-Greenlight Biosciences Inc.,co_96ed9fd79126,First Lien,Healthcare,8%,,,,,2021-06-17,2024-07-01,279,476,563,,476,,,,,,TRIN,2024-05-01
-Greenlight Biosciences Inc.,co_96ed9fd79126,First Lien,Healthcare,8%,,,,,2021-08-31,2024-09-01,180,251,321,,251,,,,,,TRIN,2024-05-01
-Securities- United States Biotechnology Greenlight Biosciences Inc.,co_ff14c5a813b7,Other Equity,Healthcare,8%,,,,,2021-08-31,2024-09-01,104,145,185,,145,,,,,,TRIN,2024-05-01
-Total Greenlight Biosciences Inc.,co_e409c0574a77,First Lien,Healthcare,,,,,,,,563,872,1069,,872,,,,,,TRIN,2024-05-01
-Pendulum Therapeutics Inc.,co_bf3271707d8e,First Lien,Healthcare,3%,,Prime,6.8%,10%,2021-12-31,2026-07-01,4292,4448,4400,,4448,,,,,,TRIN,2024-05-01
-Pendulum Therapeutics Inc.,co_bf3271707d8e,First Lien,Healthcare,3%,,Prime,6.8%,10%,2022-02-28,2026-07-01,4581,4737,4695,,4737,,,,,,TRIN,2024-05-01
-Pendulum Therapeutics Inc.,co_bf3271707d8e,First Lien,Healthcare,3%,,Prime,6.8%,10%,2022-03-30,2026-07-01,4722,4878,4839,,4878,,,,,,TRIN,2024-05-01
-Pendulum Therapeutics Inc.,co_bf3271707d8e,First Lien,Healthcare,3%,,Prime,6.8%,10%,2022-05-06,2026-07-01,5000,5156,5122,,5156,,,,,,TRIN,2024-05-01
-Pendulum Therapeutics Inc.,co_bf3271707d8e,First Lien,Healthcare,3%,,Prime,6.8%,10%,2022-06-17,2026-07-01,5000,5156,5122,,5156,,,,,,TRIN,2024-05-01
-Pendulum Therapeutics Inc.,co_bf3271707d8e,First Lien,Healthcare,4%,,Prime,6.8%,10%,2024-02-01,2026-07-01,1405,775,775,,775,,,,,,TRIN,2024-05-01
-Total Pendulum Therapeutics Inc.,co_398ca4f946b6,First Lien,Healthcare,,,,,,,,25000,25150,24953,,25150,,,,,,TRIN,2024-05-01
-Taysha Gene Therapies Inc.,co_8184b61fb6ea,First Lien,Healthcare,5%,,Prime,4.5%,12.8%,2023-11-13,2028-12-01,30000,29858,30585,,29858,,,,,,TRIN,2024-05-01
-Vertical Communications Inc.,co_6d0e5270c250,First Lien,Other,23.8%,,Prime,4%,11%,2021-08-23,2026-11-01,12600,15322,15322,,15322,,,,,,TRIN,2024-05-01
-viaPhoton Inc.,co_819d98216169,First Lien,Other,5%,,Prime,6.6%,9.9%,2022-03-31,2027-04-01,15000,15384,14391,,15384,,,,,,TRIN,2024-05-01
-Eterneva Inc.,co_75e5e3e8ec3e,First Lien,Consumer & Retail,11.5%,,,,,2021-11-24,2025-12-01,259,312,309,,312,,,,,,TRIN,2024-05-01
-Eterneva Inc.,co_75e5e3e8ec3e,First Lien,Consumer & Retail,11.5%,,,,,2022-03-16,2026-04-01,416,480,473,,480,,,,,,TRIN,2024-05-01
-Eterneva Inc.,co_75e5e3e8ec3e,First Lien,Consumer & Retail,11.5%,,,,,2022-06-17,2026-07-01,1206,1349,1311,,1349,,,,,,TRIN,2024-05-01
-Total Eterneva Inc.,co_d0ae3c334110,First Lien,Consumer & Retail,,,,,,,,1881,2141,2093,,2141,,,,,,TRIN,2024-05-01
-Happiest Baby Inc.,co_a17ad029e734,First Lien,Consumer & Retail,9.5%,,,,,2021-01-22,2024-05-01,29,125,153,,125,,,,,,TRIN,2024-05-01
-Molekule Inc.,co_69663b22ad53,First Lien,Consumer & Retail,10%,,,,,2020-06-19,2024-12-31,312,595,400,,595,,,,,,TRIN,2024-05-01
-Molekule Inc.,co_69663b22ad53,First Lien,Consumer & Retail,10%,,,,,2020-09-29,2024-12-31,273,347,350,,347,,,,,,TRIN,2024-05-01
-Molekule Inc.,co_69663b22ad53,First Lien,Consumer & Retail,10%,,,,,2020-12-18,2024-12-31,473,584,607,,584,,,,,,TRIN,2024-05-01
-Molekule Inc.,co_69663b22ad53,First Lien,Consumer & Retail,10%,,,,,2021-08-25,2024-12-31,385,454,495,,454,,,,,,TRIN,2024-05-01
-Total Molekule Inc.,co_7d2aea5c418a,First Lien,Consumer & Retail,,,,,,,,1443,1980,1852,,1980,,,,,,TRIN,2024-05-01
-Ogee Inc.,co_5ec9eeb8280a,First Lien,Consumer & Retail,3.8%,,Prime,5.8%,12%,2023-02-14,2027-03-01,5000,4996,4989,,4996,,,,,,TRIN,2024-05-01
-Ogee Inc.,co_5ec9eeb8280a,First Lien,Consumer & Retail,3.8%,,Prime,5.8%,12%,2023-09-29,2027-03-01,5000,4948,5028,,4948,,,,,,TRIN,2024-05-01
-Total Ogee Inc.,co_6c79912787ea,First Lien,Consumer & Retail,,,,,,,,10000,9944,10017,,9944,,,,,,TRIN,2024-05-01
-Portofino Labs Inc.,co_fe73f96fd775,First Lien,Consumer & Retail,4%,,Prime,8.3%,11.5%,2021-04-01,2025-11-01,1488,1567,1551,,1567,,,,,,TRIN,2024-05-01
-Quip NYC Inc.,co_c670c191758a,First Lien,Consumer & Retail,3%,,Prime,8%,11.3%,2021-03-09,2026-04-01,12153,12503,12586,,12503,,,,,,TRIN,2024-05-01
-Quip NYC Inc.,co_c670c191758a,First Lien,Consumer & Retail,3%,,Prime,8%,11.3%,2022-02-10,2026-04-01,1736,1792,1808,,1792,,,,,,TRIN,2024-05-01
-Total Quip NYC Inc.,co_1ad442151b8c,First Lien,Consumer & Retail,,,,,,,,13889,14295,14394,,14295,,,,,,TRIN,2024-05-01
-Rinse Inc.,co_beb74d9165de,First Lien,Consumer & Retail,3.8%,,Prime,8%,11.3%,2022-05-10,2027-06-01,4730,4780,4838,,4780,,,,,,TRIN,2024-05-01
-Rinse Inc.,co_beb74d9165de,First Lien,Consumer & Retail,3.8%,,Prime,8%,11.3%,2023-09-22,2028-10-01,4000,3944,4041,,3944,,,,,,TRIN,2024-05-01
-Total Rinse Inc.,co_b6b58e459780,First Lien,Consumer & Retail,,,,,,,,8730,8724,8879,,8724,,,,,,TRIN,2024-05-01
-SI Tickets Inc.,co_72a82baf5906,First Lien,Consumer & Retail,3%,,Prime,8.3%,11.5%,2022-05-11,2026-09-01,2598,2624,2486,,2624,,,,,,TRIN,2024-05-01
-UnTuckIt Inc.,co_51f11502c8b7,First Lien,Consumer & Retail,3.8%,,,,,2020-01-16,2025-06-01,6908,7663,7488,,7663,,,,,,TRIN,2024-05-01
-VitaCup Inc.,co_8992c892963a,First Lien,Consumer & Retail,5%,,Prime,7.5%,11.5%,2021-06-23,2026-01-01,6000,5871,5597,,5871,,,,,,TRIN,2024-05-01
-Whoop Inc.,co_9f9b312199ba,First Lien,Consumer & Retail,2.5%,,Prime,5.3%,13%,2023-05-17,2028-06-01,23625,23194,23303,,23194,,,,,,TRIN,2024-05-01
-Whoop Inc.,co_9f9b312199ba,First Lien,Consumer & Retail,2.5%,,Prime,5.3%,13%,2024-03-01,2029-04-01,10125,9422,9422,,9422,,,,,,TRIN,2024-05-01
-Total Whoop Inc.,co_e9b7f1677674,First Lien,Consumer & Retail,,,,,,,,33750,32616,32725,,32616,,,,,,TRIN,2024-05-01
-Diagnostics & Tools Metabolon Inc.,co_052e0482d089,First Lien,,4.8%,,Prime,4.5%,11.9%,2024-03-28,2029-04-01,42500,41437,41437,,41437,,,,,,TRIN,2024-05-01
-Diagnostics & Tools,co_420680447216,First Lien,Diagnostics & Tools,,,,,,,,42500,41437,41437,2.9%,41437,,,,,,TRIN,2024-05-01
-Cleanspark Inc.,co_18c409fcb135,First Lien,Software & Technology,5%,,,,,2022-04-22,2025-05-01,7891,8748,8578,,8748,,,,,,TRIN,2024-05-01
-Digital Assets Technology and Services,co_89e95b7d73b5,First Lien,Software & Technology,,,,,,,,7891,8748,8578,0.6%,8748,,,,,,TRIN,2024-05-01
-Edblox Inc.Type of Investment Secured Loan,co_10817e43ae58,First Lien,Education,2.5%,,Prime,4.5%,11.8%,2024-03-19,2029-04-01,25000,24506,24506,,24506,,,,,,TRIN,2024-05-01
-Medical Sales Training Holding Company,co_7ae1cfd86cb8,First Lien,Education,6.3%,,Prime,8.8%,12%,2021-03-18,2025-04-01,5175,5505,5196,,5505,,,,,,TRIN,2024-05-01
-Medical Sales Training Holding Company,co_7ae1cfd86cb8,First Lien,Education,6.3%,,Prime,8.8%,12%,2021-07-21,2025-08-01,1825,1933,1800,,1933,,,,,,TRIN,2024-05-01
-Total Medical Sales Training Holding Company,co_164692bf738b,First Lien,Education,,,,,,,,7000,7438,6996,,7438,,,,,,TRIN,2024-05-01
-Yellowbrick Learning Inc.,co_b000faecaf3a,First Lien,Education,5%,,,,,2021-02-01,2026-03-01,7500,7875,5911,,7875,,,,,,TRIN,2024-05-01
-Yellowbrick Learning Inc.,co_b000faecaf3a,First Lien,Education,5%,,,,,2021-08-10,2026-03-01,2500,2625,1973,,2625,,,,,,TRIN,2024-05-01
-Total Yellowbrick Learning Inc.,co_5c0f280ca727,First Lien,Education,,,,,,,,10000,10500,7884,,10500,,,,,,TRIN,2024-05-01
-Bestow Inc.,co_85d6a65e161a,First Lien,Insurance,1.5%,,Prime,6.5%,10%,2022-04-25,2027-05-01,25000,25156,25062,,25156,,,,,,TRIN,2024-05-01
-Bestow Inc.,co_85d6a65e161a,First Lien,Insurance,1.5%,,Prime,6.5%,10%,2022-05-12,2027-06-01,15000,15088,15125,,15088,,,,,,TRIN,2024-05-01
-Bestow Inc.,co_85d6a65e161a,First Lien,Insurance,,,,,,,2027-05-01,40000,40244,40187,,40244,,,,,,TRIN,2024-05-01
-Cherry Technologies Inc.,co_f5d80d24c7b1,First Lien,Insurance,2%,1%,Prime,4.5%,12%,2024-03-29,2029-04-01,20000,19803,19803,,19803,,,,,,TRIN,2024-05-01
-Empower Financial Inc.,co_f9a166ff74d5,First Lien,Insurance,3.8%,,Prime,4.8%,11.5%,2023-10-13,2028-05-01,12000,11741,12152,,11741,,,,,,TRIN,2024-05-01
-Empower Financial Inc.,co_f9a166ff74d5,First Lien,Insurance,3.8%,,Prime,4.8%,11.5%,2024-01-05,2028-05-01,3000,2849,2849,,2849,,,,,,TRIN,2024-05-01
-Empower Financial Inc.,co_f9a166ff74d5,First Lien,Insurance,3.8%,,Prime,4.8%,11.5%,2024-02-08,2028-05-01,4500,4268,4268,,4268,,,,,,TRIN,2024-05-01
-Empower Financial Inc.,co_f9a166ff74d5,First Lien,Insurance,,,,,,,2028-05-01,19500,18858,19269,,18858,,,,,,TRIN,2024-05-01
-Eqis Capital Management Inc.,co_ac3be9f3c3e6,First Lien,Insurance,3%,,Prime,7.5%,10.8%,2022-06-15,2026-07-01,6809,7019,6879,,7019,,,,,,TRIN,2024-05-01
-Kafene Inc.,co_1ffa5bb28852,First Lien,Insurance,1%,,Prime,4%,12%,2024-01-05,2029-02-01,12500,12340,12340,,12340,,,,,,TRIN,2024-05-01
-Openly Holdings Corp.,co_7f016f63dbf3,First Lien,Insurance,2.8%,,Prime,6.3%,10.5%,2022-11-18,2027-12-01,3125,3147,3160,,3147,,,,,,TRIN,2024-05-01
-Openly Holdings Corp.,co_7f016f63dbf3,First Lien,Insurance,2.8%,,Prime,6.3%,10.5%,2023-01-31,2027-12-01,6250,6284,6365,,6284,,,,,,TRIN,2024-05-01
-Openly Holdings Corp.,co_7f016f63dbf3,First Lien,Insurance,2.8%,,Prime,6.3%,10.5%,2023-06-22,2027-12-01,15625,15672,16111,,15672,,,,,,TRIN,2024-05-01
-Openly Holdings Corp.,co_7f016f63dbf3,First Lien,Insurance,,,,,,,2027-12-01,25000,25103,25636,,25103,,,,,,TRIN,2024-05-01
-Parafin SPV 2 LLC,co_228eb0317fe3,First Lien,Insurance,,,SOFR,10.8%,12.8%,2024-02-22,2026-12-21,8042,7768,7768,,7768,,,,,,TRIN,2024-05-01
-Petal Card Inc.,co_2a6283713f4a,First Lien,Insurance,11%,1%,Prime,7.5%,11%,2020-01-16,2026-07-01,10804,10064,9089,,10064,,,,,,TRIN,2024-05-01
-Petal Card Inc.,co_2a6283713f4a,First Lien,Insurance,11%,1%,Prime,7.5%,11%,2021-08-06,2026-07-01,7563,7045,6362,,7045,,,,,,TRIN,2024-05-01
-Petal Card Inc.,co_2a6283713f4a,First Lien,Insurance,,4.25%,Prime,7.5%,11.75%,2023-07-27,2026-08-01,21939,18706,16750,,18706,,,,,,TRIN,2024-05-01
-Petal Card Inc.,co_2a6283713f4a,First Lien,Insurance,,,,,,,2026-07-01,40306,35815,32201,,35815,,,,,,TRIN,2024-05-01
-Slope Tech Inc.,co_bc2014510273,Other Equity,Insurance,,,SOFR,11.8%,11.8%,2022-10-05,2025-03-14,3433,3298,3482,,3298,,,,,,TRIN,2024-05-01
-ZenDrive Inc.,co_c6dedbc61432,First Lien,Insurance,3%,,Prime,7%,10.3%,2021-07-16,2026-08-01,12599,12879,13312,,12879,,,,,,TRIN,2024-05-01
-Athletic Brewing Company LLC,co_2711aaa7d673,First Lien,Food & Beverage,7%,,,,,2021-12-07,2026-09-01,19866,20611,20040,,20611,,,,,,TRIN,2024-05-01
-Athletic Brewing Company LLC,co_2711aaa7d673,First Lien,Food & Beverage,7%,,,,,2022-03-16,2026-09-01,4962,5134,5002,,5134,,,,,,TRIN,2024-05-01
-Athletic Brewing Company LLC,co_2711aaa7d673,First Lien,Food & Beverage,8%,,,,,2023-12-15,2028-01-01,5675,5721,6019,,5721,,,,,,TRIN,2024-05-01
-Athletic Brewing Company LLC,co_2711aaa7d673,First Lien,Food & Beverage,,,,,,,2026-09-01,30503,31466,31061,,31466,,,,,,TRIN,2024-05-01
-Bowery Farming Inc.,co_3daee0d11817,First Lien,Food & Beverage,,,SOFR,10%,1%,2021-09-10,2026-09-10,8660,7947,3810,,7947,,,,,,TRIN,2024-05-01
-Daring Foods Inc.,co_77206702b885,First Lien,Food & Beverage,7.5%,,,,,2021-04-08,2024-05-01,16,53,69,,53,,,,,,TRIN,2024-05-01
-Daring Foods Inc.,co_77206702b885,First Lien,Food & Beverage,7.5%,,,,,2021-08-31,2024-09-01,95,140,138,,140,,,,,,TRIN,2024-05-01
-Daring Foods Inc.,co_77206702b885,First Lien,Food & Beverage,7.5%,,,,,2021-11-01,2024-12-01,262,337,333,,337,,,,,,TRIN,2024-05-01
-Daring Foods Inc.,co_77206702b885,First Lien,Food & Beverage,7.5%,,,,,2022-03-08,2025-04-01,831,979,961,,979,,,,,,TRIN,2024-05-01
-Daring Foods Inc.,co_77206702b885,First Lien,Food & Beverage,7.5%,,,,,2022-04-29,2025-05-01,395,458,450,,458,,,,,,TRIN,2024-05-01
-Daring Foods Inc.,co_77206702b885,First Lien,Food & Beverage,7.5%,,,,,2022-07-06,2025-08-01,218,245,241,,245,,,,,,TRIN,2024-05-01
-Daring Foods Inc.,co_77206702b885,First Lien,Food & Beverage,7.5%,,,,,2022-08-25,2025-09-01,543,603,596,,603,,,,,,TRIN,2024-05-01
-Daring Foods Inc.,co_77206702b885,First Lien,Food & Beverage,,,,,,,2024-05-01,2360,2815,2788,,2815,,,,,,TRIN,2024-05-01
-DrinkPak LLC,co_213d95aa9b65,First Lien,Food & Beverage,7%,,,,,2023-02-17,2026-09-01,11422,11942,11941,,11942,,,,,,TRIN,2024-05-01
-Emergy Inc.,co_6bd270587e1a,First Lien,Food & Beverage,8.5%,,,,,2021-01-08,2024-05-01,34,84,66,,84,,,,,,TRIN,2024-05-01
-Emergy Inc.,co_6bd270587e1a,First Lien,Food & Beverage,11.5%,,,,,2021-12-15,2025-07-01,4671,5658,4795,,5658,,,,,,TRIN,2024-05-01
-Emergy Inc.,co_6bd270587e1a,First Lien,Food & Beverage,11.5%,,,,,2022-12-13,2026-07-01,7716,8269,7377,,8269,,,,,,TRIN,2024-05-01
-Emergy Inc.,co_6bd270587e1a,First Lien,Food & Beverage,,,,,,,2024-05-01,12421,14011,12238,,14011,,,,,,TRIN,2024-05-01
-Intelligent Brands Inc.,co_1fdbd3479e8a,First Lien,Food & Beverage,5.8%,,Prime,9.5%,11.8%,2020-12-31,2024-06-30,9412,10495,10808,,10495,,,,,,TRIN,2024-05-01
-The Fynder Group Inc.,co_8b8ab0bb9f9e,First Lien,Food & Beverage,10%,,,,,2020-10-14,2024-05-01,19,81,80,,81,,,,,,TRIN,2024-05-01
-The Fynder Group Inc.,co_8b8ab0bb9f9e,First Lien,Food & Beverage,10%,,,,,2022-03-31,2025-10-01,1387,1586,1455,,1586,,,,,,TRIN,2024-05-01
-The Fynder Group Inc.,co_8b8ab0bb9f9e,First Lien,Food & Beverage,,,,,,,2024-05-01,1406,1667,1535,,1667,,,,,,TRIN,2024-05-01
-Food and Agriculture Technologies,co_2c32465f3b99,First Lien,Food & Beverage,,,,,,,,76184,80343,74181,,80343,,,,,,TRIN,2024-05-01
-Bolb Inc.,co_6db6891ecbc0,First Lien,Software & Technology,6%,,,,,2021-10-12,2024-11-01,374,475,466,,475,,,,,,TRIN,2024-05-01
-Commonwealth Fusion Systems LLC,co_44d744bf2ea9,First Lien,Software & Technology,8.5%,,,,,2021-09-10,2024-10-01,437,631,621,,631,,,,,,TRIN,2024-05-01
-Commonwealth Fusion Systems LLC,co_44d744bf2ea9,First Lien,Software & Technology,8.5%,,,,,2021-10-20,2024-11-01,147,203,199,,203,,,,,,TRIN,2024-05-01
-Commonwealth Fusion Systems LLC,co_44d744bf2ea9,First Lien,Software & Technology,10%,,,,,2023-06-16,2030-07-01,5052,5107,5323,,5107,,,,,,TRIN,2024-05-01
-Commonwealth Fusion Systems LLC,co_44d744bf2ea9,First Lien,Software & Technology,,,,,,,2024-10-01,5636,5941,6143,,5941,,,,,,TRIN,2024-05-01
-Crusoe Energy Systems LLC,co_e7c94b2bf355,First Lien,Software & Technology,12.7%,,,,,2024-03-01,2029-03-01,14000,13862,13862,,13862,,,,,,TRIN,2024-05-01
-Dandelion Energy Inc.,co_867cdd89d577,First Lien,Software & Technology,12.5%,,,,,2020-10-27,2024-11-01,95,164,158,,164,,,,,,TRIN,2024-05-01
-Dandelion Energy Inc.,co_867cdd89d577,First Lien,Software & Technology,12.5%,,,,,2020-11-19,2024-12-01,132,216,208,,216,,,,,,TRIN,2024-05-01
-Dandelion Energy Inc.,co_867cdd89d577,First Lien,Software & Technology,12.5%,,,,,2020-12-29,2025-01-01,144,223,219,,223,,,,,,TRIN,2024-05-01
-Dandelion Energy Inc.,co_867cdd89d577,First Lien,Software & Technology,12.5%,,,,,2021-03-25,2025-04-01,420,594,566,,594,,,,,,TRIN,2024-05-01
-Dandelion Energy Inc.,co_867cdd89d577,First Lien,Software & Technology,12.5%,,,,,2021-12-01,2026-01-01,652,789,743,,789,,,,,,TRIN,2024-05-01
-Dandelion Energy Inc.,co_867cdd89d577,First Lien,Software & Technology,12.5%,,,,,2022-04-08,2026-05-01,1076,1237,1196,,1237,,,,,,TRIN,2024-05-01
-Dandelion Energy Inc.,co_867cdd89d577,First Lien,Software & Technology,12.5%,,,,,2022-05-27,2026-06-01,590,677,639,,677,,,,,,TRIN,2024-05-01
-Dandelion Energy Inc.,co_867cdd89d577,First Lien,Software & Technology,12.5%,,,,,2022-06-13,2026-07-01,866,982,934,,982,,,,,,TRIN,2024-05-01
-Dandelion Energy Inc.,co_867cdd89d577,First Lien,Software & Technology,12.5%,,,,,2022-08-24,2026-09-01,359,400,384,,400,,,,,,TRIN,2024-05-01
-Dandelion Energy Inc.,co_867cdd89d577,First Lien,Software & Technology,12.5%,,,,,2022-11-10,2026-12-01,338,370,361,,370,,,,,,TRIN,2024-05-01
-Dandelion Energy Inc.,co_867cdd89d577,First Lien,Software & Technology,12.5%,,,,,2023-04-12,2027-05-01,784,828,817,,828,,,,,,TRIN,2024-05-01
-Dandelion Energy Inc.,co_867cdd89d577,First Lien,Software & Technology,12.5%,,,,,2023-06-29,2027-07-01,653,682,676,,682,,,,,,TRIN,2024-05-01
-Dandelion Energy Inc.,co_867cdd89d577,First Lien,Software & Technology,,,,,,,,6109,7162,6901,,7162,,,,,,TRIN,2024-05-01
-Electric Hydrogen Co.,co_45d8e8821ab5,First Lien,Software & Technology,10%,,,,,2022-09-12,2026-04-01,1234,1370,1348,,1370,,,,,,TRIN,2024-05-01
-Electric Hydrogen Co.,co_45d8e8821ab5,First Lien,Software & Technology,15%,,,,,2023-12-22,2029-01-01,5741,5800,5968,,5800,,,,,,TRIN,2024-05-01
-Electric Hydrogen Co.,co_45d8e8821ab5,First Lien,Software & Technology,,,,,,,2026-04-01,6975,7170,7316,,7170,,,,,,TRIN,2024-05-01
-Hi-Power LLC,co_7cfa7559b790,First Lien,Software & Technology,1%,,,,,2021-09-30,2025-04-01,2295,2357,2372,,2357,,,,,,TRIN,2024-05-01
-Hi-Power LLC,co_7cfa7559b790,First Lien,Software & Technology,1%,,,,,2022-09-30,2026-04-01,2637,2650,2670,,2650,,,,,,TRIN,2024-05-01
-Hi-Power LLC,co_7cfa7559b790,First Lien,Software & Technology,,,,,,,2025-04-01,4932,5007,5042,,5007,,,,,,TRIN,2024-05-01
-SeaOn Global LLC,co_d4d62b2fc50e,First Lien,Software & Technology,11%,,,,,2022-06-16,2026-07-01,4085,4579,4368,,4579,,,,,,TRIN,2024-05-01
-SeaOn Global LLC,co_d4d62b2fc50e,First Lien,Software & Technology,11%,,,,,2022-08-17,2026-09-01,2097,2316,2227,,2316,,,,,,TRIN,2024-05-01
-SeaOn Global LLC,co_d4d62b2fc50e,First Lien,Software & Technology,,,,,,,2026-07-01,6182,6895,6595,,6895,,,,,,TRIN,2024-05-01
-Edeniq Inc.,co_438a0d44da6c,First Lien,Software & Technology,5.7%,,,,,2021-11-30,2025-06-01,2406,2022,2591,,2022,,,,,,TRIN,2024-05-01
-Footprint International Holding Inc.,co_e85e45f48a4c,First Lien,Software & Technology,3.5%,,Prime,7.3%,10.5%,2022-02-18,2027-03-01,20000,19283,19600,,19283,,,,,,TRIN,2024-05-01
-Footprint International Holding Inc.,co_e85e45f48a4c,First Lien,Software & Technology,,,Prime,7.3%,10.5%,2022-04-20,2027-03-01,20000,19225,19538,,19225,,,,,,TRIN,2024-05-01
-Footprint International Holding Inc.,co_e85e45f48a4c,First Lien,Software & Technology,,,,,,,2027-03-01,40000,38508,39138,,38508,,,,,,TRIN,2024-05-01
-Mainspring Energy Inc.,co_e3b2090f8c06,First Lien,Software & Technology,3.8%,,,,,2022-03-18,2026-10-01,26399,26989,26315,,26989,,,,,,TRIN,2024-05-01
-RTS Holding Inc.,co_d017ff732a2c,First Lien,Software & Technology,3%,4.3%,Prime,7.3%,10.5%,2021-12-31,2027-01-01,13800,14988,15052,,14988,,,,,,TRIN,2024-05-01
-RTS Holding Inc.,co_d017ff732a2c,First Lien,Software & Technology,3%,,Prime,7.25%,13.5%,2022-10-21,2027-11-01,7200,7222,7251,,7222,,,,,,TRIN,2024-05-01
-RTS Holding Inc.,co_d017ff732a2c,First Lien,Software & Technology,3%,,Prime,4.3%,12.5%,2024-01-19,2029-02-01,6000,5578,5578,,5578,,,,,,TRIN,2024-05-01
-RTS Holding Inc.,co_d017ff732a2c,First Lien,Software & Technology,,,,,,,2027-01-01,27000,27788,27881,,27788,,,,,,TRIN,2024-05-01
-Emerald Cloud Lab Inc.,co_eba67d13f3f3,First Lien,Healthcare,7%,,,,,2021-07-13,2024-08-01,1331,2066,2035,,2066,,,,,,TRIN,2024-05-01
-Dentologie Enterprises Inc.,co_d0252579a8ac,First Lien,Healthcare,3%,,Prime,6.9%,10.9%,2022-10-14,2027-10-01,3000,3018,3023,,3018,,,,,,TRIN,2024-05-01
-Dentologie Enterprises Inc.,co_d0252579a8ac,First Lien,Healthcare,3%,,Prime,6.9%,10.9%,2023-12-15,2027-10-01,4200,4129,4326,,4129,,,,,,TRIN,2024-05-01
-Dentologie Enterprises Inc.,co_d0252579a8ac,First Lien,Healthcare,,,,,,,2027-10-01,7200,7147,7349,,7147,,,,,,TRIN,2024-05-01
-Lark Technologies Inc.,co_09562cab2286,First Lien,Healthcare,4%,,Prime,8.3%,11.5%,2020-09-30,2025-04-01,2037,2208,2174,,2208,,,,,,TRIN,2024-05-01
-Lark Technologies Inc.,co_09562cab2286,First Lien,Healthcare,4%,,Prime,8.3%,11.5%,2021-06-30,2026-01-01,3291,3403,3322,,3403,,,,,,TRIN,2024-05-01
-Exer Holdings LLC,co_52ef4f80f5cd,First Lien,Healthcare,4%,,Prime,8.3%,11.5%,2023-07-07,2028-01-01,5000,4965,5045,,4965,,,,,,TRIN,2024-05-01
-Lark Technologies Inc.,co_09562cab2286,First Lien,Healthcare,,,,,,,2025-04-01,10328,10576,10541,,10576,,,,,,TRIN,2024-05-01
-Moxe Health Corp.,co_9f90766b561b,First Lien,Healthcare,,,Prime,5.5%,,2023-12-29,2028-01-01,12500,12364,12189,,12364,,,,,,TRIN,2024-05-01
-RXAnte Inc.,co_9493748ff24e,First Lien,Healthcare,3.5%,1.5%,Prime,4.48%,9.98%,2022-11-21,2027-12-01,9167,9207,9177,,9207,,,,,,TRIN,2024-05-01
-RXAnte Inc.,co_9493748ff24e,First Lien,Healthcare,3.5%,1.5%,Prime,4.48%,9.98%,2023-04-14,2027-12-01,3040,3010,3114,,3010,,,,,,TRIN,2024-05-01
-RXAnte Inc.,co_9493748ff24e,First Lien,Healthcare,3.5%,1.5%,Prime,4.48%,9.98%,2023-10-19,2027-12-01,3017,2973,3051,,2973,,,,,,TRIN,2024-05-01
-RXAnte Inc.,co_9493748ff24e,First Lien,Healthcare,,,,,,,,15224,15190,15342,,15190,,,,,,TRIN,2024-05-01
-TMRW Life Sciences Inc.,co_70977b49b124,First Lien,Healthcare,4%,,Prime,5%,8.8%,2022-04-29,2027-05-01,5000,5087,4832,,5087,,,,,,TRIN,2024-05-01
-TMRW Life Sciences Inc.,co_70977b49b124,First Lien,Healthcare,4%,,Prime,5%,8.8%,2023-03-03,2027-05-01,15000,15148,15215,,15148,,,,,,TRIN,2024-05-01
-TMRW Life Sciences Inc.,co_70977b49b124,First Lien,Healthcare,4%,,Prime,5%,8.8%,2023-12-08,2027-05-01,10000,9982,10032,,9982,,,,,,TRIN,2024-05-01
-TMRW Life Sciences Inc.,co_70977b49b124,First Lien,Healthcare,,,,,,,,30000,30217,30079,,30217,,,,,,TRIN,2024-05-01
-WorkWell Prevention & Care Inc.,co_7c2bd93e871d,First Lien,Healthcare,,,Prime,5%,6%,2022-12-31,2027-01-01,500,500,500,,500,,,,,,TRIN,2024-05-01
-Nomad Health Inc.,co_88fb3bc1047d,First Lien,Software & Technology,4%,,Prime,5.5%,9.3%,2022-03-29,2026-10-01,30000,30612,30294,,30612,,,,,,TRIN,2024-05-01
-Human Resource Technology,co_f4a58d05fb91,First Lien,Software & Technology,,,,,,,,30000,30612,30294,2.1%,30612,,,,,,TRIN,2024-05-01
-3DEO Inc.,co_f5549e7caee9,First Lien,Industrials,9%,,,,,2022-02-23,2025-03-01,1335,1645,1515,,1645,,,,,,TRIN,2024-05-01
-3DEO Inc.,co_f5549e7caee9,First Lien,Industrials,9%,,,,,2022-04-12,2025-05-01,720,851,789,,851,,,,,,TRIN,2024-05-01
-3DEO Inc.,co_f5549e7caee9,First Lien,Industrials,,,,,,,2025-03-01,2055,2496,2304,,2496,,,,,,TRIN,2024-05-01
-Formlogic Corp.,co_b877b3097463,First Lien,Industrials,1.5%,,,,,2023-12-28,2028-01-01,4603,4590,4680,,4590,,,,,,TRIN,2024-05-01
-Marketing Media and Entertainment Drone Racing League Inc.,co_ab7668688a38,First Lien,Media & Entertainment,2.5%,,Prime,7.5%,11%,2022-10-17,2027-04-17,10067,10025,8911,,10025,,,,,,TRIN,2024-05-01
-Marketing Media and Entertainment Grabit Interactive Media Inc.,co_908a19aaec72,First Lien,Media & Entertainment,2.5%,,Prime,7.5%,10.8%,2022-04-08,2026-11-01,4099,4146,4120,,4146,,,,,,TRIN,2024-05-01
-Marketing Media and Entertainment Incontext Solutions Inc.,co_c27730f2debc,First Lien,Media & Entertainment,11.4%,,,,,2020-01-16,2025-09-01,2659,3809,3276,,3809,,,,,,TRIN,2024-05-01
-Marketing Media and Entertainment PebblePost Inc.,co_b6e58cd08490,First Lien,Media & Entertainment,3.8%,,Prime,8.8%,11.5%,2021-05-07,2026-06-01,10559,10891,10867,,10891,,,,,,TRIN,2024-05-01
-Marketing Media and Entertainment Vox Media Holdings Inc.,co_3f2d430b19a4,First Lien,Media & Entertainment,2.5%,,Prime,6.3%,11.8%,2022-10-18,2027-11-01,12000,12022,12275,,12022,,,,,,TRIN,2024-05-01
-Marketing Media and Entertainment Vox Media Holdings Inc.,co_3f2d430b19a4,First Lien,Media & Entertainment,2.5%,,Prime,6.3%,11.8%,2022-12-29,2028-01-01,6000,5997,6120,,5997,,,,,,TRIN,2024-05-01
-Marketing Media and Entertainment Total Vox Media Holdings Inc.,co_3f2d430b19a4,First Lien,Media & Entertainment,,,,,,,,18000,18019,18395,,18019,,,,,,TRIN,2024-05-01
-Marketing Media and Entertainment,co_52abc6b4caf8,First Lien,Media & Entertainment,,,,,,,,45384,46890,45569,3.2%,46890,,,,,,TRIN,2024-05-01
-Convergent Dental Inc.,co_d33c414f01a2,First Lien,Healthcare,4%,,Prime,5.8%,13.5%,2023-04-21,2027-05-01,12000,11803,11964,,11803,,,,,,TRIN,2024-05-01
-Convergent Dental Inc.,co_d33c414f01a2,First Lien,Healthcare,5.5%,,Prime,5.8%,13.5%,2024-02-29,2027-05-01,6000,5843,5843,,5843,,,,,,TRIN,2024-05-01
-Total Convergent Dental Inc.,co_e6cc2c6bd83c,First Lien,Healthcare,,,,,,,,18000,17646,17807,,17646,,,,,,TRIN,2024-05-01
-Neurolens Inc.,co_dc7999920b0c,First Lien,Healthcare,3%,,Prime,3%,11%,2023-09-29,2028-10-01,20000,19883,20475,,19883,,,,,,TRIN,2024-05-01
-Neuros Medical Inc.,co_53721fcfc2b0,First Lien,Healthcare,4%,,Prime,6%,14.3%,2023-08-10,2027-09-01,6000,5939,6170,,5939,,,,,,TRIN,2024-05-01
-Revelle Aesthetics Inc.,co_2df5b83de18b,First Lien,Healthcare,4%,,Prime,5.8%,13.5%,2023-05-30,2028-05-30,15000,14937,15098,,14937,,,,,,TRIN,2024-05-01
-Shoulder Innovations Inc.,co_f532ebcca089,First Lien,Healthcare,3%,,Prime,3.5%,11.5%,2023-08-07,2028-09-01,11250,11163,11651,,11163,,,,,,TRIN,2024-05-01
-Multi-Sector Holdings Senior Credit Corp.,co_72def78a82c5,First Lien,,8.5%,,,,,2023-01-30,2028-12-05,9394,9394,9394,,9394,,,,,,TRIN,2024-05-01
-Multi-Sector Holdings,co_0bf2c650d8f2,First Lien,Other,,,,,,,,9394,9394,9394,0.7%,9394,,,,,,TRIN,2024-05-01
-BlueGround US Inc.,co_e1385ef9c136,First Lien,Real Estate,8%,,,,,2022-06-06,2026-01-01,2405,2639,2624,,2639,,,,,,TRIN,2024-05-01
-BlueGround US Inc.,co_e1385ef9c136,First Lien,Real Estate,8%,,,,,2022-07-26,2026-02-01,3474,3782,3788,,3782,,,,,,TRIN,2024-05-01
-BlueGround US Inc.,co_e1385ef9c136,First Lien,Real Estate,8%,,,,,2022-08-12,2026-03-01,2798,3027,3055,,3027,,,,,,TRIN,2024-05-01
-BlueGround US Inc.,co_e1385ef9c136,First Lien,Real Estate,8%,,,,,2022-09-26,2026-04-01,3454,3714,3777,,3714,,,,,,TRIN,2024-05-01
-BlueGround US Inc.,co_e1385ef9c136,First Lien,Real Estate,8%,,,,,2022-10-25,2026-05-01,2922,3124,3181,,3124,,,,,,TRIN,2024-05-01
-BlueGround US Inc.,co_e1385ef9c136,First Lien,Real Estate,8%,,,,,2022-11-30,2026-06-01,1948,2072,2131,,2072,,,,,,TRIN,2024-05-01
-BlueGround US Inc.,co_e1385ef9c136,First Lien,Real Estate,,,,,,,2026-01-01,17001,18358,18556,,18358,,,,,,TRIN,2024-05-01
-BoardRE Inc.,co_9370f576eeaf,First Lien,Real Estate,4.5%,,Prime,8.3%,11.5%,2021-10-15,2026-06-01,5000,5232,4548,,5232,,,,,,TRIN,2024-05-01
-Knockaway Inc.,co_4334c1d1f928,First Lien,Real Estate,,,Prime,6.8%,15.3%,2023-09-29,2028-09-01,23644,21399,20912,,21399,,,,,,TRIN,2024-05-01
-Knockaway Inc.,co_4334c1d1f928,First Lien,Real Estate,,,SOFR,10%,11.8%,2023-12-06,2024-12-06,1742,1742,1742,,1742,,,,,,TRIN,2024-05-01
-Total Knockaway Inc.,co_2e8cb6488f44,First Lien,Real Estate,,,,,,,,25386,23141,22654,,23141,,,,,,TRIN,2024-05-01
-Maxwell Financial Labs Inc.,co_63669cee6a41,First Lien,Real Estate,5%,,Prime,6%,10%,2021-09-30,2026-04-01,14163,14770,14328,,14770,,,,,,TRIN,2024-05-01
-Orchard Technologies Inc.,co_73a016b6042c,First Lien,Real Estate,3%,,Prime,8%,15%,2024-01-01,2029-01-01,28540,28599,28380,,28599,,,,,,TRIN,2024-05-01
-Software as a Service (SaaS) BackBlaze Inc.,co_01bfb54f4067,First Lien,Software & Technology,11.5%,,,,,2020-04-17,2024-05-01,35,204,237,,204,,,,,,TRIN,2024-05-01
-Software as a Service (SaaS) BackBlaze Inc.,co_01bfb54f4067,First Lien,Software & Technology,11.5%,,,,,2020-07-27,2024-08-01,140,309,303,,309,,,,,,TRIN,2024-05-01
-Software as a Service (SaaS) BackBlaze Inc.,co_01bfb54f4067,First Lien,Software & Technology,11.5%,,,,,2020-09-04,2024-10-01,36,64,63,,64,,,,,,TRIN,2024-05-01
-Software as a Service (SaaS) BackBlaze Inc.,co_01bfb54f4067,First Lien,Software & Technology,11.5%,,,,,2021-03-29,2025-04-01,771,1072,1040,,1072,,,,,,TRIN,2024-05-01
-Software as a Service (SaaS) Total BackBlaze Inc.,co_01bfb54f4067,First Lien,Software & Technology,,,,,,,,982,1649,1643,,1649,,,,,,TRIN,2024-05-01
-Software as a Service (SaaS) Cart.com Inc.,co_828257a29aef,First Lien,Software & Technology,,,Prime,4%,12.5%,2023-11-17,2028-11-01,18000,17484,18249,,17484,,,,,,TRIN,2024-05-01
-Software as a Service (SaaS) Cpacket Networks Inc.,co_3eb1e8462b5c,First Lien,Software & Technology,3%,1.3%,Prime,4.8%,13.3%,2024-01-29,2029-02-01,27031,26611,26611,,26611,,,,,,TRIN,2024-05-01
-Software as a Service,co_e05473153c6f,First Lien,Software & Technology,,,,,,,,46013,45744,46503,3.3%,45744,,,,,,TRIN,2024-05-01
-Astranis Space Technology Corp.,co_c15ecdde4c26,First Lien,Aerospace & Defense,12.1%,,SOFR,5%,,2023-04-13,2026-11-01,11614,11903,12310,,11903,,,,,,TRIN,2024-05-01
-Axiom Space Inc.,co_f120505262fd,First Lien,Aerospace & Defense,2.5%,,Prime,6%,9.3%,2021-05-28,2026-06-01,22500,22999,23083,,22999,,,,,,TRIN,2024-05-01
-Hadrian Automation Inc.,co_1c48629728b3,First Lien,Aerospace & Defense,12.6%,,,,,2022-03-02,2025-09-01,241,241,243,,241,,,,,,TRIN,2024-05-01
-Hadrian Automation Inc.,co_1c48629728b3,First Lien,Aerospace & Defense,12.9%,,,,,2022-05-06,2025-11-01,2597,2591,2619,,2591,,,,,,TRIN,2024-05-01
-Hadrian Automation Inc.,co_1c48629728b3,First Lien,Aerospace & Defense,14.3%,,,,,2022-07-15,2026-01-01,1917,1912,1942,,1912,,,,,,TRIN,2024-05-01
-Hadrian Automation Inc.,co_1c48629728b3,First Lien,Aerospace & Defense,15.2%,,,,,2022-09-30,2026-03-01,3470,3464,3555,,3464,,,,,,TRIN,2024-05-01
-Hadrian Automation Inc.,co_1c48629728b3,First Lien,Aerospace & Defense,16.1%,,,,,2022-12-22,2026-06-01,867,858,901,,858,,,,,,TRIN,2024-05-01
-Hadrian Automation Inc.,co_1c48629728b3,First Lien,Aerospace & Defense,16.4%,,,,,2022-12-22,2026-12-01,813,810,852,,810,,,,,,TRIN,2024-05-01
-Hadrian Automation Inc.,co_1c48629728b3,First Lien,Aerospace & Defense,16.4%,,,,,2023-03-29,2027-03-01,2534,2525,2637,,2525,,,,,,TRIN,2024-05-01
-Hadrian Automation Inc.,co_1c48629728b3,First Lien,Aerospace & Defense,15.7%,,,,,2023-09-28,2027-09-01,1296,1290,1331,,1290,,,,,,TRIN,2024-05-01
-Total Hadrian Automation Inc.,co_17a8d9fdb572,First Lien,Aerospace & Defense,,,,,,,,13735,13691,14080,,13691,,,,,,TRIN,2024-05-01
-Hermeus Corp.,co_9afb9b84c3d5,First Lien,Aerospace & Defense,6%,,,,,2022-08-09,2026-03-01,640,685,663,,685,,,,,,TRIN,2024-05-01
-Hermeus Corp.,co_9afb9b84c3d5,First Lien,Aerospace & Defense,6%,,,,,2022-10-11,2026-05-01,1187,1252,1225,,1252,,,,,,TRIN,2024-05-01
-Hermeus Corp.,co_9afb9b84c3d5,First Lien,Aerospace & Defense,6%,,,,,2023-04-12,2026-11-01,1671,1700,1692,,1700,,,,,,TRIN,2024-05-01
-Hermeus Corp.,co_9afb9b84c3d5,First Lien,Aerospace & Defense,6%,,,,,2023-10-24,2027-05-01,959,949,958,,949,,,,,,TRIN,2024-05-01
-Hermeus Corp.,co_9afb9b84c3d5,First Lien,Aerospace & Defense,6%,,,,,2024-02-08,2027-09-01,1413,1382,1382,,1382,,,,,,TRIN,2024-05-01
-Total Hermeus Corp.,co_266c6a4acaa3,First Lien,Aerospace & Defense,,,,,,,,5870,5968,5920,,5968,,,,,,TRIN,2024-05-01
-Rocket Lab USA Inc.,co_0728b61d003f,First Lien,Aerospace & Defense,1%,,,,,2023-12-29,2029-01-01,52310,51421,51910,,51421,,,,,,TRIN,2024-05-01
-Space Perspective Inc.,co_2d048b2fc8f2,First Lien,Aerospace & Defense,5%,,Prime,7.8%,11%,2022-03-03,2026-07-01,4087,4205,4093,,4205,,,,,,TRIN,2024-05-01
-United Sates Space Technology,co_051de8788e90,First Lien,Aerospace & Defense,,,,,,,,110116,110187,111396,,110187,,,,,,TRIN,2024-05-01
-Macrofab Inc.,co_621823b81a89,First Lien,Software & Technology,4%,,Prime,5.5%,13.3%,2023-07-21,2027-08-01,20000,19818,20103,,19818,,,,,,TRIN,2024-05-01
-NextCar Holding Company Inc.,co_ba06f9a7cffd,First Lien,Transportation & Logistics,5.3%,,Prime,5.8%,9%,2021-12-14,2024-06-30,4573,4834,2462,,4834,,,,,,TRIN,2024-05-01
-NextCar Holding Company Inc.,co_ba06f9a7cffd,First Lien,Transportation & Logistics,5.3%,,Prime,5.8%,9%,2021-12-15,2024-06-30,2274,2379,1224,,2379,,,,,,TRIN,2024-05-01
-NextCar Holding Company Inc.,co_ba06f9a7cffd,First Lien,Transportation & Logistics,5.3%,,Prime,5.8%,9%,2022-02-23,2024-06-30,2843,2974,1530,,2974,,,,,,TRIN,2024-05-01
-NextCar Holding Company Inc.,co_ba06f9a7cffd,First Lien,Transportation & Logistics,5.3%,,Prime,5.8%,9%,2022-03-16,2024-06-30,3411,3569,1836,,3569,,,,,,TRIN,2024-05-01
-Next Car Holding Company Inc.,co_527fcd0bddb8,First Lien,Transportation & Logistics,5.3%,,Prime,5.8%,9%,2022-04-18,2024-06-30,2843,2974,1530,,2974,,,,,,TRIN,2024-05-01
-Next Car Holding Company Inc.,co_527fcd0bddb8,First Lien,Transportation & Logistics,5.3%,,Prime,5.8%,9%,2022-05-17,2024-06-30,5685,5948,3060,,5948,,,,,,TRIN,2024-05-01
-Next Car Holding Company Inc.,co_527fcd0bddb8,First Lien,Transportation & Logistics,5.3%,,Prime,5.8%,9%,2022-06-22,2024-06-30,2843,2974,1530,,2974,,,,,,TRIN,2024-05-01
-Next Car Holding Company Inc.,co_527fcd0bddb8,First Lien,Transportation & Logistics,,,,,,,,27315,28626,14702,,28626,,,,,,TRIN,2024-05-01
-Get Spiffy Inc.,co_5127f84dd927,First Lien,Transportation & Logistics,6%,,Prime,4.5%,12.3%,2023-07-14,2028-01-14,9000,8944,8842,,8944,,,,,,TRIN,2024-05-01
-Get Spiffy Inc.,co_5127f84dd927,First Lien,Transportation & Logistics,4%,,,,12.1%,2023-07-14,2027-02-01,379,367,307,,367,,,,,,TRIN,2024-05-01
-Get Spiffy Inc.,co_5127f84dd927,First Lien,Transportation & Logistics,,,,,,,2028-01-14,9379,9311,9149,,9311,,,,,,TRIN,2024-05-01
-Zuum Transportation Inc.,co_bac9e697730b,First Lien,Transportation & Logistics,,,Prime,6%,,2021-12-17,2027-01-01,5000,5070,4787,,5070,,,,,,TRIN,2024-05-01
-United States,co_981e5b396726,First Lien,,,,,,,,,1275481,1285802,,89.3%,1285802,,,,,,TRIN,2024-05-01
-Canada Construction Technology Nexii Building Solutions Inc.,co_5440dd8430a7,Other Equity,Software & Technology,2.5%,,SOFR,7%,10.3%,2021-08-27,2025-08-27,10641,11037,3179,,11037,,,,,,TRIN,2024-05-01
-Canada Construction Technology Nexii Building Solutions Inc.,co_5440dd8430a7,Other Equity,Software & Technology,2.5%,,SOFR,7%,10.3%,2022-06-08,2026-06-08,5329,5527,1592,,5527,,,,,,TRIN,2024-05-01
-Canada Construction Technology Nexii Building Solutions Inc.,co_5440dd8430a7,Other Equity,Software & Technology,,,SOFR,7%,10.3%,2023-06-21,2024-06-30,2631,2631,768,,2631,,,,,,TRIN,2024-05-01
-Canada Construction Technology Nexii Building Solutions Inc.,co_5440dd8430a7,First Lien,Software & Technology,,,,,,,,18601,19195,5539,,19195,,,,,,TRIN,2024-05-01
-Canada Construction Technology,co_0cef453fe322,First Lien,Software & Technology,,,,,,,,18601,19195,5539,0.4%,19195,,,,,,TRIN,2024-05-01
-Canada Supply Chain Technology GoFor Industries Inc.,co_d80303bcc13b,Other Equity,Software & Technology,2.5%,,SOFR,8.8%,12%,2022-01-21,2026-02-01,9760,9575,4414,,9575,,,,,,TRIN,2024-05-01
-Canada Supply Chain Technology GoFor Industries Inc.,co_d80303bcc13b,Other Equity,Software & Technology,,,SOFR,7%,10.3%,2023-06-21,2024-05-10,200,200,65,,200,,,,,,TRIN,2024-05-01
-Canada Supply Chain Technology GoFor Industries Inc.,co_d80303bcc13b,First Lien,Software & Technology,,,,,,,,9960,9775,4479,,9775,,,,,,TRIN,2024-05-01
-Canada Supply Chain Technology,co_01650f2130bd,First Lien,Software & Technology,,,,,,,,9960,9775,4479,0.3%,9775,,,,,,TRIN,2024-05-01
-Canada,co_408c7c5887a0,First Lien,,0.7%,,,,,,,28561,28970,10018,,28970,,,,,,TRIN,2024-05-01
-Europe Industrials Aledia Inc.Type of Investment Equipment Financing Investment Date March 31 2022 Maturity Date April 1,co_ae9afdfae20f,Other Equity,,7%,,,,,2022-03-31,2025-04-01,6583,7703,7577,,7703,,,,,,TRIN,2024-05-01
-Europe Industrials Aledia Inc.Type of Investment Equipment Financing Investment Date June 30 2022 Maturity Date July 1,co_ae9afdfae20f,Other Equity,,7%,,,,,2022-06-30,2025-07-01,527,593,585,,593,,,,,,TRIN,2024-05-01
-Europe Industrials Aledia Inc.Type of Investment Equipment Financing Investment Date August 5 2022 Maturity Date September 1,co_ae9afdfae20f,Other Equity,,7%,,,,,2022-08-05,2025-09-01,774,855,846,,855,,,,,,TRIN,2024-05-01
-Europe Industrials Aledia Inc.Type of Investment Equipment Financing Investment Date September 30 2022 Maturity Date October 1,co_ae9afdfae20f,Other Equity,,7%,,,,,2022-09-30,2025-10-01,1302,1424,1415,,1424,,,,,,TRIN,2024-05-01
-Europe Industrials Aledia Inc.,co_1c737e36e3b0,First Lien,Industrials,,,,,,,,9186,10575,10423,,10575,,,,,,TRIN,2024-05-01
-Europe Industrials,co_be879ab80f93,First Lien,Industrials,0.7%,,,,,,,9186,10575,10423,,10575,,,,,,TRIN,2024-05-01
-Europe Space Technology All.Space Networks Limited.Type of Investment Secured Loan Investment Date August 22 2022 Maturity Date September 1,co_bd21cb733ad0,Other Equity,,2.5%,,SOFR,7%,11.5%,2022-08-22,2027-09-01,9060,9112,8910,,9112,,,,,,TRIN,2024-05-01
-Europe Space Technology,co_b4ccb6f47b5b,First Lien,Aerospace & Defense,0.6%,,,,,,,9060,9112,8910,,9112,,,,,,TRIN,2024-05-01
-Europe,co_b11f203e8e6c,First Lien,,1.4%,,,,,,,18246,19687,19333,,19687,,,,,,TRIN,2024-05-01
-Ambient Photonics Inc.,co_9624908580dd,First Lien,Artificial Intelligence & Automation,,,,,,2022-07-27,2032-07-27,,48,195,,48,,,,159760,,TRIN,2024-05-01
-Everalbum Inc.,co_4f6d662c0058,First Lien,Artificial Intelligence & Automation,,,,,,2020-01-16,2026-07-29,,25,32,,25,,,,851063,,TRIN,2024-05-01
-Hologram Inc.,co_aa4462cb6ea4,First Lien,Artificial Intelligence & Automation,,,,,,2020-01-31,2030-01-27,,49,240,,49,,,,193054,,TRIN,2024-05-01
-Presto Automation Inc.,co_064d5195e9b5,First Lien,Artificial Intelligence & Automation,,,,,,2020-01-16,2027-04-28,,185,9,,185,,,,402679,,TRIN,2024-05-01
-Total Presto Automation Inc.,co_e9a7c9ae74c0,First Lien,Artificial Intelligence & Automation,,,,,,,,,213,9,,213,,,,,,TRIN,2024-05-01
-Pendulum Therapeutics Inc.,co_bf3271707d8e,First Lien,Healthcare,,,,,,2020-01-16,2029-10-09,,43,23,,43,,,,55263,,TRIN,2024-05-01
-Pendulum Therapeutics Inc.,co_bf3271707d8e,First Lien,Healthcare,,,,,,2020-06-01,2030-07-15,,36,16,,36,,,,36842,,TRIN,2024-05-01
-Pendulum Therapeutics Inc.,co_bf3271707d8e,First Lien,Healthcare,,,,,,2021-12-31,2031-12-31,,118,87,,118,,,,322251,,TRIN,2024-05-01
-Pendulum Therapeutics Inc.,co_bf3271707d8e,First Lien,Healthcare,,,,,,2024-02-05,2034-02-05,,588,666,,588,,,,1143690,,TRIN,2024-05-01
-Total Pendulum Therapeutics Inc.,co_398ca4f946b6,First Lien,Healthcare,,,,,,,,,785,792,,785,,,,,,TRIN,2024-05-01
-Tarana Wireless Inc.,co_36c59af4d377,First Lien,Other,,,,,,2021-06-30,2031-06-30,,967,2017,,967,,,,5027629,,TRIN,2024-05-01
-viaPhoton Inc.,co_819d98216169,First Lien,Other,,,,,,2022-03-31,2032-03-31,,22,1,,22,,,,15839,,TRIN,2024-05-01
-Project Frog Inc.,co_17c332a24389,First Lien,Software & Technology,,,,,,2021-08-03,2031-12-31,,20,2,,20,,,,250000,,TRIN,2024-05-01
-Total Project Frog Inc.,co_f1ad3a4db112,First Lien,Software & Technology,,,,,,,,,38,,,38,,,,,,TRIN,2024-05-01
-Construction Technology,co_7773d6f4536e,First Lien,Software & Technology,,,,,,,,,38,2,0%,38,,,,,,TRIN,2024-05-01
-BaubleBar Inc.,co_5cc7d5e9a203,First Lien,Consumer & Retail,,,,,,2020-01-16,2027-03-29,,639,48,,639,,,,531806,,TRIN,2024-05-01
-BaubleBar Inc.,co_5cc7d5e9a203,First Lien,Consumer & Retail,,,,,,2020-01-16,2028-04-20,,72,6,,72,,,,60000,,TRIN,2024-05-01
-BaubleBar Inc.,co_5cc7d5e9a203,First Lien,Consumer & Retail,,,,,,,,,711,54,,711,,,,,,TRIN,2024-05-01
-Boosted eCommerce Inc.,co_593b690cde24,First Lien,Consumer & Retail,,,,,,2020-12-18,2030-12-14,,259,54,,259,,,,759263,,TRIN,2024-05-01
-Happiest Baby Inc.,co_a17ad029e734,First Lien,Consumer & Retail,,,,,,2020-01-16,2029-05-16,,193,84,,193,,,,182554,,TRIN,2024-05-01
-Madison Reed Inc.,co_34b121999277,First Lien,Consumer & Retail,,,,,,2020-01-16,2027-03-23,,185,333,,185,,,,194553,,TRIN,2024-05-01
-Madison Reed Inc.,co_34b121999277,First Lien,Consumer & Retail,,,,,,2020-01-16,2028-07-18,,71,107,,71,,,,43158,,TRIN,2024-05-01
-Madison Reed Inc.,co_34b121999277,First Lien,Consumer & Retail,,,,,,2020-01-16,2029-06-30,,56,86,,56,,,,36585,,TRIN,2024-05-01
-Madison Reed Inc.,co_34b121999277,First Lien,Consumer & Retail,,,,,,,,,312,526,,312,,,,,,TRIN,2024-05-01
-Ogee Inc.,co_5ec9eeb8280a,First Lien,Consumer & Retail,,,,,,2023-02-14,2033-02-14,,57,42,,57,,,,259221,,TRIN,2024-05-01
-Ogee Inc.,co_5ec9eeb8280a,First Lien,Consumer & Retail,,,,,,2023-09-29,2033-09-29,,52,42,,52,,,,259221,,TRIN,2024-05-01
-Ogee Inc.,co_5ec9eeb8280a,First Lien,Consumer & Retail,,,,,,,2027-03-01,,109,84,,109,,,,,,TRIN,2024-05-01
-Portofino Labs Inc.,co_fe73f96fd775,First Lien,Consumer & Retail,,,,,,2020-12-31,2030-12-31,,160,123,,160,,,,99148,,TRIN,2024-05-01
-Portofino Labs Inc.,co_fe73f96fd775,First Lien,Consumer & Retail,,,,,,2021-04-01,2031-04-01,,99,51,,99,,,,39912,,TRIN,2024-05-01
-Portofino Labs Inc.,co_fe73f96fd775,First Lien,Consumer & Retail,,,,,,,2025-11-01,,259,174,,259,,,,,,TRIN,2024-05-01
-Quip NYC Inc.,co_c670c191758a,First Lien,Consumer & Retail,,,,,,2021-03-09,2031-03-09,,203,0,,203,,,,10833,,TRIN,2024-05-01
-Rinse Inc.Type of Investment Warrant,co_f277b8433a43,First Lien,Consumer & Retail,,,,,,2022-05-10,2032-05-10,,118,524,,118,,,,278761,,TRIN,2024-05-01
-SI Tickets Inc.,co_72a82baf5906,First Lien,Consumer & Retail,,,,,,2022-05-11,2032-05-11,,162,6,,162,,,,53029,,TRIN,2024-05-01
-Super73 Inc.,co_754432a7b07d,First Lien,Consumer & Retail,,,,,,2020-12-31,2030-12-31,,105,220,,105,,,,177305,,TRIN,2024-05-01
-Trendly Inc.,co_d8b53baabb37,First Lien,Consumer & Retail,,,,,,2020-01-16,2026-08-10,,222,1,,222,,,,245506,,TRIN,2024-05-01
-Whoop Inc.,co_9f9b312199ba,First Lien,Consumer & Retail,,,,,,2023-05-17,2033-05-17,,1142,2001,,1142,,,,2487590,,TRIN,2024-05-01
-Diagnostics & Tools Metabolon Inc.,co_052e0482d089,First Lien,,,,,,,2024-03-28,2034-03-28,,644,644,,644,,,,2288462,,TRIN,2024-05-01
-Diagnostics & Tools,co_420680447216,First Lien,Diagnostics & Tools,,,,,,,,,644,644,0%,644,,,,,,TRIN,2024-05-01
-Edblox Inc.,co_318f491dee37,First Lien,Education,,,,,,2024-03-19,2034-03-19,,255,260,,255,,,,185765,,TRIN,2024-05-01
-Medical Sales Training Holding Company,co_7ae1cfd86cb8,First Lien,Education,,,,,,2021-03-18,2031-03-18,,108,318,,108,,,,130853,,TRIN,2024-05-01
-DailyPay Inc.,co_d81df964106b,First Lien,Insurance,,,,,,2020-09-30,2030-09-30,,151,1597,,151,,,,89264,,TRIN,2024-05-01
-Dynamics Inc.,co_cb0542fa7340,First Lien,Insurance,,,,,,2020-01-16,2024-03-10,,86,,,86,,,,17000,,TRIN,2024-05-01
-Empower Financial Inc.,co_f9a166ff74d5,First Lien,Insurance,,,,,,2023-10-13,2033-10-13,,627,1206,,627,,,,339947,,TRIN,2024-05-01
-Eqis Capital Management Inc.,co_ac3be9f3c3e6,First Lien,Insurance,,,,,,2022-06-15,2032-06-15,,10,0,,10,,,,904000,,TRIN,2024-05-01
-Kafene Inc.,co_1ffa5bb28852,First Lien,Insurance,,,,,,2024-01-05,2034-01-05,,58,72,,58,,,,44452,,TRIN,2024-05-01
-Parafin Inc.,co_b41eb896c843,First Lien,Insurance,,,,,,2024-02-16,2034-02-16,,118,144,,118,,,,24623,,TRIN,2024-05-01
-Petal Card Inc.,co_2a6283713f4a,First Lien,Insurance,,,,,,2023-06-20,2033-06-20,,1523,378,,1523,,,,402434,,TRIN,2024-05-01
-Petal Card Inc.,co_2a6283713f4a,First Lien,Insurance,,,,,,2023-07-27,2033-07-27,,2500,1653,,2500,,,,1760651,,TRIN,2024-05-01
-Petal Card Inc.,co_2a6283713f4a,First Lien,Insurance,,,,,,,2026-07-01,,4679,2031,,4679,,,,,,TRIN,2024-05-01
-RealtyMogul Co.,co_d62be51afbef,First Lien,Insurance,,,,,,2020-01-16,2027-12-18,,285,1626,,285,,,,954979,,TRIN,2024-05-01
-Slope Tech Inc.,co_bc2014510273,First Lien,Insurance,,,,,,2022-09-14,2032-09-14,,109,481,,109,,,,90971,,TRIN,2024-05-01
-Slope Tech Inc.,co_bc2014510273,First Lien,Insurance,,,,,,2023-08-30,2033-08-30,,112,112,,112,,,,21303,,TRIN,2024-05-01
-Slope Tech Inc.,co_bc2014510273,First Lien,Insurance,,,,,,,2025-03-14,,221,593,,221,,,,,,TRIN,2024-05-01
-Athletic Brewing Company LLC,co_2711aaa7d673,First Lien,Food & Beverage,,,,,,2022-10-28,2032-10-28,,287,308,,287,,,,3741,,TRIN,2024-05-01
-Bowery Farming Inc.,co_3daee0d11817,First Lien,Food & Beverage,,,,,,2020-01-16,2029-06-10,,410,0,,410,,,,68863,,TRIN,2024-05-01
-Bowery Farming Inc.,co_3daee0d11817,First Lien,Food & Beverage,,,,,,2020-12-22,2030-12-22,,160,1,,160,,,,29925,,TRIN,2024-05-01
-Bowery Farming Inc.,co_3daee0d11817,First Lien,Food & Beverage,,,,,,2021-09-10,2028-09-10,,617,0,,617,,,,21577,,TRIN,2024-05-01
-Bowery Farming Inc.,co_3daee0d11817,First Lien,Food & Beverage,,,,,,2023-12-29,2030-12-29,,29,1,,29,,,,114725,,TRIN,2024-05-01
-Bowery Farming Inc.,co_3daee0d11817,First Lien,Food & Beverage,,,,,,,2026-09-10,,1216,2,,1216,,,,,fair_value_suspicious_vs_size,TRIN,2024-05-01
-Daring Foods Inc.,co_77206702b885,First Lien,Food & Beverage,,,,,,2021-04-08,2031-04-08,,106,162,,106,,,,68100,,TRIN,2024-05-01
-DrinkPak LLC,co_213d95aa9b65,First Lien,Food & Beverage,,,,,,2022-09-13,2032-09-13,,7,102,,7,,,,2387,,TRIN,2024-05-01
-DrinkPak LLC,co_213d95aa9b65,First Lien,Food & Beverage,,,,,,2023-02-17,2033-02-17,,29,582,,29,,,,13618,,TRIN,2024-05-01
-DrinkPak LLC,co_213d95aa9b65,First Lien,Food & Beverage,,,,,,,2026-09-01,,36,684,,36,,,,,,TRIN,2024-05-01
-Emergy Inc.,co_6bd270587e1a,First Lien,Food & Beverage,,,,,,2022-10-05,2032-10-05,,181,1,,181,,,,40516,,TRIN,2024-05-01
-GrubMarket Inc.,co_ac21c10f46e8,First Lien,Food & Beverage,,,,,,2020-06-15,2030-06-15,,115,4055,,115,,,,405000,cost_suspicious_vs_size,TRIN,2024-05-01
-PSB Holdings Inc.,co_35718e71b831,First Lien,Food & Beverage,,,,,,2020-12-31,2032-12-29,,546,,,546,,,,33348,,TRIN,2024-05-01
-The Fynder Group Inc.,co_8b8ab0bb9f9e,First Lien,Food & Beverage,,,,,,2020-10-14,2030-10-14,,68,29,,68,,,,36445,,TRIN,2024-05-01
-Zero Acre Farms Inc.,co_1ff1704ae99c,First Lien,Food & Beverage,,,,,,2022-12-23,2032-12-23,,79,60,,79,,,,20181,,TRIN,2024-05-01
-Food and Agriculture Technologies,co_2c32465f3b99,First Lien,Food & Beverage,,,,,,,,,2745,5301,0.4%,2745,,,,,,TRIN,2024-05-01
-Bolb Inc.,co_6db6891ecbc0,First Lien,Software & Technology,,,,,,2021-10-12,2031-10-12,,36,9,,36,,,,181784,,TRIN,2024-05-01
-Edeniq Inc.,co_438a0d44da6c,First Lien,Software & Technology,,,,,,2021-11-29,2031-11-29,,7,1785,,7,,,,154906320,cost_suspicious_vs_size,TRIN,2024-05-01
-Edeniq Inc.,co_438a0d44da6c,First Lien,Software & Technology,,,,,,,2025-06-01,,7,3635,,7,,,,,cost_suspicious_vs_size,TRIN,2024-05-01
-Mainspring Energy Inc.,co_e3b2090f8c06,First Lien,Software & Technology,,,,,,2020-01-16,2029-07-09,,283,257,,283,,,,140186,,TRIN,2024-05-01
-Mainspring Energy Inc.,co_e3b2090f8c06,First Lien,Software & Technology,,,,,,2020-11-20,2030-11-20,,226,149,,226,,,,81294,,TRIN,2024-05-01
-Mainspring Energy Inc.,co_e3b2090f8c06,First Lien,Software & Technology,,,,,,2022-03-18,2032-03-18,,344,245,,344,,,,137692,,TRIN,2024-05-01
-Mainspring Energy Inc.,co_e3b2090f8c06,First Lien,Software & Technology,,,,,,,2026-10-01,,853,651,,853,,,,,,TRIN,2024-05-01
-RTS Holding Inc.,co_d017ff732a2c,First Lien,Software & Technology,,,,,,2021-12-10,2031-12-10,,75,214,,75,,,,2314,,TRIN,2024-05-01
-RTS Holding Inc.,co_d017ff732a2c,First Lien,Software & Technology,,,,,,2022-10-10,2032-10-10,,87,95,,87,,,,917,,TRIN,2024-05-01
-RTS Holding Inc.,co_d017ff732a2c,First Lien,Software & Technology,,,,,,2024-01-19,2034-01-19,,418,295,,418,,,,3079,,TRIN,2024-05-01
-RTS Holding Inc.,co_d017ff732a2c,First Lien,Software & Technology,,,,,,,2027-01-01,,580,604,,580,,,,,,TRIN,2024-05-01
-Dentologie Enterprises Inc.,co_d0252579a8ac,First Lien,Healthcare,,,,,,2022-10-14,2034-10-14,,66,192,,66,,,,51632,,TRIN,2024-05-01
-Exer Holdings LLC,co_52ef4f80f5cd,First Lien,Healthcare,,,,,,2021-11-19,2031-11-19,,93,27,,93,,,,281,,TRIN,2024-05-01
-Hospitalists Now Inc.,co_493b8b063370,First Lien,Healthcare,,,,,,2020-01-16,2026-03-30,,71,655,,71,,,,135807,,TRIN,2024-05-01
-Hospitalists Now Inc.,co_493b8b063370,First Lien,Healthcare,,,,,,2020-01-16,2026-12-06,,391,3616,,391,,,,750000,,TRIN,2024-05-01
-Hospitalists Now Inc.,co_493b8b063370,First Lien,Healthcare,,,,,,,,,462,4271,,462,,,,,,TRIN,2024-05-01
-Lark Technologies Inc.Type of Investment Warrant,co_b069151d6d92,First Lien,Healthcare,,,,,,2020-09-30,2030-09-30,,177,4,,177,,,,76231,,TRIN,2024-05-01
-Lark Technologies Inc.Type of Investment Warrant,co_b069151d6d92,First Lien,Healthcare,,,,,,2021-06-30,2031-06-30,,258,5,,258,,,,79325,,TRIN,2024-05-01
-Lark Technologies Inc.Type of Investment Warrant,co_b069151d6d92,First Lien,Healthcare,,,,,,2022-12-22,2032-12-22,,58,5,,58,,,,97970,,TRIN,2024-05-01
-Lark Technologies Inc.,co_09562cab2286,First Lien,Healthcare,,,,,,,2025-04-01,,493,14,,493,,,,,,TRIN,2024-05-01
-Moxe Health Corp.,co_9f90766b561b,First Lien,Healthcare,,,,,,2023-12-29,2033-12-29,,135,136,,135,,,,155438,,TRIN,2024-05-01
-RXAnte Inc.,co_9493748ff24e,First Lien,Healthcare,,,,,,2022-11-21,2032-11-21,,94,167,,94,,,,18000,,TRIN,2024-05-01
-RXAnte Inc.,co_9493748ff24e,First Lien,Healthcare,,,,,,2023-04-07,2033-04-06,,29,56,,29,,,,6000,,TRIN,2024-05-01
-RXAnte Inc.,co_9493748ff24e,First Lien,Healthcare,,,,,,2023-10-17,2033-10-16,,40,56,,40,,,,6000,,TRIN,2024-05-01
-Total RXAnte Inc.,co_8fbe60a8853e,First Lien,Healthcare,,,,,,,,,163,279,,163,,,,,,TRIN,2024-05-01
-TMRW Life Sciences Inc.,co_70977b49b124,First Lien,Healthcare,,,,,,2022-04-29,2032-04-29,,80,11,,80,,,,268983,,TRIN,2024-05-01
-TMRW Life Sciences Inc.,co_70977b49b124,First Lien,Healthcare,,,,,,2023-03-03,2033-03-03,,80,11,,80,,,,268983,,TRIN,2024-05-01
-Total TMRW Life Sciences Inc.,co_40fee1066464,First Lien,Healthcare,,,,,,,,,160,22,,160,,,,,,TRIN,2024-05-01
-BetterLeap Inc.,co_a6abfd31a9a9,First Lien,Software & Technology,,,,,,2022-04-20,2032-04-20,,38,34,,38,,,,88435,,TRIN,2024-05-01
-Qwick Inc.,co_4076a37f349b,First Lien,Software & Technology,,,,,,2021-12-31,2031-12-31,,96,254,,96,,,,33928,,TRIN,2024-05-01
-Human Resource Technology,co_f4a58d05fb91,First Lien,Software & Technology,,,,,,,,,134,288,0%,134,,,,,,TRIN,2024-05-01
-SBG Labs Inc.,co_1a0d5a5d7b0b,First Lien,Industrials,,,,,,2020-01-16,2024-09-18,,8,53,,8,,,,25714,,TRIN,2024-05-01
-SBG Labs Inc.,co_1a0d5a5d7b0b,First Lien,Industrials,,,,,,2020-01-16,2025-03-24,,4,25,,4,,,,12155,,TRIN,2024-05-01
-SBG Labs Inc.,co_1a0d5a5d7b0b,First Lien,Industrials,,,,,,2020-01-16,2024-05-06,,4,23,,4,,,,11145,,TRIN,2024-05-01
-SBG Labs Inc.,co_1a0d5a5d7b0b,First Lien,Industrials,,,,,,2020-01-16,2024-06-09,,2,15,,2,,,,7085,,TRIN,2024-05-01
-SBG Labs Inc.,co_1a0d5a5d7b0b,First Lien,Industrials,,,,,,2020-01-16,2024-05-20,,110,709,,110,,,,342857,,TRIN,2024-05-01
-SBG Labs Inc.,co_1a0d5a5d7b0b,First Lien,Industrials,,,,,,2020-01-16,2025-03-26,,65,414,,65,,,,200000,,TRIN,2024-05-01
-SBG Labs Inc.,co_1a0d5a5d7b0b,First Lien,Industrials,,,,,,,,,193,1239,,193,,,,,,TRIN,2024-05-01
-Marketing Media and Entertainment Drone Racing League Inc.,co_ab7668688a38,First Lien,Media & Entertainment,,,,,,2022-10-17,2032-10-17,,374,1,,374,,,,253824,,TRIN,2024-05-01
-Marketing Media and Entertainment Firefly Systems Inc.,co_2998440145d8,First Lien,Media & Entertainment,,,,,,2020-01-31,2030-01-29,,282,141,,282,,,,133147,,TRIN,2024-05-01
-Marketing Media and Entertainment Grabit Interactive Media Inc.,co_908a19aaec72,First Lien,Media & Entertainment,,,,,,2022-04-08,2034-04-08,,40,64,,40,,,,142828,,TRIN,2024-05-01
-Marketing Media and Entertainment PebblePost Inc.,co_b6e58cd08490,First Lien,Media & Entertainment,,,,,,2021-05-07,2031-05-07,,68,751,,68,,,,657343,,TRIN,2024-05-01
-Marketing Media and Entertainment,co_52abc6b4caf8,First Lien,Media & Entertainment,,,,,,,,,798,957,0.1%,798,,,,,,TRIN,2024-05-01
-Convergent Dental Inc.,co_d33c414f01a2,First Lien,Healthcare,,,,,,2023-04-21,2033-04-21,,492,277,,492,,,,446982,,TRIN,2024-05-01
-Delphinus Inc.,co_e00a8ee89d2b,First Lien,Healthcare,,,,,,2023-06-27,2033-06-27,,29,43,,29,,,,294289,,TRIN,2024-05-01
-Neuros Medical Inc.,co_53721fcfc2b0,First Lien,Healthcare,,,,,,2023-08-10,2033-08-10,,71,70,,71,,,,798085,,TRIN,2024-05-01
-Revelle Aesthetics Inc.,co_2df5b83de18b,First Lien,Healthcare,,,,,,2023-05-30,2033-05-30,,151,86,,151,,,,549056,,TRIN,2024-05-01
-Shoulder Innovations Inc.,co_f532ebcca089,First Lien,Healthcare,,,,,,2023-08-07,2033-08-07,,120,132,,120,,,,623615,,TRIN,2024-05-01
-Marketing Devices,co_16b9e0021750,First Lien,Business Services,,,,,,,,,863,608,0%,863,,,,,,TRIN,2024-05-01
-Homelight Inc.,co_c4d3872bdc11,First Lien,Real Estate,,,,,,2022-10-01,2032-10-01,,1,2,,1,,,,5434,,TRIN,2024-05-01
-Maxwell Financial Labs Inc.,co_63669cee6a41,First Lien,Real Estate,,,,,,2020-10-07,2030-10-07,,20,154,,20,,,,106735,,TRIN,2024-05-01
-Maxwell Financial Labs Inc.,co_63669cee6a41,First Lien,Real Estate,,,,,,2020-12-22,2030-12-22,,34,162,,34,,,,110860,,TRIN,2024-05-01
-Maxwell Financial Labs Inc.,co_63669cee6a41,First Lien,Real Estate,,,,,,2021-09-30,2031-09-30,,148,98,,148,,,,79135,,TRIN,2024-05-01
-Maxwell Financial Labs Inc.,co_63669cee6a41,First Lien,Real Estate,,,,,,,2026-04-01,,202,414,,202,,,,,,TRIN,2024-05-01
-All Seated Inc.,co_a9cb8850f656,First Lien,Software & Technology,,,,,,2022-02-28,2032-02-28,,20,,,20,,,,5101,,TRIN,2024-05-01
-Cart.com Inc.,co_82df160c51c3,First Lien,Software & Technology,,,,,,2023-11-17,2033-11-17,,441,539,,441,,,,30666,,TRIN,2024-05-01
-Cpacket Networks Inc.,co_57b062340fbb,First Lien,Software & Technology,,,,,,2024-01-29,2034-01-29,,221,190,,221,,,,665821,,TRIN,2024-05-01
-Crowdtap Inc.,co_c2d082b16943,First Lien,Software & Technology,,,,,,2020-01-16,2025-12-16,,42,731,,42,,,,442233,,TRIN,2024-05-01
-Crowdtap Inc.,co_c2d082b16943,First Lien,Software & Technology,,,,,,2020-01-16,2027-12-11,,9,165,,9,,,,100000,,TRIN,2024-05-01
-Crowdtap Inc.,co_c2d082b16943,First Lien,Software & Technology,,,,,,,,,51,896,,51,,,,,,TRIN,2024-05-01
-Gtxcel Inc.,co_97700fbf690e,First Lien,Software & Technology,,,,,,2020-01-16,2025-09-24,,83,14,,83,,,,1000000,,TRIN,2024-05-01
-Gtxcel Inc.,co_97700fbf690e,First Lien,Software & Technology,,,,,,2020-01-16,2025-09-24,,83,21,,83,,,,1000000,,TRIN,2024-05-01
-Gtxcel Inc.,co_97700fbf690e,First Lien,Software & Technology,,,,,,,,,166,35,,166,,,,,,TRIN,2024-05-01
-Lucidworks Inc.,co_370f5a68f8c1,First Lien,Software & Technology,,,,,,2020-01-16,2026-06-27,,806,769,,806,,,,619435,,TRIN,2024-05-01
-Reciprocity Inc.,co_1c182f09daac,First Lien,Software & Technology,,,,,,2020-09-25,2030-09-25,,99,45,,99,,,,114678,,TRIN,2024-05-01
-Reciprocity Inc.,co_1c182f09daac,First Lien,Software & Technology,,,,,,2021-04-29,2031-04-29,,54,23,,54,,,,57195,,TRIN,2024-05-01
-Reciprocity Inc.,co_1c182f09daac,First Lien,Software & Technology,,,,,,,,,153,68,,153,,,,,,TRIN,2024-05-01
-Smartly Inc.,co_0db76a72f969,First Lien,Software & Technology,,,,,,2022-05-16,2034-05-16,,84,71,,84,,,,48097,,TRIN,2024-05-01
-The Tomorrow Companies Inc.,co_440913f52954,First Lien,Software & Technology,,,,,,2022-12-14,2032-12-14,,49,52,,49,,,,26124,,TRIN,2024-05-01
-SaaS,co_98650c35cd5e,First Lien,Software & Technology,,,,,,,,,1991,2620,0.2%,1991,,,,,,TRIN,2024-05-01
-Astranis Space Technology Corp.,co_c15ecdde4c26,First Lien,Aerospace & Defense,,,,,,2023-04-13,2033-04-13,,93,334,,93,,,,96847,,TRIN,2024-05-01
-Axiom Space Inc.,co_f120505262fd,First Lien,Aerospace & Defense,,,,,,2021-05-28,2031-05-28,,121,40,,121,,,,1773,,TRIN,2024-05-01
-Axiom Space Inc.,co_f120505262fd,First Lien,Aerospace & Defense,,,,,,2021-05-28,2031-05-28,,39,6,,39,,,,882,,TRIN,2024-05-01
-Axiom Space Inc.,co_f120505262fd,First Lien,Aerospace & Defense,,,,,,,2026-06-01,,160,46,,160,,,,,,TRIN,2024-05-01
-Hermeus Corp.,co_9afb9b84c3d5,First Lien,Aerospace & Defense,,,,,,2022-08-09,2032-08-09,,216,61,,216,,,,28624,,TRIN,2024-05-01
-Rocket Lab USA Inc.,co_0728b61d003f,First Lien,Aerospace & Defense,,,,,,2023-12-29,2027-12-29,,1772,1354,,1772,,,,572656,,TRIN,2024-05-01
-Space Perspective Inc.,co_2d048b2fc8f2,First Lien,Aerospace & Defense,,,,,,2022-03-03,2032-03-03,,256,241,,256,,,,221280,,TRIN,2024-05-01
-Macrofab Inc.,co_621823b81a89,First Lien,Software & Technology,,,,,,2023-07-21,2033-07-21,,333,284,,333,,,,622353,,TRIN,2024-05-01
-Get Spiffy Inc.,co_5127f84dd927,First Lien,Transportation & Logistics,,,,,,2023-07-14,2033-07-14,,408,317,,408,,,,874527,,TRIN,2024-05-01
-Construction Technology Nexii Building Solutions Inc.,co_f8ed2317af1f,Common Equity,Software & Technology,,,,,,2021-08-27,2026-08-27,,410,,,410,,,,63175,,TRIN,2024-05-01
-Construction Technology Nexii Building Solutions Inc.,co_f8ed2317af1f,Common Equity,Software & Technology,,,,,,2022-06-08,2027-06-08,,204,,,204,,,,24123,,TRIN,2024-05-01
-Construction Technology Nexii Building Solutions Inc.,co_f8ed2317af1f,Other,Software & Technology,,,,,,,,,614,,,614,,,,,,TRIN,2024-05-01
-Aledia Inc.,co_2773f30bbf27,Preferred Equity,,,,,,,2022-03-31,2032-03-31,,130,444,,130,,,,11771,,TRIN,2024-05-01
-All.Space Networks Limited.,co_f209ca422f41,Common Equity,,,,,,,2022-08-22,2032-08-22,,113,73,,113,,,,71203,,TRIN,2024-05-01
-Rigetti & Co Inc.,co_65da78d1d4ef,Other Equity,Artificial Intelligence & Automation,,,,,,2022-02-25,2025-04-01,,500,77,,500,,,,50000,,TRIN,2024-05-01
-Rigetti & Co Inc.,co_65da78d1d4ef,Other Equity,Artificial Intelligence & Automation,,,,,,2021-05-18,2025-04-01,,506,1159,,506,,,,757297,,TRIN,2024-05-01
-Rigetti & Co Inc.,co_65da78d1d4ef,Other Equity,Artificial Intelligence & Automation,,,,,,,2025-04-01,,1006,1236,,1006,,,,,,TRIN,2024-05-01
-Tarana Wireless Inc.,co_36c59af4d377,Other Equity,Other,,,,,,2022-03-16,,,500,498,,500,,,,611246,,TRIN,2024-05-01
-Vertical Communications Inc.,co_6d0e5270c250,Other Equity,Other,,,,,,2020-01-16,2026-11-01,,3966,2565,,3966,,,,5500,,TRIN,2024-05-01
-Vertical Communications Inc.,co_6d0e5270c250,Other Equity,Other,,,,,,,2026-11-01,,3966,2565,,3966,,,,,,TRIN,2024-05-01
-Project Frog Inc.,co_17c332a24389,Other Equity,Software & Technology,,,,,,2021-08-03,,,1253,57,,1253,,,,3129887,fair_value_suspicious_vs_size,TRIN,2024-05-01
-Project Frog Inc.,co_17c332a24389,Other Equity,Software & Technology,,,,,,,,,4621,57,,4621,,,,,fair_value_suspicious_vs_size,TRIN,2024-05-01
-Construction Technology,co_7773d6f4536e,Other Equity,Software & Technology,,,,,,,,,4621,57,0%,4621,,,,,fair_value_suspicious_vs_size,TRIN,2024-05-01
-Portofino Labs Inc.,co_fe73f96fd775,Other Equity,Consumer & Retail,,,,,,2021-11-01,2025-11-01,,500,694,,500,,,,256291,,TRIN,2024-05-01
-Quip NYC Inc.,co_c670c191758a,Other Equity,Consumer & Retail,,,,,,2021-08-17,2026-04-01,,500,0,,500,,,,3320,,TRIN,2024-05-01
-Core Scientific Inc.,co_3a1f25366961,Other Equity,Software & Technology,,,,,,2024-01-24,,,17546,12372,,17546,,,,3494967,,TRIN,2024-05-01
-Digital Assets Technology and Services,co_89e95b7d73b5,Other Equity,Software & Technology,,,,,,,,,17546,12372,0.9%,17546,,,,,,TRIN,2024-05-01
-Dynamics Inc.,co_cb0542fa7340,Other Equity,Insurance,,,,,,2020-01-16,,,390,,,390,,,,17726,,TRIN,2024-05-01
-Openly Holdings Corp.,co_7f016f63dbf3,Other Equity,Insurance,,,,,,2023-05-09,2027-12-01,,500,501,,500,,,,44725,,TRIN,2024-05-01
-Slope Tech Inc.,co_bc2014510273,Other Equity,Insurance,,,,,,2023-06-20,2025-03-14,,500,511,,500,,,,64654,,TRIN,2024-05-01
-Emergy Inc.,co_6bd270587e1a,Other Equity,Food & Beverage,,,,,,2021-06-28,2024-05-01,,500,116,,500,,,,75958,,TRIN,2024-05-01
-Intelligent Brands Inc.,co_1fdbd3479e8a,Other Equity,Food & Beverage,,,,,,2020-01-16,,,537,10,,537,,,,30357,,TRIN,2024-05-01
-Food and Agriculture Technologies,co_2c32465f3b99,Other Equity,Food & Beverage,,,,,,,,,1037,126,0%,1037,,,,,,TRIN,2024-05-01
-Electric Hydrogen Co.,co_45d8e8821ab5,Other Equity,Software & Technology,,,,,,2023-04-06,2026-04-01,,500,528,,500,,,,87087,,TRIN,2024-05-01
-Mainspring Energy Inc.,co_e3b2090f8c06,Other Equity,Software & Technology,,,,,,2022-03-30,2026-10-01,,500,354,,500,,,,65614,,TRIN,2024-05-01
-RTS Holding Inc.,co_d017ff732a2c,Other Equity,Software & Technology,,,,,,2022-07-05,2027-01-01,,334,511,,334,,,,2035,,TRIN,2024-05-01
-ortfolio Company Equity Investments- United States Green Technology RTS Holding Inc.,co_6f54130423fd,Preferred Equity,,,,,,,2023-02-15,,,405,503,,405,,,,1966,,TRIN,2024-05-01
-RTS Holding Inc.,co_d017ff732a2c,Other Equity,Software & Technology,,,,,,,2027-01-01,,739,1014,,739,,,,,,TRIN,2024-05-01
-Dentologie Enterprises Inc.,co_d0252579a8ac,Other Equity,Healthcare,,,,,,2023-08-03,2027-10-01,,300,380,,300,,,,72338,,TRIN,2024-05-01
-Emerald Cloud Lab Inc.,co_eba67d13f3f3,Other Equity,Healthcare,,,,,,2022-06-03,2024-08-01,,500,249,,500,,,,199537,,TRIN,2024-05-01
-Lark Technologies Inc.,co_09562cab2286,Other Equity,Healthcare,,,,,,2021-08-19,2025-04-01,,500,92,,500,,,,32416,,TRIN,2024-05-01
-WorkWell Prevention & Care Inc.,co_7c2bd93e871d,Other Equity,Healthcare,,,,,,2020-01-16,2027-01-01,,51,,,51,,,,7000000,,TRIN,2024-05-01
-WorkWell Prevention & Care Inc.,co_7c2bd93e871d,Other Equity,Healthcare,,,,,,2020-01-16,2027-01-01,,3450,,,3450,,,,3450,,TRIN,2024-05-01
-WorkWell Prevention & Care Inc.,co_7c2bd93e871d,Other Equity,Healthcare,,,,,,2020-01-16,2027-01-01,,3219,,,3219,,,,3170,,TRIN,2024-05-01
-WorkWell Prevention & Care Inc.,co_7c2bd93e871d,Other Equity,Healthcare,,,,,,,2027-01-01,,6720,,,6720,,,,,,TRIN,2024-05-01
-Nomad Health Inc.,co_88fb3bc1047d,Other Equity,Software & Technology,,,,,,2022-05-27,2026-10-01,,500,126,,500,,,,37920,,TRIN,2024-05-01
-Human Resource Technology,co_f4a58d05fb91,Other Equity,Software & Technology,,,,,,,,,500,126,0%,500,,,,,,TRIN,2024-05-01
-SBG Labs Inc.,co_1a0d5a5d7b0b,Other Equity,Industrials,,,,,,2023-07-29,,,13,49,,13,,,,21730,,TRIN,2024-05-01
-SBG Labs Inc.,co_1a0d5a5d7b0b,Other Equity,Industrials,,,,,,2023-10-10,,,4,14,,4,,,,6332,,TRIN,2024-05-01
-SBG Labs Inc.,co_1a0d5a5d7b0b,Other Equity,Industrials,,,,,,2024-01-12,,,7,28,,7,,,,12205,,TRIN,2024-05-01
-SBG Labs Inc.,co_1a0d5a5d7b0b,Other Equity,Industrials,,,,,,,,,24,91,,24,,,,,,TRIN,2024-05-01
-Multi-Sector Senior Credit Corp.,co_e3de614d753d,Other Equity,,,,,,,2023-01-30,,,4026,4609,,4026,,,,,,TRIN,2024-05-01
-Multi-Sector Holdings i40 LLC,co_3b462e273e11,Other Equity,,,,,,,January 30 2023,,,4026,4609,0.3%,4026,,,,,,TRIN,2024-05-01
-Knockaway Inc.,co_4334c1d1f928,Other Equity,Real Estate,,,,,,2022-03-30,2028-09-01,,500,,,500,,,,30458,,TRIN,2024-05-01
-Knockaway Inc.,co_4334c1d1f928,Other Equity,Real Estate,,,,,,2023-09-29,2028-09-01,,250,,,250,,,,2956320,,TRIN,2024-05-01
-Knockaway Inc.,co_4334c1d1f928,Other Equity,Real Estate,,,,,,,2028-09-01,,750,,,750,,,,,,TRIN,2024-05-01
-Orchard Technologies Inc.,co_73a016b6042c,Other Equity,Real Estate,,,,,,2021-08-06,,,500,1,,500,,,,74406,,TRIN,2024-05-01
-Orchard Technologies Inc.,co_73a016b6042c,Other Equity,Real Estate,,,,,,2023-03-16,,,500,0,,500,,,,50000,,TRIN,2024-05-01
-Orchard Technologies Inc.,co_73a016b6042c,Other Equity,Real Estate,,,,,,,,,1000,1,,1000,,,,,fair_value_suspicious_vs_size,TRIN,2024-05-01
-Maxwell Financial Labs Inc.,co_63669cee6a41,Other Equity,Real Estate,,,,,,2021-01-22,2026-04-01,,500,381,,500,,,,135641,,TRIN,2024-05-01
-Smartly Inc.,co_0db76a72f969,Other Equity,Software & Technology,,,,,,2023-03-29,,,500,515,,500,,,,136388,,TRIN,2024-05-01
-The Tomorrow Companies Inc.,co_440913f52954,Other Equity,Software & Technology,,,,,,2023-07-05,,,325,212,,325,,,,108088,,TRIN,2024-05-01
-SaaS,co_98650c35cd5e,Other Equity,Software & Technology,,,,,,,,,825,727,0.1%,825,,,,,,TRIN,2024-05-01
-Astranis Space Technology Corp.,co_c15ecdde4c26,Other Equity,Aerospace & Defense,,,,,,2023-04-05,2026-11-01,,300,135,,300,,,,13685,,TRIN,2024-05-01
-Astranis Space Technology Corp.,co_c15ecdde4c26,Other Equity,Aerospace & Defense,,,,,,2024-03-19,2026-11-01,,600,607,,600,,,,64223,,TRIN,2024-05-01
-Astranis Space Technology Corp.,co_c15ecdde4c26,Other Equity,Aerospace & Defense,,,,,,,2026-11-01,,900,742,,900,,,,,,TRIN,2024-05-01
-Axiom Space Inc.,co_f120505262fd,Other Equity,Aerospace & Defense,,,,,,2021-08-11,2026-06-01,,521,567,,521,,,,3624,,TRIN,2024-05-01
-Hadrian Automation Inc.,co_1c48629728b3,Other Equity,Aerospace & Defense,,,,,,2022-03-29,2025-09-01,,500,488,,500,,,,53154,,TRIN,2024-05-01
-Hadrian Automation Inc.,co_1c48629728b3,Other Equity,Aerospace & Defense,,,,,,2023-12-11,2025-09-01,,300,292,,300,,,,31831,,TRIN,2024-05-01
-Hadrian Automation Inc.,co_1c48629728b3,Other Equity,Aerospace & Defense,,,,,,,2025-09-01,,800,780,,800,,,,,,TRIN,2024-05-01
-3Q GoFor Holdings LP,co_96ae49ab4aa1,Other Equity,Software & Technology,,,,,,2022-08-25,,,500,,,500,,,,,,TRIN,2024-05-01
-3Q GoFor Holdings LP,co_96ae49ab4aa1,Other Equity,Software & Technology,,,,,,2023-01-17,,,500,,,500,,,,,,TRIN,2024-05-01
-3Q GoFor Holdings LP,co_96ae49ab4aa1,Other Equity,Software & Technology,,,,,,,,,1000,,,1000,,,,,,TRIN,2024-05-01
-Macrofab Inc.,co_621823b81a89,Other Equity,Software & Technology,,,,,,2024-01-30,2027-08-01,,500,502,,500,,,,247173,,TRIN,2024-05-01
-Construction Technology Nexii Building Solutions Inc.,co_f8ed2317af1f,Common Equity,Software & Technology,,,,,,2022-02-28,,,500,,,500,,,,24418,,TRIN,2024-05-01
-Goldman Sachs Financial Square Government Institutional Fund,co_881fe97fe67d,Other,Financial Services,,,,,,,,,4879,4879,,4879,,,,,,TRIN,2024-05-01
-Prime Rate,co_eb8bbfc97293,First Lien,,,,SOFR,8.5%,,,,,,,,,,,,,,TRIN,2024-05-01
-SOFR,co_9d4931603a2a,First Lien,,,,SOFR,5.33%,,,,,,,,,,,,,,TRIN,2024-05-01
-Formation Transactions,co_51d53a87e0a6,Other,,,,,,,,,,0,0,,0,,,,,,TRIN,2024-05-01
-Food and Agriculture,co_aa1a4867fdd7,First Lien,Food & Beverage,,,,,,,,,,,5.3%,,,,,,,TRIN,2024-05-01
-Edeniq Inc.,co_438a0d44da6c,Other Equity,Software & Technology,,,,,,2020-01-16,2025-06-01,,,1499,,,,,,7807499,,TRIN,2024-05-01
-Edeniq Inc.,co_438a0d44da6c,Other Equity,Software & Technology,,,,,,2020-01-16,2025-06-01,,,1218,,,,,,3657487,,TRIN,2024-05-01
-Edeniq Inc.,co_438a0d44da6c,Other Equity,Software & Technology,,,,,,2020-01-16,2025-06-01,,,3121,,,,,,133766138,,TRIN,2024-05-01
-Edeniq Inc.,co_438a0d44da6c,Other Equity,Software & Technology,,,,,,,2025-06-01,,,5838,,,,,,,,TRIN,2024-05-01
-Green Technologies,co_903ecfcad14c,Other Equity,Green Technologies,,,,,,,,,,,0.5%,,,,,,,TRIN,2024-05-01
-Control Investments Edeniq Inc.,co_a74cdd0cb9ac,Other,Financial Services,,,,,,,,,,12064,,,,,,,,TRIN,2024-05-01
-Control Investments 3Q GoFor Holdings LP,co_e71b666d5873,Other,Financial Services,,,,,,,,,,4479,,,,,,,,TRIN,2024-05-01
-Control Investments Project Frog Inc.,co_823d6a3755fa,Other,Financial Services,,,,,,,,,,59,,,,,,,,TRIN,2024-05-01
-Control Investments Vertical Communications Inc.,co_308302f5797d,Other,Financial Services,,,,,,,,,,17887,,,,,,,,TRIN,2024-05-01
-Control Investments WorkWell Prevention and Care Inc.,co_0063380bb077,Other,Financial Services,,,,,,,,,,500,,,,,,,,TRIN,2024-05-01
-Control Investments,co_69924ecfa313,Other,Financial Services,,,,,,,,,,34989,,,,,,,,TRIN,2024-05-01
-Senior Credit Corp.,co_091f104d9e18,Other,,,,,,,,,,,14004,,,,,,,,TRIN,2024-05-01
-Affiliate Investments,co_92a36592f2b5,Other,Financial Services,,,,,,,,,,14004,,,,,,,,TRIN,2024-05-01
-Control and Affiliate Investments,co_5c7400e1fb9b,Other,Financial Services,,,,,,,,,,48993,,,,,,,,TRIN,2024-05-01
+company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags
+"Ambient Photonics, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,6.0%,,2022-07-28,2025-07-01,2006,2145,2160,,2145,,,,,
+"Ambient Photonics, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,6.0%,,2022-11-17,2025-05-01,2210,2352,2234,,2352,,,,,
+"Ambient Photonics, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,6.0%,,2022-12-20,2025-06-01,375,396,379,,396,,,,,
+Applied Digital Corp.,Other Debt,Artificial Intelligence & Automation,,,,0.0%,,2024-03-13,2025-10-01,12467,12465,12465,,12465,,,,,
+Applied Digital Corp.,Other Debt,Artificial Intelligence & Automation,19.0%,,,,,2024-03-25,2026-03-01,21287,21286,21286,,21286,,,,,
+"Rigetti & Co, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,7.5%,,2021-03-10,2025-04-01,5768,6048,6041,,6048,,,,,
+"Rigetti & Co, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,7.5%,,2021-05-18,2025-06-01,4387,4561,4552,,4561,,,,,
+"Rigetti & Co, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,7.5%,,2021-11-10,2025-12-01,5182,5298,5277,,5298,,,,,
+"Rigetti & Co, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,7.5%,,2022-01-27,2026-02-01,4004,4100,4085,,4100,,,,,
+"Stratifyd, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,7.8%,,2021-09-03,2026-07-01,4457,4631,3714,,4631,,,,,
+Greenlight Biosciences Inc.,Other Debt,Artificial Intelligence & Automation,15.3%,,,,,2021-06-17,2024-07-01,279,476,563,,476,,,,,
+Greenlight Biosciences Inc.,Other Debt,Artificial Intelligence & Automation,22.6%,,,,,2021-08-31,2024-09-01,180,251,321,,251,,,,,
+Greenlight Biosciences Inc.,Other Debt,Artificial Intelligence & Automation,19.3%,,,,,2021-08-31,2024-09-01,104,145,185,,145,,,,,
+"Pendulum Therapeutics, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,6.8%,,2021-12-31,2026-07-01,4292,4448,4400,,4448,,,,,
+"Pendulum Therapeutics, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,6.8%,,2022-02-28,2026-07-01,4581,4737,4695,,4737,,,,,
+"Pendulum Therapeutics, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,6.8%,,2022-03-30,2026-07-01,4722,4878,4839,,4878,,,,,
+"Pendulum Therapeutics, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,6.8%,,2022-05-06,2026-07-01,5000,5156,5122,,5156,,,,,
+"Pendulum Therapeutics, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,6.8%,,2022-06-17,2026-07-01,5000,5156,5122,,5156,,,,,
+"Pendulum Therapeutics, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,6.8%,,2024-02-01,2026-07-01,1405,775,775,,775,,,,,
+"Taysha Gene Therapies, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,4.5%,,2023-11-13,2028-12-01,30000,29858,30585,,29858,,,,,
+"Vertical Communications, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,4.0%,,2021-08-23,2026-11-01,12600,15322,15322,,15322,,,,,
+"viaPhoton, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,6.6%,,2022-03-31,2027-04-01,15000,15384,14391,,15384,,,,,
+"Eterneva, Inc.",Other Debt,Consumer & Retail,10.6%,,,,,2021-11-24,2025-12-01,259,312,309,,312,,,,,
+"Eterneva, Inc.",Other Debt,Consumer & Retail,10.4%,,,,,2022-03-16,2026-04-01,416,480,473,,480,,,,,
+"Eterneva, Inc.",Other Debt,Consumer & Retail,16.2%,,,,,2022-06-17,2026-07-01,1206,1349,1311,,1349,,,,,
+"Happiest Baby, Inc.",Other Debt,Consumer & Retail,8.4%,,,,,2021-01-22,2024-05-01,29,125,153,,125,,,,,
+"Molekule, Inc.",Other Debt,Consumer & Retail,8.8%,,,,,2020-06-19,2024-12-31,312,595,400,,595,,,,,
+"Molekule, Inc.",Other Debt,Consumer & Retail,12.3%,,,,,2020-09-29,2024-12-31,273,347,350,,347,,,,,
+"Molekule, Inc.",Other Debt,Consumer & Retail,11.9%,,,,,2020-12-18,2024-12-31,473,584,607,,584,,,,,
+"Molekule, Inc.",Other Debt,Consumer & Retail,11.3%,,,,,2021-08-25,2024-12-31,385,454,495,,454,,,,,
+"Ogee, Inc.",First Lien,Consumer & Retail,,,Prime,5.8%,,2023-02-14,2027-03-01,5000,4996,4989,,4996,,,,,
+"Ogee, Inc.",First Lien,Consumer & Retail,,,Prime,5.8%,,2023-09-29,2027-03-01,5000,4948,5028,,4948,,,,,
+"Portofino Labs, Inc.",First Lien,Consumer & Retail,,,Prime,8.3%,,2021-04-01,2025-11-01,1488,1567,1551,,1567,,,,,
+"Quip NYC, Inc.",First Lien,Consumer & Retail,,,Prime,8.0%,,2021-03-09,2026-04-01,12153,12503,12586,,12503,,,,,
+"Quip NYC, Inc.",First Lien,Consumer & Retail,,,Prime,8.0%,,2022-02-10,2026-04-01,1736,1792,1808,,1792,,,,,
+"Rinse, Inc.",First Lien,Consumer & Retail,,,Prime,8.0%,,2022-05-10,2027-06-01,4730,4780,4838,,4780,,,,,
+"Rinse, Inc.",First Lien,Consumer & Retail,,,Prime,8.0%,,2023-09-22,2028-10-01,4000,3944,4041,,3944,,,,,
+"SI Tickets, Inc.",First Lien,Consumer & Retail,,,Prime,8.3%,,2022-05-11,2026-09-01,2598,2624,2486,,2624,,,,,
+"UnTuckIt, Inc.",First Lien,Consumer & Retail,12.0%,,,,,2020-01-16,2025-06-01,6908,7663,7488,,7663,,,,,
+"VitaCup, Inc.",First Lien,Consumer & Retail,,,Prime,7.5%,,2021-06-23,2026-01-01,6000,5871,5597,,5871,,,,,
+"Whoop, Inc.",First Lien,Consumer & Retail,,,Prime,5.3%,,2023-05-17,2028-06-01,23625,23194,23303,,23194,,,,,
+"Whoop, Inc.",First Lien,Consumer & Retail,,,Prime,5.3%,,2024-03-01,2029-04-01,10125,9422,9422,,9422,,,,,
+"Metabolon, Inc.",First Lien,Diagnostics & Tools,,,Prime,4.5%,,2024-03-28,2029-04-01,42500,41437,41437,,41437,,,,,
+"Cleanspark, Inc.",Other Debt,Software & Technology,10.3%,,,,,2022-04-22,2025-05-01,7891,8748,8578,,8748,,,,,
+"Edblox, Inc.",First Lien,Education,,,Prime,4.5%,,2024-03-19,2029-04-01,25000,24506,24506,,24506,,,,,
+Medical Sales Training Holding Company,First Lien,Education,,,Prime,8.8%,,2021-03-18,2025-04-01,5175,5505,5196,,5505,,,,,
+Medical Sales Training Holding Company,First Lien,Education,,,Prime,8.8%,,2021-07-21,2025-08-01,1825,1933,1800,,1933,,,,,
+"Yellowbrick Learning, Inc.",First Lien,Education,2.0%,,,,,2021-02-01,2026-03-01,7500,7875,5911,,7875,,,,,
+"Yellowbrick Learning, Inc.",First Lien,Education,2.0%,,,,,2021-08-10,2026-03-01,2500,2625,1973,,2625,,,,,
+"Bestow, Inc.",First Lien,Insurance,,,Prime,6.5%,,2022-04-25,2027-05-01,25000,25156,25062,,25156,,,,,
+"Bestow, Inc.",First Lien,Insurance,,,Prime,6.5%,,2022-05-12,2027-06-01,15000,15088,15125,,15088,,,,,
+"Cherry Technologies, Inc.",First Lien,Insurance,,,Prime,4.5%,,2024-03-29,2029-04-01,20000,19803,19803,,19803,,,,,
+"Empower Financial, Inc.",First Lien,Insurance,,,Prime,4.8%,,2023-10-13,2028-05-01,12000,11741,12152,,11741,,,,,
+"Empower Financial, Inc.",First Lien,Insurance,,,Prime,4.8%,,2024-01-05,2028-05-01,3000,2849,2849,,2849,,,,,
+"Empower Financial, Inc.",First Lien,Insurance,,,Prime,4.8%,,2024-02-08,2028-05-01,4500,4268,4268,,4268,,,,,
+"Eqis Capital Management, Inc.",First Lien,Insurance,,,Prime,7.5%,,2022-06-15,2026-07-01,6809,7019,6879,,7019,,,,,
+"Kafene, Inc.",First Lien,Insurance,,,Prime,4.0%,,2024-01-05,2029-02-01,12500,12340,12340,,12340,,,,,
+Openly Holdings Corp.,First Lien,Insurance,,,Prime,6.3%,,2022-11-18,2027-12-01,3125,3147,3160,,3147,,,,,
+Openly Holdings Corp.,First Lien,Insurance,,,Prime,6.3%,,2023-01-31,2027-12-01,6250,6284,6365,,6284,,,,,
+Openly Holdings Corp.,First Lien,Insurance,,,Prime,6.3%,,2023-06-22,2027-12-01,15625,15672,16111,,15672,,,,,
+"Parafin SPV 2, LLC",First Lien,Insurance,,,SOFR,10.8%,,2024-02-22,2026-12-21,8042,7768,7768,,7768,,,,,
+"Petal Card, Inc.",First Lien,Insurance,,,Prime,7.5%,,2020-01-16,2026-07-01,10804,10064,9089,,10064,,,,,
+"Petal Card, Inc.",First Lien,Insurance,,,Prime,7.5%,,2021-08-06,2026-07-01,7563,7045,6362,,7045,,,,,
+"Petal Card, Inc.",First Lien,Insurance,,,Prime,7.5%,,2023-07-27,2026-08-01,21939,18706,16750,,18706,,,,,
+"Slope Tech, Inc.",First Lien,Insurance,,,SOFR,11.8%,,2022-10-05,2025-03-14,3433,3298,3482,,3298,,,,,
+"ZenDrive, Inc.",First Lien,Insurance,,,Prime,7.0%,,2021-07-16,2026-08-01,12599,12879,13312,,12879,,,,,
+"Athletic Brewing Company, LLC",Other Debt,Food & Beverage,11.1%,,,,,2021-12-07,2026-09-01,19866,20611,20040,,20611,,,,,
+"Athletic Brewing Company, LLC",Other Debt,Food & Beverage,11.2%,,,,,2022-03-16,2026-09-01,4962,5134,5002,,5134,,,,,
+"Athletic Brewing Company, LLC",Other Debt,Food & Beverage,11.2%,,,,,2023-12-15,2028-01-01,5675,5721,6019,,5721,,,,,
+"Bowery Farming, Inc.",First Lien,Food & Beverage,,,SOFR,10.0%,,2021-09-10,2026-09-10,8660,7947,3810,,7947,,,,,
+"Daring Foods, Inc.",Other Debt,Food & Beverage,9.6%,,,,,2021-04-08,2024-05-01,16,53,69,,53,,,,,
+"Daring Foods, Inc.",Other Debt,Food & Beverage,10.0%,,,,,2021-08-31,2024-09-01,95,140,138,,140,,,,,
+"Daring Foods, Inc.",Other Debt,Food & Beverage,9.4%,,,,,2021-11-01,2024-12-01,262,337,333,,337,,,,,
+"Daring Foods, Inc.",Other Debt,Food & Beverage,9.5%,,,,,2022-03-08,2025-04-01,831,979,961,,979,,,,,
+"Daring Foods, Inc.",Other Debt,Food & Beverage,10.2%,,,,,2022-04-29,2025-05-01,395,458,450,,458,,,,,
+"Daring Foods, Inc.",Other Debt,Food & Beverage,10.9%,,,,,2022-07-06,2025-08-01,218,245,241,,245,,,,,
+"Daring Foods, Inc.",Other Debt,Food & Beverage,12.1%,,,,,2022-08-25,2025-09-01,543,603,596,,603,,,,,
+"DrinkPak, LLC",Other Debt,Food & Beverage,12.9%,,,,,2023-02-17,2026-09-01,11422,11942,11941,,11942,,,,,
+"Emergy, Inc.",Other Debt,Food & Beverage,6.8%,,,,,2021-01-08,2024-05-01,34,84,66,,84,,,,,
+"Emergy, Inc.",Other Debt,Food & Beverage,9.2%,,,,,2021-12-15,2025-07-01,4671,5658,4795,,5658,,,,,
+"Emergy, Inc.",Other Debt,Food & Beverage,12.6%,,,,,2022-12-13,2026-07-01,7716,8269,7377,,8269,,,,,
+"Intelligent Brands, Inc.",First Lien,Food & Beverage,,,Prime,9.5%,,2020-12-31,2024-06-30,9412,10495,10808,,10495,,,,,
+"The Fynder Group, Inc.",Other Debt,Food & Beverage,9.1%,,,,,2020-10-14,2024-05-01,19,81,80,,81,,,,,
+"The Fynder Group, Inc.",Other Debt,Food & Beverage,9.3%,,,,,2022-03-31,2025-10-01,1387,1586,1455,,1586,,,,,
+"Bolb, Inc.",Other Debt,Software & Technology,10.3%,,,,,2021-10-12,2024-11-01,374,475,466,,475,,,,,
+"Commonwealth Fusion Systems, LLC",Other Debt,Software & Technology,9.5%,,,,,2021-09-10,2024-10-01,437,631,621,,631,,,,,
+"Commonwealth Fusion Systems, LLC",Other Debt,Software & Technology,9.7%,,,,,2021-10-20,2024-11-01,147,203,199,,203,,,,,
+"Commonwealth Fusion Systems, LLC",Other Debt,Software & Technology,13.0%,,,,,2023-06-16,2030-07-01,5052,5107,5323,,5107,,,,,
+Crusoe Energy Systems LLC,Other Debt,Software & Technology,12.7%,,,,,2024-03-01,2029-03-01,14000,13862,13862,,13862,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,9.2%,,,,,2020-10-27,2024-11-01,95,164,158,,164,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,9.1%,,,,,2020-11-19,2024-12-01,132,216,208,,216,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,10.8%,,,,,2020-12-29,2025-01-01,144,223,219,,223,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,9.1%,,,,,2021-03-25,2025-04-01,420,594,566,,594,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,8.8%,,,,,2021-12-01,2026-01-01,652,789,743,,789,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,10.4%,,,,,2022-04-08,2026-05-01,1076,1237,1196,,1237,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,9.2%,,,,,2022-05-27,2026-06-01,590,677,639,,677,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,9.9%,,,,,2022-06-13,2026-07-01,866,982,934,,982,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,11.1%,,,,,2022-08-24,2026-09-01,359,400,384,,400,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,11.6%,,,,,2022-11-10,2026-12-01,338,370,361,,370,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,12.1%,,,,,2023-04-12,2027-05-01,784,828,817,,828,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,12.7%,,,,,2023-06-29,2027-07-01,653,682,676,,682,,,,,
+Electric Hydrogen Co.,Other Debt,Software & Technology,9.0%,,,,,2022-09-12,2026-04-01,1234,1370,1348,,1370,,,,,
+Electric Hydrogen Co.,Other Debt,Software & Technology,12.5%,,,,,2023-12-22,2029-01-01,5741,5800,5968,,5800,,,,,
+"Hi-Power, LLC",Other Debt,Software & Technology,12.4%,,,,,2021-09-30,2025-04-01,2295,2357,2372,,2357,,,,,
+"Hi-Power, LLC",Other Debt,Software & Technology,14.7%,,,,,2022-09-30,2026-04-01,2637,2650,2670,,2650,,,,,
+"SeaOn Global, LLC",Other Debt,Software & Technology,9.3%,,,,,2022-06-16,2026-07-01,4085,4579,4368,,4579,,,,,
+"SeaOn Global, LLC",Other Debt,Software & Technology,9.3%,,,,,2022-08-17,2026-09-01,2097,2316,2227,,2316,,,,,
+"Edeniq, Inc.",First Lien,Software & Technology,11.0%,,,,,2021-11-30,2025-06-01,2406,2022,2591,,2022,,,,,
+"Footprint International Holding, Inc.",First Lien,Software & Technology,,,Prime,7.3%,,2022-02-18,2027-03-01,20000,19283,19600,,19283,,,,,
+"Footprint International Holding, Inc.",First Lien,Software & Technology,,,Prime,7.3%,,2022-04-20,2027-03-01,20000,19225,19538,,19225,,,,,
+"Mainspring Energy, Inc.",First Lien,Software & Technology,11.0%,,,,,2022-03-18,2026-10-01,26399,26989,26315,,26989,,,,,
+"RTS Holding, Inc.",First Lien,Software & Technology,,,Prime,7.3%,,2021-12-31,2027-01-01,13800,14988,15052,,14988,,,,,
+"RTS Holding, Inc.",First Lien,Software & Technology,,,Prime,7.25%,,2022-10-21,2027-11-01,7200,7222,7251,,7222,,,,,
+"RTS Holding, Inc.",First Lien,Software & Technology,,,Prime,4.3%,,2024-01-19,2029-02-01,6000,5578,5578,,5578,,,,,
+"Emerald Cloud Lab, Inc.",Other Debt,Healthcare,9.7%,,,,,2021-07-13,2024-08-01,1331,2066,2035,,2066,,,,,
+"Dentologie Enterprises, Inc.",First Lien,Healthcare,,,Prime,6.9%,,2022-10-14,2027-10-01,3000,3018,3023,,3018,,,,,
+"Dentologie Enterprises, Inc.",First Lien,Healthcare,,,Prime,6.9%,,2023-12-15,2027-10-01,4200,4129,4326,,4129,,,,,
+"Lark Technologies, Inc.",First Lien,"Dentologie Enterprises, Inc.",,,Prime,8.3%,,2020-09-30,2025-04-01,2037,2208,2174,,2208,,,,,
+"Lark Technologies, Inc.",First Lien,"Dentologie Enterprises, Inc.",,,Prime,8.3%,,2021-06-30,2026-01-01,3291,3403,3322,,3403,,,,,
+"Lark Technologies, Inc.",First Lien,"Dentologie Enterprises, Inc.",,,Prime,8.3%,,2023-07-07,2028-01-01,5000,4965,5045,,4965,,,,,
+Moxe Health Corp.,First Lien,"Dentologie Enterprises, Inc.",,,Prime,5.5%,,2023-12-29,2028-01-01,12500,12364,12189,,12364,,,,,
+"RXAnte, Inc.",First Lien,"Dentologie Enterprises, Inc.",,,Prime,4.48%,,2022-11-21,2027-12-01,9167,9207,9177,,9207,,,,,
+"RXAnte, Inc.",First Lien,"Dentologie Enterprises, Inc.",,,Prime,4.48%,,2023-04-14,2027-12-01,3040,3010,3114,,3010,,,,,
+"RXAnte, Inc.",First Lien,"Dentologie Enterprises, Inc.",,,Prime,4.48%,,2023-10-19,2027-12-01,3017,2973,3051,,2973,,,,,
+"TMRW Life Sciences, Inc.",First Lien,"Dentologie Enterprises, Inc.",,,Prime,5.0%,,2022-04-29,2027-05-01,5000,5087,4832,,5087,,,,,
+"TMRW Life Sciences, Inc.",First Lien,"Dentologie Enterprises, Inc.",,,Prime,5.0%,,2023-03-03,2027-05-01,15000,15148,15215,,15148,,,,,
+"TMRW Life Sciences, Inc.",First Lien,"Dentologie Enterprises, Inc.",,,Prime,5.0%,,2023-12-08,2027-05-01,10000,9982,10032,,9982,,,,,
+WorkWell Prevention & Care Inc.,First Lien,"Dentologie Enterprises, Inc.",,,Prime,5.0%,,2022-12-31,2027-01-01,500,500,500,,500,,,,,
+"Nomad Health, Inc.",First Lien,Software & Technology,,,Prime,5.5%,,2022-03-29,2026-10-01,30000,30612,30294,,30612,,,,,
+"3DEO, Inc.",Other Debt,Industrials,9.1%,,,,,2022-02-23,2025-03-01,1335,1645,1515,,1645,,,,,
+"3DEO, Inc.",Other Debt,Industrials,9.0%,,,,,2022-04-12,2025-05-01,720,851,789,,851,,,,,
+Formlogic Corp.,Other Debt,Industrials,12.1%,,,,,2023-12-28,2028-01-01,4603,4590,4680,,4590,,,,,
+"Drone Racing League, Inc.",First Lien,Media & Entertainment,,,Prime,7.5%,,2022-10-17,2027-04-17,10067,10025,8911,,10025,,,,,
+"Grabit Interactive Media, Inc.",First Lien,Media & Entertainment,,,Prime,7.5%,,2022-04-08,2026-11-01,4099,4146,4120,,4146,,,,,
+"Incontext Solutions, Inc.",First Lien,Media & Entertainment,11.8%,,,,,2020-01-16,2025-09-01,2659,3809,3276,,3809,,,,,
+"PebblePost, Inc.",First Lien,Media & Entertainment,,,Prime,8.8%,,2021-05-07,2026-06-01,10559,10891,10867,,10891,,,,,
+"Vox Media Holdings, Inc.",First Lien,Media & Entertainment,,,Prime,6.3%,,2022-10-18,2027-11-01,12000,12022,12275,,12022,,,,,
+"Vox Media Holdings, Inc.",First Lien,Media & Entertainment,,,Prime,6.3%,,2022-12-29,2028-01-01,6000,5997,6120,,5997,,,,,
+"Convergent Dental, Inc.",First Lien,Healthcare,,,Prime,5.8%,,2023-04-21,2027-05-01,12000,11803,11964,,11803,,,,,
+"Convergent Dental, Inc.",First Lien,Healthcare,,,Prime,5.8%,,2024-02-29,2027-05-01,6000,5843,5843,,5843,,,,,
+"Neurolens, Inc.",First Lien,Healthcare,,,Prime,3.0%,,2023-09-29,2028-10-01,20000,19883,20475,,19883,,,,,
+"Neuros Medical, Inc.",First Lien,Healthcare,,,Prime,6.0%,,2023-08-10,2027-09-01,6000,5939,6170,,5939,,,,,
+"Revelle Aesthetics, Inc.",First Lien,Healthcare,,,Prime,5.8%,,2023-05-30,2028-05-30,15000,14937,15098,,14937,,,,,
+"Shoulder Innovations, Inc.",First Lien,Healthcare,,,Prime,3.5%,,2023-08-07,2028-09-01,11250,11163,11651,,11163,,,,,
+Senior Credit Corp.,First Lien,Other,8.5%,,,,,2023-01-30,2028-12-05,9394,9394,9394,,9394,,,,,
+"BlueGround US, Inc.",Other Debt,Real Estate,9.6%,,,,,2022-06-06,2026-01-01,2405,2639,2624,,2639,,,,,
+"BlueGround US, Inc.",Other Debt,Real Estate,11.1%,,,,,2022-07-26,2026-02-01,3474,3782,3788,,3782,,,,,
+"BlueGround US, Inc.",Other Debt,Real Estate,11.6%,,,,,2022-08-12,2026-03-01,2798,3027,3055,,3027,,,,,
+"BlueGround US, Inc.",Other Debt,Real Estate,11.9%,,,,,2022-09-26,2026-04-01,3454,3714,3777,,3714,,,,,
+"BlueGround US, Inc.",Other Debt,Real Estate,12.6%,,,,,2022-10-25,2026-05-01,2922,3124,3181,,3124,,,,,
+"BlueGround US, Inc.",Other Debt,Real Estate,12.7%,,,,,2022-11-30,2026-06-01,1948,2072,2131,,2072,,,,,
+"BoardRE, Inc.",First Lien,Real Estate,,,Prime,8.3%,,2021-10-15,2026-06-01,5000,5232,4548,,5232,,,,,
+"Knockaway, Inc.",First Lien,Real Estate,,,Prime,6.8%,,2023-09-29,2028-09-01,23644,21399,20912,,21399,,,,,
+"Knockaway, Inc.",First Lien,Real Estate,,,SOFR,10.0%,,2023-12-06,2024-12-06,1742,1742,1742,,1742,,,,,
+"Maxwell Financial Labs, Inc.",First Lien,Real Estate,,,Prime,6.0%,,2021-09-30,2026-04-01,14163,14770,14328,,14770,,,,,
+"Orchard Technologies, Inc.",First Lien,Real Estate,,,Prime,8.0%,,2024-01-01,2029-01-01,28540,28599,28380,,28599,,,,,
+"BackBlaze, Inc.",Other Debt,Software & Technology,7.3%,,,,,2020-04-17,2024-05-01,35,204,237,,204,,,,,
+"BackBlaze, Inc.",Other Debt,Software & Technology,7.4%,,,,,2020-07-27,2024-08-01,140,309,303,,309,,,,,
+"BackBlaze, Inc.",Other Debt,Software & Technology,7.2%,,,,,2020-09-04,2024-10-01,36,64,63,,64,,,,,
+"BackBlaze, Inc.",Other Debt,Software & Technology,7.5%,,,,,2021-03-29,2025-04-01,771,1072,1040,,1072,,,,,
+"Cart.com, Inc.",First Lien,Software & Technology,,,Prime,4.0%,,2023-11-17,2028-11-01,18000,17484,18249,,17484,,,,,
+"Cpacket Networks, Inc.",First Lien,Software & Technology,,,Prime,4.8%,,2024-01-29,2029-02-01,27031,26611,26611,,26611,,,,,
+Astranis Space Technology Corp.,Other Debt,Aerospace & Defense,12.1%,,,,,2023-04-13,2026-11-01,11614,11903,12310,,11903,,,,,
+"Axiom Space, Inc.",First Lien,Aerospace & Defense,,,Prime,6.0%,,2021-05-28,2026-06-01,22500,22999,23083,,22999,,,,,
+"Hadrian Automation, Inc.",Other Debt,Aerospace & Defense,12.6%,,,,,2022-03-02,2025-09-01,241,241,243,,241,,,,,
+"Hadrian Automation, Inc.",Other Debt,Aerospace & Defense,12.9%,,,,,2022-05-06,2025-11-01,2597,2591,2619,,2591,,,,,
+"Hadrian Automation, Inc.",Other Debt,Aerospace & Defense,14.3%,,,,,2022-07-15,2026-01-01,1917,1912,1942,,1912,,,,,
+"Hadrian Automation, Inc.",Other Debt,Aerospace & Defense,15.2%,,,,,2022-09-30,2026-03-01,3470,3464,3555,,3464,,,,,
+"Hadrian Automation, Inc.",Other Debt,Aerospace & Defense,16.1%,,,,,2022-12-22,2026-06-01,867,858,901,,858,,,,,
+"Hadrian Automation, Inc.",Other Debt,Aerospace & Defense,16.4%,,,,,2022-12-22,2026-12-01,813,810,852,,810,,,,,
+"Hadrian Automation, Inc.",Other Debt,Aerospace & Defense,16.4%,,,,,2023-03-29,2027-03-01,2534,2525,2637,,2525,,,,,
+"Hadrian Automation, Inc.",Other Debt,Aerospace & Defense,15.7%,,,,,2023-09-28,2027-09-01,1296,1290,1331,,1290,,,,,
+Hermeus Corp.,Other Debt,Aerospace & Defense,9.6%,,,,,2022-08-09,2026-03-01,640,685,663,,685,,,,,
+Hermeus Corp.,Other Debt,Aerospace & Defense,11.8%,,,,,2022-10-11,2026-05-01,1187,1252,1225,,1252,,,,,
+Hermeus Corp.,Other Debt,Aerospace & Defense,12.6%,,,,,2023-04-12,2026-11-01,1671,1700,1692,,1700,,,,,
+Hermeus Corp.,Other Debt,Aerospace & Defense,14.0%,,,,,2023-10-24,2027-05-01,959,949,958,,949,,,,,
+Hermeus Corp.,Other Debt,Aerospace & Defense,13.7%,,,,,2024-02-08,2027-09-01,1413,1382,1382,,1382,,,,,
+"Rocket Lab USA, Inc.",Other Debt,Aerospace & Defense,12.6%,,,,,2023-12-29,2029-01-01,52310,51421,51910,,51421,,,,,
+"Space Perspective, Inc.",First Lien,Aerospace & Defense,,,Prime,7.8%,,2022-03-03,2026-07-01,4087,4205,4093,,4205,,,,,
+"Macrofab, Inc.",First Lien,Software & Technology,,,Prime,5.5%,,2023-07-21,2027-08-01,20000,19818,20103,,19818,,,,,
+"NextCar Holding Company, Inc.",First Lien,Transportation & Logistics,,,Prime,5.8%,,2021-12-14,2024-06-30,4573,4834,2462,,4834,,,,,
+"NextCar Holding Company, Inc.",First Lien,Transportation & Logistics,,,Prime,5.8%,,2021-12-15,2024-06-30,2274,2379,1224,,2379,,,,,
+"NextCar Holding Company, Inc.",First Lien,Transportation & Logistics,,,Prime,5.8%,,2022-02-23,2024-06-30,2843,2974,1530,,2974,,,,,
+"NextCar Holding Company, Inc.",First Lien,Transportation & Logistics,,,Prime,5.8%,,2022-03-16,2024-06-30,3411,3569,1836,,3569,,,,,
+"NextCar Holding Company, Inc.",First Lien,Transportation & Logistics,,,Prime,5.8%,,2022-04-18,2024-06-30,2843,2974,1530,,2974,,,,,
+"NextCar Holding Company, Inc.",First Lien,Transportation & Logistics,,,Prime,5.8%,,2022-05-17,2024-06-30,5685,5948,3060,,5948,,,,,
+"NextCar Holding Company, Inc.",First Lien,Transportation & Logistics,,,Prime,5.8%,,2022-06-22,2024-06-30,2843,2974,1530,,2974,,,,,
+"Get Spiffy, Inc.",First Lien,Transportation & Logistics,,,Prime,4.5%,,2023-07-14,2028-01-14,9000,8944,8842,,8944,,,,,
+"Get Spiffy, Inc.",Other Debt,Transportation & Logistics,12.1%,,,,,2023-07-14,2027-02-01,379,367,307,,367,,,,,
+"Zuum Transportation, Inc.",First Lien,Transportation & Logistics,,,Prime,6.0%,,2021-12-17,2027-01-01,5000,5070,4787,,5070,,,,,
+"Nexii Building Solutions, Inc.",First Lien,Software & Technology,,,Prime,7.0%,,2021-08-27,2025-08-27,10641,11037,3179,,11037,,,,,
+"Nexii Building Solutions, Inc.",First Lien,Software & Technology,,,Prime,7.0%,,2022-06-08,2026-06-08,5329,5527,1592,,5527,,,,,
+"Nexii Building Solutions, Inc.",First Lien,Software & Technology,,,Prime,7.0%,,2023-06-21,2024-06-30,2631,2631,768,,2631,,,,,
+"GoFor Industries, Inc.",First Lien,Software & Technology,,,Prime,8.8%,,2022-01-21,2026-02-01,9760,9575,4414,,9575,,,,,
+"GoFor Industries, Inc.",First Lien,Software & Technology,,,Prime,7.0%,,2023-06-21,2024-05-10,200,200,65,,200,,,,,
+"Aledia, Inc.",Other Debt,Industrials,9.0%,,,,,2022-03-31,2025-04-01,6583,7703,7577,,7703,,,,,
+"Aledia, Inc.",Other Debt,Industrials,9.7%,,,,,2022-06-30,2025-07-01,527,593,585,,593,,,,,
+"Aledia, Inc.",Other Debt,Industrials,10.7%,,,,,2022-08-05,2025-09-01,774,855,846,,855,,,,,
+"Aledia, Inc.",Other Debt,Industrials,12.0%,,,,,2022-09-30,2025-10-01,1302,1424,1415,,1424,,,,,
+"All.Space Networks, Limited.",First Lien,Aerospace & Defense,,,Prime,7.0%,,2022-08-22,2027-09-01,9060,9112,8910,,9112,,,,,
+"Ambient Photonics, Inc.",Warrants,Financial Services,,,,,,2022-07-27,,,48,195,,48,,,,,
+"Everalbum, Inc.",Warrants,Financial Services,,,,,,2020-01-16,,,25,32,,25,,,,,
+"Hologram, Inc.",Warrants,Financial Services,,,,,,2020-01-31,,,49,240,,49,,,,,
+"Presto Automation, Inc.",Warrants,Financial Services,,,,,,2020-01-16,,,185,9,,185,,,,,
+"Stratifyd, Inc.",Warrants,Financial Services,,,,,,2021-09-03,,,56,,,56,,,,,
+"Pendulum Therapeutics, Inc.",Warrants,Financial Services,,,,,,2020-01-16,,,43,23,,43,,,,,
+"Pendulum Therapeutics, Inc.",Warrants,Financial Services,,,,,,2020-06-01,,,36,16,,36,,,,,
+"Pendulum Therapeutics, Inc.",Warrants,Financial Services,,,,,,2021-12-31,,,118,87,,118,,,,,
+"Pendulum Therapeutics, Inc.",Warrants,Financial Services,,,,,,2024-02-05,,,588,666,,588,,,,,
+"Tarana Wireless, Inc.",Warrants,Financial Services,,,,,,2021-06-30,,,967,2017,,967,,,,,
+"Vertical Communications, Inc.",Warrants,Financial Services,,,,,,2020-01-16,,,,,,,,,,,
+"viaPhoton, Inc.",Warrants,Financial Services,,,,,,2022-03-31,,,22,1,,22,,,,,
+Construction Technology,Other,Financial Services,,,,,,,,,,,,,,,,,
+"Project Frog, Inc.",Warrants,Financial Services,,,,,,2021-08-03,,,20,2,,20,,,,,
+"BaubleBar, Inc.",Warrants,Consumer & Retail,,,,,,2020-01-16,,,639,48,,639,,,,,
+"BaubleBar, Inc.",Warrants,Consumer & Retail,,,,,,2020-01-16,,,72,6,,72,,,,,
+"Boosted eCommerce, Inc.",Warrants,Consumer & Retail,,,,,,2020-12-18,,,259,54,,259,,,,,
+"Happiest Baby, Inc.",Warrants,Consumer & Retail,,,,,,2020-01-16,,,193,84,,193,,,,,
+"Madison Reed, Inc.",Warrants,Consumer & Retail,,,,,,2020-01-16,,,185,333,,185,,,,,
+"Madison Reed, Inc.",Warrants,Consumer & Retail,,,,,,2020-01-16,,,71,107,,71,,,,,
+"Madison Reed, Inc.",Warrants,Consumer & Retail,,,,,,2020-01-16,,,56,86,,56,,,,,
+"Ogee, Inc.",Warrants,Consumer & Retail,,,,,,2023-02-14,,,57,42,,57,,,,,
+"Ogee, Inc.",Warrants,Consumer & Retail,,,,,,2023-09-29,,,52,42,,52,,,,,
+"Portofino Labs, Inc.",Warrants,Consumer & Retail,,,,,,2020-12-31,,,160,123,,160,,,,,
+"Portofino Labs, Inc.",Warrants,Consumer & Retail,,,,,,2021-04-01,,,99,51,,99,,,,,
+"Rinse, Inc.",Warrants,Consumer & Retail,,,,,,2022-05-10,,,118,524,,118,,,,,
+"SI Tickets, Inc.",Warrants,Consumer & Retail,,,,,,2022-05-11,,,162,6,,162,,,,,
+"Super73, Inc.",Warrants,Consumer & Retail,,,,,,2020-12-31,,,105,220,,105,,,,,
+"Trendly, Inc.",Warrants,Consumer & Retail,,,,,,2020-01-16,,,222,1,,222,,,,,
+"VitaCup, Inc.",Warrants,Consumer & Retail,,,,,,2021-06-23,,,9,,,9,,,,,
+"VitaCup, Inc.",Warrants,Consumer & Retail,,,,,,2023-11-22,,,,,,,,,,,
+"Whoop, Inc.",Warrants,Consumer & Retail,,,,,,2023-05-17,,,1142,2001,,1142,,,,,
+Diagnostics & Tools,Other,Consumer & Retail,,,,,,,,,,,,,,,,,
+"Metabolon, Inc.",Warrants,Consumer & Retail,,,,,,2024-03-28,,,644,644,,644,,,,,
+"Edblox, Inc.",Warrants,Education,,,,,,2024-03-19,,,255,260,,255,,,,,
+Medical Sales Training Holding Company,Warrants,Education,,,,,,2021-03-18,,,108,318,,108,,,,,
+"Yellowbrick Learning, Inc.",Warrants,Education,,,,,,2020-01-16,,,120,,,120,,,,,
+"DailyPay, Inc.",Warrants,Insurance,,,,,,2020-09-30,,,151,1597,,151,,,,,
+"Dynamics, Inc.",Warrants,Insurance,,,,,,2020-01-16,,,86,,,86,,,,,
+"Empower Financial, Inc.",Warrants,Insurance,,,,,,2023-10-13,,,627,1206,,627,,,,,
+"Kafene, Inc.",Warrants,Insurance,,,,,,2024-01-05,,,58,72,,58,,,,,
+"Parafin, Inc.",Warrants,Insurance,,,,,,2024-02-16,,,118,144,,118,,,,,
+"Petal Card, Inc.",Warrants,Insurance,,,,,,2023-06-20,,,1523,378,,1523,,,,,
+"Petal Card, Inc.",Warrants,Insurance,,,,,,2023-07-27,,,2500,1653,,2500,,,,,
+"RealtyMogul, Co.",Warrants,Insurance,,,,,,2020-01-16,,,285,1626,,285,,,,,
+"Slope Tech, Inc.",Warrants,Insurance,,,,,,2022-09-14,,,109,481,,109,,,,,
+"Slope Tech, Inc.",Warrants,Insurance,,,,,,2023-08-30,,,112,112,,112,,,,,
+"ZenDrive, Inc.",Warrants,Insurance,,,,,,2021-07-16,,,29,,,29,,,,,
+"Athletic Brewing Company, LLC",Warrants,Food & Beverage,,,,,,2022-10-28,,,287,308,,287,,,,,
+"Bowery Farming, Inc.",Warrants,Food & Beverage,,,,,,2020-12-22,,,160,1,,160,,,,,
+"Bowery Farming, Inc.",Warrants,Food & Beverage,,,,,,2023-12-29,,,29,1,,29,,,,,
+"Daring Foods, Inc.",Warrants,Food & Beverage,,,,,,2021-04-08,,,106,162,,106,,,,,
+"DrinkPak, LLC",Warrants,Food & Beverage,,,,,,2022-09-13,,,7,102,,7,,,,,
+"DrinkPak, LLC",Warrants,Food & Beverage,,,,,,2023-02-17,,,29,582,,29,,,,,
+"Emergy, Inc.",Warrants,Food & Beverage,,,,,,2022-10-05,,,181,1,,181,,,,,
+"GrubMarket, Inc.",Warrants,Food & Beverage,,,,,,2020-06-15,,,115,4055,,115,,,,,cost_suspicious_vs_size
+"The Fynder Group, Inc.",Warrants,Food & Beverage,,,,,,2020-10-14,,,68,29,,68,,,,,
+"Zero Acre Farms, Inc.",Warrants,Food & Beverage,,,,,,2022-12-23,,,79,60,,79,,,,,
+"Bolb, Inc.",Warrants,Software & Technology,,,,,,2021-10-12,,,36,9,,36,,,,,
+"Edeniq, Inc.",Warrants,Software & Technology,,,,,,2020-01-16,,,,195,,,,,,,
+"Edeniq, Inc.",Warrants,Software & Technology,,,,,,2020-01-16,,,,407,,,,,,,
+"Edeniq, Inc.",Warrants,Software & Technology,,,,,,2020-01-16,,,,1248,,,,,,,
+"Edeniq, Inc.",Warrants,Software & Technology,,,,,,2021-11-29,,,7,1785,,7,,,,,cost_suspicious_vs_size
+"Footprint International Holding, Inc.",Warrants,Software & Technology,,,,,,2020-02-14,,,9,,,9,,,,,
+"Footprint International Holding, Inc.",Warrants,Software & Technology,,,,,,2022-02-18,,,4246,,,4246,,,,,
+"Footprint International Holding, Inc.",Warrants,Software & Technology,,,,,,2022-06-23,,,359,,,359,,,,,
+"Mainspring Energy, Inc.",Warrants,Software & Technology,,,,,,2020-01-16,,,283,257,,283,,,,,
+"Mainspring Energy, Inc.",Warrants,Software & Technology,,,,,,2020-11-20,,,226,149,,226,,,,,
+"Mainspring Energy, Inc.",Warrants,Software & Technology,,,,,,2022-03-18,,,344,245,,344,,,,,
+"RTS Holding, Inc.",Warrants,Software & Technology,,,,,,2021-12-10,,,75,214,,75,,,,,
+"RTS Holding, Inc.",Warrants,Software & Technology,,,,,,2022-10-10,,,87,95,,87,,,,,
+"RTS Holding, Inc.",Warrants,Software & Technology,,,,,,2024-01-19,,,418,295,,418,,,,,
+"Dentologie Enterprises, Inc.",Warrants,Healthcare,,,,,,2022-10-14,,,66,192,,66,,,,,
+"Exer Holdings, LLC",Warrants,Healthcare,,,,,,2021-11-19,,,93,27,,93,,,,,
+"Hospitalists Now, Inc.",Warrants,Healthcare,,,,,,2020-01-16,,,71,655,,71,,,,,
+"Hospitalists Now, Inc.",Warrants,Healthcare,,,,,,2020-01-16,,,391,3616,,391,,,,,
+"Lark Technologies, Inc.",Warrants,Healthcare,,,,,,2020-09-30,,,177,4,,177,,,,,
+"Lark Technologies, Inc.",Warrants,Healthcare,,,,,,2021-06-30,,,258,5,,258,,,,,
+"Lark Technologies, Inc.",Warrants,Healthcare,,,,,,2022-12-22,,,58,5,,58,,,,,
+Moxe Health Corp.,Warrants,Healthcare,,,,,,2023-12-29,,,135,136,,135,,,,,
+"RXAnte, Inc.",Warrants,Healthcare,,,,,,2022-11-21,,,94,167,,94,,,,,
+"RXAnte, Inc.",Warrants,Healthcare,,,,,,2023-04-07,,,29,56,,29,,,,,
+"RXAnte, Inc.",Warrants,Healthcare,,,,,,2023-10-17,,,40,56,,40,,,,,
+"TMRW Life Sciences, Inc.",Warrants,Healthcare,,,,,,2022-04-29,,,80,11,,80,,,,,
+"TMRW Life Sciences, Inc.",Warrants,Healthcare,,,,,,2023-03-03,,,80,11,,80,,,,,
+"BetterLeap, Inc.",Warrants,Software & Technology,,,,,,2022-04-20,,,38,34,,38,,,,,
+"Qwick, Inc.",Warrants,Software & Technology,,,,,,2021-12-31,,,96,254,,96,,,,,
+"3DEO, Inc.",Warrants,Industrials,,,,,,2022-02-23,,,94,,,94,,,,,
+"SBG Labs, Inc.",Warrants,Industrials,,,,,,2020-01-16,,,8,53,,8,,,,,
+"SBG Labs, Inc.",Warrants,Industrials,,,,,,2020-01-16,,,4,25,,4,,,,,
+"SBG Labs, Inc.",Warrants,Industrials,,,,,,2020-01-16,,,4,23,,4,,,,,
+"SBG Labs, Inc.",Warrants,Industrials,,,,,,2020-01-16,,,2,15,,2,,,,,
+"SBG Labs, Inc.",Warrants,Industrials,,,,,,2020-01-16,,,110,709,,110,,,,,
+"SBG Labs, Inc.",Warrants,Industrials,,,,,,2020-01-16,,,65,414,,65,,,,,
+"Drone Racing League, Inc.",Warrants,Media & Entertainment,,,,,,2022-10-17,,,374,1,,374,,,,,
+"Firefly Systems, Inc.",Warrants,Media & Entertainment,,,,,,2020-01-31,,,282,141,,282,,,,,
+"Grabit Interactive Media, Inc.",Warrants,Media & Entertainment,,,,,,2022-04-08,,,40,64,,40,,,,,
+"Incontext Solutions, Inc.",Warrants,Media & Entertainment,,,,,,2020-01-16,,,34,,,34,,,,,
+"PebblePost, Inc.",Warrants,Media & Entertainment,,,,,,2021-05-07,,,68,751,,68,,,,,
+"Convergent Dental, Inc.",Warrants,Healthcare,,,,,,2023-04-21,,,492,277,,492,,,,,
+"Delphinus, Inc.",Warrants,Healthcare,,,,,,2023-06-27,,,29,43,,29,,,,,
+"Neuros Medical, Inc.",Warrants,Healthcare,,,,,,2023-08-10,,,71,70,,71,,,,,
+"Revelle Aesthetics, Inc.",Warrants,Healthcare,,,,,,2023-05-30,,,151,86,,151,,,,,
+"Shoulder Innovations, Inc.",Warrants,Healthcare,,,,,,2023-08-07,,,120,132,,120,,,,,
+"Homelight, Inc.",Warrants,Real Estate,,,,,,2022-10-01,,,1,2,,1,,,,,
+"Knockaway, Inc.",Warrants,Real Estate,,,,,,2020-01-16,,,209,,,209,,,,,
+"Knockaway, Inc.",Warrants,Real Estate,,,,,,2021-11-10,,,265,,,265,,,,,
+"Knockaway, Inc.",Warrants,Real Estate,,,,,,2023-09-29,,,,,,,,,,,
+"Knockaway, Inc.",Warrants,Real Estate,,,,,,2023-12-06,,,,,,,,,,,
+"Maxwell Financial Labs, Inc.",Warrants,Real Estate,,,,,,2020-10-07,,,20,154,,20,,,,,
+"Maxwell Financial Labs, Inc.",Warrants,Real Estate,,,,,,2020-12-22,,,34,162,,34,,,,,
+"Maxwell Financial Labs, Inc.",Warrants,Real Estate,,,,,,2021-09-30,,,148,98,,148,,,,,
+"Orchard Technologies, Inc.",Warrants,Real Estate,,,,,,2024-02-12,,,,,,,,,,,
+"All Seated, Inc.",Warrants,Software & Technology,,,,,,2022-02-28,,,20,,,20,,,,,
+"Cart.com, Inc.",Warrants,Software & Technology,,,,,,2023-11-17,,,441,539,,441,,,,,
+"Cpacket Networks, Inc.",Warrants,Software & Technology,,,,,,2024-01-29,,,221,190,,221,,,,,
+"Crowdtap, Inc.",Warrants,Software & Technology,,,,,,2020-01-16,,,42,731,,42,,,,,
+"Crowdtap, Inc.",Warrants,Software & Technology,,,,,,2020-01-16,,,9,165,,9,,,,,
+"Gtxcel, Inc.",Warrants,Software & Technology,,,,,,2020-01-16,,,83,14,,83,,,,,
+"Gtxcel, Inc.",Warrants,Software & Technology,,,,,,2020-01-16,,,83,21,,83,,,,,
+"Lucidworks, Inc.",Warrants,Software & Technology,,,,,,2020-01-16,,,806,769,,806,,,,,
+"Reciprocity, Inc.",Warrants,Software & Technology,,,,,,2020-09-25,,,99,45,,99,,,,,
+"Reciprocity, Inc.",Warrants,Software & Technology,,,,,,2021-04-29,,,54,23,,54,,,,,
+"Smartly, Inc.",Warrants,Software & Technology,,,,,,2022-05-16,,,84,71,,84,,,,,
+"The Tomorrow Companies, Inc.",Warrants,Software & Technology,,,,,,2022-12-14,,,49,52,,49,,,,,
+Astranis Space Technology Corp.,Warrants,Aerospace & Defense,,,,,,2023-04-13,,,93,334,,93,,,,,
+"Axiom Space, Inc.",Warrants,Aerospace & Defense,,,,,,2021-05-28,,,121,40,,121,,,,,
+"Axiom Space, Inc.",Warrants,Aerospace & Defense,,,,,,2021-05-28,,,39,6,,39,,,,,
+Hermeus Corp.,Warrants,Aerospace & Defense,,,,,,2022-08-09,,,216,61,,216,,,,,
+"Rocket Lab USA, Inc.",Warrants,Aerospace & Defense,,,,,,2023-12-29,,,1772,1354,,1772,,,,,
+"Space Perspective, Inc.",Warrants,Aerospace & Defense,,,,,,2022-03-03,,,256,241,,256,,,,,
+"Macrofab, Inc.",Warrants,Software & Technology,,,,,,2023-07-21,,,333,284,,333,,,,,
+"Get Spiffy, Inc.",Warrants,Transportation & Logistics,,,,,,2023-07-14,,,408,317,,408,,,,,
+"NextCar Holding Company, Inc.",Warrants,Transportation & Logistics,,,,,,2021-12-14,,,35,,,35,,,,,
+"NextCar Holding Company, Inc.",Warrants,Transportation & Logistics,,,,,,2022-02-23,,,3,,,3,,,,,
+"NextCar Holding Company, Inc.",Warrants,Transportation & Logistics,,,,,,2022-03-16,,,3,,,3,,,,,
+"NextCar Holding Company, Inc.",Warrants,Transportation & Logistics,,,,,,2022-04-18,,,7,,,7,,,,,
+"NextCar Holding Company, Inc.",Warrants,Transportation & Logistics,,,,,,2022-09-29,,,170,,,170,,,,,
+"Nexii Building Solutions, Inc.",Warrants,Software & Technology,,,,,,2021-08-27,,,410,,,410,,,,,
+"Nexii Building Solutions, Inc.",Warrants,Software & Technology,,,,,,2022-06-08,,,204,,,204,,,,,
+"Aledia, Inc.",Warrants,Industrials,,,,,,2022-03-31,,,130,444,,130,,,,,
+"All.Space Networks, Limited.",Warrants,Aerospace & Defense,,,,,,2022-08-22,,,113,73,,113,,,,,
+"Rigetti & Co, Inc.",Other Equity,Artificial Intelligence & Automation,,,,,,2022-02-25,,,500,77,,500,,,,,
+"Rigetti & Co, Inc.",Other Equity,Artificial Intelligence & Automation,,,,,,2021-05-18,,,506,1159,,506,,,,,
+"Tarana Wireless, Inc.",Other Equity,Other,,,,,,2022-03-16,,,500,498,,500,,,,,
+"Vertical Communications, Inc.",Other Equity,Other,,,,,,2020-01-16,,,3966,2565,,3966,,,,,
+"Project Frog, Inc.",Other Equity,Software & Technology,,,,,,2021-08-03,,,1253,57,,1253,,,,,fair_value_suspicious_vs_size
+"Portofino Labs, Inc.",Other Equity,Consumer & Retail,,,,,,2021-11-01,,,500,694,,500,,,,,
+"Core Scientific, Inc.",Other Equity,Software & Technology,,,,,,2024-01-24,,,17546,12372,,17546,,,,,
+"Dynamics, Inc.",Other Equity,Insurance,,,,,,2020-01-16,,,390,,,390,,,,,
+Openly Holdings Corp.,Other Equity,Insurance,,,,,,2023-05-09,,,500,501,,500,,,,,
+"Slope Tech, Inc.",Other Equity,Insurance,,,,,,2023-06-20,,,500,511,,500,,,,,
+"Emergy, Inc.",Other Equity,Food & Beverage,,,,,,2021-06-28,,,500,116,,500,,,,,
+"Intelligent Brands, Inc.",Other Equity,Food & Beverage,,,,,,2020-01-16,,,537,10,,537,,,,,
+"Edeniq, Inc.",Other Equity,Software & Technology,,,,,,2020-01-16,,,,1499,,,,,,,
+"Edeniq, Inc.",Other Equity,Software & Technology,,,,,,2020-01-16,,,,1218,,,,,,,
+"Edeniq, Inc.",Other Equity,Software & Technology,,,,,,2020-01-16,,,,3121,,,,,,,
+Electric Hydrogen Co.,Other Equity,Software & Technology,,,,,,2023-04-06,,,500,528,,500,,,,,
+"Mainspring Energy, Inc.",Other Equity,Software & Technology,,,,,,2022-03-30,,,500,354,,500,,,,,
+"RTS Holding, Inc.",Other Equity,Software & Technology,,,,,,2022-07-05,,,334,511,,334,,,,,
+"RTS Holding, Inc.",Other Equity,Software & Technology,,,,,,2023-02-15,,,405,503,,405,,,,,
+"Dentologie Enterprises, Inc.",Other Equity,Healthcare,,,,,,2023-08-03,,,300,380,,300,,,,,
+"Emerald Cloud Lab, Inc.",Other Equity,Healthcare,,,,,,2022-06-03,,,500,249,,500,,,,,
+"Lark Technologies, Inc.",Other Equity,Healthcare,,,,,,2021-08-19,,,500,92,,500,,,,,
+WorkWell Prevention & Care Inc.,Other Equity,Healthcare,,,,,,2020-01-16,,,51,,,51,,,,,
+WorkWell Prevention & Care Inc.,Other Equity,Healthcare,,,,,,2020-01-16,,,3450,,,3450,,,,,
+WorkWell Prevention & Care Inc.,Other Equity,Healthcare,,,,,,2020-01-16,,,3219,,,3219,,,,,
+"Nomad Health, Inc.",Other Equity,Software & Technology,,,,,,2022-05-27,,,500,126,,500,,,,,
+"SBG Labs, Inc.",Other Equity,Industrials,,,,,,2023-07-29,,,13,49,,13,,,,,
+"SBG Labs, Inc.",Other Equity,Industrials,,,,,,2023-10-10,,,4,14,,4,,,,,
+"SBG Labs, Inc.",Other Equity,Industrials,,,,,,2024-01-12,,,7,28,,7,,,,,
+Senior Credit Corp.,Other Equity,Other,,,,,,2023-01-30,,,4026,4609,,4026,,,,,
+"Knockaway, Inc.",Other Equity,Real Estate,,,,,,2022-03-30,,,500,,,500,,,,,
+"Knockaway, Inc.",Other Equity,Real Estate,,,,,,2023-09-29,,,250,,,250,,,,,
+"Orchard Technologies, Inc.",Other Equity,Real Estate,,,,,,2021-08-06,,,500,1,,500,,,,,
+"Maxwell Financial Labs, Inc.",Other Equity,Real Estate,,,,,,2021-01-22,,,500,381,,500,,,,,
+"Smartly, Inc.",Other Equity,Software & Technology,,,,,,2023-03-29,,,500,515,,500,,,,,
+"The Tomorrow Companies, Inc.",Other Equity,Software & Technology,,,,,,2023-07-05,,,325,212,,325,,,,,
+Astranis Space Technology Corp.,Other Equity,Aerospace & Defense,,,,,,2023-04-05,,,300,135,,300,,,,,
+Astranis Space Technology Corp.,Other Equity,Aerospace & Defense,,,,,,2024-03-19,,,600,607,,600,,,,,
+"Axiom Space, Inc.",Other Equity,Aerospace & Defense,,,,,,2021-08-11,,,521,567,,521,,,,,
+"Hadrian Automation, Inc.",Other Equity,Aerospace & Defense,,,,,,2022-03-29,,,500,488,,500,,,,,
+"Hadrian Automation, Inc.",Other Equity,Aerospace & Defense,,,,,,2023-12-11,,,300,292,,300,,,,,
+"3Q GoFor Holdings, LP",Other Equity,Software & Technology,,,,,,2022-08-25,,,500,,,500,,,,,
+"3Q GoFor Holdings, LP",Other Equity,Software & Technology,,,,,,2023-01-17,,,500,,,500,,,,,
+"Macrofab, Inc.",Other Equity,Software & Technology,,,,,,2024-01-30,,,500,502,,500,,,,,
+"Nexii Building Solutions, Inc.",Other Equity,Software & Technology,,,,,,2022-02-28,,,500,,,500,,,,,
+"Ambient Photonics, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,6.0%,,2022-07-28,2025-07-01,2383,2502,2528,,2502,,,,,
+"Ambient Photonics, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,6.0%,,2022-11-17,2025-05-01,2684,2803,2832,,2803,,,,,
+"Ambient Photonics, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,6.0%,,2022-12-20,2025-06-01,450,467,473,,467,,,,,
+"Rigetti & Co, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,7.5%,,2021-03-10,2025-04-01,6964,7220,7202,,7220,,,,,
+"Rigetti & Co, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,7.5%,,2021-05-18,2025-06-01,5164,5320,5303,,5320,,,,,
+"Rigetti & Co, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,7.5%,,2021-11-10,2025-12-01,5812,5905,5876,,5905,,,,,
+"Rigetti & Co, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,7.5%,,2022-01-27,2026-02-01,4442,4527,4507,,4527,,,,,
+"Stratifyd, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,7.8%,,2021-09-03,2026-03-01,4457,4592,4369,,4592,,,,,
+Greenlight Biosciences Inc.,Other Debt,Artificial Intelligence & Automation,11.4%,,,,,2021-03-29,2024-04-01,268,469,496,,469,,,,,
+Greenlight Biosciences Inc.,Other Debt,Artificial Intelligence & Automation,14.9%,,,,,2021-06-17,2024-07-01,562,767,849,,767,,,,,
+Greenlight Biosciences Inc.,Other Debt,Artificial Intelligence & Automation,22.6%,,,,,2021-08-31,2024-09-01,280,348,423,,348,,,,,
+Greenlight Biosciences Inc.,Other Debt,Artificial Intelligence & Automation,18.3%,,,,,2021-08-31,2024-09-01,165,207,247,,207,,,,,
+"Pendulum Therapeutics, Inc.",Other Debt,Artificial Intelligence & Automation,9.8%,,,,,2020-07-15,2024-02-01,28,88,87,,88,,,,,
+"Pendulum Therapeutics, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,6.8%,,2021-12-31,2026-07-01,4292,4442,4355,,4442,,,,,
+"Pendulum Therapeutics, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,6.8%,,2022-02-28,2026-07-01,4581,4731,4648,,4731,,,,,
+"Pendulum Therapeutics, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,6.8%,,2022-03-30,2026-07-01,4722,4872,4792,,4872,,,,,
+"Pendulum Therapeutics, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,6.8%,,2022-05-06,2026-07-01,5000,5150,5073,,5150,,,,,
+"Pendulum Therapeutics, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,6.8%,,2022-06-17,2026-07-01,5000,5150,5073,,5150,,,,,
+"Taysha Gene Therapies, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,4.5%,,2023-11-13,2028-12-01,30000,29752,29752,,29752,,,,,
+"Vertical Communications, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,4.0%,,2021-08-23,2026-11-01,12750,15406,15406,,15406,,,,,
+"viaPhoton, Inc.",First Lien,Artificial Intelligence & Automation,,,Prime,6.6%,,2022-03-31,2027-04-01,15000,15330,14209,,15330,,,,,
+"Eterneva, Inc.",Other Debt,Consumer & Retail,10.6%,,,,,2021-11-24,2025-12-01,294,343,325,,343,,,,,
+"Eterneva, Inc.",Other Debt,Consumer & Retail,10.4%,,,,,2022-03-16,2026-04-01,462,521,497,,521,,,,,
+"Eterneva, Inc.",Other Debt,Consumer & Retail,16.2%,,,,,2022-06-17,2026-07-01,1315,1441,1402,,1441,,,,,
+"Happiest Baby, Inc.",Other Debt,Consumer & Retail,8.4%,,,,,2021-01-22,2024-05-01,116,210,207,,210,,,,,
+"Molekule, Inc.",Other Debt,Consumer & Retail,8.8%,,,,,2020-06-19,2024-01-01,312,595,266,,595,,,,,
+"Molekule, Inc.",Other Debt,Consumer & Retail,12.3%,,,,,2020-09-29,2025-04-01,273,347,233,,347,,,,,
+"Molekule, Inc.",Other Debt,Consumer & Retail,11.9%,,,,,2020-12-18,2025-07-01,473,584,403,,584,,,,,
+"Molekule, Inc.",Other Debt,Consumer & Retail,11.3%,,,,,2021-08-25,2026-03-01,385,454,329,,454,,,,,
+"Ogee, Inc.",First Lien,Consumer & Retail,,,Prime,5.8%,,2023-02-14,2027-03-01,5000,4975,4967,,4975,,,,,
+"Ogee, Inc.",First Lien,Consumer & Retail,,,Prime,5.8%,,2023-09-29,2027-03-01,5000,4921,5010,,4921,,,,,
+"Portofino Labs, Inc.",First Lien,Consumer & Retail,,,Prime,8.3%,,2021-04-01,2025-11-01,1531,1610,1588,,1610,,,,,
+"Quip NYC, Inc.",First Lien,Consumer & Retail,,,Prime,8.0%,,2021-03-09,2026-04-01,13611,13919,14023,,13919,,,,,
+"Quip NYC, Inc.",First Lien,Consumer & Retail,,,Prime,8.0%,,2022-02-10,2026-04-01,1944,1996,2015,,1996,,,,,
+"Rinse, Inc.",First Lien,Consumer & Retail,,,Prime,8.0%,,2022-05-10,2027-06-01,5000,5031,5099,,5031,,,,,
+"Rinse, Inc.",First Lien,Consumer & Retail,,,Prime,8.0%,,2023-09-22,2028-10-01,4000,3928,4033,,3928,,,,,
+"SI Tickets, Inc.",First Lien,Consumer & Retail,,,Prime,8.3%,,2022-05-11,2026-09-01,2803,2817,2719,,2817,,,,,
+"UnTuckIt, Inc.",First Lien,Consumer & Retail,12.0%,,,,,2020-01-16,2025-06-01,8170,8928,8721,,8928,,,,,
+"VitaCup, Inc.",First Lien,Consumer & Retail,,,Prime,7.5%,,2021-06-23,2026-01-01,6000,5772,5515,,5772,,,,,
+"Whoop, Inc.",First Lien,Consumer & Retail,,,Prime,5.3%,,2023-05-17,2028-06-01,23625,23106,23226,,23106,,,,,
+"Cleanspark, Inc.",Other Debt,Software & Technology,10.3%,,,,,2022-04-22,2025-05-01,9591,10376,10137,,10376,,,,,
+"Core Scientific, Inc.",Other Debt,Software & Technology,10.3%,,,,,2021-08-31,2024-10-01,674,700,759,,700,,,,,
+"Core Scientific, Inc.",Other Debt,Software & Technology,10.7%,,,,,2021-11-19,2024-12-01,10132,10437,11406,,10437,,,,,
+"Core Scientific, Inc.",Other Debt,Software & Technology,10.5%,,,,,2021-12-13,2025-01-01,3753,3853,4225,,3853,,,,,
+"Core Scientific, Inc.",Other Debt,Software & Technology,10.5%,,,,,2022-02-09,2025-03-01,8018,8179,9026,,8179,,,,,
+Medical Sales Training Holding Company,First Lien,Education,,,Prime,8.8%,,2021-03-18,2025-04-01,5834,6144,5841,,6144,,,,,
+Medical Sales Training Holding Company,First Lien,Education,,,Prime,8.8%,,2021-07-21,2025-08-01,2000,2103,1971,,2103,,,,,
+"Yellowbrick Learning, Inc.",First Lien,Education,2.0%,,,,,2021-02-01,2026-03-01,7500,7875,5581,,7875,,,,,
+"Yellowbrick Learning, Inc.",First Lien,Education,2.0%,,,,,2021-08-10,2026-03-01,2500,2625,1863,,2625,,,,,
+"Bestow, Inc.",First Lien,Insurance,,,Prime,6.5%,,2022-04-25,2027-05-01,25000,25130,24993,,25130,,,,,
+"Bestow, Inc.",First Lien,Insurance,,,Prime,6.5%,,2022-05-12,2027-06-01,15000,15071,15096,,15071,,,,,
+"Empower Financial, Inc.",First Lien,Insurance,,,Prime,4.8%,,2023-10-13,2028-05-01,12000,11686,11686,,11686,,,,,
+"Eqis Capital Management, Inc.",First Lien,Insurance,,,Prime,7.5%,,2022-06-15,2026-07-01,7000,7210,7012,,7210,,,,,
+Openly Holdings Corp.,First Lien,Insurance,,,Prime,6.3%,,2022-11-18,2027-12-01,3125,3141,3153,,3141,,,,,
+Openly Holdings Corp.,First Lien,Insurance,,,Prime,6.3%,,2023-01-31,2027-12-01,6250,6270,6356,,6270,,,,,
+Openly Holdings Corp.,First Lien,Insurance,,,Prime,6.3%,,2023-06-22,2027-12-01,15625,15637,16105,,15637,,,,,
+"Petal Card, Inc.",First Lien,Insurance,,,Prime,7.5%,,2020-01-16,2026-07-01,10358,9372,8256,,9372,,,,,
+"Petal Card, Inc.",First Lien,Insurance,,,Prime,7.5%,,2021-08-06,2026-07-01,7250,6560,5779,,6560,,,,,
+"Petal Card, Inc.",First Lien,Insurance,,,Prime,7.5%,,2023-07-27,2026-08-01,20853,17203,15068,,17203,,,,,
+"Slope Tech, Inc.",First Lien,Insurance,,,SOFR,11.8%,,2022-10-05,2025-03-14,1235,1099,1265,,1099,,,,,
+"ZenDrive, Inc.",First Lien,Insurance,,,Prime,7.0%,,2021-07-16,2026-08-01,13655,13901,13898,,13901,,,,,
+"Athletic Brewing Company, LLC",Other Debt,Food & Beverage,11.1%,,,,,2021-12-07,2026-09-01,19878,20510,20166,,20510,,,,,
+"Athletic Brewing Company, LLC",Other Debt,Food & Beverage,11.2%,,,,,2022-03-16,2026-09-01,4964,5105,5032,,5105,,,,,
+"Athletic Brewing Company, LLC",Other Debt,Food & Beverage,11.2%,,,,,2023-12-15,2028-01-01,10000,9992,9992,,9992,,,,,
+"Bowery Farming, Inc.",First Lien,Food & Beverage,,,SOFR,10.0%,,2021-09-10,2026-09-10,8660,7947,5521,,7947,,,,,
+"Daring Foods, Inc.",Other Debt,Food & Beverage,9.6%,,,,,2021-04-08,2024-05-01,63,100,99,,100,,,,,
+"Daring Foods, Inc.",Other Debt,Food & Beverage,10.0%,,,,,2021-08-31,2024-09-01,150,194,191,,194,,,,,
+"Daring Foods, Inc.",Other Debt,Food & Beverage,9.4%,,,,,2021-11-01,2024-12-01,356,427,421,,427,,,,,
+"Daring Foods, Inc.",Other Debt,Food & Beverage,9.5%,,,,,2022-03-08,2025-04-01,1026,1162,1141,,1162,,,,,
+"Daring Foods, Inc.",Other Debt,Food & Beverage,10.2%,,,,,2022-04-29,2025-05-01,480,537,528,,537,,,,,
+"Daring Foods, Inc.",Other Debt,Food & Beverage,10.9%,,,,,2022-07-06,2025-08-01,255,279,276,,279,,,,,
+"Daring Foods, Inc.",Other Debt,Food & Beverage,12.1%,,,,,2022-08-25,2025-09-01,629,682,678,,682,,,,,
+"DrinkPak, LLC",Other Debt,Food & Beverage,12.9%,,,,,2023-02-17,2026-09-01,12414,12816,13002,,12816,,,,,
+"Emergy, Inc.",Other Debt,Food & Beverage,9.1%,,,,,2021-01-08,2024-05-01,68,117,114,,117,,,,,
+"Emergy, Inc.",Other Debt,Food & Beverage,9.3%,,,,,2021-12-15,2025-07-01,5176,6143,5771,,6143,,,,,
+"Emergy, Inc.",Other Debt,Food & Beverage,12.6%,,,,,2022-12-13,2026-07-01,8101,8652,8244,,8652,,,,,
+"Intelligent Brands, Inc.",First Lien,Food & Beverage,,,Prime,9.5%,,2020-12-31,2024-06-30,9518,10609,10545,,10609,,,,,
+"The Fynder Group, Inc.",Other Debt,Food & Beverage,9.1%,,,,,2020-10-14,2024-05-01,76,137,135,,137,,,,,
+"The Fynder Group, Inc.",Other Debt,Food & Beverage,9.3%,,,,,2022-03-31,2025-10-01,1600,1776,1718,,1776,,,,,
+"Bolb, Inc.",Other Debt,Software & Technology,10.3%,,,,,2021-10-12,2024-11-01,527,621,606,,621,,,,,
+"Commonwealth Fusion Systems, LLC",Other Debt,Software & Technology,9.5%,,,,,2021-09-10,2024-10-01,648,835,818,,835,,,,,
+"Commonwealth Fusion Systems, LLC",Other Debt,Software & Technology,9.7%,,,,,2021-10-20,2024-11-01,208,261,255,,261,,,,,
+"Commonwealth Fusion Systems, LLC",Other Debt,Software & Technology,13.0%,,,,,2023-06-16,2030-07-01,5181,5202,5442,,5202,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,9.0%,,,,,2020-03-17,2024-04-01,40,109,106,,109,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,9.2%,,,,,2020-10-27,2024-11-01,135,203,195,,203,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,9.1%,,,,,2020-11-19,2024-12-01,180,261,250,,261,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,9.2%,,,,,2020-12-29,2025-01-01,224,317,302,,317,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,9.1%,,,,,2021-03-25,2025-04-01,520,687,651,,687,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,8.8%,,,,,2021-12-01,2026-01-01,737,865,811,,865,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,8.9%,,,,,2022-04-08,2026-05-01,1400,1581,1481,,1581,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,9.2%,,,,,2022-05-27,2026-06-01,651,729,686,,729,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,9.5%,,,,,2022-06-13,2026-07-01,999,1110,1045,,1110,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,11.1%,,,,,2022-08-24,2026-09-01,391,426,409,,426,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,11.6%,,,,,2022-11-10,2026-12-01,364,392,383,,392,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,12.1%,,,,,2023-04-12,2027-05-01,835,868,858,,868,,,,,
+"Dandelion Energy, Inc.",Other Debt,Software & Technology,12.7%,,,,,2023-06-29,2027-07-01,694,711,709,,711,,,,,
+Electric Hydrogen Co.,Other Debt,Software & Technology,9.0%,,,,,2022-09-12,2026-04-01,1373,1492,1469,,1492,,,,,
+Electric Hydrogen Co.,Other Debt,Software & Technology,12.5%,,,,,2023-12-22,2029-01-01,10000,9965,9965,,9965,,,,,
+"Hi-Power, LLC",Other Debt,Software & Technology,12.4%,,,,,2021-09-30,2025-04-01,2826,2884,2885,,2884,,,,,
+"Hi-Power, LLC",Other Debt,Software & Technology,14.7%,,,,,2022-09-30,2026-04-01,2916,2921,2934,,2921,,,,,
+"SeaOn Global, LLC",Other Debt,Software & Technology,9.3%,,,,,2022-06-16,2026-07-01,4489,4926,4695,,4926,,,,,
+"SeaOn Global, LLC",Other Debt,Software & Technology,9.3%,,,,,2022-08-17,2026-09-01,2288,2478,2383,,2478,,,,,
+"Edeniq, Inc.",First Lien,Software & Technology,11.0%,,,,,2021-11-30,2025-06-01,2849,2163,2993,,2163,,,,,
+"Footprint International Holding, Inc.",First Lien,Software & Technology,,,Prime,7.3%,,2022-02-18,2027-03-01,20000,19061,19434,,19061,,,,,
+"Footprint International Holding, Inc.",First Lien,Software & Technology,,,Prime,7.3%,,2022-04-20,2027-03-01,20000,18995,19364,,18995,,,,,
+"Mainspring Energy, Inc.",First Lien,Software & Technology,11.0%,,,,,2022-03-18,2026-10-01,28579,29068,28286,,29068,,,,,
+"RTS Holding, Inc.",First Lien,Software & Technology,,,Prime,7.3%,,2021-12-31,2027-01-01,13800,14766,14871,,14766,,,,,
+"RTS Holding, Inc.",First Lien,Software & Technology,,,Prime,7.25%,,2022-10-21,2027-11-01,7200,7202,7232,,7202,,,,,
+"Emerald Cloud Lab, Inc.",Other Debt,Healthcare,9.7%,,,,,2021-07-13,2024-08-01,2302,3018,2953,,3018,,,,,
+"Dentologie Enterprises, Inc.",First Lien,Healthcare,,,Prime,6.9%,,2022-10-14,2027-10-01,3000,3010,3075,,3010,,,,,
+"Dentologie Enterprises, Inc.",First Lien,Healthcare,,,Prime,6.9%,,2023-12-15,2027-10-01,4200,4107,4107,,4107,,,,,
+"Lark Technologies, Inc.",First Lien,"Dentologie Enterprises, Inc.",,,Prime,8.3%,,2020-09-30,2025-04-01,2467,2623,2575,,2623,,,,,
+"Lark Technologies, Inc.",First Lien,"Dentologie Enterprises, Inc.",,,Prime,8.3%,,2021-06-30,2026-01-01,3680,3768,3670,,3768,,,,,
+"Lark Technologies, Inc.",First Lien,"Dentologie Enterprises, Inc.",,,Prime,8.3%,,2023-07-07,2028-01-01,5000,4942,5029,,4942,,,,,
+Moxe Health Corp.,First Lien,"Dentologie Enterprises, Inc.",,,Prime,5.5%,,2023-12-29,2028-01-01,12500,12316,12315,,12316,,,,,
+"RXAnte, Inc.",First Lien,"Dentologie Enterprises, Inc.",,,Prime,4.48%,,2022-11-21,2027-12-01,9144,9146,9324,,9146,,,,,
+"RXAnte, Inc.",First Lien,"Dentologie Enterprises, Inc.",,,Prime,4.48%,,2023-04-14,2027-12-01,3033,2985,3170,,2985,,,,,
+"RXAnte, Inc.",First Lien,"Dentologie Enterprises, Inc.",,,Prime,4.48%,,2023-10-19,2027-12-01,3009,2948,2948,,2948,,,,,
+"TMRW Life Sciences, Inc.",First Lien,"Dentologie Enterprises, Inc.",,,Prime,5.0%,,2022-04-29,2027-05-01,5000,5072,4785,,5072,,,,,
+"TMRW Life Sciences, Inc.",First Lien,"Dentologie Enterprises, Inc.",,,Prime,5.0%,,2023-03-03,2027-05-01,15000,15086,15160,,15086,,,,,
+"TMRW Life Sciences, Inc.",First Lien,"Dentologie Enterprises, Inc.",,,Prime,5.0%,,2023-12-08,2027-05-01,10000,9924,9924,,9924,,,,,
+"Nomad Health, Inc.",First Lien,Software & Technology,,,Prime,5.5%,,2022-03-29,2026-10-01,30000,30508,30120,,30508,,,,,
+"3DEO, Inc.",Other Debt,Industrials,9.1%,,,,,2022-02-23,2025-03-01,1453,1763,1593,,1763,,,,,
+"3DEO, Inc.",Other Debt,Industrials,9.0%,,,,,2022-04-12,2025-05-01,754,896,801,,896,,,,,
+Formlogic Corp.,Other Debt,Industrials,12.1%,,,,,2023-12-22,2028-01-01,6500,6469,6469,,6469,,,,,
+"Drone Racing League, Inc.",First Lien,Media & Entertainment,,,Prime,7.5%,,2022-10-17,2027-04-17,10000,9919,9021,,9919,,,,,
+"Grabit Interactive Media, Inc.",First Lien,Media & Entertainment,,,Prime,7.5%,,2022-04-08,2026-11-01,4402,4437,4463,,4437,,,,,
+"Incontext Solutions, Inc.",First Lien,Media & Entertainment,11.8%,,,,,2020-01-16,2025-09-01,3059,4209,3557,,4209,,,,,
+"PebblePost, Inc.",First Lien,Media & Entertainment,,,Prime,8.8%,,2021-05-07,2026-06-01,11500,11804,11644,,11804,,,,,
+"Vox Media Holdings, Inc.",First Lien,Media & Entertainment,,,Prime,6.3%,,2022-10-18,2027-11-01,12000,11995,12264,,11995,,,,,
+"Vox Media Holdings, Inc.",First Lien,Media & Entertainment,,,Prime,6.3%,,2022-12-29,2028-01-01,6000,5983,6114,,5983,,,,,
+"Convergent Dental, Inc.",First Lien,Healthcare,,,Prime,5.8%,,2023-04-21,2027-05-01,12000,11719,11842,,11719,,,,,
+"Delphinus Medical Technologies, Inc.",First Lien,Healthcare,,,Prime,5.8%,,2023-06-22,2027-06-22,4500,4470,4680,,4470,,,,,
+"Neurolens, Inc.",First Lien,Healthcare,,,Prime,3.0%,,2023-09-29,2028-10-01,20000,19845,20461,,19845,,,,,
+"Neuros Medical, Inc.",First Lien,Healthcare,,,Prime,6.0%,,2023-08-10,2027-09-01,6000,5909,6161,,5909,,,,,
+"Revelle Aesthetics, Inc.",First Lien,Healthcare,,,Prime,5.8%,,2023-05-30,2028-05-30,15000,14888,15062,,14888,,,,,
+"Shoulder Innovations, Inc.",First Lien,Healthcare,,,Prime,3.5%,,2023-08-07,2028-09-01,11250,11138,11650,,11138,,,,,
+Senior Credit Corp.,First Lien,Other,8.5%,,,,,2023-01-30,2028-12-05,7704,7704,7704,,7704,,,,,
+"BlueGround US, Inc.",Other Debt,Real Estate,9.6%,,,,,2022-06-06,2026-01-01,2717,2928,2913,,2928,,,,,
+"BlueGround US, Inc.",Other Debt,Real Estate,11.1%,,,,,2022-07-26,2026-02-01,3896,4168,4182,,4168,,,,,
+"BlueGround US, Inc.",Other Debt,Real Estate,11.6%,,,,,2022-08-12,2026-03-01,3119,3321,3360,,3321,,,,,
+"BlueGround US, Inc.",Other Debt,Real Estate,11.9%,,,,,2022-09-26,2026-04-01,3831,4056,4140,,4056,,,,,
+"BlueGround US, Inc.",Other Debt,Real Estate,12.6%,,,,,2022-10-25,2026-05-01,3224,3397,3472,,3397,,,,,
+"BlueGround US, Inc.",Other Debt,Real Estate,12.7%,,,,,2022-11-30,2026-06-01,2140,2244,2319,,2244,,,,,
+"BoardRE, Inc.",First Lien,Real Estate,,,Prime,8.3%,,2021-10-15,2026-06-01,5000,5234,4433,,5234,,,,,
+"Knockaway, Inc.",First Lien,Real Estate,,,Prime,6.8%,,2023-09-29,2028-09-01,23644,21222,21253,,21222,,,,,
+"Knockaway, Inc.",First Lien,Real Estate,,,SOFR,10.0%,,2023-12-06,2024-01-31,1742,1736,1736,,1736,,,,,
+"Maxwell Financial Labs, Inc.",First Lien,Real Estate,,,Prime,6.0%,,2021-09-30,2026-04-01,14843,15160,14909,,15160,,,,,
+"Orchard Technologies, Inc.",First Lien,Real Estate,,,Prime,7.5%,,2021-03-11,2026-04-01,4083,4230,4156,,4230,,,,,
+"Orchard Technologies, Inc.",First Lien,Real Estate,,,Prime,7.5%,,2021-07-23,2026-04-01,11211,11554,11368,,11554,,,,,
+"Orchard Technologies, Inc.",First Lien,Real Estate,,,Prime,7.5%,,2022-08-02,2026-04-01,12500,12701,12569,,12701,,,,,
+"BackBlaze, Inc.",Other Debt,Software & Technology,7.4%,,,,,2020-01-20,2024-02-01,22,128,128,,128,,,,,
+"BackBlaze, Inc.",Other Debt,Software & Technology,7.2%,,,,,2020-02-01,2024-03-01,37,127,125,,127,,,,,
+"BackBlaze, Inc.",Other Debt,Software & Technology,7.4%,,,,,2020-03-26,2024-04-01,17,43,42,,43,,,,,
+"BackBlaze, Inc.",Other Debt,Software & Technology,7.3%,,,,,2020-04-17,2024-05-01,139,306,300,,306,,,,,
+"BackBlaze, Inc.",Other Debt,Software & Technology,7.4%,,,,,2020-07-27,2024-08-01,242,409,399,,409,,,,,
+"BackBlaze, Inc.",Other Debt,Software & Technology,7.2%,,,,,2020-09-04,2024-10-01,53,81,79,,81,,,,,
+"BackBlaze, Inc.",Other Debt,Software & Technology,7.5%,,,,,2021-03-29,2025-04-01,955,1245,1204,,1245,,,,,
+"Cart.com, Inc.",First Lien,Software & Technology,,,Prime,4.0%,,2023-11-17,2028-11-01,30000,29030,29030,,29030,,,,,
+Astranis Space Technology Corp.,Other Debt,Aerospace & Defense,12.1%,,,,,2023-04-13,2026-11-01,12558,12744,12904,,12744,,,,,
+"Axiom Space, Inc.",First Lien,Aerospace & Defense,,,Prime,6.0%,,2021-05-28,2026-06-01,25000,25439,25306,,25439,,,,,
+"Hadrian Automation, Inc.",Other Debt,Aerospace & Defense,12.6%,,,,,2022-03-02,2025-09-01,277,277,278,,277,,,,,
+"Hadrian Automation, Inc.",Other Debt,Aerospace & Defense,12.9%,,,,,2022-05-06,2025-11-01,2940,2933,2955,,2933,,,,,
+"Hadrian Automation, Inc.",Other Debt,Aerospace & Defense,14.3%,,,,,2022-07-15,2026-01-01,2141,2135,2163,,2135,,,,,
+"Hadrian Automation, Inc.",Other Debt,Aerospace & Defense,15.2%,,,,,2022-09-30,2026-03-01,3835,3828,3923,,3828,,,,,
+"Hadrian Automation, Inc.",Other Debt,Aerospace & Defense,16.1%,,,,,2022-12-22,2026-06-01,945,935,983,,935,,,,,
+"Hadrian Automation, Inc.",Other Debt,Aerospace & Defense,16.4%,,,,,2022-12-22,2026-12-01,870,867,912,,867,,,,,
+"Hadrian Automation, Inc.",Other Debt,Aerospace & Defense,16.4%,,,,,2023-03-29,2027-03-01,2696,2687,2808,,2687,,,,,
+"Hadrian Automation, Inc.",Other Debt,Aerospace & Defense,15.7%,,,,,2023-09-28,2027-09-01,1361,1355,1398,,1355,,,,,
+Hermeus Corp.,Other Debt,Aerospace & Defense,9.6%,,,,,2022-08-09,2026-03-01,715,755,728,,755,,,,,
+Hermeus Corp.,Other Debt,Aerospace & Defense,11.8%,,,,,2022-10-11,2026-05-01,1311,1364,1333,,1364,,,,,
+Hermeus Corp.,Other Debt,Aerospace & Defense,12.6%,,,,,2023-04-12,2026-11-01,1806,1815,1808,,1815,,,,,
+Hermeus Corp.,Other Debt,Aerospace & Defense,14.0%,,,,,2023-10-24,2027-05-01,1020,998,998,,998,,,,,
+"Rocket Lab USA, Inc.",Other Debt,Aerospace & Defense,12.5%,,,,,2023-12-29,2029-01-01,70000,68422,68422,,68422,,,,,
+"Rocket Lab USA, Inc.",Other Debt,Aerospace & Defense,12.5%,,,,,2023-12-29,2028-12-01,40000,39999,39999,,39999,,,,,
+"Space Perspective, Inc.",First Lien,Aerospace & Defense,,,Prime,7.8%,,2022-03-03,2026-07-01,4441,4531,4403,,4531,,,,,
+"Macrofab, Inc.",First Lien,Software & Technology,,,Prime,5.5%,,2023-07-21,2027-08-01,20000,19696,19990,,19696,,,,,
+"NextCar Holding Company, Inc.",First Lien,Transportation & Logistics,,,Prime,5.8%,,2021-12-14,2024-03-31,6012,6014,5053,,6014,,,,,
+"NextCar Holding Company, Inc.",First Lien,Transportation & Logistics,,,Prime,5.8%,,2021-12-15,2024-03-31,2405,2405,2022,,2405,,,,,
+"NextCar Holding Company, Inc.",First Lien,Transportation & Logistics,,,Prime,5.8%,,2022-02-23,2024-03-31,3006,3006,2528,,3006,,,,,
+"NextCar Holding Company, Inc.",First Lien,Transportation & Logistics,,,Prime,5.8%,,2022-03-16,2024-03-31,3607,3607,3033,,3607,,,,,
+"NextCar Holding Company, Inc.",First Lien,Transportation & Logistics,,,Prime,5.8%,,2022-04-18,2024-03-31,3006,3006,2528,,3006,,,,,
+"NextCar Holding Company, Inc.",First Lien,Transportation & Logistics,,,Prime,5.8%,,2022-05-17,2024-03-31,6012,6012,5055,,6012,,,,,
+"NextCar Holding Company, Inc.",First Lien,Transportation & Logistics,,,Prime,5.8%,,2022-06-22,2024-03-31,3006,3006,2528,,3006,,,,,
+"Get Spiffy, Inc.",First Lien,Transportation & Logistics,,,Prime,4.5%,,2023-07-14,2028-01-14,9000,8900,8785,,8900,,,,,
+"Get Spiffy, Inc.",Other Debt,Transportation & Logistics,12.1%,,,,,2023-07-14,2027-02-01,406,400,321,,400,,,,,
+"Zuum Transportation, Inc.",First Lien,Transportation & Logistics,,,Prime,6.0%,,2021-12-17,2027-01-01,5000,5061,4757,,5061,,,,,
+"Nexii Building Solutions, Inc.",First Lien,Software & Technology,,,Prime,7.0%,,2021-08-27,2025-08-27,10659,11055,4091,,11055,,,,,
+"Nexii Building Solutions, Inc.",First Lien,Software & Technology,,,Prime,7.0%,,2022-06-08,2026-06-08,5329,5527,2045,,5527,,,,,
+"Nexii Building Solutions, Inc.",First Lien,Software & Technology,,,Prime,7.0%,,2023-06-21,2024-03-31,1785,1785,669,,1785,,,,,
+"GoFor Industries, Inc.",First Lien,Software & Technology,,,Prime,8.8%,,2022-01-21,2026-02-01,9570,9385,4222,,9385,,,,,
+"Aledia, Inc.",Other Debt,Industrials,9.0%,,,,,2022-03-31,2025-04-01,8139,9171,8981,,9171,,,,,
+"Aledia, Inc.",Other Debt,Industrials,9.7%,,,,,2022-06-30,2025-07-01,625,684,673,,684,,,,,
+"Aledia, Inc.",Other Debt,Industrials,10.7%,,,,,2022-08-05,2025-09-01,899,970,958,,970,,,,,
+"Aledia, Inc.",Other Debt,Industrials,12.0%,,,,,2022-09-30,2025-10-01,1498,1602,1590,,1602,,,,,
+"All.Space Networks, Limited.",First Lien,Aerospace & Defense,,,Prime,7.0%,,2022-08-22,2027-09-01,9539,9565,9495,,9565,,,,,
+"Ambient Photonics, Inc.",Warrants,Financial Services,,,,,,2022-07-27,,,47,220,,47,,,,,
+"Everalbum, Inc.",Warrants,Financial Services,,,,,,2020-01-16,,,25,2,,25,,,,,
+"Hologram, Inc.",Warrants,Financial Services,,,,,,2020-01-31,,,49,257,,49,,,,,
+"Presto Automation, Inc.",Warrants,Financial Services,,,,,,2020-01-16,,,185,71,,185,,,,,
+"Pendulum Therapeutics, Inc.",Warrants,Financial Services,,,,,,2020-01-16,,,43,4,,43,,,,,
+"Pendulum Therapeutics, Inc.",Warrants,Financial Services,,,,,,2020-06-01,,,36,2,,36,,,,,
+"Pendulum Therapeutics, Inc.",Warrants,Financial Services,,,,,,2021-12-31,,,118,9,,118,,,,,
+"Tarana Wireless, Inc.",Warrants,Financial Services,,,,,,2021-06-30,,,967,2673,,967,,,,,
+"viaPhoton, Inc.",Warrants,Financial Services,,,,,,2022-03-31,,,22,24,,22,,,,,
+"BaubleBar, Inc.",Warrants,Consumer & Retail,,,,,,2020-01-16,,,639,58,,639,,,,,
+"BaubleBar, Inc.",Warrants,Consumer & Retail,,,,,,2020-01-16,,,72,7,,72,,,,,
+"Boosted eCommerce, Inc.",Warrants,Consumer & Retail,,,,,,2020-12-18,,,259,40,,259,,,,,
+"Madison Reed, Inc.",Warrants,Consumer & Retail,,,,,,2020-01-16,,,185,375,,185,,,,,
+"Madison Reed, Inc.",Warrants,Consumer & Retail,,,,,,2020-01-16,,,71,116,,71,,,,,
+"Madison Reed, Inc.",Warrants,Consumer & Retail,,,,,,2020-01-16,,,56,94,,56,,,,,
+"Ogee, Inc.",Warrants,Consumer & Retail,,,,,,2023-02-14,,,57,47,,57,,,,,
+"Ogee, Inc.",Warrants,Consumer & Retail,,,,,,2023-09-29,,,52,47,,52,,,,,
+"Portofino Labs, Inc.",Warrants,Consumer & Retail,,,,,,2020-12-31,,,160,41,,160,,,,,
+"Portofino Labs, Inc.",Warrants,Consumer & Retail,,,,,,2021-04-01,,,99,17,,99,,,,,
+"Quip NYC, Inc.",Warrants,Consumer & Retail,,,,,,2021-03-09,,,203,42,,203,,,,,
+"Rinse, Inc.",Warrants,Consumer & Retail,,,,,,2022-05-10,,,118,185,,118,,,,,
+"SI Tickets, Inc.",Warrants,Consumer & Retail,,,,,,2022-05-11,,,162,11,,162,,,,,
+"Super73, Inc.",Warrants,Consumer & Retail,,,,,,2020-12-31,,,105,455,,105,,,,,
+"Trendly, Inc.",Warrants,Consumer & Retail,,,,,,2020-01-16,,,222,4,,222,,,,,
+"Whoop, Inc.",Warrants,Consumer & Retail,,,,,,2023-05-17,,,516,799,,516,,,,,
+Medical Sales Training Holding Company,Warrants,Education,,,,,,2021-03-18,,,108,29,,108,,,,,
+"DailyPay, Inc.",Warrants,Insurance,,,,,,2020-09-30,,,151,998,,151,,,,,
+"Empower Financial, Inc.",Warrants,Insurance,,,,,,2023-10-13,,,268,342,,268,,,,,
+"Eqis Capital Management, Inc.",Warrants,Insurance,,,,,,2022-06-15,,,10,29,,10,,,,,
+"RealtyMogul, Co.",Warrants,Insurance,,,,,,2020-01-16,,,285,1706,,285,,,,,
+"Slope Tech, Inc.",Warrants,Insurance,,,,,,2022-09-14,,,109,484,,109,,,,,
+"Slope Tech, Inc.",Warrants,Insurance,,,,,,2023-08-30,,,112,113,,112,,,,,
+"Athletic Brewing Company, LLC",Warrants,Food & Beverage,,,,,,2022-10-28,,,287,196,,287,,,,,
+"Bowery Farming, Inc.",Warrants,Food & Beverage,,,,,,2020-01-16,,,410,12,,410,,,,,
+"Bowery Farming, Inc.",Warrants,Food & Beverage,,,,,,2020-12-22,,,160,5,,160,,,,,
+"Bowery Farming, Inc.",Warrants,Food & Beverage,,,,,,2021-09-10,,,617,5,,617,,,,,
+"Bowery Farming, Inc.",Warrants,Food & Beverage,,,,,,2023-12-29,,,29,29,,29,,,,,
+"Daring Foods, Inc.",Warrants,Food & Beverage,,,,,,2021-04-08,,,106,174,,106,,,,,
+"DrinkPak, LLC",Warrants,Food & Beverage,,,,,,2023-02-17,,,29,586,,29,,,,,
+"Emergy, Inc.",Warrants,Food & Beverage,,,,,,2022-10-05,,,181,29,,181,,,,,
+"GrubMarket, Inc.",Warrants,Food & Beverage,,,,,,2020-06-15,,,115,3535,,115,,,,,cost_suspicious_vs_size
+"Intelligent Brands, Inc.",Warrants,Food & Beverage,,,,,,2020-12-31,,,546,35,,546,,,,,
+"The Fynder Group, Inc.",Warrants,Food & Beverage,,,,,,2020-10-14,,,68,28,,68,,,,,
+"Zero Acre Farms, Inc.",Warrants,Food & Beverage,,,,,,2022-12-23,,,79,73,,79,,,,,
+"Warrant Investments- United States, Continued",Warrants,Food & Beverage,,,,,,,,,,,,,,,,,
+"Bolb, Inc.",Warrants,Software & Technology,,,,,,2021-10-12,,,36,1,,36,,,,,
+"Edeniq, Inc.",Warrants,Software & Technology,,,,,,2020-01-16,,,,205,,,,,,,
+"Edeniq, Inc.",Warrants,Software & Technology,,,,,,2020-01-16,,,,416,,,,,,,
+"Edeniq, Inc.",Warrants,Software & Technology,,,,,,2020-01-16,,,,35,,,,,,,
+"Edeniq, Inc.",Warrants,Software & Technology,,,,,,2020-01-16,,,,1326,,,,,,,
+"Edeniq, Inc.",Warrants,Software & Technology,,,,,,2021-11-29,,,7,1047,,7,,,,,cost_suspicious_vs_size
+"Mainspring Energy, Inc.",Warrants,Software & Technology,,,,,,2020-01-16,,,283,350,,283,,,,,
+"Mainspring Energy, Inc.",Warrants,Software & Technology,,,,,,2020-11-20,,,226,203,,226,,,,,
+"Mainspring Energy, Inc.",Warrants,Software & Technology,,,,,,2022-03-18,,,344,338,,344,,,,,
+"RTS Holding, Inc.",Warrants,Software & Technology,,,,,,2021-12-10,,,75,310,,75,,,,,
+"RTS Holding, Inc.",Warrants,Software & Technology,,,,,,2022-10-10,,,87,134,,87,,,,,
+"Dentologie Enterprises, Inc.",Warrants,Healthcare,,,,,,2022-10-14,,,66,123,,66,,,,,
+"Exer Holdings, LLC",Warrants,Healthcare,,,,,,2021-11-19,,,93,103,,93,,,,,
+"Hospitalists Now, Inc.",Warrants,Healthcare,,,,,,2020-01-16,,,71,628,,71,,,,,
+"Hospitalists Now, Inc.",Warrants,Healthcare,,,,,,2020-01-16,,,391,3467,,391,,,,,
+"Lark Technologies, Inc.",Warrants,Healthcare,,,,,,2020-09-30,,,177,5,,177,,,,,
+"Lark Technologies, Inc.",Warrants,Healthcare,,,,,,2021-06-30,,,258,6,,258,,,,,
+"Lark Technologies, Inc.",Warrants,Healthcare,,,,,,2022-12-22,,,58,6,,58,,,,,
+Moxe Health Corp.,Warrants,Healthcare,,,,,,2023-12-29,,,135,135,,135,,,,,
+"RXAnte, Inc.",Warrants,Healthcare,,,,,,2022-11-21,,,95,102,,95,,,,,
+"RXAnte, Inc.",Warrants,Healthcare,,,,,,2023-04-07,,,29,35,,29,,,,,
+"RXAnte, Inc.",Warrants,Healthcare,,,,,,2023-10-17,,,40,35,,40,,,,,
+"BetterLeap, Inc.",Warrants,Software & Technology,,,,,,2022-04-20,,,38,39,,38,,,,,
+"Qwick, Inc.",Warrants,Software & Technology,,,,,,2021-12-31,,,96,291,,96,,,,,
+"3DEO, Inc.",Warrants,Industrials,,,,,,2022-02-23,,,93,,,93,,,,,
+"SBG Labs, Inc.",Warrants,Industrials,,,,,,2020-01-16,,,8,57,,8,,,,,
+"SBG Labs, Inc.",Warrants,Industrials,,,,,,2020-01-16,,,7,47,,7,,,,,
+"SBG Labs, Inc.",Warrants,Industrials,,,,,,2020-01-16,,,4,27,,4,,,,,
+"SBG Labs, Inc.",Warrants,Industrials,,,,,,2020-01-16,,,4,24,,4,,,,,
+"SBG Labs, Inc.",Warrants,Industrials,,,,,,2020-01-16,,,110,750,,110,,,,,
+"SBG Labs, Inc.",Warrants,Industrials,,,,,,2020-01-16,,,65,437,,65,,,,,
+"Firefly Systems, Inc.",Warrants,Media & Entertainment,,,,,,2020-01-31,,,282,201,,282,,,,,
+"Grabit Interactive Media, Inc.",Warrants,Media & Entertainment,,,,,,2022-04-08,,,40,71,,40,,,,,
+"PebblePost, Inc.",Warrants,Media & Entertainment,,,,,,2021-05-07,,,68,190,,68,,,,,
+"Convergent Dental, Inc.",Warrants,Healthcare,,,,,,2023-04-21,,,377,217,,377,,,,,
+"Delphinus, Inc.",Warrants,Healthcare,,,,,,2023-06-27,,,29,25,,29,,,,,
+"Revelle Aesthetics, Inc.",Warrants,Healthcare,,,,,,2023-05-30,,,151,47,,151,,,,,
+"Shoulder Innovations, Inc.",Warrants,Healthcare,,,,,,2023-08-07,,,120,105,,120,,,,,
+"Homelight, Inc.",Warrants,Real Estate,,,,,,2022-06-23,,,1,3,,1,,,,,
+"Knockaway, Inc.",Warrants,Real Estate,,,,,,2020-01-16,,,208,,,208,,,,,
+"Maxwell Financial Labs, Inc.",Warrants,Real Estate,,,,,,2020-10-07,,,21,12,,21,,,,,
+"Maxwell Financial Labs, Inc.",Warrants,Real Estate,,,,,,2020-12-22,,,34,14,,34,,,,,
+"Maxwell Financial Labs, Inc.",Warrants,Real Estate,,,,,,2021-09-30,,,148,7,,148,,,,,
+"All Seated, Inc.",Warrants,Software & Technology,,,,,,2022-02-28,,,21,,,21,,,,,
+"Cart.com, Inc.",Warrants,Software & Technology,,,,,,2023-11-17,,,733,730,,733,,,,,
+"Crowdtap, Inc.",Warrants,Software & Technology,,,,,,2020-01-16,,,42,484,,42,,,,,
+"Crowdtap, Inc.",Warrants,Software & Technology,,,,,,2020-01-16,,,9,109,,9,,,,,
+"Gtxcel, Inc.",Warrants,Software & Technology,,,,,,2020-01-16,,,83,19,,83,,,,,
+"Lucidworks, Inc.",Warrants,Software & Technology,,,,,,2020-01-16,,,806,861,,806,,,,,
+"Reciprocity, Inc.",Warrants,Software & Technology,,,,,,2020-09-25,,,99,34,,99,,,,,
+"Reciprocity, Inc.",Warrants,Software & Technology,,,,,,2021-04-29,,,54,17,,54,,,,,
+"Smartly, Inc.",Warrants,Software & Technology,,,,,,2022-05-16,,,84,86,,84,,,,,
+"Warrant Investments- United States, Continued",Warrants,Software & Technology,,,,,,,,,,,,,,,,,
+Astranis Space Technology Corp.,Warrants,Aerospace & Defense,,,,,,2023-04-13,,,93,1122,,93,,,,,
+"Axiom Space, Inc.",Warrants,Aerospace & Defense,,,,,,2021-05-28,,,121,49,,121,,,,,
+"Axiom Space, Inc.",Warrants,Aerospace & Defense,,,,,,2021-05-28,,,39,9,,39,,,,,
+Hermeus Corp.,Warrants,Aerospace & Defense,,,,,,2022-08-09,,,237,146,,237,,,,,
+"Rocket Lab USA, Inc.",Warrants,Aerospace & Defense,,,,,,2023-12-29,,,2255,2255,,2255,,,,,
+"Space Perspective, Inc.",Warrants,Aerospace & Defense,,,,,,2022-03-03,,,256,223,,256,,,,,
+"Macrofab, Inc.",Warrants,Software & Technology,,,,,,2023-07-21,,,333,344,,333,,,,,
+"Get Spiffy, Inc.",Warrants,Transportation & Logistics,,,,,,2023-07-14,,,383,394,,383,,,,,
+"Aledia, Inc.",Warrants,Industrials,,,,,,2022-03-31,,,130,622,,130,,,,,
+"All.Space Networks, Limited.",Warrants,Aerospace & Defense,,,,,,2022-08-22,,,113,81,,113,,,,,
+"Rigetti & Co, Inc.",Other Equity,Artificial Intelligence & Automation,,,,,,2022-02-25,,,500,49,,500,,,,,
+"Rigetti & Co, Inc.",Other Equity,Artificial Intelligence & Automation,,,,,,2021-05-18,,,506,746,,506,,,,,
+"Tarana Wireless, Inc.",Other Equity,Other,,,,,,2022-03-16,,,500,569,,500,,,,,
+"Vertical Communications, Inc.",Other Equity,Other,,,,,,2020-01-16,,,3966,1338,,3966,,,,,
+"Project Frog, Inc.",Other Equity,Software & Technology,,,,,,2021-08-03,,,1253,8,,1253,,,,,fair_value_suspicious_vs_size
+"Molekule, Inc.",Other Equity,Consumer & Retail,,,,,,2023-01-12,,,7,,,7,,,,,
+"Portofino Labs, Inc.",Other Equity,Consumer & Retail,,,,,,2021-11-01,,,500,445,,500,,,,,
+"Quip NYC, Inc.",Other Equity,Consumer & Retail,,,,,,2021-08-17,,,500,277,,500,,,,,
+"Slope Tech, Inc.",Other Equity,Insurance,,,,,,2023-06-20,,,500,504,,500,,,,,
+"Emergy, Inc.",Other Equity,Food & Beverage,,,,,,2021-06-28,,,500,230,,500,,,,,
+"Intelligent Brands, Inc.",Other Equity,Food & Beverage,,,,,,2020-01-16,,,537,94,,537,,,,,
+"Edeniq, Inc.",Other Equity,Software & Technology,,,,,,2020-01-16,,,,1530,,,,,,,
+"Edeniq, Inc.",Other Equity,Software & Technology,,,,,,2020-01-16,,,,1293,,,,,,,
+"Edeniq, Inc.",Other Equity,Software & Technology,,,,,,2020-01-16,,,,2542,,,,,,,
+Electric Hydrogen Co.,Other Equity,Software & Technology,,,,,,2023-04-06,,,500,521,,500,,,,,
+"Mainspring Energy, Inc.",Other Equity,Software & Technology,,,,,,2022-03-30,,,500,318,,500,,,,,
+"RTS Holding, Inc.",Other Equity,Software & Technology,,,,,,2022-07-05,,,334,602,,334,,,,,
+"RTS Holding, Inc.",Other Equity,Software & Technology,,,,,,2023-02-15,,,405,590,,405,,,,,
+"United States, Continued",Other Equity,Software & Technology,,,,,,,,,,,,,,,,,
+"Dentologie Enterprises, Inc.",Other Equity,Healthcare,,,,,,2023-08-03,,,300,304,,300,,,,,
+"Emerald Cloud Lab, Inc.",Other Equity,Healthcare,,,,,,2022-06-03,,,500,327,,500,,,,,
+"Lark Technologies, Inc.",Other Equity,Healthcare,,,,,,2021-08-19,,,500,84,,500,,,,,
+"Nomad Health, Inc.",Other Equity,Software & Technology,,,,,,2022-05-27,,,500,145,,500,,,,,
+"SBG Labs, Inc.",Other Equity,Industrials,,,,,,2023-07-29,,,13,53,,13,,,,,
+"SBG Labs, Inc.",Other Equity,Industrials,,,,,,2023-10-10,,,4,16,,4,,,,,
+Senior Credit Corp.,Other Equity,Other,,,,,,2023-01-30,,,3302,3631,,3302,,,,,
+"Orchard Technologies, Inc.",Other Equity,Real Estate,,,,,,2021-08-06,,,500,12,,500,,,,,
+"Orchard Technologies, Inc.",Other Equity,Real Estate,,,,,,2023-03-16,,,500,343,,500,,,,,
+"Maxwell Financial Labs, Inc.",Other Equity,Real Estate,,,,,,2021-01-22,,,500,143,,500,,,,,
+"United States, Continued",Other Equity,Real Estate,,,,,,,,,,,,,,,,,
+"Smartly, Inc.",Other Equity,Software & Technology,,,,,,2023-03-29,,,500,516,,500,,,,,
+"The Tomorrow Companies, Inc.",Other Equity,Software & Technology,,,,,,2023-07-05,,,325,211,,325,,,,,
+Astranis Space Technology Corp.,Other Equity,Aerospace & Defense,,,,,,2023-04-05,,,300,306,,300,,,,,
+"Axiom Space, Inc.",Other Equity,Aerospace & Defense,,,,,,2021-08-11,,,521,572,,521,,,,,
+"Hadrian Automation, Inc.",Other Equity,Aerospace & Defense,,,,,,2022-03-29,,,500,456,,500,,,,,
+"Hadrian Automation, Inc.",Other Equity,Aerospace & Defense,,,,,,2023-12-11,,,300,300,,300,,,,,
+Goldman Sachs Financial Square Government Institutional Fund,Other,Financial Services,,,,,,,,,3088,3088,,3088,,,,,

@@ -1,112 +1,684 @@
-company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
-Buyco LLC,co_4ea1cff364c4,First Lien,Media & Entertainment,10.84%,,SOFR,5.5%,,,2026-11-01,2697,2669,2670,,2669,,,,,,PNNT,2024-08-07
-te II Inc.,co_b9a2f71934dc,First Lien,Media & Entertainment,12.34%,,SOFR,7%,,,2028-05-31,4950,4864,4913,,4864,,,,,,PNNT,2024-08-07
-te II Inc.,co_b9a2f71934dc,First Lien,Media & Entertainment,12.34%,,SOFR,7%,,,2028-05-31,347,347,344,,347,,,,,,PNNT,2024-08-07
-te Holdings II Inc.,co_4efff6d416f8,First Lien,Media & Entertainment,,,,,,,,414,414,600,,414,,,,,,PNNT,2024-08-07
-te Company II Inc.,co_ba90502123b4,First Lien,Media & Entertainment,,,,,,,,125000,125,137,,125,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,PNNT,2024-08-07
-Gauge Loving Tan,co_02a85c695e43,Common Equity,Consumer & Retail,,,,,,,,9,10,6,,10,,,,,,PNNT,2024-08-07
-te LLC) Aerospace and Defense,co_b9a1d089ab3f,First Lien,Media & Entertainment,,,,,,,,98286,983,957,,983,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,PNNT,2024-08-07
-te LLC,co_52817403f47a,First Lien,Media & Entertainment,,,,,,,,43918,4488,32593,,4488,,,,,,PNNT,2024-08-07
-Investments—256.5%,co_1b87d41c8ffe,Other,Financial Services,,,,,,,,,1252986,1259875,,1252986,,,,,,PNNT,2024-08-07
-and Cash Equivalents—268.5%,co_9c05192f3729,Other,,,,,,,,,,1312137,1319027,,1312137,,,,,,PNNT,2024-08-07
-A1 Garage Merger Sub LLC,co_94ef4596a353,First Lien,,10.83%,,SOFR,5.5%,,,2028-12-22,14775,14533,14775,,14533,,,,,,PNNT,2024-08-07
-ACP Avenu Buyer LLC,co_84171a9a04be,First Lien,,10.55%,,SOFR,5.25%,,,2029-10-02,6468,6359,6273,,6359,,,,,,PNNT,2024-08-07
-ACP Falcon Buyer Inc.,co_5610a0606ed6,First Lien,,10.8%,,SOFR,5.5%,,,2029-08-01,15389,15096,15512,,15096,,,,,,PNNT,2024-08-07
-AFC - Dell Holding Corp.,co_9e5f4376beaa,First Lien,,11.75%,,SOFR,6.4%,,,2027-04-09,2282,2256,2260,,2256,,,,,,PNNT,2024-08-07
-Ad.net Acquisition LLC,co_9f11b7cdc3d7,First Lien,,11.6%,,SOFR,6%,,,2026-05-07,4850,4850,4850,,4850,,,,,,PNNT,2024-08-07
-Aeronix,co_98bc95fdd312,First Lien,,10.83%,,SOFR,5.5%,,,2028-12-18,14925,14728,14925,,14728,,,,,,PNNT,2024-08-07
-Alpine Acquisition Corp.,co_78de638b4250,First Lien,,11.43%,,SOFR,6.1%,,,2026-11-30,14725,14475,14136,,14475,,,,,,PNNT,2024-08-07
-Amsive Holding Corp.,co_ab4d63baa520,First Lien,,11.73%,,SOFR,6.4%,,,2025-06-10,13849,13793,13642,,13793,,,,,,PNNT,2024-08-07
-Anteriad LLC,co_9deaf0a342c8,First Lien,,11.23%,,SOFR,5.75%,,,2026-06-30,13744,13673,13744,,13673,,,,,,PNNT,2024-08-07
-Applied Technical Services LLC,co_99f15d413f73,First Lien,Business Services,11.25%,,SOFR,5.9%,,,2026-12-29,13750,13623,13544,,13623,,,,,,PNNT,2024-08-07
-Arcfield Acquisition Corp.,co_50bc69c38d09,First Lien,,11.58%,,SOFR,6.25%,,,2029-08-03,21628,21323,21520,,21323,,,,,,PNNT,2024-08-07
-Beta Plus Technologies Inc.,co_15fb3f24358e,First Lien,,11.08%,,SOFR,5.75%,,,2029-07-01,14775,14554,14480,,14554,,,,,,PNNT,2024-08-07
-Big Top Holdings LLC,co_bb22afbdfb87,First Lien,,11.58%,,SOFR,6.25%,,,2030-02-28,6983,6867,6930,,6867,,,,,,PNNT,2024-08-07
-Bioderm Inc.,co_356ecbdfc662,First Lien,,11.83%,,SOFR,6.5%,,,2028-01-31,8910,8815,8799,,8815,,,,,,PNNT,2024-08-07
-Blackhawk Industrial Distribution Inc.,co_8604af3bb831,First Lien,Distribution & Wholesale,11.66%,,SOFR,6.4%,,,2026-09-17,19645,19388,19517,,19388,,,,,,PNNT,2024-08-07
-BlueHalo Financing Holdings LLC,co_f50ba1fff417,First Lien,,10.09%,,SOFR,4.75%,,,2025-10-31,12228,12158,12045,,12158,,,,,,PNNT,2024-08-07
-Broder Bros. Co.,co_7c6852e8548b,First Lien,,11.6%,,SOFR,6.26%,,,2025-12-04,9438,9438,9438,,9438,,,,,,PNNT,2024-08-07
-Burgess Point Purchaser Corp.,co_4efff09567e0,First Lien,,10.69%,,SOFR,5.35%,,,2029-09-26,887,834,857,,834,,,,,,PNNT,2024-08-07
-Carisk Buyer Inc.,co_3e2f4263b8bf,First Lien,,11.08%,,SOFR,5.75%,,,2029-11-30,5486,5412,5459,,5412,,,,,,PNNT,2024-08-07
-Carnegie Dartlet LLC,co_42c155a3ddd4,First Lien,,10.84%,,SOFR,5.5%,,,2030-02-07,9975,9835,9825,,9835,,,,,,PNNT,2024-08-07
-Cartessa Aesthetics LLC,co_5b795483c871,First Lien,,11.08%,,SOFR,5.75%,,,2028-06-14,17150,16910,17150,,16910,,,,,,PNNT,2024-08-07
-CF512 Inc.,co_d12c2b1fcc68,First Lien,,11.54%,,SOFR,6.19%,,,2026-08-20,2899,2883,2855,,2883,,,,,,PNNT,2024-08-07
-Connatix Buyer Inc.,co_ca0c6acae604,First Lien,,11.11%,,SOFR,5.76%,,,2027-07-13,8739,8726,8564,,8726,,,,,,PNNT,2024-08-07
-Crane 1 Services Inc.,co_e2d25c70c2a1,First Lien,Business Services,10.35%,,SOFR,5.01%,,,2027-08-16,2555,2535,2549,,2535,,,,,,PNNT,2024-08-07
-Dr. Squatch LLC,co_e3e31b898954,First Lien,,11.18%,,SOFR,5.75%,,,2027-08-31,10615,10578,10615,,10578,,,,,,PNNT,2024-08-07
-DRI Holding Inc.,co_e3bb3f551b76,First Lien,,10.69%,,SOFR,5.35%,,,2028-12-21,5845,5420,5604,,5420,,,,,,PNNT,2024-08-07
-DRS Holdings III Inc.,co_5f36274df8c4,First Lien,,11.73%,,SOFR,6.4%,,,2025-11-03,14049,14025,13993,,14025,,,,,,PNNT,2024-08-07
-EDS Buyer LLC,co_10f64234f044,First Lien,,11.08%,,SOFR,5.75%,,,2029-01-10,6172,6110,6079,,6110,,,,,,PNNT,2024-08-07
-ETE Intermediate II LLC,co_a9906ab1deb4,First Lien,Media & Entertainment,11.85%,,SOFR,6.5%,,,2029-05-29,12280,12074,12402,,12074,,,,,,PNNT,2024-08-07
-Exigo Intermediate II LLC,co_69945c1e9737,First Lien,Media & Entertainment,11.69%,,SOFR,6.25%,,,2027-03-15,9676,9574,9603,,9574,,,,,,PNNT,2024-08-07
-Fairbanks Morse Defense,co_0ab50a9a685a,First Lien,Aerospace & Defense,10.35%,,SOFR,4.75%,,,2028-06-17,3491,3413,3494,,3413,,,,,,PNNT,2024-08-07
-Five Star Buyer Inc.,co_607e18196e07,First Lien,,12.47%,,SOFR,7%,,,2028-02-23,4274,4204,4242,,4204,,,,,,PNNT,2024-08-07
-Global Holdings InterCo LLC,co_a17b7cd0811e,First Lien,,11.48%,,SOFR,6.1%,,,2026-03-16,6971,6958,6622,,6958,,,,,,PNNT,2024-08-07
-Graffiti Buyer Inc.,co_0e9dedaa52c9,First Lien,,10.93%,,SOFR,5.6%,,,2027-08-10,3126,3087,3095,,3087,,,,,,PNNT,2024-08-07
-Hancock Roofing and Construction LLC.,co_d85ec0f73a3d,First Lien,Industrials,10.93%,,SOFR,5.5%,,,2026-12-31,6146,6146,5777,,6146,,,,,,PNNT,2024-08-07
-HV Watterson Holdings LLC,co_55a05656c359,First Lien,,11.73%,,SOFR,6.15%,,,2026-12-17,14987,14851,14313,,14851,,,,,,PNNT,2024-08-07
-HW Holdco LLC,co_1627b72c157b,First Lien,,11.7%,,SOFR,6.4%,,,2026-05-10,18451,18380,18451,,18380,,,,,,PNNT,2024-08-07
-IG Investments Holdings LLC,co_06c540faeacf,First Lien,Financial Services,11.43%,,SOFR,6%,,,2028-09-22,4394,4330,4317,,4330,,,,,,PNNT,2024-08-07
-Imagine Acquisitionco LLC,co_c25c52261e58,First Lien,,10.43%,,SOFR,5.1%,,,2027-11-15,5523,5451,5495,,5451,,,,,,PNNT,2024-08-07
-Infinity Home Services Holdco Inc.,co_607a972ec616,First Lien,Business Services,12.18%,,SOFR,6.85%,,,2028-12-28,10969,10807,10969,,10807,,,,,,PNNT,2024-08-07
-Inventus Power Inc.,co_5ea70dbaca4c,First Lien,,12.96%,,SOFR,7.61%,,,2025-06-30,13117,12961,12855,,12961,,,,,,PNNT,2024-08-07
-Kinetic Purchaser LLC,co_dcf36a882d65,First Lien,,11.48%,,SOFR,6.15%,,,2027-11-10,13701,13510,13701,,13510,,,,,,PNNT,2024-08-07
-LAV Gear Holdings Inc.,co_97316ccde517,First Lien,,11.72%,,SOFR,6.4%,,,2025-10-31,4625,4615,4569,,4615,,,,,,PNNT,2024-08-07
-Lash OpCo LLC,co_90f3961a5b09,First Lien,,8.06%,,SOFR,2.75%,,,2027-02-18,20184,20069,19982,,20069,,,,,,PNNT,2024-08-07
-Lightspeed Buyer Inc.,co_961292b66f9d,First Lien,,10.69%,,SOFR,5.35%,,,2026-02-03,12123,12011,12123,,12011,,,,,,PNNT,2024-08-07
-LJ Avalon Holdings LLC,co_27e9144fc6e4,First Lien,,11.74%,,SOFR,6.25%,,,2030-01-31,6271,6165,6271,,6165,,,,,,PNNT,2024-08-07
-MAG DS Corp.,co_c49257271dab,First Lien,,10.93%,,SOFR,5.5%,,,2027-04-01,7539,7173,7275,,7173,,,,,,PNNT,2024-08-07
-Magenta Buyer LLC,co_998c6c433e56,First Lien,,10.59%,,SOFR,5.26%,,,2028-07-31,3756,3552,2072,,3552,,,,,,PNNT,2024-08-07
-Mars Acquisition Holdings Corp.,co_21ee733d0c9b,First Lien,,10.98%,,SOFR,5.65%,,,2026-05-14,10802,10746,10802,,10746,,,,,,PNNT,2024-08-07
-MBS Holdings Inc.,co_1f4d56e6b50c,First Lien,,11.27%,,SOFR,5.85%,,,2027-04-16,8352,8274,8360,,8274,,,,,,PNNT,2024-08-07
-Meadowlark Acquirer LLC,co_259fd8608352,First Lien,,11.23%,,SOFR,5.75%,,,2027-12-10,2930,2889,2857,,2889,,,,,,PNNT,2024-08-07
-Medina Health LLC,co_b22f7431034e,First Lien,,11.58%,,SOFR,6.25%,,,2028-10-20,9950,9796,9950,,9796,,,,,,PNNT,2024-08-07
-Municipal Emergency Services Inc.,co_80bfaf155c6d,First Lien,Business Services,10.49%,,SOFR,5.15%,,,2027-10-01,5928,5833,5928,,5833,,,,,,PNNT,2024-08-07
-NBH Group LLC,co_cf4bef6edccb,First Lien,,11.18%,,SOFR,5.75%,,,2026-08-19,7372,7327,7004,,7327,,,,,,PNNT,2024-08-07
-NORA Acquisition LLC,co_44e3b26054a0,First Lien,,11.68%,,SOFR,6.35%,,,2029-08-31,14888,14625,14888,,14625,,,,,,PNNT,2024-08-07
-Omnia Exterior Solutions LLC,co_45c8e988e7ce,First Lien,,10.83%,,SOFR,5.5%,,,2029-12-29,3491,3443,3439,,3443,,,,,,PNNT,2024-08-07
-One Stop Mailing LLC,co_666f58675343,First Lien,,11.71%,,SOFR,6.36%,,,2027-05-07,8403,8271,8403,,8271,,,,,,PNNT,2024-08-07
-Owl Acquisition LLC,co_c8654b25f416,First Lien,,10.69%,,SOFR,5.35%,,,2028-02-04,3893,3807,3834,,3807,,,,,,PNNT,2024-08-07
-Ox Two LLC,co_d8f40c613751,First Lien,,11.85%,,SOFR,6.51%,,,2026-05-18,4340,4304,4340,,4304,,,,,,PNNT,2024-08-07
-PL Acquisitionco LLC,co_76d53d3f1d91,First Lien,,12.44%,,SOFR,7.1%,,,2027-11-09,8143,8047,6514,,8047,,,,,,PNNT,2024-08-07
-Pacific Purchaser LLC,co_eeb61b9856aa,First Lien,,11.26%,,SOFR,6%,,,2028-10-02,12935,12705,13013,,12705,,,,,,PNNT,2024-08-07
-Quantic Electronics LLC,co_9b566b2444e7,First Lien,Software & Technology,11.68%,,SOFR,6.35%,,,2026-11-19,3288,3251,3255,,3251,,,,,,PNNT,2024-08-07
-Radius Aerospace,co_c2adc14192da,First Lien,Aerospace & Defense,11.38%,,SOFR,5.75%,,,2025-03-31,12599,12567,12347,,12567,,,,,,PNNT,2024-08-07
-Rancho Health MSO Inc.,co_ce352faa6907,First Lien,,10.92%,,SOFR,5.5%,,,2025-12-18,5560,5560,5560,,5560,,,,,,PNNT,2024-08-07
-Reception Purchaser LLC,co_d439fc36f4fd,First Lien,,11.48%,,SOFR,6.15%,,,2028-04-28,4962,4910,3970,,4910,,,,,,PNNT,2024-08-07
-Recteq LLC,co_c5c26f9005ac,First Lien,,12.49%,,SOFR,7.15%,,,2026-01-29,9675,9609,9530,,9609,,,,,,PNNT,2024-08-07
-Research Now Group LLC,co_f56b9233964e,First Lien,,0%,,SOFR,5.76%,,,2024-12-20,14351,14318,12198,,14318,,,,,,PNNT,2024-08-07
-Riverpoint Medical LLC,co_e8b0874b5d69,First Lien,Healthcare,10.78%,,SOFR,5.5%,,,2025-06-21,3942,3925,3946,,3925,,,,,,PNNT,2024-08-07
-Rural Sourcing Holdings Inc.,co_193bef57c8af,First Lien,,11.02%,,SOFR,5.75%,,,2029-06-16,4347,4276,4303,,4276,,,,,,PNNT,2024-08-07
-S101 Holdings Inc.,co_21517a905ed4,First Lien,,11.45%,,SOFR,6.15%,,,2026-12-29,4218,4156,4176,,4156,,,,,,PNNT,2024-08-07
-Sales Benchmark Index LLC,co_2f514572a82e,First Lien,,11.53%,,SOFR,6.2%,,,2025-01-03,6676,6660,6676,,6660,,,,,,PNNT,2024-08-07
-Sargent & Greenleaf Inc.,co_9134b5b22f88,First Lien,,11.92%,,SOFR,6.5%,,,2024-12-20,4675,4675,4675,,4675,,,,,,PNNT,2024-08-07
-Seaway Buyer LLC,co_50f5e02b1d22,First Lien,,11.48%,,SOFR,6.15%,,,2029-06-13,14738,14540,14259,,14540,,,,,,PNNT,2024-08-07
-Sigma Defense Systems LLC,co_916b06171872,First Lien,Aerospace & Defense,12.49%,,SOFR,7.15%,,,2027-12-18,14687,14518,14540,,14518,,,,,,PNNT,2024-08-07
-Simplicity Financial Marketing Group Holdings Inc.,co_d10016badf9d,First Lien,Financial Services,11.71%,,SOFR,6.4%,,,2026-12-02,11387,11220,11274,,11220,,,,,,PNNT,2024-08-07
-Skopima Consilio Parent LLC,co_3409326f4afe,First Lien,,9.96%,,SOFR,4.5%,,,2028-05-17,1294,1271,1295,,1271,,,,,,PNNT,2024-08-07
-Smartronix LLC,co_0aef8ece01b9,First Lien,,11.33%,,SOFR,6%,,,2028-11-23,19564,19274,19564,,19274,,,,,,PNNT,2024-08-07
-Solutionreach Inc.,co_687e91868b79,First Lien,,12.48%,,SOFR,7%,,,2025-07-17,9239,9208,9239,,9208,,,,,,PNNT,2024-08-07
-SpendMend Holdings LLC,co_710b9ab58483,First Lien,,10.98%,,SOFR,5.65%,,,2028-03-01,9534,9314,9534,,9314,,,,,,PNNT,2024-08-07
-Summit Behavioral Healthcare LLC,co_fef2ee36d477,First Lien,Healthcare,9.6%,,SOFR,4.25%,,,2028-11-24,3554,3391,3566,,3391,,,,,,PNNT,2024-08-07
-System Planning and Analysis Inc.,co_71f5dc9ec658,First Lien,,11.16%,,SOFR,5.75%,,,2027-08-16,15844,15624,15844,,15624,,,,,,PNNT,2024-08-07
-TCG 3.0 Jogger Acquisitionco Inc.,co_ec1d60043362,First Lien,,11.84%,,SOFR,6.5%,,,2029-01-23,9975,9819,9875,,9819,,,,,,PNNT,2024-08-07
-Team Services Group LLC,co_4524cbd7d68d,First Lien,Business Services,10.5%,,SOFR,5.15%,,,2028-11-24,2668,2581,2659,,2581,,,,,,PNNT,2024-08-07
-Teneo Holdings LLC,co_a61900ea7719,First Lien,,10.09%,,SOFR,4.75%,,,2031-03-13,2993,2963,2996,,2963,,,,,,PNNT,2024-08-07
-The Bluebird Group LLC,co_7670d29af630,First Lien,,11.98%,,SOFR,6.65%,,,2026-07-27,11933,11889,11933,,11889,,,,,,PNNT,2024-08-07
-The Vertex Companies LLC,co_ea5004681b41,First Lien,,11.48%,,SOFR,6.1%,,,2027-08-31,7631,7552,7641,,7552,,,,,,PNNT,2024-08-07
-TPC US Parent LLC,co_3b907791477a,First Lien,,10.95%,,SOFR,5.5%,,,2025-11-24,5437,5369,5437,,5369,,,,,,PNNT,2024-08-07
-Transgo LLC,co_db8bd65b7b6f,First Lien,,11.34%,,SOFR,6%,,,2028-12-29,14952,14742,14952,,14742,,,,,,PNNT,2024-08-07
-TWS Acquisition Corp.,co_3417329662f3,First Lien,,11.74%,,SOFR,6.25%,,,2025-06-06,3628,3624,3628,,3624,,,,,,PNNT,2024-08-07
-Tyto Athene LLC,co_50b51b48db1c,First Lien,,10.95%,,SOFR,5.5%,,,2028-04-03,11393,11305,10596,,11305,,,,,,PNNT,2024-08-07
-Urology Management Holdings Inc.,co_3145e44ea79c,First Lien,Healthcare,11.76%,,SOFR,6.25%,,,2026-06-15,3831,3780,3804,,3780,,,,,,PNNT,2024-08-07
-Watchtower Buyer LLC,co_f7da03e2adbf,First Lien,,11.33%,,SOFR,6%,,,2029-12-01,8978,8843,8897,,8843,,,,,,PNNT,2024-08-07
-Wildcat Buyerco Inc.,co_b37147d3a0ac,First Lien,,11.08%,,SOFR,5.75%,,,2027-02-27,19305,19162,19305,,19162,,,,,,PNNT,2024-08-07
-Zips Car Wash LLC,co_7d093c7eaca2,First Lien,Automotive,12.69%,,SOFR,7.25%,,,2024-12-31,19736,19645,18998,,19645,,,,,,PNNT,2024-08-07
-First Lien Secured Debt - 803.6% PennantPark Senior Loan Fund LLC,co_fa2de1c6ad86,Other,,,,,,,,,,930700,926103,,930700,,,,,,PNNT,2024-08-07
-Investments and Cash Equivalents - 842.5%,co_94f01250f3e4,Other,Financial Services,,,,,,,,,975465,970868,,975465,,,,,,PNNT,2024-08-07
-Investments—256.5% of Net Assets,co_eb9aad0590e3,Other,Financial Services,,,,,,,,,,,2.56%,,,,,,,PNNT,2024-08-07
-Liabilities in Excess of Other Assets—(168.5%) of Net Assets,co_df698704a4a5,Other,,,,,,,,,,,,1.69%,,,,,,,PNNT,2024-08-07
-Liabilities in Excess of Other Assets,co_bbd3cffede65,Other,,,,,,,,,,,-827805,,,,,,,,PNNT,2024-08-07
-Liabilities in Excess of Other Assets — 716.9%,co_bb3c164161ae,Other,,,,,,,,,,,-855630,,,,,,,,PNNT,2024-08-07
-Members Equity - 100%,co_97185ade7a97,Other,,,,,,,,,,,115238,,,,,,,,PNNT,2024-08-07
+company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
+"A1 Garage Merger Sub, LLC",First Lien,Food & Beverage,11.44%,,SOFR,6.1%,,,,5105,5042,5105,,5042,,,,,,PNNT,2024-08-07
+"A1 Garage Merger Sub, LLC",First Lien,Food & Beverage,,,,,,,,1788,,27,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"A1 Garage Merger Sub, LLC",Revolver,Food & Beverage,,,,,,,,2532,,,,,,,,,,PNNT,2024-08-07
+"ACP Avenu Buyer, LLC",First Lien,Business Services,10.57%,,SOFR,5.25%,,,,1247,1230,1209,,1230,,,,,,PNNT,2024-08-07
+"ACP Avenu Buyer, LLC",First Lien,Business Services,,,,,,,,1799,,29,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"ACP Avenu Buyer, LLC",Revolver,Business Services,10.58%,,SOFR,5.25%,,,,149,149,145,,149,,,,,,PNNT,2024-08-07
+"ACP Avenu Buyer, LLC",Revolver,Business Services,,,,,,,,1069,,32,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"ACP Falcon Buyer, Inc.",Revolver,Business Services,,,,,,,,2533,,,,,,,,,,PNNT,2024-08-07
+"Ad.net Acquisition, LLC",Revolver,Media & Entertainment,,,,,,,,444,,,,,,,,,,PNNT,2024-08-07
+"Adweek Purchaser, LLC",First Lien,Media & Entertainment,12.33%,,SOFR,7%,,,,2000,1961,1960,,1961,,,,,,PNNT,2024-08-07
+"Aeronix, Inc.",Revolver,Aerospace & Defense,,,,,,,,2489,,,,,,,,,,PNNT,2024-08-07
+AFC Dell Holding Corp.,First Lien,Distribution & Wholesale,11.75%,,SOFR,6.4%,,,,13340,13340,13206,,13340,,,,,,PNNT,2024-08-07
+"Atlas Purchaser, Inc.",First Lien,Telecommunications,12.46%,,SOFR,7%,,,,8840,7440,7717,,7440,,,,,,PNNT,2024-08-07
+"Atlas Purchaser, Inc.",First Lien,Telecommunications,12.46%,,SOFR,7%,,,,4760,655,652,,655,,,,,,PNNT,2024-08-07
+Anteriad Holdings Inc.,First Lien,Media & Entertainment,11.23%,,SOFR,5.9%,,,,1189,1184,1189,,1184,,,,,,PNNT,2024-08-07
+"Anteriad, LLC",Revolver,Media & Entertainment,11.18%,,SOFR,5.85%,,,,230,230,230,,230,,,,,,PNNT,2024-08-07
+"Applied Technical Services, LLC",First Lien,Environmental Services,11.23%,,SOFR,5.85%,,,,1991,1976,1961,,1976,,,,,,PNNT,2024-08-07
+"Applied Technical Services, LLC",First Lien,Environmental Services,,,,,,,,2637,,13,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+Applied Technical Services LLC,Revolver,Environmental Services,13.25%,,SOFR,4.75%,,,,1081,1081,1065,,1081,,,,,,PNNT,2024-08-07
+"Applied Technical Services, LLC",Revolver,Environmental Services,,,,,,,,721,,11,,,,,,,,PNNT,2024-08-07
+Arcfield Acquisition Corp.,Revolver,Aerospace & Defense,,,,,,,,3521,,18,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Beacon Behavioral Support Service, LLC",First Lien,Healthcare,10.85%,,SOFR,5.5%,,,,15000,14775,14775,,14775,,,,,,PNNT,2024-08-07
+"Beacon Behavioral Support Service, LLC",Revolver,Healthcare,,,,,,,,1206,,,,,,,,,,PNNT,2024-08-07
+Berwick Industrial Park,First Lien,Real Estate,11.50%,,,,,,,4000,4062,3972,,4062,,,,,,PNNT,2024-08-07
+"Beta Plus Technologies, Inc.",First Lien,Business Services,11.08%,,SOFR,5.75%,,,,4925,4855,4827,,4855,,,,,,PNNT,2024-08-07
+"Big Top Holdings, LLC",Revolver,Industrials,,,,,,,,1155,,9,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"BioDerm, Inc.",Revolver,Healthcare,11.82%,,SOFR,6.5%,,,,589,589,582,,589,,,,,,PNNT,2024-08-07
+"BioDerm, Inc.",Revolver,Healthcare,,,,,,,,482,,6,,,,,,,,PNNT,2024-08-07
+"Blackhawk Industrial Distribution, Inc.",First Lien,Distribution & Wholesale,11.73%,,SOFR,6.4%,,,,6295,6251,6247,,6251,,,,,,PNNT,2024-08-07
+"Blackhawk Industrial Distribution, Inc.",First Lien,Distribution & Wholesale,,,,,,,,2368,,24,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"BlackHawk Industrial Distribution, Inc.",Revolver,Distribution & Wholesale,11.73%,,SOFR,6.4%,,,,1487,1487,1480,,1487,,,,,,PNNT,2024-08-07
+"Blackhawk Industrial Distribution, Inc.",Revolver,Distribution & Wholesale,,,,,,,,1945,,10,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"BlueHalo Financing Holdings, LLC",First Lien,Aerospace & Defense,10.08%,,SOFR,4.75%,,,,1112,1097,1096,,1097,,,,,,PNNT,2024-08-07
+"Broder Bros., Co.",First Lien,Consumer & Retail,11.60%,,SOFR,6.26%,,,,9589,9589,9589,,9589,,,,,,PNNT,2024-08-07
+"Carisk Buyer, Inc.",First Lien,Healthcare,,,,,,,,4813,,24,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Carisk Buyer, Inc.",Revolver,Healthcare,,,,,,,,1750,,9,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Carnegie Dartlet, LLC",First Lien,Education,10.84%,,SOFR,5.5%,,,,12968,12776,12773,,12776,,,,,,PNNT,2024-08-07
+"Carnegie Dartlet, LLC",First Lien,Education,,,,,,,,10017,,50,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Carnegie Dartlet, LLC",Revolver,Education,,,,,,,,3339,,50,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Cartessa Aesthetics, LLC",First Lien,Distribution & Wholesale,11.08%,,SOFR,5.75%,,,,28810,28385,28810,,28385,,,,,,PNNT,2024-08-07
+"Cartessa Aesthetics, LLC",Revolver,Distribution & Wholesale,11.08%,,SOFR,5.75%,,,,1265,1265,1265,,1265,,,,,,PNNT,2024-08-07
+"CF512, Inc.",First Lien,Media & Entertainment,11.53%,,SOFR,6.19%,,,,6542,6488,6444,,6488,,,,,,PNNT,2024-08-07
+"CF512, Inc.",Revolver,Media & Entertainment,,,,,,,,909,,14,,,,,,,,PNNT,2024-08-07
+"Compex Legal Services, Inc.",First Lien,Business Services,10.88%,,SOFR,5.55%,,,,941,935,941,,935,,,,,,PNNT,2024-08-07
+"Compex Legal Services, Inc.",Revolver,Business Services,10.88%,,SOFR,5.55%,,,,459,459,459,,459,,,,,,PNNT,2024-08-07
+"Confluent Health, LLC",First Lien,Healthcare,12.84%,,SOFR,7.5%,,,,1975,1854,1975,,1854,,,,,,PNNT,2024-08-07
+"Connatix Buyer, Inc.",Revolver,Media & Entertainment,,,,,,,,1875,,38,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Crane 1 Services, Inc.",Revolver,Food & Beverage,10.19%,,SOFR,4.86%,,,,287,283,287,,283,,,,,,PNNT,2024-08-07
+"Crane 1 Services, Inc.",Revolver,Food & Beverage,,,,,,,,435,,1,,,,,,,,PNNT,2024-08-07
+"Dr. Squatch, LLC",First Lien,Consumer & Retail,11.17%,,SOFR,5.85%,,,,8142,8079,8142,,8079,,,,,,PNNT,2024-08-07
+"Dr. Squatch, LLC",Revolver,Food & Beverage,11.19%,,SOFR,5.85%,,,,2326,2326,2326,,2326,,,,,,PNNT,2024-08-07
+"DRS Holdings III, Inc.",First Lien,Consumer & Retail,11.69%,,SOFR,6.35%,,,,6,6,6,,6,,,,,,PNNT,2024-08-07
+"DRS Holdings III, Inc.",Revolver,Consumer & Retail,,,,,,,,1783,,7,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"EDS Buyer, LLC",First Lien,Aerospace & Defense,11.08%,,SOFR,5.75%,,,,17292,17073,17033,,17073,,,,,,PNNT,2024-08-07
+"EDS Buyer, LLC",First Lien,Aerospace & Defense,,,,,,,,1915,,29,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"ETE Intermediate II, LLC",Revolver,Food & Beverage,11.83%,,SOFR,6.5%,,,,1215,1215,1215,,1215,,,,,,PNNT,2024-08-07
+"Eval Home Health Solutions Intermediate, LLC",First Lien,Healthcare,11.09%,,SOFR,5.75%,,,,7980,7861,7860,,7861,,,,,,PNNT,2024-08-07
+"Eval Home Health Solutions Intermediate, LLC",Revolver,Healthcare,,,,,,,,822,,12,,,,,,,,PNNT,2024-08-07
+"Exigo Intermediate II, LLC",First Lien,Business Services,11.69%,,SOFR,6.35%,,,,24189,23959,24008,,23959,,,,,,PNNT,2024-08-07
+"Exigo Intermediate II, LLC",Revolver,Business Services,,,,,,,,1856,,14,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Five Star Buyer, Inc.",First Lien,Healthcare,12.50%,,SOFR,7.1%,,,,196,196,195,,196,,,,,,PNNT,2024-08-07
+"Five Star Buyer, Inc.",Revolver,Healthcare,,,,,,,,741,,6,,,,,,,,PNNT,2024-08-07
+"Gauge ETE Blocker, LLC",First Lien,Food & Beverage,12.56%,,,,,,,215,215,215,,215,,,,,,PNNT,2024-08-07
+"Graffiti Buyer, Inc.",First Lien,Distribution & Wholesale,10.93%,,SOFR,5.6%,,,,884,877,875,,877,,,,,,PNNT,2024-08-07
+"Graffiti Buyer, Inc.",First Lien,Distribution & Wholesale,,,,,,,,1079,,3,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Graffiti Buyer, Inc.",Revolver,Distribution & Wholesale,,,,,,,,769,,8,,,,,,,,PNNT,2024-08-07
+"Halo Buyer, Inc.",First Lien,Consumer & Retail,9.94%,,SOFR,4.6%,,,,1660,1502,1498,,1502,,,,,,PNNT,2024-08-07
+Hancock Roofing and Construction LLC.,First Lien,Insurance,10.94%,,SOFR,5.6%,,,,680,680,639,,680,,,,,,PNNT,2024-08-07
+Hancock Roofing and Construction LLC.,Revolver,Insurance,,,,,,,,70,,4,,,,,,,,PNNT,2024-08-07
+HEC Purchaser Corp.,First Lien,Healthcare,10.84%,,SOFR,5.5%,,,,8000,7900,7900,,7900,,,,,,PNNT,2024-08-07
+"Hills Distribution, Inc.",First Lien,Distribution & Wholesale,,,,,,,,9144,,,,,,,,,,PNNT,2024-08-07
+"HV Watterson Holdings, LLC",First Lien,Business Services,11.73%,,SOFR,6.4%,,,,276,275,264,,275,,,,,,PNNT,2024-08-07
+"HV Watterson Holdings, LLC",Revolver,Business Services,11.73%,,SOFR,6.4%,,,,1200,1200,1146,,1200,,,,,,PNNT,2024-08-07
+"HV Watterson Holdings, LLC",Revolver,Business Services,,,,,,,,50,,2,,,,,,,,PNNT,2024-08-07
+"HW Holdco, LLC",First Lien,Media & Entertainment,11.68%,,SOFR,6.4%,,,,11182,11153,11182,,11153,,,,,,PNNT,2024-08-07
+"HW Holdco, LLC",Revolver,Media & Entertainment,,,,,,,,3387,,,,,,,,,,PNNT,2024-08-07
+IG Investment Holdings LLC,First Lien,Business Services,11.33%,,SOFR,6%,,,,105,104,103,,104,,,,,,PNNT,2024-08-07
+"IG Investments Holdings, LLC",Revolver,Business Services,,,,,,,,722,,13,,,,,,,,PNNT,2024-08-07
+"Imagine Acquisitionco, LLC",Revolver,Business Services,,,,,,,,1685,,8,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Infinity Home Services Holdco, Inc.",First Lien,Food & Beverage,12.19%,,SOFR,6.85%,,,,3749,3739,3749,,3739,,,,,,PNNT,2024-08-07
+"Infinity Home Services Holdco, Inc.",First Lien,Food & Beverage,10.96%,,SOFR,6%,,,,2562,1845,1845,,1845,,,,,,PNNT,2024-08-07
+"Infinity Home Services Holdco, Inc.",First Lien,Food & Beverage,,,,,,,,8241,,21,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Infinity Home Services Holdco, Inc.",Revolver,Food & Beverage,14.25%,,SOFR,5.75%,,,,194,194,194,,194,,,,,,PNNT,2024-08-07
+"Infolinks Media Buyco, LLC",First Lien,Media & Entertainment,10.84%,,SOFR,5.5%,,,,2697,2669,2670,,2669,,,,,,PNNT,2024-08-07
+"Integrity Marketing Acquisition, LLC",First Lien,Insurance,11.48%,,SOFR,6.15%,,,,10597,10564,10544,,10564,,,,,,PNNT,2024-08-07
+"Integrity Marketing Acquisition, LLC",Revolver,Insurance,,,,,,,,160,,,,,,,,,,PNNT,2024-08-07
+"Inventus Power, Inc.",Revolver,Software & Technology,,,,,,,,1729,,35,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"ITI Holdings, Inc.",First Lien,Business Services,10.98%,,SOFR,5.65%,,,,8770,8662,8770,,8662,,,,,,PNNT,2024-08-07
+"ITI Holdings, Inc.",Revolver,Business Services,13.00%,,SOFR,4.5%,,,,1180,1180,1180,,1180,,,,,,PNNT,2024-08-07
+"Kinetic Purchaser, LLC",First Lien,Consumer & Retail,11.48%,,SOFR,6.15%,,,,3099,3019,3099,,3019,,,,,,PNNT,2024-08-07
+"Kinetic Purchaser, LLC",Revolver,Consumer & Retail,,,,,,,,4854,,,,,,,,,,PNNT,2024-08-07
+"Lash OpCo, LLC",First Lien,Consumer & Retail,13.18%,,SOFR,7.85%,,,,2865,2831,2836,,2831,,,,,,PNNT,2024-08-07
+"Lash OpCo, LLC",Revolver,Consumer & Retail,13.18%,,SOFR,7.85%,,,,2650,2650,2624,,2650,,,,,,PNNT,2024-08-07
+"Lash OpCo, LLC",Revolver,Consumer & Retail,,,,,,,,317,,3,,,,,,,,PNNT,2024-08-07
+"LAV Gear Holdings, Inc.",First Lien,Healthcare,11.76%,,SOFR,6.43%,,,,2037,2037,2013,,2037,,,,,,PNNT,2024-08-07
+"Ledge Lounger, Inc.",First Lien,Consumer & Retail,11.98%,,SOFR,6.65%,,,,9016,8921,8835,,8921,,,,,,PNNT,2024-08-07
+"Ledge Lounger, Inc.",Revolver,Consumer & Retail,11.98%,,SOFR,6.65%,,,,644,644,631,,644,,,,,,PNNT,2024-08-07
+"Ledge Lounger, Inc.",Revolver,Consumer & Retail,,,,,,,,1288,,26,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+Lightspeed Buyer Inc.,First Lien,Healthcare,10.69%,,SOFR,5.35%,,,,2181,2173,2181,,2173,,,,,,PNNT,2024-08-07
+Lightspeed Buyer Inc.,Revolver,Healthcare,,,,,,,,1166,,,,,,,,,,PNNT,2024-08-07
+"LJ Avalon Holdings, LLC",First Lien,Environmental Services,10.58%,,SOFR,5.25%,,,,569,561,569,,561,,,,,,PNNT,2024-08-07
+"LJ Avalon Holdings, LLC",First Lien,Environmental Services,,,,,,,,3313,,26,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"LJ Avalon Holdings, LLC",Revolver,Environmental Services,,,,,,,,587,,,,,,,,,,PNNT,2024-08-07
+"Loving Tan Intermediate II, Inc.",First Lien,Consumer & Retail,12.34%,,SOFR,7%,,,,4950,4864,4913,,4864,,,,,,PNNT,2024-08-07
+"Loving Tan Intermediate II, Inc.",Revolver,Consumer & Retail,12.34%,,SOFR,7%,,,,347,347,344,,347,,,,,,PNNT,2024-08-07
+"Loving Tan Intermediate II, Inc.",Revolver,Consumer & Retail,,,,,,,,284,,2,,,,,,,,PNNT,2024-08-07
+Mars Acquisition Holdings Corp.,First Lien,Media & Entertainment,10.98%,,SOFR,5.65%,,,,2814,2784,2814,,2784,,,,,,PNNT,2024-08-07
+Mars Acquisition Holdings Corp.,Revolver,Media & Entertainment,10.98%,,SOFR,5.65%,,,,806,806,806,,806,,,,,,PNNT,2024-08-07
+"MBS Holdings, Inc.",Revolver,Telecommunications,,,,,,,,694,,,,,,,,,,PNNT,2024-08-07
+"MDI Buyer, Inc.",First Lien,Chemicals & Materials,11.34%,,SOFR,6%,,,,19982,19722,19686,,19722,,,,,,PNNT,2024-08-07
+"MDI Buyer, Inc.",Revolver,Chemicals & Materials,10.82%,,SOFR,5.5%,,,,1381,1381,1360,,1381,,,,,,PNNT,2024-08-07
+"MDI Buyer, Inc.",Revolver,Chemicals & Materials,,,,,,,,846,,4,,,,,,,,PNNT,2024-08-07
+"Meadowlark Acquirer, LLC",First Lien,Business Services,11.23%,,SOFR,5.9%,,,,1927,1911,1879,,1911,,,,,,PNNT,2024-08-07
+"Meadowlark Acquirer, LLC",Revolver,Business Services,,,,,,,,1685,,42,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Medina Health, LLC",First Lien,Healthcare,11.58%,,SOFR,6.25%,,,,9900,9745,9900,,9745,,,,,,PNNT,2024-08-07
+"Medina Health, LLC",Revolver,Healthcare,,,,,,,,2774,,,,,,,,,,PNNT,2024-08-07
+"Megawatt Acquisitionco, Inc.",Revolver,Software & Technology,10.59%,,SOFR,5.25%,,,,390,390,390,,390,,,,,,PNNT,2024-08-07
+"Mineola 212, LLC",First Lien,Real Estate,13.00%,,,,,,,3500,3483,3483,,3483,,,,,,PNNT,2024-08-07
+"MOREGroup Holdings, Inc.",First Lien,Business Services,11.08%,,SOFR,5.75%,,,,12469,12296,12344,,12296,,,,,,PNNT,2024-08-07
+"MOREGroup Holdings, Inc.",Revolver,Business Services,,,,,,,,3675,,37,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Municipal Emergency Services, Inc.",First Lien,Distribution & Wholesale,10.50%,,SOFR,5.15%,,,,786,786,786,,786,,,,,,PNNT,2024-08-07
+"Municipal Emergency Services, Inc.",Revolver,Distribution & Wholesale,,,,,,,,1880,,,,,,,,,,PNNT,2024-08-07
+NBH Group LLC,Revolver,Healthcare,,,,,,,,1163,,58,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"NORA Acquisition, LLC",First Lien,Healthcare,11.68%,,SOFR,6.35%,,,,5459,5359,5459,,5359,,,,,,PNNT,2024-08-07
+"NORA Acquisition, LLC",Revolver,Healthcare,,,,,,,,2707,,,,,,,,,,PNNT,2024-08-07
+"NP Riverhead Industrial, LLC",First Lien,Real Estate,14.50%,,,,,,,5000,4978,4975,,4978,,,,,,PNNT,2024-08-07
+"Omnia Exterior Solutions, LLC",First Lien,Industrials,10.83%,,SOFR,5.5%,,,,6294,6260,6199,,6260,,,,,,PNNT,2024-08-07
+"Omnia Exterior Solutions, LLC",First Lien,Industrials,,,,,,,,1400,,7,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Omnia Exterior Solutions, LLC",Revolver,Industrials,,,,,,,,1400,,21,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"ORL Acquisition, Inc.",First Lien,Business Services,14.73%,,SOFR,9.4%,,,,4107,4056,3203,,4056,,,,,,PNNT,2024-08-07
+"ORL Acquisition, Inc.",Revolver,Business Services,,,,,,,,149,,33,,,,,,,,PNNT,2024-08-07
+"OSP Embedded Purchaser, LLC",First Lien,Aerospace & Defense,11.18%,,SOFR,5.85%,,,,6468,6359,6280,,6359,,,,,,PNNT,2024-08-07
+"OSP Embedded Purchaser, LLC",Revolver,Aerospace & Defense,,,,,,,,1477,,43,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Ox Two, LLC",First Lien,Industrials,11.85%,,SOFR,6.51%,,,,13460,13363,13460,,13363,,,,,,PNNT,2024-08-07
+"Ox Two, LLC",Revolver,Industrials,,,,,,,,2419,,,,,,,,,,PNNT,2024-08-07
+"Pacific Purchaser, LLC",First Lien,Business Services,,,,,,,,2747,,58,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Pacific Purchaser, LLC",Revolver,Business Services,,,,,,,,1373,,8,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+PCS MIDCO Inc.,First Lien,Financial Services,11.10%,,SOFR,5.75%,,,,468,463,463,,463,,,,,,PNNT,2024-08-07
+PCS MIDCO Inc.,Revolver,Financial Services,11.10%,,SOFR,5.75%,,,,308,308,305,,308,,,,,,PNNT,2024-08-07
+PCS MIDCO Inc.,Revolver,Financial Services,,,,,,,,1454,,15,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"PlayPower, Inc.",First Lien,Healthcare,10.95%,,SOFR,5.5%,,,,5246,4959,5167,,4959,,,,,,PNNT,2024-08-07
+"PL Acquisitionco, LLC",Revolver,Consumer & Retail,,,,,,,,3236,,647,,,,,,,,PNNT,2024-08-07
+"Pragmatic Institute, LLC",First Lien,Business Services,12.85%,,SOFR,7.5%,,,,35762,35134,22977,,35134,,,,,,PNNT,2024-08-07
+"Pragmatic Institute, LLC",Revolver,Business Services,12.82%,,SOFR,7.5%,,,,4938,4905,3173,,4905,,,,,,PNNT,2024-08-07
+"Quantic Electronics, LLC",First Lien,Aerospace & Defense,11.68%,,SOFR,6.35%,,,,1472,1465,1457,,1465,,,,,,PNNT,2024-08-07
+"Quantic Electronics, LLC",Revolver,Aerospace & Defense,11.70%,,SOFR,6.35%,,,,264,264,263,,264,,,,,,PNNT,2024-08-07
+"Quantic Electronics, LLC",Revolver,Aerospace & Defense,,,,,,,,264,,3,,,,,,,,PNNT,2024-08-07
+"Radius Aerospace, Inc.",Revolver,Aerospace & Defense,11.24%,,SOFR,5.75%,,,,631,631,618,,631,,,,,,PNNT,2024-08-07
+"Radius Aerospace, Inc.",Revolver,Aerospace & Defense,,,,,,,,1596,,32,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Rancho Health MSO, Inc.",First Lien,Healthcare,10.90%,,SOFR,5.5%,,,,362,362,362,,362,,,,,,PNNT,2024-08-07
+"Rancho Health MSO, Inc.",Revolver,Healthcare,10.90%,,SOFR,5.5%,,,,210,210,210,,210,,,,,,PNNT,2024-08-07
+"Reception Purchaser, LLC",First Lien,Transportation & Logistics,11.48%,,SOFR,6.15%,,,,10818,9633,8654,,9633,,,,,,PNNT,2024-08-07
+"Recteq, LLC",Revolver,Consumer & Retail,,,,,,,,1127,,17,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Research Now Group, LLC",First Lien,Business Services,,,,,,,,124,124,105,,124,,,,,,PNNT,2024-08-07
+"Riverpoint Medical, LLC",Revolver,Healthcare,10.93%,,SOFR,5.6%,,,,182,182,182,,182,,,,,,PNNT,2024-08-07
+"RTIC Subsidiary Holdings, LLC",First Lien,Consumer & Retail,11.09%,,SOFR,5.75%,,,,30000,29554,29400,,29554,,,,,,PNNT,2024-08-07
+"RTIC Subsidiary Holdings, LLC",Revolver,Consumer & Retail,,,,,,,,5422,,108,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Rural Sourcing Holdings, Inc.",First Lien,Business Services,11.08%,,SOFR,5.75%,,,,1143,1126,1132,,1126,,,,,,PNNT,2024-08-07
+"Rural Sourcing Holdings, Inc.",First Lien,Business Services,,,,,,,,1146,,6,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Rural Sourcing Holdings, Inc.",Revolver,Business Services,,,,,,,,860,,9,,,,,,,,PNNT,2024-08-07
+"S101 Holdings, Inc.",First Lien,Software & Technology,11.45%,,SOFR,6.15%,,,,2265,2244,2243,,2244,,,,,,PNNT,2024-08-07
+"S101 Holdings, Inc.",First Lien,Software & Technology,11.45%,,SOFR,6.15%,,,,356,352,352,,352,,,,,,PNNT,2024-08-07
+Safe Haven Defense US LLC,First Lien,Industrials,10.58%,,SOFR,5.25%,,,,9000,8865,8865,,8865,,,,,,PNNT,2024-08-07
+Safe Haven Defense US LLC,Revolver,Industrials,,,,,,,,1114,,,,,,,,,,PNNT,2024-08-07
+Sales Benchmark Index LLC,Revolver,Business Services,,,,,,,,732,,,,,,,,,,PNNT,2024-08-07
+Sargent & Greenleaf Inc.,Revolver,Software & Technology,11.94%,,SOFR,6.5%,,,,457,457,457,,457,,,,,,PNNT,2024-08-07
+"Schlesinger Global, Inc.",First Lien,Business Services,13.69%,,SOFR,8.35%,,,,4811,4788,4739,,4788,,,,,,PNNT,2024-08-07
+"Schlesinger Global, Inc.",Revolver,Business Services,13.69%,,SOFR,8.35%,,,,32,32,31,,32,,,,,,PNNT,2024-08-07
+"Seaway Buyer, LLC",First Lien,Chemicals & Materials,11.48%,,SOFR,6.15%,,,,4716,4660,4563,,4660,,,,,,PNNT,2024-08-07
+"Seaway Buyer, LLC",Revolver,Chemicals & Materials,11.48%,,SOFR,6.15%,,,,313,313,302,,313,,,,,,PNNT,2024-08-07
+"Seaway Buyer, LLC",Revolver,Chemicals & Materials,,,,,,,,2814,,91,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Shiftkey, LLC",First Lien,Business Services,11.35%,,SOFR,6.01%,,,,17640,17516,16917,,17516,,,,,,PNNT,2024-08-07
+"Sigma Defense Systems, LLC",First Lien,Telecommunications,12.49%,,SOFR,7.15%,,,,25901,25331,25642,,25331,,,,,,PNNT,2024-08-07
+"Sigma Defense Systems, LLC",Revolver,Telecommunications,12.49%,,SOFR,7.15%,,,,1701,1701,1684,,1701,,,,,,PNNT,2024-08-07
+"Sigma Defense Systems, LLC",Revolver,Telecommunications,,,,,,,,1984,,20,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+Simplicity Financial Marketing Group Holdings Inc.,First Lien,Financial Services,11.67%,,SOFR,6.25%,,,,3420,3414,3380,,3414,,,,,,PNNT,2024-08-07
+Simplicity Financial Marketing Group Holdings Inc.,First Lien,Financial Services,,,,,,,,5310,,53,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+Simplicity Financial Marketing Group Holdings Inc.,Revolver,Financial Services,,,,,,,,1043,,13,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Smartronix, LLC",First Lien,Aerospace & Defense,11.58%,,SOFR,6%,,,,5579,5493,5579,,5493,,,,,,PNNT,2024-08-07
+"Smartronix, LLC",Revolver,Aerospace & Defense,,,,,,,,3941,,,,,,,,,,PNNT,2024-08-07
+"Solutionreach, Inc.",Revolver,Telecommunications,,,,,,,,833,,,,,,,,,,PNNT,2024-08-07
+Spendmend Holdings LLC,First Lien,Business Services,10.98%,,SOFR,5.65%,,,,284,282,284,,282,,,,,,PNNT,2024-08-07
+Spendmend Holdings LLC,First Lien,Business Services,,,,,,,,2497,,19,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+Spendmend Holdings LLC,Revolver,Business Services,10.98%,,SOFR,5.65%,,,,561,561,561,,561,,,,,,PNNT,2024-08-07
+"System Planning and Analysis, Inc.",First Lien,Aerospace & Defense,11.16%,,SOFR,5.9%,,,,1286,1277,1286,,1277,,,,,,PNNT,2024-08-07
+"System Planning and Analysis, Inc.",First Lien,Aerospace & Defense,,,,,,,,7068,,53,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"System Planning and Analysis, Inc.",Revolver,Aerospace & Defense,,,,,,,,2925,,,,,,,,,,PNNT,2024-08-07
+"TCG 3.0 Jogger Acquisitionco, Inc.",First Lien,Media & Entertainment,11.84%,,SOFR,6.5%,,,,8978,8833,8888,,8833,,,,,,PNNT,2024-08-07
+"TCG 3.0 Jogger Acquisitionco, Inc.",Revolver,Media & Entertainment,,,,,,,,1725,,17,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+The Bluebird Group LLC,First Lien,Business Services,11.98%,,SOFR,6.65%,,,,2539,2512,2539,,2512,,,,,,PNNT,2024-08-07
+The Bluebird Group LLC,Revolver,Business Services,,,,,,,,734,,,,,,,,,,PNNT,2024-08-07
+"The Vertex Companies, LLC",First Lien,Business Services,11.69%,,SOFR,6.35%,,,,184,181,186,,181,,,,,,PNNT,2024-08-07
+"The Vertex Companies, LLC",Revolver,Business Services,11.44%,,SOFR,6.1%,,,,361,361,361,,361,,,,,,PNNT,2024-08-07
+"TPC US Parent, LLC",First Lien,Food & Beverage,10.93%,,SOFR,5.6%,,,,5985,5917,5985,,5917,,,,,,PNNT,2024-08-07
+"TPCN Midco, LLC",First Lien,Industrials,11.09%,,SOFR,5.75%,,,,4000,3940,3940,,3940,,,,,,PNNT,2024-08-07
+"TPCN Midco, LLC",Revolver,Industrials,,,,,,,,1160,,,,,,,,,,PNNT,2024-08-07
+"TransGo, LLC",First Lien,Industrials,11.34%,,SOFR,6%,,,,4790,4722,4790,,4722,,,,,,PNNT,2024-08-07
+"TransGo, LLC",Revolver,Industrials,,,,,,,,2775,,,,,,,,,,PNNT,2024-08-07
+TWS Acquisition Corp.,First Lien,Education,11.74%,,SOFR,6.4%,,,,638,637,638,,637,,,,,,PNNT,2024-08-07
+TWS Acquisition Corp.,Revolver,Education,,,,,,,,1644,,,,,,,,,,PNNT,2024-08-07
+"Tyto Athene, LLC",Revolver,Aerospace & Defense,10.99%,,SOFR,5.65%,,,,160,160,149,,160,,,,,,PNNT,2024-08-07
+"Tyto Athene, LLC",Revolver,Aerospace & Defense,,,,,,,,204,,14,,,,,,,,PNNT,2024-08-07
+"Urology Management Holdings, Inc.",First Lien,Healthcare,11.76%,,SOFR,6.5%,,,,7201,7201,7151,,7201,,,,,,PNNT,2024-08-07
+"Watchtower Intermediate, LLC",First Lien,Software & Technology,11.33%,,SOFR,6%,,,,12319,12140,12208,,12140,,,,,,PNNT,2024-08-07
+"Watchtower Intermediate, LLC.",First Lien,Software & Technology,,,,,,,,2100,,5,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Watchtower Intermediate, LLC.",Revolver,Software & Technology,,,,,,,,6300,,57,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Wildcat Buyerco, Inc.",First Lien,Software & Technology,11.08%,,SOFR,5.75%,,,,4597,4558,4597,,4558,,,,,,PNNT,2024-08-07
+"Wildcat Buyerco, Inc.",First Lien,Software & Technology,,,,,,,,2737,,27,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Wildcat Buyerco, Inc.",Revolver,Software & Technology,,,,,,,,551,,,,,,,,,,PNNT,2024-08-07
+"Zips Car Wash, LLC",First Lien,Auto Sector,12.68%,,SOFR,7.35%,,,,2596,2589,2499,,2589,,,,,,PNNT,2024-08-07
+Best Practice Associates LLC,Second Lien,Aerospace & Defense,14.48%,,SOFR,9.15%,,,,17825,17601,17290,,17601,,,,,,PNNT,2024-08-07
+Burgess Point Purchaser Corp.,Second Lien,Auto Sector,14.44%,,SOFR,9.1%,,,,8000,7689,7920,,7689,,,,,,PNNT,2024-08-07
+ENC Parent Corp.,Second Lien,Business Services,13.10%,,SOFR,7.76%,,,,7500,7445,6375,,7445,,,,,,PNNT,2024-08-07
+"Halo Buyer, Inc.",Second Lien,Consumer & Retail,13.69%,,SOFR,8.35%,,,,32500,32284,31850,,32284,,,,,,PNNT,2024-08-07
+QuantiTech LLC,Second Lien,Aerospace & Defense,15.44%,,SOFR,10.1%,,,,150,148,150,,148,,,,,,PNNT,2024-08-07
+"Team Services Group, LLC",Second Lien,Healthcare,14.58%,,SOFR,9.43%,,,,2000,1998,1990,,1998,,,,,,PNNT,2024-08-07
+Beacon Behavioral Holdings LLC,Subordinated Debt,Healthcare,15.00%,,,,,,,3105,3058,3058,,3058,,,,,,PNNT,2024-08-07
+"Express Wash Acquisition Company, LLC",Subordinated Debt,Auto Sector,17.60%,,SOFR,12.26%,,,,23217,22633,23333,,22633,,,,,,PNNT,2024-08-07
+"Schlesinger Global, LLC",Subordinated Debt,Business Services,12.33%,,SOFR,7%,,,,,,,,,,,,,,PNNT,2024-08-07
+"Ad.net Holdings, Inc.",Preferred Equity,Media & Entertainment,,,,,,,,,240,248,,240,,,,2400,,PNNT,2024-08-07
+"AFC Acquisitions, Inc.",Preferred Equity,Distribution & Wholesale,,,,,,,,,780,920,,780,,,,507,,PNNT,2024-08-07
+"AH Newco Equityholdings, LLC",Preferred Equity,Healthcare,6.00%,,,,,,,,500,505,,500,,,,211,,PNNT,2024-08-07
+"Anteriad Holdings, LP",Preferred Equity,Media & Entertainment,,,,,,,,,1135,1304,,1135,,,,1135,,PNNT,2024-08-07
+"Cartessa Aesthetics, LLC",Preferred Equity,Distribution & Wholesale,,,,,,,,,3563,5969,,3563,,,,3562500,,PNNT,2024-08-07
+"Gauge Schlesinger Coinvest, LLC",Preferred Equity,Business Services,,,,,,,,,1,1,,1,,,,1,,PNNT,2024-08-07
+"EvAL Home Health Solutions, LLC",Preferred Equity,Healthcare,,,,,,,,,453,453,,453,,,,272771,,PNNT,2024-08-07
+"Hancock Claims Consultants Investors, LLC",Preferred Equity,Insurance,,,,,,,,,31,38,,31,,,,48049,,PNNT,2024-08-07
+"Imagine Topco, LP",Preferred Equity,Business Services,8.00%,,,,,,,,744,835,,744,,,,743826,,PNNT,2024-08-07
+Magnolia Topco LP,Preferred Equity,Auto Sector,,,,,,,,,1545,1660,,1545,,,,1545,,PNNT,2024-08-07
+Magnolia Topco LP,Preferred Equity,Auto Sector,,,,,,,,,643,187,,643,,,,1018,,PNNT,2024-08-07
+"Mars Intermediate Holdings II, Inc.",Preferred Equity,Media & Entertainment,,,,,,,,,414,600,,414,,,,414,,PNNT,2024-08-07
+"Megawatt Acquisition Partners, LLC",Preferred Equity,Software & Technology,,,,,,,,,535,493,,535,,,,5349,,PNNT,2024-08-07
+"NXOF Holdings, Inc.",Preferred Equity,Aerospace & Defense,,,,,,,,,160,136,,160,,,,160,,PNNT,2024-08-07
+"ORL Holdco, Inc.",Preferred Equity,Business Services,,,,,,,,,57,,,57,,,,575,,PNNT,2024-08-07
+"RTIC Parent Holdings, LLC",Preferred Equity,Consumer & Retail,,,,,,,,,699,1029,,699,,,,10624,,PNNT,2024-08-07
+"RTIC Parent Holdings, LLC",Preferred Equity,Consumer & Retail,,,,,,,,,113,119,,113,,,,11276,,PNNT,2024-08-07
+"TPC Holding Company, LP",Preferred Equity,Food & Beverage,,,,,,,,,219,345,,219,,,,219,,PNNT,2024-08-07
+"TWD Parent Holdings, LLC",Preferred Equity,Business Services,,,,,,,,,30,34,,30,,,,30,,PNNT,2024-08-07
+"A1 Garage Equity, LLC",Other Equity,Food & Beverage,,,,,,,,,2193,2639,,2193,,,,2193038,,PNNT,2024-08-07
+"ACP Big Top Holdings, LP.",Other Equity,Industrials,,,,,,,,,774,819,,774,,,,773800,,PNNT,2024-08-07
+"Ad.net Holdings, Inc.",Other Equity,Media & Entertainment,,,,,,,,,27,,,27,,,,2667,,PNNT,2024-08-07
+"Aftermarket Drivetrain Products Holdings, LLC",Other Equity,Industrials,,,,,,,,,1645,1988,,1645,,,,1645,,PNNT,2024-08-07
+AG Investco LP,Other Equity,Business Services,,,,,,,,,805,992,,805,,,,805164,,PNNT,2024-08-07
+"AG Investco LP(8),",Other Equity,Business Services,,,,,,,,,,,,,,,,194836,,PNNT,2024-08-07
+"Altamira Intermediate Company II, Inc.",Other Equity,Aerospace & Defense,,,,,,,,,125,137,,125,,,,125000,,PNNT,2024-08-07
+"AMCSI Crash Co-Invest, LP",Other Equity,Auto Sector,,,,,,,,,2490,2940,,2490,,,,2489777,,PNNT,2024-08-07
+"Anteriad Holdings, LP",Other Equity,Media & Entertainment,,,,,,,,,,,,,,,,1135,,PNNT,2024-08-07
+"Athletico Holdings, LLC",Other Equity,Healthcare,,,,,,,,,10000,8715,,10000,,,,9357,,PNNT,2024-08-07
+"BioDerm, Inc.",Other Equity,Healthcare,,,,,,,,,1312,1093,,1312,,,,1312,,PNNT,2024-08-07
+"Burgess Point Holdings, LP",Other Equity,Auto Sector,,,,,,,,,680,609,,680,,,,680,,PNNT,2024-08-07
+"Carnegie Holdco, LLC",Other Equity,Education,,,,,,,,,1663,1680,,1663,,,,1680300,,PNNT,2024-08-07
+"Carisk Parent, LP.",Other Equity,Healthcare,,,,,,,,,169,176,,169,,,,169231,,PNNT,2024-08-07
+"Connatix Parent, LLC",Other Equity,Media & Entertainment,,,,,,,,,632,359,,632,,,,57416,,PNNT,2024-08-07
+"Consello Pacific Aggregator, LLC",Other Equity,Business Services,,,,,,,,,745,762,,745,,,,782891,,PNNT,2024-08-07
+Cowboy Parent LLC,Other Equity,Distribution & Wholesale,,,,,,,,,3015,5686,,3015,,,,27778,,PNNT,2024-08-07
+"Crane 1 Acquisition Parent Holdings, LP.",Other Equity,Food & Beverage,,,,,,,,,104,197,,104,,,,113,,PNNT,2024-08-07
+Delta InvestCo LP,Other Equity,Telecommunications,,,,,,,,,878,1606,,878,,,,913649,,PNNT,2024-08-07
+eCommission Holding Corp.,Other Equity,Financial Services,,,,,,,,,1005,2441,,1005,,,,80,,PNNT,2024-08-07
+"EDS Topco, LP",Other Equity,Aerospace & Defense,,,,,,,,,938,1174,,938,,,,937500,,PNNT,2024-08-07
+"Exigo, LLC",Other Equity,Business Services,,,,,,,,,1458,1561,,1458,,,,1458333,,PNNT,2024-08-07
+FedHC InvestCo LP,Other Equity,Aerospace & Defense,,,,,,,,,489,1318,,489,,,,14578,,PNNT,2024-08-07
+"FedHC InvestCo LP(8),",Other Equity,Aerospace & Defense,,,,,,,,,,,,,,,,5150,,PNNT,2024-08-07
+FedHC InvestCo II LP,Other Equity,Aerospace & Defense,,,,,,,,,2175,1994,,2175,,,,20882,,PNNT,2024-08-07
+"Five Star Parent Holdings, LLC",Other Equity,Healthcare,,,,,,,,,656,715,,656,,,,655714,,PNNT,2024-08-07
+"Gauge ETE Blocker, LLC",Other Equity,Food & Beverage,,,,,,,,,374,326,,374,,,,374444,,PNNT,2024-08-07
+Gauge Lash Coinvest LLC,Other Equity,Consumer & Retail,,,,,,,,,651,3634,,651,,,,992792,,PNNT,2024-08-07
+"Gauge Loving Tan, LP",Other Equity,Consumer & Retail,,,,,,,,,463,435,,463,,,,462827,,PNNT,2024-08-07
+Gauge Schlesinger Coinvest LLC,Other Equity,Business Services,,,,,,,,,10,6,,10,,,,9,,PNNT,2024-08-07
+GCOM InvestCo LP,Other Equity,Business Services,,,,,,,,,1003,476,,1003,,,,2434,,PNNT,2024-08-07
+"GMP Hills, LP",Other Equity,Distribution & Wholesale,,,,,,,,,3747,3785,,3747,,,,3747470,,PNNT,2024-08-07
+"Hancock Claims Consultants Investors, LLC",Other Equity,Insurance,,,,,,,,,450,32,,450,,,,450000,,PNNT,2024-08-07
+HPA SPQ Aggregator LP,Other Equity,Business Services,,,,,,,,,750,672,,750,,,,750399,,PNNT,2024-08-07
+"HV Watterson Holdings, LLC",Other Equity,Business Services,,,,,,,,,1600,636,,1600,,,,1600000,,PNNT,2024-08-07
+"Icon Partners V C, LP.",Other Equity,Business Services,,,,,,,,,1123,1124,,1123,,,,1122549,,PNNT,2024-08-07
+"IHS Parent Holdings, LP.",Other Equity,Food & Beverage,,,,,,,,,1218,1534,,1218,,,,1218045,,PNNT,2024-08-07
+"Imagine Topco, LP",Other Equity,Business Services,,,,,,,,,,,,,,,,743826,,PNNT,2024-08-07
+"Infogroup Parent Holdings, Inc.",Other Equity,Media & Entertainment,,,,,,,,,2040,2554,,2040,,,,181495,,PNNT,2024-08-07
+"Ironclad Holdco, LLC",Other Equity,Environmental Services,,,,,,,,,504,758,,504,,,,4859,,PNNT,2024-08-07
+"ITC Infusion Co-invest, LP",Other Equity,Healthcare,,,,,,,,,1645,2312,,1645,,,,162445,,PNNT,2024-08-07
+"Kentucky Racing Holdco, LLC",Other Equity,Healthcare,,,,,,,,,,1842,,,,,,161252,,PNNT,2024-08-07
+"Kinetic Purchaser, LLC",Other Equity,Consumer & Retail,,,,,,,,,1309,1836,,1309,,,,1308814,,PNNT,2024-08-07
+KL Stockton Co-Invest LP,Other Equity,Food & Beverage,,,,,,,,,385,957,,385,,,,382353,,PNNT,2024-08-07
+"Lariat ecoserv Co-Invest Holdings, LLC",Other Equity,Environmental Services,,,,,,,,,,16,,,,,,363656,,PNNT,2024-08-07
+"LEP Pequod Holdings, LP",Other Equity,Financial Services,,,,,,,,,865,927,,865,,,,350,,PNNT,2024-08-07
+Lightspeed Investment Holdco LLC,Other Equity,Healthcare,,,,,,,,,273,906,,273,,,,273143,,PNNT,2024-08-07
+"LJ Avalon, LP",Other Equity,Environmental Services,,,,,,,,,851,1004,,851,,,,851087,,PNNT,2024-08-07
+"Lorient Peregrine Investment, LP",Other Equity,Business Services,,,,,,,,,4530,4452,,4530,,,,335590,,PNNT,2024-08-07
+Magnolia Topco LP,Other Equity,Auto Sector,,,,,,,,,,,,,,,,1545460,,PNNT,2024-08-07
+Magnolia Topco LP,Other Equity,Auto Sector,,,,,,,,,,,,,,,,1017840,,PNNT,2024-08-07
+"Mars Intermediate Holdings II, Inc.",Other Equity,Media & Entertainment,,,,,,,,,,224,,,,,,414,,PNNT,2024-08-07
+"MDI Aggregator, LP",Other Equity,Chemicals & Materials,,,,,,,,,3103,3355,,3103,,,,30993,,PNNT,2024-08-07
+"Meadowlark Title, LLC",Other Equity,Business Services,,,,,,,,,802,,,802,,,,815385,,PNNT,2024-08-07
+"Megawatt Acquisition Partners, LLC",Other Equity,Software & Technology,,,,,,,,,59,52,,59,,,,594,,PNNT,2024-08-07
+"Municipal Emergency Services, Inc.",Other Equity,Distribution & Wholesale,,,,,,,,,3984,6390,,3984,,,,3920145,,PNNT,2024-08-07
+"NEPRT Parent Holdings, LLC",Other Equity,Consumer & Retail,,,,,,,,,1250,97,,1250,,,,1299,,PNNT,2024-08-07
+"New Medina Health, LLC",Other Equity,Healthcare,,,,,,,,,1429,1782,,1429,,,,1429480,,PNNT,2024-08-07
+"NORA Parent Holdings, LLC",Other Equity,Healthcare,,,,,,,,,1248,1280,,1248,,,,1257,,PNNT,2024-08-07
+"North Haven Saints Equity Holdings, LP",Other Equity,Business Services,,,,,,,,,352,426,,352,,,,351553,,PNNT,2024-08-07
+"NXOF Holdings, Inc.",Other Equity,Aerospace & Defense,,,,,,,,,3,,,3,,,,3261,,PNNT,2024-08-07
+"OceanSound Discovery Equity, LP",Other Equity,Aerospace & Defense,,,,,,,,,983,957,,983,,,,98286,,PNNT,2024-08-07
+"OES Co-Invest, LP",Other Equity,Industrials,,,,,,,,,840,840,,840,,,,840,,PNNT,2024-08-07
+"OHCP V BC COI, LP.",Other Equity,Distribution & Wholesale,,,,,,,,,695,551,,695,,,,694943,,PNNT,2024-08-07
+"OHCP V BC COI, LP.",Other Equity,Distribution & Wholesale,,,,,,,,,,11,,,,,,55057,,PNNT,2024-08-07
+"ORL Holdco, Inc.",Other Equity,Business Services,,,,,,,,,6,,,6,,,,638,,PNNT,2024-08-07
+"OSP Embedded Aggregator, LP",Other Equity,Aerospace & Defense,,,,,,,,,871,714,,871,,,,870536,,PNNT,2024-08-07
+"PCS Parent, LP",Other Equity,Financial Services,,,,,,,,,421,421,,421,,,,421304,,PNNT,2024-08-07
+"PennantPark-TSO Senior Loan Fund II, LP",Other Equity,Financial Services,,,,,,,,,8416,8737,,8416,,,,8415794,,PNNT,2024-08-07
+"Quad (U.S.) Co-Invest, LP.",Other Equity,Business Services,,,,,,,,,2959,3725,,2959,,,,2958706,,PNNT,2024-08-07
+QuantiTech InvestCo LP,Other Equity,Aerospace & Defense,,,,,,,,,68,402,,68,,,,712,,PNNT,2024-08-07
+"QuantiTech InvestCo LP(8),",Other Equity,Aerospace & Defense,,,,,,,,,,,,,,,,955,,PNNT,2024-08-07
+QuantiTech InvestCo II LP,Other Equity,Aerospace & Defense,,,,,,,,,24,24,,24,,,,40,,PNNT,2024-08-07
+"RFMG Parent, LP",Other Equity,Healthcare,,,,,,,,,1050,1288,,1050,,,,1050000,,PNNT,2024-08-07
+"Safe Haven Defense MidCo, LLC",Other Equity,Industrials,,,,,,,,,227,227,,227,,,,227,,PNNT,2024-08-07
+SBI Holdings Investments LLC,Other Equity,Business Services,,,,,,,,,366,331,,366,,,,36585,,PNNT,2024-08-07
+"Seaway Topco, LP",Other Equity,Chemicals & Materials,,,,,,,,,2981,2097,,2981,,,,2981,,PNNT,2024-08-07
+"SP L2 Holdings, LLC",Other Equity,Consumer & Retail,,,,,,,,,882,159,,882,,,,881966,,PNNT,2024-08-07
+"SSC Dominion Holdings, LLC",Other Equity,Software & Technology,,,,,,,,,36,4242,,36,,,,36,cost_suspicious_vs_size,PNNT,2024-08-07
+"StellPen Holdings, LLC",Other Equity,Media & Entertainment,,,,,,,,,154,149,,154,,,,153846,,PNNT,2024-08-07
+"SV Aero Holdings, LLC",Other Equity,Aerospace & Defense,,,,,,,,,219,333,,219,,,,25,,PNNT,2024-08-07
+"TAC LifePort Holdings, LLC",Other Equity,Aerospace & Defense,,,,,,,,,239,434,,239,,,,254206,,PNNT,2024-08-07
+"TCG 3.0 Jogger Co-Invest, LP",Other Equity,Media & Entertainment,,,,,,,,,1252,1068,,1252,,,,6475,,PNNT,2024-08-07
+"Tower Arch Infolinks Media, LP",Other Equity,Media & Entertainment,,,,,,,,,251,844,,251,,,,542000,,PNNT,2024-08-07
+"Tower Arch Infolinks Media, LP(8),",Other Equity,Media & Entertainment,,,,,,,,,,,,,,,,353444,,PNNT,2024-08-07
+"TPC Holding Company, LP",Other Equity,Food & Beverage,,,,,,,,,12,140,,12,,,,11527,,PNNT,2024-08-07
+"TPCN Holdings, LLC",Other Equity,Industrials,,,,,,,,,473,473,,473,,,,473400,,PNNT,2024-08-07
+"TWD Parent Holdings, LLC",Other Equity,Business Services,,,,,,,,,1,9,,1,,,,608,,PNNT,2024-08-07
+UniVista Insurance,Other Equity,Business Services,,,,,,,,,338,742,,338,,,,400,,PNNT,2024-08-07
+"Urology Partners Co., LP.",Other Equity,Healthcare,,,,,,,,,1111,1078,,1111,,,,1111111,,PNNT,2024-08-07
+"Watchtower Holdings, LLC",Other Equity,Software & Technology,,,,,,,,,1242,1297,,1242,,,,12419,,PNNT,2024-08-07
+"WCP Ivyrehab Coinvestment, LP",Other Equity,Healthcare,,,,,,,,,208,189,,208,,,,208,,PNNT,2024-08-07
+"WCP Ivyrehab QP CF Feeder, LP",Other Equity,Healthcare,,,,,,,,,3793,3416,,3793,,,,3754,,PNNT,2024-08-07
+"WCP Ivyrehab QP CF Feeder, LP",Other Equity,Healthcare,,,,,,,,,,22,,,,,,246,,PNNT,2024-08-07
+"Wildcat Parent, LP",Other Equity,Software & Technology,,,,,,,,,98,826,,98,,,,2314,,PNNT,2024-08-07
+Walker Edison Furniture Company LLC,First Lien,Home and Office Furnishings,,,,,,,,9930,9512,2880,,9512,,,,,,PNNT,2024-08-07
+"Walker Edison Furniture Company, LLC",First Lien,Home and Office Furnishings,,,,,,,,708,,503,,,,,,,,PNNT,2024-08-07
+Walker Edison Furniture Company LLC,First Lien,Home and Office Furnishings,,,,,,,,3333,3333,3333,,3333,,,,,,PNNT,2024-08-07
+"Cascade Environmental Holdings, LLC",Preferred Equity,Environmental Services,,,,,,,,,32791,26304,,32791,,,,5887236,,PNNT,2024-08-07
+"Cascade Environmental Holdings, LLC",Preferred Equity,Environmental Services,,,,,,,,,918,1260,,918,,,,918,,PNNT,2024-08-07
+"Cascade Environmental Holdings, LLC",Other Equity,Environmental Services,,,,,,,,,2852,,,2852,,,,7444347,,PNNT,2024-08-07
+"AKW Holdings Limited(9), (11),",First Lien,Healthcare,12.32%,,SOFR,7%,,,,41869,57286,52926,,57286,,,,,,PNNT,2024-08-07
+MidOcean JF Holdings Corp.,First Lien,Distribution & Wholesale,11.38%,,SOFR,6.05%,,,,49750,49172,49004,,49172,,,,,,PNNT,2024-08-07
+"Flock Financial, LLC(6),",Subordinated Debt,Financial Services,14.5%,,,,,,,21398,21398,21398,,21398,,,,,,PNNT,2024-08-07
+"PennantPark Senior Loan Fund, LLC",Subordinated Debt,Financial Services,13.33%,,SOFR,8%,,,,115886,115886,115886,,115886,,,,,,PNNT,2024-08-07
+Flock Financial Class A Preferred Equity,Preferred Equity,Financial Services,,,,,,,,,7313,7313,,7313,,,,2047727,,PNNT,2024-08-07
+Flock Financial Class B Preferred Equity,Preferred Equity,Financial Services,,,,,,,,,19318,19318,,19318,,,,5409091,,PNNT,2024-08-07
+"AKW Holdings Limited - Common Equity(9), (11),",Other Equity,Healthcare,,,,,,,,,132,4418,,132,,,,950,cost_suspicious_vs_size,PNNT,2024-08-07
+"JF Intermediate, LLC",Other Equity,Distribution & Wholesale,,,,,,,,,4488,32593,,4488,,,,43918,,PNNT,2024-08-07
+"PennantPark Senior Loan Fund, LLC",Other Equity,Financial Services,,,,,,,,,67436,69718,,67436,,,,67373319,,PNNT,2024-08-07
+"A1 Garage Merger Sub, LLC",First Lien,Food & Beverage,11.99%,,SOFR,6.6%,,,,5144,5073,5119,,5073,,,,,,PNNT,2024-08-07
+"A1 Garage Merger Sub, LLC",First Lien,Food & Beverage,,,,,,,,1788,,18,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"A1 Garage Merger Sub, LLC",First Lien,Food & Beverage,,,,,,,,2532,,13,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Ad.net Acquisition, LLC",First Lien,Media & Entertainment,11.65%,,SOFR,6.26%,,,,222,222,221,,222,,,,,,PNNT,2024-08-07
+"Ad.net Acquisition, LLC",First Lien,Media & Entertainment,,,,,,,,222,,1,,,,,,,,PNNT,2024-08-07
+"Anteriad, LLC",First Lien,Media & Entertainment,12.04%,,SOFR,6.65%,,,,1237,1223,1221,,1223,,,,,,PNNT,2024-08-07
+"Anteriad, LLC",First Lien,Media & Entertainment,,,,,,,,1612,,28,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+Any Hour Services,First Lien,Food & Beverage,11.22%,,SOFR,5.85%,,,,3023,3014,2962,,3014,,,,,,PNNT,2024-08-07
+Any Hour Services,First Lien,Food & Beverage,,,,,,,,1147,,23,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Apex Service Partners, LLC",First Lien,Food & Beverage,10.77%,,SOFR,5.25%,,,,1330,1330,1327,,1330,,,,,,PNNT,2024-08-07
+"Apex Service Partners, LLC",First Lien,Food & Beverage,10.79%,,SOFR,5.25%,,,,1863,1850,1859,,1850,,,,,,PNNT,2024-08-07
+"Apex Service Partners, LLC",First Lien,Food & Beverage,10.79%,,SOFR,5.25%,,,,582,583,581,,583,,,,,,PNNT,2024-08-07
+"Apex Service Partners, LLC",First Lien,Food & Beverage,,,,,,,,350,,1,,,,,,,,PNNT,2024-08-07
+"Applied Technical Services, LLC",First Lien,Environmental Services,11.54%,,SOFR,6.15%,,,,824,818,808,,818,,,,,,PNNT,2024-08-07
+"Applied Technical Services, LLC",First Lien,Environmental Services,13.25%,,SOFR,4.75%,,,,400,400,392,,400,,,,,,PNNT,2024-08-07
+"Applied Technical Services, LLC",First Lien,Environmental Services,,,,,,,,600,,12,,,,,,,,PNNT,2024-08-07
+Arcfield Acquisition Corp.,First Lien,Aerospace & Defense,11.62%,,SOFR,6.15%,,,,8090,7970,8009,,7970,,,,,,PNNT,2024-08-07
+Arcfield Acquisition Corp.,First Lien,Aerospace & Defense,,,,,,,,3521,,35,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+Berwick Industrial Park,First Lien,Real Estate,11.50%,,,,,,,4000,4030,3924,,4030,,,,,,PNNT,2024-08-07
+"Beta Plus Technologies, Inc.",First Lien,Business Services,11.14%,,SOFR,5.75%,,,,4950,4869,4604,,4869,,,,,,PNNT,2024-08-07
+"BioDerm, Inc.",First Lien,Healthcare,11.81%,,SOFR,6.5%,,,,107,107,107,,107,,,,,,PNNT,2024-08-07
+"BioDerm, Inc.",First Lien,Healthcare,,,,,,,,964,,5,,,,,,,,PNNT,2024-08-07
+"Blackhawk Industrial Distribution, Inc.",First Lien,Distribution & Wholesale,11.79%,,SOFR,6.4%,,,,1851,1833,1823,,1833,,,,,,PNNT,2024-08-07
+"Blackhawk Industrial Distribution, Inc.",First Lien,Distribution & Wholesale,,,,,,,,3354,,34,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Blackhawk Industrial Distribution, Inc.",First Lien,Distribution & Wholesale,11.79%,,SOFR,6.4%,,,,343,343,338,,343,,,,,,PNNT,2024-08-07
+"Blackhawk Industrial Distribution, Inc.",First Lien,Distribution & Wholesale,,,,,,,,3089,,46,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Broder Bros., Co.",First Lien,Consumer & Retail,11.65%,,SOFR,6.26%,,,,9838,9838,9838,,9838,,,,,,PNNT,2024-08-07
+"Cartessa Aesthetics, LLC",First Lien,Distribution & Wholesale,11.39%,,SOFR,6%,,,,34056,33496,34056,,33496,,,,,,PNNT,2024-08-07
+"Cartessa Aesthetics, LLC",First Lien,Distribution & Wholesale,11.39%,,SOFR,6%,,,,1265,1265,1265,,1265,,,,,,PNNT,2024-08-07
+"CF512, Inc.",First Lien,Media & Entertainment,11.59%,,SOFR,6%,,,,6592,6524,6460,,6524,,,,,,PNNT,2024-08-07
+"CF512, Inc.",First Lien,Media & Entertainment,,,,,,,,909,,18,,,,,,,,PNNT,2024-08-07
+"Compex Legal Services, Inc.",First Lien,Business Services,10.94%,,SOFR,5.55%,,,,949,939,949,,939,,,,,,PNNT,2024-08-07
+"Compex Legal Services, Inc.",First Lien,Business Services,10.94%,,SOFR,5.55%,,,,66,66,66,,66,,,,,,PNNT,2024-08-07
+"Connatix Buyer, Inc.",First Lien,Media & Entertainment,,,,,,,,1875,,66,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Confluent Health, LLC",First Lien,Healthcare,12.82%,,SOFR,7.5%,,,,1990,1855,2000,,1855,,,,,,PNNT,2024-08-07
+"Crane 1 Services, Inc.",First Lien,Food & Beverage,10.90%,,SOFR,5.51%,,,,117,117,116,,117,,,,,,PNNT,2024-08-07
+"Crane 1 Services, Inc.",First Lien,Food & Beverage,,,,,,,,175,,1,,,,,,,,PNNT,2024-08-07
+"Dr. Squatch, LLC",First Lien,Consumer & Retail,11.23%,,SOFR,5.85%,,,,8276,8190,8276,,8190,,,,,,PNNT,2024-08-07
+"Dr. Squatch, LLC",First Lien,Consumer & Retail,,,,,,,,2000,,20,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"DRS Holdings III, Inc.",First Lien,Consumer & Retail,11.79%,,SOFR,6.4%,,,,7,7,7,,7,,,,,,PNNT,2024-08-07
+"DRS Holdings III, Inc.",First Lien,Consumer & Retail,,,,,,,,1783,,21,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"EDS Buyer, LLC",First Lien,Aerospace & Defense,11.64%,,SOFR,6.25%,,,,6219,6133,6125,,6133,,,,,,PNNT,2024-08-07
+"EDS Buyer, LLC",First Lien,Aerospace & Defense,,,,,,,,5625,,14,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"EDS Buyer, LLC",First Lien,Aerospace & Defense,,,,,,,,1688,,25,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"ETE Intermediate II, LLC",First Lien,Food & Beverage,,,,,,,,1656,,28,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Exigo Intermediate II, LLC",First Lien,Business Services,11.17%,,SOFR,5.85%,,,,24375,24097,23888,,24097,,,,,,PNNT,2024-08-07
+"Exigo Intermediate II, LLC",First Lien,Business Services,,,,,,,,1856,,37,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Five Star Buyer, Inc.",First Lien,Healthcare,12.42%,,SOFR,7.1%,,,,196,196,193,,196,,,,,,PNNT,2024-08-07
+"Five Star Buyer, Inc.",First Lien,Healthcare,,,,,,,,837,,13,,,,,,,,PNNT,2024-08-07
+"Five Star Buyer, Inc.",First Lien,Healthcare,,,,,,,,741,,11,,,,,,,,PNNT,2024-08-07
+"Graffiti Buyer, Inc.",First Lien,Distribution & Wholesale,10.98%,,SOFR,5.6%,,,,613,608,607,,608,,,,,,PNNT,2024-08-07
+"Graffiti Buyer, Inc.",First Lien,Distribution & Wholesale,11.77%,,SOFR,5.6%,,,,239,239,237,,239,,,,,,PNNT,2024-08-07
+"Graffiti Buyer, Inc.",First Lien,Distribution & Wholesale,,,,,,,,529,,5,,,,,,,,PNNT,2024-08-07
+Hancock Roofing and Construction LLC.,First Lien,Insurance,10.92%,,SOFR,5.6%,,,,335,335,327,,335,,,,,,PNNT,2024-08-07
+Hancock Roofing and Construction LLC.,First Lien,Insurance,,,,,,,,415,,10,,,,,,,,PNNT,2024-08-07
+"Holdco Sands Intermediate, LLC",First Lien,Aerospace & Defense,11.32%,,SOFR,5.85%,,,,1898,1868,1898,,1868,,,,,,PNNT,2024-08-07
+"HV Watterson Holdings, LLC",First Lien,Business Services,11.79%,,SOFR,6.25%,,,,279,278,279,,278,,,,,,PNNT,2024-08-07
+"HV Watterson Holdings, LLC",First Lien,Business Services,,,,,,,,2219,,12,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"HV Watterson Holdings, LLC",First Lien,Business Services,11.79%,,SOFR,6.25%,,,,1200,1200,1198,,1200,,,,,,PNNT,2024-08-07
+"HW Holdco, LLC",First Lien,Media & Entertainment,11.28%,,SOFR,6.4%,,,,11237,11167,11069,,11167,,,,,,PNNT,2024-08-07
+"HW Holdco, LLC",First Lien,Media & Entertainment,11.82%,,SOFR,6.4%,,,,271,271,267,,271,,,,,,PNNT,2024-08-07
+"HW Holdco, LLC",First Lien,Media & Entertainment,,,,,,,,3116,,47,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"IG Investments Holdings, LLC",First Lien,Business Services,,,,,,,,477,,7,,,,,,,,PNNT,2024-08-07
+"Imagine Acquisitionco, LLC",First Lien,Business Services,,,,,,,,2341,,12,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Imagine Acquisitionco, LLC",First Lien,Business Services,,,,,,,,1685,,25,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Inception Fertility Ventures, LLC",First Lien,Healthcare,12.49%,,SOFR,7.15%,,,,20300,20100,20300,,20100,,,,,,PNNT,2024-08-07
+"Infinity Home Services Holdco, Inc.",First Lien,Food & Beverage,12.24%,,SOFR,6.85%,,,,2089,2089,2089,,2089,,,,,,PNNT,2024-08-07
+"Infolinks Media Buyco, LLC",First Lien,Media & Entertainment,11.17%,,SOFR,5.85%,,,,1420,1416,1420,,1416,,,,,,PNNT,2024-08-07
+"Infolinks Media Buyco, LLC",First Lien,Media & Entertainment,,,,,,,,949,,10,,,,,,,,PNNT,2024-08-07
+Integrated Data Services,First Lien,Business Services,11.87%,,SOFR,6.5%,,,,15467,15161,15106,,15161,,,,,,PNNT,2024-08-07
+Integrated Data Services,First Lien,Business Services,,,,,,,,2533,,59,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Integrity Marketing Acquisition, LLC",First Lien,Insurance,11.41%,,SOFR,6.15%,,,,9880,9839,9781,,9839,,,,,,PNNT,2024-08-07
+"Integrity Marketing Acquisition, LLC",First Lien,Insurance,,,,,,,,2500,,13,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Inventus Power, Inc.",First Lien,Software & Technology,12.93%,,SOFR,7.61%,,,,13234,12998,12969,,12998,,,,,,PNNT,2024-08-07
+"Inventus Power, Inc.",First Lien,Software & Technology,,,,,,,,1729,,35,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"ITI Holdings, Inc.",First Lien,Business Services,11.06%,,SOFR,6.15%,,,,8838,8718,8661,,8718,,,,,,PNNT,2024-08-07
+"ITI Holdings, Inc.",First Lien,Business Services,10.70%,,SOFR,5.6%,,,,1121,1121,1098,,1121,,,,,,PNNT,2024-08-07
+"ITI Holdings, Inc.",First Lien,Business Services,,,,,,,,370,,7,,,,,,,,PNNT,2024-08-07
+"K2 Pure Solutions NoCal, LP.",First Lien,Chemicals & Materials,13.42%,,SOFR,8.1%,,,,9409,9402,9409,,9402,,,,,,PNNT,2024-08-07
+"Kinetic Purchaser, LLC",First Lien,Consumer & Retail,11.54%,,SOFR,6.15%,,,,9173,8957,9035,,8957,,,,,,PNNT,2024-08-07
+"Kinetic Purchaser, LLC",First Lien,Consumer & Retail,,,,,,,,4854,,73,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Lash OpCo, LLC",First Lien,Consumer & Retail,11.88%,,SOFR,7%,,,,2807,2764,2779,,2764,,,,,,PNNT,2024-08-07
+"Lash OpCo, LLC",First Lien,Consumer & Retail,12.15%,,SOFR,7%,,,,1977,1977,1957,,1977,,,,,,PNNT,2024-08-07
+"Lash OpCo, LLC",First Lien,Consumer & Retail,,,,,,,,935,,9,,,,,,,,PNNT,2024-08-07
+"LAV Gear Holdings, Inc.",First Lien,Healthcare,11.79%,,SOFR,6.4%,,,,51,51,51,,51,,,,,,PNNT,2024-08-07
+"Ledge Lounger, Inc.",First Lien,Consumer & Retail,11.79%,,SOFR,6.25%,,,,9085,8964,8971,,8964,,,,,,PNNT,2024-08-07
+"Ledge Lounger, Inc.",First Lien,Consumer & Retail,,,,,,,,1933,,24,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+Lightspeed Buyer Inc.,First Lien,Healthcare,10.67%,,SOFR,5.35%,,,,2198,2187,2176,,2187,,,,,,PNNT,2024-08-07
+Lightspeed Buyer Inc.,First Lien,Healthcare,,,,,,,,1166,,12,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"LJ Avalon Holdings, LLC",First Lien,Environmental Services,11.79%,,SOFR,6.4%,,,,208,205,204,,205,,,,,,PNNT,2024-08-07
+"LJ Avalon Holdings, LLC",First Lien,Environmental Services,,,,,,,,1260,,6,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"LJ Avalon Holdings, LLC",First Lien,Environmental Services,,,,,,,,587,,12,,,,,,,,PNNT,2024-08-07
+"LSF9 Atlantis Holdings, LLC",First Lien,Consumer & Retail,12.64%,,SOFR,7.25%,,,,5625,5436,5381,,5436,,,,,,PNNT,2024-08-07
+"Loving Tan Intermediate II, Inc.",First Lien,Consumer & Retail,12.39%,,SOFR,7%,,,,4988,4892,4913,,4892,,,,,,PNNT,2024-08-07
+"Loving Tan Intermediate II, Inc.",First Lien,Consumer & Retail,12.39%,,SOFR,7%,,,,347,347,342,,347,,,,,,PNNT,2024-08-07
+"Loving Tan Intermediate II, Inc.",First Lien,Consumer & Retail,,,,,,,,284,,4,,,,,,,,PNNT,2024-08-07
+Mars Acquisition Holdings Corp.,First Lien,Media & Entertainment,11.04%,,SOFR,5.65%,,,,1835,1807,1817,,1807,,,,,,PNNT,2024-08-07
+Mars Acquisition Holdings Corp.,First Lien,Media & Entertainment,,,,,,,,1209,,12,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"MBS Holdings, Inc.",First Lien,Telecommunications,11.17%,,SOFR,5.85%,,,,111,111,109,,111,,,,,,PNNT,2024-08-07
+"MBS Holdings, Inc.",First Lien,Telecommunications,,,,,,,,583,,9,,,,,,,,PNNT,2024-08-07
+"MDI Buyer, Inc.",First Lien,Chemicals & Materials,11.27%,,SOFR,6%,,,,20135,19835,19685,,19835,,,,,,PNNT,2024-08-07
+"MDI Buyer, Inc.",First Lien,Chemicals & Materials,10.92%,,SOFR,6%,,,,1039,1039,1016,,1039,,,,,,PNNT,2024-08-07
+"MDI Buyer, Inc.",First Lien,Chemicals & Materials,,,,,,,,1188,,15,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Meadowlark Acquirer, LLC",First Lien,Business Services,10.66%,,SOFR,5.5%,,,,1937,1919,1888,,1919,,,,,,PNNT,2024-08-07
+"Meadowlark Acquirer, LLC",First Lien,Business Services,,,,,,,,1038,,16,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Meadowlark Acquirer, LLC",First Lien,Business Services,,,,,,,,8922,,134,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Meadowlark Acquirer, LLC",First Lien,Business Services,,,,,,,,1685,,43,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Municipal Emergency Services, Inc.",First Lien,Distribution & Wholesale,11.05%,,SOFR,5.65%,,,,484,484,474,,484,,,,,,PNNT,2024-08-07
+"Municipal Emergency Services, Inc.",First Lien,Distribution & Wholesale,,,,,,,,769,,17,,,,,,,,PNNT,2024-08-07
+"Municipal Emergency Services, Inc.",First Lien,Distribution & Wholesale,,,,,,,,2510,,55,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Municipal Emergency Services, Inc.",First Lien,Distribution & Wholesale,11.04%,,SOFR,5.65%,,,,752,752,736,,752,,,,,,PNNT,2024-08-07
+"Municipal Emergency Services, Inc.",First Lien,Distribution & Wholesale,,,,,,,,1128,,25,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+NBH Group LLC,First Lien,Healthcare,,,,,,,,1163,,23,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+Neptune Flood Inc.,First Lien,Insurance,,,,,,,,541,,,,,,,,,,PNNT,2024-08-07
+"NORA Acquisition, LLC",First Lien,Healthcare,11.74%,,SOFR,6.35%,,,,20500,20092,20090,,20092,,,,,,PNNT,2024-08-07
+"NORA Acquisition, LLC",First Lien,Healthcare,,,,,,,,2707,,54,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"ORL Acquisition, Inc.",First Lien,Business Services,12.84%,,SOFR,7.25%,,,,4409,4347,4012,,4347,,,,,,PNNT,2024-08-07
+"ORL Acquisition, Inc.",First Lien,Business Services,,,,,,,,597,,54,,,,,,,,PNNT,2024-08-07
+"Ox Two, LLC",First Lien,Industrials,12.90%,,SOFR,7.25%,,,,13578,13445,13340,,13445,,,,,,PNNT,2024-08-07
+"Ox Two, LLC",First Lien,Industrials,,,,,,,,2419,,42,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Pequod Merger Sub, Inc.",First Lien,Financial Services,,,,,,,,2847,,57,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Pequod Merger Sub, Inc.",First Lien,Financial Services,,,,,,,,757,,15,,,,,,,,PNNT,2024-08-07
+"PL Acquisitionco, LLC",First Lien,Consumer & Retail,,,,,,,,3236,,324,,,,,,,,PNNT,2024-08-07
+"Pragmatic Institute, LLC",First Lien,Business Services,11.17%,,SOFR,5.75%,,,,34987,34547,33412,,34547,,,,,,PNNT,2024-08-07
+"Pragmatic Institute, LLC",First Lien,Business Services,,,,,,,,7193,,252,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Pragmatic Institute, LL",First Lien,Business Services,11.17%,,SOFR,5.75%,,,,4795,4795,4579,,4795,,,,,,PNNT,2024-08-07
+"Quantic Electronics, LLC",First Lien,Aerospace & Defense,11.74%,,SOFR,6.35%,,,,1484,1474,1461,,1474,,,,,,PNNT,2024-08-07
+"Quantic Electronics, LLC",First Lien,Aerospace & Defense,11.74%,,SOFR,6.35%,,,,528,528,521,,528,,,,,,PNNT,2024-08-07
+"Questex, LLC",First Lien,Media & Entertainment,9.81%,,SOFR,4.25%,,,,20193,20115,20193,,20115,,,,,,PNNT,2024-08-07
+"Radius Aerospace, Inc.",First Lien,Aerospace & Defense,11.29%,,SOFR,5.75%,,,,668,668,661,,668,,,,,,PNNT,2024-08-07
+"Radius Aerospace, Inc.",First Lien,Aerospace & Defense,,,,,,,,1559,,16,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Rancho Health MSO, Inc.",First Lien,Healthcare,11.22%,,SOFR,5.75%,,,,79,79,79,,79,,,,,,PNNT,2024-08-07
+"Rancho Health MSO, Inc.",First Lien,Healthcare,11.24%,,SOFR,5.75%,,,,210,210,210,,210,,,,,,PNNT,2024-08-07
+"Reception Purchaser, LLC",First Lien,Transportation & Logistics,11.54%,,SOFR,6.15%,,,,5863,5791,5628,,5791,,,,,,PNNT,2024-08-07
+"Recteq, LLC",First Lien,Consumer & Retail,,,,,,,,1127,,34,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Research Now Group, Inc.",First Lien,Business Services,11.13%,,SOFR,5.76%,,,,124,124,108,,124,,,,,,PNNT,2024-08-07
+"Riverpoint Medical, LLC",First Lien,Healthcare,10.42%,,SOFR,5.1%,,,,45,45,45,,45,,,,,,PNNT,2024-08-07
+"Riverpoint Medical, LLC",First Lien,Healthcare,,,,,,,,318,,4,,,,,,,,PNNT,2024-08-07
+"Riverside Assessments, LLC",First Lien,Education,11.24%,,SOFR,5.75%,,,,11699,11588,11582,,11588,,,,,,PNNT,2024-08-07
+"Rural Sourcing Holdings, Inc.",First Lien,Business Services,,,,,,,,861,,13,,,,,,,,PNNT,2024-08-07
+Sales Benchmark Index LLC,First Lien,Business Services,,,,,,,,732,,4,,,,,,,,PNNT,2024-08-07
+Sargent & Greenleaf Inc.,First Lien,Software & Technology,12.92%,,SOFR,6.5%,,,,158,158,157,,158,,,,,,PNNT,2024-08-07
+Sargent & Greenleaf Inc.,First Lien,Software & Technology,,,,,,,,453,,5,,,,,,,,PNNT,2024-08-07
+"Schlesinger Global, Inc.",First Lien,Business Services,13.15%,,SOFR,7.75%,,,,4647,4611,4496,,4611,,,,,,PNNT,2024-08-07
+"Schlesinger Global, Inc.",First Lien,Business Services,12.52%,,SOFR,7.75%,,,,30,30,29,,30,,,,,,PNNT,2024-08-07
+"Seaway Buyer, LLC",First Lien,Chemicals & Materials,11.54%,,SOFR,6.05%,,,,4752,4691,4609,,4691,,,,,,PNNT,2024-08-07
+"Seaway Buyer, LLC",First Lien,Chemicals & Materials,11.54%,,SOFR,6.05%,,,,729,729,708,,729,,,,,,PNNT,2024-08-07
+"Seaway Buyer, LLC",First Lien,Chemicals & Materials,,,,,,,,2397,,72,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Shiftkey, LLC",First Lien,Business Services,11.40%,,SOFR,6.01%,,,,17775,17636,17331,,17636,,,,,,PNNT,2024-08-07
+"Sigma Defense Systems, LLC",First Lien,Telecommunications,14.04%,,SOFR,8.65%,,,,29681,29190,29236,,29190,,,,,,PNNT,2024-08-07
+"Sigma Defense Systems, LLC",First Lien,Telecommunications,14.04%,,SOFR,8.65%,,,,2083,2083,2052,,2083,,,,,,PNNT,2024-08-07
+"Sigma Defense Systems, LLC",First Lien,Telecommunications,,,,,,,,893,,13,,,,,,,,PNNT,2024-08-07
+Signature Systems Holding Company,First Lien,Chemicals & Materials,,,,,,,,2016,,,,,,,,,,PNNT,2024-08-07
+"Solutionreach, Inc.",First Lien,Telecommunications,,,,,,,,1665,,7,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+Spendmend Holdings LLC,First Lien,Business Services,11.04%,,SOFR,5.65%,,,,99,99,97,,99,,,,,,PNNT,2024-08-07
+Spendmend Holdings LLC,First Lien,Business Services,,,,,,,,2684,,39,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+Spendmend Holdings LLC,Revolver,Business Services,11.20%,,SOFR,5.65%,,,,561,561,548,,561,,,,,,PNNT,2024-08-07
+Spendmend Holdings LLC,First Lien,Business Services,,,,,,,,841,,18,,,,,,,,PNNT,2024-08-07
+"System Planning and Analysis, Inc.",First Lien,Aerospace & Defense,,,,,,,,2925,,32,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"The Aegis Technologies Group, LLC",First Lien,Aerospace & Defense,11.66%,,SOFR,6.65%,,,,1121,1097,1104,,1097,,,,,,PNNT,2024-08-07
+The Bluebird Group LLC,First Lien,Business Services,12.79%,,SOFR,7.4%,,,,2271,2239,2262,,2239,,,,,,PNNT,2024-08-07
+The Bluebird Group LLC,First Lien,Business Services,,,,,,,,734,,3,,,,,,,,PNNT,2024-08-07
+"The Vertex Companies, LLC",First Lien,Business Services,11.93%,,SOFR,6.35%,,,,186,182,185,,182,,,,,,PNNT,2024-08-07
+"The Vertex Companies, LLC",First Lien,Business Services,11.67%,,SOFR,6.35%,,,,248,248,246,,248,,,,,,PNNT,2024-08-07
+"The Vertex Companies, LLC",First Lien,Business Services,,,,,,,,492,,4,,,,,,,,PNNT,2024-08-07
+"Tyto Athene, LLC",First Lien,Aerospace & Defense,,,,,,,,364,,32,,,,,,,,PNNT,2024-08-07
+"Urology Management Holdings, Inc.",First Lien,Healthcare,,,,,,,,7222,,150,,,,,,,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Wildcat Buyerco, Inc.",First Lien,Software & Technology,10.57%,,SOFR,5.15%,,,,3805,3762,3767,,3762,,,,,,PNNT,2024-08-07
+"Wildcat Buyerco, Inc.",First Lien,Software & Technology,10.17%,,SOFR,5.85%,,,,88,88,87,,88,,,,,,PNNT,2024-08-07
+"Wildcat Buyerco, Inc.",First Lien,Software & Technology,,,,,,,,486,,5,,,,,,,,PNNT,2024-08-07
+"Zips Car Wash, LLC",First Lien,Auto Sector,12.67%,,SOFR,7.35%,,,,2589,2583,2504,,2583,,,,,,PNNT,2024-08-07
+"Ascensus Holdings, Inc.",Second Lien,Financial Services,12.03%,,SOFR,6.76%,,,,3000,2717,2837,,2717,,,,,,PNNT,2024-08-07
+"Atlas Purchaser, Inc.",Second Lien,Telecommunications,14.66%,,SOFR,9%,,,,17000,16600,13821,,16600,,,,,,PNNT,2024-08-07
+Best Practice Associates LLC,Second Lien,Aerospace & Defense,14.54%,,SOFR,9.15%,,,,17825,17559,17469,,17559,,,,,,PNNT,2024-08-07
+Burgess Point Purchaser Corp.,Second Lien,Auto Sector,14.42%,,SOFR,9.1%,,,,8000,7680,7920,,7680,,,,,,PNNT,2024-08-07
+ENC Parent Corp.,Second Lien,Business Services,13.15%,,SOFR,7.76%,,,,7500,7440,6675,,7440,,,,,,PNNT,2024-08-07
+"Halo Buyer, Inc.",Second Lien,Consumer & Retail,13.67%,,SOFR,8.35%,,,,32500,32232,31525,,32232,,,,,,PNNT,2024-08-07
+QuantiTech LLC,Second Lien,Aerospace & Defense,11.74%,,SOFR,6.35%,,,,150,148,149,,148,,,,,,PNNT,2024-08-07
+"Express Wash Acquisition Company, LLC",Subordinated Debt,Auto Sector,15.15%,,SOFR,9.76%,,,,22219,21568,21597,,21568,,,,,,PNNT,2024-08-07
+"Flock Financial, LLC",Subordinated Debt,Financial Services,14.50%,,,,,,,34000,33329,32300,,33329,,,,,,PNNT,2024-08-07
+"Ad.net Holdings, Inc.",Preferred Equity,Media & Entertainment,,,,,,,,,240,271,,240,,,,2400,,PNNT,2024-08-07
+"AH Newco Equityholdings, LLC",Preferred Equity,Healthcare,6.00%,,,,,,,,500,1066,,500,,,,211,,PNNT,2024-08-07
+"Anteriad Holdings, LP",Preferred Equity,Media & Entertainment,,,,,,,,,1135,918,,1135,,,,1135,,PNNT,2024-08-07
+"Cartessa Aesthetics, LLC",Preferred Equity,Distribution & Wholesale,,,,,,,,,3563,4975,,3563,,,,3562500,,PNNT,2024-08-07
+"Gauge Lash Coinvest, LLC",Preferred Equity,Consumer & Retail,,,,,,,,,351,789,,351,,,,64967,,PNNT,2024-08-07
+"Imagine Topco, LP",Preferred Equity,Business Services,8.00%,,,,,,,,744,750,,744,,,,743826,,PNNT,2024-08-07
+Magnolia Topco LP,Preferred Equity,Auto Sector,,,,,,,,,169,172,,169,,,,169,,PNNT,2024-08-07
+Magnolia Topco LP,Preferred Equity,Auto Sector,,,,,,,,,554,794,,554,,,,929,,PNNT,2024-08-07
+"Mars Intermediate Holdings II, Inc.",Preferred Equity,Media & Entertainment,,,,,,,,,414,551,,414,,,,414,,PNNT,2024-08-07
+"NXOF Holdings, Inc.",Preferred Equity,Aerospace & Defense,,,,,,,,,160,107,,160,,,,160,,PNNT,2024-08-07
+"PL Acquisitionco, LLC",Preferred Equity,Consumer & Retail,,,,,,,,,37,39,,37,,,,37,,PNNT,2024-08-07
+"Signature CR Intermediate Holdco, Inc.",Preferred Equity,Chemicals & Materials,12.00%,,,,,,,,1527,2490,,1527,,,,1527,,PNNT,2024-08-07
+"TPC Holding Company, LP(8),",Preferred Equity,Food & Beverage,,,,,,,,,219,320,,219,,,,219,,PNNT,2024-08-07
+"TWD Parent Holdings, LLC",Preferred Equity,Business Services,,,,,,,,,30,37,,30,,,,30,,PNNT,2024-08-07
+"A1 Garage Equity, LLC",Other Equity,Food & Beverage,,,,,,,,,2193,2340,,2193,,,,2193038,,PNNT,2024-08-07
+"Affinion Group Holdings, Inc.",Other Equity,Consumer & Retail,,,,,,,,,2126,,,2126,,,,77190,,PNNT,2024-08-07
+AG Investco LP,Other Equity,Business Services,,,,,,,,,805,1074,,805,,,,805164,,PNNT,2024-08-07
+"AG Investco LP(7),",Other Equity,Business Services,,,,,,,,,,,,,,,,194836,,PNNT,2024-08-07
+"Altamira Intermediate Company II, Inc.",Other Equity,Aerospace & Defense,,,,,,,,,125,127,,125,,,,125000,,PNNT,2024-08-07
+"AMCSI Crash Co-Invest, LP",Other Equity,Auto Sector,,,,,,,,,2490,3318,,2490,,,,2489777,,PNNT,2024-08-07
+"Athletico Holdings, LLC",Other Equity,Healthcare,,,,,,,,,10000,9032,,10000,,,,9357,,PNNT,2024-08-07
+"Atlas Investment Aggregator, LLC",Other Equity,Telecommunications,,,,,,,,,1613,293,,1613,,,,1700000,,PNNT,2024-08-07
+"BioDerm, Inc.",Other Equity,Healthcare,,,,,,,,,1312,1513,,1312,,,,1312,,PNNT,2024-08-07
+"Burgess Point Holdings, LP",Other Equity,Auto Sector,,,,,,,,,680,740,,680,,,,680,,PNNT,2024-08-07
+"Connatix Parent, LLC",Other Equity,Media & Entertainment,,,,,,,,,632,333,,632,,,,57416,,PNNT,2024-08-07
+Cowboy Parent LLC,Other Equity,Distribution & Wholesale,,,,,,,,,3015,5451,,3015,,,,27778,,PNNT,2024-08-07
+"Crane 1 Acquisition Parent Holdings, LP.",Other Equity,Food & Beverage,,,,,,,,,104,173,,104,,,,113,,PNNT,2024-08-07
+Delta InvestCo LP,Other Equity,Telecommunications,,,,,,,,,848,1542,,848,,,,863299,,PNNT,2024-08-07
+eCommission Holding Corp.,Other Equity,Financial Services,,,,,,,,,1005,1854,,1005,,,,80,,PNNT,2024-08-07
+"EDS Topco, LP",Other Equity,Aerospace & Defense,,,,,,,,,938,885,,938,,,,937500,,PNNT,2024-08-07
+"Exigo, LLC",Other Equity,Business Services,,,,,,,,,1458,1648,,1458,,,,1458333,,PNNT,2024-08-07
+FedHC InvestCo LP,Other Equity,Aerospace & Defense,,,,,,,,,489,2060,,489,,,,14578,,PNNT,2024-08-07
+"FedHC InvestCo LP(7),",Other Equity,Aerospace & Defense,,,,,,,,,,,,,,,,5150,,PNNT,2024-08-07
+FedHC InvestCo II LP,Other Equity,Aerospace & Defense,,,,,,,,,2175,2951,,2175,,,,20882,,PNNT,2024-08-07
+"Five Star Parent Holdings, LLC",Other Equity,Healthcare,,,,,,,,,656,800,,656,,,,655714,,PNNT,2024-08-07
+"Gauge ETE Blocker, LLC",Other Equity,Food & Beverage,,,,,,,,,374,371,,374,,,,374444,,PNNT,2024-08-07
+Gauge Lash Coinvest LLC,Other Equity,Consumer & Retail,,,,,,,,,136,4076,,136,,,,889376,cost_suspicious_vs_size,PNNT,2024-08-07
+"Gauge Loving Tan, LP",Other Equity,Consumer & Retail,,,,,,,,,463,389,,463,,,,462827,,PNNT,2024-08-07
+"Gauge Schlesinger Coinvest, LLC",Other Equity,Business Services,,,,,,,,,10,7,,10,,,,9,,PNNT,2024-08-07
+"Gauge TVC Coinvest, LLC",Other Equity,Transportation & Logistics,,,,,,,,,,2390,,,,,,810645,,PNNT,2024-08-07
+GCOM InvestCo LP,Other Equity,Business Services,,,,,,,,,1003,401,,1003,,,,2434,,PNNT,2024-08-07
+"Go Dawgs Capital III, LP",Other Equity,Industrials,,,,,,,,,675,1479,,675,,,,675325,,PNNT,2024-08-07
+"Hancock Claims Consultants Investors, LLC",Other Equity,Insurance,,,,,,,,,450,338,,450,,,,450000,,PNNT,2024-08-07
+HPA SPQ Aggregator LP,Other Equity,Business Services,,,,,,,,,750,751,,750,,,,750399,,PNNT,2024-08-07
+"HV Watterson Holdings, LLC",Other Equity,Business Services,,,,,,,,,1600,1778,,1600,,,,1600000,,PNNT,2024-08-07
+"Icon Partners V C, LP.",Other Equity,Business Services,,,,,,,,,1118,1002,,1118,,,,1118318,,PNNT,2024-08-07
+"Icon Partners V C, LP.",Other Equity,Business Services,,,,,,,,,,40,,,,,,381682,,PNNT,2024-08-07
+"IHS Parent Holdngs, LP.",Other Equity,Food & Beverage,,,,,,,,,1218,1642,,1218,,,,1218045,,PNNT,2024-08-07
+"Infogroup Parent Holdings, Inc.",Other Equity,Media & Entertainment,,,,,,,,,2040,2327,,2040,,,,181495,,PNNT,2024-08-07
+"Ironclad Holdco, LLC",Other Equity,Environmental Services,,,,,,,,,450,663,,450,,,,4566,,PNNT,2024-08-07
+"ITC Infusion Co-invest, LP",Other Equity,Healthcare,,,,,,,,,1624,1775,,1624,,,,162445,,PNNT,2024-08-07
+"ITC Rumba, LLC",Other Equity,Healthcare,,,,,,,,,8,1158,,8,,,,375675,cost_suspicious_vs_size,PNNT,2024-08-07
+"Kentucky Racing Holdco, LLC",Other Equity,Healthcare,,,,,,,,,,1630,,,,,,161252,,PNNT,2024-08-07
+"Kinetic Purchaser, LLC",Other Equity,Consumer & Retail,,,,,,,,,1309,1892,,1309,,,,1308814,,PNNT,2024-08-07
+KL Stockton Co-Invest LP,Other Equity,Food & Beverage,,,,,,,,,382,775,,382,,,,382353,,PNNT,2024-08-07
+"Lariat ecoserv Co-Invest Holdings, LLC",Other Equity,Environmental Services,,,,,,,,,,22,,,,,,363656,,PNNT,2024-08-07
+"LEP Pequod Holdings, LP",Other Equity,Financial Services,,,,,,,,,865,1006,,865,,,,350,,PNNT,2024-08-07
+Lightspeed Investment Holdco LLC,Other Equity,Healthcare,,,,,,,,,273,741,,273,,,,273143,,PNNT,2024-08-07
+"LJ Avalon, LP",Other Equity,Environmental Services,,,,,,,,,851,902,,851,,,,851087,,PNNT,2024-08-07
+"Lorient Peregrine Investments, LP",Other Equity,Business Services,,,,,,,,,4530,4452,,4530,,,,335590,,PNNT,2024-08-07
+Magnolia Topco LP,Other Equity,Auto Sector,,,,,,,,,,,,,,,,169230,,PNNT,2024-08-07
+Magnolia Topco LP,Other Equity,Auto Sector,,,,,,,,,,,,,,,,929200,,PNNT,2024-08-07
+"Mars Intermidiate Holdings II, Inc.",Other Equity,Media & Entertainment,,,,,,,,,,232,,,,,,414,,PNNT,2024-08-07
+"MDI Aggregator, LP",Other Equity,Chemicals & Materials,,,,,,,,,3103,3326,,3103,,,,30993,,PNNT,2024-08-07
+"Municipal Emergency Services, Inc.",Other Equity,Distribution & Wholesale,,,,,,,,,3984,4430,,3984,,,,3920145,,PNNT,2024-08-07
+"NEPRT Parent Holdings, LLC",Other Equity,Consumer & Retail,,,,,,,,,1259,88,,1259,,,,1299,,PNNT,2024-08-07
+"NORA Parent Holdings, LLC",Other Equity,Healthcare,,,,,,,,,1257,1257,,1257,,,,1257,,PNNT,2024-08-07
+"North Haven Saints Equity Holdings, LP",Other Equity,Business Services,,,,,,,,,352,351,,352,,,,351553,,PNNT,2024-08-07
+"OceanSound Discovery Equity, LP",Other Equity,Aerospace & Defense,,,,,,,,,913,2133,,913,,,,98286,,PNNT,2024-08-07
+"OHCP V BC COI, LP.",Other Equity,Distribution & Wholesale,,,,,,,,,446,390,,446,,,,446250,,PNNT,2024-08-07
+"OHCP V BC COI, LP.",Other Equity,Distribution & Wholesale,,,,,,,,,,38,,,,,,303750,,PNNT,2024-08-07
+"PennantPark-TSO Senior Loan Fund II, LP",Other Equity,Financial Services,,,,,,,,,12270,12485,,12270,,,,12269640,,PNNT,2024-08-07
+"Pink Lily Holdco, LLC",Other Equity,Consumer & Retail,,,,,,,,,1044,33,,1044,,,,1044,fair_value_suspicious_vs_size,PNNT,2024-08-07
+"Pragmatic Institute, LLC",Other Equity,Business Services,,,,,,,,,1918,747,,1918,,,,1918047,,PNNT,2024-08-07
+"Quad (U.S.) Co-Invest, LP.",Other Equity,Business Services,,,,,,,,,2959,3461,,2959,,,,2958706,,PNNT,2024-08-07
+QuantiTech InvestCo LP,Other Equity,Aerospace & Defense,,,,,,,,,68,446,,68,,,,712,,PNNT,2024-08-07
+"QuantiTech InvestCo LP(7),",Other Equity,Aerospace & Defense,,,,,,,,,,,,,,,,955,,PNNT,2024-08-07
+QuantiTech InvestCo II LP,Other Equity,Aerospace & Defense,,,,,,,,,24,26,,24,,,,40,,PNNT,2024-08-07
+"RFMG Parent, LP",Other Equity,Healthcare,,,,,,,,,1050,1052,,1050,,,,1050000,,PNNT,2024-08-07
+SBI Holdings Investments LLC,Other Equity,Business Services,,,,,,,,,366,291,,366,,,,36585,,PNNT,2024-08-07
+"Seaway Topco, LP",Other Equity,Chemicals & Materials,,,,,,,,,2981,2372,,2981,,,,2981,,PNNT,2024-08-07
+"Signature CR Intermediate Holdco, Inc.",Other Equity,Chemicals & Materials,,,,,,,,,80,2059,,80,,,,80,cost_suspicious_vs_size,PNNT,2024-08-07
+"SP L2 Holdings, LLC",Other Equity,Consumer & Retail,,,,,,,,,882,604,,882,,,,881966,,PNNT,2024-08-07
+"SSC Dominion Holdings, LLC",Other Equity,Software & Technology,,,,,,,,,71,3294,,71,,,,71,cost_suspicious_vs_size,PNNT,2024-08-07
+"StellPen Holdings, LLC",Other Equity,Media & Entertainment,,,,,,,,,154,169,,154,,,,153846,,PNNT,2024-08-07
+"TAC LifePort Holdings, LLC",Other Equity,Aerospace & Defense,,,,,,,,,250,405,,250,,,,254206,,PNNT,2024-08-07
+"Tower Arch Infolinks Media, LP",Other Equity,Media & Entertainment,,,,,,,,,504,951,,504,,,,536514,,PNNT,2024-08-07
+"Tower Arch Infolinks Media, LP(7),",Other Equity,Media & Entertainment,,,,,,,,,,,,,,,,358931,,PNNT,2024-08-07
+"TPC Holding Company, LP(8).",Other Equity,Food & Beverage,,,,,,,,,12,113,,12,,,,11527,,PNNT,2024-08-07
+"TWD Parent Holdings, LLC",Other Equity,Business Services,,,,,,,,,1,1,,1,,,,608,,PNNT,2024-08-07
+UniVista Insurance,Other Equity,Business Services,,,,,,,,,362,555,,362,,,,400,,PNNT,2024-08-07
+"Urology Partners Co., LP.",Other Equity,Healthcare,,,,,,,,,1111,1044,,1111,,,,1111111,,PNNT,2024-08-07
+"WCP Ivyrehab (QP) CF Feeder, LP",Other Equity,Healthcare,,,,,,,,,3754,4319,,3754,,,,3715012,,PNNT,2024-08-07
+"Wildcat Parent, LP",Other Equity,Software & Technology,,,,,,,,,231,820,,231,,,,2314,,PNNT,2024-08-07
+Walker Edison Furniture Company LLC,First Lien,Home and Office Furnishings,12.18%,,SOFR,6.85%,,,,7042,7042,7043,,7042,,,,,,PNNT,2024-08-07
+Walker Edison Furniture Company LLC,First Lien,Home and Office Furnishings,11.68%,,SOFR,6.85%,,,,3333,3333,3333,,3333,,,,,,PNNT,2024-08-07
+"Cascade Environmental Holdings, LLC",Preferred Equity,Environmental Services,,,,,,,,,32791,31032,,32791,,,,5887236,,PNNT,2024-08-07
+"Cascade Environmental Holdings, LLC",Preferred Equity,Environmental Services,,,,,,,,,918,1073,,918,,,,918,,PNNT,2024-08-07
+"JF Intermediate, LLC",Other Equity,Distribution & Wholesale,,,,,,,,,2065,8759,,2065,,,,19687,,PNNT,2024-08-07
+Walker Edison Furniture,Other Equity,Home and Office Furnishings,,,,,,,,,6786,3531,,6786,,,,72917,,PNNT,2024-08-07
+"AKW Holdings Limited(8), (10),",First Lien,Healthcare,12.21%,,SONIA,7%,,,,40371,55388,49275,,55388,,,,,,PNNT,2024-08-07
+Mailsouth Inc.,Second Lien,Media & Entertainment,,,,,,,,14896,12383,,,12383,,,,,,PNNT,2024-08-07
+"PennantPark Senior Loan Fund, LLC",Subordinated Debt,Financial Services,13.37%,,SOFR,8%,,,,102325,102325,102325,,102325,,,,,,PNNT,2024-08-07
+"AKW Holdings Limited(8), (10),",Other Equity,Healthcare,,,,,,,,,131,2385,,131,,,,950,,PNNT,2024-08-07
+"MSpark, LLC",Other Equity,Media & Entertainment,,,,,,,,,16516,,,16516,,,,51151,,PNNT,2024-08-07
+"PennantPark Senior Loan Fund, LLC",Other Equity,Financial Services,,,,,,,,,58643,62083,,58643,,,,58580060,,PNNT,2024-08-07
+"ACP Falcon Buyer, Inc.",First Lien,Business Services,10.80%,,,,,,,,15096,,,15096,,,,,,PNNT,2024-08-07
+AFC - Dell Holding Corp.,First Lien,Distribution & Wholesale,11.75%,,,,,,,,2256,,,2256,,,,,,PNNT,2024-08-07
+"Aeronix, Inc.",First Lien,Aerospace & Defense,10.83%,,,,,,,,14728,,,14728,,,,,,PNNT,2024-08-07
+Alpine Acquisition Corp.,First Lien,Containers & Packaging,11.43%,,,,,,,,14475,,,14475,,,,,,PNNT,2024-08-07
+Amsive Holding Corp.,First Lien,Media & Entertainment,11.73%,,,,,,,,13793,,,13793,,,,,,PNNT,2024-08-07
+"Big Top Holdings, LLC",First Lien,Industrials,11.58%,,,,,,,,6867,,,6867,,,,,,PNNT,2024-08-07
+"BlueHalo Global Holdings, LLC",First Lien,Aerospace & Defense,10.09%,,,,,,,,12158,,,12158,,,,,,PNNT,2024-08-07
+Burgess Point Purchaser Corp.,First Lien,Auto Sector,10.69%,,,,,,,,834,,,834,,,,,,PNNT,2024-08-07
+DRI Holding Inc.,First Lien,Media & Entertainment,10.69%,,,,,,,,5420,,,5420,,,,,,PNNT,2024-08-07
+Fairbanks Morse Defense,First Lien,Aerospace & Defense,10.35%,,,,,,,,3413,,,3413,,,,,,PNNT,2024-08-07
+Global Holdings InterCo LLC,First Lien,Insurance,11.48%,,,,,,,,6958,,,6958,,,,,,PNNT,2024-08-07
+"Hills Distribution, Inc.",First Lien,Distribution & Wholesale,11.33%,,,,,,,,14139,,,14139,,,,,,PNNT,2024-08-07
+MAG DS Corp.,First Lien,Aerospace & Defense,10.93%,,,,,,,,7173,,,7173,,,,,,PNNT,2024-08-07
+"Magenta Buyer, LLC",First Lien,Software & Technology,10.59%,,,,,,,,3552,,,3552,,,,,,PNNT,2024-08-07
+"Megawatt Acquisitionco, Inc.",First Lien,Business Services,10.58%,,,,,,,,7887,,,7887,,,,,,PNNT,2024-08-07
+"MOREgroup Holdings, LLC",First Lien,Business Services,11.08%,,,,,,,,7379,,,7379,,,,,,PNNT,2024-08-07
+"One Stop Mailing, LLC",First Lien,Transportation & Logistics,11.71%,,,,,,,,8271,,,8271,,,,,,PNNT,2024-08-07
+"Owl Acquisition, LLC",First Lien,Education,10.69%,,,,,,,,3807,,,3807,,,,,,PNNT,2024-08-07
+"PCS Midco, Inc.",First Lien,Financial Services,11.10%,,,,,,,,5745,,,5745,,,,,,PNNT,2024-08-07
+S101 Holdings Inc.,First Lien,Software & Technology,11.45%,,,,,,,,4156,,,4156,,,,,,PNNT,2024-08-07
+"Simplicity Financial Marketing Group Holdings, Inc.",First Lien,Insurance,11.71%,,,,,,,,11220,,,11220,,,,,,PNNT,2024-08-07
+"Skopima Consilio Parent, LLC",First Lien,Business Services,9.96%,,,,,,,,1271,,,1271,,,,,,PNNT,2024-08-07
+"SpendMend Holdings, LLC",First Lien,Business Services,10.98%,,,,,,,,9314,,,9314,,,,,,PNNT,2024-08-07
+"Summit Behavioral Healthcare, LLC",First Lien,Healthcare,9.60%,,,,,,,,3391,,,3391,,,,,,PNNT,2024-08-07
+"Team Services Group, LLC",First Lien,Healthcare,10.50%,,,,,,,,2581,,,2581,,,,,,PNNT,2024-08-07
+Teneo Holdings LLC,First Lien,Business Services,10.09%,,,,,,,,2963,,,2963,,,,,,PNNT,2024-08-07
+"Watchtower Buyer, LLC",First Lien,Consumer & Retail,11.33%,,,,,,,,8843,,,8843,,,,,,PNNT,2024-08-07
+Alpine Acquisition Corp.,First Lien,Containers & Packaging,11.26%,,,,,,,,14528,,,14528,,,,,,PNNT,2024-08-07
+Amsive Holding Corp.,First Lien,Media & Entertainment,11.79%,,,,,,,,13869,,,13869,,,,,,PNNT,2024-08-07
+Burgess Point Purchaser Corp.,First Lien,Auto Sector,10.67%,,,,,,,,836,,,836,,,,,,PNNT,2024-08-07
+DRI Holding Inc.,First Lien,Media & Entertainment,10.67%,,,,,,,,3959,,,3959,,,,,,PNNT,2024-08-07
+Duraco Specialty Tapes LLC,First Lien,Industrials,11.93%,,,,,,,,8561,,,8561,,,,,,PNNT,2024-08-07
+Electro Rent Corp.,First Lien,Software & Technology,10.93%,,,,,,,,3665,,,3665,,,,,,PNNT,2024-08-07
+Fairbanks Morse Defense,First Lien,Aerospace & Defense,10.40%,,,,,,,,1470,,,1470,,,,,,PNNT,2024-08-07
+Global Holdings InterCo LLC,First Lien,Insurance,11.96%,,,,,,,,7008,,,7008,,,,,,PNNT,2024-08-07
+MAG DS Corp.,First Lien,Aerospace & Defense,10.99%,,,,,,,,7153,,,7153,,,,,,PNNT,2024-08-07
+"Magenta Buyer, LLC",First Lien,Software & Technology,10.63%,,,,,,,,3550,,,3550,,,,,,PNNT,2024-08-07
+Neptune Flood Inc.,First Lien,Financial Services,11.97%,,,,,,,,7910,,,7910,,,,,,PNNT,2024-08-07
+"One Stop Mailing, LLC",First Lien,Transportation & Logistics,11.68%,,,,,,,,8311,,,8311,,,,,,PNNT,2024-08-07
+"Owl Acquisition, LLC",First Lien,Education,10.80%,,,,,,,,3794,,,3794,,,,,,PNNT,2024-08-07
+Signature Systems Holding Company,First Lien,Chemicals & Materials,12.04%,,,,,,2024-05-03,,11173,,,11173,,,,,,PNNT,2024-08-07
+"Skopima Consilio Parent, LLC",First Lien,Business Services,9.93%,,,,,,2028-05-17,,1274,,,1274,,,,,,PNNT,2024-08-07
+"SpendMend Holdings, LLC",First Lien,Business Services,11.04%,,,,,,2028-03-01,,9352,,,9352,,,,,,PNNT,2024-08-07
+STV Group Inc.,First Lien,Transportation & Logistics,10.67%,,,,,,2026-12-11,,12045,,,12045,,,,,,PNNT,2024-08-07
+"Summit Behavioral Healthcare, LLC",First Lien,Healthcare,10.43%,,,,,,2028-11-24,,3389,,,3389,,,,,,PNNT,2024-08-07
+"Team Services Group, LLC",First Lien,Healthcare,10.75%,,,,,,2028-11-24,,2584,,,2584,,,,,,PNNT,2024-08-07
+Teneo Holdings LLC,First Lien,Financial Services,10.67%,,,,,,2025-07-18,,2927,,,2927,,,,,,PNNT,2024-08-07
+"TPC Canada Parent, Inc.",First Lien,Food & Beverage,10.68%,,,,,,2025-11-24,,5378,,,5378,,,,,,PNNT,2024-08-07
+Liabilities in Excess of Other Assets - (741.3)%,First Lien,Liabilities in Excess of Other Assets - (741.3)%,,,,,,,,,760665,,,760665,,,,,,PNNT,2024-08-07

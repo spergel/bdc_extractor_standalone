@@ -1,134 +1,226 @@
-company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,data_quality_flags,ticker,filing_date
-GovDelivery Holdings LLC,co_d9f82426e234,Revolver,Software & Technology,,LIBOR,6.50%,,2027-01-29,2583,-33,-13,,,,,,,GSBD,2022-11-03
-Governmentjobs.com Inc.,co_6c582dff3963,First Lien,Software & Technology,6.25%,,LIBOR,5.50%,,2028-12-01,42387,42281,42281,,,,,,GSBD,2022-11-03
-Governmentjobs.com Inc.,co_6c582dff3963,Revolver,Software & Technology,,LIBOR,5.50%,,2027-12-02,4710,-12,-12,,,,,,,GSBD,2022-11-03
-Governmentjobs.com Inc.,co_6c582dff3963,Revolver,Software & Technology,,LIBOR,5.50%,,2028-12-01,14718,-18,-18,,,,,,,GSBD,2022-11-03
-GS AcquisitionCo Inc.,co_da1da76723d6,First Lien,Financial Services,6.75%,,LIBOR,5.75%,,2026-05-22,22452,22178,22340,,,,,,GSBD,2022-11-03
-GS AcquisitionCo Inc.,co_da1da76723d6,First Lien,Financial Services,6.75%,,LIBOR,5.75%,,2026-05-22,982,454,462,,,,,,GSBD,2022-11-03
-GS AcquisitionCo Inc.,co_da1da76723d6,Revolver,Financial Services,,LIBOR,5.75%,,2026-05-22,3664,-9,-18,,,,,,,GSBD,2022-11-03
-Halo Branded Solutions Inc.,co_c72c25f9aca2,First Lien,Business Services,5.50%,,LIBOR,4.50%,,2025-06-30,6357,6321,5912,,,,,,GSBD,2022-11-03
-HealthEdge Software Inc.,co_60cd97f64d89,First Lien,Automotive,7.25%,,LIBOR,6.25%,,2026-04-09,35400,34698,34692,,,,,,GSBD,2022-11-03
-HealthEdge Software Inc.,co_60cd97f64d89,Revolver,Automotive,,LIBOR,6.25%,,2026-04-09,3800,-75,-76,,,,,,,GSBD,2022-11-03
-Sundance Group Holdings Inc.,co_a7734b52f59e,First Lien,Software & Technology,7.75%,,LIBOR,6.75%,,2027-07-02,4925,1407,1416,,,,,,GSBD,2022-11-03
-Sundance Group Holdings Inc.,co_a7734b52f59e,Delayed Draw,Software & Technology,,,LIBOR,6.75%,,2027-07-02,12313,-88,-154,,,,,,GSBD,2022-11-03
-Sunstar Insurance Group LLC,co_044f791b1db5,First Lien,Financial Services,6.75%,,LIBOR,5.75%,,2026-10-09,20622,8501,8474,,,,,,GSBD,2022-11-03
-Sunstar Insurance Group LLC,co_044f791b1db5,First Lien,Financial Services,6.75%,,LIBOR,5.75%,,2026-10-09,4076,4025,4035,,,,,,GSBD,2022-11-03
-Sunstar Insurance Group LLC,co_044f791b1db5,First Lien,Financial Services,6.75%,,LIBOR,5.75%,,2026-10-09,342,336,339,,,,,,GSBD,2022-11-03
-Sunstar Insurance Group LLC,co_044f791b1db5,Delayed Draw,Financial Services,,,LIBOR,5.75%,,2026-10-09,111,-2,-1,,,,,,GSBD,2022-11-03
-Superman Holdings LLC,co_3d26abc6b8f1,First Lien,Industrials,7.50%,,LIBOR,6.50%,,2027-08-31,31795,31160,31080,,,,,,GSBD,2022-11-03
-Superman Holdings LLC,co_3d26abc6b8f1,First Lien,Industrials,7.50%,,LIBOR,6.50%,,2027-08-31,962,924,940,,,,,,GSBD,2022-11-03
-Superman Holdings LLC,co_3d26abc6b8f1,First Lien,Industrials,9.80%,,LIBOR,6.13%,,2027-08-31,955,921,936,,921,955,,,GSBD,2022-11-03
-Superman Holdings LLC,co_3d26abc6b8f1,Delayed Draw,Industrials,,,LIBOR,6.50%,,2026-08-31,122,-2,-3,,,,,,GSBD,2022-11-03
-Superman Holdings LLC,co_3d26abc6b8f1,Delayed Draw,Industrials,,,LIBOR,8.00%,,2026-08-31,122,-2,-2,,-2,122,122,,GSBD,2022-11-03
-Sweep Purchaser LLC,co_04b9c34b651f,First Lien,Business Services,6.75%,,LIBOR,5.75%,,2026-11-30,28393,27911,28109,,,,,,GSBD,2022-11-03
-Sweep Purchaser LLC,co_04b9c34b651f,First Lien,Business Services,6.75%,,LIBOR,5.75%,,2026-11-30,9014,8859,8924,,,,,,GSBD,2022-11-03
-Sweep Purchaser LLC,co_04b9c34b651f,First Lien,Business Services,9.42%,,LIBOR,5.75%,,2026-11-30,28179,27763,27686,,27763,28179,,,GSBD,2022-11-03
-Sweep Purchaser LLC,co_04b9c34b651f,First Lien,Business Services,8.60%,,LIBOR,5.75%,,2026-11-30,8946,8812,8789,,8812,8946,,,GSBD,2022-11-03
-Sweep Purchaser LLC,co_04b9c34b651f,First Lien,Business Services,8.61%,,LIBOR,5.75%,,2026-11-30,7173,7061,7047,,7061,7173,,,GSBD,2022-11-03
-Sweep Purchaser LLC,co_04b9c34b651f,First Lien,Business Services,8.65%,,LIBOR,5.75%,,2026-11-30,4982,4895,4895,,4895,4982,,,GSBD,2022-11-03
-Broadway Parent LLC,co_98292586100d,Preferred Equity,Financial Services,,,N/A,,2021-01-25,,4000000,4019,4304,,4019,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2022-11-03
-CloudBees Inc.,co_288c1fdb3198,Preferred Equity,Software & Technology,,,N/A,,2021-11-24,,1152957,12899,11749,,12899,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2022-11-03
-Foundation Software,co_40855dc0ec72,Preferred Equity,Industrials,,,N/A,,2020-08-31,,22,21,26,,21,,,,GSBD,2022-11-03
-Governmentjobs.com Inc.,co_6c582dff3963,Preferred Equity,Software & Technology,,,N/A,,2021-12-02,,10597,10332,11259,,10332,,,,GSBD,2022-11-03
-Kawa Solar Holdings Ltd.,co_0f110165e754,Preferred Equity,Industrials,,,N/A,,2016-10-25,,78707,778,,,778,,,cost_suspicious_vs_size,GSBD,2022-11-03
-Kawa Solar Holdings Ltd.,co_0f110165e754,Preferred Equity,Industrials,,,N/A,,2016-10-25,,74168,778,,,778,,,cost_suspicious_vs_size,GSBD,2022-11-03
-MedeAnalytics Inc.,co_74f13afdb7e3,Preferred Equity,Automotive,,,N/A,,2020-10-09,,42600,41,40,,41,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2022-11-03
-Wine.com LLC,co_841f07d85e55,Preferred Equity,Food & Beverage,,,N/A,,2018-11-14,,535226,8225,2371,,8225,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2022-11-03
-Wine.com LLC,co_841f07d85e55,Preferred Equity,Food & Beverage,,,N/A,,2021-03-03,,124040,3067,3680,,3067,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2022-11-03
-WSO2 Inc.,co_dbe78b13ff81,Preferred Equity,Software & Technology,,,N/A,,2021-11-04,,561918,8876,8540,,8876,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2022-11-03
-Abacus Data Holdings Inc.,co_bfbee81a1259,Common Equity,Software & Technology,,,N/A,,2021-03-10,,29326,2933,2346,,2933,,,,GSBD,2022-11-03
-Animal Supply Holdings LLC,co_0c9328e53169,Common Equity,Business Services,,,N/A,,2020-08-14,,37500,126,,,126,,,cost_suspicious_vs_size,GSBD,2022-11-03
-Animal Supply Holdings LLC,co_0c9328e53169,Common Equity,Business Services,,,N/A,,2020-08-14,,83333,13745,,,13745,,,,GSBD,2022-11-03
-WorkForce Software LLC,co_491a116db473,First Lien,Software & Technology,7.32%,3.00%,LIBOR,7.25%,,2025-07-31,22355,21665,21908,,,,,,GSBD,2022-11-03
-WorkForce Software LLC,co_491a116db473,First Lien,Software & Technology,7.32%,3.00%,LIBOR,7.25%,,2025-07-31,3153,3102,3090,,,,,,GSBD,2022-11-03
-WorkForce Software LLC,co_491a116db473,First Lien,Software & Technology,7.32%,,LIBOR,4.25%,,2025-07-31,2319,1513,1500,,,,,,GSBD,2022-11-03
-WorkForce Software LLC,co_491a116db473,First Lien,Software & Technology,9.57%,,LIBOR,6.50%,,2025-07-31,1894,1238,1225,,,,,,GSBD,2022-11-03
-WorkForce Software LLC,co_491a116db473,First Lien,Software & Technology,6.50%,1.00%,LIBOR,6.50%,,2025-07-31,21740,20891,21305,,,,,,GSBD,2022-11-03
-WorkForce Software LLC,co_491a116db473,First Lien,Software & Technology,6.50%,1.00%,LIBOR,6.50%,,2025-07-31,1894,1864,1856,,,,,,GSBD,2022-11-03
-WSO2 Inc.,co_dbe78b13ff81,First Lien,Business Services,7.19%,3.00%,LIBOR,7.50%,,2026-11-04,31871,31348,31233,,,,,,GSBD,2022-11-03
-WSO2 Inc.,co_dbe78b13ff81,First Lien,Business Services,5.50%,3.00%,LIBOR,7.50%,,2026-11-04,31065,30461,30443,,,,,,GSBD,2022-11-03
-Xactly Corp.,co_bf8340147b1d,First Lien,Business Services,10.06%,,LIBOR,7.25%,,2023-07-31,62025,61226,61870,,,,,,GSBD,2022-11-03
-Xactly Corp.,co_bf8340147b1d,First Lien,Business Services,10.20%,,LIBOR,7.25%,,2023-07-31,3874,3854,3865,,,,,,GSBD,2022-11-03
-Xactly Corp.,co_bf8340147b1d,First Lien,Business Services,8.25%,,LIBOR,7.25%,,2023-07-31,62025,60548,62025,,,,,,GSBD,2022-11-03
-Zarya Intermediate LLC,co_00051ef3b32d,First Lien,Real Estate,10.02%,,SOFR,6.50%,,2027-07-01,76666,76666,75899,,,,,,GSBD,2022-11-03
-Zarya Intermediate LLC,co_00051ef3b32d,First Lien,Real Estate,,,SOFR,6.50%,,2027-07-01,7987,,80,,,,,fair_value_suspicious_vs_size,GSBD,2022-11-03
-Zodiac Intermediate LLC,co_c6b1bc6bbbba,First Lien,Automotive,10.81%,,LIBOR,8.00%,,2026-12-21,50230,49108,47719,,,,,,GSBD,2022-11-03
-Fullsteam Operations LLC,co_e7812d309db0,First Lien,Financial Services,5.92%,5.25%,LIBOR,7.50%,,2027-10-04,58481,57138,57019,,,,,,GSBD,2022-11-03
-Fullsteam Operations LLC,co_e7812d309db0,First Lien,Financial Services,5.92%,5.25%,LIBOR,7.50%,,2027-10-04,22662,22122,22096,,,,,,GSBD,2022-11-03
-Fullsteam Operations LLC,co_e7812d309db0,First Lien,Financial Services,5.92%,5.25%,LIBOR,7.50%,,2027-10-04,3380,1099,1094,,,,,,GSBD,2022-11-03
-Fullsteam Operations LLC,co_e7812d309db0,Delayed Draw,Financial Services,,,LIBOR,7.50%,,2027-10-04,440,-10,-11,,,,,,GSBD,2022-11-03
-Gainsight Inc.,co_d13b62978cbd,First Lien,Software & Technology,2.81%,6.75%,LIBOR,6.75%,,2027-07-30,43589,42982,41955,,,,,,GSBD,2022-11-03
-Gainsight Inc.,co_d13b62978cbd,Delayed Draw,Software & Technology,,,LIBOR,6.75%,,2027-07-30,5320,-75,-200,,,,,,GSBD,2022-11-03
-GHA Buyer Inc.,co_e2b7d57f2b2c,First Lien,Automotive,10.12%,,LIBOR,7.00%,,2025-06-24,14738,14547,13411,,,,,,GSBD,2022-11-03
-GHA Buyer Inc.,co_e2b7d57f2b2c,First Lien,Automotive,10.12%,,LIBOR,7.00%,,2025-06-24,2586,2552,2353,,,,,,GSBD,2022-11-03
-GHA Buyer Inc.,co_e2b7d57f2b2c,First Lien,Automotive,10.12%,,LIBOR,7.00%,,2025-06-24,1880,1700,1554,,,,,,GSBD,2022-11-03
-GHA Buyer Inc.,co_e2b7d57f2b2c,First Lien,Automotive,10.12%,,LIBOR,7.00%,,2025-06-24,964,947,877,,,,,,GSBD,2022-11-03
-Kaseya Inc.,co_75541f204b9b,Revolver,Software & Technology,,,SOFR,5.75%,,2029-06-25,1100,16,11,,,,,fair_value_suspicious_vs_size,GSBD,2022-11-03
-Kawa Solar Holdings Ltd.,co_0f110165e754,Revolver,Industrials,,,N/A,,,2022-12-31,3917,3603,1289,,,,,,GSBD,2022-11-03
-LCG Vardiman Black LLC,co_52388e885712,First Lien,Healthcare,9.70%,,SOFR,7.00%,,2027-03-18,1000,629,628,,,,,,GSBD,2022-11-03
-Lithium Technologies Inc.,co_72645dcd8c10,First Lien,Media & Entertainment,10.53%,,SOFR,8.00%,,2024-01-03,89013,88336,87678,,,,,,GSBD,2022-11-03
-Lithium Technologies Inc.,co_72645dcd8c10,Revolver,Media & Entertainment,10.53%,,SOFR,8.00%,,2024-01-03,5110,2019,1967,,,,,,GSBD,2022-11-03
-LS Clinical Services Holdings Inc.,co_00930ad73d2d,First Lien,Healthcare,9.82%,,LIBOR,6.75%,,2027-12-16,15281,14940,14899,,,,,,GSBD,2022-11-03
-LS Clinical Services Holdings Inc.,co_00930ad73d2d,Revolver,Healthcare,9.71%,,LIBOR,6.75%,,2026-12-16,2200,613,605,,,,,,GSBD,2022-11-03
-MedeAnalytics Inc.,co_74f13afdb7e3,First Lien,Automotive,10.20%,1.50%,SOFR,8.00%,,2026-10-09,991,954,939,,,,,,GSBD,2022-11-03
-MerchantWise Solutions LLC,co_7bf40cfe154e,First Lien,Financial Services,9.31%,,SOFR,6.00%,,2028-06-01,21691,21277,21257,,,,,,GSBD,2022-11-03
-MerchantWise Solutions LLC,co_7bf40cfe154e,Revolver,Financial Services,8.95%,,SOFR,6.00%,,2028-06-01,2718,,,,,,,,GSBD,2022-11-03
-Premier Imaging LLC,co_bbb28d7c2de6,Revolver,Healthcare,8.85%,,LIBOR,5.75%,,2025-01-02,5766,1591,1512,,1591,5766,4175,,GSBD,2022-11-03
-Professional Physical Therapy,co_83ddc5b16076,Revolver,Healthcare,,2.50%,LIBOR,8.50%,,2022-12-16,6020,5908,4349,,5908,6020,112,,GSBD,2022-11-03
-Project Eagle Holdings LLC,co_230c1cffc687,First Lien,Aerospace & Defense,9.62%,,LIBOR,6.50%,,2026-07-06,35449,34865,34740,,34865,,,,GSBD,2022-11-03
-Project Eagle Holdings LLC,co_230c1cffc687,Revolver,Aerospace & Defense,,,LIBOR,6.50%,,2026-07-06,75,-1,-2,,-1,75,76,,GSBD,2022-11-03
-Prophix Software Inc.,co_ab73f48a6831,First Lien,Financial Services,9.31%,,LIBOR,6.50%,,2026-01-30,18948,18680,18948,,18680,,,,GSBD,2022-11-03
-Prophix Software Inc.,co_ab73f48a6831,First Lien,Financial Services,9.31%,,LIBOR,6.50%,,2026-01-30,7752,7627,7752,,7627,,,,GSBD,2022-11-03
-Prophix Software Inc.,co_ab73f48a6831,Revolver,Financial Services,,,LIBOR,6.50%,,2026-01-30,3445,-46,,,,-46,3445,,GSBD,2022-11-03
-PT Intermediate Holdings III LLC,co_f22783f7edc5,First Lien,Industrials,9.17%,,LIBOR,5.50%,,2028-11-01,22847,22642,22219,,22642,,,,GSBD,2022-11-03
-PT Intermediate Holdings III LLC,co_f22783f7edc5,First Lien,Industrials,9.17%,,LIBOR,5.50%,,2028-11-01,2030,2011,1974,,2011,,,,GSBD,2022-11-03
-Sweep Purchaser LLC,co_04b9c34b651f,Delayed Draw,Business Services,,,LIBOR,5.75%,,2026-11-30,4541,-64,-79,,-64,4541,4541,,GSBD,2022-11-03
-Syntellis Performance Solutions LLC,co_7f4286e707f4,First Lien,Automotive,9.53%,,SOFR,6.50%,,2027-08-02,16408,16089,16080,,16089,16408,,,GSBD,2022-11-03
-Syntellis Performance Solutions LLC,co_7f4286e707f4,First Lien,Automotive,9.53%,,SOFR,6.50%,,2027-08-02,822,788,806,,788,822,,,GSBD,2022-11-03
-1272775 B.C.,co_6e12f4793666,First Lien,Business Services,9.42%,,LIBOR,5.75%,,2026-11-06,9265,9164,9149,,,,,,GSBD,2022-11-03
-1272775 B.C.,co_6e12f4793666,First Lien,Business Services,11.00%,,Prime,4.75%,,2026-11-06,1151,681,679,,,,,,GSBD,2022-11-03
-1272775 B.C.,co_6e12f4793666,First Lien,Business Services,11.00%,,Prime,4.75%,,2026-11-06,139,109,99,,,,,,GSBD,2022-11-03
-3SI Security Systems,co_c70f0c5ad517,First Lien,Business Services,10.07%,,LIBOR,6.50%,,2023-06-16,13589,13439,13487,,,,,,GSBD,2022-11-03
-3SI Security Systems,co_c70f0c5ad517,First Lien,Business Services,10.07%,,LIBOR,6.50%,,2023-06-16,2069,1996,2053,,,,,,GSBD,2022-11-03
-A Place For Mom,co_16f303280b98,First Lien,Other,7.62%,,LIBOR,4.50%,,2026-02-10,7345,7326,6611,,,,,,GSBD,2022-11-03
-Abacus Data Holdings,co_bfbee81a1259,First Lien,Software & Technology,8.54%,,LIBOR,6.25%,,2027-03-10,16264,15946,15939,,,,,,GSBD,2022-11-03
-Abacus Data Holdings,co_bfbee81a1259,First Lien,Software & Technology,8.54%,,LIBOR,6.25%,,2027-03-10,3042,1673,1641,,,,,,GSBD,2022-11-03
-Abacus Data Holdings,co_bfbee81a1259,First Lien,Software & Technology,,,LIBOR,6.25%,,2027-03-10,1220,-23,-24,,,,,,GSBD,2022-11-03
-Acquia,co_0e22e2874d2e,First Lien,Software & Technology,9.63%,,LIBOR,7.00%,,2025-10-31,42164,40837,41216,,,,,,GSBD,2022-11-03
-CFS Management LLC,co_9753633ace51,First Lien,Healthcare,9.73%,,SOFR,6.25%,,2024-07-01,2008,1992,1878,,,,,,GSBD,2022-11-03
-Checkmate Finance Merger Sub LLC,co_944c75d1f4ca,First Lien,Media & Entertainment,10.17%,,LIBOR,6.50%,,2027-12-31,31258,30696,30711,,,,,,GSBD,2022-11-03
-Checkmate Finance Merger Sub LLC,co_944c75d1f4ca,Delayed Draw,Media & Entertainment,,,LIBOR,6.50%,,2027-12-31,3140,-55,-55,,,,,,GSBD,2022-11-03
-Chronicle Bidco Inc.,co_5f1c6e818851,First Lien,Business Services,9.80%,,SOFR,6.25%,,2029-05-18,46084,44365,45162,,,,,,GSBD,2022-11-03
-Chronicle Bidco Inc.,co_5f1c6e818851,First Lien,Business Services,7.00%,,LIBOR,6.00%,,2025-11-14,7141,6819,7123,,,,,,GSBD,2022-11-03
-Chronicle Bidco Inc.,co_5f1c6e818851,Delayed Draw,Business Services,,,SOFR,6.25%,,2029-05-18,4753,-104,-95,,,,,,GSBD,2022-11-03
-CivicPlus LLC,co_e4b002026922,First Lien,Software & Technology,7.37%,2.50%,LIBOR,6.75%,,2027-08-24,6300,6178,6158,,,,,,GSBD,2022-11-03
-CivicPlus LLC,co_e4b002026922,First Lien,Software & Technology,7.37%,2.50%,LIBOR,6.75%,,2027-08-24,6247,6128,6106,,,,,,GSBD,2022-11-03
-CivicPlus LLC,co_e4b002026922,First Lien,Software & Technology,7.37%,2.50%,LIBOR,6.75%,,2027-08-24,2960,2900,2893,,,,,,GSBD,2022-11-03
-CivicPlus LLC,co_e4b002026922,First Lien,Software & Technology,6.75%,,LIBOR,6.00%,,2027-08-24,6300,6180,6158,,,,,,GSBD,2022-11-03
-CivicPlus LLC,co_e4b002026922,Delayed Draw,Software & Technology,,2.50%,LIBOR,6.75%,,2027-08-24,1217,-23,-27,,,,,,GSBD,2022-11-03
-Clearcourse Partnership Acquireco Finance Ltd.,co_5a4c63d42b67,First Lien,Software & Technology,9.44%,,SONIA,7.25%,,2028-07-25,12600,14810,13717,,,,,,GSBD,2022-11-03
-1272775 B.C. Ltd.,co_6e12f4793666,First Lien,Business Services,6.75%,,LIBOR,5.75%,,2026-11-06,9336,9219,9196,,,,,,GSBD,2022-11-03
-1272775 B.C. Ltd.,co_6e12f4793666,First Lien,Business Services,7.20%,,Prime,4.75%,,2026-11-06,139,109,108,,,,,,GSBD,2022-11-03
-1272775 B.C. Ltd.,co_6e12f4793666,First Lien,Business Services,,,LIBOR,5.75%,,2026-11-06,1151,-14,-17,,,,,,GSBD,2022-11-03
-3SI Security Systems Inc.,co_c70f0c5ad517,First Lien,Business Services,6.75%,,LIBOR,5.75%,,2023-06-16,13982,13928,13912,,,,,,GSBD,2022-11-03
-3SI Security Systems Inc.,co_c70f0c5ad517,First Lien,Business Services,6.75%,,LIBOR,5.75%,,2023-06-16,2129,2045,2118,,,,,,GSBD,2022-11-03
-A Place For Mom Inc.,co_16f303280b98,First Lien,Other,5.50%,,LIBOR,4.50%,,2026-02-10,8661,8657,8488,,,,,,GSBD,2022-11-03
-Abacus Data Holdings Inc.,co_bfbee81a1259,First Lien,Software & Technology,7.25%,,LIBOR,6.25%,,2027-03-10,16388,16024,16593,,,,,,GSBD,2022-11-03
-Abacus Data Holdings Inc.,co_bfbee81a1259,First Lien,Software & Technology,7.25%,,LIBOR,6.25%,,2027-03-10,1220,156,198,,,,,,GSBD,2022-11-03
-Abacus Data Holdings Inc.,co_bfbee81a1259,First Lien,Software & Technology,,,LIBOR,6.25%,,2027-03-10,3046,-33,38,,,,,fair_value_suspicious_vs_size,GSBD,2022-11-03
-Acquia Inc.,co_0e22e2874d2e,First Lien,Software & Technology,8.00%,,LIBOR,7.00%,,2025-10-31,42164,40565,4142,,,,,,GSBD,2022-11-03
-Chronicle Bidco Inc.,co_5f1c6e818851,Revolver,Business Services,,,LIBOR,6.00%,,2025-11-14,2180,-41,-5,,,,,,GSBD,2022-11-03
-CivicPlus LLC,co_e4b002026922,Revolver,Software & Technology,,,LIBOR,6.00%,,2027-08-24,592,-11,-13,,,,,,GSBD,2022-11-03
-CivicPlus LLC,co_e4b002026922,Revolver,Software & Technology,,,LIBOR,6.00%,,2027-08-24,2960,-28,-67,,,,,,GSBD,2022-11-03
-CloudBees Inc.,co_288c1fdb3198,First Lien,Software & Technology,5.50%,2.50%,LIBOR,7.00%,,2026-11-24,28022,26231,27461,,,,,,GSBD,2022-11-03
-CloudBees Inc.,co_288c1fdb3198,Revolver,Software & Technology,,,LIBOR,7.00%,,2026-11-24,12900,-572,,,,,,,GSBD,2022-11-03
-Convene 237 Park Avenue LLC,co_177c683c2fde,First Lien,Real Estate,,2.00%,LIBOR,9.50%,,2024-08-30,59216,53038,46188,,,,,,GSBD,2022-11-03
-Convene 237 Park Avenue LLC,co_177c683c2fde,First Lien,Real Estate,,2.00%,LIBOR,9.50%,,2024-08-30,17408,15534,13578,,,,,,GSBD,2022-11-03
-Convene 237 Park Avenue LLC,co_177c683c2fde,Revolver,Real Estate,,,LIBOR,15.00%,,2024-08-30,6100,,-122,,,,,,GSBD,2022-11-03
-CORA Health Holdings Corp.,co_74b44b473e5e,First Lien,Healthcare,6.75%,,LIBOR,5.75%,,2027-06-15,22663,22349,22380,,,,,,GSBD,2022-11-03
-WhiteWater Holding Company LLC,co_37e39aba07ba,First Lien,Business Services,6.50%,,LIBOR,5.75%,,2027-12-21,17519,17170,17169,,,,,,GSBD,2022-11-03
-WhiteWater Holding Company LLC,co_37e39aba07ba,First Lien,Business Services,6.50%,,LIBOR,5.75%,,2027-12-21,5840,4266,4251,,,,,,GSBD,2022-11-03
-WhiteWater Holding Company LLC,co_37e39aba07ba,Revolver,Business Services,,,LIBOR,5.75%,,2027-12-21,2340,-47,-47,,,,,,GSBD,2022-11-03
-WhiteWater Holding Company LLC,co_37e39aba07ba,Revolver,Business Services,,,LIBOR,5.75%,,2027-12-21,5840,-58,-117,,,,,,GSBD,2022-11-03
-Wine.com LLC,co_841f07d85e55,First Lien,Food & Beverage,8.00%,,LIBOR,7.00%,,2024-11-14,15400,14983,15400,,,,,,GSBD,2022-11-03
-Wine.com LLC,co_841f07d85e55,First Lien,Food & Beverage,8.00%,,LIBOR,7.00%,,2024-11-14,3700,3641,3700,,,,,,GSBD,2022-11-03
+company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
+"CFS Management, LLC",,Healthcare,9.73%,,SOFR,6.25%,,,2024-07-01,2008,1992,1878,,1992,,,,,,GSBD,2022-11-03
+"Checkmate Finance Merger Sub, LLC",,Media & Entertainment,10.17%,,LIBOR,6.50%,,,2027-12-31,31258,30696,30711,,30696,,,,,,GSBD,2022-11-03
+"Checkmate Finance Merger Sub, LLC",,Media & Entertainment,,,LIBOR,6.50%,,,2027-12-31,3140,55,55,,55,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2022-11-03
+Chronicle Bidco Inc.,,Business Services,9.80%,,SOFR,6.25%,,,2029-05-18,46084,44365,45162,,44365,,,,,,GSBD,2022-11-03
+Chronicle Bidco Inc.,,Business Services,,,SOFR,6.25%,,,2029-05-18,4753,104,95,,104,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2022-11-03
+CivicPlus LLC,,Software & Technology,9.87%,,LIBOR,6.75%,,,2027-08-24,6300,6178,6158,,6178,,,,,,GSBD,2022-11-03
+CivicPlus LLC,,Software & Technology,9.87%,,LIBOR,6.75%,,,2027-08-24,6247,6128,6106,,6128,,,,,,GSBD,2022-11-03
+CivicPlus LLC,,Software & Technology,9.87%,,LIBOR,6.75%,,,2027-08-24,2960,2900,2893,,2900,,,,,,GSBD,2022-11-03
+CivicPlus LLC,,Software & Technology,,,LIBOR,6.75%,,,2027-08-24,1217,23,27,,23,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2022-11-03
+Clearcourse Partnership Acquireco Finance Ltd.,,Software & Technology,9.44%,,,,,,2028-07-25,12600,14810,13717,,14810,,,,,,GSBD,2022-11-03
+Clearcourse Partnership Acquireco Finance Ltd.,,Software & Technology,8.94%,,,,,,2028-07-25,11400,3807,3752,,3807,,,,,,GSBD,2022-11-03
+"CloudBees, Inc.",,Software & Technology,9.71%,,LIBOR,7.00%,,,2026-11-24,28558,27002,28058,,27002,,,,,,GSBD,2022-11-03
+"CloudBees, Inc.",,Software & Technology,9.71%,,LIBOR,7.00%,,,2026-11-24,12941,11478,11977,,11478,,,,,,GSBD,2022-11-03
+"Coding Solutions Acquisition, Inc.",,Healthcare,8.78%,,SOFR,5.75%,,,2028-05-11,14867,14582,14569,,14582,,,,,,GSBD,2022-11-03
+"Coding Solutions Acquisition, Inc.",,Healthcare,8.78%,,SOFR,5.75%,,,2028-05-11,2120,279,276,,279,,,,,,GSBD,2022-11-03
+"Coding Solutions Acquisition, Inc.",,Healthcare,,,SOFR,5.75%,,,2028-05-11,4460,42,89,,42,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2022-11-03
+CORA Health Holdings Corp.,,Healthcare,8.79%,,LIBOR,5.75%,,,2027-06-15,22492,22217,21368,,22217,,,,,,GSBD,2022-11-03
+CORA Health Holdings Corp.,,Healthcare,8.08%,,LIBOR,5.75%,,,2027-06-15,8895,326,64,,326,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2022-11-03
+CorePower Yoga LLC,,Consumer & Retail,10.67%,,LIBOR,7.00%,,,2025-05-14,25940,24105,21206,,24105,,,,,,GSBD,2022-11-03
+CorePower Yoga LLC,,Consumer & Retail,,,LIBOR,7.00%,,,2025-05-14,1687,97,308,,97,,,,,,GSBD,2022-11-03
+Coretrust Purchasing Group LLC,,Financial Services,9.78%,,SOFR,6.75%,,,2029-10-01,774,751,751,,751,,,,,,GSBD,2022-11-03
+Coretrust Purchasing Group LLC,,Financial Services,,,SOFR,6.75%,,,2029-10-01,113,2,2,,2,,,,,,GSBD,2022-11-03
+Coretrust Purchasing Group LLC,,Financial Services,,,SOFR,6.75%,,,2029-10-01,113,3,3,,3,,,,,,GSBD,2022-11-03
+CST Buyer Company,,Consumer & Retail,8.62%,,LIBOR,5.50%,,,2025-10-03,28163,27493,27881,,27493,,,,,,GSBD,2022-11-03
+CST Buyer Company,,Consumer & Retail,8.62%,,LIBOR,5.50%,,,2025-10-27,14744,14525,14596,,14525,,,,,,GSBD,2022-11-03
+CST Buyer Company,,Consumer & Retail,,,LIBOR,5.50%,,,2025-10-03,2170,9,22,,9,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2022-11-03
+DECA Dental Holdings LLC,,Healthcare,9.42%,,LIBOR,5.75%,,,2028-08-28,21453,21078,20595,,21078,,,,,,GSBD,2022-11-03
+DECA Dental Holdings LLC,,Healthcare,9.42%,,LIBOR,5.75%,,,2028-08-28,7390,2175,1963,,2175,,,,,,GSBD,2022-11-03
+DECA Dental Holdings LLC,,Healthcare,9.42%,,LIBOR,5.75%,,,2027-08-26,1711,770,730,,770,,,,,,GSBD,2022-11-03
+Diligent Corp.,,Business Services,7.25%,,LIBOR,6.25%,,,2025-08-04,37772,42846,36926,,42846,,,,,,GSBD,2022-11-03
+Diligent Corp.,,Business Services,9.92%,,LIBOR,6.25%,,,2025-08-04,24414,23653,24353,,23653,,,,,,GSBD,2022-11-03
+Diligent Corp.,,Business Services,9.44%,,LIBOR,6.25%,,,2025-08-04,3100,1508,1542,,1508,,,,,,GSBD,2022-11-03
+"Elemica Parent, Inc.",,Chemicals & Materials,9.07%,,LIBOR,5.50%,,,2025-09-18,6966,6616,6826,,6616,,,,,,GSBD,2022-11-03
+"Elemica Parent, Inc.",,Chemicals & Materials,8.64%,,LIBOR,5.50%,,,2025-09-18,1485,1455,1456,,1455,,,,,,GSBD,2022-11-03
+"Elemica Parent, Inc.",,Chemicals & Materials,8.79%,,LIBOR,5.50%,,,2025-09-18,1366,1314,1338,,1314,,,,,,GSBD,2022-11-03
+"Elemica Parent, Inc.",,Chemicals & Materials,8.57%,,LIBOR,5.50%,,,2025-09-18,930,678,688,,678,,,,,,GSBD,2022-11-03
+"Elemica Parent, Inc.",,Chemicals & Materials,8.79%,,LIBOR,5.50%,,,2025-09-18,556,545,545,,545,,,,,,GSBD,2022-11-03
+"Eptam Plastics, Ltd.",,Healthcare,8.63%,,SOFR,5.50%,,,2025-12-06,10396,10047,10058,,10047,,,,,,GSBD,2022-11-03
+"Eptam Plastics, Ltd.",,Healthcare,9.17%,,,,,,2025-12-06,5682,5570,5569,,5570,,,,,,GSBD,2022-11-03
+"Eptam Plastics, Ltd.",,Healthcare,8.63%,,SOFR,5.50%,,,2025-12-06,4890,4828,4731,,4828,,,,,,GSBD,2022-11-03
+"Eptam Plastics, Ltd.",,Healthcare,8.63%,,SOFR,5.50%,,,2025-12-06,4480,4401,4335,,4401,,,,,,GSBD,2022-11-03
+"Eptam Plastics, Ltd.",,Healthcare,,,SOFR,5.50%,,,2025-12-06,2269,74,74,,74,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2022-11-03
+"ESO Solutions, Inc.",,Healthcare,10.56%,,SOFR,7.00%,,,2027-05-03,39908,39259,39309,,39259,,,,,,GSBD,2022-11-03
+"ESO Solutions, Inc.",,Healthcare,,,SOFR,7.00%,,,2027-05-03,3620,56,54,,56,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2022-11-03
+Everest Clinical Research Corp.,,Business Services,,,SOFR,6.00%,,,2029-09-01,5800,,,,,,,,,,GSBD,2022-11-03
+"Experity, Inc.",,Healthcare,9.42%,,LIBOR,5.75%,,,2028-02-24,912,908,907,,908,,,,,,GSBD,2022-11-03
+Four Seasons Heating And Air Conditioning Inc.,,Consumer & Retail,8.49%,,LIBOR,5.75%,,,2026-11-17,34073,33639,33476,,33639,,,,,,GSBD,2022-11-03
+Fullsteam Operations LLC,,Financial Services,11.17%,,LIBOR,7.50%,,,2027-10-04,,,,,,,,,,,GSBD,2022-11-03
+Fullsteam Operations LLC,,Financial Services,,,LIBOR,7.50%,,,2027-10-04,,,,,,,,,,,GSBD,2022-11-03
+"Gainsight, Inc.",,Software & Technology,9.56%,,LIBOR,6.75%,,,2027-07-30,,,,,,,,,,,GSBD,2022-11-03
+"Gainsight, Inc.",,Software & Technology,,,LIBOR,6.75%,,,2027-07-30,,,,,,,,,,,GSBD,2022-11-03
+GHA Buyer Inc.,,Healthcare,10.12%,,LIBOR,7.00%,,,2025-06-24,,,,,,,,,,,GSBD,2022-11-03
+"GovDelivery Holdings, LLC",,Software & Technology,10.25%,,LIBOR,6.50%,,,2027-01-29,,,,,,,,,,,GSBD,2022-11-03
+"GovDelivery Holdings, LLC",,Software & Technology,10.17%,,LIBOR,6.00%,,,2027-01-29,,,,,,,,,,,GSBD,2022-11-03
+"GovDelivery Holdings, LLC",,Software & Technology,,,LIBOR,6.50%,,,2027-01-29,,,,,,,,,,,GSBD,2022-11-03
+"Governmentjobs.com, Inc.",,Software & Technology,8.62%,,LIBOR,5.50%,,,2028-12-01,,,,,,,,,,,GSBD,2022-11-03
+"Governmentjobs.com, Inc.",,Software & Technology,,,LIBOR,5.50%,,,2027-12-02,,,,,,,,,,,GSBD,2022-11-03
+"Governmentjobs.com, Inc.",,Software & Technology,,,LIBOR,5.50%,,,2028-12-01,,,,,,,,,,,GSBD,2022-11-03
+"GS AcquisitionCo, Inc.",,Financial Services,9.85%,,LIBOR,5.75%,,,2026-05-22,,,,,,,,,,,GSBD,2022-11-03
+"GS AcquisitionCo, Inc.",,Financial Services,9.46%,,LIBOR,5.75%,,,2026-05-22,,,,,,,,,,,GSBD,2022-11-03
+"GS AcquisitionCo, Inc.",,Financial Services,,,LIBOR,5.75%,,,2026-05-22,,,,,,,,,,,GSBD,2022-11-03
+"Halo Branded Solutions, Inc.",,Business Services,7.62%,,LIBOR,4.50%,,,2025-06-30,,,,,,,,,,,GSBD,2022-11-03
+"HealthEdge Software, Inc.",,Healthcare,10.48%,,LIBOR,7.00%,,,2026-04-09,,,,,,,,,,,GSBD,2022-11-03
+"HealthEdge Software, Inc.",,Healthcare,,,LIBOR,7.00%,,,2026-04-09,,,,,,,,,,,GSBD,2022-11-03
+"Helios Buyer, Inc.",,Consumer & Retail,9.12%,,LIBOR,6.00%,,,2026-12-15,,,,,,,,,,,GSBD,2022-11-03
+"Helios Buyer, Inc.",,Consumer & Retail,,,LIBOR,6.00%,,,2026-12-15,,,,,,,,,,,GSBD,2022-11-03
+Hollander Intermediate LLC,,Consumer & Retail,11.89%,,SOFR,8.75%,,,2026-09-21,,,,,,,,,,,GSBD,2022-11-03
+"Honor HN Buyer, Inc.",,Healthcare,9.70%,,SOFR,6.00%,,,2027-10-15,,,,,,,,,,,GSBD,2022-11-03
+"Honor HN Buyer, Inc.",,Healthcare,,,SOFR,6.00%,,,2027-10-15,,,,,,,,,,,GSBD,2022-11-03
+HowlCO LLC,,Real Estate,8.90%,,LIBOR,6.00%,,,2026-10-23,,,,,,,,,,,GSBD,2022-11-03
+HowlCO LLC,,Real Estate,8.96%,,LIBOR,6.00%,,,2026-10-23,,,,,,,,,,,GSBD,2022-11-03
+HowlCO LLC,,Real Estate,9.14%,,LIBOR,6.00%,,,2026-10-23,,,,,,,,,,,GSBD,2022-11-03
+"HS4 AcquisitionCo, Inc.",,Food & Beverage,10.42%,,LIBOR,6.75%,,,2025-07-09,,,,,,,,,,,GSBD,2022-11-03
+"HS4 AcquisitionCo, Inc.",,Food & Beverage,10.41%,,LIBOR,6.75%,,,2025-07-09,,,,,,,,,,,GSBD,2022-11-03
+"iCIMS, Inc.",,Software & Technology,9.49%,,SOFR,6.75%,,,2028-08-18,,,,,,,,,,,GSBD,2022-11-03
+"iCIMS, Inc.",,Software & Technology,,,SOFR,6.75%,,,2028-08-18,,,,,,,,,,,GSBD,2022-11-03
+"Intelligent Medical Objects, Inc.",,Healthcare,7.65%,,SOFR,6.00%,,,2029-05-11,,,,,,,,,,,GSBD,2022-11-03
+"Intelligent Medical Objects, Inc.",,Healthcare,8.72%,,SOFR,6.00%,,,2028-05-11,,,,,,,,,,,GSBD,2022-11-03
+"Intelligent Medical Objects, Inc.",,Healthcare,,,SOFR,6.00%,,,2029-05-11,,,,,,,,,,,GSBD,2022-11-03
+"Internet Truckstop Group, LLC",,Transportation & Logistics,9.18%,,LIBOR,5.50%,,,2025-04-02,,,,,,,,,,,GSBD,2022-11-03
+"Internet Truckstop Group, LLC",,Transportation & Logistics,,,LIBOR,5.50%,,,2025-04-02,,,,,,,,,,,GSBD,2022-11-03
+"Iracore International Holdings, Inc.",,Energy,12.75%,,LIBOR,9.00%,,,2024-04-12,,,,,,,,,,,GSBD,2022-11-03
+Jill Acquisition LLC,,Consumer & Retail,7.81%,,LIBOR,5.00%,,,2024-05-08,,,,,,,,,,,GSBD,2022-11-03
+Kaseya Inc.,,Software & Technology,8.29%,,SOFR,5.75%,,,2029-06-25,,,,,,,,,,,GSBD,2022-11-03
+Kaseya Inc.,,Software & Technology,,,SOFR,5.75%,,,2029-06-25,,,,,,,,,,,GSBD,2022-11-03
+Kawa Solar Holdings Ltd.,,Industrials,,,,,,,2022-12-31,,,,,,,,,,,GSBD,2022-11-03
+"LCG Vardiman Black, LLC",,Healthcare,9.70%,,SOFR,7.00%,,,2027-03-18,,,,,,,,,,,GSBD,2022-11-03
+"Lithium Technologies, Inc.",,Media & Entertainment,10.53%,,SOFR,8.00%,,,2024-01-03,,,,,,,,,,,GSBD,2022-11-03
+"LS Clinical Services Holdings, Inc.",,Healthcare,9.82%,,LIBOR,6.75%,,,2027-12-16,,,,,,,,,,,GSBD,2022-11-03
+"LS Clinical Services Holdings, Inc.",,Healthcare,9.71%,,LIBOR,6.75%,,,2026-12-16,,,,,,,,,,,GSBD,2022-11-03
+"MedeAnalytics, Inc.",,Healthcare,11.70%,,SOFR,8.00%,,,2026-10-09,,,,,,,,,,,GSBD,2022-11-03
+"MerchantWise Solutions, LLC",,Financial Services,9.31%,,SOFR,6.00%,,,2028-06-01,,,,,,,,,,,GSBD,2022-11-03
+"MerchantWise Solutions, LLC",,Financial Services,8.95%,,SOFR,6.00%,,,2028-06-01,,,,,,,,,,,GSBD,2022-11-03
+"MerchantWise Solutions, LLC",,Financial Services,8.10%,,SOFR,6.00%,,,2028-06-01,,,,,,,,,,,GSBD,2022-11-03
+"Mervin Manufacturing, Inc.",,Healthcare,10.62%,,LIBOR,7.50%,,,2022-11-15,,,,,,,,,,,GSBD,2022-11-03
+"Millstone Medical Outsourcing, LLC",,Healthcare,8.89%,,LIBOR,5.25%,,,2027-12-15,,,,,,,,,,,GSBD,2022-11-03
+"Millstone Medical Outsourcing, LLC",,Healthcare,9.95%,,,,,,2027-12-15,,,,,,,,,,,GSBD,2022-11-03
+"MMIT Holdings, LLC",,Healthcare,9.92%,,LIBOR,6.25%,,,2027-09-15,,,,,,,,,,,GSBD,2022-11-03
+"MMIT Holdings, LLC",,Healthcare,9.50%,,LIBOR,6.25%,,,2027-09-15,,,,,,,,,,,GSBD,2022-11-03
+MRI Software LLC,,Real Estate,9.17%,,LIBOR,5.50%,,,2026-02-10,,,,,,,,,,,GSBD,2022-11-03
+MRI Software LLC,,Real Estate,,,LIBOR,5.50%,,,2026-02-10,,,,,,,,,,,GSBD,2022-11-03
+"NFM & J, LP.",,Business Services,8.87%,,LIBOR,5.75%,,,2027-11-30,,,,,,,,,,,GSBD,2022-11-03
+"NFM & J, LP.",,Business Services,8.86%,,LIBOR,5.75%,,,2027-11-30,,,,,,,,,,,GSBD,2022-11-03
+"NFM & J, LP.",,Business Services,7.15%,,LIBOR,5.75%,,,2027-11-30,,,,,,,,,,,GSBD,2022-11-03
+One GI LLC,,Healthcare,9.87%,,LIBOR,6.75%,,,2025-12-22,,,,,,,,,,,GSBD,2022-11-03
+One GI LLC,,Healthcare,,,LIBOR,6.75%,,,2025-12-22,,,,,,,,,,,GSBD,2022-11-03
+"Output Services Group, Inc.",,Consumer & Retail,8.30%,,SOFR,5.25%,,,2026-06-29,,,,,,,,,,,GSBD,2022-11-03
+"PDDS Holdco, Inc.",,Healthcare,9.48%,,SOFR,6.75%,,,2028-07-18,,,,,,,,,,,GSBD,2022-11-03
+"PDDS Holdco, Inc.",,Healthcare,9.89%,,SOFR,6.75%,,,2028-07-18,,,,,,,,,,,GSBD,2022-11-03
+"PDDS Holdco, Inc.",,Healthcare,,,SOFR,6.75%,,,2028-07-18,,,,,,,,,,,GSBD,2022-11-03
+Picture Head Midco LLC,,Media & Entertainment,9.90%,,SOFR,6.75%,,,2023-08-31,,,,,,,,,,,GSBD,2022-11-03
+"Pioneer Buyer I, LLC",,Software & Technology,10.67%,,LIBOR,7.00%,,,2028-11-01,,,,,,,,,,,GSBD,2022-11-03
+"Pioneer Buyer I, LLC",,Software & Technology,,,LIBOR,7.00%,,,2027-11-01,,,,,,,,,,,GSBD,2022-11-03
+"PlanSource Holdings, Inc.",,Healthcare,9.55%,,LIBOR,6.25%,,,2025-04-22,,,,,,,,,,,GSBD,2022-11-03
+"PlanSource Holdings, Inc.",,Healthcare,,,LIBOR,6.25%,,,2025-04-22,,,,,,,,,,,GSBD,2022-11-03
+"Pluralsight, Inc.",,Business Services,10.68%,,LIBOR,8.00%,,,2027-04-06,,,,,,,,,,,GSBD,2022-11-03
+"Pluralsight, Inc.",,Business Services,,,LIBOR,8.00%,,,2027-04-06,,,,,,,,,,,GSBD,2022-11-03
+"Premier Care Dental Management, LLC",,Healthcare,8.87%,,LIBOR,5.75%,,,2028-08-05,,,,,,,,,,,GSBD,2022-11-03
+"Premier Care Dental Management, LLC",,Healthcare,,,LIBOR,5.75%,,,2027-08-05,,,,,,,,,,,GSBD,2022-11-03
+"Premier Imaging, LLC",,Healthcare,8.80%,,LIBOR,5.75%,,,2025-01-02,,,,,,,,,,,GSBD,2022-11-03
+"Premier Imaging, LLC",,Healthcare,8.87%,,LIBOR,5.75%,,,2025-01-02,,,,,,,,,,,GSBD,2022-11-03
+"Premier Imaging, LLC",,Healthcare,8.85%,,LIBOR,5.75%,,,2025-01-02,,,,,,,,,,,GSBD,2022-11-03
+Professional Physical Therapy,,Healthcare,,,LIBOR,8.50%,,,2022-12-16,,,,,,,,,,,GSBD,2022-11-03
+"Project Eagle Holdings, LLC",,Aerospace & Defense,9.62%,,LIBOR,6.50%,,,2026-07-06,,,,,,,,,,,GSBD,2022-11-03
+"Project Eagle Holdings, LLC",,Aerospace & Defense,,,LIBOR,6.50%,,,2026-07-06,,,,,,,,,,,GSBD,2022-11-03
+Prophix Software Inc.,,Financial Services,9.31%,,LIBOR,6.50%,,,2026-01-30,,,,,,,,,,,GSBD,2022-11-03
+Prophix Software Inc.,,Financial Services,,,LIBOR,6.50%,,,2026-01-30,,,,,,,,,,,GSBD,2022-11-03
+"PT Intermediate Holdings III, LLC",,Distribution & Wholesale,9.17%,,LIBOR,5.50%,,,2028-11-01,,,,,,,,,,,GSBD,2022-11-03
+"Purfoods, LLC",,Healthcare,9.16%,,LIBOR,6.25%,,,2026-08-12,,,,,,,,,,,GSBD,2022-11-03
+"Purfoods, LLC",,Healthcare,9.26%,,LIBOR,6.25%,,,2026-08-12,,,,,,,,,,,GSBD,2022-11-03
+"Qualawash Holdings, LLC",,Business Services,7.96%,,LIBOR,5.50%,,,2026-08-31,,,,,,,,,,,GSBD,2022-11-03
+"Qualawash Holdings, LLC",,Business Services,8.49%,,LIBOR,5.50%,,,2026-08-31,,,,,,,,,,,GSBD,2022-11-03
+"Qualawash Holdings, LLC",,Business Services,,,LIBOR,5.50%,,,2026-08-31,,,,,,,,,,,GSBD,2022-11-03
+"Riverpoint Medical, LLC",,Healthcare,8.65%,,LIBOR,5.00%,,,2025-06-21,,,,,,,,,,,GSBD,2022-11-03
+"Riverpoint Medical, LLC",,Healthcare,,,LIBOR,5.00%,,,2025-06-21,,,,,,,,,,,GSBD,2022-11-03
+Rodeo Buyer Company,,Business Services,9.37%,,LIBOR,6.25%,,,2027-05-25,,,,,,,,,,,GSBD,2022-11-03
+Rodeo Buyer Company,,Business Services,,,LIBOR,6.25%,,,2027-05-25,,,,,,,,,,,GSBD,2022-11-03
+"Rubrik,Inc.",,Software & Technology,10.25%,,SOFR,6.50%,,,2027-06-10,,,,,,,,,,,GSBD,2022-11-03
+"Rubrik,Inc.",,Software & Technology,10.75%,,SOFR,7.00%,,,2027-06-10,,,,,,,,,,,GSBD,2022-11-03
+"Smarsh, Inc.",,Software & Technology,10.05%,,SOFR,6.50%,,,2029-02-16,,,,,,,,,,,GSBD,2022-11-03
+"Smarsh, Inc.",,Software & Technology,,,SOFR,6.50%,,,2029-02-16,,,,,,,,,,,GSBD,2022-11-03
+"Southeast Mechanical, LLC",,Consumer & Retail,9.15%,,SOFR,6.11%,,,2027-07-06,,,,,,,,,,,GSBD,2022-11-03
+"Southeast Mechanical, LLC",,Consumer & Retail,,,SOFR,6.11%,,,2027-07-06,,,,,,,,,,,GSBD,2022-11-03
+"SPay, Inc.",,Media & Entertainment,12.37%,,LIBOR,9.25%,,,2024-06-17,,,,,,,,,,,GSBD,2022-11-03
+"SPay, Inc.",,Media & Entertainment,12.06%,,LIBOR,9.25%,,,2024-06-17,,,,,,,,,,,GSBD,2022-11-03
+"SPay, Inc.",,Media & Entertainment,11.67%,,LIBOR,9.25%,,,2024-06-17,,,,,,,,,,,GSBD,2022-11-03
+"SpendMend, LLC",,Healthcare,8.63%,,SOFR,5.50%,,,2028-03-01,,,,,,,,,,,GSBD,2022-11-03
+"StarCompliance Intermediate, LLC",,Financial Services,10.42%,,LIBOR,6.75%,,,2027-01-12,,,,,,,,,,,GSBD,2022-11-03
+"StarCompliance Intermediate, LLC",,Financial Services,9.87%,,LIBOR,6.75%,,,2027-01-12,,,,,,,,,,,GSBD,2022-11-03
+"Sundance Group Holdings, Inc.",,Software & Technology,8.54%,,LIBOR,6.25%,,,2027-07-02,,,,,,,,,,,GSBD,2022-11-03
+"Sundance Group Holdings, Inc.",,Software & Technology,9.34%,,LIBOR,6.25%,,,2027-07-02,,,,,,,,,,,GSBD,2022-11-03
+"Sundance Group Holdings, Inc.",,Software & Technology,,,LIBOR,6.25%,,,2027-07-02,,,,,,,,,,,GSBD,2022-11-03
+"Sunstar Insurance Group, LLC",,Insurance,9.69%,,SOFR,6.00%,,,2026-10-09,,,,,,,,,,,GSBD,2022-11-03
+"Sunstar Insurance Group, LLC",,Insurance,,,SOFR,6.00%,,,2026-10-09,,,,,,,,,,,GSBD,2022-11-03
+"Superman Holdings, LLC",,Industrials,9.80%,,LIBOR,6.13%,,,2027-08-31,,,,,,,,,,,GSBD,2022-11-03
+"Superman Holdings, LLC",,Industrials,,,LIBOR,8.00%,,,2026-08-31,,,,,,,,,,,GSBD,2022-11-03
+Sweep Purchaser LLC,,Business Services,9.42%,,LIBOR,5.75%,,,2026-11-30,,,,,,,,,,,GSBD,2022-11-03
+Sweep Purchaser LLC,,Business Services,8.60%,,LIBOR,5.75%,,,2026-11-30,,,,,,,,,,,GSBD,2022-11-03
+Sweep Purchaser LLC,,Business Services,8.61%,,LIBOR,5.75%,,,2026-11-30,,,,,,,,,,,GSBD,2022-11-03
+Sweep Purchaser LLC,,Business Services,8.65%,,LIBOR,5.75%,,,2026-11-30,,,,,,,,,,,GSBD,2022-11-03
+Sweep Purchaser LLC,,Business Services,,,LIBOR,5.75%,,,2026-11-30,,,,,,,,,,,GSBD,2022-11-03
+"Syntellis Performance Solutions, LLC",,Healthcare,9.53%,,SOFR,6.50%,,,2027-08-02,,,,,,,,,,,GSBD,2022-11-03
+"The Center for Orthopedic and Research Excellence, Inc.",,Healthcare,8.73%,,SOFR,6.00%,,,2025-08-15,,,,,,,,,,,GSBD,2022-11-03
+"The Center for Orthopedic and Research Excellence, Inc.",,Healthcare,8.88%,,SOFR,6.00%,,,2025-08-15,,,,,,,,,,,GSBD,2022-11-03
+"The Center for Orthopedic and Research Excellence, Inc.",,Healthcare,8.75%,,SOFR,5.50%,,,2025-08-15,,,,,,,,,,,GSBD,2022-11-03
+"The Center for Orthopedic and Research Excellence, Inc.",,Healthcare,8.35%,,SOFR,6.00%,,,2025-08-15,,,,,,,,,,,GSBD,2022-11-03
+"The Center for Orthopedic and Research Excellence, Inc.",,Healthcare,,,SOFR,6.00%,,,2025-08-15,,,,,,,,,,,GSBD,2022-11-03
+"Thrasio, LLC",,Consumer & Retail,11.17%,,LIBOR,7.00%,,,2026-12-18,,,,,,,,,,,GSBD,2022-11-03
+"Thrasio, LLC",,Consumer & Retail,,,LIBOR,7.00%,,,2026-12-18,,,,,,,,,,,GSBD,2022-11-03
+Tronair Parent Inc.,,Transportation & Logistics,9.16%,,LIBOR,6.25%,,,2023-09-08,,,,,,,,,,,GSBD,2022-11-03
+USN Opco LLC,,Healthcare,8.56%,,SOFR,5.50%,,,2026-12-21,,,,,,,,,,,GSBD,2022-11-03
+USN Opco LLC,,Healthcare,8.57%,,SOFR,5.50%,,,2026-12-21,,,,,,,,,,,GSBD,2022-11-03
+USN Opco LLC,,Healthcare,8.65%,,SOFR,5.50%,,,2026-12-21,,,,,,,,,,,GSBD,2022-11-03
+"Viant Medical Holdings, Inc.",,Healthcare,9.37%,,LIBOR,6.25%,,,2025-07-02,,,,,,,,,,,GSBD,2022-11-03
+"Volt Bidco, Inc.",,Energy,10.05%,,SOFR,6.50%,,,2027-08-11,,,,,,,,,,,GSBD,2022-11-03
+"Volt Bidco, Inc.",,Energy,9.98%,,SOFR,6.50%,,,2027-08-11,,,,,,,,,,,GSBD,2022-11-03
+"Volt Bidco, Inc.",,Energy,,,SOFR,6.50%,,,2027-08-11,,,,,,,,,,,GSBD,2022-11-03
+"VRC Companies, LLC",,Business Services,8.38%,,LIBOR,5.50%,,,2027-06-29,,,,,,,,,,,GSBD,2022-11-03
+"VRC Companies, LLC",,Business Services,8.79%,,LIBOR,5.50%,,,2027-06-29,,,,,,,,,,,GSBD,2022-11-03
+"VRC Companies, LLC",,Business Services,10.75%,,,,,,2027-06-29,,,,,,,,,,,GSBD,2022-11-03
+"WebPT, Inc.",,Healthcare,9.82%,,LIBOR,6.75%,,,2028-01-18,,,,,,,,,,,GSBD,2022-11-03
+"WebPT, Inc.",,Healthcare,9.49%,,LIBOR,6.75%,,,2028-01-18,,,,,,,,,,,GSBD,2022-11-03
+"WebPT, Inc.",,Healthcare,9.54%,,LIBOR,6.75%,,,2028-01-18,,,,,,,,,,,GSBD,2022-11-03
+"WebPT, Inc.",,Healthcare,,,LIBOR,6.75%,,,2028-01-18,,,,,,,,,,,GSBD,2022-11-03
+"Wellness AcquisitionCo, Inc.",,Software & Technology,8.62%,,LIBOR,5.50%,,,2027-01-20,,,,,,,,,,,GSBD,2022-11-03
+"Wellness AcquisitionCo, Inc.",,Software & Technology,,,LIBOR,5.50%,,,2027-01-20,,,,,,,,,,,GSBD,2022-11-03
+Whitewater Holding Company LLC,,Consumer & Retail,9.42%,,LIBOR,5.75%,,,2027-12-21,,,,,,,,,,,GSBD,2022-11-03
+Whitewater Holding Company LLC,,Consumer & Retail,8.98%,,LIBOR,6.00%,,,2027-12-21,,,,,,,,,,,GSBD,2022-11-03
+Whitewater Holding Company LLC,,Consumer & Retail,8.92%,,LIBOR,5.75%,,,2027-12-21,,,,,,,,,,,GSBD,2022-11-03
+Whitewater Holding Company LLC,,Consumer & Retail,9.39%,,LIBOR,5.75%,,,2027-12-21,,,,,,,,,,,GSBD,2022-11-03
+"Wine.com, LLC",,Food & Beverage,9.94%,,LIBOR,7.00%,,,2024-11-14,,,,,,,,,,,GSBD,2022-11-03
+"WorkForce Software, LLC",,Software & Technology,10.32%,,LIBOR,7.25%,,,2025-07-31,,,,,,,,,,,GSBD,2022-11-03
+"WorkForce Software, LLC",,Software & Technology,7.32%,,LIBOR,4.25%,,,2025-07-31,,,,,,,,,,,GSBD,2022-11-03
+"WorkForce Software, LLC",,Software & Technology,9.57%,,LIBOR,6.50%,,,2025-07-31,,,,,,,,,,,GSBD,2022-11-03
+"WSO2, Inc.",,Software & Technology,10.19%,,LIBOR,7.50%,,,2026-11-04,,,,,,,,,,,GSBD,2022-11-03
+Xactly Corp.,,Software & Technology,10.06%,,LIBOR,7.25%,,,2023-07-31,,,,,,,,,,,GSBD,2022-11-03
+Xactly Corp.,,Software & Technology,10.20%,,LIBOR,7.25%,,,2023-07-31,,,,,,,,,,,GSBD,2022-11-03
+"Zarya Intermediate, LLC",,Real Estate,10.02%,,SOFR,6.50%,,,2027-07-01,,,,,,,,,,,GSBD,2022-11-03
+"Zarya Intermediate, LLC",,Real Estate,,,SOFR,6.50%,,,2027-07-01,,,,,,,,,,,GSBD,2022-11-03
+"Zodiac Intermediate, LLC",,Healthcare,10.81%,,LIBOR,8.00%,,,2026-12-21,,,,,,,,,,,GSBD,2022-11-03
+"Zodiac Intermediate, LLC",,Healthcare,,,LIBOR,8.00%,,,2025-12-22,,,,,,,,,,,GSBD,2022-11-03
+"Doxim, Inc.",First Lien,Financial Services,9.12%,,LIBOR,6.00%,,,2024-02-28,,,,,,,,,,,GSBD,2022-11-03
+"Doxim, Inc.",First Lien,Financial Services,9.83%,,LIBOR,6.75%,,,2024-02-28,,,,,,,,,,,GSBD,2022-11-03
+"Doxim, Inc.",First Lien,Financial Services,10.08%,,LIBOR,7.00%,,,2024-02-28,,,,,,,,,,,GSBD,2022-11-03
+"Doxim, Inc.",First Lien,Financial Services,10.82%,,LIBOR,8.00%,,,2024-02-28,,,,,,,,,,,GSBD,2022-11-03
+"Doxim, Inc.",First Lien,Financial Services,11.12%,,LIBOR,8.00%,,,2024-02-28,,,,,,,,,,,GSBD,2022-11-03
+"EDB Parent, LLC",First Lien,Software & Technology,9.11%,,SOFR,6.00%,,,2028-07-07,,,,,,,,,,,GSBD,2022-11-03
+"EDB Parent, LLC",First Lien,Software & Technology,,,SOFR,6.00%,,,2028-07-07,,,,,,,,,,,GSBD,2022-11-03
+2nd Lien/Senior Secured Debt -14.06%,First Lien,2nd Lien/Senior Secured Debt -14.06%,14.06%,,,,,,,,,,,,,,,,,GSBD,2022-11-03
+"Animal Supply Intermediate, LLC",First Lien,Distribution & Wholesale,,,,,,,2025-11-14,,,,,,,,,,,GSBD,2022-11-03
+"Bolttech Mannings, Inc.",First Lien,Business Services,,,SOFR,8.00%,,,2023-08-20,,,,,,,,,,,GSBD,2022-11-03
+"Chase Industries, Inc.",First Lien,Industrials,,,,,,,2025-11-11,,,,,,,,,,,GSBD,2022-11-03
+"Chase Industries, Inc.",First Lien,Industrials,,,,,,,2026-05-11,,,,,,,,,,,GSBD,2022-11-03
+Genesis Acquisition Co.,First Lien,Financial Services,9.79%,,LIBOR,7.50%,,,2025-07-31,,,,,,,,,,,GSBD,2022-11-03
+IHS Intermediate Inc.,First Lien,Healthcare,,,LIBOR,8.25%,,,2022-07-20,,,,,,,,,,,GSBD,2022-11-03
+"MPI Engineered Technologies, LLC",First Lien,Automotive,12.00%,,,,,,2025-07-15,,,,,,,,,,,GSBD,2022-11-03
+MPI Products LLC,First Lien,Automotive,,,,,,,2025-07-15,,,,,,,,,,,GSBD,2022-11-03
+"National Spine and Pain Centers, LLC",First Lien,Healthcare,11.82%,,LIBOR,8.25%,,,2024-12-02,,,,,,,,,,,GSBD,2022-11-03
+Odyssey Logistics & Technology Corp.,First Lien,Transportation & Logistics,10.81%,,LIBOR,8.00%,,,2025-10-12,,,,,,,,,,,GSBD,2022-11-03
+"Spectrum Plastics Group, Inc.",First Lien,Containers & Packaging,10.12%,,LIBOR,7.00%,,,2026-01-31,,,,,,,,,,,GSBD,2022-11-03
+"YI, LLC",First Lien,Healthcare,10.87%,,LIBOR,7.75%,,,2025-11-07,,,,,,,,,,,GSBD,2022-11-03
+Zep Inc.,First Lien,Chemicals & Materials,11.92%,,LIBOR,8.25%,,,2025-08-11,,,,,,,,,,,GSBD,2022-11-03
+ATX Networks Corp.,First Lien,Telecommunications,10.00%,,,,,,2028-09-01,,,,,,,,,,,GSBD,2022-11-03
+CivicPlus LLC,First Lien,Software & Technology,14.38%,,SOFR,11.75%,,,2027-08-24,,,,,,,,,,,GSBD,2022-11-03
+Conergy Asia & ME Pte. LTD.,First Lien,Industrials,,,,,,,2023-06-30,,,,,,,,,,,GSBD,2022-11-03
