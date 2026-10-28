@@ -23,6 +23,7 @@ from .main import MAINScraper
 from .mrcc import MRCCScraper
 from .mfic import MFICScraper
 from .whf import WHFScraper
+from .kbdc import KBDCScraper
 from .gbdc import GBDCScraper
 from .bbdc import BBDCScraper
 from .ocsl import OCSLScraper
@@ -49,6 +50,7 @@ from .hrzn import HRZNScraper
 from .sar import SARScraper
 from .scm import SCMScraper
 from .whf import WHFScraper
+from .kbdc import KBDCScraper
 
 SCRAPERS: Dict[str, Type[BaseCompanyScraper]] = {
     "ARCC": ARCCScraper,
@@ -59,6 +61,7 @@ SCRAPERS: Dict[str, Type[BaseCompanyScraper]] = {
     "MRCC": MRCCScraper,
     "MFIC": MFICScraper,
     "WHF": WHFScraper,
+    "KBDC": KBDCScraper,
     "GBDC": GBDCScraper,
     "BBDC": BBDCScraper,
     "OCSL": OCSLScraper,
@@ -85,6 +88,7 @@ SCRAPERS: Dict[str, Type[BaseCompanyScraper]] = {
     "SAR": SARScraper,
     "SCM": SCMScraper,
     "WHF": WHFScraper,
+    "KBDC": KBDCScraper,
 }
 
 # Remaining BDCs to port, in priority order.

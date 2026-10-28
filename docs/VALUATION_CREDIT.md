@@ -181,6 +181,13 @@ WHF's issuer/type/floor/reference/spread/rate schedule was enabled from the
 existing custom scraper. Results: **bad 0% → good 100%**, all **17/17
 periods** within 5%.
 
+### KBDC
+
+KBDC's 12-column schedule (company, investment, interest, spread, PIK,
+reference, maturity, principal, amortized cost, fair value, % of net assets)
+was ported. The 2026 periods reconcile within 0.2%; 2024 periods still
+double-count and remain flagged.
+
 ## Unit normalization
 
 `fix_multi_block_holdings.py` also handles files extracted in dollars instead of
