@@ -1,6 +1,294 @@
 {
-  "generated_at": "2026-10-28T04:51:21.026592Z",
+  "generated_at": "2026-10-28T07:16:25.714598Z",
   "tickers": {
+    "ARCC": {
+      "entity_name": "ARES CAPITAL CORPORATION",
+      "period_count": 25,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-09-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "BBDC": {
+      "entity_name": "Barings BDC, Inc.",
+      "period_count": 24,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "BCIC": {
+      "entity_name": "BCP Investment Corporation",
+      "period_count": 24,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "BCSF": {
+      "entity_name": "BAIN CAPITAL SPECIALTY FINANCE, INC.",
+      "period_count": 27,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "BXSL": {
+      "entity_name": "Blackstone Secured Lending Fund",
+      "period_count": 23,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "CCAP": {
+      "entity_name": "Crescent Capital BDC, Inc.",
+      "period_count": 23,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "CGBD": {
+      "entity_name": "Carlyle Secured Lending, Inc.",
+      "period_count": 24,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "CION": {
+      "entity_name": "CION Investment Corporation",
+      "period_count": 29,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "CSWC": {
+      "entity_name": "Capital Southwest Corporation",
+      "period_count": 27,
+      "first_period": "2019-03-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "EQS": {
+      "entity_name": "EQUUS TOTAL RETURN, INC.",
+      "period_count": 22,
+      "first_period": "2019-12-31",
+      "latest_period": "2025-12-31",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "FDUS": {
+      "entity_name": "Fidus Investment Corporation",
+      "period_count": 27,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "FSK": {
+      "entity_name": "FS KKR Capital Corp.",
+      "period_count": 26,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "GAIN": {
+      "entity_name": "GLADSTONE INVESTMENT CORPORATION\\DE",
+      "period_count": 24,
+      "first_period": "2019-03-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "GBDC": {
+      "entity_name": "Golub Capital BDC, Inc.",
+      "period_count": 22,
+      "first_period": "2019-09-30",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "GECC": {
+      "entity_name": "Great Elm Capital Corp.",
+      "period_count": 27,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "GLAD": {
+      "entity_name": "GLADSTONE CAPITAL CORP",
+      "period_count": 22,
+      "first_period": "2019-09-30",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "GSBD": {
+      "entity_name": "GOLDMAN SACHS BDC, INC.",
+      "period_count": 23,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "HRZN": {
+      "entity_name": "Horizon Technology Finance Corp",
+      "period_count": 22,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "HTGC": {
+      "entity_name": "Hercules Capital, Inc.",
+      "period_count": 23,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "ICMB": {
+      "entity_name": "INVESTCORP CREDIT MANAGEMENT BDC, INC.",
+      "period_count": 22,
+      "first_period": "2019-06-30",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "KBDC": {
+      "entity_name": "Kayne Anderson BDC, Inc.",
+      "period_count": 22,
+      "first_period": "2020-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "LIEN": {
+      "entity_name": "CHICAGO ATLANTIC BDC, INC.",
+      "period_count": 21,
+      "first_period": "2021-03-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "MAIN": {
+      "entity_name": "Main Street Capital Corporation",
+      "period_count": 24,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "MFIC": {
+      "entity_name": "MIDCAP FINANCIAL INVESTMENT CORPORATION",
+      "period_count": 23,
+      "first_period": "2020-03-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
     "MRCC": {
       "entity_name": "MONROE CAPITAL CORP",
       "period_count": 25,
@@ -13,9 +301,285 @@
       ],
       "has_cash_flow": true
     },
+    "MSDL": {
+      "entity_name": "Morgan Stanley Direct Lending Fund",
+      "period_count": 22,
+      "first_period": "2020-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "MSIF": {
+      "entity_name": "MSC Income Fund, Inc",
+      "period_count": 21,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "NCDL": {
+      "entity_name": "NUVEEN CHURCHILL DIRECT LENDING CORP.",
+      "period_count": 21,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "NMFC": {
+      "entity_name": "New Mountain Finance Corporation",
+      "period_count": 24,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "OBDC": {
+      "entity_name": "BLUE OWL CAPITAL CORP",
+      "period_count": 23,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "OCSL": {
+      "entity_name": "Oaktree Specialty Lending Corp",
+      "period_count": 22,
+      "first_period": "2019-09-30",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "OFS": {
+      "entity_name": "OFS CAPITAL CORPORATION",
+      "period_count": 24,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "OXSQ": {
+      "entity_name": "OXFORD SQUARE CAPITAL CORP.",
+      "period_count": 23,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "PFLT": {
+      "entity_name": "PENNANTPARK FLOATING RATE CAPITAL LTD.",
+      "period_count": 22,
+      "first_period": "2019-09-30",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "PFX": {
+      "entity_name": "PHENIXFIN CORPORATION",
+      "period_count": 22,
+      "first_period": "2019-09-30",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "PNNT": {
+      "entity_name": "PENNANTPARK INVESTMENT CORP",
+      "period_count": 22,
+      "first_period": "2019-09-30",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "PSBD": {
+      "entity_name": "Palmer Square Capital BDC Inc.",
+      "period_count": 22,
+      "first_period": "2020-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "PSEC": {
+      "entity_name": "Prospect Capital Corporation",
+      "period_count": 34,
+      "first_period": "2019-06-30",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "RAND": {
+      "entity_name": "RAND CAPITAL CORPORATION",
+      "period_count": 25,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "RWAY": {
+      "entity_name": "Runway Growth Finance Corp.",
+      "period_count": 23,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "SAR": {
+      "entity_name": "SARATOGA INVESTMENT CORP.",
+      "period_count": 26,
+      "first_period": "2019-02-28",
+      "latest_period": "2026-08-31",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "SCM": {
+      "entity_name": "Stellus Capital Investment Corp",
+      "period_count": 24,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "SLRC": {
+      "entity_name": "SLR INVESTMENT CORP.",
+      "period_count": 23,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
     "SSSS": {
       "entity_name": "NEOSTELLAR CAPITAL CORP.",
       "period_count": 27,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "TCPC": {
+      "entity_name": "BLACKROCK TCP CAPITAL CORP.",
+      "period_count": 26,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "TPVG": {
+      "entity_name": "TriplePoint Venture Growth BDC Corp.",
+      "period_count": 24,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "TRIN": {
+      "entity_name": "Trinity Capital Inc.",
+      "period_count": 21,
+      "first_period": "2020-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "TSLX": {
+      "entity_name": "Sixth Street Specialty Lending, Inc.",
+      "period_count": 27,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "WHF": {
+      "entity_name": "WhiteHorse Finance, Inc.",
+      "period_count": 24,
       "first_period": "2019-12-31",
       "latest_period": "2026-06-30",
       "statements": [
