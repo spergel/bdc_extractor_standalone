@@ -166,23 +166,30 @@ cd app && npm install && npm run dev
 
 Views, all powered by the data above:
 
-- **Overview** — portfolio fair value, companies, weighted yield/spread plus NAV, leverage and NII from the quarterly filings
+- **Overview** — portfolio fair value, companies, weighted yield/spread plus NAV, leverage, NII, unrealized G/L, concentration; SVG trend charts; peer-rank chips; data-coverage bars
 - **Holdings** — filterable per-filing holdings table
-- **Loan Types** — first lien / second lien / equity mix, current period + mix over time
-- **Sectors** — industry mix, current period + mix over time
-- **Vintage** — acquisition-year distribution, portfolio age buckets, maturity buckets
-- **Financials** — balance sheet, income statement and cash flow (last 8 quarters)
-- **Peers** — sortable comparison across all BDCs
+- **Loan Types** — first lien / second lien / equity mix with marks vs cost, current period + mix over time
+- **Sectors** — industry mix with peer-median tilt and marks vs cost, current period + mix over time
+- **Rates & Structure** — floating vs fixed, reference-rate mix (SOFR/LIBOR/…), spread distribution, PIK share, coverage
+- **Vintage & Maturity** — acquisition-year vintage, portfolio-age buckets, per-year maturity wall, unrealized gain/loss by type and top gainers/losers
+- **QoQ Changes** — new positions, exits, increases and decreases vs the prior filing
+- **Financials** — balance sheet, income statement and cash flow (last 8 quarters) + trend charts
+- **Peers** — sortable/filterable comparison across all BDCs with peer medians
+- **Companies** — cross-BDC borrower view: which BDCs hold a company, exposure by BDC/maturity/type, profile
+
+Extras: CSV export of the visible tables, shareable deep links (`#/bdc/ARCC/vintage/2026-07-29`, `#/companies/co_…`), and data-freshness indicators (holdings as-of vs financials as-of, balance check).
 
 API endpoints used by the UI:
 
 ```
 /api/tickers                          index of BDCs + periods
 /api/tickers/:ticker/periods/:period  holdings rows for one filing
-/api/tickers/:ticker/analytics        per-period breakdowns
+/api/tickers/:ticker/analytics        per-period breakdowns + quality/freshness meta
 /api/tickers/:ticker/financials       quarterly 3-statement data
-/api/peers                            cross-BDC comparison
+/api/peers                            cross-BDC comparison + medians
 /api/profiles                         compact BDC name/price summaries
+/api/companies                        cross-BDC company exposure index
+/api/companies/:id                    company detail + profile + BDC exposures
 ```
 
 ## 📈 Supported BDCs
