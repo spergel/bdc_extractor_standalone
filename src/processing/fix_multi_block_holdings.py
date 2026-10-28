@@ -17,10 +17,13 @@ Usage:
 
 import argparse
 import csv
+import glob
 import json
 import logging
+import math
 import os
 from collections import defaultdict
+from datetime import date, datetime
 from statistics import median
 from pathlib import Path
 
@@ -130,6 +133,74 @@ def write_period_files(ticker, groups, fieldnames):
             writer.writerows(rows)
 
 
+def quarter_end_before(filing_date):
+    d = datetime.strptime(filing_date, "%Y-%m-%d").date()
+    cands = [
+        date(y, m, day)
+        for y in (d.year, d.year - 1)
+        for m, day in ((3, 31), (6, 30), (9, 30), (12, 31))
+        if date(y, m, day) <= d
+    ]
+    return max(cands).isoformat() if cands else filing_date
+
+
+def load_reported_fv(ticker):
+    path = DATA_DIR / "financials" / f"{ticker}_financials.json"
+    if not path.exists():
+        return {}
+    with open(path, encoding="utf-8") as fh:
+        fin = json.load(fh)
+    node = ((fin.get("statements") or {}).get("balance_sheet") or {}).get("Investments at Fair Value") or {}
+    return {k: v.get("val") for k, v in (node.get("series") or {}).items() if v.get("val")}
+
+
+def infer_scale(pairs):
+    """Pick the scale that makes the most periods match reported fair value."""
+    best = None
+    for scale in (1, 1000, 0.001, 1e6, 1e-6):
+        errors = [abs(h / (r / scale) - 1) for h, r in pairs if h > 0 and r > 0]
+        if not errors:
+            continue
+        matches = sum(1 for e in errors if e <= 0.15)
+        score = (matches, -median(errors))
+        if best is None or score > best[0]:
+            best = (score, scale)
+    return best[1] if best else 1
+
+
+MONETARY_FIELDS = (
+    "principal_amount", "amortized_cost", "fair_value", "cost",
+    "commitment_limit", "undrawn_commitment",
+)
+
+
+def normalize_units(groups, dates, reported_by_end):
+    """Scale a file whose per-position values are 1000x larger than normal."""
+    changed = []
+    for fd in dates:
+        values = [fair_value(r) for r in groups[fd] if fair_value(r) > 0]
+        if len(values) < 10:
+            continue
+        med = median(values)
+        # A median position above $1B (fair_value is in thousands) means the
+        # file was extracted in dollars rather than thousands.
+        if med <= 1_000_000:
+            continue
+        factor = 0.001
+        total = sum(values)
+        for row in groups[fd]:
+            for field in MONETARY_FIELDS:
+                raw = (row.get(field) or "").strip()
+                if not raw:
+                    continue
+                try:
+                    row[field] = str(round(float(raw) * factor, 4)).rstrip("0").rstrip(".")
+                except ValueError:
+                    pass
+        changed.append((fd, round(total / 1e6, 2), factor, round(total * factor / 1e6, 2)))
+    return changed
+
+
 def process_ticker(ticker, dry_run=False):
     rows, fields = load_consolidated(ticker)
     if not rows:
@@ -141,6 +212,15 @@ def process_ticker(ticker, dry_run=False):
         if fd:
             groups[fd].append(row)
     dates = sorted(groups)
+    reported_by_end = load_reported_fv(ticker)
+    unit_changes = []
+    for _ in range(4):
+        batch = normalize_units(groups, dates, reported_by_end)
+        if not batch:
+            break
+        unit_changes.extend(batch)
+    for fd, before, factor, after in unit_changes:
+        logger.info("%s: scaled %s units by %s ($%.2fB -> $%.2fB)", ticker, fd, factor, before, after)
     changed = []
 
     # Iterate: fixing one doubled period can reveal the true level for its
@@ -172,8 +252,14 @@ def process_ticker(ticker, dry_run=False):
         if not pass_changed:
             break
 
-    if not changed:
+    if not changed and not unit_changes:
         return []
+    if not changed and unit_changes:
+        if dry_run:
+            return [("units", c[0]) for c in unit_changes]
+        write_consolidated(ticker, [r for d in dates for r in groups[d]], fields)
+        write_period_files(ticker, groups, fields)
+        return [("units", c[0]) for c in unit_changes]
 
     logger.info("%s: fixed %d multi-block period(s)", ticker, len(changed))
     for c in changed:

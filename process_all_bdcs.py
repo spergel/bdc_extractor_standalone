@@ -81,6 +81,8 @@ def main() -> int:
                         help="Skip credit-quality extraction (non-accrual / risk rating)")
     parser.add_argument("--skip-analytics", action="store_true",
                         help="Skip frontend analytics rebuild (type/sector/vintage/peers JSON)")
+    parser.add_argument("--skip-quality", action="store_true",
+                        help="Skip holdings-vs-reported fair value reconciliation")
 
     args = parser.parse_args()
 
@@ -142,6 +144,10 @@ def main() -> int:
     if not args.skip_analytics:
         logger.info("Rebuilding frontend analytics (type/sector/vintage/peers)...")
         run([sys.executable, str(REPO_ROOT / "src/processing/build_analytics.py")])
+
+    if not args.skip_quality:
+        logger.info("Reconciling holdings against reported fair value...")
+        run([sys.executable, str(REPO_ROOT / "src/processing/build_data_quality.py")])
 
     logger.info("Done!")
     return 0
