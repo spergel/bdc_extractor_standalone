@@ -109,6 +109,11 @@ def build_ticker(ticker: str):
     analytics = load_json(ANALYTICS_DIR / f"{ticker}.json") or {}
     flags_by_fd = {p.get("filing_date"): p.get("quality_flags") or [] for p in analytics.get("periods") or []}
     filings = (load_json(FILINGS_DIR / f"{ticker}.json") or {}).get("filings") or {}
+    fin_by_filed = {
+        p.get("filed"): p.get("end")
+        for p in (fin.get("periods") or [])
+        if p.get("filed") and p.get("end")
+    }
 
     raw = []
     for path in sorted(glob.glob(str(INV_DIR / ticker / "*.csv"))):
@@ -117,7 +122,9 @@ def build_ticker(ticker: str):
             continue
         with open(path, encoding="utf-8", newline="") as fh:
             rows = list(csv.DictReader(fh))
-        end = quarter_end_before(fd)
+        # Prefer the financial period filed on the same day; this handles
+        # non-calendar fiscal years (e.g. SAR's Feb/May/Aug/Nov quarter ends).
+        end = fin_by_filed.get(fd) or quarter_end_before(fd)
         rep = reported.get(end)
         raw.append((fd, end, sum(fair_value(r) for r in rows), len(rows), rep))
 

@@ -15,8 +15,8 @@ Layout notes:
   * Section rows ("Non-control/Non-affiliate investments - 299.4%") and
     industry subtotals ("Total Alternative Investment Management Software",
     which carry amounts but no company) are skipped.
-  * When the main section appears a second time the prior year-end
-    schedule begins and parsing stops.
+  * The prior year-end schedule follows the current one; continuation pages
+    inherit the current block until a new period heading appears.
 """
 
 from __future__ import annotations
@@ -63,9 +63,11 @@ class SARScraper(BaseCompanyScraper):
             if not grid or len(grid[0]) < 15:
                 continue
             head = " ".join((c or "") for c in grid[0]).lower()
-            if "investment interest rate" not in head and "company" not in head:
-                continue
-            if "fair value" not in head:
+            head_norm = re.sub(r"[^a-z0-9]", "", head)
+            if not all(k in head_norm for k in
+                       ("company", "industry", "interestrate", "fairvalue")):
+                # Also excludes roll-forward schedules ("Fair Value at the
+                # Beginning of Year | Purchases | Sales ...").
                 continue
             soi.append(t)
         soi.sort(key=lambda t: t.get("pos") or 0)
@@ -81,16 +83,24 @@ class SARScraper(BaseCompanyScraper):
         rows: List[Dict[str, str]] = []
         main_pct: Optional[str] = None
 
-        current_period = self._period_for(filing_result, soi_tables[0])
-        logger.info("SAR: current SOI period: %s", current_period)
+        if not soi_tables:
+            return []
+        first_period = next(
+            (p for p in (self._period_for(filing_result, t) for t in soi_tables) if p),
+            None,
+        )
+        logger.info("SAR: current SOI period: %s", first_period)
+        seen_signatures = set()
 
+        in_prior_block = False
         for t in soi_tables:
             period = self._period_for(filing_result, t)
-            if current_period:
-                # Skip the prior period and note-level duplicates that repeat
-                # the affiliate/control schedules without a period heading.
-                if period != current_period:
-                    continue
+            if period:
+                in_prior_block = bool(first_period and period != first_period)
+            if in_prior_block:
+                # The prior-period schedule's first page has a heading; its
+                # continuation pages do not, so carry the block state forward.
+                continue
             grid = self.parse_table_to_rows(t["html"])
             header_idx = self._find_header_row(grid)
             if header_idx is None:
@@ -98,6 +108,19 @@ class SARScraper(BaseCompanyScraper):
             ranges = self._column_ranges(grid[header_idx])
             if "company" not in ranges or "fairvalue" not in ranges:
                 continue
+
+            # The same schedule is often repeated in the body and an exhibit.
+            sig = []
+            for r in grid[header_idx + 1:header_idx + 8]:
+                c = _cell_range(r, *ranges["company"])
+                f = _cell_range(r, *ranges["fairvalue"])
+                if c and f:
+                    sig.append(c.lower())
+            if len(sig) >= 3:
+                key = tuple(sig[:5])
+                if key in seen_signatures:
+                    continue
+                seen_signatures.add(key)
 
             for row in grid[header_idx + 1:]:
                 company = _cell_range(row, *ranges["company"])
@@ -316,7 +339,7 @@ class SARScraper(BaseCompanyScraper):
         if not html:
             return None
         pos = table.get("pos") or 0
-        raw = re.sub(r"<[^>]+>", " ", html[max(0, pos - 8000):pos])
+        raw = re.sub(r"<[^>]+>", " ", html[max(0, pos - 20000):pos])
         raw = re.sub(r"&#160;|&nbsp;", " ", raw, flags=re.IGNORECASE)
         raw = re.sub(r"\s+", " ", raw)
         m = re.search(r"Schedule\s+of\s+Investments\s+"

@@ -68,18 +68,17 @@ SCRAPERS: Dict[str, Type[BaseCompanyScraper]] = {
     "PFLT": PFLTScraper,
     "TCPC": TCPCScraper,
     "FDUS": FDUSScraper,
-    # "CION": CIONScraper,  # TODO: value mapping discrepancy; parked
+    "CION": CIONScraper,
     "BCIC": BCICScraper,
     "GLAD": GLADScraper,
     "GAIN": GAINScraper,
     "TRIN": TRINScraper,
-    # "HRZN": HRZNScraper,  # TODO: ~5% over-count from colspan rows
-    # "SAR": SARScraper,  # TODO: ~8% over-count (duplicate note schedule)
+    "HRZN": HRZNScraper,
+    "SAR": SARScraper,
 }
 
 # Remaining BDCs to port, in priority order.
-PORTING_QUEUE = [
-    "SAR", "HRZN", "CION", "MRCC", "GAIN", "TRIN", "HRZN", "SAR", "SCM", "WHF", "MFIC", "MSDL",
+PORTING_QUEUE = ["MRCC", "SCM", "WHF", "MFIC", "MSDL",
     "KBDC", "LIEN", "NCDL", "MSIF", "OFS", "OXSQ", "GECC", "ICMB",
     "PFX", "PSBD", "RAND", "RWAY", "SSSS", "EQS", "TPVG", "BCRED",
 ]

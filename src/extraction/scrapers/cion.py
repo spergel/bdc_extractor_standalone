@@ -15,14 +15,16 @@ Layout notes:
     stripped and used for the investment type.
   * Interest cells pack reference, spread and floor
     ("S+725, 1.00% SOFR Floor" -> SOFR + 7.25%, floor 1.00%).
-  * The prior year-end schedule follows the current one; parsing stops when
-    a section row repeats.
+  * The prior year-end schedule follows the current one; tables are filtered
+    by their normalized "Month DD, YYYY" schedule heading, and repeated
+    body/exhibit copies are collapsed by table signature.
 """
 
 from __future__ import annotations
 
 import logging
 import re
+from datetime import datetime
 from typing import Any, Dict, List, Optional
 
 from .base import BaseCompanyScraper
@@ -92,15 +94,76 @@ class CIONScraper(BaseCompanyScraper):
         rows: List[Dict[str, str]] = []
         current_type = ""
         current_industry = ""
-        seen_sections = {}
+        current_first_pct = ""
+        seen_signatures = set()
 
-        for t in soi_tables:
+        month_re = (r"(?:January|February|March|April|May|June|July|August|"
+                    r"September|October|November|December)\s+\d{1,2},\s+\d{4}")
+
+        def period_heading(table: Dict[str, Any]) -> str:
+            ctx = self._context_before(filing_result, table)
+            matches = re.findall(month_re, ctx, re.I)
+            if not matches:
+                matches = re.findall(month_re, (table.get("text") or "")[:1000], re.I)
+            if not matches:
+                return ""
+            try:
+                return datetime.strptime(matches[-1], "%B %d, %Y").date().isoformat()
+            except ValueError:
+                return matches[-1].lower()
+
+        headings = [period_heading(t) for t in soi_tables]
+        current_period = next((h for h in headings if h), "")
+        first_current = 0
+        if current_period:
+            for i, h in enumerate(headings):
+                if h == current_period:
+                    first_current = i
+                    break
+
+        # The 10-Q repeats the whole schedule (body + exhibit), so identical
+        # rows are collapsed by the base scraper's dedupe.
+        for idx, t in enumerate(soi_tables):
+            heading = headings[idx]
+            if idx < first_current and not heading:
+                continue
+            if current_period and heading and heading != current_period:
+                continue
+            table_text = (t.get("text") or "")[:6000].lower()
             grid = self.parse_table_to_rows(t["html"])
             header_idx = self._find_header_row(grid)
             if header_idx is None:
                 continue
+
+            table_pct = ""
+            for r in grid[header_idx + 1:header_idx + 6]:
+                c = _cell_range(r, 0, 3).lower()
+                if c.startswith("senior secured first lien debt"):
+                    m = re.search(r"([\d.]+)\s*%\s*$", c)
+                    table_pct = m.group(1) if m else ""
+                    break
+            if table_pct:
+                if not current_first_pct:
+                    current_first_pct = table_pct
+                elif table_pct != current_first_pct:
+                    # Prior-period copy of the schedule.
+                    continue
+
+            # The filing repeats the whole schedule (body + exhibit); skip a
+            # table whose leading positions were already captured.
+            sig = []
+            for r in grid[header_idx + 1:header_idx + 8]:
+                c = _cell_range(r, 0, 3)
+                f = _cell_range(r, 36, 39)
+                if c and f:
+                    sig.append((c.lower(), f))
+            if len(sig) >= 3:
+                key = tuple(sig[:3])
+                if key in seen_signatures:
+                    continue
+                seen_signatures.add(key)
             ranges = self._column_ranges(grid[header_idx])
-            if "portfoliocompany" not in ranges:
+            if "portfoliocompany" not in ranges or "fairvalue" not in ranges:
                 continue
 
             for row in grid[header_idx + 1:]:
@@ -111,55 +174,43 @@ class CIONScraper(BaseCompanyScraper):
 
                 if not company:
                     continue
-                if low.startswith("total") or low.startswith("subtotal"):
+                if low.startswith("total") or low.startswith("subtotal") \
+                        or "sub-total" in low:
                     continue
-                if "investments" in low and ("non-controlled" in low
-                                             or "affiliated" in low):
+                if "liabilities in excess" in low or "liabilities and" in low:
                     continue
-                if low.startswith("net assets") or "treasury" in low \
-                        or "cash equivalent" in low:
-                    continue
-
-                fair_cell = _cell_range(row, *ranges["fairvalue"]) \
-                    if "fairvalue" in ranges else ""
-                cost_cell = _cell_range(row, *ranges["cost"]) \
-                    if "cost" in ranges else ""
-
-                if not industry and (fair_cell or cost_cell):
-                    # Continuation tranche row: industry carried down.
-                    raw_type = current_type
-                    company_name, instrument_type = self._split_instrument(company)
-                    inv_type = instrument_type or raw_type or "Other"
-                    rows.append(self._row_to_record(row, company_name,
-                                                    current_industry,
-                                                    inv_type, ranges))
+                if "non-controlled" in low:
                     continue
 
                 if not industry:
                     # Section row, e.g. "Senior Secured First Lien Debt - 195.2%"
-                    if re.search(r"first lien|second lien|subordinated|"
-                                 r"unsecured|equity|note", low):
-                        key = re.sub(r"[\d.,%\s\-]+$", "", low).strip()
-                        pct_m = re.search(r"([\d.]+)\s*%\s*$", company)
-                        pct = pct_m.group(1) if pct_m else ""
-                        if key in seen_sections and seen_sections[key]                                 and pct and seen_sections[key] != pct:
-                            # Prior year-end schedule restarts with new %.
-                            return rows
-                        seen_sections[key] = pct or seen_sections.get(key, "")
+                    if re.search(r"first lien|second lien|subordinated|unsecured|"
+                                 r"equity|note|structured", low):
                         current_type = self._map_type(low)
                     continue
 
-                current_industry = industry
-                raw_type = current_type
                 company_name, instrument_type = self._split_instrument(company)
-                inv_type = instrument_type or raw_type or "Other"
-
+                inv_type = instrument_type or current_type or "Other"
                 rows.append(self._row_to_record(row, company_name, industry,
                                                 inv_type, ranges))
-            logger.info("CION: %s -> %d rows total", t["id"].rsplit("_", 1)[-1], len(rows))
 
-        logger.info("CION: parsed %d investment rows", len(rows))
-        return rows
+        # Collapse the duplicated copy of the schedule: identical positions
+        # (same company, type, principal, cost and fair value) appear in both
+        # the financial statements and the exhibit.
+        unique: List[Dict[str, str]] = []
+        seen_keys = set()
+        for r in rows:
+            key = (r["company_name"], r["investment_type"],
+                   r["principal_amount"], r["amortized_cost"],
+                   r["fair_value"], r["maturity_date"])
+            if key in seen_keys:
+                continue
+            seen_keys.add(key)
+            unique.append(r)
+
+        logger.info("CION: parsed %d investment rows (%d unique)",
+                    len(rows), len(unique))
+        return unique
 
     # --------------------------------------------------------------
     # Row parsing

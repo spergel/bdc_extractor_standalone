@@ -142,7 +142,8 @@ class HRZNScraper(BaseCompanyScraper):
                         company or current_company,
                         sector or current_sector,
                         instrument or current_instrument,
-                        ranges)
+                        ranges,
+                        equity_layout=(len(grid[0]) < 30))
                     if len(grid[0]) < 30:
                         # Equity/warrant tables repeat rows across pages.
                         key = (record["company_name"], record["investment_type"],
@@ -173,7 +174,8 @@ class HRZNScraper(BaseCompanyScraper):
     # Row parsing
     # --------------------------------------------------------------
     def _row_to_record(self, row: List[str], company: str, sector: str,
-                       instrument: str, ranges: Dict[str, tuple]) -> Dict[str, str]:
+                       instrument: str, ranges: Dict[str, tuple],
+                       equity_layout: bool = False) -> Dict[str, str]:
         def grp(key: str) -> str:
             rng = ranges.get(key)
             if not rng:
@@ -189,6 +191,39 @@ class HRZNScraper(BaseCompanyScraper):
         reference = ref_map.get(index_raw.upper(), index_raw)
         margin = self._parse_percent(grp("margin"))
         floor = self._parse_percent(grp("floor"))
+
+        if equity_layout:
+            shares = self._clean_number(
+                _cell_range(row, *ranges["numberofshares"])) \
+                if "numberofshares" in ranges else ""
+            cost = self._clean_number(
+                _cell_range(row, *ranges["costofinvestments"])) \
+                if "costofinvestments" in ranges else ""
+            fair = self._clean_number(
+                _cell_range(row, *ranges["fairvalue"])) \
+                if "fairvalue" in ranges else ""
+            principal = ""
+            return {
+                "company_name": re.sub(r"\s*(\(\d+\))+\s*$", "", company).strip(),
+                "investment_type": inv_type,
+                "industry": sector,
+                "cash_rate": cash,
+                "pik_rate": "",
+                "reference_rate": reference,
+                "spread": margin,
+                "floor_rate": floor,
+                "acquisition_date": "",
+                "maturity_date": "",
+                "principal_amount": "",
+                "amortized_cost": cost,
+                "fair_value": fair,
+                "percent_of_net_assets": "",
+                "cost": cost,
+                "commitment_limit": "",
+                "undrawn_commitment": "",
+                "rate_cap": "",
+                "shares": shares,
+            }
 
         amounts = self._flow_amounts(row)
         if inv_type in _EQUITY_TYPES:
