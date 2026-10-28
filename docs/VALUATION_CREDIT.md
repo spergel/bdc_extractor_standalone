@@ -169,6 +169,18 @@ assets) and its separate Senior Loan Fund schedule. Results:
 - overall quality: **bad 7.7% → warn 71.4%**
 - four 2023 periods still run 29–41% high and remain flagged
 
+### MFIC
+
+MFIC's grouped schedule is parsed into company/tranche rows, with carried
+company names, split-parenthesis negatives, and unlabeled industry subtotals
+excluded. Results: **bad 0% → good 100%**, all **16/16 periods** within 5%.
+
+### WHF
+
+WHF's issuer/type/floor/reference/spread/rate schedule was enabled from the
+existing custom scraper. Results: **bad 0% → good 100%**, all **17/17
+periods** within 5%.
+
 ## Unit normalization
 
 `fix_multi_block_holdings.py` also handles files extracted in dollars instead of
