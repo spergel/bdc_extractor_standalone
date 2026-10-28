@@ -68,6 +68,8 @@ def main() -> int:
                         help="Re-process even if output CSV exists")
     parser.add_argument("--skip-investments", action="store_true", help="Skip investment extraction")
     parser.add_argument("--skip-consolidation", action="store_true", help="Skip consolidation step")
+    parser.add_argument("--skip-block-fix", action="store_true",
+                        help="Skip splitting concatenated annual portfolio schedules")
     parser.add_argument("--skip-company-resolution", action="store_true",
                         help="Skip company ID resolution")
     parser.add_argument("--skip-profiles", action="store_true", help="Skip company profile build")
@@ -110,14 +112,18 @@ def main() -> int:
         logger.info("Consolidating investments...")
         run([sys.executable, str(REPO_ROOT / "src/consolidation/consolidate_investments.py")])
 
-        if not args.skip_company_resolution:
-            logger.info("Resolving company names...")
-            run([sys.executable, str(REPO_ROOT / "src/company_resolution/resolve_companies.py")])
+    if not args.skip_block_fix:
+        logger.info("Splitting concatenated annual portfolio schedules...")
+        run([sys.executable, str(REPO_ROOT / "src/processing/fix_multi_block_holdings.py")])
 
-            if not args.skip_profiles:
-                logger.info("Building company profiles...")
-                run([sys.executable, str(REPO_ROOT / "src/company_resolution/build_profiles.py"),
-                     "--no-llm"])
+    if not args.skip_consolidation and not args.skip_company_resolution:
+        logger.info("Resolving company names...")
+        run([sys.executable, str(REPO_ROOT / "src/company_resolution/resolve_companies.py")])
+
+        if not args.skip_profiles:
+            logger.info("Building company profiles...")
+            run([sys.executable, str(REPO_ROOT / "src/company_resolution/build_profiles.py"),
+                 "--no-llm"])
 
     # ── 3. Quarterly financial statements + frontend analytics ──
     if not args.skip_financials:

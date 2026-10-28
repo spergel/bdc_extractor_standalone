@@ -19,6 +19,7 @@ import re
 from collections import defaultdict
 from datetime import datetime, date
 from pathlib import Path
+from statistics import median
 from typing import Optional
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -858,6 +859,32 @@ def build_ticker_analytics(ticker: str) -> Optional[dict]:
 
     for period in periods:
         period["changes"] = changes_by_fd.get(period["filing_date"])
+
+    # Sanity flags for extraction anomalies (annual blocks, unit changes, gaps).
+    for i, period in enumerate(periods):
+        flags = []
+        totals = period.get("totals") or {}
+        fv = totals.get("fair_value")
+        row_count = totals.get("rows")
+        prior = [p.get("totals", {}).get("fair_value") for p in periods[max(0, i - 4):i]]
+        prior = [v for v in prior if v]
+        if fv and prior:
+            med = median(prior)
+            if med and fv / med > 1.35:
+                flags.append(
+                    f"Fair value is {fv / med:.2f}x the trailing median (possible annual/unit issue)"
+                )
+            elif med and fv / med < 0.70:
+                flags.append(
+                    f"Fair value is {fv / med:.2f}x the trailing median (possible units/gap issue)"
+                )
+        if i > 0 and row_count:
+            prev_rows = periods[i - 1].get("totals", {}).get("rows")
+            if prev_rows and row_count / prev_rows < 0.65:
+                flags.append(
+                    f"Row count fell {100 * (1 - row_count / prev_rows):.0f}% vs the prior filing"
+                )
+        period["quality_flags"] = flags
 
     fin = load_financials(ticker)
     quality = build_quality(fin, load_profile(ticker))
