@@ -45,6 +45,14 @@ OUTPUT_COLUMNS = [
 
 HEADER_CSV = ",".join(OUTPUT_COLUMNS) + "\n"
 
+# CIKs missing from the bundled company_tickers map.
+CIK_OVERRIDES = {
+    "MRCC": {"cik_str": 1512931, "ticker": "MRCC", "title": "Monroe Capital Corporation"},
+    "BCRED": {"cik_str": 1803498, "ticker": "BCRED", "title": "Blackstone Private Credit Fund"},
+    "SSSS": {"cik_str": 1509470, "ticker": "SSSS", "title": "Neostellar Capital Corp."},
+    "LRFC": {"cik_str": 1278752, "ticker": "LRFC", "title": "Logan Ridge Finance Corp"},
+}
+
 
 class BaseCompanyScraper:
     """Common scaffolding for a per-ticker custom scraper."""
@@ -65,6 +73,8 @@ class BaseCompanyScraper:
             data_dir=str(self.data_dir),
             user_agent=user_agent,
         )
+        for ticker, info in CIK_OVERRIDES.items():
+            self.sec_client._company_tickers.setdefault(ticker.upper(), info)
 
     # ------------------------------------------------------------------
     # Filing discovery / download (reuses the existing SEC download path)
