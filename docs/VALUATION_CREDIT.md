@@ -117,8 +117,32 @@ comparison.
 
 Outputs `quality/{TICKER}.json` and `quality/quality_index.json`; the
 **Data Quality** section shows the scorecard, trust badges, filing links and a
-per-period drill-down. ARCC and BXSL currently reconcile at 100%; OBDC's
-2022–2024 10-Ks and a few small-BDC periods remain flagged for re-extraction.
+per-period drill-down. ARCC and BXSL reconcile at 100%.
+
+### OBDC 10-K re-extraction
+
+OBDC's 10-K schedules were being truncated because the parser compared
+`"as of December 31, 2022"` case-sensitively against `"As of December 31,
+2022"`, then skipped 18 current pages. The scraper now:
+
+- normalizes heading case/whitespace before comparison;
+- drops unlabeled pages that appear before the current-period heading;
+- excludes subsidiary Senior Loan Fund schedules (identified from the table
+  head or surrounding text).
+
+Results for the annual periods:
+
+| Period | Rows | Holdings FV | Reported FV | Delta |
+|---|---:|---:|---:|---:|
+| 2021-12-31 | 299 | $12.26B | $12.74B | −3.8% |
+| 2022-12-31 | 377 | $13.01B | $13.01B | 0.0% |
+| 2023-12-31 | 411 | $12.71B | $12.71B | 0.0% |
+| 2024-12-31 | 340 | $13.04B | $13.19B | −1.2% |
+| 2025-12-31 | 365 | $16.47B | $16.47B | 0.0% |
+
+Several OBDC 10-Qs (2022–2024) still overstate the portfolio by 13–17% and
+remain `mismatch` in the Data Quality view; those need a separate table/column
+audit.
 
 ## Unit normalization
 
