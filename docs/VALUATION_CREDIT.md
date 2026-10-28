@@ -188,6 +188,13 @@ reference, maturity, principal, amortized cost, fair value, % of net assets)
 was ported. The 2026 periods reconcile within 0.2%; 2024 periods still
 double-count and remain flagged.
 
+### SCM
+
+SCM's schedule was parsed with company/industry rows and instrument-level
+tranche rows. The parser now stops at the current schedule boundary rather
+than a repeated company, and handles whole-dollar amounts. Results:
+**bad 0% → good 100%**, all **16/16 periods** within 5%.
+
 ## Unit normalization
 
 `fix_multi_block_holdings.py` also handles files extracted in dollars instead of
