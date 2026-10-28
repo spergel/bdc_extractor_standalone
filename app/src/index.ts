@@ -415,7 +415,32 @@ const UI_HTML = `<!doctype html>
   .modal .mf { padding: 10px 12px; border-top: 1px solid var(--line); display: flex; justify-content: flex-end; gap: 8px; background: #f7f8fa; }
   .filter-chip { display: inline-flex; align-items: center; gap: 6px; padding: 3px 6px 3px 10px; border-radius: 14px; background: #e8effa; border: 1px solid #b9cbe8; color: var(--navy2); font-size: 11.5px; margin-bottom: 8px; }
   .filter-chip button { border: 0; background: transparent; cursor: pointer; color: var(--navy2); font-size: 13px; padding: 0 2px; }
-  @media (max-width: 900px) { .diff-layout { grid-template-columns: 1fr; } }
+  /* peer evaluation */
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 12px; }
+  .peer-focus { display: flex; justify-content: space-between; gap: 12px; align-items: center; flex-wrap: wrap; background: #f8f9fb; border: 1px solid var(--line); border-radius: 5px; padding: 10px 12px; margin-bottom: 10px; }
+  .peer-focus .pf-name { font-size: 15px; font-weight: 700; }
+  .metric-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(235px, 1fr)); gap: 8px; margin-bottom: 14px; }
+  .metric-card { border: 1px solid var(--line); border-radius: 5px; padding: 8px 10px; background: #fff; }
+  .mc-head { display: flex; justify-content: space-between; gap: 6px; font-size: 10.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .3px; }
+  .mc-rank { color: var(--navy2); font-weight: 700; white-space: nowrap; }
+  .mc-value { font-size: 16px; font-weight: 700; margin-top: 2px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .mc-med { font-size: 10.5px; font-weight: 400; color: var(--muted); }
+  .dist { position: relative; height: 16px; margin: 6px 0 2px; background: #f1f3f6; border: 1px solid var(--line); border-radius: 8px; }
+  .dist .dot { position: absolute; top: 5px; width: 5px; height: 5px; margin-left: -2.5px; background: #9fb0c9; border-radius: 50%; }
+  .dist .dot.me { top: 2px; width: 10px; height: 10px; margin-left: -5px; background: var(--accent); box-shadow: 0 0 0 2px rgba(192,138,45,.25); }
+  .mc-foot { display: flex; justify-content: space-between; font-size: 10px; color: var(--muted); }
+  .leaderboard { border: 1px solid var(--line); border-radius: 5px; background: #fff; }
+  .leaderboard .lb-row { display: flex; align-items: center; gap: 8px; padding: 4px 8px; border-bottom: 1px solid #edf0f3; font-size: 11.5px; cursor: pointer; }
+  .leaderboard .lb-row:last-child { border-bottom: 0; }
+  .leaderboard .lb-row:hover { background: #eef2f8; }
+  .leaderboard .lb-row.me { background: #fdf6e7; font-weight: 700; }
+  .lb-rank { color: var(--muted); width: 18px; flex-shrink: 0; }
+  .lb-tkr { font-weight: 700; width: 46px; flex-shrink: 0; }
+  .lb-name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--muted); }
+  .lb-val { font-variant-numeric: tabular-nums; }
+  .tilt-table td.tilt.pos, .tilt-table td.pos { color: var(--good); }
+  .tilt-table td.tilt.neg, .tilt-table td.neg { color: var(--bad); }
+  @media (max-width: 900px) { .diff-layout { grid-template-columns: 1fr; } .grid3 { grid-template-columns: 1fr; } }
   @media (max-width: 800px) {
     .layout { grid-template-columns: 1fr; grid-template-rows: 220px 1fr; }
     .bar-row { grid-template-columns: 120px 1fr 110px; }
@@ -428,6 +453,7 @@ const UI_HTML = `<!doctype html>
     <span class="sub">Holdings + quarterly financials from SEC 10-Q / 10-K filings</span>
     <nav>
       <button id="nav-bdc" class="active">BDC View</button>
+      <button id="nav-peers">Peer Evaluation</button>
       <button id="nav-companies">Companies</button>
     </nav>
   </header>
@@ -488,6 +514,10 @@ const state = {
   hFilter: null,
   pendingFilter: null,
   companySort: 'exposure',
+  peerFocus: null,
+  peerCohort: 'all',
+  peerShowTable: false,
+  peerFocusAnalytics: {},
 };
 
 // ------------------------------------------------------------------ utils
@@ -548,6 +578,42 @@ function durationLabel(days) {
   if (d <= 195) return 'H1';
   if (d <= 290) return '9M';
   return 'FY';
+}
+// --- quarter labels: prefer fiscal quarter end, fall back to filing date ---
+function quarterEndFromFiling(filingDate) {
+  const d = new Date(String(filingDate || '') + 'T00:00:00');
+  if (isNaN(d.getTime())) return null;
+  const y = d.getFullYear();
+  const candidates = [];
+  const pairs = [[2, 31], [5, 30], [8, 30], [11, 31]]; // month index, day (Mar/Jun/Sep/Dec)
+  for (const yy of [y, y - 1]) {
+    for (const p of pairs) {
+      const qe = new Date(yy, p[0], p[1]);
+      if (qe <= d) candidates.push(qe);
+    }
+  }
+  if (!candidates.length) return null;
+  const max = candidates.reduce((a, b) => (a > b ? a : b));
+  return max.getFullYear() + '-' + String(max.getMonth() + 1).padStart(2, '0') + '-' + String(max.getDate()).padStart(2, '0');
+}
+function quarterInfoFromEnd(endIso) {
+  const d = new Date(String(endIso || '') + 'T00:00:00');
+  if (isNaN(d.getTime())) return null;
+  const m = d.getMonth() + 1, y = d.getFullYear();
+  const q = m <= 3 ? 1 : m <= 6 ? 2 : m <= 9 ? 3 : 4;
+  return { q: q, year: y, label: 'Q' + q + ' ' + y, short: 'Q' + q + " '" + String(y).slice(2) };
+}
+function quarterInfoFromFiling(filingDate) {
+  const end = quarterEndFromFiling(filingDate);
+  return end ? quarterInfoFromEnd(end) : null;
+}
+function periodLabel(filingDate, periodEnd) {
+  const info = periodEnd ? quarterInfoFromEnd(periodEnd) : quarterInfoFromFiling(filingDate);
+  return (info ? info.label : '') ? info.label + ' (' + filingDate + ')' : filingDate;
+}
+function periodLabelShort(filingDate, periodEnd) {
+  const info = periodEnd ? quarterInfoFromEnd(periodEnd) : quarterInfoFromFiling(filingDate);
+  return info ? info.short : String(filingDate || '').slice(0, 7);
 }
 function signed(v, digits) {
   const n = num(v);
@@ -725,7 +791,7 @@ function applyPendingFilter() {
 function updateHash() {
   let h;
   if (state.mode === 'companies') h = '#/companies' + (state.companyId ? '/' + state.companyId : '');
-  else if (state.tab === 'peers') h = '#/peers';
+  else if (state.mode === 'peers') h = '#/peers/' + (state.peerFocus || '') + '/' + (state.peerCohort || 'all');
   else if (state.tab === 'changes') {
     h = '#/bdc/' + (state.ticker || '') + '/changes';
     if (state.diff && state.diff.before) h += '/' + state.diff.before;
@@ -746,18 +812,19 @@ function applyHash() {
     else renderMain();
     return;
   }
+  if (parts[0] === 'peers') {
+    state.mode = 'peers';
+    state.peerFocus = (parts[1] || state.ticker || 'ARCC').toUpperCase();
+    state.peerCohort = ['all', 'large', 'mid', 'small'].indexOf(parts[2]) >= 0 ? parts[2] : 'all';
+    $('ticker-search').value = '';
+    updateModeChrome();
+    renderPeerSidebar();
+    ensurePeers().then(() => { renderPeerSidebar(); renderMain(); });
+    return;
+  }
   state.mode = 'bdc';
   updateModeChrome();
   renderSidebar();
-  if (parts[0] === 'peers') {
-    state.tab = 'peers';
-    if (!state.ticker) {
-      const names = Object.keys((state.index && state.index.tickers) || {}).sort();
-      if (names.length) selectTicker(names[0], state.index.tickers[names[0]], null, true);
-    }
-    renderTabs(); updateModeChrome(); renderMain();
-    return;
-  }
   if (parts[0] === 'bdc' && parts[1] && state.index && state.index.tickers[parts[1]]) {
     state.tab = TABS.some(t => t[0] === parts[2]) ? parts[2] : 'overview';
     if (state.tab === 'changes') {
@@ -794,6 +861,7 @@ async function loadTickers() {
 }
 function renderSidebar() {
   if (state.mode === 'companies') return renderCompanySidebar();
+  if (state.mode === 'peers') return renderPeerSidebar();
   const tickers = state.index.tickers || {};
   const q = ($('ticker-search').value || '').toLowerCase();
   const names = Object.keys(tickers).sort();
@@ -858,7 +926,6 @@ const TABS = [
   ['vintage', 'Vintage & Maturity'],
   ['changes', 'QoQ Changes'],
   ['financials', 'Financials'],
-  ['peers', 'Peers'],
 ];
 function renderTabs() {
   const el = $('tabs');
@@ -878,18 +945,30 @@ function renderTabs() {
 }
 function updateModeChrome() {
   const isBdc = state.mode === 'bdc';
+  const isPeers = state.mode === 'peers';
   $('tabs').style.display = isBdc ? '' : 'none';
   $('nav-bdc').className = isBdc ? 'active' : '';
-  $('nav-companies').className = isBdc ? '' : 'active';
+  $('nav-peers').className = isPeers ? 'active' : '';
+  $('nav-companies').className = state.mode === 'companies' ? 'active' : '';
   const showPeriod = isBdc && state.ticker && (state.tab === 'holdings' || state.tab === 'types' || state.tab === 'sectors' || state.tab === 'rates' || state.tab === 'vintage');
   $('period-select').style.display = showPeriod ? '' : 'none';
   $('filter').style.display = isBdc && state.tab === 'holdings' ? '' : 'none';
-  $('ticker-search').placeholder = isBdc ? 'Filter by ticker or name…' : 'Search companies…';
-  $('company-sort').style.display = isBdc ? 'none' : '';
+  $('ticker-search').placeholder = isBdc ? 'Filter by ticker or name…' : (isPeers ? 'Filter peers…' : 'Search companies…');
+  $('company-sort').style.display = state.mode === 'companies' ? '' : 'none';
 }
 function setMode(mode, silent) {
+  const prevMode = state.mode;
   state.mode = mode;
   if (mode === 'companies') { state.company = null; state.companyId = state.companyId || null; }
+  if (mode === 'peers') {
+    state.peerFocus = (prevMode === 'bdc' && state.ticker) ? state.ticker : (state.peerFocus || state.ticker || 'ARCC');
+    $('ticker-search').value = '';
+    updateModeChrome();
+    renderPeerSidebar();
+    if (!silent) updateHash();
+    ensurePeers().then(() => { renderPeerSidebar(); renderMain(); });
+    return;
+  }
   updateModeChrome();
   renderSidebar();
   if (mode === 'bdc') {
@@ -922,7 +1001,7 @@ async function selectTicker(ticker, info, period, fromHash) {
   state.analytics = null; state.financials = null; state.profile = null; state.holdings = null;
   const prof = state.profiles[ticker] || {};
   $('win-title').textContent = ticker + ' — ' + (prof.name || ticker);
-  $('win-meta').textContent = '';
+  $('win-meta').textContent = periodLabel(state.period, null);
   renderPeriodSelect(info);
   renderTabs();
   updateModeChrome();
@@ -938,7 +1017,7 @@ async function selectTicker(ticker, info, period, fromHash) {
   if (!fromHash) updateHash();
   renderSidebar();
   renderMain();
-  $('status').textContent = ticker + ' · ' + (info.row_count || 0).toLocaleString() + ' holdings across ' + periods.length + ' filings';
+  $('status').textContent = ticker + ' · ' + (info.row_count || 0).toLocaleString() + ' holdings · latest ' + periodLabel(state.period, null);
 }
 function renderPeriodSelect(info) {
   const sel = $('period-select');
@@ -947,7 +1026,7 @@ function renderPeriodSelect(info) {
   sel.innerHTML = '';
   for (const p of periods.slice().reverse()) {
     const opt = document.createElement('option');
-    opt.value = p; opt.textContent = p;
+    opt.value = p; opt.textContent = periodLabel(p, null);
     if (p === state.period) opt.selected = true;
     sel.appendChild(opt);
   }
@@ -972,6 +1051,7 @@ async function selectCompany(id, fromHash) {
 function renderMain() {
   const el = $('main');
   if (state.mode === 'companies') return renderCompany(el);
+  if (state.mode === 'peers') return renderPeerEvaluation(el);
   if (!state.ticker) { el.innerHTML = '<div class="empty">Select a BDC from the list.</div>'; return; }
   if (state.tab === 'overview') renderOverview(el);
   else if (state.tab === 'holdings') renderHoldings(el);
@@ -981,7 +1061,6 @@ function renderMain() {
   else if (state.tab === 'vintage') renderVintage(el);
   else if (state.tab === 'changes') renderChanges(el);
   else if (state.tab === 'financials') renderFinancials(el);
-  else if (state.tab === 'peers') renderPeers(el);
 }
 
 function currentPeriodData() {
@@ -1010,7 +1089,7 @@ function latestDerived(metric) {
 function derivedSeries(metric) {
   const node = (state.financials && state.financials.derived || {})[metric];
   if (!node || !node.series) return [];
-  return Object.keys(node.series).sort().map(end => ({ label: end.slice(0, 7), value: node.series[end].val }));
+  return Object.keys(node.series).sort().map(end => ({ label: (quarterInfoFromEnd(end) || {}).short || end.slice(0, 7), value: node.series[end].val }));
 }
 function latestStatement(label) {
   const node = (state.financials && state.financials.statements && state.financials.statements.balance_sheet || {})[label];
@@ -1097,8 +1176,8 @@ async function renderOverview(el) {
   const equity = latestStatement("Stockholders' Equity") !== null ? latestStatement("Stockholders' Equity") : latestStatement('Net Assets');
   const finMeta = (state.analytics.meta && state.analytics.meta.financials) || {};
   const finLatest = (state.financials && state.financials.periods && state.financials.periods.length) ? state.financials.periods[state.financials.periods.length - 1] : null;
-  let html = '<div class="asof">Holdings as of <b>' + esc(p.filing_date) + '</b> (period end ' + esc(p.period_end) + ')' +
-    (finLatest ? ' · Financials latest <b>' + esc(finLatest.end) + '</b> (filed ' + esc(finLatest.filed || '—') + ')' : '') +
+  let html = '<div class="asof">Holdings <b>' + esc(periodLabel(p.filing_date, p.period_end)) + '</b>' +
+    (finLatest ? ' · Financials <b>' + esc(periodLabel(finLatest.filed || finLatest.end, finLatest.end)) + '</b>' : '') +
     (finMeta.balance_check_ok === true ? ' · <span class="badge good">balance ✓</span>' : (finMeta.balance_check_ok === false ? ' · <span class="badge bad">balance check failed</span>' : '')) +
     '</div>';
 
@@ -1134,8 +1213,8 @@ async function renderOverview(el) {
 
   // Trends
   const periods = (state.analytics.periods || []).slice(-16);
-  const fvPoints = periods.map(x => ({ label: x.filing_date.slice(0, 7), value: x.totals.fair_value }));
-  const yieldPoints = periods.map(x => ({ label: x.filing_date.slice(0, 7), value: x.totals.weighted_avg_cash_rate }));
+  const fvPoints = periods.map(x => ({ label: periodLabelShort(x.filing_date, x.period_end), value: x.totals.fair_value }));
+  const yieldPoints = periods.map(x => ({ label: periodLabelShort(x.filing_date, x.period_end), value: x.totals.weighted_avg_cash_rate }));
   html += '<div class="section"><h3>Trends</h3><div class="grid2" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr))">';
   html += lineChart(fvPoints, { title: 'Portfolio fair value', fmt: fmtK });
   html += lineChart(yieldPoints, { title: 'Weighted avg cash rate', fmt: v => v.toFixed(2) + '%' });
@@ -1172,7 +1251,7 @@ async function renderOverview(el) {
   html += '</div></div>';
   el.innerHTML = html;
   const lnk = $('lnk-peers');
-  if (lnk) lnk.onclick = () => { state.tab = 'peers'; renderTabs(); updateModeChrome(); updateHash(); renderMain(); };
+  if (lnk) lnk.onclick = () => { state.peerFocus = state.ticker; setMode('peers'); };
 }
 
 function bars(items, labelKey, valKey, pctKey, fmt, cls, filterKind) {
@@ -1295,7 +1374,7 @@ function historyMatrix(kind) {
   for (const p of periods) for (const it of (p[kind] || [])) counts[it[key]] = (counts[it[key]] || 0) + (it.pct || 0);
   const cats = Object.keys(counts).sort((a, b) => counts[b] - counts[a]).slice(0, 8);
   let html = '<div class="section"><h3>Mix over time (% of fair value)</h3><table><thead><tr><th>' + (kind === 'types' ? 'Type' : 'Sector') + '</th>' +
-    periods.map(p => '<th class="num">' + esc(p.filing_date.slice(0, 7)) + '</th>').join('') + '</tr></thead><tbody>';
+    periods.map(p => '<th class="num">' + esc(periodLabelShort(p.filing_date, p.period_end)) + '</th>').join('') + '</tr></thead><tbody>';
   for (const cat of cats) {
     html += '<tr><td>' + esc(cat) + '</td>';
     for (const p of periods) {
@@ -1482,7 +1561,7 @@ function computeDiff(beforeRows, afterRows) {
 }
 function periodOptions(selected) {
   const dates = ((state.analytics && state.analytics.periods) || []).map(p => p.filing_date).slice().reverse();
-  return dates.map(d => '<option value="' + d + '"' + (d === selected ? ' selected' : '') + '>' + d + '</option>').join('');
+  return dates.map(d => '<option value="' + d + '"' + (d === selected ? ' selected' : '') + '>' + periodLabel(d, null) + '</option>').join('');
 }
 function diffFiltered() {
   const d = state.diff.computed;
@@ -1532,7 +1611,7 @@ function renderDiffDetail(c) {
     '<button class="chip-btn' + (view === 'split' ? ' active' : '') + '" data-view="split">Split</button>' +
     '<span class="small muted">' + c.changedCount + ' field(s) changed</span></div>';
   if (view === 'split') {
-    html += '<table class="diff-split"><thead><tr><th class="field">Field</th><th>Before (' + esc(state.diff.before) + ')</th><th>After (' + esc(state.diff.after) + ')</th></tr></thead><tbody>';
+    html += '<table class="diff-split"><thead><tr><th class="field">Field</th><th>Before: ' + esc(periodLabel(state.diff.before, null)) + '</th><th>After: ' + esc(periodLabel(state.diff.after, null)) + '</th></tr></thead><tbody>';
     for (const f of c.fields) {
       html += '<tr><td class="field">' + esc(f.label) + '</td>' +
         '<td class="before' + (f.changed && f.before !== null && f.before !== undefined ? ' changed' : '') + '">' + esc(f.before === null || f.before === undefined ? '—' : f.fmt(f.before)) + '</td>' +
@@ -1565,6 +1644,7 @@ function renderDiffView(el) {
     '<button class="btn" id="diff-export">Export diff CSV</button>' +
   '</div>';
   html += '<div class="diff-summary">' +
+    '<span class="muted">' + esc(periodLabel(state.diff.before, null)) + ' → ' + esc(periodLabel(state.diff.after, null)) + '</span>' +
     '<span class="add">+' + s.added + ' added</span>' +
     '<span class="rem">−' + s.removed + ' removed</span>' +
     '<span class="mod">~' + s.modified + ' modified</span>' +
@@ -1730,7 +1810,7 @@ function renderFinancials(el) {
     const labels = Object.keys(nodes);
     if (!labels.length) continue;
     html += '<div class="section"><h3>' + label + '</h3><table><thead><tr><th>Line item</th>';
-    for (const pe of periods) html += '<th class="num">' + esc(pe.end.slice(0, 7)) + '<div class="small muted">' + esc(pe.form || '') + '</div></th>';
+    for (const pe of periods) html += '<th class="num">' + esc((quarterInfoFromEnd(pe.end) || {}).label || pe.end) + '<div class="small muted">' + esc([pe.form, pe.filed].filter(Boolean).join(' · ')) + '</div></th>';
     html += '</tr></thead><tbody>';
     for (const l of labels) {
       const node = nodes[l];
@@ -1758,135 +1838,289 @@ function renderFinancials(el) {
   el.innerHTML = html;
 }
 
-// ------------------------------------------------------------------ peers
-function peerFiltered() {
-  const f = state.peerFilters;
-  let peers = ((state.peers && state.peers.peers) || []).slice();
-  if (f.q) peers = peers.filter(p => (p.ticker + ' ' + ((state.profiles[p.ticker] || {}).name || '')).toLowerCase().indexOf(f.q.toLowerCase()) >= 0);
-  if (f.minFv) peers = peers.filter(p => (num(p.fair_value) || 0) >= num(f.minFv) * 1000);
-  if (f.maxDe) peers = peers.filter(p => p.debt_to_equity === null || p.debt_to_equity === undefined || num(p.debt_to_equity) <= num(f.maxDe));
-  if (f.minFirstLien) peers = peers.filter(p => (num(p.first_lien_pct) || 0) >= num(f.minFirstLien));
+// ------------------------------------------------------------------ peer evaluation
+function peerByTicker(t) {
+  return ((state.peers && state.peers.peers) || []).find(p => p.ticker === t) || null;
+}
+function cohortPeers() {
+  const peers = ((state.peers && state.peers.peers) || []).slice();
+  const c = state.peerCohort || 'all';
+  if (c === 'large') return peers.filter(p => (num(p.fair_value) || 0) >= 5000000);
+  if (c === 'mid') return peers.filter(p => (num(p.fair_value) || 0) >= 1000000 && (num(p.fair_value) || 0) < 5000000);
+  if (c === 'small') return peers.filter(p => (num(p.fair_value) || 0) < 1000000);
   return peers;
 }
-async function renderPeers(el) {
-  await ensurePeers();
-  const med = state.peers.medians || {};
-  const peers = peerFiltered();
+function medianOf(values) {
+  const vals = values
+    .filter(v => v !== null && v !== undefined && v !== '' && !isNaN(Number(v)))
+    .map(Number)
+    .sort((a, b) => a - b);
+  if (!vals.length) return null;
+  const n = vals.length, m = Math.floor(n / 2);
+  return n % 2 ? vals[m] : (vals[m - 1] + vals[m]) / 2;
+}
+const PEER_METRICS = [
+  { key: 'fair_value', label: 'Portfolio fair value', fmt: fmtK, higher: true },
+  { key: 'first_lien_pct', label: 'First lien weight', fmt: fmtPct, higher: true },
+  { key: 'second_lien_pct', label: 'Second lien weight', fmt: fmtPct, higher: true },
+  { key: 'equity_pct', label: 'Equity & structured', fmt: fmtPct, higher: false },
+  { key: 'weighted_avg_cash_rate', label: 'Weighted cash rate', fmt: fmtRate, higher: true },
+  { key: 'weighted_avg_spread', label: 'Weighted spread', fmt: fmtRate, higher: true },
+  { key: 'pik_share_pct', label: 'PIK share', fmt: fmtPct, higher: false },
+  { key: 'floating_pct', label: 'Floating-rate weight', fmt: fmtPct, higher: true },
+  { key: 'top10_pct', label: 'Top-10 concentration', fmt: fmtPct, higher: false },
+  { key: 'debt_to_equity', label: 'Debt / equity', fmt: v => v === null || v === undefined ? '—' : num(v).toFixed(2) + '×', higher: false },
+  { key: 'asset_coverage', label: 'Asset coverage', fmt: v => v === null || v === undefined ? '—' : num(v).toFixed(2) + '×', higher: true },
+  { key: 'nii_per_share', label: 'NII / share', fmt: v => v === null || v === undefined ? '—' : '$' + num(v).toFixed(2), higher: true },
+  { key: 'unrealized_gl_pct', label: 'Unrealized G/L', fmt: v => v === null || v === undefined ? '—' : signed(v) + '%', higher: true },
+  { key: 'median_vintage_year', label: 'Median vintage', fmt: v => v === null || v === undefined ? '—' : String(v), higher: true },
+  { key: 'age_0_2_pct', label: 'Acquired < 2 yrs', fmt: fmtPct, higher: true },
+  { key: 'age_5plus_pct', label: 'Age 5+ yrs', fmt: fmtPct, higher: false },
+  { key: 'total_net_change', label: 'QoQ net FV change', fmt: fmtK, higher: true },
+];
+function metricCard(def) {
+  const focus = peerByTicker(state.peerFocus);
+  const cohort = cohortPeers();
+  const vals = cohort.map(p => p[def.key]).filter(v => v !== null && v !== undefined && v !== '' && !isNaN(Number(v))).map(Number);
+  const fv = focus ? num(focus[def.key]) : null;
+  if (fv === null || fv === undefined) {
+    return '<div class="metric-card"><div class="mc-head"><span>' + esc(def.label) + '</span></div><div class="mc-value">—</div><div class="small muted">no data</div></div>';
+  }
+  const better = cohort.filter(p => {
+    const v = num(p[def.key]);
+    if (v === null) return false;
+    return def.higher ? v > fv : v < fv;
+  }).length;
+  const rank = better + 1;
+  const pct = vals.length > 1 ? Math.round((vals.length - rank) / (vals.length - 1) * 100) : 50;
+  const med = medianOf(vals);
+  const min = Math.min.apply(null, vals), max = Math.max.apply(null, vals);
+  const span = max - min || 1;
+  let dots = '';
+  for (const p of cohort) {
+    const v = num(p[def.key]);
+    if (v === null) continue;
+    const left = Math.max(0, Math.min(100, (v - min) / span * 100));
+    dots += '<span class="dot' + (p.ticker === state.peerFocus ? ' me' : '') + '" style="left:' + left.toFixed(1) + '%" title="' + esc(p.ticker + ': ' + def.fmt(v)) + '"></span>';
+  }
+  return '<div class="metric-card">' +
+    '<div class="mc-head"><span>' + esc(def.label) + '</span><span class="mc-rank">#' + rank + ' of ' + vals.length + '</span></div>' +
+    '<div class="mc-value">' + esc(def.fmt(fv)) + '<span class="mc-med">median ' + esc(def.fmt(med)) + '</span></div>' +
+    '<div class="dist">' + dots + '</div>' +
+    '<div class="mc-foot"><span>percentile ' + pct + '</span><span class="' + (def.higher ? 'pos' : 'neg') + '">' + (def.higher ? 'higher = better' : 'lower = better') + '</span></div>' +
+  '</div>';
+}
+function leaderboard(title, key, higher, fmt) {
+  const list = cohortPeers()
+    .filter(p => p[key] !== null && p[key] !== undefined && !isNaN(Number(p[key])))
+    .sort((a, b) => higher ? Number(b[key]) - Number(a[key]) : Number(a[key]) - Number(b[key]));
+  const top = list.slice(0, 5);
+  const focusRank = list.findIndex(p => p.ticker === state.peerFocus) + 1;
+  const focus = peerByTicker(state.peerFocus);
+  let html = '<div class="section"><h3>' + esc(title) + '</h3><div class="leaderboard">';
+  for (let i = 0; i < top.length; i++) {
+    const p = top[i];
+    html += '<div class="lb-row' + (p.ticker === state.peerFocus ? ' me' : '') + '" data-focus="' + p.ticker + '">' +
+      '<span class="lb-rank">' + (i + 1) + '</span><span class="lb-tkr">' + p.ticker + '</span>' +
+      '<span class="lb-name">' + esc((state.profiles[p.ticker] || {}).name || '') + '</span>' +
+      '<span class="lb-val">' + esc(fmt(p[key])) + '</span></div>';
+  }
+  if (focus && focusRank > 5) {
+    html += '<div class="lb-row me" data-focus="' + focus.ticker + '"><span class="lb-rank">' + focusRank + '</span>' +
+      '<span class="lb-tkr">' + focus.ticker + '</span><span class="lb-name">' + esc((state.profiles[focus.ticker] || {}).name || '') + '</span>' +
+      '<span class="lb-val">' + esc(fmt(focus[key])) + '</span></div>';
+  }
+  return html + '</div></div>';
+}
+function peerCell(key, v, row) {
+  if (key === 'period') return row ? periodLabelShort(row.period, row.period_end) : '—';
+  if (v === null || v === undefined || v === '') return '—';
+  if (key === 'ticker') return esc(v);
+  if (key === 'fair_value' || key === 'total_net_change') return fmtK(v);
+  if (key === 'first_lien_pct' || key === 'second_lien_pct' || key === 'subordinated_pct' || key === 'equity_pct' || key === 'pik_share_pct' || key === 'floating_pct' || key === 'top10_pct' || key === 'age_0_2_pct' || key === 'age_5plus_pct') return fmtPct(v);
+  if (key === 'unrealized_gl_pct') return '<span class="' + (num(v) < 0 ? 'neg' : 'pos') + '">' + signed(v) + '%</span>';
+  if (key === 'weighted_avg_cash_rate' || key === 'weighted_avg_spread') return fmtRate(v);
+  if (key === 'nav_per_share' || key === 'nii_per_share') return v === null ? '—' : '$' + num(v).toFixed(2);
+  if (key === 'debt_to_equity' || key === 'asset_coverage') return v === null ? '—' : num(v).toFixed(2) + '×';
+  if (key === 'balance_check_ok') return v === true ? '<span class="badge good">✓</span>' : (v === false ? '<span class="badge bad">✗</span>' : '—');
+  if (key === 'median_vintage_year' || key === 'companies' || key === 'fin_periods') return String(v);
+  return esc(String(v));
+}
+function peerTableHtml() {
+  const cohort = cohortPeers().slice();
+  const cols = [
+    ['ticker', 'Ticker'], ['period', 'Filing'], ['fair_value', 'Fair Value'], ['companies', 'Cos'],
+    ['first_lien_pct', '1st Lien %'], ['second_lien_pct', '2nd Lien %'], ['subordinated_pct', 'Subord %'],
+    ['equity_pct', 'Equity %'], ['weighted_avg_cash_rate', 'Cash %'], ['weighted_avg_spread', 'Spread %'],
+    ['pik_share_pct', 'PIK %'], ['floating_pct', 'Floating %'], ['top10_pct', 'Top10 %'],
+    ['unrealized_gl_pct', 'G/L %'], ['median_vintage_year', 'Vintage'], ['age_0_2_pct', '<2yr %'],
+    ['age_5plus_pct', '5yr+ %'], ['nav_per_share', 'NAV/Sh'], ['debt_to_equity', 'D/E'],
+    ['asset_coverage', 'Cover'], ['nii_per_share', 'NII/Sh'], ['total_net_change', 'QoQ Δ FV'],
+    ['balance_check_ok', 'Bal'], ['fin_periods', 'Fin Qs'],
+  ];
   if (state.sortKey) {
     const k = state.sortKey;
-    peers.sort((a, b) => {
+    cohort.sort((a, b) => {
       const av = a[k], bv = b[k];
       if (typeof av === 'number' && typeof bv === 'number') return (av - bv) * state.sortDir;
       return String(av === null || av === undefined ? '' : av).localeCompare(String(bv === null || bv === undefined ? '' : bv)) * state.sortDir;
     });
   }
-  const cols = [
-    ['ticker', 'Ticker'],
-    ['period', 'Filing'],
-    ['fair_value', 'Fair Value'],
-    ['companies', 'Cos'],
-    ['first_lien_pct', '1st Lien %'],
-    ['second_lien_pct', '2nd Lien %'],
-    ['subordinated_pct', 'Subord %'],
-    ['equity_pct', 'Equity %'],
-    ['weighted_avg_cash_rate', 'Cash %'],
-    ['weighted_avg_spread', 'Spread %'],
-    ['pik_share_pct', 'PIK %'],
-    ['floating_pct', 'Floating %'],
-    ['top10_pct', 'Top10 %'],
-    ['unrealized_gl_pct', 'G/L %'],
-    ['median_vintage_year', 'Vintage'],
-    ['age_0_2_pct', '<2yr %'],
-    ['age_5plus_pct', '5yr+ %'],
-    ['nav_per_share', 'NAV/Sh'],
-    ['debt_to_equity', 'D/E'],
-    ['asset_coverage', 'Cover'],
-    ['nii_per_share', 'NII/Sh'],
-    ['total_net_change', 'QoQ Δ FV'],
-    ['balance_check_ok', 'Bal'],
-    ['fin_periods', 'Fin Qs'],
-  ];
-  const f = state.peerFilters;
-  let html = '<div class="filters">' +
-    '<input id="pf-q" placeholder="Ticker / name" value="' + esc(f.q) + '" />' +
-    '<input id="pf-fv" placeholder="Min FV ($B)" value="' + esc(f.minFv) + '" />' +
-    '<input id="pf-de" placeholder="Max D/E" value="' + esc(f.maxDe) + '" />' +
-    '<input id="pf-1l" placeholder="Min 1st lien %" value="' + esc(f.minFirstLien) + '" />' +
-    '<button class="btn" id="pf-reset">Reset</button>' +
-    '<span class="small muted">' + peers.length + ' of ' + ((state.peers.peers || []).length) + ' BDCs</span>' +
-  '</div>';
-  html += '<div class="muted small" style="margin-bottom:6px">Latest filing per BDC. Click a column to sort, a row to open the BDC. Peer medians are in the footer.</div>';
+  const med = {};
+  for (const c of cols) med[c[0]] = medianOf(cohort.map(p => p[c[0]]));
+  let html = '<div class="muted small" style="margin-bottom:6px">' + cohort.length + ' BDCs in cohort. Click a column to sort, a row to set the peer focus.</div>';
   html += '<table id="peers-table"><thead><tr>';
   for (const c of cols) html += '<th class="sortable num" data-sort="' + c[0] + '">' + c[1] + (state.sortKey === c[0] ? (state.sortDir === 1 ? ' ▲' : ' ▼') : '') + '</th>';
   html += '</tr></thead><tbody>';
-  for (const r of peers) {
-    html += '<tr style="cursor:pointer" data-ticker="' + r.ticker + '">';
-    for (const c of cols) {
-      const key = c[0];
-      let v = r[key];
-      if (key === 'fair_value') v = fmtK(v);
-      else if (key === 'total_net_change') v = v === null || v === undefined ? '—' : fmtK(v);
-      else if (key === 'first_lien_pct' || key === 'second_lien_pct' || key === 'subordinated_pct' || key === 'equity_pct' || key === 'pik_share_pct' || key === 'floating_pct' || key === 'top10_pct' || key === 'age_0_2_pct' || key === 'age_5plus_pct') v = fmtPct(v);
-      else if (key === 'unrealized_gl_pct') v = v === null || v === undefined ? '—' : '<span class="' + (num(v) < 0 ? 'neg' : 'pos') + '">' + signed(v) + '%</span>';
-      else if (key === 'weighted_avg_cash_rate' || key === 'weighted_avg_spread') v = fmtRate(v);
-      else if (key === 'nav_per_share' || key === 'nii_per_share') v = v === null || v === undefined ? '—' : '$' + num(v).toFixed(2);
-      else if (key === 'debt_to_equity' || key === 'asset_coverage') v = v === null || v === undefined ? '—' : num(v).toFixed(2) + '×';
-      else if (key === 'balance_check_ok') v = v === true ? '<span class="badge good">✓</span>' : (v === false ? '<span class="badge bad">✗</span>' : '—');
-      else if (key === 'median_vintage_year') v = v === null || v === undefined ? '—' : v;
-      html += '<td class="num">' + (v === null || v === undefined ? '—' : v) + '</td>';
-    }
+  for (const r of cohort) {
+    html += '<tr style="cursor:pointer" data-focus="' + r.ticker + '">';
+    for (const c of cols) html += '<td class="num">' + peerCell(c[0], r[c[0]], r) + '</td>';
     html += '</tr>';
   }
-  html += '</tbody><tfoot><tr><td>Median</td><td>—</td>' +
-    '<td class="num">' + (med.fair_value === null || med.fair_value === undefined ? '—' : fmtK(med.fair_value)) + '</td>' +
-    '<td class="num">—</td>' +
-    '<td class="num">' + fmtPct(med.first_lien_pct) + '</td>' +
-    '<td class="num">' + fmtPct(med.second_lien_pct) + '</td>' +
-    '<td class="num">' + fmtPct(med.subordinated_pct) + '</td>' +
-    '<td class="num">' + fmtPct(med.equity_pct) + '</td>' +
-    '<td class="num">' + fmtRate(med.weighted_avg_cash_rate) + '</td>' +
-    '<td class="num">' + fmtRate(med.weighted_avg_spread) + '</td>' +
-    '<td class="num">' + fmtPct(med.pik_share_pct) + '</td>' +
-    '<td class="num">' + fmtPct(med.floating_pct) + '</td>' +
-    '<td class="num">' + fmtPct(med.top10_pct) + '</td>' +
-    '<td class="num">' + (med.unrealized_gl_pct === null || med.unrealized_gl_pct === undefined ? '—' : signed(med.unrealized_gl_pct) + '%') + '</td>' +
-    '<td class="num">' + (med.median_vintage_year === null || med.median_vintage_year === undefined ? '—' : med.median_vintage_year) + '</td>' +
-    '<td class="num">' + fmtPct(med.age_0_2_pct) + '</td>' +
-    '<td class="num">' + fmtPct(med.age_5plus_pct) + '</td>' +
-    '<td class="num">' + (med.nav_per_share === null || med.nav_per_share === undefined ? '—' : '$' + num(med.nav_per_share).toFixed(2)) + '</td>' +
-    '<td class="num">' + (med.debt_to_equity === null || med.debt_to_equity === undefined ? '—' : num(med.debt_to_equity).toFixed(2) + '×') + '</td>' +
-    '<td class="num">' + (med.asset_coverage === null || med.asset_coverage === undefined ? '—' : num(med.asset_coverage).toFixed(2) + '×') + '</td>' +
-    '<td class="num">' + (med.nii_per_share === null || med.nii_per_share === undefined ? '—' : '$' + num(med.nii_per_share).toFixed(2)) + '</td>' +
-    '<td class="num">—</td><td class="num">—</td><td class="num">—</td></tr></tfoot></table>';
-
-  html += '<div class="section" style="margin-top:14px"><h3>Peer sector medians</h3>' + bars((state.peers.sector_medians || []).slice(0, 12).map(s => ({ sector: s.sector, median_pct: s.median_pct, bdc_count: s.bdc_count })), 'sector', 'median_pct', 'median_pct', v => fmtPct(v)) + '</div>';
-
-  el.innerHTML = html;
+  html += '</tbody><tfoot><tr><td>Median</td><td>—</td>';
+  for (const c of cols.slice(2)) html += '<td class="num">' + peerCell(c[0], med[c[0]], null) + '</td>';
+  return html + '</tr></tfoot></table>';
+}
+function bindPeerTable(el) {
   el.querySelectorAll('#peers-table th[data-sort]').forEach(th => {
     th.onclick = () => {
       const key = th.getAttribute('data-sort');
       if (state.sortKey === key) state.sortDir = -state.sortDir; else { state.sortKey = key; state.sortDir = 1; }
-      renderPeers($('main'));
+      renderPeerEvaluation($('main'));
     };
   });
-  el.querySelectorAll('#peers-table tr[data-ticker]').forEach(tr => {
-    tr.onclick = () => {
-      const t = tr.getAttribute('data-ticker');
-      if (state.index && state.index.tickers && state.index.tickers[t]) {
-        state.tab = 'overview';
-        selectTicker(t, state.index.tickers[t]);
-        renderTabs();
-      }
-    };
+  el.querySelectorAll('#peers-table tr[data-focus]').forEach(tr => {
+    tr.onclick = () => selectPeerFocus(tr.getAttribute('data-focus'));
   });
-  const bind = (id, key) => {
-    const input = $(id);
-    if (!input) return;
-    input.onchange = () => { state.peerFilters[key] = input.value.trim(); renderPeers($('main')); };
+}
+async function ensurePeerFocusAnalytics() {
+  const t = state.peerFocus;
+  if (!t) return null;
+  if (!state.peerFocusAnalytics) state.peerFocusAnalytics = {};
+  if (state.peerFocusAnalytics[t]) return state.peerFocusAnalytics[t];
+  const res = await fetch('/api/tickers/' + t + '/analytics');
+  const data = res.ok ? await res.json() : null;
+  state.peerFocusAnalytics[t] = data;
+  return data;
+}
+async function renderPeerEvaluation(el) {
+  await ensurePeers();
+  const peers = state.peers.peers || [];
+  if (!peers.length) { el.innerHTML = '<div class="empty">No peer data.</div>'; return; }
+  if (!state.peerFocus || !peers.some(p => p.ticker === state.peerFocus)) {
+    state.peerFocus = (state.ticker && peers.some(p => p.ticker === state.ticker)) ? state.ticker : peers[0].ticker;
+  }
+  const focus = peerByTicker(state.peerFocus);
+  const cohort = cohortPeers();
+  const analytics = await ensurePeerFocusAnalytics();
+  const prof = state.profiles[state.peerFocus] || {};
+  const latest = analytics && analytics.periods && analytics.periods.length ? analytics.periods[analytics.periods.length - 1] : null;
+  const finLatest = focus && focus.fin_latest ? periodLabelShort(focus.period, null) + ' holdings' : '';
+
+  let html = '<div class="peer-focus">' +
+    '<div><div class="pf-name">' + state.peerFocus + ' — ' + esc(prof.name || '') + '</div>' +
+    '<div class="small muted">Latest holdings ' + esc(periodLabel(focus.period, focus.period_end)) +
+    (focus.fin_latest ? ' · financials through ' + esc((quarterInfoFromEnd(focus.fin_latest) || {}).label || focus.fin_latest) : '') +
+    ' · ' + (focus.fin_periods || 0) + ' financial quarters</div></div>' +
+    '<div class="small" style="display:flex;gap:14px;flex-wrap:wrap;align-items:center">' +
+      '<span>FV <b>' + fmtK(focus.fair_value) + '</b></span>' +
+      '<span>Companies <b>' + fmtNum(focus.companies) + '</b></span>' +
+      '<span>NAV <b>' + (focus.nav_per_share === null || focus.nav_per_share === undefined ? '—' : '$' + num(focus.nav_per_share).toFixed(2)) + '</b></span>' +
+      '<span>D/E <b>' + (focus.debt_to_equity === null || focus.debt_to_equity === undefined ? '—' : num(focus.debt_to_equity).toFixed(2) + '×') + '</b></span>' +
+      '<span>NII <b>' + (focus.nii_per_share === null || focus.nii_per_share === undefined ? '—' : '$' + num(focus.nii_per_share).toFixed(2)) + '</b></span>' +
+    '</div>' +
+    '<button class="btn" id="peer-open-bdc">Open BDC view</button>' +
+  '</div>';
+
+  html += '<div class="diff-bar">' +
+    ['all|All BDCs', 'large|Large ($5B+)', 'mid|Mid ($1–5B)', 'small|Small (<$1B)'].map(o => {
+      const parts = o.split('|');
+      return '<button class="chip-btn' + ((state.peerCohort || 'all') === parts[0] ? ' active' : '') + '" data-cohort="' + parts[0] + '">' + parts[1] + '</button>';
+    }).join('') +
+    '<span class="small muted">' + cohort.length + ' BDCs in cohort · ranks and medians computed on this cohort</span>' +
+  '</div>';
+
+  html += '<div class="metric-grid">' + PEER_METRICS.map(metricCard).join('') + '</div>';
+
+  html += '<div class="grid3">';
+  html += leaderboard('Highest cash rate', 'weighted_avg_cash_rate', true, fmtRate);
+  html += leaderboard('Most first-lien', 'first_lien_pct', true, fmtPct);
+  html += leaderboard('Lowest leverage', 'debt_to_equity', false, v => num(v).toFixed(2) + '×');
+  html += leaderboard('Newest portfolio', 'median_vintage_year', true, v => String(v));
+  html += leaderboard('Least concentrated', 'top10_pct', false, fmtPct);
+  html += leaderboard('Largest portfolios', 'fair_value', true, fmtK);
+  html += '</div>';
+
+  if (latest) {
+    const medMap = {};
+    for (const s of (state.peers.sector_medians || [])) medMap[s.sector] = s.median_pct;
+    html += '<div class="section"><h3>Sector tilt vs peer median — ' + esc(periodLabel(latest.filing_date, latest.period_end)) + '</h3>';
+    html += '<table class="tilt-table"><thead><tr><th>Sector</th><th class="num">Focus %</th><th class="num">Peer median</th><th class="num">Tilt</th><th>Focus weight</th></tr></thead><tbody>';
+    for (const s of (latest.sectors || []).slice(0, 10)) {
+      const med = medMap[s.sector];
+      const tilt = med === undefined ? null : s.pct - med;
+      const w = Math.max(2, Math.min(100, s.pct / 40 * 100));
+      html += '<tr><td>' + esc(s.sector) + '</td><td class="num">' + fmtPct(s.pct) + '</td>' +
+        '<td class="num">' + (med === undefined ? '—' : fmtPct(med)) + '</td>' +
+        '<td class="num ' + (tilt === null ? '' : (tilt >= 0 ? 'pos' : 'neg')) + '">' + (tilt === null ? '—' : signed(tilt) + ' pts') + '</td>' +
+        '<td><div class="bar-track" style="height:10px"><div class="bar-fill" style="width:' + w.toFixed(1) + '%"></div></div></td></tr>';
+    }
+    html += '</tbody></table><div class="small muted" style="margin-top:4px">Peer median = median sector weight across BDCs reporting that sector.</div></div>';
+  }
+
+  html += '<div class="section"><h3>Full peer table <button class="btn" id="peer-toggle-table" style="margin-left:8px">' + (state.peerShowTable ? 'Hide' : 'Show') + '</button></h3>';
+  if (state.peerShowTable) html += '<div id="peer-table-wrap">' + peerTableHtml() + '</div>';
+  html += '</div>';
+
+  el.innerHTML = html;
+
+  $('peer-open-bdc').onclick = () => {
+    if (state.index && state.index.tickers[state.peerFocus]) {
+      state.tab = 'overview';
+      selectTicker(state.peerFocus, state.index.tickers[state.peerFocus]);
+      renderTabs();
+    }
   };
-  bind('pf-q', 'q'); bind('pf-fv', 'minFv'); bind('pf-de', 'maxDe'); bind('pf-1l', 'minFirstLien');
-  const reset = $('pf-reset');
-  if (reset) reset.onclick = () => { state.peerFilters = { q: '', minFv: '', maxDe: '', minFirstLien: '' }; renderPeers($('main')); };
+  el.querySelectorAll('[data-cohort]').forEach(b => {
+    b.onclick = () => { state.peerCohort = b.getAttribute('data-cohort'); updateHash(); renderPeerEvaluation(el); };
+  });
+  el.querySelectorAll('.lb-row[data-focus]').forEach(r => {
+    r.onclick = () => selectPeerFocus(r.getAttribute('data-focus'));
+  });
+  const toggle = $('peer-toggle-table');
+  if (toggle) toggle.onclick = () => { state.peerShowTable = !state.peerShowTable; renderPeerEvaluation(el); };
+  if (state.peerShowTable) bindPeerTable(el);
+}
+function renderPeerSidebar() {
+  const list = $('ticker-list');
+  $('sidebar-title').textContent = 'Peer focus';
+  if (!state.peers) {
+    list.innerHTML = '<div class="empty">Loading peers…</div>';
+    ensurePeers().then(() => renderPeerSidebar());
+    return;
+  }
+  const peers = (state.peers.peers || []).slice().sort((a, b) => (num(b.fair_value) || 0) - (num(a.fair_value) || 0));
+  const q = ($('ticker-search').value || '').toLowerCase();
+  const rows = q ? peers.filter(p => (p.ticker + ' ' + ((state.profiles[p.ticker] || {}).name || '')).toLowerCase().indexOf(q) >= 0) : peers;
+  $('ticker-count').textContent = peers.length + ' BDCs';
+  list.innerHTML = '';
+  for (const p of rows) {
+    const btn = document.createElement('button');
+    btn.className = 'ticker' + (p.ticker === state.peerFocus ? ' active' : '');
+    btn.innerHTML = '<div><b>' + p.ticker + '</b> <span class="small muted">' + fmtK(p.fair_value) + '</span></div>' +
+      '<div class="name">' + esc((state.profiles[p.ticker] || {}).name || '') + '</div>';
+    btn.onclick = () => selectPeerFocus(p.ticker);
+    list.appendChild(btn);
+  }
+  if (!rows.length) list.innerHTML = '<div class="empty">No match.</div>';
+}
+function selectPeerFocus(ticker) {
+  state.mode = 'peers';
+  state.peerFocus = ticker;
+  updateModeChrome();
+  updateHash();
+  renderPeerSidebar();
+  renderPeerEvaluation($('main'));
 }
 
 // ------------------------------------------------------------------ companies view
@@ -1999,6 +2233,7 @@ $('btn-link').onclick = () => {
   }
 };
 $('nav-bdc').onclick = () => setMode('bdc');
+$('nav-peers').onclick = () => setMode('peers');
 $('nav-companies').onclick = () => { state.companyId = null; setMode('companies'); };
 $('company-sort').onchange = () => { state.companySort = $('company-sort').value; renderCompanySidebar(); };
 $('modal-x').onclick = closeModal;

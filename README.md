@@ -174,10 +174,16 @@ Views, all powered by the data above:
 - **Vintage & Maturity** — acquisition-year vintage, portfolio-age buckets, per-year maturity wall, unrealized gain/loss by type and top gainers/losers
 - **QoQ Changes** — GitHub-style two-pane diff: pick any before/after filing, browse added/removed/modified companies like a file list, and inspect field-level changes in Unified or Split view
 - **Financials** — balance sheet, income statement and cash flow (last 8 quarters) + trend charts
-- **Peers** — sortable/filterable comparison across all BDCs with peer medians
+
+Periods are shown as fiscal quarters with filing dates, e.g. `Q2 2026 (2026-07-29)`; financial statement columns also show the form (`10-Q` / `10-K`).
+
+Top-level sections (header nav):
+
+- **BDC View** — the per-BDC tabs above
+- **Peer Evaluation** — pick a focus BDC and a cohort (All / Large $5B+ / Mid $1–5B / Small <$1B). 17 metric cards each show the focus value, peer median, rank (`#12 of 49`), percentile, and a dot-strip distribution of every peer. Plus six leaderboards, a sector-tilt table vs peer median, and the full sortable table on demand
 - **Companies** — cross-BDC borrower view: which BDCs hold a company, exposure by BDC/maturity/type, profile
 
-Extras: CSV export of the visible tables, shareable deep links (`#/bdc/ARCC/vintage/2026-07-29`, `#/bdc/ARCC/holdings/2026-07-29/sector:Healthcare`, `#/companies/co_…`), and data-freshness indicators (holdings as-of vs financials as-of, balance check).
+Extras: CSV export of the visible tables, shareable deep links (`#/peers/ARCC/large`, `#/bdc/ARCC/vintage/2026-07-29`, `#/bdc/ARCC/holdings/2026-07-29/sector:Healthcare`, `#/companies/co_…`), and data-freshness indicators (holdings quarter vs financials quarter, balance check).
 
 **Interactive drill-down:** click any bar, card or table row in Loan Types, Sectors, Rates & Structure or Vintage & Maturity to preview that slice (positions, fair value, % of portfolio, top holdings) and jump straight to Holdings filtered to it. The filter appears as a removable chip and is encoded in the URL. The QoQ company list and the Companies sidebar are sortable (Δ fair value, current fair value, positions, name, fields changed / exposure, # BDCs, name).
 
