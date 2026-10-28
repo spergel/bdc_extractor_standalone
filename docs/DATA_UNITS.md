@@ -1,41 +1,44 @@
 # Data units – single source of truth
 
-All currency and numeric types are standardized so numbers match across BDC view, Companies view, Sectors, Analytics, and tables.
+All currency and numeric types are standardized so numbers match across Holdings, Analytics, Financials, and Peers views.
 
 ## Currency
 
 ### THOUSANDS (holdings / analytics)
 
-- **Source:** Investment CSVs (`investments/*.csv`, consolidated), in-memory `Holding` (`fair_value_thousands`, `principal_amount_thousands`, `cost_thousands`, etc.).
+- **Source:** Investment CSVs (`investments/*.csv`, consolidated).
 - **Meaning:** Value in thousands of dollars. `8750` = $8,750,000 = $8.75 M.
-- **Frontend:** Use **`formatThousandsAsCurrency(value)`** from `frontend/src/utils/formatCurrency.ts`.
-- **Used in:** Holdings table (principal, cost, fair value), Analytics (total FV, avg position, breakdowns), Charts, Diff viewer, Drill-down, BDC sector view.
+- **Frontend:** Use **`fmtK(value)`** in `app/src/index.ts`.
+- **Used in:** Holdings table (principal, cost, fair value), Overview cards, Type/Sector/Vintage breakdowns, Peers table (fair value).
 
-**Backend requirement:** Extraction and consolidation must output `fair_value`, `principal_amount`, `cost`, `amortized_cost`, `commitment_limit`, `undrawn_commitment` in **thousands**. (LLM scraper and XBRL extractor should scale to thousands before or when writing CSV.)
+**Backend requirement:** Extraction and consolidation must output `fair_value`, `principal_amount`, `cost`, `amortized_cost`, `commitment_limit`, `undrawn_commitment` in **thousands**.
+
+### RAW DOLLARS (financial statements)
+
+- **Source:** `financials/{TICKER}_financials.json` (SEC company facts API values are actual dollars).
+- **Meaning:** `30596000000` = $30,596,000,000 = $30.6 B.
+- **Frontend:** Use **`fmtMoney(value)`** in `app/src/index.ts`.
+- **Used in:** Financials tab (balance sheet / income / cash flow tables), Overview financial snapshot.
 
 ### MILLIONS (exposures / company detail / sectors)
 
-- **Source:** `company_exposures.csv` (`total_exposure_millions`), `company_detail.json` (`by_bdc`, `by_maturity`, `by_investment_type`), portfolio/industry summaries.
-- **Meaning:** Value in millions of dollars. `608` = $608 M, `1.2` = $1.2 B when shown as billions.
-- **Frontend:** Use **`formatMillionsAsCurrency(value)`** from `frontend/src/utils/formatCurrency.ts`.
-- **Used in:** Company page (total exposure, lender table, maturity/type breakdowns), Companies sidebar, Sectors sidebar, Sector page.
+- **Source:** `company_exposures.csv` (`total_exposure_millions`), `company_detail.json`.
+- **Meaning:** Value in millions of dollars. `608` = $608 M.
+- **Used in:** company exposure artifacts (not the current app UI).
 
 ## Rules
 
-1. **Never** format currency with ad-hoc `toFixed` / `toLocaleString` + "M" or "B". Always use `formatThousandsAsCurrency` or `formatMillionsAsCurrency`.
-2. **Never** mix units: if a value is in thousands, don’t pass it to `formatMillionsAsCurrency` (you’d show 1000× too small).
-3. **New views:** If you add a new component that shows dollar amounts, check whether the data is in thousands (holdings/analytics) or millions (exposures/detail) and use the matching formatter.
-4. **CSV producers:** Keep investment CSVs in thousands so the frontend (adapter + formatters) stays correct everywhere.
+1. **Never** format currency with ad-hoc `toFixed` / `toLocaleString` + "M" or "B". Use `fmtK` (thousands), `fmtMoney` (raw dollars), or an explicit millions formatter.
+2. **Never** mix units: holdings/analytics are thousands; financials JSON is raw dollars.
+3. **CSV producers:** Keep investment CSVs in thousands.
 
 ## Quick reference
 
-| View / data              | Unit     | Formatter                     |
-|--------------------------|----------|-------------------------------|
-| Holdings table           | Thousands| `formatThousandsAsCurrency`  |
-| Analytics (total FV, etc.) | Thousands | `formatThousandsAsCurrency` |
-| Charts, Diff, Drill-down | Thousands| `formatThousandsAsCurrency`  |
-| Companies sidebar/list   | Millions | `formatMillionsAsCurrency`   |
-| Company page (exposure)  | Millions | `formatMillionsAsCurrency`   |
-| Sectors sidebar/page     | Millions | `formatMillionsAsCurrency`   |
-
-See also `frontend/src/utils/formatCurrency.ts` (table in file comment).
+| View / data              | Unit      | Formatter (app/src/index.ts) |
+|--------------------------|-----------|------------------------------|
+| Holdings table           | Thousands | `fmtK`                       |
+| Analytics (total FV, etc.) | Thousands | `fmtK`                     |
+| Type/Sector/Vintage bars | Thousands | `fmtK`                       |
+| Peers fair value         | Thousands | `fmtK`                       |
+| Financial statements     | Raw $     | `fmtMoney`                   |
+| Per-share values         | $ / share | `'$' + num(v).toFixed(2)`    |

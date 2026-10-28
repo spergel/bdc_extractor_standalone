@@ -14,10 +14,10 @@ Extracts, cleans, and standardizes investment portfolio data from BDC 10-Q/10-K 
 
 ### Extract Latest Quarterly Data
 ```bash
-# Extract all BDCs (latest quarter)
+# Extract all BDCs (latest quarter) + refresh quarterly financials & analytics
 python process_all_bdcs.py --years-back 0
 
-# Done! Clean, standardized data ready in frontend/public/data/
+# Done! Clean, standardized data ready in app/public/data/
 ```
 
 ### Extract Historical Data
@@ -43,21 +43,23 @@ The extractor automatically:
 ## 📁 Output Structure
 
 ```
-frontend/public/data/
+app/public/data/
 ├── investments/
 │   ├── ARCC.csv                    # All ARCC holdings (consolidated)
 │   ├── ARCC/
 │   │   ├── 2025-11-06.csv         # Quarterly snapshot
-│   │   ├── 2025-08-07.csv
 │   │   └── ...
 │   └── investments_index.json      # Metadata index
 ├── financials/
-│   ├── ARCC_balance_sheet.csv
-│   ├── ARCC_income_statement.csv
+│   ├── ARCC_financials.json        # Quarterly balance sheet + income + cash flow
+│   ├── financials_index.json       # Coverage summary across tickers
 │   └── ...
-├── balance_sheets.csv               # All BDCs consolidated
-├── income_statements.csv
-└── cash_flows.csv
+├── analytics/
+│   ├── ARCC.json                   # Per-period type/sector/vintage breakdowns
+│   ├── peers.json                  # Cross-BDC comparison (latest periods)
+│   └── ...
+├── {TICKER}/profile.json           # Market profile per BDC
+└── company_profiles.json           # Portfolio company profiles
 ```
 
 ## 🛠️ Features
@@ -143,28 +145,44 @@ SEC_API_KEY=your_sec_key_here          # Optional (increases rate limits)
 
 ### Core Scripts
 - **`process_all_bdcs.py`** - **Main entry point** (runs everything)
-- `src/extraction/llm_table_scraper.py` - LLM-powered table extraction
-- `src/extraction/financial_statements_extractor.py` - Financial data extraction
+- `src/extraction/financial_statements_extractor.py` - Quarterly 3-statement XBRL extraction (SEC company facts API)
 - `src/extraction/sec_api_client.py` - SEC EDGAR API interface
 - `src/processing/post_process_extraction.py` - Automatic data cleaning
+- `src/processing/build_analytics.py` - Type/sector/vintage/peers analytics JSON for the UI
 - `src/processing/standardization_rules.py` - Standardization logic
 - `src/consolidation/consolidate_investments.py` - Merge investment CSVs
-- `src/consolidation/consolidate_financial_statements.py` - Merge financial CSVs
+- `src/consolidation/consolidate_financial_statements.py` - Per-ticker financial overviews
+- `app/src/index.ts` - Plain HTML frontend + data API (Hono)
 
-## 🎨 Frontend Integration
+## 🎨 Frontend
 
-The output is designed for React/Next.js frontends:
+The frontend is a **plain HTML/CSS/JS app** served by the small Hono server in
+`app/` (no React, no build step):
 
-```typescript
-import investmentsIndex from '@/public/data/investments_index.json';
-import { parse } from 'csv-parse/sync';
+```bash
+cd app && npm install && npm run dev
+# open http://localhost:8787
+```
 
-// Load all tickers
-const tickers = investmentsIndex.tickers; // ["ARCC", "MAIN", ...]
+Views, all powered by the data above:
 
-// Load specific ticker's latest data
-const response = await fetch('/data/investments/ARCC.csv');
-const data = parse(await response.text(), { columns: true });
+- **Overview** — portfolio fair value, companies, weighted yield/spread plus NAV, leverage and NII from the quarterly filings
+- **Holdings** — filterable per-filing holdings table
+- **Loan Types** — first lien / second lien / equity mix, current period + mix over time
+- **Sectors** — industry mix, current period + mix over time
+- **Vintage** — acquisition-year distribution, portfolio age buckets, maturity buckets
+- **Financials** — balance sheet, income statement and cash flow (last 8 quarters)
+- **Peers** — sortable comparison across all BDCs
+
+API endpoints used by the UI:
+
+```
+/api/tickers                          index of BDCs + periods
+/api/tickers/:ticker/periods/:period  holdings rows for one filing
+/api/tickers/:ticker/analytics        per-period breakdowns
+/api/tickers/:ticker/financials       quarterly 3-statement data
+/api/peers                            cross-BDC comparison
+/api/profiles                         compact BDC name/price summaries
 ```
 
 ## 📈 Supported BDCs

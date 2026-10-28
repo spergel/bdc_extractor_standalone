@@ -1,0 +1,10 @@
+name = "bdc-app"
+main = "src/index.ts"
+compatibility_date = "2026-10-24"
+
+# Static assets (the consolidated data CSVs/JSONs). When deploying to
+# Cloudflare Workers, bind these and replace the local `readDataFile` helper
+# with `env.ASSETS.fetch(...)`.
+[assets]
+directory = "./public"
+binding = "ASSETS"
