@@ -101,6 +101,42 @@ and QoQ additionally warns when the net change exceeds 35% of the opening
 portfolio. This does not replace source verification, but it prevents an
 extraction problem from looking like a real portfolio move.
 
+## Holdings reconciliation & trust badges
+
+`src/processing/build_data_quality.py` compares each period's holdings total
+(`fair_value`, stored in thousands) against the XBRL
+`Investments at Fair Value` fact for the same quarter end. Reported values may
+be in dollars, thousands or millions, so a per-ticker scale is inferred before
+comparison.
+
+- **match** — within 5% of reported
+- **near** — within 10%
+- **mismatch** — more than 10% off (candidate for re-extraction)
+- **trust** — good (80%+ match and no mismatches), warn (50%+ match), bad, or
+  unknown when no reported value exists
+
+Outputs `quality/{TICKER}.json` and `quality/quality_index.json`; the
+**Data Quality** section shows the scorecard, trust badges, filing links and a
+per-period drill-down. ARCC and BXSL currently reconcile at 100%; OBDC's
+2022–2024 10-Ks and a few small-BDC periods remain flagged for re-extraction.
+
+## Unit normalization
+
+`fix_multi_block_holdings.py` also handles files extracted in dollars instead of
+thousands: if the median position value in a filing is above $1B
+(`fair_value > 1,000,000` in thousands), monetary columns are divided by 1000.
+This repairs early PFLT/PNNT/FSK files while leaving normal filings untouched.
+It only scales **down**; a file that is 1000x too small is treated as a partial
+extraction and left flagged rather than inflated.
+
+## Financial statement normalization
+
+The Financials tab labels flow durations as Q / H1 / 9M / FY. When a period is
+reported only on a year-to-date basis, the UI converts it to a discrete quarter
+(YTD − prior YTD) and marks it with a **†**. Balance-sheet facts are never
+modified. The same duration-aware annualization is used for valuation and
+coverage metrics in `build_analytics.py`.
+
 ## Refresh commands
 
 ```bash
@@ -115,11 +151,15 @@ python src/processing/extract_credit_quality.py
 
 # Rebuild analytics/peers (reads filings + credit if present)
 python src/processing/build_analytics.py
+
+# Reconcile holdings against reported Investments at Fair Value
+python src/processing/build_data_quality.py
 ```
 
-`process_all_bdcs.py` runs the block fixer after consolidation and the rest
-after financials; use `--skip-block-fix`, `--skip-filings`, `--skip-credit`,
-or `--skip-analytics` to skip a step.
+`process_all_bdcs.py` runs the block fixer after consolidation, then
+financials → filings → credit → analytics → quality. Use `--skip-block-fix`,
+`--skip-filings`, `--skip-credit`, `--skip-analytics`, or `--skip-quality` to
+skip a step.
 
 ## Known limitations
 

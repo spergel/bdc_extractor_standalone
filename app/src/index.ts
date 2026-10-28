@@ -166,6 +166,19 @@ app.get("/api/peers", async (c) => {
   return c.json(data);
 });
 
+app.get("/api/quality", async (c) => {
+  const data = await readJson("quality/quality_index.json");
+  if (!data) return c.json({ error: "quality index not found" }, 404);
+  return c.json(data);
+});
+
+app.get("/api/tickers/:ticker/quality", async (c) => {
+  const ticker = c.req.param("ticker").toUpperCase();
+  const data = await readJson(`quality/${ticker}.json`);
+  if (!data) return c.json({ error: "quality detail not found" }, 404);
+  return c.json(data);
+});
+
 /** One request that returns compact summaries of every ticker profile. */
 app.get("/api/profiles", async (c) => {
   const index = await readJson<IndexPayload>("investments_index.json");
@@ -488,6 +501,7 @@ const UI_HTML = `<!doctype html>
       <button id="nav-bdc" class="active">BDC View</button>
       <button id="nav-peers">Peer Evaluation</button>
       <button id="nav-companies">Companies</button>
+      <button id="nav-quality">Data Quality</button>
     </nav>
   </header>
   <div class="layout">
@@ -532,6 +546,9 @@ const state = {
   companies: null,
   companyId: null,
   company: null,
+  qualityIndex: null,
+  qualityTicker: null,
+  qualityDetail: null,
   mode: 'bdc',
   ticker: null,
   period: null,
@@ -618,6 +635,27 @@ function durationLabel(days) {
   if (d <= 195) return 'H1';
   if (d <= 290) return '9M';
   return 'FY';
+}
+function discreteQuarter(series, end, ends) {
+  const row = series[end];
+  if (!row) return null;
+  const d = num(row.duration_days);
+  const raw = num(row.val);
+  if (d === null || d <= 110 || raw === null) return { row, val: raw, derived: false };
+  let lo, hi;
+  if (d <= 195) { lo = 70; hi = 110; }
+  else if (d <= 290) { lo = 160; hi = 200; }
+  else { lo = 250; hi = 290; }
+  for (const e of ends) {
+    const diff = (new Date(end) - new Date(e)) / 86400000;
+    const pd = num(series[e].duration_days);
+    if (diff >= 70 && diff <= 110 && pd !== null && pd >= lo && pd <= hi) {
+      const prior = num(series[e].val);
+      if (prior !== null) return { row, val: raw - prior, derived: true };
+      break;
+    }
+  }
+  return { row, val: raw, derived: false };
 }
 // --- quarter labels: prefer fiscal quarter end, fall back to filing date ---
 function quarterEndFromFiling(filingDate) {
@@ -857,7 +895,8 @@ function applyPendingFilter() {
 // ------------------------------------------------------------------ deep links
 function updateHash() {
   let h;
-  if (state.mode === 'companies') h = '#/companies' + (state.companyId ? '/' + state.companyId : '');
+  if (state.mode === 'quality') h = '#/quality' + (state.qualityTicker ? '/' + state.qualityTicker : '');
+  else if (state.mode === 'companies') h = '#/companies' + (state.companyId ? '/' + state.companyId : '');
   else if (state.mode === 'peers') h = '#/peers/' + (state.peerFocus || '') + '/' + (state.peerCohort || 'all');
   else if (state.tab === 'changes') {
     h = '#/bdc/' + (state.ticker || '') + '/changes';
@@ -871,6 +910,16 @@ function updateHash() {
 }
 function applyHash() {
   const parts = location.hash.replace(/^#\\/?/, '').split('/').filter(Boolean);
+  if (parts[0] === 'quality') {
+    state.mode = 'quality';
+    updateModeChrome();
+    const ready = state.qualityIndex ? Promise.resolve() : fetch('/api/quality').then(r => r.json()).then(d => { state.qualityIndex = d; });
+    ready.then(() => {
+      if (parts[1]) selectQualityTicker(parts[1].toUpperCase(), true);
+      else { state.qualityTicker = null; state.qualityDetail = null; $('win-title').textContent = 'Data Quality'; $('win-meta').textContent = ''; renderQualitySidebar(); renderMain(); }
+    });
+    return;
+  }
   if (parts[0] === 'companies') {
     state.mode = 'companies';
     updateModeChrome();
@@ -929,6 +978,7 @@ async function loadTickers() {
 function renderSidebar() {
   if (state.mode === 'companies') return renderCompanySidebar();
   if (state.mode === 'peers') return renderPeerSidebar();
+  if (state.mode === 'quality') return renderQualitySidebar();
   const tickers = state.index.tickers || {};
   const q = ($('ticker-search').value || '').toLowerCase();
   const names = Object.keys(tickers).sort();
@@ -1014,20 +1064,34 @@ function renderTabs() {
 function updateModeChrome() {
   const isBdc = state.mode === 'bdc';
   const isPeers = state.mode === 'peers';
+  const isQuality = state.mode === 'quality';
   $('tabs').style.display = isBdc ? '' : 'none';
   $('nav-bdc').className = isBdc ? 'active' : '';
   $('nav-peers').className = isPeers ? 'active' : '';
   $('nav-companies').className = state.mode === 'companies' ? 'active' : '';
+  $('nav-quality').className = isQuality ? 'active' : '';
   const showPeriod = isBdc && state.ticker && (state.tab === 'holdings' || state.tab === 'types' || state.tab === 'sectors' || state.tab === 'rates' || state.tab === 'vintage');
   $('period-select').style.display = showPeriod ? '' : 'none';
   $('filter').style.display = isBdc && state.tab === 'holdings' ? '' : 'none';
-  $('ticker-search').placeholder = isBdc ? 'Filter by ticker or name…' : (isPeers ? 'Filter peers…' : 'Search companies…');
+  $('ticker-search').placeholder = isBdc ? 'Filter by ticker or name…' : (isPeers ? 'Filter peers…' : (isQuality ? 'Filter BDCs…' : 'Search companies…'));
   $('company-sort').style.display = state.mode === 'companies' ? '' : 'none';
 }
 function setMode(mode, silent) {
   const prevMode = state.mode;
   state.mode = mode;
   if (mode === 'companies') { state.company = null; state.companyId = state.companyId || null; }
+  if (mode === 'quality') {
+    state.qualityTicker = null;
+    state.qualityDetail = null;
+    $('ticker-search').value = '';
+    updateModeChrome();
+    $('win-title').textContent = 'Data Quality';
+    $('win-meta').textContent = '';
+    const ready = state.qualityIndex ? Promise.resolve() : fetch('/api/quality').then(r => r.json()).then(d => { state.qualityIndex = d; });
+    ready.then(() => { renderQualitySidebar(); renderMain(); });
+    if (!silent) updateHash();
+    return;
+  }
   if (mode === 'peers') {
     state.peerFocus = (prevMode === 'bdc' && state.ticker) ? state.ticker : (state.peerFocus || state.ticker || 'ARCC');
     $('ticker-search').value = '';
@@ -1120,6 +1184,7 @@ function renderMain() {
   const el = $('main');
   if (state.mode === 'companies') return renderCompany(el);
   if (state.mode === 'peers') return renderPeerEvaluation(el);
+  if (state.mode === 'quality') return renderQuality(el);
   if (!state.ticker) { el.innerHTML = '<div class="empty">Select a BDC from the list.</div>'; return; }
   if (state.tab === 'overview') renderOverview(el);
   else if (state.tab === 'valuation') renderValuation(el);
@@ -2085,6 +2150,122 @@ function renderValuation(el) {
 // ------------------------------------------------------------------ financials
 
 // ------------------------------------------------------------------ financials
+// ------------------------------------------------------------------ data quality
+function qualityTrustBadge(t) {
+  const cls = t === 'good' ? 'good' : t === 'warn' ? 'warn' : t === 'bad' ? 'bad' : '';
+  return '<span class="badge ' + cls + '">' + esc(t || 'unknown') + '</span>';
+}
+function qualityRows() {
+  const idx = state.qualityIndex || {};
+  const rows = Object.entries(idx.tickers || {}).map(([ticker, s]) => Object.assign({ ticker }, s));
+  const severity = { bad: 0, warn: 1, unknown: 2, good: 3 };
+  rows.sort((a, b) => (severity[a.trust] === undefined ? 9 : severity[a.trust]) - (severity[b.trust] === undefined ? 9 : severity[b.trust])
+    || (a.match_pct === null || a.match_pct === undefined ? 101 : a.match_pct) - (b.match_pct === null || b.match_pct === undefined ? 101 : b.match_pct));
+  return rows;
+}
+function renderQualitySidebar() {
+  const list = $('ticker-list');
+  $('sidebar-title').textContent = 'Data Quality';
+  if (!state.qualityIndex) { list.innerHTML = '<div class="empty">Loading…</div>'; return; }
+  const q = ($('ticker-search').value || '').toLowerCase();
+  let rows = qualityRows();
+  if (q) rows = rows.filter(r => (r.ticker + ' ' + ((state.profiles[r.ticker] || {}).name || '')).toLowerCase().indexOf(q) >= 0);
+  $('ticker-count').textContent = rows.length + ' BDCs';
+  list.innerHTML = '';
+  for (const r of rows) {
+    const btn = document.createElement('button');
+    btn.className = 'ticker' + (r.ticker === state.qualityTicker ? ' active' : '');
+    btn.innerHTML = '<div><b>' + esc(r.ticker) + '</b> ' + qualityTrustBadge(r.trust) + '</div>' +
+      '<div class="name">' + (r.match_pct === null || r.match_pct === undefined ? 'no reported FV' : r.match_pct + '% match') +
+      ' · ' + esc((state.profiles[r.ticker] || {}).name || '') + '</div>';
+    btn.onclick = () => selectQualityTicker(r.ticker);
+    list.appendChild(btn);
+  }
+}
+async function selectQualityTicker(ticker, fromHash) {
+  state.mode = 'quality';
+  state.qualityTicker = ticker;
+  state.qualityDetail = null;
+  updateModeChrome();
+  renderQualitySidebar();
+  $('win-title').textContent = 'Data Quality — ' + ticker;
+  $('win-meta').textContent = '';
+  $('status').textContent = 'Loading quality detail…';
+  const res = await fetch('/api/tickers/' + ticker + '/quality');
+  state.qualityDetail = res.ok ? await res.json() : null;
+  if (!fromHash) updateHash();
+  renderQualitySidebar();
+  renderMain();
+  $('status').textContent = 'Data quality · ' + ticker;
+}
+function renderQuality(el) {
+  const idx = state.qualityIndex;
+  if (!idx) { el.innerHTML = '<div class="empty">Loading data quality…</div>'; return; }
+  const rows = qualityRows();
+  const sum = idx.summary || {};
+  const tc = sum.trust_counts || {};
+  let html = '<div class="asof">Reconciliation against XBRL <b>Investments at Fair Value</b>. Match = within 5% of reported; near = within 10%; mismatch = more than 10%.</div>';
+  html += '<div class="cards">' +
+    card('BDCs Audited', fmtNum(sum.tickers || rows.length), '') +
+    card('Periods Checked', fmtNum(sum.with_reported || 0), fmtNum(sum.periods || 0) + ' total holdings periods') +
+    card('Matched', fmtPct(sum.match_pct), fmtNum(sum.match || 0) + ' within 5%') +
+    card('Mismatched', fmtNum(sum.mismatch || 0), '>10% vs reported') +
+    card('Tickers Good', fmtNum(tc.good || 0), '80%+ periods match') +
+    card('Need Review', fmtNum((tc.warn || 0) + (tc.bad || 0)), 'warn + bad') +
+  '</div>';
+
+  if (state.qualityTicker) {
+    const d = state.qualityDetail;
+    html += '<div class="section"><div style="display:flex;justify-content:space-between;align-items:center"><h3>' + esc(state.qualityTicker) + ' — period reconciliation</h3><span class="linkish" id="quality-back">← All BDCs</span></div>';
+    if (!d) {
+      html += '<div class="empty">Loading…</div>';
+    } else {
+      const s = d.summary || {};
+      html += '<div class="small muted" style="margin-bottom:6px">Scale ' + esc(s.scale) + ' · median holdings/reported ' + esc(s.median_ratio) +
+        ' · ' + esc(s.match) + ' match / ' + esc(s.near) + ' near / ' + esc(s.mismatch) + ' mismatch · ' + qualityTrustBadge(s.trust) + '</div>';
+      html += '<table><thead><tr><th>Quarter</th><th>Filing</th><th class="num">Holdings FV</th><th class="num">Reported FV</th><th class="num">Δ</th><th>Status</th><th>Quality flags</th></tr></thead><tbody>';
+      for (const p of (d.periods || []).slice().reverse()) {
+        const q = (quarterInfoFromEnd(p.period_end) || {}).label || p.period_end;
+        html += '<tr><td>' + esc(q) + '</td>' +
+          '<td>' + (p.filing_url ? '<a href="' + esc(p.filing_url) + '" target="_blank" rel="noopener">' + esc(p.form || 'filing') + ' ↗</a>' : '—') + '</td>' +
+          '<td class="num">' + (p.holdings_fv !== null && p.holdings_fv !== undefined ? fmtK(p.holdings_fv) : '—') + '</td>' +
+          '<td class="num">' + (p.reported_fv_k !== null && p.reported_fv_k !== undefined ? fmtK(p.reported_fv_k) : '—') + '</td>' +
+          '<td class="num ' + (p.delta_pct !== null && p.delta_pct !== undefined && Math.abs(p.delta_pct) > 10 ? 'neg' : '') + '">' + (p.delta_pct !== null && p.delta_pct !== undefined ? signed(p.delta_pct) + '%' : '—') + '</td>' +
+          '<td>' + qualityTrustBadge(p.status === 'match' ? 'good' : p.status === 'near' ? 'warn' : p.status === 'mismatch' ? 'bad' : 'unknown') + ' <span class="small muted">' + esc(p.status) + '</span></td>' +
+          '<td class="small muted">' + ((p.quality_flags || []).map(esc).join(' · ') || '—') + '</td></tr>';
+      }
+      html += '</tbody></table>';
+      if ((d.periods || []).some(p => p.status === 'mismatch')) {
+        html += '<div class="small muted" style="margin-top:4px">Mismatches are candidates for re-extraction. Check the filing link before using the period in a trend or QoQ comparison.</div>';
+      }
+    }
+    html += '</div>';
+    el.innerHTML = html;
+    const back = $('quality-back');
+    if (back) back.onclick = () => { state.qualityTicker = null; state.qualityDetail = null; updateHash(); renderQualitySidebar(); renderMain(); };
+    return;
+  }
+
+  html += '<div class="section"><h3>BDC reconciliation scorecard</h3><table><thead><tr><th>Ticker</th><th>Name</th><th>Trust</th><th class="num">Match</th><th class="num">Checked</th><th class="num">Mismatch</th><th class="num">Latest Holdings</th><th class="num">Latest Reported</th><th class="num">Latest Δ</th></tr></thead><tbody>';
+  for (const r of rows) {
+    const l = r.latest || {};
+    const prof = state.profiles[r.ticker] || {};
+    html += '<tr class="clickrow" data-quality="' + esc(r.ticker) + '"><td><b>' + esc(r.ticker) + '</b></td><td>' + esc(prof.name || '') + '</td>' +
+      '<td>' + qualityTrustBadge(r.trust) + '</td>' +
+      '<td class="num">' + (r.match_pct === null || r.match_pct === undefined ? '—' : r.match_pct + '%') + '</td>' +
+      '<td class="num">' + esc(r.with_reported || 0) + '</td>' +
+      '<td class="num">' + (r.mismatch ? '<span class="neg">' + r.mismatch + '</span>' : '0') + '</td>' +
+      '<td class="num">' + (l.holdings_fv !== null && l.holdings_fv !== undefined ? fmtK(l.holdings_fv) : '—') + '</td>' +
+      '<td class="num">' + (l.reported_fv_k !== null && l.reported_fv_k !== undefined ? fmtK(l.reported_fv_k) : '—') + '</td>' +
+      '<td class="num">' + (l.delta_pct !== null && l.delta_pct !== undefined ? signed(l.delta_pct) + '%' : '—') + '</td></tr>';
+  }
+  html += '</tbody></table></div>';
+  el.innerHTML = html;
+  el.querySelectorAll('[data-quality]').forEach(row => { row.onclick = () => selectQualityTicker(row.getAttribute('data-quality')); });
+}
+
+// ------------------------------------------------------------------ financials
+
 function renderFinancials(el) {
   const fin = state.financials;
   if (!fin) { el.innerHTML = '<div class="empty">No financial statement data for this BDC.</div>'; return; }
@@ -2125,25 +2306,34 @@ function renderFinancials(el) {
     for (const l of labels) {
       const node = nodes[l];
       html += '<tr><td title="' + esc(node.label || l) + '">' + esc(l) + '</td>';
+      const isFlow = key !== 'balance_sheet';
+      const ends = Object.keys(node.series || {}).sort();
       for (const pe of periods) {
         const row = node.series && node.series[pe.end];
         let v = '—';
         if (row && row.val !== null && row.val !== undefined) {
+          const q = isFlow ? discreteQuarter(node.series, pe.end, ends) : null;
+          const value = q ? q.val : row.val;
           const unit = node.unit || row.unit || 'USD';
-          if (unit === 'USD') v = fmtMoney(row.val);
-          else if (unit === 'USD/shares') v = '$' + num(row.val).toFixed(2);
-          else if (unit === 'shares') v = fmtNum(row.val);
-          else if (unit === 'ratio' || unit === 'pure') v = num(row.val).toFixed(2);
-          else v = num(row.val).toLocaleString();
-          const d = durationLabel(row.duration_days);
-          if (d) v += ' <span class="small muted">' + d + '</span>';
-          if (num(row.val) < 0) v = '<span class="neg">' + v + '</span>';
+          if (unit === 'USD') v = fmtMoney(value);
+          else if (unit === 'USD/shares') v = '$' + num(value).toFixed(2);
+          else if (unit === 'shares') v = fmtNum(value);
+          else if (unit === 'ratio' || unit === 'pure') v = num(value).toFixed(2);
+          else v = num(value).toLocaleString();
+          if (q && q.derived) v += ' <span class="small muted" title="Derived from year-to-date minus prior year-to-date">†</span>';
+          else {
+            const d = durationLabel(row.duration_days);
+            if (d && d !== 'Q') v += ' <span class="small muted">' + d + '</span>';
+          }
+          if (num(value) < 0) v = '<span class="neg">' + v + '</span>';
         }
         html += '<td class="num">' + v + '</td>';
       }
       html += '</tr>';
     }
-    html += '</tbody></table></div>';
+    html += '</tbody></table>';
+    if (key !== 'balance_sheet') html += '<div class="small muted" style="margin-top:4px">† Discrete quarter derived from year-to-date figures (YTD − prior YTD).</div>';
+    html += '</div>';
   }
   el.innerHTML = html;
 }
@@ -2809,6 +2999,7 @@ $('btn-link').onclick = () => {
 $('nav-bdc').onclick = () => setMode('bdc');
 $('nav-peers').onclick = () => setMode('peers');
 $('nav-companies').onclick = () => { state.companyId = null; setMode('companies'); };
+$('nav-quality').onclick = () => setMode('quality');
 $('company-sort').onchange = () => { state.companySort = $('company-sort').value; renderCompanySidebar(); };
 $('modal-x').onclick = closeModal;
 $('modal-cancel').onclick = closeModal;

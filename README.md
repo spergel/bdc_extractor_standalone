@@ -156,7 +156,8 @@ SEC_API_KEY=your_sec_key_here          # Optional (increases rate limits)
 - `src/processing/post_process_extraction.py` - Automatic data cleaning
 - `src/processing/build_analytics.py` - Type/sector/vintage/valuation/quality/peers analytics JSON for the UI
 - `src/processing/build_filing_links.py` - SEC submissions API → EDGAR accession/URL per filing
-- `src/processing/fix_multi_block_holdings.py` - Split concatenated current/prior-year 10-K portfolio schedules
+- `src/processing/fix_multi_block_holdings.py` - Split concatenated 10-K schedules + normalize dollar/thousand unit errors
+- `src/processing/build_data_quality.py` - Reconcile each period's holdings FV against reported Investments at Fair Value
 - `src/processing/extract_credit_quality.py` - Non-accrual % and risk rating from the latest 10-Q/10-K
 - `src/processing/standardization_rules.py` - Standardization logic
 - `src/consolidation/consolidate_investments.py` - Merge investment CSVs
@@ -192,10 +193,11 @@ Top-level sections (header nav):
 - **BDC View** — the per-BDC tabs above
 - **Peer Evaluation** — pick a focus BDC and a cohort (All / Large $5B+ / Mid $1–5B / Small <$1B). **Peer positioning**: 2D or 3D-bubble scatter (bubble size = portfolio, color = a fourth metric) with **nine presets** including P/NAV vs NII coverage, P/NAV vs dividend yield and non-accrual vs P/NAV; axis pickers, median crosshairs and a closest-peers table. **Percentile profile**: SVG radar + focus-vs-median table. **Scorecard heatmap**: all cohort BDCs × 18 metrics (including P/NAV, yield, coverage, non-accrual, risk rating), green/red by cohort percentile, sortable, click a row to focus. Plus six bar leaderboards, sector tilt vs peer median, and the raw table on demand
 - **Companies** — cross-BDC borrower view: which BDCs hold a company, exposure by BDC/maturity/type, profile
+- **Data Quality** — holdings-vs-reported fair value reconciliation for every period: match %, mismatches, trust badge per BDC, filing links, and a per-period drill-down
 
-Extras: CSV export of the visible tables, shareable deep links (`#/peers/ARCC/large`, `#/bdc/ARCC/valuation`, `#/bdc/ARCC/vintage/2026-07-29`, `#/bdc/ARCC/holdings/2026-07-29/sector:Healthcare`, `#/companies/co_…`), and data-freshness indicators (holdings quarter vs financials quarter, balance check).
+Extras: CSV export of the visible tables, shareable deep links (`#/peers/ARCC/large`, `#/bdc/ARCC/valuation`, `#/bdc/ARCC/vintage/2026-07-29`, `#/bdc/ARCC/holdings/2026-07-29/sector:Healthcare`, `#/quality/ARCC`, `#/companies/co_…`), and data-freshness indicators (holdings quarter vs financials quarter, balance check).
 
-**Data caveats:** market data comes from the per-ticker Yahoo profile (41 of 49 tickers; 35 have a usable P/NAV). It is a point-in-time snapshot with a visible as-of date, and extreme P/NAV / yield values are flagged in the UI. Credit-quality figures are parsed from the latest 10-Q/10-K text with a confidence score and the source sentence shown; 16 BDCs have no extractable disclosure and are marked accordingly. Some 10-K filings concatenate the current-year and prior-year portfolio schedules; those are detected and split automatically, and any period that still fails a fair-value/row-count sanity check is flagged in the UI. See `docs/VALUATION_CREDIT.md` for formulas and extraction rules.
+**Data caveats:** market data comes from the per-ticker Yahoo profile (41 of 49 tickers; 35 have a usable P/NAV). It is a point-in-time snapshot with a visible as-of date, and extreme P/NAV / yield values are flagged in the UI. Credit-quality figures are parsed from the latest 10-Q/10-K text with a confidence score and the source sentence shown; 16 BDCs have no extractable disclosure and are marked accordingly. Some 10-K filings concatenate the current-year and prior-year portfolio schedules; those are detected and split automatically, and any period that still fails a fair-value/row-count sanity check is flagged in the UI. The **Data Quality** section reconciles every period against the XBRL `Investments at Fair Value` fact, shows match/mismatch status, and identifies periods that need re-extraction. See `docs/VALUATION_CREDIT.md` for formulas and extraction rules.
 
 **Interactive drill-down:** click any bar, card or table row in Loan Types, Sectors, Rates & Structure or Vintage & Maturity to preview that slice (positions, fair value, % of portfolio, top holdings) and jump straight to Holdings filtered to it. The filter appears as a removable chip and is encoded in the URL. The QoQ company list and the Companies sidebar are sortable (Δ fair value, current fair value, positions, name, fields changed / exposure, # BDCs, name).
 
@@ -212,6 +214,8 @@ API endpoints used by the UI:
 /api/profiles                         compact BDC name/price summaries
 /api/companies                        cross-BDC company exposure index
 /api/companies/:id                    company detail + profile + BDC exposures
+/api/quality                          reconciliation index + trust badges
+/api/tickers/:ticker/quality          per-period holdings-vs-reported reconciliation
 ```
 
 ## 📈 Supported BDCs
