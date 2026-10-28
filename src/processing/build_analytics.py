@@ -29,6 +29,8 @@ DATA_DIR = REPO_ROOT / "app" / "public" / "data"
 INVESTMENTS_DIR = DATA_DIR / "investments"
 FINANCIALS_DIR = DATA_DIR / "financials"
 ANALYTICS_DIR = DATA_DIR / "analytics"
+FILINGS_DIR = DATA_DIR / "filings"
+CREDIT_DIR = DATA_DIR / "credit"
 
 # ---------------------------------------------------------------------------
 # Cleaning helpers
@@ -185,7 +187,7 @@ def aggregate_period(rows: list, filing_date: str) -> dict:
     companies = set()
     types = defaultdict(lambda: {"fair_value": 0.0, "count": 0, "principal": 0.0, "cost": 0.0, "unrealized_gl": 0.0})
     sectors = defaultdict(lambda: {"fair_value": 0.0, "count": 0, "cost": 0.0, "unrealized_gl": 0.0})
-    vintage_years = defaultdict(lambda: {"fair_value": 0.0, "count": 0})
+    vintage_years = defaultdict(lambda: {"fair_value": 0.0, "count": 0, "cost": 0.0, "unrealized_gl": 0.0})
     vintage_fv_total = 0.0
     maturity_years = defaultdict(lambda: {"fair_value": 0.0, "count": 0})
     maturity_wall = defaultdict(lambda: {"fair_value": 0.0, "count": 0})
@@ -211,6 +213,7 @@ def aggregate_period(rows: list, filing_date: str) -> dict:
     coverage_fv = defaultdict(float)
 
     asof = parse_date_any(filing_date)
+    wall_bucket = None
 
     for row in rows:
         name_raw = (row.get("company_name") or "").strip()
@@ -266,6 +269,9 @@ def aggregate_period(rows: list, filing_date: str) -> dict:
         if acq_year is not None:
             vintage_years[str(acq_year)]["fair_value"] += fv
             vintage_years[str(acq_year)]["count"] += 1
+            if cost is not None:
+                vintage_years[str(acq_year)]["cost"] += cost
+                vintage_years[str(acq_year)]["unrealized_gl"] += fv - cost
             vintage_fv_total += fv
             coverage_fv["acquisition_date"] += fv
             acq = parse_date_any(row.get("acquisition_date"))
@@ -293,6 +299,7 @@ def aggregate_period(rows: list, filing_date: str) -> dict:
             maturity_years[bucket]["fair_value"] += fv
             maturity_years[bucket]["count"] += 1
             wall = maturity_wall_bucket(myear)
+            wall_bucket = wall
             maturity_wall[wall]["fair_value"] += fv
             maturity_wall[wall]["count"] += 1
 
@@ -302,6 +309,10 @@ def aggregate_period(rows: list, filing_date: str) -> dict:
             rate_fv_sum += cash_rate * fv
             rate_fv_weight += fv
             coverage_fv["cash_rate"] += fv
+            if wall_bucket:
+                mw = maturity_wall[wall_bucket]
+                mw["rate_sum"] = mw.get("rate_sum", 0.0) + cash_rate * fv
+                mw["rate_weight"] = mw.get("rate_weight", 0.0) + fv
 
         ref_raw = (row.get("reference_rate") or "").strip()
         ref = normalize_reference(ref_raw)
@@ -313,6 +324,9 @@ def aggregate_period(rows: list, filing_date: str) -> dict:
                 rate_types["Floating"]["fair_value"] += fv
                 rate_types["Floating"]["count"] += 1
                 floating_fv += fv
+                if wall_bucket:
+                    mw = maturity_wall[wall_bucket]
+                    mw["floating_fv"] = mw.get("floating_fv", 0.0) + fv
             else:
                 rate_types["Fixed"]["fair_value"] += fv
                 rate_types["Fixed"]["count"] += 1
@@ -380,8 +394,12 @@ def aggregate_period(rows: list, filing_date: str) -> dict:
         sector_list = kept + [other]
 
     vintage_list = sorted(
-        ({"year": k, "fair_value": round(v["fair_value"], 0), "count": v["count"],
-          "pct": pct(v["fair_value"])}
+        ({"year": k, "fair_value": round(v["fair_value"], 0),
+          "cost": round(v["cost"], 0) if v["cost"] else None,
+          "count": v["count"],
+          "pct": pct(v["fair_value"]),
+          "unrealized_gl": round(v["unrealized_gl"], 0) if v["cost"] else None,
+          "mark_pct": round(v["unrealized_gl"] / v["cost"] * 100, 1) if v["cost"] else None}
          for k, v in vintage_years.items()),
         key=lambda x: x["year"],
     )
@@ -403,13 +421,21 @@ def aggregate_period(rows: list, filing_date: str) -> dict:
     ]
 
     wall_order = ["≤2026"] + [str(y) for y in range(2027, 2036)] + ["2036+"]
-    wall_list = [
-        {"year": b, "fair_value": round(maturity_wall.get(b, {}).get("fair_value", 0.0), 0),
-         "count": maturity_wall.get(b, {}).get("count", 0),
-         "pct": pct(maturity_wall.get(b, {}).get("fair_value", 0.0))}
-        for b in wall_order
-        if maturity_wall.get(b, {}).get("count", 0) > 0 or b in ("2027", "2028", "2029", "2030")
-    ]
+    wall_list = []
+    for b in wall_order:
+        agg = maturity_wall.get(b, {})
+        if not (agg.get("count", 0) > 0 or b in ("2027", "2028", "2029", "2030")):
+            continue
+        fv_total = agg.get("fair_value", 0.0)
+        rate_weight = agg.get("rate_weight", 0.0)
+        wall_list.append({
+            "year": b,
+            "fair_value": round(fv_total, 0),
+            "count": agg.get("count", 0),
+            "pct": pct(fv_total),
+            "weighted_avg_cash_rate": round(agg.get("rate_sum", 0.0) / rate_weight, 2) if rate_weight else None,
+            "floating_pct": round(agg.get("floating_fv", 0.0) / fv_total * 100, 1) if fv_total else None,
+        })
 
     ref_list = sorted(
         ({"rate": k, "fair_value": round(v["fair_value"], 0), "count": v["count"], "pct": pct(v["fair_value"])}
@@ -554,6 +580,210 @@ def build_changes(prev_rows: list, cur_rows: list, prev_fd: str, cur_fd: str) ->
 
 
 # ---------------------------------------------------------------------------
+# Valuation / distribution quality
+# ---------------------------------------------------------------------------
+
+def load_json_file(path):
+    try:
+        with open(path, encoding="utf-8") as fh:
+            return json.load(fh)
+    except Exception:
+        return None
+
+
+def load_profile(ticker: str):
+    return load_json_file(DATA_DIR / ticker / "profile.json")
+
+
+def load_credit(ticker: str):
+    return load_json_file(CREDIT_DIR / f"{ticker}.json")
+
+
+def load_filings(ticker: str):
+    data = load_json_file(FILINGS_DIR / f"{ticker}.json")
+    return (data or {}).get("filings")
+
+
+def annualize(entry):
+    if not entry:
+        return None
+    val = entry.get("val")
+    if val is None:
+        return None
+    days = entry.get("duration_days")
+    if days and days > 0:
+        return val * 365.0 / days
+    return None
+
+
+def quarterly_value(entry):
+    """Return a per-quarter value for a flow series entry."""
+    if not entry:
+        return None
+    days = entry.get("duration_days")
+    if days and 75 <= days <= 110:
+        return entry.get("val")
+    ann = annualize(entry)
+    return ann / 4.0 if ann is not None else None
+
+
+def series_at(node, end):
+    return ((node or {}).get("series") or {}).get(end)
+
+
+def build_quality(fin, profile):
+    """Quarterly distribution/NAV quality series plus latest valuation snapshot."""
+    if not fin:
+        return {"periods": [], "latest": None}
+    inc = (fin.get("statements") or {}).get("income_statement") or {}
+    bal = (fin.get("statements") or {}).get("balance_sheet") or {}
+    derived = fin.get("derived") or {}
+    nii_node = inc.get("Net Investment Income") or {}
+    dps_node = inc.get("Dividends per Share (Declared)") or inc.get("Dividends per Share (Paid)") or {}
+    pik_node = inc.get("PIK Interest") or inc.get("Interest Income (PIK)") or {}
+    tii_node = inc.get("Total Investment Income") or {}
+    equity_node = bal.get("Stockholders' Equity") or bal.get("Net Assets") or {}
+    nav_node = derived.get("nav_per_share") or {}
+
+    form_by_end = {p.get("end"): p for p in (fin.get("periods") or []) if p.get("end")}
+    nav_series = nav_node.get("series") or {}
+    rows = []
+    prev = None
+    for end in sorted(nav_series.keys()):
+        nav_ps = (nav_series.get(end) or {}).get("val")
+        if nav_ps is None:
+            continue
+        info = form_by_end.get(end) or {}
+        dps_entry = series_at(dps_node, end)
+        nii_entry = series_at(nii_node, end)
+        equity = (series_at(equity_node, end) or {}).get("val")
+        dps_q = quarterly_value(dps_entry)
+        dps_ann = annualize(dps_entry)
+        nii_q = quarterly_value(nii_entry)
+        shares = (equity / nav_ps) if (equity and nav_ps) else None
+        nii_ps_q = (nii_q / shares) if (nii_q is not None and shares) else None
+        coverage = (nii_ps_q / dps_q) if (nii_ps_q is not None and dps_q) else None
+        distribution_rate = (dps_ann / nav_ps * 100) if (dps_ann is not None and nav_ps) else None
+        pik_ann = annualize(series_at(pik_node, end))
+        tii_ann = annualize(series_at(tii_node, end))
+        pik_share = (pik_ann / tii_ann * 100) if (pik_ann is not None and tii_ann) else None
+        nav_tr = None
+        if prev is not None:
+            try:
+                gap = (datetime.strptime(end, "%Y-%m-%d").date() - datetime.strptime(prev[0], "%Y-%m-%d").date()).days
+            except ValueError:
+                gap = 0
+            if 70 <= gap <= 110 and prev[1]:
+                div = dps_q if dps_q is not None else ((dps_ann or 0.0) * gap / 365.0)
+                nav_tr = ((nav_ps - prev[1] + (div or 0.0)) / prev[1]) * 100
+        rows.append({
+            "end": end,
+            "filed": info.get("filed"),
+            "form": info.get("form"),
+            "nav_ps": round(nav_ps, 3),
+            "nii_ps_q": round(nii_ps_q, 3) if nii_ps_q is not None else None,
+            "dps_q": round(dps_q, 3) if dps_q is not None else None,
+            "coverage": round(coverage, 3) if coverage is not None else None,
+            "distribution_rate_pct": round(distribution_rate, 2) if distribution_rate is not None else None,
+            "pik_income_share_pct": round(pik_share, 2) if pik_share is not None else None,
+            "nav_tr_pct": round(nav_tr, 2) if nav_tr is not None else None,
+        })
+        prev = (end, nav_ps)
+
+    rows = rows[-12:]
+    latest = rows[-1] if rows else {}
+    price = market_cap = div_yield = div_rate = high52 = low52 = beta = None
+    price_asof = p_nav_yahoo = book_yahoo = None
+    if profile:
+        price = (profile.get("price") or {}).get("regularMarketPrice")
+        summary = profile.get("summaryDetail") or {}
+        market_cap = summary.get("marketCap")
+        div_yield = summary.get("dividendYield")
+        div_rate = summary.get("dividendRate")
+        hist = profile.get("historical") or {}
+        high52 = (profile.get("price") or {}).get("fiftyTwoWeekHigh") or hist.get("fiftyTwoWeekHigh")
+        low52 = (profile.get("price") or {}).get("fiftyTwoWeekLow") or hist.get("fiftyTwoWeekLow")
+        beta = summary.get("beta")
+        p_nav_yahoo = summary.get("priceToBook")
+        book_yahoo = summary.get("bookValue")
+        price_asof = (profile.get("generated_at") or "")[:10] or None
+
+    cov_row = next((r for r in reversed(rows) if r.get("coverage") is not None), latest)
+    pik_row = next((r for r in reversed(rows) if r.get("pik_income_share_pct") is not None), latest)
+    tr_row = next((r for r in reversed(rows) if r.get("nav_tr_pct") is not None), latest)
+
+    nav_latest = latest.get("nav_ps")
+    p_nav = (price / nav_latest) if (price and nav_latest) else None
+    if div_yield is None and div_rate and price:
+        div_yield = div_rate / price * 100
+    trs = [r.get("nav_tr_pct") for r in rows if r.get("nav_tr_pct") is not None][-4:]
+    nav_tr_4q = None
+    if len(trs) == 4:
+        growth = 1.0
+        for r in trs:
+            growth *= (1 + r / 100.0)
+        nav_tr_4q = (growth - 1) * 100
+
+    valuation = {
+        "price": round(price, 2) if price is not None else None,
+        "price_asof": price_asof,
+        "market_cap": market_cap,
+        "p_nav": round(p_nav, 3) if p_nav is not None else None,
+        "premium_discount_pct": round((p_nav - 1) * 100, 2) if p_nav is not None else None,
+        "nav_per_share": nav_latest,
+        "p_nav_yahoo": round(p_nav_yahoo, 3) if p_nav_yahoo is not None else None,
+        "book_value_yahoo": book_yahoo,
+        "dividend_yield_pct": round(div_yield, 2) if div_yield is not None else None,
+        "dividend_rate": div_rate,
+        "nii_ps_q": cov_row.get("nii_ps_q"),
+        "dps_q": cov_row.get("dps_q"),
+        "nii_coverage": cov_row.get("coverage"),
+        "payout_ratio_pct": round(100.0 / cov_row["coverage"], 1) if cov_row.get("coverage") else None,
+        "distribution_rate_pct": latest.get("distribution_rate_pct") or cov_row.get("distribution_rate_pct"),
+        "pik_income_share_pct": pik_row.get("pik_income_share_pct"),
+        "nav_tr_1q_pct": tr_row.get("nav_tr_pct"),
+        "nav_tr_4q_pct": round(nav_tr_4q, 2) if nav_tr_4q is not None else None,
+        "fifty_two_week_high": high52,
+        "fifty_two_week_low": low52,
+        "beta": beta,
+        "profile_available": bool(profile),
+        "latest_period": latest.get("end"),
+        "coverage_period": cov_row.get("end"),
+        "pik_period": pik_row.get("end"),
+    }
+    flags = []
+    if p_nav is not None and p_nav < 0.35:
+        flags.append("P/NAV below 0.35x — verify price and NAV basis")
+    if div_yield is not None and div_yield > 20:
+        flags.append("Dividend yield above 20% — possible distress or stale price")
+    if valuation.get("nii_coverage") is not None and valuation["nii_coverage"] < 0.8:
+        flags.append("NII coverage below 0.8x — distribution not covered by net investment income")
+    valuation["flags"] = flags
+    return {"periods": rows, "latest": valuation}
+
+
+def build_vintage_history(periods):
+    out = []
+    for period in (periods or [])[-12:]:
+        years = []
+        for v in period.get("vintage_years") or []:
+            if v.get("mark_pct") is None:
+                continue
+            years.append({
+                "year": v.get("year"),
+                "mark_pct": v.get("mark_pct"),
+                "fair_value": v.get("fair_value"),
+                "pct": v.get("pct"),
+            })
+        out.append({
+            "filing_date": period.get("filing_date"),
+            "period_end": period.get("period_end"),
+            "years": years,
+        })
+    return out
+
+
+# ---------------------------------------------------------------------------
 # Ticker-level build (periods, changes, financial meta)
 # ---------------------------------------------------------------------------
 
@@ -630,6 +860,7 @@ def build_ticker_analytics(ticker: str) -> Optional[dict]:
         period["changes"] = changes_by_fd.get(period["filing_date"])
 
     fin = load_financials(ticker)
+    quality = build_quality(fin, load_profile(ticker))
     latest = periods[-1] if periods else None
     payload = {
         "ticker": ticker,
@@ -639,6 +870,11 @@ def build_ticker_analytics(ticker: str) -> Optional[dict]:
             "latest_holdings_period_end": latest["period_end"] if latest else None,
             "financials": build_fin_meta(fin),
         },
+        "valuation": quality["latest"],
+        "quality_periods": quality["periods"],
+        "vintage_history": build_vintage_history(periods),
+        "filings": load_filings(ticker),
+        "credit": load_credit(ticker),
         "periods": periods,
     }
     ANALYTICS_DIR.mkdir(parents=True, exist_ok=True)
@@ -712,9 +948,12 @@ def build_peers(payloads: dict) -> dict:
             sector_pcts[s["sector"]].append(s["pct"])
 
         fin = load_financials(ticker)
-        nav = latest_fin_metric(fin, "nav_per_share")
+        quality = build_quality(fin, load_profile(ticker))
+        val = quality.get("latest") or {}
+        credit = load_credit(ticker) or {}
+        nav = val.get("nav_per_share") if val.get("nav_per_share") is not None else latest_fin_metric(fin, "nav_per_share")
         leverage = latest_fin_metric(fin, "debt_to_equity")
-        nii_ps = latest_fin_metric(fin, "nii_per_share")
+        nii_ps = val.get("nii_ps_q") if val.get("nii_ps_q") is not None else latest_fin_metric(fin, "nii_per_share")
         coverage_metric = latest_fin_metric(fin, "asset_coverage")
         fin_meta = build_fin_meta(fin)
 
@@ -751,6 +990,21 @@ def build_peers(payloads: dict) -> dict:
             "fin_periods": fin_meta.get("period_count"),
             "fin_latest": fin_meta.get("latest_period"),
             "has_cash_flow": fin_meta.get("has_cash_flow"),
+            "price": val.get("price"),
+            "price_asof": val.get("price_asof"),
+            "market_cap": val.get("market_cap"),
+            "p_nav": val.get("p_nav"),
+            "premium_discount_pct": val.get("premium_discount_pct"),
+            "dividend_yield_pct": val.get("dividend_yield_pct"),
+            "nii_coverage": val.get("nii_coverage"),
+            "payout_ratio_pct": val.get("payout_ratio_pct"),
+            "pik_income_share_pct": val.get("pik_income_share_pct"),
+            "distribution_rate_pct": val.get("distribution_rate_pct"),
+            "nav_tr_1q_pct": val.get("nav_tr_1q_pct"),
+            "nav_tr_4q_pct": val.get("nav_tr_4q_pct"),
+            "non_accrual_cost_pct": credit.get("non_accrual_cost_pct"),
+            "non_accrual_fv_pct": credit.get("non_accrual_fv_pct"),
+            "risk_rating": credit.get("risk_rating"),
         })
 
     metric_keys = [
@@ -758,6 +1012,10 @@ def build_peers(payloads: dict) -> dict:
         "weighted_avg_cash_rate", "weighted_avg_spread", "median_vintage_year", "age_0_2_pct",
         "age_5plus_pct", "nav_per_share", "debt_to_equity", "asset_coverage", "nii_per_share",
         "pik_share_pct", "floating_pct", "top10_pct", "unrealized_gl_pct",
+        "p_nav", "premium_discount_pct", "dividend_yield_pct", "nii_coverage",
+        "payout_ratio_pct", "pik_income_share_pct", "distribution_rate_pct",
+        "nav_tr_1q_pct", "nav_tr_4q_pct", "non_accrual_cost_pct", "non_accrual_fv_pct",
+        "risk_rating", "market_cap",
     ]
     medians = {key: median([p.get(key) for p in peers]) for key in metric_keys}
     sector_medians = []

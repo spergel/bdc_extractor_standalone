@@ -73,6 +73,10 @@ def main() -> int:
     parser.add_argument("--skip-profiles", action="store_true", help="Skip company profile build")
     parser.add_argument("--skip-financials", action="store_true",
                         help="Skip quarterly financial statement extraction (balance sheet / income / cash flow)")
+    parser.add_argument("--skip-filings", action="store_true",
+                        help="Skip SEC EDGAR filing-link build")
+    parser.add_argument("--skip-credit", action="store_true",
+                        help="Skip credit-quality extraction (non-accrual / risk rating)")
     parser.add_argument("--skip-analytics", action="store_true",
                         help="Skip frontend analytics rebuild (type/sector/vintage/peers JSON)")
 
@@ -120,6 +124,14 @@ def main() -> int:
         logger.info("Extracting quarterly financial statements (balance sheet / income / cash flow)...")
         run([sys.executable, str(REPO_ROOT / "src/extraction/financial_statements_extractor.py"),
              "--all"])
+
+    if not args.skip_filings:
+        logger.info("Building SEC EDGAR filing links...")
+        run([sys.executable, str(REPO_ROOT / "src/processing/build_filing_links.py")])
+
+    if not args.skip_credit:
+        logger.info("Extracting credit quality (non-accrual / risk ratings)...")
+        run([sys.executable, str(REPO_ROOT / "src/processing/extract_credit_quality.py")])
 
     if not args.skip_analytics:
         logger.info("Rebuilding frontend analytics (type/sector/vintage/peers)...")
