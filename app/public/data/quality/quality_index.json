@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-28T07:47:32.401701Z",
+  "generated_at": "2026-10-28T08:52:33.658000Z",
   "tickers": {
     "ARCC": {
       "ticker": "ARCC",
       "scale": 1000,
       "median_ratio": 1.018,
       "periods": 16,
-      "with_reported": 16,
-      "match": 16,
+      "with_reported": 15,
+      "match": 15,
       "near": 0,
       "mismatch": 0,
       "match_pct": 100.0,
@@ -286,13 +286,13 @@
     "BCSF": {
       "ticker": "BCSF",
       "scale": 1000,
-      "median_ratio": 3.406,
+      "median_ratio": 3.437,
       "periods": 32,
-      "with_reported": 15,
+      "with_reported": 14,
       "match": 1,
       "near": 0,
-      "mismatch": 14,
-      "match_pct": 6.7,
+      "mismatch": 13,
+      "match_pct": 7.1,
       "trust": "bad",
       "latest": {
         "filing_date": "2026-08-10",
@@ -314,14 +314,6 @@
           "status": "mismatch",
           "holdings_fv": 1068772429.922,
           "reported_fv_k": 2293522.0,
-          "quality_flags": []
-        },
-        {
-          "filing_date": "2023-02-28",
-          "delta_pct": 26.12,
-          "status": "mismatch",
-          "holdings_fv": 3010400.0,
-          "reported_fv_k": 2386977.0,
           "quality_flags": []
         },
         {
@@ -536,108 +528,50 @@
     "CION": {
       "ticker": "CION",
       "scale": 1000,
-      "median_ratio": 1.056,
-      "periods": 14,
-      "with_reported": 14,
-      "match": 4,
-      "near": 9,
-      "mismatch": 1,
-      "match_pct": 28.6,
-      "trust": "bad",
+      "median_ratio": 0.989,
+      "periods": 17,
+      "with_reported": 17,
+      "match": 14,
+      "near": 3,
+      "mismatch": 0,
+      "match_pct": 82.4,
+      "trust": "good",
       "latest": {
-        "filing_date": "2025-11-06",
-        "period_end": "2025-09-30",
-        "holdings_fv": 1920862.0,
-        "row_count": 269,
-        "reported_fv": 1840584000.0,
-        "reported_fv_k": 1840584.0,
-        "delta_pct": 4.36,
-        "status": "match",
+        "filing_date": "2026-08-06",
+        "period_end": "2026-06-30",
+        "holdings_fv": 1691751.0,
+        "row_count": 236,
+        "reported_fv": 1800093000.0,
+        "reported_fv_k": 1800093.0,
+        "delta_pct": -6.02,
+        "status": "near",
         "quality_flags": [],
-        "filing_url": "https://www.sec.gov/Archives/edgar/data/1534254/000153425425000015/cion-20250930.htm",
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1534254/000153425426000010/cion-20260630.htm",
         "form": "10-Q"
       },
       "issue_periods": [
         {
           "filing_date": "2022-11-10",
-          "delta_pct": 7.59,
+          "delta_pct": 5.48,
           "status": "near",
-          "holdings_fv": 1944230.0,
+          "holdings_fv": 1906064.0,
           "reported_fv_k": 1807048.0,
           "quality_flags": []
         },
         {
           "filing_date": "2023-03-16",
-          "delta_pct": 7.52,
+          "delta_pct": 5.4,
           "status": "near",
-          "holdings_fv": 1892462.0,
+          "holdings_fv": 1855139.0,
           "reported_fv_k": 1760030.0,
           "quality_flags": []
         },
         {
-          "filing_date": "2023-05-10",
-          "delta_pct": 6.54,
+          "filing_date": "2026-08-06",
+          "delta_pct": -6.02,
           "status": "near",
-          "holdings_fv": 1836076.0,
-          "reported_fv_k": 1723352.0,
-          "quality_flags": []
-        },
-        {
-          "filing_date": "2023-08-09",
-          "delta_pct": 6.4,
-          "status": "near",
-          "holdings_fv": 1902920.0,
-          "reported_fv_k": 1788462.0,
-          "quality_flags": []
-        },
-        {
-          "filing_date": "2023-11-09",
-          "delta_pct": 6.15,
-          "status": "near",
-          "holdings_fv": 1958419.0,
-          "reported_fv_k": 1844877.0,
-          "quality_flags": []
-        },
-        {
-          "filing_date": "2024-03-14",
-          "delta_pct": 5.88,
-          "status": "near",
-          "holdings_fv": 2069091.0,
-          "reported_fv_k": 1954270.0,
-          "quality_flags": []
-        },
-        {
-          "filing_date": "2024-05-09",
-          "delta_pct": 5.56,
-          "status": "near",
-          "holdings_fv": 1974924.0,
-          "reported_fv_k": 1870837.0,
-          "quality_flags": []
-        },
-        {
-          "filing_date": "2024-08-08",
-          "delta_pct": -100.0,
-          "status": "mismatch",
-          "holdings_fv": 0.0,
-          "reported_fv_k": 1906125.0,
-          "quality_flags": []
-        },
-        {
-          "filing_date": "2024-11-07",
-          "delta_pct": 5.38,
-          "status": "near",
-          "holdings_fv": 1903471.0,
-          "reported_fv_k": 1806229.0,
-          "quality_flags": [
-            "Row count fell 36% vs the prior filing"
-          ]
-        },
-        {
-          "filing_date": "2025-05-08",
-          "delta_pct": 5.34,
-          "status": "near",
-          "holdings_fv": 1944270.0,
-          "reported_fv_k": 1845660.0,
+          "holdings_fv": 1691751.0,
+          "reported_fv_k": 1800093.0,
           "quality_flags": []
         }
       ]
@@ -961,9 +895,9 @@
         },
         {
           "filing_date": "2023-05-05",
-          "delta_pct": 13.31,
+          "delta_pct": 13.33,
           "status": "mismatch",
-          "holdings_fv": 17311100.0,
+          "holdings_fv": 17313500.0,
           "reported_fv_k": 15277100.0,
           "quality_flags": []
         },
@@ -1145,13 +1079,13 @@
     "GECC": {
       "ticker": "GECC",
       "scale": 1000,
-      "median_ratio": 0.833,
+      "median_ratio": 0.804,
       "periods": 13,
-      "with_reported": 13,
+      "with_reported": 12,
       "match": 3,
       "near": 0,
-      "mismatch": 10,
-      "match_pct": 23.1,
+      "mismatch": 9,
+      "match_pct": 25.0,
       "trust": "bad",
       "latest": {
         "filing_date": "2026-03-02",
@@ -1167,14 +1101,6 @@
         "form": "10-K"
       },
       "issue_periods": [
-        {
-          "filing_date": "2023-03-02",
-          "delta_pct": 52.71,
-          "status": "mismatch",
-          "holdings_fv": 459799.0,
-          "reported_fv_k": 301084.0,
-          "quality_flags": []
-        },
         {
           "filing_date": "2023-05-04",
           "delta_pct": -26.2,
@@ -1443,108 +1369,34 @@
     "HRZN": {
       "ticker": "HRZN",
       "scale": 1000,
-      "median_ratio": 0.754,
-      "periods": 10,
-      "with_reported": 10,
-      "match": 0,
+      "median_ratio": 1.001,
+      "periods": 40,
+      "with_reported": 17,
+      "match": 16,
       "near": 0,
-      "mismatch": 10,
-      "match_pct": 0.0,
-      "trust": "bad",
+      "mismatch": 1,
+      "match_pct": 94.1,
+      "trust": "warn",
       "latest": {
-        "filing_date": "2026-03-03",
-        "period_end": "2025-12-31",
-        "holdings_fv": 435082.0,
-        "row_count": 102,
-        "reported_fv": 647244000.0,
-        "reported_fv_k": 647244.0,
-        "delta_pct": -32.78,
-        "status": "mismatch",
+        "filing_date": "2026-08-04",
+        "period_end": "2026-06-30",
+        "holdings_fv": 677717.0,
+        "row_count": 256,
+        "reported_fv": 676711000.0,
+        "reported_fv_k": 676711.0,
+        "delta_pct": 0.15,
+        "status": "match",
         "quality_flags": [],
-        "filing_url": "https://www.sec.gov/Archives/edgar/data/1487428/000143774926006636/hrzn20251231_10k.htm",
-        "form": "10-K"
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1487428/000143774926025689/hrzn20260630_10q.htm",
+        "form": "10-Q"
       },
       "issue_periods": [
         {
-          "filing_date": "2023-05-02",
-          "delta_pct": -24.81,
+          "filing_date": "2022-03-01",
+          "delta_pct": -100.0,
           "status": "mismatch",
-          "holdings_fv": 537823.0,
-          "reported_fv_k": 715312.0,
-          "quality_flags": []
-        },
-        {
-          "filing_date": "2023-08-01",
-          "delta_pct": -26.04,
-          "status": "mismatch",
-          "holdings_fv": 529090.0,
-          "reported_fv_k": 715391.0,
-          "quality_flags": []
-        },
-        {
-          "filing_date": "2023-10-31",
-          "delta_pct": -22.06,
-          "status": "mismatch",
-          "holdings_fv": 568192.0,
-          "reported_fv_k": 729053.0,
-          "quality_flags": []
-        },
-        {
-          "filing_date": "2024-04-30",
-          "delta_pct": -24.32,
-          "status": "mismatch",
-          "holdings_fv": 538191.0,
-          "reported_fv_k": 711116.0,
-          "quality_flags": []
-        },
-        {
-          "filing_date": "2024-07-30",
-          "delta_pct": -18.51,
-          "status": "mismatch",
-          "holdings_fv": 527158.0,
-          "reported_fv_k": 646862.0,
-          "quality_flags": []
-        },
-        {
-          "filing_date": "2024-10-29",
-          "delta_pct": -18.2,
-          "status": "mismatch",
-          "holdings_fv": 559481.0,
-          "reported_fv_k": 684000.0,
-          "quality_flags": []
-        },
-        {
-          "filing_date": "2025-04-29",
-          "delta_pct": -22.17,
-          "status": "mismatch",
-          "holdings_fv": 536690.0,
-          "reported_fv_k": 689553.0,
-          "quality_flags": []
-        },
-        {
-          "filing_date": "2025-08-07",
-          "delta_pct": -29.75,
-          "status": "mismatch",
-          "holdings_fv": 437411.0,
-          "reported_fv_k": 622653.0,
-          "quality_flags": [
-            "Row count fell 60% vs the prior filing"
-          ]
-        },
-        {
-          "filing_date": "2025-10-28",
-          "delta_pct": -33.03,
-          "status": "mismatch",
-          "holdings_fv": 404162.0,
-          "reported_fv_k": 603514.0,
-          "quality_flags": []
-        },
-        {
-          "filing_date": "2026-03-03",
-          "delta_pct": -32.78,
-          "status": "mismatch",
-          "holdings_fv": 435082.0,
-          "reported_fv_k": 647244.0,
+          "holdings_fv": 0.0,
+          "reported_fv_k": 458075.0,
           "quality_flags": []
         }
       ]
@@ -1855,10 +1707,10 @@
         },
         {
           "filing_date": "2025-03-31",
-          "delta_pct": 104.82,
+          "delta_pct": 115.25,
           "status": "mismatch",
           "holdings_fv": 592470.0,
-          "reported_fv_k": 289262.741,
+          "reported_fv_k": 275241.398,
           "quality_flags": [
             "Fair value is 2.38x the trailing median (possible annual/unit issue)"
           ]
@@ -2713,7 +2565,7 @@
           "filing_date": "2024-08-07",
           "delta_pct": 64.87,
           "status": "mismatch",
-          "holdings_fv": 2735086.0,
+          "holdings_fv": 2735121.0,
           "reported_fv_k": 1658944.0,
           "quality_flags": []
         },
@@ -2729,9 +2581,9 @@
         },
         {
           "filing_date": "2025-02-10",
-          "delta_pct": 19.99,
+          "delta_pct": 19.46,
           "status": "mismatch",
-          "holdings_fv": 2632541.0,
+          "holdings_fv": 2620843.0,
           "reported_fv_k": 2193910.0,
           "quality_flags": []
         },
@@ -2745,9 +2597,9 @@
         },
         {
           "filing_date": "2025-08-11",
-          "delta_pct": 17.25,
+          "delta_pct": 17.01,
           "status": "mismatch",
-          "holdings_fv": 2818217.0,
+          "holdings_fv": 2812373.0,
           "reported_fv_k": 2403515.0,
           "quality_flags": []
         },
@@ -2776,7 +2628,7 @@
           "holdings_fv": 7993032.0,
           "reported_fv_k": 2580281.0,
           "quality_flags": [
-            "Fair value is 2.86x the trailing median (possible annual/unit issue)"
+            "Fair value is 2.87x the trailing median (possible annual/unit issue)"
           ]
         }
       ]
@@ -2925,9 +2777,9 @@
         },
         {
           "filing_date": "2025-05-12",
-          "delta_pct": 291.35,
+          "delta_pct": 291.38,
           "status": "mismatch",
-          "holdings_fv": 4749457.0,
+          "holdings_fv": 4749813.0,
           "reported_fv_k": 1213610.0,
           "quality_flags": [
             "Fair value is 2.06x the trailing median (possible annual/unit issue)"
@@ -2935,9 +2787,9 @@
         },
         {
           "filing_date": "2025-08-11",
-          "delta_pct": 296.7,
+          "delta_pct": 296.73,
           "status": "mismatch",
-          "holdings_fv": 4647799.0,
+          "holdings_fv": 4648176.0,
           "reported_fv_k": 1171624.0,
           "quality_flags": [
             "Fair value is 2.01x the trailing median (possible annual/unit issue)"
@@ -2955,7 +2807,7 @@
           "filing_date": "2026-02-09",
           "delta_pct": 188.32,
           "status": "mismatch",
-          "holdings_fv": 3513122.0,
+          "holdings_fv": 3513133.0,
           "reported_fv_k": 1218474.0,
           "quality_flags": []
         },
@@ -3379,29 +3231,102 @@
     },
     "SAR": {
       "ticker": "SAR",
-      "scale": 1,
-      "median_ratio": null,
-      "periods": 5,
-      "with_reported": 0,
-      "match": 0,
-      "near": 0,
-      "mismatch": 0,
-      "match_pct": null,
-      "trust": "unknown",
+      "scale": 1000,
+      "median_ratio": 1.078,
+      "periods": 36,
+      "with_reported": 17,
+      "match": 8,
+      "near": 2,
+      "mismatch": 7,
+      "match_pct": 47.1,
+      "trust": "bad",
       "latest": {
-        "filing_date": "2026-01-07",
-        "period_end": "2025-12-31",
-        "holdings_fv": 2259336.0,
-        "row_count": 441,
-        "reported_fv": null,
-        "reported_fv_k": null,
-        "delta_pct": null,
-        "status": "no_reported",
+        "filing_date": "2026-10-06",
+        "period_end": "2026-08-31",
+        "holdings_fv": 1143982.0,
+        "row_count": 138,
+        "reported_fv": 1150190344.0,
+        "reported_fv_k": 1150190.344,
+        "delta_pct": -0.54,
+        "status": "match",
         "quality_flags": [],
-        "filing_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390026002153/ea0270446-10q_saratoga.htm",
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390026107187/ea0306042-10q_saratoga.htm",
         "form": "10-Q"
       },
-      "issue_periods": []
+      "issue_periods": [
+        {
+          "filing_date": "2022-10-04",
+          "delta_pct": 23.12,
+          "status": "mismatch",
+          "holdings_fv": 954663.0,
+          "reported_fv_k": 775408.041,
+          "quality_flags": []
+        },
+        {
+          "filing_date": "2023-01-10",
+          "delta_pct": 26.25,
+          "status": "mismatch",
+          "holdings_fv": 982102.0,
+          "reported_fv_k": 777907.062,
+          "quality_flags": []
+        },
+        {
+          "filing_date": "2023-05-02",
+          "delta_pct": 17.46,
+          "status": "mismatch",
+          "holdings_fv": 972640.0,
+          "reported_fv_k": 828028.8,
+          "quality_flags": []
+        },
+        {
+          "filing_date": "2023-07-10",
+          "delta_pct": 15.21,
+          "status": "mismatch",
+          "holdings_fv": 1084182.0,
+          "reported_fv_k": 941021.051,
+          "quality_flags": []
+        },
+        {
+          "filing_date": "2023-10-10",
+          "delta_pct": 15.94,
+          "status": "mismatch",
+          "holdings_fv": 1099021.0,
+          "reported_fv_k": 947924.37,
+          "quality_flags": []
+        },
+        {
+          "filing_date": "2024-01-09",
+          "delta_pct": 14.09,
+          "status": "mismatch",
+          "holdings_fv": 1114057.0,
+          "reported_fv_k": 976440.074,
+          "quality_flags": []
+        },
+        {
+          "filing_date": "2024-05-06",
+          "delta_pct": 11.68,
+          "status": "mismatch",
+          "holdings_fv": 1138841.0,
+          "reported_fv_k": 1019774.616,
+          "quality_flags": []
+        },
+        {
+          "filing_date": "2024-07-09",
+          "delta_pct": 7.8,
+          "status": "near",
+          "holdings_fv": 1095578.0,
+          "reported_fv_k": 1016275.51,
+          "quality_flags": []
+        },
+        {
+          "filing_date": "2024-10-08",
+          "delta_pct": 8.05,
+          "status": "near",
+          "holdings_fv": 1040731.0,
+          "reported_fv_k": 963176.509,
+          "quality_flags": []
+        }
+      ]
     },
     "SCM": {
       "ticker": "SCM",
@@ -3486,12 +3411,12 @@
         },
         {
           "filing_date": "2024-08-07",
-          "delta_pct": 1111.08,
+          "delta_pct": 1118.26,
           "status": "mismatch",
-          "holdings_fv": 2674092.0,
+          "holdings_fv": 2689959.0,
           "reported_fv_k": 220803.0,
           "quality_flags": [
-            "Fair value is 0.68x the trailing median (possible units/gap issue)"
+            "Fair value is 0.69x the trailing median (possible units/gap issue)"
           ]
         },
         {
@@ -3645,11 +3570,11 @@
       "scale": 1000,
       "median_ratio": 1.0,
       "periods": 40,
-      "with_reported": 17,
+      "with_reported": 16,
       "match": 10,
       "near": 0,
-      "mismatch": 7,
-      "match_pct": 58.8,
+      "mismatch": 6,
+      "match_pct": 62.5,
       "trust": "warn",
       "latest": {
         "filing_date": "2026-08-06",
@@ -3680,16 +3605,6 @@
           "holdings_fv": 181348.66000000006,
           "reported_fv_k": 1678875.152,
           "quality_flags": []
-        },
-        {
-          "filing_date": "2023-02-28",
-          "delta_pct": -91.96,
-          "status": "mismatch",
-          "holdings_fv": 129369.62399999997,
-          "reported_fv_k": 1609587.641,
-          "quality_flags": [
-            "Fair value is 0.67x the trailing median (possible units/gap issue)"
-          ]
         },
         {
           "filing_date": "2023-05-04",
@@ -3835,7 +3750,7 @@
         "filing_date": "2026-08-05",
         "period_end": "2026-06-30",
         "holdings_fv": 2732328.0,
-        "row_count": 536,
+        "row_count": 537,
         "reported_fv": 2732301000.0,
         "reported_fv_k": 2732301.0,
         "delta_pct": 0.0,
@@ -3895,7 +3810,7 @@
           "filing_date": "2024-05-01",
           "delta_pct": 93.33,
           "status": "mismatch",
-          "holdings_fv": 2636711.0,
+          "holdings_fv": 2636733.0,
           "reported_fv_k": 1363862.0,
           "quality_flags": []
         }
@@ -4118,17 +4033,17 @@
   },
   "summary": {
     "tickers": 49,
-    "periods": 1028,
-    "with_reported": 641,
-    "match": 314,
-    "near": 37,
-    "mismatch": 290,
-    "match_pct": 49.0,
+    "periods": 1092,
+    "with_reported": 664,
+    "match": 347,
+    "near": 33,
+    "mismatch": 284,
+    "match_pct": 52.3,
     "trust_counts": {
-      "good": 7,
-      "warn": 14,
-      "bad": 27,
-      "unknown": 1
+      "good": 8,
+      "warn": 15,
+      "bad": 26,
+      "unknown": 0
     }
   }
 }
