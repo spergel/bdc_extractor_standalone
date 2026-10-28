@@ -144,6 +144,19 @@ Several OBDC 10-Qs (2022–2024) still overstate the portfolio by 13–17% and
 remain `mismatch` in the Data Quality view; those need a separate table/column
 audit.
 
+### CION, HRZN and SAR re-extraction
+
+Three parked scrapers were repaired and re-run across their available history:
+
+| Ticker | Main fixes | Quality before → after |
+|---|---|---|
+| CION | exclude the `LIABILITIES IN EXCESS OF OTHER ASSETS` memo row; normalize `Month DD, YYYY` schedule headings; collapse repeated body/exhibit tables | bad 28.6% → **good 82.4%** |
+| HRZN | parse the complete multi-page schedule instead of the first block | bad 0% → **warn 94.1%** |
+| SAR | normalize `FairValue` headers; carry the current period across pages; skip prior-block continuations; signature-dedupe repeated schedules | bad 23.5% → **bad 47.1%** (2025+ exact) |
+
+SAR's 2022–2024 filings still run 7–26% high and remain `mismatch`; the newer
+periods reconcile to within 0.5%.
+
 ## Unit normalization
 
 `fix_multi_block_holdings.py` also handles files extracted in dollars instead of
