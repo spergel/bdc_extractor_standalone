@@ -21,6 +21,7 @@ from .obdc import OBDCScraper
 from .bxsl import BXSLScraper
 from .main import MAINScraper
 from .mrcc import MRCCScraper
+from .mfic import MFICScraper
 from .gbdc import GBDCScraper
 from .bbdc import BBDCScraper
 from .ocsl import OCSLScraper
@@ -46,6 +47,7 @@ from .trin import TRINScraper
 from .hrzn import HRZNScraper
 from .sar import SARScraper
 from .scm import SCMScraper
+from .whf import WHFScraper
 
 SCRAPERS: Dict[str, Type[BaseCompanyScraper]] = {
     "ARCC": ARCCScraper,
@@ -54,6 +56,7 @@ SCRAPERS: Dict[str, Type[BaseCompanyScraper]] = {
     "BXSL": BXSLScraper,
     "MAIN": MAINScraper,
     "MRCC": MRCCScraper,
+    "MFIC": MFICScraper,
     "GBDC": GBDCScraper,
     "BBDC": BBDCScraper,
     "OCSL": OCSLScraper,
@@ -79,10 +82,11 @@ SCRAPERS: Dict[str, Type[BaseCompanyScraper]] = {
     "HRZN": HRZNScraper,
     "SAR": SARScraper,
     "SCM": SCMScraper,
+    "WHF": WHFScraper,
 }
 
 # Remaining BDCs to port, in priority order.
-PORTING_QUEUE = ["SCM", "WHF", "MFIC", "MSDL",
+PORTING_QUEUE = ["SCM", "WHF", "MSDL",
     "KBDC", "LIEN", "NCDL", "MSIF", "OFS", "OXSQ", "GECC", "ICMB",
     "PFX", "PSBD", "RAND", "RWAY", "SSSS", "EQS", "TPVG", "BCRED",
 ]
