@@ -1,0 +1,79 @@
+{
+  "ticker": "PFX",
+  "summary": {
+    "ticker": "PFX",
+    "scale": 1000,
+    "median_ratio": 1.991,
+    "periods": 3,
+    "with_reported": 1,
+    "match": 0,
+    "near": 0,
+    "mismatch": 1,
+    "match_pct": 0.0,
+    "trust": "bad",
+    "latest": {
+      "filing_date": "2026-02-09",
+      "period_end": "2025-12-31",
+      "holdings_fv": 588057.0,
+      "row_count": 91,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1490349/000121390026013689/ea0274073-10q_phenixfin.htm",
+      "form": "10-Q"
+    },
+    "issue_periods": [
+      {
+        "filing_date": "2025-08-06",
+        "delta_pct": 99.1,
+        "status": "mismatch",
+        "holdings_fv": 586227.0,
+        "reported_fv_k": 294438.831,
+        "quality_flags": []
+      }
+    ]
+  },
+  "periods": [
+    {
+      "filing_date": "2025-08-06",
+      "period_end": "2025-06-30",
+      "holdings_fv": 586227.0,
+      "row_count": 90,
+      "reported_fv": 294438831.0,
+      "reported_fv_k": 294438.831,
+      "delta_pct": 99.1,
+      "status": "mismatch",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1490349/000121390025072562/ea0250012-10q_phenixfin.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2025-12-12",
+      "period_end": "2025-09-30",
+      "holdings_fv": 589169.0,
+      "row_count": 97,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1490349/000121390025120913/ea0264791-10k_phenixfin.htm",
+      "form": "10-K"
+    },
+    {
+      "filing_date": "2026-02-09",
+      "period_end": "2025-12-31",
+      "holdings_fv": 588057.0,
+      "row_count": 91,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1490349/000121390026013689/ea0274073-10q_phenixfin.htm",
+      "form": "10-Q"
+    }
+  ]
+}

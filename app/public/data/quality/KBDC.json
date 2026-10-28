@@ -1,0 +1,187 @@
+{
+  "ticker": "KBDC",
+  "summary": {
+    "ticker": "KBDC",
+    "scale": 1000,
+    "median_ratio": 1.35,
+    "periods": 9,
+    "with_reported": 3,
+    "match": 0,
+    "near": 1,
+    "mismatch": 2,
+    "match_pct": 0.0,
+    "trust": "bad",
+    "latest": {
+      "filing_date": "2025-11-10",
+      "period_end": "2025-09-30",
+      "holdings_fv": 2986356.0,
+      "row_count": 290,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025108212/ea0261574-10q_kayne.htm",
+      "form": "10-Q"
+    },
+    "issue_periods": [
+      {
+        "filing_date": "2023-08-14",
+        "delta_pct": 8.14,
+        "status": "near",
+        "holdings_fv": 1404821.0,
+        "reported_fv_k": 1299045.0,
+        "quality_flags": [
+          "Fair value is 1.50x the trailing median (possible annual/unit issue)"
+        ]
+      },
+      {
+        "filing_date": "2024-05-09",
+        "delta_pct": 38.94,
+        "status": "mismatch",
+        "holdings_fv": 2493861.0,
+        "reported_fv_k": 1794913.0,
+        "quality_flags": [
+          "Fair value is 1.80x the trailing median (possible annual/unit issue)"
+        ]
+      },
+      {
+        "filing_date": "2024-08-13",
+        "delta_pct": 34.97,
+        "status": "mismatch",
+        "holdings_fv": 2520436.0,
+        "reported_fv_k": 1867402.0,
+        "quality_flags": [
+          "Fair value is 1.81x the trailing median (possible annual/unit issue)"
+        ]
+      }
+    ]
+  },
+  "periods": [
+    {
+      "filing_date": "2023-05-15",
+      "period_end": "2023-03-31",
+      "holdings_fv": 939471.0,
+      "row_count": 159,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023039591/f10q0323_kayneand.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2023-08-14",
+      "period_end": "2023-06-30",
+      "holdings_fv": 1404821.0,
+      "row_count": 171,
+      "reported_fv": 1299045000.0,
+      "reported_fv_k": 1299045.0,
+      "delta_pct": 8.14,
+      "status": "near",
+      "quality_flags": [
+        "Fair value is 1.50x the trailing median (possible annual/unit issue)"
+      ],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023067086/f10q0623_kayneand.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2023-11-14",
+      "period_end": "2023-09-30",
+      "holdings_fv": 1384819.0,
+      "row_count": 167,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023086801/f10q0923_kayneand.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2024-05-09",
+      "period_end": "2024-03-31",
+      "holdings_fv": 2493861.0,
+      "row_count": 177,
+      "reported_fv": 1794913000.0,
+      "reported_fv_k": 1794913.0,
+      "delta_pct": 38.94,
+      "status": "mismatch",
+      "quality_flags": [
+        "Fair value is 1.80x the trailing median (possible annual/unit issue)"
+      ],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024040973/ea0204433-10q_kayne.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2024-08-13",
+      "period_end": "2024-06-30",
+      "holdings_fv": 2520436.0,
+      "row_count": 183,
+      "reported_fv": 1867402000.0,
+      "reported_fv_k": 1867402.0,
+      "delta_pct": 34.97,
+      "status": "mismatch",
+      "quality_flags": [
+        "Fair value is 1.81x the trailing median (possible annual/unit issue)"
+      ],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024068355/ea0210000-10q_kayne.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2024-11-13",
+      "period_end": "2024-09-30",
+      "holdings_fv": 2591335.0,
+      "row_count": 187,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024097564/ea0218487-10q_kayne.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2025-05-12",
+      "period_end": "2025-03-31",
+      "holdings_fv": 3267865.0,
+      "row_count": 256,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025042033/ea0238650-10q_kayne.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2025-08-11",
+      "period_end": "2025-06-30",
+      "holdings_fv": 5880467.0,
+      "row_count": 294,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [
+        "Fair value is 2.30x the trailing median (possible annual/unit issue)"
+      ],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025074300/ea0249372-10q_kayne.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2025-11-10",
+      "period_end": "2025-09-30",
+      "holdings_fv": 2986356.0,
+      "row_count": 290,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025108212/ea0261574-10q_kayne.htm",
+      "form": "10-Q"
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "ticker": "NCDL",
+  "summary": {
+    "ticker": "NCDL",
+    "scale": 1000,
+    "median_ratio": 0.996,
+    "periods": 11,
+    "with_reported": 11,
+    "match": 10,
+    "near": 1,
+    "mismatch": 0,
+    "match_pct": 90.9,
+    "trust": "good",
+    "latest": {
+      "filing_date": "2025-11-04",
+      "period_end": "2025-09-30",
+      "holdings_fv": 2009911.0,
+      "row_count": 531,
+      "reported_fv": 2009911000.0,
+      "reported_fv_k": 2009911.0,
+      "delta_pct": 0.0,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1737924/000173792425000013/ncdlc-20250930.htm",
+      "form": "10-Q"
+    },
+    "issue_periods": [
+      {
+        "filing_date": "2024-11-07",
+        "delta_pct": -6.99,
+        "status": "near",
+        "holdings_fv": 1961894.0,
+        "reported_fv_k": 2109367.0,
+        "quality_flags": []
+      }
+    ]
+  },
+  "periods": [
+    {
+      "filing_date": "2023-05-05",
+      "period_end": "2023-03-31",
+      "holdings_fv": 1245285.0,
+      "row_count": 319,
+      "reported_fv": 1306118000.0,
+      "reported_fv_k": 1306118.0,
+      "delta_pct": -4.66,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023016092/ncdlc-20230331.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2023-08-04",
+      "period_end": "2023-06-30",
+      "holdings_fv": 1337582.0,
+      "row_count": 348,
+      "reported_fv": 1386107000.0,
+      "reported_fv_k": 1386107.0,
+      "delta_pct": -3.5,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023027497/ncdlc-20230630.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2023-10-30",
+      "period_end": "2023-09-30",
+      "holdings_fv": 1467501.0,
+      "row_count": 387,
+      "reported_fv": 1515212000.0,
+      "reported_fv_k": 1515212.0,
+      "delta_pct": -3.15,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023035545/ncdlc-20230930.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2024-02-27",
+      "period_end": "2023-12-31",
+      "holdings_fv": 1701713.0,
+      "row_count": 430,
+      "reported_fv": 1706163000.0,
+      "reported_fv_k": 1706163.0,
+      "delta_pct": -0.26,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024007039/ncdlc-20231231.htm",
+      "form": "10-K"
+    },
+    {
+      "filing_date": "2024-05-09",
+      "period_end": "2024-03-31",
+      "holdings_fv": 1838200.0,
+      "row_count": 441,
+      "reported_fv": 1847332000.0,
+      "reported_fv_k": 1847332.0,
+      "delta_pct": -0.49,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024021951/ncdlc-20240331.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2024-08-07",
+      "period_end": "2024-06-30",
+      "holdings_fv": 2049315.0,
+      "row_count": 462,
+      "reported_fv": 2058541000.0,
+      "reported_fv_k": 2058541.0,
+      "delta_pct": -0.45,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024035331/ncdlc-20240630.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2024-11-07",
+      "period_end": "2024-09-30",
+      "holdings_fv": 1961894.0,
+      "row_count": 517,
+      "reported_fv": 2109367000.0,
+      "reported_fv_k": 2109367.0,
+      "delta_pct": -6.99,
+      "status": "near",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024045921/ncdlc-20240930.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2025-02-27",
+      "period_end": "2024-12-31",
+      "holdings_fv": 2122275.0,
+      "row_count": 502,
+      "reported_fv": 2122221000.0,
+      "reported_fv_k": 2122221.0,
+      "delta_pct": 0.0,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025008382/ncdlc-20241231.htm",
+      "form": "10-K"
+    },
+    {
+      "filing_date": "2025-05-08",
+      "period_end": "2025-03-31",
+      "holdings_fv": 2124817.0,
+      "row_count": 508,
+      "reported_fv": 2124817000.0,
+      "reported_fv_k": 2124817.0,
+      "delta_pct": 0.0,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025023397/ncdlc-20250331.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2025-08-06",
+      "period_end": "2025-06-30",
+      "holdings_fv": 2033602.0,
+      "row_count": 521,
+      "reported_fv": 2033602000.0,
+      "reported_fv_k": 2033602.0,
+      "delta_pct": 0.0,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025038050/ncdlc-20250630.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2025-11-04",
+      "period_end": "2025-09-30",
+      "holdings_fv": 2009911.0,
+      "row_count": 531,
+      "reported_fv": 2009911000.0,
+      "reported_fv_k": 2009911.0,
+      "delta_pct": 0.0,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1737924/000173792425000013/ncdlc-20250930.htm",
+      "form": "10-Q"
+    }
+  ]
+}

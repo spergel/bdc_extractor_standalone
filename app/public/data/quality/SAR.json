@@ -1,0 +1,98 @@
+{
+  "ticker": "SAR",
+  "summary": {
+    "ticker": "SAR",
+    "scale": 1,
+    "median_ratio": null,
+    "periods": 5,
+    "with_reported": 0,
+    "match": 0,
+    "near": 0,
+    "mismatch": 0,
+    "match_pct": null,
+    "trust": "unknown",
+    "latest": {
+      "filing_date": "2026-01-07",
+      "period_end": "2025-12-31",
+      "holdings_fv": 2259336.0,
+      "row_count": 441,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390026002153/ea0270446-10q_saratoga.htm",
+      "form": "10-Q"
+    },
+    "issue_periods": []
+  },
+  "periods": [
+    {
+      "filing_date": "2025-01-08",
+      "period_end": "2024-12-31",
+      "holdings_fv": 2264401.0,
+      "row_count": 483,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390025002065/ea0225626-10q_saratoga.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2025-05-07",
+      "period_end": "2025-03-31",
+      "holdings_fv": 2568951.0,
+      "row_count": 137,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [
+        "Row count fell 72% vs the prior filing"
+      ],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390025040617/ea0235536-10k_saratoga.htm",
+      "form": "10-K"
+    },
+    {
+      "filing_date": "2025-07-08",
+      "period_end": "2025-06-30",
+      "holdings_fv": 2228704.0,
+      "row_count": 463,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390025062051/ea0246449-10q_saratoga.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2025-10-07",
+      "period_end": "2025-09-30",
+      "holdings_fv": 2214592.0,
+      "row_count": 450,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390025097022/ea0258170-10q_saratoga.htm",
+      "form": "10-Q"
+    },
+    {
+      "filing_date": "2026-01-07",
+      "period_end": "2025-12-31",
+      "holdings_fv": 2259336.0,
+      "row_count": 441,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [],
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390026002153/ea0270446-10q_saratoga.htm",
+      "form": "10-Q"
+    }
+  ]
+}
