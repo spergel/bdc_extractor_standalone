@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: bdc-extractor
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter
+    healthCheckPath: /api/freshness
+    envVars:
+      - key: PORT
+        value: 8787

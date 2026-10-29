@@ -310,6 +310,57 @@ python process_all_bdcs.py --tickers ARCC --years-back 0
 
 See [docs/OPERATIONS.md](docs/OPERATIONS.md) and [docs/PIPELINE_AND_ROADMAP.md](docs/PIPELINE_AND_ROADMAP.md) for troubleshooting and workflow guidance.
 
+## Public deployment & filing monitoring
+
+The app is a Node/Hono server over ~1.2 GB of static data, so it needs a
+container/VM (or object storage) rather than Cloudflare Workers' small asset
+limit.
+
+### Quick public URL
+
+```bash
+# terminal 1
+cd app && PORT=8787 node src/index.ts
+
+# terminal 2
+cloudflared tunnel --url http://localhost:8787 --protocol http2
+```
+
+Use `--protocol http2` on networks that block outbound QUIC. The generated
+`https://*.trycloudflare.com` URL stays live only while both processes run.
+
+### Durable container deploy
+
+```bash
+docker build -t bdc-app .
+docker run -p 8787:8787 bdc-app
+```
+
+`render.yaml` is included for a Render Docker service. Set the health check to
+`/api/freshness`.
+
+### New filing checks
+
+```bash
+# report new 10-Q / 10-K filings
+python scripts/check_new_filings.py
+
+# re-extract affected tickers and rebuild all derived data
+python scripts/check_new_filings.py --run
+```
+
+The first run records the current latest accession per ticker; later runs
+report only newly seen filings. State is stored in
+`output/filing_monitor_state.json`. Example daily cron entry:
+
+```cron
+0 6 * * * cd /path/to/bdc_extractor_standalone && \
+  python3 scripts/check_new_filings.py --run >> output/filing_monitor.log 2>&1
+```
+
+`GET /api/freshness` returns the latest filing date, quality generation time,
+ticker count and match summary.
+
 ## 🎯 Roadmap
 
 - [ ] Add more BDCs

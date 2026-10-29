@@ -11,7 +11,7 @@
 
 import { Hono } from "hono";
 import { serve } from "@hono/node-server";
-import { readFile } from "node:fs/promises";
+import { readFile, stat } from "node:fs/promises";
 import { resolve } from "node:path";
 
 const PORT = Number(process.env.PORT || 8787);
@@ -170,6 +170,31 @@ app.get("/api/quality", async (c) => {
   const data = await readJson("quality/quality_index.json");
   if (!data) return c.json({ error: "quality index not found" }, 404);
   return c.json(data);
+});
+
+app.get("/api/freshness", async (c) => {
+  const quality = await readJson<any>("quality/quality_index.json");
+  const financials = await readJson<any>("financials/financials_index.json");
+  let dataModified: string | null = null;
+  try {
+    dataModified = (await stat(DATA_DIR)).mtime.toISOString();
+  } catch {
+    dataModified = null;
+  }
+  const latestFiling = Object.values(quality?.tickers ?? {})
+    .map((x: any) => x?.latest?.filing_date)
+    .filter(Boolean)
+    .sort()
+    .pop() ?? null;
+  return c.json({
+    as_of: new Date().toISOString(),
+    data_dir_modified: dataModified,
+    quality_generated_at: quality?.generated_at ?? null,
+    financials_generated_at: financials?.generated_at ?? null,
+    latest_filing_date: latestFiling,
+    tickers: quality?.summary?.tickers ?? null,
+    quality: quality?.summary ?? null,
+  });
 });
 
 app.get("/api/tickers/:ticker/quality", async (c) => {
