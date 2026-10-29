@@ -1,448 +1,464 @@
 company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
-Trader Corp.,First Lien,Automotive,10.50%,,CDOR,5.50%,,,2029-12-21,74535,53960,55111,,53960,,,,,,GSBD,2024-11-07
-Trader Corp.,First Lien,Automotive,10.50%,,CDOR,5.50%,,,2029-12-21,312,227,231,,227,,,,,,GSBD,2024-11-07
-"Recochem, Inc.",First Lien,Chemicals & Materials,11.00%,,SOFR,5.75%,,,2030-11-01,13191,12935,13191,,12935,,,,,,GSBD,2024-11-07
-"Recochem, Inc.",First Lien,Chemicals & Materials,10.46%,,CDOR,5.75%,,,2030-11-01,7931,5617,5864,,5617,,,,,,GSBD,2024-11-07
-"Recochem, Inc.",First Lien,Chemicals & Materials,11.00%,,SOFR,5.75%,,,2030-11-01,1753,1721,1753,,1721,,,,,,GSBD,2024-11-07
-"Recochem, Inc.",First Lien,Chemicals & Materials,11.00%,,SOFR,5.75%,,,2030-11-01,1294,191,211,,191,,,,,,GSBD,2024-11-07
-Prophix Software Inc.,First Lien,Financial Services,10.96%,,SOFR,6.00%,,,2027-02-01,730,94,90,,94,,,,,,GSBD,2024-11-07
-1272775 B.C. LTD.,First Lien,Business Services,10.50%,,SOFR,5.75%,,,2026-11-06,9076,9021,9031,,9021,,,,,,GSBD,2024-11-07
-1272775 B.C. LTD.,First Lien,Business Services,,,SOFR,5.75%,,,2026-11-06,1260,5,6,,5,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-Everest Clinical Research Corp.,First Lien,Business Services,10.50%,,SOFR,5.75%,,,2026-11-06,5699,5632,5670,,5632,,,,,,GSBD,2024-11-07
-Rodeo Buyer Company,First Lien,Business Services,11.20%,,SOFR,6.25%,,,2027-05-25,21167,20951,21008,,20951,,,,,,GSBD,2024-11-07
-Rodeo Buyer Company,First Lien,Business Services,,,SOFR,6.25%,,,2027-05-25,3387,31,26,,31,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"iWave Information Systems, Inc.",First Lien,Software & Technology,11.61%,,SOFR,6.75%,,,2028-11-23,876,859,854,,859,,,,,,GSBD,2024-11-07
-"iWave Information Systems, Inc.",First Lien,Software & Technology,,,SOFR,6.75%,,,2028-11-23,438,2,11,,2,,,,,,GSBD,2024-11-07
+Trader Corporation,First Lien,Automobiles,10.50%,,CDOR,5.50%,,,2029-12-21,74535,53960,55111,,53960,,,,,,GSBD,2024-11-07
+Trader Corporation,First Lien,Automobiles,10.50%,,CDOR,5.50%,,,2029-12-21,312,227,231,,227,,,,,,GSBD,2024-11-07
+Trader Corporation,First Lien,Automobiles,,,CDOR,5.50%,,,2028-12-22,24,,,,,,,,,,GSBD,2024-11-07
+"Recochem, Inc",First Lien,Chemicals,11.00%,,SOFR,5.75%,,,2030-11-01,13191,12935,13191,,12935,,,,,,GSBD,2024-11-07
+"Recochem, Inc",First Lien,Chemicals,10.46%,,CDOR,5.75%,,,2030-11-01,7931,5617,5864,,5617,,,,,,GSBD,2024-11-07
+"Recochem, Inc",First Lien,Chemicals,,,CDOR,5.75%,,,2030-11-01,1941,12,,,12,,,,,,GSBD,2024-11-07
+"Recochem, Inc",First Lien,Chemicals,11.00%,,SOFR,5.75%,,,2030-11-01,1753,1721,1753,,1721,,,,,,GSBD,2024-11-07
+"Recochem, Inc",First Lien,Chemicals,11.00%,,SOFR,5.75%,,,2030-11-01,1294,191,211,,191,,,,,,GSBD,2024-11-07
+Prophix Software Inc. (dba Pound Bidco),First Lien,Financial Services,10.96%,,SOFR,6.00%,,,2027-02-01,730,94,90,,94,,,,,,GSBD,2024-11-07
+1272775 B.C. LTD. (dba Everest Clinical Research),First Lien,Professional Services,10.50%,,SOFR,5.75%,,,2026-11-06,9076,9021,9031,,9021,,,,,,GSBD,2024-11-07
+1272775 B.C. LTD. (dba Everest Clinical Research),First Lien,Professional Services,,,SOFR,5.75%,,,2026-11-06,1260,5,6,,5,,,,,,GSBD,2024-11-07
+Everest Clinical Research Corporation,First Lien,Professional Services,10.50%,,SOFR,5.75%,,,2026-11-06,5699,5632,5670,,5632,,,,,,GSBD,2024-11-07
+Rodeo Buyer Company (dba Absorb Software),First Lien,Professional Services,11.20%,,SOFR,6.25%,,,2027-05-25,21167,20951,21008,,20951,,,,,,GSBD,2024-11-07
+Rodeo Buyer Company (dba Absorb Software),First Lien,Professional Services,,,SOFR,6.25%,,,2027-05-25,3387,31,26,,31,,,,,,GSBD,2024-11-07
+"iWave Information Systems, Inc.",First Lien,Software,11.61%,,SOFR,6.75%,,,2028-11-23,876,859,854,,859,,,,,,GSBD,2024-11-07
+"iWave Information Systems, Inc.",First Lien,Software,,,SOFR,6.75%,,,2028-11-23,438,2,11,,2,,,,,,GSBD,2024-11-07
 "Doxim, Inc.",First Lien,Financial Services,11.70%,,SOFR,6.75%,,,2026-06-01,24313,24094,23340,,24094,,,,,,GSBD,2024-11-07
 "Doxim, Inc.",First Lien,Financial Services,11.95%,,SOFR,7.00%,,,2026-06-01,6546,6486,6317,,6486,,,,,,GSBD,2024-11-07
 "Doxim, Inc.",First Lien,Financial Services,12.95%,,SOFR,8.00%,,,2026-06-01,5083,5034,4981,,5034,,,,,,GSBD,2024-11-07
 "Doxim, Inc.",First Lien,Financial Services,12.95%,,SOFR,8.00%,,,2026-06-01,3809,3775,3733,,3775,,,,,,GSBD,2024-11-07
-Kawa Solar Holdings Ltd.,First Lien,Industrials,,,,,,,2024-12-31,3917,3603,842,,3603,,,,,,GSBD,2024-11-07
-Conergy Asia & ME Pte. LTD.,Unsecured Debt,Industrials,,,,,,,2024-06-30,1266,1055,,,1055,,,,,,GSBD,2024-11-07
-Clearcourse Partnership Acquireco Finance Ltd.,First Lien,Software & Technology,13.95%,,,,,,2028-07-25,15007,17908,19311,,17908,,,,,,GSBD,2024-11-07
-Clearcourse Partnership Acquireco Finance Ltd.,First Lien,Software & Technology,13.90%,,,,,,2028-07-25,12314,9693,10022,,9693,,,,,,GSBD,2024-11-07
-Bigchange Group Ltd.,First Lien,Software & Technology,11.07%,,,,,,2026-12-23,11990,15919,15950,,15919,,,,,,GSBD,2024-11-07
-Bigchange Group Ltd.,First Lien,Software & Technology,11.10%,,,,,,2026-12-23,2912,3701,3873,,3701,,,,,,GSBD,2024-11-07
-Bigchange Group Ltd.,First Lien,Software & Technology,,,,,,,2026-12-23,2400,32,16,,32,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Air Comm Corp., LLC",First Lien,Aerospace & Defense,,,SOFR,4.75%,,,2027-07-01,902,,,,,,,,,,GSBD,2024-11-07
-"Air Comm Corp., LLC",First Lien,Aerospace & Defense,,,SOFR,4.75%,,,2027-07-01,138,,,,,,,,,,GSBD,2024-11-07
+Kawa Solar Holdings Limited,First Lien,Construction & Engineering,,,,,,,2024-12-31,3917,3603,842,,3603,,,,,,GSBD,2024-11-07
+Kawa Solar Holdings Limited,First Lien,Construction & Engineering,,,,,,,2024-12-31,3318,800,,,800,,,,,,GSBD,2024-11-07
+Conergy Asia & ME Pte. LTD.,Unsecured Debt,Construction & Engineering,,,,,,,2024-06-30,1266,1055,,,1055,,,,,,GSBD,2024-11-07
+Clearcourse Partnership Acquireco Finance Limited,First Lien,IT Services,13.95%,,,,,,2028-07-25,15007,17908,19311,,17908,,,,,,GSBD,2024-11-07
+Clearcourse Partnership Acquireco Finance Limited,First Lien,IT Services,13.90%,,,,,,2028-07-25,12314,9693,10022,,9693,,,,,,GSBD,2024-11-07
+Bigchange Group Limited,First Lien,Software,11.07%,,,,,,2026-12-23,11990,15919,15950,,15919,,,,,,GSBD,2024-11-07
+Bigchange Group Limited,First Lien,Software,11.10%,,,,,,2026-12-23,2912,3701,3873,,3701,,,,,,GSBD,2024-11-07
+Bigchange Group Limited,First Lien,Software,,,,,,,2026-12-23,2400,32,16,,32,,,,,,GSBD,2024-11-07
+"Air Comm Corporation, LLC (dba Signia Aerospace)",First Lien,Aerospace & Defense,,,SOFR,4.75%,,,2027-07-01,902,,,,,,,,,,GSBD,2024-11-07
+"Air Comm Corporation, LLC (dba Signia Aerospace)",First Lien,Aerospace & Defense,,,SOFR,4.75%,,,2027-07-01,138,,,,,,,,,,GSBD,2024-11-07
 Frontgrade Technologies Holdings Inc.,First Lien,Aerospace & Defense,10.10%,,SOFR,5.00%,,,2030-01-09,965,941,957,,941,,,,,,GSBD,2024-11-07
 Frontgrade Technologies Holdings Inc.,First Lien,Aerospace & Defense,10.10%,,SOFR,5.00%,,,2030-01-09,737,724,732,,724,,,,,,GSBD,2024-11-07
 Frontgrade Technologies Holdings Inc.,First Lien,Aerospace & Defense,,,SOFR,5.00%,,,2028-01-09,250,4,2,,4,,,,,,GSBD,2024-11-07
 "VisionSafe Holdings, Inc.",First Lien,Aerospace & Defense,11.13%,,SOFR,6.00%,,,2030-04-18,8679,8515,8506,,8515,,,,,,GSBD,2024-11-07
-"VisionSafe Holdings, Inc.",First Lien,Aerospace & Defense,,,SOFR,6.00%,,,2030-04-18,1219,23,24,,23,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Thrasio, LLC",First Lien,Consumer & Retail,,,SOFR,10.26%,,,2029-06-18,14289,12309,12467,,12309,,,,,,GSBD,2024-11-07
-"Thrasio, LLC",First Lien,Consumer & Retail,15.54%,,SOFR,10.26%,,,2029-06-18,4605,4535,4593,,4535,,,,,,GSBD,2024-11-07
-"Acuity Specialty Products, Inc.",First Lien,Chemicals & Materials,8.25%,,SOFR,4.00%,,,2028-10-02,52652,52652,52125,,52652,,,,,,GSBD,2024-11-07
-"Elemica Parent, Inc.",First Lien,Chemicals & Materials,10.93%,,SOFR,5.50%,,,2026-09-18,6809,6650,6673,,6650,,,,,,GSBD,2024-11-07
-"Elemica Parent, Inc.",First Lien,Chemicals & Materials,10.96%,,SOFR,5.50%,,,2026-09-18,1455,1440,1426,,1440,,,,,,GSBD,2024-11-07
-"Elemica Parent, Inc.",First Lien,Chemicals & Materials,10.95%,,SOFR,5.50%,,,2026-09-18,1335,1311,1309,,1311,,,,,,GSBD,2024-11-07
-"Elemica Parent, Inc.",First Lien,Chemicals & Materials,10.67%,,SOFR,5.50%,,,2026-09-18,930,824,818,,824,,,,,,GSBD,2024-11-07
-"Elemica Parent, Inc.",First Lien,Chemicals & Materials,10.95%,,SOFR,5.50%,,,2026-09-18,545,539,534,,539,,,,,,GSBD,2024-11-07
-Formulations Parent Corp.,First Lien,Chemicals & Materials,10.87%,,SOFR,5.75%,,,2030-11-15,4988,4897,4888,,4897,,,,,,GSBD,2024-11-07
-Formulations Parent Corp.,First Lien,Chemicals & Materials,,,SOFR,5.75%,,,2029-11-15,835,14,17,,14,,,,,,GSBD,2024-11-07
-"3SI Security Systems, Inc.",First Lien,Business Services,11.14%,,SOFR,6.50%,,,2026-12-16,12742,12534,12232,,12534,,,,,,GSBD,2024-11-07
-"3SI Security Systems, Inc.",First Lien,Business Services,11.14%,,SOFR,6.50%,,,2026-12-16,1941,1881,1863,,1881,,,,,,GSBD,2024-11-07
-"ASM Buyer, Inc.",First Lien,Business Services,10.10%,,SOFR,5.00%,,,2031-08-22,8500,8267,8330,,8267,,,,,,GSBD,2024-11-07
-"ASM Buyer, Inc.",First Lien,Business Services,,,SOFR,5.00%,,,2030-08-22,1000,19,20,,19,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"ASM Buyer, Inc.",First Lien,Business Services,,,SOFR,5.00%,,,2031-08-22,500,5,5,,5,,,,,,GSBD,2024-11-07
-"Halo Branded Solutions, Inc.",First Lien,Business Services,9.45%,,SOFR,4.50%,,,2025-06-30,6174,6166,5615,,6166,,,,,,GSBD,2024-11-07
-"Kene Acquisition, Inc.",First Lien,Business Services,10.10%,,SOFR,5.25%,,,2031-02-07,9499,9321,9404,,9321,,,,,,GSBD,2024-11-07
-"Kene Acquisition, Inc.",First Lien,Business Services,,,SOFR,5.25%,,,2031-02-07,4213,38,42,,38,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Kene Acquisition, Inc.",First Lien,Business Services,,,SOFR,5.25%,,,2031-02-07,1264,23,13,,23,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-Rock Star Mergersub LLC,First Lien,Business Services,,,SOFR,4.75%,,,2031-09-09,21691,,,,,,,,,,GSBD,2024-11-07
-Rock Star Mergersub LLC,First Lien,Business Services,,,SOFR,4.75%,,,2031-09-09,6941,,,,,,,,,,GSBD,2024-11-07
-Rock Star Mergersub LLC,First Lien,Business Services,,,SOFR,4.75%,,,2031-09-09,2950,,,,,,,,,,GSBD,2024-11-07
-Superior Environmental Solutions,First Lien,Business Services,11.45%,,SOFR,6.50%,,,2029-08-01,3960,3875,3920,,3875,,,,,,GSBD,2024-11-07
-Superior Environmental Solutions,First Lien,Business Services,,,SOFR,6.50%,,,2029-08-01,1200,14,12,,14,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-Superior Environmental Solutions,First Lien,Business Services,11.45%,,SOFR,6.50%,,,2029-08-01,600,227,234,,227,,,,,,GSBD,2024-11-07
-Superior Environmental Solutions,First Lien,Business Services,11.45%,,SOFR,6.50%,,,2029-08-01,597,584,591,,584,,,,,,GSBD,2024-11-07
-Superior Environmental Solutions,First Lien,Business Services,11.45%,,SOFR,6.50%,,,2029-08-01,199,194,197,,194,,,,,,GSBD,2024-11-07
-Sweep Purchaser LLC,First Lien,Business Services,10.80%,,SOFR,5.75%,,,2027-06-30,20104,19943,19903,,19943,,,,,,GSBD,2024-11-07
-Sweep Purchaser LLC,First Lien,Business Services,10.80%,,SOFR,5.75%,,,2027-06-30,10650,10605,10597,,10605,,,,,,GSBD,2024-11-07
-Sweep Purchaser LLC,First Lien,Business Services,,,SOFR,5.75%,,,2027-06-30,4541,34,23,,34,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-UP Acquisition Corp.,First Lien,Business Services,10.85%,,SOFR,6.00%,,,2029-10-31,12078,11838,11958,,11838,,,,,,GSBD,2024-11-07
-UP Acquisition Corp.,First Lien,Business Services,11.30%,,SOFR,6.00%,,,2029-10-31,1902,211,228,,211,,,,,,GSBD,2024-11-07
-"USA DeBusk, LLC",First Lien,Business Services,9.85%,,SOFR,5.25%,,,2031-04-30,8917,8789,8873,,8789,,,,,,GSBD,2024-11-07
-"USA DeBusk, LLC",First Lien,Business Services,10.37%,,SOFR,5.25%,,,2031-04-30,3280,343,353,,343,,,,,,GSBD,2024-11-07
-"USA DeBusk, LLC",First Lien,Business Services,9.97%,,SOFR,5.25%,,,2030-04-30,1230,617,628,,617,,,,,,GSBD,2024-11-07
-"Valet Waste Holdings, Inc.",First Lien,Business Services,10.60%,,SOFR,5.75%,,,2029-05-01,25095,24934,24907,,24934,,,,,,GSBD,2024-11-07
-"Valet Waste Holdings, Inc.",First Lien,Business Services,10.60%,,SOFR,5.75%,,,2029-05-01,2641,1304,1301,,1304,,,,,,GSBD,2024-11-07
-"Valet Waste Holdings, Inc.",First Lien,Business Services,,,SOFR,5.75%,,,2029-05-01,2201,14,17,,14,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"VRC Companies, LLC",First Lien,Business Services,11.01%,,SOFR,5.50%,,,2027-06-29,32003,31752,31683,,31752,,,,,,GSBD,2024-11-07
-"VRC Companies, LLC",First Lien,Business Services,,,SOFR,5.50%,,,2027-06-29,944,7,9,,7,,,,,,GSBD,2024-11-07
-ATX Networks Corp.,First Lien,Telecommunications,12.60%,,SOFR,7.50%,,,2026-09-01,3001,2620,2371,,2620,,,,,,GSBD,2024-11-07
-ATX Networks Corp.,First Lien,Telecommunications,12.34%,,SOFR,7.00%,,,2026-09-01,764,686,671,,686,,,,,,GSBD,2024-11-07
-ATX Networks Corp.,First Lien,Telecommunications,11.10%,,SOFR,6.00%,,,2026-09-01,735,374,359,,374,,,,,,GSBD,2024-11-07
-ATX Networks Corp.,First Lien,Telecommunications,11.34%,,SOFR,6.00%,,,2026-09-01,190,190,186,,190,,,,,,GSBD,2024-11-07
-"Geotechnical Merger Sub, Inc.",First Lien,Industrials,,,SOFR,4.75%,,,2031-08-24,663,,,,,,,,,,GSBD,2024-11-07
-"Geotechnical Merger Sub, Inc.",First Lien,Industrials,,,SOFR,4.75%,,,2031-08-24,245,,,,,,,,,,GSBD,2024-11-07
-"Geotechnical Merger Sub, Inc.",First Lien,Industrials,,,SOFR,4.75%,,,2029-08-24,92,,,,,,,,,,GSBD,2024-11-07
-"Superman Holdings, LLC",First Lien,Industrials,9.56%,,SOFR,4.50%,,,2031-08-29,10206,10156,10155,,10156,,,,,,GSBD,2024-11-07
-"Superman Holdings, LLC",First Lien,Industrials,,,SOFR,4.50%,,,2031-08-29,3322,8,8,,8,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Superman Holdings, LLC",First Lien,Industrials,,,SOFR,4.50%,,,2031-08-29,1471,7,7,,7,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-Blast Bidco Inc.,First Lien,Consumer & Retail,10.60%,,SOFR,6.00%,,,2030-10-04,4455,4355,4411,,4355,,,,,,GSBD,2024-11-07
-Blast Bidco Inc.,First Lien,Consumer & Retail,,,SOFR,6.00%,,,2029-10-05,522,11,5,,11,,,,,,GSBD,2024-11-07
-"Buffalo Merger Sub, LLC",First Lien,Containers & Packaging,,,SOFR,5.25%,,,2030-09-30,44792,,,,,,,,,,GSBD,2024-11-07
-"Buffalo Merger Sub, LLC",First Lien,Containers & Packaging,,,SOFR,5.25%,,,2030-09-30,5208,,,,,,,,,,GSBD,2024-11-07
-"A Place For Mom, Inc.",First Lien,Consumer & Retail,9.46%,,SOFR,4.50%,,,2026-02-10,7165,7156,6305,,7156,,,,,,GSBD,2024-11-07
-ABC Investment Holdco Inc.,First Lien,Consumer & Retail,10.60%,,SOFR,6.00%,,,2029-04-26,8262,8107,8096,,8107,,,,,,GSBD,2024-11-07
-ABC Investment Holdco Inc.,First Lien,Consumer & Retail,,,SOFR,6.00%,,,2029-04-26,3834,70,77,,70,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-ABC Investment Holdco Inc.,First Lien,Consumer & Retail,11.01%,,SOFR,6.00%,,,2029-04-26,767,216,215,,216,,,,,,GSBD,2024-11-07
-Assembly Intermediate LLC,First Lien,Consumer & Retail,9.85%,,SOFR,5.25%,,,2027-10-19,43991,43480,43991,,43480,,,,,,GSBD,2024-11-07
-Assembly Intermediate LLC,First Lien,Consumer & Retail,9.85%,,SOFR,5.25%,,,2027-10-19,10998,7589,7698,,7589,,,,,,GSBD,2024-11-07
-"CI (Quercus) Intermediate Holdings, LLC",First Lien,Consumer & Retail,9.63%,,SOFR,5.00%,,,2031-06-06,6305,6274,6273,,6274,,,,,,GSBD,2024-11-07
-"CI (Quercus) Intermediate Holdings, LLC",First Lien,Consumer & Retail,,,SOFR,5.00%,,,2031-06-06,2845,24,14,,24,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"CI (Quercus) Intermediate Holdings, LLC",First Lien,Consumer & Retail,10.05%,,SOFR,5.00%,,,2031-06-06,835,62,65,,62,,,,,,GSBD,2024-11-07
-CorePower Yoga LLC,First Lien,Consumer & Retail,12.00%,,SOFR,6.00%,,,2026-05-14,27133,26498,24419,,26498,,,,,,GSBD,2024-11-07
-CorePower Yoga LLC,First Lien,Consumer & Retail,10.83%,,SOFR,6.00%,,,2026-05-14,1687,970,837,,970,,,,,,GSBD,2024-11-07
-CST Buyer Company,First Lien,Consumer & Retail,9.95%,,SOFR,5.00%,,,2028-11-01,898,860,893,,860,,,,,,GSBD,2024-11-07
-"Helios Buyer, Inc.",First Lien,Consumer & Retail,10.70%,,SOFR,6.00%,,,2026-12-15,18649,18506,17996,,18506,,,,,,GSBD,2024-11-07
-"Helios Buyer, Inc.",First Lien,Consumer & Retail,10.70%,,SOFR,6.00%,,,2026-12-15,14586,14516,14075,,14516,,,,,,GSBD,2024-11-07
-"Helios Buyer, Inc.",First Lien,Consumer & Retail,10.70%,,SOFR,6.00%,,,2026-12-15,7685,7613,7416,,7613,,,,,,GSBD,2024-11-07
-"Helios Buyer, Inc.",First Lien,Consumer & Retail,,,SOFR,6.00%,,,2026-12-15,2363,18,83,,18,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Southeast Mechanical, LLC",First Lien,Consumer & Retail,,,SOFR,6.00%,,,2027-07-06,17089,149,128,,149,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Southeast Mechanical, LLC",First Lien,Consumer & Retail,10.96%,,SOFR,6.00%,,,2027-07-06,10557,10428,10478,,10428,,,,,,GSBD,2024-11-07
-"Southeast Mechanical, LLC",First Lien,Consumer & Retail,10.96%,,SOFR,6.00%,,,2027-07-06,7400,7297,7345,,7297,,,,,,GSBD,2024-11-07
-"Southeast Mechanical, LLC",First Lien,Consumer & Retail,10.97%,,SOFR,6.00%,,,2027-07-06,1900,1499,1506,,1499,,,,,,GSBD,2024-11-07
-"Spotless Brands, LLC",First Lien,Consumer & Retail,10.56%,,SOFR,5.50%,,,2028-07-25,954,46,39,,46,,,,,,GSBD,2024-11-07
-"Spotless Brands, LLC",First Lien,Consumer & Retail,10.81%,,SOFR,5.75%,,,2028-07-25,212,207,212,,207,,,,,,GSBD,2024-11-07
-"Spotless Brands, LLC",First Lien,Consumer & Retail,10.81%,,SOFR,5.75%,,,2028-07-25,33,32,33,,32,,,,,,GSBD,2024-11-07
-"Sunshine Cadence HoldCo, LLC",First Lien,Consumer & Retail,10.20%,,SOFR,5.00%,,,2031-05-01,10615,10514,10509,,10514,,,,,,GSBD,2024-11-07
-"Sunshine Cadence HoldCo, LLC",First Lien,Consumer & Retail,9.88%,,SOFR,5.00%,,,2031-05-01,2769,877,858,,877,,,,,,GSBD,2024-11-07
-"Sunshine Cadence HoldCo, LLC",First Lien,Consumer & Retail,,,SOFR,5.00%,,,2030-05-01,1615,15,16,,15,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"VASA Fitness Buyer, Inc.",First Lien,Consumer & Retail,12.45%,,SOFR,7.50%,,,2028-08-14,4129,4010,4108,,4010,,,,,,GSBD,2024-11-07
-"VASA Fitness Buyer, Inc.",First Lien,Consumer & Retail,12.16%,,SOFR,7.50%,,,2028-08-14,714,341,354,,341,,,,,,GSBD,2024-11-07
-"VASA Fitness Buyer, Inc.",First Lien,Consumer & Retail,,,SOFR,7.50%,,,2028-08-14,119,3,1,,3,,,,,,GSBD,2024-11-07
-Whitewater Holding Company LLC,First Lien,Consumer & Retail,10.50%,,SOFR,5.75%,,,2027-12-21,17037,16831,16867,,16831,,,,,,GSBD,2024-11-07
-Whitewater Holding Company LLC,First Lien,Consumer & Retail,10.50%,,SOFR,5.75%,,,2027-12-21,5719,5648,5662,,5648,,,,,,GSBD,2024-11-07
-Whitewater Holding Company LLC,First Lien,Consumer & Retail,10.50%,,SOFR,5.75%,,,2027-12-21,5683,5614,5626,,5614,,,,,,GSBD,2024-11-07
-Whitewater Holding Company LLC,First Lien,Consumer & Retail,10.75%,,SOFR,6.00%,,,2027-12-21,2670,2633,2664,,2633,,,,,,GSBD,2024-11-07
-Whitewater Holding Company LLC,First Lien,Consumer & Retail,,,SOFR,5.75%,,,2027-12-21,2340,26,23,,26,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-Whitewater Holding Company LLC,First Lien,Consumer & Retail,10.83%,,SOFR,5.75%,,,2027-12-21,2267,2222,2245,,2222,,,,,,GSBD,2024-11-07
-"Trystar, LLC",First Lien,Industrials,9.73%,,SOFR,4.50%,,,2031-08-06,651,645,645,,645,,,,,,GSBD,2024-11-07
-"Trystar, LLC",First Lien,Industrials,,,SOFR,4.50%,,,2031-08-06,233,1,1,,1,,,,,,GSBD,2024-11-07
-"Trystar, LLC",First Lien,Industrials,,,SOFR,4.50%,,,2031-08-06,116,1,1,,1,,,,,,GSBD,2024-11-07
-"Iracore International Holdings, Inc.",First Lien,Energy,13.75%,,SOFR,9.00%,,,2026-04-12,1502,1502,1487,,1502,,,,,,GSBD,2024-11-07
-"Checkmate Finance Merger Sub, LLC",First Lien,Media & Entertainment,11.20%,,SOFR,6.50%,,,2027-12-31,30630,30253,30247,,30253,,,,,,GSBD,2024-11-07
-"Checkmate Finance Merger Sub, LLC",First Lien,Media & Entertainment,,,SOFR,6.50%,,,2027-12-31,3140,34,39,,34,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-Picture Head Midco LLC,First Lien,Media & Entertainment,14.51%,,SOFR,9.00%,,,2024-12-31,42560,42481,33197,,42481,,,,,,GSBD,2024-11-07
-Picture Head Midco LLC,First Lien,Media & Entertainment,11.65%,,SOFR,6.75%,,,2024-12-31,2387,2387,2865,,2387,,,,,,GSBD,2024-11-07
-Picture Head Midco LLC,First Lien,Media & Entertainment,11.39%,,SOFR,6.75%,,,2024-12-31,2387,2363,2387,,2363,,,,,,GSBD,2024-11-07
-"Admiral Buyer, Inc.",First Lien,Financial Services,10.10%,,SOFR,5.50%,,,2028-05-08,21334,21188,21120,,21188,,,,,,GSBD,2024-11-07
-"Admiral Buyer, Inc.",First Lien,Financial Services,,,SOFR,5.50%,,,2028-05-08,2805,19,28,,19,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Admiral Buyer, Inc.",First Lien,Financial Services,10.36%,,SOFR,5.50%,,,2028-05-08,999,243,239,,243,,,,,,GSBD,2024-11-07
-"Admiral Buyer, Inc.",First Lien,Financial Services,10.45%,,SOFR,5.50%,,,2028-05-08,930,915,921,,915,,,,,,GSBD,2024-11-07
+"VisionSafe Holdings, Inc.",First Lien,Aerospace & Defense,,,SOFR,6.00%,,,2030-04-18,1219,23,24,,23,,,,,,GSBD,2024-11-07
+"Thrasio, LLC",First Lien,Broadline Retail,,,SOFR,10.26%,,,2029-06-18,14289,12309,12467,,12309,,,,,,GSBD,2024-11-07
+"Thrasio, LLC",First Lien,Broadline Retail,15.54%,,SOFR,10.26%,,,2029-06-18,4605,4535,4593,,4535,,,,,,GSBD,2024-11-07
+"Acuity Specialty Products, Inc. (dba Zep Inc.)",First Lien,Chemicals,8.25%,,SOFR,4.00%,,,2028-10-02,52652,52652,52125,,52652,,,,,,GSBD,2024-11-07
+"Elemica Parent, Inc.",First Lien,Chemicals,10.93%,,SOFR,5.50%,,,2026-09-18,6809,6650,6673,,6650,,,,,,GSBD,2024-11-07
+"Elemica Parent, Inc.",First Lien,Chemicals,10.96%,,SOFR,5.50%,,,2026-09-18,1455,1440,1426,,1440,,,,,,GSBD,2024-11-07
+"Elemica Parent, Inc.",First Lien,Chemicals,10.95%,,SOFR,5.50%,,,2026-09-18,1335,1311,1309,,1311,,,,,,GSBD,2024-11-07
+"Elemica Parent, Inc.",First Lien,Chemicals,10.67%,,SOFR,5.50%,,,2026-09-18,930,824,818,,824,,,,,,GSBD,2024-11-07
+"Elemica Parent, Inc.",First Lien,Chemicals,10.95%,,SOFR,5.50%,,,2026-09-18,545,539,534,,539,,,,,,GSBD,2024-11-07
+Formulations Parent Corporation (dba Chase Corp),First Lien,Chemicals,10.87%,,SOFR,5.75%,,,2030-11-15,4988,4897,4888,,4897,,,,,,GSBD,2024-11-07
+Formulations Parent Corporation (dba Chase Corp),First Lien,Chemicals,,,SOFR,5.75%,,,2029-11-15,835,14,17,,14,,,,,,GSBD,2024-11-07
+"3SI Security Systems, Inc.",First Lien,Commercial Services & Supplies,11.14%,,SOFR,6.50%,,,2026-12-16,12742,12534,12232,,12534,,,,,,GSBD,2024-11-07
+"3SI Security Systems, Inc.",First Lien,Commercial Services & Supplies,11.14%,,SOFR,6.50%,,,2026-12-16,1941,1881,1863,,1881,,,,,,GSBD,2024-11-07
+"ASM Buyer, Inc.",First Lien,Commercial Services & Supplies,10.10%,,SOFR,5.00%,,,2031-08-22,8500,8267,8330,,8267,,,,,,GSBD,2024-11-07
+"ASM Buyer, Inc.",First Lien,Commercial Services & Supplies,,,SOFR,5.00%,,,2030-08-22,1000,19,20,,19,,,,,,GSBD,2024-11-07
+"ASM Buyer, Inc.",First Lien,Commercial Services & Supplies,,,SOFR,5.00%,,,2031-08-22,500,5,5,,5,,,,,,GSBD,2024-11-07
+"Halo Branded Solutions, Inc.",First Lien,Commercial Services & Supplies,9.45%,,SOFR,4.50%,,,2025-06-30,6174,6166,5615,,6166,,,,,,GSBD,2024-11-07
+"Kene Acquisition, Inc. (dba Entrust)",First Lien,Commercial Services & Supplies,10.10%,,SOFR,5.25%,,,2031-02-07,9499,9321,9404,,9321,,,,,,GSBD,2024-11-07
+"Kene Acquisition, Inc. (dba Entrust)",First Lien,Commercial Services & Supplies,,,SOFR,5.25%,,,2031-02-07,4213,38,42,,38,,,,,,GSBD,2024-11-07
+"Kene Acquisition, Inc. (dba Entrust)",First Lien,Commercial Services & Supplies,,,SOFR,5.25%,,,2031-02-07,1264,23,13,,23,,,,,,GSBD,2024-11-07
+Rock Star Mergersub LLC (dba Triumvirate Environmental),First Lien,Commercial Services & Supplies,,,SOFR,4.75%,,,2031-09-09,21691,,,,,,,,,,GSBD,2024-11-07
+Rock Star Mergersub LLC (dba Triumvirate Environmental),First Lien,Commercial Services & Supplies,,,SOFR,4.75%,,,2031-09-09,6941,,,,,,,,,,GSBD,2024-11-07
+Rock Star Mergersub LLC (dba Triumvirate Environmental),First Lien,Commercial Services & Supplies,,,SOFR,4.75%,,,2031-09-09,2950,,,,,,,,,,GSBD,2024-11-07
+Superior Environmental Solutions,First Lien,Commercial Services & Supplies,11.45%,,SOFR,6.50%,,,2029-08-01,3960,3875,3920,,3875,,,,,,GSBD,2024-11-07
+Superior Environmental Solutions,First Lien,Commercial Services & Supplies,,,SOFR,6.50%,,,2029-08-01,1200,14,12,,14,,,,,,GSBD,2024-11-07
+Superior Environmental Solutions,First Lien,Commercial Services & Supplies,11.45%,,SOFR,6.50%,,,2029-08-01,600,227,234,,227,,,,,,GSBD,2024-11-07
+Superior Environmental Solutions,First Lien,Commercial Services & Supplies,11.45%,,SOFR,6.50%,,,2029-08-01,597,584,591,,584,,,,,,GSBD,2024-11-07
+Superior Environmental Solutions,First Lien,Commercial Services & Supplies,11.45%,,SOFR,6.50%,,,2029-08-01,199,194,197,,194,,,,,,GSBD,2024-11-07
+Sweep Purchaser LLC,First Lien,Commercial Services & Supplies,10.80%,,SOFR,5.75%,,,2027-06-30,20104,19943,19903,,19943,,,,,,GSBD,2024-11-07
+Sweep Purchaser LLC,First Lien,Commercial Services & Supplies,10.80%,,SOFR,5.75%,,,2027-06-30,10650,10605,10597,,10605,,,,,,GSBD,2024-11-07
+Sweep Purchaser LLC,First Lien,Commercial Services & Supplies,,,SOFR,5.75%,,,2027-06-30,4541,34,23,,34,,,,,,GSBD,2024-11-07
+UP Acquisition Corp. (dba Unified Power),First Lien,Commercial Services & Supplies,10.85%,,SOFR,6.00%,,,2029-10-31,12078,11838,11958,,11838,,,,,,GSBD,2024-11-07
+UP Acquisition Corp. (dba Unified Power),First Lien,Commercial Services & Supplies,11.30%,,SOFR,6.00%,,,2029-10-31,1902,211,228,,211,,,,,,GSBD,2024-11-07
+"USA DeBusk, LLC",First Lien,Commercial Services & Supplies,9.85%,,SOFR,5.25%,,,2031-04-30,8917,8789,8873,,8789,,,,,,GSBD,2024-11-07
+"USA DeBusk, LLC",First Lien,Commercial Services & Supplies,10.37%,,SOFR,5.25%,,,2031-04-30,3280,343,353,,343,,,,,,GSBD,2024-11-07
+"USA DeBusk, LLC",First Lien,Commercial Services & Supplies,9.97%,,SOFR,5.25%,,,2030-04-30,1230,617,628,,617,,,,,,GSBD,2024-11-07
+"Valet Waste Holdings, Inc. (dba Valet Living)",First Lien,Commercial Services & Supplies,10.60%,,SOFR,5.75%,,,2029-05-01,25095,24934,24907,,24934,,,,,,GSBD,2024-11-07
+"Valet Waste Holdings, Inc. (dba Valet Living)",First Lien,Commercial Services & Supplies,10.60%,,SOFR,5.75%,,,2029-05-01,2641,1304,1301,,1304,,,,,,GSBD,2024-11-07
+"Valet Waste Holdings, Inc. (dba Valet Living)",First Lien,Commercial Services & Supplies,,,SOFR,5.75%,,,2029-05-01,2201,14,17,,14,,,,,,GSBD,2024-11-07
+"VRC Companies, LLC (dba Vital Records Control)",First Lien,Commercial Services & Supplies,11.01%,,SOFR,5.50%,,,2027-06-29,32003,31752,31683,,31752,,,,,,GSBD,2024-11-07
+"VRC Companies, LLC (dba Vital Records Control)",First Lien,Commercial Services & Supplies,,,SOFR,5.50%,,,2027-06-29,944,7,9,,7,,,,,,GSBD,2024-11-07
+ATX Networks Corp.,First Lien,Communications Equipment,12.60%,,SOFR,7.50%,,,2026-09-01,3001,2620,2371,,2620,,,,,,GSBD,2024-11-07
+ATX Networks Corp.,First Lien,Communications Equipment,12.34%,,SOFR,7.00%,,,2026-09-01,764,686,671,,686,,,,,,GSBD,2024-11-07
+ATX Networks Corp.,First Lien,Communications Equipment,11.10%,,SOFR,6.00%,,,2026-09-01,735,374,359,,374,,,,,,GSBD,2024-11-07
+ATX Networks Corp.,First Lien,Communications Equipment,11.34%,,SOFR,6.00%,,,2026-09-01,190,190,186,,190,,,,,,GSBD,2024-11-07
+"Geotechnical Merger Sub, Inc.",First Lien,Construction & Engineering,,,SOFR,4.75%,,,2031-08-24,663,,,,,,,,,,GSBD,2024-11-07
+"Geotechnical Merger Sub, Inc.",First Lien,Construction & Engineering,,,SOFR,4.75%,,,2031-08-24,245,,,,,,,,,,GSBD,2024-11-07
+"Geotechnical Merger Sub, Inc.",First Lien,Construction & Engineering,,,SOFR,4.75%,,,2029-08-24,92,,,,,,,,,,GSBD,2024-11-07
+"Superman Holdings, LLC (dba Foundation Software)",First Lien,Construction & Engineering,9.56%,,SOFR,4.50%,,,2031-08-29,10206,10156,10155,,10156,,,,,,GSBD,2024-11-07
+"Superman Holdings, LLC (dba Foundation Software)",First Lien,Construction & Engineering,,,SOFR,4.50%,,,2031-08-29,3322,8,8,,8,,,,,,GSBD,2024-11-07
+"Superman Holdings, LLC (dba Foundation Software)",First Lien,Construction & Engineering,,,SOFR,4.50%,,,2031-08-29,1471,7,7,,7,,,,,,GSBD,2024-11-07
+Blast Bidco Inc. (dba Bazooka Candy Brands),First Lien,Consumer Staples Distribution & Retail,10.60%,,SOFR,6.00%,,,2030-10-04,4455,4355,4411,,4355,,,,,,GSBD,2024-11-07
+Blast Bidco Inc. (dba Bazooka Candy Brands),First Lien,Consumer Staples Distribution & Retail,,,SOFR,6.00%,,,2029-10-05,522,11,5,,11,,,,,,GSBD,2024-11-07
+"Buffalo Merger Sub, LLC (dba Oliver Packaging)",First Lien,Containers & Packaging,,,SOFR,5.25%,,,2030-09-30,44792,,,,,,,,,,GSBD,2024-11-07
+"Buffalo Merger Sub, LLC (dba Oliver Packaging)",First Lien,Containers & Packaging,,,SOFR,5.25%,,,2030-09-30,5208,,,,,,,,,,GSBD,2024-11-07
+"A Place For Mom, Inc.",First Lien,Diversified Consumer Services,9.46%,,SOFR,4.50%,,,2026-02-10,7165,7156,6305,,7156,,,,,,GSBD,2024-11-07
+ABC Investment Holdco Inc. (dba ABC Plumbing),First Lien,Diversified Consumer Services,10.60%,,SOFR,6.00%,,,2029-04-26,8262,8107,8096,,8107,,,,,,GSBD,2024-11-07
+ABC Investment Holdco Inc. (dba ABC Plumbing),First Lien,Diversified Consumer Services,,,SOFR,6.00%,,,2029-04-26,3834,70,77,,70,,,,,,GSBD,2024-11-07
+ABC Investment Holdco Inc. (dba ABC Plumbing),First Lien,Diversified Consumer Services,11.01%,,SOFR,6.00%,,,2029-04-26,767,216,215,,216,,,,,,GSBD,2024-11-07
+Assembly Intermediate LLC,First Lien,Diversified Consumer Services,9.85%,,SOFR,5.25%,,,2027-10-19,43991,43480,43991,,43480,,,,,,GSBD,2024-11-07
+Assembly Intermediate LLC,First Lien,Diversified Consumer Services,9.85%,,SOFR,5.25%,,,2027-10-19,10998,7589,7698,,7589,,,,,,GSBD,2024-11-07
+Assembly Intermediate LLC,First Lien,Diversified Consumer Services,,,SOFR,5.25%,,,2027-10-19,4399,46,,,46,,,,,,GSBD,2024-11-07
+"CI (Quercus) Intermediate Holdings, LLC (dba SavATree)",First Lien,Diversified Consumer Services,9.63%,,SOFR,5.00%,,,2031-06-06,6305,6274,6273,,6274,,,,,,GSBD,2024-11-07
+"CI (Quercus) Intermediate Holdings, LLC (dba SavATree)",First Lien,Diversified Consumer Services,,,SOFR,5.00%,,,2031-06-06,2845,24,14,,24,,,,,,GSBD,2024-11-07
+"CI (Quercus) Intermediate Holdings, LLC (dba SavATree)",First Lien,Diversified Consumer Services,10.05%,,SOFR,5.00%,,,2031-06-06,835,62,65,,62,,,,,,GSBD,2024-11-07
+CorePower Yoga LLC,First Lien,Diversified Consumer Services,12.00%,,SOFR,6.00%,,,2026-05-14,27133,26498,24419,,26498,,,,,,GSBD,2024-11-07
+CorePower Yoga LLC,First Lien,Diversified Consumer Services,10.83%,,SOFR,6.00%,,,2026-05-14,1687,970,837,,970,,,,,,GSBD,2024-11-07
+CST Buyer Company (dba Intoxalock),First Lien,Diversified Consumer Services,9.95%,,SOFR,5.00%,,,2028-11-01,898,860,893,,860,,,,,,GSBD,2024-11-07
+CST Buyer Company (dba Intoxalock),First Lien,Diversified Consumer Services,,,SOFR,5.00%,,,2028-11-01,86,3,,,3,,,,,,GSBD,2024-11-07
+"Helios Buyer, Inc. (dba Heartland)",First Lien,Diversified Consumer Services,10.70%,,SOFR,6.00%,,,2026-12-15,18649,18506,17996,,18506,,,,,,GSBD,2024-11-07
+"Helios Buyer, Inc. (dba Heartland)",First Lien,Diversified Consumer Services,10.70%,,SOFR,6.00%,,,2026-12-15,14586,14516,14075,,14516,,,,,,GSBD,2024-11-07
+"Helios Buyer, Inc. (dba Heartland)",First Lien,Diversified Consumer Services,10.70%,,SOFR,6.00%,,,2026-12-15,7685,7613,7416,,7613,,,,,,GSBD,2024-11-07
+"Helios Buyer, Inc. (dba Heartland)",First Lien,Diversified Consumer Services,,,SOFR,6.00%,,,2026-12-15,2363,18,83,,18,,,,,,GSBD,2024-11-07
+"Southeast Mechanical, LLC (dba. SEM Holdings, LLC)",First Lien,Diversified Consumer Services,,,SOFR,6.00%,,,2027-07-06,17089,149,128,,149,,,,,,GSBD,2024-11-07
+"Southeast Mechanical, LLC (dba. SEM Holdings, LLC)",First Lien,Diversified Consumer Services,10.96%,,SOFR,6.00%,,,2027-07-06,10557,10428,10478,,10428,,,,,,GSBD,2024-11-07
+"Southeast Mechanical, LLC (dba. SEM Holdings, LLC)",First Lien,Diversified Consumer Services,10.96%,,SOFR,6.00%,,,2027-07-06,7400,7297,7345,,7297,,,,,,GSBD,2024-11-07
+"Southeast Mechanical, LLC (dba. SEM Holdings, LLC)",First Lien,Diversified Consumer Services,10.97%,,SOFR,6.00%,,,2027-07-06,1900,1499,1506,,1499,,,,,,GSBD,2024-11-07
+"Spotless Brands, LLC",First Lien,Diversified Consumer Services,10.56%,,SOFR,5.50%,,,2028-07-25,954,46,39,,46,,,,,,GSBD,2024-11-07
+"Spotless Brands, LLC",First Lien,Diversified Consumer Services,10.81%,,SOFR,5.75%,,,2028-07-25,212,207,212,,207,,,,,,GSBD,2024-11-07
+"Spotless Brands, LLC",First Lien,Diversified Consumer Services,10.81%,,SOFR,5.75%,,,2028-07-25,33,32,33,,32,,,,,,GSBD,2024-11-07
+"Sunshine Cadence HoldCo, LLC (dba Cadence Education)",First Lien,Diversified Consumer Services,10.20%,,SOFR,5.00%,,,2031-05-01,10615,10514,10509,,10514,,,,,,GSBD,2024-11-07
+"Sunshine Cadence HoldCo, LLC (dba Cadence Education)",First Lien,Diversified Consumer Services,9.88%,,SOFR,5.00%,,,2031-05-01,2769,877,858,,877,,,,,,GSBD,2024-11-07
+"Sunshine Cadence HoldCo, LLC (dba Cadence Education)",First Lien,Diversified Consumer Services,,,SOFR,5.00%,,,2030-05-01,1615,15,16,,15,,,,,,GSBD,2024-11-07
+"VASA Fitness Buyer, Inc.",First Lien,Diversified Consumer Services,12.45%,,SOFR,7.50%,,,2028-08-14,4129,4010,4108,,4010,,,,,,GSBD,2024-11-07
+"VASA Fitness Buyer, Inc.",First Lien,Diversified Consumer Services,12.16%,,SOFR,7.50%,,,2028-08-14,714,341,354,,341,,,,,,GSBD,2024-11-07
+"VASA Fitness Buyer, Inc.",First Lien,Diversified Consumer Services,,,SOFR,7.50%,,,2028-08-14,119,3,1,,3,,,,,,GSBD,2024-11-07
+Whitewater Holding Company LLC,First Lien,Diversified Consumer Services,10.50%,,SOFR,5.75%,,,2027-12-21,17037,16831,16867,,16831,,,,,,GSBD,2024-11-07
+Whitewater Holding Company LLC,First Lien,Diversified Consumer Services,10.50%,,SOFR,5.75%,,,2027-12-21,5719,5648,5662,,5648,,,,,,GSBD,2024-11-07
+Whitewater Holding Company LLC,First Lien,Diversified Consumer Services,10.50%,,SOFR,5.75%,,,2027-12-21,5683,5614,5626,,5614,,,,,,GSBD,2024-11-07
+Whitewater Holding Company LLC,First Lien,Diversified Consumer Services,10.75%,,SOFR,6.00%,,,2027-12-21,2670,2633,2664,,2633,,,,,,GSBD,2024-11-07
+Whitewater Holding Company LLC,First Lien,Diversified Consumer Services,,,SOFR,5.75%,,,2027-12-21,2340,26,23,,26,,,,,,GSBD,2024-11-07
+Whitewater Holding Company LLC,First Lien,Diversified Consumer Services,10.83%,,SOFR,5.75%,,,2027-12-21,2267,2222,2245,,2222,,,,,,GSBD,2024-11-07
+"Trystar, LLC",First Lien,Electrical Equipment,9.73%,,SOFR,4.50%,,,2031-08-06,651,645,645,,645,,,,,,GSBD,2024-11-07
+"Trystar, LLC",First Lien,Electrical Equipment,,,SOFR,4.50%,,,2031-08-06,233,1,1,,1,,,,,,GSBD,2024-11-07
+"Trystar, LLC",First Lien,Electrical Equipment,,,SOFR,4.50%,,,2031-08-06,116,1,1,,1,,,,,,GSBD,2024-11-07
+"Iracore International Holdings, Inc.",First Lien,Energy Equipment & Services,13.75%,,SOFR,9.00%,,,2026-04-12,1502,1502,1487,,1502,,,,,,GSBD,2024-11-07
+"Checkmate Finance Merger Sub, LLC",First Lien,Entertainment,11.20%,,SOFR,6.50%,,,2027-12-31,30630,30253,30247,,30253,,,,,,GSBD,2024-11-07
+"Checkmate Finance Merger Sub, LLC",First Lien,Entertainment,,,SOFR,6.50%,,,2027-12-31,3140,34,39,,34,,,,,,GSBD,2024-11-07
+Picture Head Midco LLC,First Lien,Entertainment,14.51%,,SOFR,9.00%,,,2024-12-31,42560,42481,33197,,42481,,,,,,GSBD,2024-11-07
+Picture Head Midco LLC,First Lien,Entertainment,11.65%,,SOFR,6.75%,,,2024-12-31,2387,2387,2865,,2387,,,,,,GSBD,2024-11-07
+Picture Head Midco LLC,First Lien,Entertainment,11.39%,,SOFR,6.75%,,,2024-12-31,2387,2363,2387,,2363,,,,,,GSBD,2024-11-07
+"Admiral Buyer, Inc. (dba Fidelity Payment Services)",First Lien,Financial Services,10.10%,,SOFR,5.50%,,,2028-05-08,21334,21188,21120,,21188,,,,,,GSBD,2024-11-07
+"Admiral Buyer, Inc. (dba Fidelity Payment Services)",First Lien,Financial Services,,,SOFR,5.50%,,,2028-05-08,2805,19,28,,19,,,,,,GSBD,2024-11-07
+"Admiral Buyer, Inc. (dba Fidelity Payment Services)",First Lien,Financial Services,10.36%,,SOFR,5.50%,,,2028-05-08,999,243,239,,243,,,,,,GSBD,2024-11-07
+"Admiral Buyer, Inc. (dba Fidelity Payment Services)",First Lien,Financial Services,10.45%,,SOFR,5.50%,,,2028-05-08,930,915,921,,915,,,,,,GSBD,2024-11-07
 "Aria Systems, Inc.",First Lien,Financial Services,12.96%,,SOFR,8.00%,,,2026-06-30,26726,26533,26325,,26533,,,,,,GSBD,2024-11-07
-"BSI3 Menu Buyer, Inc.",First Lien,Financial Services,,,SOFR,6.00%,,,2028-01-25,1038,17,62,,17,,,,,cost_suspicious_vs_size,GSBD,2024-11-07
-"BSI3 Menu Buyer, Inc.",First Lien,Financial Services,10.96%,,SOFR,6.00%,,,2028-01-25,962,952,904,,952,,,,,,GSBD,2024-11-07
+"BSI3 Menu Buyer, Inc (dba Kydia)",First Lien,Financial Services,,,SOFR,6.00%,,,2028-01-25,1038,17,62,,17,,,,,,GSBD,2024-11-07
+"BSI3 Menu Buyer, Inc (dba Kydia)",First Lien,Financial Services,10.96%,,SOFR,6.00%,,,2028-01-25,962,952,904,,952,,,,,,GSBD,2024-11-07
+"Computer Services, Inc.",First Lien,Financial Services,,,SOFR,5.25%,,,2029-11-15,14830,66,,,66,,,,,,GSBD,2024-11-07
 "Computer Services, Inc.",First Lien,Financial Services,10.27%,,SOFR,5.25%,,,2029-11-15,10176,10083,10176,,10083,,,,,,GSBD,2024-11-07
 "Computer Services, Inc.",First Lien,Financial Services,9.69%,,SOFR,4.75%,,,2029-11-15,9980,9881,9781,,9881,,,,,,GSBD,2024-11-07
 "Computer Services, Inc.",First Lien,Financial Services,10.27%,,SOFR,5.25%,,,2029-11-15,985,943,985,,943,,,,,,GSBD,2024-11-07
 Coretrust Purchasing Group LLC,First Lien,Financial Services,10.10%,,SOFR,5.25%,,,2029-10-01,9363,9258,9317,,9258,,,,,,GSBD,2024-11-07
-Coretrust Purchasing Group LLC,First Lien,Financial Services,,,SOFR,5.25%,,,2029-10-01,4840,46,24,,46,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
+Coretrust Purchasing Group LLC,First Lien,Financial Services,,,SOFR,5.25%,,,2029-10-01,4840,46,24,,46,,,,,,GSBD,2024-11-07
 Coretrust Purchasing Group LLC,First Lien,Financial Services,,,SOFR,5.25%,,,2029-10-01,113,2,1,,2,,,,,,GSBD,2024-11-07
 Fullsteam Operations LLC,First Lien,Financial Services,13.46%,,SOFR,8.25%,,,2029-11-27,34889,33796,34540,,33796,,,,,,GSBD,2024-11-07
-Fullsteam Operations LLC,First Lien,Financial Services,,,SOFR,8.25%,,,2029-11-27,25712,173,257,,173,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
+Fullsteam Operations LLC,First Lien,Financial Services,,,SOFR,8.25%,,,2029-11-27,25712,173,257,,173,,,,,,GSBD,2024-11-07
 Fullsteam Operations LLC,First Lien,Financial Services,13.46%,,SOFR,8.25%,,,2029-11-27,10979,10133,10323,,10133,,,,,,GSBD,2024-11-07
-Fullsteam Operations LLC,First Lien,Financial Services,,,SOFR,8.25%,,,2029-11-27,6428,43,64,,43,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
+Fullsteam Operations LLC,First Lien,Financial Services,,,SOFR,8.25%,,,2029-11-27,6428,43,64,,43,,,,,,GSBD,2024-11-07
 Fullsteam Operations LLC,First Lien,Financial Services,13.46%,,SOFR,8.25%,,,2029-11-27,4880,4377,4457,,4377,,,,,,GSBD,2024-11-07
-Fullsteam Operations LLC,First Lien,Financial Services,,,SOFR,8.25%,,,2029-11-27,1952,51,20,,51,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"GS AcquisitionCo, Inc.",First Lien,Financial Services,9.85%,,SOFR,5.25%,,,2028-05-25,27866,27654,27727,,27654,,,,,,GSBD,2024-11-07
-"GS AcquisitionCo, Inc.",First Lien,Financial Services,9.85%,,SOFR,5.25%,,,2028-05-25,2382,294,297,,294,,,,,,GSBD,2024-11-07
-"GS AcquisitionCo, Inc.",First Lien,Financial Services,,,SOFR,5.25%,,,2028-05-25,1848,8,9,,8,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"MerchantWise Solutions, LLC",First Lien,Financial Services,10.60%,,SOFR,6.00%,,,2028-06-01,21256,20967,19343,,20967,,,,,,GSBD,2024-11-07
-"MerchantWise Solutions, LLC",First Lien,Financial Services,10.60%,,SOFR,6.00%,,,2028-06-01,5360,4577,4167,,4577,,,,,,GSBD,2024-11-07
-"MerchantWise Solutions, LLC",First Lien,Financial Services,10.74%,,SOFR,6.00%,,,2028-06-01,2718,2683,2474,,2683,,,,,,GSBD,2024-11-07
-"Priority Technology Holdings, Inc.",First Lien,Financial Services,9.81%,,SOFR,4.75%,,,2031-05-16,14963,14891,14963,,14891,,,,,,GSBD,2024-11-07
-"Project Accelerate Parent, LLC",First Lien,Financial Services,10.54%,,SOFR,5.25%,,,2031-02-24,13092,12969,12961,,12969,,,,,,GSBD,2024-11-07
-"Project Accelerate Parent, LLC",First Lien,Financial Services,,,SOFR,5.25%,,,2031-02-24,1875,17,19,,17,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-Prophix Software Inc.,First Lien,Financial Services,11.35%,,SOFR,6.00%,,,2027-02-01,13012,12957,12947,,12957,,,,,,GSBD,2024-11-07
-Prophix Software Inc.,First Lien,Financial Services,11.35%,,SOFR,6.00%,,,2027-02-01,1258,202,196,,202,,,,,,GSBD,2024-11-07
-"Eagle Family Foods Group Holdings, LLC",First Lien,Food & Beverage,10.33%,,SOFR,5.00%,,,2030-08-12,899,890,890,,890,,,,,,GSBD,2024-11-07
-"Eagle Family Foods Group Holdings, LLC",First Lien,Food & Beverage,10.33%,,SOFR,5.00%,,,2030-08-12,101,12,12,,12,,,,,,GSBD,2024-11-07
-"Eptam Plastics, Ltd.",First Lien,Healthcare,10.45%,,SOFR,5.50%,,,2025-12-06,10183,10043,9877,,10043,,,,,,GSBD,2024-11-07
-"Eptam Plastics, Ltd.",First Lien,Healthcare,11.01%,,SOFR,6.00%,,,2025-12-06,5583,5538,5443,,5538,,,,,,GSBD,2024-11-07
-"Eptam Plastics, Ltd.",First Lien,Healthcare,10.45%,,SOFR,5.50%,,,2025-12-06,4791,4767,4648,,4767,,,,,,GSBD,2024-11-07
-"Eptam Plastics, Ltd.",First Lien,Healthcare,10.45%,,SOFR,5.50%,,,2025-12-06,4390,4358,4258,,4358,,,,,,GSBD,2024-11-07
-"Eptam Plastics, Ltd.",First Lien,Healthcare,10.45%,,SOFR,5.50%,,,2025-12-06,2269,2239,2201,,2239,,,,,,GSBD,2024-11-07
-"Hamilton Thorne, Inc.",First Lien,Healthcare,,,Euribor,5.50%,,,2031-08-01,334,,,,,,,,,,GSBD,2024-11-07
-"Hamilton Thorne, Inc.",First Lien,Healthcare,,,SOFR,5.50%,,,2031-08-01,164,,,,,,,,,,GSBD,2024-11-07
-"Hamilton Thorne, Inc.",First Lien,Healthcare,,,SOFR,5.50%,,,2031-08-01,121,,,,,,,,,,GSBD,2024-11-07
-"Hamilton Thorne, Inc.",First Lien,Healthcare,,,SOFR,5.50%,,,2029-08-01,99,,,,,,,,,,GSBD,2024-11-07
-"Riverpoint Medical, LLC",First Lien,Healthcare,9.85%,,SOFR,5.25%,,,2027-06-21,21309,20964,21096,,20964,,,,,,GSBD,2024-11-07
-"Riverpoint Medical, LLC",First Lien,Healthcare,9.85%,,SOFR,5.25%,,,2027-06-21,5120,5048,5069,,5048,,,,,,GSBD,2024-11-07
-"Riverpoint Medical, LLC",First Lien,Healthcare,10.10%,,SOFR,5.25%,,,2027-06-21,4094,543,539,,543,,,,,,GSBD,2024-11-07
-"Riverpoint Medical, LLC",First Lien,Healthcare,9.85%,,SOFR,5.25%,,,2027-06-21,1615,1602,1598,,1602,,,,,,GSBD,2024-11-07
-"Viant Medical Holdings, Inc.",First Lien,Healthcare,11.21%,,SOFR,6.25%,,,2025-07-02,30578,30183,30425,,30183,,,,,,GSBD,2024-11-07
-"Zeus Company, Inc.",First Lien,Healthcare,10.10%,,SOFR,5.50%,,,2031-02-28,24489,24143,24244,,24143,,,,,,GSBD,2024-11-07
-"Zeus Company, Inc.",First Lien,Healthcare,,,SOFR,5.50%,,,2031-02-28,4568,32,46,,32,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Zeus Company, Inc.",First Lien,Healthcare,,,SOFR,5.50%,,,2030-02-28,3426,46,34,,46,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Argos Health Holdings, Inc.",First Lien,Healthcare,11.56%,,SOFR,6.25%,,,2027-12-03,21395,21141,20646,,21141,,,,,,GSBD,2024-11-07
-"Bayside Opco, LLC",First Lien,Healthcare,12.00%,,SOFR,7.25%,,,2026-05-31,2919,2876,2890,,2876,,,,,,GSBD,2024-11-07
-"Bayside Opco, LLC",First Lien,Healthcare,,,SOFR,7.25%,,,2026-05-31,1033,706,904,,706,,,,,,GSBD,2024-11-07
-Capitol Imaging Acquisition Corp.,First Lien,Healthcare,12.01%,,SOFR,6.50%,,,2026-10-01,17520,17362,17345,,17362,,,,,,GSBD,2024-11-07
-Capitol Imaging Acquisition Corp.,First Lien,Healthcare,12.01%,,SOFR,6.50%,,,2026-10-01,783,769,776,,769,,,,,,GSBD,2024-11-07
-Capitol Imaging Acquisition Corp.,First Lien,Healthcare,,,SOFR,6.50%,,,2025-10-01,180,1,2,,1,,,,,,GSBD,2024-11-07
-"CFS Management, LLC",First Lien,Healthcare,13.87%,,SOFR,9.00%,,,2024-07-15,19529,19529,17576,,19529,,,,,,GSBD,2024-11-07
-"CFS Management, LLC",First Lien,Healthcare,13.87%,,SOFR,9.00%,,,2024-07-15,3389,3389,3050,,3389,,,,,,GSBD,2024-11-07
-"CFS Management, LLC",First Lien,Healthcare,13.87%,,SOFR,9.00%,,,2024-07-15,2003,2003,1803,,2003,,,,,,GSBD,2024-11-07
-"Coding Solutions Acquisition, Inc.",First Lien,Healthcare,9.25%,,SOFR,5.00%,,,2031-08-07,2269,2254,2246,,2254,,,,,,GSBD,2024-11-07
-"Coding Solutions Acquisition, Inc.",First Lien,Healthcare,,,SOFR,5.00%,,,2031-08-07,410,3,3,,3,,,,,,GSBD,2024-11-07
-"Coding Solutions Acquisition, Inc.",First Lien,Healthcare,10.01%,,SOFR,5.00%,,,2031-08-07,221,52,52,,52,,,,,,GSBD,2024-11-07
-CORA Health Holdings Corp.,First Lien,Healthcare,10.74%,,SOFR,5.75%,,,2027-06-15,22526,22354,18922,,22354,,,,,,GSBD,2024-11-07
-CORA Health Holdings Corp.,First Lien,Healthcare,10.74%,,SOFR,5.75%,,,2027-06-15,375,372,315,,372,,,,,,GSBD,2024-11-07
-DECA Dental Holdings LLC,First Lien,Healthcare,10.45%,,SOFR,5.75%,,,2028-08-28,21019,20753,20389,,20753,,,,,,GSBD,2024-11-07
-DECA Dental Holdings LLC,First Lien,Healthcare,10.45%,,SOFR,5.75%,,,2028-08-28,2213,2185,2146,,2185,,,,,,GSBD,2024-11-07
-DECA Dental Holdings LLC,First Lien,Healthcare,10.46%,,SOFR,5.75%,,,2027-08-26,1711,1693,1659,,1693,,,,,,GSBD,2024-11-07
-"Highfive Dental Holdco, LLC",First Lien,Healthcare,11.70%,,SOFR,6.75%,,,2028-06-13,2777,2711,2708,,2711,,,,,,GSBD,2024-11-07
-"Highfive Dental Holdco, LLC",First Lien,Healthcare,,,SOFR,6.75%,,,2028-06-13,313,7,8,,7,,,,,,GSBD,2024-11-07
-"Honor HN Buyer, Inc.",First Lien,Healthcare,10.50%,,SOFR,5.75%,,,2027-10-15,23687,23414,23628,,23414,,,,,,GSBD,2024-11-07
-"Honor HN Buyer, Inc.",First Lien,Healthcare,10.50%,,SOFR,5.75%,,,2027-10-15,14979,14794,14942,,14794,,,,,,GSBD,2024-11-07
-"Honor HN Buyer, Inc.",First Lien,Healthcare,10.50%,,SOFR,5.75%,,,2027-10-15,9912,7236,7330,,7236,,,,,,GSBD,2024-11-07
-"Honor HN Buyer, Inc.",First Lien,Healthcare,12.75%,,,,,,2027-10-15,2802,321,343,,321,,,,,,GSBD,2024-11-07
-"LCG Vardiman Black, LLC",First Lien,Healthcare,12.30%,,SOFR,7.00%,,,2027-03-18,759,746,743,,746,,,,,,GSBD,2024-11-07
-"LCG Vardiman Black, LLC",First Lien,Healthcare,12.30%,,SOFR,7.00%,,,2027-03-18,90,75,81,,75,,,,,,GSBD,2024-11-07
-"Millstone Medical Outsourcing, LLC",First Lien,Healthcare,10.25%,,SOFR,5.50%,,,2027-12-15,10064,9942,9963,,9942,,,,,,GSBD,2024-11-07
-"Millstone Medical Outsourcing, LLC",First Lien,Healthcare,,,,,,,2027-12-15,2217,24,22,,24,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-One GI LLC,First Lien,Healthcare,11.70%,,SOFR,6.75%,,,2025-12-22,22240,22110,20906,,22110,,,,,,GSBD,2024-11-07
-One GI LLC,First Lien,Healthcare,11.70%,,SOFR,6.75%,,,2025-12-22,11872,11790,11160,,11790,,,,,,GSBD,2024-11-07
-One GI LLC,First Lien,Healthcare,11.70%,,SOFR,6.75%,,,2025-12-22,9144,9091,8595,,9091,,,,,,GSBD,2024-11-07
-One GI LLC,First Lien,Healthcare,11.70%,,SOFR,6.75%,,,2025-12-22,6515,6465,6124,,6465,,,,,,GSBD,2024-11-07
-One GI LLC,First Lien,Healthcare,11.88%,,SOFR,6.75%,,,2025-12-22,3610,3589,3393,,3589,,,,,,GSBD,2024-11-07
-"Premier Imaging, LLC",First Lien,Healthcare,12.87%,,SOFR,8.00%,,,2025-01-02,30070,29946,23079,,29946,,,,,,GSBD,2024-11-07
-"Premier Imaging, LLC",First Lien,Healthcare,12.87%,,SOFR,8.00%,,,2025-01-02,8322,8311,6387,,8311,,,,,,GSBD,2024-11-07
-"Premier Imaging, LLC",First Lien,Healthcare,12.87%,,SOFR,8.00%,,,2025-01-02,6649,6641,5103,,6641,,,,,,GSBD,2024-11-07
-"Premier Imaging, LLC",First Lien,Healthcare,12.87%,,SOFR,8.00%,,,2025-01-02,1635,1633,1255,,1633,,,,,,GSBD,2024-11-07
-"SpendMend, LLC",First Lien,Healthcare,10.25%,,SOFR,5.50%,,,2028-03-01,623,616,617,,616,,,,,,GSBD,2024-11-07
-"SpendMend, LLC",First Lien,Healthcare,10.35%,,SOFR,5.50%,,,2028-03-01,275,133,133,,133,,,,,,GSBD,2024-11-07
-"SpendMend, LLC",First Lien,Healthcare,10.48%,,SOFR,5.50%,,,2028-03-01,83,32,33,,32,,,,,,GSBD,2024-11-07
-"The Center for Orthopedic and Research Excellence, Inc.",First Lien,Healthcare,11.65%,,SOFR,6.25%,,,2025-08-15,25586,25247,25203,,25247,,,,,,GSBD,2024-11-07
-"The Center for Orthopedic and Research Excellence, Inc.",First Lien,Healthcare,11.65%,,SOFR,6.25%,,,2025-08-15,7758,7714,7642,,7714,,,,,,GSBD,2024-11-07
-"The Center for Orthopedic and Research Excellence, Inc.",First Lien,Healthcare,11.52%,,SOFR,6.25%,,,2025-08-15,4606,4582,4537,,4582,,,,,,GSBD,2024-11-07
-"The Center for Orthopedic and Research Excellence, Inc.",First Lien,Healthcare,11.65%,,SOFR,6.00%,,,2025-08-15,4565,2823,2784,,2823,,,,,,GSBD,2024-11-07
-"The Center for Orthopedic and Research Excellence, Inc.",First Lien,Healthcare,11.46%,,SOFR,6.25%,,,2025-08-15,2098,2085,2067,,2085,,,,,,GSBD,2024-11-07
-USN Opco LLC,First Lien,Healthcare,10.25%,,SOFR,5.50%,,,2026-12-21,21267,21084,20522,,21084,,,,,,GSBD,2024-11-07
-USN Opco LLC,First Lien,Healthcare,10.25%,,SOFR,5.50%,,,2026-12-21,9538,9455,9204,,9455,,,,,,GSBD,2024-11-07
-USN Opco LLC,First Lien,Healthcare,10.25%,,SOFR,5.50%,,,2026-12-21,7393,7325,7134,,7325,,,,,,GSBD,2024-11-07
-USN Opco LLC,First Lien,Healthcare,10.25%,,SOFR,5.50%,,,2026-12-21,3023,2037,1956,,2037,,,,,,GSBD,2024-11-07
-"Businessolver.com, Inc.",First Lien,Healthcare,10.20%,,SOFR,5.50%,,,2027-12-01,18202,18094,18066,,18094,,,,,,GSBD,2024-11-07
-"Businessolver.com, Inc.",First Lien,Healthcare,10.20%,,SOFR,5.50%,,,2027-12-01,2718,642,630,,642,,,,,,GSBD,2024-11-07
-"ESO Solutions, Inc.",First Lien,Healthcare,12.06%,,SOFR,7.00%,,,2027-05-03,39908,39502,39508,,39502,,,,,,GSBD,2024-11-07
-"ESO Solutions, Inc.",First Lien,Healthcare,12.06%,,SOFR,7.00%,,,2027-05-03,4498,4415,4453,,4415,,,,,,GSBD,2024-11-07
-"ESO Solutions, Inc.",First Lien,Healthcare,11.96%,,SOFR,7.00%,,,2027-05-03,3620,1922,1919,,1922,,,,,,GSBD,2024-11-07
-"Experity, Inc.",First Lien,Healthcare,10.10%,,SOFR,5.50%,,,2028-02-24,578,576,573,,576,,,,,,GSBD,2024-11-07
-"Experity, Inc.",First Lien,Healthcare,,,SOFR,5.50%,,,2028-02-24,81,,1,,,,,,,,GSBD,2024-11-07
-GHA Buyer Inc.,First Lien,Healthcare,10.10%,,SOFR,5.50%,,,2026-06-24,15352,15245,15198,,15245,,,,,,GSBD,2024-11-07
-GHA Buyer Inc.,First Lien,Healthcare,10.10%,,SOFR,5.50%,,,2026-06-24,2694,2684,2667,,2684,,,,,,GSBD,2024-11-07
-GHA Buyer Inc.,First Lien,Healthcare,,,SOFR,5.50%,,,2026-06-24,1880,12,19,,12,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-GHA Buyer Inc.,First Lien,Healthcare,10.10%,,SOFR,5.50%,,,2026-06-24,1004,999,994,,999,,,,,,GSBD,2024-11-07
-"HealthEdge Software, Inc.",First Lien,Healthcare,9.85%,,SOFR,4.75%,,,2031-07-16,12710,12586,12583,,12586,,,,,,GSBD,2024-11-07
-"HealthEdge Software, Inc.",First Lien,Healthcare,,,SOFR,4.75%,,,2031-07-16,5607,27,28,,27,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"HealthEdge Software, Inc.",First Lien,Healthcare,,,SOFR,4.75%,,,2031-07-16,1682,16,17,,16,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Intelligent Medical Objects, Inc.",First Lien,Healthcare,9.86%,,SOFR,5.50%,,,2029-05-11,12275,12095,11968,,12095,,,,,,GSBD,2024-11-07
-"Intelligent Medical Objects, Inc.",First Lien,Healthcare,10.09%,,SOFR,5.50%,,,2029-05-11,1570,1546,1531,,1546,,,,,,GSBD,2024-11-07
-"Intelligent Medical Objects, Inc.",First Lien,Healthcare,,,SOFR,5.50%,,,2028-05-11,1490,18,37,,18,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"MedeAnalytics, Inc.",First Lien,Healthcare,,,,,,,2028-10-23,227,142,156,,142,,,,,,GSBD,2024-11-07
-"PDDS Holdco, Inc.",First Lien,Healthcare,12.25%,,SOFR,7.50%,,,2028-07-18,24090,23747,24030,,23747,,,,,,GSBD,2024-11-07
-"PDDS Holdco, Inc.",First Lien,Healthcare,12.25%,,SOFR,7.50%,,,2028-07-18,16300,9797,9756,,9797,,,,,,GSBD,2024-11-07
-"PDDS Holdco, Inc.",First Lien,Healthcare,12.25%,,SOFR,7.50%,,,2028-07-18,2255,2239,2249,,2239,,,,,,GSBD,2024-11-07
-"PDDS Holdco, Inc.",First Lien,Healthcare,12.25%,,SOFR,7.50%,,,2028-07-18,1815,521,540,,521,,,,,,GSBD,2024-11-07
-"PlanSource Holdings, Inc.",First Lien,Healthcare,11.64%,,SOFR,6.25%,,,2025-06-30,56720,56166,56153,,56166,,,,,,GSBD,2024-11-07
-"PlanSource Holdings, Inc.",First Lien,Healthcare,,,SOFR,6.25%,,,2025-06-30,7824,34,78,,34,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"PlanSource Holdings, Inc.",First Lien,Healthcare,11.64%,,SOFR,6.25%,,,2025-06-30,905,902,896,,902,,,,,,GSBD,2024-11-07
-"PlanSource Holdings, Inc.",First Lien,Healthcare,11.64%,,SOFR,6.25%,,,2025-06-30,905,903,896,,903,,,,,,GSBD,2024-11-07
-"WebPT, Inc.",First Lien,Healthcare,11.91%,,SOFR,6.75%,,,2028-01-18,25126,24044,24623,,24044,,,,,,GSBD,2024-11-07
-"WebPT, Inc.",First Lien,Healthcare,11.97%,,SOFR,6.75%,,,2028-01-18,5534,5482,5423,,5482,,,,,,GSBD,2024-11-07
-"WebPT, Inc.",First Lien,Healthcare,12.10%,,SOFR,6.75%,,,2028-01-18,2617,709,695,,709,,,,,,GSBD,2024-11-07
-"WebPT, Inc.",First Lien,Healthcare,11.92%,,SOFR,6.75%,,,2028-01-18,2209,2186,2165,,2186,,,,,,GSBD,2024-11-07
-"Easy Mile Fitness, LLC",First Lien,Food & Beverage,11.98%,,SOFR,6.75%,,,2029-09-12,8196,8120,8120,,8120,,,,,,GSBD,2024-11-07
-"Easy Mile Fitness, LLC",First Lien,Food & Beverage,,,SOFR,6.75%,,,2029-09-12,1503,7,7,,7,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Easy Mile Fitness, LLC",First Lien,Food & Beverage,,,SOFR,6.75%,,,2029-09-12,301,3,3,,3,,,,,,GSBD,2024-11-07
-"HS4 AcquisitionCo, Inc.",First Lien,Food & Beverage,10.70%,,SOFR,5.75%,,,2025-07-09,55784,54944,55505,,54944,,,,,,GSBD,2024-11-07
-"HS4 AcquisitionCo, Inc.",First Lien,Food & Beverage,10.70%,,SOFR,5.75%,,,2025-07-09,4688,3241,3258,,3241,,,,,,GSBD,2024-11-07
-Hollander Intermediate LLC,First Lien,Consumer & Retail,13.71%,,SOFR,8.75%,,,2026-09-21,38435,37864,23061,,37864,,,,,,GSBD,2024-11-07
-"Volt Bidco, Inc.",First Lien,Energy,11.10%,,SOFR,6.50%,,,2027-08-11,35122,34722,33015,,34722,,,,,,GSBD,2024-11-07
-"Volt Bidco, Inc.",First Lien,Energy,11.10%,,SOFR,6.50%,,,2027-08-11,6700,6700,6298,,6700,,,,,,GSBD,2024-11-07
-"Volt Bidco, Inc.",First Lien,Energy,11.10%,,SOFR,6.50%,,,2027-08-11,6023,2744,2383,,2744,,,,,,GSBD,2024-11-07
-"Volt Bidco, Inc.",First Lien,Energy,11.10%,,SOFR,6.50%,,,2027-08-11,4269,3881,3625,,3881,,,,,,GSBD,2024-11-07
-"Volt Bidco, Inc.",First Lien,Energy,,,SOFR,6.50%,,,2027-08-11,3685,38,221,,38,,,,,cost_suspicious_vs_size,GSBD,2024-11-07
-"AQ Sunshine, Inc.",First Lien,Insurance,10.39%,,SOFR,5.25%,,,2031-07-24,681,674,674,,674,,,,,,GSBD,2024-11-07
-"AQ Sunshine, Inc.",First Lien,Insurance,9.85%,,SOFR,5.25%,,,2031-07-24,286,31,31,,31,,,,,,GSBD,2024-11-07
-"AQ Sunshine, Inc.",First Lien,Insurance,10.00%,,SOFR,5.25%,,,2030-07-24,53,4,4,,4,,,,,,GSBD,2024-11-07
-"Lithium Technologies, Inc.",First Lien,Media & Entertainment,,,SOFR,9.00%,,,2025-01-03,102827,97010,43958,,97010,,,,,,GSBD,2024-11-07
-"SPay, Inc.",First Lien,Media & Entertainment,14.65%,,SOFR,9.25%,,,2026-06-15,34988,34863,27991,,34863,,,,,,GSBD,2024-11-07
-"SPay, Inc.",First Lien,Media & Entertainment,14.60%,,SOFR,9.25%,,,2026-06-15,2535,2484,2028,,2484,,,,,,GSBD,2024-11-07
-"SPay, Inc.",First Lien,Media & Entertainment,14.52%,,SOFR,9.25%,,,2026-06-15,1273,1273,1019,,1273,,,,,,GSBD,2024-11-07
-"GPS Phoenix Buyer, Inc.",First Lien,Software & Technology,10.85%,,SOFR,6.00%,,,2029-10-02,3386,3327,3352,,3327,,,,,,GSBD,2024-11-07
-"GPS Phoenix Buyer, Inc.",First Lien,Software & Technology,,,SOFR,6.00%,,,2029-10-02,882,7,9,,7,,,,,,GSBD,2024-11-07
-"GPS Phoenix Buyer, Inc.",First Lien,Software & Technology,,,SOFR,6.00%,,,2029-10-02,706,12,7,,12,,,,,,GSBD,2024-11-07
-Kaseya Inc.,First Lien,Software & Technology,10.75%,,SOFR,5.50%,,,2029-06-25,18849,18643,18849,,18643,,,,,,GSBD,2024-11-07
-Kaseya Inc.,First Lien,Software & Technology,10.10%,,SOFR,5.50%,,,2029-06-25,1103,266,278,,266,,,,,,GSBD,2024-11-07
-Kaseya Inc.,First Lien,Software & Technology,10.78%,,SOFR,5.50%,,,2029-06-25,1033,207,215,,207,,,,,,GSBD,2024-11-07
-Kaseya Inc.,First Lien,Software & Technology,10.75%,,SOFR,5.50%,,,2029-06-25,68,68,68,,68,,,,,,GSBD,2024-11-07
-"US Signal Company, LLC",First Lien,Software & Technology,10.62%,,SOFR,5.50%,,,2029-09-04,6842,6774,6774,,6774,,,,,,GSBD,2024-11-07
-"US Signal Company, LLC",First Lien,Software & Technology,,,SOFR,5.50%,,,2029-09-04,2105,21,21,,21,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"US Signal Company, LLC",First Lien,Software & Technology,,,SOFR,5.50%,,,2029-09-04,1053,10,11,,10,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Wellness AcquisitionCo, Inc.",First Lien,Software & Technology,10.66%,,SOFR,5.50%,,,2027-01-20,21391,21199,21285,,21199,,,,,,GSBD,2024-11-07
-"Wellness AcquisitionCo, Inc.",First Lien,Software & Technology,10.66%,,SOFR,5.50%,,,2027-01-20,3989,1755,1770,,1755,,,,,,GSBD,2024-11-07
-"Wellness AcquisitionCo, Inc.",First Lien,Software & Technology,,,SOFR,5.50%,,,2027-01-20,2600,20,13,,20,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-Xactly Corp.,First Lien,Software & Technology,11.41%,,SOFR,6.25%,,,2027-07-30,62025,61341,61715,,61341,,,,,,GSBD,2024-11-07
-"Circustrix Holdings, LLC",First Lien,Healthcare,11.35%,,SOFR,6.50%,,,2028-07-18,4152,4060,4110,,4060,,,,,,GSBD,2024-11-07
-"Circustrix Holdings, LLC",First Lien,Healthcare,11.49%,,SOFR,6.50%,,,2028-07-18,537,419,424,,419,,,,,,GSBD,2024-11-07
-"Circustrix Holdings, LLC",First Lien,Healthcare,11.35%,,SOFR,6.50%,,,2028-07-18,269,102,105,,102,,,,,,GSBD,2024-11-07
-"Mandrake Bidco, Inc.",First Lien,Industrials,9.60%,,SOFR,4.75%,,,2031-08-20,862,854,853,,854,,,,,,GSBD,2024-11-07
-"Mandrake Bidco, Inc.",First Lien,Industrials,,,SOFR,4.75%,,,2030-08-20,138,1,1,,1,,,,,,GSBD,2024-11-07
-"Spectrum Safety Solutions Purchaser, LLC",First Lien,Industrials,10.33%,,SOFR,5.00%,,,2031-07-01,557,548,548,,548,,,,,,GSBD,2024-11-07
-"Spectrum Safety Solutions Purchaser, LLC",First Lien,Industrials,,,SOFR,5.00%,,,2031-07-01,148,1,2,,1,,,,,,GSBD,2024-11-07
-"Spectrum Safety Solutions Purchaser, LLC",First Lien,Industrials,10.33%,,SOFR,5.00%,,,2031-07-01,148,21,20,,21,,,,,,GSBD,2024-11-07
-"Spectrum Safety Solutions Purchaser, LLC",First Lien,Industrials,8.70%,,Euribor,5.00%,,,2031-07-01,138,146,151,,146,,,,,,GSBD,2024-11-07
-Recorded Books Inc.,First Lien,Media & Entertainment,11.31%,,SOFR,6.25%,,,2030-09-03,9182,8934,9090,,8934,,,,,,GSBD,2024-11-07
-Recorded Books Inc.,First Lien,Media & Entertainment,11.00%,,SOFR,5.75%,,,2030-09-03,1078,1056,1067,,1056,,,,,,GSBD,2024-11-07
-Recorded Books Inc.,First Lien,Media & Entertainment,11.17%,,SOFR,5.75%,,,2028-08-31,749,463,474,,463,,,,,,GSBD,2024-11-07
-"LS Clinical Services Holdings, Inc.",First Lien,Healthcare,12.57%,,SOFR,7.25%,,,2027-12-16,16966,16735,14930,,16735,,,,,,GSBD,2024-11-07
-"LS Clinical Services Holdings, Inc.",First Lien,Healthcare,12.16%,,SOFR,7.25%,,,2027-06-16,2289,1817,1574,,1817,,,,,,GSBD,2024-11-07
-"Amspec Parent, LLC",First Lien,Business Services,10.10%,,SOFR,5.50%,,,2030-12-05,3505,3425,3488,,3425,,,,,,GSBD,2024-11-07
-"Amspec Parent, LLC",First Lien,Business Services,,,SOFR,5.50%,,,2030-12-05,508,6,3,,6,,,,,,GSBD,2024-11-07
-"Amspec Parent, LLC",First Lien,Business Services,,,SOFR,5.50%,,,2029-12-05,476,10,2,,10,,,,,,GSBD,2024-11-07
-"Bullhorn, Inc.",First Lien,Business Services,9.85%,,SOFR,5.00%,,,2029-10-01,25952,25380,25952,,25380,,,,,,GSBD,2024-11-07
-"Bullhorn, Inc.",First Lien,Business Services,9.85%,,SOFR,5.00%,,,2029-10-01,4622,4597,4622,,4597,,,,,,GSBD,2024-11-07
-"Bullhorn, Inc.",First Lien,Business Services,9.85%,,SOFR,5.00%,,,2029-10-01,1201,1190,1201,,1190,,,,,,GSBD,2024-11-07
-"Bullhorn, Inc.",First Lien,Business Services,9.85%,,SOFR,5.00%,,,2029-10-01,538,526,538,,526,,,,,,GSBD,2024-11-07
-"Bullhorn, Inc.",First Lien,Business Services,9.85%,,SOFR,5.00%,,,2029-10-01,429,419,429,,419,,,,,,GSBD,2024-11-07
-Chronicle Bidco Inc.,First Lien,Business Services,11.50%,,SOFR,6.25%,,,2029-05-18,45157,43328,44706,,43328,,,,,,GSBD,2024-11-07
-Chronicle Bidco Inc.,First Lien,Business Services,11.50%,,SOFR,6.25%,,,2029-05-18,27993,1190,1183,,1190,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-Chronicle Bidco Inc.,First Lien,Business Services,,,SOFR,6.25%,,,2029-05-18,4753,128,48,,128,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-Diligent Corp.,First Lien,Business Services,10.09%,,SOFR,5.00%,,,2030-08-02,58189,57774,57753,,57774,,,,,,GSBD,2024-11-07
-Diligent Corp.,First Lien,Business Services,,,SOFR,5.00%,,,2030-08-02,13585,95,102,,95,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-Diligent Corp.,First Lien,Business Services,10.09%,,SOFR,5.00%,,,2030-08-02,9975,9904,9900,,9904,,,,,,GSBD,2024-11-07
-Diligent Corp.,First Lien,Business Services,,,SOFR,5.00%,,,2030-08-02,7450,52,56,,52,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Engage2Excel, Inc.",First Lien,Business Services,10.75%,,SOFR,6.50%,,,2029-07-01,922,909,908,,909,,,,,,GSBD,2024-11-07
-"Engage2Excel, Inc.",First Lien,Business Services,10.75%,,SOFR,6.50%,,,2029-07-01,75,37,37,,37,,,,,,GSBD,2024-11-07
-"iCIMS, Inc.",First Lien,Business Services,10.67%,,SOFR,5.75%,,,2028-08-18,47396,46870,45263,,46870,,,,,,GSBD,2024-11-07
-"iCIMS, Inc.",First Lien,Business Services,,,SOFR,3.38%,,,2028-08-18,7849,,353,,,,,,,fair_value_suspicious_vs_size,GSBD,2024-11-07
-"iCIMS, Inc.",First Lien,Business Services,10.62%,,SOFR,5.75%,,,2028-08-18,4199,1211,1071,,1211,,,,,,GSBD,2024-11-07
-"NFM & J, LP.",First Lien,Business Services,10.64%,,SOFR,5.75%,,,2027-11-30,17055,16844,16970,,16844,,,,,,GSBD,2024-11-07
-"NFM & J, LP.",First Lien,Business Services,11.10%,,SOFR,5.75%,,,2027-11-30,16778,16579,16695,,16579,,,,,,GSBD,2024-11-07
-"NFM & J, LP.",First Lien,Business Services,,,,,,,2027-11-30,2992,32,15,,32,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Pluralsight, Inc.",First Lien,Business Services,,,SOFR,7.50%,,,2029-08-22,14510,14075,14075,,14075,,,,,,GSBD,2024-11-07
-"Pluralsight, Inc.",First Lien,Business Services,9.62%,,SOFR,4.50%,,,2029-08-22,9673,9578,9577,,9578,,,,,,GSBD,2024-11-07
-"Pluralsight, Inc.",First Lien,Business Services,,,SOFR,4.50%,,,2029-08-22,6046,,60,,,,,,,fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Pluralsight, Inc.",First Lien,Business Services,9.62%,,SOFR,4.50%,,,2029-08-22,4837,4837,4788,,4837,,,,,,GSBD,2024-11-07
-"Pluralsight, Inc.",First Lien,Business Services,,,SOFR,4.50%,,,2029-08-22,2418,,24,,,,,,,fair_value_suspicious_vs_size,GSBD,2024-11-07
-Westwood Professional Services Inc.,First Lien,Business Services,9.57%,,SOFR,4.75%,,,2031-09-29,9858,9760,9760,,9760,,,,,,GSBD,2024-11-07
-Westwood Professional Services Inc.,First Lien,Business Services,,,SOFR,4.75%,,,2026-09-19,2958,15,15,,15,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-Westwood Professional Services Inc.,First Lien,Business Services,,,SOFR,4.75%,,,2031-09-19,1479,15,15,,15,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-HowlCO LLC,First Lien,Real Estate,11.97%,,SOFR,6.50%,,,2027-10-22,35812,35549,33664,,35549,,,,,,GSBD,2024-11-07
-HowlCO LLC,First Lien,Real Estate,11.94%,,SOFR,6.50%,,,2027-10-22,11588,11532,10892,,11532,,,,,,GSBD,2024-11-07
-HowlCO LLC,First Lien,Real Estate,11.97%,,SOFR,6.50%,,,2027-10-22,10985,10934,10326,,10934,,,,,,GSBD,2024-11-07
-MRI Software LLC,First Lien,Real Estate,9.35%,,SOFR,4.75%,,,2027-02-10,6148,6127,6025,,6127,,,,,,GSBD,2024-11-07
-MRI Software LLC,First Lien,Real Estate,,,SOFR,5.50%,,,2027-02-10,1612,15,32,,15,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Zarya Intermediate, LLC",First Lien,Real Estate,11.56%,,SOFR,6.50%,,,2027-07-01,76283,76283,75520,,76283,,,,,,GSBD,2024-11-07
-"Zarya Intermediate, LLC",First Lien,Real Estate,,,SOFR,6.50%,,,2027-07-01,7987,,80,,,,,,,fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Abacus Data Holdings, Inc.",First Lien,Software & Technology,11.17%,,SOFR,6.25%,,,2027-03-10,7956,7862,7658,,7862,,,,,,GSBD,2024-11-07
-"Abacus Data Holdings, Inc.",First Lien,Software & Technology,,,SOFR,6.25%,,,2027-03-10,1220,13,46,,13,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Acquia, Inc.",First Lien,Software & Technology,12.46%,,SOFR,7.00%,,,2025-10-31,42164,41610,41637,,41610,,,,,,GSBD,2024-11-07
-"Acquia, Inc.",First Lien,Software & Technology,12.46%,,SOFR,7.00%,,,2025-10-31,10554,10423,10422,,10423,,,,,,GSBD,2024-11-07
-"Acquia, Inc.",First Lien,Software & Technology,12.47%,,SOFR,7.00%,,,2025-10-31,3268,1284,1266,,1284,,,,,,GSBD,2024-11-07
-"AI Titan Parent, Inc.",First Lien,Software & Technology,9.81%,,SOFR,4.75%,,,2031-08-29,7167,7096,7095,,7096,,,,,,GSBD,2024-11-07
-"AI Titan Parent, Inc.",First Lien,Software & Technology,,,SOFR,4.75%,,,2031-08-29,1433,7,7,,7,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"AI Titan Parent, Inc.",First Lien,Software & Technology,,,SOFR,4.75%,,,2031-08-29,896,9,9,,9,,,,,,GSBD,2024-11-07
-"AQ Helios Buyer, Inc.",First Lien,Software & Technology,12.37%,,SOFR,7.00%,,,2026-12-31,39210,38869,37642,,38869,,,,,,GSBD,2024-11-07
-"AQ Helios Buyer, Inc.",First Lien,Software & Technology,13.37%,,SOFR,8.00%,,,2026-12-31,13403,2179,1911,,2179,,,,,,GSBD,2024-11-07
-"AQ Helios Buyer, Inc.",First Lien,Software & Technology,13.37%,,SOFR,8.00%,,,2026-12-31,12500,12500,12250,,12500,,,,,,GSBD,2024-11-07
-"AQ Helios Buyer, Inc.",First Lien,Software & Technology,13.37%,,SOFR,8.00%,,,2026-12-31,6600,6600,6468,,6600,,,,,,GSBD,2024-11-07
-"AQ Helios Buyer, Inc.",First Lien,Software & Technology,12.35%,,SOFR,7.00%,,,2026-12-31,4570,2707,2559,,2707,,,,,,GSBD,2024-11-07
-"AQ Helios Buyer, Inc.",First Lien,Software & Technology,13.37%,,SOFR,8.00%,,,2026-12-31,2339,2339,2292,,2339,,,,,,GSBD,2024-11-07
-"Arrow Buyer, Inc.",First Lien,Software & Technology,10.35%,,SOFR,5.75%,,,2030-07-01,2920,2856,2905,,2856,,,,,,GSBD,2024-11-07
-"Arrow Buyer, Inc.",First Lien,Software & Technology,,,SOFR,5.75%,,,2030-07-01,487,7,2,,7,,,,,,GSBD,2024-11-07
-"Arrow Buyer, Inc.",First Lien,Software & Technology,10.35%,,SOFR,5.75%,,,2030-07-01,191,189,190,,189,,,,,,GSBD,2024-11-07
-"Artifact Bidco, Inc.",First Lien,Software & Technology,9.10%,,SOFR,4.50%,,,2031-07-28,10567,10463,10461,,10463,,,,,,GSBD,2024-11-07
-"Artifact Bidco, Inc.",First Lien,Software & Technology,,,SOFR,4.50%,,,2031-07-28,2586,13,13,,13,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Artifact Bidco, Inc.",First Lien,Software & Technology,,,SOFR,4.50%,,,2030-07-26,1256,12,13,,12,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Artifact Bidco, Inc.",First Lien,Software & Technology,,,SOFR,4.50%,,,2030-07-26,591,6,6,,6,,,,,,GSBD,2024-11-07
-"Aurora Acquireco, Inc.",First Lien,Software & Technology,9.35%,,SOFR,4.75%,,,2031-07-12,600,594,594,,594,,,,,,GSBD,2024-11-07
-"Aurora Acquireco, Inc.",First Lien,Software & Technology,,,SOFR,4.75%,,,2031-07-12,286,1,1,,1,,,,,,GSBD,2024-11-07
-"Aurora Acquireco, Inc.",First Lien,Software & Technology,,,SOFR,4.75%,,,2031-07-12,114,1,1,,1,,,,,,GSBD,2024-11-07
-CivicPlus LLC,First Lien,Software & Technology,10.96%,,SOFR,5.75%,,,2027-08-24,6571,6493,6489,,6493,,,,,,GSBD,2024-11-07
-CivicPlus LLC,First Lien,Software & Technology,10.96%,,SOFR,5.75%,,,2027-08-24,6516,6440,6435,,6440,,,,,,GSBD,2024-11-07
-CivicPlus LLC,First Lien,Software & Technology,10.96%,,SOFR,5.75%,,,2027-08-24,3087,3049,3049,,3049,,,,,,GSBD,2024-11-07
-CivicPlus LLC,First Lien,Software & Technology,,,SOFR,5.75%,,,2027-08-24,1217,14,15,,14,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"CloudBees, Inc.",First Lien,Software & Technology,11.96%,,SOFR,7.00%,,,2026-11-24,30043,29161,30043,,29161,,,,,,GSBD,2024-11-07
-"CloudBees, Inc.",First Lien,Software & Technology,11.96%,,SOFR,7.00%,,,2026-11-24,12838,12441,12838,,12441,,,,,,GSBD,2024-11-07
-"Crewline Buyer, Inc.",First Lien,Software & Technology,11.35%,,SOFR,6.75%,,,2030-11-08,3482,3402,3395,,3402,,,,,,GSBD,2024-11-07
-"Crewline Buyer, Inc.",First Lien,Software & Technology,,,SOFR,6.75%,,,2030-11-08,363,8,9,,8,,,,,,GSBD,2024-11-07
-"Gainsight, Inc.",First Lien,Software & Technology,12.15%,,SOFR,6.75%,,,2027-07-30,55014,54623,54739,,54623,,,,,,GSBD,2024-11-07
-"Gainsight, Inc.",First Lien,Software & Technology,12.15%,,SOFR,6.75%,,,2027-07-30,5532,2926,2944,,2926,,,,,,GSBD,2024-11-07
-"GovDelivery Holdings, LLC",First Lien,Software & Technology,11.00%,,SOFR,5.75%,,,2031-01-17,11723,11616,11606,,11616,,,,,,GSBD,2024-11-07
-"GovDelivery Holdings, LLC",First Lien,Software & Technology,10.10%,,SOFR,5.25%,,,2031-01-17,2461,2441,2436,,2441,,,,,,GSBD,2024-11-07
-"GovDelivery Holdings, LLC",First Lien,Software & Technology,,,SOFR,5.25%,,,2031-01-17,1645,15,16,,15,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"GovDelivery Holdings, LLC",First Lien,Software & Technology,,,SOFR,5.75%,,,2031-01-17,279,3,3,,3,,,,,,GSBD,2024-11-07
-"Governmentjobs.com, Inc.",First Lien,Software & Technology,9.60%,,SOFR,5.00%,,,2028-12-01,68530,68209,67844,,68209,,,,,,GSBD,2024-11-07
-"Governmentjobs.com, Inc.",First Lien,Software & Technology,,,SOFR,5.00%,,,2028-12-01,12952,10,130,,10,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Governmentjobs.com, Inc.",First Lien,Software & Technology,,,SOFR,5.00%,,,2027-12-02,8322,40,83,,40,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"NAVEX TopCo, Inc.",First Lien,Software & Technology,10.60%,,SOFR,5.50%,,,2030-11-08,9144,8978,9121,,8978,,,,,,GSBD,2024-11-07
-"NAVEX TopCo, Inc.",First Lien,Software & Technology,,,SOFR,5.50%,,,2028-11-09,810,13,2,,13,,,,,,GSBD,2024-11-07
-"Northstar Acquisition HoldCo, LLC",First Lien,Software & Technology,9.75%,,,,,,2029-05-03,47006,4351,4432,,4351,,,,,,GSBD,2024-11-07
-"Northstar Acquisition HoldCo, LLC",First Lien,Software & Technology,9.60%,,SOFR,5.00%,,,2029-05-03,19022,18934,18927,,18934,,,,,,GSBD,2024-11-07
-"Northstar Acquisition HoldCo, LLC",First Lien,Software & Technology,,,SOFR,5.00%,,,2029-05-03,4444,10,22,,10,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Northstar Acquisition HoldCo, LLC",First Lien,Software & Technology,9.95%,,,,,,2029-05-03,4201,617,615,,617,,,,,,GSBD,2024-11-07
-"Northstar Acquisition HoldCo, LLC",First Lien,Software & Technology,9.95%,,,,,,2029-05-03,2145,2689,2853,,2689,,,,,,GSBD,2024-11-07
-"Onyx CenterSource, Inc.",First Lien,Software & Technology,11.98%,,SOFR,6.50%,,,2028-12-15,13849,13575,13849,,13575,,,,,,GSBD,2024-11-07
-"Onyx CenterSource, Inc.",First Lien,Software & Technology,11.98%,,SOFR,6.50%,,,2028-12-15,1047,329,349,,329,,,,,,GSBD,2024-11-07
-"Pioneer Buyer I, LLC",First Lien,Software & Technology,11.10%,,SOFR,6.50%,,,2028-11-01,30524,30224,30448,,30224,,,,,,GSBD,2024-11-07
-"Pioneer Buyer I, LLC",First Lien,Software & Technology,,,SOFR,6.50%,,,2027-11-01,4300,45,11,,45,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Rocky Debt Merger Sub, LLC",First Lien,Software & Technology,10.10%,,SOFR,5.25%,,,2031-09-01,35704,35351,35346,,35351,,,,,,GSBD,2024-11-07
-"Rocky Debt Merger Sub, LLC",First Lien,Software & Technology,,,SOFR,5.25%,,,2031-09-01,10274,51,51,,51,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Rocky Debt Merger Sub, LLC",First Lien,Software & Technology,,,SOFR,5.25%,,,2031-09-01,4110,41,41,,41,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Rubrik, Inc.",First Lien,Software & Technology,12.28%,,SOFR,7.00%,,,2028-08-17,34387,34104,34387,,34104,,,,,,GSBD,2024-11-07
-"Rubrik, Inc.",First Lien,Software & Technology,12.28%,,SOFR,7.00%,,,2028-08-17,4806,3907,3945,,3907,,,,,,GSBD,2024-11-07
-"Runway Bidco, LLC",First Lien,Software & Technology,,,SOFR,5.00%,,,2031-10-01,14571,,,,,,,,,,GSBD,2024-11-07
-"Runway Bidco, LLC",First Lien,Software & Technology,,,SOFR,5.00%,,,2031-10-01,3620,,,,,,,,,,GSBD,2024-11-07
-"Runway Bidco, LLC",First Lien,Software & Technology,,,SOFR,5.00%,,,2029-10-01,1809,,,,,,,,,,GSBD,2024-11-07
-"Singlewire Software, LLC",First Lien,Software & Technology,9.85%,,SOFR,5.25%,,,2029-05-10,763,744,756,,744,,,,,,GSBD,2024-11-07
-"Singlewire Software, LLC",First Lien,Software & Technology,,,SOFR,5.25%,,,2029-05-10,129,3,1,,3,,,,,,GSBD,2024-11-07
-"Smarsh, Inc.",First Lien,Software & Technology,10.35%,,SOFR,5.75%,,,2029-02-16,26667,26479,26533,,26479,,,,,,GSBD,2024-11-07
-"Smarsh, Inc.",First Lien,Software & Technology,10.35%,,SOFR,5.75%,,,2029-02-16,6667,3299,3300,,3299,,,,,,GSBD,2024-11-07
-"Smarsh, Inc.",First Lien,Software & Technology,,,SOFR,5.75%,,,2029-02-16,1667,11,8,,11,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Sundance Group Holdings, Inc.",First Lien,Software & Technology,9.32%,,SOFR,4.75%,,,2029-07-02,53356,52730,52822,,52730,,,,,,GSBD,2024-11-07
-"Sundance Group Holdings, Inc.",First Lien,Software & Technology,9.32%,,SOFR,4.75%,,,2029-07-02,7398,3327,3292,,3327,,,,,,GSBD,2024-11-07
-"WorkForce Software, LLC",First Lien,Software & Technology,12.46%,,SOFR,7.25%,,,2025-07-31,23752,23529,23514,,23529,,,,,,GSBD,2024-11-07
-"WorkForce Software, LLC",First Lien,Software & Technology,12.46%,,SOFR,7.25%,,,2025-07-31,3350,3334,3316,,3334,,,,,,GSBD,2024-11-07
-"WorkForce Software, LLC",First Lien,Software & Technology,12.46%,,SOFR,7.25%,,,2025-07-31,2462,2449,2438,,2449,,,,,,GSBD,2024-11-07
-"WorkForce Software, LLC",First Lien,Software & Technology,,,SOFR,7.25%,,,2025-07-31,1894,7,14,,7,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Zarya Intermediate, LLC",First Lien,Software & Technology,11.56%,,SOFR,6.50%,,,2027-07-01,6216,6110,6154,,6110,,,,,,GSBD,2024-11-07
-"Charger Debt Merger Sub, LLC",First Lien,Consumer & Retail,9.60%,,SOFR,5.00%,,,2031-06-02,17117,16951,16945,,16951,,,,,,GSBD,2024-11-07
-"Charger Debt Merger Sub, LLC",First Lien,Consumer & Retail,9.66%,,SOFR,5.00%,,,2031-06-02,9336,2646,2611,,2646,,,,,,GSBD,2024-11-07
-"Charger Debt Merger Sub, LLC",First Lien,Consumer & Retail,,,SOFR,5.00%,,,2030-05-31,2178,21,22,,21,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"Ortholite, LLC",First Lien,Consumer & Retail,10.85%,,SOFR,6.25%,,,2027-09-29,5707,5662,5650,,5662,,,,,,GSBD,2024-11-07
-"Harrington Industrial Plastics, LLC",First Lien,Distribution & Wholesale,10.60%,,SOFR,5.75%,,,2030-10-07,16473,16103,16308,,16103,,,,,,GSBD,2024-11-07
-"Harrington Industrial Plastics, LLC",First Lien,Distribution & Wholesale,10.60%,,SOFR,5.75%,,,2030-10-07,13018,4614,4687,,4614,,,,,,GSBD,2024-11-07
-"NCWS Intermediate, Inc.",First Lien,Distribution & Wholesale,10.10%,,SOFR,5.50%,,,2029-12-31,25367,25007,24479,,25007,,,,,,GSBD,2024-11-07
-"NCWS Intermediate, Inc.",First Lien,Distribution & Wholesale,10.10%,,SOFR,5.50%,,,2029-12-31,2988,197,134,,197,,,,,fair_value_suspicious_vs_size,GSBD,2024-11-07
-"NCWS Intermediate, Inc.",First Lien,Distribution & Wholesale,10.10%,,SOFR,5.50%,,,2029-12-31,1793,185,136,,185,,,,,,GSBD,2024-11-07
-"PT Intermediate Holdings III, LLC",First Lien,Distribution & Wholesale,9.60%,,SOFR,5.00%,,,2030-04-09,43132,43060,42916,,43060,,,,,,GSBD,2024-11-07
-"PT Intermediate Holdings III, LLC",First Lien,Distribution & Wholesale,,,SOFR,4.75%,,,2030-04-09,3059,3,15,,3,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,GSBD,2024-11-07
-"United Flow Technologies Intermediate Holdco II, LLC",First Lien,Distribution & Wholesale,9.85%,,SOFR,5.25%,,,2031-06-23,6000,5912,5940,,5912,,,,,,GSBD,2024-11-07
-"United Flow Technologies Intermediate Holdco II, LLC",First Lien,Distribution & Wholesale,,,SOFR,5.25%,,,2030-06-21,667,10,7,,10,,,,,,GSBD,2024-11-07
-"EDB Parent, LLC",First Lien,Software & Technology,11.81%,,SOFR,6.75%,,,2028-07-07,,,,,,,,,,,GSBD,2024-11-07
-"EIP Consolidated, LLC",First Lien,Telecommunications,11.10%,,SOFR,6.25%,,,2028-12-07,,,,,,,,,,,GSBD,2024-11-07
-"K2 Towers III, LLC",First Lien,Telecommunications,11.17%,,SOFR,6.55%,,,2028-12-06,,,,,,,,,,,GSBD,2024-11-07
-Skyway Towers Intermediate LLC,First Lien,Telecommunications,11.45%,,SOFR,6.61%,,,2028-12-22,,,,,,,,,,,GSBD,2024-11-07
-Tarpon Towers II LLC,First Lien,Telecommunications,11.68%,,SOFR,6.83%,,,2029-02-01,,,,,,,,,,,GSBD,2024-11-07
-Thor FinanceCo LLC,First Lien,Telecommunications,12.19%,,SOFR,7.00%,,,2028-08-24,,,,,,,,,,,GSBD,2024-11-07
-Thor FinanceCo LLC,First Lien,Telecommunications,12.01%,,SOFR,7.00%,,,2028-08-24,,,,,,,,,,,GSBD,2024-11-07
-"Towerco IV Holdings, LLC",First Lien,Telecommunications,8.70%,,SOFR,3.75%,,,2028-08-31,,,,,,,,,,,GSBD,2024-11-07
-"MPI Engineered Technologies, LLC",Second Lien,Automotive,12.00%,,,,,,2025-07-15,,,,,,,,,,,GSBD,2024-11-07
-MPI Products LLC,Second Lien,Automotive,,,,,,,2025-07-15,,,,,,,,,,,GSBD,2024-11-07
-"Wine.com, LLC",Second Lien,Food & Beverage,17.49%,,SOFR,12.00%,,,2027-04-03,,,,,,,,,,,GSBD,2024-11-07
-"Wine.com, LLC",Second Lien,Food & Beverage,17.18%,,SOFR,12.00%,,,2027-04-03,,,,,,,,,,,GSBD,2024-11-07
-"Chase Industries, Inc.",Second Lien,Industrials,,,,,,,2026-05-11,,,,,,,,,,,GSBD,2024-11-07
-"Chase Industries, Inc.",Second Lien,Industrials,,,,,,,2025-11-11,,,,,,,,,,,GSBD,2024-11-07
-Sweep Midco LLC,Second Lien,Business Services,,,,,,,2036-03-12,,,,,,,,,,,GSBD,2024-11-07
-Sweep Midco LLC,Second Lien,Business Services,,,,,,,2034-03-12,,,,,,,,,,,GSBD,2024-11-07
-"Animal Supply Intermediate, LLC",Second Lien,Distribution & Wholesale,,,,,,,2025-11-14,,,,,,,,,,,GSBD,2024-11-07
-"Wine.com, Inc.",Unsecured Debt,Food & Beverage,,,SOFR,15.00%,,,2027-04-03,,,,,,,,,,,GSBD,2024-11-07
-"Bayside Opco, LLC",Unsecured Debt,Healthcare,,,SOFR,10.00%,,,2026-05-31,,,,,,,,,,,GSBD,2024-11-07
-"mPulse Mobile, Inc.",Unsecured Debt,Healthcare,,,,,,,2031-09-05,,,,,,,,,,,GSBD,2024-11-07
-CivicPlus LLC,Unsecured Debt,Software & Technology,16.35%,,SOFR,11.75%,,,2034-06-09,,,,,,,,,,,GSBD,2024-11-07
+Fullsteam Operations LLC,First Lien,Financial Services,,,SOFR,8.25%,,,2029-11-27,1952,51,20,,51,,,,,,GSBD,2024-11-07
+"GS AcquisitionCo, Inc. (dba Insightsoftware)",First Lien,Financial Services,9.85%,,SOFR,5.25%,,,2028-05-25,27866,27654,27727,,27654,,,,,,GSBD,2024-11-07
+"GS AcquisitionCo, Inc. (dba Insightsoftware)",First Lien,Financial Services,9.85%,,SOFR,5.25%,,,2028-05-25,2382,294,297,,294,,,,,,GSBD,2024-11-07
+"GS AcquisitionCo, Inc. (dba Insightsoftware)",First Lien,Financial Services,,,SOFR,5.25%,,,2028-05-25,1848,8,9,,8,,,,,,GSBD,2024-11-07
+"MerchantWise Solutions, LLC (dba HungerRush)",First Lien,Financial Services,10.60%,,SOFR,6.00%,,,2028-06-01,21256,20967,19343,,20967,,,,,,GSBD,2024-11-07
+"MerchantWise Solutions, LLC (dba HungerRush)",First Lien,Financial Services,10.60%,,SOFR,6.00%,,,2028-06-01,5360,4577,4167,,4577,,,,,,GSBD,2024-11-07
+"MerchantWise Solutions, LLC (dba HungerRush)",First Lien,Financial Services,10.74%,,SOFR,6.00%,,,2028-06-01,2718,2683,2474,,2683,,,,,,GSBD,2024-11-07
+"Priority Technology Holdings, Inc. (dba Priority Payment)",First Lien,Financial Services,9.81%,,SOFR,4.75%,,,2031-05-16,14963,14891,14963,,14891,,,,,,GSBD,2024-11-07
+"Project Accelerate Parent, LLC (dba ABC Fitness)",First Lien,Financial Services,10.54%,,SOFR,5.25%,,,2031-02-24,13092,12969,12961,,12969,,,,,,GSBD,2024-11-07
+"Project Accelerate Parent, LLC (dba ABC Fitness)",First Lien,Financial Services,,,SOFR,5.25%,,,2031-02-24,1875,17,19,,17,,,,,,GSBD,2024-11-07
+Prophix Software Inc. (dba Pound Bidco),First Lien,Financial Services,11.35%,,SOFR,6.00%,,,2027-02-01,13012,12957,12947,,12957,,,,,,GSBD,2024-11-07
+Prophix Software Inc. (dba Pound Bidco),First Lien,Financial Services,11.35%,,SOFR,6.00%,,,2027-02-01,1258,202,196,,202,,,,,,GSBD,2024-11-07
+"Eagle Family Foods Group Holdings, LLC",First Lien,Food Products,10.33%,,SOFR,5.00%,,,2030-08-12,899,890,890,,890,,,,,,GSBD,2024-11-07
+"Eagle Family Foods Group Holdings, LLC",First Lien,Food Products,10.33%,,SOFR,5.00%,,,2030-08-12,101,12,12,,12,,,,,,GSBD,2024-11-07
+"Eptam Plastics, Ltd.",First Lien,Health Care Equipment & Supplies,10.45%,,SOFR,5.50%,,,2025-12-06,10183,10043,9877,,10043,,,,,,GSBD,2024-11-07
+"Eptam Plastics, Ltd.",First Lien,Health Care Equipment & Supplies,11.01%,,SOFR,6.00%,,,2025-12-06,5583,5538,5443,,5538,,,,,,GSBD,2024-11-07
+"Eptam Plastics, Ltd.",First Lien,Health Care Equipment & Supplies,10.45%,,SOFR,5.50%,,,2025-12-06,4791,4767,4648,,4767,,,,,,GSBD,2024-11-07
+"Eptam Plastics, Ltd.",First Lien,Health Care Equipment & Supplies,10.45%,,SOFR,5.50%,,,2025-12-06,4390,4358,4258,,4358,,,,,,GSBD,2024-11-07
+"Eptam Plastics, Ltd.",First Lien,Health Care Equipment & Supplies,10.45%,,SOFR,5.50%,,,2025-12-06,2269,2239,2201,,2239,,,,,,GSBD,2024-11-07
+"Hamilton Thorne, Inc.",First Lien,Health Care Equipment & Supplies,,,Euribor,5.50%,,,2031-08-01,334,,,,,,,,,,GSBD,2024-11-07
+"Hamilton Thorne, Inc.",First Lien,Health Care Equipment & Supplies,,,SOFR,5.50%,,,2031-08-01,164,,,,,,,,,,GSBD,2024-11-07
+"Hamilton Thorne, Inc.",First Lien,Health Care Equipment & Supplies,,,SOFR,5.50%,,,2031-08-01,121,,,,,,,,,,GSBD,2024-11-07
+"Hamilton Thorne, Inc.",First Lien,Health Care Equipment & Supplies,,,SOFR,5.50%,,,2029-08-01,99,,,,,,,,,,GSBD,2024-11-07
+"Riverpoint Medical, LLC",First Lien,Health Care Equipment & Supplies,9.85%,,SOFR,5.25%,,,2027-06-21,21309,20964,21096,,20964,,,,,,GSBD,2024-11-07
+"Riverpoint Medical, LLC",First Lien,Health Care Equipment & Supplies,9.85%,,SOFR,5.25%,,,2027-06-21,5120,5048,5069,,5048,,,,,,GSBD,2024-11-07
+"Riverpoint Medical, LLC",First Lien,Health Care Equipment & Supplies,10.10%,,SOFR,5.25%,,,2027-06-21,4094,543,539,,543,,,,,,GSBD,2024-11-07
+"Riverpoint Medical, LLC",First Lien,Health Care Equipment & Supplies,9.85%,,SOFR,5.25%,,,2027-06-21,1615,1602,1598,,1602,,,,,,GSBD,2024-11-07
+"Viant Medical Holdings, Inc.",First Lien,Health Care Equipment & Supplies,11.21%,,SOFR,6.25%,,,2025-07-02,30578,30183,30425,,30183,,,,,,GSBD,2024-11-07
+"Zeus Company, Inc.",First Lien,Health Care Equipment & Supplies,10.10%,,SOFR,5.50%,,,2031-02-28,24489,24143,24244,,24143,,,,,,GSBD,2024-11-07
+"Zeus Company, Inc.",First Lien,Health Care Equipment & Supplies,,,SOFR,5.50%,,,2031-02-28,4568,32,46,,32,,,,,,GSBD,2024-11-07
+"Zeus Company, Inc.",First Lien,Health Care Equipment & Supplies,,,SOFR,5.50%,,,2030-02-28,3426,46,34,,46,,,,,,GSBD,2024-11-07
+"Argos Health Holdings, Inc",First Lien,Health Care Providers & Services,11.56%,,SOFR,6.25%,,,2027-12-03,21395,21141,20646,,21141,,,,,,GSBD,2024-11-07
+"Bayside Opco, LLC (dba Pro-PT)",First Lien,Health Care Providers & Services,12.00%,,SOFR,7.25%,,,2026-05-31,2919,2876,2890,,2876,,,,,,GSBD,2024-11-07
+"Bayside Opco, LLC (dba Pro-PT)",First Lien,Health Care Providers & Services,,,SOFR,7.25%,,,2026-05-31,1033,706,904,,706,,,,,,GSBD,2024-11-07
+"Bayside Opco, LLC (dba Pro-PT)",First Lien,Health Care Providers & Services,,,SOFR,7.25%,,,2026-05-31,415,,,,,,,,,,GSBD,2024-11-07
+Capitol Imaging Acquisition Corp.,First Lien,Health Care Providers & Services,12.01%,,SOFR,6.50%,,,2026-10-01,17520,17362,17345,,17362,,,,,,GSBD,2024-11-07
+Capitol Imaging Acquisition Corp.,First Lien,Health Care Providers & Services,12.01%,,SOFR,6.50%,,,2026-10-01,783,769,776,,769,,,,,,GSBD,2024-11-07
+Capitol Imaging Acquisition Corp.,First Lien,Health Care Providers & Services,,,SOFR,6.50%,,,2025-10-01,180,1,2,,1,,,,,,GSBD,2024-11-07
+"CFS Management, LLC (dba Center for Sight Management)",First Lien,Health Care Providers & Services,13.87%,,SOFR,9.00%,,,2024-07-15,19529,19529,17576,,19529,,,,,,GSBD,2024-11-07
+"CFS Management, LLC (dba Center for Sight Management)",First Lien,Health Care Providers & Services,13.87%,,SOFR,9.00%,,,2024-07-15,3389,3389,3050,,3389,,,,,,GSBD,2024-11-07
+"CFS Management, LLC (dba Center for Sight Management)",First Lien,Health Care Providers & Services,13.87%,,SOFR,9.00%,,,2024-07-15,2003,2003,1803,,2003,,,,,,GSBD,2024-11-07
+"Coding Solutions Acquisition, Inc. (dba CorroHealth)",First Lien,Health Care Providers & Services,9.25%,,SOFR,5.00%,,,2031-08-07,2269,2254,2246,,2254,,,,,,GSBD,2024-11-07
+"Coding Solutions Acquisition, Inc. (dba CorroHealth)",First Lien,Health Care Providers & Services,,,SOFR,5.00%,,,2031-08-07,410,3,3,,3,,,,,,GSBD,2024-11-07
+"Coding Solutions Acquisition, Inc. (dba CorroHealth)",First Lien,Health Care Providers & Services,10.01%,,SOFR,5.00%,,,2031-08-07,221,52,52,,52,,,,,,GSBD,2024-11-07
+CORA Health Holdings Corp,First Lien,Health Care Providers & Services,10.74%,,SOFR,5.75%,,,2027-06-15,22526,22354,18922,,22354,,,,,,GSBD,2024-11-07
+CORA Health Holdings Corp,First Lien,Health Care Providers & Services,10.74%,,SOFR,5.75%,,,2027-06-15,375,372,315,,372,,,,,,GSBD,2024-11-07
+DECA Dental Holdings LLC,First Lien,Health Care Providers & Services,10.45%,,SOFR,5.75%,,,2028-08-28,21019,20753,20389,,20753,,,,,,GSBD,2024-11-07
+DECA Dental Holdings LLC,First Lien,Health Care Providers & Services,10.45%,,SOFR,5.75%,,,2028-08-28,2213,2185,2146,,2185,,,,,,GSBD,2024-11-07
+DECA Dental Holdings LLC,First Lien,Health Care Providers & Services,10.46%,,SOFR,5.75%,,,2027-08-26,1711,1693,1659,,1693,,,,,,GSBD,2024-11-07
+"Highfive Dental Holdco, LLC",First Lien,Health Care Providers & Services,11.70%,,SOFR,6.75%,,,2028-06-13,2777,2711,2708,,2711,,,,,,GSBD,2024-11-07
+"Highfive Dental Holdco, LLC",First Lien,Health Care Providers & Services,,,SOFR,6.75%,,,2028-06-13,313,7,8,,7,,,,,,GSBD,2024-11-07
+"Honor HN Buyer, Inc",First Lien,Health Care Providers & Services,10.50%,,SOFR,5.75%,,,2027-10-15,23687,23414,23628,,23414,,,,,,GSBD,2024-11-07
+"Honor HN Buyer, Inc",First Lien,Health Care Providers & Services,10.50%,,SOFR,5.75%,,,2027-10-15,14979,14794,14942,,14794,,,,,,GSBD,2024-11-07
+"Honor HN Buyer, Inc",First Lien,Health Care Providers & Services,10.50%,,SOFR,5.75%,,,2027-10-15,9912,7236,7330,,7236,,,,,,GSBD,2024-11-07
+"Honor HN Buyer, Inc",First Lien,Health Care Providers & Services,12.75%,,,,,,2027-10-15,2802,321,343,,321,,,,,,GSBD,2024-11-07
+"LCG Vardiman Black, LLC (dba Specialty Dental Brands)",First Lien,Health Care Providers & Services,12.30%,,SOFR,7.00%,,,2027-03-18,759,746,743,,746,,,,,,GSBD,2024-11-07
+"LCG Vardiman Black, LLC (dba Specialty Dental Brands)",First Lien,Health Care Providers & Services,12.30%,,SOFR,7.00%,,,2027-03-18,90,75,81,,75,,,,,,GSBD,2024-11-07
+"Millstone Medical Outsourcing, LLC",First Lien,Health Care Providers & Services,10.25%,,SOFR,5.50%,,,2027-12-15,10064,9942,9963,,9942,,,,,,GSBD,2024-11-07
+"Millstone Medical Outsourcing, LLC",First Lien,Health Care Providers & Services,,,,,,,2027-12-15,2217,24,22,,24,,,,,,GSBD,2024-11-07
+One GI LLC,First Lien,Health Care Providers & Services,11.70%,,SOFR,6.75%,,,2025-12-22,22240,22110,20906,,22110,,,,,,GSBD,2024-11-07
+One GI LLC,First Lien,Health Care Providers & Services,11.70%,,SOFR,6.75%,,,2025-12-22,11872,11790,11160,,11790,,,,,,GSBD,2024-11-07
+One GI LLC,First Lien,Health Care Providers & Services,11.70%,,SOFR,6.75%,,,2025-12-22,9144,9091,8595,,9091,,,,,,GSBD,2024-11-07
+One GI LLC,First Lien,Health Care Providers & Services,11.70%,,SOFR,6.75%,,,2025-12-22,6515,6465,6124,,6465,,,,,,GSBD,2024-11-07
+One GI LLC,First Lien,Health Care Providers & Services,11.88%,,SOFR,6.75%,,,2025-12-22,3610,3589,3393,,3589,,,,,,GSBD,2024-11-07
+"Premier Imaging, LLC (dba Lucid Health)",First Lien,Health Care Providers & Services,12.87%,,SOFR,8.00%,,,2025-01-02,30070,29946,23079,,29946,,,,,,GSBD,2024-11-07
+"Premier Imaging, LLC (dba Lucid Health)",First Lien,Health Care Providers & Services,12.87%,,SOFR,8.00%,,,2025-01-02,8322,8311,6387,,8311,,,,,,GSBD,2024-11-07
+"Premier Imaging, LLC (dba Lucid Health)",First Lien,Health Care Providers & Services,12.87%,,SOFR,8.00%,,,2025-01-02,6649,6641,5103,,6641,,,,,,GSBD,2024-11-07
+"Premier Imaging, LLC (dba Lucid Health)",First Lien,Health Care Providers & Services,12.87%,,SOFR,8.00%,,,2025-01-02,1635,1633,1255,,1633,,,,,,GSBD,2024-11-07
+"SpendMend, LLC",First Lien,Health Care Providers & Services,10.25%,,SOFR,5.50%,,,2028-03-01,623,616,617,,616,,,,,,GSBD,2024-11-07
+"SpendMend, LLC",First Lien,Health Care Providers & Services,10.35%,,SOFR,5.50%,,,2028-03-01,275,133,133,,133,,,,,,GSBD,2024-11-07
+"SpendMend, LLC",First Lien,Health Care Providers & Services,10.48%,,SOFR,5.50%,,,2028-03-01,83,32,33,,32,,,,,,GSBD,2024-11-07
+"The Center for Orthopedic and Research Excellence, Inc. (dba HOPCo)",First Lien,Health Care Providers & Services,11.65%,,SOFR,6.25%,,,2025-08-15,25586,25247,25203,,25247,,,,,,GSBD,2024-11-07
+"The Center for Orthopedic and Research Excellence, Inc. (dba HOPCo)",First Lien,Health Care Providers & Services,11.65%,,SOFR,6.25%,,,2025-08-15,7758,7714,7642,,7714,,,,,,GSBD,2024-11-07
+"The Center for Orthopedic and Research Excellence, Inc. (dba HOPCo)",First Lien,Health Care Providers & Services,11.52%,,SOFR,6.25%,,,2025-08-15,4606,4582,4537,,4582,,,,,,GSBD,2024-11-07
+"The Center for Orthopedic and Research Excellence, Inc. (dba HOPCo)",First Lien,Health Care Providers & Services,11.65%,,SOFR,6.00%,,,2025-08-15,4565,2823,2784,,2823,,,,,,GSBD,2024-11-07
+"The Center for Orthopedic and Research Excellence, Inc. (dba HOPCo)",First Lien,Health Care Providers & Services,11.46%,,SOFR,6.25%,,,2025-08-15,2098,2085,2067,,2085,,,,,,GSBD,2024-11-07
+Total Vision LLC,First Lien,Health Care Providers & Services,11.55%,,SOFR,6.00%,,,2026-07-15,16715,16557,15879,,16557,,,,,,GSBD,2024-11-07
+Total Vision LLC,First Lien,Health Care Providers & Services,11.08%,,SOFR,6.00%,,,2026-07-15,9658,9556,9175,,9556,,,,,,GSBD,2024-11-07
+Total Vision LLC,First Lien,Health Care Providers & Services,11.37%,,SOFR,6.00%,,,2026-07-15,4918,4877,4672,,4877,,,,,,GSBD,2024-11-07
+Total Vision LLC,First Lien,Health Care Providers & Services,11.54%,,SOFR,6.00%,,,2026-07-15,2448,2428,2325,,2428,,,,,,GSBD,2024-11-07
+Total Vision LLC,First Lien,Health Care Providers & Services,,,SOFR,6.00%,,,2026-07-15,1270,9,63,,9,,,,,,GSBD,2024-11-07
+USN Opco LLC (dba Global Nephrology Solutions),First Lien,Health Care Providers & Services,10.25%,,SOFR,5.50%,,,2026-12-21,21267,21084,20522,,21084,,,,,,GSBD,2024-11-07
+USN Opco LLC (dba Global Nephrology Solutions),First Lien,Health Care Providers & Services,10.25%,,SOFR,5.50%,,,2026-12-21,9538,9455,9204,,9455,,,,,,GSBD,2024-11-07
+USN Opco LLC (dba Global Nephrology Solutions),First Lien,Health Care Providers & Services,10.25%,,SOFR,5.50%,,,2026-12-21,7393,7325,7134,,7325,,,,,,GSBD,2024-11-07
+USN Opco LLC (dba Global Nephrology Solutions),First Lien,Health Care Providers & Services,10.25%,,SOFR,5.50%,,,2026-12-21,3023,2037,1956,,2037,,,,,,GSBD,2024-11-07
+"Businessolver.com, Inc.",First Lien,Health Care Technology,10.20%,,SOFR,5.50%,,,2027-12-01,18202,18094,18066,,18094,,,,,,GSBD,2024-11-07
+"Businessolver.com, Inc.",First Lien,Health Care Technology,10.20%,,SOFR,5.50%,,,2027-12-01,2718,642,630,,642,,,,,,GSBD,2024-11-07
+"ESO Solutions, Inc.",First Lien,Health Care Technology,12.06%,,SOFR,7.00%,,,2027-05-03,39908,39502,39508,,39502,,,,,,GSBD,2024-11-07
+"ESO Solutions, Inc.",First Lien,Health Care Technology,12.06%,,SOFR,7.00%,,,2027-05-03,4498,4415,4453,,4415,,,,,,GSBD,2024-11-07
+"ESO Solutions, Inc.",First Lien,Health Care Technology,11.96%,,SOFR,7.00%,,,2027-05-03,3620,1922,1919,,1922,,,,,,GSBD,2024-11-07
+"Experity, Inc.",First Lien,Health Care Technology,10.10%,,SOFR,5.50%,,,2028-02-24,578,576,573,,576,,,,,,GSBD,2024-11-07
+"Experity, Inc.",First Lien,Health Care Technology,,,SOFR,5.50%,,,2028-02-24,81,,1,,,,,,,,GSBD,2024-11-07
+GHA Buyer Inc. (dba Cedar Gate),First Lien,Health Care Technology,10.10%,,SOFR,5.50%,,,2026-06-24,15352,15245,15198,,15245,,,,,,GSBD,2024-11-07
+GHA Buyer Inc. (dba Cedar Gate),First Lien,Health Care Technology,10.10%,,SOFR,5.50%,,,2026-06-24,2694,2684,2667,,2684,,,,,,GSBD,2024-11-07
+GHA Buyer Inc. (dba Cedar Gate),First Lien,Health Care Technology,,,SOFR,5.50%,,,2026-06-24,1880,12,19,,12,,,,,,GSBD,2024-11-07
+GHA Buyer Inc. (dba Cedar Gate),First Lien,Health Care Technology,10.10%,,SOFR,5.50%,,,2026-06-24,1004,999,994,,999,,,,,,GSBD,2024-11-07
+"HealthEdge Software, Inc.",First Lien,Health Care Technology,9.85%,,SOFR,4.75%,,,2031-07-16,12710,12586,12583,,12586,,,,,,GSBD,2024-11-07
+"HealthEdge Software, Inc.",First Lien,Health Care Technology,,,SOFR,4.75%,,,2031-07-16,5607,27,28,,27,,,,,,GSBD,2024-11-07
+"HealthEdge Software, Inc.",First Lien,Health Care Technology,,,SOFR,4.75%,,,2031-07-16,1682,16,17,,16,,,,,,GSBD,2024-11-07
+"Intelligent Medical Objects, Inc.",First Lien,Health Care Technology,9.86%,,SOFR,5.50%,,,2029-05-11,12275,12095,11968,,12095,,,,,,GSBD,2024-11-07
+"Intelligent Medical Objects, Inc.",First Lien,Health Care Technology,10.09%,,SOFR,5.50%,,,2029-05-11,1570,1546,1531,,1546,,,,,,GSBD,2024-11-07
+"Intelligent Medical Objects, Inc.",First Lien,Health Care Technology,,,SOFR,5.50%,,,2028-05-11,1490,18,37,,18,,,,,,GSBD,2024-11-07
+"MedeAnalytics, Inc.",First Lien,Health Care Technology,,,,,,,2028-10-23,227,142,156,,142,,,,,,GSBD,2024-11-07
+"PDDS Holdco, Inc. (dba Planet DDS)",First Lien,Health Care Technology,12.25%,,SOFR,7.50%,,,2028-07-18,24090,23747,24030,,23747,,,,,,GSBD,2024-11-07
+"PDDS Holdco, Inc. (dba Planet DDS)",First Lien,Health Care Technology,12.25%,,SOFR,7.50%,,,2028-07-18,16300,9797,9756,,9797,,,,,,GSBD,2024-11-07
+"PDDS Holdco, Inc. (dba Planet DDS)",First Lien,Health Care Technology,12.25%,,SOFR,7.50%,,,2028-07-18,2255,2239,2249,,2239,,,,,,GSBD,2024-11-07
+"PDDS Holdco, Inc. (dba Planet DDS)",First Lien,Health Care Technology,12.25%,,SOFR,7.50%,,,2028-07-18,1815,521,540,,521,,,,,,GSBD,2024-11-07
+"PlanSource Holdings, Inc.",First Lien,Health Care Technology,11.64%,,SOFR,6.25%,,,2025-06-30,56720,56166,56153,,56166,,,,,,GSBD,2024-11-07
+"PlanSource Holdings, Inc.",First Lien,Health Care Technology,,,SOFR,6.25%,,,2025-06-30,7824,34,78,,34,,,,,,GSBD,2024-11-07
+"PlanSource Holdings, Inc.",First Lien,Health Care Technology,11.64%,,SOFR,6.25%,,,2025-06-30,905,902,896,,902,,,,,,GSBD,2024-11-07
+"PlanSource Holdings, Inc.",First Lien,Health Care Technology,11.64%,,SOFR,6.25%,,,2025-06-30,905,903,896,,903,,,,,,GSBD,2024-11-07
+"WebPT, Inc.",First Lien,Health Care Technology,11.91%,,SOFR,6.75%,,,2028-01-18,25126,24044,24623,,24044,,,,,,GSBD,2024-11-07
+"WebPT, Inc.",First Lien,Health Care Technology,11.97%,,SOFR,6.75%,,,2028-01-18,5534,5482,5423,,5482,,,,,,GSBD,2024-11-07
+"WebPT, Inc.",First Lien,Health Care Technology,12.10%,,SOFR,6.75%,,,2028-01-18,2617,709,695,,709,,,,,,GSBD,2024-11-07
+"WebPT, Inc.",First Lien,Health Care Technology,11.92%,,SOFR,6.75%,,,2028-01-18,2209,2186,2165,,2186,,,,,,GSBD,2024-11-07
+"Easy Mile Fitness, LLC",First Lien,"Hotels, Restaurants & Leisure",11.98%,,SOFR,6.75%,,,2029-09-12,8196,8120,8120,,8120,,,,,,GSBD,2024-11-07
+"Easy Mile Fitness, LLC",First Lien,"Hotels, Restaurants & Leisure",,,SOFR,6.75%,,,2029-09-12,1503,7,7,,7,,,,,,GSBD,2024-11-07
+"Easy Mile Fitness, LLC",First Lien,"Hotels, Restaurants & Leisure",,,SOFR,6.75%,,,2029-09-12,301,3,3,,3,,,,,,GSBD,2024-11-07
+"HS4 AcquisitionCo, Inc. (dba HotSchedules & Fourth)",First Lien,"Hotels, Restaurants & Leisure",10.70%,,SOFR,5.75%,,,2025-07-09,55784,54944,55505,,54944,,,,,,GSBD,2024-11-07
+"HS4 AcquisitionCo, Inc. (dba HotSchedules & Fourth)",First Lien,"Hotels, Restaurants & Leisure",10.70%,,SOFR,5.75%,,,2025-07-09,4688,3241,3258,,3241,,,,,,GSBD,2024-11-07
+"Hollander Intermediate LLC (dba Bedding Acquisition, LLC)",First Lien,Household Products,13.71%,,SOFR,8.75%,,,2026-09-21,38435,37864,23061,,37864,,,,,,GSBD,2024-11-07
+"Volt Bidco, Inc. (dba Power Factors)",First Lien,Independent Power and Renewable Electricity Producers,11.10%,,SOFR,6.50%,,,2027-08-11,35122,34722,33015,,34722,,,,,,GSBD,2024-11-07
+"Volt Bidco, Inc. (dba Power Factors)",First Lien,Independent Power and Renewable Electricity Producers,11.10%,,SOFR,6.50%,,,2027-08-11,6700,6700,6298,,6700,,,,,,GSBD,2024-11-07
+"Volt Bidco, Inc. (dba Power Factors)",First Lien,Independent Power and Renewable Electricity Producers,11.10%,,SOFR,6.50%,,,2027-08-11,6023,2744,2383,,2744,,,,,,GSBD,2024-11-07
+"Volt Bidco, Inc. (dba Power Factors)",First Lien,Independent Power and Renewable Electricity Producers,11.10%,,SOFR,6.50%,,,2027-08-11,4269,3881,3625,,3881,,,,,,GSBD,2024-11-07
+"Volt Bidco, Inc. (dba Power Factors)",First Lien,Independent Power and Renewable Electricity Producers,,,SOFR,6.50%,,,2027-08-11,3685,38,221,,38,,,,,,GSBD,2024-11-07
+"AQ Sunshine, Inc. (dba Relation Insurance)",First Lien,Insurance,10.39%,,SOFR,5.25%,,,2031-07-24,681,674,674,,674,,,,,,GSBD,2024-11-07
+"AQ Sunshine, Inc. (dba Relation Insurance)",First Lien,Insurance,9.85%,,SOFR,5.25%,,,2031-07-24,286,31,31,,31,,,,,,GSBD,2024-11-07
+"AQ Sunshine, Inc. (dba Relation Insurance)",First Lien,Insurance,10.00%,,SOFR,5.25%,,,2030-07-24,53,4,4,,4,,,,,,GSBD,2024-11-07
+"Lithium Technologies, Inc.",First Lien,Interactive Media & Services,,,SOFR,9.00%,,,2025-01-03,102827,97010,43958,,97010,,,,,,GSBD,2024-11-07
+"SPay, Inc. (dba Stack Sports)",First Lien,Interactive Media & Services,14.65%,,SOFR,9.25%,,,2026-06-15,34988,34863,27991,,34863,,,,,,GSBD,2024-11-07
+"SPay, Inc. (dba Stack Sports)",First Lien,Interactive Media & Services,14.60%,,SOFR,9.25%,,,2026-06-15,2535,2484,2028,,2484,,,,,,GSBD,2024-11-07
+"SPay, Inc. (dba Stack Sports)",First Lien,Interactive Media & Services,14.52%,,SOFR,9.25%,,,2026-06-15,1273,1273,1019,,1273,,,,,,GSBD,2024-11-07
+"GPS Phoenix Buyer, Inc. (dba Guidepoint)",First Lien,IT Services,10.85%,,SOFR,6.00%,,,2029-10-02,3386,3327,3352,,3327,,,,,,GSBD,2024-11-07
+"GPS Phoenix Buyer, Inc. (dba Guidepoint)",First Lien,IT Services,,,SOFR,6.00%,,,2029-10-02,882,7,9,,7,,,,,,GSBD,2024-11-07
+"GPS Phoenix Buyer, Inc. (dba Guidepoint)",First Lien,IT Services,,,SOFR,6.00%,,,2029-10-02,706,12,7,,12,,,,,,GSBD,2024-11-07
+Kaseya Inc.,First Lien,IT Services,10.75%,,SOFR,5.50%,,,2029-06-25,18849,18643,18849,,18643,,,,,,GSBD,2024-11-07
+Kaseya Inc.,First Lien,IT Services,10.10%,,SOFR,5.50%,,,2029-06-25,1103,266,278,,266,,,,,,GSBD,2024-11-07
+Kaseya Inc.,First Lien,IT Services,10.78%,,SOFR,5.50%,,,2029-06-25,1033,207,215,,207,,,,,,GSBD,2024-11-07
+Kaseya Inc.,First Lien,IT Services,10.75%,,SOFR,5.50%,,,2029-06-25,68,68,68,,68,,,,,,GSBD,2024-11-07
+"US Signal Company, LLC",First Lien,IT Services,10.62%,,SOFR,5.50%,,,2029-09-04,6842,6774,6774,,6774,,,,,,GSBD,2024-11-07
+"US Signal Company, LLC",First Lien,IT Services,,,SOFR,5.50%,,,2029-09-04,2105,21,21,,21,,,,,,GSBD,2024-11-07
+"US Signal Company, LLC",First Lien,IT Services,,,SOFR,5.50%,,,2029-09-04,1053,10,11,,10,,,,,,GSBD,2024-11-07
+"Wellness AcquisitionCo, Inc. (dba SPINS)",First Lien,IT Services,10.66%,,SOFR,5.50%,,,2027-01-20,21391,21199,21285,,21199,,,,,,GSBD,2024-11-07
+"Wellness AcquisitionCo, Inc. (dba SPINS)",First Lien,IT Services,10.66%,,SOFR,5.50%,,,2027-01-20,3989,1755,1770,,1755,,,,,,GSBD,2024-11-07
+"Wellness AcquisitionCo, Inc. (dba SPINS)",First Lien,IT Services,,,SOFR,5.50%,,,2027-01-20,2600,20,13,,20,,,,,,GSBD,2024-11-07
+Xactly Corporation,First Lien,IT Services,11.41%,,SOFR,6.25%,,,2027-07-30,62025,61341,61715,,61341,,,,,,GSBD,2024-11-07
+Xactly Corporation,First Lien,IT Services,,,SOFR,6.25%,,,2027-07-30,3874,38,,,38,,,,,,GSBD,2024-11-07
+"Circustrix Holdings, LLC (dba SkyZone)",First Lien,Leisure Products,11.35%,,SOFR,6.50%,,,2028-07-18,4152,4060,4110,,4060,,,,,,GSBD,2024-11-07
+"Circustrix Holdings, LLC (dba SkyZone)",First Lien,Leisure Products,11.49%,,SOFR,6.50%,,,2028-07-18,537,419,424,,419,,,,,,GSBD,2024-11-07
+"Circustrix Holdings, LLC (dba SkyZone)",First Lien,Leisure Products,11.35%,,SOFR,6.50%,,,2028-07-18,269,102,105,,102,,,,,,GSBD,2024-11-07
+"Mandrake Bidco, Inc. (dba Miratech)",First Lien,Machinery,9.60%,,SOFR,4.75%,,,2031-08-20,862,854,853,,854,,,,,,GSBD,2024-11-07
+"Mandrake Bidco, Inc. (dba Miratech)",First Lien,Machinery,,,SOFR,4.75%,,,2030-08-20,138,1,1,,1,,,,,,GSBD,2024-11-07
+"Spectrum Safety Solutions Purchaser, LLC (dba Carrier Industrial Fire)",First Lien,Machinery,10.33%,,SOFR,5.00%,,,2031-07-01,557,548,548,,548,,,,,,GSBD,2024-11-07
+"Spectrum Safety Solutions Purchaser, LLC (dba Carrier Industrial Fire)",First Lien,Machinery,,,SOFR,5.00%,,,2031-07-01,148,1,2,,1,,,,,,GSBD,2024-11-07
+"Spectrum Safety Solutions Purchaser, LLC (dba Carrier Industrial Fire)",First Lien,Machinery,10.33%,,SOFR,5.00%,,,2031-07-01,148,21,20,,21,,,,,,GSBD,2024-11-07
+"Spectrum Safety Solutions Purchaser, LLC (dba Carrier Industrial Fire)",First Lien,Machinery,8.70%,,Euribor,5.00%,,,2031-07-01,138,146,151,,146,,,,,,GSBD,2024-11-07
+Recorded Books Inc. (dba RBMedia),First Lien,Media,11.31%,,SOFR,6.25%,,,2030-09-03,9182,8934,9090,,8934,,,,,,GSBD,2024-11-07
+Recorded Books Inc. (dba RBMedia),First Lien,Media,11.00%,,SOFR,5.75%,,,2030-09-03,1078,1056,1067,,1056,,,,,,GSBD,2024-11-07
+Recorded Books Inc. (dba RBMedia),First Lien,Media,11.17%,,SOFR,5.75%,,,2028-08-31,749,463,474,,463,,,,,,GSBD,2024-11-07
+"LS Clinical Services Holdings, Inc (dba CATO)",First Lien,Pharmaceuticals,12.57%,,SOFR,7.25%,,,2027-12-16,16966,16735,14930,,16735,,,,,,GSBD,2024-11-07
+"LS Clinical Services Holdings, Inc (dba CATO)",First Lien,Pharmaceuticals,12.16%,,SOFR,7.25%,,,2027-06-16,2289,1817,1574,,1817,,,,,,GSBD,2024-11-07
+"Amspec Parent, LLC",First Lien,Professional Services,10.10%,,SOFR,5.50%,,,2030-12-05,3505,3425,3488,,3425,,,,,,GSBD,2024-11-07
+"Amspec Parent, LLC",First Lien,Professional Services,,,SOFR,5.50%,,,2030-12-05,508,6,3,,6,,,,,,GSBD,2024-11-07
+"Amspec Parent, LLC",First Lien,Professional Services,,,SOFR,5.50%,,,2029-12-05,476,10,2,,10,,,,,,GSBD,2024-11-07
+"Bullhorn, Inc.",First Lien,Professional Services,9.85%,,SOFR,5.00%,,,2029-10-01,25952,25380,25952,,25380,,,,,,GSBD,2024-11-07
+"Bullhorn, Inc.",First Lien,Professional Services,9.85%,,SOFR,5.00%,,,2029-10-01,4622,4597,4622,,4597,,,,,,GSBD,2024-11-07
+"Bullhorn, Inc.",First Lien,Professional Services,,,SOFR,5.00%,,,2029-10-01,1344,11,,,11,,,,,,GSBD,2024-11-07
+"Bullhorn, Inc.",First Lien,Professional Services,9.85%,,SOFR,5.00%,,,2029-10-01,1201,1190,1201,,1190,,,,,,GSBD,2024-11-07
+"Bullhorn, Inc.",First Lien,Professional Services,9.85%,,SOFR,5.00%,,,2029-10-01,538,526,538,,526,,,,,,GSBD,2024-11-07
+"Bullhorn, Inc.",First Lien,Professional Services,9.85%,,SOFR,5.00%,,,2029-10-01,429,419,429,,419,,,,,,GSBD,2024-11-07
+Chronicle Bidco Inc. (dba Lexitas),First Lien,Professional Services,11.50%,,SOFR,6.25%,,,2029-05-18,45157,43328,44706,,43328,,,,,,GSBD,2024-11-07
+Chronicle Bidco Inc. (dba Lexitas),First Lien,Professional Services,11.50%,,SOFR,6.25%,,,2029-05-18,27993,1190,1183,,1190,,,,,,GSBD,2024-11-07
+Chronicle Bidco Inc. (dba Lexitas),First Lien,Professional Services,,,SOFR,6.25%,,,2029-05-18,4753,128,48,,128,,,,,,GSBD,2024-11-07
+Diligent Corporation,First Lien,Professional Services,10.09%,,SOFR,5.00%,,,2030-08-02,58189,57774,57753,,57774,,,,,,GSBD,2024-11-07
+Diligent Corporation,First Lien,Professional Services,,,SOFR,5.00%,,,2030-08-02,13585,95,102,,95,,,,,,GSBD,2024-11-07
+Diligent Corporation,First Lien,Professional Services,10.09%,,SOFR,5.00%,,,2030-08-02,9975,9904,9900,,9904,,,,,,GSBD,2024-11-07
+Diligent Corporation,First Lien,Professional Services,,,SOFR,5.00%,,,2030-08-02,7450,52,56,,52,,,,,,GSBD,2024-11-07
+"Engage2Excel, Inc.",First Lien,Professional Services,10.75%,,SOFR,6.50%,,,2029-07-01,922,909,908,,909,,,,,,GSBD,2024-11-07
+"Engage2Excel, Inc.",First Lien,Professional Services,10.75%,,SOFR,6.50%,,,2029-07-01,75,37,37,,37,,,,,,GSBD,2024-11-07
+"iCIMS, Inc.",First Lien,Professional Services,10.67%,,SOFR,5.75%,,,2028-08-18,47396,46870,45263,,46870,,,,,,GSBD,2024-11-07
+"iCIMS, Inc.",First Lien,Professional Services,,,SOFR,3.38%,,,2028-08-18,7849,,353,,,,,,,,GSBD,2024-11-07
+"iCIMS, Inc.",First Lien,Professional Services,10.62%,,SOFR,5.75%,,,2028-08-18,4199,1211,1071,,1211,,,,,,GSBD,2024-11-07
+"NFM & J, L.P. (dba the Facilities Group)",First Lien,Professional Services,10.64%,,SOFR,5.75%,,,2027-11-30,17055,16844,16970,,16844,,,,,,GSBD,2024-11-07
+"NFM & J, L.P. (dba the Facilities Group)",First Lien,Professional Services,11.10%,,SOFR,5.75%,,,2027-11-30,16778,16579,16695,,16579,,,,,,GSBD,2024-11-07
+"NFM & J, L.P. (dba the Facilities Group)",First Lien,Professional Services,,,,,,,2027-11-30,2992,32,15,,32,,,,,,GSBD,2024-11-07
+"Pluralsight, Inc.",First Lien,Professional Services,,,SOFR,7.50%,,,2029-08-22,14510,14075,14075,,14075,,,,,,GSBD,2024-11-07
+"Pluralsight, Inc.",First Lien,Professional Services,9.62%,,SOFR,4.50%,,,2029-08-22,9673,9578,9577,,9578,,,,,,GSBD,2024-11-07
+"Pluralsight, Inc.",First Lien,Professional Services,,,SOFR,4.50%,,,2029-08-22,6046,,60,,,,,,,,GSBD,2024-11-07
+"Pluralsight, Inc.",First Lien,Professional Services,9.62%,,SOFR,4.50%,,,2029-08-22,4837,4837,4788,,4837,,,,,,GSBD,2024-11-07
+"Pluralsight, Inc.",First Lien,Professional Services,,,SOFR,4.50%,,,2029-08-22,2418,,24,,,,,,,,GSBD,2024-11-07
+Westwood Professional Services Inc.,First Lien,Professional Services,9.57%,,SOFR,4.75%,,,2031-09-29,9858,9760,9760,,9760,,,,,,GSBD,2024-11-07
+Westwood Professional Services Inc.,First Lien,Professional Services,,,SOFR,4.75%,,,2026-09-19,2958,15,15,,15,,,,,,GSBD,2024-11-07
+Westwood Professional Services Inc.,First Lien,Professional Services,,,SOFR,4.75%,,,2031-09-19,1479,15,15,,15,,,,,,GSBD,2024-11-07
+HowlCO LLC (dba Lone Wolf),First Lien,Real Estate Mgmt. & Development,11.97%,,SOFR,6.50%,,,2027-10-22,35812,35549,33664,,35549,,,,,,GSBD,2024-11-07
+HowlCO LLC (dba Lone Wolf),First Lien,Real Estate Mgmt. & Development,11.94%,,SOFR,6.50%,,,2027-10-22,11588,11532,10892,,11532,,,,,,GSBD,2024-11-07
+HowlCO LLC (dba Lone Wolf),First Lien,Real Estate Mgmt. & Development,11.97%,,SOFR,6.50%,,,2027-10-22,10985,10934,10326,,10934,,,,,,GSBD,2024-11-07
+MRI Software LLC,First Lien,Real Estate Mgmt. & Development,9.35%,,SOFR,4.75%,,,2027-02-10,6148,6127,6025,,6127,,,,,,GSBD,2024-11-07
+MRI Software LLC,First Lien,Real Estate Mgmt. & Development,,,SOFR,5.50%,,,2027-02-10,1612,15,32,,15,,,,,,GSBD,2024-11-07
+"Zarya Intermediate, LLC (dba iOFFICE)",First Lien,Real Estate Mgmt. & Development,11.56%,,SOFR,6.50%,,,2027-07-01,76283,76283,75520,,76283,,,,,,GSBD,2024-11-07
+"Zarya Intermediate, LLC (dba iOFFICE)",First Lien,Real Estate Mgmt. & Development,,,SOFR,6.50%,,,2027-07-01,7987,,80,,,,,,,,GSBD,2024-11-07
+"Abacus Data Holdings, Inc. (dba Clutch Intermediate Holdings)",First Lien,Software,11.17%,,SOFR,6.25%,,,2027-03-10,7956,7862,7658,,7862,,,,,,GSBD,2024-11-07
+"Abacus Data Holdings, Inc. (dba Clutch Intermediate Holdings)",First Lien,Software,,,SOFR,6.25%,,,2027-03-10,1220,13,46,,13,,,,,,GSBD,2024-11-07
+"Acquia, Inc.",First Lien,Software,12.46%,,SOFR,7.00%,,,2025-10-31,42164,41610,41637,,41610,,,,,,GSBD,2024-11-07
+"Acquia, Inc.",First Lien,Software,12.46%,,SOFR,7.00%,,,2025-10-31,10554,10423,10422,,10423,,,,,,GSBD,2024-11-07
+"Acquia, Inc.",First Lien,Software,12.47%,,SOFR,7.00%,,,2025-10-31,3268,1284,1266,,1284,,,,,,GSBD,2024-11-07
+"AI Titan Parent, Inc. (dba Prometheus)",First Lien,Software,9.81%,,SOFR,4.75%,,,2031-08-29,7167,7096,7095,,7096,,,,,,GSBD,2024-11-07
+"AI Titan Parent, Inc. (dba Prometheus)",First Lien,Software,,,SOFR,4.75%,,,2031-08-29,1433,7,7,,7,,,,,,GSBD,2024-11-07
+"AI Titan Parent, Inc. (dba Prometheus)",First Lien,Software,,,SOFR,4.75%,,,2031-08-29,896,9,9,,9,,,,,,GSBD,2024-11-07
+"AQ Helios Buyer, Inc. (dba SurePoint)",First Lien,Software,12.37%,,SOFR,7.00%,,,2026-12-31,39210,38869,37642,,38869,,,,,,GSBD,2024-11-07
+"AQ Helios Buyer, Inc. (dba SurePoint)",First Lien,Software,13.37%,,SOFR,8.00%,,,2026-12-31,13403,2179,1911,,2179,,,,,,GSBD,2024-11-07
+"AQ Helios Buyer, Inc. (dba SurePoint)",First Lien,Software,13.37%,,SOFR,8.00%,,,2026-12-31,12500,12500,12250,,12500,,,,,,GSBD,2024-11-07
+"AQ Helios Buyer, Inc. (dba SurePoint)",First Lien,Software,13.37%,,SOFR,8.00%,,,2026-12-31,6600,6600,6468,,6600,,,,,,GSBD,2024-11-07
+"AQ Helios Buyer, Inc. (dba SurePoint)",First Lien,Software,12.35%,,SOFR,7.00%,,,2026-12-31,4570,2707,2559,,2707,,,,,,GSBD,2024-11-07
+"AQ Helios Buyer, Inc. (dba SurePoint)",First Lien,Software,13.37%,,SOFR,8.00%,,,2026-12-31,2339,2339,2292,,2339,,,,,,GSBD,2024-11-07
+"Arrow Buyer, Inc. (dba Archer Technologies)",First Lien,Software,10.35%,,SOFR,5.75%,,,2030-07-01,2920,2856,2905,,2856,,,,,,GSBD,2024-11-07
+"Arrow Buyer, Inc. (dba Archer Technologies)",First Lien,Software,,,SOFR,5.75%,,,2030-07-01,487,7,2,,7,,,,,,GSBD,2024-11-07
+"Arrow Buyer, Inc. (dba Archer Technologies)",First Lien,Software,10.35%,,SOFR,5.75%,,,2030-07-01,191,189,190,,189,,,,,,GSBD,2024-11-07
+"Artifact Bidco, Inc. (dba Avetta)",First Lien,Software,9.10%,,SOFR,4.50%,,,2031-07-28,10567,10463,10461,,10463,,,,,,GSBD,2024-11-07
+"Artifact Bidco, Inc. (dba Avetta)",First Lien,Software,,,SOFR,4.50%,,,2031-07-28,2586,13,13,,13,,,,,,GSBD,2024-11-07
+"Artifact Bidco, Inc. (dba Avetta)",First Lien,Software,,,SOFR,4.50%,,,2030-07-26,1256,12,13,,12,,,,,,GSBD,2024-11-07
+"Artifact Bidco, Inc. (dba Avetta)",First Lien,Software,,,SOFR,4.50%,,,2030-07-26,591,6,6,,6,,,,,,GSBD,2024-11-07
+"Aurora Acquireco, Inc. (dba AuditBoard)",First Lien,Software,9.35%,,SOFR,4.75%,,,2031-07-12,600,594,594,,594,,,,,,GSBD,2024-11-07
+"Aurora Acquireco, Inc. (dba AuditBoard)",First Lien,Software,,,SOFR,4.75%,,,2031-07-12,286,1,1,,1,,,,,,GSBD,2024-11-07
+"Aurora Acquireco, Inc. (dba AuditBoard)",First Lien,Software,,,SOFR,4.75%,,,2031-07-12,114,1,1,,1,,,,,,GSBD,2024-11-07
+CivicPlus LLC,First Lien,Software,10.96%,,SOFR,5.75%,,,2027-08-24,6571,6493,6489,,6493,,,,,,GSBD,2024-11-07
+CivicPlus LLC,First Lien,Software,10.96%,,SOFR,5.75%,,,2027-08-24,6516,6440,6435,,6440,,,,,,GSBD,2024-11-07
+CivicPlus LLC,First Lien,Software,10.96%,,SOFR,5.75%,,,2027-08-24,3087,3049,3049,,3049,,,,,,GSBD,2024-11-07
+CivicPlus LLC,First Lien,Software,,,SOFR,5.75%,,,2027-08-24,1217,14,15,,14,,,,,,GSBD,2024-11-07
+"CloudBees, Inc.",First Lien,Software,11.96%,,SOFR,7.00%,,,2026-11-24,30043,29161,30043,,29161,,,,,,GSBD,2024-11-07
+"CloudBees, Inc.",First Lien,Software,11.96%,,SOFR,7.00%,,,2026-11-24,12838,12441,12838,,12441,,,,,,GSBD,2024-11-07
+"Crewline Buyer, Inc. (dba New Relic)",First Lien,Software,11.35%,,SOFR,6.75%,,,2030-11-08,3482,3402,3395,,3402,,,,,,GSBD,2024-11-07
+"Crewline Buyer, Inc. (dba New Relic)",First Lien,Software,,,SOFR,6.75%,,,2030-11-08,363,8,9,,8,,,,,,GSBD,2024-11-07
+"Gainsight, Inc.",First Lien,Software,12.15%,,SOFR,6.75%,,,2027-07-30,55014,54623,54739,,54623,,,,,,GSBD,2024-11-07
+"Gainsight, Inc.",First Lien,Software,12.15%,,SOFR,6.75%,,,2027-07-30,5532,2926,2944,,2926,,,,,,GSBD,2024-11-07
+"GovDelivery Holdings, LLC (dba Granicus, Inc.)",First Lien,Software,11.00%,,SOFR,5.75%,,,2031-01-17,11723,11616,11606,,11616,,,,,,GSBD,2024-11-07
+"GovDelivery Holdings, LLC (dba Granicus, Inc.)",First Lien,Software,10.10%,,SOFR,5.25%,,,2031-01-17,2461,2441,2436,,2441,,,,,,GSBD,2024-11-07
+"GovDelivery Holdings, LLC (dba Granicus, Inc.)",First Lien,Software,,,SOFR,5.25%,,,2031-01-17,1645,15,16,,15,,,,,,GSBD,2024-11-07
+"GovDelivery Holdings, LLC (dba Granicus, Inc.)",First Lien,Software,,,SOFR,5.75%,,,2031-01-17,279,3,3,,3,,,,,,GSBD,2024-11-07
+"Governmentjobs.com, Inc. (dba NeoGov)",First Lien,Software,9.60%,,SOFR,5.00%,,,2028-12-01,68530,68209,67844,,68209,,,,,,GSBD,2024-11-07
+"Governmentjobs.com, Inc. (dba NeoGov)",First Lien,Software,,,SOFR,5.00%,,,2028-12-01,12952,10,130,,10,,,,,,GSBD,2024-11-07
+"Governmentjobs.com, Inc. (dba NeoGov)",First Lien,Software,,,SOFR,5.00%,,,2027-12-02,8322,40,83,,40,,,,,,GSBD,2024-11-07
+"NAVEX TopCo, Inc.",First Lien,Software,10.60%,,SOFR,5.50%,,,2030-11-08,9144,8978,9121,,8978,,,,,,GSBD,2024-11-07
+"NAVEX TopCo, Inc.",First Lien,Software,,,SOFR,5.50%,,,2028-11-09,810,13,2,,13,,,,,,GSBD,2024-11-07
+"Northstar Acquisition HoldCo, LLC (dba n2y)",First Lien,Software,9.75%,,,,,,2029-05-03,47006,4351,4432,,4351,,,,,,GSBD,2024-11-07
+"Northstar Acquisition HoldCo, LLC (dba n2y)",First Lien,Software,9.60%,,SOFR,5.00%,,,2029-05-03,19022,18934,18927,,18934,,,,,,GSBD,2024-11-07
+"Northstar Acquisition HoldCo, LLC (dba n2y)",First Lien,Software,,,SOFR,5.00%,,,2029-05-03,4444,10,22,,10,,,,,,GSBD,2024-11-07
+"Northstar Acquisition HoldCo, LLC (dba n2y)",First Lien,Software,9.95%,,,,,,2029-05-03,4201,617,615,,617,,,,,,GSBD,2024-11-07
+"Northstar Acquisition HoldCo, LLC (dba n2y)",First Lien,Software,9.95%,,,,,,2029-05-03,2145,2689,2853,,2689,,,,,,GSBD,2024-11-07
+"Onyx CenterSource, Inc.",First Lien,Software,11.98%,,SOFR,6.50%,,,2028-12-15,13849,13575,13849,,13575,,,,,,GSBD,2024-11-07
+"Onyx CenterSource, Inc.",First Lien,Software,11.98%,,SOFR,6.50%,,,2028-12-15,1047,329,349,,329,,,,,,GSBD,2024-11-07
+"Pioneer Buyer I, LLC",First Lien,Software,11.10%,,SOFR,6.50%,,,2028-11-01,30524,30224,30448,,30224,,,,,,GSBD,2024-11-07
+"Pioneer Buyer I, LLC",First Lien,Software,,,SOFR,6.50%,,,2027-11-01,4300,45,11,,45,,,,,,GSBD,2024-11-07
+"Rocky Debt Merger Sub, LLC (dba NContracts)",First Lien,Software,10.10%,,SOFR,5.25%,,,2031-09-01,35704,35351,35346,,35351,,,,,,GSBD,2024-11-07
+"Rocky Debt Merger Sub, LLC (dba NContracts)",First Lien,Software,,,SOFR,5.25%,,,2031-09-01,10274,51,51,,51,,,,,,GSBD,2024-11-07
+"Rocky Debt Merger Sub, LLC (dba NContracts)",First Lien,Software,,,SOFR,5.25%,,,2031-09-01,4110,41,41,,41,,,,,,GSBD,2024-11-07
+"Rubrik, Inc.",First Lien,Software,12.28%,,SOFR,7.00%,,,2028-08-17,34387,34104,34387,,34104,,,,,,GSBD,2024-11-07
+"Rubrik, Inc.",First Lien,Software,12.28%,,SOFR,7.00%,,,2028-08-17,4806,3907,3945,,3907,,,,,,GSBD,2024-11-07
+"Runway Bidco, LLC (dba Redwood Software)",First Lien,Software,,,SOFR,5.00%,,,2031-10-01,14571,,,,,,,,,,GSBD,2024-11-07
+"Runway Bidco, LLC (dba Redwood Software)",First Lien,Software,,,SOFR,5.00%,,,2031-10-01,3620,,,,,,,,,,GSBD,2024-11-07
+"Runway Bidco, LLC (dba Redwood Software)",First Lien,Software,,,SOFR,5.00%,,,2029-10-01,1809,,,,,,,,,,GSBD,2024-11-07
+"Singlewire Software, LLC",First Lien,Software,9.85%,,SOFR,5.25%,,,2029-05-10,763,744,756,,744,,,,,,GSBD,2024-11-07
+"Singlewire Software, LLC",First Lien,Software,,,SOFR,5.25%,,,2029-05-10,129,3,1,,3,,,,,,GSBD,2024-11-07
+"Smarsh, Inc.",First Lien,Software,10.35%,,SOFR,5.75%,,,2029-02-16,26667,26479,26533,,26479,,,,,,GSBD,2024-11-07
+"Smarsh, Inc.",First Lien,Software,10.35%,,SOFR,5.75%,,,2029-02-16,6667,3299,3300,,3299,,,,,,GSBD,2024-11-07
+"Smarsh, Inc.",First Lien,Software,,,SOFR,5.75%,,,2029-02-16,1667,11,8,,11,,,,,,GSBD,2024-11-07
+"Sundance Group Holdings, Inc. (dba NetDocuments)",First Lien,Software,9.32%,,SOFR,4.75%,,,2029-07-02,53356,52730,52822,,52730,,,,,,GSBD,2024-11-07
+"Sundance Group Holdings, Inc. (dba NetDocuments)",First Lien,Software,9.32%,,SOFR,4.75%,,,2029-07-02,7398,3327,3292,,3327,,,,,,GSBD,2024-11-07
+"WorkForce Software, LLC",First Lien,Software,12.46%,,SOFR,7.25%,,,2025-07-31,23752,23529,23514,,23529,,,,,,GSBD,2024-11-07
+"WorkForce Software, LLC",First Lien,Software,12.46%,,SOFR,7.25%,,,2025-07-31,3350,3334,3316,,3334,,,,,,GSBD,2024-11-07
+"WorkForce Software, LLC",First Lien,Software,12.46%,,SOFR,7.25%,,,2025-07-31,2462,2449,2438,,2449,,,,,,GSBD,2024-11-07
+"WorkForce Software, LLC",First Lien,Software,,,SOFR,7.25%,,,2025-07-31,1894,7,14,,7,,,,,,GSBD,2024-11-07
+"Zarya Intermediate, LLC (dba iOFFICE)",First Lien,Software,11.56%,,SOFR,6.50%,,,2027-07-01,6216,6110,6154,,6110,,,,,,GSBD,2024-11-07
+"Charger Debt Merger Sub, LLC (dba Classic Collision)",First Lien,Specialty Retail,9.60%,,SOFR,5.00%,,,2031-06-02,17117,16951,16945,,16951,,,,,,GSBD,2024-11-07
+"Charger Debt Merger Sub, LLC (dba Classic Collision)",First Lien,Specialty Retail,9.66%,,SOFR,5.00%,,,2031-06-02,9336,2646,2611,,2646,,,,,,GSBD,2024-11-07
+"Charger Debt Merger Sub, LLC (dba Classic Collision)",First Lien,Specialty Retail,,,SOFR,5.00%,,,2030-05-31,2178,21,22,,21,,,,,,GSBD,2024-11-07
+"Ortholite, LLC",First Lien,"Textiles, Apparel & Luxury Goods",10.85%,,SOFR,6.25%,,,2027-09-29,5707,5662,5650,,5662,,,,,,GSBD,2024-11-07
+"Harrington Industrial Plastics, LLC",First Lien,Trading Companies & Distributors,10.60%,,SOFR,5.75%,,,2030-10-07,16473,16103,16308,,16103,,,,,,GSBD,2024-11-07
+"Harrington Industrial Plastics, LLC",First Lien,Trading Companies & Distributors,10.60%,,SOFR,5.75%,,,2030-10-07,13018,4614,4687,,4614,,,,,,GSBD,2024-11-07
+"NCWS Intermediate, Inc. (dba National Carwash Solutions)",First Lien,Trading Companies & Distributors,10.10%,,SOFR,5.50%,,,2029-12-31,25367,25007,24479,,25007,,,,,,GSBD,2024-11-07
+"NCWS Intermediate, Inc. (dba National Carwash Solutions)",First Lien,Trading Companies & Distributors,10.10%,,SOFR,5.50%,,,2029-12-31,2988,197,134,,197,,,,,,GSBD,2024-11-07
+"NCWS Intermediate, Inc. (dba National Carwash Solutions)",First Lien,Trading Companies & Distributors,10.10%,,SOFR,5.50%,,,2029-12-31,1793,185,136,,185,,,,,,GSBD,2024-11-07
+"PT Intermediate Holdings III, LLC (dba Parts Town)",First Lien,Trading Companies & Distributors,9.60%,,SOFR,5.00%,,,2030-04-09,43132,43060,42916,,43060,,,,,,GSBD,2024-11-07
+"PT Intermediate Holdings III, LLC (dba Parts Town)",First Lien,Trading Companies & Distributors,,,SOFR,4.75%,,,2030-04-09,3059,3,15,,3,,,,,,GSBD,2024-11-07
+"United Flow Technologies Intermediate Holdco II, LLC",First Lien,Trading Companies & Distributors,9.85%,,SOFR,5.25%,,,2031-06-23,6000,5912,5940,,5912,,,,,,GSBD,2024-11-07
+"United Flow Technologies Intermediate Holdco II, LLC",First Lien,Trading Companies & Distributors,10.54%,,SOFR,5.25%,,,2031-06-23,3333,9,,,9,,,,,,GSBD,2024-11-07
+"United Flow Technologies Intermediate Holdco II, LLC",First Lien,Trading Companies & Distributors,,,SOFR,5.25%,,,2030-06-21,667,10,7,,10,,,,,,GSBD,2024-11-07
+"Doxim, Inc.",First Lien,Financial Services,11.35%,,SOFR,6.40%,,,2026-06-01,,,,,,,,,,,GSBD,2024-11-07
+"EDB Parent, LLC (dba Enterprise DB)",First Lien,Software,11.81%,,SOFR,6.75%,,,2028-07-07,,,,,,,,,,,GSBD,2024-11-07
+"EIP Consolidated, LLC (dba Everest Infrastructure)",First Lien,Wireless Telecommunication Services,11.10%,,SOFR,6.25%,,,2028-12-07,,,,,,,,,,,GSBD,2024-11-07
+"K2 Towers III, LLC",First Lien,Wireless Telecommunication Services,11.17%,,SOFR,6.55%,,,2028-12-06,,,,,,,,,,,GSBD,2024-11-07
+Skyway Towers Intermediate LLC,First Lien,Wireless Telecommunication Services,11.45%,,SOFR,6.61%,,,2028-12-22,,,,,,,,,,,GSBD,2024-11-07
+Tarpon Towers II LLC,First Lien,Wireless Telecommunication Services,11.68%,,SOFR,6.83%,,,2029-02-01,,,,,,,,,,,GSBD,2024-11-07
+Thor FinanceCo LLC (dba Harmoni Towers),First Lien,Wireless Telecommunication Services,12.19%,,SOFR,7.00%,,,2028-08-24,,,,,,,,,,,GSBD,2024-11-07
+Thor FinanceCo LLC (dba Harmoni Towers),First Lien,Wireless Telecommunication Services,12.01%,,SOFR,7.00%,,,2028-08-24,,,,,,,,,,,GSBD,2024-11-07
+"Towerco IV Holdings, LLC",First Lien,Wireless Telecommunication Services,8.70%,,SOFR,3.75%,,,2028-08-31,,,,,,,,,,,GSBD,2024-11-07
+"MPI Engineered Technologies, LLC",Second Lien,Automobile Components,12.00%,,,,,,2025-07-15,,,,,,,,,,,GSBD,2024-11-07
+MPI Products LLC,Second Lien,Automobile Components,,,,,,,2025-07-15,,,,,,,,,,,GSBD,2024-11-07
+"Wine.com, LLC",Second Lien,Beverages,17.49%,,SOFR,12.00%,,,2027-04-03,,,,,,,,,,,GSBD,2024-11-07
+"Wine.com, LLC",Second Lien,Beverages,17.18%,,SOFR,12.00%,,,2027-04-03,,,,,,,,,,,GSBD,2024-11-07
+"Chase Industries, Inc. (dba Senneca Holdings)",Second Lien,Building Products,,,,,,,2026-05-11,,,,,,,,,,,GSBD,2024-11-07
+"Chase Industries, Inc. (dba Senneca Holdings)",Second Lien,Building Products,,,,,,,2025-11-11,,,,,,,,,,,GSBD,2024-11-07
+Sweep Midco LLC,Second Lien,Commercial Services & Supplies,,,,,,,2036-03-12,,,,,,,,,,,GSBD,2024-11-07
+Sweep Midco LLC,Second Lien,Commercial Services & Supplies,,,,,,,2034-03-12,,,,,,,,,,,GSBD,2024-11-07
+"Animal Supply Intermediate, LLC",Second Lien,Distributors,,,,,,,2025-11-14,,,,,,,,,,,GSBD,2024-11-07
+"Wine.com, Inc.",Unsecured Debt,Beverages,,,SOFR,15.00%,,,2027-04-03,,,,,,,,,,,GSBD,2024-11-07
+"Bayside Opco, LLC (dba Pro-PT)",Unsecured Debt,Health Care Providers & Services,,,SOFR,10.00%,,,2026-05-31,,,,,,,,,,,GSBD,2024-11-07
+"mPulse Mobile, Inc. (dba Zipari Inc.)",Unsecured Debt,Health Care Technology,,,,,,,2031-09-05,,,,,,,,,,,GSBD,2024-11-07
+CivicPlus LLC,Unsecured Debt,Software,16.35%,,SOFR,11.75%,,,2034-06-09,,,,,,,,,,,GSBD,2024-11-07

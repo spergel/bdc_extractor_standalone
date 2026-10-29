@@ -3,56 +3,30 @@
   "summary": {
     "ticker": "ARCC",
     "scale": 1000,
-    "median_ratio": 1.018,
-    "periods": 16,
-    "with_reported": 16,
-    "match": 16,
+    "median_ratio": 1.019,
+    "periods": 12,
+    "with_reported": 12,
+    "match": 12,
     "near": 0,
     "mismatch": 0,
     "match_pct": 100.0,
     "trust": "good",
     "latest": {
-      "filing_date": "2026-07-29",
-      "period_end": "2026-06-30",
-      "holdings_fv": 29349300.0,
-      "row_count": 1427,
-      "reported_fv": 29349300000.0,
-      "reported_fv_k": 29349300.0,
-      "delta_pct": 0.0,
+      "filing_date": "2026-02-04",
+      "period_end": "2025-12-31",
+      "holdings_fv": 29425600.0,
+      "row_count": 1362,
+      "reported_fv": 29484800000.0,
+      "reported_fv_k": 29484800.0,
+      "delta_pct": -0.2,
       "status": "match",
       "quality_flags": [],
-      "filing_url": "https://www.sec.gov/Archives/edgar/data/1287750/000162828026050307/arcc-20260630.htm",
-      "form": "10-Q"
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1287750/000128775026000006/arcc-20251231.htm",
+      "form": "10-K"
     },
     "issue_periods": []
   },
   "periods": [
-    {
-      "filing_date": "2022-10-25",
-      "period_end": "2022-09-30",
-      "holdings_fv": 21773000.0,
-      "row_count": 990,
-      "reported_fv": 21338500000.0,
-      "reported_fv_k": 21338500.0,
-      "delta_pct": 2.04,
-      "status": "match",
-      "quality_flags": [],
-      "filing_url": "https://www.sec.gov/Archives/edgar/data/1287750/000128775022000052/arcc-20220930.htm",
-      "form": "10-Q"
-    },
-    {
-      "filing_date": "2023-02-07",
-      "period_end": "2022-12-31",
-      "holdings_fv": 21762200.0,
-      "row_count": 992,
-      "reported_fv": 21779800000.0,
-      "reported_fv_k": 21779800.0,
-      "delta_pct": -0.08,
-      "status": "match",
-      "quality_flags": [],
-      "filing_url": "https://www.sec.gov/Archives/edgar/data/1287750/000128775023000010/arcc-20221231.htm",
-      "form": "10-K"
-    },
     {
       "filing_date": "2023-04-25",
       "period_end": "2023-03-31",
@@ -208,32 +182,6 @@
       "quality_flags": [],
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1287750/000128775026000006/arcc-20251231.htm",
       "form": "10-K"
-    },
-    {
-      "filing_date": "2026-04-28",
-      "period_end": "2026-03-31",
-      "holdings_fv": 29999400.0,
-      "row_count": 1426,
-      "reported_fv": 29499300000.0,
-      "reported_fv_k": 29499300.0,
-      "delta_pct": 1.7,
-      "status": "match",
-      "quality_flags": [],
-      "filing_url": "https://www.sec.gov/Archives/edgar/data/1287750/000162828026027688/arcc-20260331.htm",
-      "form": "10-Q"
-    },
-    {
-      "filing_date": "2026-07-29",
-      "period_end": "2026-06-30",
-      "holdings_fv": 29349300.0,
-      "row_count": 1427,
-      "reported_fv": 29349300000.0,
-      "reported_fv_k": 29349300.0,
-      "delta_pct": 0.0,
-      "status": "match",
-      "quality_flags": [],
-      "filing_url": "https://www.sec.gov/Archives/edgar/data/1287750/000162828026050307/arcc-20260630.htm",
-      "form": "10-Q"
     }
   ]
 }

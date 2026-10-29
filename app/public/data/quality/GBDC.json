@@ -4,7 +4,7 @@
     "ticker": "GBDC",
     "scale": 1000,
     "median_ratio": 1.0,
-    "periods": 41,
+    "periods": 39,
     "with_reported": 18,
     "match": 16,
     "near": 2,
@@ -47,8 +47,8 @@
     {
       "filing_date": "2016-11-16",
       "period_end": "2016-09-30",
-      "holdings_fv": 2293962.0,
-      "row_count": 638,
+      "holdings_fv": 2302673.0,
+      "row_count": 639,
       "reported_fv": null,
       "reported_fv_k": null,
       "delta_pct": null,
@@ -60,8 +60,8 @@
     {
       "filing_date": "2017-02-08",
       "period_end": "2016-12-31",
-      "holdings_fv": 2890519.0,
-      "row_count": 717,
+      "holdings_fv": 2904464.0,
+      "row_count": 729,
       "reported_fv": null,
       "reported_fv_k": null,
       "delta_pct": null,
@@ -73,14 +73,14 @@
     {
       "filing_date": "2017-05-09",
       "period_end": "2017-03-31",
-      "holdings_fv": 3725592.0,
-      "row_count": 756,
+      "holdings_fv": 3725594.0,
+      "row_count": 759,
       "reported_fv": null,
       "reported_fv_k": null,
       "delta_pct": null,
       "status": "no_reported",
       "quality_flags": [
-        "Fair value is 1.44x the trailing median (possible annual/unit issue)"
+        "Fair value is 1.43x the trailing median (possible annual/unit issue)"
       ],
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676517000042/gbdcfy2017q2.htm",
       "form": "10-Q"
@@ -89,7 +89,7 @@
       "filing_date": "2017-08-07",
       "period_end": "2017-06-30",
       "holdings_fv": 3873606.0,
-      "row_count": 784,
+      "row_count": 787,
       "reported_fv": null,
       "reported_fv_k": null,
       "delta_pct": null,
@@ -116,8 +116,8 @@
     {
       "filing_date": "2018-02-07",
       "period_end": "2017-12-31",
-      "holdings_fv": 2976539.0,
-      "row_count": 767,
+      "holdings_fv": 3008592.0,
+      "row_count": 782,
       "reported_fv": null,
       "reported_fv_k": null,
       "delta_pct": null,
@@ -129,8 +129,8 @@
     {
       "filing_date": "2018-05-07",
       "period_end": "2018-03-31",
-      "holdings_fv": 3354871.0,
-      "row_count": 791,
+      "holdings_fv": 3381368.0,
+      "row_count": 800,
       "reported_fv": null,
       "reported_fv_k": null,
       "delta_pct": null,
@@ -142,8 +142,8 @@
     {
       "filing_date": "2018-08-08",
       "period_end": "2018-06-30",
-      "holdings_fv": 3309213.0,
-      "row_count": 846,
+      "holdings_fv": 3309265.0,
+      "row_count": 849,
       "reported_fv": null,
       "reported_fv_k": null,
       "delta_pct": null,
@@ -237,32 +237,6 @@
       "form": "10-Q"
     },
     {
-      "filing_date": "2020-05-11",
-      "period_end": "2020-03-31",
-      "holdings_fv": 0.0,
-      "row_count": 699,
-      "reported_fv": null,
-      "reported_fv_k": null,
-      "delta_pct": null,
-      "status": "no_reported",
-      "quality_flags": [],
-      "filing_url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676520000074/gbdcfy2020q210-qtransi.htm",
-      "form": "10-Q"
-    },
-    {
-      "filing_date": "2020-08-07",
-      "period_end": "2020-06-30",
-      "holdings_fv": 0.0,
-      "row_count": 677,
-      "reported_fv": null,
-      "reported_fv_k": null,
-      "delta_pct": null,
-      "status": "no_reported",
-      "quality_flags": [],
-      "filing_url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676520000102/gbdcfy2020q310-q.htm",
-      "form": "10-Q"
-    },
-    {
       "filing_date": "2020-11-30",
       "period_end": "2020-09-30",
       "holdings_fv": 4237508.0,
@@ -271,7 +245,9 @@
       "reported_fv_k": null,
       "delta_pct": null,
       "status": "no_reported",
-      "quality_flags": [],
+      "quality_flags": [
+        "Fair value is 1.36x the trailing median (possible annual/unit issue)"
+      ],
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676520000195/gbdcfy202010-k.htm",
       "form": "10-K"
     },
@@ -291,8 +267,8 @@
     {
       "filing_date": "2021-05-10",
       "period_end": "2021-03-31",
-      "holdings_fv": 4394412.0,
-      "row_count": 1024,
+      "holdings_fv": 4395116.0,
+      "row_count": 1026,
       "reported_fv": null,
       "reported_fv_k": null,
       "delta_pct": null,

@@ -1,226 +1,295 @@
-company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
-Term Loan,First Lien,Financial Services,11.2%,,,,0.75%,,2029-08-29,7968,7804,,,7804,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Financial Services,11.1%,,,,0.75%,,2028-08-31,383,352,,,352,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Financial Services,11.4%,,,,0.75%,,2029-08-29,698,690,,,690,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Financial Services,1.0%,,,,0.75%,,2029-08-29,,9,,,9,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Business Services,11.2%,,,,1.00%,,2027-03-26,2954,2754,,,2754,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Insurance,8.0%,,,,,,2027-04-14,13684,13684,,,13684,,,,,,BCIC,2023-05-10
-First Lien Term Loan A,First Lien,Insurance,9.8%,,,,,,2025-08-15,2325,2088,,,2088,,,,,,BCIC,2023-05-10
-Revolving Loan,First Lien,Food & Beverage,11.1%,,,,1.00%,,2026-10-06,1000,988,,,988,,,,,,BCIC,2023-05-10
-Term Loan Second Lien,First Lien,Consumer & Retail,14.5%,,,,,,2028-03-01,5308,5196,,,5196,,,,,,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Consumer & Retail,10.6%,,,,1.00%,,2025-01-01,600,596,,,596,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-First Lien Term Loan A,First Lien,Software & Technology,10.1%,,,,1.00%,,2024-06-22,3475,3319,,,3319,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Software & Technology,10.1%,,,,1.00%,,2023-06-22,144,144,,,144,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Media & Entertainment,14.7%,,,,1.00%,,2026-11-15,11867,11659,,,11659,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Media & Entertainment,14.7%,,,,1.00%,,2026-11-15,500,490,,,490,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Revolver,First Lien,Media & Entertainment,16.5%,,,,1.00%,,2026-11-15,500,490,,,490,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Revolver,First Lien,Media & Entertainment,14.7%,,,,1.00%,,2023-06-30,500,500,,,500,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Software & Technology,10.3%,,,,1.00%,,2027-03-09,5939,5931,,,5931,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Insurance,9.2%,,,,,,2027-07-01,732,732,,,732,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Consumer & Retail,10.6%,,,,1.00%,,2027-10-21,500,490,,,490,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Consumer & Retail,0.5%,,,,1.00%,,2026-10-21,,23,,,23,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Unitranche,First Lien,Healthcare,10.6%,,,,1.00%,,2026-12-22,2129,2103,,,2103,,,,,,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Healthcare,10.6%,,,,1.00%,,2026-12-22,758,754,,,754,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Seventh Amendment Acquisition Loan,First Lien,Chemicals & Materials,11.3%,,,,1.00%,,2023-06-18,2794,2789,,,2789,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Chemicals & Materials,10.8%,,,,1.00%,,2023-06-18,1079,1077,,,1077,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Chemicals & Materials,10.8%,,,,1.00%,,2023-06-18,6541,6532,,,6532,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Consumer & Retail,10.7%,,,,1.00%,,2027-09-27,3832,3803,,,3803,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Healthcare,11.7%,,,,1.00%,,2025-11-08,6887,6834,,,6834,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Industrials,10.4%,,,,1.00%,,2024-10-09,739,711,,,711,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Industrials,7.3%,,,,,,2025-10-09,9973,9066,,,9066,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Industrials,0.8%,,,,1.00%,,2024-10-09,,2,,,2,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Insurance,10.4%,,,,1.00%,,2023-07-16,225,225,,,225,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Insurance,10.4%,,,,1.00%,,2024-01-26,6639,6227,,,6227,,,,,,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Insurance,10.4%,,,,1.00%,,2023-07-16,223,223,,,223,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Industrials,13.0%,,,,,,2022-12-31,850,850,,,850,,,,,,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Healthcare,10.9%,,,,1.00%,,2026-10-30,629,597,,,597,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Healthcare,10.8%,,,,1.00%,,2026-10-30,8144,8042,,,8042,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Healthcare,10.9%,,,,1.00%,,2026-10-30,1520,1485,,,1485,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Healthcare,1.0%,,,,0.75%,,2028-12-26,,11,,,11,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Revolver,First Lien,Healthcare,0.5%,,,,0.75%,,2028-12-23,,7,,,7,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Industrials,9.8%,,,,0.50%,,2029-02-10,1489,1470,,,1470,,,,,,BCIC,2023-05-10
-Initial Term Loan,First Lien,Software & Technology,9.1%,,,,,,2025-07-30,812,812,,,812,,,,,,BCIC,2023-05-10
-2020 Term Loan,First Lien,Software & Technology,9.3%,,,,,,2025-07-30,970,968,,,968,,,,,,BCIC,2023-05-10
-First Lein Term Loan,First Lien,Food & Beverage,9.8%,,,,0.75%,,2028-10-18,1995,1888,,,1888,,,,,,BCIC,2023-05-10
-First Out Term Loan,First Lien,Consumer & Retail,9.6%,,,,0.75%,,2026-02-25,2900,2886,,,2886,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Consumer & Retail,12.3%,,,,1.25%,,2024-05-15,34,27,,,27,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-First Lein Term Loan,First Lien,Consumer & Retail,13.8%,,,,1.25%,,2024-05-15,6934,6212,,,6212,,,,,,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Telecommunications,13.0%,,,,1.50%,,2027-11-14,2000,1982,,,1982,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Telecommunications,13.2%,,,,1.50%,,2027-11-14,3053,3027,,,3027,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Business Services,10.5%,,,,1.00%,,2027-07-02,14775,14565,,,14565,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Business Services,10.5%,,,,1.00%,,2027-07-02,6201,6087,,,6087,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Insurance,16.0%,,,,,,2024-04-01,1976,1976,,,1976,,,,,,BCIC,2023-05-10
-First Lien Term Loan A,First Lien,Software & Technology,12.3%,,,,1.00%,,2023-12-21,7525,6857,,,6857,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Software & Technology,12.3%,,,,1.00%,,2023-12-21,773,704,,,704,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-First Lien Term Loan B,First Lien,Software & Technology,10.8%,,,,1.00%,,2025-07-21,2634,2462,,,2462,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Telecommunications,11.0%,,,,1.00%,,2026-12-15,2157,2128,,,2128,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Business Services,10.9%,,,,1.00%,,2027-11-23,12091,11951,,,11951,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Business Services,10.9%,,,,1.00%,,2027-11-23,872,859,,,859,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-First Lien Term Loan A,First Lien,Healthcare,10.8%,,,,,,2024-10-01,2641,2458,,,2458,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Healthcare,10.4%,,,,0.75%,,2027-07-21,4925,4857,,,4857,,,,,,BCIC,2023-05-10
-First Lien Term Loan B,First Lien,Industrials,11.0%,,,,1.00%,,2023-04-11,6972,6961,,,6961,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Industrials,11.0%,,,,1.00%,,2023-04-11,343,343,,,343,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-First Lien Term Loan A,First Lien,Automotive,13.3%,,,,1.00%,,2024-09-28,186,186,,,186,,,,,,BCIC,2023-05-10
-First Lien Term Loan B,First Lien,Automotive,13.5%,,,,1.00%,,2024-09-28,184,184,,,184,,,,,,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Business Services,11.0%,,,,1.00%,,2026-06-09,2879,2881,,,2881,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Business Services,12.0%,,,,1.00%,,2023-12-29,403,403,,,403,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Business Services,12.0%,,,,1.00%,,2023-12-29,703,702,,,702,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Business Services,11.9%,,,,1.00%,,2023-12-29,609,602,,,602,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Business Services,12.0%,,,,1.00%,,2023-12-29,746,745,,,745,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Business Services,12.0%,,,,1.00%,,2023-12-29,451,447,,,447,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Revolver,First Lien,Software & Technology,9.9%,,,,0.75%,,2029-06-09,287,277,,,277,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Software & Technology,0.5%,,,,0.75%,,2029-06-09,,2,,,2,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Chemicals & Materials,8.0%,,,,,,2023-06-30,14624,14624,,,14624,,,,,,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Insurance,9.4%,,,,1.00%,,2024-10-21,728,689,,,689,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Incremental First Lien Term Loan,First Lien,Insurance,9.4%,,,,1.00%,,2024-10-21,1505,1425,,,1425,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Software & Technology,10.0%,,,,,,2026-04-04,392,389,,,389,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Software & Technology,10.0%,,,,,,2026-04-04,56,56,,,56,,,,,,BCIC,2023-05-10
-Senior Term Loan A,First Lien,Software & Technology,5.0%,,,,,,2026-04-04,1643,1432,,,1432,,,,,,BCIC,2023-05-10
-Senior Term Loan B,First Lien,Software & Technology,7.0%,,,,,,2026-04-04,1511,1328,,,1328,,,,,,BCIC,2023-05-10
-Super Senior Term Loan B,First Lien,Software & Technology,9.0%,,,,,,2026-04-04,1178,1169,,,1169,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Healthcare,10.8%,,,,1.00%,,2025-01-02,2037,2026,,,2026,,,,,,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Healthcare,10.8%,,,,1.00%,,2025-01-02,552,533,,,533,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Initial Term Loan,First Lien,Containers & Packaging,9.9%,,,,1.00%,,2024-08-03,2750,2747,,,2747,,,,,,BCIC,2023-05-10
-Term B Loan,First Lien,Healthcare,9.1%,,,,,,2025-07-09,7000,6411,,,6411,,,,,,BCIC,2023-05-10
-Initial Term Loan,First Lien,Aerospace & Defense,10.8%,,,,1.00%,,2025-03-29,6148,6116,,,6116,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Telecommunications,9.7%,,,,1.00%,,2024-11-01,987,954,,,954,,,,,,BCIC,2023-05-10
-Senior Notes,First Lien,Insurance,9.0%,,,,,,2027-09-20,3150,2681,,,2681,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Consumer & Retail,11.0%,,,,1.00%,,2024-05-01,6192,5917,,,5917,,,,,,BCIC,2023-05-10
-Last Out Term Loan,First Lien,Business Services,15.7%,,,,2.00%,,2024-08-01,5460,5183,,,5183,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Healthcare,9.3%,,,,0.75%,,2027-12-22,1683,1680,,,1680,,,,,,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Insurance,10.9%,,,,1.00%,,2027-10-02,7933,7918,,,7918,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Revolver,First Lien,Insurance,0.5%,,,,1.00%,,2027-10-02,,3,,,3,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Insurance,10.8%,,,,1.00%,,2027-10-02,3065,3054,,,3054,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Initial Term Loan,First Lien,Healthcare,10.3%,,,,1.00%,,2024-06-28,5501,5495,,,5495,,,,,,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Healthcare,10.3%,,,,1.00%,,2024-06-28,726,726,,,726,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Media & Entertainment,10.2%,,,,1.00%,,2024-11-18,1800,1788,,,1788,,,,,,BCIC,2023-05-10
-Term Loan Second Lien,First Lien,Business Services,11.3%,,,,0.50%,,2029-07-23,4000,3976,,,3976,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Software & Technology,11.7%,,,,,,2029-02-16,5400,5390,,,5390,,,,,,BCIC,2023-05-10
-Initial Term Loan,First Lien,Telecommunications,12.3%,,,,,,2026-07-23,400,377,,,377,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Telecommunications,14.8%,,,,,,2026-11-29,1500,1488,,,1488,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Software & Technology,11.5%,,,,0.75%,,2029-02-04,6000,5955,,,5955,,,,,,BCIC,2023-05-10
-Term Loan Second Lien,First Lien,Software & Technology,12.2%,,,,0.50%,,2028-12-01,6000,5960,,,5960,,,,,,BCIC,2023-05-10
-Promissory Note,First Lien,Healthcare,12.5%,,,,,,2028-05-29,5829,5568,,,5568,,,,,,BCIC,2023-05-10
-Initial Term Loan,First Lien,Software & Technology,11.9%,,,,,,2026-09-04,7700,7412,,,7412,,,,,,BCIC,2023-05-10
-Term Loan Second Lien,First Lien,Healthcare,13.3%,,,,1.00%,,2027-03-05,1200,1137,,,1137,,,,,,BCIC,2023-05-10
-Sub Note,First Lien,Industrials,17.8%,,,,,,2023-01-31,2020,1931,,,1931,,,,,,BCIC,2023-05-10
-2nd Lien TL,First Lien,Software & Technology,12.2%,,,,0.50%,,2030-07-20,5000,4907,,,4907,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Software & Technology,12.6%,,,,0.75%,,2029-04-16,4566,4501,,,4501,,,,,,BCIC,2023-05-10
-Initial Term Loan,First Lien,Industrials,13.2%,,,,1.00%,,2026-02-28,3000,2989,,,2989,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Consumer & Retail,12.3%,,,,1.00%,,2024-08-24,12766,12654,,,12654,,,,,,BCIC,2023-05-10
-Promissory Note,First Lien,Energy,1.7%,,,,,,2025-01-24,74,74,,,74,,,,,,BCIC,2023-05-10
-10.00% - 02/2022 - TankConvert,First Lien,Energy,10.0%,,,,,,2022-02-15,511,416,,,416,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Financial Services,10.8%,,,,0.75%,,2029-08-29,7988,7817,,,7817,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Financial Services,0.5%,,,,0.75%,,2028-08-31,,33,,,33,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Financial Services,1.0%,,,,0.75%,,2029-08-29,,7,,,7,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Business Services,9.7%,,,,1.00%,,2027-03-26,2962,2748,,,2748,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Insurance,12.0%,,,,,,2027-04-14,13347,13347,,,13347,,,,,,BCIC,2023-05-10
-First Lien Term Loan A,First Lien,Insurance,9.4%,,,,,,2025-08-15,2339,2076,,,2076,,,,,,BCIC,2023-05-10
-Revolving Loan,First Lien,Food & Beverage,10.9%,,,,1.00%,,2026-10-06,1000,987,,,987,,,,,,BCIC,2023-05-10
-Term Loan Second Lien,First Lien,Consumer & Retail,14.5%,,,,,,2028-03-01,5124,5007,,,5007,,,,,,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Consumer & Retail,9.1%,,,,1.00%,,2025-01-01,593,589,,,589,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-First Lien Term Loan A,First Lien,Software & Technology,9.7%,,,,1.00%,,2024-06-22,3484,3295,,,3295,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Software & Technology,9.7%,,,,1.00%,,2023-06-22,179,179,,,179,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Media & Entertainment,11.5%,,,,1.00%,,2026-11-15,11815,11593,,,11593,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Media & Entertainment,14.2%,,,,1.00%,,2026-11-15,500,490,,,490,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Revolver,First Lien,Media & Entertainment,16.0%,,,,1.00%,,2026-11-15,500,490,,,490,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Revolver,First Lien,Media & Entertainment,14.2%,,,,1.00%,,2023-06-30,500,500,,,500,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Software & Technology,9.5%,,,,1.00%,,2027-03-09,5954,5946,,,5946,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Insurance,0.4%,,,,,,2027-07-01,,96,,,96,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Consumer & Retail,10.2%,,,,1.00%,,2027-10-21,501,491,,,491,,,,,,BCIC,2023-05-10
-Unitranche,First Lien,Healthcare,10.1%,,,,1.00%,,2026-12-22,2135,2106,,,2106,,,,,,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Healthcare,10.1%,,,,1.00%,,2026-12-22,760,755,,,755,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Seventh Amendment Acquisition Loan,First Lien,Chemicals & Materials,10.2%,,,,1.00%,,2023-06-18,2813,2802,,,2802,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Chemicals & Materials,9.7%,,,,1.00%,,2023-06-18,1086,1082,,,1082,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Chemicals & Materials,9.7%,,,,1.00%,,2023-06-18,6583,6564,,,6564,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Consumer & Retail,10.5%,,,,1.00%,,2027-09-27,3950,3918,,,3918,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Healthcare,10.9%,,,,1.00%,,2025-11-08,6904,6846,,,6846,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Industrials,9.7%,,,,1.00%,,2024-10-09,642,609,,,609,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Industrials,6.8%,,,,,,2025-10-09,9810,8815,,,8815,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Industrials,10.1%,,,,1.00%,,2024-10-09,39,37,,,37,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Insurance,9.9%,,,,1.00%,,2023-07-16,465,465,,,465,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Insurance,9.9%,,,,1.00%,,2024-01-26,6655,6117,,,6117,,,,,,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Insurance,9.9%,,,,1.00%,,2023-07-16,461,461,,,461,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Healthcare,10.5%,,,,1.00%,,2026-10-30,8165,8056,,,8056,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Healthcare,10.7%,,,,1.00%,,2026-10-30,600,565,,,565,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Healthcare,10.7%,,,,1.00%,,2026-10-30,631,598,,,598,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Industrials,9.8%,,,,0.50%,,2029-02-10,1493,1473,,,1473,,,,,,BCIC,2023-05-10
-Initial Term Loan,First Lien,Software & Technology,8.6%,,,,,,2025-07-30,814,814,,,814,,,,,,BCIC,2023-05-10
-2020 Term Loan,First Lien,Software & Technology,8.9%,,,,,,2025-07-30,973,970,,,970,,,,,,BCIC,2023-05-10
-First Lein Term Loan,First Lien,Food & Beverage,9.3%,,,,0.75%,,2028-10-18,2000,1888,,,1888,,,,,,BCIC,2023-05-10
-First Out Term Loan,First Lien,Consumer & Retail,8.7%,,,,0.75%,,2026-02-25,4900,4874,,,4874,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Consumer & Retail,12.5%,,,,1.25%,,2023-02-15,50,44,,,44,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Telecommunications,12.8%,,,,1.50%,,2027-11-14,3073,3045,,,3045,,,,,,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Telecommunications,12.5%,,,,1.50%,,2027-11-14,2000,1981,,,1981,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Business Services,9.5%,,,,1.00%,,2027-07-02,14813,14589,,,14589,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Business Services,10.4%,,,,1.00%,,2027-07-02,1200,1177,,,1177,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Revolver,First Lien,Business Services,9.6%,,,,1.00%,,2027-07-02,5001,4904,,,4904,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Insurance,19.0%,,,,,,2024-02-16,2000,2000,,,2000,,,,,,BCIC,2023-05-10
-First Lien Term Loan A,First Lien,Software & Technology,12.3%,,,,1.00%,,2023-12-21,7525,6629,,,6629,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Software & Technology,12.3%,,,,1.00%,,2023-12-21,773,681,,,681,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-First Lien Term Loan B,First Lien,Software & Technology,10.4%,,,,1.00%,,2025-07-21,2640,2450,,,2450,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Telecommunications,10.5%,,,,1.00%,,2026-12-15,2125,2094,,,2094,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Business Services,10.7%,,,,1.00%,,2027-11-23,12122,11973,,,11973,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Business Services,10.3%,,,,1.00%,,2027-11-23,436,423,,,423,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-First Lien Term Loan A,First Lien,Healthcare,9.7%,,,,,,2024-10-01,2707,2489,,,2489,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Healthcare,12.5%,,,,,,2028-05-29,5653,5568,,,5568,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Healthcare,10.4%,,,,0.75%,,2027-07-21,4750,4677,,,4677,,,,,,BCIC,2023-05-10
-First Lien Term Loan B,First Lien,Industrials,10.0%,,,,1.00%,,2023-04-11,6990,6884,,,6884,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Industrials,10.0%,,,,1.00%,,2023-04-11,343,338,,,338,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Insurance,10.8%,,,,1.00%,,2028-08-11,5504,5382,,,5382,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Insurance,0.5%,,,,1.00%,,2028-08-11,,25,,,25,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Revolver,First Lien,Healthcare,0.5%,,,,1.00%,,2026-12-06,,2,,,2,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Healthcare,10.0%,,,,1.00%,,2027-12-06,8008,7436,,,7436,,,,,,BCIC,2023-05-10
-First Lien Term Loan A,First Lien,Automotive,7.7%,,,,1.00%,,2024-09-28,182,182,,,182,,,,,,BCIC,2023-05-10
-First Lien Term Loan B,First Lien,Automotive,8.0%,,,,1.00%,,2024-09-28,180,180,,,180,,,,,,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Business Services,10.8%,,,,1.00%,,2026-06-09,2886,2888,,,2888,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Business Services,11.7%,,,,1.00%,,2023-12-29,404,403,,,403,,,,,,BCIC,2023-05-10
-Revolver,First Lien,Business Services,11.4%,,,,1.00%,,2023-12-29,384,378,,,378,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Revolver,First Lien,Business Services,13.5%,,,,1.00%,,2023-12-29,225,222,,,222,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Business Services,11.7%,,,,1.00%,,2023-12-29,453,447,,,447,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Business Services,11.7%,,,,1.00%,,2023-12-29,705,703,,,703,,,,,,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Business Services,11.7%,,,,1.00%,,2023-12-29,748,747,,,747,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Revolver,First Lien,Software & Technology,0.5%,,,,0.75%,,2029-06-09,,11,,,11,,,,,type_hint_revolver_from_name,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Software & Technology,0.1%,,,,0.75%,,2029-06-09,,2,,,2,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Term Loan,First Lien,Chemicals & Materials,8.0%,,,,,,2023-04-28,14551,14551,,,14551,,,,,,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Insurance,9.2%,,,,1.00%,,2024-10-21,730,685,,,685,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Incremental First Lien Term Loan,First Lien,Insurance,9.2%,,,,1.00%,,2024-10-21,1509,1416,,,1416,,,,,,BCIC,2023-05-10
-Senior Term Loan A,First Lien,Software & Technology,5.0%,,,,,,2026-04-04,1623,1394,,,1394,,,,,,BCIC,2023-05-10
-Senior Term Loan B,First Lien,Software & Technology,7.0%,,,,,,2026-04-04,1485,1287,,,1287,,,,,,BCIC,2023-05-10
-Super Senior Term Loan B,First Lien,Software & Technology,9.0%,,,,,,2026-04-04,1152,1142,,,1142,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Software & Technology,10.0%,,,,,,2026-04-04,55,54,,,54,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Software & Technology,10.0%,,,,,,2026-04-04,382,379,,,379,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Healthcare,10.1%,,,,1.00%,,2025-01-02,2043,2029,,,2029,,,,,,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Healthcare,10.1%,,,,1.00%,,2025-01-02,554,534,,,534,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Initial Term Loan,First Lien,Containers & Packaging,9.5%,,,,1.00%,,2024-08-03,2758,2754,,,2754,,,,,,BCIC,2023-05-10
-Term B Loan,First Lien,Healthcare,8.6%,,,,,,2025-07-09,7000,6347,,,6347,,,,,,BCIC,2023-05-10
-Initial Term Loan,First Lien,Aerospace & Defense,10.5%,,,,1.00%,,2025-03-29,6148,6112,,,6112,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Telecommunications,9.2%,,,,1.00%,,2024-11-01,990,952,,,952,,,,,,BCIC,2023-05-10
-Senior Notes,First Lien,Insurance,9.0%,,,,,,2027-09-20,3150,2655,,,2655,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Consumer & Retail,10.7%,,,,1.00%,,2024-05-01,6237,5897,,,5897,,,,,,BCIC,2023-05-10
-Last Out Term Loan,First Lien,Business Services,15.4%,,,,2.00%,,2024-08-01,5460,5132,,,5132,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Healthcare,8.7%,,,,0.75%,,2027-12-22,1687,1684,,,1684,,,,,,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Insurance,10.0%,,,,1.00%,,2027-10-02,7953,7937,,,7937,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Insurance,10.4%,,,,1.00%,,2027-10-02,2366,2356,,,2356,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Initial Term Loan,First Lien,Healthcare,9.9%,,,,1.00%,,2024-06-28,5516,5508,,,5508,,,,,,BCIC,2023-05-10
-Delayed Draw Term Loan,First Lien,Healthcare,9.9%,,,,1.00%,,2024-06-28,728,727,,,727,,,,,type_hint_delayed_draw_from_name,BCIC,2023-05-10
-Initial Term Loan,First Lien,Aerospace & Defense,10.8%,,,,1.00%,,2023-09-08,903,901,,,901,,,,,,BCIC,2023-05-10
-First Lien Term Loan - Last Out Lender,First Lien,Insurance,9.6%,,,,0.75%,,2023-11-30,7000,6978,,,6978,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Media & Entertainment,9.7%,,,,1.00%,,2024-11-18,1950,1935,,,1935,,,,,,BCIC,2023-05-10
-Term Loan Second Lien,First Lien,Business Services,10.9%,,,,0.50%,,2029-07-23,4000,3975,,,3975,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Software & Technology,11.7%,,,,,,2029-02-16,5400,5389,,,5389,,,,,,BCIC,2023-05-10
-Initial Term Loan,First Lien,Telecommunications,11.9%,,,,,,2026-07-23,400,376,,,376,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Telecommunications,14.2%,,,,,,2026-11-29,1500,1487,,,1487,,,,,,BCIC,2023-05-10
-Initial Term Loan,First Lien,Chemicals & Materials,12.7%,,,,,,2025-09-29,1400,1295,,,1295,,,,,,BCIC,2023-05-10
-Initial Term Loan,First Lien,Containers & Packaging,14.2%,,,,1.00%,,2024-11-21,1600,1589,,,1589,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Software & Technology,10.5%,,,,0.75%,,2029-02-04,6000,5953,,,5953,,,,,,BCIC,2023-05-10
-Term Loan Second Lien,First Lien,Software & Technology,12.0%,,,,0.50%,,2028-12-01,6000,5958,,,5958,,,,,,BCIC,2023-05-10
-Initial Term Loan,First Lien,Software & Technology,11.4%,,,,,,2026-09-04,7700,7391,,,7391,,,,,,BCIC,2023-05-10
-Term Loan Second Lien,First Lien,Healthcare,12.9%,,,,1.00%,,2027-03-05,1200,1132,,,1132,,,,,,BCIC,2023-05-10
-Sub Note,First Lien,Industrials,17.8%,,,,,,2023-01-31,1931,1931,,,1931,,,,,,BCIC,2023-05-10
-2nd Lien TL,First Lien,Software & Technology,12.2%,,,,0.50%,,2030-07-20,5000,4906,,,4906,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Software & Technology,12.1%,,,,0.75%,,2029-04-16,4566,4498,,,4498,,,,,,BCIC,2023-05-10
-Initial Term Loan,First Lien,Industrials,12.8%,,,,1.00%,,2026-02-28,3000,2988,,,2988,,,,,,BCIC,2023-05-10
-Initial Term Loan,First Lien,Automotive,11.1%,,,,1.00%,,2026-02-02,700,654,,,654,,,,,,BCIC,2023-05-10
-Term Loan,First Lien,Consumer & Retail,11.9%,,,,1.00%,,2024-08-24,12808,12689,,,12689,,,,,,BCIC,2023-05-10
-Initial Term Loan,First Lien,Healthcare,11.4%,,,,1.00%,,2026-03-13,3500,3491,,,3491,,,,,,BCIC,2023-05-10
+company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,ticker,filing_date
+Term Loan,First Lien,Finance,11.2%,,,,0.75%,,2029-08-29,7968,7804,,,7804,,,,,BCIC,2023-05-10
+Revolver,First Lien,Finance,11.1%,,,,0.75%,,2028-08-31,383,352,,,352,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,Finance,11.4%,,,,0.75%,,2029-08-29,698,690,,,690,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,Finance,1.0%,,,,0.75%,,2029-08-29,,9,,,9,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Services: Business,11.2%,,,,1.00%,,2027-03-26,2954,2754,,,2754,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Services: Business,11.2%,,,,1.00%,,2027-03-26,1493,1381,,,1381,,,,,BCIC,2023-05-10
+Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",8.0%,,,,,,2027-04-14,13684,13684,,,13684,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Services: Business,11.1%,,,,1.00%,,2027-07-22,998,982,,,982,,,,,BCIC,2023-05-10
+First Lien Term Loan A,First Lien,"Banking, Finance, Insurance & Real Estate",9.8%,,,,,,2025-08-15,2325,2088,,,2088,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,"Beverage, Food and Tobacco",11.4%,,,,1.00%,,2026-10-06,4888,4828,,,4828,,,,,BCIC,2023-05-10
+Revolving Loan,First Lien,"Beverage, Food and Tobacco",11.1%,,,,1.00%,,2026-10-06,1000,988,,,988,,,,,BCIC,2023-05-10
+Term Loan Second Lien,First Lien,Services: Consumer,14.5%,,,,,,2028-03-01,5308,5196,,,5196,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Services: Consumer,10.6%,,,,1.00%,,2025-01-01,3026,3007,,,3007,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,Services: Consumer,10.6%,,,,1.00%,,2025-01-01,600,596,,,596,,,,,BCIC,2023-05-10
+First Lien Term Loan A,First Lien,Electronics,10.1%,,,,1.00%,,2024-06-22,3475,3319,,,3319,,,,,BCIC,2023-05-10
+Revolver,First Lien,Electronics,10.1%,,,,1.00%,,2023-06-22,144,144,,,144,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,High Tech Industries,12.1%,,,,1.00%,,2026-06-11,6719,6596,,,6596,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Media: Broadcasting & Subscription,14.7%,,,,1.00%,,2026-11-15,11867,11659,,,11659,,,,,BCIC,2023-05-10
+Revolver,First Lien,Media: Broadcasting & Subscription,14.7%,,,,1.00%,,2026-11-15,500,490,,,490,,,,,BCIC,2023-05-10
+Revolver,First Lien,Media: Broadcasting & Subscription,16.5%,,,,1.00%,,2026-11-15,500,490,,,490,,,,,BCIC,2023-05-10
+Revolver,First Lien,Media: Broadcasting & Subscription,14.7%,,,,1.00%,,2023-06-30,500,500,,,500,,,,,BCIC,2023-05-10
+Term Loan,First Lien,High Tech Industries,10.3%,,,,1.00%,,2027-03-09,5939,5931,,,5931,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",10.4%,,,,,,2029-07-01,15920,14996,,,14996,,,,,BCIC,2023-05-10
+Revolver,First Lien,"Banking, Finance, Insurance & Real Estate",9.2%,,,,,,2027-07-01,732,732,,,732,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Consumer goods: Durable,10.6%,,,,1.00%,,2027-10-21,500,490,,,490,,,,,BCIC,2023-05-10
+Revolver,First Lien,Consumer goods: Durable,0.5%,,,,1.00%,,2026-10-21,,23,,,23,,,,,BCIC,2023-05-10
+Unitranche,First Lien,Healthcare & Pharmaceuticals,10.6%,,,,1.00%,,2026-12-22,2129,2103,,,2103,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,Healthcare & Pharmaceuticals,10.6%,,,,1.00%,,2026-12-22,758,754,,,754,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Healthcare & Pharmaceuticals,12.4%,,,,2.00%,,2026-01-15,952,943,,,943,,,,,BCIC,2023-05-10
+Seventh Amendment Acquisition Loan,First Lien,"Chemicals, Plastics and Rubber",11.3%,,,,1.00%,,2023-06-18,2794,2789,,,2789,,,,,BCIC,2023-05-10
+Term Loan,First Lien,"Chemicals, Plastics and Rubber",10.8%,,,,1.00%,,2023-06-18,1079,1077,,,1077,,,,,BCIC,2023-05-10
+Term Loan,First Lien,"Chemicals, Plastics and Rubber",10.8%,,,,1.00%,,2023-06-18,6541,6532,,,6532,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Consumer goods: Durable,10.7%,,,,1.00%,,2027-09-27,3832,3803,,,3803,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Healthcare & Pharmaceuticals,11.7%,,,,1.00%,,2025-11-08,6887,6834,,,6834,,,,,BCIC,2023-05-10
+Revolver,First Lien,Machinery (Non-Agrclt/Constr/Electr),10.4%,,,,1.00%,,2024-10-09,739,711,,,711,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Machinery (Non-Agrclt/Constr/Electr),7.3%,,,,,,2025-10-09,9973,9066,,,9066,,,,,BCIC,2023-05-10
+Revolver,First Lien,Machinery (Non-Agrclt/Constr/Electr),0.8%,,,,1.00%,,2024-10-09,,2,,,2,,,,,BCIC,2023-05-10
+Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",10.4%,,,,1.00%,,2023-07-16,225,225,,,225,,,,,BCIC,2023-05-10
+Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",10.4%,,,,1.00%,,2024-01-26,6639,6227,,,6227,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",10.4%,,,,1.00%,,2023-07-16,223,223,,,223,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Construction & Building,13.0%,,,,,,2022-12-31,850,850,,,850,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,Healthcare & Pharmaceuticals,10.9%,,,,1.00%,,2026-10-30,629,597,,,597,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Healthcare & Pharmaceuticals,10.8%,,,,1.00%,,2026-10-30,8144,8042,,,8042,,,,,BCIC,2023-05-10
+Revolver,First Lien,Healthcare & Pharmaceuticals,10.9%,,,,1.00%,,2026-10-30,1520,1485,,,1485,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Healthcare & Pharmaceuticals,11.8%,,,,1.00%,,2026-11-23,2737,2691,,,2691,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Healthcare & Pharmaceuticals,11.9%,,,,0.75%,,2028-12-26,1519,1475,,,1475,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan - First Lien,First Lien,Healthcare & Pharmaceuticals,1.0%,,,,0.75%,,2028-12-26,,11,,,11,,,,,BCIC,2023-05-10
+Revolver,First Lien,Healthcare & Pharmaceuticals,0.5%,,,,0.75%,,2028-12-23,,7,,,7,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Construction & Building,9.8%,,,,0.50%,,2029-02-10,1489,1470,,,1470,,,,,BCIC,2023-05-10
+Initial Term Loan,First Lien,High Tech Industries,9.1%,,,,,,2025-07-30,812,812,,,812,,,,,BCIC,2023-05-10
+2020 Term Loan,First Lien,High Tech Industries,9.3%,,,,,,2025-07-30,970,968,,,968,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,High Tech Industries,10.3%,,,,1.00%,,2024-11-01,995,979,,,979,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,High Tech Industries,11.3%,,,,,,2025-12-14,2266,2081,,,2081,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,"Beverage, Food and Tobacco",9.8%,,,,0.75%,,2028-10-06,4950,4898,,,4898,,,,,BCIC,2023-05-10
+First Lein Term Loan,First Lien,"Beverage, Food and Tobacco",9.8%,,,,0.75%,,2028-10-18,1995,1888,,,1888,,,,,BCIC,2023-05-10
+First Out Term Loan,First Lien,Retail,9.6%,,,,0.75%,,2026-02-25,2900,2886,,,2886,,,,,BCIC,2023-05-10
+Revolver,First Lien,Consumer goods: Durable,12.3%,,,,1.25%,,2024-05-15,34,27,,,27,,,,,BCIC,2023-05-10
+First Lein Term Loan,First Lien,Consumer goods: Durable,13.8%,,,,1.25%,,2024-05-15,6934,6212,,,6212,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan - First Lien,First Lien,Telecommunications,13.0%,,,,1.50%,,2027-11-14,2000,1982,,,1982,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Telecommunications,13.2%,,,,1.50%,,2027-11-14,3053,3027,,,3027,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Services: Business,10.5%,,,,1.00%,,2027-07-02,14775,14565,,,14565,,,,,BCIC,2023-05-10
+Revolver,First Lien,Services: Business,10.5%,,,,1.00%,,2027-07-02,6201,6087,,,6087,,,,,BCIC,2023-05-10
+Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",16.0%,,,,,,2024-04-01,1976,1976,,,1976,,,,,BCIC,2023-05-10
+First Lien Term Loan A,First Lien,High Tech Industries,12.3%,,,,1.00%,,2023-12-21,7525,6857,,,6857,,,,,BCIC,2023-05-10
+Revolver,First Lien,High Tech Industries,12.3%,,,,1.00%,,2023-12-21,773,704,,,704,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,High Tech Industries,8.8%,,,,0.75%,,2026-11-19,1990,1830,,,1830,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Consumer goods: Durable,13.7%,,,,2.00%,,2026-09-19,5673,5534,,,5534,,,,,BCIC,2023-05-10
+First Lien Term Loan B,First Lien,High Tech Industries,10.8%,,,,1.00%,,2025-07-21,2634,2462,,,2462,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,High Tech Industries,9.2%,,,,0.75%,,2027-12-01,995,785,,,785,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Telecommunications,11.0%,,,,1.00%,,2026-12-15,2157,2128,,,2128,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Services: Business,10.9%,,,,1.00%,,2027-11-23,12091,11951,,,11951,,,,,BCIC,2023-05-10
+Revolver,First Lien,Services: Business,10.9%,,,,1.00%,,2027-11-23,872,859,,,859,,,,,BCIC,2023-05-10
+First Lien Term Loan A,First Lien,Healthcare & Pharmaceuticals,10.8%,,,,,,2024-10-01,2641,2458,,,2458,,,,,BCIC,2023-05-10
+Term Loan,First Lien,"Hotel, Gaming & Leisure",10.4%,,,,0.75%,,2027-07-21,4925,4857,,,4857,,,,,BCIC,2023-05-10
+First Lien Term Loan B,First Lien,Construction & Building,11.0%,,,,1.00%,,2023-04-11,6972,6961,,,6961,,,,,BCIC,2023-05-10
+Revolver,First Lien,Construction & Building,11.0%,,,,1.00%,,2023-04-11,343,343,,,343,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Aerospace and Defense,10.5%,,,,1.00%,,2027-04-01,3694,3301,,,3301,,,,,BCIC,2023-05-10
+First Lien Term Loan A,First Lien,Automotive,13.3%,,,,1.00%,,2024-09-28,186,186,,,186,,,,,BCIC,2023-05-10
+First Lien Term Loan B,First Lien,Automotive,13.5%,,,,1.00%,,2024-09-28,184,184,,,184,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Automotive,11.3%,,,,1.00%,,2024-09-28,6348,6063,,,6063,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Automotive,13.5%,,,,1.00%,,2024-09-28,426,392,,,392,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Finance,13.2%,,,,1.00%,,2027-12-14,9938,9751,,,9751,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Healthcare & Pharmaceuticals,10.3%,,,,1.25%,,2023-07-26,5280,5196,,,5196,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Services: Business,11.0%,,,,1.00%,,2026-12-09,6901,6847,,,6847,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,Services: Business,11.0%,,,,1.00%,,2026-06-09,2879,2881,,,2881,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Services: Business,12.0%,,,,1.00%,,2023-12-29,403,403,,,403,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Services: Business,12.0%,,,,1.00%,,2023-12-29,703,702,,,702,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Services: Business,12.0%,,,,1.00%,,2023-12-29,4937,4892,,,4892,,,,,BCIC,2023-05-10
+Revolver,First Lien,Services: Business,11.9%,,,,1.00%,,2023-12-29,609,602,,,602,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,Services: Business,12.0%,,,,1.00%,,2023-12-29,746,745,,,745,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,Services: Business,12.0%,,,,1.00%,,2023-12-29,451,447,,,447,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Media: Broadcasting & Subscription,9.7%,,,,0.50%,,2029-04-11,2000,1790,,,1790,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,High Tech Industries,9.7%,,,,0.75%,,2029-06-09,3340,3318,,,3318,,,,,BCIC,2023-05-10
+Revolver,First Lien,High Tech Industries,9.9%,,,,0.75%,,2029-06-09,287,277,,,277,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan - First Lien,First Lien,High Tech Industries,0.5%,,,,0.75%,,2029-06-09,,2,,,2,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Metals & Mining,8.0%,,,,,,2023-06-30,14624,14624,,,14624,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Transportation: Consumer,11.1%,,,,1.00%,,2027-04-29,7746,7640,,,7640,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",9.4%,,,,1.00%,,2024-10-21,728,689,,,689,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",9.4%,,,,1.00%,,2024-10-19,2490,2355,,,2355,,,,,BCIC,2023-05-10
+Incremental First Lien Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",9.4%,,,,1.00%,,2024-10-21,1505,1425,,,1425,,,,,BCIC,2023-05-10
+Term Loan,First Lien,High Tech Industries,10.0%,,,,,,2026-04-04,392,389,,,389,,,,,BCIC,2023-05-10
+Term Loan,First Lien,High Tech Industries,10.0%,,,,,,2026-04-04,56,56,,,56,,,,,BCIC,2023-05-10
+Senior Term Loan A,First Lien,High Tech Industries,5.0%,,,,,,2026-04-04,1643,1432,,,1432,,,,,BCIC,2023-05-10
+Senior Term Loan B,First Lien,High Tech Industries,7.0%,,,,,,2026-04-04,1511,1328,,,1328,,,,,BCIC,2023-05-10
+Super Senior Term Loan B,First Lien,High Tech Industries,9.0%,,,,,,2026-04-04,1178,1169,,,1169,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Healthcare & Pharmaceuticals,10.8%,,,,1.00%,,2025-01-02,2037,2026,,,2026,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,Healthcare & Pharmaceuticals,10.8%,,,,1.00%,,2025-01-02,552,533,,,533,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,High Tech Industries,10.7%,,,,1.00%,,2027-04-22,5655,5628,,,5628,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Transportation: Cargo,10.4%,,,,0.50%,,2029-06-08,507,460,,,460,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Transportation: Cargo,12.5%,,,,0.50%,,2029-06-08,7453,6753,,,6753,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,High Tech Industries,9.8%,,,,1.00%,,2029-06-15,7980,7477,,,7477,,,,,BCIC,2023-05-10
+Initial Term Loan,First Lien,"Containers, Packaging and Glass",9.9%,,,,1.00%,,2024-08-03,2750,2747,,,2747,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,High Tech Industries,6.0%,,,,1.00%,,2024-06-16,2395,2323,,,2323,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,High Tech Industries,6.3%,,,,1.00%,,2024-06-16,871,845,,,845,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,High Tech Industries,11.3%,,,,1.00%,,2025-07-18,1514,1359,,,1359,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,High Tech Industries,11.3%,,,,1.00%,,2025-07-18,3882,3488,,,3488,,,,,BCIC,2023-05-10
+Term B Loan,First Lien,Healthcare & Pharmaceuticals,9.1%,,,,,,2025-07-09,7000,6411,,,6411,,,,,BCIC,2023-05-10
+Initial Term Loan,First Lien,Aerospace and Defense,10.8%,,,,1.00%,,2025-03-29,6148,6116,,,6116,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Transportation: Cargo,10.8%,,,,0.75%,,2028-03-24,4461,4365,,,4365,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Telecommunications,9.7%,,,,1.00%,,2024-11-01,987,954,,,954,,,,,BCIC,2023-05-10
+Senior Notes,First Lien,"Banking, Finance, Insurance & Real Estate",9.0%,,,,,,2027-09-20,3150,2681,,,2681,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Retail,11.0%,,,,1.00%,,2024-05-01,6192,5917,,,5917,,,,,BCIC,2023-05-10
+Last Out Term Loan,First Lien,Services: Business,15.7%,,,,2.00%,,2024-08-01,5460,5183,,,5183,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Healthcare & Pharmaceuticals,9.3%,,,,0.75%,,2027-12-22,1683,1680,,,1680,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",10.9%,,,,1.00%,,2027-10-02,7933,7918,,,7918,,,,,BCIC,2023-05-10
+Revolver,First Lien,"Banking, Finance, Insurance & Real Estate",0.5%,,,,1.00%,,2027-10-02,,3,,,3,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",10.8%,,,,1.00%,,2027-10-02,3065,3054,,,3054,,,,,BCIC,2023-05-10
+Initial Term Loan,First Lien,"Healthcare, Education and Childcare",10.3%,,,,1.00%,,2024-06-28,5501,5495,,,5495,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,"Healthcare, Education and Childcare",10.3%,,,,1.00%,,2024-06-28,726,726,,,726,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Media: Diversified & Production,10.2%,,,,1.00%,,2024-11-18,1800,1788,,,1788,,,,,BCIC,2023-05-10
+Term Loan Second Lien,First Lien,Services: Business,11.3%,,,,0.50%,,2029-07-23,4000,3976,,,3976,,,,,BCIC,2023-05-10
+Term Loan,First Lien,High Tech Industries,11.7%,,,,,,2029-02-16,5400,5390,,,5390,,,,,BCIC,2023-05-10
+Initial Term Loan,First Lien,Telecommunications,12.3%,,,,,,2026-07-23,400,377,,,377,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Telecommunications,14.8%,,,,,,2026-11-29,1500,1488,,,1488,,,,,BCIC,2023-05-10
+Term Loan,First Lien,High Tech Industries,11.5%,,,,0.75%,,2029-02-04,6000,5955,,,5955,,,,,BCIC,2023-05-10
+Term Loan Second Lien,First Lien,High Tech Industries,12.2%,,,,0.50%,,2028-12-01,6000,5960,,,5960,,,,,BCIC,2023-05-10
+Promissory Note,First Lien,"Hotel, Gaming & Leisure",12.5%,,,,,,2028-05-29,5829,5568,,,5568,,,,,BCIC,2023-05-10
+Initial Term Loan,First Lien,Electronics,11.9%,,,,,,2026-09-04,7700,7412,,,7412,,,,,BCIC,2023-05-10
+Term Loan Second Lien,First Lien,Healthcare & Pharmaceuticals,13.3%,,,,1.00%,,2027-03-05,1200,1137,,,1137,,,,,BCIC,2023-05-10
+Sub Note,First Lien,Capital Equipment,17.8%,,,,,,2023-01-31,2020,1931,,,1931,,,,,BCIC,2023-05-10
+2nd Lien TL,First Lien,High Tech Industries,12.2%,,,,0.50%,,2030-07-20,5000,4907,,,4907,,,,,BCIC,2023-05-10
+Term Loan,First Lien,High Tech Industries,12.6%,,,,0.75%,,2029-04-16,4566,4501,,,4501,,,,,BCIC,2023-05-10
+Initial Term Loan,First Lien,Capital Equipment,13.2%,,,,1.00%,,2026-02-28,3000,2989,,,2989,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Textiles and Leather,12.3%,,,,1.00%,,2024-08-24,12766,12654,,,12654,,,,,BCIC,2023-05-10
+Promissory Note,First Lien,Energy: Oil & Gas,1.7%,,,,,,2025-01-24,74,74,,,74,,,,,BCIC,2023-05-10
+10.00% - 02/2022 - TankConvert,First Lien,Energy: Oil & Gas,10.0%,,,,,,2022-02-15,511,416,,,416,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Finance,10.8%,,,,0.75%,,2029-08-29,7988,7817,,,7817,,,,,BCIC,2023-05-10
+Revolver,First Lien,Finance,0.5%,,,,0.75%,,2028-08-31,,33,,,33,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,Finance,1.0%,,,,0.75%,,2029-08-29,,7,,,7,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Services: Business,9.7%,,,,1.00%,,2027-03-26,2962,2748,,,2748,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Services: Business,10.7%,,,,1.00%,,2027-03-26,1496,1378,,,1378,,,,,BCIC,2023-05-10
+Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",12.0%,,,,,,2027-04-14,13347,13347,,,13347,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Services: Business,10.4%,,,,1.00%,,2027-07-22,1000,984,,,984,,,,,BCIC,2023-05-10
+First Lien Term Loan A,First Lien,"Banking, Finance, Insurance & Real Estate",9.4%,,,,,,2025-08-15,2339,2076,,,2076,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,"Beverage, Food and Tobacco",11.0%,,,,1.00%,,2026-10-06,4900,4836,,,4836,,,,,BCIC,2023-05-10
+Revolving Loan,First Lien,"Beverage, Food and Tobacco",10.9%,,,,1.00%,,2026-10-06,1000,987,,,987,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Services: Consumer,9.1%,,,,1.00%,,2025-01-01,2990,2969,,,2969,,,,,BCIC,2023-05-10
+Term Loan Second Lien,First Lien,Services: Consumer,14.5%,,,,,,2028-03-01,5124,5007,,,5007,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,Services: Consumer,9.1%,,,,1.00%,,2025-01-01,593,589,,,589,,,,,BCIC,2023-05-10
+First Lien Term Loan A,First Lien,Electronics,9.7%,,,,1.00%,,2024-06-22,3484,3295,,,3295,,,,,BCIC,2023-05-10
+Revolver,First Lien,Electronics,9.7%,,,,1.00%,,2023-06-22,179,179,,,179,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,High Tech Industries,11.8%,,,,1.00%,,2026-06-11,6701,6569,,,6569,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Media: Broadcasting & Subscription,11.5%,,,,1.00%,,2026-11-15,11815,11593,,,11593,,,,,BCIC,2023-05-10
+Revolver,First Lien,Media: Broadcasting & Subscription,14.2%,,,,1.00%,,2026-11-15,500,490,,,490,,,,,BCIC,2023-05-10
+Revolver,First Lien,Media: Broadcasting & Subscription,16.0%,,,,1.00%,,2026-11-15,500,490,,,490,,,,,BCIC,2023-05-10
+Revolver,First Lien,Media: Broadcasting & Subscription,14.2%,,,,1.00%,,2023-06-30,500,500,,,500,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Media: Diversified & Production,9.9%,,,,0.75%,,2027-07-21,3093,3064,,,3064,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Media: Diversified & Production,9.9%,,,,0.75%,,2027-07-21,2000,1977,,,1977,,,,,BCIC,2023-05-10
+Term Loan,First Lien,High Tech Industries,9.5%,,,,1.00%,,2027-03-09,5954,5946,,,5946,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",8.9%,,,,,,2029-07-01,15960,15664,,,15664,,,,,BCIC,2023-05-10
+Revolver,First Lien,"Banking, Finance, Insurance & Real Estate",0.4%,,,,,,2027-07-01,,96,,,96,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Consumer goods: Durable,10.2%,,,,1.00%,,2027-10-21,501,491,,,491,,,,,BCIC,2023-05-10
+Unitranche,First Lien,Healthcare & Pharmaceuticals,10.1%,,,,1.00%,,2026-12-22,2135,2106,,,2106,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,Healthcare & Pharmaceuticals,10.1%,,,,1.00%,,2026-12-22,760,755,,,755,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Healthcare & Pharmaceuticals,12.0%,,,,2.00%,,2026-01-15,952,942,,,942,,,,,BCIC,2023-05-10
+Seventh Amendment Acquisition Loan,First Lien,"Chemicals, Plastics and Rubber",10.2%,,,,1.00%,,2023-06-18,2813,2802,,,2802,,,,,BCIC,2023-05-10
+Term Loan,First Lien,"Chemicals, Plastics and Rubber",9.7%,,,,1.00%,,2023-06-18,1086,1082,,,1082,,,,,BCIC,2023-05-10
+Term Loan,First Lien,"Chemicals, Plastics and Rubber",9.7%,,,,1.00%,,2023-06-18,6583,6564,,,6564,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Consumer goods: Durable,10.5%,,,,1.00%,,2027-09-27,3950,3918,,,3918,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Healthcare & Pharmaceuticals,10.9%,,,,1.00%,,2025-11-08,6904,6846,,,6846,,,,,BCIC,2023-05-10
+Revolver,First Lien,Machinery (Non-Agrclt/Constr/Electr),9.7%,,,,1.00%,,2024-10-09,642,609,,,609,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Machinery (Non-Agrclt/Constr/Electr),6.8%,,,,,,2025-10-09,9810,8815,,,8815,,,,,BCIC,2023-05-10
+Revolver,First Lien,Machinery (Non-Agrclt/Constr/Electr),10.1%,,,,1.00%,,2024-10-09,39,37,,,37,,,,,BCIC,2023-05-10
+Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",9.9%,,,,1.00%,,2023-07-16,465,465,,,465,,,,,BCIC,2023-05-10
+Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",9.9%,,,,1.00%,,2024-01-26,6655,6117,,,6117,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",9.9%,,,,1.00%,,2023-07-16,461,461,,,461,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Healthcare & Pharmaceuticals,10.5%,,,,1.00%,,2026-10-30,8165,8056,,,8056,,,,,BCIC,2023-05-10
+Revolver,First Lien,Healthcare & Pharmaceuticals,10.7%,,,,1.00%,,2026-10-30,600,565,,,565,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,Healthcare & Pharmaceuticals,10.7%,,,,1.00%,,2026-10-30,631,598,,,598,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Healthcare & Pharmaceuticals,11.5%,,,,1.00%,,2026-11-23,2744,2695,,,2695,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Healthcare & Pharmaceuticals,11.5%,,,,0.75%,,2028-12-26,1519,1473,,,1473,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Construction & Building,9.8%,,,,0.50%,,2029-02-10,1493,1473,,,1473,,,,,BCIC,2023-05-10
+Initial Term Loan,First Lien,High Tech Industries,8.6%,,,,,,2025-07-30,814,814,,,814,,,,,BCIC,2023-05-10
+2020 Term Loan,First Lien,High Tech Industries,8.9%,,,,,,2025-07-30,973,970,,,970,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,High Tech Industries,10.3%,,,,1.00%,,2024-11-01,997,980,,,980,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,High Tech Industries,10.9%,,,,,,2025-12-14,2266,2064,,,2064,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,"Beverage, Food and Tobacco",9.4%,,,,0.75%,,2028-10-06,4963,4908,,,4908,,,,,BCIC,2023-05-10
+First Lein Term Loan,First Lien,"Beverage, Food and Tobacco",9.3%,,,,0.75%,,2028-10-18,2000,1888,,,1888,,,,,BCIC,2023-05-10
+First Out Term Loan,First Lien,Retail,8.7%,,,,0.75%,,2026-02-25,4900,4874,,,4874,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Consumer goods: Durable,12.0%,,,,1.25%,,2023-02-15,6990,6147,,,6147,,,,,BCIC,2023-05-10
+Revolver,First Lien,Consumer goods: Durable,12.5%,,,,1.25%,,2023-02-15,50,44,,,44,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Telecommunications,12.8%,,,,1.50%,,2027-11-14,3073,3045,,,3045,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan - First Lien,First Lien,Telecommunications,12.5%,,,,1.50%,,2027-11-14,2000,1981,,,1981,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Services: Business,9.5%,,,,1.00%,,2027-07-02,14813,14589,,,14589,,,,,BCIC,2023-05-10
+Revolver,First Lien,Services: Business,10.4%,,,,1.00%,,2027-07-02,1200,1177,,,1177,,,,,BCIC,2023-05-10
+Revolver,First Lien,Services: Business,9.6%,,,,1.00%,,2027-07-02,5001,4904,,,4904,,,,,BCIC,2023-05-10
+Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",19.0%,,,,,,2024-02-16,2000,2000,,,2000,,,,,BCIC,2023-05-10
+First Lien Term Loan A,First Lien,High Tech Industries,12.3%,,,,1.00%,,2023-12-21,7525,6629,,,6629,,,,,BCIC,2023-05-10
+Revolver,First Lien,High Tech Industries,12.3%,,,,1.00%,,2023-12-21,773,681,,,681,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,High Tech Industries,8.2%,,,,0.75%,,2026-11-19,1995,1824,,,1824,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Consumer goods: Durable,13.2%,,,,2.00%,,2026-09-19,5709,5561,,,5561,,,,,BCIC,2023-05-10
+First Lien Term Loan B,First Lien,High Tech Industries,10.4%,,,,1.00%,,2025-07-21,2640,2450,,,2450,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,High Tech Industries,9.0%,,,,0.75%,,2027-12-01,997,776,,,776,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Telecommunications,10.5%,,,,1.00%,,2026-12-15,2125,2094,,,2094,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Services: Business,10.7%,,,,1.00%,,2027-11-23,12122,11973,,,11973,,,,,BCIC,2023-05-10
+Revolver,First Lien,Services: Business,10.3%,,,,1.00%,,2027-11-23,436,423,,,423,,,,,BCIC,2023-05-10
+First Lien Term Loan A,First Lien,Healthcare & Pharmaceuticals,9.7%,,,,,,2024-10-01,2707,2489,,,2489,,,,,BCIC,2023-05-10
+Term Loan,First Lien,"Hotel, Gaming & Leisure",12.5%,,,,,,2028-05-29,5653,5568,,,5568,,,,,BCIC,2023-05-10
+Term Loan,First Lien,"Hotel, Gaming & Leisure",10.4%,,,,0.75%,,2027-07-21,4750,4677,,,4677,,,,,BCIC,2023-05-10
+First Lien Term Loan B,First Lien,Construction & Building,10.0%,,,,1.00%,,2023-04-11,6990,6884,,,6884,,,,,BCIC,2023-05-10
+Revolver,First Lien,Construction & Building,10.0%,,,,1.00%,,2023-04-11,343,338,,,338,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Aerospace and Defense,10.2%,,,,1.00%,,2027-04-01,3704,3285,,,3285,,,,,BCIC,2023-05-10
+Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",10.8%,,,,1.00%,,2028-08-11,5504,5382,,,5382,,,,,BCIC,2023-05-10
+Revolver,First Lien,"Banking, Finance, Insurance & Real Estate",0.5%,,,,1.00%,,2028-08-11,,25,,,25,,,,,BCIC,2023-05-10
+Revolver,First Lien,Healthcare & Pharmaceuticals,0.5%,,,,1.00%,,2026-12-06,,2,,,2,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Healthcare & Pharmaceuticals,10.0%,,,,1.00%,,2027-12-06,8008,7436,,,7436,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Automotive,7.0%,,,,1.00%,,2024-09-28,6267,5936,,,5936,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Automotive,8.0%,,,,1.00%,,2024-09-28,417,377,,,377,,,,,BCIC,2023-05-10
+First Lien Term Loan A,First Lien,Automotive,7.7%,,,,1.00%,,2024-09-28,182,182,,,182,,,,,BCIC,2023-05-10
+First Lien Term Loan B,First Lien,Automotive,8.0%,,,,1.00%,,2024-09-28,180,180,,,180,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Finance,12.7%,,,,1.00%,,2027-12-14,10000,9802,,,9802,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Healthcare & Pharmaceuticals,9.9%,,,,1.25%,,2023-07-26,5326,5177,,,5177,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Services: Business,10.8%,,,,1.00%,,2026-12-09,6918,6861,,,6861,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,Services: Business,10.8%,,,,1.00%,,2026-06-09,2886,2888,,,2888,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Services: Business,11.7%,,,,1.00%,,2023-12-29,4949,4889,,,4889,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Services: Business,11.7%,,,,1.00%,,2023-12-29,404,403,,,403,,,,,BCIC,2023-05-10
+Revolver,First Lien,Services: Business,11.4%,,,,1.00%,,2023-12-29,384,378,,,378,,,,,BCIC,2023-05-10
+Revolver,First Lien,Services: Business,13.5%,,,,1.00%,,2023-12-29,225,222,,,222,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,Services: Business,11.7%,,,,1.00%,,2023-12-29,453,447,,,447,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Services: Business,11.7%,,,,1.00%,,2023-12-29,705,703,,,703,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,Services: Business,11.7%,,,,1.00%,,2023-12-29,748,747,,,747,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Media: Broadcasting & Subscription,8.8%,,,,0.50%,,2029-04-11,2000,1782,,,1782,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,High Tech Industries,9.7%,,,,0.75%,,2029-06-09,3335,3312,,,3312,,,,,BCIC,2023-05-10
+Revolver,First Lien,High Tech Industries,0.5%,,,,0.75%,,2029-06-09,,11,,,11,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan - First Lien,First Lien,High Tech Industries,0.1%,,,,0.75%,,2029-06-09,,2,,,2,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Metals & Mining,8.0%,,,,,,2023-04-28,14551,14551,,,14551,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Transportation: Consumer,10.6%,,,,1.00%,,2027-04-29,7766,7653,,,7653,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",9.2%,,,,1.00%,,2024-10-21,730,685,,,685,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",9.2%,,,,1.00%,,2024-10-19,2496,2340,,,2340,,,,,BCIC,2023-05-10
+Incremental First Lien Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",9.2%,,,,1.00%,,2024-10-21,1509,1416,,,1416,,,,,BCIC,2023-05-10
+Senior Term Loan A,First Lien,High Tech Industries,5.0%,,,,,,2026-04-04,1623,1394,,,1394,,,,,BCIC,2023-05-10
+Senior Term Loan B,First Lien,High Tech Industries,7.0%,,,,,,2026-04-04,1485,1287,,,1287,,,,,BCIC,2023-05-10
+Super Senior Term Loan B,First Lien,High Tech Industries,9.0%,,,,,,2026-04-04,1152,1142,,,1142,,,,,BCIC,2023-05-10
+Term Loan,First Lien,High Tech Industries,10.0%,,,,,,2026-04-04,55,54,,,54,,,,,BCIC,2023-05-10
+Term Loan,First Lien,High Tech Industries,10.0%,,,,,,2026-04-04,382,379,,,379,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Healthcare & Pharmaceuticals,10.1%,,,,1.00%,,2025-01-02,2043,2029,,,2029,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,Healthcare & Pharmaceuticals,10.1%,,,,1.00%,,2025-01-02,554,534,,,534,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,High Tech Industries,10.5%,,,,1.00%,,2027-04-22,7504,7474,,,7474,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Transportation: Cargo,10.1%,,,,0.50%,,2029-06-08,7980,7201,,,7201,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,High Tech Industries,9.8%,,,,1.00%,,2029-06-15,8000,7476,,,7476,,,,,BCIC,2023-05-10
+Initial Term Loan,First Lien,"Containers, Packaging and Glass",9.5%,,,,1.00%,,2024-08-03,2758,2754,,,2754,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,High Tech Industries,10.7%,,,,1.00%,,2025-07-18,5360,4749,,,4749,,,,,BCIC,2023-05-10
+Term B Loan,First Lien,Healthcare & Pharmaceuticals,8.6%,,,,,,2025-07-09,7000,6347,,,6347,,,,,BCIC,2023-05-10
+Initial Term Loan,First Lien,Aerospace and Defense,10.5%,,,,1.00%,,2025-03-29,6148,6112,,,6112,,,,,BCIC,2023-05-10
+First Lien Term Loan,First Lien,Transportation: Cargo,10.3%,,,,0.75%,,2028-03-24,4484,4382,,,4382,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Telecommunications,9.2%,,,,1.00%,,2024-11-01,990,952,,,952,,,,,BCIC,2023-05-10
+Senior Notes,First Lien,"Banking, Finance, Insurance & Real Estate",9.0%,,,,,,2027-09-20,3150,2655,,,2655,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Retail,10.7%,,,,1.00%,,2024-05-01,6237,5897,,,5897,,,,,BCIC,2023-05-10
+Last Out Term Loan,First Lien,Services: Business,15.4%,,,,2.00%,,2024-08-01,5460,5132,,,5132,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Healthcare & Pharmaceuticals,8.7%,,,,0.75%,,2027-12-22,1687,1684,,,1684,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",10.0%,,,,1.00%,,2027-10-02,7953,7937,,,7937,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,"Banking, Finance, Insurance & Real Estate",10.4%,,,,1.00%,,2027-10-02,2366,2356,,,2356,,,,,BCIC,2023-05-10
+Initial Term Loan,First Lien,"Healthcare, Education and Childcare",9.9%,,,,1.00%,,2024-06-28,5516,5508,,,5508,,,,,BCIC,2023-05-10
+Delayed Draw Term Loan,First Lien,"Healthcare, Education and Childcare",9.9%,,,,1.00%,,2024-06-28,728,727,,,727,,,,,BCIC,2023-05-10
+Initial Term Loan,First Lien,Aerospace and Defense,10.8%,,,,1.00%,,2023-09-08,903,901,,,901,,,,,BCIC,2023-05-10
+First Lien Term Loan - Last Out Lender,First Lien,"Banking, Finance, Insurance & Real Estate",9.6%,,,,0.75%,,2023-11-30,7000,6978,,,6978,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Media: Diversified & Production,9.7%,,,,1.00%,,2024-11-18,1950,1935,,,1935,,,,,BCIC,2023-05-10
+Term Loan Second Lien,First Lien,Services: Business,10.9%,,,,0.50%,,2029-07-23,4000,3975,,,3975,,,,,BCIC,2023-05-10
+Term Loan,First Lien,High Tech Industries,11.7%,,,,,,2029-02-16,5400,5389,,,5389,,,,,BCIC,2023-05-10
+Initial Term Loan,First Lien,Telecommunications,11.9%,,,,,,2026-07-23,400,376,,,376,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Telecommunications,14.2%,,,,,,2026-11-29,1500,1487,,,1487,,,,,BCIC,2023-05-10
+Initial Term Loan,First Lien,Metals & Mining,12.7%,,,,,,2025-09-29,1400,1295,,,1295,,,,,BCIC,2023-05-10
+Initial Term Loan,First Lien,Forest Products & Paper,14.2%,,,,1.00%,,2024-11-21,1600,1589,,,1589,,,,,BCIC,2023-05-10
+Term Loan,First Lien,High Tech Industries,10.5%,,,,0.75%,,2029-02-04,6000,5953,,,5953,,,,,BCIC,2023-05-10
+Term Loan Second Lien,First Lien,High Tech Industries,12.0%,,,,0.50%,,2028-12-01,6000,5958,,,5958,,,,,BCIC,2023-05-10
+Initial Term Loan,First Lien,Electronics,11.4%,,,,,,2026-09-04,7700,7391,,,7391,,,,,BCIC,2023-05-10
+Term Loan Second Lien,First Lien,Healthcare & Pharmaceuticals,12.9%,,,,1.00%,,2027-03-05,1200,1132,,,1132,,,,,BCIC,2023-05-10
+Sub Note,First Lien,Capital Equipment,17.8%,,,,,,2023-01-31,1931,1931,,,1931,,,,,BCIC,2023-05-10
+2nd Lien TL,First Lien,High Tech Industries,12.2%,,,,0.50%,,2030-07-20,5000,4906,,,4906,,,,,BCIC,2023-05-10
+Term Loan,First Lien,High Tech Industries,12.1%,,,,0.75%,,2029-04-16,4566,4498,,,4498,,,,,BCIC,2023-05-10
+Initial Term Loan,First Lien,Capital Equipment,12.8%,,,,1.00%,,2026-02-28,3000,2988,,,2988,,,,,BCIC,2023-05-10
+Initial Term Loan,First Lien,Automotive,11.1%,,,,1.00%,,2026-02-02,700,654,,,654,,,,,BCIC,2023-05-10
+Term Loan,First Lien,Textiles and Leather,11.9%,,,,1.00%,,2024-08-24,12808,12689,,,12689,,,,,BCIC,2023-05-10
+Initial Term Loan,First Lien,"Healthcare, Education and Childcare",11.4%,,,,1.00%,,2026-03-13,3500,3491,,,3491,,,,,BCIC,2023-05-10

@@ -1,432 +1,791 @@
-company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
-Jonathan Acquisition Company,co_2b0df6f58fee,First Lien,,10.45%,,SOFR,5%,,,,2684,2641,2659,0.15%,2641,,,,,,MSDL,2024-03-01
-Mantech International CP 1,co_f37e84ef45c4,First Lien,,11.13%,,SOFR,5.75%,,,,355,349,0,0.02%,349,56,,,,,MSDL,2024-03-01
-Mantech International CP 2,co_f37e84ef45c4,First Lien,,11.13%,,SOFR,5.75%,,,,31,30,0,0%,30,53,,,,,MSDL,2024-03-01
-Mantech International CP 3,co_f37e84ef45c4,First Lien,,11.13%,,SOFR,5.75%,,,,0,-1,0,0%,-1,,,,,,MSDL,2024-03-01
-PCX Holding Corp.,co_ef3656896e7a,First Lien,,11.75%,,SOFR,6.25%,,,,18047,17936,17944,1.04%,17936,,,,,,MSDL,2024-03-01
-PCX Holding Corp.,co_ef3656896e7a,First Lien,,11.75%,,SOFR,6.25%,,,,18172,17937,18068,1.05%,17937,,,,,,MSDL,2024-03-01
-PCX Holding Corp.,co_ef3656896e7a,First Lien,,11.75%,,SOFR,6.25%,,,,864,854,853,0.05%,854,,,,,,MSDL,2024-03-01
-Two Six Labs LLC,co_fa694859da73,First Lien,,10.85%,,SOFR,5.5%,,,,25894,25465,-48,1.47%,25465,2134,,,,,MSDL,2024-03-01
-Two Six Labs LLC,co_fa694859da73,First Lien,,10.85%,,SOFR,5.5%,,,,4231,4169,4136,0.24%,4169,,,,,,MSDL,2024-03-01
-Two Six Labs LLC,co_fa694859da73,First Lien,,10.85%,,SOFR,5.5%,,,,0,-26,-48,0%,-26,,,,,,MSDL,2024-03-01
-AGI-CFI Holdings Inc.,co_12186169ddbd,First Lien,,11.18%,,SOFR,5.75%,,,,14263,14048,14159,0.82%,14048,,,,,,MSDL,2024-03-01
-Omni Intermediate Holdings LLC,co_e1a292c2bcb6,First Lien,Media & Entertainment,10.54%,,SOFR,5%,,,,12410,12324,-7,0.69%,12324,138,,,,,MSDL,2024-03-01
-Omni Intermediate Holdings LLC,co_e1a292c2bcb6,First Lien,Media & Entertainment,10.54%,,SOFR,5%,,,,1263,1247,-11,0.07%,1247,233,,,,,MSDL,2024-03-01
-Omni Intermediate Holdings LLC,co_e1a292c2bcb6,First Lien,Media & Entertainment,12.5%,,SOFR,4%,,,,832,826,781,0.05%,826,,,,,,MSDL,2024-03-01
-RoadOne IntermodaLogistics 1,co_d85663c58756,First Lien,Transportation & Logistics,11.61%,,SOFR,6.25%,,,,1655,1612,-5,0.09%,1612,273,,,,,MSDL,2024-03-01
-RoadOne IntermodaLogistics 2,co_d85663c58756,First Lien,Transportation & Logistics,11.61%,,SOFR,6.25%,,,,152,144,-6,0.01%,144,309,,,,,MSDL,2024-03-01
-RoadOne IntermodaLogistics 3,co_d85663c58756,First Lien,Transportation & Logistics,11.61%,,SOFR,6.25%,,,,20,12,14,0%,12,,,,,,MSDL,2024-03-01
-Continental Battery Company,co_636215f6acdc,First Lien,,12.34%,4.08%,SOFR,6.75%,,,,6204,6121,5165,0.3%,6121,,,,,,MSDL,2024-03-01
-Randy's Holdings Inc.,co_6db8ca7e3f44,First Lien,,11.87%,,SOFR,6.5%,,,,6676,6505,-8,0.39%,6505,2248,,,,,MSDL,2024-03-01
-Randy's Holdings Inc.,co_6db8ca7e3f44,First Lien,,11.87%,,SOFR,6.5%,,,,0,-27,-2,0%,-27,639,,,,,MSDL,2024-03-01
-Randy's Holdings Inc.,co_6db8ca7e3f44,First Lien,,11.87%,,SOFR,6.5%,,,,260,238,257,0.01%,238,,,,,,MSDL,2024-03-01
-Sonny's Enterprises LLC,co_fc8ca195e3a6,First Lien,,12.28%,,SOFR,6.75%,,,,46018,45462,46018,2.67%,45462,,,,,,MSDL,2024-03-01
-Spectrum Automotive Holdings Corp.,co_15a3782db96e,First Lien,Automotive,11.22%,,SOFR,5.75%,,,,23410,23162,-26,1.33%,23162,1154,,,,,MSDL,2024-03-01
-Spectrum Automotive Holdings Corp.,co_15a3782db96e,First Lien,Automotive,11.22%,,SOFR,5.75%,,,,5366,5301,-20,0.3%,5301,881,,,,,MSDL,2024-03-01
-Spectrum Automotive Holdings Corp.,co_15a3782db96e,First Lien,Automotive,11.22%,,SOFR,5.75%,,,,0,-8,-20,0%,-8,,,,,,MSDL,2024-03-01
-ARI Network Services Inc.,co_77e62450b687,First Lien,Business Services,10.6%,,SOFR,5.25%,,,,20512,20369,20315,1.18%,20369,,,,,,MSDL,2024-03-01
-ARI Network Services Inc.,co_77e62450b687,First Lien,Business Services,10.6%,,SOFR,5.25%,,,,3594,3569,3559,0.21%,3569,,,,,,MSDL,2024-03-01
-ARI Network Services Inc.,co_77e62450b687,First Lien,Business Services,10.6%,,SOFR,5.25%,,,,0,-19,-29,0%,-19,,,,,,MSDL,2024-03-01
-Summit Buyer LLC,co_6ae4e9bec688,First Lien,,11.26%,,SOFR,5.75%,,,,21896,21670,-5,1.24%,21670,197,,,,,MSDL,2024-03-01
-Summit Buyer LLC,co_6ae4e9bec688,First Lien,,11.26%,,SOFR,5.75%,,,,32011,31671,-59,1.82%,31671,2443,,,,,MSDL,2024-03-01
-Summit Buyer LLC,co_6ae4e9bec688,First Lien,,13.25%,,SOFR,4.75%,,,,0,-22,-59,0%,-22,,,,,,MSDL,2024-03-01
-Turbo Buyer Inc.,co_8cff08261721,First Lien,,11.5%,,SOFR,6%,,,,37555,37197,37202,2.16%,37197,,,,,,MSDL,2024-03-01
-Turbo Buyer Inc.,co_8cff08261721,First Lien,,11.5%,,SOFR,6%,,,,37738,37306,37383,2.17%,37306,,,,,,MSDL,2024-03-01
-GraphPad Software LLC,co_61592fde437f,First Lien,Software & Technology,11.2%,,SOFR,5.5%,,,,14807,14714,14751,0.86%,14714,,,,,,MSDL,2024-03-01
-GraphPad Software LLC,co_61592fde437f,First Lien,Software & Technology,13.5%,,SOFR,5%,,,,875,866,868,0.05%,866,,,,,,MSDL,2024-03-01
-Tank Holding Corp.,co_b2a29c9530cb,First Lien,,11.21%,,SOFR,5.75%,,,,15713,15452,-10,0.87%,15452,494,,,,,MSDL,2024-03-01
-Tank Holding Corp.,co_b2a29c9530cb,First Lien,,11.21%,,SOFR,5.75%,,,,250,237,-26,0.01%,237,587,,,,,MSDL,2024-03-01
-Tank Holding Corp.,co_b2a29c9530cb,First Lien,,11.21%,,SOFR,5.75%,,,,213,202,177,0.01%,202,,,,,,MSDL,2024-03-01
-V Global Holdings LLC,co_e97d0109499f,First Lien,,11.21%,,SOFR,5.75%,,,,4854,4780,4756,0.28%,4780,,,,,,MSDL,2024-03-01
-V Global Holdings LLC,co_e97d0109499f,First Lien,,11.21%,,SOFR,5.75%,,,,276,269,262,0.02%,269,,,,,,MSDL,2024-03-01
-365 Retail Markets LLC,co_65cd0a23340e,First Lien,Consumer & Retail,10.3%,,SOFR,4.75%,,,,17105,16922,17105,0.99%,16922,,,,,,MSDL,2024-03-01
-365 Retail Markets LLC,co_65cd0a23340e,First Lien,Consumer & Retail,10.3%,,SOFR,4.75%,,,,5488,5442,5488,0.32%,5442,,,,,,MSDL,2024-03-01
-365 Retail Markets LLC,co_65cd0a23340e,First Lien,Consumer & Retail,10.3%,,SOFR,4.75%,,,,0,-27,0,0%,-27,,,,,,MSDL,2024-03-01
-Atlas Us Finco Inc.,co_e4ca4d595e3b,First Lien,,12.51%,,SOFR,7.25%,,,,2009,1955,2009,0.12%,1955,,,,,,MSDL,2024-03-01
-Atlas Us Finco Inc.,co_e4ca4d595e3b,First Lien,,12.51%,,SOFR,7.25%,,,,0,-5,0,0%,-5,,,,,,MSDL,2024-03-01
-BPG Holdings IV Corp.,co_bca2c4f52e0e,First Lien,,11.36%,,SOFR,6%,,,,11647,10972,11374,0.66%,10972,,,,,,MSDL,2024-03-01
-Encore Holdings LLC,co_7640b5885d7f,First Lien,,10.45%,,SOFR,4.5%,,,,1831,1807,0,0.11%,1807,539,,,,,MSDL,2024-03-01
-Encore Holdings LLC,co_7640b5885d7f,First Lien,,10.45%,,SOFR,4.5%,,,,3561,3511,3561,0.21%,3511,,,,,,MSDL,2024-03-01
-Encore Holdings LLC,co_7640b5885d7f,First Lien,,10.45%,,SOFR,4.5%,,,,0,-6,0,0%,-6,,,,,,MSDL,2024-03-01
-Energy Labs Holdings Corp.,co_beb5f022627c,First Lien,Energy,10.71%,,SOFR,5.25%,,,,384,379,379,0.02%,379,,,,,,MSDL,2024-03-01
-Energy Labs Holdings Corp.,co_beb5f022627c,First Lien,Energy,10.71%,,SOFR,5.25%,,,,36,36,36,0%,36,,,,,,MSDL,2024-03-01
-Energy Labs Holdings Corp.,co_beb5f022627c,First Lien,Energy,10.71%,,SOFR,5.25%,,,,24,23,23,0%,23,,,,,,MSDL,2024-03-01
-FLS Holding Inc.,co_e3560cffb79c,First Lien,,10.77%,,SOFR,5.25%,,,,19025,18733,18911,1.1%,18733,,,,,,MSDL,2024-03-01
-FLS Holding Inc.,co_e3560cffb79c,First Lien,,10.77%,,SOFR,5.25%,,,,4461,4390,4434,0.26%,4390,,,,,,MSDL,2024-03-01
-FLS Holding Inc.,co_e3560cffb79c,First Lien,,10.77%,,SOFR,5.25%,,,,0,-24,-11,0%,-24,,,,,,MSDL,2024-03-01
-Helios Service Partners LLC,co_2f1e957e6999,First Lien,Business Services,11.88%,,SOFR,6.25%,,,,6859,6703,-59,0.39%,6703,5933,,,,,MSDL,2024-03-01
-Helios Service Partners LLC,co_2f1e957e6999,First Lien,Business Services,11.88%,,SOFR,6.25%,,,,6965,6737,-5,0.4%,6737,542,,,,,MSDL,2024-03-01
-Helios Service Partners LLC,co_2f1e957e6999,First Lien,Business Services,11.62%,,SOFR,6%,,,,748,719,735,0.04%,719,,,,,,MSDL,2024-03-01
-Iris Buyer LLC,co_5a3c5d292df0,First Lien,,11.6%,,SOFR,6.25%,,,,7008,6820,-13,0.4%,6820,856,,,,,MSDL,2024-03-01
-Iris Buyer LLC,co_5a3c5d292df0,First Lien,,11.6%,,SOFR,6.25%,,,,145,130,-26,0.01%,130,1001,,,,,MSDL,2024-03-01
-Iris Buyer LLC,co_5a3c5d292df0,First Lien,,11.6%,,SOFR,6.25%,,,,0,-26,-26,0%,-26,,,,,,MSDL,2024-03-01
-Atlas US Finco Inc.,co_e4ca4d595e3b,First Lien,,12.51%,,SOFR,7.25%,,,,6984,6845,6845,0.4%,6845,,,,,,MSDL,2024-03-01
-PDFTron Systems Inc.,co_2a86bc4652e1,First Lien,,10.86%,,SOFR,5.5%,,,,30030,29694,29550,1.72%,29694,,,,,,MSDL,2024-03-01
-PDFTron Systems Inc.,co_2a86bc4652e1,First Lien,,10.86%,,SOFR,5.5%,,,,9727,9595,9571,0.56%,9595,,,,,,MSDL,2024-03-01
-PDFTron Systems Inc.,co_2a86bc4652e1,First Lien,,10.86%,,SOFR,5.5%,,,,3850,3772,3727,0.22%,3772,,,,,,MSDL,2024-03-01
-Procure Acquireco Inc.,co_53e701d14316,First Lien,,10.54%,,SOFR,5%,,,,3889,3829,-7,0.22%,3829,238,,,,,MSDL,2024-03-01
-Procure Acquireco Inc.,co_53e701d14316,First Lien,,10.54%,,SOFR,5%,,,,192,189,186,0.01%,189,,,,,,MSDL,2024-03-01
-Procure Acquireco Inc.,co_53e701d14316,First Lien,,10.54%,,SOFR,5%,,,,0,-3,-7,0%,-3,,,,,,MSDL,2024-03-01
-Sherlock Buyer Corp.,co_0b97d370b799,First Lien,,11.2%,,SOFR,5.75%,,,,10950,10782,-2,0.64%,10782,3215,,,,,MSDL,2024-03-01
-Sherlock Buyer Corp.,co_0b97d370b799,First Lien,,11.2%,,SOFR,5.75%,,,,0,-23,-1,0%,-23,1286,,,,,MSDL,2024-03-01
-Sherlock Buyer Corp.,co_0b97d370b799,First Lien,,11.2%,,SOFR,5.75%,,,,0,-17,-1,0%,-17,,,,,,MSDL,2024-03-01
-Surewerx Purchaser III Inc.,co_c013dd202bd3,First Lien,,12.1%,,SOFR,6.75%,,,,5447,5300,0,0.32%,5300,1128,,,,,MSDL,2024-03-01
-Surewerx Purchaser III Inc.,co_c013dd202bd3,First Lien,,12.1%,,SOFR,6.75%,,,,0,-19,0,0%,-19,494,,,,,MSDL,2024-03-01
-Surewerx Purchaser III Inc.,co_c013dd202bd3,First Lien,,12.1%,,SOFR,6.75%,,,,574,547,574,0.03%,547,,,,,,MSDL,2024-03-01
-Sweep Purchaser LLC,co_04b9c34b651f,First Lien,,11.23%,,SOFR,5.75%,,,,8616,8522,-55,0.4%,8522,273,,,,,MSDL,2024-03-01
-Sweep Purchaser LLC,co_04b9c34b651f,First Lien,,11.23%,,SOFR,5.75%,,,,5873,5803,-6,0.27%,5803,28,,,,,MSDL,2024-03-01
-Sweep Purchaser LLC,co_04b9c34b651f,First Lien,,11.23%,,SOFR,5.75%,,,,1378,1364,1094,0.06%,1364,,,,,,MSDL,2024-03-01
-Tamarack Intermediate LLC,co_80a67a17c23e,First Lien,Media & Entertainment,11.28%,,SOFR,5.75%,,,,5548,5462,-6,0.31%,5462,398,,,,,MSDL,2024-03-01
-Tamarack Intermediate LLC,co_80a67a17c23e,First Lien,Media & Entertainment,11.28%,,SOFR,5.75%,,,,202,192,-22,0.01%,192,900,,,,,MSDL,2024-03-01
-Tamarack Intermediate LLC,co_80a67a17c23e,First Lien,Media & Entertainment,11.28%,,SOFR,5.75%,,,,0,-13,-22,0%,-13,,,,,,MSDL,2024-03-01
-United Flow Technologies Intermediate Holdco II LLC,co_c6b36cdabde6,First Lien,Media & Entertainment,11.28%,,SOFR,5.75%,,,,16801,16566,0,0.96%,16566,32,,,,,MSDL,2024-03-01
-United Flow Technologies Intermediate Holdco II LLC,co_c6b36cdabde6,First Lien,Media & Entertainment,11.28%,,SOFR,5.75%,,,,19651,19349,-15,1.13%,19349,1155,,,,,MSDL,2024-03-01
-United Flow Technologies Intermediate Holdco II LLC,co_c6b36cdabde6,First Lien,Media & Entertainment,11.28%,,SOFR,5.75%,,,,1845,1811,1805,0.1%,1811,,,,,,MSDL,2024-03-01
-US Infra Svcs Buyer LLC,co_f97030249011,First Lien,,12.33%,0.5%,SOFR,7.25%,,,,14973,14842,14193,0.82%,14842,,,,,,MSDL,2024-03-01
-US Infra Svcs Buyer LLC,co_f97030249011,First Lien,,12.33%,0.5%,SOFR,7.25%,,,,2113,2095,2003,0.12%,2095,,,,,,MSDL,2024-03-01
-US Infra Svcs Buyer LLC,co_f97030249011,First Lien,,12.33%,0.5%,SOFR,7.25%,,,,2250,2233,2133,0.12%,2233,,,,,,MSDL,2024-03-01
-Vensure Employer Services Inc.,co_13ff515df3b0,First Lien,Business Services,10.63%,,SOFR,5.25%,,,,328,306,-20,0.02%,306,2362,,,,,MSDL,2024-03-01
-VRC Companies LLC,co_0df1ee612826,First Lien,,11.12%,,SOFR,5.75%,,,,63939,63310,-2,3.71%,63310,1653,,,,,MSDL,2024-03-01
-VRC Companies LLC,co_0df1ee612826,First Lien,,11.12%,,SOFR,5.75%,,,,9063,8966,9051,0.53%,8966,,,,,,MSDL,2024-03-01
-VRC Companies LLC,co_0df1ee612826,First Lien,,11.12%,,SOFR,5.75%,,,,0,-15,-2,0%,-15,,,,,,MSDL,2024-03-01
-KPSKY Acquisition Inc.,co_c28869bd420a,First Lien,,10.74%,,SOFR,5.25%,,,,33864,33358,33085,1.92%,33358,,,,,,MSDL,2024-03-01
-KPSKY Acquisition Inc.,co_c28869bd420a,First Lien,,10.74%,,SOFR,5.25%,,,,7754,7630,7576,0.44%,7630,,,,,,MSDL,2024-03-01
-LJ Avalon Holdings LLC,co_27e9144fc6e4,First Lien,,12.04%,,SOFR,6.5%,,,,4131,4019,-24,0.23%,4019,1028,,,,,MSDL,2024-03-01
-LJ Avalon Holdings LLC,co_27e9144fc6e4,First Lien,,12.04%,,SOFR,6.5%,,,,658,626,-16,0.04%,626,675,,,,,MSDL,2024-03-01
-LJ Avalon Holdings LLC,co_27e9144fc6e4,First Lien,,12.04%,,SOFR,6.5%,,,,0,-17,-15,0%,-17,,,,,,MSDL,2024-03-01
-Superman Holdings LLC,co_3d26abc6b8f1,First Lien,,11.47%,,SOFR,6.13%,,,,1601,1566,1581,0.09%,1566,,,,,,MSDL,2024-03-01
-Superman Holdings LLC,co_3d26abc6b8f1,First Lien,,11.47%,,SOFR,6.13%,,,,0,-4,-5,0%,-4,,,,,,MSDL,2024-03-01
-BP Purchaser LLC,co_8150b35b92d0,First Lien,,10.95%,,SOFR,5.5%,,,,17161,16898,16677,0.97%,16898,,,,,,MSDL,2024-03-01
-FORTIS Solutions Group LLC,co_b6fefea7ff47,First Lien,,10.95%,,SOFR,5.5%,,,,26772,26371,0,1.56%,26371,908,,,,,MSDL,2024-03-01
-FORTIS Solutions Group LLC,co_b6fefea7ff47,First Lien,,10.95%,,SOFR,5.5%,,,,104,96,0,0.01%,96,2564,,,,,MSDL,2024-03-01
-FORTIS Solutions Group LLC,co_b6fefea7ff47,First Lien,,10.95%,,SOFR,5.5%,,,,135,101,135,0.01%,101,,,,,,MSDL,2024-03-01
-48Forty Solutions LLC,co_b865ac32662f,First Lien,,11.44%,,SOFR,6%,,,,17722,17455,16618,0.97%,17455,,,,,,MSDL,2024-03-01
-48Forty Solutions LLC,co_b865ac32662f,First Lien,,13.5%,,SOFR,5%,,,,1629,1594,1459,0.08%,1594,,,,,,MSDL,2024-03-01
-ABB Concise Optical Group LLC,co_f5de8ecab726,First Lien,,13.01%,,SOFR,7.5%,,,,17008,16685,14653,0.85%,16685,,,,,,MSDL,2024-03-01
-Avalara Inc.,co_a4b384bba79c,First Lien,,12.6%,,SOFR,7.25%,,,,11302,11070,11302,0.66%,11070,,,,,,MSDL,2024-03-01
-Avalara Inc.,co_a4b384bba79c,First Lien,,12.6%,,SOFR,7.25%,,,,0,-22,0,0%,-22,,,,,,MSDL,2024-03-01
-Bradyifs Holdings LLC,co_1c893846e0e9,First Lien,,11.38%,,SOFR,6%,,,,7444,7298,-8,0.42%,7298,619,,,,,MSDL,2024-03-01
-Bradyifs Holdings LLC,co_1c893846e0e9,First Lien,,11.38%,,SOFR,6%,,,,201,191,-12,0.01%,191,631,,,,,MSDL,2024-03-01
-Bradyifs Holdings LLC,co_1c893846e0e9,First Lien,,11.38%,,SOFR,6%,,,,0,-12,-12,0%,-12,,,,,,MSDL,2024-03-01
-PT Intermediate Holdings III LLC,co_f22783f7edc5,First Lien,Media & Entertainment,11.47%,,SOFR,5.98%,,,,28342,28128,27257,1.58%,28128,,,,,,MSDL,2024-03-01
-PT Intermediate Holdings III LLC,co_f22783f7edc5,First Lien,Media & Entertainment,11.47%,,SOFR,5.98%,,,,15768,15646,15164,0.88%,15646,,,,,,MSDL,2024-03-01
-Apex Service Partners LLC,co_443c5661a0e9,First Lien,Business Services,12.38%,2%,SOFR,7%,,,,31834,31235,-73,1.81%,31235,5922,,,,,MSDL,2024-03-01
-Apex Service Partners LLC,co_443c5661a0e9,First Lien,Business Services,12.38%,2%,SOFR,7%,,,,1692,1598,-43,0.09%,1598,2335,,,,,MSDL,2024-03-01
-Apex Service Partners LLC,co_443c5661a0e9,First Lien,Business Services,12.38%,2%,SOFR,7%,,,,203,156,156,0.01%,156,,,,,,MSDL,2024-03-01
-Assembly Intermediate LLC,co_313b73e899fa,First Lien,Media & Entertainment,11.45%,,SOFR,6%,,,,20741,20451,-58,1.16%,20451,1556,,,,,MSDL,2024-03-01
-Assembly Intermediate LLC,co_313b73e899fa,First Lien,Media & Entertainment,11.45%,,SOFR,6%,,,,3630,3568,-78,0.2%,3568,2074,,,,,MSDL,2024-03-01
-Assembly Intermediate LLC,co_313b73e899fa,First Lien,Media & Entertainment,11.45%,,SOFR,6%,,,,0,-26,-78,0%,-26,,,,,,MSDL,2024-03-01
-FPG Intermediate Holdco LLC,co_8b5ca56a4501,First Lien,Media & Entertainment,12.04%,,SOFR,6.5%,,,,418,412,385,0.02%,412,,,,,,MSDL,2024-03-01
-Groundworks LLC,co_a472bc28d7de,First Lien,,11.9%,,SOFR,6.5%,,,,1164,1134,0,0.07%,1134,54,,,,,MSDL,2024-03-01
-Groundworks LLC,co_a472bc28d7de,First Lien,,11.9%,,SOFR,6.5%,,,,28,25,0,0%,25,62,,,,,MSDL,2024-03-01
-Groundworks LLC,co_a472bc28d7de,First Lien,,11.9%,,SOFR,6.5%,,,,0,-2,0,0%,-2,,,,,,MSDL,2024-03-01
-Heartland Home Services Inc.,co_ed8b22d2b973,First Lien,Business Services,11.11%,,SOFR,5.75%,,,,1946,1936,1942,0.11%,1936,,,,,,MSDL,2024-03-01
-Lightspeed Solution LLC,co_f180c82319de,First Lien,,11.86%,2.17%,SOFR,6.5%,,,,7881,7768,7741,0.45%,7768,,,,,,MSDL,2024-03-01
-Lightspeed Solution LLC,co_f180c82319de,First Lien,,11.86%,2.17%,SOFR,6.5%,,,,423,402,379,0.02%,402,,,,,,MSDL,2024-03-01
-LUV Car Wash Group LLC,co_f6ae1cb917b9,First Lien,Automotive,12.55%,,SOFR,7%,,,,714,708,-1,0.04%,708,274,,,,,MSDL,2024-03-01
-Magnolia Wash Holdings 1,co_c3634ceaa298,First Lien,,12.16%,,SOFR,6.5%,,,,3263,3210,2947,0.17%,3210,,,,,,MSDL,2024-03-01
-Magnolia Wash Holdings 2,co_c3634ceaa298,First Lien,,12.16%,,SOFR,6.5%,,,,699,687,631,0.04%,687,,,,,,MSDL,2024-03-01
-Magnolia Wash Holdings 3,co_c3634ceaa298,First Lien,,12.16%,,SOFR,6.5%,,,,87,85,72,0%,85,,,,,,MSDL,2024-03-01
-Spotless Brands LLC,co_9e457409bbbe,First Lien,,12.03%,,SOFR,6.5%,,,,4503,4429,4463,0.26%,4429,,,,,,MSDL,2024-03-01
-Spotless Brands LLC,co_9e457409bbbe,First Lien,,12.03%,,SOFR,6.5%,,,,852,838,845,0.05%,838,,,,,,MSDL,2024-03-01
-Spotless Brands LLC,co_9e457409bbbe,First Lien,,12.03%,,SOFR,6.5%,,,,31,29,30,0%,29,,,,,,MSDL,2024-03-01
-Vertex Service Partners LLC,co_56e3722a1d69,First Lien,Business Services,10.9%,,SOFR,5.5%,,,,1774,1730,-39,0.1%,1730,2562,,,,,MSDL,2024-03-01
-Vertex Service Partners LLC,co_56e3722a1d69,First Lien,Business Services,10.9%,,SOFR,5.5%,,,,854,802,-11,0.05%,802,460,,,,,MSDL,2024-03-01
-Vertex Service Partners LLC,co_56e3722a1d69,First Lien,Business Services,10.9%,,SOFR,5.5%,,,,0,-11,-11,0%,-11,,,,,,MSDL,2024-03-01
-Abracon Group Holdings LLC,co_ccb9bd519d45,First Lien,,11.54%,,SOFR,6%,,,,6037,5943,4986,0.29%,5943,,,,,,MSDL,2024-03-01
-Abracon Group Holdings LLC,co_ccb9bd519d45,First Lien,,11.54%,,SOFR,6%,,,,0,-8,-77,0%,-8,,,,,,MSDL,2024-03-01
-Abracon Group Holdings LLC,co_ccb9bd519d45,First Lien,,11.54%,,SOFR,6%,,,,401,395,331,0.02%,395,,,,,,MSDL,2024-03-01
-Dwyer Instruments Inc.,co_ed86bcf277d1,First Lien,,11.17%,,SOFR,5.75%,,,,10512,10342,-29,0.6%,10342,2954,,,,,MSDL,2024-03-01
-Dwyer Instruments Inc.,co_ed86bcf277d1,First Lien,,11.17%,,SOFR,5.75%,,,,2023,1960,-20,0.11%,1960,1014,,,,,MSDL,2024-03-01
-Dwyer Instruments Inc.,co_ed86bcf277d1,First Lien,,11.17%,,SOFR,5.75%,,,,0,-14,-20,0%,-14,,,,,,MSDL,2024-03-01
-Infinite Bidco LLC,co_e9d3839805c4,First Lien,,11.88%,,SOFR,6.25%,,,,12360,12043,12285,0.71%,12043,,,,,,MSDL,2024-03-01
-Magneto Components Buyco LLC,co_8ee995ad93dc,First Lien,,11.36%,,SOFR,6%,,,,15302,15024,-28,0.87%,15024,3035,,,,,MSDL,2024-03-01
-Magneto Components Buyco LLC,co_8ee995ad93dc,First Lien,,11.36%,,SOFR,6%,,,,0,-28,-46,0%,-28,2529,,,,,MSDL,2024-03-01
-Magneto Components Buyco LLC,co_8ee995ad93dc,First Lien,,11.36%,,SOFR,6%,,,,0,-46,-46,0%,-46,,,,,,MSDL,2024-03-01
-Applitools Inc.,co_2b3f9a60e19f,First Lien,,11.61%,6.25%,,,,,,3584,3541,3498,0.2%,3541,,,,,,MSDL,2024-03-01
-Applitools Inc.,co_2b3f9a60e19f,First Lien,,11.61%,,SOFR,6.25%,,,,0,-6,-10,0%,-6,,,,,,MSDL,2024-03-01
-Cerity Partners LLC,co_6844553dddc7,First Lien,,12.11%,,SOFR,6.75%,,,,4767,4639,4767,0.28%,4639,,,,,,MSDL,2024-03-01
-Cerity Partners LLC,co_6844553dddc7,First Lien,,12.11%,,SOFR,6.75%,,,,6698,6528,6698,0.39%,6528,,,,,,MSDL,2024-03-01
-GC Waves Holdings Inc.,co_f77390a1af0e,First Lien,,11.46%,,SOFR,6%,,,,2302,2259,-113,0.13%,2259,6095,,,,,MSDL,2024-03-01
-GC Waves Holdings Inc.,co_f77390a1af0e,First Lien,,11.46%,,SOFR,6%,,,,628,476,-6,0.03%,476,331,,,,,MSDL,2024-03-01
-GC Waves Holdings Inc.,co_f77390a1af0e,First Lien,,11.46%,,SOFR,6%,,,,0,-6,-6,0%,-6,,,,,,MSDL,2024-03-01
-SitusAMC Holdings Corp.,co_5d6bd5f7b398,First Lien,,10.95%,,SOFR,5.5%,,,,3337,3312,3330,0.19%,3312,,,,,,MSDL,2024-03-01
-Smarsh Inc.,co_d80561116050,First Lien,,11.1%,,SOFR,5.75%,,,,4286,4217,-9,0.24%,4217,536,,,,,MSDL,2024-03-01
-Smarsh Inc.,co_d80561116050,First Lien,,11.1%,,SOFR,5.75%,,,,536,523,-5,0.03%,523,268,,,,,MSDL,2024-03-01
-Smarsh Inc.,co_d80561116050,First Lien,,11.1%,,SOFR,5.75%,,,,0,-4,-5,0%,-4,,,,,,MSDL,2024-03-01
-Trintech Inc.,co_dc9a5cbd7f05,First Lien,,11.86%,,SOFR,6.5%,,,,34086,33440,33445,1.94%,33440,,,,,,MSDL,2024-03-01
-Trintech Inc.,co_dc9a5cbd7f05,First Lien,,11.86%,,SOFR,6.5%,,,,837,782,782,0.05%,782,,,,,,MSDL,2024-03-01
-AMCP Pet Holdings Inc.,co_047b2ac1b997,First Lien,Consumer & Retail,12.5%,0.75%,SOFR,7%,,,,41763,41011,40856,2.37%,41011,,,,,,MSDL,2024-03-01
-AMCP Pet Holdings Inc.,co_047b2ac1b997,First Lien,Consumer & Retail,12.5%,0.75%,SOFR,7%,,,,3798,3715,3671,0.21%,3715,,,,,,MSDL,2024-03-01
-Nellson Nutraceutical Inc.,co_fc50648b0dc4,First Lien,,11.3%,,SOFR,5.75%,,,,18419,18265,18329,1.06%,18265,,,,,,MSDL,2024-03-01
-Teasdale Foods Inc.,co_c2c205ba1c4b,First Lien,Food & Beverage,12.68%,1%,SOFR,7.25%,,,,10837,10742,9928,0.58%,10742,,,,,,MSDL,2024-03-01
-Performance Health Holdings Inc.,co_02063bc4ac7e,First Lien,,11.32%,,SOFR,5.75%,,,,9398,9275,9350,0.54%,9275,,,,,,MSDL,2024-03-01
-PerkinElmer U.S. LLC,co_e640a006f804,First Lien,,12%,,SOFR,6.75%,,,,4383,4268,4373,0.25%,4268,,,,,,MSDL,2024-03-01
-Tidi Legacy Products Inc.,co_a6c31e5d543e,First Lien,,10.86%,,SOFR,5.5%,,,,3470,3400,-9,0.2%,3400,913,,,,,MSDL,2024-03-01
-Tidi Legacy Products Inc.,co_a6c31e5d543e,First Lien,,10.86%,,SOFR,5.5%,,,,0,-9,-13,0%,-9,657,,,,,MSDL,2024-03-01
-Tidi Legacy Products Inc.,co_a6c31e5d543e,First Lien,,10.86%,,SOFR,5.5%,,,,0,-13,-13,0%,-13,,,,,,MSDL,2024-03-01
-YI LLC,co_46126441818e,First Lien,,11.09%,,SOFR,5.75%,,,,5654,5542,-12,0.32%,5542,1178,,,,,MSDL,2024-03-01
-YI LLC,co_46126441818e,First Lien,,11.09%,,SOFR,5.75%,,,,0,-12,-17,0%,-12,883,,,,,MSDL,2024-03-01
-YI LLC,co_46126441818e,First Lien,,11.09%,,SOFR,5.75%,,,,0,-17,-17,0%,-17,,,,,,MSDL,2024-03-01
-Advarra Holdings Inc.,co_2c3cdccbae16,First Lien,,10.61%,,SOFR,5.25%,,,,454,447,447,0.03%,447,,,,,,MSDL,2024-03-01
-Advarra Holdings Inc.,co_2c3cdccbae16,First Lien,,10.61%,,SOFR,5.25%,,,,0,0,-1,0%,0,,,,,,MSDL,2024-03-01
-DCA Investment Holdings LLC,co_188bd5058a84,First Lien,Financial Services,11.85%,,SOFR,6.5%,,,,18680,18377,18247,1.06%,18377,,,,,,MSDL,2024-03-01
-DCA Investment Holdings LLC,co_188bd5058a84,First Lien,Financial Services,11.85%,,SOFR,6.5%,,,,3625,3564,3541,0.21%,3564,,,,,,MSDL,2024-03-01
-Gateway US Holdings Inc.,co_a55d77e94a74,First Lien,,11.85%,,SOFR,6.5%,,,,750,745,750,0.04%,745,,,,,,MSDL,2024-03-01
-Gateway US Holdings Inc.,co_a55d77e94a74,First Lien,,11.85%,,SOFR,6.5%,,,,211,210,211,0.01%,210,,,,,,MSDL,2024-03-01
-Gateway US Holdings Inc.,co_a55d77e94a74,First Lien,,11.85%,,SOFR,6.5%,,,,0,0,0,0%,0,,,,,,MSDL,2024-03-01
-Heartland Veterinary Partners LLC,co_f7d09ce8e62a,First Lien,Healthcare,10.21%,,SOFR,4.75%,,,,1847,1835,1830,0.11%,1835,,,,,,MSDL,2024-03-01
-Heartland Veterinary Partners LLC,co_f7d09ce8e62a,First Lien,Healthcare,10.21%,,SOFR,4.75%,,,,4182,4158,4143,0.24%,4158,,,,,,MSDL,2024-03-01
-Heartland Veterinary Partners LLC,co_f7d09ce8e62a,First Lien,Healthcare,10.21%,,SOFR,4.75%,,,,0,-2,-3,0%,-2,,,,,,MSDL,2024-03-01
-iCIMS Inc.,co_bf6839dcfbb8,First Lien,,12.62%,3.88%,SOFR,7.25%,,,,7064,6963,0,0.41%,6963,101,,,,,MSDL,2024-03-01
-iCIMS Inc.,co_bf6839dcfbb8,First Lien,,12.62%,3.88%,SOFR,7.25%,,,,0,-1,0,0%,-1,38,,,,,MSDL,2024-03-01
-iCIMS Inc.,co_bf6839dcfbb8,First Lien,,12.62%,3.88%,SOFR,7.25%,,,,8,7,8,0%,7,,,,,,MSDL,2024-03-01
-Intelerad Medical Systems Inc.,co_b56720645d0a,First Lien,Healthcare,12.03%,,SOFR,6.5%,,,,495,484,466,0.03%,484,,,,,,MSDL,2024-03-01
-Intelerad Medical Systems Inc.,co_b56720645d0a,First Lien,Healthcare,12.03%,,SOFR,6.5%,,,,34,33,32,0%,33,,,,,,MSDL,2024-03-01
-mPulse Mobile Inc.,co_972bec5eeda6,First Lien,,11.83%,,SOFR,6.5%,,,,40740,39916,39947,2.32%,39916,,,,,,MSDL,2024-03-01
-mPulse Mobile Inc.,co_972bec5eeda6,First Lien,,11.98%,,SOFR,6.5%,,,,5417,5300,5308,0.31%,5300,,,,,,MSDL,2024-03-01
-mPulse Mobile Inc.,co_972bec5eeda6,First Lien,,11.83%,,SOFR,6.5%,,,,0,-60,-59,0%,-60,,,,,,MSDL,2024-03-01
-Pareto Health Intermediate Holdings Inc.,co_bcbf1bc2f293,First Lien,Media & Entertainment,11.97%,,SOFR,6.5%,,,,6745,6619,6695,0.39%,6619,,,,,,MSDL,2024-03-01
-Pareto Health Intermediate Holdings Inc.,co_bcbf1bc2f293,First Lien,Media & Entertainment,11.97%,,SOFR,6.5%,,,,0,-14,-6,0%,-14,,,,,,MSDL,2024-03-01
-PPV Intermediate Holdings LLC,co_56235911ea0a,First Lien,Media & Entertainment,11.14%,,SOFR,5.75%,,,,4357,4198,-124,0.25%,4198,15090,,,,,MSDL,2024-03-01
-PPV Intermediate Holdings LLC,co_56235911ea0a,First Lien,Media & Entertainment,11.14%,,SOFR,5.75%,,,,0,-71,-124,-0.01%,-71,,,,,,MSDL,2024-03-01
-Promptcare Infusion Buyer Inc.,co_f19ea828134f,First Lien,Healthcare,11.46%,,SOFR,6%,,,,8981,8860,8865,0.52%,8860,,,,,,MSDL,2024-03-01
-Promptcare Infusion Buyer Inc.,co_f19ea828134f,First Lien,Healthcare,11.46%,,SOFR,6%,,,,1399,1385,1381,0.08%,1385,,,,,,MSDL,2024-03-01
-Stepping Stones Healthcare Services LLC,co_ef6f838d442b,First Lien,Healthcare,11.2%,,SOFR,5.75%,,,,4288,4237,-4,0.25%,4237,276,,,,,MSDL,2024-03-01
-Stepping Stones Healthcare Services LLC,co_ef6f838d442b,First Lien,Healthcare,11.2%,,SOFR,5.75%,,,,965,952,-9,0.06%,952,625,,,,,MSDL,2024-03-01
-Stepping Stones Healthcare Services LLC,co_ef6f838d442b,First Lien,Healthcare,11.2%,,SOFR,5.75%,,,,0,-6,-9,0%,-6,,,,,,MSDL,2024-03-01
-Suveto 1,co_a4f4e38617e2,First Lien,,9.71%,,SOFR,4.25%,,,,11837,11753,11597,0.67%,11753,,,,,,MSDL,2024-03-01
-Suveto 2,co_11669b1ba5b9,First Lien,,9.71%,,SOFR,4.25%,,,,366,352,340,0.02%,352,,,,,,MSDL,2024-03-01
-Tivity Health Inc.,co_2c0a41552dd9,First Lien,,11.35%,,SOFR,6%,,,,3674,3627,3668,0.21%,3627,,,,,,MSDL,2024-03-01
-Vardiman Black Holdings LLC,co_7e0e5a304ccf,First Lien,,14.4%,2%,SOFR,9%,,,,3386,3360,2815,0.16%,3360,,,,,,MSDL,2024-03-01
-Vardiman Black Holdings LLC,co_7e0e5a304ccf,First Lien,,14.4%,2%,SOFR,9%,,,,4020,3988,3342,0.19%,3988,,,,,,MSDL,2024-03-01
-Vermont Aus Pty Ltd.,co_094e013192e9,First Lien,,11%,,SOFR,5.5%,,,,8351,8190,8194,0.48%,8190,,,,,,MSDL,2024-03-01
-Hyland Software Inc.,co_2ad98cde0e97,First Lien,Software & Technology,11.36%,,SOFR,6%,,,,39656,39077,39212,2.28%,39077,,,,,,MSDL,2024-03-01
-Hyland Software Inc.,co_2ad98cde0e97,First Lien,Software & Technology,11.36%,,SOFR,6%,,,,0,-27,-21,0%,-27,,,,,,MSDL,2024-03-01
-Lightspeed Buyer Inc.,co_961292b66f9d,First Lien,,10.71%,,SOFR,5.25%,,,,12540,12381,12429,0.72%,12381,,,,,,MSDL,2024-03-01
-Lightspeed Buyer Inc.,co_961292b66f9d,First Lien,,10.71%,,SOFR,5.25%,,,,9911,9774,9823,0.57%,9774,,,,,,MSDL,2024-03-01
-Excelitas Technologies Corp.,co_25525b0ba447,First Lien,,11.23%,,SOFR,5.75%,,,,1455,1431,0,0.08%,1431,44,,,,,MSDL,2024-03-01
-Excelitas Technologies Corp.,co_25525b0ba447,First Lien,,9.74%,,SOFR,5.75%,,,,239,244,0,0.02%,244,51,,,,,MSDL,2024-03-01
-Excelitas Technologies Corp.,co_25525b0ba447,First Lien,,11.23%,,SOFR,5.75%,,,,126,124,125,0.01%,124,,,,,,MSDL,2024-03-01
-Excelitas Technologies Corp.,co_25525b0ba447,First Lien,,11.23%,,SOFR,5.75%,,,,80,78,79,0%,78,,,,,,MSDL,2024-03-01
-Raptor Merger Sub Debt LLC,co_aeeb4dfe973c,First Lien,,12.1%,,SOFR,6.75%,,,,32233,31399,32201,1.87%,31399,,,,,,MSDL,2024-03-01
-Raptor Merger Sub Debt LLC,co_aeeb4dfe973c,First Lien,,12.1%,,SOFR,6.75%,,,,488,431,486,0.03%,431,,,,,,MSDL,2024-03-01
-Amerilife Holdings LLC,co_79b70b5ba514,First Lien,,11.15%,,SOFR,5.75%,,,,2024,1989,-2,0.12%,1989,147,,,,,MSDL,2024-03-01
-Amerilife Holdings LLC,co_79b70b5ba514,First Lien,,11.15%,,SOFR,5.75%,,,,722,708,-6,0.04%,708,437,,,,,MSDL,2024-03-01
-Amerilife Holdings LLC,co_79b70b5ba514,First Lien,,11.15%,,SOFR,5.75%,,,,0,-7,-6,0%,-7,,,,,,MSDL,2024-03-01
-Foundation Risk Partners Corp.,co_2669dbde7061,First Lien,,11.45%,,SOFR,6%,,,,42533,42053,42533,2.47%,42053,,,,,,MSDL,2024-03-01
-Foundation Risk Partners Corp.,co_2669dbde7061,First Lien,,11.45%,,SOFR,6%,,,,9251,9146,9251,0.54%,9146,,,,,,MSDL,2024-03-01
-Foundation Risk Partners Corp.,co_2669dbde7061,First Lien,,11.45%,,SOFR,6%,,,,0,-44,0,0%,-44,,,,,,MSDL,2024-03-01
-Galway Borrower LLC,co_7b729e02e51d,First Lien,,10.71%,,SOFR,5.25%,,,,33377,32879,-18,1.88%,32879,1712,,,,,MSDL,2024-03-01
-Galway Borrower LLC,co_7b729e02e51d,First Lien,,10.71%,,SOFR,5.25%,,,,0,-15,-60,0%,-15,2053,,,,,MSDL,2024-03-01
-Galway Borrower LLC,co_7b729e02e51d,First Lien,,10.71%,,SOFR,5.25%,,,,0,-26,-59,0%,-26,,,,,,MSDL,2024-03-01
-Higginbotham Insurance Agency Inc.,co_f6db8c8e7a1a,First Lien,Insurance,10.96%,,SOFR,5.5%,,,,18295,18118,18290,1.06%,18118,,,,,,MSDL,2024-03-01
-Higginbotham Insurance Agency Inc.,co_f6db8c8e7a1a,First Lien,Insurance,10.96%,,SOFR,5.5%,,,,2494,2464,2493,0.14%,2464,,,,,,MSDL,2024-03-01
-High Street Buyer Inc.,co_09cbb0aa41aa,First Lien,,11.25%,,SOFR,5.75%,,,,9890,9756,9890,0.57%,9756,,,,,,MSDL,2024-03-01
-High Street Buyer Inc.,co_09cbb0aa41aa,First Lien,,11.25%,,SOFR,5.75%,,,,39719,39156,39719,2.31%,39156,,,,,,MSDL,2024-03-01
-High Street Buyer Inc.,co_09cbb0aa41aa,First Lien,,11.25%,,SOFR,5.75%,,,,0,-23,0,0%,-23,,,,,,MSDL,2024-03-01
-Long Term Care Group Inc.,co_935acc226f55,First Lien,,12.66%,6%,SOFR,7%,,,,5115,5043,4235,0.25%,5043,,,,,,MSDL,2024-03-01
-Inszone Mid LLC,co_2f16bb3c77e7,First Lien,,11.11%,,SOFR,5.75%,,,,4460,4372,-64,0.25%,4372,6000,,,,,MSDL,2024-03-01
-Inszone Mid LLC,co_2f16bb3c77e7,First Lien,,11.11%,,SOFR,5.75%,,,,533,463,-16,0.03%,463,817,,,,,MSDL,2024-03-01
-Inszone Mid LLC,co_2f16bb3c77e7,First Lien,,11.11%,,SOFR,5.75%,,,,0,-16,-16,0%,-16,,,,,,MSDL,2024-03-01
-Integrity Marketing Acquisition LLC,co_c54435bdb6e3,First Lien,Business Services,11.39%,,SOFR,6%,,,,392,385,384,0.02%,385,,,,,,MSDL,2024-03-01
-Integrity Marketing Acquisition LLC,co_c54435bdb6e3,First Lien,Business Services,11.39%,,SOFR,6%,,,,0,-2,-1,0%,-2,,,,,,MSDL,2024-03-01
-Keystone Agency Investors 1,co_656f7501b25d,First Lien,,11%,,SOFR,5.5%,,,,3480,3442,3429,0.2%,3442,,,,,,MSDL,2024-03-01
-Keystone Agency Investors 2,co_656f7501b25d,First Lien,,11%,,SOFR,5.5%,,,,4007,3964,3948,0.23%,3964,,,,,,MSDL,2024-03-01
-Majesco 1,co_00bc9f57ffd9,First Lien,,12.6%,,SOFR,7.25%,,,,23182,22792,22920,1.33%,22792,,,,,,MSDL,2024-03-01
-Majesco 2,co_00bc9f57ffd9,First Lien,,12.6%,,SOFR,7.25%,,,,0,-21,-18,0%,-21,,,,,,MSDL,2024-03-01
-Patriot Growth Insurance Services LLC,co_09c469ba825f,First Lien,Insurance,11%,,SOFR,5.5%,,,,62358,61419,61747,3.59%,61419,,,,,,MSDL,2024-03-01
-Patriot Growth Insurance Services LLC,co_09c469ba825f,First Lien,Insurance,11%,,SOFR,5.5%,,,,0,-61,-44,0%,-61,,,,,,MSDL,2024-03-01
-Peter C. Foy & Associates Insurance Services LLC,co_8aca268f8418,First Lien,Insurance,11.47%,,SOFR,6%,,,,20205,20029,-8,1.16%,20029,1695,,,,,MSDL,2024-03-01
-Peter C. Foy & Associates Insurance Services LLC,co_8aca268f8418,First Lien,Insurance,11.47%,,SOFR,6%,,,,7140,7060,-12,0.41%,7060,832,,,,,MSDL,2024-03-01
-Peter C. Foy & Associates Insurance Services LLC,co_8aca268f8418,First Lien,Insurance,11.47%,,SOFR,6%,,,,0,-5,-12,0%,-5,,,,,,MSDL,2024-03-01
-RSC Acquisition Inc.,co_b00957f0c7af,First Lien,,11.02%,,SOFR,5.5%,,,,32400,31989,32125,1.87%,31989,,,,,,MSDL,2024-03-01
-RSC Acquisition Inc.,co_b00957f0c7af,First Lien,,11.39%,,SOFR,6%,,,,135,124,128,0.01%,124,,,,,,MSDL,2024-03-01
-Summit Acquisition Inc.,co_78ceb99c00a8,First Lien,,12.1%,,SOFR,6.75%,,,,7353,7146,7242,0.42%,7146,,,,,,MSDL,2024-03-01
-Summit Acquisition Inc.,co_78ceb99c00a8,First Lien,,12.1%,,SOFR,6.75%,,,,0,-22,-25,0%,-22,1638,,,,,MSDL,2024-03-01
-Summit Acquisition Inc.,co_78ceb99c00a8,First Lien,,12.1%,,SOFR,6.75%,,,,0,-22,-12,0%,-22,819,,,,,MSDL,2024-03-01
-World Insurance Associates LLC,co_e9b1fcd3d8d5,First Lien,Insurance,11.36%,,SOFR,6%,,,,64847,63382,62776,3.65%,63382,,,,,,MSDL,2024-03-01
-World Insurance Associates LLC,co_e9b1fcd3d8d5,First Lien,Insurance,11.36%,,SOFR,6%,,,,0,-11,-41,0%,-11,,,,,,MSDL,2024-03-01
-FMG Suite Holdings LLC,co_21cabd20bf1f,First Lien,,10.78%,,SOFR,5.5%,,,,23574,23267,23392,1.36%,23267,,,,,,MSDL,2024-03-01
-FMG Suite Holdings LLC,co_21cabd20bf1f,First Lien,,10.78%,,SOFR,5.5%,,,,4568,4521,4538,0.26%,4521,,,,,,MSDL,2024-03-01
-FMG Suite Holdings LLC,co_21cabd20bf1f,First Lien,,12.75%,,SOFR,4.25%,,,,777,753,762,0.04%,753,,,,,,MSDL,2024-03-01
-Spectrio LLC,co_765e0aa2517f,First Lien,,11.38%,5%,SOFR,6%,,,,31645,31343,30028,1.74%,31343,,,,,,MSDL,2024-03-01
-Spectrio LLC,co_765e0aa2517f,First Lien,,11.38%,5%,SOFR,6%,,,,12765,12725,12113,0.7%,12725,,,,,,MSDL,2024-03-01
-Spectrio LLC,co_765e0aa2517f,First Lien,,11.38%,5%,SOFR,6%,,,,3498,3460,3294,0.19%,3460,,,,,,MSDL,2024-03-01
-Triple Lift Inc.,co_72a16a9e1dff,First Lien,,11.17%,,SOFR,5.75%,,,,27300,26926,25400,1.48%,26926,,,,,,MSDL,2024-03-01
-Triple Lift Inc.,co_72a16a9e1dff,First Lien,,11.17%,,SOFR,5.75%,,,,1533,1484,1255,0.07%,1484,,,,,,MSDL,2024-03-01
-Atlas Purchaser Inc.,co_a619bcca40c5,First Lien,,10.88%,,SOFR,5.25%,,,,8831,8710,5210,0.3%,8710,,,,,,MSDL,2024-03-01
-Catalis Intermediate Inc.,co_ef06ce5289fb,First Lien,Media & Entertainment,11%,,SOFR,5.5%,,,,39357,38709,37192,2.16%,38709,,,,,,MSDL,2024-03-01
-Catalis Intermediate Inc.,co_ef06ce5289fb,First Lien,Media & Entertainment,11%,,SOFR,5.5%,,,,8855,8723,8368,0.49%,8723,,,,,,MSDL,2024-03-01
-Catalis Intermediate Inc.,co_ef06ce5289fb,First Lien,Media & Entertainment,11%,,SOFR,5.5%,,,,1460,1396,1227,0.07%,1396,,,,,,MSDL,2024-03-01
-Donuts Inc.,co_186d01ad1935,First Lien,,11.59%,,SOFR,6%,,,,24855,24618,24838,1.44%,24618,,,,,,MSDL,2024-03-01
-Recovery Point Systems Inc.,co_38208589e59d,First Lien,,11.07%,,SOFR,6.5%,,,,40635,40229,40635,2.36%,40229,,,,,,MSDL,2024-03-01
-Recovery Point Systems Inc.,co_38208589e59d,First Lien,,11.07%,,SOFR,6.5%,,,,0,-35,0,0%,-35,,,,,,MSDL,2024-03-01
-Redwood Services Group LLC,co_09803b676c7a,First Lien,Business Services,11.7%,,SOFR,6.25%,,,,10829,10648,10563,0.61%,10648,,,,,,MSDL,2024-03-01
-Redwood Services Group LLC,co_09803b676c7a,First Lien,Business Services,11.7%,,SOFR,6.25%,,,,5706,5645,5553,0.32%,5645,,,,,,MSDL,2024-03-01
-Syntax Systems Ltd.,co_c878e2dc3e65,First Lien,,10.96%,,SOFR,5.5%,,,,35093,34830,-26,2%,34830,1447,,,,,MSDL,2024-03-01
-Syntax Systems Ltd.,co_c878e2dc3e65,First Lien,,10.96%,,SOFR,5.5%,,,,2295,2274,2229,0.13%,2274,,,,,,MSDL,2024-03-01
-Thrive Buyer Inc.,co_9eaf6129b54b,First Lien,,11.55%,,SOFR,6%,,,,22937,22634,22516,1.31%,22634,,,,,,MSDL,2024-03-01
-Thrive Buyer Inc.,co_9eaf6129b54b,First Lien,,11.5%,,SOFR,6%,,,,16912,16705,16577,0.96%,16705,,,,,,MSDL,2024-03-01
-Thrive Buyer Inc.,co_9eaf6129b54b,First Lien,,13.5%,,SOFR,5%,,,,661,639,621,0.04%,639,,,,,,MSDL,2024-03-01
-UpStack Inc.,co_b4bd423007a7,First Lien,,11.6%,,SOFR,5.75%,,,,8250,8115,-155,0.47%,8115,6197,,,,,MSDL,2024-03-01
-UpStack Inc.,co_b4bd423007a7,First Lien,,11.6%,,SOFR,6.25%,,,,6767,6548,-15,0.37%,6548,613,,,,,MSDL,2024-03-01
-UpStack Inc.,co_b4bd423007a7,First Lien,,11.6%,,SOFR,6.25%,,,,263,248,241,0.01%,248,,,,,,MSDL,2024-03-01
-GSM Acquisition Corp.,co_4798a8a86956,First Lien,,10.47%,,SOFR,5%,,,,17269,17170,17096,0.99%,17170,,,,,,MSDL,2024-03-01
-GSM Acquisition Corp.,co_4798a8a86956,First Lien,,10.47%,,SOFR,5%,,,,4445,4411,4400,0.26%,4411,,,,,,MSDL,2024-03-01
-GSM Acquisition Corp.,co_4798a8a86956,First Lien,,10.47%,,SOFR,5%,,,,0,-29,-43,0%,-29,,,,,,MSDL,2024-03-01
-Answer Acquisition LLC,co_87beebb71620,First Lien,,11.25%,,SOFR,5.75%,,,,10611,10472,10454,0.61%,10472,,,,,,MSDL,2024-03-01
-Answer Acquisition LLC,co_87beebb71620,First Lien,,11.25%,,SOFR,5.75%,,,,641,631,629,0.04%,631,,,,,,MSDL,2024-03-01
-Chase Intermediate LLC,co_fc7c595cf3bc,First Lien,Media & Entertainment,11%,,SOFR,5.25%,,,,0,-99,-196,-0.01%,-99,10601,,,,,MSDL,2024-03-01
-Chase Intermediate LLC,co_fc7c595cf3bc,First Lien,Media & Entertainment,11%,,SOFR,5.25%,,,,0,-10,-10,0%,-10,530,,,,,MSDL,2024-03-01
-Komline Sanderson Engineering Corp.,co_36ae231ffac2,First Lien,Industrials,11.78%,,SOFR,6%,,,,17218,17124,-266,0.97%,17124,8529,,,,,MSDL,2024-03-01
-Komline Sanderson Engineering Corp.,co_36ae231ffac2,First Lien,Industrials,11.78%,,SOFR,6%,,,,17776,17634,-148,0.99%,17634,4746,,,,,MSDL,2024-03-01
-Komline Sanderson Engineering Corp.,co_36ae231ffac2,First Lien,Industrials,13.5%,,SOFR,5%,,,,0,-21,-148,-0.01%,-21,,,,,,MSDL,2024-03-01
-MHE Intermediate Holdings LLC,co_8638a084c929,First Lien,Media & Entertainment,11.6%,,SOFR,6%,,,,19165,18905,18990,1.1%,18905,,,,,,MSDL,2024-03-01
-MHE Intermediate Holdings LLC,co_8638a084c929,First Lien,Media & Entertainment,11.6%,,SOFR,6%,,,,3674,3624,3636,0.21%,3624,,,,,,MSDL,2024-03-01
-MHE Intermediate Holdings LLC,co_8638a084c929,First Lien,Media & Entertainment,11.6%,,SOFR,6%,,,,0,-30,-25,0%,-30,,,,,,MSDL,2024-03-01
-AWP Group Holdings Inc.,co_a6728579700c,First Lien,,10.95%,,SOFR,5.5%,,,,6152,5917,-24,0.35%,5917,1579,,,,,MSDL,2024-03-01
-AWP Group Holdings Inc.,co_a6728579700c,First Lien,,10.95%,,SOFR,5.5%,,,,79,63,-9,0%,63,620,,,,,MSDL,2024-03-01
-AWP Group Holdings Inc.,co_a6728579700c,First Lien,,10.95%,,SOFR,5.5%,,,,170,154,158,0.01%,154,,,,,,MSDL,2024-03-01
-Ground Penetrating Radar Systems LLC,co_314edbc9ef22,First Lien,,10.03%,,SOFR,4.5%,,,,10202,10098,10114,0.59%,10098,,,,,,MSDL,2024-03-01
-Ground Penetrating Radar Systems LLC,co_314edbc9ef22,First Lien,,10.03%,,SOFR,4.5%,,,,0,-11,-14,0%,-11,,,,,,MSDL,2024-03-01
-Vessco Midco Holdings LLC,co_b1f16d5b1acb,First Lien,,9.97%,,SOFR,4.5%,,,,2687,2673,2687,0.16%,2673,,,,,,MSDL,2024-03-01
-Vessco Midco Holdings LLC,co_b1f16d5b1acb,First Lien,,9.97%,,SOFR,4.5%,,,,1751,1742,1751,0.1%,1742,,,,,,MSDL,2024-03-01
-Vessco Midco Holdings LLC,co_b1f16d5b1acb,First Lien,,12%,,SOFR,3.5%,,,,20,18,20,0%,18,,,,,,MSDL,2024-03-01
-Caerus US 1 Inc.,co_a348a4088000,First Lien,,11.11%,,SOFR,5.75%,,,,11038,10846,0,0.64%,10846,893,,,,,MSDL,2024-03-01
-Caerus US 1 Inc.,co_a348a4088000,First Lien,,11.11%,,SOFR,5.75%,,,,713,693,0,0.04%,693,293,,,,,MSDL,2024-03-01
-Caerus US 1 Inc.,co_a348a4088000,First Lien,,11.11%,,SOFR,5.75%,,,,878,859,878,0.05%,859,,,,,,MSDL,2024-03-01
-Abacus Data Holdings Inc.,co_bfbee81a1259,First Lien,,11.71%,,SOFR,6.25%,,,,18427,18180,18427,1.07%,18180,,,,,,MSDL,2024-03-01
-Abacus Data Holdings Inc.,co_bfbee81a1259,First Lien,,11.71%,,SOFR,6.25%,,,,1931,1919,1931,0.11%,1919,,,,,,MSDL,2024-03-01
-Abacus Data Holdings Inc.,co_bfbee81a1259,First Lien,,11.71%,,SOFR,6.25%,,,,1050,1032,1050,0.06%,1032,,,,,,MSDL,2024-03-01
-Bridgepointe Technologies LLC,co_abe17b6adcf5,First Lien,,12%,,SOFR,6.5%,,,,17230,16726,16944,0.98%,16726,,,,,,MSDL,2024-03-01
-Bridgepointe Technologies LLC,co_abe17b6adcf5,First Lien,,12%,,SOFR,6.5%,,,,10091,9582,9850,0.57%,9582,,,,,,MSDL,2024-03-01
-Bullhorn Inc.,co_14daf6316e71,First Lien,,10.96%,,SOFR,5.5%,,,,15447,15364,15399,0.89%,15364,,,,,,MSDL,2024-03-01
-Bullhorn Inc.,co_14daf6316e71,First Lien,,10.96%,,SOFR,5.5%,,,,63,61,62,0%,61,,,,,,MSDL,2024-03-01
-Bullhorn Inc.,co_14daf6316e71,First Lien,,10.96%,,SOFR,5.5%,,,,0,-4,-2,0%,-4,,,,,,MSDL,2024-03-01
-Citrin Cooperman Advisors LLC,co_5d6adfa1bd4e,First Lien,,11.37%,,SOFR,5.75%,,,,24505,24123,24486,1.42%,24123,,,,,,MSDL,2024-03-01
-Citrin Cooperman Advisors LLC,co_5d6adfa1bd4e,First Lien,,11.37%,,SOFR,5.75%,,,,9330,9115,9260,0.54%,9115,,,,,,MSDL,2024-03-01
-GPS Merger Sub LLC,co_7334d7975fcb,First Lien,,11.38%,,SOFR,6%,,,,4927,4831,-12,0.28%,4831,1274,,,,,MSDL,2024-03-01
-GPS Merger Sub LLC,co_7334d7975fcb,First Lien,,11.38%,,SOFR,6%,,,,0,-12,-20,0%,-12,1019,,,,,MSDL,2024-03-01
-GPS Merger Sub LLC,co_7334d7975fcb,First Lien,,11.38%,,SOFR,6%,,,,0,-20,-20,0%,-20,,,,,,MSDL,2024-03-01
-KENG Acquisition Inc.,co_a97a97f266f2,First Lien,,11.6%,,SOFR,6.25%,,,,3221,3144,-26,0.18%,3144,2040,,,,,MSDL,2024-03-01
-KENG Acquisition Inc.,co_a97a97f266f2,First Lien,,11.6%,,SOFR,6.25%,,,,400,367,-10,0.02%,367,781,,,,,MSDL,2024-03-01
-KENG Acquisition Inc.,co_a97a97f266f2,First Lien,,11.6%,,SOFR,6.25%,,,,98,77,86,0%,77,,,,,,MSDL,2024-03-01
-KWOR Acquisition Inc.,co_88623ee418ff,First Lien,,10.71%,,SOFR,5.25%,,,,5333,5250,-50,0.31%,5250,3473,,,,,MSDL,2024-03-01
-KWOR Acquisition Inc.,co_88623ee418ff,First Lien,,10.71%,,SOFR,5.25%,,,,1301,1253,-1,0.07%,1253,70,,,,,MSDL,2024-03-01
-KWOR Acquisition Inc.,co_88623ee418ff,First Lien,,12.75%,,SOFR,4.25%,,,,52,51,51,0%,51,,,,,,MSDL,2024-03-01
-Project Boost Purchaser LLC,co_7353631240b9,First Lien,,10.64%,,SOFR,5.25%,,,,5668,5623,-1,0.33%,5623,589,,,,,MSDL,2024-03-01
-Project Boost Purchaser LLC,co_7353631240b9,First Lien,,10.64%,,SOFR,5.25%,,,,0,-4,0,0%,-4,449,,,,,MSDL,2024-03-01
-Project Boost Purchaser LLC,co_7353631240b9,First Lien,,10.64%,,SOFR,5.25%,,,,0,-3,0,0%,-3,,,,,,MSDL,2024-03-01
-Associations Inc.,co_137d8a36cf25,First Lien,,12.17%,2.5%,SOFR,6.5%,,,,17780,17669,-1,1.02%,17669,60,,,,,MSDL,2024-03-01
-Associations Inc.,co_137d8a36cf25,First Lien,,12.17%,2.5%,SOFR,6.5%,,,,21896,21757,-11,1.26%,21757,1203,,,,,MSDL,2024-03-01
-Associations Inc.,co_137d8a36cf25,First Lien,,12.17%,2.5%,SOFR,6.5%,,,,657,646,640,0.04%,646,,,,,,MSDL,2024-03-01
-MRI Software LLC,co_2bbd5408e42d,First Lien,Software & Technology,10.9%,,SOFR,5.5%,,,,59262,58975,0,3.42%,58975,74,,,,,MSDL,2024-03-01
-MRI Software LLC,co_2bbd5408e42d,First Lien,Software & Technology,10.9%,,SOFR,5.5%,,,,0,0,-12,0%,0,2252,,,,,MSDL,2024-03-01
-MRI Software LLC,co_2bbd5408e42d,First Lien,Software & Technology,10.9%,,SOFR,5.5%,,,,0,-8,-12,0%,-8,,,,,,MSDL,2024-03-01
-Pritchard Industries LLC,co_19efa83b102c,First Lien,,10.94%,,SOFR,5.5%,,,,25274,24925,24771,1.44%,24925,,,,,,MSDL,2024-03-01
-Pritchard Industries LLC,co_19efa83b102c,First Lien,,10.94%,,SOFR,5.5%,,,,6043,5956,5922,0.34%,5956,,,,,,MSDL,2024-03-01
-Zarya Intermediate LLC,co_00051ef3b32d,First Lien,Media & Entertainment,11.89%,,SOFR,6.5%,,,,35408,35408,35408,2.06%,35408,,,,,,MSDL,2024-03-01
-Zarya Intermediate LLC,co_00051ef3b32d,First Lien,Media & Entertainment,11.89%,,SOFR,6.5%,,,,3128,3128,3128,0.18%,3128,,,,,,MSDL,2024-03-01
-Alert Media Inc.,co_26c0bb6e12df,First Lien,Media & Entertainment,13.08%,,,,,,,19283,19048,18983,1.1%,19048,,,,,,MSDL,2024-03-01
-Alert Media Inc.,co_26c0bb6e12df,First Lien,Media & Entertainment,13.08%,,,,,,,0,-37,-53,0%,-37,,,,,,MSDL,2024-03-01
-Anaplan Inc.,co_d0807ba39dfc,First Lien,,11.85%,,SOFR,6.5%,,,,24000,23597,24000,1.39%,23597,,,,,,MSDL,2024-03-01
-Appfire Technologies LLC,co_ec9a6e072e84,First Lien,,11.03%,,SOFR,5.65%,,,,18667,18576,-14,1.07%,18576,1083,,,,,MSDL,2024-03-01
-Appfire Technologies LLC,co_ec9a6e072e84,First Lien,,11.03%,,SOFR,5.65%,,,,0,-9,-2,0%,-9,129,,,,,MSDL,2024-03-01
-Appfire Technologies LLC,co_ec9a6e072e84,First Lien,,13%,,SOFR,4.5%,,,,38,36,36,0%,36,,,,,,MSDL,2024-03-01
-Bottomline Technologies Inc.,co_c6a01360bb37,First Lien,,10.68%,,SOFR,5.25%,,,,3692,3630,3682,0.21%,3630,,,,,,MSDL,2024-03-01
-Bottomline Technologies Inc.,co_c6a01360bb37,First Lien,,10.68%,,SOFR,5.25%,,,,0,-4,0,0%,-4,,,,,,MSDL,2024-03-01
-CLEO Communications Holding LLC,co_94b2efc4d7fd,First Lien,,11.96%,,SOFR,6.5%,,,,39998,39743,39370,2.29%,39743,,,,,,MSDL,2024-03-01
-CLEO Communications Holding LLC,co_94b2efc4d7fd,First Lien,,11.96%,,SOFR,6.5%,,,,0,-72,-196,-0.01%,-72,,,,,,MSDL,2024-03-01
-Coupa Holdings LLC,co_c2ba85da2fbc,First Lien,,12.86%,,SOFR,7.5%,,,,2264,2212,-12,0.13%,2212,1085,,,,,MSDL,2024-03-01
-Coupa Holdings LLC,co_c2ba85da2fbc,First Lien,,12.86%,,SOFR,7.5%,,,,0,-12,-9,0%,-12,831,,,,,MSDL,2024-03-01
-Coupa Holdings LLC,co_c2ba85da2fbc,First Lien,,12.86%,,SOFR,7.5%,,,,0,-18,-9,0%,-18,,,,,,MSDL,2024-03-01
-Cyara AcquisitionCo LLC,co_c8d3bfc344ef,First Lien,,12.08%,2.75%,SOFR,6.75%,,,,4664,4545,4580,0.27%,4545,,,,,,MSDL,2024-03-01
-Cyara AcquisitionCo LLC,co_c8d3bfc344ef,First Lien,,12.08%,2.75%,SOFR,6.75%,,,,0,-8,-6,0%,-8,,,,,,MSDL,2024-03-01
-Diligent Corp.,co_043d566b8b97,First Lien,,11.28%,,SOFR,5.75%,,,,29740,29629,29678,1.72%,29629,,,,,,MSDL,2024-03-01
-Diligent Corp.,co_043d566b8b97,First Lien,,11.23%,,SOFR,5.75%,,,,2179,2170,2174,0.13%,2170,,,,,,MSDL,2024-03-01
-Diligent Corp.,co_043d566b8b97,First Lien,,11.23%,,SOFR,5.75%,,,,2430,2413,2421,0.14%,2413,,,,,,MSDL,2024-03-01
-E-Discovery AcquireCo LLC,co_051b13bc64cf,First Lien,,11.89%,,SOFR,6.5%,,,,17795,17368,17482,1.02%,17368,,,,,,MSDL,2024-03-01
-E-Discovery AcquireCo LLC,co_051b13bc64cf,First Lien,,11.89%,,SOFR,6.5%,,,,0,-38,-29,0%,-38,,,,,,MSDL,2024-03-01
-Fullsteam Operations LLC,co_e7812d309db0,First Lien,,13.78%,,SOFR,8.25%,,,,10860,10538,-68,0.61%,10538,3902,,,,,MSDL,2024-03-01
-Fullsteam Operations LLC,co_e7812d309db0,First Lien,,13.78%,,SOFR,8.25%,,,,1034,947,-18,0.05%,947,608,,,,,MSDL,2024-03-01
-Fullsteam Operations LLC,co_e7812d309db0,First Lien,,13.78%,,SOFR,8.25%,,,,0,-18,-18,0%,-18,,,,,,MSDL,2024-03-01
-GS AcquisitionCo Inc.,co_da1da76723d6,First Lien,,11%,,SOFR,5.5%,,,,0,-13,0,0%,-13,,,,,,MSDL,2024-03-01
-Kaseya Inc.,co_75541f204b9b,First Lien,,11.38%,2.5%,SOFR,6%,,,,14219,14043,-4,0.82%,14043,803,,,,,MSDL,2024-03-01
-Kaseya Inc.,co_75541f204b9b,First Lien,,11.38%,2.5%,SOFR,6%,,,,53,47,-3,0%,47,642,,,,,MSDL,2024-03-01
-Kaseya Inc.,co_75541f204b9b,First Lien,,11.38%,2.5%,SOFR,6%,,,,216,206,212,0.01%,206,,,,,,MSDL,2024-03-01
-LegitScript LLC,co_290d33611683,First Lien,,11.11%,,SOFR,5.75%,,,,26569,26128,-59,1.53%,26128,6612,,,,,MSDL,2024-03-01
-LegitScript LLC,co_290d33611683,First Lien,,11.11%,,SOFR,5.75%,,,,702,641,637,0.04%,641,,,,,,MSDL,2024-03-01
-LegitScript LLC,co_290d33611683,First Lien,,11.11%,,SOFR,5.75%,,,,1000,938,963,0.06%,938,,,,,,MSDL,2024-03-01
-Matrix Parent Inc.,co_1d07becdc90d,First Lien,,10.35%,,SOFR,5%,,,,499,370,339,0.02%,370,,,,,,MSDL,2024-03-01
-Montana Buyer Inc.,co_5c907f845022,First Lien,,11.11%,,SOFR,5.75%,,,,4089,4020,4056,0.24%,4020,,,,,,MSDL,2024-03-01
-Montana Buyer Inc.,co_5c907f845022,First Lien,,13.25%,,SOFR,4.75%,,,,67,60,63,0%,60,,,,,,MSDL,2024-03-01
-Netwrix Corp.,co_e77d0e2c07cf,First Lien,,10.39%,,SOFR,5%,,,,5489,5446,-23,0.31%,5446,1528,,,,,MSDL,2024-03-01
-Netwrix Corp.,co_e77d0e2c07cf,First Lien,,10.39%,,SOFR,5%,,,,0,-7,-6,0%,-7,431,,,,,MSDL,2024-03-01
-Netwrix Corp.,co_e77d0e2c07cf,First Lien,,10.39%,,SOFR,5%,,,,0,-3,-6,0%,-3,,,,,,MSDL,2024-03-01
-Oak Purchaser Inc.,co_dea8727c2769,First Lien,,10.85%,,SOFR,5.5%,,,,2792,2770,-3,0.16%,2770,127,,,,,MSDL,2024-03-01
-Oak Purchaser Inc.,co_dea8727c2769,First Lien,,10.85%,,SOFR,5.5%,,,,1735,1721,-8,0.1%,1721,372,,,,,MSDL,2024-03-01
-Oak Purchaser Inc.,co_dea8727c2769,First Lien,,10.85%,,SOFR,5.5%,,,,0,-3,-8,0%,-3,,,,,,MSDL,2024-03-01
-Pound Bidco Inc.,co_9b32275adad9,First Lien,,11.96%,,SOFR,6.5%,,,,10832,10707,10796,0.63%,10707,,,,,,MSDL,2024-03-01
-Pound Bidco Inc.,co_9b32275adad9,First Lien,,11.96%,,SOFR,6.5%,,,,0,0,0,0%,0,,,,,,MSDL,2024-03-01
-Pound Bidco Inc.,co_9b32275adad9,First Lien,,11.96%,,SOFR,6.5%,,,,0,-10,0,0%,-10,,,,,,MSDL,2024-03-01
-Project Leopard Holdings Inc.,co_ab62d73e75f9,First Lien,,10.73%,,SOFR,5.25%,,,,6217,5849,5590,0.32%,5849,,,,,,MSDL,2024-03-01
-Revalize Inc.,co_7f5a52b783f9,First Lien,,11.21%,,SOFR,5.75%,,,,19455,19376,19053,1.11%,19376,,,,,,MSDL,2024-03-01
-Revalize Inc.,co_7f5a52b783f9,First Lien,,11.21%,,SOFR,5.75%,,,,18,17,16,0%,17,,,,,,MSDL,2024-03-01
-Riskonnect Parent LLC,co_61f868aa61e6,First Lien,,11%,,SOFR,5.5%,,,,519,511,518,0.03%,511,,,,,,MSDL,2024-03-01
-Riskonnect Parent LLC,co_61f868aa61e6,First Lien,,11%,,SOFR,5.5%,,,,0,-5,-1,0%,-5,,,,,,MSDL,2024-03-01
-Securonix Inc.,co_4e613096ec99,First Lien,,11.41%,,SOFR,6%,,,,21010,20727,19846,1.15%,20727,,,,,,MSDL,2024-03-01
-Securonix Inc.,co_4e613096ec99,First Lien,,11.41%,,SOFR,6%,,,,0,-47,-210,-0.01%,-47,,,,,,MSDL,2024-03-01
-Skykick Inc.,co_35cc9e91883c,First Lien,,15.91%,7%,SOFR,10.25%,,,,7754,7647,7181,0.42%,7647,,,,,,MSDL,2024-03-01
-Skykick Inc.,co_35cc9e91883c,First Lien,,15.91%,7%,SOFR,10.25%,,,,2470,2426,2250,0.13%,2426,,,,,,MSDL,2024-03-01
-Trunk Acquisition Inc.,co_a567acdc73a8,First Lien,,11.25%,,SOFR,5.75%,,,,8960,8901,8797,0.51%,8901,,,,,,MSDL,2024-03-01
-Trunk Acquisition Inc.,co_a567acdc73a8,First Lien,,11.25%,,SOFR,5.75%,,,,0,-4,-16,0%,-4,,,,,,MSDL,2024-03-01
-User Zoom Technologies Inc.,co_a8c9119b240e,First Lien,,12.49%,,SOFR,7%,,,,38689,38050,38070,2.21%,38050,,,,,,MSDL,2024-03-01
-Mobile Communications America Inc.,co_d6513cbac095,First Lien,,11.35%,,SOFR,6%,,,,5955,5868,-14,0.34%,5868,1921,,,,,MSDL,2024-03-01
-Mobile Communications America Inc.,co_d6513cbac095,First Lien,,11.35%,,SOFR,6%,,,,0,-14,-14,0%,-14,960,,,,,MSDL,2024-03-01
-Mobile Communications America Inc.,co_d6513cbac095,First Lien,,11.35%,,SOFR,6%,,,,0,-14,-14,0%,-14,,,,,,MSDL,2024-03-01
-Omni Intermediate Holdings LLC,co_e1a292c2bcb6,First Lien,Media & Entertainment,14.53%,,SOFR,9.15%,,,,4500,4393,4223,0.25%,4393,,,,,,MSDL,2024-03-01
-PAI Holdco Inc.,co_8c077c01e835,First Lien,,13.03%,2%,SOFR,7.5%,,,,26565,26053,24823,1.44%,26053,,,,,,MSDL,2024-03-01
-Infinite Bidco LLC,co_e9d3839805c4,First Lien,,12.65%,,SOFR,7%,,,,25500,25446,21420,1.24%,25446,,,,,,MSDL,2024-03-01
-QBS Parent Inc.,co_abfd146b006b,First Lien,,14.04%,,SOFR,8.5%,,,,15000,14853,14400,0.84%,14853,,,,,,MSDL,2024-03-01
-Heartland Veterinary Partners LLC,co_f7d09ce8e62a,First Lien,Healthcare,13.46%,,SOFR,8%,,,,3960,3903,3879,0.23%,3903,,,,,,MSDL,2024-03-01
-Heartland Veterinary Partners LLC,co_f7d09ce8e62a,First Lien,Healthcare,13.46%,,SOFR,8%,,,,1540,1516,1508,0.09%,1516,,,,,,MSDL,2024-03-01
-Aptean Inc.,co_181021ae68a3,First Lien,,12.46%,,SOFR,7%,,,,5950,5950,5950,0.35%,5950,,,,,,MSDL,2024-03-01
-Help/Systems Holdings Inc.,co_734d6293aec0,First Lien,,12.35%,,SOFR,6.75%,,,,17500,17500,14147,0.82%,17500,,,,,,MSDL,2024-03-01
-Idera Inc.,co_28cc9f33febe,First Lien,,12.28%,,SOFR,6.75%,,,,3887,3865,3887,0.23%,3865,,,,,,MSDL,2024-03-01
-Red Dawn SEI Buyer Inc.,co_1894b09de42d,First Lien,,13.86%,,SOFR,8.5%,,,,19000,18727,18945,1.1%,18727,,,,,,MSDL,2024-03-01
-Flexera Software LLC,co_07071059a6e7,First Lien,Software & Technology,12.47%,,SOFR,7%,,,,13500,13303,13500,0.78%,13303,,,,,,MSDL,2024-03-01
-Matrix Parent Inc.,co_1d07becdc90d,First Lien,,13.53%,,SOFR,8%,,,,,10505,5733,0.33%,10505,,,,,,MSDL,2024-03-01
-Familia Intermediate Holdings I Corp.,co_2615c4fdbb9d,First Lien,Media & Entertainment,,16.25%,,,,,,1500,1500,170,0.01%,1500,,,,,,MSDL,2024-03-01
-Fetch Insurance Services LLC,co_6f9241db490c,First Lien,Insurance,12.75%,3.75%,,,,,,1953,1910,1894,0.11%,1910,,,,,,MSDL,2024-03-01
-Diligent Corp.,co_043d566b8b97,First Lien,,,,SOFR,10.5%,,,,5,6329,-4,0.38%,6329,2070,,,,,MSDL,2024-03-01
-FORTIS Solutions Group LLC,co_b6fefea7ff47,First Lien,,,,SOFR,12.25%,,,,1000,1179,970,0.06%,1179,,,,,,MSDL,2024-03-01
-Integrity Marketing Acquisition LLC,co_c54435bdb6e3,First Lien,Business Services,,,SOFR,10.5%,,,,3250,3956,-1,0.23%,3956,52,,,,,MSDL,2024-03-01
-Knockout Intermediate Holdings I Inc.,co_2713bff35b82,First Lien,Media & Entertainment,,,SOFR,11.75%,,,,3,3265,3267,0.19%,3265,,,,,,MSDL,2024-03-01
-Revalize Inc.,co_7f5a52b783f9,First Lien,,,,SOFR,10%,,,,2,2776,-1,0.16%,2776,53,,,,,MSDL,2024-03-01
-RSK Holdings Inc.,co_211c38a87f3b,First Lien,,,,SOFR,10.5%,,,,1012,1137,1275,0.07%,1137,,,,,,MSDL,2024-03-01
-Skykick Inc.,co_35cc9e91883c,First Lien,,,,,,,,,134,1275,1275,0.07%,1275,,,,,,MSDL,2024-03-01
-Abacus Data Holdings Inc.,co_bfbee81a1259,First Lien,,,,,,,,,29,2944,0,0.15%,2944,350,,,,,MSDL,2024-03-01
-Amerilife Holdings LLC,co_79b70b5ba514,First Lien,,,,,,,,,1,25,33,0%,25,,,,,,MSDL,2024-03-01
-BP Purchaser LLC,co_8150b35b92d0,Common Equity,,,,,,,,,1383,1378,1297,0.08%,1378,,,,,,MSDL,2024-03-01
-CSC Thrive Holdings LP,co_eb08520b5473,First Lien,,,,,,,,,162,421,855,0.05%,421,,,,,,MSDL,2024-03-01
-Encore Holdings LLC,co_7640b5885d7f,First Lien,,,,,,,,,3,348,696,0.04%,348,,,,,,MSDL,2024-03-01
-Frisbee Holdings LP,co_ad177e562804,First Lien,,,,,,,,,22,277,277,0.02%,277,,,,,,MSDL,2024-03-01
-Fullsteam Operations LLC,co_e7812d309db0,First Lien,,,,,,,,,3,100,100,0.01%,100,,,,,,MSDL,2024-03-01
-GSM Equity Investors LP,co_9d62a7ca66e7,First Lien,,,,,,,,,4,450,884,0.05%,450,,,,,,MSDL,2024-03-01
-Help HP SCF Investor LP,co_8c4a025c8b91,First Lien,,,,,,,,,9620,12460,15966,0.93%,12460,,,,,,MSDL,2024-03-01
-LUV Car Wash,co_c6e889633147,First Lien,Automotive,,,,,,,,0,123,68,0%,123,,,,,,MSDL,2024-03-01
-mPulse Mobile Inc.,co_972bec5eeda6,First Lien,,,,,,,,,166,1220,-59,0.07%,1220,2668,,,,,MSDL,2024-03-01
-PCX Holding Corp.,co_ef3656896e7a,First Lien,,,,,,,,,7,654,-6,0.04%,654,987,,,,,MSDL,2024-03-01
-Pet Holdings Inc.,co_a4dbbb0637dd,First Lien,Consumer & Retail,,,,,,,,18,2013,1762,0.1%,2013,,,,,,MSDL,2024-03-01
-Pritchard Industries Inc.,co_19efa83b102c,First Lien,,,,,,,,,1700,1700,1785,0.1%,1700,,,,,,MSDL,2024-03-01
-Procure Acquiom Financial LLC,co_e4992e69229c,First Lien,Financial Services,,,,,,,,1000,1000,1290,0.07%,1000,,,,,,MSDL,2024-03-01
-Recovery Point Systems Inc.,co_38208589e59d,First Lien,,,,,,,,,1000,1000,0,0.05%,1000,4000,,,,,MSDL,2024-03-01
-Reveal Data Solutions,co_017299943a8b,First Lien,,,,,,,,,478,621,621,0.04%,621,,,,,,MSDL,2024-03-01
-Shelby Co-invest LP.,co_1e6f40a84fb0,First Lien,,,,,,,,,8,850,1316,0.08%,850,,,,,,MSDL,2024-03-01
-Surewerx Topco LP,co_bcdfd26dba3e,First Lien,,,,,,,,,1,512,565,0.03%,512,,,,,,MSDL,2024-03-01
-Suveto Buyer LLC,co_ce5072e17d0c,First Lien,,,,,,,,,19,1926,1701,0.1%,1926,,,,,,MSDL,2024-03-01
-One,co_7692c3ad3540,Other,,,,,,1%,,,,,,,,,,,,,MSDL,2024-03-01
-Two,co_3fc4ccfe7458,Other,,,,,,0.75%,,,,,,,,,,,,,MSDL,2024-03-01
-Three,co_8b5b9db0c13d,Other,,,,,,0.5%,,,,,,,,,,,,,MSDL,2024-03-01
-365 Retail Market LLC,co_65cd0a23340e,Other,Consumer & Retail,,,,,,,,,,0,,,2800000,,,,,MSDL,2024-03-01
+company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
+Jonathan Acquisition Company,Other,,10.45%,,,,,,2026-12-22,2684,2641,2659,0.15%,2641,,,,,,MSDL,2024-03-01
+Mantech International CP,Other,,11.13%,,,,,,2029-09-14,355,349,355,0.02%,349,,,,,,MSDL,2024-03-01
+Mantech International CP,Other,,11.13%,,,,,,2029-09-14,31,30,31,,30,,,,,,MSDL,2024-03-01
+PCX Holding Corp.,Other,,11.75%,,,,,,2027-04-22,18047,17936,17944,1.04%,17936,,,,,,MSDL,2024-03-01
+PCX Holding Corp.,Other,,11.75%,,,,,,2027-04-22,18172,17937,18068,1.05%,17937,,,,,,MSDL,2024-03-01
+PCX Holding Corp.,Other,,11.75%,,,,,,2027-04-22,864,854,853,0.05%,854,,,,,,MSDL,2024-03-01
+"Two Six Labs, LLC",Other,,10.85%,,,,,,2027-08-20,25894,25465,25366,1.47%,25465,,,,,,MSDL,2024-03-01
+"Two Six Labs, LLC",Other,,10.85%,,,,,,2027-08-20,4231,4169,4136,0.24%,4169,,,,,,MSDL,2024-03-01
+"Two Six Labs, LLC",Other,,10.85%,,,,,,2027-08-20,,-26,-48,,-26,,,,,,MSDL,2024-03-01
+"AGI-CFI Holdings, Inc.",Other,,11.18%,,,,,,2027-06-11,14263,14048,14159,0.82%,14048,,,,,,MSDL,2024-03-01
+"Omni Intermediate Holdings, LLC",Other,Media & Entertainment,10.54%,,,,,,2026-12-30,12410,12324,11824,0.69%,12324,,,,,,MSDL,2024-03-01
+"Omni Intermediate Holdings, LLC",Other,Media & Entertainment,10.54%,,,,,,2026-12-30,1263,1247,1196,0.07%,1247,,,,,,MSDL,2024-03-01
+"Omni Intermediate Holdings, LLC",Other,Media & Entertainment,12.50%,,,,,,2025-12-30,832,826,781,0.05%,826,,,,,,MSDL,2024-03-01
+RoadOne IntermodaLogistics,Other,Transportation & Logistics,11.61%,,,,,,2028-12-29,1655,1612,1626,0.09%,1612,,,,,,MSDL,2024-03-01
+RoadOne IntermodaLogistics,Other,Transportation & Logistics,11.61%,,,,,,2028-12-29,152,144,144,0.01%,144,,,,,,MSDL,2024-03-01
+RoadOne IntermodaLogistics,Other,Transportation & Logistics,11.61%,,,,,,2028-12-29,20,12,14,,12,,,,,,MSDL,2024-03-01
+Continental Battery Company,Other,,12.34%,,,,,,2027-01-20,6204,6121,5165,0.30%,6121,,,,,,MSDL,2024-03-01
+"Randy's Holdings, Inc.",Other,,11.87%,,,,,,2028-11-01,6676,6505,6653,0.39%,6505,,,,,,MSDL,2024-03-01
+"Randy's Holdings, Inc.",Other,,11.87%,,,,,,2028-11-01,,-27,-8,,-27,,,,,,MSDL,2024-03-01
+"Randy's Holdings, Inc.",Other,,11.87%,,,,,,2028-11-01,260,238,257,0.01%,238,,,,,,MSDL,2024-03-01
+"Sonny's Enterprises, LLC",Other,,12.28%,,,,,,2028-08-05,46018,45462,46018,2.67%,45462,,,,,,MSDL,2024-03-01
+Spectrum Automotive Holdings Corp.,Other,Automotive,11.22%,,,,,,2028-06-29,23410,23162,22888,1.33%,23162,,,,,,MSDL,2024-03-01
+Spectrum Automotive Holdings Corp.,Other,Automotive,11.22%,,,,,,2028-06-29,5366,5301,5220,0.30%,5301,,,,,,MSDL,2024-03-01
+Spectrum Automotive Holdings Corp.,Other,Automotive,11.22%,,,,,,2027-06-29,,-8,-20,,-8,,,,,,MSDL,2024-03-01
+"ARI Network Services, Inc.",Other,Business Services,10.60%,,,,,,2025-02-28,20512,20369,20315,1.18%,20369,,,,,,MSDL,2024-03-01
+"ARI Network Services, Inc.",Other,Business Services,10.60%,,,,,,2025-02-28,3594,3569,3559,0.21%,3569,,,,,,MSDL,2024-03-01
+"ARI Network Services, Inc.",Other,Business Services,10.60%,,,,,,2025-02-28,,-19,-29,,-19,,,,,,MSDL,2024-03-01
+"Summit Buyer, LLC",Other,,11.26%,,,,,,2026-01-14,21896,21670,21370,1.24%,21670,,,,,,MSDL,2024-03-01
+"Summit Buyer, LLC",Other,,11.26%,,,,,,2026-01-14,32011,31671,31239,1.82%,31671,,,,,,MSDL,2024-03-01
+"Summit Buyer, LLC",Other,,13.25%,,,,,,2026-01-14,,-22,-59,,-22,,,,,,MSDL,2024-03-01
+"Turbo Buyer, Inc.",Other,,11.50%,,,,,,2025-12-02,37555,37197,37202,2.16%,37197,,,,,,MSDL,2024-03-01
+"Turbo Buyer, Inc.",Other,,11.50%,,,,,,2025-12-02,37738,37306,37383,2.17%,37306,,,,,,MSDL,2024-03-01
+"GraphPad Software, LLC",Other,Software & Technology,11.20%,,,,,,2027-04-27,14807,14714,14751,0.86%,14714,,,,,,MSDL,2024-03-01
+"GraphPad Software, LLC",Other,Software & Technology,13.50%,,,,,,2027-04-27,875,866,868,0.05%,866,,,,,,MSDL,2024-03-01
+Tank Holding Corp.,Other,,11.21%,,,,,,2028-03-31,15713,15452,15050,0.87%,15452,,,,,,MSDL,2024-03-01
+Tank Holding Corp.,Other,,11.21%,,,,,,2028-03-31,250,237,236,0.01%,237,,,,,,MSDL,2024-03-01
+Tank Holding Corp.,Other,,11.21%,,,,,,2028-03-31,213,202,177,0.01%,202,,,,,,MSDL,2024-03-01
+"V Global Holdings, LLC",Other,,11.21%,,,,,,2027-12-22,4854,4780,4756,0.28%,4780,,,,,,MSDL,2024-03-01
+"V Global Holdings, LLC",Other,,11.21%,,,,,,2025-12-22,276,269,262,0.02%,269,,,,,,MSDL,2024-03-01
+"365 Retail Markets, LLC",Other,Consumer & Retail,10.30%,,,,,,2026-12-23,17105,16922,17105,0.99%,16922,,,,,,MSDL,2024-03-01
+"365 Retail Markets, LLC",Other,Consumer & Retail,10.30%,,,,,,2026-12-23,5488,5442,5488,0.32%,5442,,,,,,MSDL,2024-03-01
+"Atlas Us Finco, Inc.",Other,,12.51%,,,,,,2029-12-09,2009,1955,2009,0.12%,1955,,,,,,MSDL,2024-03-01
+BPG Holdings IV Corp.,Other,,11.36%,,,,,,2029-07-29,11647,10972,11374,0.66%,10972,,,,,,MSDL,2024-03-01
+"Encore Holdings, LLC",Other,,10.45%,,,,,,2028-11-23,1831,1807,1831,0.11%,1807,,,,,,MSDL,2024-03-01
+"Encore Holdings, LLC",Other,,10.45%,,,,,,2028-11-23,3561,3511,3561,0.21%,3511,,,,,,MSDL,2024-03-01
+Energy Labs Holdings Corp.,Other,Energy,10.71%,,,,,,2028-04-07,384,379,379,0.02%,379,,,,,,MSDL,2024-03-01
+Energy Labs Holdings Corp.,Other,Energy,10.71%,,,,,,2028-04-07,36,36,36,,36,,,,,,MSDL,2024-03-01
+Energy Labs Holdings Corp.,Other,Energy,10.71%,,,,,,2028-04-07,24,23,23,,23,,,,,,MSDL,2024-03-01
+"FLS Holding, Inc.",Other,,10.77%,,,,,,2028-12-15,19025,18733,18911,1.10%,18733,,,,,,MSDL,2024-03-01
+"FLS Holding, Inc.",Other,,10.77%,,,,,,2028-12-15,4461,4390,4434,0.26%,4390,,,,,,MSDL,2024-03-01
+"FLS Holding, Inc.",Other,,10.77%,,,,,,2027-12-17,,-24,-11,,-24,,,,,,MSDL,2024-03-01
+"Helios Service Partners, LLC",Other,Business Services,11.88%,,,,,,2027-03-19,6859,6703,6790,0.39%,6703,,,,,,MSDL,2024-03-01
+"Helios Service Partners, LLC",Other,Business Services,11.88%,,,,,,2027-03-19,6965,6737,6836,0.40%,6737,,,,,,MSDL,2024-03-01
+"Helios Service Partners, LLC",Other,Business Services,11.62%,,,,,,2027-03-19,748,719,735,0.04%,719,,,,,,MSDL,2024-03-01
+"Iris Buyer, LLC",Other,,11.60%,,,,,,2030-10-02,7008,6820,6820,0.40%,6820,,,,,,MSDL,2024-03-01
+"Iris Buyer, LLC",Other,,11.60%,,,,,,2030-10-02,145,130,130,0.01%,130,,,,,,MSDL,2024-03-01
+"Iris Buyer, LLC",Other,,11.60%,,,,,,2029-10-02,,-26,-26,,-26,,,,,,MSDL,2024-03-01
+"Atlas Us Finco, Inc.",Other,,12.51%,,,,,,2029-12-09,6984,6845,6845,0.40%,6845,,,,,,MSDL,2024-03-01
+"PDFTron Systems, Inc.",Other,,10.86%,,,,,,2027-07-15,30030,29694,29550,1.72%,29694,,,,,,MSDL,2024-03-01
+"PDFTron Systems, Inc.",Other,,10.86%,,,,,,2027-07-15,9727,9595,9571,0.56%,9595,,,,,,MSDL,2024-03-01
+"PDFTron Systems, Inc.",Other,,10.86%,,,,,,2026-07-15,3850,3772,3727,0.22%,3772,,,,,,MSDL,2024-03-01
+"Procure Acquireco, Inc.",Other,,10.54%,,,,,,2028-12-20,3889,3829,3773,0.22%,3829,,,,,,MSDL,2024-03-01
+"Procure Acquireco, Inc.",Other,,10.54%,,,,,,2028-12-20,192,189,186,0.01%,189,,,,,,MSDL,2024-03-01
+"Procure Acquireco, Inc.",Other,,10.54%,,,,,,2028-12-20,,-3,-7,,-3,,,,,,MSDL,2024-03-01
+Sherlock Buyer Corp.,Other,,11.20%,,,,,,2028-12-08,10950,10782,10943,0.64%,10782,,,,,,MSDL,2024-03-01
+Sherlock Buyer Corp.,Other,,11.20%,,,,,,2028-12-08,,-23,-2,,-23,,,,,,MSDL,2024-03-01
+Sherlock Buyer Corp.,Other,,11.20%,,,,,,2027-12-08,,-17,-1,,-17,,,,,,MSDL,2024-03-01
+"Surewerx Purchaser III, Inc.",Other,,12.10%,,,,,,2029-12-28,5447,5300,5447,0.32%,5300,,,,,,MSDL,2024-03-01
+"Surewerx Purchaser III, Inc.",Other,,12.10%,,,,,,2028-12-28,574,547,574,0.03%,547,,,,,,MSDL,2024-03-01
+"Sweep Purchaser, LLC",Other,,11.23%,,,,,,2026-11-30,8616,8522,6878,0.40%,8522,,,,,,MSDL,2024-03-01
+"Sweep Purchaser, LLC",Other,,11.23%,,,,,,2026-11-30,5873,5803,4634,0.27%,5803,,,,,,MSDL,2024-03-01
+"Sweep Purchaser, LLC",Other,,11.23%,,,,,,2026-11-30,1378,1364,1094,0.06%,1364,,,,,,MSDL,2024-03-01
+"Tamarack Intermediate, LLC",Other,Media & Entertainment,11.28%,,,,,,2028-03-13,5548,5462,5415,0.31%,5462,,,,,,MSDL,2024-03-01
+"Tamarack Intermediate, LLC",Other,Media & Entertainment,11.28%,,,,,,2028-03-13,202,192,192,0.01%,192,,,,,,MSDL,2024-03-01
+"Tamarack Intermediate, LLC",Other,Media & Entertainment,11.28%,,,,,,2028-03-13,,-13,-22,,-13,,,,,,MSDL,2024-03-01
+"United Flow Technologies Intermediate Holdco II, LLC",Other Equity,Media & Entertainment,11.28%,,,,,,2027-10-29,,16566,16577,0.96%,16566,,,,16801,,MSDL,2024-03-01
+"United Flow Technologies Intermediate Holdco II, LLC",Other Equity,Media & Entertainment,11.28%,,,,,,2027-10-29,,19349,19390,1.13%,19349,,,,19651,,MSDL,2024-03-01
+"United Flow Technologies Intermediate Holdco II, LLC",Other Equity,Media & Entertainment,11.28%,,,,,,2026-10-29,,1811,1805,0.10%,1811,,,,1845,,MSDL,2024-03-01
+"US Infra Svcs Buyer, LLC",Other,,12.33%,,,,,,2026-04-13,14973,14842,14193,0.82%,14842,,,,,,MSDL,2024-03-01
+"US Infra Svcs Buyer, LLC",Other,,12.33%,,,,,,2026-04-13,2113,2095,2003,0.12%,2095,,,,,,MSDL,2024-03-01
+"US Infra Svcs Buyer, LLC",Other,,12.33%,,,,,,2026-04-13,2250,2233,2133,0.12%,2233,,,,,,MSDL,2024-03-01
+"Vensure Employer Services, Inc.",Other,Business Services,10.63%,,,,,,2027-04-01,328,306,306,0.02%,306,,,,,,MSDL,2024-03-01
+"VRC Companies, LLC",Other,,11.12%,,,,,,2027-06-29,63939,63310,63856,3.71%,63310,,,,,,MSDL,2024-03-01
+"VRC Companies, LLC",Other,,11.12%,,,,,,2027-06-29,9063,8966,9051,0.53%,8966,,,,,,MSDL,2024-03-01
+"VRC Companies, LLC",Other,,11.12%,,,,,,2027-06-29,,-15,-2,,-15,,,,,,MSDL,2024-03-01
+"KPSKY Acquisition, Inc.",Other,,10.74%,,,,,,2028-10-19,33864,33358,33085,1.92%,33358,,,,,,MSDL,2024-03-01
+"KPSKY Acquisition, Inc.",Other,,10.74%,,,,,,2028-10-19,7754,7630,7576,0.44%,7630,,,,,,MSDL,2024-03-01
+"LJ Avalon Holdings, LLC",Other,,12.04%,,,,,,2030-02-01,4131,4019,4036,0.23%,4019,,,,,,MSDL,2024-03-01
+"LJ Avalon Holdings, LLC",Other,,12.04%,,,,,,2030-02-01,658,626,619,0.04%,626,,,,,,MSDL,2024-03-01
+"LJ Avalon Holdings, LLC",Other,,12.04%,,,,,,2029-02-01,,-17,-15,,-17,,,,,,MSDL,2024-03-01
+"Superman Holdings, LLC",Other,,11.47%,,,,,,2027-08-31,1601,1566,1581,0.09%,1566,,,,,,MSDL,2024-03-01
+"Superman Holdings, LLC",Other,,11.47%,,,,,,2027-08-31,,-4,-5,,-4,,,,,,MSDL,2024-03-01
+"BP Purchaser, LLC",Other,,10.95%,,,,,,2028-12-11,17161,16898,16677,0.97%,16898,,,,,,MSDL,2024-03-01
+"FORTIS Solutions Group, LLC",Other,,10.95%,,,,,,2028-10-15,26772,26371,26772,1.56%,26371,,,,,,MSDL,2024-03-01
+"FORTIS Solutions Group, LLC",Other,,10.95%,,,,,,2028-10-15,104,96,104,0.01%,96,,,,,,MSDL,2024-03-01
+"FORTIS Solutions Group, LLC",Other,,10.95%,,,,,,2027-10-15,135,101,135,0.01%,101,,,,,,MSDL,2024-03-01
+"48Forty Solutions, LLC",Other,,11.44%,,,,,,2026-11-30,17722,17455,16618,0.97%,17455,,,,,,MSDL,2024-03-01
+"48Forty Solutions, LLC",Other,,13.50%,,,,,,2026-11-30,1629,1594,1459,0.08%,1594,,,,,,MSDL,2024-03-01
+"ABB Concise Optical Group, LLC",Other,,13.01%,,,,,,2028-02-23,17008,16685,14653,0.85%,16685,,,,,,MSDL,2024-03-01
+"Avalara, Inc.",Other,,12.60%,,,,,,2028-10-19,11302,11070,11302,0.66%,11070,,,,,,MSDL,2024-03-01
+"Bradyifs Holdings, LLC",Other,,11.38%,,,,,,2029-10-31,7444,7298,7298,0.42%,7298,,,,,,MSDL,2024-03-01
+"Bradyifs Holdings, LLC",Other,,11.38%,,,,,,2029-10-31,201,191,191,0.01%,191,,,,,,MSDL,2024-03-01
+"Bradyifs Holdings, LLC",Other,,11.38%,,,,,,2029-10-31,,-12,-12,,-12,,,,,,MSDL,2024-03-01
+"PT Intermediate Holdings III, LLC",Other,Media & Entertainment,11.47%,,,,,,2028-11-01,28342,28128,27257,1.58%,28128,,,,,,MSDL,2024-03-01
+"PT Intermediate Holdings III, LLC",Other,Media & Entertainment,11.47%,,,,,,2028-11-01,15768,15646,15164,0.88%,15646,,,,,,MSDL,2024-03-01
+"Apex Service Partners, LLC",Other,Business Services,12.38%,,,,,,2030-10-24,31834,31235,31235,1.81%,31235,,,,,,MSDL,2024-03-01
+"Apex Service Partners, LLC",Other,Business Services,12.38%,,,,,,2030-10-24,1692,1598,1598,0.09%,1598,,,,,,MSDL,2024-03-01
+"Apex Service Partners, LLC",Other,Business Services,12.38%,,,,,,2029-10-24,203,156,156,0.01%,156,,,,,,MSDL,2024-03-01
+"Assembly Intermediate, LLC",Other,Media & Entertainment,11.45%,,,,,,2027-10-19,20741,20451,19961,1.16%,20451,,,,,,MSDL,2024-03-01
+"Assembly Intermediate, LLC",Other,Media & Entertainment,11.45%,,,,,,2027-10-19,3630,3568,3435,0.20%,3568,,,,,,MSDL,2024-03-01
+"Assembly Intermediate, LLC",Other,Media & Entertainment,11.45%,,,,,,2027-10-19,,-26,-78,,-26,,,,,,MSDL,2024-03-01
+"FPG Intermediate Holdco, LLC",Other,Media & Entertainment,12.04%,,,,,,2027-03-05,418,412,385,0.02%,412,,,,,,MSDL,2024-03-01
+"Groundworks, LLC",Other,,11.90%,,,,,,2030-03-14,1164,1134,1157,0.07%,1134,,,,,,MSDL,2024-03-01
+"Groundworks, LLC",Other,,11.90%,,,,,,2030-03-14,28,25,28,,25,,,,,,MSDL,2024-03-01
+"Heartland Home Services, Inc.",Other,Business Services,11.11%,,,,,,2026-12-15,1946,1936,1942,0.11%,1936,,,,,,MSDL,2024-03-01
+"Lightspeed Solution, LLC",Other,,11.86%,,,,,,2028-03-01,7881,7768,7741,0.45%,7768,,,,,,MSDL,2024-03-01
+"Lightspeed Solution, LLC",Other,,11.86%,,,,,,2028-03-01,423,402,379,0.02%,402,,,,,,MSDL,2024-03-01
+"LUV Car Wash Group, LLC",Other,Automotive,12.55%,,,,,,2026-12-09,714,708,711,0.04%,708,,,,,,MSDL,2024-03-01
+Magnolia Wash Holdings,Other,,12.16%,,,,,,2028-07-14,3263,3210,2947,0.17%,3210,,,,,,MSDL,2024-03-01
+Magnolia Wash Holdings,Other,,12.16%,,,,,,2028-07-14,699,687,631,0.04%,687,,,,,,MSDL,2024-03-01
+Magnolia Wash Holdings,Other,,12.16%,,,,,,2028-07-14,87,85,72,,85,,,,,,MSDL,2024-03-01
+"Spotless Brands, LLC",Other,,12.03%,,,,,,2028-07-25,4503,4429,4463,0.26%,4429,,,,,,MSDL,2024-03-01
+"Spotless Brands, LLC",Other,,12.03%,,,,,,2028-07-25,852,838,845,0.05%,838,,,,,,MSDL,2024-03-01
+"Spotless Brands, LLC",Other,,12.03%,,,,,,2028-07-25,31,29,30,,29,,,,,,MSDL,2024-03-01
+"Vertex Service Partners, LLC",Other,Business Services,10.90%,,,,,,2030-11-08,1774,1730,1730,0.10%,1730,,,,,,MSDL,2024-03-01
+"Vertex Service Partners, LLC",Other,Business Services,10.90%,,,,,,2030-11-08,854,802,802,0.05%,802,,,,,,MSDL,2024-03-01
+"Vertex Service Partners, LLC",Other,Business Services,10.90%,,,,,,2030-11-08,,-11,-11,,-11,,,,,,MSDL,2024-03-01
+"Abracon Group Holdings, LLC",Other,,11.54%,,,,,,2028-07-06,6037,5943,4986,0.29%,5943,,,,,,MSDL,2024-03-01
+"Abracon Group Holdings, LLC",Other,,11.54%,,,,,,2028-07-06,,-8,-77,,-8,,,,,,MSDL,2024-03-01
+"Abracon Group Holdings, LLC",Other,,11.54%,,,,,,2028-07-06,401,395,331,0.02%,395,,,,,,MSDL,2024-03-01
+"Dwyer Instruments, Inc.",Other,,11.17%,,,,,,2027-07-21,10512,10342,10303,0.60%,10342,,,,,,MSDL,2024-03-01
+"Dwyer Instruments, Inc.",Other,,11.17%,,,,,,2027-07-21,2023,1960,1953,0.11%,1960,,,,,,MSDL,2024-03-01
+"Dwyer Instruments, Inc.",Other,,11.17%,,,,,,2027-07-21,,-14,-20,,-14,,,,,,MSDL,2024-03-01
+"Infinite Bidco, LLC",Other,,11.88%,,,,,,2028-03-02,12360,12043,12285,0.71%,12043,,,,,,MSDL,2024-03-01
+"Magneto Components Buyco, LLC",Other,,11.36%,,,,,,2030-12-05,15302,15024,15024,0.87%,15024,,,,,,MSDL,2024-03-01
+"Magneto Components Buyco, LLC",Other,,11.36%,,,,,,2030-12-05,,-28,-28,,-28,,,,,,MSDL,2024-03-01
+"Magneto Components Buyco, LLC",Other,,11.36%,,,,,,2029-12-05,,-46,-46,,-46,,,,,,MSDL,2024-03-01
+"Applitools, Inc.",Other,,11.61%,,,,,,2029-05-25,3584,3541,3498,0.20%,3541,,,,,,MSDL,2024-03-01
+"Applitools, Inc.",Other,,11.61%,,,,,,2028-05-25,,-6,-10,,-6,,,,,,MSDL,2024-03-01
+"Cerity Partners, LLC",Other,,12.11%,,,,,,2029-07-30,4767,4639,4767,0.28%,4639,,,,,,MSDL,2024-03-01
+"Cerity Partners, LLC",Other,,12.11%,,,,,,2029-07-30,6698,6528,6698,0.39%,6528,,,,,,MSDL,2024-03-01
+"GC Waves Holdings, Inc.",Other,,11.46%,,,,,,2028-08-11,2302,2259,2259,0.13%,2259,,,,,,MSDL,2024-03-01
+"GC Waves Holdings, Inc.",Other,,11.46%,,,,,,2028-08-11,628,476,503,0.03%,476,,,,,,MSDL,2024-03-01
+"GC Waves Holdings, Inc.",Other,,11.46%,,,,,,2028-08-11,,-6,-6,,-6,,,,,,MSDL,2024-03-01
+SitusAMC Holdings Corp.,Other,,10.95%,,,,,,2027-12-22,3337,3312,3330,0.19%,3312,,,,,,MSDL,2024-03-01
+"Smarsh, Inc.",Other,,11.10%,,,,,,2029-02-16,4286,4217,4213,0.24%,4217,,,,,,MSDL,2024-03-01
+"Smarsh, Inc.",Other,,11.10%,,,,,,2029-02-16,536,523,518,0.03%,523,,,,,,MSDL,2024-03-01
+"Smarsh, Inc.",Other,,11.10%,,,,,,2029-02-16,,-4,-5,,-4,,,,,,MSDL,2024-03-01
+"Trintech, Inc.",Other,,11.86%,,,,,,2029-07-25,34086,33440,33445,1.94%,33440,,,,,,MSDL,2024-03-01
+"Trintech, Inc.",Other,,11.86%,,,,,,2029-07-25,837,782,782,0.05%,782,,,,,,MSDL,2024-03-01
+"AMCP Pet Holdings, Inc.",Other,Consumer & Retail,12.50%,,,,,,2026-10-05,41763,41011,40856,2.37%,41011,,,,,,MSDL,2024-03-01
+"AMCP Pet Holdings, Inc.",Other,Consumer & Retail,12.50%,,,,,,2026-10-05,3798,3715,3671,0.21%,3715,,,,,,MSDL,2024-03-01
+"Nellson Nutraceutical, Inc.",Other,,11.30%,,,,,,2025-12-23,18419,18265,18329,1.06%,18265,,,,,,MSDL,2024-03-01
+"Teasdale Foods, Inc.",Other,Food & Beverage,12.68%,,,,,,2025-12-18,10837,10742,9928,0.58%,10742,,,,,,MSDL,2024-03-01
+"Performance Health Holdings, Inc.",Other,,11.32%,,,,,,2027-07-12,9398,9275,9350,0.54%,9275,,,,,,MSDL,2024-03-01
+"PerkinElmer U.S., LLC",Other,,12.00%,,,,,,2029-03-13,4383,4268,4373,0.25%,4268,,,,,,MSDL,2024-03-01
+"Tidi Legacy Products, Inc.",Other,,10.86%,,,,,,2029-12-19,3470,3400,3400,0.20%,3400,,,,,,MSDL,2024-03-01
+"Tidi Legacy Products, Inc.",Other,,10.86%,,,,,,2029-12-19,,-9,-9,,-9,,,,,,MSDL,2024-03-01
+"Tidi Legacy Products, Inc.",Other,,10.86%,,,,,,2029-12-19,,-13,-13,,-13,,,,,,MSDL,2024-03-01
+"YI, LLC",Other,,11.09%,,,,,,2029-12-03,5654,5542,5542,0.32%,5542,,,,,,MSDL,2024-03-01
+"YI, LLC",Other,,11.09%,,,,,,2029-12-01,,-12,-12,,-12,,,,,,MSDL,2024-03-01
+"YI, LLC",Other,,11.09%,,,,,,2029-12-03,,-17,-17,,-17,,,,,,MSDL,2024-03-01
+"Advarra Holdings, Inc.",Other,,10.61%,,,,,,2029-08-24,454,447,447,0.03%,447,,,,,,MSDL,2024-03-01
+"Advarra Holdings, Inc.",Other,,10.61%,,,,,,2029-08-24,,,-1,,,,,,,,MSDL,2024-03-01
+"DCA Investment Holdings, LLC",Other,Financial Services,11.85%,,,,,,2028-04-03,18680,18377,18247,1.06%,18377,,,,,,MSDL,2024-03-01
+"DCA Investment Holdings, LLC",Other,Financial Services,11.85%,,,,,,2028-04-03,3625,3564,3541,0.21%,3564,,,,,,MSDL,2024-03-01
+"Gateway US Holdings, Inc.",Other,,11.85%,,,,,,2026-09-22,750,745,750,0.04%,745,,,,,,MSDL,2024-03-01
+"Gateway US Holdings, Inc.",Other,,11.85%,,,,,,2026-09-22,211,210,211,0.01%,210,,,,,,MSDL,2024-03-01
+"Heartland Veterinary Partners, LLC",Other,Healthcare,10.21%,,,,,,2026-12-10,1847,1835,1830,0.11%,1835,,,,,,MSDL,2024-03-01
+"Heartland Veterinary Partners, LLC",Other,Healthcare,10.21%,,,,,,2026-12-10,4182,4158,4143,0.24%,4158,,,,,,MSDL,2024-03-01
+"Heartland Veterinary Partners, LLC",Other,Healthcare,10.21%,,,,,,2026-12-10,,-2,-3,,-2,,,,,,MSDL,2024-03-01
+"iCIMS, Inc.",Other,,12.62%,,,,,,2028-08-18,7064,6963,7064,0.41%,6963,,,,,,MSDL,2024-03-01
+"iCIMS, Inc.",Other,,12.62%,,,,,,2028-08-18,8,7,8,,7,,,,,,MSDL,2024-03-01
+Intelerad Medical Systems Inc.,Other,Healthcare,12.03%,,,,,,2026-08-21,495,484,466,0.03%,484,,,,,,MSDL,2024-03-01
+Intelerad Medical Systems Inc.,Other,Healthcare,12.03%,,,,,,2026-08-21,34,33,32,,33,,,,,,MSDL,2024-03-01
+"mPulse Mobile, Inc.",Other,,11.83%,,,,,,2027-12-17,40740,39916,39947,2.32%,39916,,,,,,MSDL,2024-03-01
+"mPulse Mobile, Inc.",Other,,11.98%,,,,,,2027-12-17,5417,5300,5308,0.31%,5300,,,,,,MSDL,2024-03-01
+"mPulse Mobile, Inc.",Other,,11.83%,,,,,,2027-12-17,,-60,-59,,-60,,,,,,MSDL,2024-03-01
+"Pareto Health Intermediate Holdings, Inc.",Other,Media & Entertainment,11.97%,,,,,,2030-05-31,6745,6619,6695,0.39%,6619,,,,,,MSDL,2024-03-01
+"Pareto Health Intermediate Holdings, Inc.",Other,Media & Entertainment,11.97%,,,,,,2029-05-31,,-14,-6,,-14,,,,,,MSDL,2024-03-01
+"PPV Intermediate Holdings, LLC",Other,Media & Entertainment,11.14%,,,,,,2029-08-31,4357,4198,4275,0.25%,4198,,,,,,MSDL,2024-03-01
+"PPV Intermediate Holdings, LLC",Other,Media & Entertainment,11.14%,,,,,,2029-08-31,,-71,-124,0.01%,-71,,,,,,MSDL,2024-03-01
+"Promptcare Infusion Buyer, Inc.",Other,Healthcare,11.46%,,,,,,2027-09-01,8981,8860,8865,0.52%,8860,,,,,,MSDL,2024-03-01
+"Promptcare Infusion Buyer, Inc.",Other,Healthcare,11.46%,,,,,,2027-09-01,1399,1385,1381,0.08%,1385,,,,,,MSDL,2024-03-01
+"Stepping Stones Healthcare Services, LLC",Other,Healthcare,11.20%,,,,,,2029-01-02,4288,4237,4227,0.25%,4237,,,,,,MSDL,2024-03-01
+"Stepping Stones Healthcare Services, LLC",Other,Healthcare,11.20%,,,,,,2029-01-02,965,952,947,0.06%,952,,,,,,MSDL,2024-03-01
+"Stepping Stones Healthcare Services, LLC",Other,Healthcare,11.20%,,,,,,2026-12-30,,-6,-9,,-6,,,,,,MSDL,2024-03-01
+Suveto,Other,,9.71%,,,,,,2027-09-09,11837,11753,11597,0.67%,11753,,,,,,MSDL,2024-03-01
+Suveto,Other,,9.71%,,,,,,2027-09-09,366,352,340,0.02%,352,,,,,,MSDL,2024-03-01
+"Tivity Health, Inc.",Other,,11.35%,,,,,,2029-06-28,3674,3627,3668,0.21%,3627,,,,,,MSDL,2024-03-01
+"Vardiman Black Holdings, LLC",Other,,14.40%,,,,,,2027-03-18,3386,3360,2815,0.16%,3360,,,,,,MSDL,2024-03-01
+"Vardiman Black Holdings, LLC",Other,,14.40%,,,,,,2027-03-18,4020,3988,3342,0.19%,3988,,,,,,MSDL,2024-03-01
+Vermont Aus Pty Ltd.,Other,,11.00%,,,,,,2028-03-23,8351,8190,8194,0.48%,8190,,,,,,MSDL,2024-03-01
+"Hyland Software, Inc.",Other,Software & Technology,11.36%,,,,,,2030-09-19,39656,39077,39212,2.28%,39077,,,,,,MSDL,2024-03-01
+"Hyland Software, Inc.",Other,Software & Technology,11.36%,,,,,,2029-09-19,,-27,-21,,-27,,,,,,MSDL,2024-03-01
+"Lightspeed Buyer, Inc.",Other,,10.71%,,,,,,2026-02-03,12540,12381,12429,0.72%,12381,,,,,,MSDL,2024-03-01
+"Lightspeed Buyer, Inc.",Other,,10.71%,,,,,,2026-02-03,9911,9774,9823,0.57%,9774,,,,,,MSDL,2024-03-01
+Excelitas Technologies Corp.,Other,,11.23%,,,,,,2029-08-13,1455,1431,1442,0.08%,1431,,,,,,MSDL,2024-03-01
+Excelitas Technologies Corp.,Other,,9.74%,,,,,,2029-08-13,,244,262,0.02%,244,,,,,,MSDL,2024-03-01
+Excelitas Technologies Corp.,Other,,11.23%,,,,,,2029-08-13,126,124,125,0.01%,124,,,,,,MSDL,2024-03-01
+Excelitas Technologies Corp.,Other,,11.23%,,,,,,2028-08-14,80,78,79,,78,,,,,,MSDL,2024-03-01
+"Raptor Merger Sub Debt, LLC",Other,,12.10%,,,,,,2029-04-01,32233,31399,32201,1.87%,31399,,,,,,MSDL,2024-03-01
+"Raptor Merger Sub Debt, LLC",Other,,12.10%,,,,,,2028-04-01,488,431,486,0.03%,431,,,,,,MSDL,2024-03-01
+"Amerilife Holdings, LLC",Other,,11.15%,,,,,,2029-08-31,2024,1989,1997,0.12%,1989,,,,,,MSDL,2024-03-01
+"Amerilife Holdings, LLC",Other,,11.15%,,,,,,2029-08-31,722,708,710,0.04%,708,,,,,,MSDL,2024-03-01
+"Amerilife Holdings, LLC",Other,,11.15%,,,,,,2028-08-31,,-7,-6,,-7,,,,,,MSDL,2024-03-01
+Foundation Risk Partners Corp.,Other,,11.45%,,,,,,2028-10-29,42533,42053,42533,2.47%,42053,,,,,,MSDL,2024-03-01
+Foundation Risk Partners Corp.,Other,,11.45%,,,,,,2028-10-29,9251,9146,9251,0.54%,9146,,,,,,MSDL,2024-03-01
+"Galway Borrower, LLC",Other,,10.71%,,,,,,2028-09-29,33377,32879,32430,1.88%,32879,,,,,,MSDL,2024-03-01
+"Galway Borrower, LLC",Other,,10.71%,,,,,,2028-09-29,,-15,-18,,-15,,,,,,MSDL,2024-03-01
+"Galway Borrower, LLC",Other,,10.71%,,,,,,2027-09-30,,-26,-59,,-26,,,,,,MSDL,2024-03-01
+"Higginbotham Insurance Agency, Inc.",Other,Insurance,10.96%,,,,,,2028-11-24,18295,18118,18290,1.06%,18118,,,,,,MSDL,2024-03-01
+"Higginbotham Insurance Agency, Inc.",Other,Insurance,10.96%,,,,,,2028-11-24,2494,2464,2493,0.14%,2464,,,,,,MSDL,2024-03-01
+"High Street Buyer, Inc.",Other,,11.25%,,,,,,2028-04-14,9890,9756,9890,0.57%,9756,,,,,,MSDL,2024-03-01
+"High Street Buyer, Inc.",Other,,11.25%,,,,,,2028-04-14,39719,39156,39719,2.31%,39156,,,,,,MSDL,2024-03-01
+"Long Term Care Group, Inc.",Other,,12.66%,,,,,,2027-09-08,5115,5043,4235,0.25%,5043,,,,,,MSDL,2024-03-01
+"Inszone Mid, LLC",Other,,11.11%,,,,,,2029-11-12,4460,4372,4372,0.25%,4372,,,,,,MSDL,2024-03-01
+"Inszone Mid, LLC",Other,,11.11%,,,,,,2029-11-12,533,463,464,0.03%,463,,,,,,MSDL,2024-03-01
+"Inszone Mid, LLC",Other,,11.11%,,,,,,2029-11-12,,-16,-16,,-16,,,,,,MSDL,2024-03-01
+"Integrity Marketing Acquisition, LLC",Other,Business Services,11.39%,,,,,,2026-08-27,392,385,384,0.02%,385,,,,,,MSDL,2024-03-01
+"Integrity Marketing Acquisition, LLC",Other,Business Services,11.54%,,,,,,2026-08-27,85345,84685,83705,4.86%,84685,,,,,,MSDL,2024-03-01
+"Integrity Marketing Acquisition, LLC",Other,Business Services,11.39%,,,,,,2026-08-27,,-2,-1,,-2,,,,,,MSDL,2024-03-01
+Keystone Agency Investors,Other,,11.00%,,,,,,2027-05-03,3480,3442,3429,0.20%,3442,,,,,,MSDL,2024-03-01
+Keystone Agency Investors,Other,,11.00%,,,,,,2027-05-03,4007,3964,3948,0.23%,3964,,,,,,MSDL,2024-03-01
+Majesco,Other,,12.60%,,,,,,2027-09-21,23182,22792,22920,1.33%,22792,,,,,,MSDL,2024-03-01
+Majesco,Other,,12.60%,,,,,,2026-09-21,,-21,-18,,-21,,,,,,MSDL,2024-03-01
+"Patriot Growth Insurance Services, LLC",Other,Insurance,11.00%,,,,,,2028-10-16,62358,61419,61747,3.59%,61419,,,,,,MSDL,2024-03-01
+"Patriot Growth Insurance Services, LLC",Other,Insurance,11.00%,,,,,,2028-10-16,,-61,-44,,-61,,,,,,MSDL,2024-03-01
+"Peter C. Foy & Associates Insurance Services, LLC",Other,Insurance,11.47%,,,,,,2028-11-01,20205,20029,19938,1.16%,20029,,,,,,MSDL,2024-03-01
+"Peter C. Foy & Associates Insurance Services, LLC",Other,Insurance,11.47%,,,,,,2028-11-01,7140,7060,7033,0.41%,7060,,,,,,MSDL,2024-03-01
+"Peter C. Foy & Associates Insurance Services, LLC",Other,Insurance,11.47%,,,,,,2027-11-01,,-5,-12,,-5,,,,,,MSDL,2024-03-01
+"RSC Acquisition, Inc.",Other,,11.02%,,,,,,2029-11-01,32400,31989,32125,1.87%,31989,,,,,,MSDL,2024-03-01
+"RSC Acquisition, Inc.",Other,,11.39%,,,,,,2029-11-01,135,124,128,0.01%,124,,,,,,MSDL,2024-03-01
+"Summit Acquisition, Inc.",Other,,12.10%,,,,,,2030-05-01,7353,7146,7242,0.42%,7146,,,,,,MSDL,2024-03-01
+"Summit Acquisition, Inc.",Other,,12.10%,,,,,,2030-05-01,,-22,-25,,-22,,,,,,MSDL,2024-03-01
+"Summit Acquisition, Inc.",Other,,12.10%,,,,,,2029-05-01,,-22,-12,,-22,,,,,,MSDL,2024-03-01
+"World Insurance Associates, LLC",Other,Insurance,11.36%,,,,,,2028-04-03,64847,63382,62776,3.65%,63382,,,,,,MSDL,2024-03-01
+"World Insurance Associates, LLC",Other,Insurance,11.36%,,,,,,2028-04-03,,-11,-41,,-11,,,,,,MSDL,2024-03-01
+"FMG Suite Holdings, LLC",Other,,10.78%,,,,,,2026-10-30,23574,23267,23392,1.36%,23267,,,,,,MSDL,2024-03-01
+"FMG Suite Holdings, LLC",Other,,10.78%,,,,,,2026-10-30,4568,4521,4538,0.26%,4521,,,,,,MSDL,2024-03-01
+"FMG Suite Holdings, LLC",Other,,12.75%,,,,,,2026-10-30,777,753,762,0.04%,753,,,,,,MSDL,2024-03-01
+"Spectrio, LLC",Other,,11.38%,,,,,,2026-12-09,31645,31343,30028,1.74%,31343,,,,,,MSDL,2024-03-01
+"Spectrio, LLC",Other,,11.38%,,,,,,2026-12-09,12765,12725,12113,0.70%,12725,,,,,,MSDL,2024-03-01
+"Spectrio, LLC",Other,,11.38%,,,,,,2026-12-09,3498,3460,3294,0.19%,3460,,,,,,MSDL,2024-03-01
+"Triple Lift, Inc.",Other,,11.17%,,,,,,2028-05-05,27300,26926,25400,1.48%,26926,,,,,,MSDL,2024-03-01
+"Triple Lift, Inc.",Other,,11.17%,,,,,,2028-05-05,1533,1484,1255,0.07%,1484,,,,,,MSDL,2024-03-01
+"Atlas Purchaser, Inc.",Other,,10.88%,,,,,,2028-05-08,8831,8710,5210,0.30%,8710,,,,,,MSDL,2024-03-01
+"Catalis Intermediate, Inc.",Other,Media & Entertainment,11.00%,,,,,,2027-08-04,39357,38709,37192,2.16%,38709,,,,,,MSDL,2024-03-01
+"Catalis Intermediate, Inc.",Other,Media & Entertainment,11.00%,,,,,,2027-08-04,8855,8723,8368,0.49%,8723,,,,,,MSDL,2024-03-01
+"Catalis Intermediate, Inc.",Other,Media & Entertainment,11.00%,,,,,,2027-08-04,1460,1396,1227,0.07%,1396,,,,,,MSDL,2024-03-01
+"Donuts, Inc.",Other,,11.59%,,,,,,2027-12-29,24855,24618,24838,1.44%,24618,,,,,,MSDL,2024-03-01
+"Recovery Point Systems, Inc.",Other,,11.07%,,,,,,2026-08-12,40635,40229,40635,2.36%,40229,,,,,,MSDL,2024-03-01
+"Redwood Services Group, LLC",Other,Business Services,11.70%,,,,,,2029-06-15,10829,10648,10563,0.61%,10648,,,,,,MSDL,2024-03-01
+"Redwood Services Group, LLC",Other,Business Services,11.70%,,,,,,2029-06-15,5706,5645,5553,0.32%,5645,,,,,,MSDL,2024-03-01
+Syntax Systems Ltd.,Other,,10.96%,,,,,,2028-10-29,35093,34830,34469,2.00%,34830,,,,,,MSDL,2024-03-01
+Syntax Systems Ltd.,Other,,10.96%,,,,,,2026-10-29,2295,2274,2229,0.13%,2274,,,,,,MSDL,2024-03-01
+"Thrive Buyer, Inc.",Other,,11.55%,,,,,,2027-01-22,22937,22634,22516,1.31%,22634,,,,,,MSDL,2024-03-01
+"Thrive Buyer, Inc.",Other,,11.50%,,,,,,2027-01-22,16912,16705,16577,0.96%,16705,,,,,,MSDL,2024-03-01
+"Thrive Buyer, Inc.",Other,,13.50%,,,,,,2027-01-22,661,639,621,0.04%,639,,,,,,MSDL,2024-03-01
+"UpStack, Inc.",Other,,11.60%,,,,,,2027-08-20,8250,8115,8044,0.47%,8115,,,,,,MSDL,2024-03-01
+"UpStack, Inc.",Other,,11.60%,,,,,,2027-08-20,6767,6548,6442,0.37%,6548,,,,,,MSDL,2024-03-01
+"UpStack, Inc.",Other,,11.60%,,,,,,2027-08-20,263,248,241,0.01%,248,,,,,,MSDL,2024-03-01
+GSM Acquisition Corp.,Other,,10.47%,,,,,,2026-11-16,17269,17170,17096,0.99%,17170,,,,,,MSDL,2024-03-01
+GSM Acquisition Corp.,Other,,10.47%,,,,,,2026-11-16,4445,4411,4400,0.26%,4411,,,,,,MSDL,2024-03-01
+GSM Acquisition Corp.,Other,,10.47%,,,,,,2026-11-16,,-29,-43,,-29,,,,,,MSDL,2024-03-01
+"Answer Acquisition, LLC",Other,,11.25%,,,,,,2026-12-30,10611,10472,10454,0.61%,10472,,,,,,MSDL,2024-03-01
+"Answer Acquisition, LLC",Other,,11.25%,,,,,,2026-12-30,641,631,629,0.04%,631,,,,,,MSDL,2024-03-01
+"Chase Intermediate, LLC",Other,Media & Entertainment,11.00%,,,,,,2028-10-30,,-99,-196,0.01%,-99,,,,,,MSDL,2024-03-01
+"Chase Intermediate, LLC",Other,Media & Entertainment,11.00%,,,,,,2028-10-30,,-10,-10,,-10,,,,,,MSDL,2024-03-01
+Komline Sanderson Engineering Corp.,Other,Industrials,11.78%,,,,,,2026-03-17,17218,17124,16681,0.97%,17124,,,,,,MSDL,2024-03-01
+Komline Sanderson Engineering Corp.,Other,Industrials,11.78%,,,,,,2026-03-17,17776,17634,16955,0.99%,17634,,,,,,MSDL,2024-03-01
+Komline Sanderson Engineering Corp.,Other,Industrials,13.50%,,,,,,2026-03-17,,-21,-148,0.01%,-21,,,,,,MSDL,2024-03-01
+"MHE Intermediate Holdings, LLC",Other,Media & Entertainment,11.60%,,,,,,2027-07-21,19165,18905,18990,1.10%,18905,,,,,,MSDL,2024-03-01
+"MHE Intermediate Holdings, LLC",Other,Media & Entertainment,11.60%,,,,,,2027-07-21,3674,3624,3636,0.21%,3624,,,,,,MSDL,2024-03-01
+"MHE Intermediate Holdings, LLC",Other,Media & Entertainment,11.60%,,,,,,2027-07-21,,-30,-25,,-30,,,,,,MSDL,2024-03-01
+"AWP Group Holdings, Inc.",Other,,10.95%,,,,,,2029-12-24,6152,5917,6058,0.35%,5917,,,,,,MSDL,2024-03-01
+"AWP Group Holdings, Inc.",Other,,10.95%,,,,,,2029-12-24,79,63,54,,63,,,,,,MSDL,2024-03-01
+"AWP Group Holdings, Inc.",Other,,10.95%,,,,,,2029-12-24,170,154,158,0.01%,154,,,,,,MSDL,2024-03-01
+"Ground Penetrating Radar Systems, LLC",Other,,10.03%,,,,,,2026-06-26,10202,10098,10114,0.59%,10098,,,,,,MSDL,2024-03-01
+"Ground Penetrating Radar Systems, LLC",Other,,10.03%,,,,,,2025-06-26,,-11,-14,,-11,,,,,,MSDL,2024-03-01
+"Vessco Midco Holdings, LLC",Other,,9.97%,,,,,,2026-11-02,2687,2673,2687,0.16%,2673,,,,,,MSDL,2024-03-01
+"Vessco Midco Holdings, LLC",Other,,9.97%,,,,,,2026-11-02,1751,1742,1751,0.10%,1742,,,,,,MSDL,2024-03-01
+"Vessco Midco Holdings, LLC",Other,,12.00%,,,,,,2026-10-18,20,18,20,,18,,,,,,MSDL,2024-03-01
+"Caerus US 1, Inc.",Other,,11.11%,,,,,,2029-05-25,11038,10846,11038,0.64%,10846,,,,,,MSDL,2024-03-01
+"Caerus US 1, Inc.",Other,,11.11%,,,,,,2029-05-25,713,693,713,0.04%,693,,,,,,MSDL,2024-03-01
+"Caerus US 1, Inc.",Other,,11.11%,,,,,,2029-05-25,878,859,878,0.05%,859,,,,,,MSDL,2024-03-01
+"Abacus Data Holdings, Inc.",Other,,11.71%,,,,,,2027-03-10,18427,18180,18427,1.07%,18180,,,,,,MSDL,2024-03-01
+"Abacus Data Holdings, Inc.",Other,,11.71%,,,,,,2027-03-10,1931,1919,1931,0.11%,1919,,,,,,MSDL,2024-03-01
+"Abacus Data Holdings, Inc.",Other,,11.71%,,,,,,2027-03-10,1050,1032,1050,0.06%,1032,,,,,,MSDL,2024-03-01
+"Bridgepointe Technologies, LLC",Other,,12.00%,,,,,,2027-12-31,17230,16726,16944,0.98%,16726,,,,,,MSDL,2024-03-01
+"Bridgepointe Technologies, LLC",Other,,12.00%,,,,,,2027-12-31,10091,9582,9850,0.57%,9582,,,,,,MSDL,2024-03-01
+"Bullhorn, Inc.",Other,,10.96%,,,,,,2026-09-30,15447,15364,15399,0.89%,15364,,,,,,MSDL,2024-03-01
+"Bullhorn, Inc.",Other,,10.96%,,,,,,2026-09-30,63,61,62,,61,,,,,,MSDL,2024-03-01
+"Bullhorn, Inc.",Other,,10.96%,,,,,,2026-09-30,,-4,-2,,-4,,,,,,MSDL,2024-03-01
+"Citrin Cooperman Advisors, LLC",Other,,11.37%,,,,,,2027-10-01,24505,24123,24486,1.42%,24123,,,,,,MSDL,2024-03-01
+"Citrin Cooperman Advisors, LLC",Other,,11.37%,,,,,,2027-10-01,9330,9115,9260,0.54%,9115,,,,,,MSDL,2024-03-01
+"GPS Merger Sub, LLC",Other,,11.38%,,,,,,2029-10-02,4927,4831,4831,0.28%,4831,,,,,,MSDL,2024-03-01
+"GPS Merger Sub, LLC",Other,,11.38%,,,,,,2029-10-02,,-12,-12,,-12,,,,,,MSDL,2024-03-01
+"GPS Merger Sub, LLC",Other,,11.38%,,,,,,2029-10-02,,-20,-20,,-20,,,,,,MSDL,2024-03-01
+"KENG Acquisition, Inc.",Other,,11.60%,,,,,,2029-08-01,3221,3144,3180,0.18%,3144,,,,,,MSDL,2024-03-01
+"KENG Acquisition, Inc.",Other,,11.60%,,,,,,2029-08-01,400,367,369,0.02%,367,,,,,,MSDL,2024-03-01
+"KENG Acquisition, Inc.",Other,,11.60%,,,,,,2029-08-01,98,77,86,,77,,,,,,MSDL,2024-03-01
+"KWOR Acquisition, Inc.",Other,,10.71%,,,,,,2028-12-22,5333,5250,5257,0.31%,5250,,,,,,MSDL,2024-03-01
+"KWOR Acquisition, Inc.",Other,,10.71%,,,,,,2028-12-22,1301,1253,1233,0.07%,1253,,,,,,MSDL,2024-03-01
+"KWOR Acquisition, Inc.",Other,,12.75%,,,,,,2027-12-22,52,51,51,,51,,,,,,MSDL,2024-03-01
+"Project Boost Purchaser, LLC",Other,,10.64%,,,,,,2029-05-02,5668,5623,5662,0.33%,5623,,,,,,MSDL,2024-03-01
+"Project Boost Purchaser, LLC",Other,,10.64%,,,,,,2029-05-02,,-4,-1,,-4,,,,,,MSDL,2024-03-01
+"Associations, Inc.",Other,,12.17%,,,,,,2027-07-02,17780,17669,17610,1.02%,17669,,,,,,MSDL,2024-03-01
+"Associations, Inc.",Other,,12.17%,,,,,,2027-07-02,21896,21757,21687,1.26%,21757,,,,,,MSDL,2024-03-01
+"Associations, Inc.",Other,,12.17%,,,,,,2027-07-02,657,646,640,0.04%,646,,,,,,MSDL,2024-03-01
+"MRI Software, LLC",Other,Software & Technology,10.90%,,,,,,2027-02-10,59262,58975,58936,3.42%,58975,,,,,,MSDL,2024-03-01
+"MRI Software, LLC",Other,Software & Technology,10.90%,,,,,,2027-02-10,,-8,-12,,-8,,,,,,MSDL,2024-03-01
+"Pritchard Industries, LLC",Other,,10.94%,,,,,,2027-10-13,25274,24925,24771,1.44%,24925,,,,,,MSDL,2024-03-01
+"Pritchard Industries, LLC",Other,,10.94%,,,,,,2027-10-13,6043,5956,5922,0.34%,5956,,,,,,MSDL,2024-03-01
+"Zarya Intermediate, LLC",Other,Media & Entertainment,11.89%,,,,,,2027-07-01,35408,35408,35408,2.06%,35408,,,,,,MSDL,2024-03-01
+"Zarya Intermediate, LLC",Other,Media & Entertainment,11.89%,,,,,,2027-07-01,3128,3128,3128,0.18%,3128,,,,,,MSDL,2024-03-01
+"Alert Media, Inc.",Other,Media & Entertainment,13.08%,,,,,,2027-04-12,19283,19048,18983,1.10%,19048,,,,,,MSDL,2024-03-01
+"Alert Media, Inc.",Other,Media & Entertainment,13.08%,,,,,,2027-04-12,,-37,-53,,-37,,,,,,MSDL,2024-03-01
+"Anaplan, Inc.",Other,,11.85%,,,,,,2029-06-21,24000,23597,24000,1.39%,23597,,,,,,MSDL,2024-03-01
+"Appfire Technologies, LLC",Other,,11.03%,,,,,,2027-03-09,18667,18576,18426,1.07%,18576,,,,,,MSDL,2024-03-01
+"Appfire Technologies, LLC",Other,,11.03%,,,,,,2027-03-09,,-9,-14,,-9,,,,,,MSDL,2024-03-01
+"Appfire Technologies, LLC",Other,,13.00%,,,,,,2027-03-09,38,36,36,,36,,,,,,MSDL,2024-03-01
+"Bottomline Technologies, Inc.",Other,,10.68%,,,,,,2029-05-14,3692,3630,3682,0.21%,3630,,,,,,MSDL,2024-03-01
+"CLEO Communications Holding, LLC",Other,,11.96%,,,,,,2027-06-09,39998,39743,39370,2.29%,39743,,,,,,MSDL,2024-03-01
+"CLEO Communications Holding, LLC",Other,,11.96%,,,,,,2027-06-09,,-72,-196,0.01%,-72,,,,,,MSDL,2024-03-01
+"Coupa Holdings, LLC",Other,,12.86%,,,,,,2030-02-27,2264,2212,2239,0.13%,2212,,,,,,MSDL,2024-03-01
+"Coupa Holdings, LLC",Other,,12.86%,,,,,,2030-02-27,,-12,-12,,-12,,,,,,MSDL,2024-03-01
+"Coupa Holdings, LLC",Other,,12.86%,,,,,,2029-02-27,,-18,-9,,-18,,,,,,MSDL,2024-03-01
+"Cyara AcquisitionCo, LLC",Other,,12.08%,,,,,,2029-06-28,4664,4545,4580,0.27%,4545,,,,,,MSDL,2024-03-01
+"Cyara AcquisitionCo, LLC",Other,,12.08%,,,,,,2029-06-28,,-8,-6,,-8,,,,,,MSDL,2024-03-01
+Diligent Corp.,Other,,11.28%,,,,,,2025-08-04,29740,29629,29678,1.72%,29629,,,,,,MSDL,2024-03-01
+Diligent Corp.,Other,,11.23%,,,,,,2025-08-04,2179,2170,2174,0.13%,2170,,,,,,MSDL,2024-03-01
+Diligent Corp.,Other,,11.23%,,,,,,2025-08-04,2430,2413,2421,0.14%,2413,,,,,,MSDL,2024-03-01
+"E-Discovery AcquireCo, LLC",Other,,11.89%,,,,,,2029-08-29,17795,17368,17482,1.02%,17368,,,,,,MSDL,2024-03-01
+"E-Discovery AcquireCo, LLC",Other,,11.89%,,,,,,2029-08-29,,-38,-29,,-38,,,,,,MSDL,2024-03-01
+"Fullsteam Operations, LLC",Other,,13.78%,,,,,,2029-11-27,10860,10538,10538,0.61%,10538,,,,,,MSDL,2024-03-01
+"Fullsteam Operations, LLC",Other,,13.78%,,,,,,2029-11-27,1034,947,946,0.05%,947,,,,,,MSDL,2024-03-01
+"Fullsteam Operations, LLC",Other,,13.78%,,,,,,2029-11-27,,-18,-18,,-18,,,,,,MSDL,2024-03-01
+"GS AcquisitionCo, Inc.",Other,,11.00%,,,,,,2026-05-22,75145,74784,75145,4.37%,74784,,,,,,MSDL,2024-03-01
+"Kaseya, Inc.",Other,,11.38%,,,,,,2029-06-25,14219,14043,14155,0.82%,14043,,,,,,MSDL,2024-03-01
+"Kaseya, Inc.",Other,,11.38%,,,,,,2029-06-25,53,47,49,,47,,,,,,MSDL,2024-03-01
+"Kaseya, Inc.",Other,,11.38%,,,,,,2029-06-25,216,206,212,0.01%,206,,,,,,MSDL,2024-03-01
+"LegitScript, LLC",Other,,11.11%,,,,,,2029-06-24,26569,26128,26332,1.53%,26128,,,,,,MSDL,2024-03-01
+"LegitScript, LLC",Other,,11.11%,,,,,,2029-06-24,702,641,637,0.04%,641,,,,,,MSDL,2024-03-01
+"LegitScript, LLC",Other,,11.11%,,,,,,2028-06-24,1000,938,963,0.06%,938,,,,,,MSDL,2024-03-01
+"Matrix Parent, Inc.",Other,,10.35%,,,,,,2029-03-01,499,370,339,0.02%,370,,,,,,MSDL,2024-03-01
+"Montana Buyer, Inc.",Other,,11.11%,,,,,,2029-07-22,4089,4020,4056,0.24%,4020,,,,,,MSDL,2024-03-01
+"Montana Buyer, Inc.",Other,,13.25%,,,,,,2028-07-22,67,60,63,,60,,,,,,MSDL,2024-03-01
+Netwrix Corp.,Other,,10.39%,,,,,,2029-06-11,5489,5446,5407,0.31%,5446,,,,,,MSDL,2024-03-01
+Netwrix Corp.,Other,,10.39%,,,,,,2029-06-11,,-7,-23,,-7,,,,,,MSDL,2024-03-01
+Netwrix Corp.,Other,,10.39%,,,,,,2029-06-11,,-3,-6,,-3,,,,,,MSDL,2024-03-01
+"Oak Purchaser, Inc.",Other,,10.85%,,,,,,2028-04-28,2792,2770,2732,0.16%,2770,,,,,,MSDL,2024-03-01
+"Oak Purchaser, Inc.",Other,,10.85%,,,,,,2028-04-28,1735,1721,1694,0.10%,1721,,,,,,MSDL,2024-03-01
+"Oak Purchaser, Inc.",Other,,10.85%,,,,,,2028-04-28,,-3,-8,,-3,,,,,,MSDL,2024-03-01
+"Pound Bidco, Inc.",Other,,11.96%,,,,,,2026-01-30,10832,10707,10796,0.63%,10707,,,,,,MSDL,2024-03-01
+"Project Leopard Holdings, Inc.",Other,,10.73%,,,,,,2029-07-20,6217,5849,5590,0.32%,5849,,,,,,MSDL,2024-03-01
+"Revalize, Inc.",Other,,11.21%,,,,,,2027-04-15,19455,19376,19053,1.11%,19376,,,,,,MSDL,2024-03-01
+"Revalize, Inc.",Other,,11.21%,,,,,,2027-04-15,18,17,16,,17,,,,,,MSDL,2024-03-01
+"Riskonnect Parent, LLC",Other,,11.00%,,,,,,2028-12-07,519,511,518,0.03%,511,,,,,,MSDL,2024-03-01
+"Riskonnect Parent, LLC",Other,,11.00%,,,,,,2028-12-07,,-5,-1,,-5,,,,,,MSDL,2024-03-01
+"Securonix, Inc.",Other,,11.41%,,,,,,2028-04-05,21010,20727,19846,1.15%,20727,,,,,,MSDL,2024-03-01
+"Securonix, Inc.",Other,,11.41%,,,,,,2028-04-05,,-47,-210,0.01%,-47,,,,,,MSDL,2024-03-01
+"Skykick, Inc.",Other,,15.91%,,,,,,2027-09-01,7754,7647,7181,0.42%,7647,,,,,,MSDL,2024-03-01
+"Skykick, Inc.",Other,,15.91%,,,,,,2027-09-01,2470,2426,2250,0.13%,2426,,,,,,MSDL,2024-03-01
+"Trunk Acquisition, Inc.",Other,,11.25%,,,,,,2027-02-19,8960,8901,8797,0.51%,8901,,,,,,MSDL,2024-03-01
+"Trunk Acquisition, Inc.",Other,,11.25%,,,,,,2026-02-19,,-4,-16,,-4,,,,,,MSDL,2024-03-01
+"User Zoom Technologies, Inc.",Other,,12.49%,,,,,,2029-04-05,38689,38050,38070,2.21%,38050,,,,,,MSDL,2024-03-01
+"Mobile Communications America, Inc.",Other,,11.35%,,,,,,2029-10-16,5955,5868,5868,0.34%,5868,,,,,,MSDL,2024-03-01
+"Mobile Communications America, Inc.",Other,,11.35%,,,,,,2029-10-16,,-14,-14,,-14,,,,,,MSDL,2024-03-01
+"Omni Intermediate Holdings, LLC",Other,Media & Entertainment,14.53%,,,,,,2027-12-30,4500,4393,4223,0.25%,4393,,,,,,MSDL,2024-03-01
+"PAI Holdco, Inc.",Other,,13.03%,,,,,,2028-10-28,26565,26053,24823,1.44%,26053,,,,,,MSDL,2024-03-01
+"Infinite Bidco, LLC",Other,,12.65%,,,,,,2029-03-02,25500,25446,21420,1.24%,25446,,,,,,MSDL,2024-03-01
+"QBS Parent, Inc.",Other,,14.04%,,,,,,2026-09-21,15000,14853,14400,0.84%,14853,,,,,,MSDL,2024-03-01
+"Heartland Veterinary Partners, LLC",Other,Healthcare,13.46%,,,,,,2027-12-10,3960,3903,3879,0.23%,3903,,,,,,MSDL,2024-03-01
+"Heartland Veterinary Partners, LLC",Other,Healthcare,13.46%,,,,,,2027-12-10,1540,1516,1508,0.09%,1516,,,,,,MSDL,2024-03-01
+"Aptean, Inc.",Other,,12.46%,,,,,,2027-04-23,5950,5950,5950,0.35%,5950,,,,,,MSDL,2024-03-01
+"Help/Systems Holdings, Inc.",Other,,12.35%,,,,,,2027-11-19,17500,17500,14147,0.82%,17500,,,,,,MSDL,2024-03-01
+"Idera, Inc.",Other,,12.28%,,,,,,2029-03-02,3887,3865,3887,0.23%,3865,,,,,,MSDL,2024-03-01
+"Red Dawn SEI Buyer, Inc.",Other,,13.86%,,,,,,2026-11-20,19000,18727,18945,1.10%,18727,,,,,,MSDL,2024-03-01
+"Flexera Software, LLC",Other,Software & Technology,12.47%,,,,,,2029-03-03,13500,13303,13500,0.78%,13303,,,,,,MSDL,2024-03-01
+"Matrix Parent, Inc.",Other,,13.53%,,,,,,2030-03-01,10667,10505,5733,0.33%,10505,,,,,,MSDL,2024-03-01
+Familia Intermediate Holdings I Corp.,Other,Media & Entertainment,,,,,,,2026-06-18,1500,1500,170,0.01%,1500,,,,,,MSDL,2024-03-01
+"Fetch Insurance Services, LLC",Other,Insurance,,,,,,,2027-10-31,1953,1910,1894,0.11%,1910,,,,,,MSDL,2024-03-01
+Diligent Corp.,Other,,,,,,,,,5000,6329,6513,0.38%,6329,,,,,,MSDL,2024-03-01
+"FORTIS Solutions Group, LLC",Other,,,,,,,,,1000000,1179,970,0.06%,1179,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+"Integrity Marketing Acquisition, LLC",Other,Business Services,,,,,,,,3250000,3956,3900,0.23%,3956,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+"Knockout Intermediate Holdings I, Inc.",Other,Media & Entertainment,,,,,,,,2790,3265,3267,0.19%,3265,,,,,,MSDL,2024-03-01
+"Revalize, Inc.",Other,,,,,,,,,2255,2776,2833,0.16%,2776,,,,,,MSDL,2024-03-01
+"RSK Holdings, Inc.",Other,,,,,,,,,1012200,1137,1275,0.07%,1137,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+"Skykick, Inc.",Other,,,,,,,,,134101,1275,1275,0.07%,1275,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+"Abacus Data Holdings, Inc.",Other,,,,,,,,,29441,2944,2586,0.15%,2944,,,,,,MSDL,2024-03-01
+"Amerilife Holdings, LLC",Other,,,,,,,,,908,25,33,0.00%,25,,,,,,MSDL,2024-03-01
+"BP Purchaser, LLC",Other,,,,,,,,,1383156,1378,1297,0.08%,1378,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+"CSC Thrive Holdings, LP",Other,,,,,,,,,162309,421,855,0.05%,421,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+"Encore Holdings, LLC",Other,,,,,,,,,2796,348,696,0.04%,348,,,,,,MSDL,2024-03-01
+"Frisbee Holdings, LP",Other,,,,,,,,,21744,277,277,0.02%,277,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+"Fullsteam Operations, LLC",Other,,,,,,,,,3043,100,100,0.01%,100,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+"GSM Equity Investors, LP",Other Equity,,,,,,,,,,450,884,0.05%,450,,,,4500,,MSDL,2024-03-01
+"Help HP SCF Investor, LP",Other,,,,,,,,,9619564,12460,15966,0.93%,12460,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+LUV Car Wash,Other,Automotive,,,,,,,,123,123,68,0.00%,123,,,,,,MSDL,2024-03-01
+"mPulse Mobile, Inc.",Other,,,,,,,,,165761,1220,1218,0.07%,1220,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+PCX Holding Corp.,Other,,,,,,,,,6538,654,675,0.04%,654,,,,,,MSDL,2024-03-01
+"Pet Holdings, Inc.",Other,Consumer & Retail,,,,,,,,17543,2013,1762,0.10%,2013,,,,,,MSDL,2024-03-01
+"Pritchard Industries, Inc.",Other,,,,,,,,,1700000,1700,1785,0.10%,1700,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+"Procure Acquiom Financial, LLC",Other,Financial Services,,,,,,,,1000000,1000,1290,0.07%,1000,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+"Recovery Point Systems, Inc.",Other,,,,,,,,,1000000,1000,810,0.05%,1000,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+Reveal Data Solutions,Other,,,,,,,,,477846,621,621,0.04%,621,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+"Shelby Co-invest, LP.",Other,,,,,,,,,8500,850,1316,0.08%,850,,,,,,MSDL,2024-03-01
+"Surewerx Topco, LP",Other,,,,,,,,,512,512,565,0.03%,512,,,,,,MSDL,2024-03-01
+"Suveto Buyer, LLC",Other,,,,,,,,,19257,1926,1701,0.10%,1926,,,,,,MSDL,2024-03-01
+Jonathan Acquisition Company,Other,,9.73%,,,,,,2026-12-22,2712,2656,2641,0.19%,2656,,,,,,MSDL,2024-03-01
+Mantech International CP,Other,,9.58%,,,,,,2029-09-14,359,352,350,0.03%,352,,,,,,MSDL,2024-03-01
+Mantech International CP,Other,,9.58%,,,,,,2029-09-14,,-1,-2,,-1,,,,,,MSDL,2024-03-01
+Mantech International CP,Other,,9.58%,,,,,,2028-09-14,,-1,-2,,-1,,,,,,MSDL,2024-03-01
+PCX Holding Corp.,Other,,10.98%,,,,,,2027-04-22,18232,18093,17636,1.26%,18093,,,,,,MSDL,2024-03-01
+PCX Holding Corp.,Other,,10.98%,,,,,,2027-04-22,18356,18064,17756,1.27%,18064,,,,,,MSDL,2024-03-01
+PCX Holding Corp.,Other,,10.98%,,,,,,2027-04-22,555,542,495,0.04%,542,,,,,,MSDL,2024-03-01
+"Two Six Labs, LLC",Other,,10.08%,,,,,,2027-08-20,10959,10782,10694,0.77%,10782,,,,,,MSDL,2024-03-01
+"Two Six Labs, LLC",Other,,10.08%,,,,,,2027-08-20,2118,2066,2015,0.14%,2066,,,,,,MSDL,2024-03-01
+"Two Six Labs, LLC",Other,,10.08%,,,,,,2027-08-20,,-33,-52,,-33,,,,,,MSDL,2024-03-01
+"AGI-CFI Holdings, Inc.",Other,,10.48%,,,,,,2027-06-11,14408,14140,13851,0.99%,14140,,,,,,MSDL,2024-03-01
+"Omni Intermediate Holdings, LLC",Other,Media & Entertainment,9.73%,,,,,,2026-12-30,12131,12027,11617,0.83%,12027,,,,,,MSDL,2024-03-01
+"Omni Intermediate Holdings, LLC",Other,Media & Entertainment,9.73%,,,,,,2026-12-30,531,519,471,0.03%,519,,,,,,MSDL,2024-03-01
+"Omni Intermediate Holdings, LLC",Other,Media & Entertainment,9.73%,,,,,,2026-12-30,385,378,368,0.03%,378,,,,,,MSDL,2024-03-01
+"Omni Intermediate Holdings, LLC",Other,Media & Entertainment,9.73%,,,,,,2025-12-30,,-9,-45,,-9,,,,,,MSDL,2024-03-01
+RoadOne IntermodaLogistics,Other,Transportation & Logistics,10.81%,,,,,,2028-12-30,1672,1622,1622,0.12%,1622,,,,,,MSDL,2024-03-01
+RoadOne IntermodaLogistics,Other,Transportation & Logistics,10.81%,,,,,,2028-12-30,,-6,-6,,-6,,,,,,MSDL,2024-03-01
+RoadOne IntermodaLogistics,Other,Transportation & Logistics,10.81%,,,,,,2028-12-30,75,65,65,,65,,,,,,MSDL,2024-03-01
+Continental Battery Company,Other,,11.48%,,,,,,2027-01-20,6188,6083,5903,0.42%,6083,,,,,,MSDL,2024-03-01
+"Randy's Holdings, Inc.",Other,,10.59%,,,,,,2028-11-01,6743,6545,6545,0.47%,6545,,,,,,MSDL,2024-03-01
+"Randy's Holdings, Inc.",Other,,10.59%,,,,,,2028-11-01,,-31,-31,,-31,,,,,,MSDL,2024-03-01
+"Randy's Holdings, Inc.",Other,,10.59%,,,,,,2028-11-01,142,116,116,0.01%,116,,,,,,MSDL,2024-03-01
+"Sonny's Enterprises, LLC",Other,,10.29%,,,,,,2026-08-05,12363,12178,11839,0.85%,12178,,,,,,MSDL,2024-03-01
+"Sonny's Enterprises, LLC",Other,,11.00%,,,,,,2026-08-05,34154,33656,32706,2.34%,33656,,,,,,MSDL,2024-03-01
+Spectrum Automotive Holdings Corp.,Other,Automotive,10.48%,,,,,,2028-06-29,23650,23358,22274,1.59%,23358,,,,,,MSDL,2024-03-01
+Spectrum Automotive Holdings Corp.,Other,Automotive,10.48%,,,,,,2028-06-29,4656,4585,4273,0.31%,4585,,,,,,MSDL,2024-03-01
+Spectrum Automotive Holdings Corp.,Other,Automotive,10.48%,,,,,,2027-06-29,,-10,-51,,-10,,,,,,MSDL,2024-03-01
+"ARI Network Services, Inc.",Other,Business Services,9.92%,,,,,,2025-02-28,20723,20465,20134,1.44%,20465,,,,,,MSDL,2024-03-01
+"ARI Network Services, Inc.",Other,Business Services,9.92%,,,,,,2025-02-28,3630,3586,3527,0.25%,3586,,,,,,MSDL,2024-03-01
+"ARI Network Services, Inc.",Other,Business Services,9.92%,,,,,,2025-02-28,909,873,823,0.06%,873,,,,,,MSDL,2024-03-01
+"Summit Buyer, LLC",Other,,10.13%,,,,,,2026-01-14,22120,21795,21142,1.51%,21795,,,,,,MSDL,2024-03-01
+"Summit Buyer, LLC",Other,,10.13%,,,,,,2026-01-14,28996,28544,27569,1.97%,28544,,,,,,MSDL,2024-03-01
+"Summit Buyer, LLC",Other,,10.13%,,,,,,2026-01-14,,-32,-107,0.01%,-32,,,,,,MSDL,2024-03-01
+"Turbo Buyer, Inc.",Other,,11.15%,,,,,,2025-12-02,37940,37419,36574,2.62%,37419,,,,,,MSDL,2024-03-01
+"Turbo Buyer, Inc.",Other,,11.15%,,,,,,2025-12-02,38123,37494,36751,2.63%,37494,,,,,,MSDL,2024-03-01
+"GraphPad Software, LLC",Other,Software & Technology,10.39%,,,,,,2027-04-27,12066,11974,11668,0.84%,11974,,,,,,MSDL,2024-03-01
+"GraphPad Software, LLC",Other,Software & Technology,10.39%,,,,,,2027-04-27,2892,2869,2797,0.20%,2869,,,,,,MSDL,2024-03-01
+"GraphPad Software, LLC",Other,Software & Technology,10.39%,,,,,,2027-04-27,,-13,-58,,-13,,,,,,MSDL,2024-03-01
+Tank Holding Corp.,Other,,10.17%,,,,,,2028-03-31,14129,13875,13352,0.96%,13875,,,,,,MSDL,2024-03-01
+Tank Holding Corp.,Other,,12.25%,,,,,,2028-03-31,133,119,89,0.01%,119,,,,,,MSDL,2024-03-01
+"V Global Holdings, LLC",Other,,8.99%,,,,,,2027-12-22,4903,4814,4659,0.33%,4814,,,,,,MSDL,2024-03-01
+"V Global Holdings, LLC",Other,,8.99%,,,,,,2025-12-22,,-11,-34,,-11,,,,,,MSDL,2024-03-01
+"365 Retail Markets, LLC",Other,Consumer & Retail,8.45%,,,,,,2026-12-23,17280,17045,16890,1.21%,17045,,,,,,MSDL,2024-03-01
+"365 Retail Markets, LLC",Other,Consumer & Retail,8.45%,,,,,,2026-12-23,5543,5484,5418,0.39%,5484,,,,,,MSDL,2024-03-01
+"365 Retail Markets, LLC",Other,Consumer & Retail,8.45%,,,,,,2026-12-23,1600,1563,1537,0.11%,1563,,,,,,MSDL,2024-03-01
+"Atlas Us Finco, Inc.",Other,,11.48%,,,,,,2029-12-09,2009,1949,1949,0.14%,1949,,,,,,MSDL,2024-03-01
+"Atlas Us Finco, Inc.",Other,,11.48%,,,,,,2028-12-09,,-6,-6,,-6,,,,,,MSDL,2024-03-01
+BPG Holdings IV Corp.,Other,,10.54%,,,,,,2029-07-29,11765,11001,11001,0.79%,11001,,,,,,MSDL,2024-03-01
+"Encore Holdings, LLC",Other,,9.23%,,,,,,2028-11-23,1850,1821,1806,0.13%,1821,,,,,,MSDL,2024-03-01
+"Encore Holdings, LLC",Other,,9.23%,,,,,,2028-11-23,2118,2074,2034,0.15%,2074,,,,,,MSDL,2024-03-01
+"Encore Holdings, LLC",Other,,9.23%,,,,,,2027-11-23,,-8,-13,,-8,,,,,,MSDL,2024-03-01
+"FLS Holding, Inc.",Other,,10.40%,,,,,,2028-12-15,20727,20361,20389,1.46%,20361,,,,,,MSDL,2024-03-01
+"FLS Holding, Inc.",Other,,10.40%,,,,,,2028-12-15,4506,4424,4432,0.32%,4424,,,,,,MSDL,2024-03-01
+"FLS Holding, Inc.",Other,,10.40%,,,,,,2027-12-17,,-30,-29,,-30,,,,,,MSDL,2024-03-01
+"PDFTron Systems, Inc.",Other,,9.82%,,,,,,2027-07-15,30415,29998,29402,2.10%,29998,,,,,,MSDL,2024-03-01
+"PDFTron Systems, Inc.",Other,,9.82%,,,,,,2027-07-15,9800,9638,9474,0.68%,9638,,,,,,MSDL,2024-03-01
+"PDFTron Systems, Inc.",Other,,9.82%,,,,,,2026-07-15,3850,3741,3594,0.26%,3741,,,,,,MSDL,2024-03-01
+"Procure Acquireco, Inc.",Other,,9.35%,,,,,,2028-12-20,3929,3859,3755,0.27%,3859,,,,,,MSDL,2024-03-01
+"Procure Acquireco, Inc.",Other,,9.35%,,,,,,2028-12-20,,-7,-35,,-7,,,,,,MSDL,2024-03-01
+"Procure Acquireco, Inc.",Other,,9.35%,,,,,,2028-12-20,,-4,-11,,-4,,,,,,MSDL,2024-03-01
+QW Holding Corp.,Other,,9.44%,,,,,,2026-08-31,8907,8791,8575,0.61%,8791,,,,,,MSDL,2024-03-01
+QW Holding Corp.,Other,,9.44%,,,,,,2026-08-31,1851,1824,1767,0.13%,1824,,,,,,MSDL,2024-03-01
+QW Holding Corp.,Other,,9.44%,,,,,,2026-08-31,,-29,-84,0.01%,-29,,,,,,MSDL,2024-03-01
+Sherlock Buyer Corp.,Other,,10.48%,,,,,,2028-12-08,11061,10867,10816,0.77%,10867,,,,,,MSDL,2024-03-01
+Sherlock Buyer Corp.,Other,,10.48%,,,,,,2028-12-08,,-27,-71,0.01%,-27,,,,,,MSDL,2024-03-01
+Sherlock Buyer Corp.,Other,,10.48%,,,,,,2027-12-08,,-21,-28,,-21,,,,,,MSDL,2024-03-01
+"Surewerx Purchaser III, Inc.",Other,,11.30%,,,,,,2029-12-28,17527,17002,17002,1.22%,17002,,,,,,MSDL,2024-03-01
+"Surewerx Purchaser III, Inc.",Other,,11.30%,,,,,,2029-12-28,,-72,-72,0.01%,-72,,,,,,MSDL,2024-03-01
+"Surewerx Purchaser III, Inc.",Other,,11.30%,,,,,,2028-12-28,240,183,183,0.01%,183,,,,,,MSDL,2024-03-01
+"Sweep Purchaser, LLC",Other,,10.47%,,,,,,2026-11-30,8704,8582,8239,0.59%,8582,,,,,,MSDL,2024-03-01
+"Sweep Purchaser, LLC",Other,,10.47%,,,,,,2026-11-30,5934,5843,5601,0.40%,5843,,,,,,MSDL,2024-03-01
+"Sweep Purchaser, LLC",Other,,10.47%,,,,,,2026-11-30,253,235,178,0.01%,235,,,,,,MSDL,2024-03-01
+"Tamarack Intermediate, LLC",Other,Media & Entertainment,9.23%,,,,,,2028-03-13,5473,5375,5232,0.37%,5375,,,,,,MSDL,2024-03-01
+"Tamarack Intermediate, LLC",Other,Media & Entertainment,9.23%,,,,,,2028-03-13,91,76,52,,76,,,,,,MSDL,2024-03-01
+"United Flow Technologies Intermediate Holdco II, LLC",Other Equity,Media & Entertainment,10.17%,,,,,,2027-10-29,,16687,16457,1.18%,16687,,,,16972,,MSDL,2024-03-01
+"United Flow Technologies Intermediate Holdco II, LLC",Other Equity,Media & Entertainment,10.17%,,,,,,2027-10-29,,9409,9067,0.65%,9409,,,,9668,,MSDL,2024-03-01
+"United Flow Technologies Intermediate Holdco II, LLC",Other Equity,Media & Entertainment,10.17%,,,,,,2026-10-29,,-46,-91,0.01%,-46,,,,,,MSDL,2024-03-01
+"US Infra Svcs Buyer, LLC",Other,,11.67%,,,,,,2026-04-13,16193,15998,15427,1.10%,15998,,,,,,MSDL,2024-03-01
+"US Infra Svcs Buyer, LLC",Other,,11.67%,,,,,,2026-04-13,2285,2259,2177,0.16%,2259,,,,,,MSDL,2024-03-01
+"US Infra Svcs Buyer, LLC",Other,,11.67%,,,,,,2026-04-13,2250,2225,2144,0.15%,2225,,,,,,MSDL,2024-03-01
+"Valcourt Holdings II, LLC",Other,,9.98%,,,,,,2027-01-07,25145,24785,24850,1.78%,24785,,,,,,MSDL,2024-03-01
+"Valcourt Holdings II, LLC",Other,,9.98%,,,,,,2027-01-07,9929,9783,9813,0.70%,9783,,,,,,MSDL,2024-03-01
+"Valcourt Holdings II, LLC",Other,,9.98%,,,,,,2027-01-07,5738,5643,5658,0.40%,5643,,,,,,MSDL,2024-03-01
+"VRC Companies, LLC",Other,,8.52%,,,,,,2027-06-29,7540,7435,7276,0.52%,7435,,,,,,MSDL,2024-03-01
+"VRC Companies, LLC",Other,,8.52%,,,,,,2027-06-29,3074,2950,2754,0.20%,2950,,,,,,MSDL,2024-03-01
+"VRC Companies, LLC",Other,,10.65%,,,,,,2027-06-29,48840,48260,47130,3.37%,48260,,,,,,MSDL,2024-03-01
+"VRC Companies, LLC",Other,,10.22%,,,,,,2027-06-29,8214,8119,7927,0.57%,8119,,,,,,MSDL,2024-03-01
+"VRC Companies, LLC",Other,,10.22%,,,,,,2027-06-29,,-19,-58,,-19,,,,,,MSDL,2024-03-01
+"KPSKY Acquisition, Inc.",Other,,9.89%,,,,,,2028-10-19,34211,33621,32668,2.34%,33621,,,,,,MSDL,2024-03-01
+"KPSKY Acquisition, Inc.",Other,,12.03%,,,,,,2028-10-19,4420,4311,4066,0.29%,4311,,,,,,MSDL,2024-03-01
+"BP Purchaser, LLC",Other,,10.24%,,,,,,2028-12-11,17336,17031,16185,1.16%,17031,,,,,,MSDL,2024-03-01
+"Fortis Solutions Group, LLC",Other,,9.73%,,,,,,2028-10-13,26980,26513,26101,1.87%,26513,,,,,,MSDL,2024-03-01
+"Fortis Solutions Group, LLC",Other,,9.73%,,,,,,2028-10-13,,-2,-3,,-2,,,,,,MSDL,2024-03-01
+"Fortis Solutions Group, LLC",Other,,9.73%,,,,,,2028-10-15,,-7,-33,,-7,,,,,,MSDL,2024-03-01
+"Fortis Solutions Group, LLC",Other,,9.73%,,,,,,2027-10-15,360,317,272,0.02%,317,,,,,,MSDL,2024-03-01
+48Forty Solutions LLC,Other,,10.26%,,,,,,2026-11-30,1796,1728,1732,0.12%,1728,,,,,,MSDL,2024-03-01
+48Forty Solutions LLC,Other,,9.76%,,,,,,2026-11-30,16106,15825,15283,1.09%,15825,,,,,,MSDL,2024-03-01
+48Forty Solutions LLC,Other,,9.76%,,,,,,2026-11-30,,-46,-139,0.01%,-46,,,,,,MSDL,2024-03-01
+"ABB Concise Optical Group, LLC",Other,,12.67%,,,,,,2028-02-23,17977,17578,17165,1.23%,17578,,,,,,MSDL,2024-03-01
+"ABB Concise Optical Group, LLC",Other,,13.99%,,,,,,2028-02-23,1792,1752,1707,0.12%,1752,,,,,,MSDL,2024-03-01
+"Avalara, Inc.",Other,,11.83%,,,,,,2028-10-19,10712,10451,10451,0.75%,10451,,,,,,MSDL,2024-03-01
+"Avalara, Inc.",Other,,11.83%,,,,,,2028-10-19,,-26,-26,,-26,,,,,,MSDL,2024-03-01
+"PT Intermediate Holdings III, LLC",Other,Media & Entertainment,10.23%,,,,,,2028-11-01,28632,28383,27804,1.99%,28383,,,,,,MSDL,2024-03-01
+"PT Intermediate Holdings III, LLC",Other,Media & Entertainment,10.23%,,,,,,2028-11-01,15929,15787,15469,1.11%,15787,,,,,,MSDL,2024-03-01
+"Radwell Parent, LLC",Other,,11.33%,,,,,,2029-04-01,32558,31607,31607,2.26%,31607,,,,,,MSDL,2024-03-01
+"Radwell Parent, LLC",Other,,11.33%,,,,,,2028-04-01,,-71,-71,0.01%,-71,,,,,,MSDL,2024-03-01
+"Assembly Intermediate, LLC",Other,Media & Entertainment,11.23%,,,,,,2027-10-19,20741,20393,19944,1.43%,20393,,,,,,MSDL,2024-03-01
+"Assembly Intermediate, LLC",Other,Media & Entertainment,11.23%,,,,,,2027-10-19,2904,2836,2705,0.19%,2836,,,,,,MSDL,2024-03-01
+"Assembly Intermediate, LLC",Other,Media & Entertainment,11.23%,,,,,,2027-10-19,830,796,750,0.05%,796,,,,,,MSDL,2024-03-01
+"FPG Intermediate Holdco, LLC",Other,Media & Entertainment,10.92%,,,,,,2027-03-05,497,488,472,0.03%,488,,,,,,MSDL,2024-03-01
+"Heartland Home Services, Inc.",Other,Business Services,10.10%,,,,,,2026-12-15,1877,1860,1802,0.13%,1860,,,,,,MSDL,2024-03-01
+"Lightspeed Solution, LLC",Other,,10.82%,,,,,,2028-03-01,7585,7451,7308,0.52%,7451,,,,,,MSDL,2024-03-01
+"Lightspeed Solution, LLC",Other,,10.82%,,,,,,2028-03-01,,-21,-89,0.01%,-21,,,,,,MSDL,2024-03-01
+"LUV Car Wash Group, LLC",Other,Automotive,9.24%,,,,,,2026-12-09,372,367,359,0.03%,367,,,,,,MSDL,2024-03-01
+"LUV Car Wash Group, LLC",Other,Automotive,9.24%,,,,,,2026-12-09,349,346,341,0.02%,346,,,,,,MSDL,2024-03-01
+Magnolia Wash Holdings,Other,,10.32%,,,,,,2028-07-14,3767,3696,3608,0.26%,3696,,,,,,MSDL,2024-03-01
+Magnolia Wash Holdings,Other,,10.32%,,,,,,2028-07-14,706,692,676,0.05%,692,,,,,,MSDL,2024-03-01
+Magnolia Wash Holdings,Other,,10.32%,,,,,,2028-07-14,87,84,81,0.01%,84,,,,,,MSDL,2024-03-01
+"Mammoth Holdings, LLC",Other,,9.82%,,,,,,2023-10-16,8033,8008,8033,0.57%,8008,,,,,,MSDL,2024-03-01
+"Mammoth Holdings, LLC",Other,,9.82%,,,,,,2023-10-16,35966,35846,35966,2.57%,35846,,,,,,MSDL,2024-03-01
+"Spotless Brands, LLC",Other,,10.71%,,,,,,2028-07-25,4549,4463,4371,0.31%,4463,,,,,,MSDL,2024-03-01
+"Spotless Brands, LLC",Other,,10.71%,,,,,,2028-07-25,860,843,826,0.06%,843,,,,,,MSDL,2024-03-01
+"Spotless Brands, LLC",Other,,10.71%,,,,,,2028-07-25,,-3,-6,,-3,,,,,,MSDL,2024-03-01
+"Applitools, Inc.",Other,,10.57%,,,,,,2029-05-25,3200,3143,3145,0.23%,3143,,,,,,MSDL,2024-03-01
+"Applitools, Inc.",Other,,10.57%,,,,,,2028-05-25,,-8,-7,,-8,,,,,,MSDL,2024-03-01
+"Cerity Partners, LLC",Other,,11.32%,,,,,,2029-12-29,8617,8359,8359,0.60%,8359,,,,,,MSDL,2024-03-01
+"Cerity Partners, LLC",Other,,11.32%,,,,,,2029-12-29,454,60,60,,60,,,,,,MSDL,2024-03-01
+SitusAMC Holdings Corp.,Other,,10.23%,,,,,,2027-12-22,3573,3542,3417,0.24%,3542,,,,,,MSDL,2024-03-01
+"Smarsh, Inc.",Other,,11.29%,,,,,,2029-02-16,4286,4208,4126,0.30%,4208,,,,,,MSDL,2024-03-01
+"Smarsh, Inc.",Other,,11.29%,,,,,,2029-02-16,536,521,496,0.04%,521,,,,,,MSDL,2024-03-01
+"Smarsh, Inc.",Other,,11.29%,,,,,,2029-02-16,,-5,-10,,-5,,,,,,MSDL,2024-03-01
+"Abracon Group Holdings, LLC",Other,,10.48%,,,,,,2028-07-06,5534,5431,5249,0.38%,5431,,,,,,MSDL,2024-03-01
+"Abracon Group Holdings, LLC",Other,,10.48%,,,,,,2028-07-06,,-9,-51,,-9,,,,,,MSDL,2024-03-01
+"Abracon Group Holdings, LLC",Other,,10.48%,,,,,,2028-07-06,,-7,-21,,-7,,,,,,MSDL,2024-03-01
+"Dwyer Instruments, Inc.",Other,,10.73%,,,,,,2027-07-21,8059,7911,7694,0.55%,7911,,,,,,MSDL,2024-03-01
+"Dwyer Instruments, Inc.",Other,,10.73%,,,,,,2027-07-21,,-18,-92,0.01%,-18,,,,,,MSDL,2024-03-01
+"Dwyer Instruments, Inc.",Other,,10.73%,,,,,,2027-07-21,158,140,113,0.01%,140,,,,,,MSDL,2024-03-01
+"AMCP Pet Holdings, Inc.",Other,Consumer & Retail,10.98%,,,,,,2026-10-05,17150,16798,16795,1.20%,16798,,,,,,MSDL,2024-03-01
+"AMCP Pet Holdings, Inc.",Other,Consumer & Retail,10.98%,,,,,,2026-10-05,16333,15989,15995,1.14%,15989,,,,,,MSDL,2024-03-01
+"AMCP Pet Holdings, Inc.",Other,Consumer & Retail,10.98%,,,,,,2026-10-05,5833,5721,5713,0.41%,5721,,,,,,MSDL,2024-03-01
+"Nellson Nutraceutical, Inc.",Other,,10.17%,,,,,,2025-12-23,23592,23439,23476,1.68%,23439,,,,,,MSDL,2024-03-01
+"Teasdale Foods, Inc.",Other,Food & Beverage,12.29%,,,,,,2025-12-18,10812,10675,9017,0.65%,10675,,,,,,MSDL,2024-03-01
+Performance Health & Wellness,Other,Healthcare,10.73%,,,,,,2027-07-12,9398,9248,8956,0.64%,9248,,,,,,MSDL,2024-03-01
+"Advarra Holdings, Inc.",Other,,10.15%,,,,,,2029-08-24,459,451,434,0.03%,451,,,,,,MSDL,2024-03-01
+"Advarra Holdings, Inc.",Other,,10.15%,,,,,,2029-08-24,,,-2,,,,,,,,MSDL,2024-03-01
+"DCA Investment Holdings, LLC",Other,Financial Services,10.39%,,,,,,2028-04-03,11053,10922,10887,0.78%,10922,,,,,,MSDL,2024-03-01
+"DCA Investment Holdings, LLC",Other,Financial Services,10.39%,,,,,,2028-04-03,2629,2572,2575,0.18%,2572,,,,,,MSDL,2024-03-01
+"Gateway US Holdings, Inc.",Other,,11.23%,,,,,,2026-09-22,750,744,736,0.05%,744,,,,,,MSDL,2024-03-01
+"Gateway US Holdings, Inc.",Other,,11.23%,,,,,,2026-09-22,165,164,162,0.01%,164,,,,,,MSDL,2024-03-01
+"Gateway US Holdings, Inc.",Other,,11.23%,,,,,,2026-09-22,17,16,16,,16,,,,,,MSDL,2024-03-01
+"Heartland Veterinary Partners, LLC",Other,Healthcare,9.56%,,,,,,2026-12-10,1866,1851,1812,0.13%,1851,,,,,,MSDL,2024-03-01
+"Heartland Veterinary Partners, LLC",Other,Healthcare,9.56%,,,,,,2026-12-10,2969,2936,2847,0.20%,2936,,,,,,MSDL,2024-03-01
+"Heartland Veterinary Partners, LLC",Other,Healthcare,9.56%,,,,,,2026-12-10,,-3,-11,,-3,,,,,,MSDL,2024-03-01
+"iCIMS, Inc.",Other,,11.52%,,,,,,2028-08-18,6568,6455,6455,0.46%,6455,,,,,,MSDL,2024-03-01
+Intelerad Medical Systems Inc.,Other,Healthcare,11.23%,,,,,,2026-08-21,500,486,489,0.03%,486,,,,,,MSDL,2024-03-01
+"mPulse Mobile, Inc.",Other,,9.32%,,,,,,2027-12-17,17500,17200,16977,1.21%,17200,,,,,,MSDL,2024-03-01
+"mPulse Mobile, Inc.",Other,,9.32%,,,,,,2027-12-17,,-17,-60,,-17,,,,,,MSDL,2024-03-01
+"mPulse Mobile, Inc.",Other,,9.32%,,,,,,2027-12-17,151,143,136,0.01%,143,,,,,,MSDL,2024-03-01
+"Promptcare Infusion Buyer, Inc.",Other,Healthcare,10.22%,,,,,,2027-09-01,9073,8925,8757,0.63%,8925,,,,,,MSDL,2024-03-01
+"Promptcare Infusion Buyer, Inc.",Other,Healthcare,10.22%,,,,,,2027-09-01,881,849,766,0.05%,849,,,,,,MSDL,2024-03-01
+"Southern Veterinary Partners, LLC",Other,Healthcare,9.93%,,,,,,2027-10-05,899,883,854,0.06%,883,,,,,,MSDL,2024-03-01
+"Stepping Stones Healthcare Services, LLC",Other,Healthcare,10.48%,,,,,,2029-01-02,4342,4284,4111,0.29%,4284,,,,,,MSDL,2024-03-01
+"Stepping Stones Healthcare Services, LLC",Other,Healthcare,10.48%,,,,,,2029-01-02,511,500,444,0.03%,500,,,,,,MSDL,2024-03-01
+"Stepping Stones Healthcare Services, LLC",Other,Healthcare,12.25%,,,,,,2026-12-30,450,442,417,0.03%,442,,,,,,MSDL,2024-03-01
+Suveto,Other,,9.38%,,,,,,2027-09-09,11038,10935,10461,0.75%,10935,,,,,,MSDL,2024-03-01
+Suveto,Other,,9.38%,,,,,,2027-09-09,810,793,764,0.05%,793,,,,,,MSDL,2024-03-01
+"Tivity Health, Inc.",Other,,10.58%,,,,,,2029-06-28,3711,3658,3592,0.26%,3658,,,,,,MSDL,2024-03-01
+"Vardiman Black Holdings, LLC",Other,,11.22%,,,,,,2027-03-18,3412,3382,3227,0.23%,3382,,,,,,MSDL,2024-03-01
+"Vardiman Black Holdings, LLC",Other,,11.22%,,,,,,2027-03-18,3907,3871,3687,0.26%,3871,,,,,,MSDL,2024-03-01
+Vermont Aus Pty Ltd.,Other,,10.23%,,,,,,2028-03-23,8436,8244,7927,0.57%,8244,,,,,,MSDL,2024-03-01
+"Lightspeed Buyer, Inc.",Other,,9.98%,,,,,,2026-02-03,12669,12442,12300,0.88%,12442,,,,,,MSDL,2024-03-01
+"Lightspeed Buyer, Inc.",Other,,9.98%,,,,,,2026-02-03,9234,9053,8966,0.64%,9053,,,,,,MSDL,2024-03-01
+"Lightspeed Buyer, Inc.",Other,,9.98%,,,,,,2026-02-03,,-28,-118,0.01%,-28,,,,,,MSDL,2024-03-01
+Excelitas Technologies Corp.,Other,,10.12%,,,,,,2029-08-13,1378,1351,1311,0.09%,1351,,,,,,MSDL,2024-03-01
+Excelitas Technologies Corp.,Other,,7.55%,,,,,,2029-08-13,,245,246,0.02%,245,,,,,,MSDL,2024-03-01
+Excelitas Technologies Corp.,Other,,10.12%,,,,,,2029-08-13,,-2,-13,,-2,,,,,,MSDL,2024-03-01
+Excelitas Technologies Corp.,Other,,10.12%,,,,,,2028-08-14,74,72,68,,72,,,,,,MSDL,2024-03-01
+"Amerilife Holdings, LLC",Other,,9.58%,,,,,,2029-08-31,2044,2005,2005,0.14%,2005,,,,,,MSDL,2024-03-01
+"Amerilife Holdings, LLC",Other,,10.15%,,,,,,2029-08-31,583,569,569,0.04%,569,,,,,,MSDL,2024-03-01
+"Amerilife Holdings, LLC",Other,,10.15%,,,,,,2028-08-31,,-8,-8,,-8,,,,,,MSDL,2024-03-01
+Foundation Risk Partners Corp.,Other,,10.68%,,,,,,2028-10-29,42966,42408,42218,3.02%,42408,,,,,,MSDL,2024-03-01
+Foundation Risk Partners Corp.,Other,,10.68%,,,,,,2028-10-29,9345,9222,9182,0.66%,9222,,,,,,MSDL,2024-03-01
+Foundation Risk Partners Corp.,Other,,10.32%,,,,,,2027-10-29,1882,1827,1803,0.13%,1827,,,,,,MSDL,2024-03-01
+"Galway Borrower, LLC",Other,,9.98%,,,,,,2028-09-29,32271,31721,30880,2.21%,31721,,,,,,MSDL,2024-03-01
+"Galway Borrower, LLC",Other,,9.98%,,,,,,2028-09-29,,-7,-13,,-7,,,,,,MSDL,2024-03-01
+"Galway Borrower, LLC",Other,,9.98%,,,,,,2027-09-30,,-32,-88,0.01%,-32,,,,,,MSDL,2024-03-01
+"Higginbotham Insurance Agency, Inc.",Other,Insurance,9.63%,,,,,,2026-11-25,18482,18287,17986,1.29%,18287,,,,,,MSDL,2024-03-01
+"High Street Buyer, Inc.",Other,,10.73%,,,,,,2028-04-14,9992,9832,9702,0.69%,9832,,,,,,MSDL,2024-03-01
+"High Street Buyer, Inc.",Other,,10.73%,,,,,,2028-04-14,40125,39459,38961,2.79%,39459,,,,,,MSDL,2024-03-01
+"High Street Buyer, Inc.",Other,,10.73%,,,,,,2027-04-16,,-31,-62,,-31,,,,,,MSDL,2024-03-01
+"Integrity Marketing Acquisition, LLC",Other,Business Services,10.81%,,,,,,2025-08-27,44059,43688,42808,3.06%,43688,,,,,,MSDL,2024-03-01
+"Integrity Marketing Acquisition, LLC",Other,Business Services,10.81%,,,,,,2025-08-27,24599,24373,23900,1.71%,24373,,,,,,MSDL,2024-03-01
+"Integrity Marketing Acquisition, LLC",Other,Business Services,10.81%,,,,,,2025-08-27,17290,17108,16799,1.20%,17108,,,,,,MSDL,2024-03-01
+Keystone Agency Investors,Other,,10.98%,,,,,,2027-05-03,3516,3467,3467,0.25%,3467,,,,,,MSDL,2024-03-01
+Keystone Agency Investors,Other,,10.98%,,,,,,2027-05-03,4047,3993,3993,0.29%,3993,,,,,,MSDL,2024-03-01
+Majesco,Other,,11.98%,,,,,,2027-09-21,23421,22948,22447,1.61%,22948,,,,,,MSDL,2024-03-01
+Majesco,Other,,11.98%,,,,,,2026-09-21,,-29,-66,,-29,,,,,,MSDL,2024-03-01
+"Oakbridge Insurance Agency, LLC",Other,Insurance,10.17%,,,,,,2026-12-31,1078,1062,1062,0.08%,1062,,,,,,MSDL,2024-03-01
+"Oakbridge Insurance Agency, LLC",Other,Insurance,10.17%,,,,,,2026-12-31,60,56,56,,56,,,,,,MSDL,2024-03-01
+"Oakbridge Insurance Agency, LLC",Other,Insurance,10.17%,,,,,,2026-12-31,19,18,18,,18,,,,,,MSDL,2024-03-01
+"Patriot Growth Insurance Services, LLC",Other,Insurance,8.86%,,,,,,2028-10-16,61902,60837,59042,4.23%,60837,,,,,,MSDL,2024-03-01
+"Patriot Growth Insurance Services, LLC",Other,Insurance,8.86%,,,,,,2028-10-16,1089,1060,1039,0.07%,1060,,,,,,MSDL,2024-03-01
+"Patriot Growth Insurance Services, LLC",Other,Insurance,8.86%,,,,,,2028-10-16,,-74,-207,0.01%,-74,,,,,,MSDL,2024-03-01
+"Peter C. Foy & Associates Insurance Services, LLC",Other,Insurance,11.12%,,,,,,2028-11-01,910,897,866,0.06%,897,,,,,,MSDL,2024-03-01
+"Peter C. Foy & Associates Insurance Services, LLC",Other,Insurance,11.12%,,,,,,2028-11-01,1985,1955,1874,0.13%,1955,,,,,,MSDL,2024-03-01
+"Peter C. Foy & Associates Insurance Services, LLC",Other,Insurance,11.21%,,,,,,2028-11-01,17793,17638,16930,1.21%,17638,,,,,,MSDL,2024-03-01
+"Peter C. Foy & Associates Insurance Services, LLC",Other,Insurance,11.21%,,,,,,2028-11-01,4942,4899,4703,0.34%,4899,,,,,,MSDL,2024-03-01
+"Peter C. Foy & Associates Insurance Services, LLC",Other,Insurance,11.21%,,,,,,2027-11-01,,-7,-40,,-7,,,,,,MSDL,2024-03-01
+"RSC Acquisition, Inc.",Other,,9.97%,,,,,,2026-10-30,24774,24417,23999,1.72%,24417,,,,,,MSDL,2024-03-01
+"RSC Acquisition, Inc.",Other,,9.97%,,,,,,2026-10-30,7961,7900,7712,0.55%,7900,,,,,,MSDL,2024-03-01
+"World Insurance Associates, LLC",Other,Insurance,10.33%,,,,,,2026-04-01,33331,32499,32288,2.31%,32499,,,,,,MSDL,2024-03-01
+"World Insurance Associates, LLC",Other,Insurance,10.33%,,,,,,2026-04-01,31170,30528,30194,2.16%,30528,,,,,,MSDL,2024-03-01
+"World Insurance Associates, LLC",Other,Insurance,10.33%,,,,,,2026-04-01,825,808,785,0.06%,808,,,,,,MSDL,2024-03-01
+"FMG Suite Holdings, LLC",Other,,9.34%,,,,,,2026-10-30,24060,23699,23546,1.69%,23699,,,,,,MSDL,2024-03-01
+"FMG Suite Holdings, LLC",Other,,9.34%,,,,,,2026-10-30,5224,5151,5112,0.37%,5151,,,,,,MSDL,2024-03-01
+"FMG Suite Holdings, LLC",Other,,9.34%,,,,,,2026-10-30,551,515,495,0.04%,515,,,,,,MSDL,2024-03-01
+"MSM Acquisitions, Inc.",Other,,10.75%,,,,,,2026-12-09,31570,31179,30815,2.21%,31179,,,,,,MSDL,2024-03-01
+"MSM Acquisitions, Inc.",Other,,10.75%,,,,,,2026-12-09,12743,12493,11878,0.85%,12493,,,,,,MSDL,2024-03-01
+"MSM Acquisitions, Inc.",Other,,10.75%,,,,,,2026-12-09,1836,1784,1741,0.12%,1784,,,,,,MSDL,2024-03-01
+"Triple Lift, Inc.",Other,,10.12%,,,,,,2028-05-08,27580,27136,26162,1.87%,27136,,,,,,MSDL,2024-03-01
+"Triple Lift, Inc.",Other,,9.58%,,,,,,2028-05-08,1533,1472,1328,0.10%,1472,,,,,,MSDL,2024-03-01
+"Atlas Purchaser, Inc.",Other,,9.81%,,,,,,2028-05-08,8922,8778,6225,0.45%,8778,,,,,,MSDL,2024-03-01
+"Donuts, Inc.",Other,,10.43%,,,,,,2027-12-29,18375,18108,17910,1.28%,18108,,,,,,MSDL,2024-03-01
+"Donuts, Inc.",Other,,10.43%,,,,,,2027-12-29,6735,6735,6565,0.47%,6735,,,,,,MSDL,2024-03-01
+"Donuts, Inc.",Other,,10.43%,,,,,,2027-12-29,,,-80,0.01%,,,,,,,MSDL,2024-03-01
+"Govbrands Intermediate, Inc.",Other,Media & Entertainment,10.23%,,,,,,2027-08-04,39759,38962,37942,2.72%,38962,,,,,,MSDL,2024-03-01
+"Govbrands Intermediate, Inc.",Other,Media & Entertainment,10.23%,,,,,,2027-08-04,8969,8751,8367,0.60%,8751,,,,,,MSDL,2024-03-01
+"Govbrands Intermediate, Inc.",Other,Media & Entertainment,10.23%,,,,,,2027-08-04,3814,3733,3620,0.26%,3733,,,,,,MSDL,2024-03-01
+"Long Term Care Group, Inc.",Other,,10.34%,,,,,,2027-09-08,4963,4875,4768,0.34%,4875,,,,,,MSDL,2024-03-01
+"Recovery Point Systems, Inc.",Other,,10.26%,,,,,,2026-08-12,41055,40514,41002,2.93%,40514,,,,,,MSDL,2024-03-01
+"Recovery Point Systems, Inc.",Other,,10.26%,,,,,,2026-08-12,,-48,-5,,-48,,,,,,MSDL,2024-03-01
+"Redwood Services Group, LLC",Other,Business Services,10.68%,,,,,,2029-06-15,10939,10732,10462,0.75%,10732,,,,,,MSDL,2024-03-01
+"Redwood Services Group, LLC",Other,Business Services,10.68%,,,,,,2029-06-15,1880,1848,1766,0.13%,1848,,,,,,MSDL,2024-03-01
+Syntax Systems Ltd.,Other,,10.13%,,,,,,2028-10-29,35452,35146,33520,2.40%,35146,,,,,,MSDL,2024-03-01
+Syntax Systems Ltd.,Other,,10.13%,,,,,,2028-10-29,,-78,-510,0.04%,-78,,,,,,MSDL,2024-03-01
+Syntax Systems Ltd.,Other,,10.08%,,,,,,2026-10-29,2495,2466,2291,0.16%,2466,,,,,,MSDL,2024-03-01
+"Thrive Buyer, Inc.",Other,,10.73%,,,,,,2027-01-22,20561,20258,20059,1.44%,20258,,,,,,MSDL,2024-03-01
+"Thrive Buyer, Inc.",Other,,10.73%,,,,,,2027-01-22,17085,16820,16668,1.19%,16820,,,,,,MSDL,2024-03-01
+"Thrive Buyer, Inc.",Other,,12.50%,,,,,,2027-01-22,264,236,216,0.02%,236,,,,,,MSDL,2024-03-01
+"UpStack, Inc.",Other,,10.32%,,,,,,2027-08-20,9737,9539,9444,0.68%,9539,,,,,,MSDL,2024-03-01
+"UpStack, Inc.",Other,,10.32%,,,,,,2027-08-20,3292,3205,3162,0.23%,3205,,,,,,MSDL,2024-03-01
+"UpStack, Inc.",Other,,10.32%,,,,,,2027-08-20,,-19,-26,,-19,,,,,,MSDL,2024-03-01
+GSM Acquisition Corp.,Other,,9.84%,,,,,,2026-11-16,17447,17319,17194,1.23%,17319,,,,,,MSDL,2024-03-01
+GSM Acquisition Corp.,Other,,9.84%,,,,,,2026-11-16,4490,4446,4425,0.32%,4446,,,,,,MSDL,2024-03-01
+GSM Acquisition Corp.,Other,,9.84%,,,,,,2026-11-16,,-39,-62,,-39,,,,,,MSDL,2024-03-01
+"Answer Acquisition, LLC",Other,,10.23%,,,,,,2026-12-30,10719,10541,10265,0.73%,10541,,,,,,MSDL,2024-03-01
+"Answer Acquisition, LLC",Other,,10.23%,,,,,,2026-12-30,,-13,-35,,-13,,,,,,MSDL,2024-03-01
+Komline Sanderson Engineering Corp.,Other,Industrials,11.14%,,,,,,2026-03-17,4080,4045,3837,0.27%,4045,,,,,,MSDL,2024-03-01
+Komline Sanderson Engineering Corp.,Other,Industrials,11.14%,,,,,,2026-03-17,,-72,-507,0.04%,-72,,,,,,MSDL,2024-03-01
+Komline Sanderson Engineering Corp.,Other,Industrials,10.67%,,,,,,2026-03-17,16629,16507,15640,1.12%,16507,,,,,,MSDL,2024-03-01
+Komline Sanderson Engineering Corp.,Other,Industrials,10.67%,,,,,,2026-03-17,19118,18984,17981,1.29%,18984,,,,,,MSDL,2024-03-01
+Komline Sanderson Engineering Corp.,Other,Industrials,10.67%,,,,,,2026-03-17,2689,2659,2407,0.17%,2659,,,,,,MSDL,2024-03-01
+"MHE Intermediate Holdings, LLC",Other,Media & Entertainment,9.75%,,,,,,2027-07-21,121,117,117,0.01%,117,,,,,,MSDL,2024-03-01
+"MHE Intermediate Holdings, LLC",Other,Media & Entertainment,11.46%,,,,,,2027-07-21,4419,4332,4332,0.31%,4332,,,,,,MSDL,2024-03-01
+"MHE Intermediate Holdings, LLC",Other,Media & Entertainment,9.50%,,,,,,2027-07-21,28391,27937,27550,1.97%,27937,,,,,,MSDL,2024-03-01
+"MHE Intermediate Holdings, LLC",Other,Media & Entertainment,9.50%,,,,,,2027-07-21,3711,3650,3601,0.26%,3650,,,,,,MSDL,2024-03-01
+"MHE Intermediate Holdings, LLC",Other,Media & Entertainment,10.94%,,,,,,2027-07-21,350,312,276,0.02%,312,,,,,,MSDL,2024-03-01
+"AWP Group Holdings, Inc.",Other,,9.38%,,,,,,2027-12-22,1021,1010,991,0.07%,1010,,,,,,MSDL,2024-03-01
+"AWP Group Holdings, Inc.",Other,,9.41%,,,,,,2027-12-22,131,130,127,0.01%,130,,,,,,MSDL,2024-03-01
+"AWP Group Holdings, Inc.",Other,,9.41%,,,,,,2026-12-22,54,52,49,,52,,,,,,MSDL,2024-03-01
+"Ground Penetrating Radar Systems, LLC",Other,,9.39%,,,,,,2026-06-26,10306,10166,10045,0.72%,10166,,,,,,MSDL,2024-03-01
+"Ground Penetrating Radar Systems, LLC",Other,,9.39%,,,,,,2025-06-26,459,440,418,0.03%,440,,,,,,MSDL,2024-03-01
+"Vessco Midco Holdings, LLC",Other,,8.88%,,,,,,2026-11-02,2715,2696,2679,0.19%,2696,,,,,,MSDL,2024-03-01
+"Vessco Midco Holdings, LLC",Other,,8.88%,,,,,,2026-11-02,1769,1757,1746,0.12%,1757,,,,,,MSDL,2024-03-01
+"Vessco Midco Holdings, LLC",Other,,11.00%,,,,,,2026-10-18,179,176,173,0.01%,176,,,,,,MSDL,2024-03-01
+Energy Labs Holdings Corp.,Other,Energy,9.57%,,,,,,2028-04-07,388,382,376,0.03%,382,,,,,,MSDL,2024-03-01
+Energy Labs Holdings Corp.,Other,Energy,9.57%,,,,,,2028-04-07,,,-2,,,,,,,,MSDL,2024-03-01
+Energy Labs Holdings Corp.,Other,Energy,9.57%,,,,,,2028-04-07,18,17,16,,17,,,,,,MSDL,2024-03-01
+"Caerus US 1, Inc.",Other,,9.83%,,,,,,2029-05-25,11121,10903,10903,0.78%,10903,,,,,,MSDL,2024-03-01
+"Caerus US 1, Inc.",Other,,9.83%,,,,,,2029-05-25,,-16,-16,,-16,,,,,,MSDL,2024-03-01
+"Caerus US 1, Inc.",Other,,9.83%,,,,,,2029-05-25,293,270,270,0.02%,270,,,,,,MSDL,2024-03-01
+"Abacus Data Holdings, Inc.",Other,,9.99%,,,,,,2027-03-10,18617,18303,18479,1.32%,18303,,,,,,MSDL,2024-03-01
+"Abacus Data Holdings, Inc.",Other,,9.99%,,,,,,2027-03-10,1950,1935,1936,0.14%,1935,,,,,,MSDL,2024-03-01
+"Abacus Data Holdings, Inc.",Other,,9.99%,,,,,,2027-03-10,700,677,690,0.05%,677,,,,,,MSDL,2024-03-01
+"Bridgepointe Technologies, LLC",Other,,11.23%,,,,,,2027-12-31,15174,14570,14570,1.04%,14570,,,,,,MSDL,2024-03-01
+"Bridgepointe Technologies, LLC",Other,,11.23%,,,,,,2027-12-31,,-403,-403,0.03%,-403,,,,,,MSDL,2024-03-01
+"Bullhorn, Inc.",Other,,10.48%,,,,,,2026-09-30,12948,12847,12571,0.90%,12847,,,,,,MSDL,2024-03-01
+"Bullhorn, Inc.",Other,,10.48%,,,,,,2026-09-30,2723,2712,2643,0.19%,2712,,,,,,MSDL,2024-03-01
+"Bullhorn, Inc.",Other,,10.48%,,,,,,2026-09-30,273,267,256,0.02%,267,,,,,,MSDL,2024-03-01
+"Citrin Cooperman Advisors, LLC",Other,,9.21%,,,,,,2027-10-01,20025,19695,19428,1.39%,19695,,,,,,MSDL,2024-03-01
+"Citrin Cooperman Advisors, LLC",Other,,9.21%,,,,,,2027-10-01,8582,8437,8326,0.60%,8437,,,,,,MSDL,2024-03-01
+"KWOR Acquisition, Inc.",Other,,9.63%,,,,,,2028-12-22,5376,5280,5096,0.36%,5280,,,,,,MSDL,2024-03-01
+"KWOR Acquisition, Inc.",Other,,9.63%,,,,,,2028-12-22,,-44,-248,0.02%,-44,,,,,,MSDL,2024-03-01
+"KWOR Acquisition, Inc.",Other,,11.75%,,,,,,2027-12-22,,-1,-6,,-1,,,,,,MSDL,2024-03-01
+"Project Boost Purchaser, LLC",Other,,9.65%,,,,,,2029-05-02,5414,5364,5362,0.38%,5364,,,,,,MSDL,2024-03-01
+"Project Boost Purchaser, LLC",Other,,9.65%,,,,,,2029-05-02,85,79,74,0.01%,79,,,,,,MSDL,2024-03-01
+"Project Boost Purchaser, LLC",Other,,9.65%,,,,,,2028-05-02,,-4,-4,,-4,,,,,,MSDL,2024-03-01
+"Associations, Inc.",Other,,10.36%,,,,,,2027-07-02,30525,30293,29139,2.09%,30293,,,,,,MSDL,2024-03-01
+"Associations, Inc.",Other,,10.36%,,,,,,2027-07-02,546,481,218,0.02%,481,,,,,,MSDL,2024-03-01
+"Associations, Inc.",Other,,10.36%,,,,,,2027-07-02,,-14,-84,0.01%,-14,,,,,,MSDL,2024-03-01
+"MRI Software, LLC",Other,Software & Technology,10.23%,,,,,,2026-02-10,59485,59075,58278,4.17%,59075,,,,,,MSDL,2024-03-01
+"MRI Software, LLC",Other,Software & Technology,10.23%,,,,,,2026-02-10,,-12,-45,,-12,,,,,,MSDL,2024-03-01
+"Pritchard Industries, LLC",Other,,10.54%,,,,,,2027-10-13,25532,25108,24112,1.73%,25108,,,,,,MSDL,2024-03-01
+"Pritchard Industries, LLC",Other,,10.54%,,,,,,2027-10-13,5413,5315,5074,0.36%,5315,,,,,,MSDL,2024-03-01
+"Zarya Intermediate, LLC",Other,Media & Entertainment,10.90%,,,,,,2027-07-01,35408,35408,35344,2.53%,35408,,,,,,MSDL,2024-03-01
+"Zarya Intermediate, LLC",Other,Media & Entertainment,10.90%,,,,,,2027-07-01,,,-7,,,,,,,,MSDL,2024-03-01
+"Alert Media, Inc.",Other,Media & Entertainment,9.26%,,,,,,2027-04-12,14000,13842,13534,0.97%,13842,,,,,,MSDL,2024-03-01
+"Alert Media, Inc.",Other,Media & Entertainment,9.26%,,,,,,2026-04-10,,-17,-58,,-17,,,,,,MSDL,2024-03-01
+"Anaplan, Inc.",Other,,10.82%,,,,,,2029-06-21,24000,23546,23578,1.69%,23546,,,,,,MSDL,2024-03-01
+"Appfire Technologies, LLC",Other,,9.92%,,,,,,2027-03-09,14617,14549,14063,1.01%,14549,,,,,,MSDL,2024-03-01
+"Appfire Technologies, LLC",Other,,9.92%,,,,,,2027-03-09,3696,3653,3491,0.25%,3653,,,,,,MSDL,2024-03-01
+"Appfire Technologies, LLC",Other,,9.92%,,,,,,2027-03-09,10,7,3,,7,,,,,,MSDL,2024-03-01
+"Bottomline Technologies, Inc.",Other,,9.83%,,,,,,2029-05-14,3192,3133,3070,0.22%,3133,,,,,,MSDL,2024-03-01
+"Bottomline Technologies, Inc.",Other,,9.83%,,,,,,2028-05-15,,-5,-10,,-5,,,,,,MSDL,2024-03-01
+"CLEO Communications Holding, LLC",Other,,10.74%,,,,,,2027-06-09,39998,39685,38574,2.76%,39685,,,,,,MSDL,2024-03-01
+"CLEO Communications Holding, LLC",Other,,10.74%,,,,,,2027-06-09,,-92,-445,0.03%,-92,,,,,,MSDL,2024-03-01
+Diligent Corp.,Other,,10.13%,,,,,,2025-08-04,27510,27337,26905,1.93%,27337,,,,,,MSDL,2024-03-01
+Diligent Corp.,Other,,10.13%,,,,,,2025-08-04,2201,2187,2152,0.15%,2187,,,,,,MSDL,2024-03-01
+Diligent Corp.,Other,,10.63%,,,,,,2025-08-04,1350,1323,1251,0.09%,1323,,,,,,MSDL,2024-03-01
+"GS AcquisitionCo, Inc.",Other,,9.91%,,,,,,2026-05-22,75927,75432,74120,5.30%,75432,,,,,,MSDL,2024-03-01
+"GS AcquisitionCo, Inc.",Other,,9.91%,,,,,,2026-05-22,,-19,-58,,-19,,,,,,MSDL,2024-03-01
+"Gurobi Optimization, LLC",Other,,9.38%,,,,,,2023-12-19,13091,13048,13091,0.94%,13048,,,,,,MSDL,2024-03-01
+"Kaseya, Inc.",Other,,10.33%,,,,,,2029-06-25,14099,13899,13484,0.97%,13899,,,,,,MSDL,2024-03-01
+"Kaseya, Inc.",Other,,10.33%,,,,,,2029-06-25,,-6,-37,,-6,,,,,,MSDL,2024-03-01
+"Kaseya, Inc.",Other,,10.33%,,,,,,2029-06-25,,-12,-37,,-12,,,,,,MSDL,2024-03-01
+LegitScript,Other,,8.23%,,,,,,2029-06-24,28108,27580,27580,1.97%,27580,,,,,,MSDL,2024-03-01
+LegitScript,Other,,9.57%,,,,,,2029-06-24,,-68,-68,,-68,,,,,,MSDL,2024-03-01
+LegitScript,Other,,9.57%,,,,,,2028-06-24,250,174,174,0.01%,174,,,,,,MSDL,2024-03-01
+"Montana Buyer, Inc.",Other,,8.70%,,,,,,2029-07-22,4131,4051,3991,0.29%,4051,,,,,,MSDL,2024-03-01
+"Montana Buyer, Inc.",Other,,8.70%,,,,,,2028-07-22,,-9,-16,,-9,,,,,,MSDL,2024-03-01
+Netwrix Corp.,Other,,9.70%,,,,,,2029-06-11,4605,4562,4358,0.31%,4562,,,,,,MSDL,2024-03-01
+Netwrix Corp.,Other,,9.70%,,,,,,2029-06-11,812,798,680,0.05%,798,,,,,,MSDL,2024-03-01
+Netwrix Corp.,Other,,9.70%,,,,,,2029-06-11,,-4,-23,,-4,,,,,,MSDL,2024-03-01
+"Oak Purchaser, Inc.",Other,,9.48%,,,,,,2028-04-28,2792,2766,2752,0.20%,2766,,,,,,MSDL,2024-03-01
+"Oak Purchaser, Inc.",Other,,9.48%,,,,,,2028-04-28,625,609,599,0.04%,609,,,,,,MSDL,2024-03-01
+"Oak Purchaser, Inc.",Other,,9.48%,,,,,,2028-04-28,,-3,-5,,-3,,,,,,MSDL,2024-03-01
+"Pound Bidco, Inc.",Other,,10.67%,,,,,,2026-01-30,9012,8888,8970,0.64%,8888,,,,,,MSDL,2024-03-01
+"Pound Bidco, Inc.",Other,,10.67%,,,,,,2026-01-30,,-14,-5,,-14,,,,,,MSDL,2024-03-01
+"Project Leopard Holdings, Inc.",Other,,9.80%,,,,,,2029-07-20,6280,5862,5696,0.41%,5862,,,,,,MSDL,2024-03-01
+"Revalize, Inc.",Other,,10.48%,,,,,,2027-04-15,19652,19543,18737,1.34%,19543,,,,,,MSDL,2024-03-01
+"Revalize, Inc.",Other,,10.48%,,,,,,2027-04-15,,-1,-3,,-1,,,,,,MSDL,2024-03-01
+"Riskonnect Parent, LLC",Other,,10.08%,,,,,,2028-12-07,444,436,427,0.03%,436,,,,,,MSDL,2024-03-01
+"Riskonnect Parent, LLC",Other,,10.08%,,,,,,2028-12-07,80,73,55,,73,,,,,,MSDL,2024-03-01
+"Securonix, Inc.",Other,,10.10%,,,,,,2028-04-05,21010,20678,20249,1.45%,20678,,,,,,MSDL,2024-03-01
+"Securonix, Inc.",Other,,10.10%,,,,,,2028-04-05,,-58,-137,0.01%,-58,,,,,,MSDL,2024-03-01
+"Skykick, Inc.",Other,,11.00%,,,,,,2027-09-01,6300,6171,6142,0.44%,6171,,,,,,MSDL,2024-03-01
+"Skykick, Inc.",Other,,11.00%,,,,,,2027-09-01,1470,1427,1404,0.10%,1427,,,,,,MSDL,2024-03-01
+"Trunk Acquisition, Inc.",Other,,10.23%,,,,,,2027-02-19,9051,8976,8638,0.62%,8976,,,,,,MSDL,2024-03-01
+"Trunk Acquisition, Inc.",Other,,10.23%,,,,,,2026-02-19,,-6,-39,,-6,,,,,,MSDL,2024-03-01
+"User Zoom Technologies, Inc.",Other,,9.35%,,,,,,2029-04-05,38689,37967,37965,2.72%,37967,,,,,,MSDL,2024-03-01
+"Omni Intermediate Holdings, LLC",Other,Media & Entertainment,13.69%,,,,,,2027-12-30,4500,4374,4319,0.31%,4374,,,,,,MSDL,2024-03-01
+"PAI Holdco, Inc.",Other,,11.92%,,,,,,2028-10-28,26033,25444,23787,1.70%,25444,,,,,,MSDL,2024-03-01
+"Infinite Bidco, LLC",Other,,11.73%,,,,,,2029-03-02,17000,16939,16463,1.18%,16939,,,,,,MSDL,2024-03-01
+"Infinite Bidco, LLC",Other,,11.73%,,,,,,2029-03-02,,,-269,0.02%,,,,,,,MSDL,2024-03-01
+"QBS Parent, Inc.",Other,,12.88%,,,,,,2026-09-21,15000,14809,13569,0.97%,14809,,,,,,MSDL,2024-03-01
+"Heartland Veterinary Partners, LLC",Other,Healthcare,12.81%,,,,,,2027-12-10,3960,3892,3624,0.26%,3892,,,,,,MSDL,2024-03-01
+"Heartland Veterinary Partners, LLC",Other,Healthcare,12.81%,,,,,,2027-12-10,1452,1426,1322,0.09%,1426,,,,,,MSDL,2024-03-01
+"Aptean, Inc.",Other,,11.74%,,,,,,2027-04-23,5950,5950,5459,0.39%,5950,,,,,,MSDL,2024-03-01
+"Help/Systems Holdings, Inc.",Other,,10.94%,,,,,,2027-11-19,17500,17500,16189,1.16%,17500,,,,,,MSDL,2024-03-01
+"Idera, Inc.",Other,,10.50%,,,,,,2029-03-02,3887,3863,3642,0.26%,3863,,,,,,MSDL,2024-03-01
+"Red Dawn SEI Buyer, Inc.",Other,,12.67%,,,,,,2026-11-20,19000,18653,17904,1.28%,18653,,,,,,MSDL,2024-03-01
+"Flexera Software, LLC",Other,Software & Technology,11.39%,,,,,,2029-03-03,13500,13277,12584,0.90%,13277,,,,,,MSDL,2024-03-01
+"Matrix Parent, Inc.",Other,,12.55%,,,,,,2030-03-01,10667,10493,9757,0.70%,10493,,,,,,MSDL,2024-03-01
+Familia Intermediate Holdings I Corp.,Other,Media & Entertainment,16.25%,,,,,,2026-06-18,1500,1500,372,0.03%,1500,,,,,,MSDL,2024-03-01
+"Fetch Insurance Services, LLC",Other,Insurance,12.75%,,,,,,2027-10-31,1881,1826,1826,0.13%,1826,,,,,,MSDL,2024-03-01
+Diligent Corp.,Other,,,,,,,,,5000,5693,5766,0.41%,5693,,,,,,MSDL,2024-03-01
+"Fortis Solutions Group, LLC",Other,,,,,,,,,1000000,1041,1024,0.07%,1041,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+"Integrity Marketing Acquisition, LLC",Other,Business Services,,,,,,,,3250000,3555,3165,0.23%,3555,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+"Knockout Intermediate Holdings I, Inc.",Other,Media & Entertainment,,,,,,,,2790,2895,2787,0.20%,2895,,,,,,MSDL,2024-03-01
+"Revalize, Inc.",Other,,,,,,,,,2255,2391,2281,0.16%,2391,,,,,,MSDL,2024-03-01
+"RSK Holdings, Inc.",Other,,,,,,,,,1012200,1019,1053,0.08%,1019,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+"Skykick, Inc.",Other,,,,,,,,,134101,1275,963,0.07%,1275,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+"Abacus Data Holdings, Inc.",Other,,,,,,,,,29441,2944,2193,0.16%,2944,,,,,,MSDL,2024-03-01
+"Amerilife Holdings, LLC",Other,,,,,,,,,873,24,24,0.00%,24,,,,,,MSDL,2024-03-01
+"BP Purchaser, LLC",Other,,,,,,,,,1233333,1233,1468,0.11%,1233,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+"CSC Thrive Holdings, LP",Other,,,,,,,,,160016,411,640,0.05%,411,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+"Encore Holdings, LLC",Other,,,,,,,,,2391,275,449,0.03%,275,,,,,,MSDL,2024-03-01
+"Frisbee Holding, LP",Other,,,,,,,,,21744,277,277,0.02%,277,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+"GSM Equity Investors, LP",Other Equity,,,,,,,,,,450,916,0.07%,450,,,,4500,,MSDL,2024-03-01
+"Help HP SCF Investor, LP",Other,,,,,,,,,,12460,14732,1.05%,12460,,,,,,MSDL,2024-03-01
+"LUV Car Wash Holdings, LLC",Other,Automotive,,,,,,,,116,116,116,0.01%,116,,,,,,MSDL,2024-03-01
+"mPulse Mobile, Inc.",Other,,,,,,,,,165761,1220,1281,0.09%,1220,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+PCX Holding Corp.,Other,,,,,,,,,6538,654,747,0.05%,654,,,,,,MSDL,2024-03-01
+"Pet Holdings, Inc.",Other,Consumer & Retail,,,,,,,,13846,1385,1028,0.07%,1385,,,,,,MSDL,2024-03-01
+"Pritchard Industries, Inc.",Other,,,,,,,,,1700000,1700,2210,0.16%,1700,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+"Procure Acquiom Financial, LLC",Other,Financial Services,,,,,,,,1000000,1000,1380,0.10%,1000,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+"Recovery Point Systems, Inc.",Other,,,,,,,,,1000000,1000,760,0.05%,1000,,,,,cost_suspicious_vs_size|fair_value_suspicious_vs_size,MSDL,2024-03-01
+"Shelby Co-invest, LP",Other,,,,,,,,,8500,850,1194,0.09%,850,,,,,,MSDL,2024-03-01
+"Surewerx Topco, LP",Other,,,,,,,,,512,512,512,0.04%,512,,,,,,MSDL,2024-03-01
+"Suveto Co-Invest, LP",Other,,,,,,,,,17000,1700,1963,0.14%,1700,,,,,,MSDL,2024-03-01

@@ -4,7 +4,7 @@
     "ticker": "KBDC",
     "scale": 1000,
     "median_ratio": 1.081,
-    "periods": 16,
+    "periods": 17,
     "with_reported": 7,
     "match": 2,
     "near": 2,
@@ -12,17 +12,20 @@
     "match_pct": 28.6,
     "trust": "bad",
     "latest": {
-      "filing_date": "2026-08-10",
-      "period_end": "2026-06-30",
-      "holdings_fv": 2293007.0,
-      "row_count": 330,
-      "reported_fv": 2291802000.0,
-      "reported_fv_k": 2291802.0,
-      "delta_pct": 0.05,
-      "status": "match",
-      "quality_flags": [],
-      "filing_url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312526342385/kbdc-20260630.htm",
-      "form": "10-Q"
+      "filing_date": "2026-10-29",
+      "period_end": "2026-09-30",
+      "holdings_fv": 578219.0,
+      "row_count": 114,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [
+        "Fair value is 0.26x the trailing median (possible units/gap issue)",
+        "Row count fell 65% vs the prior filing"
+      ],
+      "filing_url": null,
+      "form": null
     },
     "issue_periods": [
       {
@@ -283,6 +286,22 @@
       "quality_flags": [],
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312526342385/kbdc-20260630.htm",
       "form": "10-Q"
+    },
+    {
+      "filing_date": "2026-10-29",
+      "period_end": "2026-09-30",
+      "holdings_fv": 578219.0,
+      "row_count": 114,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [
+        "Fair value is 0.26x the trailing median (possible units/gap issue)",
+        "Row count fell 65% vs the prior filing"
+      ],
+      "filing_url": null,
+      "form": null
     }
   ]
 }

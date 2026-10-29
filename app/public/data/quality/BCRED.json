@@ -4,9 +4,9 @@
     "ticker": "BCRED",
     "scale": 1000,
     "median_ratio": 1.0,
-    "periods": 15,
-    "with_reported": 13,
-    "match": 13,
+    "periods": 22,
+    "with_reported": 17,
+    "match": 17,
     "near": 0,
     "mismatch": 0,
     "match_pct": 100.0,
@@ -28,6 +28,34 @@
   },
   "periods": [
     {
+      "filing_date": "2021-05-10",
+      "period_end": "2021-03-31",
+      "holdings_fv": 5434164.0,
+      "row_count": 337,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [],
+      "filing_url": null,
+      "form": null
+    },
+    {
+      "filing_date": "2021-08-16",
+      "period_end": "2021-06-30",
+      "holdings_fv": 11315816.0,
+      "row_count": 400,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [
+        "Fair value is 2.08x the trailing median (possible annual/unit issue)"
+      ],
+      "filing_url": null,
+      "form": null
+    },
+    {
       "filing_date": "2021-11-15",
       "period_end": "2021-09-30",
       "holdings_fv": 17738393.0,
@@ -36,7 +64,9 @@
       "reported_fv_k": null,
       "delta_pct": null,
       "status": "no_reported",
-      "quality_flags": [],
+      "quality_flags": [
+        "Fair value is 2.12x the trailing median (possible annual/unit issue)"
+      ],
       "filing_url": null,
       "form": null
     },
@@ -50,7 +80,7 @@
       "delta_pct": 0.0,
       "status": "match",
       "quality_flags": [
-        "Fair value is 1.74x the trailing median (possible annual/unit issue)"
+        "Fair value is 2.72x the trailing median (possible annual/unit issue)"
       ],
       "filing_url": null,
       "form": null
@@ -65,8 +95,77 @@
       "delta_pct": null,
       "status": "no_reported",
       "quality_flags": [
-        "Fair value is 1.56x the trailing median (possible annual/unit issue)"
+        "Fair value is 2.60x the trailing median (possible annual/unit issue)"
       ],
+      "filing_url": null,
+      "form": null
+    },
+    {
+      "filing_date": "2022-08-12",
+      "period_end": "2022-06-30",
+      "holdings_fv": 46994436.0,
+      "row_count": 714,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [
+        "Fair value is 1.94x the trailing median (possible annual/unit issue)"
+      ],
+      "filing_url": null,
+      "form": null
+    },
+    {
+      "filing_date": "2022-11-14",
+      "period_end": "2022-09-30",
+      "holdings_fv": 50815244.0,
+      "row_count": 723,
+      "reported_fv": 48959003000.0,
+      "reported_fv_k": 48959003.0,
+      "delta_pct": 3.79,
+      "status": "match",
+      "quality_flags": [
+        "Fair value is 1.48x the trailing median (possible annual/unit issue)"
+      ],
+      "filing_url": null,
+      "form": null
+    },
+    {
+      "filing_date": "2023-03-17",
+      "period_end": "2022-12-31",
+      "holdings_fv": 48908609.0,
+      "row_count": 701,
+      "reported_fv": 48908608000.0,
+      "reported_fv_k": 48908608.0,
+      "delta_pct": 0.0,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": null,
+      "form": null
+    },
+    {
+      "filing_date": "2023-05-10",
+      "period_end": "2023-03-31",
+      "holdings_fv": 47905799.0,
+      "row_count": 772,
+      "reported_fv": 47905799000.0,
+      "reported_fv_k": 47905799.0,
+      "delta_pct": 0.0,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": null,
+      "form": null
+    },
+    {
+      "filing_date": "2023-08-11",
+      "period_end": "2023-06-30",
+      "holdings_fv": 47684868.0,
+      "row_count": 754,
+      "reported_fv": 47684868000.0,
+      "reported_fv_k": 47684868.0,
+      "delta_pct": 0.0,
+      "status": "match",
+      "quality_flags": [],
       "filing_url": null,
       "form": null
     },
@@ -79,9 +178,7 @@
       "reported_fv_k": 48413196.0,
       "delta_pct": 0.0,
       "status": "match",
-      "quality_flags": [
-        "Fair value is 1.57x the trailing median (possible annual/unit issue)"
-      ],
+      "quality_flags": [],
       "filing_url": null,
       "form": null
     },
@@ -94,9 +191,7 @@
       "reported_fv_k": 50743911.0,
       "delta_pct": -0.1,
       "status": "match",
-      "quality_flags": [
-        "Fair value is 1.48x the trailing median (possible annual/unit issue)"
-      ],
+      "quality_flags": [],
       "filing_url": null,
       "form": null
     },

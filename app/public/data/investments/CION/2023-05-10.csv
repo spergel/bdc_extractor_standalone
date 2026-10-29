@@ -1,24 +1,24 @@
 company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
 "Adapt Laser Acquisition, Inc.",First Lien,Industrials,,,LIBOR,12%,,,2023-12-31,11012,11012,10740,,11012,,,,,,CION,2023-05-10
 "Adapt Laser Acquisition, Inc.",First Lien,Industrials,,,LIBOR,12%,,,2023-12-31,2082,2082,1947,,2082,,,,,,CION,2023-05-10
-"Afore Insurance Services, LLC(m)",First Lien,Insurance,,,SOFR,6%,0.00%,,2025-03-24,4583,4583,4572,,4583,,,,,,CION,2023-05-10
+"Afore Insurance Services, LLC",First Lien,Insurance,,,SOFR,6%,0.00%,,2025-03-24,4583,4583,4572,,4583,,,,,,CION,2023-05-10
 "AHF Parent Holding, Inc.",First Lien,Industrials,,,SOFR,6.25%,0.75%,,2028-02-01,2850,2802,2744,,2802,,,,,,CION,2023-05-10
 "Allen Media, LLC",First Lien,Media & Entertainment,,,SOFR,5.5%,0.00%,,2027-02-10,8841,8775,8553,,8775,,,,,,CION,2023-05-10
-"ALM Media, LLC(m)",First Lien,Media & Entertainment,,,LIBOR,6%,,,2024-11-25,16750,16634,16771,,16634,,,,,,CION,2023-05-10
-American Clinical Solutions LLC(m),First Lien,Healthcare,,,LIBOR,7%,,,2024-12-31,4797,4797,4629,,4797,,,,,,CION,2023-05-10
-"American Consolidated Natural Resources, Inc.(m)",First Lien,Chemicals & Materials,,,LIBOR,16%,,,2025-09-16,47,35,47,,35,,,,,,CION,2023-05-10
+"ALM Media, LLC",First Lien,Media & Entertainment,,,LIBOR,6%,,,2024-11-25,16750,16634,16771,,16634,,,,,,CION,2023-05-10
+American Clinical Solutions LLC,First Lien,Healthcare,,,LIBOR,7%,,,2024-12-31,4797,4797,4629,,4797,,,,,,CION,2023-05-10
+"American Consolidated Natural Resources, Inc.",First Lien,Chemicals & Materials,,,LIBOR,16%,,,2025-09-16,47,35,47,,35,,,,,,CION,2023-05-10
 "American Health Staffing Group, Inc.",First Lien,Business Services,,,SOFR,6%,1.00%,,2026-11-19,16500,16378,16500,,16378,,,,,,CION,2023-05-10
 "American Teleconferencing Services, Ltd.",First Lien,Telecommunications,,,Prime,5.5%,,,2022-06-30,3116,3116,140,,3116,,,,,fair_value_suspicious_vs_size,CION,2023-05-10
-Analogic Corp.(m),First Lien,Healthcare,,,LIBOR,5.25%,,,2024-06-21,4838,4815,4807,,4815,,,,,,CION,2023-05-10
-"Ancile Solutions, Inc.(m)",First Lien,Software & Technology,,,LIBOR,10%,,,2026-06-11,11998,11734,11638,,11734,,,,,,CION,2023-05-10
-Anthem Sports & Entertainment Inc.(m),First Lien,Media & Entertainment,,,LIBOR,9.5%,,,2026-11-15,37076,36932,35500,,36932,,,,,,CION,2023-05-10
+Analogic Corp.,First Lien,Healthcare,,,LIBOR,5.25%,,,2024-06-21,4838,4815,4807,,4815,,,,,,CION,2023-05-10
+"Ancile Solutions, Inc.",First Lien,Software & Technology,,,LIBOR,10%,,,2026-06-11,11998,11734,11638,,11734,,,,,,CION,2023-05-10
+Anthem Sports & Entertainment Inc.,First Lien,Media & Entertainment,,,LIBOR,9.5%,,,2026-11-15,37076,36932,35500,,36932,,,,,,CION,2023-05-10
 Anthem Sports & Entertainment Inc.,First Lien,Media & Entertainment,,,LIBOR,9.5%,,,2026-11-15,3000,3000,2873,,3000,,,,,,CION,2023-05-10
 Anthem Sports & Entertainment Inc.,First Lien,Media & Entertainment,0.50%,,,,,,2026-11-15,167,,-7,,,,,,,,CION,2023-05-10
 "Appalachian Resource Company, LLC",First Lien,Chemicals & Materials,,,LIBOR,5%,,,2023-09-10,11137,10807,10789,,10807,,,,,,CION,2023-05-10
 "Appalachian Resource Company, LLC",First Lien,Chemicals & Materials,,,LIBOR,10%,,,2023-09-10,5000,5000,5000,,5000,,,,,,CION,2023-05-10
 "Archer Systems, LLC",First Lien,Business Services,,,SOFR,6%,1.00%,,2027-08-11,18050,17892,18073,,17892,,,,,,CION,2023-05-10
 "Archer Systems, LLC",First Lien,Business Services,0.50%,,,,,,2027-08-11,1905,-17,2,,-17,,,,,fair_value_suspicious_vs_size,CION,2023-05-10
-"Associated Asphalt Partners, LLC(m)",First Lien,Industrials,,,LIBOR,5.25%,,,2024-04-05,14178,14045,10888,,14045,,,,,,CION,2023-05-10
+"Associated Asphalt Partners, LLC",First Lien,Industrials,,,LIBOR,5.25%,,,2024-04-05,14178,14045,10888,,14045,,,,,,CION,2023-05-10
 Atlas Supply LLC,First Lien,Healthcare,11.00%,,,,,,2025-04-29,5000,5000,4938,,5000,,,,,,CION,2023-05-10
 Avison Young (USA) Inc.,First Lien,Insurance,,,SOFR,5.75%,0.00%,,2026-01-31,2658,2634,2425,,2634,,,,,,CION,2023-05-10
 "BDS Solutions Intermediateco, LLC",First Lien,Business Services,,,SOFR,6.25%,1.00%,,2027-02-07,20044,19736,19668,,19736,,,,,,CION,2023-05-10
@@ -28,32 +28,30 @@ Avison Young (USA) Inc.,First Lien,Insurance,,,SOFR,5.75%,0.00%,,2026-01-31,2658
 Bradshaw International Parent Corp.,First Lien,Consumer & Retail,,,LIBOR,5.75%,,,2027-10-21,12991,12730,12618,,12730,,,,,,CION,2023-05-10
 Bradshaw International Parent Corp.,First Lien,Consumer & Retail,0.50%,,,,,,2026-10-21,1844,-33,-53,,-33,,,,,,CION,2023-05-10
 "Cabi, LLC",First Lien,Consumer & Retail,,,SOFR,9.5%,1.00%,,2027-02-28,21931,21656,21602,,21656,,,,,,CION,2023-05-10
-"Cadence Aerospace, LLC(m)(n)",First Lien,Aerospace & Defense,,,LIBOR,8.5%,,,2023-11-14,39491,39388,39195,,39388,,,,,,CION,2023-05-10
-"Carestream Health, Inc.(n)",First Lien,Healthcare,,,SOFR,7.5%,1.00%,,2027-09-30,7596,7596,7520,,7596,,,,,,CION,2023-05-10
-CB URS Holdings Corp.(m),First Lien,Transportation & Logistics,,,LIBOR,5.75%,,,2024-09-01,14826,14797,10656,,14797,,,,,,CION,2023-05-10
+"Cadence Aerospace, LLC",First Lien,Aerospace & Defense,,,LIBOR,8.5%,,,2023-11-14,39491,39388,39195,,39388,,,,,,CION,2023-05-10
+"Carestream Health, Inc.",First Lien,Healthcare,,,SOFR,7.5%,1.00%,,2027-09-30,7596,7596,7520,,7596,,,,,,CION,2023-05-10
+CB URS Holdings Corp.,First Lien,Transportation & Logistics,,,LIBOR,5.75%,,,2024-09-01,14826,14797,10656,,14797,,,,,,CION,2023-05-10
 "Celerity Acquisition Holdings, LLC",First Lien,Business Services,,,LIBOR,8.5%,,,2026-05-28,14738,14738,14443,,14738,,,,,,CION,2023-05-10
 "Cennox, Inc.",First Lien,Business Services,,,LIBOR,6%,,,2026-05-04,22455,22455,22371,,22455,,,,,,CION,2023-05-10
-"Cennox, Inc.(m)",First Lien,Business Services,,,LIBOR,6%,,,2026-05-04,11666,11613,11623,,11613,,,,,,CION,2023-05-10
+"Cennox, Inc.",First Lien,Business Services,,,LIBOR,6%,,,2026-05-04,11666,11613,11623,,11613,,,,,,CION,2023-05-10
 "Cennox, Inc.",First Lien,Business Services,,,LIBOR,6%,,,2026-05-04,2987,2987,2976,,2987,,,,,,CION,2023-05-10
 "Cennox, Inc.",First Lien,Business Services,1.00%,,,,,,2023-11-22,7193,,-27,,,,,,,,CION,2023-05-10
-"CION/EagleTree Partners, LLC(h)",First Lien,Financial Services,14.00%,,,,,,2026-12-21,54827,54827,54827,,54827,,,,,,CION,2023-05-10
-"CircusTrix Holdings, LLC(m)",First Lien,Hospitality & Leisure,,,LIBOR,5.5%,,,2024-01-16,26763,26725,26763,,26725,,,,,,CION,2023-05-10
-"CircusTrix Holdings, LLC",First Lien,Hospitality & Leisure,,,LIBOR,5.5%,,,2024-01-16,2725,2703,2725,,2703,,,,,,CION,2023-05-10
-"CircusTrix Holdings, LLC",First Lien,Hospitality & Leisure,,,LIBOR,5.5%,,,2023-07-16,754,745,900,,745,,,,,,CION,2023-05-10
+"CION/EagleTree Partners, LLC",First Lien,Financial Services,14.00%,,,,,,2026-12-21,54827,54827,54827,,54827,,,,,,CION,2023-05-10
+"CircusTrix Holdings, LLC",First Lien,Healthcare,,,LIBOR,5.5%,,,2024-01-16,26763,26725,26763,,26725,,,,,,CION,2023-05-10
+"CircusTrix Holdings, LLC",First Lien,Healthcare,,,LIBOR,5.5%,,,2024-01-16,2725,2703,2725,,2703,,,,,,CION,2023-05-10
+"CircusTrix Holdings, LLC",First Lien,Healthcare,,,LIBOR,5.5%,,,2023-07-16,754,745,900,,745,,,,,,CION,2023-05-10
 "Community Tree Service, LLC",First Lien,Industrials,,,SOFR,8.5%,1.00%,,2027-06-17,12438,12438,11878,,12438,,,,,,CION,2023-05-10
 "Country Fresh Holdings, LLC",First Lien,Food & Beverage,,,LIBOR,5%,,,2023-04-29,877,765,75,,765,,,,,,CION,2023-05-10
 "Country Fresh Holdings, LLC",First Lien,Food & Beverage,,,LIBOR,5%,,,2023-04-29,355,316,30,,316,,,,,,CION,2023-05-10
-"Coyote Buyer, LLC(m)",First Lien,Chemicals & Materials,,,LIBOR,6%,,,2026-02-06,33950,33798,33611,,33798,,,,,,CION,2023-05-10
+"Coyote Buyer, LLC",First Lien,Chemicals & Materials,,,LIBOR,6%,,,2026-02-06,33950,33798,33611,,33798,,,,,,CION,2023-05-10
 "Coyote Buyer, LLC",First Lien,Chemicals & Materials,,,LIBOR,8%,,,2026-08-06,6109,6032,6109,,6032,,,,,,CION,2023-05-10
 "Coyote Buyer, LLC",First Lien,Chemicals & Materials,0.50%,,,,,,2025-02-06,2500,,-25,,,,,,,,CION,2023-05-10
 "Critical Nurse Staffing, LLC",First Lien,Healthcare,,,LIBOR,6%,,,2026-11-01,12895,12895,12895,,12895,,,,,,CION,2023-05-10
 "Critical Nurse Staffing, LLC",First Lien,Healthcare,,,LIBOR,6%,,,2026-11-01,996,996,996,,996,,,,,,CION,2023-05-10
 "Critical Nurse Staffing, LLC",First Lien,Healthcare,,,LIBOR,6%,,,2026-11-01,760,760,760,,760,,,,,,CION,2023-05-10
-"David's Bridal, LLC(m)(q)",First Lien,Consumer & Retail,,,LIBOR,10%,,,2024-05-23,13166,12419,7702,,12419,,,,,,CION,2023-05-10
-"David's Bridal, LLC(m)(q)",First Lien,Consumer & Retail,,,LIBOR,10%,,,2024-05-23,5426,5426,3038,,5426,,,,,,CION,2023-05-10
-"David's Bridal, LLC(q)",First Lien,Consumer & Retail,,,LIBOR,10%,,,2024-12-23,6014,5457,,,5457,,,,,,CION,2023-05-10
-"David's Bridal, LLC(q)",First Lien,Consumer & Retail,,,LIBOR,7%,,,2024-12-31,865,793,,,793,,,,,,CION,2023-05-10
-"Deluxe Entertainment Services, Inc.(m)(q)(r)",First Lien,Media & Entertainment,,,LIBOR,6.5%,,,2024-03-25,2593,2542,130,,2542,,,,,,CION,2023-05-10
+"David's Bridal, LLC",First Lien,Consumer & Retail,,,LIBOR,10%,,,2024-05-23,13166,12419,7702,,12419,,,,,,CION,2023-05-10
+"David's Bridal, LLC",First Lien,Consumer & Retail,,,LIBOR,10%,,,2024-05-23,5426,5426,3038,,5426,,,,,,CION,2023-05-10
+"Deluxe Entertainment Services, Inc.",First Lien,Media & Entertainment,,,LIBOR,6.5%,,,2024-03-25,2593,2542,130,,2542,,,,,,CION,2023-05-10
 "Dermcare Management, LLC",First Lien,Healthcare,,,SOFR,6%,1.00%,,2028-04-22,9332,9165,9251,,9165,,,,,,CION,2023-05-10
 "Dermcare Management, LLC",First Lien,Healthcare,,,SOFR,6%,1.00%,,2028-04-22,3531,3453,3501,,3453,,,,,,CION,2023-05-10
 "Dermcare Management, LLC",First Lien,Healthcare,,,Prime,6%,,,2028-04-22,358,358,355,,358,,,,,,CION,2023-05-10
@@ -65,35 +63,35 @@ Entertainment Studios P&A LLC,First Lien,Media & Entertainment,,,SOFR,8.5%,1.00%
 Entertainment Studios P&A LLC,First Lien,Media & Entertainment,5.00%,,,,,,2037-05-18,,,1368,,,,,,,,CION,2023-05-10
 Flatworld Intermediate Corp.,First Lien,Business Services,,,SOFR,6%,1.00%,,2027-10-03,25072,25072,25260,,25072,,,,,,CION,2023-05-10
 Flatworld Intermediate Corp.,First Lien,Business Services,0.50%,,,,,,2027-10-03,5865,,44,,,,,,,fair_value_suspicious_vs_size,CION,2023-05-10
-"FuseFX, LLC(m)",First Lien,Media & Entertainment,,,SOFR,5.75%,1.00%,,2024-10-01,19744,19640,19547,,19640,,,,,,CION,2023-05-10
-Fusion Connect Inc.(m),First Lien,Software & Technology,,,LIBOR,8.5%,,,2027-01-18,19677,19222,19677,,19222,,,,,,CION,2023-05-10
+"FuseFX, LLC",First Lien,Media & Entertainment,,,SOFR,5.75%,1.00%,,2024-10-01,19744,19640,19547,,19640,,,,,,CION,2023-05-10
+Fusion Connect Inc.,First Lien,Software & Technology,,,LIBOR,8.5%,,,2027-01-18,19677,19222,19677,,19222,,,,,,CION,2023-05-10
 "Future Pak, LLC",First Lien,Healthcare,,,LIBOR,10%,,,2024-07-02,22183,22183,22183,,22183,,,,,,CION,2023-05-10
 "Gold Medal Holdings, Inc.",First Lien,Business Services,,,SOFR,7%,1.00%,,2027-03-17,14759,14639,14575,,14639,,,,,,CION,2023-05-10
 GSC Technologies Inc.,First Lien,Chemicals & Materials,,,LIBOR,5%,,,2025-09-30,2404,2329,2094,,2329,,,,,,CION,2023-05-10
-GSC Technologies Inc.(r),First Lien,Chemicals & Materials,,,LIBOR,5%,,,2025-09-30,935,905,612,,905,,,,,,CION,2023-05-10
-GSC Technologies Inc.(r),First Lien,Chemicals & Materials,,,LIBOR,10%,,,2025-09-30,150,150,150,,150,,,,,,CION,2023-05-10
+GSC Technologies Inc.,First Lien,Chemicals & Materials,,,LIBOR,5%,,,2025-09-30,935,905,612,,905,,,,,,CION,2023-05-10
+GSC Technologies Inc.,First Lien,Chemicals & Materials,,,LIBOR,10%,,,2025-09-30,150,150,150,,150,,,,,,CION,2023-05-10
 "H.W. Lochner, Inc.",First Lien,Industrials,,,LIBOR,5.75%,,,2027-07-02,8828,8763,8828,,8763,,,,,,CION,2023-05-10
 "H.W. Lochner, Inc.",First Lien,Industrials,,,SOFR,6.75%,1.00%,,2027-07-02,7439,7229,7215,,7229,,,,,,CION,2023-05-10
 "H.W. Lochner, Inc.",First Lien,Industrials,,,LIBOR,5.75%,,,2027-07-02,775,765,775,,765,,,,,,CION,2023-05-10
 Harland Clarke Holdings Corp.,First Lien,Business Services,,,SOFR,7.75%,1.00%,,2026-06-16,9186,9180,7674,,9180,,,,,,CION,2023-05-10
 "Heritage Power, LLC",First Lien,Energy,,,Prime,5%,,,2026-07-30,8622,6908,3837,,6908,,,,,,CION,2023-05-10
-"Hilliard, Martinez & Gonzales, LLP(m)",First Lien,Consumer & Retail,,,LIBOR,12%,,,2023-12-17,22706,22670,22706,,22670,,,,,,CION,2023-05-10
+"Hilliard, Martinez & Gonzales, LLP",First Lien,Consumer & Retail,,,LIBOR,12%,,,2023-12-17,22706,22670,22706,,22670,,,,,,CION,2023-05-10
 Hollander Intermediate LLC,First Lien,Consumer & Retail,,,SOFR,8.75%,2.00%,,2026-09-19,17249,16832,16538,,16832,,,,,,CION,2023-05-10
-"Homer City Generation, LP.(m)",First Lien,Energy,15.00%,,,,,,2023-04-05,12222,12076,8209,,12076,,,,,,CION,2023-05-10
+"Homer City Generation, LP.",First Lien,Energy,15.00%,,,,,,2023-04-05,12222,12076,8209,,12076,,,,,,CION,2023-05-10
 "Homer City Generation, LP.",First Lien,Energy,17.00%,,,,,,2023-05-31,1000,1000,1060,,1000,,,,,,CION,2023-05-10
-"Hudson Hospital Opco, LLC(m)",First Lien,Healthcare,,,SOFR,8%,3.00%,,2023-11-04,2186,2146,2169,,2146,,,,,,CION,2023-05-10
+"Hudson Hospital Opco, LLC",First Lien,Healthcare,,,SOFR,8%,3.00%,,2023-11-04,2186,2146,2169,,2146,,,,,,CION,2023-05-10
 "HUMC Holdco, LLC",First Lien,Healthcare,,,SOFR,8%,3.00%,,2023-11-04,7827,7827,7827,,7827,,,,,,CION,2023-05-10
 "HW Acquisition, LLC",First Lien,Industrials,,,Prime,5%,,,2026-09-28,18828,18694,17393,,18694,,,,,,CION,2023-05-10
 "HW Acquisition, LLC",First Lien,Industrials,,,Prime,5%,,,2026-09-28,733,713,677,,713,,,,,,CION,2023-05-10
 "HW Acquisition, LLC",First Lien,Industrials,0.50%,,,,,,2026-09-28,2200,,-168,,,,,,,,CION,2023-05-10
 "ICA Foam Holdings, LLC",First Lien,Containers & Packaging,,,SOFR,6.75%,1.00%,,2025-11-05,19900,19555,19477,,19555,,,,,,CION,2023-05-10
-IJKG Opco LLC(m),First Lien,Healthcare,,,SOFR,8%,3.00%,,2023-11-04,1457,1432,1446,,1432,,,,,,CION,2023-05-10
+IJKG Opco LLC,First Lien,Healthcare,,,SOFR,8%,3.00%,,2023-11-04,1457,1432,1446,,1432,,,,,,CION,2023-05-10
 "Independent Pet Partners Intermediate Holdings, LLC",First Lien,Consumer & Retail,6.00%,,,,,,2023-11-20,10934,10905,4702,,10905,,,,,,CION,2023-05-10
 "Independent Pet Partners Intermediate Holdings, LLC",First Lien,Consumer & Retail,,,Prime,9%,,,2023-04-16,2491,2308,2491,,2308,,,,,,CION,2023-05-10
 "Independent Pet Partners Intermediate Holdings, LLC",First Lien,Consumer & Retail,,,SOFR,10%,1.00%,,2023-02-27,1577,1681,1577,,1681,,,,,,CION,2023-05-10
 "Independent Pet Partners Intermediate Holdings, LLC",First Lien,Consumer & Retail,,,Prime,9%,,,2023-04-16,1397,1374,1397,,1374,,,,,,CION,2023-05-10
 "Inotiv, Inc.",First Lien,Healthcare,,,SOFR,6.25%,1.00%,,2026-11-05,16391,16154,15818,,16154,,,,,,CION,2023-05-10
-"Instant Web, LLC(m)(n)(r)",First Lien,Media & Entertainment,,,LIBOR,7%,,,2027-02-25,40985,40985,24847,,40985,,,,,,CION,2023-05-10
+"Instant Web, LLC",First Lien,Media & Entertainment,,,LIBOR,7%,,,2027-02-25,40985,40985,24847,,40985,,,,,,CION,2023-05-10
 "Instant Web, LLC",First Lien,Media & Entertainment,,,LIBOR,6.5%,,,2027-02-25,1186,1186,1180,,1186,,,,,,CION,2023-05-10
 "Instant Web, LLC",First Lien,Media & Entertainment,,,Prime,3.75%,,,2027-02-25,458,458,469,,458,,,,,,CION,2023-05-10
 "Instant Web, LLC",First Lien,Media & Entertainment,0.50%,,,,,,2027-02-25,1517,,-8,,,,,,,,CION,2023-05-10
@@ -107,19 +105,19 @@ Invincible Boat Company LLC,First Lien,Consumer & Retail,0.50%,,,,,,2025-08-28,2
 "Ironhorse Purchaser, LLC",First Lien,Business Services,,,SOFR,6.5%,1.00%,,2027-09-30,109,101,108,,101,,,,,,CION,2023-05-10
 "Ironhorse Purchaser, LLC",First Lien,Business Services,0.50%,,,,,,2027-09-30,707,,-7,,,,,,,,CION,2023-05-10
 "Isagenix International, LLC",First Lien,Food & Beverage,,,LIBOR,7.75%,,,2025-06-14,16229,15192,13916,,15192,,,,,,CION,2023-05-10
-"Jenny C Acquisition, Inc.(q)",First Lien,Consumer & Retail,,,LIBOR,9%,,,2024-10-01,11789,11745,2358,,11745,,,,,,CION,2023-05-10
+"Jenny C Acquisition, Inc.",First Lien,Consumer & Retail,,,LIBOR,9%,,,2024-10-01,11789,11745,2358,,11745,,,,,,CION,2023-05-10
 "Jenny C Acquisition, Inc.",First Lien,Consumer & Retail,,,SOFR,8%,1.75%,,2024-10-01,443,443,443,,443,,,,,,CION,2023-05-10
 "JP Intermediate B, LLC",First Lien,Food & Beverage,,,LIBOR,5.5%,,,2025-11-20,13208,13082,7837,,13082,,,,,,CION,2023-05-10
 "K&N Parent, Inc.",First Lien,Consumer & Retail,,,SOFR,8.25%,1.00%,,2027-08-14,5441,5441,5427,,5441,,,,,,CION,2023-05-10
 "K&N Parent, Inc.",First Lien,Consumer & Retail,,,SOFR,8%,1.00%,,2027-02-14,4263,4111,4439,,4111,,,,,,CION,2023-05-10
-"Klein Hersh, LLC(m)",First Lien,Business Services,,,SOFR,11.39%,0.50%,,2027-04-27,20273,20273,20222,,20273,,,,,,CION,2023-05-10
-KNB Holdings Corp.(q),First Lien,Consumer & Retail,,,LIBOR,5.5%,,,2024-04-26,7634,7387,1651,,7387,,,,,,CION,2023-05-10
-"LAV Gear Holdings, Inc.(m)(n)",First Lien,Business Services,,,SOFR,6.28%,1.00%,,2024-10-31,27788,27598,27651,,27598,,,,,,CION,2023-05-10
-"LAV Gear Holdings, Inc.(m)(n)",First Lien,Business Services,,,SOFR,6.28%,1.00%,,2024-10-31,4558,4555,4541,,4555,,,,,,CION,2023-05-10
+"Klein Hersh, LLC",First Lien,Business Services,,,SOFR,11.39%,0.50%,,2027-04-27,20273,20273,20222,,20273,,,,,,CION,2023-05-10
+KNB Holdings Corp.,First Lien,Consumer & Retail,,,LIBOR,5.5%,,,2024-04-26,7634,7387,1651,,7387,,,,,,CION,2023-05-10
+"LAV Gear Holdings, Inc.",First Lien,Business Services,,,SOFR,6.28%,1.00%,,2024-10-31,27788,27598,27651,,27598,,,,,,CION,2023-05-10
+"LAV Gear Holdings, Inc.",First Lien,Business Services,,,SOFR,6.28%,1.00%,,2024-10-31,4558,4555,4541,,4555,,,,,,CION,2023-05-10
 "LGC US Finco, LLC",First Lien,Industrials,,,LIBOR,6.5%,,,2025-12-20,11454,11225,11124,,11225,,,,,,CION,2023-05-10
-"Lift Brands, Inc.(m)(n)",First Lien,Consumer & Retail,,,LIBOR,7.5%,,,2025-06-29,23228,23228,23228,,23228,,,,,,CION,2023-05-10
-"Lift Brands, Inc.(m)(n)",First Lien,Consumer & Retail,9.50%,,,,,,2025-06-29,5642,5583,5332,,5583,,,,,,CION,2023-05-10
-"Lift Brands, Inc.(m)(n)",First Lien,Consumer & Retail,9.50%,,,,,,2025-06-29,5296,4982,4648,,4982,,,,,,CION,2023-05-10
+"Lift Brands, Inc.",First Lien,Consumer & Retail,,,LIBOR,7.5%,,,2025-06-29,23228,23228,23228,,23228,,,,,,CION,2023-05-10
+"Lift Brands, Inc.",First Lien,Consumer & Retail,9.50%,,,,,,2025-06-29,5642,5583,5332,,5583,,,,,,CION,2023-05-10
+"Lift Brands, Inc.",First Lien,Consumer & Retail,9.50%,,,,,,2025-06-29,5296,4982,4648,,4982,,,,,,CION,2023-05-10
 MacNeill Pride Group Corp.,First Lien,Consumer & Retail,,,SOFR,6.5%,1.00%,,2026-04-22,17759,17670,17404,,17670,,,,,,CION,2023-05-10
 MacNeill Pride Group Corp.,First Lien,Consumer & Retail,,,SOFR,6.5%,1.00%,,2026-04-22,7890,7823,7732,,7823,,,,,,CION,2023-05-10
 MacNeill Pride Group Corp.,First Lien,Consumer & Retail,1.00%,,,,,,2024-04-30,2017,,-40,,,,,,,,CION,2023-05-10
@@ -127,36 +125,36 @@ Manus Bio Inc.,First Lien,Healthcare,13.00%,,,,,,2026-08-20,13719,13644,13719,,1
 "Mimeo.com, Inc.",First Lien,Media & Entertainment,,,LIBOR,6.8%,,,2024-12-21,22156,22156,21990,,22156,,,,,,CION,2023-05-10
 "Mimeo.com, Inc.",First Lien,Media & Entertainment,,,LIBOR,6.8%,,,2024-12-21,2256,2256,2239,,2256,,,,,,CION,2023-05-10
 "Mimeo.com, Inc.",First Lien,Media & Entertainment,1.00%,,,,,,2024-12-21,3000,,-23,,,,,,,,CION,2023-05-10
-Moss Holding Company(m)(n),First Lien,Business Services,,,SOFR,6.5%,1.00%,,2024-04-17,19526,19464,18842,,19464,,,,,,CION,2023-05-10
+Moss Holding Company,First Lien,Business Services,,,SOFR,6.5%,1.00%,,2024-04-17,19526,19464,18842,,19464,,,,,,CION,2023-05-10
 Moss Holding Company,First Lien,Business Services,6.25%,,,,,,2024-04-17,106,,-4,,,,,,,,CION,2023-05-10
 Moss Holding Company,First Lien,Business Services,0.50%,,,,,,2024-04-17,2126,,-74,,,,,,,,CION,2023-05-10
 Neptune Flood Inc.,First Lien,Insurance,,,LIBOR,6%,,,2026-10-21,6208,6175,6270,,6175,,,,,,CION,2023-05-10
-"NewsCycle Solutions, Inc.(m)",First Lien,Media & Entertainment,,,SOFR,7%,1.00%,,2023-12-29,12413,12408,12413,,12408,,,,,,CION,2023-05-10
+"NewsCycle Solutions, Inc.",First Lien,Media & Entertainment,,,SOFR,7%,1.00%,,2023-12-29,12413,12408,12413,,12408,,,,,,CION,2023-05-10
 NWN Parent Holdings LLC,First Lien,Software & Technology,,,SOFR,8%,1.00%,,2026-05-07,12688,12611,12577,,12611,,,,,,CION,2023-05-10
 NWN Parent Holdings LLC,First Lien,Software & Technology,,,SOFR,8%,1.00%,,2026-05-07,1020,1008,1011,,1008,,,,,,CION,2023-05-10
 NWN Parent Holdings LLC,First Lien,Software & Technology,0.50%,,,,,,2026-05-07,480,,-4,,,,,,,,CION,2023-05-10
 "OpCo Borrower, LLC",First Lien,Healthcare,,,SOFR,6.5%,1.00%,,2027-08-19,11315,11205,11315,,11205,,,,,,CION,2023-05-10
-"Optio Rx, LLC(m)",First Lien,Healthcare,,,LIBOR,7%,,,2024-06-28,15929,15900,15610,,15900,,,,,,CION,2023-05-10
+"Optio Rx, LLC",First Lien,Healthcare,,,LIBOR,7%,,,2024-06-28,15929,15900,15610,,15900,,,,,,CION,2023-05-10
 "Optio Rx, LLC",First Lien,Healthcare,,,LIBOR,10%,,,2024-06-28,2515,2507,2615,,2507,,,,,,CION,2023-05-10
 Pentec Acquisition Corp.,First Lien,Healthcare,,,LIBOR,6%,,,2026-10-08,24688,24509,24688,,24509,,,,,,CION,2023-05-10
 PH Beauty Holdings III. Inc.,First Lien,Consumer & Retail,,,LIBOR,5%,,,2025-09-28,9550,9208,8679,,9208,,,,,,CION,2023-05-10
-"Playboy Enterprises, Inc.(h)",First Lien,Consumer & Retail,,,LIBOR,6.25%,,,2027-05-25,19527,19166,18599,,19166,,,,,,CION,2023-05-10
+"Playboy Enterprises, Inc.",First Lien,Consumer & Retail,,,LIBOR,6.25%,,,2027-05-25,19527,19166,18599,,19166,,,,,,CION,2023-05-10
 "Project Castle, Inc.",First Lien,Business Services,,,SOFR,5.5%,0.50%,,2029-06-01,9950,8985,8520,,8985,,,,,,CION,2023-05-10
 "RA Outdoors, LLC",First Lien,Media & Entertainment,,,SOFR,6.75%,1.00%,,2026-04-08,10979,10979,10938,,10979,,,,,,CION,2023-05-10
 "RA Outdoors, LLC",First Lien,Media & Entertainment,,,SOFR,7.75%,1.00%,,2026-04-08,315,145,314,,145,,,,,,CION,2023-05-10
 "RA Outdoors, LLC",First Lien,Media & Entertainment,0.50%,,,,,,2026-04-08,735,,-1,,,,,,,,CION,2023-05-10
 Retail Services WIS Corp.,First Lien,Business Services,,,LIBOR,7.75%,,,2025-05-20,9423,9264,9140,,9264,,,,,,CION,2023-05-10
-"Robert C. Hilliard, L.LP.(m)",First Lien,Consumer & Retail,,,LIBOR,12%,,,2023-12-17,1890,1890,1890,,1890,,,,,,CION,2023-05-10
-"Rogers Mechanical Contractors, LLC(m)",First Lien,Business Services,,,SOFR,8%,1.00%,,2025-09-09,16173,16173,16133,,16173,,,,,,CION,2023-05-10
+"Robert C. Hilliard, L.LP.",First Lien,Consumer & Retail,,,LIBOR,12%,,,2023-12-17,1890,1890,1890,,1890,,,,,,CION,2023-05-10
+"Rogers Mechanical Contractors, LLC",First Lien,Business Services,,,SOFR,8%,1.00%,,2025-09-09,16173,16173,16133,,16173,,,,,,CION,2023-05-10
 "Rogers Mechanical Contractors, LLC",First Lien,Business Services,,,SOFR,8%,1.00%,,2025-09-09,1538,1538,1535,,1538,,,,,,CION,2023-05-10
-"Rogers Mechanical Contractors, LLC(m)",First Lien,Business Services,,,SOFR,8%,1.00%,,2025-09-09,951,951,949,,951,,,,,,CION,2023-05-10
+"Rogers Mechanical Contractors, LLC",First Lien,Business Services,,,SOFR,8%,1.00%,,2025-09-09,951,951,949,,951,,,,,,CION,2023-05-10
 "Rogers Mechanical Contractors, LLC",First Lien,Business Services,1.00%,,,,,,2023-04-28,962,,-2,,,,,,,,CION,2023-05-10
 "Rogers Mechanical Contractors, LLC",First Lien,Business Services,0.75%,,,,,,2025-09-09,865,,-2,,,,,,,,CION,2023-05-10
 "RumbleOn, Inc.",First Lien,Automotive,,,LIBOR,8.25%,,,2026-08-31,13284,12542,12587,,12542,,,,,,CION,2023-05-10
 "RumbleOn, Inc.",First Lien,Automotive,,,LIBOR,8.25%,,,2026-08-31,4019,3992,3808,,3992,,,,,,CION,2023-05-10
 "Securus Technologies Holdings, Inc.",First Lien,Telecommunications,,,LIBOR,4.5%,,,2024-11-01,3858,3433,3848,,3433,,,,,,CION,2023-05-10
-"Sequoia Healthcare Management, LLC(m)",First Lien,Healthcare,12.75%,,,,,,2023-11-04,8525,8456,10720,,8456,,,,,,CION,2023-05-10
-"Service Compression, LLC(m)",First Lien,Energy,,,SOFR,10%,1.00%,,2027-05-06,23091,22763,23091,,22763,,,,,,CION,2023-05-10
+"Sequoia Healthcare Management, LLC",First Lien,Healthcare,12.75%,,,,,,2023-11-04,8525,8456,10720,,8456,,,,,,CION,2023-05-10
+"Service Compression, LLC",First Lien,Energy,,,SOFR,10%,1.00%,,2027-05-06,23091,22763,23091,,22763,,,,,,CION,2023-05-10
 "Service Compression, LLC",First Lien,Energy,,,SOFR,10%,1.00%,,2027-05-06,4564,4461,4565,,4461,,,,,,CION,2023-05-10
 "Sleep Opco, LLC",First Lien,Consumer & Retail,,,LIBOR,6.5%,,,2026-10-12,13739,13539,13619,,13539,,,,,,CION,2023-05-10
 "Sleep Opco, LLC",First Lien,Consumer & Retail,,,LIBOR,6.5%,,,2026-10-12,525,500,520,,500,,,,,,CION,2023-05-10
@@ -168,15 +166,15 @@ Retail Services WIS Corp.,First Lien,Business Services,,,LIBOR,7.75%,,,2025-05-2
 "Spinal USA, Inc.",First Lien,Healthcare,,,LIBOR,9.5%,,,2023-05-29,791,710,388,,710,,,,,,CION,2023-05-10
 "Spinal USA, Inc.",First Lien,Healthcare,,,LIBOR,9.5%,,,2023-05-29,752,752,368,,752,,,,,,CION,2023-05-10
 "Spinal USA, Inc.",First Lien,Healthcare,,,LIBOR,9.5%,,,2023-05-29,627,562,332,,562,,,,,,CION,2023-05-10
-"STATinMED, LLC(r)",First Lien,Healthcare,,,SOFR,9.5%,2.00%,,2027-07-01,9548,9548,9333,,9548,,,,,,CION,2023-05-10
-"STATinMED, LLC(r)",First Lien,Healthcare,,,SOFR,9.5%,2.00%,,2027-07-01,160,157,162,,157,,,,,,CION,2023-05-10
+"STATinMED, LLC",First Lien,Healthcare,,,SOFR,9.5%,2.00%,,2027-07-01,9548,9548,9333,,9548,,,,,,CION,2023-05-10
+"STATinMED, LLC",First Lien,Healthcare,,,SOFR,9.5%,2.00%,,2027-07-01,160,157,162,,157,,,,,,CION,2023-05-10
 Thrill Holdings LLC,First Lien,Media & Entertainment,,,SOFR,6.5%,1.00%,,2027-05-27,20265,20265,19940,,20265,,,,,,CION,2023-05-10
 Thrill Holdings LLC,First Lien,Media & Entertainment,,,SOFR,6.5%,1.00%,,2027-05-27,1739,1739,1730,,1739,,,,,,CION,2023-05-10
 Thrill Holdings LLC,First Lien,Media & Entertainment,1.00%,,,,,,2024-05-27,3261,,-16,,,,,,,,CION,2023-05-10
-"Trademark Global, LLC(m)",First Lien,Consumer & Retail,,,LIBOR,7.5%,,,2024-07-30,15492,15460,15027,,15460,,,,,,CION,2023-05-10
+"Trademark Global, LLC",First Lien,Consumer & Retail,,,LIBOR,7.5%,,,2024-07-30,15492,15460,15027,,15460,,,,,,CION,2023-05-10
 "Trammell, P.C.",First Lien,Consumer & Retail,,,SOFR,15.5%,2.00%,,2026-04-28,13129,13129,13096,,13129,,,,,,CION,2023-05-10
 "USALCO, LLC",First Lien,Chemicals & Materials,,,LIBOR,6%,,,2027-10-19,24688,24493,24441,,24493,,,,,,CION,2023-05-10
-"Williams Industrial Services Group, Inc.(n)",First Lien,Business Services,,,SOFR,11%,1.00%,,2025-12-16,7509,7509,7681,,7509,,,,,,CION,2023-05-10
+"Williams Industrial Services Group, Inc.",First Lien,Business Services,,,SOFR,11%,1.00%,,2025-12-16,7509,7509,7681,,7509,,,,,,CION,2023-05-10
 "Williams Industrial Services Group, Inc.",First Lien,Business Services,,,SOFR,11%,1.00%,,2025-12-16,429,429,686,,429,,,,,,CION,2023-05-10
 Wok Holdings Inc.,First Lien,Food & Beverage,,,LIBOR,6.5%,,,2026-03-01,25039,24329,22661,,24329,,,,,,CION,2023-05-10
 "WorkGenius, Inc.",First Lien,Business Services,,,SOFR,7%,0.50%,,2027-06-07,10411,10411,10411,,10411,,,,,,CION,2023-05-10
@@ -190,14 +188,14 @@ Global Tel*Link Corp.,Second Lien,Telecommunications,,,SOFR,10%,0.00%,,2026-11-2
 "TMK Hawk Parent, Corp.",Second Lien,Business Services,,,LIBOR,8%,,,2025-08-28,13393,13267,11350,,13267,,,,,,CION,2023-05-10
 APIDOS CLO XVI Subordinated Notes,Other Equity,Financial Services,0.00%,,,,,,2025-01-19,,1217,48,,1217,,,,9000,fair_value_suspicious_vs_size,CION,2023-05-10
 Galaxy XV CLO Ltd.,Other Equity,Financial Services,19.30%,,,,,,2025-04-15,,1389,1085,,1389,,,,4000,,CION,2023-05-10
-Lucky Bucks Holdings LLC,Unsecured Debt,Hospitality & Leisure,12.50%,,,,,,2028-05-29,23572,22860,8132,,22860,,,,,,CION,2023-05-10
+Lucky Bucks Holdings LLC,Unsecured Debt,Healthcare,12.50%,,,,,,2028-05-29,23572,22860,8132,,22860,,,,,,CION,2023-05-10
 WPLM Acquisition Corp.,Unsecured Debt,Media & Entertainment,15.00%,,,,,,2025-11-24,7623,7571,7385,,7571,,,,,,CION,2023-05-10
-"ARC Financial Partners, LLC, Membership Interests (25% ownership)",Other Equity,Chemicals & Materials,,,,,,,,,,,,,,,,,,CION,2023-05-10
+"ARC Financial Partners, LLC, Membership Interests",Other Equity,Chemicals & Materials,,,,,,,,,,,,,,,,,,CION,2023-05-10
 "Ascent Resources - Marcellus, LLC",Other Equity,Energy,,,,,,,,,1642,1074,,1642,,,,511255,,CION,2023-05-10
 "Carestream Health Holdings Inc., Common Stock",Other Equity,Healthcare,,,,,,,,,21758,19710,,21758,,,,613262,,CION,2023-05-10
 CF Arch Holdings LLC,Other Equity,Business Services,,,,,,,,,381,457,,381,,,,380952,,CION,2023-05-10
 "CION/EagleTree Partners, LLC, Participating Preferred Shares",Other Equity,Financial Services,,,,,,,,,22073,25764,,22073,,,,22072841,,CION,2023-05-10
-"CION/EagleTree Partners, LLC, Membership Units (85% ownership)(h)",Other Equity,Financial Services,,,,,,,,,,,,,,,,,,CION,2023-05-10
+"CION/EagleTree Partners, LLC, Membership Units",Other Equity,Financial Services,,,,,,,,,,,,,,,,,,CION,2023-05-10
 "DBI Investors, Inc., Series A1",Preferred Equity,Consumer & Retail,,,,,,,,,802,,,802,,,,20000,,CION,2023-05-10
 "DBI Investors, Inc., Series A2",Preferred Equity,Consumer & Retail,,,,,,,,,,,,,,,,1733,,CION,2023-05-10
 "DBI Investors, Inc., Series A",Preferred Equity,Consumer & Retail,,,,,,,,,140,,,140,,,,1396,,CION,2023-05-10
@@ -215,7 +213,7 @@ CF Arch Holdings LLC,Other Equity,Business Services,,,,,,,,,381,457,,381,,,,3809
 "Language Education Holdings GP LLC, Common Units",Other Equity,Business Services,,,,,,,,,,,,,,,,366667,,CION,2023-05-10
 "Language Education Holdings LP, Ordinary Common Units",Other Equity,Business Services,,,,,,,,,825,1287,,825,,,,366667,,CION,2023-05-10
 "Longview Intermediate Holdings C, LLC",Other Equity,Energy,,,,,,,,,2704,22680,,2704,,,,653989,,CION,2023-05-10
-"Mount Logan Capital Inc., Common Stock(f)",Other Equity,Insurance,,,,,,,,,3534,2204,,3534,,,,1075557,,CION,2023-05-10
+"Mount Logan Capital Inc., Common Stock",Other Equity,Insurance,,,,,,,,,3534,2204,,3534,,,,1075557,,CION,2023-05-10
 "New Giving Acquisition, Inc.",Warrants,Healthcare,,,,,,,,,633,1152,,633,,,,4630,,CION,2023-05-10
 "NS NWN Acquisition, LLC",Preferred Equity,Software & Technology,,,,,,,,,110,1028,,110,,,,111,,CION,2023-05-10
 "NS NWN Acquisition, LLC",Common Equity,Software & Technology,,,,,,,,,393,,,393,,,,346,,CION,2023-05-10
@@ -226,7 +224,7 @@ CF Arch Holdings LLC,Other Equity,Business Services,,,,,,,,,381,457,,381,,,,3809
 "Service Compression, LLC",Warrants,Energy,,,,,,,,,509,827,,509,,,,,,CION,2023-05-10
 "Snap Fitness Holdings, Inc., Class A Common Stock",Other Equity,Consumer & Retail,,,,,,,,,3078,5184,,3078,,,,9858,,CION,2023-05-10
 "Snap Fitness Holdings, Inc., Warrants",Other Equity,Consumer & Retail,,,,,,,,,1247,2101,,1247,,,,3996,,CION,2023-05-10
-"SRA Holdings, LLC, Membership Units(m)",Other Equity,Insurance,,,,,,,,,23611,23577,,23611,,,,224865,,CION,2023-05-10
+"SRA Holdings, LLC, Membership Units",Other Equity,Insurance,,,,,,,,,23611,23577,,23611,,,,224865,,CION,2023-05-10
 "STATinMed Parent, LLC, Class A Preferred Units",Other Equity,Healthcare,,,,,,,,,6182,3076,,6182,,,,6182,,CION,2023-05-10
 "STATinMed Parent, LLC, Class B Preferred Units",Other Equity,Healthcare,,,,,,,,,3193,,,3193,,,,51221,,CION,2023-05-10
 "WorkGenius, LLC",Other Equity,Business Services,,,,,,,,,500,512,,500,,,,500,,CION,2023-05-10

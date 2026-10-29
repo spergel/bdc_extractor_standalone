@@ -4,7 +4,7 @@
     "ticker": "PSBD",
     "scale": 1000,
     "median_ratio": 0.946,
-    "periods": 18,
+    "periods": 19,
     "with_reported": 16,
     "match": 7,
     "near": 5,
@@ -12,17 +12,17 @@
     "match_pct": 43.8,
     "trust": "bad",
     "latest": {
-      "filing_date": "2026-08-05",
-      "period_end": "2026-06-30",
+      "filing_date": "2026-10-29",
+      "period_end": "2026-09-30",
       "holdings_fv": 1120501.0,
       "row_count": 279,
-      "reported_fv": 1113377240.0,
-      "reported_fv_k": 1113377.24,
-      "delta_pct": 0.64,
-      "status": "match",
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
       "quality_flags": [],
-      "filing_url": "https://www.sec.gov/Archives/edgar/data/1794776/000119312526333791/psbd-20260630.htm",
-      "form": "10-Q"
+      "filing_url": null,
+      "form": null
     },
     "issue_periods": [
       {
@@ -346,6 +346,19 @@
       "quality_flags": [],
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1794776/000119312526333791/psbd-20260630.htm",
       "form": "10-Q"
+    },
+    {
+      "filing_date": "2026-10-29",
+      "period_end": "2026-09-30",
+      "holdings_fv": 1120501.0,
+      "row_count": 279,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [],
+      "filing_url": null,
+      "form": null
     }
   ]
 }

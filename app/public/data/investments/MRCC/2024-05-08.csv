@@ -4,7 +4,7 @@ company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,f
 Hastings Manufacturing Company,First Lien,Automotive,,,SOFR,7.60%,,2018-04-24,2025-12-30,1843,1843,1843,0.9%,1843,,,,,,MRCC,2024-05-08
 Hastings Manufacturing Company,First Lien,Automotive,,,SOFR,7.60%,,2023-03-29,2025-12-30,662,662,662,0.3%,662,,,,,,MRCC,2024-05-08
 Hastings Manufacturing Company,First Lien,Automotive,,,SOFR,7.60%,,2023-12-18,2025-12-30,2034,2019,2075,1.0%,2019,,,,,,MRCC,2024-05-08
-Hastings Manufacturing Company (Revolver),Revolver,Automotive,,,SOFR,7.60%,,2023-03-29,2025-12-30,691,,,0.0%,,,,,,,MRCC,2024-05-08
+Hastings Manufacturing Company,Revolver,Automotive,,,SOFR,7.60%,,2023-03-29,2025-12-30,691,,,0.0%,,,,,,,MRCC,2024-05-08
 "Lifted Trucks Holdings, LLC",First Lien,Automotive,,,SOFR,5.85%,,2021-08-02,2027-08-02,6843,6759,6702,3.3%,6759,,,,,,MRCC,2024-05-08
 "Lifted Trucks Holdings, LLC",Revolver,Automotive,,,SOFR,5.90%,,2021-08-02,2027-08-02,1667,889,871,0.5%,889,,,,,,MRCC,2024-05-08
 "Panda Acquisition, LLC",First Lien,Automotive,,,SOFR,6.35%,,2022-12-20,2028-10-18,4359,3689,3716,1.9%,3689,,,,,,MRCC,2024-05-08
@@ -52,8 +52,8 @@ W3 Monroe RE Debt LLC,First Lien,Financial Services,,10.00%,,,,2021-02-05,2028-0
 W3 Monroe RE Debt LLC,Delayed Draw,Financial Services,,10.00%,,,,2023-03-31,2028-02-04,274,226,231,0.1%,226,,,,,,MRCC,2024-05-08
 Centaur (Palm Beach) Owner LLC,First Lien,Real Estate,,,SOFR,8.25%,,2022-05-03,2025-04-30,2784,2761,2805,1.4%,2761,,,,,,MRCC,2024-05-08
 Centaur (Palm Beach) Owner LLC,First Lien,Real Estate,,,SOFR,8.25%,,2022-05-03,2025-04-30,285,285,287,0.2%,285,,,,,,MRCC,2024-05-08
-Centaur (Palm Beach) Owner LLC and Panther National Golf Club LLC,Delayed Draw,Real Estate,,,SOFR,8.25%,,2023-10-06,2027-04-30,837,474,478,0.2%,474,,,,,,MRCC,2024-05-08
-Centaur (Palm Beach) Owner LLC and Panther National Golf Club LLC,Revolver,Real Estate,,,SOFR,8.25%,,2022-05-03,2025-04-30,1395,656,656,0.3%,656,,,,,,MRCC,2024-05-08
+Centaur (Palm Beach) Owner LLC,Delayed Draw,Real Estate,,,SOFR,8.25%,,2023-10-06,2027-04-30,837,474,478,0.2%,474,,,,,,MRCC,2024-05-08
+Centaur (Palm Beach) Owner LLC,Revolver,Real Estate,,,SOFR,8.25%,,2022-05-03,2025-04-30,1395,656,656,0.3%,656,,,,,,MRCC,2024-05-08
 "Bluesight, Inc.",First Lien,Healthcare,,,SOFR,7.25%,,2023-07-17,2029-07-17,2000,1945,1998,1.0%,1945,,,,,,MRCC,2024-05-08
 "Bluesight, Inc.",Revolver,Healthcare,,,SOFR,7.25%,,2023-07-17,2029-07-17,174,,,0.0%,,,,,,,MRCC,2024-05-08
 Brickell Bay Acquisition Corp.,First Lien,Healthcare,,,SOFR,6.65%,,2021-02-12,2026-02-12,1856,1833,1856,0.9%,1833,,,,,,MRCC,2024-05-08
@@ -247,7 +247,7 @@ Arcserve Cayman Opco LP,Common Equity,Software & Technology,,,,,,2024-01-02,,,,9
 "Planful, Inc.",Common Equity,Software & Technology,,,,,,2023-05-03,,,,24,0.0%,,,,,,,MRCC,2024-05-08
 "Recorded Future, Inc.",Common Equity,Software & Technology,,,,,,2019-07-03,,,81,268,0.1%,81,,,,,,MRCC,2024-05-08
 "Sparq Holdings, Inc.",Common Equity,Software & Technology,,,,,,2023-06-15,,,300,317,0.2%,300,,,,,,MRCC,2024-05-08
-"Equine Network, LLC",Common Equity,Hospitality & Leisure,,,,,,2020-12-31,,,111,140,0.1%,111,,,,,,MRCC,2024-05-08
+"Equine Network, LLC",Common Equity,Healthcare,,,,,,2020-12-31,,,111,140,0.1%,111,,,,,,MRCC,2024-05-08
 "AdTheorent Holding Company, Inc.",Common Equity,Media & Entertainment,,,,,,2016-12-22,,,114,569,0.3%,114,,,,,,MRCC,2024-05-08
 "InMobi Pte, Ltd.",Warrants,Media & Entertainment,,,,,,2015-09-18,2025-09-18,,,1763,0.9%,,,,,,,MRCC,2024-05-08
 "Relevate Health Group, LLC",Preferred Equity,Media & Entertainment,,12.00%,,,,2020-11-20,,,40,17,0.0%,40,,,,,,MRCC,2024-05-08
@@ -291,5 +291,5 @@ TJ Management HoldCo LLC,Common Equity,Food & Beverage,,,,,,2020-09-09,,,1631,33
 "SFR Holdco, LLC",Other Equity,"American Community Homes, Inc. (4,940 shares of common stock)",,,,,,2021-08-06,,,3900,4446,2.2%,3900,,,,,,MRCC,2024-05-08
 "Ascent Midco, LLC",Common Equity,Healthcare,,8.00%,,,,2020-02-05,,,2032,1652,0.8%,2032,,,,,,MRCC,2024-05-08
 "Familia Dental Group Holdings, LLC",Common Equity,Healthcare,,,,,,2016-04-08,,,4467,2363,1.2%,4467,,,,,,MRCC,2024-05-08
-"NECB Collections, LLC (20.8% of LLC",Other Equity,Consumer & Retail,,,,,,2019-06-21,,,1458,,0.0%,1458,,,,,,MRCC,2024-05-08
+"NECB Collections, LLC",Other Equity,Consumer & Retail,,,,,,2019-06-21,,,1458,,0.0%,1458,,,,,,MRCC,2024-05-08
 "MRCC Senior Loan Fund I, LLC",Other Equity,Consumer & Retail,,,,,,2017-10-31,,,42650,32990,16.4%,42650,,,,,,MRCC,2024-05-08

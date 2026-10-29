@@ -30,8 +30,8 @@
     {
       "filing_date": "2017-11-01",
       "period_end": "2017-09-30",
-      "holdings_fv": 747743.0,
-      "row_count": 114,
+      "holdings_fv": 784533.0,
+      "row_count": 117,
       "reported_fv": null,
       "reported_fv_k": null,
       "delta_pct": null,
@@ -62,21 +62,23 @@
       "reported_fv_k": null,
       "delta_pct": null,
       "status": "no_reported",
-      "quality_flags": [],
+      "quality_flags": [
+        "Fair value is 0.70x the trailing median (possible units/gap issue)"
+      ],
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1321741/000119312518164066/d588089d10k.htm",
       "form": "10-K"
     },
     {
       "filing_date": "2018-08-01",
       "period_end": "2018-06-30",
-      "holdings_fv": 1070063.0,
-      "row_count": 135,
+      "holdings_fv": 1083363.0,
+      "row_count": 136,
       "reported_fv": null,
       "reported_fv_k": null,
       "delta_pct": null,
       "status": "no_reported",
       "quality_flags": [
-        "Fair value is 1.43x the trailing median (possible annual/unit issue)"
+        "Fair value is 1.38x the trailing median (possible annual/unit issue)"
       ],
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1321741/000119312518234910/d583629d10q.htm",
       "form": "10-Q"

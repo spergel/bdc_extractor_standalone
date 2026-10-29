@@ -4,7 +4,7 @@ company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,f
 Hastings Manufacturing Company,First Lien,Automotive,,,SOFR,7.60%,,2018-04-24,2025-12-31,1850,1850,1850,0.9%,1850,,,,,,MRCC,2024-03-11
 Hastings Manufacturing Company,First Lien,Automotive,,,SOFR,7.60%,,2023-03-29,2025-12-31,664,664,664,0.3%,664,,,,,,MRCC,2024-03-11
 Hastings Manufacturing Company,First Lien,Automotive,,,SOFR,7.60%,,2023-12-18,2025-12-31,2039,2019,2080,1.0%,2019,,,,,,MRCC,2024-03-11
-Hastings Manufacturing Company (Revolver),Revolver,Automotive,,,SOFR,7.60%,,2023-03-29,2025-12-31,691,,,0.0%,,,,,,,MRCC,2024-03-11
+Hastings Manufacturing Company,Revolver,Automotive,,,SOFR,7.60%,,2023-03-29,2025-12-31,691,,,0.0%,,,,,,,MRCC,2024-03-11
 "Lifted Trucks Holdings, LLC",First Lien,Automotive,,,SOFR,5.85%,,2021-08-02,2027-08-02,6860,6770,6682,3.3%,6770,,,,,,MRCC,2024-03-11
 "Lifted Trucks Holdings, LLC",Revolver,Automotive,,,SOFR,5.90%,,2021-08-02,2027-08-02,1667,556,541,0.3%,556,,,,,,MRCC,2024-03-11
 "Panda Acquisition, LLC",First Lien,Automotive,,,SOFR,6.35%,,2022-12-20,2028-10-18,4388,3688,3707,1.8%,3688,,,,,,MRCC,2024-03-11
@@ -51,8 +51,8 @@ W3 Monroe RE Debt LLC,First Lien,Financial Services,,10.00%,,,,2021-02-05,2028-0
 W3 Monroe RE Debt LLC,Delayed Draw,Financial Services,,10.00%,,,,2023-03-31,2028-02-04,270,172,176,0.1%,172,,,,,,MRCC,2024-03-11
 Centaur (Palm Beach) Owner LLC,First Lien,Real Estate,,,SOFR,8.25%,,2022-05-03,2025-04-30,2784,2755,2812,1.4%,2755,,,,,,MRCC,2024-03-11
 Centaur (Palm Beach) Owner LLC,First Lien,Real Estate,,,SOFR,8.25%,,2022-05-03,2025-04-30,285,285,287,0.1%,285,,,,,,MRCC,2024-03-11
-Centaur (Palm Beach) Owner LLC and Panther National Golf Club LLC,Delayed Draw,Real Estate,,,SOFR,8.25%,,2023-10-06,2027-04-30,837,317,322,0.1%,317,,,,,,MRCC,2024-03-11
-Centaur (Palm Beach) Owner LLC and Panther National Golf Club LLC,Revolver,Real Estate,,,SOFR,8.25%,,2022-05-03,2025-04-30,1395,546,546,0.3%,546,,,,,,MRCC,2024-03-11
+Centaur (Palm Beach) Owner LLC,Delayed Draw,Real Estate,,,SOFR,8.25%,,2023-10-06,2027-04-30,837,317,322,0.1%,317,,,,,,MRCC,2024-03-11
+Centaur (Palm Beach) Owner LLC,Revolver,Real Estate,,,SOFR,8.25%,,2022-05-03,2025-04-30,1395,546,546,0.3%,546,,,,,,MRCC,2024-03-11
 "Bluesight, Inc.",First Lien,Healthcare,,,SOFR,7.25%,,2023-07-17,2029-07-17,2000,1942,1996,1.0%,1942,,,,,,MRCC,2024-03-11
 "Bluesight, Inc.",Revolver,Healthcare,,,SOFR,7.25%,,2023-07-17,2029-07-17,174,,,0.0%,,,,,,,MRCC,2024-03-11
 Brickell Bay Acquisition Corp.,First Lien,Healthcare,,,SOFR,6.65%,,2021-02-12,2026-02-12,1861,1836,1861,0.9%,1836,,,,,,MRCC,2024-03-11
@@ -233,7 +233,7 @@ NQ PE Project Colosseum Midco Inc.,Common Equity,"Bluesight, Inc. (11,087 Class 
 "Planful, Inc.",Common Equity,Software & Technology,,,,,,2023-05-03,,,,23,0.0%,,,,,,,MRCC,2024-03-11
 "Recorded Future, Inc.",Common Equity,Software & Technology,,,,,,2019-07-03,,,81,261,0.1%,81,,,,,,MRCC,2024-03-11
 "Sparq Holdings, Inc.",Common Equity,Software & Technology,,,,,,2023-06-15,,,300,312,0.2%,300,,,,,,MRCC,2024-03-11
-"Equine Network, LLC",Common Equity,Hospitality & Leisure,,,,,,2020-12-31,,,111,110,0.1%,111,,,,,,MRCC,2024-03-11
+"Equine Network, LLC",Common Equity,Healthcare,,,,,,2020-12-31,,,111,110,0.1%,111,,,,,,MRCC,2024-03-11
 "AdTheorent Holding Company, Inc.",Common Equity,Media & Entertainment,,,,,,2016-12-22,,,114,257,0.1%,114,,,,,,MRCC,2024-03-11
 "InMobi Pte, Ltd.",Warrants,Media & Entertainment,,,,,,2015-09-18,2025-09-18,,,1695,0.8%,,,,,,,MRCC,2024-03-11
 "Relevate Health Group, LLC",Preferred Equity,Media & Entertainment,,12.00%,,,,2020-11-20,,,40,19,0.0%,40,,,,,,MRCC,2024-03-11
@@ -277,14 +277,14 @@ TJ Management HoldCo LLC,Common Equity,Food & Beverage,,,,,,2020-09-09,,,1631,32
 "SFR Holdco, LLC",Other Equity,"American Community Homes, Inc. (4,940 shares of common stock)",,,,,,2021-08-06,,,3900,4372,2.1%,3900,,,,,,MRCC,2024-03-11
 "Ascent Midco, LLC",Common Equity,Healthcare,,8.00%,,,,2020-02-05,,,2032,1932,0.9%,2032,,,,,,MRCC,2024-03-11
 "Familia Dental Group Holdings, LLC",Common Equity,Healthcare,,,,,,2016-04-08,,,4213,2226,1.1%,4213,,,,,,MRCC,2024-03-11
-"NECB Collections, LLC (20.8% of LLC",Other Equity,Consumer & Retail,,,,,,2019-06-21,,,1458,,0.0%,1458,,,,,,MRCC,2024-03-11
+"NECB Collections, LLC",Other Equity,Consumer & Retail,,,,,,2019-06-21,,,1458,,0.0%,1458,,,,,,MRCC,2024-03-11
 "MRCC Senior Loan Fund I, LLC",Other Equity,Consumer & Retail,,,,,,2017-10-31,,,42650,33122,16.3%,42650,,,,,,MRCC,2024-03-11
 "Born To Run, LLC",First Lien,Automotive,11.57%,,SOFR,6.26%,,2021-04-01,2027-04-01,3430,3387,1752,0.9%,3387,,,,,,MRCC,2024-05-08
 "Born To Run, LLC",First Lien,Automotive,11.57%,,SOFR,6.26%,,2021-04-01,2027-04-01,467,467,239,0.1%,467,,,,,,MRCC,2024-05-08
 Hastings Manufacturing Company,First Lien,Automotive,,,SOFR,7.60%,,2018-04-24,2025-12-30,1843,1843,1843,0.9%,1843,,,,,,MRCC,2024-05-08
 Hastings Manufacturing Company,First Lien,Automotive,,,SOFR,7.60%,,2023-03-29,2025-12-30,662,662,662,0.3%,662,,,,,,MRCC,2024-05-08
 Hastings Manufacturing Company,First Lien,Automotive,,,SOFR,7.60%,,2023-12-18,2025-12-30,2034,2019,2075,1.0%,2019,,,,,,MRCC,2024-05-08
-Hastings Manufacturing Company (Revolver),Revolver,Automotive,,,SOFR,7.60%,,2023-03-29,2025-12-30,691,,,0.0%,,,,,,,MRCC,2024-05-08
+Hastings Manufacturing Company,Revolver,Automotive,,,SOFR,7.60%,,2023-03-29,2025-12-30,691,,,0.0%,,,,,,,MRCC,2024-05-08
 "Lifted Trucks Holdings, LLC",First Lien,Automotive,,,SOFR,5.85%,,2021-08-02,2027-08-02,6843,6759,6702,3.3%,6759,,,,,,MRCC,2024-05-08
 "Lifted Trucks Holdings, LLC",Revolver,Automotive,,,SOFR,5.90%,,2021-08-02,2027-08-02,1667,889,871,0.5%,889,,,,,,MRCC,2024-05-08
 "Panda Acquisition, LLC",First Lien,Automotive,,,SOFR,6.35%,,2022-12-20,2028-10-18,4359,3689,3716,1.9%,3689,,,,,,MRCC,2024-05-08
@@ -332,8 +332,8 @@ W3 Monroe RE Debt LLC,First Lien,Financial Services,,10.00%,,,,2021-02-05,2028-0
 W3 Monroe RE Debt LLC,Delayed Draw,Financial Services,,10.00%,,,,2023-03-31,2028-02-04,274,226,231,0.1%,226,,,,,,MRCC,2024-05-08
 Centaur (Palm Beach) Owner LLC,First Lien,Real Estate,,,SOFR,8.25%,,2022-05-03,2025-04-30,2784,2761,2805,1.4%,2761,,,,,,MRCC,2024-05-08
 Centaur (Palm Beach) Owner LLC,First Lien,Real Estate,,,SOFR,8.25%,,2022-05-03,2025-04-30,285,285,287,0.2%,285,,,,,,MRCC,2024-05-08
-Centaur (Palm Beach) Owner LLC and Panther National Golf Club LLC,Delayed Draw,Real Estate,,,SOFR,8.25%,,2023-10-06,2027-04-30,837,474,478,0.2%,474,,,,,,MRCC,2024-05-08
-Centaur (Palm Beach) Owner LLC and Panther National Golf Club LLC,Revolver,Real Estate,,,SOFR,8.25%,,2022-05-03,2025-04-30,1395,656,656,0.3%,656,,,,,,MRCC,2024-05-08
+Centaur (Palm Beach) Owner LLC,Delayed Draw,Real Estate,,,SOFR,8.25%,,2023-10-06,2027-04-30,837,474,478,0.2%,474,,,,,,MRCC,2024-05-08
+Centaur (Palm Beach) Owner LLC,Revolver,Real Estate,,,SOFR,8.25%,,2022-05-03,2025-04-30,1395,656,656,0.3%,656,,,,,,MRCC,2024-05-08
 "Bluesight, Inc.",First Lien,Healthcare,,,SOFR,7.25%,,2023-07-17,2029-07-17,2000,1945,1998,1.0%,1945,,,,,,MRCC,2024-05-08
 "Bluesight, Inc.",Revolver,Healthcare,,,SOFR,7.25%,,2023-07-17,2029-07-17,174,,,0.0%,,,,,,,MRCC,2024-05-08
 Brickell Bay Acquisition Corp.,First Lien,Healthcare,,,SOFR,6.65%,,2021-02-12,2026-02-12,1856,1833,1856,0.9%,1833,,,,,,MRCC,2024-05-08
@@ -527,7 +527,7 @@ Arcserve Cayman Opco LP,Common Equity,Software & Technology,,,,,,2024-01-02,,,,9
 "Planful, Inc.",Common Equity,Software & Technology,,,,,,2023-05-03,,,,24,0.0%,,,,,,,MRCC,2024-05-08
 "Recorded Future, Inc.",Common Equity,Software & Technology,,,,,,2019-07-03,,,81,268,0.1%,81,,,,,,MRCC,2024-05-08
 "Sparq Holdings, Inc.",Common Equity,Software & Technology,,,,,,2023-06-15,,,300,317,0.2%,300,,,,,,MRCC,2024-05-08
-"Equine Network, LLC",Common Equity,Hospitality & Leisure,,,,,,2020-12-31,,,111,140,0.1%,111,,,,,,MRCC,2024-05-08
+"Equine Network, LLC",Common Equity,Healthcare,,,,,,2020-12-31,,,111,140,0.1%,111,,,,,,MRCC,2024-05-08
 "AdTheorent Holding Company, Inc.",Common Equity,Media & Entertainment,,,,,,2016-12-22,,,114,569,0.3%,114,,,,,,MRCC,2024-05-08
 "InMobi Pte, Ltd.",Warrants,Media & Entertainment,,,,,,2015-09-18,2025-09-18,,,1763,0.9%,,,,,,,MRCC,2024-05-08
 "Relevate Health Group, LLC",Preferred Equity,Media & Entertainment,,12.00%,,,,2020-11-20,,,40,17,0.0%,40,,,,,,MRCC,2024-05-08
@@ -571,7 +571,7 @@ TJ Management HoldCo LLC,Common Equity,Food & Beverage,,,,,,2020-09-09,,,1631,33
 "SFR Holdco, LLC",Other Equity,"American Community Homes, Inc. (4,940 shares of common stock)",,,,,,2021-08-06,,,3900,4446,2.2%,3900,,,,,,MRCC,2024-05-08
 "Ascent Midco, LLC",Common Equity,Healthcare,,8.00%,,,,2020-02-05,,,2032,1652,0.8%,2032,,,,,,MRCC,2024-05-08
 "Familia Dental Group Holdings, LLC",Common Equity,Healthcare,,,,,,2016-04-08,,,4467,2363,1.2%,4467,,,,,,MRCC,2024-05-08
-"NECB Collections, LLC (20.8% of LLC",Other Equity,Consumer & Retail,,,,,,2019-06-21,,,1458,,0.0%,1458,,,,,,MRCC,2024-05-08
+"NECB Collections, LLC",Other Equity,Consumer & Retail,,,,,,2019-06-21,,,1458,,0.0%,1458,,,,,,MRCC,2024-05-08
 "MRCC Senior Loan Fund I, LLC",Other Equity,Consumer & Retail,,,,,,2017-10-31,,,42650,32990,16.4%,42650,,,,,,MRCC,2024-05-08
 Hastings Manufacturing Company,First Lien,Automotive,,,SOFR,7.60%,,2018-04-24,2025-12-30,1835,1835,1835,0.9%,1835,,,,,,MRCC,2024-08-07
 Hastings Manufacturing Company,First Lien,Automotive,,,SOFR,7.60%,,2023-03-29,2025-12-30,660,660,660,0.3%,660,,,,,,MRCC,2024-08-07
@@ -821,7 +821,7 @@ Arcserve Cayman Opco LP,Common Equity,Software & Technology,,,,,,2024-01-02,,,,9
 "Planful, Inc.",Common Equity,Software & Technology,,,,,,2023-05-03,,,,44,0.0%,,,,,,,MRCC,2024-08-07
 "Recorded Future, Inc.",Common Equity,Software & Technology,,,,,,2019-07-03,,,81,254,0.1%,81,,,,,,MRCC,2024-08-07
 "Sparq Holdings, Inc.",Common Equity,Software & Technology,,,,,,2023-06-15,,,300,320,0.2%,300,,,,,,MRCC,2024-08-07
-"Equine Network, LLC",Common Equity,Hospitality & Leisure,,,,,,2020-12-31,,,111,147,0.1%,111,,,,,,MRCC,2024-08-07
+"Equine Network, LLC",Common Equity,Healthcare,,,,,,2020-12-31,,,111,147,0.1%,111,,,,,,MRCC,2024-08-07
 "InMobi Pte, Ltd.",Warrants,Media & Entertainment,,,,,,2015-09-18,2025-09-18,,,1716,0.9%,,,,,,,MRCC,2024-08-07
 "Relevate Health Group, LLC",Preferred Equity,Media & Entertainment,,12.00%,,,,2020-11-20,,,40,31,0.0%,40,,,,,,MRCC,2024-08-07
 Spherix Global Inc.,Common Equity,"Relevate Health Group, LLC (40 Class B common units)",,,,,,2024-06-10,,,10,14,0.0%,10,,,,,,MRCC,2024-08-07
@@ -1107,7 +1107,7 @@ Arcserve Cayman Opco LP,Common Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco
 "Recorded Future, Inc.",Common Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco, LLC) (110,294 Class B common units)",,,,,,2019-07-03,,,81,197,0.1%,81,,,,,,MRCC,2024-11-12
 "SoundHound AI, Inc.",Common Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco, LLC) (110,294 Class B common units)",,,,,,2024-08-07,,,419,365,0.2%,419,,,,,,MRCC,2024-11-12
 "Sparq Holdings, Inc.",Common Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco, LLC) (110,294 Class B common units)",,,,,,2023-06-15,,,300,339,0.2%,300,,,,,,MRCC,2024-11-12
-"Equine Network, LLC",Common Equity,Hospitality & Leisure,,,,,,2020-12-31,,,111,124,0.1%,111,,,,,,MRCC,2024-11-12
+"Equine Network, LLC",Common Equity,Healthcare,,,,,,2020-12-31,,,111,124,0.1%,111,,,,,,MRCC,2024-11-12
 "InMobi Pte, Ltd.",Warrants,Media & Entertainment,,,,,,2015-09-18,2025-09-18,,,1546,0.8%,,,,,,,MRCC,2024-11-12
 "Relevate Health Group, LLC",Preferred Equity,Media & Entertainment,,12.00%,,,,2020-11-20,,,40,26,0.0%,40,,,,,,MRCC,2024-11-12
 Spherix Global Inc.,Common Equity,"Relevate Health Group, LLC (40 Class B common units)",,,,,,2024-06-10,,,10,3,0.0%,10,,,,,,MRCC,2024-11-12
@@ -1387,7 +1387,7 @@ Arcserve Cayman Opco LP,Common Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco
 "Planful, Inc.",Common Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco, LLC) (110,294 Class B common units)",,,,,,2023-05-03,,,,53,0.0%,,,,,,,MRCC,2025-02-28
 "Recorded Future, Inc.",Common Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco, LLC) (110,294 Class B common units)",,,,,,2019-07-03,,,49,186,0.1%,49,,,,,,MRCC,2025-02-28
 "Sparq Holdings, Inc.",Common Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco, LLC) (110,294 Class B common units)",,,,,,2023-06-15,,,300,323,0.2%,300,,,,,,MRCC,2025-02-28
-"Equine Network, LLC",Common Equity,Hospitality & Leisure,,,,,,2020-12-31,,,111,144,0.1%,111,,,,,,MRCC,2025-02-28
+"Equine Network, LLC",Common Equity,Healthcare,,,,,,2020-12-31,,,111,144,0.1%,111,,,,,,MRCC,2025-02-28
 "InMobi Pte, Ltd.",Warrants,Media & Entertainment,,,,,,2015-09-18,2025-09-18,,,1388,0.7%,,,,,,,MRCC,2025-02-28
 "Relevate Health Group, LLC",Preferred Equity,Media & Entertainment,,12.00%,,,,2020-11-20,,,40,26,0.0%,40,,,,,,MRCC,2025-02-28
 "Relevate Health Group, LLC",Preferred Equity,Media & Entertainment,,12.00%,,,,2024-11-14,,,6,6,0.0%,6,,,,,,MRCC,2025-02-28
@@ -1664,7 +1664,7 @@ Arcserve Cayman Opco LP,Common Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco
 "Planful, Inc.",Common Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco, LLC) (110,294 Class B common units)",,,,,,2023-05-03,,,,49,0.0%,,,,,,,MRCC,2025-05-07
 "Recorded Future, Inc.",Common Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco, LLC) (110,294 Class B common units)",,,,,,2019-07-03,,,,13,0.0%,,,,,,,MRCC,2025-05-07
 "Sparq Holdings, Inc.",Common Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco, LLC) (110,294 Class B common units)",,,,,,2023-06-15,,,300,253,0.1%,300,,,,,,MRCC,2025-05-07
-"Equine Network, LLC",Common Equity,Hospitality & Leisure,,,,,,2020-12-31,,,111,132,0.1%,111,,,,,,MRCC,2025-05-07
+"Equine Network, LLC",Common Equity,Healthcare,,,,,,2020-12-31,,,111,132,0.1%,111,,,,,,MRCC,2025-05-07
 "InMobi Pte, Ltd.",Warrants,Media & Entertainment,,,,,,2015-09-18,2025-09-18,,,1326,0.7%,,,,,,,MRCC,2025-05-07
 "Relevate Health Group, LLC",Preferred Equity,Media & Entertainment,,12.00%,,,,2020-11-20,,,40,23,0.0%,40,,,,,,MRCC,2025-05-07
 "Relevate Health Group, LLC",Preferred Equity,Media & Entertainment,,12.00%,,,,2024-11-14,,,6,6,0.0%,6,,,,,,MRCC,2025-05-07
@@ -1913,7 +1913,7 @@ Arcserve Cayman Opco LP,Common Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco
 "Planful, Inc.",Common Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco, LLC) (110,294 Class B common units)",,,,,,2023-05-03,,,,52,0.0%,,,,,,,MRCC,2025-08-11
 "Recorded Future, Inc.",Common Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco, LLC) (110,294 Class B common units)",,,,,,2019-07-03,,,,13,0.0%,,,,,,,MRCC,2025-08-11
 "Sparq Holdings, Inc.",Common Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco, LLC) (110,294 Class B common units)",,,,,,2023-06-15,,,300,186,0.1%,300,,,,,,MRCC,2025-08-11
-"Equine Network, LLC",Common Equity,Hospitality & Leisure,,,,,,2020-12-31,,,111,151,0.1%,111,,,,,,MRCC,2025-08-11
+"Equine Network, LLC",Common Equity,Healthcare,,,,,,2020-12-31,,,111,151,0.1%,111,,,,,,MRCC,2025-08-11
 "InMobi Pte, Ltd.",Warrants,Media & Entertainment,,,,,,2015-09-18,2025-09-18,,,1326,0.7%,,,,,,,MRCC,2025-08-11
 "Relevate Health Group, LLC",Preferred Equity,Media & Entertainment,,12.00%,,,,2020-11-20,,,40,15,0.0%,40,,,,,,MRCC,2025-08-11
 "Relevate Health Group, LLC",Preferred Equity,Media & Entertainment,,12.00%,,,,2024-11-14,,,6,6,0.0%,6,,,,,,MRCC,2025-08-11
@@ -2160,7 +2160,7 @@ Arcserve Cayman Opco LP,Common Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco
 "Recorded Future, Inc.",Common Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco, LLC) (110,294 Class B common units)",,,,,,2019-07-03,,,,14,0.0%,,,,,,,MRCC,2025-11-05
 "Sparq Holdings, Inc.",Preferred Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco, LLC) (110,294 Class B common units)",,,,,,2025-09-19,,,42,84,0.0%,42,,,,,,MRCC,2025-11-05
 "Sparq Holdings, Inc.",Common Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco, LLC) (110,294 Class B common units)",,,,,,2023-06-15,,,300,85,0.0%,300,,,,,,MRCC,2025-11-05
-"Equine Network, LLC",Common Equity,Hospitality & Leisure,,,,,,2020-12-31,,,111,166,0.1%,111,,,,,,MRCC,2025-11-05
+"Equine Network, LLC",Common Equity,Healthcare,,,,,,2020-12-31,,,111,166,0.1%,111,,,,,,MRCC,2025-11-05
 "InMobi Pte, Ltd.",Warrants,Media & Entertainment,,,,,,2015-09-18,2025-09-18,,,1583,0.9%,,,,,,,MRCC,2025-11-05
 "Relevate Health Group, LLC",Preferred Equity,Media & Entertainment,,12.00%,,,,2020-11-20,,,40,22,0.0%,40,,,,,,MRCC,2025-11-05
 "Relevate Health Group, LLC",Preferred Equity,Media & Entertainment,,12.00%,,,,2024-11-14,,,6,6,0.0%,6,,,,,,MRCC,2025-11-05
@@ -2411,7 +2411,7 @@ Arcserve Cayman Opco LP,Common Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco
 "Recorded Future, Inc.",Common Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco, LLC) (110,294 Class B common units)",,,,,,2019-07-03,,,,1,0.0%,,,,,,,MRCC,2026-03-05
 "Sparq Holdings, Inc.",Preferred Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco, LLC) (110,294 Class B common units)",,,,,,2025-09-19,,,42,84,0.1%,42,,,,,,MRCC,2026-03-05
 "Sparq Holdings, Inc.",Common Equity,"Arcserve Cayman GP LLC (fka Arcstor Midco, LLC) (110,294 Class B common units)",,,,,,2023-06-15,,,300,35,0.0%,300,,,,,,MRCC,2026-03-05
-"Equine Network, LLC",Common Equity,Hospitality & Leisure,,,,,,2020-12-31,,,111,142,0.1%,111,,,,,,MRCC,2026-03-05
+"Equine Network, LLC",Common Equity,Healthcare,,,,,,2020-12-31,,,111,142,0.1%,111,,,,,,MRCC,2026-03-05
 "InMobi Pte, Ltd.",Warrants,Media & Entertainment,,,,,,2015-09-18,2025-09-18,,,924,0.6%,,,,,,,MRCC,2026-03-05
 "Relevate Health Group, LLC",Preferred Equity,Media & Entertainment,,12.00%,,,,2020-11-20,,,40,40,0.0%,40,,,,,,MRCC,2026-03-05
 "Relevate Health Group, LLC",Preferred Equity,Media & Entertainment,,12.00%,,,,2024-11-14,,,6,6,0.0%,6,,,,,,MRCC,2026-03-05

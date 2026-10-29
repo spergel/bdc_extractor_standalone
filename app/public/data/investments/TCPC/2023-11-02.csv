@@ -1,31 +1,31 @@
-company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags
-"ALCV Purchaser, Inc.",First Lien,Automotive,12.18%,,SOFR,,1.00%,,2026-04-15,6012.603,5956.83,5856.275,,5956.83,,,,,
-"ALCV Purchaser, Inc.",Revolver,Automotive,12.18%,,SOFR,,1.00%,,2026-04-15,662.974,657.903,645.737,,657.903,,,,,
-"AutoAlert, LLC",First Lien,Automotive,10.65%,,SOFR,,1.00%,,2028-03-31,18812.631,18812.631,18812.631,,18812.631,,,,,
-"AutoAlert, LLC",Second Lien,Automotive,10.65%,,SOFR,,1.00%,,2029-03-31,8915.522,8915.522,8915.522,,8915.522,,,,,
-Porcelain Acquisition Corp.,First Lien,Industrials,11.49%,,SOFR,,1.00%,,2027-04-30,6150.558,6069.222,5916.836,,6069.222,,,,,
-Porcelain Acquisition Corp.,First Lien,Industrials,11.49%,,SOFR,,1.00%,,2027-04-30,930.849,918.987,895.477,,918.987,,,,,
-"Pico Quantitative Trading, LLC",First Lien,Financial Services,12.92%,,SOFR,,1.50%,,2025-02-07,21791.007,21485.635,21987.126,,21485.635,,,,,
-"Pico Quantitative Trading, LLC",First Lien,Financial Services,12.88%,,SOFR,,1.50%,,2025-02-07,24415.87,23826.256,24415.87,,23826.256,,,,,
-"Modigent, LLC",First Lien,Business Services,11.38%,,SOFR,,0.75%,,2028-08-23,358.875,351.393,353.097,,351.393,,,,,
-"Modigent, LLC",First Lien,Business Services,11.39%,,SOFR,,0.75%,,2028-08-23,196.4,191.046,192.395,,191.046,,,,,
-"Modigent, LLC",Revolver,Business Services,13.50%,,Prime,,0.75%,,2027-08-23,19.583,18.402,18.649,,18.402,,,,,
-"Thermostat Purchaser III, Inc.",Second Lien,Business Services,12.82%,,SOFR,,0.75%,,2029-08-31,7767.802,7673.276,7371.644,,7673.276,,,,,
-Plate Newco 1 Ltd.,First Lien,Telecommunications,12.50%,12.50%,LIBOR,,,,2023-10-13,88.455,58.35,,,58.35,,,,,
-Plate Newco 1 Ltd.,First Lien,Telecommunications,12.50%,12.50%,LIBOR,,,,2023-10-13,265.368,174.283,,,174.283,,,,,
-Plate Newco 1 Ltd.,First Lien,Telecommunications,12.50%,12.50%,LIBOR,,,,2023-10-13,1071.041,650.88,,,650.88,,,,,
-Plate Newco 1 Ltd.,First Lien,Telecommunications,12.50%,12.50%,LIBOR,,,,2023-10-13,315.185,198.154,,,198.154,,,,,
-"CSG Buyer, Inc.",Revolver,Industrials,11.65%,,SOFR,,1.00%,,2028-03-31,,,,,,,,,,
-"CSG Buyer, Inc.",First Lien,Industrials,11.65%,,SOFR,,1.00%,,2028-03-31,8847.846,8670.889,8476.236,,8670.889,,,,,
-Geo Parent Corp.,First Lien,Industrials,10.80%,,SOFR,,,,2025-12-29,2194.165,2158.758,2155.767,,2158.758,,,,,
-"Homerenew Buyer, Inc.",First Lien,Industrials,12.02%,,SOFR,,1.00%,,2027-11-23,3600.994,3539.659,3485.762,,3539.659,,,,,
-"Homerenew Buyer, Inc.",First Lien,Industrials,12.02%,,SOFR,,1.00%,,2027-11-23,1682.273,1651.681,1628.44,,1651.681,,,,,
-"Homerenew Buyer, Inc.",Revolver,Industrials,12.01%,,SOFR,,1.00%,,2027-11-23,552.386,540.847,530.29,,540.847,,,,,
-"Hylan Intermediate Holding II, LLC",Second Lien,Industrials,15.47%,,SOFR,,1.00%,,2027-03-11,5146.471,4981.761,5141.839,,4981.761,,,,,
-"Hylan Intermediate Holding II, LLC",First Lien,Industrials,13.47%,,SOFR,,1.00%,,2026-02-22,4983.707,4983.707,4979.222,,4983.707,,,,,
-"LJ Avalon Holdings, LLC",Revolver,Industrials,11.77%,,SOFR,,1.00%,,2029-02-01,,,,,,,,,,
-"LJ Avalon Holdings, LLC",First Lien,Industrials,11.79%,,SOFR,,1.00%,,2030-02-01,296.678,239.616,263.171,,239.616,,,,,
-"LJ Avalon Holdings, LLC",First Lien,Industrials,11.77%,,SOFR,,1.00%,,2030-02-01,5139.862,4997.665,5057.624,,4997.665,,,,,
-"Vortex Finance Sub, LLC",First Lien,Industrials,11.32%,,SOFR,,1.00%,,2029-08-31,77.148,72.377,72.314,,72.377,,,,,
-"Vortex Finance Sub, LLC",Revolver,Industrials,11.33%,,SOFR,,1.00%,,2029-08-31,9.578,7.843,7.82,,7.843,,,,,
-"Vortex Finance Sub, LLC",First Lien,Industrials,11.32%,,SOFR,,1.00%,,2029-08-31,332.031,324.67,324.561,,324.67,,,,,
+company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
+"ALCV Purchaser, Inc.",First Lien,Automotive,12.18%,,SOFR,,1.00%,,2026-04-15,6012.603,5956.83,5856.275,,5956.83,,,,,,TCPC,2023-11-02
+"ALCV Purchaser, Inc.",Revolver,Automotive,12.18%,,SOFR,,1.00%,,2026-04-15,662.974,657.903,645.737,,657.903,,,,,,TCPC,2023-11-02
+"AutoAlert, LLC",First Lien,Automotive,10.65%,,SOFR,,1.00%,,2028-03-31,18812.631,18812.631,18812.631,,18812.631,,,,,,TCPC,2023-11-02
+"AutoAlert, LLC",Second Lien,Automotive,10.65%,,SOFR,,1.00%,,2029-03-31,8915.522,8915.522,8915.522,,8915.522,,,,,,TCPC,2023-11-02
+Porcelain Acquisition Corp.,First Lien,Industrials,11.49%,,SOFR,,1.00%,,2027-04-30,6150.558,6069.222,5916.836,,6069.222,,,,,,TCPC,2023-11-02
+Porcelain Acquisition Corp.,First Lien,Industrials,11.49%,,SOFR,,1.00%,,2027-04-30,930.849,918.987,895.477,,918.987,,,,,,TCPC,2023-11-02
+"Pico Quantitative Trading, LLC",First Lien,Financial Services,12.92%,,SOFR,,1.50%,,2025-02-07,21791.007,21485.635,21987.126,,21485.635,,,,,,TCPC,2023-11-02
+"Pico Quantitative Trading, LLC",First Lien,Financial Services,12.88%,,SOFR,,1.50%,,2025-02-07,24415.87,23826.256,24415.87,,23826.256,,,,,,TCPC,2023-11-02
+"Modigent, LLC",First Lien,Business Services,11.38%,,SOFR,,0.75%,,2028-08-23,358.875,351.393,353.097,,351.393,,,,,,TCPC,2023-11-02
+"Modigent, LLC",First Lien,Business Services,11.39%,,SOFR,,0.75%,,2028-08-23,196.4,191.046,192.395,,191.046,,,,,,TCPC,2023-11-02
+"Modigent, LLC",Revolver,Business Services,13.50%,,Prime,,0.75%,,2027-08-23,19.583,18.402,18.649,,18.402,,,,,,TCPC,2023-11-02
+"Thermostat Purchaser III, Inc.",Second Lien,Business Services,12.82%,,SOFR,,0.75%,,2029-08-31,7767.802,7673.276,7371.644,,7673.276,,,,,,TCPC,2023-11-02
+Plate Newco 1 Ltd.,First Lien,Telecommunications,12.50%,12.50%,LIBOR,,,,2023-10-13,88.455,58.35,,,58.35,,,,,,TCPC,2023-11-02
+Plate Newco 1 Ltd.,First Lien,Telecommunications,12.50%,12.50%,LIBOR,,,,2023-10-13,265.368,174.283,,,174.283,,,,,,TCPC,2023-11-02
+Plate Newco 1 Ltd.,First Lien,Telecommunications,12.50%,12.50%,LIBOR,,,,2023-10-13,1071.041,650.88,,,650.88,,,,,,TCPC,2023-11-02
+Plate Newco 1 Ltd.,First Lien,Telecommunications,12.50%,12.50%,LIBOR,,,,2023-10-13,315.185,198.154,,,198.154,,,,,,TCPC,2023-11-02
+"CSG Buyer, Inc.",Revolver,Industrials,11.65%,,SOFR,,1.00%,,2028-03-31,,,,,,,,,,,TCPC,2023-11-02
+"CSG Buyer, Inc.",First Lien,Industrials,11.65%,,SOFR,,1.00%,,2028-03-31,8847.846,8670.889,8476.236,,8670.889,,,,,,TCPC,2023-11-02
+Geo Parent Corp.,First Lien,Industrials,10.80%,,SOFR,,,,2025-12-29,2194.165,2158.758,2155.767,,2158.758,,,,,,TCPC,2023-11-02
+"Homerenew Buyer, Inc.",First Lien,Industrials,12.02%,,SOFR,,1.00%,,2027-11-23,3600.994,3539.659,3485.762,,3539.659,,,,,,TCPC,2023-11-02
+"Homerenew Buyer, Inc.",First Lien,Industrials,12.02%,,SOFR,,1.00%,,2027-11-23,1682.273,1651.681,1628.44,,1651.681,,,,,,TCPC,2023-11-02
+"Homerenew Buyer, Inc.",Revolver,Industrials,12.01%,,SOFR,,1.00%,,2027-11-23,552.386,540.847,530.29,,540.847,,,,,,TCPC,2023-11-02
+"Hylan Intermediate Holding II, LLC",Second Lien,Industrials,15.47%,,SOFR,,1.00%,,2027-03-11,5146.471,4981.761,5141.839,,4981.761,,,,,,TCPC,2023-11-02
+"Hylan Intermediate Holding II, LLC",First Lien,Industrials,13.47%,,SOFR,,1.00%,,2026-02-22,4983.707,4983.707,4979.222,,4983.707,,,,,,TCPC,2023-11-02
+"LJ Avalon Holdings, LLC",Revolver,Industrials,11.77%,,SOFR,,1.00%,,2029-02-01,,,,,,,,,,,TCPC,2023-11-02
+"LJ Avalon Holdings, LLC",First Lien,Industrials,11.79%,,SOFR,,1.00%,,2030-02-01,296.678,239.616,263.171,,239.616,,,,,,TCPC,2023-11-02
+"LJ Avalon Holdings, LLC",First Lien,Industrials,11.77%,,SOFR,,1.00%,,2030-02-01,5139.862,4997.665,5057.624,,4997.665,,,,,,TCPC,2023-11-02
+"Vortex Finance Sub, LLC",First Lien,Industrials,11.32%,,SOFR,,1.00%,,2029-08-31,77.148,72.377,72.314,,72.377,,,,,,TCPC,2023-11-02
+"Vortex Finance Sub, LLC",Revolver,Industrials,11.33%,,SOFR,,1.00%,,2029-08-31,9.578,7.843,7.82,,7.843,,,,,,TCPC,2023-11-02
+"Vortex Finance Sub, LLC",First Lien,Industrials,11.32%,,SOFR,,1.00%,,2029-08-31,332.031,324.67,324.561,,324.67,,,,,,TCPC,2023-11-02

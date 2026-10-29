@@ -4,13 +4,13 @@
     "ticker": "MAIN",
     "scale": 1000,
     "median_ratio": 1.0,
-    "periods": 17,
-    "with_reported": 17,
+    "periods": 16,
+    "with_reported": 16,
     "match": 16,
     "near": 0,
-    "mismatch": 1,
-    "match_pct": 94.1,
-    "trust": "warn",
+    "mismatch": 0,
+    "match_pct": 100.0,
+    "trust": "good",
     "latest": {
       "filing_date": "2026-08-07",
       "period_end": "2026-06-30",
@@ -24,31 +24,9 @@
       "filing_url": "https://www.sec.gov/Archives/edgar/data/1396440/000139644026000094/main-20260630.htm",
       "form": "10-Q"
     },
-    "issue_periods": [
-      {
-        "filing_date": "2021-11-05",
-        "delta_pct": -100.0,
-        "status": "mismatch",
-        "holdings_fv": 0.0,
-        "reported_fv_k": 3973490.0,
-        "quality_flags": []
-      }
-    ]
+    "issue_periods": []
   },
   "periods": [
-    {
-      "filing_date": "2021-11-05",
-      "period_end": "2021-09-30",
-      "holdings_fv": 0.0,
-      "row_count": 1,
-      "reported_fv": 3973490000.0,
-      "reported_fv_k": 3973490.0,
-      "delta_pct": -100.0,
-      "status": "mismatch",
-      "quality_flags": [],
-      "filing_url": "https://www.sec.gov/Archives/edgar/data/1396440/000155837021014764/main-20210930x10q.htm",
-      "form": "10-Q"
-    },
     {
       "filing_date": "2022-11-04",
       "period_end": "2022-09-30",

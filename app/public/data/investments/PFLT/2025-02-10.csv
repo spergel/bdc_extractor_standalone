@@ -1,464 +1,1156 @@
-company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags
-"A1 Garage Merger Sub, LLC",First Lien,Business Services,9.11%,,SOFR,4.75%,,,2028-12-22,1575,1557,1575,,1557,,,,,
-"A1 Garage Merger Sub, LLC",First Lien,Business Services,,,,,,,2028-12-22,453,,7,,,,,,,
-"ACP Avenu Buyer, LLC",First Lien,Software & Technology,9.84%,,SOFR,5.25%,,,2029-10-02,14086,13877,13698,,13877,,,,,
-"ACP Avenu Buyer, LLC",First Lien,Software & Technology,,,,,,,2025-04-02,5621,,77,,,,,,,fair_value_suspicious_vs_size
-"ACP Avenu Buyer, LLC",Revolver,Software & Technology,9.84%,,SOFR,5.25%,,,2029-10-02,847,847,824,,847,,,,,
-"ACP Avenu Buyer, LLC",First Lien,Software & Technology,,,,,,,2029-10-02,2960,,81,,,,,,,fair_value_suspicious_vs_size
-"ACP Falcon Buyer, LLC",First Lien,Business Services,,,,,,,2029-08-01,3096,,,,,,,,,
-"Ad.net Acquisition, LLC",First Lien,Media & Entertainment,10.59%,,SOFR,6.26%,,,2026-05-06,4825,4799,4825,,4799,,,,,
-"Ad.net Acquisition, LLC",Revolver,Media & Entertainment,10.59%,,SOFR,6.26%,,,2026-05-06,818,818,818,,818,,,,,
-"Aechelon Technology, Inc.",First Lien,Aerospace & Defense,11.86%,,SOFR,7.5%,,,2029-08-16,13860,13728,13860,,13728,,,,,
-AFC Dell Holding Corp.,First Lien,Distribution & Wholesale,10.04%,,SOFR,5.5%,,,2027-04-09,27427,27359,27427,,27359,,,,,
-Amsive Holding Corp.,First Lien,Media & Entertainment,10.75%,,SOFR,6.5%,,,2025-06-10,13777,13746,13639,,13746,,,,,
-"Anteriad, LLC",First Lien,Media & Entertainment,10.23%,,SOFR,5.9%,,,2026-06-30,12809,12666,12809,,12666,,,,,
-"Anteriad, LLC",First Lien,Media & Entertainment,10.23%,,SOFR,5.9%,,,2026-06-30,2070,2057,2070,,2057,,,,,
-"Anteriad, LLC",First Lien,Media & Entertainment,10.19%,,SOFR,5.85%,,,2026-06-30,820,820,820,,820,,,,,
-"Applied Technical Services, LLC",First Lien,Business Services,10.23%,,SOFR,5.9%,,,2026-12-29,12565,12470,12411,,12470,,,,,
-"Applied Technical Services, LLC",First Lien,Business Services,,,,,,,2025-07-17,3990,,10,,,,,,,fair_value_suspicious_vs_size
-"Applied Technical Services, LLC",First Lien,Business Services,12.75%,,SOFR,4.75%,,,2026-12-29,2031,2031,2006,,2031,,,,,
-"Applied Technical Services, LLC",First Lien,Business Services,,,,,,,2026-12-29,262,,3,,,,,,,
-Arcfield Acquisition Corp.,First Lien,Aerospace & Defense,9.17%,,SOFR,5%,,,2031-10-28,19540,19517,19491,,19517,,,,,
-Arcfield Acquisition Corp.,First Lien,Aerospace & Defense,,,,,,,2031-10-28,2874,,7,,,,,,,fair_value_suspicious_vs_size
-"Archer Lewis, LLC",First Lien,Healthcare,10.08%,,SOFR,5.75%,,,2029-08-28,20281,20087,20078,,20087,,,,,
-"Archer Lewis, LLC",Revolver,Healthcare,,,,,,,2029-08-28,3252,,33,,,,,,,fair_value_suspicious_vs_size
-"ARGANO, LLC",First Lien,Business Services,10.15%,,SOFR,5.75%,,,2029-09-13,25704,25452,25447,,25452,,,,,
-"ARGANO, LLC",Revolver,Business Services,,,,,,,2029-09-13,1421,,14,,,,,,,fair_value_suspicious_vs_size
-"Azureon, LLC",First Lien,Consumer & Retail,10.20%,,SOFR,5.75%,,,2029-06-26,11609,11460,11354,,11460,,,,,
-"Azureon, LLC",First Lien,Consumer & Retail,,,,,,,2026-06-26,10359,,124,,,,,,,fair_value_suspicious_vs_size
-"Azureon, LLC",Revolver,Consumer & Retail,,,,,,,2029-06-26,2580,,57,,,,,,,fair_value_suspicious_vs_size
-"Beacon Behavioral Support Service, LLC",First Lien,Healthcare,9.83%,,SOFR,5.5%,,,2029-06-21,32530,32133,32042,,32133,,,,,
-"Beacon Behavioral Support Service, LLC",First Lien,Healthcare,,,,,,,2025-12-21,12415,,62,,,,,,,fair_value_suspicious_vs_size
-"Beacon Behavioral Support Service, LLC",Revolver,Healthcare,,,,,,,2029-06-21,2104,,32,,,,,,,fair_value_suspicious_vs_size
-"Best Practice Associates, LLC",First Lien,Aerospace & Defense,11.08%,,SOFR,6.75%,,,2029-11-08,64278,63324,63314,,63324,,,,,
-"Best Practice Associates, LLC",Revolver,Aerospace & Defense,,,,,,,2029-11-08,5732,,86,,,,,,,fair_value_suspicious_vs_size
-"Beta Plus Technologies, Inc.",First Lien,Software & Technology,10.08%,,SOFR,5.75%,,,2029-07-01,19756,19183,19212,,19183,,,,,
-"Big Top Holdings, LLC",First Lien,Industrials,10.11%,,SOFR,5.75%,,,2030-02-28,29602,29120,29602,,29120,,,,,
-"BioDerm, Inc.",First Lien,Healthcare,11.03%,,SOFR,6.5%,,,2028-01-31,964,964,952,,964,,,,,
-"BioDerm, Inc.",First Lien,Healthcare,,,,,,,2028-01-31,107,,1,,,,,,,
-"Blackhawk Industrial Distribution, Inc.",First Lien,Distribution & Wholesale,9.73%,,SOFR,5.4%,,,2026-09-17,8199,8146,8057,,8146,,,,,
-"Blackhawk Industrial Distribution, Inc.",First Lien,Distribution & Wholesale,,,,,,,2026-09-17,1893,,14,,,,,,,fair_value_suspicious_vs_size
-"Blackhawk Industrial Distribution, Inc.",First Lien,Distribution & Wholesale,11.04%,,SOFR,6.4%,,,2026-09-17,679,679,668,,679,,,,,
-"Blackhawk Industrial Distribution, Inc.",First Lien,Distribution & Wholesale,,,,,,,2026-09-17,3203,,55,,,,,,,fair_value_suspicious_vs_size
-"BLC Holding Company, Inc.",First Lien,Business Services,9.28%,,SOFR,4.75%,,,2030-11-20,25027,24845,24839,,24845,,,,,
-"BLC Holding Company, Inc.",Revolver,Business Services,,,,,,,2030-11-20,4398,,,,,,,,,
-"Boss Industries, LLC",First Lien,Energy,9.33%,,SOFR,5%,,,2030-12-27,23100,22928,22927,,22928,,,,,
-"Boss Industries, LLC",Revolver,Energy,9.33%,,SOFR,5%,,,2030-12-27,549,549,549,,549,,,,,
-"BlueHalo Financing Holdings, LLC",First Lien,Aerospace & Defense,10.33%,,SOFR,6%,,,2025-10-31,9170,9135,9124,,9135,,,,,
-Burgess Point Purchaser Corp.,First Lien,Automotive,9.68%,,SOFR,5.35%,,,2029-07-25,14924,14209,13217,,14209,,,,,
-"By Light Professional IT Services, LLC",First Lien,Software & Technology,11.31%,,SOFR,6.98%,,,2025-05-16,46448,46378,46448,,46378,,,,,
-"Carisk Buyer, Inc.",First Lien,Healthcare,9.58%,,SOFR,5.25%,,,2029-12-01,7453,7370,7341,,7370,,,,,
-"Carisk Buyer, Inc.",First Lien,Healthcare,,,,,,,2029-12-01,7868,,47,,,,,,,fair_value_suspicious_vs_size
-"Carisk Buyer, Inc.",First Lien,Healthcare,,,,,,,2029-12-01,1750,,26,,,,,,,fair_value_suspicious_vs_size
-"Carnegie Dartlet, LLC",First Lien,Business Services,9.86%,,SOFR,5.5%,,,2030-02-07,29775,29350,29328,,29350,,,,,
-"Carnegie Dartlet, LLC",First Lien,Business Services,,,,,,,2026-02-07,16214,,81,,,,,,,fair_value_suspicious_vs_size
-"Carnegie Dartlet, LLC",Revolver,Business Services,9.86%,,SOFR,5.5%,,,2030-02-07,324,324,319,,324,,,,,
-"Carnegie Dartlet, LLC",First Lien,Business Services,,,,,,,2030-02-07,5080,,76,,,,,,,fair_value_suspicious_vs_size
-"Cartessa Aesthetics, LLC",First Lien,Distribution & Wholesale,10.08%,,SOFR,5.75%,,,2028-06-14,12911,12782,12911,,12782,,,,,
-"Cartessa Aesthetics, LLC",First Lien,Distribution & Wholesale,10.08%,,SOFR,5.75%,,,2028-06-14,511,511,511,,511,,,,,
-"Case Works, LLC",First Lien,Business Services,9.59%,,SOFR,5.25%,,,2029-10-01,18772,18612,18622,,18612,,,,,
-"Case Works, LLC",First Lien,Business Services,,,,,,,2025-10-01,1854,,1,,,,,,,fair_value_suspicious_vs_size
-Case Works,Revolver,Business Services,9.65%,,SOFR,5.25%,,,2029-10-01,1643,1643,1630,,1643,,,,,
-Case Works,Revolver,Business Services,,,,,,,2029-10-01,2465,,20,,,,,,,fair_value_suspicious_vs_size
-"CF512, Inc.",First Lien,Media & Entertainment,10.69%,,SOFR,6.19%,,,2026-08-20,5728,5701,5642,,5701,,,,,
-"CF512, Inc.(Revolver)(6),",First Lien,Media & Entertainment,,,,,,,2026-08-20,955,,14,,,,,,,type_hint_revolver_from_name
-"CJX Borrower, LLC",First Lien,Media & Entertainment,10.39%,,SOFR,5.76%,,,2027-07-13,4515,4469,4515,,4469,,,,,
-"CJX Borrower , LLC",First Lien,Media & Entertainment,,,,,,,2027-07-13,666,,3,,,,,,,
-"CJX Borrower, LLC",Revolver,Media & Entertainment,10.19%,,SOFR,5.76%,,,2027-07-13,331,331,331,,331,,,,,
-"CJX Borrower , LLC",Revolver,Media & Entertainment,,,,,,,2027-07-13,904,,,,,,,,,
-"Compex Legal Services, Inc.",First Lien,Business Services,9.95%,,SOFR,5.45%,,,2026-02-09,8810,8793,8810,,8793,,,,,
-"Compex Legal Services, Inc.",First Lien,Business Services,10.14%,,SOFR,5.55%,,,2025-02-07,703,703,703,,703,,,,,
-"Confluent Health, LLC",First Lien,Healthcare,9.36%,,SOFR,5%,,,2028-11-30,6948,6762,6600,,6762,,,,,
-"Crane 1 Services, Inc.",First Lien,Business Services,10.22%,,SOFR,5.86%,,,2027-08-16,4264,4217,4232,,4217,,,,,
-"Crane 1 Services, Inc.",First Lien,Business Services,,,,,,,2027-08-16,502,,4,,,,,,,
-"C5MI Holdco, LLC",First Lien,Software & Technology,10.33%,,SOFR,6%,,,2030-07-31,28928,28511,28494,,28511,,,,,
-"C5MI Holdco, LLC.",Revolver,Software & Technology,10.33%,,SOFR,6%,,,2030-07-31,1515,1515,1493,,1515,,,,,
-"C5MI Holdco, LLC.",Revolver,Software & Technology,,,,,,,2030-07-31,7577,,114,,,,,,,fair_value_suspicious_vs_size
-DRI Holding Inc.,First Lien,Media & Entertainment,9.71%,,SOFR,5.35%,,,2028-12-21,6107,5936,5924,,5936,,,,,
-"Dr. Squatch, LLC",First Lien,Consumer & Retail,9.68%,,SOFR,5.35%,,,2027-08-31,16828,16677,16828,,16677,,,,,
-"DRS Holdings III, Inc.",First Lien,Chemicals & Materials,10.71%,,SOFR,6.35%,,,2025-11-03,15435,15384,15373,,15384,,,,,
-"DRS Holdings III, Inc.",First Lien,Consumer & Retail,,,,,,,2025-11-03,1426,,6,,,,,,,fair_value_suspicious_vs_size
-"Duggal Acquisition, LLC",First Lien,Business Services,9.08%,,SOFR,4.75%,,,2030-09-30,10295,10194,10192,,10194,,,,,
-"DUGGAL Acquisition, LLC",Revolver,Business Services,9.08%,,SOFR,4.75%,,,2030-09-30,1121,1121,1110,,1121,,,,,
-"Duggal Acquisition, LLC",Revolver,Business Services,,,,,,,2030-09-30,4484,,45,,,,,,,fair_value_suspicious_vs_size
-"Dynata, LLC",First Lien,Business Services,9.79%,,SOFR,5.26%,,,2028-10-16,1851,1728,1851,,1728,,,,,
-"Dynata, LLC",First Lien,Business Services,10.29%,,SOFR,5.76%,,,2028-10-15,11486,11486,10653,,11486,,,,,
-"Emergency Care Partners, LLC",First Lien,Healthcare,10.13%,,SOFR,5.5%,,,2027-10-18,13736,13638,13633,,13638,,,,,
-"Emergency Care Partners, LLC",First Lien,Healthcare,,,,,,,2026-04-18,6172,,46,,,,,,,fair_value_suspicious_vs_size
-"Emergency Care Partners, LLC",Revolver,Healthcare,,,,,,,2027-10-18,1810,,14,,,,,,,fair_value_suspicious_vs_size
-"EDS Buyer, LLC",First Lien,Software & Technology,10.08%,,SOFR,5.75%,,,2029-01-10,10646,10524,10566,,10524,,,,,
-"EDS Buyer, LLC. (Revolver)(6),",First Lien,Software & Technology,,,,,,,2029-01-10,2298,,17,,,,,,,fair_value_suspicious_vs_size|type_hint_revolver_from_name
-"Efficient Collaborative Retail Marketing Company, LLC",First Lien,Media & Entertainment,12.09%,,SOFR,7.76%,,,2025-06-15,8207,8228,6566,,8228,,,,,
-"ETE Intermediate II, LLC",Revolver,Consumer & Retail,10.83%,,SOFR,6.5%,,,2029-05-25,1436,1436,1436,,1436,,,,,
-"Events Buyer, LLC",First Lien,Business Services,10.10%,,SOFR,5.75%,,,2029-12-17,11380,11268,11266,,11268,,,,,
-"Events Buyer, LLC- Unfunded Term Loan A",First Lien,Business Services,,,,,,,2025-06-17,10358,,,,,,,,,
-"Events Buyer, LLC- Unfunded Term Loan B",First Lien,Business Services,,,,,,,2026-12-17,9865,,,,,,,,,
-"Events Buyer, LLC",Revolver,Business Services,,,,,,,2029-12-17,2466,,,,,,,,,
-"Eval Home Health Solutions Intermediate, LLC",First Lien,Healthcare,10.11%,,SOFR,5.75%,,,2030-05-10,14455,14242,14311,,14242,,,,,
-"Eval Home Health Solutions Intermediate, LLC",Revolver,Healthcare,,,,,,,2030-05-10,2640,,26,,,,,,,fair_value_suspicious_vs_size
-Fairbanks Morse Defense,First Lien,Aerospace & Defense,9.05%,,SOFR,4.5%,,,2028-06-23,992,988,997,,988,,,,,
-"Five Star Buyer, Inc.",First Lien,Food & Beverage,11.44%,,SOFR,7.1%,,,2028-02-23,4437,4377,4403,,4377,,,,,
-"Five Star Buyer, Inc.",First Lien,Food & Beverage,,,,,,,2028-02-23,741,,6,,,,,,,
-"Gauge ETE Blocker, LLC",First Lien,Consumer & Retail,12.56%,,,,,,2029-05-19,215,215,215,,215,,,,,
-"GGG MIDCO, LLC",First Lien,Consumer & Retail,9.33%,,SOFR,5%,,,2030-09-27,25704,25456,25447,,25456,,,,,
-"GGG MIDCO, LLC",Revolver,Consumer & Retail,,,,,,,2030-09-27,1311,,13,,,,,,,fair_value_suspicious_vs_size
-Global Holdings InterCo LLC,First Lien,Financial Services,9.98%,,SOFR,5.6%,,,2026-03-16,4882,4832,4686,,4832,,,,,
-"Graffiti Buyer, Inc.",First Lien,Distribution & Wholesale,10.12%,,SOFR,5.6%,,,2027-08-10,1347,1338,1327,,1338,,,,,
-"Graffiti Buyer, Inc.",First Lien,Distribution & Wholesale,,,,,,,2027-08-10,984,,7,,,,,,,
-"Graffiti Buyer, Inc.",First Lien,Distribution & Wholesale,10.12%,,SOFR,5.6%,,,2027-08-10,548,548,539,,548,,,,,
-"Graffiti Buyer, Inc.",First Lien,Distribution & Wholesale,,,,,,,2027-08-10,317,,5,,,,,,,
-Hancock Roofing and Construction LLC.,First Lien,Insurance,9.93%,,SOFR,5.6%,,,2026-12-31,3993,3952,3993,,3952,,,,,
-Hancock Roofing and Construction LLC.,First Lien,Insurance,9.96%,,SOFR,5.6%,,,2026-12-31,680,680,680,,680,,,,,
-"Hancock Roofing and Construction LLC. (Revolver)(6),",First Lien,Insurance,,,,,,,2026-12-31,70,,,,,,,,,type_hint_revolver_from_name
-Harris & Co. LLC,First Lien,Business Services,9.36%,,SOFR,5%,,,2030-08-09,28062,27825,28062,,27825,,,,,
-Harris & Co. LLC. - Unfunded Term Loan A,First Lien,Business Services,,,,,,,2025-02-09,23273,,204,,,,,,,fair_value_suspicious_vs_size
-Harris & Co. LLC. - Unfunded Term Loan B,First Lien,Business Services,,,,,,,2026-02-09,50296,,440,,,,,,,fair_value_suspicious_vs_size
-Harris & Co. LLC,Revolver,Business Services,9.36%,,SOFR,5%,,,2030-08-09,1110,1110,1110,,1110,,,,,
-HEC Purchaser Corp.,First Lien,Healthcare,9.75%,,SOFR,5.5%,,,2029-06-17,9627,9518,9588,,9518,,,,,
-Hills Distribution Inc.,First Lien,Distribution & Wholesale,10.49%,,SOFR,6%,,,2029-11-08,17219,17016,17047,,17016,,,,,
-"HW Holdco, LLC",First Lien,Media & Entertainment,10.23%,,SOFR,5.9%,,,2026-05-10,10410,10380,10410,,10380,,,,,
-"IG Investments Holdings, LLC",First Lien,Business Services,9.57%,,SOFR,5%,,,2028-09-22,4487,4434,4454,,4434,,,,,
-"IG Investments Holdings, LLC",First Lien,Business Services,,,,,,,2028-09-22,722,,5,,,,,,,
-"Imagine Acquisitionco, LLC",Revolver,Software & Technology,9.55%,,SOFR,5.1%,,,2027-11-16,60,60,59,,60,,,,,
-"Imagine Acquisitionco, LLC",First Lien,Software & Technology,,,,,,,2027-11-16,1133,,3,,,,,,,fair_value_suspicious_vs_size
-"Infinity Home Services Holdco, Inc.",First Lien,Business Services,9.83%,,SOFR,5.5%,,,2028-12-28,9404,9331,9401,,9331,,,,,
-"Infinity Home Services Holdco, Inc.",First Lien,Business Services,9.83%,,SOFR,5.5%,,,2028-12-28,1717,1238,1194,,1238,,,,,
-"Infinity Home Services Holdco, Inc.",Revolver,Business Services,12.00%,,SOFR,4.5%,,,2028-12-28,161,161,161,,161,,,,,
-Inovex Information Systems Inc.,First Lien,Software & Technology,9.63%,,SOFR,5.25%,,,2030-12-17,16205,16084,16083,,16084,,,,,
-Inovex Information Systems Inc.,Revolver,Software & Technology,9.61%,,SOFR,5.25%,,,2030-12-17,980,980,980,,980,,,,,
-"Infolinks Media Buyco, LLC",First Lien,Media & Entertainment,9.83%,,SOFR,5.5%,,,2026-11-01,5331,5283,5331,,5283,,,,,
-"Integrative Nutrition, LLC",First Lien,Consumer & Retail,11.45%,,SOFR,7.15%,,,2025-01-31,15723,15695,11793,,15695,,,,,
-"ITI Holdings, Inc.",First Lien,Software & Technology,12.00%,,SOFR,4.5%,,,2028-03-03,473,473,473,,473,,,,,
-"Inventus Power, Inc.",First Lien,Software & Technology,11.97%,,SOFR,7.61%,,,2025-06-30,4925,4894,4925,,4894,,,,,
-"Keel Platform, LLC",First Lien,Chemicals & Materials,9.58%,,SOFR,5.25%,,,2031-01-19,11515,11362,11400,,11362,,,,,
-"Keel Platform, LLC",First Lien,Chemicals & Materials,,,,,,,2031-01-19,2402,,6,,,,,,,fair_value_suspicious_vs_size
-"Kinetic Purchaser, LLC",First Lien,Consumer & Retail,10.48%,,SOFR,6.15%,,,2027-11-10,13971,13813,13971,,13813,,,,,
-"Kinetic Purchaser, LLC",Revolver,Consumer & Retail,10.48%,,SOFR,6.1%,,,2026-11-10,1717,1717,1717,,1717,,,,,
-"Lash OpCo, LLC",First Lien,Consumer & Retail,12.94%,,SOFR,7.85%,,,2027-02-18,10927,10840,10763,,10840,,,,,
-"Lash OpCo, LLC",First Lien,Consumer & Retail,12.94%,,SOFR,7.85%,,,2026-08-16,2870,2870,2827,,2870,,,,,
-"Lash OpCo, LLC",First Lien,Consumer & Retail,,,,,,,2026-08-16,335,,5,,,,,,,
-"LAV Gear Holdings, Inc.",First Lien,Industrials,10.93%,,SOFR,6.4%,,,2025-10-31,13229,13226,12580,,13226,,,,,
-"LAV Gear Holdings, Inc.",First Lien,Industrials,10.93%,,SOFR,6.4%,,,2025-10-31,1721,1721,1636,,1721,,,,,
-"Ledge Lounger, Inc.",First Lien,Healthcare,11.98%,,SOFR,7.65%,,,2026-11-09,3674,3662,3490,,3662,,,,,
-"Ledge Lounger, Inc.",First Lien,Healthcare,11.98%,,SOFR,7.65%,,,2026-11-09,461,461,438,,461,,,,,
-"Ledge Lounger, Inc.",First Lien,Healthcare,,,,,,,2026-11-09,197,,10,,,,,,,
-Lightspeed Buyer Inc.,First Lien,Healthcare,9.40%,,SOFR,4.85%,,,2026-02-03,26650,26493,26383,,26493,,,,,
-Lightspeed Buyer Inc.,First Lien,Healthcare,,,,,,,2025-06-02,2326,,23,,,,,,,fair_value_suspicious_vs_size
-Lightspeed Buyer Inc.,First Lien,Healthcare,,,,,,,2026-02-03,2499,,25,,,,,,,fair_value_suspicious_vs_size
-"LJ Avalon Holdings, LLC",First Lien,Industrials,9.76%,,SOFR,5.25%,,,2030-02-01,2802,2768,2802,,2768,,,,,
-"LJ Avalon Holdings, LLC",First Lien,Industrials,,,,,,,2024-10-01,1892,,9,,,,,,,fair_value_suspicious_vs_size
-"Loving Tan Intermediate II, Inc.",First Lien,Consumer & Retail,10.33%,,SOFR,6%,,,2028-05-31,44947,44323,44609,,44323,,,,,
-"Loving Tan Intermediate II, Inc.",First Lien,Consumer & Retail,,,,,,,2025-07-12,23464,,59,,,,,,,fair_value_suspicious_vs_size
-"Loving Tan Intermediate II, Inc.",First Lien,Consumer & Retail,10.33%,,SOFR,6%,,,2028-05-31,1780,1780,1766,,1780,,,,,
-"Loving Tan Intermediate II, Inc.",Revolver,Consumer & Retail,,,,,,,2028-05-31,3559,,27,,,,,,,fair_value_suspicious_vs_size
-"LSF9 Atlantis Holdings, LLC",First Lien,Consumer & Retail,9.61%,,SOFR,5.25%,,,2029-06-30,9809,9809,9919,,9809,,,,,
-"Lucky Bucks, LLC",First Lien,Food & Beverage,12.10%,,SOFR,7.65%,,,2028-10-02,258,258,258,,258,,,,,
-"Lucky Bucks, LLC",First Lien,Food & Beverage,12.10%,,SOFR,7.65%,,,2029-10-02,517,517,517,,517,,,,,
-MAG DS Corp.,First Lien,Aerospace & Defense,9.93%,,SOFR,5.6%,,,2027-04-01,7269,7012,6797,,7012,,,,,
-"Marketplace Events Acquisition, LLC",First Lien,Media & Entertainment,9.60%,,SOFR,5.25%,,,2030-12-19,70000,69308,69300,,69308,,,,,
-"Marketplace Events Acquisition, LLC",Revolver,Media & Entertainment,,,,,,,2030-12-19,6096,,,,,,,,,
-"MBS Holdings, Inc.",Revolver,Software & Technology,10.25%,,SOFR,5.85%,,,2027-04-16,139,139,139,,139,,,,,
-"MDI Buyer, Inc.",First Lien,Chemicals & Materials,10.22%,,SOFR,5.75%,,,2028-07-25,2015,1984,1997,,1984,,,,,
-"MDI Buyer, Inc.",First Lien,Chemicals & Materials,12.50%,,SOFR,4.75%,,,2028-07-25,608,608,602,,608,,,,,
-"Meadowlark Acquirer, LLC",First Lien,Business Services,9.98%,,SOFR,5.65%,,,2027-12-10,1953,1935,1904,,1935,,,,,
-"Meadowlark Acquirer, LLC",First Lien,Business Services,,,,,,,2027-12-10,1693,,42,,,,,,,fair_value_suspicious_vs_size
-"Medina Health, LLC",First Lien,Healthcare,10.58%,,SOFR,6.25%,,,2028-10-20,17775,17523,17775,,17523,,,,,
-"Megawatt Acquisitionco, Inc.",First Lien,Software & Technology,9.83%,,SOFR,5.5%,,,2030-03-01,6948,6858,6071,,6858,,,,,
-"Megawatt Acquisitionco, Inc.",Revolver,Software & Technology,9.86%,,SOFR,5.25%,,,2030-03-01,926,926,809,,926,,,,,
-"Megawatt Acquisitionco, Inc.",First Lien,Software & Technology,,,,,,,2030-03-01,2324,,293,,,,,,,
-"Mission Critical Electronics, Inc.",First Lien,Industrials,10.23%,,SOFR,5.75%,,,2025-03-31,3092,3087,3092,,3087,,,,,
-"MOREGroup Holdings, Inc.",First Lien,Industrials,9.58%,,SOFR,5.25%,,,2030-01-16,31760,31347,31760,,31347,,,,,
-"MOREGroup Holdings, Inc.",First Lien,Industrials,,,,,,,2026-01-16,11056,,111,,,,,,,fair_value_suspicious_vs_size
-"Municipal Emergency Services, Inc.",First Lien,Distribution & Wholesale,11.00%,,SOFR,3.5%,,,2027-10-01,3292,3261,3292,,3261,,,,,
-"Municipal Emergency Services, Inc.",First Lien,Distribution & Wholesale,,,,,,,2027-09-28,909,,9,,,,,,,
-"Municipal Emergency Services, Inc.",Revolver,Distribution & Wholesale,9.48%,,SOFR,5.15%,,,2027-10-01,189,189,189,,189,,,,,
-NFS - CFP Holdings LLC,First Lien,Business Services,9.08%,,SOFR,4.75%,,,2030-09-13,21247,21096,21087,,21096,,,,,
-NFS - CFP Holdings LLC,Revolver,Business Services,,,,,,,2030-09-13,5014,,38,,,,,,,fair_value_suspicious_vs_size
-"NORA Acquisition, LLC",First Lien,Healthcare,10.68%,,SOFR,6.35%,,,2029-08-31,19750,19421,19750,,19421,,,,,
-"Omnia Exterior Solutions, LLC",First Lien,Consumer & Retail,9.58%,,SOFR,5.5%,,,2029-12-29,23662,23472,23485,,23472,,,,,
-"Omnia Exterior Solutions, LLC",First Lien,Consumer & Retail,,,,,,,2026-09-30,12802,,16,,,,,,,fair_value_suspicious_vs_size
-"Omnia Exterior Solutions, LLC",First Lien,Consumer & Retail,,,,,,,2029-12-29,4200,,32,,,,,,,fair_value_suspicious_vs_size
-"One Stop Mailing, LLC",First Lien,Transportation & Logistics,10.72%,,SOFR,6.36%,,,2027-05-07,8403,8317,8403,,8317,,,,,
-"ORL Acquisition, Inc.",First Lien,Financial Services,13.73%,,SOFR,9.4%,,,2027-09-03,4784,4739,4162,,4739,,,,,
-"ORL Acquisition, Inc.",First Lien,Financial Services,,,,,,,2027-09-03,215,,28,,,,,,,
-"OSP Embedded Purchaser, LLC",First Lien,Aerospace & Defense,10.08%,,SOFR,5.75%,,,2029-12-15,40642,40210,39992,,40210,,,,,
-"OSP Embedded Purchaser, LLC",First Lien,Aerospace & Defense,,,,,,,2029-12-15,2932,,47,,,,,,,fair_value_suspicious_vs_size
-"Output Services Group, Inc.",First Lien,Business Services,12.86%,,SOFR,8.43%,,,2028-11-30,521,521,521,,521,,,,,
-"Output Services Group, Inc.",First Lien,Business Services,11.11%,,SOFR,6.68%,,,2028-05-30,1058,1058,1058,,1058,,,,,
-"Owl Acquisition, LLC",First Lien,Business Services,9.71%,,SOFR,5.35%,,,2028-02-04,3893,3817,3844,,3817,,,,,
-"Pacific Purchaser, LLC",First Lien,Business Services,10.53%,,SOFR,6.25%,,,2028-09-30,4950,4871,4905,,4871,,,,,
-"Pacific Purchaser, LLC",First Lien,Business Services,,,,,,,2028-09-30,3598,,22,,,,,,,fair_value_suspicious_vs_size
-"Pacific Purchaser, LLC",First Lien,Business Services,,,,,,,2028-09-30,1799,,16,,,,,,,fair_value_suspicious_vs_size
-"PAR Excellence Holdings, Inc.",First Lien,Healthcare,9.47%,,SOFR,5%,,,2030-09-03,12500,12383,12375,,12383,,,,,
-"PAR Excellence Holdings, Inc.",Revolver,Healthcare,,,,,,,2030-09-03,4692,,47,,,,,,,fair_value_suspicious_vs_size
-"PCS Midco, Inc.",First Lien,Business Services,10.08%,,SOFR,5.75%,,,2030-03-01,9135,9023,9135,,9023,,,,,
-"PCS Midco, Inc.",First Lien,Business Services,,,,,,,2026-03-01,2249,,22,,,,,,,fair_value_suspicious_vs_size
-"PCS Midco, Inc.",Revolver,Business Services,10.08%,,SOFR,5.75%,,,2030-03-01,310,310,310,,310,,,,,
-"PH Beauty Holdings III, Inc.",First Lien,Consumer & Retail,10.17%,,SOFR,5.43%,,,2025-09-28,7396,7385,7329,,7385,,,,,
-"PL Acquisitionco, LLC",First Lien,Consumer & Retail,15.49%,,SOFR,12.1%,,,2027-11-09,5880,5822,4292,,5822,,,,,
-"PL Acquisitionco, LLC",First Lien,Consumer & Retail,,,,,,,2027-11-09,1145,,309,,,,,,,
-"PlayPower, Inc.",First Lien,Healthcare,9.58%,,SOFR,5.25%,,,2030-08-28,26269,26076,26269,,26076,,,,,
-"Project Granite Buyer,Inc.",First Lien,Business Services,10.08%,,SOFR,5.75%,,,2030-12-31,18500,18315,18315,,18315,,,,,
-"Project Granite Buyer, Inc.",First Lien,Business Services,,,,,,,2026-12-31,2846,,,,,,,,,
-"Project Granite Buyer,Inc.",Revolver,Business Services,,,,,,,2030-12-31,1708,,,,,,,,,
-"Pragmatic Institute, LLC",First Lien,Business Services,,,,,,,2028-07-06,1658,1605,696,,1605,,,,,
-"Quantic Electronics, LLC",First Lien,Software & Technology,10.43%,,SOFR,6.1%,,,2026-11-19,6562,6517,6562,,6517,,,,,
-"Quantic Electronics, LLC",Revolver,Software & Technology,10.43%,,SOFR,6.1%,,,2026-11-19,357,357,357,,357,,,,,
-"Rancho Health MSO, Inc.",First Lien,Healthcare,9.77%,,SOFR,5.25%,,,2029-06-20,1862,1852,1848,,1852,,,,,
-"Rancho Health MSO, Inc.",First Lien,Healthcare,,,,,,,2026-06-30,5469,,15,,,,,,,fair_value_suspicious_vs_size
-"Rancho Health MSO, Inc.",First Lien,Healthcare,9.60%,,SOFR,5.25%,,,2029-06-20,1403,1403,1392,,1403,,,,,
-"Rancho Health MSO, Inc.",First Lien,Healthcare,,,,,,,2029-06-20,1897,,14,,,,,,,fair_value_suspicious_vs_size
-"Recteq, LLC",First Lien,Healthcare,11.48%,,SOFR,7.15%,,,2026-01-29,1444,1436,1429,,1436,,,,,
-"Recteq, LLC",First Lien,Healthcare,,,,,,,2026-01-29,1296,,13,,,,,,,fair_value_suspicious_vs_size
-"Riverpoint Medical, LLC",First Lien,Healthcare,9.58%,,SOFR,5.25%,,,2025-06-20,9803,9784,9803,,9784,,,,,
-"Riverpoint Medical, LLC",First Lien,Healthcare,9.61%,,SOFR,5.25%,,,2025-06-20,182,182,182,,182,,,,,
-"RRA Corporate, LLC",First Lien,Consumer & Retail,9.33%,,SOFR,5%,,,2029-08-15,14165,14025,14094,,14025,,,,,type_hint_corporate_from_name
-"RRA Corporate, LLC",First Lien,Consumer & Retail,,,,,,,2029-02-15,11506,,58,,,,,,,fair_value_suspicious_vs_size|type_hint_corporate_from_name
-"RRA Corporate, LLC",First Lien,Consumer & Retail,,,,,,,2026-08-15,21719,,109,,,,,,,fair_value_suspicious_vs_size|type_hint_corporate_from_name
-"RRA Corporate, LLC",Revolver,Consumer & Retail,9.33%,,SOFR,5%,,,2029-08-15,1746,1746,1738,,1746,,,,,type_hint_corporate_from_name
-"RRA Corporate, LLC",Revolver,Consumer & Retail,,,,,,,2029-08-15,4970,,25,,,,,,,fair_value_suspicious_vs_size|type_hint_corporate_from_name
-"RTIC Subsidiary Holdings, LLC",First Lien,Healthcare,10.08%,,SOFR,5.75%,,,2029-05-03,41890,41294,41156,,41294,,,,,
-"RTIC Subsidiary Holdings, LLC",Revolver,Healthcare,,,,,,,2029-05-03,9417,,165,,,,,,,fair_value_suspicious_vs_size
-"Rural Sourcing Holdings, Inc.",First Lien,Business Services,10.08%,,SOFR,5.75%,,,2029-06-15,1138,1123,1121,,1123,,,,,
-"Rural Sourcing Holdings, Inc.",First Lien,Business Services,,,,,,,2026-06-26,1146,,11,,,,,,,fair_value_suspicious_vs_size
-"Rural Sourcing Holdings, Inc.",Revolver,Business Services,10.08%,,SOFR,5.75%,,,2029-06-15,86,86,85,,86,,,,,
-"Rural Sourcing Holdings, Inc.",First Lien,Business Services,,,,,,,2029-06-15,774,,12,,,,,,,
-"Sabel Systems Technology Solutions, LLC",First Lien,Business Services,10.60%,,SOFR,6.25%,,,2030-10-31,26850,26583,26582,,26583,,,,,
-"Sabel Systems Technology Solutions, LLC",Revolver,Business Services,,,,,,,2030-10-31,3634,,36,,,,,,,fair_value_suspicious_vs_size
-Safe Haven Defense US LLC,First Lien,Industrials,9.36%,,SOFR,5.25%,,,2029-05-23,13526,13335,13526,,13335,,,,,
-Sales Benchmark Index LLC,First Lien,Business Services,10.53%,,SOFR,6.2%,,,2026-07-07,2527,2519,2527,,2519,,,,,
-"Schlesinger Global, Inc.",First Lien,Business Services,12.96%,,SOFR,8.6%,,,2025-07-14,15453,15426,14719,,15426,,,,,
-"Schlesinger Global, Inc.",First Lien,Business Services,12.96%,,SOFR,8.6%,,,2025-07-14,1602,1602,1526,,1602,,,,,
-"Schlesinger Global, Inc.",First Lien,Business Services,,,,,,,2025-07-14,401,,19,,,,,,,
-"Seacoast Service Partners, LLC",First Lien,Consumer & Retail,9.35%,,SOFR,5%,,,2029-12-20,7833,7766,7765,,7766,,,,,
-"Seacoast Service Partners, LLC",Revolver,Consumer & Retail,,,,,,,2029-12-20,2123,,,,,,,,,
-"Seaway Buyer, LLC",First Lien,Chemicals & Materials,10.48%,,SOFR,6.15%,,,2029-06-13,1896,1876,1820,,1876,,,,,
-"Sigma Defense Systems, LLC",First Lien,Software & Technology,11.23%,,SOFR,6.9%,,,2027-12-18,20615,20379,20512,,20379,,,,,
-"Sigma Defense Systems, LLC",First Lien,Software & Technology,,,,,,,2027-12-18,3311,,17,,,,,,,fair_value_suspicious_vs_size
-"Smartronix, LLC",First Lien,Aerospace & Defense,10.35%,,SOFR,6.1%,,,2028-11-23,13486,13298,13486,,13298,,,,,
-Smile Brands Inc.,First Lien,Healthcare,10.43%,,SOFR,4.5%,,,2027-10-12,2465,2465,2181,,2465,,,,,
-Smile Brands Inc.,First Lien,Healthcare,10.20%,,SOFR,5.5%,,,2027-10-12,1542,1542,1364,,1542,,,,,
-Smile Brands Inc.,First Lien,Healthcare,,,,,,,2027-10-12,100,,12,,,,,,,
-"Solutionreach, Inc.",First Lien,Healthcare,13.75%,,SOFR,6%,,,2025-07-17,4657,4642,4657,,4642,,,,,
-"Solutionreach, Inc.",Revolver,Healthcare,11.50%,,SOFR,7.15%,,,2025-07-15,833,833,833,,833,,,,,
-Spendmend Holdings LLC,First Lien,Healthcare,9.67%,,SOFR,5.15%,,,2028-03-01,2631,2609,2631,,2609,,,,,
-Spendmend Holdings LLC,First Lien,Healthcare,,,,,,,2025-03-03,1109,,8,,,,,,,fair_value_suspicious_vs_size
-Spendmend Holdings LLC,First Lien,Healthcare,,,,,,,2026-11-25,3261,,16,,,,,,,fair_value_suspicious_vs_size
-"Summit Behavioral Healthcare, LLC",First Lien,Healthcare,8.76%,,SOFR,4.25%,,,2028-11-24,1985,1971,1588,,1971,,,,,
-"SV-Aero Holdings, LLC",First Lien,Aerospace & Defense,9.78%,,SOFR,5.25%,,,2030-11-01,15567,15489,15411,,15489,,,,,
-"SV-Aero Holdings, LLC",First Lien,Aerospace & Defense,,,,,,,2026-10-31,7259,,36,,,,,,,fair_value_suspicious_vs_size
-"System Planning and Analysis, Inc.",First Lien,Aerospace & Defense,9.28%,,SOFR,5%,,,2027-08-16,20409,20199,20429,,20199,,,,,
-"System Planning and Analysis, Inc.",First Lien,Aerospace & Defense,,,,,,,2027-08-16,12537,,107,,,,,,,fair_value_suspicious_vs_size
-"S101 Holdings, Inc.",First Lien,Software & Technology,10.24%,,SOFR,5.65%,,,2026-12-29,12408,12284,12346,,12284,,,,,
-"S101 Holdings, Inc.",First Lien,Software & Technology,,,,,,,2025-01-16,3365,,17,,,,,,,fair_value_suspicious_vs_size
-"TCG 3.0 Jogger Acquisitionco, Inc.",First Lien,Media & Entertainment,10.83%,,SOFR,6.5%,,,2029-01-26,6948,6845,6878,,6845,,,,,
-"TCG 3.0 Jogger Acquisitionco, Inc.",Revolver,Media & Entertainment,13.00%,,SOFR,5.5%,,,2029-01-26,243,243,240,,243,,,,,
-"TCG 3.0 Jogger Acquisitionco, Inc.",First Lien,Media & Entertainment,,,,,,,2029-01-26,2184,,22,,,,,,,fair_value_suspicious_vs_size
-"Team Services Group, LLC",First Lien,Healthcare,9.82%,,SOFR,5.25%,,,2027-12-20,15412,15178,15438,,15178,,,,,
-The Bluebird Group LLC,First Lien,Business Services,11.05%,,SOFR,6.65%,,,2026-07-28,8549,8472,8549,,8472,,,,,
-"The Vertex Companies, LLC",First Lien,Industrials,10.24%,,SOFR,6.1%,,,2027-08-30,8957,8878,8832,,8878,,,,,
-"The Vertex Companies, LLC",First Lien,Industrials,,,,,,,2026-11-04,9122,,59,,,,,,,fair_value_suspicious_vs_size
-"The Vertex Companies, LLC",First Lien,Industrials,,,,,,,2027-08-30,5472,,77,,,,,,,fair_value_suspicious_vs_size
-"TPC US Parent, LLC",First Lien,Food & Beverage,10.49%,,SOFR,5.65%,,,2025-11-24,11858,11793,11858,,11793,,,,,
-"TransGo, LLC",First Lien,Automotive,10.11%,,SOFR,5.75%,,,2028-12-29,11601,11450,11601,,11450,,,,,
-TWS Acquisition Corp.,First Lien,Consumer & Retail,10.80%,,SOFR,6.4%,,,2025-06-16,2343,2340,2343,,2340,,,,,
-"Tyto Athene, LLC",First Lien,Software & Technology,9.49%,,SOFR,4.9%,,,2028-04-01,11928,11829,11761,,11829,,,,,
-"US Fertility Enterprises, LLC",First Lien,Healthcare,,,,,,,2026-10-07,54,,,,,,,,,
-"Urology Management Holdings, Inc.",First Lien,Healthcare,9.83%,,SOFR,5.5%,,,2027-06-15,3597,3580,3579,,3580,,,,,
-"VRS Buyer, Inc.",First Lien,Road and Rail,9.26%,,SOFR,4.75%,,,2030-11-22,14454,14347,14346,,14347,,,,,
-"VRS Buyer, Inc.",Revolver,Road and Rail,,,,,,,2030-11-22,3822,,,,,,,,,
-"Walker Edison Furniture Company, LLC",First Lien,Distribution & Wholesale,,,,,,,2029-03-01,500,,500,,,,,,,
-"Walker Edison Furniture Company, LLC",First Lien,Distribution & Wholesale,,,,,,,2029-03-01,1667,1667,1128,,1667,,,,,
-"Watchtower Intermediate, LLC",First Lien,Software & Technology,10.33%,,SOFR,6%,,,2029-12-01,9032,8914,9032,,8914,,,,,
-"Watchtower Intermediate, LLC",First Lien,Software & Technology,,,,,,,2025-12-01,2100,,24,,,,,,,fair_value_suspicious_vs_size
-"Wrench Group, LLC",First Lien,Business Services,8.59%,,SOFR,4.26%,,,2028-10-30,3474,3467,3326,,3467,,,,,
-"Zips Car Wash, LLC",First Lien,Automotive,12.46%,,SOFR,7.4%,,,2025-01-16,13670,13666,12132,,13666,,,,,
-Beacon Behavioral Holdings LLC,First Lien,Healthcare,15.00%,,,,,,2030-06-21,1082,1068,1066,,1068,,,,,
-"ORL Holdco, Inc.",First Lien,Financial Services,18.00%,,,,,,2028-03-08,13,13,10,,13,,,,,
-"ORL Holdco, Inc.",First Lien,Financial Services,,,,,,,2028-03-08,13,,3,,,,,,,
-"OSP Embedded Aggregator, LP",First Lien,Aerospace & Defense,12.00%,,,,,,2030-05-08,47,471,609,,471,,,,,
-"Schlesinger Global, LLC",First Lien,Business Services,12.31%,,SOFR,7%,,,2026-01-08,66,66,136,,66,,,,,
-"StoicLane, Inc.",First Lien,Healthcare,12.00%,,,,,,2027-08-15,1526,1526,1571,,1526,,,,,
-"StoicLane, Inc.",First Lien,Healthcare,,,,,,,2027-08-15,1526,,46,,,,,,,fair_value_suspicious_vs_size
-"Accounting Platform Blocker, Inc.",Preferred Equity,Business Services,,,,,,,,,1076,1087,,1076,,,,1075900,
-"Ad.net Holdings, Inc.",Preferred Equity,Media & Entertainment,,,,,,,,,672,868,,672,,,,6720,
-"AFC Acquisitions, Inc.",Preferred Equity,Distribution & Wholesale,,,,,,,,,1314,1601,,1314,,,,854,
-"Anteriad Holdings, LP",Preferred Equity,Media & Entertainment,,,,,,,,,2018,2108,,2018,,,,2018,
-"BioDerm Holdings, LP",Preferred Equity,Healthcare,,,,,,,,,1313,1128,,1313,,,,1313,
-"Cartessa Aesthetics, LLC",Preferred Equity,Distribution & Wholesale,,,,,,,,,1438,2720,,1438,,,,1437500,
-"Connatix Parent, LLC",Preferred Equity,Media & Entertainment,,,,,,,,,5,5,,5,,,,5311,
-"C5MI Holdco, LLC.",Preferred Equity,Software & Technology,,,,,,,,,223,243,,223,,,,228900,
-"EvAL Home Health Solutions, LLC",Preferred Equity,Healthcare,,,,,,,,,1455,1557,,1455,,,,876386,
-Gauge Schlesinger Coinvest LLC,Preferred Equity,Business Services,,,,,,,,,64,30,,64,,,,64,
-"Hancock Claims Consultants Investors, LLC",Preferred Equity,Insurance,,,,,,,,,76,187,,76,,,,116588,
-"Imagine Topco, LP",Preferred Equity,Software & Technology,8.00%,,,,,,,,1236,1503,,1236,,,,1236027,
-Magnolia Topco LP,Preferred Equity,Automotive,,,,,,,,,47,32,,47,,,,47,
-"Megawatt Acquisition Partners, LLC",Preferred Equity,Software & Technology,,,,,,,,,936,456,,936,,,,9360,
-"NXOF Holdings, Inc.",Preferred Equity,Software & Technology,,,,,,,,,1935,2690,,1935,,,,1935,
-"ORL Holdco, Inc.",Preferred Equity,Financial Services,,,,,,,,,133,20,,133,,,,1327,
-"PL Acquisitionco, LLC",Preferred Equity,Consumer & Retail,,,,,,,,,122,,,122,,,,122,
-"RTIC Parent Holdings, LLC",Preferred Equity,Healthcare,,,,,,,,,1215,1837,,1215,,,,18450,
-"RTIC Parent Holdings, LLC",Preferred Equity,Healthcare,,,,,,,,,196,229,,196,,,,19584,
-SP L2 Holdings LLC,Preferred Equity,Healthcare,,,,,,,,,33,33,,33,,,,135240,
-"TPC Holding Company, LP",Preferred Equity,Food & Beverage,,,,,,,,,409,647,,409,,,,409,
-"TWD Parent Holdings, LLC",Preferred Equity,Industrials,,,,,,,,,35,48,,35,,,,37,
-"UniTek Global Services, Inc.",Preferred Equity,Telecommunications,20.00%,,,,,,,,344,33,,344,,,,343861,
-"A1 Garage Equity, LLC",Other Equity,Business Services,,,,,,,,,648,944,,648,,,,647943,
-"ACP Big Top Holdings, LP.",Other Equity,Industrials,,,,,,,,,3001,3745,,3001,,,,3000500,
-"Ad.net Holdings, Inc.",Other Equity,Media & Entertainment,,,,,,,,,75,22,,75,,,,7467,
-"Aechelon InvestCo, LP",Other Equity,Aerospace & Defense,,,,,,,,,2992,5892,,2992,,,,29917,
-"Aftermarket Drivetrain Products Holdings, LLC",Other Equity,Automotive,,,,,,,,,2632,3701,,2632,,,,2632,
-"AG Investco LP(6),",Other Equity,Software & Technology,,,,,,,,,805,252,,805,,,,805164,
-"AG Investco LP(6),",Other Equity,Software & Technology,,,,,,,,,,134,,,,,,194836,
-"Altamira Intermediate Company II, Inc.",Other Equity,Software & Technology,,,,,,,,,1438,1649,,1438,,,,1437500,
-"Anteriad Holdings, LP",Other Equity,Media & Entertainment,,,,,,,,,,,,,,,,2018,
-"Athletico Holdings, LLC",Other Equity,Healthcare,,,,,,,,,5000,3368,,5000,,,,4678,
-"Azureon Holdings, LLC",Other Equity,Consumer & Retail,,,,,,,,,1131,1047,,1131,,,,1130707,
-"Burgess Point Holdings, LP",Other Equity,Automotive,,,,,,,,,114,118,,114,,,,112,
-"By Light Investco LP(6),",Other Equity,Software & Technology,,,,,,,,,687,21231,,687,,,,22789,cost_suspicious_vs_size
-"Carisk Parent, LP.",Other Equity,Healthcare,,,,,,,,,240,236,,240,,,,239680,
-"Carnegie HoldCo, LLC",Other Equity,Business Services,,,,,,,,,2646,2665,,2646,,,,2719600,
-"Connatix Parent, LLC",Other Equity,Media & Entertainment,,,,,,,,,421,47,,421,,,,38278,
-"Consello Pacific Aggregator, LLC",Other Equity,Business Services,,,,,,,,,973,831,,973,,,,1025476,
-"Crane 1 Acquisition Parent Holdings, LP.",Other Equity,Business Services,,,,,,,,,120,235,,120,,,,130,
-"C5MI Holdco, LLC.",Other Equity,Software & Technology,,,,,,,,,1659,1392,,1659,,,,1659050,
-Delta InvestCo LP,Other Equity,Software & Technology,,,,,,,,,763,1359,,763,,,,804615,
-"DUGGAL EQUITY, LP",Other Equity,Business Services,,,,,,,,,686,718,,686,,,,686,
-"eCommission Holding Corp.(6),",Other Equity,Insurance,,,,,,,,,226,619,,226,,,,20,
-"EDS Topco, LP",Other Equity,Software & Technology,,,,,,,,,1125,1569,,1125,,,,1125000,
-"Events TopCo, LP",Other Equity,Business Services,,,,,,,,,381,381,,381,,,,381300,
-"Exigo, LLC",Other Equity,Software & Technology,,,,,,,,,542,646,,542,,,,541667,
-"FedHC InvestCo LP(6),",Other Equity,Aerospace & Defense,,,,,,,,,810,2648,,810,,,,22671,
-"Five Star Parent Holdings, LLC",Other Equity,Food & Beverage,,,,,,,,,656,546,,656,,,,655714,
-"Gauge ETE Blocker, LLC",Other Equity,Consumer & Retail,,,,,,,,,374,258,,374,,,,374444,
-Gauge Lash Coinvest LLC,Other Equity,Consumer & Retail,,,,,,,,,1393,4783,,1393,,,,1840021,
-"Gauge Loving Tan, LP",Other Equity,Consumer & Retail,,,,,,,,,2915,2968,,2915,,,,2914701,
-Gauge Schlesinger Coinvest LLC,Other Equity,Business Services,,,,,,,,,476,218,,476,,,,465,
-"GCP Boss Holdco, LLC",Other Equity,Energy,,,,,,,,,2195,2195,,2195,,,,2194800,
-GCOM InvestCo LP,Other Equity,Software & Technology,,,,,,,,,3342,4590,,3342,,,,19184,
-"GGG Topco, LLC",Other Equity,Consumer & Retail,,,,,,,,,2760,2770,,2760,,,,2759800,
-"GMP Hills, LP.",Other Equity,Distribution & Wholesale,,,,,,,,,4431,4387,,4431,,,,4430843,
-"Hancock Claims Consultants Investors, LLC(6),",Other Equity,Insurance,,,,,,,,,448,414,,448,,,,450000,
-HPA SPQ Aggregator LP,Other Equity,Business Services,,,,,,,,,750,786,,750,,,,750399,
-"HV Watterson Holdings, LLC",Other Equity,Business Services,,,,,,,,,100,13,,100,,,,100000,
-"Icon Partners V C, LP.",Other Equity,Software & Technology,,,,,,,,,1886,1844,,1886,,,,1885663,
-"Icon Partners V C, LP.(6),",Other Equity,Software & Technology,,,,,,,,,,13,,,,,,614337,
-"IIN Group Holdings, LLC",Other Equity,Consumer & Retail,,,,,,,,,1000,,,1000,,,,1000,
-"Imagine Topco, LP",Other Equity,Software & Technology,,,,,,,,,,,,,,,,1236027,
-"IHS Parent Holdngs, LP.",Other Equity,Business Services,,,,,,,,,1218,1937,,1218,,,,1218045,
-"Ironclad Holdco, LLC",Other Equity,Business Services,,,,,,,,,668,988,,668,,,,6355,
-"ITC Infusion Co-invest, LP",Other Equity,Healthcare,,,,,,,,,1195,2424,,1195,,,,116032,
-"Kinetic Purchaser, LLC",Other Equity,Consumer & Retail,,,,,,,,,1735,1744,,1735,,,,1734775,
-KL Stockton Co-Invest LP,Other Equity,Energy,,,,,,,,,385,781,,385,,,,382353,
-Lightspeed Investment Holdco LLC,Other Equity,Healthcare,,,,,,,,,586,2107,,586,,,,585587,
-"LJ Avalon, LP",Other Equity,Industrials,,,,,,,,,1638,2342,,1638,,,,1638043,
-"Lucky Bucks, LLC",Other Equity,Food & Beverage,,,,,,,,,2062,781,,2062,,,,73870,
-"Marketplace Events Holdings, LP",Other Equity,Media & Entertainment,,,,,,,,,4099,4099,,4099,,,,4099000,
-Magnolia Topco LP,Other Equity,Automotive,,,,,,,,,,,,,,,,46974,
-Magnolia Topco LP,Other Equity,Automotive,,,,,,,,,,,,,,,,30926,
-"MDI Aggregator, LP",Other Equity,Chemicals & Materials,,,,,,,,,1078,1175,,1078,,,,10761,
-"Meadowlark Title, LLC",Other Equity,Business Services,,,,,,,,,806,,,806,,,,819231,
-"Municipal Emergency Services, Inc.",Other Equity,Distribution & Wholesale,,,,,,,,,2005,3611,,2005,,,,1973370,
-"NEPRT Parent Holdings, LLC",Other Equity,Healthcare,,,,,,,,,1438,104,,1438,,,,1494,
-"New Insight Holdings, Inc.",Other Equity,Business Services,,,,,,,,,2771,3036,,2771,,,,158348,
-"New Medina Health, LLC",Other Equity,Healthcare,,,,,,,,,2673,3727,,2673,,,,2672646,
-NFS - CFP Holdings LLC,Other Equity,Business Services,,,,,,,,,1337,1337,,1337,,,,1337017,
-"NORA Parent Holdings, LLC",Other Equity,Healthcare,,,,,,,,,2525,2037,,2525,,,,2544,
-"North Haven Saints Equity Holdings, LP",Other Equity,Healthcare,,,,,,,,,224,250,,224,,,,223602,
-"NXOF Holdings, Inc.",Other Equity,Software & Technology,,,,,,,,,496,,,496,,,,37561,
-"OceanSound Discovery Equity, LP",Other Equity,Aerospace & Defense,,,,,,,,,1736,1806,,1736,,,,173638,
-"OES Co-Invest, LP",Other Equity,Consumer & Retail,,,,,,,,,1574,1989,,1574,,,,1560,
-"OHCP V BC COI, LP.",Other Equity,Distribution & Wholesale,,,,,,,,,1166,758,,1166,,,,1166407,
-"OHCP V BC COI, LP.",Other Equity,Distribution & Wholesale,,,,,,,,,,29,,,,,,83593,
-"ORL Holdco, Inc.",Other Equity,Financial Services,,,,,,,,,15,,,15,,,,1474,
-"OSP Embedded Aggregator, LP",Other Equity,Aerospace & Defense,,,,,,,,,1728,2234,,1728,,,,1728,
-"Output Services Group, Inc.",Other Equity,Business Services,,,,,,,,,642,835,,642,,,,80170,
-"PAR Excellence Holdings, Inc.",Other Equity,Healthcare,,,,,,,,,1902,2569,,1902,,,,1902,
-"PCS Parent, LP",Other Equity,Business Services,,,,,,,,,423,466,,423,,,,423247,
-"PennantPark-TSO Senior Loan Fund, LP(6),",Other Equity,Financial Services,,,,,,,,,11168,8919,,11168,,,,11167847,
-"Pink Lily Holdco, LLC",Other Equity,Consumer & Retail,,,,,,,,,1735,,,1735,,,,1735,
-"Pragmatic Institute, LLC",Other Equity,Business Services,,,,,,,,,611,,,611,,,,610583,
-"Project Granite Holdings, LLC",Other Equity,Business Services,,,,,,,,,1139,1139,,1139,,,,1139,
-"Quad (U.S.) Co-Invest, LP.",Other Equity,Business Services,,,,,,,,,267,358,,267,,,,266864,
-"QuantiTech InvestCo LP(6),",Other Equity,Aerospace & Defense,,,,,,,,,,172,,,,,,700,
-"QuantiTech InvestCo II LP(6),",Other Equity,Aerospace & Defense,,,,,,,,,14,12,,14,,,,40,
-"RFMG Parent, LP",Other Equity,Healthcare,,,,,,,,,1050,1258,,1050,,,,1050000,
-"Safe Haven Defense MidCo, LLC",Other Equity,Industrials,,,,,,,,,596,711,,596,,,,596,
-SBI Holdings Investments LLC,Other Equity,Business Services,,,,,,,,,646,735,,646,,,,64634,
-"Sabel InvestCo, LP",Other Equity,Business Services,,,,,,,,,2271,2271,,2271,,,,87524,
-"Seaway Topco, LP",Other Equity,Chemicals & Materials,,,,,,,,,296,141,,296,,,,296,
-"Seacoast Service Partners, LLC",Other Equity,Consumer & Retail,,,,,,,,,439,439,,439,,,,372,
-"SP L2 Holdings, LLC",Other Equity,Healthcare,,,,,,,,,360,4,,360,,,,360103,
-"SSC Dominion Holdings, LLC",Other Equity,Industrials,,,,,,,,,12,1495,,12,,,,12,cost_suspicious_vs_size
-"StellPen Holdings, LLC",Other Equity,Media & Entertainment,,,,,,,,,162,139,,162,,,,161538,
-"SV Aero Holdings, LLC",Other Equity,Aerospace & Defense,,,,,,,,,535,1328,,535,,,,61,
-"TAC LifePort Holdings, LLC(6),",Other Equity,Aerospace & Defense,,,,,,,,,502,1046,,502,,,,533833,
-"TCG 3.0 Jogger Co-Invest, LP",Other Equity,Media & Entertainment,,,,,,,,,1760,1209,,1760,,,,9108,
-"Tower Arch Infolinks Media, LP",Other Equity,Media & Entertainment,,,,,,,,,102,302,,102,,,,222570,
-"TWD Parent Holdings, LLC",Other Equity,Industrials,,,,,,,,,1,3,,1,,,,749,
-"Tinicum Space Coast Co-Invest, LLC",Other Equity,Aerospace & Defense,,,,,,,,,4702,4609,,4702,,,,466,
-"UniTek Global Services, Inc.",Other Equity,Telecommunications,,,,,,,,,,,,,,,,213739,
-"UniVista Insurance(6),",Other Equity,Insurance,,,,,,,,,328,760,,328,,,,400,
-"Urology Partners Co., LP.",Other Equity,Healthcare,,,,,,,,,694,1035,,694,,,,694444,
-Walker Edison Holdco LLC,Other Equity,Healthcare,,,,,,,,,3393,,,3393,,,,36458,
-"Watchtower Holdings, LLC",Other Equity,Software & Technology,,,,,,,,,1242,1369,,1242,,,,12419,
-"WCP IvyRehab Coinvestment, LP",Other Equity,Healthcare,,,,,,,,,208,222,,208,,,,208,
-"WCP IvyRehab QP CF Feeder, LP",Other Equity,Healthcare,,,,,,,,,3784,4007,,3784,,,,3754,
-"WCP Ivyrehab QP CF Feeder, LP. - Unfunded",Other Equity,Healthcare,,,,,,,,,,,,,,,,246,
-"UniTek Global Services, Inc.",Other Equity,Telecommunications,,,,,,,,,,,,,,,,23889,
-"Kentucky Racing Holdco, LLC",Other Equity,Food & Beverage,,,,,,,,,,995,,,,,,87345,
-"PennantPark Senior Secured Loan Fund I LLC(6),",First Lien,Financial Services,12.61%,,SOFR,8%,,,2029-05-06,237650,237650,237650,,237650,,,,,
-"PennantPark Senior Secured Loan Fund I LLC(6),",Other Equity,Financial Services,,,,,,,,,101850,48911,,101850,,,,101850,
-"A1 Garage Merger Sub, LLC",First Lien,Business Services,10.95%,,SOFR,6.1%,,,2028-12-22,1579,1559,1579,,1559,,,,,
-"ACP Avenu Buyer, LLC",First Lien,Software & Technology,10.58%,,SOFR,5.25%,,,2029-10-02,14121,13905,13662,,13905,,,,,
-"ACP Avenu Buyer, LLC",First Lien,Software & Technology,,,,,,,2025-04-02,5621,,105,,,,,,,fair_value_suspicious_vs_size
-"ACP Avenu Buyer, LLC",Revolver,Software & Technology,9.85%,,SOFR,5.25%,,,2029-10-02,847,847,819,,847,,,,,
-"ACP Avenu Buyer, LLC",First Lien,Software & Technology,,,,,,,2029-10-02,2960,,96,,,,,,,fair_value_suspicious_vs_size
-"Ad.net Acquisition, LLC",First Lien,Media & Entertainment,10.93%,,SOFR,6.26%,,,2026-05-07,4838,4808,4838,,4808,,,,,
-"Ad.net Acquisition, LLC",Revolver,Media & Entertainment,10.93%,,SOFR,6.26%,,,2026-05-07,498,498,498,,498,,,,,
-"Aechelon Technology, Inc.",First Lien,Aerospace & Defense,12.35%,,SOFR,7.5%,,,2029-08-16,14000,13862,13719,,13862,,,,,
-"Aechelon Technology, Inc.",Revolver,Aerospace & Defense,,,,,,,2029-08-16,3104,,62,,,,,,,fair_value_suspicious_vs_size
-"Aeronix, Inc.",First Lien,Aerospace & Defense,9.85%,,SOFR,5.25%,,,2028-12-18,32753,32332,32753,,32332,,,,,
-AFC Dell Holding Corp.,First Lien,Distribution & Wholesale,10.49%,,SOFR,5.5%,,,2027-04-09,28494,28420,28209,,28420,,,,,
-AFC Dell Holding Corp.,First Lien,Distribution & Wholesale,,,,,,,2027-04-09,7460,,75,,,,,,,fair_value_suspicious_vs_size
-Amsive Holding Corp.,First Lien,Media & Entertainment,10.75%,,SOFR,6.5%,,,2025-06-10,13813,13765,13675,,13765,,,,,
-"Anteriad, LLC",First Lien,Media & Entertainment,10.50%,,SOFR,5.9%,,,2026-06-30,13005,12845,13005,,12845,,,,,
-"Anteriad, LLC",First Lien,Media & Entertainment,10.50%,,SOFR,5.9%,,,2026-06-30,2098,2085,2097,,2085,,,,,
-"Applied Technical Services, LLC",First Lien,Business Services,10.50%,,SOFR,5.9%,,,2026-12-29,12597,12486,12408,,12486,,,,,
-"Applied Technical Services, LLC",First Lien,Business Services,,,,,,,2025-07-17,3990,,20,,,,,,,fair_value_suspicious_vs_size
-"Applied Technical Services, LLC",First Lien,Business Services,12.75%,,SOFR,4.75%,,,2026-12-29,1441,1441,1420,,1441,,,,,
-"Applied Technical Services, LLC",First Lien,Business Services,,,,,,,2026-12-29,852,,13,,,,,,,
-Arcfield Acquisition Corp.,First Lien,Aerospace & Defense,11.56%,,SOFR,6.25%,,,2029-08-03,5951,5869,5921,,5869,,,,,
-Arcfield Acquisition Corp.,First Lien,Aerospace & Defense,,,,,,,2028-08-04,1379,,7,,,,,,,fair_value_suspicious_vs_size
-"Archer Lewis, LLC",First Lien,Healthcare,10.83%,,SOFR,5.75%,,,2029-08-28,21700,21485,21266,,21485,,,,,
-"Archer Lewis, LLC",First Lien,Healthcare,,,,,,,2025-08-28,13280,,133,,,,,,,fair_value_suspicious_vs_size
-"Archer Lewis, LLC",First Lien,Healthcare,,,,,,,2026-08-28,21267,,213,,,,,,,fair_value_suspicious_vs_size
-"Archer Lewis, LLC",Revolver,Healthcare,,,,,,,2029-08-28,3252,,65,,,,,,,fair_value_suspicious_vs_size
-"ARGANO, LLC",First Lien,Business Services,10.85%,,SOFR,5.75%,,,2029-09-13,35768,35411,35409,,35411,,,,,
-"Beacon Behavioral Support Service, LLC",First Lien,Healthcare,10.10%,,SOFR,5.25%,,,2029-06-21,25067,24725,24691,,24725,,,,,
-"Beacon Behavioral Support Service, LLC",First Lien,Healthcare,,,,,,,2025-12-21,7565,,38,,,,,,,fair_value_suspicious_vs_size
-"Beacon Behavioral Support Service, LLC",Revolver,Healthcare,,,,,,,2029-06-21,2434,,37,,,,,,,fair_value_suspicious_vs_size
-"Beta Plus Technologies, Inc.",First Lien,Software & Technology,10.35%,,SOFR,5.75%,,,2029-07-01,19806,19212,19212,,19212,,,,,
-"Big Top Holdings, LLC",First Lien,Industrials,11.10%,,SOFR,6.25%,,,2030-02-28,30873,30358,30873,,30358,,,,,
-"BioDerm, Inc.",First Lien,Healthcare,11.70%,,SOFR,6.5%,,,2028-01-31,589,589,582,,589,,,,,
-"BioDerm, Inc.",First Lien,Healthcare,,,,,,,2028-01-31,482,,6,,,,,,,
-"Blackhawk Industrial Distribution, Inc.",First Lien,Distribution & Wholesale,10.90%,,SOFR,6.4%,,,2026-09-17,8206,8143,8064,,8143,,,,,
-"Blackhawk Industrial Distribution, Inc.",First Lien,Distribution & Wholesale,11.04%,,SOFR,6.4%,,,2026-09-17,874,874,859,,874,,,,,
-"Blackhawk Industrial Distribution, Inc.",First Lien,Distribution & Wholesale,,,,,,,2026-09-17,3009,,51,,,,,,,fair_value_suspicious_vs_size
-"BlueHalo Financing Holdings, LLC",First Lien,Aerospace & Defense,10.60%,,SOFR,6%,,,2025-10-31,6462,6422,6332,,6422,,,,,
-"Broder Bros., Co.",First Lien,Consumer & Retail,10.97%,,SOFR,6.11%,,,2025-12-04,3218,3218,3218,,3218,,,,,
-Burgess Point Purchaser Corp.,First Lien,Automotive,10.20%,,SOFR,5.35%,,,2029-07-25,14962,14219,14075,,14219,,,,,
-"By Light Professional IT Services, LLC",First Lien,Software & Technology,12.18%,,SOFR,6.98%,,,2025-05-16,46992,46893,46992,,46893,,,,,
-"Carisk Buyer, Inc.",First Lien,Healthcare,10.35%,,SOFR,5.75%,,,2029-12-01,5473,5397,5390,,5397,,,,,
-"Carisk Buyer, Inc.",First Lien,Healthcare,,,,,,,2029-12-01,4813,,24,,,,,,,fair_value_suspicious_vs_size
-"Carnegie Dartlet, LLC",First Lien,Business Services,10.35%,,SOFR,5.5%,,,2030-02-07,29850,29410,29402,,29410,,,,,
-"Carnegie Dartlet, LLC",First Lien,Business Services,,,,,,,2030-02-07,5405,,81,,,,,,,fair_value_suspicious_vs_size
-"Cartessa Aesthetics, LLC",First Lien,Distribution & Wholesale,10.35%,,SOFR,5.75%,,,2028-06-14,12944,12802,12943,,12802,,,,,
-"Cartessa Aesthetics, LLC",First Lien,Distribution & Wholesale,10.35%,,SOFR,5.75%,,,2028-06-14,511,511,511,,511,,,,,
-"CF512, Inc.",First Lien,Media & Entertainment,11.21%,,SOFR,6.19%,,,2026-08-20,5919,5888,5830,,5888,,,,,
-"CF512, Inc.(Revolver)(7),",First Lien,Media & Entertainment,,,,,,,2026-08-20,955,,14,,,,,,,type_hint_revolver_from_name
-"Compex Legal Services, Inc.",First Lien,Business Services,10.88%,,SOFR,5.55%,,,2026-02-09,8833,8814,8833,,8814,,,,,
-"Compex Legal Services, Inc.",First Lien,Business Services,10.80%,,SOFR,5.55%,,,2025-02-07,703,703,703,,703,,,,,
-"Confluent Health, LLC",First Lien,Healthcare,9.85%,,SOFR,5%,,,2028-11-30,6965,6771,6965,,6771,,,,,
-"Connatix Buyer, Inc.",First Lien,Media & Entertainment,10.53%,,SOFR,5.61%,,,2027-07-13,3775,3734,3775,,3734,,,,,
-"Connatix Buyer, Inc.",Revolver,Media & Entertainment,10.58%,,SOFR,5.76%,,,2027-07-13,281,281,281,,281,,,,,
+company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
+"A1 Garage Merger Sub, LLC",First Lien,Commercial Services & Supplies,9.11%,,SOFR,4.75%,,,2028-12-22,1575,1557,1575,,1557,,,,,,PFLT,2025-02-10
+"A1 Garage Merger Sub, LLC",First Lien,Commercial Services & Supplies,,,,,,,2028-12-22,453,,7,,,,,,,,PFLT,2025-02-10
+"A1 Garage Merger Sub, LLC (Revolver)(6),",First Lien,Commercial Services & Supplies,,,,,,,2028-12-22,748,,,,,,,,,,PFLT,2025-02-10
+"ACP Avenu Buyer, LLC",First Lien,IT Services,9.84%,,SOFR,5.25%,,,2029-10-02,14086,13877,13698,,13877,,,,,,PFLT,2025-02-10
+"ACP Avenu Buyer, LLC",First Lien,IT Services,,,,,,,2025-04-02,5621,,77,,,,,,,,PFLT,2025-02-10
+"ACP Avenu Buyer, LLC",Revolver,IT Services,9.84%,,SOFR,5.25%,,,2029-10-02,847,847,824,,847,,,,,,PFLT,2025-02-10
+"ACP Avenu Buyer, LLC (Revolver)(6),",First Lien,IT Services,,,,,,,2029-10-02,2960,,81,,,,,,,,PFLT,2025-02-10
+"ACP Falcon Buyer, LLC (Revolver)(6),",First Lien,Professional Services,,,,,,,2029-08-01,3096,,,,,,,,,,PFLT,2025-02-10
+"Ad.net Acquisition, LLC",First Lien,Media,10.59%,,SOFR,6.26%,,,2026-05-06,4825,4799,4825,,4799,,,,,,PFLT,2025-02-10
+"Ad.net Acquisition, LLC",Revolver,Media,10.59%,,SOFR,6.26%,,,2026-05-06,818,818,818,,818,,,,,,PFLT,2025-02-10
+"Ad.net Acquisition, LLC (Revolver)(6),",First Lien,Media,,,,,,,2026-05-06,426,,,,,,,,,,PFLT,2025-02-10
+"Aechelon Technology, Inc.",First Lien,Aerospace and Defense,11.86%,,SOFR,7.5%,,,2029-08-16,13860,13728,13860,,13728,,,,,,PFLT,2025-02-10
+"Aechelon Technology, Inc.",Revolver,Aerospace and Defense,,,,,,,2029-08-16,3104,,,,,,,,,,PFLT,2025-02-10
+AFC Dell Holding Corp.,First Lien,Distributors,10.04%,,SOFR,5.5%,,,2027-04-09,27427,27359,27427,,27359,,,,,,PFLT,2025-02-10
+AFC Dell Holding Corp.,First Lien,Distributors,,,,,,,2027-04-09,7460,,,,,,,,,,PFLT,2025-02-10
+Amsive Holding Corporation (f/k/a Vision Purchaser Corporation),First Lien,Media,10.75%,,SOFR,6.5%,,,2025-06-10,13777,13746,13639,,13746,,,,,,PFLT,2025-02-10
+"Anteriad, LLC (f/k/a MeritDirect, LLC)",First Lien,Media,10.23%,,SOFR,5.9%,,,2026-06-30,12809,12666,12809,,12666,,,,,,PFLT,2025-02-10
+"Anteriad, LLC (f/k/a MeritDirect, LLC) - Incremental Term Loan",First Lien,Media,10.23%,,SOFR,5.9%,,,2026-06-30,2070,2057,2070,,2057,,,,,,PFLT,2025-02-10
+"Anteriad, LLC (f/k/a MeritDirect, LLC) (Revolver)",First Lien,Media,10.19%,,SOFR,5.85%,,,2026-06-30,820,820,820,,820,,,,,,PFLT,2025-02-10
+"Anteriad, LLC (f/k/a MeritDirect, LLC) - (Revolver)",First Lien,Media,,,,,,,2026-06-30,2050,,,,,,,,,,PFLT,2025-02-10
+"Applied Technical Services, LLC",First Lien,Commercial Services & Supplies,10.23%,,SOFR,5.9%,,,2026-12-29,12565,12470,12411,,12470,,,,,,PFLT,2025-02-10
+"Applied Technical Services, LLC",First Lien,Commercial Services & Supplies,,,,,,,2025-07-17,3990,,10,,,,,,,,PFLT,2025-02-10
+"Applied Technical Services, LLC (Revolver)",First Lien,Commercial Services & Supplies,12.75%,,SOFR,4.75%,,,2026-12-29,2031,2031,2006,,2031,,,,,,PFLT,2025-02-10
+"Applied Technical Services, LLC (Revolver)(6),",First Lien,Commercial Services & Supplies,,,,,,,2026-12-29,262,,3,,,,,,,,PFLT,2025-02-10
+Arcfield Acquisition Corp. (Revolver),First Lien,Aerospace and Defense,9.17%,,SOFR,5%,,,2031-10-28,19540,19517,19491,,19517,,,,,,PFLT,2025-02-10
+"Arcfield Acquisition Corp. (Revolver)(6),",First Lien,Aerospace and Defense,,,,,,,2031-10-28,2874,,7,,,,,,,,PFLT,2025-02-10
+"Archer Lewis, LLC",First Lien,Healthcare Technology,10.08%,,SOFR,5.75%,,,2029-08-28,20281,20087,20078,,20087,,,,,,PFLT,2025-02-10
+"Archer Lewis, LLC - Unfunded Term Loan A",First Lien,Healthcare Technology,,,,,,,2025-08-28,4648,,,,,,,,,,PFLT,2025-02-10
+"Archer Lewis, LLC - Unfunded Term Loan B",First Lien,Healthcare Technology,,,,,,,2026-08-28,21267,,,,,,,,,,PFLT,2025-02-10
+"Archer Lewis, LLC",Revolver,Healthcare Technology,,,,,,,2029-08-28,3252,,33,,,,,,,,PFLT,2025-02-10
+"ARGANO, LLC",First Lien,Business Services,10.15%,,SOFR,5.75%,,,2029-09-13,25704,25452,25447,,25452,,,,,,PFLT,2025-02-10
+"ARGANO, LLC",First Lien,Business Services,,,,,,,2025-03-13,8907,,,,,,,,,,PFLT,2025-02-10
+"ARGANO, LLC",Revolver,Business Services,,,,,,,2029-09-13,1421,,14,,,,,,,,PFLT,2025-02-10
+"Azureon, LLC",First Lien,Diversified Consumer Services,10.20%,,SOFR,5.75%,,,2029-06-26,11609,11460,11354,,11460,,,,,,PFLT,2025-02-10
+"Azureon, LLC",First Lien,Diversified Consumer Services,,,,,,,2026-06-26,10359,,124,,,,,,,,PFLT,2025-02-10
+"Azureon, LLC",Revolver,Diversified Consumer Services,,,,,,,2029-06-26,2580,,57,,,,,,,,PFLT,2025-02-10
+"Beacon Behavioral Support Service, LLC",First Lien,Healthcare Providers and Services,9.83%,,SOFR,5.5%,,,2029-06-21,32530,32133,32042,,32133,,,,,,PFLT,2025-02-10
+"Beacon Behavioral Support Service, LLC",First Lien,Healthcare Providers and Services,,,,,,,2025-12-21,12415,,62,,,,,,,,PFLT,2025-02-10
+"Beacon Behavioral Support Service, LLC",Revolver,Healthcare Providers and Services,,,,,,,2029-06-21,2104,,32,,,,,,,,PFLT,2025-02-10
+"Best Practice Associates, LLC",First Lien,Aerospace and Defense,11.08%,,SOFR,6.75%,,,2029-11-08,64278,63324,63314,,63324,,,,,,PFLT,2025-02-10
+"Best Practice Associates, LLC",Revolver,Aerospace and Defense,,,,,,,2029-11-08,5732,,86,,,,,,,,PFLT,2025-02-10
+"Beta Plus Technologies, Inc.",First Lien,Internet Software and Services,10.08%,,SOFR,5.75%,,,2029-07-01,19756,19183,19212,,19183,,,,,,PFLT,2025-02-10
+"Big Top Holdings, LLC",First Lien,Construction & Engineering,10.11%,,SOFR,5.75%,,,2030-02-28,29602,29120,29602,,29120,,,,,,PFLT,2025-02-10
+"Big Top Holdings, LLC - (Revolver)",First Lien,Construction & Engineering,,,,,,,2030-02-28,4479,,,,,,,,,,PFLT,2025-02-10
+"BioDerm, Inc. (Revolver)",First Lien,Healthcare Equipment and Supplies,11.03%,,SOFR,6.5%,,,2028-01-31,964,964,952,,964,,,,,,PFLT,2025-02-10
+"BioDerm, Inc. (Revolver)(6),",First Lien,Healthcare Equipment and Supplies,,,,,,,2028-01-31,107,,1,,,,,,,,PFLT,2025-02-10
+"Blackhawk Industrial Distribution, Inc.",First Lien,Distributors,9.73%,,SOFR,5.4%,,,2026-09-17,8199,8146,8057,,8146,,,,,,PFLT,2025-02-10
+"Blackhawk Industrial Distribution, Inc.",First Lien,Distributors,,,,,,,2026-09-17,1893,,14,,,,,,,,PFLT,2025-02-10
+"Blackhawk Industrial Distribution, Inc. (Revolver)",First Lien,Distributors,11.04%,,SOFR,6.4%,,,2026-09-17,679,679,668,,679,,,,,,PFLT,2025-02-10
+"Blackhawk Industrial Distribution, Inc.",First Lien,Distributors,,,,,,,2026-09-17,3203,,55,,,,,,,,PFLT,2025-02-10
+"BLC Holding Company, Inc.",First Lien,Business Services,9.28%,,SOFR,4.75%,,,2030-11-20,25027,24845,24839,,24845,,,,,,PFLT,2025-02-10
+"BLC Holding Company, Inc.",First Lien,Business Services,,,,,,,2026-11-20,14293,,,,,,,,,,PFLT,2025-02-10
+"BLC Holding Company, Inc.",Revolver,Business Services,,,,,,,2030-11-20,4398,,,,,,,,,,PFLT,2025-02-10
+"Boss Industries, LLC",First Lien,Independent Power and Renewable Electricity Producers,9.33%,,SOFR,5%,,,2030-12-27,23100,22928,22927,,22928,,,,,,PFLT,2025-02-10
+"Boss Industries, LLC",Revolver,Independent Power and Renewable Electricity Producers,9.33%,,SOFR,5%,,,2030-12-27,549,549,549,,549,,,,,,PFLT,2025-02-10
+"Boss Industries, LLC",Revolver,Independent Power and Renewable Electricity Producers,,,,,,,2030-12-27,2195,,,,,,,,,,PFLT,2025-02-10
+"BlueHalo Financing Holdings, LLC",First Lien,Aerospace and Defense,10.33%,,SOFR,6%,,,2025-10-31,9170,9135,9124,,9135,,,,,,PFLT,2025-02-10
+Burgess Point Purchaser Corporation,First Lien,Auto Components,9.68%,,SOFR,5.35%,,,2029-07-25,14924,14209,13217,,14209,,,,,,PFLT,2025-02-10
+"By Light Professional IT Services, LLC",First Lien,High Tech Industries,11.31%,,SOFR,6.98%,,,2025-05-16,46448,46378,46448,,46378,,,,,,PFLT,2025-02-10
+"By Light Professional IT Services, LLC (Revolver)(6),",First Lien,High Tech Industries,,,,,,,2025-05-16,5831,,,,,,,,,,PFLT,2025-02-10
+"Carisk Buyer, Inc.",First Lien,Healthcare Technology,9.58%,,SOFR,5.25%,,,2029-12-01,7453,7370,7341,,7370,,,,,,PFLT,2025-02-10
+"Carisk Buyer, Inc.",First Lien,Healthcare Technology,,,,,,,2029-12-01,7868,,47,,,,,,,,PFLT,2025-02-10
+"Carisk Buyer, Inc. (Revolver)(6),",First Lien,Healthcare Technology,,,,,,,2029-12-01,1750,,26,,,,,,,,PFLT,2025-02-10
+"Carnegie Dartlet, LLC",First Lien,Professional Services,9.86%,,SOFR,5.5%,,,2030-02-07,29775,29350,29328,,29350,,,,,,PFLT,2025-02-10
+"Carnegie Dartlet, LLC",First Lien,Professional Services,,,,,,,2026-02-07,16214,,81,,,,,,,,PFLT,2025-02-10
+"Carnegie Dartlet, LLC",Revolver,Professional Services,9.86%,,SOFR,5.5%,,,2030-02-07,324,324,319,,324,,,,,,PFLT,2025-02-10
+"Carnegie Dartlet, LLC - (Revolver)",First Lien,Professional Services,,,,,,,2030-02-07,5080,,76,,,,,,,,PFLT,2025-02-10
+"Cartessa Aesthetics, LLC",First Lien,Distributors,10.08%,,SOFR,5.75%,,,2028-06-14,12911,12782,12911,,12782,,,,,,PFLT,2025-02-10
+"Cartessa Aesthetics, LLC (Revolver)",First Lien,Distributors,10.08%,,SOFR,5.75%,,,2028-06-14,511,511,511,,511,,,,,,PFLT,2025-02-10
+"Cartessa Aesthetics, LLC (Revolver)(6),",First Lien,Distributors,,,,,,,2028-06-14,927,,,,,,,,,,PFLT,2025-02-10
+"Case Works, LLC",First Lien,Professional Services,9.59%,,SOFR,5.25%,,,2029-10-01,18772,18612,18622,,18612,,,,,,PFLT,2025-02-10
+"Case Works, LLC",First Lien,Professional Services,,,,,,,2025-10-01,1854,,1,,,,,,,,PFLT,2025-02-10
+Case Works,Revolver,Professional Services,9.65%,,SOFR,5.25%,,,2029-10-01,1643,1643,1630,,1643,,,,,,PFLT,2025-02-10
+Case Works,Revolver,Professional Services,,,,,,,2029-10-01,2465,,20,,,,,,,,PFLT,2025-02-10
+"CF512, Inc.",First Lien,Media,10.69%,,SOFR,6.19%,,,2026-08-20,5728,5701,5642,,5701,,,,,,PFLT,2025-02-10
+"CF512, Inc.(Revolver)(6),",First Lien,Media,,,,,,,2026-08-20,955,,14,,,,,,,,PFLT,2025-02-10
+"CJX Borrower, LLC",First Lien,Media,10.39%,,SOFR,5.76%,,,2027-07-13,4515,4469,4515,,4469,,,,,,PFLT,2025-02-10
+"CJX Borrower , LLC",First Lien,Media,,,,,,,2027-07-13,666,,3,,,,,,,,PFLT,2025-02-10
+"CJX Borrower, LLC",Revolver,Media,10.19%,,SOFR,5.76%,,,2027-07-13,331,331,331,,331,,,,,,PFLT,2025-02-10
+"CJX Borrower , LLC",Revolver,Media,,,,,,,2027-07-13,904,,,,,,,,,,PFLT,2025-02-10
+"Compex Legal Services, Inc.",First Lien,Professional Services,9.95%,,SOFR,5.45%,,,2026-02-09,8810,8793,8810,,8793,,,,,,PFLT,2025-02-10
+"Compex Legal Services, Inc. (Revolver)",First Lien,Professional Services,10.14%,,SOFR,5.55%,,,2025-02-07,703,703,703,,703,,,,,,PFLT,2025-02-10
+"Compex Legal Services, Inc. (Revolver)(6),",First Lien,Professional Services,,,,,,,2025-02-07,703,,,,,,,,,,PFLT,2025-02-10
+"Confluent Health, LLC",First Lien,Healthcare Providers and Services,9.36%,,SOFR,5%,,,2028-11-30,6948,6762,6600,,6762,,,,,,PFLT,2025-02-10
+"Crane 1 Services, Inc.",First Lien,Commercial Services & Supplies,10.22%,,SOFR,5.86%,,,2027-08-16,4264,4217,4232,,4217,,,,,,PFLT,2025-02-10
+"Crane 1 Services, Inc. (Revolver)(6),",First Lien,Commercial Services & Supplies,,,,,,,2027-08-16,502,,4,,,,,,,,PFLT,2025-02-10
+"C5MI Holdco, LLC",First Lien,IT Services,10.33%,,SOFR,6%,,,2030-07-31,28928,28511,28494,,28511,,,,,,PFLT,2025-02-10
+"C5MI Holdco, LLC.",Revolver,IT Services,10.33%,,SOFR,6%,,,2030-07-31,1515,1515,1493,,1515,,,,,,PFLT,2025-02-10
+"C5MI Holdco, LLC.",Revolver,IT Services,,,,,,,2030-07-31,7577,,114,,,,,,,,PFLT,2025-02-10
+DRI Holding Inc.,First Lien,Media,9.71%,,SOFR,5.35%,,,2028-12-21,6107,5936,5924,,5936,,,,,,PFLT,2025-02-10
+"Dr. Squatch, LLC",First Lien,Personal Products,9.68%,,SOFR,5.35%,,,2027-08-31,16828,16677,16828,,16677,,,,,,PFLT,2025-02-10
+"Dr. Squatch, LLC (Revolver)(6),",First Lien,Personal Products,,,,,,,2027-08-31,3353,,,,,,,,,,PFLT,2025-02-10
+"DRS Holdings III, Inc.",First Lien,"Chemicals, Plastics and Rubber",10.71%,,SOFR,6.35%,,,2025-11-03,15435,15384,15373,,15384,,,,,,PFLT,2025-02-10
+"DRS Holdings III, Inc. (Revolver)(6),",First Lien,Personal Products,,,,,,,2025-11-03,1426,,6,,,,,,,,PFLT,2025-02-10
+"Duggal Acquisition, LLC",First Lien,Marketing Services,9.08%,,SOFR,4.75%,,,2030-09-30,10295,10194,10192,,10194,,,,,,PFLT,2025-02-10
+"Duggal Acquisition, LLC",First Lien,Marketing Services,,,,,,,2026-09-30,4470,,,,,,,,,,PFLT,2025-02-10
+"DUGGAL Acquisition, LLC",Revolver,Marketing Services,9.08%,,SOFR,4.75%,,,2030-09-30,1121,1121,1110,,1121,,,,,,PFLT,2025-02-10
+"Duggal Acquisition, LLC",Revolver,Marketing Services,,,,,,,2030-09-30,4484,,45,,,,,,,,PFLT,2025-02-10
+"Dynata, LLC",First Lien,Business Services,9.79%,,SOFR,5.26%,,,2028-10-16,1851,1728,1851,,1728,,,,,,PFLT,2025-02-10
+"Dynata, LLC",First Lien,Business Services,10.29%,,SOFR,5.76%,,,2028-10-15,11486,11486,10653,,11486,,,,,,PFLT,2025-02-10
+"Emergency Care Partners, LLC",First Lien,Healthcare Providers and Services,10.13%,,SOFR,5.5%,,,2027-10-18,13736,13638,13633,,13638,,,,,,PFLT,2025-02-10
+"Emergency Care Partners, LLC",First Lien,Healthcare Providers and Services,,,,,,,2026-04-18,6172,,46,,,,,,,,PFLT,2025-02-10
+"Emergency Care Partners, LLC",Revolver,Healthcare Providers and Services,,,,,,,2027-10-18,1810,,14,,,,,,,,PFLT,2025-02-10
+"EDS Buyer, LLC",First Lien,"Electronic Equipment, Instruments, and Components",10.08%,,SOFR,5.75%,,,2029-01-10,10646,10524,10566,,10524,,,,,,PFLT,2025-02-10
+"EDS Buyer, LLC. (Revolver)(6),",First Lien,"Electronic Equipment, Instruments, and Components",,,,,,,2029-01-10,2298,,17,,,,,,,,PFLT,2025-02-10
+"Efficient Collaborative Retail Marketing Company, LLC",First Lien,Media: Diversified and Production,12.09%,,SOFR,7.76%,,,2025-06-15,8207,8228,6566,,8228,,,,,,PFLT,2025-02-10
+"ETE Intermediate II, LLC",Revolver,Diversified Consumer Services,10.83%,,SOFR,6.5%,,,2029-05-25,1436,1436,1436,,1436,,,,,,PFLT,2025-02-10
+"ETE Intermediate II, LLC",Revolver,Diversified Consumer Services,,,,,,,2029-05-25,994,,,,,,,,,,PFLT,2025-02-10
+"Events Buyer, LLC",First Lien,Event Services,10.10%,,SOFR,5.75%,,,2029-12-17,11380,11268,11266,,11268,,,,,,PFLT,2025-02-10
+"Events Buyer, LLC- Unfunded Term Loan A",First Lien,Event Services,,,,,,,2025-06-17,10358,,,,,,,,,,PFLT,2025-02-10
+"Events Buyer, LLC- Unfunded Term Loan B",First Lien,Event Services,,,,,,,2026-12-17,9865,,,,,,,,,,PFLT,2025-02-10
+"Events Buyer, LLC",Revolver,Event Services,,,,,,,2029-12-17,2466,,,,,,,,,,PFLT,2025-02-10
+"Eval Home Health Solutions Intermediate, LLC",First Lien,"Healthcare, Education and Childcare",10.11%,,SOFR,5.75%,,,2030-05-10,14455,14242,14311,,14242,,,,,,PFLT,2025-02-10
+"Eval Home Health Solutions Intermediate, LLC",Revolver,"Healthcare, Education and Childcare",,,,,,,2030-05-10,2640,,26,,,,,,,,PFLT,2025-02-10
+"Exigo Intermediate II, LLC (Revolver)",First Lien,Software,,,,,,,2027-03-15,689,,,,,,,,,,PFLT,2025-02-10
+Fairbanks Morse Defense,First Lien,Aerospace and Defense,9.05%,,SOFR,4.5%,,,2028-06-23,992,988,997,,988,,,,,,PFLT,2025-02-10
+"Five Star Buyer, Inc.",First Lien,"Hotels, Restaurants and Leisure",11.44%,,SOFR,7.1%,,,2028-02-23,4437,4377,4403,,4377,,,,,,PFLT,2025-02-10
+"Five Star Buyer, Inc. (Revolver)",First Lien,"Hotels, Restaurants and Leisure",,,,,,,2028-02-23,741,,6,,,,,,,,PFLT,2025-02-10
+"Gauge ETE Blocker, LLC - Promissory Note",First Lien,Diversified Consumer Services,12.56%,,,,,,2029-05-19,215,215,215,,215,,,,,,PFLT,2025-02-10
+"GGG MIDCO, LLC",First Lien,Diversified Consumer Services,9.33%,,SOFR,5%,,,2030-09-27,25704,25456,25447,,25456,,,,,,PFLT,2025-02-10
+"GGG MIDCO, LLC",First Lien,Diversified Consumer Services,,,,,,,2026-03-27,14460,,,,,,,,,,PFLT,2025-02-10
+"GGG MIDCO, LLC",Revolver,Diversified Consumer Services,,,,,,,2030-09-27,1311,,13,,,,,,,,PFLT,2025-02-10
+Global Holdings InterCo LLC,First Lien,Diversified Financial Services,9.98%,,SOFR,5.6%,,,2026-03-16,4882,4832,4686,,4832,,,,,,PFLT,2025-02-10
+"Graffiti Buyer, Inc.",First Lien,Trading Companies & Distributors,10.12%,,SOFR,5.6%,,,2027-08-10,1347,1338,1327,,1338,,,,,,PFLT,2025-02-10
+"Graffiti Buyer, Inc.",First Lien,Trading Companies & Distributors,,,,,,,2027-08-10,984,,7,,,,,,,,PFLT,2025-02-10
+"Graffiti Buyer, Inc. (Revolver)",First Lien,Trading Companies & Distributors,10.12%,,SOFR,5.6%,,,2027-08-10,548,548,539,,548,,,,,,PFLT,2025-02-10
+"Graffiti Buyer, Inc. (Revolver)(6),",First Lien,Trading Companies & Distributors,,,,,,,2027-08-10,317,,5,,,,,,,,PFLT,2025-02-10
+Hancock Roofing and Construction L.L.C.,First Lien,Insurance,9.93%,,SOFR,5.6%,,,2026-12-31,3993,3952,3993,,3952,,,,,,PFLT,2025-02-10
+Hancock Roofing and Construction L.L.C. (Revolver),First Lien,Insurance,9.96%,,SOFR,5.6%,,,2026-12-31,680,680,680,,680,,,,,,PFLT,2025-02-10
+"Hancock Roofing and Construction L.L.C. (Revolver)(6),",First Lien,Insurance,,,,,,,2026-12-31,70,,,,,,,,,,PFLT,2025-02-10
+Harris & Co. LLC,First Lien,Professional Services,9.36%,,SOFR,5%,,,2030-08-09,28062,27825,28062,,27825,,,,,,PFLT,2025-02-10
+Harris & Co. LLC. - Unfunded Term Loan A,First Lien,Professional Services,,,,,,,2025-02-09,23273,,204,,,,,,,,PFLT,2025-02-10
+Harris & Co. LLC. - Unfunded Term Loan B,First Lien,Professional Services,,,,,,,2026-02-09,50296,,440,,,,,,,,PFLT,2025-02-10
+Harris & Co. LLC,Revolver,Professional Services,9.36%,,SOFR,5%,,,2030-08-09,1110,1110,1110,,1110,,,,,,PFLT,2025-02-10
+Harris & Co. LLC,Revolver,Professional Services,,,,,,,2030-08-09,6290,,,,,,,,,,PFLT,2025-02-10
+HEC Purchaser Corp.,First Lien,"Healthcare, Education and Childcare",9.75%,,SOFR,5.5%,,,2029-06-17,9627,9518,9588,,9518,,,,,,PFLT,2025-02-10
+Hills Distribution Inc.,First Lien,Distributors,10.49%,,SOFR,6%,,,2029-11-08,17219,17016,17047,,17016,,,,,,PFLT,2025-02-10
+Hills Distribution Inc.,First Lien,Distributors,,,,,,,2025-11-07,1514,,,,,,,,,,PFLT,2025-02-10
+"HW Holdco, LLC",First Lien,Media,10.23%,,SOFR,5.9%,,,2026-05-10,10410,10380,10410,,10380,,,,,,PFLT,2025-02-10
+"HW Holdco, LLC (Revolver)(6),",First Lien,Media,,,,,,,2026-05-10,1452,,,,,,,,,,PFLT,2025-02-10
+"IG Investments Holdings, LLC",First Lien,Professional Services,9.57%,,SOFR,5%,,,2028-09-22,4487,4434,4454,,4434,,,,,,PFLT,2025-02-10
+"IG Investments Holdings, LLC (Revolver)(6),",First Lien,Professional Services,,,,,,,2028-09-22,722,,5,,,,,,,,PFLT,2025-02-10
+"Imagine Acquisitionco, LLC",Revolver,Software,9.55%,,SOFR,5.1%,,,2027-11-16,60,60,59,,60,,,,,,PFLT,2025-02-10
+"Imagine Acquisitionco, LLC (Revolver)",First Lien,Software,,,,,,,2027-11-16,1133,,3,,,,,,,,PFLT,2025-02-10
+"Infinity Home Services Holdco, Inc.",First Lien,Commercial Services & Supplies,9.83%,,SOFR,5.5%,,,2028-12-28,9404,9331,9401,,9331,,,,,,PFLT,2025-02-10
+"Infinity Home Services Holdco, Inc. (CAD)",First Lien,Commercial Services & Supplies,9.83%,,SOFR,5.5%,,,2028-12-28,1717,1238,1194,,1238,,,,,,PFLT,2025-02-10
+"Infinity Home Services Holdco, Inc. - 3rd Amendment Unfunded Term Loan",First Lien,Commercial Services & Supplies,,,,,,,2026-10-30,12618,,,,,,,,,,PFLT,2025-02-10
+"Infinity Home Services Holdco, Inc.",Revolver,Commercial Services & Supplies,12.00%,,SOFR,4.5%,,,2028-12-28,161,161,161,,161,,,,,,PFLT,2025-02-10
+"Infinity Home Services Holdco, Inc.",Revolver,Commercial Services & Supplies,,,,,,,2028-12-28,1130,,,,,,,,,,PFLT,2025-02-10
+Inovex Information Systems Incorporated,First Lien,Software,9.63%,,SOFR,5.25%,,,2030-12-17,16205,16084,16083,,16084,,,,,,PFLT,2025-02-10
+Inovex Information Systems Incorporated,First Lien,Software,,,,,,,2026-12-17,2800,,,,,,,,,,PFLT,2025-02-10
+Inovex Information Systems Incorporated,Revolver,Software,9.61%,,SOFR,5.25%,,,2030-12-17,980,980,980,,980,,,,,,PFLT,2025-02-10
+Inovex Information Systems Incorporated,Revolver,Software,,,,,,,2030-12-17,2520,,,,,,,,,,PFLT,2025-02-10
+"Infolinks Media Buyco, LLC",First Lien,Media,9.83%,,SOFR,5.5%,,,2026-11-01,5331,5283,5331,,5283,,,,,,PFLT,2025-02-10
+"Integrative Nutrition, LLC",First Lien,Consumer Services,11.45%,,SOFR,7.15%,,,2025-01-31,15723,15695,11793,,15695,,,,,,PFLT,2025-02-10
+"ITI Holdings, Inc. (Revolver)",First Lien,IT Services,12.00%,,SOFR,4.5%,,,2028-03-03,473,473,473,,473,,,,,,PFLT,2025-02-10
+"ITI Holdings, Inc. (Revolver)(6),",First Lien,IT Services,,,,,,,2028-03-03,191,,,,,,,,,,PFLT,2025-02-10
+"Inventus Power, Inc.",First Lien,"Electronic Equipment, Instruments, and Components",11.97%,,SOFR,7.61%,,,2025-06-30,4925,4894,4925,,4894,,,,,,PFLT,2025-02-10
+"Inventus Power, Inc.",Revolver,"Electronic Equipment, Instruments, and Components",,,,,,,2025-06-30,1729,,,,,,,,,,PFLT,2025-02-10
+"Keel Platform, LLC",First Lien,Metals and Mining,9.58%,,SOFR,5.25%,,,2031-01-19,11515,11362,11400,,11362,,,,,,PFLT,2025-02-10
+"Keel Platform, LLC",First Lien,Metals and Mining,,,,,,,2031-01-19,2402,,6,,,,,,,,PFLT,2025-02-10
+"Kinetic Purchaser, LLC",First Lien,Personal Products,10.48%,,SOFR,6.15%,,,2027-11-10,13971,13813,13971,,13813,,,,,,PFLT,2025-02-10
+"Kinetic Purchaser, LLC",Revolver,Personal Products,10.48%,,SOFR,6.1%,,,2026-11-10,1717,1717,1717,,1717,,,,,,PFLT,2025-02-10
+"Kinetic Purchaser, LLC (Revolver)(6),",First Lien,Personal Products,,,,,,,2026-11-10,1717,,,,,,,,,,PFLT,2025-02-10
+"Lash OpCo, LLC",First Lien,Personal Products,12.94%,,SOFR,7.85%,,,2027-02-18,10927,10840,10763,,10840,,,,,,PFLT,2025-02-10
+"Lash OpCo, LLC (Revolver)",First Lien,Personal Products,12.94%,,SOFR,7.85%,,,2026-08-16,2870,2870,2827,,2870,,,,,,PFLT,2025-02-10
+"Lash OpCo, LLC (Revolver)(6),",First Lien,Personal Products,,,,,,,2026-08-16,335,,5,,,,,,,,PFLT,2025-02-10
+"LAV Gear Holdings, Inc.",First Lien,Capital Equipment,10.93%,,SOFR,6.4%,,,2025-10-31,13229,13226,12580,,13226,,,,,,PFLT,2025-02-10
+"LAV Gear Holdings, Inc. (Revolver)",First Lien,Capital Equipment,10.93%,,SOFR,6.4%,,,2025-10-31,1721,1721,1636,,1721,,,,,,PFLT,2025-02-10
+"Ledge Lounger, Inc.",First Lien,Leisure Products,11.98%,,SOFR,7.65%,,,2026-11-09,3674,3662,3490,,3662,,,,,,PFLT,2025-02-10
+"Ledge Lounger, Inc. (Revolver)",First Lien,Leisure Products,11.98%,,SOFR,7.65%,,,2026-11-09,461,461,438,,461,,,,,,PFLT,2025-02-10
+"Ledge Lounger, Inc. (Revolver)(6),",First Lien,Leisure Products,,,,,,,2026-11-09,197,,10,,,,,,,,PFLT,2025-02-10
+Lightspeed Buyer Inc.,First Lien,Healthcare Technology,9.40%,,SOFR,4.85%,,,2026-02-03,26650,26493,26383,,26493,,,,,,PFLT,2025-02-10
+Lightspeed Buyer Inc.,First Lien,Healthcare Technology,,,,,,,2025-06-02,2326,,23,,,,,,,,PFLT,2025-02-10
+"Lightspeed Buyer Inc. (Revolver)(6),",First Lien,Healthcare Technology,,,,,,,2026-02-03,2499,,25,,,,,,,,PFLT,2025-02-10
+"LJ Avalon Holdings, LLC",First Lien,Construction & Engineering,9.76%,,SOFR,5.25%,,,2030-02-01,2802,2768,2802,,2768,,,,,,PFLT,2025-02-10
+"LJ Avalon Holdings, LLC",First Lien,Construction & Engineering,,,,,,,2024-10-01,1892,,9,,,,,,,,PFLT,2025-02-10
+"LJ Avalon Holdings, LLC (Revolver)(6),",First Lien,Construction & Engineering,,,,,,,2030-01-31,1130,,,,,,,,,,PFLT,2025-02-10
+"Loving Tan Intermediate II, Inc.",First Lien,Personal Products,10.33%,,SOFR,6%,,,2028-05-31,44947,44323,44609,,44323,,,,,,PFLT,2025-02-10
+"Loving Tan Intermediate II, Inc.",First Lien,Personal Products,,,,,,,2025-07-12,23464,,59,,,,,,,,PFLT,2025-02-10
+"Loving Tan Intermediate II, Inc. (Revolver)",First Lien,Personal Products,10.33%,,SOFR,6%,,,2028-05-31,1780,1780,1766,,1780,,,,,,PFLT,2025-02-10
+"Loving Tan Intermediate II, Inc.",Revolver,Personal Products,,,,,,,2028-05-31,3559,,27,,,,,,,,PFLT,2025-02-10
+"LSF9 Atlantis Holdings, LLC",First Lien,Specialty Retail,9.61%,,SOFR,5.25%,,,2029-06-30,9809,9809,9919,,9809,,,,,,PFLT,2025-02-10
+"Lucky Bucks, LLC",First Lien,"Hotels, Restaurants and Leisure",12.10%,,SOFR,7.65%,,,2028-10-02,258,258,258,,258,,,,,,PFLT,2025-02-10
+"Lucky Bucks, LLC",First Lien,"Hotels, Restaurants and Leisure",12.10%,,SOFR,7.65%,,,2029-10-02,517,517,517,,517,,,,,,PFLT,2025-02-10
+MAG DS Corp.,First Lien,Aerospace and Defense,9.93%,,SOFR,5.6%,,,2027-04-01,7269,7012,6797,,7012,,,,,,PFLT,2025-02-10
+"Marketplace Events Acquisition, LLC",First Lien,Media: Diversified and Production,9.60%,,SOFR,5.25%,,,2030-12-19,70000,69308,69300,,69308,,,,,,PFLT,2025-02-10
+"Marketplace Events Acquisition, LLC",First Lien,Media: Diversified and Production,,,,,,,2026-06-19,12192,,,,,,,,,,PFLT,2025-02-10
+"Marketplace Events Acquisition, LLC",Revolver,Media: Diversified and Production,,,,,,,2030-12-19,6096,,,,,,,,,,PFLT,2025-02-10
+"MBS Holdings, Inc.",Revolver,Internet Software and Services,10.25%,,SOFR,5.85%,,,2027-04-16,139,139,139,,139,,,,,,PFLT,2025-02-10
+"MBS Holdings, Inc. (Revolver)(6),",First Lien,Internet Software and Services,,,,,,,2027-04-16,1019,,,,,,,,,,PFLT,2025-02-10
+"MDI Buyer, Inc.",First Lien,Commodity Chemicals,10.22%,,SOFR,5.75%,,,2028-07-25,2015,1984,1997,,1984,,,,,,PFLT,2025-02-10
+"MDI Buyer, Inc. (Revolver)",First Lien,Commodity Chemicals,12.50%,,SOFR,4.75%,,,2028-07-25,608,608,602,,608,,,,,,PFLT,2025-02-10
+"MDI Buyer, Inc. (Revolver)(6),",First Lien,Commodity Chemicals,,,,,,,2028-07-25,165,,,,,,,,,,PFLT,2025-02-10
+"Meadowlark Acquirer, LLC",First Lien,Professional Services,9.98%,,SOFR,5.65%,,,2027-12-10,1953,1935,1904,,1935,,,,,,PFLT,2025-02-10
+"Meadowlark Acquirer, LLC (Revolver)",First Lien,Professional Services,,,,,,,2027-12-10,1693,,42,,,,,,,,PFLT,2025-02-10
+"Medina Health, LLC",First Lien,Healthcare Providers and Services,10.58%,,SOFR,6.25%,,,2028-10-20,17775,17523,17775,,17523,,,,,,PFLT,2025-02-10
+"Medina Health, LLC (Revolver)",First Lien,Healthcare Providers and Services,,,,,,,2028-10-20,5187,,,,,,,,,,PFLT,2025-02-10
+"Megawatt Acquisitionco, Inc.",First Lien,"Electronic Equipment, Instruments, and Components",9.83%,,SOFR,5.5%,,,2030-03-01,6948,6858,6071,,6858,,,,,,PFLT,2025-02-10
+"Megawatt Acquisitionco, Inc.",Revolver,"Electronic Equipment, Instruments, and Components",9.86%,,SOFR,5.25%,,,2030-03-01,926,926,809,,926,,,,,,PFLT,2025-02-10
+"Megawatt Acquisitionco, Inc. - (Revolver)",First Lien,"Electronic Equipment, Instruments, and Components",,,,,,,2030-03-01,2324,,293,,,,,,,,PFLT,2025-02-10
+"Mission Critical Electronics, Inc.",First Lien,Capital Equipment,10.23%,,SOFR,5.75%,,,2025-03-31,3092,3087,3092,,3087,,,,,,PFLT,2025-02-10
+"Mission Critical Electronics, Inc. (Revolver)(6),",First Lien,Capital Equipment,,,,,,,2025-03-31,1325,,,,,,,,,,PFLT,2025-02-10
+"MOREGroup Holdings, Inc.",First Lien,Construction & Engineering,9.58%,,SOFR,5.25%,,,2030-01-16,31760,31347,31760,,31347,,,,,,PFLT,2025-02-10
+"MOREGroup Holdings, Inc.",First Lien,Construction & Engineering,,,,,,,2026-01-16,11056,,111,,,,,,,,PFLT,2025-02-10
+"MOREGroup Holdings, Inc. - (Revolver)",First Lien,Construction & Engineering,,,,,,,2030-01-16,6634,,,,,,,,,,PFLT,2025-02-10
+"Municipal Emergency Services, Inc.",First Lien,Distributors,11.00%,,SOFR,3.5%,,,2027-10-01,3292,3261,3292,,3261,,,,,,PFLT,2025-02-10
+"Municipal Emergency Services, Inc.",First Lien,Distributors,,,,,,,2027-09-28,909,,9,,,,,,,,PFLT,2025-02-10
+"Municipal Emergency Services, Inc.",Revolver,Distributors,9.48%,,SOFR,5.15%,,,2027-10-01,189,189,189,,189,,,,,,PFLT,2025-02-10
+"Municipal Emergency Services, Inc. (Revolver)(6),",First Lien,Distributors,,,,,,,2027-10-01,757,,,,,,,,,,PFLT,2025-02-10
+"NBH Group LLC (Revolver)(6),",First Lien,Healthcare Equipment and Supplies,,,,,,,2026-08-19,1677,,,,,,,,,,PFLT,2025-02-10
+NFS - CFP Holdings LLC,First Lien,Commercial Services & Supplies,9.08%,,SOFR,4.75%,,,2030-09-13,21247,21096,21087,,21096,,,,,,PFLT,2025-02-10
+NFS - CFP Holdings LLC,First Lien,Commercial Services & Supplies,,,,,,,2026-09-23,13370,,,,,,,,,,PFLT,2025-02-10
+NFS - CFP Holdings LLC,Revolver,Commercial Services & Supplies,,,,,,,2030-09-13,5014,,38,,,,,,,,PFLT,2025-02-10
+"NORA Acquisition, LLC",First Lien,Healthcare Providers and Services,10.68%,,SOFR,6.35%,,,2029-08-31,19750,19421,19750,,19421,,,,,,PFLT,2025-02-10
+"NORA Acquisition, LLC (Revolver)(6),",First Lien,Healthcare Providers and Services,,,,,,,2029-08-31,5479,,,,,,,,,,PFLT,2025-02-10
+"Omnia Exterior Solutions, LLC",First Lien,Diversified Consumer Services,9.58%,,SOFR,5.5%,,,2029-12-29,23662,23472,23485,,23472,,,,,,PFLT,2025-02-10
+"Omnia Exterior Solutions, LLC",First Lien,Diversified Consumer Services,,,,,,,2026-09-30,12802,,16,,,,,,,,PFLT,2025-02-10
+"Omnia Exterior Solutions, LLC (Revolver)(6),",First Lien,Diversified Consumer Services,,,,,,,2029-12-29,4200,,32,,,,,,,,PFLT,2025-02-10
+"One Stop Mailing, LLC",First Lien,Air Freight and Logistics,10.72%,,SOFR,6.36%,,,2027-05-07,8403,8317,8403,,8317,,,,,,PFLT,2025-02-10
+"ORL Acquisition, Inc.",First Lien,Consumer Finance,13.73%,,SOFR,9.4%,,,2027-09-03,4784,4739,4162,,4739,,,,,,PFLT,2025-02-10
+"ORL Acquisition, Inc. (Revolver)(6),",First Lien,Consumer Finance,,,,,,,2027-09-03,215,,28,,,,,,,,PFLT,2025-02-10
+"OSP Embedded Purchaser, LLC",First Lien,Aerospace and Defense,10.08%,,SOFR,5.75%,,,2029-12-15,40642,40210,39992,,40210,,,,,,PFLT,2025-02-10
+"OSP Embedded Purchaser, LLC (Revolver)",First Lien,Aerospace and Defense,,,,,,,2029-12-15,2932,,47,,,,,,,,PFLT,2025-02-10
+"Output Services Group, Inc.",First Lien,Business Services,12.86%,,SOFR,8.43%,,,2028-11-30,521,521,521,,521,,,,,,PFLT,2025-02-10
+"Output Services Group, Inc.",First Lien,Business Services,11.11%,,SOFR,6.68%,,,2028-05-30,1058,1058,1058,,1058,,,,,,PFLT,2025-02-10
+"Owl Acquisition, LLC",First Lien,Professional Services,9.71%,,SOFR,5.35%,,,2028-02-04,3893,3817,3844,,3817,,,,,,PFLT,2025-02-10
+"Pacific Purchaser, LLC",First Lien,Professional Services,10.53%,,SOFR,6.25%,,,2028-09-30,4950,4871,4905,,4871,,,,,,PFLT,2025-02-10
+"Pacific Purchaser, LLC",First Lien,Professional Services,,,,,,,2028-09-30,3598,,22,,,,,,,,PFLT,2025-02-10
+"Pacific Purchaser, LLC - (Revolver)",First Lien,Professional Services,,,,,,,2028-09-30,1799,,16,,,,,,,,PFLT,2025-02-10
+"PAR Excellence Holdings, Inc.",First Lien,Healthcare Technology,9.47%,,SOFR,5%,,,2030-09-03,12500,12383,12375,,12383,,,,,,PFLT,2025-02-10
+"PAR Excellence Holdings, Inc.",Revolver,Healthcare Technology,,,,,,,2030-09-03,4692,,47,,,,,,,,PFLT,2025-02-10
+"PCS Midco, Inc.",First Lien,Professional Services,10.08%,,SOFR,5.75%,,,2030-03-01,9135,9023,9135,,9023,,,,,,PFLT,2025-02-10
+"PCS Midco, Inc.",First Lien,Professional Services,,,,,,,2026-03-01,2249,,22,,,,,,,,PFLT,2025-02-10
+"PCS Midco, Inc.",Revolver,Professional Services,10.08%,,SOFR,5.75%,,,2030-03-01,310,310,310,,310,,,,,,PFLT,2025-02-10
+"PCS Midco, Inc. - (Revolver)",First Lien,Professional Services,,,,,,,2030-03-01,1461,,,,,,,,,,PFLT,2025-02-10
+"PH Beauty Holdings III, Inc.",First Lien,Consumer Products,10.17%,,SOFR,5.43%,,,2025-09-28,7396,7385,7329,,7385,,,,,,PFLT,2025-02-10
+"PL Acquisitionco, LLC",First Lien,"Textiles, Apparel and Luxury Goods",15.49%,,SOFR,12.1%,,,2027-11-09,5880,5822,4292,,5822,,,,,,PFLT,2025-02-10
+"PL Acquisitionco, LLC - (Revolver)",First Lien,"Textiles, Apparel and Luxury Goods",,,,,,,2027-11-09,1145,,309,,,,,,,,PFLT,2025-02-10
+"PlayPower, Inc.",First Lien,Leisure Products,9.58%,,SOFR,5.25%,,,2030-08-28,26269,26076,26269,,26076,,,,,,PFLT,2025-02-10
+"PlayPower, Inc.",Revolver,Leisure Products,,,,,,,2030-08-28,3981,,,,,,,,,,PFLT,2025-02-10
+"Project Granite Buyer,Inc.",First Lien,Professional Services,10.08%,,SOFR,5.75%,,,2030-12-31,18500,18315,18315,,18315,,,,,,PFLT,2025-02-10
+"Project Granite Buyer, Inc.",First Lien,Professional Services,,,,,,,2026-12-31,2846,,,,,,,,,,PFLT,2025-02-10
+"Project Granite Buyer,Inc.",Revolver,Professional Services,,,,,,,2030-12-31,1708,,,,,,,,,,PFLT,2025-02-10
+"Pragmatic Institute, LLC (Revolver)",First Lien,Professional Services,,,,,,,2028-07-06,1658,1605,696,,1605,,,,,,PFLT,2025-02-10
+"Quantic Electronics, LLC",First Lien,"Electronic Equipment, Instruments, and Components",10.43%,,SOFR,6.1%,,,2026-11-19,6562,6517,6562,,6517,,,,,,PFLT,2025-02-10
+"Quantic Electronics, LLC",Revolver,"Electronic Equipment, Instruments, and Components",10.43%,,SOFR,6.1%,,,2026-11-19,357,357,357,,357,,,,,,PFLT,2025-02-10
+"Quantic Electronics, LLC (Revolver)(6),",First Lien,"Electronic Equipment, Instruments, and Components",,,,,,,2026-11-19,313,,,,,,,,,,PFLT,2025-02-10
+"Rancho Health MSO, Inc.",First Lien,Healthcare Equipment and Supplies,9.77%,,SOFR,5.25%,,,2029-06-20,1862,1852,1848,,1852,,,,,,PFLT,2025-02-10
+"Rancho Health MSO, Inc.",First Lien,Healthcare Equipment and Supplies,,,,,,,2026-06-30,5469,,15,,,,,,,,PFLT,2025-02-10
+"Rancho Health MSO, Inc. (Revolver)",First Lien,Healthcare Equipment and Supplies,9.60%,,SOFR,5.25%,,,2029-06-20,1403,1403,1392,,1403,,,,,,PFLT,2025-02-10
+"Rancho Health MSO, Inc. (Revolver)(6),",First Lien,Healthcare Equipment and Supplies,,,,,,,2029-06-20,1897,,14,,,,,,,,PFLT,2025-02-10
+"Recteq, LLC",First Lien,Leisure Products,11.48%,,SOFR,7.15%,,,2026-01-29,1444,1436,1429,,1436,,,,,,PFLT,2025-02-10
+"Recteq, LLC (Revolver)(6),",First Lien,Leisure Products,,,,,,,2026-01-29,1296,,13,,,,,,,,PFLT,2025-02-10
+"Riverpoint Medical, LLC",First Lien,Healthcare Equipment and Supplies,9.58%,,SOFR,5.25%,,,2025-06-20,9803,9784,9803,,9784,,,,,,PFLT,2025-02-10
+"Riverpoint Medical, LLC (Revolver)",First Lien,Healthcare Equipment and Supplies,9.61%,,SOFR,5.25%,,,2025-06-20,182,182,182,,182,,,,,,PFLT,2025-02-10
+"Riverpoint Medical, LLC (Revolver)(6),",First Lien,Healthcare Equipment and Supplies,,,,,,,2025-06-20,727,,,,,,,,,,PFLT,2025-02-10
+"RRA Corporate, LLC",First Lien,Diversified Consumer Services,9.33%,,SOFR,5%,,,2029-08-15,14165,14025,14094,,14025,,,,,,PFLT,2025-02-10
+"RRA Corporate, LLC - Unfunded Term Loan 1",First Lien,Diversified Consumer Services,,,,,,,2029-02-15,11506,,58,,,,,,,,PFLT,2025-02-10
+"RRA Corporate, LLC - Unfunded Term Loan 2",First Lien,Diversified Consumer Services,,,,,,,2026-08-15,21719,,109,,,,,,,,PFLT,2025-02-10
+"RRA Corporate, LLC",Revolver,Diversified Consumer Services,9.33%,,SOFR,5%,,,2029-08-15,1746,1746,1738,,1746,,,,,,PFLT,2025-02-10
+"RRA Corporate, LLC",Revolver,Diversified Consumer Services,,,,,,,2029-08-15,4970,,25,,,,,,,,PFLT,2025-02-10
+"RTIC Subsidiary Holdings, LLC",First Lien,Leisure Products,10.08%,,SOFR,5.75%,,,2029-05-03,41890,41294,41156,,41294,,,,,,PFLT,2025-02-10
+"RTIC Subsidiary Holdings, LLC",Revolver,Leisure Products,,,,,,,2029-05-03,9417,,165,,,,,,,,PFLT,2025-02-10
+"Rural Sourcing Holdings, Inc. (HPA SPQ Merger Sub, Inc.)",First Lien,Professional Services,10.08%,,SOFR,5.75%,,,2029-06-15,1138,1123,1121,,1123,,,,,,PFLT,2025-02-10
+"Rural Sourcing Holdings, Inc. (HPA SPQ Merger Sub, Inc.)",First Lien,Professional Services,,,,,,,2026-06-26,1146,,11,,,,,,,,PFLT,2025-02-10
+"Rural Sourcing Holdings, Inc. (HPA SPQ Merger Sub, Inc.)",Revolver,Professional Services,10.08%,,SOFR,5.75%,,,2029-06-15,86,86,85,,86,,,,,,PFLT,2025-02-10
+"Rural Sourcing Holdings, Inc. (HPA SPQ Merger Sub, Inc.) (Revolver)(6),",First Lien,Professional Services,,,,,,,2029-06-15,774,,12,,,,,,,,PFLT,2025-02-10
+"Sabel Systems Technology Solutions, LLC",First Lien,Government Services,10.60%,,SOFR,6.25%,,,2030-10-31,26850,26583,26582,,26583,,,,,,PFLT,2025-02-10
+"Sabel Systems Technology Solutions, LLC",Revolver,Government Services,,,,,,,2030-10-31,3634,,36,,,,,,,,PFLT,2025-02-10
+Safe Haven Defense US LLC,First Lien,Building Products,9.36%,,SOFR,5.25%,,,2029-05-23,13526,13335,13526,,13335,,,,,,PFLT,2025-02-10
+Safe Haven Defense US LLC,Revolver,Building Products,,,,,,,2029-05-23,2920,,,,,,,,,,PFLT,2025-02-10
+Sales Benchmark Index LLC,First Lien,Professional Services,10.53%,,SOFR,6.2%,,,2026-07-07,2527,2519,2527,,2519,,,,,,PFLT,2025-02-10
+"Sales Benchmark Index LLC (Revolver)(6),",First Lien,Professional Services,,,,,,,2026-07-07,1077,,,,,,,,,,PFLT,2025-02-10
+"Schlesinger Global, Inc.",First Lien,Professional Services,12.96%,,SOFR,8.6%,,,2025-07-14,15453,15426,14719,,15426,,,,,,PFLT,2025-02-10
+"Schlesinger Global, Inc. (Revolver)",First Lien,Professional Services,12.96%,,SOFR,8.6%,,,2025-07-14,1602,1602,1526,,1602,,,,,,PFLT,2025-02-10
+"Schlesinger Global, Inc. (Revolver)(6),",First Lien,Professional Services,,,,,,,2025-07-14,401,,19,,,,,,,,PFLT,2025-02-10
+"Seacoast Service Partners, LLC",First Lien,Diversified Consumer Services,9.35%,,SOFR,5%,,,2029-12-20,7833,7766,7765,,7766,,,,,,PFLT,2025-02-10
+"Seacoast Service Partners, LLC",First Lien,Diversified Consumer Services,,,,,,,2026-12-20,8492,,,,,,,,,,PFLT,2025-02-10
+"Seacoast Service Partners, LLC",Revolver,Diversified Consumer Services,,,,,,,2029-12-20,2123,,,,,,,,,,PFLT,2025-02-10
+"Seaway Buyer, LLC",First Lien,"Chemicals, Plastics and Rubber",10.48%,,SOFR,6.15%,,,2029-06-13,1896,1876,1820,,1876,,,,,,PFLT,2025-02-10
+"Sigma Defense Systems, LLC",First Lien,IT Services,11.23%,,SOFR,6.9%,,,2027-12-18,20615,20379,20512,,20379,,,,,,PFLT,2025-02-10
+"Sigma Defense Systems, LLC (Revolver)(6),",First Lien,IT Services,,,,,,,2027-12-18,3311,,17,,,,,,,,PFLT,2025-02-10
+"Smartronix, LLC",First Lien,Aerospace and Defense,10.35%,,SOFR,6.1%,,,2028-11-23,13486,13298,13486,,13298,,,,,,PFLT,2025-02-10
+"Smartronix, LLC - (Revolver)",First Lien,Aerospace and Defense,,,,,,,2027-11-23,1791,,,,,,,,,,PFLT,2025-02-10
+Smile Brands Inc.,First Lien,Healthcare and Pharmaceuticals,10.43%,,SOFR,4.5%,,,2027-10-12,2465,2465,2181,,2465,,,,,,PFLT,2025-02-10
+Smile Brands Inc. (Revolver),First Lien,Healthcare and Pharmaceuticals,10.20%,,SOFR,5.5%,,,2027-10-12,1542,1542,1364,,1542,,,,,,PFLT,2025-02-10
+"Smile Brands Inc. (Revolver)(6),",First Lien,Healthcare and Pharmaceuticals,,,,,,,2027-10-12,2,,,,,,,,,,PFLT,2025-02-10
+"Smile Brands Inc. LC (Revolver)(6),",First Lien,Healthcare and Pharmaceuticals,,,,,,,2027-10-12,100,,12,,,,,,,,PFLT,2025-02-10
+"Solutionreach, Inc.",First Lien,Healthcare Technology,13.75%,,SOFR,6%,,,2025-07-17,4657,4642,4657,,4642,,,,,,PFLT,2025-02-10
+"Solutionreach, Inc.",Revolver,Healthcare Technology,11.50%,,SOFR,7.15%,,,2025-07-15,833,833,833,,833,,,,,,PFLT,2025-02-10
+Spendmend Holdings LLC,First Lien,Healthcare Technology,9.67%,,SOFR,5.15%,,,2028-03-01,2631,2609,2631,,2609,,,,,,PFLT,2025-02-10
+Spendmend Holdings LLC,First Lien,Healthcare Technology,,,,,,,2025-03-03,1109,,8,,,,,,,,PFLT,2025-02-10
+Spendmend Holdings LLC,First Lien,Healthcare Technology,,,,,,,2026-11-25,3261,,16,,,,,,,,PFLT,2025-02-10
+Spendmend Holdings LLC (Revolver),First Lien,Healthcare Technology,,,,,,,2028-03-01,891,,,,,,,,,,PFLT,2025-02-10
+"Summit Behavioral Healthcare, LLC",First Lien,Healthcare Providers and Services,8.76%,,SOFR,4.25%,,,2028-11-24,1985,1971,1588,,1971,,,,,,PFLT,2025-02-10
+"SV-Aero Holdings, LLC",First Lien,Aerospace and Defense,9.78%,,SOFR,5.25%,,,2030-11-01,15567,15489,15411,,15489,,,,,,PFLT,2025-02-10
+"SV-Aero Holdings, LLC",First Lien,Aerospace and Defense,,,,,,,2026-10-31,7259,,36,,,,,,,,PFLT,2025-02-10
+"System Planning and Analysis, Inc. (f/k/a Management Consulting & Research, LLC)",First Lien,Aerospace and Defense,9.28%,,SOFR,5%,,,2027-08-16,20409,20199,20429,,20199,,,,,,PFLT,2025-02-10
+"System Planning and Analysis, Inc. (f/k/a Management Consulting & Research, LLC)",First Lien,Aerospace and Defense,,,,,,,2027-08-16,12537,,107,,,,,,,,PFLT,2025-02-10
+"System Planning and Analysis, Inc. - (Revolver)",First Lien,Aerospace and Defense,,,,,,,2027-08-16,8364,,,,,,,,,,PFLT,2025-02-10
+"S101 Holdings, Inc.",First Lien,"Electronic Equipment, Instruments, and Components",10.24%,,SOFR,5.65%,,,2026-12-29,12408,12284,12346,,12284,,,,,,PFLT,2025-02-10
+"S101 Holdings, Inc. - Unfunded Term Loan 2",First Lien,"Electronic Equipment, Instruments, and Components",,,,,,,2025-01-16,3365,,17,,,,,,,,PFLT,2025-02-10
+"TCG 3.0 Jogger Acquisitionco, Inc.",First Lien,Media,10.83%,,SOFR,6.5%,,,2029-01-26,6948,6845,6878,,6845,,,,,,PFLT,2025-02-10
+"TCG 3.0 Jogger Acquisitionco, Inc.",Revolver,Media,13.00%,,SOFR,5.5%,,,2029-01-26,243,243,240,,243,,,,,,PFLT,2025-02-10
+"TCG 3.0 Jogger Acquisitionco, Inc. - (Revolver)",First Lien,Media,,,,,,,2029-01-26,2184,,22,,,,,,,,PFLT,2025-02-10
+"Team Services Group, LLC",First Lien,Healthcare Providers and Services,9.82%,,SOFR,5.25%,,,2027-12-20,15412,15178,15438,,15178,,,,,,PFLT,2025-02-10
+The Bluebird Group LLC,First Lien,Professional Services,11.05%,,SOFR,6.65%,,,2026-07-28,8549,8472,8549,,8472,,,,,,PFLT,2025-02-10
+"The Bluebird Group LLC (Revolver)(6),",First Lien,Professional Services,,,,,,,2026-07-28,862,,,,,,,,,,PFLT,2025-02-10
+"The Vertex Companies, LLC",First Lien,Construction & Engineering,10.24%,,SOFR,6.1%,,,2027-08-30,8957,8878,8832,,8878,,,,,,PFLT,2025-02-10
+"The Vertex Companies, LLC",First Lien,Construction & Engineering,,,,,,,2026-11-04,9122,,59,,,,,,,,PFLT,2025-02-10
+"The Vertex Companies, LLC (Revolver)(6),",First Lien,Construction & Engineering,,,,,,,2027-08-30,5472,,77,,,,,,,,PFLT,2025-02-10
+"TPC US Parent, LLC",First Lien,Food Products,10.49%,,SOFR,5.65%,,,2025-11-24,11858,11793,11858,,11793,,,,,,PFLT,2025-02-10
+"TransGo, LLC",First Lien,Auto Components,10.11%,,SOFR,5.75%,,,2028-12-29,11601,11450,11601,,11450,,,,,,PFLT,2025-02-10
+"TransGo, LLC (Revolver)(6),",First Lien,Auto Components,,,,,,,2028-12-29,4440,,,,,,,,,,PFLT,2025-02-10
+TWS Acquisition Corporation,First Lien,Diversified Consumer Services,10.80%,,SOFR,6.4%,,,2025-06-16,2343,2340,2343,,2340,,,,,,PFLT,2025-02-10
+"TWS Acquisition Corporation (Revolver)(6),",First Lien,Diversified Consumer Services,,,,,,,2025-06-16,2628,,,,,,,,,,PFLT,2025-02-10
+"Tyto Athene, LLC",First Lien,IT Services,9.49%,,SOFR,4.9%,,,2028-04-01,11928,11829,11761,,11829,,,,,,PFLT,2025-02-10
+"US Fertility Enterprises, LLC",First Lien,Healthcare Providers and Services,,,,,,,2026-10-07,54,,,,,,,,,,PFLT,2025-02-10
+"Urology Management Holdings, Inc.",First Lien,Healthcare Providers and Services,9.83%,,SOFR,5.5%,,,2027-06-15,3597,3580,3579,,3580,,,,,,PFLT,2025-02-10
+"Urology Management Holdings, Inc.",First Lien,Healthcare Providers and Services,,,,,,,2026-09-03,2400,,,,,,,,,,PFLT,2025-02-10
+"VRS Buyer, Inc.",First Lien,Road and Rail,9.26%,,SOFR,4.75%,,,2030-11-22,14454,14347,14346,,14347,,,,,,PFLT,2025-02-10
+"VRS Buyer, Inc.",First Lien,Road and Rail,,,,,,,2026-11-22,7644,,,,,,,,,,PFLT,2025-02-10
+"VRS Buyer, Inc.",Revolver,Road and Rail,,,,,,,2030-11-22,3822,,,,,,,,,,PFLT,2025-02-10
+"Walker Edison Furniture, LLC",First Lien,Wholesale,,,,,,,2029-03-01,5999,5359,,,5359,,,,,,PFLT,2025-02-10
+"Walker Edison Furniture Company, LLC - Unfunded Term Loan(8),",First Lien,Wholesale,,,,,,,2029-03-01,500,,500,,,,,,,,PFLT,2025-02-10
+"Walker Edison Furniture Company, LLC - Funded Junior Revolver",First Lien,Wholesale,,,,,,,2029-03-01,1667,1667,1128,,1667,,,,,,PFLT,2025-02-10
+"Watchtower Intermediate, LLC",First Lien,"Electronic Equipment, Instruments, and Components",10.33%,,SOFR,6%,,,2029-12-01,9032,8914,9032,,8914,,,,,,PFLT,2025-02-10
+"Watchtower Intermediate, LLC",First Lien,"Electronic Equipment, Instruments, and Components",,,,,,,2025-12-01,2100,,24,,,,,,,,PFLT,2025-02-10
+"Watchtower Intermediate, LLC (Revolver)",First Lien,"Electronic Equipment, Instruments, and Components",,,,,,,2029-12-01,6300,,,,,,,,,,PFLT,2025-02-10
+"Wrench Group, LLC",First Lien,Commercial Services & Supplies,8.59%,,SOFR,4.26%,,,2028-10-30,3474,3467,3326,,3467,,,,,,PFLT,2025-02-10
+"Zips Car Wash, LLC",First Lien,Automobiles,12.46%,,SOFR,7.4%,,,2025-01-16,13670,13666,12132,,13666,,,,,,PFLT,2025-02-10
+Beacon Behavioral Holdings LLC,First Lien,Healthcare Providers and Services,15.00%,,,,,,2030-06-21,1082,1068,1066,,1068,,,,,,PFLT,2025-02-10
+"ORL Holdco, Inc. - Convertible Notes",First Lien,Consumer Finance,18.00%,,,,,,2028-03-08,13,13,10,,13,,,,,,PFLT,2025-02-10
+"ORL Holdco, Inc. - Unfunded Convertible Notes",First Lien,Consumer Finance,,,,,,,2028-03-08,13,,3,,,,,,,,PFLT,2025-02-10
+"OSP Embedded Aggregator, LP - Convertible Note",First Lien,Aerospace and Defense,12.00%,,,,,,2030-05-08,47,471,609,,471,,,,,,PFLT,2025-02-10
+"Schlesinger Global, LLC - Promissory Note",First Lien,Professional Services,12.31%,,SOFR,7%,,,2026-01-08,66,66,136,,66,,,,,,PFLT,2025-02-10
+"StoicLane, Inc. - Convertible Notes",First Lien,Healthcare Technology,12.00%,,,,,,2027-08-15,1526,1526,1571,,1526,,,,,,PFLT,2025-02-10
+"StoicLane, Inc. - Unfunded Convertible Notes",First Lien,Healthcare Technology,,,,,,,2027-08-15,1526,,46,,,,,,,,PFLT,2025-02-10
+"Accounting Platform Blocker, Inc -. Preferred Equity",Preferred Equity,Professional Services,,,,,,,,,1076,1087,,1076,,,,1075900,,PFLT,2025-02-10
+"Ad.net Holdings, Inc.",Preferred Equity,Media,,,,,,,,,672,868,,672,,,,6720,,PFLT,2025-02-10
+"AFC Acquisitions, Inc. (Preferred)",Preferred Equity,Distributors,,,,,,,,,1314,1601,,1314,,,,854,,PFLT,2025-02-10
+"Anteriad Holdings, LP (f/k/a MeritDirect Holdings, LP)(6),",Preferred Equity,Media,,,,,,,,,2018,2108,,2018,,,,2018,,PFLT,2025-02-10
+"BioDerm Holdings, LP - Preferred Equity",Preferred Equity,Healthcare Equipment and Supplies,,,,,,,,,1313,1128,,1313,,,,1313,,PFLT,2025-02-10
+"Cartessa Aesthetics, LLC (Preferred)",Preferred Equity,Distributors,,,,,,,,,1438,2720,,1438,,,,1437500,,PFLT,2025-02-10
+"Connatix Parent, LLC - Preferred Equity",Preferred Equity,Media,,,,,,,,,5,5,,5,,,,5311,,PFLT,2025-02-10
+"C5MI Holdco, LLC. - Preferred Equity",Preferred Equity,IT Services,,,,,,,,,223,243,,223,,,,228900,,PFLT,2025-02-10
+"EvAL Home Health Solutions, LLC - Preferred Equity",Preferred Equity,"Healthcare, Education and Childcare",,,,,,,,,1455,1557,,1455,,,,876386,,PFLT,2025-02-10
+Gauge Schlesinger Coinvest LLC (Preferred Equity),Preferred Equity,Professional Services,,,,,,,,,64,30,,64,,,,64,,PFLT,2025-02-10
+"Hancock Claims Consultants Investors, LLC (Preferred Equity)",Preferred Equity,Insurance,,,,,,,,,76,187,,76,,,,116588,,PFLT,2025-02-10
+"Imagine Topco, LP",Preferred Equity,Software,8.00%,,,,,,,,1236,1503,,1236,,,,1236027,,PFLT,2025-02-10
+Magnolia Topco LP - Class A Preferred Equity,Preferred Equity,Automobiles,,,,,,,,,47,32,,47,,,,47,,PFLT,2025-02-10
+Magnolia Topco LP - Class B Preferred Equity,Preferred Equity,Automobiles,,,,,,,,,20,,,20,,,,31,,PFLT,2025-02-10
+"Megawatt Acquisition Partners, LLC - Preferred A Equity",Preferred Equity,"Electronic Equipment, Instruments, and Components",,,,,,,,,936,456,,936,,,,9360,,PFLT,2025-02-10
+"NXOF Holdings, Inc. (Tyto Athene, LLC)",Preferred Equity,IT Services,,,,,,,,,1935,2690,,1935,,,,1935,,PFLT,2025-02-10
+"ORL Holdco, Inc.",Preferred Equity,Consumer Finance,,,,,,,,,133,20,,133,,,,1327,,PFLT,2025-02-10
+"PL Acquisitionco, LLC (Preferred Equity)",Preferred Equity,"Textiles, Apparel and Luxury Goods",,,,,,,,,122,,,122,,,,122,,PFLT,2025-02-10
+"RTIC Parent Holdings, LLC - Class A Preferred Equity",Preferred Equity,Leisure Products,,,,,,,,,9,,,9,,,,9,,PFLT,2025-02-10
+"RTIC Parent Holdings, LLC - Class C Preferred Equity",Preferred Equity,Leisure Products,,,,,,,,,1215,1837,,1215,,,,18450,,PFLT,2025-02-10
+"RTIC Parent Holdings, LLC - Class D Preferred Equity",Preferred Equity,Leisure Products,,,,,,,,,196,229,,196,,,,19584,,PFLT,2025-02-10
+SP L2 Holdings LLC - Preferred Equity,Preferred Equity,Leisure Products,,,,,,,,,33,33,,33,,,,135240,,PFLT,2025-02-10
+SP L2 Holdings LLC - Unfunded Preferred Equity,Preferred Equity,Leisure Products,,,,,,,,,,,,,,,,77280,,PFLT,2025-02-10
+"TPC Holding Company, LP",Preferred Equity,Food Products,,,,,,,,,409,647,,409,,,,409,,PFLT,2025-02-10
+"TWD Parent Holdings, LLC (The Vertex Companies, LLC)",Preferred Equity,Construction & Engineering,,,,,,,,,35,48,,35,,,,37,,PFLT,2025-02-10
+"UniTek Global Services, Inc. - Super Senior Preferred Equity",Preferred Equity,Telecommunications,20.00%,,,,,,,,344,33,,344,,,,343861,,PFLT,2025-02-10
+"UniTek Global Services, Inc. - Senior Preferred Equity",Preferred Equity,Telecommunications,19.00%,,,,,,,,449,,,449,,,,448851,,PFLT,2025-02-10
+"UniTek Global Services, Inc.",Preferred Equity,Telecommunications,13.50%,,,,,,,,670,,,670,,,,1047317,,PFLT,2025-02-10
+"A1 Garage Equity, LLC",Other Equity,Commercial Services & Supplies,,,,,,,,,648,944,,648,,,,647943,,PFLT,2025-02-10
+"ACP Big Top Holdings, L.P. - Common Equity",Other Equity,Construction & Engineering,,,,,,,,,3001,3745,,3001,,,,3000500,,PFLT,2025-02-10
+"Ad.net Holdings, Inc.",Other Equity,Media,,,,,,,,,75,22,,75,,,,7467,,PFLT,2025-02-10
+"Aechelon InvestCo, LP - Common Equity",Other Equity,Aerospace and Defense,,,,,,,,,2992,5892,,2992,,,,29917,,PFLT,2025-02-10
+"Aechelon InvestCo, LP - Unfunded",Other Equity,Aerospace and Defense,,,,,,,,,,,,,,,,33433,,PFLT,2025-02-10
+"Aftermarket Drivetrain Products Holdings, LLC",Other Equity,Auto Components,,,,,,,,,2632,3701,,2632,,,,2632,,PFLT,2025-02-10
+"AG Investco LP(6),",Other Equity,Software,,,,,,,,,805,252,,805,,,,805164,,PFLT,2025-02-10
+"AG Investco LP(6),",Other Equity,Software,,,,,,,,,,134,,,,,,194836,,PFLT,2025-02-10
+"Altamira Intermediate Company II, Inc.",Other Equity,IT Services,,,,,,,,,1438,1649,,1438,,,,1437500,,PFLT,2025-02-10
+"Anteriad Holdings, LP (f/k/a MeritDirect Holdings, LP)(6),",Other Equity,Media,,,,,,,,,,,,,,,,2018,,PFLT,2025-02-10
+"Athletico Holdings, LLC",Other Equity,Healthcare Providers and Services,,,,,,,,,5000,3368,,5000,,,,4678,,PFLT,2025-02-10
+"Azureon Holdings, LLC - Common Equity",Other Equity,Diversified Consumer Services,,,,,,,,,1131,1047,,1131,,,,1130707,,PFLT,2025-02-10
+"BioDerm Holdings, LP",Other Equity,Healthcare Equipment and Supplies,,,,,,,,,,,,,,,,1313,,PFLT,2025-02-10
+"Burgess Point Holdings, LP",Other Equity,Auto Components,,,,,,,,,114,118,,114,,,,112,,PFLT,2025-02-10
+"By Light Investco LP(6),",Other Equity,High Tech Industries,,,,,,,,,687,21231,,687,,,,22789,,PFLT,2025-02-10
+"Carisk Parent, L.P.",Other Equity,Healthcare Technology,,,,,,,,,240,236,,240,,,,239680,,PFLT,2025-02-10
+"Carnegie HoldCo, LLC - Common Equity",Other Equity,Professional Services,,,,,,,,,2646,2665,,2646,,,,2719600,,PFLT,2025-02-10
+"Connatix Parent, LLC",Other Equity,Media,,,,,,,,,421,47,,421,,,,38278,,PFLT,2025-02-10
+"Consello Pacific Aggregator, LLC",Other Equity,Professional Services,,,,,,,,,973,831,,973,,,,1025476,,PFLT,2025-02-10
+"Crane 1 Acquisition Parent Holdings, L.P.",Other Equity,Commercial Services & Supplies,,,,,,,,,120,235,,120,,,,130,,PFLT,2025-02-10
+"C5MI Holdco, LLC. - Common Equity",Other Equity,IT Services,,,,,,,,,1659,1392,,1659,,,,1659050,,PFLT,2025-02-10
+"Delta InvestCo LP (Sigma Defense Systems, LLC)(6),",Other Equity,IT Services,,,,,,,,,763,1359,,763,,,,804615,,PFLT,2025-02-10
+"Delta InvestCo LP (Sigma Defense Systems, LLC)(6),",Other Equity,IT Services,,,,,,,,,,,,,,,,200255,,PFLT,2025-02-10
+"DUGGAL EQUITY, LP - Common Equity",Other Equity,Marketing Services,,,,,,,,,686,718,,686,,,,686,,PFLT,2025-02-10
+"eCommission Holding Corporation(6),",Other Equity,"Banking, Finance, Insurance & Real Estate",,,,,,,,,226,619,,226,,,,20,,PFLT,2025-02-10
+"EDS Topco, LP",Other Equity,"Electronic Equipment, Instruments, and Components",,,,,,,,,1125,1569,,1125,,,,1125000,,PFLT,2025-02-10
+"Events TopCo, LP",Other Equity,Event Services,,,,,,,,,381,381,,381,,,,381300,,PFLT,2025-02-10
+"Exigo, LLC",Other Equity,Software,,,,,,,,,542,646,,542,,,,541667,,PFLT,2025-02-10
+"FedHC InvestCo LP(6),",Other Equity,Aerospace and Defense,,,,,,,,,810,2648,,810,,,,22671,,PFLT,2025-02-10
+"FedHC InvestCo LP(6),",Other Equity,Aerospace and Defense,,,,,,,,,,,,,,,,3721,,PFLT,2025-02-10
+"Five Star Parent Holdings, LLC",Other Equity,"Hotels, Restaurants and Leisure",,,,,,,,,656,546,,656,,,,655714,,PFLT,2025-02-10
+"Gauge ETE Blocker, LLC",Other Equity,Diversified Consumer Services,,,,,,,,,374,258,,374,,,,374444,,PFLT,2025-02-10
+Gauge Lash Coinvest LLC,Other Equity,Personal Products,,,,,,,,,1393,4783,,1393,,,,1840021,,PFLT,2025-02-10
+"Gauge Loving Tan, LP",Other Equity,Personal Products,,,,,,,,,2915,2968,,2915,,,,2914701,,PFLT,2025-02-10
+Gauge Schlesinger Coinvest LLC,Other Equity,Professional Services,,,,,,,,,476,218,,476,,,,465,,PFLT,2025-02-10
+"GCP Boss Holdco, LLC - Common Equity",Other Equity,Independent Power and Renewable Electricity Producers,,,,,,,,,2195,2195,,2195,,,,2194800,,PFLT,2025-02-10
+GCOM InvestCo LP,Other Equity,IT Services,,,,,,,,,3342,4590,,3342,,,,19184,,PFLT,2025-02-10
+"GGG Topco, LLC - Common Equity",Other Equity,Diversified Consumer Services,,,,,,,,,2760,2770,,2760,,,,2759800,,PFLT,2025-02-10
+"GMP Hills, L.P.",Other Equity,Distributors,,,,,,,,,4431,4387,,4431,,,,4430843,,PFLT,2025-02-10
+"Hancock Claims Consultants Investors, LLC(6),",Other Equity,Insurance,,,,,,,,,448,414,,448,,,,450000,,PFLT,2025-02-10
+HPA SPQ Aggregator LP,Other Equity,Professional Services,,,,,,,,,750,786,,750,,,,750399,,PFLT,2025-02-10
+"HV Watterson Holdings, LLC",Other Equity,Professional Services,,,,,,,,,100,13,,100,,,,100000,,PFLT,2025-02-10
+"Icon Partners V C, L.P.",Other Equity,Internet Software and Services,,,,,,,,,1886,1844,,1886,,,,1885663,,PFLT,2025-02-10
+"Icon Partners V C, L.P.(6),",Other Equity,Internet Software and Services,,,,,,,,,,13,,,,,,614337,,PFLT,2025-02-10
+"IIN Group Holdings, LLC",Other Equity,Consumer Services,,,,,,,,,1000,,,1000,,,,1000,,PFLT,2025-02-10
+"Imagine Topco, LP (Common)",Other Equity,Software,,,,,,,,,,,,,,,,1236027,,PFLT,2025-02-10
+"IHS Parent Holdngs, L.P.",Other Equity,Commercial Services & Supplies,,,,,,,,,1218,1937,,1218,,,,1218045,,PFLT,2025-02-10
+"Ironclad Holdco, LLC (Applied Technical Services, LLC)",Other Equity,Commercial Services & Supplies,,,,,,,,,668,988,,668,,,,6355,,PFLT,2025-02-10
+"ITC Infusion Co-invest, LP",Other Equity,Healthcare Equipment and Supplies,,,,,,,,,1195,2424,,1195,,,,116032,,PFLT,2025-02-10
+"Kinetic Purchaser, LLC",Other Equity,Personal Products,,,,,,,,,1735,1744,,1735,,,,1734775,,PFLT,2025-02-10
+"KL Stockton Co-Invest LP (Any Hour Services)(6),",Other Equity,Energy Equipment and Services,,,,,,,,,385,781,,385,,,,382353,,PFLT,2025-02-10
+Lightspeed Investment Holdco LLC,Other Equity,Healthcare Technology,,,,,,,,,586,2107,,586,,,,585587,,PFLT,2025-02-10
+"LJ Avalon, LP",Other Equity,Construction & Engineering,,,,,,,,,1638,2342,,1638,,,,1638043,,PFLT,2025-02-10
+"Lucky Bucks, LLC",Other Equity,"Hotels, Restaurants and Leisure",,,,,,,,,2062,781,,2062,,,,73870,,PFLT,2025-02-10
+"Marketplace Events Holdings, LP",Other Equity,Media: Diversified and Production,,,,,,,,,4099,4099,,4099,,,,4099000,,PFLT,2025-02-10
+Magnolia Topco LP - Class A Common Equity,Other Equity,Automobiles,,,,,,,,,,,,,,,,46974,,PFLT,2025-02-10
+Magnolia Topco LP - Class B Common Equity,Other Equity,Automobiles,,,,,,,,,,,,,,,,30926,,PFLT,2025-02-10
+"MDI Aggregator, LP",Other Equity,Commodity Chemicals,,,,,,,,,1078,1175,,1078,,,,10761,,PFLT,2025-02-10
+"Meadowlark Title, LLC",Other Equity,Professional Services,,,,,,,,,806,,,806,,,,819231,,PFLT,2025-02-10
+"Megawatt Acquisition Partners, LLC - Common A Equity",Other Equity,"Electronic Equipment, Instruments, and Components",,,,,,,,,104,,,104,,,,1040,,PFLT,2025-02-10
+"Municipal Emergency Services, Inc.",Other Equity,Distributors,,,,,,,,,2005,3611,,2005,,,,1973370,,PFLT,2025-02-10
+"NEPRT Parent Holdings, LLC (Recteq, LLC)(6),",Other Equity,Leisure Products,,,,,,,,,1438,104,,1438,,,,1494,,PFLT,2025-02-10
+"New Insight Holdings, Inc. - Common Equity",Other Equity,Business Services,,,,,,,,,2771,3036,,2771,,,,158348,,PFLT,2025-02-10
+"New Medina Health, LLC",Other Equity,Healthcare Providers and Services,,,,,,,,,2673,3727,,2673,,,,2672646,,PFLT,2025-02-10
+NFS - CFP Holdings LLC,Other Equity,Commercial Services & Supplies,,,,,,,,,1337,1337,,1337,,,,1337017,,PFLT,2025-02-10
+"NORA Parent Holdings, LLC",Other Equity,Healthcare Providers and Services,,,,,,,,,2525,2037,,2525,,,,2544,,PFLT,2025-02-10
+"North Haven Saints Equity Holdings, LP",Other Equity,Healthcare Technology,,,,,,,,,224,250,,224,,,,223602,,PFLT,2025-02-10
+"NXOF Holdings, Inc. (Tyto Athene, LLC)",Other Equity,IT Services,,,,,,,,,496,,,496,,,,37561,,PFLT,2025-02-10
+"OceanSound Discovery Equity, LP (Holdco Sands Intermediate, LLC)(6),",Other Equity,Aerospace and Defense,,,,,,,,,1736,1806,,1736,,,,173638,,PFLT,2025-02-10
+"OES Co-Invest, LP - Class A Common Equity",Other Equity,Diversified Consumer Services,,,,,,,,,1574,1989,,1574,,,,1560,,PFLT,2025-02-10
+"OHCP V BC COI, L.P.",Other Equity,Distributors,,,,,,,,,1166,758,,1166,,,,1166407,,PFLT,2025-02-10
+"OHCP V BC COI, L.P.",Other Equity,Distributors,,,,,,,,,,29,,,,,,83593,,PFLT,2025-02-10
+"ORL Holdco, Inc.",Other Equity,Consumer Finance,,,,,,,,,15,,,15,,,,1474,,PFLT,2025-02-10
+"OSP Embedded Aggregator, LP",Other Equity,Aerospace and Defense,,,,,,,,,1728,2234,,1728,,,,1728,,PFLT,2025-02-10
+"Output Services Group, Inc.",Other Equity,Business Services,,,,,,,,,642,835,,642,,,,80170,,PFLT,2025-02-10
+"PAR Excellence Holdings, Inc. - Common Equity",Other Equity,Healthcare Technology,,,,,,,,,1902,2569,,1902,,,,1902,,PFLT,2025-02-10
+"PCS Parent, LP - Common Equity",Other Equity,Professional Services,,,,,,,,,423,466,,423,,,,423247,,PFLT,2025-02-10
+"PennantPark-TSO Senior Loan Fund, LP(6),",Other Equity,Financial Services,,,,,,,,,11168,8919,,11168,,,,11167847,,PFLT,2025-02-10
+"Pink Lily Holdco, LLC",Other Equity,"Textiles, Apparel and Luxury Goods",,,,,,,,,1735,,,1735,,,,1735,,PFLT,2025-02-10
+"Pragmatic Institute, LLC",Other Equity,Professional Services,,,,,,,,,611,,,611,,,,610583,,PFLT,2025-02-10
+"Project Granite Holdings, LLC - Common Equity",Other Equity,Professional Services,,,,,,,,,1139,1139,,1139,,,,1139,,PFLT,2025-02-10
+"Quad (U.S.) Co-Invest, L.P.",Other Equity,Professional Services,,,,,,,,,267,358,,267,,,,266864,,PFLT,2025-02-10
+"QuantiTech InvestCo LP(6),",Other Equity,Aerospace and Defense,,,,,,,,,,172,,,,,,700,,PFLT,2025-02-10
+"QuantiTech InvestCo LP(6),",Other Equity,Aerospace and Defense,,,,,,,,,,,,,,,,955,,PFLT,2025-02-10
+"QuantiTech InvestCo II LP(6),",Other Equity,Aerospace and Defense,,,,,,,,,14,12,,14,,,,40,,PFLT,2025-02-10
+"RFMG Parent, LP (Rancho Health MSO, Inc.)",Other Equity,Healthcare Equipment and Supplies,,,,,,,,,1050,1258,,1050,,,,1050000,,PFLT,2025-02-10
+"Safe Haven Defense MidCo, LLC - Common Equity",Other Equity,Building Products,,,,,,,,,596,711,,596,,,,596,,PFLT,2025-02-10
+SBI Holdings Investments LLC (Sales Benchmark Index LLC),Other Equity,Professional Services,,,,,,,,,646,735,,646,,,,64634,,PFLT,2025-02-10
+"Sabel InvestCo, LP - Common Equity",Other Equity,Government Services,,,,,,,,,2271,2271,,2271,,,,87524,,PFLT,2025-02-10
+"Sabel InvestCo, LP - Common Equity Unfunded",Other Equity,Government Services,,,,,,,,,,,,,,,,131286,,PFLT,2025-02-10
+"Seaway Topco, LP",Other Equity,"Chemicals, Plastics and Rubber",,,,,,,,,296,141,,296,,,,296,,PFLT,2025-02-10
+"Seacoast Service Partners, LLC - Equity Co-Invest",Other Equity,Diversified Consumer Services,,,,,,,,,439,439,,439,,,,372,,PFLT,2025-02-10
+"SP L2 Holdings, LLC (Ledge Lounger, Inc.)",Other Equity,Leisure Products,,,,,,,,,360,4,,360,,,,360103,,PFLT,2025-02-10
+"SSC Dominion Holdings, LLC - Class B (US Dominion, Inc.)",Other Equity,Capital Equipment,,,,,,,,,12,1495,,12,,,,12,,PFLT,2025-02-10
+"StellPen Holdings, LLC (CF512, Inc.)",Other Equity,Media,,,,,,,,,162,139,,162,,,,161538,,PFLT,2025-02-10
+"SV Aero Holdings, LLC",Other Equity,Aerospace and Defense,,,,,,,,,535,1328,,535,,,,61,,PFLT,2025-02-10
+"TAC LifePort Holdings, LLC(6),",Other Equity,Aerospace and Defense,,,,,,,,,502,1046,,502,,,,533833,,PFLT,2025-02-10
+"TCG 3.0 Jogger Co-Invest, LP",Other Equity,Media,,,,,,,,,1760,1209,,1760,,,,9108,,PFLT,2025-02-10
+"Tower Arch Infolinks Media, LP (Infolinks Media Buyco, LLC)",Other Equity,Media,,,,,,,,,102,302,,102,,,,222570,,PFLT,2025-02-10
+"Tower Arch Infolinks Media, LP (Infolinks Media Buyco, LLC)",Other Equity,Media,,,,,,,,,,,,,,,,143036,,PFLT,2025-02-10
+"TPC Holding Company, LP",Other Equity,Food Products,,,,,,,,,22,,,22,,,,21527,,PFLT,2025-02-10
+"TWD Parent Holdings, LLC (The Vertex Companies, LLC)",Other Equity,Construction & Engineering,,,,,,,,,1,3,,1,,,,749,,PFLT,2025-02-10
+"Tinicum Space Coast Co-Invest, LLC - Common Equity",Other Equity,Aerospace and Defense,,,,,,,,,4702,4609,,4702,,,,466,,PFLT,2025-02-10
+"UniTek Global Services, Inc.(C)",Other Equity,Telecommunications,,,,,,,,,,,,,,,,213739,,PFLT,2025-02-10
+"UniVista Insurance(6),",Other Equity,Insurance,,,,,,,,,328,760,,328,,,,400,,PFLT,2025-02-10
+"Urology Partners Co., L.P.",Other Equity,Healthcare Providers and Services,,,,,,,,,694,1035,,694,,,,694444,,PFLT,2025-02-10
+Walker Edison Holdco LLC,Other Equity,Healthcare Providers and Services,,,,,,,,,3393,,,3393,,,,36458,,PFLT,2025-02-10
+"Watchtower Holdings, LLC",Other Equity,"Electronic Equipment, Instruments, and Components",,,,,,,,,1242,1369,,1242,,,,12419,,PFLT,2025-02-10
+"WCP IvyRehab Coinvestment, LP",Other Equity,Healthcare Providers and Services,,,,,,,,,208,222,,208,,,,208,,PFLT,2025-02-10
+"WCP IvyRehab QP CF Feeder, LP",Other Equity,Healthcare Providers and Services,,,,,,,,,3784,4007,,3784,,,,3754,,PFLT,2025-02-10
+"WCP Ivyrehab QP CF Feeder, LP. - Unfunded",Other Equity,Healthcare Providers and Services,,,,,,,,,,,,,,,,246,,PFLT,2025-02-10
+"UniTek Global Services, Inc.(W)",Other Equity,Telecommunications,,,,,,,,,,,,,,,,23889,,PFLT,2025-02-10
+"Kentucky Racing Holdco, LLC (Warrants)",Other Equity,"Hotels, Restaurants and Leisure",,,,,,,,,,995,,,,,,87345,,PFLT,2025-02-10
+"PennantPark Senior Secured Loan Fund I LLC(6),",First Lien,Financial Services,12.61%,,SOFR,8%,,,2029-05-06,237650,237650,237650,,237650,,,,,,PFLT,2025-02-10
+"PennantPark Senior Secured Loan Fund I LLC(6),",Other Equity,Financial Services,,,,,,,,,101850,48911,,101850,,,,101850,,PFLT,2025-02-10
+"A1 Garage Merger Sub, LLC",First Lien,Commercial Services & Supplies,10.95%,,SOFR,6.1%,,,2028-12-22,1579,1559,1579,,1559,,,,,,PFLT,2025-02-10
+"A1 Garage Merger Sub, LLC (Revolver)(7),",First Lien,Commercial Services & Supplies,,,,,,,2028-12-22,748,,,,,,,,,,PFLT,2025-02-10
+"ACP Avenu Buyer, LLC",First Lien,IT Services,10.58%,,SOFR,5.25%,,,2029-10-02,14121,13905,13662,,13905,,,,,,PFLT,2025-02-10
+"ACP Avenu Buyer, LLC",First Lien,IT Services,,,,,,,2025-04-02,5621,,105,,,,,,,,PFLT,2025-02-10
+"ACP Avenu Buyer, LLC",Revolver,IT Services,9.85%,,SOFR,5.25%,,,2029-10-02,847,847,819,,847,,,,,,PFLT,2025-02-10
+"ACP Avenu Buyer, LLC (Revolver)(7),",First Lien,IT Services,,,,,,,2029-10-02,2960,,96,,,,,,,,PFLT,2025-02-10
+"ACP Falcon Buyer, LLC (Revolver)(7),",First Lien,Professional Services,,,,,,,2029-08-01,3096,,,,,,,,,,PFLT,2025-02-10
+"Ad.net Acquisition, LLC",First Lien,Media,10.93%,,SOFR,6.26%,,,2026-05-07,4838,4808,4838,,4808,,,,,,PFLT,2025-02-10
+"Ad.net Acquisition, LLC",Revolver,Media,10.93%,,SOFR,6.26%,,,2026-05-07,498,498,498,,498,,,,,,PFLT,2025-02-10
+"Ad.net Acquisition, LLC (Revolver)(7),",First Lien,Media,,,,,,,2026-05-07,747,,,,,,,,,,PFLT,2025-02-10
+"Aechelon Technology, Inc.",First Lien,Aerospace and Defense,12.35%,,SOFR,7.5%,,,2029-08-16,14000,13862,13719,,13862,,,,,,PFLT,2025-02-10
+"Aechelon Technology, Inc.",Revolver,Aerospace and Defense,,,,,,,2029-08-16,3104,,62,,,,,,,,PFLT,2025-02-10
+"Aeronix, Inc.",First Lien,Aerospace and Defense,9.85%,,SOFR,5.25%,,,2028-12-18,32753,32332,32753,,32332,,,,,,PFLT,2025-02-10
+"Aeronix, Inc. - (Revolver)",First Lien,Aerospace and Defense,,,,,,,2028-12-18,6099,,,,,,,,,,PFLT,2025-02-10
+AFC Dell Holding Corp.,First Lien,Distributors,10.49%,,SOFR,5.5%,,,2027-04-09,28494,28420,28209,,28420,,,,,,PFLT,2025-02-10
+AFC Dell Holding Corp.,First Lien,Distributors,,,,,,,2027-04-09,7460,,75,,,,,,,,PFLT,2025-02-10
+Amsive Holding Corporation (f/k/a Vision Purchaser Corporation),First Lien,Media,10.75%,,SOFR,6.5%,,,2025-06-10,13813,13765,13675,,13765,,,,,,PFLT,2025-02-10
+"Anteriad, LLC (f/k/a MeritDirect, LLC)",First Lien,Media,10.50%,,SOFR,5.9%,,,2026-06-30,13005,12845,13005,,12845,,,,,,PFLT,2025-02-10
+"Anteriad, LLC (f/k/a MeritDirect, LLC) - Incremental Term Loan",First Lien,Media,10.50%,,SOFR,5.9%,,,2026-06-30,2098,2085,2097,,2085,,,,,,PFLT,2025-02-10
+"Anteriad, LLC (f/k/a MeritDirect, LLC) - (Revolver)",First Lien,Media,,,,,,,2026-06-30,2869,,,,,,,,,,PFLT,2025-02-10
+"Applied Technical Services, LLC",First Lien,Commercial Services & Supplies,10.50%,,SOFR,5.9%,,,2026-12-29,12597,12486,12408,,12486,,,,,,PFLT,2025-02-10
+"Applied Technical Services, LLC",First Lien,Commercial Services & Supplies,,,,,,,2025-07-17,3990,,20,,,,,,,,PFLT,2025-02-10
+"Applied Technical Services, LLC (Revolver)",First Lien,Commercial Services & Supplies,12.75%,,SOFR,4.75%,,,2026-12-29,1441,1441,1420,,1441,,,,,,PFLT,2025-02-10
+"Applied Technical Services, LLC (Revolver)(7),",First Lien,Commercial Services & Supplies,,,,,,,2026-12-29,852,,13,,,,,,,,PFLT,2025-02-10
+Arcfield Acquisition Corp. (Revolver),First Lien,Aerospace and Defense,11.56%,,SOFR,6.25%,,,2029-08-03,5951,5869,5921,,5869,,,,,,PFLT,2025-02-10
+"Arcfield Acquisition Corp. (Revolver)(7),",First Lien,Aerospace and Defense,,,,,,,2028-08-04,1379,,7,,,,,,,,PFLT,2025-02-10
+"Archer Lewis, LLC",First Lien,Healthcare Technology,10.83%,,SOFR,5.75%,,,2029-08-28,21700,21485,21266,,21485,,,,,,PFLT,2025-02-10
+"Archer Lewis, LLC - Unfunded Term Loan A",First Lien,Healthcare Technology,,,,,,,2025-08-28,13280,,133,,,,,,,,PFLT,2025-02-10
+"Archer Lewis, LLC - Unfunded Term Loan B",First Lien,Healthcare Technology,,,,,,,2026-08-28,21267,,213,,,,,,,,PFLT,2025-02-10
+"Archer Lewis, LLC",Revolver,Healthcare Technology,,,,,,,2029-08-28,3252,,65,,,,,,,,PFLT,2025-02-10
+"ARGANO, LLC",First Lien,Business Services,10.85%,,SOFR,5.75%,,,2029-09-13,35768,35411,35409,,35411,,,,,,PFLT,2025-02-10
+"ARGANO, LLC",Revolver,Business Services,,,,,,,2029-09-13,1421,,,,,,,,,,PFLT,2025-02-10
+"Beacon Behavioral Support Service, LLC",First Lien,Healthcare Providers and Services,10.10%,,SOFR,5.25%,,,2029-06-21,25067,24725,24691,,24725,,,,,,PFLT,2025-02-10
+"Beacon Behavioral Support Service, LLC",First Lien,Healthcare Providers and Services,,,,,,,2025-12-21,7565,,38,,,,,,,,PFLT,2025-02-10
+"Beacon Behavioral Support Service, LLC",Revolver,Healthcare Providers and Services,,,,,,,2029-06-21,2434,,37,,,,,,,,PFLT,2025-02-10
+"Beta Plus Technologies, Inc.",First Lien,Internet Software and Services,10.35%,,SOFR,5.75%,,,2029-07-01,19806,19212,19212,,19212,,,,,,PFLT,2025-02-10
+"Big Top Holdings, LLC",First Lien,Construction & Engineering,11.10%,,SOFR,6.25%,,,2030-02-28,30873,30358,30873,,30358,,,,,,PFLT,2025-02-10
+"BioDerm, Inc. (Revolver)",First Lien,Healthcare Equipment and Supplies,11.70%,,SOFR,6.5%,,,2028-01-31,589,589,582,,589,,,,,,PFLT,2025-02-10
+"BioDerm, Inc. (Revolver)(7),",First Lien,Healthcare Equipment and Supplies,,,,,,,2028-01-31,482,,6,,,,,,,,PFLT,2025-02-10
+"Blackhawk Industrial Distribution, Inc.",First Lien,Distributors,10.90%,,SOFR,6.4%,,,2026-09-17,8206,8143,8064,,8143,,,,,,PFLT,2025-02-10
+"Blackhawk Industrial Distribution, Inc. (Revolver)",First Lien,Distributors,11.04%,,SOFR,6.4%,,,2026-09-17,874,874,859,,874,,,,,,PFLT,2025-02-10
+"Blackhawk Industrial Distribution, Inc.",First Lien,Distributors,,,,,,,2026-09-17,3009,,51,,,,,,,,PFLT,2025-02-10
+"BlueHalo Financing Holdings, LLC",First Lien,Aerospace and Defense,10.60%,,SOFR,6%,,,2025-10-31,6462,6422,6332,,6422,,,,,,PFLT,2025-02-10
+"Broder Bros., Co.",First Lien,"Textiles, Apparel and Luxury Goods",10.97%,,SOFR,6.11%,,,2025-12-04,3218,3218,3218,,3218,,,,,,PFLT,2025-02-10
+Burgess Point Purchaser Corporation,First Lien,Auto Components,10.20%,,SOFR,5.35%,,,2029-07-25,14962,14219,14075,,14219,,,,,,PFLT,2025-02-10
+"By Light Professional IT Services, LLC",First Lien,High Tech Industries,12.18%,,SOFR,6.98%,,,2025-05-16,46992,46893,46992,,46893,,,,,,PFLT,2025-02-10
+"By Light Professional IT Services, LLC (Revolver)(7),",First Lien,High Tech Industries,,,,,,,2025-05-16,5831,,,,,,,,,,PFLT,2025-02-10
+"Carisk Buyer, Inc.",First Lien,Healthcare Technology,10.35%,,SOFR,5.75%,,,2029-12-01,5473,5397,5390,,5397,,,,,,PFLT,2025-02-10
+"Carisk Buyer, Inc.",First Lien,Healthcare Technology,,,,,,,2029-12-01,4813,,24,,,,,,,,PFLT,2025-02-10
+"Carisk Buyer, Inc. (Revolver)(7),",First Lien,Healthcare Technology,,,,,,,2029-12-01,1750,,26,,,,,,,,PFLT,2025-02-10
+"Carnegie Dartlet, LLC",First Lien,Professional Services,10.35%,,SOFR,5.5%,,,2030-02-07,29850,29410,29402,,29410,,,,,,PFLT,2025-02-10
+"Carnegie Dartlet, LLC - (Revolver)",First Lien,Professional Services,,,,,,,2030-02-07,5405,,81,,,,,,,,PFLT,2025-02-10
+"Cartessa Aesthetics, LLC",First Lien,Distributors,10.35%,,SOFR,5.75%,,,2028-06-14,12944,12802,12943,,12802,,,,,,PFLT,2025-02-10
+"Cartessa Aesthetics, LLC (Revolver)",First Lien,Distributors,10.35%,,SOFR,5.75%,,,2028-06-14,511,511,511,,511,,,,,,PFLT,2025-02-10
+"Cartessa Aesthetics, LLC (Revolver)(7),",First Lien,Distributors,,,,,,,2028-06-14,927,,,,,,,,,,PFLT,2025-02-10
+"CF512, Inc.",First Lien,Media,11.21%,,SOFR,6.19%,,,2026-08-20,5919,5888,5830,,5888,,,,,,PFLT,2025-02-10
+"CF512, Inc.(Revolver)(7),",First Lien,Media,,,,,,,2026-08-20,955,,14,,,,,,,,PFLT,2025-02-10
+"Compex Legal Services, Inc.",First Lien,Professional Services,10.88%,,SOFR,5.55%,,,2026-02-09,8833,8814,8833,,8814,,,,,,PFLT,2025-02-10
+"Compex Legal Services, Inc. (Revolver)",First Lien,Professional Services,10.80%,,SOFR,5.55%,,,2025-02-07,703,703,703,,703,,,,,,PFLT,2025-02-10
+"Compex Legal Services, Inc. (Revolver)(7),",First Lien,Professional Services,,,,,,,2025-02-07,703,,,,,,,,,,PFLT,2025-02-10
+"Confluent Health, LLC",First Lien,Healthcare Providers and Services,9.85%,,SOFR,5%,,,2028-11-30,6965,6771,6965,,6771,,,,,,PFLT,2025-02-10
+"Connatix Buyer, Inc.",First Lien,Media,10.53%,,SOFR,5.61%,,,2027-07-13,3775,3734,3775,,3734,,,,,,PFLT,2025-02-10
+"Connatix Buyer, Inc.",Revolver,Media,10.58%,,SOFR,5.76%,,,2027-07-13,281,281,281,,281,,,,,,PFLT,2025-02-10
+"Connatix Buyer, Inc.",First Lien,Media,,,,,,,2027-07-13,953,,,,,,,,,,PFLT,2025-02-10
+"Crane 1 Services, Inc.",First Lien,Commercial Services & Supplies,10.71%,,SOFR,5.86%,,,2027-08-16,2314,2284,2297,,2284,,,,,,PFLT,2025-02-10
+"Crane 1 Services, Inc. (Revolver)(7),",First Lien,Commercial Services & Supplies,,,,,,,2027-08-16,502,,4,,,,,,,,PFLT,2025-02-10
+"C5MI Holdco, LLC",First Lien,IT Services,10.60%,,SOFR,6%,,,2030-07-31,44000,43349,43120,,43349,,,,,,PFLT,2025-02-10
+"C5MI Holdco, LLC",Revolver,IT Services,10.60%,,SOFR,6%,,,2030-07-31,606,606,594,,606,,,,,,PFLT,2025-02-10
+"C5MI Holdco, LLC",Revolver,IT Services,,,,,,,2030-07-31,8487,,170,,,,,,,,PFLT,2025-02-10
+DRI Holding Inc.,First Lien,Media,10.20%,,SOFR,5.35%,,,2028-12-21,6123,5943,5908,,5943,,,,,,PFLT,2025-02-10
+"Dr. Squatch, LLC",First Lien,Personal Products,9.95%,,SOFR,5.35%,,,2027-08-31,16870,16709,16870,,16709,,,,,,PFLT,2025-02-10
+"Dr. Squatch, LLC (Revolver)(7),",First Lien,Personal Products,,,,,,,2027-08-31,3353,,,,,,,,,,PFLT,2025-02-10
+"DRS Holdings III, Inc.",First Lien,"Chemicals, Plastics and Rubber",11.20%,,SOFR,6.35%,,,2025-11-03,15559,15501,15435,,15501,,,,,,PFLT,2025-02-10
+"DRS Holdings III, Inc. (Revolver)(7),",First Lien,Personal Products,,,,,,,2025-11-03,1426,,11,,,,,,,,PFLT,2025-02-10
+"Duggal Acquisition, LLC",First Lien,Marketing Services,9.60%,,SOFR,5%,,,2030-09-30,15321,15168,15168,,15168,,,,,,PFLT,2025-02-10
+"Duggal Acquisition, LLC",Revolver,Marketing Services,,,,,,,2030-09-30,5605,,,,,,,,,,PFLT,2025-02-10
+"Dynata, LLC",First Lien,Business Services,10.38%,,SOFR,5.26%,,,2028-07-15,1856,1725,1853,,1725,,,,,,PFLT,2025-02-10
+"Dynata, LLC",First Lien,Business Services,10.88%,,SOFR,5.76%,,,2028-10-15,11514,11514,10601,,11514,,,,,,PFLT,2025-02-10
+"ECL Entertainment, LLC",First Lien,"Hotels, Restaurants and Leisure",8.85%,,SOFR,4%,,,2030-08-31,6209,6147,6223,,6147,,,,,,PFLT,2025-02-10
+"EDS Buyer, LLC",First Lien,"Electronic Equipment, Instruments, and Components",10.35%,,SOFR,5.75%,,,2029-01-10,10673,10544,10513,,10544,,,,,,PFLT,2025-02-10
+"EDS Buyer, LLC. (Revolver)(7),",First Lien,"Electronic Equipment, Instruments, and Components",,,,,,,2029-01-10,2298,,34,,,,,,,,PFLT,2025-02-10
+"Efficient Collaborative Retail Marketing Company, LLC",First Lien,Media: Diversified and Production,12.37%,,SOFR,7.76%,,,2025-06-15,8195,8216,6310,,8216,,,,,,PFLT,2025-02-10
+"Eisner Advisory Group, LLC",First Lien,Professional Services,9.25%,,SOFR,4%,,,2031-02-23,6948,6880,6961,,6880,,,,,,PFLT,2025-02-10
+"ETE Intermediate II, LLC",Revolver,Diversified Consumer Services,11.10%,,SOFR,6.5%,,,2029-05-25,1215,1215,1215,,1215,,,,,,PFLT,2025-02-10
+"ETE Intermediate II, LLC",Revolver,Diversified Consumer Services,,,,,,,2029-05-25,1215,,,,,,,,,,PFLT,2025-02-10
+"Eval Home Health Solutions Intermediate, LLC",First Lien,"Healthcare, Education and Childcare",10.60%,,SOFR,5.75%,,,2030-05-10,14492,14275,14347,,14275,,,,,,PFLT,2025-02-10
+"Exigo Intermediate II, LLC (Revolver)",First Lien,Software,,,,,,,2027-03-15,689,,3,,,,,,,,PFLT,2025-02-10
+Fairbanks Morse Defense,First Lien,Aerospace and Defense,9.74%,,SOFR,4.5%,,,2028-06-23,995,990,996,,990,,,,,,PFLT,2025-02-10
+"Five Star Buyer, Inc.",First Lien,"Hotels, Restaurants and Leisure",12.21%,,SOFR,7.15%,,,2028-02-23,4437,4372,4437,,4372,,,,,,PFLT,2025-02-10
+"Five Star Buyer, Inc. (Revolver)",First Lien,"Hotels, Restaurants and Leisure",,,,,,,2028-02-23,741,,,,,,,,,,PFLT,2025-02-10
+"GGG MIDCO, LLC",First Lien,Diversified Consumer Services,9.64%,,SOFR,5%,,,2030-09-27,19243,19051,19050,,19051,,,,,,PFLT,2025-02-10
+"GGG MIDCO, LLC",First Lien,Diversified Consumer Services,,,,,,,2026-03-27,30986,,,,,,,,,,PFLT,2025-02-10
+"GGG MIDCO, LLC",Revolver,Diversified Consumer Services,,,,,,,2030-09-27,1311,,,,,,,,,,PFLT,2025-02-10
+Global Holdings InterCo LLC,First Lien,Diversified Financial Services,11.43%,,SOFR,6.15%,,,2026-03-16,4985,4927,4736,,4927,,,,,,PFLT,2025-02-10
+"Graffiti Buyer, Inc.",First Lien,Trading Companies & Distributors,10.70%,,SOFR,5.6%,,,2027-08-10,1351,1341,1337,,1341,,,,,,PFLT,2025-02-10
+"Graffiti Buyer, Inc.",First Lien,Trading Companies & Distributors,,,,,,,2027-08-10,984,,2,,,,,,,,PFLT,2025-02-10
+"Graffiti Buyer, Inc. (Revolver)",First Lien,Trading Companies & Distributors,10.70%,,SOFR,5.6%,,,2027-08-10,432,432,428,,432,,,,,,PFLT,2025-02-10
+"Graffiti Buyer, Inc. (Revolver)(7),",First Lien,Trading Companies & Distributors,,,,,,,2027-08-10,432,,4,,,,,,,,PFLT,2025-02-10
+Hancock Roofing and Construction L.L.C.,First Lien,Insurance,10.20%,,SOFR,5.6%,,,2026-12-31,3993,3949,3913,,3949,,,,,,PFLT,2025-02-10
+Hancock Roofing and Construction L.L.C. (Revolver),First Lien,Insurance,10.45%,,SOFR,5.6%,,,2026-12-31,680,680,666,,680,,,,,,PFLT,2025-02-10
+"Hancock Roofing and Construction L.L.C. (Revolver)(7),",First Lien,Insurance,,,,,,,2026-12-31,70,,1,,,,,,,,PFLT,2025-02-10
+Harris & Co. LLC,First Lien,Professional Services,9.85%,,SOFR,5%,,,2030-08-09,31992,31720,31432,,31720,,,,,,PFLT,2025-02-10
+Harris & Co. LLC. - Unfunded Term Loan A,First Lien,Professional Services,,,,,,,2025-02-09,39414,,345,,,,,,,,PFLT,2025-02-10
+Harris & Co. LLC,Revolver,Professional Services,,,,,,,2030-08-09,7401,,130,,,,,,,,PFLT,2025-02-10
+HEC Purchaser Corp.,First Lien,"Healthcare, Education and Childcare",9.75%,,SOFR,5.5%,,,2029-06-17,9651,9535,9583,,9535,,,,,,PFLT,2025-02-10
+Hills Distribution Inc.,First Lien,Distributors,11.11%,,SOFR,6%,,,2029-11-07,7941,7829,7862,,7829,,,,,,PFLT,2025-02-10
+Hills Distribution Inc.,First Lien,Distributors,,,,,,,2025-11-07,10812,,,,,,,,,,PFLT,2025-02-10
+"HW Holdco, LLC",First Lien,Media,11.20%,,SOFR,5.9%,,,2026-05-10,10410,10389,10410,,10389,,,,,,PFLT,2025-02-10
+"HW Holdco, LLC (Revolver)",First Lien,Media,,,,,,,2026-05-10,1452,,,,,,,,,,PFLT,2025-02-10
+"IG Investments Holdings, LLC",First Lien,Professional Services,11.35%,,SOFR,6.1%,,,2028-09-22,4487,4430,4443,,4430,,,,,,PFLT,2025-02-10
+"IG Investments Holdings, LLC (Revolver)(7),",First Lien,Professional Services,,,,,,,2027-09-22,722,,7,,,,,,,,PFLT,2025-02-10
+"Imagine Acquisitionco, LLC (Revolver)",First Lien,Software,,,,,,,2027-11-15,1193,,6,,,,,,,,PFLT,2025-02-10
+"Infinity Home Services Holdco, Inc.",First Lien,Commercial Services & Supplies,10.96%,,SOFR,6.85%,,,2028-12-28,4553,4534,4582,,4534,,,,,,PFLT,2025-02-10
+"Infinity Home Services Holdco, Inc. (CAD)",First Lien,Commercial Services & Supplies,10.35%,,SOFR,6%,,,2028-12-28,1672,1204,1237,,1204,,,,,,PFLT,2025-02-10
+"Infinity Home Services Holdco, Inc. - 1st Amendment Unfunded Term Loan",First Lien,Commercial Services & Supplies,,,,,,,2025-11-17,4288,,54,,,,,,,,PFLT,2025-02-10
+"Infinity Home Services Holdco, Inc. (Revolver)",First Lien,Commercial Services & Supplies,13.75%,,SOFR,5.75%,,,2028-12-28,194,194,194,,194,,,,,,PFLT,2025-02-10
+"Infinity Home Services Holdco, Inc.",First Lien,Commercial Services & Supplies,,,,,,,2028-12-28,1098,,,,,,,,,,PFLT,2025-02-10
+"Infolinks Media Buyco, LLC",First Lien,Media,10.10%,,SOFR,5.5%,,,2026-11-01,5539,5483,5498,,5483,,,,,,PFLT,2025-02-10
+"Integrative Nutrition, LLC",First Lien,Consumer Services,11.36%,,SOFR,7.15%,,,2025-01-31,15776,15747,13567,,15747,,,,,,PFLT,2025-02-10
+"ITI Holdings, Inc. (Revolver)",First Lien,IT Services,12.50%,,SOFR,4.5%,,,2028-03-03,500,500,500,,500,,,,,,PFLT,2025-02-10
+"ITI Holdings, Inc. (Revolver)(7),",First Lien,IT Services,,,,,,,2028-03-03,165,,,,,,,,,,PFLT,2025-02-10
+"Inventus Power, Inc.",First Lien,"Electronic Equipment, Instruments, and Components",12.46%,,SOFR,7.61%,,,2025-06-30,4938,4893,4863,,4893,,,,,,PFLT,2025-02-10
+"Inventus Power, Inc.",Revolver,"Electronic Equipment, Instruments, and Components",,,,,,,2025-06-30,1729,,26,,,,,,,,PFLT,2025-02-10
+"Keel Platform, LLC",First Lien,Metals and Mining,10.09%,,SOFR,5.25%,,,2031-01-19,11544,11388,11486,,11388,,,,,,PFLT,2025-02-10
+"Kinetic Purchaser, LLC",First Lien,Personal Products,10.75%,,SOFR,6.15%,,,2027-11-10,13971,13802,13970,,13802,,,,,,PFLT,2025-02-10
+"Kinetic Purchaser, LLC (Revolver)",First Lien,Personal Products,,,,,,,2026-11-10,3435,,,,,,,,,,PFLT,2025-02-10
+"Lash OpCo, LLC",First Lien,Personal Products,12.94%,,SOFR,7.85%,,,2027-02-18,10786,10689,10678,,10689,,,,,,PFLT,2025-02-10
+"Lash OpCo, LLC (Revolver)",First Lien,Personal Products,12.94%,,SOFR,7.85%,,,2026-08-16,2833,2833,2805,,2833,,,,,,PFLT,2025-02-10
+"Lash OpCo, LLC (Revolver)(7),",First Lien,Personal Products,,,,,,,2026-08-16,335,,3,,,,,,,,PFLT,2025-02-10
+"LAV Gear Holdings, Inc.",First Lien,Capital Equipment,11.64%,,SOFR,6.4%,,,2025-10-31,13018,13015,12784,,13015,,,,,,PFLT,2025-02-10
+"LAV Gear Holdings, Inc. (Revolver)",First Lien,Capital Equipment,11.64%,,SOFR,6.4%,,,2025-10-31,1721,1721,1690,,1721,,,,,,PFLT,2025-02-10
+"Ledge Lounger, Inc.",First Lien,Leisure Products,12.25%,,SOFR,7.65%,,,2026-11-09,3674,3661,3491,,3661,,,,,,PFLT,2025-02-10
+"Ledge Lounger, Inc. (Revolver)",First Lien,Leisure Products,12.25%,,SOFR,7.65%,,,2026-11-09,263,263,250,,263,,,,,,PFLT,2025-02-10
+"Ledge Lounger, Inc. (Revolver)(7),",First Lien,Leisure Products,,,,,,,2026-11-09,395,,20,,,,,,,,PFLT,2025-02-10
+Lightspeed Buyer Inc.,First Lien,Healthcare Technology,10.20%,,SOFR,5.35%,,,2026-02-03,22309,22150,22309,,22150,,,,,,PFLT,2025-02-10
+"Lightspeed Buyer Inc. (Revolver)(7),",First Lien,Healthcare Technology,,,,,,,2026-02-03,2499,,,,,,,,,,PFLT,2025-02-10
+"LJ Avalon Holdings, LLC",First Lien,Construction & Engineering,10.31%,,SOFR,5.25%,,,2030-02-01,2809,2774,2809,,2774,,,,,,PFLT,2025-02-10
+"LJ Avalon Holdings, LLC",First Lien,Construction & Engineering,,,,,,,2030-02-01,1892,,9,,,,,,,,PFLT,2025-02-10
+"LJ Avalon Holdings, LLC (Revolver)(7),",First Lien,Construction & Engineering,,,,,,,2030-01-31,1130,,,,,,,,,,PFLT,2025-02-10
+"Loving Tan Intermediate II, Inc.",First Lien,Personal Products,11.10%,,SOFR,6.5%,,,2028-05-31,45055,44374,44379,,44374,,,,,,PFLT,2025-02-10
+"Loving Tan Intermediate II, Inc.",First Lien,Personal Products,,,,,,,2025-07-12,23464,,117,,,,,,,,PFLT,2025-02-10
+"Loving Tan Intermediate II, Inc. (Revolver)",First Lien,Personal Products,11.60%,,SOFR,7%,,,2028-05-31,1780,1780,1753,,1780,,,,,,PFLT,2025-02-10
+"Loving Tan Intermediate II, Inc.",Revolver,Personal Products,,,,,,,2028-05-31,3559,,53,,,,,,,,PFLT,2025-02-10
+"LSF9 Atlantis Holdings, LLC",First Lien,Specialty Retail,9.85%,,SOFR,5.25%,,,2029-06-30,9992,9992,10067,,9992,,,,,,PFLT,2025-02-10
+"Lucky Bucks, LLC",First Lien,"Hotels, Restaurants and Leisure",12.77%,,SOFR,7.65%,,,2028-10-02,259,259,259,,259,,,,,,PFLT,2025-02-10
+"Lucky Bucks, LLC",First Lien,"Hotels, Restaurants and Leisure",12.77%,,SOFR,7.65%,,,2029-10-02,518,518,518,,518,,,,,,PFLT,2025-02-10
+MAG DS Corp.,First Lien,Aerospace and Defense,10.20%,,SOFR,5.5%,,,2027-04-01,7289,7007,6852,,7007,,,,,,PFLT,2025-02-10
+"MBS Holdings, Inc.",Revolver,Internet Software and Services,10.95%,,SOFR,5.85%,,,2027-04-16,139,139,139,,139,,,,,,PFLT,2025-02-10
+"MBS Holdings, Inc. (Revolver)(7),",First Lien,Internet Software and Services,,,,,,,2027-04-16,1019,,,,,,,,,,PFLT,2025-02-10
+"MDI Buyer, Inc.",First Lien,Commodity Chemicals,11.25%,,SOFR,5.75%,,,2028-07-25,2021,1988,2002,,1988,,,,,,PFLT,2025-02-10
+"MDI Buyer, Inc. (Revolver)",First Lien,Commodity Chemicals,11.25%,,SOFR,6%,,,2028-07-25,531,531,526,,531,,,,,,PFLT,2025-02-10
+"MDI Buyer, Inc. (Revolver)(7),",First Lien,Commodity Chemicals,,,,,,,2028-07-25,242,,,,,,,,,,PFLT,2025-02-10
+"Meadowlark Acquirer, LLC",First Lien,Professional Services,10.50%,,SOFR,5.9%,,,2027-12-10,1958,1938,1909,,1938,,,,,,PFLT,2025-02-10
+"Medina Health, LLC",First Lien,Healthcare Providers and Services,10.85%,,SOFR,6.25%,,,2028-10-20,17820,17554,17820,,17554,,,,,,PFLT,2025-02-10
+"Megawatt Acquisitionco, Inc.",First Lien,"Electronic Equipment, Instruments, and Components",10.11%,,SOFR,5.25%,,,2030-03-01,6965,6869,6575,,6869,,,,,,PFLT,2025-02-10
+"Megawatt Acquisitionco, Inc.",Revolver,"Electronic Equipment, Instruments, and Components",10.11%,,SOFR,5.25%,,,2030-03-01,358,358,337,,358,,,,,,PFLT,2025-02-10
+"Megawatt Acquisitionco, Inc. - (Revolver)",First Lien,"Electronic Equipment, Instruments, and Components",,,,,,,2030-03-01,2893,,162,,,,,,,,PFLT,2025-02-10
+"Michael Baker International, LLC",First Lien,Professional Services,9.60%,,SOFR,4.75%,,,2028-12-01,7980,7941,8010,,7941,,,,,,PFLT,2025-02-10
+"Mission Critical Electronics, Inc.",First Lien,Capital Equipment,11.02%,,SOFR,5.9%,,,2025-03-31,3101,3092,3101,,3092,,,,,,PFLT,2025-02-10
+"Mission Critical Electronics, Inc. (Revolver)(7),",First Lien,Capital Equipment,,,,,,,2025-03-31,1325,,,,,,,,,,PFLT,2025-02-10
+"MOREGroup Holdings, Inc.",First Lien,Construction & Engineering,10.35%,,SOFR,5.75%,,,2030-01-16,31840,31410,31362,,31410,,,,,,PFLT,2025-02-10
+"MOREGroup Holdings, Inc.",First Lien,Construction & Engineering,,,,,,,2026-01-16,11056,,55,,,,,,,,PFLT,2025-02-10
+"MOREGroup Holdings, Inc. - (Revolver)",First Lien,Construction & Engineering,,,,,,,2030-01-16,6634,,100,,,,,,,,PFLT,2025-02-10
+"Municipal Emergency Services, Inc.",First Lien,Distributors,9.75%,,SOFR,5.15%,,,2027-10-01,1556,1527,1556,,1527,,,,,,PFLT,2025-02-10
+"Municipal Emergency Services, Inc. - Term Loan B",First Lien,Distributors,9.75%,,SOFR,5.15%,,,2027-10-01,777,777,777,,777,,,,,,PFLT,2025-02-10
+"Municipal Emergency Services, Inc.",First Lien,Distributors,,,,,,,2027-09-28,1387,,14,,,,,,,,PFLT,2025-02-10
+"Municipal Emergency Services, Inc. - Unfunded Term Loan B",First Lien,Distributors,,,,,,,2024-12-16,486,,,,,,,,,,PFLT,2025-02-10
+"Municipal Emergency Services, Inc. (Revolver)(7),",First Lien,Distributors,,,,,,,2027-10-01,947,,,,,,,,,,PFLT,2025-02-10
+"NBH Group LLC (Revolver)(7),",First Lien,Healthcare Equipment and Supplies,,,,,,,2026-08-19,1677,,50,,,,,,,,PFLT,2025-02-10
+NFS - CFP Holdings LLC,First Lien,Commercial Services & Supplies,9.56%,,SOFR,4.75%,,,2030-09-13,36300,36029,36028,,36029,,,,,,PFLT,2025-02-10
+NFS - CFP Holdings LLC,Revolver,Commercial Services & Supplies,,,,,,,2030-09-13,5014,,,,,,,,,,PFLT,2025-02-10
+"NORA Acquisition, LLC",First Lien,Healthcare Providers and Services,10.95%,,SOFR,6.35%,,,2029-08-31,19800,19449,19800,,19449,,,,,,PFLT,2025-02-10
+"NORA Acquisition, LLC (Revolver)(7),",First Lien,Healthcare Providers and Services,,,,,,,2029-08-31,5479,,,,,,,,,,PFLT,2025-02-10
+"Omnia Exterior Solutions, LLC",First Lien,Diversified Consumer Services,10.10%,,SOFR,5.5%,,,2029-12-29,28744,28498,28313,,28498,,,,,,PFLT,2025-02-10
+"Omnia Exterior Solutions, LLC",First Lien,Diversified Consumer Services,,,,,,,2026-09-30,12802,,80,,,,,,,,PFLT,2025-02-10
+"Omnia Exterior Solutions, LLC",First Lien,Diversified Consumer Services,,,,,,,2024-12-30,8001,,50,,,,,,,,PFLT,2025-02-10
+"Omnia Exterior Solutions, LLC (Revolver)(7),",First Lien,Diversified Consumer Services,,,,,,,2029-12-29,4200,,63,,,,,,,,PFLT,2025-02-10
+"One Stop Mailing, LLC",First Lien,Air Freight and Logistics,11.21%,,SOFR,6.36%,,,2027-05-07,8426,8333,8426,,8333,,,,,,PFLT,2025-02-10
+"ORL Acquisition, Inc.",First Lien,Consumer Finance,14.00%,,SOFR,9.4%,,,2027-09-03,4718,4666,4010,,4666,,,,,,PFLT,2025-02-10
+"ORL Acquisition, Inc. (Revolver)(7),",First Lien,Consumer Finance,,,,,,,2027-09-03,215,,32,,,,,,,,PFLT,2025-02-10
+"OSP Embedded Purchaser, LLC",First Lien,Aerospace and Defense,10.70%,,SOFR,6.1%,,,2029-12-15,12803,12598,12432,,12598,,,,,,PFLT,2025-02-10
+"OSP Embedded Purchaser, LLC (Revolver)",First Lien,Aerospace and Defense,,,,,,,2029-12-15,2932,,85,,,,,,,,PFLT,2025-02-10
+"Outcomes Group Holdings, Inc",First Lien,Healthcare Providers and Services,9.10%,,SOFR,4.25%,,,2031-04-02,3990,3970,4011,,3970,,,,,,PFLT,2025-02-10
+"Output Services Group, Inc.",First Lien,Business Services,13.75%,,SOFR,8.43%,,,2028-11-30,521,521,521,,521,,,,,,PFLT,2025-02-10
+"Output Services Group, Inc.",First Lien,Business Services,12.00%,,SOFR,6.68%,,,2028-05-30,1058,1058,1058,,1058,,,,,,PFLT,2025-02-10
+"Owl Acquisition, LLC",First Lien,Professional Services,10.20%,,SOFR,5.35%,,,2028-02-04,3893,3812,3825,,3812,,,,,,PFLT,2025-02-10
+"Ox Two, LLC",First Lien,Construction and Building,11.12%,,SOFR,6.51%,,,2026-05-18,22540,22385,22540,,22385,,,,,,PFLT,2025-02-10
+"Ox Two, LLC (Revolver)",First Lien,Construction and Building,,,,,,,2026-05-18,3387,,,,,,,,,,PFLT,2025-02-10
+"Pacific Purchaser, LLC",First Lien,Professional Services,11.51%,,SOFR,6.25%,,,2028-09-30,4963,4878,4953,,4878,,,,,,PFLT,2025-02-10
+"Pacific Purchaser, LLC",First Lien,Professional Services,,,,,,,2028-09-30,3598,,47,,,,,,,,PFLT,2025-02-10
+"Pacific Purchaser, LLC - (Revolver)",First Lien,Professional Services,,,,,,,2028-09-30,1799,,4,,,,,,,,PFLT,2025-02-10
+"PAR Excellence Holdings, Inc.",First Lien,Healthcare Technology,9.77%,,SOFR,4.75%,,,2030-09-03,17500,17327,17325,,17327,,,,,,PFLT,2025-02-10
+"PAR Excellence Holdings, Inc.",Revolver,Healthcare Technology,,,,,,,2030-09-03,4692,,,,,,,,,,PFLT,2025-02-10
+"PCS Midco, Inc.",First Lien,Professional Services,10.81%,,SOFR,5.75%,,,2030-03-01,7434,7333,7434,,7333,,,,,,PFLT,2025-02-10
+"PCS Midco, Inc.",First Lien,Professional Services,,,,,,,2026-03-01,3974,,40,,,,,,,,PFLT,2025-02-10
+"PCS Midco, Inc.",Revolver,Professional Services,10.81%,,SOFR,5.75%,,,2030-03-01,310,310,310,,310,,,,,,PFLT,2025-02-10
+"PH Beauty Holdings III, Inc.",First Lien,Consumer Products,10.17%,,SOFR,5.43%,,,2025-09-28,7415,7401,7346,,7401,,,,,,PFLT,2025-02-10
+"PL Acquisitionco, LLC",First Lien,"Textiles, Apparel and Luxury Goods",11.99%,,SOFR,7.25%,,,2027-11-09,5798,5735,4638,,5735,,,,,,PFLT,2025-02-10
+"PL Acquisitionco, LLC - (Revolver)",First Lien,"Textiles, Apparel and Luxury Goods",,,,,,,2027-11-09,2290,,458,,,,,,,,PFLT,2025-02-10
+"PlayPower, Inc.",First Lien,Leisure Products,9.85%,,SOFR,5.25%,,,2030-08-28,26334,26140,25939,,26140,,,,,,PFLT,2025-02-10
+"PlayPower, Inc.",Revolver,Leisure Products,,,,,,,2030-08-28,3981,,60,,,,,,,,PFLT,2025-02-10
+"Pragmatic Institute, LLC (Revolver),",First Lien,Professional Services,12.82%,,SOFR,7.5%,,,2028-07-06,1641,1605,1005,,1605,,,,,,PFLT,2025-02-10
+"Quantic Electronics, LLC",First Lien,"Electronic Equipment, Instruments, and Components",10.95%,,SOFR,6.35%,,,2026-11-19,6579,6530,6546,,6530,,,,,,PFLT,2025-02-10
+"Quantic Electronics, LLC",Revolver,"Electronic Equipment, Instruments, and Components",10.95%,,SOFR,6.35%,,,2026-11-19,335,335,333,,335,,,,,,PFLT,2025-02-10
+"Rancho Health MSO, Inc.",First Lien,Healthcare Equipment and Supplies,,,,,,,2025-06-30,3000,,30,,,,,,,,PFLT,2025-02-10
+"Rancho Health MSO, Inc. (Revolver)",First Lien,Healthcare Equipment and Supplies,10.93%,,SOFR,5.6%,,,2025-12-18,210,210,210,,210,,,,,,PFLT,2025-02-10
+"Rancho Health MSO, Inc. (Revolver)(7),",First Lien,Healthcare Equipment and Supplies,,,,,,,2025-12-18,315,,,,,,,,,,PFLT,2025-02-10
+"Recteq, LLC",First Lien,Leisure Products,11.75%,,SOFR,7.15%,,,2026-01-29,1448,1439,1433,,1439,,,,,,PFLT,2025-02-10
+"Recteq, LLC (Revolver)(7),",First Lien,Leisure Products,,,,,,,2026-01-29,1296,,13,,,,,,,,PFLT,2025-02-10
+"Riverpoint Medical, LLC",First Lien,Healthcare Equipment and Supplies,9.85%,,SOFR,5.25%,,,2025-06-20,9829,9796,9841,,9796,,,,,,PFLT,2025-02-10
+"Riverpoint Medical, LLC (Revolver)",First Lien,Healthcare Equipment and Supplies,10.10%,,SOFR,5.35%,,,2025-06-20,133,133,133,,133,,,,,,PFLT,2025-02-10
+"Riverpoint Medical, LLC (Revolver)(7),",First Lien,Healthcare Equipment and Supplies,,,,,,,2025-06-20,776,,,,,,,,,,PFLT,2025-02-10
+"RRA Corporate, LLC",First Lien,Diversified Consumer Services,9.60%,,SOFR,5%,,,2029-08-15,19200,19008,19008,,19008,,,,,,PFLT,2025-02-10
+"RRA Corporate, LLC - Unfunded Term Loan 1",First Lien,Diversified Consumer Services,,,,,,,2029-02-15,11506,,,,,,,,,,PFLT,2025-02-10
+"RRA Corporate, LLC - Unfunded Term Loan 2",First Lien,Diversified Consumer Services,,,,,,,2026-08-15,21719,,,,,,,,,,PFLT,2025-02-10
+"RRA Corporate, LLC",Revolver,Diversified Consumer Services,9.60%,,SOFR,5%,,,2029-08-15,1410,1409,1395,,1409,,,,,,PFLT,2025-02-10
+"RRA Corporate, LLC",Revolver,Diversified Consumer Services,,,,,,,2029-08-15,5306,,53,,,,,,,,PFLT,2025-02-10
+"RTIC Subsidiary Holdings, LLC",First Lien,Leisure Products,10.35%,,SOFR,5.75%,,,2029-05-03,41995,41372,41155,,41372,,,,,,PFLT,2025-02-10
+"RTIC Subsidiary Holdings, LLC",Revolver,Leisure Products,,,,,,,2029-05-03,9417,,188,,,,,,,,PFLT,2025-02-10
+"Rural Sourcing Holdings, Inc. (HPA SPQ Merger Sub, Inc.)",First Lien,Professional Services,10.35%,,SOFR,5.75%,,,2029-06-15,1140,1124,1126,,1124,,,,,,PFLT,2025-02-10
+"Rural Sourcing Holdings, Inc. (HPA SPQ Merger Sub, Inc.)",First Lien,Professional Services,,,,,,,2026-06-27,1146,,9,,,,,,,,PFLT,2025-02-10
+"Rural Sourcing Holdings, Inc. (HPA SPQ Merger Sub, Inc.) (Revolver)(7),",First Lien,Professional Services,,,,,,,2029-06-15,860,,11,,,,,,,,PFLT,2025-02-10
+Safe Haven Defense US LLC,First Lien,Building Products,9.85%,,SOFR,5.25%,,,2029-05-23,13563,13363,13428,,13363,,,,,,PFLT,2025-02-10
+Safe Haven Defense US LLC,Revolver,Building Products,,,,,,,2029-05-23,2920,,29,,,,,,,,PFLT,2025-02-10
+Sales Benchmark Index LLC,First Lien,Professional Services,10.80%,,SOFR,6.2%,,,2025-01-03,2527,2524,2527,,2524,,,,,,PFLT,2025-02-10
+"Sales Benchmark Index LLC (Revolver)(7),",First Lien,Professional Services,,,,,,,2025-01-03,1293,,,,,,,,,,PFLT,2025-02-10
+Sargent & Greenleaf Inc.,First Lien,"Electronic Equipment, Instruments, and Components",11.45%,,SOFR,7.6%,,,2024-12-20,3272,3266,3272,,3266,,,,,,PFLT,2025-02-10
+Sargent & Greenleaf Inc. (Revolver),First Lien,"Electronic Equipment, Instruments, and Components",11.45%,,SOFR,6.6%,,,2024-12-20,1078,1078,1078,,1078,,,,,,PFLT,2025-02-10
+Sargent & Greenleaf Inc. (Revolver),First Lien,"Electronic Equipment, Instruments, and Components",,,,,,,2024-12-20,9,,,,,,,,,,PFLT,2025-02-10
+"Schlesinger Global, Inc.",First Lien,Professional Services,13.20%,,SOFR,8.35%,,,2025-07-14,15224,15191,14844,,15191,,,,,,PFLT,2025-02-10
+"Schlesinger Global, Inc. (Revolver)",First Lien,Professional Services,13.20%,,SOFR,8.35%,,,2025-07-14,1578,1578,1539,,1578,,,,,,PFLT,2025-02-10
+"Schlesinger Global, Inc. (Revolver)(7),",First Lien,Professional Services,,,,,,,2025-07-14,401,,10,,,,,,,,PFLT,2025-02-10
+"Seaway Buyer, LLC",First Lien,"Chemicals, Plastics and Rubber",10.75%,,SOFR,6.15%,,,2029-06-13,1901,1879,1834,,1879,,,,,,PFLT,2025-02-10
+"Sigma Defense Systems, LLC",First Lien,IT Services,11.50%,,SOFR,6.9%,,,2027-12-18,20708,20447,20501,,20447,,,,,,PFLT,2025-02-10
+"Sigma Defense Systems, LLC (Revolver)(7),",First Lien,IT Services,,,,,,,2027-12-18,3311,,33,,,,,,,,PFLT,2025-02-10
+Simplicity Financial Marketing Group Holdings Inc.,First Lien,Diversified Financial Services,11.73%,,SOFR,6.4%,,,2026-12-02,4065,4054,4106,,4054,,,,,,PFLT,2025-02-10
+Simplicity Financial Marketing Group Holdings Inc.,First Lien,Diversified Financial Services,,,,,,,2026-02-09,4656,,93,,,,,,,,PFLT,2025-02-10
+"Skopima Consilio Parent, LLC",First Lien,Business Services,9.46%,,SOFR,4.61%,,,2028-05-17,596,584,594,,584,,,,,,PFLT,2025-02-10
+"Smartronix, LLC",First Lien,Aerospace and Defense,10.35%,,SOFR,6.1%,,,2028-11-23,13521,13323,13521,,13323,,,,,,PFLT,2025-02-10
+Smile Brands Inc.,First Lien,Healthcare and Pharmaceuticals,10.20%,,SOFR,5.5%,,,2027-10-12,2422,2422,2143,,2422,,,,,,PFLT,2025-02-10
+Smile Brands Inc. (Revolver),First Lien,Healthcare and Pharmaceuticals,10.20%,,SOFR,5.5%,,,2027-10-12,866,866,766,,866,,,,,,PFLT,2025-02-10
+"Smile Brands Inc. (Revolver)(7),",First Lien,Healthcare and Pharmaceuticals,,,,,,,2027-10-12,678,,78,,,,,,,,PFLT,2025-02-10
+"Smile Brands Inc. LC (Revolver)(7),",First Lien,Healthcare and Pharmaceuticals,,,,,,,2027-10-12,100,,12,,,,,,,,PFLT,2025-02-10
+"Solutionreach, Inc.",First Lien,Healthcare Technology,12.40%,,SOFR,7.15%,,,2025-07-17,4657,4637,4657,,4637,,,,,,PFLT,2025-02-10
+"Solutionreach, Inc. (Revolver)(7),",First Lien,Healthcare Technology,,,,,,,2025-07-17,833,,,,,,,,,,PFLT,2025-02-10
+Spendmend Holdings LLC,First Lien,Healthcare Technology,10.78%,,SOFR,5.65%,,,2028-03-01,2253,2232,2253,,2232,,,,,,PFLT,2025-02-10
+Spendmend Holdings LLC,First Lien,Healthcare Technology,,,,,,,2025-03-03,1493,,11,,,,,,,,PFLT,2025-02-10
+Spendmend Holdings LLC (Revolver),First Lien,Healthcare Technology,10.25%,,SOFR,5.65%,,,2028-03-01,357,357,357,,357,,,,,,PFLT,2025-02-10
+Spendmend Holdings LLC (Revolver),First Lien,Healthcare Technology,,,,,,,2028-03-01,535,,,,,,,,,,PFLT,2025-02-10
+"Summit Behavioral Healthcare, LLC",First Lien,Healthcare Providers and Services,9.31%,,SOFR,4.25%,,,2028-11-24,1990,1975,1851,,1975,,,,,,PFLT,2025-02-10
+"System Planning and Analysis, Inc. (f/k/a Management Consulting & Research, LLC)",First Lien,Aerospace and Defense,10.26%,,SOFR,5%,,,2027-08-16,20461,20238,20421,,20238,,,,,,PFLT,2025-02-10
+"System Planning and Analysis, Inc. (f/k/a Management Consulting & Research, LLC) (Revolver)",First Lien,Aerospace and Defense,,,,,,,2027-08-16,12537,,69,,,,,,,,PFLT,2025-02-10
+"System Planning and Analysis, Inc.",Revolver,Aerospace and Defense,9.59%,,SOFR,5.15%,,,2027-08-16,1633,1633,1630,,1633,,,,,,PFLT,2025-02-10
+"System Planning and Analysis, Inc. - (Revolver)",First Lien,Aerospace and Defense,,,,,,,2027-08-16,6732,,13,,,,,,,,PFLT,2025-02-10
+"S101 Holdings, Inc.",First Lien,"Electronic Equipment, Instruments, and Components",11.48%,,SOFR,6.15%,,,2026-12-29,12439,12301,12315,,12301,,,,,,PFLT,2025-02-10
+"S101 Holdings, Inc. - Unfunded Term Loan 2",First Lien,"Electronic Equipment, Instruments, and Components",,,,,,,2024-12-15,9036,,,,,,,,,,PFLT,2025-02-10
+"TCG 3.0 Jogger Acquisitionco, Inc.",First Lien,Media,11.83%,,SOFR,6.5%,,,2029-01-26,6965,6857,6895,,6857,,,,,,PFLT,2025-02-10
+"TCG 3.0 Jogger Acquisitionco, Inc. - (Revolver)",First Lien,Media,,,,,,,2029-01-26,2426,,24,,,,,,,,PFLT,2025-02-10
+"Team Services Group, LLC",First Lien,Healthcare Providers and Services,10.51%,,SOFR,5.26%,,,2027-12-20,15412,15173,15217,,15173,,,,,,PFLT,2025-02-10
+"Teneo Holdings, LLC - Initial Term Loans",First Lien,Diversified Financial Services,9.60%,,SOFR,4.75%,,,2031-03-13,6965,6895,6987,,6895,,,,,,PFLT,2025-02-10
+The Bluebird Group LLC,First Lien,Professional Services,11.25%,,SOFR,6.65%,,,2026-07-28,2566,2538,2566,,2538,,,,,,PFLT,2025-02-10
+"The Bluebird Group LLC (Revolver)(7),",First Lien,Professional Services,,,,,,,2026-07-28,862,,,,,,,,,,PFLT,2025-02-10
+"The Vertex Companies, LLC",First Lien,Construction & Engineering,10.95%,,SOFR,6.1%,,,2027-08-30,3377,3333,3356,,3333,,,,,,PFLT,2025-02-10
+"The Vertex Companies, LLC (Revolver)",First Lien,Construction & Engineering,10.95%,,SOFR,6.1%,,,2027-08-30,376,376,376,,376,,,,,,PFLT,2025-02-10
+"The Vertex Companies, LLC (Revolver)(7),",First Lien,Construction & Engineering,,,,,,,2027-08-30,535,,1,,,,,,,,PFLT,2025-02-10
+"TPC US Parent, LLC",First Lien,Food Products,10.98%,,SOFR,5.65%,,,2025-11-24,11888,11808,11888,,11808,,,,,,PFLT,2025-02-10
+"TPCN Midco, LLC",First Lien,Diversified Consumer Services,10.35%,,SOFR,5.75%,,,2029-06-26,8878,8749,8665,,8749,,,,,,PFLT,2025-02-10
+"TPCN Midco, LLC",First Lien,Diversified Consumer Services,,,,,,,2026-06-26,13113,,184,,,,,,,,PFLT,2025-02-10
+"TPCN Midco, LLC",Revolver,Diversified Consumer Services,,,,,,,2029-06-26,2580,,62,,,,,,,,PFLT,2025-02-10
+"TransGo, LLC",First Lien,Auto Components,10.60%,,SOFR,5.75%,,,2028-12-29,12034,11869,12034,,11869,,,,,,PFLT,2025-02-10
+"TransGo, LLC (Revolver)(7),",First Lien,Auto Components,,,,,,,2028-12-29,4440,,,,,,,,,,PFLT,2025-02-10
+TWS Acquisition Corporation,First Lien,Diversified Consumer Services,11.33%,,SOFR,6.4%,,,2025-06-16,2508,2502,2508,,2502,,,,,,PFLT,2025-02-10
+"TWS Acquisition Corporation (Revolver)(7),",First Lien,Diversified Consumer Services,,,,,,,2025-06-16,2628,,,,,,,,,,PFLT,2025-02-10
+"Tyto Athene, LLC",First Lien,IT Services,10.23%,,SOFR,4.9%,,,2028-04-01,11928,11826,11690,,11826,,,,,,PFLT,2025-02-10
+"Urology Management Holdings, Inc.",First Lien,Healthcare Providers and Services,10.52%,,SOFR,5.5%,,,2027-06-15,1200,1194,1188,,1194,,,,,,PFLT,2025-02-10
+"Urology Management Holdings, Inc.",First Lien,Healthcare Providers and Services,,,,,,,2026-09-03,4800,,24,,,,,,,,PFLT,2025-02-10
+"Walker Edison Furniture, LLC",First Lien,Wholesale,,,,,,,2029-03-01,5441,5026,490,,5026,,,,,,PFLT,2025-02-10
+"Walker Edison Furniture Company, LLC",First Lien,Wholesale,,,,,,,2029-03-01,83,,76,,,,,,,,PFLT,2025-02-10
+"Walker Edison Furniture Company, LLC - Funded Junior Revolver",First Lien,Wholesale,,,,,,,2029-03-01,1667,1667,1667,,1667,,,,,,PFLT,2025-02-10
+"Watchtower Intermediate, LLC",First Lien,"Electronic Equipment, Instruments, and Components",10.60%,,SOFR,6%,,,2029-12-01,9055,8929,8964,,8929,,,,,,PFLT,2025-02-10
+"Watchtower Intermediate, LLC",First Lien,"Electronic Equipment, Instruments, and Components",,,,,,,2025-12-01,2100,,3,,,,,,,,PFLT,2025-02-10
+"Watchtower Intermediate, LLC (Revolver)",First Lien,"Electronic Equipment, Instruments, and Components",,,,,,,2029-12-01,6300,,63,,,,,,,,PFLT,2025-02-10
+"Wildcat Buyerco, Inc.",First Lien,"Electronic Equipment, Instruments, and Components",10.60%,,SOFR,5.75%,,,2027-02-26,12592,12498,12592,,12498,,,,,,PFLT,2025-02-10
+"Wildcat Buyerco, Inc.",First Lien,"Electronic Equipment, Instruments, and Components",,,,,,,2027-02-26,3281,,33,,,,,,,,PFLT,2025-02-10
+"Wildcat Buyerco, Inc. (Revolver)(7),",First Lien,"Electronic Equipment, Instruments, and Components",,,,,,,2027-02-26,534,,,,,,,,,,PFLT,2025-02-10
+"Wrench Group, LLC",First Lien,Commercial Services & Supplies,8.87%,,SOFR,4.26%,,,2028-10-30,3483,3475,3480,,3475,,,,,,PFLT,2025-02-10
+"Zips Car Wash, LLC",First Lien,Automobiles,12.46%,,SOFR,7.4%,,,2024-12-31,13252,13227,12656,,13227,,,,,,PFLT,2025-02-10
+Beacon Behavioral Holdings LLC,First Lien,Healthcare Providers and Services,15.00%,,,,,,2030-06-21,1042,1027,1026,,1027,,,,,,PFLT,2025-02-10
+"ORL Holdco, Inc. - Convertible Notes",First Lien,Consumer Finance,18.00%,,,,,,2028-03-08,13,13,9,,13,,,,,,PFLT,2025-02-10
+"ORL Holdco, Inc. - Unfunded Convertible Notes",First Lien,Consumer Finance,,,,,,,2028-03-08,13,,4,,,,,,,,PFLT,2025-02-10
+"StoicLane, Inc. - Convertible Notes",First Lien,Healthcare Technology,12.00%,,,,,,2027-08-15,1526,1526,1526,,1526,,,,,,PFLT,2025-02-10
+"StoicLane, Inc. - Unfunded Convertible Notes",First Lien,Healthcare Technology,,,,,,,2027-08-15,1526,,,,,,,,,,PFLT,2025-02-10
+"Accounting Platform Blocker, Inc -. Preferred Equity",Preferred Equity,Professional Services,,,,,,,,,1076,1076,,1076,,,,1075900,,PFLT,2025-02-10
+"Ad.net Holdings, Inc.",Preferred Equity,Media,,,,,,,,,672,852,,672,,,,6720,,PFLT,2025-02-10
+"AFC Acquisitions, Inc. (Preferred)",Preferred Equity,Distributors,,,,,,,,,1314,1400,,1314,,,,854,,PFLT,2025-02-10
+"Anteriad Holdings, LP (f/k/a MeritDirect Holdings, LP)(7),",Preferred Equity,Media,,,,,,,,,2018,2298,,2018,,,,2018,,PFLT,2025-02-10
+"Cartessa Aesthetics, LLC (Preferred)",Preferred Equity,Distributors,,,,,,,,,1438,2560,,1438,,,,1437500,,PFLT,2025-02-10
+"C5MI Holdco, LLC. - Preferred Equity",Preferred Equity,IT Services,,,,,,,,,223,233,,223,,,,228900,,PFLT,2025-02-10
+"EvAL Home Health Solutions, LLC - Preferred Equity",Preferred Equity,"Healthcare, Education and Childcare",,,,,,,,,1455,1631,,1455,,,,876386,,PFLT,2025-02-10
+Gauge Schlesinger Coinvest LLC (Preferred Equity),Preferred Equity,Professional Services,,,,,,,,,64,37,,64,,,,64,,PFLT,2025-02-10
+"Hancock Claims Consultants Investors, LLC (Preferred Equity)",Preferred Equity,Insurance,,,,,,,,,76,149,,76,,,,116588,,PFLT,2025-02-10
+"Imagine Topco, LP",Preferred Equity,Software,8.00%,,,,,,,,1236,1432,,1236,,,,1236027,,PFLT,2025-02-10
+Magnolia Topco LP - Class A Preferred Equity,Preferred Equity,Automobiles,,,,,,,,,47,48,,47,,,,47,,PFLT,2025-02-10
+"Megawatt Acquisition Partners, LLC - Preferred A Equity",Preferred Equity,"Electronic Equipment, Instruments, and Components",,,,,,,,,936,842,,936,,,,9360,,PFLT,2025-02-10
+"NXOF Holdings, Inc. (Tyto Athene, LLC)",Preferred Equity,IT Services,,,,,,,,,1935,2621,,1935,,,,1935,,PFLT,2025-02-10
+"ORL Holdco, Inc.",Preferred Equity,Consumer Finance,,,,,,,,,133,18,,133,,,,1327,,PFLT,2025-02-10
+"PL Acquisitionco, LLC (Preferred Equity)",Preferred Equity,"Textiles, Apparel and Luxury Goods",,,,,,,,,61,,,61,,,,61,,PFLT,2025-02-10
+"RTIC Parent Holdings, LLC - Class C Preferred Equity",Preferred Equity,Leisure Products,,,,,,,,,1215,1976,,1215,,,,18450,,PFLT,2025-02-10
+"RTIC Parent Holdings, LLC - Class D Preferred Equity",Preferred Equity,Leisure Products,,,,,,,,,196,218,,196,,,,19584,,PFLT,2025-02-10
+"TPC Holding Company, LP",Preferred Equity,Food Products,,,,,,,,,409,662,,409,,,,409,,PFLT,2025-02-10
+"TWD Parent Holdings, LLC (The Vertex Companies, LLC)",Preferred Equity,Construction & Engineering,,,,,,,,,35,43,,35,,,,37,,PFLT,2025-02-10
+"UniTek Global Services, Inc. - Super Senior Preferred Equity",Preferred Equity,Telecommunications,20.00%,,,,,,,,344,209,,344,,,,343861,,PFLT,2025-02-10
+"A1 Garage Equity, LLC",Other Equity,Commercial Services & Supplies,,,,,,,,,648,818,,648,,,,647943,,PFLT,2025-02-10
+"ACP Big Top Holdings, L.P. - Common Equity",Other Equity,Construction & Engineering,,,,,,,,,3001,3614,,3001,,,,3000500,,PFLT,2025-02-10
+"Ad.net Holdings, Inc.",Other Equity,Media,,,,,,,,,75,4,,75,,,,7467,,PFLT,2025-02-10
+"Aechelon InvestCo, LP - Common Equity",Other Equity,Aerospace and Defense,,,,,,,,,3168,3168,,3168,,,,31675,,PFLT,2025-02-10
+"Aechelon InvestCo, LP - Unfunded",Other Equity,Aerospace and Defense,,,,,,,,,,,,,,,,31675,,PFLT,2025-02-10
+"Aftermarket Drivetrain Products Holdings, LLC",Other Equity,Auto Components,,,,,,,,,2632,3686,,2632,,,,2632,,PFLT,2025-02-10
+"AG Investco LP(7),",Other Equity,Software,,,,,,,,,805,1008,,805,,,,805164,,PFLT,2025-02-10
+"AG Investco LP(7), (8),",Other Equity,Software,,,,,,,,,,,,,,,,194836,,PFLT,2025-02-10
+"Altamira Intermediate Company II, Inc.",Other Equity,IT Services,,,,,,,,,1438,1736,,1438,,,,1437500,,PFLT,2025-02-10
+"Anteriad Holdings, LP (f/k/a MeritDirect Holdings, LP)(7),",Other Equity,Media,,,,,,,,,,,,,,,,2018,,PFLT,2025-02-10
+"Athletico Holdings, LLC",Other Equity,Healthcare Providers and Services,,,,,,,,,5000,3837,,5000,,,,4678,,PFLT,2025-02-10
+"BioDerm Holdings, LP",Other Equity,Healthcare Equipment and Supplies,,,,,,,,,1313,1179,,1313,,,,1313,,PFLT,2025-02-10
+"Burgess Point Holdings, LP",Other Equity,Auto Components,,,,,,,,,114,119,,114,,,,112,,PFLT,2025-02-10
+"By Light Investco LP(7),",Other Equity,High Tech Industries,,,,,,,,,803,18788,,803,,,,22789,,PFLT,2025-02-10
+"Carisk Parent, L.P.",Other Equity,Healthcare Technology,,,,,,,,,240,247,,240,,,,239680,,PFLT,2025-02-10
+"Carnegie HoldCo, LLC - Common Equity",Other Equity,Professional Services,,,,,,,,,2664,2638,,2664,,,,2719600,,PFLT,2025-02-10
+"Connatix Parent, LLC",Other Equity,Media,,,,,,,,,421,236,,421,,,,38278,,PFLT,2025-02-10
+"Consello Pacific Aggregator, LLC",Other Equity,Professional Services,,,,,,,,,973,921,,973,,,,1025476,,PFLT,2025-02-10
+"Crane 1 Acquisition Parent Holdings, L.P.",Other Equity,Commercial Services & Supplies,,,,,,,,,120,220,,120,,,,130,,PFLT,2025-02-10
+"C5MI Holdco, LLC. - Common Equity",Other Equity,IT Services,,,,,,,,,1659,1654,,1659,,,,1659050,,PFLT,2025-02-10
+"Delta InvestCo LP (Sigma Defense Systems, LLC)(7),",Other Equity,IT Services,,,,,,,,,763,1500,,763,,,,804615,,PFLT,2025-02-10
+"Delta InvestCo LP (Sigma Defense Systems, LLC)(7), (8),",Other Equity,IT Services,,,,,,,,,,,,,,,,200255,,PFLT,2025-02-10
+"DUGGAL EQUITY, LP - Common Equity",Other Equity,Marketing Services,,,,,,,,,686,686,,686,,,,686400,,PFLT,2025-02-10
+"eCommission Holding Corporation(7),",Other Equity,"Banking, Finance, Insurance & Real Estate",,,,,,,,,237,639,,237,,,,20,,PFLT,2025-02-10
+"EDS Topco, LP",Other Equity,"Electronic Equipment, Instruments, and Components",,,,,,,,,1125,1256,,1125,,,,1125000,,PFLT,2025-02-10
+"Exigo, LLC",Other Equity,Software,,,,,,,,,542,586,,542,,,,541667,,PFLT,2025-02-10
+"FedHC InvestCo LP(7),",Other Equity,Aerospace and Defense,,,,,,,,,727,1773,,727,,,,21665,,PFLT,2025-02-10
+"FedHC InvestCo LP(7), (8),",Other Equity,Aerospace and Defense,,,,,,,,,,,,,,,,7566,,PFLT,2025-02-10
+"Five Star Parent Holdings, LLC",Other Equity,"Hotels, Restaurants and Leisure",,,,,,,,,656,647,,656,,,,655714,,PFLT,2025-02-10
+"Gauge ETE Blocker, LLC",Other Equity,Diversified Consumer Services,,,,,,,,,374,285,,374,,,,374444,,PFLT,2025-02-10
+Gauge Lash Coinvest LLC,Other Equity,Personal Products,,,,,,,,,1393,5349,,1393,,,,1840021,,PFLT,2025-02-10
+"Gauge Loving Tan, LP",Other Equity,Personal Products,,,,,,,,,2915,3207,,2915,,,,2914701,,PFLT,2025-02-10
+Gauge Schlesinger Coinvest LLC,Other Equity,Professional Services,,,,,,,,,476,268,,476,,,,465,,PFLT,2025-02-10
+GCOM InvestCo LP,Other Equity,IT Services,,,,,,,,,3342,4555,,3342,,,,19184,,PFLT,2025-02-10
+"GGG Topco, LLC - Common Equity",Other Equity,Diversified Consumer Services,,,,,,,,,2760,2760,,2760,,,,2759800,,PFLT,2025-02-10
+"GMP Hills, L.P.",Other Equity,Distributors,,,,,,,,,4431,4342,,4431,,,,4430843,,PFLT,2025-02-10
+"Hancock Claims Consultants Investors, LLC(7),",Other Equity,Insurance,,,,,,,,,448,275,,448,,,,450000,,PFLT,2025-02-10
+HPA SPQ Aggregator LP,Other Equity,Professional Services,,,,,,,,,750,842,,750,,,,750399,,PFLT,2025-02-10
+"HV Watterson Holdings, LLC",Other Equity,Professional Services,,,,,,,,,100,16,,100,,,,100000,,PFLT,2025-02-10
+"Icon Partners V C, L.P.",Other Equity,Internet Software and Services,,,,,,,,,1871,1872,,1871,,,,1870915,,PFLT,2025-02-10
+"Icon Partners V C, L.P.(7),",Other Equity,Internet Software and Services,,,,,,,,,,,,,,,,629085,,PFLT,2025-02-10
+"IHS Parent Holdngs, L.P.",Other Equity,Commercial Services & Supplies,,,,,,,,,1218,1535,,1218,,,,1218045,,PFLT,2025-02-10
+"ITC Infusion Co-invest, LP",Other Equity,Healthcare Equipment and Supplies,,,,,,,,,1175,1745,,1175,,,,116032,,PFLT,2025-02-10
+"Kinetic Purchaser, LLC",Other Equity,Personal Products,,,,,,,,,1735,1985,,1735,,,,1734775,,PFLT,2025-02-10
+"KL Stockton Co-Invest LP (Any Hour Services)(7),",Other Equity,Energy Equipment and Services,,,,,,,,,385,884,,385,,,,382353,,PFLT,2025-02-10
+"LEP Pequod Holdings, LP",Other Equity,Financial Services,,,,,,,,,865,1004,,865,,,,350,,PFLT,2025-02-10
+Lightspeed Investment Holdco LLC,Other Equity,Healthcare Technology,,,,,,,,,586,2118,,586,,,,585587,,PFLT,2025-02-10
+"LJ Avalon, LP",Other Equity,Construction & Engineering,,,,,,,,,1638,1998,,1638,,,,1638043,,PFLT,2025-02-10
+"Lucky Bucks, LLC",Other Equity,"Hotels, Restaurants and Leisure",,,,,,,,,2062,904,,2062,,,,73870,,PFLT,2025-02-10
+"MDI Aggregator, LP",Other Equity,Commodity Chemicals,,,,,,,,,1078,1250,,1078,,,,10761,,PFLT,2025-02-10
+"Megawatt Acquisition Partners, LLC - Common A Equity",Other Equity,"Electronic Equipment, Instruments, and Components",,,,,,,,,104,83,,104,,,,1040,,PFLT,2025-02-10
+"Municipal Emergency Services, Inc.",Other Equity,Distributors,,,,,,,,,2005,3157,,2005,,,,1973370,,PFLT,2025-02-10
+"NEPRT Parent Holdings, LLC (Recteq, LLC)(7),",Other Equity,Leisure Products,,,,,,,,,1438,100,,1438,,,,1494,,PFLT,2025-02-10
+"New Insight Holdings, Inc. - Common Equity",Other Equity,Business Services,,,,,,,,,2771,2771,,2771,,,,158348,,PFLT,2025-02-10
+"New Medina Health, LLC",Other Equity,Healthcare Providers and Services,,,,,,,,,2673,4171,,2673,,,,2672646,,PFLT,2025-02-10
+"NORA Parent Holdings, LLC",Other Equity,Healthcare Providers and Services,,,,,,,,,2525,2256,,2525,,,,2544,,PFLT,2025-02-10
+"North Haven Saints Equity Holdings, LP",Other Equity,Healthcare Technology,,,,,,,,,224,241,,224,,,,223602,,PFLT,2025-02-10
+"OceanSound Discovery Equity, LP (Holdco Sands Intermediate, LLC)(7),",Other Equity,Aerospace and Defense,,,,,,,,,1736,1761,,1736,,,,173638,,PFLT,2025-02-10
+"OES Co-Invest, LP - Class A Common Equity",Other Equity,Diversified Consumer Services,,,,,,,,,1574,1739,,1574,,,,1560,,PFLT,2025-02-10
+"OHCP V BC COI, L.P.",Other Equity,Distributors,,,,,,,,,1158,738,,1158,,,,1158239,,PFLT,2025-02-10
+"OHCP V BC COI, L.P.",Other Equity,Distributors,,,,,,,,,,33,,,,,,91761,,PFLT,2025-02-10
+"ORL Holdco, Inc",Other Equity,Consumer Finance,,,,,,,,,15,,,15,,,,1474,,PFLT,2025-02-10
+"OSP Embedded Aggregator, LP",Other Equity,Aerospace and Defense,,,,,,,,,1728,1098,,1728,,,,1727679,,PFLT,2025-02-10
+"Output Services Group, Inc.",Other Equity,Business Services,,,,,,,,,642,701,,642,,,,80170,,PFLT,2025-02-10
+"PAR Excellence Holdings, Inc. - Common Equity",Other Equity,Healthcare Technology,,,,,,,,,1902,1902,,1902,,,,1902200,,PFLT,2025-02-10
+"PCS Parent, LP - Common Equity",Other Equity,Professional Services,,,,,,,,,423,444,,423,,,,423247,,PFLT,2025-02-10
+"PennantPark-TSO Senior Loan Fund, LP",Other Equity,Financial Services,,,,,,,,,11168,9186,,11168,,,,11167847,,PFLT,2025-02-10
+"Quad (U.S.) Co-Invest, L.P.",Other Equity,Professional Services,,,,,,,,,267,341,,267,,,,266864,,PFLT,2025-02-10
+"QuantiTech InvestCo LP(7),",Other Equity,Aerospace and Defense,,,,,,,,,0,172,,0,,,,700,,PFLT,2025-02-10
+"QuantiTech InvestCo LP(7), (8),",Other Equity,Aerospace and Defense,,,,,,,,,,,,,,,,955,,PFLT,2025-02-10
+"QuantiTech InvestCo II LP(7),",Other Equity,Aerospace and Defense,,,,,,,,,14,12,,14,,,,40,,PFLT,2025-02-10
+"RFMG Parent, LP (Rancho Health MSO, Inc.)",Other Equity,Healthcare Equipment and Supplies,,,,,,,,,1050,1309,,1050,,,,1050000,,PFLT,2025-02-10
+"Safe Haven Defense MidCo, LLC - Common Equity",Other Equity,Building Products,,,,,,,,,596,648,,596,,,,596,,PFLT,2025-02-10
+SBI Holdings Investments LLC (Sales Benchmark Index LLC),Other Equity,Professional Services,,,,,,,,,646,716,,646,,,,64634,,PFLT,2025-02-10
+"Seaway Topco, LP",Other Equity,"Chemicals, Plastics and Rubber",,,,,,,,,296,199,,296,,,,296,,PFLT,2025-02-10
+"SP L2 Holdings, LLC (Ledge Lounger, Inc.)",Other Equity,Leisure Products,,,,,,,,,360,14,,360,,,,360103,,PFLT,2025-02-10
+"SSC Dominion Holdings, LLC - Class B (US Dominion, Inc.)",Other Equity,Capital Equipment,,,,,,,,,12,1385,,12,,,,12,,PFLT,2025-02-10
+"StellPen Holdings, LLC (CF512, Inc.)",Other Equity,Media,,,,,,,,,162,141,,162,,,,161538,,PFLT,2025-02-10
+"SV Aero Holdings, LLC",Other Equity,Aerospace and Defense,,,,,,,,,535,1157,,535,,,,61,,PFLT,2025-02-10
+"TAC LifePort Holdings, LLC(7),",Other Equity,Aerospace and Defense,,,,,,,,,502,815,,502,,,,533833,,PFLT,2025-02-10
+"TCG 3.0 Jogger Co-Invest, LP",Other Equity,Media,,,,,,,,,1760,1357,,1760,,,,9108,,PFLT,2025-02-10
+"Tower Arch Infolinks Media, LP (Infolinks Media Buyco, LLC)",Other Equity,Media,,,,,,,,,103,335,,103,,,,221296,,PFLT,2025-02-10
+"Tower Arch Infolinks Media, LP (Infolinks Media Buyco, LLC)(8),",Other Equity,Media,,,,,,,,,0,,,0,,,,144310,,PFLT,2025-02-10
+"TPC Holding Company, LP",Other Equity,Food Products,,,,,,,,,22,113,,22,,,,21527,,PFLT,2025-02-10
+"TPCN Holdings, LLC - Common Equity",Other Equity,Diversified Consumer Services,,,,,,,,,1053,864,,1053,,,,1053200,,PFLT,2025-02-10
+"TWD Parent Holdings, LLC (The Vertex Companies, LLC)",Other Equity,Construction & Engineering,,,,,,,,,1,8,,1,,,,749,,PFLT,2025-02-10
+"UniVista Insurance(7),",Other Equity,Insurance,,,,,,,,,334,844,,334,,,,400,,PFLT,2025-02-10
+"Urology Partners Co., L.P.",Other Equity,Healthcare Providers and Services,,,,,,,,,694,740,,694,,,,694444,,PFLT,2025-02-10
+"Watchtower Holdings, LLC",Other Equity,"Electronic Equipment, Instruments, and Components",,,,,,,,,1242,1292,,1242,,,,12419,,PFLT,2025-02-10
+"WCP IvyRehab Coinvestment, LP",Other Equity,Healthcare Providers and Services,,,,,,,,,208,221,,208,,,,208,,PFLT,2025-02-10
+"WCP IvyRehab QP CF Feeder, LP",Other Equity,Healthcare Providers and Services,,,,,,,,,3793,3987,,3793,,,,3754,,PFLT,2025-02-10
+"WCP Ivyrehab QP CF Feeder, LP. - Unfunded(8),",Other Equity,Healthcare Providers and Services,,,,,,,,,,,,,,,,246,,PFLT,2025-02-10
+"Wildcat Parent, LP (Wildcat Buyerco, Inc.)",Other Equity,"Electronic Equipment, Instruments, and Components",,,,,,,,,95,816,,95,,,,2240,,PFLT,2025-02-10
+"Kentucky Racing Holdco, LLC (Warrants)",Other Equity,"Hotels, Restaurants and Leisure",,,,,,,,,,927,,,,,,87345,,PFLT,2025-02-10
+"Marketplace Events, LLC - Super Priority First Lien Term Loan",First Lien,Media: Diversified and Production,10.26%,,SOFR,5.4%,,,2025-09-30,10213,10213,10213,,10213,,,,,,PFLT,2025-02-10
+"Marketplace Events, LLC - Super Priority First Lien",First Lien,Media: Diversified and Production,,,,,,,2025-09-30,3122,,,,,,,,,,PFLT,2025-02-10
+"Marketplace Events, LLC",First Lien,Media: Diversified and Production,10.26%,,SOFR,5.4%,,,2026-09-30,26771,22558,26771,,22558,,,,,,PFLT,2025-02-10
+"PennantPark Senior Secured Loan Fund I LLC(7),",First Lien,Financial Services,13.28%,,SOFR,8%,,,2029-05-06,237650,237650,237650,,237650,,,,,,PFLT,2025-02-10
+"New MPE Holdings, LLC - Common Equity",Other Equity,Media: Diversified and Production,,,,,,,,,,20123,,,,,,349,,PFLT,2025-02-10
+"PennantPark Senior Secured Loan Fund I LLC(7),",Other Equity,Financial Services,,,,,,,,,101850,56478,,101850,,,,101850,,PFLT,2025-02-10
+"A1 Garage Merger Sub, LLC",First Lien,Commercial Services & Supplies,9.11%,,SOFR,4.75%,,,2028-12-22,,2850,2895,,2850,,,,,,PFLT,2025-02-10
+"ACP Avenu Buyer, LLC",First Lien,Business Services,9.84%,,SOFR,5.25%,,,2029-10-02,,9750,9628,,9750,,,,,,PFLT,2025-02-10
+"ACP Falcon Buyer, Inc.",First Lien,Business Services,10.09%,,SOFR,5.5%,,,2029-08-01,,18400,18902,,18400,,,,,,PFLT,2025-02-10
+"Ad.net Acquisition, LLC",First Lien,Media,10.59%,,SOFR,6.26%,,,2026-05-07,,8641,8685,,8641,,,,,,PFLT,2025-02-10
+Alpine Acquisition Corp II,First Lien,Containers and Packaging,10.65%,,SOFR,6.1%,,,2026-11-30,,12488,11807,,12488,,,,,,PFLT,2025-02-10
+"Anteriad, LLC (f/k/a MeritDirect, LLC)",First Lien,"Media: Advertising, Printing & Publishing",10.23%,,SOFR,5.9%,,,2026-06-30,,4555,4647,,4555,,,,,,PFLT,2025-02-10
+"Anteriad, LLC (f/k/a MeritDirect, LLC) - Incremental Term Loan",First Lien,"Media: Advertising, Printing & Publishing",10.23%,,SOFR,5.9%,,,2026-06-30,,4523,4563,,4523,,,,,,PFLT,2025-02-10
+"Applied Technical Services, LLC",First Lien,Commercial Services & Supplies,10.23%,,SOFR,5.9%,,,2026-12-29,,11042,10989,,11042,,,,,,PFLT,2025-02-10
+Arcfield Acquisition Corp.,First Lien,Aerospace and Defense,9.62%,,SOFR,5%,,,2029-08-03,,5988,5985,,5988,,,,,,PFLT,2025-02-10
+"Archer Lewis, LLC",First Lien,Commercial Services & Supplies,10.09%,,SOFR,5.9%,,,2029-08-28,,9881,9875,,9881,,,,,,PFLT,2025-02-10
+"ARGANO, LLC",First Lien,Business Services,10.15%,,SOFR,5.75%,,,2029-09-13,,9879,9875,,9879,,,,,,PFLT,2025-02-10
+"Beacon Behavioral Services, LLC",First Lien,Healthcare and Pharmaceuticals,9.83%,,SOFR,5.25%,,,2029-06-21,,12673,12652,,12673,,,,,,PFLT,2025-02-10
+"Best Practice Associates, LLC",First Lien,Aerospace and Defense,11.08%,,SOFR,6.75%,,,2029-11-08,,9916,9850,,9916,,,,,,PFLT,2025-02-10
+"Beta Plus Technologies, Inc.",First Lien,Business Services,10.08%,,SOFR,5.75%,,,2029-07-01,,4819,4753,,4819,,,,,,PFLT,2025-02-10
+"Big Top Holdings, LLC",First Lien,Business Services,10.11%,,SOFR,5.75%,,,2030-02-28,,14548,14788,,14548,,,,,,PFLT,2025-02-10
+"BioDerm, Inc.",First Lien,Healthcare and Pharmaceuticals,11.03%,,SOFR,6.5%,,,2028-01-31,,8778,8754,,8778,,,,,,PFLT,2025-02-10
+"Blackhawk Industrial Distribution, Inc.",First Lien,Distributors,9.73%,,SOFR,5.4%,,,2026-09-17,,14752,14679,,14752,,,,,,PFLT,2025-02-10
+"BlueHalo Financing Holdings, LLC",First Lien,Aerospace and Defense,10.41%,,SOFR,6%,,,2025-10-31,,8642,8622,,8642,,,,,,PFLT,2025-02-10
+Burgess Point Purchaser Corporation,First Lien,Automotive,9.68%,,SOFR,5.35%,,,2029-09-26,,416,391,,416,,,,,,PFLT,2025-02-10
+"By Light Professional IT Services, LLC",First Lien,High Tech Industries,11.53%,,SOFR,6.98%,,,2025-05-16,,12917,12932,,12917,,,,,,PFLT,2025-02-10
+"C5MI Holdco, LLC",First Lien,IT Services,10.33%,,SOFR,6%,,,2029-07-31,,14749,14738,,14749,,,,,,PFLT,2025-02-10
+"Carisk Buyer, Inc - Amendment No.1 Term Loan",First Lien,Healthcare Technology,9.58%,,SOFR,5.25%,,,2029-12-01,,9931,9850,,9931,,,,,,PFLT,2025-02-10
+"Carnegie Dartlet, LLC",First Lien,"Media: Advertising, Printing & Publishing",9.86%,,SOFR,5.5%,,,2030-02-07,,14991,14977,,14991,,,,,,PFLT,2025-02-10
+"Cartessa Aesthetics, LLC",First Lien,Distributors,10.08%,,SOFR,5.75%,,,2028-06-14,,9415,9514,,9415,,,,,,PFLT,2025-02-10
+"Case Works, LLC",First Lien,Professional Services,9.58%,,SOFR,5.25%,,,2029-10-01,,14876,14880,,14876,,,,,,PFLT,2025-02-10
+"CF512, Inc.",First Lien,Media,10.69%,,SOFR,6.19%,,,2026-08-20,,6474,6435,,6474,,,,,,PFLT,2025-02-10
+"Confluent Health, LLC",First Lien,Healthcare and Pharmaceuticals,8.47%,,SOFR,4%,,,2028-10-28,,6498,6506,,6498,,,,,,PFLT,2025-02-10
+"Connatix Buyer, Inc.",First Lien,Media,10.39%,,SOFR,5.61%,,,2027-07-13,,3726,3765,,3726,,,,,,PFLT,2025-02-10
+"Crane 1 Services, Inc.",First Lien,Commercial Services & Supplies,10.22%,,SOFR,5.86%,,,2027-08-16,,2046,2047,,2046,,,,,,PFLT,2025-02-10
+"Dr. Squatch, LLC",First Lien,Personal Products,9.68%,,SOFR,5.35%,,,2027-08-31,,14378,14525,,14378,,,,,,PFLT,2025-02-10
+DRI Holding Inc.,First Lien,Media,9.71%,,SOFR,5.35%,,,2028-12-21,,2423,2516,,2423,,,,,,PFLT,2025-02-10
+"DRS Holdings III, Inc.",First Lien,Consumer Goods: Durable,10.71%,,SOFR,6.35%,,,2025-11-03,,13677,13640,,13677,,,,,,PFLT,2025-02-10
+"Duggal Acquisiton, LLC",First Lien,Marketing Services,9.08%,,SOFR,4.75%,,,2030-09-30,,4940,4938,,4940,,,,,,PFLT,2025-02-10
+"Dynata, LLC - First Out Term Loan",First Lien,Diversified Consumer Services,9.79%,,SOFR,5.26%,,,2028-07-15,,1266,1357,,1266,,,,,,PFLT,2025-02-10
+"Dynata, LLC - Last Out Term Loan",First Lien,Diversified Consumer Services,10.29%,,SOFR,5.76%,,,2028-10-15,,8418,7808,,8418,,,,,,PFLT,2025-02-10
+"EDS Buyer, LLC",First Lien,"Electronic Equipment, Instruments, and Components",10.08%,,SOFR,5.75%,,,2029-01-10,,8745,8776,,8745,,,,,,PFLT,2025-02-10
+"Emergency Care Partners, LLC",First Lien,Healthcare Providers and Services,10.13%,,SOFR,5.5%,,,2027-10-18,,5945,5940,,5945,,,,,,PFLT,2025-02-10
+"Exigo Intermediate II, LLC",First Lien,Software,10.92%,,SOFR,6.35%,,,2027-03-15,,12394,12514,,12394,,,,,,PFLT,2025-02-10
+"ETE Intermediate II, LLC",First Lien,Diversified Consumer Services,11.01%,,SOFR,6.5%,,,2029-05-29,,12011,12218,,12011,,,,,,PFLT,2025-02-10
+"Eval Home Solutions Intermediate, LLC",First Lien,Healthcare and Pharmaceuticals,10.11%,,SOFR,5.75%,,,2030-05-10,,9112,9152,,9112,,,,,,PFLT,2025-02-10
+Fairbanks More Defense,First Lien,Aerospace and Defense,9.33%,,SOFR,4.5%,,,2028-06-17,,10051,10141,,10051,,,,,,PFLT,2025-02-10
+"GGG MIDCO, LLC",First Lien,Diversified Consumer Services,9.41%,,SOFR,5%,,,2030-09-27,,9893,9888,,9893,,,,,,PFLT,2025-02-10
+Global Holdings InterCo LLC,First Lien,Diversified Financial Services,9.98%,,SOFR,5.6%,,,2026-03-16,,3612,3475,,3612,,,,,,PFLT,2025-02-10
+"Graffiti Buyer, Inc.",First Lien,Trading Companies & Distributors,10.03%,,SOFR,5.6%,,,2027-08-10,,3679,3657,,3679,,,,,,PFLT,2025-02-10
+Hancock Roofing and Construction L.L.C.,First Lien,Insurance,9.93%,,SOFR,5.6%,,,2026-12-31,,2133,2153,,2133,,,,,,PFLT,2025-02-10
+Harris & Co. LLC,First Lien,Professional Services,9.36%,,SOFR,5%,,,2030-08-09,,19785,19950,,19785,,,,,,PFLT,2025-02-10
+HEC Purchaser Corp,First Lien,Healthcare and Pharmaceuticals,9.75%,,SOFR,5.5%,,,2029-06-17,,3641,3667,,3641,,,,,,PFLT,2025-02-10
+"Hills Distribution, Inc",First Lien,Business Services,10.40%,,SOFR,6%,,,2029-11-08,,8813,8845,,8813,,,,,,PFLT,2025-02-10
+"HW Holdco, LLC",First Lien,Media,10.23%,,SOFR,5.9%,,,2026-05-10,,3458,3486,,3458,,,,,,PFLT,2025-02-10
+"Imagine Acquisitionco, LLC",First Lien,Software,9.59%,,SOFR,5.1%,,,2027-11-15,,9005,9108,,9005,,,,,,PFLT,2025-02-10
+"Infinity Home Services Holdco, Inc.",First Lien,Commercial Services & Supplies,9.83%,,SOFR,5.5%,,,2028-12-28,,5924,6014,,5924,,,,,,PFLT,2025-02-10
+"Integrative Nutrition, LLC",First Lien,Diversified Consumer Services,11.75%,,SOFR,7.15%,,,2025-01-31,,11236,8437,,11236,,,,,,PFLT,2025-02-10
+"Inventus Power, Inc.",First Lien,Consumer Goods: Durable,11.97%,,SOFR,7.61%,,,2025-06-30,,8094,8143,,8094,,,,,,PFLT,2025-02-10
+"ITI Holdings, Inc.",First Lien,IT Services,10.05%,,SOFR,5.65%,,,2028-03-03,,3849,3890,,3849,,,,,,PFLT,2025-02-10
+"Kinetic Purchaser, LLC",First Lien,Personal Products,10.48%,,SOFR,6.15%,,,2027-11-10,,13301,13492,,13301,,,,,,PFLT,2025-02-10
+"Lash OpCo, LLC",First Lien,Personal Products,12.28%,,SOFR,7.85%,,,2027-02-18,,14750,14700,,14750,,,,,,PFLT,2025-02-10
+"LAV Gear Holdings, Inc.",First Lien,Capital Equipment,10.87%,,SOFR,6.43%,,,2025-10-31,,15331,14600,,15331,,,,,,PFLT,2025-02-10
+Lightspeed Buyer Inc.,First Lien,Healthcare Providers and Services,10.00%,,SOFR,5.4%,,,2026-02-03,,11267,11216,,11267,,,,,,PFLT,2025-02-10
+"LJ Avalon Holdings, LLC",First Lien,Environmental Industries,9.28%,,SOFR,5.25%,,,2030-01-31,,2511,2553,,2511,,,,,,PFLT,2025-02-10
+"Loving Tan Intermediate II, Inc.",First Lien,Consumer Products,10.33%,,SOFR,6%,,,2028-05-31,,7277,7334,,7277,,,,,,PFLT,2025-02-10
+"Lucky Bucks, LLC",First Lien,"Hotel, Gaming and Leisure",12.10%,,SOFR,7.65%,,,2028-10-02,,258,258,,258,,,,,,PFLT,2025-02-10
+"Lucky Bucks, LLC",First Lien,"Hotel, Gaming and Leisure",12.10%,,SOFR,7.65%,,,2029-10-02,,517,517,,517,,,,,,PFLT,2025-02-10
+MAG DS Corp,First Lien,Aerospace and Defense,9.93%,,SOFR,5.6%,,,2027-04-01,,2143,2068,,2143,,,,,,PFLT,2025-02-10
+"Magenta Buyer, LLC",First Lien,Software,11.60%,,SOFR,7.01%,,,2028-07-31,,357,328,,357,,,,,,PFLT,2025-02-10
+"Magenta Buyer, LLC - Second-Out Term Loan",First Lien,Software,12.60%,,SOFR,8.01%,,,2028-07-31,,458,270,,458,,,,,,PFLT,2025-02-10
+"Magenta Buyer, LLC - Third-Out Term Loan",First Lien,Software,11.85%,,SOFR,7.26%,,,2028-07-31,,1695,570,,1695,,,,,,PFLT,2025-02-10
+"MBS Holdings, Inc.",First Lien,Internet Software and Services,10.67%,,SOFR,5.85%,,,2027-04-16,,8226,8317,,8226,,,,,,PFLT,2025-02-10
+"MDI Buyer, Inc.",First Lien,"Chemicals, Plastics and Rubber",10.08%,,SOFR,5.75%,,,2028-07-25,,6213,6244,,6213,,,,,,PFLT,2025-02-10
+"Meadowlark Acquirer, LLC",First Lien,Professional Services,9.98%,,SOFR,5.9%,,,2027-12-10,,2315,2283,,2315,,,,,,PFLT,2025-02-10
+"Medina Health, LLC",First Lien,Healthcare and Pharmaceuticals,10.58%,,SOFR,6.25%,,,2028-10-20,,18878,19151,,18878,,,,,,PFLT,2025-02-10
+"Megawatt Acquisitionco, Inc",First Lien,"Electronic Equipment, Instruments, and Components",9.83%,,SOFR,5.25%,,,2030-03-01,,15427,13661,,15427,,,,,,PFLT,2025-02-10
+"Mission Critical Electronics, Inc.",First Lien,Capital Equipment,10.23%,,SOFR,5.9%,,,2025-03-31,,5536,5536,,5536,,,,,,PFLT,2025-02-10
+"MOREGroup Holdings, Inc",First Lien,Business Services,9.58%,,SOFR,5.25%,,,2030-01-16,,12865,13034,,12865,,,,,,PFLT,2025-02-10
+"Municipal Emergency Services, Inc.",First Lien,Distributors,9.48%,,SOFR,5.15%,,,2027-09-28,,3350,3386,,3350,,,,,,PFLT,2025-02-10
+NBH Group LLC,First Lien,"Healthcare, Education & Childcare",10.38%,,SOFR,5.85%,,,2026-08-19,,10486,10575,,10486,,,,,,PFLT,2025-02-10
+NFS - CFP Holdings LLC,First Lien,Commercial Services & Supplies,9.08%,,SOFR,4.75%,,,2030-09-13,,14859,14850,,14859,,,,,,PFLT,2025-02-10
+"NORA Acquisition, LLC",First Lien,Healthcare Providers and Services,10.68%,,SOFR,6.35%,,,2029-08-31,,20883,21220,,20883,,,,,,PFLT,2025-02-10
+"Omnia Exterior Solutions, LLC - Second Amendment Term Loan",First Lien,Healthcare Providers and Services,9.58%,,SOFR,5.25%,,,2029-12-29,,12881,12891,,12881,,,,,,PFLT,2025-02-10
+"One Stop Mailing, LLC",First Lien,Air Freight and Logistics,10.72%,,SOFR,6.36%,,,2027-05-07,,15451,15640,,15451,,,,,,PFLT,2025-02-10
+"ORL Acquisitions, Inc.",First Lien,Consumer Finance,13.73%,,SOFR,9.4%,,,2027-09-03,,2156,1888,,2156,,,,,,PFLT,2025-02-10
+"OSP Embedded Purchaser, LLC",First Lien,Aerospace and Defense,10.08%,,SOFR,5.75%,,,2029-12-15,,9831,9815,,9831,,,,,,PFLT,2025-02-10
+"Output Services Group, Inc",First Lien,Business Services,12.86%,,SOFR,8%,,,2028-11-30,,821,821,,821,,,,,,PFLT,2025-02-10
+"Output Services Group, Inc",First Lien,Business Services,11.11%,,SOFR,6.25%,,,2028-05-30,,1667,1667,,1667,,,,,,PFLT,2025-02-10
+"Owl Acquisition, LLC",First Lien,Professional Services,9.71%,,SOFR,5.35%,,,2028-02-04,,3844,3844,,3844,,,,,,PFLT,2025-02-10
+"Pacific Purchaser, LLC",First Lien,Business Services,10.53%,,SOFR,6.25%,,,2028-09-30,,11727,11801,,11727,,,,,,PFLT,2025-02-10
+"PAR Excellence Holdings, Inc",First Lien,Healthcare Technology,9.47%,,SOFR,4.75%,,,2030-09-03,,4954,4950,,4954,,,,,,PFLT,2025-02-10
+"PCS Midco, Inc",First Lien,Diversified Consumer Services,10.08%,,SOFR,5.75%,,,2030-03-01,,3812,3862,,3812,,,,,,PFLT,2025-02-10
+"PH Beauty Holdings III, Inc.",First Lien,Wholesale,10.17%,,SOFR,5.43%,,,2025-09-29,,9293,9281,,9293,,,,,,PFLT,2025-02-10
+"PL Acquisitionco, LLC",First Lien,"Textiles, Apparel and Luxury Goods",11.99%,,SOFR,7.25%,,,2027-11-09,,7850,5787,,7850,,,,,,PFLT,2025-02-10
+"Pragmatic Institute, LLC",First Lien,Education,0.00%,,,,,,2028-07-06,,11454,5020,,11454,,,,,,PFLT,2025-02-10
+"Quantic Electronics, LLC",First Lien,Aerospace and Defense,10.43%,,SOFR,6.1%,,,2026-11-19,,2752,2768,,2752,,,,,,PFLT,2025-02-10
+"Rancho Health MSO, Inc.",First Lien,Healthcare Providers and Services,9.81%,,SOFR,5.25%,,,2025-12-18,,18832,18767,,18832,,,,,,PFLT,2025-02-10
+"Recteq, LLC",First Lien,Leisure Products,11.48%,,SOFR,7.15%,,,2026-01-29,,4788,4764,,4788,,,,,,PFLT,2025-02-10
+"RRA Corporate, LLC",First Lien,Diversified Consumer Services,9.33%,,SOFR,5%,,,2029-08-15,,4941,4963,,4941,,,,,,PFLT,2025-02-10
+"RTIC Subsidiary Holdings, LLC",First Lien,Consumer Goods: Durable,10.08%,,SOFR,5.75%,,,2029-05-03,,9813,9776,,9813,,,,,,PFLT,2025-02-10
+"Rural Sourcing Holdings, Inc. (HPA SPQ Merger Sub, Inc.)",First Lien,High Tech Industries,10.04%,,SOFR,5.75%,,,2029-06-15,,4259,4260,,4259,,,,,,PFLT,2025-02-10
+"S101 Acquisition, Inc",First Lien,Government Services,10.17%,,SOFR,5.65%,,,2026-12-29,,5616,5643,,5616,,,,,,PFLT,2025-02-10
+"Sabel Systems Technology Solutions, LLC",First Lien,Construction and Building,10.58%,,SOFR,6.25%,,,2030-10-31,,5944,5940,,5944,,,,,,PFLT,2025-02-10
+"Safe Haven Defense US, LLC",First Lien,Construction and Building,9.36%,,SOFR,5.25%,,,2029-05-23,,9809,9946,,9809,,,,,,PFLT,2025-02-10
+Sales Benchmark Index LLC,First Lien,Professional Services,10.53%,,SOFR,6.2%,,,2026-07-07,,9247,9268,,9247,,,,,,PFLT,2025-02-10
+"Schlesinger Global, Inc.",First Lien,Business Services,12.96%,,SOFR,8.35%,,,2025-07-14,,12574,11976,,12574,,,,,,PFLT,2025-02-10
+"Seaway Buyer, LLC",First Lien,"Chemicals, Plastics and Rubber",10.48%,,SOFR,6.15%,,,2029-06-13,,4833,4692,,4833,,,,,,PFLT,2025-02-10
+"Sigma Defense Systems, LLC",First Lien,Aerospace and Defense,11.23%,,SOFR,6.9%,,,2027-12-18,,18310,18444,,18310,,,,,,PFLT,2025-02-10
+"Smartronix, LLC",First Lien,Aerospace and Defense,10.35%,,SOFR,6.1%,,,2028-11-23,,4791,4850,,4791,,,,,,PFLT,2025-02-10
+Smile Brands Inc.,First Lien,Healthcare and Pharmaceuticals,10.43%,,SOFR,6%,,,2025-10-14,,11901,10551,,11901,,,,,,PFLT,2025-02-10
+"Solutionreach, Inc.",First Lien,Healthcare and Pharmaceuticals,11.74%,,SOFR,7.15%,,,2025-07-17,,4566,4582,,4566,,,,,,PFLT,2025-02-10
+Spendmend Holdings LLC,First Lien,Healthcare Technology,9.48%,,SOFR,5.15%,,,2028-03-01,,4011,4060,,4011,,,,,,PFLT,2025-02-10
+"Summit Behavioral Healthcare, LLC",First Lien,Healthcare and Pharmaceuticals,8.76%,,SOFR,4.25%,,,2028-11-24,,1700,1418,,1700,,,,,,PFLT,2025-02-10
+"SV-Aero Holdings, LLC",First Lien,Aerospace and Defense,9.58%,,SOFR,5.25%,,,2030-11-01,,14925,14850,,14925,,,,,,PFLT,2025-02-10
+"System Planning and Analysis, Inc. (f/k/a Management Consulting & Research, LLC)",First Lien,Aerospace and Defense,9.28%,,SOFR,5%,,,2027-08-16,,14417,14565,,14417,,,,,,PFLT,2025-02-10
+"STG Distribution, LLC (fka Reception Purchaser) - First Out New Money Term Loans",First Lien,Air Freight and Logistics,12.87%,,SOFR,8.35%,,,2029-10-03,,1752,1836,,1752,,,,,,PFLT,2025-02-10
+"STG Distribution, LLC (fka Reception Purchaser) - Second Out Term Loans",First Lien,Air Freight and Logistics,12.12%,,SOFR,7.6%,,,2029-10-03,,2309,2243,,2309,,,,,,PFLT,2025-02-10
+TCG 3.0 Jogger Acquisitionco,First Lien,Media,10.83%,,SOFR,6.5%,,,2029-01-23,,19278,19381,,19278,,,,,,PFLT,2025-02-10
+"Team Services Group, LLC",First Lien,Healthcare and Pharmaceuticals,9.46%,,SOFR,5%,,,2028-11-24,,332,343,,332,,,,,,PFLT,2025-02-10
+"Teneo Holdings, LLC",First Lien,Business Services,9.11%,,SOFR,4.75%,,,2031-03-13,,5405,5501,,5405,,,,,,PFLT,2025-02-10
+The Bluebird Group LLC,First Lien,Professional Services,10.98%,,SOFR,6.65%,,,2026-07-27,,8421,8504,,8421,,,,,,PFLT,2025-02-10
+"The Vertex Companies, LLC",First Lien,Construction and Engineering,10.50%,,SOFR,6.1%,,,2027-08-31,,17379,17370,,17379,,,,,,PFLT,2025-02-10
+"TPC US Parent, LLC",First Lien,Consumer Goods: Non-Durable,10.44%,,SOFR,5.65%,,,2025-11-24,,16379,16481,,16379,,,,,,PFLT,2025-02-10
+"Transgo, LLC",First Lien,Automotive,10.11%,,SOFR,5.75%,,,2028-12-29,,17647,17884,,17647,,,,,,PFLT,2025-02-10
+TWS Acquisition Corporation,First Lien,Diversified Consumer Services,10.80%,,SOFR,6.4%,,,2025-06-16,,780,778,,780,,,,,,PFLT,2025-02-10
+"Tyto Athene, LLC",First Lien,IT Services,9.49%,,SOFR,4.9%,,,2028-04-01,,14587,14464,,14587,,,,,,PFLT,2025-02-10
+"Urology Management Holdings, Inc.",First Lien,Healthcare and Pharmaceuticals,9.83%,,SOFR,5.5%,,,2026-06-15,,6739,6771,,6739,,,,,,PFLT,2025-02-10
+Walker Edison Furniture Company LLC,First Lien,Wholesale,0.00%,,,,,,2029-03-01,,5028,,,5028,,,,,,PFLT,2025-02-10
+Walker Edison Furniture Company LLC - Junior Revolving Credit Facility,First Lien,Wholesale,0.00%,,,,,,2029-03-01,,1667,1128,,1667,,,,,,PFLT,2025-02-10
+Walker Edison Furniture Company LLC - DDTL - Unfunded,First Lien,Wholesale,0.00%,,,,,,2029-03-01,,,42,,,,,,,,PFLT,2025-02-10
+"Watchtower Buyer, LLC",First Lien,Diversified Consumer Services,10.33%,,SOFR,6%,,,2029-12-03,,11988,12158,,11988,,,,,,PFLT,2025-02-10
+"Zips Car Wash, LLC",First Lien,Automobiles,12.46%,,SOFR,7.4%,,,2025-01-16,,17262,15321,,17262,,,,,,PFLT,2025-02-10
+"48Forty Intermediate Holdings, Inc.- Common Equity",Other Equity,Containers and Packaging,,,,,,,,,,,,,,,,,,PFLT,2025-02-10
+"New Insight Holdings, Inc.",Other Equity,Diversified Consumer Services,,,,,,,,,2031,2225,,2031,,,,,,PFLT,2025-02-10
+"Lucky Bucks, LLC",Other Equity,"Hotel, Gaming and Leisure",,,,,,,,,2062,781,,2062,,,,,,PFLT,2025-02-10
+"Output Services Group, Inc",Other Equity,Business Services,,,,,,,,,1012,1316,,1012,,,,,,PFLT,2025-02-10
+Walker Edison Furniture - Common Equity,Other Equity,Wholesale,,,,,,,,,3393,,,3393,,,,,,PFLT,2025-02-10
+"Total Investments -1,871.60%",Other Equity,"Total Investments -1,871.60%",,,,,,,,,1072770,1046178,,1072770,,,,,,PFLT,2025-02-10
+"A1 Garage Merger Sub, LLC",First Lien,Commercial Services & Supplies,10.95%,,SOFR,6.1%,,,2028-12-22,,2855,2903,,2855,,,,,,PFLT,2025-02-10
+"ACP Avenu Buyer, LLC",First Lien,Business Services,10.58%,,SOFR,5.25%,,,2029-10-02,,9771,9602,,9771,,,,,,PFLT,2025-02-10
+"ACP Falcon Buyer, Inc.",First Lien,Business Services,10.83%,,SOFR,5.5%,,,2029-08-01,,18434,18837,,18434,,,,,,PFLT,2025-02-10
+"Ad.net Acquisition, LLC",First Lien,Media,11.28%,,SOFR,6.26%,,,2026-05-07,,8658,8708,,8658,,,,,,PFLT,2025-02-10
+"Aeronix, Inc",First Lien,Aerospace and Defense,9.85%,,SOFR,5.25%,,,2028-12-18,,15665,15880,,15665,,,,,,PFLT,2025-02-10
+Alpine Acquisition Corp II,First Lien,Containers and Packaging,11.30%,,SOFR,6.1%,,,2026-11-30,,12481,12213,,12481,,,,,,PFLT,2025-02-10
+"Anteriad, LLC (f/k/a MeritDirect, LLC)",First Lien,"Media: Advertising, Printing & Publishing",10.50%,,SOFR,5.9%,,,2026-06-30,,4613,4717,,4613,,,,,,PFLT,2025-02-10
+"Anteriad, LLC (f/k/a MeritDirect, LLC) - Incremental Term Loan",First Lien,"Media: Advertising, Printing & Publishing",10.50%,,SOFR,5.9%,,,2026-06-30,,4584,4625,,4584,,,,,,PFLT,2025-02-10
+"Applied Technical Services, LLC",First Lien,Commercial Services & Supplies,10.50%,,SOFR,5.9%,,,2026-12-29,,11058,10988,,11058,,,,,,PFLT,2025-02-10
+Arcfield Acquisition Corp.,First Lien,Aerospace and Defense,11.56%,,SOFR,6.25%,,,2029-08-03,,10967,11059,,10967,,,,,,PFLT,2025-02-10
+"Beacon Behavioral Services, LLC",First Lien,Healthcare and Pharmaceuticals,9.85%,,SOFR,5.25%,,,2029-06-21,,9836,9825,,9836,,,,,,PFLT,2025-02-10
+"Beta Plus Technologies, Inc.",First Lien,Business Services,10.35%,,SOFR,5.75%,,,2029-07-01,,4828,4753,,4828,,,,,,PFLT,2025-02-10
+"Big Top Holdings, LLC",First Lien,Business Services,11.18%,,SOFR,6.25%,,,2030-02-28,,15167,15423,,15167,,,,,,PFLT,2025-02-10
+"BioDerm, Inc.",First Lien,Healthcare and Pharmaceuticals,11.70%,,SOFR,6.5%,,,2028-01-31,,8797,8776,,8797,,,,,,PFLT,2025-02-10
+"Blackhawk Industrial Distribution, Inc.",First Lien,Distributors,11.00%,,SOFR,6.4%,,,2026-09-17,,14779,14718,,14779,,,,,,PFLT,2025-02-10
+"BlueHalo Financing Holdings, LLC",First Lien,Aerospace and Defense,10.60%,,SOFR,6%,,,2025-10-31,,5523,5435,,5523,,,,,,PFLT,2025-02-10
+"Broder Bros., Co.",First Lien,Consumer Products,10.97%,,SOFR,6.11%,,,2025-12-04,,2274,2274,,2274,,,,,,PFLT,2025-02-10
+Burgess Point Purchaser Corporation,First Lien,Automotive,10.20%,,SOFR,5.35%,,,2029-09-26,,417,416,,417,,,,,,PFLT,2025-02-10
+"By Light Professional IT Services, LLC",First Lien,High Tech Industries,12.18%,,SOFR,6.98%,,,2025-05-16,,13059,13084,,13059,,,,,,PFLT,2025-02-10
+"Carnegie Dartlet, LLC",First Lien,"Media: Advertising, Printing & Publishing",10.60%,,SOFR,5.5%,,,2030-02-07,,15025,15015,,15025,,,,,,PFLT,2025-02-10
+"Cartessa Aesthetics, LLC",First Lien,Distributors,10.35%,,SOFR,5.75%,,,2028-06-14,,9431,9539,,9431,,,,,,PFLT,2025-02-10
+"CF512, Inc.",First Lien,Media,11.21%,,SOFR,6.19%,,,2026-08-20,,6682,6649,,6682,,,,,,PFLT,2025-02-10
+"Confluent Health, LLC",First Lien,Healthcare and Pharmaceuticals,8.96%,,SOFR,4%,,,2028-10-28,,6506,6540,,6506,,,,,,PFLT,2025-02-10
+"Connatix Buyer, Inc.",First Lien,Media,10.53%,,SOFR,5.61%,,,2027-07-13,,3734,3775,,3734,,,,,,PFLT,2025-02-10
+"Crane 1 Services, Inc.",First Lien,Commercial Services & Supplies,10.71%,,SOFR,5.86%,,,2027-08-16,,2051,2052,,2051,,,,,,PFLT,2025-02-10
+"Dr. Squatch, LLC",First Lien,Personal Products,9.95%,,SOFR,5.35%,,,2027-08-31,,14398,14562,,14398,,,,,,PFLT,2025-02-10
+DRI Holding Inc.,First Lien,Media,10.20%,,SOFR,5.35%,,,2028-12-21,,2420,2509,,2420,,,,,,PFLT,2025-02-10
+"DRS Holdings III, Inc.",First Lien,Consumer Goods: Durable,11.20%,,SOFR,6.35%,,,2025-11-03,,13788,13694,,13788,,,,,,PFLT,2025-02-10
+"Dynata, LLC - First Out Term Loan",First Lien,Diversified Consumer Services,10.38%,,SOFR,5.26%,,,2028-07-15,,1264,1358,,1264,,,,,,PFLT,2025-02-10
+"Dynata, LLC - Last Out Term Loan",First Lien,Diversified Consumer Services,10.88%,,SOFR,5.76%,,,2028-10-15,,8439,7769,,8439,,,,,,PFLT,2025-02-10
+"ECL Entertainment, LLC",First Lien,"Hotel, Gaming and Leisure",8.85%,,SOFR,4%,,,2030-08-31,,4894,4973,,4894,,,,,,PFLT,2025-02-10
+"EDS Buyer, LLC",First Lien,"Electronic Equipment, Instruments, and Components",10.35%,,SOFR,5.75%,,,2029-01-10,,8763,8732,,8763,,,,,,PFLT,2025-02-10
+"Exigo Intermediate II, LLC",First Lien,Software,11.20%,,SOFR,6.35%,,,2027-03-15,,12418,12484,,12418,,,,,,PFLT,2025-02-10
+"ETE Intermediate II, LLC",First Lien,Diversified Consumer Services,11.56%,,SOFR,6.5%,,,2029-05-29,,12032,12249,,12032,,,,,,PFLT,2025-02-10
+"Eval Home Solutions Intermediate, LLC",First Lien,Healthcare and Pharmaceuticals,10.60%,,SOFR,5.75%,,,2030-05-10,,9132,9176,,9132,,,,,,PFLT,2025-02-10
+Fairbanks More Defense,First Lien,Aerospace and Defense,9.65%,,SOFR,4.5%,,,2028-06-17,,10071,10128,,10071,,,,,,PFLT,2025-02-10
+Global Holdings InterCo LLC,First Lien,Diversified Financial Services,11.43%,,SOFR,6.15%,,,2026-03-16,,3689,3511,,3689,,,,,,PFLT,2025-02-10
+"Graffiti Buyer, Inc.",First Lien,Trading Companies & Distributors,10.45%,,SOFR,5.6%,,,2027-08-10,,3686,3685,,3686,,,,,,PFLT,2025-02-10
+Hancock Roofing and Construction L.L.C.,First Lien,Insurance,10.20%,,SOFR,5.6%,,,2026-12-31,,2131,2110,,2131,,,,,,PFLT,2025-02-10
+HEC Purchaser Corp,First Lien,Healthcare and Pharmaceuticals,9.75%,,SOFR,5.5%,,,2029-06-17,,3648,3665,,3648,,,,,,PFLT,2025-02-10
+"Hills Distribution, Inc",First Lien,Business Services,11.11%,,SOFR,6%,,,2029-11-08,,8835,8868,,8835,,,,,,PFLT,2025-02-10
+"HW Holdco, LLC",First Lien,Media,11.18%,,SOFR,5.9%,,,2026-05-10,,3475,3486,,3475,,,,,,PFLT,2025-02-10
+"Imagine Acquisitionco, LLC",First Lien,Software,10.20%,,SOFR,5.1%,,,2027-11-15,,9018,9108,,9018,,,,,,PFLT,2025-02-10
+"Infinity Home Services Holdco, Inc.",First Lien,Commercial Services & Supplies,11.45%,,SOFR,6.85%,,,2028-12-28,,5932,6089,,5932,,,,,,PFLT,2025-02-10
+"Integrative Nutrition, LLC",First Lien,Diversified Consumer Services,11.75%,,SOFR,7.15%,,,2025-01-31,,11274,9707,,11274,,,,,,PFLT,2025-02-10
+"Inventus Power, Inc.",First Lien,Consumer Goods: Durable,12.46%,,SOFR,7.61%,,,2025-06-30,,8094,8041,,8094,,,,,,PFLT,2025-02-10
+"ITI Holdings, Inc.",First Lien,IT Services,10.58%,,SOFR,5.65%,,,2028-03-03,,3855,3900,,3855,,,,,,PFLT,2025-02-10
+"Kinetic Purchaser, LLC",First Lien,Personal Products,10.75%,,SOFR,6.15%,,,2027-11-10,,13289,13492,,13289,,,,,,PFLT,2025-02-10
+"Lash OpCo, LLC",First Lien,Personal Products,12.94%,,SOFR,7.85%,,,2027-02-18,,14539,14584,,14539,,,,,,PFLT,2025-02-10
+"LAV Gear Holdings, Inc.",First Lien,Capital Equipment,11.42%,,SOFR,6.43%,,,2025-10-31,,12102,11907,,12102,,,,,,PFLT,2025-02-10
+"LAV Gear Holdings, Inc. - Term Loan Incremental",First Lien,Capital Equipment,11.64%,,SOFR,6.4%,,,2025-10-31,,2856,2810,,2856,,,,,,PFLT,2025-02-10
+Lightspeed Buyer Inc.,First Lien,Healthcare Providers and Services,10.15%,,SOFR,5.35%,,,2026-02-03,,11258,11330,,11258,,,,,,PFLT,2025-02-10
+"LJ Avalon Holdings, LLC",First Lien,Environmental Industries,10.48%,,SOFR,5.25%,,,2030-01-31,,2516,2559,,2516,,,,,,PFLT,2025-02-10
+"Loving Tan Intermediate II, Inc.",First Lien,Consumer Products,11.10%,,SOFR,6.5%,,,2028-05-31,,7288,7296,,7288,,,,,,PFLT,2025-02-10
+"Lucky Bucks, LLC",First Lien,"Hotel, Gaming and Leisure",12.77%,,SOFR,7.65%,,,2028-10-02,,259,259,,259,,,,,,PFLT,2025-02-10
+"Lucky Bucks, LLC",First Lien,"Hotel, Gaming and Leisure",12.77%,,SOFR,7.65%,,,2029-10-02,,518,518,,518,,,,,,PFLT,2025-02-10
+MAG DS Corp,First Lien,Aerospace and Defense,10.20%,,SOFR,5.5%,,,2027-04-01,,2143,2085,,2143,,,,,,PFLT,2025-02-10
+"Magenta Buyer, LLC",First Lien,Software,12.13%,,SOFR,7.01%,,,2028-07-31,,357,337,,357,,,,,,PFLT,2025-02-10
+"Magenta Buyer, LLC - Second-Out Term Loan",First Lien,Software,12.38%,,SOFR,8.01%,,,2028-07-31,,452,310,,452,,,,,,PFLT,2025-02-10
+"Magenta Buyer, LLC - Third-Out Term Loan",First Lien,Software,11.63%,,SOFR,7.26%,,,2028-07-31,,1675,490,,1675,,,,,,PFLT,2025-02-10
+"Marketplace Events, LLC - Super Priority First Lien Term Loan",First Lien,Media: Diversified and Production,10.38%,,SOFR,5.4%,,,2025-09-30,,1845,1845,,1845,,,,,,PFLT,2025-02-10
+"Marketplace Events, LLC - Super Priority First Lien Unfunded Term Loan",First Lien,Media: Diversified and Production,0.00%,,,,,,2025-09-30,,,,,,,,,,,PFLT,2025-02-10
+"Marketplace Events, LLC",First Lien,Media: Diversified and Production,10.53%,,SOFR,5.25%,,,2026-09-30,,4068,4837,,4068,,,,,,PFLT,2025-02-10
+"MBS Holdings, Inc.",First Lien,Internet Software and Services,10.59%,,SOFR,5.85%,,,2027-04-16,,7183,7256,,7183,,,,,,PFLT,2025-02-10
+"MBS Holdings, Inc. (New Issue) - Incremental",First Lien,Internet Software and Services,11.34%,,SOFR,6.6%,,,2027-04-16,,514,528,,514,,,,,,PFLT,2025-02-10
+"MBS Holdings, Inc. (New Issue) - Second Incremental",First Lien,Internet Software and Services,11.09%,,SOFR,6.35%,,,2027-04-16,,543,554,,543,,,,,,PFLT,2025-02-10
+"MDI Buyer, Inc.",First Lien,"Chemicals, Plastics and Rubber",10.60%,,SOFR,5.75%,,,2028-07-25,,4829,4851,,4829,,,,,,PFLT,2025-02-10
+"MDI Buyer, Inc. - Incremental",First Lien,"Chemicals, Plastics and Rubber",11.25%,,SOFR,6%,,,2028-07-25,,1395,1409,,1395,,,,,,PFLT,2025-02-10
+"Meadowlark Acquirer, LLC",First Lien,Professional Services,10.50%,,SOFR,5.9%,,,2027-12-10,,2319,2289,,2319,,,,,,PFLT,2025-02-10
+"Medina Health, LLC",First Lien,Healthcare and Pharmaceuticals,10.85%,,SOFR,6.25%,,,2028-10-20,,18911,19199,,18911,,,,,,PFLT,2025-02-10
+"Megawatt Acquisitionco, Inc",First Lien,"Electronic Equipment, Instruments, and Components",9.85%,,SOFR,5.25%,,,2030-03-01,,15453,14794,,15453,,,,,,PFLT,2025-02-10
+"Mission Critical Electronics, Inc.",First Lien,Capital Equipment,10.50%,,SOFR,5.9%,,,2025-03-31,,5551,5551,,5551,,,,,,PFLT,2025-02-10
+"MOREGroup Holdings, Inc",First Lien,Business Services,10.35%,,SOFR,5.75%,,,2030-01-16,,12891,12871,,12891,,,,,,PFLT,2025-02-10
+"Municipal Emergency Services, Inc.",First Lien,Distributors,9.75%,,SOFR,5.15%,,,2027-09-28,,3355,3395,,3355,,,,,,PFLT,2025-02-10
+NBH Group LLC,First Lien,"Healthcare, Education & Childcare",11.05%,,SOFR,5.85%,,,2026-08-19,,10504,10284,,10504,,,,,,PFLT,2025-02-10
+"NORA Acquisition, LLC",First Lien,Healthcare Providers and Services,10.95%,,SOFR,6.35%,,,2029-08-31,,20913,21274,,20913,,,,,,PFLT,2025-02-10
+"One Stop Mailing, LLC",First Lien,Air Freight and Logistics,11.21%,,SOFR,6.36%,,,2027-05-07,,15480,15682,,15480,,,,,,PFLT,2025-02-10
+"ORL Acquisitions, Inc.",First Lien,Consumer Finance,14.00%,,SOFR,9.4%,,,2027-09-03,,2124,1819,,2124,,,,,,PFLT,2025-02-10
+"Output Services Group, Inc",First Lien,Business Services,13.75%,,SOFR,8.43%,,,2028-11-30,,821,821,,821,,,,,,PFLT,2025-02-10
+"Output Services Group, Inc",First Lien,Business Services,12.00%,,SOFR,6.68%,,,2028-05-30,,1667,1667,,1667,,,,,,PFLT,2025-02-10
+"Owl Acquisition, LLC",First Lien,Professional Services,10.20%,,SOFR,5.35%,,,2028-02-04,,3842,3825,,3842,,,,,,PFLT,2025-02-10
+"Ox Two, LLC",First Lien,Construction and Building,11.12%,,SOFR,6.51%,,,2026-05-18,,4282,4307,,4282,,,,,,PFLT,2025-02-10
+"Pacific Purchaser, LLC",First Lien,Business Services,11.51%,,SOFR,6.25%,,,2028-09-30,,11745,11914,,11745,,,,,,PFLT,2025-02-10
+"PCS Midco, Inc",First Lien,Diversified Consumer Services,10.81%,,SOFR,5.75%,,,2030-03-01,,3818,3871,,3818,,,,,,PFLT,2025-02-10
+"PH Beauty Holdings III, Inc.",First Lien,Wholesale,10.17%,,SOFR,5.43%,,,2025-09-29,,9289,9302,,9289,,,,,,PFLT,2025-02-10
+"PL Acquisitionco, LLC",First Lien,"Textiles, Apparel and Luxury Goods",11.99%,,SOFR,7.25%,,,2027-11-09,,7733,6253,,7733,,,,,,PFLT,2025-02-10
+"Pragmatic Institute, LLC",First Lien,Education,12.35%,,SOFR,7.5%,,,2028-07-06,,11480,7261,,11480,,,,,,PFLT,2025-02-10
+"Quantic Electronics, LLC",First Lien,Aerospace and Defense,10.95%,,SOFR,6.35%,,,2026-11-19,,2758,2761,,2758,,,,,,PFLT,2025-02-10
+"Rancho Health MSO, Inc.",First Lien,Healthcare Providers and Services,10.85%,,SOFR,5.6%,,,2025-12-18,,1016,1016,,1016,,,,,,PFLT,2025-02-10
+"Reception Purchaser, LLC",First Lien,Air Freight and Logistics,10.75%,,SOFR,6.15%,,,2028-02-28,,4828,3656,,4828,,,,,,PFLT,2025-02-10
+"Recteq, LLC",First Lien,Leisure Products,11.75%,,SOFR,7.15%,,,2026-01-29,,4796,4777,,4796,,,,,,PFLT,2025-02-10
+"RTIC Subsidiary Holdings, LLC",First Lien,Consumer Goods: Durable,10.35%,,SOFR,5.75%,,,2029-05-03,,9830,9776,,9830,,,,,,PFLT,2025-02-10
+"Rural Sourcing Holdings, Inc. (HPA SPQ Merger Sub, Inc.)",First Lien,High Tech Industries,10.35%,,SOFR,5.75%,,,2029-06-15,,4266,4282,,4266,,,,,,PFLT,2025-02-10
+"Safe Haven Defense US, LLC",First Lien,Construction and Building,9.85%,,SOFR,5.25%,,,2029-05-23,,9830,9873,,9830,,,,,,PFLT,2025-02-10
+Sales Benchmark Index LLC,First Lien,Professional Services,10.80%,,SOFR,6.2%,,,2025-01-03,,9260,9268,,9260,,,,,,PFLT,2025-02-10
+Sargent & Greenleaf Inc.,First Lien,Wholesale,12.45%,,SOFR,7.6%,,,2024-12-20,,4906,4916,,4906,,,,,,PFLT,2025-02-10
+"Schlesinger Global, Inc.",First Lien,Business Services,13.20%,,SOFR,8.35%,,,2025-07-14,,12387,12078,,12387,,,,,,PFLT,2025-02-10
+"Seaway Buyer, LLC",First Lien,"Chemicals, Plastics and Rubber",10.75%,,SOFR,6.15%,,,2029-06-13,,4842,4729,,4842,,,,,,PFLT,2025-02-10
+"Sigma Defense Systems, LLC",First Lien,Aerospace and Defense,11.50%,,SOFR,6.9%,,,2027-12-18,,18370,18434,,18370,,,,,,PFLT,2025-02-10
+"Simplicity Financial Marketing Group Holdings, Inc",First Lien,Diversified Financial Services,11.00%,,SOFR,6.4%,,,2026-12-02,,11206,11472,,11206,,,,,,PFLT,2025-02-10
+"Skopima Consilio Parent, LLC",First Lien,Business Services,9.46%,,SOFR,4.61%,,,2028-05-17,,1268,1289,,1268,,,,,,PFLT,2025-02-10
+"Smartronix, LLC",First Lien,Aerospace and Defense,10.35%,,SOFR,6.1%,,,2028-11-23,,4800,4863,,4800,,,,,,PFLT,2025-02-10
+Smile Brands Inc.,First Lien,Healthcare and Pharmaceuticals,10.20%,,SOFR,5.5%,,,2025-10-14,,11860,10520,,11860,,,,,,PFLT,2025-02-10
+"Solutionreach, Inc.",First Lien,Healthcare and Pharmaceuticals,12.40%,,SOFR,7.15%,,,2025-07-17,,4560,4582,,4560,,,,,,PFLT,2025-02-10
+Spendmend Holdings LLC,First Lien,Healthcare Technology,10.25%,,SOFR,5.65%,,,2028-03-01,,4017,4070,,4017,,,,,,PFLT,2025-02-10
+"Summit Behavioral Healthcare, LLC",First Lien,Healthcare and Pharmaceuticals,9.31%,,SOFR,4.25%,,,2028-11-24,,1700,1653,,1700,,,,,,PFLT,2025-02-10
+"System Planning and Analysis, Inc. (f/k/a Management Consulting & Research, LLC)",First Lien,Aerospace and Defense,10.26%,,SOFR,5%,,,2027-08-16,,14445,14558,,14445,,,,,,PFLT,2025-02-10
+TCG 3.0 Jogger Acquisitionco,First Lien,Media,11.10%,,SOFR,6.5%,,,2029-01-23,,19312,19430,,19312,,,,,,PFLT,2025-02-10
+"Team Services Group, LLC",First Lien,Healthcare and Pharmaceuticals,9.95%,,SOFR,5%,,,2028-11-24,,332,338,,332,,,,,,PFLT,2025-02-10
+"Teneo Holdings, LLC",First Lien,Business Services,9.60%,,SOFR,4.75%,,,2031-03-13,,5418,5490,,5418,,,,,,PFLT,2025-02-10
+The Bluebird Group LLC,First Lien,Professional Services,11.25%,,SOFR,6.65%,,,,,8427,8521,,8427,,,,,,PFLT,2025-02-10
+"The Vertex Companies, LLC",First Lien,Construction and Engineering,10.95%,,SOFR,6.1%,,,,,7538,7639,,7538,,,,,,PFLT,2025-02-10
+"TPC Canada Parent, Inc. and TPC US Parent, LLC",First Lien,Consumer Goods: Non-Durable,10.84%,,SOFR,5.65%,,,,,16394,16524,,16394,,,,,,PFLT,2025-02-10
+"Transgo, LLC",First Lien,Automotive,10.60%,,SOFR,5.75%,,,,,18293,18552,,18293,,,,,,PFLT,2025-02-10
+TWS Acquisition Corporation,First Lien,Diversified Consumer Services,11.33%,,SOFR,6.4%,,,,,943,943,,943,,,,,,PFLT,2025-02-10
+"Tyto Athene, LLC",First Lien,IT Services,10.23%,,SOFR,4.9%,,,,,14585,14376,,14585,,,,,,PFLT,2025-02-10
+"Urology Management Holdings, Inc.",First Lien,Healthcare and Pharmaceuticals,10.76%,,SOFR,5.5%,,,,,6742,6755,,6742,,,,,,PFLT,2025-02-10
+Walker Edison Furniture Company LLC,First Lien,Wholesale,0.00%,,,,,,,,4986,490,,4986,,,,,,PFLT,2025-02-10
+Walker Edison Furniture Company LLC - Junior Revolving Credit Facility,First Lien,Wholesale,0.00%,,,,,,,,1667,1667,,1667,,,,,,PFLT,2025-02-10
+Walker Edison Furniture Company LLC - DDTL - Unfunded,First Lien,Wholesale,0.00%,,,,,,,,,76,,,,,,,,PFLT,2025-02-10
+"Watchtower Buyer, LLC",First Lien,Diversified Consumer Services,10.60%,,SOFR,6%,,,,,12007,12067,,12007,,,,,,PFLT,2025-02-10
+"Wildcat Buyerco, Inc.",First Lien,"Electronic Equipment, Instruments, and Components",10.60%,,SOFR,5.75%,,,,,15916,16014,,15916,,,,,,PFLT,2025-02-10
+"Zips Car Wash, LLC",First Lien,Automobiles,12.46%,,SOFR,7.4%,,,,,16722,15983,,16722,,,,,,PFLT,2025-02-10
+"New Insight Holdings, Inc.",Other Equity,Diversified Consumer Services,,,,,,,,,2031,2031,,2031,,,,,,PFLT,2025-02-10
+"Lucky Bucks, LLC",Other Equity,"Hotel, Gaming and Leisure",,,,,,,,,2062,904,,2062,,,,,,PFLT,2025-02-10
+"New MPE Holdings, LLC",Other Equity,Media: Diversified and Production,,,,,,,,,,2710,,,,,,,,PFLT,2025-02-10
+"Output Services Group, Inc",Other Equity,Business Services,,,,,,,,,1012,1104,,1012,,,,,,PFLT,2025-02-10
+"Total Investments - 1,871.60%",Other Equity,"Total Investments - 1,871.60%",,,,,,,,,1072770,1046178,,1072770,,,,,,PFLT,2025-02-10
