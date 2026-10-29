@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T07:16:25.714598Z",
+  "generated_at": "2026-10-29T05:18:53.867021Z",
   "tickers": {
     "ARCC": {
       "entity_name": "ARES CAPITAL CORPORATION",
@@ -28,6 +28,18 @@
     "BCIC": {
       "entity_name": "BCP Investment Corporation",
       "period_count": 24,
+      "first_period": "2019-12-31",
+      "latest_period": "2026-06-30",
+      "statements": [
+        "balance_sheet",
+        "cash_flow",
+        "income_statement"
+      ],
+      "has_cash_flow": true
+    },
+    "BCRED": {
+      "entity_name": "Blackstone Private Credit Fund",
+      "period_count": 23,
       "first_period": "2019-12-31",
       "latest_period": "2026-06-30",
       "statements": [

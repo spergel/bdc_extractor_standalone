@@ -1,218 +1,310 @@
-company_name,company_id,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date,ticker,filing_date
-Flo Health UK Ltd.,co_02fd6acc6802,Other Debt,Software & Technology,5.75%,,,,,,2025-05-31,8333,8296,8307,,8296,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Loft Orbital Solutions Inc.,co_34b678435fad,Other Debt,Aerospace & Defense,6.75%,,,,,,2027-11-30,909,911,911,,911,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Parry Labs, LLC",co_36a0c050b8a0,Other Debt,Aerospace & Defense,3.50%,,,,,,2028-11-30,19500,19256,19256,,19256,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Arcadia Power, Inc.",co_2e8177b2308f,Other Debt,Software & Technology,11.75%,,,,,,2026-11-30,2902,2727,2727,,2727,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"FlashParking, Inc.",co_2b93956706b7,Other Debt,Software & Technology,1.75%,12.75%,,,,,2027-05-31,20391,20126,20126,,20126,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Farmer's Business Network, Inc.",co_7a7e801511a5,,Software & Technology,15.00%,,,,14.0%,,2025-09-27,14,14,14,,14,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-NewStore Inc.,co_fb07f1d6ca1f,Other Debt,Software & Technology,4.00%,,,,,,2027-01-31,2500,2518,2518,,2518,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Quick Commerce Ltd.,co_dce1a856beec,Other Debt,Business Services,7.50%,7.50%,,,,,2028-12-31,11483,9773,9169,,9773,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Ao1 Holdings, Inc.",co_ca6ac4682281,Other Debt,Software & Technology,1.00%,,,,,,2027-12-01,3997,3959,3959,,3959,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Forum Brands, LLC",co_2404206abaed,Other Debt,Software & Technology,12.00%,,,,,,2025-07-31,2781,2912,2715,,2912,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Don't Run Out, Inc.",co_1f57be8cebaf,Other Debt,Consumer & Retail,7.75%,,,,,,2025-06-30,1000,1089,1084,,1089,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Avantstay, Inc.",co_e190fccfa5b5,Other Debt,Consumer & Retail,6.00%,,,,,,2026-03-31,1824,1879,1879,,1879,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Fiton Inc.,co_c0cbd413e718,Other Debt,Consumer & Retail,4.00%,,,,,,2027-08-01,8889,8776,8776,,8776,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Flink SE,co_77793d2b5399,Other Debt,Consumer & Retail,9.75%,,,,,,2028-08-31,14006,14371,9978,,14371,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Frubana Inc.,co_d3f744e21a8b,Other Debt,Consumer & Retail,6.25%,,,,,,2027-01-31,139,144,143,,144,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Hydrow, Inc.",co_c23aebf7778d,Other Debt,Consumer & Retail,3.50%,,,,,,2027-12-01,16657,16611,14934,,16611,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-JOKR S.à r.l.,co_ae59ccab1375,Other Debt,Consumer & Retail,7.40%,,,,,,2025-11-30,2862,2999,2990,,2999,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Lower Holding Company,co_ef48394c530b,Other Debt,Consumer & Retail,3.75%,,,,,,2025-12-31,3634,3950,3950,,3950,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Nakdcom One World AB,co_55310af50cf7,Other Debt,Consumer & Retail,11.50%,10.00%,,,,,2026-12-31,6621,5933,5515,,5933,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Project 1920, Inc.",co_c39b68ee174a,Other Debt,Consumer & Retail,6.25%,,,,,,2025-03-31,1927,1973,444,,1973,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-MA Micro Ltd.,co_020e50af72e8,,Consumer & Retail,,,,,,,2028-12-31,4166,2713,2659,,2713,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Savage X, Inc.",co_96b4e4904a7b,Other Debt,Consumer & Retail,8.25%,,,,,,2028-06-26,500,459,459,,459,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"TetraScience, Inc.",co_d52ffd9e5c3e,Other Debt,Software & Technology,3.25%,,,,,,2028-07-01,10000,9921,9921,,9921,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"FabFitFun, Inc.",co_e53bd50f8128,Other Debt,Consumer & Retail,7.00%,,,,,,2027-11-30,16916,17034,17034,,17034,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Fabletics, Inc.",co_79916354f9a9,Other Debt,Consumer & Retail,2.50%,2.50%,,,,,2029-04-25,3848,3492,3492,,3492,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Minted, Inc.",co_331e72aacfab,Other Debt,Consumer & Retail,8.00%,,,,,,2027-06-30,16500,17019,17019,,17019,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Outfittery GMBH,co_2863af1de208,Other Debt,Consumer & Retail,14.73%,14.73%,,,,,2026-01-01,27987,31365,23966,,31365,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Trendly, Inc.",co_d8b53baabb37,Other Debt,Consumer & Retail,7.75%,,,,,,2026-12-31,19500,21172,20735,,21172,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Panorama Education, Inc.",co_f8033b666b83,Other Debt,Education,2.00%,,,,,,2027-01-01,6000,6045,6045,,6045,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Luminary Roli Ltd.,co_2181eca8839a,Other Debt,Media & Entertainment,,,,,,,2026-08-31,35492,29531,6985,,29531,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Mind Candy Ltd.,co_6dc479a87b5a,Other Debt,Media & Entertainment,,12.00%,,,,,2025-12-31,23953,21222,9563,,21222,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Prodigy Investments Ltd.,co_c075d7269f41,Other Debt,Financial Services,14.28%,14.28%,,,,,2025-12-31,37986,37848,37987,,37848,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Ocrolus, Inc.",co_141c2f14db8a,Other Debt,Financial Services,2.50%,,,,,,2028-02-01,7142,7123,7123,,7123,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Synapse Financial Technologies, Inc.",co_841635326968,Other Debt,Financial Services,5.75%,,,,,,2025-07-31,731,727,56,,727,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Kalderos, Inc.",co_381e8dec7175,Other Debt,Healthcare,3.75%,,,,,,2028-01-01,13000,12874,12874,,12874,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"K Health, Inc.",co_d31095807771,Other Debt,Healthcare,2.25%,,,,,,2026-07-31,3324,3419,3419,,3419,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Thirty Madison, Inc.",co_71279fe4b294,Other Debt,Healthcare,6.00%,,,,,,2025-12-31,20000,20903,20903,,20903,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Tempus Ex Machina, Inc.",co_6acc1fd6fe74,Other Debt,Business Services,5.50%,,,,,,2027-02-28,1000,1024,1010,,1024,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Hover Inc.,co_f9ebf14bcc74,Other Debt,Media & Entertainment,3.00%,,,,,,2029-03-31,16000,15973,15973,,15973,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Jerry Services, Inc.",co_40ca09d00427,Other Debt,Financial Services,10.00%,,,,,,2025-09-30,10000,10647,10613,,10647,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Monzo Bank Ltd.,co_d0fd8589c32d,Other Debt,Financial Services,12.00%,,,,,,2026-03-08,7035,6980,6871,,6980,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Homeward, Inc.",co_df68b3e9bdbc,Other Debt,Real Estate,6.50%,,,,,,2026-06-30,10000,10696,10665,,10696,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-True Footage Inc.,co_70aa48328c90,Other Debt,Real Estate,11.00%,,,,,,2025-07-31,250,268,258,,268,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Moda Operandi, Inc.",co_ea3c938fd2d1,Other Debt,Other,6.50%,,,,,,2026-08-01,15400,14698,14500,,14698,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-InMobi Pte Ltd.,co_e80460a527fe,Warrants,Media & Entertainment,,,,,,,2013-12-13,,35,13,,35,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Loft Orbital Solutions Inc.,co_34b678435fad,Warrants,Aerospace & Defense,,,,,,,2022-07-15,,192,344,,192,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Parry Labs, LLC",co_36a0c050b8a0,Warrants,Aerospace & Defense,,,,,,,2024-12-20,,145,81,,145,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Flo Health, Inc.",co_02546d7334b2,Warrants,Software & Technology,,,,,,,2022-05-10,,123,274,,123,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Arcadia Power, Inc.",co_2e8177b2308f,Warrants,Software & Technology,,,,,,,2021-12-10,,138,143,,138,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Cresta Intelligence, Inc.",co_4ac574ec9703,Warrants,Other,,,,,,,2024-06-06,,8,23,,8,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"DialPad, Inc.",co_b8df4cf770bf,Warrants,Other,,,,,,,2020-08-03,,102,23,,102,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Envoy, Inc.",co_41f6fed6d4d6,Warrants,Other,,,,,,,2020-05-08,,82,183,,82,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Farmer's Business Network, Inc.",co_7a7e801511a5,Warrants,Agriculture,,,,,,,2020-01-03,,33,24,,33,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Filevine, Inc.",co_7ef8251d9547,Warrants,Other,,,,,,,2021-04-20,,38,882,,38,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"FlashParking, Inc.",co_2b93956706b7,Warrants,Other,,,,,,,2021-06-15,,810,1314,,810,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Narvar, Inc.",co_68b70de0f0de,Warrants,Other,,,,,,,2020-08-28,,102,102,,102,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-NewStore Inc.,co_fb07f1d6ca1f,Warrants,Other,,,,,,,2022-11-16,,36,4,,36,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Passport Labs, Inc.",co_19e3f5ef24c1,Warrants,Media & Entertainment,,,,,,,2018-09-28,,303,590,,303,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Project Affinity, Inc.",co_006a4a066699,Warrants,Other,,,,,,,2024-04-26,,21,21,,21,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Quantcast Corp.,co_dea937e8e307,Warrants,Other,,,,,,,2018-08-09,,213,161,,213,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Uniphore Technologies Inc.,co_3453374d0f9b,Warrants,Other,,,,,,,2021-12-22,,34,100,,34,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Cart.com, Inc.",co_82df160c51c3,Warrants,Business Services,,,,,,,2021-12-30,,477,737,,477,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"LeoLabs, Inc.",co_11e4433d682c,Warrants,Other,,,,,,,2022-01-20,,197,227,,197,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Muon Space, Inc.",co_ab93ae7e0149,Warrants,Other,,,,,,,2024-12-30,,56,56,,56,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Substack Inc.,co_461b0a64a257,Warrants,Other,,,,,,,2022-07-13,,6,6,,6,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Ao1 Holdings, Inc.",co_ca6ac4682281,Warrants,Software & Technology,,,,,,,2024-12-13,,55,31,,55,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Forum Brands Holdings, Inc.",co_0ba7ea1ef374,Warrants,Software & Technology,,,,,,,2021-07-06,,626,66,,626,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Metropolis Technologies, Inc.",co_68219570cf34,Warrants,Software & Technology,,,,,,,2022-03-30,,87,1039,,87,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Thoughtspot, Inc.",co_ba7406135209,Warrants,Software & Technology,,,,,,,2025-03-03,,404,404,,404,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Optoro, Inc.",co_014711297a51,Warrants,Business to Business Marketplace,,,,,,,2015-07-13,,40,67,,40,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"RetailNext, Inc.",co_6d016d534cac,Warrants,Business to Business Marketplace,,,,,,,2017-11-16,,80,111,,80,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Transfix, Inc.",co_99651156af26,Warrants,Business Services,,,,,,,2019-05-31,,188,188,,188,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Eridu Corp.,co_2b9342c493da,,Software & Technology,,,,,,,2025-03-31,,5,5,,5,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Grey Orange International Inc.,co_357900daea43,,Software & Technology,,,,,,,2021-03-16,,183,121,,183,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Activehours, Inc.",co_a7fcaf32f832,,Financial Services,,,,,,,2020-10-08,,370,1707,,370,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Athletic Greens International, Inc.",co_f9aa07c29e47,,Consumer & Retail,,,,,,,2022-06-03,,85,84,,85,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Don't Run Out, Inc.",co_1f57be8cebaf,,Consumer & Retail,,,,,,,2021-12-30,,30,13,,30,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"AvantStay, Inc.",co_e190fccfa5b5,,Consumer & Retail,,,,,,,2022-12-12,,151,188,,151,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Baby Generation, Inc.",co_5ca3198761da,,Consumer & Retail,,,,,,,2022-01-26,,25,25,,25,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-everdrop GmbH,co_2b79d024dccc,,Consumer & Retail,,,,,,,2022-03-16,,25,24,,25,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-FitOn Inc.,co_c0cbd413e718,,Consumer & Retail,,,,,,,2024-02-29,,162,156,,162,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Flink SE,co_77793d2b5399,,Consumer & Retail,,,,,,,2022-04-13,,339,,,339,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Foodology Inc.,co_0d8b8d229cae,,Consumer & Retail,,,,,,,2022-03-25,,116,86,,116,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Frubana Inc.,co_d3f744e21a8b,,Consumer & Retail,,,,,,,2022-09-30,,334,13,,334,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Hydrow, Inc.",co_c23aebf7778d,,Consumer & Retail,,,,,,,2021-02-09,,232,,,232,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-JOKR S.à r.l.,co_ae59ccab1375,,Other,,,,,,,2024-05-10,,339,104,,339,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Lower Holding Company,co_ef48394c530b,,Other,,,,,,,2022-12-28,,189,24,,189,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Nakdcom One World AB,co_55310af50cf7,,Other,,,,,,,2022-06-02,,1258,,,1258,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Pair Eyewear, Inc.",co_48c6c4b4143c,,Other,,,,,,,2022-07-12,,5,7,,5,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Project 1920, Inc.",co_c39b68ee174a,,Other,,,,,,,2022-03-25,,23,,,23,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Quip NYC, Inc.",co_c670c191758a,,Other,,,,,,,2018-11-26,,455,1171,,455,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Tempo Interactive Inc.,co_519b1ddfac08,,Other,,,,,,,2021-03-31,,93,14,,93,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"The Black Tux Holdings, Inc.",co_05bd5048fec6,,Other,,,,,,,2021-11-05,,139,469,,139,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"LovePop, Inc.",co_c651920bde55,,Consumer & Retail,,,,,,,2018-10-23,,168,128,,168,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Savage X, Inc.",co_96b4e4904a7b,,Consumer & Retail,,,,,,,2020-04-07,,670,518,,670,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Sisense, Inc.",co_dfabeb0f09b4,,Software & Technology,,,,,,,2021-12-28,,190,465,,190,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"TetraScience, Inc.",co_d52ffd9e5c3e,,Software & Technology,,,,,,,2025-01-24,,20,20,,20,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"FabFitFun, Inc.",co_e53bd50f8128,,Consumer & Retail,,,,,,,2017-11-20,,940,314,,940,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Minted, Inc.",co_331e72aacfab,,Other,,,,,,,2020-09-30,,516,235,,516,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Outfittery GMBH,co_2863af1de208,,Other,,,,,,,2017-08-10,,1850,1292,,1850,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Rent the Runway, Inc.",co_914eb7faf8f5,,Other,,,,,,,2015-11-25,,1294,,,1294,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Stance, Inc.",co_6e5095310f43,,Other,,,,,,,2017-03-31,,41,70,,41,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Trendly, Inc.",co_d8b53baabb37,,Other,,,,,,,2021-05-27,,381,598,,381,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Untuckit LLC,co_51f11502c8b7,,Other,,,,,,,2018-05-11,,39,57,,39,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Merama Inc.,co_8cc1bf5d4c31,,Other,,,,,,,2021-04-28,,406,1100,,406,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Panorama Education, Inc.",co_f8033b666b83,,Education,,,,,,,2024-07-30,,45,45,,45,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Mind Candy, Inc.",co_6dc479a87b5a,,Media & Entertainment,,,,,,,2017-03-24,,922,,,922,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"BlueVine Capital, Inc.",co_45461dc3df3b,,Financial Services,,,,,,,2017-09-15,,361,1416,,361,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Prodigy Investments Ltd.,co_c075d7269f41,,Financial Services,,,,,,,2017-12-05,,869,332,,869,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Revolut Ltd.,co_dd6dc3d0ad7d,,Financial Services,,,,,,,2018-04-16,,40,5663,,40,,,,,cost_suspicious_vs_size,TPVG,2025-05-07,TPVG,2025-05-07
-WorldRemit Group Ltd.,co_443b38154040,,Other,,,,,,,2015-12-23,,382,1472,,382,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Branch Messenger, Inc.",co_605c424d2719,,Financial Services,,,,,,,2025-03-27,,74,74,,74,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Ocrolus, Inc.",co_141c2f14db8a,,Financial Services,,,,,,,2024-08-14,,96,96,,96,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Synapse Financial Technologies, Inc.",co_841635326968,,Financial Services,,,,,,,2022-07-29,,23,,,23,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Capsule Corp.,co_b80c51fd4fb2,,Food & Beverage,,,,,,,2020-01-17,,437,34,,437,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Overtime Sports, Inc.",co_32d618ec626d,,Media & Entertainment,,,,,,,2022-05-04,,70,70,,70,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Thrillist Media Group, Inc.",co_4e6f79b8dabb,,Media & Entertainment,,,,,,,2014-09-24,,624,1092,,624,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Found Health, Inc.",co_19b025001695,,Healthcare,,,,,,,2022-03-25,,22,16,,22,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Vial Health Technology, Inc.",co_ca992cfb7fdd,,Healthcare,,,,,,,2022-12-14,,33,33,,33,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Curology, Inc.",co_7c7eb0cf1888,,Healthcare,,,,,,,2019-05-23,,58,21,,58,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Kalderos, Inc.",co_381e8dec7175,,Healthcare,,,,,,,2022-12-27,,209,187,,209,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"K Health, Inc.",co_d31095807771,,Healthcare,,,,,,,2023-07-14,,187,263,,187,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Thirty Madison, Inc.",co_71279fe4b294,,Healthcare,,,,,,,2022-12-30,,445,457,,445,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Infinite Athlete, Inc.",co_d13f0ad06a41,,Business Services,,,,,,,2023-05-01,,9,5,,9,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"AirStrip Technologies, Inc.",co_c29ac95cf616,,Healthcare,,,,,,,2013-10-09,,112,,,112,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Hover Inc.,co_f9ebf14bcc74,,Media & Entertainment,,,,,,,2022-09-30,,309,338,,309,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Open Space Labs, Inc.",co_19cf16e901d1,,Media & Entertainment,,,,,,,2022-11-15,,7,4,,7,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Cohesity, Inc.",co_03a771eeb683,,Software & Technology,,,,,,,2020-01-10,,54,100,,54,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Signifyd, Inc.",co_cd4ab633eb4d,,Software & Technology,,,,,,,2019-12-19,,132,441,,132,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Corelight, Inc.",co_e78b608ee62d,,Software & Technology,,,,,,,2022-09-29,,235,258,,235,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Jerry Services, Inc.",co_40ca09d00427,,Financial Services,,,,,,,2022-06-13,,169,120,,169,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Monzo Bank Ltd.,co_d0fd8589c32d,,Financial Services,,,,,,,2021-03-08,,161,822,,161,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-N26 GmbH,co_a55218fe48a2,,Financial Services,,,,,,,2021-09-14,,324,231,,324,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Upgrade, Inc.",co_292220680c24,,Financial Services,,,,,,,2019-01-18,,223,595,,223,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Belong Home, Inc.",co_05444cd708b4,,Real Estate,,,,,,,2022-02-15,,6,15,,6,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"HomeLight, Inc.",co_c4d3872bdc11,,Real Estate,,,,,,,2018-12-21,,44,186,,44,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Homeward, Inc.",co_df68b3e9bdbc,,Other,,,,,,,2021-12-10,,211,338,,211,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-McN Investments Ltd.,co_04eefd3acd83,,Financial Services,,,,,,,2022-05-27,,295,116,,295,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Roofstock, Inc.",co_b83f4f8d8b97,,Other,,,,,,,2022-05-25,,19,194,,19,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Sonder Holdings Inc.,co_aa26e82f8a4a,,Other,,,,,,,2018-12-28,,232,,,232,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-True Footage Inc.,co_70aa48328c90,,Other,,,,,,,2021-11-24,,147,98,,147,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Moda Operandi, Inc.",co_ea3c938fd2d1,,Other,,,,,,,2021-12-30,,169,,,169,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-OfferUp Inc.,co_2076b23f755f,,Other,,,,,,,2019-12-23,,42,138,,42,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-ClassPass Inc.,co_1c5648642c6c,,Software & Technology,,,,,,,2019-03-18,,281,151,,281,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Omio Corp.,co_23d547e6f6a7,,Healthcare,,,,,,,2019-09-18,,362,404,,362,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Arcadia Power, Inc.",co_2e8177b2308f,Other Equity,Software & Technology,,,,,,,2021-09-21,,167,105,,167,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Cresta Intelligence, Inc.",co_4ac574ec9703,Other Equity,Software & Technology,,,,,,,2024-09-30,,500,500,,500,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"DialPad, Inc.",co_b8df4cf770bf,Other Equity,Software & Technology,,,,,,,2020-09-22,,120,107,,120,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Envoy, Inc.",co_41f6fed6d4d6,Other Equity,Software & Technology,,,,,,,2021-12-30,,667,539,,667,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"FlashParking, Inc.",co_2b93956706b7,Other Equity,Software & Technology,,,,,,,2022-07-19,,455,451,,455,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Filevine, Inc.",co_7ef8251d9547,Other Equity,Software & Technology,,,,,,,2022-02-04,,357,486,,357,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Farmer's Business Network, Inc.",co_7a7e801511a5,Other Equity,Software & Technology,,,,,,,2020-07-31,,28,13,,28,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Passport Labs, Inc.",co_19e3f5ef24c1,Other Equity,Media & Entertainment,,,,,,,2019-06-11,,100,103,,100,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Uniphore Technologies Inc.,co_3453374d0f9b,Other Equity,Other,,,,,,,2022-01-28,,350,287,,350,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Ao1 Holdings, Inc.",co_ca6ac4682281,Other Equity,Software & Technology,,,,,,,2024-12-13,,150,142,,150,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Forum Brands Holdings, Inc.",co_0ba7ea1ef374,Other Equity,Software & Technology,,,,,,,2021-07-16,,150,30,,150,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Quick Commerce Ltd.,co_dce1a856beec,Other Equity,Business Services,,,,,,,2024-04-05,,8028,8042,,8028,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-MXP Prime GmbH,co_c9f70d8b22a4,Other Equity,Business Services,,,,,,,2022-02-03,,1140,12,,1140,,,,,fair_value_suspicious_vs_size,TPVG,2025-05-07,TPVG,2025-05-07
-"Printful, Inc.",co_372b2c3fec9e,Other Equity,Other,,,,,,,2025-03-31,,24,24,,24,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Activehours, Inc.",co_a7fcaf32f832,Other Equity,Financial Services,,,,,,,2020-11-10,,150,352,,150,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Misfits Market, Inc.",co_ff79129e7d47,Other Equity,Consumer & Retail,,,,,,,2022-12-31,,142,152,,142,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-everdrop GmbH,co_2b79d024dccc,Other Equity,Consumer & Retail,,,,,,,2022-08-01,,310,326,,310,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Frubana Inc.,co_d3f744e21a8b,Other Equity,Consumer & Retail,,,,,,,2022-07-13,,500,19,,500,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"GrubMarket, Inc.",co_ac21c10f46e8,Other Equity,Consumer & Retail,,,,,,,2024-08-02,,7758,7758,,7758,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Hydrow, Inc.",co_c23aebf7778d,Other Equity,Consumer & Retail,,,,,,,2020-12-14,,668,19,,668,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-JOKR S.à r.l.,co_ae59ccab1375,Other Equity,Consumer & Retail,,,,,,,2021-12-07,,187,101,,187,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Pair Eyewear, Inc.",co_48c6c4b4143c,Other Equity,Other,,,,,,,2023-06-27,,10,10,,10,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Savage X, Inc.",co_96b4e4904a7b,Other Equity,Consumer & Retail,,,,,,,2021-01-20,,500,17,,500,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"FabFitFun, Inc.",co_e53bd50f8128,,Consumer & Retail,,,,,,,2019-01-17,,500,466,,500,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Grove Collaborative, Inc.",co_083e9e151dad,,Consumer & Retail,,,,,,,2018-06-05,,500,43,,500,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Merama Inc.,co_8cc1bf5d4c31,,Consumer & Retail,,,,,,,2021-04-19,,33,152,,33,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Nerdy Inc.,co_e8d67c621d15,,Education,,,,,,,2018-01-05,,250,87,,250,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Luminary Roli Ltd.,co_2181eca8839a,,Media & Entertainment,,,,,,,2021-08-31,,2525,,,2525,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Mind Candy, Inc.",co_6dc479a87b5a,,Media & Entertainment,,,,,,,2020-03-09,,1000,,,1000,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Prodigy Investments Ltd.,co_c075d7269f41,,Financial Services,,,,,,,2020-12-31,,21779,20231,,21779,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Revolut Ltd.,co_dd6dc3d0ad7d,,Financial Services,,,,,,,2017-08-03,,262,21905,,262,,,,,cost_suspicious_vs_size,TPVG,2025-05-07,TPVG,2025-05-07
-Capsule Corp.,co_b80c51fd4fb2,,Food & Beverage,,,,,,,2019-07-25,,716,369,,716,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Overtime Sports, Inc.",co_32d618ec626d,,Media & Entertainment,,,,,,,2022-08-02,,1000,1000,,1000,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Curology, Inc.",co_7c7eb0cf1888,,Healthcare,,,,,,,2019-11-26,,196,145,,196,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Kalderos, Inc.",co_381e8dec7175,,Other,,,,,,,2022-12-27,,325,296,,325,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Talkspace, LLC",co_01a50d13bb96,,Other,,,,,,,2019-05-15,,378,376,,378,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Thirty Madison, Inc.",co_71279fe4b294,,Other,,,,,,,2019-05-31,,1000,725,,1000,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Hover Inc.,co_f9ebf14bcc74,,Media & Entertainment,,,,,,,2022-09-30,,231,259,,231,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Cohesity, Inc.",co_03a771eeb683,,Software & Technology,,,,,,,2017-03-24,,400,925,,400,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Jerry Services, Inc.",co_40ca09d00427,,Financial Services,,,,,,,2022-05-06,,104,82,,104,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Monzo Bank Ltd.,co_d0fd8589c32d,,Financial Services,,,,,,,2021-03-08,,1000,2022,,1000,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-N26 GmbH,co_a55218fe48a2,,Other,,,,,,,2021-12-09,,1264,1468,,1264,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Redesign Health Inc.,co_21c17646c342,,Other,,,,,,,2022-07-12,,100,100,,100,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Belong Home, Inc.",co_05444cd708b4,,Real Estate,,,,,,,2022-04-18,,29,29,,29,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-McN Investments Ltd.,co_04eefd3acd83,,Real Estate,,,,,,,2022-05-06,,300,209,,300,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-True Footage Inc.,co_70aa48328c90,,Real Estate,,,,,,,2021-10-18,,100,68,,100,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Omio Corp.,co_23d547e6f6a7,,Healthcare,,,,,,,2017-10-05,,300,291,,300,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Inspirato LLC,co_c2321958293e,,Other,,,,,,,2014-09-11,,287,25,,287,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Federated Government Obligations Fund,co_367f87321ccc,,Business Services,,,,,,,,,34267,34267,,34267,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Avantstay, Inc.",co_e190fccfa5b5,Other Debt,Consumer & Retail,6.00%,,,,,,2026-03-31,1824,1873,1891,,1873,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Baby Generation, Inc.",co_5ca3198761da,Other Debt,Consumer & Retail,7.50%,,,,,,2025-01-31,1875,2019,2019,,2019,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Fiton Inc.,co_c0cbd413e718,Other Debt,Consumer & Retail,4.00%,,,,,,2027-08-01,8889,8750,8750,,8750,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Flink SE,co_77793d2b5399,Other Debt,Consumer & Retail,6.75%,6.75%,,,,,2028-08-31,13673,14009,9444,,14009,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Frubana Inc.,co_d3f744e21a8b,Other Debt,Consumer & Retail,6.25%,,,,,,2027-01-31,155,159,158,,159,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Hydrow, Inc.",co_c23aebf7778d,Other Debt,Consumer & Retail,3.50%,,,,,,2027-12-01,16657,16477,14642,,16477,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-JOKR S.à r.l.,co_ae59ccab1375,Other Debt,Consumer & Retail,7.40%,6.00%,,,,,2025-11-30,2813,2895,2879,,2895,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Lower Holding Company,co_ef48394c530b,Other Debt,Consumer & Retail,3.75%,,,,,,2025-12-31,4781,5053,5053,,5053,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Nakdcom One World AB,co_55310af50cf7,Other Debt,Consumer & Retail,11.50%,10.00%,,,,,2026-12-31,6621,5933,5294,,5933,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Project 1920, Inc.",co_c39b68ee174a,Other Debt,,6.25%,,,,,,2025-03-31,1927,1973,606,,1973,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-MA Micro Ltd.,co_020e50af72e8,,,,,,,,,2028-12-31,4166,2713,2553,,2713,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Savage X, Inc.",co_96b4e4904a7b,Other Debt,Consumer & Retail,7.25%,,,,,,2027-05-31,1000,1013,1013,,1013,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"FabFitFun, Inc.",co_e53bd50f8128,Other Debt,Consumer & Retail,7.00%,,,,,,2027-11-30,16917,16931,16931,,16931,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Fabletics, Inc.",co_79916354f9a9,Other Debt,Consumer & Retail,2.50%,2.50%,,,,,2029-04-25,3763,3392,3392,,3392,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Minted, Inc.",co_331e72aacfab,Other Debt,Consumer & Retail,8.00%,,,,,,2027-06-30,16500,16964,16964,,16964,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Outfittery GMBH,co_2863af1de208,Other Debt,Consumer & Retail,14.73%,14.73%,,,,,2026-01-01,27231,30449,22939,,30449,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Trendly, Inc.",co_d8b53baabb37,Other Debt,Consumer & Retail,7.75%,,,,,,2026-12-31,19500,21101,20612,,21101,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Panorama Education, Inc.",co_f8033b666b83,Other Debt,Education,2.00%,,,,,,2027-01-01,6000,5996,5996,,5996,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Homeward, Inc.",co_df68b3e9bdbc,Other Debt,Real Estate,6.50%,,,,,,2026-06-30,10000,10637,10233,,10637,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-True Footage Inc.,co_70aa48328c90,Other Debt,Real Estate,11.00%,,,,,,2024-12-31,250,267,252,,267,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-"Moda Operandi, Inc.",co_ea3c938fd2d1,Other Debt,Other,6.50%,,,,,,2026-08-01,16000,14963,16029,,14963,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Contact portfolio company weekly or more frequently as determined by our Adviser; contact venture capital investors regularly; our Adviser forms a workout group to minimize risk of loss.,co_7dc8ac3e51c7,,Other,,,,,,,,,,,,,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
-Maximize value from assets.,co_d592cb9d8565,,Other,,,,,,,,,,,,,,,,,,TPVG,2025-05-07,TPVG,2025-05-07
+company_name,investment_type,industry,cash_rate,pik_rate,reference_rate,spread,floor_rate,acquisition_date,maturity_date,principal_amount,amortized_cost,fair_value,percent_of_net_assets,cost,commitment_limit,undrawn_commitment,rate_cap,shares,data_quality_flags,ticker,filing_date
+Flo Health UK Ltd.,First Lien,Software & Technology,5.75%,,Prime,5.75%,,2022-05-17,,8333,8296,8307,,8296,,,,,,TPVG,2025-05-07
+Flo Health UK Ltd.,First Lien,Software & Technology,5.75%,,Prime,5.75%,,2022-07-21,,8750,8675,8705,,8675,,,,,,TPVG,2025-05-07
+Flo Health UK Ltd.,First Lien,Software & Technology,5.75%,,Prime,5.75%,,2022-09-30,,5750,5677,5710,,5677,,,,,,TPVG,2025-05-07
+Loft Orbital Solutions Inc.,First Lien,Aerospace & Defense,6.75%,,Prime,6.75%,,2023-11-21,,909,911,911,,911,,,,,,TPVG,2025-05-07
+Loft Orbital Solutions Inc.,First Lien,Aerospace & Defense,6.75%,,Prime,6.75%,,2023-12-27,,3727,3726,3726,,3726,,,,,,TPVG,2025-05-07
+Loft Orbital Solutions Inc.,First Lien,Aerospace & Defense,6.75%,,Prime,6.75%,,2023-12-27,,4658,4658,4658,,4658,,,,,,TPVG,2025-05-07
+"Parry Labs, LLC",First Lien,Aerospace & Defense,3.50%,,Prime,3.50%,,2024-12-20,,19500,19256,19256,,19256,,,,,,TPVG,2025-05-07
+"Parry Labs, LLC",First Lien,Aerospace & Defense,2.50%,,Prime,2.50%,,2025-03-12,,133,133,133,,133,,,,,,TPVG,2025-05-07
+"Arcadia Power, Inc.",First Lien,Software & Technology,11.75%,,,,,2022-05-06,,2902,2727,2727,,2727,,,,,,TPVG,2025-05-07
+"Arcadia Power, Inc.",First Lien,Software & Technology,11.75%,,,,,2022-06-29,,7000,7230,7230,,7230,,,,,,TPVG,2025-05-07
+"FlashParking, Inc.",First Lien,Software & Technology,1.75%,2.50%,Prime,1.75%,,2024-06-26,,20391,20126,20126,,20126,,,,,,TPVG,2025-05-07
+"Farmer's Business Network, Inc.",First Lien,Software & Technology,15.00%,,,,,2023-09-28,,14,14,14,,14,,,,,,TPVG,2025-05-07
+NewStore Inc.,First Lien,Software & Technology,4.00%,,Prime,4.00%,,2024-01-29,,2500,2518,2518,,2518,,,,,,TPVG,2025-05-07
+Quick Commerce Ltd.,First Lien,Business Services,,6.00%,,,,2022-05-04,,11483,9773,9169,,9773,,,,,,TPVG,2025-05-07
+Quick Commerce Ltd.,First Lien,Business Services,,6.00%,,,,2023-10-19,,1094,931,873,,931,,,,,,TPVG,2025-05-07
+"Ao1 Holdings, Inc.",First Lien,Software & Technology,1.00%,,Prime,1.00%,,2024-12-13,,3997,3959,3959,,3959,,,,,,TPVG,2025-05-07
+"Forum Brands, LLC",First Lien,Software & Technology,12.00%,,,,,2021-07-06,,2781,2912,2715,,2912,,,,,,TPVG,2025-05-07
+"Forum Brands, LLC",First Lien,Software & Technology,12.00%,,,,,2021-07-21,,438,462,428,,462,,,,,,TPVG,2025-05-07
+"Forum Brands, LLC",First Lien,Software & Technology,12.00%,,,,,2021-08-10,,525,552,513,,552,,,,,,TPVG,2025-05-07
+"Forum Brands, LLC",First Lien,Software & Technology,12.00%,,,,,2021-10-06,,2430,2550,2372,,2550,,,,,,TPVG,2025-05-07
+"Forum Brands, LLC",First Lien,Software & Technology,12.00%,,,,,2021-11-02,,1578,1652,1540,,1652,,,,,,TPVG,2025-05-07
+"Forum Brands, LLC",First Lien,Software & Technology,12.00%,,,,,2021-11-02,,4233,4432,4133,,4432,,,,,,TPVG,2025-05-07
+"Forum Brands, LLC",First Lien,Software & Technology,12.00%,,,,,2021-12-28,,1414,1489,1380,,1489,,,,,,TPVG,2025-05-07
+"Forum Brands, LLC",First Lien,Software & Technology,12.00%,,,,,2021-12-28,,540,569,527,,569,,,,,,TPVG,2025-05-07
+"Forum Brands, LLC",First Lien,Software & Technology,12.00%,,,,,2021-12-28,,95,100,93,,100,,,,,,TPVG,2025-05-07
+"Forum Brands, LLC",First Lien,Software & Technology,12.00%,,,,,2022-01-28,,3060,3215,2987,,3215,,,,,,TPVG,2025-05-07
+"Forum Brands, LLC",First Lien,Software & Technology,12.00%,,,,,2022-04-14,,1166,1216,1138,,1216,,,,,,TPVG,2025-05-07
+"Forum Brands, LLC",First Lien,Software & Technology,12.00%,,,,,2022-04-14,,439,458,428,,458,,,,,,TPVG,2025-05-07
+"Forum Brands, LLC",First Lien,Software & Technology,12.00%,,,,,2022-09-21,,2850,2929,2782,,2929,,,,,,TPVG,2025-05-07
+"Forum Brands, LLC",First Lien,Software & Technology,12.00%,,,,,2022-11-01,,5130,5256,5008,,5256,,,,,,TPVG,2025-05-07
+"Forum Brands, LLC",First Lien,Software & Technology,12.00%,,,,,2022-12-22,,306,312,299,,312,,,,,,TPVG,2025-05-07
+"Forum Brands, LLC",First Lien,Software & Technology,5.25%,,Prime,5.25%,,2023-11-01,,300,302,299,,302,,,,,,TPVG,2025-05-07
+"Forum Brands, LLC",First Lien,Software & Technology,5.25%,,Prime,5.25%,,2023-11-13,,2282,2291,2270,,2291,,,,,,TPVG,2025-05-07
+"Forum Brands, LLC",First Lien,Software & Technology,5.25%,,Prime,5.25%,,2023-12-28,,174,174,173,,174,,,,,,TPVG,2025-05-07
+"Forum Brands, LLC",First Lien,Software & Technology,,,,,,2023-12-27,,2179,2179,1899,,2179,,,,,,TPVG,2025-05-07
+"Forum Brands, LLC",First Lien,Software & Technology,5.25%,,Prime,5.25%,,2024-06-27,,244,240,243,,240,,,,,,TPVG,2025-05-07
+"Don't Run Out, Inc.",First Lien,Consumer & Retail,7.75%,,Prime,7.75%,,2021-12-30,,1000,1089,1084,,1089,,,,,,TPVG,2025-05-07
+"Don't Run Out, Inc.",First Lien,Consumer & Retail,5.00%,,Prime,5.00%,,2022-10-31,,320,397,395,,397,,,,,,TPVG,2025-05-07
+Consumer Products and Services,First Lien,Consumer & Retail,,,,,,,,,,,,,,,,,,TPVG,2025-05-07
+"Avantstay, Inc.",First Lien,Consumer & Retail,6.00%,,Prime,6.00%,,2023-03-20,,1824,1879,1879,,1879,,,,,,TPVG,2025-05-07
+"Avantstay, Inc.",First Lien,Consumer & Retail,7.00%,,Prime,7.00%,,2023-04-17,,648,660,660,,660,,,,,,TPVG,2025-05-07
+"Avantstay, Inc.",First Lien,Consumer & Retail,7.00%,,Prime,7.00%,,2023-06-15,,412,418,418,,418,,,,,,TPVG,2025-05-07
+"Avantstay, Inc.",First Lien,Consumer & Retail,7.00%,,Prime,7.00%,,2023-08-09,,954,963,963,,963,,,,,,TPVG,2025-05-07
+"Avantstay, Inc.",First Lien,Consumer & Retail,7.00%,,Prime,7.00%,,2023-09-01,,668,674,674,,674,,,,,,TPVG,2025-05-07
+"Avantstay, Inc.",First Lien,Consumer & Retail,6.50%,,Prime,6.50%,,2023-12-29,,426,420,420,,420,,,,,,TPVG,2025-05-07
+Fiton Inc.,First Lien,Consumer & Retail,4.00%,,Prime,4.00%,,2024-02-29,,8889,8776,8776,,8776,,,,,,TPVG,2025-05-07
+Fiton Inc.,First Lien,Consumer & Retail,4.00%,,Prime,4.00%,,2024-03-08,,1111,1096,1096,,1096,,,,,,TPVG,2025-05-07
+Fiton Inc.,First Lien,Consumer & Retail,4.00%,,Prime,4.00%,,2024-06-28,,1000,983,983,,983,,,,,,TPVG,2025-05-07
+Flink SE,First Lien,Consumer & Retail,9.75%,,,,,2022-07-05,,14006,14371,9978,,14371,,,,,,TPVG,2025-05-07
+Flink SE,First Lien,Consumer & Retail,9.75%,,,,,2022-10-21,,14006,14312,9978,,14312,,,,,,TPVG,2025-05-07
+Frubana Inc.,First Lien,Consumer & Retail,6.25%,,Prime,6.25%,,2023-01-25,,139,144,143,,144,,,,,,TPVG,2025-05-07
+Frubana Inc.,First Lien,Consumer & Retail,8.00%,,Prime,8.00%,,2023-04-03,,4448,4700,4602,,4700,,,,,,TPVG,2025-05-07
+Frubana Inc.,First Lien,Consumer & Retail,8.00%,,Prime,8.00%,,2023-10-03,,8000,8138,7999,,8138,,,,,,TPVG,2025-05-07
+"Hydrow, Inc.",First Lien,Consumer & Retail,3.50%,,Prime,3.50%,,2024-12-30,,16657,16611,14934,,16611,,,,,,TPVG,2025-05-07
+"Hydrow, Inc.",First Lien,Consumer & Retail,2.00%,,Prime,2.00%,,2024-12-30,,9564,9564,8828,,9564,,,,,,TPVG,2025-05-07
+JOKR S.à r.l.,First Lien,Consumer & Retail,7.40%,,Prime,7.40%,,2021-11-03,,2862,2999,2990,,2999,,,,,,TPVG,2025-05-07
+JOKR S.à r.l.,First Lien,Consumer & Retail,9.31%,8.94%,,,,2022-08-17,,1095,1120,1120,,1120,,,,,,TPVG,2025-05-07
+JOKR S.à r.l.,First Lien,Consumer & Retail,5.75%,,Prime,5.75%,,2021-11-02,,501,535,533,,535,,,,,,TPVG,2025-05-07
+Lower Holding Company,First Lien,Consumer & Retail,3.75%,,Prime,3.75%,,2022-12-28,,3634,3950,3950,,3950,,,,,,TPVG,2025-05-07
+Nakdcom One World AB,First Lien,Consumer & Retail,,8.25%,Prime,8.25%,,2022-06-06,,6621,5933,5515,,5933,,,,,,TPVG,2025-05-07
+Nakdcom One World AB,First Lien,Consumer & Retail,,8.25%,Prime,8.25%,,2022-08-29,,3713,3307,3309,,3307,,,,,,TPVG,2025-05-07
+"Project 1920, Inc.",First Lien,Consumer & Retail,6.25%,,Prime,6.25%,,2022-03-25,,1927,1973,444,,1973,,,,,,TPVG,2025-05-07
+"Project 1920, Inc.",First Lien,Consumer & Retail,5.75%,,Prime,5.75%,,2022-03-25,,2100,2142,484,,2142,,,,,,TPVG,2025-05-07
+MA Micro Ltd.,First Lien,Consumer & Retail,,,,,,2023-12-31,,4166,2713,2659,,2713,,,,,,TPVG,2025-05-07
+MA Micro Ltd.,First Lien,Consumer & Retail,,,,,,2023-12-31,,4166,1442,801,,1442,,,,,,TPVG,2025-05-07
+MA Micro Ltd.,First Lien,Consumer & Retail,,,,,,2023-12-31,,1389,1186,374,,1186,,,,,,TPVG,2025-05-07
+Consumer Retail,First Lien,Consumer & Retail,,,,,,,,,,,,,,,,,,TPVG,2025-05-07
+"Savage X, Inc.",First Lien,Consumer & Retail,8.25%,,Prime,8.25%,,2024-05-15,,500,459,459,,459,,,,,,TPVG,2025-05-07
+"Savage X, Inc.",First Lien,Consumer & Retail,8.25%,,Prime,8.25%,,2024-05-15,,2000,1679,1679,,1679,,,,,,TPVG,2025-05-07
+"Savage X, Inc.",First Lien,Consumer & Retail,8.25%,,Prime,8.25%,,2024-05-15,,3750,3148,3148,,3148,,,,,,TPVG,2025-05-07
+Database Software,First Lien,Consumer & Retail,,,,,,,,,,,,,,,,,,TPVG,2025-05-07
+"TetraScience, Inc.",First Lien,Consumer & Retail,3.25%,,Prime,3.25%,,2025-01-24,,10000,9921,9921,,9921,,,,,,TPVG,2025-05-07
+E-Commerce - Clothing and Accessories,First Lien,Consumer & Retail,,,,,,,,,,,,,,,,,,TPVG,2025-05-07
+"FabFitFun, Inc.",First Lien,Consumer & Retail,7.00%,,Prime,7.00%,,2021-09-29,,16916,17034,17034,,17034,,,,,,TPVG,2025-05-07
+"Fabletics, Inc.",First Lien,Consumer & Retail,,9.00%,,,,2024-04-25,,3848,3492,3492,,3492,,,,,,TPVG,2025-05-07
+"Minted, Inc.",First Lien,Consumer & Retail,8.00%,,Prime,8.00%,,2022-06-15,,16500,17019,17019,,17019,,,,,,TPVG,2025-05-07
+"Minted, Inc.",First Lien,Consumer & Retail,6.50%,,Prime,6.50%,,2022-06-15,,,,6,,,,,,,,TPVG,2025-05-07
+Outfittery GMBH,First Lien,Consumer & Retail,,11.00%,,,,2021-01-01,,27987,31365,23966,,31365,,,,,,TPVG,2025-05-07
+Outfittery GMBH,First Lien,Consumer & Retail,,9.00%,,,,2021-01-01,,4377,4598,3940,,4598,,,,,,TPVG,2025-05-07
+Outfittery GMBH,First Lien,Consumer & Retail,,9.00%,,,,2022-12-28,,2474,2615,2307,,2615,,,,,,TPVG,2025-05-07
+"Trendly, Inc.",First Lien,Consumer & Retail,7.75%,,Prime,7.75%,,2021-05-27,,19500,21172,20735,,21172,,,,,,TPVG,2025-05-07
+"Trendly, Inc.",First Lien,Consumer & Retail,7.75%,,Prime,7.75%,,2022-06-07,,3000,3145,3145,,3145,,,,,,TPVG,2025-05-07
+"Trendly, Inc.",First Lien,Consumer & Retail,7.75%,,Prime,7.75%,,2022-06-07,,5500,5805,5805,,5805,,,,,,TPVG,2025-05-07
+"Panorama Education, Inc.",First Lien,Education,2.00%,,Prime,2.00%,,2024-07-30,,6000,6045,6045,,6045,,,,,,TPVG,2025-05-07
+"Panorama Education, Inc.",First Lien,Education,1.75%,,Prime,1.75%,,2025-03-28,,4000,3944,3944,,3944,,,,,,TPVG,2025-05-07
+"Panorama Education, Inc.",First Lien,Education,1.00%,,Prime,1.00%,,2024-07-30,,220,220,220,,220,,,,,,TPVG,2025-05-07
+Luminary Roli Ltd.,First Lien,Media & Entertainment,,,,,,2021-08-31,,35492,29531,6985,,29531,,,,,,TPVG,2025-05-07
+Mind Candy Ltd.,First Lien,Media & Entertainment,,12.00%,,,,2014-06-25,,23953,21222,9563,,21222,,,,,,TPVG,2025-05-07
+Mind Candy Ltd.,First Lien,Media & Entertainment,,9.00%,,,,2020-03-17,,1582,1444,636,,1444,,,,,,TPVG,2025-05-07
+Mind Candy Ltd.,First Lien,Media & Entertainment,,9.00%,,,,2020-12-21,,1476,1347,594,,1347,,,,,,TPVG,2025-05-07
+Financial Institution and Services,First Lien,Media & Entertainment,,,,,,,,,,,,,,,,,,TPVG,2025-05-07
+Prodigy Investments Ltd.,First Lien,Media & Entertainment,,14.28%,,,,2020-12-31,,37986,37848,37987,,37848,,,,,,TPVG,2025-05-07
+"Ocrolus, Inc.",First Lien,Financial Services,2.50%,,Prime,2.50%,,2024-08-14,,7142,7123,7123,,7123,,,,,,TPVG,2025-05-07
+"Synapse Financial Technologies, Inc.",First Lien,Financial Services,5.75%,,Prime,5.75%,,2022-07-29,,731,727,56,,727,,,,,,TPVG,2025-05-07
+"Kalderos, Inc.",First Lien,Healthcare,3.75%,,Prime,3.75%,,2025-01-31,,13000,12874,12874,,12874,,,,,,TPVG,2025-05-07
+"K Health, Inc.",First Lien,Healthcare,2.25%,,Prime,2.25%,,2023-07-14,,3324,3419,3419,,3419,,,,,,TPVG,2025-05-07
+"Thirty Madison, Inc.",First Lien,Healthcare,6.00%,,Prime,6.00%,,2022-12-30,,20000,20903,20903,,20903,,,,,,TPVG,2025-05-07
+"Thirty Madison, Inc.",First Lien,Healthcare,6.25%,6.00%,,,,2023-06-12,,24050,24543,23916,,24543,,,,,,TPVG,2025-05-07
+"Thirty Madison, Inc.",First Lien,Healthcare,6.25%,6.00%,,,,2023-06-14,,1809,1815,1769,,1815,,,,,,TPVG,2025-05-07
+Information Services,First Lien,Healthcare,,,,,,,,,,,,,,,,,,TPVG,2025-05-07
+"Tempus Ex Machina, Inc.",First Lien,Healthcare,5.50%,,Prime,5.50%,,2023-05-04,,1000,1024,1010,,1024,,,,,,TPVG,2025-05-07
+"Tempus Ex Machina, Inc.",First Lien,Healthcare,5.75%,,Prime,5.75%,,2023-05-04,,1000,1020,1005,,1020,,,,,,TPVG,2025-05-07
+Multimedia and Design Software,First Lien,Healthcare,,,,,,,,,,,,,,,,,,TPVG,2025-05-07
+Hover Inc.,First Lien,Healthcare,3.00%,,Prime,3.00%,,2024-09-10,,16000,15973,15973,,15973,,,,,,TPVG,2025-05-07
+"Jerry Services, Inc.",First Lien,Financial Services,10.00%,,,,,2022-06-13,,10000,10647,10613,,10647,,,,,,TPVG,2025-05-07
+"Jerry Services, Inc.",First Lien,Financial Services,13.75%,,,,,2023-03-17,,10000,10367,10418,,10367,,,,,,TPVG,2025-05-07
+Monzo Bank Ltd.,First Lien,Financial Services,12.00%,,,,,2021-03-08,,7035,6980,6871,,6980,,,,,,TPVG,2025-05-07
+"Homeward, Inc.",First Lien,Real Estate,6.50%,,Prime,6.50%,,2021-12-30,,10000,10696,10665,,10696,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2021-12-03,,250,268,258,,268,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2021-12-03,,800,848,820,,848,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2021-12-03,,220,235,227,,235,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2021-12-13,,105,113,109,,113,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2021-12-13,,440,471,453,,471,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2021-12-15,,208,223,214,,223,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2021-12-15,,150,162,156,,162,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2021-12-15,,1372,1455,1402,,1455,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2021-12-21,,760,806,777,,806,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2022-01-31,,170,182,175,,182,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2022-02-25,,116,124,120,,124,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2022-03-15,,300,317,304,,317,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2022-04-22,,1110,1172,1123,,1172,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2022-04-22,,991,1046,1003,,1046,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2022-05-23,,216,230,220,,230,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2022-07-19,,200,210,202,,210,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2022-07-19,,100,106,102,,106,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2022-12-05,,150,156,144,,156,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2022-12-05,,361,376,347,,376,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2022-12-05,,565,584,539,,584,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2023-05-23,,240,245,217,,245,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2023-05-23,,434,445,395,,445,,,,,,TPVG,2025-05-07
+True Footage Inc.,First Lien,Real Estate,11.00%,,,,,2023-05-23,,720,742,662,,742,,,,,,TPVG,2025-05-07
+"Moda Operandi, Inc.",First Lien,Other,6.50%,,Prime,6.50%,,2024-08-16,,15400,14698,14500,,14698,,,,,,TPVG,2025-05-07
+"Moda Operandi, Inc.",First Lien,Other,4.00%,,Prime,4.00%,,2024-08-16,,11000,11605,10467,,11605,,,,,,TPVG,2025-05-07
+InMobi Pte Ltd.,Warrants,Media & Entertainment,,,,,,2013-12-13,,,35,13,,35,,,,48500,,TPVG,2025-05-07
+Loft Orbital Solutions Inc.,Warrants,Aerospace & Defense,,,,,,2022-07-15,,,192,344,,192,,,,22488,,TPVG,2025-05-07
+"Parry Labs, LLC",Warrants,Aerospace & Defense,,,,,,2024-12-20,,,145,81,,145,,,,2727,,TPVG,2025-05-07
+"Flo Health, Inc.",Warrants,Software & Technology,,,,,,2022-05-10,,,123,274,,123,,,,13487,,TPVG,2025-05-07
+"Arcadia Power, Inc.",Warrants,Software & Technology,,,,,,2021-12-10,,,138,143,,138,,,,55458,,TPVG,2025-05-07
+"Arcadia Power, Inc.",Warrants,Software & Technology,,,,,,2022-06-29,,,164,41,,164,,,,27714,,TPVG,2025-05-07
+"Cresta Intelligence, Inc.",Warrants,Software & Technology,,,,,,2024-06-06,,,8,23,,8,,,,9935,,TPVG,2025-05-07
+"DialPad, Inc.",Warrants,Software & Technology,,,,,,2020-08-03,,,102,23,,102,,,,28980,,TPVG,2025-05-07
+"Envoy, Inc.",Warrants,Software & Technology,,,,,,2020-05-08,,,82,183,,82,,,,358930,,TPVG,2025-05-07
+"Farmer's Business Network, Inc.",Warrants,Software & Technology,,,,,,2020-01-03,,,33,24,,33,,,,37666,,TPVG,2025-05-07
+"Filevine, Inc.",Warrants,Software & Technology,,,,,,2021-04-20,,,38,882,,38,,,,186160,,TPVG,2025-05-07
+"FlashParking, Inc.",Warrants,Software & Technology,,,,,,2021-06-15,,,810,1314,,810,,,,210977,,TPVG,2025-05-07
+"FlashParking, Inc.",Warrants,Software & Technology,,,,,,2024-06-26,,,140,140,,140,,,,51677,,TPVG,2025-05-07
+"Narvar, Inc.",Warrants,Software & Technology,,,,,,2020-08-28,,,102,102,,102,,,,87160,,TPVG,2025-05-07
+NewStore Inc.,Warrants,Software & Technology,,,,,,2022-11-16,,,36,4,,36,,,,122353,,TPVG,2025-05-07
+"Passport Labs, Inc.",Warrants,Software & Technology,,,,,,2018-09-28,,,303,590,,303,,,,21929,,TPVG,2025-05-07
+"Project Affinity, Inc.",Warrants,Software & Technology,,,,,,2024-04-26,,,21,21,,21,,,,88370,,TPVG,2025-05-07
+Quantcast Corp.,Warrants,Software & Technology,,,,,,2018-08-09,,,213,161,,213,,,,,,TPVG,2025-05-07
+Uniphore Technologies Inc.,Warrants,Software & Technology,,,,,,2021-12-22,,,34,100,,34,,,,35000,,TPVG,2025-05-07
+"Cart.com, Inc.",Warrants,Business Services,,,,,,2021-12-30,,,477,737,,477,,,,32731,,TPVG,2025-05-07
+"Cart.com, Inc.",Warrants,Business Services,,,,,,2022-03-31,,,25,60,,25,,,,4532,,TPVG,2025-05-07
+"LeoLabs, Inc.",Warrants,Business Services,,,,,,2022-01-20,,,197,227,,197,,,,218512,,TPVG,2025-05-07
+"Muon Space, Inc.",Warrants,Business Services,,,,,,2024-12-30,,,56,56,,56,,,,45499,,TPVG,2025-05-07
+Substack Inc.,Warrants,Business Services,,,,,,2022-07-13,,,6,6,,6,,,,1141,,TPVG,2025-05-07
+"Ao1 Holdings, Inc.",Warrants,Software & Technology,,,,,,2024-12-13,,,55,31,,55,,,,42882,,TPVG,2025-05-07
+"Forum Brands Holdings, Inc.",Warrants,Software & Technology,,,,,,2021-07-06,,,626,66,,626,,,,49892,,TPVG,2025-05-07
+"Metropolis Technologies, Inc.",Warrants,Software & Technology,,,,,,2022-03-30,,,87,1039,,87,,,,87385,,TPVG,2025-05-07
+"Thoughtspot, Inc.",Warrants,Software & Technology,,,,,,2025-03-03,,,404,404,,404,,,,63931,,TPVG,2025-05-07
+"Optoro, Inc.",Warrants,Business to Business Marketplace,,,,,,2015-07-13,,,40,67,,40,,,,10346,,TPVG,2025-05-07
+"RetailNext, Inc.",Warrants,Business to Business Marketplace,,,,,,2017-11-16,,,80,111,,80,,,,123420,,TPVG,2025-05-07
+"Transfix, Inc.",Warrants,Business Services,,,,,,2019-05-31,,,188,188,,188,,,,133502,,TPVG,2025-05-07
+Eridu Corp.,Warrants,Software & Technology,,,,,,2025-03-31,,,5,5,,5,,,,10235,,TPVG,2025-05-07
+Grey Orange International Inc.,Warrants,Software & Technology,,,,,,2021-03-16,,,183,121,,183,,,,52773,,TPVG,2025-05-07
+"Activehours, Inc.",Warrants,Financial Services,,,,,,2020-10-08,,,370,1707,,370,,,,114327,,TPVG,2025-05-07
+"Athletic Greens International, Inc.",Warrants,Consumer & Retail,,,,,,2022-06-03,,,85,84,,85,,,,2262,,TPVG,2025-05-07
+"Don't Run Out, Inc.",Warrants,Consumer & Retail,,,,,,2021-12-30,,,30,13,,30,,,,42929,,TPVG,2025-05-07
+"AvantStay, Inc.",Warrants,Consumer & Retail,,,,,,2022-12-12,,,151,188,,151,,,,24495,,TPVG,2025-05-07
+"Baby Generation, Inc.",Warrants,Consumer & Retail,,,,,,2022-01-26,,,25,25,,25,,,,33964,,TPVG,2025-05-07
+everdrop GmbH,Warrants,Consumer & Retail,,,,,,2022-03-16,,,25,24,,25,,,,14,,TPVG,2025-05-07
+FitOn Inc.,Warrants,Consumer & Retail,,,,,,2024-02-29,,,162,156,,162,,,,73807,,TPVG,2025-05-07
+Flink SE,Warrants,Consumer & Retail,,,,,,2022-04-13,,,339,,,339,,,,178,,TPVG,2025-05-07
+Foodology Inc.,Warrants,Consumer & Retail,,,,,,2022-03-25,,,116,86,,116,,,,26619,,TPVG,2025-05-07
+Frubana Inc.,Warrants,Consumer & Retail,,,,,,2022-09-30,,,334,13,,334,,,,15987,,TPVG,2025-05-07
+"Hydrow, Inc.",Warrants,Consumer & Retail,,,,,,2024-12-30,,,26,26,,26,,,,6549320,,TPVG,2025-05-07
+JOKR S.à r.l.,Warrants,Consumer & Retail,,,,,,2024-05-10,,,339,104,,339,,,,12056,,TPVG,2025-05-07
+Lower Holding Company,Warrants,Consumer & Retail,,,,,,2022-12-28,,,189,24,,189,,,,395425,,TPVG,2025-05-07
+Nakdcom One World AB,Warrants,Consumer & Retail,,,,,,2022-06-02,,,1258,,,1258,,,,894182,,TPVG,2025-05-07
+"Pair Eyewear, Inc.",Warrants,Consumer & Retail,,,,,,2022-07-12,,,5,7,,5,,,,2288,,TPVG,2025-05-07
+"Project 1920, Inc.",Warrants,Consumer & Retail,,,,,,2022-03-25,,,23,,,23,,,,41140,,TPVG,2025-05-07
+"Quip NYC, Inc.",Warrants,Consumer & Retail,,,,,,2018-11-26,,,455,1171,,455,,,,41272,,TPVG,2025-05-07
+Tempo Interactive Inc.,Warrants,Consumer & Retail,,,,,,2021-03-31,,,93,14,,93,,,,14709,,TPVG,2025-05-07
+"The Black Tux Holdings, Inc.",Warrants,Consumer & Retail,,,,,,2021-11-05,,,139,469,,139,,,,142939,,TPVG,2025-05-07
+"LovePop, Inc.",Warrants,Consumer & Retail,,,,,,2018-10-23,,,168,128,,168,,,,163463,,TPVG,2025-05-07
+"Savage X, Inc.",Warrants,Consumer & Retail,,,,,,2020-04-07,,,670,518,,670,,,,178697,,TPVG,2025-05-07
+"Sisense, Inc.",Warrants,Software & Technology,,,,,,2021-12-28,,,190,465,,190,,,,,,TPVG,2025-05-07
+"TetraScience, Inc.",Warrants,Software & Technology,,,,,,2025-01-24,,,20,20,,20,,,,106100,,TPVG,2025-05-07
+"FabFitFun, Inc.",Warrants,Consumer & Retail,,,,,,2017-11-20,,,940,314,,940,,,,331048,,TPVG,2025-05-07
+"FabFitFun, Inc.",Warrants,Consumer & Retail,,,,,,2023-09-29,,,375,310,,375,,,,117338,,TPVG,2025-05-07
+"Minted, Inc.",Warrants,Consumer & Retail,,,,,,2020-09-30,,,516,235,,516,,,,51979,,TPVG,2025-05-07
+Outfittery GMBH,Warrants,Consumer & Retail,,,,,,2017-08-10,,,1850,1292,,1850,,,,,,TPVG,2025-05-07
+"Rent the Runway, Inc.",Warrants,Consumer & Retail,,,,,,2015-11-25,,,1294,,,1294,,,,11862,,TPVG,2025-05-07
+"Stance, Inc.",Warrants,Consumer & Retail,,,,,,2017-03-31,,,41,70,,41,,,,75000,,TPVG,2025-05-07
+"Trendly, Inc.",Warrants,Consumer & Retail,,,,,,2021-05-27,,,381,598,,381,,,,574742,,TPVG,2025-05-07
+"Trendly, Inc.",Warrants,Consumer & Retail,,,,,,2022-06-07,,,44,39,,44,,,,57924,,TPVG,2025-05-07
+Untuckit LLC,Warrants,Consumer & Retail,,,,,,2018-05-11,,,39,57,,39,,,,,,TPVG,2025-05-07
+"Grove Collaborative, Inc.",Warrants,Consumer & Retail,,,,,,2018-04-02,,,219,,,219,,,,62128,,TPVG,2025-05-07
+"Grove Collaborative, Inc.",Warrants,Consumer & Retail,,,,,,2019-05-22,,,228,,,228,,,,25664,,TPVG,2025-05-07
+Merama Inc.,Warrants,Consumer & Retail,,,,,,2021-04-28,,,406,1100,,406,,,,191274,,TPVG,2025-05-07
+"Panorama Education, Inc.",Warrants,Education,,,,,,2024-07-30,,,45,45,,45,,,,5154,,TPVG,2025-05-07
+"Mind Candy, Inc.",Warrants,Media & Entertainment,,,,,,2017-03-24,,,922,,,922,,,,278209,,TPVG,2025-05-07
+"BlueVine Capital, Inc.",Warrants,Financial Services,,,,,,2017-09-15,,,361,1416,,361,,,,271293,,TPVG,2025-05-07
+Prodigy Investments Ltd.,Warrants,Financial Services,,,,,,2017-12-05,,,869,332,,869,,,,56241,,TPVG,2025-05-07
+Revolut Ltd.,Warrants,Financial Services,,,,,,2018-04-16,,,40,5663,,40,,,,6253,cost_suspicious_vs_size,TPVG,2025-05-07
+Revolut Ltd.,Warrants,Financial Services,,,,,,2019-10-29,,,324,6841,,324,,,,7945,cost_suspicious_vs_size,TPVG,2025-05-07
+WorldRemit Group Ltd.,Warrants,Financial Services,,,,,,2015-12-23,,,382,1472,,382,,,,128290,,TPVG,2025-05-07
+WorldRemit Group Ltd.,Warrants,Financial Services,,,,,,2015-12-23,,,136,477,,136,,,,46548,,TPVG,2025-05-07
+"Branch Messenger, Inc.",Warrants,Financial Services,,,,,,2025-03-27,,,74,74,,74,,,,55513,,TPVG,2025-05-07
+"Ocrolus, Inc.",Warrants,Financial Services,,,,,,2024-08-14,,,96,96,,96,,,,116887,,TPVG,2025-05-07
+"Synapse Financial Technologies, Inc.",Warrants,Financial Services,,,,,,2022-07-29,,,23,,,23,,,,3913,,TPVG,2025-05-07
+Capsule Corp.,Warrants,Food & Beverage,,,,,,2020-01-17,,,437,34,,437,,,,202533,,TPVG,2025-05-07
+Capsule Corp.,Warrants,Food & Beverage,,,,,,2018-12-28,,,129,123,,129,,,,,,TPVG,2025-05-07
+"Overtime Sports, Inc.",Warrants,Media & Entertainment,,,,,,2022-05-04,,,70,70,,70,,,,33510,,TPVG,2025-05-07
+"Thrillist Media Group, Inc.",Warrants,Media & Entertainment,,,,,,2014-09-24,,,624,1092,,624,,,,774352,,TPVG,2025-05-07
+"Found Health, Inc.",Warrants,Healthcare,,,,,,2022-03-25,,,22,16,,22,,,,49304,,TPVG,2025-05-07
+"Vial Health Technology, Inc.",Warrants,Healthcare,,,,,,2022-12-14,,,33,33,,33,,,,48889,,TPVG,2025-05-07
+"Curology, Inc.",Warrants,Healthcare,,,,,,2019-05-23,,,58,21,,58,,,,36020,,TPVG,2025-05-07
+"Kalderos, Inc.",Warrants,Healthcare,,,,,,2022-12-27,,,209,187,,209,,,,118104,,TPVG,2025-05-07
+"K Health, Inc.",Warrants,Healthcare,,,,,,2023-07-14,,,187,263,,187,,,,61224,,TPVG,2025-05-07
+"Thirty Madison, Inc.",Warrants,Healthcare,,,,,,2022-12-30,,,445,457,,445,,,,167494,,TPVG,2025-05-07
+"Infinite Athlete, Inc.",Warrants,Business Services,,,,,,2023-05-01,,,9,5,,9,,,,11974,,TPVG,2025-05-07
+"AirStrip Technologies, Inc.",Warrants,Healthcare,,,,,,2013-10-09,,,112,,,112,,,,8036,,TPVG,2025-05-07
+Hover Inc.,Warrants,Media & Entertainment,,,,,,2022-09-30,,,309,338,,309,,,,183642,,TPVG,2025-05-07
+"Open Space Labs, Inc.",Warrants,Media & Entertainment,,,,,,2022-11-15,,,7,4,,7,,,,2954,,TPVG,2025-05-07
+"Cohesity, Inc.",Warrants,Software & Technology,,,,,,2020-01-10,,,54,100,,54,,,,18945,,TPVG,2025-05-07
+"Signifyd, Inc.",Warrants,Software & Technology,,,,,,2019-12-19,,,132,441,,132,,,,33445,,TPVG,2025-05-07
+"Corelight, Inc.",Warrants,Software & Technology,,,,,,2022-09-29,,,235,258,,235,,,,45977,,TPVG,2025-05-07
+"Jerry Services, Inc.",Warrants,Financial Services,,,,,,2022-06-13,,,169,120,,169,,,,41936,,TPVG,2025-05-07
+Monzo Bank Ltd.,Warrants,Financial Services,,,,,,2021-03-08,,,161,822,,161,,,,64813,,TPVG,2025-05-07
+N26 GmbH,Warrants,Financial Services,,,,,,2021-09-14,,,324,231,,324,,,,11,,TPVG,2025-05-07
+"Upgrade, Inc.",Warrants,Financial Services,,,,,,2019-01-18,,,223,595,,223,,,,1488450,,TPVG,2025-05-07
+"Belong Home, Inc.",Warrants,Real Estate,,,,,,2022-02-15,,,6,15,,6,,,,7730,,TPVG,2025-05-07
+"HomeLight, Inc.",Warrants,Real Estate,,,,,,2018-12-21,,,44,186,,44,,,,54004,,TPVG,2025-05-07
+"HomeLight, Inc.",Warrants,Real Estate,,,,,,2020-11-05,,,76,139,,76,,,,55326,,TPVG,2025-05-07
+"Homeward, Inc.",Warrants,Real Estate,,,,,,2021-12-10,,,211,338,,211,,,,388324,,TPVG,2025-05-07
+McN Investments Ltd.,Warrants,Real Estate,,,,,,2022-05-27,,,295,116,,295,,,,37485,,TPVG,2025-05-07
+"Roofstock, Inc.",Warrants,Real Estate,,,,,,2022-05-25,,,19,194,,19,,,,56839,,TPVG,2025-05-07
+Sonder Holdings Inc.,Warrants,Real Estate,,,,,,2018-12-28,,,232,,,232,,,,10024,,TPVG,2025-05-07
+Sonder Holdings Inc.,Warrants,Real Estate,,,,,,2020-03-04,,,42,,,42,,,,1049,,TPVG,2025-05-07
+True Footage Inc.,Warrants,Real Estate,,,,,,2021-11-24,,,147,98,,147,,,,88762,,TPVG,2025-05-07
+"Moda Operandi, Inc.",Warrants,Other,,,,,,2021-12-30,,,169,,,169,,,,36450,,TPVG,2025-05-07
+OfferUp Inc.,Warrants,Other,,,,,,2019-12-23,,,42,138,,42,,,,131006,,TPVG,2025-05-07
+ClassPass Inc.,Warrants,Software & Technology,,,,,,2019-03-18,,,281,151,,281,,,,84507,,TPVG,2025-05-07
+Omio Corp.,Warrants,Hospitality & Leisure,,,,,,2019-09-18,,,362,404,,362,,,,12027,,TPVG,2025-05-07
+Omio Corp.,Warrants,Hospitality & Leisure,,,,,,2022-08-26,,,611,692,,611,,,,16261,,TPVG,2025-05-07
+Omio Corp.,Warrants,Hospitality & Leisure,,,,,,2024-04-05,,,385,1062,,385,,,,17904,,TPVG,2025-05-07
+"Arcadia Power, Inc.",Preferred Equity,Software & Technology,,,,,,2021-09-21,,,167,105,,167,,,,16438,,TPVG,2025-05-07
+"Cresta Intelligence, Inc.",Preferred Equity,Software & Technology,,,,,,2024-09-30,,,500,500,,500,,,,110882,,TPVG,2025-05-07
+"DialPad, Inc.",Preferred Equity,Software & Technology,,,,,,2020-09-22,,,120,107,,120,,,,15456,,TPVG,2025-05-07
+"Envoy, Inc.",Preferred Equity,Software & Technology,,,,,,2021-12-30,,,667,539,,667,,,,212160,,TPVG,2025-05-07
+"FlashParking, Inc.",Preferred Equity,Software & Technology,,,,,,2022-07-19,,,455,451,,455,,,,33116,,TPVG,2025-05-07
+"Filevine, Inc.",Preferred Equity,Software & Technology,,,,,,2022-02-04,,,357,486,,357,,,,56353,,TPVG,2025-05-07
+"Farmer's Business Network, Inc.",Preferred Equity,Software & Technology,,,,,,2020-07-31,,,28,13,,28,,,,860,,TPVG,2025-05-07
+"Farmer's Business Network, Inc.",Preferred Equity,Software & Technology,,,,,,2023-09-28,,,138,12,,138,,,,4181,,TPVG,2025-05-07
+"Passport Labs, Inc.",Preferred Equity,Software & Technology,,,,,,2019-06-11,,,100,103,,100,,,,1302,,TPVG,2025-05-07
+Uniphore Technologies Inc.,Preferred Equity,Software & Technology,,,,,,2022-01-28,,,350,287,,350,,,,28233,,TPVG,2025-05-07
+"Ao1 Holdings, Inc.",Preferred Equity,Software & Technology,,,,,,2024-12-13,,,150,142,,150,,,,49717,,TPVG,2025-05-07
+"Forum Brands Holdings, Inc.",Preferred Equity,Software & Technology,,,,,,2021-07-16,,,150,30,,150,,,,822,,TPVG,2025-05-07
+Quick Commerce Ltd.,Preferred Equity,Business Services,,,,,,2024-04-05,,,8028,8042,,8028,,,,418182,,TPVG,2025-05-07
+Quick Commerce Ltd.,Common Equity,Business Services,,,,,,2024-04-05,,,311,1097,,311,,,,1448528650,,TPVG,2025-05-07
+MXP Prime GmbH,Common Equity,Business Services,,,,,,2022-02-03,,,1140,12,,1140,,,,165,fair_value_suspicious_vs_size,TPVG,2025-05-07
+MXP Prime GmbH,Preferred Equity,Business Services,,,,,,2023-06-29,,,,131,,,,,,23,,TPVG,2025-05-07
+MXP Prime GmbH,Preferred Equity,Business Services,,,,,,2023-06-29,,,50,50,,50,,,,46,,TPVG,2025-05-07
+"Printful, Inc.",Preferred Equity,Business Services,,,,,,2025-03-31,,,24,24,,24,,,,1,,TPVG,2025-05-07
+"Activehours, Inc.",Preferred Equity,Financial Services,,,,,,2020-11-10,,,150,352,,150,,,,14788,,TPVG,2025-05-07
+"Misfits Market, Inc.",Preferred Equity,Consumer & Retail,,,,,,2022-12-31,,,142,152,,142,,,,1615,,TPVG,2025-05-07
+"Misfits Market, Inc.",Preferred Equity,Consumer & Retail,,,,,,2022-12-31,,,358,385,,358,,,,7196,,TPVG,2025-05-07
+everdrop GmbH,Preferred Equity,Consumer & Retail,,,,,,2022-08-01,,,310,326,,310,,,,78,,TPVG,2025-05-07
+Frubana Inc.,Preferred Equity,Consumer & Retail,,,,,,2022-07-13,,,500,19,,500,,,,7993,,TPVG,2025-05-07
+"GrubMarket, Inc.",Common Equity,Consumer & Retail,,,,,,2024-08-02,,,7758,7758,,7758,,,,,,TPVG,2025-05-07
+"Hydrow, Inc.",Common Equity,Consumer & Retail,,,,,,2020-12-14,,,668,19,,668,,,,1893462,,TPVG,2025-05-07
+JOKR S.à r.l.,Preferred Equity,Consumer & Retail,,,,,,2021-12-07,,,187,101,,187,,,,2843,,TPVG,2025-05-07
+JOKR S.à r.l.,Preferred Equity,Consumer & Retail,,,,,,2022-11-03,,,37,28,,37,,,,787,,TPVG,2025-05-07
+"Pair Eyewear, Inc.",Preferred Equity,Consumer & Retail,,,,,,2023-06-27,,,10,10,,10,,,,1880,,TPVG,2025-05-07
+"Savage X, Inc.",Preferred Equity,Consumer & Retail,,,,,,2021-01-20,,,500,17,,500,,,,17249,,TPVG,2025-05-07
+"Savage X, Inc.",Preferred Equity,Consumer & Retail,,,,,,2021-11-30,,,500,12,,500,,,,10393,,TPVG,2025-05-07
+"FabFitFun, Inc.",Preferred Equity,Consumer & Retail,,,,,,2019-01-17,,,500,466,,500,,,,67934,,TPVG,2025-05-07
+"Grove Collaborative, Inc.",Common Equity,Consumer & Retail,,,,,,2018-06-05,,,500,43,,500,,,,31576,,TPVG,2025-05-07
+Merama Inc.,Preferred Equity,Consumer & Retail,,,,,,2021-04-19,,,33,152,,33,,,,18518,,TPVG,2025-05-07
+Merama Inc.,Preferred Equity,Consumer & Retail,,,,,,2021-04-19,,,83,136,,83,,,,14490,,TPVG,2025-05-07
+Merama Inc.,Preferred Equity,Consumer & Retail,,,,,,2021-09-01,,,167,140,,167,,,,10298,,TPVG,2025-05-07
+Nerdy Inc.,Common Equity,Education,,,,,,2018-01-05,,,250,87,,250,,,,60926,,TPVG,2025-05-07
+Luminary Roli Ltd.,Common Equity,Media & Entertainment,,,,,,2021-08-31,,,2525,,,2525,,,,434782,,TPVG,2025-05-07
+"Mind Candy, Inc.",Preferred Equity,Media & Entertainment,,,,,,2020-03-09,,,1000,,,1000,,,,511665,,TPVG,2025-05-07
+Prodigy Investments Ltd.,Common Equity,Financial Services,,,,,,2020-12-31,,,21779,20231,,21779,,,,1552,,TPVG,2025-05-07
+Revolut Ltd.,Common Equity,Financial Services,,,,,,2017-08-03,,,262,21905,,262,,,,23253,cost_suspicious_vs_size,TPVG,2025-05-07
+Capsule Corp.,Preferred Equity,Food & Beverage,,,,,,2019-07-25,,,716,369,,716,,,,128423,,TPVG,2025-05-07
+"Overtime Sports, Inc.",Preferred Equity,Media & Entertainment,,,,,,2022-08-02,,,1000,1000,,1000,,,,127656,,TPVG,2025-05-07
+"Curology, Inc.",Preferred Equity,Healthcare,,,,,,2019-11-26,,,196,145,,196,,,,66000,,TPVG,2025-05-07
+"Curology, Inc.",Common Equity,Healthcare,,,,,,2020-01-14,,,404,73,,404,,,,142855,,TPVG,2025-05-07
+"Kalderos, Inc.",Preferred Equity,Healthcare,,,,,,2022-12-27,,,325,296,,325,,,,45403,,TPVG,2025-05-07
+"Talkspace, LLC",Common Equity,Healthcare,,,,,,2019-05-15,,,378,376,,378,,,,146752,,TPVG,2025-05-07
+"Thirty Madison, Inc.",Preferred Equity,Healthcare,,,,,,2019-05-31,,,1000,725,,1000,,,,81708,,TPVG,2025-05-07
+Hover Inc.,Preferred Equity,Media & Entertainment,,,,,,2022-09-30,,,231,259,,231,,,,42378,,TPVG,2025-05-07
+"Cohesity, Inc.",Preferred Equity,Software & Technology,,,,,,2017-03-24,,,400,925,,400,,,,60342,,TPVG,2025-05-07
+"Cohesity, Inc.",Preferred Equity,Software & Technology,,,,,,2020-04-07,,,125,141,,125,,,,9022,,TPVG,2025-05-07
+"Jerry Services, Inc.",Preferred Equity,Financial Services,,,,,,2022-05-06,,,104,82,,104,,,,8231,,TPVG,2025-05-07
+Monzo Bank Ltd.,Common Equity,Financial Services,,,,,,2021-03-08,,,1000,2022,,1000,,,,92901,,TPVG,2025-05-07
+Monzo Bank Ltd.,Common Equity,Financial Services,,,,,,2022-01-05,,,516,626,,516,,,,26281,,TPVG,2025-05-07
+N26 GmbH,Preferred Equity,Financial Services,,,,,,2021-12-09,,,1264,1468,,1264,,,,22,,TPVG,2025-05-07
+Redesign Health Inc.,Preferred Equity,Financial Services,,,,,,2022-07-12,,,100,100,,100,,,,5919,,TPVG,2025-05-07
+"Belong Home, Inc.",Preferred Equity,Real Estate,,,,,,2022-04-18,,,29,29,,29,,,,6033,,TPVG,2025-05-07
+McN Investments Ltd.,Preferred Equity,Real Estate,,,,,,2022-05-06,,,300,209,,300,,,,11246,,TPVG,2025-05-07
+True Footage Inc.,Preferred Equity,Real Estate,,,,,,2021-10-18,,,100,68,,100,,,,18366,,TPVG,2025-05-07
+Omio Corp.,Preferred Equity,Hospitality & Leisure,,,,,,2017-10-05,,,300,291,,300,,,,2362,,TPVG,2025-05-07
+Omio Corp.,Preferred Equity,Hospitality & Leisure,,,,,,2022-05-09,,,623,903,,623,,,,9169,,TPVG,2025-05-07
+Inspirato LLC,Common Equity,Hospitality & Leisure,,,,,,2014-09-11,,,287,25,,287,,,,6081,,TPVG,2025-05-07

@@ -1,0 +1,234 @@
+{
+  "ticker": "BCRED",
+  "summary": {
+    "ticker": "BCRED",
+    "scale": 1000,
+    "median_ratio": 1.0,
+    "periods": 15,
+    "with_reported": 13,
+    "match": 13,
+    "near": 0,
+    "mismatch": 0,
+    "match_pct": 100.0,
+    "trust": "good",
+    "latest": {
+      "filing_date": "2026-08-12",
+      "period_end": "2026-06-30",
+      "holdings_fv": 77649107.0,
+      "row_count": 1231,
+      "reported_fv": 77649107000.0,
+      "reported_fv_k": 77649107.0,
+      "delta_pct": 0.0,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": null,
+      "form": null
+    },
+    "issue_periods": []
+  },
+  "periods": [
+    {
+      "filing_date": "2021-11-15",
+      "period_end": "2021-09-30",
+      "holdings_fv": 17738393.0,
+      "row_count": 483,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [],
+      "filing_url": null,
+      "form": null
+    },
+    {
+      "filing_date": "2022-03-09",
+      "period_end": "2021-12-31",
+      "holdings_fv": 30795702.0,
+      "row_count": 538,
+      "reported_fv": 30795693000.0,
+      "reported_fv_k": 30795693.0,
+      "delta_pct": 0.0,
+      "status": "match",
+      "quality_flags": [
+        "Fair value is 1.74x the trailing median (possible annual/unit issue)"
+      ],
+      "filing_url": null,
+      "form": null
+    },
+    {
+      "filing_date": "2022-05-13",
+      "period_end": "2022-03-31",
+      "holdings_fv": 37777473.0,
+      "row_count": 633,
+      "reported_fv": null,
+      "reported_fv_k": null,
+      "delta_pct": null,
+      "status": "no_reported",
+      "quality_flags": [
+        "Fair value is 1.56x the trailing median (possible annual/unit issue)"
+      ],
+      "filing_url": null,
+      "form": null
+    },
+    {
+      "filing_date": "2023-11-13",
+      "period_end": "2023-09-30",
+      "holdings_fv": 48413196.0,
+      "row_count": 769,
+      "reported_fv": 48413196000.0,
+      "reported_fv_k": 48413196.0,
+      "delta_pct": 0.0,
+      "status": "match",
+      "quality_flags": [
+        "Fair value is 1.57x the trailing median (possible annual/unit issue)"
+      ],
+      "filing_url": null,
+      "form": null
+    },
+    {
+      "filing_date": "2024-03-15",
+      "period_end": "2023-12-31",
+      "holdings_fv": 50695036.0,
+      "row_count": 780,
+      "reported_fv": 50743911000.0,
+      "reported_fv_k": 50743911.0,
+      "delta_pct": -0.1,
+      "status": "match",
+      "quality_flags": [
+        "Fair value is 1.48x the trailing median (possible annual/unit issue)"
+      ],
+      "filing_url": null,
+      "form": null
+    },
+    {
+      "filing_date": "2024-05-13",
+      "period_end": "2024-03-31",
+      "holdings_fv": 52512576.0,
+      "row_count": 775,
+      "reported_fv": 52512576000.0,
+      "reported_fv_k": 52512576.0,
+      "delta_pct": 0.0,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": null,
+      "form": null
+    },
+    {
+      "filing_date": "2024-08-13",
+      "period_end": "2024-06-30",
+      "holdings_fv": 55874996.0,
+      "row_count": 868,
+      "reported_fv": 55874996000.0,
+      "reported_fv_k": 55874996.0,
+      "delta_pct": 0.0,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": null,
+      "form": null
+    },
+    {
+      "filing_date": "2024-11-13",
+      "period_end": "2024-09-30",
+      "holdings_fv": 63586976.0,
+      "row_count": 990,
+      "reported_fv": 61663262000.0,
+      "reported_fv_k": 61663262.0,
+      "delta_pct": 3.12,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": null,
+      "form": null
+    },
+    {
+      "filing_date": "2025-03-14",
+      "period_end": "2024-12-31",
+      "holdings_fv": 68417527.0,
+      "row_count": 1081,
+      "reported_fv": 68419777000.0,
+      "reported_fv_k": 68419777.0,
+      "delta_pct": -0.0,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": null,
+      "form": null
+    },
+    {
+      "filing_date": "2025-05-12",
+      "period_end": "2025-03-31",
+      "holdings_fv": 69189703.0,
+      "row_count": 1094,
+      "reported_fv": 69189703000.0,
+      "reported_fv_k": 69189703.0,
+      "delta_pct": 0.0,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": null,
+      "form": null
+    },
+    {
+      "filing_date": "2025-08-12",
+      "period_end": "2025-06-30",
+      "holdings_fv": 73175652.0,
+      "row_count": 1182,
+      "reported_fv": 73175652000.0,
+      "reported_fv_k": 73175652.0,
+      "delta_pct": 0.0,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": null,
+      "form": null
+    },
+    {
+      "filing_date": "2025-11-13",
+      "period_end": "2025-09-30",
+      "holdings_fv": 76531118.0,
+      "row_count": 1212,
+      "reported_fv": 76531118000.0,
+      "reported_fv_k": 76531118.0,
+      "delta_pct": 0.0,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": null,
+      "form": null
+    },
+    {
+      "filing_date": "2026-03-13",
+      "period_end": "2025-12-31",
+      "holdings_fv": 82199346.0,
+      "row_count": 1280,
+      "reported_fv": 82199346000.0,
+      "reported_fv_k": 82199346.0,
+      "delta_pct": 0.0,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": null,
+      "form": null
+    },
+    {
+      "filing_date": "2026-05-14",
+      "period_end": "2026-03-31",
+      "holdings_fv": 80469381.0,
+      "row_count": 1288,
+      "reported_fv": 80469381000.0,
+      "reported_fv_k": 80469381.0,
+      "delta_pct": 0.0,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": null,
+      "form": null
+    },
+    {
+      "filing_date": "2026-08-12",
+      "period_end": "2026-06-30",
+      "holdings_fv": 77649107.0,
+      "row_count": 1231,
+      "reported_fv": 77649107000.0,
+      "reported_fv_k": 77649107.0,
+      "delta_pct": 0.0,
+      "status": "match",
+      "quality_flags": [],
+      "filing_url": null,
+      "form": null
+    }
+  ]
+}
