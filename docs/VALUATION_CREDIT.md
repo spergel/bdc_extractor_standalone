@@ -206,6 +206,17 @@ than a repeated company, and handles whole-dollar amounts. Results:
 - **BCRED**: 60-column instrument-level schedule with section-driven types.
   **good 100%**, 13/13 periods.
 
+### PFX, PSBD, RAND, RWAY
+
+- **PFX**: company/instrument rows, whole-dollar scaling, subtotal filtering.
+  Current period reconciles exactly; older periods are flagged.
+- **PSBD**: interest-rate/principal/cost/fair-value schedule with whole-dollar
+  scaling. Current periods reconcile within 1%; older periods remain flagged.
+- **RAND**: company-description cells, continuation rows, repeated company
+  blocks deduplicated. Current-period values remain under review.
+- **RWAY**: instrument-level type/description schedule. Recent periods
+  reconcile within 0.1%.
+
 ## Unit normalization
 
 `fix_multi_block_holdings.py` also handles files extracted in dollars instead of

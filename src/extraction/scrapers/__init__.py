@@ -53,6 +53,10 @@ from .ssss import SSSSScraper
 from .eqs import EQSScraper
 from .tpvg import TPVGScraper
 from .bcred import BCREDScraper
+from .pfx import PFXScraper
+from .psbd import PSBDScraper
+from .rand import RANDScraper
+from .rway import RWAYScraper
 from .whf import WHFScraper
 from .kbdc import KBDCScraper
 
@@ -95,15 +99,17 @@ SCRAPERS: Dict[str, Type[BaseCompanyScraper]] = {
     "EQS": EQSScraper,
     "TPVG": TPVGScraper,
     "BCRED": BCREDScraper,
+    "PFX": PFXScraper,
+    "PSBD": PSBDScraper,
+    "RAND": RANDScraper,
+    "RWAY": RWAYScraper,
     "WHF": WHFScraper,
     "KBDC": KBDCScraper,
 }
 
 # Remaining BDCs to port, in priority order.
 PORTING_QUEUE = [
-    "MSDL", "LIEN", "NCDL", "MSIF", "OFS", "OXSQ", "GECC", "ICMB",
-    "PFX", "PSBD", "RAND", "RWAY",
-]
+    "MSDL", "LIEN", "NCDL", "MSIF", "OFS", "OXSQ", "GECC", "ICMB"]
 
 
 def get_scraper(ticker: str, **kwargs) -> BaseCompanyScraper:
