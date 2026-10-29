@@ -49,6 +49,10 @@ from .trin import TRINScraper
 from .hrzn import HRZNScraper
 from .sar import SARScraper
 from .scm import SCMScraper
+from .ssss import SSSSScraper
+from .eqs import EQSScraper
+from .tpvg import TPVGScraper
+from .bcred import BCREDScraper
 from .whf import WHFScraper
 from .kbdc import KBDCScraper
 
@@ -87,14 +91,18 @@ SCRAPERS: Dict[str, Type[BaseCompanyScraper]] = {
     "HRZN": HRZNScraper,
     "SAR": SARScraper,
     "SCM": SCMScraper,
+    "SSSS": SSSSScraper,
+    "EQS": EQSScraper,
+    "TPVG": TPVGScraper,
+    "BCRED": BCREDScraper,
     "WHF": WHFScraper,
     "KBDC": KBDCScraper,
 }
 
 # Remaining BDCs to port, in priority order.
-PORTING_QUEUE = ["SCM", "MSDL",
-    "KBDC", "LIEN", "NCDL", "MSIF", "OFS", "OXSQ", "GECC", "ICMB",
-    "PFX", "PSBD", "RAND", "RWAY", "SSSS", "EQS", "TPVG", "BCRED",
+PORTING_QUEUE = [
+    "MSDL", "LIEN", "NCDL", "MSIF", "OFS", "OXSQ", "GECC", "ICMB",
+    "PFX", "PSBD", "RAND", "RWAY",
 ]
 
 

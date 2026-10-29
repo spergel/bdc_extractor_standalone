@@ -195,6 +195,17 @@ tranche rows. The parser now stops at the current schedule boundary rather
 than a repeated company, and handles whole-dollar amounts. Results:
 **bad 0% → good 100%**, all **16/16 periods** within 5%.
 
+### SSSS, EQS, TPVG, BCRED
+
+- **SSSS**: company-header + instrument rows, whole-dollar amounts, total-row
+  boundary. **bad 0% → good 100%**, 17/17 periods.
+- **EQS**: two-row headers, company/city cells, subtotal filtering. Current
+  schedules are exact; several historical filings remain flagged.
+- **TPVG**: debt, warrant and equity schedules in one 10-Q, cash equivalents
+  excluded. **bad 20% → good 100%**, 16/16 periods.
+- **BCRED**: 60-column instrument-level schedule with section-driven types.
+  **good 100%**, 13/13 periods.
+
 ## Unit normalization
 
 `fix_multi_block_holdings.py` also handles files extracted in dollars instead of
