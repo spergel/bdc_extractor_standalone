@@ -282,3 +282,13 @@ skip a step.
   per-investment footnote markers (no aggregate percentage); those remain null.
 - Quarter labels use calendar quarter-ends derived from the period end/filing
   date.
+
+
+### GECC
+
+GECC's schedule carries company names across continuation rows and includes a
+separate short-term-investments section. The parser now carries the last
+company forward, stops only at the final total (not the "excluding short-term"
+subtotal), and includes money-market holdings. **bad 23.1% → warn 68.8%**;
+the latest period reconciles exactly, while 2022–2024 filings remain under
+review.
