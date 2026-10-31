@@ -312,15 +312,28 @@ See [docs/OPERATIONS.md](docs/OPERATIONS.md) and [docs/PIPELINE_AND_ROADMAP.md](
 
 ## Public deployment & filing monitoring
 
-The app is a Node/Hono server over ~1.2 GB of static data, so it needs a
-container/VM (or object storage) rather than Cloudflare Workers' small asset
-limit.
+The production site runs on **Cloudflare Workers with static assets**:
 
-### Quick public URL
+**https://bdc-app.spergel-joshua.workers.dev**
+
+The deploy payload is ~124 MB across ~1,600 files, all below Cloudflare's
+25 MiB per-file and 20,000-file limits. The app itself is ~230 KiB and reads
+data through the `ASSETS` binding. Legacy raw XBRL CSVs are kept outside the
+deployed tree under `data/legacy_financial_csv/`.
+
+### Cloudflare deploy
+
+```bash
+cd app
+npx wrangler login
+npx wrangler deploy
+```
+
+### Local Node
 
 ```bash
 # terminal 1
-cd app && PORT=8787 node src/index.ts
+cd app && PORT=8787 node src/server.ts
 
 # terminal 2
 cloudflared tunnel --url http://localhost:8787 --protocol http2

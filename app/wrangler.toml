@@ -1,10 +1,10 @@
 name = "bdc-app"
-main = "src/index.ts"
+main = "src/worker.ts"
 compatibility_date = "2026-10-24"
+workers_dev = true
 
-# Static assets (the consolidated data CSVs/JSONs). When deploying to
-# Cloudflare Workers, bind these and replace the local `readDataFile` helper
-# with `env.ASSETS.fetch(...)`.
+# Portfolio data is served as Worker static assets. API routes read them via
+# the ASSETS binding in src/worker.ts.
 [assets]
 directory = "./public"
 binding = "ASSETS"

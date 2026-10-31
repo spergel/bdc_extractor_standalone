@@ -10,25 +10,30 @@
  */
 
 import { Hono } from "hono";
-import { serve } from "@hono/node-server";
-import { readFile, stat } from "node:fs/promises";
-import { resolve } from "node:path";
 
-const PORT = Number(process.env.PORT || 8787);
-const DATA_DIR = resolve(process.cwd(), "public/data");
+type DataReader = (rel: string) => Promise<string | null>;
+type DataModifiedProvider = () => Promise<string | null>;
+
+let dataReader: DataReader | null = null;
+let dataModifiedProvider: DataModifiedProvider | null = null;
+
+/** Configure filesystem (Node) or ASSETS/R2 (Workers) access. */
+export function setDataReader(reader: DataReader, modified?: DataModifiedProvider) {
+  dataReader = reader;
+  if (modified) dataModifiedProvider = modified;
+}
 
 const app = new Hono();
 
 // ---------------------------------------------------------------------------
-// Data helpers (local filesystem; swap for Workers assets/R2/KV on Cloudflare)
+// Data helpers (filesystem in Node, ASSETS binding in Workers)
 // ---------------------------------------------------------------------------
 
 async function readDataFile<T = string>(rel: string): Promise<T | null> {
   try {
-    const path = resolve(DATA_DIR, rel);
-    if (!path.startsWith(DATA_DIR)) return null; // path traversal guard
-    const buf = await readFile(path);
-    return buf.toString("utf8") as T;
+    if (!dataReader) return null;
+    const text = await dataReader(rel);
+    return text == null ? null : (text as T);
   } catch {
     return null;
   }
@@ -177,7 +182,7 @@ app.get("/api/freshness", async (c) => {
   const financials = await readJson<any>("financials/financials_index.json");
   let dataModified: string | null = null;
   try {
-    dataModified = (await stat(DATA_DIR)).mtime.toISOString();
+    dataModified = dataModifiedProvider ? await dataModifiedProvider() : null;
   } catch {
     dataModified = null;
   }
@@ -270,15 +275,6 @@ app.get("/data/*", async (c) => {
 // ---------------------------------------------------------------------------
 
 app.get("/", (c) => c.html(UI_HTML));
-
-// ---------------------------------------------------------------------------
-// Start (local Node)
-// ---------------------------------------------------------------------------
-
-serve({ fetch: app.fetch, port: PORT }, (info) => {
-  console.log(`BDC app running at http://localhost:${info.port}`);
-  console.log(`Serving data from ${DATA_DIR}`);
-});
 
 export default app;
 
