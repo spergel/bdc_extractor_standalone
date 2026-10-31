@@ -386,6 +386,19 @@ const UI_HTML = `<!doctype html>
   .pos { color: var(--good); }
   .neg { color: var(--bad); }
   .empty { padding: 20px; color: var(--muted); }
+  .loading { padding: 14px; }
+  .load-head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .load-head b { display: block; font-size: 14px; color: var(--navy2); }
+  .spinner { width: 18px; height: 18px; border: 2px solid #d8dde5; border-top-color: var(--navy2); border-radius: 50%; animation: spin .7s linear infinite; flex: none; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .sk-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; margin-bottom: 12px; }
+  .sk-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; margin-bottom: 12px; }
+  .sk { background: linear-gradient(90deg, #eef1f5 25%, #f8f9fb 37%, #eef1f5 63%); background-size: 400% 100%; animation: shimmer 1.3s ease infinite; border: 1px solid var(--line); border-radius: 4px; }
+  .sk-card { height: 58px; }
+  .sk-chart { height: 112px; }
+  .sk-table { padding: 8px; }
+  .sk-line { height: 12px; margin: 7px 0; border-radius: 2px; }
+  @keyframes shimmer { 0% { background-position: 100% 0; } 100% { background-position: 0 0; } }
   .pill { display: inline-block; padding: 1px 7px; border-radius: 9px; font-size: 10.5px; background: #eef1f5; border: 1px solid var(--line); margin-right: 4px; }
   .rank { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10.5px; background: #eef1f5; border: 1px solid var(--line); margin: 2px 4px 2px 0; }
   .rank b { color: var(--navy2); }
@@ -936,6 +949,7 @@ function applyHash() {
   if (parts[0] === 'quality') {
     state.mode = 'quality';
     updateModeChrome();
+    renderLoading('Loading data quality', 'Fetching reconciliation results…');
     const ready = state.qualityIndex ? Promise.resolve() : fetch('/api/quality').then(r => r.json()).then(d => { state.qualityIndex = d; });
     ready.then(() => {
       if (parts[1]) selectQualityTicker(parts[1].toUpperCase(), true);
@@ -958,6 +972,7 @@ function applyHash() {
     $('ticker-search').value = '';
     updateModeChrome();
     renderPeerSidebar();
+    renderLoading('Loading peer evaluation', 'Fetching metrics for all BDCs…');
     ensurePeers().then(() => { renderPeerSidebar(); renderMain(); });
     return;
   }
@@ -1110,6 +1125,7 @@ function setMode(mode, silent) {
     updateModeChrome();
     $('win-title').textContent = 'Data Quality';
     $('win-meta').textContent = '';
+    renderLoading('Loading data quality', 'Fetching reconciliation results…');
     const ready = state.qualityIndex ? Promise.resolve() : fetch('/api/quality').then(r => r.json()).then(d => { state.qualityIndex = d; });
     ready.then(() => { renderQualitySidebar(); renderMain(); });
     if (!silent) updateHash();
@@ -1120,6 +1136,7 @@ function setMode(mode, silent) {
     $('ticker-search').value = '';
     updateModeChrome();
     renderPeerSidebar();
+    renderLoading('Loading peer evaluation', 'Fetching metrics for all BDCs…');
     if (!silent) updateHash();
     ensurePeers().then(() => { renderPeerSidebar(); renderMain(); });
     return;
@@ -1161,6 +1178,7 @@ async function selectTicker(ticker, info, period, fromHash) {
   renderTabs();
   updateModeChrome();
   $('status').textContent = 'Loading ' + ticker + '…';
+  renderLoading('Loading ' + ticker, 'Fetching portfolio, financials and profile…');
   const [aRes, fRes, pRes] = await Promise.all([
     fetch('/api/tickers/' + ticker + '/analytics'),
     fetch('/api/tickers/' + ticker + '/financials'),
@@ -1195,6 +1213,7 @@ async function selectCompany(id, fromHash) {
   $('win-title').textContent = (state.companiesById && state.companiesById[id] && state.companiesById[id].company_name) || 'Company';
   $('win-meta').textContent = '';
   $('status').textContent = 'Loading company…';
+  renderLoading('Loading company', 'Fetching exposure and profile…');
   const res = await fetch('/api/companies/' + encodeURIComponent(id));
   state.company = res.ok ? await res.json() : null;
   if (!fromHash) updateHash();
@@ -1203,12 +1222,29 @@ async function selectCompany(id, fromHash) {
 }
 
 // ------------------------------------------------------------------ main render
+function loadingMarkup(label, detail) {
+  return '<div class="loading">' +
+    '<div class="load-head"><span class="spinner"></span><div><b>' + esc(label) + '</b>' +
+    '<div class="muted small">' + esc(detail || '') + '</div></div></div>' +
+    '<div class="sk-cards">' + Array(5).fill('<div class="sk sk-card"></div>').join('') + '</div>' +
+    '<div class="sk-grid">' + Array(3).fill('<div class="sk sk-chart"></div>').join('') + '</div>' +
+    '<div class="sk sk-table">' + Array(6).fill('<div class="sk sk-line"></div>').join('') + '</div>' +
+    '</div>';
+}
+function renderLoading(label, detail) {
+  const el = $('main');
+  if (el) el.innerHTML = loadingMarkup(label, detail);
+}
 function renderMain() {
   const el = $('main');
   if (state.mode === 'companies') return renderCompany(el);
   if (state.mode === 'peers') return renderPeerEvaluation(el);
   if (state.mode === 'quality') return renderQuality(el);
   if (!state.ticker) { el.innerHTML = '<div class="empty">Select a BDC from the list.</div>'; return; }
+  if (!state.analytics) {
+    renderLoading('Loading ' + state.ticker, 'Fetching portfolio, financials and profile…');
+    return;
+  }
   if (state.tab === 'overview') renderOverview(el);
   else if (state.tab === 'valuation') renderValuation(el);
   else if (state.tab === 'holdings') renderHoldings(el);
@@ -2033,7 +2069,7 @@ async function renderChanges(el) {
   state.diff.after = after;
   const cacheKey = state.ticker + '|' + before + '|' + after;
   if (state.diff.cacheKey !== cacheKey || !state.diff.computed) {
-    el.innerHTML = '<div class="empty">Loading holdings for ' + esc(before) + ' and ' + esc(after) + '…</div>';
+    el.innerHTML = loadingMarkup('Loading QoQ changes', 'Comparing holdings for ' + before + ' and ' + after + '…');
     const [bRes, aRes] = await Promise.all([
       fetch('/api/tickers/' + state.ticker + '/periods/' + before),
       fetch('/api/tickers/' + state.ticker + '/periods/' + after),
