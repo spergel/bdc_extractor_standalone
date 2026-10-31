@@ -1177,6 +1177,7 @@ async function selectTicker(ticker, info, period, fromHash) {
   renderPeriodSelect(info);
   renderTabs();
   updateModeChrome();
+  renderSidebar();
   $('status').textContent = 'Loading ' + ticker + '…';
   renderLoading('Loading ' + ticker, 'Fetching portfolio, financials and profile…');
   const [aRes, fRes, pRes] = await Promise.all([
