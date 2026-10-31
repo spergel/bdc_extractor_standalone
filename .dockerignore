@@ -4,3 +4,6 @@ app/node_modules
 output
 data
 *.log
+
+# Legacy raw XBRL exports; the app serves the small *_financials.json files.
+app/public/data/financials/*.csv
